@@ -1,5 +1,8 @@
 import { cache } from "react";
-import type { DailyReviewChallenge, ReviewSummary } from "@repo/shared/review";
+import type {
+  DailyReviewChallenge,
+  ReviewSummary,
+} from "@repo/shared/review";
 
 import { apiRequest } from "@/src/lib/api-client";
 

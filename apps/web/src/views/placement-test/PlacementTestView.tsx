@@ -4,16 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
-import {
-  Volume2,
-  Award,
-  ArrowRight,
-  BookOpen,
-  Compass,
-  CheckCircle2,
-  AlertTriangle,
-  RefreshCw,
-} from "lucide-react";
+import { Volume2, Award, ArrowRight, BookOpen, Compass, CheckCircle2, AlertTriangle, RefreshCw } from "lucide-react";
 
 import { Button } from "@/src/components/ui/button";
 import { cn } from "@/src/lib/utils";
@@ -34,9 +25,7 @@ type PlacementTestViewProps = {
   initialData: PlacementTestResponse | null;
 };
 
-export default function PlacementTestView({
-  initialData,
-}: PlacementTestViewProps) {
+export default function PlacementTestView({ initialData }: PlacementTestViewProps) {
   const localizeChallengeQuestion = useLocalizedChallengeQuestion();
   const { width: confettiWidth, height: confettiHeight } = useWindowSize();
   const {
@@ -58,8 +47,7 @@ export default function PlacementTestView({
     handleReset,
   } = usePlacementTest(initialData);
 
-  const isFirstQuestion =
-    initialData?.status === "IN_PROGRESS" && initialData.questionNumber === 1;
+  const isFirstQuestion = initialData?.status === "IN_PROGRESS" && initialData.questionNumber === 1;
   const [showIntro, setShowIntro] = useState(isFirstQuestion);
   const [isSkipModalOpen, setIsSkipModalOpen] = useState(false);
   const bypassWarning = useRef(false);
@@ -83,17 +71,10 @@ export default function PlacementTestView({
     goals?: string[],
     intensity?: string,
     primaryLanguage?: string,
-    customGoal?: string
+    customGoal?: string,
   ) => {
     bypassWarning.current = true;
-    handleConfirmLevel(
-      level,
-      languages,
-      goals,
-      intensity,
-      primaryLanguage,
-      customGoal
-    );
+    handleConfirmLevel(level, languages, goals, intensity, primaryLanguage, customGoal);
   };
 
   const handleResetWithBypass = () => {
@@ -103,11 +84,7 @@ export default function PlacementTestView({
 
   const handleContinueWithBypass = () => {
     // If completing the test on the 15th question's result screen
-    if (
-      questionSession &&
-      questionSession.questionNumber >= 15 &&
-      answeredState === "showing_result"
-    ) {
+    if (questionSession && questionSession.questionNumber >= 15 && answeredState === "showing_result") {
       bypassWarning.current = true;
     }
     handleContinue();
@@ -116,17 +93,17 @@ export default function PlacementTestView({
   // 1. Màn hình lỗi nếu không lấy được dữ liệu ban đầu
   if (initialData === null && !session) {
     return (
-      <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-neutral-50 p-6 text-center">
-        <div className="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-rose-100">
+      <div className="flex flex-col items-center justify-center min-h-screen gap-4 bg-neutral-50 p-6 text-center">
+        <div className="h-16 w-16 bg-rose-100 rounded-full flex items-center justify-center mb-2">
           <AlertTriangle className="h-8 w-8 text-rose-500" />
         </div>
-        <h2 className="text-xl font-bold text-neutral-800">
-          {t("errorTitle")}
-        </h2>
-        <p className="max-w-sm text-sm text-neutral-500">{t("errorDesc")}</p>
+        <h2 className="text-xl font-bold text-neutral-800">{t("errorTitle")}</h2>
+        <p className="text-sm text-neutral-500 max-w-sm">
+          {t("errorDesc")}
+        </p>
         <Button
           onClick={() => window.location.reload()}
-          className="mt-2 rounded-xl bg-green-600 px-6 font-bold text-white hover:bg-green-700"
+          className="mt-2 px-6 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold"
         >
           {t("retry")}
         </Button>
@@ -137,9 +114,9 @@ export default function PlacementTestView({
   // 2. Màn hình loading khởi tạo
   if (!session) {
     return (
-      <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-neutral-50 text-neutral-600">
+      <div className="flex flex-col items-center justify-center min-h-screen gap-4 bg-neutral-50 text-neutral-600">
         <RefreshCw className="h-10 w-10 animate-spin text-sky-500" />
-        <p className="animate-pulse text-lg font-semibold">{t("loading")}</p>
+        <p className="font-semibold text-lg animate-pulse">{t("loading")}</p>
       </div>
     );
   }
@@ -150,52 +127,36 @@ export default function PlacementTestView({
       <NewUserOnboarding
         onComplete={handleConfirmLevelWithBypass}
         onStartTest={() => setShowIntro(false)}
-        initialStep={
-          initialData && "onboardingStep" in initialData
-            ? initialData.onboardingStep
-            : undefined
-        }
-        initialData={
-          initialData && "onboardingData" in initialData
-            ? (initialData.onboardingData as any)
-            : undefined
-        }
+        initialStep={initialData && "onboardingStep" in initialData ? initialData.onboardingStep : undefined}
+        initialData={initialData && "onboardingData" in initialData ? (initialData.onboardingData as any) : undefined}
       />
     );
   }
 
   // 2. Màn hình Kết thúc bài test (COMPLETED)
   if (session.status === "COMPLETED") {
-    const isBuffer =
-      session.inBufferZone ||
-      (session.bufferOptions && session.bufferOptions.length > 0);
+    const isBuffer = session.inBufferZone || (session.bufferOptions && session.bufferOptions.length > 0);
     const recommended = session.recommendedLevel;
     const bufferOpts = session.bufferOptions || [];
 
     return (
-      <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-sky-50 to-white px-4 py-8 sm:p-6">
-        <Confetti
-          recycle={false}
-          numberOfPieces={350}
-          tweenDuration={8000}
-          width={confettiWidth}
-          height={confettiHeight}
-        />
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:p-6 relative bg-gradient-to-b from-sky-50 to-white overflow-hidden">
+        <Confetti recycle={false} numberOfPieces={350} tweenDuration={8000} width={confettiWidth} height={confettiHeight} />
 
-        <div className="z-10 max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-xl sm:rounded-3xl sm:p-8 lg:p-12">
+        <div className="w-full max-w-2xl bg-white border border-slate-200 rounded-2xl sm:rounded-3xl shadow-xl p-5 sm:p-8 lg:p-12 text-center z-10 overflow-y-auto max-h-[90vh]">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: "spring", stiffness: 200, damping: 15 }}
           >
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-amber-100 sm:mb-6 sm:h-20 sm:w-20">
-              <Award className="h-9 w-9 text-amber-500 sm:h-12 sm:w-12" />
+            <div className="h-16 w-16 sm:h-20 sm:w-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+              <Award className="h-9 w-9 sm:h-12 sm:w-12 text-amber-500" />
             </div>
 
-            <h1 className="mb-3 text-2xl font-extrabold text-neutral-800 sm:mb-4 sm:text-3xl lg:text-4xl">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-800 lg:text-4xl mb-3 sm:mb-4">
               {t("congrats")}
             </h1>
-            <p className="mx-auto mb-6 max-w-md text-sm text-neutral-500 sm:mb-8 sm:text-base">
+            <p className="text-neutral-500 max-w-md mx-auto text-sm sm:text-base mb-6 sm:mb-8">
               {t("description")}
             </p>
           </motion.div>
@@ -203,16 +164,14 @@ export default function PlacementTestView({
           {isBuffer ? (
             // Luồng Vùng Đệm (Buffer Zone)
             <div className="mt-4">
-              <div className="mx-auto mb-8 flex max-w-lg items-center justify-center gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-semibold text-amber-800">
-                <AlertTriangle className="h-5 w-5 flex-shrink-0 text-amber-600" />
+              <div className="bg-amber-50 border border-amber-200 text-amber-800 text-sm font-semibold rounded-2xl p-4 flex items-center gap-3 justify-center mb-8 max-w-lg mx-auto">
+                <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0" />
                 <span>{t("bufferNotice")}</span>
               </div>
 
-              <h3 className="mb-4 text-lg font-bold text-neutral-700">
-                {t("chooseLevel")}
-              </h3>
+              <h3 className="text-lg font-bold text-neutral-700 mb-4">{t("chooseLevel")}</h3>
 
-              <div className="mx-auto mb-8 grid max-w-lg grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg mx-auto mb-8">
                 {bufferOpts.map((lvl: string, idx: number) => {
                   const isHigher = idx === 1;
                   return (
@@ -222,39 +181,28 @@ export default function PlacementTestView({
                       whileTap={{ scale: 0.98 }}
                       onClick={() => handleConfirmLevelWithBypass(lvl)}
                       className={cn(
-                        "flex cursor-pointer flex-col justify-between rounded-2xl border-2 border-b-4 p-5 text-left transition-colors",
+                        "cursor-pointer rounded-2xl border-2 border-b-4 p-5 text-left flex flex-col justify-between transition-colors",
                         isHigher
-                          ? "border-sky-200 bg-sky-50/50 hover:bg-sky-50 active:border-b-2"
-                          : "border-green-200 bg-green-50/50 hover:bg-green-50 active:border-b-2"
+                           ? "border-sky-200 bg-sky-50/50 hover:bg-sky-50 active:border-b-2"
+                           : "border-green-200 bg-green-50/50 hover:bg-green-50 active:border-b-2"
                       )}
                     >
                       <div>
-                        <span
-                          className={cn(
-                            "rounded-full px-3 py-1 text-xs font-bold tracking-wider uppercase",
-                            isHigher
-                              ? "bg-sky-100 text-sky-700"
-                              : "bg-green-100 text-green-700"
-                          )}
-                        >
+                        <span className={cn(
+                          "px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider",
+                          isHigher ? "bg-sky-100 text-sky-700" : "bg-green-100 text-green-700"
+                        )}>
                           {t("level", { level: lvl })}
                         </span>
-                        <h4 className="mt-3 text-base font-extrabold text-neutral-800">
-                          {isHigher
-                            ? t("challenge", { level: lvl })
-                            : t("reviewOption", { level: lvl })}
+                        <h4 className="text-base font-extrabold text-neutral-800 mt-3">
+                          {isHigher ? t("challenge", { level: lvl }) : t("reviewOption", { level: lvl })}
                         </h4>
-                        <p className="mt-2 text-xs text-neutral-500">
+                        <p className="text-xs text-neutral-500 mt-2">
                           {isHigher ? t("challengeDesc") : t("reviewDesc")}
                         </p>
                       </div>
-                      <div className="mt-4 flex justify-end">
-                        <ArrowRight
-                          className={cn(
-                            "h-5 w-5",
-                            isHigher ? "text-sky-500" : "text-green-500"
-                          )}
-                        />
+                      <div className="flex justify-end mt-4">
+                        <ArrowRight className={cn("h-5 w-5", isHigher ? "text-sky-500" : "text-green-500")} />
                       </div>
                     </motion.div>
                   );
@@ -267,23 +215,16 @@ export default function PlacementTestView({
           ) : (
             // Luồng Xếp Lớp Tự Động (Auto level recommendation)
             <div className="mt-4">
-              <div className="mb-4 inline-block rounded-2xl bg-sky-100 px-6 py-3 text-2xl font-black text-sky-800 shadow-sm sm:mb-6 sm:rounded-3xl sm:px-8 sm:py-4 sm:text-3xl">
+              <div className="inline-block bg-sky-100 text-sky-800 text-2xl sm:text-3xl font-black rounded-2xl sm:rounded-3xl px-6 sm:px-8 py-3 sm:py-4 mb-4 sm:mb-6 shadow-sm">
                 {recommended}
               </div>
 
-              <div className="mx-auto mb-6 flex max-w-md items-start gap-3 rounded-xl border border-sky-100 bg-sky-50/50 p-3 text-left sm:mb-8 sm:rounded-2xl sm:p-4">
-                <BookOpen className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-500 sm:h-6 sm:w-6" />
-                <span className="text-xs leading-relaxed font-semibold text-sky-900 sm:text-sm">
+              <div className="bg-sky-50/50 border border-sky-100 rounded-xl sm:rounded-2xl p-3 sm:p-4 max-w-md mx-auto mb-6 sm:mb-8 flex items-start gap-3 text-left">
+                <BookOpen className="h-5 w-5 sm:h-6 sm:w-6 text-sky-500 flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm text-sky-900 font-semibold leading-relaxed">
                   {t("levelRecommendation", {
-                    unit:
-                      recommended === "A1"
-                        ? 1
-                        : recommended === "A2"
-                          ? 2
-                          : recommended === "B1"
-                            ? 3
-                            : 4,
-                    level: recommended,
+                    unit: recommended === "A1" ? 1 : recommended === "A2" ? 2 : recommended === "B1" ? 3 : 4,
+                    level: recommended
                   })}
                 </span>
               </div>
@@ -293,7 +234,7 @@ export default function PlacementTestView({
                 variant="primary"
                 onClick={() => handleConfirmLevelWithBypass(recommended)}
                 disabled={pending}
-                className="h-11 w-full max-w-sm rounded-xl text-sm shadow-md sm:h-12 sm:rounded-2xl sm:text-base"
+                className="w-full max-w-sm rounded-xl sm:rounded-2xl text-sm sm:text-base h-11 sm:h-12 shadow-md"
               >
                 {pending ? t("sending") : t("startLearning")}
               </Button>
@@ -304,7 +245,7 @@ export default function PlacementTestView({
             <button
               onClick={handleResetWithBypass}
               disabled={pending}
-              className="flex items-center gap-1 text-xs font-semibold tracking-wider text-rose-500 uppercase hover:text-rose-600 hover:underline"
+              className="text-xs text-rose-500 hover:text-rose-600 hover:underline flex items-center gap-1 font-semibold uppercase tracking-wider"
             >
               {t("retakeTest")}
             </button>
@@ -325,31 +266,31 @@ export default function PlacementTestView({
   const progressPercent = (questionNumber / 15) * 100;
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col min-h-screen">
       {correctAudio}
       {incorrectAudio}
 
       {/* Header */}
-      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-slate-200 bg-white px-6 py-4">
+      <header className="px-6 py-4 flex items-center justify-between border-b border-slate-200 bg-white sticky top-0 z-20">
         <button
           onClick={() => setIsSkipModalOpen(true)}
-          className="p-2 text-neutral-400 transition hover:text-neutral-600"
+          className="text-neutral-400 hover:text-neutral-600 p-2 transition"
           title={t("exitTitle")}
         >
           <Compass className="h-6 w-6" />
         </button>
 
         {/* Progress bar */}
-        <div className="relative mx-6 max-w-xl flex-1">
-          <div className="h-3 w-full rounded-full border border-slate-200 bg-slate-100">
+        <div className="flex-1 mx-6 max-w-xl relative">
+          <div className="w-full bg-slate-100 rounded-full h-3 border border-slate-200">
             <motion.div
-              className="h-full rounded-full bg-sky-400"
+              className="bg-sky-400 h-full rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${progressPercent}%` }}
               transition={{ duration: 0.3 }}
             />
           </div>
-          <span className="absolute top-4 right-0 text-xs font-bold text-neutral-400">
+          <span className="absolute right-0 top-4 text-xs font-bold text-neutral-400">
             {t("questionProgress", { questionNumber })}
           </span>
         </div>
@@ -358,24 +299,25 @@ export default function PlacementTestView({
           variant="ghost"
           size="sm"
           onClick={() => setIsSkipModalOpen(true)}
-          className="text-xs font-bold tracking-wider text-neutral-500 uppercase"
+          className="text-neutral-500 text-xs font-bold uppercase tracking-wider"
         >
           {t("skipTest")}
         </Button>
       </header>
 
       {/* Content Area */}
-      <main className="flex flex-1 items-start justify-center overflow-y-auto bg-slate-50 p-3 sm:items-center sm:p-6">
-        <div className="my-3 flex w-full max-w-xl flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:my-0 sm:gap-6 sm:rounded-3xl sm:p-6 lg:min-h-[420px] lg:p-10">
+      <main className="flex-1 flex items-start sm:items-center justify-center p-3 sm:p-6 bg-slate-50 overflow-y-auto">
+        <div className="w-full max-w-xl bg-white border border-slate-200 rounded-2xl sm:rounded-3xl shadow-sm p-4 sm:p-6 lg:p-10 flex flex-col gap-4 sm:gap-6 my-3 sm:my-0 lg:min-h-[420px]">
+
           <div className="flex items-start justify-between gap-3 sm:gap-4">
-            <h2 className="text-base leading-tight font-black text-neutral-800 sm:text-xl lg:text-2xl">
+            <h2 className="text-base sm:text-xl lg:text-2xl font-black text-neutral-800 leading-tight">
               {localizedQuestion}
             </h2>
 
             {challenge.audioUrl && (
               <button
                 onClick={playQuestionAudio}
-                className="flex-shrink-0 rounded-2xl border border-sky-100 bg-sky-50 p-3 text-sky-500 shadow-sm transition hover:bg-sky-100 hover:text-sky-600"
+                className="p-3 bg-sky-50 hover:bg-sky-100 text-sky-500 hover:text-sky-600 rounded-2xl transition border border-sky-100 shadow-sm flex-shrink-0"
                 title={t("listenPronunciation")}
               >
                 <Volume2 className="h-6 w-6" />
@@ -383,7 +325,7 @@ export default function PlacementTestView({
             )}
           </div>
 
-          <div className="mt-4 grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 gap-3 mt-4">
             <AnimatePresence mode="popLayout">
               {options.map((opt, index: number) => {
                 const shortcut = String(index + 1);
@@ -404,49 +346,33 @@ export default function PlacementTestView({
                   <motion.div
                     key={opt.id}
                     onClick={() => handleSelectOption(opt.id)}
-                    whileHover={
-                      answeredState !== "unanswered" ? {} : { scale: 1.015 }
-                    }
-                    whileTap={
-                      answeredState !== "unanswered" ? {} : { scale: 0.985 }
-                    }
+                    whileHover={answeredState !== "unanswered" ? {} : { scale: 1.015 }}
+                    whileTap={answeredState !== "unanswered" ? {} : { scale: 0.985 }}
                     transition={{ type: "spring", stiffness: 450, damping: 18 }}
                     className={cn(
-                      "flex cursor-pointer items-center justify-between rounded-2xl border-2 border-b-4 p-4 transition-all lg:p-5",
-                      isSelected &&
-                        "border-sky-300 bg-sky-50/50 hover:bg-sky-50/50",
-                      cardStatus === "correct" &&
-                        "border-green-300 bg-green-50/50 hover:bg-green-50/50",
-                      cardStatus === "wrong" &&
-                        "border-rose-300 bg-rose-50/50 hover:bg-rose-50/50",
-                      answeredState !== "unanswered" &&
-                        !isSelected &&
-                        cardStatus !== "correct" &&
-                        "pointer-events-none opacity-50"
+                      "cursor-pointer rounded-2xl border-2 border-b-4 p-4 lg:p-5 flex items-center justify-between transition-all",
+                      isSelected && "border-sky-300 bg-sky-50/50 hover:bg-sky-50/50",
+                      cardStatus === "correct" && "border-green-300 bg-green-50/50 hover:bg-green-50/50",
+                      cardStatus === "wrong" && "border-rose-300 bg-rose-50/50 hover:bg-rose-50/50",
+                      answeredState !== "unanswered" && !isSelected && cardStatus !== "correct" && "opacity-50 pointer-events-none"
                     )}
                   >
-                    <p
-                      className={cn(
-                        "text-sm font-semibold text-neutral-700 lg:text-base",
-                        isSelected && "font-bold text-sky-600",
-                        cardStatus === "correct" && "font-bold text-green-700",
-                        cardStatus === "wrong" && "font-bold text-rose-700"
-                      )}
-                    >
+                    <p className={cn(
+                      "text-sm font-semibold lg:text-base text-neutral-700",
+                      isSelected && "text-sky-600 font-bold",
+                      cardStatus === "correct" && "text-green-700 font-bold",
+                      cardStatus === "wrong" && "text-rose-700 font-bold"
+                    )}>
                       {opt.text}
                     </p>
 
                     {/* Badge phím tắt */}
-                    <div
-                      className={cn(
-                        "flex h-7 w-7 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-xs font-extrabold text-neutral-400 shadow-sm",
-                        isSelected && "border-sky-300 bg-white text-sky-500",
-                        cardStatus === "correct" &&
-                          "border-green-500 bg-white text-green-600",
-                        cardStatus === "wrong" &&
-                          "border-rose-500 bg-white text-rose-600"
-                      )}
-                    >
+                    <div className={cn(
+                      "flex h-7 w-7 items-center justify-center rounded-lg border border-slate-200 text-xs font-extrabold text-neutral-400 shadow-sm bg-slate-50",
+                      isSelected && "border-sky-300 text-sky-500 bg-white",
+                      cardStatus === "correct" && "border-green-500 text-green-600 bg-white",
+                      cardStatus === "wrong" && "border-rose-500 text-rose-600 bg-white"
+                    )}>
                       {shortcut}
                     </div>
                   </motion.div>
@@ -458,51 +384,38 @@ export default function PlacementTestView({
       </main>
 
       {/* Footer Check Banner */}
-      <footer
-        className={cn(
-          "z-10 flex items-center justify-between border-t border-slate-200 bg-white px-4 py-3 transition-colors duration-200 sm:px-6 sm:py-5",
-          answeredState === "showing_result" &&
-            isCorrect &&
-            "border-green-200 bg-green-50",
-          answeredState === "showing_result" &&
-            !isCorrect &&
-            "border-rose-200 bg-rose-50"
-        )}
-      >
-        <div className="mx-auto flex max-w-xl flex-1 items-center justify-between gap-4">
-          <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+      <footer className={cn(
+        "px-4 sm:px-6 py-3 sm:py-5 border-t border-slate-200 bg-white z-10 transition-colors duration-200 flex items-center justify-between",
+        answeredState === "showing_result" && isCorrect && "bg-green-50 border-green-200",
+        answeredState === "showing_result" && !isCorrect && "bg-rose-50 border-rose-200"
+      )}>
+        <div className="flex-1 max-w-xl mx-auto flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             {answeredState === "showing_result" && (
               <>
-                <div
-                  className={cn(
-                    "flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full shadow-sm sm:h-10 sm:w-10",
-                    isCorrect
-                      ? "bg-green-500 text-white"
-                      : "bg-rose-500 text-white"
-                  )}
-                >
-                  {isCorrect ? (
-                    <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6" />
-                  ) : (
-                    <AlertTriangle className="h-5 w-5 sm:h-6 sm:w-6" />
-                  )}
+                <div className={cn(
+                  "h-8 w-8 sm:h-10 sm:w-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm",
+                  isCorrect ? "bg-green-500 text-white" : "bg-rose-500 text-white"
+                )}>
+                  {isCorrect
+                    ? <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6" />
+                    : <AlertTriangle className="h-5 w-5 sm:h-6 sm:w-6" />
+                  }
                 </div>
                 <div className="min-w-0">
-                  <h4
-                    className={cn(
-                      "text-xs font-black tracking-wide uppercase sm:text-sm",
-                      isCorrect ? "text-green-800" : "text-rose-800"
-                    )}
-                  >
+                  <h4 className={cn(
+                    "text-xs sm:text-sm font-black uppercase tracking-wide",
+                    isCorrect ? "text-green-800" : "text-rose-800"
+                  )}>
                     {isCorrect ? t("correct") : t("incorrect")}
                   </h4>
-                  <p
-                    className={cn(
-                      "mt-0.5 hidden text-xs leading-relaxed font-medium sm:block",
-                      isCorrect ? "text-green-700" : "text-rose-700"
-                    )}
-                  >
-                    {isCorrect ? t("correctFeedback") : t("incorrectFeedback")}
+                  <p className={cn(
+                    "text-xs leading-relaxed mt-0.5 font-medium hidden sm:block",
+                    isCorrect ? "text-green-700" : "text-rose-700"
+                  )}>
+                    {isCorrect
+                      ? t("correctFeedback")
+                      : t("incorrectFeedback")}
                   </p>
                 </div>
               </>
@@ -511,47 +424,37 @@ export default function PlacementTestView({
 
           <Button
             size="lg"
-            variant={
-              answeredState === "showing_result"
-                ? isCorrect
-                  ? "secondary"
-                  : "danger"
-                : "primary"
-            }
+            variant={answeredState === "showing_result" ? (isCorrect ? "secondary" : "danger") : "primary"}
             onClick={handleContinueWithBypass}
-            disabled={
-              pending || (!selectedOptionId && answeredState === "unanswered")
-            }
-            className="min-w-[110px] flex-shrink-0 rounded-xl px-5 text-sm font-extrabold uppercase shadow-sm sm:min-w-[150px] sm:rounded-2xl sm:px-8"
+            disabled={pending || (!selectedOptionId && answeredState === "unanswered")}
+            className="px-5 sm:px-8 min-w-[110px] sm:min-w-[150px] rounded-xl sm:rounded-2xl text-sm font-extrabold uppercase shadow-sm flex-shrink-0"
           >
             {pending
               ? t("sending")
               : answeredState === "showing_result"
                 ? t("continue")
-                : t("check")}
+                : t("check")
+            }
           </Button>
         </div>
       </footer>
 
       <Dialog open={isSkipModalOpen} onOpenChange={setIsSkipModalOpen}>
-        <DialogContent
-          closeLabel={t("newOnboarding.leaveModalCancel")}
-          className="rounded-2xl sm:max-w-md"
-        >
+        <DialogContent closeLabel={t("newOnboarding.leaveModalCancel")} className="sm:max-w-md rounded-2xl">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-lg font-black text-slate-800">
+            <DialogTitle className="text-lg font-black text-slate-800 flex items-center gap-2">
               ⚠️ {t("newOnboarding.leaveModalTitle")}
             </DialogTitle>
-            <DialogDescription className="mt-2 text-sm leading-relaxed font-medium text-slate-500">
+            <DialogDescription className="text-sm text-slate-500 font-medium leading-relaxed mt-2">
               {t("newOnboarding.leaveModalDesc")}
             </DialogDescription>
           </DialogHeader>
-          <DialogFooter className="mt-4 flex gap-2 sm:flex-row">
+          <DialogFooter className="flex sm:flex-row gap-2 mt-4">
             <Button
               type="button"
               variant="ghost"
               onClick={() => setIsSkipModalOpen(false)}
-              className="flex-1 rounded-xl font-bold sm:flex-none"
+              className="flex-1 sm:flex-none font-bold rounded-xl"
             >
               {t("newOnboarding.leaveModalCancel")}
             </Button>
@@ -563,7 +466,7 @@ export default function PlacementTestView({
                 bypassWarning.current = true;
                 handleConfirmLevel("A1");
               }}
-              className="flex-1 rounded-xl bg-sky-500 font-bold text-white hover:bg-sky-600 sm:flex-none"
+              className="flex-1 sm:flex-none font-bold bg-sky-500 hover:bg-sky-600 text-white rounded-xl"
             >
               {t("newOnboarding.leaveModalConfirm")}
             </Button>

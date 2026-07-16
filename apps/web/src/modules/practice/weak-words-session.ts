@@ -13,5 +13,7 @@ export const getWeakWordsPracticeSummary = cache(() =>
 );
 
 export const getWeakWordsPracticeChallenges = cache(() =>
-  apiRequest<WeakWordsPracticeChallenge[]>("/practice/weak-words/challenges")
+  apiRequest<WeakWordsPracticeChallenge[]>(
+    "/practice/weak-words/challenges"
+  )
 );

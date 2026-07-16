@@ -86,18 +86,12 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
         .join(" ")
         .toLocaleLowerCase(locale);
 
-      return (
-        matchesFilter &&
-        (!normalizedQuery || searchable.includes(normalizedQuery))
-      );
+      return matchesFilter && (!normalizedQuery || searchable.includes(normalizedQuery));
     });
 
     return result.sort((a, b) => {
       if (sort === "alphabetical") {
-        return a.vocabularyItem.word.localeCompare(
-          b.vocabularyItem.word,
-          locale
-        );
+        return a.vocabularyItem.word.localeCompare(b.vocabularyItem.word, locale);
       }
       if (sort === "due") {
         const aDue = getVocabularyReviewStatus(a.vocabularyItem).due ? 1 : 0;
@@ -116,8 +110,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE
   );
-  const firstResult =
-    filteredWords.length === 0 ? 0 : (safePage - 1) * PAGE_SIZE + 1;
+  const firstResult = filteredWords.length === 0 ? 0 : (safePage - 1) * PAGE_SIZE + 1;
   const lastResult = Math.min(safePage * PAGE_SIZE, filteredWords.length);
 
   const chooseFilter = (nextFilter: Filter) => {
@@ -131,12 +124,8 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
       void toggleSavedWord(savedWord.vocabularyItem.id)
         .then((response) => {
           if (response.saved) throw new Error("Word remained saved");
-          setWords((current) =>
-            current.filter((word) => word.id !== savedWord.id)
-          );
-          toast.success(
-            t("removeSuccess", { word: savedWord.vocabularyItem.word })
-          );
+          setWords((current) => current.filter((word) => word.id !== savedWord.id));
+          toast.success(t("removeSuccess", { word: savedWord.vocabularyItem.word }));
           router.refresh();
         })
         .catch(() => toast.error(t("removeError")))
@@ -156,25 +145,15 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
 
   return (
     <div className="mt-6">
-      <section
-        aria-label={t("statsLabel")}
-        className="grid grid-cols-2 gap-3 lg:grid-cols-5"
-      >
+      <section aria-label={t("statsLabel")} className="grid grid-cols-2 gap-3 lg:grid-cols-5">
         {statItems.map(([key, value, Icon, tone]) => (
           <div key={key} className="surface-panel flex items-center gap-3 p-4">
-            <span
-              className={cn(
-                "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl",
-                tone
-              )}
-            >
+            <span className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-xl", tone)}>
               <Icon className="h-5 w-5" />
             </span>
             <span>
-              <strong className="block text-xl font-black tabular-nums">
-                {value}
-              </strong>
-              <span className="text-muted-foreground mt-0.5 block text-xs font-semibold">
+              <strong className="block text-xl font-black tabular-nums">{value}</strong>
+              <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
                 {t(`stats.${key}`)}
               </span>
             </span>
@@ -182,14 +161,11 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
         ))}
       </section>
 
-      <section
-        className="surface-panel mt-6 p-3"
-        aria-label={t("filtersLabel")}
-      >
+      <section className="surface-panel mt-6 p-3" aria-label={t("filtersLabel")}>
         <div className="flex flex-col gap-3 xl:flex-row xl:items-center">
           <label className="relative min-w-0 flex-1">
             <span className="sr-only">{t("searchLabel")}</span>
-            <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <input
               value={query}
               onChange={(event) => {
@@ -197,7 +173,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
                 setPage(1);
               }}
               placeholder={t("searchPlaceholder")}
-              className="bg-muted/70 focus:border-primary focus:bg-card focus:ring-primary/15 h-11 w-full rounded-xl border border-transparent pr-3 pl-10 text-sm transition outline-none focus:ring-2"
+              className="h-11 w-full rounded-xl border border-transparent bg-muted/70 pl-10 pr-3 text-sm outline-none transition focus:border-primary focus:bg-card focus:ring-2 focus:ring-primary/15"
             />
           </label>
 
@@ -209,7 +185,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
                 onClick={() => chooseFilter(value)}
                 aria-pressed={filter === value}
                 className={cn(
-                  "focus-visible:ring-primary shrink-0 rounded-full border px-3 py-2 text-xs font-bold transition focus-visible:ring-2 focus-visible:outline-none",
+                  "shrink-0 rounded-full border px-3 py-2 text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary",
                   filter === value
                     ? "border-foreground bg-foreground text-background"
                     : "bg-card text-muted-foreground hover:border-foreground/30 hover:text-foreground"
@@ -220,7 +196,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
             ))}
           </div>
 
-          <label className="text-muted-foreground flex shrink-0 items-center gap-2 text-xs font-semibold">
+          <label className="flex shrink-0 items-center gap-2 text-xs font-semibold text-muted-foreground">
             {t("sortLabel")}
             <select
               value={sort}
@@ -228,7 +204,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
                 setSort(event.target.value as Sort);
                 setPage(1);
               }}
-              className="bg-card text-foreground focus:ring-primary h-10 rounded-xl border px-3 text-sm font-semibold outline-none focus:ring-2"
+              className="h-10 rounded-xl border bg-card px-3 text-sm font-semibold text-foreground outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="newest">{t("sort.newest")}</option>
               <option value="oldest">{t("sort.oldest")}</option>
@@ -245,30 +221,24 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
             const item = savedWord.vocabularyItem;
             const status = getVocabularyReviewStatus(item);
             const progress = item.userVocabularyProgress[0];
-            const example =
-              item.vocabularyExamples[0]?.exampleEn ?? item.exampleEn;
-            const mastery = status.masteryLevel as
-              "new" | "learning" | "review" | "mastered";
+            const example = item.vocabularyExamples[0]?.exampleEn ?? item.exampleEn;
+            const mastery = status.masteryLevel as "new" | "learning" | "review" | "mastered";
 
             return (
               <article
                 key={savedWord.id}
-                className="group bg-card hover:border-primary/20 flex flex-col gap-4 rounded-2xl border p-4 transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-24px_rgba(6,78,59,0.65)] sm:flex-row sm:items-center"
+                className="group flex flex-col gap-4 rounded-2xl border bg-card p-4 transition hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-[0_12px_28px_-24px_rgba(6,78,59,0.65)] sm:flex-row sm:items-center"
               >
-                <span className="bg-primary/10 text-primary flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xs font-black">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-xs font-black text-primary">
                   {item.cefrLevel}
                 </span>
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <h2 className="text-foreground text-base font-black">
-                      {item.word}
-                    </h2>
+                    <h2 className="text-base font-black text-foreground">{item.word}</h2>
                     {item.phonetic && (
-                      <span className="text-muted-foreground text-xs font-medium">
-                        {item.phonetic}
-                      </span>
+                      <span className="text-xs font-medium text-muted-foreground">{item.phonetic}</span>
                     )}
-                    <span className="bg-muted text-muted-foreground rounded-md px-2 py-1 text-[0.68rem] font-bold uppercase">
+                    <span className="rounded-md bg-muted px-2 py-1 text-[0.68rem] font-bold uppercase text-muted-foreground">
                       {item.pos}
                     </span>
                     <span
@@ -281,20 +251,14 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
                             : "bg-sky-50 text-sky-700"
                       )}
                     >
-                      {status.due
-                        ? vocabularyT("due")
-                        : vocabularyT(`mastery.${mastery}`)}
+                      {status.due ? vocabularyT("due") : vocabularyT(`mastery.${mastery}`)}
                     </span>
                   </div>
-                  <p className="text-foreground/80 mt-1 text-sm">
-                    {item.primaryMeaningVi}
-                  </p>
+                  <p className="mt-1 text-sm text-foreground/80">{item.primaryMeaningVi}</p>
                   {example && (
-                    <p className="text-muted-foreground mt-1 line-clamp-1 text-xs italic">
-                      “{example}”
-                    </p>
+                    <p className="mt-1 line-clamp-1 text-xs italic text-muted-foreground">“{example}”</p>
                   )}
-                  <p className="text-muted-foreground mt-2 text-[0.7rem] font-medium">
+                  <p className="mt-2 text-[0.7rem] font-medium text-muted-foreground">
                     {progress
                       ? t("reviewMeta", {
                           correct: progress.correctCount,
@@ -303,18 +267,13 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
                       : t("notReviewed")}
                     <span aria-hidden="true"> · </span>
                     {t("savedOn", {
-                      date: new Date(savedWord.createdAt).toLocaleDateString(
-                        locale
-                      ),
+                      date: new Date(savedWord.createdAt).toLocaleDateString(locale),
                     })}
                   </p>
                 </div>
                 <div className="flex shrink-0 items-center justify-end gap-1 border-t pt-3 sm:border-0 sm:pt-0">
                   {item.audioUrl && (
-                    <VocabularyAudioButton
-                      audioUrl={item.audioUrl}
-                      label={item.word}
-                    />
+                    <VocabularyAudioButton audioUrl={item.audioUrl} label={item.word} />
                   )}
                   <Button
                     type="button"
@@ -324,7 +283,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
                     onClick={() => removeWord(savedWord)}
                     aria-label={t("removeWord", { word: item.word })}
                     title={t("removeWord", { word: item.word })}
-                    className="text-muted-foreground h-8 w-8 rounded-lg hover:bg-rose-50 hover:text-rose-600"
+                    className="h-8 w-8 rounded-lg text-muted-foreground hover:bg-rose-50 hover:text-rose-600"
                   >
                     <Trash2 className="h-4 w-4" />
                   </Button>
@@ -335,11 +294,9 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
         </section>
       ) : (
         <section className="mt-4 rounded-2xl border border-dashed p-10 text-center">
-          <Search className="text-muted-foreground mx-auto h-7 w-7" />
+          <Search className="mx-auto h-7 w-7 text-muted-foreground" />
           <h2 className="mt-4 font-black">{t("noResultsTitle")}</h2>
-          <p className="text-muted-foreground mt-2 text-sm">
-            {t("noResultsDescription")}
-          </p>
+          <p className="mt-2 text-sm text-muted-foreground">{t("noResultsDescription")}</p>
           <Button
             type="button"
             variant="ghost"
@@ -357,16 +314,9 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
       )}
 
       {filteredWords.length > 0 && (
-        <nav
-          className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
-          aria-label={t("paginationLabel")}
-        >
-          <p className="text-muted-foreground text-xs font-medium">
-            {t("resultRange", {
-              from: firstResult,
-              to: lastResult,
-              total: filteredWords.length,
-            })}
+        <nav className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between" aria-label={t("paginationLabel")}>
+          <p className="text-xs font-medium text-muted-foreground">
+            {t("resultRange", { from: firstResult, to: lastResult, total: filteredWords.length })}
           </p>
           <div className="flex items-center gap-2">
             <Button
@@ -389,9 +339,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
               size="icon"
               className="h-9 w-9 rounded-lg"
               disabled={safePage === totalPages}
-              onClick={() =>
-                setPage((current) => Math.min(totalPages, current + 1))
-              }
+              onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
               aria-label={t("nextPage")}
             >
               <ChevronRight className="h-4 w-4" />
