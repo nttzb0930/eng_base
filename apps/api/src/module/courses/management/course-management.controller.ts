@@ -14,7 +14,7 @@ import type { Response } from "express";
 import { LessonChallengeTypeSchema } from "@repo/shared/courses";
 import { z } from "zod";
 
-import { AdminJwtGuard } from "../../auth";
+import { AdminJwtGuard } from "../../../common/guards/admin-jwt.guard";
 import {
   FilterParse,
   type FilterParseResult,

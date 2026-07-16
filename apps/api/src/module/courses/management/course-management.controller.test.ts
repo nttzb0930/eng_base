@@ -10,7 +10,7 @@ import {
 } from "@nestjs/common/constants";
 import type { Response } from "express";
 
-import { AdminJwtGuard } from "../../auth";
+import { AdminJwtGuard } from "../../../common/guards/admin-jwt.guard";
 import { AdminController } from "../../admin/admin.controller";
 import type { FilterParseResult } from "../../../common/decorators/filter-parse.decorator";
 import { CourseManagementController } from "./course-management.controller";

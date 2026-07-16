@@ -1,165 +1,70 @@
-import {
-  BadRequestException,
-  Body,
-  Controller,
-  Headers,
-  Inject,
-  Post,
-  Req,
-  Res,
-  UnauthorizedException,
-} from "@nestjs/common";
-import { type ConfigType } from "@nestjs/config";
+import { Body, Controller, Headers, Post, Req, Res } from "@nestjs/common";
 import type { Request, Response } from "express";
-import jwtConfig from "../../config/jwt.config";
-import { PrismaService } from "../../database/prisma/prisma.service";
-import { hashPassword, verifyPassword } from "./password";
-import { signJwt, verifyJwt } from "./jwt";
 
-type CredentialsBody = { username?: string; password?: string };
-type RegisterBody = CredentialsBody & { email?: string; fullName?: string };
-type TokenPayload = { userId: string; role: string };
-
-const ACCESS_SECONDS = 15 * 60;
-const REFRESH_SECONDS = 7 * 24 * 60 * 60;
+import { LoginDto } from "./dto/login.dto";
+import { RegisterDto } from "./dto/register.dto";
+import { AuthTokenService } from "./service/auth-token.service";
+import { LoginUserUseCase } from "./use-cases/login-user.usecase";
+import { LogoutUserUseCase } from "./use-cases/logout-user.usecase";
+import { RefreshTokenUseCase } from "./use-cases/refresh-token.usecase";
+import { RegisterUserUseCase } from "./use-cases/register-user.usecase";
 
 @Controller("auth")
 export class AuthController {
   constructor(
-    private readonly prisma: PrismaService,
-    @Inject(jwtConfig.KEY)
-    private readonly jwtCfg: ConfigType<typeof jwtConfig>,
+    private readonly loginUser: LoginUserUseCase,
+    private readonly registerUser: RegisterUserUseCase,
+    private readonly refreshToken: RefreshTokenUseCase,
+    private readonly logoutUser: LogoutUserUseCase,
+    private readonly tokens: AuthTokenService
   ) {}
 
   @Post("login")
   async login(
-    @Body() body: CredentialsBody,
-    @Res({ passthrough: true }) response: Response,
+    @Body() body: LoginDto,
+    @Res({ passthrough: true }) response: Response
   ) {
-    const username = body.username?.trim();
-    if (!username || !body.password) {
-      throw new BadRequestException("MISSING_CREDENTIALS");
-    }
-
-    const user = await this.prisma.users.findFirst({
-      where: { OR: [{ username }, { email: username.toLowerCase() }] },
-    });
-    if (!user || !(await verifyPassword(body.password, user.password))) {
-      throw new UnauthorizedException("INVALID_CREDENTIALS");
-    }
-
-    return this.createSession(response, user);
+    const session = await this.loginUser.execute(body);
+    this.setSessionCookies(response, session.refreshToken);
+    this.setAccessCookie(response, session.accessToken);
+    return { access_token: session.accessToken, user: session.user };
   }
 
   @Post("register")
-  async register(@Body() body: RegisterBody) {
-    const username = body.username?.trim();
-    const email = body.email?.trim().toLowerCase();
-    const fullName = body.fullName?.trim();
-    if (!username || !email || !body.password || !fullName) {
-      throw new BadRequestException("MISSING_FIELDS");
-    }
-
-    const existing = await this.prisma.users.findFirst({
-      where: { OR: [{ username }, { email }] },
-    });
-    if (existing) throw new BadRequestException("USER_ALREADY_EXISTS");
-
-    await this.prisma.users.create({
-      data: {
-        username,
-        email,
-        full_name: fullName,
-        password: await hashPassword(body.password),
-        role: "USER",
-      },
-    });
-    return { success: true };
+  register(@Body() body: RegisterDto) {
+    return this.registerUser.execute(body);
   }
 
   @Post("refresh")
   async refresh(
     @Req() request: Request,
-    @Res({ passthrough: true }) response: Response,
+    @Res({ passthrough: true }) response: Response
   ) {
-    const refreshToken = this.readCookie(request, "client_refresh_token");
-    const payload = refreshToken
-      ? (verifyJwt(refreshToken, this.jwtCfg.refreshSecret) as TokenPayload | null)
-      : null;
-    if (!refreshToken || !payload) {
+    try {
+      const result = await this.refreshToken.execute(
+        this.readCookie(request, "client_refresh_token")
+      );
+      this.setAccessCookie(response, result.accessToken);
+      return { access_token: result.accessToken, user: result.user };
+    } catch (error) {
       this.clearSessionCookies(response);
-      throw new UnauthorizedException("REFRESH_TOKEN_INVALID");
+      throw error;
     }
-
-    const user = await this.prisma.users.findUnique({ where: { id: payload.userId } });
-    if (!user || user.refresh_token !== refreshToken) {
-      this.clearSessionCookies(response);
-      throw new UnauthorizedException("REFRESH_TOKEN_INVALID");
-    }
-
-    const accessToken = this.createAccessToken(user.id, user.role);
-    this.setAccessCookie(response, accessToken);
-    return {
-      access_token: accessToken,
-      user: { id: user.id, username: user.username, email: user.email, role: user.role, fullName: user.full_name },
-    };
   }
 
   @Post("logout")
   async logout(
     @Req() request: Request,
     @Res({ passthrough: true }) response: Response,
-    @Headers("authorization") authorization?: string,
+    @Headers("authorization") authorization?: string
   ) {
     const refreshToken = this.readCookie(request, "client_refresh_token");
     const accessToken = authorization?.startsWith("Bearer ")
       ? authorization.slice(7)
-      : null;
-    const payload = accessToken
-      ? (verifyJwt(accessToken, this.jwtCfg.accessSecret) as TokenPayload | null)
-      : refreshToken
-        ? (verifyJwt(refreshToken, this.jwtCfg.refreshSecret) as TokenPayload | null)
-        : null;
-
-    if (payload) {
-      await this.prisma.users.updateMany({
-        where: { id: payload.userId },
-        data: { refresh_token: null },
-      });
-    }
+      : undefined;
+    const result = await this.logoutUser.execute(accessToken, refreshToken);
     this.clearSessionCookies(response);
-    return { success: true };
-  }
-
-  private async createSession(
-    response: Response,
-    user: { id: string; username: string; email: string; role: string; full_name: string },
-  ) {
-    const refreshToken = signJwt(
-      { userId: user.id, role: user.role },
-      this.jwtCfg.refreshSecret,
-      REFRESH_SECONDS,
-    );
-    await this.prisma.users.update({
-      where: { id: user.id },
-      data: { refresh_token: refreshToken },
-    });
-    const accessToken = this.createAccessToken(user.id, user.role);
-    this.setSessionCookies(response, refreshToken);
-    this.setAccessCookie(response, accessToken);
-
-    return {
-      access_token: accessToken,
-      user: { id: user.id, username: user.username, email: user.email, role: user.role, fullName: user.full_name },
-    };
-  }
-
-  private createAccessToken(userId: string, role: string) {
-    return signJwt(
-      { userId, role },
-      this.jwtCfg.accessSecret,
-      ACCESS_SECONDS,
-    );
+    return result;
   }
 
   private setSessionCookies(response: Response, refreshToken: string) {
@@ -169,14 +74,14 @@ export class AuthController {
       secure,
       sameSite: "lax",
       path: "/",
-      maxAge: REFRESH_SECONDS * 1000,
+      maxAge: this.tokens.refreshMaxAgeMs,
     });
     response.cookie("client_has_rt", "1", {
       httpOnly: false,
       secure,
       sameSite: "lax",
       path: "/",
-      maxAge: REFRESH_SECONDS * 1000,
+      maxAge: this.tokens.refreshMaxAgeMs,
     });
   }
 
@@ -186,7 +91,7 @@ export class AuthController {
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",
       path: "/",
-      maxAge: ACCESS_SECONDS * 1000,
+      maxAge: this.tokens.accessMaxAgeMs,
     });
   }
 
@@ -196,7 +101,10 @@ export class AuthController {
       sameSite: "lax" as const,
       path: "/",
     };
-    response.clearCookie("client_refresh_token", { ...options, httpOnly: true });
+    response.clearCookie("client_refresh_token", {
+      ...options,
+      httpOnly: true,
+    });
     response.clearCookie("client_has_rt", { ...options, httpOnly: false });
     response.clearCookie("user_token", { ...options, httpOnly: true });
   }

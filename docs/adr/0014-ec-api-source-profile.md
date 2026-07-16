@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted
+Accepted; authentication placement details amended by ADR 0015
 
 ## Context
 
@@ -28,9 +28,9 @@ apps/api/src/
   main.ts                       process bootstrap
 ```
 
-- Authentication guards, request context, password/JWT behavior, controller,
-  and Nest Module are owned by `src/module/auth` and exported through its public
-  `index.ts` Interface.
+- Authentication behavior and composition are owned by `src/module/auth`.
+  Cross-capability guards and request context live under `src/common` as amended
+  by ADR 0015.
 - Health is a capability Module under `src/module/health`.
 - Prisma has one generated client Interface: `@prisma/client`. The additional
   `prisma-client` generator and `src/generated/prisma` output are removed.

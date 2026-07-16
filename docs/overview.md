@@ -22,6 +22,8 @@ slice. Its decisions and compatibility constraints are documented in
 profile is recorded separately in
 [ADR 0013](adr/0013-ec-admin-frontend-profile.md). The API source profile is recorded in
 [ADR 0014](adr/0014-ec-api-source-profile.md).
+Auth use-case organization is recorded in
+[ADR 0015](adr/0015-auth-use-case-organization.md).
 
 Reference documents:
 

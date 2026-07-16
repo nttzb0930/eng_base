@@ -2,7 +2,8 @@ import { Module } from "@nestjs/common";
 import { APP_INTERCEPTOR } from "@nestjs/core";
 import { ConfigModule } from "@nestjs/config";
 
-import { AuthContextInterceptor, AuthModule } from "./module/auth";
+import { AuthModule } from "./module/auth";
+import { AuthContextInterceptor } from "./common/auth-context";
 import { jwtConfig, validateEnvironment } from "./config";
 
 import { AdminModule } from "./module/admin/admin.module";

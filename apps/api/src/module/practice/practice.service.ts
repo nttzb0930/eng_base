@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../auth";
+import { auth } from "../../common/auth-context";
 import type {
   ChallengeOption,
   UserVocabularyProgress,

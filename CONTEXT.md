@@ -18,6 +18,9 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - **Placement test**: an adaptive session used to estimate a learner's starting level and initialize course progress.
 - **Normalized vocabulary dataset**: the reviewed 3,000-item dataset currently stored in PostgreSQL. Changes to it require the dedicated dry-run, backup, confirmation, and audit workflow.
 - **Runtime owner**: the application responsible for an implementation. Web owns learner UI, Admin owns management UI, and API owns business behavior and database access.
+- **Authentication session**: the access-token and persisted refresh-token
+  lifecycle shared by Learner and Admin login delivery. Auth owns the behavior;
+  HTTP controllers own cookies.
 - **Wire contract**: the JSON-safe request or response shape shared across API, Admin, and Web. Course wire contracts are imported from `@repo/shared/courses`.
 - **Persistence model**: the Prisma/database representation owned only by API. It may use database naming such as `image_src` and must be mapped to a wire contract.
 - **ViewModel**: UI-only state or enriched presentation shape owned by one frontend feature. It must not be promoted to a cross-runtime contract merely for convenience.
@@ -30,6 +33,9 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - PostgreSQL and Prisma are owned exclusively by `apps/api`.
 - The API persistence Adapter lives under `src/database/prisma`; persistence
   models come only from the generated `@prisma/client` Interface.
+- Authentication behavior is organized by user goal under `module/auth`; Nest
+  guards and request identity propagation are delivery infrastructure under
+  `common`.
 - Shared packages must not import from applications.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
 - `packages/shared` is a transitional aggregator. New contracts use capability subpaths rather than expanding the legacy root barrel; the package name remains unchanged under ADR 0011.

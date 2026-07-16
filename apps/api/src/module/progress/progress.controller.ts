@@ -1,5 +1,5 @@
 import { Controller, Get, Param, ParseIntPipe, Post, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../auth";
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { ProgressService } from "./progress.service";
 
 @Controller("progress")

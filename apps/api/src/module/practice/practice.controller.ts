@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post, Query, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../auth";
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { PracticeService } from "./practice.service";
 import { PracticeSessionResultInputDto } from "./dto/practice-session-result.dto";
 

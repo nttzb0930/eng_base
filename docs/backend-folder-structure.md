@@ -49,9 +49,11 @@ explicitly to contract fields such as `imageSrc` and `courseId`.
 
 ## Capability ownership
 
-Authentication implementation is colocated in `module/auth`: guards, request
-context, JWT/password behavior, controller, and Nest composition. Other Modules
-import its public `index.ts` Interface rather than depending on private paths.
+Authentication behavior is organized under `module/auth` by user goal:
+login, registration, refresh, and logout use cases. Token/password services sit
+behind those use cases. Guards and request context live under `common` because
+they are cross-capability Nest delivery infrastructure. Consumers import only
+the Auth public Interface rather than private use-case paths.
 
 Courses owns Course -> Unit -> Lesson -> Lesson challenge -> Challenge option
 behavior for learner and Admin callers. Admin authorization is delivery, not a

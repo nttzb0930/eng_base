@@ -12,7 +12,7 @@ import {
 } from "@nestjs/common";
 import type { Response } from "express";
 
-import { AdminJwtGuard } from "../auth";
+import { AdminJwtGuard } from "../../common/guards/admin-jwt.guard";
 import { UserCreateBody, UserBody } from "./admin-mappers";
 import { AdminService } from "./admin.service";
 import { PracticeService } from "../practice/practice.service";

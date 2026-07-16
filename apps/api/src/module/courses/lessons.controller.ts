@@ -1,5 +1,5 @@
 import { Controller, Get, Query, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../auth";
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CoursesService } from "./courses.service";
 
 @Controller("lessons")

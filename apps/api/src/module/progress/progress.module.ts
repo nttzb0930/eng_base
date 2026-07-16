@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { UserJwtGuard } from "../auth";
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CoursesModule } from "../courses";
 import { ProgressController } from "./progress.controller";
 import { ProgressService } from "./progress.service";

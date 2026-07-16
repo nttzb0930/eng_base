@@ -7,7 +7,7 @@ import {
 import { Observable } from "rxjs";
 
 import { runWithAuth } from "./request-auth";
-import type { AuthenticatedRequest } from "./user-jwt.guard";
+import type { AuthenticatedRequest } from "../guards/user-jwt.guard";
 
 /**
  * Wraps the entire request execution inside requestAuth.run() so that

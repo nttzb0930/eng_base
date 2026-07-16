@@ -1,6 +1,6 @@
 import { Injectable, BadRequestException, NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../auth";
+import { auth } from "../../common/auth-context";
 import { PlacementTestResponse, SubmitAnswerResponse } from "@repo/shared";
 import { Prisma } from "@prisma/client";
 

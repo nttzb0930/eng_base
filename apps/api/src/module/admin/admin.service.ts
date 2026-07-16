@@ -6,11 +6,14 @@ import {
   type UserBody,
   mapUser,
 } from "./admin-mappers";
-import { hashPassword } from "../auth";
+import { PasswordService } from "../auth";
 
 @Injectable()
 export class AdminService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly passwords: PasswordService,
+  ) {}
 
   async listUsers(query?: any) {
     if (query) {
@@ -42,7 +45,7 @@ export class AdminService {
       throw new ConflictException("Username or email already exists");
     }
 
-    const hashedPassword = await hashPassword(body.password);
+    const hashedPassword = await this.passwords.hash(body.password);
     const user = await this.prisma.users.create({
       data: {
         username: body.username.trim(),
@@ -62,7 +65,7 @@ export class AdminService {
     if (body.role !== undefined) updateData.role = body.role;
     if ((body as any).fullName !== undefined) updateData.full_name = (body as any).fullName.trim();
     if (body.password !== undefined && body.password.trim() !== "") {
-      updateData.password = await hashPassword(body.password);
+      updateData.password = await this.passwords.hash(body.password);
     }
 
     if (updateData.username !== undefined || updateData.email !== undefined) {

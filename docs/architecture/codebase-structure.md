@@ -64,6 +64,11 @@ persistence source does not live under `src`, and callers do not edit generated
 models. Nest runtime and offline scripts use adapters owned by
 `src/database/prisma`.
 
+Auth follows a workflow profile inside its capability owner: delivery adapters
+delegate to login, register, refresh, and logout use cases. Token/password
+services stay behind that Interface. Guards and request context are
+cross-capability Nest infrastructure under `src/common`.
+
 Not every capability needs every technical folder. Add a folder when it makes a
 real implementation boundary clearer; do not scaffold repository, use-case, or
 domain layers speculatively.
@@ -152,6 +157,8 @@ Management additionally has:
 - an Admin route/import test that enforces the accepted EC profile.
 - an API source-profile test that rejects split Auth/Prisma/support roots and a
   duplicate Prisma generator.
+- an Auth architecture test that rejects persistence/crypto in controllers,
+  guards inside the Auth owner, and a broad Auth root Interface.
 
 Run `pnpm test`, `pnpm check-types`, `pnpm lint`, and `pnpm build` before handoff.
 Architecture refactors must not run database seed, push, migration, or vocabulary

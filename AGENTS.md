@@ -50,8 +50,10 @@ feature refactor.
   infrastructure, `config` for validated runtime configuration,
   `database/prisma` for persistence adapters, and `module/<capability>` for
   business owners.
-- Import authentication behavior through `src/module/auth`; do not recreate a
-  root `src/auth` bucket.
+- Import authentication behavior through the `src/module/auth` public Interface;
+  do not recreate a root `src/auth` bucket or deep-import Auth use cases.
+- Auth controllers delegate to goal-named use cases. Guards and request context
+  belong under `src/common` and must not own login/session persistence.
 - Use `@prisma/client` as the only generated Prisma Interface. Never edit or
   restore `src/generated/prisma`.
 - Controllers receive validated input and call capability behavior; they do not

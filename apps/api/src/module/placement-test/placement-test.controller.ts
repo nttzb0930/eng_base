@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Body, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../auth";
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { PlacementTestService } from "./placement-test.service";
 import { IsNumber, IsString, IsArray, IsOptional } from "class-validator";
 

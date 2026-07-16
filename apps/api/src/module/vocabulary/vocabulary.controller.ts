@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, ParseIntPipe, Post, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../auth";
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { VocabularyService } from "./vocabulary.service";
 import { RecordReviewResultDto, RecordFlashcardRatingDto } from "./dto/vocabulary.dto";
 

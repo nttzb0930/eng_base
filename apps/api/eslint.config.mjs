@@ -82,7 +82,6 @@ export default tseslint.config(
     files: [
       "scripts/export-vocab.ts",
       "scripts/seed.ts",
-      "src/module/auth/admin-jwt.guard.ts",
       "src/module/admin/admin-auth.controller.ts",
       "src/module/admin/admin-mappers.ts",
       "src/module/admin/admin.controller.ts",
