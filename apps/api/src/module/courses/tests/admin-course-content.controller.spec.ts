@@ -17,7 +17,7 @@ import { AdminChallengesController } from "../admin-challenges.controller";
 import { AdminCoursesController } from "../admin-courses.controller";
 import { AdminLessonsController } from "../admin-lessons.controller";
 import { AdminUnitsController } from "../admin-units.controller";
-import { sendAdminListResponse } from "../admin-list-response";
+import { sendAdminListResponse } from "../../../common/http/admin-list-response";
 
 type ManagementQuery = FilterParseResult<Record<string, unknown>>;
 
@@ -116,17 +116,17 @@ test("unpaged delivery preserves Content-Range without requesting a count", asyn
     limit: 100000,
     hasPage: false,
     filters: {},
-    prismaQuery: {
-      where: { title: { contains: "eng" } },
-      skip: 0,
-      take: 100000,
-      orderBy: [{ id: "asc" }],
+    listQuery: {
+      filters: { title: { contains: "eng" } },
+      offset: 0,
+      limit: 100000,
+      sort: [{ field: "id", direction: "asc" }],
     },
   };
   const calls: unknown[] = [];
 
-  await sendAdminListResponse(response, query, (prismaQuery, includeTotal) => {
-    calls.push([prismaQuery, includeTotal]);
+  await sendAdminListResponse(response, query, (listQuery, includeTotal) => {
+    calls.push([listQuery, includeTotal]);
     return Promise.resolve({
       data: [{ id: 1, title: "English", imageSrc: "/en.svg" }],
     });
@@ -135,8 +135,10 @@ test("unpaged delivery preserves Content-Range without requesting a count", asyn
   assert.deepEqual(calls, [
     [
       {
-        where: { title: { contains: "eng" } },
-        orderBy: [{ id: "asc" }],
+        filters: { title: { contains: "eng" } },
+        offset: 0,
+        limit: 100000,
+        sort: [{ field: "id", direction: "asc" }],
       },
       false,
     ],
@@ -151,11 +153,11 @@ test("paged delivery preserves the response pagination contract", async () => {
     limit: 2,
     hasPage: true,
     filters: {},
-    prismaQuery: {
-      where: { title: { contains: "eng" } },
-      skip: 2,
-      take: 2,
-      orderBy: [{ id: "asc" }],
+    listQuery: {
+      filters: { title: { contains: "eng" } },
+      offset: 2,
+      limit: 2,
+      sort: [{ field: "id", direction: "asc" }],
     },
   };
 

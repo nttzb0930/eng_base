@@ -17,16 +17,24 @@ import {
   type FilterParseResult,
 } from "../../common/decorators/filter-parse.decorator";
 import { AdminJwtGuard } from "../../common/guards/admin-jwt.guard";
-import {
-  UserCreateDto,
-  UserUpdateDto,
-} from "./dto/user-management.dto";
-import { UserManagementService } from "./user-management.service";
+import { sendAdminListResponse } from "../../common/http/admin-list-response";
+import { UserCreateDto, UserUpdateDto } from "./dto/user-management.dto";
+import { CreateAdminUserUseCase } from "./use-cases/create-admin-user.use-case";
+import { GetAdminUserUseCase } from "./use-cases/get-admin-user.use-case";
+import { ListAdminUsersUseCase } from "./use-cases/list-admin-users.use-case";
+import { RemoveAdminUserUseCase } from "./use-cases/remove-admin-user.use-case";
+import { UpdateAdminUserUseCase } from "./use-cases/update-admin-user.use-case";
 
 @Controller("admin/users")
 @UseGuards(AdminJwtGuard)
 export class AdminUsersController {
-  constructor(private readonly users: UserManagementService) {}
+  constructor(
+    private readonly listUsers: ListAdminUsersUseCase,
+    private readonly getUser: GetAdminUserUseCase,
+    private readonly createUser: CreateAdminUserUseCase,
+    private readonly updateUser: UpdateAdminUserUseCase,
+    private readonly removeUser: RemoveAdminUserUseCase
+  ) {}
 
   @Get()
   async list(
@@ -42,53 +50,28 @@ export class AdminUsersController {
     })
     query: FilterParseResult<Record<string, unknown>>
   ) {
-    if (query.hasPage) {
-      const [data, total] = await Promise.all([
-        this.users.list(query.prismaQuery),
-        this.users.count({ where: query.prismaQuery.where }),
-      ]);
-      const totalPages = Math.ceil(total / query.limit);
-      return response.json({
-        data,
-        pagination: {
-          total,
-          page: query.page,
-          limit: query.limit,
-          totalPages,
-          hasNext: query.page < totalPages,
-          hasPrev: query.page > 1,
-        },
-      });
-    }
-
-    const data = await this.users.list({
-      where: query.prismaQuery.where,
-      orderBy: query.prismaQuery.orderBy,
-    });
-    response.setHeader(
-      "Content-Range",
-      `items 0-${Math.max(data.length - 1, 0)}/${data.length}`
+    await sendAdminListResponse(response, query, (listQuery, includeTotal) =>
+      this.listUsers.execute(listQuery, includeTotal)
     );
-    return response.json(data);
   }
 
   @Get(":id")
   get(@Param("id") id: string) {
-    return this.users.get(id);
+    return this.getUser.execute(id);
   }
 
   @Post()
   create(@Body() body: UserCreateDto) {
-    return this.users.create(body);
+    return this.createUser.execute(body);
   }
 
   @Put(":id")
   update(@Param("id") id: string, @Body() body: UserUpdateDto) {
-    return this.users.update(id, body);
+    return this.updateUser.execute(id, body);
   }
 
   @Delete(":id")
   remove(@Param("id") id: string) {
-    return this.users.remove(id);
+    return this.removeUser.execute(id);
   }
 }

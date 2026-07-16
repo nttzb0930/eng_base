@@ -106,3 +106,40 @@ test("Learner Courses, Flashcards and Dashboard expose goal Interfaces", () => {
     assert.ok(existsSync(join(root, "index.ts")));
   }
 });
+
+test("User and Settings expose flat goal Interfaces without aggregate services", () => {
+  const expected = {
+    user: [
+      "list-admin-users.use-case.ts",
+      "get-admin-user.use-case.ts",
+      "create-admin-user.use-case.ts",
+      "update-admin-user.use-case.ts",
+      "remove-admin-user.use-case.ts",
+    ],
+    settings: ["get-setting.use-case.ts", "update-setting.use-case.ts"],
+  };
+  for (const [moduleName, files] of Object.entries(expected)) {
+    const root = join(sourceRoot, moduleName);
+    assert.equal(existsSync(join(root, `${moduleName}.service.ts`)), false);
+    for (const file of files) {
+      assert.ok(existsSync(join(root, "use-cases", file)), file);
+    }
+    assert.ok(existsSync(join(root, "index.ts")));
+  }
+});
+
+test("Admin list delivery is shared and does not expose a prismaQuery Interface", () => {
+  const apiRoot = join(import.meta.dirname, "../src");
+  const filter = readFileSync(
+    join(apiRoot, "common/decorators/filter-parse.decorator.ts"),
+    "utf8"
+  );
+  assert.doesNotMatch(filter, /prismaQuery/);
+  assert.match(filter, /search: z\.string/);
+  assert.match(filter, /Math\.min\(limit, 100\)/);
+  assert.ok(existsSync(join(apiRoot, "common/http/admin-list-response.ts")));
+  assert.equal(
+    existsSync(join(sourceRoot, "courses/admin-list-response.ts")),
+    false
+  );
+});

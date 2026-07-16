@@ -13,6 +13,7 @@ export const DefaultUserQuerySchema = z.object({
   sort_by: z.string().optional(),
   sort: z.enum(["asc", "desc"]).optional(),
   q: z.string().optional(),
+  search: z.string().optional(),
 });
 
 export type DefaultUserQueryType = z.infer<typeof DefaultUserQuerySchema>;
@@ -30,17 +31,19 @@ interface FilterParseOptions<TSchema extends ZodObject<any>> {
 
 export type InferFilters<TSchema extends ZodObject<any>> = z.infer<TSchema>;
 
+export type ParsedListQuery = {
+  filters: Record<string, unknown>;
+  offset: number;
+  limit: number;
+  sort: Array<{ field: string; direction: "asc" | "desc" }>;
+};
+
 export interface FilterParseResult<TFilters extends Record<string, any>> {
   page: number;
   limit: number;
   hasPage: boolean;
   filters: Partial<TFilters>;
-  prismaQuery: {
-    where: any;
-    skip: number;
-    take: number;
-    orderBy: any;
-  };
+  listQuery: ParsedListQuery;
 }
 
 export const FilterParse = <TSchema extends ZodObject<any>>(
@@ -77,7 +80,7 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
         const page = parseInt(validatedQuery.page ?? "1", 10);
         const limit = parseInt(validatedQuery.limit ?? "10", 10);
         result.page = isNaN(page) || page < 1 ? 1 : page;
-        result.limit = isNaN(limit) || limit < 1 ? 10 : limit;
+        result.limit = isNaN(limit) || limit < 1 ? 10 : Math.min(limit, 100);
       } else {
         result.page = 1;
         result.limit = 100000;
@@ -89,7 +92,15 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
       ).forEach((key) => {
         const k = String(key);
         if (
-          !["page", "limit", "sort", "sortBy", "sort_by", "q"].includes(k) &&
+          ![
+            "page",
+            "limit",
+            "sort",
+            "sortBy",
+            "sort_by",
+            "q",
+            "search",
+          ].includes(k) &&
           k !== qKey
         ) {
           filters[k] = validatedQuery[key];
@@ -98,7 +109,9 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
 
       // Search fields
       if (options.searchBy?.length) {
-        const qVal = (validatedQuery as any)[qKey] as string | undefined;
+        const qVal =
+          ((validatedQuery as Record<string, unknown>)[qKey] as
+            string | undefined) ?? validatedQuery.search;
         if (qVal && qVal.trim().length) {
           const or = options.searchBy.map((field) => ({
             [field]: { contains: qVal, mode: "insensitive" as const },
@@ -108,7 +121,7 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
       }
 
       // Sorting
-      const orderBy: any = [];
+      const sort: ParsedListQuery["sort"] = [];
       const orderDirection = validatedQuery.sort ?? options.defaultSort;
       const sortBy =
         validatedQuery.sort_by ??
@@ -118,18 +131,16 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
       if (options.allowSorting !== false && sortBy) {
         const allowedSorts = options.allowedSortBy ?? [];
         if (allowedSorts.includes(sortBy)) {
-          orderBy.push({
-            [sortBy]: orderDirection,
-          });
+          sort.push({ field: sortBy, direction: orderDirection });
         }
       }
 
       result.filters = filters as Partial<InferFilters<TSchema>>;
-      result.prismaQuery = {
-        where: filters,
-        skip: (result.page - 1) * result.limit,
-        take: result.limit,
-        orderBy,
+      result.listQuery = {
+        filters,
+        offset: (result.page - 1) * result.limit,
+        limit: result.limit,
+        sort,
       };
 
       return result;

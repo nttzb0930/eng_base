@@ -8,8 +8,8 @@ import { HttpLoggingInterceptor } from "./common/interceptors/http-logging.inter
 import { LoggingModule } from "./common/logging";
 import { jwtConfig, validateEnvironment } from "./config";
 
-import { UserModule } from "./module/user/user.module";
-import { SettingsModule } from "./module/settings/settings.module";
+import { UserModule } from "./module/user";
+import { SettingsModule } from "./module/settings";
 import { DashboardModule } from "./module/dashboard";
 import { CoursesModule } from "./module/courses";
 import { FlashcardsModule } from "./module/flashcards";

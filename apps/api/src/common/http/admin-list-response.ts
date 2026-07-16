@@ -1,13 +1,11 @@
 import type { Response } from "express";
 
-import type { FilterParseResult } from "../../common/decorators/filter-parse.decorator";
+import type {
+  FilterParseResult,
+  ParsedListQuery,
+} from "../decorators/filter-parse.decorator";
 
 export type AdminListFilter = FilterParseResult<Record<string, unknown>>;
-export type AdminListQuery = Omit<
-  AdminListFilter["prismaQuery"],
-  "skip" | "take"
-> &
-  Partial<Pick<AdminListFilter["prismaQuery"], "skip" | "take">>;
 
 type AdminListResult = {
   data: unknown[];
@@ -18,12 +16,12 @@ export async function sendAdminListResponse(
   response: Response,
   query: AdminListFilter,
   execute: (
-    prismaQuery: AdminListQuery,
+    listQuery: ParsedListQuery,
     includeTotal: boolean
   ) => Promise<AdminListResult>
 ) {
   if (query.hasPage) {
-    const { data, total = 0 } = await execute(query.prismaQuery, true);
+    const { data, total = 0 } = await execute(query.listQuery, true);
     const { limit, page } = query;
     const totalPages = Math.ceil(total / limit);
 
@@ -41,13 +39,7 @@ export async function sendAdminListResponse(
     return;
   }
 
-  const { data } = await execute(
-    {
-      where: query.prismaQuery.where,
-      orderBy: query.prismaQuery.orderBy,
-    },
-    false
-  );
+  const { data } = await execute(query.listQuery, false);
   response.setHeader(
     "Content-Range",
     `items 0-${Math.max(data.length - 1, 0)}/${data.length}`

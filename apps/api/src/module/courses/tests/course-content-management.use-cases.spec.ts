@@ -69,15 +69,23 @@ test("course content exposes exactly 25 goal-named use-case classes", () => {
 test("list use case maps data and owns optional count coordination", async () => {
   const { prisma, calls } = createPrisma();
   const useCase = new ListAdminCoursesUseCase(prisma);
-  const query = { where: { id: 1 }, skip: 0, take: 10, orderBy: [] };
+  const query = {
+    filters: { id: 1 },
+    offset: 0,
+    limit: 10,
+    sort: [],
+  };
 
   assert.deepEqual(await useCase.execute(query, true), {
     data: [{ id: 1, title: "English", imageSrc: "/en.svg" }],
     total: 7,
   });
   assert.deepEqual(calls, [
-    { operation: "findMany", arguments: query },
-    { operation: "count", arguments: { where: query.where } },
+    {
+      operation: "findMany",
+      arguments: { where: query.filters, skip: 0, take: 10, orderBy: [] },
+    },
+    { operation: "count", arguments: { where: query.filters } },
   ]);
 });
 

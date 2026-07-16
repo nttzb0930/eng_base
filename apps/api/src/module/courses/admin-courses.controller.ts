@@ -22,7 +22,7 @@ import {
 import {
   type AdminListFilter,
   sendAdminListResponse,
-} from "./admin-list-response";
+} from "../../common/http/admin-list-response";
 import { CreateAdminCourseUseCase } from "./use-cases/create-admin-course.use-case";
 import { GetAdminCourseUseCase } from "./use-cases/get-admin-course.use-case";
 import { ListAdminCoursesUseCase } from "./use-cases/list-admin-courses.use-case";
@@ -54,8 +54,8 @@ export class AdminCoursesController {
     })
     query: AdminListFilter
   ) {
-    await sendAdminListResponse(response, query, (prismaQuery, includeTotal) =>
-      this.list.execute(prismaQuery, includeTotal)
+    await sendAdminListResponse(response, query, (listQuery, includeTotal) =>
+      this.list.execute(listQuery, includeTotal)
     );
   }
 
