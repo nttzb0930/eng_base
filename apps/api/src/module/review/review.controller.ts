@@ -6,7 +6,7 @@ import { GetDailyReviewChallengesUseCase } from "./use-cases/get-daily-review-ch
 import { GetDailyReviewSummaryUseCase } from "./use-cases/get-daily-review-summary.use-case";
 import { GetSavedWordReviewChallengesUseCase } from "./use-cases/get-saved-word-review-challenges.use-case";
 import { GetSavedWordReviewSummaryUseCase } from "./use-cases/get-saved-word-review-summary.use-case";
-import type { SavedWordsReviewMode } from "./use-cases/review-challenge.builder";
+import type { SavedWordsReviewMode } from "./use-cases/review-source";
 
 @Controller("review")
 @UseGuards(UserJwtGuard)

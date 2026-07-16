@@ -2,7 +2,7 @@ import type {
   PlacementTestResponse,
   SubmitAnswerResponse,
   PlacementTestQuestion,
-} from "@repo/shared";
+} from "@repo/shared/placement-test";
 import { apiRequest } from "@/src/lib/api-client";
 
 export type {
@@ -21,13 +21,14 @@ export const submitAnswer = (challengeId: number, selectedOptionId: number) =>
   });
 
 export const confirmLevel = (level: string) =>
-  apiRequest<{ status: "CONFIRMED"; confirmedLevel: string; activeCourseId: number }>(
-    "/placement-test/confirm",
-    {
-      method: "POST",
-      body: { level },
-    }
-  );
+  apiRequest<{
+    status: "CONFIRMED";
+    confirmedLevel: string;
+    activeCourseId: number;
+  }>("/placement-test/confirm", {
+    method: "POST",
+    body: { level },
+  });
 
 export const resetTest = () =>
   apiRequest<{ status: "RESET_SUCCESS" }>("/placement-test/reset", {

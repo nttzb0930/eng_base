@@ -1,14 +1,22 @@
 import { Injectable } from "@nestjs/common";
-
-import { ReviewChallengeBuilder } from "./review-challenge.builder";
+import { PrismaService } from "../../../database/prisma/prisma.service";
+import { VocabularyService } from "../../vocabulary";
+import { DailyReviewSource } from "./daily-review-source";
 
 @Injectable()
-export class GetDailyReviewSummaryUseCase {
-  constructor(private readonly implementation: ReviewChallengeBuilder) {}
+export class GetDailyReviewSummaryUseCase extends DailyReviewSource {
+  constructor(prisma: PrismaService, vocabularyService: VocabularyService) {
+    super(prisma, vocabularyService);
+  }
 
-  execute(
-    ...arguments_: Parameters<ReviewChallengeBuilder["getDailyReviewSummary"]>
-  ) {
-    return this.implementation.getDailyReviewSummary(...arguments_);
+  async execute(userId: string) {
+    const candidateIds = await this.getDailyReviewCandidateIds(userId);
+
+    return {
+      total: candidateIds.selectedIds.length,
+      due: candidateIds.dueCount,
+      weak: candidateIds.weakCount,
+      saved: candidateIds.savedCount,
+    };
   }
 }

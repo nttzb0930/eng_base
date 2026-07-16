@@ -11,7 +11,10 @@ import {
   resetTestAction,
   submitAnswerAction,
 } from "@/src/services/placement-test/placement-test.service";
-import type { PlacementTestResponse, PlacementTestQuestion } from "@repo/shared";
+import type {
+  PlacementTestResponse,
+  PlacementTestQuestion,
+} from "@repo/shared/placement-test";
 
 export function usePlacementTest(initialData: PlacementTestResponse | null) {
   const router = useRouter();
@@ -19,17 +22,27 @@ export function usePlacementTest(initialData: PlacementTestResponse | null) {
   const [pending, startTransition] = useTransition();
 
   // State quản lý session
-  const [session, setSession] = useState<PlacementTestResponse | null>(initialData);
-  const [selectedOptionId, setSelectedOptionId] = useState<number | undefined>(undefined);
+  const [session, setSession] = useState<PlacementTestResponse | null>(
+    initialData
+  );
+  const [selectedOptionId, setSelectedOptionId] = useState<number | undefined>(
+    undefined
+  );
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const [answeredState, setAnsweredState] = useState<"unanswered" | "checking" | "showing_result">("unanswered");
+  const [answeredState, setAnsweredState] = useState<
+    "unanswered" | "checking" | "showing_result"
+  >("unanswered");
 
   // Âm thanh phụ trợ
   const [correctAudio, , correctControls] = useAudio({ src: "/correct.wav" });
-  const [incorrectAudio, , incorrectControls] = useAudio({ src: "/incorrect.wav" });
+  const [incorrectAudio, , incorrectControls] = useAudio({
+    src: "/incorrect.wav",
+  });
 
   const isQuestionSession = session?.status === "IN_PROGRESS";
-  const questionSession = isQuestionSession ? (session as PlacementTestQuestion) : null;
+  const questionSession = isQuestionSession
+    ? (session as PlacementTestQuestion)
+    : null;
   const challenge = questionSession?.challenge;
   const options = challenge?.options || [];
 
@@ -50,7 +63,7 @@ export function usePlacementTest(initialData: PlacementTestResponse | null) {
         "SESSION_NOT_RUNNING",
         "INVALID_OPTION",
         "SESSION_NOT_COMPLETED",
-        "INVALID_LEVEL"
+        "INVALID_LEVEL",
       ];
 
       if (validErrorCodes.includes(errorCode)) {
@@ -67,10 +80,22 @@ export function usePlacementTest(initialData: PlacementTestResponse | null) {
   };
 
   // Thiết lập phím tắt
-  useKey("1", () => options[0] && handleSelectOption(options[0].id), {}, [options, answeredState]);
-  useKey("2", () => options[1] && handleSelectOption(options[1].id), {}, [options, answeredState]);
-  useKey("3", () => options[2] && handleSelectOption(options[2].id), {}, [options, answeredState]);
-  useKey("4", () => options[3] && handleSelectOption(options[3].id), {}, [options, answeredState]);
+  useKey("1", () => options[0] && handleSelectOption(options[0].id), {}, [
+    options,
+    answeredState,
+  ]);
+  useKey("2", () => options[1] && handleSelectOption(options[1].id), {}, [
+    options,
+    answeredState,
+  ]);
+  useKey("3", () => options[2] && handleSelectOption(options[2].id), {}, [
+    options,
+    answeredState,
+  ]);
+  useKey("4", () => options[3] && handleSelectOption(options[3].id), {}, [
+    options,
+    answeredState,
+  ]);
 
   // Phát âm thanh của thử thách
   const playQuestionAudio = () => {
@@ -135,11 +160,18 @@ export function usePlacementTest(initialData: PlacementTestResponse | null) {
     goals?: string[],
     intensity?: string,
     primaryLanguage?: string,
-    customGoal?: string,
+    customGoal?: string
   ) => {
     startTransition(async () => {
       try {
-        await confirmLevelAction(level, languages, goals, intensity, primaryLanguage, customGoal);
+        await confirmLevelAction(
+          level,
+          languages,
+          goals,
+          intensity,
+          primaryLanguage,
+          customGoal
+        );
         toast.success(t("toast.confirmSuccess", { level }));
         router.push("/learn");
       } catch (err) {

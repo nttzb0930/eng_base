@@ -2,7 +2,7 @@ import { cache } from "react";
 import type {
   WeakWordsPracticeChallenge,
   WeakWordsSummary,
-} from "@repo/shared";
+} from "@repo/shared/practice";
 
 import { apiRequest } from "@/src/lib/api-client";
 
@@ -13,7 +13,5 @@ export const getWeakWordsPracticeSummary = cache(() =>
 );
 
 export const getWeakWordsPracticeChallenges = cache(() =>
-  apiRequest<WeakWordsPracticeChallenge[]>(
-    "/practice/weak-words/challenges"
-  )
+  apiRequest<WeakWordsPracticeChallenge[]>("/practice/weak-words/challenges")
 );

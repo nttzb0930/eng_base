@@ -2,7 +2,7 @@ import { cache } from "react";
 import type {
   VocabularyTopic,
   VocabularyTopicDetails,
-} from "@repo/shared";
+} from "@repo/shared/vocabulary";
 
 import { apiRequest } from "@/src/lib/api-client";
 

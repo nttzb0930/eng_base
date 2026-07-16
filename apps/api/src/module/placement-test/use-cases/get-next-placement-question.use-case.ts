@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import type { Prisma } from "@prisma/client";
-import type { PlacementTestResponse } from "@repo/shared";
+import type { PlacementTestResponse } from "@repo/shared/placement-test";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import {
@@ -104,7 +104,12 @@ export class GetNextPlacementQuestionUseCase {
       status: "IN_PROGRESS",
       questionNumber: session.answered_count + 1,
       onboardingStep: session.onboarding_step,
-      onboardingData: session.onboarding_data ?? undefined,
+      onboardingData:
+        session.onboarding_data &&
+        typeof session.onboarding_data === "object" &&
+        !Array.isArray(session.onboarding_data)
+          ? (session.onboarding_data as Record<string, unknown>)
+          : undefined,
       challenge: {
         id: challenge.id,
         direction: challenge.direction,

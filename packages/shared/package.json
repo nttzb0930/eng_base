@@ -11,6 +11,38 @@
     "./courses": {
       "types": "./dist/courses/index.d.ts",
       "default": "./dist/courses/index.js"
+    },
+    "./vocabulary": {
+      "types": "./dist/vocabulary/index.d.ts",
+      "default": "./dist/vocabulary/index.js"
+    },
+    "./practice": {
+      "types": "./dist/practice/index.d.ts",
+      "default": "./dist/practice/index.js"
+    },
+    "./review": {
+      "types": "./dist/review/index.d.ts",
+      "default": "./dist/review/index.js"
+    },
+    "./placement-test": {
+      "types": "./dist/placement-test/index.d.ts",
+      "default": "./dist/placement-test/index.js"
+    },
+    "./dashboard": {
+      "types": "./dist/dashboard/index.d.ts",
+      "default": "./dist/dashboard/index.js"
+    },
+    "./flashcards": {
+      "types": "./dist/flashcards/index.d.ts",
+      "default": "./dist/flashcards/index.js"
+    },
+    "./progress": {
+      "types": "./dist/progress/index.d.ts",
+      "default": "./dist/progress/index.js"
+    },
+    "./learning": {
+      "types": "./dist/learning/index.d.ts",
+      "default": "./dist/learning/index.js"
     }
   },
   "scripts": {

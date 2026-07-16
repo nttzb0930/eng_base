@@ -15,4 +15,4 @@ export type {
   UnitRecord,
   UnitWithLessons,
   UserProgress,
-} from "./use-cases/course-learning.implementation";
+} from "./use-cases/course-learning.mapper";

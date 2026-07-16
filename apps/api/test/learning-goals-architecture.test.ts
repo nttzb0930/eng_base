@@ -143,3 +143,60 @@ test("Admin list delivery is shared and does not expose a prismaQuery Interface"
     false
   );
 });
+
+test("Goal use cases own behavior instead of forwarding through hidden aggregates", () => {
+  for (const moduleName of [
+    "courses",
+    "dashboard",
+    "flashcards",
+    "placement-test",
+    "practice",
+    "progress",
+    "review",
+    "settings",
+    "user",
+  ]) {
+    const useCaseRoot = join(sourceRoot, moduleName, "use-cases");
+    const files = readdirSync(useCaseRoot).filter((file) =>
+      file.endsWith(".use-case.ts")
+    );
+    for (const file of files) {
+      const source = readFileSync(join(useCaseRoot, file), "utf8");
+      assert.doesNotMatch(
+        source,
+        /this\.implementation\./,
+        `${moduleName}/${file}`
+      );
+    }
+    assert.equal(
+      readdirSync(useCaseRoot).some((file) =>
+        file.endsWith(".implementation.ts")
+      ),
+      false
+    );
+  }
+});
+
+test("Application consumers use shared capability subpath Interfaces", () => {
+  const repositoryRoot = join(import.meta.dirname, "../../..");
+  for (const relativeRoot of [
+    "apps/api/src",
+    "apps/web/src",
+    "apps/admin/app",
+    "apps/admin/src",
+  ]) {
+    const root = join(repositoryRoot, relativeRoot);
+    if (!existsSync(root)) continue;
+    const files = readdirSync(root, { recursive: true })
+      .map(String)
+      .filter((file) => /\.(ts|tsx)$/.test(file));
+    for (const file of files) {
+      const source = readFileSync(join(root, file), "utf8");
+      assert.doesNotMatch(
+        source,
+        /from ["']@repo\/shared["']/,
+        `${relativeRoot}/${file}`
+      );
+    }
+  }
+});

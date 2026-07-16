@@ -8,40 +8,43 @@ import type {
 } from "../../vocabulary";
 
 export type FlashcardSource = "due" | "saved" | "weak";
-const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
-type PracticeCefrLevel = (typeof PRACTICE_CEFR_LEVELS)[number];
+
+export const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
+
+export type PracticeCefrLevel = (typeof PRACTICE_CEFR_LEVELS)[number];
+
 export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel;
 
-type RawFlashcardVocabularyItem = Awaited<
-  ReturnType<FlashcardSessionBuilder["getFlashcardVocabularyItems"]>
+export type RawFlashcardVocabularyItem = Awaited<
+  ReturnType<FlashcardQuerySource["getFlashcardVocabularyItems"]>
 >[number];
 
-const FLASHCARD_SESSION_LIMIT = 20;
+export const FLASHCARD_SESSION_LIMIT = 20;
 
 @Injectable()
-export class FlashcardSessionBuilder {
-  constructor(private readonly prisma: PrismaService) {}
+export class FlashcardQuerySource {
+  constructor(protected readonly prisma: PrismaService) {}
 
-  private isPracticeCefrLevel(value: string): value is PracticeCefrLevel {
+  protected isPracticeCefrLevel(value: string): value is PracticeCefrLevel {
     return (PRACTICE_CEFR_LEVELS as readonly string[]).includes(value);
   }
 
-  private isFlashcardSource(value: string): value is FlashcardSource {
+  protected isFlashcardSource(value: string): value is FlashcardSource {
     return value === "due" || value === "saved" || value === "weak";
   }
 
-  private normalizeFlashcardDeck(value?: string | null): FlashcardDeckKey {
+  protected normalizeFlashcardDeck(value?: string | null): FlashcardDeckKey {
     if (!value) return "due" as const;
     if (this.isFlashcardSource(value)) return value;
     if (this.isPracticeCefrLevel(value)) return value;
     return "due" as const;
   }
 
-  private shuffle<T>(items: T[]): T[] {
+  protected shuffle<T>(items: T[]): T[] {
     return [...items].sort(() => Math.random() - 0.5);
   }
 
-  private mapSavedWord(
+  protected mapSavedWord(
     savedWord: RawFlashcardVocabularyItem["user_saved_words"][number]
   ): UserSavedWord {
     return {
@@ -52,7 +55,7 @@ export class FlashcardSessionBuilder {
     };
   }
 
-  private mapVocabularyProgress(
+  protected mapVocabularyProgress(
     progress: RawFlashcardVocabularyItem["user_vocabulary_progress"][number]
   ): UserVocabularyProgress {
     return {
@@ -73,7 +76,7 @@ export class FlashcardSessionBuilder {
     };
   }
 
-  private mapVocabularyExample(
+  protected mapVocabularyExample(
     example: RawFlashcardVocabularyItem["vocabulary_examples"][number]
   ): VocabularyExample {
     return {
@@ -87,7 +90,9 @@ export class FlashcardSessionBuilder {
     };
   }
 
-  private mapVocabularyItem(item: RawFlashcardVocabularyItem): VocabularyItem {
+  protected mapVocabularyItem(
+    item: RawFlashcardVocabularyItem
+  ): VocabularyItem {
     return {
       id: item.id,
       word: item.word,
@@ -117,7 +122,7 @@ export class FlashcardSessionBuilder {
     };
   }
 
-  private async getFlashcardVocabularyItems(
+  protected async getFlashcardVocabularyItems(
     userId: string,
     deck: FlashcardDeckKey
   ) {
@@ -191,102 +196,5 @@ export class FlashcardSessionBuilder {
       },
       take: this.isPracticeCefrLevel(deck) ? 300 : 200,
     });
-  }
-
-  async getFlashcardDeckSummary(userId: string) {
-    if (!userId) {
-      return {
-        due: 0,
-        saved: 0,
-        weak: 0,
-        levels: Object.fromEntries(
-          PRACTICE_CEFR_LEVELS.map((level) => [level, 0])
-        ) as Record<PracticeCefrLevel, number>,
-      };
-    }
-
-    const [saved, due, weak, ...levelCounts] = await Promise.all([
-      this.prisma.user_saved_words.count({
-        where: { user_id: userId },
-      }),
-      this.prisma.user_vocabulary_progress.count({
-        where: {
-          user_id: userId,
-          review_count: {
-            gt: 0,
-          },
-          OR: [
-            {
-              next_review_at: null,
-            },
-            {
-              next_review_at: {
-                lte: new Date(),
-              },
-            },
-          ],
-        },
-      }),
-      this.prisma.user_vocabulary_progress.count({
-        where: {
-          user_id: userId,
-          review_count: {
-            gt: 0,
-          },
-          wrong_count: {
-            gt: 0,
-          },
-        },
-      }),
-      ...PRACTICE_CEFR_LEVELS.map((level) =>
-        this.prisma.vocabulary_items.count({
-          where: { cefr_level: level },
-        })
-      ),
-    ]);
-
-    return {
-      due,
-      saved,
-      weak,
-      levels: Object.fromEntries(
-        PRACTICE_CEFR_LEVELS.map((level, index) => [level, levelCounts[index]])
-      ) as Record<PracticeCefrLevel, number>,
-    };
-  }
-
-  async getFlashcardSessionItems(userId: string, deckValue?: string) {
-    if (!userId) return [];
-
-    const deck = this.normalizeFlashcardDeck(deckValue);
-    const items = (await this.getFlashcardVocabularyItems(userId, deck)).map(
-      (x) => this.mapVocabularyItem(x)
-    );
-
-    if (deck === "due") {
-      return items
-        .sort((a, b) => {
-          const aProgress = a.userVocabularyProgress[0];
-          const bProgress = b.userVocabularyProgress[0];
-          const aTime = aProgress?.nextReviewAt?.getTime() ?? 0;
-          const bTime = bProgress?.nextReviewAt?.getTime() ?? 0;
-
-          return aTime - bTime;
-        })
-        .slice(0, FLASHCARD_SESSION_LIMIT);
-    }
-
-    if (deck === "weak") {
-      return items
-        .sort((a, b) => {
-          const aProgress = a.userVocabularyProgress[0];
-          const bProgress = b.userVocabularyProgress[0];
-
-          return (bProgress?.wrongCount ?? 0) - (aProgress?.wrongCount ?? 0);
-        })
-        .slice(0, FLASHCARD_SESSION_LIMIT);
-    }
-
-    return this.shuffle(items).slice(0, FLASHCARD_SESSION_LIMIT);
   }
 }

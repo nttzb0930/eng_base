@@ -11,7 +11,6 @@ import { AdminLessonsController } from "./admin-lessons.controller";
 import { AdminChallengesController } from "./admin-challenges.controller";
 import { AdminChallengeOptionsController } from "./admin-challenge-options.controller";
 import { ADMIN_COURSE_CONTENT_USE_CASES } from "./use-cases";
-import { CourseLearningImplementation } from "./use-cases/course-learning.implementation";
 import { GetCourseProgressUseCase } from "./use-cases/get-course-progress.use-case";
 import { GetCourseUnitsUseCase } from "./use-cases/get-course-units.use-case";
 import { GetCourseUseCase } from "./use-cases/get-course.use-case";
@@ -34,7 +33,6 @@ import { ListCoursesUseCase } from "./use-cases/list-courses.use-case";
     AdminChallengeOptionsController,
   ],
   providers: [
-    CourseLearningImplementation,
     ListCoursesUseCase,
     GetCourseUseCase,
     GetUserProgressUseCase,

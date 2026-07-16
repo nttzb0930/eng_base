@@ -88,6 +88,10 @@ controller -> capability service -> Prisma Adapter
   coordination.
 - One use-case class represents one caller/system goal. Do not group unrelated
   list/get/create/update/remove operations into a plural management class.
+- EC-profile Modules keep goal files flat under `use-cases/`. Workflow folders
+  are reserved for real multi-phase workflows, not repeated name prefixes.
+- Admin list delivery uses the shared `common/http/admin-list-response.ts`
+  implementation. The HTTP query Interface does not expose `prismaQuery`.
 - Mappers translate persistence records to JSON-safe wire contracts.
 - Add a repository Seam only when at least two real Adapters exist.
 - Do not create pass-through Modules, empty layer folders, or app-wide domain

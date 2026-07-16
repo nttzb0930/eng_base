@@ -1,9 +1,7 @@
 import { cache } from "react";
-import type {
-  FlashcardSummary,
-  PracticeCefrLevel,
-  VocabularyItem,
-} from "@repo/shared";
+import type { FlashcardSummary } from "@repo/shared/flashcards";
+import type { PracticeCefrLevel } from "@repo/shared/practice";
+import type { VocabularyItem } from "@repo/shared/vocabulary";
 
 import { apiRequest } from "@/src/lib/api-client";
 

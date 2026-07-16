@@ -17,7 +17,7 @@ import type {
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "@repo/shared";
+} from "@repo/shared/learning";
 
 import { apiRequest } from "@/src/lib/api-client";
 
@@ -37,17 +37,13 @@ export type {
   VocabularyItem,
 };
 
-export const getCourses = cache(() =>
-  apiRequest<Course[]>("/courses")
-);
+export const getCourses = cache(() => apiRequest<Course[]>("/courses"));
 
 export const getUserProgress = cache(() =>
   apiRequest<UserProgress | null>("/progress/user-progress")
 );
 
-export const getUnits = cache(() =>
-  apiRequest<UnitWithLessons[]>("/units")
-);
+export const getUnits = cache(() => apiRequest<UnitWithLessons[]>("/units"));
 
 export const getCourseById = cache((courseId: number) =>
   apiRequest<CourseDetails | null>(`/courses/${courseId}`)

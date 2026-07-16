@@ -308,7 +308,7 @@ export type PlacementTestQuestion = {
   status: "IN_PROGRESS";
   questionNumber: number;
   onboardingStep?: number;
-  onboardingData?: any;
+  onboardingData?: Record<string, unknown>;
   challenge: {
     id: number;
     direction: "EN_TO_VI" | "VI_TO_EN" | null;

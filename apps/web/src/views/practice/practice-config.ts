@@ -1,4 +1,4 @@
-import type { PracticeLevelSummary } from "@repo/shared";
+import type { PracticeLevelSummary } from "@repo/shared/practice";
 import {
   normalizePracticeCefrLevel,
   PRACTICE_CEFR_LEVELS,

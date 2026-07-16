@@ -141,14 +141,11 @@ is intentional for parent selectors and compatibility consumers.
 For an empty non-paged result, the compatibility header remains
 `Content-Range: items 0-0/0`.
 
-### Known search drift
+### Search compatibility
 
-Admin's `CourseManagementPageQuery` and views send the key `search`. The API
-`FilterParse` decorator currently reads `q`. Consequently the typed Admin search
-value does not drive the API search predicate today. This is a known pre-existing
-behavior, not part of the structural migration. A repair must decide the public
-query name, cover both compatibility directions if needed, and update tests in a
-separate change.
+Admin may send `search`; older callers may send `q`. `FilterParse` accepts both
+and maps the validated query into a neutral `listQuery` Interface. Prisma mapping
+belongs to the owning list use case. Paged requests are capped at 100 records.
 
 ## Admin Interface and cache behavior
 

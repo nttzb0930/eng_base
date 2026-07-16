@@ -3,7 +3,7 @@ import type {
   FillBlankPracticeChallenge,
   PracticeCefrLevel,
   PracticeLevelSummary,
-} from "@repo/shared";
+} from "@repo/shared/practice";
 
 import { apiRequest } from "@/src/lib/api-client";
 

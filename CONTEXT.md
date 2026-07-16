@@ -58,10 +58,13 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - Course Management updates use `PUT`, not `PATCH`.
 - The existing `/admin/challengeOptions` path is camelCase and remains unchanged until a separately versioned API migration.
 - A list request with a `page` query key returns a pagination envelope. Omitting `page` returns a raw array and `Content-Range` for lookup use cases.
-- Admin currently sends `search`, while the API filter decorator reads `q`. This drift is known and intentionally not repaired by the structural refactor.
+- Admin list delivery accepts both `search` and `q`; paged requests are capped at
+  100 records while unpaged lookup behavior remains compatible.
 
 ## Data safety
 
 - Architecture refactors must not run vocabulary seed, normalization, correction, or database apply commands.
 - Prisma schema changes and data migrations require a separate reviewed task.
 - Existing vocabulary backups and audit artifacts are retained until an explicit cleanup task approves removal.
+- The prepared `challenge_progress(user_id, challenge_id)` uniqueness migration
+  must be reviewed and applied separately; architecture refactors do not apply it.

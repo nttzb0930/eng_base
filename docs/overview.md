@@ -24,6 +24,8 @@ profile is recorded separately in
 [ADR 0014](adr/0014-ec-api-source-profile.md).
 Auth use-case organization is recorded in
 [ADR 0015](adr/0015-auth-use-case-organization.md).
+Flat goal use cases and neutral Admin list queries are recorded in
+[ADR 0018](adr/0018-flat-goal-use-cases-and-explicit-list-query.md).
 Admin delivery, Course Management roles, Vocabulary ownership, and the script
 Prisma Adapter are recorded in
 [ADR 0016](adr/0016-domain-owner-locality.md).

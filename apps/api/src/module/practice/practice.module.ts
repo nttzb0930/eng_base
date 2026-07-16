@@ -14,13 +14,11 @@ import { GetListeningPracticeSummaryUseCase } from "./use-cases/get-listening-pr
 import { GetWeakWordsPracticeChallengesUseCase } from "./use-cases/get-weak-words-practice-challenges.use-case";
 import { GetWeakWordsPracticeSummaryUseCase } from "./use-cases/get-weak-words-practice-summary.use-case";
 import { ListAdminPracticeSessionsUseCase } from "./use-cases/list-admin-practice-sessions.use-case";
-import { PracticeChallengeBuilder } from "./use-cases/practice-challenge.builder";
 import { RemoveAdminPracticeSessionUseCase } from "./use-cases/remove-admin-practice-session.use-case";
 
 @Module({
   controllers: [PracticeController, AdminPracticeSessionsController],
   providers: [
-    PracticeChallengeBuilder,
     GetFillBlankPracticeSummaryUseCase,
     GetFillBlankPracticeChallengesUseCase,
     GetListeningPracticeSummaryUseCase,

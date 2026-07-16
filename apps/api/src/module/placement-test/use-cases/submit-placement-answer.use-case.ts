@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { Prisma } from "@prisma/client";
-import type { SubmitAnswerResponse } from "@repo/shared";
+import type { SubmitAnswerResponse } from "@repo/shared/placement-test";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import {

@@ -2,7 +2,7 @@ import { cache } from "react";
 import type {
   DictationPracticeChallenge,
   PracticeLevelSummary,
-} from "@repo/shared";
+} from "@repo/shared/practice";
 
 import { apiRequest } from "@/src/lib/api-client";
 

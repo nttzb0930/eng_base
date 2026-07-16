@@ -2,7 +2,7 @@ import { cache } from "react";
 import type {
   SavedWordReviewChallenge,
   SavedWordsReviewSummary,
-} from "@repo/shared";
+} from "@repo/shared/review";
 
 import { apiRequest } from "@/src/lib/api-client";
 

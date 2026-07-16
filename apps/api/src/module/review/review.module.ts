@@ -6,13 +6,11 @@ import { GetDailyReviewChallengesUseCase } from "./use-cases/get-daily-review-ch
 import { GetDailyReviewSummaryUseCase } from "./use-cases/get-daily-review-summary.use-case";
 import { GetSavedWordReviewChallengesUseCase } from "./use-cases/get-saved-word-review-challenges.use-case";
 import { GetSavedWordReviewSummaryUseCase } from "./use-cases/get-saved-word-review-summary.use-case";
-import { ReviewChallengeBuilder } from "./use-cases/review-challenge.builder";
 
 @Module({
   imports: [VocabularyModule],
   controllers: [ReviewController],
   providers: [
-    ReviewChallengeBuilder,
     GetDailyReviewSummaryUseCase,
     GetDailyReviewChallengesUseCase,
     GetSavedWordReviewSummaryUseCase,

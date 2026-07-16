@@ -1,5 +1,5 @@
 import { cache } from "react";
-import type { DashboardStats } from "@repo/shared";
+import type { DashboardStats } from "@repo/shared/dashboard";
 
 import { apiRequest } from "@/src/lib/api-client";
 

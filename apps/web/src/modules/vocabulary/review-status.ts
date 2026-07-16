@@ -1,4 +1,4 @@
-import type { VocabularyItem } from "@repo/shared";
+import type { VocabularyItem } from "@repo/shared/vocabulary";
 
 export const getVocabularyReviewStatus = (item: VocabularyItem) => {
   const progress = item.userVocabularyProgress[0];
