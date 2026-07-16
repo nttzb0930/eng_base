@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This repository applies **Web Base Standard 1.1.0** to a three-app pnpm/Turborepo
+This repository applies **Web Base Standard 1.2.0** to a three-app pnpm/Turborepo
 workspace:
 
 - `apps/api` exposes HTTP, owns business behavior, Prisma, and PostgreSQL.
@@ -18,7 +18,9 @@ names are fixed by [ADR 0011](adr/0011-monorepo-runtime-ownership.md).
 The Course content hierarchy is the first completed capability-first golden
 slice. Its decisions and compatibility constraints are documented in
 [Course content architecture](architecture/course-content.md) and
-[ADR 0012](adr/0012-course-content-capability-boundary.md).
+[ADR 0012](adr/0012-course-content-capability-boundary.md). The Admin filesystem
+profile is recorded separately in
+[ADR 0013](adr/0013-ec-admin-frontend-profile.md).
 
 Reference documents:
 

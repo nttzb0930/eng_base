@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Plus, Edit2, Trash2, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
-import type { CourseLessonViewModel as Lesson } from "../model/course-management.view-model";
+import type { CourseLessonViewModel as Lesson } from "@/app/features/courses/types/course-management.types";
 import { useTableControls } from "@/src/hooks/use-table-controls";
 import { useDebounce } from "@/src/hooks/use-debounce";
 import { Button } from "@/components/ui/button";
@@ -25,13 +25,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { DataTableCard, type Column } from "@/src/components/data-table";
-import { useAllUnits } from "../units";
+import { useAllUnits } from "@/app/features/courses/hooks/use-units";
 import {
   useCreateLesson,
   useDeleteLesson,
   useLessons,
   useUpdateLesson,
-} from "./lesson.queries";
+} from "@/app/features/courses/hooks/use-lessons";
 
 export function LessonsView() {
   const {

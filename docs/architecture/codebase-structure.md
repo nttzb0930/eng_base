@@ -1,6 +1,6 @@
 # Codebase Structure
 
-This is the repository profile for **Web Base Standard 1.1.0**. Migration is
+This is the repository profile for **Web Base Standard 1.2.0**. Migration is
 incremental: existing behavior may remain in legacy locations, but every new
 capability and every touched golden slice must converge on this structure.
 
@@ -23,18 +23,20 @@ ADR 0011 fixes these package names. `packages/shared` remains the package name;
 "transitional" means its legacy root exports are being split into explicit
 capability subpaths, not that a refactor may rename the package.
 
-## Organize by capability, then technology
+## Organize ownership by capability
 
-The first directory below an application source root answers "which business
-capability owns this?" Technical detail comes after ownership.
+Ownership is capability-first; physical layout follows a documented runtime
+profile. Admin uses the EC profile while API and shared contracts remain
+self-contained capability modules.
 
 ```text
-apps/admin/src/features/<capability>/
-  index.ts              public feature Interface
-  api/                  feature HTTP adapter
-  model/                local ViewModels/query keys
-  <subcapability>/       screens, hooks, and private components
+apps/admin/app/features/<capability>/
+  api/<resource>.api.ts  resource HTTP Interface and query keys
+  hooks/use-*.ts         query orchestration
+  types/                 local ViewModels
   tests/
+apps/admin/app/views/<resource>/
+  <Resource>View.tsx     route-level screen composition
 
 apps/api/src/module/<capability>/
   index.ts              public module Interface
@@ -59,9 +61,9 @@ domain layers speculatively.
 
 ## Public Interfaces
 
-- Next route adapters import only from `@/src/features/<capability>`.
-- Other capabilities import an owner's root or documented subcapability barrel,
-  not its private files.
+- Admin route adapters import their screen from `@/app/views/<resource>`.
+- Feature root barrels are optional in the EC profile. Consumers use the
+  documented resource API/hook Interface rather than an artificial aggregate.
 - Consumers import Course contracts from `@repo/shared/courses`, whose source
   Interface is `packages/shared/src/courses/index.ts`.
 - New contracts are not added to the legacy `@repo/shared` root barrel.
@@ -84,7 +86,7 @@ extend a wire DTO for display, but stays local to the frontend capability.
 ## Dependency direction
 
 ```text
-Next route -> feature public Interface -> query/view -> feature HTTP adapter
+Next route -> app view -> feature hook -> resource API
                                              |
                                              -> @repo/shared/<capability>
 
@@ -102,12 +104,12 @@ acceptable.
 ## Naming rules
 
 - Capability folders use a stable plural domain noun: `courses`, `users`.
-- Use semantic subcapability names when repetition would obscure meaning:
-  `courses/catalog`, not `courses/courses`.
+- Create semantic child folders only for real boundaries; do not invent
+  `catalog` solely to avoid repetition.
 - Files and folders use `kebab-case`; exported React components/classes use
   `PascalCase`; functions and values use `camelCase`.
 - Use role suffixes only when they communicate a boundary: `.controller.ts`,
-  `.service.ts`, `.dto.ts`, `.mapper.ts`, `.queries.ts`, `.view.tsx`, `.test.ts`.
+  `.service.ts`, `.dto.ts`, `.mapper.ts`, `.api.ts`, `.test.ts`.
 - Contract response names end in `Dto`; mutation inputs end in `Request`.
 - Database naming is mapped explicitly; never rename wire fields to match Prisma.
 
@@ -116,7 +118,7 @@ acceptable.
 Do not create app-wide domain buckets such as:
 
 ```text
-src/views/<domain>
+src/views/<domain>       legacy source profile
 src/services/<domain>
 src/types/<domain>
 src/constants/<domain>
@@ -124,8 +126,9 @@ src/controllers/<domain>
 src/repositories/<domain>
 ```
 
-These paths separate code by technology and scatter one capability. Existing
-legacy paths remain valid until their owner is migrated. Cross-cutting framework
+These legacy paths scatter ownership. `app/views` is allowed by the EC profile
+as a thin screen-composition layer backed by `app/features`; it is not equivalent
+to legacy `src/views`. Existing legacy paths remain valid until their owner is migrated. Cross-cutting framework
 infrastructure, for example the existing Admin HTTP transport, may remain in a
 clearly infrastructure-owned location.
 
@@ -136,8 +139,8 @@ Management additionally has:
 
 - shared wire-schema characterization tests;
 - API controller, service, and mapper tests;
-- Admin HTTP-client and query-key tests;
-- an Admin route/import test that rejects Course code in legacy technical buckets.
+- Admin resource API and query-key tests;
+- an Admin route/import test that enforces the accepted EC profile.
 
 Run `pnpm test`, `pnpm check-types`, `pnpm lint`, and `pnpm build` before handoff.
 Architecture refactors must not run database seed, push, migration, or vocabulary

@@ -1,75 +1,65 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { dirname, join, resolve, sep } from "node:path";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 
 const appRoot = dirname(dirname(fileURLToPath(import.meta.url)));
-const publicImport = 'from "@/src/features/courses"';
-const featureRoot = join(appRoot, "src/features/courses");
 
-const routeFiles = [
-  "app/(dashboard)/courses/page.tsx",
-  "app/(dashboard)/units/page.tsx",
-  "app/(dashboard)/lessons/page.tsx",
-  "app/(dashboard)/challenges/page.tsx",
-  "app/(dashboard)/challenge-options/page.tsx",
+const routeImports = {
+  "app/(dashboard)/courses/page.tsx": 'from "@/app/views/courses/CoursesView"',
+  "app/(dashboard)/units/page.tsx": 'from "@/app/views/units/UnitsView"',
+  "app/(dashboard)/lessons/page.tsx": 'from "@/app/views/lessons/LessonsView"',
+  "app/(dashboard)/challenges/page.tsx":
+    'from "@/app/views/challenges/ChallengesView"',
+  "app/(dashboard)/challenge-options/page.tsx":
+    'from "@/app/views/challenge-options/ChallengeOptionsView"',
+};
+
+const resourceFiles = [
+  "course.api.ts",
+  "unit.api.ts",
+  "lesson.api.ts",
+  "challenge.api.ts",
+  "challenge-option.api.ts",
 ];
 
 function filesUnder(directory: string): string[] {
   if (!existsSync(directory)) return [];
-
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const path = join(directory, entry.name);
     return entry.isDirectory() ? filesUnder(path) : [path];
   });
 }
 
-test("course management routes use the feature public Interface", () => {
-  for (const routeFile of routeFiles) {
-    const absoluteRouteFile = join(appRoot, routeFile);
-    const source = readFileSync(absoluteRouteFile, "utf8");
+test("course routes follow the ecommerce Admin view profile", () => {
+  for (const [routeFile, expectedImport] of Object.entries(routeImports)) {
+    const source = readFileSync(join(appRoot, routeFile), "utf8");
     assert.equal(
-      source.includes(publicImport),
+      source.includes(expectedImport),
       true,
-      `${routeFile} must import @/src/features/courses`
-    );
-
-    const imports = [...source.matchAll(/from\s+["']([^"']+)["']/g)].map(
-      (match) => match[1] ?? ""
-    );
-    const privateImports = imports.filter((specifier) => {
-      if (specifier.startsWith("@/src/features/courses/")) return true;
-      if (!specifier.startsWith(".")) return false;
-
-      const resolvedImport = resolve(dirname(absoluteRouteFile), specifier);
-      return (
-        resolvedImport === featureRoot ||
-        resolvedImport.startsWith(`${featureRoot}${sep}`)
-      );
-    });
-
-    assert.deepEqual(
-      privateImports,
-      [],
-      `${routeFile} must not import a private Courses implementation`
+      `${routeFile} must import its app/views screen`
     );
   }
 });
 
-test("course management no longer lives in legacy technical buckets", () => {
-  const legacyCapabilityNames = [
-    "courses",
-    "units",
-    "lessons",
-    "challenges",
-    "challenge-options",
-  ];
-  const remainingFiles = ["src/views", "src/services"].flatMap((bucket) =>
-    legacyCapabilityNames.flatMap((capability) =>
-      filesUnder(join(appRoot, bucket, capability))
-    )
-  );
+test("course transport is split into resource api modules", () => {
+  const apiRoot = join(appRoot, "app/features/courses/api");
+  for (const file of resourceFiles) {
+    assert.equal(existsSync(join(apiRoot, file)), true, `${file} must exist`);
+  }
 
-  assert.deepEqual(remainingFiles, []);
+  assert.equal(
+    existsSync(join(apiRoot, "course-management.client.ts")),
+    false,
+    "the aggregate client must not return"
+  );
+});
+
+test("course management no longer uses the rejected src feature profile", () => {
+  assert.deepEqual(filesUnder(join(appRoot, "src/features/courses")), []);
+  assert.equal(
+    existsSync(join(appRoot, "app/features/courses/catalog")),
+    false
+  );
 });

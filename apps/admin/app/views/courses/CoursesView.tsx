@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Plus, Edit2, Trash2, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
-import type { CourseViewModel as Course } from "../model/course-management.view-model";
+import type { CourseViewModel as Course } from "@/app/features/courses/types/course-management.types";
 import { useTableControls } from "@/src/hooks/use-table-controls";
 import { useDebounce } from "@/src/hooks/use-debounce";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ import {
   useCreateCourse,
   useDeleteCourse,
   useUpdateCourse,
-} from "./course.queries";
+} from "@/app/features/courses/hooks/use-courses";
 
 export function CoursesView() {
   const {

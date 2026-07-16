@@ -1,6 +1,6 @@
 # Project Context
 
-The architecture baseline is **Web Base Standard 1.1.0**, adopted incrementally.
+The architecture baseline is **Web Base Standard 1.2.0**, adopted incrementally.
 Legacy modules may remain until their behavior is covered and moved; new code
 must follow the capability-first rules in `docs/architecture/codebase-structure.md`.
 
@@ -31,7 +31,9 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - Shared packages must not import from applications.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
 - `packages/shared` is a transitional aggregator. New contracts use capability subpaths rather than expanding the legacy root barrel; the package name remains unchanged under ADR 0011.
-- Source hierarchy is capability-first. Technical folders live inside their owner and do not become app-wide buckets for domain code.
+- Ownership is capability-first. Each runtime may select a documented filesystem
+  profile; the Admin EC profile separates `app/features` behavior from
+  `app/views` screen composition without changing domain ownership.
 - Courses owns both learner-facing reads and Admin Course Management CRUD. The Admin API module must not duplicate these mutations.
 - Add seams only when there are at least two real adapters, such as Prisma in production and an in-memory repository in tests.
 - Tests verify observable behavior through public interfaces, not private helpers or implementation layout.

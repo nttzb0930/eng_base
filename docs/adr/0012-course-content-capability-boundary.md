@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted
+Accepted; Admin filesystem details amended by ADR 0013
 
 ## Context
 
@@ -17,15 +17,13 @@ existing clients depend on its pagination and route details.
 
 ## Decision
 
-Adopt the Course content hierarchy as the **Web Base Standard 1.1.0 golden
+Adopt the Course content hierarchy as the **Web Base Standard 1.2.0 golden
 slice**.
 
 - Courses is the API domain owner for learner reads and Admin management CRUD.
 - API management delivery, validation, behavior, mapping, and tests live under
   `apps/api/src/module/courses/management` and are composed by `CoursesModule`.
-- Admin Course Management lives under `apps/admin/src/features/courses` and
-  exposes screen components through its root `index.ts`.
-- Admin route pages import only `@/src/features/courses`.
+- Admin Course Management follows the EC Admin profile recorded in ADR 0013.
 - The public wire Interface is `@repo/shared/courses`, sourced from
   `packages/shared/src/courses/index.ts` and `course.contract.ts`.
 - Nest validation DTOs implement shared request shapes but remain API-local.

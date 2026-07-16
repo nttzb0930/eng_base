@@ -1,4 +1,4 @@
-import { ChallengeOptionsView } from "@/src/features/courses";
+import { ChallengeOptionsView } from "@/app/views/challenge-options/ChallengeOptionsView";
 
 export default function ChallengeOptionsPage() {
   return <ChallengeOptionsView />;

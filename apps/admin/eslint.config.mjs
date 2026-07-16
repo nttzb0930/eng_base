@@ -42,7 +42,6 @@ const eslintConfig = [
   },
   {
     files: ["app/**/*.{ts,tsx}", "src/**/*.{ts,tsx}"],
-    ignores: ["src/features/courses/**"],
     rules: {
       "no-restricted-imports": [
         "error",
@@ -51,20 +50,15 @@ const eslintConfig = [
           patterns: [
             ...privateSharedPatterns,
             {
-              regex: "^@/(?:src/)?features/courses/.+",
+              regex: "^@/(?:src/)?features/courses(?:/|$)",
               message:
-                "Import the Courses feature through @/src/features/courses.",
-            },
-            {
-              regex: "^(?:\\.{1,2}/)+(?:src/)?features/courses(?:/.+)?$",
-              message:
-                "Route and sibling capabilities must import Courses through @/src/features/courses.",
+                "The rejected src/features Courses profile is closed; use app/features and app/views.",
             },
             {
               regex:
                 "^@/(?:src/)?(?:services|views)/(?:courses|units|lessons|challenges|challenge-options)(?:/|$)",
               message:
-                "Legacy Course technical buckets are closed; use @/src/features/courses.",
+                "Legacy src Course buckets are closed; follow the app/features + app/views EC profile.",
             },
           ],
         },

@@ -1,6 +1,6 @@
 # Course Content Architecture
 
-Course content is the repository's **Web Base Standard 1.1.0 golden slice**. Use
+Course content is the repository's **Web Base Standard 1.2.0 golden slice**. Use
 it as the reference when migrating another capability; copy its ownership and
 Interface rules, not its domain-specific files verbatim.
 
@@ -36,16 +36,23 @@ apps/api/src/module/courses/
     course-management.service.ts
     *.test.ts
 
-apps/admin/src/features/courses/
-  index.ts                       route-facing public Interface
-  api/course-management.client.ts
-  model/course-management.view-model.ts
-  catalog/
-  units/
-  lessons/
-  challenges/
-  challenge-options/
+apps/admin/app/features/courses/
+  api/
+    course.api.ts
+    unit.api.ts
+    lesson.api.ts
+    challenge.api.ts
+    challenge-option.api.ts
+  hooks/use-*.ts
+  types/course-management.types.ts
   tests/
+
+apps/admin/app/views/
+  courses/CoursesView.tsx
+  units/UnitsView.tsx
+  lessons/LessonsView.tsx
+  challenges/ChallengesView.tsx
+  challenge-options/ChallengeOptionsView.tsx
 
 packages/shared/src/courses/
   index.ts                       source public Interface
@@ -76,13 +83,13 @@ remain temporarily so unmigrated consumers keep compiling; new code uses only
 - paginated response schemas;
 - the Admin page query shape.
 
-The Admin client parses API response data with these Zod schemas. API
+The Admin resource API modules parse response data with these Zod schemas. API
 `class-validator` DTO classes validate incoming HTTP bodies and implement the
 shared Request types, but remain Nest-specific. API mappers translate Prisma
 snake_case fields such as `course_id`, `image_src`, and `vocabulary_item_id` to
 camelCase wire DTOs.
 
-Admin-local ViewModels may add presentation relationships such as a course title
+Admin-local types may add presentation relationships such as a course title
 on a Unit row. Those fields are not guaranteed HTTP response fields and do not
 belong in the shared contract.
 
@@ -128,9 +135,9 @@ separate change.
 
 ## Admin Interface and cache behavior
 
-The five Next route files import screen exports from
-`@/src/features/courses`. Private API, query, model, and view files are not route
-Interfaces. React Query roots remain stable (`courses`, `units`, `lessons`,
+The five Next route files import screen components from `@/app/views/<resource>`.
+Views consume hooks from the Course feature; routes do not consume private API
+or type files. React Query roots remain stable (`courses`, `units`, `lessons`,
 `challenges`, and `challenge-options`) so create/update/delete invalidation keeps
 its existing scope.
 
@@ -143,9 +150,9 @@ its existing scope.
   routes, pagination selection, and `Content-Range` behavior.
 - Admin feature tests lock endpoint paths, runtime response parsing, list
   capabilities, and query-key shapes.
-- `apps/admin/test/course-feature-architecture.test.ts` requires route imports
-  through the feature root and rejects Course content under legacy `src/views`
-  or domain `src/services` buckets.
+- `apps/admin/test/course-feature-architecture.test.ts` requires EC view imports,
+  resource API files, and rejects the superseded `src/features/courses`,
+  `catalog`, and aggregate client layout.
 - `pnpm architecture:check` runs repository architecture checks through Turbo.
 
 After a Course change, run the narrow relevant tests and then the repository

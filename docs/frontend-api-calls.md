@@ -13,7 +13,7 @@ packages/shared/<capability>     JSON schemas and TypeScript wire types
 API controller -> capability service -> Prisma/mapper
              ^
              |
-feature HTTP client <- query hook <- view <- Next route adapter
+resource API module <- query hook <- EC view <- Next route adapter
 ```
 
 Each runtime owns its adapter:
@@ -28,17 +28,25 @@ Do not share a frontend service instance between Admin and Web when auth, route
 scope, or response visibility differs. Share the wire contract when the actual
 HTTP shape is the same.
 
-## Feature-local client
+## Feature-local resource APIs
 
-The Course Management reference client is:
+The Course Management resource Interfaces are:
 
 ```text
-apps/admin/src/features/courses/api/course-management.client.ts
+apps/admin/app/features/courses/api/course.api.ts
+apps/admin/app/features/courses/api/unit.api.ts
+apps/admin/app/features/courses/api/lesson.api.ts
+apps/admin/app/features/courses/api/challenge.api.ts
+apps/admin/app/features/courses/api/challenge-option.api.ts
 ```
 
-It delegates bearer-token/envelope transport to the existing cross-cutting
+Each module delegates bearer-token/envelope transport to the existing cross-cutting
 `src/services/http/admin-http-client.ts`, owns the Course endpoint strings, and
 parses response data with schemas from `@repo/shared/courses`.
+
+Use one API module per independently addressed resource. Do not aggregate these
+Interfaces into `course-management.client.ts` merely because they share a domain
+hierarchy. Small shared HTTP helpers may remain private inside the capability.
 
 A client method should:
 
@@ -49,7 +57,8 @@ A client method should:
 5. preserve exact compatibility paths and methods.
 
 Views and components do not hardcode endpoint strings. React Query hooks call
-the feature client and own cache keys/invalidation.
+resource APIs and own orchestration/invalidation. Query-key factories are
+colocated in the owning resource `.api.ts`.
 
 ## Contract versus local types
 
@@ -61,7 +70,7 @@ the feature client and own cache keys/invalidation.
 
 apps/api/.../course-management.dto.ts     Nest validation classes
 apps/api/.../course-management.mapper.ts  Prisma <-> wire conversion
-apps/admin/.../model/*.ts                 Admin-only ViewModels
+apps/admin/app/features/.../types/*.ts    Admin-only ViewModels
 ```
 
 Do not expose Prisma-generated models as API types. Do not add UI-only joined
@@ -118,7 +127,7 @@ request/controller/client tests.
 
 ## Query keys and invalidation
 
-Keep query keys owned by the capability and stable across internal moves. Course
+Keep query keys owned by each resource API and stable across internal moves. Course
 Management roots are:
 
 ```text
@@ -130,8 +139,8 @@ challenge-options
 ```
 
 Paged keys append `list` and the query. Lookup keys append `all`. Mutations
-invalidate the resource root so both list forms refresh. Query hooks belong next
-to the semantic subcapability that consumes them, not in a global hooks bucket.
+invalidate the resource root so both list forms refresh. Query hooks live under
+`app/features/courses/hooks`, not in a global hooks bucket.
 
 ## Tests
 

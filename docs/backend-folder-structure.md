@@ -1,7 +1,7 @@
 # Backend Folder Structure
 
 This document replaces the former mojibake/scaffold-heavy guide. The NestJS API
-follows **Web Base Standard 1.1.0**: organize by business capability first and add
+follows **Web Base Standard 1.2.0**: organize by business capability first and add
 technical layers only when behavior requires them.
 
 ## Current API tree

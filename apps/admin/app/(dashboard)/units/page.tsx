@@ -1,4 +1,4 @@
-import { UnitsView } from "@/src/features/courses";
+import { UnitsView } from "@/app/views/units/UnitsView";
 
 export default function UnitsPage() {
   return <UnitsView />;

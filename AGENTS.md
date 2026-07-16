@@ -1,6 +1,6 @@
 # Agent Workflow
 
-This repository follows **Web Base Standard 1.1.0**. Read `CONTEXT.md`, the
+This repository follows **Web Base Standard 1.2.0**. Read `CONTEXT.md`, the
 relevant document in `docs/architecture/`, and accepted ADRs before changing an
 owned capability or a public Interface.
 
@@ -14,27 +14,32 @@ owned capability or a public Interface.
 These package names are fixed by ADR 0011. Do not rename them as part of a
 feature refactor.
 
-## Capability-first source layout
+## Capability-first ownership
 
-- Organize new frontend behavior under `src/features/<capability>`.
+- Admin follows the EC frontend profile: domain adapters and hooks live under
+  `app/features/<capability>`, while route-level screens live under `app/views`.
 - Organize backend behavior under its owning `src/module/<capability>` folder.
   The singular `module` path is the current repository path; a mass rename is a
   separate mechanical migration.
-- Technical folders such as `api`, `model`, `components`, `management`, and
-  `tests` are private implementation details inside a capability.
-- Do not add new domain code to app-wide `src/views`, `src/services`,
-  `src/types`, or `src/constants` buckets. Existing files there are legacy and
-  migrate one capability at a time.
+- Technical folders such as `api`, `hooks`, `types`, `management`, and `tests`
+  remain subordinate to a business owner.
+- Do not add new domain code to the legacy `src/views`, `src/services`,
+  `src/types`, or `src/constants` buckets. `app/views` is an intentional EC
+  composition layer, not that legacy technical bucket.
 - Cross-cutting infrastructure may remain in clearly framework-owned locations,
   for example `src/lib` and the existing `src/services/http` adapter.
 
 ## Frontend conventions
 
-- Keep `app/**/page.tsx` and route layouts thin. A route imports a screen from
-  the feature root, for example `@/src/features/courses`, never a private file.
-- Export the smallest useful public Interface from each feature `index.ts`.
-- Keep feature-private UI, React Query hooks, query keys, form state, and
-  ViewModels within the owning feature.
+- Keep `app/**/page.tsx` and route layouts thin. In the Admin EC profile, a route
+  imports its screen from `@/app/views/<resource>/<Resource>View`.
+- Split HTTP adapters by resource (`course.api.ts`, `unit.api.ts`) when the API
+  exposes independent resource Interfaces; do not create an aggregate client
+  merely because the resources belong to one hierarchy.
+- Keep query keys in the owning resource `.api.ts`, query hooks in the feature's
+  `hooks` folder, and UI-only types in its `types` folder.
+- A feature root `index.ts` is optional. Add one only when there is a genuine
+  public feature Interface; routes in this profile do not require it.
 - Import Course wire contracts only from `@repo/shared/courses`.
 - Localized navigation must preserve the active locale. Do not create a
   non-localized implementation route when the canonical route is under `[locale]`.
@@ -72,8 +77,8 @@ pnpm lint
 pnpm build
 ```
 
-Course Management also has contract, API mapper/service/controller, client,
-query-key, and import-boundary characterization tests. Preserve observable HTTP
+Course Management also has contract, API mapper/service/controller, resource
+API, query-key, and import-boundary characterization tests. Preserve observable HTTP
 and cache behavior while moving implementation.
 
 ## Vocabulary data safety

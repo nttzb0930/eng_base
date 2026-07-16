@@ -1,19 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import {
-  Plus,
-  Edit2,
-  Trash2,
-  Loader2,
-  Volume2,
-  CheckCircle2,
-  XCircle,
-} from "lucide-react";
+import { Plus, Edit2, Trash2, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
-import type { LessonChallengeOptionViewModel as ChallengeOption } from "../model/course-management.view-model";
+import type { LessonChallengeViewModel as Challenge } from "@/app/features/courses/types/course-management.types";
 import { useTableControls } from "@/src/hooks/use-table-controls";
 import { useDebounce } from "@/src/hooks/use-debounce";
 import { Button } from "@/components/ui/button";
@@ -34,15 +25,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { DataTableCard, type Column } from "@/src/components/data-table";
-import { useAllChallenges } from "../challenges";
+import { useAllLessons } from "@/app/features/courses/hooks/use-lessons";
 import {
-  useChallengeOptions,
-  useCreateChallengeOption,
-  useDeleteChallengeOption,
-  useUpdateChallengeOption,
-} from "./challenge-option.queries";
+  useChallenges,
+  useCreateChallenge,
+  useDeleteChallenge,
+  useUpdateChallenge,
+} from "@/app/features/courses/hooks/use-challenges";
 
-export function ChallengeOptionsView() {
+export function ChallengesView() {
   const {
     currentPage,
     setCurrentPage,
@@ -52,60 +43,58 @@ export function ChallengeOptionsView() {
     setSearchQuery,
   } = useTableControls();
   const debouncedSearch = useDebounce(searchQuery, 450);
-  const optionsQuery = useChallengeOptions({
+  const challengesQuery = useChallenges({
     page: currentPage,
     limit: pageSize,
     search: debouncedSearch,
   });
-  const challengesQuery = useAllChallenges();
-  const options = optionsQuery.data?.data ?? [];
-  const challenges = challengesQuery.data ?? [];
-  const pagination = optionsQuery.data?.pagination;
+  const lessonsQuery = useAllLessons();
+  const challenges = challengesQuery.data?.data ?? [];
+  const lessons = lessonsQuery.data ?? [];
+  const pagination = challengesQuery.data?.pagination;
 
   const [isOpen, setIsOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [activeId, setActiveId] = useState<number | null>(null);
-  const [challengeId, setChallengeId] = useState("");
-  const [text, setText] = useState("");
-  const [correct, setCorrect] = useState("false");
-  const [imageSrc, setImageSrc] = useState("");
-  const [audioSrc, setAudioSrc] = useState("");
-  const [playingAudioUrl, setPlayingAudioUrl] = useState<string | null>(null);
-
-  const createMutation = useCreateChallengeOption();
-  const updateMutation = useUpdateChallengeOption(activeId);
-  const deleteMutation = useDeleteChallengeOption();
+  const [question, setQuestion] = useState("");
+  const [type, setType] = useState<"SELECT" | "ASSIST">("SELECT");
+  const [direction, setDirection] = useState<"EN_TO_VI" | "VI_TO_EN">(
+    "EN_TO_VI"
+  );
+  const [lessonId, setLessonId] = useState("");
+  const [order, setOrder] = useState(1);
+  const [vocabularyItemId, setVocabularyItemId] = useState("");
+  const createMutation = useCreateChallenge();
+  const updateMutation = useUpdateChallenge(activeId);
+  const deleteMutation = useDeleteChallenge();
   const formSubmitting = createMutation.isPending || updateMutation.isPending;
-
-  const playAudio = (url: string) => {
-    const audio = new Audio(url);
-    setPlayingAudioUrl(url);
-    audio.play().catch(() => toast.error("Không thể phát âm thanh."));
-    audio.onended = () => setPlayingAudioUrl(null);
-  };
 
   const handleOpenCreate = () => {
     setIsEdit(false);
     setActiveId(null);
-    setChallengeId(challenges[0]?.id?.toString() || "");
-    setText("");
-    setCorrect("false");
-    setImageSrc("");
-    setAudioSrc("");
+    setQuestion("");
+    setType("SELECT");
+    setDirection("EN_TO_VI");
+    setLessonId(lessons[0]?.id?.toString() || "");
+    setOrder(1);
+    setVocabularyItemId("");
     setIsOpen(true);
   };
-  const handleOpenEdit = (o: ChallengeOption) => {
+  const handleOpenEdit = (c: Challenge) => {
     setIsEdit(true);
-    setActiveId(o.id);
-    setChallengeId(o.challengeId.toString());
-    setText(o.text);
-    setCorrect(o.correct ? "true" : "false");
-    setImageSrc(o.imageSrc || "");
-    setAudioSrc(o.audioSrc || "");
+    setActiveId(c.id);
+    setQuestion(c.question);
+    setType(c.type);
+    setDirection(c.direction || "EN_TO_VI");
+    setLessonId(c.lessonId.toString());
+    setOrder(c.order);
+    setVocabularyItemId(
+      c.vocabularyItemId ? c.vocabularyItemId.toString() : ""
+    );
     setIsOpen(true);
   };
   const handleDelete = async (id: number) => {
-    if (!confirm("Xóa đáp án này?")) return;
+    if (!confirm("Xóa câu hỏi này?")) return;
     try {
       await deleteMutation.mutateAsync(id);
       toast.success("Xóa thành công");
@@ -117,11 +106,12 @@ export function ChallengeOptionsView() {
     e.preventDefault();
     try {
       const body = {
-        challengeId: parseInt(challengeId),
-        text,
-        correct: correct === "true",
-        imageSrc: imageSrc.trim() || null,
-        audioSrc: audioSrc.trim() || null,
+        question,
+        type,
+        direction: type === "SELECT" ? direction : null,
+        lessonId: parseInt(lessonId),
+        order,
+        vocabularyItemId: vocabularyItemId ? parseInt(vocabularyItemId) : null,
       };
       if (isEdit && activeId !== null) await updateMutation.mutateAsync(body);
       else await createMutation.mutateAsync(body);
@@ -132,7 +122,7 @@ export function ChallengeOptionsView() {
     }
   };
 
-  const columns: Column<ChallengeOption>[] = [
+  const columns: Column<Challenge>[] = [
     {
       header: "ID",
       className: "w-16",
@@ -141,60 +131,43 @@ export function ChallengeOptionsView() {
       ),
     },
     {
-      header: "Nội dung đáp án",
-      cell: (i) => <span className="font-bold text-zinc-900">{i.text}</span>,
-    },
-    {
-      header: "Phân loại",
-      cell: (i) =>
-        i.correct ? (
-          <span className="inline-flex items-center gap-1 rounded-full border border-emerald-100 bg-emerald-50 px-2 py-0.5 text-xs font-bold text-emerald-600">
-            <CheckCircle2 className="h-3 w-3" /> Đúng
-          </span>
-        ) : (
-          <span className="inline-flex items-center gap-1 rounded-full border border-red-100 bg-red-50 px-2 py-0.5 text-xs font-bold text-red-600">
-            <XCircle className="h-3 w-3" /> Sai
-          </span>
-        ),
-    },
-    {
-      header: "Ảnh / Audio",
-      cell: (i) => (
-        <div className="flex items-center gap-2">
-          {i.imageSrc && (
-            <Image
-              src={i.imageSrc}
-              alt=""
-              width={28}
-              height={28}
-              className="h-7 w-7 rounded border object-contain p-0.5"
-            />
-          )}
-          {i.audioSrc && (
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={() => playAudio(i.audioSrc!)}
-              className="h-7 w-7 cursor-pointer rounded-full text-zinc-400 hover:text-zinc-900"
-            >
-              <Volume2
-                className={`h-3.5 w-3.5 ${playingAudioUrl === i.audioSrc ? "animate-pulse text-sky-600" : ""}`}
-              />
-            </Button>
-          )}
-          {!i.imageSrc && !i.audioSrc && (
-            <span className="text-xs text-zinc-400">Trống</span>
-          )}
-        </div>
-      ),
-    },
-    {
       header: "Câu hỏi",
       cell: (i) => (
-        <span className="block max-w-xs truncate text-sm text-zinc-700">
-          {i.challenges?.question || `ID: ${i.challengeId}`}
+        <span className="block max-w-sm truncate font-bold text-zinc-900">
+          {i.question}
         </span>
       ),
+    },
+    {
+      header: "Loại",
+      cell: (i) => (
+        <span
+          className={`rounded-full border px-2 py-0.5 text-xs font-bold ${i.type === "SELECT" ? "border-blue-100 bg-blue-50 text-blue-600" : "border-amber-100 bg-amber-50 text-amber-600"}`}
+        >
+          {i.type}
+        </span>
+      ),
+    },
+    {
+      header: "Hướng",
+      cell: (i) => (
+        <span className="text-xs font-semibold text-zinc-500">
+          {i.direction || "-"}
+        </span>
+      ),
+    },
+    {
+      header: "Bài học",
+      cell: (i) => (
+        <span className="text-sm text-zinc-700">
+          {i.lessons?.title || `ID: ${i.lessonId}`}
+        </span>
+      ),
+    },
+    {
+      header: "Thứ tự",
+      className: "w-16 text-center",
+      cell: (i) => <span className="font-bold text-zinc-900">{i.order}</span>,
     },
     {
       header: "Hành động",
@@ -227,10 +200,10 @@ export function ChallengeOptionsView() {
       <div className="flex items-center justify-between border-b border-zinc-200 pb-4">
         <div>
           <h3 className="text-lg font-bold tracking-tight text-zinc-900">
-            Đáp án thử thách (Challenge Options)
+            Danh sách câu hỏi thử thách
           </h3>
           <p className="mt-0.5 text-xs font-medium text-zinc-500">
-            Cấu hình các đáp án lựa chọn của từng câu hỏi trắc nghiệm
+            Tạo và cấu hình các thử thách (SELECT / ASSIST) cho bài học
           </p>
         </div>
         <Button
@@ -241,14 +214,14 @@ export function ChallengeOptionsView() {
         </Button>
       </div>
 
-      <DataTableCard<ChallengeOption>
-        data={options}
+      <DataTableCard<Challenge>
+        data={challenges}
         columns={columns}
-        isLoading={optionsQuery.isLoading}
-        isFetching={optionsQuery.isFetching}
+        isLoading={challengesQuery.isLoading}
+        isFetching={challengesQuery.isFetching}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
-        searchPlaceholder="Tìm kiếm đáp án..."
+        searchPlaceholder="Tìm kiếm câu hỏi..."
         emptyMessage="Không tìm thấy bản ghi nào."
         currentPage={currentPage}
         pageSize={pageSize}
@@ -262,38 +235,78 @@ export function ChallengeOptionsView() {
         <DialogContent className="max-w-lg rounded-xl border-zinc-200 bg-white p-6 text-zinc-900 shadow-lg">
           <DialogHeader>
             <DialogTitle className="text-xl font-bold tracking-tight">
-              {isEdit ? "Chỉnh sửa đáp án" : "Tạo đáp án mới"}
+              {isEdit ? "Chỉnh sửa thử thách" : "Tạo thử thách mới"}
             </DialogTitle>
             <DialogDescription className="text-xs text-zinc-500">
-              Nhập thông tin đáp án của câu hỏi trắc nghiệm
+              Nhập thông tin câu hỏi thử thách
             </DialogDescription>
           </DialogHeader>
           <form onSubmit={handleSubmit} className="space-y-4 pt-2">
             <div className="space-y-2">
               <Label className="text-sm font-semibold text-zinc-700">
-                Nội dung đáp án
+                Câu hỏi
               </Label>
               <Input
                 required
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-                placeholder="Nhập nội dung đáp án"
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                placeholder="Ví dụ: Chọn từ có nghĩa là 'Quả Táo'"
                 className="border-zinc-200 bg-white"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label className="text-sm font-semibold text-zinc-700">
-                  Câu hỏi thử thách
+                  Loại thử thách
                 </Label>
-                <Select value={challengeId} onValueChange={setChallengeId}>
+                <Select
+                  value={type}
+                  onValueChange={(v) => setType(v as "SELECT" | "ASSIST")}
+                >
                   <SelectTrigger className="border-zinc-200 bg-white">
-                    <SelectValue placeholder="Chọn câu hỏi" />
+                    <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    {challenges.map((c) => (
-                      <SelectItem key={c.id} value={c.id.toString()}>
-                        {c.question}
+                    <SelectItem value="SELECT">SELECT (Trắc nghiệm)</SelectItem>
+                    <SelectItem value="ASSIST">
+                      ASSIST (Điền/Sắp xếp)
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label className="text-sm font-semibold text-zinc-700">
+                  Hướng ngôn ngữ
+                </Label>
+                <Select
+                  value={direction}
+                  onValueChange={(v) =>
+                    setDirection(v as "EN_TO_VI" | "VI_TO_EN")
+                  }
+                >
+                  <SelectTrigger className="border-zinc-200 bg-white">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="EN_TO_VI">EN → VI</SelectItem>
+                    <SelectItem value="VI_TO_EN">VI → EN</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label className="text-sm font-semibold text-zinc-700">
+                  Bài học
+                </Label>
+                <Select value={lessonId} onValueChange={setLessonId}>
+                  <SelectTrigger className="border-zinc-200 bg-white">
+                    <SelectValue placeholder="Chọn bài học" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {lessons.map((l) => (
+                      <SelectItem key={l.id} value={l.id.toString()}>
+                        {l.title}
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -301,38 +314,26 @@ export function ChallengeOptionsView() {
               </div>
               <div className="space-y-2">
                 <Label className="text-sm font-semibold text-zinc-700">
-                  Đáp án
+                  Thứ tự
                 </Label>
-                <Select value={correct} onValueChange={setCorrect}>
-                  <SelectTrigger className="border-zinc-200 bg-white">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="true">ĐÚNG (Correct)</SelectItem>
-                    <SelectItem value="false">SAI (Incorrect)</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Input
+                  type="number"
+                  min={1}
+                  value={order}
+                  onChange={(e) => setOrder(parseInt(e.target.value) || 1)}
+                  className="border-zinc-200 bg-white"
+                />
               </div>
             </div>
             <div className="space-y-2">
               <Label className="text-sm font-semibold text-zinc-700">
-                Ảnh (Tùy chọn)
+                Vocabulary Item ID (Tùy chọn)
               </Label>
               <Input
-                value={imageSrc}
-                onChange={(e) => setImageSrc(e.target.value)}
-                placeholder="/apple.svg"
-                className="border-zinc-200 bg-white"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label className="text-sm font-semibold text-zinc-700">
-                Audio (Tùy chọn)
-              </Label>
-              <Input
-                value={audioSrc}
-                onChange={(e) => setAudioSrc(e.target.value)}
-                placeholder="/audio/apple.mp3"
+                type="number"
+                value={vocabularyItemId}
+                onChange={(e) => setVocabularyItemId(e.target.value)}
+                placeholder="ID từ vựng tương ứng"
                 className="border-zinc-200 bg-white"
               />
             </div>
