@@ -24,6 +24,11 @@ test("API infrastructure follows the EC source profile", () => {
 
   assert.ok(existsSync(join(sourceRoot, "database/prisma/prisma.module.ts")));
   assert.ok(existsSync(join(sourceRoot, "database/prisma/prisma.service.ts")));
+  assert.equal(
+    existsSync(join(sourceRoot, "database/prisma/prisma.client.ts")),
+    false
+  );
+  assert.ok(existsSync(join(apiRoot, "scripts/support/script-prisma.ts")));
   assert.ok(existsSync(join(sourceRoot, "module/auth/index.ts")));
   assert.ok(existsSync(join(sourceRoot, "module/health/health.module.ts")));
 });

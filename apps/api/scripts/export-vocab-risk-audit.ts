@@ -3,7 +3,7 @@ import "dotenv/config";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import prisma from "../src/database/prisma/prisma.client";
+import prisma from "./support/script-prisma";
 
 type VocabularyAuditItem = {
   id: number;

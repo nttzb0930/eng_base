@@ -537,7 +537,7 @@ const makePlan = (
 };
 
 const loadPrisma = async (): Promise<PrismaClient> => {
-  const prismaModule = await import("../src/database/prisma/prisma.client.js");
+  const prismaModule = await import("./support/script-prisma.js");
   return prismaModule.default as unknown as PrismaClient;
 };
 
