@@ -1,125 +1,84 @@
 # Backend Folder Structure
 
-This document replaces the former mojibake/scaffold-heavy guide. The NestJS API
-follows **Web Base Standard 1.2.0**: organize by business capability first and add
-technical layers only when behavior requires them.
+The NestJS API follows **Web Base Standard 1.3.0** and the EC API profile
+accepted in ADR 0014. Business ownership is capability-first; infrastructure
+folders are named by a concrete runtime responsibility.
 
-## Current API tree
+## API tree
 
 ```text
 apps/api/src/
-  auth/                         authentication infrastructure
-  db/                           low-level database adapter helpers
-  prisma/                       Nest Prisma module/service
-  generated/                    generated Prisma client/models
+  common/
+    decorators/                 reusable Nest delivery decorators
+    filters/                    cross-capability exception mapping
+  config/
+    index.ts                    configuration Interface
+    env.validation.ts           startup environment validation
+    jwt.config.ts
+  database/
+    prisma/
+      prisma.config.ts          shared adapter construction
+      prisma.module.ts          Nest composition
+      prisma.service.ts         Nest persistence Adapter
+      prisma.client.ts          offline-script persistence Adapter
   module/
-    <capability>/
-      index.ts                  public module Interface
-      <capability>.module.ts     Nest composition root
-      *.controller.ts           delivery adapters
-      *.service.ts              capability behavior
-      dto/ or <subcapability>/   private implementation
-      *.test.ts
-  support/                      cross-capability Nest infrastructure
-  app.module.ts
-  main.ts
+    auth/                       authentication owner and public Interface
+    health/                     health delivery Module
+    <capability>/               business owner
+  app.module.ts                 Module composition root
+  main.ts                       process/bootstrap adapter
 ```
 
-The repository currently uses `src/module` (singular). Do not combine an
-ownership refactor with a repository-wide rename to `modules`; that move is a
-separate mechanical migration.
+The repository deliberately retains singular `src/module`. Renaming it to
+`modules` is a separate mechanical migration, not part of a capability refactor.
+
+## Prisma ownership
+
+`@prisma/client` is the only generated Prisma Interface. Change persistence
+models in `prisma/schema.prisma`, run `pnpm --filter @repo/api db:generate`, and
+map records inside the owning capability. Never edit or recreate
+`src/generated/prisma`.
+
+Nest Modules inject `PrismaService`. Offline vocabulary scripts import
+`database/prisma/prisma.client.ts`. Both adapters share connection construction
+through `prisma.config.ts`; neither is a second database owner.
+
+Prisma records stay API-local and must be mapped before crossing an HTTP wire
+Interface. Database columns such as `image_src` and `course_id` are translated
+explicitly to contract fields such as `imageSrc` and `courseId`.
 
 ## Capability ownership
 
-A module is a business owner, not merely a route group. The Courses capability
-owns Course -> Unit -> Lesson -> Lesson challenge -> Challenge option behavior
-for both learner and Admin callers. Admin authorization and `/admin` routes are
-delivery concerns; they do not transfer mutations to a generic Admin owner.
+Authentication implementation is colocated in `module/auth`: guards, request
+context, JWT/password behavior, controller, and Nest composition. Other Modules
+import its public `index.ts` Interface rather than depending on private paths.
 
-Cross-module consumers import a capability's public `index.ts` when available.
-Do not deep-import private management, DTO, mapper, or test files.
+Courses owns Course -> Unit -> Lesson -> Lesson challenge -> Challenge option
+behavior for learner and Admin callers. Admin authorization is delivery, not a
+second Course owner.
 
-## Pragmatic module depth
-
-Start with the smallest deep module that keeps decisions local:
+## Module depth
 
 ```text
-controller -> capability service -> Prisma
+controller -> capability service -> Prisma Adapter
      |                 |
      -> HTTP DTO       -> persistence/wire mapper
 ```
 
-- Controllers parse/validate delivery input and delegate; no direct Prisma.
-- A capability service owns application flow, existence checks, errors, and
-  persistence coordination.
-- A mapper translates persistence records to JSON-safe wire DTOs and Request
-  fields back to persistence naming.
-- Nest DTO classes validate HTTP bodies and may implement shared Request types.
-- Add a repository Interface only when a meaningful replaceable adapter exists.
-  Do not create interface/implementation pairs solely to match a diagram.
-- Add domain policies/use cases when they concentrate real invariants or multiple
-  flows, not for simple CRUD ceremony.
-
-## Type boundary
-
-| Type                           | Location                           | May contain Prisma detail? |
-| ------------------------------ | ---------------------------------- | -------------------------- |
-| Shared wire DTO/Request/schema | `packages/shared/src/<capability>` | No                         |
-| Nest validation DTO            | owning API capability              | No persistence dependency  |
-| Prisma record/query/data       | owning API capability              | Yes                        |
-| Persistence/wire mapper        | owning API capability              | Yes, internally            |
-| Frontend ViewModel             | frontend capability                | Never                      |
-
-Course consumers import the wire Interface from `@repo/shared/courses`.
-Database columns such as `image_src` and `course_id` are converted explicitly to
-`imageSrc` and `courseId`; a raw Prisma record must never be returned across the
-boundary.
-
-## Course Management golden slice
-
-```text
-src/module/courses/
-  index.ts
-  courses.module.ts
-  courses.controller.ts
-  courses.service.ts
-  units.controller.ts
-  lessons.controller.ts
-  leaderboard.controller.ts
-  management/
-    course-management.controller.ts
-    course-management.dto.ts
-    course-management.mapper.ts
-    course-management.service.ts
-    course-management.controller.test.ts
-    course-management.mapper.test.ts
-    course-management.service.test.ts
-```
-
-The management controller preserves the existing HTTP Interface: list response
-shape depends on whether `page` is present, updates use PUT, and
-`/admin/challengeOptions` remains camelCase. See
-[Course content architecture](architecture/course-content.md).
-
-## Naming
-
-- Capability folders: stable plural domain nouns (`courses`, `users`).
-- Semantic child folders: `management`, not generic app-wide `controllers` or
-  `services` buckets.
-- Files/folders: `kebab-case`.
-- Classes: `PascalCase` with boundary suffix (`Controller`, `Service`, `Dto`).
-- Tests: colocated `*.test.ts` unless the owning module has a documented test
-  folder.
-
-Do not add new domain code to global technical buckets such as
-`src/controllers`, `src/services`, `src/repositories`, or `src/types`.
+- Controllers validate delivery input and delegate; they do not query Prisma.
+- Capability behavior owns application flow, existence checks, and persistence
+  coordination.
+- Mappers translate persistence records to JSON-safe wire contracts.
+- Add a repository Seam only when at least two real Adapters exist.
+- Do not create pass-through Modules, empty layer folders, or app-wide domain
+  buckets.
 
 ## Verification and safety
 
-Course behavior is characterized through public controller/service/mapper tests.
 Run:
 
 ```bash
+pnpm --filter @repo/api architecture:check
 pnpm --filter @repo/api test
 pnpm --filter @repo/api check-types
 pnpm --filter @repo/api lint
@@ -127,4 +86,5 @@ pnpm --filter @repo/api build
 ```
 
 Architecture work must not run seed, push, migrate, reset, or vocabulary sync
-commands without explicit approval.
+commands without explicit approval. `db:generate` regenerates client code only;
+it does not write database data.

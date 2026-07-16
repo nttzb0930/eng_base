@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This repository applies **Web Base Standard 1.2.0** to a three-app pnpm/Turborepo
+This repository applies **Web Base Standard 1.3.0** to a three-app pnpm/Turborepo
 workspace:
 
 - `apps/api` exposes HTTP, owns business behavior, Prisma, and PostgreSQL.
@@ -20,7 +20,8 @@ slice. Its decisions and compatibility constraints are documented in
 [Course content architecture](architecture/course-content.md) and
 [ADR 0012](adr/0012-course-content-capability-boundary.md). The Admin filesystem
 profile is recorded separately in
-[ADR 0013](adr/0013-ec-admin-frontend-profile.md).
+[ADR 0013](adr/0013-ec-admin-frontend-profile.md). The API source profile is recorded in
+[ADR 0014](adr/0014-ec-api-source-profile.md).
 
 Reference documents:
 

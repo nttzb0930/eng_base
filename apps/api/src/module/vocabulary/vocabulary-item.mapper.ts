@@ -1,9 +1,9 @@
 import type {
-  user_saved_wordsModel,
-  user_vocabulary_progressModel,
-  vocabulary_examplesModel,
-  vocabulary_itemsModel,
-} from "../../generated/prisma/models";
+  user_saved_words as user_saved_wordsModel,
+  user_vocabulary_progress as user_vocabulary_progressModel,
+  vocabulary_examples as vocabulary_examplesModel,
+  vocabulary_items as vocabulary_itemsModel,
+} from "@prisma/client";
 import type {
   UserSavedWord,
   UserVocabularyProgress,

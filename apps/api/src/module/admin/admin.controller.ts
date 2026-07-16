@@ -12,11 +12,11 @@ import {
 } from "@nestjs/common";
 import type { Response } from "express";
 
-import { AdminJwtGuard } from "../../auth/admin-jwt.guard";
+import { AdminJwtGuard } from "../auth";
 import { UserCreateBody, UserBody } from "./admin-mappers";
 import { AdminService } from "./admin.service";
 import { PracticeService } from "../practice/practice.service";
-import { FilterParse, FilterParseResult } from "../../support/decorators/filter-parse.decorator";
+import { FilterParse, FilterParseResult } from "../../common/decorators/filter-parse.decorator";
 import { z } from "zod";
 
 @Controller("admin")

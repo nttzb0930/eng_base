@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted
+Accepted; source layout and generated-client details amended by ADR 0014
 
 ## Context
 
@@ -13,8 +13,8 @@ The fork originally used Drizzle and Neon-oriented setup. Local development now 
 Use Prisma as the source of truth for database schema and data access.
 
 - Schema: apps/api/prisma/schema.prisma
-- Client adapter: apps/api/src/db/prisma.ts
-- Generated client: apps/api/src/generated/prisma
+- Runtime/script adapters: `apps/api/src/database/prisma`
+- Generated client Interface: `@prisma/client`
 - Local database: PostgreSQL
 
 Drizzle files and config are removed from the active code path.

@@ -2,8 +2,8 @@ import { Module } from "@nestjs/common";
 import { APP_INTERCEPTOR } from "@nestjs/core";
 import { ConfigModule } from "@nestjs/config";
 
-import { AuthContextInterceptor } from "./auth/auth-context.interceptor";
-import jwtConfig from "./config/jwt.config";
+import { AuthContextInterceptor, AuthModule } from "./module/auth";
+import { jwtConfig, validateEnvironment } from "./config";
 
 import { AdminModule } from "./module/admin/admin.module";
 import { DashboardModule } from "./module/dashboard/dashboard.module";
@@ -15,15 +15,15 @@ import { TopicsModule } from "./module/topics/topics.module";
 import { VocabularyModule } from "./module/vocabulary/vocabulary.module";
 import { ProgressModule } from "./module/progress/progress.module";
 import { PlacementTestModule } from "./module/placement-test/placement-test.module";
-import { PrismaModule } from "./prisma/prisma.module";
-import { AuthModule } from "./module/auth/auth.module";
-import { HealthController } from "./health.controller";
+import { PrismaModule } from "./database/prisma/prisma.module";
+import { HealthModule } from "./module/health";
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: ["../../.env", ".env"],
+      validate: validateEnvironment,
       load: [jwtConfig],
     }),
     PrismaModule,
@@ -38,8 +38,8 @@ import { HealthController } from "./health.controller";
     VocabularyModule,
     ProgressModule,
     PlacementTestModule,
+    HealthModule,
   ],
-  controllers: [HealthController],
   providers: [
     {
       provide: APP_INTERCEPTOR,

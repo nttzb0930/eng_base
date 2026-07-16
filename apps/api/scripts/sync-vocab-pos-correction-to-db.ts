@@ -287,7 +287,7 @@ const buildRows = (proposal: CorrectionProposal, snapshot: Snapshot) => {
 };
 
 const loadPrisma = async (): Promise<PrismaClient> => {
-  const prismaModule = await import("../src/db/prisma.js");
+  const prismaModule = await import("../src/database/prisma/prisma.client.js");
   return prismaModule.default as unknown as PrismaClient;
 };
 const loadLive = async (prisma: PrismaClient, ids: number[]) =>

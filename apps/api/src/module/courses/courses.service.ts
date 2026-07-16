@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../prisma/prisma.service";
-import { auth } from "../../auth/request-auth";
+import { PrismaService } from "../../database/prisma/prisma.service";
+import { auth } from "../auth";
 import type {
   CourseDto,
   CourseLessonDto,
@@ -10,18 +10,18 @@ import type {
   LessonChallengeType,
 } from "@repo/shared/courses";
 import type {
-  challenge_optionsModel,
-  challenge_progressModel,
-  challengesModel,
-  coursesModel,
-  lessonsModel,
-  unitsModel,
-  user_progressModel,
-  user_saved_wordsModel,
-  user_vocabulary_progressModel,
-  vocabulary_examplesModel,
-  vocabulary_itemsModel,
-} from "../../generated/prisma/models";
+  challenge_options as challenge_optionsModel,
+  challenge_progress as challenge_progressModel,
+  challenges as challengesModel,
+  courses as coursesModel,
+  lessons as lessonsModel,
+  units as unitsModel,
+  user_progress as user_progressModel,
+  user_saved_words as user_saved_wordsModel,
+  user_vocabulary_progress as user_vocabulary_progressModel,
+  vocabulary_examples as vocabulary_examplesModel,
+  vocabulary_items as vocabulary_itemsModel,
+} from "@prisma/client";
 
 export type Course = CourseDto;
 export type UnitRecord = CourseUnitDto;

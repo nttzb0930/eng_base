@@ -1,6 +1,6 @@
 # Agent Workflow
 
-This repository follows **Web Base Standard 1.2.0**. Read `CONTEXT.md`, the
+This repository follows **Web Base Standard 1.3.0**. Read `CONTEXT.md`, the
 relevant document in `docs/architecture/`, and accepted ADRs before changing an
 owned capability or a public Interface.
 
@@ -46,6 +46,14 @@ feature refactor.
 
 ## Backend conventions
 
+- API follows the EC source profile: `common` for cross-capability Nest
+  infrastructure, `config` for validated runtime configuration,
+  `database/prisma` for persistence adapters, and `module/<capability>` for
+  business owners.
+- Import authentication behavior through `src/module/auth`; do not recreate a
+  root `src/auth` bucket.
+- Use `@prisma/client` as the only generated Prisma Interface. Never edit or
+  restore `src/generated/prisma`.
 - Controllers receive validated input and call capability behavior; they do not
   query Prisma directly.
 - Business behavior belongs to its domain owner regardless of whether the

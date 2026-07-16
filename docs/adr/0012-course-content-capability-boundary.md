@@ -17,7 +17,7 @@ existing clients depend on its pagination and route details.
 
 ## Decision
 
-Adopt the Course content hierarchy as the **Web Base Standard 1.2.0 golden
+Adopt the Course content hierarchy as the **Web Base Standard 1.3.0 golden
 slice**.
 
 - Courses is the API domain owner for learner reads and Admin management CRUD.

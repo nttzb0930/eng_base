@@ -1,6 +1,6 @@
 # Project Context
 
-The architecture baseline is **Web Base Standard 1.2.0**, adopted incrementally.
+The architecture baseline is **Web Base Standard 1.3.0**, adopted incrementally.
 Legacy modules may remain until their behavior is covered and moved; new code
 must follow the capability-first rules in `docs/architecture/codebase-structure.md`.
 
@@ -28,6 +28,8 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - Prefer deep modules: small public interfaces with behavior and invariants kept in one implementation.
 - Business behavior belongs to its domain module, regardless of whether the caller is Learner UI or Admin UI.
 - PostgreSQL and Prisma are owned exclusively by `apps/api`.
+- The API persistence Adapter lives under `src/database/prisma`; persistence
+  models come only from the generated `@prisma/client` Interface.
 - Shared packages must not import from applications.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
 - `packages/shared` is a transitional aggregator. New contracts use capability subpaths rather than expanding the legacy root barrel; the package name remains unchanged under ADR 0011.

@@ -1,8 +1,8 @@
 import type {
-  practice_session_itemsModel,
-  practice_sessionsModel,
-  vocabulary_itemsModel,
-} from "../../generated/prisma/models";
+  practice_session_items as practice_session_itemsModel,
+  practice_sessions as practice_sessionsModel,
+  vocabulary_items as vocabulary_itemsModel,
+} from "@prisma/client";
 
 type PracticeSessionItemRecord = practice_session_itemsModel & {
   vocabulary_items?: vocabulary_itemsModel | null;

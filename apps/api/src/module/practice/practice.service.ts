@@ -1,8 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { NotFoundException } from "@nestjs/common";
-import { PrismaService } from "../../prisma/prisma.service";
-import { auth } from "../../auth/request-auth";
-import { revalidatePath } from "../../support/revalidation";
+import { PrismaService } from "../../database/prisma/prisma.service";
+import { auth } from "../auth";
 import type {
   ChallengeOption,
   UserVocabularyProgress,
@@ -54,14 +53,14 @@ export type WeakWordsPracticeChallenge = {
 };
 
 import { PracticeSessionResultInputDto } from "./dto/practice-session-result.dto";
-import type {
-  practice_sessionsFindManyArgs,
-  practice_sessionsWhereInput,
-} from "../../generated/prisma/models";
+import type { Prisma } from "@prisma/client";
 import {
   mapPracticeSession,
   mapPracticeSessionDetail,
 } from "./practice-session.mapper";
+
+type practice_sessionsFindManyArgs = Prisma.practice_sessionsFindManyArgs;
+type practice_sessionsWhereInput = Prisma.practice_sessionsWhereInput;
 
 export const PRACTICE_WORDS_PER_LESSON = 15;
 const FALLBACK_POOL_COUNT = 400;
@@ -954,8 +953,6 @@ export class PracticeService {
         },
       },
     });
-
-    revalidatePath("/dashboard");
 
     return {
       id: session.id,

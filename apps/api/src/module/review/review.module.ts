@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { UserJwtGuard } from "../../auth/user-jwt.guard";
+import { UserJwtGuard } from "../auth";
 import { VocabularyModule } from "../vocabulary/vocabulary.module";
 import { ReviewController } from "./review.controller";
 import { ReviewService } from "./review.service";

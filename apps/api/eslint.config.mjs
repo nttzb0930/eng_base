@@ -82,14 +82,14 @@ export default tseslint.config(
     files: [
       "scripts/export-vocab.ts",
       "scripts/seed.ts",
-      "src/auth/admin-jwt.guard.ts",
+      "src/module/auth/admin-jwt.guard.ts",
       "src/module/admin/admin-auth.controller.ts",
       "src/module/admin/admin-mappers.ts",
       "src/module/admin/admin.controller.ts",
       "src/module/admin/admin.service.ts",
       "src/module/placement-test/placement-test.controller.ts",
       "src/module/placement-test/placement-test.service.ts",
-      "src/support/decorators/filter-parse.decorator.ts",
+      "src/common/decorators/filter-parse.decorator.ts",
     ],
     rules: {
       "@typescript-eslint/no-explicit-any": "off",

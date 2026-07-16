@@ -46,5 +46,3 @@ next-env.d.ts
 # testing tools
 /ngrok
 /stripe
-
-apps/api/src/generated/prisma/

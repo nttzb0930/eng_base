@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { UserJwtGuard } from "../../auth/user-jwt.guard";
+import { UserJwtGuard } from "../auth";
 import { DashboardController } from "./dashboard.controller";
 import { DashboardService } from "./dashboard.service";
 

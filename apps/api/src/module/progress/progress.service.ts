@@ -1,8 +1,7 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../prisma/prisma.service";
+import { PrismaService } from "../../database/prisma/prisma.service";
 import { CoursesService } from "../courses";
-import { auth } from "../../auth/request-auth";
-import { revalidatePath } from "../../support/revalidation";
+import { auth } from "../auth";
 
 @Injectable()
 export class ProgressService {
@@ -50,9 +49,6 @@ export class ProgressService {
           user_image_src: "/mascot.svg",
         },
       });
-
-      revalidatePath("/courses");
-      revalidatePath("/learn");
       return;
     }
 
@@ -64,9 +60,6 @@ export class ProgressService {
         user_image_src: "/mascot.svg",
       },
     });
-
-    revalidatePath("/courses");
-    revalidatePath("/learn");
   }
 
   async getMaxHearts(): Promise<number> {
@@ -97,9 +90,6 @@ export class ProgressService {
         hearts: maxHearts,
       },
     });
-
-    revalidatePath("/learn");
-    revalidatePath("/lesson");
     return result;
   }
 
@@ -115,8 +105,6 @@ export class ProgressService {
     });
 
     if (!challenge) throw new Error("Challenge not found.");
-
-    const lessonId = challenge.lesson_id;
 
     const existingChallengeProgress =
       await this.prisma.challenge_progress.findFirst({
@@ -143,10 +131,6 @@ export class ProgressService {
       },
     });
 
-    revalidatePath("/learn");
-    revalidatePath("/leaderboard");
-    revalidatePath(`/lesson/${lessonId}`);
-
     if (newHeartsCount === 0) {
       return { error: "hearts" };
     }
@@ -166,8 +150,6 @@ export class ProgressService {
     });
 
     if (!challenge) throw new Error("Challenge not found.");
-
-    const lessonId = challenge.lesson_id;
 
     const existingChallengeProgress =
       await this.prisma.challenge_progress.findFirst({
@@ -199,11 +181,6 @@ export class ProgressService {
           points: currentUserProgress.points + 10,
         },
       });
-
-      revalidatePath("/learn");
-      revalidatePath("/lesson");
-      revalidatePath("/leaderboard");
-      revalidatePath(`/lesson/${lessonId}`);
       return;
     }
 
@@ -221,11 +198,6 @@ export class ProgressService {
         points: currentUserProgress.points + 10,
       },
     });
-
-    revalidatePath("/learn");
-    revalidatePath("/lesson");
-    revalidatePath("/leaderboard");
-    revalidatePath(`/lesson/${lessonId}`);
   }
 
   async resetLessonProgress(lessonId: number) {
@@ -247,10 +219,6 @@ export class ProgressService {
         challenge_id: { in: challengeIds },
       },
     });
-
-    revalidatePath("/learn");
-    revalidatePath("/lesson");
-    revalidatePath(`/lesson/${lessonId}`);
 
     return { ok: true };
   }

@@ -44,12 +44,12 @@ export interface FilterParseResult<TFilters extends Record<string, any>> {
 }
 
 export const FilterParse = <TSchema extends ZodObject<any>>(
-  options: FilterParseOptions<TSchema>,
+  options: FilterParseOptions<TSchema>
 ) =>
   createParamDecorator(
     (
       data: unknown,
-      ctx: ExecutionContext,
+      ctx: ExecutionContext
     ): FilterParseResult<InferFilters<TSchema>> => {
       const request = ctx.switchToHttp().getRequest<Request>();
       const query = request.query;
@@ -89,14 +89,7 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
       ).forEach((key) => {
         const k = String(key);
         if (
-          ![
-            "page",
-            "limit",
-            "sort",
-            "sortBy",
-            "sort_by",
-            "q",
-          ].includes(k) &&
+          !["page", "limit", "sort", "sortBy", "sort_by", "q"].includes(k) &&
           k !== qKey
         ) {
           filters[k] = validatedQuery[key];
@@ -140,5 +133,5 @@ export const FilterParse = <TSchema extends ZodObject<any>>(
       };
 
       return result;
-    },
+    }
   )();

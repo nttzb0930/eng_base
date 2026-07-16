@@ -14,11 +14,11 @@ import type { Response } from "express";
 import { LessonChallengeTypeSchema } from "@repo/shared/courses";
 import { z } from "zod";
 
-import { AdminJwtGuard } from "../../../auth/admin-jwt.guard";
+import { AdminJwtGuard } from "../../auth";
 import {
   FilterParse,
   type FilterParseResult,
-} from "../../../support/decorators/filter-parse.decorator";
+} from "../../../common/decorators/filter-parse.decorator";
 import {
   ChallengeCreateDto,
   ChallengeOptionCreateDto,

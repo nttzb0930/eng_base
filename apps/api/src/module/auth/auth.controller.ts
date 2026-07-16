@@ -12,9 +12,9 @@ import {
 import { type ConfigType } from "@nestjs/config";
 import type { Request, Response } from "express";
 import jwtConfig from "../../config/jwt.config";
-import { PrismaService } from "../../prisma/prisma.service";
-import { hashPassword, verifyPassword } from "../../auth/password";
-import { signJwt, verifyJwt } from "../../auth/jwt";
+import { PrismaService } from "../../database/prisma/prisma.service";
+import { hashPassword, verifyPassword } from "./password";
+import { signJwt, verifyJwt } from "./jwt";
 
 type CredentialsBody = { username?: string; password?: string };
 type RegisterBody = CredentialsBody & { email?: string; fullName?: string };

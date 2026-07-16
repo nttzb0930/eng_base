@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
-import { AdminJwtGuard } from "../../auth/admin-jwt.guard";
-import { UserJwtGuard } from "../../auth/user-jwt.guard";
+import { AdminJwtGuard } from "../auth";
+import { UserJwtGuard } from "../auth";
 import { CoursesController } from "./courses.controller";
 import { UnitsController } from "./units.controller";
 import { LessonsController } from "./lessons.controller";

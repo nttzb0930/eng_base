@@ -3,7 +3,7 @@ import "dotenv/config";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import prisma from "../src/db/prisma";
+import prisma from "../src/database/prisma/prisma.client";
 
 const main = async () => {
   const vocabularyItems = await prisma.vocabulary_items.findMany({

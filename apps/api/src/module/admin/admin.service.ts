@@ -1,12 +1,12 @@
 import { Injectable, NotFoundException, ConflictException } from "@nestjs/common";
 
-import { PrismaService } from "../../prisma/prisma.service";
+import { PrismaService } from "../../database/prisma/prisma.service";
 import {
   type UserCreateBody,
   type UserBody,
   mapUser,
 } from "./admin-mappers";
-import { hashPassword } from "../../auth/password";
+import { hashPassword } from "../auth";
 
 @Injectable()
 export class AdminService {

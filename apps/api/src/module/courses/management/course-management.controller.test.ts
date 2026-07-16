@@ -10,9 +10,9 @@ import {
 } from "@nestjs/common/constants";
 import type { Response } from "express";
 
-import { AdminJwtGuard } from "../../../auth/admin-jwt.guard";
+import { AdminJwtGuard } from "../../auth";
 import { AdminController } from "../../admin/admin.controller";
-import type { FilterParseResult } from "../../../support/decorators/filter-parse.decorator";
+import type { FilterParseResult } from "../../../common/decorators/filter-parse.decorator";
 import { CourseManagementController } from "./course-management.controller";
 import type { CourseManagementService } from "./course-management.service";
 

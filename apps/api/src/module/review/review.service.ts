@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../prisma/prisma.service";
+import { PrismaService } from "../../database/prisma/prisma.service";
 import { VocabularyService } from "../vocabulary/vocabulary.service";
-import { auth } from "../../auth/request-auth";
+import { auth } from "../auth";
 import type {
   ChallengeOption,
   VocabularyItem,

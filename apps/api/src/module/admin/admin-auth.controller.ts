@@ -7,9 +7,9 @@ import {
 } from "@nestjs/common";
 import { type ConfigType } from "@nestjs/config";
 import jwtConfig from "../../config/jwt.config";
-import { PrismaService } from "../../prisma/prisma.service";
-import { verifyPassword } from "../../auth/password";
-import { signJwt } from "../../auth/jwt";
+import { PrismaService } from "../../database/prisma/prisma.service";
+import { verifyPassword } from "../auth";
+import { signJwt } from "../auth";
 
 @Controller("admin/auth")
 export class AdminAuthController {

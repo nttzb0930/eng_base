@@ -7,12 +7,12 @@ import type {
 } from "@repo/shared/courses";
 
 import type {
-  challenge_optionsModel,
-  challengesModel,
-  coursesModel,
-  lessonsModel,
-  unitsModel,
-} from "../../../generated/prisma/models";
+  challenge_options as challenge_optionsModel,
+  challenges as challengesModel,
+  courses as coursesModel,
+  lessons as lessonsModel,
+  units as unitsModel,
+} from "@prisma/client";
 import type {
   ChallengeCreateDto,
   ChallengeOptionCreateDto,

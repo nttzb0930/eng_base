@@ -1,7 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../prisma/prisma.service";
-import { auth } from "../../auth/request-auth";
-import { revalidatePath } from "../../support/revalidation";
+import { PrismaService } from "../../database/prisma/prisma.service";
+import { auth } from "../auth";
 import {
   mapSavedWord,
   mapVocabularyItem,
@@ -87,13 +86,6 @@ export class VocabularyService {
   }
 
   private revalidateVocabularyProgressPaths() {
-    revalidatePath("/dashboard");
-    revalidatePath("/review");
-    revalidatePath("/flashcards");
-    revalidatePath("/flashcards/session");
-    revalidatePath("/practice");
-    revalidatePath("/saved-words");
-    revalidatePath("/saved-words/review");
   }
 
   async getSavedVocabularyWords() {
@@ -147,9 +139,6 @@ export class VocabularyService {
         where: { id: existingSavedWord.id },
       });
 
-      revalidatePath("/lesson");
-      revalidatePath("/saved-words");
-
       return { saved: false };
     }
 
@@ -159,9 +148,6 @@ export class VocabularyService {
         vocabulary_item_id: vocabularyItemId,
       },
     });
-
-    revalidatePath("/lesson");
-    revalidatePath("/saved-words");
 
     return { saved: true };
   }

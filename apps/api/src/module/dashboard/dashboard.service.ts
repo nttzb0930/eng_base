@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../prisma/prisma.service";
-import { auth } from "../../auth/request-auth";
+import { PrismaService } from "../../database/prisma/prisma.service";
+import { auth } from "../auth";
 
 const DAY_IN_MS = 86_400_000;
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;

@@ -1,6 +1,6 @@
 # Course Content Architecture
 
-Course content is the repository's **Web Base Standard 1.2.0 golden slice**. Use
+Course content is the repository's **Web Base Standard 1.3.0 golden slice**. Use
 it as the reference when migrating another capability; copy its ownership and
 Interface rules, not its domain-specific files verbatim.
 

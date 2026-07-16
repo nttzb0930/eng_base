@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { NotFoundException } from "@nestjs/common";
 
-import type { PrismaService } from "../../../prisma/prisma.service";
+import type { PrismaService } from "../../../database/prisma/prisma.service";
 import { CourseManagementService } from "./course-management.service";
 
 type Call = {

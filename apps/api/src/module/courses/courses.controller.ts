@@ -1,5 +1,5 @@
 import { Controller, Get, Param, ParseIntPipe, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../../auth/user-jwt.guard";
+import { UserJwtGuard } from "../auth";
 import { CoursesService } from "./courses.service";
 
 @Controller("courses")

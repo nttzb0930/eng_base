@@ -1,6 +1,6 @@
 # Codebase Structure
 
-This is the repository profile for **Web Base Standard 1.2.0**. Migration is
+This is the repository profile for **Web Base Standard 1.3.0**. Migration is
 incremental: existing behavior may remain in legacy locations, but every new
 capability and every touched golden slice must converge on this structure.
 
@@ -46,6 +46,10 @@ apps/api/src/module/<capability>/
   <subcapability>/
   tests/
 
+apps/api/src/common/           cross-capability Nest infrastructure
+apps/api/src/config/           validated runtime configuration
+apps/api/src/database/prisma/  persistence adapters
+
 packages/shared/src/<capability>/
   index.ts              public contract Interface
   <capability>.contract.ts
@@ -54,6 +58,11 @@ packages/shared/src/<capability>/
 The API currently uses the singular path `src/module`. Renaming the entire tree
 to `modules` is not part of a domain refactor and requires a separate mechanical
 change after imports and tests make it safe.
+
+The API uses only the generated `@prisma/client` Interface. Generated
+persistence source does not live under `src`, and callers do not edit generated
+models. Nest runtime and offline scripts use adapters owned by
+`src/database/prisma`.
 
 Not every capability needs every technical folder. Add a folder when it makes a
 real implementation boundary clearer; do not scaffold repository, use-case, or
@@ -141,6 +150,8 @@ Management additionally has:
 - API controller, service, and mapper tests;
 - Admin resource API and query-key tests;
 - an Admin route/import test that enforces the accepted EC profile.
+- an API source-profile test that rejects split Auth/Prisma/support roots and a
+  duplicate Prisma generator.
 
 Run `pnpm test`, `pnpm check-types`, `pnpm lint`, and `pnpm build` before handoff.
 Architecture refactors must not run database seed, push, migration, or vocabulary
