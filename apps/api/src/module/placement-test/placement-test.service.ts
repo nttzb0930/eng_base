@@ -1,7 +1,8 @@
 import {
-  Injectable,
   BadRequestException,
+  Injectable,
   NotFoundException,
+  UnauthorizedException,
 } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { PlacementTestResponse, SubmitAnswerResponse } from "@repo/shared";
@@ -15,7 +16,7 @@ export class PlacementTestService {
    * Lấy câu hỏi tiếp theo cho bài Placement Test thích ứng
    */
   async getNextQuestion(userId: string): Promise<PlacementTestResponse> {
-    if (!userId) throw new BadRequestException("Unauthorized");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     // 1. Tìm hoặc tạo session
     let session = await this.prisma.placement_test_sessions.findUnique({
@@ -165,7 +166,7 @@ export class PlacementTestService {
     challengeId: number,
     selectedOptionId: number
   ): Promise<SubmitAnswerResponse> {
-    if (!userId) throw new BadRequestException("Unauthorized");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const session = await this.prisma.placement_test_sessions.findUnique({
       where: { user_id: userId },
@@ -296,7 +297,7 @@ export class PlacementTestService {
     primaryLanguage?: string,
     customGoal?: string
   ) {
-    if (!userId) throw new BadRequestException("Unauthorized");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const session = await this.prisma.placement_test_sessions.findUnique({
       where: { user_id: userId },
@@ -416,7 +417,7 @@ export class PlacementTestService {
    * Lưu trạng thái tiến trình onboarding vào database
    */
   async updateOnboardingState(userId: string, step: number, data: any) {
-    if (!userId) throw new BadRequestException("Unauthorized");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     let session = await this.prisma.placement_test_sessions.findUnique({
       where: { user_id: userId },
@@ -449,7 +450,7 @@ export class PlacementTestService {
    * Reset session kiểm tra để làm lại bài test thích ứng
    */
   async resetTest(userId: string) {
-    if (!userId) throw new BadRequestException("Unauthorized");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     // Xóa session placement test
     await this.prisma.placement_test_sessions.deleteMany({

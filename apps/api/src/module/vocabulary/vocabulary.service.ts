@@ -1,4 +1,8 @@
-import { Injectable } from "@nestjs/common";
+import {
+  Injectable,
+  NotFoundException,
+  UnauthorizedException,
+} from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import {
   mapSavedWord,
@@ -119,13 +123,15 @@ export class VocabularyService {
   }
 
   async toggleSavedWord(userId: string, vocabularyItemId: number) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const vocabularyItem = await this.prisma.vocabulary_items.findUnique({
       where: { id: vocabularyItemId },
     });
 
-    if (!vocabularyItem) throw new Error("Vocabulary item not found.");
+    if (!vocabularyItem) {
+      throw new NotFoundException("Vocabulary item not found.");
+    }
 
     const existingSavedWord = await this.prisma.user_saved_words.findFirst({
       where: {
@@ -157,7 +163,7 @@ export class VocabularyService {
     vocabularyItemId: number,
     correct: boolean
   ) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const existingProgress =
       await this.prisma.user_vocabulary_progress.findUnique({
@@ -232,7 +238,7 @@ export class VocabularyService {
     vocabularyItemId: number,
     rating: FlashcardRating
   ) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const existingProgress =
       await this.prisma.user_vocabulary_progress.findUnique({

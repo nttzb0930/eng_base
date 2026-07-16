@@ -1,4 +1,9 @@
-import { Injectable } from "@nestjs/common";
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+  UnauthorizedException,
+} from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { CoursesService } from "../courses";
 
@@ -22,19 +27,19 @@ export class ProgressService {
   }
 
   async upsertUserProgress(userId: string, courseId: number) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const dbUser = await this.prisma.users.findUnique({
       where: { id: userId },
     });
-    if (!dbUser) throw new Error("User not found.");
+    if (!dbUser) throw new NotFoundException("User not found.");
 
     const course = await this.coursesService.getCourseById(courseId);
 
-    if (!course) throw new Error("Course not found.");
+    if (!course) throw new NotFoundException("Course not found.");
 
     if (!course.units.length || !course.units[0].lessons.length)
-      throw new Error("Course is empty.");
+      throw new BadRequestException("Course is empty.");
 
     const existingUserProgress =
       await this.coursesService.getUserProgress(userId);
@@ -78,7 +83,7 @@ export class ProgressService {
   }
 
   async refillHearts(userId: string) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const maxHearts = await this.getMaxHearts();
 
@@ -92,7 +97,7 @@ export class ProgressService {
   }
 
   async reduceHearts(userId: string, challengeId: number) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const currentUserProgress =
       await this.coursesService.getUserProgress(userId);
@@ -101,7 +106,7 @@ export class ProgressService {
       where: { id: challengeId },
     });
 
-    if (!challenge) throw new Error("Challenge not found.");
+    if (!challenge) throw new NotFoundException("Challenge not found.");
 
     const existingChallengeProgress =
       await this.prisma.challenge_progress.findFirst({
@@ -115,7 +120,9 @@ export class ProgressService {
 
     if (isPractice) return { error: "practice" };
 
-    if (!currentUserProgress) throw new Error("User progress not found.");
+    if (!currentUserProgress) {
+      throw new NotFoundException("User progress not found.");
+    }
 
     if (currentUserProgress.hearts === 0) return { error: "hearts" };
 
@@ -134,18 +141,20 @@ export class ProgressService {
   }
 
   async upsertChallengeProgress(userId: string, challengeId: number) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const currentUserProgress =
       await this.coursesService.getUserProgress(userId);
 
-    if (!currentUserProgress) throw new Error("User progress not found.");
+    if (!currentUserProgress) {
+      throw new NotFoundException("User progress not found.");
+    }
 
     const challenge = await this.prisma.challenges.findUnique({
       where: { id: challengeId },
     });
 
-    if (!challenge) throw new Error("Challenge not found.");
+    if (!challenge) throw new NotFoundException("Challenge not found.");
 
     const existingChallengeProgress =
       await this.prisma.challenge_progress.findFirst({
@@ -197,7 +206,7 @@ export class ProgressService {
   }
 
   async resetLessonProgress(userId: string, lessonId: number) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     // Find all challenge IDs in this lesson
     const challenges = await this.prisma.challenges.findMany({

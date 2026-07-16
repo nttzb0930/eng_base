@@ -1,5 +1,8 @@
-import { Injectable } from "@nestjs/common";
-import { NotFoundException } from "@nestjs/common";
+import {
+  Injectable,
+  NotFoundException,
+  UnauthorizedException,
+} from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import type { ChallengeOption } from "../courses";
 import {
@@ -964,7 +967,7 @@ export class PracticeService {
     userId: string,
     { mode, items }: PracticeSessionResultInputDto
   ) {
-    if (!userId) throw new Error("Unauthorized.");
+    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
 
     const cleanItems = items.filter((item) => item.vocabularyItemId > 0);
     if (cleanItems.length === 0) return null;
