@@ -1,4 +1,5 @@
 import { Injectable } from "@nestjs/common";
+import { Prisma } from "@prisma/client";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { mapVocabularyItem, type VocabularyItem } from "../vocabulary";
 
@@ -20,6 +21,7 @@ type RawVocabularyTopic = {
 };
 
 type RawTopicVocabularyItemId = {
+  topic_id: number;
   vocabulary_item_id: number;
 };
 
@@ -83,24 +85,15 @@ export class TopicsService {
     return topics[0] ?? null;
   }
 
-  async getRawTopicVocabularyItemIds(topicId: number) {
+  async getRawTopicVocabularyRelations(topicIds: number[]) {
+    if (topicIds.length === 0) return [];
     const rows = await this.prisma.$queryRaw<RawTopicVocabularyItemId[]>`
-      SELECT vocabulary_item_id
+      SELECT topic_id, vocabulary_item_id
       FROM vocabulary_item_topics
-      WHERE topic_id = ${topicId}
-      ORDER BY vocabulary_item_id ASC
+      WHERE topic_id IN (${Prisma.join(topicIds)})
+      ORDER BY topic_id ASC, vocabulary_item_id ASC
     `;
-
-    return rows.map((row) => row.vocabulary_item_id);
-  }
-
-  async getRawTopicVocabularyItems(
-    topicId: number,
-    userId: string | null,
-    level?: PracticeCefrLevel
-  ) {
-    const vocabularyItemIds = await this.getRawTopicVocabularyItemIds(topicId);
-    return this.getRawVocabularyItemsByIds(vocabularyItemIds, userId, level);
+    return rows;
   }
 
   private getTopicStats(items: VocabularyItem[]) {
@@ -120,25 +113,23 @@ export class TopicsService {
 
   async getVocabularyTopics(userId: string) {
     const topics = await this.getRawTopics();
-
-    const cards = await Promise.all(
-      topics.map(async (topic) => {
-        const topicItems = await this.getRawTopicVocabularyItems(
-          topic.id,
-          userId ?? null
-        );
-        const items = topicItems.map(mapVocabularyItem);
-
-        return {
-          id: topic.id,
-          slug: topic.slug,
-          title: topic.title,
-          description: topic.description,
-          order: topic.order,
-          ...this.getTopicStats(items),
-        };
-      })
+    const relations = await this.getRawTopicVocabularyRelations(
+      topics.map((topic) => topic.id)
     );
+    const rawItems = await this.getRawVocabularyItemsByIds(
+      [...new Set(relations.map((row) => row.vocabulary_item_id))],
+      userId ?? null
+    );
+    const itemsById = new Map(
+      rawItems.map((item) => [item.id, mapVocabularyItem(item)])
+    );
+    const cards = topics.map((topic) => {
+      const items = relations
+        .filter((row) => row.topic_id === topic.id)
+        .map((row) => itemsById.get(row.vocabulary_item_id))
+        .filter((item): item is VocabularyItem => Boolean(item));
+      return { ...topic, ...this.getTopicStats(items) };
+    });
 
     return cards.filter((topic) => topic.total > 0);
   }
@@ -149,16 +140,15 @@ export class TopicsService {
 
     if (!topic) return null;
 
-    const [allTopicItems, filteredTopicItems] = await Promise.all([
-      this.getRawTopicVocabularyItems(topic.id, userId ?? null),
-      this.getRawTopicVocabularyItems(
-        topic.id,
-        userId ?? null,
-        normalizedLevel
-      ),
-    ]);
-    const allItems = allTopicItems.map(mapVocabularyItem);
-    const items = filteredTopicItems.map(mapVocabularyItem);
+    const relations = await this.getRawTopicVocabularyRelations([topic.id]);
+    const rawItems = await this.getRawVocabularyItemsByIds(
+      relations.map((row) => row.vocabulary_item_id),
+      userId ?? null
+    );
+    const allItems = rawItems.map(mapVocabularyItem);
+    const items = normalizedLevel
+      ? allItems.filter((item) => item.cefrLevel === normalizedLevel)
+      : allItems;
     const countsByLevel = Object.fromEntries(
       PRACTICE_CEFR_LEVELS.map((cefrLevel) => [
         cefrLevel,

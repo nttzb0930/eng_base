@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { VocabularyService } from "../../vocabulary";
+import { GetSavedVocabularyWordsUseCase } from "../../vocabulary";
 import type { ChallengeOption } from "../../courses";
 import {
   getBlankedExample,
@@ -16,13 +16,13 @@ import {
 
 @Injectable()
 export class GetSavedWordReviewChallengesUseCase extends ReviewSource {
-  constructor(prisma: PrismaService, vocabularyService: VocabularyService) {
-    super(prisma, vocabularyService);
+  constructor(prisma: PrismaService, savedWords: GetSavedVocabularyWordsUseCase) {
+    super(prisma, savedWords);
   }
 
   async execute(userId: string, mode: SavedWordsReviewMode = "all") {
     const savedWords =
-      await this.vocabularyService.getSavedVocabularyWords(userId);
+      await this.savedWords.execute(userId);
 
     if (savedWords.length === 0) return [];
 

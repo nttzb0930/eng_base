@@ -1,11 +1,14 @@
 import { Module } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { VocabularyController } from "./vocabulary.controller";
-import { VocabularyService } from "./vocabulary.service";
+import { GetSavedVocabularyWordsUseCase } from "./use-cases/get-saved-vocabulary-words.use-case";
+import { ToggleSavedWordUseCase } from "./use-cases/toggle-saved-word.use-case";
+import { RecordVocabularyReviewResultUseCase } from "./use-cases/record-vocabulary-review-result.use-case";
+import { RecordFlashcardRatingUseCase } from "./use-cases/record-flashcard-rating.use-case";
 
 @Module({
   controllers: [VocabularyController],
-  providers: [VocabularyService, UserJwtGuard],
-  exports: [VocabularyService],
+  providers: [GetSavedVocabularyWordsUseCase, ToggleSavedWordUseCase, RecordVocabularyReviewResultUseCase, RecordFlashcardRatingUseCase, UserJwtGuard],
+  exports: [GetSavedVocabularyWordsUseCase],
 })
 export class VocabularyModule {}

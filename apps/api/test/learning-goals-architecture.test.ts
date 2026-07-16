@@ -128,6 +128,25 @@ test("User and Settings expose flat goal Interfaces without aggregate services",
   }
 });
 
+test("Vocabulary exposes goal use cases without an aggregate service", () => {
+  const root = join(sourceRoot, "vocabulary");
+  assert.equal(existsSync(join(root, "vocabulary.service.ts")), false);
+  for (const file of [
+    "get-saved-vocabulary-words.use-case.ts",
+    "toggle-saved-word.use-case.ts",
+    "record-vocabulary-review-result.use-case.ts",
+    "record-flashcard-rating.use-case.ts",
+  ]) {
+    assert.ok(existsSync(join(root, "use-cases", file)), file);
+  }
+});
+
+test("Topics list delivery batches relations instead of querying per topic", () => {
+  const source = readFileSync(join(sourceRoot, "topics/topics.service.ts"), "utf8");
+  assert.match(source, /getRawTopicVocabularyRelations/);
+  assert.doesNotMatch(source, /topics\.map\(async/);
+});
+
 test("Admin list delivery is shared and does not expose a prismaQuery Interface", () => {
   const apiRoot = join(import.meta.dirname, "../src");
   const filter = readFileSync(

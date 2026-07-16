@@ -1,5 +1,5 @@
 export { VocabularyModule } from "./vocabulary.module";
-export { VocabularyService } from "./vocabulary.service";
+export { GetSavedVocabularyWordsUseCase } from "./use-cases/get-saved-vocabulary-words.use-case";
 export {
   getBlankedExample,
   getDistractors,

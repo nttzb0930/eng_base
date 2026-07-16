@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { VocabularyService } from "../../vocabulary";
+import { GetSavedVocabularyWordsUseCase } from "../../vocabulary";
 import type { ChallengeOption } from "../../courses";
 import { type VocabularyItem } from "../../vocabulary";
 
@@ -37,7 +37,7 @@ export const masteryPriority = {
 export class ReviewSource {
   constructor(
     protected readonly prisma: PrismaService,
-    protected readonly vocabularyService: VocabularyService
+    protected readonly savedWords: GetSavedVocabularyWordsUseCase
   ) {}
 
   protected shuffle<T>(items: T[]): T[] {
