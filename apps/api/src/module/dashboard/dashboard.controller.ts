@@ -1,15 +1,15 @@
 import { Controller, Get, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
-import { DashboardService } from "./dashboard.service";
+import { GetDashboardStatsUseCase } from "./use-cases/get-dashboard-stats.use-case";
 
 @Controller("dashboard")
 @UseGuards(UserJwtGuard)
 export class DashboardController {
-  constructor(private readonly dashboardService: DashboardService) {}
+  constructor(private readonly getDashboardStats: GetDashboardStatsUseCase) {}
 
   @Get()
   getDashboard(@CurrentUserId() userId: string) {
-    return this.dashboardService.getDashboardStats(userId);
+    return this.getDashboardStats.execute(userId);
   }
 }

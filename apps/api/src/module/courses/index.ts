@@ -1,5 +1,8 @@
 export { CoursesModule } from "./courses.module";
-export { CoursesService } from "./courses.service";
+export { GetCourseProgressUseCase } from "./use-cases/get-course-progress.use-case";
+export { GetCourseUseCase } from "./use-cases/get-course.use-case";
+export { GetLessonPercentageUseCase } from "./use-cases/get-lesson-percentage.use-case";
+export { GetUserProgressUseCase } from "./use-cases/get-user-progress.use-case";
 export type {
   Challenge,
   ChallengeOption,
@@ -12,4 +15,4 @@ export type {
   UnitRecord,
   UnitWithLessons,
   UserProgress,
-} from "./courses.service";
+} from "./use-cases/course-learning.implementation";

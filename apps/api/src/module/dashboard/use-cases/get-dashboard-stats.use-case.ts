@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../database/prisma/prisma.service";
+import { PrismaService } from "../../../database/prisma/prisma.service";
 
 const DAY_IN_MS = 86_400_000;
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
@@ -48,7 +48,7 @@ export type DashboardModeAccuracy = {
 };
 
 @Injectable()
-export class DashboardService {
+export class GetDashboardStatsUseCase {
   constructor(private readonly prisma: PrismaService) {}
 
   private getAccuracy(correctCount: number, wrongCount: number) {
@@ -78,7 +78,7 @@ export class DashboardService {
     });
   }
 
-  async getDashboardStats(userId: string) {
+  async execute(userId: string) {
     if (!userId) {
       return {
         overview: {

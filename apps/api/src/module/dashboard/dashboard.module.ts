@@ -1,10 +1,10 @@
 import { Module } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { DashboardController } from "./dashboard.controller";
-import { DashboardService } from "./dashboard.service";
+import { GetDashboardStatsUseCase } from "./use-cases/get-dashboard-stats.use-case";
 
 @Module({
   controllers: [DashboardController],
-  providers: [DashboardService, UserJwtGuard],
+  providers: [GetDashboardStatsUseCase, UserJwtGuard],
 })
 export class DashboardModule {}

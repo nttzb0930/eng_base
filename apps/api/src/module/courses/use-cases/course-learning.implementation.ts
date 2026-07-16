@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../database/prisma/prisma.service";
+import { PrismaService } from "../../../database/prisma/prisma.service";
 import type {
   CourseDto,
   CourseLessonDto,
@@ -26,7 +26,7 @@ import type {
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "../vocabulary";
+} from "../../vocabulary";
 
 export type Course = CourseDto;
 export type UnitRecord = CourseUnitDto;
@@ -108,7 +108,7 @@ type RawUserProgress = user_progressModel & {
 };
 
 @Injectable()
-export class CoursesService {
+export class CourseLearningImplementation {
   constructor(private readonly prisma: PrismaService) {}
 
   mapCourse(course: coursesModel): Course {

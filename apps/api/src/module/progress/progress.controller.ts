@@ -8,7 +8,11 @@ import {
 } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
-import { CoursesService } from "../courses";
+import {
+  GetCourseProgressUseCase,
+  GetLessonPercentageUseCase,
+  GetUserProgressUseCase,
+} from "../courses";
 import { CompleteChallengeUseCase } from "./use-cases/complete-challenge.use-case";
 import { ReduceHeartsUseCase } from "./use-cases/reduce-hearts.use-case";
 import { RefillHeartsUseCase } from "./use-cases/refill-hearts.use-case";
@@ -19,7 +23,9 @@ import { SelectActiveCourseUseCase } from "./use-cases/select-active-course.use-
 @UseGuards(UserJwtGuard)
 export class ProgressController {
   constructor(
-    private readonly courses: CoursesService,
+    private readonly getUserProgressGoal: GetUserProgressUseCase,
+    private readonly getCourseProgressGoal: GetCourseProgressUseCase,
+    private readonly getLessonPercentageGoal: GetLessonPercentageUseCase,
     private readonly selectActiveCourse: SelectActiveCourseUseCase,
     private readonly reduceHeartsGoal: ReduceHeartsUseCase,
     private readonly refillHeartsGoal: RefillHeartsUseCase,
@@ -29,17 +35,17 @@ export class ProgressController {
 
   @Get("user-progress")
   getUserProgress(@CurrentUserId() userId: string) {
-    return this.courses.getUserProgress(userId);
+    return this.getUserProgressGoal.execute(userId);
   }
 
   @Get("course-progress")
   getCourseProgress(@CurrentUserId() userId: string) {
-    return this.courses.getCourseProgress(userId);
+    return this.getCourseProgressGoal.execute(userId);
   }
 
   @Get("lesson-percentage")
   getLessonPercentage(@CurrentUserId() userId: string) {
-    return this.courses.getLessonPercentage(userId);
+    return this.getLessonPercentageGoal.execute(userId);
   }
 
   @Post("courses/:id")

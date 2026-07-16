@@ -10,9 +10,9 @@ import { jwtConfig, validateEnvironment } from "./config";
 
 import { UserModule } from "./module/user/user.module";
 import { SettingsModule } from "./module/settings/settings.module";
-import { DashboardModule } from "./module/dashboard/dashboard.module";
+import { DashboardModule } from "./module/dashboard";
 import { CoursesModule } from "./module/courses";
-import { FlashcardsModule } from "./module/flashcards/flashcards.module";
+import { FlashcardsModule } from "./module/flashcards";
 import { PracticeModule } from "./module/practice";
 import { ReviewModule } from "./module/review";
 import { TopicsModule } from "./module/topics/topics.module";

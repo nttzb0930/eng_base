@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../database/prisma/prisma.service";
+import { PrismaService } from "../../../database/prisma/prisma.service";
 import type {
   UserSavedWord,
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "../vocabulary";
+} from "../../vocabulary";
 
 export type FlashcardSource = "due" | "saved" | "weak";
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
@@ -13,13 +13,13 @@ type PracticeCefrLevel = (typeof PRACTICE_CEFR_LEVELS)[number];
 export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel;
 
 type RawFlashcardVocabularyItem = Awaited<
-  ReturnType<FlashcardsService["getFlashcardVocabularyItems"]>
+  ReturnType<FlashcardSessionBuilder["getFlashcardVocabularyItems"]>
 >[number];
 
 const FLASHCARD_SESSION_LIMIT = 20;
 
 @Injectable()
-export class FlashcardsService {
+export class FlashcardSessionBuilder {
   constructor(private readonly prisma: PrismaService) {}
 
   private isPracticeCefrLevel(value: string): value is PracticeCefrLevel {

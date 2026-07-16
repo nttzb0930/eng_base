@@ -5,20 +5,21 @@ import {
 } from "@nestjs/common";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { CoursesService } from "../../courses";
+import { GetCourseUseCase, GetUserProgressUseCase } from "../../courses";
 
 @Injectable()
 export class SelectActiveCourseUseCase {
   constructor(
     private readonly prisma: PrismaService,
-    private readonly courses: CoursesService
+    private readonly getCourse: GetCourseUseCase,
+    private readonly getUserProgress: GetUserProgressUseCase
   ) {}
 
   async execute(userId: string, courseId: number) {
     const [user, course, existingProgress] = await Promise.all([
       this.prisma.users.findUnique({ where: { id: userId } }),
-      this.courses.getCourseById(courseId),
-      this.courses.getUserProgress(userId),
+      this.getCourse.execute(courseId),
+      this.getUserProgress.execute(userId),
     ]);
     if (!user) throw new NotFoundException("User not found.");
     if (!course) throw new NotFoundException("Course not found.");

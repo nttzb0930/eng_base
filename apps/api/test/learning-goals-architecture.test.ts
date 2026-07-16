@@ -77,3 +77,32 @@ test("Progress writes are atomic and challenge identity is schema-enforced", () 
   assert.match(placement, /\$transaction/);
   assert.match(schema, /@@unique\(\[user_id, challenge_id\]/);
 });
+
+test("Learner Courses, Flashcards and Dashboard expose goal Interfaces", () => {
+  const expected = {
+    courses: [
+      "list-courses.use-case.ts",
+      "get-course.use-case.ts",
+      "get-course-units.use-case.ts",
+      "get-current-lesson.use-case.ts",
+      "get-course-progress.use-case.ts",
+      "get-user-progress.use-case.ts",
+      "get-lesson-percentage.use-case.ts",
+      "get-leaderboard.use-case.ts",
+    ],
+    flashcards: [
+      "get-flashcard-deck-summary.use-case.ts",
+      "get-flashcard-session-items.use-case.ts",
+    ],
+    dashboard: ["get-dashboard-stats.use-case.ts"],
+  };
+
+  for (const [moduleName, files] of Object.entries(expected)) {
+    const root = join(sourceRoot, moduleName);
+    assert.equal(existsSync(join(root, `${moduleName}.service.ts`)), false);
+    for (const file of files) {
+      assert.ok(existsSync(join(root, "use-cases", file)), file);
+    }
+    assert.ok(existsSync(join(root, "index.ts")));
+  }
+});
