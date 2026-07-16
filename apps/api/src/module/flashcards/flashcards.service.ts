@@ -6,11 +6,11 @@ import type {
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "../courses";
+} from "../vocabulary";
 
 export type FlashcardSource = "due" | "saved" | "weak";
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
-type PracticeCefrLevel = typeof PRACTICE_CEFR_LEVELS[number];
+type PracticeCefrLevel = (typeof PRACTICE_CEFR_LEVELS)[number];
 export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel;
 
 type RawFlashcardVocabularyItem = Awaited<
@@ -88,9 +88,7 @@ export class FlashcardsService {
     };
   }
 
-  private mapVocabularyItem(
-    item: RawFlashcardVocabularyItem
-  ): VocabularyItem {
+  private mapVocabularyItem(item: RawFlashcardVocabularyItem): VocabularyItem {
     return {
       id: item.id,
       word: item.word,
@@ -110,10 +108,13 @@ export class FlashcardsService {
       source: item.source,
       createdAt: item.created_at,
       updatedAt: item.updated_at,
-      userSavedWords: item.user_saved_words.map(x => this.mapSavedWord(x)),
-      userVocabularyProgress:
-        item.user_vocabulary_progress.map(x => this.mapVocabularyProgress(x)),
-      vocabularyExamples: item.vocabulary_examples.map(x => this.mapVocabularyExample(x)),
+      userSavedWords: item.user_saved_words.map((x) => this.mapSavedWord(x)),
+      userVocabularyProgress: item.user_vocabulary_progress.map((x) =>
+        this.mapVocabularyProgress(x)
+      ),
+      vocabularyExamples: item.vocabulary_examples.map((x) =>
+        this.mapVocabularyExample(x)
+      ),
     };
   }
 
@@ -264,7 +265,7 @@ export class FlashcardsService {
 
     const deck = this.normalizeFlashcardDeck(deckValue);
     const items = (await this.getFlashcardVocabularyItems(userId, deck)).map(
-      x => this.mapVocabularyItem(x)
+      (x) => this.mapVocabularyItem(x)
     );
 
     if (deck === "due") {
@@ -286,9 +287,7 @@ export class FlashcardsService {
           const aProgress = a.userVocabularyProgress[0];
           const bProgress = b.userVocabularyProgress[0];
 
-          return (
-            (bProgress?.wrongCount ?? 0) - (aProgress?.wrongCount ?? 0)
-          );
+          return (bProgress?.wrongCount ?? 0) - (aProgress?.wrongCount ?? 0);
         })
         .slice(0, FLASHCARD_SESSION_LIMIT);
     }

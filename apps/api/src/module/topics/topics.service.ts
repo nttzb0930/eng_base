@@ -1,11 +1,15 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { auth } from "../../common/auth-context";
-import type { VocabularyItem } from "../courses";
-import { mapVocabularyItem } from "../vocabulary/vocabulary-item.mapper";
+import { mapVocabularyItem, type VocabularyItem } from "../vocabulary";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";
-export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = ["A1", "A2", "B1", "B2"];
+export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
+  "A1",
+  "A2",
+  "B1",
+  "B2",
+];
 
 type RawVocabularyTopic = {
   id: number;
@@ -28,7 +32,9 @@ export class TopicsService {
     return (PRACTICE_CEFR_LEVELS as readonly string[]).includes(value);
   }
 
-  private normalizePracticeCefrLevel(value?: string | null): PracticeCefrLevel | undefined {
+  private normalizePracticeCefrLevel(
+    value?: string | null
+  ): PracticeCefrLevel | undefined {
     return value && this.isPracticeCefrLevel(value) ? value : undefined;
   }
 
@@ -148,7 +154,11 @@ export class TopicsService {
 
     const [allTopicItems, filteredTopicItems] = await Promise.all([
       this.getRawTopicVocabularyItems(topic.id, userId ?? null),
-      this.getRawTopicVocabularyItems(topic.id, userId ?? null, normalizedLevel),
+      this.getRawTopicVocabularyItems(
+        topic.id,
+        userId ?? null,
+        normalizedLevel
+      ),
     ]);
     const allItems = allTopicItems.map(mapVocabularyItem);
     const items = filteredTopicItems.map(mapVocabularyItem);

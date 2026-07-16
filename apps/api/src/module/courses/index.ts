@@ -12,8 +12,4 @@ export type {
   UnitRecord,
   UnitWithLessons,
   UserProgress,
-  UserSavedWord,
-  UserVocabularyProgress,
-  VocabularyExample,
-  VocabularyItem,
 } from "./courses.service";

@@ -64,6 +64,25 @@ export default tseslint.config(
     },
   },
   {
+    files: ["src/**/*.ts"],
+    ignores: ["src/module/vocabulary/**"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            ...privateSharedPatterns,
+            {
+              regex: "^(?:\\.{1,2}/)+(?:module/)?vocabulary/.+",
+              message:
+                "Import only the Vocabulary module public Interface, not its implementation files.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
     // Exact legacy allowlist. New files must keep no-explicit-any enabled.
     // Remove individual entries as these call sites gain typed interfaces.
     files: [

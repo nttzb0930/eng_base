@@ -2,18 +2,16 @@ import { Injectable } from "@nestjs/common";
 import { NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { auth } from "../../common/auth-context";
-import type {
-  ChallengeOption,
-  UserVocabularyProgress,
-  VocabularyItem,
-} from "../courses";
-import { mapVocabularyItem } from "../vocabulary/vocabulary-item.mapper";
+import type { ChallengeOption } from "../courses";
 import {
   getBlankedExample,
   getDistractors,
+  mapVocabularyItem,
   toReviewSourceItem,
   type ReviewSourceItem,
-} from "../vocabulary/vocabulary-challenge.builder";
+  type UserVocabularyProgress,
+  type VocabularyItem,
+} from "../vocabulary";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";
 
@@ -74,11 +72,11 @@ const WEAK_WORDS_LIMIT = 20;
 
 @Injectable()
 export class PracticeService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   async listPracticeSessions(query?: practice_sessionsFindManyArgs) {
     return (await this.prisma.practice_sessions.findMany(query)).map(
-      mapPracticeSession,
+      mapPracticeSession
     );
   }
 
@@ -106,7 +104,9 @@ export class PracticeService {
   }
 
   async deletePracticeSession(id: number) {
-    const session = await this.prisma.practice_sessions.delete({ where: { id } });
+    const session = await this.prisma.practice_sessions.delete({
+      where: { id },
+    });
     return mapPracticeSession(session);
   }
 
@@ -118,7 +118,9 @@ export class PracticeService {
     return (PRACTICE_CEFR_LEVELS as readonly string[]).includes(value);
   }
 
-  private normalizePracticeCefrLevel(value?: string | null): PracticeCefrLevel | undefined {
+  private normalizePracticeCefrLevel(
+    value?: string | null
+  ): PracticeCefrLevel | undefined {
     return value && this.isPracticeCefrLevel(value) ? value : undefined;
   }
 
@@ -140,7 +142,9 @@ export class PracticeService {
       ? Math.floor(progress.lastReviewedAt.getTime() / 86_400_000)
       : 0;
 
-    return dueScore + wrongScore + learningScore + reviewScore - freshnessPenalty;
+    return (
+      dueScore + wrongScore + learningScore + reviewScore - freshnessPenalty
+    );
   }
 
   // --- Fill Blank Logic ---
@@ -197,7 +201,9 @@ export class PracticeService {
         })
       : null;
     const confirmedLevel = session?.confirmed_level || "A1";
-    const confirmedIndex = PRACTICE_CEFR_LEVELS.indexOf(confirmedLevel as PracticeCefrLevel);
+    const confirmedIndex = PRACTICE_CEFR_LEVELS.indexOf(
+      confirmedLevel as PracticeCefrLevel
+    );
 
     const rows = [];
     let previousLevelsCompleted = true;
@@ -228,19 +234,19 @@ export class PracticeService {
       });
       const completedProgress = userId
         ? await this.prisma.user_vocabulary_progress.findMany({
-          where: {
-            user_id: userId,
-            review_count: {
-              gt: 0,
+            where: {
+              user_id: userId,
+              review_count: {
+                gt: 0,
+              },
+              vocabulary_item_id: {
+                in: eligibleItems.map((item) => item.id),
+              },
             },
-            vocabulary_item_id: {
-              in: eligibleItems.map((item) => item.id),
+            select: {
+              vocabulary_item_id: true,
             },
-          },
-          select: {
-            vocabulary_item_id: true,
-          },
-        })
+          })
         : [];
       const completedVocabularyIds = new Set(
         completedProgress.map((progress) => progress.vocabulary_item_id)
@@ -253,11 +259,14 @@ export class PracticeService {
       const isLevelUnlockedByPlacement = levelIndex <= confirmedIndex;
 
       let unlockedLessons =
-        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessons > 0 ? 1 : 0;
+        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessons > 0
+          ? 1
+          : 0;
 
       for (
         let lessonIndex = 0;
-        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessonIndex < lessons - 1;
+        (isLevelUnlockedByPlacement || previousLevelsCompleted) &&
+        lessonIndex < lessons - 1;
         lessonIndex += 1
       ) {
         const lessonItems = eligibleItems.slice(
@@ -273,7 +282,8 @@ export class PracticeService {
       }
 
       const levelCompleted =
-        lessons > 0 && eligibleItems.every((item) => completedVocabularyIds.has(item.id));
+        lessons > 0 &&
+        eligibleItems.every((item) => completedVocabularyIds.has(item.id));
 
       rows.push([
         level,
@@ -301,7 +311,11 @@ export class PracticeService {
     if (!userId) return [];
 
     const vocabularyItems = (
-      await this.getPracticeVocabularyItems(userId, normalizedLevel, lessonNumber)
+      await this.getPracticeVocabularyItems(
+        userId,
+        normalizedLevel,
+        lessonNumber
+      )
     ).map(mapVocabularyItem);
 
     if (vocabularyItems.length === 0) return [];
@@ -390,7 +404,9 @@ export class PracticeService {
         })
       : null;
     const confirmedLevel = session?.confirmed_level || "A1";
-    const confirmedIndex = PRACTICE_CEFR_LEVELS.indexOf(confirmedLevel as PracticeCefrLevel);
+    const confirmedIndex = PRACTICE_CEFR_LEVELS.indexOf(
+      confirmedLevel as PracticeCefrLevel
+    );
 
     const rows = [];
     let previousLevelsCompleted = true;
@@ -399,34 +415,39 @@ export class PracticeService {
       const eligibleItems = await this.getEligibleListeningItems(level);
       const completedProgress = userId
         ? await this.prisma.user_vocabulary_progress.findMany({
-          where: {
-            user_id: userId,
-            review_count: {
-              gt: 0,
+            where: {
+              user_id: userId,
+              review_count: {
+                gt: 0,
+              },
+              vocabulary_item_id: {
+                in: eligibleItems.map((item) => item.id),
+              },
             },
-            vocabulary_item_id: {
-              in: eligibleItems.map((item) => item.id),
+            select: {
+              vocabulary_item_id: true,
             },
-          },
-          select: {
-            vocabulary_item_id: true,
-          },
-        })
+          })
         : [];
       const completedVocabularyIds = new Set(
         completedProgress.map((progress) => progress.vocabulary_item_id)
       );
-      const lessons = Math.ceil(eligibleItems.length / PRACTICE_WORDS_PER_LESSON);
+      const lessons = Math.ceil(
+        eligibleItems.length / PRACTICE_WORDS_PER_LESSON
+      );
 
       const levelIndex = PRACTICE_CEFR_LEVELS.indexOf(level);
       const isLevelUnlockedByPlacement = levelIndex <= confirmedIndex;
 
       let unlockedLessons =
-        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessons > 0 ? 1 : 0;
+        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessons > 0
+          ? 1
+          : 0;
 
       for (
         let lessonIndex = 0;
-        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessonIndex < lessons - 1;
+        (isLevelUnlockedByPlacement || previousLevelsCompleted) &&
+        lessonIndex < lessons - 1;
         lessonIndex += 1
       ) {
         const lessonItems = eligibleItems.slice(
@@ -502,7 +523,11 @@ export class PracticeService {
     if (!userId) return [];
 
     const vocabularyItems = (
-      await this.getListeningVocabularyItems(userId, normalizedLevel, lessonNumber)
+      await this.getListeningVocabularyItems(
+        userId,
+        normalizedLevel,
+        lessonNumber
+      )
     ).map(mapVocabularyItem);
 
     if (vocabularyItems.length === 0) return [];
@@ -585,7 +610,9 @@ export class PracticeService {
         })
       : null;
     const confirmedLevel = session?.confirmed_level || "A1";
-    const confirmedIndex = PRACTICE_CEFR_LEVELS.indexOf(confirmedLevel as PracticeCefrLevel);
+    const confirmedIndex = PRACTICE_CEFR_LEVELS.indexOf(
+      confirmedLevel as PracticeCefrLevel
+    );
 
     const rows = [];
     let previousLevelsCompleted = true;
@@ -594,34 +621,39 @@ export class PracticeService {
       const eligibleItems = await this.getEligibleDictationItems(level);
       const completedProgress = userId
         ? await this.prisma.user_vocabulary_progress.findMany({
-          where: {
-            user_id: userId,
-            review_count: {
-              gt: 0,
+            where: {
+              user_id: userId,
+              review_count: {
+                gt: 0,
+              },
+              vocabulary_item_id: {
+                in: eligibleItems.map((item) => item.id),
+              },
             },
-            vocabulary_item_id: {
-              in: eligibleItems.map((item) => item.id),
+            select: {
+              vocabulary_item_id: true,
             },
-          },
-          select: {
-            vocabulary_item_id: true,
-          },
-        })
+          })
         : [];
       const completedVocabularyIds = new Set(
         completedProgress.map((progress) => progress.vocabulary_item_id)
       );
-      const lessons = Math.ceil(eligibleItems.length / PRACTICE_WORDS_PER_LESSON);
+      const lessons = Math.ceil(
+        eligibleItems.length / PRACTICE_WORDS_PER_LESSON
+      );
 
       const levelIndex = PRACTICE_CEFR_LEVELS.indexOf(level);
       const isLevelUnlockedByPlacement = levelIndex <= confirmedIndex;
 
       let unlockedLessons =
-        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessons > 0 ? 1 : 0;
+        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessons > 0
+          ? 1
+          : 0;
 
       for (
         let lessonIndex = 0;
-        (isLevelUnlockedByPlacement || previousLevelsCompleted) && lessonIndex < lessons - 1;
+        (isLevelUnlockedByPlacement || previousLevelsCompleted) &&
+        lessonIndex < lessons - 1;
         lessonIndex += 1
       ) {
         const lessonItems = eligibleItems.slice(
@@ -697,7 +729,11 @@ export class PracticeService {
     if (!userId) return [];
 
     const vocabularyItems = (
-      await this.getDictationVocabularyItems(userId, normalizedLevel, lessonNumber)
+      await this.getDictationVocabularyItems(
+        userId,
+        normalizedLevel,
+        lessonNumber
+      )
     ).map(mapVocabularyItem);
 
     return vocabularyItems.map(
@@ -786,7 +822,9 @@ export class PracticeService {
 
         if (!aProgress || !bProgress) return 0;
 
-        return this.getWeakPriority(bProgress) - this.getWeakPriority(aProgress);
+        return (
+          this.getWeakPriority(bProgress) - this.getWeakPriority(aProgress)
+        );
       })
       .slice(0, WEAK_WORDS_LIMIT);
 
@@ -924,7 +962,10 @@ export class PracticeService {
   }
 
   // --- Session Results Logic ---
-  async createPracticeSessionResult({ mode, items }: PracticeSessionResultInputDto) {
+  async createPracticeSessionResult({
+    mode,
+    items,
+  }: PracticeSessionResultInputDto) {
     const { userId } = await auth();
 
     if (!userId) throw new Error("Unauthorized.");

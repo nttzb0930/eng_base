@@ -13,10 +13,7 @@ export class TopicsController {
   }
 
   @Get(":slug")
-  getTopicBySlug(
-    @Param("slug") slug: string,
-    @Query("level") level?: string
-  ) {
+  getTopicBySlug(@Param("slug") slug: string, @Query("level") level?: string) {
     return this.topicsService.getVocabularyTopicBySlug(slug, level);
   }
 }

@@ -14,7 +14,7 @@ import { FlashcardsModule } from "./module/flashcards/flashcards.module";
 import { PracticeModule } from "./module/practice/practice.module";
 import { ReviewModule } from "./module/review/review.module";
 import { TopicsModule } from "./module/topics/topics.module";
-import { VocabularyModule } from "./module/vocabulary/vocabulary.module";
+import { VocabularyModule } from "./module/vocabulary";
 import { ProgressModule } from "./module/progress/progress.module";
 import { PlacementTestModule } from "./module/placement-test/placement-test.module";
 import { PrismaModule } from "./database/prisma/prisma.module";

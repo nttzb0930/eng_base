@@ -1,4 +1,4 @@
-import type { VocabularyItem } from "../courses";
+import type { VocabularyItem } from "../types/vocabulary.types";
 
 export type ReviewSourceItem = Pick<
   VocabularyItem,
@@ -45,7 +45,7 @@ function getWordFormPattern(word: string): RegExp {
 
 export function getBlankedExample(
   item: BlankSourceItem,
-  random: RandomSource = Math.random,
+  random: RandomSource = Math.random
 ): string | null {
   const examples =
     item.vocabularyExamples.length > 0
@@ -55,7 +55,7 @@ export function getBlankedExample(
         : [];
   const wordPattern = getWordFormPattern(item.word);
   const example = shuffle(examples, random).find((candidate) =>
-    wordPattern.test(candidate),
+    wordPattern.test(candidate)
   );
 
   return example ? example.replace(wordPattern, "_____") : null;
@@ -74,7 +74,7 @@ export function toReviewSourceItem(item: VocabularyItem): ReviewSourceItem {
 
 function hasMeaningOverlap(
   target: ReviewSourceItem,
-  candidate: ReviewSourceItem,
+  candidate: ReviewSourceItem
 ): boolean {
   const targetPrimary = target.primaryMeaningVi.toLowerCase();
   const candidatePrimary = candidate.primaryMeaningVi.toLowerCase();
@@ -91,14 +91,14 @@ export function getDistractors(
   target: ReviewSourceItem,
   pool: readonly ReviewSourceItem[],
   count = 3,
-  random: RandomSource = Math.random,
+  random: RandomSource = Math.random
 ): ReviewSourceItem[] {
   const cleanPool = pool.filter(
     (item) =>
       item.id !== target.id &&
       item.word !== target.word &&
       item.primaryMeaningVi !== target.primaryMeaningVi &&
-      !hasMeaningOverlap(target, item),
+      !hasMeaningOverlap(target, item)
   );
   const strategies = [
     (item: ReviewSourceItem) =>
@@ -114,9 +114,9 @@ export function getDistractors(
       cleanPool.filter(
         (item) =>
           strategy(item) &&
-          !selected.some((selectedItem) => selectedItem.id === item.id),
+          !selected.some((selectedItem) => selectedItem.id === item.id)
       ),
-      random,
+      random
     );
 
     for (const candidate of candidates) {

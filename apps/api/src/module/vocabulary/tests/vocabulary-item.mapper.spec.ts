@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { mapVocabularyItem } from "./vocabulary-item.mapper";
+import { mapVocabularyItem } from "../mappers/vocabulary-item.mapper";
 
 test("vocabulary mapper converts database fields and nested relations", () => {
   const now = new Date("2026-07-14T00:00:00.000Z");

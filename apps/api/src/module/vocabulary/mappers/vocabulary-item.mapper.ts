@@ -9,7 +9,7 @@ import type {
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "../courses";
+} from "../types/vocabulary.types";
 
 export type VocabularyItemRecord = vocabulary_itemsModel & {
   user_saved_words?: user_saved_wordsModel[];
@@ -27,7 +27,7 @@ export function mapSavedWord(savedWord: user_saved_wordsModel): UserSavedWord {
 }
 
 export function mapVocabularyProgress(
-  progress: user_vocabulary_progressModel,
+  progress: user_vocabulary_progressModel
 ): UserVocabularyProgress {
   return {
     id: progress.id,
@@ -48,7 +48,7 @@ export function mapVocabularyProgress(
 }
 
 export function mapVocabularyExample(
-  example: vocabulary_examplesModel,
+  example: vocabulary_examplesModel
 ): VocabularyExample {
   return {
     id: example.id,

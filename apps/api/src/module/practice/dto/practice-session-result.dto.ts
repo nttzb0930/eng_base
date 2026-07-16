@@ -1,4 +1,12 @@
-import { IsArray, IsBoolean, IsNotEmpty, IsNumber, IsOptional, IsString, IsEnum } from "class-validator";
+import {
+  IsArray,
+  IsBoolean,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsString,
+  IsEnum,
+} from "class-validator";
 import { Type } from "class-transformer";
 
 export enum PracticeSessionMode {

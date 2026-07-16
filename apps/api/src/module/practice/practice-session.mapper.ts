@@ -24,9 +24,7 @@ export function mapPracticeSession(session: practice_sessionsModel) {
   };
 }
 
-export function mapPracticeSessionDetail(
-  session: PracticeSessionDetailRecord,
-) {
+export function mapPracticeSessionDetail(session: PracticeSessionDetailRecord) {
   return {
     ...mapPracticeSession(session),
     items:

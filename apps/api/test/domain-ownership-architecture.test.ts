@@ -45,3 +45,24 @@ test("Course Management is organized inside the Courses owner", () => {
   assert.ok(existsSync(join(sourceRoot, "module/courses/use-cases")));
   assert.ok(existsSync(join(sourceRoot, "module/courses/tests")));
 });
+
+test("Vocabulary owns its types, mappers, builders and tests", () => {
+  const vocabularyRoot = join(sourceRoot, "module/vocabulary");
+  assert.ok(existsSync(join(vocabularyRoot, "index.ts")));
+  assert.ok(existsSync(join(vocabularyRoot, "types/vocabulary.types.ts")));
+  assert.ok(
+    existsSync(join(vocabularyRoot, "mappers/vocabulary-item.mapper.ts"))
+  );
+  assert.ok(
+    existsSync(
+      join(vocabularyRoot, "builders/vocabulary-challenge.builder.ts")
+    )
+  );
+  assert.ok(
+    existsSync(join(vocabularyRoot, "tests/vocabulary-item.mapper.spec.ts"))
+  );
+  assert.equal(
+    existsSync(join(vocabularyRoot, "vocabulary-item.mapper.ts")),
+    false
+  );
+});

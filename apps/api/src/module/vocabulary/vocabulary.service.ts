@@ -4,7 +4,7 @@ import { auth } from "../../common/auth-context";
 import {
   mapSavedWord,
   mapVocabularyItem,
-} from "./vocabulary-item.mapper";
+} from "./mappers/vocabulary-item.mapper";
 
 export type FlashcardRating = "again" | "good";
 
@@ -36,7 +36,10 @@ export class VocabularyService {
     };
   }
 
-  private getMasteryLevel(rating: FlashcardRating, repetitionCount: number): string {
+  private getMasteryLevel(
+    rating: FlashcardRating,
+    repetitionCount: number
+  ): string {
     if (rating === "again") return "learning";
     if (repetitionCount >= 5) return "mastered";
     if (repetitionCount >= 2) return "review";
@@ -72,7 +75,10 @@ export class VocabularyService {
         ? 1
         : repetitionCount === 2
           ? 6
-          : Math.max(1, Math.round(current.interval_days * current.ease_factor));
+          : Math.max(
+              1,
+              Math.round(current.interval_days * current.ease_factor)
+            );
 
     return {
       correctIncrement: 1,
@@ -85,8 +91,7 @@ export class VocabularyService {
     };
   }
 
-  private revalidateVocabularyProgressPaths() {
-  }
+  private revalidateVocabularyProgressPaths() {}
 
   async getSavedVocabularyWords() {
     const { userId } = await auth();
@@ -152,19 +157,23 @@ export class VocabularyService {
     return { saved: true };
   }
 
-  async recordVocabularyReviewResult(vocabularyItemId: number, correct: boolean) {
+  async recordVocabularyReviewResult(
+    vocabularyItemId: number,
+    correct: boolean
+  ) {
     const { userId } = await auth();
 
     if (!userId) throw new Error("Unauthorized.");
 
-    const existingProgress = await this.prisma.user_vocabulary_progress.findUnique({
-      where: {
-        user_id_vocabulary_item_id: {
-          user_id: userId,
-          vocabulary_item_id: vocabularyItemId,
+    const existingProgress =
+      await this.prisma.user_vocabulary_progress.findUnique({
+        where: {
+          user_id_vocabulary_item_id: {
+            user_id: userId,
+            vocabulary_item_id: vocabularyItemId,
+          },
         },
-      },
-    });
+      });
 
     const rating: FlashcardRating = correct ? "good" : "again";
     const scheduleUpdate = this.getSchedulingUpdate(existingProgress, rating);
@@ -224,19 +233,23 @@ export class VocabularyService {
     };
   }
 
-  async recordFlashcardRating(vocabularyItemId: number, rating: FlashcardRating) {
+  async recordFlashcardRating(
+    vocabularyItemId: number,
+    rating: FlashcardRating
+  ) {
     const { userId } = await auth();
 
     if (!userId) throw new Error("Unauthorized.");
 
-    const existingProgress = await this.prisma.user_vocabulary_progress.findUnique({
-      where: {
-        user_id_vocabulary_item_id: {
-          user_id: userId,
-          vocabulary_item_id: vocabularyItemId,
+    const existingProgress =
+      await this.prisma.user_vocabulary_progress.findUnique({
+        where: {
+          user_id_vocabulary_item_id: {
+            user_id: userId,
+            vocabulary_item_id: vocabularyItemId,
+          },
         },
-      },
-    });
+      });
     const scheduleUpdate = this.getSchedulingUpdate(existingProgress, rating);
     const correctCount =
       (existingProgress?.correct_count ?? 0) + scheduleUpdate.correctIncrement;

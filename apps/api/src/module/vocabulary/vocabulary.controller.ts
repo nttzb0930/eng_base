@@ -1,7 +1,18 @@
-import { Body, Controller, Get, Param, ParseIntPipe, Post, UseGuards } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  ParseIntPipe,
+  Post,
+  UseGuards,
+} from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { VocabularyService } from "./vocabulary.service";
-import { RecordReviewResultDto, RecordFlashcardRatingDto } from "./dto/vocabulary.dto";
+import {
+  RecordReviewResultDto,
+  RecordFlashcardRatingDto,
+} from "./dto/vocabulary.dto";
 
 @Controller("vocabulary")
 @UseGuards(UserJwtGuard)
@@ -23,7 +34,10 @@ export class VocabularyController {
     @Param("id", ParseIntPipe) id: number,
     @Body() body: RecordReviewResultDto
   ) {
-    return this.vocabularyService.recordVocabularyReviewResult(id, body.correct);
+    return this.vocabularyService.recordVocabularyReviewResult(
+      id,
+      body.correct
+    );
   }
 
   @Post(":id/flashcard")

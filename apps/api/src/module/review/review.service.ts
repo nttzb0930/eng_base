@@ -1,27 +1,20 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { VocabularyService } from "../vocabulary/vocabulary.service";
+import { VocabularyService } from "../vocabulary";
 import { auth } from "../../common/auth-context";
-import type {
-  ChallengeOption,
-  VocabularyItem,
-} from "../courses";
-import { mapVocabularyItem } from "../vocabulary/vocabulary-item.mapper";
+import type { ChallengeOption } from "../courses";
 import {
   getBlankedExample,
   getDistractors,
+  mapVocabularyItem,
   toReviewSourceItem,
   type ReviewSourceItem,
-} from "../vocabulary/vocabulary-challenge.builder";
+  type VocabularyItem,
+} from "../vocabulary";
 
 export type DailyReviewChallenge = {
   id: number;
-  type:
-    | "SELECT"
-    | "ASSIST"
-    | "LISTEN_SELECT"
-    | "FILL_BLANK"
-    | "AUDIO_TO_TEXT";
+  type: "SELECT" | "ASSIST" | "LISTEN_SELECT" | "FILL_BLANK" | "AUDIO_TO_TEXT";
   direction: "EN_TO_VI" | "VI_TO_EN" | "AUDIO_TO_EN" | "CONTEXT_TO_EN";
   question: string;
   vocabularyItem: VocabularyItem;
@@ -82,9 +75,8 @@ export class ReviewService {
     const wrongScore = progress.wrongCount * 100;
     const masteryScore =
       300 -
-      (masteryPriority[
-        progress.masteryLevel as keyof typeof masteryPriority
-      ] ?? 0) *
+      (masteryPriority[progress.masteryLevel as keyof typeof masteryPriority] ??
+        0) *
         100;
 
     return dueScore + wrongScore + masteryScore;
