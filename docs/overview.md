@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This repository applies **Web Base Standard 1.3.0** to a three-app pnpm/Turborepo
+This repository applies **Web Base Standard 1.4.0** to a three-app pnpm/Turborepo
 workspace:
 
 - `apps/api` exposes HTTP, owns business behavior, Prisma, and PostgreSQL.
@@ -24,6 +24,9 @@ profile is recorded separately in
 [ADR 0014](adr/0014-ec-api-source-profile.md).
 Auth use-case organization is recorded in
 [ADR 0015](adr/0015-auth-use-case-organization.md).
+Admin delivery, Course Management roles, Vocabulary ownership, and the script
+Prisma Adapter are recorded in
+[ADR 0016](adr/0016-domain-owner-locality.md).
 
 Reference documents:
 

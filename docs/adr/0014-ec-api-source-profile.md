@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted; authentication placement details amended by ADR 0015
+Accepted; amended by ADRs 0015 and 0016
 
 ## Context
 
@@ -34,8 +34,9 @@ apps/api/src/
 - Health is a capability Module under `src/module/health`.
 - Prisma has one generated client Interface: `@prisma/client`. The additional
   `prisma-client` generator and `src/generated/prisma` output are removed.
-- Nest and offline data scripts use adapters under `src/database/prisma` and
-  share database adapter configuration.
+- Nest uses `src/database/prisma/PrismaService`; offline data scripts share the
+  Adapter at `scripts/support/script-prisma.ts`. Both share database Adapter
+  configuration.
 - Generic decorators and exception filters live under `src/common`.
 - The no-op cache/revalidation wrappers are deleted. Cache invalidation remains
   the responsibility of the calling frontend adapter as accepted in ADR 0011.

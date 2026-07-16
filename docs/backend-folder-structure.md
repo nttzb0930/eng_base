@@ -1,6 +1,6 @@
 # Backend Folder Structure
 
-The NestJS API follows **Web Base Standard 1.3.0** and the EC API profile
+The NestJS API follows **Web Base Standard 1.4.0** and the EC API profile
 accepted in ADR 0014. Business ownership is capability-first; infrastructure
 folders are named by a concrete runtime responsibility.
 
@@ -20,13 +20,14 @@ apps/api/src/
       prisma.config.ts          shared adapter construction
       prisma.module.ts          Nest composition
       prisma.service.ts         Nest persistence Adapter
-      prisma.client.ts          offline-script persistence Adapter
   module/
     auth/                       authentication owner and public Interface
     health/                     health delivery Module
     <capability>/               business owner
   app.module.ts                 Module composition root
   main.ts                       process/bootstrap adapter
+apps/api/scripts/support/
+  script-prisma.ts              offline-script persistence Adapter
 ```
 
 The repository deliberately retains singular `src/module`. Renaming it to
@@ -40,7 +41,7 @@ map records inside the owning capability. Never edit or recreate
 `src/generated/prisma`.
 
 Nest Modules inject `PrismaService`. Offline vocabulary scripts import
-`database/prisma/prisma.client.ts`. Both adapters share connection construction
+`scripts/support/script-prisma.ts`. Both Adapters share connection construction
 through `prisma.config.ts`; neither is a second database owner.
 
 Prisma records stay API-local and must be mapped before crossing an HTTP wire
@@ -58,6 +59,10 @@ the Auth public Interface rather than private use-case paths.
 Courses owns Course -> Unit -> Lesson -> Lesson challenge -> Challenge option
 behavior for learner and Admin callers. Admin authorization is delivery, not a
 second Course owner.
+
+Admin delivery for User, Practice, Settings, and Courses stays inside those
+owners. A generic `module/admin` is forbidden. Vocabulary owns its public types,
+mappers, builders, and grouped tests; callers use its root Interface.
 
 ## Module depth
 

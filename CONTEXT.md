@@ -1,6 +1,6 @@
 # Project Context
 
-The architecture baseline is **Web Base Standard 1.3.0**, adopted incrementally.
+The architecture baseline is **Web Base Standard 1.4.0**, adopted incrementally.
 Legacy modules may remain until their behavior is covered and moved; new code
 must follow the capability-first rules in `docs/architecture/codebase-structure.md`.
 
@@ -43,6 +43,10 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
   profile; the Admin EC profile separates `app/features` behavior from
   `app/views` screen composition without changing domain ownership.
 - Courses owns both learner-facing reads and Admin Course Management CRUD. The Admin API module must not duplicate these mutations.
+- Admin is a caller and authorization mode, not a business owner; Admin HTTP
+  delivery remains in the capability whose behavior it exposes.
+- Vocabulary owns vocabulary item/progress/example types and the mapping and
+  challenge-building implementation used by learning flows.
 - Add seams only when there are at least two real adapters, such as Prisma in production and an in-memory repository in tests.
 - Tests verify observable behavior through public interfaces, not private helpers or implementation layout.
 

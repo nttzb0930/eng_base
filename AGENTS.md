@@ -1,6 +1,6 @@
 # Agent Workflow
 
-This repository follows **Web Base Standard 1.3.0**. Read `CONTEXT.md`, the
+This repository follows **Web Base Standard 1.4.0**. Read `CONTEXT.md`, the
 relevant document in `docs/architecture/`, and accepted ADRs before changing an
 owned capability or a public Interface.
 
@@ -21,7 +21,7 @@ feature refactor.
 - Organize backend behavior under its owning `src/module/<capability>` folder.
   The singular `module` path is the current repository path; a mass rename is a
   separate mechanical migration.
-- Technical folders such as `api`, `hooks`, `types`, `management`, and `tests`
+- Technical folders such as `api`, `hooks`, `types`, `mappers`, and `tests`
   remain subordinate to a business owner.
 - Do not add new domain code to the legacy `src/views`, `src/services`,
   `src/types`, or `src/constants` buckets. `app/views` is an intentional EC
@@ -60,6 +60,12 @@ feature refactor.
   query Prisma directly.
 - Business behavior belongs to its domain owner regardless of whether the
   caller is Web or Admin. Courses owns learner reads and Course Management CRUD.
+- Admin is a caller/authorization mode, not a default backend capability. Put
+  Admin delivery in User, Practice, Settings, Courses, or its actual owner.
+- Nest injects `PrismaService`; offline scripts use
+  `scripts/support/script-prisma.ts`.
+- Other capabilities import Vocabulary through `src/module/vocabulary`; its
+  public types, mappers, and builders are owned there.
 - Nest request DTOs and Prisma mappers stay in `apps/api`; Prisma models never
   cross the HTTP boundary.
 - Introduce repository seams only when there are real interchangeable adapters.

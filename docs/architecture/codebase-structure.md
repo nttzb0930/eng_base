@@ -1,6 +1,6 @@
 # Codebase Structure
 
-This is the repository profile for **Web Base Standard 1.3.0**. Migration is
+This is the repository profile for **Web Base Standard 1.4.0**. Migration is
 incremental: existing behavior may remain in legacy locations, but every new
 capability and every touched golden slice must converge on this structure.
 
@@ -43,7 +43,9 @@ apps/api/src/module/<capability>/
   <capability>.module.ts composition root
   <delivery>.controller.ts
   <behavior>.service.ts
-  <subcapability>/
+  dto/                  when delivery DTOs need grouping
+  mappers/              capability-owned translations
+  use-cases/            behavior grouping when it adds locality
   tests/
 
 apps/api/src/common/           cross-capability Nest infrastructure
@@ -61,8 +63,8 @@ change after imports and tests make it safe.
 
 The API uses only the generated `@prisma/client` Interface. Generated
 persistence source does not live under `src`, and callers do not edit generated
-models. Nest runtime and offline scripts use adapters owned by
-`src/database/prisma`.
+models. Nest runtime uses `src/database/prisma`; offline scripts own their
+Adapter under `scripts/support`.
 
 Auth follows a workflow profile inside its capability owner: delivery adapters
 delegate to login, register, refresh, and logout use cases. Token/password
@@ -159,6 +161,8 @@ Management additionally has:
   duplicate Prisma generator.
 - an Auth architecture test that rejects persistence/crypto in controllers,
   guards inside the Auth owner, and a broad Auth root Interface.
+- a domain-ownership test that rejects `module/admin`, `courses/management`,
+  and the superseded flat Vocabulary layout.
 
 Run `pnpm test`, `pnpm check-types`, `pnpm lint`, and `pnpm build` before handoff.
 Architecture refactors must not run database seed, push, migration, or vocabulary

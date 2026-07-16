@@ -68,8 +68,8 @@ colocated in the owning resource `.api.ts`.
   CreateCourseRequest / ...Schema         wire request
   PaginatedCoursesDto / ...Schema         wire list response
 
-apps/api/.../course-management.dto.ts     Nest validation classes
-apps/api/.../course-management.mapper.ts  Prisma <-> wire conversion
+apps/api/.../dto/course-content-management.dto.ts  Nest validation classes
+apps/api/.../mappers/course-content.mapper.ts      Prisma <-> wire conversion
 apps/admin/app/features/.../types/*.ts    Admin-only ViewModels
 ```
 
