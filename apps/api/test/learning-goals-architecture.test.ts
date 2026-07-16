@@ -21,6 +21,26 @@ test("Progress and Placement Test expose flat goal-named use cases", () => {
       "submit-placement-answer.use-case.ts",
       "update-onboarding-state.use-case.ts",
     ],
+    practice: [
+      "create-practice-session-result.use-case.ts",
+      "get-admin-practice-session.use-case.ts",
+      "get-dictation-practice-challenges.use-case.ts",
+      "get-dictation-practice-summary.use-case.ts",
+      "get-fill-blank-practice-challenges.use-case.ts",
+      "get-fill-blank-practice-summary.use-case.ts",
+      "get-listening-practice-challenges.use-case.ts",
+      "get-listening-practice-summary.use-case.ts",
+      "get-weak-words-practice-challenges.use-case.ts",
+      "get-weak-words-practice-summary.use-case.ts",
+      "list-admin-practice-sessions.use-case.ts",
+      "remove-admin-practice-session.use-case.ts",
+    ],
+    review: [
+      "get-daily-review-challenges.use-case.ts",
+      "get-daily-review-summary.use-case.ts",
+      "get-saved-word-review-challenges.use-case.ts",
+      "get-saved-word-review-summary.use-case.ts",
+    ],
   };
 
   for (const [moduleName, files] of Object.entries(expected)) {

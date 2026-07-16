@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
-import { PrismaService } from "../../database/prisma/prisma.service";
-import { VocabularyService } from "../vocabulary";
-import type { ChallengeOption } from "../courses";
+import { PrismaService } from "../../../database/prisma/prisma.service";
+import { VocabularyService } from "../../vocabulary";
+import type { ChallengeOption } from "../../courses";
 import {
   getBlankedExample,
   getDistractors,
@@ -9,7 +9,7 @@ import {
   toReviewSourceItem,
   type ReviewSourceItem,
   type VocabularyItem,
-} from "../vocabulary";
+} from "../../vocabulary";
 
 export type DailyReviewChallenge = {
   id: number;
@@ -41,7 +41,7 @@ const masteryPriority = {
 } as const;
 
 @Injectable()
-export class ReviewService {
+export class ReviewChallengeBuilder {
   constructor(
     private readonly prisma: PrismaService,
     private readonly vocabularyService: VocabularyService

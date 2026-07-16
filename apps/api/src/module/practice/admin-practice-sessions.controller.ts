@@ -15,12 +15,18 @@ import {
   type FilterParseResult,
 } from "../../common/decorators/filter-parse.decorator";
 import { AdminJwtGuard } from "../../common/guards/admin-jwt.guard";
-import { PracticeService } from "./practice.service";
+import { GetAdminPracticeSessionUseCase } from "./use-cases/get-admin-practice-session.use-case";
+import { ListAdminPracticeSessionsUseCase } from "./use-cases/list-admin-practice-sessions.use-case";
+import { RemoveAdminPracticeSessionUseCase } from "./use-cases/remove-admin-practice-session.use-case";
 
 @Controller("admin/practiceSessions")
 @UseGuards(AdminJwtGuard)
 export class AdminPracticeSessionsController {
-  constructor(private readonly practice: PracticeService) {}
+  constructor(
+    private readonly listSessions: ListAdminPracticeSessionsUseCase,
+    private readonly getSession: GetAdminPracticeSessionUseCase,
+    private readonly removeSession: RemoveAdminPracticeSessionUseCase
+  ) {}
 
   @Get()
   async list(
@@ -37,10 +43,10 @@ export class AdminPracticeSessionsController {
     query: FilterParseResult<Record<string, unknown>>
   ) {
     if (query.hasPage) {
-      const [data, total] = await Promise.all([
-        this.practice.listPracticeSessions(query.prismaQuery),
-        this.practice.countPracticeSessions(query.prismaQuery.where),
-      ]);
+      const { data, total = 0 } = await this.listSessions.execute(
+        query.prismaQuery,
+        true
+      );
       const totalPages = Math.ceil(total / query.limit);
       return response.json({
         data,
@@ -55,7 +61,7 @@ export class AdminPracticeSessionsController {
       });
     }
 
-    const data = await this.practice.listPracticeSessions({
+    const { data } = await this.listSessions.execute({
       where: query.prismaQuery.where,
       orderBy: query.prismaQuery.orderBy,
     });
@@ -68,11 +74,11 @@ export class AdminPracticeSessionsController {
 
   @Get(":id")
   get(@Param("id", ParseIntPipe) id: number) {
-    return this.practice.getPracticeSession(id);
+    return this.getSession.execute(id);
   }
 
   @Delete(":id")
   remove(@Param("id", ParseIntPipe) id: number) {
-    return this.practice.deletePracticeSession(id);
+    return this.removeSession.execute(id);
   }
 }

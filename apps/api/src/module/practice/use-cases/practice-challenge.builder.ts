@@ -1,10 +1,6 @@
-import {
-  Injectable,
-  NotFoundException,
-  UnauthorizedException,
-} from "@nestjs/common";
-import { PrismaService } from "../../database/prisma/prisma.service";
-import type { ChallengeOption } from "../courses";
+import { Injectable } from "@nestjs/common";
+import { PrismaService } from "../../../database/prisma/prisma.service";
+import type { ChallengeOption } from "../../courses";
 import {
   getBlankedExample,
   getDistractors,
@@ -13,7 +9,7 @@ import {
   type ReviewSourceItem,
   type UserVocabularyProgress,
   type VocabularyItem,
-} from "../vocabulary";
+} from "../../vocabulary";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";
 
@@ -52,16 +48,6 @@ export type WeakWordsPracticeChallenge = {
   challengeOptions: ChallengeOption[];
 };
 
-import { PracticeSessionResultInputDto } from "./dto/practice-session-result.dto";
-import type { Prisma } from "@prisma/client";
-import {
-  mapPracticeSession,
-  mapPracticeSessionDetail,
-} from "./practice-session.mapper";
-
-type practice_sessionsFindManyArgs = Prisma.practice_sessionsFindManyArgs;
-type practice_sessionsWhereInput = Prisma.practice_sessionsWhereInput;
-
 export const PRACTICE_WORDS_PER_LESSON = 15;
 const FALLBACK_POOL_COUNT = 400;
 export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
@@ -73,44 +59,8 @@ export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
 const WEAK_WORDS_LIMIT = 20;
 
 @Injectable()
-export class PracticeService {
+export class PracticeChallengeBuilder {
   constructor(private readonly prisma: PrismaService) {}
-
-  async listPracticeSessions(query?: practice_sessionsFindManyArgs) {
-    return (await this.prisma.practice_sessions.findMany(query)).map(
-      mapPracticeSession
-    );
-  }
-
-  async countPracticeSessions(where?: practice_sessionsWhereInput) {
-    return this.prisma.practice_sessions.count({ where });
-  }
-
-  async getPracticeSession(id: number) {
-    const session = await this.prisma.practice_sessions.findUnique({
-      where: { id },
-      include: {
-        items: {
-          include: {
-            vocabulary_items: true,
-          },
-        },
-      },
-    });
-
-    if (!session) {
-      throw new NotFoundException(`Practice session with ID ${id} not found`);
-    }
-
-    return mapPracticeSessionDetail(session);
-  }
-
-  async deletePracticeSession(id: number) {
-    const session = await this.prisma.practice_sessions.delete({
-      where: { id },
-    });
-    return mapPracticeSession(session);
-  }
 
   private shuffle<T>(items: T[]): T[] {
     return [...items].sort(() => Math.random() - 0.5);
@@ -960,47 +910,5 @@ export class PracticeService {
           : coreChallenges;
       })
     );
-  }
-
-  // --- Session Results Logic ---
-  async createPracticeSessionResult(
-    userId: string,
-    { mode, items }: PracticeSessionResultInputDto
-  ) {
-    if (!userId) throw new UnauthorizedException("TOKEN_INVALID");
-
-    const cleanItems = items.filter((item) => item.vocabularyItemId > 0);
-    if (cleanItems.length === 0) return null;
-
-    const correctCount = cleanItems.filter((item) => item.correct).length;
-    const wrongCount = cleanItems.length - correctCount;
-    const accuracy = Math.round((correctCount / cleanItems.length) * 100);
-
-    const session = await this.prisma.practice_sessions.create({
-      data: {
-        user_id: userId,
-        mode,
-        correct_count: correctCount,
-        wrong_count: wrongCount,
-        accuracy,
-        items: {
-          create: cleanItems.map((item) => ({
-            vocabulary_item_id: item.vocabularyItemId,
-            challenge_type: item.challengeType,
-            correct: item.correct,
-            answer: item.answer,
-          })),
-        },
-      },
-    });
-
-    return {
-      id: session.id,
-      mode: session.mode,
-      correctCount: session.correct_count,
-      wrongCount: session.wrong_count,
-      accuracy: session.accuracy,
-      createdAt: session.created_at,
-    };
   }
 }
