@@ -5,7 +5,7 @@ import { auth } from "../../auth/request-auth";
 import type {
   ChallengeOption,
   VocabularyItem,
-} from "../courses/courses.service";
+} from "../courses";
 import { mapVocabularyItem } from "../vocabulary/vocabulary-item.mapper";
 import {
   getBlankedExample,

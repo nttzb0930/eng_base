@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../prisma/prisma.service";
 import { auth } from "../../auth/request-auth";
-import type { VocabularyItem } from "../courses/courses.service";
+import type { VocabularyItem } from "../courses";
 import { mapVocabularyItem } from "../vocabulary/vocabulary-item.mapper";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";

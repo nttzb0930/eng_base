@@ -7,7 +7,7 @@ import jwtConfig from "./config/jwt.config";
 
 import { AdminModule } from "./module/admin/admin.module";
 import { DashboardModule } from "./module/dashboard/dashboard.module";
-import { CoursesModule } from "./module/courses/courses.module";
+import { CoursesModule } from "./module/courses";
 import { FlashcardsModule } from "./module/flashcards/flashcards.module";
 import { PracticeModule } from "./module/practice/practice.module";
 import { ReviewModule } from "./module/review/review.module";
@@ -48,4 +48,3 @@ import { HealthController } from "./health.controller";
   ],
 })
 export class AppModule {}
-

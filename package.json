@@ -5,10 +5,11 @@
   "packageManager": "pnpm@10.30.1",
   "scripts": {
     "dev": "turbo dev",
-    "dev:web": "pnpm --filter @repo/web dev",
-    "dev:admin": "pnpm --filter @repo/admin dev",
-    "dev:api": "pnpm --filter @repo/api start:dev",
+    "dev:web": "turbo run dev --filter=@repo/web...",
+    "dev:admin": "turbo run dev --filter=@repo/admin...",
+    "dev:api": "turbo run dev --filter=@repo/api...",
     "build": "turbo build",
+    "architecture:check": "turbo run architecture:check",
     "test": "turbo test",
     "test:api": "pnpm --filter @repo/api test",
     "test:web": "pnpm --filter @repo/web test",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "dotenv-cli": "^11.0.0",
     "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "0.6.14",
     "tsx": "4.23.0",
     "turbo": "^2.8.10"
   }

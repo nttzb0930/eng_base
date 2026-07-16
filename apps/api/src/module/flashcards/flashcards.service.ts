@@ -6,7 +6,7 @@ import type {
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "../courses/courses.service";
+} from "../courses";
 
 export type FlashcardSource = "due" | "saved" | "weak";
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;

@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../prisma/prisma.service";
-import { CoursesService } from "../courses/courses.service";
+import { CoursesService } from "../courses";
 import { auth } from "../../auth/request-auth";
 import { revalidatePath } from "../../support/revalidation";
 

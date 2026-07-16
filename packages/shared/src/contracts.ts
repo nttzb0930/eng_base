@@ -1,23 +1,20 @@
-export type Course = {
-  id: number;
-  title: string;
-  imageSrc: string;
-};
+import type {
+  CourseDto,
+  CourseLessonDto,
+  CourseUnitDto,
+  LessonChallengeDirection,
+  LessonChallengeOptionDto,
+  LessonChallengeType,
+} from "./courses/index.js";
 
-export type UnitRecord = {
-  id: number;
-  title: string;
-  description: string;
-  courseId: number;
-  order: number;
-};
+/** @deprecated Import CourseDto from @repo/shared/courses. */
+export type Course = CourseDto;
 
-export type LessonRecord = {
-  id: number;
-  title: string;
-  unitId: number;
-  order: number;
-};
+/** @deprecated Import CourseUnitDto from @repo/shared/courses. */
+export type UnitRecord = CourseUnitDto;
+
+/** @deprecated Import CourseLessonDto from @repo/shared/courses. */
+export type LessonRecord = CourseLessonDto;
 
 export type VocabularyExample = {
   id: number;
@@ -77,14 +74,8 @@ export type VocabularyItem = {
   vocabularyExamples: VocabularyExample[];
 };
 
-export type ChallengeOption = {
-  id: number;
-  challengeId: number;
-  text: string;
-  correct: boolean;
-  imageSrc: string | null;
-  audioSrc: string | null;
-};
+/** @deprecated Import LessonChallengeOptionDto from @repo/shared/courses. */
+export type ChallengeOption = LessonChallengeOptionDto;
 
 export type ChallengeProgress = {
   id: number;
@@ -97,8 +88,8 @@ export type Challenge = {
   id: number;
   lessonId: number;
   vocabularyItemId: number | null;
-  type: "SELECT" | "ASSIST";
-  direction: "EN_TO_VI" | "VI_TO_EN" | null;
+  type: LessonChallengeType;
+  direction: LessonChallengeDirection | null;
   question: string;
   order: number;
   challengeOptions: ChallengeOption[];
@@ -197,12 +188,7 @@ export type DictationPracticeChallenge = {
 
 export type ReviewChallenge = {
   id: number;
-  type:
-    | "SELECT"
-    | "ASSIST"
-    | "LISTEN_SELECT"
-    | "FILL_BLANK"
-    | "AUDIO_TO_TEXT";
+  type: "SELECT" | "ASSIST" | "LISTEN_SELECT" | "FILL_BLANK" | "AUDIO_TO_TEXT";
   direction: "EN_TO_VI" | "VI_TO_EN" | "AUDIO_TO_EN" | "CONTEXT_TO_EN";
   question: string;
   vocabularyItem: VocabularyItem;
@@ -348,9 +334,7 @@ export type PlacementTestConfirmed = {
 };
 
 export type PlacementTestResponse =
-  | PlacementTestQuestion
-  | PlacementTestCompleted
-  | PlacementTestConfirmed;
+  PlacementTestQuestion | PlacementTestCompleted | PlacementTestConfirmed;
 
 export type SubmitAnswerResponse =
   | { status: "IN_PROGRESS"; isCorrect: boolean }

@@ -3,6 +3,7 @@
   "ui": "tui",
   "tasks": {
     "dev": {
+      "dependsOn": ["^build"],
       "cache": false,
       "persistent": true
     },
@@ -10,8 +11,18 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "dist/**", "!.next/cache/**"]
     },
+    "architecture:check": {
+      "dependsOn": ["^build"]
+    },
+    "@repo/shared#architecture:check": {
+      "dependsOn": ["build"]
+    },
     "test": {
       "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "@repo/shared#test": {
+      "dependsOn": ["build"],
       "outputs": ["coverage/**"]
     },
     "lint": {

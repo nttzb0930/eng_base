@@ -7,7 +7,7 @@ import type {
   ChallengeOption,
   UserVocabularyProgress,
   VocabularyItem,
-} from "../courses/courses.service";
+} from "../courses";
 import { mapVocabularyItem } from "../vocabulary/vocabulary-item.mapper";
 import {
   getBlankedExample,

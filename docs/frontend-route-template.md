@@ -1,141 +1,72 @@
 # Frontend Route Template
 
-Template này dùng khi thêm route mới vào `apps/admin` hoặc `apps/web`.
+Use this **Web Base Standard 1.1.0** template for a new Admin or Web route.
 
-## Route Page
-
-`app/(group)/example/page.tsx`
+## Route adapter
 
 ```tsx
-import { ExampleView } from "@/src/views/example/example.view";
+// app/(group)/examples/page.tsx
+import { ExamplesView } from "@/src/features/examples";
 
-export default function ExamplePage() {
-  return <ExampleView />;
+export default function ExamplesPage() {
+  return <ExamplesView />;
 }
 ```
 
-Rule:
+The route imports the feature root, not `examples.view.tsx` or another private
+file. Keep it free of client state, API calls, table columns, domain constants,
+and form logic. Add `"use client"` to the owning feature component when needed,
+not to a route adapter without a framework-specific reason.
 
-- Không thêm `"use client"` vào `page.tsx`.
-- Không đặt UI logic, state, table columns, mock data hoặc helper function trong `page.tsx`.
-- `page.tsx` chỉ compose view.
+## Minimal feature
 
-## View Folder
-
-```txt
-src/views/example/
-├── example.view.tsx
-├── example.constants.ts
-├── example.types.ts
-├── example.utils.ts
-├── example.columns.tsx
-├── components/
-│   └── example-table.tsx
-└── index.ts
+```text
+src/features/examples/
+  index.ts
+  examples.view.tsx
 ```
-
-Không phải feature nào cũng cần đủ mọi file. Tạo file khi feature thật sự cần.
-
-## View
-
-`src/views/example/example.view.tsx`
-
-```tsx
-import { PageHeader } from "@/src/components/common/page-header";
-
-export function ExampleView() {
-  return (
-    <div className="space-y-6">
-      <PageHeader
-        description="Short description for the route."
-        eyebrow="Section"
-        title="Example"
-      />
-    </div>
-  );
-}
-```
-
-## Constants
-
-`src/views/example/example.constants.ts`
 
 ```ts
-export const exampleTabs = [
-  {
-    label: "Overview",
-    value: "overview",
-  },
-  {
-    label: "Settings",
-    value: "settings",
-  },
-] as const;
+// src/features/examples/index.ts
+export { ExamplesView } from "./examples.view";
 ```
 
-## Types
+As behavior grows, add only real boundaries:
 
-`src/views/example/example.types.ts`
-
-```ts
-export type ExampleViewMode = "table" | "cards";
-export type ExampleStatusFilter = "all" | "active" | "inactive";
+```text
+src/features/examples/
+  index.ts
+  api/example.client.ts
+  model/example.view-model.ts
+  catalog/
+    index.ts
+    example.queries.ts
+    examples.view.tsx
+    components/
+  tests/
 ```
 
-Rule: file này chỉ chứa type phục vụ view/local UI state. Type dữ liệu trả về từ API hoặc domain contract phải đặt trong `packages/shared/src/types`.
+Avoid the redundant `features/examples/examples/` name; choose a semantic child
+such as `catalog`, `editor`, or `settings`.
 
-## Utils
+## Type checklist
 
-`src/views/example/example.utils.ts`
+- JSON Request/DTO/schema shared with API: `@repo/shared/examples`.
+- Form, selection, modal, table, or enriched display state: feature-local model.
+- Component props: colocated with the component unless genuinely reused.
+- Prisma/generated API model: never imported by frontend code.
 
-```ts
-import type { ExampleItem } from "@/src/views/example/example.types";
+## Route checklist
 
-export function isExampleActive(item: ExampleItem) {
-  return item.status === "active";
-}
-```
+- [ ] `page.tsx` imports only `@/src/features/<capability>`.
+- [ ] The root `index.ts` only exports the intended public Interface.
+- [ ] Domain HTTP calls live inside the feature, using app HTTP infrastructure.
+- [ ] Private UI/hooks/state stay inside their smallest owner.
+- [ ] No new domain code was added under legacy `src/views`, `src/services`,
+      `src/types`, or `src/constants` buckets.
+- [ ] Localized routes preserve the active locale.
+- [ ] Tests cover the public behavior and import boundary.
+- [ ] Architecture, test, type, lint, and build gates pass.
 
-## Columns
-
-`src/views/example/example.columns.tsx`
-
-```tsx
-import type { ColumnDef } from "@tanstack/react-table";
-import type { ExampleItemSummary } from "@repo/shared";
-
-export const exampleColumns: ColumnDef<ExampleItemSummary>[] = [
-  {
-    accessorKey: "name",
-    header: "Name",
-  },
-  {
-    accessorKey: "status",
-    header: "Status",
-  },
-];
-```
-
-## Barrel
-
-`src/views/example/index.ts`
-
-```ts
-export * from "./example.view";
-export * from "./example.constants";
-export * from "./example.types";
-export * from "./example.utils";
-```
-
-Không viết implementation trong `index.ts`.
-
-## Checklist
-
-- [ ] `page.tsx` chỉ import view.
-- [ ] View nằm trong `src/views/<feature>`.
-- [ ] Feature component riêng nằm trong `src/views/<feature>/components`.
-- [ ] API/domain DTO được đặt trong `packages/shared/src/types`.
-- [ ] `<feature>.types.ts` chỉ chứa type phục vụ view/local UI state.
-- [ ] Component dùng lại nhiều view nằm trong `src/components/common`.
-- [ ] `index.ts` chỉ export.
-- [ ] Chạy `check-types`, `lint`, `build` cho app bị ảnh hưởng.
+See [Frontend folder structure](frontend-folder-structure.md) and
+[Course content architecture](architecture/course-content.md).

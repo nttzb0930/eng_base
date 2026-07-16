@@ -1,4 +1,4 @@
-import type { VocabularyItem } from "../courses/courses.service";
+import type { VocabularyItem } from "../courses";
 
 export type ReviewSourceItem = Pick<
   VocabularyItem,

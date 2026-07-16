@@ -9,7 +9,7 @@ import type {
   UserVocabularyProgress,
   VocabularyExample,
   VocabularyItem,
-} from "../courses/courses.service";
+} from "../courses";
 
 export type VocabularyItemRecord = vocabulary_itemsModel & {
   user_saved_words?: user_saved_wordsModel[];

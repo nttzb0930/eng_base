@@ -1,4 +1,4 @@
-import { CoursesView } from "@/src/views/courses/courses.view";
+import { CoursesView } from "@/src/features/courses";
 
 export default function CoursesPage() {
   return <CoursesView />;

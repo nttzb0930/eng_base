@@ -2,6 +2,14 @@ import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../prisma/prisma.service";
 import { auth } from "../../auth/request-auth";
 import type {
+  CourseDto,
+  CourseLessonDto,
+  CourseUnitDto,
+  LessonChallengeDirection,
+  LessonChallengeOptionDto,
+  LessonChallengeType,
+} from "@repo/shared/courses";
+import type {
   challenge_optionsModel,
   challenge_progressModel,
   challengesModel,
@@ -15,26 +23,9 @@ import type {
   vocabulary_itemsModel,
 } from "../../generated/prisma/models";
 
-export type Course = {
-  id: number;
-  title: string;
-  imageSrc: string;
-};
-
-export type UnitRecord = {
-  id: number;
-  title: string;
-  description: string;
-  courseId: number;
-  order: number;
-};
-
-export type LessonRecord = {
-  id: number;
-  title: string;
-  unitId: number;
-  order: number;
-};
+export type Course = CourseDto;
+export type UnitRecord = CourseUnitDto;
+export type LessonRecord = CourseLessonDto;
 
 export type VocabularyItem = {
   id: number;
@@ -94,14 +85,7 @@ export type UserSavedWord = {
   createdAt: Date;
 };
 
-export type ChallengeOption = {
-  id: number;
-  challengeId: number;
-  text: string;
-  correct: boolean;
-  imageSrc: string | null;
-  audioSrc: string | null;
-};
+export type ChallengeOption = LessonChallengeOptionDto;
 
 export type ChallengeProgress = {
   id: number;
@@ -114,8 +98,8 @@ export type Challenge = {
   id: number;
   lessonId: number;
   vocabularyItemId: number | null;
-  type: "SELECT" | "ASSIST";
-  direction: "EN_TO_VI" | "VI_TO_EN" | null;
+  type: LessonChallengeType;
+  direction: LessonChallengeDirection | null;
   question: string;
   order: number;
   challengeOptions: ChallengeOption[];
