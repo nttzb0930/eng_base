@@ -1,6 +1,5 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 import { mapVocabularyItem, type VocabularyItem } from "../vocabulary";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";
@@ -119,8 +118,7 @@ export class TopicsService {
     };
   }
 
-  async getVocabularyTopics() {
-    const { userId } = await auth();
+  async getVocabularyTopics(userId: string) {
     const topics = await this.getRawTopics();
 
     const cards = await Promise.all(
@@ -145,8 +143,7 @@ export class TopicsService {
     return cards.filter((topic) => topic.total > 0);
   }
 
-  async getVocabularyTopicBySlug(slug: string, level?: string) {
-    const { userId } = await auth();
+  async getVocabularyTopicBySlug(userId: string, slug: string, level?: string) {
     const normalizedLevel = this.normalizePracticeCefrLevel(level);
     const topic = await this.getRawTopicBySlug(slug);
 

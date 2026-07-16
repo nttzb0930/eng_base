@@ -1,6 +1,5 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 import type {
   UserSavedWord,
   UserVocabularyProgress,
@@ -194,9 +193,7 @@ export class FlashcardsService {
     });
   }
 
-  async getFlashcardDeckSummary() {
-    const { userId } = await auth();
-
+  async getFlashcardDeckSummary(userId: string) {
     if (!userId) {
       return {
         due: 0,
@@ -258,9 +255,7 @@ export class FlashcardsService {
     };
   }
 
-  async getFlashcardSessionItems(deckValue?: string) {
-    const { userId } = await auth();
-
+  async getFlashcardSessionItems(userId: string, deckValue?: string) {
     if (!userId) return [];
 
     const deck = this.normalizeFlashcardDeck(deckValue);

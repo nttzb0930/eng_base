@@ -1,18 +1,20 @@
-import { Injectable, BadRequestException, NotFoundException } from "@nestjs/common";
+import {
+  Injectable,
+  BadRequestException,
+  NotFoundException,
+} from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 import { PlacementTestResponse, SubmitAnswerResponse } from "@repo/shared";
 import { Prisma } from "@prisma/client";
 
 @Injectable()
 export class PlacementTestService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   /**
    * Lấy câu hỏi tiếp theo cho bài Placement Test thích ứng
    */
-  async getNextQuestion(): Promise<PlacementTestResponse> {
-    const { userId } = await auth();
+  async getNextQuestion(userId: string): Promise<PlacementTestResponse> {
     if (!userId) throw new BadRequestException("Unauthorized");
 
     // 1. Tìm hoặc tạo session
@@ -86,12 +88,14 @@ export class PlacementTestService {
     const targetIndex = Math.max(0, Math.min(3, roundedLevelScore - 1));
 
     // Khử trùng các cấp độ thử nghiệm fallback
-    const levelFallbacks = [...new Set([
-      cefrLevels[targetIndex],
-      cefrLevels[Math.max(0, targetIndex - 1)],
-      cefrLevels[Math.min(3, targetIndex + 1)],
-      ...cefrLevels.filter((_, idx) => Math.abs(idx - targetIndex) > 1),
-    ])];
+    const levelFallbacks = [
+      ...new Set([
+        cefrLevels[targetIndex],
+        cefrLevels[Math.max(0, targetIndex - 1)],
+        cefrLevels[Math.min(3, targetIndex + 1)],
+        ...cefrLevels.filter((_, idx) => Math.abs(idx - targetIndex) > 1),
+      ]),
+    ];
 
     let challenge = null;
 
@@ -144,7 +148,10 @@ export class PlacementTestService {
         word: challenge.vocabulary_items?.word ?? null,
         primaryMeaningVi:
           challenge.vocabulary_items?.primary_meaning_vi ?? null,
-        options: challenge.challenge_options.map((opt) => ({ id: opt.id, text: opt.text })),
+        options: challenge.challenge_options.map((opt) => ({
+          id: opt.id,
+          text: opt.text,
+        })),
         audioUrl: challenge.vocabulary_items?.audio_url || null,
       },
     };
@@ -153,8 +160,11 @@ export class PlacementTestService {
   /**
    * Submit câu trả lời của người dùng
    */
-  async submitAnswer(challengeId: number, selectedOptionId: number): Promise<SubmitAnswerResponse> {
-    const { userId } = await auth();
+  async submitAnswer(
+    userId: string,
+    challengeId: number,
+    selectedOptionId: number
+  ): Promise<SubmitAnswerResponse> {
     if (!userId) throw new BadRequestException("Unauthorized");
 
     const session = await this.prisma.placement_test_sessions.findUnique({
@@ -277,8 +287,15 @@ export class PlacementTestService {
   /**
    * Xác nhận cấp độ bắt đầu học
    */
-  async confirmLevel(level: string, languages?: string[], goals?: string[], intensity?: string, primaryLanguage?: string, customGoal?: string) {
-    const { userId } = await auth();
+  async confirmLevel(
+    userId: string,
+    level: string,
+    languages?: string[],
+    goals?: string[],
+    intensity?: string,
+    primaryLanguage?: string,
+    customGoal?: string
+  ) {
     if (!userId) throw new BadRequestException("Unauthorized");
 
     const session = await this.prisma.placement_test_sessions.findUnique({
@@ -322,7 +339,9 @@ export class PlacementTestService {
     if (!defaultCourse) throw new NotFoundException("Course not found");
 
     // Cập nhật/Tạo mới user_progress
-    const dbUser = await this.prisma.users.findUnique({ where: { id: userId } });
+    const dbUser = await this.prisma.users.findUnique({
+      where: { id: userId },
+    });
     const userName = dbUser?.full_name || dbUser?.username || "User";
 
     await this.prisma.user_progress.upsert({
@@ -396,8 +415,7 @@ export class PlacementTestService {
   /**
    * Lưu trạng thái tiến trình onboarding vào database
    */
-  async updateOnboardingState(step: number, data: any) {
-    const { userId } = await auth();
+  async updateOnboardingState(userId: string, step: number, data: any) {
     if (!userId) throw new BadRequestException("Unauthorized");
 
     let session = await this.prisma.placement_test_sessions.findUnique({
@@ -430,8 +448,7 @@ export class PlacementTestService {
   /**
    * Reset session kiểm tra để làm lại bài test thích ứng
    */
-  async resetTest() {
-    const { userId } = await auth();
+  async resetTest(userId: string) {
     if (!userId) throw new BadRequestException("Unauthorized");
 
     // Xóa session placement test

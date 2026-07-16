@@ -1,6 +1,5 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 import {
   mapSavedWord,
   mapVocabularyItem,
@@ -93,9 +92,7 @@ export class VocabularyService {
 
   private revalidateVocabularyProgressPaths() {}
 
-  async getSavedVocabularyWords() {
-    const { userId } = await auth();
-
+  async getSavedVocabularyWords(userId: string) {
     if (!userId) return [];
 
     const data = await this.prisma.user_saved_words.findMany({
@@ -121,9 +118,7 @@ export class VocabularyService {
     }));
   }
 
-  async toggleSavedWord(vocabularyItemId: number) {
-    const { userId } = await auth();
-
+  async toggleSavedWord(userId: string, vocabularyItemId: number) {
     if (!userId) throw new Error("Unauthorized.");
 
     const vocabularyItem = await this.prisma.vocabulary_items.findUnique({
@@ -158,11 +153,10 @@ export class VocabularyService {
   }
 
   async recordVocabularyReviewResult(
+    userId: string,
     vocabularyItemId: number,
     correct: boolean
   ) {
-    const { userId } = await auth();
-
     if (!userId) throw new Error("Unauthorized.");
 
     const existingProgress =
@@ -234,11 +228,10 @@ export class VocabularyService {
   }
 
   async recordFlashcardRating(
+    userId: string,
     vocabularyItemId: number,
     rating: FlashcardRating
   ) {
-    const { userId } = await auth();
-
     if (!userId) throw new Error("Unauthorized.");
 
     const existingProgress =

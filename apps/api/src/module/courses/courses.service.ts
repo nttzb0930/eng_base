@@ -1,6 +1,5 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 import type {
   CourseDto,
   CourseLessonDto,
@@ -295,11 +294,7 @@ export class CoursesService {
     return data.map((x) => this.mapCourse(x));
   }
 
-  async getUserProgress() {
-    const { userId } = await auth();
-
-    if (!userId) return null;
-
+  async getUserProgress(userId: string) {
     const data = await this.prisma.user_progress.findUnique({
       where: { user_id: userId },
       include: {
@@ -339,11 +334,10 @@ export class CoursesService {
     return this.mapUserProgress(syncedProgress, isConfirmed);
   }
 
-  async getUnits() {
-    const { userId } = await auth();
-    const userProgress = await this.getUserProgress();
+  async getUnits(userId: string) {
+    const userProgress = await this.getUserProgress(userId);
 
-    if (!userId || !userProgress?.activeCourseId) return [];
+    if (!userProgress?.activeCourseId) return [];
 
     const data = await this.prisma.units.findMany({
       where: { course_id: userProgress.activeCourseId },
@@ -414,11 +408,10 @@ export class CoursesService {
     };
   }
 
-  async getCourseProgress() {
-    const { userId } = await auth();
-    const userProgress = await this.getUserProgress();
+  async getCourseProgress(userId: string) {
+    const userProgress = await this.getUserProgress(userId);
 
-    if (!userId || !userProgress?.activeCourseId) return null;
+    if (!userProgress?.activeCourseId) return null;
 
     const unitsInActiveCourse = await this.prisma.units.findMany({
       where: { course_id: userProgress.activeCourseId },
@@ -470,12 +463,8 @@ export class CoursesService {
     };
   }
 
-  async getLesson(id?: number) {
-    const { userId } = await auth();
-
-    if (!userId) return null;
-
-    const courseProgress = await this.getCourseProgress();
+  async getLesson(userId: string, id?: number) {
+    const courseProgress = await this.getCourseProgress(userId);
     const lessonId = id || courseProgress?.activeLessonId;
 
     if (!lessonId) return null;
@@ -522,12 +511,12 @@ export class CoursesService {
     return { ...lesson, challenges: normalizedChallenges };
   }
 
-  async getLessonPercentage() {
-    const courseProgress = await this.getCourseProgress();
+  async getLessonPercentage(userId: string) {
+    const courseProgress = await this.getCourseProgress(userId);
 
     if (!courseProgress?.activeLessonId) return 0;
 
-    const lesson = await this.getLesson(courseProgress?.activeLessonId);
+    const lesson = await this.getLesson(userId, courseProgress?.activeLessonId);
 
     if (!lesson) return 0;
 
@@ -541,10 +530,6 @@ export class CoursesService {
   }
 
   async getTopTenUsers() {
-    const { userId } = await auth();
-
-    if (!userId) return [];
-
     const data = await this.prisma.user_progress.findMany({
       orderBy: { points: "desc" },
       take: 10,

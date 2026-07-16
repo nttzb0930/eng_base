@@ -30,9 +30,10 @@ test("Auth Module separates behavior from delivery infrastructure", () => {
 
   assert.ok(existsSync(join(sourceRoot, "common/guards/admin-jwt.guard.ts")));
   assert.ok(existsSync(join(sourceRoot, "common/guards/user-jwt.guard.ts")));
+  assert.equal(existsSync(join(sourceRoot, "common/auth-context")), false);
   assert.ok(
     existsSync(
-      join(sourceRoot, "common/auth-context/auth-context.interceptor.ts")
+      join(sourceRoot, "common/decorators/current-user-id.decorator.ts")
     )
   );
   assert.equal(
@@ -44,6 +45,28 @@ test("Auth Module separates behavior from delivery infrastructure", () => {
     false
   );
   assert.ok(existsSync(join(authRoot, "admin-auth.controller.ts")));
+});
+
+test("Actor identity is delivered explicitly and ambient auth is forbidden", () => {
+  const sources = [
+    "module/courses/courses.service.ts",
+    "module/dashboard/dashboard.service.ts",
+    "module/flashcards/flashcards.service.ts",
+    "module/placement-test/placement-test.service.ts",
+    "module/practice/practice.service.ts",
+    "module/progress/progress.service.ts",
+    "module/review/review.service.ts",
+    "module/topics/topics.service.ts",
+    "module/vocabulary/vocabulary.service.ts",
+  ];
+
+  for (const file of sources) {
+    const source = readFileSync(join(sourceRoot, file), "utf8");
+    assert.doesNotMatch(source, /auth-context|\bauth\s*\(\s*\)/, file);
+  }
+
+  const appModule = readFileSync(join(sourceRoot, "app.module.ts"), "utf8");
+  assert.doesNotMatch(appModule, /AuthContextInterceptor/);
 });
 
 test("Auth delivery adapters delegate instead of owning persistence and crypto", () => {

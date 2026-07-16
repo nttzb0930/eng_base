@@ -1,6 +1,6 @@
 # Project Context
 
-The architecture baseline is **Web Base Standard 1.4.0**, adopted incrementally.
+The architecture baseline is **Web Base Standard 1.5.0**, adopted incrementally.
 Legacy modules may remain until their behavior is covered and moved; new code
 must follow the capability-first rules in `docs/architecture/codebase-structure.md`.
 
@@ -34,8 +34,9 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - The API persistence Adapter lives under `src/database/prisma`; persistence
   models come only from the generated `@prisma/client` Interface.
 - Authentication behavior is organized by user goal under `module/auth`; Nest
-  guards and request identity propagation are delivery infrastructure under
-  `common`.
+  guards and request identity extraction are delivery infrastructure under
+  `common`. Actor identity is passed explicitly into behavior; ambient request
+  context is forbidden.
 - Shared packages must not import from applications.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
 - `packages/shared` is a transitional aggregator. New contracts use capability subpaths rather than expanding the legacy root barrel; the package name remains unchanged under ADR 0011.
@@ -48,6 +49,8 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - Vocabulary owns vocabulary item/progress/example types and the mapping and
   challenge-building implementation used by learning flows.
 - Add seams only when there are at least two real adapters, such as Prisma in production and an in-memory repository in tests.
+- A use case represents one goal. Plural CRUD/management use-case aggregates
+  and compatibility facades that only forward to goal use cases are forbidden.
 - Tests verify observable behavior through public interfaces, not private helpers or implementation layout.
 
 ## Compatibility constraints

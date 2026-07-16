@@ -1,6 +1,6 @@
 # Agent Workflow
 
-This repository follows **Web Base Standard 1.4.0**. Read `CONTEXT.md`, the
+This repository follows **Web Base Standard 1.5.0**. Read `CONTEXT.md`, the
 relevant document in `docs/architecture/`, and accepted ADRs before changing an
 owned capability or a public Interface.
 

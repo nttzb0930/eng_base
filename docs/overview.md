@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This repository applies **Web Base Standard 1.4.0** to a three-app pnpm/Turborepo
+This repository applies **Web Base Standard 1.5.0** to a three-app pnpm/Turborepo
 workspace:
 
 - `apps/api` exposes HTTP, owns business behavior, Prisma, and PostgreSQL.

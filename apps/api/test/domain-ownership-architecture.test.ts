@@ -18,10 +18,7 @@ test("Admin delivery belongs to its business owner", () => {
   );
   assert.ok(
     existsSync(
-      join(
-        sourceRoot,
-        "module/practice/admin-practice-sessions.controller.ts"
-      )
+      join(sourceRoot, "module/practice/admin-practice-sessions.controller.ts")
     )
   );
   assert.ok(
@@ -35,14 +32,30 @@ test("Course Management is organized inside the Courses owner", () => {
     ? readdirSync(managementRoot, { recursive: true })
     : [];
   assert.deepEqual(managementFiles, []);
-  assert.ok(
+  for (const controller of [
+    "admin-courses.controller.ts",
+    "admin-units.controller.ts",
+    "admin-lessons.controller.ts",
+    "admin-challenges.controller.ts",
+    "admin-challenge-options.controller.ts",
+  ]) {
+    assert.ok(existsSync(join(sourceRoot, "module/courses", controller)));
+  }
+  assert.equal(
     existsSync(
       join(sourceRoot, "module/courses/admin-course-content.controller.ts")
-    )
+    ),
+    false
   );
   assert.ok(existsSync(join(sourceRoot, "module/courses/dto")));
   assert.ok(existsSync(join(sourceRoot, "module/courses/mappers")));
   assert.ok(existsSync(join(sourceRoot, "module/courses/use-cases")));
+  assert.equal(
+    readdirSync(join(sourceRoot, "module/courses/use-cases")).filter((file) =>
+      /^(list|get|create|update|remove)-admin-.*\.use-case\.ts$/.test(file)
+    ).length,
+    25
+  );
   assert.ok(existsSync(join(sourceRoot, "module/courses/tests")));
 });
 
@@ -54,9 +67,7 @@ test("Vocabulary owns its types, mappers, builders and tests", () => {
     existsSync(join(vocabularyRoot, "mappers/vocabulary-item.mapper.ts"))
   );
   assert.ok(
-    existsSync(
-      join(vocabularyRoot, "builders/vocabulary-challenge.builder.ts")
-    )
+    existsSync(join(vocabularyRoot, "builders/vocabulary-challenge.builder.ts"))
   );
   assert.ok(
     existsSync(join(vocabularyRoot, "tests/vocabulary-item.mapper.spec.ts"))

@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Post, Query, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { PracticeService } from "./practice.service";
 import { PracticeSessionResultInputDto } from "./dto/practice-session-result.dto";
 
@@ -9,56 +10,74 @@ export class PracticeController {
   constructor(private readonly practiceService: PracticeService) {}
 
   @Get("fill-blank/summary")
-  getFillBlankSummary() {
-    return this.practiceService.getFillBlankPracticeLevelSummary();
+  getFillBlankSummary(@CurrentUserId() userId: string) {
+    return this.practiceService.getFillBlankPracticeLevelSummary(userId);
   }
 
   @Get("fill-blank/challenges")
   getFillBlankChallenges(
+    @CurrentUserId() userId: string,
     @Query("level") level?: string,
     @Query("lesson") lesson?: string
   ) {
-    return this.practiceService.getFillBlankPracticeChallenges(level, lesson);
+    return this.practiceService.getFillBlankPracticeChallenges(
+      userId,
+      level,
+      lesson
+    );
   }
 
   @Get("listening/summary")
-  getListeningSummary() {
-    return this.practiceService.getListeningPracticeLevelSummary();
+  getListeningSummary(@CurrentUserId() userId: string) {
+    return this.practiceService.getListeningPracticeLevelSummary(userId);
   }
 
   @Get("listening/challenges")
   getListeningChallenges(
+    @CurrentUserId() userId: string,
     @Query("level") level?: string,
     @Query("lesson") lesson?: string
   ) {
-    return this.practiceService.getListeningPracticeChallenges(level, lesson);
+    return this.practiceService.getListeningPracticeChallenges(
+      userId,
+      level,
+      lesson
+    );
   }
 
   @Get("dictation/summary")
-  getDictationSummary() {
-    return this.practiceService.getDictationPracticeLevelSummary();
+  getDictationSummary(@CurrentUserId() userId: string) {
+    return this.practiceService.getDictationPracticeLevelSummary(userId);
   }
 
   @Get("dictation/challenges")
   getDictationChallenges(
+    @CurrentUserId() userId: string,
     @Query("level") level?: string,
     @Query("lesson") lesson?: string
   ) {
-    return this.practiceService.getDictationPracticeChallenges(level, lesson);
+    return this.practiceService.getDictationPracticeChallenges(
+      userId,
+      level,
+      lesson
+    );
   }
 
   @Get("weak-words/summary")
-  getWeakWordsSummary() {
-    return this.practiceService.getWeakWordsPracticeSummary();
+  getWeakWordsSummary(@CurrentUserId() userId: string) {
+    return this.practiceService.getWeakWordsPracticeSummary(userId);
   }
 
   @Get("weak-words/challenges")
-  getWeakWordsChallenges() {
-    return this.practiceService.getWeakWordsPracticeChallenges();
+  getWeakWordsChallenges(@CurrentUserId() userId: string) {
+    return this.practiceService.getWeakWordsPracticeChallenges(userId);
   }
 
   @Post("sessions")
-  createSession(@Body() body: PracticeSessionResultInputDto) {
-    return this.practiceService.createPracticeSessionResult(body);
+  createSession(
+    @CurrentUserId() userId: string,
+    @Body() body: PracticeSessionResultInputDto
+  ) {
+    return this.practiceService.createPracticeSessionResult(userId, body);
   }
 }

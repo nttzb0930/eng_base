@@ -1,7 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 import type { ChallengeOption } from "../courses";
 import {
   getBlankedExample,
@@ -190,9 +189,7 @@ export class PracticeService {
     return this.shuffle(eligibleItems);
   }
 
-  async getFillBlankPracticeLevelSummary() {
-    const { userId } = await auth();
-
+  async getFillBlankPracticeLevelSummary(userId: string) {
     // Lấy trình độ đã xác nhận của người dùng (mặc định là A1)
     const session = userId
       ? await this.prisma.placement_test_sessions.findUnique({
@@ -303,8 +300,11 @@ export class PracticeService {
     >;
   }
 
-  async getFillBlankPracticeChallenges(level?: string, lesson?: string) {
-    const { userId } = await auth();
+  async getFillBlankPracticeChallenges(
+    userId: string,
+    level?: string,
+    lesson?: string
+  ) {
     const normalizedLevel = this.normalizePracticeCefrLevel(level);
     const lessonNumber = this.normalizePracticeLessonNumber(lesson);
 
@@ -393,9 +393,7 @@ export class PracticeService {
     });
   }
 
-  async getListeningPracticeLevelSummary() {
-    const { userId } = await auth();
-
+  async getListeningPracticeLevelSummary(userId: string) {
     // Lấy trình độ đã xác nhận của người dùng (mặc định là A1)
     const session = userId
       ? await this.prisma.placement_test_sessions.findUnique({
@@ -515,8 +513,11 @@ export class PracticeService {
     });
   }
 
-  async getListeningPracticeChallenges(level?: string, lesson?: string) {
-    const { userId } = await auth();
+  async getListeningPracticeChallenges(
+    userId: string,
+    level?: string,
+    lesson?: string
+  ) {
     const normalizedLevel = this.normalizePracticeCefrLevel(level);
     const lessonNumber = this.normalizePracticeLessonNumber(lesson);
 
@@ -599,9 +600,7 @@ export class PracticeService {
     });
   }
 
-  async getDictationPracticeLevelSummary() {
-    const { userId } = await auth();
-
+  async getDictationPracticeLevelSummary(userId: string) {
     // Lấy trình độ đã xác nhận của người dùng (mặc định là A1)
     const session = userId
       ? await this.prisma.placement_test_sessions.findUnique({
@@ -721,8 +720,11 @@ export class PracticeService {
     });
   }
 
-  async getDictationPracticeChallenges(level?: string, lesson?: string) {
-    const { userId } = await auth();
+  async getDictationPracticeChallenges(
+    userId: string,
+    level?: string,
+    lesson?: string
+  ) {
     const normalizedLevel = this.normalizePracticeCefrLevel(level);
     const lessonNumber = this.normalizePracticeLessonNumber(lesson);
 
@@ -777,9 +779,7 @@ export class PracticeService {
     });
   }
 
-  async getWeakWordsPracticeSummary() {
-    const { userId } = await auth();
-
+  async getWeakWordsPracticeSummary(userId: string) {
     if (!userId) {
       return {
         total: 0,
@@ -807,9 +807,7 @@ export class PracticeService {
     );
   }
 
-  async getWeakWordsPracticeChallenges() {
-    const { userId } = await auth();
-
+  async getWeakWordsPracticeChallenges(userId: string) {
     if (!userId) return [];
 
     const progressRows = await this.getWeakVocabularyProgressRows(userId);
@@ -962,12 +960,10 @@ export class PracticeService {
   }
 
   // --- Session Results Logic ---
-  async createPracticeSessionResult({
-    mode,
-    items,
-  }: PracticeSessionResultInputDto) {
-    const { userId } = await auth();
-
+  async createPracticeSessionResult(
+    userId: string,
+    { mode, items }: PracticeSessionResultInputDto
+  ) {
     if (!userId) throw new Error("Unauthorized.");
 
     const cleanItems = items.filter((item) => item.vocabularyItemId > 0);

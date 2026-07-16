@@ -1,5 +1,6 @@
 import { Controller, Get, Param, Query, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { TopicsService } from "./topics.service";
 
 @Controller("topics")
@@ -8,12 +9,16 @@ export class TopicsController {
   constructor(private readonly topicsService: TopicsService) {}
 
   @Get()
-  getTopics() {
-    return this.topicsService.getVocabularyTopics();
+  getTopics(@CurrentUserId() userId: string) {
+    return this.topicsService.getVocabularyTopics(userId);
   }
 
   @Get(":slug")
-  getTopicBySlug(@Param("slug") slug: string, @Query("level") level?: string) {
-    return this.topicsService.getVocabularyTopicBySlug(slug, level);
+  getTopicBySlug(
+    @CurrentUserId() userId: string,
+    @Param("slug") slug: string,
+    @Query("level") level?: string
+  ) {
+    return this.topicsService.getVocabularyTopicBySlug(userId, slug, level);
   }
 }

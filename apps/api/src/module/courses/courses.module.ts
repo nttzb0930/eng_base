@@ -6,8 +6,12 @@ import { UnitsController } from "./units.controller";
 import { LessonsController } from "./lessons.controller";
 import { LeaderboardController } from "./leaderboard.controller";
 import { CoursesService } from "./courses.service";
-import { AdminCourseContentController } from "./admin-course-content.controller";
-import { CourseContentManagementUseCases } from "./use-cases/course-content-management.use-cases";
+import { AdminCoursesController } from "./admin-courses.controller";
+import { AdminUnitsController } from "./admin-units.controller";
+import { AdminLessonsController } from "./admin-lessons.controller";
+import { AdminChallengesController } from "./admin-challenges.controller";
+import { AdminChallengeOptionsController } from "./admin-challenge-options.controller";
+import { ADMIN_COURSE_CONTENT_USE_CASES } from "./use-cases";
 
 @Module({
   controllers: [
@@ -15,11 +19,15 @@ import { CourseContentManagementUseCases } from "./use-cases/course-content-mana
     UnitsController,
     LessonsController,
     LeaderboardController,
-    AdminCourseContentController,
+    AdminCoursesController,
+    AdminUnitsController,
+    AdminLessonsController,
+    AdminChallengesController,
+    AdminChallengeOptionsController,
   ],
   providers: [
     CoursesService,
-    CourseContentManagementUseCases,
+    ...ADMIN_COURSE_CONTENT_USE_CASES,
     UserJwtGuard,
     AdminJwtGuard,
   ],

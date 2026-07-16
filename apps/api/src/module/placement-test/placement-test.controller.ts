@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Body, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { PlacementTestService } from "./placement-test.service";
 import { IsNumber, IsString, IsArray, IsOptional } from "class-validator";
 
@@ -52,21 +53,23 @@ export class PlacementTestController {
   constructor(private readonly placementTestService: PlacementTestService) {}
 
   @Get("question")
-  getNextQuestion() {
-    return this.placementTestService.getNextQuestion();
+  getNextQuestion(@CurrentUserId() userId: string) {
+    return this.placementTestService.getNextQuestion(userId);
   }
 
   @Post("answer")
-  submitAnswer(@Body() body: SubmitAnswerDto) {
+  submitAnswer(@CurrentUserId() userId: string, @Body() body: SubmitAnswerDto) {
     return this.placementTestService.submitAnswer(
+      userId,
       body.challengeId,
       body.selectedOptionId
     );
   }
 
   @Post("confirm")
-  confirmLevel(@Body() body: ConfirmLevelDto) {
+  confirmLevel(@CurrentUserId() userId: string, @Body() body: ConfirmLevelDto) {
     return this.placementTestService.confirmLevel(
+      userId,
       body.level,
       body.languages,
       body.goals,
@@ -77,13 +80,17 @@ export class PlacementTestController {
   }
 
   @Post("reset")
-  resetTest() {
-    return this.placementTestService.resetTest();
+  resetTest(@CurrentUserId() userId: string) {
+    return this.placementTestService.resetTest(userId);
   }
 
   @Post("onboarding")
-  updateOnboarding(@Body() body: UpdateOnboardingDto) {
+  updateOnboarding(
+    @CurrentUserId() userId: string,
+    @Body() body: UpdateOnboardingDto
+  ) {
     return this.placementTestService.updateOnboardingState(
+      userId,
       body.step,
       body.data
     );

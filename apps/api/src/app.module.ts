@@ -3,7 +3,6 @@ import { APP_FILTER, APP_INTERCEPTOR } from "@nestjs/core";
 import { ConfigModule } from "@nestjs/config";
 
 import { AuthModule } from "./module/auth";
-import { AuthContextInterceptor } from "./common/auth-context";
 import { AllExceptionsFilter } from "./common/filters/all-exceptions.filter";
 import { HttpLoggingInterceptor } from "./common/interceptors/http-logging.interceptor";
 import { LoggingModule } from "./common/logging";
@@ -51,10 +50,6 @@ import { HealthModule } from "./module/health";
     {
       provide: APP_INTERCEPTOR,
       useClass: HttpLoggingInterceptor,
-    },
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: AuthContextInterceptor,
     },
     {
       provide: APP_FILTER,

@@ -1,7 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { VocabularyService } from "../vocabulary";
-import { auth } from "../../common/auth-context";
 import type { ChallengeOption } from "../courses";
 import {
   getBlankedExample,
@@ -214,18 +213,7 @@ export class ReviewService {
     };
   }
 
-  async getDailyReviewSummary() {
-    const { userId } = await auth();
-
-    if (!userId) {
-      return {
-        total: 0,
-        due: 0,
-        weak: 0,
-        saved: 0,
-      };
-    }
-
+  async getDailyReviewSummary(userId: string) {
     const candidateIds = await this.getDailyReviewCandidateIds(userId);
 
     return {
@@ -236,11 +224,7 @@ export class ReviewService {
     };
   }
 
-  async getDailyReviewChallenges() {
-    const { userId } = await auth();
-
-    if (!userId) return [];
-
+  async getDailyReviewChallenges(userId: string) {
     const candidateIds = await this.getDailyReviewCandidateIds(userId);
     const vocabularyItems = (
       await this.getDailyReviewVocabularyItems(userId, candidateIds.selectedIds)
@@ -374,8 +358,9 @@ export class ReviewService {
   }
 
   // --- Saved Words Review logic ---
-  async getSavedWordsReviewSummary() {
-    const savedWords = await this.vocabularyService.getSavedVocabularyWords();
+  async getSavedWordsReviewSummary(userId: string) {
+    const savedWords =
+      await this.vocabularyService.getSavedVocabularyWords(userId);
 
     return savedWords.reduce(
       (summary, savedWord) => {
@@ -403,8 +388,12 @@ export class ReviewService {
     );
   }
 
-  async getSavedWordReviewChallenges(mode: SavedWordsReviewMode = "all") {
-    const savedWords = await this.vocabularyService.getSavedVocabularyWords();
+  async getSavedWordReviewChallenges(
+    userId: string,
+    mode: SavedWordsReviewMode = "all"
+  ) {
+    const savedWords =
+      await this.vocabularyService.getSavedVocabularyWords(userId);
 
     if (savedWords.length === 0) return [];
 

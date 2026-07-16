@@ -1,33 +1,32 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { CoursesService } from "../courses";
-import { auth } from "../../common/auth-context";
 
 @Injectable()
 export class ProgressService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly coursesService: CoursesService
-  ) { }
+  ) {}
 
-  async getUserProgress() {
-    return this.coursesService.getUserProgress();
+  async getUserProgress(userId: string) {
+    return this.coursesService.getUserProgress(userId);
   }
 
-  async getCourseProgress() {
-    return this.coursesService.getCourseProgress();
+  async getCourseProgress(userId: string) {
+    return this.coursesService.getCourseProgress(userId);
   }
 
-  async getLessonPercentage() {
-    return this.coursesService.getLessonPercentage();
+  async getLessonPercentage(userId: string) {
+    return this.coursesService.getLessonPercentage(userId);
   }
 
-  async upsertUserProgress(courseId: number) {
-    const { userId } = await auth();
-
+  async upsertUserProgress(userId: string, courseId: number) {
     if (!userId) throw new Error("Unauthorized.");
 
-    const dbUser = await this.prisma.users.findUnique({ where: { id: userId } });
+    const dbUser = await this.prisma.users.findUnique({
+      where: { id: userId },
+    });
     if (!dbUser) throw new Error("User not found.");
 
     const course = await this.coursesService.getCourseById(courseId);
@@ -37,7 +36,8 @@ export class ProgressService {
     if (!course.units.length || !course.units[0].lessons.length)
       throw new Error("Course is empty.");
 
-    const existingUserProgress = await this.coursesService.getUserProgress();
+    const existingUserProgress =
+      await this.coursesService.getUserProgress(userId);
     const userName = dbUser.full_name || dbUser.username || "User";
 
     if (existingUserProgress) {
@@ -77,9 +77,7 @@ export class ProgressService {
     return 5;
   }
 
-  async refillHearts() {
-    const { userId } = await auth();
-
+  async refillHearts(userId: string) {
     if (!userId) throw new Error("Unauthorized.");
 
     const maxHearts = await this.getMaxHearts();
@@ -93,12 +91,11 @@ export class ProgressService {
     return result;
   }
 
-  async reduceHearts(challengeId: number) {
-    const { userId } = await auth();
-
+  async reduceHearts(userId: string, challengeId: number) {
     if (!userId) throw new Error("Unauthorized.");
 
-    const currentUserProgress = await this.coursesService.getUserProgress();
+    const currentUserProgress =
+      await this.coursesService.getUserProgress(userId);
 
     const challenge = await this.prisma.challenges.findUnique({
       where: { id: challengeId },
@@ -136,12 +133,11 @@ export class ProgressService {
     }
   }
 
-  async upsertChallengeProgress(challengeId: number) {
-    const { userId } = await auth();
-
+  async upsertChallengeProgress(userId: string, challengeId: number) {
     if (!userId) throw new Error("Unauthorized.");
 
-    const currentUserProgress = await this.coursesService.getUserProgress();
+    const currentUserProgress =
+      await this.coursesService.getUserProgress(userId);
 
     if (!currentUserProgress) throw new Error("User progress not found.");
 
@@ -200,8 +196,7 @@ export class ProgressService {
     });
   }
 
-  async resetLessonProgress(lessonId: number) {
-    const { userId } = await auth();
+  async resetLessonProgress(userId: string, lessonId: number) {
     if (!userId) throw new Error("Unauthorized.");
 
     // Find all challenge IDs in this lesson

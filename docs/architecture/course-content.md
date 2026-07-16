@@ -1,6 +1,6 @@
 # Course Content Architecture
 
-Course content is the repository's **Web Base Standard 1.4.0 golden slice**. Use
+Course content is the repository's **Web Base Standard 1.5.0 golden slice**. Use
 it as the reference when migrating another capability; copy its ownership and
 Interface rules, not its domain-specific files verbatim.
 
@@ -29,10 +29,21 @@ apps/api/src/module/courses/
   units.controller.ts
   lessons.controller.ts
   leaderboard.controller.ts
-  admin-course-content.controller.ts
+  admin-courses.controller.ts
+  admin-units.controller.ts
+  admin-lessons.controller.ts
+  admin-challenges.controller.ts
+  admin-challenge-options.controller.ts
+  admin-list-response.ts
   dto/course-content-management.dto.ts
   mappers/course-content.mapper.ts
-  use-cases/course-content-management.use-cases.ts
+  use-cases/
+    list-admin-courses.use-case.ts
+    get-admin-course.use-case.ts
+    create-admin-course.use-case.ts
+    update-admin-course.use-case.ts
+    remove-admin-course.use-case.ts
+    ...same five explicit goals for units, lessons, challenges, options
   tests/*.spec.ts
 
 apps/admin/app/features/courses/
@@ -105,6 +116,13 @@ The following resource names are supported under `/admin`:
 Each resource supports GET detail/list, POST create, PUT update, and DELETE. The
 camelCase `challengeOptions` spelling and PUT updates are compatibility
 constraints. Do not normalize them during folder or naming refactors.
+
+Each route delegates to one goal-named use case. A plural aggregate such as
+`CourseContentManagementUseCases` is forbidden because it hides 25 independent
+change reasons behind one broad Interface. These use cases call their Prisma
+Adapter and mapper directly; there is no pass-through facade retained for
+compatibility. Shared list response formatting is delivery behavior and remains
+in `admin-list-response.ts`, not in a business use case.
 
 ### `listPage` and `listAll`
 

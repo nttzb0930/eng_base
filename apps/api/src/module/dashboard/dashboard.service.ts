@@ -1,10 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../database/prisma/prisma.service";
-import { auth } from "../../common/auth-context";
 
 const DAY_IN_MS = 86_400_000;
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
-type PracticeCefrLevel = typeof PRACTICE_CEFR_LEVELS[number];
+type PracticeCefrLevel = (typeof PRACTICE_CEFR_LEVELS)[number];
 
 export type DashboardLevelProgress = {
   level: PracticeCefrLevel;
@@ -79,9 +78,7 @@ export class DashboardService {
     });
   }
 
-  async getDashboardStats() {
-    const { userId } = await auth();
-
+  async getDashboardStats(userId: string) {
     if (!userId) {
       return {
         overview: {

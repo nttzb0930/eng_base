@@ -40,7 +40,8 @@ src/module/auth/
 
 src/common/
   guards/
-  auth-context/
+  decorators/
+    current-user-id.decorator.ts
 ```
 
 - Learner and Admin login share `LoginUserUseCase`; the required role selects
@@ -51,8 +52,11 @@ src/common/
   authentication flow and persistence coordination.
 - `AuthTokenService` owns token creation/verification. `PasswordService` owns
   password hashing/verification.
-- Guards and AsyncLocalStorage request context remain compatibility delivery
-  infrastructure under `common`.
+- Guards verify credentials and attach claims to the HTTP request. Controllers
+  extract the required actor identifier through `CurrentUserId` and pass it
+  explicitly into actor-dependent behavior Interfaces.
+- Ambient identity through AsyncLocalStorage, globals, mutable singletons, or an
+  `auth()` accessor is forbidden, including as a temporary compatibility layer.
 - The Auth root exports only `AuthModule`, `AuthTokenService`, and
   `PasswordService`. Use cases remain private to Auth delivery composition.
 
@@ -62,7 +66,6 @@ src/common/
 - Controller tests can lock HTTP routes while use-case tests lock authentication
   and refresh-session behavior.
 - Token/password changes have locality behind small Interfaces.
-- Existing business Modules still call the compatibility `auth()` context; a
-  later migration may pass Learner identity explicitly through behavior
-  Interfaces without mixing that change into this refactor.
+- Actor-dependent behavior makes identity visible in its method/command input,
+  so authorization and ownership tests do not depend on hidden request state.
 - Endpoint paths, response shapes, Prisma schema, and stored data do not change.

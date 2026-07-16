@@ -8,6 +8,7 @@ import {
   UseGuards,
 } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { VocabularyService } from "./vocabulary.service";
 import {
   RecordReviewResultDto,
@@ -20,21 +21,26 @@ export class VocabularyController {
   constructor(private readonly vocabularyService: VocabularyService) {}
 
   @Get("saved-words")
-  getSavedWords() {
-    return this.vocabularyService.getSavedVocabularyWords();
+  getSavedWords(@CurrentUserId() userId: string) {
+    return this.vocabularyService.getSavedVocabularyWords(userId);
   }
 
   @Post(":id/toggle-saved")
-  toggleSavedWord(@Param("id", ParseIntPipe) id: number) {
-    return this.vocabularyService.toggleSavedWord(id);
+  toggleSavedWord(
+    @CurrentUserId() userId: string,
+    @Param("id", ParseIntPipe) id: number
+  ) {
+    return this.vocabularyService.toggleSavedWord(userId, id);
   }
 
   @Post(":id/review")
   recordReviewResult(
+    @CurrentUserId() userId: string,
     @Param("id", ParseIntPipe) id: number,
     @Body() body: RecordReviewResultDto
   ) {
     return this.vocabularyService.recordVocabularyReviewResult(
+      userId,
       id,
       body.correct
     );
@@ -42,9 +48,14 @@ export class VocabularyController {
 
   @Post(":id/flashcard")
   recordFlashcard(
+    @CurrentUserId() userId: string,
     @Param("id", ParseIntPipe) id: number,
     @Body() body: RecordFlashcardRatingDto
   ) {
-    return this.vocabularyService.recordFlashcardRating(id, body.rating);
+    return this.vocabularyService.recordFlashcardRating(
+      userId,
+      id,
+      body.rating
+    );
   }
 }

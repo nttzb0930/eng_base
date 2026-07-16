@@ -1,5 +1,6 @@
 import { Controller, Get, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { CoursesService } from "./courses.service";
 
 @Controller("units")
@@ -8,7 +9,7 @@ export class UnitsController {
   constructor(private readonly coursesService: CoursesService) {}
 
   @Get()
-  getUnits() {
-    return this.coursesService.getUnits();
+  getUnits(@CurrentUserId() userId: string) {
+    return this.coursesService.getUnits(userId);
   }
 }

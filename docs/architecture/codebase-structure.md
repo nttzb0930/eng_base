@@ -1,6 +1,6 @@
 # Codebase Structure
 
-This is the repository profile for **Web Base Standard 1.4.0**. Migration is
+This is the repository profile for **Web Base Standard 1.5.0**. Migration is
 incremental: existing behavior may remain in legacy locations, but every new
 capability and every touched golden slice must converge on this structure.
 
