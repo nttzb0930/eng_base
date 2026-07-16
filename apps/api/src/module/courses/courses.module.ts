@@ -6,8 +6,8 @@ import { UnitsController } from "./units.controller";
 import { LessonsController } from "./lessons.controller";
 import { LeaderboardController } from "./leaderboard.controller";
 import { CoursesService } from "./courses.service";
-import { CourseManagementController } from "./management/course-management.controller";
-import { CourseManagementService } from "./management/course-management.service";
+import { AdminCourseContentController } from "./admin-course-content.controller";
+import { CourseContentManagementUseCases } from "./use-cases/course-content-management.use-cases";
 
 @Module({
   controllers: [
@@ -15,11 +15,11 @@ import { CourseManagementService } from "./management/course-management.service"
     UnitsController,
     LessonsController,
     LeaderboardController,
-    CourseManagementController,
+    AdminCourseContentController,
   ],
   providers: [
     CoursesService,
-    CourseManagementService,
+    CourseContentManagementUseCases,
     UserJwtGuard,
     AdminJwtGuard,
   ],

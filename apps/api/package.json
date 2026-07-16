@@ -8,7 +8,7 @@
     "start": "dotenv -e ../../.env -- node dist/main.js",
     "build": "nest build",
     "architecture:check": "tsx --test test/api-source-architecture.test.ts test/auth-source-architecture.test.ts test/domain-ownership-architecture.test.ts && eslint src/module/user src/module/practice src/module/settings src/module/courses --max-warnings=0",
-    "test": "tsx --test \"src/**/*.test.ts\" \"test/**/*.test.ts\"",
+    "test": "tsx --test \"src/**/*.test.ts\" \"src/**/*.spec.ts\" \"test/**/*.test.ts\"",
     "lint": "eslint src scripts --max-warnings=0",
     "check-types": "tsc --noEmit",
     "db:generate": "dotenv -e ../../.env -- prisma generate",

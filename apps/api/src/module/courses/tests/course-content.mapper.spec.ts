@@ -17,7 +17,7 @@ import {
   toLessonData,
   toUnitCreateData,
   toUnitData,
-} from "./course-management.mapper";
+} from "../mappers/course-content.mapper";
 
 test("persistence mappers expose the existing camelCase course-management contract", () => {
   assert.deepEqual(

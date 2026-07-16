@@ -24,7 +24,7 @@ import type {
   LessonUpdateDto,
   UnitCreateDto,
   UnitUpdateDto,
-} from "./course-management.dto";
+} from "../dto/course-content-management.dto";
 
 export const mapCourse = (course: coursesModel): CourseDto => ({
   id: course.id,

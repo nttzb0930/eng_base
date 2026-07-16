@@ -12,8 +12,8 @@ import type { Response } from "express";
 
 import { AdminJwtGuard } from "../../../common/guards/admin-jwt.guard";
 import type { FilterParseResult } from "../../../common/decorators/filter-parse.decorator";
-import { CourseManagementController } from "./course-management.controller";
-import type { CourseManagementService } from "./course-management.service";
+import { AdminCourseContentController } from "../admin-course-content.controller";
+import type { CourseContentManagementUseCases } from "../use-cases/course-content-management.use-cases";
 
 type ManagementQuery = FilterParseResult<Record<string, unknown>>;
 
@@ -40,13 +40,13 @@ const createResponse = () => {
 test("controller owns the exact 25 existing admin course-management routes", () => {
   const controllerPath = Reflect.getMetadata(
     PATH_METADATA,
-    CourseManagementController
+    AdminCourseContentController
   ) as string;
   const guards = Reflect.getMetadata(
     GUARDS_METADATA,
-    CourseManagementController
+    AdminCourseContentController
   ) as unknown[];
-  const prototype = CourseManagementController.prototype;
+  const prototype = AdminCourseContentController.prototype;
 
   const routes = Object.getOwnPropertyNames(prototype)
     .flatMap((property) => {
@@ -106,8 +106,8 @@ test("non-paged lists preserve Content-Range and omit pagination arguments", asy
     countCourses() {
       throw new Error("count must not run for an unpaged list");
     },
-  } as unknown as CourseManagementService;
-  const controller = new CourseManagementController(service);
+  } as unknown as CourseContentManagementUseCases;
+  const controller = new AdminCourseContentController(service);
   const { response, result } = createResponse();
   const query: ManagementQuery = {
     page: 1,
@@ -144,8 +144,8 @@ test("empty non-paged lists preserve the compatibility Content-Range", async () 
     countCourses() {
       throw new Error("count must not run for an unpaged list");
     },
-  } as unknown as CourseManagementService;
-  const controller = new CourseManagementController(service);
+  } as unknown as CourseContentManagementUseCases;
+  const controller = new AdminCourseContentController(service);
   const { response, result } = createResponse();
   const query: ManagementQuery = {
     page: 1,
@@ -179,8 +179,8 @@ test("paged lists preserve the response pagination shape", async () => {
       calls.push(["count", where]);
       return Promise.resolve(5);
     },
-  } as unknown as CourseManagementService;
-  const controller = new CourseManagementController(service);
+  } as unknown as CourseContentManagementUseCases;
+  const controller = new AdminCourseContentController(service);
   const { response, result } = createResponse();
   const query: ManagementQuery = {
     page: 2,

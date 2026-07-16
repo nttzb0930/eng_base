@@ -162,7 +162,7 @@ type RawUserProgress = user_progressModel & {
 
 @Injectable()
 export class CoursesService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   mapCourse(course: coursesModel): Course {
     return {
@@ -191,7 +191,10 @@ export class CoursesService {
     };
   }
 
-  mapUserProgress(progress: RawUserProgress, isPlacementTestConfirmed = false): UserProgress {
+  mapUserProgress(
+    progress: RawUserProgress,
+    isPlacementTestConfirmed = false
+  ): UserProgress {
     return {
       userId: progress.user_id,
       userName: progress.user_name,
@@ -235,9 +238,7 @@ export class CoursesService {
     };
   }
 
-  mapVocabularyExample(
-    example: vocabulary_examplesModel
-  ): VocabularyExample {
+  mapVocabularyExample(example: vocabulary_examplesModel): VocabularyExample {
     return {
       id: example.id,
       vocabularyItemId: example.vocabulary_item_id,
@@ -269,16 +270,19 @@ export class CoursesService {
       source: item.source,
       createdAt: item.created_at,
       updatedAt: item.updated_at,
-      userSavedWords: item.user_saved_words?.map(x => this.mapSavedWord(x)) ?? [],
+      userSavedWords:
+        item.user_saved_words?.map((x) => this.mapSavedWord(x)) ?? [],
       userVocabularyProgress:
-        item.user_vocabulary_progress?.map(x => this.mapUserVocabularyProgress(x)) ?? [],
-      vocabularyExamples: item.vocabulary_examples?.map(x => this.mapVocabularyExample(x)) ?? [],
+        item.user_vocabulary_progress?.map((x) =>
+          this.mapUserVocabularyProgress(x)
+        ) ?? [],
+      vocabularyExamples:
+        item.vocabulary_examples?.map((x) => this.mapVocabularyExample(x)) ??
+        [],
     };
   }
 
-  mapChallengeOption(
-    option: challenge_optionsModel
-  ): ChallengeOption {
+  mapChallengeOption(option: challenge_optionsModel): ChallengeOption {
     return {
       id: option.id,
       challengeId: option.challenge_id,
@@ -289,9 +293,7 @@ export class CoursesService {
     };
   }
 
-  mapChallengeProgress(
-    progress: challenge_progressModel
-  ): ChallengeProgress {
+  mapChallengeProgress(progress: challenge_progressModel): ChallengeProgress {
     return {
       id: progress.id,
       userId: progress.user_id,
@@ -309,9 +311,13 @@ export class CoursesService {
       direction: challenge.direction,
       question: challenge.question,
       order: challenge.order,
-      challengeOptions: challenge.challenge_options?.map(x => this.mapChallengeOption(x)) ?? [],
+      challengeOptions:
+        challenge.challenge_options?.map((x) => this.mapChallengeOption(x)) ??
+        [],
       challengeProgress:
-        challenge.challenge_progress?.map(x => this.mapChallengeProgress(x)) ?? [],
+        challenge.challenge_progress?.map((x) =>
+          this.mapChallengeProgress(x)
+        ) ?? [],
       vocabularyItem: challenge.vocabulary_items
         ? this.mapVocabularyItem(challenge.vocabulary_items)
         : null,
@@ -321,7 +327,7 @@ export class CoursesService {
   mapLessonWithChallenges(lesson: RawLesson): LessonWithChallenges {
     return {
       ...this.mapLessonRecord(lesson),
-      challenges: lesson.challenges?.map(x => this.mapChallenge(x)) ?? [],
+      challenges: lesson.challenges?.map((x) => this.mapChallenge(x)) ?? [],
     };
   }
 
@@ -338,7 +344,7 @@ export class CoursesService {
 
   async getCourses() {
     const data = await this.prisma.courses.findMany();
-    return data.map(x => this.mapCourse(x));
+    return data.map((x) => this.mapCourse(x));
   }
 
   async getUserProgress() {
@@ -361,7 +367,9 @@ export class CoursesService {
 
     if (data) return this.mapUserProgress(data, isConfirmed);
 
-    const dbUser = await this.prisma.users.findUnique({ where: { id: userId } });
+    const dbUser = await this.prisma.users.findUnique({
+      where: { id: userId },
+    });
     const userName = dbUser?.full_name || dbUser?.username || "User";
     const syncedProgress = await this.prisma.user_progress.upsert({
       where: { user_id: userId },
@@ -453,7 +461,7 @@ export class CoursesService {
       ...course,
       units: data.units.map((unit) => ({
         ...this.mapUnitRecord(unit),
-        lessons: unit.lessons.map(x => this.mapLessonRecord(x)),
+        lessons: unit.lessons.map((x) => this.mapLessonRecord(x)),
       })),
     };
   }
@@ -503,12 +511,12 @@ export class CoursesService {
     return {
       activeLesson: firstUncompletedLesson
         ? {
-          id: firstUncompletedLesson.id,
-          title: firstUncompletedLesson.title,
-          unitId: firstUncompletedLesson.unitId,
-          order: firstUncompletedLesson.order,
-          unit: firstUncompletedLesson.unit,
-        }
+            id: firstUncompletedLesson.id,
+            title: firstUncompletedLesson.title,
+            unitId: firstUncompletedLesson.unitId,
+            order: firstUncompletedLesson.order,
+            unit: firstUncompletedLesson.unit,
+          }
         : undefined,
       activeLessonId: firstUncompletedLesson?.id,
     };

@@ -3,7 +3,7 @@ import test from "node:test";
 import { NotFoundException } from "@nestjs/common";
 
 import type { PrismaService } from "../../../database/prisma/prisma.service";
-import { CourseManagementService } from "./course-management.service";
+import { CourseContentManagementUseCases } from "../use-cases/course-content-management.use-cases";
 
 type Call = {
   resource: string;
@@ -85,7 +85,7 @@ const createPrisma = (missing = false) => {
 
 test("service forwards list/count queries and maps every managed resource", async () => {
   const { prisma, calls } = createPrisma();
-  const service = new CourseManagementService(prisma);
+  const service = new CourseContentManagementUseCases(prisma);
   const query = { where: { id: 1 }, skip: 0, take: 10, orderBy: [] };
 
   assert.deepEqual(await service.listCourses(query), [
@@ -140,7 +140,7 @@ test("service forwards list/count queries and maps every managed resource", asyn
 
 test("service preserves exact not-found messages", async () => {
   const { prisma } = createPrisma(true);
-  const service = new CourseManagementService(prisma);
+  const service = new CourseContentManagementUseCases(prisma);
 
   const cases: Array<[() => Promise<unknown>, string]> = [
     [() => service.getCourse(11), "Course with ID 11 not found"],
@@ -164,7 +164,7 @@ test("service preserves exact not-found messages", async () => {
 
 test("service preserves write mapping and direct Prisma delete behavior", async () => {
   const { prisma, calls } = createPrisma();
-  const service = new CourseManagementService(prisma);
+  const service = new CourseContentManagementUseCases(prisma);
 
   await service.createCourse({ title: "English", imageSrc: "/en.svg" });
   await service.updateUnit(2, { courseId: 9 });

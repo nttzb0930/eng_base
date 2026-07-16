@@ -12,7 +12,7 @@ import type {
   LessonUpdateDto,
   UnitCreateDto,
   UnitUpdateDto,
-} from "./course-management.dto";
+} from "../dto/course-content-management.dto";
 import {
   mapChallenge,
   mapChallengeOption,
@@ -29,10 +29,10 @@ import {
   toLessonData,
   toUnitCreateData,
   toUnitData,
-} from "./course-management.mapper";
+} from "../mappers/course-content.mapper";
 
 @Injectable()
-export class CourseManagementService {
+export class CourseContentManagementUseCases {
   constructor(private readonly prisma: PrismaService) {}
 
   async listCourses(

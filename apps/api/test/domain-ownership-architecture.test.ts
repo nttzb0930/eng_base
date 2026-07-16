@@ -28,3 +28,20 @@ test("Admin delivery belongs to its business owner", () => {
     existsSync(join(sourceRoot, "module/settings/admin-settings.controller.ts"))
   );
 });
+
+test("Course Management is organized inside the Courses owner", () => {
+  const managementRoot = join(sourceRoot, "module/courses/management");
+  const managementFiles = existsSync(managementRoot)
+    ? readdirSync(managementRoot, { recursive: true })
+    : [];
+  assert.deepEqual(managementFiles, []);
+  assert.ok(
+    existsSync(
+      join(sourceRoot, "module/courses/admin-course-content.controller.ts")
+    )
+  );
+  assert.ok(existsSync(join(sourceRoot, "module/courses/dto")));
+  assert.ok(existsSync(join(sourceRoot, "module/courses/mappers")));
+  assert.ok(existsSync(join(sourceRoot, "module/courses/use-cases")));
+  assert.ok(existsSync(join(sourceRoot, "module/courses/tests")));
+});

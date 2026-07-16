@@ -14,11 +14,11 @@ import type { Response } from "express";
 import { LessonChallengeTypeSchema } from "@repo/shared/courses";
 import { z } from "zod";
 
-import { AdminJwtGuard } from "../../../common/guards/admin-jwt.guard";
+import { AdminJwtGuard } from "../../common/guards/admin-jwt.guard";
 import {
   FilterParse,
   type FilterParseResult,
-} from "../../../common/decorators/filter-parse.decorator";
+} from "../../common/decorators/filter-parse.decorator";
 import {
   ChallengeCreateDto,
   ChallengeOptionCreateDto,
@@ -30,8 +30,8 @@ import {
   LessonUpdateDto,
   UnitCreateDto,
   UnitUpdateDto,
-} from "./course-management.dto";
-import { CourseManagementService } from "./course-management.service";
+} from "./dto/course-content-management.dto";
+import { CourseContentManagementUseCases } from "./use-cases/course-content-management.use-cases";
 
 type ManagementFilterResult = FilterParseResult<Record<string, unknown>>;
 type ManagementPrismaQuery = ManagementFilterResult["prismaQuery"];
@@ -40,8 +40,8 @@ type ManagementListQuery = Omit<ManagementPrismaQuery, "skip" | "take"> &
 
 @Controller("admin")
 @UseGuards(AdminJwtGuard)
-export class CourseManagementController {
-  constructor(private readonly courses: CourseManagementService) {}
+export class AdminCourseContentController {
+  constructor(private readonly courses: CourseContentManagementUseCases) {}
 
   private sendList(response: Response, items: unknown[]) {
     response.setHeader(

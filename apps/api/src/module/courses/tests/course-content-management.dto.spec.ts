@@ -5,7 +5,7 @@ import { validate } from "class-validator";
 import {
   ChallengeCreateDto,
   ChallengeOptionCreateDto,
-} from "./course-management.dto";
+} from "../dto/course-content-management.dto";
 
 test("challenge DTO preserves optional-nullable request fields", async () => {
   const dto = Object.assign(new ChallengeCreateDto(), {
