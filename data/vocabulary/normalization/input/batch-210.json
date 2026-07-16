@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-210",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26091,
+      "word": "exploration",
+      "normalized_word": "exploration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,eksplɔ:'reiʃn/",
+      "primary_meaning_vi": "sự thăm dò",
+      "meaning_vi": "sự thăm dò, sự thám hiểm; sự thông dò; sự khảo sát tỉ mỉ",
+      "example_en": "The exploration of unknown areas was often the precursor to colonization.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26092,
+      "word": "explosion",
+      "normalized_word": "explosion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/iks'plouʤn/",
+      "primary_meaning_vi": "sự nổ",
+      "meaning_vi": "sự nổ; sự nổ bùng (cơn giận); tiếng nổ; sự phát triển ồ ạt và nhanh chóng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26093,
+      "word": "expose",
+      "normalized_word": "expose",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/iks'pouz/",
+      "primary_meaning_vi": "phơi ra",
+      "meaning_vi": "phơi ra; phơi bày ra, phô ra; bóc trần, phơi trần, vạch trần, bộc lộ; bày ra để bán, trưng bày; đặt vào (nơi nguy hiểm...), đặt vào tình thế dễ bị (tai nan...); xoay về (nhà...); vứt bỏ (đứa con) ra ngoài đường; phơi sang (phim ảnh)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26094,
+      "word": "extend",
+      "normalized_word": "extend",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/iks'tend/",
+      "primary_meaning_vi": "duỗi thẳng (tay",
+      "meaning_vi": "duỗi thẳng (tay, chân...); đưa ra, giơ ra; kéo dài (thời hạn...), gia hạn, mở rộng; dàn rộng ra (quân đội); ,  (từ lóng) làm việc dốc hết; dành cho (sự đón tiếp...); gửi tới (lời chúc...); đánh giá (tài sản) (để tịch thu); tịch thu (tài sản, vì nợ); chép (bản tốc ký...) ra chữ thường; chạy dài, kéo dài (đến tận nơi nào...); mở rộng; dàn rộng ra (quân đội)",
+      "example_en": "The desert extended for miles in all directions.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to extend credit to a valued customer",
+          "example_vi": null
+        },
+        {
+          "example_en": "The classes Person and Dog extend the class Animal.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26095,
+      "word": "extensively",
+      "normalized_word": "extensively",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "rộng rãi",
+      "meaning_vi": "rộng rãi, bao quát, cùng khắp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26096,
+      "word": "extent",
+      "normalized_word": "extent",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/iks'tent /",
+      "primary_meaning_vi": "khoảng rộng",
+      "meaning_vi": "khoảng rộng; quy mô, phạm vi, chừng mực; sự đánh giá (đất rộng...); sự tịch thu; văn bản tịch thu (đất ruộng...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26097,
+      "word": "extinct",
+      "normalized_word": "extinct",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/iks'tiɳkt/",
+      "primary_meaning_vi": "tắt (lửa",
+      "meaning_vi": "tắt (lửa, núi lửa...); tan vỡ (hy vọng...); không còn nữa, mai một (sự sống, chức vị...); tuyệt giống, tuyệt chủng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26098,
+      "word": "extinction",
+      "normalized_word": "extinction",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/iks'tiɳkʃn/",
+      "primary_meaning_vi": "sự dập tắt",
+      "meaning_vi": "sự dập tắt; sự làm tan vỡ; sự làm mất đi; sự làm tuyệt giống; sự thanh toán (nợ nần); sự tiêu diệt, sự tiêu huỷ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26099,
+      "word": "extraordinary",
+      "normalized_word": "extraordinary",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/iks'trɔ:dnri/",
+      "primary_meaning_vi": "lạ thường",
+      "meaning_vi": "lạ thường, khác thường; to lớn lạ thường; đặc biệt",
+      "example_en": "an extraordinary poet",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an extraordinary professor in a German university",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26100,
+      "word": "extreme",
+      "normalized_word": "extreme",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/iks'tri:m/",
+      "primary_meaning_vi": "ở tít đằng đầu",
+      "meaning_vi": "ở tít đằng đầu, ở đằng cùng, xa nhất, ở tột cùng; vô cùng, tột bực, cùng cực, cực độ; khác nghiệt; quá khích; cực đoan (biện pháp); cuối cùng; một trường hợp đặc biệt",
+      "example_en": "extremes of temperature",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Some people go to extremes for attention on social media.",
+          "example_vi": null
+        },
+        {
+          "example_en": "At the extreme edges, the coating is very thin.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He has an extreme aversion to needles, and avoids visiting the doctor.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

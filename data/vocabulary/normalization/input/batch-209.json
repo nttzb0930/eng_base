@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-209",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26081,
+      "word": "excitedly",
+      "normalized_word": "excitedly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "xúc động",
+      "meaning_vi": "xúc động",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26082,
+      "word": "excitement",
+      "normalized_word": "excitement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ik'saitmənt/",
+      "primary_meaning_vi": "sự kích thích",
+      "meaning_vi": "sự kích thích, sự kích động; tình trạng bị kích thích, tình trạng bị kích động; sự nhộn nhịp, sự náo động, sự sôi nổi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26083,
+      "word": "exclusive",
+      "normalized_word": "exclusive",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/iks'klu:siv/",
+      "primary_meaning_vi": "loại trừ",
+      "meaning_vi": "loại trừ; riêng biệt, dành riêng (câu lạc bộ, cửa hàng...); độc chiếm, độc quyền; độc nhất; trừ, không kể, không gồm",
+      "example_en": "The editor agreed to keep a lid on a potentially disastrous political scoop in exchange for an exclusive of a happier nature.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Exclusive clubs tend to serve exclusive brands of food and drinks, in the same exorbitant price range, such as the 'finest' French châteaux.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The teacher's pet commands the teacher's exclusive attention.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The pronoun in \"We're going to a party later, but you aren't invited\" is an exclusive \"we\".",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26084,
+      "word": "exhausted",
+      "normalized_word": "exhausted",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ig'zɔ:stid/",
+      "primary_meaning_vi": "đã rút hết không khí (bóng đèn...)",
+      "meaning_vi": "đã rút hết không khí (bóng đèn...); kiệt sức, mệt lử; bạc màu (đất)",
+      "example_en": "Moisture of the earth is exhausted by evaporation.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to exhaust a treasury",
+          "example_vi": null
+        },
+        {
+          "example_en": "I exhausted my strength walking up the hill.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The marathon exhausted me.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26085,
+      "word": "existence",
+      "normalized_word": "existence",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ig'zistəns/",
+      "primary_meaning_vi": "sự tồn tại",
+      "meaning_vi": "sự tồn tại, sự sống, sự sống còn; cuộc sống; sự hiện có; vật có thật, vật tồn tại, những cái có thật; thực thể",
+      "example_en": "In order to destroy evil, we must first acknowledge its existence.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26086,
+      "word": "exit",
+      "normalized_word": "exit",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'eksit/",
+      "primary_meaning_vi": "sự đi vào (của diễn viên)",
+      "meaning_vi": "sự đi vào (của diễn viên); sự ra, sự đi ra, sự đi khỏi; lối ra, cửa ra; sự chết, sự lìa trần; vào, đi vào; chết, lìa trần, biến mất",
+      "example_en": "He made his exit at the opportune time.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the untimely exit of a respected politician",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26087,
+      "word": "expand",
+      "normalized_word": "expand",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/iks'pænd/",
+      "primary_meaning_vi": "mở rộng",
+      "meaning_vi": "mở rộng, trải ra; nở ra, phồng ra, giãn; khai triển; phát triển (một vấn đề...); trở nên cởi mở",
+      "example_en": "You can expand this compact umbrella to cover a large table.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A flower expands its leaves.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Use the binomial theorem to expand {(x+1)}^4.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The expression {(x+1)}^4 expands to x^4 + 4x^3 + 6x^2 + 4x + 1.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26088,
+      "word": "expense",
+      "normalized_word": "expense",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/iks'pens/",
+      "primary_meaning_vi": "sự tiêu",
+      "meaning_vi": "sự tiêu; phí tổn; phụ phí, công tác phí; trả giá bằng sinh mệnh của mình; do ai trả tiền phí tổn; không có lợi cho ai; làm cho ai mất uy tín; làm giàu bằng mồ hôi nước mắt của ai; cười ai; ăn bám vào ai",
+      "example_en": "Buying the car was a big expense, but will be worth it in the long run.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Jones reached the final at the expense of Smith, who couldn't beat him.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It should be acceptable to expense a business lunch with a client.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26089,
+      "word": "experienced",
+      "normalized_word": "experienced",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/iks'piəriənst/",
+      "primary_meaning_vi": "có kinh nghiệm",
+      "meaning_vi": "có kinh nghiệm, giàu kinh nghiệm, từng trải, lão luyện",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26090,
+      "word": "experiment",
+      "normalized_word": "experiment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/iks'periment - iks'periment/",
+      "primary_meaning_vi": "iks'periment",
+      "meaning_vi": "iks'periment/; thí nghiệm, thử; cuộc thí nghiệm; sự thí nghiệm, sự thử",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

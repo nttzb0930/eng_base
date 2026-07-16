@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-197",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25961,
+      "word": "dive",
+      "normalized_word": "dive",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/daiv/",
+      "primary_meaning_vi": "sự nhảy lao đầu xuống (nước...)",
+      "meaning_vi": "sự nhảy lao đầu xuống (nước...); sự lặn; sự đâm bổ xuống, sự bổ nhào xuống (máy bay); sự lặn (tàu ngầm); sự vụt biến mất, sự vụt lao biến đi; sự thọc tay vào túi; quán rượu chui (nơi lui tới của bọn vô lại...); chỗ ẩn náu (của bọn lưu manh; cửa hàng ở tầng hầm (thường bán một số hàng đặc biệt); nhảy lao đầu xuống (nước...); lặn; đâm bổ xuống, bổ nhào xuống (máy bay); lặn (tàu ngầm); lặn xuống thình lình, chìm xuống thình lình; vụt lao biến đi, vụt biến mất; thọc tay vào (túi, nước...); chìm đắm vào, mải mê vào, đi sâu vào (công việc nghiên cứu cái gì...)",
+      "example_en": "the dive of a hawk after prey",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to dive into home plate",
+          "example_vi": null
+        },
+        {
+          "example_en": "She dove right in and started making improvements.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25962,
+      "word": "diver",
+      "normalized_word": "diver",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'daivə/",
+      "primary_meaning_vi": "người nhảy lao đầu xuống nước",
+      "meaning_vi": "người nhảy lao đầu xuống nước; người lặn; người mò ngọc trai, người mò tàu đắm; kẻ móc túi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25963,
+      "word": "diverse",
+      "normalized_word": "diverse",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/dai'və:s/",
+      "primary_meaning_vi": "gồm nhiều loại khác nhau",
+      "meaning_vi": "gồm nhiều loại khác nhau, linh tinh; thay đổi khác nhau",
+      "example_en": "Idris Elba was a diverse hire for the franchise",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25964,
+      "word": "divide",
+      "normalized_word": "divide",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'vaid/",
+      "primary_meaning_vi": "đường chia nước",
+      "meaning_vi": "đường chia nước",
+      "example_en": "Stay on your side of the divide, please.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The divide left most of the good land on my share of the property.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There is a great divide between us.",
+          "example_vi": null
+        },
+        {
+          "example_en": "If you're heading to the coast, you'll have to cross the divide first.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25965,
+      "word": "divine",
+      "normalized_word": "divine",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/di'vain/",
+      "primary_meaning_vi": "thần thanh",
+      "meaning_vi": "thần thanh, thiêng liêng; tuyệt diệu, tuyệt trần, siêu phàm; nhà thần học; đoán, tiên đoán, bói",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25966,
+      "word": "diving",
+      "normalized_word": "diving",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "việc lặn dưới nước",
+      "meaning_vi": "việc lặn dưới nước; việc lao đầu xuống nước",
+      "example_en": "to dive into home plate",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She dove right in and started making improvements.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25967,
+      "word": "divorced",
+      "normalized_word": "divorced",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "đã ly dị",
+      "meaning_vi": "đã ly dị",
+      "example_en": "A ship captain can marry couples, but cannot divorce them.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Lucy divorced Steve when she discovered that he had been unfaithful.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Edna and Simon divorced last year; he got the house, and she retained the business.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The radical group voted to divorce itself from the main faction and start an independent movement.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25968,
+      "word": "dj",
+      "normalized_word": "dj",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "(viết tắt)",
+      "phonetic": null,
+      "primary_meaning_vi": "áo vét đi ăn tối (dinner- jacket)",
+      "meaning_vi": "áo vét đi ăn tối (dinner- jacket); người giới thiệu các ca khúc trên radio (disk-jockey)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25969,
+      "word": "doc",
+      "normalized_word": "doc",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dɔk/",
+      "primary_meaning_vi": "thầy thuốc",
+      "meaning_vi": "thầy thuốc",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25970,
+      "word": "document",
+      "normalized_word": "document",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dɔkjumənt/",
+      "primary_meaning_vi": "văn kiện",
+      "meaning_vi": "văn kiện; tài liệu, tư liệu; chứng minh bằng tư liệu; dẫn chứng bằng tư liệu; đưa ra tài liệu, cung cấp tư liệu",
+      "example_en": "He documented each step of the process as he did it, which was good when the investigation occurred.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A ship should be documented according to the directions of law.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

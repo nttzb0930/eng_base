@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24351,
+      "quiz_meaning_vi": "mục tiêu",
+      "meaning_vi_clean": "mục tiêu; khung thành; bàn thắng",
+      "examples_clean": [
+        {
+          "meaning_vi": "mục tiêu",
+          "example_en": "My lifelong goal is to become a doctor.",
+          "example_vi": "Mục tiêu cả đời của tôi là trở thành bác sĩ."
+        },
+        {
+          "meaning_vi": "mục tiêu",
+          "example_en": "We need to set a clear goal for this project.",
+          "example_vi": "Chúng ta cần đặt ra một mục tiêu rõ ràng cho dự án này."
+        },
+        {
+          "meaning_vi": "mục tiêu",
+          "example_en": "She achieved her goal of running a marathon.",
+          "example_vi": "Cô ấy đã đạt được mục tiêu chạy marathon của mình."
+        },
+        {
+          "meaning_vi": "mục tiêu",
+          "example_en": "His main goal is to save enough money for a house.",
+          "example_vi": "Mục tiêu chính của anh ấy là tiết kiệm đủ tiền mua một ngôi nhà."
+        },
+        {
+          "meaning_vi": "khung thành",
+          "example_en": "The ball hit the post of the goal.",
+          "example_vi": "Quả bóng đập vào cột khung thành."
+        },
+        {
+          "meaning_vi": "khung thành",
+          "example_en": "The goalkeeper stood in front of the goal.",
+          "example_vi": "Thủ môn đứng trước khung thành."
+        },
+        {
+          "meaning_vi": "bàn thắng",
+          "example_en": "He scored a goal in the final minute.",
+          "example_vi": "Anh ấy đã ghi một bàn thắng vào phút cuối."
+        },
+        {
+          "meaning_vi": "bàn thắng",
+          "example_en": "The team celebrated their winning goal.",
+          "example_vi": "Cả đội ăn mừng bàn thắng quyết định của họ."
+        },
+        {
+          "meaning_vi": "bàn thắng",
+          "example_en": "They have scored three goals so far.",
+          "example_vi": "Họ đã ghi được ba bàn thắng cho đến lúc này."
+        },
+        {
+          "meaning_vi": "mục tiêu",
+          "example_en": "What is your ultimate goal in life?",
+          "example_vi": "Mục tiêu cuối cùng của bạn trong cuộc sống là gì?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành mục tiêu, loại bỏ các nghĩa không phù hợp cấp độ A1.",
+      "word": "goal",
+      "normalized_word": "goal",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My lifelong goal is to become a doctor.",
+      "example_vi_clean": "Mục tiêu cả đời của tôi là trở thành bác sĩ."
+    },
+    {
+      "id": 24352,
+      "quiz_meaning_vi": "vàng",
+      "meaning_vi_clean": "vàng; bằng vàng; có màu vàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "vàng",
+          "example_en": "The ring is made of pure gold.",
+          "example_vi": "Chiếc nhẫn được làm bằng vàng nguyên chất."
+        },
+        {
+          "meaning_vi": "vàng",
+          "example_en": "They found a lot of gold in the river.",
+          "example_vi": "Họ tìm thấy rất nhiều vàng dưới sông."
+        },
+        {
+          "meaning_vi": "vàng",
+          "example_en": "Gold is a very expensive metal.",
+          "example_vi": "Vàng là một loại kim loại rất đắt tiền."
+        },
+        {
+          "meaning_vi": "vàng",
+          "example_en": "She wears a gold necklace every day.",
+          "example_vi": "Cô ấy đeo một chiếc vòng cổ bằng vàng mỗi ngày."
+        },
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "He gave her a gold watch for her birthday.",
+          "example_vi": "Anh ấy tặng cô ấy một chiếc đồng hồ bằng vàng vào ngày sinh nhật."
+        },
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "The trophy is gold plated.",
+          "example_vi": "Chiếc cúp được mạ vàng."
+        },
+        {
+          "meaning_vi": "có màu vàng",
+          "example_en": "The sunset had a beautiful gold color.",
+          "example_vi": "Hoàng hôn có một màu vàng tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "có màu vàng",
+          "example_en": "She painted the walls a soft gold shade.",
+          "example_vi": "Cô ấy sơn những bức tường bằng một tông màu vàng nhẹ."
+        },
+        {
+          "meaning_vi": "vàng",
+          "example_en": "The price of gold has increased recently.",
+          "example_vi": "Giá vàng đã tăng gần đây."
+        },
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "They exchanged gold rings at the wedding.",
+          "example_vi": "Họ trao nhẫn vàng cho nhau tại đám cưới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ sang danh từ/tính từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "gold",
+      "normalized_word": "gold",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The ring is made of pure gold.",
+      "example_vi_clean": "Chiếc nhẫn được làm bằng vàng nguyên chất."
+    },
+    {
+      "id": 24353,
+      "quiz_meaning_vi": "tốt",
+      "meaning_vi_clean": "tốt; hay; giỏi; có lợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tốt",
+          "example_en": "This is a good book to read.",
+          "example_vi": "Đây là một cuốn sách tốt để đọc."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "She is a good person.",
+          "example_vi": "Cô ấy là một người tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "The weather is very good today.",
+          "example_vi": "Thời tiết hôm nay rất tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "It is a good idea to study hard.",
+          "example_vi": "Đó là một ý tưởng tốt để học tập chăm chỉ."
+        },
+        {
+          "meaning_vi": "hay",
+          "example_en": "That is a good story.",
+          "example_vi": "Đó là một câu chuyện hay."
+        },
+        {
+          "meaning_vi": "hay",
+          "example_en": "We had a good time at the party.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian hay (vui vẻ) tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "giỏi",
+          "example_en": "He is a good student in class.",
+          "example_vi": "Cậu ấy là một học sinh giỏi trong lớp."
+        },
+        {
+          "meaning_vi": "giỏi",
+          "example_en": "She is very good at playing the piano.",
+          "example_vi": "Cô ấy rất giỏi chơi đàn piano."
+        },
+        {
+          "meaning_vi": "có lợi",
+          "example_en": "Eating vegetables is good for your health.",
+          "example_vi": "Ăn rau củ rất có lợi cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "có lợi",
+          "example_en": "Regular exercise is good for everyone.",
+          "example_vi": "Tập thể dục thường xuyên có lợi cho mọi người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ, lược bỏ các nghĩa rườm rà, bổ sung ví dụ chuẩn.",
+      "word": "good",
+      "normalized_word": "good",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is a good book to read.",
+      "example_vi_clean": "Đây là một cuốn sách tốt để đọc."
+    },
+    {
+      "id": 24354,
+      "quiz_meaning_vi": "điểm số",
+      "meaning_vi_clean": "điểm số; cấp bậc; hạng",
+      "examples_clean": [
+        {
+          "meaning_vi": "điểm số",
+          "example_en": "She got a good grade on her math test.",
+          "example_vi": "Cô ấy đạt điểm số tốt trong bài kiểm tra toán."
+        },
+        {
+          "meaning_vi": "điểm số",
+          "example_en": "I need to improve my grades this semester.",
+          "example_vi": "Tôi cần cải thiện điểm số của mình trong học kỳ này."
+        },
+        {
+          "meaning_vi": "điểm số",
+          "example_en": "He was happy with his final grade.",
+          "example_vi": "Anh ấy hài lòng với điểm số cuối kỳ của mình."
+        },
+        {
+          "meaning_vi": "điểm số",
+          "example_en": "What grade did you get for the essay?",
+          "example_vi": "Bạn nhận được điểm số nào cho bài luận đó?"
+        },
+        {
+          "meaning_vi": "cấp bậc",
+          "example_en": "He reached the highest grade in the company.",
+          "example_vi": "Anh ấy đã đạt đến cấp bậc cao nhất trong công ty."
+        },
+        {
+          "meaning_vi": "cấp bậc",
+          "example_en": "There are different grades of difficulty in this game.",
+          "example_vi": "Có các cấp bậc khó khăn khác nhau trong trò chơi này."
+        },
+        {
+          "meaning_vi": "hạng",
+          "example_en": "This is the highest grade of coffee.",
+          "example_vi": "Đây là hạng cà phê cao cấp nhất."
+        },
+        {
+          "meaning_vi": "hạng",
+          "example_en": "They sell different grades of meat.",
+          "example_vi": "Họ bán các hạng thịt khác nhau."
+        },
+        {
+          "meaning_vi": "cấp bậc",
+          "example_en": "She was promoted to a higher grade.",
+          "example_vi": "Cô ấy đã được thăng lên một cấp bậc cao hơn."
+        },
+        {
+          "meaning_vi": "hạng",
+          "example_en": "The hotel is of a very high grade.",
+          "example_vi": "Khách sạn này thuộc hạng rất cao cấp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "grade",
+      "normalized_word": "grade",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She got a good grade on her math test.",
+      "example_vi_clean": "Cô ấy đạt điểm số tốt trong bài kiểm tra toán."
+    },
+    {
+      "id": 24355,
+      "quiz_meaning_vi": "ngữ pháp",
+      "meaning_vi_clean": "ngữ pháp",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "She is studying English grammar.",
+          "example_vi": "Cô ấy đang học ngữ pháp tiếng Anh."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "His grammar is very good.",
+          "example_vi": "Ngữ pháp của anh ấy rất tốt."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "I need to check the grammar in this letter.",
+          "example_vi": "Tôi cần kiểm tra ngữ pháp trong bức thư này."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "Grammar is an important part of language learning.",
+          "example_vi": "Ngữ pháp là một phần quan trọng của việc học ngôn ngữ."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "She made a few grammar mistakes.",
+          "example_vi": "Cô ấy đã mắc một vài lỗi ngữ pháp."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "This book explains basic grammar rules.",
+          "example_vi": "Cuốn sách này giải thích các quy tắc ngữ pháp cơ bản."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "We are learning about grammar in school.",
+          "example_vi": "Chúng tôi đang học về ngữ pháp ở trường."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "Good grammar helps you communicate clearly.",
+          "example_vi": "Ngữ pháp tốt giúp bạn giao tiếp rõ ràng."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "He is writing a book on grammar.",
+          "example_vi": "Anh ấy đang viết một cuốn sách về ngữ pháp."
+        },
+        {
+          "meaning_vi": "ngữ pháp",
+          "example_en": "Do you understand the grammar of this sentence?",
+          "example_vi": "Bạn có hiểu ngữ pháp của câu này không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "grammar",
+      "normalized_word": "grammar",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is studying English grammar.",
+      "example_vi_clean": "Cô ấy đang học ngữ pháp tiếng Anh."
+    },
+    {
+      "id": 24356,
+      "quiz_meaning_vi": "ông",
+      "meaning_vi_clean": "ông",
+      "examples_clean": [
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandfather lives in the countryside.",
+          "example_vi": "Ông của tôi sống ở vùng quê."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I visit my grandfather every weekend.",
+          "example_vi": "Tôi thăm ông của mình mỗi cuối tuần."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandfather tells great stories.",
+          "example_vi": "Ông của tôi kể những câu chuyện rất hay."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "He looks like his grandfather.",
+          "example_vi": "Anh ấy trông giống ông của mình."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandfather was a teacher.",
+          "example_vi": "Ông của tôi từng là một giáo viên."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I love my grandfather very much.",
+          "example_vi": "Tôi yêu ông của mình rất nhiều."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandfather taught me how to fish.",
+          "example_vi": "Ông của tôi đã dạy tôi cách câu cá."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "We bought a gift for my grandfather.",
+          "example_vi": "Chúng tôi đã mua một món quà cho ông của mình."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandfather is eighty years old.",
+          "example_vi": "Ông của tôi đã tám mươi tuổi."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I am going to see my grandfather today.",
+          "example_vi": "Tôi sẽ đi thăm ông của mình hôm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lược bỏ nghĩa đồng hồ, bổ sung đủ 10 ví dụ.",
+      "word": "grandfather",
+      "normalized_word": "grandfather",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My grandfather lives in the countryside.",
+      "example_vi_clean": "Ông của tôi sống ở vùng quê."
+    },
+    {
+      "id": 24357,
+      "quiz_meaning_vi": "bà",
+      "meaning_vi_clean": "bà",
+      "examples_clean": [
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandma makes the best cookies.",
+          "example_vi": "Bà của tôi làm món bánh quy ngon nhất."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I call my grandma every Sunday.",
+          "example_vi": "Tôi gọi điện cho bà của mình mỗi Chủ nhật."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandma lives with us.",
+          "example_vi": "Bà của tôi sống cùng với chúng tôi."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "She learned to knit from her grandma.",
+          "example_vi": "Cô ấy học đan từ bà của mình."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandma is very kind.",
+          "example_vi": "Bà của tôi rất tốt bụng."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I am visiting my grandma this afternoon.",
+          "example_vi": "Tôi sẽ đi thăm bà của mình vào chiều nay."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandma has a beautiful garden.",
+          "example_vi": "Bà của tôi có một khu vườn xinh đẹp."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I love spending time with my grandma.",
+          "example_vi": "Tôi thích dành thời gian với bà của mình."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandma gave me a nice present.",
+          "example_vi": "Bà của tôi đã tặng tôi một món quà đẹp."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "We are going to my grandma's house.",
+          "example_vi": "Chúng tôi đang đi đến nhà của bà tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa bị lỗi, bổ sung đủ 10 ví dụ.",
+      "word": "grandma",
+      "normalized_word": "grandma",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My grandma makes the best cookies.",
+      "example_vi_clean": "Bà của tôi làm món bánh quy ngon nhất."
+    },
+    {
+      "id": 24358,
+      "quiz_meaning_vi": "bà",
+      "meaning_vi_clean": "bà",
+      "examples_clean": [
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandmother is very wise.",
+          "example_vi": "Bà của tôi rất thông thái."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I have two grandmothers.",
+          "example_vi": "Tôi có hai người bà."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandmother loves gardening.",
+          "example_vi": "Bà của tôi thích làm vườn."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "She looks just like her grandmother.",
+          "example_vi": "Cô ấy trông giống hệt bà của mình."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandmother told me a story.",
+          "example_vi": "Bà của tôi đã kể cho tôi một câu chuyện."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I miss my grandmother.",
+          "example_vi": "Tôi nhớ bà của mình."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandmother is a great cook.",
+          "example_vi": "Bà của tôi là một đầu bếp tuyệt vời."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "We visited my grandmother yesterday.",
+          "example_vi": "Chúng tôi đã thăm bà của mình ngày hôm qua."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "My grandmother gave me some advice.",
+          "example_vi": "Bà của tôi đã cho tôi một vài lời khuyên."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I am proud of my grandmother.",
+          "example_vi": "Tôi tự hào về bà của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, lược bỏ nghĩa không phù hợp, bổ sung ví dụ.",
+      "word": "grandmother",
+      "normalized_word": "grandmother",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My grandmother is very wise.",
+      "example_vi_clean": "Bà của tôi rất thông thái."
+    },
+    {
+      "id": 24359,
+      "quiz_meaning_vi": "ông",
+      "meaning_vi_clean": "ông",
+      "examples_clean": [
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandpa is very funny.",
+          "example_vi": "Ông của tôi rất hài hước."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I love my grandpa.",
+          "example_vi": "Tôi yêu ông của mình."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandpa likes to read the newspaper.",
+          "example_vi": "Ông của tôi thích đọc báo."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I went to the park with my grandpa.",
+          "example_vi": "Tôi đã đi công viên với ông của mình."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandpa is a kind man.",
+          "example_vi": "Ông của tôi là một người đàn ông tốt bụng."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I am going to visit my grandpa.",
+          "example_vi": "Tôi sẽ đi thăm ông của mình."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandpa taught me how to play chess.",
+          "example_vi": "Ông của tôi đã dạy tôi cách chơi cờ vua."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I bought a hat for my grandpa.",
+          "example_vi": "Tôi đã mua một chiếc mũ cho ông của mình."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "My grandpa is retired now.",
+          "example_vi": "Ông của tôi đã nghỉ hưu rồi."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "We are having dinner with my grandpa.",
+          "example_vi": "Chúng tôi đang ăn tối cùng với ông của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa bị lỗi, bổ sung đủ 10 ví dụ.",
+      "word": "grandpa",
+      "normalized_word": "grandpa",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My grandpa is very funny.",
+      "example_vi_clean": "Ông của tôi rất hài hước."
+    },
+    {
+      "id": 24360,
+      "quiz_meaning_vi": "quả nho",
+      "meaning_vi_clean": "quả nho",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "I like to eat grapes.",
+          "example_vi": "Tôi thích ăn nho."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "These grapes are very sweet.",
+          "example_vi": "Những quả nho này rất ngọt."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "She bought a bunch of grapes.",
+          "example_vi": "Cô ấy đã mua một chùm nho."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "Do you prefer green or red grapes?",
+          "example_vi": "Bạn thích nho xanh hay nho đỏ hơn?"
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "Grapes are used to make wine.",
+          "example_vi": "Nho được dùng để làm rượu vang."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "He washed the grapes before eating them.",
+          "example_vi": "Anh ấy đã rửa nho trước khi ăn chúng."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "I put some grapes in my salad.",
+          "example_vi": "Tôi cho một ít nho vào món salad của mình."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "These grapes are seedless.",
+          "example_vi": "Những quả nho này không có hạt."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "She gave me a grape to taste.",
+          "example_vi": "Cô ấy đưa tôi một quả nho để nếm thử."
+        },
+        {
+          "meaning_vi": "quả nho",
+          "example_en": "The grapes are growing in the garden.",
+          "example_vi": "Những quả nho đang lớn dần trong vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lược bỏ các nghĩa không phù hợp, bổ sung đủ 10 ví dụ.",
+      "word": "grape",
+      "normalized_word": "grape",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I like to eat grapes.",
+      "example_vi_clean": "Tôi thích ăn nho."
+    }
+  ]
+}

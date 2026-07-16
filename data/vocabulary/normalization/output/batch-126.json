@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25251,
+      "quiz_meaning_vi": "phương pháp",
+      "meaning_vi_clean": "phương pháp; cách thức",
+      "examples_clean": [
+        {
+          "meaning_vi": "phương pháp",
+          "example_en": "This new teaching method helps students learn faster.",
+          "example_vi": "Phương pháp giảng dạy mới này giúp học sinh học nhanh hơn."
+        },
+        {
+          "meaning_vi": "phương pháp",
+          "example_en": "We need to find a better method to solve this problem.",
+          "example_vi": "Chúng ta cần tìm một phương pháp tốt hơn để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "phương pháp",
+          "example_en": "The scientific method is essential for research.",
+          "example_vi": "Phương pháp khoa học là thiết yếu cho việc nghiên cứu."
+        },
+        {
+          "meaning_vi": "phương pháp",
+          "example_en": "She developed a unique method for organizing her files.",
+          "example_vi": "Cô ấy đã phát triển một phương pháp độc đáo để sắp xếp các tệp tin của mình."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "The way he speaks is a strange method of communication.",
+          "example_vi": "Cách anh ấy nói là một cách thức giao tiếp kỳ lạ."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "They have a specific method for cleaning the kitchen.",
+          "example_vi": "Họ có một cách thức cụ thể để dọn dẹp nhà bếp."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "Is there any other method to get to the station?",
+          "example_vi": "Có cách thức nào khác để đến nhà ga không?"
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "His method of working is very efficient.",
+          "example_vi": "Cách thức làm việc của anh ấy rất hiệu quả."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "We are looking for a new method to improve sales.",
+          "example_vi": "Chúng tôi đang tìm kiếm một cách thức mới để cải thiện doanh số."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "The traditional method is still used in many villages.",
+          "example_vi": "Cách thức truyền thống vẫn được sử dụng ở nhiều ngôi làng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phù hợp cấp độ A2. Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "method",
+      "normalized_word": "method",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This new teaching method helps students learn faster.",
+      "example_vi_clean": "Phương pháp giảng dạy mới này giúp học sinh học nhanh hơn."
+    },
+    {
+      "id": 25252,
+      "quiz_meaning_vi": "mét",
+      "meaning_vi_clean": "mét",
+      "examples_clean": [
+        {
+          "meaning_vi": "mét",
+          "example_en": "The table is two metres long.",
+          "example_vi": "Cái bàn dài hai mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "He jumped over a bar set at two metres.",
+          "example_vi": "Anh ấy nhảy qua một thanh xà đặt ở độ cao hai mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The pool is five metres deep.",
+          "example_vi": "Hồ bơi sâu năm mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The rope is ten metres long.",
+          "example_vi": "Sợi dây dài mười mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The garden is twenty metres wide.",
+          "example_vi": "Khu vườn rộng hai mươi mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The building is fifty metres high.",
+          "example_vi": "Tòa nhà cao năm mươi mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "She ran a hundred metres in twelve seconds.",
+          "example_vi": "Cô ấy chạy một trăm mét trong mười hai giây."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The distance is about three metres.",
+          "example_vi": "Khoảng cách là khoảng ba mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The fabric is sold by the metre.",
+          "example_vi": "Vải được bán theo mét."
+        },
+        {
+          "meaning_vi": "mét",
+          "example_en": "The path is only one metre wide.",
+          "example_vi": "Con đường chỉ rộng một mét."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Ưu tiên nghĩa 'mét' vì phổ biến hơn ở cấp A2 so với 'vận luật'.",
+      "word": "metre",
+      "normalized_word": "metre",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The table is two metres long.",
+      "example_vi_clean": "Cái bàn dài hai mét."
+    },
+    {
+      "id": 25253,
+      "quiz_meaning_vi": "trưa",
+      "meaning_vi_clean": "trưa",
+      "examples_clean": [
+        {
+          "meaning_vi": "trưa",
+          "example_en": "We usually have lunch at midday.",
+          "example_vi": "Chúng tôi thường ăn trưa vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "The sun is very hot at midday.",
+          "example_vi": "Mặt trời rất nóng vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "The meeting will start at midday.",
+          "example_vi": "Cuộc họp sẽ bắt đầu vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "I will see you at midday.",
+          "example_vi": "Tôi sẽ gặp bạn vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "The train arrives at midday.",
+          "example_vi": "Tàu đến vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "It is very quiet here at midday.",
+          "example_vi": "Ở đây rất yên tĩnh vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "The shops close at midday on Sundays.",
+          "example_vi": "Các cửa hàng đóng cửa vào buổi trưa ngày Chủ nhật."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "We finished the work by midday.",
+          "example_vi": "Chúng tôi đã hoàn thành công việc trước buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "The temperature rises at midday.",
+          "example_vi": "Nhiệt độ tăng lên vào buổi trưa."
+        },
+        {
+          "meaning_vi": "trưa",
+          "example_en": "Let's meet for a coffee at midday.",
+          "example_vi": "Hãy gặp nhau uống cà phê vào buổi trưa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Định nghĩa lại đơn giản và bổ sung 10 ví dụ.",
+      "word": "midday",
+      "normalized_word": "midday",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We usually have lunch at midday.",
+      "example_vi_clean": "Chúng tôi thường ăn trưa vào buổi trưa."
+    },
+    {
+      "id": 25254,
+      "quiz_meaning_vi": "nửa đêm",
+      "meaning_vi_clean": "nửa đêm",
+      "examples_clean": [
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "The party went on until midnight.",
+          "example_vi": "Bữa tiệc kéo dài đến nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "I woke up at midnight.",
+          "example_vi": "Tôi thức dậy vào nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "The train leaves at midnight.",
+          "example_vi": "Tàu rời đi vào nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "It was dark at midnight.",
+          "example_vi": "Trời tối vào nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "She finished her homework at midnight.",
+          "example_vi": "Cô ấy làm xong bài tập về nhà vào nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "The city is quiet at midnight.",
+          "example_vi": "Thành phố yên tĩnh vào nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "We arrived home after midnight.",
+          "example_vi": "Chúng tôi về đến nhà sau nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "The clock struck midnight.",
+          "example_vi": "Đồng hồ điểm nửa đêm."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "He works until midnight every day.",
+          "example_vi": "Anh ấy làm việc đến nửa đêm mỗi ngày."
+        },
+        {
+          "meaning_vi": "nửa đêm",
+          "example_en": "The show ends at midnight.",
+          "example_vi": "Chương trình kết thúc vào nửa đêm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Định nghĩa lại đơn giản và bổ sung 10 ví dụ.",
+      "word": "midnight",
+      "normalized_word": "midnight",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The party went on until midnight.",
+      "example_vi_clean": "Bữa tiệc kéo dài đến nửa đêm."
+    },
+    {
+      "id": 25255,
+      "quiz_meaning_vi": "sức mạnh",
+      "meaning_vi_clean": "sức mạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "He used all his might to open the door.",
+          "example_vi": "Anh ấy dùng hết sức mạnh của mình để mở cửa."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The storm showed its full might.",
+          "example_vi": "Cơn bão thể hiện toàn bộ sức mạnh của nó."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "They fought with all their might.",
+          "example_vi": "Họ chiến đấu với tất cả sức mạnh của mình."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The might of the army was impressive.",
+          "example_vi": "Sức mạnh của quân đội thật ấn tượng."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "He pushed the rock with all his might.",
+          "example_vi": "Anh ấy đẩy tảng đá bằng tất cả sức mạnh của mình."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The country is known for its economic might.",
+          "example_vi": "Đất nước này nổi tiếng với sức mạnh kinh tế."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "She tried with all her might to win.",
+          "example_vi": "Cô ấy đã cố gắng bằng tất cả sức mạnh của mình để chiến thắng."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The might of the ocean is dangerous.",
+          "example_vi": "Sức mạnh của đại dương rất nguy hiểm."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "He pulled the rope with all his might.",
+          "example_vi": "Anh ấy kéo sợi dây bằng tất cả sức mạnh của mình."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "They were defeated by the might of the enemy.",
+          "example_vi": "Họ đã bị đánh bại bởi sức mạnh của kẻ thù."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ modal auxiliary thành noun theo nghĩa 'sức mạnh'.",
+      "word": "might",
+      "normalized_word": "might",
+      "cefr_level": "A2",
+      "pos": "modal auxiliary",
+      "pos_vi_clean": "động từ khuyết thiếu",
+      "example_en_clean": "He used all his might to open the door.",
+      "example_vi_clean": "Anh ấy dùng hết sức mạnh của mình để mở cửa."
+    },
+    {
+      "id": 25256,
+      "quiz_meaning_vi": "quân đội",
+      "meaning_vi_clean": "quân đội; quân sự",
+      "examples_clean": [
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "He joined the military after high school.",
+          "example_vi": "Anh ấy gia nhập quân đội sau khi tốt nghiệp trung học."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "The military is responsible for national defense.",
+          "example_vi": "Quân đội chịu trách nhiệm về quốc phòng."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "Many people serve in the military.",
+          "example_vi": "Nhiều người phục vụ trong quân đội."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "The military base is located near the city.",
+          "example_vi": "Căn cứ quân đội nằm gần thành phố."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "They have a strong military tradition.",
+          "example_vi": "Họ có một truyền thống quân sự mạnh mẽ."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The government increased military spending.",
+          "example_vi": "Chính phủ đã tăng chi tiêu quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "He received military training last year.",
+          "example_vi": "Anh ấy đã nhận được sự huấn luyện quân sự vào năm ngoái."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The military equipment is very modern.",
+          "example_vi": "Thiết bị quân sự rất hiện đại."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "They discussed military strategy.",
+          "example_vi": "Họ đã thảo luận về chiến lược quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The military aircraft flew over the city.",
+          "example_vi": "Máy bay quân sự đã bay qua thành phố."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ adjective thành noun/adjective. Bổ sung ví dụ.",
+      "word": "military",
+      "normalized_word": "military",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He joined the military after high school.",
+      "example_vi_clean": "Anh ấy gia nhập quân đội sau khi tốt nghiệp trung học."
+    },
+    {
+      "id": 25257,
+      "quiz_meaning_vi": "triệu",
+      "meaning_vi_clean": "triệu",
+      "examples_clean": [
+        {
+          "meaning_vi": "triệu",
+          "example_en": "The population is over one million.",
+          "example_vi": "Dân số là hơn một triệu người."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "He won a million dollars in the lottery.",
+          "example_vi": "Anh ấy đã thắng một triệu đô la trong xổ số."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "The company has a million customers.",
+          "example_vi": "Công ty có một triệu khách hàng."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "It costs a million pounds to build.",
+          "example_vi": "Nó tốn một triệu bảng để xây dựng."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "There are millions of stars in the sky.",
+          "example_vi": "Có hàng triệu ngôi sao trên bầu trời."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "She has millions of followers online.",
+          "example_vi": "Cô ấy có hàng triệu người theo dõi trực tuyến."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "The project will take millions of dollars.",
+          "example_vi": "Dự án sẽ tốn hàng triệu đô la."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "Millions of people visit this city every year.",
+          "example_vi": "Hàng triệu người ghé thăm thành phố này mỗi năm."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "He donated a million to the charity.",
+          "example_vi": "Anh ấy đã quyên góp một triệu cho tổ chức từ thiện."
+        },
+        {
+          "meaning_vi": "triệu",
+          "example_en": "The book sold a million copies.",
+          "example_vi": "Cuốn sách đã bán được một triệu bản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Định nghĩa lại đơn giản và bổ sung 10 ví dụ.",
+      "word": "million",
+      "normalized_word": "million",
+      "cefr_level": "A2",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "The population is over one million.",
+      "example_vi_clean": "Dân số là hơn một triệu người."
+    },
+    {
+      "id": 25258,
+      "quiz_meaning_vi": "gương",
+      "meaning_vi_clean": "gương; phản chiếu",
+      "examples_clean": [
+        {
+          "meaning_vi": "gương",
+          "example_en": "She looked at herself in the mirror.",
+          "example_vi": "Cô ấy nhìn mình trong gương."
+        },
+        {
+          "meaning_vi": "gương",
+          "example_en": "He hung a mirror on the wall.",
+          "example_vi": "Anh ấy treo một cái gương trên tường."
+        },
+        {
+          "meaning_vi": "gương",
+          "example_en": "The mirror broke into many pieces.",
+          "example_vi": "Cái gương vỡ thành nhiều mảnh."
+        },
+        {
+          "meaning_vi": "gương",
+          "example_en": "Clean the mirror before you leave.",
+          "example_vi": "Lau sạch gương trước khi bạn rời đi."
+        },
+        {
+          "meaning_vi": "phản chiếu",
+          "example_en": "The water mirrored the blue sky.",
+          "example_vi": "Mặt nước phản chiếu bầu trời xanh."
+        },
+        {
+          "meaning_vi": "phản chiếu",
+          "example_en": "His actions mirror his true feelings.",
+          "example_vi": "Hành động của anh ấy phản chiếu cảm xúc thật của anh ấy."
+        },
+        {
+          "meaning_vi": "phản chiếu",
+          "example_en": "The movie mirrors the reality of life.",
+          "example_vi": "Bộ phim phản chiếu thực tế của cuộc sống."
+        },
+        {
+          "meaning_vi": "phản chiếu",
+          "example_en": "The glass mirrors the light.",
+          "example_vi": "Tấm kính phản chiếu ánh sáng."
+        },
+        {
+          "meaning_vi": "phản chiếu",
+          "example_en": "The results mirror the hard work of the team.",
+          "example_vi": "Kết quả phản chiếu sự làm việc chăm chỉ của cả đội."
+        },
+        {
+          "meaning_vi": "phản chiếu",
+          "example_en": "Her face mirrored her surprise.",
+          "example_vi": "Khuôn mặt cô ấy phản chiếu sự ngạc nhiên của cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành noun/verb. Bổ sung ví dụ.",
+      "word": "mirror",
+      "normalized_word": "mirror",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She looked at herself in the mirror.",
+      "example_vi_clean": "Cô ấy nhìn mình trong gương."
+    },
+    {
+      "id": 25259,
+      "quiz_meaning_vi": "vắng",
+      "meaning_vi_clean": "vắng; thiếu",
+      "examples_clean": [
+        {
+          "meaning_vi": "vắng",
+          "example_en": "He has been missing for two days.",
+          "example_vi": "Anh ấy đã vắng mặt được hai ngày rồi."
+        },
+        {
+          "meaning_vi": "vắng",
+          "example_en": "The teacher noticed that two students were missing.",
+          "example_vi": "Giáo viên nhận thấy hai học sinh đang vắng mặt."
+        },
+        {
+          "meaning_vi": "vắng",
+          "example_en": "She was missing from the meeting.",
+          "example_vi": "Cô ấy đã vắng mặt trong cuộc họp."
+        },
+        {
+          "meaning_vi": "vắng",
+          "example_en": "Many people are missing after the storm.",
+          "example_vi": "Nhiều người đang vắng mặt sau cơn bão."
+        },
+        {
+          "meaning_vi": "thiếu",
+          "example_en": "There is a page missing from this book.",
+          "example_vi": "Có một trang bị thiếu trong cuốn sách này."
+        },
+        {
+          "meaning_vi": "thiếu",
+          "example_en": "I found that some money was missing.",
+          "example_vi": "Tôi phát hiện ra một ít tiền đã bị thiếu."
+        },
+        {
+          "meaning_vi": "thiếu",
+          "example_en": "The key is missing from my bag.",
+          "example_vi": "Chìa khóa bị thiếu trong túi của tôi."
+        },
+        {
+          "meaning_vi": "thiếu",
+          "example_en": "Some information is missing in the report.",
+          "example_vi": "Một số thông tin bị thiếu trong báo cáo."
+        },
+        {
+          "meaning_vi": "thiếu",
+          "example_en": "The puzzle has a piece missing.",
+          "example_vi": "Trò chơi xếp hình bị thiếu một mảnh."
+        },
+        {
+          "meaning_vi": "thiếu",
+          "example_en": "There are some ingredients missing for the cake.",
+          "example_vi": "Có một vài nguyên liệu bị thiếu cho chiếc bánh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành adjective. Bổ sung ví dụ.",
+      "word": "missing",
+      "normalized_word": "missing",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has been missing for two days.",
+      "example_vi_clean": "Anh ấy đã vắng mặt được hai ngày rồi."
+    },
+    {
+      "id": 25260,
+      "quiz_meaning_vi": "lỗi",
+      "meaning_vi_clean": "lỗi; phạm sai lầm",
+      "examples_clean": [
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "I made a mistake in my homework.",
+          "example_vi": "Tôi đã mắc một lỗi trong bài tập về nhà."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "It was a big mistake to trust him.",
+          "example_vi": "Đó là một lỗi lớn khi tin tưởng anh ấy."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "There are many mistakes in this letter.",
+          "example_vi": "Có nhiều lỗi trong bức thư này."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "Everyone makes mistakes sometimes.",
+          "example_vi": "Ai cũng mắc lỗi đôi khi."
+        },
+        {
+          "meaning_vi": "phạm sai lầm",
+          "example_en": "Don't mistake his silence for agreement.",
+          "example_vi": "Đừng phạm sai lầm khi coi sự im lặng của anh ấy là đồng ý."
+        },
+        {
+          "meaning_vi": "phạm sai lầm",
+          "example_en": "I often mistake him for his brother.",
+          "example_vi": "Tôi thường phạm sai lầm khi nhầm anh ấy với anh trai của anh ấy."
+        },
+        {
+          "meaning_vi": "phạm sai lầm",
+          "example_en": "She mistook the salt for sugar.",
+          "example_vi": "Cô ấy đã phạm sai lầm khi nhầm muối với đường."
+        },
+        {
+          "meaning_vi": "phạm sai lầm",
+          "example_en": "They mistook the path in the dark.",
+          "example_vi": "Họ đã phạm sai lầm khi nhầm đường trong bóng tối."
+        },
+        {
+          "meaning_vi": "phạm sai lầm",
+          "example_en": "He mistook my kindness for weakness.",
+          "example_vi": "Anh ấy đã phạm sai lầm khi nhầm lòng tốt của tôi là sự yếu đuối."
+        },
+        {
+          "meaning_vi": "phạm sai lầm",
+          "example_en": "I mistook the time of the meeting.",
+          "example_vi": "Tôi đã phạm sai lầm khi nhầm thời gian cuộc họp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành noun/verb. Bổ sung ví dụ.",
+      "word": "mistake",
+      "normalized_word": "mistake",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I made a mistake in my homework.",
+      "example_vi_clean": "Tôi đã mắc một lỗi trong bài tập về nhà."
+    }
+  ]
+}

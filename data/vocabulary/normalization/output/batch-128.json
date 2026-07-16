@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25271,
+      "quiz_meaning_vi": "nhà bảo tàng",
+      "meaning_vi_clean": "nhà bảo tàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "We visited the city museum to see the ancient artifacts.",
+          "example_vi": "Chúng tôi đã đến thăm bảo tàng thành phố để xem các cổ vật."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "The museum is closed on Mondays for maintenance.",
+          "example_vi": "Bảo tàng đóng cửa vào thứ Hai để bảo trì."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "She works as a guide at the local history museum.",
+          "example_vi": "Cô ấy làm hướng dẫn viên tại bảo tàng lịch sử địa phương."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "The museum houses a vast collection of modern art.",
+          "example_vi": "Bảo tàng lưu giữ một bộ sưu tập nghệ thuật hiện đại khổng lồ."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "They spent the whole afternoon exploring the science museum.",
+          "example_vi": "Họ đã dành cả buổi chiều để khám phá bảo tàng khoa học."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "The museum entrance fee is quite affordable for students.",
+          "example_vi": "Phí vào cửa bảo tàng khá phải chăng cho sinh viên."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "Many schools organize field trips to the national museum.",
+          "example_vi": "Nhiều trường học tổ chức các chuyến đi thực tế đến bảo tàng quốc gia."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "The museum was founded over a century ago.",
+          "example_vi": "Bảo tàng được thành lập hơn một thế kỷ trước."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "You can find rare dinosaur fossils in this museum.",
+          "example_vi": "Bạn có thể tìm thấy những hóa thạch khủng long quý hiếm trong bảo tàng này."
+        },
+        {
+          "meaning_vi": "nhà bảo tàng",
+          "example_en": "The museum is located right in the heart of the city.",
+          "example_vi": "Bảo tàng nằm ngay trung tâm thành phố."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa phổ biến nhất, bổ sung đủ 10 ví dụ minh họa.",
+      "word": "museum",
+      "normalized_word": "museum",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We visited the city museum to see the ancient artifacts.",
+      "example_vi_clean": "Chúng tôi đã đến thăm bảo tàng thành phố để xem các cổ vật."
+    },
+    {
+      "id": 25272,
+      "quiz_meaning_vi": "nấm",
+      "meaning_vi_clean": "nấm; phát triển nhanh",
+      "examples_clean": [
+        {
+          "meaning_vi": "nấm",
+          "example_en": "Some mushrooms are edible and taste good.",
+          "example_vi": "Một số loại nấm có thể ăn được và có vị ngon."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "She added sliced mushrooms to the pasta sauce.",
+          "example_vi": "Cô ấy thêm nấm thái lát vào nước sốt mì ống."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "We went to the forest to pick wild mushrooms.",
+          "example_vi": "Chúng tôi đã vào rừng để hái nấm dại."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "Be careful, as some mushrooms are poisonous.",
+          "example_vi": "Hãy cẩn thận vì một số loại nấm có độc."
+        },
+        {
+          "meaning_vi": "phát triển nhanh",
+          "example_en": "The town’s population mushroomed from 10,000 to 110,000.",
+          "example_vi": "Dân số của thị trấn đã tăng vọt từ 10.000 lên 110.000 người."
+        },
+        {
+          "meaning_vi": "phát triển nhanh",
+          "example_en": "New cafes have mushroomed all over the city recently.",
+          "example_vi": "Các quán cà phê mới đã mọc lên nhanh chóng khắp thành phố gần đây."
+        },
+        {
+          "meaning_vi": "phát triển nhanh",
+          "example_en": "Small businesses mushroomed after the new law was passed.",
+          "example_vi": "Các doanh nghiệp nhỏ đã phát triển nhanh chóng sau khi luật mới được thông qua."
+        },
+        {
+          "meaning_vi": "phát triển nhanh",
+          "example_en": "The demand for electric cars has mushroomed this year.",
+          "example_vi": "Nhu cầu về xe điện đã tăng vọt trong năm nay."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "The soup is flavored with dried mushrooms.",
+          "example_vi": "Món súp được nêm nếm với nấm khô."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "He grows mushrooms in his backyard.",
+          "example_vi": "Anh ấy trồng nấm ở sân sau nhà mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, giữ 2 nghĩa phổ biến nhất.",
+      "word": "mushroom",
+      "normalized_word": "mushroom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Some mushrooms are edible and taste good.",
+      "example_vi_clean": "Một số loại nấm có thể ăn được và có vị ngon."
+    },
+    {
+      "id": 25273,
+      "quiz_meaning_vi": "nhạc",
+      "meaning_vi_clean": "nhạc; du dương",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "She has a great interest in musical history.",
+          "example_vi": "Cô ấy có sự quan tâm lớn đến lịch sử âm nhạc."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "They are attending a musical performance tonight.",
+          "example_vi": "Họ đang tham dự một buổi biểu diễn âm nhạc tối nay."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "He is a very musical person who plays three instruments.",
+          "example_vi": "Anh ấy là một người rất có năng khiếu âm nhạc và chơi được ba loại nhạc cụ."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "The school offers various musical activities for students.",
+          "example_vi": "Trường cung cấp nhiều hoạt động âm nhạc khác nhau cho học sinh."
+        },
+        {
+          "meaning_vi": "du dương",
+          "example_en": "She has a very musical voice that is pleasant to hear.",
+          "example_vi": "Cô ấy có một giọng nói rất du dương nghe rất dễ chịu."
+        },
+        {
+          "meaning_vi": "du dương",
+          "example_en": "The birds sang a musical tune in the morning.",
+          "example_vi": "Những chú chim hót một giai điệu du dương vào buổi sáng."
+        },
+        {
+          "meaning_vi": "du dương",
+          "example_en": "The sound of the flute was soft and musical.",
+          "example_vi": "Tiếng sáo nghe thật nhẹ nhàng và du dương."
+        },
+        {
+          "meaning_vi": "du dương",
+          "example_en": "His laughter had a musical quality to it.",
+          "example_vi": "Tiếng cười của anh ấy có một âm sắc du dương."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "We bought some new musical equipment for the band.",
+          "example_vi": "Chúng tôi đã mua một số thiết bị âm nhạc mới cho ban nhạc."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "The movie has a wonderful musical score.",
+          "example_vi": "Bộ phim có phần nhạc nền tuyệt vời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "musical",
+      "normalized_word": "musical",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has a great interest in musical history.",
+      "example_vi_clean": "Cô ấy có sự quan tâm lớn đến lịch sử âm nhạc."
+    },
+    {
+      "id": 25274,
+      "quiz_meaning_vi": "tự tôi",
+      "meaning_vi_clean": "tự tôi; chính tôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự tôi",
+          "example_en": "I taught myself how to play the guitar.",
+          "example_vi": "Tôi đã tự mình học cách chơi đàn ghi-ta."
+        },
+        {
+          "meaning_vi": "tự tôi",
+          "example_en": "I made this cake all by myself.",
+          "example_vi": "Tôi đã tự tay làm chiếc bánh này."
+        },
+        {
+          "meaning_vi": "tự tôi",
+          "example_en": "I prefer to do the work myself.",
+          "example_vi": "Tôi thích tự mình làm công việc đó."
+        },
+        {
+          "meaning_vi": "tự tôi",
+          "example_en": "I will handle the problem myself.",
+          "example_vi": "Tôi sẽ tự mình giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "chính tôi",
+          "example_en": "I myself saw him leave the building.",
+          "example_vi": "Chính tôi đã nhìn thấy anh ấy rời khỏi tòa nhà."
+        },
+        {
+          "meaning_vi": "chính tôi",
+          "example_en": "I myself don't believe the story is true.",
+          "example_vi": "Chính tôi cũng không tin câu chuyện đó là thật."
+        },
+        {
+          "meaning_vi": "chính tôi",
+          "example_en": "I myself prefer tea over coffee.",
+          "example_vi": "Bản thân tôi thì thích trà hơn cà phê."
+        },
+        {
+          "meaning_vi": "chính tôi",
+          "example_en": "I myself am responsible for this decision.",
+          "example_vi": "Chính tôi là người chịu trách nhiệm cho quyết định này."
+        },
+        {
+          "meaning_vi": "tự tôi",
+          "example_en": "I often talk to myself when I am thinking.",
+          "example_vi": "Tôi thường tự nói chuyện với chính mình khi đang suy nghĩ."
+        },
+        {
+          "meaning_vi": "tự tôi",
+          "example_en": "I bought a gift for myself.",
+          "example_vi": "Tôi đã tự mua một món quà cho chính mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "myself",
+      "normalized_word": "myself",
+      "cefr_level": "A2",
+      "pos": "pronoun",
+      "pos_vi_clean": "đại từ",
+      "example_en_clean": "I taught myself how to play the guitar.",
+      "example_vi_clean": "Tôi đã tự mình học cách chơi đàn ghi-ta."
+    },
+    {
+      "id": 25275,
+      "quiz_meaning_vi": "thần bí",
+      "meaning_vi_clean": "thần bí; khó hiểu",
+      "examples_clean": [
+        {
+          "meaning_vi": "thần bí",
+          "example_en": "The ancient temple has a mysterious atmosphere.",
+          "example_vi": "Ngôi đền cổ có một bầu không khí thần bí."
+        },
+        {
+          "meaning_vi": "thần bí",
+          "example_en": "She is interested in mysterious legends from the past.",
+          "example_vi": "Cô ấy quan tâm đến những truyền thuyết thần bí từ quá khứ."
+        },
+        {
+          "meaning_vi": "thần bí",
+          "example_en": "The forest looked mysterious in the moonlight.",
+          "example_vi": "Khu rừng trông thật thần bí dưới ánh trăng."
+        },
+        {
+          "meaning_vi": "thần bí",
+          "example_en": "He wrote a book about mysterious rituals.",
+          "example_vi": "Anh ấy đã viết một cuốn sách về các nghi lễ thần bí."
+        },
+        {
+          "meaning_vi": "khó hiểu",
+          "example_en": "He received a mysterious phone call this morning.",
+          "example_vi": "Anh ấy đã nhận được một cuộc gọi khó hiểu vào sáng nay."
+        },
+        {
+          "meaning_vi": "khó hiểu",
+          "example_en": "The reason for his sudden departure remains mysterious.",
+          "example_vi": "Lý do cho sự ra đi đột ngột của anh ấy vẫn còn rất khó hiểu."
+        },
+        {
+          "meaning_vi": "khó hiểu",
+          "example_en": "She gave me a mysterious smile and walked away.",
+          "example_vi": "Cô ấy nở một nụ cười khó hiểu rồi bỏ đi."
+        },
+        {
+          "meaning_vi": "khó hiểu",
+          "example_en": "There was a mysterious noise coming from the attic.",
+          "example_vi": "Có một tiếng động khó hiểu phát ra từ căn gác mái."
+        },
+        {
+          "meaning_vi": "thần bí",
+          "example_en": "The mysterious cave was hidden behind the waterfall.",
+          "example_vi": "Hang động thần bí bị che khuất sau thác nước."
+        },
+        {
+          "meaning_vi": "khó hiểu",
+          "example_en": "His behavior is quite mysterious to everyone.",
+          "example_vi": "Hành vi của anh ấy khá khó hiểu đối với mọi người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "mysterious",
+      "normalized_word": "mysterious",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The ancient temple has a mysterious atmosphere.",
+      "example_vi_clean": "Ngôi đền cổ có một bầu không khí thần bí."
+    },
+    {
+      "id": 25276,
+      "quiz_meaning_vi": "điều huyền bí",
+      "meaning_vi_clean": "điều huyền bí; bí mật",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều huyền bí",
+          "example_en": "The origin of the universe is still a mystery.",
+          "example_vi": "Nguồn gốc của vũ trụ vẫn là một điều huyền bí."
+        },
+        {
+          "meaning_vi": "điều huyền bí",
+          "example_en": "She loves reading stories about ancient mysteries.",
+          "example_vi": "Cô ấy thích đọc những câu chuyện về các điều huyền bí cổ xưa."
+        },
+        {
+          "meaning_vi": "điều huyền bí",
+          "example_en": "The disappearance of the ship remains a great mystery.",
+          "example_vi": "Sự biến mất của con tàu vẫn là một điều huyền bí lớn."
+        },
+        {
+          "meaning_vi": "điều huyền bí",
+          "example_en": "Life is full of mysteries waiting to be solved.",
+          "example_vi": "Cuộc sống đầy rẫy những điều huyền bí đang chờ được giải đáp."
+        },
+        {
+          "meaning_vi": "bí mật",
+          "example_en": "The contents of the letter were a complete mystery to me.",
+          "example_vi": "Nội dung của bức thư là một bí mật hoàn toàn đối với tôi."
+        },
+        {
+          "meaning_vi": "bí mật",
+          "example_en": "He kept his plans a mystery until the last moment.",
+          "example_vi": "Anh ấy giữ kín các kế hoạch của mình như một bí mật cho đến phút cuối."
+        },
+        {
+          "meaning_vi": "bí mật",
+          "example_en": "The identity of the winner is still a mystery.",
+          "example_vi": "Danh tính của người chiến thắng vẫn là một bí mật."
+        },
+        {
+          "meaning_vi": "bí mật",
+          "example_en": "It is no mystery why she is so successful.",
+          "example_vi": "Không có gì là bí mật khi biết tại sao cô ấy lại thành công đến vậy."
+        },
+        {
+          "meaning_vi": "điều huyền bí",
+          "example_en": "The forest is shrouded in mystery.",
+          "example_vi": "Khu rừng bị bao phủ trong những điều huyền bí."
+        },
+        {
+          "meaning_vi": "bí mật",
+          "example_en": "The mystery of the missing key was finally solved.",
+          "example_vi": "Bí mật về chiếc chìa khóa bị mất cuối cùng đã được giải đáp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "mystery",
+      "normalized_word": "mystery",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The origin of the universe is still a mystery.",
+      "example_vi_clean": "Nguồn gốc của vũ trụ vẫn là một điều huyền bí."
+    },
+    {
+      "id": 25277,
+      "quiz_meaning_vi": "khăn ăn",
+      "meaning_vi_clean": "khăn ăn; tả lót",
+      "examples_clean": [
+        {
+          "meaning_vi": "khăn ăn",
+          "example_en": "Please place your napkin on your lap before eating.",
+          "example_vi": "Vui lòng đặt khăn ăn lên đùi trước khi ăn."
+        },
+        {
+          "meaning_vi": "khăn ăn",
+          "example_en": "She wiped her mouth with a paper napkin.",
+          "example_vi": "Cô ấy lau miệng bằng một chiếc khăn ăn giấy."
+        },
+        {
+          "meaning_vi": "khăn ăn",
+          "example_en": "The waiter brought us fresh napkins.",
+          "example_vi": "Người phục vụ đã mang cho chúng tôi những chiếc khăn ăn sạch."
+        },
+        {
+          "meaning_vi": "khăn ăn",
+          "example_en": "He folded the napkin neatly beside his plate.",
+          "example_vi": "Anh ấy gấp chiếc khăn ăn gọn gàng bên cạnh đĩa của mình."
+        },
+        {
+          "meaning_vi": "tả lót",
+          "example_en": "The baby needs a clean napkin.",
+          "example_vi": "Em bé cần một chiếc tả lót sạch."
+        },
+        {
+          "meaning_vi": "tả lót",
+          "example_en": "She bought a pack of napkins for the baby.",
+          "example_vi": "Cô ấy đã mua một gói tả lót cho em bé."
+        },
+        {
+          "meaning_vi": "tả lót",
+          "example_en": "Changing the baby's napkin is a daily task.",
+          "example_vi": "Thay tả lót cho em bé là một công việc hàng ngày."
+        },
+        {
+          "meaning_vi": "tả lót",
+          "example_en": "She keeps extra napkins in the diaper bag.",
+          "example_vi": "Cô ấy giữ thêm tả lót trong túi đựng đồ cho bé."
+        },
+        {
+          "meaning_vi": "khăn ăn",
+          "example_en": "Use a napkin to clean up the spill.",
+          "example_vi": "Hãy dùng khăn ăn để lau chỗ bị đổ."
+        },
+        {
+          "meaning_vi": "khăn ăn",
+          "example_en": "The restaurant provides cloth napkins for guests.",
+          "example_vi": "Nhà hàng cung cấp khăn ăn bằng vải cho khách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "napkin",
+      "normalized_word": "napkin",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please place your napkin on your lap before eating.",
+      "example_vi_clean": "Vui lòng đặt khăn ăn lên đùi trước khi ăn."
+    },
+    {
+      "id": 25278,
+      "quiz_meaning_vi": "dân tộc",
+      "meaning_vi_clean": "dân tộc; quốc gia",
+      "examples_clean": [
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The country is home to many different ethnic nations.",
+          "example_vi": "Đất nước này là nơi sinh sống của nhiều dân tộc khác nhau."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "They are proud of their history as a nation.",
+          "example_vi": "Họ tự hào về lịch sử của dân tộc mình."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The nation celebrated its independence day.",
+          "example_vi": "Dân tộc đó đã ăn mừng ngày độc lập của mình."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The culture of the nation is very diverse.",
+          "example_vi": "Văn hóa của dân tộc này rất đa dạng."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The United Nations is an international organization.",
+          "example_vi": "Liên Hợp Quốc là một tổ chức quốc tế."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The government is working to improve the nation's economy.",
+          "example_vi": "Chính phủ đang nỗ lực cải thiện nền kinh tế của quốc gia."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "Many nations signed the peace treaty.",
+          "example_vi": "Nhiều quốc gia đã ký hiệp ước hòa bình."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The leader addressed the entire nation on television.",
+          "example_vi": "Nhà lãnh đạo đã phát biểu trước toàn thể quốc gia trên truyền hình."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The nation has a long and rich tradition.",
+          "example_vi": "Dân tộc này có một truyền thống lâu đời và phong phú."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The health of the nation is a top priority.",
+          "example_vi": "Sức khỏe của quốc gia là ưu tiên hàng đầu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "nation",
+      "normalized_word": "nation",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The country is home to many different ethnic nations.",
+      "example_vi_clean": "Đất nước này là nơi sinh sống của nhiều dân tộc khác nhau."
+    },
+    {
+      "id": 25279,
+      "quiz_meaning_vi": "dân tộc",
+      "meaning_vi_clean": "dân tộc; quốc gia",
+      "examples_clean": [
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The national identity is very important to them.",
+          "example_vi": "Bản sắc dân tộc rất quan trọng đối với họ."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "They held a national festival to celebrate their heritage.",
+          "example_vi": "Họ đã tổ chức một lễ hội dân tộc để tôn vinh di sản của mình."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The national pride was evident in their songs.",
+          "example_vi": "Lòng tự hào dân tộc được thể hiện rõ trong các bài hát của họ."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The national costume is worn on special occasions.",
+          "example_vi": "Trang phục dân tộc được mặc vào những dịp đặc biệt."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national government decided to lower taxes.",
+          "example_vi": "Chính phủ quốc gia đã quyết định giảm thuế."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national park is open to the public all year.",
+          "example_vi": "Công viên quốc gia mở cửa cho công chúng quanh năm."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "They are facing a national crisis.",
+          "example_vi": "Họ đang phải đối mặt với một cuộc khủng hoảng quốc gia."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national team won the championship.",
+          "example_vi": "Đội tuyển quốc gia đã giành chức vô địch."
+        },
+        {
+          "meaning_vi": "dân tộc",
+          "example_en": "The national anthem was played at the ceremony.",
+          "example_vi": "Quốc ca của dân tộc đã được cử hành tại buổi lễ."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national debt has increased significantly.",
+          "example_vi": "Nợ quốc gia đã tăng lên đáng kể."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, giữ 2 nghĩa phổ biến.",
+      "word": "national",
+      "normalized_word": "national",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The national identity is very important to them.",
+      "example_vi_clean": "Bản sắc dân tộc rất quan trọng đối với họ."
+    },
+    {
+      "id": 25280,
+      "quiz_meaning_vi": "nơi sinh",
+      "meaning_vi_clean": "nơi sinh; bẩm sinh",
+      "examples_clean": [
+        {
+          "meaning_vi": "nơi sinh",
+          "example_en": "She returned to her native land after many years.",
+          "example_vi": "Cô ấy đã trở về nơi sinh của mình sau nhiều năm."
+        },
+        {
+          "meaning_vi": "nơi sinh",
+          "example_en": "He still feels a strong connection to his native town.",
+          "example_vi": "Anh ấy vẫn cảm thấy một sự gắn kết mạnh mẽ với nơi sinh của mình."
+        },
+        {
+          "meaning_vi": "nơi sinh",
+          "example_en": "They visited the native village of their ancestors.",
+          "example_vi": "Họ đã đến thăm ngôi làng nơi sinh của tổ tiên mình."
+        },
+        {
+          "meaning_vi": "nơi sinh",
+          "example_en": "She speaks fondly of her native country.",
+          "example_vi": "Cô ấy nói một cách trìu mến về đất nước nơi sinh của mình."
+        },
+        {
+          "meaning_vi": "bẩm sinh",
+          "example_en": "English is not my native language.",
+          "example_vi": "Tiếng Anh không phải là ngôn ngữ bẩm sinh của tôi."
+        },
+        {
+          "meaning_vi": "bẩm sinh",
+          "example_en": "He has a native talent for painting.",
+          "example_vi": "Anh ấy có tài năng bẩm sinh về hội họa."
+        },
+        {
+          "meaning_vi": "bẩm sinh",
+          "example_en": "She has a native ability to learn languages quickly.",
+          "example_vi": "Cô ấy có khả năng bẩm sinh để học ngôn ngữ nhanh chóng."
+        },
+        {
+          "meaning_vi": "bẩm sinh",
+          "example_en": "Curiosity is a native trait in children.",
+          "example_vi": "Sự tò mò là một đặc điểm bẩm sinh ở trẻ em."
+        },
+        {
+          "meaning_vi": "nơi sinh",
+          "example_en": "The native plants grow well in this climate.",
+          "example_vi": "Các loài cây bản địa (nơi sinh) phát triển tốt trong khí hậu này."
+        },
+        {
+          "meaning_vi": "bẩm sinh",
+          "example_en": "His native intelligence helped him solve the puzzle.",
+          "example_vi": "Trí thông minh bẩm sinh đã giúp anh ấy giải được câu đố."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, giữ 2 nghĩa phổ biến.",
+      "word": "native",
+      "normalized_word": "native",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She returned to her native land after many years.",
+      "example_vi_clean": "Cô ấy đã trở về nơi sinh của mình sau nhiều năm."
+    }
+  ]
+}

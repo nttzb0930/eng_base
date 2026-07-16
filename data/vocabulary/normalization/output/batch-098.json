@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24971,
+      "quiz_meaning_vi": "phong bì",
+      "meaning_vi_clean": "phong bì; vỏ bọc",
+      "examples_clean": [
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "She put the letter into an envelope.",
+          "example_vi": "Cô ấy bỏ lá thư vào trong một chiếc phong bì."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "Please seal the envelope before mailing it.",
+          "example_vi": "Vui lòng dán kín phong bì trước khi gửi đi."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "I wrote the address on the envelope.",
+          "example_vi": "Tôi đã viết địa chỉ lên trên phong bì."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "He handed me a thick envelope.",
+          "example_vi": "Anh ấy đưa cho tôi một chiếc phong bì dày."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The product comes in a protective envelope.",
+          "example_vi": "Sản phẩm được bọc trong một lớp vỏ bảo vệ."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "She opened the envelope with a knife.",
+          "example_vi": "Cô ấy mở phong bì bằng một con dao."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "There was no return address on the envelope.",
+          "example_vi": "Không có địa chỉ người gửi trên phong bì."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The balloon has a strong outer envelope.",
+          "example_vi": "Khinh khí cầu có một lớp vỏ bọc bên ngoài chắc chắn."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "I found a stamp inside the envelope.",
+          "example_vi": "Tôi tìm thấy một con tem bên trong phong bì."
+        },
+        {
+          "meaning_vi": "phong bì",
+          "example_en": "He dropped the envelope into the mailbox.",
+          "example_vi": "Anh ấy thả phong bì vào hộp thư."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa chính thành phong bì, bổ sung nghĩa vỏ bọc và 10 ví dụ phù hợp.",
+      "word": "envelope",
+      "normalized_word": "envelope",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She put the letter into an envelope.",
+      "example_vi_clean": "Cô ấy bỏ lá thư vào trong một chiếc phong bì."
+    },
+    {
+      "id": 24972,
+      "quiz_meaning_vi": "sự ghen tị",
+      "meaning_vi_clean": "sự ghen tị; sự thèm muốn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "He looked at her success with envy.",
+          "example_vi": "Anh ấy nhìn thành công của cô ấy với sự ghen tị."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "She felt a pang of envy when she saw his new car.",
+          "example_vi": "Cô ấy cảm thấy một chút ghen tị khi nhìn thấy chiếc xe mới của anh ấy."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "Their lifestyle is the envy of all their friends.",
+          "example_vi": "Lối sống của họ là niềm ghen tị của tất cả bạn bè."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "There is no room for envy in our friendship.",
+          "example_vi": "Không có chỗ cho sự ghen tị trong tình bạn của chúng ta."
+        },
+        {
+          "meaning_vi": "sự thèm muốn",
+          "example_en": "He watched the delicious meal with envy.",
+          "example_vi": "Anh ấy nhìn bữa ăn ngon lành với sự thèm muốn."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "She tried to hide her envy of his promotion.",
+          "example_vi": "Cô ấy cố gắng che giấu sự ghen tị của mình về việc anh ấy được thăng chức."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "Envy can destroy even the best relationships.",
+          "example_vi": "Sự ghen tị có thể phá hủy cả những mối quan hệ tốt đẹp nhất."
+        },
+        {
+          "meaning_vi": "sự thèm muốn",
+          "example_en": "The beautiful garden was the envy of the neighborhood.",
+          "example_vi": "Khu vườn xinh đẹp đó là niềm thèm muốn của cả khu phố."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "He was filled with envy at her achievements.",
+          "example_vi": "Anh ấy tràn đầy sự ghen tị trước những thành tựu của cô ấy."
+        },
+        {
+          "meaning_vi": "sự ghen tị",
+          "example_en": "She overcame her envy and congratulated him.",
+          "example_vi": "Cô ấy đã vượt qua sự ghen tị của mình và chúc mừng anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ, chọn nghĩa phổ biến và bổ sung 10 ví dụ.",
+      "word": "envy",
+      "normalized_word": "envy",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He looked at her success with envy.",
+      "example_vi_clean": "Anh ấy nhìn thành công của cô ấy với sự ghen tị."
+    },
+    {
+      "id": 24973,
+      "quiz_meaning_vi": "tình tiết",
+      "meaning_vi_clean": "tình tiết; hồi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tình tiết",
+          "example_en": "It was a most embarrassing episode in my life.",
+          "example_vi": "Đó là một tình tiết đáng xấu hổ nhất trong cuộc đời tôi."
+        },
+        {
+          "meaning_vi": "hồi",
+          "example_en": "I can't wait till next week’s episode.",
+          "example_vi": "Tôi không thể chờ đợi đến hồi tiếp theo vào tuần tới."
+        },
+        {
+          "meaning_vi": "tình tiết",
+          "example_en": "This episode changed the course of the story.",
+          "example_vi": "Tình tiết này đã thay đổi diễn biến của câu chuyện."
+        },
+        {
+          "meaning_vi": "hồi",
+          "example_en": "The final episode of the series was very exciting.",
+          "example_vi": "Hồi cuối của loạt phim rất thú vị."
+        },
+        {
+          "meaning_vi": "tình tiết",
+          "example_en": "He recalled a funny episode from his childhood.",
+          "example_vi": "Anh ấy nhớ lại một tình tiết vui nhộn từ thời thơ ấu."
+        },
+        {
+          "meaning_vi": "hồi",
+          "example_en": "I missed the first episode of the show.",
+          "example_vi": "Tôi đã bỏ lỡ hồi đầu tiên của chương trình."
+        },
+        {
+          "meaning_vi": "tình tiết",
+          "example_en": "The whole episode was quite confusing.",
+          "example_vi": "Toàn bộ tình tiết đó khá khó hiểu."
+        },
+        {
+          "meaning_vi": "hồi",
+          "example_en": "Each episode lasts about thirty minutes.",
+          "example_vi": "Mỗi hồi kéo dài khoảng ba mươi phút."
+        },
+        {
+          "meaning_vi": "tình tiết",
+          "example_en": "She described the episode in great detail.",
+          "example_vi": "Cô ấy mô tả tình tiết đó một cách rất chi tiết."
+        },
+        {
+          "meaning_vi": "hồi",
+          "example_en": "They are filming a new episode today.",
+          "example_vi": "Họ đang quay một hồi mới vào hôm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ nghĩa cổ, bổ sung đủ 10 ví dụ.",
+      "word": "episode",
+      "normalized_word": "episode",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was a most embarrassing episode in my life.",
+      "example_vi_clean": "Đó là một tình tiết đáng xấu hổ nhất trong cuộc đời tôi."
+    },
+    {
+      "id": 24974,
+      "quiz_meaning_vi": "sự sai lầm",
+      "meaning_vi_clean": "sự sai lầm; lỗi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự sai lầm",
+          "example_en": "It was a serious error in judgment.",
+          "example_vi": "Đó là một sự sai lầm nghiêm trọng trong việc đánh giá."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "There is a small error in your calculation.",
+          "example_vi": "Có một lỗi nhỏ trong phép tính của bạn."
+        },
+        {
+          "meaning_vi": "sự sai lầm",
+          "example_en": "He admitted his error and apologized.",
+          "example_vi": "Anh ấy thừa nhận sự sai lầm của mình và xin lỗi."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "The computer program has a syntax error.",
+          "example_vi": "Chương trình máy tính này có một lỗi cú pháp."
+        },
+        {
+          "meaning_vi": "sự sai lầm",
+          "example_en": "We must learn from our past errors.",
+          "example_vi": "Chúng ta phải học hỏi từ những sự sai lầm trong quá khứ."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "Please check the document for any spelling errors.",
+          "example_vi": "Vui lòng kiểm tra tài liệu xem có lỗi chính tả nào không."
+        },
+        {
+          "meaning_vi": "sự sai lầm",
+          "example_en": "It was a common error to think so.",
+          "example_vi": "Đó là một sự sai lầm phổ biến khi nghĩ như vậy."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "The error was corrected in the new edition.",
+          "example_vi": "Lỗi đó đã được sửa trong ấn bản mới."
+        },
+        {
+          "meaning_vi": "sự sai lầm",
+          "example_en": "He made an error by trusting the wrong person.",
+          "example_vi": "Anh ấy đã phạm một sự sai lầm khi tin tưởng nhầm người."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "The system reported an error during the update.",
+          "example_vi": "Hệ thống đã báo một lỗi trong quá trình cập nhật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa chuyên ngành quá sâu, bổ sung đủ 10 ví dụ.",
+      "word": "error",
+      "normalized_word": "error",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was a serious error in judgment.",
+      "example_vi_clean": "Đó là một sự sai lầm nghiêm trọng trong việc đánh giá."
+    },
+    {
+      "id": 24975,
+      "quiz_meaning_vi": "cầu thang tự động",
+      "meaning_vi_clean": "cầu thang tự động",
+      "examples_clean": [
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "Take the escalator to the second floor.",
+          "example_vi": "Hãy đi cầu thang tự động lên tầng hai."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "The escalator is out of order today.",
+          "example_vi": "Cầu thang tự động đang bị hỏng hôm nay."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "She stood on the escalator with her bags.",
+          "example_vi": "Cô ấy đứng trên cầu thang tự động với những chiếc túi của mình."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "Please hold the handrail on the escalator.",
+          "example_vi": "Vui lòng giữ tay vịn trên cầu thang tự động."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "The escalator moves very slowly.",
+          "example_vi": "Cầu thang tự động di chuyển rất chậm."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "We took the escalator down to the subway.",
+          "example_vi": "Chúng tôi đi cầu thang tự động xuống tàu điện ngầm."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "The escalator was crowded with shoppers.",
+          "example_vi": "Cầu thang tự động đông đúc người mua sắm."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "He walked up the stationary escalator.",
+          "example_vi": "Anh ấy đi bộ lên chiếc cầu thang tự động đang đứng yên."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "The escalator connects the two floors.",
+          "example_vi": "Cầu thang tự động kết nối hai tầng."
+        },
+        {
+          "meaning_vi": "cầu thang tự động",
+          "example_en": "Be careful when stepping off the escalator.",
+          "example_vi": "Hãy cẩn thận khi bước ra khỏi cầu thang tự động."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ thành danh từ, loại bỏ nghĩa chuyên ngành, bổ sung đủ 10 ví dụ.",
+      "word": "escalator",
+      "normalized_word": "escalator",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Take the escalator to the second floor.",
+      "example_vi_clean": "Hãy đi cầu thang tự động lên tầng hai."
+    },
+    {
+      "id": 24976,
+      "quiz_meaning_vi": "sự trốn thoát",
+      "meaning_vi_clean": "sự trốn thoát; lối thoát; thoát ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự trốn thoát",
+          "example_en": "The prisoners made their escape by digging a tunnel.",
+          "example_vi": "Những tù nhân đã thực hiện sự trốn thoát bằng cách đào một đường hầm."
+        },
+        {
+          "meaning_vi": "lối thoát",
+          "example_en": "We need to find an escape from this situation.",
+          "example_vi": "Chúng ta cần tìm một lối thoát khỏi tình huống này."
+        },
+        {
+          "meaning_vi": "thoát ra",
+          "example_en": "Toxic gases escaped from the pipe.",
+          "example_vi": "Khí độc đã thoát ra từ đường ống."
+        },
+        {
+          "meaning_vi": "sự trốn thoát",
+          "example_en": "His escape was carefully planned.",
+          "example_vi": "Sự trốn thoát của anh ấy đã được lên kế hoạch kỹ lưỡng."
+        },
+        {
+          "meaning_vi": "lối thoát",
+          "example_en": "Is there any escape from this room?",
+          "example_vi": "Có lối thoát nào từ căn phòng này không?"
+        },
+        {
+          "meaning_vi": "thoát ra",
+          "example_en": "Water escaped through a crack in the wall.",
+          "example_vi": "Nước đã thoát ra qua một vết nứt trên tường."
+        },
+        {
+          "meaning_vi": "sự trốn thoát",
+          "example_en": "They managed a daring escape.",
+          "example_vi": "Họ đã thực hiện một sự trốn thoát táo bạo."
+        },
+        {
+          "meaning_vi": "lối thoát",
+          "example_en": "Books provide an escape from reality.",
+          "example_vi": "Sách cung cấp một lối thoát khỏi thực tại."
+        },
+        {
+          "meaning_vi": "thoát ra",
+          "example_en": "Smoke escaped from the chimney.",
+          "example_vi": "Khói thoát ra từ ống khói."
+        },
+        {
+          "meaning_vi": "sự trốn thoát",
+          "example_en": "The bird made its escape through the open window.",
+          "example_vi": "Con chim đã thực hiện sự trốn thoát qua cửa sổ mở."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ thành danh từ, chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "escape",
+      "normalized_word": "escape",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The prisoners made their escape by digging a tunnel.",
+      "example_vi_clean": "Những tù nhân đã thực hiện sự trốn thoát bằng cách đào một đường hầm."
+    },
+    {
+      "id": 24977,
+      "quiz_meaning_vi": "đặc biệt là",
+      "meaning_vi_clean": "đặc biệt là",
+      "examples_clean": [
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "Invite them all, especially Molly.",
+          "example_vi": "Hãy mời tất cả họ, đặc biệt là Molly."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "I love music, especially jazz.",
+          "example_vi": "Tôi yêu âm nhạc, đặc biệt là nhạc jazz."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "The weather is nice, especially in the morning.",
+          "example_vi": "Thời tiết rất đẹp, đặc biệt là vào buổi sáng."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "She likes all fruits, especially apples.",
+          "example_vi": "Cô ấy thích tất cả các loại trái cây, đặc biệt là táo."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "It was a cold day, especially in the evening.",
+          "example_vi": "Đó là một ngày lạnh, đặc biệt là vào buổi tối."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "He enjoys reading, especially history books.",
+          "example_vi": "Anh ấy thích đọc sách, đặc biệt là sách lịch sử."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "The city is beautiful, especially at night.",
+          "example_vi": "Thành phố rất đẹp, đặc biệt là vào ban đêm."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "I am busy today, especially in the afternoon.",
+          "example_vi": "Tôi rất bận hôm nay, đặc biệt là vào buổi chiều."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "They are very kind, especially to children.",
+          "example_vi": "Họ rất tử tế, đặc biệt là với trẻ em."
+        },
+        {
+          "meaning_vi": "đặc biệt là",
+          "example_en": "I like this house, especially the garden.",
+          "example_vi": "Tôi thích ngôi nhà này, đặc biệt là khu vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "especially",
+      "normalized_word": "especially",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Invite them all, especially Molly.",
+      "example_vi_clean": "Hãy mời tất cả họ, đặc biệt là Molly."
+    },
+    {
+      "id": 24978,
+      "quiz_meaning_vi": "bài tiểu luận",
+      "meaning_vi_clean": "bài tiểu luận; sự cố gắng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "I have to write an essay for my class.",
+          "example_vi": "Tôi phải viết một bài tiểu luận cho lớp học của mình."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "Her essay on history was very interesting.",
+          "example_vi": "Bài tiểu luận về lịch sử của cô ấy rất thú vị."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "He finished his essay late last night.",
+          "example_vi": "Anh ấy đã hoàn thành bài tiểu luận của mình vào đêm muộn hôm qua."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "The teacher graded the essay carefully.",
+          "example_vi": "Giáo viên đã chấm bài tiểu luận một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "sự cố gắng",
+          "example_en": "It was a brave essay to solve the problem.",
+          "example_vi": "Đó là một sự cố gắng dũng cảm để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "She is researching for her essay.",
+          "example_vi": "Cô ấy đang nghiên cứu cho bài tiểu luận của mình."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "The essay is due tomorrow morning.",
+          "example_vi": "Bài tiểu luận phải nộp vào sáng mai."
+        },
+        {
+          "meaning_vi": "sự cố gắng",
+          "example_en": "His essay to climb the mountain was successful.",
+          "example_vi": "Sự cố gắng leo núi của anh ấy đã thành công."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "I need to edit my essay again.",
+          "example_vi": "Tôi cần chỉnh sửa bài tiểu luận của mình lần nữa."
+        },
+        {
+          "meaning_vi": "bài tiểu luận",
+          "example_en": "The essay covers many important topics.",
+          "example_vi": "Bài tiểu luận bao gồm nhiều chủ đề quan trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ thành danh từ, chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "essay",
+      "normalized_word": "essay",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have to write an essay for my class.",
+      "example_vi_clean": "Tôi phải viết một bài tiểu luận cho lớp học của mình."
+    },
+    {
+      "id": 24979,
+      "quiz_meaning_vi": "thành lập",
+      "meaning_vi_clean": "thành lập; xác minh",
+      "examples_clean": [
+        {
+          "meaning_vi": "thành lập",
+          "example_en": "They want to establish a new company.",
+          "example_vi": "Họ muốn thành lập một công ty mới."
+        },
+        {
+          "meaning_vi": "thành lập",
+          "example_en": "The school was established in 1990.",
+          "example_vi": "Ngôi trường được thành lập vào năm 1990."
+        },
+        {
+          "meaning_vi": "xác minh",
+          "example_en": "The police are trying to establish the facts.",
+          "example_vi": "Cảnh sát đang cố gắng xác minh các sự kiện."
+        },
+        {
+          "meaning_vi": "thành lập",
+          "example_en": "We need to establish a good relationship.",
+          "example_vi": "Chúng ta cần thành lập một mối quan hệ tốt đẹp."
+        },
+        {
+          "meaning_vi": "xác minh",
+          "example_en": "They established that he was innocent.",
+          "example_vi": "Họ đã xác minh rằng anh ấy vô tội."
+        },
+        {
+          "meaning_vi": "thành lập",
+          "example_en": "The government established a new committee.",
+          "example_vi": "Chính phủ đã thành lập một ủy ban mới."
+        },
+        {
+          "meaning_vi": "xác minh",
+          "example_en": "It is hard to establish the truth.",
+          "example_vi": "Rất khó để xác minh sự thật."
+        },
+        {
+          "meaning_vi": "thành lập",
+          "example_en": "They established a base in the city.",
+          "example_vi": "Họ đã thành lập một căn cứ trong thành phố."
+        },
+        {
+          "meaning_vi": "xác minh",
+          "example_en": "We must establish the cause of the fire.",
+          "example_vi": "Chúng ta phải xác minh nguyên nhân của vụ cháy."
+        },
+        {
+          "meaning_vi": "thành lập",
+          "example_en": "She established her own business last year.",
+          "example_vi": "Cô ấy đã thành lập doanh nghiệp riêng của mình vào năm ngoái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "establish",
+      "normalized_word": "establish",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They want to establish a new company.",
+      "example_vi_clean": "Họ muốn thành lập một công ty mới."
+    },
+    {
+      "id": 24980,
+      "quiz_meaning_vi": "đồng euro",
+      "meaning_vi_clean": "đồng euro",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "The price is ten euros.",
+          "example_vi": "Giá là mười đồng euro."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "I have only five euros in my pocket.",
+          "example_vi": "Tôi chỉ có năm đồng euro trong túi."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "They pay in euros.",
+          "example_vi": "Họ thanh toán bằng đồng euro."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "The euro is used in many countries.",
+          "example_vi": "Đồng euro được sử dụng ở nhiều quốc gia."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "He exchanged his money for euros.",
+          "example_vi": "Anh ấy đã đổi tiền của mình sang đồng euro."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "The ticket costs twenty euros.",
+          "example_vi": "Vé có giá hai mươi đồng euro."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "She saved a hundred euros.",
+          "example_vi": "Cô ấy đã tiết kiệm được một trăm đồng euro."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "Do you have any euros?",
+          "example_vi": "Bạn có đồng euro nào không?"
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "The total is fifty euros.",
+          "example_vi": "Tổng cộng là năm mươi đồng euro."
+        },
+        {
+          "meaning_vi": "đồng euro",
+          "example_en": "I need to withdraw some euros.",
+          "example_vi": "Tôi cần rút một ít đồng euro."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa, loại bỏ nghĩa sai về loài vật, bổ sung đủ 10 ví dụ.",
+      "word": "euro",
+      "normalized_word": "euro",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The price is ten euros.",
+      "example_vi_clean": "Giá là mười đồng euro."
+    }
+  ]
+}

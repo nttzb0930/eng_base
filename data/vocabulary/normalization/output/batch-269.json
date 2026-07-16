@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26681,
+      "quiz_meaning_vi": "sự nhượng bộ",
+      "meaning_vi_clean": "sự nhượng bộ; sự nhượng quyền",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nhượng bộ",
+          "example_en": "The government made a major concession to the protesters.",
+          "example_vi": "Chính phủ đã đưa ra một sự nhượng bộ lớn đối với những người biểu tình."
+        },
+        {
+          "meaning_vi": "sự nhượng bộ",
+          "example_en": "Both sides had to make concessions to reach an agreement.",
+          "example_vi": "Cả hai bên đều phải nhượng bộ để đạt được thỏa thuận."
+        },
+        {
+          "meaning_vi": "sự nhượng bộ",
+          "example_en": "He refused to make any concessions during the negotiation.",
+          "example_vi": "Anh ấy từ chối đưa ra bất kỳ sự nhượng bộ nào trong cuộc đàm phán."
+        },
+        {
+          "meaning_vi": "sự nhượng bộ",
+          "example_en": "The company offered a concession to avoid a strike.",
+          "example_vi": "Công ty đã đưa ra một sự nhượng bộ để tránh một cuộc đình công."
+        },
+        {
+          "meaning_vi": "sự nhượng quyền",
+          "example_en": "They were granted a concession to operate the railway line.",
+          "example_vi": "Họ đã được cấp quyền nhượng quyền để vận hành tuyến đường sắt."
+        },
+        {
+          "meaning_vi": "sự nhượng quyền",
+          "example_en": "The mining concession was sold to a foreign firm.",
+          "example_vi": "Quyền khai thác mỏ đã được bán cho một công ty nước ngoài."
+        },
+        {
+          "meaning_vi": "sự nhượng quyền",
+          "example_en": "She manages a food concession at the local stadium.",
+          "example_vi": "Cô ấy quản lý một quầy hàng nhượng quyền tại sân vận động địa phương."
+        },
+        {
+          "meaning_vi": "sự nhượng quyền",
+          "example_en": "The government revoked the concession due to contract violations.",
+          "example_vi": "Chính phủ đã thu hồi quyền nhượng quyền do vi phạm hợp đồng."
+        },
+        {
+          "meaning_vi": "sự nhượng bộ",
+          "example_en": "It was a small concession, but it helped ease the tension.",
+          "example_vi": "Đó là một sự nhượng bộ nhỏ, nhưng nó đã giúp làm dịu căng thẳng."
+        },
+        {
+          "meaning_vi": "sự nhượng quyền",
+          "example_en": "The new law regulates how concessions are awarded.",
+          "example_vi": "Luật mới quy định cách thức cấp các quyền nhượng quyền."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành sự nhượng bộ, bổ sung nghĩa sự nhượng quyền, thêm 10 ví dụ.",
+      "word": "concession",
+      "normalized_word": "concession",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The government made a major concession to the protesters.",
+      "example_vi_clean": "Chính phủ đã đưa ra một sự nhượng bộ lớn đối với những người biểu tình."
+    },
+    {
+      "id": 26682,
+      "quiz_meaning_vi": "cụ thể",
+      "meaning_vi_clean": "cụ thể; bằng bê tông",
+      "examples_clean": [
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "I need a more concrete example to understand your point.",
+          "example_vi": "Tôi cần một ví dụ cụ thể hơn để hiểu ý của bạn."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "The plan lacks concrete details about the budget.",
+          "example_vi": "Kế hoạch thiếu các chi tiết cụ thể về ngân sách."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "We have no concrete evidence that he was there.",
+          "example_vi": "Chúng tôi không có bằng chứng cụ thể nào cho thấy anh ấy đã ở đó."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "She gave me some concrete advice on how to improve.",
+          "example_vi": "Cô ấy đã cho tôi một vài lời khuyên cụ thể về cách cải thiện."
+        },
+        {
+          "meaning_vi": "bằng bê tông",
+          "example_en": "The bridge is built of reinforced concrete.",
+          "example_vi": "Cây cầu được xây bằng bê tông cốt thép."
+        },
+        {
+          "meaning_vi": "bằng bê tông",
+          "example_en": "They poured concrete for the new driveway.",
+          "example_vi": "Họ đã đổ bê tông cho lối đi mới."
+        },
+        {
+          "meaning_vi": "bằng bê tông",
+          "example_en": "The floor is made of polished concrete.",
+          "example_vi": "Sàn nhà được làm bằng bê tông mài."
+        },
+        {
+          "meaning_vi": "bằng bê tông",
+          "example_en": "The walls are made of solid concrete blocks.",
+          "example_vi": "Các bức tường được làm bằng các khối bê tông đặc."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "Can you be more concrete about your requirements?",
+          "example_vi": "Bạn có thể cụ thể hơn về các yêu cầu của mình không?"
+        },
+        {
+          "meaning_vi": "bằng bê tông",
+          "example_en": "The foundation is a thick slab of concrete.",
+          "example_vi": "Nền móng là một tấm bê tông dày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành tính từ, chọn nghĩa phổ biến, thêm 10 ví dụ.",
+      "word": "concrete",
+      "normalized_word": "concrete",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I need a more concrete example to understand your point.",
+      "example_vi_clean": "Tôi cần một ví dụ cụ thể hơn để hiểu ý của bạn."
+    },
+    {
+      "id": 26683,
+      "quiz_meaning_vi": "kết án",
+      "meaning_vi_clean": "kết án; lên án",
+      "examples_clean": [
+        {
+          "meaning_vi": "kết án",
+          "example_en": "The judge condemned the criminal to ten years in prison.",
+          "example_vi": "Thẩm phán đã kết án tên tội phạm mười năm tù."
+        },
+        {
+          "meaning_vi": "kết án",
+          "example_en": "He was condemned for his crimes against the state.",
+          "example_vi": "Anh ta đã bị kết án vì những tội ác chống lại nhà nước."
+        },
+        {
+          "meaning_vi": "kết án",
+          "example_en": "The jury condemned the defendant after hearing the evidence.",
+          "example_vi": "Bồi thẩm đoàn đã kết án bị cáo sau khi nghe bằng chứng."
+        },
+        {
+          "meaning_vi": "kết án",
+          "example_en": "The court condemned him to life imprisonment.",
+          "example_vi": "Tòa án đã kết án anh ta tù chung thân."
+        },
+        {
+          "meaning_vi": "lên án",
+          "example_en": "The international community condemned the act of violence.",
+          "example_vi": "Cộng đồng quốc tế đã lên án hành động bạo lực đó."
+        },
+        {
+          "meaning_vi": "lên án",
+          "example_en": "Politicians were quick to condemn the terrorist attack.",
+          "example_vi": "Các chính trị gia đã nhanh chóng lên án vụ tấn công khủng bố."
+        },
+        {
+          "meaning_vi": "lên án",
+          "example_en": "We strongly condemn any form of discrimination.",
+          "example_vi": "Chúng tôi cực lực lên án mọi hình thức phân biệt đối xử."
+        },
+        {
+          "meaning_vi": "lên án",
+          "example_en": "She condemned his behavior as completely unacceptable.",
+          "example_vi": "Cô ấy lên án hành vi của anh ta là hoàn toàn không thể chấp nhận được."
+        },
+        {
+          "meaning_vi": "lên án",
+          "example_en": "The report condemns the lack of safety measures.",
+          "example_vi": "Bản báo cáo lên án sự thiếu hụt các biện pháp an toàn."
+        },
+        {
+          "meaning_vi": "kết án",
+          "example_en": "The prisoner was condemned to death.",
+          "example_vi": "Tù nhân đã bị kết án tử hình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa lên án, thêm 10 ví dụ.",
+      "word": "condemn",
+      "normalized_word": "condemn",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The judge condemned the criminal to ten years in prison.",
+      "example_vi_clean": "Thẩm phán đã kết án tên tội phạm mười năm tù."
+    },
+    {
+      "id": 26684,
+      "quiz_meaning_vi": "người chỉ huy",
+      "meaning_vi_clean": "người chỉ huy; người bán vé; chất dẫn",
+      "examples_clean": [
+        {
+          "meaning_vi": "người chỉ huy",
+          "example_en": "The conductor raised his baton to start the orchestra.",
+          "example_vi": "Người chỉ huy giơ gậy chỉ huy lên để bắt đầu dàn nhạc."
+        },
+        {
+          "meaning_vi": "người chỉ huy",
+          "example_en": "The conductor led the choir through the difficult piece.",
+          "example_vi": "Người chỉ huy dẫn dắt dàn hợp xướng qua tác phẩm khó."
+        },
+        {
+          "meaning_vi": "người chỉ huy",
+          "example_en": "She is a world-famous conductor of classical music.",
+          "example_vi": "Cô ấy là một người chỉ huy âm nhạc cổ điển nổi tiếng thế giới."
+        },
+        {
+          "meaning_vi": "người chỉ huy",
+          "example_en": "The conductor signaled the musicians to play louder.",
+          "example_vi": "Người chỉ huy ra hiệu cho các nhạc sĩ chơi to hơn."
+        },
+        {
+          "meaning_vi": "người bán vé",
+          "example_en": "The conductor checked our tickets on the train.",
+          "example_vi": "Người bán vé đã kiểm tra vé của chúng tôi trên tàu."
+        },
+        {
+          "meaning_vi": "người bán vé",
+          "example_en": "The bus conductor helped the elderly passenger board.",
+          "example_vi": "Người bán vé xe buýt đã giúp hành khách lớn tuổi lên xe."
+        },
+        {
+          "meaning_vi": "người bán vé",
+          "example_en": "I asked the conductor when we would arrive at the station.",
+          "example_vi": "Tôi hỏi người bán vé khi nào chúng tôi sẽ đến nhà ga."
+        },
+        {
+          "meaning_vi": "chất dẫn",
+          "example_en": "Copper is an excellent conductor of electricity.",
+          "example_vi": "Đồng là một chất dẫn điện tuyệt vời."
+        },
+        {
+          "meaning_vi": "chất dẫn",
+          "example_en": "Metal is a good conductor of heat.",
+          "example_vi": "Kim loại là một chất dẫn nhiệt tốt."
+        },
+        {
+          "meaning_vi": "chất dẫn",
+          "example_en": "Water is a conductor of electricity, so be careful.",
+          "example_vi": "Nước là một chất dẫn điện, vì vậy hãy cẩn thận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa người bán vé và chất dẫn, thêm 10 ví dụ.",
+      "word": "conductor",
+      "normalized_word": "conductor",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The conductor raised his baton to start the orchestra.",
+      "example_vi_clean": "Người chỉ huy giơ gậy chỉ huy lên để bắt đầu dàn nhạc."
+    },
+    {
+      "id": 26685,
+      "quiz_meaning_vi": "hình nón",
+      "meaning_vi_clean": "hình nón; vật hình nón",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The volcano has a perfect cone shape.",
+          "example_vi": "Ngọn núi lửa có hình nón hoàn hảo."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The geometry problem asked us to calculate the volume of a cone.",
+          "example_vi": "Bài toán hình học yêu cầu chúng tôi tính thể tích của một hình nón."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The ice cream was served in a crispy cone.",
+          "example_vi": "Kem được phục vụ trong một chiếc ốc quế hình nón."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The traffic cone warned drivers about the road work.",
+          "example_vi": "Chiếc cọc tiêu hình nón cảnh báo các tài xế về công trường đang thi công."
+        },
+        {
+          "meaning_vi": "vật hình nón",
+          "example_en": "She wore a party hat in the shape of a cone.",
+          "example_vi": "Cô ấy đội một chiếc mũ tiệc có hình nón."
+        },
+        {
+          "meaning_vi": "vật hình nón",
+          "example_en": "The pine tree produces a woody cone.",
+          "example_vi": "Cây thông tạo ra một quả thông hình nón."
+        },
+        {
+          "meaning_vi": "vật hình nón",
+          "example_en": "He placed a traffic cone to block the entrance.",
+          "example_vi": "Anh ấy đặt một chiếc cọc tiêu hình nón để chặn lối vào."
+        },
+        {
+          "meaning_vi": "vật hình nón",
+          "example_en": "The filter is shaped like a cone.",
+          "example_vi": "Bộ lọc có hình dạng giống như một hình nón."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The shadow cast by the light was a cone.",
+          "example_vi": "Cái bóng do ánh sáng tạo ra có hình nón."
+        },
+        {
+          "meaning_vi": "vật hình nón",
+          "example_en": "They used a cone to funnel the liquid into the bottle.",
+          "example_vi": "Họ dùng một cái phễu hình nón để rót chất lỏng vào chai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ, chọn nghĩa phổ biến, thêm 10 ví dụ.",
+      "word": "cone",
+      "normalized_word": "cone",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The volcano has a perfect cone shape.",
+      "example_vi_clean": "Ngọn núi lửa có hình nón hoàn hảo."
+    },
+    {
+      "id": 26686,
+      "quiz_meaning_vi": "sự bàn bạc",
+      "meaning_vi_clean": "sự bàn bạc; hội nghị",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự bàn bạc",
+          "example_en": "We had a brief conference to discuss the project.",
+          "example_vi": "Chúng tôi đã có một cuộc bàn bạc ngắn để thảo luận về dự án."
+        },
+        {
+          "meaning_vi": "sự bàn bạc",
+          "example_en": "The manager called a conference to address the issues.",
+          "example_vi": "Người quản lý đã triệu tập một cuộc bàn bạc để giải quyết các vấn đề."
+        },
+        {
+          "meaning_vi": "sự bàn bạc",
+          "example_en": "After a long conference, they reached a decision.",
+          "example_vi": "Sau một cuộc bàn bạc dài, họ đã đi đến quyết định."
+        },
+        {
+          "meaning_vi": "sự bàn bạc",
+          "example_en": "The team held a conference to plan the next steps.",
+          "example_vi": "Nhóm đã tổ chức một cuộc bàn bạc để lên kế hoạch cho các bước tiếp theo."
+        },
+        {
+          "meaning_vi": "hội nghị",
+          "example_en": "She is attending an international conference on climate change.",
+          "example_vi": "Cô ấy đang tham dự một hội nghị quốc tế về biến đổi khí hậu."
+        },
+        {
+          "meaning_vi": "hội nghị",
+          "example_en": "The annual conference will be held in London this year.",
+          "example_vi": "Hội nghị thường niên sẽ được tổ chức tại London năm nay."
+        },
+        {
+          "meaning_vi": "hội nghị",
+          "example_en": "He presented his research at the academic conference.",
+          "example_vi": "Anh ấy đã trình bày nghiên cứu của mình tại hội nghị học thuật."
+        },
+        {
+          "meaning_vi": "hội nghị",
+          "example_en": "The peace conference brought together leaders from both sides.",
+          "example_vi": "Hội nghị hòa bình đã tập hợp các nhà lãnh đạo từ cả hai phía."
+        },
+        {
+          "meaning_vi": "hội nghị",
+          "example_en": "I have to register for the conference by Friday.",
+          "example_vi": "Tôi phải đăng ký tham dự hội nghị trước thứ Sáu."
+        },
+        {
+          "meaning_vi": "sự bàn bạc",
+          "example_en": "They are in a private conference about the contract.",
+          "example_vi": "Họ đang trong một cuộc bàn bạc riêng tư về hợp đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa hội nghị, thêm 10 ví dụ.",
+      "word": "conference",
+      "normalized_word": "conference",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We had a brief conference to discuss the project.",
+      "example_vi_clean": "Chúng tôi đã có một cuộc bàn bạc ngắn để thảo luận về dự án."
+    },
+    {
+      "id": 26687,
+      "quiz_meaning_vi": "thú tội",
+      "meaning_vi_clean": "thú tội; thú nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "thú tội",
+          "example_en": "He finally confessed to the crime after hours of questioning.",
+          "example_vi": "Anh ta cuối cùng đã thú tội về tội ác sau nhiều giờ thẩm vấn."
+        },
+        {
+          "meaning_vi": "thú tội",
+          "example_en": "She confessed to the priest about her past mistakes.",
+          "example_vi": "Cô ấy đã thú tội với linh mục về những sai lầm trong quá khứ của mình."
+        },
+        {
+          "meaning_vi": "thú tội",
+          "example_en": "The suspect confessed to stealing the money.",
+          "example_vi": "Nghi phạm đã thú tội về việc lấy cắp số tiền."
+        },
+        {
+          "meaning_vi": "thú tội",
+          "example_en": "He was afraid to confess his sins.",
+          "example_vi": "Anh ấy sợ phải thú tội về những tội lỗi của mình."
+        },
+        {
+          "meaning_vi": "thú nhận",
+          "example_en": "I must confess that I forgot your birthday.",
+          "example_vi": "Tôi phải thú nhận rằng tôi đã quên sinh nhật của bạn."
+        },
+        {
+          "meaning_vi": "thú nhận",
+          "example_en": "She confessed that she didn't like the movie at all.",
+          "example_vi": "Cô ấy thú nhận rằng cô ấy hoàn toàn không thích bộ phim đó."
+        },
+        {
+          "meaning_vi": "thú nhận",
+          "example_en": "He confessed to being nervous before the interview.",
+          "example_vi": "Anh ấy thú nhận rằng mình đã rất lo lắng trước buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "thú nhận",
+          "example_en": "I confess I have no idea how to fix this.",
+          "example_vi": "Tôi thú nhận rằng tôi không biết làm thế nào để sửa việc này."
+        },
+        {
+          "meaning_vi": "thú nhận",
+          "example_en": "She confessed her love for him in a letter.",
+          "example_vi": "Cô ấy thú nhận tình yêu của mình dành cho anh ấy trong một lá thư."
+        },
+        {
+          "meaning_vi": "thú tội",
+          "example_en": "He decided to confess everything to the police.",
+          "example_vi": "Anh ấy quyết định thú tội mọi thứ với cảnh sát."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa thú nhận, thêm 10 ví dụ.",
+      "word": "confess",
+      "normalized_word": "confess",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He finally confessed to the crime after hours of questioning.",
+      "example_vi_clean": "Anh ta cuối cùng đã thú tội về tội ác sau nhiều giờ thẩm vấn."
+    },
+    {
+      "id": 26688,
+      "quiz_meaning_vi": "sự thú tội",
+      "meaning_vi_clean": "sự thú tội; sự thú nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thú tội",
+          "example_en": "The police obtained a full confession from the suspect.",
+          "example_vi": "Cảnh sát đã thu được một sự thú tội đầy đủ từ nghi phạm."
+        },
+        {
+          "meaning_vi": "sự thú tội",
+          "example_en": "His confession was used as evidence in court.",
+          "example_vi": "Sự thú tội của anh ta đã được sử dụng làm bằng chứng tại tòa."
+        },
+        {
+          "meaning_vi": "sự thú tội",
+          "example_en": "She made a confession to the priest yesterday.",
+          "example_vi": "Cô ấy đã thực hiện một sự thú tội với linh mục ngày hôm qua."
+        },
+        {
+          "meaning_vi": "sự thú tội",
+          "example_en": "The prisoner signed a written confession.",
+          "example_vi": "Tù nhân đã ký vào một bản thú tội bằng văn bản."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "Her confession of love surprised everyone.",
+          "example_vi": "Sự thú nhận tình yêu của cô ấy đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "He made a confession about his mistake.",
+          "example_vi": "Anh ấy đã đưa ra một sự thú nhận về sai lầm của mình."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "It was a difficult confession for him to make.",
+          "example_vi": "Đó là một sự thú nhận khó khăn đối với anh ấy."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "Her confession brought them closer together.",
+          "example_vi": "Sự thú nhận của cô ấy đã mang họ đến gần nhau hơn."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "He felt relieved after his confession.",
+          "example_vi": "Anh ấy cảm thấy nhẹ nhõm sau sự thú nhận của mình."
+        },
+        {
+          "meaning_vi": "sự thú tội",
+          "example_en": "The confession led to the arrest of his accomplices.",
+          "example_vi": "Sự thú tội đã dẫn đến việc bắt giữ các đồng phạm của anh ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa sự thú nhận, thêm 10 ví dụ.",
+      "word": "confession",
+      "normalized_word": "confession",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police obtained a full confession from the suspect.",
+      "example_vi_clean": "Cảnh sát đã thu được một sự thú tội đầy đủ từ nghi phạm."
+    },
+    {
+      "id": 26689,
+      "quiz_meaning_vi": "tự tin",
+      "meaning_vi_clean": "tự tin",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She spoke confidently about her future plans.",
+          "example_vi": "Cô ấy nói một cách tự tin về các kế hoạch tương lai của mình."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He walked confidently into the meeting room.",
+          "example_vi": "Anh ấy bước vào phòng họp một cách tự tin."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "The team played confidently throughout the match.",
+          "example_vi": "Đội đã chơi một cách tự tin trong suốt trận đấu."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She answered the questions confidently.",
+          "example_vi": "Cô ấy đã trả lời các câu hỏi một cách tự tin."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He smiled confidently at the audience.",
+          "example_vi": "Anh ấy mỉm cười một cách tự tin với khán giả."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "They are working confidently towards their goal.",
+          "example_vi": "Họ đang làm việc một cách tự tin hướng tới mục tiêu của mình."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She handled the difficult situation confidently.",
+          "example_vi": "Cô ấy đã xử lý tình huống khó khăn một cách tự tin."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He expressed his opinion confidently.",
+          "example_vi": "Anh ấy bày tỏ ý kiến của mình một cách tự tin."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "The students performed confidently on stage.",
+          "example_vi": "Các học sinh đã biểu diễn một cách tự tin trên sân khấu."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She moved confidently across the dance floor.",
+          "example_vi": "Cô ấy di chuyển một cách tự tin trên sàn nhảy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, thêm 10 ví dụ.",
+      "word": "confidently",
+      "normalized_word": "confidently",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "She spoke confidently about her future plans.",
+      "example_vi_clean": "Cô ấy nói một cách tự tin về các kế hoạch tương lai của mình."
+    },
+    {
+      "id": 26690,
+      "quiz_meaning_vi": "giam giữ",
+      "meaning_vi_clean": "giam giữ; hạn chế",
+      "examples_clean": [
+        {
+          "meaning_vi": "giam giữ",
+          "example_en": "He was confined to his room for a week.",
+          "example_vi": "Anh ấy bị giam giữ trong phòng của mình suốt một tuần."
+        },
+        {
+          "meaning_vi": "giam giữ",
+          "example_en": "The prisoners were confined in small cells.",
+          "example_vi": "Các tù nhân bị giam giữ trong những phòng giam nhỏ."
+        },
+        {
+          "meaning_vi": "giam giữ",
+          "example_en": "She was confined to a wheelchair after the accident.",
+          "example_vi": "Cô ấy bị giam giữ trên chiếc xe lăn sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "giam giữ",
+          "example_en": "The virus was confined to a specific area.",
+          "example_vi": "Vi-rút đã bị giam giữ trong một khu vực cụ thể."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "Please confine your comments to the topic at hand.",
+          "example_vi": "Vui lòng hạn chế các bình luận của bạn vào chủ đề đang thảo luận."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "We should confine our discussion to the main issues.",
+          "example_vi": "Chúng ta nên hạn chế cuộc thảo luận của mình vào các vấn đề chính."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The damage was confined to the kitchen area.",
+          "example_vi": "Thiệt hại đã bị hạn chế trong khu vực nhà bếp."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The study is confined to students in this school.",
+          "example_vi": "Nghiên cứu này bị hạn chế đối với học sinh trong trường này."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "He tried to confine his spending to a budget.",
+          "example_vi": "Anh ấy đã cố gắng hạn chế chi tiêu của mình trong một ngân sách."
+        },
+        {
+          "meaning_vi": "giam giữ",
+          "example_en": "The dog was confined to the backyard.",
+          "example_vi": "Con chó đã bị giam giữ trong sân sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành động từ, chọn nghĩa phổ biến, thêm 10 ví dụ.",
+      "word": "confine",
+      "normalized_word": "confine",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He was confined to his room for a week.",
+      "example_vi_clean": "Anh ấy bị giam giữ trong phòng của mình suốt một tuần."
+    }
+  ]
+}

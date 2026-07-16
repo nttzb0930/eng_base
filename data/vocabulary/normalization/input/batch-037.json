@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-037",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24361,
+      "word": "grass",
+      "normalized_word": "grass",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/grɑ:s/",
+      "primary_meaning_vi": "cỏ",
+      "meaning_vi": "cỏ; bâi cỏ, đồng cỏ; bãi cỏ, thảm cỏ (ở công viên); cây thân cỏ; mặt đất; măng tây; mùa xuân; đang gặm cỏ; đang nghỉ ngơi; không có việc; phỗng tay trên ai, nâng tay trên ai; ra đồng ăn cỏ (súc vật); ngã sóng soài (người); chết; chết quách đi cho rồi; rất thính tai; không để mất thì giờ (khi làm một việc gì); cho (súc vật) ra đồng ăn cỏ; đánh ngã sóng soài; để cỏ mọc; trồng cỏ; đánh ngã sóng soài; bắn rơi (chim); kéo (cá) về đất liền; đưa (quặng) lên mặt đất; căng (vải...) trên cỏ để phơi",
+      "example_en": "What just happened must remain secret. Don't be a 'grass.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24362,
+      "word": "gray",
+      "normalized_word": "gray",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/grei/ (gray) /grei/",
+      "primary_meaning_vi": "xám",
+      "meaning_vi": "xám; hoa râm (tóc); xanh xao, nhợt nhạt, xanh mét (nước da); u ám, ảm đạm (bầu trời); buồn bã, rầu rĩ (vẻ mặt); có kinh; già giặn, đầy kinh nghiệm; người vợ bắt nạt chồng; già đời trong nghề; màu xám; quần áo màu xám; ngựa xám; tô màu xám, quét màu xám; thành xám; thành hoa râm (tóc)",
+      "example_en": "My hair is beginning to gray.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the graying of America",
+          "example_vi": null
+        },
+        {
+          "example_en": "the gray dollar, i.e. the purchasing power of the elderly",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24363,
+      "word": "great",
+      "normalized_word": "great",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/greit/",
+      "primary_meaning_vi": "lớn",
+      "meaning_vi": "lớn, to lớn, vĩ đại; hết sức, rất; cao quý, ca cả, cao thượng; tuyệt hay, thật là thú vị; giỏi, thạo cừ, hiểu rõ, hiểu tường tận; thân (với ai); có mang, có chửa; tá mười ba; nhiều; mind; sống đến tận lúc tuổi già, sống lâu; rất quan tâm đến; (dùng như số nhiều) những người vĩ đại; số nhiều kỳ thi tốt nghiệp tú tài văn chương (tại trường đại học Ôc-phớt)",
+      "example_en": "Newton and Einstein are two of the greats of the history of science.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My three-greats grandmother.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A great storm is approaching our shores.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the great auk",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24364,
+      "word": "green",
+      "normalized_word": "green",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ làm cho xanh; nhuộm lục",
+      "phonetic": "/gri:n/",
+      "primary_meaning_vi": "xanh lá cây",
+      "meaning_vi": "xanh lá cây, (màu) lục; xanh; tươi; đầy sức sống; thanh xuân; chưa có kinh nghiệm, mới vào nghề; thơ ngây, cả tin; tái xanh, tái ngắt (nước da); ghen, ghen tức, ghen tị; còn mới, chưa lành, chưa liền (vết thương); màu xanh lá cây, màu xanh lục; quần áo màu lục; phẩm lục (để nhuộm); cây cỏ; bãi cỏ xanh, thảm cỏ xanh; rau; tuổi xanh, tuổi thanh xuân; sức sống, sức cường tráng; vẻ cả tin; vẻ ngây thơ non nớt; trở nên xanh lá cây, hoá thành màu lục; bịp, lừa bịp",
+      "example_en": "The former flag of Libya is fully green.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Sally looks pretty green — is she going to be sick?",
+          "example_vi": null
+        },
+        {
+          "example_en": "John's kind of green, so take it easy on him this first week.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was green with envy.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24365,
+      "word": "greet",
+      "normalized_word": "greet",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/gri:t/",
+      "primary_meaning_vi": "chào",
+      "meaning_vi": "chào, chào hỏi, đón chào; chào mừng, hoan hô; bày ra (trước mắt); đập vào (mắt, tai); vang đến, vọng đến (tai); khóc lóc, than khóc",
+      "example_en": "A brilliant dawn greeted her eyes as she looked out of the window.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24366,
+      "word": "grey",
+      "normalized_word": "grey",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/grei/ (gray) /grei/",
+      "primary_meaning_vi": "xám",
+      "meaning_vi": "xám; hoa râm (tóc); xanh xao, nhợt nhạt, xanh mét (nước da); u ám, ảm đạm (bầu trời); buồn bã, rầu rĩ (vẻ mặt); có kinh; già giặn, đầy kinh nghiệm; người vợ bắt nạt chồng; già đời trong nghề; màu xám; quần áo màu xám; ngựa xám; tô màu xám, quét màu xám; thành xám; thành hoa râm (tóc)",
+      "example_en": "Wash colored items separately from whites and darks to prevent the colors from bleeding.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The room was red, with a dark-colored rug.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The singer wore a colored shirt.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My opinions are colored by my upbringing.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24367,
+      "word": "ground",
+      "normalized_word": "ground",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/graund/",
+      "primary_meaning_vi": "mặt đất",
+      "meaning_vi": "mặt đất, đất; bâi đất, khu đất; ruộng đất (của ai); đất đai vườn tược; vị trí; khu đất; khoảng cách (trên mặt đất); đáy (biển, hồ...); nền; cặn bã; số nhiều) lý lẽ, lý do, căn cứ, cớ; sự tiếp đất; common; đi được đường dài; đề cập nhiều vấn đề (bản báo cáo, bài tường thuật...); năm trước ý đồ của ai mà làm cho tâng hẫng; down; vấn đề cần nói đến; gain; hy vọng tan vỡ; kế hoạch thất bại; đuổi đến tận hang; truy nguyên đến tận gốc; shift; dựa vào, căn cứ vào, đặt vào; truyền thụ (cho ai) những kiến thức vững vàng; đặt nền (cho một bức hoạ, bức thêu...); đặt xuống đất; làm cho (tàu) mắc cạn; làm cho (máy bay) không cất cánh; bắn rơi, làm rơi xuống đất; tiếp đất; mắc cạn; hạ cánh",
+      "example_en": "Look, I found a ten dollar bill on the ground!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The fox escaped from the hounds by going to ground.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He could not come on grounds of health, or on health grounds.",
+          "example_vi": null
+        },
+        {
+          "example_en": "crimson flowers on a white ground",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24368,
+      "word": "group",
+      "normalized_word": "group",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/gru:p/",
+      "primary_meaning_vi": "nhóm",
+      "meaning_vi": "nhóm; nhóm, gốc; hợp thành nhóm; tập hợp lại; phân loại, phân loại, phân hạng, phân phối theo nhóm; tạo nên sự hoà hợp màu sắc",
+      "example_en": "A group of people gathered in front of the Parliament to demonstrate against the Prime Minister's proposals.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Did you see the new jazz group?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Nitro is an electron-withdrawing group.",
+          "example_vi": null
+        },
+        {
+          "example_en": "group the dogs by hair colour",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24369,
+      "word": "grow",
+      "normalized_word": "grow",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/grou/",
+      "primary_meaning_vi": "mọc",
+      "meaning_vi": "mọc, mọc lên (cây cối); mọc mầm, đâm chồi nẩy nở; lớn, lớn lên (người); phát triển, tăng lên, lớn thêm; dần dần trở thành, dần dần trở nên; trồng (cây, hoa); để (râu, tóc...) mọc dài; mọc ngược, mọc đầu xuống dưới; giảm đi, bớt đi, kém đi, nhỏ đi; giảm đi, bớt đi; mọc vào trong; dính vào, cáu vào, khắc sâu vào; ăn sâu vào; nhiễm sâu vào, thấm sâu vào; ngày càng ảnh hưởng đến; ngày càng thích hơn; nảy sinh ra từ, phát sinh ra từ; bỏ (thói quen); quá, vượt quá (khổ, cỡ); đạt tới, tới, lên tới; lớn lên, trưởng thành; nảy sinh; lan rộng, trở thành phổ biến (phong tục, tập quán...)",
+      "example_en": "Children grow quickly.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A long tail began to grow from his backside.",
+          "example_vi": null
+        },
+        {
+          "example_en": "As I grew throughout adolescence, I came to appreciate many things about human nature.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Have you ever grown your hair before?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24370,
+      "word": "guest",
+      "normalized_word": "guest",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/gest/",
+      "primary_meaning_vi": "khách",
+      "meaning_vi": "khách; khách trọ (ở khách sạn); vật ký sinh; trùng ký sinh; cây ký sinh",
+      "example_en": "The guests were let in by the butler.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Guests must vacate their rooms by 10 o'clock on their day of departure.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The guest for the broadcast was a leading footballer.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

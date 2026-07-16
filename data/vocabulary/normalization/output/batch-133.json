@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25321,
+      "quiz_meaning_vi": "xong",
+      "meaning_vi_clean": "xong; kết thúc; hơn; lặp lại",
+      "examples_clean": [
+        {
+          "meaning_vi": "xong",
+          "example_en": "The meeting is finally over.",
+          "example_vi": "Cuộc họp cuối cùng đã xong."
+        },
+        {
+          "meaning_vi": "xong",
+          "example_en": "Is the work over yet?",
+          "example_vi": "Công việc đã xong chưa?"
+        },
+        {
+          "meaning_vi": "xong",
+          "example_en": "The long winter is over.",
+          "example_vi": "Mùa đông dài đã kết thúc."
+        },
+        {
+          "meaning_vi": "xong",
+          "example_en": "The game was over at five.",
+          "example_vi": "Trận đấu đã kết thúc lúc năm giờ."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "The movie is over now.",
+          "example_vi": "Bộ phim đã kết thúc rồi."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "The show is over.",
+          "example_vi": "Chương trình đã kết thúc."
+        },
+        {
+          "meaning_vi": "hơn",
+          "example_en": "It cost over ten dollars.",
+          "example_vi": "Nó tốn hơn mười đô la."
+        },
+        {
+          "meaning_vi": "hơn",
+          "example_en": "There were over fifty people.",
+          "example_vi": "Có hơn năm mươi người ở đó."
+        },
+        {
+          "meaning_vi": "lặp lại",
+          "example_en": "You have to do it over.",
+          "example_vi": "Bạn phải làm lại việc đó."
+        },
+        {
+          "meaning_vi": "lặp lại",
+          "example_en": "Read the instructions over again.",
+          "example_vi": "Hãy đọc lại các hướng dẫn lần nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'xong' cho phù hợp với từ loại adverb cấp A2. Bổ sung 10 ví dụ minh họa các nghĩa phổ biến.",
+      "word": "over",
+      "normalized_word": "over",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The meeting is finally over.",
+      "example_vi_clean": "Cuộc họp cuối cùng đã xong."
+    },
+    {
+      "id": 25322,
+      "quiz_meaning_vi": "béo quá",
+      "meaning_vi_clean": "béo quá; thừa cân",
+      "examples_clean": [
+        {
+          "meaning_vi": "béo quá",
+          "example_en": "He is slightly overweight.",
+          "example_vi": "Anh ấy hơi béo quá."
+        },
+        {
+          "meaning_vi": "béo quá",
+          "example_en": "Many children are now overweight.",
+          "example_vi": "Nhiều trẻ em hiện nay bị béo quá."
+        },
+        {
+          "meaning_vi": "béo quá",
+          "example_en": "She feels she is overweight.",
+          "example_vi": "Cô ấy cảm thấy mình bị béo quá."
+        },
+        {
+          "meaning_vi": "béo quá",
+          "example_en": "Being overweight can cause health issues.",
+          "example_vi": "Việc bị béo quá có thể gây ra các vấn đề sức khỏe."
+        },
+        {
+          "meaning_vi": "thừa cân",
+          "example_en": "The doctor said I am overweight.",
+          "example_vi": "Bác sĩ nói tôi bị thừa cân."
+        },
+        {
+          "meaning_vi": "thừa cân",
+          "example_en": "He is trying to lose weight because he is overweight.",
+          "example_vi": "Anh ấy đang cố giảm cân vì anh ấy bị thừa cân."
+        },
+        {
+          "meaning_vi": "thừa cân",
+          "example_en": "Many people are overweight due to poor diet.",
+          "example_vi": "Nhiều người bị thừa cân do chế độ ăn uống kém."
+        },
+        {
+          "meaning_vi": "thừa cân",
+          "example_en": "She is not overweight at all.",
+          "example_vi": "Cô ấy không hề bị thừa cân chút nào."
+        },
+        {
+          "meaning_vi": "thừa cân",
+          "example_en": "Being overweight is a common problem.",
+          "example_vi": "Thừa cân là một vấn đề phổ biến."
+        },
+        {
+          "meaning_vi": "thừa cân",
+          "example_en": "He was told he was overweight.",
+          "example_vi": "Anh ấy được bảo rằng anh ấy bị thừa cân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'béo quá' và làm sạch nghĩa. Bổ sung 10 ví dụ minh họa.",
+      "word": "overweight",
+      "normalized_word": "overweight",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is slightly overweight.",
+      "example_vi_clean": "Anh ấy hơi béo quá."
+    },
+    {
+      "id": 25323,
+      "quiz_meaning_vi": "thái bình",
+      "meaning_vi_clean": "thái bình; hoà bình",
+      "examples_clean": [
+        {
+          "meaning_vi": "thái bình",
+          "example_en": "They lived in a pacific state.",
+          "example_vi": "Họ sống trong một trạng thái thái bình."
+        },
+        {
+          "meaning_vi": "thái bình",
+          "example_en": "The ocean was calm and pacific.",
+          "example_vi": "Đại dương lặng lẽ và thái bình."
+        },
+        {
+          "meaning_vi": "thái bình",
+          "example_en": "He has a pacific nature.",
+          "example_vi": "Anh ấy có bản tính thái bình."
+        },
+        {
+          "meaning_vi": "thái bình",
+          "example_en": "The region is now pacific.",
+          "example_vi": "Khu vực này hiện đang thái bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "They seek a pacific solution.",
+          "example_vi": "Họ tìm kiếm một giải pháp hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "She is a pacific person.",
+          "example_vi": "Cô ấy là một người ưa hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "We need a pacific approach.",
+          "example_vi": "Chúng ta cần một cách tiếp cận hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "The talks were pacific in nature.",
+          "example_vi": "Các cuộc đàm phán mang tính chất hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "They prefer pacific methods.",
+          "example_vi": "Họ ưu tiên các phương pháp hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "A pacific agreement was reached.",
+          "example_vi": "Một thỏa thuận hoà bình đã đạt được."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và bổ sung ví dụ phù hợp với từ loại tính từ.",
+      "word": "pacific",
+      "normalized_word": "pacific",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They lived in a pacific state.",
+      "example_vi_clean": "Họ sống trong một trạng thái thái bình."
+    },
+    {
+      "id": 25324,
+      "quiz_meaning_vi": "bó",
+      "meaning_vi_clean": "bó; gói; đàn; bộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "bó",
+          "example_en": "He carried a pack of wood.",
+          "example_vi": "Anh ấy mang một bó củi."
+        },
+        {
+          "meaning_vi": "bó",
+          "example_en": "She bought a pack of flowers.",
+          "example_vi": "Cô ấy mua một bó hoa."
+        },
+        {
+          "meaning_vi": "bó",
+          "example_en": "He tied the sticks into a pack.",
+          "example_vi": "Anh ấy buộc các cành cây thành một bó."
+        },
+        {
+          "meaning_vi": "bó",
+          "example_en": "The pack was heavy.",
+          "example_vi": "Bó hàng đó rất nặng."
+        },
+        {
+          "meaning_vi": "gói",
+          "example_en": "I bought a pack of gum.",
+          "example_vi": "Tôi mua một gói kẹo cao su."
+        },
+        {
+          "meaning_vi": "gói",
+          "example_en": "He opened the pack carefully.",
+          "example_vi": "Anh ấy mở gói hàng một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "đàn",
+          "example_en": "A pack of wolves hunted together.",
+          "example_vi": "Một đàn sói săn mồi cùng nhau."
+        },
+        {
+          "meaning_vi": "đàn",
+          "example_en": "The pack of dogs ran past.",
+          "example_vi": "Đàn chó chạy ngang qua."
+        },
+        {
+          "meaning_vi": "bộ",
+          "example_en": "Do you have a pack of cards?",
+          "example_vi": "Bạn có bộ bài không?"
+        },
+        {
+          "meaning_vi": "bộ",
+          "example_en": "He lost a card from the pack.",
+          "example_vi": "Anh ấy làm mất một lá bài trong bộ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và làm sạch danh sách nghĩa. Bổ sung 10 ví dụ minh họa.",
+      "word": "pack",
+      "normalized_word": "pack",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He carried a pack of wood.",
+      "example_vi_clean": "Anh ấy mang một bó củi."
+    },
+    {
+      "id": 25325,
+      "quiz_meaning_vi": "thợ sơn",
+      "meaning_vi_clean": "thợ sơn; hoạ sĩ",
+      "examples_clean": [
+        {
+          "meaning_vi": "thợ sơn",
+          "example_en": "The painter is painting the wall.",
+          "example_vi": "Người thợ sơn đang sơn bức tường."
+        },
+        {
+          "meaning_vi": "thợ sơn",
+          "example_en": "We hired a painter for the house.",
+          "example_vi": "Chúng tôi đã thuê một thợ sơn cho ngôi nhà."
+        },
+        {
+          "meaning_vi": "thợ sơn",
+          "example_en": "The painter finished the job quickly.",
+          "example_vi": "Người thợ sơn đã hoàn thành công việc nhanh chóng."
+        },
+        {
+          "meaning_vi": "thợ sơn",
+          "example_en": "Ask the painter to use blue.",
+          "example_vi": "Hãy bảo người thợ sơn dùng màu xanh."
+        },
+        {
+          "meaning_vi": "hoạ sĩ",
+          "example_en": "She is a famous painter.",
+          "example_vi": "Cô ấy là một hoạ sĩ nổi tiếng."
+        },
+        {
+          "meaning_vi": "hoạ sĩ",
+          "example_en": "The painter used bright colors.",
+          "example_vi": "Người hoạ sĩ đã sử dụng những màu sắc tươi sáng."
+        },
+        {
+          "meaning_vi": "hoạ sĩ",
+          "example_en": "He studied to be a painter.",
+          "example_vi": "Anh ấy đã học để trở thành một hoạ sĩ."
+        },
+        {
+          "meaning_vi": "hoạ sĩ",
+          "example_en": "The painter displayed his work.",
+          "example_vi": "Người hoạ sĩ đã trưng bày tác phẩm của mình."
+        },
+        {
+          "meaning_vi": "hoạ sĩ",
+          "example_en": "Many painters love this park.",
+          "example_vi": "Nhiều hoạ sĩ yêu thích công viên này."
+        },
+        {
+          "meaning_vi": "hoạ sĩ",
+          "example_en": "The painter painted a beautiful portrait.",
+          "example_vi": "Người hoạ sĩ đã vẽ một bức chân dung tuyệt đẹp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và bổ sung ví dụ cho cả hai nghĩa.",
+      "word": "painter",
+      "normalized_word": "painter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The painter is painting the wall.",
+      "example_vi_clean": "Người thợ sơn đang sơn bức tường."
+    },
+    {
+      "id": 25326,
+      "quiz_meaning_vi": "bạn",
+      "meaning_vi_clean": "bạn; kết bạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bạn",
+          "example_en": "He is my best pal.",
+          "example_vi": "Anh ấy là người bạn thân nhất của tôi."
+        },
+        {
+          "meaning_vi": "bạn",
+          "example_en": "We have been pals for years.",
+          "example_vi": "Chúng tôi đã là bạn của nhau nhiều năm rồi."
+        },
+        {
+          "meaning_vi": "bạn",
+          "example_en": "Come on, pal, let's go.",
+          "example_vi": "Nào, bạn ơi, chúng ta đi thôi."
+        },
+        {
+          "meaning_vi": "bạn",
+          "example_en": "He is a good pal to have.",
+          "example_vi": "Anh ấy là một người bạn tốt."
+        },
+        {
+          "meaning_vi": "kết bạn",
+          "example_en": "They palled up at school.",
+          "example_vi": "Họ đã kết bạn với nhau ở trường."
+        },
+        {
+          "meaning_vi": "kết bạn",
+          "example_en": "He likes to pal around with his friends.",
+          "example_vi": "Anh ấy thích kết bạn và đi chơi với bạn bè."
+        },
+        {
+          "meaning_vi": "kết bạn",
+          "example_en": "They soon palled up.",
+          "example_vi": "Họ sớm kết bạn với nhau."
+        },
+        {
+          "meaning_vi": "kết bạn",
+          "example_en": "It is easy to pal up with him.",
+          "example_vi": "Thật dễ dàng để kết bạn với anh ấy."
+        },
+        {
+          "meaning_vi": "kết bạn",
+          "example_en": "They palled up during the trip.",
+          "example_vi": "Họ đã kết bạn trong suốt chuyến đi."
+        },
+        {
+          "meaning_vi": "kết bạn",
+          "example_en": "We palled up quickly.",
+          "example_vi": "Chúng tôi đã kết bạn với nhau nhanh chóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và bổ sung ví dụ.",
+      "word": "pal",
+      "normalized_word": "pal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is my best pal.",
+      "example_vi_clean": "Anh ấy là người bạn thân nhất của tôi."
+    },
+    {
+      "id": 25327,
+      "quiz_meaning_vi": "chảo",
+      "meaning_vi_clean": "chảo; đãi vàng; chỉ trích",
+      "examples_clean": [
+        {
+          "meaning_vi": "chảo",
+          "example_en": "Put the pan on the stove.",
+          "example_vi": "Đặt cái chảo lên bếp."
+        },
+        {
+          "meaning_vi": "chảo",
+          "example_en": "She used a frying pan.",
+          "example_vi": "Cô ấy đã dùng một cái chảo rán."
+        },
+        {
+          "meaning_vi": "chảo",
+          "example_en": "The pan is very hot.",
+          "example_vi": "Cái chảo rất nóng."
+        },
+        {
+          "meaning_vi": "chảo",
+          "example_en": "Wash the pan after cooking.",
+          "example_vi": "Rửa chảo sau khi nấu ăn."
+        },
+        {
+          "meaning_vi": "đãi vàng",
+          "example_en": "They pan for gold in the river.",
+          "example_vi": "Họ đãi vàng dưới sông."
+        },
+        {
+          "meaning_vi": "đãi vàng",
+          "example_en": "He panned for gold all day.",
+          "example_vi": "Anh ấy đã đãi vàng cả ngày."
+        },
+        {
+          "meaning_vi": "đãi vàng",
+          "example_en": "Did you find any gold when you panned?",
+          "example_vi": "Bạn có tìm thấy vàng khi đãi không?"
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "The critics panned the new movie.",
+          "example_vi": "Các nhà phê bình đã chỉ trích bộ phim mới."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "The play was panned by everyone.",
+          "example_vi": "Vở kịch đã bị mọi người chỉ trích."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "Don't pan my work so harshly.",
+          "example_vi": "Đừng chỉ trích công việc của tôi gay gắt như vậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và làm sạch danh sách nghĩa. Bổ sung 10 ví dụ.",
+      "word": "pan",
+      "normalized_word": "pan",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Put the pan on the stove.",
+      "example_vi_clean": "Đặt cái chảo lên bếp."
+    },
+    {
+      "id": 25328,
+      "quiz_meaning_vi": "sự hoảng sợ",
+      "meaning_vi_clean": "sự hoảng sợ; hoảng sợ; làm hoảng sợ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hoảng sợ",
+          "example_en": "There was a sense of panic.",
+          "example_vi": "Có một cảm giác hoảng sợ."
+        },
+        {
+          "meaning_vi": "sự hoảng sợ",
+          "example_en": "The fire caused a panic.",
+          "example_vi": "Đám cháy gây ra sự hoảng sợ."
+        },
+        {
+          "meaning_vi": "sự hoảng sợ",
+          "example_en": "He felt a sudden panic.",
+          "example_vi": "Anh ấy cảm thấy một sự hoảng sợ bất ngờ."
+        },
+        {
+          "meaning_vi": "sự hoảng sợ",
+          "example_en": "The news spread panic.",
+          "example_vi": "Tin tức lan truyền sự hoảng sợ."
+        },
+        {
+          "meaning_vi": "hoảng sợ",
+          "example_en": "Don't panic, everything is fine.",
+          "example_vi": "Đừng hoảng sợ, mọi thứ đều ổn."
+        },
+        {
+          "meaning_vi": "hoảng sợ",
+          "example_en": "She panicked when she saw the fire.",
+          "example_vi": "Cô ấy đã hoảng sợ khi nhìn thấy đám cháy."
+        },
+        {
+          "meaning_vi": "hoảng sợ",
+          "example_en": "He panicked and ran away.",
+          "example_vi": "Anh ấy đã hoảng sợ và bỏ chạy."
+        },
+        {
+          "meaning_vi": "làm hoảng sợ",
+          "example_en": "The loud noise panicked the horses.",
+          "example_vi": "Tiếng ồn lớn đã làm lũ ngựa hoảng sợ."
+        },
+        {
+          "meaning_vi": "làm hoảng sợ",
+          "example_en": "The sudden move panicked the crowd.",
+          "example_vi": "Cử chỉ bất ngờ đã làm đám đông hoảng sợ."
+        },
+        {
+          "meaning_vi": "làm hoảng sợ",
+          "example_en": "Nothing can panic him.",
+          "example_vi": "Không gì có thể làm anh ấy hoảng sợ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và làm sạch nghĩa. Bổ sung 10 ví dụ.",
+      "word": "panic",
+      "normalized_word": "panic",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There was a sense of panic.",
+      "example_vi_clean": "Có một cảm giác hoảng sợ."
+    },
+    {
+      "id": 25329,
+      "quiz_meaning_vi": "phần",
+      "meaning_vi_clean": "phần; vai trò; chia tách",
+      "examples_clean": [
+        {
+          "meaning_vi": "phần",
+          "example_en": "This is a small part of the plan.",
+          "example_vi": "Đây là một phần nhỏ của kế hoạch."
+        },
+        {
+          "meaning_vi": "phần",
+          "example_en": "He read a part of the book.",
+          "example_vi": "Anh ấy đã đọc một phần của cuốn sách."
+        },
+        {
+          "meaning_vi": "phần",
+          "example_en": "I enjoyed every part of the trip.",
+          "example_vi": "Tôi thích mọi phần của chuyến đi."
+        },
+        {
+          "meaning_vi": "phần",
+          "example_en": "This part is broken.",
+          "example_vi": "Phần này bị hỏng."
+        },
+        {
+          "meaning_vi": "vai trò",
+          "example_en": "She played a major part in the project.",
+          "example_vi": "Cô ấy đóng một vai trò quan trọng trong dự án."
+        },
+        {
+          "meaning_vi": "vai trò",
+          "example_en": "He has a difficult part to play.",
+          "example_vi": "Anh ấy có một vai trò khó khăn cần đảm nhận."
+        },
+        {
+          "meaning_vi": "vai trò",
+          "example_en": "Everyone has a part to play.",
+          "example_vi": "Mọi người đều có một vai trò cần thực hiện."
+        },
+        {
+          "meaning_vi": "chia tách",
+          "example_en": "They had to part ways.",
+          "example_vi": "Họ đã phải chia tách đường ai nấy đi."
+        },
+        {
+          "meaning_vi": "chia tách",
+          "example_en": "It is hard to part with old friends.",
+          "example_vi": "Thật khó để chia tách với những người bạn cũ."
+        },
+        {
+          "meaning_vi": "chia tách",
+          "example_en": "The curtains part in the middle.",
+          "example_vi": "Rèm cửa chia tách ở giữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và làm sạch nghĩa. Bổ sung 10 ví dụ.",
+      "word": "part",
+      "normalized_word": "part",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This is a small part of the plan.",
+      "example_vi_clean": "Đây là một phần nhỏ của kế hoạch."
+    },
+    {
+      "id": 25330,
+      "quiz_meaning_vi": "một phần",
+      "meaning_vi_clean": "một phần; phần nào",
+      "examples_clean": [
+        {
+          "meaning_vi": "một phần",
+          "example_en": "The work is partly finished.",
+          "example_vi": "Công việc đã được hoàn thành một phần."
+        },
+        {
+          "meaning_vi": "một phần",
+          "example_en": "He is partly responsible for the error.",
+          "example_vi": "Anh ấy chịu trách nhiệm một phần cho lỗi sai."
+        },
+        {
+          "meaning_vi": "một phần",
+          "example_en": "The house is partly made of wood.",
+          "example_vi": "Ngôi nhà được làm một phần bằng gỗ."
+        },
+        {
+          "meaning_vi": "một phần",
+          "example_en": "The success is partly due to luck.",
+          "example_vi": "Thành công này một phần là do may mắn."
+        },
+        {
+          "meaning_vi": "phần nào",
+          "example_en": "I partly agree with you.",
+          "example_vi": "Tôi phần nào đồng ý với bạn."
+        },
+        {
+          "meaning_vi": "phần nào",
+          "example_en": "She was partly right.",
+          "example_vi": "Cô ấy phần nào đã đúng."
+        },
+        {
+          "meaning_vi": "phần nào",
+          "example_en": "The plan is partly clear.",
+          "example_vi": "Kế hoạch phần nào đã rõ ràng."
+        },
+        {
+          "meaning_vi": "phần nào",
+          "example_en": "It is partly my fault.",
+          "example_vi": "Đó phần nào là lỗi của tôi."
+        },
+        {
+          "meaning_vi": "phần nào",
+          "example_en": "They are partly satisfied.",
+          "example_vi": "Họ phần nào đã hài lòng."
+        },
+        {
+          "meaning_vi": "phần nào",
+          "example_en": "The story is partly true.",
+          "example_vi": "Câu chuyện phần nào là sự thật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính và bổ sung ví dụ.",
+      "word": "partly",
+      "normalized_word": "partly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The work is partly finished.",
+      "example_vi_clean": "Công việc đã được hoàn thành một phần."
+    }
+  ]
+}

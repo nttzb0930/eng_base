@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-248",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26471,
+      "word": "beak",
+      "normalized_word": "beak",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi:k/",
+      "primary_meaning_vi": "mỏ (chim)",
+      "meaning_vi": "mỏ (chim); vật hình mỏ; mũi khoằm; mũi đe (đầu nhọn của cái đe); vòi ấm; thẩm phán, quan toà; giáo viên; hiệu trưởng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26472,
+      "word": "beam",
+      "normalized_word": "beam",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/bi:m/",
+      "primary_meaning_vi": "xà",
+      "meaning_vi": "xà, rầm; đòn, cán (cân); bắp (cây); trục cuốn chỉ (máy dệt); gạc chính (sừng hươu); đòn cân bằng; con lắc; sườn ngang của sàn tàu; sống neo; tín hiệu rađiô (cho máy bay); tầm xa (của loa phóng thanh); tia; chùm (ánh sáng); vẻ tươi cười rạng rỡ; nhẹ hơn, nhẹ bỗng lên (cán cân); bị thua; bên trái tàu; bên phải tàu; chiếu rọi (tia sáng); rạng rỡ, tươi cười; xác định của vị trí máy bay qua hệ thống rađa; rađiô phát đi (buổi phát thanh...)",
+      "example_en": "This ship has more beam than that one.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a beam of energy",
+          "example_vi": null
+        },
+        {
+          "example_en": "a beam of hope, or of comfort",
+          "example_vi": null
+        },
+        {
+          "example_en": "to beam forth light",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26473,
+      "word": "bearing",
+      "normalized_word": "bearing",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'beəriɳ/",
+      "primary_meaning_vi": "sự mang",
+      "meaning_vi": "sự mang; sự chịu đựng; sự sinh nở, sự sinh đẻ; phương diện, mặt (của một vấn đề); sự liên quan, mối quan hệ; ý nghĩa, nghĩa; cái giá, cái trụ, cái đệm,  cuxinê; ; (hàng không) quân... vị trí phương hướng; hình vẽ và chữ đề (trên quốc huy, huy hiệu...)",
+      "example_en": "to bear a railroad stock",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Judging from the look on his face, he wasn't bearing good news.",
+          "example_vi": null
+        },
+        {
+          "example_en": "By my readings, we're bearing due south, so we should turn about ten degrees east.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a gift-bearing visitor",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26474,
+      "word": "beat",
+      "normalized_word": "beat",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "(bất qui tắc) động từ beat; beaten,  beat",
+      "phonetic": "/bi:t/",
+      "primary_meaning_vi": "sự đập",
+      "meaning_vi": "sự đập; tiếng đập; khu vực đi tuần (của cảnh sát); sự đi tuần; cái trội hơn hẳn, cái vượt hơn hẳn; nhịp, nhịp đánh (của người chỉ huy dàn nhạc); phách; khu vực săn đuổi, cuộc săn đuổi; ,  (từ lóng) tin đăng đầu tiên (trước các báo cáo); ,  (từ lóng) người thất nghiệp; người sống lang thang đầu đường xó chợ; đánh đập, nện, đấm; vỗ (cánh); gõ, đánh (nhịp); thắng, đánh bại, vượt; đánh trống để ra lệnh, ra hiệu bệnh bằng trống; khua (bụi rậm... để lùa những con thú ra); khua (bụi...), khuấy (nước...) (để lùa ra); đi vát; đánh trống, hạ; làm thất vọng, làm chán nản; đánh thủng; đánh vỡ; đập bẹt ra, nện mỏng ra (kim loại...); dập tắt (ngọn lửa...); đánh (trứng, kem...); đi khắp (một vùng...); truy lùng, theo dõi (ai...); bắt, mộ (lính); đi vát, chạy giạt vào bờ; khua (bụi...), khuấy (nước...) (để lùa ra); nói quanh; ,  (từ lóng) chạy trốn cho nhanh; brain; hoàn toàn đánh bại ai; đánh ai tơi bời; quarter",
+      "example_en": "a beat of the heart; the beat of the pulse",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the beat of him",
+          "example_vi": null
+        },
+        {
+          "example_en": "As soon as she heard that her father had died, she went into a rage and beat the wall with her fists until her knuckles bled.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He danced hypnotically while she beat the atabaque.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26475,
+      "word": "beautify",
+      "normalized_word": "beautify",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'bju:tifai/",
+      "primary_meaning_vi": "làm đẹp",
+      "meaning_vi": "làm đẹp, tô điểm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26476,
+      "word": "bellow",
+      "normalized_word": "bellow",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/'belou/",
+      "primary_meaning_vi": "tiếng bò rống",
+      "meaning_vi": "tiếng bò rống; tiếng kêu rống lên (vì đau đớn...); tiếng gầm vang (sấm, súng)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26477,
+      "word": "belongings",
+      "normalized_word": "belongings",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "(bất qui tắc) danh từ số nhiều",
+      "phonetic": "/bi'lɔɳiɳz/",
+      "primary_meaning_vi": "của cải",
+      "meaning_vi": "của cải; đồ dùng; đồ đạc, hành lý (của ai); bà con họ hàng (của ai); những cái đó liên quan (tới một vấn đề gì)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26478,
+      "word": "bend",
+      "normalized_word": "bend",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/bentʃ/",
+      "primary_meaning_vi": "chỗ uốn",
+      "meaning_vi": "chỗ uốn, chỗ cong; chỗ rẽ; khuỷ (tay, chân); chỗ nối (hai đầu dây); chỗ thắt nút; the bends (thông tục) bệnh khí ép, bệnh thợ lặn; cúi xuống; cong xuống; uốn cong, làm cong; rẽ, hướng; hướng về, dồn về; khuất phục, bắt phải theo; nhất quyết",
+      "example_en": "There's a sharp bend in the road ahead.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A diver who stays deep for too long must ascend very slowly in order to prevent the bends.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the midship bends",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don’t bend your knees.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26479,
+      "word": "beneficial",
+      "normalized_word": "beneficial",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,beni'fiʃəl/",
+      "primary_meaning_vi": "có ích",
+      "meaning_vi": "có ích; có lợi; tốt; sinh hoa lợi (tài sản)",
+      "example_en": "Recycling and reusing garbage can be beneficial to the environment.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26480,
+      "word": "benevolence",
+      "normalized_word": "benevolence",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'nevələns/",
+      "primary_meaning_vi": "lòng nhân từ",
+      "meaning_vi": "lòng nhân từ, lòng nhân đức, lòng từ thiện; tính rộng lượng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

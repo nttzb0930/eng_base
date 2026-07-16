@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24301,
+      "quiz_meaning_vi": "cơn sốt",
+      "meaning_vi_clean": "cơn sốt; bệnh sốt; sự bồn chồn",
+      "examples_clean": [
+        {
+          "meaning_vi": "cơn sốt",
+          "example_en": "I have a high fever and need to rest.",
+          "example_vi": "Tôi bị sốt cao và cần phải nghỉ ngơi."
+        },
+        {
+          "meaning_vi": "cơn sốt",
+          "example_en": "The child developed a fever during the night.",
+          "example_vi": "Đứa trẻ bị sốt trong đêm."
+        },
+        {
+          "meaning_vi": "cơn sốt",
+          "example_en": "She took some medicine to bring her fever down.",
+          "example_vi": "Cô ấy đã uống thuốc để hạ sốt."
+        },
+        {
+          "meaning_vi": "cơn sốt",
+          "example_en": "His fever broke this morning, so he feels better.",
+          "example_vi": "Cơn sốt của anh ấy đã dứt sáng nay, nên anh ấy cảm thấy khá hơn."
+        },
+        {
+          "meaning_vi": "bệnh sốt",
+          "example_en": "The doctor diagnosed him with a tropical fever.",
+          "example_vi": "Bác sĩ chẩn đoán anh ấy mắc một loại bệnh sốt nhiệt đới."
+        },
+        {
+          "meaning_vi": "bệnh sốt",
+          "example_en": "Many people in the village suffered from fever.",
+          "example_vi": "Nhiều người trong làng đã mắc bệnh sốt."
+        },
+        {
+          "meaning_vi": "bệnh sốt",
+          "example_en": "Malaria is a type of fever transmitted by mosquitoes.",
+          "example_vi": "Sốt rét là một loại bệnh sốt lây truyền qua muỗi."
+        },
+        {
+          "meaning_vi": "sự bồn chồn",
+          "example_en": "There was a fever of excitement in the crowd.",
+          "example_vi": "Có một sự bồn chồn đầy phấn khích trong đám đông."
+        },
+        {
+          "meaning_vi": "sự bồn chồn",
+          "example_en": "The election fever is spreading across the country.",
+          "example_vi": "Sự bồn chồn trước kỳ bầu cử đang lan rộng khắp cả nước."
+        },
+        {
+          "meaning_vi": "sự bồn chồn",
+          "example_en": "He worked with a fever of activity to finish on time.",
+          "example_vi": "Anh ấy làm việc với sự bồn chồn hối hả để hoàn thành đúng hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Đã lọc nghĩa phổ biến và bổ sung đủ 10 ví dụ.",
+      "word": "fever",
+      "normalized_word": "fever",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have a high fever and need to rest.",
+      "example_vi_clean": "Tôi bị sốt cao và cần phải nghỉ ngơi."
+    },
+    {
+      "id": 24302,
+      "quiz_meaning_vi": "cánh đồng",
+      "meaning_vi_clean": "cánh đồng; lĩnh vực; sân thi đấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "cánh đồng",
+          "example_en": "The cows are grazing in the green field.",
+          "example_vi": "Những con bò đang gặm cỏ trên cánh đồng xanh."
+        },
+        {
+          "meaning_vi": "cánh đồng",
+          "example_en": "We walked across the field to reach the forest.",
+          "example_vi": "Chúng tôi đi bộ băng qua cánh đồng để đến khu rừng."
+        },
+        {
+          "meaning_vi": "cánh đồng",
+          "example_en": "The field was covered in beautiful wildflowers.",
+          "example_vi": "Cánh đồng được bao phủ bởi những bông hoa dại xinh đẹp."
+        },
+        {
+          "meaning_vi": "cánh đồng",
+          "example_en": "Farmers are working in the field today.",
+          "example_vi": "Những người nông dân đang làm việc trên cánh đồng hôm nay."
+        },
+        {
+          "meaning_vi": "lĩnh vực",
+          "example_en": "She is an expert in the field of medicine.",
+          "example_vi": "Cô ấy là một chuyên gia trong lĩnh vực y học."
+        },
+        {
+          "meaning_vi": "lĩnh vực",
+          "example_en": "He has done a lot of research in his field.",
+          "example_vi": "Anh ấy đã thực hiện rất nhiều nghiên cứu trong lĩnh vực của mình."
+        },
+        {
+          "meaning_vi": "lĩnh vực",
+          "example_en": "This discovery changed the entire field of science.",
+          "example_vi": "Khám phá này đã thay đổi toàn bộ lĩnh vực khoa học."
+        },
+        {
+          "meaning_vi": "sân thi đấu",
+          "example_en": "The players ran onto the field for the match.",
+          "example_vi": "Các cầu thủ chạy ra sân thi đấu cho trận đấu."
+        },
+        {
+          "meaning_vi": "sân thi đấu",
+          "example_en": "The football field was wet after the rain.",
+          "example_vi": "Sân thi đấu bóng đá bị ướt sau cơn mưa."
+        },
+        {
+          "meaning_vi": "sân thi đấu",
+          "example_en": "The team practiced on the field every morning.",
+          "example_vi": "Đội bóng tập luyện trên sân thi đấu mỗi sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang danh từ. Đã rút gọn nghĩa và bổ sung ví dụ phù hợp.",
+      "word": "field",
+      "normalized_word": "field",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cows are grazing in the green field.",
+      "example_vi_clean": "Những con bò đang gặm cỏ trên cánh đồng xanh."
+    },
+    {
+      "id": 24303,
+      "quiz_meaning_vi": "mười lăm",
+      "meaning_vi_clean": "mười lăm",
+      "examples_clean": [
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "I have fifteen minutes to finish my work.",
+          "example_vi": "Tôi có mười lăm phút để hoàn thành công việc của mình."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "There are fifteen students in the classroom.",
+          "example_vi": "Có mười lăm học sinh trong lớp học."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "She is fifteen years old today.",
+          "example_vi": "Hôm nay cô ấy mười lăm tuổi."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "He bought fifteen apples at the market.",
+          "example_vi": "Anh ấy đã mua mười lăm quả táo ở chợ."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "The bus leaves in fifteen minutes.",
+          "example_vi": "Xe buýt sẽ rời đi trong mười lăm phút nữa."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "I waited for fifteen minutes for the train.",
+          "example_vi": "Tôi đã đợi mười lăm phút cho chuyến tàu."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "They have fifteen days to complete the project.",
+          "example_vi": "Họ có mười lăm ngày để hoàn thành dự án."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "She read fifteen pages of the book.",
+          "example_vi": "Cô ấy đã đọc mười lăm trang của cuốn sách."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "There are fifteen chairs in the room.",
+          "example_vi": "Có mười lăm cái ghế trong phòng."
+        },
+        {
+          "meaning_vi": "mười lăm",
+          "example_en": "He has fifteen dollars in his pocket.",
+          "example_vi": "Anh ấy có mười lăm đô la trong túi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ sang số đếm. Đã bổ sung đủ 10 ví dụ.",
+      "word": "fifteen",
+      "normalized_word": "fifteen",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "I have fifteen minutes to finish my work.",
+      "example_vi_clean": "Tôi có mười lăm phút để hoàn thành công việc của mình."
+    },
+    {
+      "id": 24304,
+      "quiz_meaning_vi": "năm mươi",
+      "meaning_vi_clean": "năm mươi",
+      "examples_clean": [
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "There are fifty people at the party.",
+          "example_vi": "Có năm mươi người tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "He is fifty years old this year.",
+          "example_vi": "Năm nay anh ấy năm mươi tuổi."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "The book costs fifty dollars.",
+          "example_vi": "Cuốn sách có giá năm mươi đô la."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "She walked fifty miles to get home.",
+          "example_vi": "Cô ấy đã đi bộ năm mươi dặm để về nhà."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "I have fifty pages left to read.",
+          "example_vi": "Tôi còn năm mươi trang nữa để đọc."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "They invited fifty guests to the wedding.",
+          "example_vi": "Họ đã mời năm mươi khách đến dự đám cưới."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "The speed limit is fifty kilometers per hour.",
+          "example_vi": "Giới hạn tốc độ là năm mươi km một giờ."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "He collected fifty stamps from different countries.",
+          "example_vi": "Anh ấy đã sưu tầm năm mươi con tem từ các quốc gia khác nhau."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "There are fifty states in the USA.",
+          "example_vi": "Có năm mươi tiểu bang ở Hoa Kỳ."
+        },
+        {
+          "meaning_vi": "năm mươi",
+          "example_en": "She wrote fifty letters to her friends.",
+          "example_vi": "Cô ấy đã viết năm mươi lá thư cho bạn bè của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang số đếm. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "fifty",
+      "normalized_word": "fifty",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "There are fifty people at the party.",
+      "example_vi_clean": "Có năm mươi người tại bữa tiệc."
+    },
+    {
+      "id": 24305,
+      "quiz_meaning_vi": "sự đấu tranh",
+      "meaning_vi_clean": "sự đấu tranh; chiến đấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đấu tranh",
+          "example_en": "It was a long fight for justice.",
+          "example_vi": "Đó là một cuộc đấu tranh lâu dài vì công lý."
+        },
+        {
+          "meaning_vi": "sự đấu tranh",
+          "example_en": "The fight against poverty is very important.",
+          "example_vi": "Cuộc đấu tranh chống lại đói nghèo rất quan trọng."
+        },
+        {
+          "meaning_vi": "sự đấu tranh",
+          "example_en": "They won the fight for their rights.",
+          "example_vi": "Họ đã thắng trong cuộc đấu tranh vì quyền lợi của mình."
+        },
+        {
+          "meaning_vi": "sự đấu tranh",
+          "example_en": "The fight for freedom is never easy.",
+          "example_vi": "Cuộc đấu tranh vì tự do không bao giờ là dễ dàng."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "Soldiers fight to protect their country.",
+          "example_vi": "Những người lính chiến đấu để bảo vệ đất nước của họ."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "They had to fight for their lives.",
+          "example_vi": "Họ đã phải chiến đấu để giành lấy sự sống."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "He fought bravely in the war.",
+          "example_vi": "Anh ấy đã chiến đấu dũng cảm trong cuộc chiến."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "We must fight against this disease.",
+          "example_vi": "Chúng ta phải chiến đấu chống lại căn bệnh này."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "The two teams fought hard to win.",
+          "example_vi": "Hai đội đã chiến đấu hết mình để giành chiến thắng."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "She fought for what she believed in.",
+          "example_vi": "Cô ấy đã chiến đấu vì những gì cô ấy tin tưởng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ/động từ. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "fight",
+      "normalized_word": "fight",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was a long fight for justice.",
+      "example_vi_clean": "Đó là một cuộc đấu tranh lâu dài vì công lý."
+    },
+    {
+      "id": 24306,
+      "quiz_meaning_vi": "cái giũa",
+      "meaning_vi_clean": "cái giũa; hồ sơ; đệ trình",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái giũa",
+          "example_en": "He used a metal file to smooth the edges.",
+          "example_vi": "Anh ấy dùng một cái giũa kim loại để làm nhẵn các cạnh."
+        },
+        {
+          "meaning_vi": "cái giũa",
+          "example_en": "The carpenter picked up his file.",
+          "example_vi": "Người thợ mộc cầm cái giũa của mình lên."
+        },
+        {
+          "meaning_vi": "cái giũa",
+          "example_en": "She sharpened the tool with a file.",
+          "example_vi": "Cô ấy mài sắc công cụ bằng một cái giũa."
+        },
+        {
+          "meaning_vi": "cái giũa",
+          "example_en": "Keep the file in the toolbox.",
+          "example_vi": "Hãy cất cái giũa vào hộp dụng cụ."
+        },
+        {
+          "meaning_vi": "hồ sơ",
+          "example_en": "Please put these papers in the file.",
+          "example_vi": "Vui lòng đặt những giấy tờ này vào hồ sơ."
+        },
+        {
+          "meaning_vi": "hồ sơ",
+          "example_en": "I have a file on every student.",
+          "example_vi": "Tôi có một hồ sơ về mỗi học sinh."
+        },
+        {
+          "meaning_vi": "hồ sơ",
+          "example_en": "She organized the documents in a file.",
+          "example_vi": "Cô ấy sắp xếp các tài liệu vào một hồ sơ."
+        },
+        {
+          "meaning_vi": "đệ trình",
+          "example_en": "You need to file your tax return by April.",
+          "example_vi": "Bạn cần đệ trình tờ khai thuế trước tháng Tư."
+        },
+        {
+          "meaning_vi": "đệ trình",
+          "example_en": "They decided to file a complaint.",
+          "example_vi": "Họ quyết định đệ trình một đơn khiếu nại."
+        },
+        {
+          "meaning_vi": "đệ trình",
+          "example_en": "She filed for a new passport yesterday.",
+          "example_vi": "Cô ấy đã đệ trình đơn xin hộ chiếu mới ngày hôm qua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang danh từ/động từ. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "file",
+      "normalized_word": "file",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He used a metal file to smooth the edges.",
+      "example_vi_clean": "Anh ấy dùng một cái giũa kim loại để làm nhẵn các cạnh."
+    },
+    {
+      "id": 24307,
+      "quiz_meaning_vi": "làm đầy",
+      "meaning_vi_clean": "làm đầy; bổ nhiệm; điền vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "Please fill the glass with water.",
+          "example_vi": "Vui lòng làm đầy ly bằng nước."
+        },
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "She filled the bucket at the well.",
+          "example_vi": "Cô ấy làm đầy cái xô tại giếng."
+        },
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "The room filled with smoke.",
+          "example_vi": "Căn phòng bị làm đầy bởi khói."
+        },
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "He filled the tank with gas.",
+          "example_vi": "Anh ấy làm đầy bình xăng."
+        },
+        {
+          "meaning_vi": "bổ nhiệm",
+          "example_en": "They need to fill the vacant position soon.",
+          "example_vi": "Họ cần bổ nhiệm người vào vị trí trống sớm."
+        },
+        {
+          "meaning_vi": "bổ nhiệm",
+          "example_en": "The manager will fill the role next week.",
+          "example_vi": "Người quản lý sẽ bổ nhiệm người cho vai trò này vào tuần tới."
+        },
+        {
+          "meaning_vi": "bổ nhiệm",
+          "example_en": "It is hard to fill such an important job.",
+          "example_vi": "Thật khó để bổ nhiệm người cho một công việc quan trọng như vậy."
+        },
+        {
+          "meaning_vi": "điền vào",
+          "example_en": "Please fill in this application form.",
+          "example_vi": "Vui lòng điền vào đơn đăng ký này."
+        },
+        {
+          "meaning_vi": "điền vào",
+          "example_en": "She filled in her name and address.",
+          "example_vi": "Cô ấy đã điền vào tên và địa chỉ của mình."
+        },
+        {
+          "meaning_vi": "điền vào",
+          "example_en": "Did you fill in the blanks?",
+          "example_vi": "Bạn đã điền vào các chỗ trống chưa?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang động từ. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "fill",
+      "normalized_word": "fill",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please fill the glass with water.",
+      "example_vi_clean": "Vui lòng làm đầy ly bằng nước."
+    },
+    {
+      "id": 24308,
+      "quiz_meaning_vi": "tìm thấy",
+      "meaning_vi_clean": "tìm thấy; nhận thấy; khám phá ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "tìm thấy",
+          "example_en": "I finally found my lost keys.",
+          "example_vi": "Cuối cùng tôi đã tìm thấy chìa khóa bị mất của mình."
+        },
+        {
+          "meaning_vi": "tìm thấy",
+          "example_en": "She found a beautiful shell on the beach.",
+          "example_vi": "Cô ấy tìm thấy một vỏ sò xinh đẹp trên bãi biển."
+        },
+        {
+          "meaning_vi": "tìm thấy",
+          "example_en": "We found a great restaurant nearby.",
+          "example_vi": "Chúng tôi tìm thấy một nhà hàng tuyệt vời gần đây."
+        },
+        {
+          "meaning_vi": "tìm thấy",
+          "example_en": "He found his glasses under the table.",
+          "example_vi": "Anh ấy tìm thấy kính của mình dưới bàn."
+        },
+        {
+          "meaning_vi": "nhận thấy",
+          "example_en": "I found the movie very interesting.",
+          "example_vi": "Tôi nhận thấy bộ phim rất thú vị."
+        },
+        {
+          "meaning_vi": "nhận thấy",
+          "example_en": "She found it difficult to learn Chinese.",
+          "example_vi": "Cô ấy nhận thấy việc học tiếng Trung rất khó khăn."
+        },
+        {
+          "meaning_vi": "nhận thấy",
+          "example_en": "They found the service to be excellent.",
+          "example_vi": "Họ nhận thấy dịch vụ rất tuyệt vời."
+        },
+        {
+          "meaning_vi": "khám phá ra",
+          "example_en": "Scientists found a new way to treat the disease.",
+          "example_vi": "Các nhà khoa học đã khám phá ra một cách mới để điều trị căn bệnh."
+        },
+        {
+          "meaning_vi": "khám phá ra",
+          "example_en": "We found that the earth is round.",
+          "example_vi": "Chúng ta đã khám phá ra rằng trái đất hình tròn."
+        },
+        {
+          "meaning_vi": "khám phá ra",
+          "example_en": "He found a hidden treasure in the cave.",
+          "example_vi": "Anh ấy đã khám phá ra một kho báu ẩn giấu trong hang động."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang động từ. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "find",
+      "normalized_word": "find",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I finally found my lost keys.",
+      "example_vi_clean": "Cuối cùng tôi đã tìm thấy chìa khóa bị mất của mình."
+    },
+    {
+      "id": 24309,
+      "quiz_meaning_vi": "tốt",
+      "meaning_vi_clean": "tốt; mịn; tiền phạt",
+      "examples_clean": [
+        {
+          "meaning_vi": "tốt",
+          "example_en": "It is a fine day for a picnic.",
+          "example_vi": "Hôm nay là một ngày tốt để đi dã ngoại."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "She is a fine musician.",
+          "example_vi": "Cô ấy là một nhạc sĩ tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "Everything will be fine.",
+          "example_vi": "Mọi thứ sẽ tốt thôi."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "He did a fine job on the project.",
+          "example_vi": "Anh ấy đã làm một công việc tốt trong dự án."
+        },
+        {
+          "meaning_vi": "mịn",
+          "example_en": "The sand on this beach is very fine.",
+          "example_vi": "Cát trên bãi biển này rất mịn."
+        },
+        {
+          "meaning_vi": "mịn",
+          "example_en": "She has fine hair.",
+          "example_vi": "Cô ấy có mái tóc mịn."
+        },
+        {
+          "meaning_vi": "mịn",
+          "example_en": "The flour should be ground fine.",
+          "example_vi": "Bột nên được xay mịn."
+        },
+        {
+          "meaning_vi": "tiền phạt",
+          "example_en": "He had to pay a fine for speeding.",
+          "example_vi": "Anh ấy đã phải trả một khoản tiền phạt vì chạy quá tốc độ."
+        },
+        {
+          "meaning_vi": "tiền phạt",
+          "example_en": "The fine for parking here is high.",
+          "example_vi": "Tiền phạt cho việc đỗ xe ở đây rất cao."
+        },
+        {
+          "meaning_vi": "tiền phạt",
+          "example_en": "She received a fine for littering.",
+          "example_vi": "Cô ấy đã nhận một khoản tiền phạt vì xả rác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ/danh từ. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "fine",
+      "normalized_word": "fine",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is a fine day for a picnic.",
+      "example_vi_clean": "Hôm nay là một ngày tốt để đi dã ngoại."
+    },
+    {
+      "id": 24310,
+      "quiz_meaning_vi": "sự kết thúc",
+      "meaning_vi_clean": "sự kết thúc; hoàn thành",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The end of the movie was a sad finish.",
+          "example_vi": "Kết thúc của bộ phim là một sự kết thúc buồn."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "They were at the finish of the race.",
+          "example_vi": "Họ đã ở vạch kết thúc của cuộc đua."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "It was a dramatic finish to the game.",
+          "example_vi": "Đó là một sự kết thúc đầy kịch tính cho trận đấu."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The finish of the book was unexpected.",
+          "example_vi": "Sự kết thúc của cuốn sách thật bất ngờ."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "I need to finish my homework tonight.",
+          "example_vi": "Tôi cần hoàn thành bài tập về nhà tối nay."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "She finished her degree last year.",
+          "example_vi": "Cô ấy đã hoàn thành bằng cấp của mình năm ngoái."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "We will finish the project by Friday.",
+          "example_vi": "Chúng tôi sẽ hoàn thành dự án trước thứ Sáu."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "He finished his meal quickly.",
+          "example_vi": "Anh ấy đã hoàn thành bữa ăn của mình một cách nhanh chóng."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "They finished the work ahead of schedule.",
+          "example_vi": "Họ đã hoàn thành công việc trước thời hạn."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "Have you finished reading that book?",
+          "example_vi": "Bạn đã hoàn thành việc đọc cuốn sách đó chưa?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ/động từ. Đã lọc nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "finish",
+      "normalized_word": "finish",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The end of the movie was a sad finish.",
+      "example_vi_clean": "Kết thúc của bộ phim là một sự kết thúc buồn."
+    }
+  ]
+}

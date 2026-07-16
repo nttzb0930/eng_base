@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25601,
+      "quiz_meaning_vi": "đui mù",
+      "meaning_vi_clean": "đui mù; không nhìn thấy; mù quáng; rèm",
+      "examples_clean": [
+        {
+          "meaning_vi": "đui mù",
+          "example_en": "He has been blind since he was a child.",
+          "example_vi": "Anh ấy đã bị đui mù từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "đui mù",
+          "example_en": "The guide dog helps the blind man cross the street.",
+          "example_vi": "Chú chó dẫn đường giúp người đàn ông đui mù băng qua đường."
+        },
+        {
+          "meaning_vi": "đui mù",
+          "example_en": "She was born blind but learned to read braille.",
+          "example_vi": "Cô ấy sinh ra đã đui mù nhưng đã học đọc chữ nổi."
+        },
+        {
+          "meaning_vi": "đui mù",
+          "example_en": "The accident left him completely blind.",
+          "example_vi": "Tai nạn đã khiến anh ấy hoàn toàn đui mù."
+        },
+        {
+          "meaning_vi": "không nhìn thấy",
+          "example_en": "The thick fog made it impossible to see, leaving us blind to the road ahead.",
+          "example_vi": "Sương mù dày đặc khiến không thể nhìn thấy gì, khiến chúng tôi không nhìn thấy con đường phía trước."
+        },
+        {
+          "meaning_vi": "mù quáng",
+          "example_en": "He was blind to the faults of his best friend.",
+          "example_vi": "Anh ấy đã mù quáng trước những lỗi lầm của bạn thân mình."
+        },
+        {
+          "meaning_vi": "mù quáng",
+          "example_en": "Don't let your love make you blind to the truth.",
+          "example_vi": "Đừng để tình yêu khiến bạn trở nên mù quáng trước sự thật."
+        },
+        {
+          "meaning_vi": "rèm",
+          "example_en": "Please pull down the blinds to block the sunlight.",
+          "example_vi": "Vui lòng kéo rèm xuống để chặn ánh sáng mặt trời."
+        },
+        {
+          "meaning_vi": "rèm",
+          "example_en": "She adjusted the blinds to let some light into the room.",
+          "example_vi": "Cô ấy điều chỉnh rèm để ánh sáng lọt vào phòng."
+        },
+        {
+          "meaning_vi": "rèm",
+          "example_en": "The wooden blinds were dusty after being closed for weeks.",
+          "example_vi": "Những chiếc rèm gỗ đã bám bụi sau khi đóng lại trong nhiều tuần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại các nghĩa phổ biến nhất. Đảm bảo đủ 10 ví dụ với phân bổ hợp lý.",
+      "word": "blind",
+      "normalized_word": "blind",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has been blind since he was a child.",
+      "example_vi_clean": "Anh ấy đã bị đui mù từ khi còn nhỏ."
+    },
+    {
+      "id": 25602,
+      "quiz_meaning_vi": "đỏ mặt",
+      "meaning_vi_clean": "đỏ mặt; ửng hồng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đỏ mặt",
+          "example_en": "She blushed when he complimented her dress.",
+          "example_vi": "Cô ấy đỏ mặt khi anh ấy khen chiếc váy của cô."
+        },
+        {
+          "meaning_vi": "đỏ mặt",
+          "example_en": "He blushed deeply at the mention of his mistake.",
+          "example_vi": "Anh ấy đỏ mặt dữ dội khi nhắc đến sai lầm của mình."
+        },
+        {
+          "meaning_vi": "đỏ mặt",
+          "example_en": "I always blush when I have to speak in public.",
+          "example_vi": "Tôi luôn đỏ mặt khi phải nói chuyện trước đám đông."
+        },
+        {
+          "meaning_vi": "đỏ mặt",
+          "example_en": "The child blushed with embarrassment after dropping his ice cream.",
+          "example_vi": "Đứa trẻ đỏ mặt vì xấu hổ sau khi làm rơi kem."
+        },
+        {
+          "meaning_vi": "đỏ mặt",
+          "example_en": "She blushed slightly as she walked into the crowded room.",
+          "example_vi": "Cô ấy đỏ mặt nhẹ khi bước vào căn phòng đông đúc."
+        },
+        {
+          "meaning_vi": "đỏ mặt",
+          "example_en": "He blushed because he was caught telling a lie.",
+          "example_vi": "Anh ấy đỏ mặt vì bị bắt quả tang đang nói dối."
+        },
+        {
+          "meaning_vi": "ửng hồng",
+          "example_en": "The sky blushed with a soft pink glow at sunset.",
+          "example_vi": "Bầu trời ửng hồng với ánh sáng dịu nhẹ lúc hoàng hôn."
+        },
+        {
+          "meaning_vi": "ửng hồng",
+          "example_en": "Her cheeks blushed with the cold winter air.",
+          "example_vi": "Đôi má cô ấy ửng hồng vì không khí lạnh mùa đông."
+        },
+        {
+          "meaning_vi": "ửng hồng",
+          "example_en": "The roses blushed in the morning sun.",
+          "example_vi": "Những bông hồng ửng hồng dưới ánh nắng ban mai."
+        },
+        {
+          "meaning_vi": "ửng hồng",
+          "example_en": "The horizon blushed as the sun began to rise.",
+          "example_vi": "Đường chân trời ửng hồng khi mặt trời bắt đầu mọc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ noun sang verb cho phù hợp với nghĩa đỏ mặt. Cấu trúc lại nghĩa và ví dụ.",
+      "word": "blush",
+      "normalized_word": "blush",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She blushed when he complimented her dress.",
+      "example_vi_clean": "Cô ấy đỏ mặt khi anh ấy khen chiếc váy của cô."
+    },
+    {
+      "id": 25603,
+      "quiz_meaning_vi": "khoe khoang",
+      "meaning_vi_clean": "khoe khoang; niềm kiêu hãnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "khoe khoang",
+          "example_en": "He likes to boast about his expensive car.",
+          "example_vi": "Anh ấy thích khoe khoang về chiếc xe đắt tiền của mình."
+        },
+        {
+          "meaning_vi": "khoe khoang",
+          "example_en": "She never boasts about her achievements.",
+          "example_vi": "Cô ấy không bao giờ khoe khoang về những thành tựu của mình."
+        },
+        {
+          "meaning_vi": "khoe khoang",
+          "example_en": "It is rude to boast about how much money you earn.",
+          "example_vi": "Thật thô lỗ khi khoe khoang về số tiền bạn kiếm được."
+        },
+        {
+          "meaning_vi": "khoe khoang",
+          "example_en": "They boast that their team is the best in the league.",
+          "example_vi": "Họ khoe khoang rằng đội của họ là đội giỏi nhất giải đấu."
+        },
+        {
+          "meaning_vi": "khoe khoang",
+          "example_en": "He shouldn't boast so much about his grades.",
+          "example_vi": "Anh ấy không nên khoe khoang quá nhiều về điểm số của mình."
+        },
+        {
+          "meaning_vi": "niềm kiêu hãnh",
+          "example_en": "The city boasts a beautiful park in the center.",
+          "example_vi": "Thành phố tự hào có một công viên xinh đẹp ở trung tâm."
+        },
+        {
+          "meaning_vi": "niềm kiêu hãnh",
+          "example_en": "The hotel boasts a swimming pool and a gym.",
+          "example_vi": "Khách sạn tự hào có một hồ bơi và một phòng tập thể dục."
+        },
+        {
+          "meaning_vi": "niềm kiêu hãnh",
+          "example_en": "The museum boasts a collection of rare paintings.",
+          "example_vi": "Bảo tàng tự hào có một bộ sưu tập các bức tranh quý hiếm."
+        },
+        {
+          "meaning_vi": "niềm kiêu hãnh",
+          "example_en": "The university boasts many famous alumni.",
+          "example_vi": "Trường đại học tự hào có nhiều cựu sinh viên nổi tiếng."
+        },
+        {
+          "meaning_vi": "niềm kiêu hãnh",
+          "example_en": "The region boasts a rich cultural history.",
+          "example_vi": "Khu vực này tự hào có một lịch sử văn hóa phong phú."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ noun sang verb. Nghĩa khoe khoang là nghĩa chính, nghĩa niềm kiêu hãnh dùng cho cấu trúc boast of/boast a feature.",
+      "word": "boast",
+      "normalized_word": "boast",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He likes to boast about his expensive car.",
+      "example_vi_clean": "Anh ấy thích khoe khoang về chiếc xe đắt tiền của mình."
+    },
+    {
+      "id": 25604,
+      "quiz_meaning_vi": "dũng cảm",
+      "meaning_vi_clean": "dũng cảm; rõ nét",
+      "examples_clean": [
+        {
+          "meaning_vi": "dũng cảm",
+          "example_en": "It was a bold decision to quit his job.",
+          "example_vi": "Đó là một quyết định dũng cảm khi từ bỏ công việc của mình."
+        },
+        {
+          "meaning_vi": "dũng cảm",
+          "example_en": "She made a bold move to start her own business.",
+          "example_vi": "Cô ấy đã có một bước đi dũng cảm để bắt đầu công việc kinh doanh riêng."
+        },
+        {
+          "meaning_vi": "dũng cảm",
+          "example_en": "He is known for his bold leadership style.",
+          "example_vi": "Anh ấy nổi tiếng với phong cách lãnh đạo dũng cảm."
+        },
+        {
+          "meaning_vi": "dũng cảm",
+          "example_en": "The soldiers made a bold attempt to rescue the hostages.",
+          "example_vi": "Những người lính đã thực hiện một nỗ lực dũng cảm để giải cứu con tin."
+        },
+        {
+          "meaning_vi": "dũng cảm",
+          "example_en": "It takes a bold person to speak out against injustice.",
+          "example_vi": "Cần một người dũng cảm để lên tiếng chống lại sự bất công."
+        },
+        {
+          "meaning_vi": "rõ nét",
+          "example_en": "The title was written in bold letters.",
+          "example_vi": "Tiêu đề được viết bằng những chữ cái rõ nét."
+        },
+        {
+          "meaning_vi": "rõ nét",
+          "example_en": "Use a bold font for the headings.",
+          "example_vi": "Sử dụng phông chữ rõ nét cho các tiêu đề."
+        },
+        {
+          "meaning_vi": "rõ nét",
+          "example_en": "The contrast between the colors is very bold.",
+          "example_vi": "Sự tương phản giữa các màu sắc rất rõ nét."
+        },
+        {
+          "meaning_vi": "rõ nét",
+          "example_en": "The design features bold lines and bright colors.",
+          "example_vi": "Thiết kế có các đường nét rõ nét và màu sắc tươi sáng."
+        },
+        {
+          "meaning_vi": "rõ nét",
+          "example_en": "The mountain stood out in bold relief against the sky.",
+          "example_vi": "Ngọn núi nổi bật với hình dáng rõ nét trên nền trời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa dũng cảm và rõ nét. Bổ sung đủ 10 ví dụ.",
+      "word": "bold",
+      "normalized_word": "bold",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was a bold decision to quit his job.",
+      "example_vi_clean": "Đó là một quyết định dũng cảm khi từ bỏ công việc của mình."
+    },
+    {
+      "id": 25605,
+      "quiz_meaning_vi": "táo bạo",
+      "meaning_vi_clean": "táo bạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "He spoke boldly about the changes needed.",
+          "example_vi": "Anh ấy đã nói một cách táo bạo về những thay đổi cần thiết."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "She stepped boldly into the unknown.",
+          "example_vi": "Cô ấy bước một cách táo bạo vào điều chưa biết."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "The plan was boldly executed by the team.",
+          "example_vi": "Kế hoạch đã được thực hiện một cách táo bạo bởi cả nhóm."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "He boldly challenged the decision of the board.",
+          "example_vi": "Anh ấy đã táo bạo thách thức quyết định của hội đồng quản trị."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "The artist painted the canvas boldly with bright colors.",
+          "example_vi": "Người nghệ sĩ đã vẽ bức tranh một cách táo bạo với những màu sắc tươi sáng."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "She boldly asked for a raise after only three months.",
+          "example_vi": "Cô ấy đã táo bạo yêu cầu tăng lương chỉ sau ba tháng."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "The company boldly entered the new market.",
+          "example_vi": "Công ty đã táo bạo gia nhập thị trường mới."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "He boldly defended his opinion in front of everyone.",
+          "example_vi": "Anh ấy đã táo bạo bảo vệ ý kiến của mình trước mọi người."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "They moved boldly to solve the problem.",
+          "example_vi": "Họ đã hành động một cách táo bạo để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "táo bạo",
+          "example_en": "The architect designed the building boldly.",
+          "example_vi": "Kiến trúc sư đã thiết kế tòa nhà một cách táo bạo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa táo bạo. Bổ sung đủ 10 ví dụ.",
+      "word": "boldly",
+      "normalized_word": "boldly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He spoke boldly about the changes needed.",
+      "example_vi_clean": "Anh ấy đã nói một cách táo bạo về những thay đổi cần thiết."
+    },
+    {
+      "id": 25606,
+      "quiz_meaning_vi": "quả bom",
+      "meaning_vi_clean": "quả bom; ném bom",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả bom",
+          "example_en": "The police found a bomb in the building.",
+          "example_vi": "Cảnh sát đã tìm thấy một quả bom trong tòa nhà."
+        },
+        {
+          "meaning_vi": "quả bom",
+          "example_en": "The bomb exploded in the middle of the night.",
+          "example_vi": "Quả bom đã phát nổ vào giữa đêm."
+        },
+        {
+          "meaning_vi": "quả bom",
+          "example_en": "They had to evacuate because of a bomb threat.",
+          "example_vi": "Họ phải sơ tán vì một lời đe dọa đặt bom."
+        },
+        {
+          "meaning_vi": "quả bom",
+          "example_en": "The bomb squad arrived to defuse the device.",
+          "example_vi": "Đội xử lý bom đã đến để tháo gỡ thiết bị."
+        },
+        {
+          "meaning_vi": "quả bom",
+          "example_en": "The bomb caused significant damage to the bridge.",
+          "example_vi": "Quả bom đã gây ra thiệt hại đáng kể cho cây cầu."
+        },
+        {
+          "meaning_vi": "ném bom",
+          "example_en": "The city was bombed during the war.",
+          "example_vi": "Thành phố đã bị ném bom trong chiến tranh."
+        },
+        {
+          "meaning_vi": "ném bom",
+          "example_en": "They bombed the enemy base from the air.",
+          "example_vi": "Họ đã ném bom căn cứ kẻ thù từ trên không."
+        },
+        {
+          "meaning_vi": "ném bom",
+          "example_en": "The planes bombed the target successfully.",
+          "example_vi": "Những chiếc máy bay đã ném bom mục tiêu thành công."
+        },
+        {
+          "meaning_vi": "ném bom",
+          "example_en": "The area was bombed repeatedly.",
+          "example_vi": "Khu vực này đã bị ném bom nhiều lần."
+        },
+        {
+          "meaning_vi": "ném bom",
+          "example_en": "They decided to bomb the strategic location.",
+          "example_vi": "Họ quyết định ném bom vị trí chiến lược đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ noun sang noun/verb. Bổ sung đủ 10 ví dụ.",
+      "word": "bomb",
+      "normalized_word": "bomb",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police found a bomb in the building.",
+      "example_vi_clean": "Cảnh sát đã tìm thấy một quả bom trong tòa nhà."
+    },
+    {
+      "id": 25607,
+      "quiz_meaning_vi": "mối ràng buộc",
+      "meaning_vi_clean": "mối ràng buộc; giao kèo",
+      "examples_clean": [
+        {
+          "meaning_vi": "mối ràng buộc",
+          "example_en": "They share a strong bond of friendship.",
+          "example_vi": "Họ chia sẻ một mối ràng buộc tình bạn bền chặt."
+        },
+        {
+          "meaning_vi": "mối ràng buộc",
+          "example_en": "The bond between mother and child is unique.",
+          "example_vi": "Mối ràng buộc giữa mẹ và con là duy nhất."
+        },
+        {
+          "meaning_vi": "mối ràng buộc",
+          "example_en": "They formed a close bond during their time at school.",
+          "example_vi": "Họ đã hình thành một mối ràng buộc thân thiết trong thời gian ở trường."
+        },
+        {
+          "meaning_vi": "mối ràng buộc",
+          "example_en": "Trust is the most important bond in a marriage.",
+          "example_vi": "Sự tin tưởng là mối ràng buộc quan trọng nhất trong hôn nhân."
+        },
+        {
+          "meaning_vi": "mối ràng buộc",
+          "example_en": "The shared experience created a lasting bond.",
+          "example_vi": "Trải nghiệm chung đã tạo ra một mối ràng buộc lâu dài."
+        },
+        {
+          "meaning_vi": "giao kèo",
+          "example_en": "They signed a legal bond to ensure payment.",
+          "example_vi": "Họ đã ký một giao kèo pháp lý để đảm bảo việc thanh toán."
+        },
+        {
+          "meaning_vi": "giao kèo",
+          "example_en": "The contract acts as a bond between the two parties.",
+          "example_vi": "Hợp đồng đóng vai trò như một giao kèo giữa hai bên."
+        },
+        {
+          "meaning_vi": "giao kèo",
+          "example_en": "He broke the bond of the agreement.",
+          "example_vi": "Anh ấy đã phá vỡ giao kèo của thỏa thuận."
+        },
+        {
+          "meaning_vi": "giao kèo",
+          "example_en": "The bond requires both parties to fulfill their duties.",
+          "example_vi": "Giao kèo yêu cầu cả hai bên phải thực hiện nghĩa vụ của mình."
+        },
+        {
+          "meaning_vi": "giao kèo",
+          "example_en": "They entered into a formal bond.",
+          "example_vi": "Họ đã tham gia vào một giao kèo chính thức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa mối ràng buộc và giao kèo. Bổ sung đủ 10 ví dụ.",
+      "word": "bond",
+      "normalized_word": "bond",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They share a strong bond of friendship.",
+      "example_vi_clean": "Họ chia sẻ một mối ràng buộc tình bạn bền chặt."
+    },
+    {
+      "id": 25608,
+      "quiz_meaning_vi": "sự tăng vọt",
+      "meaning_vi_clean": "sự tăng vọt; tiếng nổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tăng vọt",
+          "example_en": "There was a sudden boom in house prices.",
+          "example_vi": "Đã có một sự tăng vọt đột ngột về giá nhà."
+        },
+        {
+          "meaning_vi": "sự tăng vọt",
+          "example_en": "The economy experienced a major boom.",
+          "example_vi": "Nền kinh tế đã trải qua một sự tăng vọt lớn."
+        },
+        {
+          "meaning_vi": "sự tăng vọt",
+          "example_en": "The tech industry is currently in a boom.",
+          "example_vi": "Ngành công nghệ hiện đang trong giai đoạn tăng vọt."
+        },
+        {
+          "meaning_vi": "sự tăng vọt",
+          "example_en": "The tourism sector saw a boom this summer.",
+          "example_vi": "Ngành du lịch đã chứng kiến một sự tăng vọt vào mùa hè này."
+        },
+        {
+          "meaning_vi": "sự tăng vọt",
+          "example_en": "The population boom has put pressure on resources.",
+          "example_vi": "Sự tăng vọt dân số đã gây áp lực lên các nguồn tài nguyên."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "We heard a loud boom in the distance.",
+          "example_vi": "Chúng tôi nghe thấy một tiếng nổ lớn ở đằng xa."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The thunder made a deep boom.",
+          "example_vi": "Tiếng sấm tạo ra một tiếng nổ trầm."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The explosion caused a boom that shook the windows.",
+          "example_vi": "Vụ nổ gây ra một tiếng nổ làm rung chuyển các cửa sổ."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The cannon fired with a deafening boom.",
+          "example_vi": "Khẩu đại bác bắn ra với một tiếng nổ chói tai."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The drum made a boom sound.",
+          "example_vi": "Cái trống tạo ra một tiếng nổ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa sự tăng vọt và tiếng nổ. Bổ sung đủ 10 ví dụ.",
+      "word": "boom",
+      "normalized_word": "boom",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There was a sudden boom in house prices.",
+      "example_vi_clean": "Đã có một sự tăng vọt đột ngột về giá nhà."
+    },
+    {
+      "id": 25609,
+      "quiz_meaning_vi": "giày ống",
+      "meaning_vi_clean": "giày ống; đuổi ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "giày ống",
+          "example_en": "He wore a pair of leather boots.",
+          "example_vi": "Anh ấy đi một đôi giày ống bằng da."
+        },
+        {
+          "meaning_vi": "giày ống",
+          "example_en": "She put on her boots before going out in the snow.",
+          "example_vi": "Cô ấy đi giày ống trước khi ra ngoài trời tuyết."
+        },
+        {
+          "meaning_vi": "giày ống",
+          "example_en": "The mud covered his boots.",
+          "example_vi": "Bùn bao phủ đôi giày ống của anh ấy."
+        },
+        {
+          "meaning_vi": "giày ống",
+          "example_en": "He cleaned his boots after the hike.",
+          "example_vi": "Anh ấy lau sạch đôi giày ống sau chuyến đi bộ."
+        },
+        {
+          "meaning_vi": "giày ống",
+          "example_en": "These boots are very comfortable for walking.",
+          "example_vi": "Những đôi giày ống này rất thoải mái để đi bộ."
+        },
+        {
+          "meaning_vi": "đuổi ra",
+          "example_en": "They decided to boot him out of the club.",
+          "example_vi": "Họ quyết định đuổi anh ta ra khỏi câu lạc bộ."
+        },
+        {
+          "meaning_vi": "đuổi ra",
+          "example_en": "He was booted from the team for bad behavior.",
+          "example_vi": "Anh ta bị đuổi ra khỏi đội vì hành vi xấu."
+        },
+        {
+          "meaning_vi": "đuổi ra",
+          "example_en": "The manager booted the troublemaker from the store.",
+          "example_vi": "Người quản lý đã đuổi kẻ gây rối ra khỏi cửa hàng."
+        },
+        {
+          "meaning_vi": "đuổi ra",
+          "example_en": "She was booted from the meeting for being late.",
+          "example_vi": "Cô ấy bị đuổi ra khỏi cuộc họp vì đến muộn."
+        },
+        {
+          "meaning_vi": "đuổi ra",
+          "example_en": "They were booted out of the house by the landlord.",
+          "example_vi": "Họ bị chủ nhà đuổi ra khỏi nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa giày ống và đuổi ra. Bổ sung đủ 10 ví dụ.",
+      "word": "boot",
+      "normalized_word": "boot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He wore a pair of leather boots.",
+      "example_vi_clean": "Anh ấy đi một đôi giày ống bằng da."
+    },
+    {
+      "id": 25610,
+      "quiz_meaning_vi": "biên giới",
+      "meaning_vi_clean": "biên giới; bờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "biên giới",
+          "example_en": "They crossed the border into a new country.",
+          "example_vi": "Họ đã vượt qua biên giới để vào một đất nước mới."
+        },
+        {
+          "meaning_vi": "biên giới",
+          "example_en": "The border is heavily guarded by soldiers.",
+          "example_vi": "Biên giới được canh gác nghiêm ngặt bởi những người lính."
+        },
+        {
+          "meaning_vi": "biên giới",
+          "example_en": "We reached the border late at night.",
+          "example_vi": "Chúng tôi đến biên giới vào đêm muộn."
+        },
+        {
+          "meaning_vi": "biên giới",
+          "example_en": "The two countries share a long border.",
+          "example_vi": "Hai quốc gia có chung một đường biên giới dài."
+        },
+        {
+          "meaning_vi": "biên giới",
+          "example_en": "He lives near the border of the two states.",
+          "example_vi": "Anh ấy sống gần biên giới của hai bang."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "The garden has a flower border.",
+          "example_vi": "Khu vườn có một bờ hoa."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "She planted roses along the border of the path.",
+          "example_vi": "Cô ấy trồng hoa hồng dọc theo bờ của con đường."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "The lake has a rocky border.",
+          "example_vi": "Hồ nước có một bờ đá."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "The border of the rug is decorated with patterns.",
+          "example_vi": "Bờ của tấm thảm được trang trí bằng các họa tiết."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "He walked along the border of the field.",
+          "example_vi": "Anh ấy đi dọc theo bờ của cánh đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa biên giới và bờ. Bổ sung đủ 10 ví dụ.",
+      "word": "border",
+      "normalized_word": "border",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They crossed the border into a new country.",
+      "example_vi_clean": "Họ đã vượt qua biên giới để vào một đất nước mới."
+    }
+  ]
+}

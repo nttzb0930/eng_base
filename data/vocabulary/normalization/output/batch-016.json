@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24151,
+      "quiz_meaning_vi": "ghế",
+      "meaning_vi_clean": "ghế; chức chủ tịch; ghế chủ toạ",
+      "examples_clean": [
+        {
+          "meaning_vi": "ghế",
+          "example_en": "She sat on a comfortable chair to read her book.",
+          "example_vi": "Cô ấy ngồi trên một chiếc ghế thoải mái để đọc sách."
+        },
+        {
+          "meaning_vi": "ghế",
+          "example_en": "Please pull up a chair and join us for dinner.",
+          "example_vi": "Hãy kéo thêm một chiếc ghế và cùng ăn tối với chúng tôi."
+        },
+        {
+          "meaning_vi": "ghế",
+          "example_en": "The wooden chair was painted a bright blue color.",
+          "example_vi": "Chiếc ghế gỗ được sơn màu xanh lam tươi sáng."
+        },
+        {
+          "meaning_vi": "ghế",
+          "example_en": "He stood up from his chair to greet the guests.",
+          "example_vi": "Anh ấy đứng dậy khỏi ghế để chào đón các vị khách."
+        },
+        {
+          "meaning_vi": "chức chủ tịch",
+          "example_en": "She was appointed to the chair of the committee.",
+          "example_vi": "Cô ấy được bổ nhiệm vào chức chủ tịch ủy ban."
+        },
+        {
+          "meaning_vi": "chức chủ tịch",
+          "example_en": "He decided to step down from the chair after five years.",
+          "example_vi": "Ông ấy quyết định từ chức chủ tịch sau năm năm."
+        },
+        {
+          "meaning_vi": "chức chủ tịch",
+          "example_en": "The professor holds the chair of history at the university.",
+          "example_vi": "Giáo sư giữ chức chủ tịch khoa lịch sử tại trường đại học."
+        },
+        {
+          "meaning_vi": "ghế chủ toạ",
+          "example_en": "The chair called the meeting to order.",
+          "example_vi": "Người chủ toạ yêu cầu bắt đầu cuộc họp."
+        },
+        {
+          "meaning_vi": "ghế chủ toạ",
+          "example_en": "She took the chair and began the discussion.",
+          "example_vi": "Bà ấy ngồi vào ghế chủ toạ và bắt đầu cuộc thảo luận."
+        },
+        {
+          "meaning_vi": "ghế chủ toạ",
+          "example_en": "The chair thanked everyone for their contributions.",
+          "example_vi": "Người chủ toạ cảm ơn mọi người vì những đóng góp của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa phổ biến, loại bỏ các nghĩa chuyên ngành hoặc hiếm. Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "chair",
+      "normalized_word": "chair",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She sat on a comfortable chair to read her book.",
+      "example_vi_clean": "Cô ấy ngồi trên một chiếc ghế thoải mái để đọc sách."
+    },
+    {
+      "id": 24152,
+      "quiz_meaning_vi": "sự thay đổi",
+      "meaning_vi_clean": "sự thay đổi; tiền lẻ; thay đổi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thay đổi",
+          "example_en": "There has been a big change in the weather today.",
+          "example_vi": "Hôm nay thời tiết đã có một sự thay đổi lớn."
+        },
+        {
+          "meaning_vi": "sự thay đổi",
+          "example_en": "We need to make a change to our plans.",
+          "example_vi": "Chúng ta cần thực hiện một sự thay đổi đối với kế hoạch của mình."
+        },
+        {
+          "meaning_vi": "sự thay đổi",
+          "example_en": "Change is often difficult for many people.",
+          "example_vi": "Sự thay đổi thường khó khăn đối với nhiều người."
+        },
+        {
+          "meaning_vi": "sự thay đổi",
+          "example_en": "The change in leadership brought new ideas.",
+          "example_vi": "Sự thay đổi trong ban lãnh đạo đã mang lại những ý tưởng mới."
+        },
+        {
+          "meaning_vi": "tiền lẻ",
+          "example_en": "Do you have any change for a dollar?",
+          "example_vi": "Bạn có tiền lẻ để đổi lấy một đô la không?"
+        },
+        {
+          "meaning_vi": "tiền lẻ",
+          "example_en": "I keep my loose change in a small jar.",
+          "example_vi": "Tôi giữ tiền lẻ của mình trong một cái lọ nhỏ."
+        },
+        {
+          "meaning_vi": "tiền lẻ",
+          "example_en": "The cashier gave me the wrong change.",
+          "example_vi": "Nhân viên thu ngân đã trả lại tôi thiếu tiền lẻ."
+        },
+        {
+          "meaning_vi": "thay đổi",
+          "example_en": "The seasons change throughout the year.",
+          "example_vi": "Các mùa thay đổi trong suốt cả năm."
+        },
+        {
+          "meaning_vi": "thay đổi",
+          "example_en": "You should change your clothes before dinner.",
+          "example_vi": "Bạn nên thay đổi quần áo trước bữa tối."
+        },
+        {
+          "meaning_vi": "thay đổi",
+          "example_en": "She decided to change her job last month.",
+          "example_vi": "Cô ấy đã quyết định thay đổi công việc vào tháng trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lỗi POS (từ danh từ sang danh từ/động từ), chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "change",
+      "normalized_word": "change",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There has been a big change in the weather today.",
+      "example_vi_clean": "Hôm nay thời tiết đã có một sự thay đổi lớn."
+    },
+    {
+      "id": 24153,
+      "quiz_meaning_vi": "tính cách",
+      "meaning_vi_clean": "tính cách; đặc điểm; nhân vật",
+      "examples_clean": [
+        {
+          "meaning_vi": "tính cách",
+          "example_en": "She has a very strong and kind character.",
+          "example_vi": "Cô ấy có một tính cách rất mạnh mẽ và tốt bụng."
+        },
+        {
+          "meaning_vi": "tính cách",
+          "example_en": "Honesty is a key part of his character.",
+          "example_vi": "Sự trung thực là một phần quan trọng trong tính cách của anh ấy."
+        },
+        {
+          "meaning_vi": "tính cách",
+          "example_en": "Hard work helps to build a good character.",
+          "example_vi": "Làm việc chăm chỉ giúp xây dựng một tính cách tốt."
+        },
+        {
+          "meaning_vi": "tính cách",
+          "example_en": "It is not in his character to be rude.",
+          "example_vi": "Thô lỗ không phải là tính cách của anh ấy."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "One of the main characters of this plant is its blue leaves.",
+          "example_vi": "Một trong những đặc điểm chính của loài cây này là những chiếc lá màu xanh."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "The house has many unique architectural characters.",
+          "example_vi": "Ngôi nhà có nhiều đặc điểm kiến trúc độc đáo."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "This region has a distinct cultural character.",
+          "example_vi": "Vùng này có một đặc điểm văn hóa riêng biệt."
+        },
+        {
+          "meaning_vi": "nhân vật",
+          "example_en": "He is my favorite character in the book.",
+          "example_vi": "Anh ấy là nhân vật yêu thích của tôi trong cuốn sách."
+        },
+        {
+          "meaning_vi": "nhân vật",
+          "example_en": "The movie features many interesting characters.",
+          "example_vi": "Bộ phim có nhiều nhân vật thú vị."
+        },
+        {
+          "meaning_vi": "nhân vật",
+          "example_en": "She played the main character in the play.",
+          "example_vi": "Cô ấy đóng vai nhân vật chính trong vở kịch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "character",
+      "normalized_word": "character",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a very strong and kind character.",
+      "example_vi_clean": "Cô ấy có một tính cách rất mạnh mẽ và tốt bụng."
+    },
+    {
+      "id": 24154,
+      "quiz_meaning_vi": "sự kiểm tra",
+      "meaning_vi_clean": "sự kiểm tra; séc; kiểm tra",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kiểm tra",
+          "example_en": "The final check of the equipment is necessary.",
+          "example_vi": "Việc kiểm tra cuối cùng các thiết bị là cần thiết."
+        },
+        {
+          "meaning_vi": "sự kiểm tra",
+          "example_en": "We did a quick check before leaving.",
+          "example_vi": "Chúng tôi đã thực hiện một sự kiểm tra nhanh trước khi rời đi."
+        },
+        {
+          "meaning_vi": "sự kiểm tra",
+          "example_en": "The doctor performed a routine health check.",
+          "example_vi": "Bác sĩ đã thực hiện một sự kiểm tra sức khỏe định kỳ."
+        },
+        {
+          "meaning_vi": "sự kiểm tra",
+          "example_en": "The security check took longer than expected.",
+          "example_vi": "Sự kiểm tra an ninh mất nhiều thời gian hơn dự kiến."
+        },
+        {
+          "meaning_vi": "séc",
+          "example_en": "I paid for the groceries with a check.",
+          "example_vi": "Tôi đã thanh toán tiền tạp hóa bằng séc."
+        },
+        {
+          "meaning_vi": "séc",
+          "example_en": "She wrote a check to cover the rent.",
+          "example_vi": "Cô ấy đã viết một tờ séc để trả tiền thuê nhà."
+        },
+        {
+          "meaning_vi": "séc",
+          "example_en": "The bank will process the check tomorrow.",
+          "example_vi": "Ngân hàng sẽ xử lý tờ séc vào ngày mai."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "Please check your answers before submitting.",
+          "example_vi": "Vui lòng kiểm tra câu trả lời của bạn trước khi nộp."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "I need to check if the store is open.",
+          "example_vi": "Tôi cần kiểm tra xem cửa hàng có mở cửa không."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "Can you check the time for me?",
+          "example_vi": "Bạn có thể kiểm tra thời gian giúp tôi không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lỗi POS, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "check",
+      "normalized_word": "check",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The final check of the equipment is necessary.",
+      "example_vi_clean": "Việc kiểm tra cuối cùng các thiết bị là cần thiết."
+    },
+    {
+      "id": 24155,
+      "quiz_meaning_vi": "phó mát",
+      "meaning_vi_clean": "phó mát",
+      "examples_clean": [
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "I love eating bread with cheese.",
+          "example_vi": "Tôi thích ăn bánh mì với phó mát."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "She bought a block of cheese at the market.",
+          "example_vi": "Cô ấy đã mua một khối phó mát ở chợ."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "Would you like some cheese on your pasta?",
+          "example_vi": "Bạn có muốn thêm một ít phó mát vào mì ống không?"
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "There are many different types of cheese.",
+          "example_vi": "Có rất nhiều loại phó mát khác nhau."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "He made a delicious cheese sandwich.",
+          "example_vi": "Anh ấy đã làm một chiếc bánh mì kẹp phó mát ngon tuyệt."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "The cheese melted perfectly on the pizza.",
+          "example_vi": "Phó mát tan chảy hoàn hảo trên bánh pizza."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "We served a cheese platter at the party.",
+          "example_vi": "Chúng tôi đã phục vụ một đĩa phó mát tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "She is allergic to most types of cheese.",
+          "example_vi": "Cô ấy bị dị ứng với hầu hết các loại phó mát."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "The smell of the cheese was very strong.",
+          "example_vi": "Mùi của phó mát rất nồng."
+        },
+        {
+          "meaning_vi": "phó mát",
+          "example_en": "He prefers goat cheese over cow cheese.",
+          "example_vi": "Anh ấy thích phó mát dê hơn phó mát bò."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa từ lóng không phù hợp, tập trung vào nghĩa danh từ phổ biến.",
+      "word": "cheese",
+      "normalized_word": "cheese",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I love eating bread with cheese.",
+      "example_vi_clean": "Tôi thích ăn bánh mì với phó mát."
+    },
+    {
+      "id": 24156,
+      "quiz_meaning_vi": "gà con",
+      "meaning_vi_clean": "gà con; thịt gà",
+      "examples_clean": [
+        {
+          "meaning_vi": "gà con",
+          "example_en": "The hen is looking after her little chicken.",
+          "example_vi": "Gà mẹ đang chăm sóc gà con của nó."
+        },
+        {
+          "meaning_vi": "gà con",
+          "example_en": "The chicken ran across the yard.",
+          "example_vi": "Con gà con chạy ngang qua sân."
+        },
+        {
+          "meaning_vi": "gà con",
+          "example_en": "We saw a cute chicken on the farm.",
+          "example_vi": "Chúng tôi thấy một con gà con dễ thương ở nông trại."
+        },
+        {
+          "meaning_vi": "gà con",
+          "example_en": "The chicken hatched from the egg this morning.",
+          "example_vi": "Con gà con đã nở ra từ quả trứng sáng nay."
+        },
+        {
+          "meaning_vi": "thịt gà",
+          "example_en": "We are having roast chicken for dinner.",
+          "example_vi": "Chúng tôi sẽ ăn thịt gà quay cho bữa tối."
+        },
+        {
+          "meaning_vi": "thịt gà",
+          "example_en": "She cooked a healthy chicken salad.",
+          "example_vi": "Cô ấy đã nấu một món salad thịt gà tốt cho sức khỏe."
+        },
+        {
+          "meaning_vi": "thịt gà",
+          "example_en": "Do you prefer fried chicken or grilled chicken?",
+          "example_vi": "Bạn thích thịt gà rán hay thịt gà nướng hơn?"
+        },
+        {
+          "meaning_vi": "thịt gà",
+          "example_en": "The chicken was seasoned with herbs and spices.",
+          "example_vi": "Thịt gà được tẩm ướp với các loại thảo mộc và gia vị."
+        },
+        {
+          "meaning_vi": "thịt gà",
+          "example_en": "He ordered a chicken soup at the restaurant.",
+          "example_vi": "Anh ấy đã gọi món súp thịt gà tại nhà hàng."
+        },
+        {
+          "meaning_vi": "thịt gà",
+          "example_en": "Chicken is a popular source of protein.",
+          "example_vi": "Thịt gà là một nguồn protein phổ biến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "chicken",
+      "normalized_word": "chicken",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The hen is looking after her little chicken.",
+      "example_vi_clean": "Gà mẹ đang chăm sóc gà con của nó."
+    },
+    {
+      "id": 24157,
+      "quiz_meaning_vi": "đứa bé",
+      "meaning_vi_clean": "đứa bé",
+      "examples_clean": [
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "The child is playing in the park.",
+          "example_vi": "Đứa bé đang chơi trong công viên."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "She is a very happy child.",
+          "example_vi": "Con bé là một đứa trẻ rất vui vẻ."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "Every child deserves a good education.",
+          "example_vi": "Mỗi đứa bé đều xứng đáng được giáo dục tốt."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "The child held his mother's hand tightly.",
+          "example_vi": "Đứa bé nắm chặt tay mẹ mình."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "He has been a curious child since he was young.",
+          "example_vi": "Nó là một đứa bé tò mò từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "The child learned to walk at one year old.",
+          "example_vi": "Đứa bé đã học đi khi được một tuổi."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "She treats every child with kindness.",
+          "example_vi": "Cô ấy đối xử với mọi đứa bé bằng sự tử tế."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "The child was laughing at the funny clown.",
+          "example_vi": "Đứa bé đang cười chú hề vui tính."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "A small child needs plenty of sleep.",
+          "example_vi": "Một đứa bé nhỏ cần ngủ nhiều."
+        },
+        {
+          "meaning_vi": "đứa bé",
+          "example_en": "The child drew a picture of his family.",
+          "example_vi": "Đứa bé đã vẽ một bức tranh về gia đình mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "child",
+      "normalized_word": "child",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The child is playing in the park.",
+      "example_vi_clean": "Đứa bé đang chơi trong công viên."
+    },
+    {
+      "id": 24158,
+      "quiz_meaning_vi": "sôcôla",
+      "meaning_vi_clean": "sôcôla",
+      "examples_clean": [
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "I would like a piece of chocolate, please.",
+          "example_vi": "Cho tôi một miếng sôcôla nhé."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "She loves drinking hot chocolate in winter.",
+          "example_vi": "Cô ấy thích uống sôcôla nóng vào mùa đông."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "This cake is made with dark chocolate.",
+          "example_vi": "Chiếc bánh này được làm bằng sôcôla đen."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "He gave her a box of chocolates for her birthday.",
+          "example_vi": "Anh ấy tặng cô ấy một hộp sôcôla vào ngày sinh nhật."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "Chocolate is my favorite dessert.",
+          "example_vi": "Sôcôla là món tráng miệng yêu thích của tôi."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "The children were eating chocolate ice cream.",
+          "example_vi": "Những đứa trẻ đang ăn kem sôcôla."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "She melted some chocolate to make a sauce.",
+          "example_vi": "Cô ấy đã đun chảy một ít sôcôla để làm nước sốt."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "Do you prefer milk chocolate or white chocolate?",
+          "example_vi": "Bạn thích sôcôla sữa hay sôcôla trắng hơn?"
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "He bought a chocolate bar at the store.",
+          "example_vi": "Anh ấy đã mua một thanh sôcôla ở cửa hàng."
+        },
+        {
+          "meaning_vi": "sôcôla",
+          "example_en": "The smell of chocolate filled the kitchen.",
+          "example_vi": "Mùi sôcôla tràn ngập căn bếp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lỗi POS, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "chocolate",
+      "normalized_word": "chocolate",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I would like a piece of chocolate, please.",
+      "example_vi_clean": "Cho tôi một miếng sôcôla nhé."
+    },
+    {
+      "id": 24159,
+      "quiz_meaning_vi": "chọn",
+      "meaning_vi_clean": "chọn",
+      "examples_clean": [
+        {
+          "meaning_vi": "chọn",
+          "example_en": "You can choose any color you like.",
+          "example_vi": "Bạn có thể chọn bất kỳ màu nào bạn thích."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "It is hard to choose between these two options.",
+          "example_vi": "Thật khó để chọn giữa hai lựa chọn này."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "She chose to study medicine at university.",
+          "example_vi": "Cô ấy đã chọn học y tại trường đại học."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "We need to choose a new leader for the team.",
+          "example_vi": "Chúng ta cần chọn một người lãnh đạo mới cho đội."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "He chose the best apple from the basket.",
+          "example_vi": "Anh ấy đã chọn quả táo ngon nhất từ trong giỏ."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "They chose to stay home instead of going out.",
+          "example_vi": "Họ đã chọn ở nhà thay vì đi ra ngoài."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "I will choose a gift for my mother.",
+          "example_vi": "Tôi sẽ chọn một món quà cho mẹ tôi."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "Did you choose your own clothes today?",
+          "example_vi": "Hôm nay bạn có tự chọn quần áo cho mình không?"
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "She helped me choose the right shoes.",
+          "example_vi": "Cô ấy đã giúp tôi chọn đôi giày phù hợp."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "We chose this path because it is shorter.",
+          "example_vi": "Chúng tôi đã chọn con đường này vì nó ngắn hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "choose",
+      "normalized_word": "choose",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You can choose any color you like.",
+      "example_vi_clean": "Bạn có thể chọn bất kỳ màu nào bạn thích."
+    },
+    {
+      "id": 24160,
+      "quiz_meaning_vi": "nhà thờ",
+      "meaning_vi_clean": "nhà thờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "They go to church every Sunday morning.",
+          "example_vi": "Họ đi nhà thờ vào mỗi sáng Chủ nhật."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "The old church is located in the city center.",
+          "example_vi": "Nhà thờ cổ nằm ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "We visited a beautiful church during our trip.",
+          "example_vi": "Chúng tôi đã ghé thăm một nhà thờ xinh đẹp trong chuyến đi."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "The church bells rang at noon.",
+          "example_vi": "Chuông nhà thờ vang lên vào buổi trưa."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "Many people gathered at the church for the wedding.",
+          "example_vi": "Nhiều người đã tập trung tại nhà thờ để dự đám cưới."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "The church was built over a hundred years ago.",
+          "example_vi": "Nhà thờ được xây dựng hơn một trăm năm trước."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "She works as a volunteer at the local church.",
+          "example_vi": "Cô ấy làm tình nguyện viên tại nhà thờ địa phương."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "The church has a very tall tower.",
+          "example_vi": "Nhà thờ có một cái tháp rất cao."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "They held a concert inside the church.",
+          "example_vi": "Họ đã tổ chức một buổi hòa nhạc bên trong nhà thờ."
+        },
+        {
+          "meaning_vi": "nhà thờ",
+          "example_en": "The church is open to everyone who wants to pray.",
+          "example_vi": "Nhà thờ mở cửa cho tất cả những ai muốn cầu nguyện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lỗi POS, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "church",
+      "normalized_word": "church",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They go to church every Sunday morning.",
+      "example_vi_clean": "Họ đi nhà thờ vào mỗi sáng Chủ nhật."
+    }
+  ]
+}

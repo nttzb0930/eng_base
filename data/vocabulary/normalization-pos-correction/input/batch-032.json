@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-032",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24779,
+      "word": "chain",
+      "normalized_word": "chain",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃein/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24781,
+      "word": "challenge",
+      "normalized_word": "challenge",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'tʃælindʤ/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24784,
+      "word": "chance",
+      "normalized_word": "chance",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃɑ:ns/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24786,
+      "word": "chart",
+      "normalized_word": "chart",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃɑ:t/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24787,
+      "word": "cheap",
+      "normalized_word": "cheap",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/tʃi:p/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24788,
+      "word": "cheek",
+      "normalized_word": "cheek",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃi:k/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24799,
+      "word": "chirp",
+      "normalized_word": "chirp",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃə:p/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24803,
+      "word": "classic",
+      "normalized_word": "classic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'klæsik/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24805,
+      "word": "clear",
+      "normalized_word": "clear",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kliə/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24807,
+      "word": "clerk",
+      "normalized_word": "clerk",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/klɑ:k/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

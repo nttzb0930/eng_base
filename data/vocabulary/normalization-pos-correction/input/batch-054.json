@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-054",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25476,
+      "word": "altogether",
+      "normalized_word": "altogether",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/,ɔ:ltə'geðə/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25480,
+      "word": "amount",
+      "normalized_word": "amount",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'maunt/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25486,
+      "word": "angle",
+      "normalized_word": "angle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æɳgl/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25493,
+      "word": "annual",
+      "normalized_word": "annual",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'ænjuəl/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25496,
+      "word": "anti",
+      "normalized_word": "anti",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25511,
+      "word": "approach",
+      "normalized_word": "approach",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'proutʃ/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25521,
+      "word": "arrest",
+      "normalized_word": "arrest",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'rest/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25527,
+      "word": "aside",
+      "normalized_word": "aside",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/ə'said/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25548,
+      "word": "auxiliary",
+      "normalized_word": "auxiliary",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ɔ:g'ziljəri/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25563,
+      "word": "balance",
+      "normalized_word": "balance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bæləns/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

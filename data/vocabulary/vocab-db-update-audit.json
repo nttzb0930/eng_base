@@ -1,0 +1,16 @@
+{
+  "appliedAt": "2026-07-13T18:54:57.608Z",
+  "action": "vocabulary-normalization-applied",
+  "backupPath": "C:\\Users\\nttzb\\Downloads\\eng_base\\data\\vocabulary\\backups\\vocab-db-pre-normalization-2026-07-13T18-54-51-880Z.json",
+  "planPath": "C:\\Users\\nttzb\\Downloads\\eng_base\\data\\vocabulary\\vocab-db-update-plan.json",
+  "sourceSnapshotSha256": "3509250caf923ef1aaf94dfab71329b15a005f48718ab8b4753ec6daea143222",
+  "counts": {
+    "vocabularyItems": 3000,
+    "existingExamplesToDelete": 8520,
+    "normalizedExamplesToInsert": 30000,
+    "challengeQuestionsToUpdate": 942,
+    "correctChallengeOptionsToUpdate": 942
+  },
+  "postApplyErrors": [],
+  "databaseUpdated": true
+}

@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-272",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26711,
+      "word": "contradict",
+      "normalized_word": "contradict",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/,kɔntrə'dikt/",
+      "primary_meaning_vi": "mâu thuẫn với",
+      "meaning_vi": "mâu thuẫn với, trái với; cãi lại, phủ nhận",
+      "example_en": "His testimony contradicts hers.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Everything he says contradicts me.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26712,
+      "word": "contradiction",
+      "normalized_word": "contradiction",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔntrə'dikʃn/",
+      "primary_meaning_vi": "sự mâu thuẫn",
+      "meaning_vi": "sự mâu thuẫn, sự trái ngược; sự cãi lại",
+      "example_en": "His contradiction of the proposal was very interesting.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There is a contradiction in Clarence Page's statement that a woman should have the right to choose and decide for herself whether to have an abortion, and at the same time she should not have that right.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Marx believed that the contradictions of capitalism would lead to socialism.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26713,
+      "word": "contradictory",
+      "normalized_word": "contradictory",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔntrə'diktəri/",
+      "primary_meaning_vi": "mâu thuẫn",
+      "meaning_vi": "mâu thuẫn, trái ngược; hay cãi lại, hay lý sự cùn; lời nói trái lại; lời cãi lại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26714,
+      "word": "controversy",
+      "normalized_word": "controversy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔntrəvə:si/",
+      "primary_meaning_vi": "sự tranh luận",
+      "meaning_vi": "sự tranh luận, sự tranh cãi; cuộc tranh luận, cuộc bàn cãi, cuộc luận chiến; cuộc bút chiến; không cần phải tranh luận, không cần phải bàn cãi nữa, không còn nghi ngờ gì nữa",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26715,
+      "word": "conveniently",
+      "normalized_word": "conveniently",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "tiện lợi",
+      "meaning_vi": "tiện lợi, thuận tiện",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26716,
+      "word": "convention",
+      "normalized_word": "convention",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'venʃn/",
+      "primary_meaning_vi": "hội nghị (chính trị)",
+      "meaning_vi": "hội nghị (chính trị); sự triệu tập; hiệp định; sự thoả thuận (thường là ngầm); tục lệ, lệ thường; quy ước (của một số trò chơi)",
+      "example_en": "The convention was held in Geneva.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The EU installed an inter-institutional Convention to draft a European constitution.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The Vienna convention at the Vienna Congress (1814-15) standardized most of diplomatic conduct for generations.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Table seatings are generally determined by tacit convention, not binding formal protocol.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26717,
+      "word": "conventional",
+      "normalized_word": "conventional",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kən'venʃənl/",
+      "primary_meaning_vi": "quy ước",
+      "meaning_vi": "quy ước; theo tập quán, theo tục lệ; thường; theo lối cổ truyền",
+      "example_en": "They wear conventional clothes, eat conventional food, and keep conventional hours.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26718,
+      "word": "converse",
+      "normalized_word": "converse",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "nói chuyện",
+      "meaning_vi": "nói chuyện, chuyện trò; trái ngược, nghịch đảo",
+      "example_en": "All trees are plants, but the converse, that all plants are trees, is not true.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a converse proposition",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26719,
+      "word": "conversely",
+      "normalized_word": "conversely",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "ngược lại",
+      "meaning_vi": "ngược lại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26720,
+      "word": "conversion",
+      "normalized_word": "conversion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "đổi",
+      "meaning_vi": "đổi, chuyển hoán/đổi, biến đổi",
+      "example_en": "His conversion to Christianity",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the conversion of a horse",
+          "example_vi": null
+        },
+        {
+          "example_en": "the conversion of equations; the conversion of proportions",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

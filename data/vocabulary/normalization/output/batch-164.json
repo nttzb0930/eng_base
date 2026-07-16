@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25631,
+      "quiz_meaning_vi": "rộng",
+      "meaning_vi_clean": "rộng; bao la; rõ ràng; khái quát",
+      "examples_clean": [
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The river is very broad at this point.",
+          "example_vi": "Con sông rất rộng tại điểm này."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "He has a broad smile on his face.",
+          "example_vi": "Anh ấy có một nụ cười rộng trên khuôn mặt."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "She has broad shoulders and stands tall.",
+          "example_vi": "Cô ấy có đôi vai rộng và đứng thẳng."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The road is broad enough for two cars.",
+          "example_vi": "Con đường đủ rộng cho hai chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "bao la",
+          "example_en": "They looked out over the broad expanse of the ocean.",
+          "example_vi": "Họ nhìn ra vùng đại dương bao la."
+        },
+        {
+          "meaning_vi": "bao la",
+          "example_en": "The landscape is a broad plain with no trees.",
+          "example_vi": "Phong cảnh là một đồng bằng bao la không có cây cối."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "He gave a broad hint that he wanted to leave.",
+          "example_vi": "Anh ấy đã đưa ra một gợi ý rõ ràng rằng anh ấy muốn rời đi."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "It was a broad daylight robbery.",
+          "example_vi": "Đó là một vụ cướp giữa ban ngày rõ ràng."
+        },
+        {
+          "meaning_vi": "khái quát",
+          "example_en": "The report gives a broad overview of the situation.",
+          "example_vi": "Báo cáo đưa ra một cái nhìn khái quát về tình hình."
+        },
+        {
+          "meaning_vi": "khái quát",
+          "example_en": "We need to reach a broad agreement on the plan.",
+          "example_vi": "Chúng ta cần đạt được một thỏa thuận khái quát về kế hoạch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ. Loại bỏ các nghĩa lóng và nghĩa không phù hợp cấp độ. Bổ sung 10 ví dụ chuẩn.",
+      "word": "broad",
+      "normalized_word": "broad",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The river is very broad at this point.",
+      "example_vi_clean": "Con sông rất rộng tại điểm này."
+    },
+    {
+      "id": 25632,
+      "quiz_meaning_vi": "sự phát thanh",
+      "meaning_vi_clean": "sự phát thanh; buổi phát thanh; truyền đi rộng rãi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phát thanh",
+          "example_en": "The station is known for its high-quality broadcast.",
+          "example_vi": "Đài phát thanh này nổi tiếng với sự phát thanh chất lượng cao."
+        },
+        {
+          "meaning_vi": "sự phát thanh",
+          "example_en": "The live broadcast reached millions of viewers.",
+          "example_vi": "Sự phát thanh trực tiếp đã tiếp cận hàng triệu người xem."
+        },
+        {
+          "meaning_vi": "sự phát thanh",
+          "example_en": "They are preparing for the morning broadcast.",
+          "example_vi": "Họ đang chuẩn bị cho sự phát thanh buổi sáng."
+        },
+        {
+          "meaning_vi": "sự phát thanh",
+          "example_en": "The signal for the broadcast was very clear.",
+          "example_vi": "Tín hiệu cho sự phát thanh rất rõ ràng."
+        },
+        {
+          "meaning_vi": "buổi phát thanh",
+          "example_en": "The DJ was nervous before his first national broadcast.",
+          "example_vi": "DJ đã rất lo lắng trước buổi phát thanh quốc gia đầu tiên của mình."
+        },
+        {
+          "meaning_vi": "buổi phát thanh",
+          "example_en": "Did you hear the news on the evening broadcast?",
+          "example_vi": "Bạn có nghe tin tức trên buổi phát thanh buổi tối không?"
+        },
+        {
+          "meaning_vi": "buổi phát thanh",
+          "example_en": "The special broadcast will start at eight.",
+          "example_vi": "Buổi phát thanh đặc biệt sẽ bắt đầu lúc tám giờ."
+        },
+        {
+          "meaning_vi": "truyền đi rộng rãi",
+          "example_en": "The news was broadcast to the entire country.",
+          "example_vi": "Tin tức đã được truyền đi rộng rãi đến toàn quốc."
+        },
+        {
+          "meaning_vi": "truyền đi rộng rãi",
+          "example_en": "They broadcast the concert live on the internet.",
+          "example_vi": "Họ đã truyền đi rộng rãi buổi hòa nhạc trực tiếp trên internet."
+        },
+        {
+          "meaning_vi": "truyền đi rộng rãi",
+          "example_en": "The message was broadcast across all channels.",
+          "example_vi": "Thông điệp đã được truyền đi rộng rãi trên tất cả các kênh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ (nghĩa chính). Bổ sung ví dụ cho các nghĩa danh từ và động từ.",
+      "word": "broadcast",
+      "normalized_word": "broadcast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The station is known for its high-quality broadcast.",
+      "example_vi_clean": "Đài phát thanh này nổi tiếng với sự phát thanh chất lượng cao."
+    },
+    {
+      "id": 25633,
+      "quiz_meaning_vi": "cây bông cải xanh",
+      "meaning_vi_clean": "cây bông cải xanh",
+      "examples_clean": [
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "I like to eat steamed broccoli with dinner.",
+          "example_vi": "Tôi thích ăn bông cải xanh hấp với bữa tối."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "Broccoli is a very healthy vegetable.",
+          "example_vi": "Bông cải xanh là một loại rau rất tốt cho sức khỏe."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "She chopped the broccoli into small pieces.",
+          "example_vi": "Cô ấy cắt bông cải xanh thành những miếng nhỏ."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "Add some broccoli to the soup for flavor.",
+          "example_vi": "Thêm một ít bông cải xanh vào súp để tăng hương vị."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "He doesn't like the taste of raw broccoli.",
+          "example_vi": "Anh ấy không thích vị của bông cải xanh sống."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "Fresh broccoli is available at the market.",
+          "example_vi": "Bông cải xanh tươi có bán tại chợ."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "Wash the broccoli thoroughly before cooking.",
+          "example_vi": "Rửa sạch bông cải xanh trước khi nấu."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "They served a side of roasted broccoli.",
+          "example_vi": "Họ phục vụ một phần bông cải xanh nướng kèm theo."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "Broccoli is rich in vitamins and minerals.",
+          "example_vi": "Bông cải xanh rất giàu vitamin và khoáng chất."
+        },
+        {
+          "meaning_vi": "cây bông cải xanh",
+          "example_en": "My kids love eating broccoli with cheese.",
+          "example_vi": "Các con tôi thích ăn bông cải xanh với phô mai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ tự nhiên.",
+      "word": "broccoli",
+      "normalized_word": "broccoli",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I like to eat steamed broccoli with dinner.",
+      "example_vi_clean": "Tôi thích ăn bông cải xanh hấp với bữa tối."
+    },
+    {
+      "id": 25634,
+      "quiz_meaning_vi": "đồng thiếc",
+      "meaning_vi_clean": "đồng thiếc; đồ bằng đồng thiếc; màu đồng thiếc",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The statue was cast in bronze.",
+          "example_vi": "Bức tượng được đúc bằng đồng thiếc."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "Bronze is an alloy of copper and tin.",
+          "example_vi": "Đồng thiếc là một hợp kim của đồng và thiếc."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "Ancient tools were often made of bronze.",
+          "example_vi": "Các công cụ cổ đại thường được làm bằng đồng thiếc."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The medal was made of solid bronze.",
+          "example_vi": "Chiếc huy chương được làm bằng đồng thiếc nguyên khối."
+        },
+        {
+          "meaning_vi": "đồ bằng đồng thiếc",
+          "example_en": "She wanted to win the tournament, but had to settle for the bronze.",
+          "example_vi": "Cô ấy muốn thắng giải đấu, nhưng đành phải nhận huy chương đồng."
+        },
+        {
+          "meaning_vi": "đồ bằng đồng thiếc",
+          "example_en": "The museum has a collection of ancient bronze.",
+          "example_vi": "Bảo tàng có một bộ sưu tập đồ bằng đồng thiếc cổ."
+        },
+        {
+          "meaning_vi": "đồ bằng đồng thiếc",
+          "example_en": "He polished the old bronze until it shone.",
+          "example_vi": "Anh ấy đánh bóng món đồ bằng đồng thiếc cũ cho đến khi nó sáng loáng."
+        },
+        {
+          "meaning_vi": "màu đồng thiếc",
+          "example_en": "She has a beautiful bronze tan.",
+          "example_vi": "Cô ấy có một làn da rám nắng màu đồng thiếc tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "màu đồng thiếc",
+          "example_en": "The sunset gave the sky a bronze glow.",
+          "example_vi": "Hoàng hôn mang lại cho bầu trời một ánh sáng màu đồng thiếc."
+        },
+        {
+          "meaning_vi": "màu đồng thiếc",
+          "example_en": "The leaves turned a deep bronze in autumn.",
+          "example_vi": "Những chiếc lá chuyển sang màu đồng thiếc đậm vào mùa thu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Bổ sung ví dụ cho các nghĩa danh từ.",
+      "word": "bronze",
+      "normalized_word": "bronze",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The statue was cast in bronze.",
+      "example_vi_clean": "Bức tượng được đúc bằng đồng thiếc."
+    },
+    {
+      "id": 25635,
+      "quiz_meaning_vi": "tình anh em",
+      "meaning_vi_clean": "tình anh em; nhóm người cùng chí hướng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tình anh em",
+          "example_en": "They shared a deep sense of brotherhood.",
+          "example_vi": "Họ chia sẻ một cảm giác sâu sắc về tình anh em."
+        },
+        {
+          "meaning_vi": "tình anh em",
+          "example_en": "The war brought out the spirit of brotherhood.",
+          "example_vi": "Chiến tranh đã khơi dậy tinh thần tình anh em."
+        },
+        {
+          "meaning_vi": "tình anh em",
+          "example_en": "He spoke about the importance of brotherhood.",
+          "example_vi": "Anh ấy nói về tầm quan trọng của tình anh em."
+        },
+        {
+          "meaning_vi": "tình anh em",
+          "example_en": "They formed a bond of brotherhood.",
+          "example_vi": "Họ đã hình thành một mối liên kết tình anh em."
+        },
+        {
+          "meaning_vi": "nhóm người cùng chí hướng",
+          "example_en": "The organization acts as a brotherhood for artists.",
+          "example_vi": "Tổ chức này hoạt động như một nhóm người cùng chí hướng dành cho các nghệ sĩ."
+        },
+        {
+          "meaning_vi": "nhóm người cùng chí hướng",
+          "example_en": "He joined a local brotherhood of scholars.",
+          "example_vi": "Anh ấy đã tham gia một nhóm người cùng chí hướng địa phương gồm các học giả."
+        },
+        {
+          "meaning_vi": "nhóm người cùng chí hướng",
+          "example_en": "The brotherhood meets every month to discuss goals.",
+          "example_vi": "Nhóm người cùng chí hướng gặp nhau hàng tháng để thảo luận về các mục tiêu."
+        },
+        {
+          "meaning_vi": "nhóm người cùng chí hướng",
+          "example_en": "They are part of a secret brotherhood.",
+          "example_vi": "Họ là một phần của một nhóm người cùng chí hướng bí mật."
+        },
+        {
+          "meaning_vi": "nhóm người cùng chí hướng",
+          "example_en": "The brotherhood supports its members in times of need.",
+          "example_vi": "Nhóm người cùng chí hướng hỗ trợ các thành viên của mình trong lúc khó khăn."
+        },
+        {
+          "meaning_vi": "nhóm người cùng chí hướng",
+          "example_en": "He was welcomed into the brotherhood.",
+          "example_vi": "Anh ấy đã được chào đón vào nhóm người cùng chí hướng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "brotherhood",
+      "normalized_word": "brotherhood",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They shared a deep sense of brotherhood.",
+      "example_vi_clean": "Họ chia sẻ một cảm giác sâu sắc về tình anh em."
+    },
+    {
+      "id": 25636,
+      "quiz_meaning_vi": "bong bóng",
+      "meaning_vi_clean": "bong bóng; điều hão huyền; sự sôi sùng sục",
+      "examples_clean": [
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "The children enjoyed blowing bubbles in the park.",
+          "example_vi": "Những đứa trẻ thích thổi bong bóng trong công viên."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "A bubble rose to the surface of the water.",
+          "example_vi": "Một bong bóng nổi lên mặt nước."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "The soap created many small bubbles.",
+          "example_vi": "Xà phòng tạo ra nhiều bong bóng nhỏ."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "She popped the bubble with her finger.",
+          "example_vi": "Cô ấy làm vỡ bong bóng bằng ngón tay của mình."
+        },
+        {
+          "meaning_vi": "điều hão huyền",
+          "example_en": "The economic bubble finally burst.",
+          "example_vi": "Điều hão huyền về kinh tế cuối cùng đã tan vỡ."
+        },
+        {
+          "meaning_vi": "điều hão huyền",
+          "example_en": "He realized his dream was just a bubble.",
+          "example_vi": "Anh ấy nhận ra giấc mơ của mình chỉ là một điều hão huyền."
+        },
+        {
+          "meaning_vi": "điều hão huyền",
+          "example_en": "They were living in a bubble of their own making.",
+          "example_vi": "Họ đang sống trong một điều hão huyền do chính họ tạo ra."
+        },
+        {
+          "meaning_vi": "sự sôi sùng sục",
+          "example_en": "The water was in a bubble of heat.",
+          "example_vi": "Nước đang trong sự sôi sùng sục vì nhiệt."
+        },
+        {
+          "meaning_vi": "sự sôi sùng sục",
+          "example_en": "The pot began to bubble on the stove.",
+          "example_vi": "Cái nồi bắt đầu sôi sùng sục trên bếp."
+        },
+        {
+          "meaning_vi": "sự sôi sùng sục",
+          "example_en": "The soup started to bubble as it boiled.",
+          "example_vi": "Món súp bắt đầu sôi sùng sục khi nó sôi lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Bổ sung ví dụ cho các nghĩa.",
+      "word": "bubble",
+      "normalized_word": "bubble",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The children enjoyed blowing bubbles in the park.",
+      "example_vi_clean": "Những đứa trẻ thích thổi bong bóng trong công viên."
+    },
+    {
+      "id": 25637,
+      "quiz_meaning_vi": "người xây dựng",
+      "meaning_vi_clean": "người xây dựng; chủ thầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "người xây dựng",
+          "example_en": "He is a skilled builder of wooden houses.",
+          "example_vi": "Anh ấy là một người xây dựng nhà gỗ lành nghề."
+        },
+        {
+          "meaning_vi": "người xây dựng",
+          "example_en": "The builder finished the project on time.",
+          "example_vi": "Người xây dựng đã hoàn thành dự án đúng hạn."
+        },
+        {
+          "meaning_vi": "người xây dựng",
+          "example_en": "She hired a builder to renovate her kitchen.",
+          "example_vi": "Cô ấy đã thuê một người xây dựng để cải tạo nhà bếp của mình."
+        },
+        {
+          "meaning_vi": "người xây dựng",
+          "example_en": "The builder used high-quality materials.",
+          "example_vi": "Người xây dựng đã sử dụng vật liệu chất lượng cao."
+        },
+        {
+          "meaning_vi": "người xây dựng",
+          "example_en": "He worked as a builder for many years.",
+          "example_vi": "Anh ấy đã làm người xây dựng trong nhiều năm."
+        },
+        {
+          "meaning_vi": "chủ thầu",
+          "example_en": "The builder submitted a bid for the new school.",
+          "example_vi": "Chủ thầu đã nộp hồ sơ dự thầu cho ngôi trường mới."
+        },
+        {
+          "meaning_vi": "chủ thầu",
+          "example_en": "We need to talk to the builder about the costs.",
+          "example_vi": "Chúng ta cần nói chuyện với chủ thầu về các chi phí."
+        },
+        {
+          "meaning_vi": "chủ thầu",
+          "example_en": "The builder is responsible for the safety of the site.",
+          "example_vi": "Chủ thầu chịu trách nhiệm về sự an toàn của công trường."
+        },
+        {
+          "meaning_vi": "chủ thầu",
+          "example_en": "The builder signed the contract yesterday.",
+          "example_vi": "Chủ thầu đã ký hợp đồng vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "chủ thầu",
+          "example_en": "The builder promised to fix the leaks.",
+          "example_vi": "Chủ thầu đã hứa sẽ sửa các chỗ rò rỉ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "builder",
+      "normalized_word": "builder",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a skilled builder of wooden houses.",
+      "example_vi_clean": "Anh ấy là một người xây dựng nhà gỗ lành nghề."
+    },
+    {
+      "id": 25638,
+      "quiz_meaning_vi": "bò đực",
+      "meaning_vi_clean": "bò đực; con đực; người đầu cơ giá lên",
+      "examples_clean": [
+        {
+          "meaning_vi": "bò đực",
+          "example_en": "The bull was grazing in the field.",
+          "example_vi": "Con bò đực đang gặm cỏ trên cánh đồng."
+        },
+        {
+          "meaning_vi": "bò đực",
+          "example_en": "The farmer keeps a large bull on the farm.",
+          "example_vi": "Người nông dân nuôi một con bò đực lớn trong trang trại."
+        },
+        {
+          "meaning_vi": "bò đực",
+          "example_en": "Be careful, the bull can be aggressive.",
+          "example_vi": "Hãy cẩn thận, con bò đực có thể rất hung dữ."
+        },
+        {
+          "meaning_vi": "bò đực",
+          "example_en": "The bull stood in the middle of the road.",
+          "example_vi": "Con bò đực đứng giữa đường."
+        },
+        {
+          "meaning_vi": "con đực",
+          "example_en": "We saw a bull elephant near the river.",
+          "example_vi": "Chúng tôi đã thấy một con voi đực gần con sông."
+        },
+        {
+          "meaning_vi": "con đực",
+          "example_en": "The bull whale is much larger than the female.",
+          "example_vi": "Con cá voi đực lớn hơn nhiều so với con cái."
+        },
+        {
+          "meaning_vi": "con đực",
+          "example_en": "The bull seal protects his territory.",
+          "example_vi": "Con hải cẩu đực bảo vệ lãnh thổ của nó."
+        },
+        {
+          "meaning_vi": "người đầu cơ giá lên",
+          "example_en": "The bull expects the stock market to rise.",
+          "example_vi": "Người đầu cơ giá lên kỳ vọng thị trường chứng khoán sẽ tăng."
+        },
+        {
+          "meaning_vi": "người đầu cơ giá lên",
+          "example_en": "He is a bull when it comes to technology stocks.",
+          "example_vi": "Anh ấy là một người đầu cơ giá lên khi nói đến cổ phiếu công nghệ."
+        },
+        {
+          "meaning_vi": "người đầu cơ giá lên",
+          "example_en": "The market is dominated by bulls today.",
+          "example_vi": "Thị trường hôm nay bị chi phối bởi những người đầu cơ giá lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa lóng thô tục. Bổ sung ví dụ cho các nghĩa chính.",
+      "word": "bull",
+      "normalized_word": "bull",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bull was grazing in the field.",
+      "example_vi_clean": "Con bò đực đang gặm cỏ trên cánh đồng."
+    },
+    {
+      "id": 25639,
+      "quiz_meaning_vi": "đạn",
+      "meaning_vi_clean": "đạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "đạn",
+          "example_en": "The soldier loaded his rifle with a bullet.",
+          "example_vi": "Người lính nạp đạn vào súng trường của mình."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "The bullet hit the target perfectly.",
+          "example_vi": "Viên đạn bắn trúng mục tiêu một cách hoàn hảo."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "He found a stray bullet in the field.",
+          "example_vi": "Anh ấy tìm thấy một viên đạn lạc trên cánh đồng."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "The bullet passed through the wooden board.",
+          "example_vi": "Viên đạn xuyên qua tấm ván gỗ."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "They collected bullet casings after the practice.",
+          "example_vi": "Họ thu gom vỏ đạn sau buổi tập luyện."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "The bullet was fired from a long distance.",
+          "example_vi": "Viên đạn được bắn từ một khoảng cách xa."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "He was injured by a bullet during the conflict.",
+          "example_vi": "Anh ấy bị thương bởi một viên đạn trong cuộc xung đột."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "The police found a bullet in the wall.",
+          "example_vi": "Cảnh sát tìm thấy một viên đạn trong bức tường."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "The bullet ricocheted off the metal surface.",
+          "example_vi": "Viên đạn nảy ra khỏi bề mặt kim loại."
+        },
+        {
+          "meaning_vi": "đạn",
+          "example_en": "She examined the bullet under a microscope.",
+          "example_vi": "Cô ấy kiểm tra viên đạn dưới kính hiển vi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa lóng không phù hợp. Bổ sung 10 ví dụ minh họa.",
+      "word": "bullet",
+      "normalized_word": "bullet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The soldier loaded his rifle with a bullet.",
+      "example_vi_clean": "Người lính nạp đạn vào súng trường của mình."
+    },
+    {
+      "id": 25640,
+      "quiz_meaning_vi": "thông cáo",
+      "meaning_vi_clean": "thông cáo; tập san",
+      "examples_clean": [
+        {
+          "meaning_vi": "thông cáo",
+          "example_en": "The government issued a bulletin about the weather.",
+          "example_vi": "Chính phủ đã đưa ra một thông cáo về thời tiết."
+        },
+        {
+          "meaning_vi": "thông cáo",
+          "example_en": "We read the latest bulletin on the website.",
+          "example_vi": "Chúng tôi đọc thông cáo mới nhất trên trang web."
+        },
+        {
+          "meaning_vi": "thông cáo",
+          "example_en": "The hospital released a medical bulletin.",
+          "example_vi": "Bệnh viện đã phát hành một thông cáo y tế."
+        },
+        {
+          "meaning_vi": "thông cáo",
+          "example_en": "The company sent a bulletin to all employees.",
+          "example_vi": "Công ty đã gửi một thông cáo đến tất cả nhân viên."
+        },
+        {
+          "meaning_vi": "thông cáo",
+          "example_en": "The police issued a bulletin regarding the missing person.",
+          "example_vi": "Cảnh sát đã đưa ra một thông cáo liên quan đến người mất tích."
+        },
+        {
+          "meaning_vi": "tập san",
+          "example_en": "She subscribes to a monthly scientific bulletin.",
+          "example_vi": "Cô ấy đăng ký một tập san khoa học hàng tháng."
+        },
+        {
+          "meaning_vi": "tập san",
+          "example_en": "The university publishes a weekly bulletin.",
+          "example_vi": "Trường đại học xuất bản một tập san hàng tuần."
+        },
+        {
+          "meaning_vi": "tập san",
+          "example_en": "He found the article in the latest bulletin.",
+          "example_vi": "Anh ấy tìm thấy bài báo trong tập san mới nhất."
+        },
+        {
+          "meaning_vi": "tập san",
+          "example_en": "The club distributes a bulletin to its members.",
+          "example_vi": "Câu lạc bộ phân phát một tập san cho các thành viên của mình."
+        },
+        {
+          "meaning_vi": "tập san",
+          "example_en": "The bulletin contains news and updates.",
+          "example_vi": "Tập san chứa tin tức và các cập nhật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "bulletin",
+      "normalized_word": "bulletin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The government issued a bulletin about the weather.",
+      "example_vi_clean": "Chính phủ đã đưa ra một thông cáo về thời tiết."
+    }
+  ]
+}

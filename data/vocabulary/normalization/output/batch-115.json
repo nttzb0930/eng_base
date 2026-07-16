@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25141,
+      "quiz_meaning_vi": "bao gồm",
+      "meaning_vi_clean": "bao gồm; kể cả",
+      "examples_clean": [
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The price does not include tax.",
+          "example_vi": "Giá này không bao gồm thuế."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The tour includes a visit to the museum.",
+          "example_vi": "Chuyến tham quan bao gồm một chuyến thăm bảo tàng."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "Does the bill include service charges?",
+          "example_vi": "Hóa đơn có bao gồm phí dịch vụ không?"
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The team includes several talented players.",
+          "example_vi": "Đội bao gồm một vài cầu thủ tài năng."
+        },
+        {
+          "meaning_vi": "kể cả",
+          "example_en": "Everyone was invited, including the children.",
+          "example_vi": "Mọi người đều được mời, kể cả trẻ em."
+        },
+        {
+          "meaning_vi": "kể cả",
+          "example_en": "The list is long, including many names.",
+          "example_vi": "Danh sách rất dài, kể cả nhiều cái tên."
+        },
+        {
+          "meaning_vi": "kể cả",
+          "example_en": "He ate everything, including the salad.",
+          "example_vi": "Anh ấy ăn mọi thứ, kể cả món salad."
+        },
+        {
+          "meaning_vi": "kể cả",
+          "example_en": "We visited many cities, including Paris.",
+          "example_vi": "Chúng tôi đã thăm nhiều thành phố, kể cả Paris."
+        },
+        {
+          "meaning_vi": "kể cả",
+          "example_en": "The price is low, including shipping costs.",
+          "example_vi": "Giá rất thấp, kể cả chi phí vận chuyển."
+        },
+        {
+          "meaning_vi": "kể cả",
+          "example_en": "She likes all fruits, including apples.",
+          "example_vi": "Cô ấy thích tất cả các loại trái cây, kể cả táo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "include",
+      "normalized_word": "include",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The price does not include tax.",
+      "example_vi_clean": "Giá này không bao gồm thuế."
+    },
+    {
+      "id": 25142,
+      "quiz_meaning_vi": "thực vậy",
+      "meaning_vi_clean": "thực vậy; quả thực",
+      "examples_clean": [
+        {
+          "meaning_vi": "thực vậy",
+          "example_en": "Indeed, it was a very difficult task.",
+          "example_vi": "Thực vậy, đó là một nhiệm vụ rất khó khăn."
+        },
+        {
+          "meaning_vi": "thực vậy",
+          "example_en": "Indeed, the weather is getting colder.",
+          "example_vi": "Thực vậy, thời tiết đang trở nên lạnh hơn."
+        },
+        {
+          "meaning_vi": "thực vậy",
+          "example_en": "Indeed, he is the best student here.",
+          "example_vi": "Thực vậy, cậu ấy là học sinh giỏi nhất ở đây."
+        },
+        {
+          "meaning_vi": "thực vậy",
+          "example_en": "Indeed, we have much to do today.",
+          "example_vi": "Thực vậy, chúng ta có nhiều việc phải làm hôm nay."
+        },
+        {
+          "meaning_vi": "quả thực",
+          "example_en": "The news was surprising indeed.",
+          "example_vi": "Tin tức đó quả thực rất đáng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "quả thực",
+          "example_en": "He is a kind person indeed.",
+          "example_vi": "Anh ấy quả thực là một người tốt bụng."
+        },
+        {
+          "meaning_vi": "quả thực",
+          "example_en": "It was a long journey indeed.",
+          "example_vi": "Đó quả thực là một chuyến đi dài."
+        },
+        {
+          "meaning_vi": "quả thực",
+          "example_en": "The food was delicious indeed.",
+          "example_vi": "Đồ ăn quả thực rất ngon."
+        },
+        {
+          "meaning_vi": "quả thực",
+          "example_en": "She is very talented indeed.",
+          "example_vi": "Cô ấy quả thực rất tài năng."
+        },
+        {
+          "meaning_vi": "quả thực",
+          "example_en": "The situation is serious indeed.",
+          "example_vi": "Tình hình quả thực rất nghiêm trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa lóng và ví dụ không phù hợp, bổ sung ví dụ chuẩn.",
+      "word": "indeed",
+      "normalized_word": "indeed",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Indeed, it was a very difficult task.",
+      "example_vi_clean": "Thực vậy, đó là một nhiệm vụ rất khó khăn."
+    },
+    {
+      "id": 25143,
+      "quiz_meaning_vi": "sự độc lập",
+      "meaning_vi_clean": "sự độc lập",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "They fought for their independence.",
+          "example_vi": "Họ đã chiến đấu vì sự độc lập của mình."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "Financial independence is important for everyone.",
+          "example_vi": "Sự độc lập về tài chính quan trọng với mọi người."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "She values her independence highly.",
+          "example_vi": "Cô ấy rất coi trọng sự độc lập của mình."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "The country gained its independence in 1945.",
+          "example_vi": "Đất nước đã giành được sự độc lập vào năm 1945."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "He wants independence in his work.",
+          "example_vi": "Anh ấy muốn sự độc lập trong công việc."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "Independence is a basic human right.",
+          "example_vi": "Sự độc lập là một quyền cơ bản của con người."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "They celebrated their independence day.",
+          "example_vi": "Họ đã kỷ niệm ngày độc lập của mình."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "She enjoys the independence of living alone.",
+          "example_vi": "Cô ấy tận hưởng sự độc lập khi sống một mình."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "The organization maintains its independence.",
+          "example_vi": "Tổ chức duy trì sự độc lập của mình."
+        },
+        {
+          "meaning_vi": "sự độc lập",
+          "example_en": "He struggled to achieve independence.",
+          "example_vi": "Anh ấy đã đấu tranh để đạt được sự độc lập."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "independence",
+      "normalized_word": "independence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They fought for their independence.",
+      "example_vi_clean": "Họ đã chiến đấu vì sự độc lập của mình."
+    },
+    {
+      "id": 25144,
+      "quiz_meaning_vi": "chỉ",
+      "meaning_vi_clean": "chỉ; cho biết; biểu thị",
+      "examples_clean": [
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "The arrow indicates the direction.",
+          "example_vi": "Mũi tên chỉ hướng đi."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "Please indicate your choice on the form.",
+          "example_vi": "Vui lòng chỉ ra lựa chọn của bạn trên biểu mẫu."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "The sign indicates where to park.",
+          "example_vi": "Biển báo chỉ nơi đỗ xe."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "He indicated the door with his hand.",
+          "example_vi": "Anh ấy chỉ tay về phía cánh cửa."
+        },
+        {
+          "meaning_vi": "cho biết",
+          "example_en": "The report indicates a rise in sales.",
+          "example_vi": "Báo cáo cho biết doanh số bán hàng tăng."
+        },
+        {
+          "meaning_vi": "cho biết",
+          "example_en": "Studies indicate that exercise is good.",
+          "example_vi": "Các nghiên cứu cho biết tập thể dục rất tốt."
+        },
+        {
+          "meaning_vi": "cho biết",
+          "example_en": "The data indicates a clear trend.",
+          "example_vi": "Dữ liệu cho biết một xu hướng rõ ràng."
+        },
+        {
+          "meaning_vi": "biểu thị",
+          "example_en": "Red colors often indicate danger.",
+          "example_vi": "Màu đỏ thường biểu thị sự nguy hiểm."
+        },
+        {
+          "meaning_vi": "biểu thị",
+          "example_en": "A smile can indicate happiness.",
+          "example_vi": "Một nụ cười có thể biểu thị niềm hạnh phúc."
+        },
+        {
+          "meaning_vi": "biểu thị",
+          "example_en": "The light indicates the machine is on.",
+          "example_vi": "Đèn báo biểu thị máy đang bật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa phức tạp và bổ sung ví dụ rõ ràng.",
+      "word": "indicate",
+      "normalized_word": "indicate",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The arrow indicates the direction.",
+      "example_vi_clean": "Mũi tên chỉ hướng đi."
+    },
+    {
+      "id": 25145,
+      "quiz_meaning_vi": "trong nhà",
+      "meaning_vi_clean": "trong nhà",
+      "examples_clean": [
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "We played an indoor game.",
+          "example_vi": "Chúng tôi đã chơi một trò chơi trong nhà."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "The hotel has an indoor pool.",
+          "example_vi": "Khách sạn có một hồ bơi trong nhà."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "Indoor plants need less sunlight.",
+          "example_vi": "Cây trồng trong nhà cần ít ánh sáng mặt trời hơn."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "They have an indoor sports center.",
+          "example_vi": "Họ có một trung tâm thể thao trong nhà."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "It is an indoor activity.",
+          "example_vi": "Đó là một hoạt động trong nhà."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "We need an indoor space for the party.",
+          "example_vi": "Chúng tôi cần một không gian trong nhà cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "The indoor temperature is very comfortable.",
+          "example_vi": "Nhiệt độ trong nhà rất dễ chịu."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "She prefers indoor exercise.",
+          "example_vi": "Cô ấy thích tập thể dục trong nhà."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "The indoor market is very busy.",
+          "example_vi": "Chợ trong nhà rất đông đúc."
+        },
+        {
+          "meaning_vi": "trong nhà",
+          "example_en": "They built an indoor playground.",
+          "example_vi": "Họ đã xây dựng một sân chơi trong nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "indoor",
+      "normalized_word": "indoor",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We played an indoor game.",
+      "example_vi_clean": "Chúng tôi đã chơi một trò chơi trong nhà."
+    },
+    {
+      "id": 25146,
+      "quiz_meaning_vi": "không đắt",
+      "meaning_vi_clean": "không đắt; rẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "không đắt",
+          "example_en": "This is an inexpensive gift.",
+          "example_vi": "Đây là một món quà không đắt."
+        },
+        {
+          "meaning_vi": "không đắt",
+          "example_en": "We found an inexpensive hotel.",
+          "example_vi": "Chúng tôi đã tìm thấy một khách sạn không đắt."
+        },
+        {
+          "meaning_vi": "không đắt",
+          "example_en": "It is an inexpensive way to travel.",
+          "example_vi": "Đó là một cách không đắt để đi du lịch."
+        },
+        {
+          "meaning_vi": "không đắt",
+          "example_en": "They offer inexpensive meals.",
+          "example_vi": "Họ cung cấp những bữa ăn không đắt."
+        },
+        {
+          "meaning_vi": "rẻ",
+          "example_en": "The clothes are quite cheap and inexpensive.",
+          "example_vi": "Quần áo khá rẻ và không đắt đỏ."
+        },
+        {
+          "meaning_vi": "rẻ",
+          "example_en": "He bought an inexpensive watch.",
+          "example_vi": "Anh ấy đã mua một chiếc đồng hồ rẻ."
+        },
+        {
+          "meaning_vi": "rẻ",
+          "example_en": "We need an inexpensive solution.",
+          "example_vi": "Chúng tôi cần một giải pháp rẻ."
+        },
+        {
+          "meaning_vi": "rẻ",
+          "example_en": "It is a very inexpensive car.",
+          "example_vi": "Đó là một chiếc xe rất rẻ."
+        },
+        {
+          "meaning_vi": "rẻ",
+          "example_en": "They sell inexpensive books.",
+          "example_vi": "Họ bán những cuốn sách rẻ."
+        },
+        {
+          "meaning_vi": "rẻ",
+          "example_en": "The service is good and inexpensive.",
+          "example_vi": "Dịch vụ tốt và rẻ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "inexpensive",
+      "normalized_word": "inexpensive",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is an inexpensive gift.",
+      "example_vi_clean": "Đây là một món quà không đắt."
+    },
+    {
+      "id": 25147,
+      "quiz_meaning_vi": "ảnh hưởng",
+      "meaning_vi_clean": "ảnh hưởng; tác dụng",
+      "examples_clean": [
+        {
+          "meaning_vi": "ảnh hưởng",
+          "example_en": "He has a strong influence on me.",
+          "example_vi": "Anh ấy có ảnh hưởng mạnh mẽ đến tôi."
+        },
+        {
+          "meaning_vi": "ảnh hưởng",
+          "example_en": "The media has a great influence.",
+          "example_vi": "Truyền thông có ảnh hưởng lớn."
+        },
+        {
+          "meaning_vi": "ảnh hưởng",
+          "example_en": "She used her influence to help him.",
+          "example_vi": "Cô ấy đã dùng ảnh hưởng của mình để giúp anh ấy."
+        },
+        {
+          "meaning_vi": "ảnh hưởng",
+          "example_en": "His friends have a bad influence.",
+          "example_vi": "Bạn bè của anh ấy có ảnh hưởng xấu."
+        },
+        {
+          "meaning_vi": "ảnh hưởng",
+          "example_en": "The book had a positive influence.",
+          "example_vi": "Cuốn sách đã có một ảnh hưởng tích cực."
+        },
+        {
+          "meaning_vi": "tác dụng",
+          "example_en": "The medicine has a calming influence.",
+          "example_vi": "Thuốc có tác dụng làm dịu."
+        },
+        {
+          "meaning_vi": "tác dụng",
+          "example_en": "The weather has an influence on my mood.",
+          "example_vi": "Thời tiết có tác dụng đến tâm trạng của tôi."
+        },
+        {
+          "meaning_vi": "tác dụng",
+          "example_en": "Music has a relaxing influence.",
+          "example_vi": "Âm nhạc có tác dụng thư giãn."
+        },
+        {
+          "meaning_vi": "tác dụng",
+          "example_en": "The new law has a direct influence.",
+          "example_vi": "Luật mới có tác dụng trực tiếp."
+        },
+        {
+          "meaning_vi": "tác dụng",
+          "example_en": "Art has a deep influence on society.",
+          "example_vi": "Nghệ thuật có tác dụng sâu sắc đến xã hội."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "influence",
+      "normalized_word": "influence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has a strong influence on me.",
+      "example_vi_clean": "Anh ấy có ảnh hưởng mạnh mẽ đến tôi."
+    },
+    {
+      "id": 25148,
+      "quiz_meaning_vi": "làm tổn thương",
+      "meaning_vi_clean": "làm tổn thương; làm bị thương",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm tổn thương",
+          "example_en": "His words did not injure my feelings.",
+          "example_vi": "Những lời của anh ấy không làm tổn thương cảm xúc của tôi."
+        },
+        {
+          "meaning_vi": "làm tổn thương",
+          "example_en": "Don't say things that injure others.",
+          "example_vi": "Đừng nói những điều làm tổn thương người khác."
+        },
+        {
+          "meaning_vi": "làm tổn thương",
+          "example_en": "The criticism injured her pride.",
+          "example_vi": "Lời chỉ trích đã làm tổn thương lòng tự trọng của cô ấy."
+        },
+        {
+          "meaning_vi": "làm tổn thương",
+          "example_en": "He didn't mean to injure her.",
+          "example_vi": "Anh ấy không cố ý làm tổn thương cô ấy."
+        },
+        {
+          "meaning_vi": "làm bị thương",
+          "example_en": "He was injured in the accident.",
+          "example_vi": "Anh ấy đã bị thương trong vụ tai nạn."
+        },
+        {
+          "meaning_vi": "làm bị thương",
+          "example_en": "The fall injured his leg.",
+          "example_vi": "Cú ngã đã làm bị thương chân anh ấy."
+        },
+        {
+          "meaning_vi": "làm bị thương",
+          "example_en": "She injured her back while lifting.",
+          "example_vi": "Cô ấy đã làm bị thương lưng khi đang nâng đồ."
+        },
+        {
+          "meaning_vi": "làm bị thương",
+          "example_en": "The player was injured during the game.",
+          "example_vi": "Cầu thủ đã bị thương trong trận đấu."
+        },
+        {
+          "meaning_vi": "làm bị thương",
+          "example_en": "Be careful not to injure yourself.",
+          "example_vi": "Hãy cẩn thận để không làm bị thương chính mình."
+        },
+        {
+          "meaning_vi": "làm bị thương",
+          "example_en": "The fire injured several people.",
+          "example_vi": "Vụ hỏa hoạn đã làm bị thương vài người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "injure",
+      "normalized_word": "injure",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "His words did not injure my feelings.",
+      "example_vi_clean": "Những lời của anh ấy không làm tổn thương cảm xúc của tôi."
+    },
+    {
+      "id": 25149,
+      "quiz_meaning_vi": "bên trong",
+      "meaning_vi_clean": "bên trong; nội bộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "bên trong",
+          "example_en": "The inner wall is painted white.",
+          "example_vi": "Bức tường bên trong được sơn màu trắng."
+        },
+        {
+          "meaning_vi": "bên trong",
+          "example_en": "He felt an inner peace.",
+          "example_vi": "Anh ấy cảm thấy một sự bình yên bên trong."
+        },
+        {
+          "meaning_vi": "bên trong",
+          "example_en": "The inner layer is very soft.",
+          "example_vi": "Lớp bên trong rất mềm."
+        },
+        {
+          "meaning_vi": "bên trong",
+          "example_en": "She kept her inner thoughts secret.",
+          "example_vi": "Cô ấy giữ kín những suy nghĩ bên trong của mình."
+        },
+        {
+          "meaning_vi": "bên trong",
+          "example_en": "The inner room is quiet.",
+          "example_vi": "Căn phòng bên trong rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "nội bộ",
+          "example_en": "They had an inner conflict.",
+          "example_vi": "Họ đã có một cuộc xung đột nội bộ."
+        },
+        {
+          "meaning_vi": "nội bộ",
+          "example_en": "This is for inner use only.",
+          "example_vi": "Đây chỉ dành cho mục đích nội bộ."
+        },
+        {
+          "meaning_vi": "nội bộ",
+          "example_en": "The inner circle made the decision.",
+          "example_vi": "Nhóm nội bộ đã đưa ra quyết định."
+        },
+        {
+          "meaning_vi": "nội bộ",
+          "example_en": "They discussed the inner workings.",
+          "example_vi": "Họ đã thảo luận về các hoạt động nội bộ."
+        },
+        {
+          "meaning_vi": "nội bộ",
+          "example_en": "The inner structure is complex.",
+          "example_vi": "Cấu trúc nội bộ rất phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ thành tính từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "inner",
+      "normalized_word": "inner",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The inner wall is painted white.",
+      "example_vi_clean": "Bức tường bên trong được sơn màu trắng."
+    },
+    {
+      "id": 25150,
+      "quiz_meaning_vi": "sâu bọ",
+      "meaning_vi_clean": "sâu bọ; côn trùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sâu bọ",
+          "example_en": "The garden is full of insects.",
+          "example_vi": "Khu vườn đầy sâu bọ."
+        },
+        {
+          "meaning_vi": "sâu bọ",
+          "example_en": "Some insects are harmful to plants.",
+          "example_vi": "Một số loài sâu bọ có hại cho cây trồng."
+        },
+        {
+          "meaning_vi": "sâu bọ",
+          "example_en": "He is afraid of insects.",
+          "example_vi": "Anh ấy sợ sâu bọ."
+        },
+        {
+          "meaning_vi": "sâu bọ",
+          "example_en": "The spray kills many types of insects.",
+          "example_vi": "Thuốc xịt tiêu diệt nhiều loại sâu bọ."
+        },
+        {
+          "meaning_vi": "côn trùng",
+          "example_en": "Bees are useful insects.",
+          "example_vi": "Ong là loài côn trùng có ích."
+        },
+        {
+          "meaning_vi": "côn trùng",
+          "example_en": "She studies different types of insects.",
+          "example_vi": "Cô ấy nghiên cứu các loại côn trùng khác nhau."
+        },
+        {
+          "meaning_vi": "côn trùng",
+          "example_en": "The forest is home to many insects.",
+          "example_vi": "Khu rừng là nhà của nhiều loài côn trùng."
+        },
+        {
+          "meaning_vi": "côn trùng",
+          "example_en": "Insects play a role in nature.",
+          "example_vi": "Côn trùng đóng một vai trò trong tự nhiên."
+        },
+        {
+          "meaning_vi": "côn trùng",
+          "example_en": "We saw many insects near the pond.",
+          "example_vi": "Chúng tôi thấy nhiều côn trùng gần cái ao."
+        },
+        {
+          "meaning_vi": "côn trùng",
+          "example_en": "The insect has six legs.",
+          "example_vi": "Loài côn trùng này có sáu chân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "insect",
+      "normalized_word": "insect",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The garden is full of insects.",
+      "example_vi_clean": "Khu vườn đầy sâu bọ."
+    }
+  ]
+}

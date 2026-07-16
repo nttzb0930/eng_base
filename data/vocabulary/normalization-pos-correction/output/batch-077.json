@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26577,
+      "quiz_meaning_vi": "thác nước",
+      "meaning_vi_clean": "thác nước",
+      "examples_clean": [
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "Water poured down the cascade.",
+          "example_vi": "Nước đổ xuống thác nước."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "We sat by a beautiful cascade in the forest.",
+          "example_vi": "Chúng tôi ngồi bên một thác nước đẹp trong rừng."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "The stream forms a small cascade here.",
+          "example_vi": "Dòng suối tạo thành một thác nước nhỏ ở đây."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "You can hear the sound of the cascade from here.",
+          "example_vi": "Bạn có thể nghe thấy tiếng thác nước từ đây."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "The mountain path leads to a hidden cascade.",
+          "example_vi": "Con đường núi dẫn đến một thác nước ẩn mình."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "Sunlight sparkled on the cascade.",
+          "example_vi": "Ánh nắng lấp lánh trên thác nước."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "They took photos of the rocky cascade.",
+          "example_vi": "Họ đã chụp ảnh thác nước đầy đá."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "The cascade flows into a clear pool.",
+          "example_vi": "Thác nước chảy vào một hồ nước trong vắt."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "We hiked up to see the main cascade.",
+          "example_vi": "Chúng tôi đi bộ lên để ngắm thác nước chính."
+        },
+        {
+          "meaning_vi": "thác nước",
+          "example_en": "Cold water splashed from the cascade.",
+          "example_vi": "Nước lạnh bắn ra từ thác nước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'thác nước' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'thác nước' và cả 10 ví dụ đều sử dụng từ 'cascade' làm danh từ chỉ một thác nước nhỏ."
+      },
+      "word": "cascade",
+      "normalized_word": "cascade",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Water poured down the cascade.",
+      "example_vi_clean": "Nước đổ xuống thác nước."
+    },
+    {
+      "id": 26578,
+      "quiz_meaning_vi": "dàn diễn viên",
+      "meaning_vi_clean": "dàn diễn viên",
+      "examples_clean": [
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "The cast of the movie did an excellent job.",
+          "example_vi": "Dàn diễn viên của bộ phim đã làm một công việc xuất sắc."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "The director praised the entire cast.",
+          "example_vi": "Đạo diễn đã khen ngợi toàn bộ dàn diễn viên."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "She joined the cast of the new play.",
+          "example_vi": "Cô ấy đã tham gia vào dàn diễn viên của vở kịch mới."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "The cast includes several famous actors.",
+          "example_vi": "Dàn diễn viên bao gồm một vài diễn viên nổi tiếng."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "After the show, the cast bowed to the audience.",
+          "example_vi": "Sau buổi biểu diễn, dàn diễn viên đã cúi chào khán giả."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "The cast spent weeks rehearsing.",
+          "example_vi": "Dàn diễn viên đã dành nhiều tuần để tập dượt."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "We met some members of the cast backstage.",
+          "example_vi": "Chúng tôi đã gặp một số thành viên của dàn diễn viên ở hậu trường."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "The cast was chosen after many auditions.",
+          "example_vi": "Dàn diễn viên được chọn sau nhiều buổi thử vai."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "The entire cast attended the premiere.",
+          "example_vi": "Toàn bộ dàn diễn viên đã tham dự buổi ra mắt phim."
+        },
+        {
+          "meaning_vi": "dàn diễn viên",
+          "example_en": "He is a member of the supporting cast.",
+          "example_vi": "Anh ấy là một thành viên của dàn diễn viên phụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'dàn diễn viên' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'dàn diễn viên' và cả 10 ví dụ đều sử dụng từ 'cast' làm danh từ chỉ tập hợp các diễn viên trong một tác phẩm."
+      },
+      "word": "cast",
+      "normalized_word": "cast",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cast of the movie did an excellent job.",
+      "example_vi_clean": "Dàn diễn viên của bộ phim đã làm một công việc xuất sắc."
+    },
+    {
+      "id": 26588,
+      "quiz_meaning_vi": "nguyên nhân",
+      "meaning_vi_clean": "nguyên nhân",
+      "examples_clean": [
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "Scientists are trying to find the cause of the disease.",
+          "example_vi": "Các nhà khoa học đang cố gắng tìm ra nguyên nhân của căn bệnh."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "The police investigated the cause of the accident.",
+          "example_vi": "Cảnh sát đã điều tra nguyên nhân của vụ tai nạn."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "Smoking is a major cause of lung cancer.",
+          "example_vi": "Hút thuốc là một nguyên nhân chính gây ung thư phổi."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "What was the cause of the fire?",
+          "example_vi": "Nguyên nhân của vụ hỏa hoạn là gì?"
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "There is no known cause for this phenomenon.",
+          "example_vi": "Không có nguyên nhân nào được biết đến cho hiện tượng này."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "Stress can be a cause of high blood pressure.",
+          "example_vi": "Căng thẳng có thể là một nguyên nhân gây huyết áp cao."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "They are still searching for the root cause of the problem.",
+          "example_vi": "Họ vẫn đang tìm kiếm nguyên nhân gốc rễ của vấn đề."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "The cause of the power outage is still unclear.",
+          "example_vi": "Nguyên nhân của sự cố mất điện vẫn chưa rõ ràng."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "Bad weather was the main cause of the delay.",
+          "example_vi": "Thời tiết xấu là nguyên nhân chính của sự chậm trễ."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "We need to identify the cause of the failure.",
+          "example_vi": "Chúng ta cần xác định nguyên nhân của sự thất bại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'nguyên nhân' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'nguyên nhân' và cả 10 ví dụ đều sử dụng từ 'cause' làm danh từ chỉ lý do gây ra sự việc."
+      },
+      "word": "cause",
+      "normalized_word": "cause",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Scientists are trying to find the cause of the disease.",
+      "example_vi_clean": "Các nhà khoa học đang cố gắng tìm ra nguyên nhân của căn bệnh."
+    },
+    {
+      "id": 26591,
+      "quiz_meaning_vi": "hầm chứa",
+      "meaning_vi_clean": "hầm chứa",
+      "examples_clean": [
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "We keep our wine in the cellar.",
+          "example_vi": "Chúng tôi giữ rượu của mình trong hầm chứa."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "The old house has a dark cellar.",
+          "example_vi": "Ngôi nhà cũ có một hầm chứa tối tăm."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "They went down to the cellar to fetch some potatoes.",
+          "example_vi": "Họ đi xuống hầm chứa để lấy một ít khoai tây."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "The cellar was filled with old furniture.",
+          "example_vi": "Hầm chứa đầy những đồ nội thất cũ."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "He converted the cellar into a game room.",
+          "example_vi": "Anh ấy đã cải tạo hầm chứa thành một phòng chơi game."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "We hid in the cellar during the storm.",
+          "example_vi": "Chúng tôi đã trốn trong hầm chứa suốt cơn bão."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "The cellar stairs are very steep.",
+          "example_vi": "Cầu thang hầm chứa rất dốc."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "Damp air filled the cold cellar.",
+          "example_vi": "Không khí ẩm ướt tràn ngập hầm chứa lạnh lẽo."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "She stored her garden tools in the cellar.",
+          "example_vi": "Cô ấy cất giữ dụng cụ làm vườn của mình trong hầm chứa."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "The cellar door was locked from the outside.",
+          "example_vi": "Cửa hầm chứa đã bị khóa từ bên ngoài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'hầm chứa' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hầm chứa' và cả 10 ví dụ đều sử dụng từ 'cellar' làm danh từ chỉ căn hầm dưới lòng đất."
+      },
+      "word": "cellar",
+      "normalized_word": "cellar",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We keep our wine in the cellar.",
+      "example_vi_clean": "Chúng tôi giữ rượu của mình trong hầm chứa."
+    },
+    {
+      "id": 26596,
+      "quiz_meaning_vi": "giấy chứng nhận",
+      "meaning_vi_clean": "giấy chứng nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "He was awarded a certificate of merit.",
+          "example_vi": "Anh ấy đã được trao một giấy chứng nhận thành tích."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "Please attach a copy of your graduation certificate.",
+          "example_vi": "Vui lòng đính kèm một bản sao giấy chứng nhận tốt nghiệp của bạn."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "The doctor signed the medical certificate.",
+          "example_vi": "Bác sĩ đã ký giấy chứng nhận y tế."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "She showed her certificate of attendance to the manager.",
+          "example_vi": "Cô ấy đã cho người quản lý xem giấy chứng nhận tham gia của mình."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "You must provide a certificate of insurance.",
+          "example_vi": "Bạn phải cung cấp một giấy chứng nhận bảo hiểm."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "The course offers a professional certificate upon completion.",
+          "example_vi": "Khóa học cung cấp một giấy chứng nhận chuyên môn sau khi hoàn thành."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "He lost his original birth certificate.",
+          "example_vi": "Anh ấy đã làm mất giấy chứng nhận khai sinh gốc của mình."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "They received a certificate for their volunteer work.",
+          "example_vi": "Họ đã nhận được một giấy chứng nhận cho công việc tình nguyện của mình."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "The company received a safety certificate.",
+          "example_vi": "Công ty đã nhận được một giấy chứng nhận an toàn."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "She framed her training certificate and hung it on the wall.",
+          "example_vi": "Cô ấy đã đóng khung giấy chứng nhận đào tạo của mình và treo nó lên tường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'giấy chứng nhận' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'giấy chứng nhận' và cả 10 ví dụ đều sử dụng từ 'certificate' làm danh từ chỉ văn bản chính thức chứng nhận một điều gì đó."
+      },
+      "word": "certificate",
+      "normalized_word": "certificate",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He was awarded a certificate of merit.",
+      "example_vi_clean": "Anh ấy đã được trao một giấy chứng nhận thành tích."
+    },
+    {
+      "id": 26613,
+      "quiz_meaning_vi": "vi mạch",
+      "meaning_vi_clean": "vi mạch",
+      "examples_clean": [
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "The computer chip is the brain of the machine.",
+          "example_vi": "Vi mạch máy tính là bộ não của cỗ máy."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "This new chip can process data much faster.",
+          "example_vi": "Vi mạch mới này có thể xử lý dữ liệu nhanh hơn nhiều."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "They manufacture silicon chips in this factory.",
+          "example_vi": "Họ sản xuất các vi mạch silicon trong nhà máy này."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "The smartphone uses an advanced electronic chip.",
+          "example_vi": "Điện thoại thông minh sử dụng một vi mạch điện tử tiên tiến."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "A tiny chip stores all the information.",
+          "example_vi": "Một vi mạch nhỏ xíu lưu trữ tất cả thông tin."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "The company is developing a new microchip.",
+          "example_vi": "Công ty đang phát triển một vi mạch mới."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "He replaced the damaged chip in the computer.",
+          "example_vi": "Anh ấy đã thay thế vi mạch bị hỏng trong máy tính."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "The chip is designed to reduce power consumption.",
+          "example_vi": "Vi mạch được thiết kế để giảm tiêu thụ điện năng."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "Scientists are testing the new computer chip.",
+          "example_vi": "Các nhà khoa học đang thử nghiệm vi mạch máy tính mới."
+        },
+        {
+          "meaning_vi": "vi mạch",
+          "example_en": "This device contains a highly sensitive chip.",
+          "example_vi": "Thiết bị này chứa một vi mạch có độ nhạy cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'vi mạch' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vi mạch' và cả 10 ví dụ đều sử dụng từ 'chip' làm danh từ chỉ mạch tích hợp điện tử."
+      },
+      "word": "chip",
+      "normalized_word": "chip",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The computer chip is the brain of the machine.",
+      "example_vi_clean": "Vi mạch máy tính là bộ não của cỗ máy."
+    },
+    {
+      "id": 26614,
+      "quiz_meaning_vi": "chặt",
+      "meaning_vi_clean": "chặt",
+      "examples_clean": [
+        {
+          "meaning_vi": "chặt",
+          "example_en": "He chopped the firewood into small pieces.",
+          "example_vi": "Anh ấy đã chặt củi thành những mảnh nhỏ."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "The lumberjack chopped down the tall pine tree.",
+          "example_vi": "Người tiều phu đã chặt hạ cây thông cao."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "She chopped the meat before putting it in the pot.",
+          "example_vi": "Cô ấy đã chặt thịt trước khi cho vào nồi."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "We need to chop these branches for the campfire.",
+          "example_vi": "Chúng ta cần chặt những cành cây này để đốt lửa trại."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "He chopped the block of ice with an ice pick.",
+          "example_vi": "Anh ấy đã chặt khối băng bằng một cây phá băng."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "They chopped the old wooden fence for fuel.",
+          "example_vi": "Họ đã chặt hàng rào gỗ cũ để làm nhiên liệu."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "The chef chopped the bones to make broth.",
+          "example_vi": "Đầu bếp đã chặt xương để làm nước dùng."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "He chopped the thick rope with a sharp knife.",
+          "example_vi": "Anh ấy đã chặt sợi dây thừng dày bằng một con dao sắc."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "She chopped the coconut in half.",
+          "example_vi": "Cô ấy đã chặt đôi quả dừa."
+        },
+        {
+          "meaning_vi": "chặt",
+          "example_en": "He chopped the logs into firewood.",
+          "example_vi": "Anh ấy đã chặt các khúc gỗ thành củi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa động từ phổ biến nhất là 'chặt' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'chặt' và cả 10 ví dụ đều sử dụng từ 'chop' làm động từ chỉ hành động dùng dao hoặc rìu để cắt đứt vật gì đó."
+      },
+      "word": "chop",
+      "normalized_word": "chop",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He chopped the firewood into small pieces.",
+      "example_vi_clean": "Anh ấy đã chặt củi thành những mảnh nhỏ."
+    },
+    {
+      "id": 26616,
+      "quiz_meaning_vi": "mạch điện",
+      "meaning_vi_clean": "mạch điện",
+      "examples_clean": [
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "The electrician repaired the broken circuit.",
+          "example_vi": "Thợ điện đã sửa chữa mạch điện bị hỏng."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "Water damaged the main circuit of the computer.",
+          "example_vi": "Nước đã làm hỏng mạch điện chính của máy tính."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "This switch controls the entire electrical circuit.",
+          "example_vi": "Công tắc này điều khiển toàn bộ mạch điện."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "He designed a simple circuit for the school project.",
+          "example_vi": "Anh ấy đã thiết kế một mạch điện đơn giản cho dự án trường học."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "A short circuit caused the fire.",
+          "example_vi": "Một sự chập mạch điện đã gây ra vụ hỏa hoạn."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "The current flows through the circuit.",
+          "example_vi": "Dòng điện chạy qua mạch điện."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "You must turn off the power before touching the circuit.",
+          "example_vi": "Bạn phải tắt nguồn điện trước khi chạm vào mạch điện."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "The circuit board was covered in dust.",
+          "example_vi": "Bảng mạch điện bị bám đầy bụi."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "He explained how the circuit works.",
+          "example_vi": "Anh ấy đã giải thích cách mạch điện hoạt động."
+        },
+        {
+          "meaning_vi": "mạch điện",
+          "example_en": "They need to replace the integrated circuit.",
+          "example_vi": "Họ cần thay thế mạch điện tích hợp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'mạch điện' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'mạch điện' và cả 10 ví dụ đều sử dụng từ 'circuit' làm danh từ chỉ đường dẫn khép kín cho dòng điện."
+      },
+      "word": "circuit",
+      "normalized_word": "circuit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The electrician repaired the broken circuit.",
+      "example_vi_clean": "Thợ điện đã sửa chữa mạch điện bị hỏng."
+    },
+    {
+      "id": 26619,
+      "quiz_meaning_vi": "con nghêu",
+      "meaning_vi_clean": "con nghêu",
+      "examples_clean": [
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "We dug for clams on the beach.",
+          "example_vi": "Chúng tôi đã đào con nghêu trên bãi biển."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "She ordered a bowl of clam chowder.",
+          "example_vi": "Cô ấy đã gọi một bát súp con nghêu."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "The clam closed its shell tightly.",
+          "example_vi": "Con nghêu đóng chặt vỏ của nó."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "They found many empty clam shells on the sand.",
+          "example_vi": "Họ tìm thấy nhiều vỏ con nghêu trống rỗng trên cát."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "He loves eating steamed clams with herbs.",
+          "example_vi": "Anh ấy thích ăn con nghêu hấp với rau thơm."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "The fishermen harvested clams from the bay.",
+          "example_vi": "Các ngư dân đã thu hoạch con nghêu từ vịnh."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "A clam lives buried in the sand.",
+          "example_vi": "Một con nghêu sống vùi mình trong cát."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "She learned how to clean clams before cooking.",
+          "example_vi": "Cô ấy đã học cách làm sạch con nghêu trước khi nấu."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "We saw a small clam opening in the shallow water.",
+          "example_vi": "Chúng tôi thấy một con nghêu nhỏ đang mở ra trong vùng nước nông."
+        },
+        {
+          "meaning_vi": "con nghêu",
+          "example_en": "Fresh clams are sold at the local fish market.",
+          "example_vi": "Con nghêu tươi được bán tại chợ cá địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'con nghêu' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'con nghêu' và cả 10 ví dụ đều sử dụng từ 'clam' làm danh từ chỉ loài động vật thân mềm hai mảnh vỏ."
+      },
+      "word": "clam",
+      "normalized_word": "clam",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We dug for clams on the beach.",
+      "example_vi_clean": "Chúng tôi đã đào con nghêu trên bãi biển."
+    },
+    {
+      "id": 26628,
+      "quiz_meaning_vi": "sự đóng cửa",
+      "meaning_vi_clean": "sự đóng cửa",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "The factory closure left many people unemployed.",
+          "example_vi": "Sự đóng cửa nhà máy đã khiến nhiều người thất nghiệp."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "The government announced the closure of all schools.",
+          "example_vi": "Chính phủ đã thông báo sự đóng cửa của tất cả các trường học."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "Road closure signs were placed along the highway.",
+          "example_vi": "Các biển báo sự đóng cửa đường đã được đặt dọc theo xa lộ."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "The sudden closure of the shop surprised everyone.",
+          "example_vi": "Sự đóng cửa đột ngột của cửa hàng đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "Residents protested against the closure of the local library.",
+          "example_vi": "Người dân đã phản đối sự đóng cửa của thư viện địa phương."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "The hospital closure was due to a lack of funding.",
+          "example_vi": "Sự đóng cửa bệnh viện là do thiếu kinh phí."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "Heavy snow caused the temporary closure of the airport.",
+          "example_vi": "Tuyết rơi dày đặc đã gây ra sự đóng cửa tạm thời của sân bay."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "We were affected by the closure of the railway line.",
+          "example_vi": "Chúng tôi đã bị ảnh hưởng bởi sự đóng cửa của tuyến đường sắt."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "The company planned the closure of several branches.",
+          "example_vi": "Công ty đã lên kế hoạch sự đóng cửa của một số chi nhánh."
+        },
+        {
+          "meaning_vi": "sự đóng cửa",
+          "example_en": "The bridge closure caused massive traffic jams.",
+          "example_vi": "Sự đóng cửa cây cầu đã gây ra tình trạng kẹt xe nghiêm trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là 'sự đóng cửa' và biên soạn 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự đóng cửa' và cả 10 ví dụ đều sử dụng từ 'closure' làm danh từ chỉ việc đóng cửa một địa điểm hoặc cơ sở."
+      },
+      "word": "closure",
+      "normalized_word": "closure",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The factory closure left many people unemployed.",
+      "example_vi_clean": "Sự đóng cửa nhà máy đã khiến nhiều người thất nghiệp."
+    }
+  ]
+}

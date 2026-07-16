@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24331,
+      "quiz_meaning_vi": "tự do",
+      "meaning_vi_clean": "tự do; không mất tiền; rảnh rỗi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự do",
+          "example_en": "We all want to live in a free country.",
+          "example_vi": "Tất cả chúng ta đều muốn sống ở một đất nước tự do."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "She felt free to express her own opinions.",
+          "example_vi": "Cô ấy cảm thấy tự do để bày tỏ ý kiến của riêng mình."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "You are free to leave whenever you want.",
+          "example_vi": "Bạn được tự do rời đi bất cứ khi nào bạn muốn."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "He was finally free from his heavy responsibilities.",
+          "example_vi": "Cuối cùng anh ấy cũng được tự do khỏi những trách nhiệm nặng nề."
+        },
+        {
+          "meaning_vi": "không mất tiền",
+          "example_en": "Children under five can travel for free.",
+          "example_vi": "Trẻ em dưới năm tuổi có thể đi lại miễn phí."
+        },
+        {
+          "meaning_vi": "không mất tiền",
+          "example_en": "They are giving away free samples at the store.",
+          "example_vi": "Họ đang phát các mẫu thử miễn phí tại cửa hàng."
+        },
+        {
+          "meaning_vi": "không mất tiền",
+          "example_en": "The museum offers free admission on Sundays.",
+          "example_vi": "Bảo tàng miễn phí vé vào cửa vào các ngày Chủ nhật."
+        },
+        {
+          "meaning_vi": "rảnh rỗi",
+          "example_en": "Are you free this evening for a coffee?",
+          "example_vi": "Tối nay bạn có rảnh để đi uống cà phê không?"
+        },
+        {
+          "meaning_vi": "rảnh rỗi",
+          "example_en": "I have a free hour before my next meeting.",
+          "example_vi": "Tôi có một giờ rảnh rỗi trước cuộc họp tiếp theo."
+        },
+        {
+          "meaning_vi": "rảnh rỗi",
+          "example_en": "She uses her free time to learn painting.",
+          "example_vi": "Cô ấy dùng thời gian rảnh rỗi của mình để học vẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'tự do', bổ sung các nghĩa phổ biến nhất. Viết lại 10 ví dụ minh họa rõ các nghĩa.",
+      "word": "free",
+      "normalized_word": "free",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We all want to live in a free country.",
+      "example_vi_clean": "Tất cả chúng ta đều muốn sống ở một đất nước tự do."
+    },
+    {
+      "id": 24332,
+      "quiz_meaning_vi": "ngày thứ sáu",
+      "meaning_vi_clean": "ngày thứ sáu",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "We usually go out on Friday night.",
+          "example_vi": "Chúng tôi thường đi chơi vào tối thứ Sáu."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "The meeting is scheduled for next Friday.",
+          "example_vi": "Cuộc họp được lên lịch vào thứ Sáu tới."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "Friday is my favorite day of the week.",
+          "example_vi": "Thứ Sáu là ngày yêu thích của tôi trong tuần."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "I have a dentist appointment this Friday.",
+          "example_vi": "Tôi có lịch hẹn nha sĩ vào thứ Sáu này."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "The project deadline is this coming Friday.",
+          "example_vi": "Hạn chót của dự án là vào thứ Sáu tới."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "She finishes work early every Friday.",
+          "example_vi": "Cô ấy kết thúc công việc sớm vào mỗi thứ Sáu."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "We are planning a party for Friday.",
+          "example_vi": "Chúng tôi đang lên kế hoạch cho một bữa tiệc vào thứ Sáu."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "The shop is closed on Friday.",
+          "example_vi": "Cửa hàng đóng cửa vào thứ Sáu."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "I will see you on Friday morning.",
+          "example_vi": "Tôi sẽ gặp bạn vào sáng thứ Sáu."
+        },
+        {
+          "meaning_vi": "ngày thứ sáu",
+          "example_en": "Friday is the last working day of the week.",
+          "example_vi": "Thứ Sáu là ngày làm việc cuối cùng trong tuần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ tự nhiên cho danh từ chỉ ngày trong tuần.",
+      "word": "friday",
+      "normalized_word": "friday",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We usually go out on Friday night.",
+      "example_vi_clean": "Chúng tôi thường đi chơi vào tối thứ Sáu."
+    },
+    {
+      "id": 24333,
+      "quiz_meaning_vi": "người bạn",
+      "meaning_vi_clean": "người bạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "She is my best friend from school.",
+          "example_vi": "Cô ấy là người bạn thân nhất của tôi từ thời đi học."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "It is important to have good friends.",
+          "example_vi": "Có những người bạn tốt là rất quan trọng."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "I went to the cinema with a friend.",
+          "example_vi": "Tôi đã đi xem phim cùng một người bạn."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "He is a close friend of my family.",
+          "example_vi": "Anh ấy là một người bạn thân của gia đình tôi."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "We have been friends for many years.",
+          "example_vi": "Chúng tôi đã là bạn của nhau nhiều năm rồi."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "She introduced me to her friend.",
+          "example_vi": "Cô ấy đã giới thiệu tôi với người bạn của cô ấy."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "A true friend is always there for you.",
+          "example_vi": "Một người bạn thực sự luôn ở bên bạn."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "I met an old friend at the park.",
+          "example_vi": "Tôi đã gặp một người bạn cũ ở công viên."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "He is a loyal friend who never lets me down.",
+          "example_vi": "Anh ấy là một người bạn trung thành không bao giờ làm tôi thất vọng."
+        },
+        {
+          "meaning_vi": "người bạn",
+          "example_en": "Making new friends can be exciting.",
+          "example_vi": "Kết bạn mới có thể rất thú vị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Bổ sung 10 ví dụ minh họa nghĩa người bạn.",
+      "word": "friend",
+      "normalized_word": "friend",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is my best friend from school.",
+      "example_vi_clean": "Cô ấy là người bạn thân nhất của tôi từ thời đi học."
+    },
+    {
+      "id": 24334,
+      "quiz_meaning_vi": "con ếch",
+      "meaning_vi_clean": "con ếch",
+      "examples_clean": [
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "The frog jumped into the pond.",
+          "example_vi": "Con ếch nhảy xuống ao."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "We saw a small green frog in the garden.",
+          "example_vi": "Chúng tôi thấy một con ếch nhỏ màu xanh trong vườn."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "The frog caught a fly with its tongue.",
+          "example_vi": "Con ếch bắt một con ruồi bằng lưỡi của nó."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "Frogs live both on land and in water.",
+          "example_vi": "Ếch sống cả trên cạn và dưới nước."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "The children were trying to catch a frog.",
+          "example_vi": "Những đứa trẻ đang cố gắng bắt một con ếch."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "I heard the sound of a frog near the river.",
+          "example_vi": "Tôi nghe thấy tiếng ếch kêu gần bờ sông."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "The frog sat on a lily pad.",
+          "example_vi": "Con ếch ngồi trên một lá súng."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "Frogs are amphibians.",
+          "example_vi": "Ếch là loài lưỡng cư."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "The frog swam away quickly.",
+          "example_vi": "Con ếch bơi đi thật nhanh."
+        },
+        {
+          "meaning_vi": "con ếch",
+          "example_en": "He studied the life cycle of a frog.",
+          "example_vi": "Anh ấy đã nghiên cứu vòng đời của con ếch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ cho danh từ con ếch.",
+      "word": "frog",
+      "normalized_word": "frog",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The frog jumped into the pond.",
+      "example_vi_clean": "Con ếch nhảy xuống ao."
+    },
+    {
+      "id": 24335,
+      "quiz_meaning_vi": "từ",
+      "meaning_vi_clean": "từ; xuất phát từ",
+      "examples_clean": [
+        {
+          "meaning_vi": "từ",
+          "example_en": "I received a gift from my friend.",
+          "example_vi": "Tôi đã nhận được một món quà từ bạn mình."
+        },
+        {
+          "meaning_vi": "từ",
+          "example_en": "The train goes from London to Paris.",
+          "example_vi": "Tàu hỏa đi từ London đến Paris."
+        },
+        {
+          "meaning_vi": "từ",
+          "example_en": "He works from nine to five.",
+          "example_vi": "Anh ấy làm việc từ chín giờ sáng đến năm giờ chiều."
+        },
+        {
+          "meaning_vi": "từ",
+          "example_en": "She is from a small village in Italy.",
+          "example_vi": "Cô ấy đến từ một ngôi làng nhỏ ở Ý."
+        },
+        {
+          "meaning_vi": "xuất phát từ",
+          "example_en": "The idea came from a simple conversation.",
+          "example_vi": "Ý tưởng đó xuất phát từ một cuộc trò chuyện đơn giản."
+        },
+        {
+          "meaning_vi": "xuất phát từ",
+          "example_en": "His success stems from hard work.",
+          "example_vi": "Sự thành công của anh ấy xuất phát từ sự chăm chỉ."
+        },
+        {
+          "meaning_vi": "xuất phát từ",
+          "example_en": "The problem arises from a lack of communication.",
+          "example_vi": "Vấn đề nảy sinh xuất phát từ việc thiếu giao tiếp."
+        },
+        {
+          "meaning_vi": "xuất phát từ",
+          "example_en": "This tradition dates from the Middle Ages.",
+          "example_vi": "Truyền thống này xuất phát từ thời Trung cổ."
+        },
+        {
+          "meaning_vi": "từ",
+          "example_en": "I learned a lot from that experience.",
+          "example_vi": "Tôi đã học được rất nhiều từ trải nghiệm đó."
+        },
+        {
+          "meaning_vi": "từ",
+          "example_en": "Keep the dog away from the flowers.",
+          "example_vi": "Hãy giữ con chó tránh xa những bông hoa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung các nghĩa phổ biến và 10 ví dụ minh họa.",
+      "word": "from",
+      "normalized_word": "from",
+      "cefr_level": "A1",
+      "pos": "preposition",
+      "pos_vi_clean": "giới từ",
+      "example_en_clean": "I received a gift from my friend.",
+      "example_vi_clean": "Tôi đã nhận được một món quà từ bạn mình."
+    },
+    {
+      "id": 24336,
+      "quiz_meaning_vi": "phía trước",
+      "meaning_vi_clean": "phía trước; mặt trước",
+      "examples_clean": [
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "There is a garden in front of the house.",
+          "example_vi": "Có một khu vườn ở phía trước ngôi nhà."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "Please stand in front of the line.",
+          "example_vi": "Vui lòng đứng ở phía trước hàng."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "He sat in the front of the car.",
+          "example_vi": "Anh ấy ngồi ở phía trước của chiếc xe."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "Look at the screen in front of you.",
+          "example_vi": "Hãy nhìn vào màn hình ở phía trước bạn."
+        },
+        {
+          "meaning_vi": "mặt trước",
+          "example_en": "The front of the building is made of glass.",
+          "example_vi": "Mặt trước của tòa nhà được làm bằng kính."
+        },
+        {
+          "meaning_vi": "mặt trước",
+          "example_en": "Write your name on the front of the paper.",
+          "example_vi": "Viết tên của bạn vào mặt trước của tờ giấy."
+        },
+        {
+          "meaning_vi": "mặt trước",
+          "example_en": "The front of the shirt was stained.",
+          "example_vi": "Mặt trước của chiếc áo bị vấy bẩn."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "The road ahead is clear in front.",
+          "example_vi": "Con đường phía trước rất thông thoáng."
+        },
+        {
+          "meaning_vi": "mặt trước",
+          "example_en": "The front of the book has a beautiful design.",
+          "example_vi": "Mặt trước của cuốn sách có một thiết kế đẹp."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "She walked in front of me.",
+          "example_vi": "Cô ấy đi ở phía trước tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ adjective thành noun (nghĩa phổ biến nhất). Bổ sung 10 ví dụ.",
+      "word": "front",
+      "normalized_word": "front",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "There is a garden in front of the house.",
+      "example_vi_clean": "Có một khu vườn ở phía trước ngôi nhà."
+    },
+    {
+      "id": 24337,
+      "quiz_meaning_vi": "quả",
+      "meaning_vi_clean": "quả; thành quả",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả",
+          "example_en": "I eat fresh fruit every morning.",
+          "example_vi": "Tôi ăn trái cây tươi mỗi sáng."
+        },
+        {
+          "meaning_vi": "quả",
+          "example_en": "Apples and oranges are my favorite fruits.",
+          "example_vi": "Táo và cam là những loại quả yêu thích của tôi."
+        },
+        {
+          "meaning_vi": "quả",
+          "example_en": "The tree is full of ripe fruit.",
+          "example_vi": "Cây đầy những quả chín."
+        },
+        {
+          "meaning_vi": "quả",
+          "example_en": "You should wash the fruit before eating.",
+          "example_vi": "Bạn nên rửa quả trước khi ăn."
+        },
+        {
+          "meaning_vi": "quả",
+          "example_en": "We bought some tropical fruit at the market.",
+          "example_vi": "Chúng tôi đã mua một ít quả nhiệt đới ở chợ."
+        },
+        {
+          "meaning_vi": "thành quả",
+          "example_en": "This project is the fruit of our hard work.",
+          "example_vi": "Dự án này là thành quả của sự làm việc chăm chỉ của chúng tôi."
+        },
+        {
+          "meaning_vi": "thành quả",
+          "example_en": "He is enjoying the fruits of his labor.",
+          "example_vi": "Anh ấy đang tận hưởng những thành quả từ công sức của mình."
+        },
+        {
+          "meaning_vi": "thành quả",
+          "example_en": "Patience often bears sweet fruit.",
+          "example_vi": "Sự kiên nhẫn thường mang lại thành quả ngọt ngào."
+        },
+        {
+          "meaning_vi": "thành quả",
+          "example_en": "The success was the fruit of many years of research.",
+          "example_vi": "Sự thành công là thành quả của nhiều năm nghiên cứu."
+        },
+        {
+          "meaning_vi": "quả",
+          "example_en": "She prepared a bowl of mixed fruit.",
+          "example_vi": "Cô ấy đã chuẩn bị một bát quả hỗn hợp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Bổ sung 10 ví dụ.",
+      "word": "fruit",
+      "normalized_word": "fruit",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I eat fresh fruit every morning.",
+      "example_vi_clean": "Tôi ăn trái cây tươi mỗi sáng."
+    },
+    {
+      "id": 24338,
+      "quiz_meaning_vi": "đầy",
+      "meaning_vi_clean": "đầy; no",
+      "examples_clean": [
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The glass is full of water.",
+          "example_vi": "Cái ly đầy nước."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The room was full of people.",
+          "example_vi": "Căn phòng đầy người."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "Her eyes were full of tears.",
+          "example_vi": "Đôi mắt cô ấy đầy nước mắt."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The basket is full of apples.",
+          "example_vi": "Cái giỏ đầy táo."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The parking lot is full.",
+          "example_vi": "Bãi đậu xe đã đầy."
+        },
+        {
+          "meaning_vi": "no",
+          "example_en": "I am full after that big meal.",
+          "example_vi": "Tôi đã no sau bữa ăn lớn đó."
+        },
+        {
+          "meaning_vi": "no",
+          "example_en": "Are you full yet?",
+          "example_vi": "Bạn đã no chưa?"
+        },
+        {
+          "meaning_vi": "no",
+          "example_en": "He couldn't eat anymore because he was full.",
+          "example_vi": "Anh ấy không thể ăn thêm được nữa vì anh ấy đã no."
+        },
+        {
+          "meaning_vi": "no",
+          "example_en": "The children were full of cake and ice cream.",
+          "example_vi": "Những đứa trẻ đã no nê bánh và kem."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The sky was full of stars.",
+          "example_vi": "Bầu trời đầy những vì sao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành tính từ. Bổ sung 10 ví dụ.",
+      "word": "full",
+      "normalized_word": "full",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The glass is full of water.",
+      "example_vi_clean": "Cái ly đầy nước."
+    },
+    {
+      "id": 24339,
+      "quiz_meaning_vi": "sự vui đùa",
+      "meaning_vi_clean": "sự vui đùa; vui vẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự vui đùa",
+          "example_en": "We had a lot of fun at the party.",
+          "example_vi": "Chúng tôi đã có rất nhiều sự vui đùa tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "sự vui đùa",
+          "example_en": "It was all in good fun.",
+          "example_vi": "Tất cả chỉ là sự vui đùa lành mạnh."
+        },
+        {
+          "meaning_vi": "sự vui đùa",
+          "example_en": "The children were full of fun.",
+          "example_vi": "Những đứa trẻ tràn đầy sự vui đùa."
+        },
+        {
+          "meaning_vi": "sự vui đùa",
+          "example_en": "He did it just for fun.",
+          "example_vi": "Anh ấy làm điều đó chỉ để cho vui."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "It is a fun game to play.",
+          "example_vi": "Đó là một trò chơi vui vẻ để chơi."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "We had a fun day at the beach.",
+          "example_vi": "Chúng tôi đã có một ngày vui vẻ ở bãi biển."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She is a very fun person to be around.",
+          "example_vi": "Cô ấy là một người rất vui vẻ để ở gần."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "That was a fun movie.",
+          "example_vi": "Đó là một bộ phim vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "We had a fun time together.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian vui vẻ cùng nhau."
+        },
+        {
+          "meaning_vi": "sự vui đùa",
+          "example_en": "Don't take it seriously, it's just fun.",
+          "example_vi": "Đừng coi trọng nó, đó chỉ là sự vui đùa thôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ adjective thành noun (nghĩa chính). Bổ sung 10 ví dụ.",
+      "word": "fun",
+      "normalized_word": "fun",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We had a lot of fun at the party.",
+      "example_vi_clean": "Chúng tôi đã có rất nhiều sự vui đùa tại bữa tiệc."
+    },
+    {
+      "id": 24340,
+      "quiz_meaning_vi": "buồn cười",
+      "meaning_vi_clean": "buồn cười; lạ lùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "That is a very funny joke.",
+          "example_vi": "Đó là một câu chuyện đùa rất buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "He made a funny face.",
+          "example_vi": "Anh ấy đã làm một bộ mặt buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "The clown was very funny.",
+          "example_vi": "Chú hề rất buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "I couldn't stop laughing because it was so funny.",
+          "example_vi": "Tôi không thể ngừng cười vì nó quá buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "She told a funny story about her cat.",
+          "example_vi": "Cô ấy kể một câu chuyện buồn cười về con mèo của mình."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "I have a funny feeling about this.",
+          "example_vi": "Tôi có một cảm giác lạ lùng về việc này."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "The milk has a funny taste.",
+          "example_vi": "Sữa có một vị lạ lùng."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "There is a funny noise coming from the engine.",
+          "example_vi": "Có một tiếng động lạ lùng phát ra từ động cơ."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "It is funny how things change.",
+          "example_vi": "Thật lạ lùng khi mọi thứ thay đổi."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "We watched a funny cartoon together.",
+          "example_vi": "Chúng tôi đã xem một bộ phim hoạt hình buồn cười cùng nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ adjective thành adjective (đúng). Bổ sung 10 ví dụ.",
+      "word": "funny",
+      "normalized_word": "funny",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "That is a very funny joke.",
+      "example_vi_clean": "Đó là một câu chuyện đùa rất buồn cười."
+    }
+  ]
+}

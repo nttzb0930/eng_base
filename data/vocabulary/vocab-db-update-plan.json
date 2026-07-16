@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-07-13T18:54:51.870Z",
+  "mode": "apply",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "sourceSnapshotSha256": "3509250caf923ef1aaf94dfab71329b15a005f48718ab8b4753ec6daea143222",
+  "proposalGeneratedAt": "2026-07-13T18:18:49.754Z",
+  "readyToApply": true,
+  "databaseUpdated": false,
+  "counts": {
+    "vocabularyItems": 3000,
+    "existingExamplesToDelete": 8520,
+    "normalizedExamplesToInsert": 30000,
+    "challengeQuestionsToUpdate": 942,
+    "correctChallengeOptionsToUpdate": 942
+  },
+  "changedFieldCounts": {
+    "pos_vi": 1434,
+    "meaning_vi": 2790,
+    "example_en": 2789,
+    "example_vi": 3000,
+    "vocabulary_examples": 3000,
+    "primary_meaning_vi": 942
+  },
+  "driftErrors": [],
+  "confirmationRequired": "APPLY_3000_VOCABULARY_RECORDS"
+}

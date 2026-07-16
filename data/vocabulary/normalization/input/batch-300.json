@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-300",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26991,
+      "word": "engagement",
+      "normalized_word": "engagement",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'geidʤmənt/",
+      "primary_meaning_vi": "sự hứa hẹn",
+      "meaning_vi": "sự hứa hẹn, sự ước hẹn, sự cam kết, sự ràng buộc, sự hứa hôn; sự hứa gặp; sự thuê mướn (người làm...), sự tuyển mộ; công việc làm (của người thư ký, người giúp việc...); sự gài (số...); sự giao chiến; cuộc đánh nhau",
+      "example_en": "The lecturer has three speaking engagements this week.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Check the gears for full engagement before turning the handle.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We are enjoying a long engagement, but haven't yet set a date.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The engagement resulted in many casualties.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26992,
+      "word": "engulf",
+      "normalized_word": "engulf",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'gʌlf/",
+      "primary_meaning_vi": "nhận chìm",
+      "meaning_vi": "nhận chìm, nhận sâu (xuống vực thẳm...)",
+      "example_en": "Desperation engulfed her after her daughter's death.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Only Noah and his family survived when the Flood engulfed the world.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26993,
+      "word": "enhance",
+      "normalized_word": "enhance",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'hɑ:ns/",
+      "primary_meaning_vi": "làm tăng",
+      "meaning_vi": "làm tăng, nâng cao, đề cao, làm nổi bật (đức tính, quyền hạn...); tăng (giá...)",
+      "example_en": "A debt enhances rapidly by compound interest.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26994,
+      "word": "enquire",
+      "normalized_word": "enquire",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'kwaiə/ (enquire) /in'kwaiə/",
+      "primary_meaning_vi": "+ into) điều tra",
+      "meaning_vi": "+ into) điều tra, thẩm tra; hỏi thăm, hỏi han; hỏi mua; hỏi xin; hỏi",
+      "example_en": "He enquired about the availability of rental bicycles in the town.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26995,
+      "word": "enrol",
+      "normalized_word": "enrol",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'roul/ (enroll) /in'roul/",
+      "primary_meaning_vi": "tuyển (quân...)",
+      "meaning_vi": "tuyển (quân...); kết nạp vào, ghi tên cho vào (hội...); ghi vào (sổ sách toà án)",
+      "example_en": "They were eager to enroll new recruits.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Have you enrolled in classes yet for this term?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26996,
+      "word": "enroll",
+      "normalized_word": "enroll",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'roul/ (enroll) /in'roul/",
+      "primary_meaning_vi": "tuyển (quân...)",
+      "meaning_vi": "tuyển (quân...); kết nạp vào, ghi tên cho vào (hội...); ghi vào (sổ sách toà án)",
+      "example_en": "They were eager to enroll new recruits.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Have you enrolled in classes yet for this term?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26997,
+      "word": "enterprise",
+      "normalized_word": "enterprise",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'entəpraiz/",
+      "primary_meaning_vi": "việc làm khó khăn",
+      "meaning_vi": "việc làm khó khăn; việc làm táo bạo; tính dám làm; tổ chức kinh doanh, hãng",
+      "example_en": "A micro-enterprise is defined as a business having 5 or fewer employees and a low seed capital.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Biosphere 2 was a scientific enterprise aimed at the exploration of the complex web of interactions within life systems.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He has shown great enterprise throughout his early career.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26998,
+      "word": "entertaining",
+      "normalized_word": "entertaining",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,entə'teiniɳ/",
+      "primary_meaning_vi": "giải trí",
+      "meaning_vi": "giải trí, vui thú, thú vị",
+      "example_en": "The motivational speaker not only instructed but also entertained the audience.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They enjoy entertaining a lot.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The committee would like to entertain the idea of reducing the budget figures.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26999,
+      "word": "enthusiastically",
+      "normalized_word": "enthusiastically",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "phấn khởi",
+      "meaning_vi": "phấn khởi, hăng hái, nồng nhiệt",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 27000,
+      "word": "entitle",
+      "normalized_word": "entitle",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": null,
+      "primary_meaning_vi": "cho đầu đề",
+      "meaning_vi": "cho đầu đề, cho tên (sách...); xưng hô bằng tước; cho quyền (làm gì...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

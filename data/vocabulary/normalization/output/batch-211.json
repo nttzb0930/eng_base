@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26101,
+      "quiz_meaning_vi": "thị lực",
+      "meaning_vi_clean": "thị lực; tầm nhìn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "She has excellent eyesight even at her age.",
+          "example_vi": "Bà ấy có thị lực tuyệt vời dù đã ở tuổi này."
+        },
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "Regular check-ups are important for maintaining good eyesight.",
+          "example_vi": "Kiểm tra định kỳ rất quan trọng để duy trì thị lực tốt."
+        },
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "His eyesight began to fail as he grew older.",
+          "example_vi": "Thị lực của ông ấy bắt đầu giảm khi ông ấy già đi."
+        },
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "You should wear glasses to protect your eyesight.",
+          "example_vi": "Bạn nên đeo kính để bảo vệ thị lực của mình."
+        },
+        {
+          "meaning_vi": "tầm nhìn",
+          "example_en": "The mountain was within her eyesight.",
+          "example_vi": "Ngọn núi nằm trong tầm nhìn của cô ấy."
+        },
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "Poor eyesight can make driving very dangerous.",
+          "example_vi": "Thị lực kém có thể khiến việc lái xe rất nguy hiểm."
+        },
+        {
+          "meaning_vi": "tầm nhìn",
+          "example_en": "Keep the children within your eyesight at all times.",
+          "example_vi": "Luôn giữ bọn trẻ trong tầm nhìn của bạn."
+        },
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "Carrots are often said to be good for your eyesight.",
+          "example_vi": "Cà rốt thường được cho là tốt cho thị lực của bạn."
+        },
+        {
+          "meaning_vi": "tầm nhìn",
+          "example_en": "The ship disappeared from our eyesight.",
+          "example_vi": "Con tàu đã biến mất khỏi tầm nhìn của chúng tôi."
+        },
+        {
+          "meaning_vi": "thị lực",
+          "example_en": "He had to stop reading because of his failing eyesight.",
+          "example_vi": "Anh ấy phải ngừng đọc sách vì thị lực đang giảm sút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành thị lực, bổ sung ví dụ đầy đủ.",
+      "word": "eyesight",
+      "normalized_word": "eyesight",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has excellent eyesight even at her age.",
+      "example_vi_clean": "Bà ấy có thị lực tuyệt vời dù đã ở tuổi này."
+    },
+    {
+      "id": 26102,
+      "quiz_meaning_vi": "điều kiện thuận lợi",
+      "meaning_vi_clean": "điều kiện thuận lợi; phương tiện; sự dễ dàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều kiện thuận lợi",
+          "example_en": "The new hotel offers excellent facilities for business meetings.",
+          "example_vi": "Khách sạn mới cung cấp các điều kiện thuận lợi tuyệt vời cho các cuộc họp kinh doanh."
+        },
+        {
+          "meaning_vi": "điều kiện thuận lợi",
+          "example_en": "The school has modern sports facilities.",
+          "example_vi": "Trường học có các điều kiện thuận lợi về thể thao hiện đại."
+        },
+        {
+          "meaning_vi": "điều kiện thuận lợi",
+          "example_en": "We need better medical facilities in this area.",
+          "example_vi": "Chúng ta cần các điều kiện thuận lợi về y tế tốt hơn trong khu vực này."
+        },
+        {
+          "meaning_vi": "điều kiện thuận lợi",
+          "example_en": "The facility provides a safe environment for children.",
+          "example_vi": "Cơ sở này cung cấp một môi trường thuận lợi an toàn cho trẻ em."
+        },
+        {
+          "meaning_vi": "phương tiện",
+          "example_en": "Public transport facilities are available nearby.",
+          "example_vi": "Các phương tiện giao thông công cộng có sẵn gần đó."
+        },
+        {
+          "meaning_vi": "phương tiện",
+          "example_en": "The library has great research facilities.",
+          "example_vi": "Thư viện có các phương tiện nghiên cứu tuyệt vời."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "She learned the language with great facility.",
+          "example_vi": "Cô ấy đã học ngôn ngữ đó với sự dễ dàng đáng kinh ngạc."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "He writes with such facility that he finishes books quickly.",
+          "example_vi": "Anh ấy viết với sự dễ dàng đến mức hoàn thành sách rất nhanh."
+        },
+        {
+          "meaning_vi": "phương tiện",
+          "example_en": "The gym is a facility for all members.",
+          "example_vi": "Phòng tập thể dục là một phương tiện dành cho tất cả thành viên."
+        },
+        {
+          "meaning_vi": "điều kiện thuận lợi",
+          "example_en": "The facility is equipped with the latest technology.",
+          "example_vi": "Cơ sở này được trang bị công nghệ mới nhất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ minh họa các nghĩa khác nhau.",
+      "word": "facility",
+      "normalized_word": "facility",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The new hotel offers excellent facilities for business meetings.",
+      "example_vi_clean": "Khách sạn mới cung cấp các điều kiện thuận lợi tuyệt vời cho các cuộc họp kinh doanh."
+    },
+    {
+      "id": 26103,
+      "quiz_meaning_vi": "mờ dần",
+      "meaning_vi_clean": "mờ dần; phai màu; héo đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "mờ dần",
+          "example_en": "The sound of the music faded into the night.",
+          "example_vi": "Âm thanh của bản nhạc mờ dần vào màn đêm."
+        },
+        {
+          "meaning_vi": "mờ dần",
+          "example_en": "The stars began to fade as the sun rose.",
+          "example_vi": "Những ngôi sao bắt đầu mờ dần khi mặt trời mọc."
+        },
+        {
+          "meaning_vi": "mờ dần",
+          "example_en": "His memory of the event started to fade.",
+          "example_vi": "Ký ức của anh ấy về sự kiện đó bắt đầu mờ dần."
+        },
+        {
+          "meaning_vi": "mờ dần",
+          "example_en": "The daylight faded slowly.",
+          "example_vi": "Ánh sáng ban ngày mờ dần một cách chậm rãi."
+        },
+        {
+          "meaning_vi": "phai màu",
+          "example_en": "The bright colors of the shirt faded after many washes.",
+          "example_vi": "Màu sắc tươi sáng của chiếc áo đã phai màu sau nhiều lần giặt."
+        },
+        {
+          "meaning_vi": "phai màu",
+          "example_en": "Sunlight can cause the curtains to fade.",
+          "example_vi": "Ánh nắng mặt trời có thể làm cho rèm cửa bị phai màu."
+        },
+        {
+          "meaning_vi": "héo đi",
+          "example_en": "The flowers began to fade in the heat.",
+          "example_vi": "Những bông hoa bắt đầu héo đi trong cái nóng."
+        },
+        {
+          "meaning_vi": "héo đi",
+          "example_en": "The leaves fade and fall in autumn.",
+          "example_vi": "Những chiếc lá héo đi và rụng xuống vào mùa thu."
+        },
+        {
+          "meaning_vi": "mờ dần",
+          "example_en": "Her smile faded when she heard the bad news.",
+          "example_vi": "Nụ cười của cô ấy mờ dần khi cô ấy nghe tin xấu."
+        },
+        {
+          "meaning_vi": "phai màu",
+          "example_en": "The old photograph has faded over time.",
+          "example_vi": "Bức ảnh cũ đã phai màu theo thời gian."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ cho các nghĩa khác nhau.",
+      "word": "fade",
+      "normalized_word": "fade",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The sound of the music faded into the night.",
+      "example_vi_clean": "Âm thanh của bản nhạc mờ dần vào màn đêm."
+    },
+    {
+      "id": 26104,
+      "quiz_meaning_vi": "sự thất bại",
+      "meaning_vi_clean": "sự thất bại; sự hỏng; sự thiếu",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thất bại",
+          "example_en": "The project was a complete failure.",
+          "example_vi": "Dự án đó là một sự thất bại hoàn toàn."
+        },
+        {
+          "meaning_vi": "sự thất bại",
+          "example_en": "He felt like a failure after losing his job.",
+          "example_vi": "Anh ấy cảm thấy mình là một kẻ thất bại sau khi mất việc."
+        },
+        {
+          "meaning_vi": "sự thất bại",
+          "example_en": "Failure is often the first step to success.",
+          "example_vi": "Sự thất bại thường là bước đầu tiên dẫn đến thành công."
+        },
+        {
+          "meaning_vi": "sự thất bại",
+          "example_en": "The failure of the plan surprised everyone.",
+          "example_vi": "Sự thất bại của kế hoạch đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự hỏng",
+          "example_en": "The engine failure caused the plane to land.",
+          "example_vi": "Sự hỏng hóc động cơ đã khiến máy bay phải hạ cánh."
+        },
+        {
+          "meaning_vi": "sự hỏng",
+          "example_en": "Power failure left the city in darkness.",
+          "example_vi": "Sự hỏng hóc điện đã khiến thành phố chìm trong bóng tối."
+        },
+        {
+          "meaning_vi": "sự thiếu",
+          "example_en": "The failure of rain led to a bad harvest.",
+          "example_vi": "Sự thiếu hụt mưa đã dẫn đến một vụ mùa tồi tệ."
+        },
+        {
+          "meaning_vi": "sự thất bại",
+          "example_en": "They learned from their failure.",
+          "example_vi": "Họ đã học hỏi từ sự thất bại của mình."
+        },
+        {
+          "meaning_vi": "sự hỏng",
+          "example_en": "Heart failure is a serious medical condition.",
+          "example_vi": "Sự hỏng hóc tim là một tình trạng y tế nghiêm trọng."
+        },
+        {
+          "meaning_vi": "sự thất bại",
+          "example_en": "The company faced failure due to poor management.",
+          "example_vi": "Công ty đã đối mặt với sự thất bại do quản lý kém."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ.",
+      "word": "failure",
+      "normalized_word": "failure",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The project was a complete failure.",
+      "example_vi_clean": "Dự án đó là một sự thất bại hoàn toàn."
+    },
+    {
+      "id": 26105,
+      "quiz_meaning_vi": "yếu ớt",
+      "meaning_vi_clean": "yếu ớt; mờ nhạt; chóng mặt",
+      "examples_clean": [
+        {
+          "meaning_vi": "yếu ớt",
+          "example_en": "She gave a faint smile when she saw him.",
+          "example_vi": "Cô ấy nở một nụ cười yếu ớt khi nhìn thấy anh ấy."
+        },
+        {
+          "meaning_vi": "yếu ớt",
+          "example_en": "He made a faint attempt to stand up.",
+          "example_vi": "Anh ấy đã thực hiện một nỗ lực yếu ớt để đứng dậy."
+        },
+        {
+          "meaning_vi": "yếu ớt",
+          "example_en": "There was a faint sound of music in the air.",
+          "example_vi": "Có một âm thanh yếu ớt của âm nhạc trong không khí."
+        },
+        {
+          "meaning_vi": "yếu ớt",
+          "example_en": "She felt a faint hope that he would return.",
+          "example_vi": "Cô ấy cảm thấy một hy vọng yếu ớt rằng anh ấy sẽ quay lại."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "I have a faint memory of that day.",
+          "example_vi": "Tôi có một ký ức mờ nhạt về ngày hôm đó."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "There was a faint light coming from the window.",
+          "example_vi": "Có một ánh sáng mờ nhạt phát ra từ cửa sổ."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "The writing on the old paper was very faint.",
+          "example_vi": "Chữ viết trên tờ giấy cũ rất mờ nhạt."
+        },
+        {
+          "meaning_vi": "chóng mặt",
+          "example_en": "I felt faint because of the heat.",
+          "example_vi": "Tôi cảm thấy chóng mặt vì trời nóng."
+        },
+        {
+          "meaning_vi": "chóng mặt",
+          "example_en": "She felt faint and had to sit down.",
+          "example_vi": "Cô ấy cảm thấy chóng mặt và phải ngồi xuống."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "He had a faint scent of perfume on his clothes.",
+          "example_vi": "Anh ấy có một mùi hương mờ nhạt của nước hoa trên quần áo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang tính từ, sửa nghĩa chính và bổ sung ví dụ.",
+      "word": "faint",
+      "normalized_word": "faint",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She gave a faint smile when she saw him.",
+      "example_vi_clean": "Cô ấy nở một nụ cười yếu ớt khi nhìn thấy anh ấy."
+    },
+    {
+      "id": 26106,
+      "quiz_meaning_vi": "trung thành",
+      "meaning_vi_clean": "trung thành; đáng tin cậy; chính xác",
+      "examples_clean": [
+        {
+          "meaning_vi": "trung thành",
+          "example_en": "Dogs are known for being very faithful companions.",
+          "example_vi": "Chó được biết đến là những người bạn đồng hành rất trung thành."
+        },
+        {
+          "meaning_vi": "trung thành",
+          "example_en": "She has been a faithful employee for twenty years.",
+          "example_vi": "Cô ấy đã là một nhân viên trung thành trong hai mươi năm."
+        },
+        {
+          "meaning_vi": "trung thành",
+          "example_en": "He remained faithful to his principles.",
+          "example_vi": "Anh ấy vẫn trung thành với các nguyên tắc của mình."
+        },
+        {
+          "meaning_vi": "trung thành",
+          "example_en": "They are faithful supporters of the team.",
+          "example_vi": "Họ là những người ủng hộ trung thành của đội bóng."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "He is a faithful friend who is always there for me.",
+          "example_vi": "Anh ấy là một người bạn đáng tin cậy, người luôn ở bên tôi."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "We need a faithful account of what happened.",
+          "example_vi": "Chúng ta cần một bản tường thuật đáng tin cậy về những gì đã xảy ra."
+        },
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "The movie is a faithful reproduction of the book.",
+          "example_vi": "Bộ phim là một bản sao chính xác của cuốn sách."
+        },
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "This is a faithful translation of the original text.",
+          "example_vi": "Đây là một bản dịch chính xác của văn bản gốc."
+        },
+        {
+          "meaning_vi": "trung thành",
+          "example_en": "She is faithful to her husband.",
+          "example_vi": "Cô ấy chung thủy với chồng mình."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "He gave a faithful description of the scene.",
+          "example_vi": "Anh ấy đã đưa ra một mô tả đáng tin cậy về hiện trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ.",
+      "word": "faithful",
+      "normalized_word": "faithful",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Dogs are known for being very faithful companions.",
+      "example_vi_clean": "Chó được biết đến là những người bạn đồng hành rất trung thành."
+    },
+    {
+      "id": 26107,
+      "quiz_meaning_vi": "giả",
+      "meaning_vi_clean": "giả; giả mạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "giả",
+          "example_en": "She was wearing a fake fur coat.",
+          "example_vi": "Cô ấy đang mặc một chiếc áo khoác lông giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The flowers in the vase are fake.",
+          "example_vi": "Những bông hoa trong bình là hoa giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "He used a fake name to hide his identity.",
+          "example_vi": "Anh ấy đã sử dụng một cái tên giả để che giấu danh tính của mình."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The police found a lot of fake money.",
+          "example_vi": "Cảnh sát đã tìm thấy rất nhiều tiền giả."
+        },
+        {
+          "meaning_vi": "giả mạo",
+          "example_en": "He was arrested for selling fake documents.",
+          "example_vi": "Anh ấy đã bị bắt vì bán các tài liệu giả mạo."
+        },
+        {
+          "meaning_vi": "giả mạo",
+          "example_en": "The painting turned out to be a fake.",
+          "example_vi": "Bức tranh hóa ra là một món đồ giả mạo."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "Don't believe everything you see; some news is fake.",
+          "example_vi": "Đừng tin mọi thứ bạn thấy; một số tin tức là tin giả."
+        },
+        {
+          "meaning_vi": "giả mạo",
+          "example_en": "They tried to fake a signature on the contract.",
+          "example_vi": "Họ đã cố gắng giả mạo chữ ký trên hợp đồng."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The diamond ring was fake.",
+          "example_vi": "Chiếc nhẫn kim cương đó là đồ giả."
+        },
+        {
+          "meaning_vi": "giả mạo",
+          "example_en": "He was accused of creating a fake profile online.",
+          "example_vi": "Anh ấy bị buộc tội tạo một hồ sơ giả mạo trên mạng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang tính từ, sửa nghĩa chính và bổ sung ví dụ.",
+      "word": "fake",
+      "normalized_word": "fake",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She was wearing a fake fur coat.",
+      "example_vi_clean": "Cô ấy đang mặc một chiếc áo khoác lông giả."
+    },
+    {
+      "id": 26108,
+      "quiz_meaning_vi": "sự rơi",
+      "meaning_vi_clean": "sự rơi; sự ngã; sự sụp đổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự rơi",
+          "example_en": "The fall of the leaves signals the start of autumn.",
+          "example_vi": "Sự rơi của những chiếc lá báo hiệu bắt đầu mùa thu."
+        },
+        {
+          "meaning_vi": "sự rơi",
+          "example_en": "The sudden fall in temperature surprised everyone.",
+          "example_vi": "Sự rơi đột ngột của nhiệt độ làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự rơi",
+          "example_en": "There was a significant fall in prices this month.",
+          "example_vi": "Có một sự rơi đáng kể về giá cả trong tháng này."
+        },
+        {
+          "meaning_vi": "sự rơi",
+          "example_en": "The fall of rain was heavy last night.",
+          "example_vi": "Sự rơi của mưa rất nặng hạt đêm qua."
+        },
+        {
+          "meaning_vi": "sự ngã",
+          "example_en": "He suffered a bad fall while climbing.",
+          "example_vi": "Anh ấy đã bị một cú ngã đau khi đang leo núi."
+        },
+        {
+          "meaning_vi": "sự ngã",
+          "example_en": "She hurt her arm in a fall.",
+          "example_vi": "Cô ấy bị đau tay trong một cú ngã."
+        },
+        {
+          "meaning_vi": "sự sụp đổ",
+          "example_en": "The fall of the empire changed history.",
+          "example_vi": "Sự sụp đổ của đế chế đó đã thay đổi lịch sử."
+        },
+        {
+          "meaning_vi": "sự sụp đổ",
+          "example_en": "The fall of the wall marked the end of the war.",
+          "example_vi": "Sự sụp đổ của bức tường đã đánh dấu sự kết thúc của cuộc chiến."
+        },
+        {
+          "meaning_vi": "sự ngã",
+          "example_en": "Be careful not to have a fall on the ice.",
+          "example_vi": "Hãy cẩn thận để không bị ngã trên băng."
+        },
+        {
+          "meaning_vi": "sự sụp đổ",
+          "example_en": "The fall of the government was unexpected.",
+          "example_vi": "Sự sụp đổ của chính phủ là điều không ngờ tới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, sửa nghĩa chính và bổ sung ví dụ.",
+      "word": "fall",
+      "normalized_word": "fall",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The fall of the leaves signals the start of autumn.",
+      "example_vi_clean": "Sự rơi của những chiếc lá báo hiệu bắt đầu mùa thu."
+    },
+    {
+      "id": 26109,
+      "quiz_meaning_vi": "những người thiệt mạng",
+      "meaning_vi_clean": "những người thiệt mạng",
+      "examples_clean": [
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "We gathered to honor the fallen in the war.",
+          "example_vi": "Chúng tôi tập trung để tưởng niệm những người thiệt mạng trong chiến tranh."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "A monument was built for the fallen soldiers.",
+          "example_vi": "Một đài tưởng niệm đã được xây dựng cho những người lính thiệt mạng."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "The names of the fallen are engraved on the wall.",
+          "example_vi": "Tên của những người thiệt mạng được khắc trên bức tường."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "They prayed for the souls of the fallen.",
+          "example_vi": "Họ cầu nguyện cho linh hồn của những người thiệt mạng."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "The ceremony remembered the fallen from all nations.",
+          "example_vi": "Buổi lễ tưởng nhớ những người thiệt mạng từ tất cả các quốc gia."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "Flowers were laid for the fallen heroes.",
+          "example_vi": "Những bông hoa đã được đặt cho những người anh hùng thiệt mạng."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "The country mourned the fallen after the battle.",
+          "example_vi": "Đất nước thương tiếc những người thiệt mạng sau trận chiến."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "He wrote a poem about the fallen.",
+          "example_vi": "Anh ấy đã viết một bài thơ về những người thiệt mạng."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "The memorial service honored the fallen.",
+          "example_vi": "Buổi lễ tưởng niệm đã vinh danh những người thiệt mạng."
+        },
+        {
+          "meaning_vi": "những người thiệt mạng",
+          "example_en": "We must never forget the sacrifice of the fallen.",
+          "example_vi": "Chúng ta không bao giờ được quên sự hy sinh của những người thiệt mạng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ (dùng như danh từ tập hợp), sửa nghĩa chính và bổ sung ví dụ.",
+      "word": "fallen",
+      "normalized_word": "fallen",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We gathered to honor the fallen in the war.",
+      "example_vi_clean": "Chúng tôi tập trung để tưởng niệm những người thiệt mạng trong chiến tranh."
+    },
+    {
+      "id": 26110,
+      "quiz_meaning_vi": "khả năng tưởng tượng",
+      "meaning_vi_clean": "khả năng tưởng tượng; ý nghĩ kỳ quặc",
+      "examples_clean": [
+        {
+          "meaning_vi": "khả năng tưởng tượng",
+          "example_en": "Children have a very vivid fantasy.",
+          "example_vi": "Trẻ em có khả năng tưởng tượng rất sống động."
+        },
+        {
+          "meaning_vi": "khả năng tưởng tượng",
+          "example_en": "She uses her fantasy to write stories.",
+          "example_vi": "Cô ấy sử dụng khả năng tưởng tượng của mình để viết truyện."
+        },
+        {
+          "meaning_vi": "khả năng tưởng tượng",
+          "example_en": "His fantasy knows no bounds.",
+          "example_vi": "Khả năng tưởng tượng của anh ấy không có giới hạn."
+        },
+        {
+          "meaning_vi": "khả năng tưởng tượng",
+          "example_en": "The book is a product of pure fantasy.",
+          "example_vi": "Cuốn sách là một sản phẩm của khả năng tưởng tượng thuần túy."
+        },
+        {
+          "meaning_vi": "ý nghĩ kỳ quặc",
+          "example_en": "He had a strange fantasy about living on the moon.",
+          "example_vi": "Anh ấy có một ý nghĩ kỳ quặc về việc sống trên mặt trăng."
+        },
+        {
+          "meaning_vi": "ý nghĩ kỳ quặc",
+          "example_en": "It was just a fantasy that would never come true.",
+          "example_vi": "Đó chỉ là một ý nghĩ kỳ quặc sẽ không bao giờ trở thành sự thật."
+        },
+        {
+          "meaning_vi": "ý nghĩ kỳ quặc",
+          "example_en": "She likes to indulge in fantasies about traveling the world.",
+          "example_vi": "Cô ấy thích đắm chìm vào những ý nghĩ kỳ quặc về việc đi du lịch khắp thế giới."
+        },
+        {
+          "meaning_vi": "khả năng tưởng tượng",
+          "example_en": "Art requires a great deal of fantasy.",
+          "example_vi": "Nghệ thuật đòi hỏi một khả năng tưởng tượng rất lớn."
+        },
+        {
+          "meaning_vi": "ý nghĩ kỳ quặc",
+          "example_en": "He lives in a world of his own fantasy.",
+          "example_vi": "Anh ấy sống trong một thế giới của những ý nghĩ kỳ quặc của riêng mình."
+        },
+        {
+          "meaning_vi": "khả năng tưởng tượng",
+          "example_en": "The film is a work of fantasy.",
+          "example_vi": "Bộ phim là một tác phẩm của khả năng tưởng tượng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ.",
+      "word": "fantasy",
+      "normalized_word": "fantasy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Children have a very vivid fantasy.",
+      "example_vi_clean": "Trẻ em có khả năng tưởng tượng rất sống động."
+    }
+  ]
+}

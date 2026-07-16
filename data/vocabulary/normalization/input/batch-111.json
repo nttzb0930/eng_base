@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-111",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25101,
+      "word": "harmful",
+      "normalized_word": "harmful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'hɑ:mful/",
+      "primary_meaning_vi": "gây tai hại",
+      "meaning_vi": "gây tai hại, có hại",
+      "example_en": "Wear a hat to protect your skin from harmful sunlight.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25102,
+      "word": "harmony",
+      "normalized_word": "harmony",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hɑ:məni/",
+      "primary_meaning_vi": "sự hài hoà",
+      "meaning_vi": "sự hài hoà, sự cân đối; sự hoà thuận, sự hoà hợp; hoà âm",
+      "example_en": "a harmony of the Gospels",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25103,
+      "word": "harvest",
+      "normalized_word": "harvest",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'hɑ:vist/",
+      "primary_meaning_vi": "việc gặt (lúa...)",
+      "meaning_vi": "việc gặt (lúa...), việc thu hoạch (hoa quả...); mùa gặt, vụ thu hoạch; thu hoạch, vụ gặt; kết quả, thu hoạch (của một việc gì); gặt hái, thu hoạch ((nghĩa đen) & (nghĩa bóng)); thu vén, dành dụm",
+      "example_en": "Harvest is usually very damp and rainy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This year's cotton harvest was great but the corn harvest was disastrous.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Harvesting is a stressing, thirsty occupation",
+          "example_vi": null
+        },
+        {
+          "example_en": "The rising star harvested well-deserved acclaim, even an Oscar under 21",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25104,
+      "word": "headphone",
+      "normalized_word": "headphone",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  (thường) số nhiều",
+      "phonetic": "/'hedfoun/",
+      "primary_meaning_vi": "ống nghe (điện đài)",
+      "meaning_vi": "ống nghe (điện đài)",
+      "example_en": "She handed me one headphone so I could listen too.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25105,
+      "word": "heat",
+      "normalized_word": "heat",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ ((thường) + up)",
+      "phonetic": "/hi:t/",
+      "primary_meaning_vi": "hơi nóng",
+      "meaning_vi": "hơi nóng, sức nóng; sự nóng; nhiệt; sự nóng bức, sự nóng nực; trạng thái bừng bừng (của cơ thể); trạng thái viêm tấy; vị cay (ớt...); sự nóng chảy, sự giận dữ; sự nổi nóng, sự nồng nhiệt, sự hăng hái; sự động đực; sự cố gắng một mạch, sự làm một mạch; cuộc đấu, cuộc đua; sự nung; ,  (từ lóng) sự tăng cường thi hành luật pháp; sự tăng cường điều tra; sự thúc ép, sự cưỡng ép; đốt nóng, nung nóng; làm nóng, làm bừng bừng; làm nổi giận; làm nổi nóng; kích thích, kích động; làm sôi nổi lên; nung; nóng lên, trở nên nóng; nổi nóng, nổi giận; sôi nổi lên",
+      "example_en": "This furnace puts out 5000 BTUs of heat. That engine is really throwing off some heat. Removal of heat from the liquid caused it to turn into a solid.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Stay out of the heat of the sun!",
+          "example_vi": null
+        },
+        {
+          "example_en": "The chili sauce gave the dish heat.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It's easy to make bad decisions in the heat of the moment.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25106,
+      "word": "heating",
+      "normalized_word": "heating",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hi:tiɳ/",
+      "primary_meaning_vi": "sự đốt nóng",
+      "meaning_vi": "sự đốt nóng, sự đun nóng; sự làm nóng; ,  (vật lý) sự nung; sự nóng lên",
+      "example_en": "I'll heat up the water.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There's a pot of soup heating on the stove.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The massage heated her up.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The crucible was subjected to several heatings.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25107,
+      "word": "heavily",
+      "normalized_word": "heavily",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'hevili/",
+      "primary_meaning_vi": "nặng",
+      "meaning_vi": "nặng, nặng nề ((nghĩa đen) & (nghĩa bóng))",
+      "example_en": "He clomped heavily up the stairs in his boots.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "heavily burdened",
+          "example_vi": null
+        },
+        {
+          "example_en": "He drank heavily.",
+          "example_vi": null
+        },
+        {
+          "example_en": "heavily armed soldiers; heavily armoured tanks; heavily reinforced walls",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25108,
+      "word": "help",
+      "normalized_word": "help",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/help/",
+      "primary_meaning_vi": "sự giúp đỡ",
+      "meaning_vi": "sự giúp đỡ, sự cứu giúp, sự giúp ích; phương cứu chữa, lối thoát; phần đưa mời (đồ ăn, đồ uống); người làm, người giúp việc trong nhà; giúp đỡ, cứu giúp; đưa mời (đồ ăn, thức uống); nhịn được, ngăn được, chịu được, đừng được; tránh được, cứu chữa",
+      "example_en": "I need some help with my homework.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was a great help to me when I was moving house.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I can't find anything in the help about rotating an image.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Most of the hired help is seasonal, for the harvest.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25109,
+      "word": "helpful",
+      "normalized_word": "helpful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'helpful/",
+      "primary_meaning_vi": "giúp đỡ",
+      "meaning_vi": "giúp đỡ; giúp ích; có ích",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25110,
+      "word": "hero",
+      "normalized_word": "hero",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều heroes",
+      "phonetic": "/'hiərou/",
+      "primary_meaning_vi": "người anh hùng",
+      "meaning_vi": "người anh hùng; nhân vật nam chính (trong một tác phẩm văn học)",
+      "example_en": "Let's discuss how to play if the hero has KK, and there's an ace on board.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

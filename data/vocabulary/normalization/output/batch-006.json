@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24051,
+      "quiz_meaning_vi": "dải",
+      "meaning_vi_clean": "dải; ban nhạc; nhóm người",
+      "examples_clean": [
+        {
+          "meaning_vi": "dải",
+          "example_en": "A narrow band of light appeared under the door.",
+          "example_vi": "Một dải sáng hẹp xuất hiện dưới cửa."
+        },
+        {
+          "meaning_vi": "dải",
+          "example_en": "The radio station broadcasts on a specific frequency band.",
+          "example_vi": "Đài phát thanh phát sóng trên một dải tần số cụ thể."
+        },
+        {
+          "meaning_vi": "dải",
+          "example_en": "She wore a colorful band around her hair.",
+          "example_vi": "Cô ấy đeo một dải băng đầy màu sắc quanh tóc."
+        },
+        {
+          "meaning_vi": "dải",
+          "example_en": "The mountain range is a long band of rock.",
+          "example_vi": "Dãy núi là một dải đá dài."
+        },
+        {
+          "meaning_vi": "ban nhạc",
+          "example_en": "The band played several popular songs at the party.",
+          "example_vi": "Ban nhạc đã chơi vài bài hát nổi tiếng tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "ban nhạc",
+          "example_en": "He is the lead singer of a local rock band.",
+          "example_vi": "Anh ấy là ca sĩ chính của một ban nhạc rock địa phương."
+        },
+        {
+          "meaning_vi": "ban nhạc",
+          "example_en": "They formed a band while they were in college.",
+          "example_vi": "Họ thành lập một ban nhạc khi còn học đại học."
+        },
+        {
+          "meaning_vi": "nhóm người",
+          "example_en": "A small band of volunteers helped clean the park.",
+          "example_vi": "Một nhóm nhỏ tình nguyện viên đã giúp dọn dẹp công viên."
+        },
+        {
+          "meaning_vi": "nhóm người",
+          "example_en": "The travelers were attacked by a band of thieves.",
+          "example_vi": "Những người du hành đã bị một nhóm trộm tấn công."
+        },
+        {
+          "meaning_vi": "nhóm người",
+          "example_en": "A band of musicians performed in the town square.",
+          "example_vi": "Một nhóm nhạc sĩ đã biểu diễn ở quảng trường thị trấn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ loại danh từ, loại bỏ các nghĩa động từ không phù hợp với POS noun, bổ sung ví dụ minh họa.",
+      "word": "band",
+      "normalized_word": "band",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A narrow band of light appeared under the door.",
+      "example_vi_clean": "Một dải sáng hẹp xuất hiện dưới cửa."
+    },
+    {
+      "id": 24052,
+      "quiz_meaning_vi": "ngân hàng",
+      "meaning_vi_clean": "ngân hàng; bờ sông; đống",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngân hàng",
+          "example_en": "I need to go to the bank to withdraw some cash.",
+          "example_vi": "Tôi cần đến ngân hàng để rút một ít tiền mặt."
+        },
+        {
+          "meaning_vi": "ngân hàng",
+          "example_en": "She works at a large bank in the city center.",
+          "example_vi": "Cô ấy làm việc tại một ngân hàng lớn ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "ngân hàng",
+          "example_en": "You can open a savings account at the bank.",
+          "example_vi": "Bạn có thể mở tài khoản tiết kiệm tại ngân hàng."
+        },
+        {
+          "meaning_vi": "ngân hàng",
+          "example_en": "The bank is closed on weekends.",
+          "example_vi": "Ngân hàng đóng cửa vào cuối tuần."
+        },
+        {
+          "meaning_vi": "bờ sông",
+          "example_en": "We sat on the river bank and watched the water flow.",
+          "example_vi": "Chúng tôi ngồi trên bờ sông và ngắm nhìn dòng nước chảy."
+        },
+        {
+          "meaning_vi": "bờ sông",
+          "example_en": "The children played on the grassy bank of the lake.",
+          "example_vi": "Những đứa trẻ chơi đùa trên bờ cỏ của hồ."
+        },
+        {
+          "meaning_vi": "bờ sông",
+          "example_en": "They walked along the river bank at sunset.",
+          "example_vi": "Họ đi dạo dọc theo bờ sông lúc hoàng hôn."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "There was a large bank of snow against the wall.",
+          "example_vi": "Có một đống tuyết lớn dựa vào bức tường."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "The clouds formed a dark bank in the sky.",
+          "example_vi": "Những đám mây tạo thành một đống tối trên bầu trời."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "He cleared the bank of leaves from the garden path.",
+          "example_vi": "Anh ấy dọn sạch đống lá trên lối đi trong vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành ngân hàng, bổ sung các nghĩa danh từ phổ biến và ví dụ.",
+      "word": "bank",
+      "normalized_word": "bank",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I need to go to the bank to withdraw some cash.",
+      "example_vi_clean": "Tôi cần đến ngân hàng để rút một ít tiền mặt."
+    },
+    {
+      "id": 24053,
+      "quiz_meaning_vi": "thanh",
+      "meaning_vi_clean": "thanh; quầy rượu; rào chắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thanh",
+          "example_en": "He bought a bar of chocolate at the store.",
+          "example_vi": "Anh ấy mua một thanh sô-cô-la ở cửa hàng."
+        },
+        {
+          "meaning_vi": "thanh",
+          "example_en": "The window was secured with iron bars.",
+          "example_vi": "Cửa sổ được bảo vệ bằng các thanh sắt."
+        },
+        {
+          "meaning_vi": "thanh",
+          "example_en": "She held a metal bar to keep her balance.",
+          "example_vi": "Cô ấy nắm lấy một thanh kim loại để giữ thăng bằng."
+        },
+        {
+          "meaning_vi": "thanh",
+          "example_en": "The soap comes in a small bar.",
+          "example_vi": "Xà phòng được đóng thành một thanh nhỏ."
+        },
+        {
+          "meaning_vi": "quầy rượu",
+          "example_en": "They met at a local bar for a drink.",
+          "example_vi": "Họ gặp nhau tại một quầy rượu địa phương để uống nước."
+        },
+        {
+          "meaning_vi": "quầy rượu",
+          "example_en": "The bar was crowded with people on Friday night.",
+          "example_vi": "Quầy rượu đông đúc người vào tối thứ Sáu."
+        },
+        {
+          "meaning_vi": "quầy rượu",
+          "example_en": "He works as a bartender at a popular bar.",
+          "example_vi": "Anh ấy làm nhân viên pha chế tại một quầy rượu nổi tiếng."
+        },
+        {
+          "meaning_vi": "rào chắn",
+          "example_en": "The police set up a bar to block the road.",
+          "example_vi": "Cảnh sát dựng một rào chắn để chặn con đường."
+        },
+        {
+          "meaning_vi": "rào chắn",
+          "example_en": "The gate acts as a bar against intruders.",
+          "example_vi": "Cánh cổng đóng vai trò như một rào chắn chống lại kẻ xâm nhập."
+        },
+        {
+          "meaning_vi": "rào chắn",
+          "example_en": "They used a wooden bar to lock the door.",
+          "example_vi": "Họ dùng một thanh gỗ làm rào chắn để khóa cửa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ giới từ sang danh từ, chọn nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "bar",
+      "normalized_word": "bar",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He bought a bar of chocolate at the store.",
+      "example_vi_clean": "Anh ấy mua một thanh sô-cô-la ở cửa hàng."
+    },
+    {
+      "id": 24054,
+      "quiz_meaning_vi": "bóng chày",
+      "meaning_vi_clean": "bóng chày",
+      "examples_clean": [
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "We went to watch a baseball game yesterday.",
+          "example_vi": "Chúng tôi đã đi xem một trận bóng chày ngày hôm qua."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "He is a professional baseball player.",
+          "example_vi": "Anh ấy là một cầu thủ bóng chày chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "Do you like playing baseball?",
+          "example_vi": "Bạn có thích chơi bóng chày không?"
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "The baseball season starts in the spring.",
+          "example_vi": "Mùa giải bóng chày bắt đầu vào mùa xuân."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "She bought a new baseball glove.",
+          "example_vi": "Cô ấy đã mua một chiếc găng tay bóng chày mới."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "They practiced baseball in the park.",
+          "example_vi": "Họ đã tập luyện bóng chày ở công viên."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "Baseball is very popular in the United States.",
+          "example_vi": "Bóng chày rất phổ biến ở Hoa Kỳ."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "He hit a home run in the baseball match.",
+          "example_vi": "Anh ấy đã đánh một cú home run trong trận bóng chày."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "The baseball team won the championship.",
+          "example_vi": "Đội bóng chày đã giành chức vô địch."
+        },
+        {
+          "meaning_vi": "bóng chày",
+          "example_en": "We need a bat to play baseball.",
+          "example_vi": "Chúng ta cần một cái gậy để chơi bóng chày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ cho từ baseball.",
+      "word": "baseball",
+      "normalized_word": "baseball",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We went to watch a baseball game yesterday.",
+      "example_vi_clean": "Chúng tôi đã đi xem một trận bóng chày ngày hôm qua."
+    },
+    {
+      "id": 24055,
+      "quiz_meaning_vi": "gậy",
+      "meaning_vi_clean": "gậy; con dơi",
+      "examples_clean": [
+        {
+          "meaning_vi": "gậy",
+          "example_en": "He swung the baseball bat with all his might.",
+          "example_vi": "Anh ấy vung chiếc gậy bóng chày bằng tất cả sức lực."
+        },
+        {
+          "meaning_vi": "gậy",
+          "example_en": "She needs a new bat for the cricket match.",
+          "example_vi": "Cô ấy cần một chiếc gậy mới cho trận đấu crikê."
+        },
+        {
+          "meaning_vi": "gậy",
+          "example_en": "The player dropped his bat after hitting the ball.",
+          "example_vi": "Cầu thủ đánh rơi chiếc gậy sau khi đánh bóng."
+        },
+        {
+          "meaning_vi": "gậy",
+          "example_en": "He is a very talented bat in this team.",
+          "example_vi": "Anh ấy là một tay đánh gậy rất tài năng trong đội này."
+        },
+        {
+          "meaning_vi": "con dơi",
+          "example_en": "A bat flew out of the cave at night.",
+          "example_vi": "Một con dơi bay ra khỏi hang vào ban đêm."
+        },
+        {
+          "meaning_vi": "con dơi",
+          "example_en": "Bats are nocturnal animals that sleep during the day.",
+          "example_vi": "Dơi là loài động vật ăn đêm ngủ vào ban ngày."
+        },
+        {
+          "meaning_vi": "con dơi",
+          "example_en": "We saw a bat hanging from the ceiling.",
+          "example_vi": "Chúng tôi thấy một con dơi đang treo mình trên trần nhà."
+        },
+        {
+          "meaning_vi": "con dơi",
+          "example_en": "The bat used its wings to fly through the dark.",
+          "example_vi": "Con dơi dùng đôi cánh để bay xuyên qua bóng tối."
+        },
+        {
+          "meaning_vi": "con dơi",
+          "example_en": "Some people are afraid of bats.",
+          "example_vi": "Một số người sợ dơi."
+        },
+        {
+          "meaning_vi": "con dơi",
+          "example_en": "The bat navigated using sound waves.",
+          "example_vi": "Con dơi định vị bằng cách sử dụng sóng âm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, loại bỏ các nghĩa lóng không cần thiết, bổ sung ví dụ.",
+      "word": "bat",
+      "normalized_word": "bat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He swung the baseball bat with all his might.",
+      "example_vi_clean": "Anh ấy vung chiếc gậy bóng chày bằng tất cả sức lực."
+    },
+    {
+      "id": 24056,
+      "quiz_meaning_vi": "sự tắm",
+      "meaning_vi_clean": "sự tắm; bồn tắm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tắm",
+          "example_en": "I usually take a bath before going to bed.",
+          "example_vi": "Tôi thường tắm trước khi đi ngủ."
+        },
+        {
+          "meaning_vi": "sự tắm",
+          "example_en": "The baby enjoyed his warm bath.",
+          "example_vi": "Đứa bé rất thích buổi tắm nước ấm của mình."
+        },
+        {
+          "meaning_vi": "sự tắm",
+          "example_en": "She had a long bath to relax after work.",
+          "example_vi": "Cô ấy đã tắm một lúc lâu để thư giãn sau giờ làm việc."
+        },
+        {
+          "meaning_vi": "sự tắm",
+          "example_en": "He needs a bath after playing in the mud.",
+          "example_vi": "Nó cần phải tắm sau khi chơi trong bùn."
+        },
+        {
+          "meaning_vi": "bồn tắm",
+          "example_en": "The bathroom has a large white bath.",
+          "example_vi": "Phòng tắm có một cái bồn tắm màu trắng lớn."
+        },
+        {
+          "meaning_vi": "bồn tắm",
+          "example_en": "She cleaned the bath with soap and water.",
+          "example_vi": "Cô ấy đã cọ rửa bồn tắm bằng xà phòng và nước."
+        },
+        {
+          "meaning_vi": "bồn tắm",
+          "example_en": "The new house has a modern bath.",
+          "example_vi": "Ngôi nhà mới có một cái bồn tắm hiện đại."
+        },
+        {
+          "meaning_vi": "bồn tắm",
+          "example_en": "He filled the bath with hot water.",
+          "example_vi": "Anh ấy đã đổ đầy nước nóng vào bồn tắm."
+        },
+        {
+          "meaning_vi": "bồn tắm",
+          "example_en": "The bath is made of high-quality porcelain.",
+          "example_vi": "Cái bồn tắm được làm bằng sứ chất lượng cao."
+        },
+        {
+          "meaning_vi": "bồn tắm",
+          "example_en": "She sat in the bath and read a book.",
+          "example_vi": "Cô ấy ngồi trong bồn tắm và đọc sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang danh từ, chọn nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "bath",
+      "normalized_word": "bath",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I usually take a bath before going to bed.",
+      "example_vi_clean": "Tôi thường tắm trước khi đi ngủ."
+    },
+    {
+      "id": 24057,
+      "quiz_meaning_vi": "phòng tắm",
+      "meaning_vi_clean": "phòng tắm; nhà vệ sinh",
+      "examples_clean": [
+        {
+          "meaning_vi": "phòng tắm",
+          "example_en": "The bathroom is located at the end of the hall.",
+          "example_vi": "Phòng tắm nằm ở cuối hành lang."
+        },
+        {
+          "meaning_vi": "phòng tắm",
+          "example_en": "She is cleaning the bathroom right now.",
+          "example_vi": "Cô ấy đang dọn dẹp phòng tắm ngay bây giờ."
+        },
+        {
+          "meaning_vi": "phòng tắm",
+          "example_en": "Our house has two bedrooms and one bathroom.",
+          "example_vi": "Nhà chúng tôi có hai phòng ngủ và một phòng tắm."
+        },
+        {
+          "meaning_vi": "phòng tắm",
+          "example_en": "He left his towel in the bathroom.",
+          "example_vi": "Anh ấy để quên khăn tắm trong phòng tắm."
+        },
+        {
+          "meaning_vi": "phòng tắm",
+          "example_en": "The bathroom mirror is very large.",
+          "example_vi": "Gương trong phòng tắm rất lớn."
+        },
+        {
+          "meaning_vi": "nhà vệ sinh",
+          "example_en": "Excuse me, where is the bathroom?",
+          "example_vi": "Xin lỗi, nhà vệ sinh ở đâu vậy?"
+        },
+        {
+          "meaning_vi": "nhà vệ sinh",
+          "example_en": "The public bathroom was very clean.",
+          "example_vi": "Nhà vệ sinh công cộng rất sạch sẽ."
+        },
+        {
+          "meaning_vi": "nhà vệ sinh",
+          "example_en": "He went to the bathroom to wash his hands.",
+          "example_vi": "Anh ấy đi vào nhà vệ sinh để rửa tay."
+        },
+        {
+          "meaning_vi": "nhà vệ sinh",
+          "example_en": "Is there a bathroom in this restaurant?",
+          "example_vi": "Có nhà vệ sinh trong nhà hàng này không?"
+        },
+        {
+          "meaning_vi": "nhà vệ sinh",
+          "example_en": "She waited outside the bathroom for her friend.",
+          "example_vi": "Cô ấy đợi bên ngoài nhà vệ sinh cho bạn mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung POS và ví dụ.",
+      "word": "bathroom",
+      "normalized_word": "bathroom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bathroom is located at the end of the hall.",
+      "example_vi_clean": "Phòng tắm nằm ở cuối hành lang."
+    },
+    {
+      "id": 24058,
+      "quiz_meaning_vi": "là",
+      "meaning_vi_clean": "là; thì; ở",
+      "examples_clean": [
+        {
+          "meaning_vi": "là",
+          "example_en": "She is a teacher.",
+          "example_vi": "Cô ấy là một giáo viên."
+        },
+        {
+          "meaning_vi": "là",
+          "example_en": "They are my best friends.",
+          "example_vi": "Họ là những người bạn thân nhất của tôi."
+        },
+        {
+          "meaning_vi": "là",
+          "example_en": "This is my favorite book.",
+          "example_vi": "Đây là cuốn sách yêu thích của tôi."
+        },
+        {
+          "meaning_vi": "là",
+          "example_en": "It was a beautiful day yesterday.",
+          "example_vi": "Hôm qua là một ngày đẹp trời."
+        },
+        {
+          "meaning_vi": "thì",
+          "example_en": "The soup is very hot.",
+          "example_vi": "Món súp thì rất nóng."
+        },
+        {
+          "meaning_vi": "thì",
+          "example_en": "The flowers are beautiful.",
+          "example_vi": "Những bông hoa thì rất đẹp."
+        },
+        {
+          "meaning_vi": "thì",
+          "example_en": "The weather was cold last night.",
+          "example_vi": "Thời tiết thì lạnh vào tối qua."
+        },
+        {
+          "meaning_vi": "ở",
+          "example_en": "He is at home right now.",
+          "example_vi": "Anh ấy đang ở nhà ngay bây giờ."
+        },
+        {
+          "meaning_vi": "ở",
+          "example_en": "They were at the park this morning.",
+          "example_vi": "Họ đã ở công viên sáng nay."
+        },
+        {
+          "meaning_vi": "ở",
+          "example_en": "The keys are on the table.",
+          "example_vi": "Chìa khóa đang ở trên bàn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa theo quy tắc cho be-verb, bổ sung ví dụ.",
+      "word": "be",
+      "normalized_word": "be",
+      "cefr_level": "A1",
+      "pos": "be-verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She is a teacher.",
+      "example_vi_clean": "Cô ấy là một giáo viên."
+    },
+    {
+      "id": 24059,
+      "quiz_meaning_vi": "bãi biển",
+      "meaning_vi_clean": "bãi biển",
+      "examples_clean": [
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "We spent the whole day at the beach.",
+          "example_vi": "Chúng tôi đã dành cả ngày ở bãi biển."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "The beach is very crowded in summer.",
+          "example_vi": "Bãi biển rất đông đúc vào mùa hè."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "She likes walking along the beach.",
+          "example_vi": "Cô ấy thích đi dạo dọc theo bãi biển."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "They built a sandcastle on the beach.",
+          "example_vi": "Họ đã xây một lâu đài cát trên bãi biển."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "The beach has white sand and clear water.",
+          "example_vi": "Bãi biển có cát trắng và nước trong xanh."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "We watched the sunset from the beach.",
+          "example_vi": "Chúng tôi ngắm hoàng hôn từ bãi biển."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "He found a beautiful shell on the beach.",
+          "example_vi": "Anh ấy tìm thấy một vỏ ốc đẹp trên bãi biển."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "The beach is a great place for swimming.",
+          "example_vi": "Bãi biển là một nơi tuyệt vời để bơi lội."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "They played volleyball on the beach.",
+          "example_vi": "Họ đã chơi bóng chuyền trên bãi biển."
+        },
+        {
+          "meaning_vi": "bãi biển",
+          "example_en": "The beach was quiet early in the morning.",
+          "example_vi": "Bãi biển rất yên tĩnh vào sáng sớm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, chọn nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "beach",
+      "normalized_word": "beach",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We spent the whole day at the beach.",
+      "example_vi_clean": "Chúng tôi đã dành cả ngày ở bãi biển."
+    },
+    {
+      "id": 24060,
+      "quiz_meaning_vi": "đậu",
+      "meaning_vi_clean": "đậu",
+      "examples_clean": [
+        {
+          "meaning_vi": "đậu",
+          "example_en": "She cooked a delicious soup with green beans.",
+          "example_vi": "Cô ấy đã nấu một món súp ngon với đậu xanh."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "He likes to eat beans for breakfast.",
+          "example_vi": "Anh ấy thích ăn đậu vào bữa sáng."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "The farmer grows many types of beans.",
+          "example_vi": "Người nông dân trồng nhiều loại đậu."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "Add some beans to the salad.",
+          "example_vi": "Thêm một ít đậu vào món salad."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "Coffee beans are roasted before being ground.",
+          "example_vi": "Hạt cà phê được rang trước khi xay."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "She bought a bag of dried beans.",
+          "example_vi": "Cô ấy đã mua một túi đậu khô."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "Beans are a good source of protein.",
+          "example_vi": "Đậu là một nguồn cung cấp protein tốt."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "He planted some beans in the garden.",
+          "example_vi": "Anh ấy đã trồng một ít đậu trong vườn."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "The recipe calls for kidney beans.",
+          "example_vi": "Công thức này cần đậu đỏ."
+        },
+        {
+          "meaning_vi": "đậu",
+          "example_en": "They had beans and rice for dinner.",
+          "example_vi": "Họ đã ăn đậu và cơm cho bữa tối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, loại bỏ các nghĩa lóng không cần thiết, bổ sung ví dụ.",
+      "word": "bean",
+      "normalized_word": "bean",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She cooked a delicious soup with green beans.",
+      "example_vi_clean": "Cô ấy đã nấu một món súp ngon với đậu xanh."
+    }
+  ]
+}

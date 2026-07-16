@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-042",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24411,
+      "word": "horse",
+      "normalized_word": "horse",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/hɔ:s/",
+      "primary_meaning_vi": "ngựa",
+      "meaning_vi": "ngựa; kỵ binh; ngựa gỗ ((cũng) vaulting horse); giá (có chân để phơi quần áo...); quỷ đầu ngựa đuôi cá; cá ngựa; con moóc; dây thừng, dây chão; khối đá nằm ngang (trong mạch mỏ); (như) horse-power; ,  (từ lóng) bài dịch để quay cóp (của học sinh); đánh cá con ngựa thua; ủng hộ phe thua; con ngựa ít người biết đến trong cuộc đua; ,  (từ lóng) ứng cử viên ít người biết đến trong cuộc bầu cử; ăn (làm) khoẻ; flog; ,  (từ lóng) kìm sự nóng nảy; vênh váo, làm bộ làm tịch, lên mặt ta đây; cart; thay ngựa giữa dòng; đó là một vấn đề hoàn toàn khác; cưỡi ngựa, đi ngựa; động đực (ngựa cái); ,  (từ lóng) đùa nhả ((cũng) to horse around); cấp ngựa cho (ai); đóng ngựa vào (xe...); cõng, cho cưỡi trên lưng; đặt (ai) lên lưng (người nào hoặc ngựa gỗ) để đánh đòn; ,  (từ lóng) đùa nhả (ai)",
+      "example_en": "Alright, mate, got any horse?",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24412,
+      "word": "hospital",
+      "normalized_word": "hospital",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hɔspitl/",
+      "primary_meaning_vi": "bệnh viện",
+      "meaning_vi": "bệnh viện, nhà thương; tổ chức từ thiện, tổ chức cứu tế (chỉ dùng với danh từ riêng); trường Crai-xơ Hốt-xpi-tơn (tên một trường ở Luân-ddôn); nhà tế bần",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24413,
+      "word": "hot",
+      "normalized_word": "hot",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/hɔt/",
+      "primary_meaning_vi": "nóng",
+      "meaning_vi": "nóng, nóng bức; cay nồng, cay bỏng (ớt, tiêu...); nồng nặc, còn ngửi thấy rõ (hơi thú săn); nóng nảy; sôi nổi, hăng hái; gay gắt, kịch liệt; nóng hổi, sốt dẻo (tin tức); mới phát hành giấy bạc; giật gân; được mọi người hy vọng, thắng hơn cả (vận động viên chạy...); dễ nhận ra và khó sử dụng (đồ tư trang lấy cắp, giấy bạc...); thế hiệu cao; ,  (vật lý) phóng xạ; dâm đãng, dê (người); vừa mới kiếm được một cách bất chính; vừa mới ăn cắp được; bị công an truy nã; không an toàn cho kẻ trốn tránh; ăn nóng (thức ăn); sôi nổi, kịch liệt; gây khó khăn rắc rối làm cho ai khó chịu phải bỏ chỗ nào mà đi; nóng; nóng nảy, giận dữ; sôi nổi; kịch liệt; hay dao động, ngả nghiêng, hay thay đổi ý kiến; give; đun nóng, hâm",
+      "example_en": "He forgot that the frying pan was hot and burned his hand.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It is hotter in summer than in winter.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Aren't you hot with that thick coat on?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Be careful, he has a hot temper and may take it out on you.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24414,
+      "word": "hotel",
+      "normalized_word": "hotel",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/hou'tel/",
+      "primary_meaning_vi": "khách sạn",
+      "meaning_vi": "khách sạn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24415,
+      "word": "hour",
+      "normalized_word": "hour",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'auə/",
+      "primary_meaning_vi": "giờ",
+      "meaning_vi": "giờ, tiếng (đồng hồ); giờ phút, lúc; số nhiều) giờ (làm việc gì theo quy định); giờ cầu kinh (bảy lần trong một ngày); kinh tụng hằng ngày; sách tụng kinh hằng ngày; elevent; vào lúc may mắn; vào lúc rủi ro, vào lúc gặp vận đen; đi ngủ sớm dậy sớm; thức khuya dậy muộn; dậy ngủ đúng giờ giấc; vấn đề nóng hổi lúc này, vấn đề nóng hổi lúc đó; vấn đề thời sự nóng hổi; cho đến tận lúc gà gáy sáng",
+      "example_en": "I spent an hour at lunch.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The hour grows late and I must go home.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This place is an hour away from where I live.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24416,
+      "word": "house",
+      "normalized_word": "house",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/haus/",
+      "primary_meaning_vi": "nhà ở",
+      "meaning_vi": "nhà ở, căn nhà, toà nhà; nhà, chuồng; quán trọ, quán rượu, tiệm (rượu...); viện (trong quốc hội); rạp hát, nhà hát, người xem, khán giả; buổi biểu diễn (ở nhà hát; đoàn thể tôn giáo; trụ sở của đoàn thể tôn giáo; tu viện; hãng buôn; (thông tục) thị trường chứng khoán (Luân-ddôn); nhà tế bần; nhà ký túc; toàn thể học sinh trong nhà ký túc; gia đình, dòng họ; triều đại; ,  (từ lóng) xổ số nội bộ; nuôi ở trong nhà, (ở) nhà (động vật); bị đuổi ra vỉa hè sống lang thang không cửa không nhà; bring; quét tước thu dọn nhà cửa; giũ sạch những điều khó chịu; chầu rượu do chủ quán thết; quản lý việc nhà, tề gia nội trợ; keep; phải ở nhà không bước chân ra cửa; trò chơi xếp nhà (của trẻ con); kế hoạch bấp bênh; fame; rất nhanh, mạnh mẽ; thu dọn nhà cửa; thu xếp công việc đâu vào đó; đón tiếp (ai) ở nhà; cho ở, cho trọ, chưa (ai...) trong nhà; cất vào kho; lùa (súc vật) vào chuồng; cung cấp nhà ở cho; đặt (súng đại bác...) vào vị trí chắc chắn; hạ (cột buồm); lắp vào ổ mộng (đồ mộc); ở, trú",
+      "example_en": "This is my house and my family's ancestral home.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "On arriving at the zoo, we immediately headed for the monkey house.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After her swan-song, there wasn't a dry eye in the house.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The petition was so ridiculous that the house rejected it after minimal debate.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24417,
+      "word": "how",
+      "normalized_word": "how",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/hau/",
+      "primary_meaning_vi": "thế nào",
+      "meaning_vi": "thế nào, như thế nào; sao, ra sao, làm sao; bao nhiêu; giá bao nhiêu; làm sao, biết bao, xiếc bao, biết bao nhiêu, sao mà... đến thế; rằng, là; như, theo cái cách; ,  (từ lóng), ((thường)(mỉa mai)) sao, mà có hơn thế nhiều nữa chứ!; here; anh có khoẻ không (câu hỏi thăm khi gặp nhau); quái quỷ thế nào mà..., làm thế quái nào mà...; sao mà lạ thế?, sao mà lại kỳ quái thế?; cái quái gì?, cái đếch gì?; cách làm, phương pháp làm",
+      "example_en": "I am not interested in the why, but in the how.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "How often do you practice?",
+          "example_vi": null
+        },
+        {
+          "example_en": "How do you solve this puzzle?",
+          "example_vi": null
+        },
+        {
+          "example_en": "How are you?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24418,
+      "word": "hungry",
+      "normalized_word": "hungry",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'hʌɳgri/",
+      "primary_meaning_vi": "đói",
+      "meaning_vi": "đói, cảm thấy đói, ra vẻ đói ăn; làm cho thấy đói, gợi thèm (ăn); khao khát, thèm khát, ham muốn; xấu, khô cằn",
+      "example_en": "My kids go to bed hungry every night because I haven't got any money.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a hungry soil",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24419,
+      "word": "hurry",
+      "normalized_word": "hurry",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'hʌri/",
+      "primary_meaning_vi": "sự vội vàng",
+      "meaning_vi": "sự vội vàng, sự hấp tấp, sự hối hả, sự gấp rút; sự sốt ruột (muốn làm vội việc gì, mong có cái gì ngay...); vội vàng, hối hả, gấp rút; sốt ruột; dễ dàng; vui lòng, sãn lòng; thúc giục, giục làm gấp; bắt làm gấp; làm gấp, làm mau, làm vội vàng, xúc tiến nhanh (một công việc gì...); + away,  along,  out,  into...) mang gấp đi, kéo vội đi, đưa vội đi, đẩy vội; hành động vội vàng, hành động hấp tấp, làm gấp; đi gấp, đi vội vàng; đi vội vàng, hấp tấp ra đi; làm vội làm vàng cho xong việc (việc gì); làm gấp, tiến hành gấp rút",
+      "example_en": "Why are you in such a big hurry?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There is no hurry on that paperwork.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He's hurrying because he's late.",
+          "example_vi": null
+        },
+        {
+          "example_en": "If you don't hurry (up) you won't finish on time.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24420,
+      "word": "husband",
+      "normalized_word": "husband",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'hʌzbənd/",
+      "primary_meaning_vi": "người chồng",
+      "meaning_vi": "người chồng; người quản lý, người trông nom (việc chi tiêu...); người làm ruộng; tiết kiệm, dành dụm; khéo sử dụng; , (đùa cợt) gả chồng; lấy, cưới (vợ); cày cấy (ruộng đất)",
+      "example_en": "You should start dating so you can find a suitable husband.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "While reading her book, Sally leaned back against her husband, wishing it were the human kind.",
+          "example_vi": null
+        },
+        {
+          "example_en": "For my means, I'll husband them so well, / They shall go far. — Shakespeare.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

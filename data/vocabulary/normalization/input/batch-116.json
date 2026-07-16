@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-116",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25151,
+      "word": "inspiration",
+      "normalized_word": "inspiration",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,inspə'reiʃn/",
+      "primary_meaning_vi": "sự hít vào",
+      "meaning_vi": "sự hít vào, sự thở vào; sự truyền cảm; sự cảm hứng; cảm nghĩ, ý nghĩ hay chợt có; người truyền cảm hứng, vật truyền cảm hứng; linh cảm",
+      "example_en": "She was waiting for inspiration to write a book.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The trip was an inspiration to her for writing a book.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25152,
+      "word": "instant",
+      "normalized_word": "instant",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/'instənt/",
+      "primary_meaning_vi": "lúc",
+      "meaning_vi": "lúc, chốc lát; ,  (thông tục) đồ ăn uống dùng ngay được; xảy ra ngay lập tức, sắp xảy ra; khẩn trương, cấp bách, gấp; ngay tức khắc, lập tức; ăn ngay được, uống ngay được; ,  inst (của) tháng này; lập tức",
+      "example_en": "She paused for only an instant, which was just enough time for John to change the subject.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The instant the alarm went off, he fled the building.",
+          "example_vi": null
+        },
+        {
+          "example_en": "instant coffee; instant noodles; instant mashed potato; instant photo",
+          "example_vi": null
+        },
+        {
+          "example_en": "I refer to your letter of the 16th instant in regard to traffic disruption.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25153,
+      "word": "instead",
+      "normalized_word": "instead",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/in'sted/",
+      "primary_meaning_vi": "để thay vào",
+      "meaning_vi": "để thay vào, để thế cho; đáng lẽ là",
+      "example_en": "I was going to go shopping, but I went dancing instead.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25154,
+      "word": "instrument",
+      "normalized_word": "instrument",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'instrumənt/",
+      "primary_meaning_vi": "dụng cụ ((nghĩa đen) & (nghĩa bóng))",
+      "meaning_vi": "dụng cụ ((nghĩa đen) & (nghĩa bóng)); nhạc khí; công cụ, phương tiện; văn kiện; cung cấp dụng cụ máy móc cho; phối dàn nhạc",
+      "example_en": "The violinist was a master of her instrument.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The instrument detected an increase in radioactivity.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The dentist set down his tray of instruments.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A bond indenture is the instrument that gives a bond its value.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25155,
+      "word": "intelligence",
+      "normalized_word": "intelligence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'telidʤəns/",
+      "primary_meaning_vi": "sự hiểu biết",
+      "meaning_vi": "sự hiểu biết; khả năng hiểu biết, trí thông minh; trí óc; tin tức, tình báo; sự thu thập tin tức, sự làm tình báo, sự trao đổi tình báo; sự đánh giá tình hình trên cơ sở tình báo; cơ quan tình báo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25156,
+      "word": "intelligent",
+      "normalized_word": "intelligent",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/in'telidʤənt/",
+      "primary_meaning_vi": "thông minh",
+      "meaning_vi": "thông minh, sáng dạ; nhanh trí; biết",
+      "example_en": "The engineer had a very intelligent design proposal for the new car.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My girlfriend and I had an intelligent conversation.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The hunt for intelligent life.",
+          "example_vi": null
+        },
+        {
+          "example_en": "an intelligent network or keyboard",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25157,
+      "word": "interest",
+      "normalized_word": "interest",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'intrist/",
+      "primary_meaning_vi": "sự quan tâm",
+      "meaning_vi": "sự quan tâm, sự chú ý; điều quan tâm, điều chú ý; sự thích thú; điều thích thú; tầm quan trọng; quyền lợi; lợi ích, ích kỷ; lợi tức, tiền lãi; tập thể cùng chung một quyền lợi; dùng lợi ích cá nhân làm áp lực với ai; làm cho quan tâm, làm cho chú ý, làm cho thích thú; liên quan đến, dính dáng đến; làm tham gia",
+      "example_en": "Our bank offers borrowers an annual interest of 5%.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He has a lot of interest in vintage cars.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have business interests in South Africa.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Lexicography is one of my interests.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25158,
+      "word": "international",
+      "normalized_word": "international",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/,intə'næʃənl/",
+      "primary_meaning_vi": "quốc tế",
+      "meaning_vi": "quốc tế; tổ chức quốc tế cộng sản; vận động viên trình độ quốc tế; đại biểu quốc tế cộng sản; cuộc thi đấu quốc tế; Quốc tế cộng sản",
+      "example_en": "The United team includes five England internationals.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an international discussion",
+          "example_vi": null
+        },
+        {
+          "example_en": "an international competition",
+          "example_vi": null
+        },
+        {
+          "example_en": "an international rule",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25159,
+      "word": "invade",
+      "normalized_word": "invade",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'veid/",
+      "primary_meaning_vi": "xâm lược",
+      "meaning_vi": "xâm lược, xâm chiếm, xâm lấn; xâm phạm (quyền lợi...); tràn lan, toả khắp",
+      "example_en": "Under some circumstances police are allowed to invade a person's privacy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Argentinian troops invaded the Falkland Islands in 1982.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The picnic was invaded by ants.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The king invaded the rights of the people.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25160,
+      "word": "invent",
+      "normalized_word": "invent",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'vent/",
+      "primary_meaning_vi": "phát minh",
+      "meaning_vi": "phát minh, sáng chế; hư cấu; sáng tác (truyện); bịa đặt (chuyện...)",
+      "example_en": "After weeks of hard work, I invented a new way to alphabetize matchbooks.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I knew I had to invent an excuse, and quickly.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

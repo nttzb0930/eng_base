@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25731,
+      "quiz_meaning_vi": "gần",
+      "meaning_vi_clean": "gần; gần gũi; chặt chẽ; kỹ lưỡng",
+      "examples_clean": [
+        {
+          "meaning_vi": "gần",
+          "example_en": "The two houses are very closely situated.",
+          "example_vi": "Hai ngôi nhà nằm rất gần nhau."
+        },
+        {
+          "meaning_vi": "gần",
+          "example_en": "He stood closely behind me in the queue.",
+          "example_vi": "Anh ấy đứng gần ngay sau tôi trong hàng."
+        },
+        {
+          "meaning_vi": "gần",
+          "example_en": "The finish line is closely approaching.",
+          "example_vi": "Vạch đích đang đến rất gần."
+        },
+        {
+          "meaning_vi": "gần",
+          "example_en": "We are closely linked to our neighbors.",
+          "example_vi": "Chúng tôi ở rất gần với hàng xóm của mình."
+        },
+        {
+          "meaning_vi": "gần gũi",
+          "example_en": "Finnish and Estonian are closely related languages.",
+          "example_vi": "Tiếng Phần Lan và tiếng Estonia là những ngôn ngữ gần gũi."
+        },
+        {
+          "meaning_vi": "gần gũi",
+          "example_en": "They have always been closely connected as a family.",
+          "example_vi": "Họ luôn luôn gần gũi gắn kết như một gia đình."
+        },
+        {
+          "meaning_vi": "chặt chẽ",
+          "example_en": "The two companies are working closely together.",
+          "example_vi": "Hai công ty đang làm việc chặt chẽ với nhau."
+        },
+        {
+          "meaning_vi": "chặt chẽ",
+          "example_en": "The project is closely monitored by the manager.",
+          "example_vi": "Dự án được quản lý giám sát chặt chẽ."
+        },
+        {
+          "meaning_vi": "kỹ lưỡng",
+          "example_en": "You should look closely at the contract before signing.",
+          "example_vi": "Bạn nên xem xét kỹ lưỡng hợp đồng trước khi ký."
+        },
+        {
+          "meaning_vi": "kỹ lưỡng",
+          "example_en": "He examined the evidence closely for any clues.",
+          "example_vi": "Anh ấy đã kiểm tra bằng chứng kỹ lưỡng để tìm manh mối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa phụ phù hợp, tạo 10 ví dụ mới.",
+      "word": "closely",
+      "normalized_word": "closely",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The two houses are very closely situated.",
+      "example_vi_clean": "Hai ngôi nhà nằm rất gần nhau."
+    },
+    {
+      "id": 25732,
+      "quiz_meaning_vi": "than đá",
+      "meaning_vi_clean": "than đá; viên than",
+      "examples_clean": [
+        {
+          "meaning_vi": "than đá",
+          "example_en": "Put some coal on the fire.",
+          "example_vi": "Hãy cho thêm than đá vào bếp lửa."
+        },
+        {
+          "meaning_vi": "than đá",
+          "example_en": "The factory uses coal to generate electricity.",
+          "example_vi": "Nhà máy sử dụng than đá để sản xuất điện."
+        },
+        {
+          "meaning_vi": "than đá",
+          "example_en": "Coal is a major source of energy.",
+          "example_vi": "Than đá là một nguồn năng lượng chính."
+        },
+        {
+          "meaning_vi": "than đá",
+          "example_en": "They are mining coal in the mountains.",
+          "example_vi": "Họ đang khai thác than đá trên núi."
+        },
+        {
+          "meaning_vi": "viên than",
+          "example_en": "The fire was reduced to glowing coals.",
+          "example_vi": "Ngọn lửa chỉ còn lại những viên than hồng."
+        },
+        {
+          "meaning_vi": "viên than",
+          "example_en": "She poked the coals to make them burn brighter.",
+          "example_vi": "Cô ấy khều những viên than để chúng cháy sáng hơn."
+        },
+        {
+          "meaning_vi": "viên than",
+          "example_en": "A few hot coals fell out of the stove.",
+          "example_vi": "Một vài viên than nóng rơi ra khỏi lò sưởi."
+        },
+        {
+          "meaning_vi": "viên than",
+          "example_en": "The coals were still warm the next morning.",
+          "example_vi": "Những viên than vẫn còn ấm vào sáng hôm sau."
+        },
+        {
+          "meaning_vi": "viên than",
+          "example_en": "He carefully moved the coals with a shovel.",
+          "example_vi": "Anh ấy cẩn thận di chuyển những viên than bằng cái xẻng."
+        },
+        {
+          "meaning_vi": "viên than",
+          "example_en": "The smell of burning coals filled the room.",
+          "example_vi": "Mùi than cháy tràn ngập căn phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ, lọc nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "coal",
+      "normalized_word": "coal",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Put some coal on the fire.",
+      "example_vi_clean": "Hãy cho thêm than đá vào bếp lửa."
+    },
+    {
+      "id": 25733,
+      "quiz_meaning_vi": "bờ biển",
+      "meaning_vi_clean": "bờ biển; thuộc miền ven biển",
+      "examples_clean": [
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "The hotel is located on the beautiful coastal area.",
+          "example_vi": "Khách sạn nằm ở khu vực bờ biển xinh đẹp."
+        },
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "We enjoyed a walk along the coastal path.",
+          "example_vi": "Chúng tôi thích thú đi dạo dọc theo con đường bờ biển."
+        },
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "The coastal region is prone to storms.",
+          "example_vi": "Khu vực bờ biển này dễ bị ảnh hưởng bởi bão."
+        },
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "Many birds migrate to the coastal wetlands.",
+          "example_vi": "Nhiều loài chim di cư đến các vùng đất ngập nước ven bờ biển."
+        },
+        {
+          "meaning_vi": "thuộc miền ven biển",
+          "example_en": "Coastal towns often rely on fishing.",
+          "example_vi": "Các thị trấn thuộc miền ven biển thường dựa vào nghề đánh cá."
+        },
+        {
+          "meaning_vi": "thuộc miền ven biển",
+          "example_en": "The coastal climate is quite mild in winter.",
+          "example_vi": "Khí hậu thuộc miền ven biển khá ôn hòa vào mùa đông."
+        },
+        {
+          "meaning_vi": "thuộc miền ven biển",
+          "example_en": "They are studying the coastal erosion process.",
+          "example_vi": "Họ đang nghiên cứu quá trình xói mòn thuộc miền ven biển."
+        },
+        {
+          "meaning_vi": "thuộc miền ven biển",
+          "example_en": "Coastal waters are rich in marine life.",
+          "example_vi": "Vùng nước thuộc miền ven biển rất giàu sinh vật biển."
+        },
+        {
+          "meaning_vi": "thuộc miền ven biển",
+          "example_en": "The coastal road offers stunning views.",
+          "example_vi": "Con đường thuộc miền ven biển mang lại tầm nhìn tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "thuộc miền ven biển",
+          "example_en": "Coastal defense is important for the country.",
+          "example_vi": "Phòng thủ thuộc miền ven biển rất quan trọng đối với đất nước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ, chuẩn hóa nghĩa.",
+      "word": "coastal",
+      "normalized_word": "coastal",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The hotel is located on the beautiful coastal area.",
+      "example_vi_clean": "Khách sạn nằm ở khu vực bờ biển xinh đẹp."
+    },
+    {
+      "id": 25734,
+      "quiz_meaning_vi": "cá tuyết",
+      "meaning_vi_clean": "cá tuyết",
+      "examples_clean": [
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "We had fresh cod for dinner last night.",
+          "example_vi": "Chúng tôi đã ăn cá tuyết tươi cho bữa tối hôm qua."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "Cod is a popular fish in many countries.",
+          "example_vi": "Cá tuyết là một loại cá phổ biến ở nhiều quốc gia."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "The fisherman caught a large cod.",
+          "example_vi": "Người ngư dân đã bắt được một con cá tuyết lớn."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "She ordered the fried cod at the restaurant.",
+          "example_vi": "Cô ấy đã gọi món cá tuyết chiên tại nhà hàng."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "Cod populations have declined in recent years.",
+          "example_vi": "Số lượng cá tuyết đã giảm trong những năm gần đây."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "They serve cod with chips in this shop.",
+          "example_vi": "Họ phục vụ cá tuyết với khoai tây chiên ở cửa hàng này."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "The recipe calls for salted cod.",
+          "example_vi": "Công thức nấu ăn yêu cầu cá tuyết muối."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "He went fishing for cod in the North Sea.",
+          "example_vi": "Anh ấy đã đi đánh bắt cá tuyết ở Biển Bắc."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "The cod is a cold-water fish.",
+          "example_vi": "Cá tuyết là một loài cá nước lạnh."
+        },
+        {
+          "meaning_vi": "cá tuyết",
+          "example_en": "We bought some frozen cod from the market.",
+          "example_vi": "Chúng tôi đã mua một ít cá tuyết đông lạnh từ chợ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ nghĩa lóng không phù hợp, giữ nghĩa danh từ chính, bổ sung ví dụ.",
+      "word": "cod",
+      "normalized_word": "cod",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We had fresh cod for dinner last night.",
+      "example_vi_clean": "Chúng tôi đã ăn cá tuyết tươi cho bữa tối hôm qua."
+    },
+    {
+      "id": 25735,
+      "quiz_meaning_vi": "áo quan",
+      "meaning_vi_clean": "áo quan",
+      "examples_clean": [
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "The coffin was carried to the cemetery.",
+          "example_vi": "Chiếc áo quan được đưa đến nghĩa trang."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "They lowered the coffin into the grave.",
+          "example_vi": "Họ hạ chiếc áo quan xuống huyệt mộ."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "The coffin was made of polished wood.",
+          "example_vi": "Chiếc áo quan được làm bằng gỗ đánh bóng."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "Flowers were placed on top of the coffin.",
+          "example_vi": "Những bông hoa được đặt trên nắp áo quan."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "The family gathered around the coffin.",
+          "example_vi": "Gia đình tập trung xung quanh chiếc áo quan."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "He helped carry the heavy coffin.",
+          "example_vi": "Anh ấy đã giúp khiêng chiếc áo quan nặng nề."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "The coffin was draped in a flag.",
+          "example_vi": "Chiếc áo quan được phủ một lá cờ."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "They opened the coffin for the final viewing.",
+          "example_vi": "Họ mở chiếc áo quan để mọi người nhìn lần cuối."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "The coffin was transported by a hearse.",
+          "example_vi": "Chiếc áo quan được vận chuyển bằng xe tang."
+        },
+        {
+          "meaning_vi": "áo quan",
+          "example_en": "She stood silently beside the coffin.",
+          "example_vi": "Cô ấy đứng lặng lẽ bên cạnh chiếc áo quan."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lọc nghĩa, bổ sung ví dụ.",
+      "word": "coffin",
+      "normalized_word": "coffin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The coffin was carried to the cemetery.",
+      "example_vi_clean": "Chiếc áo quan được đưa đến nghĩa trang."
+    },
+    {
+      "id": 25736,
+      "quiz_meaning_vi": "đổ",
+      "meaning_vi_clean": "đổ; suy sụp; gục",
+      "examples_clean": [
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The old building began to collapse during the storm.",
+          "example_vi": "Tòa nhà cũ bắt đầu đổ trong cơn bão."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The bridge collapsed under the weight of the trucks.",
+          "example_vi": "Cây cầu đã đổ dưới sức nặng của những chiếc xe tải."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The roof collapsed after the heavy snowfall.",
+          "example_vi": "Mái nhà đã đổ sau trận tuyết rơi dày."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The wall collapsed because of the earthquake.",
+          "example_vi": "Bức tường đã đổ vì trận động đất."
+        },
+        {
+          "meaning_vi": "suy sụp",
+          "example_en": "The economy began to collapse after the crisis.",
+          "example_vi": "Nền kinh tế bắt đầu suy sụp sau cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "suy sụp",
+          "example_en": "Their plans collapsed due to lack of funding.",
+          "example_vi": "Kế hoạch của họ đã suy sụp do thiếu kinh phí."
+        },
+        {
+          "meaning_vi": "suy sụp",
+          "example_en": "The peace talks collapsed yesterday.",
+          "example_vi": "Các cuộc đàm phán hòa bình đã suy sụp vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "gục",
+          "example_en": "The exhausted runner collapsed at the finish line.",
+          "example_vi": "Người chạy bộ kiệt sức đã gục tại vạch đích."
+        },
+        {
+          "meaning_vi": "gục",
+          "example_en": "He collapsed from the intense heat.",
+          "example_vi": "Anh ấy đã gục vì cái nóng gay gắt."
+        },
+        {
+          "meaning_vi": "gục",
+          "example_en": "She collapsed in tears after hearing the news.",
+          "example_vi": "Cô ấy đã gục khóc sau khi nghe tin."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lọc nghĩa, bổ sung ví dụ.",
+      "word": "collapse",
+      "normalized_word": "collapse",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The old building began to collapse during the storm.",
+      "example_vi_clean": "Tòa nhà cũ bắt đầu đổ trong cơn bão."
+    },
+    {
+      "id": 25737,
+      "quiz_meaning_vi": "cổ áo",
+      "meaning_vi_clean": "cổ áo; vòng cổ; tóm",
+      "examples_clean": [
+        {
+          "meaning_vi": "cổ áo",
+          "example_en": "He adjusted his collar before the meeting.",
+          "example_vi": "Anh ấy chỉnh lại cổ áo trước cuộc họp."
+        },
+        {
+          "meaning_vi": "cổ áo",
+          "example_en": "The shirt has a stiff collar.",
+          "example_vi": "Chiếc áo sơ mi có phần cổ áo cứng."
+        },
+        {
+          "meaning_vi": "cổ áo",
+          "example_en": "She turned up her collar against the wind.",
+          "example_vi": "Cô ấy dựng cổ áo lên để tránh gió."
+        },
+        {
+          "meaning_vi": "cổ áo",
+          "example_en": "There was a stain on his collar.",
+          "example_vi": "Có một vết bẩn trên cổ áo của anh ấy."
+        },
+        {
+          "meaning_vi": "vòng cổ",
+          "example_en": "The dog wears a leather collar.",
+          "example_vi": "Con chó đeo một chiếc vòng cổ bằng da."
+        },
+        {
+          "meaning_vi": "vòng cổ",
+          "example_en": "The cat's collar has a small bell.",
+          "example_vi": "Vòng cổ của con mèo có một cái chuông nhỏ."
+        },
+        {
+          "meaning_vi": "vòng cổ",
+          "example_en": "Make sure the collar is not too tight.",
+          "example_vi": "Hãy chắc chắn rằng vòng cổ không quá chật."
+        },
+        {
+          "meaning_vi": "tóm",
+          "example_en": "The police managed to collar the thief.",
+          "example_vi": "Cảnh sát đã tóm được tên trộm."
+        },
+        {
+          "meaning_vi": "tóm",
+          "example_en": "I managed to collar him before he left.",
+          "example_vi": "Tôi đã tóm được anh ấy trước khi anh ấy rời đi."
+        },
+        {
+          "meaning_vi": "tóm",
+          "example_en": "He was collared by the security guard.",
+          "example_vi": "Anh ta đã bị nhân viên bảo vệ tóm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lọc nghĩa, bổ sung ví dụ.",
+      "word": "collar",
+      "normalized_word": "collar",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He adjusted his collar before the meeting.",
+      "example_vi_clean": "Anh ấy chỉnh lại cổ áo trước cuộc họp."
+    },
+    {
+      "id": 25738,
+      "quiz_meaning_vi": "người chuyên giữ một mục báo",
+      "meaning_vi_clean": "người chuyên giữ một mục báo; nhà bình luận",
+      "examples_clean": [
+        {
+          "meaning_vi": "người chuyên giữ một mục báo",
+          "example_en": "The columnist writes about local politics.",
+          "example_vi": "Người chuyên giữ một mục báo này viết về chính trị địa phương."
+        },
+        {
+          "meaning_vi": "người chuyên giữ một mục báo",
+          "example_en": "She is a famous columnist for the daily paper.",
+          "example_vi": "Cô ấy là một người chuyên giữ một mục báo nổi tiếng cho tờ nhật báo."
+        },
+        {
+          "meaning_vi": "người chuyên giữ một mục báo",
+          "example_en": "The columnist shared her personal views.",
+          "example_vi": "Người chuyên giữ một mục báo đã chia sẻ quan điểm cá nhân của cô ấy."
+        },
+        {
+          "meaning_vi": "người chuyên giữ một mục báo",
+          "example_en": "He has been a columnist for ten years.",
+          "example_vi": "Anh ấy đã là một người chuyên giữ một mục báo trong mười năm."
+        },
+        {
+          "meaning_vi": "người chuyên giữ một mục báo",
+          "example_en": "The columnist's latest article was very controversial.",
+          "example_vi": "Bài báo mới nhất của người chuyên giữ một mục báo rất gây tranh cãi."
+        },
+        {
+          "meaning_vi": "nhà bình luận",
+          "example_en": "The columnist analyzed the recent election results.",
+          "example_vi": "Nhà bình luận đã phân tích kết quả bầu cử gần đây."
+        },
+        {
+          "meaning_vi": "nhà bình luận",
+          "example_en": "As a columnist, he travels to many countries.",
+          "example_vi": "Với tư cách là một nhà bình luận, anh ấy đi đến nhiều quốc gia."
+        },
+        {
+          "meaning_vi": "nhà bình luận",
+          "example_en": "The columnist is known for his sharp wit.",
+          "example_vi": "Nhà bình luận này nổi tiếng với sự hóm hỉnh sắc sảo."
+        },
+        {
+          "meaning_vi": "nhà bình luận",
+          "example_en": "Many people read the columnist's weekly piece.",
+          "example_vi": "Nhiều người đọc bài viết hàng tuần của nhà bình luận."
+        },
+        {
+          "meaning_vi": "nhà bình luận",
+          "example_en": "The columnist interviewed the president.",
+          "example_vi": "Nhà bình luận đã phỏng vấn tổng thống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ, chuẩn hóa nghĩa.",
+      "word": "columnist",
+      "normalized_word": "columnist",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The columnist writes about local politics.",
+      "example_vi_clean": "Người chuyên giữ một mục báo này viết về chính trị địa phương."
+    },
+    {
+      "id": 25739,
+      "quiz_meaning_vi": "sự kết hợp",
+      "meaning_vi_clean": "sự kết hợp; hợp chất; sự phối hợp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "The combination of colors looks great.",
+          "example_vi": "Sự kết hợp của các màu sắc trông rất tuyệt."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "This is a perfect combination of ingredients.",
+          "example_vi": "Đây là sự kết hợp hoàn hảo của các nguyên liệu."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "The combination of hard work and luck led to success.",
+          "example_vi": "Sự kết hợp của làm việc chăm chỉ và may mắn đã dẫn đến thành công."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "What is the combination for the safe?",
+          "example_vi": "Mã số kết hợp cho chiếc két sắt là gì?"
+        },
+        {
+          "meaning_vi": "hợp chất",
+          "example_en": "Water is a chemical combination of hydrogen and oxygen.",
+          "example_vi": "Nước là một hợp chất hóa học của hydro và oxy."
+        },
+        {
+          "meaning_vi": "hợp chất",
+          "example_en": "They discovered a new chemical combination.",
+          "example_vi": "Họ đã phát hiện ra một hợp chất hóa học mới."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "The success depends on the combination of our efforts.",
+          "example_vi": "Sự thành công phụ thuộc vào sự phối hợp các nỗ lực của chúng ta."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "The team needs better combination in their play.",
+          "example_vi": "Đội bóng cần sự phối hợp tốt hơn trong lối chơi."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "A combination of factors caused the delay.",
+          "example_vi": "Sự phối hợp của nhiều yếu tố đã gây ra sự chậm trễ."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "We need a combination of skills for this task.",
+          "example_vi": "Chúng ta cần sự phối hợp các kỹ năng cho nhiệm vụ này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ, chuẩn hóa nghĩa.",
+      "word": "combination",
+      "normalized_word": "combination",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The combination of colors looks great.",
+      "example_vi_clean": "Sự kết hợp của các màu sắc trông rất tuyệt."
+    },
+    {
+      "id": 25740,
+      "quiz_meaning_vi": "kết hợp",
+      "meaning_vi_clean": "kết hợp; phối hợp; tổ hợp",
+      "examples_clean": [
+        {
+          "meaning_vi": "kết hợp",
+          "example_en": "Combine the flour and sugar in a bowl.",
+          "example_vi": "Hãy kết hợp bột mì và đường trong một cái bát."
+        },
+        {
+          "meaning_vi": "kết hợp",
+          "example_en": "They decided to combine their resources.",
+          "example_vi": "Họ quyết định kết hợp các nguồn lực của mình."
+        },
+        {
+          "meaning_vi": "kết hợp",
+          "example_en": "You can combine these two ideas.",
+          "example_vi": "Bạn có thể kết hợp hai ý tưởng này."
+        },
+        {
+          "meaning_vi": "kết hợp",
+          "example_en": "The two companies will combine next year.",
+          "example_vi": "Hai công ty sẽ kết hợp vào năm tới."
+        },
+        {
+          "meaning_vi": "phối hợp",
+          "example_en": "We need to phối hợp our efforts to finish on time.",
+          "example_vi": "Chúng ta cần phối hợp các nỗ lực để hoàn thành đúng hạn."
+        },
+        {
+          "meaning_vi": "phối hợp",
+          "example_en": "He combines music with his studies.",
+          "example_vi": "Anh ấy phối hợp âm nhạc với việc học tập."
+        },
+        {
+          "meaning_vi": "phối hợp",
+          "example_en": "The team must phối hợp better to win.",
+          "example_vi": "Đội bóng phải phối hợp tốt hơn để giành chiến thắng."
+        },
+        {
+          "meaning_vi": "tổ hợp",
+          "example_en": "They organized a new group to tổ hợp the data.",
+          "example_vi": "Họ đã tổ chức một nhóm mới để tổ hợp dữ liệu."
+        },
+        {
+          "meaning_vi": "tổ hợp",
+          "example_en": "The scientists tổ hợp different elements in the lab.",
+          "example_vi": "Các nhà khoa học tổ hợp các nguyên tố khác nhau trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "tổ hợp",
+          "example_en": "It is difficult to tổ hợp all these facts.",
+          "example_vi": "Thật khó để tổ hợp tất cả những sự kiện này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, bổ sung ví dụ.",
+      "word": "combine",
+      "normalized_word": "combine",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Combine the flour and sugar in a bowl.",
+      "example_vi_clean": "Hãy kết hợp bột mì và đường trong một cái bát."
+    }
+  ]
+}

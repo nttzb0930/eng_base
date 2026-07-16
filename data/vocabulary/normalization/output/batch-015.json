@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24141,
+      "quiz_meaning_vi": "cẩn thận",
+      "meaning_vi_clean": "cẩn thận; thận trọng; kỹ lưỡng; chu đáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "He was a slow and careful driver.",
+          "example_vi": "Anh ấy là một người lái xe chậm rãi và cẩn thận."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "Please be careful when you cross the street.",
+          "example_vi": "Hãy cẩn thận khi bạn băng qua đường."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "She is very careful with her money.",
+          "example_vi": "Cô ấy rất cẩn thận với tiền bạc của mình."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "Be careful not to drop the glass.",
+          "example_vi": "Hãy cẩn thận đừng làm rơi cái ly."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "They made a careful search of the crime scene.",
+          "example_vi": "Họ đã thực hiện một cuộc tìm kiếm thận trọng tại hiện trường vụ án."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "We need to be careful about what we say.",
+          "example_vi": "Chúng ta cần phải thận trọng về những gì mình nói."
+        },
+        {
+          "meaning_vi": "kỹ lưỡng",
+          "example_en": "The report requires a careful analysis of the data.",
+          "example_vi": "Bản báo cáo đòi hỏi một sự phân tích kỹ lưỡng về dữ liệu."
+        },
+        {
+          "meaning_vi": "kỹ lưỡng",
+          "example_en": "She gave the document a careful reading.",
+          "example_vi": "Cô ấy đã đọc tài liệu một cách kỹ lưỡng."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "He is always careful to thank everyone for their help.",
+          "example_vi": "Anh ấy luôn chu đáo trong việc cảm ơn mọi người vì sự giúp đỡ của họ."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "It was a careful plan that considered all possibilities.",
+          "example_vi": "Đó là một kế hoạch chu đáo đã xem xét mọi khả năng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa phụ và 10 ví dụ theo quy tắc.",
+      "word": "careful",
+      "normalized_word": "careful",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was a slow and careful driver.",
+      "example_vi_clean": "Anh ấy là một người lái xe chậm rãi và cẩn thận."
+    },
+    {
+      "id": 24142,
+      "quiz_meaning_vi": "cẩn thận",
+      "meaning_vi_clean": "cẩn thận; chu đáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "He carefully studied the papers, while planning his next move.",
+          "example_vi": "Anh ấy cẩn thận nghiên cứu các giấy tờ trong khi lên kế hoạch cho bước đi tiếp theo."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "Please handle these fragile items carefully.",
+          "example_vi": "Vui lòng xử lý những món đồ dễ vỡ này một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "She carefully placed the vase on the table.",
+          "example_vi": "Cô ấy cẩn thận đặt chiếc bình lên bàn."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "He carefully avoided the subject all evening.",
+          "example_vi": "Anh ấy cẩn thận tránh chủ đề đó suốt cả buổi tối."
+        },
+        {
+          "meaning_vi": "cẩn thận",
+          "example_en": "The driver carefully checked the mirrors before turning.",
+          "example_vi": "Người lái xe cẩn thận kiểm tra gương trước khi rẽ."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "As he was a politician, he discussed all subjects carefully, not offending anyone.",
+          "example_vi": "Vì là một chính trị gia, anh ấy thảo luận mọi chủ đề một cách chu đáo để không làm mất lòng ai."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "She carefully prepared the guest room for her visitors.",
+          "example_vi": "Cô ấy đã chuẩn bị phòng khách một cách chu đáo cho những vị khách của mình."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "He carefully organized his notes before the presentation.",
+          "example_vi": "Anh ấy đã sắp xếp các ghi chú của mình một cách chu đáo trước buổi thuyết trình."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "The project was carefully planned to ensure success.",
+          "example_vi": "Dự án đã được lên kế hoạch một cách chu đáo để đảm bảo thành công."
+        },
+        {
+          "meaning_vi": "chu đáo",
+          "example_en": "They carefully considered all the options before deciding.",
+          "example_vi": "Họ đã cân nhắc mọi lựa chọn một cách chu đáo trước khi quyết định."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung phonetic, nghĩa và 10 ví dụ.",
+      "word": "carefully",
+      "normalized_word": "carefully",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He carefully studied the papers, while planning his next move.",
+      "example_vi_clean": "Anh ấy cẩn thận nghiên cứu các giấy tờ trong khi lên kế hoạch cho bước đi tiếp theo."
+    },
+    {
+      "id": 24143,
+      "quiz_meaning_vi": "mang",
+      "meaning_vi_clean": "mang; vác; chở; đem theo",
+      "examples_clean": [
+        {
+          "meaning_vi": "mang",
+          "example_en": "She likes to carry a small bag when she goes out.",
+          "example_vi": "Cô ấy thích mang theo một chiếc túi nhỏ khi đi ra ngoài."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "The wind carries the scent of flowers.",
+          "example_vi": "Gió mang theo hương thơm của hoa."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "He carries a lot of responsibility in his job.",
+          "example_vi": "Anh ấy mang nhiều trách nhiệm trong công việc của mình."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "This newspaper carries the latest news.",
+          "example_vi": "Tờ báo này mang đến những tin tức mới nhất."
+        },
+        {
+          "meaning_vi": "vác",
+          "example_en": "The workers had to carry heavy boxes to the truck.",
+          "example_vi": "Những người công nhân phải vác những chiếc hộp nặng lên xe tải."
+        },
+        {
+          "meaning_vi": "vác",
+          "example_en": "He was carrying a heavy load on his back.",
+          "example_vi": "Anh ấy đang vác một vật nặng trên lưng."
+        },
+        {
+          "meaning_vi": "chở",
+          "example_en": "The ship carries goods across the ocean.",
+          "example_vi": "Con tàu chở hàng hóa băng qua đại dương."
+        },
+        {
+          "meaning_vi": "chở",
+          "example_en": "This bus carries passengers to the city center.",
+          "example_vi": "Chiếc xe buýt này chở hành khách đến trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "đem theo",
+          "example_en": "Don't forget to carry your ID card with you.",
+          "example_vi": "Đừng quên đem theo thẻ căn cước của bạn."
+        },
+        {
+          "meaning_vi": "đem theo",
+          "example_en": "I always carry an umbrella in case it rains.",
+          "example_vi": "Tôi luôn đem theo một chiếc ô phòng khi trời mưa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa chuyên ngành, cổ, lóng. Tập trung vào nghĩa phổ biến nhất.",
+      "word": "carry",
+      "normalized_word": "carry",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She likes to carry a small bag when she goes out.",
+      "example_vi_clean": "Cô ấy thích mang theo một chiếc túi nhỏ khi đi ra ngoài."
+    },
+    {
+      "id": 24144,
+      "quiz_meaning_vi": "tranh biếm họa",
+      "meaning_vi_clean": "tranh biếm họa; phim hoạt hình",
+      "examples_clean": [
+        {
+          "meaning_vi": "tranh biếm họa",
+          "example_en": "The newspaper published a funny cartoon about the politician.",
+          "example_vi": "Tờ báo đã đăng một bức tranh biếm họa hài hước về chính trị gia đó."
+        },
+        {
+          "meaning_vi": "tranh biếm họa",
+          "example_en": "He is famous for drawing political cartoons.",
+          "example_vi": "Ông ấy nổi tiếng với việc vẽ tranh biếm họa chính trị."
+        },
+        {
+          "meaning_vi": "tranh biếm họa",
+          "example_en": "The cartoon made everyone in the office laugh.",
+          "example_vi": "Bức tranh biếm họa đã làm mọi người trong văn phòng bật cười."
+        },
+        {
+          "meaning_vi": "tranh biếm họa",
+          "example_en": "She cut out the cartoon from the magazine.",
+          "example_vi": "Cô ấy đã cắt bức tranh biếm họa ra khỏi tạp chí."
+        },
+        {
+          "meaning_vi": "phim hoạt hình",
+          "example_en": "My little brother loves watching cartoons on TV.",
+          "example_vi": "Em trai tôi rất thích xem phim hoạt hình trên tivi."
+        },
+        {
+          "meaning_vi": "phim hoạt hình",
+          "example_en": "They are making a new animated cartoon for children.",
+          "example_vi": "Họ đang làm một bộ phim hoạt hình mới cho trẻ em."
+        },
+        {
+          "meaning_vi": "phim hoạt hình",
+          "example_en": "The cartoon characters are very colorful and fun.",
+          "example_vi": "Các nhân vật trong phim hoạt hình rất sặc sỡ và vui nhộn."
+        },
+        {
+          "meaning_vi": "phim hoạt hình",
+          "example_en": "We watched a classic cartoon together last night.",
+          "example_vi": "Chúng tôi đã cùng xem một bộ phim hoạt hình kinh điển tối qua."
+        },
+        {
+          "meaning_vi": "phim hoạt hình",
+          "example_en": "The cartoon has a very catchy theme song.",
+          "example_vi": "Bộ phim hoạt hình đó có một bài hát chủ đề rất bắt tai."
+        },
+        {
+          "meaning_vi": "phim hoạt hình",
+          "example_en": "She wants to be a cartoon artist when she grows up.",
+          "example_vi": "Cô bé muốn trở thành họa sĩ phim hoạt hình khi lớn lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang danh từ, bổ sung nghĩa phim hoạt hình phổ biến.",
+      "word": "cartoon",
+      "normalized_word": "cartoon",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The newspaper published a funny cartoon about the politician.",
+      "example_vi_clean": "Tờ báo đã đăng một bức tranh biếm họa hài hước về chính trị gia đó."
+    },
+    {
+      "id": 24145,
+      "quiz_meaning_vi": "trường hợp",
+      "meaning_vi_clean": "trường hợp; vụ việc; hộp",
+      "examples_clean": [
+        {
+          "meaning_vi": "trường hợp",
+          "example_en": "In this case, we should ask for professional advice.",
+          "example_vi": "Trong trường hợp này, chúng ta nên hỏi ý kiến chuyên gia."
+        },
+        {
+          "meaning_vi": "trường hợp",
+          "example_en": "There are many cases of flu this winter.",
+          "example_vi": "Có rất nhiều trường hợp bị cúm vào mùa đông này."
+        },
+        {
+          "meaning_vi": "trường hợp",
+          "example_en": "Just in case, I will bring my umbrella.",
+          "example_vi": "Phòng trường hợp cần đến, tôi sẽ mang theo ô."
+        },
+        {
+          "meaning_vi": "trường hợp",
+          "example_en": "This is a special case that needs attention.",
+          "example_vi": "Đây là một trường hợp đặc biệt cần được chú ý."
+        },
+        {
+          "meaning_vi": "vụ việc",
+          "example_en": "The police are investigating the case.",
+          "example_vi": "Cảnh sát đang điều tra vụ việc này."
+        },
+        {
+          "meaning_vi": "vụ việc",
+          "example_en": "The lawyer won the case in court.",
+          "example_vi": "Luật sư đã thắng vụ việc tại tòa án."
+        },
+        {
+          "meaning_vi": "vụ việc",
+          "example_en": "They have a strong case against the suspect.",
+          "example_vi": "Họ có bằng chứng vững chắc cho vụ việc chống lại nghi phạm."
+        },
+        {
+          "meaning_vi": "hộp",
+          "example_en": "He keeps his glasses in a protective case.",
+          "example_vi": "Anh ấy giữ kính của mình trong một chiếc hộp bảo vệ."
+        },
+        {
+          "meaning_vi": "hộp",
+          "example_en": "She bought a new case for her phone.",
+          "example_vi": "Cô ấy đã mua một chiếc hộp đựng mới cho điện thoại của mình."
+        },
+        {
+          "meaning_vi": "hộp",
+          "example_en": "The violin is kept in a velvet-lined case.",
+          "example_vi": "Cây đàn violin được giữ trong một chiếc hộp lót nhung."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, lọc nghĩa và bổ sung ví dụ.",
+      "word": "case",
+      "normalized_word": "case",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "In this case, we should ask for professional advice.",
+      "example_vi_clean": "Trong trường hợp này, chúng ta nên hỏi ý kiến chuyên gia."
+    },
+    {
+      "id": 24146,
+      "quiz_meaning_vi": "con mèo",
+      "meaning_vi_clean": "con mèo",
+      "examples_clean": [
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "The cat is sleeping on the sofa.",
+          "example_vi": "Con mèo đang ngủ trên ghế sofa."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "My cat likes to play with a ball of yarn.",
+          "example_vi": "Con mèo của tôi thích chơi với một cuộn len."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "She feeds her cat twice a day.",
+          "example_vi": "Cô ấy cho con mèo của mình ăn hai lần một ngày."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "The cat jumped over the fence.",
+          "example_vi": "Con mèo đã nhảy qua hàng rào."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "A small cat was hiding under the car.",
+          "example_vi": "Một con mèo nhỏ đang trốn dưới gầm xe."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "The cat purred when I petted it.",
+          "example_vi": "Con mèo kêu gừ gừ khi tôi vuốt ve nó."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "We adopted a stray cat from the shelter.",
+          "example_vi": "Chúng tôi đã nhận nuôi một con mèo hoang từ trạm cứu hộ."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "The cat caught a mouse in the garden.",
+          "example_vi": "Con mèo đã bắt được một con chuột trong vườn."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "My cat is very friendly with strangers.",
+          "example_vi": "Con mèo của tôi rất thân thiện với người lạ."
+        },
+        {
+          "meaning_vi": "con mèo",
+          "example_en": "The cat sat by the window watching the birds.",
+          "example_vi": "Con mèo ngồi bên cửa sổ ngắm nhìn những chú chim."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ, loại bỏ các nghĩa lóng/cổ, tập trung vào nghĩa con mèo.",
+      "word": "cat",
+      "normalized_word": "cat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cat is sleeping on the sofa.",
+      "example_vi_clean": "Con mèo đang ngủ trên ghế sofa."
+    },
+    {
+      "id": 24147,
+      "quiz_meaning_vi": "bắt",
+      "meaning_vi_clean": "bắt; nắm lấy; bắt kịp",
+      "examples_clean": [
+        {
+          "meaning_vi": "bắt",
+          "example_en": "The police managed to catch the thief.",
+          "example_vi": "Cảnh sát đã xoay xở để bắt được tên trộm."
+        },
+        {
+          "meaning_vi": "bắt",
+          "example_en": "He tried to catch the ball.",
+          "example_vi": "Anh ấy đã cố gắng bắt quả bóng."
+        },
+        {
+          "meaning_vi": "bắt",
+          "example_en": "She caught a cold after walking in the rain.",
+          "example_vi": "Cô ấy bị cảm lạnh sau khi đi bộ dưới mưa."
+        },
+        {
+          "meaning_vi": "bắt",
+          "example_en": "The cat caught a mouse.",
+          "example_vi": "Con mèo đã bắt được một con chuột."
+        },
+        {
+          "meaning_vi": "nắm lấy",
+          "example_en": "He caught my hand to stop me from falling.",
+          "example_vi": "Anh ấy nắm lấy tay tôi để ngăn tôi khỏi bị ngã."
+        },
+        {
+          "meaning_vi": "nắm lấy",
+          "example_en": "She caught the rope to pull herself up.",
+          "example_vi": "Cô ấy nắm lấy sợi dây để kéo mình lên."
+        },
+        {
+          "meaning_vi": "nắm lấy",
+          "example_en": "He caught the falling glass just in time.",
+          "example_vi": "Anh ấy đã nắm lấy chiếc ly đang rơi đúng lúc."
+        },
+        {
+          "meaning_vi": "bắt kịp",
+          "example_en": "I ran fast to catch the bus.",
+          "example_vi": "Tôi đã chạy nhanh để bắt kịp chuyến xe buýt."
+        },
+        {
+          "meaning_vi": "bắt kịp",
+          "example_en": "She walked quickly to catch up with her friends.",
+          "example_vi": "Cô ấy đi nhanh để bắt kịp những người bạn của mình."
+        },
+        {
+          "meaning_vi": "bắt kịp",
+          "example_en": "He finally caught up with the leader of the race.",
+          "example_vi": "Anh ấy cuối cùng đã bắt kịp người dẫn đầu cuộc đua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang động từ, lọc nghĩa và bổ sung ví dụ.",
+      "word": "catch",
+      "normalized_word": "catch",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police managed to catch the thief.",
+      "example_vi_clean": "Cảnh sát đã xoay xở để bắt được tên trộm."
+    },
+    {
+      "id": 24148,
+      "quiz_meaning_vi": "đĩa CD",
+      "meaning_vi_clean": "đĩa CD",
+      "examples_clean": [
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "I bought a new music CD yesterday.",
+          "example_vi": "Tôi đã mua một chiếc đĩa CD nhạc mới ngày hôm qua."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "She put the CD into the player.",
+          "example_vi": "Cô ấy đặt chiếc đĩa CD vào máy phát."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "The software is provided on a CD.",
+          "example_vi": "Phần mềm được cung cấp trên một chiếc đĩa CD."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "He has a large collection of CDs.",
+          "example_vi": "Anh ấy có một bộ sưu tập đĩa CD lớn."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "The CD is scratched and won't play.",
+          "example_vi": "Chiếc đĩa CD bị trầy xước và không phát được."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "We listened to the CD during the trip.",
+          "example_vi": "Chúng tôi đã nghe đĩa CD trong suốt chuyến đi."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "Please keep the CD in its case.",
+          "example_vi": "Vui lòng giữ chiếc đĩa CD trong hộp của nó."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "The CD contains all the photos from the wedding.",
+          "example_vi": "Chiếc đĩa CD chứa tất cả ảnh từ đám cưới."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "She burned her favorite songs onto a CD.",
+          "example_vi": "Cô ấy đã ghi những bài hát yêu thích của mình vào một chiếc đĩa CD."
+        },
+        {
+          "meaning_vi": "đĩa CD",
+          "example_en": "The CD player is broken.",
+          "example_vi": "Máy phát đĩa CD bị hỏng rồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung POS, phonetic, nghĩa và 10 ví dụ.",
+      "word": "cd",
+      "normalized_word": "cd",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought a new music CD yesterday.",
+      "example_vi_clean": "Tôi đã mua một chiếc đĩa CD nhạc mới ngày hôm qua."
+    },
+    {
+      "id": 24149,
+      "quiz_meaning_vi": "kỷ niệm",
+      "meaning_vi_clean": "kỷ niệm; tán dương",
+      "examples_clean": [
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "We are going to celebrate our anniversary tonight.",
+          "example_vi": "Chúng tôi sẽ kỷ niệm ngày kỷ niệm của mình tối nay."
+        },
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "They celebrated the victory with a big party.",
+          "example_vi": "Họ đã kỷ niệm chiến thắng bằng một bữa tiệc lớn."
+        },
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "People celebrate the New Year in many different ways.",
+          "example_vi": "Mọi người kỷ niệm năm mới theo nhiều cách khác nhau."
+        },
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "She wants to celebrate her birthday with her friends.",
+          "example_vi": "Cô ấy muốn kỷ niệm sinh nhật của mình với bạn bè."
+        },
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "The country celebrates its independence every year.",
+          "example_vi": "Đất nước kỷ niệm ngày độc lập hàng năm."
+        },
+        {
+          "meaning_vi": "tán dương",
+          "example_en": "The critics celebrated his new book as a masterpiece.",
+          "example_vi": "Các nhà phê bình tán dương cuốn sách mới của ông ấy như một kiệt tác."
+        },
+        {
+          "meaning_vi": "tán dương",
+          "example_en": "The poem celebrates the beauty of nature.",
+          "example_vi": "Bài thơ tán dương vẻ đẹp của thiên nhiên."
+        },
+        {
+          "meaning_vi": "tán dương",
+          "example_en": "They celebrated the achievements of the young athletes.",
+          "example_vi": "Họ tán dương những thành tựu của các vận động viên trẻ."
+        },
+        {
+          "meaning_vi": "tán dương",
+          "example_en": "The song celebrates the spirit of freedom.",
+          "example_vi": "Bài hát tán dương tinh thần tự do."
+        },
+        {
+          "meaning_vi": "tán dương",
+          "example_en": "The community gathered to celebrate the hero's return.",
+          "example_vi": "Cộng đồng đã tập trung để tán dương sự trở về của người anh hùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa phonetic, giữ nghĩa và bổ sung ví dụ.",
+      "word": "celebrate",
+      "normalized_word": "celebrate",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "We are going to celebrate our anniversary tonight.",
+      "example_vi_clean": "Chúng tôi sẽ kỷ niệm ngày kỷ niệm của mình tối nay."
+    },
+    {
+      "id": 24150,
+      "quiz_meaning_vi": "sự kỷ niệm",
+      "meaning_vi_clean": "sự kỷ niệm; lễ kỷ niệm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kỷ niệm",
+          "example_en": "The celebration of the festival lasts for three days.",
+          "example_vi": "Sự kỷ niệm lễ hội kéo dài trong ba ngày."
+        },
+        {
+          "meaning_vi": "sự kỷ niệm",
+          "example_en": "The celebration of their success was very joyful.",
+          "example_vi": "Sự kỷ niệm thành công của họ rất vui vẻ."
+        },
+        {
+          "meaning_vi": "sự kỷ niệm",
+          "example_en": "We are planning a celebration for the end of the term.",
+          "example_vi": "Chúng tôi đang lên kế hoạch cho sự kỷ niệm cuối học kỳ."
+        },
+        {
+          "meaning_vi": "sự kỷ niệm",
+          "example_en": "The celebration brought the whole community together.",
+          "example_vi": "Sự kỷ niệm đã gắn kết cả cộng đồng lại với nhau."
+        },
+        {
+          "meaning_vi": "lễ kỷ niệm",
+          "example_en": "They attended the celebration of the company's anniversary.",
+          "example_vi": "Họ đã tham dự lễ kỷ niệm ngày thành lập công ty."
+        },
+        {
+          "meaning_vi": "lễ kỷ niệm",
+          "example_en": "The wedding celebration was held in a beautiful garden.",
+          "example_vi": "Lễ kỷ niệm đám cưới được tổ chức trong một khu vườn xinh đẹp."
+        },
+        {
+          "meaning_vi": "lễ kỷ niệm",
+          "example_en": "Everyone was invited to the celebration.",
+          "example_vi": "Mọi người đều được mời đến lễ kỷ niệm."
+        },
+        {
+          "meaning_vi": "lễ kỷ niệm",
+          "example_en": "The celebration included music, dancing, and food.",
+          "example_vi": "Lễ kỷ niệm bao gồm âm nhạc, khiêu vũ và đồ ăn."
+        },
+        {
+          "meaning_vi": "lễ kỷ niệm",
+          "example_en": "She organized a small celebration for her promotion.",
+          "example_vi": "Cô ấy đã tổ chức một lễ kỷ niệm nhỏ cho việc được thăng chức."
+        },
+        {
+          "meaning_vi": "lễ kỷ niệm",
+          "example_en": "The national celebration was broadcast on television.",
+          "example_vi": "Lễ kỷ niệm quốc gia đã được phát sóng trên truyền hình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa và 10 ví dụ.",
+      "word": "celebration",
+      "normalized_word": "celebration",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The celebration of the festival lasts for three days.",
+      "example_vi_clean": "Sự kỷ niệm lễ hội kéo dài trong ba ngày."
+    }
+  ]
+}

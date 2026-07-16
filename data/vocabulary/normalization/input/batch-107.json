@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-107",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25061,
+      "word": "further",
+      "normalized_word": "further",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'fə:ðə/",
+      "primary_meaning_vi": "xa hơn nữa",
+      "meaning_vi": "xa hơn nữa, bên kia; thêm nữa, hơn nữa; xa hơn nữa; thêm nữa, hơn nữa; điều tra thêm nữa; đẩy mạnh, xúc tiến; giúp cho",
+      "example_en": "Further the economy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was standing at the further end of the corridor.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have one further comment to make.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I can run further than you.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25062,
+      "word": "gallery",
+      "normalized_word": "gallery",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'gæləri/",
+      "primary_meaning_vi": "phòng trưng bày tranh tượng",
+      "meaning_vi": "phòng trưng bày tranh tượng; nhà cầu, hành lang; phòng dài (tập bắn, chơi bóng gỗ...); ban công, chuồng gà; khán giả chuồng gà (trong rạp hát); chỗ dành cho ban đồng ca (ở nhà thờ); lô dành cho nhà báo (cho khách) (ở nghị viện); cái giữ thông phong đèn (cho khách); ; (quân sự) đường hầm; chiều theo thị hiếu tầm thường của quần chúng; đục đường hầm, mở đương hầm (ở mỏ...)",
+      "example_en": "a clip-art gallery in a wordprocessor",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25063,
+      "word": "garage",
+      "normalized_word": "garage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'gærɑ:ʤ/",
+      "primary_meaning_vi": "ga ra",
+      "meaning_vi": "ga ra, nhà để ô tô; chỗ chữa ô tô; cho (ô tô) vào ga ra",
+      "example_en": "We garaged the convertible during the monsoon months.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25064,
+      "word": "garlic",
+      "normalized_word": "garlic",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'gɑ:lik/",
+      "primary_meaning_vi": "cây tỏi",
+      "meaning_vi": "cây tỏi; củ tỏi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25065,
+      "word": "gas",
+      "normalized_word": "gas",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/gæs/",
+      "primary_meaning_vi": "khí",
+      "meaning_vi": "khí; khí thắp, hơi đốt; khí tê (dùng khi chữa răng) ((cũng) laughing gas); hơi độc, hơi ngạt; khí nổ (mỏ, than); ,  (thông tục) dầu xăng; chuyện rỗng tuếch không đâu vào đâu, chuyện tầm phào; chuyện huyên hoang khoác lác; step; cung cấp khí thấp, cung cấp hơi đốt (cho một căn buồng); hơ (chỉ, sợi...) qua đèn khí (cho hết lông tơ); thắp sáng bằng đén khí; thả hơi độc, thả hơi ngạt, làm ngạt bằng hơi độc; lừa bịp (ai) bằng những lời huênh hoang khoác lác; xì hơi; nói dông dài; nói chuyện tầm phào; huyên hoang khoác lác",
+      "example_en": "A lot of gas had escaped from the cylinder.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The atmosphere is made up of a number of different gases.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Gas-fired power stations have largely replaced coal-burning ones.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She turned the gas on, put the potatoes on, then lit the oven.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25066,
+      "word": "gate",
+      "normalized_word": "gate",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/geit/",
+      "primary_meaning_vi": "cổng",
+      "meaning_vi": "cổng; số người mua vé vào xem (một trận đấu thể thao...); tiền mua vé (trận đấu thể thao...) ((cũng) gate-money); cửa đập, cửa cống; hàng rào chắn (chỗ đường xe lửa chạy qua đường cái; trạm thu thuế...); đèo, hẽm núi; tấm ván che, ván chân; cửa van; bị đuổi ra; đuổi ra, tống cổ ra, cho thôi việc; mở đường cho ai; phạt (học sinh) không cho ra ngoài (ở trường đại học Ôc-phớt và Căm-brít)",
+      "example_en": "The gate in front of the railroad crossing went up after the train had passed.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Singh was bowled through the gate, a very disappointing way for a world-class batsman to get out.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25067,
+      "word": "gather",
+      "normalized_word": "gather",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'gæðə/",
+      "primary_meaning_vi": "tập hợp",
+      "meaning_vi": "tập hợp, tụ họp lại; hái, lượm, thu thập; lấy, lấy lại; chun, nhăn; hiểu, nắm được; kết luận, suy ra; tập hợp lại, tụ họp lại, kéo đến; to ra, phóng đại, tăng lên; mưng mủ (nhọt); nhặt (cái gì) lên; thu thập lại, tập trung; thu (gọn) lại; chết, về chầu tổ; lăn lóc đổi nghề lắm rút cục chẳng tinh nghề nào",
+      "example_en": "I've been gathering ideas from the people I work with.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She gathered the shawl about her as she stepped into the cold.",
+          "example_vi": null
+        },
+        {
+          "example_en": "From his silence, I gathered that things had not gone well.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Salt water can help boils to gather and then burst.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25068,
+      "word": "gender",
+      "normalized_word": "gender",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dʤendə/",
+      "primary_meaning_vi": "giống",
+      "meaning_vi": "giống; (như) engender",
+      "example_en": "The effect of the medication is dependent upon age, gender, and other factors.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His low voice allowed him to become a bass in the choir.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to cultivate the voice",
+          "example_vi": null
+        },
+        {
+          "example_en": "The verbal system of Latin has two voices, active and passive.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25069,
+      "word": "generation",
+      "normalized_word": "generation",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,dʤenə'reiʃn/",
+      "primary_meaning_vi": "sự sinh ra",
+      "meaning_vi": "sự sinh ra, sự phát sinh ra; thế hệ, đời; sự phát điện",
+      "example_en": "This is the book of the generations of Adam - Genesis 5:1",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the generation of a line or curve",
+          "example_vi": null
+        },
+        {
+          "example_en": "Generation X grew up in the eighties, whereas the generation known as the millennials grew up in the nineties.",
+          "example_vi": null
+        },
+        {
+          "example_en": "People sometimes dispute which generation of Star Trek is best, including the original and The Next Generation.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25070,
+      "word": "gentle",
+      "normalized_word": "gentle",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dʤentl/",
+      "primary_meaning_vi": "hiền lành",
+      "meaning_vi": "hiền lành, dịu dàng, hoà nhã; nhẹ nhàng; thoai thoải; dòng dõi trâm anh, (thuộc) gia đình quyền quý; lịch thiệp, lịch sự; cao quý; mồi giòi (để câu cá); (thông tục) những người thuộc gia đình quyền quý; luyện (ngựa) cho thuần",
+      "example_en": "Stuart is a gentle man; he would never hurt you.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I felt something touch my shoulder; it was gentle and a little slimy.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We had a gentle swim in the lake.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The walks in this area have a gentle incline.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-277",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26761,
+      "word": "creation",
+      "normalized_word": "creation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kri:'eiʃn/",
+      "primary_meaning_vi": "sự tạo thành",
+      "meaning_vi": "sự tạo thành, sự sáng tạo (thế giới); sự sáng tác; tác phẩm; vật được sáng tạo ra; sự phong tước; sự đóng lần đầu tiên (một vai tuồng, kịch)",
+      "example_en": "I think the manufacturer was so ashamed of its creation that it didn't put its name on it!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The restructure resulted in the creation of a number of shared services.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Let us pray to Christ, the King of all creation.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26762,
+      "word": "creatively",
+      "normalized_word": "creatively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sáng tạo",
+      "meaning_vi": "sáng tạo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26763,
+      "word": "creek",
+      "normalized_word": "creek",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kri:k/",
+      "primary_meaning_vi": "vùng",
+      "meaning_vi": "vùng, lạch; sông con, nhánh sông; thung lũng hẹp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26764,
+      "word": "creepy",
+      "normalized_word": "creepy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kri:pi/",
+      "primary_meaning_vi": "rùng mình",
+      "meaning_vi": "rùng mình, sởn gáy, sởn gai ốc, làm rùng mình, làm sởn gáy, làm sởn gai ốc; bò, leo",
+      "example_en": "That creepy old man keeps leering at me!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26765,
+      "word": "crew",
+      "normalized_word": "crew",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "thời quá khứ của crow",
+      "phonetic": "/kru:/",
+      "primary_meaning_vi": "toàn bộ thuỷ thủ trên tàu",
+      "meaning_vi": "toàn bộ thuỷ thủ trên tàu; toàn bộ người lái và nhân viên trên máy bay; ban nhóm, đội (công tác...); bọn, tụi, đám, bè lũ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26766,
+      "word": "criminal",
+      "normalized_word": "criminal",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kriminl/",
+      "primary_meaning_vi": "có tội",
+      "meaning_vi": "có tội, phạm tội, tội ác; conversation; kẻ phạm tội, tội phạm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26767,
+      "word": "cripple",
+      "normalized_word": "cripple",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'kripl/",
+      "primary_meaning_vi": "người què",
+      "meaning_vi": "người què; cái thang đứng, cái giá (của thợ quét vôi...); làm què, làm tàn tật; làm hỏng, phá hỏng; làm lụn bại; làm tê liệt; đi khập khiễng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26768,
+      "word": "critically",
+      "normalized_word": "critically",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "chỉ trích",
+      "meaning_vi": "chỉ trích, trách cứ; trầm trọng",
+      "example_en": "I looked critically at the frayed carpet of the hotel room.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a fortification critically situated",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26769,
+      "word": "criticism",
+      "normalized_word": "criticism",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kritisizm/",
+      "primary_meaning_vi": "sự phê bình",
+      "meaning_vi": "sự phê bình, sự phê phán, sự bình phẩm, sự chỉ trích; lời phê bình, lời phê phán, lời bình phẩm, lời chỉ trích",
+      "example_en": "The politician received a lot of public criticism for his controversial stance on the issue.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26770,
+      "word": "crocodile",
+      "normalized_word": "crocodile",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'krɔkədail/",
+      "primary_meaning_vi": "cá sấu Châu phi",
+      "meaning_vi": "cá sấu Châu phi, cá sấu; toán nữ sinh đi hàng đôi; nước mắt cá sấu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

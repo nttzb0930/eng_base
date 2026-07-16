@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24226,
+      "quiz_meaning_vi": "sự khác biệt",
+      "meaning_vi_clean": "sự khác biệt",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "Can you tell the difference between these two colors?",
+          "example_vi": "Bạn có thể phân biệt sự khác biệt giữa hai màu này không?"
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "There is a big difference in price between the two models.",
+          "example_vi": "Có một sự khác biệt lớn về giá giữa hai mẫu sản phẩm này."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "The main difference is that one is larger than the other.",
+          "example_vi": "Sự khác biệt chính là cái này lớn hơn cái kia."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "I noticed a small difference in his behavior today.",
+          "example_vi": "Tôi nhận thấy một sự khác biệt nhỏ trong cách cư xử của anh ấy hôm nay."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "What is the difference between a frog and a toad?",
+          "example_vi": "Sự khác biệt giữa con ếch và con cóc là gì?"
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "The difference in their ages is only two years.",
+          "example_vi": "Sự khác biệt về tuổi tác của họ chỉ là hai năm."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "It makes no difference to me which one you choose.",
+          "example_vi": "Việc bạn chọn cái nào không tạo ra sự khác biệt nào đối với tôi."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "She explained the difference between the two plans.",
+          "example_vi": "Cô ấy đã giải thích sự khác biệt giữa hai kế hoạch."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "There is little difference between the two results.",
+          "example_vi": "Có rất ít sự khác biệt giữa hai kết quả."
+        },
+        {
+          "meaning_vi": "sự khác biệt",
+          "example_en": "The difference in quality is very clear.",
+          "example_vi": "Sự khác biệt về chất lượng rất rõ ràng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'difference' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "difference",
+      "normalized_word": "difference",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Can you tell the difference between these two colors?",
+      "example_vi_clean": "Bạn có thể phân biệt sự khác biệt giữa hai màu này không?"
+    },
+    {
+      "id": 24229,
+      "quiz_meaning_vi": "cú đào",
+      "meaning_vi_clean": "cú đào",
+      "examples_clean": [
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "The dog gave a quick dig in the garden.",
+          "example_vi": "Con chó thực hiện một cú đào nhanh trong vườn."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "He took a deep dig into the soft soil.",
+          "example_vi": "Anh ấy thực hiện một cú đào sâu vào lớp đất mềm."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "With one final dig, she found the buried treasure.",
+          "example_vi": "Với một cú đào cuối cùng, cô ấy đã tìm thấy kho báu bị chôn vùi."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "The gardener made a small dig to plant the flower.",
+          "example_vi": "Người làm vườn thực hiện một cú đào nhỏ để trồng hoa."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "That was a powerful dig into the sand.",
+          "example_vi": "Đó là một cú đào mạnh vào cát."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "She felt a sharp dig as she hit a rock.",
+          "example_vi": "Cô ấy cảm thấy một cú đào mạnh khi chạm vào một tảng đá."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "The child tried a clumsy dig in the mud.",
+          "example_vi": "Đứa trẻ thử một cú đào vụng về trong bùn."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "He managed a steady dig to clear the path.",
+          "example_vi": "Anh ấy thực hiện một cú đào đều đặn để dọn đường."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "Every dig brought up more dirt.",
+          "example_vi": "Mỗi cú đào đều mang thêm đất lên."
+        },
+        {
+          "meaning_vi": "cú đào",
+          "example_en": "She gave a careful dig to avoid the plant roots.",
+          "example_vi": "Cô ấy thực hiện một cú đào cẩn thận để tránh rễ cây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'dig' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "dig",
+      "normalized_word": "dig",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dog gave a quick dig in the garden.",
+      "example_vi_clean": "Con chó thực hiện một cú đào nhanh trong vườn."
+    },
+    {
+      "id": 24231,
+      "quiz_meaning_vi": "bẩn",
+      "meaning_vi_clean": "bẩn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "His hands were very dirty after playing outside.",
+          "example_vi": "Tay của cậu ấy rất bẩn sau khi chơi bên ngoài."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "Don't put your dirty shoes on the clean carpet.",
+          "example_vi": "Đừng đặt đôi giày bẩn của bạn lên tấm thảm sạch."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "The kitchen floor looks a bit dirty.",
+          "example_vi": "Sàn bếp trông hơi bẩn."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "She washed the dirty clothes in the machine.",
+          "example_vi": "Cô ấy đã giặt quần áo bẩn trong máy giặt."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "The water in the river is too dirty to drink.",
+          "example_vi": "Nước ở con sông quá bẩn để uống."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "He wiped his dirty face with a towel.",
+          "example_vi": "Anh ấy lau khuôn mặt bẩn của mình bằng một chiếc khăn."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "The windows are dirty because of the rain.",
+          "example_vi": "Những chiếc cửa sổ bị bẩn vì trời mưa."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "I need to clean this dirty plate.",
+          "example_vi": "Tôi cần làm sạch chiếc đĩa bẩn này."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "The dog came home with dirty paws.",
+          "example_vi": "Con chó về nhà với những cái chân bẩn."
+        },
+        {
+          "meaning_vi": "bẩn",
+          "example_en": "It is a dirty job, but someone has to do it.",
+          "example_vi": "Đó là một công việc bẩn thỉu, nhưng ai đó phải làm nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'dirty' được dùng làm tính từ trong tất cả các câu ví dụ."
+      },
+      "word": "dirty",
+      "normalized_word": "dirty",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "His hands were very dirty after playing outside.",
+      "example_vi_clean": "Tay của cậu ấy rất bẩn sau khi chơi bên ngoài."
+    },
+    {
+      "id": 24233,
+      "quiz_meaning_vi": "cái đĩa",
+      "meaning_vi_clean": "cái đĩa",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "She put the food on a large dish.",
+          "example_vi": "Cô ấy đặt thức ăn lên một cái đĩa lớn."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "Please wash the dirty dish after dinner.",
+          "example_vi": "Làm ơn hãy rửa cái đĩa bẩn sau bữa tối."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "He dropped the dish and it broke into pieces.",
+          "example_vi": "Anh ấy làm rơi cái đĩa và nó vỡ thành nhiều mảnh."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "There is a blue dish on the table.",
+          "example_vi": "Có một cái đĩa màu xanh trên bàn."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "She bought a new dish for the salad.",
+          "example_vi": "Cô ấy đã mua một cái đĩa mới để đựng salad."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "The cat ate from its small dish.",
+          "example_vi": "Con mèo ăn từ cái đĩa nhỏ của nó."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "Can you pass me that dish, please?",
+          "example_vi": "Bạn có thể đưa cho tôi cái đĩa đó được không?"
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "The dish is made of white ceramic.",
+          "example_vi": "Cái đĩa được làm bằng gốm trắng."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "She carefully dried the dish with a cloth.",
+          "example_vi": "Cô ấy cẩn thận lau khô cái đĩa bằng một miếng vải."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "He stacked every dish in the cupboard.",
+          "example_vi": "Anh ấy xếp chồng mọi cái đĩa vào trong tủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'dish' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "dish",
+      "normalized_word": "dish",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She put the food on a large dish.",
+      "example_vi_clean": "Cô ấy đặt thức ăn lên một cái đĩa lớn."
+    },
+    {
+      "id": 24235,
+      "quiz_meaning_vi": "bác sĩ",
+      "meaning_vi_clean": "bác sĩ",
+      "examples_clean": [
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "The doctor told him to rest for a few days.",
+          "example_vi": "Bác sĩ bảo anh ấy nghỉ ngơi vài ngày."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "She wants to be a doctor when she grows up.",
+          "example_vi": "Cô ấy muốn trở thành bác sĩ khi lớn lên."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "I have an appointment with the doctor at ten.",
+          "example_vi": "Tôi có một cuộc hẹn với bác sĩ lúc mười giờ."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "The doctor examined the patient carefully.",
+          "example_vi": "Bác sĩ đã kiểm tra bệnh nhân một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "My father is a very kind doctor.",
+          "example_vi": "Cha tôi là một bác sĩ rất tốt bụng."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "The doctor gave her some medicine for her cough.",
+          "example_vi": "Bác sĩ đã đưa cho cô ấy một ít thuốc trị ho."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "You should see a doctor if you feel sick.",
+          "example_vi": "Bạn nên đi gặp bác sĩ nếu bạn cảm thấy ốm."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "The doctor works at the local hospital.",
+          "example_vi": "Bác sĩ làm việc tại bệnh viện địa phương."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "Every doctor needs to study for many years.",
+          "example_vi": "Mỗi bác sĩ đều cần học tập trong nhiều năm."
+        },
+        {
+          "meaning_vi": "bác sĩ",
+          "example_en": "The doctor listened to his heart with a stethoscope.",
+          "example_vi": "Bác sĩ đã nghe tim anh ấy bằng ống nghe."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'doctor' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "doctor",
+      "normalized_word": "doctor",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The doctor told him to rest for a few days.",
+      "example_vi_clean": "Bác sĩ bảo anh ấy nghỉ ngơi vài ngày."
+    },
+    {
+      "id": 24237,
+      "quiz_meaning_vi": "con chó",
+      "meaning_vi_clean": "con chó",
+      "examples_clean": [
+        {
+          "meaning_vi": "con chó",
+          "example_en": "The dog is playing in the park.",
+          "example_vi": "Con chó đang chơi trong công viên."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "My dog likes to run after balls.",
+          "example_vi": "Con chó của tôi thích chạy theo những quả bóng."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "A small dog barked at the stranger.",
+          "example_vi": "Một con chó nhỏ sủa người lạ."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "She takes her dog for a walk every morning.",
+          "example_vi": "Cô ấy dắt con chó của mình đi dạo mỗi sáng."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "The dog is sleeping on the rug.",
+          "example_vi": "Con chó đang ngủ trên tấm thảm."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "He fed his dog some meat.",
+          "example_vi": "Anh ấy cho con chó của mình ăn một ít thịt."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "The dog wagged its tail happily.",
+          "example_vi": "Con chó vẫy đuôi một cách vui vẻ."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "I want to buy a dog for my family.",
+          "example_vi": "Tôi muốn mua một con chó cho gia đình mình."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "The dog is very loyal to its owner.",
+          "example_vi": "Con chó rất trung thành với chủ của nó."
+        },
+        {
+          "meaning_vi": "con chó",
+          "example_en": "That dog belongs to my neighbor.",
+          "example_vi": "Con chó đó thuộc về hàng xóm của tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'dog' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "dog",
+      "normalized_word": "dog",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dog is playing in the park.",
+      "example_vi_clean": "Con chó đang chơi trong công viên."
+    },
+    {
+      "id": 24239,
+      "quiz_meaning_vi": "búp bê",
+      "meaning_vi_clean": "búp bê",
+      "examples_clean": [
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "The little girl is playing with her doll.",
+          "example_vi": "Cô bé đang chơi với con búp bê của mình."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "She has a beautiful doll in her room.",
+          "example_vi": "Cô ấy có một con búp bê xinh đẹp trong phòng."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "He bought a doll for his sister's birthday.",
+          "example_vi": "Anh ấy đã mua một con búp bê cho sinh nhật của em gái mình."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "The doll has long blonde hair.",
+          "example_vi": "Con búp bê có mái tóc vàng dài."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "She put the doll on the shelf.",
+          "example_vi": "Cô ấy đặt con búp bê lên kệ."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "The doll is wearing a pink dress.",
+          "example_vi": "Con búp bê đang mặc một chiếc váy màu hồng."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "She loves to dress her doll in different clothes.",
+          "example_vi": "Cô ấy thích mặc quần áo khác nhau cho con búp bê của mình."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "The doll fell off the bed.",
+          "example_vi": "Con búp bê rơi khỏi giường."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "She keeps her favorite doll in a box.",
+          "example_vi": "Cô ấy giữ con búp bê yêu thích của mình trong một chiếc hộp."
+        },
+        {
+          "meaning_vi": "búp bê",
+          "example_en": "The doll looks very realistic.",
+          "example_vi": "Con búp bê trông rất giống thật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'doll' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "doll",
+      "normalized_word": "doll",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The little girl is playing with her doll.",
+      "example_vi_clean": "Cô bé đang chơi với con búp bê của mình."
+    },
+    {
+      "id": 24243,
+      "quiz_meaning_vi": "giấc mơ",
+      "meaning_vi_clean": "giấc mơ",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "I had a strange dream last night.",
+          "example_vi": "Tôi đã có một giấc mơ kỳ lạ đêm qua."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "It is my dream to travel around the world.",
+          "example_vi": "Đó là giấc mơ của tôi khi được đi du lịch vòng quanh thế giới."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "She told me about her dream.",
+          "example_vi": "Cô ấy đã kể cho tôi nghe về giấc mơ của cô ấy."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "His dream is to become a famous musician.",
+          "example_vi": "Giấc mơ của anh ấy là trở thành một nhạc sĩ nổi tiếng."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "The dream felt so real.",
+          "example_vi": "Giấc mơ đó cảm giác rất thật."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "She woke up from a bad dream.",
+          "example_vi": "Cô ấy tỉnh dậy sau một giấc mơ tồi tệ."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "He is working hard to achieve his dream.",
+          "example_vi": "Anh ấy đang làm việc chăm chỉ để đạt được giấc mơ của mình."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "Do you remember your dream?",
+          "example_vi": "Bạn có nhớ giấc mơ của mình không?"
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "A dream can sometimes be very confusing.",
+          "example_vi": "Một giấc mơ đôi khi có thể rất khó hiểu."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "They shared the same dream for the future.",
+          "example_vi": "Họ chia sẻ cùng một giấc mơ cho tương lai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'dream' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "dream",
+      "normalized_word": "dream",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I had a strange dream last night.",
+      "example_vi_clean": "Tôi đã có một giấc mơ kỳ lạ đêm qua."
+    },
+    {
+      "id": 24244,
+      "quiz_meaning_vi": "cái váy",
+      "meaning_vi_clean": "cái váy",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "She is wearing a beautiful red dress.",
+          "example_vi": "Cô ấy đang mặc một cái váy màu đỏ xinh đẹp."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "I bought a new dress for the party.",
+          "example_vi": "Tôi đã mua một cái váy mới cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "The dress fits her perfectly.",
+          "example_vi": "Cái váy vừa vặn với cô ấy một cách hoàn hảo."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "She hung her dress in the closet.",
+          "example_vi": "Cô ấy treo cái váy của mình trong tủ quần áo."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "This dress is made of silk.",
+          "example_vi": "Cái váy này được làm bằng lụa."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "She chose a blue dress for the wedding.",
+          "example_vi": "Cô ấy đã chọn một cái váy màu xanh cho đám cưới."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "The dress has a floral pattern.",
+          "example_vi": "Cái váy có họa tiết hoa."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "She ironed her dress before going out.",
+          "example_vi": "Cô ấy đã ủi cái váy của mình trước khi đi ra ngoài."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "That dress looks very expensive.",
+          "example_vi": "Cái váy đó trông rất đắt tiền."
+        },
+        {
+          "meaning_vi": "cái váy",
+          "example_en": "She packed her favorite dress in the suitcase.",
+          "example_vi": "Cô ấy đã đóng gói cái váy yêu thích của mình vào vali."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'dress' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "dress",
+      "normalized_word": "dress",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is wearing a beautiful red dress.",
+      "example_vi_clean": "Cô ấy đang mặc một cái váy màu đỏ xinh đẹp."
+    },
+    {
+      "id": 24245,
+      "quiz_meaning_vi": "đồ uống",
+      "meaning_vi_clean": "đồ uống",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "Would you like a cold drink?",
+          "example_vi": "Bạn có muốn một món đồ uống lạnh không?"
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "He ordered a healthy drink with his meal.",
+          "example_vi": "Anh ấy đã gọi một món đồ uống tốt cho sức khỏe cùng với bữa ăn."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "This drink is very sweet.",
+          "example_vi": "Món đồ uống này rất ngọt."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "She finished her drink in one go.",
+          "example_vi": "Cô ấy đã uống hết món đồ uống của mình trong một hơi."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "Can I have another drink, please?",
+          "example_vi": "Tôi có thể lấy thêm một món đồ uống nữa được không?"
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "The menu has many types of drink.",
+          "example_vi": "Thực đơn có nhiều loại đồ uống."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "He spilled his drink on the table.",
+          "example_vi": "Anh ấy đã làm đổ món đồ uống của mình lên bàn."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "She prefers a hot drink in the morning.",
+          "example_vi": "Cô ấy thích một món đồ uống nóng vào buổi sáng."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "The price of the drink is included.",
+          "example_vi": "Giá của món đồ uống đã được bao gồm."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "They shared a refreshing drink together.",
+          "example_vi": "Họ đã cùng nhau chia sẻ một món đồ uống giải khát."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'drink' được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "drink",
+      "normalized_word": "drink",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Would you like a cold drink?",
+      "example_vi_clean": "Bạn có muốn một món đồ uống lạnh không?"
+    }
+  ]
+}

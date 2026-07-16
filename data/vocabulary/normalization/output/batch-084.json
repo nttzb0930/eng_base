@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24831,
+      "quiz_meaning_vi": "đầy đủ",
+      "meaning_vi_clean": "đầy đủ; trọn vẹn; hoàn thành",
+      "examples_clean": [
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "The report provides a complete list of all members.",
+          "example_vi": "Bản báo cáo cung cấp một danh sách đầy đủ tất cả các thành viên."
+        },
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "We have a complete set of tools for the job.",
+          "example_vi": "Chúng tôi có một bộ dụng cụ đầy đủ cho công việc này."
+        },
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "The project was a complete success.",
+          "example_vi": "Dự án là một thành công đầy đủ."
+        },
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "She gave a complete explanation of the situation.",
+          "example_vi": "Cô ấy đã đưa ra một lời giải thích đầy đủ về tình hình."
+        },
+        {
+          "meaning_vi": "trọn vẹn",
+          "example_en": "It was a complete waste of time.",
+          "example_vi": "Đó là một sự lãng phí thời gian trọn vẹn."
+        },
+        {
+          "meaning_vi": "trọn vẹn",
+          "example_en": "He felt a complete sense of peace.",
+          "example_vi": "Anh ấy cảm thấy một sự bình yên trọn vẹn."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "He completed the assignment on time.",
+          "example_vi": "Anh ấy đã hoàn thành bài tập đúng hạn."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "The construction will be completed next month.",
+          "example_vi": "Công trình sẽ được hoàn thành vào tháng tới."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "Please complete the form with your details.",
+          "example_vi": "Vui lòng hoàn thành mẫu đơn với thông tin chi tiết của bạn."
+        },
+        {
+          "meaning_vi": "hoàn thành",
+          "example_en": "She has finally completed her university degree.",
+          "example_vi": "Cô ấy cuối cùng đã hoàn thành bằng đại học của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang tính từ. Cấu trúc lại nghĩa và ví dụ theo quy tắc.",
+      "word": "complete",
+      "normalized_word": "complete",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The report provides a complete list of all members.",
+      "example_vi_clean": "Bản báo cáo cung cấp một danh sách đầy đủ tất cả các thành viên."
+    },
+    {
+      "id": 24832,
+      "quiz_meaning_vi": "người soạn nhạc",
+      "meaning_vi_clean": "người soạn nhạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "Beethoven is a famous classical composer.",
+          "example_vi": "Beethoven là một người soạn nhạc cổ điển nổi tiếng."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "The composer wrote a beautiful symphony.",
+          "example_vi": "Người soạn nhạc đã viết một bản giao hưởng tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "Many young composers struggle to find work.",
+          "example_vi": "Nhiều người soạn nhạc trẻ gặp khó khăn trong việc tìm việc làm."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "She is a talented composer of film music.",
+          "example_vi": "Cô ấy là một người soạn nhạc tài năng cho nhạc phim."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "The composer performed his own work.",
+          "example_vi": "Người soạn nhạc đã biểu diễn tác phẩm của chính mình."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "He studied to become a professional composer.",
+          "example_vi": "Anh ấy đã học để trở thành một người soạn nhạc chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "The composer was inspired by nature.",
+          "example_vi": "Người soạn nhạc đã được truyền cảm hứng bởi thiên nhiên."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "This piece was written by a modern composer.",
+          "example_vi": "Tác phẩm này được viết bởi một người soạn nhạc hiện đại."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "The composer received an award for his music.",
+          "example_vi": "Người soạn nhạc đã nhận được giải thưởng cho âm nhạc của mình."
+        },
+        {
+          "meaning_vi": "người soạn nhạc",
+          "example_en": "Every composer has a unique style.",
+          "example_vi": "Mỗi người soạn nhạc đều có một phong cách độc đáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ phù hợp.",
+      "word": "composer",
+      "normalized_word": "composer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Beethoven is a famous classical composer.",
+      "example_vi_clean": "Beethoven là một người soạn nhạc cổ điển nổi tiếng."
+    },
+    {
+      "id": 24833,
+      "quiz_meaning_vi": "tập trung",
+      "meaning_vi_clean": "tập trung; cô đặc",
+      "examples_clean": [
+        {
+          "meaning_vi": "tập trung",
+          "example_en": "It is hard to concentrate with all this noise.",
+          "example_vi": "Thật khó để tập trung với tất cả tiếng ồn này."
+        },
+        {
+          "meaning_vi": "tập trung",
+          "example_en": "I need to concentrate on my studies.",
+          "example_vi": "Tôi cần tập trung vào việc học của mình."
+        },
+        {
+          "meaning_vi": "tập trung",
+          "example_en": "She tried to concentrate on the speaker's words.",
+          "example_vi": "Cô ấy cố gắng tập trung vào lời của người nói."
+        },
+        {
+          "meaning_vi": "tập trung",
+          "example_en": "The company will concentrate its efforts on new markets.",
+          "example_vi": "Công ty sẽ tập trung nỗ lực vào các thị trường mới."
+        },
+        {
+          "meaning_vi": "tập trung",
+          "example_en": "Population tends to concentrate in large cities.",
+          "example_vi": "Dân cư có xu hướng tập trung ở các thành phố lớn."
+        },
+        {
+          "meaning_vi": "cô đặc",
+          "example_en": "You need to concentrate the liquid by heating it.",
+          "example_vi": "Bạn cần cô đặc chất lỏng bằng cách đun nóng nó."
+        },
+        {
+          "meaning_vi": "cô đặc",
+          "example_en": "The juice is concentrated to save space.",
+          "example_vi": "Nước ép được cô đặc để tiết kiệm không gian."
+        },
+        {
+          "meaning_vi": "cô đặc",
+          "example_en": "They use a machine to concentrate the chemical solution.",
+          "example_vi": "Họ sử dụng một cái máy để cô đặc dung dịch hóa chất."
+        },
+        {
+          "meaning_vi": "cô đặc",
+          "example_en": "The process helps to concentrate the flavor.",
+          "example_vi": "Quá trình này giúp cô đặc hương vị."
+        },
+        {
+          "meaning_vi": "cô đặc",
+          "example_en": "This is a highly concentrated form of the substance.",
+          "example_vi": "Đây là dạng cô đặc cao của chất này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ sang động từ. Sửa nghĩa 'cô' thành 'cô đặc' cho chính xác.",
+      "word": "concentrate",
+      "normalized_word": "concentrate",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It is hard to concentrate with all this noise.",
+      "example_vi_clean": "Thật khó để tập trung với tất cả tiếng ồn này."
+    },
+    {
+      "id": 24834,
+      "quiz_meaning_vi": "sự lo lắng",
+      "meaning_vi_clean": "sự lo lắng; sự liên quan",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự lo lắng",
+          "example_en": "There is growing concern about the environment.",
+          "example_vi": "Có sự lo lắng ngày càng tăng về môi trường."
+        },
+        {
+          "meaning_vi": "sự lo lắng",
+          "example_en": "Her main concern is the safety of the children.",
+          "example_vi": "Sự lo lắng chính của cô ấy là sự an toàn của bọn trẻ."
+        },
+        {
+          "meaning_vi": "sự lo lắng",
+          "example_en": "He expressed his concern regarding the new policy.",
+          "example_vi": "Anh ấy bày tỏ sự lo lắng của mình về chính sách mới."
+        },
+        {
+          "meaning_vi": "sự lo lắng",
+          "example_en": "The report caused great concern among the staff.",
+          "example_vi": "Bản báo cáo gây ra sự lo lắng lớn trong nhân viên."
+        },
+        {
+          "meaning_vi": "sự lo lắng",
+          "example_en": "Public concern about health issues is rising.",
+          "example_vi": "Sự lo lắng của công chúng về các vấn đề sức khỏe đang tăng lên."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "This matter is of no concern to me.",
+          "example_vi": "Vấn đề này không có sự liên quan gì đến tôi."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "The document has no concern with the current project.",
+          "example_vi": "Tài liệu này không có sự liên quan đến dự án hiện tại."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "It is a matter of concern for all of us.",
+          "example_vi": "Đó là một vấn đề có sự liên quan đến tất cả chúng ta."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "The law has no concern with private affairs.",
+          "example_vi": "Luật pháp không có sự liên quan đến các vấn đề riêng tư."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "Does this have any concern with the previous case?",
+          "example_vi": "Việc này có sự liên quan nào đến vụ việc trước đó không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Sửa nghĩa cho phù hợp với cấp độ A2.",
+      "word": "concern",
+      "normalized_word": "concern",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is growing concern about the environment.",
+      "example_vi_clean": "Có sự lo lắng ngày càng tăng về môi trường."
+    },
+    {
+      "id": 24835,
+      "quiz_meaning_vi": "điều kiện",
+      "meaning_vi_clean": "điều kiện; tình trạng",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "Hard work is a condition for success.",
+          "example_vi": "Làm việc chăm chỉ là một điều kiện để thành công."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "They agreed to the terms and conditions.",
+          "example_vi": "Họ đã đồng ý với các điều khoản và điều kiện."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "The contract has several conditions.",
+          "example_vi": "Hợp đồng có một vài điều kiện."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "What are the conditions for joining the club?",
+          "example_vi": "Các điều kiện để tham gia câu lạc bộ là gì?"
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "Weather conditions are perfect for a picnic.",
+          "example_vi": "Các điều kiện thời tiết rất hoàn hảo cho một chuyến dã ngoại."
+        },
+        {
+          "meaning_vi": "tình trạng",
+          "example_en": "The car is in excellent condition.",
+          "example_vi": "Chiếc xe đang ở trong tình trạng tuyệt vời."
+        },
+        {
+          "meaning_vi": "tình trạng",
+          "example_en": "The patient is in a stable condition.",
+          "example_vi": "Bệnh nhân đang ở trong tình trạng ổn định."
+        },
+        {
+          "meaning_vi": "tình trạng",
+          "example_en": "The house is in poor condition.",
+          "example_vi": "Ngôi nhà đang ở trong tình trạng tồi tệ."
+        },
+        {
+          "meaning_vi": "tình trạng",
+          "example_en": "He is working in difficult conditions.",
+          "example_vi": "Anh ấy đang làm việc trong những tình trạng khó khăn."
+        },
+        {
+          "meaning_vi": "tình trạng",
+          "example_en": "The road is in a dangerous condition.",
+          "example_vi": "Con đường đang ở trong tình trạng nguy hiểm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Sửa nghĩa cho phù hợp với cấp độ A2.",
+      "word": "condition",
+      "normalized_word": "condition",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Hard work is a condition for success.",
+      "example_vi_clean": "Làm việc chăm chỉ là một điều kiện để thành công."
+    },
+    {
+      "id": 24836,
+      "quiz_meaning_vi": "tin chắc",
+      "meaning_vi_clean": "tin chắc; tự tin",
+      "examples_clean": [
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "I am confident that we will win.",
+          "example_vi": "Tôi tin chắc rằng chúng ta sẽ thắng."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "She is confident of her success.",
+          "example_vi": "Cô ấy tin chắc vào sự thành công của mình."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "He is confident about the future.",
+          "example_vi": "Anh ấy tin chắc về tương lai."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "They are confident in their abilities.",
+          "example_vi": "Họ tin chắc vào khả năng của mình."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "Are you confident that this is the right way?",
+          "example_vi": "Bạn có tin chắc rằng đây là con đường đúng không?"
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She is a very confident speaker.",
+          "example_vi": "Cô ấy là một người nói rất tự tin."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He feels more confident after the training.",
+          "example_vi": "Anh ấy cảm thấy tự tin hơn sau khóa đào tạo."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "You should be more confident in yourself.",
+          "example_vi": "Bạn nên tự tin hơn vào bản thân mình."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She gave a confident smile.",
+          "example_vi": "Cô ấy đã nở một nụ cười tự tin."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "The team is confident before the match.",
+          "example_vi": "Cả đội rất tự tin trước trận đấu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ. Sửa nghĩa cho phù hợp với cấp độ A2.",
+      "word": "confident",
+      "normalized_word": "confident",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I am confident that we will win.",
+      "example_vi_clean": "Tôi tin chắc rằng chúng ta sẽ thắng."
+    },
+    {
+      "id": 24837,
+      "quiz_meaning_vi": "làm lộn xộn",
+      "meaning_vi_clean": "làm lộn xộn; làm bối rối",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm lộn xộn",
+          "example_en": "Don't confuse the papers on my desk.",
+          "example_vi": "Đừng làm lộn xộn các giấy tờ trên bàn của tôi."
+        },
+        {
+          "meaning_vi": "làm lộn xộn",
+          "example_en": "The new rules might confuse the students.",
+          "example_vi": "Các quy tắc mới có thể làm lộn xộn suy nghĩ của học sinh."
+        },
+        {
+          "meaning_vi": "làm lộn xộn",
+          "example_en": "Please don't confuse the files.",
+          "example_vi": "Vui lòng đừng làm lộn xộn các tệp tin."
+        },
+        {
+          "meaning_vi": "làm lộn xộn",
+          "example_en": "The instructions were meant to help, not confuse.",
+          "example_vi": "Các hướng dẫn được đưa ra để giúp đỡ, không phải để làm lộn xộn."
+        },
+        {
+          "meaning_vi": "làm lộn xộn",
+          "example_en": "Don't confuse the two issues.",
+          "example_vi": "Đừng làm lộn xộn hai vấn đề này."
+        },
+        {
+          "meaning_vi": "làm bối rối",
+          "example_en": "The question confused me.",
+          "example_vi": "Câu hỏi đó làm tôi bối rối."
+        },
+        {
+          "meaning_vi": "làm bối rối",
+          "example_en": "His sudden change of plan confused everyone.",
+          "example_vi": "Sự thay đổi kế hoạch đột ngột của anh ấy làm mọi người bối rối."
+        },
+        {
+          "meaning_vi": "làm bối rối",
+          "example_en": "Don't let the technical terms confuse you.",
+          "example_vi": "Đừng để các thuật ngữ kỹ thuật làm bạn bối rối."
+        },
+        {
+          "meaning_vi": "làm bối rối",
+          "example_en": "The complex map confused the tourists.",
+          "example_vi": "Bản đồ phức tạp làm các du khách bối rối."
+        },
+        {
+          "meaning_vi": "làm bối rối",
+          "example_en": "She was confused by his strange behavior.",
+          "example_vi": "Cô ấy đã bị làm bối rối bởi hành vi lạ lùng của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ phù hợp.",
+      "word": "confuse",
+      "normalized_word": "confuse",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Don't confuse the papers on my desk.",
+      "example_vi_clean": "Đừng làm lộn xộn các giấy tờ trên bàn của tôi."
+    },
+    {
+      "id": 24838,
+      "quiz_meaning_vi": "lẫn lộn",
+      "meaning_vi_clean": "lẫn lộn; bối rối",
+      "examples_clean": [
+        {
+          "meaning_vi": "lẫn lộn",
+          "example_en": "I am confused about the dates.",
+          "example_vi": "Tôi bị lẫn lộn về các ngày tháng."
+        },
+        {
+          "meaning_vi": "lẫn lộn",
+          "example_en": "The two brothers are often confused.",
+          "example_vi": "Hai anh em thường bị lẫn lộn với nhau."
+        },
+        {
+          "meaning_vi": "lẫn lộn",
+          "example_en": "Don't get confused by the similar names.",
+          "example_vi": "Đừng bị lẫn lộn bởi những cái tên giống nhau."
+        },
+        {
+          "meaning_vi": "lẫn lộn",
+          "example_en": "The instructions were confused.",
+          "example_vi": "Các hướng dẫn đã bị lẫn lộn."
+        },
+        {
+          "meaning_vi": "lẫn lộn",
+          "example_en": "I'm confused about which bus to take.",
+          "example_vi": "Tôi bị lẫn lộn về việc nên bắt xe buýt nào."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "She looked confused when I asked her.",
+          "example_vi": "Cô ấy trông có vẻ bối rối khi tôi hỏi cô ấy."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "He felt confused by the situation.",
+          "example_vi": "Anh ấy cảm thấy bối rối bởi tình huống đó."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "They were confused by the sudden news.",
+          "example_vi": "Họ đã rất bối rối bởi tin tức đột ngột."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "I am a bit confused about what to do next.",
+          "example_vi": "Tôi hơi bối rối về việc phải làm gì tiếp theo."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "The confused student asked for help.",
+          "example_vi": "Người học sinh bối rối đã yêu cầu sự giúp đỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ. Sửa nghĩa cho phù hợp với cấp độ A2.",
+      "word": "confused",
+      "normalized_word": "confused",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I am confused about the dates.",
+      "example_vi_clean": "Tôi bị lẫn lộn về các ngày tháng."
+    },
+    {
+      "id": 24839,
+      "quiz_meaning_vi": "hậu quả",
+      "meaning_vi_clean": "hậu quả; tầm quan trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "hậu quả",
+          "example_en": "You must face the consequences of your actions.",
+          "example_vi": "Bạn phải đối mặt với hậu quả từ hành động của mình."
+        },
+        {
+          "meaning_vi": "hậu quả",
+          "example_en": "The environmental consequences are serious.",
+          "example_vi": "Các hậu quả về môi trường rất nghiêm trọng."
+        },
+        {
+          "meaning_vi": "hậu quả",
+          "example_en": "He didn't think about the consequences.",
+          "example_vi": "Anh ấy đã không nghĩ về các hậu quả."
+        },
+        {
+          "meaning_vi": "hậu quả",
+          "example_en": "There will be consequences if you are late.",
+          "example_vi": "Sẽ có hậu quả nếu bạn đến muộn."
+        },
+        {
+          "meaning_vi": "hậu quả",
+          "example_en": "The consequence of the accident was a traffic jam.",
+          "example_vi": "Hậu quả của vụ tai nạn là một vụ tắc đường."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "The decision is of great consequence to the company.",
+          "example_vi": "Quyết định này có tầm quan trọng lớn đối với công ty."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "It is a matter of little consequence.",
+          "example_vi": "Đó là một vấn đề có tầm quan trọng nhỏ."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "The meeting is of no consequence.",
+          "example_vi": "Cuộc họp không có tầm quan trọng gì cả."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "The event was of great consequence to the nation.",
+          "example_vi": "Sự kiện này có tầm quan trọng lớn đối với quốc gia."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "His opinion is of no consequence here.",
+          "example_vi": "Ý kiến của anh ấy không có tầm quan trọng ở đây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ phù hợp.",
+      "word": "consequence",
+      "normalized_word": "consequence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You must face the consequences of your actions.",
+      "example_vi_clean": "Bạn phải đối mặt với hậu quả từ hành động của mình."
+    },
+    {
+      "id": 24840,
+      "quiz_meaning_vi": "cân nhắc",
+      "meaning_vi_clean": "cân nhắc; xem xét; coi như",
+      "examples_clean": [
+        {
+          "meaning_vi": "cân nhắc",
+          "example_en": "I am considering a new job.",
+          "example_vi": "Tôi đang cân nhắc một công việc mới."
+        },
+        {
+          "meaning_vi": "cân nhắc",
+          "example_en": "We should consider all the options.",
+          "example_vi": "Chúng ta nên cân nhắc tất cả các lựa chọn."
+        },
+        {
+          "meaning_vi": "cân nhắc",
+          "example_en": "Have you considered the cost?",
+          "example_vi": "Bạn đã cân nhắc chi phí chưa?"
+        },
+        {
+          "meaning_vi": "cân nhắc",
+          "example_en": "She is considering moving to another city.",
+          "example_vi": "Cô ấy đang cân nhắc việc chuyển đến một thành phố khác."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "The committee is considering the proposal.",
+          "example_vi": "Ủy ban đang xem xét đề xuất này."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "Please consider my request carefully.",
+          "example_vi": "Vui lòng xem xét yêu cầu của tôi một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "We need to consider the impact of the decision.",
+          "example_vi": "Chúng ta cần xem xét tác động của quyết định này."
+        },
+        {
+          "meaning_vi": "coi như",
+          "example_en": "I consider him a good friend.",
+          "example_vi": "Tôi coi anh ấy như một người bạn tốt."
+        },
+        {
+          "meaning_vi": "coi như",
+          "example_en": "They consider this project a success.",
+          "example_vi": "Họ coi dự án này như một thành công."
+        },
+        {
+          "meaning_vi": "coi như",
+          "example_en": "Do you consider yourself an expert?",
+          "example_vi": "Bạn có coi mình như một chuyên gia không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ động từ sang động từ. Sửa nghĩa cho phù hợp với cấp độ A2.",
+      "word": "consider",
+      "normalized_word": "consider",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I am considering a new job.",
+      "example_vi_clean": "Tôi đang cân nhắc một công việc mới."
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24661,
+      "quiz_meaning_vi": "sự xuất hiện",
+      "meaning_vi_clean": "sự xuất hiện; diện mạo; sự trình diện",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự xuất hiện",
+          "example_en": "His sudden appearance surprised everyone in the room.",
+          "example_vi": "Sự xuất hiện đột ngột của anh ấy làm mọi người trong phòng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự xuất hiện",
+          "example_en": "The sudden appearance of the sun brightened the day.",
+          "example_vi": "Sự xuất hiện bất ngờ của mặt trời làm bừng sáng cả ngày."
+        },
+        {
+          "meaning_vi": "sự xuất hiện",
+          "example_en": "She made a brief appearance at the party.",
+          "example_vi": "Cô ấy đã xuất hiện chốc lát tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "sự xuất hiện",
+          "example_en": "The appearance of new technology changed our lives.",
+          "example_vi": "Sự xuất hiện của công nghệ mới đã thay đổi cuộc sống của chúng ta."
+        },
+        {
+          "meaning_vi": "diện mạo",
+          "example_en": "He is very concerned about his physical appearance.",
+          "example_vi": "Anh ấy rất quan tâm đến diện mạo bên ngoài của mình."
+        },
+        {
+          "meaning_vi": "diện mạo",
+          "example_en": "The house has a very modern appearance.",
+          "example_vi": "Ngôi nhà có diện mạo rất hiện đại."
+        },
+        {
+          "meaning_vi": "diện mạo",
+          "example_en": "Don't judge people by their outward appearance.",
+          "example_vi": "Đừng đánh giá con người qua vẻ bề ngoài."
+        },
+        {
+          "meaning_vi": "sự trình diện",
+          "example_en": "The witness made an appearance in court today.",
+          "example_vi": "Nhân chứng đã trình diện tại tòa hôm nay."
+        },
+        {
+          "meaning_vi": "sự trình diện",
+          "example_en": "The actor made a special appearance on the show.",
+          "example_vi": "Nam diễn viên đã có một màn trình diện đặc biệt trên chương trình."
+        },
+        {
+          "meaning_vi": "diện mạo",
+          "example_en": "The city has changed its appearance over the years.",
+          "example_vi": "Thành phố đã thay đổi diện mạo qua nhiều năm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa hiếm/cổ, bổ sung đủ 10 ví dụ minh họa.",
+      "word": "appearance",
+      "normalized_word": "appearance",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His sudden appearance surprised everyone in the room.",
+      "example_vi_clean": "Sự xuất hiện đột ngột của anh ấy làm mọi người trong phòng ngạc nhiên."
+    },
+    {
+      "id": 24662,
+      "quiz_meaning_vi": "gắn vào",
+      "meaning_vi_clean": "gắn vào; ứng dụng; xin",
+      "examples_clean": [
+        {
+          "meaning_vi": "gắn vào",
+          "example_en": "Apply the cream to the affected area twice a day.",
+          "example_vi": "Bôi kem vào vùng bị ảnh hưởng hai lần một ngày."
+        },
+        {
+          "meaning_vi": "gắn vào",
+          "example_en": "You need to apply a little pressure to open the lid.",
+          "example_vi": "Bạn cần dùng một chút lực để mở nắp."
+        },
+        {
+          "meaning_vi": "gắn vào",
+          "example_en": "Apply the sticker firmly to the surface.",
+          "example_vi": "Dán miếng nhãn chặt vào bề mặt."
+        },
+        {
+          "meaning_vi": "gắn vào",
+          "example_en": "She applied paint to the canvas with a brush.",
+          "example_vi": "Cô ấy bôi sơn lên vải bằng cọ."
+        },
+        {
+          "meaning_vi": "ứng dụng",
+          "example_en": "We should apply these new methods to our work.",
+          "example_vi": "Chúng ta nên áp dụng những phương pháp mới này vào công việc."
+        },
+        {
+          "meaning_vi": "ứng dụng",
+          "example_en": "The theory is difficult to apply in real life.",
+          "example_vi": "Lý thuyết này khó áp dụng trong cuộc sống thực tế."
+        },
+        {
+          "meaning_vi": "ứng dụng",
+          "example_en": "He applied his knowledge to solve the problem.",
+          "example_vi": "Anh ấy đã áp dụng kiến thức của mình để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "xin",
+          "example_en": "I decided to apply for a new job yesterday.",
+          "example_vi": "Tôi đã quyết định nộp đơn xin việc mới vào hôm qua."
+        },
+        {
+          "meaning_vi": "xin",
+          "example_en": "She is applying for a scholarship at the university.",
+          "example_vi": "Cô ấy đang nộp đơn xin học bổng tại trường đại học."
+        },
+        {
+          "meaning_vi": "xin",
+          "example_en": "Many students apply for this program every year.",
+          "example_vi": "Nhiều sinh viên nộp đơn xin tham gia chương trình này mỗi năm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa không phù hợp, bổ sung đủ 10 ví dụ.",
+      "word": "apply",
+      "normalized_word": "apply",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Apply the cream to the affected area twice a day.",
+      "example_vi_clean": "Bôi kem vào vùng bị ảnh hưởng hai lần một ngày."
+    },
+    {
+      "id": 24663,
+      "quiz_meaning_vi": "được bổ nhiệm",
+      "meaning_vi_clean": "được bổ nhiệm; sự hẹn gặp",
+      "examples_clean": [
+        {
+          "meaning_vi": "được bổ nhiệm",
+          "example_en": "His appointment as manager was welcomed by the team.",
+          "example_vi": "Việc anh ấy được bổ nhiệm làm quản lý đã được cả nhóm hoan nghênh."
+        },
+        {
+          "meaning_vi": "được bổ nhiệm",
+          "example_en": "The appointment of the new director was announced today.",
+          "example_vi": "Việc bổ nhiệm giám đốc mới đã được thông báo hôm nay."
+        },
+        {
+          "meaning_vi": "được bổ nhiệm",
+          "example_en": "She accepted the appointment to the board of directors.",
+          "example_vi": "Cô ấy đã chấp nhận việc được bổ nhiệm vào hội đồng quản trị."
+        },
+        {
+          "meaning_vi": "được bổ nhiệm",
+          "example_en": "The official appointment will take place next week.",
+          "example_vi": "Việc bổ nhiệm chính thức sẽ diễn ra vào tuần tới."
+        },
+        {
+          "meaning_vi": "sự hẹn gặp",
+          "example_en": "I have a doctor's appointment at three o'clock.",
+          "example_vi": "Tôi có một cuộc hẹn với bác sĩ lúc ba giờ."
+        },
+        {
+          "meaning_vi": "sự hẹn gặp",
+          "example_en": "Please make an appointment before you visit the office.",
+          "example_vi": "Vui lòng đặt lịch hẹn trước khi bạn đến văn phòng."
+        },
+        {
+          "meaning_vi": "sự hẹn gặp",
+          "example_en": "I missed my appointment because of the heavy traffic.",
+          "example_vi": "Tôi đã lỡ cuộc hẹn vì tắc đường."
+        },
+        {
+          "meaning_vi": "sự hẹn gặp",
+          "example_en": "She confirmed her appointment for the interview.",
+          "example_vi": "Cô ấy đã xác nhận cuộc hẹn cho buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "sự hẹn gặp",
+          "example_en": "We have an appointment to meet at the cafe.",
+          "example_vi": "Chúng tôi có một cuộc hẹn gặp nhau tại quán cà phê."
+        },
+        {
+          "meaning_vi": "sự hẹn gặp",
+          "example_en": "Can I change my appointment to a later time?",
+          "example_vi": "Tôi có thể đổi cuộc hẹn sang giờ muộn hơn được không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa cổ/hiếm, bổ sung đủ 10 ví dụ.",
+      "word": "appointment",
+      "normalized_word": "appointment",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His appointment as manager was welcomed by the team.",
+      "example_vi_clean": "Việc anh ấy được bổ nhiệm làm quản lý đã được cả nhóm hoan nghênh."
+    },
+    {
+      "id": 24664,
+      "quiz_meaning_vi": "đánh giá",
+      "meaning_vi_clean": "đánh giá; cảm kích",
+      "examples_clean": [
+        {
+          "meaning_vi": "đánh giá",
+          "example_en": "It is difficult to appreciate the full extent of the problem.",
+          "example_vi": "Thật khó để đánh giá đúng mức độ nghiêm trọng của vấn đề."
+        },
+        {
+          "meaning_vi": "đánh giá",
+          "example_en": "We need to appreciate the risks involved in this project.",
+          "example_vi": "Chúng ta cần đánh giá các rủi ro liên quan đến dự án này."
+        },
+        {
+          "meaning_vi": "đánh giá",
+          "example_en": "He failed to appreciate the importance of the situation.",
+          "example_vi": "Anh ấy đã không đánh giá đúng tầm quan trọng của tình huống."
+        },
+        {
+          "meaning_vi": "đánh giá",
+          "example_en": "Experts are trying to appreciate the impact of the new law.",
+          "example_vi": "Các chuyên gia đang cố gắng đánh giá tác động của luật mới."
+        },
+        {
+          "meaning_vi": "cảm kích",
+          "example_en": "I really appreciate your help with this task.",
+          "example_vi": "Tôi thực sự cảm kích sự giúp đỡ của bạn với nhiệm vụ này."
+        },
+        {
+          "meaning_vi": "cảm kích",
+          "example_en": "We appreciate your patience during this busy time.",
+          "example_vi": "Chúng tôi cảm kích sự kiên nhẫn của bạn trong thời gian bận rộn này."
+        },
+        {
+          "meaning_vi": "cảm kích",
+          "example_en": "She appreciated the gift very much.",
+          "example_vi": "Cô ấy rất cảm kích món quà đó."
+        },
+        {
+          "meaning_vi": "cảm kích",
+          "example_en": "I would appreciate it if you could arrive on time.",
+          "example_vi": "Tôi sẽ rất cảm kích nếu bạn có thể đến đúng giờ."
+        },
+        {
+          "meaning_vi": "cảm kích",
+          "example_en": "They expressed how much they appreciated the support.",
+          "example_vi": "Họ bày tỏ sự cảm kích đối với sự hỗ trợ đó."
+        },
+        {
+          "meaning_vi": "cảm kích",
+          "example_en": "I appreciate your honesty in this matter.",
+          "example_vi": "Tôi cảm kích sự trung thực của bạn trong vấn đề này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa chuyên ngành tài chính, bổ sung đủ 10 ví dụ.",
+      "word": "appreciate",
+      "normalized_word": "appreciate",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It is difficult to appreciate the full extent of the problem.",
+      "example_vi_clean": "Thật khó để đánh giá đúng mức độ nghiêm trọng của vấn đề."
+    },
+    {
+      "id": 24665,
+      "quiz_meaning_vi": "thích hợp",
+      "meaning_vi_clean": "thích hợp; chiếm hữu",
+      "examples_clean": [
+        {
+          "meaning_vi": "thích hợp",
+          "example_en": "Please choose an appropriate outfit for the interview.",
+          "example_vi": "Vui lòng chọn trang phục thích hợp cho buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "thích hợp",
+          "example_en": "Is this tone appropriate for a formal letter?",
+          "example_vi": "Giọng điệu này có thích hợp cho một lá thư trang trọng không?"
+        },
+        {
+          "meaning_vi": "thích hợp",
+          "example_en": "It is not appropriate to talk loudly in the library.",
+          "example_vi": "Nói chuyện lớn tiếng trong thư viện là không thích hợp."
+        },
+        {
+          "meaning_vi": "thích hợp",
+          "example_en": "He gave an appropriate answer to the question.",
+          "example_vi": "Anh ấy đã đưa ra câu trả lời thích hợp cho câu hỏi."
+        },
+        {
+          "meaning_vi": "chiếm hữu",
+          "example_en": "The government decided to appropriate the land for public use.",
+          "example_vi": "Chính phủ quyết định chiếm hữu khu đất để sử dụng cho mục đích công cộng."
+        },
+        {
+          "meaning_vi": "chiếm hữu",
+          "example_en": "He tried to appropriate the company's funds for his own use.",
+          "example_vi": "Anh ta đã cố gắng chiếm hữu quỹ của công ty cho mục đích riêng."
+        },
+        {
+          "meaning_vi": "chiếm hữu",
+          "example_en": "They appropriated the building for the new school.",
+          "example_vi": "Họ đã chiếm hữu tòa nhà để làm trường học mới."
+        },
+        {
+          "meaning_vi": "chiếm hữu",
+          "example_en": "The committee appropriated money for the new project.",
+          "example_vi": "Ủy ban đã dành riêng một khoản tiền cho dự án mới."
+        },
+        {
+          "meaning_vi": "thích hợp",
+          "example_en": "We need to find an appropriate solution to this issue.",
+          "example_vi": "Chúng ta cần tìm một giải pháp thích hợp cho vấn đề này."
+        },
+        {
+          "meaning_vi": "thích hợp",
+          "example_en": "The teacher used appropriate examples to explain the lesson.",
+          "example_vi": "Giáo viên đã sử dụng các ví dụ thích hợp để giải thích bài học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "appropriate",
+      "normalized_word": "appropriate",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Please choose an appropriate outfit for the interview.",
+      "example_vi_clean": "Vui lòng chọn trang phục thích hợp cho buổi phỏng vấn."
+    },
+    {
+      "id": 24666,
+      "quiz_meaning_vi": "thuật kiến trúc",
+      "meaning_vi_clean": "thuật kiến trúc; công trình kiến trúc; cấu trúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuật kiến trúc",
+          "example_en": "She is studying architecture at the university.",
+          "example_vi": "Cô ấy đang học thuật kiến trúc tại trường đại học."
+        },
+        {
+          "meaning_vi": "thuật kiến trúc",
+          "example_en": "His interest in architecture started when he was a child.",
+          "example_vi": "Sự quan tâm của anh ấy đối với thuật kiến trúc bắt đầu từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "thuật kiến trúc",
+          "example_en": "The book explores the history of modern architecture.",
+          "example_vi": "Cuốn sách khám phá lịch sử của thuật kiến trúc hiện đại."
+        },
+        {
+          "meaning_vi": "thuật kiến trúc",
+          "example_en": "Architecture requires both creativity and technical skills.",
+          "example_vi": "Thuật kiến trúc đòi hỏi cả sự sáng tạo và kỹ năng kỹ thuật."
+        },
+        {
+          "meaning_vi": "công trình kiến trúc",
+          "example_en": "The city is famous for its beautiful architecture.",
+          "example_vi": "Thành phố nổi tiếng với những công trình kiến trúc tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "công trình kiến trúc",
+          "example_en": "We visited many ancient architectures during our trip.",
+          "example_vi": "Chúng tôi đã thăm nhiều công trình kiến trúc cổ trong chuyến đi."
+        },
+        {
+          "meaning_vi": "công trình kiến trúc",
+          "example_en": "The cathedral is a masterpiece of Gothic architecture.",
+          "example_vi": "Nhà thờ lớn là một kiệt tác của công trình kiến trúc Gothic."
+        },
+        {
+          "meaning_vi": "cấu trúc",
+          "example_en": "The architecture of the computer system is very complex.",
+          "example_vi": "Cấu trúc của hệ thống máy tính rất phức tạp."
+        },
+        {
+          "meaning_vi": "cấu trúc",
+          "example_en": "They changed the architecture of the software to improve speed.",
+          "example_vi": "Họ đã thay đổi cấu trúc của phần mềm để cải thiện tốc độ."
+        },
+        {
+          "meaning_vi": "công trình kiến trúc",
+          "example_en": "The local architecture reflects the culture of the region.",
+          "example_vi": "Công trình kiến trúc địa phương phản ánh văn hóa của vùng đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "architecture",
+      "normalized_word": "architecture",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is studying architecture at the university.",
+      "example_vi_clean": "Cô ấy đang học thuật kiến trúc tại trường đại học."
+    },
+    {
+      "id": 24667,
+      "quiz_meaning_vi": "diện tích",
+      "meaning_vi_clean": "diện tích; vùng; phạm vi",
+      "examples_clean": [
+        {
+          "meaning_vi": "diện tích",
+          "example_en": "The total area of the house is 100 square meters.",
+          "example_vi": "Tổng diện tích của ngôi nhà là 100 mét vuông."
+        },
+        {
+          "meaning_vi": "diện tích",
+          "example_en": "Calculate the area of the circle.",
+          "example_vi": "Hãy tính diện tích của hình tròn."
+        },
+        {
+          "meaning_vi": "diện tích",
+          "example_en": "The forest covers a large area.",
+          "example_vi": "Khu rừng bao phủ một diện tích lớn."
+        },
+        {
+          "meaning_vi": "diện tích",
+          "example_en": "The living area is very spacious.",
+          "example_vi": "Diện tích phòng khách rất rộng rãi."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "This is a very dangerous area to live in.",
+          "example_vi": "Đây là một vùng rất nguy hiểm để sinh sống."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "Many people moved to this area for work.",
+          "example_vi": "Nhiều người đã chuyển đến vùng này để làm việc."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "The rural area is very quiet and peaceful.",
+          "example_vi": "Vùng nông thôn rất yên tĩnh và thanh bình."
+        },
+        {
+          "meaning_vi": "phạm vi",
+          "example_en": "This topic is outside the area of my expertise.",
+          "example_vi": "Chủ đề này nằm ngoài phạm vi chuyên môn của tôi."
+        },
+        {
+          "meaning_vi": "phạm vi",
+          "example_en": "We need to define the area of our research.",
+          "example_vi": "Chúng ta cần xác định phạm vi nghiên cứu của mình."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "The coastal area is popular with tourists.",
+          "example_vi": "Vùng ven biển rất phổ biến với khách du lịch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "area",
+      "normalized_word": "area",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The total area of the house is 100 square meters.",
+      "example_vi_clean": "Tổng diện tích của ngôi nhà là 100 mét vuông."
+    },
+    {
+      "id": 24668,
+      "quiz_meaning_vi": "chứng tỏ",
+      "meaning_vi_clean": "chứng tỏ; tranh cãi",
+      "examples_clean": [
+        {
+          "meaning_vi": "chứng tỏ",
+          "example_en": "His actions argue a lack of interest in the project.",
+          "example_vi": "Hành động của anh ấy chứng tỏ sự thiếu quan tâm đến dự án."
+        },
+        {
+          "meaning_vi": "chứng tỏ",
+          "example_en": "The results argue for a change in our strategy.",
+          "example_vi": "Kết quả chứng tỏ cần có sự thay đổi trong chiến lược của chúng ta."
+        },
+        {
+          "meaning_vi": "chứng tỏ",
+          "example_en": "The evidence argues that he is innocent.",
+          "example_vi": "Bằng chứng chứng tỏ rằng anh ấy vô tội."
+        },
+        {
+          "meaning_vi": "chứng tỏ",
+          "example_en": "These facts argue against your theory.",
+          "example_vi": "Những sự thật này chứng tỏ chống lại lý thuyết của bạn."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "They often argue about politics at dinner.",
+          "example_vi": "Họ thường tranh cãi về chính trị trong bữa tối."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "It is useless to argue with him when he is angry.",
+          "example_vi": "Thật vô ích khi tranh cãi với anh ấy khi anh ấy đang giận."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "The couple argued about where to go on vacation.",
+          "example_vi": "Cặp đôi đã tranh cãi về việc đi nghỉ mát ở đâu."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "We argued for hours but couldn't reach an agreement.",
+          "example_vi": "Chúng tôi đã tranh cãi hàng giờ nhưng không thể đạt được thỏa thuận."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "Don't argue with your parents about small things.",
+          "example_vi": "Đừng tranh cãi với cha mẹ về những chuyện nhỏ nhặt."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "They were arguing over who should pay the bill.",
+          "example_vi": "Họ đang tranh cãi xem ai nên trả hóa đơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "argue",
+      "normalized_word": "argue",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "His actions argue a lack of interest in the project.",
+      "example_vi_clean": "Hành động của anh ấy chứng tỏ sự thiếu quan tâm đến dự án."
+    },
+    {
+      "id": 24669,
+      "quiz_meaning_vi": "lý lẽ",
+      "meaning_vi_clean": "lý lẽ; sự tranh cãi",
+      "examples_clean": [
+        {
+          "meaning_vi": "lý lẽ",
+          "example_en": "He presented a strong argument for the new policy.",
+          "example_vi": "Anh ấy đã đưa ra một lý lẽ thuyết phục cho chính sách mới."
+        },
+        {
+          "meaning_vi": "lý lẽ",
+          "example_en": "There is no logical argument to support your claim.",
+          "example_vi": "Không có lý lẽ logic nào để ủng hộ tuyên bố của bạn."
+        },
+        {
+          "meaning_vi": "lý lẽ",
+          "example_en": "Her argument was based on facts and figures.",
+          "example_vi": "Lý lẽ của cô ấy dựa trên các sự kiện và số liệu."
+        },
+        {
+          "meaning_vi": "lý lẽ",
+          "example_en": "He used a clever argument to win the debate.",
+          "example_vi": "Anh ấy đã sử dụng một lý lẽ thông minh để thắng cuộc tranh luận."
+        },
+        {
+          "meaning_vi": "sự tranh cãi",
+          "example_en": "They had a heated argument about the money.",
+          "example_vi": "Họ đã có một sự tranh cãi nảy lửa về tiền bạc."
+        },
+        {
+          "meaning_vi": "sự tranh cãi",
+          "example_en": "The argument lasted for the whole evening.",
+          "example_vi": "Sự tranh cãi kéo dài suốt cả buổi tối."
+        },
+        {
+          "meaning_vi": "sự tranh cãi",
+          "example_en": "I don't want to get into an argument with you.",
+          "example_vi": "Tôi không muốn vướng vào một sự tranh cãi với bạn."
+        },
+        {
+          "meaning_vi": "sự tranh cãi",
+          "example_en": "The argument ended when he walked out of the room.",
+          "example_vi": "Sự tranh cãi kết thúc khi anh ấy bước ra khỏi phòng."
+        },
+        {
+          "meaning_vi": "sự tranh cãi",
+          "example_en": "Their argument was overheard by the neighbors.",
+          "example_vi": "Sự tranh cãi của họ đã bị hàng xóm nghe thấy."
+        },
+        {
+          "meaning_vi": "lý lẽ",
+          "example_en": "The main argument of the book is that education is key.",
+          "example_vi": "Lý lẽ chính của cuốn sách là giáo dục là chìa khóa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "argument",
+      "normalized_word": "argument",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He presented a strong argument for the new policy.",
+      "example_vi_clean": "Anh ấy đã đưa ra một lý lẽ thuyết phục cho chính sách mới."
+    },
+    {
+      "id": 24670,
+      "quiz_meaning_vi": "ghế bành",
+      "meaning_vi_clean": "ghế bành",
+      "examples_clean": [
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "He sat in his favorite armchair to read a book.",
+          "example_vi": "Anh ấy ngồi vào chiếc ghế bành yêu thích của mình để đọc sách."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "The living room has two comfortable armchairs.",
+          "example_vi": "Phòng khách có hai chiếc ghế bành thoải mái."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "She fell asleep in the armchair.",
+          "example_vi": "Cô ấy đã ngủ thiếp đi trên chiếc ghế bành."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "He bought a new leather armchair for his office.",
+          "example_vi": "Anh ấy đã mua một chiếc ghế bành da mới cho văn phòng của mình."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "The cat is sleeping on the armchair.",
+          "example_vi": "Con mèo đang ngủ trên chiếc ghế bành."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "I prefer sitting in an armchair to a sofa.",
+          "example_vi": "Tôi thích ngồi trên ghế bành hơn là ghế sofa."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "The old man rested in his armchair by the fire.",
+          "example_vi": "Ông lão nghỉ ngơi trên chiếc ghế bành bên lò sưởi."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "She moved the armchair to the corner of the room.",
+          "example_vi": "Cô ấy đã di chuyển chiếc ghế bành vào góc phòng."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "The armchair is covered with a soft blanket.",
+          "example_vi": "Chiếc ghế bành được phủ bằng một chiếc chăn mềm."
+        },
+        {
+          "meaning_vi": "ghế bành",
+          "example_en": "He relaxed in the armchair after a long day.",
+          "example_vi": "Anh ấy thư giãn trên chiếc ghế bành sau một ngày dài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ nghĩa bóng xa rời thực tế, bổ sung đủ 10 ví dụ.",
+      "word": "armchair",
+      "normalized_word": "armchair",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He sat in his favorite armchair to read a book.",
+      "example_vi_clean": "Anh ấy ngồi vào chiếc ghế bành yêu thích của mình để đọc sách."
+    }
+  ]
+}

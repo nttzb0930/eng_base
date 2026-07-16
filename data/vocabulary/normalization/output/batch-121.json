@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25201,
+      "quiz_meaning_vi": "cho vay",
+      "meaning_vi_clean": "cho vay; cho mượn; thêm vào; giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cho vay",
+          "example_en": "The bank agreed to lend him money for his new business.",
+          "example_vi": "Ngân hàng đồng ý cho anh ấy vay tiền để kinh doanh."
+        },
+        {
+          "meaning_vi": "cho vay",
+          "example_en": "I can lend you some cash until your payday.",
+          "example_vi": "Tôi có thể cho bạn vay một ít tiền mặt cho đến ngày nhận lương."
+        },
+        {
+          "meaning_vi": "cho vay",
+          "example_en": "She lent him enough money to buy a car.",
+          "example_vi": "Cô ấy đã cho anh ta vay đủ tiền để mua một chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "cho vay",
+          "example_en": "They refuse to lend to people with poor credit.",
+          "example_vi": "Họ từ chối cho những người có tín dụng kém vay tiền."
+        },
+        {
+          "meaning_vi": "cho mượn",
+          "example_en": "Could you lend me your pen for a moment?",
+          "example_vi": "Bạn có thể cho tôi mượn cây bút một lát được không?"
+        },
+        {
+          "meaning_vi": "cho mượn",
+          "example_en": "He lent me his book to read over the weekend.",
+          "example_vi": "Anh ấy cho tôi mượn cuốn sách để đọc vào cuối tuần."
+        },
+        {
+          "meaning_vi": "thêm vào",
+          "example_en": "The bright cushions lend a splash of color to the room.",
+          "example_vi": "Những chiếc gối sáng màu thêm vào một chút sắc màu cho căn phòng."
+        },
+        {
+          "meaning_vi": "thêm vào",
+          "example_en": "Her presence lent a sense of calm to the meeting.",
+          "example_vi": "Sự hiện diện của cô ấy thêm vào cảm giác bình tĩnh cho cuộc họp."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "Can you lend me a hand with these heavy boxes?",
+          "example_vi": "Bạn có thể giúp tôi một tay với những chiếc hộp nặng này không?"
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "I am happy to lend my support to your project.",
+          "example_vi": "Tôi rất vui lòng giúp đỡ dự án của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với từ loại verb, bổ sung ví dụ minh họa đầy đủ các nghĩa.",
+      "word": "lend",
+      "normalized_word": "lend",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The bank agreed to lend him money for his new business.",
+      "example_vi_clean": "Ngân hàng đồng ý cho anh ấy vay tiền để kinh doanh."
+    },
+    {
+      "id": 25202,
+      "quiz_meaning_vi": "ít hơn",
+      "meaning_vi_clean": "ít hơn; kém hơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "ít hơn",
+          "example_en": "I have less work to do today than yesterday.",
+          "example_vi": "Hôm nay tôi có ít việc phải làm hơn hôm qua."
+        },
+        {
+          "meaning_vi": "ít hơn",
+          "example_en": "There were less people at the party than I expected.",
+          "example_vi": "Có ít người ở bữa tiệc hơn tôi mong đợi."
+        },
+        {
+          "meaning_vi": "ít hơn",
+          "example_en": "He spends less time watching TV these days.",
+          "example_vi": "Dạo này anh ấy dành ít thời gian xem TV hơn."
+        },
+        {
+          "meaning_vi": "ít hơn",
+          "example_en": "We need to use less plastic in our daily lives.",
+          "example_vi": "Chúng ta cần sử dụng ít nhựa hơn trong cuộc sống hàng ngày."
+        },
+        {
+          "meaning_vi": "kém hơn",
+          "example_en": "The second movie was less interesting than the first one.",
+          "example_vi": "Bộ phim thứ hai kém thú vị hơn bộ phim đầu tiên."
+        },
+        {
+          "meaning_vi": "kém hơn",
+          "example_en": "This version is less effective than the original.",
+          "example_vi": "Phiên bản này kém hiệu quả hơn bản gốc."
+        },
+        {
+          "meaning_vi": "kém hơn",
+          "example_en": "He felt less confident after the failed test.",
+          "example_vi": "Anh ấy cảm thấy kém tự tin hơn sau bài kiểm tra thất bại."
+        },
+        {
+          "meaning_vi": "kém hơn",
+          "example_en": "The quality of the product is less than satisfactory.",
+          "example_vi": "Chất lượng sản phẩm kém hơn mức hài lòng."
+        },
+        {
+          "meaning_vi": "ít hơn",
+          "example_en": "She earns less money than her brother.",
+          "example_vi": "Cô ấy kiếm được ít tiền hơn anh trai mình."
+        },
+        {
+          "meaning_vi": "kém hơn",
+          "example_en": "The weather today is less pleasant than yesterday.",
+          "example_vi": "Thời tiết hôm nay kém dễ chịu hơn hôm qua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ giới từ thành phó từ/tính từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "less",
+      "normalized_word": "less",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I have less work to do today than yesterday.",
+      "example_vi_clean": "Hôm nay tôi có ít việc phải làm hơn hôm qua."
+    },
+    {
+      "id": 25203,
+      "quiz_meaning_vi": "tự do",
+      "meaning_vi_clean": "tự do; quyền tự do",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự do",
+          "example_en": "The birds were set free and regained their liberty.",
+          "example_vi": "Những con chim được thả tự do và lấy lại sự tự do của chúng."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "He fought for the liberty of his people.",
+          "example_vi": "Anh ấy đã chiến đấu vì sự tự do của dân tộc mình."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "They cherish their liberty above all else.",
+          "example_vi": "Họ trân trọng sự tự do của mình hơn bất cứ thứ gì khác."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "The country finally achieved its liberty after years of struggle.",
+          "example_vi": "Đất nước cuối cùng đã đạt được sự tự do sau nhiều năm đấu tranh."
+        },
+        {
+          "meaning_vi": "quyền tự do",
+          "example_en": "Freedom of speech is a fundamental liberty.",
+          "example_vi": "Tự do ngôn luận là một quyền tự do cơ bản."
+        },
+        {
+          "meaning_vi": "quyền tự do",
+          "example_en": "We must protect our civil liberties.",
+          "example_vi": "Chúng ta phải bảo vệ các quyền tự do dân sự của mình."
+        },
+        {
+          "meaning_vi": "quyền tự do",
+          "example_en": "The constitution guarantees the liberty of every citizen.",
+          "example_vi": "Hiến pháp đảm bảo quyền tự do của mọi công dân."
+        },
+        {
+          "meaning_vi": "quyền tự do",
+          "example_en": "She values her personal liberty highly.",
+          "example_vi": "Cô ấy đánh giá rất cao quyền tự do cá nhân của mình."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "Everyone has the right to life and liberty.",
+          "example_vi": "Mọi người đều có quyền sống và quyền tự do."
+        },
+        {
+          "meaning_vi": "quyền tự do",
+          "example_en": "The law protects the liberty of the individual.",
+          "example_vi": "Pháp luật bảo vệ quyền tự do của cá nhân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ các nghĩa phụ không phù hợp cấp độ A2.",
+      "word": "liberty",
+      "normalized_word": "liberty",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The birds were set free and regained their liberty.",
+      "example_vi_clean": "Những con chim được thả tự do và lấy lại sự tự do của chúng."
+    },
+    {
+      "id": 25204,
+      "quiz_meaning_vi": "giấy phép",
+      "meaning_vi_clean": "giấy phép; sự cho phép",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấy phép",
+          "example_en": "You need a valid driver's license to operate a car.",
+          "example_vi": "Bạn cần một giấy phép lái xe hợp lệ để điều khiển ô tô."
+        },
+        {
+          "meaning_vi": "giấy phép",
+          "example_en": "The restaurant lost its liquor license yesterday.",
+          "example_vi": "Nhà hàng đã bị mất giấy phép kinh doanh rượu ngày hôm qua."
+        },
+        {
+          "meaning_vi": "giấy phép",
+          "example_en": "He applied for a fishing license at the local office.",
+          "example_vi": "Anh ấy đã nộp đơn xin giấy phép câu cá tại văn phòng địa phương."
+        },
+        {
+          "meaning_vi": "giấy phép",
+          "example_en": "Do you have a license to carry that weapon?",
+          "example_vi": "Bạn có giấy phép mang theo vũ khí đó không?"
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "They were granted a license to build on this land.",
+          "example_vi": "Họ đã được cấp sự cho phép để xây dựng trên mảnh đất này."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "The company has a license to use the new technology.",
+          "example_vi": "Công ty có sự cho phép để sử dụng công nghệ mới."
+        },
+        {
+          "meaning_vi": "giấy phép",
+          "example_en": "She showed her pilot's license to the inspector.",
+          "example_vi": "Cô ấy đã đưa giấy phép phi công cho thanh tra xem."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "The government gave them a license to operate the mine.",
+          "example_vi": "Chính phủ đã cấp cho họ sự cho phép để vận hành mỏ."
+        },
+        {
+          "meaning_vi": "giấy phép",
+          "example_en": "Make sure your software license is up to date.",
+          "example_vi": "Hãy đảm bảo giấy phép phần mềm của bạn được cập nhật."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "He obtained a license to conduct research in the park.",
+          "example_vi": "Anh ấy đã có được sự cho phép để tiến hành nghiên cứu trong công viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ verb thành noun, chuẩn hóa nghĩa và ví dụ.",
+      "word": "licence",
+      "normalized_word": "licence",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You need a valid driver's license to operate a car.",
+      "example_vi_clean": "Bạn cần một giấy phép lái xe hợp lệ để điều khiển ô tô."
+    },
+    {
+      "id": 25205,
+      "quiz_meaning_vi": "cấp giấy phép",
+      "meaning_vi_clean": "cấp giấy phép; cho phép",
+      "examples_clean": [
+        {
+          "meaning_vi": "cấp giấy phép",
+          "example_en": "The government will license the new software company.",
+          "example_vi": "Chính phủ sẽ cấp giấy phép cho công ty phần mềm mới."
+        },
+        {
+          "meaning_vi": "cấp giấy phép",
+          "example_en": "They are licensed to sell alcohol in this area.",
+          "example_vi": "Họ được cấp giấy phép bán rượu trong khu vực này."
+        },
+        {
+          "meaning_vi": "cấp giấy phép",
+          "example_en": "The state licenses all doctors before they can practice.",
+          "example_vi": "Nhà nước cấp giấy phép cho tất cả bác sĩ trước khi họ có thể hành nghề."
+        },
+        {
+          "meaning_vi": "cấp giấy phép",
+          "example_en": "The agency licenses businesses that meet safety standards.",
+          "example_vi": "Cơ quan này cấp giấy phép cho các doanh nghiệp đáp ứng tiêu chuẩn an toàn."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The contract licenses the use of their brand name.",
+          "example_vi": "Hợp đồng cho phép việc sử dụng tên thương hiệu của họ."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "They were licensed to use the patented design.",
+          "example_vi": "Họ được cho phép sử dụng thiết kế đã được cấp bằng sáng chế."
+        },
+        {
+          "meaning_vi": "cấp giấy phép",
+          "example_en": "The city licenses street vendors every year.",
+          "example_vi": "Thành phố cấp giấy phép cho những người bán hàng rong mỗi năm."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The agreement licenses the studio to distribute the film.",
+          "example_vi": "Thỏa thuận cho phép hãng phim phân phối bộ phim."
+        },
+        {
+          "meaning_vi": "cấp giấy phép",
+          "example_en": "He is licensed to teach music in public schools.",
+          "example_vi": "Anh ấy được cấp giấy phép dạy nhạc tại các trường công lập."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The permit licenses them to enter the restricted area.",
+          "example_vi": "Giấy phép cho phép họ đi vào khu vực hạn chế."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ noun thành verb, chuẩn hóa nghĩa và ví dụ.",
+      "word": "license",
+      "normalized_word": "license",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The government will license the new software company.",
+      "example_vi_clean": "Chính phủ sẽ cấp giấy phép cho công ty phần mềm mới."
+    },
+    {
+      "id": 25206,
+      "quiz_meaning_vi": "có khả năng",
+      "meaning_vi_clean": "có khả năng; có vẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "có khả năng",
+          "example_en": "It is likely that it will rain later today.",
+          "example_vi": "Có khả năng là trời sẽ mưa vào cuối ngày hôm nay."
+        },
+        {
+          "meaning_vi": "có khả năng",
+          "example_en": "He is likely to win the competition.",
+          "example_vi": "Anh ấy có khả năng sẽ thắng cuộc thi."
+        },
+        {
+          "meaning_vi": "có khả năng",
+          "example_en": "They are likely to arrive before noon.",
+          "example_vi": "Họ có khả năng sẽ đến trước buổi trưa."
+        },
+        {
+          "meaning_vi": "có khả năng",
+          "example_en": "It is very likely that the price will increase.",
+          "example_vi": "Rất có khả năng là giá sẽ tăng."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "That seems like a likely story.",
+          "example_vi": "Đó có vẻ là một câu chuyện đáng tin."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "He is a likely candidate for the job.",
+          "example_vi": "Anh ấy có vẻ là một ứng viên phù hợp cho công việc."
+        },
+        {
+          "meaning_vi": "có khả năng",
+          "example_en": "We are likely to finish the project on time.",
+          "example_vi": "Chúng tôi có khả năng sẽ hoàn thành dự án đúng hạn."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "It is a likely place for them to hide.",
+          "example_vi": "Đó có vẻ là một nơi thích hợp để họ ẩn náu."
+        },
+        {
+          "meaning_vi": "có khả năng",
+          "example_en": "She is likely to be promoted soon.",
+          "example_vi": "Cô ấy có khả năng sẽ sớm được thăng chức."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "That is a likely explanation for the problem.",
+          "example_vi": "Đó có vẻ là một lời giải thích hợp lý cho vấn đề."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ phó từ thành tính từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "likely",
+      "normalized_word": "likely",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is likely that it will rain later today.",
+      "example_vi_clean": "Có khả năng là trời sẽ mưa vào cuối ngày hôm nay."
+    },
+    {
+      "id": 25207,
+      "quiz_meaning_vi": "môi",
+      "meaning_vi_clean": "môi; mép",
+      "examples_clean": [
+        {
+          "meaning_vi": "môi",
+          "example_en": "She applied some lipstick to her lips.",
+          "example_vi": "Cô ấy thoa một chút son lên môi."
+        },
+        {
+          "meaning_vi": "môi",
+          "example_en": "He bit his lip in nervousness.",
+          "example_vi": "Anh ấy cắn môi vì lo lắng."
+        },
+        {
+          "meaning_vi": "môi",
+          "example_en": "The child has dry lips from the cold wind.",
+          "example_vi": "Đứa trẻ bị khô môi do gió lạnh."
+        },
+        {
+          "meaning_vi": "môi",
+          "example_en": "She smiled with her lips closed.",
+          "example_vi": "Cô ấy mỉm cười với đôi môi khép chặt."
+        },
+        {
+          "meaning_vi": "mép",
+          "example_en": "The water reached the lip of the glass.",
+          "example_vi": "Nước đã chạm đến mép của chiếc ly."
+        },
+        {
+          "meaning_vi": "mép",
+          "example_en": "He sat on the lip of the fountain.",
+          "example_vi": "Anh ấy ngồi trên mép của đài phun nước."
+        },
+        {
+          "meaning_vi": "mép",
+          "example_en": "The cup has a chip on its lip.",
+          "example_vi": "Chiếc tách bị mẻ ở phần mép."
+        },
+        {
+          "meaning_vi": "mép",
+          "example_en": "The path runs along the lip of the cliff.",
+          "example_vi": "Con đường chạy dọc theo mép của vách đá."
+        },
+        {
+          "meaning_vi": "môi",
+          "example_en": "Her lips were trembling with fear.",
+          "example_vi": "Đôi môi cô ấy run rẩy vì sợ hãi."
+        },
+        {
+          "meaning_vi": "mép",
+          "example_en": "The bowl has a wide lip for easy pouring.",
+          "example_vi": "Cái bát có phần mép rộng để dễ rót."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "lip",
+      "normalized_word": "lip",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She applied some lipstick to her lips.",
+      "example_vi_clean": "Cô ấy thoa một chút son lên môi."
+    },
+    {
+      "id": 25208,
+      "quiz_meaning_vi": "lít",
+      "meaning_vi_clean": "lít",
+      "examples_clean": [
+        {
+          "meaning_vi": "lít",
+          "example_en": "I bought two liters of milk at the store.",
+          "example_vi": "Tôi đã mua hai lít sữa ở cửa hàng."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The car has a fuel tank capacity of fifty liters.",
+          "example_vi": "Chiếc xe có dung tích bình xăng là năm mươi lít."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "She drank a liter of water after the run.",
+          "example_vi": "Cô ấy đã uống một lít nước sau khi chạy bộ."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The recipe calls for one liter of vegetable stock.",
+          "example_vi": "Công thức nấu ăn cần một lít nước dùng rau củ."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "We need several liters of paint for the walls.",
+          "example_vi": "Chúng tôi cần vài lít sơn cho các bức tường."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The bottle holds exactly one liter.",
+          "example_vi": "Cái chai chứa đúng một lít."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "He poured a liter of juice into the pitcher.",
+          "example_vi": "Anh ấy rót một lít nước trái cây vào bình."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The engine uses a few liters of oil.",
+          "example_vi": "Động cơ sử dụng vài lít dầu."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "They sold the oil by the liter.",
+          "example_vi": "Họ bán dầu theo lít."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "A liter is a unit of volume.",
+          "example_vi": "Lít là một đơn vị đo thể tích."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "liter",
+      "normalized_word": "liter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought two liters of milk at the store.",
+      "example_vi_clean": "Tôi đã mua hai lít sữa ở cửa hàng."
+    },
+    {
+      "id": 25209,
+      "quiz_meaning_vi": "lít",
+      "meaning_vi_clean": "lít",
+      "examples_clean": [
+        {
+          "meaning_vi": "lít",
+          "example_en": "The fuel tank holds sixty litres of petrol.",
+          "example_vi": "Bình xăng chứa sáu mươi lít xăng."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "She added two litres of water to the pot.",
+          "example_vi": "Cô ấy thêm hai lít nước vào nồi."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The bottle contains one litre of olive oil.",
+          "example_vi": "Cái chai chứa một lít dầu ô liu."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "We consumed many litres of water during the hike.",
+          "example_vi": "Chúng tôi đã tiêu thụ nhiều lít nước trong chuyến đi bộ đường dài."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The machine uses five litres of fuel per hour.",
+          "example_vi": "Cỗ máy sử dụng năm lít nhiên liệu mỗi giờ."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "He bought a few litres of juice for the party.",
+          "example_vi": "Anh ấy đã mua vài lít nước trái cây cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The tank was filled with ten litres of liquid.",
+          "example_vi": "Cái bể đã được đổ đầy mười lít chất lỏng."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "One litre is equal to one thousand milliliters.",
+          "example_vi": "Một lít bằng một nghìn mililit."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "They measured the milk in litres.",
+          "example_vi": "Họ đã đo sữa bằng lít."
+        },
+        {
+          "meaning_vi": "lít",
+          "example_en": "The bucket has a capacity of five litres.",
+          "example_vi": "Cái xô có dung tích năm lít."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ (sử dụng cách viết 'litre' theo Anh-Anh).",
+      "word": "litre",
+      "normalized_word": "litre",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The fuel tank holds sixty litres of petrol.",
+      "example_vi_clean": "Bình xăng chứa sáu mươi lít xăng."
+    },
+    {
+      "id": 25210,
+      "quiz_meaning_vi": "sống động",
+      "meaning_vi_clean": "sống động; vui vẻ; hoạt bát",
+      "examples_clean": [
+        {
+          "meaning_vi": "sống động",
+          "example_en": "She gave a lively description of her travels.",
+          "example_vi": "Cô ấy đã đưa ra một mô tả sống động về những chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "sống động",
+          "example_en": "The painting is full of lively colors.",
+          "example_vi": "Bức tranh tràn ngập những màu sắc sống động."
+        },
+        {
+          "meaning_vi": "sống động",
+          "example_en": "He has a lively imagination.",
+          "example_vi": "Anh ấy có một trí tưởng tượng sống động."
+        },
+        {
+          "meaning_vi": "sống động",
+          "example_en": "The discussion was very lively and interesting.",
+          "example_vi": "Cuộc thảo luận rất sống động và thú vị."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "They had a lively party with music and dancing.",
+          "example_vi": "Họ đã có một bữa tiệc vui vẻ với âm nhạc và khiêu vũ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The children were in a lively mood today.",
+          "example_vi": "Những đứa trẻ hôm nay có tâm trạng rất vui vẻ."
+        },
+        {
+          "meaning_vi": "hoạt bát",
+          "example_en": "She is a lively and energetic person.",
+          "example_vi": "Cô ấy là một người hoạt bát và tràn đầy năng lượng."
+        },
+        {
+          "meaning_vi": "hoạt bát",
+          "example_en": "He is always lively in the morning.",
+          "example_vi": "Anh ấy luôn hoạt bát vào buổi sáng."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "It was a lively evening with many friends.",
+          "example_vi": "Đó là một buổi tối vui vẻ với nhiều bạn bè."
+        },
+        {
+          "meaning_vi": "hoạt bát",
+          "example_en": "The puppy is very lively and loves to play.",
+          "example_vi": "Chú cún con rất hoạt bát và thích chơi đùa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính từ 'sống' thành 'sống động', bổ sung ví dụ.",
+      "word": "lively",
+      "normalized_word": "lively",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She gave a lively description of her travels.",
+      "example_vi_clean": "Cô ấy đã đưa ra một mô tả sống động về những chuyến đi của mình."
+    }
+  ]
+}

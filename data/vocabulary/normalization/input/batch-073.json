@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-073",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24721,
+      "word": "belly",
+      "normalized_word": "belly",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'beli/",
+      "primary_meaning_vi": "bụng",
+      "meaning_vi": "bụng; dạ dày; bầu (bình, lọ); chỗ khum lên (mặt đàn viôlông), chỗ phồng ra (buồm); bụng đói thì tai điếc; + out phồng ra (cánh buồm...)",
+      "example_en": "the belly of a flask, muscle, violin, sail, or ship",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24722,
+      "word": "belong",
+      "normalized_word": "belong",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bi'lɔɳ/",
+      "primary_meaning_vi": "thuộc về",
+      "meaning_vi": "thuộc về, của, thuộc quyền sở hữu; thuộc vào (chỗ nào), ở (chỗ nào); thuộc về bổn phận của, là việc của; có liên quan tới; thuộc vào loại; là hội viên của; ăn ý nhau, hợp tính hợp tình với nhau; có quan hệ với, liên quan với",
+      "example_en": "Where does this document belong?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "That house belongs to me.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Suppose x belongs to \\mathbb{R}... (— written: x \\in \\mathbb{R})",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24723,
+      "word": "belt",
+      "normalized_word": "belt",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/belt/",
+      "primary_meaning_vi": "dây lưng",
+      "meaning_vi": "dây lưng, thắt lưng; dây đai (đeo gươm...); dây curoa; vành đai; hit; tighten; đeo thắt lưng; buộc chặt bằng dây lưng; quật bằng dây lưng; đeo vào dây đai (gươm...); đánh dấu (cừu...) bằng đai màu",
+      "example_en": "As part of the act, the fat clown's belt broke, causing his pants to fall down.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Keep your belt fastened; this is going to be quite a bumpy ride.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The motor had a single belt that snaked its way back and forth around a variety of wheels.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a belt of trees; a belt of sand",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24724,
+      "word": "bench",
+      "normalized_word": "bench",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bentʃ/",
+      "primary_meaning_vi": "ghế dài",
+      "meaning_vi": "ghế dài; bàn (của thợ mộc, thợ đóng giày); ghế ngồi của quan toà; toà án; ghế ngồi ở nghị viện Anh (của từng nhóm); cuộc trưng bày, cuộc triển lãm (chó); trưng bày, triển lãm (chó)",
+      "example_en": "They sat on a park bench and tossed bread crumbs to the ducks and pigeons.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They are awaiting a decision on the motion from the bench.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She sat on the bench for 30 years before she retired.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the bench of bishops",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24725,
+      "word": "besides",
+      "normalized_word": "besides",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "giới từ",
+      "phonetic": "/bi'saidz/",
+      "primary_meaning_vi": "ngoài ra",
+      "meaning_vi": "ngoài ra, hơn nữa, vả lại, vả chăng; ngoài... ra",
+      "example_en": "I don't feel like going out tonight. Besides, I have to work tomorrow morning anyway.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I have been to Spain but nowhere besides.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I don't want to go anywhere besides India.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24726,
+      "word": "beyond",
+      "normalized_word": "beyond",
+      "cefr_level": "A2",
+      "pos": "preposition",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'jɔnd/",
+      "primary_meaning_vi": "ở xa",
+      "meaning_vi": "ở xa, ở phía bên kia; ở bên kia; quá, vượt xa hơn; ngoài... ra, trừ...; compare; control; hope; bao la, bát ngát; vô lý, phi lý; income; the beyond kiếp sau, thế giới bên kia; nơi xa xôi khuất nẻo nhất, nơi đáy biển chân trời",
+      "example_en": "2017 July 13, Joseph Gamp \"Marvel release stirring new set images of Black Panther and we are BEYOND excited\" Metro (UK)",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She had no reason for the conviction beyond the very inadequate one that she had seen him around London.",
+          "example_vi": null
+        },
+        {
+          "example_en": "No swimming beyond this point.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Your staff went beyond my expectations in refunding my parking ticket.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24727,
+      "word": "bill",
+      "normalized_word": "bill",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bil/",
+      "primary_meaning_vi": "cái kéo liềm (để tỉa cành cây trên cao)",
+      "meaning_vi": "cái kéo liềm (để tỉa cành cây trên cao); cái kích (một thứ vũ khí); mỏ (chim); đầu mũi neo; mũi biển hẹp; chụm mỏ vào nhau (chim bồ câu); coo; tờ quảng cáo; yết thị; hoá đơn; luật dự thảo, dự luật; giấy bạc; hối phiếu ((cũng) bill of exchange); sự thưa kiện; đơn kiện; thực đơn; chương trình; giấy kiểm dịch; hoá đơn vận chuyển; danh sách người chết trong chiến tranh; đáp ứng mọi yêu cầu, làm tất cả những gì cần thiết; đưa ra xử; thanh toán hoá đơn; không xử, bác đơn; đăng lên quảng cáo; để vào chương trình; dán quảng cáo, dán yết thị; làm hoá đơn; làm danh sách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 10,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24728,
+      "word": "bit",
+      "normalized_word": "bit",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "thời quá khứ & động tính từ quá khứ của bite",
+      "phonetic": "/bit/",
+      "primary_meaning_vi": "miếng (thức ăn...)",
+      "meaning_vi": "miếng (thức ăn...); mảnh mẫu; một chút, một tí; đoạn ngắn (của một vai kịch nói, trong sách...); góc phong cảnh (thực hoặc vẽ); đồng tiền; đồ tạp nhạp; dần dần; từ từ; không còn là trẻ con nữa, lớn rồi; những em bé tội nghiệp; đồ đạc lắt nhắt tồi tàn; làm tròn bổn phận mình; đóng góp phần mình (vào việc nghĩa...); ngà ngà say; mind; không một tí nào; mũi khoan; đầu mỏ hàn; mũi kim; mỏ chìa khoá; hàm thiếc ngựa; sự kiềm chế; draw; chạy lồng lên (ngựa); nổi cơn tam bành; không tự kiềm chế được; đặt hàm thiếc (cho ngựa); làm cho (ngựa) quen hàm thiếc; kiềm chế, nén, hãm lại, kìm lại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 10,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24729,
+      "word": "bite",
+      "normalized_word": "bite",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "(bất qui tắc) động từ bit; bitten",
+      "phonetic": "/bait/",
+      "primary_meaning_vi": "sự cắn",
+      "meaning_vi": "sự cắn, sự ngoạm; miếng cắn; vết cắn; sự châm, sự đốt; nốt đốt (muỗi, ong...); miếng (thức ăn); thức ăn; sự đau nhức, sự nhức nhối của vết thương; sự cắn câu (cá...); sự bám chắt, sự ăn sâu (mỏ neo, phanh, đinh ốc...); vị cay tê (gừng, hạt tiêu...); sự châm biếm, sự chua cay (lời nói); cỏ cho vật nuôi; cắn, ngoạm; châm đốt; đâm vào (gươm...); làm đau, làm nhột; ăn mòn; làm cay tê (thức ăn); cắn câu ((nghĩa đen),  (nghĩa bóng)); bám chắt, ăn sâu, bắt vào; lừa bịp; cắn, cắn đứt ra; say mê, ham mê (cái gì); ngã xuống và chết; mím môi (để nén giận...); cố làm việc gì quá sức mình; once",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24730,
+      "word": "blackboard",
+      "normalized_word": "blackboard",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'blækbɔ:k/",
+      "primary_meaning_vi": "bảng đen",
+      "meaning_vi": "bảng đen",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

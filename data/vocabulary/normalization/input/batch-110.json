@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-110",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25091,
+      "word": "guard",
+      "normalized_word": "guard",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/gɑ:d/",
+      "primary_meaning_vi": "sự thủ thế",
+      "meaning_vi": "sự thủ thế, sự giữ miếng (đấu gươm, quyền Anh...); sự đề phòng; cái chắn; sự thay phiên gác; lính gác; đội canh gác; người bảo vệ; (số nhiều) cận vệ, vệ binh; lính canh trại giam; đội lính canh trại giam; đội quân; trưởng tàu; bảo vệ; gác, canh giữ; đề phòng, phòng, giữ gìn; che, chắn (máy, dây curoa, bánh răng...)",
+      "example_en": "The prison guard unlocked the door of the cell. After completing the repairs, he replaced the sump guard.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The president inspected the guard of honour.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The motorcycle mechanic removed the damaged chain guard.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Guard the prisoner.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25092,
+      "word": "gun",
+      "normalized_word": "gun",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": null,
+      "primary_meaning_vi": "súng",
+      "meaning_vi": "súng; phát đại bác; người chơi súng thể thao, người chơi súng săn; người đi săn; ống bơm thuốc trừ sâu; săn lùng, truy nã",
+      "example_en": "Guns were considered improvements of crossbows and catapults.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There are some guns that are not designed for killing.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He gunned down the hitmen.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He gunned the engine.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25093,
+      "word": "half-price",
+      "normalized_word": "half-price",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/'hɑ:f'prais/",
+      "primary_meaning_vi": "nửa giá tiền",
+      "meaning_vi": "nửa giá tiền; nửa tiền, nửa giá tiền",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25094,
+      "word": "ham",
+      "normalized_word": "ham",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/hæm/",
+      "primary_meaning_vi": "tỉnh",
+      "meaning_vi": "tỉnh, thành phố; làng",
+      "example_en": "a little piece of ham for the cat",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the home of the pine",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25095,
+      "word": "handbag",
+      "normalized_word": "handbag",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hændbæg/",
+      "primary_meaning_vi": "túi xách",
+      "meaning_vi": "túi xách, ví xách tay (đựng giấy tờ, tiền, son phấn...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25096,
+      "word": "handicapped",
+      "normalized_word": "handicapped",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "người bị tật nguyền",
+      "meaning_vi": "người bị tật nguyền, người tàn tật",
+      "example_en": "The candidate was handicapped by her lack of experience.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Grandpa Andy would buy the racing form the day ahead of time so he could handicap the race before he even arrived at the track.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25097,
+      "word": "handle",
+      "normalized_word": "handle",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'hændl/",
+      "primary_meaning_vi": "cán",
+      "meaning_vi": "cán, tay cầm, móc quai; điểm người ta có thể lợi dụng được; chức tước, danh hiệu; mất bình tĩnh, không tự chủ được nữa, thình lình nổi nóng; cái mũi; ,  (thông tục) hoàn toàn, đầy đủ, hết sức; cầm, sờ mó; vận dụng, sử dụng, điều khiển (bằng tay); đối xử, đối đãi; luận giải, nghiên cứu, bàn về (một vấn đề); quản lý, xử lý; chỉ huy, điều khiển (công việc, người...); buôn bán (một số mặt hàng...)",
+      "example_en": "The daily handle of a Las Vegas casino is typically millions of dollars.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The successful businessman was knighted and acquired a handle to his name.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This article describes how to find the module name from the window handle.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the Handle of the Sug in Newfoundland",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25098,
+      "word": "happily",
+      "normalized_word": "happily",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'hæpili/",
+      "primary_meaning_vi": "sung sướng",
+      "meaning_vi": "sung sướng, hạnh phúc; thật là may mắn, thật là phúc; khéo chọn, rất đắt, tài tình (lời nói, cách diễn đạt ý...); thích hợp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25099,
+      "word": "happiness",
+      "normalized_word": "happiness",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hæpinis/",
+      "primary_meaning_vi": "sự sung sướng",
+      "meaning_vi": "sự sung sướng, hạnh phúc; câu nói khéo chọn; thành ngữ khéo chọn; từ dùng rất đắt; sự may mắn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25100,
+      "word": "hardly",
+      "normalized_word": "hardly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'hɑ:dli/",
+      "primary_meaning_vi": "khắc nghiệt",
+      "meaning_vi": "khắc nghiệt, nghiêm khắc, tàn tệ, cứng rắn; khó khăn, chật vật; vừa mới, chỉ vừa mới, chỉ vừa phải; hầu như không",
+      "example_en": "I can't really deal hardly with people.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "they hardly ever watch television; I hardly think they'll come in this bad weather; it's hardly possible he could lose the election.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I think the Beatles are a really overrated band. ― Hardly!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

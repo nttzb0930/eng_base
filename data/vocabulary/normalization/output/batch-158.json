@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25571,
+      "quiz_meaning_vi": "thùng tròn",
+      "meaning_vi_clean": "thùng tròn; thùng chứa; nòng súng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thùng tròn",
+          "example_en": "The wine was stored in a large wooden barrel.",
+          "example_vi": "Rượu vang được lưu trữ trong một chiếc thùng gỗ lớn."
+        },
+        {
+          "meaning_vi": "thùng tròn",
+          "example_en": "He rolled the empty barrel across the floor.",
+          "example_vi": "Anh ấy lăn chiếc thùng rỗng qua sàn nhà."
+        },
+        {
+          "meaning_vi": "thùng tròn",
+          "example_en": "They kept the rainwater in a plastic barrel.",
+          "example_vi": "Họ giữ nước mưa trong một chiếc thùng nhựa."
+        },
+        {
+          "meaning_vi": "thùng tròn",
+          "example_en": "The oil was shipped in a heavy steel barrel.",
+          "example_vi": "Dầu được vận chuyển trong một chiếc thùng thép nặng."
+        },
+        {
+          "meaning_vi": "thùng chứa",
+          "example_en": "Throw the old papers into the trash barrel.",
+          "example_vi": "Hãy vứt những tờ giấy cũ vào thùng rác."
+        },
+        {
+          "meaning_vi": "thùng chứa",
+          "example_en": "The factory uses a barrel to mix the chemicals.",
+          "example_vi": "Nhà máy sử dụng một cái thùng để trộn các hóa chất."
+        },
+        {
+          "meaning_vi": "thùng chứa",
+          "example_en": "She filled the barrel with fresh apples.",
+          "example_vi": "Cô ấy đổ đầy táo tươi vào thùng."
+        },
+        {
+          "meaning_vi": "nòng súng",
+          "example_en": "The soldier cleaned the barrel of his rifle.",
+          "example_vi": "Người lính lau chùi nòng súng trường của mình."
+        },
+        {
+          "meaning_vi": "nòng súng",
+          "example_en": "He looked down the barrel of the gun.",
+          "example_vi": "Anh ta nhìn xuống nòng súng."
+        },
+        {
+          "meaning_vi": "nòng súng",
+          "example_en": "The barrel of the cannon was very long.",
+          "example_vi": "Nòng của khẩu đại bác rất dài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ. Giữ nghĩa phổ biến, loại bỏ nghĩa bóng và chuyên ngành không cần thiết.",
+      "word": "barrel",
+      "normalized_word": "barrel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The wine was stored in a large wooden barrel.",
+      "example_vi_clean": "Rượu vang được lưu trữ trong một chiếc thùng gỗ lớn."
+    },
+    {
+      "id": 25572,
+      "quiz_meaning_vi": "tầng hầm",
+      "meaning_vi_clean": "tầng hầm; nền móng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "We keep our old books in the basement.",
+          "example_vi": "Chúng tôi giữ những cuốn sách cũ ở tầng hầm."
+        },
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "The basement flooded during the heavy rain.",
+          "example_vi": "Tầng hầm bị ngập trong trận mưa lớn."
+        },
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "They turned the basement into a playroom.",
+          "example_vi": "Họ biến tầng hầm thành phòng chơi cho trẻ."
+        },
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "The laundry room is located in the basement.",
+          "example_vi": "Phòng giặt là nằm ở tầng hầm."
+        },
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "He went down to the basement to check the heater.",
+          "example_vi": "Anh ấy xuống tầng hầm để kiểm tra máy sưởi."
+        },
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "The basement is dark and cool.",
+          "example_vi": "Tầng hầm tối và mát mẻ."
+        },
+        {
+          "meaning_vi": "tầng hầm",
+          "example_en": "There is a small window in the basement.",
+          "example_vi": "Có một cái cửa sổ nhỏ ở tầng hầm."
+        },
+        {
+          "meaning_vi": "nền móng",
+          "example_en": "The building has a very strong concrete basement.",
+          "example_vi": "Tòa nhà có phần nền móng bê tông rất vững chắc."
+        },
+        {
+          "meaning_vi": "nền móng",
+          "example_en": "The basement of the wall was damaged by water.",
+          "example_vi": "Phần nền móng của bức tường đã bị hư hại do nước."
+        },
+        {
+          "meaning_vi": "nền móng",
+          "example_en": "They inspected the basement of the old house.",
+          "example_vi": "Họ kiểm tra phần nền móng của ngôi nhà cũ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đảo thứ tự nghĩa để tầng hầm lên trước vì phổ biến hơn. Bổ sung đủ 10 ví dụ.",
+      "word": "basement",
+      "normalized_word": "basement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We keep our old books in the basement.",
+      "example_vi_clean": "Chúng tôi giữ những cuốn sách cũ ở tầng hầm."
+    },
+    {
+      "id": 25573,
+      "quiz_meaning_vi": "cái chậu",
+      "meaning_vi_clean": "cái chậu; lưu vực; bồn",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái chậu",
+          "example_en": "She washed her face in a small basin.",
+          "example_vi": "Cô ấy rửa mặt trong một cái chậu nhỏ."
+        },
+        {
+          "meaning_vi": "cái chậu",
+          "example_en": "He filled the basin with warm water.",
+          "example_vi": "Anh ấy đổ đầy nước ấm vào chậu."
+        },
+        {
+          "meaning_vi": "cái chậu",
+          "example_en": "The basin was made of white porcelain.",
+          "example_vi": "Cái chậu được làm bằng sứ trắng."
+        },
+        {
+          "meaning_vi": "cái chậu",
+          "example_en": "She placed the basin on the table.",
+          "example_vi": "Cô ấy đặt cái chậu lên bàn."
+        },
+        {
+          "meaning_vi": "lưu vực",
+          "example_en": "The Amazon basin is home to many species.",
+          "example_vi": "Lưu vực sông Amazon là nơi sinh sống của nhiều loài."
+        },
+        {
+          "meaning_vi": "lưu vực",
+          "example_en": "The river flows through a large basin.",
+          "example_vi": "Con sông chảy qua một lưu vực rộng lớn."
+        },
+        {
+          "meaning_vi": "lưu vực",
+          "example_en": "The region is located in the river basin.",
+          "example_vi": "Khu vực này nằm trong lưu vực sông."
+        },
+        {
+          "meaning_vi": "bồn",
+          "example_en": "He cleaned the bathroom basin thoroughly.",
+          "example_vi": "Anh ấy cọ rửa bồn rửa mặt trong phòng tắm thật sạch."
+        },
+        {
+          "meaning_vi": "bồn",
+          "example_en": "The water in the basin drained slowly.",
+          "example_vi": "Nước trong bồn thoát đi chậm chạp."
+        },
+        {
+          "meaning_vi": "bồn",
+          "example_en": "She scrubbed the basin until it shone.",
+          "example_vi": "Cô ấy chà rửa cái bồn cho đến khi nó sáng bóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ cho từng nghĩa.",
+      "word": "basin",
+      "normalized_word": "basin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She washed her face in a small basin.",
+      "example_vi_clean": "Cô ấy rửa mặt trong một cái chậu nhỏ."
+    },
+    {
+      "id": 25574,
+      "quiz_meaning_vi": "nền tảng",
+      "meaning_vi_clean": "nền tảng; cơ sở; căn cứ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "Hard work is the basis of success.",
+          "example_vi": "Làm việc chăm chỉ là nền tảng của thành công."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "Trust is the basis of a good relationship.",
+          "example_vi": "Sự tin tưởng là nền tảng của một mối quan hệ tốt."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "Education provides a strong basis for the future.",
+          "example_vi": "Giáo dục cung cấp một nền tảng vững chắc cho tương lai."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "They built their theory on a solid basis.",
+          "example_vi": "Họ xây dựng lý thuyết của mình trên một nền tảng vững chắc."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "We need a basis for our decision.",
+          "example_vi": "Chúng ta cần một cơ sở cho quyết định của mình."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "The report was written on a daily basis.",
+          "example_vi": "Báo cáo được viết trên cơ sở hàng ngày."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "There is no basis for his claim.",
+          "example_vi": "Không có cơ sở nào cho tuyên bố của anh ấy."
+        },
+        {
+          "meaning_vi": "căn cứ",
+          "example_en": "The army established a new military basis.",
+          "example_vi": "Quân đội đã thiết lập một căn cứ quân sự mới."
+        },
+        {
+          "meaning_vi": "căn cứ",
+          "example_en": "The soldiers returned to their base.",
+          "example_vi": "Những người lính đã trở về căn cứ của họ."
+        },
+        {
+          "meaning_vi": "căn cứ",
+          "example_en": "The plane took off from the air basis.",
+          "example_vi": "Chiếc máy bay cất cánh từ căn cứ không quân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ minh họa rõ ràng.",
+      "word": "basis",
+      "normalized_word": "basis",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Hard work is the basis of success.",
+      "example_vi_clean": "Làm việc chăm chỉ là nền tảng của thành công."
+    },
+    {
+      "id": 25575,
+      "quiz_meaning_vi": "tắm",
+      "meaning_vi_clean": "tắm; rửa sạch",
+      "examples_clean": [
+        {
+          "meaning_vi": "tắm",
+          "example_en": "I like to bathe in the sea every morning.",
+          "example_vi": "Tôi thích tắm biển mỗi sáng."
+        },
+        {
+          "meaning_vi": "tắm",
+          "example_en": "The children love to bathe in the lake.",
+          "example_vi": "Lũ trẻ thích tắm ở hồ."
+        },
+        {
+          "meaning_vi": "tắm",
+          "example_en": "She went to bathe in the river.",
+          "example_vi": "Cô ấy đi tắm ở sông."
+        },
+        {
+          "meaning_vi": "tắm",
+          "example_en": "It is refreshing to bathe in the pool.",
+          "example_vi": "Thật sảng khoái khi tắm ở bể bơi."
+        },
+        {
+          "meaning_vi": "tắm",
+          "example_en": "They decided to bathe before dinner.",
+          "example_vi": "Họ quyết định đi tắm trước bữa tối."
+        },
+        {
+          "meaning_vi": "rửa sạch",
+          "example_en": "You should bathe the wound with clean water.",
+          "example_vi": "Bạn nên rửa sạch vết thương bằng nước sạch."
+        },
+        {
+          "meaning_vi": "rửa sạch",
+          "example_en": "She bathed her eyes with a cool cloth.",
+          "example_vi": "Cô ấy rửa mắt bằng một chiếc khăn mát."
+        },
+        {
+          "meaning_vi": "rửa sạch",
+          "example_en": "He bathed the cut to prevent infection.",
+          "example_vi": "Anh ấy rửa sạch vết cắt để tránh nhiễm trùng."
+        },
+        {
+          "meaning_vi": "rửa sạch",
+          "example_en": "The nurse bathed the patient's face.",
+          "example_vi": "Cô y tá rửa sạch mặt cho bệnh nhân."
+        },
+        {
+          "meaning_vi": "rửa sạch",
+          "example_en": "Please bathe the area with antiseptic.",
+          "example_vi": "Vui lòng rửa sạch khu vực đó bằng thuốc sát trùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho gọn, loại bỏ các nghĩa bóng xa lạ, bổ sung ví dụ.",
+      "word": "bathe",
+      "normalized_word": "bathe",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I like to bathe in the sea every morning.",
+      "example_vi_clean": "Tôi thích tắm biển mỗi sáng."
+    },
+    {
+      "id": 25576,
+      "quiz_meaning_vi": "trận đánh",
+      "meaning_vi_clean": "trận đánh; cuộc chiến đấu; chiến đấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "trận đánh",
+          "example_en": "Many soldiers died in the battle.",
+          "example_vi": "Nhiều người lính đã hy sinh trong trận đánh."
+        },
+        {
+          "meaning_vi": "trận đánh",
+          "example_en": "The battle lasted for three days.",
+          "example_vi": "Trận đánh kéo dài trong ba ngày."
+        },
+        {
+          "meaning_vi": "trận đánh",
+          "example_en": "They won the battle against the enemy.",
+          "example_vi": "Họ đã thắng trận đánh chống lại kẻ thù."
+        },
+        {
+          "meaning_vi": "trận đánh",
+          "example_en": "The history book describes the famous battle.",
+          "example_vi": "Cuốn sách lịch sử mô tả trận đánh nổi tiếng đó."
+        },
+        {
+          "meaning_vi": "cuộc chiến đấu",
+          "example_en": "It was a long battle for justice.",
+          "example_vi": "Đó là một cuộc chiến đấu dài hơi vì công lý."
+        },
+        {
+          "meaning_vi": "cuộc chiến đấu",
+          "example_en": "She lost the battle against her illness.",
+          "example_vi": "Cô ấy đã thua trong cuộc chiến đấu với bệnh tật."
+        },
+        {
+          "meaning_vi": "cuộc chiến đấu",
+          "example_en": "The battle for equality continues.",
+          "example_vi": "Cuộc chiến đấu vì sự bình đẳng vẫn tiếp tục."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "They had to battle to survive the storm.",
+          "example_vi": "Họ phải chiến đấu để sống sót qua cơn bão."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "He battled against the strong wind.",
+          "example_vi": "Anh ấy chiến đấu chống lại cơn gió mạnh."
+        },
+        {
+          "meaning_vi": "chiến đấu",
+          "example_en": "We must battle to protect our environment.",
+          "example_vi": "Chúng ta phải chiến đấu để bảo vệ môi trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ/động từ, làm gọn nghĩa và bổ sung ví dụ.",
+      "word": "battle",
+      "normalized_word": "battle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Many soldiers died in the battle.",
+      "example_vi_clean": "Nhiều người lính đã hy sinh trong trận đánh."
+    },
+    {
+      "id": 25577,
+      "quiz_meaning_vi": "râu",
+      "meaning_vi_clean": "râu; đương đầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "râu",
+          "example_en": "He has a long, thick beard.",
+          "example_vi": "Anh ấy có một bộ râu dài và dày."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "He decided to shave off his beard.",
+          "example_vi": "Anh ấy quyết định cạo sạch bộ râu của mình."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "His beard was turning grey.",
+          "example_vi": "Bộ râu của ông ấy đang dần bạc đi."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "He stroked his beard while thinking.",
+          "example_vi": "Anh ấy vuốt râu trong khi suy nghĩ."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "The old man had a white beard.",
+          "example_vi": "Ông lão có một bộ râu trắng."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "He dared to beard the manager in his office.",
+          "example_vi": "Anh ấy dám đương đầu với người quản lý ngay tại văn phòng."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "She had to beard the critics alone.",
+          "example_vi": "Cô ấy phải một mình đương đầu với những người chỉ trích."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "They were ready to beard the opposition.",
+          "example_vi": "Họ đã sẵn sàng đương đầu với phe đối lập."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "He decided to beard the lion in his den.",
+          "example_vi": "Anh ấy quyết định đương đầu với kẻ mạnh ngay tại sào huyệt của hắn."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "It takes courage to beard such a powerful person.",
+          "example_vi": "Cần phải có lòng dũng cảm để đương đầu với một người quyền lực như vậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS sang danh từ/động từ, làm gọn nghĩa và bổ sung ví dụ.",
+      "word": "beard",
+      "normalized_word": "beard",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has a long, thick beard.",
+      "example_vi_clean": "Anh ấy có một bộ râu dài và dày."
+    },
+    {
+      "id": 25578,
+      "quiz_meaning_vi": "thú vật",
+      "meaning_vi_clean": "thú vật; người hung bạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "thú vật",
+          "example_en": "The forest is full of wild beasts.",
+          "example_vi": "Khu rừng đầy những loài thú vật hoang dã."
+        },
+        {
+          "meaning_vi": "thú vật",
+          "example_en": "He was attacked by a large beast.",
+          "example_vi": "Anh ấy bị một con thú vật lớn tấn công."
+        },
+        {
+          "meaning_vi": "thú vật",
+          "example_en": "The beast roared in the night.",
+          "example_vi": "Con thú vật gầm lên trong đêm."
+        },
+        {
+          "meaning_vi": "thú vật",
+          "example_en": "They studied the behavior of the beast.",
+          "example_vi": "Họ nghiên cứu hành vi của con thú vật đó."
+        },
+        {
+          "meaning_vi": "thú vật",
+          "example_en": "The beast was trapped in the cage.",
+          "example_vi": "Con thú vật bị nhốt trong lồng."
+        },
+        {
+          "meaning_vi": "người hung bạo",
+          "example_en": "He acted like a beast during the argument.",
+          "example_vi": "Anh ta cư xử như một kẻ hung bạo trong cuộc tranh cãi."
+        },
+        {
+          "meaning_vi": "người hung bạo",
+          "example_en": "Only a beast would treat a child like that.",
+          "example_vi": "Chỉ có một kẻ hung bạo mới đối xử với một đứa trẻ như vậy."
+        },
+        {
+          "meaning_vi": "người hung bạo",
+          "example_en": "The war turned men into beasts.",
+          "example_vi": "Chiến tranh đã biến con người thành những kẻ hung bạo."
+        },
+        {
+          "meaning_vi": "người hung bạo",
+          "example_en": "He is a beast to his employees.",
+          "example_vi": "Anh ta là một kẻ hung bạo đối với nhân viên của mình."
+        },
+        {
+          "meaning_vi": "người hung bạo",
+          "example_en": "Don't be such a beast to your brother.",
+          "example_vi": "Đừng cư xử hung bạo với em trai của bạn như thế."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm gọn nghĩa, bổ sung ví dụ.",
+      "word": "beast",
+      "normalized_word": "beast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The forest is full of wild beasts.",
+      "example_vi_clean": "Khu rừng đầy những loài thú vật hoang dã."
+    },
+    {
+      "id": 25579,
+      "quiz_meaning_vi": "tốt đẹp",
+      "meaning_vi_clean": "tốt đẹp",
+      "examples_clean": [
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The room was beautifully decorated.",
+          "example_vi": "Căn phòng được trang trí một cách tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "She sang the song beautifully.",
+          "example_vi": "Cô ấy hát bài hát đó một cách tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The garden looked beautifully in the spring.",
+          "example_vi": "Khu vườn trông thật tốt đẹp vào mùa xuân."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "Everything worked out beautifully.",
+          "example_vi": "Mọi thứ đã diễn ra một cách tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The dress fits her beautifully.",
+          "example_vi": "Chiếc váy vừa vặn với cô ấy một cách tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The sunset was beautifully colored.",
+          "example_vi": "Hoàng hôn có màu sắc thật tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "They lived beautifully together.",
+          "example_vi": "Họ đã sống một cách tốt đẹp cùng nhau."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The cake was beautifully baked.",
+          "example_vi": "Chiếc bánh được nướng một cách tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The story was beautifully told.",
+          "example_vi": "Câu chuyện được kể một cách tốt đẹp."
+        },
+        {
+          "meaning_vi": "tốt đẹp",
+          "example_en": "The painting was beautifully framed.",
+          "example_vi": "Bức tranh được đóng khung một cách tốt đẹp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ.",
+      "word": "beautifully",
+      "normalized_word": "beautifully",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The room was beautifully decorated.",
+      "example_vi_clean": "Căn phòng được trang trí một cách tốt đẹp."
+    },
+    {
+      "id": 25580,
+      "quiz_meaning_vi": "con hải ly",
+      "meaning_vi_clean": "con hải ly",
+      "examples_clean": [
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "The beaver built a dam in the river.",
+          "example_vi": "Con hải ly đã xây một cái đập trên sông."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "Beavers are known for their sharp teeth.",
+          "example_vi": "Hải ly nổi tiếng với hàm răng sắc nhọn."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "We saw a beaver swimming in the pond.",
+          "example_vi": "Chúng tôi thấy một con hải ly đang bơi trong ao."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "The beaver's fur is very thick.",
+          "example_vi": "Bộ lông của con hải ly rất dày."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "Beavers are very hardworking animals.",
+          "example_vi": "Hải ly là loài động vật rất chăm chỉ."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "The beaver chewed through the tree trunk.",
+          "example_vi": "Con hải ly đã gặm đứt thân cây."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "A beaver's home is called a lodge.",
+          "example_vi": "Nhà của hải ly được gọi là hang."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "The beaver is a symbol of Canada.",
+          "example_vi": "Con hải ly là biểu tượng của Canada."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "We watched the beaver work all day.",
+          "example_vi": "Chúng tôi quan sát con hải ly làm việc cả ngày."
+        },
+        {
+          "meaning_vi": "con hải ly",
+          "example_en": "The beaver is an excellent swimmer.",
+          "example_vi": "Con hải ly là một tay bơi cừ khôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm gọn nghĩa, bổ sung ví dụ.",
+      "word": "beaver",
+      "normalized_word": "beaver",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The beaver built a dam in the river.",
+      "example_vi_clean": "Con hải ly đã xây một cái đập trên sông."
+    }
+  ]
+}

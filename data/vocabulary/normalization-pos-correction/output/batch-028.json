@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24632,
+      "quiz_meaning_vi": "không khí",
+      "meaning_vi_clean": "không khí",
+      "examples_clean": [
+        {
+          "meaning_vi": "không khí",
+          "example_en": "The air in the mountains is very fresh.",
+          "example_vi": "Không khí trên núi rất trong lành."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "We need some fresh air in this room.",
+          "example_vi": "Chúng ta cần chút không khí trong lành trong căn phòng này."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "Birds fly high in the air.",
+          "example_vi": "Những chú chim bay cao trên không trung."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "The air was cold this morning.",
+          "example_vi": "Không khí sáng nay thật lạnh lẽo."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "Polluted air is bad for your health.",
+          "example_vi": "Không khí bị ô nhiễm không tốt cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "He took a deep breath of air.",
+          "example_vi": "Anh ấy hít một hơi thật sâu không khí."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "The air smells like rain today.",
+          "example_vi": "Không khí hôm nay có mùi như sắp mưa."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "There is not enough air in this small box.",
+          "example_vi": "Không có đủ không khí trong chiếc hộp nhỏ này."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "The air is very dry in the desert.",
+          "example_vi": "Không khí ở sa mạc rất khô."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "Plants help to clean the air.",
+          "example_vi": "Cây cối giúp làm sạch không khí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'air' được dùng làm danh từ trong tất cả các ví dụ với nghĩa là không khí."
+      },
+      "word": "air",
+      "normalized_word": "air",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The air in the mountains is very fresh.",
+      "example_vi_clean": "Không khí trên núi rất trong lành."
+    },
+    {
+      "id": 24649,
+      "quiz_meaning_vi": "làm phiền",
+      "meaning_vi_clean": "làm phiền",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "Please do not annoy the dog while it is eating.",
+          "example_vi": "Xin đừng làm phiền con chó khi nó đang ăn."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "His loud music started to annoy the neighbors.",
+          "example_vi": "Âm nhạc lớn của anh ấy bắt đầu làm phiền những người hàng xóm."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "It does not annoy me if you arrive late.",
+          "example_vi": "Việc bạn đến muộn không làm tôi thấy phiền."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "She tried not to annoy her teacher during the lesson.",
+          "example_vi": "Cô ấy cố gắng không làm phiền giáo viên trong giờ học."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "The constant noise began to annoy everyone in the office.",
+          "example_vi": "Tiếng ồn liên tục bắt đầu làm phiền mọi người trong văn phòng."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "Do not let small things annoy you.",
+          "example_vi": "Đừng để những chuyện nhỏ nhặt làm phiền bạn."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "The flies really annoy me in the summer.",
+          "example_vi": "Lũ ruồi thực sự làm tôi thấy phiền vào mùa hè."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "I did not mean to annoy you with my questions.",
+          "example_vi": "Tôi không có ý làm phiền bạn với những câu hỏi của mình."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "His habit of tapping his pen will annoy his classmates.",
+          "example_vi": "Thói quen gõ bút của anh ấy sẽ làm phiền các bạn cùng lớp."
+        },
+        {
+          "meaning_vi": "làm phiền",
+          "example_en": "Does the bright light annoy your eyes?",
+          "example_vi": "Ánh sáng chói có làm phiền mắt bạn không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa động từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'annoy' được dùng làm động từ trong tất cả các ví dụ với nghĩa là làm phiền."
+      },
+      "word": "annoy",
+      "normalized_word": "annoy",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please do not annoy the dog while it is eating.",
+      "example_vi_clean": "Xin đừng làm phiền con chó khi nó đang ăn."
+    },
+    {
+      "id": 24672,
+      "quiz_meaning_vi": "xung quanh",
+      "meaning_vi_clean": "xung quanh",
+      "examples_clean": [
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "He looked around to see if anyone was watching.",
+          "example_vi": "Anh ấy nhìn xung quanh để xem có ai đang quan sát không."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "There were many people standing around.",
+          "example_vi": "Có nhiều người đang đứng xung quanh."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "She turned around when she heard her name.",
+          "example_vi": "Cô ấy quay lại khi nghe thấy tên mình."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "The children were running around in the garden.",
+          "example_vi": "Những đứa trẻ đang chạy xung quanh trong vườn."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "I have looked around for my keys but cannot find them.",
+          "example_vi": "Tôi đã tìm xung quanh chìa khóa của mình nhưng không thấy."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "The cat walked around the room slowly.",
+          "example_vi": "Con mèo đi bộ xung quanh căn phòng một cách chậm rãi."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "We sat around and talked for hours.",
+          "example_vi": "Chúng tôi ngồi xung quanh và trò chuyện hàng giờ."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "He pushed the chair around to face the window.",
+          "example_vi": "Anh ấy đẩy chiếc ghế xung quanh để đối diện với cửa sổ."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "Can you show me around the city?",
+          "example_vi": "Bạn có thể dẫn tôi đi xung quanh thành phố không?"
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "The dog ran around in circles.",
+          "example_vi": "Con chó chạy xung quanh theo vòng tròn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'around' được dùng làm phó từ trong tất cả các ví dụ với nghĩa là xung quanh."
+      },
+      "word": "around",
+      "normalized_word": "around",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He looked around to see if anyone was watching.",
+      "example_vi_clean": "Anh ấy nhìn xung quanh để xem có ai đang quan sát không."
+    },
+    {
+      "id": 24681,
+      "quiz_meaning_vi": "sự tấn công",
+      "meaning_vi_clean": "sự tấn công",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The city suffered a sudden attack.",
+          "example_vi": "Thành phố đã phải chịu một sự tấn công bất ngờ."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The soldiers prepared for the next attack.",
+          "example_vi": "Những người lính chuẩn bị cho sự tấn công tiếp theo."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "He survived the brutal attack.",
+          "example_vi": "Anh ấy đã sống sót sau sự tấn công tàn bạo đó."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The police prevented a major attack.",
+          "example_vi": "Cảnh sát đã ngăn chặn một sự tấn công lớn."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "They were not ready for such an attack.",
+          "example_vi": "Họ đã không sẵn sàng cho một sự tấn công như vậy."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The enemy launched a fierce attack.",
+          "example_vi": "Kẻ thù đã phát động một sự tấn công dữ dội."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The report describes the attack in detail.",
+          "example_vi": "Bản báo cáo mô tả chi tiết về sự tấn công đó."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The village was safe from any attack.",
+          "example_vi": "Ngôi làng đã an toàn khỏi bất kỳ sự tấn công nào."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "She was scared after the attack.",
+          "example_vi": "Cô ấy đã rất sợ hãi sau sự tấn công đó."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The army stopped the enemy's attack.",
+          "example_vi": "Quân đội đã ngăn chặn sự tấn công của kẻ thù."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'attack' được dùng làm danh từ trong tất cả các ví dụ với nghĩa là sự tấn công."
+      },
+      "word": "attack",
+      "normalized_word": "attack",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The city suffered a sudden attack.",
+      "example_vi_clean": "Thành phố đã phải chịu một sự tấn công bất ngờ."
+    },
+    {
+      "id": 24682,
+      "quiz_meaning_vi": "sự nỗ lực",
+      "meaning_vi_clean": "sự nỗ lực",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "His first attempt was not successful.",
+          "example_vi": "Sự nỗ lực đầu tiên của anh ấy đã không thành công."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "She made another attempt to pass the test.",
+          "example_vi": "Cô ấy đã thực hiện một sự nỗ lực khác để vượt qua bài kiểm tra."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "The team failed in their attempt to win.",
+          "example_vi": "Đội đã thất bại trong sự nỗ lực giành chiến thắng của họ."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "It was a brave attempt to save the cat.",
+          "example_vi": "Đó là một sự nỗ lực dũng cảm để cứu con mèo."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "He gave up after his third attempt.",
+          "example_vi": "Anh ấy đã bỏ cuộc sau sự nỗ lực lần thứ ba."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "This is my final attempt to fix the computer.",
+          "example_vi": "Đây là sự nỗ lực cuối cùng của tôi để sửa chiếc máy tính."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "The climber made a dangerous attempt to reach the top.",
+          "example_vi": "Người leo núi đã thực hiện một sự nỗ lực nguy hiểm để lên đến đỉnh."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "They appreciated his attempt to help.",
+          "example_vi": "Họ đánh giá cao sự nỗ lực giúp đỡ của anh ấy."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "The police made an attempt to find the thief.",
+          "example_vi": "Cảnh sát đã thực hiện một sự nỗ lực để tìm ra tên trộm."
+        },
+        {
+          "meaning_vi": "sự nỗ lực",
+          "example_en": "Every attempt counts toward your success.",
+          "example_vi": "Mọi sự nỗ lực đều góp phần vào thành công của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'attempt' được dùng làm danh từ trong tất cả các ví dụ với nghĩa là sự nỗ lực."
+      },
+      "word": "attempt",
+      "normalized_word": "attempt",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His first attempt was not successful.",
+      "example_vi_clean": "Sự nỗ lực đầu tiên của anh ấy đã không thành công."
+    },
+    {
+      "id": 24689,
+      "quiz_meaning_vi": "tự động",
+      "meaning_vi_clean": "tự động",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The door has an automatic system.",
+          "example_vi": "Cửa có một hệ thống tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "This machine is fully automatic.",
+          "example_vi": "Chiếc máy này hoàn toàn tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "He drives an automatic car.",
+          "example_vi": "Anh ấy lái một chiếc xe tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The lights have an automatic timer.",
+          "example_vi": "Đèn có một bộ hẹn giờ tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The camera has an automatic focus feature.",
+          "example_vi": "Máy ảnh có tính năng lấy nét tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The update is an automatic process.",
+          "example_vi": "Việc cập nhật là một quá trình tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "We use an automatic coffee maker.",
+          "example_vi": "Chúng tôi sử dụng một chiếc máy pha cà phê tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The gate is automatic and opens when you arrive.",
+          "example_vi": "Cổng là loại tự động và mở ra khi bạn đến."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "She prefers an automatic transmission in her car.",
+          "example_vi": "Cô ấy thích hộp số tự động trong xe của mình."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The system makes an automatic backup of files.",
+          "example_vi": "Hệ thống thực hiện sao lưu tự động các tệp tin."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'automatic' được dùng làm tính từ trong tất cả các ví dụ với nghĩa là tự động."
+      },
+      "word": "automatic",
+      "normalized_word": "automatic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The door has an automatic system.",
+      "example_vi_clean": "Cửa có một hệ thống tự động."
+    },
+    {
+      "id": 24691,
+      "quiz_meaning_vi": "trung bình",
+      "meaning_vi_clean": "trung bình",
+      "examples_clean": [
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average student studies for two hours.",
+          "example_vi": "Học sinh trung bình học trong hai giờ."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "He is of average height for his age.",
+          "example_vi": "Anh ấy có chiều cao trung bình so với tuổi của mình."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average temperature is quite high here.",
+          "example_vi": "Nhiệt độ trung bình ở đây khá cao."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "This is an average day for us.",
+          "example_vi": "Đây là một ngày trung bình đối với chúng tôi."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average person needs eight hours of sleep.",
+          "example_vi": "Người trung bình cần tám giờ ngủ."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "She has an average score in the exam.",
+          "example_vi": "Cô ấy có điểm số trung bình trong bài thi."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average cost of a meal is ten dollars.",
+          "example_vi": "Chi phí trung bình cho một bữa ăn là mười đô la."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "He is an average player in the team.",
+          "example_vi": "Anh ấy là một cầu thủ trung bình trong đội."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average speed of the car was low.",
+          "example_vi": "Tốc độ trung bình của chiếc xe là thấp."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "It was an average performance by the actor.",
+          "example_vi": "Đó là một màn trình diễn trung bình của nam diễn viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'average' được dùng làm tính từ trong tất cả các ví dụ với nghĩa là trung bình."
+      },
+      "word": "average",
+      "normalized_word": "average",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The average student studies for two hours.",
+      "example_vi_clean": "Học sinh trung bình học trong hai giờ."
+    },
+    {
+      "id": 24693,
+      "quiz_meaning_vi": "giải thưởng",
+      "meaning_vi_clean": "giải thưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "She won a big award for her work.",
+          "example_vi": "Cô ấy đã giành được một giải thưởng lớn cho công việc của mình."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "He received an award at the ceremony.",
+          "example_vi": "Anh ấy đã nhận được một giải thưởng tại buổi lễ."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "The film won an award for best director.",
+          "example_vi": "Bộ phim đã giành được một giải thưởng cho đạo diễn xuất sắc nhất."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "They gave him an award for his bravery.",
+          "example_vi": "Họ đã trao cho anh ấy một giải thưởng vì sự dũng cảm."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "The award is made of gold.",
+          "example_vi": "Giải thưởng đó được làm bằng vàng."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "She keeps her award on the shelf.",
+          "example_vi": "Cô ấy giữ giải thưởng của mình trên kệ."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "The school gave an award to the best student.",
+          "example_vi": "Nhà trường đã trao một giải thưởng cho học sinh giỏi nhất."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "He is proud of his award.",
+          "example_vi": "Anh ấy rất tự hào về giải thưởng của mình."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "The award ceremony starts at seven.",
+          "example_vi": "Lễ trao giải thưởng bắt đầu lúc bảy giờ."
+        },
+        {
+          "meaning_vi": "giải thưởng",
+          "example_en": "She hopes to win an award this year.",
+          "example_vi": "Cô ấy hy vọng sẽ giành được một giải thưởng trong năm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'award' được dùng làm danh từ trong tất cả các ví dụ với nghĩa là giải thưởng."
+      },
+      "word": "award",
+      "normalized_word": "award",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She won a big award for her work.",
+      "example_vi_clean": "Cô ấy đã giành được một giải thưởng lớn cho công việc của mình."
+    },
+    {
+      "id": 24695,
+      "quiz_meaning_vi": "phía sau",
+      "meaning_vi_clean": "phía sau",
+      "examples_clean": [
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The back door is locked.",
+          "example_vi": "Cánh cửa phía sau đã bị khóa."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "He sat in the back seat of the car.",
+          "example_vi": "Anh ấy ngồi ở ghế phía sau của chiếc xe."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "She looked at the back page of the book.",
+          "example_vi": "Cô ấy nhìn vào trang phía sau của cuốn sách."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The back garden is very large.",
+          "example_vi": "Khu vườn phía sau rất rộng."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "He has a back room for his tools.",
+          "example_vi": "Anh ấy có một căn phòng phía sau để chứa dụng cụ."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The back wall needs to be painted.",
+          "example_vi": "Bức tường phía sau cần được sơn lại."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "She found her keys in the back pocket.",
+          "example_vi": "Cô ấy tìm thấy chìa khóa trong túi phía sau."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The back window is broken.",
+          "example_vi": "Cửa sổ phía sau đã bị vỡ."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "He lives in the back house.",
+          "example_vi": "Anh ấy sống trong ngôi nhà phía sau."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The back entrance is for staff only.",
+          "example_vi": "Lối vào phía sau chỉ dành cho nhân viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'back' được dùng làm tính từ trong tất cả các ví dụ với nghĩa là phía sau."
+      },
+      "word": "back",
+      "normalized_word": "back",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The back door is locked.",
+      "example_vi_clean": "Cánh cửa phía sau đã bị khóa."
+    },
+    {
+      "id": 24701,
+      "quiz_meaning_vi": "quả bóng bay",
+      "meaning_vi_clean": "quả bóng bay",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "The child held a red balloon.",
+          "example_vi": "Đứa trẻ cầm một quả bóng bay màu đỏ."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "He blew up a balloon for the party.",
+          "example_vi": "Anh ấy thổi một quả bóng bay cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "The balloon flew away into the sky.",
+          "example_vi": "Quả bóng bay đã bay mất lên bầu trời."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "She decorated the room with every balloon.",
+          "example_vi": "Cô ấy trang trí căn phòng với mọi quả bóng bay."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "The balloon popped when it hit the tree.",
+          "example_vi": "Quả bóng bay đã nổ khi nó chạm vào cái cây."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "He bought a balloon for his sister.",
+          "example_vi": "Anh ấy đã mua một quả bóng bay cho em gái mình."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "The balloon is tied to the chair.",
+          "example_vi": "Quả bóng bay được buộc vào chiếc ghế."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "She let go of the balloon by mistake.",
+          "example_vi": "Cô ấy đã vô tình thả quả bóng bay ra."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "The balloon is filled with air.",
+          "example_vi": "Quả bóng bay được bơm đầy không khí."
+        },
+        {
+          "meaning_vi": "quả bóng bay",
+          "example_en": "They played with a balloon in the park.",
+          "example_vi": "Họ đã chơi với một quả bóng bay trong công viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'balloon' được dùng làm danh từ trong tất cả các ví dụ với nghĩa là quả bóng bay."
+      },
+      "word": "balloon",
+      "normalized_word": "balloon",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The child held a red balloon.",
+      "example_vi_clean": "Đứa trẻ cầm một quả bóng bay màu đỏ."
+    }
+  ]
+}

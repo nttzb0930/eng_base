@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-058",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24571,
+      "word": "october",
+      "normalized_word": "october",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ɔk'toubə/",
+      "primary_meaning_vi": "tháng mười",
+      "meaning_vi": "tháng mười; (thuộc) tháng mười",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24572,
+      "word": "of",
+      "normalized_word": "of",
+      "cefr_level": "A1",
+      "pos": "preposition",
+      "pos_vi": "giới từ",
+      "phonetic": "/ɔv, əv/",
+      "primary_meaning_vi": "của",
+      "meaning_vi": "của; thuộc, của, ở; về; vì; làm bằng, bằng; gồm có; từ, ở; trong, trong đám; cách; trong, vào (trước danh từ chỉ thời gian); khỏi, mất...; về phần; bởi; of a (đứng sau một danh từ ngụ ý tính chất của ai, cái gì; không dịch); of it (hư từ; không dịch)",
+      "example_en": "I have a house and a car.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Do you have the key? (not necessarily one's own key)",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have a really mean boss.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can I have a look at that?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24573,
+      "word": "off",
+      "normalized_word": "off",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "thán từ",
+      "phonetic": "/ɔ:f/",
+      "primary_meaning_vi": "tắt",
+      "meaning_vi": "tắt; đi, đi rồi; ra khỏi, đứt, rời; xa cách; hẳn, hết; thôi; nổi bật; nghèo; phong lưu, sung túc; lúc lúc, chốc chốc, chập chờn lúc có lúc không; right; straight; khỏi, cách, rời; colour; duty; nhịn rượu, bỏ rượu; trượt, không trúng; (nghĩa bóng) lạc đề; map; feed; game; head; point; nhịn thuốc lá, bỏ thuốc lá; chơi chấp năm; phải, bên phải (xe, ngựa); xa, cách, ngoài, bên kia; mặt sau, mặt trái tờ giấy; mỏng manh; ôi, ươn; ốm, mệt; nhàn rỗi, nghỉ, vãn; phụ, nhỏ, hẻm; cú đánh về bên phải (crikê); tỏ ý bỏ, tỏ ý thôi (cuộc đàm phán, sự thoả thuận, công cuộc); rút lui thôi không đàm phán với (ai), rút lui lời cam kết với ai; cút đi! Xéo",
+      "example_en": "He has been very obviously an untrustworthy narrator right from the off.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He got in the way so I had him offed.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can you off the light?",
+          "example_vi": null
+        },
+        {
+          "example_en": "All the lights are off.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24574,
+      "word": "office",
+      "normalized_word": "office",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔfis/",
+      "primary_meaning_vi": "sự giúp đỡ",
+      "meaning_vi": "sự giúp đỡ; nhiệm vụ; chức vụ; lễ nghi; hình thức thờ phụng; kính; lễ truy điệu; cơ quan, sở, văn phòng, phòng giấy; chi nhánh, cơ sở (hãng buôn); bộ; bộ Ngoại giao (Anh); nhà phụ, chái, kho; lời gợi ý, hiệu; toà án tôn giáo",
+      "example_en": "When the office of Secretary of State is vacant, its duties fall upon an official within the department.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She held office as secretary of state until she left office to run for office.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The office of the Secretary of State is cleaned when it is vacant.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The whole office was there... well, except you, of course.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24575,
+      "word": "officer",
+      "normalized_word": "officer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ,  (thường) động tính từ quá khứ",
+      "phonetic": "/'ɔfisə/",
+      "primary_meaning_vi": "sĩ quan",
+      "meaning_vi": "sĩ quan; nhân viên chính quyền, nhân viên, viên chức; cảnh sát; giám đốc; thư ký; thủ quỹ (một công ty, một hội); cung cấp sĩ quan chỉ huy; chỉ huy",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24576,
+      "word": "often",
+      "normalized_word": "often",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ɔ:fn/ (oftentimes) /'ɔ:fntaimz/",
+      "primary_meaning_vi": "thường",
+      "meaning_vi": "thường, hay, luôn, năng",
+      "example_en": "I often walk to work when the weather is nice.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24577,
+      "word": "ok",
+      "normalized_word": "ok",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "đồng ý",
+      "meaning_vi": "đồng ý, được, tán thành; sự đồng ý, sự tán thành",
+      "example_en": "Do you think it's OK to stay here for the night?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The soup was OK, but the dessert was excellent.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He's not feeling well now, but he should be OK after some rest.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24578,
+      "word": "okay",
+      "normalized_word": "okay",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự đồng ý",
+      "meaning_vi": "sự đồng ý, sự tán thành; interj; vâng, được lắm",
+      "example_en": "We can start as soon as we get the OK.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I don't want to OK this amount of money.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Do you think it's OK to stay here for the night?",
+          "example_vi": null
+        },
+        {
+          "example_en": "The soup was OK, but the dessert was excellent.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24579,
+      "word": "old",
+      "normalized_word": "old",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/ould/",
+      "primary_meaning_vi": "già",
+      "meaning_vi": "già; già giặn, có kinh nghiệm, lão luyện; lên... tuổi, thọ; cũ, nát, rách, cổ; thân mến (để gọi); xưa, ngày xưa; đông bán cầu; người bám như đỉa; bất cứ cái gì; nghỉ rất thoải mái; bone; cái thân này, cái thân già này; of old xưa, ngày xưa",
+      "example_en": "A civilised society should always look after the old in the community.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "when he was an eight-year-old ; a 62-year-old should",
+          "example_vi": null
+        },
+        {
+          "example_en": "I had to sneak out to meet my girlfriend and tell the olds I was going to the library.",
+          "example_vi": null
+        },
+        {
+          "example_en": "an old abandoned building; an old friend",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24580,
+      "word": "once",
+      "normalized_word": "once",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/wʌns/",
+      "primary_meaning_vi": "một lần",
+      "meaning_vi": "một lần; một khi; trước kia, xưa kia; đã có một thời; all; ngay một lúc, cùng một lúc; lập tức; ít nhất là một lần; again; phải một bận, cạch đến già; một lần cho mãi mãi; dứt khoát; thỉnh thoảng, đôi khi; khi mà, ngay khi, một khi; một lần",
+      "example_en": "I have only once eaten pizza.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was once the most handsome man around.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Once three is three.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Once he is married, he will be able to claim the inheritance.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

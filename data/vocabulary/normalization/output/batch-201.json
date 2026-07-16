@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26001,
+      "quiz_meaning_vi": "nền kinh tế",
+      "meaning_vi_clean": "nền kinh tế; sự quản lý kinh tế; sự tiết kiệm; cơ cấu tổ chức",
+      "examples_clean": [
+        {
+          "meaning_vi": "nền kinh tế",
+          "example_en": "The global economy is facing many challenges.",
+          "example_vi": "Nền kinh tế toàn cầu đang đối mặt với nhiều thách thức."
+        },
+        {
+          "meaning_vi": "nền kinh tế",
+          "example_en": "Tourism is a vital part of the local economy.",
+          "example_vi": "Du lịch là một phần quan trọng của nền kinh tế địa phương."
+        },
+        {
+          "meaning_vi": "nền kinh tế",
+          "example_en": "The government aims to boost the national economy.",
+          "example_vi": "Chính phủ đặt mục tiêu thúc đẩy nền kinh tế quốc gia."
+        },
+        {
+          "meaning_vi": "nền kinh tế",
+          "example_en": "A strong economy creates more job opportunities.",
+          "example_vi": "Một nền kinh tế mạnh tạo ra nhiều cơ hội việc làm hơn."
+        },
+        {
+          "meaning_vi": "sự quản lý kinh tế",
+          "example_en": "The new policy focuses on the economy of state resources.",
+          "example_vi": "Chính sách mới tập trung vào sự quản lý kinh tế các nguồn lực nhà nước."
+        },
+        {
+          "meaning_vi": "sự tiết kiệm",
+          "example_en": "We need to practice economy in our daily spending.",
+          "example_vi": "Chúng ta cần thực hành sự tiết kiệm trong chi tiêu hàng ngày."
+        },
+        {
+          "meaning_vi": "sự tiết kiệm",
+          "example_en": "The economy of time is essential for busy students.",
+          "example_vi": "Sự tiết kiệm thời gian là rất cần thiết đối với những sinh viên bận rộn."
+        },
+        {
+          "meaning_vi": "sự tiết kiệm",
+          "example_en": "He bought a small car for the sake of economy.",
+          "example_vi": "Anh ấy mua một chiếc xe nhỏ vì mục đích tiết kiệm."
+        },
+        {
+          "meaning_vi": "cơ cấu tổ chức",
+          "example_en": "The company is reviewing its internal economy.",
+          "example_vi": "Công ty đang xem xét lại cơ cấu tổ chức nội bộ của mình."
+        },
+        {
+          "meaning_vi": "cơ cấu tổ chức",
+          "example_en": "The economy of the project was poorly planned.",
+          "example_vi": "Cơ cấu tổ chức của dự án đã được lên kế hoạch kém."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa theo độ phổ biến, bổ sung ví dụ minh họa đầy đủ các nghĩa.",
+      "word": "economy",
+      "normalized_word": "economy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The global economy is facing many challenges.",
+      "example_vi_clean": "Nền kinh tế toàn cầu đang đối mặt với nhiều thách thức."
+    },
+    {
+      "id": 26002,
+      "quiz_meaning_vi": "hệ sinh thái",
+      "meaning_vi_clean": "hệ sinh thái",
+      "examples_clean": [
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "Pollution can damage the delicate ecosystem.",
+          "example_vi": "Ô nhiễm có thể gây hại cho hệ sinh thái mong manh."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "The forest is a complex ecosystem.",
+          "example_vi": "Khu rừng là một hệ sinh thái phức tạp."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "We must protect the marine ecosystem.",
+          "example_vi": "Chúng ta phải bảo vệ hệ sinh thái biển."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "Climate change threatens the local ecosystem.",
+          "example_vi": "Biến đổi khí hậu đe dọa hệ sinh thái địa phương."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "Each species plays a role in the ecosystem.",
+          "example_vi": "Mỗi loài đều đóng một vai trò trong hệ sinh thái."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "The desert ecosystem is very unique.",
+          "example_vi": "Hệ sinh thái sa mạc rất độc đáo."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "Human activities impact the natural ecosystem.",
+          "example_vi": "Các hoạt động của con người tác động đến hệ sinh thái tự nhiên."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "Scientists are studying the river ecosystem.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu hệ sinh thái sông."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "The island has a fragile ecosystem.",
+          "example_vi": "Hòn đảo có một hệ sinh thái dễ bị tổn thương."
+        },
+        {
+          "meaning_vi": "hệ sinh thái",
+          "example_en": "Restoring the ecosystem is a top priority.",
+          "example_vi": "Khôi phục hệ sinh thái là một ưu tiên hàng đầu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đầy đủ 10 ví dụ về hệ sinh thái.",
+      "word": "ecosystem",
+      "normalized_word": "ecosystem",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Pollution can damage the delicate ecosystem.",
+      "example_vi_clean": "Ô nhiễm có thể gây hại cho hệ sinh thái mong manh."
+    },
+    {
+      "id": 26003,
+      "quiz_meaning_vi": "trạng thái mê ly",
+      "meaning_vi_clean": "trạng thái mê ly; trạng thái ngây ngất",
+      "examples_clean": [
+        {
+          "meaning_vi": "trạng thái mê ly",
+          "example_en": "She was in a state of pure ecstasy.",
+          "example_vi": "Cô ấy đang ở trong trạng thái mê ly thuần túy."
+        },
+        {
+          "meaning_vi": "trạng thái mê ly",
+          "example_en": "He shouted in ecstasy when he won the prize.",
+          "example_vi": "Anh ấy hét lên trong trạng thái mê ly khi giành giải thưởng."
+        },
+        {
+          "meaning_vi": "trạng thái mê ly",
+          "example_en": "The music sent the audience into ecstasy.",
+          "example_vi": "Âm nhạc đưa khán giả vào trạng thái mê ly."
+        },
+        {
+          "meaning_vi": "trạng thái mê ly",
+          "example_en": "She looked at the sunset in ecstasy.",
+          "example_vi": "Cô ấy nhìn hoàng hôn trong trạng thái mê ly."
+        },
+        {
+          "meaning_vi": "trạng thái ngây ngất",
+          "example_en": "They were in ecstasy over the good news.",
+          "example_vi": "Họ ở trong trạng thái ngây ngất vì tin tốt."
+        },
+        {
+          "meaning_vi": "trạng thái ngây ngất",
+          "example_en": "The fans were in ecstasy after the goal.",
+          "example_vi": "Người hâm mộ ở trong trạng thái ngây ngất sau bàn thắng."
+        },
+        {
+          "meaning_vi": "trạng thái ngây ngất",
+          "example_en": "He felt a sense of ecstasy during the performance.",
+          "example_vi": "Anh ấy cảm thấy một sự ngây ngất trong suốt buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "trạng thái ngây ngất",
+          "example_en": "The beauty of the view left her in ecstasy.",
+          "example_vi": "Vẻ đẹp của khung cảnh khiến cô ấy ngây ngất."
+        },
+        {
+          "meaning_vi": "trạng thái ngây ngất",
+          "example_en": "They danced in ecstasy at the festival.",
+          "example_vi": "Họ nhảy múa trong trạng thái ngây ngất tại lễ hội."
+        },
+        {
+          "meaning_vi": "trạng thái ngây ngất",
+          "example_en": "His heart was filled with ecstasy.",
+          "example_vi": "Trái tim anh ấy tràn ngập sự ngây ngất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, giữ lại các nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "ecstasy",
+      "normalized_word": "ecstasy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She was in a state of pure ecstasy.",
+      "example_vi_clean": "Cô ấy đang ở trong trạng thái mê ly thuần túy."
+    },
+    {
+      "id": 26004,
+      "quiz_meaning_vi": "bờ",
+      "meaning_vi_clean": "bờ; cạnh; rìa; lưỡi sắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bờ",
+          "example_en": "He stood on the edge of the cliff.",
+          "example_vi": "Anh ấy đứng trên bờ vực thẳm."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "The house is on the edge of the village.",
+          "example_vi": "Ngôi nhà nằm ở bờ rìa của ngôi làng."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "She sat on the edge of the bed.",
+          "example_vi": "Cô ấy ngồi trên bờ mép giường."
+        },
+        {
+          "meaning_vi": "bờ",
+          "example_en": "The river has a steep edge.",
+          "example_vi": "Con sông có một bờ dốc."
+        },
+        {
+          "meaning_vi": "cạnh",
+          "example_en": "The table has a smooth edge.",
+          "example_vi": "Cái bàn có một cạnh nhẵn."
+        },
+        {
+          "meaning_vi": "cạnh",
+          "example_en": "Don't put the glass near the edge of the table.",
+          "example_vi": "Đừng đặt cái ly gần cạnh bàn."
+        },
+        {
+          "meaning_vi": "rìa",
+          "example_en": "He walked along the edge of the forest.",
+          "example_vi": "Anh ấy đi dọc theo rìa khu rừng."
+        },
+        {
+          "meaning_vi": "rìa",
+          "example_en": "The edge of the paper was torn.",
+          "example_vi": "Rìa của tờ giấy đã bị rách."
+        },
+        {
+          "meaning_vi": "lưỡi sắc",
+          "example_en": "The knife has a very sharp edge.",
+          "example_vi": "Con dao có một lưỡi rất sắc."
+        },
+        {
+          "meaning_vi": "lưỡi sắc",
+          "example_en": "The sword's edge was blunted.",
+          "example_vi": "Lưỡi sắc của thanh kiếm đã bị cùn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ, chọn nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "edge",
+      "normalized_word": "edge",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He stood on the edge of the cliff.",
+      "example_vi_clean": "Anh ấy đứng trên bờ vực thẳm."
+    },
+    {
+      "id": 26005,
+      "quiz_meaning_vi": "lần xuất bản",
+      "meaning_vi_clean": "lần xuất bản; số bản in; bản sao",
+      "examples_clean": [
+        {
+          "meaning_vi": "lần xuất bản",
+          "example_en": "The second edition of the book is available now.",
+          "example_vi": "Lần xuất bản thứ hai của cuốn sách hiện đã có sẵn."
+        },
+        {
+          "meaning_vi": "lần xuất bản",
+          "example_en": "This is the latest edition of the dictionary.",
+          "example_vi": "Đây là lần xuất bản mới nhất của cuốn từ điển."
+        },
+        {
+          "meaning_vi": "lần xuất bản",
+          "example_en": "The first edition was published in 1990.",
+          "example_vi": "Lần xuất bản đầu tiên được phát hành vào năm 1990."
+        },
+        {
+          "meaning_vi": "lần xuất bản",
+          "example_en": "They are preparing a new edition.",
+          "example_vi": "Họ đang chuẩn bị một lần xuất bản mới."
+        },
+        {
+          "meaning_vi": "số bản in",
+          "example_en": "The morning edition of the newspaper sold out.",
+          "example_vi": "Số bản in buổi sáng của tờ báo đã bán hết."
+        },
+        {
+          "meaning_vi": "số bản in",
+          "example_en": "The Sunday edition is much thicker.",
+          "example_vi": "Số bản in ngày Chủ nhật dày hơn nhiều."
+        },
+        {
+          "meaning_vi": "số bản in",
+          "example_en": "He reads the digital edition every day.",
+          "example_vi": "Anh ấy đọc số bản in kỹ thuật số mỗi ngày."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "This is a rare edition of the classic novel.",
+          "example_vi": "Đây là một bản sao hiếm của cuốn tiểu thuyết kinh điển."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "She collects every edition of his works.",
+          "example_vi": "Cô ấy sưu tầm mọi bản sao các tác phẩm của ông ấy."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "The library has a special edition.",
+          "example_vi": "Thư viện có một bản sao đặc biệt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn và phù hợp, bổ sung ví dụ.",
+      "word": "edition",
+      "normalized_word": "edition",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The second edition of the book is available now.",
+      "example_vi_clean": "Lần xuất bản thứ hai của cuốn sách hiện đã có sẵn."
+    },
+    {
+      "id": 26006,
+      "quiz_meaning_vi": "giáo dục",
+      "meaning_vi_clean": "giáo dục; rèn luyện",
+      "examples_clean": [
+        {
+          "meaning_vi": "giáo dục",
+          "example_en": "Parents have a duty to educate their children.",
+          "example_vi": "Cha mẹ có nghĩa vụ giáo dục con cái mình."
+        },
+        {
+          "meaning_vi": "giáo dục",
+          "example_en": "The school aims to educate students for the future.",
+          "example_vi": "Nhà trường đặt mục tiêu giáo dục học sinh cho tương lai."
+        },
+        {
+          "meaning_vi": "giáo dục",
+          "example_en": "We need to educate the public about health.",
+          "example_vi": "Chúng ta cần giáo dục công chúng về sức khỏe."
+        },
+        {
+          "meaning_vi": "giáo dục",
+          "example_en": "She was educated in a private school.",
+          "example_vi": "Cô ấy được giáo dục tại một trường tư thục."
+        },
+        {
+          "meaning_vi": "giáo dục",
+          "example_en": "It is important to educate people about safety.",
+          "example_vi": "Việc giáo dục mọi người về an toàn là rất quan trọng."
+        },
+        {
+          "meaning_vi": "rèn luyện",
+          "example_en": "You should educate yourself in new skills.",
+          "example_vi": "Bạn nên rèn luyện bản thân với những kỹ năng mới."
+        },
+        {
+          "meaning_vi": "rèn luyện",
+          "example_en": "The program helps to educate the mind.",
+          "example_vi": "Chương trình giúp rèn luyện trí tuệ."
+        },
+        {
+          "meaning_vi": "rèn luyện",
+          "example_en": "He tries to educate his taste in music.",
+          "example_vi": "Anh ấy cố gắng rèn luyện gu âm nhạc của mình."
+        },
+        {
+          "meaning_vi": "rèn luyện",
+          "example_en": "We must educate our habits for better health.",
+          "example_vi": "Chúng ta phải rèn luyện thói quen để có sức khỏe tốt hơn."
+        },
+        {
+          "meaning_vi": "rèn luyện",
+          "example_en": "The course is designed to educate professionals.",
+          "example_vi": "Khóa học được thiết kế để rèn luyện các chuyên gia."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "educate",
+      "normalized_word": "educate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Parents have a duty to educate their children.",
+      "example_vi_clean": "Cha mẹ có nghĩa vụ giáo dục con cái mình."
+    },
+    {
+      "id": 26007,
+      "quiz_meaning_vi": "có kết quả",
+      "meaning_vi_clean": "có kết quả; có hiệu lực; có tác động",
+      "examples_clean": [
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "This is an effective way to solve the problem.",
+          "example_vi": "Đây là một cách có kết quả để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "The new medicine is very effective.",
+          "example_vi": "Loại thuốc mới rất có kết quả."
+        },
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "We need an effective strategy.",
+          "example_vi": "Chúng ta cần một chiến lược có kết quả."
+        },
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "The campaign was highly effective.",
+          "example_vi": "Chiến dịch đã rất có kết quả."
+        },
+        {
+          "meaning_vi": "có hiệu lực",
+          "example_en": "The new law becomes effective tomorrow.",
+          "example_vi": "Luật mới sẽ có hiệu lực vào ngày mai."
+        },
+        {
+          "meaning_vi": "có hiệu lực",
+          "example_en": "The contract is effective from January.",
+          "example_vi": "Hợp đồng có hiệu lực từ tháng Một."
+        },
+        {
+          "meaning_vi": "có hiệu lực",
+          "example_en": "The rules are effective immediately.",
+          "example_vi": "Các quy định có hiệu lực ngay lập tức."
+        },
+        {
+          "meaning_vi": "có tác động",
+          "example_en": "The speech had an effective impact on the audience.",
+          "example_vi": "Bài phát biểu đã có tác động đến khán giả."
+        },
+        {
+          "meaning_vi": "có tác động",
+          "example_en": "His words were very effective in changing her mind.",
+          "example_vi": "Lời nói của anh ấy rất có tác động trong việc thay đổi suy nghĩ của cô ấy."
+        },
+        {
+          "meaning_vi": "có tác động",
+          "example_en": "The visual aids were effective in the presentation.",
+          "example_vi": "Các công cụ hỗ trợ trực quan đã có tác động trong bài thuyết trình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, lọc nghĩa và bổ sung ví dụ.",
+      "word": "effective",
+      "normalized_word": "effective",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is an effective way to solve the problem.",
+      "example_vi_clean": "Đây là một cách có kết quả để giải quyết vấn đề."
+    },
+    {
+      "id": 26008,
+      "quiz_meaning_vi": "hiệu quả",
+      "meaning_vi_clean": "hiệu quả; năng lực; hiệu suất",
+      "examples_clean": [
+        {
+          "meaning_vi": "hiệu quả",
+          "example_en": "The efficiency of the system is impressive.",
+          "example_vi": "Sự hiệu quả của hệ thống rất ấn tượng."
+        },
+        {
+          "meaning_vi": "hiệu quả",
+          "example_en": "We are working to improve our efficiency.",
+          "example_vi": "Chúng tôi đang làm việc để cải thiện sự hiệu quả của mình."
+        },
+        {
+          "meaning_vi": "hiệu quả",
+          "example_en": "The new machine increases efficiency.",
+          "example_vi": "Cỗ máy mới làm tăng sự hiệu quả."
+        },
+        {
+          "meaning_vi": "hiệu quả",
+          "example_en": "Efficiency is key to our success.",
+          "example_vi": "Sự hiệu quả là chìa khóa cho thành công của chúng ta."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "She has great efficiency in managing tasks.",
+          "example_vi": "Cô ấy có năng lực tuyệt vời trong việc quản lý công việc."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "His efficiency at work is well known.",
+          "example_vi": "Năng lực của anh ấy trong công việc rất nổi tiếng."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "The team showed high efficiency.",
+          "example_vi": "Đội ngũ đã thể hiện năng lực cao."
+        },
+        {
+          "meaning_vi": "hiệu suất",
+          "example_en": "The engine has high fuel efficiency.",
+          "example_vi": "Động cơ có hiệu suất nhiên liệu cao."
+        },
+        {
+          "meaning_vi": "hiệu suất",
+          "example_en": "We need to monitor the energy efficiency.",
+          "example_vi": "Chúng ta cần theo dõi hiệu suất năng lượng."
+        },
+        {
+          "meaning_vi": "hiệu suất",
+          "example_en": "The efficiency of the solar panels is good.",
+          "example_vi": "Hiệu suất của các tấm pin mặt trời rất tốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa đầu tiên thành 'hiệu quả' cho phù hợp với từ, bổ sung ví dụ.",
+      "word": "efficiency",
+      "normalized_word": "efficiency",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The efficiency of the system is impressive.",
+      "example_vi_clean": "Sự hiệu quả của hệ thống rất ấn tượng."
+    },
+    {
+      "id": 26009,
+      "quiz_meaning_vi": "có hiệu quả",
+      "meaning_vi_clean": "có hiệu quả; có năng lực",
+      "examples_clean": [
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "An efficient method saves time.",
+          "example_vi": "Một phương pháp có hiệu quả sẽ tiết kiệm thời gian."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "The new system is very efficient.",
+          "example_vi": "Hệ thống mới rất có hiệu quả."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "We need an efficient way to communicate.",
+          "example_vi": "Chúng ta cần một cách có hiệu quả để giao tiếp."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "The process is simple and efficient.",
+          "example_vi": "Quy trình này đơn giản và có hiệu quả."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "They found an efficient solution.",
+          "example_vi": "Họ đã tìm ra một giải pháp có hiệu quả."
+        },
+        {
+          "meaning_vi": "có năng lực",
+          "example_en": "She is an efficient worker.",
+          "example_vi": "Cô ấy là một nhân viên có năng lực."
+        },
+        {
+          "meaning_vi": "có năng lực",
+          "example_en": "He is very efficient at his job.",
+          "example_vi": "Anh ấy rất có năng lực trong công việc của mình."
+        },
+        {
+          "meaning_vi": "có năng lực",
+          "example_en": "We need efficient staff for this project.",
+          "example_vi": "Chúng ta cần nhân viên có năng lực cho dự án này."
+        },
+        {
+          "meaning_vi": "có năng lực",
+          "example_en": "The team is very efficient.",
+          "example_vi": "Đội ngũ rất có năng lực."
+        },
+        {
+          "meaning_vi": "có năng lực",
+          "example_en": "She is known for being efficient.",
+          "example_vi": "Cô ấy nổi tiếng là người có năng lực."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp, bổ sung ví dụ.",
+      "word": "efficient",
+      "normalized_word": "efficient",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "An efficient method saves time.",
+      "example_vi_clean": "Một phương pháp có hiệu quả sẽ tiết kiệm thời gian."
+    },
+    {
+      "id": 26010,
+      "quiz_meaning_vi": "khuỷu tay",
+      "meaning_vi_clean": "khuỷu tay; thúc bằng khuỷu tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "khuỷu tay",
+          "example_en": "He rested his elbow on the table.",
+          "example_vi": "Anh ấy đặt khuỷu tay lên bàn."
+        },
+        {
+          "meaning_vi": "khuỷu tay",
+          "example_en": "She hurt her elbow during the game.",
+          "example_vi": "Cô ấy bị đau khuỷu tay trong trận đấu."
+        },
+        {
+          "meaning_vi": "khuỷu tay",
+          "example_en": "He wiped his mouth with his elbow.",
+          "example_vi": "Anh ấy lau miệng bằng khuỷu tay."
+        },
+        {
+          "meaning_vi": "khuỷu tay",
+          "example_en": "The sleeve of his shirt was worn at the elbow.",
+          "example_vi": "Tay áo sơ mi của anh ấy bị sờn ở khuỷu tay."
+        },
+        {
+          "meaning_vi": "khuỷu tay",
+          "example_en": "She leaned on her elbow.",
+          "example_vi": "Cô ấy chống khuỷu tay."
+        },
+        {
+          "meaning_vi": "thúc bằng khuỷu tay",
+          "example_en": "He elbowed his way through the crowd.",
+          "example_vi": "Anh ấy thúc bằng khuỷu tay để đi qua đám đông."
+        },
+        {
+          "meaning_vi": "thúc bằng khuỷu tay",
+          "example_en": "She elbowed him to get his attention.",
+          "example_vi": "Cô ấy thúc bằng khuỷu tay để thu hút sự chú ý của anh ấy."
+        },
+        {
+          "meaning_vi": "thúc bằng khuỷu tay",
+          "example_en": "He elbowed me in the ribs.",
+          "example_vi": "Anh ấy thúc bằng khuỷu tay vào sườn tôi."
+        },
+        {
+          "meaning_vi": "thúc bằng khuỷu tay",
+          "example_en": "They elbowed each other in the rush.",
+          "example_vi": "Họ thúc bằng khuỷu tay vào nhau trong lúc vội vã."
+        },
+        {
+          "meaning_vi": "thúc bằng khuỷu tay",
+          "example_en": "She elbowed her friend to stop talking.",
+          "example_vi": "Cô ấy thúc bằng khuỷu tay bạn mình để ngừng nói chuyện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ, bổ sung ví dụ.",
+      "word": "elbow",
+      "normalized_word": "elbow",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He rested his elbow on the table.",
+      "example_vi_clean": "Anh ấy đặt khuỷu tay lên bàn."
+    }
+  ]
+}

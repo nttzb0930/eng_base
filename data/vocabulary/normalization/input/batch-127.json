@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-127",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25261,
+      "word": "mobile",
+      "normalized_word": "mobile",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'moubail/",
+      "primary_meaning_vi": "chuyển động",
+      "meaning_vi": "chuyển động, di động; lưu động; hay thay đổi, dễ biến đổi, biến đổi nhanh",
+      "example_en": "there are many business opportunities in mobile",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a mobile home",
+          "example_vi": null
+        },
+        {
+          "example_en": "mobile internet",
+          "example_vi": null
+        },
+        {
+          "example_en": "Mercury is a mobile liquid.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25262,
+      "word": "modern",
+      "normalized_word": "modern",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mɔdən/",
+      "primary_meaning_vi": "hiện đại",
+      "meaning_vi": "hiện đại; cận đại; người cận đại, người hiện đại; người ưa thích cái mới, người có quan điểm mới",
+      "example_en": "Our online interactive game is a modern approach to teaching about gum disease. Although it was built in the 1600s, the building still has a very modern look.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25263,
+      "word": "mood",
+      "normalized_word": "mood",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/mu:d/",
+      "primary_meaning_vi": "lối",
+      "meaning_vi": "lối, thức; điệu; tâm trạng; tính khí, tâm tính, tính tình",
+      "example_en": "I've been in a bad mood since I dumped my boyfriend.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He's in a mood with me today.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'm not in the mood for running today.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A good politician senses the mood of the crowd.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25264,
+      "word": "mosque",
+      "normalized_word": "mosque",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/mɔsk/",
+      "primary_meaning_vi": "nhà thờ Hồi giáo",
+      "meaning_vi": "nhà thờ Hồi giáo",
+      "example_en": "There's a mosque near where I live.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25265,
+      "word": "most",
+      "normalized_word": "most",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/moust/",
+      "primary_meaning_vi": "lớn nhất",
+      "meaning_vi": "lớn nhất, nhiều nhất; hầu hết, phần lớn, đa số; part; nhất, hơn cả; lắm, vô cùng, cực kỳ; hầu hết, phần lớn, phần nhiều, đa số, tối đa; ,  (từ lóng) cái cừ nhất, cái chiến nhất; tối đa, không hơn được nữa; tận dụng",
+      "example_en": "The most I can offer for the house is $150,000.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Most of the penguins were friendly and curious.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Correctness is most important.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This is a most unusual specimen.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25266,
+      "word": "mostly",
+      "normalized_word": "mostly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'moustli/",
+      "primary_meaning_vi": "hầu hết",
+      "meaning_vi": "hầu hết, phần lớn; thường là, chủ yếu là",
+      "example_en": "They're mostly good people, although they have made a few mistakes.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25267,
+      "word": "motorway",
+      "normalized_word": "motorway",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'moutəwei/",
+      "primary_meaning_vi": "đường lớn dành cho ô tô chạy nhanh",
+      "meaning_vi": "đường lớn dành cho ô tô chạy nhanh, xa lộ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25268,
+      "word": "ms",
+      "normalized_word": "ms",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "Microsoft",
+      "meaning_vi": "Microsoft",
+      "example_en": "a labouring coal-meter",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The shot missed by a mile.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The runners competed in the mile.",
+          "example_vi": null
+        },
+        {
+          "example_en": "five miles over the speed limit",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25269,
+      "word": "mug",
+      "normalized_word": "mug",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/mʌg/",
+      "primary_meaning_vi": "ca",
+      "meaning_vi": "ca; chén vại; ca (đầy), chén (đầy); mồm, miệng; mặt; ảnh căn cước; thằng ngốc, thằng khờ; anh chàng cả tin; học sinh chăm học, học sinh học gạo; học gạo (để đi thi)",
+      "example_en": "What an ugly mug.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He's a gullible mug – he believed her again.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The children weren't interested in sitting still for a serious photo; they mugged for the camera.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25270,
+      "word": "murder",
+      "normalized_word": "murder",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'mə:də/",
+      "primary_meaning_vi": "tội giết người",
+      "meaning_vi": "tội giết người, tội ám sát; la ó om sòm; ,  (từ lóng) nghịch ngợm (phá phách...) mà không bị làm sao; tất cả điều bí mật bị lộ; vụ âm mưu đã bị khám phá; giết, ám sát; tàn sát; làm hư, làm hỏng, làm sai (vì dốt nát, kém cỏi)",
+      "example_en": "The defendant was charged with murder.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There have been ten unsolved murders this year alone.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This headache is murder.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The woman found dead in her kitchen was murdered by her husband.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

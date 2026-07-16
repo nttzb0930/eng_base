@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-139",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25381,
+      "word": "position",
+      "normalized_word": "position",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/pə'ziʃn/",
+      "primary_meaning_vi": "vị trí",
+      "meaning_vi": "vị trí, chỗ (của một vật gì); vị trí; thế; tư thế; địa vị; chức vụ; lập trường, quan điểm, thái độ; luận điểm; sự đề ra luận điểm; đặt vào vị trí; xác định vị trí (cái gì...); đóng (quân ở vị trí)",
+      "example_en": "Chief of Staff is the second-highest position in the army.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My position on this issue is unchanged.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Stand in this position, with your arms at your side.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Stop running all over the field and play your position!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25382,
+      "word": "possible",
+      "normalized_word": "possible",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'pɔsəbl/",
+      "primary_meaning_vi": "có thể",
+      "meaning_vi": "có thể, có thể được, có thể làm được, có thể xảy ra; có thể chơi (với) được, có thể chịu đựng được; sự có thể; điểm số cao nhất có thể đạt được (tập bắn...); ứng cử viên có thể được đưa ra; vận động viên có thể được sắp xếp (vào đội...)",
+      "example_en": "Jones is a possible for the new opening in sales.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It's not just possible, it's probable.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It's possible for anyone to learn to pay the bagpipes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Jones and Smith are both possible for the opening in sales.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25383,
+      "word": "possibly",
+      "normalized_word": "possibly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'pɔsəbli/",
+      "primary_meaning_vi": "có lẽ",
+      "meaning_vi": "có lẽ, có thể",
+      "example_en": "It was possibly the costliest mistake in the organization's history.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I couldn't possibly be there on time.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25384,
+      "word": "pour",
+      "normalized_word": "pour",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/pɔ:/",
+      "primary_meaning_vi": "rót",
+      "meaning_vi": "rót, đổ, giội, trút; thổ lộ, bộc lộ, trút ra; đổ, chảy tràn; + down) mưa như trút; đổ ra, rót ra, làm chảy tràn ra; chảy tràn ra (nước...); tuôn ra, phun ra (những lời chửi rủa...), trút ra (cơn giận...); toả ra, làm lan ra (hương thơm...); bắn (đạn) như mưa; đổ ra, lũ lượt (đám đông...); đổ vào, trào vào, đổ dồn về, trào về; lũ lượt đổ về (đám đông); lấy lời lẽ nhẹ nhàng mà khuyên nhủ cho an tâm (mà làm nguôi cơn giận...); phúc bất trùng lai hoạ vô đơn chí; trận mưa như trút; mẻ chảy (mẻ gang, thép... chảy ở lò ra)",
+      "example_en": "The bartender's inexpert pour left me with a pint of beer that was half foam.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "pour water from a jug",
+          "example_vi": null
+        },
+        {
+          "example_en": "the rain poured down.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It's pouring outside.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25385,
+      "word": "power",
+      "normalized_word": "power",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'pauə/",
+      "primary_meaning_vi": "khả năng",
+      "meaning_vi": "khả năng, tài năng, năng lực; sức, lực, sức mạnh; quyền, chính quyền, quyền hạn, quyền lực, quyền thế, thế lực, uy quyền; người quyền thế, người cầm quyền; cơ quan có quyền lực; trời, thánh thần; cường quốc; ; (vật lý) lực; công suất, năng suất; năng lượng; luỹ thừa; số phóng to (kính hiển vi...); số lượng lớn, nhiều; máy đơn giản; cố lên nữa nào!; cung cấp lực (cho máy...)",
+      "example_en": "the mechanical powers",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This CD player is powered by batteries.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25386,
+      "word": "powerful",
+      "normalized_word": "powerful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'pauəful/",
+      "primary_meaning_vi": "hùng mạnh",
+      "meaning_vi": "hùng mạnh, hùng cường, mạnh mẽ; có quyền thế lớn, có quyền lực lớn, có uy quyền lớn",
+      "example_en": "Not very many (of them) had been damaged.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was the very best runner there.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25387,
+      "word": "precise",
+      "normalized_word": "precise",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/pri'sais/",
+      "primary_meaning_vi": "đúng",
+      "meaning_vi": "đúng, chính xác; tỉ mỉ, kỹ tính, nghiêm ngặt, câu nệ (người...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25388,
+      "word": "predict",
+      "normalized_word": "predict",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/pri'dikt/",
+      "primary_meaning_vi": "nói trước",
+      "meaning_vi": "nói trước; đoán trước, dự đoán",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25389,
+      "word": "prediction",
+      "normalized_word": "prediction",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/pri'dikʃn/",
+      "primary_meaning_vi": "sự nói trước",
+      "meaning_vi": "sự nói trước; sự đoán trước, sự dự đoán; lời nói trước; lời đoán trước, lời dự đoán, lời tiên tri",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25390,
+      "word": "prefer",
+      "normalized_word": "prefer",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/pri'fə:/",
+      "primary_meaning_vi": "thích hơn",
+      "meaning_vi": "thích hơn, ưa hơn; đề bạt, thăng cấp (ai vào một chức vị nào); đưa ra, trình",
+      "example_en": "I prefer tea to coffee.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

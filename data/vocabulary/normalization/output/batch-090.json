@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24891,
+      "quiz_meaning_vi": "sự chết",
+      "meaning_vi_clean": "sự chết; sự chấm dứt",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự chết",
+          "example_en": "The death of my grandmother saddened the whole family.",
+          "example_vi": "Sự ra đi của bà tôi đã làm cả gia đình buồn bã."
+        },
+        {
+          "meaning_vi": "sự chết",
+          "example_en": "He was deeply affected by the death of his best friend.",
+          "example_vi": "Anh ấy bị ảnh hưởng sâu sắc bởi sự ra đi của người bạn thân nhất."
+        },
+        {
+          "meaning_vi": "sự chết",
+          "example_en": "The cause of death was determined by the medical examiner.",
+          "example_vi": "Nguyên nhân cái chết đã được xác định bởi bác sĩ pháp y."
+        },
+        {
+          "meaning_vi": "sự chết",
+          "example_en": "She feared death more than anything else in her life.",
+          "example_vi": "Cô ấy sợ cái chết hơn bất cứ điều gì khác trong đời."
+        },
+        {
+          "meaning_vi": "sự chấm dứt",
+          "example_en": "The death of the project was due to a lack of funding.",
+          "example_vi": "Sự chấm dứt của dự án là do thiếu kinh phí."
+        },
+        {
+          "meaning_vi": "sự chấm dứt",
+          "example_en": "They witnessed the death of an era in local politics.",
+          "example_vi": "Họ đã chứng kiến sự chấm dứt của một kỷ nguyên trong chính trị địa phương."
+        },
+        {
+          "meaning_vi": "sự chấm dứt",
+          "example_en": "The sudden death of the contract surprised everyone involved.",
+          "example_vi": "Sự chấm dứt đột ngột của hợp đồng đã làm ngạc nhiên tất cả những người liên quan."
+        },
+        {
+          "meaning_vi": "sự chấm dứt",
+          "example_en": "We are facing the death of our traditional way of life.",
+          "example_vi": "Chúng ta đang đối mặt với sự chấm dứt của lối sống truyền thống."
+        },
+        {
+          "meaning_vi": "sự chết",
+          "example_en": "Many people find it difficult to talk about death openly.",
+          "example_vi": "Nhiều người thấy khó khăn khi nói về cái chết một cách cởi mở."
+        },
+        {
+          "meaning_vi": "sự chết",
+          "example_en": "The news of his death spread quickly through the village.",
+          "example_vi": "Tin tức về sự ra đi của ông ấy lan truyền nhanh chóng khắp ngôi làng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại nghĩa phổ biến nhất. Loại bỏ các nghĩa lóng và chuyên ngành không phù hợp cấp độ A2.",
+      "word": "death",
+      "normalized_word": "death",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The death of my grandmother saddened the whole family.",
+      "example_vi_clean": "Sự ra đi của bà tôi đã làm cả gia đình buồn bã."
+    },
+    {
+      "id": 24892,
+      "quiz_meaning_vi": "cuộc tranh luận",
+      "meaning_vi_clean": "cuộc tranh luận; tranh luận",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "After a four-hour debate, the committee voted to table the motion.",
+          "example_vi": "Sau một cuộc tranh luận kéo dài bốn giờ, ủy ban đã bỏ phiếu hoãn đề xuất."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "The debate over the new law lasted for several weeks.",
+          "example_vi": "Cuộc tranh luận về đạo luật mới kéo dài trong vài tuần."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "There was a heated debate about the best way to solve the problem.",
+          "example_vi": "Đã có một cuộc tranh luận gay gắt về cách tốt nhất để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "The public debate on climate change is very important.",
+          "example_vi": "Cuộc tranh luận công khai về biến đổi khí hậu rất quan trọng."
+        },
+        {
+          "meaning_vi": "tranh luận",
+          "example_en": "They will debate the issue in parliament tomorrow.",
+          "example_vi": "Họ sẽ tranh luận về vấn đề này tại quốc hội vào ngày mai."
+        },
+        {
+          "meaning_vi": "tranh luận",
+          "example_en": "Experts continue to debate the causes of the economic crisis.",
+          "example_vi": "Các chuyên gia tiếp tục tranh luận về nguyên nhân của cuộc khủng hoảng kinh tế."
+        },
+        {
+          "meaning_vi": "tranh luận",
+          "example_en": "We need to debate all the options before making a decision.",
+          "example_vi": "Chúng ta cần tranh luận về tất cả các lựa chọn trước khi đưa ra quyết định."
+        },
+        {
+          "meaning_vi": "tranh luận",
+          "example_en": "Politicians often debate policies on television.",
+          "example_vi": "Các chính trị gia thường tranh luận về các chính sách trên truyền hình."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "The debate ended without a clear conclusion.",
+          "example_vi": "Cuộc tranh luận kết thúc mà không có kết luận rõ ràng."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "She participated in a debate at her university.",
+          "example_vi": "Cô ấy đã tham gia một cuộc tranh luận tại trường đại học của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ theo từ điển chuẩn. Bổ sung nghĩa động từ để phù hợp với cách dùng thực tế.",
+      "word": "debate",
+      "normalized_word": "debate",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "After a four-hour debate, the committee voted to table the motion.",
+      "example_vi_clean": "Sau một cuộc tranh luận kéo dài bốn giờ, ủy ban đã bỏ phiếu hoãn đề xuất."
+    },
+    {
+      "id": 24893,
+      "quiz_meaning_vi": "giải quyết",
+      "meaning_vi_clean": "giải quyết; quyết định",
+      "examples_clean": [
+        {
+          "meaning_vi": "giải quyết",
+          "example_en": "Her last-minute goal decided the game.",
+          "example_vi": "Bàn thắng phút cuối của cô ấy đã giải quyết trận đấu."
+        },
+        {
+          "meaning_vi": "giải quyết",
+          "example_en": "The judge will decide the case next week.",
+          "example_vi": "Thẩm phán sẽ giải quyết vụ án vào tuần tới."
+        },
+        {
+          "meaning_vi": "giải quyết",
+          "example_en": "We need to decide the matter as soon as possible.",
+          "example_vi": "Chúng ta cần giải quyết vấn đề này càng sớm càng tốt."
+        },
+        {
+          "meaning_vi": "giải quyết",
+          "example_en": "The committee will decide the final outcome of the project.",
+          "example_vi": "Ủy ban sẽ giải quyết kết quả cuối cùng của dự án."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "I have decided that it is healthier to walk to work.",
+          "example_vi": "Tôi đã quyết định rằng đi bộ đi làm thì tốt cho sức khỏe hơn."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "She decided to study abroad next year.",
+          "example_vi": "Cô ấy đã quyết định đi du học vào năm tới."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "They decided to buy a new house in the city.",
+          "example_vi": "Họ đã quyết định mua một ngôi nhà mới trong thành phố."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "Have you decided what to wear for the party?",
+          "example_vi": "Bạn đã quyết định mặc gì cho bữa tiệc chưa?"
+        },
+        {
+          "meaning_vi": "giải quyết",
+          "example_en": "The evidence decided the outcome of the trial.",
+          "example_vi": "Bằng chứng đã giải quyết kết quả của phiên tòa."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "It is hard to decide which path to take.",
+          "example_vi": "Thật khó để quyết định nên chọn con đường nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại các nghĩa phổ biến nhất. Đảm bảo ví dụ minh họa rõ ràng cho từng nghĩa.",
+      "word": "decide",
+      "normalized_word": "decide",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Her last-minute goal decided the game.",
+      "example_vi_clean": "Bàn thắng phút cuối của cô ấy đã giải quyết trận đấu."
+    },
+    {
+      "id": 24894,
+      "quiz_meaning_vi": "sâu",
+      "meaning_vi_clean": "sâu; sâu sắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sâu",
+          "example_en": "The river is very deep in this part.",
+          "example_vi": "Con sông rất sâu ở đoạn này."
+        },
+        {
+          "meaning_vi": "sâu",
+          "example_en": "He breathed deep to calm himself down.",
+          "example_vi": "Anh ấy hít thở sâu để bình tĩnh lại."
+        },
+        {
+          "meaning_vi": "sâu",
+          "example_en": "The roots of the tree go deep into the ground.",
+          "example_vi": "Rễ cây đâm sâu vào lòng đất."
+        },
+        {
+          "meaning_vi": "sâu",
+          "example_en": "They dug deep to find the hidden treasure.",
+          "example_vi": "Họ đào sâu để tìm kho báu bị giấu."
+        },
+        {
+          "meaning_vi": "sâu sắc",
+          "example_en": "She was deeply moved by his kind words.",
+          "example_vi": "Cô ấy đã vô cùng cảm động bởi những lời tử tế của anh ấy."
+        },
+        {
+          "meaning_vi": "sâu sắc",
+          "example_en": "The two friends have a deeply rooted connection.",
+          "example_vi": "Hai người bạn có một mối liên kết sâu sắc."
+        },
+        {
+          "meaning_vi": "sâu sắc",
+          "example_en": "He is deeply involved in the community project.",
+          "example_vi": "Anh ấy tham gia sâu sắc vào dự án cộng đồng."
+        },
+        {
+          "meaning_vi": "sâu sắc",
+          "example_en": "The book had a deeply profound impact on her.",
+          "example_vi": "Cuốn sách đã có một tác động sâu sắc đến cô ấy."
+        },
+        {
+          "meaning_vi": "sâu",
+          "example_en": "The snow was deep after the winter storm.",
+          "example_vi": "Tuyết rất sâu sau cơn bão mùa đông."
+        },
+        {
+          "meaning_vi": "sâu sắc",
+          "example_en": "They are deeply concerned about the environment.",
+          "example_vi": "Họ vô cùng lo lắng về môi trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho từ loại phó từ. Đảm bảo nghĩa 'sâu' và 'sâu sắc' được minh họa rõ.",
+      "word": "deeply",
+      "normalized_word": "deeply",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The river is very deep in this part.",
+      "example_vi_clean": "Con sông rất sâu ở đoạn này."
+    },
+    {
+      "id": 24895,
+      "quiz_meaning_vi": "mức độ",
+      "meaning_vi_clean": "mức độ; bằng cấp",
+      "examples_clean": [
+        {
+          "meaning_vi": "mức độ",
+          "example_en": "The degree of difficulty varies from task to task.",
+          "example_vi": "Mức độ khó khác nhau tùy theo từng nhiệm vụ."
+        },
+        {
+          "meaning_vi": "mức độ",
+          "example_en": "To some degree, I agree with your opinion.",
+          "example_vi": "Ở một mức độ nào đó, tôi đồng ý với ý kiến của bạn."
+        },
+        {
+          "meaning_vi": "mức độ",
+          "example_en": "The temperature rose by several degrees today.",
+          "example_vi": "Nhiệt độ đã tăng vài độ vào hôm nay."
+        },
+        {
+          "meaning_vi": "mức độ",
+          "example_en": "We need to understand the degree of the problem.",
+          "example_vi": "Chúng ta cần hiểu mức độ của vấn đề."
+        },
+        {
+          "meaning_vi": "bằng cấp",
+          "example_en": "She has two bachelor's degrees and is studying towards a master's degree.",
+          "example_vi": "Cô ấy có hai bằng cử nhân và đang học để lấy bằng thạc sĩ."
+        },
+        {
+          "meaning_vi": "bằng cấp",
+          "example_en": "He earned his degree in engineering last year.",
+          "example_vi": "Anh ấy đã lấy bằng kỹ sư vào năm ngoái."
+        },
+        {
+          "meaning_vi": "bằng cấp",
+          "example_en": "Many jobs require a university degree.",
+          "example_vi": "Nhiều công việc yêu cầu bằng đại học."
+        },
+        {
+          "meaning_vi": "bằng cấp",
+          "example_en": "She is proud of her academic degree.",
+          "example_vi": "Cô ấy tự hào về bằng cấp học thuật của mình."
+        },
+        {
+          "meaning_vi": "mức độ",
+          "example_en": "The degree of success depends on your effort.",
+          "example_vi": "Mức độ thành công phụ thuộc vào nỗ lực của bạn."
+        },
+        {
+          "meaning_vi": "mức độ",
+          "example_en": "There is a high degree of uncertainty in the market.",
+          "example_vi": "Có một mức độ không chắc chắn cao trên thị trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại các nghĩa phổ biến nhất. Loại bỏ các nghĩa chuyên ngành toán học/họ hàng để phù hợp A2.",
+      "word": "degree",
+      "normalized_word": "degree",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The degree of difficulty varies from task to task.",
+      "example_vi_clean": "Mức độ khó khác nhau tùy theo từng nhiệm vụ."
+    },
+    {
+      "id": 24896,
+      "quiz_meaning_vi": "sự chậm trễ",
+      "meaning_vi_clean": "sự chậm trễ; trì hoãn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự chậm trễ",
+          "example_en": "The delay before the echo of a sound was noticeable.",
+          "example_vi": "Sự chậm trễ trước khi âm thanh vang vọng rất đáng chú ý."
+        },
+        {
+          "meaning_vi": "sự chậm trễ",
+          "example_en": "We apologize for the delay in your flight.",
+          "example_vi": "Chúng tôi xin lỗi vì sự chậm trễ trong chuyến bay của bạn."
+        },
+        {
+          "meaning_vi": "sự chậm trễ",
+          "example_en": "The project suffered a long delay due to bad weather.",
+          "example_vi": "Dự án đã chịu một sự chậm trễ dài do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "sự chậm trễ",
+          "example_en": "There was a slight delay in the delivery of the package.",
+          "example_vi": "Có một sự chậm trễ nhỏ trong việc giao gói hàng."
+        },
+        {
+          "meaning_vi": "trì hoãn",
+          "example_en": "They decided to delay the meeting until next week.",
+          "example_vi": "Họ đã quyết định trì hoãn cuộc họp đến tuần sau."
+        },
+        {
+          "meaning_vi": "trì hoãn",
+          "example_en": "Don't delay your decision any longer.",
+          "example_vi": "Đừng trì hoãn quyết định của bạn thêm nữa."
+        },
+        {
+          "meaning_vi": "trì hoãn",
+          "example_en": "The rain delayed the start of the game.",
+          "example_vi": "Cơn mưa đã trì hoãn sự bắt đầu của trận đấu."
+        },
+        {
+          "meaning_vi": "trì hoãn",
+          "example_en": "He often delays doing his homework.",
+          "example_vi": "Anh ấy thường trì hoãn việc làm bài tập về nhà."
+        },
+        {
+          "meaning_vi": "sự chậm trễ",
+          "example_en": "The delay caused us to miss the train.",
+          "example_vi": "Sự chậm trễ đã khiến chúng tôi lỡ chuyến tàu."
+        },
+        {
+          "meaning_vi": "trì hoãn",
+          "example_en": "We cannot delay the construction any further.",
+          "example_vi": "Chúng ta không thể trì hoãn việc xây dựng thêm nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ. Loại bỏ các nghĩa hiếm.",
+      "word": "delay",
+      "normalized_word": "delay",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The delay before the echo of a sound was noticeable.",
+      "example_vi_clean": "Sự chậm trễ trước khi âm thanh vang vọng rất đáng chú ý."
+    },
+    {
+      "id": 24897,
+      "quiz_meaning_vi": "thầy thuốc chữa răng",
+      "meaning_vi_clean": "thầy thuốc chữa răng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "I have an appointment with the dentist tomorrow.",
+          "example_vi": "Tôi có một cuộc hẹn với thầy thuốc chữa răng vào ngày mai."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "The dentist told me to brush my teeth twice a day.",
+          "example_vi": "Thầy thuốc chữa răng bảo tôi đánh răng hai lần một ngày."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "She is studying to become a dentist.",
+          "example_vi": "Cô ấy đang học để trở thành một thầy thuốc chữa răng."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "My dentist is very gentle and kind.",
+          "example_vi": "Thầy thuốc chữa răng của tôi rất nhẹ nhàng và tử tế."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "You should visit the dentist if your tooth hurts.",
+          "example_vi": "Bạn nên đi gặp thầy thuốc chữa răng nếu bị đau răng."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "The dentist cleaned my teeth thoroughly.",
+          "example_vi": "Thầy thuốc chữa răng đã làm sạch răng của tôi kỹ lưỡng."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "He works as a dentist in a local clinic.",
+          "example_vi": "Anh ấy làm việc như một thầy thuốc chữa răng tại một phòng khám địa phương."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "The dentist recommended using dental floss.",
+          "example_vi": "Thầy thuốc chữa răng khuyên nên sử dụng chỉ nha khoa."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "I am afraid of going to the dentist.",
+          "example_vi": "Tôi sợ đi gặp thầy thuốc chữa răng."
+        },
+        {
+          "meaning_vi": "thầy thuốc chữa răng",
+          "example_en": "The dentist checked for any cavities.",
+          "example_vi": "Thầy thuốc chữa răng đã kiểm tra xem có lỗ sâu răng nào không."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ tự nhiên cho từ dentist.",
+      "word": "dentist",
+      "normalized_word": "dentist",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have an appointment with the dentist tomorrow.",
+      "example_vi_clean": "Tôi có một cuộc hẹn với thầy thuốc chữa răng vào ngày mai."
+    },
+    {
+      "id": 24898,
+      "quiz_meaning_vi": "phụ thuộc",
+      "meaning_vi_clean": "phụ thuộc; dựa vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "phụ thuộc",
+          "example_en": "We would like to go skiing, but it depends on the amount of snow.",
+          "example_vi": "Chúng tôi muốn đi trượt tuyết, nhưng nó phụ thuộc vào lượng tuyết."
+        },
+        {
+          "meaning_vi": "phụ thuộc",
+          "example_en": "The price depends on the quality of the product.",
+          "example_vi": "Giá cả phụ thuộc vào chất lượng của sản phẩm."
+        },
+        {
+          "meaning_vi": "phụ thuộc",
+          "example_en": "Success depends on how hard you work.",
+          "example_vi": "Thành công phụ thuộc vào việc bạn làm việc chăm chỉ như thế nào."
+        },
+        {
+          "meaning_vi": "phụ thuộc",
+          "example_en": "Whether we go out depends on the weather.",
+          "example_vi": "Việc chúng ta có đi ra ngoài hay không phụ thuộc vào thời tiết."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "We depend on the mailman to come at the usual time.",
+          "example_vi": "Chúng tôi dựa vào người đưa thư để đến vào thời gian thường lệ."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "Children depend on their parents for food and shelter.",
+          "example_vi": "Trẻ em dựa vào cha mẹ để có thức ăn và nơi ở."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "You cannot always depend on others to help you.",
+          "example_vi": "Bạn không thể luôn dựa vào người khác để giúp đỡ mình."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "The company depends on its employees to succeed.",
+          "example_vi": "Công ty dựa vào nhân viên của mình để thành công."
+        },
+        {
+          "meaning_vi": "phụ thuộc",
+          "example_en": "The result depends on many different factors.",
+          "example_vi": "Kết quả phụ thuộc vào nhiều yếu tố khác nhau."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "I depend on my morning coffee to wake up.",
+          "example_vi": "Tôi dựa vào tách cà phê buổi sáng để tỉnh táo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại các nghĩa phổ biến nhất. Loại bỏ các nghĩa hiếm như 'treo'.",
+      "word": "depend",
+      "normalized_word": "depend",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "We would like to go skiing, but it depends on the amount of snow.",
+      "example_vi_clean": "Chúng tôi muốn đi trượt tuyết, nhưng nó phụ thuộc vào lượng tuyết."
+    },
+    {
+      "id": 24899,
+      "quiz_meaning_vi": "sự mô tả",
+      "meaning_vi_clean": "sự mô tả; loại",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự mô tả",
+          "example_en": "The zoo had no lions, tigers, or cats of any description.",
+          "example_vi": "Sở thú không có sư tử, hổ hay bất kỳ loại mèo nào theo bất kỳ sự mô tả nào."
+        },
+        {
+          "meaning_vi": "sự mô tả",
+          "example_en": "She gave a detailed description of the suspect.",
+          "example_vi": "Cô ấy đã đưa ra một sự mô tả chi tiết về nghi phạm."
+        },
+        {
+          "meaning_vi": "sự mô tả",
+          "example_en": "The description in the book was very vivid.",
+          "example_vi": "Sự mô tả trong cuốn sách rất sống động."
+        },
+        {
+          "meaning_vi": "sự mô tả",
+          "example_en": "Can you provide a brief description of the event?",
+          "example_vi": "Bạn có thể cung cấp một sự mô tả ngắn gọn về sự kiện không?"
+        },
+        {
+          "meaning_vi": "loại",
+          "example_en": "They sell all descriptions of household goods.",
+          "example_vi": "Họ bán đủ loại hàng hóa gia dụng."
+        },
+        {
+          "meaning_vi": "loại",
+          "example_en": "He is a person of a strange description.",
+          "example_vi": "Anh ấy là một người thuộc loại kỳ lạ."
+        },
+        {
+          "meaning_vi": "loại",
+          "example_en": "We have items of every description in the store.",
+          "example_vi": "Chúng tôi có các mặt hàng đủ loại trong cửa hàng."
+        },
+        {
+          "meaning_vi": "loại",
+          "example_en": "The shop offers goods of all descriptions.",
+          "example_vi": "Cửa hàng cung cấp hàng hóa đủ loại."
+        },
+        {
+          "meaning_vi": "sự mô tả",
+          "example_en": "The description of the landscape was beautiful.",
+          "example_vi": "Sự mô tả về phong cảnh thật đẹp."
+        },
+        {
+          "meaning_vi": "sự mô tả",
+          "example_en": "His description of the accident was accurate.",
+          "example_vi": "Sự mô tả của anh ấy về vụ tai nạn rất chính xác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại các nghĩa phổ biến nhất. Sửa 'sự tả' thành 'sự mô tả' cho tự nhiên.",
+      "word": "description",
+      "normalized_word": "description",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The zoo had no lions, tigers, or cats of any description.",
+      "example_vi_clean": "Sở thú không có sư tử, hổ hay bất kỳ loại mèo nào theo bất kỳ sự mô tả nào."
+    },
+    {
+      "id": 24900,
+      "quiz_meaning_vi": "sa mạc",
+      "meaning_vi_clean": "sa mạc; bỏ rơi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sa mạc",
+          "example_en": "They were marooned on a desert island in the Pacific.",
+          "example_vi": "Họ bị bỏ lại trên một hòn đảo sa mạc ở Thái Bình Dương."
+        },
+        {
+          "meaning_vi": "sa mạc",
+          "example_en": "The Sahara is the largest hot desert in the world.",
+          "example_vi": "Sahara là sa mạc nóng lớn nhất thế giới."
+        },
+        {
+          "meaning_vi": "sa mạc",
+          "example_en": "It is very hot in the desert during the day.",
+          "example_vi": "Trời rất nóng ở sa mạc vào ban ngày."
+        },
+        {
+          "meaning_vi": "sa mạc",
+          "example_en": "Few plants can survive in the desert.",
+          "example_vi": "Rất ít loài cây có thể sống sót trong sa mạc."
+        },
+        {
+          "meaning_vi": "bỏ rơi",
+          "example_en": "You can't just drive off and desert me here, in the middle of nowhere.",
+          "example_vi": "Bạn không thể chỉ lái xe đi và bỏ rơi tôi ở đây, giữa nơi đồng không mông quạnh."
+        },
+        {
+          "meaning_vi": "bỏ rơi",
+          "example_en": "Anyone found deserting will be punished.",
+          "example_vi": "Bất cứ ai bị phát hiện bỏ rơi nhiệm vụ sẽ bị trừng phạt."
+        },
+        {
+          "meaning_vi": "bỏ rơi",
+          "example_en": "He would never desert his family in times of trouble.",
+          "example_vi": "Anh ấy sẽ không bao giờ bỏ rơi gia đình mình trong lúc khó khăn."
+        },
+        {
+          "meaning_vi": "bỏ rơi",
+          "example_en": "The soldiers were accused of deserting their post.",
+          "example_vi": "Những người lính bị buộc tội bỏ rơi vị trí của họ."
+        },
+        {
+          "meaning_vi": "sa mạc",
+          "example_en": "The desert landscape is vast and empty.",
+          "example_vi": "Phong cảnh sa mạc rộng lớn và trống trải."
+        },
+        {
+          "meaning_vi": "sa mạc",
+          "example_en": "They traveled across the desert by camel.",
+          "example_vi": "Họ đã đi qua sa mạc bằng lạc đà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ. Loại bỏ các nghĩa cổ và không phù hợp.",
+      "word": "desert",
+      "normalized_word": "desert",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They were marooned on a desert island in the Pacific.",
+      "example_vi_clean": "Họ bị bỏ lại trên một hòn đảo sa mạc ở Thái Bình Dương."
+    }
+  ]
+}

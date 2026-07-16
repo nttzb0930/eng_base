@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-089",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24881,
+      "word": "customer",
+      "normalized_word": "customer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kʌstəmə/",
+      "primary_meaning_vi": "khách hàng",
+      "meaning_vi": "khách hàng; gã, anh chàng",
+      "example_en": "Every person who passes by is a potential customer.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a cool customer, a tough customer, an ugly customer",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24882,
+      "word": "cycling",
+      "normalized_word": "cycling",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'saikliɳ/",
+      "primary_meaning_vi": "sự đi xe đạp",
+      "meaning_vi": "sự đi xe đạp",
+      "example_en": "Avoid cycling the device unnecessarily.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They have their cycling game going tonight.",
+          "example_vi": null
+        },
+        {
+          "example_en": "In all my years as a cycling fan, I've never seen a breakaway like this.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24883,
+      "word": "daily",
+      "normalized_word": "daily",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'deili/",
+      "primary_meaning_vi": "hằng ngày",
+      "meaning_vi": "hằng ngày; báo hàng ngày; người đàn bà giúp việc hằng ngày đến nhà",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24884,
+      "word": "dam",
+      "normalized_word": "dam",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dæm/",
+      "primary_meaning_vi": "vật mẹ",
+      "meaning_vi": "vật mẹ; ma quỷ; đập (ngăn nước); nước ngăn lại, bể nước; xây đập (ở nơi nào); ngăn (nước) bằng đập; ((thường) + up) ghìm lại, kiềm chế lại",
+      "example_en": "A dam is often an essential source of water to farmers of hilly country.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Boats may only be used at places set aside for boating on the dam.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24885,
+      "word": "dancer",
+      "normalized_word": "dancer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dɑ:nsə/",
+      "primary_meaning_vi": "người nhảy múa",
+      "meaning_vi": "người nhảy múa, diễn viên múa, vũ nữ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24886,
+      "word": "danger",
+      "normalized_word": "danger",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'deindʤə/",
+      "primary_meaning_vi": "sự nguy hiểm",
+      "meaning_vi": "sự nguy hiểm, mối hiểm nghèo; nguy cơ, mối đe doạ; (như) danger-signal",
+      "example_en": "There's plenty of danger in the desert.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The north signal was at danger because of the rockslide.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24887,
+      "word": "dangerous",
+      "normalized_word": "dangerous",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'deindʤrəs/",
+      "primary_meaning_vi": "nguy hiểm",
+      "meaning_vi": "nguy hiểm; hiểm nghèo, nguy ngập, nguy cấp (bệnh); nham hiểm, lợi hại, dữ tợn",
+      "example_en": "Railway crossings without gates are highly dangerous.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24888,
+      "word": "daylight",
+      "normalized_word": "daylight",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'deilait/",
+      "primary_meaning_vi": "ánh nắng ban ngày",
+      "meaning_vi": "ánh nắng ban ngày; (nghĩa bóng) sự công khai; lúc tảng sáng, bình minh, rạng đông; (từ lóng) mắt; khoảng trống, khoảng cách giữa hai vật gì, như giữa hai con thuyền trong cuộc đua, giữa ngấn rượu với mép cốc...); đâm ai; bắn ai; đưa cái gì ra công khai, công bố cái gì; nhìn thấy tia hy vọng; tìm thấy con đường thoát khỏi bế tắc khó khăn",
+      "example_en": "We should get home while it's still daylight.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We had only two hours to work before daylight.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Budgeting a spy organization can't very well be done in daylight.",
+          "example_vi": null
+        },
+        {
+          "example_en": "All small running backs instinctively run to daylight.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24889,
+      "word": "dead",
+      "normalized_word": "dead",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/ded/",
+      "primary_meaning_vi": "chết (người",
+      "meaning_vi": "chết (người, vật, cây cối); tắt, tắt ngấm; chết, không hoạt động; không sinh sản; hết hiệu lực; không dùng được nữa; tê cóng, tê bại, tê liệt; xỉn, không bóng (màu, vàng...); đục, không vang (âm thanh...); không màng đến, không biết đến, chai điếng, điếc đặc không chịu nghe; thình lình, hoàn toàn; không có thế hiệu; ,  (thông tục) ngu xuẩn, đần độn; đã chết và chôn; đã qua từ lâu; đã bỏ đi không dùng đến từ lâu; chết thật rồi, chết cứng ra rồi; chai không, chai đã uống hết; gần chết, thừa sống thiếu chết; chết giấc, bất tỉnh nhân sự; người chết thì không còn tiết lộ bí mật được nữa; những người đã chết, những người đã khuất; giữa; hãy để cho quá khứ chôn vùi quá khứ đi; hãy quên quá khứ đi; ,  (thông tục) nhất định, kiên quyết; đứng đắn, không đùa; đúng vào, ngay vào, thẳng vào; hoàn toàn; hằn lại, sững lại; kiên quyết phản đối ai",
+      "example_en": "Have respect for the dead.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The dead of night. The dead of winter.",
+          "example_vi": null
+        },
+        {
+          "example_en": "All of my grandparents are dead.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He is dead to me.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24890,
+      "word": "deal",
+      "normalized_word": "deal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/di:l/",
+      "primary_meaning_vi": "gỗ tùng",
+      "meaning_vi": "gỗ tùng, gỗ thông; tấm ván cây; số lượng; sự chia bài, lượt chia bài, ván bài; sự giao dịch, sự thoả thuận mua bán; sự thông đồng ám muội; việc làm bất lương; cách đối xử; sự đối đãi; chính sách kinh tế xã hội mới (của Ru-dơ-ven năm 1932); + out) phân phát, phân phối; chia (bài); ban cho; giáng cho, nện cho (một cú đòn...); giáng cho ai một đòn; giao du với, có quan hệ với, giao thiệp với, chơi bời đi lại với; giao dịch buôn bán với; buôn bán; chia bài; giải quyết; đối phó; đối xử, đối đãi, ăn ở, cư xử",
+      "example_en": "We gave three deals of grain in tribute to the king.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I believe it's your deal.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We need to finalise the deal with Henderson by midnight.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He made a deal with the devil.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-041",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24401,
+      "word": "hill",
+      "normalized_word": "hill",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/hil/",
+      "primary_meaning_vi": "đồi",
+      "meaning_vi": "đồi; cồn, gò, đống, đụn, mô đất, chỗ đất đùn lên (mối, kiến...); (Anh-Ân) vùng đồi núi nơi nghỉ an dưỡng; go; lên dốc xuống đèo; đắp thành đồi; + up) vun đất (vào gốc cây)",
+      "example_en": "The park is sheltered from the wind by a hill to the east.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "You need to pick up speed to get up the hill that's coming up.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a hill of corn or potatoes",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24402,
+      "word": "him",
+      "normalized_word": "him",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "danh từ",
+      "phonetic": "/him/",
+      "primary_meaning_vi": "nó",
+      "meaning_vi": "nó, hắn, ông ấy, anh ấy",
+      "example_en": "I think this bird is a him, but it may be a her.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24403,
+      "word": "his",
+      "normalized_word": "his",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "đại từ sở hữu",
+      "phonetic": "/hiz/",
+      "primary_meaning_vi": "của nó",
+      "meaning_vi": "của nó, của hắn, của ông ấy, của anh ấy; cái của nó, cái của hắn, cái của ông ấy, cái của anh ấy",
+      "example_en": "The decision was his to live with.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I didn't even get a hi.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24404,
+      "word": "history",
+      "normalized_word": "history",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'histəri/",
+      "primary_meaning_vi": "sử",
+      "meaning_vi": "sử, sử học, lịch sử; lịch sử (một vật, một người); kịch lịch sử",
+      "example_en": "History repeats itself if we don’t learn from its mistakes.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He teaches history at the university. History will not look kindly on these tyrants. He dreams of an invention that will make history.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What is your medical history? The family's history includes events best forgotten.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I really enjoyed Shakespeare's tragedies more than his histories.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24405,
+      "word": "hobby",
+      "normalized_word": "hobby",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hɔbi/",
+      "primary_meaning_vi": "thú riêng",
+      "meaning_vi": "thú riêng, sở thích riêng; con ngựa nhỏ; xe đạp cổ xưa; chim cắt",
+      "example_en": "I like to collect stamps from different countries as a hobby.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24406,
+      "word": "hold",
+      "normalized_word": "hold",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/hould/",
+      "primary_meaning_vi": "khoang (của tàu thuỷ)",
+      "meaning_vi": "khoang (của tàu thuỷ); sự cầm, sự nắm giữ, sự nắm chặt; sự nắm được, sự hiểu thấu; ảnh hưởng; vật để nắm lấy; vật đỡ; chỗ dựa; đồn ải, thành luỹ, pháo đài; sự giam cầm; nhà lao, nhà tù; cầm, nắm, giữ, nắm giữ, giữ vững; giữ, ở (trong một tư thế nào đó); chứa, chứa đựng; giam giữ (ai); giữ, nén, nín, kìm lại; bắt phải giữ lời hứa; choán, xâm chiếm, thu hút, lôi cuốn; có ý nghĩ là, cho là, xem là, coi là; tin rằng; quyết định là (toà án, quan toà...); tổ chức, tiến hành; nói, đúng (những lời lẽ...); theo, theo đuổi, tiếp tục đi theo; (+ to,  by) giữ vững, giữ chắc ((nghĩa đen) & (nghĩa bóng)); tiếp tục, kéo dài, còn mãi, cứ vẫn; có giá trị, có hiệu lực, có thể áp dụng ((cũng) to hold good,  to hold true); ((thường) phủ định + with) tán thành; hold! đứng lại, dừng lại; đợi một tí!; ngăn lại, giữ lại, nén lại, kìm lại; giấu, giữ bí mật, giữ riêng (tin tức...); do dự, ngập ngừng; cố ngăn, cố nén; bắt lệ thuộc, bắt phụ thuộc, bắt phục tùng; áp bức; cúi (đầu); tiếp tục giữ, vẫn giữ, vẫn (ở trong hoàn cảnh nào...); đưa ra, đặt ra, nêu ra (một đề nghị...); nói; hò hét diễn thuyết ((thường) xấu); nói chắc, dám chắc; giam giữ; nén lại, kìm lại, dằn lại; giữ không cho lại gần; giữ cách xa; chậm lại, nán lại; nắm chặt, giữ chặt, bám chặt; giữ máy không cắt (dây nói); giơ ra, đưa ra; chịu đựng, kiên trì dai dẳng; không nhượng bộ, không đầu hàng (thành bị bao vây...); ,  (từ lóng) không cho, không từ chối cho (cái gì phải cho); để chậm lại, đình lại, hoàn lại; ở lại sau khi hết nhiệm kỳ; ở lại thêm nhiệm kỳ; gắn lại với nhau, giữ lại với nhau; gắn bó với nhau, đoàn kết với nhau; đưa lên, giơ lên; đỡ, chống đỡ; vẫn vững, vẫn duy trì; vẫn đứng vững, không ngã (ngựa); nêu ra, phô ra, đưa ra; chặn đứng (ô tô...) ăn cướp; làm đình trệ, làm tắc nghẽn (giao thông...); loof; đứng lại!; ngừng!; own; luôn luôn giơ cái gì đe doạ ai; kín không rò (thùng); đứng vững được (lập luận...)",
+      "example_en": "Keep a firm hold on the handlebars.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Can I have a hold of the baby?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Senator X placed a hold on the bill, then went to the library and placed a hold on a book.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We have a hold here for you.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24407,
+      "word": "hole",
+      "normalized_word": "hole",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'houl/",
+      "primary_meaning_vi": "lỗ",
+      "meaning_vi": "lỗ, lỗ thủng; lỗ trống; lỗ khoan; lỗ đáo; lỗ đặt bóng (trong một số trò chơi); chỗ sâu, chỗ trũng (ở dòng suối); hố; hang (chuột, chồn...); túp lều tồi tàn, nhà ổ chuột; điểm thắng (khi đánh được quả gôn từ lỗ nọ sang lỗ kia); lỗ trống (trong không khí); rỗ kim, rỗ tổ ong; khuyết điểm; thiếu sót, lỗ hổng (bóng); tình thế khó xử, hoàn cảnh lúng túng; vết nhơ đối với thanh danh của mình; gây một chỗ trống lớn (trong ngân quỹ...); lấy ra một phần lớn (cái hì...); tìm khuyết điểm, bới lông tìm vết; nồi tròn vung méo, người đặt không đúng chỗ, người bố trí không thích hợp với công tác; đào lỗ, đục lỗ; chọc thủng, làm thủng; để vào lỗ, đánh vào lỗ; đào (hầm), khoan (giếng); thủng; đánh bóng vào lỗ (đánh gôn); đào hầm thông (từ hầm này sang hầm khác); nấp trốn trong hang (thú vật)",
+      "example_en": "There’s a hole in my shoe. Her stocking has a hole in it.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I have found a hole in your argument.",
+          "example_vi": null
+        },
+        {
+          "example_en": "car hole; brain hole",
+          "example_vi": null
+        },
+        {
+          "example_en": "Just shut your hole!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24408,
+      "word": "holiday",
+      "normalized_word": "holiday",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'hɔlədi/",
+      "primary_meaning_vi": "ngày lễ",
+      "meaning_vi": "ngày lễ, ngày nghỉ; kỳ nghỉ (hè, đông...); (thuộc) ngày lễ, (thuộc) ngày nghỉ; nghỉ, nghỉ hè",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24409,
+      "word": "homework",
+      "normalized_word": "homework",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'houmwə:k/",
+      "primary_meaning_vi": "bài làm ở nhà (cho học sinh)",
+      "meaning_vi": "bài làm ở nhà (cho học sinh); công việc làm ở nhà",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24410,
+      "word": "hope",
+      "normalized_word": "hope",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/houp/",
+      "primary_meaning_vi": "hy vọng",
+      "meaning_vi": "hy vọng; nguồn hy vọng; từ bỏ mọi hy vọng; hy vọng hão huyền, uổng công; while; hy vọng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

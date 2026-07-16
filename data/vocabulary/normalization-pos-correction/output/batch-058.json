@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25653,
+      "quiz_meaning_vi": "lồng",
+      "meaning_vi_clean": "lồng",
+      "examples_clean": [
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The bird escaped from its cage.",
+          "example_vi": "Con chim đã thoát ra khỏi lồng của nó."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The lion was pacing back and forth in its cage.",
+          "example_vi": "Con sư tử đang đi đi lại lại trong lồng của nó."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The empty cage was left in the garden.",
+          "example_vi": "Chiếc lồng trống không đã bị bỏ lại trong vườn."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "She bought a large cage for her new hamster.",
+          "example_vi": "Cô ấy đã mua một chiếc lồng lớn cho con chuột hamster mới của mình."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The iron cage was very heavy and difficult to move.",
+          "example_vi": "Chiếc lồng sắt rất nặng và khó di chuyển."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The rabbit is safe inside its cage at night.",
+          "example_vi": "Con thỏ được an toàn bên trong lồng của nó vào ban đêm."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "He forgot to lock the cage last night.",
+          "example_vi": "Anh ấy đã quên khóa lồng vào đêm qua."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The children watched the monkeys in their cage.",
+          "example_vi": "Lũ trẻ quan sát những con khỉ trong lồng của chúng."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "She spends time cleaning the bird cage every week.",
+          "example_vi": "Cô ấy dành thời gian lau dọn lồng chim mỗi tuần."
+        },
+        {
+          "meaning_vi": "lồng",
+          "example_en": "The golden cage was a beautiful decoration in the room.",
+          "example_vi": "Chiếc lồng vàng là một vật trang trí đẹp mắt trong phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'cage' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'lồng' và tất cả 10 ví dụ đều sử dụng 'cage' như một danh từ chỉ vật nhốt động vật."
+      },
+      "word": "cage",
+      "normalized_word": "cage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bird escaped from its cage.",
+      "example_vi_clean": "Con chim đã thoát ra khỏi lồng của nó."
+    },
+    {
+      "id": 25659,
+      "quiz_meaning_vi": "bình tĩnh",
+      "meaning_vi_clean": "bình tĩnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "Please try to stay calm during the exam.",
+          "example_vi": "Làm ơn hãy cố gắng giữ bình tĩnh trong suốt kỳ thi."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "She spoke in a calm and steady voice.",
+          "example_vi": "Cô ấy nói bằng một giọng nói bình tĩnh và đều đặn."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "He is a very calm person even under pressure.",
+          "example_vi": "Anh ấy là một người rất bình tĩnh ngay cả khi chịu áp lực."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "The atmosphere in the library was very calm.",
+          "example_vi": "Bầu không khí trong thư viện rất bình tĩnh."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "His calm response surprised everyone in the room.",
+          "example_vi": "Câu trả lời bình tĩnh của anh ấy đã làm mọi người trong phòng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "It is important to keep calm in an emergency.",
+          "example_vi": "Việc giữ bình tĩnh trong tình huống khẩn cấp là rất quan trọng."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "A calm mind helps you make better decisions.",
+          "example_vi": "Một tâm trí bình tĩnh giúp bạn đưa ra những quyết định tốt hơn."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "She maintained a calm attitude throughout the meeting.",
+          "example_vi": "Cô ấy đã duy trì một thái độ bình tĩnh trong suốt cuộc họp."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "He took a deep breath to stay calm.",
+          "example_vi": "Anh ấy hít một hơi thật sâu để giữ bình tĩnh."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "Her face remained calm despite the bad news.",
+          "example_vi": "Khuôn mặt cô ấy vẫn bình tĩnh bất chấp tin xấu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho tính từ 'calm' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bình tĩnh' và tất cả 10 ví dụ đều sử dụng 'calm' như một tính từ mô tả trạng thái của con người hoặc bầu không khí."
+      },
+      "word": "calm",
+      "normalized_word": "calm",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Please try to stay calm during the exam.",
+      "example_vi_clean": "Làm ơn hãy cố gắng giữ bình tĩnh trong suốt kỳ thi."
+    },
+    {
+      "id": 25666,
+      "quiz_meaning_vi": "cây nến",
+      "meaning_vi_clean": "cây nến",
+      "examples_clean": [
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "She lit a candle to create a romantic mood.",
+          "example_vi": "Cô ấy đã thắp một cây nến để tạo ra một bầu không khí lãng mạn."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "He blew out the candles on his birthday cake.",
+          "example_vi": "Anh ấy đã thổi tắt những cây nến trên chiếc bánh sinh nhật của mình."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "The scented candle smells like lavender.",
+          "example_vi": "Cây nến thơm có mùi giống như hoa oải hương."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "The room was lit only by a single candle.",
+          "example_vi": "Căn phòng chỉ được thắp sáng bởi một cây nến duy nhất."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "The wax from the candle dripped onto the table.",
+          "example_vi": "Sáp từ cây nến đã nhỏ xuống bàn."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "The candle flame flickered in the wind.",
+          "example_vi": "Ngọn lửa nến lung linh trong gió."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "She bought a set of decorative candles for the party.",
+          "example_vi": "Cô ấy đã mua một bộ nến trang trí cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "The burning candle was left unattended on the shelf.",
+          "example_vi": "Cây nến đang cháy đã bị bỏ lại mà không có người trông coi trên kệ."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "He held a candle to see in the dark hallway.",
+          "example_vi": "Anh ấy cầm một cây nến để nhìn trong hành lang tối."
+        },
+        {
+          "meaning_vi": "cây nến",
+          "example_en": "The dinner table was decorated with beautiful candles.",
+          "example_vi": "Bàn ăn được trang trí bằng những cây nến đẹp mắt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'candle' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cây nến' và tất cả 10 ví dụ đều sử dụng 'candle' như một danh từ chỉ vật dụng thắp sáng bằng sáp."
+      },
+      "word": "candle",
+      "normalized_word": "candle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She lit a candle to create a romantic mood.",
+      "example_vi_clean": "Cô ấy đã thắp một cây nến để tạo ra một bầu không khí lãng mạn."
+    },
+    {
+      "id": 25672,
+      "quiz_meaning_vi": "sự bắt giữ",
+      "meaning_vi_clean": "sự bắt giữ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the thief was reported on the news.",
+          "example_vi": "Sự bắt giữ tên trộm đã được đưa tin trên bản tin."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the rebel leader was a major victory.",
+          "example_vi": "Sự bắt giữ thủ lĩnh quân phiến loạn là một chiến thắng lớn."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the escaped tiger took several hours.",
+          "example_vi": "Việc bắt giữ con hổ xổng chuồng đã mất vài giờ."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the suspect was caught on camera.",
+          "example_vi": "Sự bắt giữ nghi phạm đã được ghi lại trên camera."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the criminal ended the long search.",
+          "example_vi": "Sự bắt giữ tên tội phạm đã kết thúc cuộc tìm kiếm lâu dài."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the spy was a secret operation.",
+          "example_vi": "Việc bắt giữ điệp viên là một chiến dịch bí mật."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "His capture by the police happened early this morning.",
+          "example_vi": "Việc anh ta bị cảnh sát bắt giữ đã diễn ra vào sáng sớm nay."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the rare bird was important for research.",
+          "example_vi": "Việc bắt được con chim hiếm là quan trọng cho nghiên cứu."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the enemy soldier happened at night.",
+          "example_vi": "Việc bắt giữ người lính đối phương đã diễn ra vào ban đêm."
+        },
+        {
+          "meaning_vi": "sự bắt giữ",
+          "example_en": "The capture of the bank robber was a relief to the town.",
+          "example_vi": "Sự bắt giữ tên cướp ngân hàng là một sự nhẹ nhõm cho thị trấn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'capture' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự bắt giữ' và tất cả 10 ví dụ đều sử dụng 'capture' như một danh từ chỉ hành động bắt giữ người hoặc động vật."
+      },
+      "word": "capture",
+      "normalized_word": "capture",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The capture of the thief was reported on the news.",
+      "example_vi_clean": "Sự bắt giữ tên trộm đã được đưa tin trên bản tin."
+    },
+    {
+      "id": 25673,
+      "quiz_meaning_vi": "sự nghiệp",
+      "meaning_vi_clean": "sự nghiệp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "She had a long and successful career in teaching.",
+          "example_vi": "Cô ấy đã có một sự nghiệp lâu dài và thành công trong ngành giảng dạy."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "He is looking for a new career path in technology.",
+          "example_vi": "Anh ấy đang tìm kiếm một con đường sự nghiệp mới trong ngành công nghệ."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "Starting a career in medicine requires hard work.",
+          "example_vi": "Bắt đầu một sự nghiệp trong ngành y đòi hỏi sự chăm chỉ."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "She decided to change her career at the age of forty.",
+          "example_vi": "Cô ấy đã quyết định thay đổi sự nghiệp ở tuổi bốn mươi."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "His career goals are very ambitious for his age.",
+          "example_vi": "Các mục tiêu sự nghiệp của anh ấy rất đầy tham vọng so với độ tuổi của mình."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "She spent her entire career at the same company.",
+          "example_vi": "Cô ấy đã dành toàn bộ sự nghiệp của mình tại cùng một công ty."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "He received some helpful career advice from his mentor.",
+          "example_vi": "Anh ấy đã nhận được một số lời khuyên sự nghiệp hữu ích từ người hướng dẫn của mình."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "Her professional career began ten years ago.",
+          "example_vi": "Sự nghiệp chuyên nghiệp của cô ấy đã bắt đầu từ mười năm trước."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "He is currently at the peak of his career.",
+          "example_vi": "Anh ấy hiện đang ở đỉnh cao của sự nghiệp."
+        },
+        {
+          "meaning_vi": "sự nghiệp",
+          "example_en": "The book offers tips for building a better career.",
+          "example_vi": "Cuốn sách đưa ra những lời khuyên để xây dựng một sự nghiệp tốt hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'career' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự nghiệp' và tất cả 10 ví dụ đều sử dụng 'career' như một danh từ chỉ quá trình làm việc chuyên nghiệp."
+      },
+      "word": "career",
+      "normalized_word": "career",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She had a long and successful career in teaching.",
+      "example_vi_clean": "Cô ấy đã có một sự nghiệp lâu dài và thành công trong ngành giảng dạy."
+    },
+    {
+      "id": 25677,
+      "quiz_meaning_vi": "tấm thảm",
+      "meaning_vi_clean": "tấm thảm",
+      "examples_clean": [
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "The red carpet was rolled out for the special guests.",
+          "example_vi": "Tấm thảm đỏ đã được trải ra cho những vị khách đặc biệt."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "We need to buy a new carpet for the living room.",
+          "example_vi": "Chúng ta cần mua một tấm thảm mới cho phòng khách."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "The wool carpet feels very soft under my feet.",
+          "example_vi": "Tấm thảm len cảm thấy rất mềm mại dưới chân tôi."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "She spent the whole morning cleaning the carpet.",
+          "example_vi": "Cô ấy đã dành cả buổi sáng để lau dọn tấm thảm."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "The thick carpet helps to reduce noise in the house.",
+          "example_vi": "Tấm thảm dày giúp giảm tiếng ồn trong nhà."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "There is a large coffee stain on the carpet.",
+          "example_vi": "Có một vết cà phê lớn trên tấm thảm."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "The patterned carpet matches the curtains perfectly.",
+          "example_vi": "Tấm thảm có hoa văn hoàn toàn phù hợp với rèm cửa."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "They installed wall-to-wall carpet in the bedroom.",
+          "example_vi": "Họ đã lắp đặt thảm trải sàn toàn bộ trong phòng ngủ."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "The cat is sleeping peacefully on the carpet.",
+          "example_vi": "Con mèo đang ngủ yên bình trên tấm thảm."
+        },
+        {
+          "meaning_vi": "tấm thảm",
+          "example_en": "The blue carpet makes the room look bright and fresh.",
+          "example_vi": "Tấm thảm xanh làm cho căn phòng trông sáng sủa và tươi mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'carpet' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tấm thảm' và tất cả 10 ví dụ đều sử dụng 'carpet' như một danh từ chỉ vật liệu trải sàn."
+      },
+      "word": "carpet",
+      "normalized_word": "carpet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The red carpet was rolled out for the special guests.",
+      "example_vi_clean": "Tấm thảm đỏ đã được trải ra cho những vị khách đặc biệt."
+    },
+    {
+      "id": 25680,
+      "quiz_meaning_vi": "bình thường",
+      "meaning_vi_clean": "bình thường",
+      "examples_clean": [
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "He wore casual clothes to the office on Friday.",
+          "example_vi": "Anh ấy đã mặc quần áo bình thường đến văn phòng vào thứ Sáu."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "The party has a very casual atmosphere.",
+          "example_vi": "Bữa tiệc có một bầu không khí rất bình thường."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "They had a casual conversation about the weather.",
+          "example_vi": "Họ đã có một cuộc trò chuyện bình thường về thời tiết."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "It was just a casual meeting between old friends.",
+          "example_vi": "Đó chỉ là một cuộc gặp gỡ bình thường giữa những người bạn cũ."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "She has a casual interest in photography.",
+          "example_vi": "Cô ấy có một sự quan tâm bình thường đối với nhiếp ảnh."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "The restaurant is perfect for a casual dinner.",
+          "example_vi": "Nhà hàng này hoàn hảo cho một bữa tối bình thường."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "He made a casual remark about her new dress.",
+          "example_vi": "Anh ấy đã đưa ra một lời nhận xét bình thường về chiếc váy mới của cô ấy."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "The dress code for the event is casual.",
+          "example_vi": "Quy định về trang phục cho sự kiện là bình thường."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "I like his casual style of dressing.",
+          "example_vi": "Tôi thích phong cách ăn mặc bình thường của anh ấy."
+        },
+        {
+          "meaning_vi": "bình thường",
+          "example_en": "She went for a casual look with jeans and a t-shirt.",
+          "example_vi": "Cô ấy đã chọn một vẻ ngoài bình thường với quần jean và áo thun."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho tính từ 'casual' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bình thường' (không trang trọng) và tất cả 10 ví dụ đều sử dụng 'casual' như một tính từ mô tả phong cách hoặc bầu không khí."
+      },
+      "word": "casual",
+      "normalized_word": "casual",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He wore casual clothes to the office on Friday.",
+      "example_vi_clean": "Anh ấy đã mặc quần áo bình thường đến văn phòng vào thứ Sáu."
+    },
+    {
+      "id": 25685,
+      "quiz_meaning_vi": "sự thận trọng",
+      "meaning_vi_clean": "sự thận trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "You should exercise caution when driving in the rain.",
+          "example_vi": "Bạn nên thực hiện sự thận trọng khi lái xe dưới trời mưa."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "He handled the fragile vase with great caution.",
+          "example_vi": "Anh ấy đã cầm chiếc bình dễ vỡ với sự thận trọng lớn."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "The sign warned us to proceed with caution.",
+          "example_vi": "Biển báo đã cảnh báo chúng tôi tiếp tục với sự thận trọng."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "A word of caution: the floor is very slippery.",
+          "example_vi": "Một lời khuyên về sự thận trọng: sàn nhà rất trơn."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "The police advised extreme caution in the area.",
+          "example_vi": "Cảnh sát đã khuyên nên hết sức thận trọng trong khu vực này."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "His lack of caution led to a serious accident.",
+          "example_vi": "Sự thiếu thận trọng của anh ấy đã dẫn đến một tai nạn nghiêm trọng."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "The doctor treated the patient with caution.",
+          "example_vi": "Bác sĩ đã đối xử với bệnh nhân với sự thận trọng."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "Safety caution is necessary in the laboratory.",
+          "example_vi": "Sự thận trọng an toàn là cần thiết trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "She listened to his advice with caution.",
+          "example_vi": "Cô ấy đã lắng nghe lời khuyên của anh ấy với sự thận trọng."
+        },
+        {
+          "meaning_vi": "sự thận trọng",
+          "example_en": "The project requires a high degree of caution.",
+          "example_vi": "Dự án yêu cầu một mức độ thận trọng cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'caution' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự thận trọng' và tất cả 10 ví dụ đều sử dụng 'caution' như một danh từ chỉ sự cẩn thận để tránh nguy hiểm."
+      },
+      "word": "caution",
+      "normalized_word": "caution",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You should exercise caution when driving in the rain.",
+      "example_vi_clean": "Bạn nên thực hiện sự thận trọng khi lái xe dưới trời mưa."
+    },
+    {
+      "id": 25690,
+      "quiz_meaning_vi": "trung tâm",
+      "meaning_vi_clean": "trung tâm",
+      "examples_clean": [
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The hotel is in a central location near the park.",
+          "example_vi": "Khách sạn nằm ở một vị trí trung tâm gần công viên."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "We live in central London, so everything is close.",
+          "example_vi": "Chúng tôi sống ở trung tâm London, vì vậy mọi thứ đều gần."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The house has a modern central heating system.",
+          "example_vi": "Ngôi nhà có một hệ thống sưởi trung tâm hiện đại."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The central station is always busy with commuters.",
+          "example_vi": "Nhà ga trung tâm luôn bận rộn với những người đi làm."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "She plays a central role in the success of the team.",
+          "example_vi": "Cô ấy đóng một vai trò trung tâm trong thành công của đội."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The central office is located in the downtown area.",
+          "example_vi": "Văn phòng trung tâm nằm ở khu vực trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The central idea of the book is about love and loss.",
+          "example_vi": "Ý tưởng trung tâm của cuốn sách là về tình yêu và sự mất mát."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The central government announced new laws today.",
+          "example_vi": "Chính phủ trung tâm đã thông báo các luật mới vào hôm nay."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The central bank lowered interest rates this month.",
+          "example_vi": "Ngân hàng trung tâm đã hạ lãi suất trong tháng này."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The park is a central feature of the city.",
+          "example_vi": "Công viên là một đặc điểm trung tâm của thành phố."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho tính từ 'central' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'trung tâm' và tất cả 10 ví dụ đều sử dụng 'central' như một tính từ chỉ vị trí hoặc tầm quan trọng."
+      },
+      "word": "central",
+      "normalized_word": "central",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The hotel is in a central location near the park.",
+      "example_vi_clean": "Khách sạn nằm ở một vị trí trung tâm gần công viên."
+    },
+    {
+      "id": 25694,
+      "quiz_meaning_vi": "nhà vô địch",
+      "meaning_vi_clean": "nhà vô địch",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "He is the world champion in boxing.",
+          "example_vi": "Anh ấy là nhà vô địch thế giới môn quyền anh."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "She became an Olympic champion at age twenty.",
+          "example_vi": "Cô ấy đã trở thành nhà vô địch Olympic ở tuổi hai mươi."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "The defending champion lost the match yesterday.",
+          "example_vi": "Nhà vô địch đang giữ danh hiệu đã thua trận đấu ngày hôm qua."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "He is a former champion of the tennis tournament.",
+          "example_vi": "Anh ấy là cựu nhà vô địch của giải quần vợt."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "The national champion will compete next week.",
+          "example_vi": "Nhà vô địch quốc gia sẽ thi đấu vào tuần tới."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "She is the local chess champion in our town.",
+          "example_vi": "Cô ấy là nhà vô địch cờ vua địa phương trong thị trấn của chúng tôi."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "The racing champion celebrated his victory with fans.",
+          "example_vi": "Nhà vô địch đua xe đã ăn mừng chiến thắng của mình với người hâm mộ."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "He was crowned the champion of the year.",
+          "example_vi": "Anh ấy đã được trao vương miện nhà vô địch của năm."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "The young champion received a gold medal.",
+          "example_vi": "Nhà vô địch trẻ đã nhận được một huy chương vàng."
+        },
+        {
+          "meaning_vi": "nhà vô địch",
+          "example_en": "They are the champions of the football league.",
+          "example_vi": "Họ là những nhà vô địch của giải bóng đá."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ phổ biến nhất cho danh từ 'champion' ở cấp độ B1.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'nhà vô địch' và tất cả 10 ví dụ đều sử dụng 'champion' như một danh từ chỉ người chiến thắng trong một cuộc thi."
+      },
+      "word": "champion",
+      "normalized_word": "champion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is the world champion in boxing.",
+      "example_vi_clean": "Anh ấy là nhà vô địch thế giới môn quyền anh."
+    }
+  ]
+}

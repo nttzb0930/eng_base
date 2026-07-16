@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-267",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26661,
+      "word": "competence",
+      "normalized_word": "competence",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔmpitəns/ (competency) /'kɔmpitənsi/",
+      "primary_meaning_vi": "năng lực",
+      "meaning_vi": "năng lực, khả năng; tiền thu nhập đủ để sống sung túc; thẩm quyền",
+      "example_en": "That question is out with the competence of this court and must be taken to a higher court.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26662,
+      "word": "competent",
+      "normalized_word": "competent",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kɔmpitənt/",
+      "primary_meaning_vi": "có đủ khả năng",
+      "meaning_vi": "có đủ khả năng, có đủ trình độ, thạo giỏi; có thẩm quyền; có thể cho phép được, tuỳ ý",
+      "example_en": "He is a competent skier and an expert snowboarder.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "For any disagreements arising from this contract, the competent court shall be the Springfield Circuit Court.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26663,
+      "word": "compile",
+      "normalized_word": "compile",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kəm'pail/",
+      "primary_meaning_vi": "biên soạn",
+      "meaning_vi": "biên soạn, sưu tập tài liệu",
+      "example_en": "Samuel Johnson compiled one of the most influential dictionaries of the English language.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After I compile this program I'll run it and see if it works.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There must be an error in my source code because it won't compile.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26664,
+      "word": "completion",
+      "normalized_word": "completion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kəm'pli:ʃn/",
+      "primary_meaning_vi": "sự hoàn thành",
+      "meaning_vi": "sự hoàn thành, sự làm xong; sự làm cho hoàn toàn, sự làm cho đầy đủ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26665,
+      "word": "complexion",
+      "normalized_word": "complexion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kəm'plekʃn/",
+      "primary_meaning_vi": "nước da",
+      "meaning_vi": "nước da; vẻ ngoài; tính chất (công việc); hình thái, cục diện",
+      "example_en": "a rugged complexion; a sunburnt complexion",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26666,
+      "word": "complexity",
+      "normalized_word": "complexity",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kəm'pleksiti/ (complicacy) /'kɔmplikəsi/",
+      "primary_meaning_vi": "sự phức tạp",
+      "meaning_vi": "sự phức tạp, sự rắc rối; điều phức tạp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26667,
+      "word": "component",
+      "normalized_word": "component",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kəm'pounənt/",
+      "primary_meaning_vi": "hợp thành",
+      "meaning_vi": "hợp thành, cấu thành; thành phần, phần hợp thành",
+      "example_en": "A CPU is a component of a computer.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26668,
+      "word": "comprehension",
+      "normalized_word": "comprehension",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔmpri'henʃn/",
+      "primary_meaning_vi": "sự hiểu",
+      "meaning_vi": "sự hiểu, sự lĩnh hội, sự nhận thức; sự bao gồm, sự bao hàm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26669,
+      "word": "comprehensive",
+      "normalized_word": "comprehensive",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,kɔmpri'hensiv/",
+      "primary_meaning_vi": "bao hàm toàn diện",
+      "meaning_vi": "bao hàm toàn diện; mau hiểu, thông minh, lĩnh hội nhanh, sáng ý; trường phổ thông hỗn hợp (có nhiều chương trình học và thời gian học khác nhau)",
+      "example_en": "When there are diametrically opposing views on a big issue that concerns millions of people, doing comprehensive research just makes sense.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26670,
+      "word": "compress",
+      "normalized_word": "compress",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kəm'pres/",
+      "primary_meaning_vi": "gạc",
+      "meaning_vi": "gạc; ép, nén; đè; cô lại (ý nghĩ, lời nói...)",
+      "example_en": "The force required to compress a spring varies linearly with the displacement.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Our new model compresses easily, ideal for storage and travel",
+          "example_vi": null
+        },
+        {
+          "example_en": "This chart compresses the entire audit report into a few lines on a single diagram.",
+          "example_vi": null
+        },
+        {
+          "example_en": "If you try to compress the entire book into a three-sentence summary, you will lose a lot of information.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

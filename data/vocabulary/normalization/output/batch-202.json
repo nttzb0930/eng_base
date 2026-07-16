@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26011,
+      "quiz_meaning_vi": "sự bầu cử",
+      "meaning_vi_clean": "sự bầu cử; cuộc tuyển cử",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự bầu cử",
+          "example_en": "The country is preparing for the upcoming general election.",
+          "example_vi": "Đất nước đang chuẩn bị cho cuộc bầu cử chung sắp tới."
+        },
+        {
+          "meaning_vi": "sự bầu cử",
+          "example_en": "She decided to run for office in the next election.",
+          "example_vi": "Cô ấy quyết định tranh cử trong cuộc bầu cử tới."
+        },
+        {
+          "meaning_vi": "sự bầu cử",
+          "example_en": "Voter turnout was very high during the last election.",
+          "example_vi": "Tỷ lệ cử tri đi bầu rất cao trong cuộc bầu cử vừa qua."
+        },
+        {
+          "meaning_vi": "sự bầu cử",
+          "example_en": "The results of the election will be announced tonight.",
+          "example_vi": "Kết quả của cuộc bầu cử sẽ được công bố vào tối nay."
+        },
+        {
+          "meaning_vi": "cuộc tuyển cử",
+          "example_en": "The local election determines who will lead the city council.",
+          "example_vi": "Cuộc tuyển cử địa phương quyết định ai sẽ lãnh đạo hội đồng thành phố."
+        },
+        {
+          "meaning_vi": "cuộc tuyển cử",
+          "example_en": "Many people campaigned hard before the election.",
+          "example_vi": "Nhiều người đã vận động tranh cử tích cực trước cuộc tuyển cử."
+        },
+        {
+          "meaning_vi": "cuộc tuyển cử",
+          "example_en": "The election process must be fair and transparent.",
+          "example_vi": "Quy trình cuộc tuyển cử phải công bằng và minh bạch."
+        },
+        {
+          "meaning_vi": "cuộc tuyển cử",
+          "example_en": "He was disappointed with the outcome of the election.",
+          "example_vi": "Anh ấy thất vọng với kết quả của cuộc tuyển cử."
+        },
+        {
+          "meaning_vi": "cuộc tuyển cử",
+          "example_en": "The election date has been moved to next month.",
+          "example_vi": "Ngày tổ chức cuộc tuyển cử đã được dời sang tháng sau."
+        },
+        {
+          "meaning_vi": "cuộc tuyển cử",
+          "example_en": "Observers monitored the election to ensure no fraud occurred.",
+          "example_vi": "Các quan sát viên đã theo dõi cuộc tuyển cử để đảm bảo không có gian lận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa không phù hợp cấp độ B1, giữ lại nghĩa phổ biến nhất là sự bầu cử/cuộc tuyển cử.",
+      "word": "election",
+      "normalized_word": "election",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The country is preparing for the upcoming general election.",
+      "example_vi_clean": "Đất nước đang chuẩn bị cho cuộc bầu cử chung sắp tới."
+    },
+    {
+      "id": 26012,
+      "quiz_meaning_vi": "điện",
+      "meaning_vi_clean": "điện",
+      "examples_clean": [
+        {
+          "meaning_vi": "điện",
+          "example_en": "The house has a modern electrical system.",
+          "example_vi": "Ngôi nhà có một hệ thống điện hiện đại."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "He is an electrical engineer working on power grids.",
+          "example_vi": "Anh ấy là một kỹ sư điện đang làm việc về lưới điện."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "Check the electrical wiring before you start the repair.",
+          "example_vi": "Kiểm tra hệ thống dây điện trước khi bạn bắt đầu sửa chữa."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "We need an electrical outlet to plug in the lamp.",
+          "example_vi": "Chúng ta cần một ổ cắm điện để cắm đèn vào."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The electrical appliance stopped working suddenly.",
+          "example_vi": "Thiết bị điện đó đột nhiên ngừng hoạt động."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "Safety is important when dealing with electrical equipment.",
+          "example_vi": "An toàn là rất quan trọng khi làm việc với thiết bị điện."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The electrical current was too strong for the device.",
+          "example_vi": "Dòng điện quá mạnh đối với thiết bị này."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "She studied electrical engineering at the university.",
+          "example_vi": "Cô ấy đã học kỹ thuật điện tại trường đại học."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The electrical fault caused a power outage.",
+          "example_vi": "Sự cố điện đã gây ra tình trạng mất điện."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "They installed new electrical lights in the garden.",
+          "example_vi": "Họ đã lắp đặt đèn điện mới trong vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại tính từ.",
+      "word": "electrical",
+      "normalized_word": "electrical",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The house has a modern electrical system.",
+      "example_vi_clean": "Ngôi nhà có một hệ thống điện hiện đại."
+    },
+    {
+      "id": 26013,
+      "quiz_meaning_vi": "điện",
+      "meaning_vi_clean": "điện",
+      "examples_clean": [
+        {
+          "meaning_vi": "điện",
+          "example_en": "The storm caused a failure in the supply of electricity.",
+          "example_vi": "Cơn bão đã gây ra sự cố trong việc cung cấp điện."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "We use electricity to power our home appliances.",
+          "example_vi": "Chúng ta sử dụng điện để vận hành các thiết bị gia dụng."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The cost of electricity has increased this year.",
+          "example_vi": "Chi phí tiền điện đã tăng trong năm nay."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "Electricity is essential for modern life.",
+          "example_vi": "Điện là thiết yếu đối với cuộc sống hiện đại."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "They are trying to generate electricity using solar panels.",
+          "example_vi": "Họ đang cố gắng tạo ra điện bằng cách sử dụng các tấm pin mặt trời."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "Be careful not to touch the wires carrying electricity.",
+          "example_vi": "Hãy cẩn thận đừng chạm vào các dây dẫn điện."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The city relies on wind power for its electricity.",
+          "example_vi": "Thành phố dựa vào năng lượng gió để có điện."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The electricity went out during the heavy rain.",
+          "example_vi": "Điện đã bị mất trong trận mưa lớn."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "Scientists are researching ways to store electricity more efficiently.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu cách lưu trữ điện hiệu quả hơn."
+        },
+        {
+          "meaning_vi": "điện",
+          "example_en": "The factory consumes a large amount of electricity daily.",
+          "example_vi": "Nhà máy tiêu thụ một lượng điện lớn mỗi ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại danh từ.",
+      "word": "electricity",
+      "normalized_word": "electricity",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The storm caused a failure in the supply of electricity.",
+      "example_vi_clean": "Cơn bão đã gây ra sự cố trong việc cung cấp điện."
+    },
+    {
+      "id": 26014,
+      "quiz_meaning_vi": "Electron",
+      "meaning_vi_clean": "Electron",
+      "examples_clean": [
+        {
+          "meaning_vi": "Electron",
+          "example_en": "An electron is a subatomic particle with a negative charge.",
+          "example_vi": "Electron là một hạt hạ nguyên tử mang điện tích âm."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "The movement of an electron creates an electric current.",
+          "example_vi": "Sự chuyển động của electron tạo ra dòng điện."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "Electrons orbit the nucleus of an atom.",
+          "example_vi": "Các electron quay quanh hạt nhân của nguyên tử."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "The electron microscope allows us to see very small objects.",
+          "example_vi": "Kính hiển vi electron cho phép chúng ta nhìn thấy những vật thể rất nhỏ."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "Each atom has a specific number of electrons.",
+          "example_vi": "Mỗi nguyên tử có một số lượng electron cụ thể."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "The electron shell determines how an atom reacts.",
+          "example_vi": "Lớp vỏ electron quyết định cách một nguyên tử phản ứng."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "Energy is released when an electron changes levels.",
+          "example_vi": "Năng lượng được giải phóng khi một electron thay đổi mức năng lượng."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "The electron is much smaller than a proton.",
+          "example_vi": "Electron nhỏ hơn nhiều so với proton."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "We studied the behavior of the electron in physics class.",
+          "example_vi": "Chúng tôi đã nghiên cứu hành vi của electron trong lớp vật lý."
+        },
+        {
+          "meaning_vi": "Electron",
+          "example_en": "The electron cloud represents the probability of finding an electron.",
+          "example_vi": "Đám mây electron biểu thị xác suất tìm thấy một electron."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ khoa học phù hợp.",
+      "word": "electron",
+      "normalized_word": "electron",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "An electron is a subatomic particle with a negative charge.",
+      "example_vi_clean": "Electron là một hạt hạ nguyên tử mang điện tích âm."
+    },
+    {
+      "id": 26015,
+      "quiz_meaning_vi": "điện tử",
+      "meaning_vi_clean": "điện tử",
+      "examples_clean": [
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "He enjoys listening to electronic music in his free time.",
+          "example_vi": "Anh ấy thích nghe nhạc điện tử vào thời gian rảnh."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "We use electronic devices for communication every day.",
+          "example_vi": "Chúng ta sử dụng các thiết bị điện tử để liên lạc mỗi ngày."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "The company specializes in electronic components.",
+          "example_vi": "Công ty chuyên về các linh kiện điện tử."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "You can send an electronic message to the office.",
+          "example_vi": "Bạn có thể gửi một tin nhắn điện tử đến văn phòng."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "The store sells a wide range of electronic goods.",
+          "example_vi": "Cửa hàng bán nhiều loại hàng hóa điện tử."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "She is studying electronic engineering at college.",
+          "example_vi": "Cô ấy đang học kỹ thuật điện tử tại trường cao đẳng."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "The electronic system failed during the storm.",
+          "example_vi": "Hệ thống điện tử đã bị hỏng trong cơn bão."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "Modern cars are full of complex electronic parts.",
+          "example_vi": "Ô tô hiện đại chứa đầy các bộ phận điện tử phức tạp."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "The electronic display shows the current time.",
+          "example_vi": "Màn hình điện tử hiển thị thời gian hiện tại."
+        },
+        {
+          "meaning_vi": "điện tử",
+          "example_en": "They are developing a new electronic security system.",
+          "example_vi": "Họ đang phát triển một hệ thống an ninh điện tử mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại tính từ.",
+      "word": "electronic",
+      "normalized_word": "electronic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He enjoys listening to electronic music in his free time.",
+      "example_vi_clean": "Anh ấy thích nghe nhạc điện tử vào thời gian rảnh."
+    },
+    {
+      "id": 26016,
+      "quiz_meaning_vi": "yếu tố",
+      "meaning_vi_clean": "yếu tố; nguyên tố",
+      "examples_clean": [
+        {
+          "meaning_vi": "yếu tố",
+          "example_en": "Trust is a key element of any successful relationship.",
+          "example_vi": "Sự tin tưởng là một yếu tố then chốt của bất kỳ mối quan hệ thành công nào."
+        },
+        {
+          "meaning_vi": "yếu tố",
+          "example_en": "There is an element of truth in what he said.",
+          "example_vi": "Có một yếu tố sự thật trong những gì anh ấy đã nói."
+        },
+        {
+          "meaning_vi": "yếu tố",
+          "example_en": "The design has many interesting elements.",
+          "example_vi": "Thiết kế này có nhiều yếu tố thú vị."
+        },
+        {
+          "meaning_vi": "yếu tố",
+          "example_en": "Cost is an important element to consider.",
+          "example_vi": "Chi phí là một yếu tố quan trọng cần cân nhắc."
+        },
+        {
+          "meaning_vi": "nguyên tố",
+          "example_en": "Oxygen is a chemical element essential for life.",
+          "example_vi": "Oxy là một nguyên tố hóa học thiết yếu cho sự sống."
+        },
+        {
+          "meaning_vi": "nguyên tố",
+          "example_en": "Gold is a rare element found in the earth.",
+          "example_vi": "Vàng là một nguyên tố quý hiếm được tìm thấy trong lòng đất."
+        },
+        {
+          "meaning_vi": "nguyên tố",
+          "example_en": "The periodic table lists all known chemical elements.",
+          "example_vi": "Bảng tuần hoàn liệt kê tất cả các nguyên tố hóa học đã biết."
+        },
+        {
+          "meaning_vi": "nguyên tố",
+          "example_en": "Hydrogen is the lightest element in the universe.",
+          "example_vi": "Hydro là nguyên tố nhẹ nhất trong vũ trụ."
+        },
+        {
+          "meaning_vi": "nguyên tố",
+          "example_en": "Scientists discovered a new element in the lab.",
+          "example_vi": "Các nhà khoa học đã khám phá ra một nguyên tố mới trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "nguyên tố",
+          "example_en": "Carbon is a basic element in organic chemistry.",
+          "example_vi": "Carbon là một nguyên tố cơ bản trong hóa học hữu cơ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất (yếu tố, nguyên tố) và bổ sung ví dụ phù hợp.",
+      "word": "element",
+      "normalized_word": "element",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Trust is a key element of any successful relationship.",
+      "example_vi_clean": "Sự tin tưởng là một yếu tố then chốt của bất kỳ mối quan hệ thành công nào."
+    },
+    {
+      "id": 26017,
+      "quiz_meaning_vi": "loại ra",
+      "meaning_vi_clean": "loại ra; loại trừ",
+      "examples_clean": [
+        {
+          "meaning_vi": "loại ra",
+          "example_en": "The team was eliminated from the competition early.",
+          "example_vi": "Đội đã bị loại ra khỏi cuộc thi từ sớm."
+        },
+        {
+          "meaning_vi": "loại ra",
+          "example_en": "We need to eliminate all unnecessary expenses.",
+          "example_vi": "Chúng ta cần loại ra tất cả các chi phí không cần thiết."
+        },
+        {
+          "meaning_vi": "loại ra",
+          "example_en": "The doctor advised him to eliminate sugar from his diet.",
+          "example_vi": "Bác sĩ khuyên anh ấy nên loại ra đường khỏi chế độ ăn uống."
+        },
+        {
+          "meaning_vi": "loại ra",
+          "example_en": "They eliminated the errors in the final report.",
+          "example_vi": "Họ đã loại ra các lỗi trong bản báo cáo cuối cùng."
+        },
+        {
+          "meaning_vi": "loại trừ",
+          "example_en": "We cannot eliminate the possibility of an accident.",
+          "example_vi": "Chúng ta không thể loại trừ khả năng xảy ra tai nạn."
+        },
+        {
+          "meaning_vi": "loại trừ",
+          "example_en": "The police eliminated him as a suspect.",
+          "example_vi": "Cảnh sát đã loại trừ anh ta khỏi danh sách nghi phạm."
+        },
+        {
+          "meaning_vi": "loại trừ",
+          "example_en": "This new policy helps to eliminate discrimination.",
+          "example_vi": "Chính sách mới này giúp loại trừ sự phân biệt đối xử."
+        },
+        {
+          "meaning_vi": "loại trừ",
+          "example_en": "We must eliminate the root cause of the problem.",
+          "example_vi": "Chúng ta phải loại trừ nguyên nhân gốc rễ của vấn đề."
+        },
+        {
+          "meaning_vi": "loại trừ",
+          "example_en": "The rules eliminate any chance of cheating.",
+          "example_vi": "Các quy tắc loại trừ mọi cơ hội gian lận."
+        },
+        {
+          "meaning_vi": "loại trừ",
+          "example_en": "They are working to eliminate poverty in the region.",
+          "example_vi": "Họ đang nỗ lực để loại trừ nghèo đói trong khu vực."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại động từ.",
+      "word": "eliminate",
+      "normalized_word": "eliminate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The team was eliminated from the competition early.",
+      "example_vi_clean": "Đội đã bị loại ra khỏi cuộc thi từ sớm."
+    },
+    {
+      "id": 26018,
+      "quiz_meaning_vi": "làm lúng túng",
+      "meaning_vi_clean": "làm lúng túng; làm ngượng nghịu",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm lúng túng",
+          "example_en": "His constant questions began to embarrass her.",
+          "example_vi": "Những câu hỏi liên tục của anh ấy bắt đầu làm cô ấy lúng túng."
+        },
+        {
+          "meaning_vi": "làm lúng túng",
+          "example_en": "Don't embarrass me in front of my friends.",
+          "example_vi": "Đừng làm tôi lúng túng trước mặt bạn bè của tôi."
+        },
+        {
+          "meaning_vi": "làm lúng túng",
+          "example_en": "The difficult question embarrassed the student.",
+          "example_vi": "Câu hỏi khó đã làm học sinh đó lúng túng."
+        },
+        {
+          "meaning_vi": "làm lúng túng",
+          "example_en": "She didn't want to embarrass him by pointing out his mistake.",
+          "example_vi": "Cô ấy không muốn làm anh ấy lúng túng bằng cách chỉ ra lỗi sai của anh ấy."
+        },
+        {
+          "meaning_vi": "làm ngượng nghịu",
+          "example_en": "His clumsy behavior embarrassed everyone at the party.",
+          "example_vi": "Cách cư xử vụng về của anh ấy làm mọi người tại bữa tiệc ngượng nghịu."
+        },
+        {
+          "meaning_vi": "làm ngượng nghịu",
+          "example_en": "The loud noise embarrassed her during the quiet meeting.",
+          "example_vi": "Tiếng ồn lớn làm cô ấy ngượng nghịu trong cuộc họp yên tĩnh."
+        },
+        {
+          "meaning_vi": "làm ngượng nghịu",
+          "example_en": "He felt that his old clothes would embarrass his family.",
+          "example_vi": "Anh ấy cảm thấy quần áo cũ của mình sẽ làm gia đình ngượng nghịu."
+        },
+        {
+          "meaning_vi": "làm ngượng nghịu",
+          "example_en": "The unexpected praise embarrassed him slightly.",
+          "example_vi": "Lời khen bất ngờ làm anh ấy hơi ngượng nghịu."
+        },
+        {
+          "meaning_vi": "làm ngượng nghịu",
+          "example_en": "She tried not to embarrass her brother in public.",
+          "example_vi": "Cô ấy cố gắng không làm em trai mình ngượng nghịu ở nơi công cộng."
+        },
+        {
+          "meaning_vi": "làm ngượng nghịu",
+          "example_en": "The awkward silence embarrassed the guests.",
+          "example_vi": "Sự im lặng khó xử làm các vị khách ngượng nghịu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại động từ.",
+      "word": "embarrass",
+      "normalized_word": "embarrass",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "His constant questions began to embarrass her.",
+      "example_vi_clean": "Những câu hỏi liên tục của anh ấy bắt đầu làm cô ấy lúng túng."
+    },
+    {
+      "id": 26019,
+      "quiz_meaning_vi": "lúng túng",
+      "meaning_vi_clean": "lúng túng; bối rối; ngượng",
+      "examples_clean": [
+        {
+          "meaning_vi": "lúng túng",
+          "example_en": "She felt lúng túng when she forgot her lines.",
+          "example_vi": "Cô ấy cảm thấy lúng túng khi quên lời thoại của mình."
+        },
+        {
+          "meaning_vi": "lúng túng",
+          "example_en": "He gave a lúng túng smile when he saw her.",
+          "example_vi": "Anh ấy nở một nụ cười lúng túng khi nhìn thấy cô ấy."
+        },
+        {
+          "meaning_vi": "lúng túng",
+          "example_en": "The student felt lúng túng during the oral exam.",
+          "example_vi": "Học sinh cảm thấy lúng túng trong bài thi nói."
+        },
+        {
+          "meaning_vi": "lúng túng",
+          "example_en": "She was lúng túng because she didn't know what to say.",
+          "example_vi": "Cô ấy lúng túng vì không biết phải nói gì."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "He looked bối rối when asked about his plans.",
+          "example_vi": "Anh ấy trông bối rối khi được hỏi về kế hoạch của mình."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "The sudden change of plans left everyone bối rối.",
+          "example_vi": "Sự thay đổi kế hoạch đột ngột khiến mọi người bối rối."
+        },
+        {
+          "meaning_vi": "bối rối",
+          "example_en": "She felt bối rối by the complicated instructions.",
+          "example_vi": "Cô ấy cảm thấy bối rối bởi những hướng dẫn phức tạp."
+        },
+        {
+          "meaning_vi": "ngượng",
+          "example_en": "He felt ngượng after making such a silly mistake.",
+          "example_vi": "Anh ấy cảm thấy ngượng sau khi mắc một lỗi ngớ ngẩn như vậy."
+        },
+        {
+          "meaning_vi": "ngượng",
+          "example_en": "She was ngượng when everyone started singing to her.",
+          "example_vi": "Cô ấy thấy ngượng khi mọi người bắt đầu hát cho cô ấy nghe."
+        },
+        {
+          "meaning_vi": "ngượng",
+          "example_en": "It is ngượng to be caught talking to yourself.",
+          "example_vi": "Thật ngượng khi bị bắt gặp đang tự nói chuyện một mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại tính từ.",
+      "word": "embarrassed",
+      "normalized_word": "embarrassed",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She felt lúng túng when she forgot her lines.",
+      "example_vi_clean": "Cô ấy cảm thấy lúng túng khi quên lời thoại của mình."
+    },
+    {
+      "id": 26020,
+      "quiz_meaning_vi": "sự lúng túng",
+      "meaning_vi_clean": "sự lúng túng; sự ngượng ngịu; tình trạng bối rối",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự lúng túng",
+          "example_en": "She tried to hide her sự lúng túng behind a smile.",
+          "example_vi": "Cô ấy cố gắng che giấu sự lúng túng của mình sau một nụ cười."
+        },
+        {
+          "meaning_vi": "sự lúng túng",
+          "example_en": "His sự lúng túng was obvious to everyone in the room.",
+          "example_vi": "Sự lúng túng của anh ấy rõ ràng với mọi người trong phòng."
+        },
+        {
+          "meaning_vi": "sự lúng túng",
+          "example_en": "She felt a moment of sự lúng túng before answering.",
+          "example_vi": "Cô ấy cảm thấy một khoảnh khắc sự lúng túng trước khi trả lời."
+        },
+        {
+          "meaning_vi": "sự lúng túng",
+          "example_en": "He overcame his sự lúng túng and started to speak.",
+          "example_vi": "Anh ấy đã vượt qua sự lúng túng của mình và bắt đầu nói."
+        },
+        {
+          "meaning_vi": "sự ngượng ngịu",
+          "example_en": "There was a sense of sự ngượng ngịu in the air.",
+          "example_vi": "Có một cảm giác sự ngượng ngịu trong không khí."
+        },
+        {
+          "meaning_vi": "sự ngượng ngịu",
+          "example_en": "She laughed to cover her sự ngượng ngịu.",
+          "example_vi": "Cô ấy cười để che đậy sự ngượng ngịu của mình."
+        },
+        {
+          "meaning_vi": "sự ngượng ngịu",
+          "example_en": "His sự ngượng ngịu made the conversation difficult.",
+          "example_vi": "Sự ngượng ngịu của anh ấy làm cho cuộc trò chuyện trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "tình trạng bối rối",
+          "example_en": "The team was in a tình trạng bối rối after the loss.",
+          "example_vi": "Đội bóng đang trong tình trạng bối rối sau trận thua."
+        },
+        {
+          "meaning_vi": "tình trạng bối rối",
+          "example_en": "He could not hide his tình trạng bối rối during the interview.",
+          "example_vi": "Anh ấy không thể che giấu tình trạng bối rối của mình trong buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "tình trạng bối rối",
+          "example_en": "The situation caused a great deal of tình trạng bối rối.",
+          "example_vi": "Tình huống đó đã gây ra rất nhiều tình trạng bối rối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ minh họa từ loại danh từ.",
+      "word": "embarrassment",
+      "normalized_word": "embarrassment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She tried to hide her sự lúng túng behind a smile.",
+      "example_vi_clean": "Cô ấy cố gắng che giấu sự lúng túng của mình sau một nụ cười."
+    }
+  ]
+}

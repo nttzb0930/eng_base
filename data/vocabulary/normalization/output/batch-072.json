@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24711,
+      "quiz_meaning_vi": "bộ pin",
+      "meaning_vi_clean": "bộ pin; khẩu đội; dãy chuồng; sự hành hung",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ pin",
+          "example_en": "My camera battery is running low.",
+          "example_vi": "Pin máy ảnh của tôi sắp hết rồi."
+        },
+        {
+          "meaning_vi": "bộ pin",
+          "example_en": "You need to replace the battery in the remote.",
+          "example_vi": "Bạn cần thay pin cho điều khiển từ xa."
+        },
+        {
+          "meaning_vi": "bộ pin",
+          "example_en": "The electric car has a powerful battery.",
+          "example_vi": "Chiếc xe điện có một bộ pin mạnh mẽ."
+        },
+        {
+          "meaning_vi": "bộ pin",
+          "example_en": "Always recycle your old batteries properly.",
+          "example_vi": "Luôn tái chế pin cũ của bạn đúng cách."
+        },
+        {
+          "meaning_vi": "khẩu đội",
+          "example_en": "The artillery battery fired at the enemy position.",
+          "example_vi": "Khẩu đội pháo đã khai hỏa vào vị trí quân địch."
+        },
+        {
+          "meaning_vi": "khẩu đội",
+          "example_en": "The battery commander gave the order to fire.",
+          "example_vi": "Chỉ huy khẩu đội đã ra lệnh khai hỏa."
+        },
+        {
+          "meaning_vi": "dãy chuồng",
+          "example_en": "The farm uses a battery system for raising chickens.",
+          "example_vi": "Trang trại sử dụng hệ thống dãy chuồng để nuôi gà."
+        },
+        {
+          "meaning_vi": "dãy chuồng",
+          "example_en": "Battery farming is often criticized for animal welfare.",
+          "example_vi": "Chăn nuôi theo dãy chuồng thường bị chỉ trích về phúc lợi động vật."
+        },
+        {
+          "meaning_vi": "sự hành hung",
+          "example_en": "He was charged with assault and battery.",
+          "example_vi": "Anh ta bị buộc tội hành hung và gây thương tích."
+        },
+        {
+          "meaning_vi": "sự hành hung",
+          "example_en": "The police investigated the case of battery.",
+          "example_vi": "Cảnh sát đã điều tra vụ án hành hung."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành bộ pin, loại bỏ các nghĩa quá xa lạ hoặc không phù hợp A2.",
+      "word": "battery",
+      "normalized_word": "battery",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My camera battery is running low.",
+      "example_vi_clean": "Pin máy ảnh của tôi sắp hết rồi."
+    },
+    {
+      "id": 24712,
+      "quiz_meaning_vi": "vịnh",
+      "meaning_vi_clean": "vịnh; ngựa hồng; gian nhà; tiếng chó sủa",
+      "examples_clean": [
+        {
+          "meaning_vi": "vịnh",
+          "example_en": "The ship sailed into the quiet bay.",
+          "example_vi": "Con tàu đã đi vào vịnh yên tĩnh."
+        },
+        {
+          "meaning_vi": "vịnh",
+          "example_en": "We enjoyed the view of the bay from the hotel.",
+          "example_vi": "Chúng tôi đã tận hưởng cảnh vịnh từ khách sạn."
+        },
+        {
+          "meaning_vi": "vịnh",
+          "example_en": "The town is located on a beautiful bay.",
+          "example_vi": "Thị trấn nằm trên một vịnh xinh đẹp."
+        },
+        {
+          "meaning_vi": "vịnh",
+          "example_en": "They went fishing in the bay this morning.",
+          "example_vi": "Họ đã đi câu cá trong vịnh sáng nay."
+        },
+        {
+          "meaning_vi": "ngựa hồng",
+          "example_en": "The rider mounted his bay and galloped away.",
+          "example_vi": "Người cưỡi ngựa leo lên con ngựa hồng và phi nước đại."
+        },
+        {
+          "meaning_vi": "ngựa hồng",
+          "example_en": "The bay horse won the race easily.",
+          "example_vi": "Con ngựa hồng đã thắng cuộc đua một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "gian nhà",
+          "example_en": "The library has a quiet reading bay.",
+          "example_vi": "Thư viện có một gian đọc sách yên tĩnh."
+        },
+        {
+          "meaning_vi": "gian nhà",
+          "example_en": "He parked his car in the loading bay.",
+          "example_vi": "Anh ấy đã đỗ xe vào gian bốc dỡ hàng."
+        },
+        {
+          "meaning_vi": "tiếng chó sủa",
+          "example_en": "We heard the bay of the hounds in the distance.",
+          "example_vi": "Chúng tôi nghe thấy tiếng chó săn sủa từ đằng xa."
+        },
+        {
+          "meaning_vi": "tiếng chó sủa",
+          "example_en": "The dog gave a loud bay at the stranger.",
+          "example_vi": "Con chó sủa vang lên khi thấy người lạ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ, chọn nghĩa phổ biến nhất là vịnh.",
+      "word": "bay",
+      "normalized_word": "bay",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ship sailed into the quiet bay.",
+      "example_vi_clean": "Con tàu đã đi vào vịnh yên tĩnh."
+    },
+    {
+      "id": 24713,
+      "quiz_meaning_vi": "vẻ đẹp",
+      "meaning_vi_clean": "vẻ đẹp; cái hay; người đẹp",
+      "examples_clean": [
+        {
+          "meaning_vi": "vẻ đẹp",
+          "example_en": "She was struck by the beauty of the sunset.",
+          "example_vi": "Cô ấy bị choáng ngợp bởi vẻ đẹp của hoàng hôn."
+        },
+        {
+          "meaning_vi": "vẻ đẹp",
+          "example_en": "The beauty of the landscape is breathtaking.",
+          "example_vi": "Vẻ đẹp của phong cảnh thật ngoạn mục."
+        },
+        {
+          "meaning_vi": "vẻ đẹp",
+          "example_en": "He appreciates the beauty of classical music.",
+          "example_vi": "Anh ấy trân trọng vẻ đẹp của nhạc cổ điển."
+        },
+        {
+          "meaning_vi": "vẻ đẹp",
+          "example_en": "True beauty comes from within.",
+          "example_vi": "Vẻ đẹp thực sự đến từ bên trong."
+        },
+        {
+          "meaning_vi": "cái hay",
+          "example_en": "The beauty of this plan is its simplicity.",
+          "example_vi": "Cái hay của kế hoạch này là sự đơn giản của nó."
+        },
+        {
+          "meaning_vi": "cái hay",
+          "example_en": "That is the beauty of working from home.",
+          "example_vi": "Đó chính là cái hay của việc làm tại nhà."
+        },
+        {
+          "meaning_vi": "cái hay",
+          "example_en": "The beauty of the idea is that it costs nothing.",
+          "example_vi": "Cái hay của ý tưởng này là nó không tốn kém gì."
+        },
+        {
+          "meaning_vi": "người đẹp",
+          "example_en": "She was a great beauty in her youth.",
+          "example_vi": "Bà ấy từng là một người đẹp thời trẻ."
+        },
+        {
+          "meaning_vi": "người đẹp",
+          "example_en": "The actress is considered a classic beauty.",
+          "example_vi": "Nữ diễn viên được coi là một người đẹp cổ điển."
+        },
+        {
+          "meaning_vi": "người đẹp",
+          "example_en": "He married a real beauty.",
+          "example_vi": "Anh ấy đã cưới một người đẹp thực sự."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ cho các nghĩa phụ.",
+      "word": "beauty",
+      "normalized_word": "beauty",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She was struck by the beauty of the sunset.",
+      "example_vi_clean": "Cô ấy bị choáng ngợp bởi vẻ đẹp của hoàng hôn."
+    },
+    {
+      "id": 24714,
+      "quiz_meaning_vi": "là",
+      "meaning_vi_clean": "là; ở; đã đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "là",
+          "example_en": "I have been a teacher for ten years.",
+          "example_vi": "Tôi đã là giáo viên được mười năm rồi."
+        },
+        {
+          "meaning_vi": "là",
+          "example_en": "They have been friends since childhood.",
+          "example_vi": "Họ đã là bạn từ thời thơ ấu."
+        },
+        {
+          "meaning_vi": "là",
+          "example_en": "It has been a long day.",
+          "example_vi": "Đó đã là một ngày dài."
+        },
+        {
+          "meaning_vi": "là",
+          "example_en": "She has been very helpful lately.",
+          "example_vi": "Cô ấy đã rất hữu ích gần đây."
+        },
+        {
+          "meaning_vi": "ở",
+          "example_en": "Have you ever been to Paris?",
+          "example_vi": "Bạn đã bao giờ ở Paris chưa?"
+        },
+        {
+          "meaning_vi": "ở",
+          "example_en": "He has been at home all day.",
+          "example_vi": "Anh ấy đã ở nhà cả ngày."
+        },
+        {
+          "meaning_vi": "ở",
+          "example_en": "We have been in this city for a week.",
+          "example_vi": "Chúng tôi đã ở thành phố này được một tuần."
+        },
+        {
+          "meaning_vi": "đã đi",
+          "example_en": "She has been to the store twice today.",
+          "example_vi": "Cô ấy đã đi đến cửa hàng hai lần hôm nay."
+        },
+        {
+          "meaning_vi": "đã đi",
+          "example_en": "They have been to the beach this summer.",
+          "example_vi": "Họ đã đi đến bãi biển mùa hè này."
+        },
+        {
+          "meaning_vi": "đã đi",
+          "example_en": "I have been to that museum before.",
+          "example_vi": "Tôi đã đi đến bảo tàng đó trước đây rồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'là' theo quy tắc cho be-verb, bổ sung ví dụ minh họa.",
+      "word": "been",
+      "normalized_word": "been",
+      "cefr_level": "A2",
+      "pos": "be-verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I have been a teacher for ten years.",
+      "example_vi_clean": "Tôi đã là giáo viên được mười năm rồi."
+    },
+    {
+      "id": 24715,
+      "quiz_meaning_vi": "rượu bia",
+      "meaning_vi_clean": "rượu bia",
+      "examples_clean": [
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "Would you like a glass of beer?",
+          "example_vi": "Bạn có muốn một ly bia không?"
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "They are drinking cold beer at the bar.",
+          "example_vi": "Họ đang uống bia lạnh tại quán bar."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "This local beer is very popular.",
+          "example_vi": "Loại bia địa phương này rất phổ biến."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "He ordered a pint of beer.",
+          "example_vi": "Anh ấy đã gọi một panh bia."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "Do you prefer dark or light beer?",
+          "example_vi": "Bạn thích bia đen hay bia vàng hơn?"
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "The festival serves many types of beer.",
+          "example_vi": "Lễ hội phục vụ nhiều loại bia khác nhau."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "He doesn't drink beer very often.",
+          "example_vi": "Anh ấy không uống bia thường xuyên lắm."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "They brewed their own beer at home.",
+          "example_vi": "Họ đã tự ủ bia tại nhà."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "The beer was served in a chilled mug.",
+          "example_vi": "Bia được phục vụ trong một chiếc cốc ướp lạnh."
+        },
+        {
+          "meaning_vi": "rượu bia",
+          "example_en": "We sat outside and enjoyed some beer.",
+          "example_vi": "Chúng tôi ngồi bên ngoài và thưởng thức bia."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung đủ 10 ví dụ.",
+      "word": "beer",
+      "normalized_word": "beer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Would you like a glass of beer?",
+      "example_vi_clean": "Bạn có muốn một ly bia không?"
+    },
+    {
+      "id": 24716,
+      "quiz_meaning_vi": "ăn xin",
+      "meaning_vi_clean": "ăn xin; cầu xin",
+      "examples_clean": [
+        {
+          "meaning_vi": "ăn xin",
+          "example_en": "The man was begging on the street corner.",
+          "example_vi": "Người đàn ông đó đang ăn xin ở góc phố."
+        },
+        {
+          "meaning_vi": "ăn xin",
+          "example_en": "She saw a child begging for food.",
+          "example_vi": "Cô ấy thấy một đứa trẻ đang ăn xin thức ăn."
+        },
+        {
+          "meaning_vi": "ăn xin",
+          "example_en": "It is sad to see people begging for money.",
+          "example_vi": "Thật buồn khi thấy mọi người phải đi ăn xin tiền."
+        },
+        {
+          "meaning_vi": "ăn xin",
+          "example_en": "He had to beg to survive in the city.",
+          "example_vi": "Anh ta phải đi ăn xin để sống sót ở thành phố."
+        },
+        {
+          "meaning_vi": "cầu xin",
+          "example_en": "She begged him to stay with her.",
+          "example_vi": "Cô ấy cầu xin anh ấy ở lại với cô ấy."
+        },
+        {
+          "meaning_vi": "cầu xin",
+          "example_en": "He begged for forgiveness after his mistake.",
+          "example_vi": "Anh ấy cầu xin sự tha thứ sau sai lầm của mình."
+        },
+        {
+          "meaning_vi": "cầu xin",
+          "example_en": "They begged the authorities for help.",
+          "example_vi": "Họ cầu xin chính quyền giúp đỡ."
+        },
+        {
+          "meaning_vi": "cầu xin",
+          "example_en": "I beg you to listen to me for a moment.",
+          "example_vi": "Tôi cầu xin bạn hãy lắng nghe tôi một chút."
+        },
+        {
+          "meaning_vi": "cầu xin",
+          "example_en": "She begged her parents to let her go.",
+          "example_vi": "Cô ấy cầu xin cha mẹ cho phép cô ấy đi."
+        },
+        {
+          "meaning_vi": "cầu xin",
+          "example_en": "He begged for a second chance.",
+          "example_vi": "Anh ấy cầu xin một cơ hội thứ hai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ các nghĩa không phù hợp, bổ sung ví dụ.",
+      "word": "beg",
+      "normalized_word": "beg",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The man was begging on the street corner.",
+      "example_vi_clean": "Người đàn ông đó đang ăn xin ở góc phố."
+    },
+    {
+      "id": 24717,
+      "quiz_meaning_vi": "người bắt đầu",
+      "meaning_vi_clean": "người bắt đầu; người mới học",
+      "examples_clean": [
+        {
+          "meaning_vi": "người bắt đầu",
+          "example_en": "This course is designed for the beginner.",
+          "example_vi": "Khóa học này được thiết kế cho người bắt đầu."
+        },
+        {
+          "meaning_vi": "người bắt đầu",
+          "example_en": "He is a beginner in this field.",
+          "example_vi": "Anh ấy là người bắt đầu trong lĩnh vực này."
+        },
+        {
+          "meaning_vi": "người bắt đầu",
+          "example_en": "The beginner needs a lot of guidance.",
+          "example_vi": "Người bắt đầu cần rất nhiều sự hướng dẫn."
+        },
+        {
+          "meaning_vi": "người bắt đầu",
+          "example_en": "Even a beginner can use this software.",
+          "example_vi": "Ngay cả người bắt đầu cũng có thể sử dụng phần mềm này."
+        },
+        {
+          "meaning_vi": "người mới học",
+          "example_en": "I am just a beginner at playing the guitar.",
+          "example_vi": "Tôi chỉ là người mới học chơi đàn guitar."
+        },
+        {
+          "meaning_vi": "người mới học",
+          "example_en": "There are classes for beginners in the evening.",
+          "example_vi": "Có các lớp học cho người mới học vào buổi tối."
+        },
+        {
+          "meaning_vi": "người mới học",
+          "example_en": "The book is perfect for a beginner.",
+          "example_vi": "Cuốn sách này rất hoàn hảo cho người mới học."
+        },
+        {
+          "meaning_vi": "người mới học",
+          "example_en": "She is a beginner at learning French.",
+          "example_vi": "Cô ấy là người mới học tiếng Pháp."
+        },
+        {
+          "meaning_vi": "người mới học",
+          "example_en": "Beginners should start with simple exercises.",
+          "example_vi": "Người mới học nên bắt đầu với các bài tập đơn giản."
+        },
+        {
+          "meaning_vi": "người mới học",
+          "example_en": "He is a beginner, so be patient with him.",
+          "example_vi": "Anh ấy là người mới học, vì vậy hãy kiên nhẫn với anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "beginner",
+      "normalized_word": "beginner",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This course is designed for the beginner.",
+      "example_vi_clean": "Khóa học này được thiết kế cho người bắt đầu."
+    },
+    {
+      "id": 24718,
+      "quiz_meaning_vi": "phần đầu",
+      "meaning_vi_clean": "phần đầu; lúc bắt đầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "phần đầu",
+          "example_en": "I didn't like the beginning of the movie.",
+          "example_vi": "Tôi không thích phần đầu của bộ phim."
+        },
+        {
+          "meaning_vi": "phần đầu",
+          "example_en": "Read the beginning of the chapter carefully.",
+          "example_vi": "Hãy đọc phần đầu của chương một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "phần đầu",
+          "example_en": "The beginning of the book was quite boring.",
+          "example_vi": "Phần đầu của cuốn sách khá nhàm chán."
+        },
+        {
+          "meaning_vi": "phần đầu",
+          "example_en": "She wrote her name at the beginning of the page.",
+          "example_vi": "Cô ấy viết tên mình ở phần đầu của trang giấy."
+        },
+        {
+          "meaning_vi": "lúc bắt đầu",
+          "example_en": "At the beginning, I was very nervous.",
+          "example_vi": "Lúc bắt đầu, tôi đã rất lo lắng."
+        },
+        {
+          "meaning_vi": "lúc bắt đầu",
+          "example_en": "We met at the beginning of the year.",
+          "example_vi": "Chúng tôi gặp nhau lúc bắt đầu năm mới."
+        },
+        {
+          "meaning_vi": "lúc bắt đầu",
+          "example_en": "The beginning of the meeting was delayed.",
+          "example_vi": "Lúc bắt đầu cuộc họp đã bị trì hoãn."
+        },
+        {
+          "meaning_vi": "lúc bắt đầu",
+          "example_en": "He was there from the very beginning.",
+          "example_vi": "Anh ấy đã ở đó ngay từ lúc bắt đầu."
+        },
+        {
+          "meaning_vi": "lúc bắt đầu",
+          "example_en": "The beginning of the race was exciting.",
+          "example_vi": "Lúc bắt đầu cuộc đua thật thú vị."
+        },
+        {
+          "meaning_vi": "lúc bắt đầu",
+          "example_en": "Everything changed at the beginning of summer.",
+          "example_vi": "Mọi thứ đã thay đổi lúc bắt đầu mùa hè."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "beginning",
+      "normalized_word": "beginning",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I didn't like the beginning of the movie.",
+      "example_vi_clean": "Tôi không thích phần đầu của bộ phim."
+    },
+    {
+      "id": 24719,
+      "quiz_meaning_vi": "cách xử lý",
+      "meaning_vi_clean": "cách xử lý; hành vi",
+      "examples_clean": [
+        {
+          "meaning_vi": "cách xử lý",
+          "example_en": "His behavior towards the staff was unprofessional.",
+          "example_vi": "Cách xử lý của anh ấy đối với nhân viên thật thiếu chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "cách xử lý",
+          "example_en": "The machine's behavior is unpredictable.",
+          "example_vi": "Cách xử lý của cái máy này thật khó đoán."
+        },
+        {
+          "meaning_vi": "cách xử lý",
+          "example_en": "We need to improve our behavior in meetings.",
+          "example_vi": "Chúng ta cần cải thiện cách xử lý trong các cuộc họp."
+        },
+        {
+          "meaning_vi": "cách xử lý",
+          "example_en": "The software's behavior changed after the update.",
+          "example_vi": "Cách xử lý của phần mềm đã thay đổi sau khi cập nhật."
+        },
+        {
+          "meaning_vi": "hành vi",
+          "example_en": "Bad behavior will not be tolerated here.",
+          "example_vi": "Hành vi xấu sẽ không được dung thứ ở đây."
+        },
+        {
+          "meaning_vi": "hành vi",
+          "example_en": "She is studying animal behavior.",
+          "example_vi": "Cô ấy đang nghiên cứu hành vi động vật."
+        },
+        {
+          "meaning_vi": "hành vi",
+          "example_en": "His behavior was very strange today.",
+          "example_vi": "Hành vi của anh ấy hôm nay rất lạ."
+        },
+        {
+          "meaning_vi": "hành vi",
+          "example_en": "The teacher praised his good behavior.",
+          "example_vi": "Giáo viên đã khen ngợi hành vi tốt của cậu ấy."
+        },
+        {
+          "meaning_vi": "hành vi",
+          "example_en": "They are monitoring the child's behavior.",
+          "example_vi": "Họ đang theo dõi hành vi của đứa trẻ."
+        },
+        {
+          "meaning_vi": "hành vi",
+          "example_en": "We must change our behavior to protect the environment.",
+          "example_vi": "Chúng ta phải thay đổi hành vi để bảo vệ môi trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung POS và phonetic, giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "behavior",
+      "normalized_word": "behavior",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His behavior towards the staff was unprofessional.",
+      "example_vi_clean": "Cách xử lý của anh ấy đối với nhân viên thật thiếu chuyên nghiệp."
+    },
+    {
+      "id": 24720,
+      "quiz_meaning_vi": "thái độ",
+      "meaning_vi_clean": "thái độ; cách cư xử",
+      "examples_clean": [
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "She has a positive attitude towards her work.",
+          "example_vi": "Cô ấy có một thái độ tích cực đối với công việc của mình."
+        },
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "His attitude needs to change if he wants to succeed.",
+          "example_vi": "Thái độ của anh ấy cần phải thay đổi nếu anh ấy muốn thành công."
+        },
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "I don't like his attitude at all.",
+          "example_vi": "Tôi không thích thái độ của anh ta chút nào."
+        },
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "The team's attitude is very professional.",
+          "example_vi": "Thái độ của cả đội rất chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "cách cư xử",
+          "example_en": "His behaviour at the party was unacceptable.",
+          "example_vi": "Cách cư xử của anh ấy tại bữa tiệc là không thể chấp nhận được."
+        },
+        {
+          "meaning_vi": "cách cư xử",
+          "example_en": "She is known for her polite behaviour.",
+          "example_vi": "Cô ấy nổi tiếng với cách cư xử lịch sự của mình."
+        },
+        {
+          "meaning_vi": "cách cư xử",
+          "example_en": "Children learn behaviour from their parents.",
+          "example_vi": "Trẻ em học cách cư xử từ cha mẹ chúng."
+        },
+        {
+          "meaning_vi": "cách cư xử",
+          "example_en": "The school has strict rules about behaviour.",
+          "example_vi": "Nhà trường có những quy định nghiêm ngặt về cách cư xử."
+        },
+        {
+          "meaning_vi": "cách cư xử",
+          "example_en": "His behaviour improved after the talk.",
+          "example_vi": "Cách cư xử của anh ấy đã cải thiện sau cuộc trò chuyện."
+        },
+        {
+          "meaning_vi": "cách cư xử",
+          "example_en": "We should teach children good behaviour.",
+          "example_vi": "Chúng ta nên dạy trẻ cách cư xử tốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "behaviour",
+      "normalized_word": "behaviour",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a positive attitude towards her work.",
+      "example_vi_clean": "Cô ấy có một thái độ tích cực đối với công việc của mình."
+    }
+  ]
+}

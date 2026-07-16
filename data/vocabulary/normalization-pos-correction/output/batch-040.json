@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25012,
+      "quiz_meaning_vi": "lông vũ",
+      "meaning_vi_clean": "lông vũ",
+      "examples_clean": [
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The bird has soft white feathers.",
+          "example_vi": "Con chim có những chiếc lông vũ màu trắng mềm mại."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "A single feather fell from the sky.",
+          "example_vi": "Một chiếc lông vũ rơi xuống từ bầu trời."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The pillow is filled with soft feathers.",
+          "example_vi": "Chiếc gối được nhồi đầy lông vũ mềm mại."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "She found a colorful feather on the ground.",
+          "example_vi": "Cô ấy tìm thấy một chiếc lông vũ đầy màu sắc trên mặt đất."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The peacock has beautiful long feathers.",
+          "example_vi": "Con công có những chiếc lông vũ dài tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "He collected a feather from the forest floor.",
+          "example_vi": "Anh ấy nhặt một chiếc lông vũ từ dưới nền rừng."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The duck cleaned its feathers by the pond.",
+          "example_vi": "Con vịt rỉa lông vũ của nó bên bờ ao."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The jacket is lined with warm feathers.",
+          "example_vi": "Chiếc áo khoác được lót bằng lông vũ ấm áp."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The wind blew a feather across the yard.",
+          "example_vi": "Gió thổi một chiếc lông vũ bay ngang qua sân."
+        },
+        {
+          "meaning_vi": "lông vũ",
+          "example_en": "The eagle lost a feather during the flight.",
+          "example_vi": "Con đại bàng bị rụng một chiếc lông vũ trong khi bay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là lông vũ và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ lông vũ được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "feather",
+      "normalized_word": "feather",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bird has soft white feathers.",
+      "example_vi_clean": "Con chim có những chiếc lông vũ màu trắng mềm mại."
+    },
+    {
+      "id": 25013,
+      "quiz_meaning_vi": "đặc điểm",
+      "meaning_vi_clean": "đặc điểm",
+      "examples_clean": [
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "A key feature of this car is its safety.",
+          "example_vi": "Một đặc điểm chính của chiếc xe này là sự an toàn."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "The phone has many useful features.",
+          "example_vi": "Chiếc điện thoại có nhiều đặc điểm hữu ích."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "One important feature is the long battery life.",
+          "example_vi": "Một đặc điểm quan trọng là thời lượng pin dài."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "The house has a unique architectural feature.",
+          "example_vi": "Ngôi nhà có một đặc điểm kiến trúc độc đáo."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "What is the best feature of this software?",
+          "example_vi": "Đặc điểm tốt nhất của phần mềm này là gì?"
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "The camera has a special zoom feature.",
+          "example_vi": "Máy ảnh có một đặc điểm thu phóng đặc biệt."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "This map shows every geographical feature.",
+          "example_vi": "Bản đồ này hiển thị mọi đặc điểm địa lý."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "The new design has a modern feature.",
+          "example_vi": "Thiết kế mới có một đặc điểm hiện đại."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "His smile is his most recognizable feature.",
+          "example_vi": "Nụ cười là đặc điểm dễ nhận biết nhất của anh ấy."
+        },
+        {
+          "meaning_vi": "đặc điểm",
+          "example_en": "The app includes a security feature for users.",
+          "example_vi": "Ứng dụng bao gồm một đặc điểm bảo mật cho người dùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là đặc điểm và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ đặc điểm được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "feature",
+      "normalized_word": "feature",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A key feature of this car is its safety.",
+      "example_vi_clean": "Một đặc điểm chính của chiếc xe này là sự an toàn."
+    },
+    {
+      "id": 25014,
+      "quiz_meaning_vi": "lệ phí",
+      "meaning_vi_clean": "lệ phí",
+      "examples_clean": [
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "You have to pay a small fee to enter.",
+          "example_vi": "Bạn phải trả một khoản lệ phí nhỏ để vào cửa."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "The school fee is due next week.",
+          "example_vi": "Lệ phí học tập đến hạn vào tuần tới."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "Is there a membership fee for the club?",
+          "example_vi": "Có lệ phí thành viên cho câu lạc bộ không?"
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "The bank charges a monthly service fee.",
+          "example_vi": "Ngân hàng tính một khoản lệ phí dịch vụ hàng tháng."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "We paid the registration fee online.",
+          "example_vi": "Chúng tôi đã thanh toán lệ phí đăng ký trực tuyến."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "The lawyer asked for a consultation fee.",
+          "example_vi": "Luật sư đã yêu cầu một khoản lệ phí tư vấn."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "The entrance fee includes a free drink.",
+          "example_vi": "Lệ phí vào cửa đã bao gồm một đồ uống miễn phí."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "They waived the late fee for me.",
+          "example_vi": "Họ đã miễn lệ phí nộp muộn cho tôi."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "The delivery fee is quite expensive.",
+          "example_vi": "Lệ phí giao hàng khá đắt đỏ."
+        },
+        {
+          "meaning_vi": "lệ phí",
+          "example_en": "Please check the parking fee before leaving.",
+          "example_vi": "Vui lòng kiểm tra lệ phí đỗ xe trước khi rời đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là lệ phí và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ lệ phí được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "fee",
+      "normalized_word": "fee",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You have to pay a small fee to enter.",
+      "example_vi_clean": "Bạn phải trả một khoản lệ phí nhỏ để vào cửa."
+    },
+    {
+      "id": 25015,
+      "quiz_meaning_vi": "cảm giác",
+      "meaning_vi_clean": "cảm giác",
+      "examples_clean": [
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "I have a strange feel about this place.",
+          "example_vi": "Tôi có một cảm giác lạ về nơi này."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "The fabric has a soft feel to it.",
+          "example_vi": "Chất liệu vải này có cảm giác mềm mại."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "The room has a cozy feel.",
+          "example_vi": "Căn phòng mang lại một cảm giác ấm cúng."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "I like the feel of the new carpet.",
+          "example_vi": "Tôi thích cảm giác của tấm thảm mới."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "The house has a modern feel.",
+          "example_vi": "Ngôi nhà mang lại một cảm giác hiện đại."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "He got a feel for the job quickly.",
+          "example_vi": "Anh ấy nhanh chóng có cảm giác quen thuộc với công việc."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "The paper has a rough feel.",
+          "example_vi": "Tờ giấy có cảm giác thô ráp."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "The city has a busy feel in the morning.",
+          "example_vi": "Thành phố mang lại một cảm giác bận rộn vào buổi sáng."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "I love the feel of the cool water.",
+          "example_vi": "Tôi thích cảm giác của làn nước mát lạnh."
+        },
+        {
+          "meaning_vi": "cảm giác",
+          "example_en": "The garden has a peaceful feel.",
+          "example_vi": "Khu vườn mang lại một cảm giác yên bình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là cảm giác và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ cảm giác được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "feel",
+      "normalized_word": "feel",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have a strange feel about this place.",
+      "example_vi_clean": "Tôi có một cảm giác lạ về nơi này."
+    },
+    {
+      "id": 25016,
+      "quiz_meaning_vi": "giống cái",
+      "meaning_vi_clean": "giống cái",
+      "examples_clean": [
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female lion is hunting for food.",
+          "example_vi": "Con sư tử giống cái đang săn mồi."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "We have two female cats at home.",
+          "example_vi": "Chúng tôi có hai con mèo giống cái ở nhà."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female bird is sitting on the eggs.",
+          "example_vi": "Con chim giống cái đang ấp trứng."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "They are studying the female reproductive system.",
+          "example_vi": "Họ đang nghiên cứu hệ thống sinh sản giống cái."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female dog is very friendly.",
+          "example_vi": "Con chó giống cái rất thân thiện."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female elephant leads the herd.",
+          "example_vi": "Con voi giống cái dẫn đầu đàn."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female mosquito is the one that bites.",
+          "example_vi": "Muỗi giống cái là loài muỗi đốt người."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female deer is grazing in the field.",
+          "example_vi": "Con hươu giống cái đang gặm cỏ trên cánh đồng."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female rabbit has a soft coat.",
+          "example_vi": "Con thỏ giống cái có bộ lông mềm mại."
+        },
+        {
+          "meaning_vi": "giống cái",
+          "example_en": "The female duck is swimming with her ducklings.",
+          "example_vi": "Con vịt giống cái đang bơi cùng đàn con."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất là giống cái và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ giống cái được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "female",
+      "normalized_word": "female",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The female lion is hunting for food.",
+      "example_vi_clean": "Con sư tử giống cái đang săn mồi."
+    },
+    {
+      "id": 25017,
+      "quiz_meaning_vi": "hàng rào",
+      "meaning_vi_clean": "hàng rào",
+      "examples_clean": [
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "The dog jumped over the wooden fence.",
+          "example_vi": "Con chó nhảy qua hàng rào gỗ."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "We painted the garden fence white.",
+          "example_vi": "Chúng tôi sơn hàng rào khu vườn màu trắng."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "The fence surrounds the entire property.",
+          "example_vi": "Hàng rào bao quanh toàn bộ khu đất."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "He leaned against the metal fence.",
+          "example_vi": "Anh ấy dựa vào hàng rào kim loại."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "The children climbed the fence to get the ball.",
+          "example_vi": "Những đứa trẻ trèo qua hàng rào để lấy quả bóng."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "The fence is broken in several places.",
+          "example_vi": "Hàng rào bị hỏng ở vài chỗ."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "They built a high fence for privacy.",
+          "example_vi": "Họ xây một hàng rào cao để đảm bảo sự riêng tư."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "The cat sat on top of the fence.",
+          "example_vi": "Con mèo ngồi trên đỉnh hàng rào."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "The fence keeps the animals inside.",
+          "example_vi": "Hàng rào giữ cho các con vật ở bên trong."
+        },
+        {
+          "meaning_vi": "hàng rào",
+          "example_en": "We need to repair the garden fence.",
+          "example_vi": "Chúng tôi cần sửa chữa hàng rào khu vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là hàng rào và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ hàng rào được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "fence",
+      "normalized_word": "fence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dog jumped over the wooden fence.",
+      "example_vi_clean": "Con chó nhảy qua hàng rào gỗ."
+    },
+    {
+      "id": 25021,
+      "quiz_meaning_vi": "con số",
+      "meaning_vi_clean": "con số",
+      "examples_clean": [
+        {
+          "meaning_vi": "con số",
+          "example_en": "The sales figure is very high this month.",
+          "example_vi": "Con số doanh thu tháng này rất cao."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "Can you check the final figure?",
+          "example_vi": "Bạn có thể kiểm tra con số cuối cùng không?"
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "The report shows a surprising figure.",
+          "example_vi": "Báo cáo cho thấy một con số đáng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "He wrote the figure on the board.",
+          "example_vi": "Anh ấy viết con số đó lên bảng."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "The official figure is still unknown.",
+          "example_vi": "Con số chính thức vẫn chưa được biết."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "She looked at the figure in the document.",
+          "example_vi": "Cô ấy nhìn vào con số trong tài liệu."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "The total figure includes all taxes.",
+          "example_vi": "Con số tổng đã bao gồm tất cả các loại thuế."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "We need to compare the two figures.",
+          "example_vi": "Chúng ta cần so sánh hai con số này."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "The growth figure is impressive.",
+          "example_vi": "Con số tăng trưởng thật ấn tượng."
+        },
+        {
+          "meaning_vi": "con số",
+          "example_en": "The budget figure was approved yesterday.",
+          "example_vi": "Con số ngân sách đã được phê duyệt ngày hôm qua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là con số và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ con số được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "figure",
+      "normalized_word": "figure",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The sales figure is very high this month.",
+      "example_vi_clean": "Con số doanh thu tháng này rất cao."
+    },
+    {
+      "id": 25022,
+      "quiz_meaning_vi": "bộ phim",
+      "meaning_vi_clean": "bộ phim",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "We watched a great film last night.",
+          "example_vi": "Chúng tôi đã xem một bộ phim tuyệt vời tối qua."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "This film is based on a true story.",
+          "example_vi": "Bộ phim này dựa trên một câu chuyện có thật."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "I really enjoyed the new action film.",
+          "example_vi": "Tôi thực sự thích bộ phim hành động mới."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "The film was directed by a famous person.",
+          "example_vi": "Bộ phim được đạo diễn bởi một người nổi tiếng."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "Have you seen this film before?",
+          "example_vi": "Bạn đã xem bộ phim này trước đây chưa?"
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "The film has a very sad ending.",
+          "example_vi": "Bộ phim có một cái kết rất buồn."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "She is starring in a new film.",
+          "example_vi": "Cô ấy đang đóng vai chính trong một bộ phim mới."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "The film won many awards this year.",
+          "example_vi": "Bộ phim đã giành được nhiều giải thưởng trong năm nay."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "We are going to see a horror film.",
+          "example_vi": "Chúng tôi sắp đi xem một bộ phim kinh dị."
+        },
+        {
+          "meaning_vi": "bộ phim",
+          "example_en": "The film is about two friends traveling.",
+          "example_vi": "Bộ phim kể về hai người bạn đang đi du lịch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là bộ phim và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ bộ phim được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "film",
+      "normalized_word": "film",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We watched a great film last night.",
+      "example_vi_clean": "Chúng tôi đã xem một bộ phim tuyệt vời tối qua."
+    },
+    {
+      "id": 25023,
+      "quiz_meaning_vi": "cuối cùng",
+      "meaning_vi_clean": "cuối cùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "This is my final answer.",
+          "example_vi": "Đây là câu trả lời cuối cùng của tôi."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The final decision will be made tomorrow.",
+          "example_vi": "Quyết định cuối cùng sẽ được đưa ra vào ngày mai."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "We are preparing for the final exam.",
+          "example_vi": "Chúng tôi đang chuẩn bị cho kỳ thi cuối cùng."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The final score was two to one.",
+          "example_vi": "Tỷ số cuối cùng là hai một."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "This is the final version of the report.",
+          "example_vi": "Đây là phiên bản cuối cùng của bản báo cáo."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The final stage of the race is difficult.",
+          "example_vi": "Giai đoạn cuối cùng của cuộc đua rất khó khăn."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "He made a final attempt to win.",
+          "example_vi": "Anh ấy đã thực hiện một nỗ lực cuối cùng để giành chiến thắng."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The final results will be posted online.",
+          "example_vi": "Kết quả cuối cùng sẽ được đăng tải trực tuyến."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "This is the final chapter of the book.",
+          "example_vi": "Đây là chương cuối cùng của cuốn sách."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The final meeting is scheduled for Friday.",
+          "example_vi": "Cuộc họp cuối cùng được lên lịch vào thứ Sáu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất là cuối cùng và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ cuối cùng được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "final",
+      "normalized_word": "final",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is my final answer.",
+      "example_vi_clean": "Đây là câu trả lời cuối cùng của tôi."
+    },
+    {
+      "id": 25026,
+      "quiz_meaning_vi": "khỏe mạnh",
+      "meaning_vi_clean": "khỏe mạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "You need to stay fit to run a marathon.",
+          "example_vi": "Bạn cần phải giữ cơ thể khỏe mạnh để chạy marathon."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "He looks very fit and active.",
+          "example_vi": "Anh ấy trông rất khỏe mạnh và năng động."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "Eating well helps you stay fit.",
+          "example_vi": "Ăn uống đầy đủ giúp bạn giữ cơ thể khỏe mạnh."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "She is very fit because she exercises daily.",
+          "example_vi": "Cô ấy rất khỏe mạnh vì cô ấy tập thể dục hàng ngày."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "The athlete is in fit condition for the game.",
+          "example_vi": "Vận động viên đang ở trạng thái khỏe mạnh cho trận đấu."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "It is important to be fit for your health.",
+          "example_vi": "Việc giữ cơ thể khỏe mạnh rất quan trọng cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "They are fit enough to climb the mountain.",
+          "example_vi": "Họ đủ khỏe mạnh để leo ngọn núi đó."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "He feels fit after his morning run.",
+          "example_vi": "Anh ấy cảm thấy khỏe mạnh sau buổi chạy bộ buổi sáng."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "A fit body is a sign of good health.",
+          "example_vi": "Một cơ thể khỏe mạnh là dấu hiệu của sức khỏe tốt."
+        },
+        {
+          "meaning_vi": "khỏe mạnh",
+          "example_en": "She wants to get fit before the summer.",
+          "example_vi": "Cô ấy muốn trở nên khỏe mạnh trước mùa hè."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất là khỏe mạnh và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ khỏe mạnh được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "fit",
+      "normalized_word": "fit",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "You need to stay fit to run a marathon.",
+      "example_vi_clean": "Bạn cần phải giữ cơ thể khỏe mạnh để chạy marathon."
+    }
+  ]
+}

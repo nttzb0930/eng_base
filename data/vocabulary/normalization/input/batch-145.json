@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-145",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25441,
+      "word": "adapt",
+      "normalized_word": "adapt",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'dæpt/",
+      "primary_meaning_vi": "tra vào",
+      "meaning_vi": "tra vào, lắp vào; phỏng theo, sửa lại cho hợp; làm thích nghi, làm thích ứng; thích nghi (với môi trường...)",
+      "example_en": "to adapt a story for the stage",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a word of an adapted form",
+          "example_vi": null
+        },
+        {
+          "example_en": "They could not adapt to the new climate and so perished.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25442,
+      "word": "addressee",
+      "normalized_word": "addressee",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ædre'si:/",
+      "primary_meaning_vi": "người nhận (thư...)",
+      "meaning_vi": "người nhận (thư...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25443,
+      "word": "administration",
+      "normalized_word": "administration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/əd,minis'treiʃn/",
+      "primary_meaning_vi": "sự trông nom",
+      "meaning_vi": "sự trông nom, sự quản lý; sự cai quản, sự cai trị; chính phủ, chính quyền; sự thi hành; việc áp dụng; sự cho uống (thuốc); sự làm lễ (tuyên thệ); sự cho ai (tuyên thệ); sự phân phối, sự phân phát (của cứu tế...); sự quản lý tài sản (của vị thành niên hoặc người đã chết)",
+      "example_en": "Successive US administrations have had similar Middle East policies.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "oral administration of insulin",
+          "example_vi": null
+        },
+        {
+          "example_en": "The company went into voluntary administration last week.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25444,
+      "word": "admiration",
+      "normalized_word": "admiration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ædmə'reiʃn/",
+      "primary_meaning_vi": "sự ngắm nhìn một cách vui thích",
+      "meaning_vi": "sự ngắm nhìn một cách vui thích; sự khâm phục, sự thán phục, sự cảm phục, sự hâm mộ, sự ngưỡng mộ; sự ca tụng; người được khâm phục, người được hâm mộ, người được ca tụng; vật được hâm mô, vật được ca tụng; sự cảm thán; sự lấy làm lạ; sự ngạc nhiên",
+      "example_en": "They looked at the landscape in admiration.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25445,
+      "word": "admission",
+      "normalized_word": "admission",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/əd'miʃn/",
+      "primary_meaning_vi": "sự nhận vào",
+      "meaning_vi": "sự nhận vào, sự thu nạp vào; sự kết nạp; sự cho vào cửa, sự cho vào; tiền vào cửa, tiền nhập học; sự nhận, sự thú nhận; (kỹ thuật) nạp",
+      "example_en": "I request admission for two adults",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There is no way he has seen that show, the admission is more than he makes in a week.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25446,
+      "word": "adopt",
+      "normalized_word": "adopt",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'dɔpt/",
+      "primary_meaning_vi": "nhận làm con nuôi",
+      "meaning_vi": "nhận làm con nuôi; nhận làm bố mẹ nuôi; theo, làm theo; chọn (nghề, người cho một chức vị); chấp nhận và thực hiện",
+      "example_en": "He adopted a new look in order to fit in with his new workmates.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "These resolutions were adopted.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25447,
+      "word": "adorable",
+      "normalized_word": "adorable",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'dɔ:rəbl/",
+      "primary_meaning_vi": "đáng kính yêu",
+      "meaning_vi": "đáng kính yêu, đáng quý mến, đáng yêu; đáng tôn sùng, đáng sùng bái, đáng tôn thờ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25448,
+      "word": "adverb",
+      "normalized_word": "adverb",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ædvə:b/",
+      "primary_meaning_vi": "phó từ",
+      "meaning_vi": "phó từ",
+      "example_en": "I often went outside hiking during my stay in Japan.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25449,
+      "word": "adverbial",
+      "normalized_word": "adverbial",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/əd'və:bjəl/",
+      "primary_meaning_vi": "phó từ",
+      "meaning_vi": "(thuộc) phó từ; có tính chất phó từ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25450,
+      "word": "advert",
+      "normalized_word": "advert",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/əd'və:t/",
+      "primary_meaning_vi": "ám chỉ (nói hoặc viết)",
+      "meaning_vi": "ám chỉ (nói hoặc viết); nói đến, kể đến; tai hoạ, tai ương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24866,
+      "quiz_meaning_vi": "sự tín nhiệm",
+      "meaning_vi_clean": "sự tín nhiệm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "She deserves full credit for the success of the project.",
+          "example_vi": "Cô ấy xứng đáng nhận được sự tín nhiệm hoàn toàn cho sự thành công của dự án."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "The teacher gave him credit for his hard work.",
+          "example_vi": "Giáo viên đã dành cho cậu ấy sự tín nhiệm vì sự chăm chỉ của cậu ấy."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "I give you full credit for solving this difficult problem.",
+          "example_vi": "Tôi dành cho bạn sự tín nhiệm hoàn toàn vì đã giải quyết được vấn đề khó khăn này."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "The team deserves credit for their excellent performance.",
+          "example_vi": "Cả đội xứng đáng nhận được sự tín nhiệm vì màn trình diễn xuất sắc của họ."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "He took all the credit for the idea.",
+          "example_vi": "Anh ấy đã nhận hết sự tín nhiệm cho ý tưởng đó."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "She gets no credit for all the help she provides.",
+          "example_vi": "Cô ấy không nhận được sự tín nhiệm nào cho tất cả sự giúp đỡ mà cô ấy mang lại."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "The manager gave credit to the staff for the record sales.",
+          "example_vi": "Người quản lý đã dành sự tín nhiệm cho nhân viên vì doanh số kỷ lục."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "You should take credit for your own achievements.",
+          "example_vi": "Bạn nên nhận sự tín nhiệm cho những thành tựu của chính mình."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "The architect deserves credit for this beautiful building.",
+          "example_vi": "Kiến trúc sư xứng đáng nhận được sự tín nhiệm cho tòa nhà xinh đẹp này."
+        },
+        {
+          "meaning_vi": "sự tín nhiệm",
+          "example_en": "They gave him credit for his honesty.",
+          "example_vi": "Họ dành cho anh ấy sự tín nhiệm vì tính trung thực của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất là sự tín nhiệm và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ sự tín nhiệm được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "credit",
+      "normalized_word": "credit",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She deserves full credit for the success of the project.",
+      "example_vi_clean": "Cô ấy xứng đáng nhận được sự tín nhiệm hoàn toàn cho sự thành công của dự án."
+    },
+    {
+      "id": 24869,
+      "quiz_meaning_vi": "khoai tây chiên giòn",
+      "meaning_vi_clean": "khoai tây chiên giòn",
+      "examples_clean": [
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "He ate a bag of crisp while watching the movie.",
+          "example_vi": "Anh ấy đã ăn một túi khoai tây chiên giòn trong khi xem phim."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "Would you like a crisp with your sandwich?",
+          "example_vi": "Bạn có muốn ăn kèm khoai tây chiên giòn với bánh mì sandwich không?"
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "The children shared a packet of crisp during the break.",
+          "example_vi": "Những đứa trẻ đã chia nhau một gói khoai tây chiên giòn trong giờ nghỉ."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "She bought a large bag of crisp for the party.",
+          "example_vi": "Cô ấy đã mua một túi khoai tây chiên giòn lớn cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "He prefers the cheese flavor of crisp.",
+          "example_vi": "Anh ấy thích loại khoai tây chiên giòn vị phô mai hơn."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "There is only one crisp left in the bowl.",
+          "example_vi": "Chỉ còn lại một miếng khoai tây chiên giòn trong bát."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "She offered him a crisp from her snack pack.",
+          "example_vi": "Cô ấy mời anh ấy một miếng khoai tây chiên giòn từ gói đồ ăn nhẹ của mình."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "The crisp was very salty.",
+          "example_vi": "Miếng khoai tây chiên giòn đó rất mặn."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "He crunched on a crisp loudly.",
+          "example_vi": "Anh ấy nhai một miếng khoai tây chiên giòn một cách ồn ào."
+        },
+        {
+          "meaning_vi": "khoai tây chiên giòn",
+          "example_en": "They finished the whole box of crisp in minutes.",
+          "example_vi": "Họ đã ăn hết cả hộp khoai tây chiên giòn chỉ trong vài phút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là khoai tây chiên giòn (Anh-Anh) và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ khoai tây chiên giòn được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "crisp",
+      "normalized_word": "crisp",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He ate a bag of crisp while watching the movie.",
+      "example_vi_clean": "Anh ấy đã ăn một túi khoai tây chiên giòn trong khi xem phim."
+    },
+    {
+      "id": 24872,
+      "quiz_meaning_vi": "hình chữ thập",
+      "meaning_vi_clean": "hình chữ thập",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "She drew a small cross on the paper.",
+          "example_vi": "Cô ấy đã vẽ một hình chữ thập nhỏ trên giấy."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "There is a red cross on the flag.",
+          "example_vi": "Có một hình chữ thập màu đỏ trên lá cờ."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "He marked the correct answer with a cross.",
+          "example_vi": "Anh ấy đã đánh dấu câu trả lời đúng bằng một hình chữ thập."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "The map showed a cross where the treasure was buried.",
+          "example_vi": "Bản đồ hiển thị một hình chữ thập nơi kho báu được chôn giấu."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "She wore a gold cross around her neck.",
+          "example_vi": "Cô ấy đeo một hình chữ thập bằng vàng quanh cổ."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "The sign was a simple black cross.",
+          "example_vi": "Biển báo là một hình chữ thập màu đen đơn giản."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "He painted a white cross on the door.",
+          "example_vi": "Anh ấy đã sơn một hình chữ thập màu trắng trên cửa."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "The design features a large cross in the center.",
+          "example_vi": "Thiết kế có một hình chữ thập lớn ở trung tâm."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "She traced a cross in the sand.",
+          "example_vi": "Cô ấy đã vẽ một hình chữ thập trên cát."
+        },
+        {
+          "meaning_vi": "hình chữ thập",
+          "example_en": "The ancient stone had a cross carved into it.",
+          "example_vi": "Viên đá cổ có một hình chữ thập được khắc vào đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là hình chữ thập và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ hình chữ thập được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "cross",
+      "normalized_word": "cross",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She drew a small cross on the paper.",
+      "example_vi_clean": "Cô ấy đã vẽ một hình chữ thập nhỏ trên giấy."
+    },
+    {
+      "id": 24873,
+      "quiz_meaning_vi": "đám đông",
+      "meaning_vi_clean": "đám đông",
+      "examples_clean": [
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The crowd cheered when the band appeared on stage.",
+          "example_vi": "Đám đông reo hò khi ban nhạc xuất hiện trên sân khấu."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "He disappeared into the crowd at the station.",
+          "example_vi": "Anh ấy biến mất vào đám đông tại nhà ga."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The crowd was waiting for the concert to start.",
+          "example_vi": "Đám đông đang chờ đợi buổi hòa nhạc bắt đầu."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "She felt nervous in such a large crowd.",
+          "example_vi": "Cô ấy cảm thấy lo lắng trong một đám đông lớn như vậy."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The crowd moved slowly through the narrow street.",
+          "example_vi": "Đám đông di chuyển chậm chạp qua con phố hẹp."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "A crowd gathered to watch the street performer.",
+          "example_vi": "Một đám đông đã tụ tập để xem nghệ sĩ đường phố biểu diễn."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The police tried to control the angry crowd.",
+          "example_vi": "Cảnh sát đã cố gắng kiểm soát đám đông đang giận dữ."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "He stood out from the crowd because of his height.",
+          "example_vi": "Anh ấy nổi bật giữa đám đông vì chiều cao của mình."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The crowd pushed forward to get a better view.",
+          "example_vi": "Đám đông chen lấn về phía trước để có tầm nhìn tốt hơn."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The crowd dispersed after the event ended.",
+          "example_vi": "Đám đông giải tán sau khi sự kiện kết thúc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là đám đông và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ đám đông được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "crowd",
+      "normalized_word": "crowd",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The crowd cheered when the band appeared on stage.",
+      "example_vi_clean": "Đám đông reo hò khi ban nhạc xuất hiện trên sân khấu."
+    },
+    {
+      "id": 24875,
+      "quiz_meaning_vi": "vương miện",
+      "meaning_vi_clean": "vương miện",
+      "examples_clean": [
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The queen wore a beautiful diamond crown.",
+          "example_vi": "Nữ hoàng đội một chiếc vương miện kim cương xinh đẹp."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The king placed the crown on his head.",
+          "example_vi": "Nhà vua đặt chiếc vương miện lên đầu mình."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The museum displayed an ancient gold crown.",
+          "example_vi": "Bảo tàng trưng bày một chiếc vương miện vàng cổ."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "She won the beauty pageant and received a crown.",
+          "example_vi": "Cô ấy đã thắng cuộc thi sắc đẹp và nhận được một chiếc vương miện."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The crown was decorated with many precious stones.",
+          "example_vi": "Chiếc vương miện được trang trí bằng nhiều loại đá quý."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "He saw the crown in the royal collection.",
+          "example_vi": "Anh ấy đã nhìn thấy chiếc vương miện trong bộ sưu tập hoàng gia."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The prince will inherit the crown one day.",
+          "example_vi": "Hoàng tử sẽ kế thừa vương miện vào một ngày nào đó."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The crown was kept in a glass case.",
+          "example_vi": "Chiếc vương miện được giữ trong một tủ kính."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "She drew a picture of a crown for her project.",
+          "example_vi": "Cô ấy đã vẽ một bức tranh về chiếc vương miện cho dự án của mình."
+        },
+        {
+          "meaning_vi": "vương miện",
+          "example_en": "The crown is a symbol of royal power.",
+          "example_vi": "Vương miện là biểu tượng của quyền lực hoàng gia."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là vương miện và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ vương miện được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "crown",
+      "normalized_word": "crown",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The queen wore a beautiful diamond crown.",
+      "example_vi_clean": "Nữ hoàng đội một chiếc vương miện kim cương xinh đẹp."
+    },
+    {
+      "id": 24876,
+      "quiz_meaning_vi": "chuyến du ngoạn trên biển",
+      "meaning_vi_clean": "chuyến du ngoạn trên biển",
+      "examples_clean": [
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "They went on a cruise around the Mediterranean.",
+          "example_vi": "Họ đã đi một chuyến du ngoạn trên biển quanh vùng Địa Trung Hải."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "She booked a cruise for her parents' anniversary.",
+          "example_vi": "Cô ấy đã đặt một chuyến du ngoạn trên biển cho ngày kỷ niệm của bố mẹ."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "The cruise lasted for two weeks.",
+          "example_vi": "Chuyến du ngoạn trên biển kéo dài trong hai tuần."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "He enjoyed every moment of the cruise.",
+          "example_vi": "Anh ấy đã tận hưởng từng khoảnh khắc của chuyến du ngoạn trên biển."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "They met many interesting people on the cruise.",
+          "example_vi": "Họ đã gặp nhiều người thú vị trong chuyến du ngoạn trên biển."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "The cruise ship was very large and luxurious.",
+          "example_vi": "Con tàu của chuyến du ngoạn trên biển rất lớn và sang trọng."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "She took many photos during the cruise.",
+          "example_vi": "Cô ấy đã chụp nhiều bức ảnh trong chuyến du ngoạn trên biển."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "The cruise stopped at several beautiful islands.",
+          "example_vi": "Chuyến du ngoạn trên biển đã dừng lại ở vài hòn đảo xinh đẹp."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "He is planning a cruise for his summer vacation.",
+          "example_vi": "Anh ấy đang lên kế hoạch cho một chuyến du ngoạn trên biển vào kỳ nghỉ hè."
+        },
+        {
+          "meaning_vi": "chuyến du ngoạn trên biển",
+          "example_en": "The cruise was a relaxing experience for everyone.",
+          "example_vi": "Chuyến du ngoạn trên biển là một trải nghiệm thư giãn cho mọi người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là chuyến du ngoạn trên biển và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chuyến du ngoạn trên biển được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "cruise",
+      "normalized_word": "cruise",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They went on a cruise around the Mediterranean.",
+      "example_vi_clean": "Họ đã đi một chuyến du ngoạn trên biển quanh vùng Địa Trung Hải."
+    },
+    {
+      "id": 24878,
+      "quiz_meaning_vi": "món cà ri",
+      "meaning_vi_clean": "món cà ri",
+      "examples_clean": [
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "She cooked a delicious chicken curry for dinner.",
+          "example_vi": "Cô ấy đã nấu một món cà ri gà ngon tuyệt cho bữa tối."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "He loves eating spicy curry.",
+          "example_vi": "Anh ấy thích ăn món cà ri cay."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "They ordered a vegetable curry at the restaurant.",
+          "example_vi": "Họ đã gọi một món cà ri rau củ tại nhà hàng."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "The curry was served with rice.",
+          "example_vi": "Món cà ri được phục vụ cùng với cơm."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "She learned how to make a traditional curry.",
+          "example_vi": "Cô ấy đã học cách làm một món cà ri truyền thống."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "He added more spices to the curry.",
+          "example_vi": "Anh ấy đã thêm nhiều gia vị hơn vào món cà ri."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "The smell of curry filled the kitchen.",
+          "example_vi": "Mùi của món cà ri tràn ngập căn bếp."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "They shared a large bowl of curry.",
+          "example_vi": "Họ đã chia nhau một bát cà ri lớn."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "This curry is not too spicy for children.",
+          "example_vi": "Món cà ri này không quá cay đối với trẻ em."
+        },
+        {
+          "meaning_vi": "món cà ri",
+          "example_en": "She prefers beef curry over chicken curry.",
+          "example_vi": "Cô ấy thích món cà ri bò hơn là cà ri gà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là món cà ri và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ món cà ri được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "curry",
+      "normalized_word": "curry",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She cooked a delicious chicken curry for dinner.",
+      "example_vi_clean": "Cô ấy đã nấu một món cà ri gà ngon tuyệt cho bữa tối."
+    },
+    {
+      "id": 24879,
+      "quiz_meaning_vi": "lời nguyền",
+      "meaning_vi_clean": "lời nguyền",
+      "examples_clean": [
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "The legend says there is a curse on the old house.",
+          "example_vi": "Truyền thuyết kể rằng có một lời nguyền trên ngôi nhà cũ."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "She tried to break the curse with magic.",
+          "example_vi": "Cô ấy đã cố gắng phá bỏ lời nguyền bằng phép thuật."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "He believed the family was under a curse.",
+          "example_vi": "Anh ấy tin rằng gia đình đang phải chịu một lời nguyền."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "The witch cast a curse on the prince.",
+          "example_vi": "Phù thủy đã yểm một lời nguyền lên hoàng tử."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "They were afraid of the ancient curse.",
+          "example_vi": "Họ đã sợ hãi lời nguyền cổ xưa đó."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "The curse brought bad luck to everyone.",
+          "example_vi": "Lời nguyền đã mang lại vận rủi cho tất cả mọi người."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "He wanted to be free from the curse.",
+          "example_vi": "Anh ấy muốn được tự do khỏi lời nguyền."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "The story is about a mysterious curse.",
+          "example_vi": "Câu chuyện kể về một lời nguyền bí ẩn."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "She read about the curse in an old book.",
+          "example_vi": "Cô ấy đã đọc về lời nguyền trong một cuốn sách cũ."
+        },
+        {
+          "meaning_vi": "lời nguyền",
+          "example_en": "The curse finally ended after many years.",
+          "example_vi": "Lời nguyền cuối cùng đã kết thúc sau nhiều năm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là lời nguyền và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ lời nguyền được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "curse",
+      "normalized_word": "curse",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The legend says there is a curse on the old house.",
+      "example_vi_clean": "Truyền thuyết kể rằng có một lời nguyền trên ngôi nhà cũ."
+    },
+    {
+      "id": 24883,
+      "quiz_meaning_vi": "hàng ngày",
+      "meaning_vi_clean": "hàng ngày",
+      "examples_clean": [
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "He has a daily routine that he follows strictly.",
+          "example_vi": "Anh ấy có một thói quen hàng ngày mà anh ấy tuân thủ nghiêm ngặt."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "She reads the daily newspaper every morning.",
+          "example_vi": "Cô ấy đọc tờ báo hàng ngày vào mỗi buổi sáng."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "They face daily challenges at their work.",
+          "example_vi": "Họ đối mặt với những thử thách hàng ngày tại nơi làm việc."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "Exercise is part of his daily life.",
+          "example_vi": "Tập thể dục là một phần trong cuộc sống hàng ngày của anh ấy."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "She keeps a daily diary of her thoughts.",
+          "example_vi": "Cô ấy viết nhật ký hàng ngày về những suy nghĩ của mình."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "The daily temperature is rising.",
+          "example_vi": "Nhiệt độ hàng ngày đang tăng lên."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "He needs his daily dose of coffee.",
+          "example_vi": "Anh ấy cần liều lượng cà phê hàng ngày của mình."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "They have a daily meeting to discuss progress.",
+          "example_vi": "Họ có một cuộc họp hàng ngày để thảo luận về tiến độ."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "She enjoys her daily walk in the park.",
+          "example_vi": "Cô ấy thích chuyến đi bộ hàng ngày trong công viên."
+        },
+        {
+          "meaning_vi": "hàng ngày",
+          "example_en": "The daily commute takes him an hour.",
+          "example_vi": "Việc đi lại hàng ngày mất của anh ấy một giờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ là hàng ngày và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ hàng ngày được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "daily",
+      "normalized_word": "daily",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has a daily routine that he follows strictly.",
+      "example_vi_clean": "Anh ấy có một thói quen hàng ngày mà anh ấy tuân thủ nghiêm ngặt."
+    },
+    {
+      "id": 24884,
+      "quiz_meaning_vi": "con đập",
+      "meaning_vi_clean": "con đập",
+      "examples_clean": [
+        {
+          "meaning_vi": "con đập",
+          "example_en": "The dam holds back a large amount of water.",
+          "example_vi": "Con đập giữ lại một lượng nước lớn."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "They built a new dam to generate electricity.",
+          "example_vi": "Họ đã xây dựng một con đập mới để tạo ra điện."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "The dam is very important for flood control.",
+          "example_vi": "Con đập rất quan trọng đối với việc kiểm soát lũ lụt."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "He visited the dam during his trip.",
+          "example_vi": "Anh ấy đã đến thăm con đập trong chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "The dam was damaged by the heavy rain.",
+          "example_vi": "Con đập đã bị hư hại bởi trận mưa lớn."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "They walked across the top of the dam.",
+          "example_vi": "Họ đã đi bộ qua đỉnh của con đập."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "The dam provides water for the nearby farms.",
+          "example_vi": "Con đập cung cấp nước cho các trang trại gần đó."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "The view from the dam is spectacular.",
+          "example_vi": "Khung cảnh từ con đập thật ngoạn mục."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "Engineers are inspecting the dam for safety.",
+          "example_vi": "Các kỹ sư đang kiểm tra con đập để đảm bảo an toàn."
+        },
+        {
+          "meaning_vi": "con đập",
+          "example_en": "The dam was built many years ago.",
+          "example_vi": "Con đập đã được xây dựng từ nhiều năm trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ là con đập và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ con đập được sử dụng nhất quán trong 10 ví dụ."
+      },
+      "word": "dam",
+      "normalized_word": "dam",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dam holds back a large amount of water.",
+      "example_vi_clean": "Con đập giữ lại một lượng nước lớn."
+    }
+  ]
+}

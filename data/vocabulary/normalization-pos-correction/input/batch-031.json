@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-031",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24749,
+      "word": "breeze",
+      "normalized_word": "breeze",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bri:z/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24752,
+      "word": "bug",
+      "normalized_word": "bug",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bʌg/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24754,
+      "word": "burn",
+      "normalized_word": "burn",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bə:n/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24756,
+      "word": "bush",
+      "normalized_word": "bush",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/buʃ/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24759,
+      "word": "cab",
+      "normalized_word": "cab",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kæb/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24761,
+      "word": "calendar",
+      "normalized_word": "calendar",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kælində/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24764,
+      "word": "capital",
+      "normalized_word": "capital",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæpitl/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24767,
+      "word": "cash",
+      "normalized_word": "cash",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kæʃ/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24768,
+      "word": "cassette",
+      "normalized_word": "cassette",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24774,
+      "word": "centre",
+      "normalized_word": "centre",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sentə/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

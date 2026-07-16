@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24481,
+      "quiz_meaning_vi": "danh sách",
+      "meaning_vi_clean": "danh sách; trạng thái nghiêng",
+      "examples_clean": [
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "Please add your name to the list.",
+          "example_vi": "Vui lòng thêm tên của bạn vào danh sách."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "I have a long list of things to do today.",
+          "example_vi": "Tôi có một danh sách dài những việc cần làm hôm nay."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "Check the list to see if you are invited.",
+          "example_vi": "Kiểm tra danh sách để xem bạn có được mời không."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "The grocery list is on the kitchen table.",
+          "example_vi": "Danh sách đi chợ nằm trên bàn bếp."
+        },
+        {
+          "meaning_vi": "trạng thái nghiêng",
+          "example_en": "The ship developed a dangerous list to the left.",
+          "example_vi": "Con tàu bị nghiêng nguy hiểm sang bên trái."
+        },
+        {
+          "meaning_vi": "trạng thái nghiêng",
+          "example_en": "The heavy cargo caused the boat to list.",
+          "example_vi": "Hàng hóa nặng khiến con thuyền bị nghiêng."
+        },
+        {
+          "meaning_vi": "trạng thái nghiêng",
+          "example_en": "The old house has a slight list to one side.",
+          "example_vi": "Ngôi nhà cũ có độ nghiêng nhẹ sang một bên."
+        },
+        {
+          "meaning_vi": "trạng thái nghiêng",
+          "example_en": "The damaged tower began to list after the storm.",
+          "example_vi": "Tòa tháp bị hư hại bắt đầu nghiêng sau cơn bão."
+        },
+        {
+          "meaning_vi": "trạng thái nghiêng",
+          "example_en": "The ship listed heavily in the rough sea.",
+          "example_vi": "Con tàu nghiêng dữ dội trên vùng biển động."
+        },
+        {
+          "meaning_vi": "trạng thái nghiêng",
+          "example_en": "The uneven floor caused the table to list.",
+          "example_vi": "Sàn nhà không bằng phẳng khiến cái bàn bị nghiêng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ động từ sang danh từ theo từ điển. Giữ lại 2 nghĩa phổ biến nhất và phân bổ ví dụ hợp lý.",
+      "word": "list",
+      "normalized_word": "list",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please add your name to the list.",
+      "example_vi_clean": "Vui lòng thêm tên của bạn vào danh sách."
+    },
+    {
+      "id": 24482,
+      "quiz_meaning_vi": "nghe",
+      "meaning_vi_clean": "nghe; nghe theo",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghe",
+          "example_en": "I like to listen to music in the evening.",
+          "example_vi": "Tôi thích nghe nhạc vào buổi tối."
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "Please listen carefully to what I say.",
+          "example_vi": "Vui lòng nghe kỹ những gì tôi nói."
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "Did you listen to the news this morning?",
+          "example_vi": "Bạn có nghe tin tức sáng nay không?"
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "She loves to listen to the birds singing.",
+          "example_vi": "Cô ấy thích nghe tiếng chim hót."
+        },
+        {
+          "meaning_vi": "nghe theo",
+          "example_en": "You should listen to your parents' advice.",
+          "example_vi": "Bạn nên nghe theo lời khuyên của cha mẹ."
+        },
+        {
+          "meaning_vi": "nghe theo",
+          "example_en": "He never listens to anyone else's opinion.",
+          "example_vi": "Anh ấy không bao giờ nghe theo ý kiến của người khác."
+        },
+        {
+          "meaning_vi": "nghe theo",
+          "example_en": "It is wise to listen to experienced people.",
+          "example_vi": "Thật khôn ngoan khi nghe theo những người có kinh nghiệm."
+        },
+        {
+          "meaning_vi": "nghe theo",
+          "example_en": "She decided to listen to her heart.",
+          "example_vi": "Cô ấy quyết định nghe theo trái tim mình."
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "Listen, I have something important to tell you.",
+          "example_vi": "Nghe này, tôi có chuyện quan trọng muốn nói với bạn."
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "We sat quietly to listen to the lecture.",
+          "example_vi": "Chúng tôi ngồi yên lặng để nghe bài giảng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "listen",
+      "normalized_word": "listen",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I like to listen to music in the evening.",
+      "example_vi_clean": "Tôi thích nghe nhạc vào buổi tối."
+    },
+    {
+      "id": 24483,
+      "quiz_meaning_vi": "nhỏ bé",
+      "meaning_vi_clean": "nhỏ bé; ít ỏi",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhỏ bé",
+          "example_en": "She lives in a little house by the sea.",
+          "example_vi": "Cô ấy sống trong một ngôi nhà nhỏ bé bên bờ biển."
+        },
+        {
+          "meaning_vi": "nhỏ bé",
+          "example_en": "He is just a little boy.",
+          "example_vi": "Cậu ấy chỉ là một cậu bé nhỏ bé."
+        },
+        {
+          "meaning_vi": "nhỏ bé",
+          "example_en": "I have a little dog that follows me everywhere.",
+          "example_vi": "Tôi có một chú chó nhỏ bé đi theo tôi khắp nơi."
+        },
+        {
+          "meaning_vi": "nhỏ bé",
+          "example_en": "Look at that little bird on the branch.",
+          "example_vi": "Hãy nhìn chú chim nhỏ bé trên cành cây kia."
+        },
+        {
+          "meaning_vi": "ít ỏi",
+          "example_en": "There is little hope of finding the lost keys.",
+          "example_vi": "Có rất ít ỏi hy vọng tìm thấy chìa khóa bị mất."
+        },
+        {
+          "meaning_vi": "ít ỏi",
+          "example_en": "He has little money left in his account.",
+          "example_vi": "Anh ấy còn rất ít ỏi tiền trong tài khoản."
+        },
+        {
+          "meaning_vi": "ít ỏi",
+          "example_en": "We have little time to finish the project.",
+          "example_vi": "Chúng tôi có rất ít ỏi thời gian để hoàn thành dự án."
+        },
+        {
+          "meaning_vi": "ít ỏi",
+          "example_en": "There was little interest in the new policy.",
+          "example_vi": "Có rất ít ỏi sự quan tâm đến chính sách mới."
+        },
+        {
+          "meaning_vi": "nhỏ bé",
+          "example_en": "She has a little garden in the backyard.",
+          "example_vi": "Cô ấy có một khu vườn nhỏ bé ở sân sau."
+        },
+        {
+          "meaning_vi": "nhỏ bé",
+          "example_en": "The little kitten is very cute.",
+          "example_vi": "Chú mèo con nhỏ bé rất đáng yêu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ phó từ sang tính từ. Giữ 2 nghĩa phổ biến nhất và phân bổ ví dụ.",
+      "word": "little",
+      "normalized_word": "little",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She lives in a little house by the sea.",
+      "example_vi_clean": "Cô ấy sống trong một ngôi nhà nhỏ bé bên bờ biển."
+    },
+    {
+      "id": 24484,
+      "quiz_meaning_vi": "sống",
+      "meaning_vi_clean": "sống; sinh kế",
+      "examples_clean": [
+        {
+          "meaning_vi": "sống",
+          "example_en": "She is still living in the same house.",
+          "example_vi": "Cô ấy vẫn đang sống trong cùng một ngôi nhà."
+        },
+        {
+          "meaning_vi": "sống",
+          "example_en": "Many people are living in poverty.",
+          "example_vi": "Nhiều người đang sống trong cảnh nghèo đói."
+        },
+        {
+          "meaning_vi": "sống",
+          "example_en": "He is living his dream life.",
+          "example_vi": "Anh ấy đang sống cuộc đời mơ ước của mình."
+        },
+        {
+          "meaning_vi": "sống",
+          "example_en": "They are living happily together.",
+          "example_vi": "Họ đang sống hạnh phúc cùng nhau."
+        },
+        {
+          "meaning_vi": "sinh kế",
+          "example_en": "Fishing is the main living for this village.",
+          "example_vi": "Đánh cá là sinh kế chính của ngôi làng này."
+        },
+        {
+          "meaning_vi": "sinh kế",
+          "example_en": "He earns a good living as a teacher.",
+          "example_vi": "Anh ấy kiếm được sinh kế tốt nhờ làm giáo viên."
+        },
+        {
+          "meaning_vi": "sinh kế",
+          "example_en": "It is hard to make a living in this city.",
+          "example_vi": "Thật khó để kiếm sinh kế ở thành phố này."
+        },
+        {
+          "meaning_vi": "sinh kế",
+          "example_en": "She works hard to provide a living for her family.",
+          "example_vi": "Cô ấy làm việc chăm chỉ để lo sinh kế cho gia đình."
+        },
+        {
+          "meaning_vi": "sống",
+          "example_en": "Are there any living creatures on Mars?",
+          "example_vi": "Có sinh vật sống nào trên sao Hỏa không?"
+        },
+        {
+          "meaning_vi": "sống",
+          "example_en": "She is the most kind living person I know.",
+          "example_vi": "Cô ấy là người sống tử tế nhất mà tôi biết."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa chính thành 'sống' (tính từ/đang sống) và 'sinh kế' (danh từ). Đã bổ sung ví dụ.",
+      "word": "living",
+      "normalized_word": "living",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is still living in the same house.",
+      "example_vi_clean": "Cô ấy vẫn đang sống trong cùng một ngôi nhà."
+    },
+    {
+      "id": 24485,
+      "quiz_meaning_vi": "vắng vẻ",
+      "meaning_vi_clean": "vắng vẻ; cô đơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "vắng vẻ",
+          "example_en": "The beach was very lonely in the winter.",
+          "example_vi": "Bãi biển rất vắng vẻ vào mùa đông."
+        },
+        {
+          "meaning_vi": "vắng vẻ",
+          "example_en": "We walked along a lonely road.",
+          "example_vi": "Chúng tôi đi dọc theo một con đường vắng vẻ."
+        },
+        {
+          "meaning_vi": "vắng vẻ",
+          "example_en": "The house is located in a lonely area.",
+          "example_vi": "Ngôi nhà nằm ở một khu vực vắng vẻ."
+        },
+        {
+          "meaning_vi": "vắng vẻ",
+          "example_en": "It was a lonely place with no people around.",
+          "example_vi": "Đó là một nơi vắng vẻ không có người xung quanh."
+        },
+        {
+          "meaning_vi": "cô đơn",
+          "example_en": "He felt very lonely after his friends left.",
+          "example_vi": "Anh ấy cảm thấy rất cô đơn sau khi bạn bè rời đi."
+        },
+        {
+          "meaning_vi": "cô đơn",
+          "example_en": "She often feels lonely when she is alone.",
+          "example_vi": "Cô ấy thường cảm thấy cô đơn khi ở một mình."
+        },
+        {
+          "meaning_vi": "cô đơn",
+          "example_en": "It is a lonely life for an old man.",
+          "example_vi": "Đó là một cuộc sống cô đơn đối với một người đàn ông già."
+        },
+        {
+          "meaning_vi": "cô đơn",
+          "example_en": "Don't be lonely, I am here for you.",
+          "example_vi": "Đừng cô đơn, tôi ở đây vì bạn."
+        },
+        {
+          "meaning_vi": "vắng vẻ",
+          "example_en": "The park is lonely at night.",
+          "example_vi": "Công viên rất vắng vẻ vào ban đêm."
+        },
+        {
+          "meaning_vi": "cô đơn",
+          "example_en": "She felt lonely in the big city.",
+          "example_vi": "Cô ấy cảm thấy cô đơn ở thành phố lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung ví dụ cho đủ 10 câu, phân bổ đều cho 2 nghĩa.",
+      "word": "lonely",
+      "normalized_word": "lonely",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The beach was very lonely in the winter.",
+      "example_vi_clean": "Bãi biển rất vắng vẻ vào mùa đông."
+    },
+    {
+      "id": 24486,
+      "quiz_meaning_vi": "dài",
+      "meaning_vi_clean": "dài; lâu",
+      "examples_clean": [
+        {
+          "meaning_vi": "dài",
+          "example_en": "She has very long hair.",
+          "example_vi": "Cô ấy có mái tóc rất dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The river is very long.",
+          "example_vi": "Con sông này rất dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "He wrote a long letter to his friend.",
+          "example_vi": "Anh ấy đã viết một lá thư dài cho bạn mình."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The road is long and winding.",
+          "example_vi": "Con đường thì dài và quanh co."
+        },
+        {
+          "meaning_vi": "lâu",
+          "example_en": "It took a long time to finish the work.",
+          "example_vi": "Mất một thời gian lâu để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "lâu",
+          "example_en": "I haven't seen you for a long time.",
+          "example_vi": "Tôi đã không gặp bạn một thời gian lâu rồi."
+        },
+        {
+          "meaning_vi": "lâu",
+          "example_en": "We waited for a long time at the station.",
+          "example_vi": "Chúng tôi đã đợi một thời gian lâu ở nhà ga."
+        },
+        {
+          "meaning_vi": "lâu",
+          "example_en": "He has lived here for a long time.",
+          "example_vi": "Anh ấy đã sống ở đây một thời gian lâu rồi."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The movie was too long.",
+          "example_vi": "Bộ phim quá dài."
+        },
+        {
+          "meaning_vi": "lâu",
+          "example_en": "Don't stay too long.",
+          "example_vi": "Đừng ở lại quá lâu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang tính từ. Giữ 2 nghĩa phổ biến nhất và phân bổ ví dụ.",
+      "word": "long",
+      "normalized_word": "long",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has very long hair.",
+      "example_vi_clean": "Cô ấy có mái tóc rất dài."
+    },
+    {
+      "id": 24487,
+      "quiz_meaning_vi": "cái nhìn",
+      "meaning_vi_clean": "cái nhìn; vẻ ngoài",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "Take a look at this picture.",
+          "example_vi": "Hãy nhìn vào bức tranh này."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "He gave me a quick look.",
+          "example_vi": "Anh ấy liếc nhìn tôi một cái nhìn nhanh."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "Let me have a look at your report.",
+          "example_vi": "Để tôi xem qua cái nhìn vào báo cáo của bạn."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "She cast a look of surprise at him.",
+          "example_vi": "Cô ấy ném một cái nhìn ngạc nhiên về phía anh ấy."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The house has a modern look.",
+          "example_vi": "Ngôi nhà có vẻ ngoài hiện đại."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "She has a friendly look.",
+          "example_vi": "Cô ấy có vẻ ngoài thân thiện."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The city has a different look in the winter.",
+          "example_vi": "Thành phố có vẻ ngoài khác biệt vào mùa đông."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "He changed his look by cutting his hair.",
+          "example_vi": "Anh ấy thay đổi vẻ ngoài bằng cách cắt tóc."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "I had a look around the garden.",
+          "example_vi": "Tôi đã nhìn quanh khu vườn."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The room has a clean look.",
+          "example_vi": "Căn phòng có vẻ ngoài sạch sẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ động từ sang danh từ. Giữ 2 nghĩa phổ biến nhất và phân bổ ví dụ.",
+      "word": "look",
+      "normalized_word": "look",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Take a look at this picture.",
+      "example_vi_clean": "Hãy nhìn vào bức tranh này."
+    },
+    {
+      "id": 24488,
+      "quiz_meaning_vi": "thăm",
+      "meaning_vi_clean": "thăm; rất nhiều",
+      "examples_clean": [
+        {
+          "meaning_vi": "thăm",
+          "example_en": "We decided to cast lots to choose the winner.",
+          "example_vi": "Chúng tôi quyết định rút thăm để chọn người chiến thắng."
+        },
+        {
+          "meaning_vi": "thăm",
+          "example_en": "The lots were drawn to decide the order.",
+          "example_vi": "Các lá thăm đã được rút để quyết định thứ tự."
+        },
+        {
+          "meaning_vi": "thăm",
+          "example_en": "They used lots to settle the argument.",
+          "example_vi": "Họ dùng cách rút thăm để giải quyết tranh cãi."
+        },
+        {
+          "meaning_vi": "thăm",
+          "example_en": "The winner was chosen by lots.",
+          "example_vi": "Người thắng cuộc được chọn bằng cách rút thăm."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "I have lots of work to do today.",
+          "example_vi": "Tôi có rất nhiều việc phải làm hôm nay."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "There are lots of people at the park.",
+          "example_vi": "Có rất nhiều người ở công viên."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "She has lots of friends.",
+          "example_vi": "Cô ấy có rất nhiều bạn bè."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "We have lots of time before the train leaves.",
+          "example_vi": "Chúng tôi có rất nhiều thời gian trước khi tàu chạy."
+        },
+        {
+          "meaning_vi": "thăm",
+          "example_en": "The lots were prepared for the game.",
+          "example_vi": "Các lá thăm đã được chuẩn bị cho trò chơi."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "He bought lots of books.",
+          "example_vi": "Anh ấy đã mua rất nhiều sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ phó từ sang danh từ. Giữ 2 nghĩa phổ biến nhất và phân bổ ví dụ.",
+      "word": "lot",
+      "normalized_word": "lot",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "We decided to cast lots to choose the winner.",
+      "example_vi_clean": "Chúng tôi quyết định rút thăm để chọn người chiến thắng."
+    },
+    {
+      "id": 24489,
+      "quiz_meaning_vi": "lòng yêu",
+      "meaning_vi_clean": "lòng yêu; yêu",
+      "examples_clean": [
+        {
+          "meaning_vi": "lòng yêu",
+          "example_en": "She has a great lòng yêu for her children.",
+          "example_vi": "Cô ấy có lòng yêu thương bao la dành cho các con."
+        },
+        {
+          "meaning_vi": "lòng yêu",
+          "example_en": "His lòng yêu for music is well known.",
+          "example_vi": "Lòng yêu âm nhạc của anh ấy rất nổi tiếng."
+        },
+        {
+          "meaning_vi": "lòng yêu",
+          "example_en": "The lòng yêu of a mother is unconditional.",
+          "example_vi": "Lòng yêu thương của người mẹ là vô điều kiện."
+        },
+        {
+          "meaning_vi": "lòng yêu",
+          "example_en": "He showed his lòng yêu through his actions.",
+          "example_vi": "Anh ấy thể hiện lòng yêu thương qua hành động."
+        },
+        {
+          "meaning_vi": "yêu",
+          "example_en": "I love my family very much.",
+          "example_vi": "Tôi yêu gia đình mình rất nhiều."
+        },
+        {
+          "meaning_vi": "yêu",
+          "example_en": "They love each other deeply.",
+          "example_vi": "Họ yêu nhau sâu sắc."
+        },
+        {
+          "meaning_vi": "yêu",
+          "example_en": "Do you love your job?",
+          "example_vi": "Bạn có yêu công việc của mình không?"
+        },
+        {
+          "meaning_vi": "yêu",
+          "example_en": "She loves reading books in her free time.",
+          "example_vi": "Cô ấy yêu việc đọc sách vào thời gian rảnh."
+        },
+        {
+          "meaning_vi": "lòng yêu",
+          "example_en": "The lòng yêu for country is important.",
+          "example_vi": "Lòng yêu nước là rất quan trọng."
+        },
+        {
+          "meaning_vi": "yêu",
+          "example_en": "I love spending time with my friends.",
+          "example_vi": "Tôi yêu việc dành thời gian cho bạn bè."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Giữ 2 nghĩa phổ biến nhất và phân bổ ví dụ.",
+      "word": "love",
+      "normalized_word": "love",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a great lòng yêu for her children.",
+      "example_vi_clean": "Cô ấy có lòng yêu thương bao la dành cho các con."
+    },
+    {
+      "id": 24490,
+      "quiz_meaning_vi": "đẹp đẽ",
+      "meaning_vi_clean": "đẹp đẽ; thú vị",
+      "examples_clean": [
+        {
+          "meaning_vi": "đẹp đẽ",
+          "example_en": "It is a lovely day today.",
+          "example_vi": "Hôm nay là một ngày đẹp đẽ."
+        },
+        {
+          "meaning_vi": "đẹp đẽ",
+          "example_en": "She wore a lovely dress to the party.",
+          "example_vi": "Cô ấy mặc một chiếc váy đẹp đẽ đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "đẹp đẽ",
+          "example_en": "The garden looks lovely in the spring.",
+          "example_vi": "Khu vườn trông thật đẹp đẽ vào mùa xuân."
+        },
+        {
+          "meaning_vi": "đẹp đẽ",
+          "example_en": "They have a lovely home.",
+          "example_vi": "Họ có một ngôi nhà đẹp đẽ."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "We had a lovely time at the beach.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian thú vị ở bãi biển."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "It was a lovely surprise to see you.",
+          "example_vi": "Thật là một bất ngờ thú vị khi gặp bạn."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "We had a lovely chat over coffee.",
+          "example_vi": "Chúng tôi đã có một cuộc trò chuyện thú vị bên tách cà phê."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "The music made for a lovely evening.",
+          "example_vi": "Âm nhạc đã tạo nên một buổi tối thú vị."
+        },
+        {
+          "meaning_vi": "đẹp đẽ",
+          "example_en": "What a lovely flower!",
+          "example_vi": "Một bông hoa thật đẹp đẽ!"
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "It would be lovely to visit you again.",
+          "example_vi": "Sẽ thật thú vị nếu được đến thăm bạn lần nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ. Giữ 2 nghĩa phổ biến nhất và phân bổ ví dụ.",
+      "word": "lovely",
+      "normalized_word": "lovely",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is a lovely day today.",
+      "example_vi_clean": "Hôm nay là một ngày đẹp đẽ."
+    }
+  ]
+}

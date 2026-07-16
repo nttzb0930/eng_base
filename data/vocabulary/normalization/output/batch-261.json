@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26601,
+      "quiz_meaning_vi": "đặc trưng",
+      "meaning_vi_clean": "đặc trưng; đặc tính",
+      "examples_clean": [
+        {
+          "meaning_vi": "đặc trưng",
+          "example_en": "A friendly smile is a characteristic of her personality.",
+          "example_vi": "Nụ cười thân thiện là một đặc trưng trong tính cách của cô ấy."
+        },
+        {
+          "meaning_vi": "đặc trưng",
+          "example_en": "This building has all the characteristic features of the colonial style.",
+          "example_vi": "Tòa nhà này có tất cả các nét đặc trưng của phong cách thuộc địa."
+        },
+        {
+          "meaning_vi": "đặc trưng",
+          "example_en": "It is characteristic of him to arrive late for meetings.",
+          "example_vi": "Việc đến họp muộn là một điều đặc trưng ở anh ấy."
+        },
+        {
+          "meaning_vi": "đặc trưng",
+          "example_en": "The bright colors are characteristic of this artist's work.",
+          "example_vi": "Những màu sắc tươi sáng là đặc trưng trong các tác phẩm của nghệ sĩ này."
+        },
+        {
+          "meaning_vi": "đặc tính",
+          "example_en": "One important characteristic of gold is that it does not rust.",
+          "example_vi": "Một đặc tính quan trọng của vàng là nó không bị gỉ."
+        },
+        {
+          "meaning_vi": "đặc tính",
+          "example_en": "The new material has the characteristic of being very lightweight.",
+          "example_vi": "Vật liệu mới có đặc tính là rất nhẹ."
+        },
+        {
+          "meaning_vi": "đặc tính",
+          "example_en": "We studied the physical characteristics of the soil samples.",
+          "example_vi": "Chúng tôi đã nghiên cứu các đặc tính vật lý của các mẫu đất."
+        },
+        {
+          "meaning_vi": "đặc tính",
+          "example_en": "Each species has its own unique biological characteristics.",
+          "example_vi": "Mỗi loài đều có những đặc tính sinh học riêng biệt."
+        },
+        {
+          "meaning_vi": "đặc tính",
+          "example_en": "The software has several advanced characteristics for data analysis.",
+          "example_vi": "Phần mềm này có một vài đặc tính nâng cao để phân tích dữ liệu."
+        },
+        {
+          "meaning_vi": "đặc tính",
+          "example_en": "Understanding the characteristics of the market is essential for success.",
+          "example_vi": "Hiểu rõ các đặc tính của thị trường là điều cần thiết để thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là adjective nhưng nghĩa lại là danh từ. Đã điều chỉnh nghĩa về dạng tính từ/danh từ phù hợp với từ vựng.",
+      "word": "characteristic",
+      "normalized_word": "characteristic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "A friendly smile is a characteristic of her personality.",
+      "example_vi_clean": "Nụ cười thân thiện là một đặc trưng trong tính cách của cô ấy."
+    },
+    {
+      "id": 26602,
+      "quiz_meaning_vi": "duyên dáng",
+      "meaning_vi_clean": "duyên dáng; quyến rũ",
+      "examples_clean": [
+        {
+          "meaning_vi": "duyên dáng",
+          "example_en": "She is a very charming woman with a lovely smile.",
+          "example_vi": "Cô ấy là một người phụ nữ rất duyên dáng với nụ cười đáng yêu."
+        },
+        {
+          "meaning_vi": "duyên dáng",
+          "example_en": "He gave a charming performance at the school concert.",
+          "example_vi": "Anh ấy đã có một màn trình diễn duyên dáng tại buổi hòa nhạc của trường."
+        },
+        {
+          "meaning_vi": "duyên dáng",
+          "example_en": "The hotel is located in a charming little village.",
+          "example_vi": "Khách sạn nằm ở một ngôi làng nhỏ duyên dáng."
+        },
+        {
+          "meaning_vi": "duyên dáng",
+          "example_en": "They live in a charming house by the river.",
+          "example_vi": "Họ sống trong một ngôi nhà duyên dáng bên bờ sông."
+        },
+        {
+          "meaning_vi": "quyến rũ",
+          "example_en": "He has a charming personality that attracts many friends.",
+          "example_vi": "Anh ấy có một tính cách quyến rũ thu hút nhiều bạn bè."
+        },
+        {
+          "meaning_vi": "quyến rũ",
+          "example_en": "The city has a charming atmosphere in the evening.",
+          "example_vi": "Thành phố có một bầu không khí quyến rũ vào buổi tối."
+        },
+        {
+          "meaning_vi": "quyến rũ",
+          "example_en": "She told a charming story to the children.",
+          "example_vi": "Cô ấy đã kể một câu chuyện đầy quyến rũ cho lũ trẻ."
+        },
+        {
+          "meaning_vi": "quyến rũ",
+          "example_en": "The garden is truly charming during the spring season.",
+          "example_vi": "Khu vườn thực sự quyến rũ trong suốt mùa xuân."
+        },
+        {
+          "meaning_vi": "quyến rũ",
+          "example_en": "He used his charming manners to win the crowd over.",
+          "example_vi": "Anh ấy đã dùng phong thái quyến rũ của mình để chinh phục đám đông."
+        },
+        {
+          "meaning_vi": "quyến rũ",
+          "example_en": "It was a charming evening spent with old friends.",
+          "example_vi": "Đó là một buổi tối quyến rũ dành cho những người bạn cũ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lại nghĩa cho phù hợp với từ loại tính từ.",
+      "word": "charming",
+      "normalized_word": "charming",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a very charming woman with a lovely smile.",
+      "example_vi_clean": "Cô ấy là một người phụ nữ rất duyên dáng với nụ cười đáng yêu."
+    },
+    {
+      "id": 26603,
+      "quiz_meaning_vi": "gian lận",
+      "meaning_vi_clean": "gian lận; lừa đảo",
+      "examples_clean": [
+        {
+          "meaning_vi": "gian lận",
+          "example_en": "He was caught cheating during the final examination.",
+          "example_vi": "Anh ta bị bắt quả tang đang gian lận trong kỳ thi cuối kỳ."
+        },
+        {
+          "meaning_vi": "gian lận",
+          "example_en": "Students who cheat will face serious consequences.",
+          "example_vi": "Những học sinh gian lận sẽ phải đối mặt với hậu quả nghiêm trọng."
+        },
+        {
+          "meaning_vi": "gian lận",
+          "example_en": "It is wrong to cheat on your taxes.",
+          "example_vi": "Gian lận thuế là một hành động sai trái."
+        },
+        {
+          "meaning_vi": "gian lận",
+          "example_en": "She never cheats when playing card games with friends.",
+          "example_vi": "Cô ấy không bao giờ gian lận khi chơi bài với bạn bè."
+        },
+        {
+          "meaning_vi": "lừa đảo",
+          "example_en": "He cheated his business partners out of their money.",
+          "example_vi": "Anh ta đã lừa đảo các đối tác kinh doanh của mình để lấy tiền."
+        },
+        {
+          "meaning_vi": "lừa đảo",
+          "example_en": "The company cheated customers by selling faulty products.",
+          "example_vi": "Công ty đã lừa đảo khách hàng bằng cách bán các sản phẩm lỗi."
+        },
+        {
+          "meaning_vi": "lừa đảo",
+          "example_en": "They felt cheated after discovering the truth about the deal.",
+          "example_vi": "Họ cảm thấy bị lừa đảo sau khi phát hiện sự thật về thỏa thuận."
+        },
+        {
+          "meaning_vi": "lừa đảo",
+          "example_en": "Don't let anyone cheat you with false promises.",
+          "example_vi": "Đừng để bất cứ ai lừa đảo bạn bằng những lời hứa hão huyền."
+        },
+        {
+          "meaning_vi": "lừa đảo",
+          "example_en": "He was accused of cheating investors in the project.",
+          "example_vi": "Anh ta bị cáo buộc lừa đảo các nhà đầu tư trong dự án."
+        },
+        {
+          "meaning_vi": "lừa đảo",
+          "example_en": "The scammer tried to cheat elderly people out of their savings.",
+          "example_vi": "Kẻ lừa đảo đã cố gắng lừa đảo người già để lấy tiền tiết kiệm của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa từ lóng và nghĩa không phổ biến, tập trung vào nghĩa động từ chính.",
+      "word": "cheat",
+      "normalized_word": "cheat",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He was caught cheating during the final examination.",
+      "example_vi_clean": "Anh ta bị bắt quả tang đang gian lận trong kỳ thi cuối kỳ."
+    },
+    {
+      "id": 26604,
+      "quiz_meaning_vi": "điểm kiểm tra",
+      "meaning_vi_clean": "điểm kiểm tra",
+      "examples_clean": [
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "All vehicles must stop at the security checkpoint.",
+          "example_vi": "Tất cả các phương tiện phải dừng lại tại điểm kiểm tra an ninh."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "We reached the first checkpoint after two hours of hiking.",
+          "example_vi": "Chúng tôi đã đến điểm kiểm tra đầu tiên sau hai giờ đi bộ đường dài."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "The soldiers guarded the checkpoint on the border.",
+          "example_vi": "Những người lính canh gác điểm kiểm tra ở biên giới."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "There is a checkpoint where you need to show your passport.",
+          "example_vi": "Có một điểm kiểm tra nơi bạn cần xuất trình hộ chiếu."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "The race has several checkpoints along the route.",
+          "example_vi": "Cuộc đua có vài điểm kiểm tra dọc theo lộ trình."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "We were delayed at the checkpoint for an hour.",
+          "example_vi": "Chúng tôi đã bị trì hoãn tại điểm kiểm tra trong một giờ."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "The police set up a checkpoint to catch drunk drivers.",
+          "example_vi": "Cảnh sát đã thiết lập một điểm kiểm tra để bắt những người lái xe say rượu."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "Make sure you pass every checkpoint to qualify.",
+          "example_vi": "Hãy chắc chắn rằng bạn vượt qua mọi điểm kiểm tra để đủ điều kiện."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "The checkpoint was closed due to the heavy snow.",
+          "example_vi": "Điểm kiểm tra đã bị đóng cửa do tuyết rơi dày."
+        },
+        {
+          "meaning_vi": "điểm kiểm tra",
+          "example_en": "He waited for his friends at the designated checkpoint.",
+          "example_vi": "Anh ấy đã đợi bạn bè tại điểm kiểm tra đã định."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ cho nghĩa duy nhất.",
+      "word": "checkpoint",
+      "normalized_word": "checkpoint",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "All vehicles must stop at the security checkpoint.",
+      "example_vi_clean": "Tất cả các phương tiện phải dừng lại tại điểm kiểm tra an ninh."
+    },
+    {
+      "id": 26605,
+      "quiz_meaning_vi": "táo tợn",
+      "meaning_vi_clean": "táo tợn; vô lễ",
+      "examples_clean": [
+        {
+          "meaning_vi": "táo tợn",
+          "example_en": "He made a cheeky request for more money.",
+          "example_vi": "Anh ta đã đưa ra một yêu cầu táo tợn về việc đòi thêm tiền."
+        },
+        {
+          "meaning_vi": "táo tợn",
+          "example_en": "She gave him a cheeky grin when she won the game.",
+          "example_vi": "Cô ấy nở một nụ cười táo tợn khi thắng trò chơi."
+        },
+        {
+          "meaning_vi": "táo tợn",
+          "example_en": "It was a cheeky move to take the last piece of cake.",
+          "example_vi": "Đó là một hành động táo tợn khi lấy miếng bánh cuối cùng."
+        },
+        {
+          "meaning_vi": "táo tợn",
+          "example_en": "He has a cheeky sense of humor that people enjoy.",
+          "example_vi": "Anh ấy có khiếu hài hước táo tợn mà mọi người rất thích."
+        },
+        {
+          "meaning_vi": "vô lễ",
+          "example_en": "Don't be so cheeky to your elders.",
+          "example_vi": "Đừng có vô lễ với người lớn tuổi như vậy."
+        },
+        {
+          "meaning_vi": "vô lễ",
+          "example_en": "The child was punished for his cheeky behavior in class.",
+          "example_vi": "Đứa trẻ đã bị phạt vì hành vi vô lễ trong lớp học."
+        },
+        {
+          "meaning_vi": "vô lễ",
+          "example_en": "She was fired for making cheeky comments to her boss.",
+          "example_vi": "Cô ấy đã bị sa thải vì đưa ra những bình luận vô lễ với sếp."
+        },
+        {
+          "meaning_vi": "vô lễ",
+          "example_en": "His cheeky attitude made the teacher very angry.",
+          "example_vi": "Thái độ vô lễ của cậu ấy làm giáo viên rất tức giận."
+        },
+        {
+          "meaning_vi": "vô lễ",
+          "example_en": "It is considered cheeky to interrupt someone while they are speaking.",
+          "example_vi": "Việc ngắt lời người khác khi họ đang nói bị coi là vô lễ."
+        },
+        {
+          "meaning_vi": "vô lễ",
+          "example_en": "She apologized for her cheeky remark during the meeting.",
+          "example_vi": "Cô ấy đã xin lỗi vì nhận xét vô lễ của mình trong cuộc họp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ và phân bổ nghĩa hợp lý.",
+      "word": "cheeky",
+      "normalized_word": "cheeky",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He made a cheeky request for more money.",
+      "example_vi_clean": "Anh ta đã đưa ra một yêu cầu táo tợn về việc đòi thêm tiền."
+    },
+    {
+      "id": 26606,
+      "quiz_meaning_vi": "vui vẻ",
+      "meaning_vi_clean": "vui vẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She greeted everyone cheerfully as she entered the room.",
+          "example_vi": "Cô ấy chào mọi người một cách vui vẻ khi bước vào phòng."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The children played cheerfully in the park all afternoon.",
+          "example_vi": "Lũ trẻ chơi đùa vui vẻ trong công viên suốt cả buổi chiều."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "He accepted the difficult task quite cheerfully.",
+          "example_vi": "Anh ấy đã chấp nhận nhiệm vụ khó khăn một cách khá vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "They chatted cheerfully about their upcoming vacation.",
+          "example_vi": "Họ trò chuyện vui vẻ về kỳ nghỉ sắp tới của mình."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The sun shone cheerfully through the window.",
+          "example_vi": "Ánh mặt trời chiếu rọi vui vẻ qua khung cửa sổ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She smiled cheerfully at the camera.",
+          "example_vi": "Cô ấy mỉm cười vui vẻ trước ống kính máy ảnh."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The team worked cheerfully to finish the project on time.",
+          "example_vi": "Cả nhóm làm việc vui vẻ để hoàn thành dự án đúng hạn."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "He whistled cheerfully while walking down the street.",
+          "example_vi": "Anh ấy huýt sáo vui vẻ khi đi bộ trên phố."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The birds sang cheerfully in the trees.",
+          "example_vi": "Những chú chim hót vui vẻ trên những tán cây."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She answered the phone cheerfully despite being busy.",
+          "example_vi": "Cô ấy trả lời điện thoại một cách vui vẻ mặc dù đang bận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ cho nghĩa duy nhất.",
+      "word": "cheerfully",
+      "normalized_word": "cheerfully",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "She greeted everyone cheerfully as she entered the room.",
+      "example_vi_clean": "Cô ấy chào mọi người một cách vui vẻ khi bước vào phòng."
+    },
+    {
+      "id": 26607,
+      "quiz_meaning_vi": "sự hoan hỉ",
+      "meaning_vi_clean": "sự hoan hỉ; sự vui vẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hoan hỉ",
+          "example_en": "Her cheerfulness brought joy to everyone in the office.",
+          "example_vi": "Sự hoan hỉ của cô ấy mang lại niềm vui cho mọi người trong văn phòng."
+        },
+        {
+          "meaning_vi": "sự hoan hỉ",
+          "example_en": "The cheerfulness of the celebration was contagious.",
+          "example_vi": "Sự hoan hỉ của buổi lễ có tính lan tỏa."
+        },
+        {
+          "meaning_vi": "sự hoan hỉ",
+          "example_en": "He is known for his constant cheerfulness.",
+          "example_vi": "Anh ấy nổi tiếng với sự hoan hỉ không đổi."
+        },
+        {
+          "meaning_vi": "sự hoan hỉ",
+          "example_en": "Despite the bad news, she maintained her cheerfulness.",
+          "example_vi": "Mặc dù có tin xấu, cô ấy vẫn giữ được sự hoan hỉ của mình."
+        },
+        {
+          "meaning_vi": "sự vui vẻ",
+          "example_en": "The cheerfulness of the room made it a pleasant place to work.",
+          "example_vi": "Sự vui vẻ của căn phòng khiến nó trở thành một nơi làm việc dễ chịu."
+        },
+        {
+          "meaning_vi": "sự vui vẻ",
+          "example_en": "We were impressed by the cheerfulness of the staff.",
+          "example_vi": "Chúng tôi rất ấn tượng bởi sự vui vẻ của các nhân viên."
+        },
+        {
+          "meaning_vi": "sự vui vẻ",
+          "example_en": "Her natural cheerfulness helps her deal with stress.",
+          "example_vi": "Sự vui vẻ tự nhiên giúp cô ấy đối phó với căng thẳng."
+        },
+        {
+          "meaning_vi": "sự vui vẻ",
+          "example_en": "The cheerfulness of the music lifted our spirits.",
+          "example_vi": "Sự vui vẻ của âm nhạc đã vực dậy tinh thần của chúng tôi."
+        },
+        {
+          "meaning_vi": "sự vui vẻ",
+          "example_en": "He greeted us with such cheerfulness that we felt welcome.",
+          "example_vi": "Anh ấy chào đón chúng tôi với sự vui vẻ đến mức chúng tôi cảm thấy được chào đón."
+        },
+        {
+          "meaning_vi": "sự vui vẻ",
+          "example_en": "The cheerfulness of the holiday season is wonderful.",
+          "example_vi": "Sự vui vẻ của mùa lễ hội thật tuyệt vời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã rút gọn nghĩa và bổ sung ví dụ.",
+      "word": "cheerfulness",
+      "normalized_word": "cheerfulness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Her cheerfulness brought joy to everyone in the office.",
+      "example_vi_clean": "Sự hoan hỉ của cô ấy mang lại niềm vui cho mọi người trong văn phòng."
+    },
+    {
+      "id": 26608,
+      "quiz_meaning_vi": "phép chữa hoá học",
+      "meaning_vi_clean": "phép chữa hoá học",
+      "examples_clean": [
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "She is undergoing chemotherapy for her illness.",
+          "example_vi": "Cô ấy đang trải qua phép chữa hoá học cho căn bệnh của mình."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "Chemotherapy can have many side effects on the body.",
+          "example_vi": "Phép chữa hoá học có thể có nhiều tác dụng phụ đối với cơ thể."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "The doctor recommended chemotherapy as the best treatment option.",
+          "example_vi": "Bác sĩ đã đề nghị phép chữa hoá học là lựa chọn điều trị tốt nhất."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "He felt very weak after his session of chemotherapy.",
+          "example_vi": "Anh ấy cảm thấy rất yếu sau buổi phép chữa hoá học của mình."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "Advances in chemotherapy have improved survival rates.",
+          "example_vi": "Những tiến bộ trong phép chữa hoá học đã cải thiện tỷ lệ sống sót."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "She had to take time off work for her chemotherapy.",
+          "example_vi": "Cô ấy phải nghỉ làm để thực hiện phép chữa hoá học."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "The hospital offers specialized chemotherapy services.",
+          "example_vi": "Bệnh viện cung cấp các dịch vụ phép chữa hoá học chuyên biệt."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "He is brave while facing his chemotherapy treatment.",
+          "example_vi": "Anh ấy rất dũng cảm khi đối mặt với quá trình phép chữa hoá học."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "The goal of chemotherapy is to destroy cancer cells.",
+          "example_vi": "Mục tiêu của phép chữa hoá học là tiêu diệt các tế bào ung thư."
+        },
+        {
+          "meaning_vi": "phép chữa hoá học",
+          "example_en": "She is responding well to the chemotherapy.",
+          "example_vi": "Cô ấy đang đáp ứng tốt với phép chữa hoá học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ cho nghĩa duy nhất.",
+      "word": "chemotherapy",
+      "normalized_word": "chemotherapy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is undergoing chemotherapy for her illness.",
+      "example_vi_clean": "Cô ấy đang trải qua phép chữa hoá học cho căn bệnh của mình."
+    },
+    {
+      "id": 26609,
+      "quiz_meaning_vi": "đỏ màu anh đào",
+      "meaning_vi_clean": "đỏ màu anh đào",
+      "examples_clean": [
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "She wore a beautiful cherry dress to the party.",
+          "example_vi": "Cô ấy mặc một chiếc váy màu đỏ anh đào tuyệt đẹp đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "The walls were painted a bright cherry color.",
+          "example_vi": "Những bức tường được sơn màu đỏ anh đào tươi sáng."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "He bought a cherry red sports car.",
+          "example_vi": "Anh ấy đã mua một chiếc xe thể thao màu đỏ anh đào."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "Her lips were a deep cherry shade.",
+          "example_vi": "Đôi môi cô ấy có màu đỏ anh đào đậm."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "The flowers had a lovely cherry hue.",
+          "example_vi": "Những bông hoa có sắc đỏ anh đào đáng yêu."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "She chose cherry lipstick for her wedding day.",
+          "example_vi": "Cô ấy đã chọn son môi màu đỏ anh đào cho ngày cưới của mình."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "The sunset had a cherry glow in the sky.",
+          "example_vi": "Hoàng hôn có một ánh đỏ anh đào trên bầu trời."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "He painted the wooden chair a cherry red.",
+          "example_vi": "Anh ấy đã sơn chiếc ghế gỗ màu đỏ anh đào."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "The scarf was a vibrant cherry color.",
+          "example_vi": "Chiếc khăn quàng cổ có màu đỏ anh đào rực rỡ."
+        },
+        {
+          "meaning_vi": "đỏ màu anh đào",
+          "example_en": "The curtains are a soft cherry shade.",
+          "example_vi": "Những tấm rèm có màu đỏ anh đào dịu nhẹ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ cho nghĩa duy nhất.",
+      "word": "cherry",
+      "normalized_word": "cherry",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She wore a beautiful cherry dress to the party.",
+      "example_vi_clean": "Cô ấy mặc một chiếc váy màu đỏ anh đào tuyệt đẹp đến bữa tiệc."
+    },
+    {
+      "id": 26610,
+      "quiz_meaning_vi": "nhai",
+      "meaning_vi_clean": "nhai; nghiền ngẫm",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhai",
+          "example_en": "You should chew your food thoroughly before swallowing.",
+          "example_vi": "Bạn nên nhai kỹ thức ăn trước khi nuốt."
+        },
+        {
+          "meaning_vi": "nhai",
+          "example_en": "He likes to chew gum while he works.",
+          "example_vi": "Anh ấy thích nhai kẹo cao su khi làm việc."
+        },
+        {
+          "meaning_vi": "nhai",
+          "example_en": "The dog was chewing on a bone in the yard.",
+          "example_vi": "Con chó đang nhai một khúc xương trong sân."
+        },
+        {
+          "meaning_vi": "nhai",
+          "example_en": "Make sure to chew the meat well.",
+          "example_vi": "Hãy chắc chắn nhai kỹ miếng thịt."
+        },
+        {
+          "meaning_vi": "nghiền ngẫm",
+          "example_en": "He sat there chewing on the idea for a long time.",
+          "example_vi": "Anh ấy ngồi đó nghiền ngẫm ý tưởng này trong một thời gian dài."
+        },
+        {
+          "meaning_vi": "nghiền ngẫm",
+          "example_en": "She chewed over the problem before making a decision.",
+          "example_vi": "Cô ấy đã nghiền ngẫm vấn đề trước khi đưa ra quyết định."
+        },
+        {
+          "meaning_vi": "nghiền ngẫm",
+          "example_en": "He needs time to chew on the proposal.",
+          "example_vi": "Anh ấy cần thời gian để nghiền ngẫm bản đề xuất."
+        },
+        {
+          "meaning_vi": "nghiền ngẫm",
+          "example_en": "They spent the evening chewing over the events of the day.",
+          "example_vi": "Họ dành cả buổi tối để nghiền ngẫm về những sự kiện trong ngày."
+        },
+        {
+          "meaning_vi": "nghiền ngẫm",
+          "example_en": "I will chew on your suggestion and let you know.",
+          "example_vi": "Tôi sẽ nghiền ngẫm gợi ý của bạn và báo lại cho bạn."
+        },
+        {
+          "meaning_vi": "nghiền ngẫm",
+          "example_en": "She is still chewing on the implications of the news.",
+          "example_vi": "Cô ấy vẫn đang nghiền ngẫm về những hệ quả của tin tức đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa từ lóng và nghĩa danh từ không cần thiết, tập trung vào nghĩa động từ.",
+      "word": "chew",
+      "normalized_word": "chew",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You should chew your food thoroughly before swallowing.",
+      "example_vi_clean": "Bạn nên nhai kỹ thức ăn trước khi nuốt."
+    }
+  ]
+}

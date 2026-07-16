@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-207",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26061,
+      "word": "equal",
+      "normalized_word": "equal",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'i:kwəl/",
+      "primary_meaning_vi": "ngang",
+      "meaning_vi": "ngang, bằng; ngang sức (cuộc đấu...); đủ sức, đủ khả năng; đáp ứng được; bình đẳng; người ngang hàng, người ngang tài ngang sức; vật ngang nhau, vật bằng nhau; bằng, ngang, sánh kịp, bì kịp",
+      "example_en": "This beer has no equal.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Two plus two equals four.",
+          "example_vi": null
+        },
+        {
+          "example_en": "David equaled the water levels of the bottles, so they now both contain exactly 1 liter.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Losing this deal equals losing your job.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26062,
+      "word": "equality",
+      "normalized_word": "equality",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i:kwɔliti/",
+      "primary_meaning_vi": "tính bằng",
+      "meaning_vi": "tính bằng, tính ngang bằng; sự bình đẳng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26063,
+      "word": "equally",
+      "normalized_word": "equally",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'i:kwəli /",
+      "primary_meaning_vi": "bằng nhau",
+      "meaning_vi": "bằng nhau, ngang nhau, như nhau; đều",
+      "example_en": "All citizens are equally taxed.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The gas stations are equally far from the highway.",
+          "example_vi": null
+        },
+        {
+          "example_en": "John suffered setbacks at his job. Equally, Frank's business slowed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26064,
+      "word": "equipment",
+      "normalized_word": "equipment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i'kwipmənt/",
+      "primary_meaning_vi": "sự trang bị",
+      "meaning_vi": "sự trang bị; đồ trang bị, thiết bị, dụng cụ, đồ dùng cần thiết (cho một cuộc đi, cho một nhà máy...); những phương tiện vận tải để phân biệt với các loại tài sản khác trong ngành vận tải)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26065,
+      "word": "era",
+      "normalized_word": "era",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'iərə/",
+      "primary_meaning_vi": "thời đại",
+      "meaning_vi": "thời đại, kỷ nguyên; đại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26066,
+      "word": "essence",
+      "normalized_word": "essence",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'esns/",
+      "primary_meaning_vi": "tính chất (nghĩa đen) & (nghĩa bóng))",
+      "meaning_vi": "tính chất (nghĩa đen) & (nghĩa bóng)); bản chất, thực chất; vật tồn tại; thực tế (tinh thần vật chất); nước hoa",
+      "example_en": "essence of Jojoba",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "vanilla essence",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26067,
+      "word": "essential",
+      "normalized_word": "essential",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/i'senʃəl/",
+      "primary_meaning_vi": "bản chất",
+      "meaning_vi": "bản chất, (thuộc) thực chất; cần thiết, thiết yếu, cốt yếu, chủ yếu; tinh chất, tinh; yếu tố cần thiết",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26068,
+      "word": "establishment",
+      "normalized_word": "establishment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/is'tæbliʃmənt/",
+      "primary_meaning_vi": "sự thành lập",
+      "meaning_vi": "sự thành lập, sự thiết lập, sự kiến lập; sự đặt (ai vào một địa vị); sự chứng minh, sự xác minh (sự kiện...); sự đem vào, sự đưa vào (thói quen, sự tín ngưỡng...); sự chính thức hoá (nhà thờ); tổ chức (quân đội, hải quân, hành chính...); cơ sở (kinh doanh); số người hầu; quân số, lực lượng; cơ ngơi của vợ lẽ con riêng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26069,
+      "word": "eternal",
+      "normalized_word": "eternal",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/i:'tə:nl/",
+      "primary_meaning_vi": "tồn tại",
+      "meaning_vi": "tồn tại, đời đời, vĩnh viễn, bất diệt; không ngừng, thường xuyên; thượng đế; triangle",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26070,
+      "word": "eternity",
+      "normalized_word": "eternity",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i:'tə:niti/",
+      "primary_meaning_vi": "tính vĩnh viễn",
+      "meaning_vi": "tính vĩnh viễn, tính bất diệt; ngàn xưa, thời gian vô tận (trong tương lai); tiếng tăm muôn đời; đời sau; những sự thật bất di bất dịch",
+      "example_en": "It's been an eternity since we last saw each other.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26421,
+      "quiz_meaning_vi": "làm ngạc nhiên",
+      "meaning_vi_clean": "làm ngạc nhiên",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The news of his sudden resignation did not astonish me.",
+          "example_vi": "Tin tức về việc ông ấy từ chức đột ngột không làm tôi ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "Her ability to speak five languages continues to astonish her colleagues.",
+          "example_vi": "Khả năng nói năm ngôn ngữ của cô ấy vẫn tiếp tục làm các đồng nghiệp ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "It will astonish you to learn how much he has changed.",
+          "example_vi": "Bạn sẽ ngạc nhiên khi biết anh ấy đã thay đổi nhiều như thế nào."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The magician's final trick never fails to astonish the audience.",
+          "example_vi": "Màn ảo thuật cuối cùng của nhà ảo thuật luôn làm khán giả ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "His rapid progress in music began to astonish his teachers.",
+          "example_vi": "Sự tiến bộ nhanh chóng của anh ấy trong âm nhạc bắt đầu làm các giáo viên ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The sheer scale of the project continues to astonish experts.",
+          "example_vi": "Quy mô khổng lồ của dự án vẫn tiếp tục làm các chuyên gia ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "I was astonished to see how fast the city had grown.",
+          "example_vi": "Tôi đã rất ngạc nhiên khi thấy thành phố đã phát triển nhanh như thế nào."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The beauty of the landscape will astonish any visitor.",
+          "example_vi": "Vẻ đẹp của phong cảnh sẽ làm bất kỳ du khách nào cũng phải ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "She managed to astonish everyone with her bold decision.",
+          "example_vi": "Cô ấy đã làm mọi người ngạc nhiên với quyết định táo bạo của mình."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The speed of the new computer will astonish you.",
+          "example_vi": "Tốc độ của chiếc máy tính mới sẽ làm bạn ngạc nhiên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa nghĩa làm ngạc nhiên.",
+      "word": "astonish",
+      "normalized_word": "astonish",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The news of his sudden resignation did not astonish me.",
+      "example_vi_clean": "Tin tức về việc ông ấy từ chức đột ngột không làm tôi ngạc nhiên."
+    },
+    {
+      "id": 26422,
+      "quiz_meaning_vi": "ngạc nhiên",
+      "meaning_vi_clean": "ngạc nhiên; kinh ngạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngạc nhiên",
+          "example_en": "I was astonished at the news of his promotion.",
+          "example_vi": "Tôi đã rất ngạc nhiên trước tin tức về việc anh ấy được thăng chức."
+        },
+        {
+          "meaning_vi": "ngạc nhiên",
+          "example_en": "She looked astonished when she saw the surprise party.",
+          "example_vi": "Cô ấy trông rất ngạc nhiên khi thấy bữa tiệc bất ngờ."
+        },
+        {
+          "meaning_vi": "ngạc nhiên",
+          "example_en": "He was astonished to find his old friend at the airport.",
+          "example_vi": "Anh ấy đã rất ngạc nhiên khi thấy người bạn cũ của mình ở sân bay."
+        },
+        {
+          "meaning_vi": "ngạc nhiên",
+          "example_en": "The team was astonished by the sudden change in plans.",
+          "example_vi": "Cả đội đã rất ngạc nhiên trước sự thay đổi đột ngột trong kế hoạch."
+        },
+        {
+          "meaning_vi": "kinh ngạc",
+          "example_en": "We were astonished by the sheer size of the ancient monument.",
+          "example_vi": "Chúng tôi đã kinh ngạc trước kích thước khổng lồ của di tích cổ."
+        },
+        {
+          "meaning_vi": "kinh ngạc",
+          "example_en": "The audience was astonished by her incredible vocal range.",
+          "example_vi": "Khán giả đã kinh ngạc trước quãng giọng đáng kinh ngạc của cô ấy."
+        },
+        {
+          "meaning_vi": "kinh ngạc",
+          "example_en": "He was astonished to discover the hidden treasure in the attic.",
+          "example_vi": "Anh ấy đã kinh ngạc khi phát hiện ra kho báu ẩn giấu trên gác mái."
+        },
+        {
+          "meaning_vi": "kinh ngạc",
+          "example_en": "They were astonished at how much the city had changed.",
+          "example_vi": "Họ đã kinh ngạc trước việc thành phố đã thay đổi nhiều như thế nào."
+        },
+        {
+          "meaning_vi": "kinh ngạc",
+          "example_en": "I was astonished to hear about his remarkable achievement.",
+          "example_vi": "Tôi đã kinh ngạc khi nghe về thành tựu đáng chú ý của anh ấy."
+        },
+        {
+          "meaning_vi": "kinh ngạc",
+          "example_en": "She was astonished by the kindness of the strangers.",
+          "example_vi": "Cô ấy đã kinh ngạc trước lòng tốt của những người lạ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho các nghĩa ngạc nhiên và kinh ngạc.",
+      "word": "astonished",
+      "normalized_word": "astonished",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I was astonished at the news of his promotion.",
+      "example_vi_clean": "Tôi đã rất ngạc nhiên trước tin tức về việc anh ấy được thăng chức."
+    },
+    {
+      "id": 26423,
+      "quiz_meaning_vi": "làm ngạc nhiên",
+      "meaning_vi_clean": "làm ngạc nhiên; lạ lùng; kinh dị",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The speed of his recovery was truly astonishing.",
+          "example_vi": "Tốc độ hồi phục của anh ấy thực sự làm ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "It is astonishing how much she has learned in one year.",
+          "example_vi": "Thật làm ngạc nhiên khi thấy cô ấy đã học được bao nhiêu trong một năm."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "The results of the experiment were quite astonishing.",
+          "example_vi": "Kết quả của cuộc thí nghiệm khá làm ngạc nhiên."
+        },
+        {
+          "meaning_vi": "làm ngạc nhiên",
+          "example_en": "There was an astonishing increase in sales this quarter.",
+          "example_vi": "Có một sự gia tăng làm ngạc nhiên về doanh số trong quý này."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "He told an astonishing story about his travels in the desert.",
+          "example_vi": "Anh ấy đã kể một câu chuyện lạ lùng về những chuyến đi của mình trên sa mạc."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "It is an astonishing coincidence that we met here.",
+          "example_vi": "Thật là một sự trùng hợp lạ lùng khi chúng ta gặp nhau ở đây."
+        },
+        {
+          "meaning_vi": "lạ lùng",
+          "example_en": "The plant has an astonishing ability to survive in dry conditions.",
+          "example_vi": "Loài cây này có khả năng lạ lùng để tồn tại trong điều kiện khô hạn."
+        },
+        {
+          "meaning_vi": "kinh dị",
+          "example_en": "The conditions in the prison were truly astonishing.",
+          "example_vi": "Các điều kiện trong nhà tù thực sự kinh dị."
+        },
+        {
+          "meaning_vi": "kinh dị",
+          "example_en": "The level of pollution in the river is astonishing.",
+          "example_vi": "Mức độ ô nhiễm trên con sông thật kinh dị."
+        },
+        {
+          "meaning_vi": "kinh dị",
+          "example_en": "The amount of waste produced by the factory is astonishing.",
+          "example_vi": "Lượng chất thải do nhà máy tạo ra thật kinh dị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho các nghĩa làm ngạc nhiên, lạ lùng và kinh dị.",
+      "word": "astonishing",
+      "normalized_word": "astonishing",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The speed of his recovery was truly astonishing.",
+      "example_vi_clean": "Tốc độ hồi phục của anh ấy thực sự làm ngạc nhiên."
+    },
+    {
+      "id": 26424,
+      "quiz_meaning_vi": "sự ngạc nhiên",
+      "meaning_vi_clean": "sự ngạc nhiên",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "To my astonishment, he agreed to the proposal immediately.",
+          "example_vi": "Trước sự ngạc nhiên của tôi, anh ấy đã đồng ý với đề xuất ngay lập tức."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "She stared at the gift in complete astonishment.",
+          "example_vi": "Cô ấy nhìn món quà với sự ngạc nhiên tột độ."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "The crowd watched in astonishment as the building collapsed.",
+          "example_vi": "Đám đông nhìn trong sự ngạc nhiên khi tòa nhà sụp đổ."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "He expressed his astonishment at the high cost of living.",
+          "example_vi": "Anh ấy bày tỏ sự ngạc nhiên của mình trước chi phí sinh hoạt đắt đỏ."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "Much to our astonishment, the team won the championship.",
+          "example_vi": "Trước sự ngạc nhiên lớn của chúng tôi, đội đã giành chức vô địch."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "She could not hide her astonishment when she heard the news.",
+          "example_vi": "Cô ấy không thể giấu được sự ngạc nhiên khi nghe tin tức."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "The discovery was met with great astonishment by the scientific community.",
+          "example_vi": "Khám phá này đã được cộng đồng khoa học đón nhận với sự ngạc nhiên lớn."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "He looked at her with pure astonishment.",
+          "example_vi": "Anh ấy nhìn cô ấy với sự ngạc nhiên thuần túy."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "The news was received with astonishment by everyone present.",
+          "example_vi": "Tin tức đã được mọi người có mặt đón nhận với sự ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự ngạc nhiên",
+          "example_en": "I watched in astonishment as the magician performed his trick.",
+          "example_vi": "Tôi đã nhìn trong sự ngạc nhiên khi nhà ảo thuật thực hiện trò của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho nghĩa sự ngạc nhiên.",
+      "word": "astonishment",
+      "normalized_word": "astonishment",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "To my astonishment, he agreed to the proposal immediately.",
+      "example_vi_clean": "Trước sự ngạc nhiên của tôi, anh ấy đã đồng ý với đề xuất ngay lập tức."
+    },
+    {
+      "id": 26425,
+      "quiz_meaning_vi": "thiên văn học",
+      "meaning_vi_clean": "thiên văn học",
+      "examples_clean": [
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "He has a deep interest in astronomy and space exploration.",
+          "example_vi": "Anh ấy có niềm đam mê sâu sắc với thiên văn học và khám phá không gian."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "Astronomy is the study of stars, planets, and the universe.",
+          "example_vi": "Thiên văn học là môn nghiên cứu về các ngôi sao, hành tinh và vũ trụ."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "She decided to major in astronomy at the university.",
+          "example_vi": "Cô ấy quyết định theo học chuyên ngành thiên văn học tại trường đại học."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "Modern astronomy relies heavily on advanced technology.",
+          "example_vi": "Thiên văn học hiện đại dựa rất nhiều vào công nghệ tiên tiến."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "He spends his nights studying astronomy with his telescope.",
+          "example_vi": "Anh ấy dành những đêm của mình để nghiên cứu thiên văn học với chiếc kính thiên văn."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "The club organizes weekly meetings to discuss astronomy.",
+          "example_vi": "Câu lạc bộ tổ chức các buổi họp hàng tuần để thảo luận về thiên văn học."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "Astronomy has helped us understand the origins of the universe.",
+          "example_vi": "Thiên văn học đã giúp chúng ta hiểu về nguồn gốc của vũ trụ."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "Many ancient civilizations were skilled in astronomy.",
+          "example_vi": "Nhiều nền văn minh cổ đại rất giỏi về thiên văn học."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "She wrote a book about the history of astronomy.",
+          "example_vi": "Cô ấy đã viết một cuốn sách về lịch sử của thiên văn học."
+        },
+        {
+          "meaning_vi": "thiên văn học",
+          "example_en": "The observatory is a great place to learn about astronomy.",
+          "example_vi": "Đài thiên văn là một nơi tuyệt vời để tìm hiểu về thiên văn học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho nghĩa thiên văn học.",
+      "word": "astronomy",
+      "normalized_word": "astronomy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has a deep interest in astronomy and space exploration.",
+      "example_vi_clean": "Anh ấy có niềm đam mê sâu sắc với thiên văn học và khám phá không gian."
+    },
+    {
+      "id": 26426,
+      "quiz_meaning_vi": "điền kinh",
+      "meaning_vi_clean": "điền kinh; thể thao",
+      "examples_clean": [
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "She is a talented athlete who excels in track and field athletics.",
+          "example_vi": "Cô ấy là một vận động viên tài năng, người xuất sắc trong môn điền kinh."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "The school has a strong program for athletics.",
+          "example_vi": "Trường có một chương trình mạnh về điền kinh."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "He won several medals in the national athletics competition.",
+          "example_vi": "Anh ấy đã giành được nhiều huy chương trong cuộc thi điền kinh quốc gia."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "Athletics requires both physical strength and mental discipline.",
+          "example_vi": "Điền kinh đòi hỏi cả sức mạnh thể chất và kỷ luật tinh thần."
+        },
+        {
+          "meaning_vi": "thể thao",
+          "example_en": "The university provides various facilities for student athletics.",
+          "example_vi": "Trường đại học cung cấp nhiều cơ sở vật chất cho các hoạt động thể thao của sinh viên."
+        },
+        {
+          "meaning_vi": "thể thao",
+          "example_en": "He has always been interested in competitive athletics.",
+          "example_vi": "Anh ấy luôn quan tâm đến các môn thể thao cạnh tranh."
+        },
+        {
+          "meaning_vi": "thể thao",
+          "example_en": "The school board decided to increase funding for athletics.",
+          "example_vi": "Hội đồng trường quyết định tăng ngân sách cho các hoạt động thể thao."
+        },
+        {
+          "meaning_vi": "thể thao",
+          "example_en": "Participation in athletics helps students stay healthy.",
+          "example_vi": "Tham gia vào các hoạt động thể thao giúp học sinh giữ gìn sức khỏe."
+        },
+        {
+          "meaning_vi": "thể thao",
+          "example_en": "She is the director of the department of athletics.",
+          "example_vi": "Cô ấy là giám đốc của bộ phận thể thao."
+        },
+        {
+          "meaning_vi": "thể thao",
+          "example_en": "They are promoting athletics among the youth.",
+          "example_vi": "Họ đang thúc đẩy các hoạt động thể thao trong giới trẻ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho các nghĩa điền kinh và thể thao.",
+      "word": "athletics",
+      "normalized_word": "athletics",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is a talented athlete who excels in track and field athletics.",
+      "example_vi_clean": "Cô ấy là một vận động viên tài năng, người xuất sắc trong môn điền kinh."
+    },
+    {
+      "id": 26427,
+      "quiz_meaning_vi": "gắn bó",
+      "meaning_vi_clean": "gắn bó",
+      "examples_clean": [
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "She is very attached to her family.",
+          "example_vi": "Cô ấy rất gắn bó với gia đình mình."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "He has become very attached to his new home.",
+          "example_vi": "Anh ấy đã trở nên rất gắn bó với ngôi nhà mới của mình."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "Children often get attached to their toys.",
+          "example_vi": "Trẻ em thường trở nên gắn bó với đồ chơi của chúng."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "It is hard to leave a place you are so attached to.",
+          "example_vi": "Thật khó để rời bỏ một nơi mà bạn rất gắn bó."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "They are deeply attached to their cultural traditions.",
+          "example_vi": "Họ rất gắn bó với các truyền thống văn hóa của mình."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "She is attached to her job and does not want to leave.",
+          "example_vi": "Cô ấy rất gắn bó với công việc của mình và không muốn rời đi."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "He is very attached to his pet dog.",
+          "example_vi": "Anh ấy rất gắn bó với chú chó cưng của mình."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "We are all attached to the memories of our childhood.",
+          "example_vi": "Tất cả chúng ta đều gắn bó với những kỷ niệm thời thơ ấu."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "She is attached to the idea of living in the countryside.",
+          "example_vi": "Cô ấy rất gắn bó với ý tưởng sống ở vùng nông thôn."
+        },
+        {
+          "meaning_vi": "gắn bó",
+          "example_en": "He is attached to his old friends from school.",
+          "example_vi": "Anh ấy rất gắn bó với những người bạn cũ từ thời đi học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho nghĩa gắn bó.",
+      "word": "attached",
+      "normalized_word": "attached",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is very attached to her family.",
+      "example_vi_clean": "Cô ấy rất gắn bó với gia đình mình."
+    },
+    {
+      "id": 26428,
+      "quiz_meaning_vi": "có thể đạt tới được",
+      "meaning_vi_clean": "có thể đạt tới được",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "The goal is ambitious but attainable.",
+          "example_vi": "Mục tiêu này đầy tham vọng nhưng có thể đạt tới được."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "We need to set attainable targets for the team.",
+          "example_vi": "Chúng ta cần đặt ra những mục tiêu có thể đạt tới được cho cả đội."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "With hard work, success is attainable.",
+          "example_vi": "Với sự chăm chỉ, thành công là điều có thể đạt tới được."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "The standard of living is attainable for most people.",
+          "example_vi": "Mức sống này là điều có thể đạt tới được đối với hầu hết mọi người."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "Is this level of performance really attainable?",
+          "example_vi": "Mức độ hiệu suất này có thực sự có thể đạt tới được không?"
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "They have set an attainable deadline for the project.",
+          "example_vi": "Họ đã đặt ra một thời hạn có thể đạt tới được cho dự án."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "Peace is an attainable goal if both sides cooperate.",
+          "example_vi": "Hòa bình là một mục tiêu có thể đạt tới được nếu cả hai bên hợp tác."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "The dream of owning a house is still attainable.",
+          "example_vi": "Giấc mơ sở hữu một ngôi nhà vẫn là điều có thể đạt tới được."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "We must ensure that our plans are attainable.",
+          "example_vi": "Chúng ta phải đảm bảo rằng các kế hoạch của mình là có thể đạt tới được."
+        },
+        {
+          "meaning_vi": "có thể đạt tới được",
+          "example_en": "The results are attainable within a short period.",
+          "example_vi": "Các kết quả này có thể đạt tới được trong một khoảng thời gian ngắn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho nghĩa có thể đạt tới được.",
+      "word": "attainable",
+      "normalized_word": "attainable",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The goal is ambitious but attainable.",
+      "example_vi_clean": "Mục tiêu này đầy tham vọng nhưng có thể đạt tới được."
+    },
+    {
+      "id": 26429,
+      "quiz_meaning_vi": "sự đạt được",
+      "meaning_vi_clean": "sự đạt được; kiến thức; tài năng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đạt được",
+          "example_en": "The attainment of his goals took many years of hard work.",
+          "example_vi": "Sự đạt được các mục tiêu của anh ấy đã mất nhiều năm làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "sự đạt được",
+          "example_en": "The attainment of peace is the primary objective.",
+          "example_vi": "Sự đạt được hòa bình là mục tiêu chính."
+        },
+        {
+          "meaning_vi": "sự đạt được",
+          "example_en": "She is focused on the attainment of her academic qualifications.",
+          "example_vi": "Cô ấy tập trung vào sự đạt được các bằng cấp học thuật của mình."
+        },
+        {
+          "meaning_vi": "sự đạt được",
+          "example_en": "The attainment of high standards is essential for the company.",
+          "example_vi": "Sự đạt được các tiêu chuẩn cao là điều cần thiết cho công ty."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "He is a man of great intellectual attainment.",
+          "example_vi": "Anh ấy là một người có kiến thức uyên bác."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "Her academic attainments are truly impressive.",
+          "example_vi": "Những kiến thức học thuật của cô ấy thực sự ấn tượng."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "He has many attainments in the field of science.",
+          "example_vi": "Anh ấy có nhiều kiến thức trong lĩnh vực khoa học."
+        },
+        {
+          "meaning_vi": "tài năng",
+          "example_en": "She has many musical attainments.",
+          "example_vi": "Cô ấy có nhiều tài năng âm nhạc."
+        },
+        {
+          "meaning_vi": "tài năng",
+          "example_en": "His artistic attainments are recognized by everyone.",
+          "example_vi": "Những tài năng nghệ thuật của anh ấy được mọi người công nhận."
+        },
+        {
+          "meaning_vi": "tài năng",
+          "example_en": "She showed great attainment in her chosen profession.",
+          "example_vi": "Cô ấy đã thể hiện tài năng tuyệt vời trong nghề nghiệp mình đã chọn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho các nghĩa sự đạt được, kiến thức và tài năng.",
+      "word": "attainment",
+      "normalized_word": "attainment",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The attainment of his goals took many years of hard work.",
+      "example_vi_clean": "Sự đạt được các mục tiêu của anh ấy đã mất nhiều năm làm việc chăm chỉ."
+    },
+    {
+      "id": 26430,
+      "quiz_meaning_vi": "sự dự",
+      "meaning_vi_clean": "sự dự; số người dự; sự phục vụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự dự",
+          "example_en": "Attendance at the lecture is mandatory for all students.",
+          "example_vi": "Sự dự buổi giảng là bắt buộc đối với tất cả sinh viên."
+        },
+        {
+          "meaning_vi": "sự dự",
+          "example_en": "Please confirm your attendance by Friday.",
+          "example_vi": "Vui lòng xác nhận sự dự của bạn trước thứ Sáu."
+        },
+        {
+          "meaning_vi": "sự dự",
+          "example_en": "Regular attendance is important for academic success.",
+          "example_vi": "Sự dự đều đặn là quan trọng cho thành công trong học tập."
+        },
+        {
+          "meaning_vi": "sự dự",
+          "example_en": "He was rewarded for his perfect attendance.",
+          "example_vi": "Anh ấy đã được khen thưởng vì sự dự đầy đủ của mình."
+        },
+        {
+          "meaning_vi": "số người dự",
+          "example_en": "The attendance at the concert was lower than expected.",
+          "example_vi": "Số người dự buổi hòa nhạc thấp hơn dự kiến."
+        },
+        {
+          "meaning_vi": "số người dự",
+          "example_en": "The event had a record attendance this year.",
+          "example_vi": "Sự kiện đã có số người dự kỷ lục trong năm nay."
+        },
+        {
+          "meaning_vi": "số người dự",
+          "example_en": "The attendance at the meeting was quite small.",
+          "example_vi": "Số người dự cuộc họp khá ít."
+        },
+        {
+          "meaning_vi": "sự phục vụ",
+          "example_en": "The doctor is in constant attendance on the patient.",
+          "example_vi": "Bác sĩ luôn túc trực trong sự phục vụ bệnh nhân."
+        },
+        {
+          "meaning_vi": "sự phục vụ",
+          "example_en": "She has a nurse in attendance.",
+          "example_vi": "Cô ấy có một y tá trong sự phục vụ."
+        },
+        {
+          "meaning_vi": "sự phục vụ",
+          "example_en": "The staff is in attendance to help you.",
+          "example_vi": "Nhân viên luôn trong sự phục vụ để giúp đỡ bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho các nghĩa sự dự, số người dự và sự phục vụ.",
+      "word": "attendance",
+      "normalized_word": "attendance",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Attendance at the lecture is mandatory for all students.",
+      "example_vi_clean": "Sự dự buổi giảng là bắt buộc đối với tất cả sinh viên."
+    }
+  ]
+}

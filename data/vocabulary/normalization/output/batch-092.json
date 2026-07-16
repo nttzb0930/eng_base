@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24911,
+      "quiz_meaning_vi": "khủng long",
+      "meaning_vi_clean": "khủng long",
+      "examples_clean": [
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "The museum has a large skeleton of a dinosaur.",
+          "example_vi": "Bảo tàng có một bộ xương khủng long lớn."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "Children are often fascinated by the history of dinosaurs.",
+          "example_vi": "Trẻ em thường bị cuốn hút bởi lịch sử của loài khủng long."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "Scientists study fossils to learn about how dinosaurs lived.",
+          "example_vi": "Các nhà khoa học nghiên cứu hóa thạch để tìm hiểu cách khủng long sống."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "Many people think dinosaurs were huge creatures.",
+          "example_vi": "Nhiều người nghĩ rằng khủng long là những sinh vật khổng lồ."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "The T-Rex is a very famous type of dinosaur.",
+          "example_vi": "T-Rex là một loại khủng long rất nổi tiếng."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "Dinosaurs went extinct millions of years ago.",
+          "example_vi": "Khủng long đã tuyệt chủng từ hàng triệu năm trước."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "We saw a documentary about the age of dinosaurs.",
+          "example_vi": "Chúng tôi đã xem một bộ phim tài liệu về thời đại khủng long."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "The exhibit shows how dinosaurs might have looked.",
+          "example_vi": "Triển lãm cho thấy khủng long có thể đã trông như thế nào."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "Some dinosaurs were small, while others were massive.",
+          "example_vi": "Một số loài khủng long nhỏ, trong khi những loài khác thì to lớn."
+        },
+        {
+          "meaning_vi": "khủng long",
+          "example_en": "He has a collection of plastic dinosaur toys.",
+          "example_vi": "Cậu ấy có một bộ sưu tập đồ chơi khủng long bằng nhựa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ phù hợp cấp độ A2.",
+      "word": "dinosaur",
+      "normalized_word": "dinosaur",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The museum has a large skeleton of a dinosaur.",
+      "example_vi_clean": "Bảo tàng có một bộ xương khủng long lớn."
+    },
+    {
+      "id": 24912,
+      "quiz_meaning_vi": "thẳng",
+      "meaning_vi_clean": "thẳng; trực tiếp; thẳng thắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "This road goes straight and direct to the city center.",
+          "example_vi": "Con đường này đi thẳng và trực tiếp đến trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "Draw a direct line between the two points.",
+          "example_vi": "Hãy vẽ một đường thẳng giữa hai điểm đó."
+        },
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "He gave me a direct answer to my question.",
+          "example_vi": "Anh ấy đã cho tôi một câu trả lời thẳng thắn cho câu hỏi của tôi."
+        },
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "There is a direct flight from London to Paris.",
+          "example_vi": "Có một chuyến bay thẳng từ London đến Paris."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "We had a direct conversation about the problem.",
+          "example_vi": "Chúng tôi đã có một cuộc trò chuyện trực tiếp về vấn đề này."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "She is in direct contact with the manager.",
+          "example_vi": "Cô ấy đang liên lạc trực tiếp với người quản lý."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "The result was a direct consequence of his actions.",
+          "example_vi": "Kết quả đó là hệ quả trực tiếp từ hành động của anh ấy."
+        },
+        {
+          "meaning_vi": "thẳng thắn",
+          "example_en": "She is known for being very direct in her feedback.",
+          "example_vi": "Cô ấy nổi tiếng là người rất thẳng thắn trong việc đưa ra phản hồi."
+        },
+        {
+          "meaning_vi": "thẳng thắn",
+          "example_en": "Please be direct about what you want.",
+          "example_vi": "Làm ơn hãy thẳng thắn về những gì bạn muốn."
+        },
+        {
+          "meaning_vi": "thẳng thắn",
+          "example_en": "His direct manner can sometimes seem rude.",
+          "example_vi": "Cách cư xử thẳng thắn của anh ấy đôi khi có vẻ thô lỗ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ phó từ thành tính từ, chọn nghĩa phổ biến nhất cho A2, bổ sung ví dụ.",
+      "word": "direct",
+      "normalized_word": "direct",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This road goes straight and direct to the city center.",
+      "example_vi_clean": "Con đường này đi thẳng và trực tiếp đến trung tâm thành phố."
+    },
+    {
+      "id": 24913,
+      "quiz_meaning_vi": "phương hướng",
+      "meaning_vi_clean": "phương hướng; sự điều khiển",
+      "examples_clean": [
+        {
+          "meaning_vi": "phương hướng",
+          "example_en": "Which direction should we go to reach the station?",
+          "example_vi": "Chúng ta nên đi theo hướng nào để đến nhà ga?"
+        },
+        {
+          "meaning_vi": "phương hướng",
+          "example_en": "The wind changed direction suddenly.",
+          "example_vi": "Gió đã đổi hướng đột ngột."
+        },
+        {
+          "meaning_vi": "phương hướng",
+          "example_en": "He pointed in the direction of the park.",
+          "example_vi": "Anh ấy chỉ về phía công viên."
+        },
+        {
+          "meaning_vi": "phương hướng",
+          "example_en": "They walked in the opposite direction.",
+          "example_vi": "Họ đi theo hướng ngược lại."
+        },
+        {
+          "meaning_vi": "phương hướng",
+          "example_en": "Look in every direction before crossing the street.",
+          "example_vi": "Hãy nhìn về mọi hướng trước khi băng qua đường."
+        },
+        {
+          "meaning_vi": "sự điều khiển",
+          "example_en": "The project is under the direction of a new manager.",
+          "example_vi": "Dự án đang dưới sự điều khiển của một người quản lý mới."
+        },
+        {
+          "meaning_vi": "sự điều khiển",
+          "example_en": "She needs some direction to finish her work.",
+          "example_vi": "Cô ấy cần một chút sự chỉ dẫn để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "sự điều khiển",
+          "example_en": "The film was made under his expert direction.",
+          "example_vi": "Bộ phim được thực hiện dưới sự chỉ đạo chuyên môn của ông ấy."
+        },
+        {
+          "meaning_vi": "sự điều khiển",
+          "example_en": "He gave us clear direction on how to proceed.",
+          "example_vi": "Ông ấy đã đưa ra sự chỉ dẫn rõ ràng cho chúng tôi về cách tiến hành."
+        },
+        {
+          "meaning_vi": "sự điều khiển",
+          "example_en": "The company is moving in a new direction.",
+          "example_vi": "Công ty đang đi theo một hướng điều hành mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ minh họa cho cả 2 nghĩa.",
+      "word": "direction",
+      "normalized_word": "direction",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Which direction should we go to reach the station?",
+      "example_vi_clean": "Chúng ta nên đi theo hướng nào để đến nhà ga?"
+    },
+    {
+      "id": 24914,
+      "quiz_meaning_vi": "giám đốc",
+      "meaning_vi_clean": "giám đốc; đạo diễn",
+      "examples_clean": [
+        {
+          "meaning_vi": "giám đốc",
+          "example_en": "The director of the company will speak today.",
+          "example_vi": "Giám đốc của công ty sẽ phát biểu vào hôm nay."
+        },
+        {
+          "meaning_vi": "giám đốc",
+          "example_en": "She was appointed as the new director.",
+          "example_vi": "Cô ấy đã được bổ nhiệm làm giám đốc mới."
+        },
+        {
+          "meaning_vi": "giám đốc",
+          "example_en": "The school director is very strict.",
+          "example_vi": "Giám đốc trường học rất nghiêm khắc."
+        },
+        {
+          "meaning_vi": "giám đốc",
+          "example_en": "I have a meeting with the marketing director.",
+          "example_vi": "Tôi có một cuộc họp với giám đốc tiếp thị."
+        },
+        {
+          "meaning_vi": "giám đốc",
+          "example_en": "The board of directors made a final decision.",
+          "example_vi": "Hội đồng quản trị đã đưa ra quyết định cuối cùng."
+        },
+        {
+          "meaning_vi": "đạo diễn",
+          "example_en": "He is a famous film director.",
+          "example_vi": "Ông ấy là một đạo diễn phim nổi tiếng."
+        },
+        {
+          "meaning_vi": "đạo diễn",
+          "example_en": "The director won an award for this movie.",
+          "example_vi": "Đạo diễn đã giành được một giải thưởng cho bộ phim này."
+        },
+        {
+          "meaning_vi": "đạo diễn",
+          "example_en": "She wants to become a theater director.",
+          "example_vi": "Cô ấy muốn trở thành một đạo diễn sân khấu."
+        },
+        {
+          "meaning_vi": "đạo diễn",
+          "example_en": "The director is working on a new project.",
+          "example_vi": "Đạo diễn đang thực hiện một dự án mới."
+        },
+        {
+          "meaning_vi": "đạo diễn",
+          "example_en": "I admire the director's unique style.",
+          "example_vi": "Tôi ngưỡng mộ phong cách độc đáo của vị đạo diễn này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa đạo diễn và 10 ví dụ.",
+      "word": "director",
+      "normalized_word": "director",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The director of the company will speak today.",
+      "example_vi_clean": "Giám đốc của công ty sẽ phát biểu vào hôm nay."
+    },
+    {
+      "id": 24915,
+      "quiz_meaning_vi": "sự bất lợi",
+      "meaning_vi_clean": "sự bất lợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "One disadvantage of living here is the noise.",
+          "example_vi": "Một sự bất lợi khi sống ở đây là tiếng ồn."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "The main disadvantage is the high cost.",
+          "example_vi": "Sự bất lợi chính là chi phí cao."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "Being short can be a disadvantage in basketball.",
+          "example_vi": "Thấp bé có thể là một sự bất lợi trong môn bóng rổ."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "There are many disadvantages to this plan.",
+          "example_vi": "Có nhiều sự bất lợi đối với kế hoạch này."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "He was at a disadvantage because he didn't know the rules.",
+          "example_vi": "Anh ấy đã ở thế bất lợi vì anh ấy không biết luật."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "The team played at a disadvantage due to injuries.",
+          "example_vi": "Đội đã chơi ở thế bất lợi do các chấn thương."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "Weigh the advantages and disadvantages carefully.",
+          "example_vi": "Hãy cân nhắc kỹ các ưu điểm và sự bất lợi."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "Lack of experience is a major disadvantage.",
+          "example_vi": "Thiếu kinh nghiệm là một sự bất lợi lớn."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "The weather was a disadvantage for the runners.",
+          "example_vi": "Thời tiết là một sự bất lợi cho các vận động viên chạy bộ."
+        },
+        {
+          "meaning_vi": "sự bất lợi",
+          "example_en": "She overcame every disadvantage to succeed.",
+          "example_vi": "Cô ấy đã vượt qua mọi sự bất lợi để thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ.",
+      "word": "disadvantage",
+      "normalized_word": "disadvantage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "One disadvantage of living here is the noise.",
+      "example_vi_clean": "Một sự bất lợi khi sống ở đây là tiếng ồn."
+    },
+    {
+      "id": 24916,
+      "quiz_meaning_vi": "bất đồng",
+      "meaning_vi_clean": "bất đồng; không giống",
+      "examples_clean": [
+        {
+          "meaning_vi": "bất đồng",
+          "example_en": "I disagree with your opinion on this matter.",
+          "example_vi": "Tôi bất đồng với ý kiến của bạn về vấn đề này."
+        },
+        {
+          "meaning_vi": "bất đồng",
+          "example_en": "They often disagree about politics.",
+          "example_vi": "Họ thường bất đồng về chính trị."
+        },
+        {
+          "meaning_vi": "bất đồng",
+          "example_en": "We disagree on where to go for dinner.",
+          "example_vi": "Chúng tôi bất đồng về việc đi đâu ăn tối."
+        },
+        {
+          "meaning_vi": "bất đồng",
+          "example_en": "It is okay to disagree sometimes.",
+          "example_vi": "Đôi khi việc bất đồng cũng không sao cả."
+        },
+        {
+          "meaning_vi": "bất đồng",
+          "example_en": "Experts disagree about the cause of the problem.",
+          "example_vi": "Các chuyên gia bất đồng về nguyên nhân của vấn đề."
+        },
+        {
+          "meaning_vi": "không giống",
+          "example_en": "His account of the event disagrees with mine.",
+          "example_vi": "Lời kể của anh ấy về sự kiện đó không giống với tôi."
+        },
+        {
+          "meaning_vi": "không giống",
+          "example_en": "The two reports disagree in several details.",
+          "example_vi": "Hai bản báo cáo không giống nhau ở một vài chi tiết."
+        },
+        {
+          "meaning_vi": "không giống",
+          "example_en": "The results disagree with our initial expectations.",
+          "example_vi": "Các kết quả không giống với kỳ vọng ban đầu của chúng tôi."
+        },
+        {
+          "meaning_vi": "không giống",
+          "example_en": "These figures disagree with the official data.",
+          "example_vi": "Những con số này không giống với dữ liệu chính thức."
+        },
+        {
+          "meaning_vi": "không giống",
+          "example_en": "Their stories disagree on the timing.",
+          "example_vi": "Câu chuyện của họ không giống nhau về thời gian."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp, bổ sung ví dụ.",
+      "word": "disagree",
+      "normalized_word": "disagree",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I disagree with your opinion on this matter.",
+      "example_vi_clean": "Tôi bất đồng với ý kiến của bạn về vấn đề này."
+    },
+    {
+      "id": 24917,
+      "quiz_meaning_vi": "biến mất",
+      "meaning_vi_clean": "biến mất",
+      "examples_clean": [
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "The sun disappeared behind the clouds.",
+          "example_vi": "Mặt trời đã biến mất sau những đám mây."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "My keys have disappeared from the table.",
+          "example_vi": "Chìa khóa của tôi đã biến mất khỏi bàn."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "The cat disappeared into the bushes.",
+          "example_vi": "Con mèo đã biến mất vào trong bụi rậm."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "He disappeared without saying goodbye.",
+          "example_vi": "Anh ấy đã biến mất mà không nói lời tạm biệt."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "The pain slowly disappeared after taking medicine.",
+          "example_vi": "Cơn đau dần biến mất sau khi uống thuốc."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "Many species are disappearing from the wild.",
+          "example_vi": "Nhiều loài đang biến mất khỏi tự nhiên."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "The ship disappeared over the horizon.",
+          "example_vi": "Con tàu đã biến mất phía chân trời."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "The magician made the coin disappear.",
+          "example_vi": "Nhà ảo thuật đã làm đồng xu biến mất."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "All my worries disappeared when I saw her.",
+          "example_vi": "Mọi lo lắng của tôi biến mất khi tôi nhìn thấy cô ấy."
+        },
+        {
+          "meaning_vi": "biến mất",
+          "example_en": "The snow disappeared as the sun came out.",
+          "example_vi": "Tuyết đã biến mất khi mặt trời ló dạng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ.",
+      "word": "disappear",
+      "normalized_word": "disappear",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The sun disappeared behind the clouds.",
+      "example_vi_clean": "Mặt trời đã biến mất sau những đám mây."
+    },
+    {
+      "id": 24918,
+      "quiz_meaning_vi": "thất vọng",
+      "meaning_vi_clean": "thất vọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "I was disappointed with the exam results.",
+          "example_vi": "Tôi đã rất thất vọng với kết quả thi."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "She felt disappointed that he didn't come.",
+          "example_vi": "Cô ấy cảm thấy thất vọng vì anh ấy đã không đến."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "Don't be disappointed if you don't win.",
+          "example_vi": "Đừng thất vọng nếu bạn không thắng."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "He looked disappointed when he heard the news.",
+          "example_vi": "Anh ấy trông có vẻ thất vọng khi nghe tin đó."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "They were disappointed by the service at the hotel.",
+          "example_vi": "Họ đã thất vọng về dịch vụ tại khách sạn."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "I am disappointed in your behavior.",
+          "example_vi": "Tôi thất vọng về cách cư xử của bạn."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "She was disappointed to find the shop closed.",
+          "example_vi": "Cô ấy đã thất vọng khi thấy cửa hàng đóng cửa."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "He felt disappointed after the long wait.",
+          "example_vi": "Anh ấy cảm thấy thất vọng sau thời gian dài chờ đợi."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "We were disappointed by the rainy weather.",
+          "example_vi": "Chúng tôi đã thất vọng vì thời tiết mưa."
+        },
+        {
+          "meaning_vi": "thất vọng",
+          "example_en": "It is natural to feel disappointed sometimes.",
+          "example_vi": "Việc cảm thấy thất vọng đôi khi là điều tự nhiên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ chán nản thành thất vọng cho chính xác, bổ sung ví dụ.",
+      "word": "disappointed",
+      "normalized_word": "disappointed",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I was disappointed with the exam results.",
+      "example_vi_clean": "Tôi đã rất thất vọng với kết quả thi."
+    },
+    {
+      "id": 24919,
+      "quiz_meaning_vi": "làm thất vọng",
+      "meaning_vi_clean": "làm thất vọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "The final score was very disappointing.",
+          "example_vi": "Tỉ số cuối cùng thật làm thất vọng."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "It is disappointing that we have to cancel the trip.",
+          "example_vi": "Thật làm thất vọng khi chúng ta phải hủy chuyến đi."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "The movie was quite disappointing.",
+          "example_vi": "Bộ phim khá làm thất vọng."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "His performance was disappointing to everyone.",
+          "example_vi": "Màn trình diễn của anh ấy làm thất vọng mọi người."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "We had a disappointing experience at the restaurant.",
+          "example_vi": "Chúng tôi đã có một trải nghiệm làm thất vọng tại nhà hàng."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "The results were disappointing for the team.",
+          "example_vi": "Các kết quả thật làm thất vọng cho cả đội."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "It is disappointing to see so much trash.",
+          "example_vi": "Thật làm thất vọng khi thấy quá nhiều rác."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "The weather was disappointing during our vacation.",
+          "example_vi": "Thời tiết thật làm thất vọng trong kỳ nghỉ của chúng tôi."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "She gave a disappointing answer to the question.",
+          "example_vi": "Cô ấy đã đưa ra một câu trả lời làm thất vọng cho câu hỏi đó."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "The news was very disappointing to hear.",
+          "example_vi": "Tin tức đó thật làm thất vọng khi nghe."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho nhất quán, bổ sung 10 ví dụ.",
+      "word": "disappointing",
+      "normalized_word": "disappointing",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The final score was very disappointing.",
+      "example_vi_clean": "Tỉ số cuối cùng thật làm thất vọng."
+    },
+    {
+      "id": 24920,
+      "quiz_meaning_vi": "sàn nhảy",
+      "meaning_vi_clean": "sàn nhảy; vũ trường",
+      "examples_clean": [
+        {
+          "meaning_vi": "sàn nhảy",
+          "example_en": "They spent the whole night on the disco.",
+          "example_vi": "Họ đã dành cả đêm trên sàn nhảy."
+        },
+        {
+          "meaning_vi": "sàn nhảy",
+          "example_en": "The music at the disco was very loud.",
+          "example_vi": "Âm nhạc tại sàn nhảy rất lớn."
+        },
+        {
+          "meaning_vi": "sàn nhảy",
+          "example_en": "We went to a disco to celebrate.",
+          "example_vi": "Chúng tôi đã đến một sàn nhảy để ăn mừng."
+        },
+        {
+          "meaning_vi": "sàn nhảy",
+          "example_en": "The disco was crowded with young people.",
+          "example_vi": "Sàn nhảy chật kín người trẻ."
+        },
+        {
+          "meaning_vi": "sàn nhảy",
+          "example_en": "She loves dancing at the local disco.",
+          "example_vi": "Cô ấy thích nhảy tại sàn nhảy địa phương."
+        },
+        {
+          "meaning_vi": "vũ trường",
+          "example_en": "They opened a new disco in the city center.",
+          "example_vi": "Họ đã mở một vũ trường mới ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "vũ trường",
+          "example_en": "The disco is open until late at night.",
+          "example_vi": "Vũ trường mở cửa đến tận đêm khuya."
+        },
+        {
+          "meaning_vi": "vũ trường",
+          "example_en": "He works as a DJ at a popular disco.",
+          "example_vi": "Anh ấy làm DJ tại một vũ trường nổi tiếng."
+        },
+        {
+          "meaning_vi": "vũ trường",
+          "example_en": "The disco has a great light system.",
+          "example_vi": "Vũ trường có hệ thống ánh sáng tuyệt vời."
+        },
+        {
+          "meaning_vi": "vũ trường",
+          "example_en": "Many people enjoy going to the disco on weekends.",
+          "example_vi": "Nhiều người thích đi vũ trường vào cuối tuần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung 10 ví dụ.",
+      "word": "disco",
+      "normalized_word": "disco",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They spent the whole night on the disco.",
+      "example_vi_clean": "Họ đã dành cả đêm trên sàn nhảy."
+    }
+  ]
+}

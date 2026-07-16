@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26621,
+      "quiz_meaning_vi": "làm cho sáng sủa dễ hiểu",
+      "meaning_vi_clean": "làm cho sáng sủa dễ hiểu; lọc",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "Could you clarify your point about the new policy?",
+          "example_vi": "Bạn có thể làm rõ quan điểm của mình về chính sách mới không?"
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "The teacher clarified the instructions for the students.",
+          "example_vi": "Giáo viên đã làm rõ các hướng dẫn cho học sinh."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "I hope this statement clarifies the situation.",
+          "example_vi": "Tôi hy vọng tuyên bố này làm sáng tỏ tình hình."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "He clarified his position on the matter during the meeting.",
+          "example_vi": "Anh ấy đã làm rõ lập trường của mình về vấn đề này trong cuộc họp."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "They use a special filter to clarify the liquid.",
+          "example_vi": "Họ sử dụng một bộ lọc đặc biệt để lọc chất lỏng."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "Please clarify what you meant by that comment.",
+          "example_vi": "Vui lòng làm rõ ý bạn khi nói câu đó."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "The report clarifies the reasons for the delay.",
+          "example_vi": "Báo cáo làm rõ lý do cho sự chậm trễ."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "She asked him to clarify his intentions.",
+          "example_vi": "Cô ấy yêu cầu anh ấy làm rõ ý định của mình."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "The diagram helps to clarify the complex process.",
+          "example_vi": "Sơ đồ giúp làm sáng tỏ quy trình phức tạp."
+        },
+        {
+          "meaning_vi": "làm cho sáng sủa dễ hiểu",
+          "example_en": "We need to clarify the rules before we start.",
+          "example_vi": "Chúng ta cần làm rõ các quy tắc trước khi bắt đầu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành động từ, cập nhật nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "clarify",
+      "normalized_word": "clarify",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Could you clarify your point about the new policy?",
+      "example_vi_clean": "Bạn có thể làm rõ quan điểm của mình về chính sách mới không?"
+    },
+    {
+      "id": 26622,
+      "quiz_meaning_vi": "sự phân loại",
+      "meaning_vi_clean": "sự phân loại",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The classification of these plants is quite complex.",
+          "example_vi": "Việc phân loại các loài thực vật này khá phức tạp."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "This book follows a simple classification system.",
+          "example_vi": "Cuốn sách này tuân theo một hệ thống phân loại đơn giản."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The library uses a standard classification for its books.",
+          "example_vi": "Thư viện sử dụng một hệ thống phân loại tiêu chuẩn cho sách."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "Scientists are working on a new classification of species.",
+          "example_vi": "Các nhà khoa học đang làm việc trên một hệ thống phân loại loài mới."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The classification of data is essential for security.",
+          "example_vi": "Việc phân loại dữ liệu là cần thiết cho bảo mật."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "There is no clear classification for this type of error.",
+          "example_vi": "Không có sự phân loại rõ ràng cho loại lỗi này."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The classification of the documents took all day.",
+          "example_vi": "Việc phân loại các tài liệu đã mất cả ngày."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "His classification of the problem was very accurate.",
+          "example_vi": "Cách anh ấy phân loại vấn đề rất chính xác."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The classification of goods is based on their value.",
+          "example_vi": "Việc phân loại hàng hóa dựa trên giá trị của chúng."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "We need a better classification for these files.",
+          "example_vi": "Chúng ta cần một cách phân loại tốt hơn cho các tệp này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "classification",
+      "normalized_word": "classification",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The classification of these plants is quite complex.",
+      "example_vi_clean": "Việc phân loại các loài thực vật này khá phức tạp."
+    },
+    {
+      "id": 26623,
+      "quiz_meaning_vi": "mệnh đề",
+      "meaning_vi_clean": "mệnh đề; điều khoản",
+      "examples_clean": [
+        {
+          "meaning_vi": "mệnh đề",
+          "example_en": "The sentence contains a relative clause.",
+          "example_vi": "Câu này chứa một mệnh đề quan hệ."
+        },
+        {
+          "meaning_vi": "mệnh đề",
+          "example_en": "Each clause in the sentence must have a verb.",
+          "example_vi": "Mỗi mệnh đề trong câu phải có một động từ."
+        },
+        {
+          "meaning_vi": "mệnh đề",
+          "example_en": "The main clause expresses the primary idea.",
+          "example_vi": "Mệnh đề chính diễn đạt ý tưởng chủ đạo."
+        },
+        {
+          "meaning_vi": "mệnh đề",
+          "example_en": "A subordinate clause cannot stand alone.",
+          "example_vi": "Một mệnh đề phụ không thể đứng một mình."
+        },
+        {
+          "meaning_vi": "điều khoản",
+          "example_en": "The contract includes a penalty clause.",
+          "example_vi": "Hợp đồng bao gồm một điều khoản phạt."
+        },
+        {
+          "meaning_vi": "điều khoản",
+          "example_en": "They added a new clause to the agreement.",
+          "example_vi": "Họ đã thêm một điều khoản mới vào thỏa thuận."
+        },
+        {
+          "meaning_vi": "điều khoản",
+          "example_en": "The secret clause was revealed later.",
+          "example_vi": "Điều khoản bí mật đã được tiết lộ sau đó."
+        },
+        {
+          "meaning_vi": "điều khoản",
+          "example_en": "We need to review the termination clause.",
+          "example_vi": "Chúng ta cần xem xét điều khoản chấm dứt."
+        },
+        {
+          "meaning_vi": "điều khoản",
+          "example_en": "The insurance policy has a specific clause for accidents.",
+          "example_vi": "Chính sách bảo hiểm có một điều khoản cụ thể cho tai nạn."
+        },
+        {
+          "meaning_vi": "điều khoản",
+          "example_en": "The clause protects the rights of the employees.",
+          "example_vi": "Điều khoản này bảo vệ quyền lợi của nhân viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa phonetic, bổ sung nghĩa điều khoản và ví dụ.",
+      "word": "clause",
+      "normalized_word": "clause",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The sentence contains a relative clause.",
+      "example_vi_clean": "Câu này chứa một mệnh đề quan hệ."
+    },
+    {
+      "id": 26624,
+      "quiz_meaning_vi": "sự rõ ràng",
+      "meaning_vi_clean": "sự rõ ràng; sự trong trẻo",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "The clearness of his explanation helped everyone understand.",
+          "example_vi": "Sự rõ ràng trong lời giải thích của anh ấy đã giúp mọi người hiểu."
+        },
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "She spoke with great clearness.",
+          "example_vi": "Cô ấy nói với sự rõ ràng tuyệt vời."
+        },
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "The clearness of the instructions is important.",
+          "example_vi": "Sự rõ ràng của các hướng dẫn là rất quan trọng."
+        },
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "I admire the clearness of her writing style.",
+          "example_vi": "Tôi ngưỡng mộ sự rõ ràng trong phong cách viết của cô ấy."
+        },
+        {
+          "meaning_vi": "sự trong trẻo",
+          "example_en": "The clearness of the water in the lake was amazing.",
+          "example_vi": "Sự trong trẻo của nước trong hồ thật đáng kinh ngạc."
+        },
+        {
+          "meaning_vi": "sự trong trẻo",
+          "example_en": "We enjoyed the clearness of the mountain air.",
+          "example_vi": "Chúng tôi tận hưởng sự trong trẻo của không khí trên núi."
+        },
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "The clearness of the image on the screen is excellent.",
+          "example_vi": "Sự rõ ràng của hình ảnh trên màn hình rất tuyệt vời."
+        },
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "He lacks clearness in his arguments.",
+          "example_vi": "Anh ấy thiếu sự rõ ràng trong các lập luận của mình."
+        },
+        {
+          "meaning_vi": "sự trong trẻo",
+          "example_en": "The clearness of the sky indicated a sunny day.",
+          "example_vi": "Sự trong trẻo của bầu trời báo hiệu một ngày nắng."
+        },
+        {
+          "meaning_vi": "sự rõ ràng",
+          "example_en": "The clearness of the sound was impressive.",
+          "example_vi": "Sự rõ ràng của âm thanh thật ấn tượng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ.",
+      "word": "clearness",
+      "normalized_word": "clearness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The clearness of his explanation helped everyone understand.",
+      "example_vi_clean": "Sự rõ ràng trong lời giải thích của anh ấy đã giúp mọi người hiểu."
+    },
+    {
+      "id": 26625,
+      "quiz_meaning_vi": "thuộc văn phòng",
+      "meaning_vi_clean": "thuộc văn phòng; thuộc tăng lữ",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "He has a clerical job in a large company.",
+          "example_vi": "Anh ấy có một công việc văn phòng tại một công ty lớn."
+        },
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "The clerical staff is responsible for filing documents.",
+          "example_vi": "Nhân viên văn phòng chịu trách nhiệm lưu trữ tài liệu."
+        },
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "She is doing some clerical work for the manager.",
+          "example_vi": "Cô ấy đang làm một số công việc văn phòng cho quản lý."
+        },
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "The office needs more clerical support.",
+          "example_vi": "Văn phòng cần thêm sự hỗ trợ về công việc giấy tờ."
+        },
+        {
+          "meaning_vi": "thuộc tăng lữ",
+          "example_en": "He wore a clerical collar.",
+          "example_vi": "Anh ấy đeo cổ áo của tăng lữ."
+        },
+        {
+          "meaning_vi": "thuộc tăng lữ",
+          "example_en": "The clerical authorities met to discuss the issue.",
+          "example_vi": "Các nhà chức trách tăng lữ đã gặp nhau để thảo luận vấn đề."
+        },
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "Clerical errors can cause many problems.",
+          "example_vi": "Các lỗi văn phòng có thể gây ra nhiều vấn đề."
+        },
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "He spent his day doing clerical tasks.",
+          "example_vi": "Anh ấy dành cả ngày để làm các công việc giấy tờ."
+        },
+        {
+          "meaning_vi": "thuộc tăng lữ",
+          "example_en": "The clerical dress code is very strict.",
+          "example_vi": "Quy định trang phục của tăng lữ rất nghiêm ngặt."
+        },
+        {
+          "meaning_vi": "thuộc văn phòng",
+          "example_en": "She is looking for a clerical position.",
+          "example_vi": "Cô ấy đang tìm kiếm một vị trí công việc văn phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành tính từ, cập nhật nghĩa và ví dụ.",
+      "word": "clerical",
+      "normalized_word": "clerical",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has a clerical job in a large company.",
+      "example_vi_clean": "Anh ấy có một công việc văn phòng tại một công ty lớn."
+    },
+    {
+      "id": 26626,
+      "quiz_meaning_vi": "khách hàng",
+      "meaning_vi_clean": "khách hàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The lawyer met with his client to discuss the case.",
+          "example_vi": "Luật sư đã gặp khách hàng của mình để thảo luận về vụ án."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "We always try to satisfy our clients.",
+          "example_vi": "Chúng tôi luôn cố gắng làm hài lòng khách hàng của mình."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The company has many international clients.",
+          "example_vi": "Công ty có nhiều khách hàng quốc tế."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "She is a regular client at this salon.",
+          "example_vi": "Cô ấy là khách hàng thường xuyên tại tiệm này."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The architect presented the design to the client.",
+          "example_vi": "Kiến trúc sư đã trình bày thiết kế cho khách hàng."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "It is important to listen to the client's needs.",
+          "example_vi": "Điều quan trọng là phải lắng nghe nhu cầu của khách hàng."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The bank provides services to its clients.",
+          "example_vi": "Ngân hàng cung cấp dịch vụ cho khách hàng của mình."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "He has been a loyal client for ten years.",
+          "example_vi": "Anh ấy đã là một khách hàng trung thành trong mười năm."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The consultant advised the client on the strategy.",
+          "example_vi": "Nhà tư vấn đã khuyên khách hàng về chiến lược."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The client was happy with the final result.",
+          "example_vi": "Khách hàng đã hài lòng với kết quả cuối cùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ.",
+      "word": "client",
+      "normalized_word": "client",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The lawyer met with his client to discuss the case.",
+      "example_vi_clean": "Luật sư đã gặp khách hàng của mình để thảo luận về vụ án."
+    },
+    {
+      "id": 26627,
+      "quiz_meaning_vi": "làm tắc",
+      "meaning_vi_clean": "làm tắc; bị tắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm tắc",
+          "example_en": "Too much hair can clog the drain.",
+          "example_vi": "Quá nhiều tóc có thể làm tắc cống."
+        },
+        {
+          "meaning_vi": "làm tắc",
+          "example_en": "Grease often clogs the kitchen pipes.",
+          "example_vi": "Dầu mỡ thường làm tắc các đường ống nhà bếp."
+        },
+        {
+          "meaning_vi": "làm tắc",
+          "example_en": "Leaves clogged the gutter during the storm.",
+          "example_vi": "Lá cây làm tắc máng xối trong cơn bão."
+        },
+        {
+          "meaning_vi": "làm tắc",
+          "example_en": "Dust can clog the air filter.",
+          "example_vi": "Bụi có thể làm tắc bộ lọc không khí."
+        },
+        {
+          "meaning_vi": "bị tắc",
+          "example_en": "The sink is clogged again.",
+          "example_vi": "Bồn rửa lại bị tắc rồi."
+        },
+        {
+          "meaning_vi": "bị tắc",
+          "example_en": "The pipes are clogged with debris.",
+          "example_vi": "Các đường ống bị tắc bởi rác thải."
+        },
+        {
+          "meaning_vi": "bị tắc",
+          "example_en": "My nose is clogged because of my cold.",
+          "example_vi": "Mũi tôi bị tắc vì cảm lạnh."
+        },
+        {
+          "meaning_vi": "bị tắc",
+          "example_en": "The highway was clogged with traffic.",
+          "example_vi": "Đường cao tốc bị tắc nghẽn bởi giao thông."
+        },
+        {
+          "meaning_vi": "làm tắc",
+          "example_en": "Don't let paper clog the printer.",
+          "example_vi": "Đừng để giấy làm tắc máy in."
+        },
+        {
+          "meaning_vi": "bị tắc",
+          "example_en": "The drainpipe is clogged.",
+          "example_vi": "Ống thoát nước bị tắc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành động từ, chọn nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "clog",
+      "normalized_word": "clog",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Too much hair can clog the drain.",
+      "example_vi_clean": "Quá nhiều tóc có thể làm tắc cống."
+    },
+    {
+      "id": 26628,
+      "quiz_meaning_vi": "sự đóng kín",
+      "meaning_vi_clean": "sự đóng kín; sự bế mạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "The closure of the factory caused many job losses.",
+          "example_vi": "Việc đóng cửa nhà máy đã gây ra nhiều mất mát việc làm."
+        },
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "The road closure will last for two days.",
+          "example_vi": "Việc đóng đường sẽ kéo dài trong hai ngày."
+        },
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "The closure of the bridge is due to repairs.",
+          "example_vi": "Việc đóng cây cầu là do sửa chữa."
+        },
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "They announced the closure of the store.",
+          "example_vi": "Họ đã thông báo việc đóng cửa cửa hàng."
+        },
+        {
+          "meaning_vi": "sự bế mạc",
+          "example_en": "The closure of the meeting was at five o'clock.",
+          "example_vi": "Sự bế mạc của cuộc họp là vào lúc năm giờ."
+        },
+        {
+          "meaning_vi": "sự bế mạc",
+          "example_en": "The conference ended with a formal closure.",
+          "example_vi": "Hội nghị kết thúc với một buổi bế mạc trang trọng."
+        },
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "The closure of the border affected trade.",
+          "example_vi": "Việc đóng cửa biên giới đã ảnh hưởng đến thương mại."
+        },
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "The sudden closure of the school surprised everyone.",
+          "example_vi": "Việc đóng cửa trường học đột ngột đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự bế mạc",
+          "example_en": "The chairman announced the closure of the session.",
+          "example_vi": "Chủ tịch đã tuyên bố bế mạc phiên họp."
+        },
+        {
+          "meaning_vi": "sự đóng kín",
+          "example_en": "The closure of the tunnel caused a traffic jam.",
+          "example_vi": "Việc đóng cửa đường hầm đã gây ra tắc nghẽn giao thông."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, cập nhật nghĩa và ví dụ.",
+      "word": "closure",
+      "normalized_word": "closure",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The closure of the factory caused many job losses.",
+      "example_vi_clean": "Việc đóng cửa nhà máy đã gây ra nhiều mất mát việc làm."
+    },
+    {
+      "id": 26629,
+      "quiz_meaning_vi": "quần áo",
+      "meaning_vi_clean": "quần áo",
+      "examples_clean": [
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "She bought some new clothing for the winter.",
+          "example_vi": "Cô ấy đã mua một ít quần áo mới cho mùa đông."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "The store sells high-quality clothing.",
+          "example_vi": "Cửa hàng bán quần áo chất lượng cao."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "He donated his old clothing to charity.",
+          "example_vi": "Anh ấy đã quyên góp quần áo cũ của mình cho từ thiện."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "They need warm clothing for the trip.",
+          "example_vi": "Họ cần quần áo ấm cho chuyến đi."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "The clothing industry is very competitive.",
+          "example_vi": "Ngành công nghiệp quần áo rất cạnh tranh."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "She has a lot of stylish clothing.",
+          "example_vi": "Cô ấy có rất nhiều quần áo thời trang."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "The children need new clothing for school.",
+          "example_vi": "Những đứa trẻ cần quần áo mới để đi học."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "He is very careful with his clothing.",
+          "example_vi": "Anh ấy rất cẩn thận với quần áo của mình."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "The shop offers a wide range of clothing.",
+          "example_vi": "Cửa hàng cung cấp nhiều loại quần áo."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "Proper clothing is required for the event.",
+          "example_vi": "Quần áo phù hợp là bắt buộc cho sự kiện này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ.",
+      "word": "clothing",
+      "normalized_word": "clothing",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She bought some new clothing for the winter.",
+      "example_vi_clean": "Cô ấy đã mua một ít quần áo mới cho mùa đông."
+    },
+    {
+      "id": 26630,
+      "quiz_meaning_vi": "vụng về",
+      "meaning_vi_clean": "vụng về; không gọn",
+      "examples_clean": [
+        {
+          "meaning_vi": "vụng về",
+          "example_en": "He is very clumsy and often drops things.",
+          "example_vi": "Anh ấy rất vụng về và thường làm rơi đồ đạc."
+        },
+        {
+          "meaning_vi": "vụng về",
+          "example_en": "I felt clumsy when I tried to dance.",
+          "example_vi": "Tôi cảm thấy vụng về khi cố gắng nhảy."
+        },
+        {
+          "meaning_vi": "vụng về",
+          "example_en": "She made a clumsy attempt to fix the chair.",
+          "example_vi": "Cô ấy đã có một nỗ lực vụng về để sửa cái ghế."
+        },
+        {
+          "meaning_vi": "vụng về",
+          "example_en": "Don't be so clumsy with the glasses.",
+          "example_vi": "Đừng vụng về với những chiếc ly như vậy."
+        },
+        {
+          "meaning_vi": "không gọn",
+          "example_en": "It was a clumsy solution to a simple problem.",
+          "example_vi": "Đó là một giải pháp không gọn gàng cho một vấn đề đơn giản."
+        },
+        {
+          "meaning_vi": "không gọn",
+          "example_en": "The design is a bit clumsy.",
+          "example_vi": "Thiết kế này hơi không gọn gàng."
+        },
+        {
+          "meaning_vi": "vụng về",
+          "example_en": "He gave a clumsy excuse for being late.",
+          "example_vi": "Anh ấy đưa ra một cái cớ vụng về cho việc đi trễ."
+        },
+        {
+          "meaning_vi": "không gọn",
+          "example_en": "The sentence is long and clumsy.",
+          "example_vi": "Câu này dài và không gọn gàng."
+        },
+        {
+          "meaning_vi": "vụng về",
+          "example_en": "She is clumsy but very kind.",
+          "example_vi": "Cô ấy vụng về nhưng rất tốt bụng."
+        },
+        {
+          "meaning_vi": "không gọn",
+          "example_en": "The machine is large and clumsy to use.",
+          "example_vi": "Cái máy này to và không gọn gàng khi sử dụng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "clumsy",
+      "normalized_word": "clumsy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is very clumsy and often drops things.",
+      "example_vi_clean": "Anh ấy rất vụng về và thường làm rơi đồ đạc."
+    }
+  ]
+}

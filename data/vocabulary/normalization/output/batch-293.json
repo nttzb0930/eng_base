@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26921,
+      "quiz_meaning_vi": "gấp đôi",
+      "meaning_vi_clean": "gấp đôi; hai mặt",
+      "examples_clean": [
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "My mother was always doubly careful when winding the grandfather clock.",
+          "example_vi": "Mẹ tôi luôn cẩn thận gấp đôi khi lên dây cót chiếc đồng hồ quả lắc."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "Stealing and then lying about it is doubly wrong.",
+          "example_vi": "Ăn cắp rồi nói dối về việc đó là sai trái gấp đôi."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "The new policy will doubly benefit the local community.",
+          "example_vi": "Chính sách mới sẽ mang lại lợi ích gấp đôi cho cộng đồng địa phương."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "He felt doubly responsible for the success of the project.",
+          "example_vi": "Anh ấy cảm thấy có trách nhiệm gấp đôi đối với sự thành công của dự án."
+        },
+        {
+          "meaning_vi": "hai mặt",
+          "example_en": "His doubly nature made it hard to trust him.",
+          "example_vi": "Bản tính hai mặt của anh ta khiến người khác khó mà tin tưởng."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "The workload has increased doubly since last month.",
+          "example_vi": "Khối lượng công việc đã tăng gấp đôi kể từ tháng trước."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "She was doubly determined to finish the race.",
+          "example_vi": "Cô ấy quyết tâm gấp đôi để hoàn thành cuộc đua."
+        },
+        {
+          "meaning_vi": "hai mặt",
+          "example_en": "The situation is doubly complex due to conflicting interests.",
+          "example_vi": "Tình hình trở nên phức tạp gấp đôi do những lợi ích xung đột."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "The company's profits have grown doubly this year.",
+          "example_vi": "Lợi nhuận của công ty đã tăng gấp đôi trong năm nay."
+        },
+        {
+          "meaning_vi": "gấp đôi",
+          "example_en": "We must be doubly prepared for any potential risks.",
+          "example_vi": "Chúng ta phải chuẩn bị gấp đôi cho mọi rủi ro tiềm ẩn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa phụ và 10 ví dụ minh họa.",
+      "word": "doubly",
+      "normalized_word": "doubly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "My mother was always doubly careful when winding the grandfather clock.",
+      "example_vi_clean": "Mẹ tôi luôn cẩn thận gấp đôi khi lên dây cót chiếc đồng hồ quả lắc."
+    },
+    {
+      "id": 26922,
+      "quiz_meaning_vi": "nghi ngờ",
+      "meaning_vi_clean": "nghi ngờ; đáng nghi; không chắc chắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghi ngờ",
+          "example_en": "I am doubtful about his ability to finish the task on time.",
+          "example_vi": "Tôi nghi ngờ về khả năng hoàn thành công việc đúng hạn của anh ấy."
+        },
+        {
+          "meaning_vi": "nghi ngờ",
+          "example_en": "She was doubtful whether the plan would actually work.",
+          "example_vi": "Cô ấy nghi ngờ liệu kế hoạch đó có thực sự hiệu quả hay không."
+        },
+        {
+          "meaning_vi": "nghi ngờ",
+          "example_en": "The committee remains doubtful regarding the proposed changes.",
+          "example_vi": "Ủy ban vẫn còn nghi ngờ về những thay đổi được đề xuất."
+        },
+        {
+          "meaning_vi": "nghi ngờ",
+          "example_en": "He looked at the strange package with a doubtful expression.",
+          "example_vi": "Anh ấy nhìn gói hàng lạ với vẻ mặt nghi ngờ."
+        },
+        {
+          "meaning_vi": "đáng nghi",
+          "example_en": "The circumstances surrounding the accident are highly doubtful.",
+          "example_vi": "Những tình tiết xung quanh vụ tai nạn rất đáng nghi."
+        },
+        {
+          "meaning_vi": "đáng nghi",
+          "example_en": "His explanation for being late sounds very doubtful.",
+          "example_vi": "Lời giải thích cho việc đi trễ của anh ta nghe rất đáng nghi."
+        },
+        {
+          "meaning_vi": "không chắc chắn",
+          "example_en": "It is doubtful if we will reach the summit before dark.",
+          "example_vi": "Thật không chắc chắn liệu chúng ta có đến được đỉnh núi trước khi trời tối hay không."
+        },
+        {
+          "meaning_vi": "không chắc chắn",
+          "example_en": "Success is doubtful without proper preparation.",
+          "example_vi": "Thành công là không chắc chắn nếu không có sự chuẩn bị kỹ lưỡng."
+        },
+        {
+          "meaning_vi": "không chắc chắn",
+          "example_en": "The future of the project remains doubtful.",
+          "example_vi": "Tương lai của dự án vẫn còn không chắc chắn."
+        },
+        {
+          "meaning_vi": "nghi ngờ",
+          "example_en": "They were doubtful about the truth of his story.",
+          "example_vi": "Họ nghi ngờ về tính xác thực trong câu chuyện của anh ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa và 10 ví dụ hoàn chỉnh.",
+      "word": "doubtful",
+      "normalized_word": "doubtful",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I am doubtful about his ability to finish the task on time.",
+      "example_vi_clean": "Tôi nghi ngờ về khả năng hoàn thành công việc đúng hạn của anh ấy."
+    },
+    {
+      "id": 26923,
+      "quiz_meaning_vi": "chim bồ câu",
+      "meaning_vi_clean": "chim bồ câu; người chủ trương hòa bình",
+      "examples_clean": [
+        {
+          "meaning_vi": "chim bồ câu",
+          "example_en": "A white dove flew over the park.",
+          "example_vi": "Một con chim bồ câu trắng bay qua công viên."
+        },
+        {
+          "meaning_vi": "chim bồ câu",
+          "example_en": "The dove is often seen as a symbol of peace.",
+          "example_vi": "Chim bồ câu thường được xem là biểu tượng của hòa bình."
+        },
+        {
+          "meaning_vi": "chim bồ câu",
+          "example_en": "We watched the doves gathering in the square.",
+          "example_vi": "Chúng tôi nhìn những con chim bồ câu tụ tập ở quảng trường."
+        },
+        {
+          "meaning_vi": "chim bồ câu",
+          "example_en": "The dove landed on the windowsill to eat some crumbs.",
+          "example_vi": "Con chim bồ câu đậu trên bậu cửa sổ để ăn vài mẩu vụn."
+        },
+        {
+          "meaning_vi": "người chủ trương hòa bình",
+          "example_en": "The politician is known as a dove in foreign policy.",
+          "example_vi": "Chính trị gia này được biết đến là người chủ trương hòa bình trong chính sách đối ngoại."
+        },
+        {
+          "meaning_vi": "người chủ trương hòa bình",
+          "example_en": "The doves in the government argued against military intervention.",
+          "example_vi": "Những người chủ trương hòa bình trong chính phủ đã phản đối sự can thiệp quân sự."
+        },
+        {
+          "meaning_vi": "người chủ trương hòa bình",
+          "example_en": "He is a dove who prefers diplomatic solutions.",
+          "example_vi": "Ông ấy là người chủ trương hòa bình, ưu tiên các giải pháp ngoại giao."
+        },
+        {
+          "meaning_vi": "chim bồ câu",
+          "example_en": "The park is full of doves during the summer.",
+          "example_vi": "Công viên đầy chim bồ câu vào mùa hè."
+        },
+        {
+          "meaning_vi": "người chủ trương hòa bình",
+          "example_en": "The debate between the hawks and the doves continues.",
+          "example_vi": "Cuộc tranh luận giữa phe hiếu chiến và phe chủ trương hòa bình vẫn tiếp tục."
+        },
+        {
+          "meaning_vi": "chim bồ câu",
+          "example_en": "She fed the doves every morning.",
+          "example_vi": "Cô ấy cho chim bồ câu ăn mỗi sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, loại bỏ nghĩa lóng không phù hợp, bổ sung ví dụ.",
+      "word": "dove",
+      "normalized_word": "dove",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A white dove flew over the park.",
+      "example_vi_clean": "Một con chim bồ câu trắng bay qua công viên."
+    },
+    {
+      "id": 26924,
+      "quiz_meaning_vi": "xuống",
+      "meaning_vi_clean": "xuống; chán nản; lông tơ",
+      "examples_clean": [
+        {
+          "meaning_vi": "xuống",
+          "example_en": "The sun is going down behind the hills.",
+          "example_vi": "Mặt trời đang lặn xuống sau những ngọn đồi."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "Please sit down and make yourself comfortable.",
+          "example_vi": "Làm ơn hãy ngồi xuống và cứ tự nhiên."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "Prices have gone down significantly this month.",
+          "example_vi": "Giá cả đã giảm xuống đáng kể trong tháng này."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "He walked down the stairs carefully.",
+          "example_vi": "Anh ấy bước xuống cầu thang một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "chán nản",
+          "example_en": "She felt a bit down after hearing the bad news.",
+          "example_vi": "Cô ấy cảm thấy hơi chán nản sau khi nghe tin xấu."
+        },
+        {
+          "meaning_vi": "chán nản",
+          "example_en": "Don't feel down, things will get better soon.",
+          "example_vi": "Đừng cảm thấy chán nản, mọi thứ sẽ sớm tốt đẹp hơn thôi."
+        },
+        {
+          "meaning_vi": "lông tơ",
+          "example_en": "The jacket is filled with soft down.",
+          "example_vi": "Chiếc áo khoác được nhồi bằng lông tơ mềm mại."
+        },
+        {
+          "meaning_vi": "lông tơ",
+          "example_en": "The baby bird is covered in fine down.",
+          "example_vi": "Chú chim non được bao phủ bởi lớp lông tơ mịn."
+        },
+        {
+          "meaning_vi": "chán nản",
+          "example_en": "He has been feeling down for a few days.",
+          "example_vi": "Anh ấy đã cảm thấy chán nản vài ngày nay rồi."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "The plane is coming down for a landing.",
+          "example_vi": "Máy bay đang hạ xuống để hạ cánh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ/trạng từ, chọn lọc nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "down",
+      "normalized_word": "down",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The sun is going down behind the hills.",
+      "example_vi_clean": "Mặt trời đang lặn xuống sau những ngọn đồi."
+    },
+    {
+      "id": 26925,
+      "quiz_meaning_vi": "sự sa sút",
+      "meaning_vi_clean": "sự sa sút; trận mưa như trút",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự sa sút",
+          "example_en": "Many economic reasons led to the downfall of the company.",
+          "example_vi": "Nhiều lý do kinh tế đã dẫn đến sự sa sút của công ty."
+        },
+        {
+          "meaning_vi": "sự sa sút",
+          "example_en": "Pride was the cause of his downfall.",
+          "example_vi": "Sự kiêu ngạo là nguyên nhân dẫn đến sự sa sút của anh ta."
+        },
+        {
+          "meaning_vi": "sự sa sút",
+          "example_en": "The scandal marked the downfall of his political career.",
+          "example_vi": "Vụ bê bối đánh dấu sự sa sút trong sự nghiệp chính trị của ông ấy."
+        },
+        {
+          "meaning_vi": "sự sa sút",
+          "example_en": "Poor management contributed to the downfall of the project.",
+          "example_vi": "Quản lý kém đã góp phần vào sự sa sút của dự án."
+        },
+        {
+          "meaning_vi": "trận mưa như trút",
+          "example_en": "We were caught in a sudden downfall while walking home.",
+          "example_vi": "Chúng tôi bị mắc kẹt trong một trận mưa như trút khi đang đi bộ về nhà."
+        },
+        {
+          "meaning_vi": "trận mưa như trút",
+          "example_en": "The heavy downfall caused flooding in the streets.",
+          "example_vi": "Trận mưa như trút đã gây ra ngập lụt trên các con phố."
+        },
+        {
+          "meaning_vi": "sự sa sút",
+          "example_en": "The downfall of the empire took several decades.",
+          "example_vi": "Sự sa sút của đế chế đã kéo dài vài thập kỷ."
+        },
+        {
+          "meaning_vi": "trận mưa như trút",
+          "example_en": "The downfall lasted for three hours without stopping.",
+          "example_vi": "Trận mưa như trút kéo dài suốt ba tiếng đồng hồ không ngớt."
+        },
+        {
+          "meaning_vi": "sự sa sút",
+          "example_en": "He feared the downfall of his reputation.",
+          "example_vi": "Anh ấy sợ sự sa sút về danh tiếng của mình."
+        },
+        {
+          "meaning_vi": "trận mưa như trút",
+          "example_en": "The garden was refreshed by the sudden downfall.",
+          "example_vi": "Khu vườn được làm tươi mới nhờ trận mưa như trút bất ngờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ.",
+      "word": "downfall",
+      "normalized_word": "downfall",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Many economic reasons led to the downfall of the company.",
+      "example_vi_clean": "Nhiều lý do kinh tế đã dẫn đến sự sa sút của công ty."
+    },
+    {
+      "id": 26926,
+      "quiz_meaning_vi": "tải xuống",
+      "meaning_vi_clean": "tải xuống",
+      "examples_clean": [
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "The download took longer than I expected.",
+          "example_vi": "Việc tải xuống mất nhiều thời gian hơn tôi mong đợi."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "You can download the file from our website.",
+          "example_vi": "Bạn có thể tải xuống tệp tin từ trang web của chúng tôi."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "I need to download some photos to my computer.",
+          "example_vi": "Tôi cần tải xuống vài bức ảnh về máy tính của mình."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "The software download is free for all users.",
+          "example_vi": "Việc tải xuống phần mềm là miễn phí cho tất cả người dùng."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "She is downloading a new game on her phone.",
+          "example_vi": "Cô ấy đang tải xuống một trò chơi mới trên điện thoại."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "The download speed is very fast today.",
+          "example_vi": "Tốc độ tải xuống hôm nay rất nhanh."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "Did you finish the download of the presentation?",
+          "example_vi": "Bạn đã tải xuống xong bài thuyết trình chưa?"
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "I will download the update later tonight.",
+          "example_vi": "Tôi sẽ tải xuống bản cập nhật vào tối nay."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "The download failed due to a connection error.",
+          "example_vi": "Việc tải xuống thất bại do lỗi kết nối."
+        },
+        {
+          "meaning_vi": "tải xuống",
+          "example_en": "He is downloading music for his trip.",
+          "example_vi": "Anh ấy đang tải xuống nhạc cho chuyến đi của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, nghĩa và bổ sung ví dụ.",
+      "word": "download",
+      "normalized_word": "download",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The download took longer than I expected.",
+      "example_vi_clean": "Việc tải xuống mất nhiều thời gian hơn tôi mong đợi."
+    },
+    {
+      "id": 26927,
+      "quiz_meaning_vi": "của hồi môn",
+      "meaning_vi_clean": "của hồi môn",
+      "examples_clean": [
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "In the past, a dowry was essential for a bride.",
+          "example_vi": "Trong quá khứ, của hồi môn là thứ thiết yếu đối với cô dâu."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "Her family provided a large dowry for her wedding.",
+          "example_vi": "Gia đình cô ấy đã chuẩn bị một của hồi môn lớn cho đám cưới của cô."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "The tradition of giving a dowry is fading in many cultures.",
+          "example_vi": "Truyền thống trao của hồi môn đang dần phai nhạt ở nhiều nền văn hóa."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "He married her for her dowry, not for love.",
+          "example_vi": "Anh ta cưới cô ấy vì của hồi môn, chứ không phải vì tình yêu."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "The dowry included gold, jewelry, and land.",
+          "example_vi": "Của hồi môn bao gồm vàng, trang sức và đất đai."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "She used her dowry to start a small business.",
+          "example_vi": "Cô ấy đã dùng của hồi môn của mình để bắt đầu một công việc kinh doanh nhỏ."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "Laws have been passed to ban the practice of dowry.",
+          "example_vi": "Nhiều đạo luật đã được thông qua để cấm tục lệ của hồi môn."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "Her parents saved for years to afford her dowry.",
+          "example_vi": "Cha mẹ cô ấy đã tiết kiệm nhiều năm để có đủ của hồi môn cho cô."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "The dowry was a symbol of her family's status.",
+          "example_vi": "Của hồi môn là biểu tượng cho địa vị của gia đình cô ấy."
+        },
+        {
+          "meaning_vi": "của hồi môn",
+          "example_en": "They argued about the size of the dowry.",
+          "example_vi": "Họ đã tranh cãi về giá trị của của hồi môn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "dowry",
+      "normalized_word": "dowry",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "In the past, a dowry was essential for a bride.",
+      "example_vi_clean": "Trong quá khứ, của hồi môn là thứ thiết yếu đối với cô dâu."
+    },
+    {
+      "id": 26928,
+      "quiz_meaning_vi": "bản phác thảo",
+      "meaning_vi_clean": "bản phác thảo; dự thảo; quân dịch",
+      "examples_clean": [
+        {
+          "meaning_vi": "bản phác thảo",
+          "example_en": "She made a quick draft of the design.",
+          "example_vi": "Cô ấy đã vẽ một bản phác thảo nhanh cho thiết kế."
+        },
+        {
+          "meaning_vi": "bản phác thảo",
+          "example_en": "The architect showed us the first draft of the house.",
+          "example_vi": "Kiến trúc sư đã cho chúng tôi xem bản phác thảo đầu tiên của ngôi nhà."
+        },
+        {
+          "meaning_vi": "bản phác thảo",
+          "example_en": "I have a rough draft of the painting.",
+          "example_vi": "Tôi có một bản phác thảo sơ bộ của bức tranh."
+        },
+        {
+          "meaning_vi": "bản phác thảo",
+          "example_en": "He kept his original draft in a notebook.",
+          "example_vi": "Anh ấy giữ bản phác thảo gốc của mình trong một cuốn sổ."
+        },
+        {
+          "meaning_vi": "dự thảo",
+          "example_en": "The committee is reviewing the draft of the new law.",
+          "example_vi": "Ủy ban đang xem xét dự thảo của đạo luật mới."
+        },
+        {
+          "meaning_vi": "dự thảo",
+          "example_en": "We need to finalize the draft before the meeting.",
+          "example_vi": "Chúng ta cần hoàn thiện dự thảo trước cuộc họp."
+        },
+        {
+          "meaning_vi": "quân dịch",
+          "example_en": "He was called up for the draft during the war.",
+          "example_vi": "Anh ấy đã bị gọi nhập ngũ theo chế độ quân dịch trong thời chiến."
+        },
+        {
+          "meaning_vi": "quân dịch",
+          "example_en": "Many young men left the country to avoid the draft.",
+          "example_vi": "Nhiều thanh niên đã rời khỏi đất nước để tránh quân dịch."
+        },
+        {
+          "meaning_vi": "dự thảo",
+          "example_en": "The draft agreement was signed by both parties.",
+          "example_vi": "Bản dự thảo thỏa thuận đã được cả hai bên ký kết."
+        },
+        {
+          "meaning_vi": "bản phác thảo",
+          "example_en": "She sketched a draft of the garden layout.",
+          "example_vi": "Cô ấy đã phác thảo một bản vẽ cho bố cục khu vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, nghĩa và bổ sung ví dụ.",
+      "word": "draft",
+      "normalized_word": "draft",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She made a quick draft of the design.",
+      "example_vi_clean": "Cô ấy đã vẽ một bản phác thảo nhanh cho thiết kế."
+    },
+    {
+      "id": 26929,
+      "quiz_meaning_vi": "ống dẫn",
+      "meaning_vi_clean": "ống dẫn; sự tiêu hao; rút hết",
+      "examples_clean": [
+        {
+          "meaning_vi": "ống dẫn",
+          "example_en": "The drain in the bathroom is blocked.",
+          "example_vi": "Ống dẫn trong phòng tắm bị tắc."
+        },
+        {
+          "meaning_vi": "ống dẫn",
+          "example_en": "Water flows into the drain after the rain.",
+          "example_vi": "Nước chảy vào ống dẫn sau cơn mưa."
+        },
+        {
+          "meaning_vi": "ống dẫn",
+          "example_en": "We need to clean the drain to prevent flooding.",
+          "example_vi": "Chúng ta cần làm sạch ống dẫn để ngăn ngừa ngập lụt."
+        },
+        {
+          "meaning_vi": "ống dẫn",
+          "example_en": "The drain was clogged with leaves.",
+          "example_vi": "Ống dẫn bị tắc nghẽn bởi lá cây."
+        },
+        {
+          "meaning_vi": "sự tiêu hao",
+          "example_en": "The project is a huge drain on our resources.",
+          "example_vi": "Dự án này là một sự tiêu hao lớn đối với nguồn lực của chúng ta."
+        },
+        {
+          "meaning_vi": "sự tiêu hao",
+          "example_en": "Constant travel is a drain on his energy.",
+          "example_vi": "Việc đi lại liên tục là một sự tiêu hao năng lượng đối với anh ấy."
+        },
+        {
+          "meaning_vi": "rút hết",
+          "example_en": "We need to drain the water from the pool.",
+          "example_vi": "Chúng ta cần rút hết nước ra khỏi hồ bơi."
+        },
+        {
+          "meaning_vi": "rút hết",
+          "example_en": "Drain the pasta before adding the sauce.",
+          "example_vi": "Hãy để ráo nước mì ống trước khi thêm nước sốt."
+        },
+        {
+          "meaning_vi": "sự tiêu hao",
+          "example_en": "The war was a drain on the country's economy.",
+          "example_vi": "Cuộc chiến là một sự tiêu hao đối với nền kinh tế đất nước."
+        },
+        {
+          "meaning_vi": "rút hết",
+          "example_en": "He drained his glass in one go.",
+          "example_vi": "Anh ấy uống cạn sạch ly của mình trong một hơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, nghĩa và bổ sung ví dụ.",
+      "word": "drain",
+      "normalized_word": "drain",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The drain in the bathroom is blocked.",
+      "example_vi_clean": "Ống dẫn trong phòng tắm bị tắc."
+    },
+    {
+      "id": 26930,
+      "quiz_meaning_vi": "đột ngột",
+      "meaning_vi_clean": "đột ngột",
+      "examples_clean": [
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The temperature dropped dramatically overnight.",
+          "example_vi": "Nhiệt độ đã giảm đột ngột chỉ sau một đêm."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "His health improved dramatically after the surgery.",
+          "example_vi": "Sức khỏe của anh ấy đã cải thiện đột ngột sau ca phẫu thuật."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The company's profits have increased dramatically this year.",
+          "example_vi": "Lợi nhuận của công ty đã tăng đột ngột trong năm nay."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The landscape changed dramatically as we drove north.",
+          "example_vi": "Phong cảnh thay đổi đột ngột khi chúng tôi lái xe về phía bắc."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The situation has changed dramatically since last week.",
+          "example_vi": "Tình hình đã thay đổi đột ngột kể từ tuần trước."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "Prices have fallen dramatically due to the new policy.",
+          "example_vi": "Giá cả đã giảm đột ngột do chính sách mới."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The population of the city has grown dramatically.",
+          "example_vi": "Dân số của thành phố đã tăng đột ngột."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "She performed dramatically better in the second test.",
+          "example_vi": "Cô ấy đã thể hiện tốt hơn đột ngột trong bài kiểm tra thứ hai."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The crime rate has dropped dramatically in this area.",
+          "example_vi": "Tỷ lệ tội phạm đã giảm đột ngột ở khu vực này."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The weather changed dramatically within an hour.",
+          "example_vi": "Thời tiết đã thay đổi đột ngột trong vòng một giờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ.",
+      "word": "dramatically",
+      "normalized_word": "dramatically",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The temperature dropped dramatically overnight.",
+      "example_vi_clean": "Nhiệt độ đã giảm đột ngột chỉ sau một đêm."
+    }
+  ]
+}

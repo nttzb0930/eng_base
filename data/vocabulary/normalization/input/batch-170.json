@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-170",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25691,
+      "word": "ceremony",
+      "normalized_word": "ceremony",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'seriməni/",
+      "primary_meaning_vi": "nghi thức",
+      "meaning_vi": "nghi thức, nghi lễ; sự khách sáo, sự kiểu cách; stand; tự nhiên không khách sáo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25692,
+      "word": "certainty",
+      "normalized_word": "certainty",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sə:tnti/",
+      "primary_meaning_vi": "điều chắc chắn",
+      "meaning_vi": "điều chắc chắn; vật đã nắm trong tay; sự tin chắc, sự chắc chắn; chắc chắn không còn hồ nghi gì nữa; nhất định; chớ nên thả mồi bắt bóng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25693,
+      "word": "challenging",
+      "normalized_word": "challenging",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "đề ra những vấn đề thử thách năng lực của ai",
+      "meaning_vi": "đề ra những vấn đề thử thách năng lực của ai; kích thích",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25694,
+      "word": "champion",
+      "normalized_word": "champion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "tính từ & phó từ",
+      "phonetic": "/'tʃæmpjən/",
+      "primary_meaning_vi": "người vô địch",
+      "meaning_vi": "người vô địch, nhà quán quân; được giải nhất; vô địch, quán quân; chiến sĩ; bảo vệ, bênh vực, đấu tranh cho; cừ, tuyệt",
+      "example_en": "The defending champion is expected to defeat his challenger.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Barcelona is eligible to play in FIFA Club World Cup as the champion of Europe.",
+          "example_vi": null
+        },
+        {
+          "example_en": "champion of women's suffrage",
+          "example_vi": null
+        },
+        {
+          "example_en": "champion of the poor",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25695,
+      "word": "channel",
+      "normalized_word": "channel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'tʃænl/",
+      "primary_meaning_vi": "eo biển",
+      "meaning_vi": "eo biển; lòng sông, lòng suối; kênh mương, lạch; ống dẫn (nước dầu...); đường; nguồn (tin tức, ý nghĩ, tư tưởng...); kênh; đường xoi; máng, rãnh; biển Măng sơ; đào rãnh, đào mương; chảy xói (đất) thành khe rãnh (nước mưa); chuyển; hướng vào (cái gì), xoáy vào (cái gì); bào đường xoi",
+      "example_en": "The water coming out of the waterwheel created a standing wave in the channel.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A channel was dredged to allow ocean-going vessels to reach the city.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We were careful to keep our boat in the channel.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The English Channel lies between France and England.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25696,
+      "word": "chaos",
+      "normalized_word": "chaos",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'keiɔs/",
+      "primary_meaning_vi": "thời đại hỗn nguyên",
+      "meaning_vi": "thời đại hỗn nguyên, thời đại hỗn mang; sự hỗn độn, sự hỗn loạn, sự lộn xộn",
+      "example_en": "After the earthquake, the local hospital was in chaos",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25697,
+      "word": "characterise",
+      "normalized_word": "characterise",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kæriktəraiz/ (characterise) /'kæriktəraiz/",
+      "primary_meaning_vi": "biểu thị đặc điểm",
+      "meaning_vi": "biểu thị đặc điểm, mô tả đặc điểm; định rõ đặc điểm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25698,
+      "word": "characterize",
+      "normalized_word": "characterize",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kæriktəraiz/ (characterise) /'kæriktəraiz/",
+      "primary_meaning_vi": "biểu thị đặc điểm",
+      "meaning_vi": "biểu thị đặc điểm, mô tả đặc điểm; định rõ đặc điểm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25699,
+      "word": "charge",
+      "normalized_word": "charge",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/tʃɑ:dʤ/",
+      "primary_meaning_vi": "vật mang",
+      "meaning_vi": "vật mang, vật chở, vật gánh; gánh nặng ((nghĩa đen) & (nghĩa bóng)); số đạn nạp, số thuốc nạp (vào súng); điện tích (nạp vào ắc quy); sự nạp điện, sự tích điện; tiền phải trả, giá tiền, tiền công, tiền thù lao; sự gánh vác (một khoản phí tổn, mọi sự chi phí); nhiệm vụ, bổn phận, trách nhiệm; sự trông nom, sự coi sóc; người được giao cho trông nom, vật được giao cho trông nom; những con chiên của cha cố; mệnh lệnh, huấn thị, chỉ thị; lời buộc tội; sự buộc tội; cuộc tấn công dữ dội, cuộc đột kích ồ ạt; hiệu lệnh đột kích; phụ trách, trưởng, đứng đầu; thường trực, trực; lại tấn công; lại tranh luận; đảm đương, chịu trách nhiệm; bị buông lơi, bị buông lỏng, không ai điều khiển; bắt, bắt giam; nạp đạn, nạp thuốc (vào súng); nạp điện; tọng vào, nhồi nhét; tính giá, đòi trả; tính vào, bắt phải chịu phí tổn, bắt phải gánh vác; ghi sổ (nợ); giao nhiệm vụ, giao việc; buộc tội; tấn công, đột kích; bắc (súng...) đặt ngang (ngọn giáo...); tấn công; đâm bổ vào, nhảy xổ vào",
+      "example_en": "There will be a charge of five dollars.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Pickett did not die leading his famous charge.",
+          "example_vi": null
+        },
+        {
+          "example_en": "That's a slanderous charge of abuse of trust.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The child was in the nanny's charge.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25700,
+      "word": "chariot",
+      "normalized_word": "chariot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'tʃæriət/",
+      "primary_meaning_vi": "xe ngựa (dùng để đánh trận hay chạy đua)",
+      "meaning_vi": "xe ngựa (dùng để đánh trận hay chạy đua); chở bằng xe ngựa",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

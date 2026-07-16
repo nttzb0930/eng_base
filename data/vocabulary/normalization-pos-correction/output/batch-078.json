@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26651,
+      "quiz_meaning_vi": "tiền hoa hồng",
+      "meaning_vi_clean": "tiền hoa hồng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "She gets a 10% commission on every car she sells.",
+          "example_vi": "Cô ấy nhận được 10% tiền hoa hồng cho mỗi chiếc xe bán được."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "He works on commission, so his income varies each month.",
+          "example_vi": "Anh ấy làm việc ăn tiền hoa hồng, vì vậy thu nhập của anh ấy thay đổi mỗi tháng."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "The real estate agent earned a large commission from the sale.",
+          "example_vi": "Người môi giới bất động sản đã kiếm được một khoản tiền hoa hồng lớn từ vụ bán nhà."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "Do you have to pay a commission when you buy shares?",
+          "example_vi": "Bạn có phải trả tiền hoa hồng khi mua cổ phiếu không?"
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "The sales team is motivated by high commission rates.",
+          "example_vi": "Đội ngũ bán hàng được thúc đẩy bởi tỷ lệ tiền hoa hồng cao."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "She earned a handsome commission on the deal.",
+          "example_vi": "Cô ấy đã kiếm được một khoản tiền hoa hồng kha khá từ thương vụ này."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "Some travel agents charge a small commission for booking flights.",
+          "example_vi": "Một số đại lý du lịch thu một khoản tiền hoa hồng nhỏ cho việc đặt vé máy bay."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "His salary is low, but he makes a lot of money from commission.",
+          "example_vi": "Lương của anh ấy thấp, nhưng anh ấy kiếm được nhiều tiền từ tiền hoa hồng."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "The bank charges a 2% commission on foreign currency exchange.",
+          "example_vi": "Ngân hàng thu 2% tiền hoa hồng cho việc đổi ngoại tệ."
+        },
+        {
+          "meaning_vi": "tiền hoa hồng",
+          "example_en": "She received a generous commission for bringing in new clients.",
+          "example_vi": "Cô ấy đã nhận được một khoản tiền hoa hồng hậu hĩnh vì đã mang lại những khách hàng mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'tiền hoa hồng' cho danh từ commission và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tiền hoa hồng' là danh từ và cả 10 ví dụ đều sử dụng từ 'commission' với vai trò danh từ chỉ khoản tiền hoa hồng."
+      },
+      "word": "commission",
+      "normalized_word": "commission",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She gets a 10% commission on every car she sells.",
+      "example_vi_clean": "Cô ấy nhận được 10% tiền hoa hồng cho mỗi chiếc xe bán được."
+    },
+    {
+      "id": 26682,
+      "quiz_meaning_vi": "cụ thể",
+      "meaning_vi_clean": "cụ thể",
+      "examples_clean": [
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "We need concrete evidence before we can make an arrest.",
+          "example_vi": "Chúng tôi cần bằng chứng cụ thể trước khi có thể tiến hành bắt giữ."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "Do you have any concrete plans for the weekend?",
+          "example_vi": "Bạn có kế hoạch cụ thể nào cho cuối tuần chưa?"
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "The police have no concrete proof that he committed the crime.",
+          "example_vi": "Cảnh sát không có bằng chứng cụ thể nào cho thấy anh ta đã phạm tội."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "She offered some concrete suggestions to improve the system.",
+          "example_vi": "Cô ấy đã đưa ra một số gợi ý cụ thể để cải thiện hệ thống."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "It is too early to give any concrete results of the research.",
+          "example_vi": "Còn quá sớm để đưa ra bất kỳ kết quả cụ thể nào của nghiên cứu."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "The government has not yet taken any concrete action on this issue.",
+          "example_vi": "Chính phủ vẫn chưa có bất kỳ hành động cụ thể nào về vấn đề này."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "Can you give me a concrete example of what you mean?",
+          "example_vi": "Bạn có thể cho tôi một ví dụ cụ thể về ý của bạn không?"
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "We need to turn these abstract ideas into concrete proposals.",
+          "example_vi": "Chúng ta cần biến những ý tưởng trừu tượng này thành những đề xuất cụ thể."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "There is no concrete definition of what constitutes a healthy diet.",
+          "example_vi": "Không có định nghĩa cụ thể nào về những gì cấu thành một chế độ ăn uống lành mạnh."
+        },
+        {
+          "meaning_vi": "cụ thể",
+          "example_en": "The company has made concrete progress in reducing carbon emissions.",
+          "example_vi": "Công ty đã đạt được tiến bộ cụ thể trong việc giảm lượng khí thải carbon."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'cụ thể' cho tính từ concrete và cung cấp 10 ví dụ phù hợp, tránh nhầm lẫn với danh từ 'bê tông'.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cụ thể' là tính từ và cả 10 ví dụ đều sử dụng 'concrete' làm tính từ bổ nghĩa cho danh từ đứng sau."
+      },
+      "word": "concrete",
+      "normalized_word": "concrete",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We need concrete evidence before we can make an arrest.",
+      "example_vi_clean": "Chúng tôi cần bằng chứng cụ thể trước khi có thể tiến hành bắt giữ."
+    },
+    {
+      "id": 26685,
+      "quiz_meaning_vi": "hình nón",
+      "meaning_vi_clean": "hình nón",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The volcano has a perfect cone shape.",
+          "example_vi": "Ngọn núi lửa có hình nón hoàn hảo."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "She bought an ice cream cone at the park.",
+          "example_vi": "Cô ấy đã mua một cây kem hình nón ở công viên."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The traffic cone was placed in the middle of the road.",
+          "example_vi": "Chiếc cọc giao thông hình nón được đặt ở giữa đường."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The party hats were made of paper folded into a cone.",
+          "example_vi": "Những chiếc mũ dự tiệc được làm bằng giấy gấp thành hình nón."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "Pine cones fell from the trees during the storm.",
+          "example_vi": "Những quả thông hình nón đã rụng từ trên cây xuống trong suốt cơn bão."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The light from the flashlight formed a bright cone in the dark.",
+          "example_vi": "Ánh sáng từ đèn pin tạo thành một hình nón sáng trong bóng tối."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "He used a paper cone to pour the oil into the engine.",
+          "example_vi": "Anh ấy đã dùng một cái phễu giấy hình nón để đổ dầu vào động cơ."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The dog had to wear a plastic cone around its neck after surgery.",
+          "example_vi": "Chú chó phải đeo một cái loa nhựa hình nón quanh cổ sau khi phẫu thuật."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The geometry teacher drew a cone on the blackboard.",
+          "example_vi": "Giáo viên hình học đã vẽ một hình nón lên bảng đen."
+        },
+        {
+          "meaning_vi": "hình nón",
+          "example_en": "The roof of the tower was shaped like a cone.",
+          "example_vi": "Mái của tòa tháp có hình dạng giống như một hình nón."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'hình nón' cho danh từ cone và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hình nón' là danh từ và cả 10 ví dụ đều sử dụng 'cone' làm danh từ chỉ vật thể hoặc hình dạng hình nón."
+      },
+      "word": "cone",
+      "normalized_word": "cone",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The volcano has a perfect cone shape.",
+      "example_vi_clean": "Ngọn núi lửa có hình nón hoàn hảo."
+    },
+    {
+      "id": 26690,
+      "quiz_meaning_vi": "hạn chế",
+      "meaning_vi_clean": "hạn chế",
+      "examples_clean": [
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "Please confine your remarks to the topic under discussion.",
+          "example_vi": "Xin vui lòng hạn chế các nhận xét của bạn trong chủ đề đang được thảo luận."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The doctor advised him to confine his activities to light exercise.",
+          "example_vi": "Bác sĩ khuyên anh ấy nên hạn chế các hoạt động của mình ở mức tập thể dục nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "We must confine our spending to essential items only.",
+          "example_vi": "Chúng ta phải hạn chế chi tiêu của mình chỉ vào những mặt hàng thiết yếu."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The fire was confined to the kitchen and did not spread.",
+          "example_vi": "Đám cháy đã bị hạn chế trong nhà bếp và không lan rộng."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "She chose to confine her research to the local area.",
+          "example_vi": "Cô ấy đã chọn hạn chế nghiên cứu của mình trong khu vực địa phương."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The discussion was confined to the financial aspects of the project.",
+          "example_vi": "Cuộc thảo luận đã bị hạn chế trong các khía cạnh tài chính của dự án."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "He decided to confine his speech to ten minutes.",
+          "example_vi": "Anh ấy quyết định hạn chế bài phát biểu của mình trong vòng mười phút."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The disease is not confined to any single country.",
+          "example_vi": "Căn bệnh này không bị hạn chế ở bất kỳ quốc gia đơn lẻ nào."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "I will confine my questions to the witness's personal experience.",
+          "example_vi": "Tôi sẽ hạn chế các câu hỏi của mình trong trải nghiệm cá nhân của nhân chứng."
+        },
+        {
+          "meaning_vi": "hạn chế",
+          "example_en": "The storm damage was confined to the coastal regions.",
+          "example_vi": "Thiệt hại do bão đã bị hạn chế ở các vùng ven biển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'hạn chế' cho động từ confine và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hạn chế' là động từ và cả 10 ví dụ đều sử dụng 'confine' làm động từ (ở dạng chủ động hoặc bị động)."
+      },
+      "word": "confine",
+      "normalized_word": "confine",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please confine your remarks to the topic under discussion.",
+      "example_vi_clean": "Xin vui lòng hạn chế các nhận xét của bạn trong chủ đề đang được thảo luận."
+    },
+    {
+      "id": 26697,
+      "quiz_meaning_vi": "sự đồng ý",
+      "meaning_vi_clean": "sự đồng ý",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "You cannot use my photos without my written consent.",
+          "example_vi": "Bạn không thể sử dụng ảnh của tôi nếu không có sự đồng ý bằng văn bản của tôi."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "The doctor obtained the patient's consent before the surgery.",
+          "example_vi": "Bác sĩ đã có được sự đồng ý của bệnh nhân trước khi phẫu thuật."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "Children under 18 need parental consent to go on the trip.",
+          "example_vi": "Trẻ em dưới 18 tuổi cần có sự đồng ý của cha mẹ để tham gia chuyến đi."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "By common consent, she was chosen as the leader of the group.",
+          "example_vi": "Bởi sự đồng ý chung, cô ấy đã được chọn làm trưởng nhóm."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "He gave his consent to the proposal after a long discussion.",
+          "example_vi": "Anh ấy đã đưa ra sự đồng ý của mình đối với đề xuất sau một cuộc thảo luận dài."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "The project cannot proceed without the consent of the local council.",
+          "example_vi": "Dự án không thể tiến hành nếu không có sự đồng ý của hội đồng địa phương."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "She married him without her parents' consent.",
+          "example_vi": "Cô ấy đã kết hôn với anh ấy mà không có sự đồng ý của cha mẹ cô ấy."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "The school must get consent from parents for any field trips.",
+          "example_vi": "Nhà trường phải có được sự đồng ý từ phụ huynh cho bất kỳ chuyến đi thực tế nào."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "They acted in mutual consent to end the business partnership.",
+          "example_vi": "Họ đã hành động trong sự đồng ý lẫn nhau để chấm dứt quan hệ đối tác kinh doanh."
+        },
+        {
+          "meaning_vi": "sự đồng ý",
+          "example_en": "The government cannot change the law without the consent of parliament.",
+          "example_vi": "Chính phủ không thể thay đổi luật nếu không có sự đồng ý của nghị viện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'sự đồng ý' cho danh từ consent và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự đồng ý' là danh từ và cả 10 ví dụ đều sử dụng 'consent' làm danh từ."
+      },
+      "word": "consent",
+      "normalized_word": "consent",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You cannot use my photos without my written consent.",
+      "example_vi_clean": "Bạn không thể sử dụng ảnh của tôi nếu không có sự đồng ý bằng văn bản của tôi."
+    },
+    {
+      "id": 26707,
+      "quiz_meaning_vi": "đương đại",
+      "meaning_vi_clean": "đương đại",
+      "examples_clean": [
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "The museum features a large collection of contemporary art.",
+          "example_vi": "Bảo tàng trưng bày một bộ sưu tập lớn về nghệ thuật đương đại."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "She prefers contemporary music to classical music.",
+          "example_vi": "Cô ấy thích âm nhạc đương đại hơn âm nhạc cổ điển."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "The house has a very contemporary design with lots of glass.",
+          "example_vi": "Ngôi nhà có thiết kế rất đương đại với nhiều kính."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "We are studying contemporary British literature this semester.",
+          "example_vi": "Chúng tôi đang học văn học Anh đương đại trong học kỳ này."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "The play deals with contemporary social issues in a humorous way.",
+          "example_vi": "Vở kịch giải quyết các vấn đề xã hội đương đại một cách hài hước."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "He is one of the most influential contemporary writers.",
+          "example_vi": "Anh ấy là một trong những nhà văn đương đại có ảnh hưởng nhất."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "The exhibition showcases the work of contemporary photographers.",
+          "example_vi": "Triển lãm giới thiệu tác phẩm của các nhiếp ảnh gia đương đại."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "She is interested in contemporary fashion trends.",
+          "example_vi": "Cô ấy quan tâm đến các xu hướng thời trang đương đại."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "The building is a fine example of contemporary architecture.",
+          "example_vi": "Tòa nhà là một ví dụ điển hình của kiến trúc đương đại."
+        },
+        {
+          "meaning_vi": "đương đại",
+          "example_en": "They discuss contemporary political events on their podcast.",
+          "example_vi": "Họ thảo luận về các sự kiện chính trị đương đại trên podcast của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'đương đại' cho tính từ contemporary và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đương đại' là tính từ và cả 10 ví dụ đều sử dụng 'contemporary' làm tính từ bổ nghĩa cho danh từ đứng sau."
+      },
+      "word": "contemporary",
+      "normalized_word": "contemporary",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The museum features a large collection of contemporary art.",
+      "example_vi_clean": "Bảo tàng trưng bày một bộ sưu tập lớn về nghệ thuật đương đại."
+    },
+    {
+      "id": 26709,
+      "quiz_meaning_vi": "hài lòng",
+      "meaning_vi_clean": "hài lòng",
+      "examples_clean": [
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "She was content with her life in the small village.",
+          "example_vi": "Cô ấy hài lòng với cuộc sống của mình ở ngôi làng nhỏ."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "He seems content to sit and read his book all day.",
+          "example_vi": "Anh ấy có vẻ hài lòng khi ngồi đọc sách cả ngày."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "Are you content with the progress you have made so far?",
+          "example_vi": "Bạn có hài lòng với tiến bộ mà bạn đã đạt được cho đến nay không?"
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "They were content with a simple meal of bread and cheese.",
+          "example_vi": "Họ hài lòng với một bữa ăn đơn giản gồm bánh mì và phô mai."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "She is content to let her husband make all the decisions.",
+          "example_vi": "Cô ấy hài lòng để chồng mình đưa ra mọi quyết định."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "He was content with his test results and did not ask for a re-grade.",
+          "example_vi": "Anh ấy hài lòng với kết quả kiểm tra của mình và không yêu cầu chấm lại."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "The cat looked very content sleeping by the warm fireplace.",
+          "example_vi": "Chú mèo trông rất hài lòng khi ngủ bên lò sưởi ấm áp."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "She is not content with just being a housewife; she wants a career.",
+          "example_vi": "Cô ấy không hài lòng với việc chỉ làm một bà nội trợ; cô ấy muốn có sự nghiệp."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "He lived a quiet and content life in the countryside.",
+          "example_vi": "Anh ấy đã sống một cuộc sống yên bình và hài lòng ở vùng nông thôn."
+        },
+        {
+          "meaning_vi": "hài lòng",
+          "example_en": "They are content to wait until the prices drop before buying.",
+          "example_vi": "Họ hài lòng chờ đợi cho đến khi giá giảm trước khi mua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'hài lòng' cho tính từ content và cung cấp 10 ví dụ phù hợp, tránh nhầm lẫn với danh từ 'nội dung'.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hài lòng' là tính từ và cả 10 ví dụ đều sử dụng 'content' làm tính từ vị ngữ (sau động từ to be hoặc seem) hoặc bổ nghĩa cho danh từ."
+      },
+      "word": "content",
+      "normalized_word": "content",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She was content with her life in the small village.",
+      "example_vi_clean": "Cô ấy hài lòng với cuộc sống của mình ở ngôi làng nhỏ."
+    },
+    {
+      "id": 26710,
+      "quiz_meaning_vi": "hợp đồng",
+      "meaning_vi_clean": "hợp đồng",
+      "examples_clean": [
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "She signed a three-year contract with the publishing company.",
+          "example_vi": "Cô ấy đã ký một hợp đồng ba năm với công ty xuất bản."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "You should read the contract carefully before signing it.",
+          "example_vi": "Bạn nên đọc kỹ hợp đồng trước khi ký."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "The company has won a major contract to build the new bridge.",
+          "example_vi": "Công ty đã giành được một hợp đồng lớn để xây dựng cây cầu mới."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "He is under contract to play for the team until next year.",
+          "example_vi": "Anh ấy đang theo hợp đồng chơi cho đội bóng cho đến năm sau."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "They are negotiating a new contract for the supply of raw materials.",
+          "example_vi": "Họ đang đàm phán một hợp đồng mới cho việc cung cấp nguyên liệu thô."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "If you break the contract, you will have to pay a fine.",
+          "example_vi": "Nếu bạn vi phạm hợp đồng, bạn sẽ phải nộp phạt."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "The contract specifies that the work must be completed by June.",
+          "example_vi": "Hợp đồng quy định rõ rằng công việc phải được hoàn thành trước tháng Sáu."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "She decided to terminate her employment contract early.",
+          "example_vi": "Cô ấy đã quyết định chấm dứt hợp đồng lao động của mình sớm."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "Both parties must agree to any changes in the contract.",
+          "example_vi": "Cả hai bên phải đồng ý với bất kỳ thay đổi nào trong hợp đồng."
+        },
+        {
+          "meaning_vi": "hợp đồng",
+          "example_en": "The lawyer drafted a formal contract for the business partnership.",
+          "example_vi": "Luật sư đã soạn thảo một hợp đồng chính thức cho quan hệ đối tác kinh doanh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'hợp đồng' cho danh từ contract và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hợp đồng' là danh từ và cả 10 ví dụ đều sử dụng 'contract' làm danh từ chỉ văn bản thỏa thuận pháp lý."
+      },
+      "word": "contract",
+      "normalized_word": "contract",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She signed a three-year contract with the publishing company.",
+      "example_vi_clean": "Cô ấy đã ký một hợp đồng ba năm với công ty xuất bản."
+    },
+    {
+      "id": 26726,
+      "quiz_meaning_vi": "đồng",
+      "meaning_vi_clean": "đồng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng",
+          "example_en": "Copper is a very good conductor of electricity.",
+          "example_vi": "Đồng là một chất dẫn điện rất tốt."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The pipes in the old house were made of copper.",
+          "example_vi": "Các đường ống trong ngôi nhà cũ được làm bằng đồng."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "She wore a beautiful copper bracelet on her wrist.",
+          "example_vi": "Cô ấy đã đeo một chiếc vòng tay bằng đồng rất đẹp trên cổ tay."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The roof of the church is covered with copper plates.",
+          "example_vi": "Mái của nhà thờ được bao phủ bởi các tấm đồng."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "Copper is often mixed with other metals to make alloys.",
+          "example_vi": "Đồng thường được trộn với các kim loại khác để tạo ra hợp kim."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The price of copper has risen significantly this year.",
+          "example_vi": "Giá đồng đã tăng đáng kể trong năm nay."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "They found ancient copper coins during the excavation.",
+          "example_vi": "Họ đã tìm thấy những đồng tiền xu bằng đồng cổ trong suốt cuộc khai quật."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The kitchen was decorated with shiny copper pots and pans.",
+          "example_vi": "Nhà bếp được trang trí bằng những chiếc xoong và chảo bằng đồng sáng bóng."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "Mining copper is a major industry in this region.",
+          "example_vi": "Khai thác đồng là một ngành công nghiệp lớn ở khu vực này."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The statue has turned green over time due to the oxidation of copper.",
+          "example_vi": "Bức tượng đã chuyển sang màu xanh lá cây theo thời gian do sự oxy hóa của đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'đồng' (kim loại đồng) cho danh từ copper và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đồng' là danh từ chỉ chất liệu kim loại và cả 10 ví dụ đều sử dụng 'copper' làm danh từ (hoặc danh từ đóng vai trò bổ nghĩa)."
+      },
+      "word": "copper",
+      "normalized_word": "copper",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Copper is a very good conductor of electricity.",
+      "example_vi_clean": "Đồng là một chất dẫn điện rất tốt."
+    },
+    {
+      "id": 26727,
+      "quiz_meaning_vi": "san hô",
+      "meaning_vi_clean": "san hô",
+      "examples_clean": [
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The divers were amazed by the colorful coral reefs.",
+          "example_vi": "Các thợ lặn đã kinh ngạc trước những rạn san hô đầy màu sắc."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Coral is very sensitive to changes in water temperature.",
+          "example_vi": "San hô rất nhạy cảm với những thay đổi của nhiệt độ nước."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "She bought a necklace made of pink coral.",
+          "example_vi": "Cô ấy đã mua một chiếc vòng cổ làm bằng san hô màu hồng."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Pollution is causing serious damage to the coral in this area.",
+          "example_vi": "Ô nhiễm đang gây ra thiệt hại nghiêm trọng cho san hô ở khu vực này."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Many species of fish live and feed among the coral.",
+          "example_vi": "Nhiều loài cá sống và kiếm ăn giữa các rạn san hô."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "It is illegal to collect coral from the marine park.",
+          "example_vi": "Việc thu thập san hô từ công viên bảo tồn biển là bất hợp pháp."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The boat's anchor accidentally damaged the fragile coral.",
+          "example_vi": "Mỏ neo của con thuyền đã vô tình làm hỏng rạn san hô mỏng manh."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Scientists are studying ways to protect the dying coral.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu các cách để bảo vệ rạn san hô đang chết dần."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The island is surrounded by a beautiful ring of coral.",
+          "example_vi": "Hòn đảo được bao quanh bởi một vòng san hô tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "He took some amazing underwater photos of the coral.",
+          "example_vi": "Anh ấy đã chụp được một số bức ảnh dưới nước tuyệt vời về san hô."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'san hô' cho danh từ coral và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'san hô' là danh từ và cả 10 ví dụ đều sử dụng 'coral' làm danh từ chỉ sinh vật biển san hô."
+      },
+      "word": "coral",
+      "normalized_word": "coral",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The divers were amazed by the colorful coral reefs.",
+      "example_vi_clean": "Các thợ lặn đã kinh ngạc trước những rạn san hô đầy màu sắc."
+    }
+  ]
+}

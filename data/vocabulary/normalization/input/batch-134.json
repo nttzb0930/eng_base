@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-134",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25331,
+      "word": "pass",
+      "normalized_word": "pass",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/pɑ:s/",
+      "primary_meaning_vi": "đi",
+      "meaning_vi": "đi, đi lên; đi qua, đi ngang qua; trải qua; chuyển qua, truyền, trao, đưa; chuyển qua, chuyển sang, biến thành, trở thành, đổi thành; qua đi, biến đi, mất đi; chết; trôi đi, trôi qua; được thông qua, được chấp nhận; thi đỗ; xảy ra, được làm, được nói đến; bị bỏ qua, bị lờ đi; qua đi không ai hay biết; bỏ qua, lờ đi; bỏ lượt, bỏ bài; được tuyên án; xét xử, tuyên án; lưu hành, tiêu được (tiền); đâm, tấn công (đấu kiếm); đi ngoài, đi tiêu; qua, đi qua, đi ngang qua, vượt qua; quá, vượt quá, hơn hẳn; thông qua, được đem qua thông qua; qua được, đạt tiêu chuẩn qua (kỳ thi, cuộc thử thách...); duyệt; đưa qua, chuyển qua, truyền tay, trao; chuyền (bóng...); cho lưu hành, đem tiêu (tiền giả...); phát biểu, nói ra, đưa ra (ý kiến...); tuyên (án...); hứa (lời...); trôi qua, đi qua, đi mất; chết, qua đời; đi qua, đi ngang qua; bỏ qua, lờ đi, nhắm mắt bỏ qua, làm ngơ; được coi là; có tiếng là; chết ((cũng) to pass one's checks); mất đi, biến mất (cảm giác...); diễn ra, được thực hiện, được hoàn thành; đem tiêu trót lọt (tiền giả...); gian dối tống ấn (cho ai cái gì...); đánh lạc, sự chú ý, làm cho không chú ý (cái gì); đi tiếp; chết, qua đời; say không biết trời đất gì; mê đi, bất tỉnh; băng qua; chết; làm lơ đi, bỏ qua; chuyền tay, chuyền theo vòng; đi vòng quanh; cuộn tròn; đi qua; trải qua, kinh qua; từ chối, từ bỏ, khước từ; đái; sự thi đỗ; sự trúng tuyển hạng thứ (ở trường đại học); hoàn cảnh gay go, tình thế gay go; sự chuyền bóng (bóng đá); cú đâm, cú tấn công (đấu kiếm); trò gian dối, trò bài tây; sự đưa tay qua (làm thôi miên...); bring; xảy ra; tán tỉnh gỡ gạc ai, gạ gẫm ai; đèo, hẽm núi; con đường độc đạo, vị trí cửa ngõ (để tiến vào một nước); eo biển tàu bè qua lại được; cửa thông cho cá vào đăng; khuôn cán, rãnh cán; phản bội một cuộc đấu tranh",
+      "example_en": "the passes of the Mississippi",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My first pass at a career of writing proved unsuccessful.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I gained three passes at A-level, in mathematics, French, and English literature.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The man kicked his friend out of the house after he made a pass at his wife.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25332,
+      "word": "passage",
+      "normalized_word": "passage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'pæsidʤ/",
+      "primary_meaning_vi": "sự đi qua",
+      "meaning_vi": "sự đi qua, sự trôi qua; lối đi; hành lang; quyền đi qua (một nơi nào...); sự chuyển qua; chuyến đi (tàu biển, máy bay); đoạn (bài văn, sách...); sự thông qua (một dự luật...); quan hệ giữa hai người; sự chuyện trò trao đổi giữa hai người; chuyện trò tri kỷ giữa hai người; nét lướt; sự đi ỉa; bird; (nghĩa bóng) trận đánh; cuộc va chạm, cuộc cãi cọ; đi né sang một bên (ngựa, người cưỡi ngựa); làm cho (ngựa) đi né sang một bên",
+      "example_en": "She struggled to play the difficult passages.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He made his passage through the trees carefully, mindful of the stickers.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The company was one of the prime movers in lobbying for the passage of the act.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After 24 hours, the culture was passaged to an agar plate.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25333,
+      "word": "passenger",
+      "normalized_word": "passenger",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'pæsindʤə/",
+      "primary_meaning_vi": "hành khách (đi tàu xe...)",
+      "meaning_vi": "hành khách (đi tàu xe...); thành viên không có khả năng làm được trò trống gì; thành viên kém không đóng góp đóng góp được gì (cho tổ, đội...); (thuộc) hành khách; để chở hành khách",
+      "example_en": "Somebody in a team who does not do their fair share of the work.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25334,
+      "word": "pasta",
+      "normalized_word": "pasta",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "mì ống",
+      "meaning_vi": "mì ống, mì sợi; món mì",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25335,
+      "word": "path",
+      "normalized_word": "path",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/pɑ:θ, snh pɑ:ðz/",
+      "primary_meaning_vi": "đường mòn",
+      "meaning_vi": "đường mòn, đường nhỏ; con đường, đường đi, đường lối",
+      "example_en": "the path of a meteor, of a caravan, or of a storm",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25336,
+      "word": "pc",
+      "normalized_word": "pc",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "máy tính cá nhân",
+      "meaning_vi": "máy tính cá nhân",
+      "example_en": "only a small percent attain the top ranks",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I’d like another piece of pie.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a piece of machinery",
+          "example_vi": null
+        },
+        {
+          "example_en": "a sixpenny piece",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25337,
+      "word": "pea",
+      "normalized_word": "pea",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/pi:/",
+      "primary_meaning_vi": "đậu Hà-lan",
+      "meaning_vi": "đậu Hà-lan; đậu; like",
+      "example_en": "The stock market reached a peak in September 1929.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They reached the peak after 8 hours of climbing.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25338,
+      "word": "peaceful",
+      "normalized_word": "peaceful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'pi:sful/",
+      "primary_meaning_vi": "hoà bình",
+      "meaning_vi": "hoà bình, thái bình; yên ổn, thanh bình; yên lặng",
+      "example_en": "peaceful protest",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25339,
+      "word": "pear",
+      "normalized_word": "pear",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/peə/",
+      "primary_meaning_vi": "quả lê",
+      "meaning_vi": "quả lê; cây lê",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25340,
+      "word": "pence",
+      "normalized_word": "pence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều pence chỉ giá trị,  pennies chỉ số đồng tiền",
+      "phonetic": "/'peni/",
+      "primary_meaning_vi": "đồng xu penni (1 qoành 2 silinh)",
+      "meaning_vi": "đồng xu penni (1 qoành 2 silinh); ,  (thông tục) đồng xu (1 qoành 00 đô la); số tiền; việc đã làm thì phải làm đến nơi đến chốn; anh đang nghĩ gì mà mê mải thế?; tiểu thuyết rùng rợn; một áo trắng đụp hai màu (chế những người ăn mặc loè loẹt...); tiết kiệm đồng nào hay đồng ấy; chú ý từng xu; nhịn trầu mua trâu; làm ăn lương thiện",
+      "example_en": "to turn an honest penny",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24061,
+      "quiz_meaning_vi": "chịu đựng",
+      "meaning_vi_clean": "chịu đựng; mang; sinh; con gấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "I cannot bear the noise anymore.",
+          "example_vi": "Tôi không thể chịu đựng tiếng ồn này thêm được nữa."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "She bore the pain with great courage.",
+          "example_vi": "Cô ấy đã chịu đựng nỗi đau với lòng dũng cảm tuyệt vời."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "It is hard to bear such a loss.",
+          "example_vi": "Thật khó để chịu đựng sự mất mát như vậy."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "He could hardly bear the suspense.",
+          "example_vi": "Anh ấy khó lòng chịu đựng được sự hồi hộp này."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "The tree bears fruit every summer.",
+          "example_vi": "Cây này mang trái vào mỗi mùa hè."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "She bears a striking resemblance to her mother.",
+          "example_vi": "Cô ấy mang nét giống mẹ mình một cách đáng kinh ngạc."
+        },
+        {
+          "meaning_vi": "sinh",
+          "example_en": "She has borne three children.",
+          "example_vi": "Cô ấy đã sinh ba người con."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "We saw a large brown bear in the forest.",
+          "example_vi": "Chúng tôi thấy một con gấu nâu lớn trong rừng."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "The bear climbed the tree to find honey.",
+          "example_vi": "Con gấu trèo lên cây để tìm mật ong."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "The document bears his signature.",
+          "example_vi": "Tài liệu này mang chữ ký của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ loại động từ, loại bỏ các nghĩa lóng và nghĩa chuyên ngành chứng khoán, bổ sung ví dụ minh họa cho các nghĩa chính.",
+      "word": "bear",
+      "normalized_word": "bear",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I cannot bear the noise anymore.",
+      "example_vi_clean": "Tôi không thể chịu đựng tiếng ồn này thêm được nữa."
+    },
+    {
+      "id": 24062,
+      "quiz_meaning_vi": "đẹp",
+      "meaning_vi_clean": "đẹp; hay; tốt",
+      "examples_clean": [
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "She looks beautiful in that dress.",
+          "example_vi": "Cô ấy trông thật đẹp trong chiếc váy đó."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "It is a beautiful day for a picnic.",
+          "example_vi": "Hôm nay là một ngày đẹp trời để đi dã ngoại."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "The sunset over the ocean was beautiful.",
+          "example_vi": "Cảnh hoàng hôn trên đại dương thật đẹp."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "They live in a beautiful house.",
+          "example_vi": "Họ sống trong một ngôi nhà đẹp."
+        },
+        {
+          "meaning_vi": "hay",
+          "example_en": "That is a beautiful piece of music.",
+          "example_vi": "Đó là một bản nhạc rất hay."
+        },
+        {
+          "meaning_vi": "hay",
+          "example_en": "He told a beautiful story to the children.",
+          "example_vi": "Anh ấy đã kể một câu chuyện rất hay cho bọn trẻ."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "It was a beautiful gesture to help them.",
+          "example_vi": "Đó là một hành động thật tốt khi giúp đỡ họ."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "The garden is beautiful in the spring.",
+          "example_vi": "Khu vườn thật đẹp vào mùa xuân."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "She has a beautiful smile.",
+          "example_vi": "Cô ấy có một nụ cười đẹp."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "We had a beautiful time together.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian thật tốt bên nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ cho các nghĩa hay và tốt.",
+      "word": "beautiful",
+      "normalized_word": "beautiful",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She looks beautiful in that dress.",
+      "example_vi_clean": "Cô ấy trông thật đẹp trong chiếc váy đó."
+    },
+    {
+      "id": 24063,
+      "quiz_meaning_vi": "vì",
+      "meaning_vi_clean": "vì; bởi vì",
+      "examples_clean": [
+        {
+          "meaning_vi": "vì",
+          "example_en": "I stayed home because it was raining.",
+          "example_vi": "Tôi ở nhà vì trời đang mưa."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "He failed the test because he did not study.",
+          "example_vi": "Anh ấy trượt bài kiểm tra vì anh ấy không học bài."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "She is happy because she passed the exam.",
+          "example_vi": "Cô ấy vui vì cô ấy đã đỗ kỳ thi."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "We left early because we were tired.",
+          "example_vi": "Chúng tôi rời đi sớm vì chúng tôi đã mệt."
+        },
+        {
+          "meaning_vi": "bởi vì",
+          "example_en": "I like him because he is kind.",
+          "example_vi": "Tôi thích anh ấy bởi vì anh ấy tử tế."
+        },
+        {
+          "meaning_vi": "bởi vì",
+          "example_en": "The game was cancelled because of the storm.",
+          "example_vi": "Trận đấu đã bị hủy bởi vì cơn bão."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "I am calling because I need your help.",
+          "example_vi": "Tôi gọi điện vì tôi cần sự giúp đỡ của bạn."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "They are laughing because the joke was funny.",
+          "example_vi": "Họ đang cười vì câu đùa đó rất vui."
+        },
+        {
+          "meaning_vi": "bởi vì",
+          "example_en": "He succeeded because he worked hard.",
+          "example_vi": "Anh ấy thành công bởi vì anh ấy đã làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "I cannot go because I have work to do.",
+          "example_vi": "Tôi không thể đi vì tôi có việc phải làm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa, bổ sung ví dụ để đảm bảo đủ 10 câu.",
+      "word": "because",
+      "normalized_word": "because",
+      "cefr_level": "A1",
+      "pos": "conjunction",
+      "pos_vi_clean": "liên từ",
+      "example_en_clean": "I stayed home because it was raining.",
+      "example_vi_clean": "Tôi ở nhà vì trời đang mưa."
+    },
+    {
+      "id": 24064,
+      "quiz_meaning_vi": "trở nên",
+      "meaning_vi_clean": "trở nên; trở thành; phù hợp",
+      "examples_clean": [
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "It is becoming cold outside.",
+          "example_vi": "Trời đang trở nên lạnh dần."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "The situation became difficult.",
+          "example_vi": "Tình hình đã trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "He became angry when he heard the news.",
+          "example_vi": "Anh ấy trở nên giận dữ khi nghe tin đó."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "The days are becoming longer.",
+          "example_vi": "Ngày đang trở nên dài hơn."
+        },
+        {
+          "meaning_vi": "trở thành",
+          "example_en": "She wants to become a teacher.",
+          "example_vi": "Cô ấy muốn trở thành một giáo viên."
+        },
+        {
+          "meaning_vi": "trở thành",
+          "example_en": "He became a famous writer.",
+          "example_vi": "Anh ấy đã trở thành một nhà văn nổi tiếng."
+        },
+        {
+          "meaning_vi": "trở thành",
+          "example_en": "They became friends at school.",
+          "example_vi": "Họ đã trở thành bạn bè ở trường."
+        },
+        {
+          "meaning_vi": "phù hợp",
+          "example_en": "That color becomes you.",
+          "example_vi": "Màu đó rất phù hợp với bạn."
+        },
+        {
+          "meaning_vi": "trở thành",
+          "example_en": "The caterpillar will become a butterfly.",
+          "example_vi": "Con sâu bướm sẽ trở thành một con bướm."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "Everything became quiet.",
+          "example_vi": "Mọi thứ trở nên yên tĩnh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ cho các nghĩa trở nên, trở thành và phù hợp.",
+      "word": "become",
+      "normalized_word": "become",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It is becoming cold outside.",
+      "example_vi_clean": "Trời đang trở nên lạnh dần."
+    },
+    {
+      "id": 24065,
+      "quiz_meaning_vi": "cái giường",
+      "meaning_vi_clean": "cái giường; nền; lòng sông",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái giường",
+          "example_en": "I am going to bed now.",
+          "example_vi": "Tôi chuẩn bị đi ngủ đây."
+        },
+        {
+          "meaning_vi": "cái giường",
+          "example_en": "She sat on the edge of the bed.",
+          "example_vi": "Cô ấy ngồi trên mép giường."
+        },
+        {
+          "meaning_vi": "cái giường",
+          "example_en": "The bed is very comfortable.",
+          "example_vi": "Cái giường này rất thoải mái."
+        },
+        {
+          "meaning_vi": "cái giường",
+          "example_en": "He made his bed before leaving.",
+          "example_vi": "Anh ấy đã dọn giường trước khi rời đi."
+        },
+        {
+          "meaning_vi": "nền",
+          "example_en": "The flowers were planted in a bed of soil.",
+          "example_vi": "Những bông hoa được trồng trên một nền đất."
+        },
+        {
+          "meaning_vi": "nền",
+          "example_en": "They laid a bed of gravel for the path.",
+          "example_vi": "Họ đã rải một nền sỏi cho con đường."
+        },
+        {
+          "meaning_vi": "lòng sông",
+          "example_en": "The river bed was dry during the summer.",
+          "example_vi": "Lòng sông đã khô cạn trong suốt mùa hè."
+        },
+        {
+          "meaning_vi": "lòng sông",
+          "example_en": "We found stones on the river bed.",
+          "example_vi": "Chúng tôi tìm thấy những viên đá dưới lòng sông."
+        },
+        {
+          "meaning_vi": "cái giường",
+          "example_en": "She stayed in bed all day because she was sick.",
+          "example_vi": "Cô ấy nằm trên giường cả ngày vì bị ốm."
+        },
+        {
+          "meaning_vi": "nền",
+          "example_en": "The house was built on a bed of rock.",
+          "example_vi": "Ngôi nhà được xây trên một nền đá."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa lóng và nghĩa cổ, giữ lại các nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "bed",
+      "normalized_word": "bed",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I am going to bed now.",
+      "example_vi_clean": "Tôi chuẩn bị đi ngủ đây."
+    },
+    {
+      "id": 24066,
+      "quiz_meaning_vi": "buồng ngủ",
+      "meaning_vi_clean": "buồng ngủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "My bedroom is on the second floor.",
+          "example_vi": "Buồng ngủ của tôi ở tầng hai."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "She is cleaning her bedroom.",
+          "example_vi": "Cô ấy đang dọn dẹp buồng ngủ của mình."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "The house has three bedrooms.",
+          "example_vi": "Ngôi nhà có ba buồng ngủ."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "I like to read in my bedroom.",
+          "example_vi": "Tôi thích đọc sách trong buồng ngủ của mình."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "Please keep your bedroom tidy.",
+          "example_vi": "Hãy giữ buồng ngủ của bạn gọn gàng."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "He painted his bedroom blue.",
+          "example_vi": "Anh ấy đã sơn buồng ngủ của mình màu xanh."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "There is a large window in the bedroom.",
+          "example_vi": "Có một cửa sổ lớn trong buồng ngủ."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "She decorated her bedroom with posters.",
+          "example_vi": "Cô ấy trang trí buồng ngủ bằng những tấm áp phích."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "I left my phone in the bedroom.",
+          "example_vi": "Tôi để quên điện thoại trong buồng ngủ."
+        },
+        {
+          "meaning_vi": "buồng ngủ",
+          "example_en": "The bedroom is very quiet at night.",
+          "example_vi": "Buồng ngủ rất yên tĩnh vào ban đêm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "bedroom",
+      "normalized_word": "bedroom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My bedroom is on the second floor.",
+      "example_vi_clean": "Buồng ngủ của tôi ở tầng hai."
+    },
+    {
+      "id": 24067,
+      "quiz_meaning_vi": "con ong",
+      "meaning_vi_clean": "con ong",
+      "examples_clean": [
+        {
+          "meaning_vi": "con ong",
+          "example_en": "A bee landed on the flower.",
+          "example_vi": "Một con ong đậu trên bông hoa."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "Bees make honey.",
+          "example_vi": "Ong làm ra mật."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "I am afraid of being stung by a bee.",
+          "example_vi": "Tôi sợ bị ong đốt."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "The bee flew back to its hive.",
+          "example_vi": "Con ong bay trở về tổ của nó."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "We saw many bees in the garden.",
+          "example_vi": "Chúng tôi thấy nhiều con ong trong vườn."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "The bee is a very busy insect.",
+          "example_vi": "Con ong là một loài côn trùng rất chăm chỉ."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "Don't disturb the bee.",
+          "example_vi": "Đừng làm phiền con ong đó."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "The bee collected nectar from the blossoms.",
+          "example_vi": "Con ong thu thập mật hoa từ những bông hoa."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "A bee buzzed around my head.",
+          "example_vi": "Một con ong vo ve quanh đầu tôi."
+        },
+        {
+          "meaning_vi": "con ong",
+          "example_en": "Bees are important for pollination.",
+          "example_vi": "Ong rất quan trọng cho việc thụ phấn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa lóng, bổ sung đủ 10 ví dụ.",
+      "word": "bee",
+      "normalized_word": "bee",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A bee landed on the flower.",
+      "example_vi_clean": "Một con ong đậu trên bông hoa."
+    },
+    {
+      "id": 24068,
+      "quiz_meaning_vi": "thịt bò",
+      "meaning_vi_clean": "thịt bò",
+      "examples_clean": [
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "We had roast beef for dinner.",
+          "example_vi": "Chúng tôi đã ăn thịt bò nướng cho bữa tối."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "She does not eat beef.",
+          "example_vi": "Cô ấy không ăn thịt bò."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "This beef is very tender.",
+          "example_vi": "Thịt bò này rất mềm."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "I bought some fresh beef at the market.",
+          "example_vi": "Tôi đã mua một ít thịt bò tươi ở chợ."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "Beef is a good source of protein.",
+          "example_vi": "Thịt bò là một nguồn cung cấp protein tốt."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "He is cooking a beef stew.",
+          "example_vi": "Anh ấy đang nấu món thịt bò hầm."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "The menu offers several beef dishes.",
+          "example_vi": "Thực đơn cung cấp một vài món thịt bò."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "I prefer beef to chicken.",
+          "example_vi": "Tôi thích thịt bò hơn thịt gà."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "They served thin slices of beef.",
+          "example_vi": "Họ đã phục vụ những lát thịt bò mỏng."
+        },
+        {
+          "meaning_vi": "thịt bò",
+          "example_en": "The beef was seasoned with herbs.",
+          "example_vi": "Thịt bò đã được tẩm ướp với các loại thảo mộc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa lóng, bổ sung đủ 10 ví dụ.",
+      "word": "beef",
+      "normalized_word": "beef",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We had roast beef for dinner.",
+      "example_vi_clean": "Chúng tôi đã ăn thịt bò nướng cho bữa tối."
+    },
+    {
+      "id": 24069,
+      "quiz_meaning_vi": "trước",
+      "meaning_vi_clean": "trước",
+      "examples_clean": [
+        {
+          "meaning_vi": "trước",
+          "example_en": "I have seen this movie before.",
+          "example_vi": "Tôi đã xem bộ phim này trước đây rồi."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "Please arrive before 8 o'clock.",
+          "example_vi": "Vui lòng đến trước 8 giờ."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "He stood before the crowd.",
+          "example_vi": "Anh ấy đứng trước đám đông."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "Wash your hands before eating.",
+          "example_vi": "Hãy rửa tay trước khi ăn."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "She left before I could say goodbye.",
+          "example_vi": "Cô ấy đã rời đi trước khi tôi kịp nói lời tạm biệt."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "Think before you speak.",
+          "example_vi": "Hãy suy nghĩ trước khi bạn nói."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "The meeting is before lunch.",
+          "example_vi": "Cuộc họp diễn ra trước bữa trưa."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "I have met him before.",
+          "example_vi": "Tôi đã gặp anh ấy trước đây rồi."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "Look before you leap.",
+          "example_vi": "Hãy nhìn trước khi bạn nhảy."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "He finished the work before the deadline.",
+          "example_vi": "Anh ấy đã hoàn thành công việc trước thời hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "before",
+      "normalized_word": "before",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I have seen this movie before.",
+      "example_vi_clean": "Tôi đã xem bộ phim này trước đây rồi."
+    },
+    {
+      "id": 24070,
+      "quiz_meaning_vi": "bắt đầu",
+      "meaning_vi_clean": "bắt đầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "The class begins at nine.",
+          "example_vi": "Lớp học bắt đầu lúc chín giờ."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "It began to rain suddenly.",
+          "example_vi": "Trời bắt đầu mưa đột ngột."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "We should begin the meeting now.",
+          "example_vi": "Chúng ta nên bắt đầu cuộc họp ngay bây giờ."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "She began her career as a teacher.",
+          "example_vi": "Cô ấy bắt đầu sự nghiệp của mình với tư cách là một giáo viên."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "The movie begins with a song.",
+          "example_vi": "Bộ phim bắt đầu bằng một bài hát."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "They began to walk home.",
+          "example_vi": "Họ bắt đầu đi bộ về nhà."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "I want to begin a new project.",
+          "example_vi": "Tôi muốn bắt đầu một dự án mới."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "The story begins in a small village.",
+          "example_vi": "Câu chuyện bắt đầu tại một ngôi làng nhỏ."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "He began to understand the problem.",
+          "example_vi": "Anh ấy bắt đầu hiểu ra vấn đề."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "Let us begin the lesson.",
+          "example_vi": "Hãy để chúng ta bắt đầu bài học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "begin",
+      "normalized_word": "begin",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The class begins at nine.",
+      "example_vi_clean": "Lớp học bắt đầu lúc chín giờ."
+    }
+  ]
+}

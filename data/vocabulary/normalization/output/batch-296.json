@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26951,
+      "quiz_meaning_vi": "hướng đông",
+      "meaning_vi_clean": "hướng đông; về phía đông",
+      "examples_clean": [
+        {
+          "meaning_vi": "hướng đông",
+          "example_en": "The wind was blowing in an eastward direction.",
+          "example_vi": "Gió đang thổi theo hướng đông."
+        },
+        {
+          "meaning_vi": "hướng đông",
+          "example_en": "They traveled along the eastward coast.",
+          "example_vi": "Họ đã đi dọc theo bờ biển hướng đông."
+        },
+        {
+          "meaning_vi": "hướng đông",
+          "example_en": "The eastward expansion of the city is planned.",
+          "example_vi": "Sự mở rộng về hướng đông của thành phố đã được lên kế hoạch."
+        },
+        {
+          "meaning_vi": "hướng đông",
+          "example_en": "We observed the eastward movement of the storm.",
+          "example_vi": "Chúng tôi quan sát thấy sự di chuyển về hướng đông của cơn bão."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The ship sailed eastward across the ocean.",
+          "example_vi": "Con tàu đã đi về phía đông băng qua đại dương."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "He looked eastward toward the rising sun.",
+          "example_vi": "Anh ấy nhìn về phía đông nơi mặt trời đang mọc."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The road continues eastward for ten miles.",
+          "example_vi": "Con đường tiếp tục chạy về phía đông trong mười dặm."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "Birds migrate eastward during the spring.",
+          "example_vi": "Các loài chim di cư về phía đông vào mùa xuân."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The train headed eastward from the station.",
+          "example_vi": "Đoàn tàu hướng về phía đông từ nhà ga."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "They walked eastward to reach the village.",
+          "example_vi": "Họ đã đi bộ về phía đông để đến ngôi làng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành phó từ/tính từ, bổ sung 10 ví dụ minh họa rõ nghĩa.",
+      "word": "eastward",
+      "normalized_word": "eastward",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The wind was blowing in an eastward direction.",
+      "example_vi_clean": "Gió đang thổi theo hướng đông."
+    },
+    {
+      "id": 26952,
+      "quiz_meaning_vi": "về phía đông",
+      "meaning_vi_clean": "về phía đông",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The river flows eastwards into the sea.",
+          "example_vi": "Con sông chảy về phía đông ra biển."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "They traveled eastwards to explore new lands.",
+          "example_vi": "Họ đã đi về phía đông để khám phá những vùng đất mới."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The army moved eastwards during the night.",
+          "example_vi": "Đội quân đã di chuyển về phía đông trong đêm."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "Look eastwards to see the morning light.",
+          "example_vi": "Hãy nhìn về phía đông để thấy ánh sáng ban mai."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The wind shifted eastwards suddenly.",
+          "example_vi": "Gió đã đổi hướng về phía đông một cách đột ngột."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "We drove eastwards along the highway.",
+          "example_vi": "Chúng tôi lái xe về phía đông dọc theo đường cao tốc."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The clouds drifted slowly eastwards.",
+          "example_vi": "Những đám mây trôi chậm rãi về phía đông."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The path leads eastwards through the forest.",
+          "example_vi": "Con đường dẫn về phía đông xuyên qua khu rừng."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "He pointed eastwards toward the mountains.",
+          "example_vi": "Anh ấy chỉ tay về phía đông về phía những ngọn núi."
+        },
+        {
+          "meaning_vi": "về phía đông",
+          "example_en": "The migration pattern is primarily eastwards.",
+          "example_vi": "Mô hình di cư chủ yếu là về phía đông."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ tự nhiên.",
+      "word": "eastwards",
+      "normalized_word": "eastwards",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The river flows eastwards into the sea.",
+      "example_vi_clean": "Con sông chảy về phía đông ra biển."
+    },
+    {
+      "id": 26953,
+      "quiz_meaning_vi": "về phương diện sinh thái",
+      "meaning_vi_clean": "về phương diện sinh thái",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The project is ecologically sound and sustainable.",
+          "example_vi": "Dự án này hợp lý và bền vững về phương diện sinh thái."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "We must manage our resources ecologically.",
+          "example_vi": "Chúng ta phải quản lý tài nguyên của mình về phương diện sinh thái."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The area is ecologically diverse and rich.",
+          "example_vi": "Khu vực này đa dạng và phong phú về phương diện sinh thái."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "They are trying to farm more ecologically.",
+          "example_vi": "Họ đang cố gắng canh tác về phương diện sinh thái hơn."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The building was designed to be ecologically friendly.",
+          "example_vi": "Tòa nhà được thiết kế để thân thiện về phương diện sinh thái."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The region is ecologically fragile.",
+          "example_vi": "Khu vực này rất mong manh về phương diện sinh thái."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "We need to think ecologically about our future.",
+          "example_vi": "Chúng ta cần suy nghĩ về phương diện sinh thái cho tương lai."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The forest is ecologically important for the region.",
+          "example_vi": "Khu rừng rất quan trọng về phương diện sinh thái đối với khu vực."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The study examines the site ecologically.",
+          "example_vi": "Nghiên cứu xem xét địa điểm này về phương diện sinh thái."
+        },
+        {
+          "meaning_vi": "về phương diện sinh thái",
+          "example_en": "The changes have impacted the lake ecologically.",
+          "example_vi": "Những thay đổi đã tác động đến hồ về phương diện sinh thái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "ecologically",
+      "normalized_word": "ecologically",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The project is ecologically sound and sustainable.",
+      "example_vi_clean": "Dự án này hợp lý và bền vững về phương diện sinh thái."
+    },
+    {
+      "id": 26954,
+      "quiz_meaning_vi": "nhà sinh thái học",
+      "meaning_vi_clean": "nhà sinh thái học",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "The ecologist studied the local wildlife population.",
+          "example_vi": "Nhà sinh thái học đã nghiên cứu quần thể động vật hoang dã địa phương."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "An ecologist warned about the loss of biodiversity.",
+          "example_vi": "Một nhà sinh thái học đã cảnh báo về sự mất mát đa dạng sinh học."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "The ecologist collected samples from the river.",
+          "example_vi": "Nhà sinh thái học đã thu thập các mẫu từ con sông."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "She works as an ecologist for a research institute.",
+          "example_vi": "Cô ấy làm việc như một nhà sinh thái học cho một viện nghiên cứu."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "The ecologist analyzed the impact of climate change.",
+          "example_vi": "Nhà sinh thái học đã phân tích tác động của biến đổi khí hậu."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "Many ecologists are concerned about deforestation.",
+          "example_vi": "Nhiều nhà sinh thái học lo ngại về nạn phá rừng."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "The ecologist presented her findings at the conference.",
+          "example_vi": "Nhà sinh thái học đã trình bày những phát hiện của mình tại hội nghị."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "He is a renowned ecologist in his field.",
+          "example_vi": "Ông ấy là một nhà sinh thái học nổi tiếng trong lĩnh vực của mình."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "The ecologist monitored the health of the forest.",
+          "example_vi": "Nhà sinh thái học đã theo dõi sức khỏe của khu rừng."
+        },
+        {
+          "meaning_vi": "nhà sinh thái học",
+          "example_en": "An ecologist can help restore damaged ecosystems.",
+          "example_vi": "Một nhà sinh thái học có thể giúp phục hồi các hệ sinh thái bị hư hại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "ecologist",
+      "normalized_word": "ecologist",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ecologist studied the local wildlife population.",
+      "example_vi_clean": "Nhà sinh thái học đã nghiên cứu quần thể động vật hoang dã địa phương."
+    },
+    {
+      "id": 26955,
+      "quiz_meaning_vi": "tiết kiệm",
+      "meaning_vi_clean": "tiết kiệm; kinh tế",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiết kiệm",
+          "example_en": "He was an economical person by nature.",
+          "example_vi": "Anh ấy là một người tiết kiệm theo bản tính."
+        },
+        {
+          "meaning_vi": "tiết kiệm",
+          "example_en": "It is more economical to buy in bulk.",
+          "example_vi": "Mua số lượng lớn thì tiết kiệm hơn."
+        },
+        {
+          "meaning_vi": "tiết kiệm",
+          "example_en": "She is very economical with her time.",
+          "example_vi": "Cô ấy rất tiết kiệm thời gian của mình."
+        },
+        {
+          "meaning_vi": "tiết kiệm",
+          "example_en": "We need to find an economical solution to this problem.",
+          "example_vi": "Chúng ta cần tìm một giải pháp tiết kiệm cho vấn đề này."
+        },
+        {
+          "meaning_vi": "kinh tế",
+          "example_en": "The new car is very economical to run.",
+          "example_vi": "Chiếc xe mới rất kinh tế khi vận hành."
+        },
+        {
+          "meaning_vi": "kinh tế",
+          "example_en": "This is an economical way to heat the house.",
+          "example_vi": "Đây là một cách kinh tế để sưởi ấm ngôi nhà."
+        },
+        {
+          "meaning_vi": "kinh tế",
+          "example_en": "The design is simple and economical.",
+          "example_vi": "Thiết kế này đơn giản và kinh tế."
+        },
+        {
+          "meaning_vi": "kinh tế",
+          "example_en": "We are looking for an economical alternative.",
+          "example_vi": "Chúng tôi đang tìm kiếm một sự thay thế kinh tế."
+        },
+        {
+          "meaning_vi": "kinh tế",
+          "example_en": "The project is not economically viable.",
+          "example_vi": "Dự án này không khả thi về mặt kinh tế."
+        },
+        {
+          "meaning_vi": "kinh tế",
+          "example_en": "They chose the most economical option available.",
+          "example_vi": "Họ đã chọn phương án kinh tế nhất hiện có."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ để đủ 10 câu, phân bổ nghĩa tiết kiệm và kinh tế.",
+      "word": "economical",
+      "normalized_word": "economical",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was an economical person by nature.",
+      "example_vi_clean": "Anh ấy là một người tiết kiệm theo bản tính."
+    },
+    {
+      "id": 26956,
+      "quiz_meaning_vi": "nhà kinh tế học",
+      "meaning_vi_clean": "nhà kinh tế học",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "The economist predicted a rise in inflation.",
+          "example_vi": "Nhà kinh tế học đã dự đoán sự gia tăng lạm phát."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "Many economists are studying the current market trends.",
+          "example_vi": "Nhiều nhà kinh tế học đang nghiên cứu các xu hướng thị trường hiện tại."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "She is a leading economist in the government.",
+          "example_vi": "Cô ấy là một nhà kinh tế học hàng đầu trong chính phủ."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "The economist wrote a book about global trade.",
+          "example_vi": "Nhà kinh tế học đã viết một cuốn sách về thương mại toàn cầu."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "He consulted an economist before investing.",
+          "example_vi": "Anh ấy đã tham khảo ý kiến một nhà kinh tế học trước khi đầu tư."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "The economist analyzed the impact of the new tax.",
+          "example_vi": "Nhà kinh tế học đã phân tích tác động của loại thuế mới."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "An economist can provide valuable insights into policy.",
+          "example_vi": "Một nhà kinh tế học có thể cung cấp những hiểu biết giá trị về chính sách."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "The economist spoke at the international forum.",
+          "example_vi": "Nhà kinh tế học đã phát biểu tại diễn đàn quốc tế."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "She trained as an economist at university.",
+          "example_vi": "Cô ấy đã được đào tạo thành nhà kinh tế học tại trường đại học."
+        },
+        {
+          "meaning_vi": "nhà kinh tế học",
+          "example_en": "The economist advised the company on its strategy.",
+          "example_vi": "Nhà kinh tế học đã tư vấn cho công ty về chiến lược của nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa phụ không phổ biến (người tiết kiệm, nhà nông học) để tập trung vào nghĩa chính.",
+      "word": "economist",
+      "normalized_word": "economist",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The economist predicted a rise in inflation.",
+      "example_vi_clean": "Nhà kinh tế học đã dự đoán sự gia tăng lạm phát."
+    },
+    {
+      "id": 26957,
+      "quiz_meaning_vi": "ở trạng thái mê ly",
+      "meaning_vi_clean": "ở trạng thái mê ly; ngây ngất",
+      "examples_clean": [
+        {
+          "meaning_vi": "ở trạng thái mê ly",
+          "example_en": "The fans were in an ecstatic state after the win.",
+          "example_vi": "Người hâm mộ ở trạng thái mê ly sau chiến thắng."
+        },
+        {
+          "meaning_vi": "ở trạng thái mê ly",
+          "example_en": "She had an ecstatic look on her face.",
+          "example_vi": "Cô ấy có vẻ mặt ở trạng thái mê ly."
+        },
+        {
+          "meaning_vi": "ở trạng thái mê ly",
+          "example_en": "The crowd gave an ecstatic welcome to the band.",
+          "example_vi": "Đám đông đã chào đón ban nhạc trong trạng thái mê ly."
+        },
+        {
+          "meaning_vi": "ở trạng thái mê ly",
+          "example_en": "He was ecstatic about the news.",
+          "example_vi": "Anh ấy ở trạng thái mê ly về tin tức đó."
+        },
+        {
+          "meaning_vi": "ngây ngất",
+          "example_en": "They were ngây ngất with joy at the wedding.",
+          "example_vi": "Họ ngây ngất vì vui sướng tại đám cưới."
+        },
+        {
+          "meaning_vi": "ngây ngất",
+          "example_en": "The music left the audience feeling ngây ngất.",
+          "example_vi": "Âm nhạc khiến khán giả cảm thấy ngây ngất."
+        },
+        {
+          "meaning_vi": "ngây ngất",
+          "example_en": "She felt ngây ngất when she saw the view.",
+          "example_vi": "Cô ấy cảm thấy ngây ngất khi nhìn thấy khung cảnh."
+        },
+        {
+          "meaning_vi": "ngây ngất",
+          "example_en": "The performance was ngây ngất and beautiful.",
+          "example_vi": "Màn trình diễn thật ngây ngất và đẹp đẽ."
+        },
+        {
+          "meaning_vi": "ngây ngất",
+          "example_en": "He was ngây ngất after hearing the song.",
+          "example_vi": "Anh ấy cảm thấy ngây ngất sau khi nghe bài hát."
+        },
+        {
+          "meaning_vi": "ngây ngất",
+          "example_en": "The sunset left us all feeling ngây ngất.",
+          "example_vi": "Hoàng hôn khiến tất cả chúng tôi cảm thấy ngây ngất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, lọc bỏ các nghĩa hiếm/lạ.",
+      "word": "ecstatic",
+      "normalized_word": "ecstatic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The fans were in an ecstatic state after the win.",
+      "example_vi_clean": "Người hâm mộ ở trạng thái mê ly sau chiến thắng."
+    },
+    {
+      "id": 26958,
+      "quiz_meaning_vi": "chỉnh sửa",
+      "meaning_vi_clean": "chỉnh sửa; biên tập",
+      "examples_clean": [
+        {
+          "meaning_vi": "chỉnh sửa",
+          "example_en": "You need to edit this document before sending it.",
+          "example_vi": "Bạn cần chỉnh sửa tài liệu này trước khi gửi đi."
+        },
+        {
+          "meaning_vi": "chỉnh sửa",
+          "example_en": "She is editing the photos for the website.",
+          "example_vi": "Cô ấy đang chỉnh sửa các bức ảnh cho trang web."
+        },
+        {
+          "meaning_vi": "chỉnh sửa",
+          "example_en": "Can you edit the video to make it shorter?",
+          "example_vi": "Bạn có thể chỉnh sửa video để làm nó ngắn hơn không?"
+        },
+        {
+          "meaning_vi": "chỉnh sửa",
+          "example_en": "He edited the text to remove errors.",
+          "example_vi": "Anh ấy đã chỉnh sửa văn bản để loại bỏ lỗi."
+        },
+        {
+          "meaning_vi": "biên tập",
+          "example_en": "She works as an editor and helps edit books.",
+          "example_vi": "Cô ấy làm biên tập viên và giúp biên tập sách."
+        },
+        {
+          "meaning_vi": "biên tập",
+          "example_en": "He has been editing the newspaper for years.",
+          "example_vi": "Ông ấy đã biên tập tờ báo trong nhiều năm."
+        },
+        {
+          "meaning_vi": "biên tập",
+          "example_en": "They are editing a new collection of poems.",
+          "example_vi": "Họ đang biên tập một tập thơ mới."
+        },
+        {
+          "meaning_vi": "biên tập",
+          "example_en": "The team is editing the final draft.",
+          "example_vi": "Nhóm đang biên tập bản thảo cuối cùng."
+        },
+        {
+          "meaning_vi": "biên tập",
+          "example_en": "She enjoys editing articles for the magazine.",
+          "example_vi": "Cô ấy thích biên tập các bài báo cho tạp chí."
+        },
+        {
+          "meaning_vi": "biên tập",
+          "example_en": "He was asked to edit the company newsletter.",
+          "example_vi": "Anh ấy được yêu cầu biên tập bản tin công ty."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành động từ (edit là động từ phổ biến hơn), sửa nghĩa cho phù hợp.",
+      "word": "edit",
+      "normalized_word": "edit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You need to edit this document before sending it.",
+      "example_vi_clean": "Bạn cần chỉnh sửa tài liệu này trước khi gửi đi."
+    },
+    {
+      "id": 26959,
+      "quiz_meaning_vi": "bài xã luận",
+      "meaning_vi_clean": "bài xã luận; thuộc về biên tập",
+      "examples_clean": [
+        {
+          "meaning_vi": "bài xã luận",
+          "example_en": "The newspaper published a strong editorial today.",
+          "example_vi": "Tờ báo đã đăng một bài xã luận mạnh mẽ hôm nay."
+        },
+        {
+          "meaning_vi": "bài xã luận",
+          "example_en": "I read an interesting editorial about the economy.",
+          "example_vi": "Tôi đã đọc một bài xã luận thú vị về kinh tế."
+        },
+        {
+          "meaning_vi": "bài xã luận",
+          "example_en": "The editorial criticized the new government policy.",
+          "example_vi": "Bài xã luận đã chỉ trích chính sách mới của chính phủ."
+        },
+        {
+          "meaning_vi": "bài xã luận",
+          "example_en": "She wrote an editorial for the local paper.",
+          "example_vi": "Cô ấy đã viết một bài xã luận cho tờ báo địa phương."
+        },
+        {
+          "meaning_vi": "bài xã luận",
+          "example_en": "The editorial board met to discuss the issue.",
+          "example_vi": "Ban biên tập đã họp để thảo luận về vấn đề này."
+        },
+        {
+          "meaning_vi": "thuộc về biên tập",
+          "example_en": "He has an editorial role at the publishing house.",
+          "example_vi": "Anh ấy có một vai trò thuộc về biên tập tại nhà xuất bản."
+        },
+        {
+          "meaning_vi": "thuộc về biên tập",
+          "example_en": "The editorial team is working on the new issue.",
+          "example_vi": "Nhóm thuộc về biên tập đang làm việc cho số báo mới."
+        },
+        {
+          "meaning_vi": "thuộc về biên tập",
+          "example_en": "She has many years of editorial experience.",
+          "example_vi": "Cô ấy có nhiều năm kinh nghiệm thuộc về biên tập."
+        },
+        {
+          "meaning_vi": "thuộc về biên tập",
+          "example_en": "The editorial process takes several weeks.",
+          "example_vi": "Quy trình thuộc về biên tập mất vài tuần."
+        },
+        {
+          "meaning_vi": "thuộc về biên tập",
+          "example_en": "He made some editorial changes to the manuscript.",
+          "example_vi": "Anh ấy đã thực hiện một số thay đổi thuộc về biên tập đối với bản thảo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho cả danh từ và tính từ.",
+      "word": "editorial",
+      "normalized_word": "editorial",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The newspaper published a strong editorial today.",
+      "example_vi_clean": "Tờ báo đã đăng một bài xã luận mạnh mẽ hôm nay."
+    },
+    {
+      "id": 26960,
+      "quiz_meaning_vi": "có giáo dục",
+      "meaning_vi_clean": "có giáo dục; có học",
+      "examples_clean": [
+        {
+          "meaning_vi": "có giáo dục",
+          "example_en": "She is a well-educated woman.",
+          "example_vi": "Cô ấy là một người phụ nữ có giáo dục."
+        },
+        {
+          "meaning_vi": "có giáo dục",
+          "example_en": "They come from an educated family.",
+          "example_vi": "Họ đến từ một gia đình có giáo dục."
+        },
+        {
+          "meaning_vi": "có giáo dục",
+          "example_en": "The program helps provide an educated workforce.",
+          "example_vi": "Chương trình giúp cung cấp một lực lượng lao động có giáo dục."
+        },
+        {
+          "meaning_vi": "có giáo dục",
+          "example_en": "He is highly educated in his field.",
+          "example_vi": "Anh ấy rất có giáo dục trong lĩnh vực của mình."
+        },
+        {
+          "meaning_vi": "có học",
+          "example_en": "He is a very có học person.",
+          "example_vi": "Anh ấy là một người rất có học."
+        },
+        {
+          "meaning_vi": "có học",
+          "example_en": "She is có học and speaks several languages.",
+          "example_vi": "Cô ấy có học và nói được vài ngôn ngữ."
+        },
+        {
+          "meaning_vi": "có học",
+          "example_en": "They are có học and well-mannered.",
+          "example_vi": "Họ là những người có học và lịch sự."
+        },
+        {
+          "meaning_vi": "có học",
+          "example_en": "It is important to be có học in today's world.",
+          "example_vi": "Điều quan trọng là phải có học trong thế giới ngày nay."
+        },
+        {
+          "meaning_vi": "có học",
+          "example_en": "She is a có học professional.",
+          "example_vi": "Cô ấy là một chuyên gia có học."
+        },
+        {
+          "meaning_vi": "có học",
+          "example_en": "He is có học and thoughtful.",
+          "example_vi": "Anh ấy là người có học và chu đáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "educated",
+      "normalized_word": "educated",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a well-educated woman.",
+      "example_vi_clean": "Cô ấy là một người phụ nữ có giáo dục."
+    }
+  ]
+}

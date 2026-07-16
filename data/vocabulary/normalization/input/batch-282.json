@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-282",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26811,
+      "word": "deduce",
+      "normalized_word": "deduce",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'dju:s/",
+      "primary_meaning_vi": "suy ra",
+      "meaning_vi": "suy ra, luận ra, suy luận, suy diễn; vạch lại lai lịch nguồn gốc (của người nào...)",
+      "example_en": "to deduce a part from the whole",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26812,
+      "word": "deduction",
+      "normalized_word": "deduction",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'dʌkʃn/",
+      "primary_meaning_vi": "sự lấy đi",
+      "meaning_vi": "sự lấy đi, sự khấu đi, sự trừ đi; sự suy ra, sự luận ra, sự suy luận, sự suy diễn; điều suy luận",
+      "example_en": "You might want to donate the old junk and just take the deduction.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He arrived at the deduction that the butler didn't do it.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Through his powers of deduction, he realized that the plan would never work.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26813,
+      "word": "deem",
+      "normalized_word": "deem",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di:m/",
+      "primary_meaning_vi": "tưởng rằng",
+      "meaning_vi": "tưởng rằng, nghĩ rằng, cho rằng, thấy rằng",
+      "example_en": "She deemed his efforts insufficient.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26814,
+      "word": "deep",
+      "normalized_word": "deep",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/di:p/",
+      "primary_meaning_vi": "sâu",
+      "meaning_vi": "sâu; khó lường, khó hiểu, bí ẩn, thâm hiểm; sâu xa, sâu sắc, sâu kín, thâm trầm; ngập sâu vào, mải mê, miệt mài, đắm mình vào; trầm; sẫm, thẫm, thắm (màu sắc); vô cùng, hết sức; say (ngủ), nặng (tội), dày đặc (bóng tối)...; khôn ngoan, láu, ranh mãnh; gặp hoạn nạn, lâm vào hoàn cảnh hết sức khó khăn; gặp chuyện đau buồn; đứng thành năm hàng; liều, làm liều; quyết định một cách liều lĩnh; nổi nóng, nổi giận, phát cáu; đại tang; sâu; muộn, khuya; nhiều; những người thâm trầm kín đáo mới là những người sâu sắc; tâm ngẩm tầm ngầm mà đâm chết voi; (the deep) biển cả; số nhiều) đáy sâu (của đại dương); vực thẳm, vực sâu; nơi sâu kín, đáy lòng, thâm tâm; giữa",
+      "example_en": "creatures of the deep",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the deep of night",
+          "example_vi": null
+        },
+        {
+          "example_en": "Russell is a safe pair of hands in the deep.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She has a very deep contralto voice.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26815,
+      "word": "deer",
+      "normalized_word": "deer",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều không đổi",
+      "phonetic": "/diə/",
+      "primary_meaning_vi": "hươu",
+      "meaning_vi": "hươu, nai; những vật nhỏ bé lắt nhắt",
+      "example_en": "I wrecked my car after a deer ran across the road.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Oh, I've never had deer before.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26816,
+      "word": "defeat",
+      "normalized_word": "defeat",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'fi:t/",
+      "primary_meaning_vi": "sự thất bại (của một kế hoạch...)",
+      "meaning_vi": "sự thất bại (của một kế hoạch...); sự tiêu tan (hy vọng...); sự thua trận, sự bại trận; sự đánh bại (kẻ thù); sự huỷ bỏ, sự thủ tiêu; đánh thắng, đánh bại; làm thất bại (một kế hoạch...); làm tiêu tan (hy vọng...); sự thua trận, sự bại trận; sự đánh bại (kẻ thù); sự huỷ bỏ, sự thủ tiêu; đánh thắng, đánh bại; làm thất bại (một kế hoạch...); làm tiêu tan (hy vọng...); huỷ bỏ, thủ tiêu",
+      "example_en": "Wellington defeated Napoleon at Waterloo.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Licking their wounds after a temporary defeat, they planned their next move.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The inscription records her defeat of the country's enemies in a costly war.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26817,
+      "word": "deficit",
+      "normalized_word": "deficit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'defisit/",
+      "primary_meaning_vi": "số tiền thiếu hụt (do chi lớn hơn thu)",
+      "meaning_vi": "số tiền thiếu hụt (do chi lớn hơn thu)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26818,
+      "word": "deforestation",
+      "normalized_word": "deforestation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di,fɔris'teiʃn/",
+      "primary_meaning_vi": "sự phá rừng",
+      "meaning_vi": "sự phá rừng; sự phát quang",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26819,
+      "word": "defy",
+      "normalized_word": "defy",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'fai/",
+      "primary_meaning_vi": "thách",
+      "meaning_vi": "thách, thách thức, thách đố; bất chấp, coi thường, không tuân theo; gây khó khăn không thể vượt qua được; làm cho không thể được; không sợ, chấp tất cả",
+      "example_en": "to defy an enemy; to defy the power of a magistrate; to defy the arguments of an opponent; to defy public opinion",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "If you defy your teacher you may end up in detention.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26820,
+      "word": "dehumanise",
+      "normalized_word": "dehumanise",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di:'hju:mənaiz/ (dehumanize) /di:'hju:mənaiz/",
+      "primary_meaning_vi": "làm mất tính người",
+      "meaning_vi": "làm mất tính người, làm thành hung ác dã man, làm thành vô nhân đạo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

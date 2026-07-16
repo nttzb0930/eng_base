@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26581,
+      "quiz_meaning_vi": "bản liệt kê mục lục",
+      "meaning_vi_clean": "bản liệt kê mục lục; ghi vào mục lục",
+      "examples_clean": [
+        {
+          "meaning_vi": "bản liệt kê mục lục",
+          "example_en": "The library has a comprehensive catalogue of all its books.",
+          "example_vi": "Thư viện có một bản liệt kê mục lục toàn diện về tất cả các cuốn sách của nó."
+        },
+        {
+          "meaning_vi": "bản liệt kê mục lục",
+          "example_en": "I looked through the mail-order catalogue for new clothes.",
+          "example_vi": "Tôi đã xem qua bản liệt kê mục lục đặt hàng qua thư để tìm quần áo mới."
+        },
+        {
+          "meaning_vi": "bản liệt kê mục lục",
+          "example_en": "The exhibition catalogue provides details about every painting on display.",
+          "example_vi": "Bản liệt kê mục lục triển lãm cung cấp chi tiết về mọi bức tranh đang được trưng bày."
+        },
+        {
+          "meaning_vi": "bản liệt kê mục lục",
+          "example_en": "She consulted the product catalogue to find the right spare part.",
+          "example_vi": "Cô ấy đã tham khảo bản liệt kê mục lục sản phẩm để tìm đúng phụ tùng thay thế."
+        },
+        {
+          "meaning_vi": "ghi vào mục lục",
+          "example_en": "The archivist will catalogue the new collection of historical documents.",
+          "example_vi": "Người lưu trữ sẽ ghi vào mục lục bộ sưu tập tài liệu lịch sử mới."
+        },
+        {
+          "meaning_vi": "ghi vào mục lục",
+          "example_en": "It took months to catalogue all the items in the museum.",
+          "example_vi": "Phải mất nhiều tháng để ghi vào mục lục tất cả các hiện vật trong bảo tàng."
+        },
+        {
+          "meaning_vi": "ghi vào mục lục",
+          "example_en": "They are working to catalogue every species found in the forest.",
+          "example_vi": "Họ đang làm việc để ghi vào mục lục mọi loài được tìm thấy trong rừng."
+        },
+        {
+          "meaning_vi": "ghi vào mục lục",
+          "example_en": "The librarian helped me catalogue the donated books.",
+          "example_vi": "Người thủ thư đã giúp tôi ghi vào mục lục những cuốn sách được tặng."
+        },
+        {
+          "meaning_vi": "ghi vào mục lục",
+          "example_en": "We need to catalogue these files before storing them away.",
+          "example_vi": "Chúng ta cần ghi vào mục lục các tệp này trước khi cất chúng đi."
+        },
+        {
+          "meaning_vi": "ghi vào mục lục",
+          "example_en": "The researchers began to catalogue the data collected during the study.",
+          "example_vi": "Các nhà nghiên cứu bắt đầu ghi vào mục lục dữ liệu thu thập được trong quá trình nghiên cứu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ/động từ, giữ 2 nghĩa phổ biến nhất.",
+      "word": "catalogue",
+      "normalized_word": "catalogue",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The library has a comprehensive catalogue of all its books.",
+      "example_vi_clean": "Thư viện có một bản liệt kê mục lục toàn diện về tất cả các cuốn sách của nó."
+    },
+    {
+      "id": 26582,
+      "quiz_meaning_vi": "vật xúc tác",
+      "meaning_vi_clean": "vật xúc tác",
+      "examples_clean": [
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "Economic development and integration are working as a catalyst for peace.",
+          "example_vi": "Phát triển và hội nhập kinh tế đang đóng vai trò là vật xúc tác cho hòa bình."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The new law acted as a catalyst for social change.",
+          "example_vi": "Đạo luật mới đã đóng vai trò là vật xúc tác cho sự thay đổi xã hội."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "His speech served as a catalyst for the student protest.",
+          "example_vi": "Bài phát biểu của anh ấy đóng vai trò là vật xúc tác cho cuộc biểu tình của sinh viên."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The discovery was a catalyst for further scientific research.",
+          "example_vi": "Khám phá này là vật xúc tác cho các nghiên cứu khoa học tiếp theo."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "This event acted as a catalyst for the company's expansion.",
+          "example_vi": "Sự kiện này đóng vai trò là vật xúc tác cho sự mở rộng của công ty."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The competition was a catalyst for innovation in the industry.",
+          "example_vi": "Cuộc thi là vật xúc tác cho sự đổi mới trong ngành."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The teacher was a catalyst for her interest in literature.",
+          "example_vi": "Người giáo viên là vật xúc tác cho niềm yêu thích văn học của cô ấy."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The crisis acted as a catalyst for political reform.",
+          "example_vi": "Cuộc khủng hoảng đóng vai trò là vật xúc tác cho cải cách chính trị."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The investment served as a catalyst for local business growth.",
+          "example_vi": "Khoản đầu tư đóng vai trò là vật xúc tác cho sự phát triển kinh doanh địa phương."
+        },
+        {
+          "meaning_vi": "vật xúc tác",
+          "example_en": "The meeting was a catalyst for a new partnership.",
+          "example_vi": "Cuộc họp là vật xúc tác cho một mối quan hệ đối tác mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "catalyst",
+      "normalized_word": "catalyst",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Economic development and integration are working as a catalyst for peace.",
+      "example_vi_clean": "Phát triển và hội nhập kinh tế đang đóng vai trò là vật xúc tác cho hòa bình."
+    },
+    {
+      "id": 26583,
+      "quiz_meaning_vi": "tai ương",
+      "meaning_vi_clean": "tai ương; thảm hoạ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "The earthquake was a terrible tai ương for the small village.",
+          "example_vi": "Trận động đất là một tai ương khủng khiếp đối với ngôi làng nhỏ."
+        },
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "The loss of his job was a personal tai ương.",
+          "example_vi": "Việc mất việc làm là một tai ương cá nhân."
+        },
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "They managed to avoid a major tai ương during the expedition.",
+          "example_vi": "Họ đã xoay xở để tránh một tai ương lớn trong chuyến thám hiểm."
+        },
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "The failure of the project was a financial tai ương.",
+          "example_vi": "Sự thất bại của dự án là một tai ương tài chính."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The flood caused a massive thảm hoạ in the region.",
+          "example_vi": "Trận lụt đã gây ra một thảm hoạ lớn trong khu vực."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The plane crash was a national thảm hoạ.",
+          "example_vi": "Vụ tai nạn máy bay là một thảm hoạ quốc gia."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The drought led to an environmental thảm hoạ.",
+          "example_vi": "Hạn hán dẫn đến một thảm hoạ môi trường."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The war was a humanitarian thảm hoạ for the people.",
+          "example_vi": "Chiến tranh là một thảm hoạ nhân đạo đối với người dân."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The fire was a thảm hoạ that destroyed the historic building.",
+          "example_vi": "Vụ hỏa hoạn là một thảm hoạ đã phá hủy tòa nhà lịch sử."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The economic collapse was a thảm hoạ for the country.",
+          "example_vi": "Sự sụp đổ kinh tế là một thảm hoạ đối với đất nước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "catastrophe",
+      "normalized_word": "catastrophe",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The earthquake was a terrible tai ương for the small village.",
+      "example_vi_clean": "Trận động đất là một tai ương khủng khiếp đối với ngôi làng nhỏ."
+    },
+    {
+      "id": 26584,
+      "quiz_meaning_vi": "thảm hoạ",
+      "meaning_vi_clean": "thảm hoạ; thê thảm",
+      "examples_clean": [
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The earthquake had a catastrophic effect on the city.",
+          "example_vi": "Trận động đất đã có tác động thảm hoạ đối với thành phố."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The failure of the dam could be catastrophic for the valley.",
+          "example_vi": "Sự thất bại của con đập có thể là thảm hoạ đối với thung lũng."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "Climate change is a catastrophic threat to our planet.",
+          "example_vi": "Biến đổi khí hậu là một mối đe dọa thảm hoạ đối với hành tinh của chúng ta."
+        },
+        {
+          "meaning_vi": "thảm hoạ",
+          "example_en": "The oil spill caused catastrophic damage to the coastline.",
+          "example_vi": "Sự cố tràn dầu đã gây ra thiệt hại thảm hoạ cho đường bờ biển."
+        },
+        {
+          "meaning_vi": "thê thảm",
+          "example_en": "The team suffered a catastrophic defeat in the final match.",
+          "example_vi": "Đội bóng đã phải chịu một thất bại thê thảm trong trận chung kết."
+        },
+        {
+          "meaning_vi": "thê thảm",
+          "example_en": "The company's financial situation is catastrophic.",
+          "example_vi": "Tình hình tài chính của công ty thật thê thảm."
+        },
+        {
+          "meaning_vi": "thê thảm",
+          "example_en": "The results of the experiment were catastrophic.",
+          "example_vi": "Kết quả của thí nghiệm thật thê thảm."
+        },
+        {
+          "meaning_vi": "thê thảm",
+          "example_en": "His performance in the exam was catastrophic.",
+          "example_vi": "Kết quả bài thi của anh ấy thật thê thảm."
+        },
+        {
+          "meaning_vi": "thê thảm",
+          "example_en": "The harvest was catastrophic due to the lack of rain.",
+          "example_vi": "Vụ mùa thật thê thảm do thiếu mưa."
+        },
+        {
+          "meaning_vi": "thê thảm",
+          "example_en": "The decision led to a catastrophic outcome for everyone involved.",
+          "example_vi": "Quyết định đó đã dẫn đến một kết quả thê thảm cho tất cả những người liên quan."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "catastrophic",
+      "normalized_word": "catastrophic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The earthquake had a catastrophic effect on the city.",
+      "example_vi_clean": "Trận động đất đã có tác động thảm hoạ đối với thành phố."
+    },
+    {
+      "id": 26585,
+      "quiz_meaning_vi": "hấp dẫn",
+      "meaning_vi_clean": "hấp dẫn; dễ nhớ",
+      "examples_clean": [
+        {
+          "meaning_vi": "hấp dẫn",
+          "example_en": "The offer was very catchy and hard to refuse.",
+          "example_vi": "Lời đề nghị rất hấp dẫn và khó mà từ chối."
+        },
+        {
+          "meaning_vi": "hấp dẫn",
+          "example_en": "She has a catchy personality that draws people to her.",
+          "example_vi": "Cô ấy có một tính cách hấp dẫn thu hút mọi người đến với mình."
+        },
+        {
+          "meaning_vi": "hấp dẫn",
+          "example_en": "The advertisement had a catchy slogan.",
+          "example_vi": "Quảng cáo có một khẩu hiệu hấp dẫn."
+        },
+        {
+          "meaning_vi": "hấp dẫn",
+          "example_en": "The book has a catchy title that makes you want to read it.",
+          "example_vi": "Cuốn sách có một tiêu đề hấp dẫn khiến bạn muốn đọc nó."
+        },
+        {
+          "meaning_vi": "dễ nhớ",
+          "example_en": "The song has a very catchy melody.",
+          "example_vi": "Bài hát có một giai điệu rất dễ nhớ."
+        },
+        {
+          "meaning_vi": "dễ nhớ",
+          "example_en": "He wrote a catchy tune for the commercial.",
+          "example_vi": "Anh ấy đã viết một giai điệu dễ nhớ cho quảng cáo."
+        },
+        {
+          "meaning_vi": "dễ nhớ",
+          "example_en": "The chorus of the song is incredibly catchy.",
+          "example_vi": "Điệp khúc của bài hát cực kỳ dễ nhớ."
+        },
+        {
+          "meaning_vi": "dễ nhớ",
+          "example_en": "They created a catchy jingle for the brand.",
+          "example_vi": "Họ đã tạo ra một đoạn nhạc quảng cáo dễ nhớ cho thương hiệu."
+        },
+        {
+          "meaning_vi": "dễ nhớ",
+          "example_en": "The lyrics are simple and very catchy.",
+          "example_vi": "Lời bài hát đơn giản và rất dễ nhớ."
+        },
+        {
+          "meaning_vi": "dễ nhớ",
+          "example_en": "It is a catchy rhythm that stays in your head.",
+          "example_vi": "Đó là một nhịp điệu dễ nhớ cứ đọng lại trong đầu bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "catchy",
+      "normalized_word": "catchy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The offer was very catchy and hard to refuse.",
+      "example_vi_clean": "Lời đề nghị rất hấp dẫn và khó mà từ chối."
+    },
+    {
+      "id": 26586,
+      "quiz_meaning_vi": "sự phân loại",
+      "meaning_vi_clean": "sự phân loại",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of these items is based on their size.",
+          "example_vi": "Sự phân loại các mặt hàng này dựa trên kích thước của chúng."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "We need a better system for the categorization of data.",
+          "example_vi": "Chúng ta cần một hệ thống tốt hơn cho sự phân loại dữ liệu."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of plants is a complex task.",
+          "example_vi": "Sự phân loại thực vật là một nhiệm vụ phức tạp."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "His categorization of the problem was quite accurate.",
+          "example_vi": "Sự phân loại vấn đề của anh ấy khá chính xác."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of books in the library is alphabetical.",
+          "example_vi": "Sự phân loại sách trong thư viện là theo thứ tự bảng chữ cái."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "She disagreed with the categorization of the film as a comedy.",
+          "example_vi": "Cô ấy không đồng ý với sự phân loại bộ phim đó là phim hài."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of the animals helps in studying them.",
+          "example_vi": "Sự phân loại các loài động vật giúp ích cho việc nghiên cứu chúng."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of the files took all afternoon.",
+          "example_vi": "Sự phân loại các tệp tin đã chiếm hết cả buổi chiều."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of the products is essential for inventory management.",
+          "example_vi": "Sự phân loại sản phẩm là cần thiết cho việc quản lý hàng tồn kho."
+        },
+        {
+          "meaning_vi": "sự phân loại",
+          "example_en": "The categorization of the students was based on their age.",
+          "example_vi": "Sự phân loại học sinh dựa trên độ tuổi của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung nghĩa và ví dụ cho danh từ categorization.",
+      "word": "categorization",
+      "normalized_word": "categorization",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The categorization of these items is based on their size.",
+      "example_vi_clean": "Sự phân loại các mặt hàng này dựa trên kích thước của chúng."
+    },
+    {
+      "id": 26587,
+      "quiz_meaning_vi": "nhà thờ lớn",
+      "meaning_vi_clean": "nhà thờ lớn",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The city is famous for its beautiful old cathedral.",
+          "example_vi": "Thành phố nổi tiếng với nhà thờ lớn cổ kính xinh đẹp."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "We visited the cathedral during our trip to France.",
+          "example_vi": "Chúng tôi đã ghé thăm nhà thờ lớn trong chuyến đi đến Pháp."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The cathedral has impressive stained glass windows.",
+          "example_vi": "Nhà thờ lớn có những cửa sổ kính màu ấn tượng."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "Many tourists gather in front of the cathedral.",
+          "example_vi": "Nhiều du khách tập trung trước nhà thờ lớn."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The choir sang in the cathedral on Sunday.",
+          "example_vi": "Ca đoàn đã hát trong nhà thờ lớn vào Chủ nhật."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The cathedral was built in the fourteenth century.",
+          "example_vi": "Nhà thờ lớn được xây dựng vào thế kỷ mười bốn."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The bells of the cathedral rang at noon.",
+          "example_vi": "Chuông của nhà thờ lớn vang lên vào buổi trưa."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The cathedral is the tallest building in the city.",
+          "example_vi": "Nhà thờ lớn là tòa nhà cao nhất trong thành phố."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "They held a concert inside the cathedral.",
+          "example_vi": "Họ đã tổ chức một buổi hòa nhạc bên trong nhà thờ lớn."
+        },
+        {
+          "meaning_vi": "nhà thờ lớn",
+          "example_en": "The cathedral is a masterpiece of Gothic architecture.",
+          "example_vi": "Nhà thờ lớn là một kiệt tác của kiến trúc Gothic."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ.",
+      "word": "cathedral",
+      "normalized_word": "cathedral",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The city is famous for its beautiful old cathedral.",
+      "example_vi_clean": "Thành phố nổi tiếng với nhà thờ lớn cổ kính xinh đẹp."
+    },
+    {
+      "id": 26588,
+      "quiz_meaning_vi": "nguyên nhân",
+      "meaning_vi_clean": "nguyên nhân; gây ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "They identified a burst pipe as the cause of the flooding.",
+          "example_vi": "Họ đã xác định một đường ống bị vỡ là nguyên nhân gây ra lũ lụt."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "What was the cause of the accident?",
+          "example_vi": "Nguyên nhân của vụ tai nạn là gì?"
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "The cause of the fire is still under investigation.",
+          "example_vi": "Nguyên nhân của vụ hỏa hoạn vẫn đang được điều tra."
+        },
+        {
+          "meaning_vi": "nguyên nhân",
+          "example_en": "Stress is a common cause of health problems.",
+          "example_vi": "Căng thẳng là một nguyên nhân phổ biến của các vấn đề sức khỏe."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The storm caused a lot of damage to the houses.",
+          "example_vi": "Cơn bão đã gây ra rất nhiều thiệt hại cho các ngôi nhà."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "His actions caused a lot of trouble for everyone.",
+          "example_vi": "Hành động của anh ấy đã gây ra rất nhiều rắc rối cho mọi người."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The virus caused the patient to have a high fever.",
+          "example_vi": "Loại vi-rút đó đã gây ra tình trạng sốt cao cho bệnh nhân."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The delay caused us to miss the train.",
+          "example_vi": "Sự chậm trễ đã gây ra việc chúng tôi bị lỡ chuyến tàu."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The loud noise caused the baby to wake up.",
+          "example_vi": "Tiếng ồn lớn đã gây ra việc em bé bị thức giấc."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The heavy rain caused the river to overflow.",
+          "example_vi": "Cơn mưa lớn đã gây ra việc con sông bị tràn bờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "cause",
+      "normalized_word": "cause",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They identified a burst pipe as the cause of the flooding.",
+      "example_vi_clean": "Họ đã xác định một đường ống bị vỡ là nguyên nhân gây ra lũ lụt."
+    },
+    {
+      "id": 26589,
+      "quiz_meaning_vi": "dừng",
+      "meaning_vi_clean": "dừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "dừng",
+          "example_en": "And with that, his twitching ceased.",
+          "example_vi": "Và với điều đó, sự co giật của anh ấy đã dừng lại."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "The rain finally ceased after three days.",
+          "example_vi": "Cơn mưa cuối cùng đã dừng lại sau ba ngày."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "The factory ceased production last month.",
+          "example_vi": "Nhà máy đã dừng sản xuất vào tháng trước."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "They ceased all communication with the outside world.",
+          "example_vi": "Họ đã dừng mọi liên lạc với thế giới bên ngoài."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "The noise ceased as soon as he entered the room.",
+          "example_vi": "Tiếng ồn đã dừng lại ngay khi anh ấy bước vào phòng."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "The company ceased operations due to financial difficulties.",
+          "example_vi": "Công ty đã dừng hoạt động do những khó khăn tài chính."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "He ceased to be a member of the club.",
+          "example_vi": "Anh ấy đã dừng là thành viên của câu lạc bộ."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "The wind ceased blowing in the evening.",
+          "example_vi": "Gió đã dừng thổi vào buổi tối."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "They ceased their efforts to find the lost dog.",
+          "example_vi": "Họ đã dừng những nỗ lực tìm kiếm con chó bị lạc."
+        },
+        {
+          "meaning_vi": "dừng",
+          "example_en": "The fighting ceased at midnight.",
+          "example_vi": "Cuộc chiến đã dừng lại vào lúc nửa đêm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "cease",
+      "normalized_word": "cease",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "And with that, his twitching ceased.",
+      "example_vi_clean": "Và với điều đó, sự co giật của anh ấy đã dừng lại."
+    },
+    {
+      "id": 26590,
+      "quiz_meaning_vi": "trần",
+      "meaning_vi_clean": "trần",
+      "examples_clean": [
+        {
+          "meaning_vi": "trần",
+          "example_en": "The dining room had an ornate ceiling.",
+          "example_vi": "Phòng ăn có một cái trần được trang trí công phu."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "She painted the ceiling white.",
+          "example_vi": "Cô ấy đã sơn trần nhà màu trắng."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "The ceiling is too low for this tall lamp.",
+          "example_vi": "Trần nhà quá thấp đối với chiếc đèn cao này."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "Water leaked from the ceiling during the storm.",
+          "example_vi": "Nước rò rỉ từ trần nhà trong cơn bão."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "He stared at the ceiling while thinking.",
+          "example_vi": "Anh ấy nhìn chằm chằm vào trần nhà trong khi suy nghĩ."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "The ceiling fan was spinning slowly.",
+          "example_vi": "Chiếc quạt trần đang quay chậm rãi."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "They installed new lights on the ceiling.",
+          "example_vi": "Họ đã lắp đặt những chiếc đèn mới trên trần nhà."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "The ceiling was decorated with beautiful patterns.",
+          "example_vi": "Trần nhà được trang trí bằng những họa tiết xinh đẹp."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "The plaster on the ceiling started to crack.",
+          "example_vi": "Lớp vữa trên trần nhà bắt đầu bị nứt."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "She reached up to touch the high ceiling.",
+          "example_vi": "Cô ấy với tay lên để chạm vào cái trần nhà cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "ceiling",
+      "normalized_word": "ceiling",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dining room had an ornate ceiling.",
+      "example_vi_clean": "Phòng ăn có một cái trần được trang trí công phu."
+    }
+  ]
+}

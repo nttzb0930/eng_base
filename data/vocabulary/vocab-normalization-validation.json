@@ -1,0 +1,12 @@
+{
+  "validatedAt": "2026-07-13T18:18:49.691Z",
+  "sourceSnapshot": "data/vocabulary/vocab-db-snapshot.json",
+  "expectedRecords": 3000,
+  "validRecords": 3000,
+  "expectedBatches": 300,
+  "missingBatches": [],
+  "issueCount": 0,
+  "issues": [],
+  "readyForReview": true,
+  "databaseUpdated": false
+}

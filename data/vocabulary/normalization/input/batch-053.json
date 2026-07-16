@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-053",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24521,
+      "word": "mom",
+      "normalized_word": "mom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều mammae",
+      "phonetic": "/mə'mɑ:/",
+      "primary_meaning_vi": "uây khyếm mẹ",
+      "meaning_vi": "uây khyếm mẹ; ,  (từ lóng) gái nạ giòng mà vẫn còn xuân",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24522,
+      "word": "moment",
+      "normalized_word": "moment",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ ((thông tục) (cũng) mo)",
+      "phonetic": "/'moumənt/",
+      "primary_meaning_vi": "chốc",
+      "meaning_vi": "chốc, lúc, lát; tầm quan trọng, tính trọng yếu; ,  (vật lý) Mômen",
+      "example_en": "Wait a moment, while I lock the front door.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "If the points represent mass, then the zeroth moment is the total mass, the first moment divided by the total mass is the center of mass, and the second moment is the rotational inertia.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24523,
+      "word": "mommy",
+      "normalized_word": "mommy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "mẹ (cũng) mummy",
+      "meaning_vi": "mẹ (cũng) mummy",
+      "example_en": "She is the mommiest of mommies.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24524,
+      "word": "monday",
+      "normalized_word": "monday",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mʌndi/",
+      "primary_meaning_vi": "ngày thứ hai",
+      "meaning_vi": "ngày thứ hai; ngày khai trương; nghỉ ngày thứ hai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24525,
+      "word": "money",
+      "normalized_word": "money",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mʌni/",
+      "primary_meaning_vi": "tiền",
+      "meaning_vi": "tiền, tiền tệ; tiền, tiền bạc; những món tiền; (thông tục) tiền của, của cải, tài sản; coin; theo ý tôi; theo sở thích của tôi; lấy chồng giàu; lấy vợ giàu; có tiền mua tiên cũng được; làm chơi ăn thật",
+      "example_en": "Before colonial times cowry shells imported from Mauritius were used as money in Western Africa.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "money supply; money market",
+          "example_vi": null
+        },
+        {
+          "example_en": "He married money.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24526,
+      "word": "monkey",
+      "normalized_word": "monkey",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'mʌɳki/",
+      "primary_meaning_vi": "con khỉ",
+      "meaning_vi": "con khỉ; thằng nhãi, thằng ranh, thằng nhóc; cái vồ (để nện cọc); món tiền 500 teclinh; món tiền 500 đô la; get; ,  (từ lóng) nghiện thuốc phiện; bắt chước; làm trò khỉ, làm trò nỡm; ,  (thường) (+ about,  around) mất thì giờ về những trò táy máy lặt vặt",
+      "example_en": "He had been visiting an area zoo when a monkey swung from its tree perch, swiped his glasses and hurled them into a hippo hole.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Chimpanzees are known to form bands to hunt and kill other monkeys.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She's a cheeky monkey.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Please don't monkey with the controls if you don't know what you're doing.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24527,
+      "word": "month",
+      "normalized_word": "month",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/mʌnθ/",
+      "primary_meaning_vi": "tháng",
+      "meaning_vi": "tháng; lễ cầu kinh một tháng sau khi chết; lễ giỗ ba mươi ngày; một thời gian dài vô tận",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24528,
+      "word": "moon",
+      "normalized_word": "moon",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/mu:n/",
+      "primary_meaning_vi": "mặt trăng",
+      "meaning_vi": "mặt trăng; ánh trăng; tháng; cry; dọn nhà đi trong đêm tối để tránh trả tiền nhà; rất hiếm, ít khi, năm thì mười hoạ; chú cuội, người mơ mộng vơ vẩn; đi lang thang vơ vẩn; có vẻ mặt thờ thẫn như ở cung trăng; to moon away the time thờ thẫn ra vào hết ngày",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24529,
+      "word": "morning",
+      "normalized_word": "morning",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mɔ:niɳ/",
+      "primary_meaning_vi": "buổi sáng",
+      "meaning_vi": "buổi sáng; buổi bình minh; vào buổi bình minh của cuộc đời; lúc tuổi thanh xuân",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24530,
+      "word": "mother",
+      "normalized_word": "mother",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'mʌðə/",
+      "primary_meaning_vi": "mẹ",
+      "meaning_vi": "mẹ, mẹ đẻ; nguồn gốc, nguyên nhân; mẹ ((nghĩa bóng)); mẹ; mẹ trưởng viện, mẹ bề trên; máy ấp trứng ((cũng) mother artificial mother); tất cả mọi người không trừ một ai; chăm sóc, nuôi nấng; sinh ra, đẻ ra ((nghĩa đen) & (nghĩa bóng))",
+      "example_en": "He had something of his mother in him.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Nutrients and oxygen obtained by the mother are conveyed to the fetus.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The lioness was a mother of four cubs.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The Mediterranean was mother to many cultures and languages.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

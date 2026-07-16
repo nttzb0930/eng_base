@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-093",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24921,
+      "word": "discover",
+      "normalized_word": "discover",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'kʌvə/",
+      "primary_meaning_vi": "khám phá ra",
+      "meaning_vi": "khám phá ra, tìm ra, phát hiện ra, nhận ra; để lộ ra, bộc lộ ra, phơi bày ra",
+      "example_en": "Turning the corner, I discovered a lovely little shop. I discovered that they sold widgets.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The gust of wind discovered a bone in the sand.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This move discovers an attack on a vital pawn.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I discovered my plans to the rest of the team.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24922,
+      "word": "discussion",
+      "normalized_word": "discussion",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'kʌʃn/",
+      "primary_meaning_vi": "sự thảo luận",
+      "meaning_vi": "sự thảo luận, sự bàn cãi, sự tranh luận; cuộc thảo luận, cuộc bàn cãi, cuộc tranh luận; sự ăn uống ngon lành thích thú (món ăn, rượu)",
+      "example_en": "My discussion with the professor was very enlightening.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Under each heading, you will find a discussion.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24923,
+      "word": "dishonest",
+      "normalized_word": "dishonest",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/dis'ɔnist/",
+      "primary_meaning_vi": "không lương thiện",
+      "meaning_vi": "không lương thiện, bất lương; không thành thật, không trung thực",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24924,
+      "word": "dislike",
+      "normalized_word": "dislike",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'laik/",
+      "primary_meaning_vi": "sự không ưa",
+      "meaning_vi": "sự không ưa, sự không thích, sự ghét; không ưa, không thích, ghét",
+      "example_en": "Tell me your likes and dislikes.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Rebecca Black's \"Friday\" video has gained notoriety for being one of the most disliked videos in YouTube history.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24925,
+      "word": "display",
+      "normalized_word": "display",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'plei/",
+      "primary_meaning_vi": "sự bày ra",
+      "meaning_vi": "sự bày ra, sự phô bày, sự trưng bày; sự phô trương, sự khoe khoang; sự biểu lộ, sự để lộ ra; sự sắp chữ nổi bật; bày ra, phô bày, trưng bày; phô trương, khoe khoang (kiến thức...); biểu lộ ra, để lộ ra, bày tỏ ra (lòng can đảm...); sắp (chữ) nổi bật",
+      "example_en": "The trapeze artist put on an amazing acrobatic display.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Pupils are expected to produce a wall display about a country of their choice.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24926,
+      "word": "disturb",
+      "normalized_word": "disturb",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'tə:b/",
+      "primary_meaning_vi": "làm mất yên tĩnh",
+      "meaning_vi": "làm mất yên tĩnh, làm náo động; quấy rầy, làm bối rối, làm lo âu; làm xáo lộn; làm nhiễu loạn",
+      "example_en": "A school of fish disturbed the water.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A mudslide disturbed the course of the river.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A disturbing film that tries to explore the mind of a serial killer.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24927,
+      "word": "dizzy",
+      "normalized_word": "dizzy",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dizi/",
+      "primary_meaning_vi": "hoa mắt",
+      "meaning_vi": "hoa mắt, choáng váng, chóng mặt; làm hoa mắt, làm choáng váng, làm chóng mặt; cao ngất (làm chóng mặt...); quay tít, xoáy cuộn (làm chóng mặt); làm hoa mắt, làm chóng mặt",
+      "example_en": "I stood up too fast and felt dizzy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We climbed to a dizzy height.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My new secretary is a dizzy blonde.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24928,
+      "word": "done",
+      "normalized_word": "done",
+      "cefr_level": "A2",
+      "pos": "do-verb",
+      "pos_vi": "tính từ",
+      "phonetic": "/dʌn/",
+      "primary_meaning_vi": "xong",
+      "meaning_vi": "xong, hoàn thành, đã thực hiện; mệt lử, mệt rã rời; đã qua đi; nấu chín; tất phải thất bại, tất phải chết; bị thất bại hoàn toàn",
+      "example_en": "All you ever do is surf the Internet. What will you do this afternoon?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "it’s not the best broom, but it will have to do; this will do me, thanks.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It simply will not do to have dozens of children running around such a quiet event.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The fresh air did him some good.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24929,
+      "word": "double",
+      "normalized_word": "double",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'dʌbl/",
+      "primary_meaning_vi": "đôi",
+      "meaning_vi": "đôi, hai, kép; gập đôi; nước đôi, hai mặt, hai nghĩa; giả dối, không thành thật, lá mặt, lá trái; gấp đôi, to gấp đôi, mạnh gấp đôi, có giá trị gấp đôi; kép (hoa); cái gấp đôi, lượng gấp đôi; bản giống hệt, bản sao lục, cái giống hệt (cái khác); người giống hệt (người khác); trận đánh đôi (bóng bàn, quần vợt); người đóng thay thế (một vai); bóng ma, hồn (người chết hiện hình); sự chạy ngoặt thình lình (thú bị săn đuổi); khúc ngoặt đột ngột (của dòng sông); ,  (thể dục,thể thao) bước chạy đều; đôi, gấp đôi, gấp hai; gập đôi, còng gập lại; làm gấp đôi, tăng gấp đôi, nhân gấp đôi; + up) gập đôi; xếp (một hành khách...) vào cùng phòng với một người khác; tăng đôi; ; (điện ảnh) đóng thay thế; nắm chặt (nắm tay); đi quanh (mũi biển); gấp đôi, tăng gấp đôi; + up) bị gập đôi (tờ giấy...); gập người làm đôi; rẽ ngoặt thình lình, chạy ngoằn ngoèo (trong khi chạy trốn...); ; (thể dục,thể thao) đi bước rào, chạy bước chạy đều",
+      "example_en": "Saddam Hussein was rumored to have many doubles.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "On second thought, make that a double.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Before printing the photos, Liam deleted the doubles.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The catcher hit a double to lead off the ninth.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24930,
+      "word": "doubt",
+      "normalized_word": "doubt",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/daut/",
+      "primary_meaning_vi": "sự nghi ngờ",
+      "meaning_vi": "sự nghi ngờ, sự ngờ vực; sự không chắc, sự hồ nghi; sự do dự, sự lưỡng lự, sự nghi ngờ; nghi ngờ, ngờ vực; không tin, hồ nghi; do dự, lưỡng lự, nghi ngại; tự hỏi, không biết; ,  (tiếng địa phương) e rằng, sợ rằng, ngại rằng",
+      "example_en": "I have doubts about how to convert this code to JavaScript.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He doubted that was really what you meant.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

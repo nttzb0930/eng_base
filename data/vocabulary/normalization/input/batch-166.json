@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-166",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25651,
+      "word": "cabbage",
+      "normalized_word": "cabbage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæbidʤ/",
+      "primary_meaning_vi": "cải bắp",
+      "meaning_vi": "cải bắp; tiền, xìn, giấy bạc; mẩu vải thừa; mẩu vải ăn bớt (thợ may); ăn bớt vải (thợ may); bài dịch từng chữ một, bài dịch để quay cóp",
+      "example_en": "Cabbage is good for you.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After the car crash, he became a cabbage.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to make lettuce cabbage",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25652,
+      "word": "cabin",
+      "normalized_word": "cabin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ,  (thường) dạng bị động",
+      "phonetic": "/'kæbin/",
+      "primary_meaning_vi": "cabin",
+      "meaning_vi": "cabin, buồng ngủ (ở tàu thuỷ, máy bay); nhà gỗ nhỏ, túp lều; nhốt vào chỗ chật hẹp",
+      "example_en": "Abraham Lincoln was born in a log cabin.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the captain's cabin: Passengers shall remain in their cabins.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25653,
+      "word": "cage",
+      "normalized_word": "cage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/keidʤ/",
+      "primary_meaning_vi": "lồng",
+      "meaning_vi": "lồng, chuồng, cũi; trại giam tù binh; nhà giam, nhà lao; buồng (thang máy); bộ khung, bộ sườn (nhà...); nhốt vào lồng, nhốt vào cũi; giam giữ",
+      "example_en": "The most dangerous prisoners are locked away in a cage.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25654,
+      "word": "calculate",
+      "normalized_word": "calculate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/'kælkjuleit/",
+      "primary_meaning_vi": "tính",
+      "meaning_vi": "tính, tính toán; tính trước, suy tính, dự tính; sắp xếp, sắp đặt (nhằm làm gì); làm cho thích hợp; trông nom vào, tin vào, cậy vào, dựa vào; cho rằng, tin rằng, tưởng rằng",
+      "example_en": "Calculate the square root of 3 to 10 decimal places.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to calculate or cast one's nativity",
+          "example_vi": null
+        },
+        {
+          "example_en": "to calculate a system of laws for the government and protection of a free people",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25655,
+      "word": "calculation",
+      "normalized_word": "calculation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kælkju'leiʃn/",
+      "primary_meaning_vi": "sự tính",
+      "meaning_vi": "sự tính, sự tính toán; kết quả tính toán; sự cân nhắc, sự đắn đo; sự tính toán hơn thiệt; sự trù liệu, sự trù tính, sự tính",
+      "example_en": "By my calculation, we should be there by midnight.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25656,
+      "word": "calculator",
+      "normalized_word": "calculator",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kælkjuleitə/",
+      "primary_meaning_vi": "người tính",
+      "meaning_vi": "người tính; máy tính",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25657,
+      "word": "calf",
+      "normalized_word": "calf",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều calves",
+      "phonetic": "/kɑ:f/",
+      "primary_meaning_vi": "con bê",
+      "meaning_vi": "con bê; da dê (dùng làm bìa sách, đóng giày) ((cũng) calfskin); thú con (voi con, cá voi con, nai con, nghé...); trẻ con; anh chàng ngốc nghếch, anh chàng khờ khạo; tảng băng nỗi; chưa đỗ ông nghè đã đe hàng tổng; chưa đẻ đã đặt tên; vui mừng, gặp gỡ, hân hoan đón tiếp (như đón đứa con phiêu bạt trở về); thết đãi hậu hĩ; thờ phụng đồng tiền; bắp chân; phần phủ bắp chân (của tất dài)",
+      "example_en": "the Calf of Man",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25658,
+      "word": "caller",
+      "normalized_word": "caller",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kælə/",
+      "primary_meaning_vi": "người đến thăm",
+      "meaning_vi": "người đến thăm, người gọi; tươi (cá); mát, mát mẻ (không khí)",
+      "example_en": "- I've got someone on the line.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a gentleman caller",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25659,
+      "word": "calm",
+      "normalized_word": "calm",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/kɑ:m/",
+      "primary_meaning_vi": "êm đềm",
+      "meaning_vi": "êm đềm, lặng gió (thời tiết); lặng, không nổi sóng (biển); bình tĩnh, điềm tĩnh; trơ tráo, vô liêm sỉ, không biết xấu hổ; sự yên lặng, sự êm ả; sự bình tĩnh, sự điềm tĩnh, sự thanh thản (tâm hồn); thời kỳ yên ổn (xã hội, chính trị); làm dịu đi, làm êm đi; làm bớt (đau); trầm tĩnh lại; dịu đi, êm đi, nguôi đi; lặng (biển)",
+      "example_en": "to calm a crying baby",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25660,
+      "word": "calmness",
+      "normalized_word": "calmness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɑ:mnis/",
+      "primary_meaning_vi": "sự yên lặng",
+      "meaning_vi": "sự yên lặng, sự bình tĩnh, sự điềm tĩnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

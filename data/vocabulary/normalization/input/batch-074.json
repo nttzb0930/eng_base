@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-074",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24731,
+      "word": "blanket",
+      "normalized_word": "blanket",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'blæɳkit/",
+      "primary_meaning_vi": "mền",
+      "meaning_vi": "mền, chăn; lớp phủ; để hoang; làm giảm hào hứng, làm cụt hứng; có tính chất chung, có tính chất phổ biến, bao trùm; trùm chăn, đắp chăn; ỉm đi, bịt đi (một chuyện xấu, một vấn đề); làm cho không nghe thấy, làm nghẹt (tiếng động); phá, làm lấp tiếng đi (một buổi phát thanh trên đài); phủ lên, che phủ; hứng gió của (thuyền khác); phạt tung chăn (trừng phạt bằng cách cho vào chăn rồi tung lên tung xuống)",
+      "example_en": "The baby was cold, so his mother put a blanket over him.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The city woke under a thick blanket of fog.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A press operator must carefully wash the blanket whenever changing a plate.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A fresh layer of snow blanketed the area.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24732,
+      "word": "blonde",
+      "normalized_word": "blonde",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/blɔnd/",
+      "primary_meaning_vi": "cô gái tóc hoe",
+      "meaning_vi": "cô gái tóc hoe, người đàn bà tóc hoe; blond",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24733,
+      "word": "blood",
+      "normalized_word": "blood",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/blʌd/",
+      "primary_meaning_vi": "máu",
+      "meaning_vi": "máu, huyết; nhựa (cây); nước ngọt (hoa quả...); sự tàn sát, sự chém giết, sự đổ máu; tính khí; giống nòi, dòng dõi, họ hàng, gia đình; người lịch sự, người ăn diện ((thường) young blood); chính sách vũ lực tàn bạo; một giọt máu đào hơn ao nước lã; gây sự bất hoà giữa người nọ với người kia; nhận chìm trong máu; freeze; nổi nóng; làm cho ai nổi nóng; chủ tâm có suy tính trước; nhẫn tâm, lạnh lùng, không ghê tay (khi giết người); boit; cold; không thể nào làm mủi lòng kẻ nhẫn tâm được; trích máu; luyện cho (chó săn) thích máu; xúi giục, kích động (ai)",
+      "example_en": "The cultists gathered around a chalice of blood.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They came looking for blood.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24734,
+      "word": "bloom",
+      "normalized_word": "bloom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/blu:m/",
+      "primary_meaning_vi": "hoa",
+      "meaning_vi": "hoa; sự ra hoa; tuổi thanh xuân; thời kỳ rực rỡ, thời kỳ tươi đẹp nhất; phấn (ở vỏ quả); sắc hồng hào khoẻ mạnh; vẻ tươi; có hoa, ra hoa, nở hoa; ở thời kỳ rực rỡ, ở thời kỳ tươi đẹp nhất; thỏi đúc (sắt thép); đúc (sắt thép) thành thỏi",
+      "example_en": "The cherry trees are in bloom.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the bloom of youth",
+          "example_vi": null
+        },
+        {
+          "example_en": "the rose-red cobalt bloom",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24735,
+      "word": "blow",
+      "normalized_word": "blow",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "(bất qui tắc) động từ blew",
+      "phonetic": "/blou/",
+      "primary_meaning_vi": "cú đánh đòn",
+      "meaning_vi": "cú đánh đòn; tai hoạ, điều gây xúc động mạnh, cú choáng người; chống lại; giúp đỡ, ủng hộ; đấu tranh cho (tự do...); sự nở hoa; ngọn gió; hơi thổi; sự thổi (kèn...); sự hỉ (mũi); trứng ruồi, trứng nhặng (đẻ vào thức ăn...) ((cũng) fly); nở hoa; thổi (gió); thổi; hà hơi vào; hỉ (mũi); hút (trứng); phun nước (cá voi); cuốn đi (gió); bị (gió) cuốn đi; thở dốc; làm mệt, đứt hơi; nói xấu; làm giảm giá trị, bôi xấu, bôi nhọ (danh dự...); đẻ trứng vào (ruồi, nhặng); ((nghĩa rộng)) làm hỏng, làm thối; khoe khoang, khoác lác; nguyền rủa; nổ (cầu chì); ,  (từ lóng) bỏ đi, chuồn; ,  (từ lóng) xài phí, phung phí (tiền); lan truyền; tung ra (tin tức...); thổi ngã, thổi gẫy làm rạp xuống (gió); thổi vào (gió...); đến bất chợt, đến thình lình; thổi bay đi, cuôn đi; thông, làm xì ra; ,  (từ lóng) tiêu phí, phung phí (tiền...); nổ (cầu chì...); làm nổ; qua đi; bỏ qua, quên đi; nổ, nổ tung; làm nổ; phá (bằng chất nổ, mìn...); mắng mỏ, quở trách; phóng (ảnh); nổi nóng; làm mất tươi, làm thiu; làm mất tín nhiệm, làm mất thanh danh; làm mất hứng thú; mách lẻo, kháo chuyện về (ai); hot; khoe khoang; gaff",
+      "example_en": "We're having a bit of a blow this afternoon.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The players were able to get a blow during the last timeout.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Blow the dust off that book and open it up.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The leaves blow through the streets in the fall.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24736,
+      "word": "boil",
+      "normalized_word": "boil",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/bɔil/",
+      "primary_meaning_vi": "nhọt",
+      "meaning_vi": "nhọt, đinh; sự sôi; điểm sôi; sôi; đun sôi, nấu sôi; luộc; sục sôi; tiếp tục sôi; sôi cạn; nấu đặc lại; nấu đặc lại; cô đặc lại; tóm tắt lại, rút lại; sôi tràn ra; sơ mi là cứng ngực; pot",
+      "example_en": "Add the noodles when the water comes to the boil.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Boil some water in a pan.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Boil the eggs for three minutes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Pure water boils at 100 degrees Celsius.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24737,
+      "word": "bonus",
+      "normalized_word": "bonus",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bounəs/",
+      "primary_meaning_vi": "tiền thưởng",
+      "meaning_vi": "tiền thưởng; tiền các; lợi tức chia thêm (cho người có cổ phần; (từ Mỹ,nghĩa Mỹ) cho người có bảo hiểm)",
+      "example_en": "The employee of the week receives a bonus for his excellent work.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24738,
+      "word": "bookcase",
+      "normalized_word": "bookcase",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bukkeis/",
+      "primary_meaning_vi": "tủ sách",
+      "meaning_vi": "tủ sách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24739,
+      "word": "bookshelf",
+      "normalized_word": "bookshelf",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "giá sách",
+      "meaning_vi": "giá sách, kệ sách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24740,
+      "word": "bookshop",
+      "normalized_word": "bookshop",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bukʃɔp/",
+      "primary_meaning_vi": "hiệu sách",
+      "meaning_vi": "hiệu sách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

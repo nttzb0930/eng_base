@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-039",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24381,
+      "word": "happy",
+      "normalized_word": "happy",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'hæpi/",
+      "primary_meaning_vi": "vui sướng",
+      "meaning_vi": "vui sướng, vui lòng (một công thức xã giao); may mắn, tốt phúc; sung sướng, hạnh phúc; khéo chọn, rất đắt, rất đúng, tài tình (từ, thành ngữ, câu nói...); thích hợp (cách xử sự...); bị choáng váng, bị ngây ngất (vì bom...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24382,
+      "word": "hard",
+      "normalized_word": "hard",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/hɑ:d/",
+      "primary_meaning_vi": "cứng",
+      "meaning_vi": "cứng, rắn; rắn chắc, cứng cáp; cứng (nước); thô cứng; gay gắt, khó chịu; hà khắc, khắc nghiệt, nghiêm khắc, không thương xót, không có tính cứng rắn, cứng cỏi; hắc, keo cú, chi li; nặng, nặng nề; gay go, khó khăn, gian khổ, hắc búa; không thể chối câi được, không bác bỏ được, rõ rành rành; cao, đứng giá (thị trường giá cả); kêu (âm); bằng đồng, bằng kim loại (tiền); có nồng độ rượu cao; cứng rắn, chặt chẽ (nguyên tắc, luật lệ...); nail; nut; row; hết sức cố gắng, tích cực; chắc, mạnh, nhiều; khắc nghiệt, nghiêm khắc; cứng rắn; hắc; gay go, khó khăn, chật vật, gian khổ; sát, gần, sát cạnh; bit; press; bị lâm vào hoàn cảnh khó khăn; cạn túi, cháy túi, hết tiền; bí không bới đâu ra, bế tắc không tìm đâu ra (cái gì...); ,  (thông tục) lâm vào hoàn cảnh khó khăn, phải va chạm với những khó khăn; gần sát, xấp xỉ; rất là khó khăn bất lợi cho anh ta; đường dốc xuống bâi, đường dốc xuống bến; khổ sai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24383,
+      "word": "has",
+      "normalized_word": "has",
+      "cefr_level": "A1",
+      "pos": "have-verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/hæv, həv, v/ (has) /hæz, həz, əz, z/ (hast) /hæst/",
+      "primary_meaning_vi": "có",
+      "meaning_vi": "có; nhận được, biết được; ăn; uống; hút; hưởng; bị; cho phép; muốn (ai làm gì); biết, hiểu; nhớ; phải, có bổn phận phải, bắt buộc phải; nói, cho là, chủ trương; tin chắc là; thắng, thắng thế; tóm, nắm, nắm chặt ((nghĩa đen) & (nghĩa bóng)); sai khiến, nhờ, bảo, bắt (ai làm gì...); bịp, lừa bịp; tấn công, công kích; coa mặc, vẫn mặc (quần áo...); có đội, vẫn đội (mũ...); gọi lên, triệu lên, mời lên; bắt, đưa ra toà; better; had better; ngừng lại!, thôi!; giải quyết một cuộc tranh cãi (với ai); nói cho ra lý lẽ (với ai); đi nhổ răng; không có thế lợi gì hơn ai; không có chứng cớ gì để buộc tội ai; thằng cha ấy thế là toi rồi; thằng cha ấy thế là hết thời (lỗi thời) rồi; thằng cha ấy chẳng hòng gì được nữa đâu; the haves and havenots (thông tục) những người giàu và những người nghèo; sự lừa bịp; hành động lừa bịp",
+      "example_en": "I have a house and a car.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Do you have the key? (not necessarily one's own key)",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have a really mean boss.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can I have a look at that?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24384,
+      "word": "hat",
+      "normalized_word": "hat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/hæt/",
+      "primary_meaning_vi": "cái mũ ((thường) có vành)",
+      "meaning_vi": "cái mũ ((thường) có vành); người xấu, người đê tiện, người không có luân thường đạo lý; đi quyên tiền; lệ thuộc vào ai; bám vào ai, dựa vào ai; hy vọng vào ai; khúm núm; anh ta sống độc thân không có gia đình; giữ bí mật điều gì; thật à!, thế à! (tỏ ý ngạc nhiên); take; huênh hoang khoác lác; nhận lời thách; hết sức bí mật, tối mật; đội mũ cho (ai)",
+      "example_en": "I hit the jackpot.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Somebody's been here! Hit the lights!",
+          "example_vi": null
+        },
+        {
+          "example_en": "We hit the grocery store on the way to the park.",
+          "example_vi": null
+        },
+        {
+          "example_en": "You'll hit some nasty thunderstorms if you descend too late. We hit a lot of traffic coming back from the movies.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24385,
+      "word": "have",
+      "normalized_word": "have",
+      "cefr_level": "A1",
+      "pos": "have-verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/hæv, həv, v/ (has) /hæz, həz, əz, z/ (hast) /hæst/",
+      "primary_meaning_vi": "có",
+      "meaning_vi": "có; nhận được, biết được; ăn; uống; hút; hưởng; bị; cho phép; muốn (ai làm gì); biết, hiểu; nhớ; phải, có bổn phận phải, bắt buộc phải; nói, cho là, chủ trương; tin chắc là; thắng, thắng thế; tóm, nắm, nắm chặt ((nghĩa đen) & (nghĩa bóng)); sai khiến, nhờ, bảo, bắt (ai làm gì...); bịp, lừa bịp; tấn công, công kích; coa mặc, vẫn mặc (quần áo...); có đội, vẫn đội (mũ...); gọi lên, triệu lên, mời lên; bắt, đưa ra toà; better; had better; ngừng lại!, thôi!; giải quyết một cuộc tranh cãi (với ai); nói cho ra lý lẽ (với ai); đi nhổ răng; không có thế lợi gì hơn ai; không có chứng cớ gì để buộc tội ai; thằng cha ấy thế là toi rồi; thằng cha ấy thế là hết thời (lỗi thời) rồi; thằng cha ấy chẳng hòng gì được nữa đâu; the haves and havenots (thông tục) những người giàu và những người nghèo; sự lừa bịp; hành động lừa bịp",
+      "example_en": "I have a house and a car.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Do you have the key? (not necessarily one's own key)",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have a really mean boss.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can I have a look at that?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24386,
+      "word": "he",
+      "normalized_word": "he",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "danh từ",
+      "phonetic": "/hi:/",
+      "primary_meaning_vi": "nó",
+      "meaning_vi": "nó, anh ấy, ông ấy... (chỉ người và động vật giống đực); đàn ông; con đực; đực (động vật)",
+      "example_en": "Is your cat a he or a she?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The rulebook clearly states that \"if any student is caught cheating, he will be expelled\", and you were caught cheating, were you not, Anna?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24387,
+      "word": "head",
+      "normalized_word": "head",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/hed/",
+      "primary_meaning_vi": "cái đầu (người",
+      "meaning_vi": "cái đầu (người, thú vật); người, đầu người; (số nhiều không đổi) con (vật nuôi), đầu (vật nuôi); đầu óc, trí nhớ; năng khiếu, tài năng; chứng nhức đầu (thường là sau khi uống rượu say); vị trí đứng đầu, người đứng đầu, người chỉ huy, thủ trưởng (cơ quan), hiệu trưởng (trường học), chủ; vật hình đầu; đoạn đầu, phần đầu; bọt (cốc rượu bia); váng kem (trên mặt bình sữa...); ngòi (mụn, nhọt); gạc (hươu, nai); mũi (tàu); mũi biển; mặt ngửa (đồng tiền); đường hầm; nhà xí cho thuỷ thủ (ở mũi tàu); đề mục, chương mục, phần chính (trong một bài diễn thuyết...); loại; lúc nguy kịch; lúc gay go căng thẳng; cơn khủng hoảng; cột nước; áp suất; addle; nhồi nhét cái gì vào đầu ai; có thể làm được một cái gì một cách dễ dàng; ngập lút đến đầu đến cổ, ngập đến mang tai; mất trí, hoá điên; đánh vỡ đầu ai; đánh gục ai; đánh bại ai hoàn toàn; đầu gà còn hơn đuôi trâu; mua tranh được ai cái gì; khoẻ hơn ai nhiều; cao lớn hơn ai một đầu; ngẩng cao đầu; không hiểu đầu đuôi ra sao; làm chi ai mất đầu; eat; nghĩ rằng, đinh ninh rằng; muốn rằng; quên ai (cái gì) đi, không nghĩ đến ai (cái gì) nữa; thả dây cương ra cho ngựa đi tự do thoải mái; sáng suốt, có óc phán đoán, có óc suy xét; lộn phộc đầu xuống trước; vội vàng, hấp tấp; người đề xướng và lânh đạo (một phong trào...); mái tóc dày cộm; heel; giữ bình tĩnh, điềm tĩnh; above; hội ý với nhau, bàn bạc với nhau; lose; tiến lên, tiến tới; kháng cự thắng lợi; gàn gàn, hâm hâm; khôn ngoan trước tuổi; do mình nghĩ ra, do mình tạo ra; lập dị; talk; nói khó hiểu, làm cho ai không hiểu gì cả; suy đi tính lại cái gì trong óc, nghiền ngẫm cái gì trong óc; ý kiến tập thể bao giờ cũng sáng suốt hơn, ba ông thợ da bằng Gia Cát Lượng; làm đầu, làm chóp (cho một cái gì); hớt ngọn, chặt ngọn (cây) ((cũng) to head down); để ở đầu, ghi ở đầu (trong chương mục...); đứng đầu, chỉ huy, lânh đạo; đi đầu, dẫn đầu; đương đầu với, đối chọi với; vượt, thắng hơn (ai); đi vòng phía đầu nguồn (con sông...); đánh đầu, đội đầu (bóng đá); đóng đầy thùng; hướng (mũi tàu về phía nào); kết thành bắp (bắp cải); kết thành cụm đầu (hoa...); mưng chín (mụn nhọt); tiến về, hướng về, đi về (phía nào...); tiến lên trước để chặn bắt (ai) phải quay lại; to head back; chặn tránh (một vấn đề gì khi chịu bóng bằng cách hướng câu chuyện sang một vấn đề khác...)",
+      "example_en": "Be careful when you pet that dog on the head; it may bite.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "What does it say at the head of the page?",
+          "example_vi": null
+        },
+        {
+          "example_en": "We are having a difficult time making head against this wind.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We will consider performance issues under the head of future improvements.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24388,
+      "word": "headache",
+      "normalized_word": "headache",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hedeik/",
+      "primary_meaning_vi": "chứng nhức đầu",
+      "meaning_vi": "chứng nhức đầu; vấn đề hắc búa",
+      "example_en": "The clumsy filing system has been a huge headache.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24389,
+      "word": "health",
+      "normalized_word": "health",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hi:liɳ/",
+      "primary_meaning_vi": "sức khoẻ",
+      "meaning_vi": "sức khoẻ; sự lành mạnh; thể chất; cốc rượu chúc sức khoẻ; y tế",
+      "example_en": "Her mental health is really affected by stressful environments.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The directors are concerned about the financial health of the project.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The enemies on this level have a lot of health.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24390,
+      "word": "healthy",
+      "normalized_word": "healthy",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'helθi/",
+      "primary_meaning_vi": "khoẻ mạnh",
+      "meaning_vi": "khoẻ mạnh; có lợi cho sức khoẻ; lành mạnh",
+      "example_en": "He was father to three healthy kids.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A healthy diet and exercise can help to maintain proper weight.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Sam unwrapped the sandwich and took a healthy bite out of the middle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

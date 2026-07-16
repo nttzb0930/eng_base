@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25391,
+      "quiz_meaning_vi": "sửa soạn",
+      "meaning_vi_clean": "sửa soạn; chuẩn bị; nấu ăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sửa soạn",
+          "example_en": "We prepared the spacecraft for takeoff.",
+          "example_vi": "Chúng tôi đã sửa soạn tàu vũ trụ để cất cánh."
+        },
+        {
+          "meaning_vi": "sửa soạn",
+          "example_en": "She prepared the room for the guests.",
+          "example_vi": "Cô ấy đã sửa soạn căn phòng cho khách."
+        },
+        {
+          "meaning_vi": "sửa soạn",
+          "example_en": "They prepared the stage for the performance.",
+          "example_vi": "Họ đã sửa soạn sân khấu cho buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "sửa soạn",
+          "example_en": "He prepared his notes before the meeting.",
+          "example_vi": "Anh ấy đã sửa soạn ghi chú trước cuộc họp."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "We prepared for a bumpy ride.",
+          "example_vi": "Chúng tôi đã chuẩn bị cho một chuyến đi gập ghềnh."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "Students must prepare for their final exams.",
+          "example_vi": "Học sinh phải chuẩn bị cho các kỳ thi cuối kỳ."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "The team prepared a new strategy.",
+          "example_vi": "Đội đã chuẩn bị một chiến lược mới."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "I need to prepare for the interview tomorrow.",
+          "example_vi": "Tôi cần chuẩn bị cho buổi phỏng vấn ngày mai."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "She prepared a meal from what was left in the cupboards.",
+          "example_vi": "Cô ấy đã nấu một bữa ăn từ những gì còn lại trong tủ."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "We prepared a fish for dinner.",
+          "example_vi": "Chúng tôi đã nấu một con cá cho bữa tối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa hiếm và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "prepare",
+      "normalized_word": "prepare",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "We prepared the spacecraft for takeoff.",
+      "example_vi_clean": "Chúng tôi đã sửa soạn tàu vũ trụ để cất cánh."
+    },
+    {
+      "id": 25392,
+      "quiz_meaning_vi": "sức ép",
+      "meaning_vi_clean": "sức ép; áp lực; sự thúc bách",
+      "examples_clean": [
+        {
+          "meaning_vi": "sức ép",
+          "example_en": "Apply pressure to the wound to stop the bleeding.",
+          "example_vi": "Hãy dùng sức ép lên vết thương để cầm máu."
+        },
+        {
+          "meaning_vi": "sức ép",
+          "example_en": "The pressure of the water broke the glass.",
+          "example_vi": "Sức ép của nước đã làm vỡ kính."
+        },
+        {
+          "meaning_vi": "sức ép",
+          "example_en": "High pressure can damage the pipes.",
+          "example_vi": "Sức ép cao có thể làm hỏng các đường ống."
+        },
+        {
+          "meaning_vi": "sức ép",
+          "example_en": "The atmospheric pressure is dropping.",
+          "example_vi": "Sức ép khí quyển đang giảm xuống."
+        },
+        {
+          "meaning_vi": "áp lực",
+          "example_en": "She has felt pressure lately because her boss expects her to get the job done.",
+          "example_vi": "Cô ấy cảm thấy áp lực gần đây vì sếp mong đợi cô ấy hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "áp lực",
+          "example_en": "Peer pressure can influence teenagers.",
+          "example_vi": "Áp lực từ bạn bè có thể ảnh hưởng đến thanh thiếu niên."
+        },
+        {
+          "meaning_vi": "áp lực",
+          "example_en": "He works well under pressure.",
+          "example_vi": "Anh ấy làm việc tốt dưới áp lực."
+        },
+        {
+          "meaning_vi": "áp lực",
+          "example_en": "The pressure of taxes is high this year.",
+          "example_vi": "Áp lực thuế năm nay rất cao."
+        },
+        {
+          "meaning_vi": "sự thúc bách",
+          "example_en": "The pressure of business kept him busy all day.",
+          "example_vi": "Sự thúc bách của công việc khiến anh ấy bận rộn cả ngày."
+        },
+        {
+          "meaning_vi": "sự thúc bách",
+          "example_en": "He gave in to the pressure of his friends.",
+          "example_vi": "Anh ấy đã nhượng bộ trước sự thúc bách của bạn bè."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ minh họa rõ ràng.",
+      "word": "pressure",
+      "normalized_word": "pressure",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Apply pressure to the wound to stop the bleeding.",
+      "example_vi_clean": "Hãy dùng sức ép lên vết thương để cầm máu."
+    },
+    {
+      "id": 25393,
+      "quiz_meaning_vi": "ngăn ngừa",
+      "meaning_vi_clean": "ngăn ngừa; ngăn trở",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngăn ngừa",
+          "example_en": "I brush my teeth regularly to prevent them from turning yellow.",
+          "example_vi": "Tôi đánh răng thường xuyên để ngăn ngừa chúng bị ố vàng."
+        },
+        {
+          "meaning_vi": "ngăn ngừa",
+          "example_en": "Vaccines help to prevent serious diseases.",
+          "example_vi": "Vắc-xin giúp ngăn ngừa các bệnh nghiêm trọng."
+        },
+        {
+          "meaning_vi": "ngăn ngừa",
+          "example_en": "We must take steps to prevent accidents.",
+          "example_vi": "Chúng ta phải thực hiện các bước để ngăn ngừa tai nạn."
+        },
+        {
+          "meaning_vi": "ngăn ngừa",
+          "example_en": "Regular exercise can prevent health problems.",
+          "example_vi": "Tập thể dục thường xuyên có thể ngăn ngừa các vấn đề sức khỏe."
+        },
+        {
+          "meaning_vi": "ngăn trở",
+          "example_en": "The heavy rain prevented us from going out.",
+          "example_vi": "Cơn mưa lớn đã ngăn trở chúng tôi đi ra ngoài."
+        },
+        {
+          "meaning_vi": "ngăn trở",
+          "example_en": "Nothing can prevent him from achieving his goal.",
+          "example_vi": "Không gì có thể ngăn trở anh ấy đạt được mục tiêu của mình."
+        },
+        {
+          "meaning_vi": "ngăn trở",
+          "example_en": "The wall prevented the crowd from entering.",
+          "example_vi": "Bức tường đã ngăn trở đám đông đi vào."
+        },
+        {
+          "meaning_vi": "ngăn trở",
+          "example_en": "His injury prevented him from playing in the final.",
+          "example_vi": "Chấn thương đã ngăn trở anh ấy chơi trong trận chung kết."
+        },
+        {
+          "meaning_vi": "ngăn trở",
+          "example_en": "Lack of money prevented her from traveling.",
+          "example_vi": "Thiếu tiền đã ngăn trở cô ấy đi du lịch."
+        },
+        {
+          "meaning_vi": "ngăn trở",
+          "example_en": "The fog prevented the planes from taking off.",
+          "example_vi": "Sương mù đã ngăn trở các máy bay cất cánh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "prevent",
+      "normalized_word": "prevent",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I brush my teeth regularly to prevent them from turning yellow.",
+      "example_vi_clean": "Tôi đánh răng thường xuyên để ngăn ngừa chúng bị ố vàng."
+    },
+    {
+      "id": 25394,
+      "quiz_meaning_vi": "sự kiêu hãnh",
+      "meaning_vi_clean": "sự kiêu hãnh; lòng tự trọng; sự tự hào",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kiêu hãnh",
+          "example_en": "He had pride of ownership in his department.",
+          "example_vi": "Anh ấy có sự kiêu hãnh về quyền sở hữu trong bộ phận của mình."
+        },
+        {
+          "meaning_vi": "sự kiêu hãnh",
+          "example_en": "She swallowed her pride and apologized.",
+          "example_vi": "Cô ấy đã nén sự kiêu hãnh và xin lỗi."
+        },
+        {
+          "meaning_vi": "sự kiêu hãnh",
+          "example_en": "His pride was hurt by the criticism.",
+          "example_vi": "Sự kiêu hãnh của anh ấy bị tổn thương bởi lời chỉ trích."
+        },
+        {
+          "meaning_vi": "sự kiêu hãnh",
+          "example_en": "She looked at her work with pride.",
+          "example_vi": "Cô ấy nhìn tác phẩm của mình với sự kiêu hãnh."
+        },
+        {
+          "meaning_vi": "lòng tự trọng",
+          "example_en": "He has too much pride to ask for help.",
+          "example_vi": "Anh ấy có quá nhiều lòng tự trọng để yêu cầu sự giúp đỡ."
+        },
+        {
+          "meaning_vi": "lòng tự trọng",
+          "example_en": "Losing the job damaged his pride.",
+          "example_vi": "Mất việc làm đã làm tổn thương lòng tự trọng của anh ấy."
+        },
+        {
+          "meaning_vi": "lòng tự trọng",
+          "example_en": "She has a strong sense of pride.",
+          "example_vi": "Cô ấy có lòng tự trọng rất cao."
+        },
+        {
+          "meaning_vi": "sự tự hào",
+          "example_en": "I pride myself on being a good judge of character.",
+          "example_vi": "Tôi tự hào về khả năng đánh giá con người của mình."
+        },
+        {
+          "meaning_vi": "sự tự hào",
+          "example_en": "The parents watched their son with pride.",
+          "example_vi": "Cha mẹ nhìn con trai mình với sự tự hào."
+        },
+        {
+          "meaning_vi": "sự tự hào",
+          "example_en": "It is a source of pride for the whole family.",
+          "example_vi": "Đó là niềm tự hào cho cả gia đình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ phó từ sang danh từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "pride",
+      "normalized_word": "pride",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He had pride of ownership in his department.",
+      "example_vi_clean": "Anh ấy có sự kiêu hãnh về quyền sở hữu trong bộ phận của mình."
+    },
+    {
+      "id": 25395,
+      "quiz_meaning_vi": "chính",
+      "meaning_vi_clean": "chính; hiệu trưởng; tiền vốn",
+      "examples_clean": [
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal reason for his absence was illness.",
+          "example_vi": "Lý do chính cho sự vắng mặt của anh ấy là bị ốm."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "She is the principal architect of this design.",
+          "example_vi": "Cô ấy là kiến trúc sư chính của thiết kế này."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal goal is to improve efficiency.",
+          "example_vi": "Mục tiêu chính là cải thiện hiệu quả."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal cause of the problem is unknown.",
+          "example_vi": "Nguyên nhân chính của vấn đề vẫn chưa được biết."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The principal spoke to the students at the assembly.",
+          "example_vi": "Hiệu trưởng đã nói chuyện với học sinh tại buổi tập trung."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The principal decided to close the school early.",
+          "example_vi": "Hiệu trưởng đã quyết định đóng cửa trường sớm."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "She was appointed as the new principal.",
+          "example_vi": "Cô ấy đã được bổ nhiệm làm hiệu trưởng mới."
+        },
+        {
+          "meaning_vi": "tiền vốn",
+          "example_en": "A portion of your mortgage payment goes to reduce the principal.",
+          "example_vi": "Một phần khoản thanh toán thế chấp của bạn được dùng để giảm tiền vốn."
+        },
+        {
+          "meaning_vi": "tiền vốn",
+          "example_en": "He invested a large amount of principal in the business.",
+          "example_vi": "Anh ấy đã đầu tư một khoản tiền vốn lớn vào doanh nghiệp."
+        },
+        {
+          "meaning_vi": "tiền vốn",
+          "example_en": "The interest is calculated on the principal.",
+          "example_vi": "Tiền lãi được tính trên tiền vốn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "principal",
+      "normalized_word": "principal",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The principal reason for his absence was illness.",
+      "example_vi_clean": "Lý do chính cho sự vắng mặt của anh ấy là bị ốm."
+    },
+    {
+      "id": 25396,
+      "quiz_meaning_vi": "thợ in",
+      "meaning_vi_clean": "thợ in; máy in",
+      "examples_clean": [
+        {
+          "meaning_vi": "thợ in",
+          "example_en": "The printer worked late to finish the books.",
+          "example_vi": "Thợ in đã làm việc muộn để hoàn thành những cuốn sách."
+        },
+        {
+          "meaning_vi": "thợ in",
+          "example_en": "He has been a printer for twenty years.",
+          "example_vi": "Anh ấy đã là thợ in được hai mươi năm."
+        },
+        {
+          "meaning_vi": "thợ in",
+          "example_en": "The printer checked the quality of the ink.",
+          "example_vi": "Thợ in đã kiểm tra chất lượng mực."
+        },
+        {
+          "meaning_vi": "thợ in",
+          "example_en": "The printer is responsible for the layout.",
+          "example_vi": "Thợ in chịu trách nhiệm về bố cục."
+        },
+        {
+          "meaning_vi": "máy in",
+          "example_en": "My printer is out of paper.",
+          "example_vi": "Máy in của tôi hết giấy rồi."
+        },
+        {
+          "meaning_vi": "máy in",
+          "example_en": "I need to buy a new printer for my office.",
+          "example_vi": "Tôi cần mua một cái máy in mới cho văn phòng."
+        },
+        {
+          "meaning_vi": "máy in",
+          "example_en": "The printer is connected to the computer.",
+          "example_vi": "Máy in được kết nối với máy tính."
+        },
+        {
+          "meaning_vi": "máy in",
+          "example_en": "This printer can print in color.",
+          "example_vi": "Máy in này có thể in màu."
+        },
+        {
+          "meaning_vi": "máy in",
+          "example_en": "The printer is jammed.",
+          "example_vi": "Máy in bị kẹt giấy."
+        },
+        {
+          "meaning_vi": "máy in",
+          "example_en": "Please turn on the printer.",
+          "example_vi": "Vui lòng bật máy in lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "printer",
+      "normalized_word": "printer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The printer worked late to finish the books.",
+      "example_vi_clean": "Thợ in đã làm việc muộn để hoàn thành những cuốn sách."
+    },
+    {
+      "id": 25397,
+      "quiz_meaning_vi": "riêng",
+      "meaning_vi_clean": "riêng; tư; kín đáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "riêng",
+          "example_en": "This is my own private room.",
+          "example_vi": "Đây là căn phòng riêng của tôi."
+        },
+        {
+          "meaning_vi": "riêng",
+          "example_en": "He has his own private opinion.",
+          "example_vi": "Anh ấy có ý kiến riêng của mình."
+        },
+        {
+          "meaning_vi": "riêng",
+          "example_en": "They had a private conversation.",
+          "example_vi": "Họ đã có một cuộc trò chuyện riêng."
+        },
+        {
+          "meaning_vi": "riêng",
+          "example_en": "I want to speak to you in private.",
+          "example_vi": "Tôi muốn nói chuyện với bạn riêng."
+        },
+        {
+          "meaning_vi": "tư",
+          "example_en": "This is private property.",
+          "example_vi": "Đây là tài sản tư."
+        },
+        {
+          "meaning_vi": "tư",
+          "example_en": "He works for a private company.",
+          "example_vi": "Anh ấy làm việc cho một công ty tư nhân."
+        },
+        {
+          "meaning_vi": "tư",
+          "example_en": "She is a private citizen.",
+          "example_vi": "Cô ấy là một công dân tư."
+        },
+        {
+          "meaning_vi": "kín đáo",
+          "example_en": "Her address is private; you can't have it.",
+          "example_vi": "Địa chỉ của cô ấy là kín đáo; bạn không thể có nó."
+        },
+        {
+          "meaning_vi": "kín đáo",
+          "example_en": "He is a very private person.",
+          "example_vi": "Anh ấy là một người rất kín đáo."
+        },
+        {
+          "meaning_vi": "kín đáo",
+          "example_en": "They kept their relationship private.",
+          "example_vi": "Họ giữ mối quan hệ của mình một cách kín đáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "private",
+      "normalized_word": "private",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is my own private room.",
+      "example_vi_clean": "Đây là căn phòng riêng của tôi."
+    },
+    {
+      "id": 25398,
+      "quiz_meaning_vi": "đấu thủ nhà nghề",
+      "meaning_vi_clean": "đấu thủ nhà nghề; chuyên gia",
+      "examples_clean": [
+        {
+          "meaning_vi": "đấu thủ nhà nghề",
+          "example_en": "He is a pro tennis player.",
+          "example_vi": "Anh ấy là một đấu thủ nhà nghề môn quần vợt."
+        },
+        {
+          "meaning_vi": "đấu thủ nhà nghề",
+          "example_en": "She turned pro at the age of sixteen.",
+          "example_vi": "Cô ấy đã trở thành đấu thủ nhà nghề ở tuổi mười sáu."
+        },
+        {
+          "meaning_vi": "đấu thủ nhà nghề",
+          "example_en": "The pro golfer won the tournament.",
+          "example_vi": "Đấu thủ nhà nghề môn gôn đã thắng giải đấu."
+        },
+        {
+          "meaning_vi": "đấu thủ nhà nghề",
+          "example_en": "He plays like a pro.",
+          "example_vi": "Anh ấy chơi như một đấu thủ nhà nghề."
+        },
+        {
+          "meaning_vi": "chuyên gia",
+          "example_en": "When it comes to DIY, he's a real pro.",
+          "example_vi": "Khi nói đến việc tự làm, anh ấy là một chuyên gia thực thụ."
+        },
+        {
+          "meaning_vi": "chuyên gia",
+          "example_en": "She handled the situation like a pro.",
+          "example_vi": "Cô ấy đã xử lý tình huống như một chuyên gia."
+        },
+        {
+          "meaning_vi": "chuyên gia",
+          "example_en": "You need a pro to fix this computer.",
+          "example_vi": "Bạn cần một chuyên gia để sửa máy tính này."
+        },
+        {
+          "meaning_vi": "chuyên gia",
+          "example_en": "He is a pro at fixing cars.",
+          "example_vi": "Anh ấy là một chuyên gia trong việc sửa xe."
+        },
+        {
+          "meaning_vi": "chuyên gia",
+          "example_en": "Ask a pro for advice.",
+          "example_vi": "Hãy hỏi một chuyên gia để lấy lời khuyên."
+        },
+        {
+          "meaning_vi": "chuyên gia",
+          "example_en": "She is a pro in her field.",
+          "example_vi": "Cô ấy là một chuyên gia trong lĩnh vực của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "pro",
+      "normalized_word": "pro",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a pro tennis player.",
+      "example_vi_clean": "Anh ấy là một đấu thủ nhà nghề môn quần vợt."
+    },
+    {
+      "id": 25399,
+      "quiz_meaning_vi": "hầu như chắc chắn",
+      "meaning_vi_clean": "hầu như chắc chắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "I will probably be late.",
+          "example_vi": "Tôi hầu như chắc chắn sẽ đến muộn."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "It will probably rain tomorrow.",
+          "example_vi": "Trời hầu như chắc chắn sẽ mưa vào ngày mai."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "She will probably come to the party.",
+          "example_vi": "Cô ấy hầu như chắc chắn sẽ đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "They will probably win the game.",
+          "example_vi": "Họ hầu như chắc chắn sẽ thắng trận đấu."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "He will probably finish the work by noon.",
+          "example_vi": "Anh ấy hầu như chắc chắn sẽ hoàn thành công việc trước trưa."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "We will probably go on vacation next month.",
+          "example_vi": "Chúng tôi hầu như chắc chắn sẽ đi nghỉ vào tháng tới."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "The price will probably increase.",
+          "example_vi": "Giá cả hầu như chắc chắn sẽ tăng."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "This will probably take a long time.",
+          "example_vi": "Việc này hầu như chắc chắn sẽ mất nhiều thời gian."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "She will probably agree with your plan.",
+          "example_vi": "Cô ấy hầu như chắc chắn sẽ đồng ý với kế hoạch của bạn."
+        },
+        {
+          "meaning_vi": "hầu như chắc chắn",
+          "example_en": "They will probably move to a new house.",
+          "example_vi": "Họ hầu như chắc chắn sẽ chuyển đến một ngôi nhà mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung ví dụ.",
+      "word": "probably",
+      "normalized_word": "probably",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I will probably be late.",
+      "example_vi_clean": "Tôi hầu như chắc chắn sẽ đến muộn."
+    },
+    {
+      "id": 25400,
+      "quiz_meaning_vi": "sản xuất",
+      "meaning_vi_clean": "sản xuất; đưa ra; gây ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "sản xuất",
+          "example_en": "The factory produces cars.",
+          "example_vi": "Nhà máy sản xuất ô tô."
+        },
+        {
+          "meaning_vi": "sản xuất",
+          "example_en": "This region produces excellent wine.",
+          "example_vi": "Vùng này sản xuất rượu vang tuyệt hảo."
+        },
+        {
+          "meaning_vi": "sản xuất",
+          "example_en": "They produce high-quality goods.",
+          "example_vi": "Họ sản xuất hàng hóa chất lượng cao."
+        },
+        {
+          "meaning_vi": "sản xuất",
+          "example_en": "The company produces software.",
+          "example_vi": "Công ty sản xuất phần mềm."
+        },
+        {
+          "meaning_vi": "đưa ra",
+          "example_en": "He produced his ID card.",
+          "example_vi": "Anh ấy đã đưa ra thẻ căn cước của mình."
+        },
+        {
+          "meaning_vi": "đưa ra",
+          "example_en": "She produced a letter from her bag.",
+          "example_vi": "Cô ấy đã đưa ra một lá thư từ túi của mình."
+        },
+        {
+          "meaning_vi": "đưa ra",
+          "example_en": "The magician produced a rabbit from his hat.",
+          "example_vi": "Nhà ảo thuật đã đưa ra một con thỏ từ chiếc mũ của mình."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The new policy produced good results.",
+          "example_vi": "Chính sách mới đã gây ra kết quả tốt."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The medicine produced a strange reaction.",
+          "example_vi": "Thuốc đã gây ra một phản ứng lạ."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "His actions produced a lot of anger.",
+          "example_vi": "Hành động của anh ấy đã gây ra rất nhiều sự tức giận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'sản lượng' (danh từ) sang 'sản xuất' (động từ) và bổ sung ví dụ.",
+      "word": "produce",
+      "normalized_word": "produce",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The factory produces cars.",
+      "example_vi_clean": "Nhà máy sản xuất ô tô."
+    }
+  ]
+}

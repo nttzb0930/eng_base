@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24961,
+      "quiz_meaning_vi": "tình trạng khẩn cấp",
+      "meaning_vi_clean": "tình trạng khẩn cấp; trường hợp cấp cứu",
+      "examples_clean": [
+        {
+          "meaning_vi": "tình trạng khẩn cấp",
+          "example_en": "Cardiac arrest is an emergency and you should call for help immediately.",
+          "example_vi": "Ngừng tim là một tình trạng khẩn cấp và bạn nên gọi trợ giúp ngay lập tức."
+        },
+        {
+          "meaning_vi": "tình trạng khẩn cấp",
+          "example_en": "We have a medical emergency in the office.",
+          "example_vi": "Chúng tôi có một tình trạng khẩn cấp về y tế tại văn phòng."
+        },
+        {
+          "meaning_vi": "tình trạng khẩn cấp",
+          "example_en": "The pilot declared an emergency after the engine failed.",
+          "example_vi": "Phi công đã tuyên bố tình trạng khẩn cấp sau khi động cơ bị hỏng."
+        },
+        {
+          "meaning_vi": "tình trạng khẩn cấp",
+          "example_en": "Keep this number in case of an emergency.",
+          "example_vi": "Hãy giữ số này trong trường hợp khẩn cấp."
+        },
+        {
+          "meaning_vi": "trường hợp cấp cứu",
+          "example_en": "The hospital has a dedicated ward for every emergency.",
+          "example_vi": "Bệnh viện có một khu chuyên biệt cho mọi trường hợp cấp cứu."
+        },
+        {
+          "meaning_vi": "trường hợp cấp cứu",
+          "example_en": "She was rushed to the hospital for an emergency operation.",
+          "example_vi": "Cô ấy được đưa đến bệnh viện để thực hiện một ca phẫu thuật cấp cứu."
+        },
+        {
+          "meaning_vi": "trường hợp cấp cứu",
+          "example_en": "Do not use the elevator in an emergency.",
+          "example_vi": "Đừng sử dụng thang máy trong trường hợp cấp cứu."
+        },
+        {
+          "meaning_vi": "trường hợp cấp cứu",
+          "example_en": "The fire alarm sounded, signaling a building emergency.",
+          "example_vi": "Chuông báo cháy vang lên, báo hiệu một trường hợp cấp cứu trong tòa nhà."
+        },
+        {
+          "meaning_vi": "trường hợp cấp cứu",
+          "example_en": "He is trained to handle any emergency situation.",
+          "example_vi": "Anh ấy được đào tạo để xử lý bất kỳ trường hợp cấp cứu nào."
+        },
+        {
+          "meaning_vi": "trường hợp cấp cứu",
+          "example_en": "Emergency services arrived within minutes of the call.",
+          "example_vi": "Các dịch vụ cấp cứu đã đến trong vòng vài phút sau cuộc gọi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ nghĩa không phù hợp cấp độ A2. Bổ sung đủ 10 ví dụ.",
+      "word": "emergency",
+      "normalized_word": "emergency",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Cardiac arrest is an emergency and you should call for help immediately.",
+      "example_vi_clean": "Ngừng tim là một tình trạng khẩn cấp và bạn nên gọi trợ giúp ngay lập tức."
+    },
+    {
+      "id": 24962,
+      "quiz_meaning_vi": "trống",
+      "meaning_vi_clean": "trống; không có người ở; không có nội dung; đói bụng",
+      "examples_clean": [
+        {
+          "meaning_vi": "trống",
+          "example_en": "The box was completely empty.",
+          "example_vi": "Cái hộp hoàn toàn trống rỗng."
+        },
+        {
+          "meaning_vi": "trống",
+          "example_en": "She stared at the empty page.",
+          "example_vi": "Cô ấy nhìn chằm chằm vào trang giấy trống."
+        },
+        {
+          "meaning_vi": "trống",
+          "example_en": "He drank the glass empty in one go.",
+          "example_vi": "Anh ấy uống cạn ly trong một hơi."
+        },
+        {
+          "meaning_vi": "trống",
+          "example_en": "The streets were empty late at night.",
+          "example_vi": "Đường phố trống trải vào đêm muộn."
+        },
+        {
+          "meaning_vi": "không có người ở",
+          "example_en": "The house has been empty for months.",
+          "example_vi": "Ngôi nhà đã không có người ở trong nhiều tháng."
+        },
+        {
+          "meaning_vi": "không có người ở",
+          "example_en": "We found an empty apartment near the park.",
+          "example_vi": "Chúng tôi tìm thấy một căn hộ không có người ở gần công viên."
+        },
+        {
+          "meaning_vi": "không có nội dung",
+          "example_en": "His promises were empty words.",
+          "example_vi": "Những lời hứa của anh ta là những lời sáo rỗng."
+        },
+        {
+          "meaning_vi": "không có nội dung",
+          "example_en": "She felt an empty feeling inside.",
+          "example_vi": "Cô ấy cảm thấy một cảm giác trống rỗng bên trong."
+        },
+        {
+          "meaning_vi": "đói bụng",
+          "example_en": "I cannot work on an empty stomach.",
+          "example_vi": "Tôi không thể làm việc khi bụng đói."
+        },
+        {
+          "meaning_vi": "đói bụng",
+          "example_en": "He felt empty after skipping breakfast.",
+          "example_vi": "Anh ấy cảm thấy đói bụng sau khi bỏ bữa sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành tính từ. Chọn lọc nghĩa phổ biến nhất cho A2.",
+      "word": "empty",
+      "normalized_word": "empty",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The box was completely empty.",
+      "example_vi_clean": "Cái hộp hoàn toàn trống rỗng."
+    },
+    {
+      "id": 24963,
+      "quiz_meaning_vi": "làm can đảm",
+      "meaning_vi_clean": "làm can đảm; khuyến khích; giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "The teacher tried to encourage the shy student.",
+          "example_vi": "Giáo viên đã cố gắng làm can đảm cho học sinh nhút nhát."
+        },
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "His words encouraged me to try again.",
+          "example_vi": "Lời nói của anh ấy làm tôi can đảm để thử lại."
+        },
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "She felt encouraged by the positive feedback.",
+          "example_vi": "Cô ấy cảm thấy được khích lệ bởi những phản hồi tích cực."
+        },
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "Don't let failure discourage you; stay encouraged.",
+          "example_vi": "Đừng để thất bại làm bạn nản lòng; hãy giữ vững tinh thần."
+        },
+        {
+          "meaning_vi": "khuyến khích",
+          "example_en": "We encourage students to read more books.",
+          "example_vi": "Chúng tôi khuyến khích học sinh đọc nhiều sách hơn."
+        },
+        {
+          "meaning_vi": "khuyến khích",
+          "example_en": "The government encourages the use of public transport.",
+          "example_vi": "Chính phủ khuyến khích việc sử dụng phương tiện công cộng."
+        },
+        {
+          "meaning_vi": "khuyến khích",
+          "example_en": "My parents always encouraged my interest in music.",
+          "example_vi": "Cha mẹ luôn khuyến khích niềm đam mê âm nhạc của tôi."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "The new policy is designed to encourage small businesses.",
+          "example_vi": "Chính sách mới được thiết kế để giúp đỡ các doanh nghiệp nhỏ."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "They encouraged the project with a generous donation.",
+          "example_vi": "Họ đã giúp đỡ dự án bằng một khoản quyên góp hào phóng."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "Friends encouraged him during his difficult time.",
+          "example_vi": "Bạn bè đã giúp đỡ anh ấy trong thời gian khó khăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ phù hợp với các nghĩa đã chọn.",
+      "word": "encourage",
+      "normalized_word": "encourage",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The teacher tried to encourage the shy student.",
+      "example_vi_clean": "Giáo viên đã cố gắng làm can đảm cho học sinh nhút nhát."
+    },
+    {
+      "id": 24964,
+      "quiz_meaning_vi": "sự kết thúc",
+      "meaning_vi_clean": "sự kết thúc; phần cuối",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The ending of the movie was very sad.",
+          "example_vi": "Sự kết thúc của bộ phim rất buồn."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "They celebrated the ending of the war.",
+          "example_vi": "Họ ăn mừng sự kết thúc của cuộc chiến."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The ending of the contract is next month.",
+          "example_vi": "Sự kết thúc của hợp đồng là vào tháng tới."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "We were surprised by the sudden ending of the meeting.",
+          "example_vi": "Chúng tôi ngạc nhiên trước sự kết thúc đột ngột của cuộc họp."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The ending of the story was unexpected.",
+          "example_vi": "Sự kết thúc của câu chuyện thật bất ngờ."
+        },
+        {
+          "meaning_vi": "phần cuối",
+          "example_en": "I didn't like the ending of the book.",
+          "example_vi": "Tôi không thích phần cuối của cuốn sách."
+        },
+        {
+          "meaning_vi": "phần cuối",
+          "example_en": "Read the ending of the chapter carefully.",
+          "example_vi": "Hãy đọc kỹ phần cuối của chương này."
+        },
+        {
+          "meaning_vi": "phần cuối",
+          "example_en": "The ending of the song is very quiet.",
+          "example_vi": "Phần cuối của bài hát rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "phần cuối",
+          "example_en": "He wrote a new ending for his play.",
+          "example_vi": "Anh ấy đã viết một phần cuối mới cho vở kịch của mình."
+        },
+        {
+          "meaning_vi": "phần cuối",
+          "example_en": "The ending of the year is a busy time.",
+          "example_vi": "Phần cuối của năm là một khoảng thời gian bận rộn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa rõ nghĩa.",
+      "word": "ending",
+      "normalized_word": "ending",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ending of the movie was very sad.",
+      "example_vi_clean": "Sự kết thúc của bộ phim rất buồn."
+    },
+    {
+      "id": 24965,
+      "quiz_meaning_vi": "mạnh mẽ",
+      "meaning_vi_clean": "mạnh mẽ; đầy sinh lực; hoạt động",
+      "examples_clean": [
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "She is an energetic person who loves sports.",
+          "example_vi": "Cô ấy là một người mạnh mẽ, người yêu thích thể thao."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "He made an energetic effort to finish the task.",
+          "example_vi": "Anh ấy đã nỗ lực mạnh mẽ để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "The team gave an energetic performance.",
+          "example_vi": "Đội đã có một màn trình diễn mạnh mẽ."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "They had an energetic discussion about the future.",
+          "example_vi": "Họ đã có một cuộc thảo luận mạnh mẽ về tương lai."
+        },
+        {
+          "meaning_vi": "đầy sinh lực",
+          "example_en": "The children were full of energetic play.",
+          "example_vi": "Những đứa trẻ đầy sinh lực khi chơi đùa."
+        },
+        {
+          "meaning_vi": "đầy sinh lực",
+          "example_en": "I feel very energetic after a good night's sleep.",
+          "example_vi": "Tôi cảm thấy rất đầy sinh lực sau một giấc ngủ ngon."
+        },
+        {
+          "meaning_vi": "đầy sinh lực",
+          "example_en": "She has an energetic approach to her work.",
+          "example_vi": "Cô ấy có cách tiếp cận đầy sinh lực với công việc của mình."
+        },
+        {
+          "meaning_vi": "hoạt động",
+          "example_en": "He is an energetic member of the club.",
+          "example_vi": "Anh ấy là một thành viên hoạt động tích cực của câu lạc bộ."
+        },
+        {
+          "meaning_vi": "hoạt động",
+          "example_en": "The organization is very energetic in its campaigns.",
+          "example_vi": "Tổ chức này rất hoạt động tích cực trong các chiến dịch của mình."
+        },
+        {
+          "meaning_vi": "hoạt động",
+          "example_en": "They are energetic supporters of the charity.",
+          "example_vi": "Họ là những người ủng hộ hoạt động tích cực cho tổ chức từ thiện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ phù hợp.",
+      "word": "energetic",
+      "normalized_word": "energetic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is an energetic person who loves sports.",
+      "example_vi_clean": "Cô ấy là một người mạnh mẽ, người yêu thích thể thao."
+    },
+    {
+      "id": 24966,
+      "quiz_meaning_vi": "to lớn",
+      "meaning_vi_clean": "to lớn; khổng lồ",
+      "examples_clean": [
+        {
+          "meaning_vi": "to lớn",
+          "example_en": "The house has an enormous garden.",
+          "example_vi": "Ngôi nhà có một khu vườn to lớn."
+        },
+        {
+          "meaning_vi": "to lớn",
+          "example_en": "He made an enormous mistake.",
+          "example_vi": "Anh ấy đã phạm một sai lầm to lớn."
+        },
+        {
+          "meaning_vi": "to lớn",
+          "example_en": "There is an enormous amount of work to do.",
+          "example_vi": "Có một khối lượng công việc to lớn cần phải làm."
+        },
+        {
+          "meaning_vi": "to lớn",
+          "example_en": "The cost of the project is enormous.",
+          "example_vi": "Chi phí của dự án thật to lớn."
+        },
+        {
+          "meaning_vi": "to lớn",
+          "example_en": "She has an enormous appetite.",
+          "example_vi": "Cô ấy có một sự thèm ăn to lớn."
+        },
+        {
+          "meaning_vi": "khổng lồ",
+          "example_en": "They saw an enormous whale in the ocean.",
+          "example_vi": "Họ đã nhìn thấy một con cá voi khổng lồ trên đại dương."
+        },
+        {
+          "meaning_vi": "khổng lồ",
+          "example_en": "The building is an enormous structure.",
+          "example_vi": "Tòa nhà là một cấu trúc khổng lồ."
+        },
+        {
+          "meaning_vi": "khổng lồ",
+          "example_en": "He has an enormous collection of stamps.",
+          "example_vi": "Anh ấy có một bộ sưu tập tem khổng lồ."
+        },
+        {
+          "meaning_vi": "khổng lồ",
+          "example_en": "The tree is enormous and very old.",
+          "example_vi": "Cái cây đó khổng lồ và rất già."
+        },
+        {
+          "meaning_vi": "khổng lồ",
+          "example_en": "An enormous crowd gathered in the square.",
+          "example_vi": "Một đám đông khổng lồ đã tập trung tại quảng trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "enormous",
+      "normalized_word": "enormous",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The house has an enormous garden.",
+      "example_vi_clean": "Ngôi nhà có một khu vườn to lớn."
+    },
+    {
+      "id": 24967,
+      "quiz_meaning_vi": "đủ",
+      "meaning_vi_clean": "đủ; khá",
+      "examples_clean": [
+        {
+          "meaning_vi": "đủ",
+          "example_en": "Do you have enough money for the ticket?",
+          "example_vi": "Bạn có đủ tiền mua vé không?"
+        },
+        {
+          "meaning_vi": "đủ",
+          "example_en": "I have had enough to eat.",
+          "example_vi": "Tôi đã ăn đủ rồi."
+        },
+        {
+          "meaning_vi": "đủ",
+          "example_en": "There is enough space for everyone.",
+          "example_vi": "Có đủ chỗ cho mọi người."
+        },
+        {
+          "meaning_vi": "đủ",
+          "example_en": "He is not tall enough to reach the shelf.",
+          "example_vi": "Anh ấy không đủ cao để với tới cái kệ."
+        },
+        {
+          "meaning_vi": "đủ",
+          "example_en": "We have enough time to finish the work.",
+          "example_vi": "Chúng ta có đủ thời gian để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "khá",
+          "example_en": "The movie was good enough, I suppose.",
+          "example_vi": "Tôi cho rằng bộ phim đó khá hay."
+        },
+        {
+          "meaning_vi": "khá",
+          "example_en": "It is warm enough to go outside.",
+          "example_vi": "Trời khá ấm để đi ra ngoài."
+        },
+        {
+          "meaning_vi": "khá",
+          "example_en": "She speaks English well enough for the job.",
+          "example_vi": "Cô ấy nói tiếng Anh khá tốt cho công việc này."
+        },
+        {
+          "meaning_vi": "khá",
+          "example_en": "The house is big enough for our family.",
+          "example_vi": "Ngôi nhà khá lớn cho gia đình chúng tôi."
+        },
+        {
+          "meaning_vi": "khá",
+          "example_en": "He is fast enough to win the race.",
+          "example_vi": "Anh ấy khá nhanh để thắng cuộc đua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ phó từ thành từ loại linh hoạt (tính từ/phó từ). Chọn nghĩa phổ biến nhất.",
+      "word": "enough",
+      "normalized_word": "enough",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Do you have enough money for the ticket?",
+      "example_vi_clean": "Bạn có đủ tiền mua vé không?"
+    },
+    {
+      "id": 24968,
+      "quiz_meaning_vi": "đi vào",
+      "meaning_vi_clean": "đi vào; tham dự; bắt đầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "đi vào",
+          "example_en": "Please enter the room quietly.",
+          "example_vi": "Vui lòng đi vào phòng một cách yên lặng."
+        },
+        {
+          "meaning_vi": "đi vào",
+          "example_en": "He entered the building through the back door.",
+          "example_vi": "Anh ấy đi vào tòa nhà qua cửa sau."
+        },
+        {
+          "meaning_vi": "đi vào",
+          "example_en": "She entered the house and took off her coat.",
+          "example_vi": "Cô ấy đi vào nhà và cởi áo khoác ra."
+        },
+        {
+          "meaning_vi": "đi vào",
+          "example_en": "The train entered the tunnel.",
+          "example_vi": "Con tàu đi vào đường hầm."
+        },
+        {
+          "meaning_vi": "tham dự",
+          "example_en": "He decided to enter the competition.",
+          "example_vi": "Anh ấy quyết định tham dự cuộc thi."
+        },
+        {
+          "meaning_vi": "tham dự",
+          "example_en": "She entered her name for the race.",
+          "example_vi": "Cô ấy đăng ký tham dự cuộc đua."
+        },
+        {
+          "meaning_vi": "tham dự",
+          "example_en": "They entered the debate with great enthusiasm.",
+          "example_vi": "Họ tham dự cuộc tranh luận với sự nhiệt tình lớn."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "The company is entering a new phase of growth.",
+          "example_vi": "Công ty đang bắt đầu một giai đoạn tăng trưởng mới."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "He is entering his final year of university.",
+          "example_vi": "Anh ấy đang bắt đầu năm cuối đại học."
+        },
+        {
+          "meaning_vi": "bắt đầu",
+          "example_en": "The child is entering school next week.",
+          "example_vi": "Đứa trẻ sẽ bắt đầu đi học vào tuần tới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành động từ. Chọn nghĩa phổ biến.",
+      "word": "enter",
+      "normalized_word": "enter",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please enter the room quietly.",
+      "example_vi_clean": "Vui lòng đi vào phòng một cách yên lặng."
+    },
+    {
+      "id": 24969,
+      "quiz_meaning_vi": "sự giải trí",
+      "meaning_vi_clean": "sự giải trí; sự tiếp đãi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giải trí",
+          "example_en": "Television is a popular form of entertainment.",
+          "example_vi": "Truyền hình là một hình thức giải trí phổ biến."
+        },
+        {
+          "meaning_vi": "sự giải trí",
+          "example_en": "We need more entertainment for the children.",
+          "example_vi": "Chúng tôi cần nhiều sự giải trí hơn cho bọn trẻ."
+        },
+        {
+          "meaning_vi": "sự giải trí",
+          "example_en": "The hotel offers live entertainment every night.",
+          "example_vi": "Khách sạn cung cấp sự giải trí trực tiếp mỗi đêm."
+        },
+        {
+          "meaning_vi": "sự giải trí",
+          "example_en": "He reads books for entertainment.",
+          "example_vi": "Anh ấy đọc sách để giải trí."
+        },
+        {
+          "meaning_vi": "sự giải trí",
+          "example_en": "The show was great entertainment.",
+          "example_vi": "Buổi biểu diễn là một sự giải trí tuyệt vời."
+        },
+        {
+          "meaning_vi": "sự tiếp đãi",
+          "example_en": "They are known for their generous entertainment of guests.",
+          "example_vi": "Họ nổi tiếng với sự tiếp đãi khách hào phóng."
+        },
+        {
+          "meaning_vi": "sự tiếp đãi",
+          "example_en": "The company provides entertainment for its clients.",
+          "example_vi": "Công ty cung cấp sự tiếp đãi cho khách hàng của mình."
+        },
+        {
+          "meaning_vi": "sự tiếp đãi",
+          "example_en": "She enjoys the entertainment of friends at home.",
+          "example_vi": "Cô ấy thích sự tiếp đãi bạn bè tại nhà."
+        },
+        {
+          "meaning_vi": "sự tiếp đãi",
+          "example_en": "The budget includes funds for client entertainment.",
+          "example_vi": "Ngân sách bao gồm các khoản tiền cho việc tiếp đãi khách hàng."
+        },
+        {
+          "meaning_vi": "sự tiếp đãi",
+          "example_en": "He is skilled in the art of entertainment.",
+          "example_vi": "Anh ấy có kỹ năng trong nghệ thuật tiếp đãi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "entertainment",
+      "normalized_word": "entertainment",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Television is a popular form of entertainment.",
+      "example_vi_clean": "Truyền hình là một hình thức giải trí phổ biến."
+    },
+    {
+      "id": 24970,
+      "quiz_meaning_vi": "sự đi vào",
+      "meaning_vi_clean": "sự đi vào; cổng vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đi vào",
+          "example_en": "His sudden entrance surprised everyone.",
+          "example_vi": "Sự đi vào đột ngột của anh ấy làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự đi vào",
+          "example_en": "She made a grand entrance at the party.",
+          "example_vi": "Cô ấy đã có một sự đi vào đầy ấn tượng tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "sự đi vào",
+          "example_en": "The entrance of the police stopped the fight.",
+          "example_vi": "Sự đi vào của cảnh sát đã ngăn chặn cuộc ẩu đả."
+        },
+        {
+          "meaning_vi": "sự đi vào",
+          "example_en": "He waited for his entrance on stage.",
+          "example_vi": "Anh ấy chờ đợi sự đi vào sân khấu của mình."
+        },
+        {
+          "meaning_vi": "sự đi vào",
+          "example_en": "The entrance of the new manager changed everything.",
+          "example_vi": "Sự đi vào của người quản lý mới đã thay đổi mọi thứ."
+        },
+        {
+          "meaning_vi": "cổng vào",
+          "example_en": "The entrance to the park is over there.",
+          "example_vi": "Cổng vào công viên ở đằng kia."
+        },
+        {
+          "meaning_vi": "cổng vào",
+          "example_en": "Please wait at the main entrance.",
+          "example_vi": "Vui lòng đợi ở cổng vào chính."
+        },
+        {
+          "meaning_vi": "cổng vào",
+          "example_en": "The entrance is blocked by a car.",
+          "example_vi": "Cổng vào bị chặn bởi một chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "cổng vào",
+          "example_en": "We found the entrance to the cave.",
+          "example_vi": "Chúng tôi đã tìm thấy cổng vào hang động."
+        },
+        {
+          "meaning_vi": "cổng vào",
+          "example_en": "The building has a beautiful entrance.",
+          "example_vi": "Tòa nhà có một cổng vào rất đẹp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Loại bỏ nghĩa 'mê hoặc' không phù hợp A2.",
+      "word": "entrance",
+      "normalized_word": "entrance",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His sudden entrance surprised everyone.",
+      "example_vi_clean": "Sự đi vào đột ngột của anh ấy làm mọi người ngạc nhiên."
+    }
+  ]
+}

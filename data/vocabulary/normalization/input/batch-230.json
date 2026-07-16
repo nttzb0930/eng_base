@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-230",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26291,
+      "word": "heavenly",
+      "normalized_word": "heavenly",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'hevn/",
+      "primary_meaning_vi": "trời",
+      "meaning_vi": "trời; ở trên trời, ở thiên đường; tuyệt trần, siêu phàm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26292,
+      "word": "heel",
+      "normalized_word": "heel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/hi:l/",
+      "primary_meaning_vi": "gót chân",
+      "meaning_vi": "gót chân; gót móng (ngựa...); (số nhiều) chân sau (loài thú bốn chân); gót (giày, bít tất); đầu cán vĩ (đàn viôlông); đầu cong (của gậy đánh gôn); đuôi sống tàu; chân cột buồm; đồ đê tiện, kẻ đáng khinh; gót A-sin, điểm dễ bị tổn thương; theo sát gót ai; đã cho vào sáu tấm đem đi; lẽo đẽo theo sau chủ (chó); theo sát gót ai; đứng chờ mỏi gối; down; vắt chân lên cỏ mà chạy; bỏ chạy; chạy vượt ai, chạy nhanh hơn ai; hairy; lộn tùng phèo; gót sắt; sự áp chế tàn bạo; chết; nhảy cỡn lên; bắt bỏ tù ai, bắt giam ai; giam hãm ai; rách gót (bít tất); đi bít tất rách gót; ăn mặc nghèo nàn rách rưới; turn; chết; bị giày xéo, sống dưới gót giày; đóng (gót giày); đan gót (bít tất); theo sát gót; ((thường) + out) đá gót (để đẩy quả bóng ra khỏi chỗ đang xô lấn); đánh bằng đầu cong của gậy (đánh gôn); giậm gót chân (khi nhảy múa); sự nghiêng đi (tàu thuỷ)",
+      "example_en": "He drove the heel of his hand into the man's nose.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the heel of a mast",
+          "example_vi": null
+        },
+        {
+          "example_en": "She called to her dog to heel.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This bandage will heal your cut.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26293,
+      "word": "height",
+      "normalized_word": "height",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/hait/",
+      "primary_meaning_vi": "chiều cao",
+      "meaning_vi": "chiều cao, bề cao; độ cao; điểm cao, đỉnh; tột độ, đỉnh cao nhất",
+      "example_en": "She's at the height of her career.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26294,
+      "word": "helmet",
+      "normalized_word": "helmet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'helmit/",
+      "primary_meaning_vi": "mũ sắt (bộ đội",
+      "meaning_vi": "mũ sắt (bộ đội, lính cứu hoả...); mũ cát; cái chao, cái nắp, cái chụp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26295,
+      "word": "helpless",
+      "normalized_word": "helpless",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'helplis/",
+      "primary_meaning_vi": "không tự lo liệu được",
+      "meaning_vi": "không tự lo liệu được, không tự lực được; không được sự giúp đỡ; không nơi nương tựa, bơ vơ",
+      "example_en": "a helpless urge",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26296,
+      "word": "herd",
+      "normalized_word": "herd",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ ((thường) + together)",
+      "phonetic": "/hə:d/",
+      "primary_meaning_vi": "bầy",
+      "meaning_vi": "bầy, đàn (vật nuôi); bọn, bè lũ (người); trong từ ghép người chăn (vật nuôi); dồn lại thành bầy, tập hợp lại thành bầy (vật nuôi); dồn (người vào một nơi nào); chắn giữ vật nuôi; sống thành bầy, đi thành bầy (vật nuôi); cấu kết với nhau, đàn đúm với nhau (người)",
+      "example_en": "a herd of cattle",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Sheep herd on many hills.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He is employed to herd the goats.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I heard the herd of cattle being herded home from a long way away.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26297,
+      "word": "hesitate",
+      "normalized_word": "hesitate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'heziteit/",
+      "primary_meaning_vi": "do dự",
+      "meaning_vi": "do dự, ngập ngừng, lưỡng lự, không nhất quyết",
+      "example_en": "He hesitated whether to accept the offer or not; men often hesitate in forming a judgment.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26298,
+      "word": "hidden",
+      "normalized_word": "hidden",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/haid/",
+      "primary_meaning_vi": "da sống (chưa thuộc",
+      "meaning_vi": "da sống (chưa thuộc, mới chỉ cạo và rửa); da người; không có bất cứ một dấu vết gì; để cứu lấy tính mạng mình; cầu an bảo mạng; lột da; đánh đòn; Haiddơ (đơn vị đo ruộng đất từ 60 đến 120 mẫu Anh tuỳ theo từng địa phương ở Anh); nơi nấp để rình thú rừng; trốn, ẩn nấp, náu; che giấu, che đậy, giấu giếm; giữ kín (một điều gì); che khuất; giấu mặt đi vì xấu hổ, xấu hổ vì không dám ló mặt ra; bushel",
+      "example_en": "hidden treasure; hidden talents",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He hides his magazines under the bed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 10,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26299,
+      "word": "highly",
+      "normalized_word": "highly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'haili/",
+      "primary_meaning_vi": "rất",
+      "meaning_vi": "rất, lắm, hết sức, ở mức độ cao; tốt, cao; với ý tôn trọng, với ý ca ngợi; nói tốt về ai; ca ngợi ai; dòng dõi quý phái",
+      "example_en": "He spoke highly of you.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He is in a highly visible job.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26300,
+      "word": "hip",
+      "normalized_word": "hip",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/hip/",
+      "primary_meaning_vi": "hông",
+      "meaning_vi": "hông; mép bờ (mái nhà); thắng thế ai; đặt ai vào thế bất lợi; smite; quả tầm xuân (quả của cây hoa tầm xuân); chứng u buồn, chứng buồn u uất ((cũng) hyp); làm chán nản, làm phiền muộn; hoan hô!; hep",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

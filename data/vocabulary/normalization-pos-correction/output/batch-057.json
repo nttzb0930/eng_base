@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25627,
+      "quiz_meaning_vi": "viên gạch",
+      "meaning_vi_clean": "viên gạch",
+      "examples_clean": [
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "The house is built of red brick.",
+          "example_vi": "Ngôi nhà được xây bằng gạch đỏ."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "He dropped a heavy brick on his foot.",
+          "example_vi": "Anh ấy đã làm rơi một viên gạch nặng lên chân mình."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "They are laying bricks for the new wall.",
+          "example_vi": "Họ đang đặt những viên gạch cho bức tường mới."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "Each brick was carefully placed by the builder.",
+          "example_vi": "Mỗi viên gạch đều được người thợ xây đặt một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "The chimney is made of old bricks.",
+          "example_vi": "Ống khói được làm từ những viên gạch cũ."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "She tripped over a loose brick in the path.",
+          "example_vi": "Cô ấy đã vấp phải một viên gạch bị lỏng trên lối đi."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "The oven is lined with special heat-resistant bricks.",
+          "example_vi": "Lò nướng được lót bằng những viên gạch chịu nhiệt đặc biệt."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "He used a brick to prop open the door.",
+          "example_vi": "Anh ấy đã dùng một viên gạch để chặn mở cửa."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "The garden path is paved with small bricks.",
+          "example_vi": "Lối đi trong vườn được lát bằng những viên gạch nhỏ."
+        },
+        {
+          "meaning_vi": "viên gạch",
+          "example_en": "A pile of bricks sat in the middle of the yard.",
+          "example_vi": "Một đống gạch nằm ở giữa sân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ brick với nghĩa viên gạch.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'viên gạch' và tất cả 10 ví dụ đều sử dụng brick như một danh từ đếm được hoặc không đếm được chỉ vật liệu xây dựng."
+      },
+      "word": "brick",
+      "normalized_word": "brick",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The house is built of red brick.",
+      "example_vi_clean": "Ngôi nhà được xây bằng gạch đỏ."
+    },
+    {
+      "id": 25628,
+      "quiz_meaning_vi": "ngắn gọn",
+      "meaning_vi_clean": "ngắn gọn",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "We had a brief meeting this morning.",
+          "example_vi": "Chúng tôi đã có một cuộc họp ngắn gọn sáng nay."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "Please give a brief description of the event.",
+          "example_vi": "Vui lòng đưa ra một mô tả ngắn gọn về sự kiện."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "Their visit to the city was very brief.",
+          "example_vi": "Chuyến thăm thành phố của họ rất ngắn ngủi."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "He made a brief appearance at the party.",
+          "example_vi": "Anh ấy đã xuất hiện ngắn gọn tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "The instructions were brief and easy to follow.",
+          "example_vi": "Các hướng dẫn rất ngắn gọn và dễ làm theo."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "There was a brief silence before he spoke.",
+          "example_vi": "Có một sự im lặng ngắn ngủi trước khi anh ấy nói."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "I only had a brief look at the report.",
+          "example_vi": "Tôi chỉ mới xem qua bản báo cáo một cách ngắn gọn."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "The storm was brief but very intense.",
+          "example_vi": "Cơn bão ngắn ngủi nhưng rất dữ dội."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "She wrote a brief note to her teacher.",
+          "example_vi": "Cô ấy đã viết một lời nhắn ngắn gọn cho giáo viên của mình."
+        },
+        {
+          "meaning_vi": "ngắn gọn",
+          "example_en": "Let's take a brief break before we continue.",
+          "example_vi": "Hãy nghỉ giải lao ngắn gọn trước khi chúng ta tiếp tục."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho tính từ brief với nghĩa ngắn gọn.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'ngắn gọn' và tất cả 10 ví dụ đều sử dụng brief như một tính từ bổ nghĩa cho danh từ hoặc làm vị ngữ."
+      },
+      "word": "brief",
+      "normalized_word": "brief",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We had a brief meeting this morning.",
+      "example_vi_clean": "Chúng tôi đã có một cuộc họp ngắn gọn sáng nay."
+    },
+    {
+      "id": 25631,
+      "quiz_meaning_vi": "rộng",
+      "meaning_vi_clean": "rộng",
+      "examples_clean": [
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The river is very broad at this point.",
+          "example_vi": "Con sông rất rộng tại điểm này."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "He has broad shoulders from years of swimming.",
+          "example_vi": "Anh ấy có đôi vai rộng nhờ nhiều năm bơi lội."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The street is broad enough for four cars.",
+          "example_vi": "Con đường đủ rộng cho bốn chiếc ô tô."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "She gave me a broad smile when she saw me.",
+          "example_vi": "Cô ấy đã nở một nụ cười rạng rỡ (rộng) khi nhìn thấy tôi."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "We have a broad range of products to choose from.",
+          "example_vi": "Chúng tôi có một danh mục sản phẩm rộng rãi để lựa chọn."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The candidate has broad support from the public.",
+          "example_vi": "Ứng cử viên có sự ủng hộ rộng rãi từ công chúng."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "He spoke with a broad accent that was hard to understand.",
+          "example_vi": "Anh ấy nói với một giọng địa phương rất nặng (rộng) khiến người ta khó hiểu."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The map shows a broad area of the forest.",
+          "example_vi": "Bản đồ hiển thị một khu vực rộng lớn của khu rừng."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "They reached a broad agreement on the new policy.",
+          "example_vi": "Họ đã đạt được một thỏa thuận chung rộng rãi về chính sách mới."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The valley is broad and green in the summer.",
+          "example_vi": "Thung lũng rộng lớn và xanh tươi vào mùa hè."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho tính từ broad với nghĩa rộng.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'rộng' và tất cả 10 ví dụ đều sử dụng broad như một tính từ để chỉ kích thước vật lý hoặc phạm vi trừu tượng."
+      },
+      "word": "broad",
+      "normalized_word": "broad",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The river is very broad at this point.",
+      "example_vi_clean": "Con sông rất rộng tại điểm này."
+    },
+    {
+      "id": 25632,
+      "quiz_meaning_vi": "chương trình phát sóng",
+      "meaning_vi_clean": "chương trình phát sóng",
+      "examples_clean": [
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "The evening news broadcast starts at six.",
+          "example_vi": "Chương trình phát sóng tin tức buổi tối bắt đầu lúc sáu giờ."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "We watched a live broadcast of the concert.",
+          "example_vi": "Chúng tôi đã xem một chương trình phát sóng trực tiếp buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "The radio broadcast was interrupted by static.",
+          "example_vi": "Chương trình phát sóng radio đã bị gián đoạn bởi tiếng nhiễu."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "She prepared a special broadcast for the holiday.",
+          "example_vi": "Cô ấy đã chuẩn bị một chương trình phát sóng đặc biệt cho ngày lễ."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "The television broadcast reached millions of viewers.",
+          "example_vi": "Chương trình phát sóng truyền hình đã tiếp cận hàng triệu người xem."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "This broadcast is being recorded for later use.",
+          "example_vi": "Chương trình phát sóng này đang được ghi lại để sử dụng sau."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "I missed the original broadcast of the interview.",
+          "example_vi": "Tôi đã bỏ lỡ chương trình phát sóng gốc của buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "The satellite broadcast was clear and sharp.",
+          "example_vi": "Chương trình phát sóng qua vệ tinh rất rõ ràng và sắc nét."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "He works in radio broadcast production.",
+          "example_vi": "Anh ấy làm việc trong lĩnh vực sản xuất chương trình phát sóng radio."
+        },
+        {
+          "meaning_vi": "chương trình phát sóng",
+          "example_en": "The emergency broadcast warned citizens of the storm.",
+          "example_vi": "Chương trình phát sóng khẩn cấp đã cảnh báo người dân về cơn bão."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ broadcast với nghĩa chương trình phát sóng.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'chương trình phát sóng' và tất cả 10 ví dụ đều sử dụng broadcast như một danh từ, không phải động từ."
+      },
+      "word": "broadcast",
+      "normalized_word": "broadcast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The evening news broadcast starts at six.",
+      "example_vi_clean": "Chương trình phát sóng tin tức buổi tối bắt đầu lúc sáu giờ."
+    },
+    {
+      "id": 25634,
+      "quiz_meaning_vi": "đồng thiếc",
+      "meaning_vi_clean": "đồng thiếc",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The statue is made of solid bronze.",
+          "example_vi": "Bức tượng được làm bằng đồng thiếc nguyên khối."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "He won a bronze medal in the race.",
+          "example_vi": "Anh ấy đã giành được huy chương đồng trong cuộc đua."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "Bronze is an alloy of copper and tin.",
+          "example_vi": "Đồng thiếc là một hợp kim của đồng và thiếc."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The museum has a collection of ancient bronze tools.",
+          "example_vi": "Bảo tàng có một bộ sưu tập các công cụ bằng đồng thiếc cổ đại."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The door handles are finished in polished bronze.",
+          "example_vi": "Tay nắm cửa được hoàn thiện bằng đồng thiếc đánh bóng."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "She polished the bronze ornaments until they shone.",
+          "example_vi": "Cô ấy đã đánh bóng các đồ trang trí bằng đồng thiếc cho đến khi chúng sáng bóng."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The artist prefers working with bronze for his sculptures.",
+          "example_vi": "Nghệ sĩ thích làm việc với đồng thiếc cho các tác phẩm điêu khắc của mình."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "Many ancient weapons were crafted from bronze.",
+          "example_vi": "Nhiều vũ khí cổ đại đã được chế tác từ đồng thiếc."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The plaque was made of heavy bronze.",
+          "example_vi": "Tấm biển được làm bằng đồng thiếc nặng."
+        },
+        {
+          "meaning_vi": "đồng thiếc",
+          "example_en": "The light reflected off the smooth bronze surface.",
+          "example_vi": "Ánh sáng phản chiếu từ bề mặt đồng thiếc nhẵn mịn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ bronze với nghĩa đồng thiếc.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đồng thiếc' và tất cả 10 ví dụ đều sử dụng bronze như một danh từ chỉ vật liệu hoặc vật phẩm làm từ vật liệu đó."
+      },
+      "word": "bronze",
+      "normalized_word": "bronze",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The statue is made of solid bronze.",
+      "example_vi_clean": "Bức tượng được làm bằng đồng thiếc nguyên khối."
+    },
+    {
+      "id": 25636,
+      "quiz_meaning_vi": "bong bóng",
+      "meaning_vi_clean": "bong bóng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "The children are blowing soap bubbles in the park.",
+          "example_vi": "Lũ trẻ đang thổi bong bóng xà phòng trong công viên."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "Tiny bubbles appeared on the surface of the water.",
+          "example_vi": "Những bong bóng nhỏ xíu xuất hiện trên mặt nước."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "She popped the bubble with a needle.",
+          "example_vi": "Cô ấy đã làm vỡ bong bóng bằng một cây kim."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "There was a large air bubble in the glass.",
+          "example_vi": "Có một bong bóng khí lớn trong chiếc ly."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "The soup started to form bubbles as it boiled.",
+          "example_vi": "Súp bắt đầu hình thành các bong bóng khi nó sôi."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "He watched the bubbles rise in his soda.",
+          "example_vi": "Anh ấy nhìn những bong bóng nổi lên trong ly soda của mình."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "The fish blew a small bubble in the tank.",
+          "example_vi": "Con cá đã thổi một bong bóng nhỏ trong bể."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "Be careful not to get bubbles in the paint.",
+          "example_vi": "Hãy cẩn thận để không tạo ra bong bóng trong lớp sơn."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "The protective wrap is full of plastic bubbles.",
+          "example_vi": "Tấm bọc bảo vệ chứa đầy các bong bóng nhựa."
+        },
+        {
+          "meaning_vi": "bong bóng",
+          "example_en": "A bubble of gas escaped from the swamp.",
+          "example_vi": "Một bong bóng khí thoát ra từ đầm lầy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ bubble với nghĩa bong bóng.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bong bóng' và tất cả 10 ví dụ đều sử dụng bubble như một danh từ đếm được."
+      },
+      "word": "bubble",
+      "normalized_word": "bubble",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The children are blowing soap bubbles in the park.",
+      "example_vi_clean": "Lũ trẻ đang thổi bong bóng xà phòng trong công viên."
+    },
+    {
+      "id": 25641,
+      "quiz_meaning_vi": "va mạnh",
+      "meaning_vi_clean": "va mạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "I bumped my head on the low ceiling.",
+          "example_vi": "Tôi đã va mạnh đầu vào trần nhà thấp."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "The two cars bumped each other in the parking lot.",
+          "example_vi": "Hai chiếc xe đã va mạnh vào nhau trong bãi đậu xe."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "Be careful not to bump the table and spill the water.",
+          "example_vi": "Hãy cẩn thận đừng va mạnh vào bàn và làm đổ nước."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "I accidentally bumped into an old friend at the mall.",
+          "example_vi": "Tôi tình cờ va phải (gặp) một người bạn cũ tại trung tâm thương mại."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "The boat bumped against the wooden dock.",
+          "example_vi": "Con thuyền va mạnh vào bến tàu bằng gỗ."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "He bumped his knee against the desk.",
+          "example_vi": "Anh ấy đã va mạnh đầu gối vào bàn làm việc."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "The suitcase bumped along the uneven floor.",
+          "example_vi": "Chiếc vali va mạnh (nảy lên) dọc theo sàn nhà không bằng phẳng."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "She bumped into the door in the dark.",
+          "example_vi": "Cô ấy đã va mạnh vào cửa trong bóng tối."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "The players often bump into each other during the game.",
+          "example_vi": "Các cầu thủ thường va mạnh vào nhau trong suốt trận đấu."
+        },
+        {
+          "meaning_vi": "va mạnh",
+          "example_en": "I bumped the vase, but luckily it didn't break.",
+          "example_vi": "Tôi đã va mạnh vào chiếc bình, nhưng may mắn là nó không vỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho động từ bump với nghĩa va mạnh.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'va mạnh' và tất cả 10 ví dụ đều sử dụng bump như một động từ chỉ hành động va chạm."
+      },
+      "word": "bump",
+      "normalized_word": "bump",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I bumped my head on the low ceiling.",
+      "example_vi_clean": "Tôi đã va mạnh đầu vào trần nhà thấp."
+    },
+    {
+      "id": 25642,
+      "quiz_meaning_vi": "chùm",
+      "meaning_vi_clean": "chùm",
+      "examples_clean": [
+        {
+          "meaning_vi": "chùm",
+          "example_en": "He bought a bunch of flowers for his mother.",
+          "example_vi": "Anh ấy đã mua một chùm hoa cho mẹ mình."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "I lost my bunch of keys this morning.",
+          "example_vi": "Tôi đã làm mất chùm chìa khóa sáng nay."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "She picked a large bunch of grapes from the vine.",
+          "example_vi": "Cô ấy đã hái một chùm nho lớn từ trên giàn."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "There is a bunch of bananas on the table.",
+          "example_vi": "Có một nải (chùm) chuối trên bàn."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "He held a bunch of balloons in his hand.",
+          "example_vi": "Anh ấy cầm một chùm bóng bay trong tay."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "A bunch of people were waiting outside the theater.",
+          "example_vi": "Một nhóm (chùm) người đang đợi bên ngoài rạp hát."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "She tied the herbs together in a small bunch.",
+          "example_vi": "Cô ấy buộc các loại thảo mộc lại với nhau thành một chùm nhỏ."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "He grabbed a bunch of papers from the desk.",
+          "example_vi": "Anh ấy đã vơ lấy một xấp (chùm) giấy tờ từ bàn làm việc."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "I found a bunch of old letters in the attic.",
+          "example_vi": "Tôi đã tìm thấy một xấp (chùm) thư cũ trên gác mái."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "The carrots were sold in a bunch at the market.",
+          "example_vi": "Cà rốt được bán theo chùm ở chợ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ bunch với nghĩa chùm.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'chùm' và tất cả 10 ví dụ đều sử dụng bunch như một danh từ chỉ một nhóm vật cùng loại được buộc hoặc mọc cùng nhau."
+      },
+      "word": "bunch",
+      "normalized_word": "bunch",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He bought a bunch of flowers for his mother.",
+      "example_vi_clean": "Anh ấy đã mua một chùm hoa cho mẹ mình."
+    },
+    {
+      "id": 25643,
+      "quiz_meaning_vi": "gánh nặng",
+      "meaning_vi_clean": "gánh nặng",
+      "examples_clean": [
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "The heavy backpack was a burden on his shoulders.",
+          "example_vi": "Chiếc ba lô nặng nề là một gánh nặng trên vai anh ấy."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "She didn't want to be a burden to her family.",
+          "example_vi": "Cô ấy không muốn trở thành gánh nặng cho gia đình mình."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "The tax increase is a heavy burden for small businesses.",
+          "example_vi": "Việc tăng thuế là một gánh nặng lớn đối với các doanh nghiệp nhỏ."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "He carried the burden of the secret for many years.",
+          "example_vi": "Anh ấy đã mang gánh nặng của bí mật đó trong nhiều năm."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "The cost of the project became a financial burden.",
+          "example_vi": "Chi phí của dự án đã trở thành một gánh nặng tài chính."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "Caring for an elderly relative can be a heavy burden.",
+          "example_vi": "Chăm sóc một người thân cao tuổi có thể là một gánh nặng lớn."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "He felt the burden of responsibility for the team's failure.",
+          "example_vi": "Anh ấy cảm thấy gánh nặng trách nhiệm về sự thất bại của đội."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "The donkey struggled under the heavy burden.",
+          "example_vi": "Con lừa vật lộn dưới gánh nặng nề."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "We must share the burden of the work equally.",
+          "example_vi": "Chúng ta phải chia sẻ gánh nặng công việc một cách công bằng."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "She finally felt free from the burden of debt.",
+          "example_vi": "Cuối cùng cô ấy cũng cảm thấy thoát khỏi gánh nặng nợ nần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ burden với nghĩa gánh nặng.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'gánh nặng' và tất cả 10 ví dụ đều sử dụng burden như một danh từ chỉ vật nặng hoặc trách nhiệm khó khăn."
+      },
+      "word": "burden",
+      "normalized_word": "burden",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The heavy backpack was a burden on his shoulders.",
+      "example_vi_clean": "Chiếc ba lô nặng nề là một gánh nặng trên vai anh ấy."
+    },
+    {
+      "id": 25649,
+      "quiz_meaning_vi": "người bán thịt",
+      "meaning_vi_clean": "người bán thịt",
+      "examples_clean": [
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "The butcher is cutting the steaks for the customers.",
+          "example_vi": "Người bán thịt đang cắt những miếng bít tết cho khách hàng."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "I need to go to the butcher to buy some chicken.",
+          "example_vi": "Tôi cần đi đến chỗ người bán thịt để mua một ít thịt gà."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "Our local butcher always has the freshest meat.",
+          "example_vi": "Người bán thịt ở địa phương chúng tôi luôn có thịt tươi nhất."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "The butcher wrapped the sausages in brown paper.",
+          "example_vi": "Người bán thịt đã gói những chiếc xúc xích trong giấy nâu."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "He has worked as a butcher for over twenty years.",
+          "example_vi": "Ông ấy đã làm nghề bán thịt trong hơn hai mươi năm."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "Ask the butcher which cut of beef is best for roasting.",
+          "example_vi": "Hãy hỏi người bán thịt xem phần thịt bò nào là tốt nhất để nướng."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "The butcher's shop is closed on Sundays.",
+          "example_vi": "Cửa hàng của người bán thịt đóng cửa vào các ngày Chủ Nhật."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "She bought a leg of lamb from the butcher.",
+          "example_vi": "Cô ấy đã mua một cái đùi cừu từ người bán thịt."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "The butcher sharpened his knife before starting.",
+          "example_vi": "Người bán thịt đã mài dao trước khi bắt đầu."
+        },
+        {
+          "meaning_vi": "người bán thịt",
+          "example_en": "My grandfather was a butcher in a small village.",
+          "example_vi": "Ông nội tôi từng là một người bán thịt trong một ngôi làng nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa và 10 ví dụ cho danh từ butcher với nghĩa người bán thịt.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'người bán thịt' và tất cả 10 ví dụ đều sử dụng butcher như một danh từ chỉ người làm nghề giết mổ hoặc bán thịt."
+      },
+      "word": "butcher",
+      "normalized_word": "butcher",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The butcher is cutting the steaks for the customers.",
+      "example_vi_clean": "Người bán thịt đang cắt những miếng bít tết cho khách hàng."
+    }
+  ]
+}

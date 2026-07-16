@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24991,
+      "quiz_meaning_vi": "kinh nghiệm",
+      "meaning_vi_clean": "kinh nghiệm; trải qua",
+      "examples_clean": [
+        {
+          "meaning_vi": "kinh nghiệm",
+          "example_en": "She has a lot of experience in teaching children.",
+          "example_vi": "Cô ấy có nhiều kinh nghiệm trong việc dạy trẻ em."
+        },
+        {
+          "meaning_vi": "kinh nghiệm",
+          "example_en": "Do you have any experience with this software?",
+          "example_vi": "Bạn có kinh nghiệm nào với phần mềm này không?"
+        },
+        {
+          "meaning_vi": "kinh nghiệm",
+          "example_en": "He lacks the experience needed for this job.",
+          "example_vi": "Anh ấy thiếu kinh nghiệm cần thiết cho công việc này."
+        },
+        {
+          "meaning_vi": "kinh nghiệm",
+          "example_en": "It was a valuable experience for all of us.",
+          "example_vi": "Đó là một kinh nghiệm quý giá cho tất cả chúng tôi."
+        },
+        {
+          "meaning_vi": "trải qua",
+          "example_en": "We experienced some difficulties during the trip.",
+          "example_vi": "Chúng tôi đã trải qua một vài khó khăn trong chuyến đi."
+        },
+        {
+          "meaning_vi": "trải qua",
+          "example_en": "They experienced a sudden change in weather.",
+          "example_vi": "Họ đã trải qua một sự thay đổi thời tiết đột ngột."
+        },
+        {
+          "meaning_vi": "trải qua",
+          "example_en": "I have never experienced such kindness before.",
+          "example_vi": "Tôi chưa bao giờ trải qua sự tử tế như vậy trước đây."
+        },
+        {
+          "meaning_vi": "trải qua",
+          "example_en": "The city experienced rapid growth last year.",
+          "example_vi": "Thành phố đã trải qua sự tăng trưởng nhanh chóng vào năm ngoái."
+        },
+        {
+          "meaning_vi": "trải qua",
+          "example_en": "Many people experience stress at work.",
+          "example_vi": "Nhiều người trải qua căng thẳng tại nơi làm việc."
+        },
+        {
+          "meaning_vi": "trải qua",
+          "example_en": "She experienced a moment of great joy.",
+          "example_vi": "Cô ấy đã trải qua một khoảnh khắc vui sướng tột độ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ/động từ. Giữ nghĩa phổ biến nhất.",
+      "word": "experience",
+      "normalized_word": "experience",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a lot of experience in teaching children.",
+      "example_vi_clean": "Cô ấy có nhiều kinh nghiệm trong việc dạy trẻ em."
+    },
+    {
+      "id": 24992,
+      "quiz_meaning_vi": "giảng",
+      "meaning_vi_clean": "giảng; giải thích",
+      "examples_clean": [
+        {
+          "meaning_vi": "giảng",
+          "example_en": "The teacher will explain the lesson again.",
+          "example_vi": "Giáo viên sẽ giảng lại bài học."
+        },
+        {
+          "meaning_vi": "giảng",
+          "example_en": "Can you explain this math problem to me?",
+          "example_vi": "Bạn có thể giảng bài toán này cho tôi không?"
+        },
+        {
+          "meaning_vi": "giảng",
+          "example_en": "He tried to explain the rules of the game.",
+          "example_vi": "Anh ấy đã cố gắng giảng các quy tắc của trò chơi."
+        },
+        {
+          "meaning_vi": "giảng",
+          "example_en": "She explained the process clearly to the students.",
+          "example_vi": "Cô ấy đã giảng quy trình một cách rõ ràng cho học sinh."
+        },
+        {
+          "meaning_vi": "giải thích",
+          "example_en": "He explained why he was late for the meeting.",
+          "example_vi": "Anh ấy đã giải thích lý do tại sao anh ấy đến muộn cuộc họp."
+        },
+        {
+          "meaning_vi": "giải thích",
+          "example_en": "Please explain what you mean by that.",
+          "example_vi": "Vui lòng giải thích ý bạn là gì về điều đó."
+        },
+        {
+          "meaning_vi": "giải thích",
+          "example_en": "She couldn't explain her strange behavior.",
+          "example_vi": "Cô ấy không thể giải thích hành vi kỳ lạ của mình."
+        },
+        {
+          "meaning_vi": "giải thích",
+          "example_en": "The scientist explained the theory in simple terms.",
+          "example_vi": "Nhà khoa học đã giải thích lý thuyết bằng những thuật ngữ đơn giản."
+        },
+        {
+          "meaning_vi": "giải thích",
+          "example_en": "I need you to explain the situation to me.",
+          "example_vi": "Tôi cần bạn giải thích tình hình cho tôi."
+        },
+        {
+          "meaning_vi": "giải thích",
+          "example_en": "They explained the benefits of the new plan.",
+          "example_vi": "Họ đã giải thích những lợi ích của kế hoạch mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với CEFR A2. Bổ sung ví dụ.",
+      "word": "explain",
+      "normalized_word": "explain",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The teacher will explain the lesson again.",
+      "example_vi_clean": "Giáo viên sẽ giảng lại bài học."
+    },
+    {
+      "id": 24993,
+      "quiz_meaning_vi": "sự giảng",
+      "meaning_vi_clean": "sự giảng; lời giải thích",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giảng",
+          "example_en": "The teacher's explanation of the topic was very helpful.",
+          "example_vi": "Sự giảng giải của giáo viên về chủ đề này rất hữu ích."
+        },
+        {
+          "meaning_vi": "sự giảng",
+          "example_en": "His explanation of the grammar rule was clear.",
+          "example_vi": "Sự giảng giải của anh ấy về quy tắc ngữ pháp rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự giảng",
+          "example_en": "We need a better explanation of how this works.",
+          "example_vi": "Chúng tôi cần một sự giảng giải tốt hơn về cách thức hoạt động của cái này."
+        },
+        {
+          "meaning_vi": "sự giảng",
+          "example_en": "Her explanation made the complex subject easy to understand.",
+          "example_vi": "Sự giảng giải của cô ấy làm cho chủ đề phức tạp trở nên dễ hiểu."
+        },
+        {
+          "meaning_vi": "lời giải thích",
+          "example_en": "He gave a long explanation for his absence.",
+          "example_vi": "Anh ấy đã đưa ra một lời giải thích dài dòng cho sự vắng mặt của mình."
+        },
+        {
+          "meaning_vi": "lời giải thích",
+          "example_en": "There is no simple explanation for this phenomenon.",
+          "example_vi": "Không có lời giải thích đơn giản nào cho hiện tượng này."
+        },
+        {
+          "meaning_vi": "lời giải thích",
+          "example_en": "She demanded an explanation for his behavior.",
+          "example_vi": "Cô ấy yêu cầu một lời giải thích cho hành vi của anh ta."
+        },
+        {
+          "meaning_vi": "lời giải thích",
+          "example_en": "His explanation did not satisfy the manager.",
+          "example_vi": "Lời giải thích của anh ấy không làm hài lòng người quản lý."
+        },
+        {
+          "meaning_vi": "lời giải thích",
+          "example_en": "I am waiting for your explanation.",
+          "example_vi": "Tôi đang chờ lời giải thích của bạn."
+        },
+        {
+          "meaning_vi": "lời giải thích",
+          "example_en": "The police asked for an explanation of the accident.",
+          "example_vi": "Cảnh sát đã yêu cầu một lời giải thích về vụ tai nạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn và phù hợp. Bổ sung ví dụ.",
+      "word": "explanation",
+      "normalized_word": "explanation",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The teacher's explanation of the topic was very helpful.",
+      "example_vi_clean": "Sự giảng giải của giáo viên về chủ đề này rất hữu ích."
+    },
+    {
+      "id": 24994,
+      "quiz_meaning_vi": "thăm dò",
+      "meaning_vi_clean": "thăm dò; khảo sát",
+      "examples_clean": [
+        {
+          "meaning_vi": "thăm dò",
+          "example_en": "They are exploring the cave to see how deep it is.",
+          "example_vi": "Họ đang thăm dò hang động để xem nó sâu bao nhiêu."
+        },
+        {
+          "meaning_vi": "thăm dò",
+          "example_en": "The team is exploring the area for new resources.",
+          "example_vi": "Nhóm đang thăm dò khu vực để tìm tài nguyên mới."
+        },
+        {
+          "meaning_vi": "thăm dò",
+          "example_en": "We spent the day exploring the local forest.",
+          "example_vi": "Chúng tôi đã dành cả ngày để thăm dò khu rừng địa phương."
+        },
+        {
+          "meaning_vi": "thăm dò",
+          "example_en": "Scientists are exploring the ocean floor.",
+          "example_vi": "Các nhà khoa học đang thăm dò đáy đại dương."
+        },
+        {
+          "meaning_vi": "khảo sát",
+          "example_en": "The committee is exploring new ways to solve the problem.",
+          "example_vi": "Ủy ban đang khảo sát những cách mới để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "khảo sát",
+          "example_en": "We need to explore all the options before deciding.",
+          "example_vi": "Chúng ta cần khảo sát tất cả các lựa chọn trước khi quyết định."
+        },
+        {
+          "meaning_vi": "khảo sát",
+          "example_en": "She is exploring the possibility of moving abroad.",
+          "example_vi": "Cô ấy đang khảo sát khả năng chuyển ra nước ngoài sống."
+        },
+        {
+          "meaning_vi": "khảo sát",
+          "example_en": "The report explores the impact of technology on education.",
+          "example_vi": "Báo cáo khảo sát tác động của công nghệ đối với giáo dục."
+        },
+        {
+          "meaning_vi": "khảo sát",
+          "example_en": "They are exploring different ideas for the project.",
+          "example_vi": "Họ đang khảo sát các ý tưởng khác nhau cho dự án."
+        },
+        {
+          "meaning_vi": "khảo sát",
+          "example_en": "Let's explore the benefits of this new system.",
+          "example_vi": "Hãy cùng khảo sát những lợi ích của hệ thống mới này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp. Bổ sung ví dụ.",
+      "word": "explore",
+      "normalized_word": "explore",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They are exploring the cave to see how deep it is.",
+      "example_vi_clean": "Họ đang thăm dò hang động để xem nó sâu bao nhiêu."
+    },
+    {
+      "id": 24995,
+      "quiz_meaning_vi": "biểu lộ",
+      "meaning_vi_clean": "biểu lộ; tốc hành",
+      "examples_clean": [
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "He found it hard to express his feelings.",
+          "example_vi": "Anh ấy thấy khó để biểu lộ cảm xúc của mình."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "She expressed her gratitude for their help.",
+          "example_vi": "Cô ấy đã biểu lộ lòng biết ơn vì sự giúp đỡ của họ."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "The painting expresses the artist's sadness.",
+          "example_vi": "Bức tranh biểu lộ nỗi buồn của người nghệ sĩ."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "They expressed their opinions during the meeting.",
+          "example_vi": "Họ đã biểu lộ ý kiến của mình trong cuộc họp."
+        },
+        {
+          "meaning_vi": "tốc hành",
+          "example_en": "I took the express train to the city center.",
+          "example_vi": "Tôi đã đi chuyến tàu tốc hành vào trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "tốc hành",
+          "example_en": "We sent the package by express delivery.",
+          "example_vi": "Chúng tôi đã gửi gói hàng bằng dịch vụ chuyển phát tốc hành."
+        },
+        {
+          "meaning_vi": "tốc hành",
+          "example_en": "There is an express bus that goes directly to the airport.",
+          "example_vi": "Có một chuyến xe buýt tốc hành đi thẳng đến sân bay."
+        },
+        {
+          "meaning_vi": "tốc hành",
+          "example_en": "He requested express service for his order.",
+          "example_vi": "Anh ấy đã yêu cầu dịch vụ tốc hành cho đơn hàng của mình."
+        },
+        {
+          "meaning_vi": "tốc hành",
+          "example_en": "The express lane is only for cars with three or more people.",
+          "example_vi": "Làn đường tốc hành chỉ dành cho xe có từ ba người trở lên."
+        },
+        {
+          "meaning_vi": "tốc hành",
+          "example_en": "They offer an express cleaning service.",
+          "example_vi": "Họ cung cấp dịch vụ giặt ủi tốc hành."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành động từ/tính từ. Sửa nghĩa cho phù hợp CEFR A2.",
+      "word": "express",
+      "normalized_word": "express",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He found it hard to express his feelings.",
+      "example_vi_clean": "Anh ấy thấy khó để biểu lộ cảm xúc của mình."
+    },
+    {
+      "id": 24996,
+      "quiz_meaning_vi": "sự biểu lộ",
+      "meaning_vi_clean": "sự biểu lộ; thành ngữ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự biểu lộ",
+          "example_en": "His face was an expression of pure joy.",
+          "example_vi": "Khuôn mặt anh ấy là sự biểu lộ của niềm vui thuần khiết."
+        },
+        {
+          "meaning_vi": "sự biểu lộ",
+          "example_en": "She gave a look of surprise as an expression of her feelings.",
+          "example_vi": "Cô ấy có vẻ ngạc nhiên như một sự biểu lộ cảm xúc của mình."
+        },
+        {
+          "meaning_vi": "sự biểu lộ",
+          "example_en": "Art is a form of self-expression.",
+          "example_vi": "Nghệ thuật là một hình thức của sự biểu lộ bản thân."
+        },
+        {
+          "meaning_vi": "sự biểu lộ",
+          "example_en": "He couldn't hide the expression on his face.",
+          "example_vi": "Anh ấy không thể che giấu sự biểu lộ trên khuôn mặt mình."
+        },
+        {
+          "meaning_vi": "thành ngữ",
+          "example_en": "That is a common English expression.",
+          "example_vi": "Đó là một thành ngữ tiếng Anh phổ biến."
+        },
+        {
+          "meaning_vi": "thành ngữ",
+          "example_en": "I don't understand the meaning of this expression.",
+          "example_vi": "Tôi không hiểu nghĩa của thành ngữ này."
+        },
+        {
+          "meaning_vi": "thành ngữ",
+          "example_en": "She used a funny expression to describe the situation.",
+          "example_vi": "Cô ấy đã dùng một thành ngữ vui nhộn để mô tả tình huống."
+        },
+        {
+          "meaning_vi": "thành ngữ",
+          "example_en": "Can you explain this idiomatic expression?",
+          "example_vi": "Bạn có thể giải thích thành ngữ này không?"
+        },
+        {
+          "meaning_vi": "thành ngữ",
+          "example_en": "He learned many new expressions in class today.",
+          "example_vi": "Anh ấy đã học được nhiều thành ngữ mới trong lớp hôm nay."
+        },
+        {
+          "meaning_vi": "thành ngữ",
+          "example_en": "The expression is used to show surprise.",
+          "example_vi": "Thành ngữ này được dùng để thể hiện sự ngạc nhiên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp. Bổ sung ví dụ.",
+      "word": "expression",
+      "normalized_word": "expression",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His face was an expression of pure joy.",
+      "example_vi_clean": "Khuôn mặt anh ấy là sự biểu lộ của niềm vui thuần khiết."
+    },
+    {
+      "id": 24997,
+      "quiz_meaning_vi": "thêm",
+      "meaning_vi_clean": "thêm; phụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "thêm",
+          "example_en": "I need some extra time to finish this.",
+          "example_vi": "Tôi cần thêm thời gian để hoàn thành việc này."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "There is an extra charge for delivery.",
+          "example_vi": "Có một khoản phí thêm cho việc giao hàng."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "She brought an extra chair for the guest.",
+          "example_vi": "Cô ấy đã mang thêm một cái ghế cho vị khách."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "We have some extra food in the fridge.",
+          "example_vi": "Chúng tôi có thêm một ít thức ăn trong tủ lạnh."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "He works an extra job on weekends.",
+          "example_vi": "Anh ấy làm một công việc phụ vào cuối tuần."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "The car has many extra features.",
+          "example_vi": "Chiếc xe có nhiều tính năng phụ."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "She took some extra classes to improve her skills.",
+          "example_vi": "Cô ấy đã tham gia một vài lớp học phụ để cải thiện kỹ năng."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "They provided extra help to the students.",
+          "example_vi": "Họ đã cung cấp sự giúp đỡ phụ cho các học sinh."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "I have an extra key to the house.",
+          "example_vi": "Tôi có một chiếc chìa khóa phụ cho ngôi nhà."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "The hotel offers extra services for a fee.",
+          "example_vi": "Khách sạn cung cấp các dịch vụ phụ với một khoản phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ. Sửa nghĩa cho phù hợp. Bổ sung ví dụ.",
+      "word": "extra",
+      "normalized_word": "extra",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I need some extra time to finish this.",
+      "example_vi_clean": "Tôi cần thêm thời gian để hoàn thành việc này."
+    },
+    {
+      "id": 24998,
+      "quiz_meaning_vi": "vô cùng",
+      "meaning_vi_clean": "vô cùng; cực kỳ",
+      "examples_clean": [
+        {
+          "meaning_vi": "vô cùng",
+          "example_en": "It is extremely cold outside today.",
+          "example_vi": "Hôm nay trời vô cùng lạnh."
+        },
+        {
+          "meaning_vi": "vô cùng",
+          "example_en": "She was extremely happy with the results.",
+          "example_vi": "Cô ấy vô cùng hạnh phúc với kết quả."
+        },
+        {
+          "meaning_vi": "vô cùng",
+          "example_en": "The situation is extremely difficult.",
+          "example_vi": "Tình hình vô cùng khó khăn."
+        },
+        {
+          "meaning_vi": "vô cùng",
+          "example_en": "He is extremely talented at music.",
+          "example_vi": "Anh ấy vô cùng tài năng về âm nhạc."
+        },
+        {
+          "meaning_vi": "cực kỳ",
+          "example_en": "This is an extremely important meeting.",
+          "example_vi": "Đây là một cuộc họp cực kỳ quan trọng."
+        },
+        {
+          "meaning_vi": "cực kỳ",
+          "example_en": "The movie was extremely boring.",
+          "example_vi": "Bộ phim cực kỳ nhàm chán."
+        },
+        {
+          "meaning_vi": "cực kỳ",
+          "example_en": "They were extremely tired after the long walk.",
+          "example_vi": "Họ cực kỳ mệt mỏi sau chuyến đi bộ dài."
+        },
+        {
+          "meaning_vi": "cực kỳ",
+          "example_en": "The food was extremely delicious.",
+          "example_vi": "Đồ ăn cực kỳ ngon."
+        },
+        {
+          "meaning_vi": "cực kỳ",
+          "example_en": "She is extremely busy these days.",
+          "example_vi": "Cô ấy cực kỳ bận rộn những ngày này."
+        },
+        {
+          "meaning_vi": "cực kỳ",
+          "example_en": "The problem is extremely complex.",
+          "example_vi": "Vấn đề này cực kỳ phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp CEFR A2. Bổ sung ví dụ.",
+      "word": "extremely",
+      "normalized_word": "extremely",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "It is extremely cold outside today.",
+      "example_vi_clean": "Hôm nay trời vô cùng lạnh."
+    },
+    {
+      "id": 24999,
+      "quiz_meaning_vi": "việc",
+      "meaning_vi_clean": "việc; sự thật",
+      "examples_clean": [
+        {
+          "meaning_vi": "việc",
+          "example_en": "It is a fact that he works hard.",
+          "example_vi": "Đó là một việc là anh ấy làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "The fact is that we need more money.",
+          "example_vi": "Việc là chúng ta cần thêm tiền."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "In fact, I have never been there.",
+          "example_vi": "Thực tế là, tôi chưa bao giờ đến đó."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "The fact remains that we are late.",
+          "example_vi": "Việc vẫn là chúng ta đã muộn."
+        },
+        {
+          "meaning_vi": "sự thật",
+          "example_en": "Can you tell me the truth about the fact?",
+          "example_vi": "Bạn có thể nói cho tôi sự thật về sự việc đó không?"
+        },
+        {
+          "meaning_vi": "sự thật",
+          "example_en": "He stated the facts clearly.",
+          "example_vi": "Anh ấy đã trình bày các sự thật một cách rõ ràng."
+        },
+        {
+          "meaning_vi": "sự thật",
+          "example_en": "It is hard to accept the fact.",
+          "example_vi": "Thật khó để chấp nhận sự thật."
+        },
+        {
+          "meaning_vi": "sự thật",
+          "example_en": "We must base our decision on facts.",
+          "example_vi": "Chúng ta phải dựa quyết định của mình trên các sự thật."
+        },
+        {
+          "meaning_vi": "sự thật",
+          "example_en": "The facts of the case are still unknown.",
+          "example_vi": "Các sự thật của vụ việc vẫn chưa được biết."
+        },
+        {
+          "meaning_vi": "sự thật",
+          "example_en": "She checked the facts before writing the report.",
+          "example_vi": "Cô ấy đã kiểm tra các sự thật trước khi viết báo cáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp. Bổ sung ví dụ.",
+      "word": "fact",
+      "normalized_word": "fact",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It is a fact that he works hard.",
+      "example_vi_clean": "Đó là một việc là anh ấy làm việc chăm chỉ."
+    },
+    {
+      "id": 25000,
+      "quiz_meaning_vi": "thất bại",
+      "meaning_vi_clean": "thất bại; không làm tròn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thất bại",
+          "example_en": "He failed his driving test twice.",
+          "example_vi": "Anh ấy đã thất bại trong bài thi lái xe hai lần."
+        },
+        {
+          "meaning_vi": "thất bại",
+          "example_en": "They failed to win the game.",
+          "example_vi": "Họ đã thất bại trong việc thắng trò chơi."
+        },
+        {
+          "meaning_vi": "thất bại",
+          "example_en": "The business failed after only one year.",
+          "example_vi": "Doanh nghiệp đã thất bại chỉ sau một năm."
+        },
+        {
+          "meaning_vi": "thất bại",
+          "example_en": "Don't be afraid to fail.",
+          "example_vi": "Đừng sợ thất bại."
+        },
+        {
+          "meaning_vi": "không làm tròn",
+          "example_en": "He failed to keep his promise.",
+          "example_vi": "Anh ấy đã không làm tròn lời hứa của mình."
+        },
+        {
+          "meaning_vi": "không làm tròn",
+          "example_en": "She failed to arrive on time.",
+          "example_vi": "Cô ấy đã không làm tròn việc đến đúng giờ."
+        },
+        {
+          "meaning_vi": "không làm tròn",
+          "example_en": "They failed to provide enough information.",
+          "example_vi": "Họ đã không làm tròn việc cung cấp đủ thông tin."
+        },
+        {
+          "meaning_vi": "không làm tròn",
+          "example_en": "The company failed to meet the deadline.",
+          "example_vi": "Công ty đã không làm tròn việc đáp ứng thời hạn."
+        },
+        {
+          "meaning_vi": "không làm tròn",
+          "example_en": "He failed to notice the mistake.",
+          "example_vi": "Anh ấy đã không làm tròn việc nhận ra lỗi sai."
+        },
+        {
+          "meaning_vi": "không làm tròn",
+          "example_en": "She failed to understand the instructions.",
+          "example_vi": "Cô ấy đã không làm tròn việc hiểu các hướng dẫn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành động từ. Sửa nghĩa cho phù hợp. Bổ sung ví dụ.",
+      "word": "fail",
+      "normalized_word": "fail",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He failed his driving test twice.",
+      "example_vi_clean": "Anh ấy đã thất bại trong bài thi lái xe hai lần."
+    }
+  ]
+}

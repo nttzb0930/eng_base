@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-187",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25861,
+      "word": "dealer",
+      "normalized_word": "dealer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'di:lə/",
+      "primary_meaning_vi": "người buôn bán",
+      "meaning_vi": "người buôn bán; người chia bài; người đối xử, người ăn ở, người xử sự",
+      "example_en": "That used car dealer gave me a great deal on my 1962 rusted-out Volkswagen bug!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25862,
+      "word": "debris",
+      "normalized_word": "debris",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'debri:/",
+      "primary_meaning_vi": "mảnh vỡ",
+      "meaning_vi": "mảnh vỡ, mảnh vụn; vôi gạch đổ nát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25863,
+      "word": "debt",
+      "normalized_word": "debt",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/det/",
+      "primary_meaning_vi": "nợ",
+      "meaning_vi": "nợ; món nợ không hy vọng được trả; mang công mắc nợ; mắc nợ ai; nợ ngập đầu; trả hết nợ; mắc nợ; chết là hết nợ; nợ danh dự; chịu ơn ai; sự chết; chết, trả nợ đời",
+      "example_en": "I am in your debt.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25864,
+      "word": "decision",
+      "normalized_word": "decision",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'siʤn/",
+      "primary_meaning_vi": "sự giải quyết (một vấn đề...)",
+      "meaning_vi": "sự giải quyết (một vấn đề...); sự phân xử, sự phán quyết (của toà án); sự quyết định, quyết nghị; tính kiên quyết, tính quả quyết",
+      "example_en": "It is the decision of the court that movies are protected as free speech.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After agonizing deliberations, they finally proceeded with decision.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He has won twice by knockout, once by decision.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25865,
+      "word": "declaration",
+      "normalized_word": "declaration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,deklə'reiʃn/",
+      "primary_meaning_vi": "sự tuyên bố",
+      "meaning_vi": "sự tuyên bố; lời tuyên bố; bản tuyên ngôn; sự công bố; ; (pháp lý) sự khai, lời khai; tờ khai; sự xướng lên",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25866,
+      "word": "declare",
+      "normalized_word": "declare",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/di'kleə/",
+      "primary_meaning_vi": "tuyên bố",
+      "meaning_vi": "tuyên bố; công bố; bày tỏ, trình bày, biểu thị; khai (hàng hoá để đóng thuế); xướng lên; tuyên bố bãi bỏ; thôi; bỏ, cắt đứt, ngừng (cuộc đàm phán); thật như vậy sao!",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25867,
+      "word": "decline",
+      "normalized_word": "decline",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'klain/",
+      "primary_meaning_vi": "sự sụt",
+      "meaning_vi": "sự sụt, sự suy tàn, sự suy sụp, sự tàn tạ; bệnh gầy mòn, sự sụt sức; nghiêng đi, dốc nghiêng đi; nghiêng mình, cúi mình, cúi đầu rũ xuống; tàn dần (ngày); xế, xế tà (mặt trời...); suy đi, suy dần (sức khoẻ); sụt xuống (giá cả...); suy sụp, suy vi, tàn tạ; nghiêng (mình), cúi (đầu); từ chối, khước từ, không nhận, không chịu; biến cách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25868,
+      "word": "decrease",
+      "normalized_word": "decrease",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'di:kri:s/",
+      "primary_meaning_vi": "sự giảm đi",
+      "meaning_vi": "sự giảm đi, sự giảm sút; sắc lệnh, sắc luật; chiếu chỉ (của vua); bản án (của toà án); nisi",
+      "example_en": "One research team has recorded Baishui’s decrease at about 27 meters per year over the last 10 years.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25869,
+      "word": "dedicate",
+      "normalized_word": "dedicate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dedikeit/",
+      "primary_meaning_vi": "cống hiến",
+      "meaning_vi": "cống hiến, hiến dâng; dành cho (để tưởng nhớ); đề tặng (sách...); khánh thành, khai mạc",
+      "example_en": "dedicated their money to scientific research.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "dedicated ourselves to starting our own business.",
+          "example_vi": null
+        },
+        {
+          "example_en": "dedicate a monument.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25870,
+      "word": "deed",
+      "normalized_word": "deed",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di:d/",
+      "primary_meaning_vi": "việc làm",
+      "meaning_vi": "việc làm, hành động, hành vi; kỳ công, chiến công, thành tích lớn; văn bản, chứng thư; very; chuyển nhượng bằng chứng thư",
+      "example_en": "I have fulfilled my promise in word and in deed.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I inherited the deed to the house.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He deeded over the mineral rights to some fellas from Denver.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

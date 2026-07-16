@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-068",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24671,
+      "word": "armed",
+      "normalized_word": "armed",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ɑ:md/",
+      "primary_meaning_vi": "vũ trang",
+      "meaning_vi": "vũ trang",
+      "example_en": "The king armed his knights with swords and shields.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Remember to arm the alarm system before leaving for work.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to arm the hit of a sword; to arm a hook in angling",
+          "example_vi": null
+        },
+        {
+          "example_en": "nuclear-armed",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24672,
+      "word": "around",
+      "normalized_word": "around",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "giới từ",
+      "phonetic": "/ə'raund/",
+      "primary_meaning_vi": "xung quanh",
+      "meaning_vi": "xung quanh; vòng quanh; đó đây, chỗ này, chỗ nọ, khắp nơi; quanh quẩn, loanh quanh, ở gần; xung quanh, vòng quanh; đó đây, khắp; khoảng chừng, gần",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24673,
+      "word": "artificial",
+      "normalized_word": "artificial",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,ɑ:ti'fiʃəl/",
+      "primary_meaning_vi": "nhân tạo",
+      "meaning_vi": "nhân tạo; không tự nhiên, giả tạo; giả",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24674,
+      "word": "as",
+      "normalized_word": "as",
+      "cefr_level": "A2",
+      "pos": "conjunction",
+      "pos_vi": "danh từ,  số nhiều asses",
+      "phonetic": "/æz, əz/",
+      "primary_meaning_vi": "như",
+      "meaning_vi": "như; là, với tư cách là; cũng, bằng; xa tận, cho tận đến; đến chừng mức mà; lui tận về; về phía, về phần; good; as much as; cũng chừng này, cũng bằng này; cũng vậy; well; well; yet; lúc khi, trong khi mà; đúng lúc mà ((cũng) just as); vì, bởi vì; để, cốt để; tuy rằng, dù rằng; như thế, y như thế; có thể là như vậy, có thể cho là như vậy; though; mà, người mà, cái mà...; như; điều đó, cái đó, cái ấy; đồng át (tiền La mã)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24675,
+      "word": "asleep",
+      "normalized_word": "asleep",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "phó từ & tính từ",
+      "phonetic": "/ə'sli:p/",
+      "primary_meaning_vi": "ngủ",
+      "meaning_vi": "ngủ, đang ngủ; tê cóng, tê bại (chân tay); quay tít (con cù)",
+      "example_en": "I was asleep when you called.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "How could you miss that? Were you asleep?",
+          "example_vi": null
+        },
+        {
+          "example_en": "My arm fell asleep. You know, like pins and needles.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24676,
+      "word": "assistant",
+      "normalized_word": "assistant",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'sistənt/",
+      "primary_meaning_vi": "người giúp đỡ",
+      "meaning_vi": "người giúp đỡ, người phụ tá; trợ giáo; (pháp lý) viên phụ thẩm; người bán hàng ((cũng) shop assistant); giúp đỡ, phụ, phó",
+      "example_en": "an assistant surgeon",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24677,
+      "word": "association",
+      "normalized_word": "association",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə,sousi'eiʃn/",
+      "primary_meaning_vi": "sự kết hợp",
+      "meaning_vi": "sự kết hợp, sự liên hợp, sự liên kết; sự liên đới; sự kết giao, sự giao thiệp; sự liên tưởng; hội, hội liên hiệp; đoàn thể, công ty; quần hợp; môn bóng đá ((cũng) association foot-ball)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24678,
+      "word": "astronaut",
+      "normalized_word": "astronaut",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "phi hành gia",
+      "meaning_vi": "phi hành gia, nhà du hành vũ trụ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24679,
+      "word": "athlete",
+      "normalized_word": "athlete",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æθli:t/",
+      "primary_meaning_vi": "lực sĩ",
+      "meaning_vi": "lực sĩ; vận động viên (điền kinh, thể dục thể thao)",
+      "example_en": "She's the first athlete in her sport to obtain a corporate sponsor.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24680,
+      "word": "atom",
+      "normalized_word": "atom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ætəm/",
+      "primary_meaning_vi": "nguyên tử",
+      "meaning_vi": "nguyên tử; mảnh đất nhỏ, vật nhỏ, tý, chút xíu; (thuộc) nguyên tử",
+      "example_en": "In a Venn diagram, an atom is depicted as an area circumscribed by lines but not cut by any line.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26071,
+      "quiz_meaning_vi": "bằng phẳng",
+      "meaning_vi_clean": "bằng phẳng; chẵn; đều",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The ground here is quite even and easy to walk on.",
+          "example_vi": "Mặt đất ở đây khá bằng phẳng và dễ đi lại."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "We need to find an even surface to set up the tent.",
+          "example_vi": "Chúng ta cần tìm một bề mặt bằng phẳng để dựng lều."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The road is perfectly even for miles.",
+          "example_vi": "Con đường hoàn toàn bằng phẳng trong nhiều dặm."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "She smoothed the fabric until it was completely even.",
+          "example_vi": "Cô ấy vuốt phẳng tấm vải cho đến khi nó hoàn toàn bằng phẳng."
+        },
+        {
+          "meaning_vi": "chẵn",
+          "example_en": "Two, four, and six are even numbers.",
+          "example_vi": "Hai, bốn và sáu là các số chẵn."
+        },
+        {
+          "meaning_vi": "chẵn",
+          "example_en": "Please pick an even number between one and ten.",
+          "example_vi": "Vui lòng chọn một số chẵn từ một đến mười."
+        },
+        {
+          "meaning_vi": "chẵn",
+          "example_en": "The house number is even, so it is on the right side.",
+          "example_vi": "Số nhà là số chẵn, vì vậy nó nằm ở phía bên phải."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "He breathes at an even pace while running.",
+          "example_vi": "Anh ấy thở đều đặn trong khi chạy."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The paint should be applied in an even layer.",
+          "example_vi": "Sơn nên được quét thành một lớp đều."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "Keep your voice even when you speak to the audience.",
+          "example_vi": "Hãy giữ giọng nói đều đặn khi bạn nói chuyện với khán giả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS is adjective. Cleaned up meanings to focus on common adjective senses. Added 10 examples.",
+      "word": "even",
+      "normalized_word": "even",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The ground here is quite even and easy to walk on.",
+      "example_vi_clean": "Mặt đất ở đây khá bằng phẳng và dễ đi lại."
+    },
+    {
+      "id": 26072,
+      "quiz_meaning_vi": "bằng phẳng",
+      "meaning_vi_clean": "bằng phẳng; đều",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The floor was sanded down to make it perfectly even.",
+          "example_vi": "Sàn nhà đã được chà nhám để làm cho nó bằng phẳng hoàn hảo."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "Make sure the surface is even before you start painting.",
+          "example_vi": "Hãy đảm bảo bề mặt bằng phẳng trước khi bạn bắt đầu sơn."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The land was laid out evenly for the new garden.",
+          "example_vi": "Mảnh đất đã được san phẳng đều cho khu vườn mới."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "He leveled the ground evenly to build the patio.",
+          "example_vi": "Anh ấy san phẳng mặt đất một cách bằng phẳng để xây sân hiên."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "Spread the icing evenly over the cake.",
+          "example_vi": "Phết lớp kem phủ đều lên mặt bánh."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The seeds were distributed evenly across the field.",
+          "example_vi": "Hạt giống được rải đều khắp cánh đồng."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "Mix the ingredients evenly until smooth.",
+          "example_vi": "Trộn các nguyên liệu đều cho đến khi mịn."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The heat is distributed evenly in this oven.",
+          "example_vi": "Nhiệt được phân bổ đều trong lò nướng này."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "Divide the work evenly among the team members.",
+          "example_vi": "Chia công việc đều cho các thành viên trong nhóm."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The light shines evenly across the whole room.",
+          "example_vi": "Ánh sáng chiếu đều khắp cả căn phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Refined meanings to two clear senses. Added 10 examples.",
+      "word": "evenly",
+      "normalized_word": "evenly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The floor was sanded down to make it perfectly even.",
+      "example_vi_clean": "Sàn nhà đã được chà nhám để làm cho nó bằng phẳng hoàn hảo."
+    },
+    {
+      "id": 26073,
+      "quiz_meaning_vi": "cuối cùng",
+      "meaning_vi_clean": "cuối cùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "Eventually, they decided to move to a new city.",
+          "example_vi": "Cuối cùng, họ quyết định chuyển đến một thành phố mới."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "He eventually finished his degree after many years.",
+          "example_vi": "Anh ấy cuối cùng đã hoàn thành bằng cấp của mình sau nhiều năm."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The truth will eventually come out.",
+          "example_vi": "Sự thật cuối cùng rồi cũng sẽ lộ ra."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "She eventually realized that she was right.",
+          "example_vi": "Cô ấy cuối cùng đã nhận ra rằng mình đã đúng."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "We eventually found the keys under the sofa.",
+          "example_vi": "Chúng tôi cuối cùng đã tìm thấy chìa khóa dưới ghế sofa."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The rain eventually stopped in the afternoon.",
+          "example_vi": "Cơn mưa cuối cùng đã tạnh vào buổi chiều."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "They eventually reached an agreement after long talks.",
+          "example_vi": "Họ cuối cùng đã đạt được thỏa thuận sau những cuộc nói chuyện dài."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The project will eventually be completed next month.",
+          "example_vi": "Dự án cuối cùng sẽ được hoàn thành vào tháng tới."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "He eventually learned how to play the guitar.",
+          "example_vi": "Anh ấy cuối cùng đã học được cách chơi đàn guitar."
+        },
+        {
+          "meaning_vi": "cuối cùng",
+          "example_en": "The company eventually went bankrupt.",
+          "example_vi": "Công ty cuối cùng đã phá sản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Meaning is clear. Added 10 examples.",
+      "word": "eventually",
+      "normalized_word": "eventually",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Eventually, they decided to move to a new city.",
+      "example_vi_clean": "Cuối cùng, họ quyết định chuyển đến một thành phố mới."
+    },
+    {
+      "id": 26074,
+      "quiz_meaning_vi": "hiển nhiên",
+      "meaning_vi_clean": "hiển nhiên",
+      "examples_clean": [
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "It was evident that she was very happy.",
+          "example_vi": "Rõ ràng là cô ấy rất hạnh phúc."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "The lack of interest was evident in his tone.",
+          "example_vi": "Sự thiếu quan tâm thể hiện rõ trong giọng điệu của anh ấy."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "It is evident that the plan needs more work.",
+          "example_vi": "Hiển nhiên là kế hoạch cần thêm nhiều công sức."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "The changes were evident to everyone in the room.",
+          "example_vi": "Những thay đổi là hiển nhiên đối với mọi người trong phòng."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "His talent was evident from a young age.",
+          "example_vi": "Tài năng của anh ấy là hiển nhiên từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "It became evident that we were lost.",
+          "example_vi": "Trở nên hiển nhiên rằng chúng tôi đã bị lạc."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "The improvement in her health is evident.",
+          "example_vi": "Sự cải thiện sức khỏe của cô ấy là hiển nhiên."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "It is evident that they have worked hard.",
+          "example_vi": "Hiển nhiên là họ đã làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "The danger was evident to all of us.",
+          "example_vi": "Mối nguy hiểm là hiển nhiên đối với tất cả chúng tôi."
+        },
+        {
+          "meaning_vi": "hiển nhiên",
+          "example_en": "Her surprise was evident on her face.",
+          "example_vi": "Sự ngạc nhiên của cô ấy hiện rõ trên khuôn mặt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Meaning is clear. Added 10 examples.",
+      "word": "evident",
+      "normalized_word": "evident",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was evident that she was very happy.",
+      "example_vi_clean": "Rõ ràng là cô ấy rất hạnh phúc."
+    },
+    {
+      "id": 26075,
+      "quiz_meaning_vi": "chính xác",
+      "meaning_vi_clean": "chính xác; đòi hỏi",
+      "examples_clean": [
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "He gave me the exact time of the meeting.",
+          "example_vi": "Anh ấy cho tôi biết thời gian chính xác của cuộc họp."
+        },
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "I need the exact amount of money for the bill.",
+          "example_vi": "Tôi cần số tiền chính xác cho hóa đơn."
+        },
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "That is the exact answer I was looking for.",
+          "example_vi": "Đó là câu trả lời chính xác mà tôi đang tìm kiếm."
+        },
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "Can you tell me the exact location of the store?",
+          "example_vi": "Bạn có thể cho tôi biết vị trí chính xác của cửa hàng không?"
+        },
+        {
+          "meaning_vi": "đòi hỏi",
+          "example_en": "The teacher exacts high standards from all students.",
+          "example_vi": "Giáo viên đòi hỏi tiêu chuẩn cao từ tất cả học sinh."
+        },
+        {
+          "meaning_vi": "đòi hỏi",
+          "example_en": "They exacted a promise from him before leaving.",
+          "example_vi": "Họ đòi hỏi một lời hứa từ anh ấy trước khi rời đi."
+        },
+        {
+          "meaning_vi": "đòi hỏi",
+          "example_en": "The government exacts taxes from the citizens.",
+          "example_vi": "Chính phủ đòi hỏi thuế từ công dân."
+        },
+        {
+          "meaning_vi": "đòi hỏi",
+          "example_en": "He exacted payment for the services rendered.",
+          "example_vi": "Anh ấy đòi hỏi thanh toán cho các dịch vụ đã cung cấp."
+        },
+        {
+          "meaning_vi": "chính xác",
+          "example_en": "The map provides the exact route to the mountain.",
+          "example_vi": "Bản đồ cung cấp lộ trình chính xác đến ngọn núi."
+        },
+        {
+          "meaning_vi": "đòi hỏi",
+          "example_en": "The boss exacts total obedience from his staff.",
+          "example_vi": "Ông chủ đòi hỏi sự phục tùng tuyệt đối từ nhân viên của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS is adjective/verb. Split meanings into adjective and verb senses. Added 10 examples.",
+      "word": "exact",
+      "normalized_word": "exact",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He gave me the exact time of the meeting.",
+      "example_vi_clean": "Anh ấy cho tôi biết thời gian chính xác của cuộc họp."
+    },
+    {
+      "id": 26076,
+      "quiz_meaning_vi": "sự khám xét",
+      "meaning_vi_clean": "sự khám xét; kỳ thi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự khám xét",
+          "example_en": "The doctor performed a thorough examination of the patient.",
+          "example_vi": "Bác sĩ đã thực hiện một cuộc khám xét kỹ lưỡng cho bệnh nhân."
+        },
+        {
+          "meaning_vi": "sự khám xét",
+          "example_en": "The police conducted an examination of the crime scene.",
+          "example_vi": "Cảnh sát đã tiến hành khám xét hiện trường vụ án."
+        },
+        {
+          "meaning_vi": "sự khám xét",
+          "example_en": "A close examination of the evidence revealed the truth.",
+          "example_vi": "Một cuộc khám xét kỹ lưỡng các bằng chứng đã tiết lộ sự thật."
+        },
+        {
+          "meaning_vi": "sự khám xét",
+          "example_en": "The document requires careful examination before signing.",
+          "example_vi": "Tài liệu cần được khám xét cẩn thận trước khi ký."
+        },
+        {
+          "meaning_vi": "kỳ thi",
+          "example_en": "She is studying hard for her final examination.",
+          "example_vi": "Cô ấy đang học chăm chỉ cho kỳ thi cuối kỳ của mình."
+        },
+        {
+          "meaning_vi": "kỳ thi",
+          "example_en": "The examination will take place in the main hall.",
+          "example_vi": "Kỳ thi sẽ diễn ra tại hội trường chính."
+        },
+        {
+          "meaning_vi": "kỳ thi",
+          "example_en": "He passed the entrance examination with high marks.",
+          "example_vi": "Anh ấy đã vượt qua kỳ thi đầu vào với điểm số cao."
+        },
+        {
+          "meaning_vi": "kỳ thi",
+          "example_en": "Students are nervous before the examination.",
+          "example_vi": "Học sinh cảm thấy lo lắng trước kỳ thi."
+        },
+        {
+          "meaning_vi": "sự khám xét",
+          "example_en": "The scientist made an examination of the soil samples.",
+          "example_vi": "Nhà khoa học đã thực hiện một cuộc khám xét các mẫu đất."
+        },
+        {
+          "meaning_vi": "kỳ thi",
+          "example_en": "The examination covers all the topics we studied.",
+          "example_vi": "Kỳ thi bao gồm tất cả các chủ đề chúng ta đã học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Meaning is clear. Added 10 examples.",
+      "word": "examination",
+      "normalized_word": "examination",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The doctor performed a thorough examination of the patient.",
+      "example_vi_clean": "Bác sĩ đã thực hiện một cuộc khám xét kỹ lưỡng cho bệnh nhân."
+    },
+    {
+      "id": 26077,
+      "quiz_meaning_vi": "khám xét",
+      "meaning_vi_clean": "khám xét; xem xét",
+      "examples_clean": [
+        {
+          "meaning_vi": "khám xét",
+          "example_en": "The doctor examined the patient to find the cause of pain.",
+          "example_vi": "Bác sĩ khám xét bệnh nhân để tìm nguyên nhân gây đau."
+        },
+        {
+          "meaning_vi": "khám xét",
+          "example_en": "The police examined the car for any fingerprints.",
+          "example_vi": "Cảnh sát khám xét chiếc xe để tìm dấu vân tay."
+        },
+        {
+          "meaning_vi": "khám xét",
+          "example_en": "He examined the wound to see if it was infected.",
+          "example_vi": "Anh ấy khám xét vết thương để xem nó có bị nhiễm trùng không."
+        },
+        {
+          "meaning_vi": "khám xét",
+          "example_en": "The customs officer examined her luggage.",
+          "example_vi": "Nhân viên hải quan khám xét hành lý của cô ấy."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "We need to examine the facts before making a decision.",
+          "example_vi": "Chúng ta cần xem xét các sự kiện trước khi đưa ra quyết định."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "The committee will examine the proposal next week.",
+          "example_vi": "Ủy ban sẽ xem xét đề xuất vào tuần tới."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "She examined the map to find the best route.",
+          "example_vi": "Cô ấy xem xét bản đồ để tìm lộ trình tốt nhất."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "Let us examine the pros and cons of this idea.",
+          "example_vi": "Hãy để chúng ta xem xét ưu và nhược điểm của ý tưởng này."
+        },
+        {
+          "meaning_vi": "khám xét",
+          "example_en": "The detective examined the room for clues.",
+          "example_vi": "Thám tử khám xét căn phòng để tìm manh mối."
+        },
+        {
+          "meaning_vi": "xem xét",
+          "example_en": "The teacher examined the student's work carefully.",
+          "example_vi": "Giáo viên xem xét bài làm của học sinh một cách cẩn thận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS is verb. Added 10 examples.",
+      "word": "examine",
+      "normalized_word": "examine",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The doctor examined the patient to find the cause of pain.",
+      "example_vi_clean": "Bác sĩ khám xét bệnh nhân để tìm nguyên nhân gây đau."
+    },
+    {
+      "id": 26078,
+      "quiz_meaning_vi": "người chấm thi",
+      "meaning_vi_clean": "người chấm thi",
+      "examples_clean": [
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner graded the papers very carefully.",
+          "example_vi": "Người chấm thi đã chấm các bài thi rất cẩn thận."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner asked the student several questions.",
+          "example_vi": "Người chấm thi đã hỏi học sinh một vài câu hỏi."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner checked the identity of each candidate.",
+          "example_vi": "Người chấm thi đã kiểm tra danh tính của từng thí sinh."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner gave feedback on the oral presentation.",
+          "example_vi": "Người chấm thi đã đưa ra phản hồi về bài thuyết trình miệng."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner was very strict during the test.",
+          "example_vi": "Người chấm thi rất nghiêm khắc trong suốt bài kiểm tra."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner signed the final report.",
+          "example_vi": "Người chấm thi đã ký vào báo cáo cuối cùng."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner walked around the room to monitor students.",
+          "example_vi": "Người chấm thi đi quanh phòng để giám sát học sinh."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner explained the rules of the exam.",
+          "example_vi": "Người chấm thi đã giải thích các quy tắc của kỳ thi."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner noted the time on the clock.",
+          "example_vi": "Người chấm thi đã ghi chú thời gian trên đồng hồ."
+        },
+        {
+          "meaning_vi": "người chấm thi",
+          "example_en": "The examiner collected all the answer sheets.",
+          "example_vi": "Người chấm thi đã thu tất cả các tờ giấy trả lời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Meaning is clear. Added 10 examples.",
+      "word": "examiner",
+      "normalized_word": "examiner",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The examiner graded the papers very carefully.",
+      "example_vi_clean": "Người chấm thi đã chấm các bài thi rất cẩn thận."
+    },
+    {
+      "id": 26079,
+      "quiz_meaning_vi": "sự xuất sắc",
+      "meaning_vi_clean": "sự xuất sắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "The school is known for its excellence in teaching.",
+          "example_vi": "Ngôi trường nổi tiếng với sự xuất sắc trong giảng dạy."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "He was awarded a prize for his academic excellence.",
+          "example_vi": "Anh ấy đã được trao giải thưởng vì sự xuất sắc trong học tập."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "The company strives for excellence in all its products.",
+          "example_vi": "Công ty phấn đấu vì sự xuất sắc trong tất cả các sản phẩm của mình."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "Her performance was a model of excellence.",
+          "example_vi": "Màn trình diễn của cô ấy là một hình mẫu của sự xuất sắc."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "They are committed to excellence in customer service.",
+          "example_vi": "Họ cam kết đạt được sự xuất sắc trong dịch vụ khách hàng."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "The award recognizes excellence in the field of science.",
+          "example_vi": "Giải thưởng ghi nhận sự xuất sắc trong lĩnh vực khoa học."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "Excellence is the result of hard work and dedication.",
+          "example_vi": "Sự xuất sắc là kết quả của sự chăm chỉ và tận tâm."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "The team achieved excellence in the final competition.",
+          "example_vi": "Đội đã đạt được sự xuất sắc trong cuộc thi cuối cùng."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "He has a reputation for excellence in his work.",
+          "example_vi": "Anh ấy có danh tiếng về sự xuất sắc trong công việc của mình."
+        },
+        {
+          "meaning_vi": "sự xuất sắc",
+          "example_en": "The standard of excellence is very high here.",
+          "example_vi": "Tiêu chuẩn về sự xuất sắc ở đây rất cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Meaning is clear. Added 10 examples.",
+      "word": "excellence",
+      "normalized_word": "excellence",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The school is known for its excellence in teaching.",
+      "example_vi_clean": "Ngôi trường nổi tiếng với sự xuất sắc trong giảng dạy."
+    },
+    {
+      "id": 26080,
+      "quiz_meaning_vi": "sự vượt quá giới hạn",
+      "meaning_vi_clean": "sự vượt quá giới hạn; số lượng thừa",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự vượt quá giới hạn",
+          "example_en": "Eating too much is an excess that can harm your health.",
+          "example_vi": "Ăn quá nhiều là sự vượt quá giới hạn có thể gây hại cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "sự vượt quá giới hạn",
+          "example_en": "The excess of noise in the city is a problem.",
+          "example_vi": "Sự vượt quá giới hạn của tiếng ồn trong thành phố là một vấn đề."
+        },
+        {
+          "meaning_vi": "sự vượt quá giới hạn",
+          "example_en": "He was criticized for his excess of pride.",
+          "example_vi": "Anh ấy bị chỉ trích vì sự vượt quá giới hạn của lòng kiêu hãnh."
+        },
+        {
+          "meaning_vi": "sự vượt quá giới hạn",
+          "example_en": "The excess of spending led to financial trouble.",
+          "example_vi": "Sự vượt quá giới hạn trong chi tiêu dẫn đến rắc rối tài chính."
+        },
+        {
+          "meaning_vi": "số lượng thừa",
+          "example_en": "We donated the excess food to the local charity.",
+          "example_vi": "Chúng tôi đã quyên góp số lượng thừa thực phẩm cho tổ chức từ thiện địa phương."
+        },
+        {
+          "meaning_vi": "số lượng thừa",
+          "example_en": "There is an excess of water in the bucket.",
+          "example_vi": "Có một số lượng thừa nước trong xô."
+        },
+        {
+          "meaning_vi": "số lượng thừa",
+          "example_en": "The company sold the excess stock at a discount.",
+          "example_vi": "Công ty đã bán số lượng thừa hàng tồn kho với giá giảm."
+        },
+        {
+          "meaning_vi": "số lượng thừa",
+          "example_en": "Please remove the excess paint from the brush.",
+          "example_vi": "Vui lòng loại bỏ số lượng thừa sơn trên cọ."
+        },
+        {
+          "meaning_vi": "sự vượt quá giới hạn",
+          "example_en": "The excess of work made him feel exhausted.",
+          "example_vi": "Sự vượt quá giới hạn của công việc khiến anh ấy cảm thấy kiệt sức."
+        },
+        {
+          "meaning_vi": "số lượng thừa",
+          "example_en": "We have an excess of supplies for the trip.",
+          "example_vi": "Chúng tôi có một số lượng thừa đồ dùng cho chuyến đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Meaning is clear. Added 10 examples.",
+      "word": "excess",
+      "normalized_word": "excess",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Eating too much is an excess that can harm your health.",
+      "example_vi_clean": "Ăn quá nhiều là sự vượt quá giới hạn có thể gây hại cho sức khỏe của bạn."
+    }
+  ]
+}

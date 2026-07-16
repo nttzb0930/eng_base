@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24621,
+      "quiz_meaning_vi": "sự quảng cáo",
+      "meaning_vi_clean": "sự quảng cáo; bài quảng cáo; tờ quảng cáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự quảng cáo",
+          "example_en": "The company spent a lot of money on the advertisement of their new product.",
+          "example_vi": "Công ty đã chi rất nhiều tiền cho việc quảng cáo sản phẩm mới của họ."
+        },
+        {
+          "meaning_vi": "sự quảng cáo",
+          "example_en": "Television is a powerful medium for advertisement.",
+          "example_vi": "Truyền hình là một phương tiện mạnh mẽ cho sự quảng cáo."
+        },
+        {
+          "meaning_vi": "sự quảng cáo",
+          "example_en": "They are running an advertisement campaign to attract more customers.",
+          "example_vi": "Họ đang thực hiện một chiến dịch quảng cáo để thu hút thêm khách hàng."
+        },
+        {
+          "meaning_vi": "sự quảng cáo",
+          "example_en": "The advertisement of the event was seen all over the city.",
+          "example_vi": "Sự quảng cáo về sự kiện này đã được nhìn thấy khắp thành phố."
+        },
+        {
+          "meaning_vi": "bài quảng cáo",
+          "example_en": "I saw an interesting advertisement in the local newspaper today.",
+          "example_vi": "Tôi đã thấy một bài quảng cáo thú vị trên tờ báo địa phương hôm nay."
+        },
+        {
+          "meaning_vi": "bài quảng cáo",
+          "example_en": "The advertisement for the job was posted on the company website.",
+          "example_vi": "Bài quảng cáo cho công việc này đã được đăng trên trang web của công ty."
+        },
+        {
+          "meaning_vi": "bài quảng cáo",
+          "example_en": "She read the advertisement and decided to apply for the position.",
+          "example_vi": "Cô ấy đọc bài quảng cáo và quyết định ứng tuyển vào vị trí đó."
+        },
+        {
+          "meaning_vi": "tờ quảng cáo",
+          "example_en": "He handed me a colorful advertisement for the new restaurant.",
+          "example_vi": "Anh ấy đưa cho tôi một tờ quảng cáo đầy màu sắc về nhà hàng mới."
+        },
+        {
+          "meaning_vi": "tờ quảng cáo",
+          "example_en": "There was an advertisement stuck to the front door of the shop.",
+          "example_vi": "Có một tờ quảng cáo được dán ở cửa trước của cửa hàng."
+        },
+        {
+          "meaning_vi": "tờ quảng cáo",
+          "example_en": "Please throw away that old advertisement after you read it.",
+          "example_vi": "Vui lòng vứt bỏ tờ quảng cáo cũ đó sau khi bạn đọc xong."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ các nghĩa hiếm hoặc không phù hợp cấp độ. Bổ sung đủ 10 ví dụ minh họa rõ các nghĩa.",
+      "word": "advertisement",
+      "normalized_word": "advertisement",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The company spent a lot of money on the advertisement of their new product.",
+      "example_vi_clean": "Công ty đã chi rất nhiều tiền cho việc quảng cáo sản phẩm mới của họ."
+    },
+    {
+      "id": 24622,
+      "quiz_meaning_vi": "Quảng cáo",
+      "meaning_vi_clean": "Quảng cáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "Advertising is an essential part of modern business.",
+          "example_vi": "Quảng cáo là một phần thiết yếu của kinh doanh hiện đại."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "She works in the advertising industry in London.",
+          "example_vi": "Cô ấy làm việc trong ngành quảng cáo ở London."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "The company spends millions on advertising every year.",
+          "example_vi": "Công ty chi hàng triệu đô la cho quảng cáo mỗi năm."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "Effective advertising can significantly increase sales.",
+          "example_vi": "Quảng cáo hiệu quả có thể làm tăng doanh số đáng kể."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "They are planning a new advertising strategy for the summer.",
+          "example_vi": "Họ đang lên kế hoạch cho một chiến lược quảng cáo mới cho mùa hè."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "I find online advertising very annoying sometimes.",
+          "example_vi": "Đôi khi tôi thấy quảng cáo trực tuyến rất phiền phức."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "The government has banned advertising of tobacco products.",
+          "example_vi": "Chính phủ đã cấm quảng cáo các sản phẩm thuốc lá."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "Advertising helps consumers learn about new products.",
+          "example_vi": "Quảng cáo giúp người tiêu dùng biết về các sản phẩm mới."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "He is studying advertising at the university.",
+          "example_vi": "Anh ấy đang học về quảng cáo tại trường đại học."
+        },
+        {
+          "meaning_vi": "Quảng cáo",
+          "example_en": "The success of the brand is due to clever advertising.",
+          "example_vi": "Sự thành công của thương hiệu là nhờ vào quảng cáo thông minh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Định nghĩa lại cho ngắn gọn, bổ sung 10 ví dụ tự nhiên.",
+      "word": "advertising",
+      "normalized_word": "advertising",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Advertising is an essential part of modern business.",
+      "example_vi_clean": "Quảng cáo là một phần thiết yếu của kinh doanh hiện đại."
+    },
+    {
+      "id": 24623,
+      "quiz_meaning_vi": "lời khuyên",
+      "meaning_vi_clean": "lời khuyên",
+      "examples_clean": [
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "He gave me some good advice on how to study effectively.",
+          "example_vi": "Anh ấy cho tôi vài lời khuyên hữu ích về cách học tập hiệu quả."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "I need your advice on what to wear to the party.",
+          "example_vi": "Tôi cần lời khuyên của bạn về việc nên mặc gì đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "She followed her father's advice and chose a career in medicine.",
+          "example_vi": "Cô ấy làm theo lời khuyên của cha mình và chọn sự nghiệp y khoa."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "It is always helpful to ask for advice from experienced people.",
+          "example_vi": "Luôn hữu ích khi hỏi xin lời khuyên từ những người có kinh nghiệm."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "My teacher gave me some valuable advice about my future.",
+          "example_vi": "Giáo viên của tôi đã cho tôi vài lời khuyên quý giá về tương lai."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "Don't ignore the advice of your friends.",
+          "example_vi": "Đừng phớt lờ lời khuyên của bạn bè bạn."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "She asked for my advice before making a final decision.",
+          "example_vi": "Cô ấy đã hỏi xin lời khuyên của tôi trước khi đưa ra quyết định cuối cùng."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "The doctor's advice was to rest for a few days.",
+          "example_vi": "Lời khuyên của bác sĩ là hãy nghỉ ngơi vài ngày."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "I am grateful for your advice during this difficult time.",
+          "example_vi": "Tôi rất biết ơn lời khuyên của bạn trong thời gian khó khăn này."
+        },
+        {
+          "meaning_vi": "lời khuyên",
+          "example_en": "He ignored my advice and ended up making a mistake.",
+          "example_vi": "Anh ấy đã phớt lờ lời khuyên của tôi và cuối cùng đã mắc sai lầm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phổ biến (tin tức, thương nghiệp). Bổ sung 10 ví dụ chuẩn A2.",
+      "word": "advice",
+      "normalized_word": "advice",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He gave me some good advice on how to study effectively.",
+      "example_vi_clean": "Anh ấy cho tôi vài lời khuyên hữu ích về cách học tập hiệu quả."
+    },
+    {
+      "id": 24624,
+      "quiz_meaning_vi": "khuyên",
+      "meaning_vi_clean": "khuyên; báo cho biết",
+      "examples_clean": [
+        {
+          "meaning_vi": "khuyên",
+          "example_en": "My doctor advised me to eat more vegetables.",
+          "example_vi": "Bác sĩ khuyên tôi nên ăn nhiều rau hơn."
+        },
+        {
+          "meaning_vi": "khuyên",
+          "example_en": "I would advise you to arrive at the airport early.",
+          "example_vi": "Tôi khuyên bạn nên đến sân bay sớm."
+        },
+        {
+          "meaning_vi": "khuyên",
+          "example_en": "She advised him to study harder for the exam.",
+          "example_vi": "Cô ấy khuyên anh ấy nên học chăm chỉ hơn cho kỳ thi."
+        },
+        {
+          "meaning_vi": "khuyên",
+          "example_en": "The police advised people to stay indoors during the storm.",
+          "example_vi": "Cảnh sát khuyên mọi người nên ở trong nhà trong suốt cơn bão."
+        },
+        {
+          "meaning_vi": "khuyên",
+          "example_en": "I strongly advise you not to go there alone at night.",
+          "example_vi": "Tôi thực sự khuyên bạn không nên đi đến đó một mình vào ban đêm."
+        },
+        {
+          "meaning_vi": "báo cho biết",
+          "example_en": "The company advised us that the meeting had been cancelled.",
+          "example_vi": "Công ty đã báo cho chúng tôi biết rằng cuộc họp đã bị hủy."
+        },
+        {
+          "meaning_vi": "báo cho biết",
+          "example_en": "We were advised of the changes in the schedule yesterday.",
+          "example_vi": "Chúng tôi đã được báo cho biết về những thay đổi trong lịch trình ngày hôm qua."
+        },
+        {
+          "meaning_vi": "báo cho biết",
+          "example_en": "The bank advised the customer that the account was closed.",
+          "example_vi": "Ngân hàng đã báo cho khách hàng biết rằng tài khoản đã bị đóng."
+        },
+        {
+          "meaning_vi": "báo cho biết",
+          "example_en": "Please advise us if you are unable to attend the event.",
+          "example_vi": "Vui lòng báo cho chúng tôi biết nếu bạn không thể tham dự sự kiện."
+        },
+        {
+          "meaning_vi": "báo cho biết",
+          "example_en": "The authorities advised the public of the new regulations.",
+          "example_vi": "Chính quyền đã báo cho công chúng biết về các quy định mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa 'báo cho biết' phổ biến trong ngữ cảnh trang trọng. Bổ sung 10 ví dụ.",
+      "word": "advise",
+      "normalized_word": "advise",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "My doctor advised me to eat more vegetables.",
+      "example_vi_clean": "Bác sĩ khuyên tôi nên ăn nhiều rau hơn."
+    },
+    {
+      "id": 24625,
+      "quiz_meaning_vi": "việc",
+      "meaning_vi_clean": "việc; chuyện tình",
+      "examples_clean": [
+        {
+          "meaning_vi": "việc",
+          "example_en": "It is a private affair and I don't want to talk about it.",
+          "example_vi": "Đó là việc riêng và tôi không muốn nói về nó."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "The whole affair was very confusing for everyone involved.",
+          "example_vi": "Toàn bộ việc này rất khó hiểu đối với tất cả những người liên quan."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "Managing the household is a daily affair.",
+          "example_vi": "Quản lý việc nhà là một việc hàng ngày."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "The party was a simple affair with just a few friends.",
+          "example_vi": "Bữa tiệc là một việc đơn giản chỉ với vài người bạn."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "He is busy with his business affairs today.",
+          "example_vi": "Anh ấy đang bận rộn với các việc kinh doanh của mình hôm nay."
+        },
+        {
+          "meaning_vi": "chuyện tình",
+          "example_en": "They had a secret love affair for many years.",
+          "example_vi": "Họ đã có một chuyện tình bí mật trong nhiều năm."
+        },
+        {
+          "meaning_vi": "chuyện tình",
+          "example_en": "The movie is about a tragic love affair.",
+          "example_vi": "Bộ phim nói về một chuyện tình bi kịch."
+        },
+        {
+          "meaning_vi": "chuyện tình",
+          "example_en": "Their affair ended when he moved to another city.",
+          "example_vi": "Chuyện tình của họ kết thúc khi anh ấy chuyển đến thành phố khác."
+        },
+        {
+          "meaning_vi": "chuyện tình",
+          "example_en": "She wrote a book about her past affair.",
+          "example_vi": "Cô ấy đã viết một cuốn sách về chuyện tình trong quá khứ của mình."
+        },
+        {
+          "meaning_vi": "chuyện tình",
+          "example_en": "Everyone was surprised to hear about their affair.",
+          "example_vi": "Mọi người đều ngạc nhiên khi nghe về chuyện tình của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa quá rộng hoặc hiếm. Bổ sung 10 ví dụ.",
+      "word": "affair",
+      "normalized_word": "affair",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It is a private affair and I don't want to talk about it.",
+      "example_vi_clean": "Đó là việc riêng và tôi không muốn nói về nó."
+    },
+    {
+      "id": 24626,
+      "quiz_meaning_vi": "sau",
+      "meaning_vi_clean": "sau",
+      "examples_clean": [
+        {
+          "meaning_vi": "sau",
+          "example_en": "We went for a walk after dinner.",
+          "example_vi": "Chúng tôi đi dạo sau bữa tối."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "He arrived shortly after the meeting started.",
+          "example_vi": "Anh ấy đến ngay sau khi cuộc họp bắt đầu."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "They lived happily ever after.",
+          "example_vi": "Họ sống hạnh phúc mãi về sau."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "I will call you after I finish my work.",
+          "example_vi": "Tôi sẽ gọi cho bạn sau khi tôi hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "The children ran after the ball.",
+          "example_vi": "Những đứa trẻ chạy theo quả bóng."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "She left the room and he followed after.",
+          "example_vi": "Cô ấy rời khỏi phòng và anh ấy đi theo sau."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "After the rain, the sun came out.",
+          "example_vi": "Sau cơn mưa, mặt trời ló dạng."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "We can discuss this after the presentation.",
+          "example_vi": "Chúng ta có thể thảo luận việc này sau bài thuyết trình."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "He felt much better after a good night's sleep.",
+          "example_vi": "Anh ấy cảm thấy tốt hơn nhiều sau một giấc ngủ ngon."
+        },
+        {
+          "meaning_vi": "sau",
+          "example_en": "The store opens shortly after eight in the morning.",
+          "example_vi": "Cửa hàng mở cửa ngay sau tám giờ sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ 'tính từ' thành 'trạng từ/giới từ' (trong ngữ cảnh A2, 'after' thường dùng làm giới từ hoặc liên từ). Bổ sung 10 ví dụ.",
+      "word": "after",
+      "normalized_word": "after",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "We went for a walk after dinner.",
+      "example_vi_clean": "Chúng tôi đi dạo sau bữa tối."
+    },
+    {
+      "id": 24627,
+      "quiz_meaning_vi": "chống lại",
+      "meaning_vi_clean": "chống lại; dựa vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "chống lại",
+          "example_en": "They are fighting against the new law.",
+          "example_vi": "Họ đang đấu tranh chống lại luật mới."
+        },
+        {
+          "meaning_vi": "chống lại",
+          "example_en": "It is difficult to swim against the current.",
+          "example_vi": "Thật khó để bơi chống lại dòng nước."
+        },
+        {
+          "meaning_vi": "chống lại",
+          "example_en": "He voted against the proposal.",
+          "example_vi": "Anh ấy đã bỏ phiếu chống lại đề xuất đó."
+        },
+        {
+          "meaning_vi": "chống lại",
+          "example_en": "We must protect ourselves against the cold.",
+          "example_vi": "Chúng ta phải bảo vệ bản thân chống lại cái lạnh."
+        },
+        {
+          "meaning_vi": "chống lại",
+          "example_en": "The team played against their biggest rivals.",
+          "example_vi": "Đội bóng đã thi đấu chống lại đối thủ lớn nhất của họ."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "She leaned against the wall to rest.",
+          "example_vi": "Cô ấy dựa vào tường để nghỉ ngơi."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "He stood against the door waiting for her.",
+          "example_vi": "Anh ấy đứng dựa vào cửa chờ cô ấy."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "The ladder was placed against the tree.",
+          "example_vi": "Chiếc thang được đặt dựa vào cái cây."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "She rested her head against his shoulder.",
+          "example_vi": "Cô ấy tựa đầu dựa vào vai anh ấy."
+        },
+        {
+          "meaning_vi": "dựa vào",
+          "example_en": "The bike was leaning against the fence.",
+          "example_vi": "Chiếc xe đạp đang dựa vào hàng rào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa 'dựa vào' phổ biến. Bổ sung 10 ví dụ.",
+      "word": "against",
+      "normalized_word": "against",
+      "cefr_level": "A2",
+      "pos": "preposition",
+      "pos_vi_clean": "giới từ",
+      "example_en_clean": "They are fighting against the new law.",
+      "example_vi_clean": "Họ đang đấu tranh chống lại luật mới."
+    },
+    {
+      "id": 24628,
+      "quiz_meaning_vi": "già đi",
+      "meaning_vi_clean": "già đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "già đi",
+          "example_en": "He has aged a lot in the last few years.",
+          "example_vi": "Anh ấy đã già đi rất nhiều trong vài năm qua."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "People age at different rates.",
+          "example_vi": "Mọi người già đi với tốc độ khác nhau."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "She doesn't want to age gracefully.",
+          "example_vi": "Cô ấy không muốn già đi một cách tự nhiên."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "Stress can make you age faster.",
+          "example_vi": "Căng thẳng có thể làm bạn già đi nhanh hơn."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "The wine ages in wooden barrels.",
+          "example_vi": "Rượu vang già đi (ủ) trong các thùng gỗ."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "He seems to have aged overnight.",
+          "example_vi": "Anh ấy dường như đã già đi chỉ sau một đêm."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "As we age, our priorities change.",
+          "example_vi": "Khi chúng ta già đi, các ưu tiên của chúng ta thay đổi."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "The building has aged over the centuries.",
+          "example_vi": "Tòa nhà đã già đi (cũ đi) qua nhiều thế kỷ."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "She is worried about aging.",
+          "example_vi": "Cô ấy lo lắng về việc già đi."
+        },
+        {
+          "meaning_vi": "già đi",
+          "example_en": "They are aging together happily.",
+          "example_vi": "Họ đang cùng nhau già đi một cách hạnh phúc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ 'adjective' thành 'verb' vì nghĩa là 'già đi'. Bổ sung 10 ví dụ.",
+      "word": "aged",
+      "normalized_word": "aged",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has aged a lot in the last few years.",
+      "example_vi_clean": "Anh ấy đã già đi rất nhiều trong vài năm qua."
+    },
+    {
+      "id": 24629,
+      "quiz_meaning_vi": "đại lý",
+      "meaning_vi_clean": "đại lý; cơ quan",
+      "examples_clean": [
+        {
+          "meaning_vi": "đại lý",
+          "example_en": "I booked my flight through a travel agency.",
+          "example_vi": "Tôi đã đặt chuyến bay qua một đại lý du lịch."
+        },
+        {
+          "meaning_vi": "đại lý",
+          "example_en": "She works for a real estate agency.",
+          "example_vi": "Cô ấy làm việc cho một đại lý bất động sản."
+        },
+        {
+          "meaning_vi": "đại lý",
+          "example_en": "We need to contact the employment agency.",
+          "example_vi": "Chúng ta cần liên hệ với đại lý việc làm."
+        },
+        {
+          "meaning_vi": "đại lý",
+          "example_en": "The advertising agency created a new campaign.",
+          "example_vi": "Đại lý quảng cáo đã tạo ra một chiến dịch mới."
+        },
+        {
+          "meaning_vi": "đại lý",
+          "example_en": "He opened an insurance agency in the city center.",
+          "example_vi": "Anh ấy đã mở một đại lý bảo hiểm ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "cơ quan",
+          "example_en": "The government agency is responsible for public safety.",
+          "example_vi": "Cơ quan chính phủ chịu trách nhiệm về an toàn công cộng."
+        },
+        {
+          "meaning_vi": "cơ quan",
+          "example_en": "She works for an international aid agency.",
+          "example_vi": "Cô ấy làm việc cho một cơ quan viện trợ quốc tế."
+        },
+        {
+          "meaning_vi": "cơ quan",
+          "example_en": "The environmental agency monitors air quality.",
+          "example_vi": "Cơ quan môi trường giám sát chất lượng không khí."
+        },
+        {
+          "meaning_vi": "cơ quan",
+          "example_en": "He was hired by a federal agency.",
+          "example_vi": "Anh ấy đã được thuê bởi một cơ quan liên bang."
+        },
+        {
+          "meaning_vi": "cơ quan",
+          "example_en": "The agency provides support for homeless people.",
+          "example_vi": "Cơ quan này cung cấp hỗ trợ cho những người vô gia cư."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'đại lý' vì phổ biến hơn 'tác dụng'. Bổ sung 10 ví dụ.",
+      "word": "agency",
+      "normalized_word": "agency",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I booked my flight through a travel agency.",
+      "example_vi_clean": "Tôi đã đặt chuyến bay qua một đại lý du lịch."
+    },
+    {
+      "id": 24630,
+      "quiz_meaning_vi": "người đại lý",
+      "meaning_vi_clean": "người đại lý; đặc vụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "người đại lý",
+          "example_en": "The real estate agent showed us the house.",
+          "example_vi": "Người đại lý bất động sản đã cho chúng tôi xem ngôi nhà."
+        },
+        {
+          "meaning_vi": "người đại lý",
+          "example_en": "You should talk to your travel agent about the trip.",
+          "example_vi": "Bạn nên nói chuyện với người đại lý du lịch của bạn về chuyến đi."
+        },
+        {
+          "meaning_vi": "người đại lý",
+          "example_en": "The insurance agent explained the policy to me.",
+          "example_vi": "Người đại lý bảo hiểm đã giải thích chính sách cho tôi."
+        },
+        {
+          "meaning_vi": "người đại lý",
+          "example_en": "He is a successful sports agent.",
+          "example_vi": "Anh ấy là một người đại lý thể thao thành công."
+        },
+        {
+          "meaning_vi": "người đại lý",
+          "example_en": "The booking agent confirmed our reservation.",
+          "example_vi": "Người đại lý đặt chỗ đã xác nhận việc đặt chỗ của chúng tôi."
+        },
+        {
+          "meaning_vi": "đặc vụ",
+          "example_en": "The secret agent was on a dangerous mission.",
+          "example_vi": "Người đặc vụ bí mật đang thực hiện một nhiệm vụ nguy hiểm."
+        },
+        {
+          "meaning_vi": "đặc vụ",
+          "example_en": "He played the role of a government agent in the movie.",
+          "example_vi": "Anh ấy đóng vai một đặc vụ chính phủ trong bộ phim."
+        },
+        {
+          "meaning_vi": "đặc vụ",
+          "example_en": "The FBI agent investigated the case.",
+          "example_vi": "Người đặc vụ FBI đã điều tra vụ án."
+        },
+        {
+          "meaning_vi": "đặc vụ",
+          "example_en": "She was trained as a special agent.",
+          "example_vi": "Cô ấy đã được đào tạo như một đặc vụ đặc biệt."
+        },
+        {
+          "meaning_vi": "đặc vụ",
+          "example_en": "The agent reported back to his headquarters.",
+          "example_vi": "Người đặc vụ đã báo cáo lại cho trụ sở của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung nghĩa 'đặc vụ'. Bổ sung 10 ví dụ.",
+      "word": "agent",
+      "normalized_word": "agent",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The real estate agent showed us the house.",
+      "example_vi_clean": "Người đại lý bất động sản đã cho chúng tôi xem ngôi nhà."
+    }
+  ]
+}

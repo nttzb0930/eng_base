@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25951,
+      "quiz_meaning_vi": "hoà tan",
+      "meaning_vi_clean": "hoà tan; giải tán; giải thể; tan biến",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoà tan",
+          "example_en": "Sugar will dissolve in hot water.",
+          "example_vi": "Đường sẽ hoà tan trong nước nóng."
+        },
+        {
+          "meaning_vi": "hoà tan",
+          "example_en": "Salt dissolves quickly in the soup.",
+          "example_vi": "Muối tan nhanh trong món súp."
+        },
+        {
+          "meaning_vi": "hoà tan",
+          "example_en": "The chemical dissolves the grease easily.",
+          "example_vi": "Hoá chất này làm tan dầu mỡ một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "hoà tan",
+          "example_en": "Stir until the powder dissolves completely.",
+          "example_vi": "Khuấy đều cho đến khi bột tan hoàn toàn."
+        },
+        {
+          "meaning_vi": "giải tán",
+          "example_en": "The president decided to dissolve parliament.",
+          "example_vi": "Tổng thống đã quyết định giải tán quốc hội."
+        },
+        {
+          "meaning_vi": "giải tán",
+          "example_en": "The crowd began to dissolve after the concert.",
+          "example_vi": "Đám đông bắt đầu giải tán sau buổi hoà nhạc."
+        },
+        {
+          "meaning_vi": "giải thể",
+          "example_en": "The company was dissolved due to bankruptcy.",
+          "example_vi": "Công ty đã bị giải thể do phá sản."
+        },
+        {
+          "meaning_vi": "giải thể",
+          "example_en": "They agreed to dissolve their partnership.",
+          "example_vi": "Họ đồng ý giải thể mối quan hệ đối tác."
+        },
+        {
+          "meaning_vi": "tan biến",
+          "example_en": "His fears began to dissolve as he spoke.",
+          "example_vi": "Nỗi sợ hãi của anh ấy bắt đầu tan biến khi anh ấy nói chuyện."
+        },
+        {
+          "meaning_vi": "tan biến",
+          "example_en": "The morning mist dissolved in the sunlight.",
+          "example_vi": "Sương mù buổi sáng tan biến dưới ánh mặt trời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành động từ. Cập nhật nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "dissolve",
+      "normalized_word": "dissolve",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Sugar will dissolve in hot water.",
+      "example_vi_clean": "Đường sẽ hoà tan trong nước nóng."
+    },
+    {
+      "id": 25952,
+      "quiz_meaning_vi": "khoảng cách",
+      "meaning_vi_clean": "khoảng cách; quãng đường; thái độ xa cách",
+      "examples_clean": [
+        {
+          "meaning_vi": "khoảng cách",
+          "example_en": "The distance between the two cities is long.",
+          "example_vi": "Khoảng cách giữa hai thành phố rất xa."
+        },
+        {
+          "meaning_vi": "khoảng cách",
+          "example_en": "Keep a safe distance from the edge.",
+          "example_vi": "Hãy giữ một khoảng cách an toàn với mép vực."
+        },
+        {
+          "meaning_vi": "khoảng cách",
+          "example_en": "We could see the mountains in the distance.",
+          "example_vi": "Chúng tôi có thể nhìn thấy những ngọn núi ở đằng xa."
+        },
+        {
+          "meaning_vi": "khoảng cách",
+          "example_en": "The distance between the stars is vast.",
+          "example_vi": "Khoảng cách giữa các vì sao rất lớn."
+        },
+        {
+          "meaning_vi": "quãng đường",
+          "example_en": "He ran a long distance every morning.",
+          "example_vi": "Anh ấy chạy một quãng đường dài mỗi sáng."
+        },
+        {
+          "meaning_vi": "quãng đường",
+          "example_en": "The total distance of the race is ten kilometers.",
+          "example_vi": "Tổng quãng đường của cuộc đua là mười cây số."
+        },
+        {
+          "meaning_vi": "quãng đường",
+          "example_en": "They covered a great distance by car.",
+          "example_vi": "Họ đã đi một quãng đường dài bằng xe hơi."
+        },
+        {
+          "meaning_vi": "thái độ xa cách",
+          "example_en": "She maintained a certain distance from her colleagues.",
+          "example_vi": "Cô ấy giữ một thái độ xa cách nhất định với đồng nghiệp."
+        },
+        {
+          "meaning_vi": "thái độ xa cách",
+          "example_en": "His cold distance made people uncomfortable.",
+          "example_vi": "Thái độ xa cách lạnh lùng của anh ấy khiến mọi người không thoải mái."
+        },
+        {
+          "meaning_vi": "thái độ xa cách",
+          "example_en": "There is a distance in their relationship now.",
+          "example_vi": "Hiện tại có một sự xa cách trong mối quan hệ của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distance",
+      "normalized_word": "distance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The distance between the two cities is long.",
+      "example_vi_clean": "Khoảng cách giữa hai thành phố rất xa."
+    },
+    {
+      "id": 25953,
+      "quiz_meaning_vi": "xa",
+      "meaning_vi_clean": "xa; xa cách",
+      "examples_clean": [
+        {
+          "meaning_vi": "xa",
+          "example_en": "They live in a distant country.",
+          "example_vi": "Họ sống ở một đất nước xa xôi."
+        },
+        {
+          "meaning_vi": "xa",
+          "example_en": "I heard a distant sound of music.",
+          "example_vi": "Tôi nghe thấy âm thanh xa xăm của tiếng nhạc."
+        },
+        {
+          "meaning_vi": "xa",
+          "example_en": "The distant mountains were covered in snow.",
+          "example_vi": "Những ngọn núi xa xôi được bao phủ bởi tuyết."
+        },
+        {
+          "meaning_vi": "xa",
+          "example_en": "He has a distant relative in Canada.",
+          "example_vi": "Anh ấy có một người họ hàng xa ở Canada."
+        },
+        {
+          "meaning_vi": "xa cách",
+          "example_en": "She was polite but distant during the meeting.",
+          "example_vi": "Cô ấy lịch sự nhưng xa cách trong suốt cuộc họp."
+        },
+        {
+          "meaning_vi": "xa cách",
+          "example_en": "His manner was cold and distant.",
+          "example_vi": "Thái độ của anh ấy lạnh lùng và xa cách."
+        },
+        {
+          "meaning_vi": "xa cách",
+          "example_en": "They have become distant over the years.",
+          "example_vi": "Họ đã trở nên xa cách qua nhiều năm."
+        },
+        {
+          "meaning_vi": "xa cách",
+          "example_en": "Don't be so distant with your friends.",
+          "example_vi": "Đừng quá xa cách với bạn bè của bạn."
+        },
+        {
+          "meaning_vi": "xa",
+          "example_en": "The distant future is hard to predict.",
+          "example_vi": "Tương lai xa xôi rất khó dự đoán."
+        },
+        {
+          "meaning_vi": "xa cách",
+          "example_en": "She gave him a distant look.",
+          "example_vi": "Cô ấy nhìn anh ấy với vẻ xa cách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên POS. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distant",
+      "normalized_word": "distant",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They live in a distant country.",
+      "example_vi_clean": "Họ sống ở một đất nước xa xôi."
+    },
+    {
+      "id": 25954,
+      "quiz_meaning_vi": "sự phân biệt",
+      "meaning_vi_clean": "sự phân biệt; nét đặc biệt; sự xuất chúng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân biệt",
+          "example_en": "There is a clear distinction between the two ideas.",
+          "example_vi": "Có một sự phân biệt rõ ràng giữa hai ý tưởng."
+        },
+        {
+          "meaning_vi": "sự phân biệt",
+          "example_en": "The law makes no distinction between rich and poor.",
+          "example_vi": "Luật pháp không phân biệt giữa người giàu và người nghèo."
+        },
+        {
+          "meaning_vi": "sự phân biệt",
+          "example_en": "We must draw a distinction between fact and opinion.",
+          "example_vi": "Chúng ta phải vạch ra sự phân biệt giữa sự thật và ý kiến."
+        },
+        {
+          "meaning_vi": "sự phân biệt",
+          "example_en": "He failed to make a distinction in his report.",
+          "example_vi": "Anh ấy đã không tạo ra sự phân biệt trong báo cáo của mình."
+        },
+        {
+          "meaning_vi": "nét đặc biệt",
+          "example_en": "Her writing style has a unique distinction.",
+          "example_vi": "Phong cách viết của cô ấy có một nét đặc biệt độc đáo."
+        },
+        {
+          "meaning_vi": "nét đặc biệt",
+          "example_en": "The building has the distinction of being the oldest here.",
+          "example_vi": "Tòa nhà có nét đặc biệt là lâu đời nhất ở đây."
+        },
+        {
+          "meaning_vi": "nét đặc biệt",
+          "example_en": "This wine has a distinction that others lack.",
+          "example_vi": "Loại rượu này có một nét đặc biệt mà những loại khác thiếu."
+        },
+        {
+          "meaning_vi": "sự xuất chúng",
+          "example_en": "She served with great distinction in the army.",
+          "example_vi": "Cô ấy đã phục vụ với sự xuất chúng trong quân đội."
+        },
+        {
+          "meaning_vi": "sự xuất chúng",
+          "example_en": "He graduated with distinction from the university.",
+          "example_vi": "Anh ấy tốt nghiệp với sự xuất chúng từ trường đại học."
+        },
+        {
+          "meaning_vi": "sự xuất chúng",
+          "example_en": "Her career is marked by many distinctions.",
+          "example_vi": "Sự nghiệp của cô ấy được đánh dấu bởi nhiều sự xuất chúng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên POS. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distinction",
+      "normalized_word": "distinction",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is a clear distinction between the two ideas.",
+      "example_vi_clean": "Có một sự phân biệt rõ ràng giữa hai ý tưởng."
+    },
+    {
+      "id": 25955,
+      "quiz_meaning_vi": "riêng biệt",
+      "meaning_vi_clean": "riêng biệt; rõ ràng",
+      "examples_clean": [
+        {
+          "meaning_vi": "riêng biệt",
+          "example_en": "The two groups are distinctly different.",
+          "example_vi": "Hai nhóm này riêng biệt và khác nhau."
+        },
+        {
+          "meaning_vi": "riêng biệt",
+          "example_en": "Each department has a distinctly separate budget.",
+          "example_vi": "Mỗi phòng ban có một ngân sách riêng biệt."
+        },
+        {
+          "meaning_vi": "riêng biệt",
+          "example_en": "These are two distinctly separate issues.",
+          "example_vi": "Đây là hai vấn đề riêng biệt."
+        },
+        {
+          "meaning_vi": "riêng biệt",
+          "example_en": "The species are distinctly classified.",
+          "example_vi": "Các loài được phân loại một cách riêng biệt."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "She spoke distinctly so everyone could hear.",
+          "example_vi": "Cô ấy nói rõ ràng để mọi người đều có thể nghe thấy."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "I distinctly remember locking the door.",
+          "example_vi": "Tôi nhớ rõ ràng là mình đã khoá cửa."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "The message was distinctly written on the wall.",
+          "example_vi": "Thông điệp được viết rõ ràng trên tường."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "He was distinctly unhappy with the result.",
+          "example_vi": "Anh ấy rõ ràng là không vui với kết quả đó."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "The shape was distinctly visible in the dark.",
+          "example_vi": "Hình dáng đó rõ ràng có thể nhìn thấy trong bóng tối."
+        },
+        {
+          "meaning_vi": "rõ ràng",
+          "example_en": "She distinctly heard a noise outside.",
+          "example_vi": "Cô ấy nghe rõ ràng một tiếng động bên ngoài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên POS. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distinctly",
+      "normalized_word": "distinctly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The two groups are distinctly different.",
+      "example_vi_clean": "Hai nhóm này riêng biệt và khác nhau."
+    },
+    {
+      "id": 25956,
+      "quiz_meaning_vi": "phân biệt",
+      "meaning_vi_clean": "phân biệt; nhận ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "phân biệt",
+          "example_en": "It is hard to distinguish between the two twins.",
+          "example_vi": "Thật khó để phân biệt giữa hai người sinh đôi."
+        },
+        {
+          "meaning_vi": "phân biệt",
+          "example_en": "Can you distinguish the difference in taste?",
+          "example_vi": "Bạn có thể phân biệt sự khác biệt về hương vị không?"
+        },
+        {
+          "meaning_vi": "phân biệt",
+          "example_en": "He cannot distinguish right from wrong.",
+          "example_vi": "Anh ấy không thể phân biệt đúng sai."
+        },
+        {
+          "meaning_vi": "phân biệt",
+          "example_en": "The law distinguishes between adults and minors.",
+          "example_vi": "Luật pháp phân biệt giữa người lớn và trẻ vị thành niên."
+        },
+        {
+          "meaning_vi": "nhận ra",
+          "example_en": "I could barely distinguish his face in the dark.",
+          "example_vi": "Tôi hầu như không thể nhận ra khuôn mặt anh ấy trong bóng tối."
+        },
+        {
+          "meaning_vi": "nhận ra",
+          "example_en": "She could distinguish the sound of his voice.",
+          "example_vi": "Cô ấy có thể nhận ra âm thanh giọng nói của anh ấy."
+        },
+        {
+          "meaning_vi": "nhận ra",
+          "example_en": "He distinguished a faint light in the distance.",
+          "example_vi": "Anh ấy nhận ra một ánh sáng mờ nhạt ở đằng xa."
+        },
+        {
+          "meaning_vi": "nhận ra",
+          "example_en": "Can you distinguish the words on this page?",
+          "example_vi": "Bạn có thể nhận ra những từ trên trang này không?"
+        },
+        {
+          "meaning_vi": "nhận ra",
+          "example_en": "The sensor can distinguish between metal and plastic.",
+          "example_vi": "Cảm biến có thể nhận ra sự khác biệt giữa kim loại và nhựa."
+        },
+        {
+          "meaning_vi": "nhận ra",
+          "example_en": "She distinguished a figure standing by the door.",
+          "example_vi": "Cô ấy nhận ra một bóng người đang đứng cạnh cửa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ (thường dùng ngoại động từ). Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distinguish",
+      "normalized_word": "distinguish",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It is hard to distinguish between the two twins.",
+      "example_vi_clean": "Thật khó để phân biệt giữa hai người sinh đôi."
+    },
+    {
+      "id": 25957,
+      "quiz_meaning_vi": "phân bổ",
+      "meaning_vi_clean": "phân bổ; phân phát; sắp xếp",
+      "examples_clean": [
+        {
+          "meaning_vi": "phân bổ",
+          "example_en": "The company will distribute the profits among the staff.",
+          "example_vi": "Công ty sẽ phân bổ lợi nhuận cho nhân viên."
+        },
+        {
+          "meaning_vi": "phân bổ",
+          "example_en": "We need to distribute the workload evenly.",
+          "example_vi": "Chúng ta cần phân bổ khối lượng công việc một cách đồng đều."
+        },
+        {
+          "meaning_vi": "phân bổ",
+          "example_en": "The government distributes funds to local schools.",
+          "example_vi": "Chính phủ phân bổ ngân quỹ cho các trường học địa phương."
+        },
+        {
+          "meaning_vi": "phân bổ",
+          "example_en": "They distribute resources to those in need.",
+          "example_vi": "Họ phân bổ nguồn lực cho những người cần giúp đỡ."
+        },
+        {
+          "meaning_vi": "phân phát",
+          "example_en": "She distributed flyers to the people on the street.",
+          "example_vi": "Cô ấy phân phát tờ rơi cho mọi người trên đường."
+        },
+        {
+          "meaning_vi": "phân phát",
+          "example_en": "The volunteers distributed food to the victims.",
+          "example_vi": "Các tình nguyện viên phân phát thực phẩm cho các nạn nhân."
+        },
+        {
+          "meaning_vi": "phân phát",
+          "example_en": "He distributed copies of the report to everyone.",
+          "example_vi": "Anh ấy phân phát các bản sao của báo cáo cho mọi người."
+        },
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "The teacher distributed the students into groups.",
+          "example_vi": "Giáo viên sắp xếp học sinh thành các nhóm."
+        },
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "They distributed the items by category.",
+          "example_vi": "Họ sắp xếp các mặt hàng theo danh mục."
+        },
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "The data was distributed across several files.",
+          "example_vi": "Dữ liệu được sắp xếp trên nhiều tệp tin."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên POS. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distribute",
+      "normalized_word": "distribute",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The company will distribute the profits among the staff.",
+      "example_vi_clean": "Công ty sẽ phân bổ lợi nhuận cho nhân viên."
+    },
+    {
+      "id": 25958,
+      "quiz_meaning_vi": "sự phân bổ",
+      "meaning_vi_clean": "sự phân bổ; sự phân phát; sự sắp xếp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân bổ",
+          "example_en": "The distribution of wealth is a major issue.",
+          "example_vi": "Sự phân bổ của cải là một vấn đề lớn."
+        },
+        {
+          "meaning_vi": "sự phân bổ",
+          "example_en": "We are studying the distribution of the population.",
+          "example_vi": "Chúng tôi đang nghiên cứu sự phân bổ dân cư."
+        },
+        {
+          "meaning_vi": "sự phân bổ",
+          "example_en": "The distribution of resources is unfair.",
+          "example_vi": "Sự phân bổ nguồn lực không công bằng."
+        },
+        {
+          "meaning_vi": "sự phân bổ",
+          "example_en": "The distribution of rainfall varies by region.",
+          "example_vi": "Sự phân bổ lượng mưa thay đổi theo vùng."
+        },
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "The distribution of aid began this morning.",
+          "example_vi": "Sự phân phát viện trợ đã bắt đầu sáng nay."
+        },
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "They are responsible for the distribution of books.",
+          "example_vi": "Họ chịu trách nhiệm cho sự phân phát sách."
+        },
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "The distribution of flyers was successful.",
+          "example_vi": "Sự phân phát tờ rơi đã thành công."
+        },
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "The distribution of seats was changed.",
+          "example_vi": "Sự sắp xếp chỗ ngồi đã được thay đổi."
+        },
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "The distribution of tasks was clear.",
+          "example_vi": "Sự sắp xếp công việc rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "The distribution of the furniture looks good.",
+          "example_vi": "Sự sắp xếp đồ đạc trông rất ổn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên POS. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "distribution",
+      "normalized_word": "distribution",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The distribution of wealth is a major issue.",
+      "example_vi_clean": "Sự phân bổ của cải là một vấn đề lớn."
+    },
+    {
+      "id": 25959,
+      "quiz_meaning_vi": "địa hạt",
+      "meaning_vi_clean": "địa hạt; khu vực; vùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "địa hạt",
+          "example_en": "He was elected to represent the district.",
+          "example_vi": "Ông ấy được bầu để đại diện cho địa hạt này."
+        },
+        {
+          "meaning_vi": "địa hạt",
+          "example_en": "The school is located in the local district.",
+          "example_vi": "Ngôi trường nằm trong địa hạt địa phương."
+        },
+        {
+          "meaning_vi": "địa hạt",
+          "example_en": "Each district has its own rules.",
+          "example_vi": "Mỗi địa hạt có những quy định riêng."
+        },
+        {
+          "meaning_vi": "địa hạt",
+          "example_en": "The district council met yesterday.",
+          "example_vi": "Hội đồng địa hạt đã họp ngày hôm qua."
+        },
+        {
+          "meaning_vi": "khu vực",
+          "example_en": "This is a busy shopping district.",
+          "example_vi": "Đây là một khu vực mua sắm sầm uất."
+        },
+        {
+          "meaning_vi": "khu vực",
+          "example_en": "They live in the business district.",
+          "example_vi": "Họ sống trong khu vực kinh doanh."
+        },
+        {
+          "meaning_vi": "khu vực",
+          "example_en": "The historic district is very beautiful.",
+          "example_vi": "Khu vực lịch sử rất đẹp."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "The rural district is very quiet.",
+          "example_vi": "Vùng nông thôn này rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "He works in the northern district.",
+          "example_vi": "Anh ấy làm việc ở vùng phía bắc."
+        },
+        {
+          "meaning_vi": "vùng",
+          "example_en": "The industrial district is expanding.",
+          "example_vi": "Vùng công nghiệp đang mở rộng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "district",
+      "normalized_word": "district",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He was elected to represent the district.",
+      "example_vi_clean": "Ông ấy được bầu để đại diện cho địa hạt này."
+    },
+    {
+      "id": 25960,
+      "quiz_meaning_vi": "sự làm mất yên tĩnh",
+      "meaning_vi_clean": "sự làm mất yên tĩnh; sự quấy rầy; sự nhiễu loạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự làm mất yên tĩnh",
+          "example_en": "The noise caused a major disturbance.",
+          "example_vi": "Tiếng ồn đã gây ra một sự làm mất yên tĩnh lớn."
+        },
+        {
+          "meaning_vi": "sự làm mất yên tĩnh",
+          "example_en": "He was arrested for causing a public disturbance.",
+          "example_vi": "Anh ta bị bắt vì gây ra sự làm mất yên tĩnh nơi công cộng."
+        },
+        {
+          "meaning_vi": "sự làm mất yên tĩnh",
+          "example_en": "The neighbors complained about the disturbance.",
+          "example_vi": "Những người hàng xóm phàn nàn về sự làm mất yên tĩnh đó."
+        },
+        {
+          "meaning_vi": "sự làm mất yên tĩnh",
+          "example_en": "Please avoid any disturbance during the exam.",
+          "example_vi": "Vui lòng tránh mọi sự làm mất yên tĩnh trong suốt kỳ thi."
+        },
+        {
+          "meaning_vi": "sự quấy rầy",
+          "example_en": "I am sorry for the disturbance.",
+          "example_vi": "Tôi xin lỗi vì sự quấy rầy này."
+        },
+        {
+          "meaning_vi": "sự quấy rầy",
+          "example_en": "She didn't want any disturbance while working.",
+          "example_vi": "Cô ấy không muốn bất kỳ sự quấy rầy nào khi đang làm việc."
+        },
+        {
+          "meaning_vi": "sự quấy rầy",
+          "example_en": "He apologized for the late-night disturbance.",
+          "example_vi": "Anh ấy xin lỗi vì sự quấy rầy vào đêm muộn."
+        },
+        {
+          "meaning_vi": "sự nhiễu loạn",
+          "example_en": "The storm caused a disturbance in the atmosphere.",
+          "example_vi": "Cơn bão đã gây ra một sự nhiễu loạn trong khí quyển."
+        },
+        {
+          "meaning_vi": "sự nhiễu loạn",
+          "example_en": "There was a slight disturbance in the market.",
+          "example_vi": "Có một sự nhiễu loạn nhẹ trên thị trường."
+        },
+        {
+          "meaning_vi": "sự nhiễu loạn",
+          "example_en": "The political disturbance affected the economy.",
+          "example_vi": "Sự nhiễu loạn chính trị đã ảnh hưởng đến nền kinh tế."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên POS. Cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "disturbance",
+      "normalized_word": "disturbance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The noise caused a major disturbance.",
+      "example_vi_clean": "Tiếng ồn đã gây ra một sự làm mất yên tĩnh lớn."
+    }
+  ]
+}

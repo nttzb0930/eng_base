@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-013",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24121,
+      "word": "business",
+      "normalized_word": "business",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'biznis/ (biz) /biz/ (busyness) /'bizinis/",
+      "primary_meaning_vi": "việc buôn bán",
+      "meaning_vi": "việc buôn bán, việc kinh doanh, việc thương mại; công tác, nghề nghiệp; công việc, nhiệm vụ việc phải làm; quyền; việc khó khăn; tuồm vấn đề; quá trình diễn biến; vấn đề trong chương trình nghị sự; sự giao dịch; phần có tác dụng thực tế (của cái gì); cách diễn xuất (trên sân khấu); nhuồm khoé; vỡ nợ, phá sản; công việc là công việc, tình là tình (không nhập nhằng lẫn lộn được); buôn bán lớn; giết ai; làm sãi không ai đóng cửa chùa; go; rất tốt! tuyệt! cừ thật!; thực bụng muốn làm ăn (với nhau); tình trạng bận rộn",
+      "example_en": "I was left my father's business.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He is in the motor and insurance businesses.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He's such a poor cook, I can't believe he's still in business!",
+          "example_vi": null
+        },
+        {
+          "example_en": "Business has been slow lately.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24122,
+      "word": "busy",
+      "normalized_word": "busy",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bizi/",
+      "primary_meaning_vi": "bận rộn",
+      "meaning_vi": "bận rộn, bận; có lắm việc; náo nhiệt, đông đúc; đang bận, đang có người dùng (dây nói); lăng xăng; hay dính vào việc của người khác; hay gây sự bất hoà; giao việc; động từ phãn thân bận rộn với; cớm, mật thám",
+      "example_en": "On my vacation I'll busy myself with gardening.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We crossed a busy street.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He is busy with piano practice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Flowers, stripes, and checks in the same fabric make for a busy pattern.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24123,
+      "word": "but",
+      "normalized_word": "but",
+      "cefr_level": "A1",
+      "pos": "conjunction",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bʌt/",
+      "primary_meaning_vi": "nhưng",
+      "meaning_vi": "nhưng, nhưng mà; nếu không; không còn cách nào khác; mà lại không; chỉ, chỉ là, chỉ mới; all; trừ ra, ngoài ra; nếu không (có); trừ phi, nếu không; mặt khác, nhưng mặt khác; nhưng không phải vì thế mà, nhưng không phải là; ai... mà không; cái \"nhưng mà\" ; điều phản đối, điều trái lại; phản đối, nói trái lại",
+      "example_en": "It has to be done – no ifs or buts.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "But me no buts.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Christmas comes but once a year.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'll have to go home early but.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24124,
+      "word": "butter",
+      "normalized_word": "butter",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'bʌtə/",
+      "primary_meaning_vi": "bơ",
+      "meaning_vi": "bơ; lời nịnh hót; sự bợ đỡ, sự nịnh nọt đê tiện; làm ra bộ đoan trang; màu mè; phết bơ vào; xào nấu với bơ; thêm bơ vào; bợ đỡ, nịnh nọt ((cũng) to butter up); word; biết rõ chỗ nào có lợi cho mình; biết rõ đứng về phía nào có lợi cho mình",
+      "example_en": "peanut butter",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "butter of antimony; butter of arsenic",
+          "example_vi": null
+        },
+        {
+          "example_en": "Butter the toast.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24125,
+      "word": "butterfly",
+      "normalized_word": "butterfly",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bʌtəflai/",
+      "primary_meaning_vi": "con bướm",
+      "meaning_vi": "con bướm; người nhẹ dạ; người thích phù hoa; kiểu bơi bướm; giết gà dùng dao mổ trâu",
+      "example_en": "butterfly tape",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I get terrible butterflies before an exam.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Butterfly the chicken before you grill it.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24126,
+      "word": "button",
+      "normalized_word": "button",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'bʌtn/",
+      "primary_meaning_vi": "cái khuy",
+      "meaning_vi": "cái khuy, cái cúc (áo); cái nút, cái núm, cái bấm (chuông điện...); nụ hoa; búp mầm (chưa nở); (thông tục) chú bé phục vụ ở khách sạn ((cũng) boy in buttons); cóc cần; cái khuy, cái cúc; cài; đơm khuy, đôm cúc (áo); + up) phủ kín áo lên (người hay súc vật mang trong người); ,  (từ lóng) tất cả đều đã sẵn sàng đâu vào đấy; im thin thít; keo kiệt, bủn xỉn",
+      "example_en": "April fastened the buttons of her overcoat to keep out the wind.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Pat pushed the button marked \"shred\" on the blender.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Click the button that looks like a house to return to your browser's home page.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The politician wore a bright yellow button with the slogan \"Vote Smart\" emblazoned on it.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24127,
+      "word": "buy",
+      "normalized_word": "buy",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/bai/",
+      "primary_meaning_vi": "mua",
+      "meaning_vi": "mua; trã bằng giá; đạt được, được (cái gì bằng một sự hy sinh nào đó); mua chuộc, đút lót, hối lộ (ai); mua lại (cái gì mình đã bán đi); mua trữ; mua lại đồ của mình với giá cao nhất (trong cuộc bán đấu giá); mua chức tước; xuỳ tiền ra để được gia nhập (một tổ chức...); mua cổ phần (của công ty...); đấm mồm, đút lót; trả tiền (cho ai) để người ta bỏ chức vị hay tài sản; mua chuộc, đút lót; mua sạch, mua nhẫn, mua toàn bộ; pig; tớ xin chịu, tớ không biết (để trả lời một câu đố, hay một câu hỏi); sự mua; vật mua",
+      "example_en": "At only $30, the second-hand kitchen table was a great buy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I'm going to buy my father something nice for his birthday.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I've bought material comfort by foregoing my dreams.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He tried to buy me with gifts, but I wouldn't give up my beliefs.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24128,
+      "word": "by",
+      "normalized_word": "by",
+      "cefr_level": "A1",
+      "pos": "preposition",
+      "pos_vi": "tính từ",
+      "phonetic": "/bai/",
+      "primary_meaning_vi": "gần",
+      "meaning_vi": "gần, cạnh, kế, bên; về phía; qua, ngang qua, xuyên qua, dọc theo (chỉ hướng và chuyển động); vào lúc, vào khi, vào khoảng, vào quãng (chỉ thời gian); theo cách, bằng cách, theo từng; bằng, bởi, do; theo như, phù hợp với; đến mức, đến khoảng; trước; à này, nhân đây, tiện thể; một mình không có ai giúp đỡ; có vật gì trong tay; gần; qua; sang một bên, ở bên; dự trữ, dành; lát nữa thôi; ngay bây giờ; nhìn chung, nói chung, rút cục; bye",
+      "example_en": "geography bee",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I watched as it passed by.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The shop is hard by the High Street.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'll stop by on my way home from work.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24129,
+      "word": "bye",
+      "normalized_word": "bye",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bai/",
+      "primary_meaning_vi": "thứ yếu",
+      "meaning_vi": "thứ yếu, phụ; cái thứ yếu, cái phụ; by the by",
+      "example_en": "Craig's Crew plays the bye next week.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "geography bee",
+          "example_vi": null
+        },
+        {
+          "example_en": "The mailbox is by the bus stop.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He ran straight by me.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24130,
+      "word": "cafe",
+      "normalized_word": "cafe",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæfei/",
+      "primary_meaning_vi": "tiệm cà phê",
+      "meaning_vi": "tiệm cà phê; quán ăn; tiệm rượu; hộp đêm; cà phê",
+      "example_en": "1982, Joni Mitchell, Chinese Café / Unchained Melody (song)",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

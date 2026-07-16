@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-179",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25781,
+      "word": "connexion",
+      "normalized_word": "connexion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'nekʃn/",
+      "primary_meaning_vi": "sự liên quan",
+      "meaning_vi": "sự liên quan, sự liên lạc, mối quan hệ; sự chấp nối; sự mạch lạc; sự giao thiệp, sự kết giao; bà con, họ hàng, thân thuộc; phái, giáo phái; khách hàng; tàu xe chạy nối tiếp (tiếp vận với những tàu xe khác); vật (để) nối; chỗ nối (hai ống nối với nhau); về điều đó, liên quan đến điều đó; có quan hệ với, có liên quan với, có dính líu tới; chạy nối tiếp với (tàu xe)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25782,
+      "word": "conquer",
+      "normalized_word": "conquer",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kɔɳkə/",
+      "primary_meaning_vi": "đoạt",
+      "meaning_vi": "đoạt, xâm chiếm; chiến thắng; chinh phục, chế ngự",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25783,
+      "word": "conscious",
+      "normalized_word": "conscious",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kɔnʃəs/",
+      "primary_meaning_vi": "biết rõ",
+      "meaning_vi": "biết rõ, thấy rõ, tỉnh, tỉnh táo, có ý thức",
+      "example_en": "The noise woke me, but it was another few minutes before I was fully conscious.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Only highly intelligent beings can be fully conscious.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I was conscious of a noise behind me. a very class-conscious analysis",
+          "example_vi": null
+        },
+        {
+          "example_en": "conscious guilt",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25784,
+      "word": "consequently",
+      "normalized_word": "consequently",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'kɔnsikwəntli/",
+      "primary_meaning_vi": "do đó",
+      "meaning_vi": "do đó, vì vậy cho nên, bởi thế; vậy thì",
+      "example_en": "He didn't wake up early. Consequently, he was late to work.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25785,
+      "word": "conservation",
+      "normalized_word": "conservation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔnsə:'veiʃn/",
+      "primary_meaning_vi": "sự giữ gìn",
+      "meaning_vi": "sự giữ gìn, sự duy trì, sự bảo tồn, sự bảo toàn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25786,
+      "word": "conservative",
+      "normalized_word": "conservative",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'sə:vətiv/",
+      "primary_meaning_vi": "để giữ gìn",
+      "meaning_vi": "để giữ gìn, để duy trì, để bảo tồn, để bảo toàn; bảo thủ, thủ cựu; thận trọng, dè dặt; vừa phải, phải chăng; người bảo thủ, người thủ cựu; đảng viên đảng bảo thủ (Anh)",
+      "example_en": "The curriculum committee at this university is extremely conservative.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "At a conservative estimate, growth may even be negative next year.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25787,
+      "word": "considerable",
+      "normalized_word": "considerable",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'sidərəbl/",
+      "primary_meaning_vi": "đáng kể",
+      "meaning_vi": "đáng kể, to tát, lớn; có vai vế, có thế lực quan trọng (người); ,  (thông tục) số lượng lớn, số lượng đáng kể",
+      "example_en": "I've spent a considerable amount of time on this.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25788,
+      "word": "consideration",
+      "normalized_word": "consideration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən,sidə'reiʃn/",
+      "primary_meaning_vi": "sự cân nhắc",
+      "meaning_vi": "sự cân nhắc, sự suy xét, sự nghiên cứu, sự suy nghĩ; sự để ý, sự quan tâm, sự lưu ý; sự tôn kính, sự kính trọng; sự đền bù, sự đền đáp; sự bồi thường; tiền thưởng, tiền công; cớ, lý do, lý; sự quan trọng; xét đến, tính đến; vì lẽ; để đền bù, để đền ơn; sau khi nghiên cứu thêm, sau khi suy xét kỹ",
+      "example_en": "After much consideration, I have decided to stay.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Will you noisy children show some consideration and stop your infernal screaming? I'm trying to study!",
+          "example_vi": null
+        },
+        {
+          "example_en": "Sure I'll move my car, but only for a consideration.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25789,
+      "word": "consonant",
+      "normalized_word": "consonant",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔnsənənt/",
+      "primary_meaning_vi": "thuận tai",
+      "meaning_vi": "thuận tai, êm ái, du dương; hoà hợp, phù hợp; phụ âm",
+      "example_en": "The 19 unquestionable consonants in the English alphabet are B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, X, Z.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "consonant tones; consonant chords",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25790,
+      "word": "constitute",
+      "normalized_word": "constitute",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kɔnstitju:t/",
+      "primary_meaning_vi": "cấu tạo",
+      "meaning_vi": "cấu tạo, tạo thành; thiết lập, thành lập; chỉ đinh, uỷ nhiệm; khoẻ, có thể chất khoẻ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

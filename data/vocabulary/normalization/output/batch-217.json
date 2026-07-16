@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26161,
+      "quiz_meaning_vi": "trước",
+      "meaning_vi_clean": "trước; cũ",
+      "examples_clean": [
+        {
+          "meaning_vi": "trước",
+          "example_en": "She is a former teacher at this school.",
+          "example_vi": "Cô ấy là một giáo viên trước đây tại trường này."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "The former president gave a speech yesterday.",
+          "example_vi": "Vị tổng thống trước đã có bài phát biểu vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "I prefer the former option to the latter.",
+          "example_vi": "Tôi thích lựa chọn trước hơn là lựa chọn sau."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "The former owner sold the house last year.",
+          "example_vi": "Người chủ trước đã bán ngôi nhà vào năm ngoái."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "He met his former friend at the park.",
+          "example_vi": "Anh ấy đã gặp người bạn cũ của mình tại công viên."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "They visited their former home in the countryside.",
+          "example_vi": "Họ đã đến thăm ngôi nhà cũ của mình ở vùng quê."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "She still keeps in touch with her former colleagues.",
+          "example_vi": "Cô ấy vẫn giữ liên lạc với những đồng nghiệp cũ của mình."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "The former system was replaced by a new one.",
+          "example_vi": "Hệ thống cũ đã được thay thế bằng một hệ thống mới."
+        },
+        {
+          "meaning_vi": "trước",
+          "example_en": "The former manager was very strict with everyone.",
+          "example_vi": "Người quản lý trước rất nghiêm khắc với mọi người."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "He is a former member of the local club.",
+          "example_vi": "Anh ấy là một thành viên cũ của câu lạc bộ địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa pos_vi thành tính từ, giữ nghĩa phổ biến nhất là trước và cũ.",
+      "word": "former",
+      "normalized_word": "former",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a former teacher at this school.",
+      "example_vi_clean": "Cô ấy là một giáo viên trước đây tại trường này."
+    },
+    {
+      "id": 26162,
+      "quiz_meaning_vi": "công thức",
+      "meaning_vi_clean": "công thức; cách thức",
+      "examples_clean": [
+        {
+          "meaning_vi": "công thức",
+          "example_en": "The scientist discovered a new chemical formula.",
+          "example_vi": "Nhà khoa học đã khám phá ra một công thức hóa học mới."
+        },
+        {
+          "meaning_vi": "công thức",
+          "example_en": "Can you explain the formula for this math problem?",
+          "example_vi": "Bạn có thể giải thích công thức cho bài toán này không?"
+        },
+        {
+          "meaning_vi": "công thức",
+          "example_en": "The baby needs a special milk formula.",
+          "example_vi": "Đứa bé cần một loại công thức sữa đặc biệt."
+        },
+        {
+          "meaning_vi": "công thức",
+          "example_en": "They are trying to find a formula for success.",
+          "example_vi": "Họ đang cố gắng tìm ra công thức để thành công."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "The company has a unique formula for customer service.",
+          "example_vi": "Công ty có một cách thức độc đáo cho dịch vụ khách hàng."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "There is no simple formula for a happy marriage.",
+          "example_vi": "Không có cách thức đơn giản nào cho một cuộc hôn nhân hạnh phúc."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "Their winning formula is based on hard work.",
+          "example_vi": "Cách thức chiến thắng của họ dựa trên sự chăm chỉ."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "We need a new formula to solve this issue.",
+          "example_vi": "Chúng ta cần một cách thức mới để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "công thức",
+          "example_en": "The secret formula was kept in a safe.",
+          "example_vi": "Công thức bí mật đã được giữ trong két sắt."
+        },
+        {
+          "meaning_vi": "cách thức",
+          "example_en": "They changed their business formula to grow faster.",
+          "example_vi": "Họ đã thay đổi cách thức kinh doanh để phát triển nhanh hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "formula",
+      "normalized_word": "formula",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The scientist discovered a new chemical formula.",
+      "example_vi_clean": "Nhà khoa học đã khám phá ra một công thức hóa học mới."
+    },
+    {
+      "id": 26163,
+      "quiz_meaning_vi": "về phía trước",
+      "meaning_vi_clean": "về phía trước",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "He stepped forth to greet the guests.",
+          "example_vi": "Anh ấy bước về phía trước để chào đón các vị khách."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The army marched forth into the valley.",
+          "example_vi": "Đội quân tiến về phía trước vào thung lũng."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "She looked forth from the balcony.",
+          "example_vi": "Cô ấy nhìn về phía trước từ ban công."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The ship sailed forth across the ocean.",
+          "example_vi": "Con tàu đi về phía trước băng qua đại dương."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "He brought forth his best arguments.",
+          "example_vi": "Anh ấy đưa ra những lập luận tốt nhất của mình."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The sun shone forth after the rain.",
+          "example_vi": "Mặt trời chiếu sáng về phía trước sau cơn mưa."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "They set forth on their long journey.",
+          "example_vi": "Họ khởi hành về phía trước cho chuyến đi dài."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The truth finally came forth.",
+          "example_vi": "Sự thật cuối cùng đã lộ ra phía trước."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "He leaned forth to hear better.",
+          "example_vi": "Anh ấy nghiêng người về phía trước để nghe rõ hơn."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The flowers put forth new buds.",
+          "example_vi": "Những bông hoa đâm chồi về phía trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa pos_vi thành phó từ, giữ nghĩa chính là về phía trước.",
+      "word": "forth",
+      "normalized_word": "forth",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He stepped forth to greet the guests.",
+      "example_vi_clean": "Anh ấy bước về phía trước để chào đón các vị khách."
+    },
+    {
+      "id": 26164,
+      "quiz_meaning_vi": "hai tuần lễ",
+      "meaning_vi_clean": "hai tuần lễ",
+      "examples_clean": [
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "We are going on holiday for a fortnight.",
+          "example_vi": "Chúng tôi sẽ đi nghỉ trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "The project will be finished in a fortnight.",
+          "example_vi": "Dự án sẽ được hoàn thành trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "I have not seen him for a fortnight.",
+          "example_vi": "Tôi đã không gặp anh ấy trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "The conference lasts for a fortnight.",
+          "example_vi": "Hội nghị kéo dài trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "She will return in a fortnight.",
+          "example_vi": "Cô ấy sẽ quay lại trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "We meet every fortnight for lunch.",
+          "example_vi": "Chúng tôi gặp nhau mỗi hai tuần lễ để ăn trưa."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "The course runs for a fortnight.",
+          "example_vi": "Khóa học diễn ra trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "He has been away for a fortnight.",
+          "example_vi": "Anh ấy đã đi vắng được hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "The exhibition is open for a fortnight.",
+          "example_vi": "Triển lãm mở cửa trong hai tuần lễ."
+        },
+        {
+          "meaning_vi": "hai tuần lễ",
+          "example_en": "I need to finish this in a fortnight.",
+          "example_vi": "Tôi cần hoàn thành việc này trong hai tuần lễ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ nghĩa không phù hợp, giữ nghĩa chính là hai tuần lễ.",
+      "word": "fortnight",
+      "normalized_word": "fortnight",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We are going on holiday for a fortnight.",
+      "example_vi_clean": "Chúng tôi sẽ đi nghỉ trong hai tuần lễ."
+    },
+    {
+      "id": 26165,
+      "quiz_meaning_vi": "may mắn",
+      "meaning_vi_clean": "may mắn; thuận lợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "may mắn",
+          "example_en": "I was fortunate to meet such kind people.",
+          "example_vi": "Tôi thật may mắn khi gặp được những người tốt bụng như vậy."
+        },
+        {
+          "meaning_vi": "may mắn",
+          "example_en": "She is fortunate to have a supportive family.",
+          "example_vi": "Cô ấy thật may mắn khi có một gia đình ủng hộ."
+        },
+        {
+          "meaning_vi": "may mắn",
+          "example_en": "We are fortunate that the weather is nice.",
+          "example_vi": "Chúng tôi thật may mắn vì thời tiết rất đẹp."
+        },
+        {
+          "meaning_vi": "may mắn",
+          "example_en": "He was fortunate enough to win the prize.",
+          "example_vi": "Anh ấy đủ may mắn để giành được giải thưởng."
+        },
+        {
+          "meaning_vi": "thuận lợi",
+          "example_en": "The team had a fortunate start to the season.",
+          "example_vi": "Đội bóng đã có một khởi đầu thuận lợi cho mùa giải."
+        },
+        {
+          "meaning_vi": "thuận lợi",
+          "example_en": "It was a fortunate turn of events for us.",
+          "example_vi": "Đó là một bước ngoặt thuận lợi cho chúng tôi."
+        },
+        {
+          "meaning_vi": "thuận lợi",
+          "example_en": "They made a fortunate decision at the right time.",
+          "example_vi": "Họ đã đưa ra một quyết định thuận lợi vào đúng thời điểm."
+        },
+        {
+          "meaning_vi": "thuận lợi",
+          "example_en": "The conditions were fortunate for our experiment.",
+          "example_vi": "Các điều kiện rất thuận lợi cho thí nghiệm của chúng tôi."
+        },
+        {
+          "meaning_vi": "may mắn",
+          "example_en": "You are fortunate to live in such a beautiful place.",
+          "example_vi": "Bạn thật may mắn khi sống ở một nơi đẹp như vậy."
+        },
+        {
+          "meaning_vi": "thuận lợi",
+          "example_en": "We had a fortunate outcome despite the risks.",
+          "example_vi": "Chúng tôi đã có một kết quả thuận lợi bất chấp những rủi ro."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "fortunate",
+      "normalized_word": "fortunate",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I was fortunate to meet such kind people.",
+      "example_vi_clean": "Tôi thật may mắn khi gặp được những người tốt bụng như vậy."
+    },
+    {
+      "id": 26166,
+      "quiz_meaning_vi": "sự thành lập",
+      "meaning_vi_clean": "sự thành lập; nền tảng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "The foundation of the club was in 1990.",
+          "example_vi": "Sự thành lập của câu lạc bộ là vào năm 1990."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "They celebrated the foundation of the company.",
+          "example_vi": "Họ đã ăn mừng sự thành lập của công ty."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "The foundation of the school took many years.",
+          "example_vi": "Sự thành lập của ngôi trường đã mất nhiều năm."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "He was present at the foundation of the charity.",
+          "example_vi": "Anh ấy đã có mặt tại sự thành lập của tổ chức từ thiện."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "Education is the foundation of a successful life.",
+          "example_vi": "Giáo dục là nền tảng của một cuộc sống thành công."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "Trust is the foundation of any good relationship.",
+          "example_vi": "Sự tin tưởng là nền tảng của bất kỳ mối quan hệ tốt đẹp nào."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "They built the house on a solid foundation.",
+          "example_vi": "Họ đã xây ngôi nhà trên một nền tảng vững chắc."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "These facts provide a foundation for our theory.",
+          "example_vi": "Những sự thật này cung cấp một nền tảng cho lý thuyết của chúng tôi."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "The foundation of the museum was a great success.",
+          "example_vi": "Sự thành lập của bảo tàng là một thành công lớn."
+        },
+        {
+          "meaning_vi": "nền tảng",
+          "example_en": "We need a strong foundation to grow our business.",
+          "example_vi": "Chúng ta cần một nền tảng vững chắc để phát triển kinh doanh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "foundation",
+      "normalized_word": "foundation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The foundation of the club was in 1990.",
+      "example_vi_clean": "Sự thành lập của câu lạc bộ là vào năm 1990."
+    },
+    {
+      "id": 26167,
+      "quiz_meaning_vi": "suối nước",
+      "meaning_vi_clean": "suối nước; vòi phun",
+      "examples_clean": [
+        {
+          "meaning_vi": "suối nước",
+          "example_en": "The mountain has a clear fountain.",
+          "example_vi": "Ngọn núi có một suối nước trong vắt."
+        },
+        {
+          "meaning_vi": "suối nước",
+          "example_en": "They drank from the natural fountain.",
+          "example_vi": "Họ đã uống nước từ suối nước tự nhiên."
+        },
+        {
+          "meaning_vi": "suối nước",
+          "example_en": "The village was built near a fountain.",
+          "example_vi": "Ngôi làng được xây dựng gần một suối nước."
+        },
+        {
+          "meaning_vi": "suối nước",
+          "example_en": "The fountain flows all year round.",
+          "example_vi": "Suối nước chảy quanh năm."
+        },
+        {
+          "meaning_vi": "vòi phun",
+          "example_en": "The fountain in the park is very beautiful.",
+          "example_vi": "Vòi phun trong công viên rất đẹp."
+        },
+        {
+          "meaning_vi": "vòi phun",
+          "example_en": "Children played near the water fountain.",
+          "example_vi": "Trẻ em chơi gần vòi phun nước."
+        },
+        {
+          "meaning_vi": "vòi phun",
+          "example_en": "The fountain lights up at night.",
+          "example_vi": "Vòi phun sáng đèn vào ban đêm."
+        },
+        {
+          "meaning_vi": "vòi phun",
+          "example_en": "They sat by the fountain to rest.",
+          "example_vi": "Họ ngồi cạnh vòi phun để nghỉ ngơi."
+        },
+        {
+          "meaning_vi": "suối nước",
+          "example_en": "The fountain is the source of the river.",
+          "example_vi": "Suối nước là nguồn của con sông."
+        },
+        {
+          "meaning_vi": "vòi phun",
+          "example_en": "The fountain sprays water high into the air.",
+          "example_vi": "Vòi phun phun nước cao lên không trung."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "fountain",
+      "normalized_word": "fountain",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The mountain has a clear fountain.",
+      "example_vi_clean": "Ngọn núi có một suối nước trong vắt."
+    },
+    {
+      "id": 26168,
+      "quiz_meaning_vi": "mảnh",
+      "meaning_vi_clean": "mảnh; đoạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "mảnh",
+          "example_en": "He found a fragment of broken glass.",
+          "example_vi": "Anh ấy tìm thấy một mảnh thủy tinh vỡ."
+        },
+        {
+          "meaning_vi": "mảnh",
+          "example_en": "The vase fell and broke into many fragments.",
+          "example_vi": "Chiếc bình rơi và vỡ thành nhiều mảnh."
+        },
+        {
+          "meaning_vi": "mảnh",
+          "example_en": "She picked up a small fragment of the rock.",
+          "example_vi": "Cô ấy nhặt một mảnh nhỏ của tảng đá."
+        },
+        {
+          "meaning_vi": "mảnh",
+          "example_en": "The bomb left only a few fragments.",
+          "example_vi": "Quả bom chỉ để lại vài mảnh vỡ."
+        },
+        {
+          "meaning_vi": "đoạn",
+          "example_en": "I only heard a fragment of the song.",
+          "example_vi": "Tôi chỉ nghe được một đoạn của bài hát."
+        },
+        {
+          "meaning_vi": "đoạn",
+          "example_en": "He read a fragment of the old manuscript.",
+          "example_vi": "Anh ấy đọc một đoạn của bản thảo cũ."
+        },
+        {
+          "meaning_vi": "đoạn",
+          "example_en": "The book is just a fragment of his work.",
+          "example_vi": "Cuốn sách chỉ là một đoạn trong tác phẩm của ông ấy."
+        },
+        {
+          "meaning_vi": "đoạn",
+          "example_en": "She remembered a fragment of the conversation.",
+          "example_vi": "Cô ấy nhớ lại một đoạn của cuộc trò chuyện."
+        },
+        {
+          "meaning_vi": "mảnh",
+          "example_en": "A fragment of metal was stuck in the wall.",
+          "example_vi": "Một mảnh kim loại bị kẹt trong tường."
+        },
+        {
+          "meaning_vi": "đoạn",
+          "example_en": "They found a fragment of the ancient map.",
+          "example_vi": "Họ tìm thấy một đoạn của tấm bản đồ cổ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "fragment",
+      "normalized_word": "fragment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He found a fragment of broken glass.",
+      "example_vi_clean": "Anh ấy tìm thấy một mảnh thủy tinh vỡ."
+    },
+    {
+      "id": 26169,
+      "quiz_meaning_vi": "tự do",
+      "meaning_vi_clean": "tự do; thoải mái",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự do",
+          "example_en": "The birds fly freely in the sky.",
+          "example_vi": "Những chú chim bay tự do trên bầu trời."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "You can speak freely here.",
+          "example_vi": "Bạn có thể nói chuyện tự do ở đây."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "He moves freely around the city.",
+          "example_vi": "Anh ấy di chuyển tự do quanh thành phố."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "The prisoners were finally set freely.",
+          "example_vi": "Các tù nhân cuối cùng đã được trả tự do."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "She expressed her opinions quite freely.",
+          "example_vi": "Cô ấy bày tỏ ý kiến của mình khá thoải mái."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "He gave his time freely to help others.",
+          "example_vi": "Anh ấy dành thời gian của mình một cách thoải mái để giúp đỡ người khác."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "The information is freely available online.",
+          "example_vi": "Thông tin có sẵn một cách thoải mái trên mạng."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "They shared their ideas freely with the team.",
+          "example_vi": "Họ chia sẻ ý tưởng của mình một cách thoải mái với nhóm."
+        },
+        {
+          "meaning_vi": "tự do",
+          "example_en": "The dog runs freely in the garden.",
+          "example_vi": "Con chó chạy tự do trong vườn."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "You are free to choose, so choose freely.",
+          "example_vi": "Bạn được tự do lựa chọn, vì vậy hãy chọn một cách thoải mái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "freely",
+      "normalized_word": "freely",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The birds fly freely in the sky.",
+      "example_vi_clean": "Những chú chim bay tự do trên bầu trời."
+    },
+    {
+      "id": 26170,
+      "quiz_meaning_vi": "máy ướp lạnh",
+      "meaning_vi_clean": "máy ướp lạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "I put the meat in the freezer.",
+          "example_vi": "Tôi để thịt vào máy ướp lạnh."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "The freezer is full of ice cream.",
+          "example_vi": "Máy ướp lạnh đầy kem."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "Please close the freezer door properly.",
+          "example_vi": "Vui lòng đóng cửa máy ướp lạnh cẩn thận."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "We need to defrost the freezer.",
+          "example_vi": "Chúng ta cần rã đông máy ướp lạnh."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "He bought a new freezer for the kitchen.",
+          "example_vi": "Anh ấy đã mua một máy ướp lạnh mới cho nhà bếp."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "The food in the freezer stays fresh.",
+          "example_vi": "Thực phẩm trong máy ướp lạnh vẫn giữ được độ tươi."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "She keeps frozen vegetables in the freezer.",
+          "example_vi": "Cô ấy giữ rau đông lạnh trong máy ướp lạnh."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "The freezer stopped working this morning.",
+          "example_vi": "Máy ướp lạnh đã ngừng hoạt động sáng nay."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "I took the fish out of the freezer.",
+          "example_vi": "Tôi đã lấy cá ra khỏi máy ướp lạnh."
+        },
+        {
+          "meaning_vi": "máy ướp lạnh",
+          "example_en": "There is no more space in the freezer.",
+          "example_vi": "Không còn chỗ trong máy ướp lạnh nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, đảm bảo đủ 10 câu.",
+      "word": "freezer",
+      "normalized_word": "freezer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I put the meat in the freezer.",
+      "example_vi_clean": "Tôi để thịt vào máy ướp lạnh."
+    }
+  ]
+}

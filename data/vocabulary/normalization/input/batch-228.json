@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-228",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26271,
+      "word": "handy",
+      "normalized_word": "handy",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/hændi/",
+      "primary_meaning_vi": "thuận tiện",
+      "meaning_vi": "thuận tiện, tiện tay, vừa tầm tay; dễ cầm, dễ sử dụng; khéo tay; đến đúng lúc, đến vào lúc cần thiết",
+      "example_en": "Some people regard duct tape as a handy fix-all.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I keep a first-aid kit handy in case of emergency.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She's very handy: she made all her own kitchen cupboards.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26272,
+      "word": "hanging",
+      "normalized_word": "hanging",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'hæɳiɳ/",
+      "primary_meaning_vi": "sự treo",
+      "meaning_vi": "sự treo; sự treo cổ; số nhiều) rèm; màn; trướng; dốc, đường dốc xuống; ban xét duyệt tranh triển lãm; treo; đáng treo cổ, đáng chết treo",
+      "example_en": "The lights hung from the ceiling.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The smoke hung in the room.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He hung his head in shame.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Hang those lights from the ceiling.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26273,
+      "word": "harbour",
+      "normalized_word": "harbour",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ ((từ Mỹ,nghĩa Mỹ) (cũng) habor)",
+      "phonetic": "/'hɑ:bə/",
+      "primary_meaning_vi": "bến tàu",
+      "meaning_vi": "bến tàu, cảng; nơi an toàn; nơi ẩn náu; chứa chấp; che giấu, cho ẩn náu; nuôi dưỡng (ý nghĩ xấu...); bỏ neo ở cảng, đậu ở cảng (tàu thuỷ)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26274,
+      "word": "hardship",
+      "normalized_word": "hardship",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hɑ:dʃip/",
+      "primary_meaning_vi": "sự gian khổ",
+      "meaning_vi": "sự gian khổ, sự thử thách gay go",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26275,
+      "word": "hard-working",
+      "normalized_word": "hard-working",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "làm việc tích cực và chu đáo",
+      "meaning_vi": "làm việc tích cực và chu đáo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26276,
+      "word": "harness",
+      "normalized_word": "harness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'hɑ:nis/",
+      "primary_meaning_vi": "bộ yên cương (ngựa)",
+      "meaning_vi": "bộ yên cương (ngựa); trang bị lao động, dụng cụ lao động; áo giáp (của người và ngựa); dệt khung go; lại lao đầu vào công việc; đang làm công việc thường xuyên; đóng yên cương (ngựa); khai thác để sản xuất điện (một con sông, một thác nước...)",
+      "example_en": "They harnessed the horse to the post.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Imagine what might happen if it were possible to harness solar energy fully.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26277,
+      "word": "hasty",
+      "normalized_word": "hasty",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'heisti/",
+      "primary_meaning_vi": "vội",
+      "meaning_vi": "vội, vội vàng, vội vã; nhanh chóng, gấp rút, mau; hấp tấp, khinh suất, thiếu suy nghĩ; nóng tính, nóng nảy, dễ nổi nóng",
+      "example_en": "Without much thinking about it they made a hasty decision to buy it.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26278,
+      "word": "hatch",
+      "normalized_word": "hatch",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/hætʃ/",
+      "primary_meaning_vi": "cửa sập",
+      "meaning_vi": "cửa sập, cửa hầm (dưới sàn nhà); cửa hầm chứa hàng (của tàu thuỷ); cửa cống, cửa đập nước; sự chết; sự đẩy vào cảnh tối tăm bần cùng; sự nở (trứng); sự ấp trứng; ổ chim con mới nở; ổ trứng ấp; mục sinh tử giá thú (trên báo); làm nở trứng; ấp (trứng); ngấm ngầm bày đặt, ngấm ngầm dự định (âm mưu...); nở (trứng, gà con); (xem) chicken; nét chải, đường gạch bóng (trên hình vẽ); tô nét chải, gạch đường bóng (trên hình vẽ)",
+      "example_en": "The cook passed the dishes through the serving hatch.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "These pullets are from an April hatch.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26279,
+      "word": "hate",
+      "normalized_word": "hate",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/heit/",
+      "primary_meaning_vi": "lòng căm thù",
+      "meaning_vi": "lòng căm thù; sự căm hờn, sự căm ghét; căm thù, căm hờn, căm ghét; không muốn, không thích",
+      "example_en": "One of my pet hates is traffic wardens.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He gave me a look filled with pure hate.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Do not fear; he who fears hates; he who hates kills. — attributed to Gandhi",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26280,
+      "word": "hatred",
+      "normalized_word": "hatred",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'heitrid/",
+      "primary_meaning_vi": "lòng căm thù",
+      "meaning_vi": "lòng căm thù, sự căm hờn, sự căm ghét",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

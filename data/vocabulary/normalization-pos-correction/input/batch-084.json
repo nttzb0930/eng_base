@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-084",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26950,
+      "word": "ease",
+      "normalized_word": "ease",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i:z/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26957,
+      "word": "ecstatic",
+      "normalized_word": "ecstatic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/eks'tætik/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26977,
+      "word": "embrace",
+      "normalized_word": "embrace",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/im'breis/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26984,
+      "word": "endeavour",
+      "normalized_word": "endeavour",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'devə/",
+      "primary_meaning_vi": "",
+      "meaning_vi": "",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

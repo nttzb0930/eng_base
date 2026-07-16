@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24681,
+      "quiz_meaning_vi": "sự tấn công",
+      "meaning_vi_clean": "sự tấn công; cơn bệnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The army timed their attack to coincide with the local celebrations.",
+          "example_vi": "Quân đội đã chọn thời điểm tấn công trùng với các lễ hội địa phương."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "They claimed the censorship of the article was an attack on free speech.",
+          "example_vi": "Họ cho rằng việc kiểm duyệt bài báo là một sự tấn công vào quyền tự do ngôn luận."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The city was prepared for a sudden attack from the enemy forces.",
+          "example_vi": "Thành phố đã chuẩn bị sẵn sàng cho một cuộc tấn công bất ngờ từ lực lượng kẻ thù."
+        },
+        {
+          "meaning_vi": "sự tấn công",
+          "example_en": "The security system is designed to prevent any unauthorized attack.",
+          "example_vi": "Hệ thống an ninh được thiết kế để ngăn chặn bất kỳ cuộc tấn công trái phép nào."
+        },
+        {
+          "meaning_vi": "cơn bệnh",
+          "example_en": "I have had a severe attack of the flu this winter.",
+          "example_vi": "Tôi đã bị một cơn cúm nặng vào mùa đông này."
+        },
+        {
+          "meaning_vi": "cơn bệnh",
+          "example_en": "She suffered a sudden heart attack while walking in the park.",
+          "example_vi": "Cô ấy bị một cơn đau tim đột ngột khi đang đi dạo trong công viên."
+        },
+        {
+          "meaning_vi": "cơn bệnh",
+          "example_en": "The patient experienced an asthma attack during the night.",
+          "example_vi": "Bệnh nhân đã trải qua một cơn hen suyễn trong đêm."
+        },
+        {
+          "meaning_vi": "cơn bệnh",
+          "example_en": "He is recovering from a mild attack of bronchitis.",
+          "example_vi": "Anh ấy đang hồi phục sau một cơn viêm phế quản nhẹ."
+        },
+        {
+          "meaning_vi": "cơn bệnh",
+          "example_en": "An attack of dizziness made him sit down immediately.",
+          "example_vi": "Một cơn chóng mặt khiến anh ấy phải ngồi xuống ngay lập tức."
+        },
+        {
+          "meaning_vi": "cơn bệnh",
+          "example_en": "She was hospitalized after a sudden attack of migraine.",
+          "example_vi": "Cô ấy đã phải nhập viện sau một cơn đau nửa đầu đột ngột."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang danh từ. Giới hạn nghĩa còn 2 nghĩa phổ biến nhất để đảm bảo chất lượng ví dụ.",
+      "word": "attack",
+      "normalized_word": "attack",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The army timed their attack to coincide with the local celebrations.",
+      "example_vi_clean": "Quân đội đã chọn thời điểm tấn công trùng với các lễ hội địa phương."
+    },
+    {
+      "id": 24682,
+      "quiz_meaning_vi": "sự cố gắng",
+      "meaning_vi_clean": "sự cố gắng; sự thử",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cố gắng",
+          "example_en": "It was worth the attempt to fix the broken machine.",
+          "example_vi": "Việc cố gắng sửa chiếc máy bị hỏng là rất đáng giá."
+        },
+        {
+          "meaning_vi": "sự cố gắng",
+          "example_en": "Their attempt to win the championship failed in the final round.",
+          "example_vi": "Sự cố gắng giành chức vô địch của họ đã thất bại ở vòng cuối cùng."
+        },
+        {
+          "meaning_vi": "sự cố gắng",
+          "example_en": "He made a sincere attempt to apologize for his mistake.",
+          "example_vi": "Anh ấy đã thực hiện một sự cố gắng chân thành để xin lỗi về lỗi lầm của mình."
+        },
+        {
+          "meaning_vi": "sự cố gắng",
+          "example_en": "The government is making a new attempt to reduce unemployment.",
+          "example_vi": "Chính phủ đang thực hiện một sự cố gắng mới để giảm tỷ lệ thất nghiệp."
+        },
+        {
+          "meaning_vi": "sự thử",
+          "example_en": "This is my first attempt at baking a chocolate cake.",
+          "example_vi": "Đây là sự thử sức đầu tiên của tôi trong việc nướng bánh sô-cô-la."
+        },
+        {
+          "meaning_vi": "sự thử",
+          "example_en": "She made an attempt to learn French in just three months.",
+          "example_vi": "Cô ấy đã thử học tiếng Pháp chỉ trong ba tháng."
+        },
+        {
+          "meaning_vi": "sự thử",
+          "example_en": "The climber made another attempt to reach the summit.",
+          "example_vi": "Người leo núi đã thực hiện một sự thử sức khác để lên đến đỉnh."
+        },
+        {
+          "meaning_vi": "sự thử",
+          "example_en": "They made a bold attempt to cross the river during the storm.",
+          "example_vi": "Họ đã thực hiện một sự thử sức táo bạo để băng qua sông trong cơn bão."
+        },
+        {
+          "meaning_vi": "sự thử",
+          "example_en": "His attempt to solve the puzzle took several hours.",
+          "example_vi": "Sự thử sức giải câu đố của anh ấy đã mất vài giờ."
+        },
+        {
+          "meaning_vi": "sự thử",
+          "example_en": "We should make an attempt to finish the project by Friday.",
+          "example_vi": "Chúng ta nên thử sức hoàn thành dự án trước thứ Sáu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Giới hạn nghĩa còn 2 nghĩa phổ biến nhất.",
+      "word": "attempt",
+      "normalized_word": "attempt",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was worth the attempt to fix the broken machine.",
+      "example_vi_clean": "Việc cố gắng sửa chiếc máy bị hỏng là rất đáng giá."
+    },
+    {
+      "id": 24683,
+      "quiz_meaning_vi": "sự chú ý",
+      "meaning_vi_clean": "sự chú ý; sự chăm sóc; tư thế đứng nghiêm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự chú ý",
+          "example_en": "Please direct your attention to the following words.",
+          "example_vi": "Vui lòng hướng sự chú ý của bạn vào những từ sau đây."
+        },
+        {
+          "meaning_vi": "sự chú ý",
+          "example_en": "The teacher tried to get the students' attention.",
+          "example_vi": "Giáo viên đã cố gắng thu hút sự chú ý của học sinh."
+        },
+        {
+          "meaning_vi": "sự chú ý",
+          "example_en": "This matter requires your immediate attention.",
+          "example_vi": "Vấn đề này đòi hỏi sự chú ý ngay lập tức của bạn."
+        },
+        {
+          "meaning_vi": "sự chú ý",
+          "example_en": "He didn't pay much attention to the details.",
+          "example_vi": "Anh ấy không chú ý nhiều đến các chi tiết."
+        },
+        {
+          "meaning_vi": "sự chăm sóc",
+          "example_en": "The plants need regular attention to grow well.",
+          "example_vi": "Những cái cây cần sự chăm sóc thường xuyên để phát triển tốt."
+        },
+        {
+          "meaning_vi": "sự chăm sóc",
+          "example_en": "The baby requires constant attention from its parents.",
+          "example_vi": "Đứa bé cần sự chăm sóc liên tục từ cha mẹ."
+        },
+        {
+          "meaning_vi": "tư thế đứng nghiêm",
+          "example_en": "The soldiers stood at attention during the ceremony.",
+          "example_vi": "Các binh sĩ đứng ở tư thế nghiêm trong buổi lễ."
+        },
+        {
+          "meaning_vi": "tư thế đứng nghiêm",
+          "example_en": "The company will now come to attention.",
+          "example_vi": "Đại đội bây giờ sẽ đứng vào tư thế nghiêm."
+        },
+        {
+          "meaning_vi": "sự chăm sóc",
+          "example_en": "The old house needs some attention to restore its beauty.",
+          "example_vi": "Ngôi nhà cũ cần được chăm sóc để khôi phục vẻ đẹp của nó."
+        },
+        {
+          "meaning_vi": "tư thế đứng nghiêm",
+          "example_en": "He snapped to attention when the officer entered the room.",
+          "example_vi": "Anh ấy đứng nghiêm ngay lập tức khi sĩ quan bước vào phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 3 nghĩa phổ biến nhất và phân bổ ví dụ hợp lý.",
+      "word": "attention",
+      "normalized_word": "attention",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please direct your attention to the following words.",
+      "example_vi_clean": "Vui lòng hướng sự chú ý của bạn vào những từ sau đây."
+    },
+    {
+      "id": 24684,
+      "quiz_meaning_vi": "thái độ",
+      "meaning_vi_clean": "thái độ; tư thế",
+      "examples_clean": [
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "The ballet dancer walked with a graceful attitude.",
+          "example_vi": "Vũ công ba lê bước đi với một thái độ duyên dáng."
+        },
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "Don't give me your negative attitude.",
+          "example_vi": "Đừng thể hiện thái độ tiêu cực đó với tôi."
+        },
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "She has a positive attitude towards her new job.",
+          "example_vi": "Cô ấy có một thái độ tích cực đối với công việc mới của mình."
+        },
+        {
+          "meaning_vi": "thái độ",
+          "example_en": "His attitude changed after he heard the good news.",
+          "example_vi": "Thái độ của anh ấy đã thay đổi sau khi nghe tin tốt."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "The airliner had to land with a nose-up attitude after the incident.",
+          "example_vi": "Máy bay phải hạ cánh với tư thế mũi hướng lên sau sự cố."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "The statue was carved in a relaxed attitude.",
+          "example_vi": "Bức tượng được chạm khắc trong một tư thế thư giãn."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "He sat in a defensive attitude during the meeting.",
+          "example_vi": "Anh ấy ngồi trong một tư thế phòng thủ trong suốt cuộc họp."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "The cat was in a hunting attitude, ready to pounce.",
+          "example_vi": "Con mèo đang ở tư thế săn mồi, sẵn sàng vồ lấy."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "She adjusted her attitude to look more professional.",
+          "example_vi": "Cô ấy điều chỉnh tư thế của mình để trông chuyên nghiệp hơn."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "The pilot maintained a steady attitude during the flight.",
+          "example_vi": "Phi công duy trì một tư thế ổn định trong suốt chuyến bay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất và phân bổ ví dụ hợp lý.",
+      "word": "attitude",
+      "normalized_word": "attitude",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ballet dancer walked with a graceful attitude.",
+      "example_vi_clean": "Vũ công ba lê bước đi với một thái độ duyên dáng."
+    },
+    {
+      "id": 24685,
+      "quiz_meaning_vi": "thu hút",
+      "meaning_vi_clean": "thu hút; có duyên",
+      "examples_clean": [
+        {
+          "meaning_vi": "thu hút",
+          "example_en": "That's a very attractive offer.",
+          "example_vi": "Đó là một lời đề nghị rất thu hút."
+        },
+        {
+          "meaning_vi": "thu hút",
+          "example_en": "The company offers an attractive salary package.",
+          "example_vi": "Công ty đưa ra một gói lương rất thu hút."
+        },
+        {
+          "meaning_vi": "thu hút",
+          "example_en": "The new park is an attractive place for families.",
+          "example_vi": "Công viên mới là một nơi thu hút đối với các gia đình."
+        },
+        {
+          "meaning_vi": "thu hút",
+          "example_en": "She has an attractive personality that everyone likes.",
+          "example_vi": "Cô ấy có một tính cách thu hút mà ai cũng yêu mến."
+        },
+        {
+          "meaning_vi": "có duyên",
+          "example_en": "He is an attractive fellow with a trim figure.",
+          "example_vi": "Anh ấy là một chàng trai có duyên với vóc dáng cân đối."
+        },
+        {
+          "meaning_vi": "có duyên",
+          "example_en": "She looked very attractive in her new dress.",
+          "example_vi": "Cô ấy trông rất có duyên trong chiếc váy mới của mình."
+        },
+        {
+          "meaning_vi": "có duyên",
+          "example_en": "The actress is known for her attractive smile.",
+          "example_vi": "Nữ diễn viên nổi tiếng với nụ cười có duyên của mình."
+        },
+        {
+          "meaning_vi": "có duyên",
+          "example_en": "He is a very attractive person to talk to.",
+          "example_vi": "Anh ấy là một người rất có duyên để trò chuyện cùng."
+        },
+        {
+          "meaning_vi": "có duyên",
+          "example_en": "The garden looks quite attractive in the spring.",
+          "example_vi": "Khu vườn trông khá có duyên vào mùa xuân."
+        },
+        {
+          "meaning_vi": "có duyên",
+          "example_en": "She has an attractive way of telling stories.",
+          "example_vi": "Cô ấy có cách kể chuyện rất có duyên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa primary thành thu hút. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "attractive",
+      "normalized_word": "attractive",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "That's a very attractive offer.",
+      "example_vi_clean": "Đó là một lời đề nghị rất thu hút."
+    },
+    {
+      "id": 24686,
+      "quiz_meaning_vi": "những người nghe",
+      "meaning_vi_clean": "những người nghe; người xem; sự hội kiến",
+      "examples_clean": [
+        {
+          "meaning_vi": "những người nghe",
+          "example_en": "We joined the audience just as the lights went down.",
+          "example_vi": "Chúng tôi đã hòa vào những người nghe ngay khi đèn tắt."
+        },
+        {
+          "meaning_vi": "những người nghe",
+          "example_en": "The radio show has a large audience of young people.",
+          "example_vi": "Chương trình phát thanh có một lượng lớn những người nghe là giới trẻ."
+        },
+        {
+          "meaning_vi": "những người nghe",
+          "example_en": "The speaker captivated his audience with a great story.",
+          "example_vi": "Người diễn thuyết đã làm say mê những người nghe của mình bằng một câu chuyện tuyệt vời."
+        },
+        {
+          "meaning_vi": "những người nghe",
+          "example_en": "The audience clapped loudly at the end of the performance.",
+          "example_vi": "Những người nghe đã vỗ tay lớn vào cuối buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "người xem",
+          "example_en": "The movie attracted a wide audience of all ages.",
+          "example_vi": "Bộ phim đã thu hút một lượng lớn người xem ở mọi lứa tuổi."
+        },
+        {
+          "meaning_vi": "người xem",
+          "example_en": "The television program has millions of regular viewers and audience members.",
+          "example_vi": "Chương trình truyền hình có hàng triệu người xem thường xuyên."
+        },
+        {
+          "meaning_vi": "sự hội kiến",
+          "example_en": "She managed to get an audience with the Pope.",
+          "example_vi": "Cô ấy đã xoay xở để có được một sự hội kiến với Giáo hoàng."
+        },
+        {
+          "meaning_vi": "sự hội kiến",
+          "example_en": "The ambassador requested an audience with the president.",
+          "example_vi": "Đại sứ đã yêu cầu một sự hội kiến với tổng thống."
+        },
+        {
+          "meaning_vi": "người xem",
+          "example_en": "The play was written for a modern audience.",
+          "example_vi": "Vở kịch được viết cho người xem hiện đại."
+        },
+        {
+          "meaning_vi": "sự hội kiến",
+          "example_en": "He was granted an audience to discuss the new policy.",
+          "example_vi": "Ông ấy đã được chấp thuận một sự hội kiến để thảo luận về chính sách mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 3 nghĩa phổ biến nhất và phân bổ ví dụ hợp lý.",
+      "word": "audience",
+      "normalized_word": "audience",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We joined the audience just as the lights went down.",
+      "example_vi_clean": "Chúng tôi đã hòa vào những người nghe ngay khi đèn tắt."
+    },
+    {
+      "id": 24687,
+      "quiz_meaning_vi": "thuộc âm thanh",
+      "meaning_vi_clean": "thuộc âm thanh",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "The audio quality of this recording is excellent.",
+          "example_vi": "Chất lượng thuộc âm thanh của bản ghi này rất tuyệt vời."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "We need to check the audio settings on the computer.",
+          "example_vi": "Chúng ta cần kiểm tra các cài đặt thuộc âm thanh trên máy tính."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "The audio equipment was set up before the concert started.",
+          "example_vi": "Thiết bị thuộc âm thanh đã được lắp đặt trước khi buổi hòa nhạc bắt đầu."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "He is an expert in audio engineering.",
+          "example_vi": "Anh ấy là một chuyên gia trong lĩnh vực kỹ thuật thuộc âm thanh."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "The audio track was added to the video later.",
+          "example_vi": "Bản nhạc thuộc âm thanh đã được thêm vào video sau đó."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "Please turn up the audio volume.",
+          "example_vi": "Vui lòng tăng âm lượng thuộc âm thanh lên."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "The audio system in this car is very powerful.",
+          "example_vi": "Hệ thống thuộc âm thanh trong chiếc xe này rất mạnh mẽ."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "They are recording an audio book for children.",
+          "example_vi": "Họ đang ghi âm một cuốn sách thuộc âm thanh cho trẻ em."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "The audio signal is too weak to hear clearly.",
+          "example_vi": "Tín hiệu thuộc âm thanh quá yếu để nghe rõ."
+        },
+        {
+          "meaning_vi": "thuộc âm thanh",
+          "example_en": "We listened to an audio file of the lecture.",
+          "example_vi": "Chúng tôi đã nghe một tệp thuộc âm thanh của bài giảng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung POS là tính từ và 10 ví dụ.",
+      "word": "audio",
+      "normalized_word": "audio",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The audio quality of this recording is excellent.",
+      "example_vi_clean": "Chất lượng thuộc âm thanh của bản ghi này rất tuyệt vời."
+    },
+    {
+      "id": 24688,
+      "quiz_meaning_vi": "tác giả",
+      "meaning_vi_clean": "tác giả; người tạo ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "tác giả",
+          "example_en": "Have you read any Corinthian authors?",
+          "example_vi": "Bạn đã đọc tác giả Corinthian nào chưa?"
+        },
+        {
+          "meaning_vi": "tác giả",
+          "example_en": "The author of this book is a famous scientist.",
+          "example_vi": "Tác giả của cuốn sách này là một nhà khoa học nổi tiếng."
+        },
+        {
+          "meaning_vi": "tác giả",
+          "example_en": "She is a prolific author who writes many novels.",
+          "example_vi": "Cô ấy là một tác giả năng suất, người viết rất nhiều tiểu thuyết."
+        },
+        {
+          "meaning_vi": "tác giả",
+          "example_en": "The author signed copies of his new book at the store.",
+          "example_vi": "Tác giả đã ký tặng các bản sao cuốn sách mới của mình tại cửa hàng."
+        },
+        {
+          "meaning_vi": "người tạo ra",
+          "example_en": "He is the author of the new software program.",
+          "example_vi": "Anh ấy là người tạo ra chương trình phần mềm mới."
+        },
+        {
+          "meaning_vi": "người tạo ra",
+          "example_en": "She was the author of the plan to save the company.",
+          "example_vi": "Cô ấy là người tạo ra kế hoạch cứu công ty."
+        },
+        {
+          "meaning_vi": "người tạo ra",
+          "example_en": "The author of this policy is unknown.",
+          "example_vi": "Người tạo ra chính sách này vẫn chưa được biết đến."
+        },
+        {
+          "meaning_vi": "người tạo ra",
+          "example_en": "He is the author of many successful business strategies.",
+          "example_vi": "Anh ấy là người tạo ra nhiều chiến lược kinh doanh thành công."
+        },
+        {
+          "meaning_vi": "người tạo ra",
+          "example_en": "She is the author of the idea that changed everything.",
+          "example_vi": "Cô ấy là người tạo ra ý tưởng đã thay đổi mọi thứ."
+        },
+        {
+          "meaning_vi": "người tạo ra",
+          "example_en": "The author of the report provided clear evidence.",
+          "example_vi": "Người tạo ra bản báo cáo đã cung cấp bằng chứng rõ ràng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "author",
+      "normalized_word": "author",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Have you read any Corinthian authors?",
+      "example_vi_clean": "Bạn đã đọc tác giả Corinthian nào chưa?"
+    },
+    {
+      "id": 24689,
+      "quiz_meaning_vi": "tự động",
+      "meaning_vi_clean": "tự động; máy tự động",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự động",
+          "example_en": "I never learned to drive a stick. I can only drive an automatic.",
+          "example_vi": "Tôi chưa bao giờ học lái xe số sàn. Tôi chỉ có thể lái xe tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The doors are automatic and open when you approach.",
+          "example_vi": "Những cánh cửa này là tự động và mở ra khi bạn đến gần."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The system performs an automatic backup every night.",
+          "example_vi": "Hệ thống thực hiện một bản sao lưu tự động mỗi đêm."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The lights in the hallway are automatic.",
+          "example_vi": "Đèn ở hành lang là tự động."
+        },
+        {
+          "meaning_vi": "máy tự động",
+          "example_en": "The automatic clothes washer was a great labor-saving device.",
+          "example_vi": "Chiếc máy tự động giặt quần áo là một thiết bị tiết kiệm sức lao động tuyệt vời."
+        },
+        {
+          "meaning_vi": "máy tự động",
+          "example_en": "He bought a new automatic for his workshop.",
+          "example_vi": "Anh ấy đã mua một chiếc máy tự động mới cho xưởng của mình."
+        },
+        {
+          "meaning_vi": "máy tự động",
+          "example_en": "The factory uses an automatic to package the products.",
+          "example_vi": "Nhà máy sử dụng một chiếc máy tự động để đóng gói sản phẩm."
+        },
+        {
+          "meaning_vi": "máy tự động",
+          "example_en": "This automatic makes the process much faster.",
+          "example_vi": "Chiếc máy tự động này làm cho quy trình nhanh hơn nhiều."
+        },
+        {
+          "meaning_vi": "máy tự động",
+          "example_en": "They installed an automatic to handle the heavy lifting.",
+          "example_vi": "Họ đã lắp đặt một chiếc máy tự động để xử lý việc nâng vật nặng."
+        },
+        {
+          "meaning_vi": "máy tự động",
+          "example_en": "The new automatic is very efficient.",
+          "example_vi": "Chiếc máy tự động mới rất hiệu quả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "automatic",
+      "normalized_word": "automatic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I never learned to drive a stick. I can only drive an automatic.",
+      "example_vi_clean": "Tôi chưa bao giờ học lái xe số sàn. Tôi chỉ có thể lái xe tự động."
+    },
+    {
+      "id": 24690,
+      "quiz_meaning_vi": "tự động",
+      "meaning_vi_clean": "tự động",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The system updates automatically every hour.",
+          "example_vi": "Hệ thống cập nhật tự động mỗi giờ."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The lights turn on automatically when it gets dark.",
+          "example_vi": "Đèn bật tự động khi trời tối."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "He automatically reached for his phone when it rang.",
+          "example_vi": "Anh ấy tự động với lấy điện thoại khi nó reo."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The door closes automatically behind you.",
+          "example_vi": "Cánh cửa tự động đóng lại sau lưng bạn."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The machine shuts down automatically if it overheats.",
+          "example_vi": "Máy tự động tắt nếu nó bị quá nhiệt."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "She smiled automatically when she saw the baby.",
+          "example_vi": "Cô ấy tự động mỉm cười khi nhìn thấy đứa bé."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The computer saves your work automatically.",
+          "example_vi": "Máy tính lưu công việc của bạn một cách tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The alarm goes off automatically at 7 AM.",
+          "example_vi": "Chuông báo thức reo tự động vào lúc 7 giờ sáng."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "The settings are applied automatically.",
+          "example_vi": "Các cài đặt được áp dụng một cách tự động."
+        },
+        {
+          "meaning_vi": "tự động",
+          "example_en": "He reacted automatically to the sudden noise.",
+          "example_vi": "Anh ấy phản ứng một cách tự động với tiếng ồn bất ngờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ cho phó từ.",
+      "word": "automatically",
+      "normalized_word": "automatically",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The system updates automatically every hour.",
+      "example_vi_clean": "Hệ thống cập nhật tự động mỗi giờ."
+    }
+  ]
+}

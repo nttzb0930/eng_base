@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25861,
+      "quiz_meaning_vi": "người buôn bán",
+      "meaning_vi_clean": "người buôn bán; người chia bài",
+      "examples_clean": [
+        {
+          "meaning_vi": "người buôn bán",
+          "example_en": "The car dealer offered us a fair price for our old vehicle.",
+          "example_vi": "Người buôn bán xe hơi đã đưa ra cho chúng tôi một mức giá hợp lý cho chiếc xe cũ."
+        },
+        {
+          "meaning_vi": "người buôn bán",
+          "example_en": "She works as a successful art dealer in the city center.",
+          "example_vi": "Cô ấy làm việc như một người buôn bán nghệ thuật thành công ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "người buôn bán",
+          "example_en": "The antique dealer carefully examined the old vase.",
+          "example_vi": "Người buôn bán đồ cổ đã kiểm tra kỹ chiếc bình cũ."
+        },
+        {
+          "meaning_vi": "người buôn bán",
+          "example_en": "He is a well-known dealer in rare books and manuscripts.",
+          "example_vi": "Anh ấy là một người buôn bán sách và bản thảo quý hiếm nổi tiếng."
+        },
+        {
+          "meaning_vi": "người chia bài",
+          "example_en": "The dealer shuffled the cards before starting the game.",
+          "example_vi": "Người chia bài đã xáo trộn các lá bài trước khi bắt đầu trò chơi."
+        },
+        {
+          "meaning_vi": "người chia bài",
+          "example_en": "Wait for the dealer to finish dealing all the cards.",
+          "example_vi": "Hãy đợi người chia bài chia xong tất cả các lá bài."
+        },
+        {
+          "meaning_vi": "người chia bài",
+          "example_en": "The dealer at the casino was very professional and fast.",
+          "example_vi": "Người chia bài tại sòng bạc rất chuyên nghiệp và nhanh nhẹn."
+        },
+        {
+          "meaning_vi": "người chia bài",
+          "example_en": "It is the dealer's responsibility to ensure fair play.",
+          "example_vi": "Trách nhiệm của người chia bài là đảm bảo sự công bằng trong trò chơi."
+        },
+        {
+          "meaning_vi": "người chia bài",
+          "example_en": "The dealer asked if everyone was ready for the next round.",
+          "example_vi": "Người chia bài hỏi xem mọi người đã sẵn sàng cho vòng tiếp theo chưa."
+        },
+        {
+          "meaning_vi": "người chia bài",
+          "example_en": "She learned how to be a dealer at a local gaming school.",
+          "example_vi": "Cô ấy đã học cách trở thành người chia bài tại một trường đào tạo trò chơi địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ nghĩa bóng không phổ biến, bổ sung đủ 10 ví dụ.",
+      "word": "dealer",
+      "normalized_word": "dealer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The car dealer offered us a fair price for our old vehicle.",
+      "example_vi_clean": "Người buôn bán xe hơi đã đưa ra cho chúng tôi một mức giá hợp lý cho chiếc xe cũ."
+    },
+    {
+      "id": 25862,
+      "quiz_meaning_vi": "mảnh vỡ",
+      "meaning_vi_clean": "mảnh vỡ; vôi gạch đổ nát",
+      "examples_clean": [
+        {
+          "meaning_vi": "mảnh vỡ",
+          "example_en": "The explosion left debris scattered across the entire street.",
+          "example_vi": "Vụ nổ để lại những mảnh vỡ nằm rải rác khắp con phố."
+        },
+        {
+          "meaning_vi": "mảnh vỡ",
+          "example_en": "Workers cleared the debris from the construction site.",
+          "example_vi": "Công nhân đã dọn dẹp các mảnh vỡ khỏi công trường xây dựng."
+        },
+        {
+          "meaning_vi": "mảnh vỡ",
+          "example_en": "The spacecraft was destroyed, leaving only small pieces of debris.",
+          "example_vi": "Tàu vũ trụ đã bị phá hủy, chỉ để lại những mảnh vỡ nhỏ."
+        },
+        {
+          "meaning_vi": "mảnh vỡ",
+          "example_en": "Divers found debris from the sunken ship on the ocean floor.",
+          "example_vi": "Thợ lặn tìm thấy những mảnh vỡ từ con tàu đắm dưới đáy đại dương."
+        },
+        {
+          "meaning_vi": "vôi gạch đổ nát",
+          "example_en": "The earthquake left the old building in a pile of debris.",
+          "example_vi": "Trận động đất đã khiến tòa nhà cũ trở thành một đống vôi gạch đổ nát."
+        },
+        {
+          "meaning_vi": "vôi gạch đổ nát",
+          "example_en": "They searched through the debris for any survivors.",
+          "example_vi": "Họ tìm kiếm những người sống sót trong đống vôi gạch đổ nát."
+        },
+        {
+          "meaning_vi": "vôi gạch đổ nát",
+          "example_en": "The city is still removing debris after the storm.",
+          "example_vi": "Thành phố vẫn đang dọn dẹp vôi gạch đổ nát sau cơn bão."
+        },
+        {
+          "meaning_vi": "vôi gạch đổ nát",
+          "example_en": "The area was covered in debris after the fire.",
+          "example_vi": "Khu vực này bị bao phủ bởi vôi gạch đổ nát sau vụ hỏa hoạn."
+        },
+        {
+          "meaning_vi": "vôi gạch đổ nát",
+          "example_en": "Heavy machinery was used to move the heavy debris.",
+          "example_vi": "Máy móc hạng nặng đã được sử dụng để di chuyển đống vôi gạch đổ nát."
+        },
+        {
+          "meaning_vi": "vôi gạch đổ nát",
+          "example_en": "It took weeks to clear all the debris from the site.",
+          "example_vi": "Phải mất nhiều tuần để dọn sạch tất cả vôi gạch đổ nát khỏi địa điểm đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho các nghĩa.",
+      "word": "debris",
+      "normalized_word": "debris",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The explosion left debris scattered across the entire street.",
+      "example_vi_clean": "Vụ nổ để lại những mảnh vỡ nằm rải rác khắp con phố."
+    },
+    {
+      "id": 25863,
+      "quiz_meaning_vi": "nợ",
+      "meaning_vi_clean": "nợ; sự mang ơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "nợ",
+          "example_en": "He is trying to pay off his debt as quickly as possible.",
+          "example_vi": "Anh ấy đang cố gắng trả hết nợ càng sớm càng tốt."
+        },
+        {
+          "meaning_vi": "nợ",
+          "example_en": "The company is struggling with a large amount of debt.",
+          "example_vi": "Công ty đang chật vật với một khoản nợ lớn."
+        },
+        {
+          "meaning_vi": "nợ",
+          "example_en": "They managed to stay out of debt for many years.",
+          "example_vi": "Họ đã xoay xở để không mắc nợ trong nhiều năm."
+        },
+        {
+          "meaning_vi": "nợ",
+          "example_en": "High interest rates make it harder to repay debt.",
+          "example_vi": "Lãi suất cao khiến việc trả nợ trở nên khó khăn hơn."
+        },
+        {
+          "meaning_vi": "nợ",
+          "example_en": "She took out a loan to consolidate her debt.",
+          "example_vi": "Cô ấy đã vay một khoản để gộp các khoản nợ lại."
+        },
+        {
+          "meaning_vi": "sự mang ơn",
+          "example_en": "I am in your debt for all the help you have given me.",
+          "example_vi": "Tôi mang ơn bạn vì tất cả sự giúp đỡ mà bạn đã dành cho tôi."
+        },
+        {
+          "meaning_vi": "sự mang ơn",
+          "example_en": "He felt a deep sense of debt to his mentor.",
+          "example_vi": "Anh ấy cảm thấy một sự mang ơn sâu sắc đối với người thầy của mình."
+        },
+        {
+          "meaning_vi": "sự mang ơn",
+          "example_en": "We owe a debt of gratitude to those who served.",
+          "example_vi": "Chúng ta mang ơn những người đã phục vụ đất nước."
+        },
+        {
+          "meaning_vi": "sự mang ơn",
+          "example_en": "She acknowledged her debt to the community for their support.",
+          "example_vi": "Cô ấy thừa nhận sự mang ơn đối với cộng đồng vì sự ủng hộ của họ."
+        },
+        {
+          "meaning_vi": "sự mang ơn",
+          "example_en": "He never forgot the debt he owed to his parents.",
+          "example_vi": "Anh ấy không bao giờ quên sự mang ơn đối với cha mẹ mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, giữ nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "debt",
+      "normalized_word": "debt",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is trying to pay off his debt as quickly as possible.",
+      "example_vi_clean": "Anh ấy đang cố gắng trả hết nợ càng sớm càng tốt."
+    },
+    {
+      "id": 25864,
+      "quiz_meaning_vi": "sự quyết định",
+      "meaning_vi_clean": "sự quyết định; sự phán quyết",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự quyết định",
+          "example_en": "Making the right decision is important for your future.",
+          "example_vi": "Đưa ra sự quyết định đúng đắn rất quan trọng cho tương lai của bạn."
+        },
+        {
+          "meaning_vi": "sự quyết định",
+          "example_en": "She finally reached a decision after much thought.",
+          "example_vi": "Cuối cùng cô ấy đã đi đến một sự quyết định sau khi suy nghĩ kỹ."
+        },
+        {
+          "meaning_vi": "sự quyết định",
+          "example_en": "It was a difficult decision to leave my hometown.",
+          "example_vi": "Đó là một sự quyết định khó khăn khi rời bỏ quê hương."
+        },
+        {
+          "meaning_vi": "sự quyết định",
+          "example_en": "We need to make a decision by tomorrow morning.",
+          "example_vi": "Chúng ta cần đưa ra sự quyết định trước sáng mai."
+        },
+        {
+          "meaning_vi": "sự quyết định",
+          "example_en": "His decision to quit his job surprised everyone.",
+          "example_vi": "Sự quyết định nghỉ việc của anh ấy đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự phán quyết",
+          "example_en": "The judge announced the final decision of the court.",
+          "example_vi": "Thẩm phán đã công bố sự phán quyết cuối cùng của tòa án."
+        },
+        {
+          "meaning_vi": "sự phán quyết",
+          "example_en": "The committee's decision is final and cannot be changed.",
+          "example_vi": "Sự phán quyết của ủy ban là cuối cùng và không thể thay đổi."
+        },
+        {
+          "meaning_vi": "sự phán quyết",
+          "example_en": "They are waiting for the official decision on the case.",
+          "example_vi": "Họ đang chờ đợi sự phán quyết chính thức về vụ việc."
+        },
+        {
+          "meaning_vi": "sự phán quyết",
+          "example_en": "The referee's decision was questioned by the players.",
+          "example_vi": "Sự phán quyết của trọng tài đã bị các cầu thủ nghi ngờ."
+        },
+        {
+          "meaning_vi": "sự phán quyết",
+          "example_en": "The board reached a decision after reviewing the evidence.",
+          "example_vi": "Hội đồng đã đi đến sự phán quyết sau khi xem xét bằng chứng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính, bổ sung ví dụ.",
+      "word": "decision",
+      "normalized_word": "decision",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Making the right decision is important for your future.",
+      "example_vi_clean": "Đưa ra sự quyết định đúng đắn rất quan trọng cho tương lai của bạn."
+    },
+    {
+      "id": 25865,
+      "quiz_meaning_vi": "sự tuyên bố",
+      "meaning_vi_clean": "sự tuyên bố; bản tuyên ngôn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tuyên bố",
+          "example_en": "The government made a formal declaration of war.",
+          "example_vi": "Chính phủ đã đưa ra một sự tuyên bố chính thức về chiến tranh."
+        },
+        {
+          "meaning_vi": "sự tuyên bố",
+          "example_en": "Her declaration of love caught him by surprise.",
+          "example_vi": "Sự tuyên bố tình yêu của cô ấy khiến anh ấy ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự tuyên bố",
+          "example_en": "The president issued a declaration regarding the new policy.",
+          "example_vi": "Tổng thống đã đưa ra một sự tuyên bố liên quan đến chính sách mới."
+        },
+        {
+          "meaning_vi": "sự tuyên bố",
+          "example_en": "He signed the declaration without reading it carefully.",
+          "example_vi": "Anh ấy đã ký bản tuyên bố mà không đọc kỹ."
+        },
+        {
+          "meaning_vi": "sự tuyên bố",
+          "example_en": "The declaration of independence was read to the public.",
+          "example_vi": "Sự tuyên bố độc lập đã được đọc trước công chúng."
+        },
+        {
+          "meaning_vi": "bản tuyên ngôn",
+          "example_en": "The group published a declaration outlining their goals.",
+          "example_vi": "Nhóm đã xuất bản một bản tuyên ngôn nêu rõ các mục tiêu của họ."
+        },
+        {
+          "meaning_vi": "bản tuyên ngôn",
+          "example_en": "The document serves as a declaration of human rights.",
+          "example_vi": "Tài liệu này đóng vai trò như một bản tuyên ngôn về quyền con người."
+        },
+        {
+          "meaning_vi": "bản tuyên ngôn",
+          "example_en": "They drafted a new declaration for the organization.",
+          "example_vi": "Họ đã soạn thảo một bản tuyên ngôn mới cho tổ chức."
+        },
+        {
+          "meaning_vi": "bản tuyên ngôn",
+          "example_en": "The declaration was signed by all the members.",
+          "example_vi": "Bản tuyên ngôn đã được tất cả các thành viên ký tên."
+        },
+        {
+          "meaning_vi": "bản tuyên ngôn",
+          "example_en": "The manifesto is essentially a declaration of their beliefs.",
+          "example_vi": "Bản tuyên ngôn về cơ bản là một sự tuyên bố về niềm tin của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, bổ sung ví dụ.",
+      "word": "declaration",
+      "normalized_word": "declaration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The government made a formal declaration of war.",
+      "example_vi_clean": "Chính phủ đã đưa ra một sự tuyên bố chính thức về chiến tranh."
+    },
+    {
+      "id": 25866,
+      "quiz_meaning_vi": "tuyên bố",
+      "meaning_vi_clean": "tuyên bố; công bố",
+      "examples_clean": [
+        {
+          "meaning_vi": "tuyên bố",
+          "example_en": "The leader will declare the results tomorrow.",
+          "example_vi": "Người lãnh đạo sẽ tuyên bố kết quả vào ngày mai."
+        },
+        {
+          "meaning_vi": "tuyên bố",
+          "example_en": "She declared that she would never return to that place.",
+          "example_vi": "Cô ấy tuyên bố rằng cô ấy sẽ không bao giờ quay lại nơi đó."
+        },
+        {
+          "meaning_vi": "tuyên bố",
+          "example_en": "They declared their support for the new project.",
+          "example_vi": "Họ tuyên bố sự ủng hộ của họ đối với dự án mới."
+        },
+        {
+          "meaning_vi": "tuyên bố",
+          "example_en": "He declared his innocence in front of the court.",
+          "example_vi": "Anh ấy tuyên bố mình vô tội trước tòa."
+        },
+        {
+          "meaning_vi": "tuyên bố",
+          "example_en": "The winner was declared after the final vote.",
+          "example_vi": "Người chiến thắng đã được tuyên bố sau cuộc bỏ phiếu cuối cùng."
+        },
+        {
+          "meaning_vi": "công bố",
+          "example_en": "The company declared a dividend for its shareholders.",
+          "example_vi": "Công ty đã công bố cổ tức cho các cổ đông."
+        },
+        {
+          "meaning_vi": "công bố",
+          "example_en": "The government declared a state of emergency.",
+          "example_vi": "Chính phủ đã công bố tình trạng khẩn cấp."
+        },
+        {
+          "meaning_vi": "công bố",
+          "example_en": "You must declare any items you are bringing into the country.",
+          "example_vi": "Bạn phải công bố bất kỳ mặt hàng nào bạn mang vào đất nước."
+        },
+        {
+          "meaning_vi": "công bố",
+          "example_en": "The results were declared to the public this morning.",
+          "example_vi": "Kết quả đã được công bố trước công chúng sáng nay."
+        },
+        {
+          "meaning_vi": "công bố",
+          "example_en": "They declared the area a protected nature reserve.",
+          "example_vi": "Họ đã công bố khu vực này là khu bảo tồn thiên nhiên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, bổ sung ví dụ.",
+      "word": "declare",
+      "normalized_word": "declare",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The leader will declare the results tomorrow.",
+      "example_vi_clean": "Người lãnh đạo sẽ tuyên bố kết quả vào ngày mai."
+    },
+    {
+      "id": 25867,
+      "quiz_meaning_vi": "sự sụt",
+      "meaning_vi_clean": "sự sụt; từ chối",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự sụt",
+          "example_en": "There has been a sharp decline in sales this year.",
+          "example_vi": "Đã có một sự sụt giảm mạnh về doanh số trong năm nay."
+        },
+        {
+          "meaning_vi": "sự sụt",
+          "example_en": "The decline in population is a major concern.",
+          "example_vi": "Sự sụt giảm dân số là một mối quan tâm lớn."
+        },
+        {
+          "meaning_vi": "sự sụt",
+          "example_en": "We are witnessing a decline in the quality of service.",
+          "example_vi": "Chúng ta đang chứng kiến sự sụt giảm về chất lượng dịch vụ."
+        },
+        {
+          "meaning_vi": "sự sụt",
+          "example_en": "The economic decline affected many small businesses.",
+          "example_vi": "Sự sụt giảm kinh tế đã ảnh hưởng đến nhiều doanh nghiệp nhỏ."
+        },
+        {
+          "meaning_vi": "sự sụt",
+          "example_en": "The decline in temperature was unexpected.",
+          "example_vi": "Sự sụt giảm nhiệt độ là điều không ngờ tới."
+        },
+        {
+          "meaning_vi": "từ chối",
+          "example_en": "He had to decline the invitation to the party.",
+          "example_vi": "Anh ấy đã phải từ chối lời mời đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "từ chối",
+          "example_en": "She decided to decline the job offer.",
+          "example_vi": "Cô ấy đã quyết định từ chối lời mời làm việc."
+        },
+        {
+          "meaning_vi": "từ chối",
+          "example_en": "They politely declined our request for help.",
+          "example_vi": "Họ đã lịch sự từ chối yêu cầu giúp đỡ của chúng tôi."
+        },
+        {
+          "meaning_vi": "từ chối",
+          "example_en": "He declined to comment on the situation.",
+          "example_vi": "Anh ấy đã từ chối bình luận về tình hình."
+        },
+        {
+          "meaning_vi": "từ chối",
+          "example_en": "I cannot decline such a generous offer.",
+          "example_vi": "Tôi không thể từ chối một lời đề nghị hào phóng như vậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang động từ/danh từ, lọc nghĩa, bổ sung ví dụ.",
+      "word": "decline",
+      "normalized_word": "decline",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There has been a sharp decline in sales this year.",
+      "example_vi_clean": "Đã có một sự sụt giảm mạnh về doanh số trong năm nay."
+    },
+    {
+      "id": 25868,
+      "quiz_meaning_vi": "sự giảm đi",
+      "meaning_vi_clean": "sự giảm đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "There was a significant decrease in the number of visitors.",
+          "example_vi": "Đã có một sự giảm đi đáng kể về số lượng khách tham quan."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "The decrease in costs helped the company save money.",
+          "example_vi": "Sự giảm đi về chi phí đã giúp công ty tiết kiệm tiền."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "We hope to see a decrease in pollution levels.",
+          "example_vi": "Chúng tôi hy vọng sẽ thấy sự giảm đi về mức độ ô nhiễm."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "The decrease in demand led to lower production.",
+          "example_vi": "Sự giảm đi về nhu cầu dẫn đến sản xuất thấp hơn."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "A gradual decrease in weight is healthier.",
+          "example_vi": "Sự giảm đi dần dần về cân nặng thì lành mạnh hơn."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "The decrease in interest rates encouraged borrowing.",
+          "example_vi": "Sự giảm đi về lãi suất đã khuyến khích việc vay mượn."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "We noticed a decrease in his motivation.",
+          "example_vi": "Chúng tôi nhận thấy sự giảm đi về động lực của anh ấy."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "The decrease in rainfall caused a drought.",
+          "example_vi": "Sự giảm đi về lượng mưa đã gây ra hạn hán."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "Any decrease in quality will be unacceptable.",
+          "example_vi": "Bất kỳ sự giảm đi nào về chất lượng đều sẽ không thể chấp nhận được."
+        },
+        {
+          "meaning_vi": "sự giảm đi",
+          "example_en": "The decrease in traffic made the commute easier.",
+          "example_vi": "Sự giảm đi về lưu lượng giao thông đã giúp việc đi lại dễ dàng hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, bổ sung ví dụ.",
+      "word": "decrease",
+      "normalized_word": "decrease",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There was a significant decrease in the number of visitors.",
+      "example_vi_clean": "Đã có một sự giảm đi đáng kể về số lượng khách tham quan."
+    },
+    {
+      "id": 25869,
+      "quiz_meaning_vi": "cống hiến",
+      "meaning_vi_clean": "cống hiến; dành cho",
+      "examples_clean": [
+        {
+          "meaning_vi": "cống hiến",
+          "example_en": "She decided to dedicate her life to helping the poor.",
+          "example_vi": "Cô ấy quyết định cống hiến cuộc đời mình để giúp đỡ người nghèo."
+        },
+        {
+          "meaning_vi": "cống hiến",
+          "example_en": "He dedicated his career to scientific research.",
+          "example_vi": "Anh ấy đã cống hiến sự nghiệp của mình cho nghiên cứu khoa học."
+        },
+        {
+          "meaning_vi": "cống hiến",
+          "example_en": "They dedicated their time to volunteering at the shelter.",
+          "example_vi": "Họ đã cống hiến thời gian của mình để làm tình nguyện tại nơi trú ẩn."
+        },
+        {
+          "meaning_vi": "cống hiến",
+          "example_en": "Many athletes dedicate years to training for the Olympics.",
+          "example_vi": "Nhiều vận động viên cống hiến nhiều năm để tập luyện cho Thế vận hội."
+        },
+        {
+          "meaning_vi": "cống hiến",
+          "example_en": "She dedicated her success to her supportive family.",
+          "example_vi": "Cô ấy cống hiến thành công của mình cho gia đình luôn ủng hộ cô."
+        },
+        {
+          "meaning_vi": "dành cho",
+          "example_en": "The author dedicated the book to his wife.",
+          "example_vi": "Tác giả đã dành cho vợ mình cuốn sách này."
+        },
+        {
+          "meaning_vi": "dành cho",
+          "example_en": "This park was dedicated to the memory of the soldiers.",
+          "example_vi": "Công viên này được dành cho việc tưởng nhớ những người lính."
+        },
+        {
+          "meaning_vi": "dành cho",
+          "example_en": "He dedicated a song to his best friend.",
+          "example_vi": "Anh ấy đã dành cho người bạn thân nhất của mình một bài hát."
+        },
+        {
+          "meaning_vi": "dành cho",
+          "example_en": "The new building was dedicated to public service.",
+          "example_vi": "Tòa nhà mới được dành cho dịch vụ công cộng."
+        },
+        {
+          "meaning_vi": "dành cho",
+          "example_en": "They dedicated a special section of the museum to local history.",
+          "example_vi": "Họ đã dành cho lịch sử địa phương một khu vực đặc biệt trong bảo tàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, bổ sung ví dụ.",
+      "word": "dedicate",
+      "normalized_word": "dedicate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She decided to dedicate her life to helping the poor.",
+      "example_vi_clean": "Cô ấy quyết định cống hiến cuộc đời mình để giúp đỡ người nghèo."
+    },
+    {
+      "id": 25870,
+      "quiz_meaning_vi": "việc làm",
+      "meaning_vi_clean": "việc làm; văn bản",
+      "examples_clean": [
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "He is known for his good deeds in the community.",
+          "example_vi": "Anh ấy được biết đến với những việc làm tốt trong cộng đồng."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "A person is judged by their deeds, not their words.",
+          "example_vi": "Một người được đánh giá qua việc làm của họ, không phải lời nói."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "She performed many heroic deeds during the war.",
+          "example_vi": "Cô ấy đã thực hiện nhiều việc làm anh hùng trong chiến tranh."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "His deeds have inspired many young people.",
+          "example_vi": "Những việc làm của anh ấy đã truyền cảm hứng cho nhiều người trẻ."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "We should be responsible for our own deeds.",
+          "example_vi": "Chúng ta nên chịu trách nhiệm cho những việc làm của chính mình."
+        },
+        {
+          "meaning_vi": "văn bản",
+          "example_en": "She signed the deed to transfer the property.",
+          "example_vi": "Cô ấy đã ký văn bản để chuyển nhượng tài sản."
+        },
+        {
+          "meaning_vi": "văn bản",
+          "example_en": "The deed clearly states the boundaries of the land.",
+          "example_vi": "Văn bản ghi rõ ranh giới của mảnh đất."
+        },
+        {
+          "meaning_vi": "văn bản",
+          "example_en": "Keep the deed in a safe place.",
+          "example_vi": "Hãy giữ văn bản ở một nơi an toàn."
+        },
+        {
+          "meaning_vi": "văn bản",
+          "example_en": "The lawyer reviewed the deed before the sale.",
+          "example_vi": "Luật sư đã xem xét văn bản trước khi bán."
+        },
+        {
+          "meaning_vi": "văn bản",
+          "example_en": "He lost the original deed to the house.",
+          "example_vi": "Anh ấy đã làm mất văn bản gốc của ngôi nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, lọc nghĩa, bổ sung ví dụ.",
+      "word": "deed",
+      "normalized_word": "deed",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is known for his good deeds in the community.",
+      "example_vi_clean": "Anh ấy được biết đến với những việc làm tốt trong cộng đồng."
+    }
+  ]
+}

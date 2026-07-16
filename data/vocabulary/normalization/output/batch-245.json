@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26441,
+      "quiz_meaning_vi": "cho quyền",
+      "meaning_vi_clean": "cho quyền; uỷ quyền; cho phép",
+      "examples_clean": [
+        {
+          "meaning_vi": "cho quyền",
+          "example_en": "The board authorized the manager to sign the contract.",
+          "example_vi": "Hội đồng quản trị đã cho phép người quản lý ký hợp đồng."
+        },
+        {
+          "meaning_vi": "cho quyền",
+          "example_en": "The law authorizes the police to search the premises.",
+          "example_vi": "Luật pháp cho phép cảnh sát khám xét cơ sở này."
+        },
+        {
+          "meaning_vi": "cho quyền",
+          "example_en": "Who authorized you to enter this room?",
+          "example_vi": "Ai đã cho phép bạn vào phòng này?"
+        },
+        {
+          "meaning_vi": "cho quyền",
+          "example_en": "The government authorized the use of emergency funds.",
+          "example_vi": "Chính phủ đã cho phép sử dụng quỹ khẩn cấp."
+        },
+        {
+          "meaning_vi": "uỷ quyền",
+          "example_en": "I have authorized my lawyer to act on my behalf.",
+          "example_vi": "Tôi đã ủy quyền cho luật sư của mình hành động thay mặt tôi."
+        },
+        {
+          "meaning_vi": "uỷ quyền",
+          "example_en": "She authorized her assistant to handle all correspondence.",
+          "example_vi": "Cô ấy đã ủy quyền cho trợ lý xử lý mọi thư từ."
+        },
+        {
+          "meaning_vi": "uỷ quyền",
+          "example_en": "The director authorized the team to make final decisions.",
+          "example_vi": "Giám đốc đã ủy quyền cho nhóm đưa ra các quyết định cuối cùng."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The system does not authorize access to unauthorized users.",
+          "example_vi": "Hệ thống không cho phép người dùng không có thẩm quyền truy cập."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The permit authorizes parking in this area for two hours.",
+          "example_vi": "Giấy phép cho phép đỗ xe trong khu vực này trong hai giờ."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The new policy authorizes employees to work from home.",
+          "example_vi": "Chính sách mới cho phép nhân viên làm việc tại nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ đầy đủ và đảm bảo tính nhất quán.",
+      "word": "authorize",
+      "normalized_word": "authorize",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The board authorized the manager to sign the contract.",
+      "example_vi_clean": "Hội đồng quản trị đã cho phép người quản lý ký hợp đồng."
+    },
+    {
+      "id": 26442,
+      "quiz_meaning_vi": "tính sẵn sàng để dùng",
+      "meaning_vi_clean": "tính sẵn sàng để dùng; sự có thể kiếm được",
+      "examples_clean": [
+        {
+          "meaning_vi": "tính sẵn sàng để dùng",
+          "example_en": "Please check the availability of the meeting room.",
+          "example_vi": "Vui lòng kiểm tra tính sẵn sàng của phòng họp."
+        },
+        {
+          "meaning_vi": "tính sẵn sàng để dùng",
+          "example_en": "The availability of fresh water is a major concern.",
+          "example_vi": "Tính sẵn sàng của nước sạch là một mối quan tâm lớn."
+        },
+        {
+          "meaning_vi": "tính sẵn sàng để dùng",
+          "example_en": "We need to confirm the availability of the staff.",
+          "example_vi": "Chúng ta cần xác nhận tính sẵn sàng của nhân viên."
+        },
+        {
+          "meaning_vi": "tính sẵn sàng để dùng",
+          "example_en": "The availability of high-speed internet has changed how we work.",
+          "example_vi": "Tính sẵn sàng của internet tốc độ cao đã thay đổi cách chúng ta làm việc."
+        },
+        {
+          "meaning_vi": "sự có thể kiếm được",
+          "example_en": "The availability of tickets for the concert is limited.",
+          "example_vi": "Sự có thể kiếm được vé cho buổi hòa nhạc là có hạn."
+        },
+        {
+          "meaning_vi": "sự có thể kiếm được",
+          "example_en": "The availability of affordable housing is decreasing.",
+          "example_vi": "Sự có thể kiếm được nhà ở giá rẻ đang giảm dần."
+        },
+        {
+          "meaning_vi": "sự có thể kiếm được",
+          "example_en": "Check the availability of the product in local stores.",
+          "example_vi": "Kiểm tra sự có thể kiếm được của sản phẩm tại các cửa hàng địa phương."
+        },
+        {
+          "meaning_vi": "sự có thể kiếm được",
+          "example_en": "The availability of organic food has increased significantly.",
+          "example_vi": "Sự có thể kiếm được thực phẩm hữu cơ đã tăng đáng kể."
+        },
+        {
+          "meaning_vi": "sự có thể kiếm được",
+          "example_en": "We are researching the availability of raw materials.",
+          "example_vi": "Chúng tôi đang nghiên cứu sự có thể kiếm được của nguyên liệu thô."
+        },
+        {
+          "meaning_vi": "sự có thể kiếm được",
+          "example_en": "The availability of parking spaces is very low here.",
+          "example_vi": "Sự có thể kiếm được chỗ đỗ xe ở đây rất thấp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ đầy đủ.",
+      "word": "availability",
+      "normalized_word": "availability",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please check the availability of the meeting room.",
+      "example_vi_clean": "Vui lòng kiểm tra tính sẵn sàng của phòng họp."
+    },
+    {
+      "id": 26443,
+      "quiz_meaning_vi": "đợi",
+      "meaning_vi_clean": "đợi; chờ đợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "đợi",
+          "example_en": "I await your response to my email.",
+          "example_vi": "Tôi đợi phản hồi của bạn cho email của tôi."
+        },
+        {
+          "meaning_vi": "đợi",
+          "example_en": "The team awaits the final decision from the director.",
+          "example_vi": "Nhóm đợi quyết định cuối cùng từ giám đốc."
+        },
+        {
+          "meaning_vi": "đợi",
+          "example_en": "We await the arrival of the train at the station.",
+          "example_vi": "Chúng tôi đợi tàu đến tại nhà ga."
+        },
+        {
+          "meaning_vi": "đợi",
+          "example_en": "The students await the results of their exams.",
+          "example_vi": "Các học sinh đợi kết quả thi của mình."
+        },
+        {
+          "meaning_vi": "chờ đợi",
+          "example_en": "Great challenges await those who seek success.",
+          "example_vi": "Những thử thách lớn đang chờ đợi những ai tìm kiếm thành công."
+        },
+        {
+          "meaning_vi": "chờ đợi",
+          "example_en": "A bright future awaits you after graduation.",
+          "example_vi": "Một tương lai tươi sáng đang chờ đợi bạn sau khi tốt nghiệp."
+        },
+        {
+          "meaning_vi": "chờ đợi",
+          "example_en": "Many surprises await us at the party tonight.",
+          "example_vi": "Nhiều bất ngờ đang chờ đợi chúng ta tại bữa tiệc tối nay."
+        },
+        {
+          "meaning_vi": "chờ đợi",
+          "example_en": "Difficult times await the company if they do not change.",
+          "example_vi": "Những thời điểm khó khăn đang chờ đợi công ty nếu họ không thay đổi."
+        },
+        {
+          "meaning_vi": "chờ đợi",
+          "example_en": "Adventure awaits those who are brave enough to explore.",
+          "example_vi": "Cuộc phiêu lưu đang chờ đợi những ai đủ dũng cảm để khám phá."
+        },
+        {
+          "meaning_vi": "chờ đợi",
+          "example_en": "The consequences await anyone who breaks the rules.",
+          "example_vi": "Hậu quả đang chờ đợi bất cứ ai phá vỡ các quy tắc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ đầy đủ.",
+      "word": "await",
+      "normalized_word": "await",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I await your response to my email.",
+      "example_vi_clean": "Tôi đợi phản hồi của bạn cho email của tôi."
+    },
+    {
+      "id": 26444,
+      "quiz_meaning_vi": "sự sợ hãi",
+      "meaning_vi_clean": "sự sợ hãi; nỗi kinh sợ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự sợ hãi",
+          "example_en": "He looked at the mountain with a sense of awe.",
+          "example_vi": "Anh ấy nhìn ngọn núi với một cảm giác sợ hãi."
+        },
+        {
+          "meaning_vi": "sự sợ hãi",
+          "example_en": "The child watched the storm with awe.",
+          "example_vi": "Đứa trẻ nhìn cơn bão với sự sợ hãi."
+        },
+        {
+          "meaning_vi": "sự sợ hãi",
+          "example_en": "She felt a deep sense of awe in the cathedral.",
+          "example_vi": "Cô ấy cảm thấy một sự sợ hãi sâu sắc trong nhà thờ lớn."
+        },
+        {
+          "meaning_vi": "sự sợ hãi",
+          "example_en": "We stood in awe of the vast ocean.",
+          "example_vi": "Chúng tôi đứng trong sự sợ hãi trước đại dương bao la."
+        },
+        {
+          "meaning_vi": "nỗi kinh sợ",
+          "example_en": "The power of the explosion filled everyone with awe.",
+          "example_vi": "Sức mạnh của vụ nổ khiến mọi người tràn ngập nỗi kinh sợ."
+        },
+        {
+          "meaning_vi": "nỗi kinh sợ",
+          "example_en": "He spoke of the ancient ruins with awe.",
+          "example_vi": "Anh ấy nói về những tàn tích cổ xưa với nỗi kinh sợ."
+        },
+        {
+          "meaning_vi": "nỗi kinh sợ",
+          "example_en": "The sheer size of the building inspired awe.",
+          "example_vi": "Kích thước khổng lồ của tòa nhà đã khơi dậy nỗi kinh sợ."
+        },
+        {
+          "meaning_vi": "nỗi kinh sợ",
+          "example_en": "They watched the eclipse with a mix of awe and fear.",
+          "example_vi": "Họ xem nhật thực với sự pha trộn giữa nỗi kinh sợ và nỗi sợ hãi."
+        },
+        {
+          "meaning_vi": "nỗi kinh sợ",
+          "example_en": "The beauty of the sunset filled her with awe.",
+          "example_vi": "Vẻ đẹp của hoàng hôn khiến cô ấy tràn ngập nỗi kinh sợ."
+        },
+        {
+          "meaning_vi": "nỗi kinh sợ",
+          "example_en": "He was struck with awe by the performance.",
+          "example_vi": "Anh ấy bị choáng ngợp bởi nỗi kinh sợ trước màn trình diễn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'ván cánh bánh xe nước' (sai từ loại/nghĩa) thành nghĩa danh từ phổ biến.",
+      "word": "awe",
+      "normalized_word": "awe",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He looked at the mountain with a sense of awe.",
+      "example_vi_clean": "Anh ấy nhìn ngọn núi với một cảm giác sợ hãi."
+    },
+    {
+      "id": 26445,
+      "quiz_meaning_vi": "cái rìu",
+      "meaning_vi_clean": "cái rìu; cắt bớt",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "He used an axe to chop the wood.",
+          "example_vi": "Anh ấy dùng một cái rìu để chặt gỗ."
+        },
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "The firefighter carried an axe for emergencies.",
+          "example_vi": "Người lính cứu hỏa mang theo một cái rìu cho các trường hợp khẩn cấp."
+        },
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "She sharpened her axe before starting work.",
+          "example_vi": "Cô ấy mài cái rìu của mình trước khi bắt đầu công việc."
+        },
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "The old axe was rusted from years of use.",
+          "example_vi": "Cái rìu cũ đã bị gỉ sét sau nhiều năm sử dụng."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The company decided to axe several departments to save money.",
+          "example_vi": "Công ty quyết định cắt bớt một vài bộ phận để tiết kiệm tiền."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "They had to axe the project due to lack of funding.",
+          "example_vi": "Họ phải cắt bớt dự án do thiếu kinh phí."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The government plans to axe subsidies for farmers.",
+          "example_vi": "Chính phủ có kế hoạch cắt bớt trợ cấp cho nông dân."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The manager axed the unnecessary expenses.",
+          "example_vi": "Người quản lý đã cắt bớt các chi phí không cần thiết."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "They axed the show after only two episodes.",
+          "example_vi": "Họ đã cắt bớt chương trình chỉ sau hai tập."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The budget was axed by ten percent.",
+          "example_vi": "Ngân sách đã bị cắt bớt mười phần trăm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa lóng/chuyên ngành không cần thiết.",
+      "word": "ax",
+      "normalized_word": "ax",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He used an axe to chop the wood.",
+      "example_vi_clean": "Anh ấy dùng một cái rìu để chặt gỗ."
+    },
+    {
+      "id": 26446,
+      "quiz_meaning_vi": "cái rìu",
+      "meaning_vi_clean": "cái rìu; cắt bớt",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "He swung the axe at the tree trunk.",
+          "example_vi": "Anh ấy vung cái rìu vào thân cây."
+        },
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "The woodsman kept his axe in the shed.",
+          "example_vi": "Người tiều phu để cái rìu của mình trong nhà kho."
+        },
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "She bought a new axe for her camping trip.",
+          "example_vi": "Cô ấy mua một cái rìu mới cho chuyến cắm trại của mình."
+        },
+        {
+          "meaning_vi": "cái rìu",
+          "example_en": "The axe head was made of high-quality steel.",
+          "example_vi": "Lưỡi rìu được làm bằng thép chất lượng cao."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The council decided to axe the proposed tax increase.",
+          "example_vi": "Hội đồng quyết định cắt bớt đề xuất tăng thuế."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "They axed the plan because it was too expensive.",
+          "example_vi": "Họ cắt bớt kế hoạch vì nó quá đắt đỏ."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The editor axed several paragraphs from the article.",
+          "example_vi": "Biên tập viên đã cắt bớt vài đoạn từ bài báo."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The airline axed several routes to improve efficiency.",
+          "example_vi": "Hãng hàng không đã cắt bớt vài đường bay để cải thiện hiệu quả."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "The school axed the music program due to budget cuts.",
+          "example_vi": "Trường học đã cắt bớt chương trình âm nhạc do cắt giảm ngân sách."
+        },
+        {
+          "meaning_vi": "cắt bớt",
+          "example_en": "They axed the event to avoid large crowds.",
+          "example_vi": "Họ đã cắt bớt sự kiện để tránh đám đông lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ đầy đủ.",
+      "word": "axe",
+      "normalized_word": "axe",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He swung the axe at the tree trunk.",
+      "example_vi_clean": "Anh ấy vung cái rìu vào thân cây."
+    },
+    {
+      "id": 26447,
+      "quiz_meaning_vi": "trục",
+      "meaning_vi_clean": "trục",
+      "examples_clean": [
+        {
+          "meaning_vi": "trục",
+          "example_en": "The earth rotates on its axis.",
+          "example_vi": "Trái đất quay quanh trục của nó."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The graph shows the data on the horizontal axis.",
+          "example_vi": "Biểu đồ hiển thị dữ liệu trên trục ngang."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The wheel turns around a central axis.",
+          "example_vi": "Bánh xe quay quanh một trục trung tâm."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The machine has a rotating axis.",
+          "example_vi": "Cỗ máy có một trục quay."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The vertical axis represents the temperature.",
+          "example_vi": "Trục dọc biểu thị nhiệt độ."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The car's front axis needs repair.",
+          "example_vi": "Trục trước của chiếc xe cần được sửa chữa."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The planet's axis is tilted.",
+          "example_vi": "Trục của hành tinh bị nghiêng."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The symmetry axis divides the shape in half.",
+          "example_vi": "Trục đối xứng chia hình dạng thành hai nửa."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The motor is connected to the main axis.",
+          "example_vi": "Động cơ được kết nối với trục chính."
+        },
+        {
+          "meaning_vi": "trục",
+          "example_en": "The axis of the rotation is clearly marked.",
+          "example_vi": "Trục quay được đánh dấu rõ ràng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa lịch sử/chuyên ngành không cần thiết.",
+      "word": "axis",
+      "normalized_word": "axis",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The earth rotates on its axis.",
+      "example_vi_clean": "Trái đất quay quanh trục của nó."
+    },
+    {
+      "id": 26448,
+      "quiz_meaning_vi": "dự phòng",
+      "meaning_vi_clean": "dự phòng; sao lưu",
+      "examples_clean": [
+        {
+          "meaning_vi": "dự phòng",
+          "example_en": "We need a backup plan in case this fails.",
+          "example_vi": "Chúng ta cần một kế hoạch dự phòng trong trường hợp này thất bại."
+        },
+        {
+          "meaning_vi": "dự phòng",
+          "example_en": "The generator serves as a backup power source.",
+          "example_vi": "Máy phát điện đóng vai trò là nguồn điện dự phòng."
+        },
+        {
+          "meaning_vi": "dự phòng",
+          "example_en": "Keep a backup copy of your important documents.",
+          "example_vi": "Hãy giữ một bản sao dự phòng các tài liệu quan trọng của bạn."
+        },
+        {
+          "meaning_vi": "dự phòng",
+          "example_en": "The police called for backup during the protest.",
+          "example_vi": "Cảnh sát đã gọi lực lượng dự phòng trong cuộc biểu tình."
+        },
+        {
+          "meaning_vi": "sao lưu",
+          "example_en": "Make sure to perform a backup of your data daily.",
+          "example_vi": "Hãy chắc chắn thực hiện sao lưu dữ liệu của bạn hàng ngày."
+        },
+        {
+          "meaning_vi": "sao lưu",
+          "example_en": "The system automatically creates a backup of all files.",
+          "example_vi": "Hệ thống tự động tạo một bản sao lưu của tất cả các tệp."
+        },
+        {
+          "meaning_vi": "sao lưu",
+          "example_en": "I lost my work because I didn't have a backup.",
+          "example_vi": "Tôi đã mất công việc của mình vì tôi không có bản sao lưu."
+        },
+        {
+          "meaning_vi": "sao lưu",
+          "example_en": "The cloud service provides a secure backup.",
+          "example_vi": "Dịch vụ đám mây cung cấp một bản sao lưu an toàn."
+        },
+        {
+          "meaning_vi": "sao lưu",
+          "example_en": "Restoring from a backup is very simple.",
+          "example_vi": "Khôi phục từ bản sao lưu rất đơn giản."
+        },
+        {
+          "meaning_vi": "sao lưu",
+          "example_en": "Check if the backup was successful.",
+          "example_vi": "Kiểm tra xem việc sao lưu có thành công không."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung POS (danh từ), nghĩa và ví dụ.",
+      "word": "backup",
+      "normalized_word": "backup",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We need a backup plan in case this fails.",
+      "example_vi_clean": "Chúng ta cần một kế hoạch dự phòng trong trường hợp này thất bại."
+    },
+    {
+      "id": 26449,
+      "quiz_meaning_vi": "về phía sau",
+      "meaning_vi_clean": "về phía sau; chậm tiến",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "He took a step backward to avoid the puddle.",
+          "example_vi": "Anh ấy lùi về phía sau một bước để tránh vũng nước."
+        },
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "The car moved backward slowly.",
+          "example_vi": "Chiếc xe di chuyển về phía sau một cách chậm rãi."
+        },
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "She looked backward at the path they had taken.",
+          "example_vi": "Cô ấy nhìn về phía sau con đường họ đã đi."
+        },
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "The chair tipped backward.",
+          "example_vi": "Chiếc ghế đổ về phía sau."
+        },
+        {
+          "meaning_vi": "chậm tiến",
+          "example_en": "The country was considered backward in its technology.",
+          "example_vi": "Đất nước này bị coi là chậm tiến về công nghệ."
+        },
+        {
+          "meaning_vi": "chậm tiến",
+          "example_en": "They lived in a backward village with no electricity.",
+          "example_vi": "Họ sống trong một ngôi làng chậm tiến không có điện."
+        },
+        {
+          "meaning_vi": "chậm tiến",
+          "example_en": "Some people have backward views on education.",
+          "example_vi": "Một số người có quan điểm chậm tiến về giáo dục."
+        },
+        {
+          "meaning_vi": "chậm tiến",
+          "example_en": "The region remained backward despite economic growth.",
+          "example_vi": "Khu vực này vẫn chậm tiến bất chấp tăng trưởng kinh tế."
+        },
+        {
+          "meaning_vi": "chậm tiến",
+          "example_en": "It is a backward way of thinking.",
+          "example_vi": "Đó là một cách suy nghĩ chậm tiến."
+        },
+        {
+          "meaning_vi": "chậm tiến",
+          "example_en": "The industry is still backward compared to others.",
+          "example_vi": "Ngành công nghiệp này vẫn còn chậm tiến so với các ngành khác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ đầy đủ.",
+      "word": "backward",
+      "normalized_word": "backward",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He took a step backward to avoid the puddle.",
+      "example_vi_clean": "Anh ấy lùi về phía sau một bước để tránh vũng nước."
+    },
+    {
+      "id": 26450,
+      "quiz_meaning_vi": "về phía sau",
+      "meaning_vi_clean": "về phía sau; xuôi ngược",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "He walked backwards to the door.",
+          "example_vi": "Anh ấy đi giật lùi về phía sau đến cửa."
+        },
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "The clock hands were moving backwards.",
+          "example_vi": "Kim đồng hồ đang di chuyển về phía sau."
+        },
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "She fell backwards onto the grass.",
+          "example_vi": "Cô ấy ngã về phía sau xuống bãi cỏ."
+        },
+        {
+          "meaning_vi": "về phía sau",
+          "example_en": "The boat drifted backwards with the current.",
+          "example_vi": "Chiếc thuyền trôi về phía sau theo dòng nước."
+        },
+        {
+          "meaning_vi": "xuôi ngược",
+          "example_en": "He counted backwards from ten to one.",
+          "example_vi": "Anh ấy đếm xuôi ngược từ mười về một."
+        },
+        {
+          "meaning_vi": "xuôi ngược",
+          "example_en": "Can you say the alphabet backwards?",
+          "example_vi": "Bạn có thể đọc bảng chữ cái xuôi ngược không?"
+        },
+        {
+          "meaning_vi": "xuôi ngược",
+          "example_en": "The film shows the events backwards.",
+          "example_vi": "Bộ phim chiếu các sự kiện theo trình tự xuôi ngược."
+        },
+        {
+          "meaning_vi": "xuôi ngược",
+          "example_en": "He knows the book backwards.",
+          "example_vi": "Anh ấy thuộc lòng cuốn sách xuôi ngược."
+        },
+        {
+          "meaning_vi": "xuôi ngược",
+          "example_en": "The process works backwards from the end result.",
+          "example_vi": "Quy trình hoạt động xuôi ngược từ kết quả cuối cùng."
+        },
+        {
+          "meaning_vi": "xuôi ngược",
+          "example_en": "They played the song backwards.",
+          "example_vi": "Họ phát bài hát theo chiều xuôi ngược."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ đầy đủ.",
+      "word": "backwards",
+      "normalized_word": "backwards",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He walked backwards to the door.",
+      "example_vi_clean": "Anh ấy đi giật lùi về phía sau đến cửa."
+    }
+  ]
+}

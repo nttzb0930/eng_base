@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-198",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25971,
+      "word": "documentary",
+      "normalized_word": "documentary",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dɔkju'mentəri/",
+      "primary_meaning_vi": "tài liệu",
+      "meaning_vi": "tài liệu, (thuộc) tư liệu; phim tài liệu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25972,
+      "word": "dolphin",
+      "normalized_word": "dolphin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dɔlfin/",
+      "primary_meaning_vi": "cá heo mỏ",
+      "meaning_vi": "cá heo mỏ; hình cá uốn cong mình (ở huy hiệu); ở bản khắc...); cọc buộc thuyền; cọc (để) cuốn dây buộc thuyền; phao",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25973,
+      "word": "dot",
+      "normalized_word": "dot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dɔt/",
+      "primary_meaning_vi": "của hồi môn",
+      "meaning_vi": "của hồi môn; chấm nhỏ, điểm; dấu chấm (trên chữ i,  j...); dấu chấm câu; chấm; đứa bé tí hon; vật nhỏ xíu; ngu; tàng tàng, điên điên; đúng giờ; chấm, đánh dấu chấm (trên chữ i,  j...); rải rác, lấm chấm; đánh, nện; đánh dấu chấm những chữ i và đánh dấu ngang những chữ t; bổ sung đầy đủ chi tiết làm cho nghĩa rõ ràng minh bạch; viết... và nhớ một (hai...) (câu nói của các em nhỏ khi làm tính cộng)",
+      "example_en": "a dot of colour",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a dot of a child",
+          "example_vi": null
+        },
+        {
+          "example_en": "His jacket was dotted with splashes of paint.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Dot your is and cross your ts.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25974,
+      "word": "downstairs",
+      "normalized_word": "downstairs",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ số nhiều",
+      "phonetic": "/'daun'steəz/",
+      "primary_meaning_vi": "ở dưới nhàn",
+      "meaning_vi": "ở dưới nhàn, ở tầng dưới; xuống cầu thang, xuống gác; ở dưới nhà, ở tầng dưới; tầng dưới (của một toà nhà)",
+      "example_en": "The wind lifted up her skirt and I caught a glimpse of her downstairs.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The kids sleep in the downstairs bedroom, we sleep in the upstairs one.",
+          "example_vi": null
+        },
+        {
+          "example_en": "walk downstairs",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25975,
+      "word": "downward",
+      "normalized_word": "downward",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'daunwəd/",
+      "primary_meaning_vi": "xuống",
+      "meaning_vi": "xuống, đi xuống, trở xuống; xuôi (dòng); xuôi dòng thời gian, trở về sau",
+      "example_en": "He spoke with a downward glance.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His position in society moved ever downward.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25976,
+      "word": "doze",
+      "normalized_word": "doze",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/douz/",
+      "primary_meaning_vi": "giấc ngủ ngắn lơ mơ",
+      "meaning_vi": "giấc ngủ ngắn lơ mơ; ngủ gà ngủ gật, ngủ lơ mơ",
+      "example_en": "I felt much better after a short doze.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I didn’t sleep very well, but I think I may have dozed a bit.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25977,
+      "word": "dozen",
+      "normalized_word": "dozen",
+      "cefr_level": "B1",
+      "pos": "determiner",
+      "pos_vi": "danh từ số nhiều,  không đổi",
+      "phonetic": "/'dʌzn/",
+      "primary_meaning_vi": "tá (mười hai)",
+      "meaning_vi": "tá (mười hai); nhiều; bộ 12 cái; tá 13 cái (một cái làm hoa hồng); nói liến láu liên miên",
+      "example_en": "Can I have a dozen eggs, please?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There must have been dozens of examples just on the first page.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25978,
+      "word": "drag",
+      "normalized_word": "drag",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/dræg/",
+      "primary_meaning_vi": "cái bừa lớn",
+      "meaning_vi": "cái bừa lớn, cái bừa nặng; xe trượt (san đất, chở đồ nặng...); xe bốn ngựa; lưỡi kéo, lưỡi vét (bắt cá, bẫy chim) ((cũng) drag net); máy nạo vét; dụng cụ câu móc (người chết đuối...); cái cào phân; cái cân (để giảm tốc độ xe xuống dốc); cái ngáng trở, điều ngáng trở, điều trở ngại (cho sự tiến bộ); sự kéo lê, sự đi kéo lê, sự chậm chạp lề mề; sự rít một hơi (tẩu, thuốc lá...); ảnh hưởng, sự lôi kéo; ,  (từ lóng) đường phố; ,  (từ lóng) cô gái mình đi kèm; ,  (từ lóng) cuộc đua (ô tô du lịch); lôi kéo; kéo lê; kéo (neo) trôi đi; mò đáy, vét đáy (sông... bằng móc lưới... để làm vật gì); lắp cái cản (vào bánh xe để giảm tốc độ khi xuống dốc); bừa (ruộng...); kéo, kéo lê, đi kéo lê; kéo dài, chơi quá chậm, thiếu sinh động; kề mề, kéo dài (câu chuyện, công việc...); trôi, không cầm chặt (neo); mò đáy, vét đáy (để tìm cái gì); lôi vào, kéo vào; đưa vào (một vấn đề) một cách vụng về, đưa vào không cần thiết; lôi theo, kéo theo; lề mề, kéo dài nặng nề chán ngắt (câu chuyện...); lôi ra, kéo ra; kéo dài; lôi lên, kéo lên; nuôi dạy ẩu, nuôi dạy thô bạo (con cái)",
+      "example_en": "When designing cars, manufacturers have to take drag into consideration.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Travelling to work in the rush hour is a real drag.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to run a drag",
+          "example_vi": null
+        },
+        {
+          "example_en": "a stone drag",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25979,
+      "word": "dramatic",
+      "normalized_word": "dramatic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/drə'mætik/",
+      "primary_meaning_vi": "kịch",
+      "meaning_vi": "kịch, như kịch, như đóng kịch, thích hợp với sân khấu; đột ngột gây cảm xúc mạnh mẽ, gây ấn tượng sâu sắc, gây xúc động; bi thảm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25980,
+      "word": "drown",
+      "normalized_word": "drown",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/draun/",
+      "primary_meaning_vi": "chết đuối",
+      "meaning_vi": "chết đuối; dìm chết, làm chết đuối; pha loãng quá, pha nhiều nước quá (vào rượu...); làm ngập lụt, làm ngập nước, làm ướt đầm đìa, làm giàn giụa; làm chìn đắm, làm lấp, làm át (tiếng nói...), làm tiêu (nỗi sầu...); bị lụt lội phải lánh khỏi nhà; catch",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

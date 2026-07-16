@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-192",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25911,
+      "word": "destructive",
+      "normalized_word": "destructive",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/dis'trʌktiv/",
+      "primary_meaning_vi": "phá hoại",
+      "meaning_vi": "phá hoại, phá huỷ, tàn phá, huỷ diệt; tiêu cực, không xây dựng (chính sách, lời bình...)",
+      "example_en": "Catabolism is a destructive metabolism that involves the breakdown of molecules and release of energy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Blurring an image is a destructive operation, but rotating an image is not.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25912,
+      "word": "detective",
+      "normalized_word": "detective",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'tektiv/",
+      "primary_meaning_vi": "để dò ra",
+      "meaning_vi": "để dò ra, để tìm ra, để khám phá ra, để phát hiện ra; trinh thám; thám tử trinh thám",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25913,
+      "word": "determination",
+      "normalized_word": "determination",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di,tə:mi'neiʃn/",
+      "primary_meaning_vi": "sự xác định",
+      "meaning_vi": "sự xác định, sự định rõ; sự quyết định; tính quả quyết; quyết tâm; quyết nghị (của một cuộc thảo luận); sự phán quyết (của quan toà); sự cương máu, sự xung huyết; sự hết hạn, sự mãn hạn (giao kèo, khế ước...)",
+      "example_en": "Through sheer determination, we managed to escape from the tornado.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a determination of blood to the head",
+          "example_vi": null
+        },
+        {
+          "example_en": "the determination of the level of salt in sea water",
+          "example_vi": null
+        },
+        {
+          "example_en": "I am indebted to a friend for the determination of most of these shells.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25914,
+      "word": "determine",
+      "normalized_word": "determine",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/di'tə:min/",
+      "primary_meaning_vi": "định",
+      "meaning_vi": "định, xác định, định rõ; quyết định, định đoạt; làm cho quyết định, làm cho có quyết tâm thôi thúc; làm mãn hạn, kết thúc; quyết định, quyết tâm, kiên quyết; mãn hạn, hết hạn (giao kèo, khế ước...)",
+      "example_en": "The news of his father's illness determined him to depart immediately.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The court has determined the cause.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I determined to go home at once.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25915,
+      "word": "devastate",
+      "normalized_word": "devastate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di:'væljueit/",
+      "primary_meaning_vi": "tàn phá",
+      "meaning_vi": "tàn phá, phá huỷ, phá phách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25916,
+      "word": "devastating",
+      "normalized_word": "devastating",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'devəsteitiɳ/",
+      "primary_meaning_vi": "tàn phá",
+      "meaning_vi": "tàn phá, phá huỷ, phá phách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25917,
+      "word": "development",
+      "normalized_word": "development",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'veləpmənt/",
+      "primary_meaning_vi": "sự trình bày",
+      "meaning_vi": "sự trình bày, sự bày tỏ, sự thuyết minh (vấn đề, luận điểm, ý kiến...); sự phát triển, sự mở mang, sự mở rộng, sự khuếch trương, sự phát đạt; sự phát triển; sự tiến triển; việc rửa ảnh; sự hiện (ảnh); sự triển khai, sự mở (một cuộc tấn công); sự khai triển; sự việc diễn biến; vùng bị nạn thất nghiệp nghiêm trọng; vùng có thể bị nạn thất nghiệp nghiêm trọng",
+      "example_en": "The development of this story has been slow.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The organism has reached a crucial stage in its development.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Our news team brings you the latest developments.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Our development department has produced three new adhesives this year.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25918,
+      "word": "device",
+      "normalized_word": "device",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'vais/",
+      "primary_meaning_vi": "phương sách",
+      "meaning_vi": "phương sách, phương kế; chước mưu; vật sáng chế ra (để dùng vào mục đích gì); thiết bị, dụng cụ, máy móc; hình vẽ; hình trang trí; hình tương trưng; châm ngôn; đề từ; để mặc cho ai tự xoay sở lo liệu lấy",
+      "example_en": "There are a number of household devices in a kitchen such as a dishwasher, a garbage disposal, or an electric can opener.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25919,
+      "word": "devotion",
+      "normalized_word": "devotion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'vouʃn/",
+      "primary_meaning_vi": "sự hết lòng",
+      "meaning_vi": "sự hết lòng, sự tận tâm, sự tận tình, sự tận tuỵ, sự thành tâm; sự hiến dâng, sự hiến thân; lòng mộ đạo, lòng sùng đạo; sự sùng bái; lời cầu nguyện; kinh cầu nguyện",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25920,
+      "word": "diagram",
+      "normalized_word": "diagram",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'daiəgræm/",
+      "primary_meaning_vi": "biểu đồ",
+      "meaning_vi": "biểu đồ",
+      "example_en": "Electrical diagrams show device interconnections.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

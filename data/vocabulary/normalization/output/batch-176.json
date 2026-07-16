@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25751,
+      "quiz_meaning_vi": "bạn",
+      "meaning_vi_clean": "bạn; bầu bạn; vật cùng đôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "bạn",
+          "example_en": "He has been a loyal companion for many years.",
+          "example_vi": "Anh ấy đã là một người bạn trung thành trong nhiều năm."
+        },
+        {
+          "meaning_vi": "bạn",
+          "example_en": "She is my favorite travel companion.",
+          "example_vi": "Cô ấy là người bạn đồng hành du lịch yêu thích của tôi."
+        },
+        {
+          "meaning_vi": "bạn",
+          "example_en": "Dogs are often called man's best companion.",
+          "example_vi": "Chó thường được gọi là người bạn tốt nhất của con người."
+        },
+        {
+          "meaning_vi": "bạn",
+          "example_en": "I need a companion to go to the cinema with.",
+          "example_vi": "Tôi cần một người bạn để đi xem phim cùng."
+        },
+        {
+          "meaning_vi": "bầu bạn",
+          "example_en": "They spent the evening just sitting and enjoying each other's company.",
+          "example_vi": "Họ dành cả buổi tối chỉ để ngồi và tận hưởng việc bầu bạn với nhau."
+        },
+        {
+          "meaning_vi": "bầu bạn",
+          "example_en": "He keeps himself busy to avoid feeling lonely.",
+          "example_vi": "Anh ấy giữ cho mình bận rộn để tránh cảm giác cô đơn."
+        },
+        {
+          "meaning_vi": "bầu bạn",
+          "example_en": "She found comfort in the companionship of her cat.",
+          "example_vi": "Cô ấy tìm thấy sự an ủi trong việc bầu bạn với con mèo của mình."
+        },
+        {
+          "meaning_vi": "vật cùng đôi",
+          "example_en": "This lamp is a companion piece to the one on the desk.",
+          "example_vi": "Chiếc đèn này là vật cùng đôi với chiếc đèn trên bàn làm việc."
+        },
+        {
+          "meaning_vi": "vật cùng đôi",
+          "example_en": "The two vases are companion items in the collection.",
+          "example_vi": "Hai chiếc bình này là những vật cùng đôi trong bộ sưu tập."
+        },
+        {
+          "meaning_vi": "vật cùng đôi",
+          "example_en": "These chairs are companion pieces designed to match.",
+          "example_vi": "Những chiếc ghế này là vật cùng đôi được thiết kế để phù hợp với nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ. Bổ sung nghĩa và 10 ví dụ phù hợp.",
+      "word": "companion",
+      "normalized_word": "companion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has been a loyal companion for many years.",
+      "example_vi_clean": "Anh ấy đã là một người bạn trung thành trong nhiều năm."
+    },
+    {
+      "id": 25752,
+      "quiz_meaning_vi": "sự so sánh",
+      "meaning_vi_clean": "sự so sánh; khi so sánh; so với",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự so sánh",
+          "example_en": "The comparison between the two products shows a clear difference.",
+          "example_vi": "Sự so sánh giữa hai sản phẩm cho thấy một sự khác biệt rõ ràng."
+        },
+        {
+          "meaning_vi": "sự so sánh",
+          "example_en": "Make a comparison of the prices before you buy.",
+          "example_vi": "Hãy thực hiện một sự so sánh giá cả trước khi bạn mua."
+        },
+        {
+          "meaning_vi": "sự so sánh",
+          "example_en": "There is no comparison between his work and hers.",
+          "example_vi": "Không có sự so sánh nào giữa công việc của anh ấy và cô ấy."
+        },
+        {
+          "meaning_vi": "sự so sánh",
+          "example_en": "The report provides a detailed comparison of the data.",
+          "example_vi": "Bản báo cáo cung cấp một sự so sánh chi tiết về dữ liệu."
+        },
+        {
+          "meaning_vi": "khi so sánh",
+          "example_en": "When in comparison with last year, sales have increased.",
+          "example_vi": "Khi so sánh với năm ngoái, doanh số đã tăng lên."
+        },
+        {
+          "meaning_vi": "khi so sánh",
+          "example_en": "In comparison with other cities, this one is quite cheap.",
+          "example_vi": "Khi so sánh với các thành phố khác, thành phố này khá rẻ."
+        },
+        {
+          "meaning_vi": "khi so sánh",
+          "example_en": "Everything is relative in comparison to the universe.",
+          "example_vi": "Mọi thứ đều tương đối khi so sánh với vũ trụ."
+        },
+        {
+          "meaning_vi": "so với",
+          "example_en": "My house is small in comparison to yours.",
+          "example_vi": "Nhà tôi nhỏ so với nhà của bạn."
+        },
+        {
+          "meaning_vi": "so với",
+          "example_en": "The results were poor in comparison to our expectations.",
+          "example_vi": "Kết quả rất kém so với kỳ vọng của chúng tôi."
+        },
+        {
+          "meaning_vi": "so với",
+          "example_en": "This car is fast in comparison to the older model.",
+          "example_vi": "Chiếc xe này nhanh so với mẫu xe cũ hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "comparison",
+      "normalized_word": "comparison",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The comparison between the two products shows a clear difference.",
+      "example_vi_clean": "Sự so sánh giữa hai sản phẩm cho thấy một sự khác biệt rõ ràng."
+    },
+    {
+      "id": 25753,
+      "quiz_meaning_vi": "đua tranh",
+      "meaning_vi_clean": "đua tranh; ganh đua; cạnh tranh",
+      "examples_clean": [
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "Many athletes compete for the gold medal.",
+          "example_vi": "Nhiều vận động viên đua tranh để giành huy chương vàng."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "Students often compete for the top grades.",
+          "example_vi": "Học sinh thường đua tranh để đạt điểm cao nhất."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "The two teams will compete in the final match.",
+          "example_vi": "Hai đội sẽ đua tranh trong trận chung kết."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "They compete to see who can finish first.",
+          "example_vi": "Họ đua tranh để xem ai có thể hoàn thành trước."
+        },
+        {
+          "meaning_vi": "ganh đua",
+          "example_en": "Siblings often ganh đua for their parents' attention.",
+          "example_vi": "Anh chị em thường ganh đua để giành sự chú ý của cha mẹ."
+        },
+        {
+          "meaning_vi": "ganh đua",
+          "example_en": "It is not healthy to ganh đua with your friends.",
+          "example_vi": "Việc ganh đua với bạn bè không phải là điều lành mạnh."
+        },
+        {
+          "meaning_vi": "ganh đua",
+          "example_en": "They have been ganh đua for the same promotion.",
+          "example_vi": "Họ đã ganh đua cho cùng một vị trí thăng tiến."
+        },
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "Small businesses must compete with large corporations.",
+          "example_vi": "Các doanh nghiệp nhỏ phải cạnh tranh với các tập đoàn lớn."
+        },
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "We compete in a global market.",
+          "example_vi": "Chúng tôi cạnh tranh trong một thị trường toàn cầu."
+        },
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "The store tries to compete on price.",
+          "example_vi": "Cửa hàng cố gắng cạnh tranh về giá cả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "compete",
+      "normalized_word": "compete",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Many athletes compete for the gold medal.",
+      "example_vi_clean": "Nhiều vận động viên đua tranh để giành huy chương vàng."
+    },
+    {
+      "id": 25754,
+      "quiz_meaning_vi": "cạnh tranh",
+      "meaning_vi_clean": "cạnh tranh; đua tranh",
+      "examples_clean": [
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "We need to offer competitive prices to attract customers.",
+          "example_vi": "Chúng ta cần đưa ra mức giá cạnh tranh để thu hút khách hàng."
+        },
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "The company is in a very competitive industry.",
+          "example_vi": "Công ty đang ở trong một ngành công nghiệp rất cạnh tranh."
+        },
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "She has a competitive spirit in everything she does.",
+          "example_vi": "Cô ấy có tinh thần cạnh tranh trong mọi việc cô ấy làm."
+        },
+        {
+          "meaning_vi": "cạnh tranh",
+          "example_en": "It is a highly competitive job market.",
+          "example_vi": "Đó là một thị trường việc làm có tính cạnh tranh cao."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "He is a very competitive player on the field.",
+          "example_vi": "Anh ấy là một cầu thủ rất đua tranh trên sân cỏ."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "They are involved in a competitive sport.",
+          "example_vi": "Họ tham gia vào một môn thể thao đua tranh."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "The team is very competitive this season.",
+          "example_vi": "Đội bóng rất đua tranh trong mùa giải này."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "She enjoys competitive games with her friends.",
+          "example_vi": "Cô ấy thích các trò chơi đua tranh với bạn bè."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "The school has a competitive environment for students.",
+          "example_vi": "Trường học có một môi trường đua tranh cho học sinh."
+        },
+        {
+          "meaning_vi": "đua tranh",
+          "example_en": "He is always looking for a competitive challenge.",
+          "example_vi": "Anh ấy luôn tìm kiếm một thử thách đua tranh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "competitive",
+      "normalized_word": "competitive",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We need to offer competitive prices to attract customers.",
+      "example_vi_clean": "Chúng ta cần đưa ra mức giá cạnh tranh để thu hút khách hàng."
+    },
+    {
+      "id": 25755,
+      "quiz_meaning_vi": "người cạnh tranh",
+      "meaning_vi_clean": "người cạnh tranh; đối thủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "người cạnh tranh",
+          "example_en": "Our main competitor is based in the city center.",
+          "example_vi": "Người cạnh tranh chính của chúng tôi có trụ sở ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "người cạnh tranh",
+          "example_en": "We must keep an eye on our competitors.",
+          "example_vi": "Chúng ta phải để mắt đến những người cạnh tranh của mình."
+        },
+        {
+          "meaning_vi": "người cạnh tranh",
+          "example_en": "The new company is a strong competitor in the market.",
+          "example_vi": "Công ty mới là một người cạnh tranh mạnh mẽ trên thị trường."
+        },
+        {
+          "meaning_vi": "người cạnh tranh",
+          "example_en": "He is a tough competitor in business.",
+          "example_vi": "Anh ấy là một người cạnh tranh khó nhằn trong kinh doanh."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "She defeated her competitor in the final round.",
+          "example_vi": "Cô ấy đã đánh bại đối thủ của mình trong vòng chung kết."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "The athlete shook hands with his competitor.",
+          "example_vi": "Vận động viên đã bắt tay với đối thủ của mình."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "They are fierce competitors on the tennis court.",
+          "example_vi": "Họ là những đối thủ quyết liệt trên sân quần vợt."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "He respects his competitor's skills.",
+          "example_vi": "Anh ấy tôn trọng kỹ năng của đối thủ mình."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "The team studied their competitor's strategy.",
+          "example_vi": "Đội bóng đã nghiên cứu chiến thuật của đối thủ."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "She is a worthy competitor for the title.",
+          "example_vi": "Cô ấy là một đối thủ xứng tầm cho danh hiệu này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "competitor",
+      "normalized_word": "competitor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Our main competitor is based in the city center.",
+      "example_vi_clean": "Người cạnh tranh chính của chúng tôi có trụ sở ở trung tâm thành phố."
+    },
+    {
+      "id": 25756,
+      "quiz_meaning_vi": "phần bù",
+      "meaning_vi_clean": "phần bù; bổ ngữ; làm đầy",
+      "examples_clean": [
+        {
+          "meaning_vi": "phần bù",
+          "example_en": "The complement of blue is orange in color theory.",
+          "example_vi": "Phần bù của màu xanh dương là màu cam trong lý thuyết màu sắc."
+        },
+        {
+          "meaning_vi": "phần bù",
+          "example_en": "Find the complement of the set in the diagram.",
+          "example_vi": "Hãy tìm phần bù của tập hợp trong biểu đồ."
+        },
+        {
+          "meaning_vi": "phần bù",
+          "example_en": "The complement of an angle is 90 degrees minus the angle.",
+          "example_vi": "Phần bù của một góc là 90 độ trừ đi góc đó."
+        },
+        {
+          "meaning_vi": "phần bù",
+          "example_en": "Each color has its own complement.",
+          "example_vi": "Mỗi màu sắc đều có phần bù của riêng nó."
+        },
+        {
+          "meaning_vi": "bổ ngữ",
+          "example_en": "In this sentence, the adjective acts as a complement.",
+          "example_vi": "Trong câu này, tính từ đóng vai trò là bổ ngữ."
+        },
+        {
+          "meaning_vi": "bổ ngữ",
+          "example_en": "The verb requires a complement to be complete.",
+          "example_vi": "Động từ cần một bổ ngữ để trở nên hoàn chỉnh."
+        },
+        {
+          "meaning_vi": "bổ ngữ",
+          "example_en": "Identify the subject complement in the sentence.",
+          "example_vi": "Hãy xác định bổ ngữ chủ ngữ trong câu."
+        },
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "The new furniture serves to complement the room's design.",
+          "example_vi": "Đồ nội thất mới giúp làm đầy thiết kế của căn phòng."
+        },
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "Good wine will complement the meal perfectly.",
+          "example_vi": "Rượu vang ngon sẽ làm đầy bữa ăn một cách hoàn hảo."
+        },
+        {
+          "meaning_vi": "làm đầy",
+          "example_en": "Her skills complement his perfectly in the project.",
+          "example_vi": "Kỹ năng của cô ấy làm đầy kỹ năng của anh ấy một cách hoàn hảo trong dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ (nghĩa chính). Bổ sung nghĩa và 10 ví dụ.",
+      "word": "complement",
+      "normalized_word": "complement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The complement of blue is orange in color theory.",
+      "example_vi_clean": "Phần bù của màu xanh dương là màu cam trong lý thuyết màu sắc."
+    },
+    {
+      "id": 25757,
+      "quiz_meaning_vi": "hoàn toàn",
+      "meaning_vi_clean": "hoàn toàn; đầy đủ; trọn vẹn",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "I completely forgot about our meeting.",
+          "example_vi": "Tôi đã hoàn toàn quên mất cuộc họp của chúng ta."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "The house was completely destroyed by the fire.",
+          "example_vi": "Ngôi nhà đã bị phá hủy hoàn toàn bởi đám cháy."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "He is completely satisfied with the results.",
+          "example_vi": "Anh ấy hoàn toàn hài lòng với kết quả."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "It is completely normal to feel nervous.",
+          "example_vi": "Việc cảm thấy lo lắng là hoàn toàn bình thường."
+        },
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "Please fill in the form completely.",
+          "example_vi": "Vui lòng điền vào mẫu đơn một cách đầy đủ."
+        },
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "The report covers the topic completely.",
+          "example_vi": "Bản báo cáo bao quát chủ đề một cách đầy đủ."
+        },
+        {
+          "meaning_vi": "đầy đủ",
+          "example_en": "The instructions were provided completely.",
+          "example_vi": "Các hướng dẫn đã được cung cấp một cách đầy đủ."
+        },
+        {
+          "meaning_vi": "trọn vẹn",
+          "example_en": "She enjoyed the vacation completely.",
+          "example_vi": "Cô ấy đã tận hưởng kỳ nghỉ một cách trọn vẹn."
+        },
+        {
+          "meaning_vi": "trọn vẹn",
+          "example_en": "The story was told completely from start to finish.",
+          "example_vi": "Câu chuyện đã được kể một cách trọn vẹn từ đầu đến cuối."
+        },
+        {
+          "meaning_vi": "trọn vẹn",
+          "example_en": "He lived his life completely.",
+          "example_vi": "Anh ấy đã sống cuộc đời mình một cách trọn vẹn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "completely",
+      "normalized_word": "completely",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I completely forgot about our meeting.",
+      "example_vi_clean": "Tôi đã hoàn toàn quên mất cuộc họp của chúng ta."
+    },
+    {
+      "id": 25758,
+      "quiz_meaning_vi": "phức tạp",
+      "meaning_vi_clean": "phức tạp; rắc rối; nhà máy liên hợp",
+      "examples_clean": [
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "The instructions for the machine are very complex.",
+          "example_vi": "Hướng dẫn sử dụng cho chiếc máy này rất phức tạp."
+        },
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "It is a complex issue that requires careful thought.",
+          "example_vi": "Đó là một vấn đề phức tạp đòi hỏi sự suy nghĩ cẩn thận."
+        },
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "The human brain is a complex organ.",
+          "example_vi": "Bộ não con người là một cơ quan phức tạp."
+        },
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "They have a complex relationship.",
+          "example_vi": "Họ có một mối quan hệ phức tạp."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "The situation became more complex as time went on.",
+          "example_vi": "Tình hình trở nên rắc rối hơn khi thời gian trôi qua."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "Don't make the process more complex than it needs to be.",
+          "example_vi": "Đừng làm cho quy trình trở nên rắc rối hơn mức cần thiết."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "He found the rules to be quite complex.",
+          "example_vi": "Anh ấy thấy các quy tắc khá rắc rối."
+        },
+        {
+          "meaning_vi": "nhà máy liên hợp",
+          "example_en": "The industrial complex is located outside the city.",
+          "example_vi": "Nhà máy liên hợp nằm ở bên ngoài thành phố."
+        },
+        {
+          "meaning_vi": "nhà máy liên hợp",
+          "example_en": "They work at a large chemical complex.",
+          "example_vi": "Họ làm việc tại một nhà máy liên hợp hóa chất lớn."
+        },
+        {
+          "meaning_vi": "nhà máy liên hợp",
+          "example_en": "The new sports complex has many facilities.",
+          "example_vi": "Nhà máy liên hợp thể thao mới có nhiều cơ sở vật chất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ (nghĩa chính). Bổ sung nghĩa và 10 ví dụ.",
+      "word": "complex",
+      "normalized_word": "complex",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The instructions for the machine are very complex.",
+      "example_vi_clean": "Hướng dẫn sử dụng cho chiếc máy này rất phức tạp."
+    },
+    {
+      "id": 25759,
+      "quiz_meaning_vi": "làm phức tạp",
+      "meaning_vi_clean": "làm phức tạp; làm rắc rối",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm phức tạp",
+          "example_en": "Don't complicate the situation with unnecessary details.",
+          "example_vi": "Đừng làm phức tạp tình hình với những chi tiết không cần thiết."
+        },
+        {
+          "meaning_vi": "làm phức tạp",
+          "example_en": "Adding more rules will only complicate the process.",
+          "example_vi": "Việc thêm nhiều quy tắc sẽ chỉ làm phức tạp quy trình."
+        },
+        {
+          "meaning_vi": "làm phức tạp",
+          "example_en": "His illness served to complicate our travel plans.",
+          "example_vi": "Căn bệnh của anh ấy đã làm phức tạp kế hoạch du lịch của chúng tôi."
+        },
+        {
+          "meaning_vi": "làm phức tạp",
+          "example_en": "Do not complicate things by arguing.",
+          "example_vi": "Đừng làm phức tạp mọi thứ bằng cách tranh cãi."
+        },
+        {
+          "meaning_vi": "làm rắc rối",
+          "example_en": "The weather began to complicate our outdoor activities.",
+          "example_vi": "Thời tiết bắt đầu làm rắc rối các hoạt động ngoài trời của chúng tôi."
+        },
+        {
+          "meaning_vi": "làm rắc rối",
+          "example_en": "Legal issues can complicate a simple sale.",
+          "example_vi": "Các vấn đề pháp lý có thể làm rắc rối một vụ mua bán đơn giản."
+        },
+        {
+          "meaning_vi": "làm rắc rối",
+          "example_en": "She didn't want to complicate his life further.",
+          "example_vi": "Cô ấy không muốn làm rắc rối cuộc sống của anh ấy thêm nữa."
+        },
+        {
+          "meaning_vi": "làm rắc rối",
+          "example_en": "Technical errors often complicate the project.",
+          "example_vi": "Các lỗi kỹ thuật thường làm rắc rối dự án."
+        },
+        {
+          "meaning_vi": "làm rắc rối",
+          "example_en": "Why do you always complicate simple tasks?",
+          "example_vi": "Tại sao bạn luôn làm rắc rối các nhiệm vụ đơn giản?"
+        },
+        {
+          "meaning_vi": "làm rắc rối",
+          "example_en": "The delay will complicate our schedule.",
+          "example_vi": "Sự chậm trễ sẽ làm rắc rối lịch trình của chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "complicate",
+      "normalized_word": "complicate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Don't complicate the situation with unnecessary details.",
+      "example_vi_clean": "Đừng làm phức tạp tình hình với những chi tiết không cần thiết."
+    },
+    {
+      "id": 25760,
+      "quiz_meaning_vi": "phức tạp",
+      "meaning_vi_clean": "phức tạp; rắc rối",
+      "examples_clean": [
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "The instructions were too complicated for me to understand.",
+          "example_vi": "Các hướng dẫn quá phức tạp để tôi có thể hiểu."
+        },
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "It is a complicated problem to solve.",
+          "example_vi": "Đó là một vấn đề phức tạp để giải quyết."
+        },
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "She has a complicated way of explaining things.",
+          "example_vi": "Cô ấy có một cách giải thích mọi thứ rất phức tạp."
+        },
+        {
+          "meaning_vi": "phức tạp",
+          "example_en": "The machine has a complicated design.",
+          "example_vi": "Chiếc máy có một thiết kế phức tạp."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "We are in a very complicated situation.",
+          "example_vi": "Chúng tôi đang ở trong một tình huống rất rắc rối."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "The rules are quite complicated for beginners.",
+          "example_vi": "Các quy tắc khá rắc rối đối với người mới bắt đầu."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "He gave a complicated excuse for being late.",
+          "example_vi": "Anh ấy đưa ra một lý do rắc rối cho việc đến muộn."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "The plot of the movie was too complicated.",
+          "example_vi": "Cốt truyện của bộ phim quá rắc rối."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "It is a complicated matter to discuss.",
+          "example_vi": "Đó là một vấn đề rắc rối để thảo luận."
+        },
+        {
+          "meaning_vi": "rắc rối",
+          "example_en": "She finds the new software complicated to use.",
+          "example_vi": "Cô ấy thấy phần mềm mới rất rắc rối để sử dụng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa các nghĩa.",
+      "word": "complicated",
+      "normalized_word": "complicated",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The instructions were too complicated for me to understand.",
+      "example_vi_clean": "Các hướng dẫn quá phức tạp để tôi có thể hiểu."
+    }
+  ]
+}

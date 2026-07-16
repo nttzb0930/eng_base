@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24521,
+      "quiz_meaning_vi": "mẹ",
+      "meaning_vi_clean": "mẹ",
+      "examples_clean": [
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "My mom is a very kind person.",
+          "example_vi": "Mẹ tôi là một người rất tốt bụng."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "I love my mom very much.",
+          "example_vi": "Tôi yêu mẹ tôi rất nhiều."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mom is cooking dinner in the kitchen.",
+          "example_vi": "Mẹ đang nấu bữa tối trong bếp."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Can I go out with my friends, mom?",
+          "example_vi": "Con có thể đi chơi với bạn không, mẹ?"
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "She looks just like her mom.",
+          "example_vi": "Cô ấy trông giống hệt mẹ mình."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "My mom works as a teacher.",
+          "example_vi": "Mẹ tôi làm nghề giáo viên."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "I bought a gift for my mom.",
+          "example_vi": "Tôi đã mua một món quà cho mẹ."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mom always helps me with my homework.",
+          "example_vi": "Mẹ luôn giúp tôi làm bài tập về nhà."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "We are visiting my mom this weekend.",
+          "example_vi": "Chúng tôi sẽ đến thăm mẹ vào cuối tuần này."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "My mom taught me how to bake.",
+          "example_vi": "Mẹ đã dạy tôi cách làm bánh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa không phù hợp cấp độ A1, giữ lại nghĩa phổ biến nhất.",
+      "word": "mom",
+      "normalized_word": "mom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My mom is a very kind person.",
+      "example_vi_clean": "Mẹ tôi là một người rất tốt bụng."
+    },
+    {
+      "id": 24522,
+      "quiz_meaning_vi": "chốc",
+      "meaning_vi_clean": "chốc; tầm quan trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "chốc",
+          "example_en": "Wait a moment, please.",
+          "example_vi": "Vui lòng đợi một chốc."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "I will be back in a moment.",
+          "example_vi": "Tôi sẽ quay lại trong một chốc."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "Just a moment, let me check.",
+          "example_vi": "Chờ một chốc, để tôi kiểm tra."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "He stopped for a moment to think.",
+          "example_vi": "Anh ấy dừng lại một chốc để suy nghĩ."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "This is a matter of great moment.",
+          "example_vi": "Đây là một vấn đề có tầm quan trọng lớn."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "The decision was made in a moment.",
+          "example_vi": "Quyết định được đưa ra trong một chốc."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "I remember that moment clearly.",
+          "example_vi": "Tôi nhớ rõ chốc lát đó."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "Events of historical moment are rare.",
+          "example_vi": "Những sự kiện có tầm quan trọng lịch sử thì hiếm."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "She hesitated for a moment.",
+          "example_vi": "Cô ấy đã do dự một chốc."
+        },
+        {
+          "meaning_vi": "chốc",
+          "example_en": "It only takes a moment to smile.",
+          "example_vi": "Chỉ mất một chốc để mỉm cười."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ phù hợp.",
+      "word": "moment",
+      "normalized_word": "moment",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Wait a moment, please.",
+      "example_vi_clean": "Vui lòng đợi một chốc."
+    },
+    {
+      "id": 24523,
+      "quiz_meaning_vi": "mẹ",
+      "meaning_vi_clean": "mẹ",
+      "examples_clean": [
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mommy, can you read me a story?",
+          "example_vi": "Mẹ ơi, mẹ đọc truyện cho con nghe được không?"
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "The little girl called for her mommy.",
+          "example_vi": "Cô bé gọi mẹ của mình."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mommy is coming home soon.",
+          "example_vi": "Mẹ sắp về nhà rồi."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "I love my mommy very much.",
+          "example_vi": "Con yêu mẹ của con rất nhiều."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mommy gave me a big hug.",
+          "example_vi": "Mẹ đã ôm tôi một cái thật chặt."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Where is my mommy?",
+          "example_vi": "Mẹ của con đâu rồi?"
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mommy makes the best cookies.",
+          "example_vi": "Mẹ làm bánh quy ngon nhất."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "I want to go with mommy.",
+          "example_vi": "Con muốn đi cùng mẹ."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Mommy is always there for me.",
+          "example_vi": "Mẹ luôn ở bên cạnh tôi."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "Thank you, mommy.",
+          "example_vi": "Cảm ơn mẹ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ tự nhiên.",
+      "word": "mommy",
+      "normalized_word": "mommy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Mommy, can you read me a story?",
+      "example_vi_clean": "Mẹ ơi, mẹ đọc truyện cho con nghe được không?"
+    },
+    {
+      "id": 24524,
+      "quiz_meaning_vi": "ngày thứ hai",
+      "meaning_vi_clean": "ngày thứ hai",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "I have a meeting on Monday.",
+          "example_vi": "Tôi có một cuộc họp vào ngày thứ hai."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "Monday is the first day of the week.",
+          "example_vi": "Ngày thứ hai là ngày đầu tuần."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "See you on Monday.",
+          "example_vi": "Hẹn gặp bạn vào ngày thứ hai."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "I don't like Mondays very much.",
+          "example_vi": "Tôi không thích ngày thứ hai lắm."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "The shop is closed on Monday.",
+          "example_vi": "Cửa hàng đóng cửa vào ngày thứ hai."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "We start school on Monday.",
+          "example_vi": "Chúng tôi bắt đầu đi học vào ngày thứ hai."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "Monday is a busy day for me.",
+          "example_vi": "Ngày thứ hai là một ngày bận rộn với tôi."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "The project is due next Monday.",
+          "example_vi": "Dự án phải hoàn thành vào ngày thứ hai tới."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "I feel tired every Monday.",
+          "example_vi": "Tôi cảm thấy mệt mỏi vào mỗi ngày thứ hai."
+        },
+        {
+          "meaning_vi": "ngày thứ hai",
+          "example_en": "Let's meet on Monday morning.",
+          "example_vi": "Hãy gặp nhau vào sáng ngày thứ hai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "monday",
+      "normalized_word": "monday",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have a meeting on Monday.",
+      "example_vi_clean": "Tôi có một cuộc họp vào ngày thứ hai."
+    },
+    {
+      "id": 24525,
+      "quiz_meaning_vi": "tiền",
+      "meaning_vi_clean": "tiền; của cải",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiền",
+          "example_en": "I don't have enough money.",
+          "example_vi": "Tôi không có đủ tiền."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "She saved some money for a trip.",
+          "example_vi": "Cô ấy đã tiết kiệm một ít tiền cho chuyến đi."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "Money can't buy happiness.",
+          "example_vi": "Tiền không thể mua được hạnh phúc."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "He spent all his money on books.",
+          "example_vi": "Anh ấy đã tiêu hết tiền vào sách."
+        },
+        {
+          "meaning_vi": "của cải",
+          "example_en": "They have a lot of money and land.",
+          "example_vi": "Họ có rất nhiều tiền và của cải."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "Do you have any money with you?",
+          "example_vi": "Bạn có mang theo tiền không?"
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "The company lost a lot of money.",
+          "example_vi": "Công ty đã mất rất nhiều tiền."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "I need to earn more money.",
+          "example_vi": "Tôi cần kiếm thêm tiền."
+        },
+        {
+          "meaning_vi": "của cải",
+          "example_en": "He inherited a lot of money from his family.",
+          "example_vi": "Anh ấy được thừa kế rất nhiều của cải từ gia đình."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "Can you lend me some money?",
+          "example_vi": "Bạn có thể cho tôi mượn một ít tiền không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa không cần thiết và bổ sung ví dụ.",
+      "word": "money",
+      "normalized_word": "money",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I don't have enough money.",
+      "example_vi_clean": "Tôi không có đủ tiền."
+    },
+    {
+      "id": 24526,
+      "quiz_meaning_vi": "con khỉ",
+      "meaning_vi_clean": "con khỉ; bắt chước",
+      "examples_clean": [
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "The monkey climbed up the tree.",
+          "example_vi": "Con khỉ leo lên cây."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "We saw a monkey at the zoo.",
+          "example_vi": "Chúng tôi đã thấy một con khỉ ở sở thú."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "The monkey ate a banana.",
+          "example_vi": "Con khỉ đã ăn một quả chuối."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "That monkey is very funny.",
+          "example_vi": "Con khỉ đó rất buồn cười."
+        },
+        {
+          "meaning_vi": "bắt chước",
+          "example_en": "Don't monkey with the machine.",
+          "example_vi": "Đừng bắt chước nghịch ngợm cái máy đó."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "The monkey jumped from branch to branch.",
+          "example_vi": "Con khỉ nhảy từ cành này sang cành khác."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "I like watching the monkeys play.",
+          "example_vi": "Tôi thích xem những con khỉ chơi đùa."
+        },
+        {
+          "meaning_vi": "bắt chước",
+          "example_en": "Stop monkeying around with the wires.",
+          "example_vi": "Ngừng nghịch ngợm bắt chước với đống dây điện đi."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "The monkey has a long tail.",
+          "example_vi": "Con khỉ có một cái đuôi dài."
+        },
+        {
+          "meaning_vi": "con khỉ",
+          "example_en": "A small monkey sat on the wall.",
+          "example_vi": "Một con khỉ nhỏ ngồi trên tường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang danh từ và bổ sung ví dụ.",
+      "word": "monkey",
+      "normalized_word": "monkey",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The monkey climbed up the tree.",
+      "example_vi_clean": "Con khỉ leo lên cây."
+    },
+    {
+      "id": 24527,
+      "quiz_meaning_vi": "tháng",
+      "meaning_vi_clean": "tháng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tháng",
+          "example_en": "There are twelve months in a year.",
+          "example_vi": "Có mười hai tháng trong một năm."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "I will travel next month.",
+          "example_vi": "Tôi sẽ đi du lịch vào tháng tới."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "She has been here for two months.",
+          "example_vi": "Cô ấy đã ở đây được hai tháng."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "What month is your birthday?",
+          "example_vi": "Sinh nhật bạn vào tháng mấy?"
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "The project will take three months.",
+          "example_vi": "Dự án sẽ mất ba tháng."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "I get paid every month.",
+          "example_vi": "Tôi được trả lương mỗi tháng."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "It has been a long month.",
+          "example_vi": "Đó là một tháng dài."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "We moved here last month.",
+          "example_vi": "Chúng tôi đã chuyển đến đây vào tháng trước."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "The weather is nice this month.",
+          "example_vi": "Thời tiết tháng này rất đẹp."
+        },
+        {
+          "meaning_vi": "tháng",
+          "example_en": "I have a holiday next month.",
+          "example_vi": "Tôi có một kỳ nghỉ vào tháng tới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "month",
+      "normalized_word": "month",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There are twelve months in a year.",
+      "example_vi_clean": "Có mười hai tháng trong một năm."
+    },
+    {
+      "id": 24528,
+      "quiz_meaning_vi": "mặt trăng",
+      "meaning_vi_clean": "mặt trăng; mơ mộng",
+      "examples_clean": [
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The moon is very bright tonight.",
+          "example_vi": "Mặt trăng rất sáng vào đêm nay."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "We can see the moon in the sky.",
+          "example_vi": "Chúng ta có thể thấy mặt trăng trên bầu trời."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The moon orbits the Earth.",
+          "example_vi": "Mặt trăng quay quanh Trái Đất."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The moon looks beautiful tonight.",
+          "example_vi": "Mặt trăng trông thật đẹp tối nay."
+        },
+        {
+          "meaning_vi": "mơ mộng",
+          "example_en": "He likes to moon about the park.",
+          "example_vi": "Anh ấy thích đi lang thang mơ mộng trong công viên."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The full moon is round.",
+          "example_vi": "Trăng tròn thì hình tròn."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The moon reflects the sun's light.",
+          "example_vi": "Mặt trăng phản chiếu ánh sáng của mặt trời."
+        },
+        {
+          "meaning_vi": "mơ mộng",
+          "example_en": "Stop mooning and get to work.",
+          "example_vi": "Ngừng mơ mộng đi và bắt tay vào làm việc."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The moon rises in the east.",
+          "example_vi": "Mặt trăng mọc ở phía đông."
+        },
+        {
+          "meaning_vi": "mặt trăng",
+          "example_en": "The moon is far from Earth.",
+          "example_vi": "Mặt trăng cách xa Trái Đất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ và bổ sung ví dụ.",
+      "word": "moon",
+      "normalized_word": "moon",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The moon is very bright tonight.",
+      "example_vi_clean": "Mặt trăng rất sáng vào đêm nay."
+    },
+    {
+      "id": 24529,
+      "quiz_meaning_vi": "buổi sáng",
+      "meaning_vi_clean": "buổi sáng",
+      "examples_clean": [
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "I drink coffee in the morning.",
+          "example_vi": "Tôi uống cà phê vào buổi sáng."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "Good morning, everyone.",
+          "example_vi": "Chào buổi sáng mọi người."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "I wake up early in the morning.",
+          "example_vi": "Tôi thức dậy sớm vào buổi sáng."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "The morning air is fresh.",
+          "example_vi": "Không khí buổi sáng thật trong lành."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "I have classes in the morning.",
+          "example_vi": "Tôi có các lớp học vào buổi sáng."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "She goes for a run every morning.",
+          "example_vi": "Cô ấy đi chạy bộ mỗi buổi sáng."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "The morning sun is warm.",
+          "example_vi": "Nắng buổi sáng thật ấm áp."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "I feel energetic in the morning.",
+          "example_vi": "Tôi cảm thấy tràn đầy năng lượng vào buổi sáng."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "We have a meeting this morning.",
+          "example_vi": "Chúng tôi có một cuộc họp vào sáng nay."
+        },
+        {
+          "meaning_vi": "buổi sáng",
+          "example_en": "I like the quiet of the morning.",
+          "example_vi": "Tôi thích sự yên tĩnh của buổi sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "morning",
+      "normalized_word": "morning",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I drink coffee in the morning.",
+      "example_vi_clean": "Tôi uống cà phê vào buổi sáng."
+    },
+    {
+      "id": 24530,
+      "quiz_meaning_vi": "mẹ",
+      "meaning_vi_clean": "mẹ; nguồn gốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "She is a loving mother.",
+          "example_vi": "Cô ấy là một người mẹ yêu thương con cái."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "My mother is a doctor.",
+          "example_vi": "Mẹ tôi là một bác sĩ."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "He looks after his mother.",
+          "example_vi": "Anh ấy chăm sóc mẹ mình."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "She is a mother of three children.",
+          "example_vi": "Cô ấy là mẹ của ba đứa con."
+        },
+        {
+          "meaning_vi": "nguồn gốc",
+          "example_en": "Necessity is the mother of invention.",
+          "example_vi": "Sự cần thiết là nguồn gốc của phát minh."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "I called my mother yesterday.",
+          "example_vi": "Tôi đã gọi cho mẹ tôi ngày hôm qua."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "She is a very proud mother.",
+          "example_vi": "Cô ấy là một người mẹ rất tự hào."
+        },
+        {
+          "meaning_vi": "nguồn gốc",
+          "example_en": "This city is the mother of many traditions.",
+          "example_vi": "Thành phố này là nguồn gốc của nhiều truyền thống."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "My mother taught me to be honest.",
+          "example_vi": "Mẹ tôi đã dạy tôi phải trung thực."
+        },
+        {
+          "meaning_vi": "mẹ",
+          "example_en": "She is a devoted mother.",
+          "example_vi": "Cô ấy là một người mẹ tận tụy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ và bổ sung ví dụ.",
+      "word": "mother",
+      "normalized_word": "mother",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is a loving mother.",
+      "example_vi_clean": "Cô ấy là một người mẹ yêu thương con cái."
+    }
+  ]
+}

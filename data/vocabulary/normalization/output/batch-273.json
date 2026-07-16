@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26721,
+      "quiz_meaning_vi": "biến đổi",
+      "meaning_vi_clean": "biến đổi; làm thay đổi tôn giáo; người thay đổi tín ngưỡng",
+      "examples_clean": [
+        {
+          "meaning_vi": "biến đổi",
+          "example_en": "The factory converts waste into energy.",
+          "example_vi": "Nhà máy biến đổi chất thải thành năng lượng."
+        },
+        {
+          "meaning_vi": "biến đổi",
+          "example_en": "They converted the old barn into a house.",
+          "example_vi": "Họ đã cải tạo nhà kho cũ thành một ngôi nhà."
+        },
+        {
+          "meaning_vi": "biến đổi",
+          "example_en": "You can convert these files into PDF format.",
+          "example_vi": "Bạn có thể chuyển đổi các tệp này sang định dạng PDF."
+        },
+        {
+          "meaning_vi": "biến đổi",
+          "example_en": "The machine converts sunlight into electricity.",
+          "example_vi": "Cỗ máy này chuyển đổi ánh sáng mặt trời thành điện năng."
+        },
+        {
+          "meaning_vi": "làm thay đổi tôn giáo",
+          "example_en": "He tried to convert his friends to his new faith.",
+          "example_vi": "Anh ấy đã cố gắng thuyết phục bạn bè theo tôn giáo mới của mình."
+        },
+        {
+          "meaning_vi": "làm thay đổi tôn giáo",
+          "example_en": "She was converted to Christianity at a young age.",
+          "example_vi": "Cô ấy đã cải đạo sang Kitô giáo từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "làm thay đổi tôn giáo",
+          "example_en": "Missionaries traveled far to convert local tribes.",
+          "example_vi": "Các nhà truyền giáo đã đi xa để cải đạo cho các bộ lạc địa phương."
+        },
+        {
+          "meaning_vi": "người thay đổi tín ngưỡng",
+          "example_en": "They were all recent converts to the new religion.",
+          "example_vi": "Tất cả họ đều là những người mới cải đạo sang tôn giáo mới."
+        },
+        {
+          "meaning_vi": "người thay đổi tín ngưỡng",
+          "example_en": "He is a passionate convert to the cause.",
+          "example_vi": "Anh ấy là một người nhiệt thành đã thay đổi chính kiến theo phong trào này."
+        },
+        {
+          "meaning_vi": "người thay đổi tín ngưỡng",
+          "example_en": "The group welcomed many new converts this year.",
+          "example_vi": "Nhóm đã chào đón nhiều người mới gia nhập trong năm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn nghĩa phổ biến nhất là biến đổi. Bổ sung đủ 10 ví dụ minh họa các nghĩa chính.",
+      "word": "convert",
+      "normalized_word": "convert",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The factory converts waste into energy.",
+      "example_vi_clean": "Nhà máy biến đổi chất thải thành năng lượng."
+    },
+    {
+      "id": 26722,
+      "quiz_meaning_vi": "tin chắc",
+      "meaning_vi_clean": "tin chắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "I am convinced that he is telling the truth.",
+          "example_vi": "Tôi tin chắc rằng anh ấy đang nói sự thật."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "She was convinced of his innocence.",
+          "example_vi": "Cô ấy tin chắc vào sự vô tội của anh ta."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "He is convinced that the project will succeed.",
+          "example_vi": "Anh ấy tin chắc rằng dự án sẽ thành công."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "They are convinced that they made the right choice.",
+          "example_vi": "Họ tin chắc rằng họ đã đưa ra lựa chọn đúng đắn."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "I am not convinced by his explanation.",
+          "example_vi": "Tôi không tin chắc vào lời giải thích của anh ấy."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "Are you convinced that this is the best way?",
+          "example_vi": "Bạn có tin chắc rằng đây là cách tốt nhất không?"
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "He remained convinced despite the evidence.",
+          "example_vi": "Anh ấy vẫn tin chắc mặc dù có bằng chứng ngược lại."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "She was convinced she had seen him before.",
+          "example_vi": "Cô ấy tin chắc rằng mình đã gặp anh ta trước đây."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "We are convinced of the importance of education.",
+          "example_vi": "Chúng tôi tin chắc vào tầm quan trọng của giáo dục."
+        },
+        {
+          "meaning_vi": "tin chắc",
+          "example_en": "He is convinced that hard work pays off.",
+          "example_vi": "Anh ấy tin chắc rằng làm việc chăm chỉ sẽ được đền đáp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa tin chắc. Bổ sung đủ 10 ví dụ tự nhiên.",
+      "word": "convinced",
+      "normalized_word": "convinced",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I am convinced that he is telling the truth.",
+      "example_vi_clean": "Tôi tin chắc rằng anh ấy đang nói sự thật."
+    },
+    {
+      "id": 26723,
+      "quiz_meaning_vi": "sự hợp tác",
+      "meaning_vi_clean": "sự hợp tác",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "We need your full cooperation to finish this task.",
+          "example_vi": "Chúng tôi cần sự hợp tác đầy đủ của bạn để hoàn thành nhiệm vụ này."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "The project was a result of close cooperation.",
+          "example_vi": "Dự án là kết quả của sự hợp tác chặt chẽ."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "Thank you for your cooperation in this matter.",
+          "example_vi": "Cảm ơn sự hợp tác của bạn trong vấn đề này."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "International cooperation is essential for peace.",
+          "example_vi": "Sự hợp tác quốc tế là cần thiết cho hòa bình."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "They agreed to work in cooperation with each other.",
+          "example_vi": "Họ đồng ý làm việc trong sự hợp tác với nhau."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "The police asked for the public's cooperation.",
+          "example_vi": "Cảnh sát đã yêu cầu sự hợp tác của công chúng."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "Success depends on our cooperation.",
+          "example_vi": "Thành công phụ thuộc vào sự hợp tác của chúng ta."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "We value your cooperation during this transition.",
+          "example_vi": "Chúng tôi trân trọng sự hợp tác của bạn trong giai đoạn chuyển tiếp này."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "The two companies signed a cooperation agreement.",
+          "example_vi": "Hai công ty đã ký một thỏa thuận hợp tác."
+        },
+        {
+          "meaning_vi": "sự hợp tác",
+          "example_en": "Without your cooperation, we cannot succeed.",
+          "example_vi": "Nếu không có sự hợp tác của bạn, chúng ta không thể thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho danh từ sự hợp tác.",
+      "word": "cooperation",
+      "normalized_word": "cooperation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We need your full cooperation to finish this task.",
+      "example_vi_clean": "Chúng tôi cần sự hợp tác đầy đủ của bạn để hoàn thành nhiệm vụ này."
+    },
+    {
+      "id": 26724,
+      "quiz_meaning_vi": "hợp tác",
+      "meaning_vi_clean": "hợp tác",
+      "examples_clean": [
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "The patient was very cooperative during the examination.",
+          "example_vi": "Bệnh nhân rất hợp tác trong quá trình kiểm tra."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "She is a very cooperative team member.",
+          "example_vi": "Cô ấy là một thành viên nhóm rất biết hợp tác."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "We need a more cooperative approach to solve this.",
+          "example_vi": "Chúng ta cần một cách tiếp cận hợp tác hơn để giải quyết việc này."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "He was not very cooperative when asked questions.",
+          "example_vi": "Anh ấy không hợp tác lắm khi được hỏi câu hỏi."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "The staff were helpful and cooperative.",
+          "example_vi": "Nhân viên rất nhiệt tình và biết hợp tác."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "They developed a cooperative relationship over time.",
+          "example_vi": "Họ đã phát triển một mối quan hệ hợp tác theo thời gian."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "Please be cooperative with the authorities.",
+          "example_vi": "Vui lòng hợp tác với các cơ quan chức năng."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "A cooperative attitude makes work easier.",
+          "example_vi": "Thái độ hợp tác làm cho công việc dễ dàng hơn."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "The witness was cooperative with the police.",
+          "example_vi": "Nhân chứng đã hợp tác với cảnh sát."
+        },
+        {
+          "meaning_vi": "hợp tác",
+          "example_en": "We are looking for a cooperative partner.",
+          "example_vi": "Chúng tôi đang tìm kiếm một đối tác biết hợp tác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho tính từ hợp tác.",
+      "word": "cooperative",
+      "normalized_word": "cooperative",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The patient was very cooperative during the examination.",
+      "example_vi_clean": "Bệnh nhân rất hợp tác trong quá trình kiểm tra."
+    },
+    {
+      "id": 26725,
+      "quiz_meaning_vi": "đối phó",
+      "meaning_vi_clean": "đối phó; đương đầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "đối phó",
+          "example_en": "She learned how to cope with stress at work.",
+          "example_vi": "Cô ấy đã học cách đối phó với căng thẳng trong công việc."
+        },
+        {
+          "meaning_vi": "đối phó",
+          "example_en": "It is hard to cope with such a heavy workload.",
+          "example_vi": "Thật khó để đối phó với khối lượng công việc nặng nề như vậy."
+        },
+        {
+          "meaning_vi": "đối phó",
+          "example_en": "He found it difficult to cope with the loss.",
+          "example_vi": "Anh ấy thấy khó khăn để đối phó với sự mất mát đó."
+        },
+        {
+          "meaning_vi": "đối phó",
+          "example_en": "They are trying to cope with the new regulations.",
+          "example_vi": "Họ đang cố gắng đối phó với các quy định mới."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "We must learn to cope with these challenges.",
+          "example_vi": "Chúng ta phải học cách đương đầu với những thách thức này."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "She is coping well with her new responsibilities.",
+          "example_vi": "Cô ấy đang đương đầu tốt với những trách nhiệm mới của mình."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "He had to cope with many problems alone.",
+          "example_vi": "Anh ấy đã phải đương đầu với nhiều vấn đề một mình."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "The team is coping with the pressure of the final.",
+          "example_vi": "Đội đang đương đầu với áp lực của trận chung kết."
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "How do you cope with living in a big city?",
+          "example_vi": "Bạn đương đầu thế nào với việc sống ở một thành phố lớn?"
+        },
+        {
+          "meaning_vi": "đương đầu",
+          "example_en": "They are coping with the aftermath of the storm.",
+          "example_vi": "Họ đang đương đầu với hậu quả của cơn bão."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa cổ/chuyên ngành không phù hợp. Tập trung vào nghĩa đối phó/đương đầu.",
+      "word": "cope",
+      "normalized_word": "cope",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She learned how to cope with stress at work.",
+      "example_vi_clean": "Cô ấy đã học cách đối phó với căng thẳng trong công việc."
+    },
+    {
+      "id": 26726,
+      "quiz_meaning_vi": "đồng",
+      "meaning_vi_clean": "đồng; cảnh sát",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng",
+          "example_en": "Copper is a good conductor of electricity.",
+          "example_vi": "Đồng là một chất dẫn điện tốt."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The roof was covered in copper sheets.",
+          "example_vi": "Mái nhà được bao phủ bằng các tấm đồng."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "He found an old copper coin in the garden.",
+          "example_vi": "Anh ấy tìm thấy một đồng xu bằng đồng trong vườn."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "The statue is made of solid copper.",
+          "example_vi": "Bức tượng được làm bằng đồng nguyên khối."
+        },
+        {
+          "meaning_vi": "đồng",
+          "example_en": "Copper pipes are commonly used in plumbing.",
+          "example_vi": "Ống đồng thường được sử dụng trong hệ thống ống nước."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The copper chased the thief down the street.",
+          "example_vi": "Viên cảnh sát đuổi theo tên trộm dọc con phố."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "He decided to become a copper after college.",
+          "example_vi": "Anh ấy quyết định trở thành cảnh sát sau khi tốt nghiệp đại học."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The copper asked to see his identification.",
+          "example_vi": "Viên cảnh sát yêu cầu xem giấy tờ tùy thân của anh ta."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "A local copper helped the lost child.",
+          "example_vi": "Một viên cảnh sát địa phương đã giúp đỡ đứa trẻ bị lạc."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The copper warned him about speeding.",
+          "example_vi": "Viên cảnh sát cảnh báo anh ta về việc chạy quá tốc độ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Bổ sung nghĩa đồng và cảnh sát.",
+      "word": "copper",
+      "normalized_word": "copper",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Copper is a good conductor of electricity.",
+      "example_vi_clean": "Đồng là một chất dẫn điện tốt."
+    },
+    {
+      "id": 26727,
+      "quiz_meaning_vi": "san hô",
+      "meaning_vi_clean": "san hô",
+      "examples_clean": [
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The divers explored the beautiful coral reef.",
+          "example_vi": "Những người thợ lặn đã khám phá rạn san hô tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Coral comes in many different colors.",
+          "example_vi": "San hô có nhiều màu sắc khác nhau."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "We saw colorful fish swimming near the coral.",
+          "example_vi": "Chúng tôi thấy những con cá đầy màu sắc bơi gần rạn san hô."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The necklace is made of polished coral.",
+          "example_vi": "Chiếc vòng cổ được làm từ san hô đã đánh bóng."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Coral reefs are home to many marine species.",
+          "example_vi": "Các rạn san hô là nhà của nhiều loài sinh vật biển."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Pollution is damaging the coral in the ocean.",
+          "example_vi": "Ô nhiễm đang làm hư hại san hô trong đại dương."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "She bought a piece of red coral as a souvenir.",
+          "example_vi": "Cô ấy đã mua một mảnh san hô đỏ làm quà lưu niệm."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The island is surrounded by coral.",
+          "example_vi": "Hòn đảo được bao quanh bởi san hô."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "Scientists are studying how to protect the coral.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu cách bảo vệ san hô."
+        },
+        {
+          "meaning_vi": "san hô",
+          "example_en": "The coral was damaged by the strong waves.",
+          "example_vi": "Rạn san hô đã bị hư hại bởi những con sóng mạnh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ thành danh từ. Bổ sung 10 ví dụ về san hô.",
+      "word": "coral",
+      "normalized_word": "coral",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The divers explored the beautiful coral reef.",
+      "example_vi_clean": "Những người thợ lặn đã khám phá rạn san hô tuyệt đẹp."
+    },
+    {
+      "id": 26728,
+      "quiz_meaning_vi": "lõi",
+      "meaning_vi_clean": "lõi; điểm trung tâm",
+      "examples_clean": [
+        {
+          "meaning_vi": "lõi",
+          "example_en": "Remove the core of the apple before eating.",
+          "example_vi": "Hãy bỏ lõi quả táo trước khi ăn."
+        },
+        {
+          "meaning_vi": "lõi",
+          "example_en": "The earth has a solid inner core.",
+          "example_vi": "Trái đất có một lõi trong rắn chắc."
+        },
+        {
+          "meaning_vi": "lõi",
+          "example_en": "The cable has a copper core.",
+          "example_vi": "Sợi cáp có một lõi đồng."
+        },
+        {
+          "meaning_vi": "lõi",
+          "example_en": "The reactor core is very hot.",
+          "example_vi": "Lõi lò phản ứng rất nóng."
+        },
+        {
+          "meaning_vi": "điểm trung tâm",
+          "example_en": "This issue is at the core of our problem.",
+          "example_vi": "Vấn đề này là điểm trung tâm của rắc rối của chúng ta."
+        },
+        {
+          "meaning_vi": "điểm trung tâm",
+          "example_en": "The core of his argument is quite simple.",
+          "example_vi": "Điểm trung tâm trong lập luận của anh ấy khá đơn giản."
+        },
+        {
+          "meaning_vi": "điểm trung tâm",
+          "example_en": "We need to focus on the core values of the company.",
+          "example_vi": "Chúng ta cần tập trung vào các giá trị cốt lõi của công ty."
+        },
+        {
+          "meaning_vi": "điểm trung tâm",
+          "example_en": "The core of the city is very crowded.",
+          "example_vi": "Trung tâm của thành phố rất đông đúc."
+        },
+        {
+          "meaning_vi": "điểm trung tâm",
+          "example_en": "Education is the core of our development strategy.",
+          "example_vi": "Giáo dục là điểm trung tâm trong chiến lược phát triển của chúng ta."
+        },
+        {
+          "meaning_vi": "điểm trung tâm",
+          "example_en": "They discussed the core issues of the project.",
+          "example_vi": "Họ đã thảo luận về các vấn đề cốt lõi của dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa lõi và điểm trung tâm. Bổ sung đủ 10 ví dụ.",
+      "word": "core",
+      "normalized_word": "core",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Remove the core of the apple before eating.",
+      "example_vi_clean": "Hãy bỏ lõi quả táo trước khi ăn."
+    },
+    {
+      "id": 26729,
+      "quiz_meaning_vi": "kèn coonê",
+      "meaning_vi_clean": "kèn coonê",
+      "examples_clean": [
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "He played a beautiful melody on his cornet.",
+          "example_vi": "Anh ấy đã chơi một giai điệu tuyệt đẹp trên chiếc kèn coonê của mình."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "The cornet is often used in brass bands.",
+          "example_vi": "Kèn coonê thường được sử dụng trong các ban nhạc kèn đồng."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "She learned to play the cornet at school.",
+          "example_vi": "Cô ấy đã học chơi kèn coonê ở trường."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "The sound of the cornet filled the room.",
+          "example_vi": "Âm thanh của chiếc kèn coonê tràn ngập căn phòng."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "He bought a new cornet for his performance.",
+          "example_vi": "Anh ấy đã mua một chiếc kèn coonê mới cho buổi biểu diễn của mình."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "The cornet player practiced for hours.",
+          "example_vi": "Người thổi kèn coonê đã luyện tập trong nhiều giờ."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "She polished her cornet before the concert.",
+          "example_vi": "Cô ấy đã đánh bóng chiếc kèn coonê của mình trước buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "The cornet has a warm and mellow tone.",
+          "example_vi": "Kèn coonê có âm sắc ấm áp và êm dịu."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "He joined the local orchestra as a cornet player.",
+          "example_vi": "Anh ấy đã tham gia dàn nhạc địa phương với tư cách là người thổi kèn coonê."
+        },
+        {
+          "meaning_vi": "kèn coonê",
+          "example_en": "The cornet is similar to the trumpet.",
+          "example_vi": "Kèn coonê khá giống với kèn trumpet."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho kèn coonê.",
+      "word": "cornet",
+      "normalized_word": "cornet",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He played a beautiful melody on his cornet.",
+      "example_vi_clean": "Anh ấy đã chơi một giai điệu tuyệt đẹp trên chiếc kèn coonê của mình."
+    },
+    {
+      "id": 26730,
+      "quiz_meaning_vi": "tán mặt trăng",
+      "meaning_vi_clean": "tán mặt trăng; vành; thân răng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tán mặt trăng",
+          "example_en": "The solar corona is visible during an eclipse.",
+          "example_vi": "Tán mặt trời có thể nhìn thấy được trong lúc nhật thực."
+        },
+        {
+          "meaning_vi": "tán mặt trăng",
+          "example_en": "Scientists study the corona to understand the sun.",
+          "example_vi": "Các nhà khoa học nghiên cứu tán mặt trời để hiểu về mặt trời."
+        },
+        {
+          "meaning_vi": "tán mặt trăng",
+          "example_en": "The corona appears as a glowing ring.",
+          "example_vi": "Tán mặt trời xuất hiện như một vòng sáng."
+        },
+        {
+          "meaning_vi": "tán mặt trăng",
+          "example_en": "The corona is the outermost part of the sun's atmosphere.",
+          "example_vi": "Tán mặt trời là phần ngoài cùng của bầu khí quyển mặt trời."
+        },
+        {
+          "meaning_vi": "vành",
+          "example_en": "The light formed a corona around the object.",
+          "example_vi": "Ánh sáng tạo thành một vành xung quanh vật thể."
+        },
+        {
+          "meaning_vi": "vành",
+          "example_en": "A faint corona was seen around the moon.",
+          "example_vi": "Một vành mờ được nhìn thấy xung quanh mặt trăng."
+        },
+        {
+          "meaning_vi": "vành",
+          "example_en": "The corona of light was beautiful to watch.",
+          "example_vi": "Vành sáng đó thật đẹp để ngắm nhìn."
+        },
+        {
+          "meaning_vi": "thân răng",
+          "example_en": "The dentist examined the corona of the tooth.",
+          "example_vi": "Nha sĩ đã kiểm tra thân răng của chiếc răng."
+        },
+        {
+          "meaning_vi": "thân răng",
+          "example_en": "The crown protects the corona of the tooth.",
+          "example_vi": "Mão răng bảo vệ thân răng."
+        },
+        {
+          "meaning_vi": "thân răng",
+          "example_en": "Damage to the corona can cause sensitivity.",
+          "example_vi": "Tổn thương ở thân răng có thể gây ê buốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung các nghĩa và ví dụ phù hợp, loại bỏ nghĩa liên quan đến virus để tránh gây tranh cãi/lỗi thời.",
+      "word": "corona",
+      "normalized_word": "corona",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The solar corona is visible during an eclipse.",
+      "example_vi_clean": "Tán mặt trời có thể nhìn thấy được trong lúc nhật thực."
+    }
+  ]
+}

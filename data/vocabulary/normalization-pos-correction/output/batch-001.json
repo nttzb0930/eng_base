@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24061,
+      "quiz_meaning_vi": "con gấu",
+      "meaning_vi_clean": "con gấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "The bear is sleeping in the cave.",
+          "example_vi": "Con gấu đang ngủ trong hang."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "I saw a big bear at the zoo.",
+          "example_vi": "Tôi đã thấy một con gấu lớn ở sở thú."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "The brown bear eats fish from the river.",
+          "example_vi": "Con gấu nâu ăn cá từ dưới sông."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "A small bear climbed up the tree.",
+          "example_vi": "Một con gấu nhỏ đã trèo lên cây."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "The polar bear lives in the cold north.",
+          "example_vi": "Gấu Bắc Cực sống ở vùng phía bắc lạnh giá."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "Children love to play with a teddy bear.",
+          "example_vi": "Trẻ em thích chơi với gấu bông."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "The bear walked slowly through the forest.",
+          "example_vi": "Con gấu đi bộ chậm rãi qua khu rừng."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "We watched a documentary about the bear.",
+          "example_vi": "Chúng tôi đã xem một bộ phim tài liệu về loài gấu."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "The mother bear protected her cubs.",
+          "example_vi": "Gấu mẹ bảo vệ những đứa con của nó."
+        },
+        {
+          "meaning_vi": "con gấu",
+          "example_en": "A bear has thick fur to stay warm.",
+          "example_vi": "Con gấu có bộ lông dày để giữ ấm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ con gấu và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ bear được dùng làm danh từ chỉ con vật trong tất cả các ví dụ."
+      },
+      "word": "bear",
+      "normalized_word": "bear",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bear is sleeping in the cave.",
+      "example_vi_clean": "Con gấu đang ngủ trong hang."
+    },
+    {
+      "id": 24001,
+      "quiz_meaning_vi": "khoảng",
+      "meaning_vi_clean": "khoảng",
+      "examples_clean": [
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "There were about ten people in the room.",
+          "example_vi": "Có khoảng mười người trong phòng."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "It costs about five dollars.",
+          "example_vi": "Nó có giá khoảng năm đô la."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "The meeting will last about an hour.",
+          "example_vi": "Cuộc họp sẽ kéo dài khoảng một giờ."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "I have about twenty books on my shelf.",
+          "example_vi": "Tôi có khoảng hai mươi cuốn sách trên kệ."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "The train arrives in about ten minutes.",
+          "example_vi": "Tàu sẽ đến trong khoảng mười phút nữa."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "She walked for about two miles.",
+          "example_vi": "Cô ấy đã đi bộ khoảng hai dặm."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "There are about fifty students in the class.",
+          "example_vi": "Có khoảng năm mươi học sinh trong lớp."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "It is about three o'clock now.",
+          "example_vi": "Bây giờ là khoảng ba giờ."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "He waited for about half an hour.",
+          "example_vi": "Anh ấy đã đợi khoảng nửa giờ."
+        },
+        {
+          "meaning_vi": "khoảng",
+          "example_en": "The trip takes about three days.",
+          "example_vi": "Chuyến đi mất khoảng ba ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ khoảng và 10 ví dụ phù hợp với từ loại phó từ.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ about được dùng làm phó từ chỉ sự ước lượng trong tất cả các ví dụ."
+      },
+      "word": "about",
+      "normalized_word": "about",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "There were about ten people in the room.",
+      "example_vi_clean": "Có khoảng mười người trong phòng."
+    },
+    {
+      "id": 24002,
+      "quiz_meaning_vi": "hành động",
+      "meaning_vi_clean": "hành động",
+      "examples_clean": [
+        {
+          "meaning_vi": "hành động",
+          "example_en": "His action was very kind to everyone.",
+          "example_vi": "Hành động của anh ấy rất tử tế với mọi người."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "We need to take action now.",
+          "example_vi": "Chúng ta cần thực hiện hành động ngay bây giờ."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "The hero's action saved the day.",
+          "example_vi": "Hành động của người anh hùng đã cứu vãn tình thế."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "Every action has a reaction.",
+          "example_vi": "Mỗi hành động đều có một phản ứng."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "I appreciate your quick action.",
+          "example_vi": "Tôi đánh giá cao hành động nhanh chóng của bạn."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "The movie is full of action.",
+          "example_vi": "Bộ phim đầy những hành động."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "Her action surprised all of us.",
+          "example_vi": "Hành động của cô ấy làm tất cả chúng tôi ngạc nhiên."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "Think before you take any action.",
+          "example_vi": "Hãy suy nghĩ trước khi thực hiện bất kỳ hành động nào."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "The government promised positive action.",
+          "example_vi": "Chính phủ đã hứa hẹn những hành động tích cực."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "That was a brave action.",
+          "example_vi": "Đó là một hành động dũng cảm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ hành động và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ action được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "action",
+      "normalized_word": "action",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His action was very kind to everyone.",
+      "example_vi_clean": "Hành động của anh ấy rất tử tế với mọi người."
+    },
+    {
+      "id": 24006,
+      "quiz_meaning_vi": "địa chỉ",
+      "meaning_vi_clean": "địa chỉ",
+      "examples_clean": [
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "Please write your address on the form.",
+          "example_vi": "Vui lòng viết địa chỉ của bạn vào mẫu đơn."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "I forgot his home address.",
+          "example_vi": "Tôi đã quên địa chỉ nhà của anh ấy."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "What is your email address?",
+          "example_vi": "Địa chỉ email của bạn là gì?"
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "She gave me her new address.",
+          "example_vi": "Cô ấy đã đưa cho tôi địa chỉ mới của cô ấy."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "The letter was sent to the wrong address.",
+          "example_vi": "Bức thư đã được gửi đến sai địa chỉ."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "Can you find the address on the map?",
+          "example_vi": "Bạn có thể tìm thấy địa chỉ đó trên bản đồ không?"
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "I have his office address.",
+          "example_vi": "Tôi có địa chỉ văn phòng của anh ấy."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "The address is written on the envelope.",
+          "example_vi": "Địa chỉ được viết trên phong bì."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "They moved to a new address.",
+          "example_vi": "Họ đã chuyển đến một địa chỉ mới."
+        },
+        {
+          "meaning_vi": "địa chỉ",
+          "example_en": "Please confirm your mailing address.",
+          "example_vi": "Vui lòng xác nhận địa chỉ gửi thư của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ địa chỉ và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ address được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "address",
+      "normalized_word": "address",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please write your address on the form.",
+      "example_vi_clean": "Vui lòng viết địa chỉ của bạn vào mẫu đơn."
+    },
+    {
+      "id": 24018,
+      "quiz_meaning_vi": "cùng",
+      "meaning_vi_clean": "cùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "cùng",
+          "example_en": "Why don't you come along with us?",
+          "example_vi": "Tại sao bạn không cùng đi với chúng tôi?"
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "He decided to walk along for a while.",
+          "example_vi": "Anh ấy quyết định cùng đi một đoạn."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "I am going to the store, do you want to come along?",
+          "example_vi": "Tôi đang đi đến cửa hàng, bạn có muốn cùng đi không?"
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "She asked if she could come along.",
+          "example_vi": "Cô ấy hỏi liệu cô ấy có thể cùng đi được không."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "We are leaving now, please come along.",
+          "example_vi": "Chúng tôi đang rời đi đây, hãy cùng đi nào."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "They invited me to come along to the party.",
+          "example_vi": "Họ mời tôi cùng đi đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "If you are free, you can come along.",
+          "example_vi": "Nếu bạn rảnh, bạn có thể cùng đi."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "He walked along with his friend.",
+          "example_vi": "Anh ấy đã cùng đi với bạn của mình."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "I will come along to help you.",
+          "example_vi": "Tôi sẽ cùng đi để giúp bạn."
+        },
+        {
+          "meaning_vi": "cùng",
+          "example_en": "Are you ready to come along?",
+          "example_vi": "Bạn đã sẵn sàng để cùng đi chưa?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ cùng và 10 ví dụ phù hợp với từ loại phó từ.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ along được dùng làm phó từ trong cụm 'come along' mang nghĩa cùng đi."
+      },
+      "word": "along",
+      "normalized_word": "along",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Why don't you come along with us?",
+      "example_vi_clean": "Tại sao bạn không cùng đi với chúng tôi?"
+    },
+    {
+      "id": 24026,
+      "quiz_meaning_vi": "câu trả lời",
+      "meaning_vi_clean": "câu trả lời",
+      "examples_clean": [
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "I am waiting for your answer.",
+          "example_vi": "Tôi đang chờ câu trả lời của bạn."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "That is a very good answer.",
+          "example_vi": "Đó là một câu trả lời rất hay."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "She gave the correct answer.",
+          "example_vi": "Cô ấy đã đưa ra câu trả lời đúng."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "I do not know the answer to this question.",
+          "example_vi": "Tôi không biết câu trả lời cho câu hỏi này."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "His answer surprised everyone.",
+          "example_vi": "Câu trả lời của anh ấy làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "Please write your answer on the paper.",
+          "example_vi": "Vui lòng viết câu trả lời của bạn vào giấy."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "The answer is simple.",
+          "example_vi": "Câu trả lời rất đơn giản."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "I need an answer by tomorrow.",
+          "example_vi": "Tôi cần một câu trả lời trước ngày mai."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "She found the answer in the book.",
+          "example_vi": "Cô ấy đã tìm thấy câu trả lời trong cuốn sách."
+        },
+        {
+          "meaning_vi": "câu trả lời",
+          "example_en": "Is there a right answer?",
+          "example_vi": "Có câu trả lời đúng không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ câu trả lời và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ answer được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "answer",
+      "normalized_word": "answer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I am waiting for your answer.",
+      "example_vi_clean": "Tôi đang chờ câu trả lời của bạn."
+    },
+    {
+      "id": 24035,
+      "quiz_meaning_vi": "cánh tay",
+      "meaning_vi_clean": "cánh tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "He has a strong arm.",
+          "example_vi": "Anh ấy có một cánh tay khỏe mạnh."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "She held the baby in her arm.",
+          "example_vi": "Cô ấy bế đứa bé trên cánh tay mình."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "I hurt my arm while playing.",
+          "example_vi": "Tôi bị đau cánh tay khi đang chơi."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "He broke his arm yesterday.",
+          "example_vi": "Anh ấy đã bị gãy cánh tay ngày hôm qua."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "She raised her arm to wave.",
+          "example_vi": "Cô ấy giơ cánh tay lên để vẫy."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "The doctor examined his arm.",
+          "example_vi": "Bác sĩ đã kiểm tra cánh tay của anh ấy."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "He has a tattoo on his arm.",
+          "example_vi": "Anh ấy có một hình xăm trên cánh tay."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "She felt a pain in her arm.",
+          "example_vi": "Cô ấy cảm thấy đau ở cánh tay."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "He put his arm around her.",
+          "example_vi": "Anh ấy vòng cánh tay qua người cô ấy."
+        },
+        {
+          "meaning_vi": "cánh tay",
+          "example_en": "My arm is tired from carrying the bag.",
+          "example_vi": "Cánh tay tôi bị mỏi vì xách túi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ cánh tay và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ arm được dùng làm danh từ chỉ bộ phận cơ thể trong tất cả các ví dụ."
+      },
+      "word": "arm",
+      "normalized_word": "arm",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has a strong arm.",
+      "example_vi_clean": "Anh ấy có một cánh tay khỏe mạnh."
+    },
+    {
+      "id": 24037,
+      "quiz_meaning_vi": "nghệ thuật",
+      "meaning_vi_clean": "nghệ thuật",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "She is very interested in art.",
+          "example_vi": "Cô ấy rất quan tâm đến nghệ thuật."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "We visited an art museum today.",
+          "example_vi": "Chúng tôi đã đến thăm một bảo tàng nghệ thuật hôm nay."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "He studies art at the university.",
+          "example_vi": "Anh ấy học nghệ thuật tại trường đại học."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "This painting is a piece of art.",
+          "example_vi": "Bức tranh này là một tác phẩm nghệ thuật."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "I love modern art.",
+          "example_vi": "Tôi yêu nghệ thuật hiện đại."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "She has a talent for art.",
+          "example_vi": "Cô ấy có năng khiếu về nghệ thuật."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "The gallery shows local art.",
+          "example_vi": "Phòng trưng bày giới thiệu nghệ thuật địa phương."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "Art is important for our culture.",
+          "example_vi": "Nghệ thuật rất quan trọng đối với văn hóa của chúng ta."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "He creates beautiful art.",
+          "example_vi": "Anh ấy tạo ra những tác phẩm nghệ thuật đẹp."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "They are teaching art to children.",
+          "example_vi": "Họ đang dạy nghệ thuật cho trẻ em."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ nghệ thuật và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ art được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "art",
+      "normalized_word": "art",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is very interested in art.",
+      "example_vi_clean": "Cô ấy rất quan tâm đến nghệ thuật."
+    },
+    {
+      "id": 24038,
+      "quiz_meaning_vi": "bài báo",
+      "meaning_vi_clean": "bài báo",
+      "examples_clean": [
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "I read an interesting article in the newspaper.",
+          "example_vi": "Tôi đã đọc một bài báo thú vị trên tờ báo."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "She wrote an article about the environment.",
+          "example_vi": "Cô ấy đã viết một bài báo về môi trường."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "Did you see the article in the magazine?",
+          "example_vi": "Bạn có thấy bài báo trong tạp chí không?"
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "The article explains how to stay healthy.",
+          "example_vi": "Bài báo giải thích cách để giữ sức khỏe."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "He is writing an article for the school paper.",
+          "example_vi": "Anh ấy đang viết một bài báo cho tờ báo trường."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "I found a helpful article online.",
+          "example_vi": "Tôi đã tìm thấy một bài báo hữu ích trên mạng."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "The article was very informative.",
+          "example_vi": "Bài báo đó rất nhiều thông tin."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "She published an article last week.",
+          "example_vi": "Cô ấy đã xuất bản một bài báo vào tuần trước."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "The article discusses the new law.",
+          "example_vi": "Bài báo thảo luận về luật mới."
+        },
+        {
+          "meaning_vi": "bài báo",
+          "example_en": "I saved the article to read later.",
+          "example_vi": "Tôi đã lưu bài báo đó để đọc sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ bài báo và 10 ví dụ phù hợp với từ loại danh từ.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ article được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "article",
+      "normalized_word": "article",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I read an interesting article in the newspaper.",
+      "example_vi_clean": "Tôi đã đọc một bài báo thú vị trên tờ báo."
+    },
+    {
+      "id": 24044,
+      "quiz_meaning_vi": "thức",
+      "meaning_vi_clean": "thức",
+      "examples_clean": [
+        {
+          "meaning_vi": "thức",
+          "example_en": "He was awake all night.",
+          "example_vi": "Anh ấy đã thức suốt cả đêm."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "The baby is finally awake.",
+          "example_vi": "Đứa bé cuối cùng đã thức."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "Are you awake yet?",
+          "example_vi": "Bạn đã thức chưa?"
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "She lay awake thinking about the test.",
+          "example_vi": "Cô ấy nằm thức suy nghĩ về bài kiểm tra."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "I was awake before the alarm rang.",
+          "example_vi": "Tôi đã thức trước khi chuông báo thức reo."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "The noise kept me awake.",
+          "example_vi": "Tiếng ồn làm tôi thức."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "He is wide awake now.",
+          "example_vi": "Anh ấy đã hoàn toàn thức rồi."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "She stayed awake to finish her work.",
+          "example_vi": "Cô ấy đã thức để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "Most of the students were awake.",
+          "example_vi": "Hầu hết các học sinh đều đã thức."
+        },
+        {
+          "meaning_vi": "thức",
+          "example_en": "I am still awake.",
+          "example_vi": "Tôi vẫn còn thức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ thức và 10 ví dụ phù hợp với từ loại tính từ.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ awake được dùng làm tính từ trong tất cả các ví dụ."
+      },
+      "word": "awake",
+      "normalized_word": "awake",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was awake all night.",
+      "example_vi_clean": "Anh ấy đã thức suốt cả đêm."
+    }
+  ]
+}

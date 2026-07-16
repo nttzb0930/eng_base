@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-035",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24341,
+      "word": "game",
+      "normalized_word": "game",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/geim/",
+      "primary_meaning_vi": "trò chơi (như bóng đá",
+      "meaning_vi": "trò chơi (như bóng đá, quần vợt, bài lá...); dụng cụ để chơi (các trò chơi); cuộc thi điền kinh, cuộc thi đấu; ván (bài, cờ...); trò cười; chuyện nực cười, trò đùa; sự trêu chọc, sự chế nhạo; trò láu cá, mánh khoé; ý đồ, mưu đồ; thú săn; thịt thú săn; ,  (từ lóng) mục tiêu theo đuổi khó khăn, mục tiêu nguy hiểm; con vật bị săn, con vật bị dồn; người bị theo đuổi, vật bị theo đuổi; bầy (thiên nga); không sung sức; sung sức; có những tham vọng cao hơn; nắm chắc thắng lợi trong tay; làm chủ được cuộc đấu; play; anh thắng cuộc; việc làm lợi chẳng bõ công; thu không bù chi; việc làm đã thất bại; đánh bạc; thua bạc khánh kiệt; như gà chọi; dũng cảm, anh dũng, gan dạ; có nghị lực; bị bại liệt (chân, tay); què, thọt",
+      "example_en": "He's in the securities game somehow.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "In the game of life, you may find yourself playing the waiting game far too often.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The forest has plenty of game.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He didn't get anywhere with her because he had no game.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24342,
+      "word": "garbage",
+      "normalized_word": "garbage",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'gɑ:bidʤ/",
+      "primary_meaning_vi": "lòng",
+      "meaning_vi": "lòng, ruột (thú...); rác (nhà bếp); văn chương sọt rác ((cũng) literary garbage)",
+      "example_en": "Garbage is collected on Tuesdays; rubbish on Fridays",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The garbage truck collects all residential municipal waste.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He threw the newspaper into the garbage.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He gave me some pretty garbage advice last night.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24343,
+      "word": "garden",
+      "normalized_word": "garden",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'gɑ:dn/",
+      "primary_meaning_vi": "vườn",
+      "meaning_vi": "vườn; công viên, vườn; vùng màu mỡ xanh tốt; làm vườn",
+      "example_en": "a vegetable garden a flower garden",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This house has a swimming pool, a tent, a swing set and a fountain in the garden. We were drinking lemonade and playing croquet in the garden. Our garden is overgrown with weeds.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I love to garden — this year I'm going to plant some daffodils.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24344,
+      "word": "get",
+      "normalized_word": "get",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/get/",
+      "primary_meaning_vi": "được",
+      "meaning_vi": "được, có được, kiếm được, lấy được; nhận được, xin được, hỏi được; tìm ra, tính ra; mua; học (thuộc lòng); mắc phải; ăn; bắt được (cá, thú rừng...); đem về, thu về (thóc...); hiểu được, nắm được (ý...); đưa, mang, chuyền, đem, đi lấy; bị, chịu; dồn (ai) vào thế bí, dồn (ai) vào chân tường; làm (ai) bối rối lúng túng không biết ăn nói ra sao; làm cho, khiến cho; sai ai, bảo ai, nhờ ai (làm gì); to have got có, phải; sinh, đẻ (thú vật; ít khi dùng cho người); tìm hộ, mua hộ, xoay hộ, cung cấp; đến, tới, đạt đến; trở nên, trở thành, thành ra, đi đến chỗ; bắt đầu; cút đi, chuồn",
+      "example_en": "I'm going to get a computer tomorrow from the discount store.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He got a severe reprimand for that.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I've got a concert ticket for you.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can you get my bag from the living-room, please?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24345,
+      "word": "ghost",
+      "normalized_word": "ghost",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/goust/",
+      "primary_meaning_vi": "ma",
+      "meaning_vi": "ma; gầy như ma; bóng mờ, nét thoáng một chút; người giúp việc kín đáo cho một nhà văn; người viết thuê cho một nhà văn; linh hồn, hồn; ,  (từ lóng) đã có lương; sắp có lương; hiện ra, ám ảnh, lảng vảng như một bóng ma; giúp việc kín đáo cho một nhà văn; viết thuê cho một nhà văn",
+      "example_en": "Everyone believed that the ghost of an old lady haunted the crypt.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "not a ghost of a chance; the ghost of an idea",
+          "example_vi": null
+        },
+        {
+          "example_en": "ghost slug; ghostberry; ghostflower; ghost crab; ghost bat",
+          "example_vi": null
+        },
+        {
+          "example_en": "ghost ant; ghost catfish; ghost nipper; ghost nudibranch",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24346,
+      "word": "gift",
+      "normalized_word": "gift",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/gift/",
+      "primary_meaning_vi": "sự ban cho",
+      "meaning_vi": "sự ban cho, sự cho, sự tặng; quà tặng, quà biếu; tài, thiên tài, năng khiếu; tặng, biếu, cho; ban cho, phú cho",
+      "example_en": "She had a gift for playing the flute.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The office is in the gift of the President.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24347,
+      "word": "girl",
+      "normalized_word": "girl",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/gə:l/",
+      "primary_meaning_vi": "con gái",
+      "meaning_vi": "con gái; cô gái giúp việc (trong gia đình); người yêu, người tình ((cũng) best girl); bọn con gái (có chồng và chưa chồng) trong nhà; nữ hướng đạo; nhà tôi, bu n",
+      "example_en": "Your girl turned up on our doorstep.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Don't be such a girl!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24348,
+      "word": "give",
+      "normalized_word": "give",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/giv/",
+      "primary_meaning_vi": "cho",
+      "meaning_vi": "cho, biếu, tặng, ban; cho, sinh ra, đem lại; nêu cho; đưa cho, trao cho, đem cho, chuyển cho; truyền cho, làm lây sang; trả (tiền...); trao đổi; làm cho, gây ra; cống hiến, hiến dâng; ham mê, miệt mài, chuyên tâm; tan, vỡ, sụp đổ; lún xuống, trĩu xuống; có thể nhún nhẩy, co giãn (như lò xo); quay ra, nhìn ra, dẫn; chỉ, đưa ra, để lộ ra; đồng ý, thoả thuận; nhường, nhượng bộ; coi như, cho là, cho rằng; quyết định xử; cho; trao, phát (phần thưởng); tố cáo, phát giác; để lộ, phản bội; hoàn lại, trả lại; toả ra, phát ra, bốc (sức nóng, ánh sáng, mùi, tiếng...); công bố (tin tức...); nhượng bộ, chịu thua; nộp (tài liêu...); ghi vào, điền vào; toả ra, phát ra, bốc ra, bốc lên, xông lên (mùi, hơi nóng, khói...); chia, phân phối; toả ra, phát ra, làm bay ra, bốc lên, xông lên (hơi nóng, mùi...); rao, công bố; hết, cạn; bị hư, bị hỏng (máy móc); mệt, quỵ, kiệt đi (sức); cho (phỏng vấn); thôi, chấm dứt; vứt bỏ, bỏ; bỏ, từ bỏ; nhường; coi như là tuyệt vọng, cho như là không chữa được; trao, nộp (cho nhà chức trách...); khai báo (đồng bọn); đam mê, đắm đuối, miệt mài (học tập); back; ăn miếng chả, trả miếng bùi; tôi thích, tôi phục; mắng mỏ ai, xỉ vả đánh đập ai; mắng mỏ (chỉnh, xỉ vả) ai, trừng phạt ai nghiêm khắc; công bố; day; nhượng bộ; chịu thua; kiệt đi (sức khoẻ); cong, oằn, lún xuống, tan, gây, đứt; bị giảm giá, sụt xuống; rán sức chèo; bị bật đi, bị thay thế; tính đàn hồi, tính co giân, tính nhún nhảy được; sự có đi có lại; sự nhượng bộ lẫn nhau, sự thoả hiệp; sự bông đùa qua lại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24349,
+      "word": "glad",
+      "normalized_word": "glad",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/glæd/",
+      "primary_meaning_vi": "vui lòng",
+      "meaning_vi": "vui lòng, sung sướng, vui mừng, vui vẻ, hân hoan; nhìn ai âu yếm, liếc mắt đưa tình; nhìn ai hân hoan; tiếp đón ai niềm nở; quần áo ngày hội",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24350,
+      "word": "glass",
+      "normalized_word": "glass",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/glɑ:s/",
+      "primary_meaning_vi": "kính thuỷ tinh",
+      "meaning_vi": "kính thuỷ tinh; đồ dùng bằng thuỷ tinh (nói chung); cái cốc; (một) cốc; cái phong vũ biểu ((cũng) weather glass); ống nhòm; thấu kính; mặt kính (đồng hồ, cửa sổ); nhà kính (trồng cây); gương soi ((cũng) looking glass); đồng hồ cát; kính đeo mắt; quá chén; nhìn (sự việc...) một cách bi quan yếm thế; thèm muốn, ghen tức; lắp kính, lồng kính; phản chiếu; soi mình; đóng vào hòm kính",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

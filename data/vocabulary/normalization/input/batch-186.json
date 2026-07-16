@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-186",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25851,
+      "word": "damage",
+      "normalized_word": "damage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ+ (endamage)",
+      "phonetic": "/'dæmidʤ/",
+      "primary_meaning_vi": "mối hại",
+      "meaning_vi": "mối hại, điều hại, điều bất lợi; sự thiệt hại; tiền bồi thường thiệt hại; tiền bồi thường tai nạn; giá tiền; làm hư hại, làm hỏng, gây thiệt hại, gây tổn hại; làm hại (ai); làm tổn thương (danh dự...)",
+      "example_en": "The storm did a lot of damage to the area.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "\"What's the damage?\" he asked the waiter.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Be careful not to damage any of the fragile items while unpacking them.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25852,
+      "word": "damp",
+      "normalized_word": "damp",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'dæmp/",
+      "primary_meaning_vi": "sự ẩm ướt",
+      "meaning_vi": "sự ẩm ướt; không khí ẩm thấp; khi mỏ; sự nản chí, sự ngã lòng, sự nản lòng, sự chán nản; rượu, đồ uống có chất rượu; sự uống rượu; ẩm, ẩm thấp, ẩm ướt; làm ẩm, thấm ướt; rấm (lửa); làm nghẹt (tiếng); (âm nhạc) làm cho bớt ngân, làm cho bớt rung (dây đàn); làm nản chí, làm nản lòng, làm chán nản, làm chán nản; làm mất vui, làm cụt hứng; hãm lại, cản lại; làm giảm chấn động, làm giảm xóc, chống rung; to damp off thối rụng; chết vì bị úng nước (cây cối...); tắt đèn",
+      "example_en": "to damp cloth",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The lawn was still damp so we decided not to sit down.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25853,
+      "word": "dangerously",
+      "normalized_word": "dangerously",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'deindʤəsli/",
+      "primary_meaning_vi": "nguy hiểm",
+      "meaning_vi": "nguy hiểm; hiểm nghèo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25854,
+      "word": "dare",
+      "normalized_word": "dare",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ (dared,  durst; dared)",
+      "phonetic": "/deə/",
+      "primary_meaning_vi": "sự dám làm",
+      "meaning_vi": "sự dám làm; sự thách thức; dám, dám đương đầu với; thách; tôi dám chắc; tôi dám chắc là như vậy",
+      "example_en": "I wouldn't dare argue with my boss.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I dare you (to) kiss that girl.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Will you dare death to reach your goal?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25855,
+      "word": "darkness",
+      "normalized_word": "darkness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dɑ:knis/",
+      "primary_meaning_vi": "bóng tối",
+      "meaning_vi": "bóng tối, cảnh tối tăm; màu sạm, màu đen sạm; tình trạng mơ hồ, tình trạng không rõ ràng, tình trạng không minh bạch; sự dốt nát, sự ngu dốt; sự không hay biết gì; sự bí mật, sự kín đáo; sự đen tối, sự ám muội; sự nham hiểm, sự cay độc; prince",
+      "example_en": "The darkness of the room made it difficult to see.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The darkness of her skin betrayed her Mediterranean heritage.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25856,
+      "word": "daze",
+      "normalized_word": "daze",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/deiz/",
+      "primary_meaning_vi": "mica",
+      "meaning_vi": "mica; sự sửng sốt, sự ngạc nhiên, sự kinh ngạc, sự sững sờ; tình trạng mê mụ, tình trạng mê mẩn (vì thuốc độc, rượu nặng...); tình trạng bàng hoàng, tình trạng choáng váng; sự loá mắt, sự quáng mắt; làm sửng sốt, làm ngạc nhiên, làm sững sờ; làm mê mụ, làm mê mẩn (thuốc độc, rượu nặng...); làm bàng hoàng, làm choáng váng, làm điếng người; làm loá mắt, làm chói mắt, làm quáng mắt",
+      "example_en": "He was in a daze.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25857,
+      "word": "dazzle",
+      "normalized_word": "dazzle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dæzl/",
+      "primary_meaning_vi": "sự loá mắt",
+      "meaning_vi": "sự loá mắt, sự chói mắt, sự hoa mắt, sự quáng mắt ((nghĩa đen) & (nghĩa bóng)); ánh sáng chói; thuật sơn nguỵ trang một chiếc tàu); làm loá mắt, làm chói mắt, làm hoa mắt, làm quáng mắt ((nghĩa đen) & (nghĩa bóng)); làm sững sờ, làm kinh ngạc; sơn nguỵ trang (một chiếc tàu)",
+      "example_en": "Dazzled by the headlights of the lorry, the deer stopped in the middle of the street.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The delegates were dazzled by the originality of his arguments.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25858,
+      "word": "deadline",
+      "normalized_word": "deadline",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "đường giới hạn không được vượt qua",
+      "meaning_vi": "đường giới hạn không được vượt qua; hạn cuối cùng (trả tiền, rút quân...); thời điểm phải làm xong cái gì, thời hạn cuối cùng; đường giới hạn trong sân nhà tù (người tù bước qua có thể bị bắn ngay tại chỗ)",
+      "example_en": "I must make this deadline or my boss will kill me!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25859,
+      "word": "deadly",
+      "normalized_word": "deadly",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/'dedli/",
+      "primary_meaning_vi": "làm chết người",
+      "meaning_vi": "làm chết người, trí mạng, chí tử; sự chết chóc; như chết; vô cùng, hết sức; như chết; vô cùng, hết sức, cực kỳ",
+      "example_en": "deadly enemies",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Her face suddenly became deadly white.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25860,
+      "word": "deaf",
+      "normalized_word": "deaf",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/def/",
+      "primary_meaning_vi": "điếc",
+      "meaning_vi": "điếc; làm thinh, làm ngơ; điếc đặc, điếc lòi ra; không có kẻ nào điếc hơn là kẻ không muốn nghe (lẽ phải...)",
+      "example_en": "Those people are deaf to reason.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a deaf nut; deaf corn",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

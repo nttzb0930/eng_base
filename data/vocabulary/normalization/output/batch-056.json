@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24551,
+      "quiz_meaning_vi": "mới",
+      "meaning_vi_clean": "mới; mới mẻ; hiện đại; chưa quen",
+      "examples_clean": [
+        {
+          "meaning_vi": "mới",
+          "example_en": "I bought a new car yesterday.",
+          "example_vi": "Tôi đã mua một chiếc xe hơi mới ngày hôm qua."
+        },
+        {
+          "meaning_vi": "mới",
+          "example_en": "She is a new student in our class.",
+          "example_vi": "Cô ấy là một học sinh mới trong lớp chúng tôi."
+        },
+        {
+          "meaning_vi": "mới",
+          "example_en": "They moved into a new apartment last week.",
+          "example_vi": "Họ đã chuyển vào một căn hộ mới tuần trước."
+        },
+        {
+          "meaning_vi": "mới",
+          "example_en": "This is a new experience for me.",
+          "example_vi": "Đây là một trải nghiệm mới đối với tôi."
+        },
+        {
+          "meaning_vi": "mới mẻ",
+          "example_en": "The idea sounds very new and exciting.",
+          "example_vi": "Ý tưởng này nghe rất mới mẻ và thú vị."
+        },
+        {
+          "meaning_vi": "mới mẻ",
+          "example_en": "We need a new approach to solve this problem.",
+          "example_vi": "Chúng ta cần một cách tiếp cận mới mẻ để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "hiện đại",
+          "example_en": "They use new technology in their factory.",
+          "example_vi": "Họ sử dụng công nghệ hiện đại trong nhà máy của họ."
+        },
+        {
+          "meaning_vi": "hiện đại",
+          "example_en": "The building has a new design.",
+          "example_vi": "Tòa nhà có một thiết kế hiện đại."
+        },
+        {
+          "meaning_vi": "chưa quen",
+          "example_en": "Everything here is new to me.",
+          "example_vi": "Mọi thứ ở đây đều chưa quen với tôi."
+        },
+        {
+          "meaning_vi": "chưa quen",
+          "example_en": "I am new to this city.",
+          "example_vi": "Tôi chưa quen với thành phố này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ phó từ thành tính từ. Bổ sung nghĩa và ví dụ phù hợp CEFR A1.",
+      "word": "new",
+      "normalized_word": "new",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I bought a new car yesterday.",
+      "example_vi_clean": "Tôi đã mua một chiếc xe hơi mới ngày hôm qua."
+    },
+    {
+      "id": 24552,
+      "quiz_meaning_vi": "tin",
+      "meaning_vi_clean": "tin; tin tức",
+      "examples_clean": [
+        {
+          "meaning_vi": "tin",
+          "example_en": "Is there any news about the meeting?",
+          "example_vi": "Có tin gì về cuộc họp không?"
+        },
+        {
+          "meaning_vi": "tin",
+          "example_en": "I have some good news for you.",
+          "example_vi": "Tôi có một tin tốt cho bạn."
+        },
+        {
+          "meaning_vi": "tin",
+          "example_en": "Did you hear the news this morning?",
+          "example_vi": "Bạn có nghe tin tức sáng nay không?"
+        },
+        {
+          "meaning_vi": "tin",
+          "example_en": "That is terrible news.",
+          "example_vi": "Đó là một tin khủng khiếp."
+        },
+        {
+          "meaning_vi": "tin tức",
+          "example_en": "She watches the news every evening.",
+          "example_vi": "Cô ấy xem tin tức mỗi tối."
+        },
+        {
+          "meaning_vi": "tin tức",
+          "example_en": "The news is on at six o'clock.",
+          "example_vi": "Tin tức bắt đầu lúc sáu giờ."
+        },
+        {
+          "meaning_vi": "tin tức",
+          "example_en": "He works for a news agency.",
+          "example_vi": "Anh ấy làm việc cho một hãng tin tức."
+        },
+        {
+          "meaning_vi": "tin tức",
+          "example_en": "I read the news online.",
+          "example_vi": "Tôi đọc tin tức trên mạng."
+        },
+        {
+          "meaning_vi": "tin tức",
+          "example_en": "The news spread quickly through the town.",
+          "example_vi": "Tin tức lan truyền nhanh chóng khắp thị trấn."
+        },
+        {
+          "meaning_vi": "tin tức",
+          "example_en": "We are waiting for more news.",
+          "example_vi": "Chúng tôi đang chờ thêm tin tức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung ví dụ tự nhiên.",
+      "word": "news",
+      "normalized_word": "news",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Is there any news about the meeting?",
+      "example_vi_clean": "Có tin gì về cuộc họp không?"
+    },
+    {
+      "id": 24553,
+      "quiz_meaning_vi": "báo",
+      "meaning_vi_clean": "báo",
+      "examples_clean": [
+        {
+          "meaning_vi": "báo",
+          "example_en": "She reads the newspaper every morning.",
+          "example_vi": "Cô ấy đọc báo mỗi sáng."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "He bought a newspaper at the station.",
+          "example_vi": "Anh ấy đã mua một tờ báo tại nhà ga."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "There is an interesting article in the newspaper.",
+          "example_vi": "Có một bài báo thú vị trên tờ báo."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "I left my newspaper on the bus.",
+          "example_vi": "Tôi đã để quên tờ báo trên xe buýt."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "The newspaper reported the accident.",
+          "example_vi": "Tờ báo đã đưa tin về vụ tai nạn."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "Can you pass me the newspaper?",
+          "example_vi": "Bạn có thể đưa cho tôi tờ báo không?"
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "He works as a reporter for a local newspaper.",
+          "example_vi": "Anh ấy làm phóng viên cho một tờ báo địa phương."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "The newspaper is full of advertisements.",
+          "example_vi": "Tờ báo đầy những quảng cáo."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "She cut a picture out of the newspaper.",
+          "example_vi": "Cô ấy cắt một bức ảnh ra khỏi tờ báo."
+        },
+        {
+          "meaning_vi": "báo",
+          "example_en": "I subscribe to a daily newspaper.",
+          "example_vi": "Tôi đặt mua một tờ báo hàng ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa động từ hiếm gặp, tập trung vào nghĩa danh từ phổ biến.",
+      "word": "newspaper",
+      "normalized_word": "newspaper",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She reads the newspaper every morning.",
+      "example_vi_clean": "Cô ấy đọc báo mỗi sáng."
+    },
+    {
+      "id": 24554,
+      "quiz_meaning_vi": "thú vị",
+      "meaning_vi_clean": "thú vị; tốt; xinh đẹp; ngoan",
+      "examples_clean": [
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "It was a nice day for a walk.",
+          "example_vi": "Đó là một ngày thú vị để đi dạo."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "We had a nice time at the party.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian thú vị tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "That is a nice idea.",
+          "example_vi": "Đó là một ý tưởng thú vị."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "It is nice to meet you.",
+          "example_vi": "Rất thú vị khi được gặp bạn."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "She is a very nice person.",
+          "example_vi": "Cô ấy là một người rất tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "Thank you, that is very nice of you.",
+          "example_vi": "Cảm ơn bạn, bạn thật tốt."
+        },
+        {
+          "meaning_vi": "xinh đẹp",
+          "example_en": "You look nice in that dress.",
+          "example_vi": "Bạn trông thật xinh đẹp trong chiếc váy đó."
+        },
+        {
+          "meaning_vi": "xinh đẹp",
+          "example_en": "What a nice house!",
+          "example_vi": "Ngôi nhà thật xinh đẹp!"
+        },
+        {
+          "meaning_vi": "ngoan",
+          "example_en": "Be a nice child and listen to your mother.",
+          "example_vi": "Hãy là một đứa trẻ ngoan và nghe lời mẹ."
+        },
+        {
+          "meaning_vi": "ngoan",
+          "example_en": "The students were very nice during the trip.",
+          "example_vi": "Các học sinh rất ngoan trong suốt chuyến đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc bỏ các nghĩa quá chuyên sâu hoặc không phù hợp A1, giữ lại các nghĩa phổ biến.",
+      "word": "nice",
+      "normalized_word": "nice",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was a nice day for a walk.",
+      "example_vi_clean": "Đó là một ngày thú vị để đi dạo."
+    },
+    {
+      "id": 24555,
+      "quiz_meaning_vi": "đêm",
+      "meaning_vi_clean": "đêm",
+      "examples_clean": [
+        {
+          "meaning_vi": "đêm",
+          "example_en": "I work at night.",
+          "example_vi": "Tôi làm việc vào ban đêm."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "The stars shine at night.",
+          "example_vi": "Những ngôi sao tỏa sáng vào ban đêm."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "We arrived late at night.",
+          "example_vi": "Chúng tôi đến nơi vào đêm muộn."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "She reads a book every night.",
+          "example_vi": "Cô ấy đọc sách mỗi đêm."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "It was a cold night.",
+          "example_vi": "Đó là một đêm lạnh giá."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "They went out last night.",
+          "example_vi": "Họ đã đi chơi tối qua."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "The city is beautiful at night.",
+          "example_vi": "Thành phố rất đẹp vào ban đêm."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "I had a dream last night.",
+          "example_vi": "Tôi đã có một giấc mơ đêm qua."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "The night is very quiet.",
+          "example_vi": "Đêm rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "đêm",
+          "example_en": "We will leave tomorrow night.",
+          "example_vi": "Chúng tôi sẽ rời đi vào đêm mai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa nghĩa danh từ cơ bản.",
+      "word": "night",
+      "normalized_word": "night",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I work at night.",
+      "example_vi_clean": "Tôi làm việc vào ban đêm."
+    },
+    {
+      "id": 24556,
+      "quiz_meaning_vi": "chín",
+      "meaning_vi_clean": "chín",
+      "examples_clean": [
+        {
+          "meaning_vi": "chín",
+          "example_en": "I have nine apples.",
+          "example_vi": "Tôi có chín quả táo."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "There are nine students in the room.",
+          "example_vi": "Có chín học sinh trong phòng."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "He is nine years old.",
+          "example_vi": "Cậu ấy chín tuổi."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "The meeting starts at nine.",
+          "example_vi": "Cuộc họp bắt đầu lúc chín giờ."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "She bought nine books.",
+          "example_vi": "Cô ấy đã mua chín cuốn sách."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "We need nine chairs.",
+          "example_vi": "Chúng tôi cần chín cái ghế."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "They have nine cats.",
+          "example_vi": "Họ có chín con mèo."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "I have nine brothers and sisters.",
+          "example_vi": "Tôi có chín anh chị em."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "The bus leaves at nine thirty.",
+          "example_vi": "Xe buýt rời đi lúc chín giờ ba mươi."
+        },
+        {
+          "meaning_vi": "chín",
+          "example_en": "He has nine dollars.",
+          "example_vi": "Anh ấy có chín đô la."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không liên quan, tập trung vào số đếm.",
+      "word": "nine",
+      "normalized_word": "nine",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "I have nine apples.",
+      "example_vi_clean": "Tôi có chín quả táo."
+    },
+    {
+      "id": 24557,
+      "quiz_meaning_vi": "mười chín",
+      "meaning_vi_clean": "mười chín",
+      "examples_clean": [
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "She is nineteen years old.",
+          "example_vi": "Cô ấy mười chín tuổi."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "There are nineteen people here.",
+          "example_vi": "Có mười chín người ở đây."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "I have nineteen pens.",
+          "example_vi": "Tôi có mười chín cái bút."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "He read nineteen pages.",
+          "example_vi": "Anh ấy đã đọc mười chín trang."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "They have nineteen cars.",
+          "example_vi": "Họ có mười chín chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "We need nineteen tickets.",
+          "example_vi": "Chúng tôi cần mười chín tấm vé."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "The price is nineteen dollars.",
+          "example_vi": "Giá là mười chín đô la."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "She has nineteen cousins.",
+          "example_vi": "Cô ấy có mười chín người anh em họ."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "There are nineteen days left.",
+          "example_vi": "Còn mười chín ngày nữa."
+        },
+        {
+          "meaning_vi": "mười chín",
+          "example_en": "He bought nineteen flowers.",
+          "example_vi": "Anh ấy đã mua mười chín bông hoa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không liên quan, tập trung vào số đếm.",
+      "word": "nineteen",
+      "normalized_word": "nineteen",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "She is nineteen years old.",
+      "example_vi_clean": "Cô ấy mười chín tuổi."
+    },
+    {
+      "id": 24558,
+      "quiz_meaning_vi": "chín mươi",
+      "meaning_vi_clean": "chín mươi",
+      "examples_clean": [
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "He is ninety years old.",
+          "example_vi": "Ông ấy chín mươi tuổi."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "There are ninety students in the hall.",
+          "example_vi": "Có chín mươi học sinh trong hội trường."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "The test has ninety questions.",
+          "example_vi": "Bài kiểm tra có chín mươi câu hỏi."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "I have ninety pages to read.",
+          "example_vi": "Tôi có chín mươi trang cần đọc."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "The bus costs ninety cents.",
+          "example_vi": "Xe buýt có giá chín mươi xu."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "They have ninety minutes to finish.",
+          "example_vi": "Họ có chín mươi phút để hoàn thành."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "She bought ninety stamps.",
+          "example_vi": "Cô ấy đã mua chín mươi con tem."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "There are ninety seats in the theater.",
+          "example_vi": "Có chín mươi chỗ ngồi trong nhà hát."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "He has ninety dollars in his pocket.",
+          "example_vi": "Anh ấy có chín mươi đô la trong túi."
+        },
+        {
+          "meaning_vi": "chín mươi",
+          "example_en": "We need ninety more bricks.",
+          "example_vi": "Chúng tôi cần thêm chín mươi viên gạch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không liên quan, tập trung vào số đếm.",
+      "word": "ninety",
+      "normalized_word": "ninety",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "He is ninety years old.",
+      "example_vi_clean": "Ông ấy chín mươi tuổi."
+    },
+    {
+      "id": 24559,
+      "quiz_meaning_vi": "không",
+      "meaning_vi_clean": "không",
+      "examples_clean": [
+        {
+          "meaning_vi": "không",
+          "example_en": "No, I do not want any coffee.",
+          "example_vi": "Không, tôi không muốn uống cà phê."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "There is no milk in the fridge.",
+          "example_vi": "Không có sữa trong tủ lạnh."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "No smoking in this area.",
+          "example_vi": "Không hút thuốc trong khu vực này."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "I have no idea what you mean.",
+          "example_vi": "Tôi không có ý kiến gì về điều bạn nói."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "There is no time to lose.",
+          "example_vi": "Không còn thời gian để lãng phí nữa."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "No one was at home.",
+          "example_vi": "Không có ai ở nhà cả."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "He has no friends here.",
+          "example_vi": "Anh ấy không có bạn bè ở đây."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "There is no reason to be sad.",
+          "example_vi": "Không có lý do gì để buồn cả."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "No, that is not correct.",
+          "example_vi": "Không, điều đó không đúng."
+        },
+        {
+          "meaning_vi": "không",
+          "example_en": "I have no money left.",
+          "example_vi": "Tôi không còn tiền."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành phó từ/từ hạn định. Bổ sung ví dụ phổ biến.",
+      "word": "no",
+      "normalized_word": "no",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "No, I do not want any coffee.",
+      "example_vi_clean": "Không, tôi không muốn uống cà phê."
+    },
+    {
+      "id": 24560,
+      "quiz_meaning_vi": "tiếng",
+      "meaning_vi_clean": "tiếng; tiếng ồn",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng",
+          "example_en": "I heard a strange noise outside.",
+          "example_vi": "Tôi nghe thấy một tiếng lạ bên ngoài."
+        },
+        {
+          "meaning_vi": "tiếng",
+          "example_en": "What was that noise?",
+          "example_vi": "Tiếng đó là gì vậy?"
+        },
+        {
+          "meaning_vi": "tiếng",
+          "example_en": "The machine makes a loud noise.",
+          "example_vi": "Cái máy tạo ra một tiếng ồn lớn."
+        },
+        {
+          "meaning_vi": "tiếng",
+          "example_en": "I cannot sleep because of the noise.",
+          "example_vi": "Tôi không thể ngủ được vì tiếng ồn."
+        },
+        {
+          "meaning_vi": "tiếng ồn",
+          "example_en": "The noise in the city is annoying.",
+          "example_vi": "Tiếng ồn trong thành phố thật khó chịu."
+        },
+        {
+          "meaning_vi": "tiếng ồn",
+          "example_en": "Please stop the noise.",
+          "example_vi": "Làm ơn dừng tiếng ồn lại."
+        },
+        {
+          "meaning_vi": "tiếng ồn",
+          "example_en": "There is too much noise here.",
+          "example_vi": "Ở đây có quá nhiều tiếng ồn."
+        },
+        {
+          "meaning_vi": "tiếng ồn",
+          "example_en": "The noise from the street is loud.",
+          "example_vi": "Tiếng ồn từ đường phố rất lớn."
+        },
+        {
+          "meaning_vi": "tiếng ồn",
+          "example_en": "He complained about the noise.",
+          "example_vi": "Anh ấy phàn nàn về tiếng ồn."
+        },
+        {
+          "meaning_vi": "tiếng ồn",
+          "example_en": "We tried to reduce the noise.",
+          "example_vi": "Chúng tôi đã cố gắng giảm tiếng ồn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Bổ sung ví dụ phù hợp.",
+      "word": "noise",
+      "normalized_word": "noise",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I heard a strange noise outside.",
+      "example_vi_clean": "Tôi nghe thấy một tiếng lạ bên ngoài."
+    }
+  ]
+}

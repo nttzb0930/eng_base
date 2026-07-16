@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25881,
+      "quiz_meaning_vi": "thanh nhã",
+      "meaning_vi_clean": "thanh nhã; dễ vỡ; tinh tế; tế nhị",
+      "examples_clean": [
+        {
+          "meaning_vi": "thanh nhã",
+          "example_en": "She has a very delicate sense of style.",
+          "example_vi": "Cô ấy có gu thẩm mỹ rất thanh nhã."
+        },
+        {
+          "meaning_vi": "thanh nhã",
+          "example_en": "The flowers have a delicate scent.",
+          "example_vi": "Những bông hoa có mùi hương thanh nhã."
+        },
+        {
+          "meaning_vi": "thanh nhã",
+          "example_en": "The lace pattern is extremely delicate.",
+          "example_vi": "Họa tiết ren này cực kỳ thanh nhã."
+        },
+        {
+          "meaning_vi": "thanh nhã",
+          "example_en": "Her features are small and delicate.",
+          "example_vi": "Các đường nét trên khuôn mặt cô ấy nhỏ nhắn và thanh nhã."
+        },
+        {
+          "meaning_vi": "dễ vỡ",
+          "example_en": "Be careful with that vase, it is very delicate.",
+          "example_vi": "Hãy cẩn thận với chiếc bình đó, nó rất dễ vỡ."
+        },
+        {
+          "meaning_vi": "dễ vỡ",
+          "example_en": "These delicate glasses need to be packed carefully.",
+          "example_vi": "Những chiếc ly dễ vỡ này cần được đóng gói cẩn thận."
+        },
+        {
+          "meaning_vi": "tinh tế",
+          "example_en": "The painting shows a delicate balance of colors.",
+          "example_vi": "Bức tranh thể hiện sự cân bằng tinh tế về màu sắc."
+        },
+        {
+          "meaning_vi": "tinh tế",
+          "example_en": "He has a delicate touch when playing the piano.",
+          "example_vi": "Anh ấy có những ngón tay tinh tế khi chơi đàn piano."
+        },
+        {
+          "meaning_vi": "tế nhị",
+          "example_en": "This is a delicate matter that requires privacy.",
+          "example_vi": "Đây là một vấn đề tế nhị cần sự riêng tư."
+        },
+        {
+          "meaning_vi": "tế nhị",
+          "example_en": "She handled the delicate situation with great care.",
+          "example_vi": "Cô ấy đã xử lý tình huống tế nhị đó rất cẩn thận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 4 nghĩa phổ biến nhất, phân bổ ví dụ theo quy tắc.",
+      "word": "delicate",
+      "normalized_word": "delicate",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has a very delicate sense of style.",
+      "example_vi_clean": "Cô ấy có gu thẩm mỹ rất thanh nhã."
+    },
+    {
+      "id": 25882,
+      "quiz_meaning_vi": "sự vui thích",
+      "meaning_vi_clean": "sự vui thích; làm cho vui thích",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự vui thích",
+          "example_en": "The children shouted with delight when they saw the snow.",
+          "example_vi": "Lũ trẻ reo lên vì vui thích khi thấy tuyết rơi."
+        },
+        {
+          "meaning_vi": "sự vui thích",
+          "example_en": "She took great delight in helping others.",
+          "example_vi": "Cô ấy cảm thấy rất vui thích khi giúp đỡ người khác."
+        },
+        {
+          "meaning_vi": "sự vui thích",
+          "example_en": "It was a delight to see her again after so long.",
+          "example_vi": "Thật là một sự vui thích khi được gặp lại cô ấy sau bao lâu."
+        },
+        {
+          "meaning_vi": "sự vui thích",
+          "example_en": "He read the book with pure delight.",
+          "example_vi": "Anh ấy đọc cuốn sách với sự vui thích thuần túy."
+        },
+        {
+          "meaning_vi": "làm cho vui thích",
+          "example_en": "The circus performance delights audiences of all ages.",
+          "example_vi": "Màn trình diễn xiếc làm cho khán giả mọi lứa tuổi vui thích."
+        },
+        {
+          "meaning_vi": "làm cho vui thích",
+          "example_en": "The garden delights visitors with its colorful flowers.",
+          "example_vi": "Khu vườn làm cho du khách vui thích với những bông hoa rực rỡ."
+        },
+        {
+          "meaning_vi": "làm cho vui thích",
+          "example_en": "His music delights the hearts of many people.",
+          "example_vi": "Âm nhạc của anh ấy làm cho trái tim nhiều người vui thích."
+        },
+        {
+          "meaning_vi": "làm cho vui thích",
+          "example_en": "The new park delights the neighborhood children.",
+          "example_vi": "Công viên mới làm cho lũ trẻ trong khu phố vui thích."
+        },
+        {
+          "meaning_vi": "làm cho vui thích",
+          "example_en": "The chef delights guests with his creative dishes.",
+          "example_vi": "Đầu bếp làm cho thực khách vui thích với những món ăn sáng tạo."
+        },
+        {
+          "meaning_vi": "làm cho vui thích",
+          "example_en": "The story delights everyone who reads it.",
+          "example_vi": "Câu chuyện làm cho bất cứ ai đọc nó đều vui thích."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, bổ sung ví dụ.",
+      "word": "delight",
+      "normalized_word": "delight",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The children shouted with delight when they saw the snow.",
+      "example_vi_clean": "Lũ trẻ reo lên vì vui thích khi thấy tuyết rơi."
+    },
+    {
+      "id": 25883,
+      "quiz_meaning_vi": "vui mừng",
+      "meaning_vi_clean": "vui mừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "I am delighted to meet you at last.",
+          "example_vi": "Tôi rất vui mừng khi cuối cùng cũng được gặp bạn."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "She was delighted with her new job.",
+          "example_vi": "Cô ấy rất vui mừng với công việc mới của mình."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "We are delighted that you could come.",
+          "example_vi": "Chúng tôi rất vui mừng vì bạn đã có thể đến."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "He was delighted by the surprise party.",
+          "example_vi": "Anh ấy rất vui mừng vì bữa tiệc bất ngờ."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "They were delighted to hear the good news.",
+          "example_vi": "Họ rất vui mừng khi nghe tin tốt."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "The children were delighted with their presents.",
+          "example_vi": "Lũ trẻ rất vui mừng với những món quà của chúng."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "I would be delighted to help you with your project.",
+          "example_vi": "Tôi sẽ rất vui mừng được giúp bạn với dự án của mình."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "She was delighted to see her old friends again.",
+          "example_vi": "Cô ấy rất vui mừng khi được gặp lại những người bạn cũ."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "Everyone was delighted by the beautiful performance.",
+          "example_vi": "Mọi người đều rất vui mừng trước màn trình diễn tuyệt vời."
+        },
+        {
+          "meaning_vi": "vui mừng",
+          "example_en": "He was delighted to receive the award.",
+          "example_vi": "Anh ấy rất vui mừng khi nhận được giải thưởng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ cho nghĩa vui mừng.",
+      "word": "delighted",
+      "normalized_word": "delighted",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I am delighted to meet you at last.",
+      "example_vi_clean": "Tôi rất vui mừng khi cuối cùng cũng được gặp bạn."
+    },
+    {
+      "id": 25884,
+      "quiz_meaning_vi": "thích thú",
+      "meaning_vi_clean": "thích thú; làm say mê",
+      "examples_clean": [
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "We had a delightful time at the beach.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian thích thú ở bãi biển."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "It was a delightful conversation with an old friend.",
+          "example_vi": "Đó là một cuộc trò chuyện thích thú với một người bạn cũ."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "The weather was delightful all week.",
+          "example_vi": "Thời tiết thật thích thú suốt cả tuần."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "She has a delightful personality.",
+          "example_vi": "Cô ấy có một tính cách thật thích thú."
+        },
+        {
+          "meaning_vi": "làm say mê",
+          "example_en": "The music was absolutely delightful.",
+          "example_vi": "Âm nhạc thật sự làm say mê."
+        },
+        {
+          "meaning_vi": "làm say mê",
+          "example_en": "The garden is a delightful place to relax.",
+          "example_vi": "Khu vườn là một nơi làm say mê để thư giãn."
+        },
+        {
+          "meaning_vi": "làm say mê",
+          "example_en": "They gave a delightful performance last night.",
+          "example_vi": "Họ đã có một màn trình diễn làm say mê tối qua."
+        },
+        {
+          "meaning_vi": "làm say mê",
+          "example_en": "The book tells a delightful story about nature.",
+          "example_vi": "Cuốn sách kể một câu chuyện làm say mê về thiên nhiên."
+        },
+        {
+          "meaning_vi": "làm say mê",
+          "example_en": "The view from the balcony is delightful.",
+          "example_vi": "Khung cảnh từ ban công thật làm say mê."
+        },
+        {
+          "meaning_vi": "làm say mê",
+          "example_en": "It was a delightful surprise to see them.",
+          "example_vi": "Đó là một sự bất ngờ làm say mê khi thấy họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "delightful",
+      "normalized_word": "delightful",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We had a delightful time at the beach.",
+      "example_vi_clean": "Chúng tôi đã có một khoảng thời gian thích thú ở bãi biển."
+    },
+    {
+      "id": 25885,
+      "quiz_meaning_vi": "cứu",
+      "meaning_vi_clean": "cứu; phân phát; phát biểu",
+      "examples_clean": [
+        {
+          "meaning_vi": "cứu",
+          "example_en": "The hero managed to deliver the hostages.",
+          "example_vi": "Người anh hùng đã xoay xở để cứu các con tin."
+        },
+        {
+          "meaning_vi": "cứu",
+          "example_en": "They prayed to be delivered from their suffering.",
+          "example_vi": "Họ cầu nguyện để được cứu khỏi nỗi đau khổ của mình."
+        },
+        {
+          "meaning_vi": "cứu",
+          "example_en": "The soldiers delivered the village from the enemy.",
+          "example_vi": "Những người lính đã cứu ngôi làng khỏi kẻ thù."
+        },
+        {
+          "meaning_vi": "cứu",
+          "example_en": "He was delivered from a dangerous situation.",
+          "example_vi": "Anh ấy đã được cứu khỏi một tình huống nguy hiểm."
+        },
+        {
+          "meaning_vi": "phân phát",
+          "example_en": "The postman delivers letters every morning.",
+          "example_vi": "Người đưa thư phân phát thư mỗi sáng."
+        },
+        {
+          "meaning_vi": "phân phát",
+          "example_en": "They deliver groceries to our house weekly.",
+          "example_vi": "Họ phân phát hàng tạp hóa đến nhà chúng tôi hàng tuần."
+        },
+        {
+          "meaning_vi": "phân phát",
+          "example_en": "Can you deliver this package to the office?",
+          "example_vi": "Bạn có thể phân phát gói hàng này đến văn phòng không?"
+        },
+        {
+          "meaning_vi": "phát biểu",
+          "example_en": "The president will deliver a speech tonight.",
+          "example_vi": "Tổng thống sẽ phát biểu một bài diễn văn tối nay."
+        },
+        {
+          "meaning_vi": "phát biểu",
+          "example_en": "She delivered her message clearly to the team.",
+          "example_vi": "Cô ấy đã phát biểu thông điệp của mình rõ ràng với cả nhóm."
+        },
+        {
+          "meaning_vi": "phát biểu",
+          "example_en": "He delivered a lecture on history.",
+          "example_vi": "Anh ấy đã phát biểu một bài giảng về lịch sử."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 3 nghĩa phổ biến, phân bổ ví dụ hợp lý.",
+      "word": "deliver",
+      "normalized_word": "deliver",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The hero managed to deliver the hostages.",
+      "example_vi_clean": "Người anh hùng đã xoay xở để cứu các con tin."
+    },
+    {
+      "id": 25886,
+      "quiz_meaning_vi": "sự phân phát",
+      "meaning_vi_clean": "sự phân phát; sự giao hàng; cách nói",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "The daily delivery of mail is important.",
+          "example_vi": "Sự phân phát thư hàng ngày rất quan trọng."
+        },
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "We are waiting for the delivery of the documents.",
+          "example_vi": "Chúng tôi đang chờ sự phân phát các tài liệu."
+        },
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "The delivery of supplies was delayed.",
+          "example_vi": "Sự phân phát hàng tiếp tế đã bị trì hoãn."
+        },
+        {
+          "meaning_vi": "sự phân phát",
+          "example_en": "The delivery of the newspaper happens early.",
+          "example_vi": "Sự phân phát báo diễn ra sớm."
+        },
+        {
+          "meaning_vi": "sự giao hàng",
+          "example_en": "The delivery of the furniture is scheduled for tomorrow.",
+          "example_vi": "Sự giao hàng nội thất được lên lịch vào ngày mai."
+        },
+        {
+          "meaning_vi": "sự giao hàng",
+          "example_en": "Is there an extra charge for home delivery?",
+          "example_vi": "Có tính thêm phí cho sự giao hàng tại nhà không?"
+        },
+        {
+          "meaning_vi": "sự giao hàng",
+          "example_en": "The delivery was left at the front door.",
+          "example_vi": "Sự giao hàng đã được để ở cửa trước."
+        },
+        {
+          "meaning_vi": "cách nói",
+          "example_en": "His delivery was slow and clear.",
+          "example_vi": "Cách nói của anh ấy chậm rãi và rõ ràng."
+        },
+        {
+          "meaning_vi": "cách nói",
+          "example_en": "She has a very confident delivery.",
+          "example_vi": "Cô ấy có một cách nói rất tự tin."
+        },
+        {
+          "meaning_vi": "cách nói",
+          "example_en": "The actor's delivery made the lines funny.",
+          "example_vi": "Cách nói của diễn viên làm cho lời thoại trở nên hài hước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "delivery",
+      "normalized_word": "delivery",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The daily delivery of mail is important.",
+      "example_vi_clean": "Sự phân phát thư hàng ngày rất quan trọng."
+    },
+    {
+      "id": 25887,
+      "quiz_meaning_vi": "sự đòi hỏi",
+      "meaning_vi_clean": "sự đòi hỏi; nhu cầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đòi hỏi",
+          "example_en": "The workers made a demand for higher wages.",
+          "example_vi": "Những người công nhân đã đưa ra sự đòi hỏi về mức lương cao hơn."
+        },
+        {
+          "meaning_vi": "sự đòi hỏi",
+          "example_en": "She ignored his constant demands for attention.",
+          "example_vi": "Cô ấy phớt lờ sự đòi hỏi sự chú ý liên tục của anh ta."
+        },
+        {
+          "meaning_vi": "sự đòi hỏi",
+          "example_en": "The union's demand was finally accepted.",
+          "example_vi": "Sự đòi hỏi của công đoàn cuối cùng đã được chấp nhận."
+        },
+        {
+          "meaning_vi": "sự đòi hỏi",
+          "example_en": "He met every demand of his boss.",
+          "example_vi": "Anh ấy đã đáp ứng mọi sự đòi hỏi của sếp mình."
+        },
+        {
+          "meaning_vi": "nhu cầu",
+          "example_en": "There is a high demand for organic food.",
+          "example_vi": "Có một nhu cầu cao đối với thực phẩm hữu cơ."
+        },
+        {
+          "meaning_vi": "nhu cầu",
+          "example_en": "The demand for electricity increases in summer.",
+          "example_vi": "Nhu cầu về điện tăng lên vào mùa hè."
+        },
+        {
+          "meaning_vi": "nhu cầu",
+          "example_en": "Supply must meet the market demand.",
+          "example_vi": "Nguồn cung phải đáp ứng nhu cầu thị trường."
+        },
+        {
+          "meaning_vi": "nhu cầu",
+          "example_en": "The company cannot keep up with the demand.",
+          "example_vi": "Công ty không thể theo kịp nhu cầu."
+        },
+        {
+          "meaning_vi": "nhu cầu",
+          "example_en": "There is little demand for this product.",
+          "example_vi": "Có rất ít nhu cầu cho sản phẩm này."
+        },
+        {
+          "meaning_vi": "nhu cầu",
+          "example_en": "The demand for housing is rising.",
+          "example_vi": "Nhu cầu về nhà ở đang tăng lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ, bổ sung ví dụ.",
+      "word": "demand",
+      "normalized_word": "demand",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The workers made a demand for higher wages.",
+      "example_vi_clean": "Những người công nhân đã đưa ra sự đòi hỏi về mức lương cao hơn."
+    },
+    {
+      "id": 25888,
+      "quiz_meaning_vi": "nền dân chủ",
+      "meaning_vi_clean": "nền dân chủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "The country is a stable democracy.",
+          "example_vi": "Đất nước này là một nền dân chủ ổn định."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "Democracy is based on the will of the people.",
+          "example_vi": "Nền dân chủ dựa trên ý chí của người dân."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "They fought for the establishment of a democracy.",
+          "example_vi": "Họ đã chiến đấu vì sự thiết lập một nền dân chủ."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "Freedom of speech is essential in a democracy.",
+          "example_vi": "Tự do ngôn luận là thiết yếu trong một nền dân chủ."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "The people voted to protect their democracy.",
+          "example_vi": "Người dân đã bỏ phiếu để bảo vệ nền dân chủ của họ."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "A healthy democracy requires active participation.",
+          "example_vi": "Một nền dân chủ lành mạnh đòi hỏi sự tham gia tích cực."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "They are learning about the principles of democracy.",
+          "example_vi": "Họ đang học về các nguyên tắc của nền dân chủ."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "The nation transitioned to a democracy.",
+          "example_vi": "Quốc gia đã chuyển đổi sang một nền dân chủ."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "Democracy allows everyone to have a voice.",
+          "example_vi": "Nền dân chủ cho phép mọi người có tiếng nói."
+        },
+        {
+          "meaning_vi": "nền dân chủ",
+          "example_en": "We must cherish our democracy.",
+          "example_vi": "Chúng ta phải trân trọng nền dân chủ của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "democracy",
+      "normalized_word": "democracy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The country is a stable democracy.",
+      "example_vi_clean": "Đất nước này là một nền dân chủ ổn định."
+    },
+    {
+      "id": 25889,
+      "quiz_meaning_vi": "dân chủ",
+      "meaning_vi_clean": "dân chủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "They held a democratic election.",
+          "example_vi": "Họ đã tổ chức một cuộc bầu cử dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "The school has a democratic system of government.",
+          "example_vi": "Trường học có một hệ thống quản lý dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "We need a more democratic approach to decision making.",
+          "example_vi": "Chúng ta cần một cách tiếp cận dân chủ hơn trong việc ra quyết định."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "The organization is run in a democratic way.",
+          "example_vi": "Tổ chức được điều hành theo một cách dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "He believes in democratic values.",
+          "example_vi": "Anh ấy tin vào các giá trị dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "The process was open and democratic.",
+          "example_vi": "Quy trình này cởi mở và dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "They are building a democratic society.",
+          "example_vi": "Họ đang xây dựng một xã hội dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "The club has a democratic structure.",
+          "example_vi": "Câu lạc bộ có một cấu trúc dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "She supports democratic reforms.",
+          "example_vi": "Cô ấy ủng hộ các cải cách dân chủ."
+        },
+        {
+          "meaning_vi": "dân chủ",
+          "example_en": "The meeting was conducted in a democratic manner.",
+          "example_vi": "Cuộc họp đã được tiến hành theo một cách dân chủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "democratic",
+      "normalized_word": "democratic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They held a democratic election.",
+      "example_vi_clean": "Họ đã tổ chức một cuộc bầu cử dân chủ."
+    },
+    {
+      "id": 25890,
+      "quiz_meaning_vi": "chứng minh",
+      "meaning_vi_clean": "chứng minh; biểu lộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "chứng minh",
+          "example_en": "The results demonstrate the success of the project.",
+          "example_vi": "Các kết quả chứng minh sự thành công của dự án."
+        },
+        {
+          "meaning_vi": "chứng minh",
+          "example_en": "He demonstrated how to use the new software.",
+          "example_vi": "Anh ấy đã chứng minh cách sử dụng phần mềm mới."
+        },
+        {
+          "meaning_vi": "chứng minh",
+          "example_en": "The experiment demonstrates that the theory is correct.",
+          "example_vi": "Thí nghiệm chứng minh rằng lý thuyết đó là đúng."
+        },
+        {
+          "meaning_vi": "chứng minh",
+          "example_en": "They demonstrated their skills in the competition.",
+          "example_vi": "Họ đã chứng minh kỹ năng của mình trong cuộc thi."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "She demonstrated her support by attending the event.",
+          "example_vi": "Cô ấy đã biểu lộ sự ủng hộ của mình bằng cách tham dự sự kiện."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "He demonstrated great courage during the crisis.",
+          "example_vi": "Anh ấy đã biểu lộ lòng dũng cảm tuyệt vời trong cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "The students demonstrated their interest in the topic.",
+          "example_vi": "Các sinh viên đã biểu lộ sự quan tâm của họ đối với chủ đề này."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "They demonstrated their love for the community.",
+          "example_vi": "Họ đã biểu lộ tình yêu của mình đối với cộng đồng."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "The team demonstrated a strong desire to win.",
+          "example_vi": "Đội bóng đã biểu lộ một khao khát chiến thắng mạnh mẽ."
+        },
+        {
+          "meaning_vi": "biểu lộ",
+          "example_en": "She demonstrated her talent in the performance.",
+          "example_vi": "Cô ấy đã biểu lộ tài năng của mình trong buổi biểu diễn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ, bổ sung ví dụ.",
+      "word": "demonstrate",
+      "normalized_word": "demonstrate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The results demonstrate the success of the project.",
+      "example_vi_clean": "Các kết quả chứng minh sự thành công của dự án."
+    }
+  ]
+}

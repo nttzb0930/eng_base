@@ -1,0 +1,680 @@
+{
+  "records": [
+    {
+      "id": 25691,
+      "quiz_meaning_vi": "nghi thức",
+      "meaning_vi_clean": "nghi thức; sự khách sáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghi thức",
+          "example_en": "The wedding ceremony was held in a beautiful garden.",
+          "example_vi": "Nghi thức đám cưới được tổ chức trong một khu vườn xinh đẹp."
+        },
+        {
+          "meaning_vi": "nghi thức",
+          "example_en": "They performed a traditional ceremony to welcome the guests.",
+          "example_vi": "Họ đã thực hiện một nghi thức truyền thống để chào đón khách."
+        },
+        {
+          "meaning_vi": "nghi thức",
+          "example_en": "The opening ceremony of the games was very impressive.",
+          "example_vi": "Nghi thức khai mạc của trò chơi rất ấn tượng."
+        },
+        {
+          "meaning_vi": "nghi thức",
+          "example_en": "He attended the graduation ceremony with his parents.",
+          "example_vi": "Anh ấy đã tham dự nghi thức tốt nghiệp cùng cha mẹ mình."
+        },
+        {
+          "meaning_vi": "nghi thức",
+          "example_en": "The religious ceremony lasted for several hours.",
+          "example_vi": "Nghi thức tôn giáo kéo dài trong vài giờ."
+        },
+        {
+          "meaning_vi": "nghi thức",
+          "example_en": "The medal ceremony will take place tomorrow morning.",
+          "example_vi": "Nghi thức trao huy chương sẽ diễn ra vào sáng mai."
+        },
+        {
+          "meaning_vi": "sự khách sáo",
+          "example_en": "Please come in, there is no need for ceremony.",
+          "example_vi": "Xin mời vào, không cần phải khách sáo đâu."
+        },
+        {
+          "meaning_vi": "sự khách sáo",
+          "example_en": "He treated his friends without any ceremony.",
+          "example_vi": "Anh ấy đối xử với bạn bè mình mà không hề khách sáo."
+        },
+        {
+          "meaning_vi": "sự khách sáo",
+          "example_en": "They greeted each other without ceremony.",
+          "example_vi": "Họ chào hỏi nhau mà không chút khách sáo."
+        },
+        {
+          "meaning_vi": "sự khách sáo",
+          "example_en": "I prefer a meeting without too much ceremony.",
+          "example_vi": "Tôi thích một cuộc họp mà không quá nhiều sự khách sáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất. Bổ sung ví dụ theo đúng yêu cầu.",
+      "word": "ceremony",
+      "normalized_word": "ceremony",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The wedding ceremony was held in a beautiful garden.",
+      "example_vi_clean": "Nghi thức đám cưới được tổ chức trong một khu vườn xinh đẹp."
+    },
+    {
+      "id": 25692,
+      "quiz_meaning_vi": "điều chắc chắn",
+      "meaning_vi_clean": "điều chắc chắn; sự tin chắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều chắc chắn",
+          "example_en": "His victory is a certainty.",
+          "example_vi": "Chiến thắng của anh ấy là một điều chắc chắn."
+        },
+        {
+          "meaning_vi": "điều chắc chắn",
+          "example_en": "It is a certainty that the prices will rise.",
+          "example_vi": "Việc giá cả sẽ tăng là một điều chắc chắn."
+        },
+        {
+          "meaning_vi": "điều chắc chắn",
+          "example_en": "Success is not a certainty in this business.",
+          "example_vi": "Thành công không phải là điều chắc chắn trong công việc kinh doanh này."
+        },
+        {
+          "meaning_vi": "điều chắc chắn",
+          "example_en": "There is no absolute certainty about the future.",
+          "example_vi": "Không có điều chắc chắn tuyệt đối nào về tương lai."
+        },
+        {
+          "meaning_vi": "điều chắc chắn",
+          "example_en": "The team's defeat seems like a certainty.",
+          "example_vi": "Thất bại của đội bóng dường như là một điều chắc chắn."
+        },
+        {
+          "meaning_vi": "sự tin chắc",
+          "example_en": "She spoke with great certainty about her decision.",
+          "example_vi": "Cô ấy nói với sự tin chắc tuyệt đối về quyết định của mình."
+        },
+        {
+          "meaning_vi": "sự tin chắc",
+          "example_en": "He answered the question with complete certainty.",
+          "example_vi": "Anh ấy trả lời câu hỏi với sự tin chắc hoàn toàn."
+        },
+        {
+          "meaning_vi": "sự tin chắc",
+          "example_en": "I cannot say with any certainty when he will arrive.",
+          "example_vi": "Tôi không thể nói với sự tin chắc nào về việc khi nào anh ấy sẽ đến."
+        },
+        {
+          "meaning_vi": "sự tin chắc",
+          "example_en": "They acted with the certainty of experts.",
+          "example_vi": "Họ hành động với sự tin chắc của những chuyên gia."
+        },
+        {
+          "meaning_vi": "sự tin chắc",
+          "example_en": "She lacks the certainty to lead the project.",
+          "example_vi": "Cô ấy thiếu sự tin chắc để dẫn dắt dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất. Bổ sung ví dụ theo đúng yêu cầu.",
+      "word": "certainty",
+      "normalized_word": "certainty",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His victory is a certainty.",
+      "example_vi_clean": "Chiến thắng của anh ấy là một điều chắc chắn."
+    },
+    {
+      "id": 25693,
+      "quiz_meaning_vi": "đầy thử thách",
+      "meaning_vi_clean": "đầy thử thách",
+      "examples_clean": [
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "This is a challenging task for the new team.",
+          "example_vi": "Đây là một nhiệm vụ đầy thử thách đối với học sinh."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "The job is very challenging but rewarding.",
+          "example_vi": "Công việc này rất thử thách nhưng xứng đáng."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "She enjoys working on challenging projects.",
+          "example_vi": "Anh ấy thích làm việc với những dự án đầy thử thách."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "It was a challenging climb to the top of the mountain.",
+          "example_vi": "Đó là một chuyến leo núi đầy thử thách để lên đến đỉnh."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "The exam was quite challenging for most students.",
+          "example_vi": "Bài kiểm tra khá thử thách đối với mọi người."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "The teacher provided a challenging environment for learning.",
+          "example_vi": "Cô ấy thấy vai trò mới rất thử thách."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "He found the discussion very challenging and interesting.",
+          "example_vi": "Cuộc thảo luận rất thử thách và thú vị."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "The book offers a challenging perspective on history.",
+          "example_vi": "Ông ấy đã có một bài phát biểu đầy thách thức trước khán giả."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "It was a challenging experience that changed his life.",
+          "example_vi": "Cuốn sách đưa ra một góc nhìn đầy thách thức về lịch sử."
+        },
+        {
+          "meaning_vi": "đầy thử thách",
+          "example_en": "She likes challenging activities that keep her busy.",
+          "example_vi": "Đó là một trải nghiệm đầy thử thách đã thay đổi suy nghĩ của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa thủ công nghĩa nguồn dài và không đúng dạng tính từ thành 'đầy thử thách'; giữ 10 câu tiếng Anh và hiệu chỉnh bản dịch.",
+      "word": "challenging",
+      "normalized_word": "challenging",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is a challenging task for the new team.",
+      "example_vi_clean": "Đây là một nhiệm vụ đầy thử thách đối với học sinh."
+    },
+    {
+      "id": 25694,
+      "quiz_meaning_vi": "người vô địch",
+      "meaning_vi_clean": "người vô địch; bảo vệ",
+      "examples_clean": [
+        {
+          "meaning_vi": "người vô địch",
+          "example_en": "The defending champion won the race again.",
+          "example_vi": "Nhà vô địch đương nhiệm đã thắng cuộc đua một lần nữa."
+        },
+        {
+          "meaning_vi": "người vô địch",
+          "example_en": "She is a world champion in tennis.",
+          "example_vi": "Cô ấy là nhà vô địch thế giới môn quần vợt."
+        },
+        {
+          "meaning_vi": "người vô địch",
+          "example_en": "The champion received a gold medal.",
+          "example_vi": "Nhà vô địch đã nhận được một huy chương vàng."
+        },
+        {
+          "meaning_vi": "người vô địch",
+          "example_en": "He trained hard to become a champion.",
+          "example_vi": "Anh ấy đã tập luyện chăm chỉ để trở thành nhà vô địch."
+        },
+        {
+          "meaning_vi": "người vô địch",
+          "example_en": "The young champion celebrated his victory.",
+          "example_vi": "Nhà vô địch trẻ tuổi đã ăn mừng chiến thắng của mình."
+        },
+        {
+          "meaning_vi": "bảo vệ",
+          "example_en": "He is a strong champion of human rights.",
+          "example_vi": "Anh ấy là người bảo vệ mạnh mẽ cho nhân quyền."
+        },
+        {
+          "meaning_vi": "bảo vệ",
+          "example_en": "She has always been a champion of the poor.",
+          "example_vi": "Cô ấy luôn là người bảo vệ cho những người nghèo khổ."
+        },
+        {
+          "meaning_vi": "bảo vệ",
+          "example_en": "They champion the cause of environmental protection.",
+          "example_vi": "Họ bảo vệ sự nghiệp bảo vệ môi trường."
+        },
+        {
+          "meaning_vi": "bảo vệ",
+          "example_en": "He decided to champion the new policy.",
+          "example_vi": "Anh ấy quyết định bảo vệ chính sách mới."
+        },
+        {
+          "meaning_vi": "bảo vệ",
+          "example_en": "She is known as a champion of education reform.",
+          "example_vi": "Cô ấy được biết đến là người bảo vệ cho cải cách giáo dục."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ/phó từ thành danh từ/động từ. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "champion",
+      "normalized_word": "champion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The defending champion won the race again.",
+      "example_vi_clean": "Nhà vô địch đương nhiệm đã thắng cuộc đua một lần nữa."
+    },
+    {
+      "id": 25695,
+      "quiz_meaning_vi": "eo biển",
+      "meaning_vi_clean": "eo biển; kênh",
+      "examples_clean": [
+        {
+          "meaning_vi": "eo biển",
+          "example_en": "The English Channel is a busy shipping route.",
+          "example_vi": "Eo biển Măng-sơ là một tuyến đường vận tải biển bận rộn."
+        },
+        {
+          "meaning_vi": "eo biển",
+          "example_en": "They sailed across the narrow channel.",
+          "example_vi": "Họ đã chèo thuyền băng qua eo biển hẹp."
+        },
+        {
+          "meaning_vi": "eo biển",
+          "example_en": "The ship entered the channel safely.",
+          "example_vi": "Con tàu đã tiến vào eo biển một cách an toàn."
+        },
+        {
+          "meaning_vi": "eo biển",
+          "example_en": "The channel connects the two seas.",
+          "example_vi": "Eo biển này nối liền hai vùng biển."
+        },
+        {
+          "meaning_vi": "eo biển",
+          "example_en": "The water in the channel is very deep.",
+          "example_vi": "Nước ở eo biển này rất sâu."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "I watched a documentary on the history channel.",
+          "example_vi": "Tôi đã xem một bộ phim tài liệu trên kênh lịch sử."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "Please change the channel to the news.",
+          "example_vi": "Làm ơn chuyển kênh sang bản tin thời sự."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "They communicate through an official channel.",
+          "example_vi": "Họ giao tiếp thông qua một kênh chính thức."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "The information was sent via a secure channel.",
+          "example_vi": "Thông tin đã được gửi qua một kênh bảo mật."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "We need to find a new channel for marketing.",
+          "example_vi": "Chúng ta cần tìm một kênh mới để tiếp thị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "channel",
+      "normalized_word": "channel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The English Channel is a busy shipping route.",
+      "example_vi_clean": "Eo biển Măng-sơ là một tuyến đường vận tải biển bận rộn."
+    },
+    {
+      "id": 25696,
+      "quiz_meaning_vi": "sự hỗn loạn",
+      "meaning_vi_clean": "sự hỗn loạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The city was in total chaos after the storm.",
+          "example_vi": "Thành phố rơi vào sự hỗn loạn hoàn toàn sau cơn bão."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The classroom was in chaos when the teacher left.",
+          "example_vi": "Lớp học rơi vào sự hỗn loạn khi giáo viên rời đi."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The traffic was in chaos during the rush hour.",
+          "example_vi": "Giao thông rơi vào sự hỗn loạn trong giờ cao điểm."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The political situation led to chaos in the country.",
+          "example_vi": "Tình hình chính trị đã dẫn đến sự hỗn loạn trong nước."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "He tried to bring order to the chaos.",
+          "example_vi": "Anh ấy đã cố gắng mang lại trật tự cho sự hỗn loạn đó."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The market was in chaos due to the sudden price drop.",
+          "example_vi": "Thị trường rơi vào sự hỗn loạn do giá giảm đột ngột."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The airport was in chaos because of the flight cancellations.",
+          "example_vi": "Sân bay rơi vào sự hỗn loạn vì các chuyến bay bị hủy."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The party ended in chaos.",
+          "example_vi": "Bữa tiệc đã kết thúc trong sự hỗn loạn."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "She managed to work despite the chaos around her.",
+          "example_vi": "Cô ấy vẫn làm việc được bất chấp sự hỗn loạn xung quanh mình."
+        },
+        {
+          "meaning_vi": "sự hỗn loạn",
+          "example_en": "The sudden change caused chaos in the office.",
+          "example_vi": "Sự thay đổi đột ngột đã gây ra sự hỗn loạn trong văn phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung ví dụ theo đúng yêu cầu.",
+      "word": "chaos",
+      "normalized_word": "chaos",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The city was in total chaos after the storm.",
+      "example_vi_clean": "Thành phố rơi vào sự hỗn loạn hoàn toàn sau cơn bão."
+    },
+    {
+      "id": 25697,
+      "quiz_meaning_vi": "biểu thị đặc điểm",
+      "meaning_vi_clean": "biểu thị đặc điểm",
+      "examples_clean": [
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "High temperatures characterise this region.",
+          "example_vi": "Nhiệt độ cao biểu thị đặc điểm của vùng này."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Kindness characterises her personality.",
+          "example_vi": "Sự tử tế biểu thị đặc điểm tính cách của cô ấy."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "These problems characterise the current situation.",
+          "example_vi": "Những vấn đề này biểu thị đặc điểm của tình hình hiện tại."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "What features characterise this species?",
+          "example_vi": "Những đặc điểm nào biểu thị đặc điểm của loài này?"
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Honesty should characterise all our actions.",
+          "example_vi": "Sự trung thực nên biểu thị đặc điểm mọi hành động của chúng ta."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "The style that characterises his early work is unique.",
+          "example_vi": "Phong cách biểu thị đặc điểm các tác phẩm đầu tay của anh ấy rất độc đáo."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Patience characterises a good teacher.",
+          "example_vi": "Sự kiên nhẫn biểu thị đặc điểm của một giáo viên giỏi."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "The traits that characterise him are courage and wisdom.",
+          "example_vi": "Những nét biểu thị đặc điểm của anh ấy là lòng dũng cảm và sự khôn ngoan."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "This music is what characterises the local culture.",
+          "example_vi": "Âm nhạc này là thứ biểu thị đặc điểm văn hóa địa phương."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Efficiency characterises their new production process.",
+          "example_vi": "Sự hiệu quả biểu thị đặc điểm quy trình sản xuất mới của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung ví dụ theo đúng yêu cầu.",
+      "word": "characterise",
+      "normalized_word": "characterise",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "High temperatures characterise this region.",
+      "example_vi_clean": "Nhiệt độ cao biểu thị đặc điểm của vùng này."
+    },
+    {
+      "id": 25698,
+      "quiz_meaning_vi": "biểu thị đặc điểm",
+      "meaning_vi_clean": "biểu thị đặc điểm",
+      "examples_clean": [
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "The dry climate characterises this area.",
+          "example_vi": "Khí hậu khô hạn biểu thị đặc điểm của khu vực này."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Creativity characterises her approach to work.",
+          "example_vi": "Sự sáng tạo biểu thị đặc điểm cách tiếp cận công việc của cô ấy."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "These symptoms characterise the disease.",
+          "example_vi": "Những triệu chứng này biểu thị đặc điểm của căn bệnh."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "What qualities characterise a leader?",
+          "example_vi": "Những phẩm chất nào biểu thị đặc điểm của một nhà lãnh đạo?"
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "The colors that characterise the autumn are red and gold.",
+          "example_vi": "Những màu sắc biểu thị đặc điểm của mùa thu là đỏ và vàng."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Hard work characterises his daily routine.",
+          "example_vi": "Sự chăm chỉ biểu thị đặc điểm thói quen hàng ngày của anh ấy."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "The features that characterise this car are safety and speed.",
+          "example_vi": "Những tính năng biểu thị đặc điểm của chiếc xe này là sự an toàn và tốc độ."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Friendliness characterises the people in this town.",
+          "example_vi": "Sự thân thiện biểu thị đặc điểm của người dân trong thị trấn này."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "The elements that characterise the design are simple.",
+          "example_vi": "Những yếu tố biểu thị đặc điểm của thiết kế này rất đơn giản."
+        },
+        {
+          "meaning_vi": "biểu thị đặc điểm",
+          "example_en": "Dedication characterises their team spirit.",
+          "example_vi": "Sự tận tâm biểu thị đặc điểm tinh thần đồng đội của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung ví dụ theo đúng yêu cầu.",
+      "word": "characterize",
+      "normalized_word": "characterize",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The dry climate characterises this area.",
+      "example_vi_clean": "Khí hậu khô hạn biểu thị đặc điểm của khu vực này."
+    },
+    {
+      "id": 25699,
+      "quiz_meaning_vi": "tiền phải trả",
+      "meaning_vi_clean": "tiền phải trả; trách nhiệm; buộc tội",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiền phải trả",
+          "example_en": "There is no extra charge for this service.",
+          "example_vi": "Không có tiền phải trả thêm cho dịch vụ này."
+        },
+        {
+          "meaning_vi": "tiền phải trả",
+          "example_en": "The hotel made a small charge for breakfast.",
+          "example_vi": "Khách sạn đã tính một khoản tiền phải trả nhỏ cho bữa sáng."
+        },
+        {
+          "meaning_vi": "tiền phải trả",
+          "example_en": "They will charge you for the delivery.",
+          "example_vi": "Họ sẽ tính tiền phải trả cho bạn về việc giao hàng."
+        },
+        {
+          "meaning_vi": "tiền phải trả",
+          "example_en": "How much do they charge for a haircut?",
+          "example_vi": "Họ tính tiền phải trả bao nhiêu cho một lần cắt tóc?"
+        },
+        {
+          "meaning_vi": "trách nhiệm",
+          "example_en": "She is in charge of the marketing department.",
+          "example_vi": "Cô ấy chịu trách nhiệm về phòng tiếp thị."
+        },
+        {
+          "meaning_vi": "trách nhiệm",
+          "example_en": "He left the children in my charge.",
+          "example_vi": "Anh ấy để những đứa trẻ dưới sự trách nhiệm của tôi."
+        },
+        {
+          "meaning_vi": "trách nhiệm",
+          "example_en": "The manager is in charge of the project.",
+          "example_vi": "Người quản lý chịu trách nhiệm về dự án."
+        },
+        {
+          "meaning_vi": "buộc tội",
+          "example_en": "The police brought a charge of theft against him.",
+          "example_vi": "Cảnh sát đã đưa ra một lời buộc tội trộm cắp chống lại anh ta."
+        },
+        {
+          "meaning_vi": "buộc tội",
+          "example_en": "They decided to charge him with murder.",
+          "example_vi": "Họ quyết định buộc tội anh ta về tội giết người."
+        },
+        {
+          "meaning_vi": "buộc tội",
+          "example_en": "He denied the charge of corruption.",
+          "example_vi": "Anh ấy phủ nhận lời buộc tội tham nhũng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ/động từ. Giữ 3 nghĩa phổ biến nhất.",
+      "word": "charge",
+      "normalized_word": "charge",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is no extra charge for this service.",
+      "example_vi_clean": "Không có tiền phải trả thêm cho dịch vụ này."
+    },
+    {
+      "id": 25700,
+      "quiz_meaning_vi": "xe ngựa",
+      "meaning_vi_clean": "xe ngựa",
+      "examples_clean": [
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "The ancient chariot was pulled by two horses.",
+          "example_vi": "Chiếc xe ngựa cổ được kéo bởi hai con ngựa."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "He rode in a chariot during the parade.",
+          "example_vi": "Anh ấy đã ngồi trên một chiếc xe ngựa trong cuộc diễu hành."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "The chariot race was a popular event in Rome.",
+          "example_vi": "Cuộc đua xe ngựa là một sự kiện phổ biến ở La Mã."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "They found an old chariot in the museum.",
+          "example_vi": "Họ đã tìm thấy một chiếc xe ngựa cũ trong bảo tàng."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "The warrior stood on his chariot.",
+          "example_vi": "Người chiến binh đứng trên chiếc xe ngựa của mình."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "The chariot was decorated with gold.",
+          "example_vi": "Chiếc xe ngựa được trang trí bằng vàng."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "He learned how to drive a chariot.",
+          "example_vi": "Anh ấy đã học cách điều khiển một chiếc xe ngựa."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "The chariot wheels were made of wood.",
+          "example_vi": "Bánh xe ngựa được làm bằng gỗ."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "They used a chariot to transport goods.",
+          "example_vi": "Họ đã sử dụng một chiếc xe ngựa để vận chuyển hàng hóa."
+        },
+        {
+          "meaning_vi": "xe ngựa",
+          "example_en": "The king arrived in a royal chariot.",
+          "example_vi": "Nhà vua đã đến trên một chiếc xe ngựa hoàng gia."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Giữ 1 nghĩa phổ biến nhất.",
+      "word": "chariot",
+      "normalized_word": "chariot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ancient chariot was pulled by two horses.",
+      "example_vi_clean": "Chiếc xe ngựa cổ được kéo bởi hai con ngựa."
+    }
+  ],
+  "audit": {
+    "source": "manual-override",
+    "overrideFile": "data\\vocabulary\\normalization\\manual-overrides\\batch-170.json",
+    "reason": "Sửa thủ công nghĩa quá dài của challenging (id=25693); giữ nguyên 10 câu tiếng Anh từ response Gemini.",
+    "databaseUpdated": false
+  }
+}

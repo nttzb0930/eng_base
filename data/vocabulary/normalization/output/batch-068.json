@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24671,
+      "quiz_meaning_vi": "vũ trang",
+      "meaning_vi_clean": "vũ trang",
+      "examples_clean": [
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "The soldiers were fully armed for the mission.",
+          "example_vi": "Những người lính đã được vũ trang đầy đủ cho nhiệm vụ."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "The police were looking for an armed man.",
+          "example_vi": "Cảnh sát đang tìm kiếm một người đàn ông có vũ trang."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "They were armed with sticks and stones.",
+          "example_vi": "Họ được vũ trang bằng gậy gộc và đá."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "The country is a nuclear-armed state.",
+          "example_vi": "Đất nước này là một quốc gia có vũ khí hạt nhân."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "The guards were armed with rifles.",
+          "example_vi": "Các bảo vệ được trang bị súng trường."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "He felt armed with the knowledge he needed.",
+          "example_vi": "Anh ấy cảm thấy được trang bị kiến thức mình cần."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "The rebels were heavily armed.",
+          "example_vi": "Phe nổi dậy được vũ trang hạng nặng."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "She arrived armed with a list of questions.",
+          "example_vi": "Cô ấy đến nơi với một danh sách các câu hỏi đã chuẩn bị sẵn."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "The security team is armed at all times.",
+          "example_vi": "Đội an ninh luôn luôn được vũ trang."
+        },
+        {
+          "meaning_vi": "vũ trang",
+          "example_en": "They were armed against any potential threat.",
+          "example_vi": "Họ đã được trang bị để đối phó với bất kỳ mối đe dọa tiềm tàng nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa vũ trang, bổ sung 10 ví dụ phù hợp.",
+      "word": "armed",
+      "normalized_word": "armed",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The soldiers were fully armed for the mission.",
+      "example_vi_clean": "Những người lính đã được vũ trang đầy đủ cho nhiệm vụ."
+    },
+    {
+      "id": 24672,
+      "quiz_meaning_vi": "xung quanh",
+      "meaning_vi_clean": "xung quanh; khoảng chừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "They sat around the table to eat.",
+          "example_vi": "Họ ngồi xung quanh bàn để ăn."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "There are many trees around the house.",
+          "example_vi": "Có nhiều cây cối xung quanh ngôi nhà."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "She looked around the room.",
+          "example_vi": "Cô ấy nhìn xung quanh căn phòng."
+        },
+        {
+          "meaning_vi": "xung quanh",
+          "example_en": "The children ran around the park.",
+          "example_vi": "Những đứa trẻ chạy xung quanh công viên."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "I will be there at around five o'clock.",
+          "example_vi": "Tôi sẽ ở đó vào khoảng chừng năm giờ."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The trip costs around fifty dollars.",
+          "example_vi": "Chuyến đi tốn khoảng chừng năm mươi đô la."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "There were around twenty people at the party.",
+          "example_vi": "Có khoảng chừng hai mươi người tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "He has been waiting for around an hour.",
+          "example_vi": "Anh ấy đã đợi được khoảng chừng một giờ rồi."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The temperature is around twenty degrees.",
+          "example_vi": "Nhiệt độ vào khoảng chừng hai mươi độ."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "It happened around last summer.",
+          "example_vi": "Việc đó xảy ra vào khoảng chừng mùa hè năm ngoái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ giới từ thành phó từ, rút gọn nghĩa và bổ sung ví dụ.",
+      "word": "around",
+      "normalized_word": "around",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "They sat around the table to eat.",
+      "example_vi_clean": "Họ ngồi xung quanh bàn để ăn."
+    },
+    {
+      "id": 24673,
+      "quiz_meaning_vi": "nhân tạo",
+      "meaning_vi_clean": "nhân tạo; giả",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhân tạo",
+          "example_en": "The lake is artificial.",
+          "example_vi": "Cái hồ này là nhân tạo."
+        },
+        {
+          "meaning_vi": "nhân tạo",
+          "example_en": "They use artificial light in the greenhouse.",
+          "example_vi": "Họ sử dụng ánh sáng nhân tạo trong nhà kính."
+        },
+        {
+          "meaning_vi": "nhân tạo",
+          "example_en": "The robot has artificial intelligence.",
+          "example_vi": "Con robot có trí tuệ nhân tạo."
+        },
+        {
+          "meaning_vi": "nhân tạo",
+          "example_en": "The flowers are made of artificial silk.",
+          "example_vi": "Những bông hoa được làm bằng lụa nhân tạo."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "She wears artificial eyelashes.",
+          "example_vi": "Cô ấy đeo lông mi giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The diamond in the ring is artificial.",
+          "example_vi": "Viên kim cương trên chiếc nhẫn là đồ giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "He gave an artificial smile to the guests.",
+          "example_vi": "Anh ấy nở một nụ cười giả tạo với các vị khách."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The plant looks real but it is artificial.",
+          "example_vi": "Cái cây trông như thật nhưng nó là đồ giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "They used artificial flavoring in the drink.",
+          "example_vi": "Họ đã sử dụng hương liệu giả trong đồ uống."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The wall is made of artificial stone.",
+          "example_vi": "Bức tường được làm bằng đá giả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa nhân tạo, bổ sung nghĩa giả và 10 ví dụ.",
+      "word": "artificial",
+      "normalized_word": "artificial",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The lake is artificial.",
+      "example_vi_clean": "Cái hồ này là nhân tạo."
+    },
+    {
+      "id": 24674,
+      "quiz_meaning_vi": "như",
+      "meaning_vi_clean": "như; khi; vì",
+      "examples_clean": [
+        {
+          "meaning_vi": "như",
+          "example_en": "He works as a teacher.",
+          "example_vi": "Anh ấy làm việc như một giáo viên."
+        },
+        {
+          "meaning_vi": "như",
+          "example_en": "Do as I say.",
+          "example_vi": "Hãy làm như tôi nói."
+        },
+        {
+          "meaning_vi": "như",
+          "example_en": "It is not as big as yours.",
+          "example_vi": "Nó không to như của bạn."
+        },
+        {
+          "meaning_vi": "như",
+          "example_en": "She is as tall as her brother.",
+          "example_vi": "Cô ấy cao như anh trai mình."
+        },
+        {
+          "meaning_vi": "khi",
+          "example_en": "I saw him as I was walking home.",
+          "example_vi": "Tôi thấy anh ấy khi tôi đang đi bộ về nhà."
+        },
+        {
+          "meaning_vi": "khi",
+          "example_en": "As she grew older, she became wiser.",
+          "example_vi": "Khi cô ấy lớn lên, cô ấy trở nên khôn ngoan hơn."
+        },
+        {
+          "meaning_vi": "khi",
+          "example_en": "The phone rang as I was leaving.",
+          "example_vi": "Điện thoại reo khi tôi đang rời đi."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "As it was raining, we stayed inside.",
+          "example_vi": "Vì trời đang mưa, chúng tôi đã ở trong nhà."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "As I was tired, I went to bed early.",
+          "example_vi": "Vì tôi mệt, tôi đã đi ngủ sớm."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "As you are here, let's start the meeting.",
+          "example_vi": "Vì bạn đã ở đây, hãy bắt đầu cuộc họp thôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành liên từ, rút gọn nghĩa và bổ sung ví dụ.",
+      "word": "as",
+      "normalized_word": "as",
+      "cefr_level": "A2",
+      "pos": "conjunction",
+      "pos_vi_clean": "liên từ",
+      "example_en_clean": "He works as a teacher.",
+      "example_vi_clean": "Anh ấy làm việc như một giáo viên."
+    },
+    {
+      "id": 24675,
+      "quiz_meaning_vi": "đang ngủ",
+      "meaning_vi_clean": "đang ngủ; tê",
+      "examples_clean": [
+        {
+          "meaning_vi": "đang ngủ",
+          "example_en": "The baby is fast asleep.",
+          "example_vi": "Đứa bé đang ngủ say."
+        },
+        {
+          "meaning_vi": "đang ngủ",
+          "example_en": "I was asleep when the phone rang.",
+          "example_vi": "Tôi đang ngủ khi điện thoại reo."
+        },
+        {
+          "meaning_vi": "đang ngủ",
+          "example_en": "He fell asleep during the movie.",
+          "example_vi": "Anh ấy đã ngủ thiếp đi trong lúc xem phim."
+        },
+        {
+          "meaning_vi": "đang ngủ",
+          "example_en": "The whole house was asleep.",
+          "example_vi": "Cả ngôi nhà đang ngủ."
+        },
+        {
+          "meaning_vi": "đang ngủ",
+          "example_en": "Are you still asleep?",
+          "example_vi": "Bạn vẫn đang ngủ à?"
+        },
+        {
+          "meaning_vi": "tê",
+          "example_en": "My foot has gone asleep.",
+          "example_vi": "Chân tôi bị tê rồi."
+        },
+        {
+          "meaning_vi": "tê",
+          "example_en": "My leg went asleep after sitting for too long.",
+          "example_vi": "Chân tôi bị tê sau khi ngồi quá lâu."
+        },
+        {
+          "meaning_vi": "tê",
+          "example_en": "I can't feel my hand, it's asleep.",
+          "example_vi": "Tôi không cảm thấy tay mình, nó bị tê rồi."
+        },
+        {
+          "meaning_vi": "tê",
+          "example_en": "My arm went asleep from the pressure.",
+          "example_vi": "Cánh tay tôi bị tê do bị đè lên."
+        },
+        {
+          "meaning_vi": "tê",
+          "example_en": "Shake your leg to wake it up if it's asleep.",
+          "example_vi": "Hãy lắc chân để làm nó hết tê nếu nó bị tê."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ cho cả hai nghĩa.",
+      "word": "asleep",
+      "normalized_word": "asleep",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The baby is fast asleep.",
+      "example_vi_clean": "Đứa bé đang ngủ say."
+    },
+    {
+      "id": 24676,
+      "quiz_meaning_vi": "người giúp đỡ",
+      "meaning_vi_clean": "người giúp đỡ; phụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "người giúp đỡ",
+          "example_en": "She is a teaching assistant at the university.",
+          "example_vi": "Cô ấy là trợ giảng tại trường đại học."
+        },
+        {
+          "meaning_vi": "người giúp đỡ",
+          "example_en": "The manager needs a new assistant.",
+          "example_vi": "Người quản lý cần một người giúp đỡ mới."
+        },
+        {
+          "meaning_vi": "người giúp đỡ",
+          "example_en": "He works as a shop assistant.",
+          "example_vi": "Anh ấy làm việc như một người bán hàng."
+        },
+        {
+          "meaning_vi": "người giúp đỡ",
+          "example_en": "The doctor's assistant helped with the patient.",
+          "example_vi": "Người giúp đỡ của bác sĩ đã hỗ trợ bệnh nhân."
+        },
+        {
+          "meaning_vi": "người giúp đỡ",
+          "example_en": "She is my personal assistant.",
+          "example_vi": "Cô ấy là người giúp đỡ cá nhân của tôi."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "He holds an assistant position in the company.",
+          "example_vi": "Anh ấy giữ một vị trí phụ trong công ty."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "They hired an assistant coach for the team.",
+          "example_vi": "Họ đã thuê một huấn luyện viên phụ cho đội."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "She is an assistant manager.",
+          "example_vi": "Cô ấy là một quản lý phụ."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "He is an assistant editor for the magazine.",
+          "example_vi": "Anh ấy là một biên tập viên phụ cho tạp chí."
+        },
+        {
+          "meaning_vi": "phụ",
+          "example_en": "The assistant director led the meeting.",
+          "example_vi": "Giám đốc phụ đã dẫn dắt cuộc họp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ thành danh từ, bổ sung ví dụ.",
+      "word": "assistant",
+      "normalized_word": "assistant",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a teaching assistant at the university.",
+      "example_vi_clean": "Cô ấy là trợ giảng tại trường đại học."
+    },
+    {
+      "id": 24677,
+      "quiz_meaning_vi": "sự kết hợp",
+      "meaning_vi_clean": "sự kết hợp; hội",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "The association of these two chemicals is dangerous.",
+          "example_vi": "Sự kết hợp của hai hóa chất này rất nguy hiểm."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "There is a strong association between smoking and cancer.",
+          "example_vi": "Có một sự kết hợp chặt chẽ giữa hút thuốc và ung thư."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "The association of ideas helps memory.",
+          "example_vi": "Sự kết hợp các ý tưởng giúp ích cho trí nhớ."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "His name is in association with the project.",
+          "example_vi": "Tên của anh ấy gắn liền với dự án này."
+        },
+        {
+          "meaning_vi": "sự kết hợp",
+          "example_en": "The association of colors creates a nice effect.",
+          "example_vi": "Sự kết hợp của các màu sắc tạo ra một hiệu ứng đẹp."
+        },
+        {
+          "meaning_vi": "hội",
+          "example_en": "She is a member of the local writers' association.",
+          "example_vi": "Cô ấy là thành viên của hội nhà văn địa phương."
+        },
+        {
+          "meaning_vi": "hội",
+          "example_en": "The homeowners' association meets every month.",
+          "example_vi": "Hội chủ nhà họp mỗi tháng một lần."
+        },
+        {
+          "meaning_vi": "hội",
+          "example_en": "He joined the student association.",
+          "example_vi": "Anh ấy đã tham gia hội sinh viên."
+        },
+        {
+          "meaning_vi": "hội",
+          "example_en": "The trade association represents many businesses.",
+          "example_vi": "Hội thương mại đại diện cho nhiều doanh nghiệp."
+        },
+        {
+          "meaning_vi": "hội",
+          "example_en": "The association was founded ten years ago.",
+          "example_vi": "Hội này được thành lập mười năm trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ.",
+      "word": "association",
+      "normalized_word": "association",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The association of these two chemicals is dangerous.",
+      "example_vi_clean": "Sự kết hợp của hai hóa chất này rất nguy hiểm."
+    },
+    {
+      "id": 24678,
+      "quiz_meaning_vi": "phi hành gia",
+      "meaning_vi_clean": "phi hành gia",
+      "examples_clean": [
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "The astronaut trained for years to go to space.",
+          "example_vi": "Phi hành gia đã tập luyện nhiều năm để bay vào vũ trụ."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "She wants to become an astronaut.",
+          "example_vi": "Cô ấy muốn trở thành một phi hành gia."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "The astronaut walked on the moon.",
+          "example_vi": "Phi hành gia đã đi bộ trên mặt trăng."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "Every astronaut needs to be very fit.",
+          "example_vi": "Mỗi phi hành gia cần phải rất khỏe mạnh."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "The astronaut sent a message from the station.",
+          "example_vi": "Phi hành gia đã gửi một thông điệp từ trạm vũ trụ."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "He is a famous astronaut.",
+          "example_vi": "Ông ấy là một phi hành gia nổi tiếng."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "The astronaut wore a special suit.",
+          "example_vi": "Phi hành gia đã mặc một bộ đồ đặc biệt."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "Many children dream of being an astronaut.",
+          "example_vi": "Nhiều đứa trẻ mơ ước trở thành phi hành gia."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "The astronaut returned safely to Earth.",
+          "example_vi": "Phi hành gia đã trở về Trái Đất an toàn."
+        },
+        {
+          "meaning_vi": "phi hành gia",
+          "example_en": "The astronaut conducted experiments in space.",
+          "example_vi": "Phi hành gia đã thực hiện các thí nghiệm trong vũ trụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ.",
+      "word": "astronaut",
+      "normalized_word": "astronaut",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The astronaut trained for years to go to space.",
+      "example_vi_clean": "Phi hành gia đã tập luyện nhiều năm để bay vào vũ trụ."
+    },
+    {
+      "id": 24679,
+      "quiz_meaning_vi": "lực sĩ",
+      "meaning_vi_clean": "lực sĩ; vận động viên",
+      "examples_clean": [
+        {
+          "meaning_vi": "lực sĩ",
+          "example_en": "He is a strong athlete.",
+          "example_vi": "Anh ấy là một lực sĩ khỏe mạnh."
+        },
+        {
+          "meaning_vi": "lực sĩ",
+          "example_en": "The athlete showed great power.",
+          "example_vi": "Lực sĩ đã thể hiện sức mạnh tuyệt vời."
+        },
+        {
+          "meaning_vi": "lực sĩ",
+          "example_en": "She trains like a professional athlete.",
+          "example_vi": "Cô ấy tập luyện như một lực sĩ chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "lực sĩ",
+          "example_en": "The athlete won the gold medal.",
+          "example_vi": "Lực sĩ đã giành huy chương vàng."
+        },
+        {
+          "meaning_vi": "vận động viên",
+          "example_en": "She is a talented athlete in track and field.",
+          "example_vi": "Cô ấy là một vận động viên tài năng trong môn điền kinh."
+        },
+        {
+          "meaning_vi": "vận động viên",
+          "example_en": "The athlete runs every morning.",
+          "example_vi": "Vận động viên chạy bộ mỗi sáng."
+        },
+        {
+          "meaning_vi": "vận động viên",
+          "example_en": "Many athletes participate in the Olympics.",
+          "example_vi": "Nhiều vận động viên tham gia Thế vận hội."
+        },
+        {
+          "meaning_vi": "vận động viên",
+          "example_en": "The athlete follows a strict diet.",
+          "example_vi": "Vận động viên tuân theo một chế độ ăn kiêng nghiêm ngặt."
+        },
+        {
+          "meaning_vi": "vận động viên",
+          "example_en": "He is a famous athlete in his country.",
+          "example_vi": "Anh ấy là một vận động viên nổi tiếng ở đất nước mình."
+        },
+        {
+          "meaning_vi": "vận động viên",
+          "example_en": "The athlete prepared for the big race.",
+          "example_vi": "Vận động viên đã chuẩn bị cho cuộc đua lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ.",
+      "word": "athlete",
+      "normalized_word": "athlete",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a strong athlete.",
+      "example_vi_clean": "Anh ấy là một lực sĩ khỏe mạnh."
+    },
+    {
+      "id": 24680,
+      "quiz_meaning_vi": "nguyên tử",
+      "meaning_vi_clean": "nguyên tử",
+      "examples_clean": [
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Everything is made of atoms.",
+          "example_vi": "Mọi thứ đều được tạo thành từ các nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The atom is the smallest unit of matter.",
+          "example_vi": "Nguyên tử là đơn vị nhỏ nhất của vật chất."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Scientists study the structure of an atom.",
+          "example_vi": "Các nhà khoa học nghiên cứu cấu trúc của một nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The atom has a nucleus in the center.",
+          "example_vi": "Nguyên tử có một hạt nhân ở trung tâm."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Electrons orbit around the atom's nucleus.",
+          "example_vi": "Các electron quay quanh hạt nhân của nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The atom is invisible to the naked eye.",
+          "example_vi": "Nguyên tử không thể nhìn thấy bằng mắt thường."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "They split the atom in the laboratory.",
+          "example_vi": "Họ đã phân tách nguyên tử trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Each element has a different type of atom.",
+          "example_vi": "Mỗi nguyên tố có một loại nguyên tử khác nhau."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The energy comes from the atom.",
+          "example_vi": "Năng lượng đến từ nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "He learned about the atom in physics class.",
+          "example_vi": "Anh ấy đã học về nguyên tử trong lớp vật lý."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ.",
+      "word": "atom",
+      "normalized_word": "atom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Everything is made of atoms.",
+      "example_vi_clean": "Mọi thứ đều được tạo thành từ các nguyên tử."
+    }
+  ]
+}

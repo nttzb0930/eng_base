@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-244",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26431,
+      "word": "attentive",
+      "normalized_word": "attentive",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'tentiv/",
+      "primary_meaning_vi": "chăm chú",
+      "meaning_vi": "chăm chú; chú ý, lưu tâm; ân cần, chu đáo",
+      "example_en": "She is an attentive listener, but does not like to talk much.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a husband attentive to his wife's needs",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26432,
+      "word": "attentively",
+      "normalized_word": "attentively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "chăm chú",
+      "meaning_vi": "chăm chú",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26433,
+      "word": "attractiveness",
+      "normalized_word": "attractiveness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'træktivnis/",
+      "primary_meaning_vi": "sự hút",
+      "meaning_vi": "sự hút; sự thu hút, sự hấp dẫn, sự lôi cuốn, sự quyến rũ, sự duyên dáng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26434,
+      "word": "attribute",
+      "normalized_word": "attribute",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ætribju:t/",
+      "primary_meaning_vi": "thuộc tính",
+      "meaning_vi": "thuộc tính; vật tượng trưng; thuộc ngữ; cho là do, quy cho",
+      "example_en": "His finest attribute is his kindness.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "In the clause \"My jacket is more expensive than yours\", \"My\" is the attribute of \"jacket\".",
+          "example_vi": null
+        },
+        {
+          "example_en": "A file with the read-only attribute set cannot be overwritten.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Properties can be marked as obsolete with an attribute, which will cause the compiler to generate a warning if they are used.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26435,
+      "word": "atypical",
+      "normalized_word": "atypical",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'tipikəl/",
+      "primary_meaning_vi": "không đúng kiểu",
+      "meaning_vi": "không đúng kiểu, không điển hình",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26436,
+      "word": "aubergine",
+      "normalized_word": "aubergine",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'oubədʤi:n/",
+      "primary_meaning_vi": "cà tím",
+      "meaning_vi": "cà tím",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26437,
+      "word": "audit",
+      "normalized_word": "audit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ɔ:dit/",
+      "primary_meaning_vi": "sự kiểm tra (sổ sách)",
+      "meaning_vi": "sự kiểm tra (sổ sách); sự thanh toán các khoản (theo kỳ hạn) giữa tá điền và địa chủ; kiểm tra (sổ sách)",
+      "example_en": "National Assembly audit",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to audit the accounts of a treasure, or of parties who have a suit depending in court",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26438,
+      "word": "audition",
+      "normalized_word": "audition",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ɔ:'diʃn/",
+      "primary_meaning_vi": "sức nghe",
+      "meaning_vi": "sức nghe; sự nghe; thính giác; sự thử giọng, sự hát nghe thử (trước khi nhận vào làm diễn viên hát); thử giọng (trước khi nhận vào làm diễn viên hát); tổ chức một buổi hát thử giọng",
+      "example_en": "I've been to five auditions this week.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His audition was poor.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We auditioned several actors for the part.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Several actors auditioned for the part.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26439,
+      "word": "authorise",
+      "normalized_word": "authorise",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ɔ:θəraiz/ (authorise) /'ɔ:θəraiz/",
+      "primary_meaning_vi": "cho quyền",
+      "meaning_vi": "cho quyền, uỷ quyền, cho phép; là căn cứ, là cái cớ chính đáng",
+      "example_en": "The General Assembly authorized the Council to take up the matter.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The judge authorized the wiretapping.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26440,
+      "word": "authoritative",
+      "normalized_word": "authoritative",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ɔ:'θɔritətiv/",
+      "primary_meaning_vi": "có căn cứ đích xác",
+      "meaning_vi": "có căn cứ đích xác, có am hiểu tường tận, có thể tin được; có thẩm quyền; hống hách, hách dịch; mệnh lệnh, quyết đoán; có uy quyền, có quyền lực",
+      "example_en": "The authoritative rules in this school come not from the headmaster but from the aged matron.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This book is the world's most authoritative guide to insect breeding habits.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He instructed us in that booming, authoritative voice of his.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

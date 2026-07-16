@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-078",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24771,
+      "word": "center",
+      "normalized_word": "center",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ & động từ",
+      "phonetic": "/'sentə/",
+      "primary_meaning_vi": "centre",
+      "meaning_vi": "(như) centre",
+      "example_en": "shopping center, convention center, civic center, garment center, Lincoln Center for the Performing Arts, Rockefeller Center",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the center of attention",
+          "example_vi": null
+        },
+        {
+          "example_en": "He centered the heading of the document.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The discussion centered around the recent issues.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24772,
+      "word": "centimeter",
+      "normalized_word": "centimeter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'senti,mi:tə/ (centimeter) /'senti,mi:tə/",
+      "primary_meaning_vi": "xentimet",
+      "meaning_vi": "xentimet",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24773,
+      "word": "centimetre",
+      "normalized_word": "centimetre",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'senti,mi:tə/ (centimeter) /'senti,mi:tə/",
+      "primary_meaning_vi": "xentimet",
+      "meaning_vi": "xentimet",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24774,
+      "word": "centre",
+      "normalized_word": "centre",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'sentə/",
+      "primary_meaning_vi": "điểm giữa",
+      "meaning_vi": "điểm giữa, tâm; trung tâm; trung khu; trung ương; nhân vật trung tâm; trung phong (bóng đá); phái giữa; đạo trung quân; mẫu, dưỡng (dùng trong luyện kim); khung tò vò, khung bán nguyệt (bằng gỗ, dùng khi xây dựng); đặt vào giữa, để vào giữa, tập trung vào, xoáy quanh; đá (bóng) vào giữa; tìm tâm (của vật gì)",
+      "example_en": "shopping center, convention center, civic center, garment center, Lincoln Center for the Performing Arts, Rockefeller Center",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the center of attention",
+          "example_vi": null
+        },
+        {
+          "example_en": "He centered the heading of the document.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The discussion centered around the recent issues.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24775,
+      "word": "century",
+      "normalized_word": "century",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sentʃuri/",
+      "primary_meaning_vi": "trăm năm",
+      "meaning_vi": "trăm năm, thế kỷ; trăm (cái gì đó...); ,  (thông tục) trăm đô la; (La mã) đại đội (gồm 100 người)",
+      "example_en": "That was his tenth professional century.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24776,
+      "word": "cereal",
+      "normalized_word": "cereal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'siəriəl/",
+      "primary_meaning_vi": "ngũ cốc",
+      "meaning_vi": "ngũ cốc; số nhiều) ngũ cốc; món ăn (bằng) ngũ cốc",
+      "example_en": "Which cereal would you like for breakfast?",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24777,
+      "word": "certain",
+      "normalized_word": "certain",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'sə:tn/",
+      "primary_meaning_vi": "chắc",
+      "meaning_vi": "chắc, chắc chắn; nào đó; đôi chút, chút ít; chắc, chắc chắn, đích xác; make",
+      "example_en": "I was certain of my decision.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Bankruptcy is the certain outcome of your constant gambling and lending.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There were serious objections to certain of the proposals.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24778,
+      "word": "certainly",
+      "normalized_word": "certainly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'sə:tnli/",
+      "primary_meaning_vi": "chắc",
+      "meaning_vi": "chắc, nhất định; hẳn thế, hẳn đi, hẳn là thế, tất nhiên, dĩ nhiên (dùng trong câu trả lời)",
+      "example_en": "That was certainly sweet of him.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Would you like it with ice? Certainly, and with lemon please.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24779,
+      "word": "chain",
+      "normalized_word": "chain",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/tʃein/",
+      "primary_meaning_vi": "dây",
+      "meaning_vi": "dây, xích; dãy, chuỗi, loạt; thước dây (để đo chiều dài); dây (chiều dài của thước dây, bằng 20m115); dây chuyền (làm việc...); xiềng xích; xích lại, trói buộc, buộc chặt ((nghĩa đen) & (nghĩa bóng)); ngáng dây (qua đường phố...); đo bằng thước dây",
+      "example_en": "He wore a gold chain around the neck.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This led to an unfortunate chain of events.",
+          "example_vi": null
+        },
+        {
+          "example_en": "That chain of restaurants is expanding into our town.",
+          "example_vi": null
+        },
+        {
+          "example_en": "When examined, the molecular chain included oxygen and hydrogen.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24780,
+      "word": "chairman",
+      "normalized_word": "chairman",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'tʃeəmən/",
+      "primary_meaning_vi": "chủ tịch",
+      "meaning_vi": "chủ tịch; người chủ toạ (buổi họp); người cho thuê ghế lăn; người đẩy ghế lăn; người khiêng kiệu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

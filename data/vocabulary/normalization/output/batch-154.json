@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25531,
+      "quiz_meaning_vi": "sự phân công",
+      "meaning_vi_clean": "sự phân công; việc được giao",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân công",
+          "example_en": "The manager is responsible for the fair assignment of tasks.",
+          "example_vi": "Người quản lý chịu trách nhiệm về sự phân công công việc công bằng."
+        },
+        {
+          "meaning_vi": "sự phân công",
+          "example_en": "This flow chart represents the assignment of tasks in our committee.",
+          "example_vi": "Biểu đồ này thể hiện sự phân công nhiệm vụ trong ủy ban của chúng tôi."
+        },
+        {
+          "meaning_vi": "sự phân công",
+          "example_en": "The assignment of duties was completed before the meeting started.",
+          "example_vi": "Sự phân công nhiệm vụ đã hoàn tất trước khi cuộc họp bắt đầu."
+        },
+        {
+          "meaning_vi": "sự phân công",
+          "example_en": "Effective assignment of resources is key to project success.",
+          "example_vi": "Sự phân công nguồn lực hiệu quả là chìa khóa cho sự thành công của dự án."
+        },
+        {
+          "meaning_vi": "việc được giao",
+          "example_en": "The assignment the department gave him proved to be quite challenging.",
+          "example_vi": "Việc được giao mà phòng ban đưa cho anh ấy tỏ ra khá thách thức."
+        },
+        {
+          "meaning_vi": "việc được giao",
+          "example_en": "Unbeknownst to Mr Smith, his new assignment was in fact a demotion.",
+          "example_vi": "Không ai biết, việc được giao mới của ông Smith thực chất là một sự giáng chức."
+        },
+        {
+          "meaning_vi": "việc được giao",
+          "example_en": "She finished her assignment early so she could go home.",
+          "example_vi": "Cô ấy đã hoàn thành việc được giao sớm để có thể về nhà."
+        },
+        {
+          "meaning_vi": "việc được giao",
+          "example_en": "I have a difficult assignment to complete by tomorrow morning.",
+          "example_vi": "Tôi có một việc được giao khó khăn cần hoàn thành trước sáng mai."
+        },
+        {
+          "meaning_vi": "việc được giao",
+          "example_en": "His latest assignment involves traveling to different countries.",
+          "example_vi": "Việc được giao mới nhất của anh ấy bao gồm việc đi đến các quốc gia khác nhau."
+        },
+        {
+          "meaning_vi": "việc được giao",
+          "example_en": "Please submit your assignment before the deadline.",
+          "example_vi": "Vui lòng nộp việc được giao của bạn trước thời hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ theo quy tắc.",
+      "word": "assignment",
+      "normalized_word": "assignment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The manager is responsible for the fair assignment of tasks.",
+      "example_vi_clean": "Người quản lý chịu trách nhiệm về sự phân công công việc công bằng."
+    },
+    {
+      "id": 25532,
+      "quiz_meaning_vi": "giúp",
+      "meaning_vi_clean": "giúp; dự",
+      "examples_clean": [
+        {
+          "meaning_vi": "giúp",
+          "example_en": "This book will assist you in getting your life in order.",
+          "example_vi": "Cuốn sách này sẽ giúp bạn sắp xếp lại cuộc sống của mình."
+        },
+        {
+          "meaning_vi": "giúp",
+          "example_en": "The foundation gave a much needed assist to the shelter.",
+          "example_vi": "Quỹ đã giúp đỡ rất cần thiết cho nơi trú ẩn."
+        },
+        {
+          "meaning_vi": "giúp",
+          "example_en": "Can you assist me with these heavy boxes?",
+          "example_vi": "Bạn có thể giúp tôi với những chiếc hộp nặng này không?"
+        },
+        {
+          "meaning_vi": "giúp",
+          "example_en": "We are here to assist you with any questions you may have.",
+          "example_vi": "Chúng tôi ở đây để giúp bạn với bất kỳ câu hỏi nào bạn có thể có."
+        },
+        {
+          "meaning_vi": "dự",
+          "example_en": "A great part of the nobility assisted to his opinion.",
+          "example_vi": "Một phần lớn giới quý tộc đã dự vào ý kiến của ông ấy."
+        },
+        {
+          "meaning_vi": "dự",
+          "example_en": "Many guests assisted at the ceremony yesterday.",
+          "example_vi": "Nhiều khách mời đã dự buổi lễ ngày hôm qua."
+        },
+        {
+          "meaning_vi": "dự",
+          "example_en": "He assisted at the meeting as an observer.",
+          "example_vi": "Anh ấy đã dự cuộc họp với tư cách là người quan sát."
+        },
+        {
+          "meaning_vi": "dự",
+          "example_en": "She assisted at the conference to learn more about the topic.",
+          "example_vi": "Cô ấy đã dự hội nghị để tìm hiểu thêm về chủ đề này."
+        },
+        {
+          "meaning_vi": "dự",
+          "example_en": "They assisted at the performance with great interest.",
+          "example_vi": "Họ đã dự buổi biểu diễn với sự quan tâm lớn."
+        },
+        {
+          "meaning_vi": "dự",
+          "example_en": "Everyone was invited to assist at the grand opening.",
+          "example_vi": "Mọi người đều được mời dự buổi khai trương trọng thể."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "assist",
+      "normalized_word": "assist",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "This book will assist you in getting your life in order.",
+      "example_vi_clean": "Cuốn sách này sẽ giúp bạn sắp xếp lại cuộc sống của mình."
+    },
+    {
+      "id": 25533,
+      "quiz_meaning_vi": "sự giúp đỡ",
+      "meaning_vi_clean": "sự giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Thank you for your assistance with this project.",
+          "example_vi": "Cảm ơn sự giúp đỡ của bạn với dự án này."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "They provided financial assistance to the victims.",
+          "example_vi": "Họ đã cung cấp sự giúp đỡ tài chính cho các nạn nhân."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "I need your assistance to move this furniture.",
+          "example_vi": "Tôi cần sự giúp đỡ của bạn để di chuyển đồ đạc này."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "The organization offers assistance to those in need.",
+          "example_vi": "Tổ chức cung cấp sự giúp đỡ cho những người cần."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "He was grateful for the assistance he received.",
+          "example_vi": "Anh ấy rất biết ơn sự giúp đỡ mà anh ấy nhận được."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Please call for assistance if you have any trouble.",
+          "example_vi": "Vui lòng gọi để nhận sự giúp đỡ nếu bạn gặp khó khăn."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Her assistance made the task much easier.",
+          "example_vi": "Sự giúp đỡ của cô ấy làm cho công việc dễ dàng hơn nhiều."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "We are seeking technical assistance for our software.",
+          "example_vi": "Chúng tôi đang tìm kiếm sự giúp đỡ kỹ thuật cho phần mềm của mình."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "The government promised assistance to the affected areas.",
+          "example_vi": "Chính phủ đã hứa sự giúp đỡ cho các khu vực bị ảnh hưởng."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Without your assistance, I could not have finished it.",
+          "example_vi": "Nếu không có sự giúp đỡ của bạn, tôi đã không thể hoàn thành nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ.",
+      "word": "assistance",
+      "normalized_word": "assistance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Thank you for your assistance with this project.",
+      "example_vi_clean": "Cảm ơn sự giúp đỡ của bạn với dự án này."
+    },
+    {
+      "id": 25534,
+      "quiz_meaning_vi": "kết giao",
+      "meaning_vi_clean": "kết giao; liên tưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "kết giao",
+          "example_en": "She associates with her coworkers on weekends.",
+          "example_vi": "Cô ấy kết giao với các đồng nghiệp vào cuối tuần."
+        },
+        {
+          "meaning_vi": "kết giao",
+          "example_en": "He prefers to associate with people who share his interests.",
+          "example_vi": "Anh ấy thích kết giao với những người có cùng sở thích."
+        },
+        {
+          "meaning_vi": "kết giao",
+          "example_en": "It is important to associate with positive influences.",
+          "example_vi": "Điều quan trọng là kết giao với những ảnh hưởng tích cực."
+        },
+        {
+          "meaning_vi": "kết giao",
+          "example_en": "They have been associating with each other for years.",
+          "example_vi": "Họ đã kết giao với nhau trong nhiều năm."
+        },
+        {
+          "meaning_vi": "liên tưởng",
+          "example_en": "He associated his name with many environmental causes.",
+          "example_vi": "Anh ấy liên tưởng tên mình với nhiều hoạt động môi trường."
+        },
+        {
+          "meaning_vi": "liên tưởng",
+          "example_en": "Most people associate summer with holidays and sunshine.",
+          "example_vi": "Hầu hết mọi người liên tưởng mùa hè với kỳ nghỉ và ánh nắng."
+        },
+        {
+          "meaning_vi": "liên tưởng",
+          "example_en": "I always associate the smell of rain with my childhood.",
+          "example_vi": "Tôi luôn liên tưởng mùi mưa với tuổi thơ của mình."
+        },
+        {
+          "meaning_vi": "liên tưởng",
+          "example_en": "We should not associate wealth with happiness.",
+          "example_vi": "Chúng ta không nên liên tưởng sự giàu có với hạnh phúc."
+        },
+        {
+          "meaning_vi": "liên tưởng",
+          "example_en": "She associates that song with her first dance.",
+          "example_vi": "Cô ấy liên tưởng bài hát đó với điệu nhảy đầu tiên của mình."
+        },
+        {
+          "meaning_vi": "liên tưởng",
+          "example_en": "Many people associate the color red with danger.",
+          "example_vi": "Nhiều người liên tưởng màu đỏ với sự nguy hiểm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "associate",
+      "normalized_word": "associate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She associates with her coworkers on weekends.",
+      "example_vi_clean": "Cô ấy kết giao với các đồng nghiệp vào cuối tuần."
+    },
+    {
+      "id": 25535,
+      "quiz_meaning_vi": "mang",
+      "meaning_vi_clean": "mang; cho rằng; đảm đương",
+      "examples_clean": [
+        {
+          "meaning_vi": "mang",
+          "example_en": "He assumed an air of indifference.",
+          "example_vi": "Anh ấy mang một vẻ thờ ơ."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "The situation assumed a new importance.",
+          "example_vi": "Tình hình mang một tầm quan trọng mới."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "The problem assumed serious proportions.",
+          "example_vi": "Vấn đề mang những tỷ lệ nghiêm trọng."
+        },
+        {
+          "meaning_vi": "mang",
+          "example_en": "His voice assumed a softer tone.",
+          "example_vi": "Giọng anh ấy mang một tông nhẹ nhàng hơn."
+        },
+        {
+          "meaning_vi": "cho rằng",
+          "example_en": "We assume that, as her parents were dentists, she knows quite a bit about dentistry.",
+          "example_vi": "Chúng tôi cho rằng, vì cha mẹ cô ấy là nha sĩ, cô ấy biết khá nhiều về nha khoa."
+        },
+        {
+          "meaning_vi": "cho rằng",
+          "example_en": "I assume that you are coming to the party.",
+          "example_vi": "Tôi cho rằng bạn sẽ đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "đảm đương",
+          "example_en": "Mr. Jones will assume the position of a lifeguard until a proper replacement is found.",
+          "example_vi": "Ông Jones sẽ đảm đương vị trí nhân viên cứu hộ cho đến khi tìm được người thay thế phù hợp."
+        },
+        {
+          "meaning_vi": "đảm đương",
+          "example_en": "She will assume responsibility for the project.",
+          "example_vi": "Cô ấy sẽ đảm đương trách nhiệm cho dự án."
+        },
+        {
+          "meaning_vi": "đảm đương",
+          "example_en": "He is ready to assume the role of manager.",
+          "example_vi": "Anh ấy sẵn sàng đảm đương vai trò quản lý."
+        },
+        {
+          "meaning_vi": "đảm đương",
+          "example_en": "They had to assume control of the situation.",
+          "example_vi": "Họ đã phải đảm đương việc kiểm soát tình hình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "assume",
+      "normalized_word": "assume",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He assumed an air of indifference.",
+      "example_vi_clean": "Anh ấy mang một vẻ thờ ơ."
+    },
+    {
+      "id": 25536,
+      "quiz_meaning_vi": "nhà thiên văn học",
+      "meaning_vi_clean": "nhà thiên văn học",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "The astronomer discovered a new star last night.",
+          "example_vi": "Nhà thiên văn học đã phát hiện ra một ngôi sao mới tối qua."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "She wants to become an astronomer when she grows up.",
+          "example_vi": "Cô ấy muốn trở thành một nhà thiên văn học khi lớn lên."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "The astronomer used a telescope to observe the planet.",
+          "example_vi": "Nhà thiên văn học đã sử dụng kính thiên văn để quan sát hành tinh."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "Many astronomers study the origins of the universe.",
+          "example_vi": "Nhiều nhà thiên văn học nghiên cứu nguồn gốc của vũ trụ."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "The famous astronomer gave a lecture on black holes.",
+          "example_vi": "Nhà thiên văn học nổi tiếng đã có một bài giảng về hố đen."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "An astronomer spends much time analyzing data.",
+          "example_vi": "Một nhà thiên văn học dành nhiều thời gian phân tích dữ liệu."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "The astronomer tracked the comet across the sky.",
+          "example_vi": "Nhà thiên văn học đã theo dõi sao chổi trên bầu trời."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "He is a dedicated astronomer working at the observatory.",
+          "example_vi": "Anh ấy là một nhà thiên văn học tận tâm làm việc tại đài thiên văn."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "The astronomer published her findings in a journal.",
+          "example_vi": "Nhà thiên văn học đã công bố những phát hiện của mình trên một tạp chí."
+        },
+        {
+          "meaning_vi": "nhà thiên văn học",
+          "example_en": "Every astronomer dreams of finding a new galaxy.",
+          "example_vi": "Mọi nhà thiên văn học đều mơ ước tìm thấy một thiên hà mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ.",
+      "word": "astronomer",
+      "normalized_word": "astronomer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The astronomer discovered a new star last night.",
+      "example_vi_clean": "Nhà thiên văn học đã phát hiện ra một ngôi sao mới tối qua."
+    },
+    {
+      "id": 25537,
+      "quiz_meaning_vi": "có tính chất lực sĩ",
+      "meaning_vi_clean": "có tính chất lực sĩ; điền kinh",
+      "examples_clean": [
+        {
+          "meaning_vi": "có tính chất lực sĩ",
+          "example_en": "You have such an athletic build—you must work out regularly.",
+          "example_vi": "Bạn có một vóc dáng có tính chất lực sĩ—bạn chắc hẳn phải tập luyện thường xuyên."
+        },
+        {
+          "meaning_vi": "có tính chất lực sĩ",
+          "example_en": "Since you're such an athletic person, you may wish to consider joining.",
+          "example_vi": "Vì bạn là một người có tính chất lực sĩ, bạn có thể muốn cân nhắc tham gia."
+        },
+        {
+          "meaning_vi": "có tính chất lực sĩ",
+          "example_en": "He has an athletic physique from years of training.",
+          "example_vi": "Anh ấy có một thể hình có tính chất lực sĩ sau nhiều năm tập luyện."
+        },
+        {
+          "meaning_vi": "có tính chất lực sĩ",
+          "example_en": "She is very athletic and excels at many sports.",
+          "example_vi": "Cô ấy rất có tính chất lực sĩ và xuất sắc ở nhiều môn thể thao."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "Are you a member of the American Athletic Association?",
+          "example_vi": "Bạn có phải là thành viên của Hiệp hội điền kinh Mỹ không?"
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "The school has a great athletic program for students.",
+          "example_vi": "Trường có một chương trình điền kinh tuyệt vời cho học sinh."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "He won a gold medal in the athletic competition.",
+          "example_vi": "Anh ấy đã giành huy chương vàng trong cuộc thi điền kinh."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "The center fielder made an athletic play to snatch the ball from over the fence.",
+          "example_vi": "Cầu thủ bắt bóng đã có một pha xử lý điền kinh để chộp lấy quả bóng từ trên hàng rào."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "She is training for the upcoming athletic meet.",
+          "example_vi": "Cô ấy đang tập luyện cho cuộc thi điền kinh sắp tới."
+        },
+        {
+          "meaning_vi": "điền kinh",
+          "example_en": "The stadium is used for various athletic events.",
+          "example_vi": "Sân vận động được sử dụng cho nhiều sự kiện điền kinh khác nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "athletic",
+      "normalized_word": "athletic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "You have such an athletic build—you must work out regularly.",
+      "example_vi_clean": "Bạn có một vóc dáng có tính chất lực sĩ—bạn chắc hẳn phải tập luyện thường xuyên."
+    },
+    {
+      "id": 25538,
+      "quiz_meaning_vi": "Đại tây dương",
+      "meaning_vi_clean": "Đại tây dương",
+      "examples_clean": [
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "The ship crossed the Atlantic Ocean in ten days.",
+          "example_vi": "Con tàu đã băng qua Đại tây dương trong mười ngày."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "Many flights fly over the Atlantic every day.",
+          "example_vi": "Nhiều chuyến bay bay qua Đại tây dương mỗi ngày."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "The Atlantic is the second largest ocean in the world.",
+          "example_vi": "Đại tây dương là đại dương lớn thứ hai trên thế giới."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "We enjoyed the view of the Atlantic from the beach.",
+          "example_vi": "Chúng tôi đã tận hưởng tầm nhìn ra Đại tây dương từ bãi biển."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "The storm moved across the Atlantic towards the coast.",
+          "example_vi": "Cơn bão đã di chuyển qua Đại tây dương về phía bờ biển."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "He sailed across the Atlantic alone.",
+          "example_vi": "Anh ấy đã chèo thuyền qua Đại tây dương một mình."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "The Atlantic currents affect the climate of Europe.",
+          "example_vi": "Các dòng hải lưu Đại tây dương ảnh hưởng đến khí hậu của châu Âu."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "They are studying the marine life in the Atlantic.",
+          "example_vi": "Họ đang nghiên cứu đời sống sinh vật biển ở Đại tây dương."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "The Atlantic separates the Americas from Europe and Africa.",
+          "example_vi": "Đại tây dương ngăn cách châu Mỹ với châu Âu và châu Phi."
+        },
+        {
+          "meaning_vi": "Đại tây dương",
+          "example_en": "The Atlantic cable connects the two continents.",
+          "example_vi": "Cáp Đại tây dương kết nối hai lục địa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "atlantic",
+      "normalized_word": "atlantic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The ship crossed the Atlantic Ocean in ten days.",
+      "example_vi_clean": "Con tàu đã băng qua Đại tây dương trong mười ngày."
+    },
+    {
+      "id": 25539,
+      "quiz_meaning_vi": "không khí",
+      "meaning_vi_clean": "không khí; bầu không khí",
+      "examples_clean": [
+        {
+          "meaning_vi": "không khí",
+          "example_en": "The air is filled with the atmosphere of the city.",
+          "example_vi": "Không khí tràn ngập bầu không khí của thành phố."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "We need fresh air to breathe.",
+          "example_vi": "Chúng ta cần không khí trong lành để thở."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "The atmosphere contains nitrogen and oxygen.",
+          "example_vi": "Không khí chứa nitơ và oxy."
+        },
+        {
+          "meaning_vi": "không khí",
+          "example_en": "Pollution is damaging the atmosphere.",
+          "example_vi": "Ô nhiễm đang làm hại không khí."
+        },
+        {
+          "meaning_vi": "bầu không khí",
+          "example_en": "The restaurant has a very relaxed atmosphere.",
+          "example_vi": "Nhà hàng có một bầu không khí rất thư giãn."
+        },
+        {
+          "meaning_vi": "bầu không khí",
+          "example_en": "There was a tense atmosphere in the meeting room.",
+          "example_vi": "Có một bầu không khí căng thẳng trong phòng họp."
+        },
+        {
+          "meaning_vi": "bầu không khí",
+          "example_en": "The party had a festive atmosphere.",
+          "example_vi": "Bữa tiệc có một bầu không khí lễ hội."
+        },
+        {
+          "meaning_vi": "bầu không khí",
+          "example_en": "She loves the friendly atmosphere of this town.",
+          "example_vi": "Cô ấy yêu bầu không khí thân thiện của thị trấn này."
+        },
+        {
+          "meaning_vi": "bầu không khí",
+          "example_en": "The music created a romantic atmosphere.",
+          "example_vi": "Âm nhạc đã tạo ra một bầu không khí lãng mạn."
+        },
+        {
+          "meaning_vi": "bầu không khí",
+          "example_en": "The hotel has a warm and welcoming atmosphere.",
+          "example_vi": "Khách sạn có một bầu không khí ấm áp và chào đón."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "atmosphere",
+      "normalized_word": "atmosphere",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The air is filled with the atmosphere of the city.",
+      "example_vi_clean": "Không khí tràn ngập bầu không khí của thành phố."
+    },
+    {
+      "id": 25540,
+      "quiz_meaning_vi": "nguyên tử",
+      "meaning_vi_clean": "nguyên tử",
+      "examples_clean": [
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "A stream of atomic hydrogen is emitted.",
+          "example_vi": "Một dòng hydro nguyên tử được phát ra."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Scientists study the structure of the atomic nucleus.",
+          "example_vi": "Các nhà khoa học nghiên cứu cấu trúc của hạt nhân nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Atomic energy is a powerful source of power.",
+          "example_vi": "Năng lượng nguyên tử là một nguồn năng lượng mạnh mẽ."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The atomic weight of an element is important.",
+          "example_vi": "Trọng lượng nguyên tử của một nguyên tố rất quan trọng."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "We built a small atomic model in the garage.",
+          "example_vi": "Chúng tôi đã xây dựng một mô hình nguyên tử nhỏ trong nhà để xe."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The hairs on a bedbug are almost atomic in size.",
+          "example_vi": "Những sợi lông trên con rệp có kích thước gần như nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "A bit is an atomic item of data.",
+          "example_vi": "Một bit là một mục dữ liệu nguyên tử."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "Atomic physics is a complex field of study.",
+          "example_vi": "Vật lý nguyên tử là một lĩnh vực nghiên cứu phức tạp."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "The atomic structure determines the properties of matter.",
+          "example_vi": "Cấu trúc nguyên tử quyết định các tính chất của vật chất."
+        },
+        {
+          "meaning_vi": "nguyên tử",
+          "example_en": "They are researching atomic interactions.",
+          "example_vi": "Họ đang nghiên cứu các tương tác nguyên tử."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "atomic",
+      "normalized_word": "atomic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "A stream of atomic hydrogen is emitted.",
+      "example_vi_clean": "Một dòng hydro nguyên tử được phát ra."
+    }
+  ]
+}

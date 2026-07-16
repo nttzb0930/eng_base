@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-200",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25991,
+      "word": "eagerness",
+      "normalized_word": "eagerness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'i:gənis/",
+      "primary_meaning_vi": "sự ham",
+      "meaning_vi": "sự ham, sự háo hức, sự hâm hở, sự thiết tha, sự say mê; tính hám",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25992,
+      "word": "earache",
+      "normalized_word": "earache",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự đau tai",
+      "meaning_vi": "sự đau tai; bệnh đau tai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25993,
+      "word": "earnest",
+      "normalized_word": "earnest",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ə:nist/",
+      "primary_meaning_vi": "đứng đắn",
+      "meaning_vi": "đứng đắn, nghiêm chỉnh; sốt sắng, tha thiết; thái độ đứng đắn, thái độ nghiêm chỉnh; trời đang mưa ra trò; tiền đặt cọc; sự bảo đảm; điềm, điều báo hiệu trước",
+      "example_en": "earnest prayers",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "earnest attention.",
+          "example_vi": null
+        },
+        {
+          "example_en": "an earnest disposition",
+          "example_vi": null
+        },
+        {
+          "example_en": "earnest efforts",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25994,
+      "word": "eastern",
+      "normalized_word": "eastern",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'i:stən/",
+      "primary_meaning_vi": "đông",
+      "meaning_vi": "đông; người miền đông ((cũng) easterner); tín đồ nhà thờ chính thống",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25995,
+      "word": "easygoing",
+      "normalized_word": "easygoing",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "dễ tính",
+      "meaning_vi": "dễ tính, vô tâm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25996,
+      "word": "easy-going",
+      "normalized_word": "easy-going",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'i:zi,gouiɳ/",
+      "primary_meaning_vi": "thích thoải mái",
+      "meaning_vi": "thích thoải mái; vô tư lự, ung dung (người); có bước đi thong dong (ngựa)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25997,
+      "word": "ecological",
+      "normalized_word": "ecological",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,ekə'lɔdʤik/ (ecological) /,ekə'lɔdʤikəl/",
+      "primary_meaning_vi": "sinh thái học",
+      "meaning_vi": "sinh thái học",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25998,
+      "word": "ecology",
+      "normalized_word": "ecology",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i'kɔlədʤi/ (oecology) /i:'kɔlədʤi/",
+      "primary_meaning_vi": "sinh thái học",
+      "meaning_vi": "sinh thái học",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25999,
+      "word": "economic",
+      "normalized_word": "economic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,i:kə'nɔmik/",
+      "primary_meaning_vi": "kinh tế",
+      "meaning_vi": "kinh tế; mang lợi, có lợi (việc kinh doanh...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26000,
+      "word": "economics",
+      "normalized_word": "economics",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều dùng như số ít",
+      "phonetic": "/,i:kə'nɔmiks/",
+      "primary_meaning_vi": "khoa kinh tế chính trị",
+      "meaning_vi": "khoa kinh tế chính trị; nền kinh tế (cho một nước)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

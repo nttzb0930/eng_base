@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24371,
+      "quiz_meaning_vi": "đàn ghita",
+      "meaning_vi_clean": "đàn ghita",
+      "examples_clean": [
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "She plays the guitar beautifully.",
+          "example_vi": "Cô ấy chơi đàn ghita rất hay."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "He bought a new acoustic guitar.",
+          "example_vi": "Anh ấy đã mua một cây đàn ghita thùng mới."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "Learning to play the guitar takes time.",
+          "example_vi": "Học chơi đàn ghita cần có thời gian."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "The guitar strings need to be replaced.",
+          "example_vi": "Dây đàn ghita cần được thay thế."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "He strummed his guitar by the campfire.",
+          "example_vi": "Anh ấy gảy đàn ghita bên đống lửa trại."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "She is taking guitar lessons every Saturday.",
+          "example_vi": "Cô ấy đang tham gia các buổi học đàn ghita mỗi thứ Bảy."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "The guitar solo in that song is amazing.",
+          "example_vi": "Đoạn độc tấu đàn ghita trong bài hát đó thật tuyệt vời."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "He keeps his guitar in a protective case.",
+          "example_vi": "Anh ấy giữ cây đàn ghita của mình trong một chiếc hộp bảo vệ."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "They sang along while he played the guitar.",
+          "example_vi": "Họ hát theo trong khi anh ấy chơi đàn ghita."
+        },
+        {
+          "meaning_vi": "đàn ghita",
+          "example_en": "She wants to be a professional guitar player.",
+          "example_vi": "Cô ấy muốn trở thành một người chơi đàn ghita chuyên nghiệp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ 'chơi đàn ghita' thành 'đàn ghita' vì đây là danh từ. Bổ sung 10 ví dụ minh họa.",
+      "word": "guitar",
+      "normalized_word": "guitar",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She plays the guitar beautifully.",
+      "example_vi_clean": "Cô ấy chơi đàn ghita rất hay."
+    },
+    {
+      "id": 24372,
+      "quiz_meaning_vi": "anh chàng",
+      "meaning_vi_clean": "anh chàng; dây",
+      "examples_clean": [
+        {
+          "meaning_vi": "anh chàng",
+          "example_en": "He is a nice guy.",
+          "example_vi": "Anh ấy là một anh chàng tốt bụng."
+        },
+        {
+          "meaning_vi": "anh chàng",
+          "example_en": "Who is that guy over there?",
+          "example_vi": "Anh chàng đằng kia là ai vậy?"
+        },
+        {
+          "meaning_vi": "anh chàng",
+          "example_en": "The guy at the store helped me.",
+          "example_vi": "Anh chàng ở cửa hàng đã giúp tôi."
+        },
+        {
+          "meaning_vi": "anh chàng",
+          "example_en": "I met a funny guy at the party.",
+          "example_vi": "Tôi đã gặp một anh chàng vui tính tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "dây",
+          "example_en": "The mast was secured with a guy.",
+          "example_vi": "Cột buồm được cố định bằng một sợi dây."
+        },
+        {
+          "meaning_vi": "dây",
+          "example_en": "They used a guy to hold the tent steady.",
+          "example_vi": "Họ dùng một sợi dây để giữ cái lều đứng vững."
+        },
+        {
+          "meaning_vi": "anh chàng",
+          "example_en": "That guy is very talented at music.",
+          "example_vi": "Anh chàng đó rất có tài về âm nhạc."
+        },
+        {
+          "meaning_vi": "anh chàng",
+          "example_en": "Ask that guy for directions.",
+          "example_vi": "Hãy hỏi anh chàng đó đường đi."
+        },
+        {
+          "meaning_vi": "dây",
+          "example_en": "The guy rope snapped in the wind.",
+          "example_vi": "Sợi dây chằng bị đứt trong gió."
+        },
+        {
+          "meaning_vi": "dây",
+          "example_en": "Check if the guy is tight enough.",
+          "example_vi": "Kiểm tra xem sợi dây đã đủ căng chưa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'anh chàng' (nghĩa phổ biến nhất). Bổ sung nghĩa 'dây' để bao quát từ loại. Bổ sung 10 ví dụ.",
+      "word": "guy",
+      "normalized_word": "guy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a nice guy.",
+      "example_vi_clean": "Anh ấy là một anh chàng tốt bụng."
+    },
+    {
+      "id": 24373,
+      "quiz_meaning_vi": "thói quen",
+      "meaning_vi_clean": "thói quen; áo tu sĩ",
+      "examples_clean": [
+        {
+          "meaning_vi": "thói quen",
+          "example_en": "It is a bad habit to stay up late.",
+          "example_vi": "Thức khuya là một thói quen xấu."
+        },
+        {
+          "meaning_vi": "thói quen",
+          "example_en": "She has a habit of reading before bed.",
+          "example_vi": "Cô ấy có thói quen đọc sách trước khi đi ngủ."
+        },
+        {
+          "meaning_vi": "thói quen",
+          "example_en": "You should try to break that habit.",
+          "example_vi": "Bạn nên cố gắng bỏ thói quen đó."
+        },
+        {
+          "meaning_vi": "thói quen",
+          "example_en": "He developed a habit of exercising daily.",
+          "example_vi": "Anh ấy đã hình thành thói quen tập thể dục hàng ngày."
+        },
+        {
+          "meaning_vi": "áo tu sĩ",
+          "example_en": "The monk wore a simple brown habit.",
+          "example_vi": "Vị tu sĩ mặc một chiếc áo tu sĩ màu nâu đơn giản."
+        },
+        {
+          "meaning_vi": "áo tu sĩ",
+          "example_en": "The nuns were dressed in their traditional habits.",
+          "example_vi": "Các nữ tu mặc trang phục áo tu sĩ truyền thống của họ."
+        },
+        {
+          "meaning_vi": "thói quen",
+          "example_en": "It is just a matter of habit.",
+          "example_vi": "Đó chỉ là vấn đề thói quen thôi."
+        },
+        {
+          "meaning_vi": "thói quen",
+          "example_en": "I have a habit of drinking tea in the morning.",
+          "example_vi": "Tôi có thói quen uống trà vào buổi sáng."
+        },
+        {
+          "meaning_vi": "áo tu sĩ",
+          "example_en": "The fabric of the habit was very coarse.",
+          "example_vi": "Chất liệu của chiếc áo tu sĩ rất thô."
+        },
+        {
+          "meaning_vi": "áo tu sĩ",
+          "example_en": "She decided to take the habit and join the convent.",
+          "example_vi": "Cô ấy quyết định mặc áo tu sĩ và gia nhập tu viện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'thói quen', bổ sung nghĩa 'áo tu sĩ'. Bổ sung 10 ví dụ.",
+      "word": "habit",
+      "normalized_word": "habit",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It is a bad habit to stay up late.",
+      "example_vi_clean": "Thức khuya là một thói quen xấu."
+    },
+    {
+      "id": 24374,
+      "quiz_meaning_vi": "có",
+      "meaning_vi_clean": "có; ăn; uống; bị",
+      "examples_clean": [
+        {
+          "meaning_vi": "có",
+          "example_en": "I had a busy day yesterday.",
+          "example_vi": "Tôi đã có một ngày bận rộn hôm qua."
+        },
+        {
+          "meaning_vi": "có",
+          "example_en": "She had many friends in school.",
+          "example_vi": "Cô ấy đã có nhiều bạn bè ở trường."
+        },
+        {
+          "meaning_vi": "có",
+          "example_en": "They had a nice house in the city.",
+          "example_vi": "Họ đã có một ngôi nhà đẹp trong thành phố."
+        },
+        {
+          "meaning_vi": "có",
+          "example_en": "He had a good reason for being late.",
+          "example_vi": "Anh ấy đã có lý do chính đáng cho việc đến muộn."
+        },
+        {
+          "meaning_vi": "ăn",
+          "example_en": "We had lunch at a small cafe.",
+          "example_vi": "Chúng tôi đã ăn trưa tại một quán cà phê nhỏ."
+        },
+        {
+          "meaning_vi": "ăn",
+          "example_en": "They had dinner with their grandparents.",
+          "example_vi": "Họ đã ăn tối cùng ông bà của mình."
+        },
+        {
+          "meaning_vi": "uống",
+          "example_en": "I had a cup of coffee this morning.",
+          "example_vi": "Tôi đã uống một tách cà phê sáng nay."
+        },
+        {
+          "meaning_vi": "uống",
+          "example_en": "She had some juice after the workout.",
+          "example_vi": "Cô ấy đã uống một ít nước ép sau khi tập luyện."
+        },
+        {
+          "meaning_vi": "bị",
+          "example_en": "He had a cold last week.",
+          "example_vi": "Anh ấy đã bị cảm lạnh tuần trước."
+        },
+        {
+          "meaning_vi": "bị",
+          "example_en": "They had a problem with the car engine.",
+          "example_vi": "Họ đã bị một vấn đề với động cơ xe hơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ 'có' (quá khứ của have). Bổ sung các nghĩa phổ biến khác và 10 ví dụ.",
+      "word": "had",
+      "normalized_word": "had",
+      "cefr_level": "A1",
+      "pos": "have-verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I had a busy day yesterday.",
+      "example_vi_clean": "Tôi đã có một ngày bận rộn hôm qua."
+    },
+    {
+      "id": 24375,
+      "quiz_meaning_vi": "tóc",
+      "meaning_vi_clean": "tóc; lông",
+      "examples_clean": [
+        {
+          "meaning_vi": "tóc",
+          "example_en": "She has long brown hair.",
+          "example_vi": "Cô ấy có mái tóc dài màu nâu."
+        },
+        {
+          "meaning_vi": "tóc",
+          "example_en": "He needs to cut his hair.",
+          "example_vi": "Anh ấy cần cắt tóc."
+        },
+        {
+          "meaning_vi": "tóc",
+          "example_en": "She brushed her hair before going out.",
+          "example_vi": "Cô ấy chải tóc trước khi ra ngoài."
+        },
+        {
+          "meaning_vi": "tóc",
+          "example_en": "His hair is turning grey.",
+          "example_vi": "Tóc anh ấy đang dần bạc đi."
+        },
+        {
+          "meaning_vi": "lông",
+          "example_en": "The cat has soft white hair.",
+          "example_vi": "Con mèo có bộ lông trắng mềm mại."
+        },
+        {
+          "meaning_vi": "lông",
+          "example_en": "The dog's hair was all over the sofa.",
+          "example_vi": "Lông con chó dính đầy trên ghế sofa."
+        },
+        {
+          "meaning_vi": "tóc",
+          "example_en": "She dyed her hair black.",
+          "example_vi": "Cô ấy đã nhuộm tóc màu đen."
+        },
+        {
+          "meaning_vi": "tóc",
+          "example_en": "He has curly hair.",
+          "example_vi": "Anh ấy có mái tóc xoăn."
+        },
+        {
+          "meaning_vi": "lông",
+          "example_en": "The animal's hair protects it from the cold.",
+          "example_vi": "Bộ lông của con vật bảo vệ nó khỏi cái lạnh."
+        },
+        {
+          "meaning_vi": "lông",
+          "example_en": "I found a hair on my jacket.",
+          "example_vi": "Tôi tìm thấy một sợi lông trên áo khoác của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'tóc', bổ sung nghĩa 'lông'. Bổ sung 10 ví dụ.",
+      "word": "hair",
+      "normalized_word": "hair",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has long brown hair.",
+      "example_vi_clean": "Cô ấy có mái tóc dài màu nâu."
+    },
+    {
+      "id": 24376,
+      "quiz_meaning_vi": "phòng lớn",
+      "meaning_vi_clean": "phòng lớn; hành lang",
+      "examples_clean": [
+        {
+          "meaning_vi": "phòng lớn",
+          "example_en": "The wedding was held in a large hall.",
+          "example_vi": "Đám cưới được tổ chức trong một phòng lớn."
+        },
+        {
+          "meaning_vi": "phòng lớn",
+          "example_en": "The concert hall was packed with people.",
+          "example_vi": "Phòng lớn hòa nhạc chật kín người."
+        },
+        {
+          "meaning_vi": "phòng lớn",
+          "example_en": "They danced in the main hall.",
+          "example_vi": "Họ khiêu vũ trong phòng lớn chính."
+        },
+        {
+          "meaning_vi": "phòng lớn",
+          "example_en": "The town hall is a historic building.",
+          "example_vi": "Tòa thị chính là một tòa nhà lịch sử."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "He waited in the hall for his turn.",
+          "example_vi": "Anh ấy đợi ở hành lang để đến lượt mình."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "The hall was decorated with paintings.",
+          "example_vi": "Hành lang được trang trí bằng những bức tranh."
+        },
+        {
+          "meaning_vi": "phòng lớn",
+          "example_en": "The school hall is used for assemblies.",
+          "example_vi": "Phòng lớn của trường được dùng cho các buổi tập trung."
+        },
+        {
+          "meaning_vi": "phòng lớn",
+          "example_en": "We met in the entrance hall.",
+          "example_vi": "Chúng tôi gặp nhau ở phòng lớn lối vào."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "She ran down the hall to catch the bus.",
+          "example_vi": "Cô ấy chạy dọc hành lang để bắt xe buýt."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "The lights in the hall were flickering.",
+          "example_vi": "Đèn ở hành lang đang nhấp nháy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'phòng lớn', bổ sung nghĩa 'hành lang'. Bổ sung 10 ví dụ.",
+      "word": "hall",
+      "normalized_word": "hall",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The wedding was held in a large hall.",
+      "example_vi_clean": "Đám cưới được tổ chức trong một phòng lớn."
+    },
+    {
+      "id": 24377,
+      "quiz_meaning_vi": "thịt băm viên",
+      "meaning_vi_clean": "thịt băm viên",
+      "examples_clean": [
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "I ordered a hamburger for lunch.",
+          "example_vi": "Tôi đã gọi một chiếc thịt băm viên cho bữa trưa."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "He likes his hamburger with extra cheese.",
+          "example_vi": "Anh ấy thích thịt băm viên của mình với thêm phô mai."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "The hamburger was cooked to perfection.",
+          "example_vi": "Chiếc thịt băm viên được nấu chín hoàn hảo."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "She made homemade hamburgers for the party.",
+          "example_vi": "Cô ấy đã làm thịt băm viên tại nhà cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "Would you like a hamburger or a hot dog?",
+          "example_vi": "Bạn muốn một chiếc thịt băm viên hay một chiếc xúc xích?"
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "The restaurant serves the best hamburgers in town.",
+          "example_vi": "Nhà hàng phục vụ món thịt băm viên ngon nhất thị trấn."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "He ate two hamburgers because he was hungry.",
+          "example_vi": "Anh ấy đã ăn hai chiếc thịt băm viên vì anh ấy đói."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "Add some lettuce to your hamburger.",
+          "example_vi": "Thêm một ít xà lách vào chiếc thịt băm viên của bạn."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "The hamburger bun was very fresh.",
+          "example_vi": "Vỏ bánh thịt băm viên rất tươi."
+        },
+        {
+          "meaning_vi": "thịt băm viên",
+          "example_en": "They grilled the hamburgers in the backyard.",
+          "example_vi": "Họ đã nướng thịt băm viên ở sân sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'thịt băm viên'. Bổ sung 10 ví dụ.",
+      "word": "hamburger",
+      "normalized_word": "hamburger",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I ordered a hamburger for lunch.",
+      "example_vi_clean": "Tôi đã gọi một chiếc thịt băm viên cho bữa trưa."
+    },
+    {
+      "id": 24378,
+      "quiz_meaning_vi": "tay",
+      "meaning_vi_clean": "tay; trao",
+      "examples_clean": [
+        {
+          "meaning_vi": "tay",
+          "example_en": "She held his hand tightly.",
+          "example_vi": "Cô ấy nắm chặt tay anh ấy."
+        },
+        {
+          "meaning_vi": "tay",
+          "example_en": "Wash your hands before eating.",
+          "example_vi": "Hãy rửa tay trước khi ăn."
+        },
+        {
+          "meaning_vi": "tay",
+          "example_en": "He has large hands.",
+          "example_vi": "Anh ấy có đôi bàn tay to."
+        },
+        {
+          "meaning_vi": "tay",
+          "example_en": "She waved her hand to say goodbye.",
+          "example_vi": "Cô ấy vẫy tay để chào tạm biệt."
+        },
+        {
+          "meaning_vi": "trao",
+          "example_en": "Please hand me that book.",
+          "example_vi": "Làm ơn trao cho tôi cuốn sách đó."
+        },
+        {
+          "meaning_vi": "trao",
+          "example_en": "He handed the letter to his boss.",
+          "example_vi": "Anh ấy đã trao lá thư cho sếp của mình."
+        },
+        {
+          "meaning_vi": "tay",
+          "example_en": "He put his hands in his pockets.",
+          "example_vi": "Anh ấy đút tay vào túi quần."
+        },
+        {
+          "meaning_vi": "tay",
+          "example_en": "She wrote it by hand.",
+          "example_vi": "Cô ấy đã viết nó bằng tay."
+        },
+        {
+          "meaning_vi": "trao",
+          "example_en": "The teacher handed out the test papers.",
+          "example_vi": "Giáo viên đã trao các bài kiểm tra."
+        },
+        {
+          "meaning_vi": "trao",
+          "example_en": "She handed him the keys to the car.",
+          "example_vi": "Cô ấy đã trao cho anh ấy chìa khóa xe hơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'tay', bổ sung nghĩa 'trao' (động từ). Bổ sung 10 ví dụ.",
+      "word": "hand",
+      "normalized_word": "hand",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She held his hand tightly.",
+      "example_vi_clean": "Cô ấy nắm chặt tay anh ấy."
+    },
+    {
+      "id": 24379,
+      "quiz_meaning_vi": "đẹp",
+      "meaning_vi_clean": "đẹp; hào phóng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "He is a very handsome man.",
+          "example_vi": "Anh ấy là một người đàn ông rất đẹp."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "She bought a handsome coat.",
+          "example_vi": "Cô ấy đã mua một chiếc áo khoác đẹp."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "They live in a handsome house.",
+          "example_vi": "Họ sống trong một ngôi nhà đẹp."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "The garden looked handsome in the spring.",
+          "example_vi": "Khu vườn trông thật đẹp vào mùa xuân."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "He gave a handsome donation to the charity.",
+          "example_vi": "Anh ấy đã đóng góp một khoản hào phóng cho tổ chức từ thiện."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "She received a handsome reward for her work.",
+          "example_vi": "Cô ấy đã nhận được một phần thưởng hào phóng cho công việc của mình."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "He has a handsome face.",
+          "example_vi": "Anh ấy có một khuôn mặt đẹp."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "The horse was very handsome.",
+          "example_vi": "Con ngựa đó rất đẹp."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "They offered a handsome salary for the position.",
+          "example_vi": "Họ đã đưa ra một mức lương hào phóng cho vị trí đó."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "It was a handsome gesture of him to help.",
+          "example_vi": "Đó là một cử chỉ hào phóng của anh ấy khi giúp đỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'đẹp', bổ sung nghĩa 'hào phóng'. Bổ sung 10 ví dụ.",
+      "word": "handsome",
+      "normalized_word": "handsome",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a very handsome man.",
+      "example_vi_clean": "Anh ấy là một người đàn ông rất đẹp."
+    },
+    {
+      "id": 24380,
+      "quiz_meaning_vi": "xảy đến",
+      "meaning_vi_clean": "xảy đến; tình cờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "xảy đến",
+          "example_en": "Accidents can happen anywhere.",
+          "example_vi": "Tai nạn có thể xảy đến ở bất cứ đâu."
+        },
+        {
+          "meaning_vi": "xảy đến",
+          "example_en": "What happened at the meeting?",
+          "example_vi": "Chuyện gì đã xảy đến tại cuộc họp?"
+        },
+        {
+          "meaning_vi": "xảy đến",
+          "example_en": "I don't know what will happen next.",
+          "example_vi": "Tôi không biết điều gì sẽ xảy đến tiếp theo."
+        },
+        {
+          "meaning_vi": "xảy đến",
+          "example_en": "It happened a long time ago.",
+          "example_vi": "Nó đã xảy đến từ rất lâu rồi."
+        },
+        {
+          "meaning_vi": "tình cờ",
+          "example_en": "I happened to see him at the park.",
+          "example_vi": "Tôi tình cờ nhìn thấy anh ấy ở công viên."
+        },
+        {
+          "meaning_vi": "tình cờ",
+          "example_en": "She happened to be there at the right time.",
+          "example_vi": "Cô ấy tình cờ có mặt ở đó vào đúng thời điểm."
+        },
+        {
+          "meaning_vi": "xảy đến",
+          "example_en": "Tell me what happened.",
+          "example_vi": "Hãy kể cho tôi nghe chuyện gì đã xảy đến."
+        },
+        {
+          "meaning_vi": "xảy đến",
+          "example_en": "Strange things happen sometimes.",
+          "example_vi": "Đôi khi những điều kỳ lạ xảy đến."
+        },
+        {
+          "meaning_vi": "tình cờ",
+          "example_en": "We happened to meet on the train.",
+          "example_vi": "Chúng tôi tình cờ gặp nhau trên tàu."
+        },
+        {
+          "meaning_vi": "tình cờ",
+          "example_en": "I happened to have some extra money.",
+          "example_vi": "Tôi tình cờ có một ít tiền dư."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa 'xảy đến', bổ sung nghĩa 'tình cờ'. Bổ sung 10 ví dụ.",
+      "word": "happen",
+      "normalized_word": "happen",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Accidents can happen anywhere.",
+      "example_vi_clean": "Tai nạn có thể xảy đến ở bất cứ đâu."
+    }
+  ]
+}

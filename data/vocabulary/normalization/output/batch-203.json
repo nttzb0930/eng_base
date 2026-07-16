@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26021,
+      "quiz_meaning_vi": "nổi lên",
+      "meaning_vi_clean": "nổi lên; hiện ra; nảy ra; thoát khỏi",
+      "examples_clean": [
+        {
+          "meaning_vi": "nổi lên",
+          "example_en": "The submarine began to emerge from the deep water.",
+          "example_vi": "Chiếc tàu ngầm bắt đầu nổi lên từ vùng nước sâu."
+        },
+        {
+          "meaning_vi": "nổi lên",
+          "example_en": "New details about the case continue to emerge.",
+          "example_vi": "Những chi tiết mới về vụ án tiếp tục nổi lên."
+        },
+        {
+          "meaning_vi": "nổi lên",
+          "example_en": "The sun emerged from behind the dark clouds.",
+          "example_vi": "Mặt trời nổi lên từ phía sau những đám mây đen."
+        },
+        {
+          "meaning_vi": "nổi lên",
+          "example_en": "He emerged from the forest after being lost for hours.",
+          "example_vi": "Anh ấy nổi lên từ khu rừng sau khi bị lạc nhiều giờ."
+        },
+        {
+          "meaning_vi": "hiện ra",
+          "example_en": "The truth finally emerged after a long investigation.",
+          "example_vi": "Sự thật cuối cùng đã hiện ra sau một cuộc điều tra dài."
+        },
+        {
+          "meaning_vi": "hiện ra",
+          "example_en": "A small village emerged in the distance.",
+          "example_vi": "Một ngôi làng nhỏ hiện ra ở phía xa."
+        },
+        {
+          "meaning_vi": "nảy ra",
+          "example_en": "Several problems emerged during the meeting.",
+          "example_vi": "Một vài vấn đề đã nảy ra trong cuộc họp."
+        },
+        {
+          "meaning_vi": "nảy ra",
+          "example_en": "A new opportunity emerged from the crisis.",
+          "example_vi": "Một cơ hội mới đã nảy ra từ cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "thoát khỏi",
+          "example_en": "She emerged from the difficult period stronger than before.",
+          "example_vi": "Cô ấy đã thoát khỏi giai đoạn khó khăn đó mạnh mẽ hơn trước."
+        },
+        {
+          "meaning_vi": "thoát khỏi",
+          "example_en": "He emerged unscathed from the serious accident.",
+          "example_vi": "Anh ấy đã thoát khỏi vụ tai nạn nghiêm trọng mà không hề hấn gì."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu theo đúng các nghĩa đã chọn.",
+      "word": "emerge",
+      "normalized_word": "emerge",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The submarine began to emerge from the deep water.",
+      "example_vi_clean": "Chiếc tàu ngầm bắt đầu nổi lên từ vùng nước sâu."
+    },
+    {
+      "id": 26022,
+      "quiz_meaning_vi": "sự xúc động",
+      "meaning_vi_clean": "sự xúc động; mối xúc cảm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự xúc động",
+          "example_en": "She spoke with great emotion about her childhood.",
+          "example_vi": "Cô ấy nói với sự xúc động lớn về tuổi thơ của mình."
+        },
+        {
+          "meaning_vi": "sự xúc động",
+          "example_en": "He could not hide his emotion at the news.",
+          "example_vi": "Anh ấy không thể giấu được sự xúc động trước tin tức đó."
+        },
+        {
+          "meaning_vi": "sự xúc động",
+          "example_en": "Her voice was filled with deep emotion.",
+          "example_vi": "Giọng nói của cô ấy tràn đầy sự xúc động sâu sắc."
+        },
+        {
+          "meaning_vi": "sự xúc động",
+          "example_en": "It was a moment of pure emotion for everyone.",
+          "example_vi": "Đó là một khoảnh khắc của sự xúc động thuần khiết đối với mọi người."
+        },
+        {
+          "meaning_vi": "mối xúc cảm",
+          "example_en": "Music can stir up many different emotions.",
+          "example_vi": "Âm nhạc có thể khơi dậy nhiều mối xúc cảm khác nhau."
+        },
+        {
+          "meaning_vi": "mối xúc cảm",
+          "example_en": "Fear and joy are basic human emotions.",
+          "example_vi": "Sợ hãi và vui sướng là những mối xúc cảm cơ bản của con người."
+        },
+        {
+          "meaning_vi": "mối xúc cảm",
+          "example_en": "He struggled to control his complex emotions.",
+          "example_vi": "Anh ấy đã cố gắng kiểm soát những mối xúc cảm phức tạp của mình."
+        },
+        {
+          "meaning_vi": "mối xúc cảm",
+          "example_en": "She expressed her emotions through her paintings.",
+          "example_vi": "Cô ấy thể hiện những mối xúc cảm của mình qua các bức tranh."
+        },
+        {
+          "meaning_vi": "mối xúc cảm",
+          "example_en": "They shared their deepest emotions with each other.",
+          "example_vi": "Họ đã chia sẻ những mối xúc cảm sâu kín nhất với nhau."
+        },
+        {
+          "meaning_vi": "mối xúc cảm",
+          "example_en": "The film explores the range of human emotions.",
+          "example_vi": "Bộ phim khám phá phạm vi các mối xúc cảm của con người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn và bổ sung 10 ví dụ minh họa.",
+      "word": "emotion",
+      "normalized_word": "emotion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She spoke with great emotion about her childhood.",
+      "example_vi_clean": "Cô ấy nói với sự xúc động lớn về tuổi thơ của mình."
+    },
+    {
+      "id": 26023,
+      "quiz_meaning_vi": "cảm động",
+      "meaning_vi_clean": "cảm động; dễ xúc động",
+      "examples_clean": [
+        {
+          "meaning_vi": "cảm động",
+          "example_en": "It was an emotional scene at the airport.",
+          "example_vi": "Đó là một cảnh tượng cảm động tại sân bay."
+        },
+        {
+          "meaning_vi": "cảm động",
+          "example_en": "She gave an emotional speech at the wedding.",
+          "example_vi": "Cô ấy đã có một bài phát biểu cảm động tại đám cưới."
+        },
+        {
+          "meaning_vi": "cảm động",
+          "example_en": "The letter was very emotional and sincere.",
+          "example_vi": "Bức thư rất cảm động và chân thành."
+        },
+        {
+          "meaning_vi": "cảm động",
+          "example_en": "He made an emotional appeal for help.",
+          "example_vi": "Anh ấy đã đưa ra một lời kêu gọi giúp đỡ đầy cảm động."
+        },
+        {
+          "meaning_vi": "dễ xúc động",
+          "example_en": "She is a very emotional person who cries easily.",
+          "example_vi": "Cô ấy là một người rất dễ xúc động, người hay khóc."
+        },
+        {
+          "meaning_vi": "dễ xúc động",
+          "example_en": "Don't be so emotional about such a small thing.",
+          "example_vi": "Đừng quá dễ xúc động về một chuyện nhỏ như vậy."
+        },
+        {
+          "meaning_vi": "dễ xúc động",
+          "example_en": "He is known for being an emotional individual.",
+          "example_vi": "Anh ấy nổi tiếng là một cá nhân dễ xúc động."
+        },
+        {
+          "meaning_vi": "dễ xúc động",
+          "example_en": "Children can be very emotional when they are tired.",
+          "example_vi": "Trẻ em có thể rất dễ xúc động khi chúng mệt mỏi."
+        },
+        {
+          "meaning_vi": "dễ xúc động",
+          "example_en": "She tried to remain calm despite her emotional nature.",
+          "example_vi": "Cô ấy đã cố gắng giữ bình tĩnh bất chấp bản tính dễ xúc động của mình."
+        },
+        {
+          "meaning_vi": "dễ xúc động",
+          "example_en": "His emotional reaction was expected given the circumstances.",
+          "example_vi": "Phản ứng dễ xúc động của anh ấy là điều dễ hiểu trong hoàn cảnh đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "emotional",
+      "normalized_word": "emotional",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was an emotional scene at the airport.",
+      "example_vi_clean": "Đó là một cảnh tượng cảm động tại sân bay."
+    },
+    {
+      "id": 26024,
+      "quiz_meaning_vi": "hoàng đế",
+      "meaning_vi_clean": "hoàng đế",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The emperor ruled over a vast territory.",
+          "example_vi": "Hoàng đế cai trị một vùng lãnh thổ rộng lớn."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The emperor lived in a magnificent palace.",
+          "example_vi": "Hoàng đế sống trong một cung điện tráng lệ."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "History books often describe the life of the emperor.",
+          "example_vi": "Sách lịch sử thường mô tả cuộc đời của vị hoàng đế."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The emperor issued a new decree to the people.",
+          "example_vi": "Hoàng đế đã ban hành một sắc lệnh mới cho người dân."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "Many soldiers fought for the emperor.",
+          "example_vi": "Nhiều binh lính đã chiến đấu vì hoàng đế."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The emperor was respected by his subjects.",
+          "example_vi": "Hoàng đế được thần dân của mình kính trọng."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The crown belonged to the emperor.",
+          "example_vi": "Chiếc vương miện thuộc về hoàng đế."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The emperor traveled across the country.",
+          "example_vi": "Hoàng đế đã đi khắp đất nước."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The reign of the emperor lasted for decades.",
+          "example_vi": "Triều đại của vị hoàng đế kéo dài hàng thập kỷ."
+        },
+        {
+          "meaning_vi": "hoàng đế",
+          "example_en": "The emperor made a final decision on the war.",
+          "example_vi": "Hoàng đế đã đưa ra quyết định cuối cùng về cuộc chiến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho từ hoàng đế.",
+      "word": "emperor",
+      "normalized_word": "emperor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The emperor ruled over a vast territory.",
+      "example_vi_clean": "Hoàng đế cai trị một vùng lãnh thổ rộng lớn."
+    },
+    {
+      "id": 26025,
+      "quiz_meaning_vi": "sự nhấn mạnh",
+      "meaning_vi_clean": "sự nhấn mạnh; tầm quan trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nhấn mạnh",
+          "example_en": "He spoke with emphasis to make his point clear.",
+          "example_vi": "Anh ấy nói với sự nhấn mạnh để làm rõ quan điểm của mình."
+        },
+        {
+          "meaning_vi": "sự nhấn mạnh",
+          "example_en": "She placed emphasis on the need for change.",
+          "example_vi": "Cô ấy đặt sự nhấn mạnh vào nhu cầu thay đổi."
+        },
+        {
+          "meaning_vi": "sự nhấn mạnh",
+          "example_en": "The teacher used emphasis to highlight the key words.",
+          "example_vi": "Giáo viên đã sử dụng sự nhấn mạnh để làm nổi bật các từ khóa."
+        },
+        {
+          "meaning_vi": "sự nhấn mạnh",
+          "example_en": "His voice carried a lot of emphasis.",
+          "example_vi": "Giọng nói của anh ấy mang nhiều sự nhấn mạnh."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "The school puts great emphasis on academic success.",
+          "example_vi": "Nhà trường đặt tầm quan trọng lớn vào thành tích học tập."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "There is a new emphasis on healthy eating.",
+          "example_vi": "Có một tầm quan trọng mới đối với việc ăn uống lành mạnh."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "We need to shift our emphasis to customer service.",
+          "example_vi": "Chúng ta cần chuyển tầm quan trọng sang dịch vụ khách hàng."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "The company places emphasis on teamwork.",
+          "example_vi": "Công ty đặt tầm quan trọng vào làm việc nhóm."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "The report highlights the emphasis on safety.",
+          "example_vi": "Báo cáo làm nổi bật tầm quan trọng đối với sự an toàn."
+        },
+        {
+          "meaning_vi": "tầm quan trọng",
+          "example_en": "They place too much emphasis on money.",
+          "example_vi": "Họ đặt quá nhiều tầm quan trọng vào tiền bạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "emphasis",
+      "normalized_word": "emphasis",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He spoke with emphasis to make his point clear.",
+      "example_vi_clean": "Anh ấy nói với sự nhấn mạnh để làm rõ quan điểm của mình."
+    },
+    {
+      "id": 26026,
+      "quiz_meaning_vi": "nhấn mạnh",
+      "meaning_vi_clean": "nhấn mạnh; làm nổi bật",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "She emphasized the importance of regular exercise.",
+          "example_vi": "Cô ấy nhấn mạnh tầm quan trọng của việc tập thể dục thường xuyên."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "He emphasized that the project must be finished on time.",
+          "example_vi": "Anh ấy nhấn mạnh rằng dự án phải được hoàn thành đúng hạn."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "The report emphasizes the need for better security.",
+          "example_vi": "Báo cáo nhấn mạnh nhu cầu về an ninh tốt hơn."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "They emphasized their commitment to the environment.",
+          "example_vi": "Họ nhấn mạnh cam kết của mình đối với môi trường."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The new design emphasizes the car's sporty look.",
+          "example_vi": "Thiết kế mới làm nổi bật vẻ ngoài thể thao của chiếc xe."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The lighting was used to emphasize the painting.",
+          "example_vi": "Ánh sáng được sử dụng để làm nổi bật bức tranh."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The colors emphasize the beauty of the landscape.",
+          "example_vi": "Các màu sắc làm nổi bật vẻ đẹp của phong cảnh."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The speech emphasized the unity of the nation.",
+          "example_vi": "Bài phát biểu làm nổi bật sự đoàn kết của quốc gia."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The details emphasize the quality of the product.",
+          "example_vi": "Các chi tiết làm nổi bật chất lượng của sản phẩm."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The music emphasizes the mood of the scene.",
+          "example_vi": "Âm nhạc làm nổi bật tâm trạng của cảnh quay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "emphasise",
+      "normalized_word": "emphasise",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She emphasized the importance of regular exercise.",
+      "example_vi_clean": "Cô ấy nhấn mạnh tầm quan trọng của việc tập thể dục thường xuyên."
+    },
+    {
+      "id": 26027,
+      "quiz_meaning_vi": "nhấn mạnh",
+      "meaning_vi_clean": "nhấn mạnh; làm nổi bật",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "He emphasized the need for more research.",
+          "example_vi": "Anh ấy nhấn mạnh nhu cầu cần nghiên cứu thêm."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "The teacher emphasized the correct pronunciation.",
+          "example_vi": "Giáo viên nhấn mạnh cách phát âm đúng."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "She emphasized that safety is our top priority.",
+          "example_vi": "Cô ấy nhấn mạnh rằng an toàn là ưu tiên hàng đầu của chúng ta."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "The article emphasizes the benefits of reading.",
+          "example_vi": "Bài báo nhấn mạnh những lợi ích của việc đọc sách."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The bold text emphasizes the main points.",
+          "example_vi": "Văn bản in đậm làm nổi bật các điểm chính."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The dress emphasizes her elegant style.",
+          "example_vi": "Chiếc váy làm nổi bật phong cách thanh lịch của cô ấy."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The architecture emphasizes the historical significance.",
+          "example_vi": "Kiến trúc làm nổi bật ý nghĩa lịch sử."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The contrast emphasizes the difference in size.",
+          "example_vi": "Sự tương phản làm nổi bật sự khác biệt về kích thước."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The decorations emphasize the festive atmosphere.",
+          "example_vi": "Các đồ trang trí làm nổi bật không khí lễ hội."
+        },
+        {
+          "meaning_vi": "làm nổi bật",
+          "example_en": "The headline emphasizes the urgency of the situation.",
+          "example_vi": "Tiêu đề làm nổi bật sự khẩn cấp của tình hình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "emphasize",
+      "normalized_word": "emphasize",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He emphasized the need for more research.",
+      "example_vi_clean": "Anh ấy nhấn mạnh nhu cầu cần nghiên cứu thêm."
+    },
+    {
+      "id": 26028,
+      "quiz_meaning_vi": "đế quốc",
+      "meaning_vi_clean": "đế quốc; sự kiểm soát",
+      "examples_clean": [
+        {
+          "meaning_vi": "đế quốc",
+          "example_en": "The Roman empire was very powerful.",
+          "example_vi": "Đế quốc La Mã đã rất hùng mạnh."
+        },
+        {
+          "meaning_vi": "đế quốc",
+          "example_en": "The empire expanded across many continents.",
+          "example_vi": "Đế quốc đã mở rộng khắp nhiều châu lục."
+        },
+        {
+          "meaning_vi": "đế quốc",
+          "example_en": "The fall of the empire changed history.",
+          "example_vi": "Sự sụp đổ của đế quốc đã thay đổi lịch sử."
+        },
+        {
+          "meaning_vi": "đế quốc",
+          "example_en": "Many cultures were part of the empire.",
+          "example_vi": "Nhiều nền văn hóa là một phần của đế quốc."
+        },
+        {
+          "meaning_vi": "đế quốc",
+          "example_en": "The empire had a strong army.",
+          "example_vi": "Đế quốc có một đội quân hùng mạnh."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "He built a business empire from nothing.",
+          "example_vi": "Anh ấy đã xây dựng một sự kiểm soát kinh doanh từ con số không."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The media empire controls many newspapers.",
+          "example_vi": "Sự kiểm soát truyền thông này nắm giữ nhiều tờ báo."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "She manages a vast fashion empire.",
+          "example_vi": "Cô ấy quản lý một sự kiểm soát thời trang rộng lớn."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "His empire grew rapidly over the years.",
+          "example_vi": "Sự kiểm soát của anh ấy đã phát triển nhanh chóng qua nhiều năm."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The empire faced many challenges in the market.",
+          "example_vi": "Sự kiểm soát đó đã đối mặt với nhiều thách thức trên thị trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "empire",
+      "normalized_word": "empire",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The Roman empire was very powerful.",
+      "example_vi_clean": "Đế quốc La Mã đã rất hùng mạnh."
+    },
+    {
+      "id": 26029,
+      "quiz_meaning_vi": "sự thuê làm",
+      "meaning_vi_clean": "sự thuê làm; việc làm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thuê làm",
+          "example_en": "The company has strict rules for employment.",
+          "example_vi": "Công ty có các quy định nghiêm ngặt về sự thuê làm."
+        },
+        {
+          "meaning_vi": "sự thuê làm",
+          "example_en": "The contract covers the terms of employment.",
+          "example_vi": "Hợp đồng bao gồm các điều khoản về sự thuê làm."
+        },
+        {
+          "meaning_vi": "sự thuê làm",
+          "example_en": "She is looking for full-time employment.",
+          "example_vi": "Cô ấy đang tìm kiếm sự thuê làm toàn thời gian."
+        },
+        {
+          "meaning_vi": "sự thuê làm",
+          "example_en": "The agency helps people find employment.",
+          "example_vi": "Cơ quan này giúp mọi người tìm kiếm sự thuê làm."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "The unemployment rate is affecting many people.",
+          "example_vi": "Tỷ lệ thiếu việc làm đang ảnh hưởng đến nhiều người."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "He finally found a stable job.",
+          "example_vi": "Anh ấy cuối cùng đã tìm được một việc làm ổn định."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "She is happy with her new employment.",
+          "example_vi": "Cô ấy hài lòng với việc làm mới của mình."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "They offer many opportunities for employment.",
+          "example_vi": "Họ cung cấp nhiều cơ hội cho việc làm."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "The city is trying to create more employment.",
+          "example_vi": "Thành phố đang cố gắng tạo ra nhiều việc làm hơn."
+        },
+        {
+          "meaning_vi": "việc làm",
+          "example_en": "His employment history is very impressive.",
+          "example_vi": "Lịch sử việc làm của anh ấy rất ấn tượng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "employment",
+      "normalized_word": "employment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The company has strict rules for employment.",
+      "example_vi_clean": "Công ty có các quy định nghiêm ngặt về sự thuê làm."
+    },
+    {
+      "id": 26030,
+      "quiz_meaning_vi": "làm cho có thể",
+      "meaning_vi_clean": "làm cho có thể; cho phép",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm cho có thể",
+          "example_en": "This software enables you to work faster.",
+          "example_vi": "Phần mềm này làm cho bạn có thể làm việc nhanh hơn."
+        },
+        {
+          "meaning_vi": "làm cho có thể",
+          "example_en": "New technology enables us to communicate globally.",
+          "example_vi": "Công nghệ mới làm cho chúng ta có thể giao tiếp toàn cầu."
+        },
+        {
+          "meaning_vi": "làm cho có thể",
+          "example_en": "The loan enabled him to buy a house.",
+          "example_vi": "Khoản vay đã làm cho anh ấy có thể mua một ngôi nhà."
+        },
+        {
+          "meaning_vi": "làm cho có thể",
+          "example_en": "These tools enable the team to finish early.",
+          "example_vi": "Những công cụ này làm cho nhóm có thể hoàn thành sớm."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The new law enables citizens to vote.",
+          "example_vi": "Luật mới cho phép công dân được bỏ phiếu."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "This setting enables access to the internet.",
+          "example_vi": "Cài đặt này cho phép truy cập vào internet."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The ticket enables you to enter the museum.",
+          "example_vi": "Vé này cho phép bạn vào bảo tàng."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The system enables users to share files.",
+          "example_vi": "Hệ thống cho phép người dùng chia sẻ tệp tin."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The permit enables them to build the fence.",
+          "example_vi": "Giấy phép cho phép họ xây dựng hàng rào."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The agreement enables both sides to cooperate.",
+          "example_vi": "Thỏa thuận cho phép cả hai bên hợp tác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ cho đủ 10 câu.",
+      "word": "enable",
+      "normalized_word": "enable",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "This software enables you to work faster.",
+      "example_vi_clean": "Phần mềm này làm cho bạn có thể làm việc nhanh hơn."
+    }
+  ]
+}

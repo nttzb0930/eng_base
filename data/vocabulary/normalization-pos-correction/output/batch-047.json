@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25211,
+      "quiz_meaning_vi": "vật nặng",
+      "meaning_vi_clean": "vật nặng",
+      "examples_clean": [
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "The truck is carrying a heavy load.",
+          "example_vi": "Chiếc xe tải đang chở một vật nặng."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "He struggled to lift the heavy load.",
+          "example_vi": "Anh ấy đã rất vất vả để nâng vật nặng đó lên."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "The horse could not pull such a large load.",
+          "example_vi": "Con ngựa không thể kéo nổi một vật nặng lớn như vậy."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "They secured the load on the back of the car.",
+          "example_vi": "Họ đã cố định vật nặng ở phía sau xe hơi."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "The bridge collapsed under the weight of the load.",
+          "example_vi": "Cây cầu đã sập dưới sức nặng của vật nặng đó."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "Please help me move this heavy load.",
+          "example_vi": "Làm ơn giúp tôi di chuyển vật nặng này."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "The donkey carried a heavy load up the hill.",
+          "example_vi": "Con lừa đã chở một vật nặng lên đồi."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "The crane lifted the heavy load to the top floor.",
+          "example_vi": "Cần cẩu đã nâng vật nặng lên tầng cao nhất."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "The cart was filled with a heavy load of wood.",
+          "example_vi": "Chiếc xe kéo chứa đầy một vật nặng bằng gỗ."
+        },
+        {
+          "meaning_vi": "vật nặng",
+          "example_en": "He dropped the heavy load on the floor.",
+          "example_vi": "Anh ấy đã làm rơi vật nặng xuống sàn nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'vật nặng' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'vật nặng' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "load",
+      "normalized_word": "load",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The truck is carrying a heavy load.",
+      "example_vi_clean": "Chiếc xe tải đang chở một vật nặng."
+    },
+    {
+      "id": 25212,
+      "quiz_meaning_vi": "địa phương",
+      "meaning_vi_clean": "địa phương",
+      "examples_clean": [
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "I like to buy fresh food from the local market.",
+          "example_vi": "Tôi thích mua thực phẩm tươi từ chợ địa phương."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "She works for a local newspaper.",
+          "example_vi": "Cô ấy làm việc cho một tờ báo địa phương."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "We visited a local school during our trip.",
+          "example_vi": "Chúng tôi đã ghé thăm một trường học địa phương trong chuyến đi."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "The local people are very friendly.",
+          "example_vi": "Người dân địa phương rất thân thiện."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "He knows all the local restaurants.",
+          "example_vi": "Anh ấy biết tất cả các nhà hàng địa phương."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "There is a local park near my house.",
+          "example_vi": "Có một công viên địa phương gần nhà tôi."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "They speak with a local accent.",
+          "example_vi": "Họ nói bằng giọng địa phương."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "The local library is closed on Sundays.",
+          "example_vi": "Thư viện địa phương đóng cửa vào Chủ nhật."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "We support local businesses in our town.",
+          "example_vi": "Chúng tôi ủng hộ các doanh nghiệp địa phương trong thị trấn."
+        },
+        {
+          "meaning_vi": "địa phương",
+          "example_en": "The local police are investigating the case.",
+          "example_vi": "Cảnh sát địa phương đang điều tra vụ việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'địa phương' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'địa phương' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "local",
+      "normalized_word": "local",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I like to buy fresh food from the local market.",
+      "example_vi_clean": "Tôi thích mua thực phẩm tươi từ chợ địa phương."
+    },
+    {
+      "id": 25213,
+      "quiz_meaning_vi": "ổ khóa",
+      "meaning_vi_clean": "ổ khóa",
+      "examples_clean": [
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "He put the key into the lock.",
+          "example_vi": "Anh ấy tra chìa khóa vào ổ khóa."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "The lock on the door is broken.",
+          "example_vi": "Ổ khóa trên cửa đã bị hỏng."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "She changed the lock for safety.",
+          "example_vi": "Cô ấy đã thay ổ khóa để đảm bảo an toàn."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "I cannot open the lock without the key.",
+          "example_vi": "Tôi không thể mở ổ khóa nếu không có chìa."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "The lock is made of strong metal.",
+          "example_vi": "Ổ khóa được làm bằng kim loại chắc chắn."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "He bought a new lock for his bicycle.",
+          "example_vi": "Anh ấy đã mua một ổ khóa mới cho chiếc xe đạp của mình."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "The lock was stuck because of the rust.",
+          "example_vi": "Ổ khóa bị kẹt do rỉ sét."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "She checked the lock before leaving the house.",
+          "example_vi": "Cô ấy kiểm tra ổ khóa trước khi rời khỏi nhà."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "The lock is very old and hard to turn.",
+          "example_vi": "Ổ khóa này rất cũ và khó xoay."
+        },
+        {
+          "meaning_vi": "ổ khóa",
+          "example_en": "He fixed the lock on the garden gate.",
+          "example_vi": "Anh ấy đã sửa ổ khóa trên cổng vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'ổ khóa' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'ổ khóa' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "lock",
+      "normalized_word": "lock",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He put the key into the lock.",
+      "example_vi_clean": "Anh ấy tra chìa khóa vào ổ khóa."
+    },
+    {
+      "id": 25215,
+      "quiz_meaning_vi": "lỏng lẻo",
+      "meaning_vi_clean": "lỏng lẻo",
+      "examples_clean": [
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The screw is a bit loose.",
+          "example_vi": "Con ốc vít hơi lỏng lẻo."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "She wore a loose dress on the beach.",
+          "example_vi": "Cô ấy mặc một chiếc váy lỏng lẻo trên bãi biển."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The handle of the door feels loose.",
+          "example_vi": "Tay nắm cửa cảm giác hơi lỏng lẻo."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "His shoelaces are loose.",
+          "example_vi": "Dây giày của anh ấy đang lỏng lẻo."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The knot was too loose to hold the rope.",
+          "example_vi": "Nút thắt quá lỏng lẻo để giữ sợi dây."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The fence post is loose in the ground.",
+          "example_vi": "Cột hàng rào đang lỏng lẻo dưới đất."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "He prefers wearing loose clothes.",
+          "example_vi": "Anh ấy thích mặc quần áo lỏng lẻo."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The connection is loose, so it does not work.",
+          "example_vi": "Kết nối bị lỏng lẻo nên nó không hoạt động."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The tooth feels loose.",
+          "example_vi": "Chiếc răng cảm giác hơi lỏng lẻo."
+        },
+        {
+          "meaning_vi": "lỏng lẻo",
+          "example_en": "The lid of the jar is loose.",
+          "example_vi": "Nắp của cái lọ đang lỏng lẻo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'lỏng lẻo' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'lỏng lẻo' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "loose",
+      "normalized_word": "loose",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The screw is a bit loose.",
+      "example_vi_clean": "Con ốc vít hơi lỏng lẻo."
+    },
+    {
+      "id": 25217,
+      "quiz_meaning_vi": "bị lạc",
+      "meaning_vi_clean": "bị lạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "The child was lost in the crowd.",
+          "example_vi": "Đứa trẻ đã bị lạc trong đám đông."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "We were lost in the big city.",
+          "example_vi": "Chúng tôi đã bị lạc trong thành phố lớn."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "He felt lost without his map.",
+          "example_vi": "Anh ấy cảm thấy bị lạc khi không có bản đồ."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "The hiker was lost in the forest.",
+          "example_vi": "Người đi bộ đường dài đã bị lạc trong rừng."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "They were lost for hours.",
+          "example_vi": "Họ đã bị lạc trong nhiều giờ."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "I am lost, can you help me?",
+          "example_vi": "Tôi đang bị lạc, bạn có thể giúp tôi không?"
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "The dog was lost in the park.",
+          "example_vi": "Con chó đã bị lạc trong công viên."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "She was lost and asked for directions.",
+          "example_vi": "Cô ấy đã bị lạc và hỏi đường."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "We were lost because of the fog.",
+          "example_vi": "Chúng tôi đã bị lạc vì sương mù."
+        },
+        {
+          "meaning_vi": "bị lạc",
+          "example_en": "The tourists were lost in the old town.",
+          "example_vi": "Những du khách đã bị lạc trong khu phố cổ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'bị lạc' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'bị lạc' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "lost",
+      "normalized_word": "lost",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The child was lost in the crowd.",
+      "example_vi_clean": "Đứa trẻ đã bị lạc trong đám đông."
+    },
+    {
+      "id": 25224,
+      "quiz_meaning_vi": "tức giận",
+      "meaning_vi_clean": "tức giận",
+      "examples_clean": [
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "He was mad at his brother.",
+          "example_vi": "Anh ấy đã rất tức giận với em trai mình."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "She got mad when she heard the news.",
+          "example_vi": "Cô ấy đã tức giận khi nghe tin đó."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "Don't be mad at me.",
+          "example_vi": "Đừng tức giận với tôi."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "He was mad because he lost his phone.",
+          "example_vi": "Anh ấy đã tức giận vì làm mất điện thoại."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "The teacher was mad at the noisy students.",
+          "example_vi": "Giáo viên đã tức giận với những học sinh ồn ào."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "She is still mad about what happened.",
+          "example_vi": "Cô ấy vẫn còn tức giận về những gì đã xảy ra."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "He looked mad when he arrived.",
+          "example_vi": "Anh ấy trông có vẻ tức giận khi đến nơi."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "They were mad at each other.",
+          "example_vi": "Họ đã tức giận với nhau."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "I was mad that I missed the bus.",
+          "example_vi": "Tôi đã tức giận vì lỡ chuyến xe buýt."
+        },
+        {
+          "meaning_vi": "tức giận",
+          "example_en": "She was mad at the bad service.",
+          "example_vi": "Cô ấy đã tức giận vì dịch vụ tồi tệ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'tức giận' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'tức giận' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "mad",
+      "normalized_word": "mad",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was mad at his brother.",
+      "example_vi_clean": "Anh ấy đã rất tức giận với em trai mình."
+    },
+    {
+      "id": 25227,
+      "quiz_meaning_vi": "chính",
+      "meaning_vi_clean": "chính",
+      "examples_clean": [
+        {
+          "meaning_vi": "chính",
+          "example_en": "This is the major reason for the problem.",
+          "example_vi": "Đây là lý do chính cho vấn đề này."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The major road is closed for repairs.",
+          "example_vi": "Con đường chính đang bị đóng để sửa chữa."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "He has a major role in the play.",
+          "example_vi": "Anh ấy có một vai trò chính trong vở kịch."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The major city is very crowded.",
+          "example_vi": "Thành phố chính rất đông đúc."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "We have a major exam tomorrow.",
+          "example_vi": "Chúng tôi có một kỳ thi chính vào ngày mai."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The major goal is to finish on time.",
+          "example_vi": "Mục tiêu chính là hoàn thành đúng hạn."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "There is a major change in the plan.",
+          "example_vi": "Có một thay đổi chính trong kế hoạch."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The major part of the work is done.",
+          "example_vi": "Phần chính của công việc đã được hoàn thành."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "She lives in a major town.",
+          "example_vi": "Cô ấy sống ở một thị trấn chính."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The major issue is the lack of money.",
+          "example_vi": "Vấn đề chính là sự thiếu hụt tiền bạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'chính' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'chính' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "major",
+      "normalized_word": "major",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is the major reason for the problem.",
+      "example_vi_clean": "Đây là lý do chính cho vấn đề này."
+    },
+    {
+      "id": 25234,
+      "quiz_meaning_vi": "dấu vết",
+      "meaning_vi_clean": "dấu vết",
+      "examples_clean": [
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "There was a black mark on the wall.",
+          "example_vi": "Có một dấu vết màu đen trên tường."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "He left a mark on the table.",
+          "example_vi": "Anh ấy đã để lại một dấu vết trên bàn."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "The pen left a mark on my shirt.",
+          "example_vi": "Chiếc bút đã để lại một dấu vết trên áo tôi."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "She tried to clean the mark off the floor.",
+          "example_vi": "Cô ấy đã cố gắng làm sạch dấu vết trên sàn nhà."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "The mud left a mark on his shoes.",
+          "example_vi": "Bùn đã để lại một dấu vết trên giày của anh ấy."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "I can see a small mark on the paper.",
+          "example_vi": "Tôi có thể thấy một dấu vết nhỏ trên giấy."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "The accident left a mark on the car.",
+          "example_vi": "Vụ tai nạn đã để lại một dấu vết trên xe hơi."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "There is a red mark on her arm.",
+          "example_vi": "Có một dấu vết màu đỏ trên cánh tay cô ấy."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "He made a mark with his pencil.",
+          "example_vi": "Anh ấy đã tạo một dấu vết bằng bút chì của mình."
+        },
+        {
+          "meaning_vi": "dấu vết",
+          "example_en": "The water left a mark on the wood.",
+          "example_vi": "Nước đã để lại một dấu vết trên gỗ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'dấu vết' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'dấu vết' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "mark",
+      "normalized_word": "mark",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There was a black mark on the wall.",
+      "example_vi_clean": "Có một dấu vết màu đen trên tường."
+    },
+    {
+      "id": 25235,
+      "quiz_meaning_vi": "chợ",
+      "meaning_vi_clean": "chợ",
+      "examples_clean": [
+        {
+          "meaning_vi": "chợ",
+          "example_en": "We go to the market every Sunday.",
+          "example_vi": "Chúng tôi đi chợ vào mỗi Chủ nhật."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "The market is very busy today.",
+          "example_vi": "Chợ hôm nay rất đông đúc."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "She bought fresh fruit at the market.",
+          "example_vi": "Cô ấy đã mua trái cây tươi ở chợ."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "The market opens early in the morning.",
+          "example_vi": "Chợ mở cửa sớm vào buổi sáng."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "He works at the local market.",
+          "example_vi": "Anh ấy làm việc tại chợ địa phương."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "There are many shops in the market.",
+          "example_vi": "Có rất nhiều cửa hàng trong chợ."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "The market is closed on holidays.",
+          "example_vi": "Chợ đóng cửa vào các ngày lễ."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "I met my friend at the market.",
+          "example_vi": "Tôi đã gặp bạn mình ở chợ."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "The market sells many different things.",
+          "example_vi": "Chợ bán rất nhiều thứ khác nhau."
+        },
+        {
+          "meaning_vi": "chợ",
+          "example_en": "We walked through the market together.",
+          "example_vi": "Chúng tôi đã đi dạo qua chợ cùng nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'chợ' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'chợ' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "market",
+      "normalized_word": "market",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We go to the market every Sunday.",
+      "example_vi_clean": "Chúng tôi đi chợ vào mỗi Chủ nhật."
+    },
+    {
+      "id": 25237,
+      "quiz_meaning_vi": "kết hôn",
+      "meaning_vi_clean": "kết hôn",
+      "examples_clean": [
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "They want to marry next year.",
+          "example_vi": "Họ muốn kết hôn vào năm tới."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "She decided to marry him.",
+          "example_vi": "Cô ấy đã quyết định kết hôn với anh ấy."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "They will marry in a small church.",
+          "example_vi": "Họ sẽ kết hôn trong một nhà thờ nhỏ."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "He asked her to marry him.",
+          "example_vi": "Anh ấy đã cầu hôn cô ấy."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "They are planning to marry in the summer.",
+          "example_vi": "Họ đang lên kế hoạch kết hôn vào mùa hè."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "She is too young to marry.",
+          "example_vi": "Cô ấy còn quá trẻ để kết hôn."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "They decided to marry after five years.",
+          "example_vi": "Họ đã quyết định kết hôn sau năm năm."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "He wants to marry a kind person.",
+          "example_vi": "Anh ấy muốn kết hôn với một người tử tế."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "They will marry in front of their family.",
+          "example_vi": "Họ sẽ kết hôn trước mặt gia đình mình."
+        },
+        {
+          "meaning_vi": "kết hôn",
+          "example_en": "It is a big step to marry someone.",
+          "example_vi": "Kết hôn với ai đó là một bước tiến lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa động từ 'kết hôn' phù hợp với cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa động từ 'kết hôn' được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "marry",
+      "normalized_word": "marry",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They want to marry next year.",
+      "example_vi_clean": "Họ muốn kết hôn vào năm tới."
+    }
+  ]
+}

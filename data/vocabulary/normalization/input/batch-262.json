@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-262",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26611,
+      "word": "childish",
+      "normalized_word": "childish",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'tʃaildiʃ/",
+      "primary_meaning_vi": "của trẻ con",
+      "meaning_vi": "của trẻ con; như trẻ con, hợp với trẻ con; ngây ngô, trẻ con",
+      "example_en": "Your childish temper tantrums are not going to change my decision on this matter.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26612,
+      "word": "chimney",
+      "normalized_word": "chimney",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'tʃimni/",
+      "primary_meaning_vi": "ống khói",
+      "meaning_vi": "ống khói; lò sưởi; thông phong đèn, bóng đèn; miệng (núi lửa); khe núi, hẽm (núi)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26613,
+      "word": "chip",
+      "normalized_word": "chip",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/tʃip/",
+      "primary_meaning_vi": "vỏ bào",
+      "meaning_vi": "vỏ bào, vỏ tiện, mạt giũa; chỗ sức, chỗ mẻ; mảnh vỡ; khoanh mỏng, lát mỏng (quả, khoai tây...); (thông tục) khoai tây rán; tiền; thẻ (để đánh bạc); nan (để đan rổ, đan mũ); block; care; nhạt như nước ốc; ,  (từ lóng) thanh toán; chết; sẵn sàng đánh nhau, sẵn sàng gây chuyện cãi nhau; dễ bật lò xo; giàu có, nhiều tiền; vỏ bào nhỏ có thể gây nên những đám cháy lớn; cái sảy nảy cái ung; đẽo, bào; làm sứt, làm mẻ; đập vỡ ra từng mảnh, đập vỡ toang; mổ vỡ (vỏ trứng) (gà con); đục, khắc (tên vào đâu); xắt, thái thành lát mỏng; chế giễu, chế nhạo; sứt, mẻ; mổ vỡ vỏ trứng (gà con); chip + off tróc, tróc từng mảng (sơn); chip + in nói xen vào; (+ in) góp tiền đánh bạc); góp vốn; miếng khoèo, miếng ngáng chân (đấu vật); khoèo, ngáng chân",
+      "example_en": "This cup has a chip in it.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Do you want sauce or mayonnaise on your chips?",
+          "example_vi": null
+        },
+        {
+          "example_en": "The workers chipped the dead branches into mulch.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Be careful not to chip the paint.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26614,
+      "word": "chop",
+      "normalized_word": "chop",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃɔp/",
+      "primary_meaning_vi": "chap",
+      "meaning_vi": "chap; ỉu xìu, chán nản, thất vọng; vật bổ ra, miếng chặt ra; nhát chặt, nhát bổ (búa chày); sự cúp bóng (quần vợt); miếng thịt sườn (lợn, cừu); rơm băm nhỏ; mặt nước gợn sóng (vì gió ngược với thuỷ triều); chặt, đốn, bổ, chẻ; nói đứt đoạn, nói nhát gừng; chặt nhỏ, băm nhỏ; bổ, chặt; thình lình trở lại; chặt ngã, đốn ngã; nói chen vào; chặt đứt, đốn cụt; trồi lên trên mặt (địa táng); chặt nhỏ, băm nhỏ; to chop out; gió trở thình lình; sóng vỗ bập bềnh; phay; những sự đổi thay; thay đổi luôn luôn, dao động, không kiến định; đổi chiều thình lình, trở thình lình (gió); vỗ bập bềnh (sóng biển); cãi vã với ai; giấy phép, giấy đăng ký, giấy chứng nhận; giây thông hành, giấy hộ chiếu (An-độ,  Trung-quốc); Anh-Ân,  (thông tục) of the first chop hạng nhất",
+      "example_en": "I only like lamb chops with mint jelly.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It should take just one good chop to fell the sapling.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A karate chop.",
+          "example_vi": null
+        },
+        {
+          "example_en": "With both players having an ace-high straight, the pot was a chop.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26615,
+      "word": "chunk",
+      "normalized_word": "chunk",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃʌnk/",
+      "primary_meaning_vi": "khúc (gỗ)",
+      "meaning_vi": "khúc (gỗ), khoanh (bánh, phó mát...); người lùn và chắc mập; ngựa lùn và chắc mập; ,  (từ lóng) vớ phải một việc hắc búa, phải giải quyết một việc khó khăn",
+      "example_en": "The statue broke into chunks.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a chunk of granite",
+          "example_vi": null
+        },
+        {
+          "example_en": "examples of chunks would include \"in accordance with\", \"the results of\", and \"so far\"",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26616,
+      "word": "circuit",
+      "normalized_word": "circuit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'sə:kit/",
+      "primary_meaning_vi": "chu vi",
+      "meaning_vi": "chu vi, đường vòng quanh; sự đi vòng quanh; cuộc kinh lý, cuộc tuần du, cuộc tuần tra (của các quan toà để xét xử); địa phận đi kinh lý; mạch; vòng đua; hệ thống rạp hát, rạp chiếu bóng (cùng chung một ban quản trị); sự nối tiếp của sự việc...); đi vòng quanh",
+      "example_en": "Having circuited the air.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26617,
+      "word": "circuitry",
+      "normalized_word": "circuitry",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "mạch điện",
+      "meaning_vi": "mạch điện; hệ thống mạch điện",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26618,
+      "word": "circumstance",
+      "normalized_word": "circumstance",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ số nhiều",
+      "phonetic": "/'sə:kəmstəns/",
+      "primary_meaning_vi": "hoàn cảnh",
+      "meaning_vi": "hoàn cảnh, trường hợp, tình huống; sự kiện, sự việc, chi tiết; nghi thức, nghi lễ; túng thiếu, thiếu tiền; tất cả đề chỉ do hoàn cảnh tạo ra cả; có tội lỗi chẳng qua cũng chỉ vì hoàn cảnh xui nên",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26619,
+      "word": "clam",
+      "normalized_word": "clam",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/klæm/",
+      "primary_meaning_vi": "con trai (Bắc-Mỹ)",
+      "meaning_vi": "con trai (Bắc-Mỹ); ,  (thông tục) người kín đáo; người khó gần, người không thích giao thiệp, người sống cô độc; một đô-la; sướng rơn; câm như hến; bắt trai sò; dính chặt, bám chặt; ,  (thông tục) câm như hến; ngồi im thin thít, câm miệng lại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26620,
+      "word": "clap",
+      "normalized_word": "clap",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/klæp/",
+      "primary_meaning_vi": "tiếng vỗ",
+      "meaning_vi": "tiếng vỗ, tiếng kêu vang, tiếng nổ vang (sét đánh); sự vỗ; cái vỗ; tiếng vỗ tay; vỗ; vỗ tay (hoan hô ai); đặt mạnh, ấn mạnh; đặt nhanh, ấn nhanh; đánh; vỗ tay; vỗ (cánh); đóng sập vào; eye; căng buồm lên; vỗ tay động viên ai; giải quyết thành việc mua bán; nhanh chóng giảng hoà",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

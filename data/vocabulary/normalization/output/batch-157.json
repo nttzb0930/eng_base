@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25561,
+      "quiz_meaning_vi": "người làm bánh mì",
+      "meaning_vi_clean": "người làm bánh mì; người bán bánh mì",
+      "examples_clean": [
+        {
+          "meaning_vi": "người làm bánh mì",
+          "example_en": "The baker wakes up early every morning to prepare fresh bread.",
+          "example_vi": "Người làm bánh mì thức dậy sớm mỗi sáng để chuẩn bị bánh mì tươi."
+        },
+        {
+          "meaning_vi": "người làm bánh mì",
+          "example_en": "My uncle is a professional baker who specializes in sourdough.",
+          "example_vi": "Chú tôi là một người làm bánh mì chuyên nghiệp chuyên về bánh mì chua."
+        },
+        {
+          "meaning_vi": "người làm bánh mì",
+          "example_en": "The local baker is known for his delicious chocolate croissants.",
+          "example_vi": "Người làm bánh mì ở địa phương nổi tiếng với món bánh sừng bò sô cô la ngon tuyệt."
+        },
+        {
+          "meaning_vi": "người làm bánh mì",
+          "example_en": "She decided to train as a baker after finishing culinary school.",
+          "example_vi": "Cô ấy quyết định đào tạo thành người làm bánh mì sau khi tốt nghiệp trường ẩm thực."
+        },
+        {
+          "meaning_vi": "người bán bánh mì",
+          "example_en": "The baker sold out of all his baguettes by noon.",
+          "example_vi": "Người bán bánh mì đã bán hết sạch bánh mì dài trước buổi trưa."
+        },
+        {
+          "meaning_vi": "người bán bánh mì",
+          "example_en": "I stopped at the shop to talk to the baker about a special order.",
+          "example_vi": "Tôi ghé vào cửa hàng để nói chuyện với người bán bánh mì về một đơn hàng đặc biệt."
+        },
+        {
+          "meaning_vi": "người bán bánh mì",
+          "example_en": "The baker greeted every customer with a friendly smile.",
+          "example_vi": "Người bán bánh mì chào đón mọi khách hàng bằng một nụ cười thân thiện."
+        },
+        {
+          "meaning_vi": "người bán bánh mì",
+          "example_en": "Ask the baker if they have any gluten-free options available.",
+          "example_vi": "Hãy hỏi người bán bánh mì xem họ có lựa chọn nào không chứa gluten không."
+        },
+        {
+          "meaning_vi": "người bán bánh mì",
+          "example_en": "The baker carefully wrapped the loaf in paper for me.",
+          "example_vi": "Người bán bánh mì cẩn thận gói ổ bánh mì vào giấy cho tôi."
+        },
+        {
+          "meaning_vi": "người bán bánh mì",
+          "example_en": "The baker is always busy during the holiday season.",
+          "example_vi": "Người bán bánh mì luôn bận rộn trong suốt mùa lễ hội."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa không liên quan (dozen, nào) và giữ lại 2 nghĩa phổ biến nhất.",
+      "word": "baker",
+      "normalized_word": "baker",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The baker wakes up early every morning to prepare fresh bread.",
+      "example_vi_clean": "Người làm bánh mì thức dậy sớm mỗi sáng để chuẩn bị bánh mì tươi."
+    },
+    {
+      "id": 25562,
+      "quiz_meaning_vi": "lò bánh mì",
+      "meaning_vi_clean": "lò bánh mì; hiệu bánh mì",
+      "examples_clean": [
+        {
+          "meaning_vi": "lò bánh mì",
+          "example_en": "The smell of fresh bread drifted from the bakery.",
+          "example_vi": "Mùi bánh mì tươi tỏa ra từ lò bánh mì."
+        },
+        {
+          "meaning_vi": "lò bánh mì",
+          "example_en": "They have a large industrial oven in their bakery.",
+          "example_vi": "Họ có một chiếc lò nướng công nghiệp lớn trong lò bánh mì của họ."
+        },
+        {
+          "meaning_vi": "lò bánh mì",
+          "example_en": "The bakery operates twenty-four hours a day to meet demand.",
+          "example_vi": "Lò bánh mì hoạt động hai mươi bốn giờ một ngày để đáp ứng nhu cầu."
+        },
+        {
+          "meaning_vi": "lò bánh mì",
+          "example_en": "He learned the trade at a small family-owned bakery.",
+          "example_vi": "Anh ấy đã học nghề tại một lò bánh mì nhỏ của gia đình."
+        },
+        {
+          "meaning_vi": "hiệu bánh mì",
+          "example_en": "I bought a dozen cupcakes at the bakery down the street.",
+          "example_vi": "Tôi đã mua một tá bánh cupcake tại hiệu bánh mì ở cuối phố."
+        },
+        {
+          "meaning_vi": "hiệu bánh mì",
+          "example_en": "The bakery is famous for its traditional sourdough bread.",
+          "example_vi": "Hiệu bánh mì này nổi tiếng với món bánh mì chua truyền thống."
+        },
+        {
+          "meaning_vi": "hiệu bánh mì",
+          "example_en": "We visited the local bakery every Sunday morning.",
+          "example_vi": "Chúng tôi ghé thăm hiệu bánh mì địa phương vào mỗi sáng chủ nhật."
+        },
+        {
+          "meaning_vi": "hiệu bánh mì",
+          "example_en": "The bakery was crowded with people waiting for fresh rolls.",
+          "example_vi": "Hiệu bánh mì đông nghịt người đang chờ những chiếc bánh cuộn mới ra lò."
+        },
+        {
+          "meaning_vi": "hiệu bánh mì",
+          "example_en": "She works part-time at a bakery near the university.",
+          "example_vi": "Cô ấy làm việc bán thời gian tại một hiệu bánh mì gần trường đại học."
+        },
+        {
+          "meaning_vi": "hiệu bánh mì",
+          "example_en": "The bakery offers a variety of pastries and cakes.",
+          "example_vi": "Hiệu bánh mì cung cấp nhiều loại bánh ngọt và bánh kem."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ nghĩa 'sự nướng bánh mì' vì không phù hợp với danh từ chỉ địa điểm.",
+      "word": "bakery",
+      "normalized_word": "bakery",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The smell of fresh bread drifted from the bakery.",
+      "example_vi_clean": "Mùi bánh mì tươi tỏa ra từ lò bánh mì."
+    },
+    {
+      "id": 25563,
+      "quiz_meaning_vi": "cái cân",
+      "meaning_vi_clean": "cái cân; sự cân bằng",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái cân",
+          "example_en": "She stepped on the balance to check her weight.",
+          "example_vi": "Cô ấy bước lên cái cân để kiểm tra cân nặng của mình."
+        },
+        {
+          "meaning_vi": "cái cân",
+          "example_en": "The old balance in the kitchen is no longer accurate.",
+          "example_vi": "Cái cân cũ trong bếp không còn chính xác nữa."
+        },
+        {
+          "meaning_vi": "cái cân",
+          "example_en": "He used a digital balance to measure the ingredients precisely.",
+          "example_vi": "Anh ấy dùng một cái cân điện tử để đo các nguyên liệu một cách chính xác."
+        },
+        {
+          "meaning_vi": "cái cân",
+          "example_en": "The merchant placed the gold on the balance.",
+          "example_vi": "Người thương gia đặt vàng lên cái cân."
+        },
+        {
+          "meaning_vi": "sự cân bằng",
+          "example_en": "It is important to maintain a healthy balance between work and life.",
+          "example_vi": "Điều quan trọng là duy trì sự cân bằng lành mạnh giữa công việc và cuộc sống."
+        },
+        {
+          "meaning_vi": "sự cân bằng",
+          "example_en": "The gymnast showed great balance on the narrow beam.",
+          "example_vi": "Vận động viên thể dục thể hiện sự cân bằng tuyệt vời trên thanh xà hẹp."
+        },
+        {
+          "meaning_vi": "sự cân bằng",
+          "example_en": "The ecosystem relies on a delicate balance of nature.",
+          "example_vi": "Hệ sinh thái dựa vào sự cân bằng mong manh của tự nhiên."
+        },
+        {
+          "meaning_vi": "sự cân bằng",
+          "example_en": "He lost his balance and fell off the ladder.",
+          "example_vi": "Anh ấy mất sự cân bằng và ngã khỏi thang."
+        },
+        {
+          "meaning_vi": "sự cân bằng",
+          "example_en": "The new policy aims to restore the balance of power.",
+          "example_vi": "Chính sách mới nhằm mục đích khôi phục sự cân bằng quyền lực."
+        },
+        {
+          "meaning_vi": "sự cân bằng",
+          "example_en": "Yoga helps improve your physical balance.",
+          "example_vi": "Yoga giúp cải thiện sự cân bằng thể chất của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa quá chuyên sâu hoặc không phổ biến, chỉ giữ lại 2 nghĩa chính.",
+      "word": "balance",
+      "normalized_word": "balance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She stepped on the balance to check her weight.",
+      "example_vi_clean": "Cô ấy bước lên cái cân để kiểm tra cân nặng của mình."
+    },
+    {
+      "id": 25564,
+      "quiz_meaning_vi": "hói",
+      "meaning_vi_clean": "hói; trọc",
+      "examples_clean": [
+        {
+          "meaning_vi": "hói",
+          "example_en": "He started going bald in his early thirties.",
+          "example_vi": "Anh ấy bắt đầu bị hói từ đầu những năm ba mươi tuổi."
+        },
+        {
+          "meaning_vi": "hói",
+          "example_en": "Many men worry about becoming bald as they age.",
+          "example_vi": "Nhiều người đàn ông lo lắng về việc bị hói khi họ già đi."
+        },
+        {
+          "meaning_vi": "hói",
+          "example_en": "The old man was completely bald.",
+          "example_vi": "Ông lão bị hói hoàn toàn."
+        },
+        {
+          "meaning_vi": "hói",
+          "example_en": "He wears a hat to cover his bald head.",
+          "example_vi": "Anh ấy đội mũ để che cái đầu hói của mình."
+        },
+        {
+          "meaning_vi": "trọc",
+          "example_en": "The mountain top was bare and bald of trees.",
+          "example_vi": "Đỉnh núi trơ trọi và trọc lốc không có cây cối."
+        },
+        {
+          "meaning_vi": "trọc",
+          "example_en": "The field looked bald after the harvest.",
+          "example_vi": "Cánh đồng trông trọc lốc sau vụ thu hoạch."
+        },
+        {
+          "meaning_vi": "trọc",
+          "example_en": "The tires were bald and needed to be replaced.",
+          "example_vi": "Lốp xe đã bị mòn trọc và cần phải thay thế."
+        },
+        {
+          "meaning_vi": "trọc",
+          "example_en": "The landscape was bald and desolate.",
+          "example_vi": "Phong cảnh trọc lốc và hoang vắng."
+        },
+        {
+          "meaning_vi": "trọc",
+          "example_en": "He shaved his head bald for the charity event.",
+          "example_vi": "Anh ấy cạo đầu trọc lốc cho sự kiện từ thiện."
+        },
+        {
+          "meaning_vi": "trọc",
+          "example_en": "The hill was bald, with no vegetation at all.",
+          "example_vi": "Ngọn đồi trọc lốc, hoàn toàn không có thảm thực vật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa 'hói (đầu)' thành 'hói' và 'trọc trụi' thành 'trọc' để ngắn gọn.",
+      "word": "bald",
+      "normalized_word": "bald",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He started going bald in his early thirties.",
+      "example_vi_clean": "Anh ấy bắt đầu bị hói từ đầu những năm ba mươi tuổi."
+    },
+    {
+      "id": 25565,
+      "quiz_meaning_vi": "băng",
+      "meaning_vi_clean": "băng; băng bó",
+      "examples_clean": [
+        {
+          "meaning_vi": "băng",
+          "example_en": "She applied a bandage to the cut on her finger.",
+          "example_vi": "Cô ấy dán một miếng băng lên vết cắt trên ngón tay."
+        },
+        {
+          "meaning_vi": "băng",
+          "example_en": "He needed a bandage for his injured knee.",
+          "example_vi": "Anh ấy cần một miếng băng cho đầu gối bị thương của mình."
+        },
+        {
+          "meaning_vi": "băng",
+          "example_en": "The nurse changed the dirty bandage on his arm.",
+          "example_vi": "Y tá thay miếng băng bẩn trên cánh tay anh ấy."
+        },
+        {
+          "meaning_vi": "băng",
+          "example_en": "Keep the bandage clean and dry.",
+          "example_vi": "Hãy giữ miếng băng sạch sẽ và khô ráo."
+        },
+        {
+          "meaning_vi": "băng bó",
+          "example_en": "The doctor began to bandage the patient's wound.",
+          "example_vi": "Bác sĩ bắt đầu băng bó vết thương cho bệnh nhân."
+        },
+        {
+          "meaning_vi": "băng bó",
+          "example_en": "You should bandage your ankle to support it.",
+          "example_vi": "Bạn nên băng bó mắt cá chân để hỗ trợ nó."
+        },
+        {
+          "meaning_vi": "băng bó",
+          "example_en": "She helped to bandage his head after the accident.",
+          "example_vi": "Cô ấy giúp băng bó đầu cho anh ấy sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "băng bó",
+          "example_en": "It is important to bandage the area properly.",
+          "example_vi": "Điều quan trọng là phải băng bó khu vực đó đúng cách."
+        },
+        {
+          "meaning_vi": "băng bó",
+          "example_en": "He had to bandage his hand before playing tennis.",
+          "example_vi": "Anh ấy phải băng bó tay trước khi chơi quần vợt."
+        },
+        {
+          "meaning_vi": "băng bó",
+          "example_en": "They will bandage the injury to prevent infection.",
+          "example_vi": "Họ sẽ băng bó vết thương để ngăn ngừa nhiễm trùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ/động từ và chuẩn hóa nghĩa.",
+      "word": "bandage",
+      "normalized_word": "bandage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She applied a bandage to the cut on her finger.",
+      "example_vi_clean": "Cô ấy dán một miếng băng lên vết cắt trên ngón tay."
+    },
+    {
+      "id": 25566,
+      "quiz_meaning_vi": "tiếng nổ",
+      "meaning_vi_clean": "tiếng nổ; tiếng sập mạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "There was a loud bang when the tire burst.",
+          "example_vi": "Có một tiếng nổ lớn khi lốp xe bị nổ."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The firework went off with a sudden bang.",
+          "example_vi": "Pháo hoa nổ tung với một tiếng nổ bất ngờ."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "We heard a loud bang coming from the engine.",
+          "example_vi": "Chúng tôi nghe thấy một tiếng nổ lớn phát ra từ động cơ."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The gun went off with a sharp bang.",
+          "example_vi": "Khẩu súng nổ với một tiếng nổ chói tai."
+        },
+        {
+          "meaning_vi": "tiếng sập mạnh",
+          "example_en": "The door closed with a loud bang.",
+          "example_vi": "Cánh cửa đóng lại với một tiếng sập mạnh."
+        },
+        {
+          "meaning_vi": "tiếng sập mạnh",
+          "example_en": "He shut the book with a bang.",
+          "example_vi": "Anh ấy đóng cuốn sách lại với một tiếng sập mạnh."
+        },
+        {
+          "meaning_vi": "tiếng sập mạnh",
+          "example_en": "The lid fell down with a bang.",
+          "example_vi": "Cái nắp rơi xuống với một tiếng sập mạnh."
+        },
+        {
+          "meaning_vi": "tiếng sập mạnh",
+          "example_en": "The window slammed shut with a bang.",
+          "example_vi": "Cửa sổ sập lại với một tiếng sập mạnh."
+        },
+        {
+          "meaning_vi": "tiếng sập mạnh",
+          "example_en": "The box hit the floor with a bang.",
+          "example_vi": "Cái hộp đập xuống sàn với một tiếng sập mạnh."
+        },
+        {
+          "meaning_vi": "tiếng sập mạnh",
+          "example_en": "The gate closed with a bang in the wind.",
+          "example_vi": "Cánh cổng đóng lại với một tiếng sập mạnh trong gió."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ nghĩa 'tóc cắt ngang trán' vì ít phổ biến hơn và tập trung vào nghĩa danh từ chỉ âm thanh.",
+      "word": "bang",
+      "normalized_word": "bang",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There was a loud bang when the tire burst.",
+      "example_vi_clean": "Có một tiếng nổ lớn khi lốp xe bị nổ."
+    },
+    {
+      "id": 25567,
+      "quiz_meaning_vi": "trần",
+      "meaning_vi_clean": "trần; trống không",
+      "examples_clean": [
+        {
+          "meaning_vi": "trần",
+          "example_en": "He walked on the beach with bare feet.",
+          "example_vi": "Anh ấy đi bộ trên bãi biển với đôi chân trần."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "The trees were bare in the middle of winter.",
+          "example_vi": "Những cái cây trần trụi vào giữa mùa đông."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "She has bare arms in this cold weather.",
+          "example_vi": "Cô ấy để tay trần trong thời tiết lạnh giá này."
+        },
+        {
+          "meaning_vi": "trần",
+          "example_en": "The walls were bare, without any pictures.",
+          "example_vi": "Những bức tường trần trụi, không có bất kỳ bức tranh nào."
+        },
+        {
+          "meaning_vi": "trống không",
+          "example_en": "The cupboard was completely bare.",
+          "example_vi": "Cái tủ trống không hoàn toàn."
+        },
+        {
+          "meaning_vi": "trống không",
+          "example_en": "The room was bare of furniture.",
+          "example_vi": "Căn phòng trống không, không có đồ đạc."
+        },
+        {
+          "meaning_vi": "trống không",
+          "example_en": "The shelves were bare after the sale.",
+          "example_vi": "Các kệ hàng trống không sau đợt giảm giá."
+        },
+        {
+          "meaning_vi": "trống không",
+          "example_en": "The fridge was bare, so we went shopping.",
+          "example_vi": "Tủ lạnh trống không, vì vậy chúng tôi đã đi mua sắm."
+        },
+        {
+          "meaning_vi": "trống không",
+          "example_en": "The house looked bare without any decorations.",
+          "example_vi": "Ngôi nhà trông trống không mà không có đồ trang trí nào."
+        },
+        {
+          "meaning_vi": "trống không",
+          "example_en": "The desk was bare, except for a pen.",
+          "example_vi": "Bàn làm việc trống không, ngoại trừ một cây bút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành tính từ và chọn 2 nghĩa phổ biến nhất.",
+      "word": "bare",
+      "normalized_word": "bare",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He walked on the beach with bare feet.",
+      "example_vi_clean": "Anh ấy đi bộ trên bãi biển với đôi chân trần."
+    },
+    {
+      "id": 25568,
+      "quiz_meaning_vi": "vừa mới",
+      "meaning_vi_clean": "vừa mới; vừa đủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "vừa mới",
+          "example_en": "I had barely finished my work when the phone rang.",
+          "example_vi": "Tôi vừa mới làm xong việc thì điện thoại reo."
+        },
+        {
+          "meaning_vi": "vừa mới",
+          "example_en": "She had barely arrived when it started to rain.",
+          "example_vi": "Cô ấy vừa mới đến thì trời bắt đầu mưa."
+        },
+        {
+          "meaning_vi": "vừa mới",
+          "example_en": "They had barely started the game when the lights went out.",
+          "example_vi": "Họ vừa mới bắt đầu trò chơi thì đèn tắt."
+        },
+        {
+          "meaning_vi": "vừa mới",
+          "example_en": "He had barely woken up when he heard the noise.",
+          "example_vi": "Anh ấy vừa mới thức dậy thì nghe thấy tiếng ồn."
+        },
+        {
+          "meaning_vi": "vừa đủ",
+          "example_en": "There was barely enough food for everyone.",
+          "example_vi": "Chỉ có vừa đủ thức ăn cho mọi người."
+        },
+        {
+          "meaning_vi": "vừa đủ",
+          "example_en": "We have barely enough money to pay the rent.",
+          "example_vi": "Chúng tôi có vừa đủ tiền để trả tiền thuê nhà."
+        },
+        {
+          "meaning_vi": "vừa đủ",
+          "example_en": "There is barely enough time to finish the project.",
+          "example_vi": "Chỉ có vừa đủ thời gian để hoàn thành dự án."
+        },
+        {
+          "meaning_vi": "vừa đủ",
+          "example_en": "The room is barely big enough for two people.",
+          "example_vi": "Căn phòng chỉ vừa đủ rộng cho hai người."
+        },
+        {
+          "meaning_vi": "vừa đủ",
+          "example_en": "He had barely enough strength to stand up.",
+          "example_vi": "Anh ấy chỉ có vừa đủ sức để đứng dậy."
+        },
+        {
+          "meaning_vi": "vừa đủ",
+          "example_en": "There was barely enough light to read by.",
+          "example_vi": "Chỉ có vừa đủ ánh sáng để đọc sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa 'công khai' thành 'vừa mới' vì nghĩa gốc bị sai.",
+      "word": "barely",
+      "normalized_word": "barely",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I had barely finished my work when the phone rang.",
+      "example_vi_clean": "Tôi vừa mới làm xong việc thì điện thoại reo."
+    },
+    {
+      "id": 25569,
+      "quiz_meaning_vi": "tiếng sủa",
+      "meaning_vi_clean": "tiếng sủa; vỏ cây",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng sủa",
+          "example_en": "The dog's loud bark woke me up.",
+          "example_vi": "Tiếng sủa lớn của con chó đã đánh thức tôi."
+        },
+        {
+          "meaning_vi": "tiếng sủa",
+          "example_en": "I heard a bark from the garden.",
+          "example_vi": "Tôi nghe thấy một tiếng sủa từ khu vườn."
+        },
+        {
+          "meaning_vi": "tiếng sủa",
+          "example_en": "The sudden bark startled the cat.",
+          "example_vi": "Tiếng sủa bất ngờ làm con mèo giật mình."
+        },
+        {
+          "meaning_vi": "tiếng sủa",
+          "example_en": "The dog gave a sharp bark at the stranger.",
+          "example_vi": "Con chó sủa một tiếng đanh gọn vào người lạ."
+        },
+        {
+          "meaning_vi": "vỏ cây",
+          "example_en": "The bark of this tree is very rough.",
+          "example_vi": "Vỏ cây này rất sần sùi."
+        },
+        {
+          "meaning_vi": "vỏ cây",
+          "example_en": "He carved his name into the tree bark.",
+          "example_vi": "Anh ấy khắc tên mình lên vỏ cây."
+        },
+        {
+          "meaning_vi": "vỏ cây",
+          "example_en": "The bark protects the tree from insects.",
+          "example_vi": "Vỏ cây bảo vệ cái cây khỏi côn trùng."
+        },
+        {
+          "meaning_vi": "vỏ cây",
+          "example_en": "Some medicines are made from tree bark.",
+          "example_vi": "Một số loại thuốc được làm từ vỏ cây."
+        },
+        {
+          "meaning_vi": "vỏ cây",
+          "example_en": "The bark peeled off the old oak tree.",
+          "example_vi": "Vỏ cây bong ra khỏi cây sồi già."
+        },
+        {
+          "meaning_vi": "vỏ cây",
+          "example_en": "They collected bark for the fire.",
+          "example_vi": "Họ thu gom vỏ cây để đốt lửa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa phụ không cần thiết và tập trung vào 2 nghĩa chính.",
+      "word": "bark",
+      "normalized_word": "bark",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dog's loud bark woke me up.",
+      "example_vi_clean": "Tiếng sủa lớn của con chó đã đánh thức tôi."
+    },
+    {
+      "id": 25570,
+      "quiz_meaning_vi": "người phục vụ ở quán rượu",
+      "meaning_vi_clean": "người phục vụ ở quán rượu",
+      "examples_clean": [
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman served us two cold beers.",
+          "example_vi": "Người phục vụ ở quán rượu đã phục vụ chúng tôi hai ly bia lạnh."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "I asked the barman for the bill.",
+          "example_vi": "Tôi hỏi người phục vụ ở quán rượu về hóa đơn."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman was very friendly to all the customers.",
+          "example_vi": "Người phục vụ ở quán rượu rất thân thiện với tất cả khách hàng."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "He has been a barman for over ten years.",
+          "example_vi": "Anh ấy đã là người phục vụ ở quán rượu hơn mười năm rồi."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman mixed a delicious cocktail for her.",
+          "example_vi": "Người phục vụ ở quán rượu đã pha một ly cocktail ngon tuyệt cho cô ấy."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman wiped the counter clean.",
+          "example_vi": "Người phục vụ ở quán rượu lau sạch quầy bar."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "We chatted with the barman about the local sports team.",
+          "example_vi": "Chúng tôi trò chuyện với người phục vụ ở quán rượu về đội thể thao địa phương."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman refused to serve more drinks to the drunk man.",
+          "example_vi": "Người phục vụ ở quán rượu từ chối phục vụ thêm đồ uống cho người đàn ông say rượu."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman recommended a local wine.",
+          "example_vi": "Người phục vụ ở quán rượu đã gợi ý một loại rượu vang địa phương."
+        },
+        {
+          "meaning_vi": "người phục vụ ở quán rượu",
+          "example_en": "The barman closed the pub at midnight.",
+          "example_vi": "Người phục vụ ở quán rượu đóng cửa quán vào lúc nửa đêm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ cho nghĩa duy nhất.",
+      "word": "barman",
+      "normalized_word": "barman",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The barman served us two cold beers.",
+      "example_vi_clean": "Người phục vụ ở quán rượu đã phục vụ chúng tôi hai ly bia lạnh."
+    }
+  ]
+}

@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24205,
+      "quiz_meaning_vi": "vỏ bọc",
+      "meaning_vi_clean": "vỏ bọc",
+      "examples_clean": [
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The book has a blue cover.",
+          "example_vi": "Cuốn sách có một cái vỏ bọc màu xanh."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "Please put the cover on the pot.",
+          "example_vi": "Làm ơn đậy cái vỏ bọc lên nồi."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The plastic cover protects the table.",
+          "example_vi": "Cái vỏ bọc bằng nhựa bảo vệ chiếc bàn."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "I lost the cover of my pen.",
+          "example_vi": "Tôi làm mất cái vỏ bọc của cây bút."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The box needs a strong cover.",
+          "example_vi": "Cái hộp cần một cái vỏ bọc chắc chắn."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "She removed the cover from the chair.",
+          "example_vi": "Cô ấy tháo cái vỏ bọc ra khỏi chiếc ghế."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "This cover is made of soft fabric.",
+          "example_vi": "Cái vỏ bọc này được làm bằng vải mềm."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The magazine has a colorful cover.",
+          "example_vi": "Tạp chí có một cái vỏ bọc đầy màu sắc."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "He cleaned the dusty cover.",
+          "example_vi": "Anh ấy lau sạch cái vỏ bọc đầy bụi."
+        },
+        {
+          "meaning_vi": "vỏ bọc",
+          "example_en": "The phone needs a protective cover.",
+          "example_vi": "Điện thoại cần một cái vỏ bọc bảo vệ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là vỏ bọc và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'vỏ bọc' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "cover",
+      "normalized_word": "cover",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The book has a blue cover.",
+      "example_vi_clean": "Cuốn sách có một cái vỏ bọc màu xanh."
+    },
+    {
+      "id": 24206,
+      "quiz_meaning_vi": "con bò",
+      "meaning_vi_clean": "con bò",
+      "examples_clean": [
+        {
+          "meaning_vi": "con bò",
+          "example_en": "The cow is eating grass in the field.",
+          "example_vi": "Con bò đang ăn cỏ trên cánh đồng."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "A cow gives us fresh milk.",
+          "example_vi": "Một con bò cho chúng ta sữa tươi."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "The farmer milks the cow every morning.",
+          "example_vi": "Người nông dân vắt sữa con bò mỗi sáng."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "I saw a black and white cow.",
+          "example_vi": "Tôi đã thấy một con bò màu đen trắng."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "The cow walked slowly to the barn.",
+          "example_vi": "Con bò đi chậm rãi về phía chuồng."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "My grandfather has a big cow.",
+          "example_vi": "Ông tôi có một con bò lớn."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "The cow stood under the tree.",
+          "example_vi": "Con bò đứng dưới gốc cây."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "We heard the cow making a sound.",
+          "example_vi": "Chúng tôi nghe thấy con bò phát ra tiếng kêu."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "The little girl is afraid of the cow.",
+          "example_vi": "Cô bé sợ con bò."
+        },
+        {
+          "meaning_vi": "con bò",
+          "example_en": "That cow belongs to my neighbor.",
+          "example_vi": "Con bò đó thuộc về hàng xóm của tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là con bò và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'con bò' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "cow",
+      "normalized_word": "cow",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cow is eating grass in the field.",
+      "example_vi_clean": "Con bò đang ăn cỏ trên cánh đồng."
+    },
+    {
+      "id": 24207,
+      "quiz_meaning_vi": "tiếng khóc",
+      "meaning_vi_clean": "tiếng khóc",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "I heard a loud cry in the night.",
+          "example_vi": "Tôi nghe thấy một tiếng khóc lớn trong đêm."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "The baby's cry woke everyone up.",
+          "example_vi": "Tiếng khóc của đứa bé làm mọi người thức giấc."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "She let out a cry of surprise.",
+          "example_vi": "Cô ấy thốt lên một tiếng khóc vì ngạc nhiên."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "The cry for help was very faint.",
+          "example_vi": "Tiếng khóc cầu cứu rất nhỏ."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "He ignored the cry from the room.",
+          "example_vi": "Anh ấy phớt lờ tiếng khóc từ trong phòng."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "A sudden cry interrupted the silence.",
+          "example_vi": "Một tiếng khóc bất ngờ phá vỡ sự im lặng."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "The mother comforted the child after the cry.",
+          "example_vi": "Người mẹ dỗ dành đứa trẻ sau tiếng khóc."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "I could not identify the source of the cry.",
+          "example_vi": "Tôi không thể xác định nguồn gốc của tiếng khóc."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "The sad movie caused a cry from the audience.",
+          "example_vi": "Bộ phim buồn gây ra tiếng khóc từ khán giả."
+        },
+        {
+          "meaning_vi": "tiếng khóc",
+          "example_en": "Her cry was full of pain.",
+          "example_vi": "Tiếng khóc của cô ấy đầy đau đớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là tiếng khóc và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'tiếng khóc' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "cry",
+      "normalized_word": "cry",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I heard a loud cry in the night.",
+      "example_vi_clean": "Tôi nghe thấy một tiếng khóc lớn trong đêm."
+    },
+    {
+      "id": 24208,
+      "quiz_meaning_vi": "văn hóa",
+      "meaning_vi_clean": "văn hóa",
+      "examples_clean": [
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "They want to learn about our culture.",
+          "example_vi": "Họ muốn tìm hiểu về văn hóa của chúng tôi."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "Each country has its own unique culture.",
+          "example_vi": "Mỗi quốc gia có một nền văn hóa độc đáo riêng."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "Food is an important part of culture.",
+          "example_vi": "Ẩm thực là một phần quan trọng của văn hóa."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "She is interested in Asian culture.",
+          "example_vi": "Cô ấy quan tâm đến văn hóa châu Á."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "The school promotes local culture.",
+          "example_vi": "Trường học thúc đẩy văn hóa địa phương."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "Language is closely linked to culture.",
+          "example_vi": "Ngôn ngữ gắn liền chặt chẽ với văn hóa."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "We should respect every culture.",
+          "example_vi": "Chúng ta nên tôn trọng mọi nền văn hóa."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "The festival celebrates their culture.",
+          "example_vi": "Lễ hội tôn vinh văn hóa của họ."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "He studied the history and culture of the region.",
+          "example_vi": "Anh ấy đã nghiên cứu lịch sử và văn hóa của vùng này."
+        },
+        {
+          "meaning_vi": "văn hóa",
+          "example_en": "Music is a universal culture.",
+          "example_vi": "Âm nhạc là một nền văn hóa phổ quát."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là văn hóa và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'văn hóa' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "culture",
+      "normalized_word": "culture",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They want to learn about our culture.",
+      "example_vi_clean": "Họ muốn tìm hiểu về văn hóa của chúng tôi."
+    },
+    {
+      "id": 24209,
+      "quiz_meaning_vi": "cái tách",
+      "meaning_vi_clean": "cái tách",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "She drank a cup of tea.",
+          "example_vi": "Cô ấy đã uống một cái tách trà."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "Please put the cup on the table.",
+          "example_vi": "Làm ơn đặt cái tách lên bàn."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "The cup is made of white porcelain.",
+          "example_vi": "Cái tách được làm bằng sứ trắng."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "He broke his favorite cup.",
+          "example_vi": "Anh ấy đã làm vỡ cái tách yêu thích của mình."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "I need a clean cup for my coffee.",
+          "example_vi": "Tôi cần một cái tách sạch cho cà phê của mình."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "The cup is very hot.",
+          "example_vi": "Cái tách rất nóng."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "She washed the cup after breakfast.",
+          "example_vi": "Cô ấy đã rửa cái tách sau bữa sáng."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "There is a small chip on the cup.",
+          "example_vi": "Có một vết mẻ nhỏ trên cái tách."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "He filled the cup with water.",
+          "example_vi": "Anh ấy đã đổ đầy nước vào cái tách."
+        },
+        {
+          "meaning_vi": "cái tách",
+          "example_en": "The cup fell off the shelf.",
+          "example_vi": "Cái tách đã rơi khỏi kệ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là cái tách và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'cái tách' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "cup",
+      "normalized_word": "cup",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She drank a cup of tea.",
+      "example_vi_clean": "Cô ấy đã uống một cái tách trà."
+    },
+    {
+      "id": 24213,
+      "quiz_meaning_vi": "điệu nhảy",
+      "meaning_vi_clean": "điệu nhảy",
+      "examples_clean": [
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "They performed a beautiful dance.",
+          "example_vi": "Họ đã biểu diễn một điệu nhảy đẹp."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "She learned a new dance at school.",
+          "example_vi": "Cô ấy đã học một điệu nhảy mới ở trường."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "The dance was very energetic.",
+          "example_vi": "Điệu nhảy rất tràn đầy năng lượng."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "He invited her for a dance.",
+          "example_vi": "Anh ấy đã mời cô ấy một điệu nhảy."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "The traditional dance is very old.",
+          "example_vi": "Điệu nhảy truyền thống này rất lâu đời."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "Everyone enjoyed the dance at the party.",
+          "example_vi": "Mọi người đều thích điệu nhảy tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "She practiced the dance for hours.",
+          "example_vi": "Cô ấy đã tập luyện điệu nhảy trong nhiều giờ."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "The music was perfect for the dance.",
+          "example_vi": "Âm nhạc rất hoàn hảo cho điệu nhảy."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "They finished the dance with a bow.",
+          "example_vi": "Họ đã kết thúc điệu nhảy bằng một cái cúi chào."
+        },
+        {
+          "meaning_vi": "điệu nhảy",
+          "example_en": "His dance was full of grace.",
+          "example_vi": "Điệu nhảy của anh ấy đầy sự duyên dáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là điệu nhảy và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'điệu nhảy' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "dance",
+      "normalized_word": "dance",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They performed a beautiful dance.",
+      "example_vi_clean": "Họ đã biểu diễn một điệu nhảy đẹp."
+    },
+    {
+      "id": 24215,
+      "quiz_meaning_vi": "tối",
+      "meaning_vi_clean": "tối",
+      "examples_clean": [
+        {
+          "meaning_vi": "tối",
+          "example_en": "The room is very dark.",
+          "example_vi": "Căn phòng rất tối."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "It is too dark to read here.",
+          "example_vi": "Ở đây quá tối để đọc sách."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "She has dark hair.",
+          "example_vi": "Cô ấy có mái tóc tối màu."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "The sky became dark before the rain.",
+          "example_vi": "Bầu trời trở nên tối trước khi mưa."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "He likes dark colors.",
+          "example_vi": "Anh ấy thích những màu tối."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "The forest is dark at night.",
+          "example_vi": "Khu rừng rất tối vào ban đêm."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "The corner of the house is dark.",
+          "example_vi": "Góc nhà rất tối."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "I am afraid of dark places.",
+          "example_vi": "Tôi sợ những nơi tối tăm."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "The paint is a dark blue.",
+          "example_vi": "Màu sơn là màu xanh tối."
+        },
+        {
+          "meaning_vi": "tối",
+          "example_en": "The street is dark without lights.",
+          "example_vi": "Con phố rất tối khi không có đèn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa tính từ là tối và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'tối' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "dark",
+      "normalized_word": "dark",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The room is very dark.",
+      "example_vi_clean": "Căn phòng rất tối."
+    },
+    {
+      "id": 24216,
+      "quiz_meaning_vi": "ngày tháng",
+      "meaning_vi_clean": "ngày tháng",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "What is the date today?",
+          "example_vi": "Hôm nay là ngày tháng nào?"
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "Please write the date on the paper.",
+          "example_vi": "Làm ơn viết ngày tháng lên tờ giấy."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "I forgot the date of the meeting.",
+          "example_vi": "Tôi đã quên ngày tháng của cuộc họp."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "The date is printed on the ticket.",
+          "example_vi": "Ngày tháng được in trên vé."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "Can you check the date for me?",
+          "example_vi": "Bạn có thể kiểm tra ngày tháng giúp tôi không?"
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "The letter has no date.",
+          "example_vi": "Bức thư không có ngày tháng."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "We need to agree on a date.",
+          "example_vi": "Chúng ta cần thống nhất một ngày tháng."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "The date of the party is next week.",
+          "example_vi": "Ngày tháng của bữa tiệc là tuần tới."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "She circled the date on the calendar.",
+          "example_vi": "Cô ấy đã khoanh tròn ngày tháng trên lịch."
+        },
+        {
+          "meaning_vi": "ngày tháng",
+          "example_en": "The date is important for the record.",
+          "example_vi": "Ngày tháng rất quan trọng cho hồ sơ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là ngày tháng và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'ngày tháng' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "date",
+      "normalized_word": "date",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "What is the date today?",
+      "example_vi_clean": "Hôm nay là ngày tháng nào?"
+    },
+    {
+      "id": 24219,
+      "quiz_meaning_vi": "thân yêu",
+      "meaning_vi_clean": "thân yêu",
+      "examples_clean": [
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "She is a dear friend of mine.",
+          "example_vi": "Cô ấy là một người bạn thân yêu của tôi."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "He wrote a letter to his dear mother.",
+          "example_vi": "Anh ấy đã viết một lá thư cho người mẹ thân yêu của mình."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "They are dear to my heart.",
+          "example_vi": "Họ rất thân yêu đối với trái tim tôi."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "She is very dear to all of us.",
+          "example_vi": "Cô ấy rất thân yêu với tất cả chúng tôi."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "He has many dear memories of his childhood.",
+          "example_vi": "Anh ấy có nhiều kỷ niệm thân yêu về thời thơ ấu."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "My dear sister is coming to visit.",
+          "example_vi": "Người chị thân yêu của tôi sắp đến thăm."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "She is a dear person to everyone.",
+          "example_vi": "Cô ấy là một người thân yêu đối với mọi người."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "We lost a dear family member.",
+          "example_vi": "Chúng tôi đã mất một thành viên thân yêu trong gia đình."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "He kept his dear old book.",
+          "example_vi": "Anh ấy giữ cuốn sách cũ thân yêu của mình."
+        },
+        {
+          "meaning_vi": "thân yêu",
+          "example_en": "She is a dear colleague.",
+          "example_vi": "Cô ấy là một đồng nghiệp thân yêu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa tính từ là thân yêu và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ 'thân yêu' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "dear",
+      "normalized_word": "dear",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a dear friend of mine.",
+      "example_vi_clean": "Cô ấy là một người bạn thân yêu của tôi."
+    },
+    {
+      "id": 24223,
+      "quiz_meaning_vi": "thiết kế",
+      "meaning_vi_clean": "thiết kế",
+      "examples_clean": [
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "The design of the house is modern.",
+          "example_vi": "Thiết kế của ngôi nhà rất hiện đại."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "I like the design of this dress.",
+          "example_vi": "Tôi thích thiết kế của chiếc váy này."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "The car has a new design.",
+          "example_vi": "Chiếc xe có một thiết kế mới."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "She is studying graphic design.",
+          "example_vi": "Cô ấy đang học thiết kế đồ họa."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "The design is simple but beautiful.",
+          "example_vi": "Thiết kế này đơn giản nhưng đẹp."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "He made a design for the logo.",
+          "example_vi": "Anh ấy đã tạo ra một thiết kế cho logo."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "The design of the bridge is very strong.",
+          "example_vi": "Thiết kế của cây cầu rất chắc chắn."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "We need a better design for the website.",
+          "example_vi": "Chúng ta cần một thiết kế tốt hơn cho trang web."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "The design was created by a famous artist.",
+          "example_vi": "Thiết kế này được tạo ra bởi một nghệ sĩ nổi tiếng."
+        },
+        {
+          "meaning_vi": "thiết kế",
+          "example_en": "I love the unique design of this chair.",
+          "example_vi": "Tôi yêu thiết kế độc đáo của chiếc ghế này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ là thiết kế và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ 'thiết kế' được sử dụng nhất quán trong tất cả các ví dụ."
+      },
+      "word": "design",
+      "normalized_word": "design",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The design of the house is modern.",
+      "example_vi_clean": "Thiết kế của ngôi nhà rất hiện đại."
+    }
+  ]
+}

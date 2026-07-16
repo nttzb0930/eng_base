@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25813,
+      "quiz_meaning_vi": "số lượng",
+      "meaning_vi_clean": "số lượng",
+      "examples_clean": [
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "The count of students in the class is fifty.",
+          "example_vi": "Số lượng học sinh trong lớp là năm mươi."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "We need to do a final count of the inventory.",
+          "example_vi": "Chúng ta cần thực hiện một đếm số lượng cuối cùng của hàng tồn kho."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "The police arrived and began a count of the people present.",
+          "example_vi": "Cảnh sát đã đến và bắt đầu đếm số lượng người có mặt."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "Make sure you get an accurate count of the votes.",
+          "example_vi": "Hãy đảm bảo bạn có được số lượng phiếu bầu chính xác."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "The count of endangered species has increased.",
+          "example_vi": "Số lượng các loài có nguy cơ tuyệt chủng đã tăng lên."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "A quick count revealed that ten items were missing.",
+          "example_vi": "Một đếm nhanh cho thấy mười món đồ đã bị thiếu."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "The final count of the participants was over a hundred.",
+          "example_vi": "Số lượng người tham gia cuối cùng là hơn một trăm."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "We did a headcount, and the count was correct.",
+          "example_vi": "Chúng tôi đã điểm danh, và số lượng là chính xác."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "The count of bacteria in the sample was surprisingly high.",
+          "example_vi": "Số lượng vi khuẩn trong mẫu cao một cách đáng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "Please provide a count of all the books on the shelf.",
+          "example_vi": "Vui lòng cung cấp số lượng tất cả sách trên kệ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'số lượng' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'số lượng' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "count",
+      "normalized_word": "count",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The count of students in the class is fifty.",
+      "example_vi_clean": "Số lượng học sinh trong lớp là năm mươi."
+    },
+    {
+      "id": 25820,
+      "quiz_meaning_vi": "sự cố",
+      "meaning_vi_clean": "sự cố",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "The car crash caused a major traffic jam.",
+          "example_vi": "Vụ va chạm xe đã gây ra tắc đường nghiêm trọng."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "There was a plane crash in the mountains yesterday.",
+          "example_vi": "Đã có một vụ tai nạn máy bay trên núi ngày hôm qua."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "The investigation into the train crash is ongoing.",
+          "example_vi": "Cuộc điều tra về vụ tai nạn tàu hỏa vẫn đang tiếp diễn."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "She was involved in a minor car crash last week.",
+          "example_vi": "Cô ấy đã liên quan đến một vụ va chạm xe nhẹ vào tuần trước."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "The crash resulted in serious injuries to the driver.",
+          "example_vi": "Vụ va chạm đã gây ra thương tích nghiêm trọng cho người lái xe."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "We heard about the helicopter crash on the news.",
+          "example_vi": "Chúng tôi đã nghe tin về vụ tai nạn trực thăng trên tin tức."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "The police are examining the scene of the crash.",
+          "example_vi": "Cảnh sát đang kiểm tra hiện trường vụ tai nạn."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "It was a terrible crash, but thankfully no one was killed.",
+          "example_vi": "Đó là một vụ va chạm khủng khiếp, nhưng may mắn là không ai bị thiệt mạng."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "The crash happened at the intersection of two busy roads.",
+          "example_vi": "Vụ va chạm xảy ra tại giao lộ của hai con đường đông đúc."
+        },
+        {
+          "meaning_vi": "sự cố",
+          "example_en": "The insurance company is assessing the damage from the crash.",
+          "example_vi": "Công ty bảo hiểm đang đánh giá thiệt hại từ vụ va chạm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'sự cố' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự cố' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "crash",
+      "normalized_word": "crash",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The car crash caused a major traffic jam.",
+      "example_vi_clean": "Vụ va chạm xe đã gây ra tắc đường nghiêm trọng."
+    },
+    {
+      "id": 25825,
+      "quiz_meaning_vi": "vụ mùa",
+      "meaning_vi_clean": "vụ mùa",
+      "examples_clean": [
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "The wheat crop was excellent this year.",
+          "example_vi": "Vụ mùa lúa mì năm nay rất tốt."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "Farmers are hoping for a good harvest crop.",
+          "example_vi": "Nông dân đang hy vọng vào một vụ mùa bội thu."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "The early crop of strawberries is now ready to be picked.",
+          "example_vi": "Vụ mùa dâu tây đầu tiên giờ đã sẵn sàng để hái."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "A late frost can damage the entire crop.",
+          "example_vi": "Sương giá muộn có thể làm hỏng toàn bộ vụ mùa."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "The success of the crop depends on the weather.",
+          "example_vi": "Sự thành công của vụ mùa phụ thuộc vào thời tiết."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "They are planting a new crop of vegetables.",
+          "example_vi": "Họ đang trồng một vụ rau mới."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "The region is known for its cotton crop.",
+          "example_vi": "Khu vực này nổi tiếng với vụ mùa bông của nó."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "The crop yield was lower than expected.",
+          "example_vi": "Sản lượng vụ mùa thấp hơn dự kiến."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "This year's crop of apples is particularly sweet.",
+          "example_vi": "Vụ mùa táo năm nay đặc biệt ngọt."
+        },
+        {
+          "meaning_vi": "vụ mùa",
+          "example_en": "The farmer surveyed his corn crop.",
+          "example_vi": "Người nông dân đã xem xét vụ mùa ngô của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'vụ mùa' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vụ mùa' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "crop",
+      "normalized_word": "crop",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The wheat crop was excellent this year.",
+      "example_vi_clean": "Vụ mùa lúa mì năm nay rất tốt."
+    },
+    {
+      "id": 25828,
+      "quiz_meaning_vi": "con quạ",
+      "meaning_vi_clean": "con quạ",
+      "examples_clean": [
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "A crow landed on the roof.",
+          "example_vi": "Một con quạ đã đậu trên mái nhà."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "The crow has black feathers.",
+          "example_vi": "Con quạ có bộ lông màu đen."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "We saw a flock of crows flying overhead.",
+          "example_vi": "Chúng tôi thấy một đàn quạ bay trên đầu."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "The crow's call is a harsh caw.",
+          "example_vi": "Tiếng kêu của con quạ là tiếng quạ quạ khó nghe."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "Crows are known for their intelligence.",
+          "example_vi": "Quạ nổi tiếng vì sự thông minh của chúng."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "A single crow sat on the scarecrow.",
+          "example_vi": "Một con quạ đơn độc ngồi trên bù nhìn."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "The farmer tried to scare away the crows from his crops.",
+          "example_vi": "Người nông dân cố gắng xua đuổi lũ quạ khỏi mùa màng của mình."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "The crow is a common sight in many parts of the world.",
+          "example_vi": "Quạ là một cảnh tượng phổ biến ở nhiều nơi trên thế giới."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "The crow pecked at the discarded food.",
+          "example_vi": "Con quạ mổ vào thức ăn bị bỏ đi."
+        },
+        {
+          "meaning_vi": "con quạ",
+          "example_en": "Legends often associate the crow with bad omens.",
+          "example_vi": "Các truyền thuyết thường liên kết quạ với điềm xấu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'con quạ' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'con quạ' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "crow",
+      "normalized_word": "crow",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A crow landed on the roof.",
+      "example_vi_clean": "Một con quạ đã đậu trên mái nhà."
+    },
+    {
+      "id": 25830,
+      "quiz_meaning_vi": "sự nghiền nát",
+      "meaning_vi_clean": "sự nghiền nát",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "The crush of people at the concert was overwhelming.",
+          "example_vi": "Sự chen chúc của đám đông tại buổi hòa nhạc thật choáng ngợp."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "He felt the crush of the crowd as he tried to get to the exit.",
+          "example_vi": "Anh ấy cảm thấy sự chen chúc của đám đông khi cố gắng đến lối ra."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "The sudden crush of fans caused a stampede.",
+          "example_vi": "Sự chen lấn đột ngột của người hâm mộ đã gây ra một cuộc giẫm đạp."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "She experienced the crush of the market during the sale.",
+          "example_vi": "Cô ấy đã trải qua sự chen chúc của thị trường trong đợt giảm giá."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "The weight caused a crush on the delicate structure.",
+          "example_vi": "Trọng lượng đã gây ra sự đè nén lên cấu trúc mỏng manh."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "He was caught in the crush of commuters.",
+          "example_vi": "Anh ấy bị kẹt trong đám đông người đi làm."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "The crush of bodies made it difficult to breathe.",
+          "example_vi": "Sự chen chúc của cơ thể khiến việc thở trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "The crush of the audience was intense.",
+          "example_vi": "Sự chen chúc của khán giả thật dữ dội."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "He felt the crush of the crowd pushing him forward.",
+          "example_vi": "Anh ấy cảm thấy sự chen chúc của đám đông đẩy anh ấy về phía trước."
+        },
+        {
+          "meaning_vi": "sự nghiền nát",
+          "example_en": "The crush of people trying to get tickets was unbelievable.",
+          "example_vi": "Sự chen lấn của người dân cố gắng lấy vé thật khó tin."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'sự nghiền nát' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự nghiền nát' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "crush",
+      "normalized_word": "crush",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The crush of people at the concert was overwhelming.",
+      "example_vi_clean": "Sự chen chúc của đám đông tại buổi hòa nhạc thật choáng ngợp."
+    },
+    {
+      "id": 25834,
+      "quiz_meaning_vi": "bài thuốc",
+      "meaning_vi_clean": "bài thuốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "There is no known cure for the common cold.",
+          "example_vi": "Không có bài thuốc nào được biết đến cho bệnh cảm lạnh thông thường."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "Scientists are searching for a cure for cancer.",
+          "example_vi": "Các nhà khoa học đang tìm kiếm bài thuốc chữa bệnh ung thư."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "The doctor offered a cure for her persistent cough.",
+          "example_vi": "Bác sĩ đã đưa ra một bài thuốc cho cơn ho dai dẳng của cô ấy."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "This herbal remedy is believed to be a cure for insomnia.",
+          "example_vi": "Bài thuốc thảo dược này được cho là phương pháp chữa mất ngủ."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "They are working on a cure for the new virus.",
+          "example_vi": "Họ đang nghiên cứu một bài thuốc cho loại virus mới."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "The search for a cure continues.",
+          "example_vi": "Cuộc tìm kiếm bài thuốc vẫn tiếp tục."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "He hopes this treatment will be the cure.",
+          "example_vi": "Anh ấy hy vọng phương pháp điều trị này sẽ là bài thuốc."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "A cure for this disease is still elusive.",
+          "example_vi": "Một bài thuốc chữa căn bệnh này vẫn còn khó nắm bắt."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "The patient is looking for a permanent cure.",
+          "example_vi": "Bệnh nhân đang tìm kiếm một bài thuốc chữa trị vĩnh viễn."
+        },
+        {
+          "meaning_vi": "bài thuốc",
+          "example_en": "This ancient remedy is said to be a cure for many ailments.",
+          "example_vi": "Bài thuốc cổ xưa này được cho là phương pháp chữa nhiều bệnh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'bài thuốc' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bài thuốc' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "cure",
+      "normalized_word": "cure",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is no known cure for the common cold.",
+      "example_vi_clean": "Không có bài thuốc nào được biết đến cho bệnh cảm lạnh thông thường."
+    },
+    {
+      "id": 25843,
+      "quiz_meaning_vi": "màn cửa",
+      "meaning_vi_clean": "màn cửa",
+      "examples_clean": [
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "She opened the curtains to let in the sunlight.",
+          "example_vi": "Cô ấy đã kéo rèm cửa để ánh nắng chiếu vào."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "The curtains were made of heavy velvet.",
+          "example_vi": "Những tấm rèm được làm bằng vải nhung dày."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "He drew the curtains to block out the light.",
+          "example_vi": "Anh ấy đã kéo rèm cửa để chặn ánh sáng."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "The curtains had a floral pattern.",
+          "example_vi": "Những tấm rèm có họa tiết hoa."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "We need to buy new curtains for the living room.",
+          "example_vi": "Chúng ta cần mua rèm cửa mới cho phòng khách."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "The curtains were slightly dusty.",
+          "example_vi": "Những tấm rèm hơi bụi."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "She hung the curtains herself.",
+          "example_vi": "Cô ấy đã tự treo những tấm rèm."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "The curtains were tied back with tassels.",
+          "example_vi": "Những tấm rèm được buộc lại bằng dây tua."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "He adjusted the curtains to get a better view.",
+          "example_vi": "Anh ấy điều chỉnh rèm cửa để có tầm nhìn tốt hơn."
+        },
+        {
+          "meaning_vi": "màn cửa",
+          "example_en": "The curtains were a deep shade of blue.",
+          "example_vi": "Những tấm rèm có màu xanh đậm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'màn cửa' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'màn cửa' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "curtain",
+      "normalized_word": "curtain",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She opened the curtains to let in the sunlight.",
+      "example_vi_clean": "Cô ấy đã kéo rèm cửa để ánh nắng chiếu vào."
+    },
+    {
+      "id": 25845,
+      "quiz_meaning_vi": "đệm",
+      "meaning_vi_clean": "đệm",
+      "examples_clean": [
+        {
+          "meaning_vi": "đệm",
+          "example_en": "She sat on a soft cushion.",
+          "example_vi": "Cô ấy ngồi trên một chiếc đệm mềm."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "The chair had a comfortable cushion.",
+          "example_vi": "Chiếc ghế có một chiếc đệm thoải mái."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "He placed a cushion on the floor.",
+          "example_vi": "Anh ấy đặt một chiếc đệm trên sàn nhà."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "The sofa was covered in colorful cushions.",
+          "example_vi": "Chiếc ghế sofa được phủ đầy những chiếc đệm đầy màu sắc."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "She leaned back against the cushion.",
+          "example_vi": "Cô ấy ngả lưng vào chiếc đệm."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "The cushion provided extra support.",
+          "example_vi": "Chiếc đệm cung cấp thêm sự hỗ trợ."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "He bought a new cushion for his armchair.",
+          "example_vi": "Anh ấy đã mua một chiếc đệm mới cho ghế bành của mình."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "The cushion was filled with feathers.",
+          "example_vi": "Chiếc đệm được nhồi bằng lông vũ."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "She used a cushion to prop up her back.",
+          "example_vi": "Cô ấy dùng một chiếc đệm để đỡ lưng."
+        },
+        {
+          "meaning_vi": "đệm",
+          "example_en": "The cushion had a removable cover.",
+          "example_vi": "Chiếc đệm có vỏ có thể tháo rời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'đệm' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đệm' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "cushion",
+      "normalized_word": "cushion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She sat on a soft cushion.",
+      "example_vi_clean": "Cô ấy ngồi trên một chiếc đệm mềm."
+    },
+    {
+      "id": 25847,
+      "quiz_meaning_vi": "vết cắt",
+      "meaning_vi_clean": "vết cắt",
+      "examples_clean": [
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "He got a deep cut on his finger.",
+          "example_vi": "Anh ấy bị một vết cắt sâu trên ngón tay."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "The surgeon made a small cut.",
+          "example_vi": "Bác sĩ phẫu thuật đã tạo ra một vết cắt nhỏ."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "Be careful not to get a cut from the knife.",
+          "example_vi": "Hãy cẩn thận để không bị dao cắt."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "The cut on her leg is healing well.",
+          "example_vi": "Vết cắt trên chân cô ấy đang lành tốt."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "He applied antiseptic to the cut.",
+          "example_vi": "Anh ấy đã bôi thuốc sát trùng lên vết cắt."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "The cut required stitches.",
+          "example_vi": "Vết cắt cần phải khâu."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "She showed me the cut on her hand.",
+          "example_vi": "Cô ấy đã cho tôi xem vết cắt trên tay."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "The paper gave me a nasty cut.",
+          "example_vi": "Tờ giấy đã làm tôi bị một vết cắt khó chịu."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "The doctor cleaned the cut thoroughly.",
+          "example_vi": "Bác sĩ đã làm sạch vết cắt một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "vết cắt",
+          "example_en": "He bandaged the cut to prevent infection.",
+          "example_vi": "Anh ấy đã băng vết cắt để ngăn ngừa nhiễm trùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'vết cắt' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vết cắt' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "cut",
+      "normalized_word": "cut",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He got a deep cut on his finger.",
+      "example_vi_clean": "Anh ấy bị một vết cắt sâu trên ngón tay."
+    },
+    {
+      "id": 25848,
+      "quiz_meaning_vi": "sơ yếu lý lịch",
+      "meaning_vi_clean": "sơ yếu lý lịch",
+      "examples_clean": [
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "Please submit your CV with your application.",
+          "example_vi": "Vui lòng nộp sơ yếu lý lịch của bạn cùng với đơn đăng ký."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "Her CV highlights her extensive work experience.",
+          "example_vi": "Sơ yếu lý lịch của cô ấy nêu bật kinh nghiệm làm việc dày dặn của cô ấy."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "He updated his CV before applying for the job.",
+          "example_vi": "Anh ấy đã cập nhật sơ yếu lý lịch của mình trước khi nộp đơn xin việc."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "The company requested a CV from all candidates.",
+          "example_vi": "Công ty đã yêu cầu sơ yếu lý lịch từ tất cả các ứng viên."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "Make sure your CV is well-organized and easy to read.",
+          "example_vi": "Hãy đảm bảo sơ yếu lý lịch của bạn được tổ chức tốt và dễ đọc."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "The recruiter reviewed her CV carefully.",
+          "example_vi": "Người tuyển dụng đã xem xét cẩn thận sơ yếu lý lịch của cô ấy."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "He attached his CV to the email.",
+          "example_vi": "Anh ấy đã đính kèm sơ yếu lý lịch của mình vào email."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "The CV included details of her education and skills.",
+          "example_vi": "Sơ yếu lý lịch bao gồm chi tiết về học vấn và kỹ năng của cô ấy."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "She sent out dozens of CVs.",
+          "example_vi": "Cô ấy đã gửi hàng tá sơ yếu lý lịch."
+        },
+        {
+          "meaning_vi": "sơ yếu lý lịch",
+          "example_en": "The CV is a crucial part of the job application process.",
+          "example_vi": "Sơ yếu lý lịch là một phần quan trọng của quá trình nộp đơn xin việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'sơ yếu lý lịch' theo đúng từ loại danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sơ yếu lý lịch' và cách dùng trong cả 10 ví dụ đều đúng với từ loại danh từ."
+      },
+      "word": "cv",
+      "normalized_word": "cv",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please submit your CV with your application.",
+      "example_vi_clean": "Vui lòng nộp sơ yếu lý lịch của bạn cùng với đơn đăng ký."
+    }
+  ]
+}

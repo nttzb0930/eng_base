@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tiến độ tiếng Anh của bạn — Dashboard Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  /* ===== Design tokens ===== */
+  :root {
+    --bg: #F6F8FB;
+    --surface: #FFFFFF;
+    --surface-2: #F8FAFC;
+    --border: #E6EAF0;
+    --border-strong: #D5DBE4;
+    --text: #0B1220;
+    --text-2: #5A6478;
+    --text-3: #8A93A6;
+    --brand: #10B981;
+    --brand-2: #059669;
+    --brand-soft: #ECFDF5;
+    --blue: #3B82F6;
+    --blue-soft: #EFF6FF;
+    --pink: #F43F5E;
+    --pink-soft: #FFF1F2;
+    --orange: #F59E0B;
+    --orange-soft: #FFFBEB;
+    --purple: #8B5CF6;
+    --purple-soft: #F5F3FF;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow: 0 4px 16px -4px rgba(15, 23, 42, 0.06), 0 2px 6px -2px rgba(15, 23, 42, 0.04);
+    --shadow-lg: 0 24px 48px -12px rgba(15, 23, 42, 0.18);
+    --radius: 16px;
+    --radius-sm: 10px;
+    --radius-lg: 24px;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px 64px;
+  }
+
+  /* ===== Top bar ===== */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 32px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .brand-mark {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    display: grid; place-items: center;
+    color: #fff;
+    box-shadow: 0 8px 20px -6px rgba(16,185,129,0.5);
+  }
+  .nav { display: flex; gap: 4px; }
+  .nav a {
+    color: var(--text-2);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all .15s;
+  }
+  .nav a:hover { background: var(--surface-2); color: var(--text); }
+  .nav a.active { color: var(--brand-2); background: var(--brand-soft); }
+  .topbar-right { display: flex; align-items: center; gap: 12px; }
+  .streak-pill {
+    display: flex; align-items: center; gap: 6px;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #FFF7ED, #FFEDD5);
+    color: #C2410C;
+    font-weight: 600; font-size: 13px;
+    border-radius: 999px;
+  }
+  .avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366F1, #8B5CF6);
+    color: #fff;
+    display: grid; place-items: center;
+    font-weight: 600; font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px -4px rgba(139,92,246,0.5);
+  }
+
+  /* ===== Hero greeting ===== */
+  .greeting {
+    margin-bottom: 24px;
+  }
+  .greeting h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .greeting p {
+    color: var(--text-2);
+    margin: 0;
+    font-size: 15px;
+  }
+  .greeting .highlight {
+    color: var(--brand-2);
+    font-weight: 600;
+  }
+
+  /* ===== Hero CTA card ===== */
+  .hero-cta {
+    background: linear-gradient(135deg, #064E3B 0%, #047857 50%, #10B981 100%);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 20px 50px -20px rgba(16,185,129,0.4);
+  }
+  .hero-cta::before {
+    content: '';
+    position: absolute;
+    right: -40px; top: -40px;
+    width: 240px; height: 240px;
+    background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 60%);
+    border-radius: 50%;
+  }
+  .hero-cta::after {
+    content: '';
+    position: absolute;
+    right: 80px; bottom: -60px;
+    width: 180px; height: 180px;
+    background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+    border-radius: 50%;
+  }
+  .hero-left { position: relative; z-index: 1; }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .hero-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .hero-sub {
+    font-size: 14px;
+    opacity: 0.85;
+    margin: 0;
+  }
+  .hero-actions { display: flex; gap: 10px; position: relative; z-index: 1; }
+  .btn-primary {
+    background: #fff;
+    color: var(--brand-2);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: transform .15s, box-shadow .15s;
+    box-shadow: 0 6px 20px -6px rgba(0,0,0,0.2);
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 24px -6px rgba(0,0,0,0.25); }
+  .btn-ghost {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.2); }
+
+  /* ===== Stat grid ===== */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+  .stat-card .accent-bar {
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  }
+  .stat-card.blue .accent-bar { background: var(--blue); }
+  .stat-card.green .accent-bar { background: var(--brand); }
+  .stat-card.pink .accent-bar { background: var(--pink); }
+  .stat-card.orange .accent-bar { background: var(--orange); }
+
+  .stat-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .stat-label {
+    font-size: 12px; font-weight: 600;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .stat-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: grid; place-items: center;
+  }
+  .stat-card.blue .stat-icon { background: var(--blue-soft); color: var(--blue); }
+  .stat-card.green .stat-icon { background: var(--brand-soft); color: var(--brand-2); }
+  .stat-card.pink .stat-icon { background: var(--pink-soft); color: var(--pink); }
+  .stat-card.orange .stat-icon { background: var(--orange-soft); color: var(--orange); }
+
+  .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-meta {
+    font-size: 13px;
+    color: var(--text-2);
+  }
+  .stat-meta strong { color: var(--text); font-weight: 600; }
+  .stat-delta {
+    display: inline-flex; align-items: center; gap: 2px;
+    font-size: 12px; font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 6px;
+    margin-left: 4px;
+  }
+  .stat-delta.up { background: var(--brand-soft); color: var(--brand-2); }
+  .stat-delta.down { background: var(--pink-soft); color: var(--pink); }
+
+  /* ===== Two-col row ===== */
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+  }
+  .card-head {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .card-title {
+    font-size: 16px; font-weight: 700;
+    margin: 0 0 2px;
+  }
+  .card-sub {
+    font-size: 13px; color: var(--text-2); margin: 0;
+  }
+  .card-head .badge {
+    font-size: 12px; font-weight: 600;
+    padding: 4px 10px; border-radius: 999px;
+    background: var(--brand-soft); color: var(--brand-2);
+  }
+  .card-head .badge.neutral { background: var(--surface-2); color: var(--text-2); }
+
+  /* ===== Activity chart ===== */
+  .activity-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    height: 160px;
+    padding: 12px 0 4px;
+    position: relative;
+  }
+  .bar-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    position: relative;
+  }
+  .bar-stack {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2px;
+    position: relative;
+  }
+  .bar {
+    width: 100%;
+    border-radius: 6px 6px 4px 4px;
+    transition: opacity .2s;
+  }
+  .bar:hover { opacity: 0.8; }
+  .bar.learn { background: linear-gradient(180deg, var(--blue), #60A5FA); }
+  .bar.review { background: linear-gradient(180deg, var(--brand), #34D399); }
+  .bar-day {
+    font-size: 11px;
+    color: var(--text-3);
+    font-weight: 500;
+    text-align: center;
+  }
+  .bar-col.today .bar-day {
+    color: var(--brand-2);
+    font-weight: 700;
+  }
+  .bar-tooltip {
+    position: absolute;
+    top: -28px; left: 50%; transform: translateX(-50%);
+    background: var(--text);
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s;
+  }
+  .bar-col:hover .bar-tooltip { opacity: 1; }
+  .chart-legend {
+    display: flex; gap: 16px;
+    font-size: 12px; color: var(--text-2);
+    margin-top: 12px;
+  }
+  .chart-legend span {
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .chart-legend .dot {
+    width: 8px; height: 8px; border-radius: 2px;
+  }
+
+  /* ===== Recent sessions ===== */
+  .session-list { display: flex; flex-direction: column; gap: 4px; }
+  .session-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    transition: background .15s;
+    cursor: pointer;
+  }
+  .session-item:hover { background: var(--surface-2); }
+  .session-icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: grid; place-items: center;
+    flex-shrink: 0;
+  }
+  .session-icon.flash { background: var(--orange-soft); color: var(--orange); }
+  .session-icon.listen { background: var(--purple-soft); color: var(--purple); }
+  .session-icon.fill { background: var(--blue-soft); color: var(--blue); }
+  .session-info { flex: 1; min-width: 0; }
+  .session-name { font-size: 14px; font-weight: 600; margin: 0; }
+  .session-time { font-size: 12px; color: var(--text-3); margin: 1px 0 0; }
+  .session-score {
+    font-size: 13px; font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .session-score.good { color: var(--brand-2); }
+  .session-score.mid { color: var(--orange); }
+  .session-score.bad { color: var(--pink); }
+
+  /* ===== Recommendations ===== */
+  .rec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .rec-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+  }
+  .rec-card:hover {
+    border-color: var(--brand);
+    box-shadow: 0 12px 24px -8px rgba(16,185,129,0.2);
+    transform: translateY(-2px);
+  }
+  .rec-card.featured {
+    background: linear-gradient(135deg, var(--brand-soft), #fff);
+    border-color: rgba(16,185,129,0.3);
+  }
+  .rec-tag {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+    margin-bottom: 12px;
+  }
+  .rec-card.featured .rec-tag { color: var(--brand-2); }
+  .rec-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    margin-bottom: 14px;
+  }
+  .rec-card:nth-child(1) .rec-icon { background: var(--blue-soft); color: var(--blue); }
+  .rec-card:nth-child(2) .rec-icon { background: var(--orange-soft); color: var(--orange); }
+  .rec-card:nth-child(3) .rec-icon { background: var(--purple-soft); color: var(--purple); }
+  .rec-title {
+    font-size: 16px; font-weight: 700;
+    margin: 0 0 6px;
+  }
+  .rec-desc {
+    font-size: 13px; color: var(--text-2);
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+  .rec-progress {
+    height: 6px;
+    background: var(--surface-2);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .rec-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    border-radius: 999px;
+  }
+  .rec-cta {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 13px; font-weight: 600;
+    color: var(--brand-2);
+    margin-top: 8px;
+  }
+
+  /* ===== CEFR ===== */
+  .cefr-row {
+    display: flex; align-items: center; gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .cefr-row:last-child { border-bottom: none; }
+  .cefr-level {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    display: grid; place-items: center;
+    font-weight: 700; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .cefr-row.current .cefr-level {
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    color: #fff;
+    box-shadow: 0 6px 16px -4px rgba(16,185,129,0.4);
+  }
+  .cefr-row.locked .cefr-level {
+    background: var(--surface-2);
+    color: var(--text-3);
+  }
+  .cefr-info { flex: 1; min-width: 0; }
+  .cefr-name {
+    font-size: 14px; font-weight: 600;
+    margin: 0 0 4px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .cefr-row.locked .cefr-name { color: var(--text-3); }
+  .cefr-bar {
+    height: 6px;
+    background: var(--surface-2);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .cefr-row.locked .cefr-bar { opacity: 0.5; }
+  .cefr-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    border-radius: 999px;
+  }
+  .cefr-pct {
+    font-size: 13px; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    min-width: 40px;
+    text-align: right;
+  }
+  .cefr-row.current .cefr-pct { color: var(--brand-2); }
+  .cefr-row.locked .cefr-pct { color: var(--text-3); }
+  .cefr-meta {
+    font-size: 12px; color: var(--text-3);
+  }
+
+  /* ===== Empty state - new user card ===== */
+  .new-user-card {
+    background: linear-gradient(135deg, #fff 0%, var(--brand-soft) 100%);
+    border: 1px dashed rgba(16,185,129,0.4);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+  }
+  .new-user-icon {
+    width: 64px; height: 64px;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    border-radius: 16px;
+    display: grid; place-items: center;
+    color: #fff;
+    box-shadow: 0 12px 24px -8px rgba(16,185,129,0.4);
+  }
+  .new-user-title {
+    font-size: 18px; font-weight: 700;
+    margin: 0 0 6px;
+  }
+  .new-user-sub {
+    font-size: 14px; color: var(--text-2);
+    margin: 0 0 20px;
+  }
+  .new-user-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--brand);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px -6px rgba(16,185,129,0.4);
+    transition: transform .15s;
+  }
+  .new-user-cta:hover { transform: translateY(-1px); }
+
+  /* ===== Toggle (mock for state switch) ===== */
+  .state-toggle {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    background: var(--text);
+    color: #fff;
+    border-radius: 999px;
+    padding: 6px;
+    display: flex;
+    box-shadow: var(--shadow-lg);
+    z-index: 10;
+  }
+  .state-toggle button {
+    background: transparent;
+    color: rgba(255,255,255,0.6);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .15s;
+  }
+  .state-toggle button.active {
+    background: var(--brand);
+    color: #fff;
+  }
+
+  /* Section visibility */
+  .state-section { display: none; }
+  .state-section.active { display: block; }
+
+  .section-title {
+    font-size: 18px; font-weight: 700;
+    margin: 0 0 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-title .count {
+    font-size: 12px; font-weight: 600;
+    color: var(--text-3);
+    background: var(--surface-2);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 900px) {
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    .row-2 { grid-template-columns: 1fr; }
+    .rec-grid { grid-template-columns: 1fr; }
+    .nav { display: none; }
+    .hero-cta { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      Lexi · Học tiếng Anh
+    </div>
+    <nav class="nav">
+      <a href="#" class="active">Bảng học tập</a>
+      <a href="#">Từ vựng</a>
+      <a href="#">Luyện tập</a>
+      <a href="#">Thống kê</a>
+    </nav>
+    <div class="topbar-right">
+      <div class="streak-pill">
+        <span>🔥</span>
+        <span>5 ngày</span>
+      </div>
+      <div class="avatar" title="Minh">M</div>
+    </div>
+  </header>
+
+  <!-- ===== Greeting ===== -->
+  <div class="greeting">
+    <h1>Chào buổi chiều, Minh 👋</h1>
+    <p>Bạn đang ở <span class="highlight">A1 · Sơ cấp</span>. Hôm nay có <strong>12 từ</strong> cần ôn — chỉ 8 phút thôi!</p>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- STATE 1: User đã có dữ liệu (mock data)     -->
+  <!-- ============================================ -->
+  <div id="state-active" class="state-section active">
+
+    <!-- Hero CTA -->
+    <div class="hero-cta">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Phiên ôn hôm nay · 8 phút
+        </div>
+        <h2 class="hero-title">12 từ đang chờ bạn ôn lại</h2>
+        <p class="hero-sub">Hoàn thành hôm nay để giữ streak 🔥 và tránh quên từ.</p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn-primary">
+          Bắt đầu ôn ngay
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <button class="btn-ghost">Để sau</button>
+      </div>
+    </div>
+
+    <!-- Stat grid -->
+    <div class="stat-grid">
+      <div class="stat-card blue">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Từ đã học</div>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+        </div>
+        <div class="stat-value">87<span style="color: var(--text-3); font-size: 16px; font-weight: 500;"> /600</span></div>
+        <div class="stat-meta">14.5% chương trình A1 <span class="stat-delta up">+12 tuần này</span></div>
+      </div>
+
+      <div class="stat-card green">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Đã thành thạo</div>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+        </div>
+        <div class="stat-value">23</div>
+        <div class="stat-meta">~26% trong số đã học <span class="stat-delta up">+4 tuần này</span></div>
+      </div>
+
+      <div class="stat-card pink">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Cần ôn hôm nay</div>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+          </div>
+        </div>
+        <div class="stat-value">12</div>
+        <div class="stat-meta">Ưu tiên cao — đã đến hạn <span class="stat-delta down">+3 so hôm qua</span></div>
+      </div>
+
+      <div class="stat-card orange">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Từ còn yếu</div>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          </div>
+        </div>
+        <div class="stat-value">8</div>
+        <div class="stat-meta">Sai ≥ 3 lần tuần này <span class="stat-delta down">Cần luyện thêm</span></div>
+      </div>
+    </div>
+
+    <!-- Activity + Recent sessions -->
+    <div class="row-2">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3 class="card-title">Hoạt động 7 ngày qua</h3>
+            <p class="card-sub">Số phiên học và từ đã ôn mỗi ngày</p>
+          </div>
+          <span class="badge">5/7 ngày học</span>
+        </div>
+        <div class="activity-chart">
+          <!-- Mon -->
+          <div class="bar-col">
+            <div class="bar-tooltip">8 từ</div>
+            <div class="bar-stack">
+              <div class="bar review" style="height: 18%"></div>
+              <div class="bar learn" style="height: 32%"></div>
+            </div>
+            <div class="bar-day">T2</div>
+          </div>
+          <!-- Tue -->
+          <div class="bar-col">
+            <div class="bar-tooltip">0 từ</div>
+            <div class="bar-stack">
+              <div class="bar" style="height: 4%; background: var(--border);"></div>
+            </div>
+            <div class="bar-day">T3</div>
+          </div>
+          <!-- Wed -->
+          <div class="bar-col">
+            <div class="bar-tooltip">14 từ</div>
+            <div class="bar-stack">
+              <div class="bar review" style="height: 28%"></div>
+              <div class="bar learn" style="height: 44%"></div>
+            </div>
+            <div class="bar-day">T4</div>
+          </div>
+          <!-- Thu -->
+          <div class="bar-col">
+            <div class="bar-tooltip">0 từ</div>
+            <div class="bar-stack">
+              <div class="bar" style="height: 4%; background: var(--border);"></div>
+            </div>
+            <div class="bar-day">T5</div>
+          </div>
+          <!-- Fri -->
+          <div class="bar-col">
+            <div class="bar-tooltip">22 từ</div>
+            <div class="bar-stack">
+              <div class="bar review" style="height: 38%"></div>
+              <div class="bar learn" style="height: 60%"></div>
+            </div>
+            <div class="bar-day">T6</div>
+          </div>
+          <!-- Sat -->
+          <div class="bar-col">
+            <div class="bar-tooltip">18 từ</div>
+            <div class="bar-stack">
+              <div class="bar review" style="height: 32%"></div>
+              <div class="bar learn" style="height: 48%"></div>
+            </div>
+            <div class="bar-day">T7</div>
+          </div>
+          <!-- Sun -->
+          <div class="bar-col today">
+            <div class="bar-tooltip">0 từ · hôm nay</div>
+            <div class="bar-stack">
+              <div class="bar" style="height: 4%; background: var(--brand-soft); border: 1px dashed var(--brand);"></div>
+            </div>
+            <div class="bar-day">CN</div>
+          </div>
+        </div>
+        <div class="chart-legend">
+          <span><span class="dot" style="background: #60A5FA"></span>Từ mới học</span>
+          <span><span class="dot" style="background: #34D399"></span>Từ ôn tập</span>
+          <span><span class="dot" style="background: var(--border)"></span>Nghỉ</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3 class="card-title">Phiên học gần đây</h3>
+            <p class="card-sub">Lịch sử luyện tập của bạn</p>
+          </div>
+          <span class="badge neutral">Xem tất cả</span>
+        </div>
+        <div class="session-list">
+          <div class="session-item">
+            <div class="session-icon flash">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="session-info">
+              <p class="session-name">Flashcard · 20 từ</p>
+              <p class="session-time">Hôm qua · 21:34</p>
+            </div>
+            <span class="session-score good">92%</span>
+          </div>
+          <div class="session-item">
+            <div class="session-icon listen">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <div class="session-info">
+              <p class="session-name">Nghe · 15 câu</p>
+              <p class="session-time">2 ngày trước · 19:12</p>
+            </div>
+            <span class="session-score mid">78%</span>
+          </div>
+          <div class="session-item">
+            <div class="session-icon fill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <div class="session-info">
+              <p class="session-name">Điền từ · 10 câu</p>
+              <p class="session-time">3 ngày trước · 08:45</p>
+            </div>
+            <span class="session-score good">90%</span>
+          </div>
+          <div class="session-item">
+            <div class="session-icon flash">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="session-info">
+              <p class="session-name">Flashcard · 25 từ</p>
+              <p class="session-time">4 ngày trước · 22:10</p>
+            </div>
+            <span class="session-score bad">64%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendations -->
+    <h3 class="section-title">Nên học gì tiếp <span class="count">3 gợi ý</span></h3>
+    <div class="rec-grid">
+      <div class="rec-card featured">
+        <div class="rec-tag">Đề xuất cho bạn</div>
+        <div class="rec-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+        </div>
+        <h4 class="rec-title">Ôn tập 12 từ đến hạn</h4>
+        <p class="rec-desc">Dùng spaced repetition để ghi nhớ lâu hơn. Chỉ 8 phút.</p>
+        <div class="rec-progress"><div class="rec-progress-fill" style="width: 0%"></div></div>
+        <div class="rec-cta">
+          Bắt đầu ôn
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-tag">Cải thiện điểm yếu</div>
+        <div class="rec-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h4 class="rec-title">Sửa 8 từ yếu</h4>
+        <p class="rec-desc">Luyện sâu các từ bạn hay sai: <em>accommodate, schedule…</em></p>
+        <div class="rec-cta">
+          Luyện từ yếu
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-tag">Tiếp tục chương trình</div>
+        <div class="rec-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <h4 class="rec-title">Tiếp tục bài 7 · A1</h4>
+        <p class="rec-desc">Family & relationships — 24 từ mới, 6 ngữ pháp.</p>
+        <div class="rec-progress"><div class="rec-progress-fill" style="width: 45%"></div></div>
+        <div class="rec-cta" style="color: var(--text-2);">
+          Hoàn thành 45%
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- CEFR -->
+    <div class="card" style="margin-top: 16px;">
+      <div class="card-head">
+        <div>
+          <h3 class="card-title">Tiến độ CEFR</h3>
+          <p class="card-sub">Lộ trình học theo khung châu Âu</p>
+        </div>
+        <span class="badge">Đang ở A1</span>
+      </div>
+
+      <div class="cefr-row current">
+        <div class="cefr-level">A1</div>
+        <div class="cefr-info">
+          <p class="cefr-name">Sơ cấp <span class="cefr-meta">87/600 từ · 23 thành thạo</span></p>
+          <div class="cefr-bar"><div class="cefr-bar-fill" style="width: 14.5%"></div></div>
+        </div>
+        <div class="cefr-pct">14.5%</div>
+      </div>
+
+      <div class="cefr-row locked">
+        <div class="cefr-level">A2</div>
+        <div class="cefr-info">
+          <p class="cefr-name">Sơ cấp cao <span class="cefr-meta">0/800 từ · sẽ mở khi A1 đạt 80%</span></p>
+          <div class="cefr-bar"><div class="cefr-bar-fill" style="width: 0%"></div></div>
+        </div>
+        <div class="cefr-pct">🔒</div>
+      </div>
+
+      <div class="cefr-row locked">
+        <div class="cefr-level">B1</div>
+        <div class="cefr-info">
+          <p class="cefr-name">Trung cấp <span class="cefr-meta">0/900 từ</span></p>
+          <div class="cefr-bar"><div class="cefr-bar-fill" style="width: 0%"></div></div>
+        </div>
+        <div class="cefr-pct">🔒</div>
+      </div>
+
+      <div class="cefr-row locked">
+        <div class="cefr-level">B2</div>
+        <div class="cefr-info">
+          <p class="cefr-name">Trung cấp cao <span class="cefr-meta">0/700 từ</span></p>
+          <div class="cefr-bar"><div class="cefr-bar-fill" style="width: 0%"></div></div>
+        </div>
+        <div class="cefr-pct">🔒</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================ -->
+  <!-- STATE 2: User mới, chưa có dữ liệu         -->
+  <!-- ============================================ -->
+  <div id="state-new" class="state-section">
+
+    <div class="new-user-card">
+      <div class="new-user-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <h2 class="new-user-title">Bắt đầu hành trình của bạn</h2>
+      <p class="new-user-sub">Chỉ 10 phút/ngày · 600 từ đầu tiên trong 4 tháng.<br/>Dùng flashcard, nghe, điền từ để ghi nhớ sâu.</p>
+      <a href="#" class="new-user-cta">
+        Làm bài test đầu vào
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <p style="font-size: 12px; color: var(--text-3); margin: 16px 0 0;">Hoặc <a href="#" style="color: var(--brand-2); font-weight: 600; text-decoration: none;">bỏ qua, bắt đầu với 20 từ A1 đầu tiên →</a></p>
+    </div>
+
+    <!-- Empty stats (smaller, friendlier) -->
+    <div class="stat-grid" style="margin-top: 16px;">
+      <div class="stat-card blue" style="opacity: 0.6;">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Từ đã học</div>
+          <div class="stat-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        </div>
+        <div class="stat-value" style="color: var(--text-3);">0</div>
+        <div class="stat-meta">Học từ đầu tiên để bắt đầu</div>
+      </div>
+      <div class="stat-card green" style="opacity: 0.6;">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Đã thành thạo</div>
+          <div class="stat-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+        <div class="stat-value" style="color: var(--text-3);">0</div>
+        <div class="stat-meta">Sau 3 lần ôn đúng liên tiếp</div>
+      </div>
+      <div class="stat-card pink" style="opacity: 0.6;">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Cần ôn hôm nay</div>
+          <div class="stat-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg></div>
+        </div>
+        <div class="stat-value" style="color: var(--text-3);">0</div>
+        <div class="stat-meta">Hiện chưa có lịch ôn</div>
+      </div>
+      <div class="stat-card orange" style="opacity: 0.6;">
+        <div class="accent-bar"></div>
+        <div class="stat-head">
+          <div class="stat-label">Từ còn yếu</div>
+          <div class="stat-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/></svg></div>
+        </div>
+        <div class="stat-value" style="color: var(--text-3);">0</div>
+        <div class="stat-meta">Danh sách cần cải thiện</div>
+      </div>
+    </div>
+
+    <!-- Empty chart & sessions -->
+    <div class="row-2">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3 class="card-title">Hoạt động 7 ngày qua</h3>
+            <p class="card-sub">Chưa có hoạt động nào được ghi nhận</p>
+          </div>
+        </div>
+        <div style="height: 160px; display: grid; place-items: center; color: var(--text-3); font-size: 13px;">
+          <div style="text-align: center;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4; margin-bottom: 8px;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <p style="margin: 0;">Biểu đồ sẽ xuất hiện sau phiên học đầu tiên của bạn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3 class="card-title">Phiên học gần đây</h3>
+            <p class="card-sub">Chưa có phiên học nào</p>
+          </div>
+        </div>
+        <div style="padding: 24px 0; text-align: center; color: var(--text-3); font-size: 13px;">
+          Hoàn thành bài học, bộ thẻ hoặc chế độ luyện tập<br/>để bắt đầu thống kê.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- State toggle for demo -->
+<div class="state-toggle">
+  <button class="active" onclick="switchState('active')">Đã có dữ liệu</button>
+  <button onclick="switchState('new')">User mới</button>
+</div>
+
+<script>
+  function switchState(state) {
+    document.querySelectorAll('.state-section').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.state-toggle button').forEach(el => el.classList.remove('active'));
+    document.getElementById('state-' + state).classList.add('active');
+    event.target.classList.add('active');
+    // Re-add to active button
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>

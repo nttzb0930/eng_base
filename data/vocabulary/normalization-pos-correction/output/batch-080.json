@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26767,
+      "quiz_meaning_vi": "người tàn tật",
+      "meaning_vi_clean": "người tàn tật",
+      "examples_clean": [
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "He was a cripple after the accident.",
+          "example_vi": "Anh ấy đã trở thành một người tàn tật sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "The war left many a cripple in the village.",
+          "example_vi": "Chiến tranh đã để lại nhiều người tàn tật trong ngôi làng."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "She volunteered to help the cripples at the local shelter.",
+          "example_vi": "Cô ấy tình nguyện giúp đỡ những người tàn tật tại nhà tình thương địa phương."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "As a cripple, he faced many physical barriers in the city.",
+          "example_vi": "Là một người tàn tật, anh ấy đối mặt với nhiều rào cản thể chất trong thành phố."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "The old cripple sat by the fire warming his hands.",
+          "example_vi": "Người tàn tật già ngồi bên đống lửa sưởi ấm đôi tay."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "He did not want to be treated as a helpless cripple.",
+          "example_vi": "Anh ấy không muốn bị đối xử như một người tàn tật bất lực."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "The charity provides wheelchairs for cripples.",
+          "example_vi": "Tổ chức từ thiện cung cấp xe lăn cho những người tàn tật."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "Despite being a cripple, he painted beautiful pictures with his mouth.",
+          "example_vi": "Dù là một người tàn tật, anh ấy vẫn vẽ những bức tranh tuyệt đẹp bằng miệng."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "The story is about a young cripple who learned to play the piano.",
+          "example_vi": "Câu chuyện kể về một người tàn tật trẻ tuổi đã học chơi đàn piano."
+        },
+        {
+          "meaning_vi": "người tàn tật",
+          "example_en": "He overcame the challenges of being a cripple to become a successful writer.",
+          "example_vi": "Anh ấy đã vượt qua những thử thách của một người tàn tật để trở thành một nhà văn thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ cripple và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'người tàn tật' và cả 10 ví dụ đều sử dụng từ 'cripple' làm danh từ một cách chính xác."
+      },
+      "word": "cripple",
+      "normalized_word": "cripple",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He was a cripple after the accident.",
+      "example_vi_clean": "Anh ấy đã trở thành một người tàn tật sau vụ tai nạn."
+    },
+    {
+      "id": 26777,
+      "quiz_meaning_vi": "hình lập phương",
+      "meaning_vi_clean": "hình lập phương",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "A sugar cube dissolved quickly in the hot tea.",
+          "example_vi": "Một viên đường hình lập phương tan nhanh trong tách trà nóng."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "Cut the cheese into small cubes before serving.",
+          "example_vi": "Hãy cắt phô mai thành những hình lập phương nhỏ trước khi phục vụ."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "The child is playing with a wooden cube.",
+          "example_vi": "Đứa trẻ đang chơi với một khối hình lập phương bằng gỗ."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "The ice cube melted in his glass of water.",
+          "example_vi": "Viên đá hình lập phương đã tan trong ly nước của anh ấy."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "This box is a perfect cube.",
+          "example_vi": "Chiếc hộp này là một hình lập phương hoàn hảo."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "He calculated the volume of the cube.",
+          "example_vi": "Anh ấy đã tính thể tích của hình lập phương."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "The building looks like a giant glass cube.",
+          "example_vi": "Tòa nhà trông giống như một hình lập phương bằng kính khổng lồ."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "Chop the potatoes into cubes of equal size.",
+          "example_vi": "Hãy thái khoai tây thành các hình lập phương có kích thước bằng nhau."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "She solved the Rubik's cube in under a minute.",
+          "example_vi": "Cô ấy đã giải khối hình lập phương Rubik trong chưa đầy một phút."
+        },
+        {
+          "meaning_vi": "hình lập phương",
+          "example_en": "Draw a cube on the piece of paper.",
+          "example_vi": "Hãy vẽ một hình lập phương lên tờ giấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ cube và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hình lập phương' và cả 10 ví dụ đều sử dụng từ 'cube' làm danh từ một cách chính xác."
+      },
+      "word": "cube",
+      "normalized_word": "cube",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A sugar cube dissolved quickly in the hot tea.",
+      "example_vi_clean": "Một viên đường hình lập phương tan nhanh trong tách trà nóng."
+    },
+    {
+      "id": 26779,
+      "quiz_meaning_vi": "cổ tay áo",
+      "meaning_vi_clean": "cổ tay áo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "He rolled up his cuffs before starting to work.",
+          "example_vi": "Anh ấy xắn cổ tay áo lên trước khi bắt đầu làm việc."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "The cuffs of his shirt were dirty.",
+          "example_vi": "Cổ tay áo của anh ấy bị bẩn."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "She fastened the gold buttons on her cuffs.",
+          "example_vi": "Cô ấy cài những chiếc cúc vàng trên cổ tay áo của mình."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "His jacket has leather cuffs.",
+          "example_vi": "Áo khoác của anh ấy có cổ tay áo bằng da."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "The tailor adjusted the length of the cuffs.",
+          "example_vi": "Thợ may đã điều chỉnh độ dài của cổ tay áo."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "He wore elegant cufflinks on his cuffs.",
+          "example_vi": "Anh ấy đeo những chiếc khuy măng sét thanh lịch trên cổ tay áo."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "She wiped her forehead with the cuff of her sleeve.",
+          "example_vi": "Cô ấy lau trán bằng cổ tay áo của mình."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "The cuffs of his white shirt were spotless.",
+          "example_vi": "Cổ tay áo sơ mi trắng của anh ấy không một vết bẩn."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "He pulled his cuffs down to hide his watch.",
+          "example_vi": "Anh ấy kéo cổ tay áo xuống để giấu chiếc đồng hồ."
+        },
+        {
+          "meaning_vi": "cổ tay áo",
+          "example_en": "The lace on her cuffs was very delicate.",
+          "example_vi": "Phần ren trên cổ tay áo của cô ấy rất tinh tế."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ cuff và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cổ tay áo' và cả 10 ví dụ đều sử dụng từ 'cuff' làm danh từ một cách chính xác."
+      },
+      "word": "cuff",
+      "normalized_word": "cuff",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He rolled up his cuffs before starting to work.",
+      "example_vi_clean": "Anh ấy xắn cổ tay áo lên trước khi bắt đầu làm việc."
+    },
+    {
+      "id": 26782,
+      "quiz_meaning_vi": "lọn tóc xoăn",
+      "meaning_vi_clean": "lọn tóc xoăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "She brushed a stray curl away from her eyes.",
+          "example_vi": "Cô ấy gạt một lọn tóc xoăn lòa xòa ra khỏi mắt."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "The baby has beautiful golden curls.",
+          "example_vi": "Đứa bé có những lọn tóc xoăn màu vàng tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "He wound a curl of her hair around his finger.",
+          "example_vi": "Anh ấy quấn một lọn tóc xoăn của cô ấy quanh ngón tay mình."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "Her hair fell in soft curls over her shoulders.",
+          "example_vi": "Tóc cô ấy xõa thành những lọn tóc xoăn mềm mại trên vai."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "She tried to straighten her natural curls.",
+          "example_vi": "Cô ấy đã cố gắng duỗi thẳng những lọn tóc xoăn tự nhiên của mình."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "The little girl had tight curls all over her head.",
+          "example_vi": "Cô bé có những lọn tóc xoăn tít khắp đầu."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "He admired the dark curls framing her face.",
+          "example_vi": "Anh ấy ngắm nhìn những lọn tóc xoăn sẫm màu ôm lấy khuôn mặt cô."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "She cut off a small curl of his hair as a keepsake.",
+          "example_vi": "Cô ấy đã cắt một lọn tóc xoăn nhỏ của anh ấy để làm kỷ niệm."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "Her curls bounced as she ran down the street.",
+          "example_vi": "Những lọn tóc xoăn của cô ấy nảy lên khi cô ấy chạy xuống phố."
+        },
+        {
+          "meaning_vi": "lọn tóc xoăn",
+          "example_en": "The stylist shaped each curl with care.",
+          "example_vi": "Nhà tạo mẫu tóc đã tạo hình từng lọn tóc xoăn một cách cẩn thận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ curl và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'lọn tóc xoăn' và cả 10 ví dụ đều sử dụng từ 'curl' làm danh từ một cách chính xác."
+      },
+      "word": "curl",
+      "normalized_word": "curl",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She brushed a stray curl away from her eyes.",
+      "example_vi_clean": "Cô ấy gạt một lọn tóc xoăn lòa xòa ra khỏi mắt."
+    },
+    {
+      "id": 26787,
+      "quiz_meaning_vi": "chết tiệt",
+      "meaning_vi_clean": "chết tiệt",
+      "examples_clean": [
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "I can't open this damn door!",
+          "example_vi": "Tôi không thể mở được cánh cửa chết tiệt này!"
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "Where are my damn keys?",
+          "example_vi": "Chìa khóa chết tiệt của tôi ở đâu rồi?"
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "Turn that damn radio down!",
+          "example_vi": "Hãy vặn nhỏ cái đài chết tiệt đó lại!"
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "This damn rain won't stop.",
+          "example_vi": "Cơn mưa chết tiệt này không chịu tạnh."
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "He made the same damn mistake again.",
+          "example_vi": "Anh ta lại mắc phải lỗi lầm chết tiệt đó một lần nữa."
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "I've been waiting for this damn bus for an hour.",
+          "example_vi": "Tôi đã đợi chuyến xe buýt chết tiệt này suốt một tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "Get your damn feet off the table!",
+          "example_vi": "Hãy bỏ bàn chân chết tiệt của cậu ra khỏi bàn ngay!"
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "That damn dog barked all night.",
+          "example_vi": "Con chó chết tiệt đó đã sủa suốt cả đêm."
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "I don't want to hear another damn excuse.",
+          "example_vi": "Tôi không muốn nghe thêm một lời bào chữa chết tiệt nào nữa."
+        },
+        {
+          "meaning_vi": "chết tiệt",
+          "example_en": "Why is this damn computer so slow?",
+          "example_vi": "Tại sao cái máy tính chết tiệt này lại chậm thế?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho tính từ damn và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'chết tiệt' và cả 10 ví dụ đều sử dụng từ 'damn' làm tính từ bổ nghĩa cho danh từ một cách chính xác."
+      },
+      "word": "damn",
+      "normalized_word": "damn",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I can't open this damn door!",
+      "example_vi_clean": "Tôi không thể mở được cánh cửa chết tiệt này!"
+    },
+    {
+      "id": 26790,
+      "quiz_meaning_vi": "sự lao tới",
+      "meaning_vi_clean": "sự lao tới",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "We made a dash for the bus when it started raining.",
+          "example_vi": "Chúng tôi đã lao nhanh tới chiếc xe buýt khi trời bắt đầu mưa."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "She made a sudden dash for the exit.",
+          "example_vi": "Cô ấy đã thực hiện một sự lao tới đột ngột về phía lối thoát hiểm."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "The dog made a dash across the road.",
+          "example_vi": "Con chó đã thực hiện một sự lao tới băng qua đường."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "With a quick dash, he caught the falling vase.",
+          "example_vi": "Với một sự lao tới nhanh chóng, anh ấy đã đỡ được chiếc bình hoa đang rơi."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "The players made a dash for the ball.",
+          "example_vi": "Các cầu thủ đã thực hiện một sự lao tới quả bóng."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "He made a mad dash to the bathroom.",
+          "example_vi": "Anh ấy đã thực hiện một sự lao tới điên cuồng về phía nhà vệ sinh."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "Her sudden dash into the crowd surprised everyone.",
+          "example_vi": "Sự lao tới đột ngột của cô ấy vào đám đông đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "The rabbit made a quick dash into the bushes.",
+          "example_vi": "Con thỏ đã thực hiện một sự lao tới nhanh chóng vào bụi rậm."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "They made a desperate dash for shelter during the storm.",
+          "example_vi": "Họ đã thực hiện một sự lao tới tuyệt vọng để tìm nơi trú ẩn trong cơn bão."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "His quick dash saved the child from the oncoming car.",
+          "example_vi": "Sự lao tới nhanh chóng của anh ấy đã cứu đứa trẻ khỏi chiếc xe đang lao đến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ dash và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự lao tới' và cả 10 ví dụ đều sử dụng từ 'dash' làm danh từ một cách chính xác."
+      },
+      "word": "dash",
+      "normalized_word": "dash",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We made a dash for the bus when it started raining.",
+      "example_vi_clean": "Chúng tôi đã lao nhanh tới chiếc xe buýt khi trời bắt đầu mưa."
+    },
+    {
+      "id": 26795,
+      "quiz_meaning_vi": "bình minh",
+      "meaning_vi_clean": "bình minh",
+      "examples_clean": [
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "We woke up before dawn to start our journey.",
+          "example_vi": "Chúng tôi thức dậy trước bình minh để bắt đầu hành trình."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "The sky turned pink at dawn.",
+          "example_vi": "Bầu trời chuyển sang màu hồng lúc bình minh."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "He works from dawn to dusk every day.",
+          "example_vi": "Anh ấy làm việc từ bình minh đến hoàng hôn mỗi ngày."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "The birds started singing at the first light of dawn.",
+          "example_vi": "Những chú chim bắt đầu hót vào ánh sáng đầu tiên của bình minh."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "They arrived at the summit just before dawn.",
+          "example_vi": "Họ đã đến đỉnh núi ngay trước bình minh."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "The cool air of dawn refreshed her.",
+          "example_vi": "Không khí mát mẻ của bình minh làm cô ấy sảng khoái."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "We watched the beautiful dawn over the ocean.",
+          "example_vi": "Chúng tôi đã ngắm nhìn bình minh tuyệt đẹp trên đại dương."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "The city is very quiet at dawn.",
+          "example_vi": "Thành phố rất yên tĩnh vào lúc bình minh."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "He loves the peaceful atmosphere of dawn.",
+          "example_vi": "Anh ấy yêu bầu không khí yên bình của bình minh."
+        },
+        {
+          "meaning_vi": "bình minh",
+          "example_en": "The sun rose slowly at dawn.",
+          "example_vi": "Mặt trời mọc chậm rãi lúc bình minh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ dawn và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bình minh' và cả 10 ví dụ đều sử dụng từ 'dawn' làm danh từ một cách chính xác."
+      },
+      "word": "dawn",
+      "normalized_word": "dawn",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We woke up before dawn to start our journey.",
+      "example_vi_clean": "Chúng tôi thức dậy trước bình minh để bắt đầu hành trình."
+    },
+    {
+      "id": 26797,
+      "quiz_meaning_vi": "rất nhiều",
+      "meaning_vi_clean": "rất nhiều",
+      "examples_clean": [
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "She loved her grandmother dearly.",
+          "example_vi": "Cô ấy đã yêu bà ngoại của mình rất nhiều."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "He will miss his family dearly when he goes to college.",
+          "example_vi": "Anh ấy sẽ nhớ gia đình mình rất nhiều khi đi học đại học."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "They cherish these memories dearly.",
+          "example_vi": "Họ trân trọng những kỷ niệm này rất nhiều."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "She wished dearly that she could go with them.",
+          "example_vi": "Cô ấy đã ước rất nhiều rằng mình có thể đi cùng họ."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "He is a friend whom I value dearly.",
+          "example_vi": "Anh ấy là một người bạn mà tôi quý trọng rất nhiều."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "She wanted dearly to see her homeland again.",
+          "example_vi": "Cô ấy đã muốn rất nhiều được nhìn thấy quê hương mình một lần nữa."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "The old man loved his dog dearly.",
+          "example_vi": "Ông lão đã yêu chú chó của mình rất nhiều."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "We will dearly miss your cheerful smile.",
+          "example_vi": "Chúng tôi sẽ nhớ nụ cười vui vẻ của bạn rất nhiều."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "She holds her childhood friends dearly in her heart.",
+          "example_vi": "Cô ấy giữ những người bạn thời thơ ấu của mình rất nhiều trong tim."
+        },
+        {
+          "meaning_vi": "rất nhiều",
+          "example_en": "He wanted dearly to make his parents proud.",
+          "example_vi": "Anh ấy đã muốn rất nhiều làm cho cha mẹ mình tự hào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho phó từ dearly và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'rất nhiều' và cả 10 ví dụ đều sử dụng từ 'dearly' làm phó từ bổ nghĩa cho động từ một cách chính xác."
+      },
+      "word": "dearly",
+      "normalized_word": "dearly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "She loved her grandmother dearly.",
+      "example_vi_clean": "Cô ấy đã yêu bà ngoại của mình rất nhiều."
+    },
+    {
+      "id": 26805,
+      "quiz_meaning_vi": "boong tàu",
+      "meaning_vi_clean": "boong tàu",
+      "examples_clean": [
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "We stood on the deck to watch the sunset.",
+          "example_vi": "Chúng tôi đứng trên boong tàu để ngắm hoàng hôn."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "The crew was busy cleaning the deck.",
+          "example_vi": "Thủy thủ đoàn đang bận rộn dọn dẹp boong tàu."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "He walked along the upper deck of the ship.",
+          "example_vi": "Anh ấy đi dạo dọc theo boong tàu phía trên của con tàu."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "The waves splashed onto the main deck.",
+          "example_vi": "Những con sóng vỗ lên boong tàu chính."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "She sat in a chair on the deck, reading a book.",
+          "example_vi": "Cô ấy ngồi trên một chiếc ghế trên boong tàu, đọc sách."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "The captain stood on the deck, looking at the sea.",
+          "example_vi": "Thuyền trưởng đứng trên boong tàu, nhìn ra biển."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "They slept on the open deck under the stars.",
+          "example_vi": "Họ ngủ trên boong tàu trống dưới những ngôi sao."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "The cargo was loaded onto the lower deck.",
+          "example_vi": "Hàng hóa đã được xếp lên boong tàu phía dưới."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "He slipped on the wet deck of the boat.",
+          "example_vi": "Anh ấy bị trượt chân trên boong tàu ẩm ướt của chiếc thuyền."
+        },
+        {
+          "meaning_vi": "boong tàu",
+          "example_en": "Passengers gathered on the deck to wave goodbye.",
+          "example_vi": "Hành khách tập trung trên boong tàu để vẫy tay chào tạm biệt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ deck và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'boong tàu' và cả 10 ví dụ đều sử dụng từ 'deck' làm danh từ một cách chính xác."
+      },
+      "word": "deck",
+      "normalized_word": "deck",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We stood on the deck to watch the sunset.",
+      "example_vi_clean": "Chúng tôi đứng trên boong tàu để ngắm hoàng hôn."
+    },
+    {
+      "id": 26806,
+      "quiz_meaning_vi": "sự phân hủy",
+      "meaning_vi_clean": "sự phân hủy",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "The decomposition of organic waste produces compost.",
+          "example_vi": "Sự phân hủy chất thải hữu cơ tạo ra phân bón."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "Fungi play an important role in the decomposition of leaves.",
+          "example_vi": "Nấm đóng vai trò quan trọng trong sự phân hủy của lá cây."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "The smell of decomposition filled the forest.",
+          "example_vi": "Mùi của sự phân hủy tràn ngập khu rừng."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "Cold temperatures slow down the process of decomposition.",
+          "example_vi": "Nhiệt độ lạnh làm chậm quá trình của sự phân hủy."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "Bacteria are essential for the decomposition of dead plants.",
+          "example_vi": "Vi khuẩn là cần thiết cho sự phân hủy của thực vật chết."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "Scientists studied the decomposition of plastic in the ocean.",
+          "example_vi": "Các nhà khoa học đã nghiên cứu sự phân hủy của nhựa trong đại dương."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "The decomposition of the body was already advanced.",
+          "example_vi": "Sự phân hủy của cơ thể đã ở giai đoạn tiến triển."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "Moisture accelerates the decomposition of wood.",
+          "example_vi": "Độ ẩm đẩy nhanh sự phân hủy của gỗ."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "They analyzed the chemical products of decomposition.",
+          "example_vi": "Họ đã phân tích các sản phẩm hóa học của sự phân hủy."
+        },
+        {
+          "meaning_vi": "sự phân hủy",
+          "example_en": "The decomposition of food waste can generate biogas.",
+          "example_vi": "Sự phân hủy chất thải thực phẩm có thể tạo ra khí sinh học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ decomposition và cung cấp đủ 10 ví dụ đúng ngữ cảnh.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự phân hủy' và cả 10 ví dụ đều sử dụng từ 'decomposition' làm danh từ một cách chính xác."
+      },
+      "word": "decomposition",
+      "normalized_word": "decomposition",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The decomposition of organic waste produces compost.",
+      "example_vi_clean": "Sự phân hủy chất thải hữu cơ tạo ra phân bón."
+    }
+  ]
+}

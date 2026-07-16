@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24191,
+      "quiz_meaning_vi": "cuộc thi",
+      "meaning_vi_clean": "cuộc thi; cuộc tranh luận; trận đấu; tranh cãi",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "The child entered the spelling contest.",
+          "example_vi": "Đứa trẻ đã tham gia cuộc thi đánh vần."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "She won first prize in the singing contest.",
+          "example_vi": "Cô ấy đã giành giải nhất trong cuộc thi hát."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "Are you going to enter the photography contest?",
+          "example_vi": "Bạn có định tham gia cuộc thi nhiếp ảnh không?"
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "The annual cooking contest attracts many participants.",
+          "example_vi": "Cuộc thi nấu ăn hàng năm thu hút nhiều người tham gia."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "The new law is a matter of intense public contest.",
+          "example_vi": "Đạo luật mới là một vấn đề gây tranh luận gay gắt trong công chúng."
+        },
+        {
+          "meaning_vi": "cuộc tranh luận",
+          "example_en": "There was a long contest over the new policy.",
+          "example_vi": "Đã có một cuộc tranh luận kéo dài về chính sách mới."
+        },
+        {
+          "meaning_vi": "trận đấu",
+          "example_en": "It was a very close contest between the two teams.",
+          "example_vi": "Đó là một trận đấu rất ngang tài ngang sức giữa hai đội."
+        },
+        {
+          "meaning_vi": "trận đấu",
+          "example_en": "The final contest will be held on Sunday.",
+          "example_vi": "Trận đấu chung kết sẽ được tổ chức vào Chủ nhật."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "They decided to contest the results of the election.",
+          "example_vi": "Họ quyết định tranh cãi về kết quả của cuộc bầu cử."
+        },
+        {
+          "meaning_vi": "tranh cãi",
+          "example_en": "He will contest the decision in court.",
+          "example_vi": "Anh ấy sẽ tranh cãi về quyết định đó tại tòa án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ theo từ điển. Cấu trúc lại nghĩa và bổ sung ví dụ phù hợp.",
+      "word": "contest",
+      "normalized_word": "contest",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The child entered the spelling contest.",
+      "example_vi_clean": "Đứa trẻ đã tham gia cuộc thi đánh vần."
+    },
+    {
+      "id": 24192,
+      "quiz_meaning_vi": "sự nói chuyện",
+      "meaning_vi_clean": "sự nói chuyện; cuộc nói chuyện",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nói chuyện",
+          "example_en": "I had an interesting conversation with Nicolas yesterday.",
+          "example_vi": "Tôi đã có một cuộc nói chuyện thú vị với Nicolas ngày hôm qua."
+        },
+        {
+          "meaning_vi": "sự nói chuyện",
+          "example_en": "We enjoyed a pleasant conversation over coffee.",
+          "example_vi": "Chúng tôi đã tận hưởng một cuộc nói chuyện vui vẻ bên tách cà phê."
+        },
+        {
+          "meaning_vi": "sự nói chuyện",
+          "example_en": "The conversation turned to politics.",
+          "example_vi": "Cuộc nói chuyện chuyển sang chủ đề chính trị."
+        },
+        {
+          "meaning_vi": "sự nói chuyện",
+          "example_en": "She started a conversation with the stranger.",
+          "example_vi": "Cô ấy bắt đầu một cuộc nói chuyện với người lạ."
+        },
+        {
+          "meaning_vi": "cuộc nói chuyện",
+          "example_en": "Their conversation lasted for over an hour.",
+          "example_vi": "Cuộc nói chuyện của họ kéo dài hơn một giờ."
+        },
+        {
+          "meaning_vi": "cuộc nói chuyện",
+          "example_en": "I overheard a private conversation in the hallway.",
+          "example_vi": "Tôi đã nghe lỏm được một cuộc nói chuyện riêng tư ở hành lang."
+        },
+        {
+          "meaning_vi": "cuộc nói chuyện",
+          "example_en": "We need to have a serious conversation about your future.",
+          "example_vi": "Chúng ta cần có một cuộc nói chuyện nghiêm túc về tương lai của bạn."
+        },
+        {
+          "meaning_vi": "cuộc nói chuyện",
+          "example_en": "The conversation was interrupted by a loud noise.",
+          "example_vi": "Cuộc nói chuyện bị gián đoạn bởi một tiếng động lớn."
+        },
+        {
+          "meaning_vi": "cuộc nói chuyện",
+          "example_en": "He tried to keep the conversation going.",
+          "example_vi": "Anh ấy cố gắng duy trì cuộc nói chuyện."
+        },
+        {
+          "meaning_vi": "cuộc nói chuyện",
+          "example_en": "It was a difficult conversation for both of us.",
+          "example_vi": "Đó là một cuộc nói chuyện khó khăn cho cả hai chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa chính, loại bỏ nghĩa không phù hợp. Bổ sung đủ 10 ví dụ.",
+      "word": "conversation",
+      "normalized_word": "conversation",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I had an interesting conversation with Nicolas yesterday.",
+      "example_vi_clean": "Tôi đã có một cuộc nói chuyện thú vị với Nicolas ngày hôm qua."
+    },
+    {
+      "id": 24193,
+      "quiz_meaning_vi": "người nấu ăn",
+      "meaning_vi_clean": "người nấu ăn; nấu ăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "người nấu ăn",
+          "example_en": "I'm a terrible cook, so I eat out often.",
+          "example_vi": "Tôi là người nấu ăn rất tệ, nên tôi thường đi ăn ngoài."
+        },
+        {
+          "meaning_vi": "người nấu ăn",
+          "example_en": "The restaurant hired a new professional cook.",
+          "example_vi": "Nhà hàng đã thuê một người nấu ăn chuyên nghiệp mới."
+        },
+        {
+          "meaning_vi": "người nấu ăn",
+          "example_en": "My father is an excellent cook.",
+          "example_vi": "Cha tôi là một người nấu ăn xuất sắc."
+        },
+        {
+          "meaning_vi": "người nấu ăn",
+          "example_en": "She works as a cook in a small cafe.",
+          "example_vi": "Cô ấy làm người nấu ăn tại một quán cà phê nhỏ."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "I love to cook for my family on weekends.",
+          "example_vi": "Tôi thích nấu ăn cho gia đình vào cuối tuần."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "He is learning how to cook traditional dishes.",
+          "example_vi": "Anh ấy đang học cách nấu ăn các món truyền thống."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "Can you cook something simple for dinner?",
+          "example_vi": "Bạn có thể nấu ăn món gì đó đơn giản cho bữa tối không?"
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "She is cooking a delicious meal for the guests.",
+          "example_vi": "Cô ấy đang nấu ăn một bữa ngon cho các vị khách."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "They enjoy cooking together in the kitchen.",
+          "example_vi": "Họ thích nấu ăn cùng nhau trong bếp."
+        },
+        {
+          "meaning_vi": "nấu ăn",
+          "example_en": "I need to cook the vegetables before adding them.",
+          "example_vi": "Tôi cần nấu ăn các loại rau trước khi thêm chúng vào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ. Loại bỏ nghĩa lóng/tiêu cực. Bổ sung ví dụ.",
+      "word": "cook",
+      "normalized_word": "cook",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I'm a terrible cook, so I eat out often.",
+      "example_vi_clean": "Tôi là người nấu ăn rất tệ, nên tôi thường đi ăn ngoài."
+    },
+    {
+      "id": 24194,
+      "quiz_meaning_vi": "bánh quy",
+      "meaning_vi_clean": "bánh quy",
+      "examples_clean": [
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "Would you like a chocolate chip cookie?",
+          "example_vi": "Bạn có muốn một chiếc bánh quy sô-cô-la không?"
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "She baked a batch of fresh cookies.",
+          "example_vi": "Cô ấy đã nướng một mẻ bánh quy tươi."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "The children ate all the cookies in the jar.",
+          "example_vi": "Lũ trẻ đã ăn hết bánh quy trong lọ."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "I like to have a cookie with my tea.",
+          "example_vi": "Tôi thích ăn bánh quy cùng với trà."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "He offered me a homemade cookie.",
+          "example_vi": "Anh ấy mời tôi một chiếc bánh quy nhà làm."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "These cookies are very sweet.",
+          "example_vi": "Những chiếc bánh quy này rất ngọt."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "Can I have another cookie, please?",
+          "example_vi": "Cho tôi xin thêm một chiếc bánh quy nữa được không?"
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "She put the cookies on a plate.",
+          "example_vi": "Cô ấy đặt những chiếc bánh quy lên đĩa."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "The recipe for these cookies is very simple.",
+          "example_vi": "Công thức cho những chiếc bánh quy này rất đơn giản."
+        },
+        {
+          "meaning_vi": "bánh quy",
+          "example_en": "He bought a box of cookies at the store.",
+          "example_vi": "Anh ấy đã mua một hộp bánh quy ở cửa hàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ bánh bao thành bánh quy. Bổ sung đủ 10 ví dụ.",
+      "word": "cookie",
+      "normalized_word": "cookie",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Would you like a chocolate chip cookie?",
+      "example_vi_clean": "Bạn có muốn một chiếc bánh quy sô-cô-la không?"
+    },
+    {
+      "id": 24195,
+      "quiz_meaning_vi": "mát mẻ",
+      "meaning_vi_clean": "mát mẻ; bình tĩnh; làm mát",
+      "examples_clean": [
+        {
+          "meaning_vi": "mát mẻ",
+          "example_en": "It is nice and cool in the evening.",
+          "example_vi": "Buổi tối trời rất mát mẻ và dễ chịu."
+        },
+        {
+          "meaning_vi": "mát mẻ",
+          "example_en": "We enjoyed the cool breeze by the sea.",
+          "example_vi": "Chúng tôi tận hưởng làn gió mát mẻ bên bờ biển."
+        },
+        {
+          "meaning_vi": "mát mẻ",
+          "example_en": "The water in the lake feels cool.",
+          "example_vi": "Nước trong hồ cảm giác mát mẻ."
+        },
+        {
+          "meaning_vi": "mát mẻ",
+          "example_en": "It is a cool day for a walk.",
+          "example_vi": "Hôm nay là một ngày mát mẻ để đi dạo."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "Try to stay cool during the interview.",
+          "example_vi": "Hãy cố gắng giữ bình tĩnh trong suốt buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "He remained cool under pressure.",
+          "example_vi": "Anh ấy vẫn giữ được sự bình tĩnh dưới áp lực."
+        },
+        {
+          "meaning_vi": "bình tĩnh",
+          "example_en": "She is very cool when dealing with problems.",
+          "example_vi": "Cô ấy rất bình tĩnh khi giải quyết các vấn đề."
+        },
+        {
+          "meaning_vi": "làm mát",
+          "example_en": "Open the window to cool the room.",
+          "example_vi": "Hãy mở cửa sổ để làm mát căn phòng."
+        },
+        {
+          "meaning_vi": "làm mát",
+          "example_en": "Let the soup cool before you eat it.",
+          "example_vi": "Hãy để món súp làm mát trước khi bạn ăn."
+        },
+        {
+          "meaning_vi": "làm mát",
+          "example_en": "The fan helps to cool the air.",
+          "example_vi": "Chiếc quạt giúp làm mát không khí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành tính từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "cool",
+      "normalized_word": "cool",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is nice and cool in the evening.",
+      "example_vi_clean": "Buổi tối trời rất mát mẻ và dễ chịu."
+    },
+    {
+      "id": 24196,
+      "quiz_meaning_vi": "cảnh sát",
+      "meaning_vi_clean": "cảnh sát; bắt được",
+      "examples_clean": [
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The cop stopped the car for speeding.",
+          "example_vi": "Viên cảnh sát đã dừng chiếc xe vì chạy quá tốc độ."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "He wants to be a cop when he grows up.",
+          "example_vi": "Anh ấy muốn trở thành cảnh sát khi lớn lên."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The cop asked to see his driver's license.",
+          "example_vi": "Viên cảnh sát yêu cầu xem bằng lái xe của anh ấy."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "Two cops were patrolling the area.",
+          "example_vi": "Hai viên cảnh sát đang tuần tra khu vực."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The cop helped the old lady cross the street.",
+          "example_vi": "Viên cảnh sát đã giúp bà cụ băng qua đường."
+        },
+        {
+          "meaning_vi": "bắt được",
+          "example_en": "They finally managed to cop the thief.",
+          "example_vi": "Cuối cùng họ cũng đã bắt được tên trộm."
+        },
+        {
+          "meaning_vi": "bắt được",
+          "example_en": "He was lucky to cop a prize in the raffle.",
+          "example_vi": "Anh ấy đã may mắn bắt được một giải thưởng trong cuộc xổ số."
+        },
+        {
+          "meaning_vi": "bắt được",
+          "example_en": "She managed to cop the last ticket.",
+          "example_vi": "Cô ấy đã xoay xở bắt được chiếc vé cuối cùng."
+        },
+        {
+          "meaning_vi": "bắt được",
+          "example_en": "Did you cop the main idea of the lecture?",
+          "example_vi": "Bạn có nắm bắt được ý chính của bài giảng không?"
+        },
+        {
+          "meaning_vi": "bắt được",
+          "example_en": "He copped a good deal on the car.",
+          "example_vi": "Anh ấy đã bắt được một món hời khi mua chiếc xe."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Loại bỏ nghĩa cổ/lóng không cần thiết. Bổ sung ví dụ.",
+      "word": "cop",
+      "normalized_word": "cop",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cop stopped the car for speeding.",
+      "example_vi_clean": "Viên cảnh sát đã dừng chiếc xe vì chạy quá tốc độ."
+    },
+    {
+      "id": 24197,
+      "quiz_meaning_vi": "bản sao",
+      "meaning_vi_clean": "bản sao; sao lại",
+      "examples_clean": [
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "Please bring me the copies of those reports.",
+          "example_vi": "Vui lòng mang cho tôi các bản sao của những báo cáo đó."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "I need a copy of your passport.",
+          "example_vi": "Tôi cần một bản sao hộ chiếu của bạn."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "This is just a copy of the original painting.",
+          "example_vi": "Đây chỉ là một bản sao của bức tranh gốc."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "Keep a copy of the document for your records.",
+          "example_vi": "Hãy giữ một bản sao của tài liệu để lưu hồ sơ."
+        },
+        {
+          "meaning_vi": "bản sao",
+          "example_en": "She sent me a copy of her new book.",
+          "example_vi": "Cô ấy đã gửi cho tôi một bản sao cuốn sách mới của cô ấy."
+        },
+        {
+          "meaning_vi": "sao lại",
+          "example_en": "Can you copy this file to my USB drive?",
+          "example_vi": "Bạn có thể sao lại tệp này vào ổ USB của tôi không?"
+        },
+        {
+          "meaning_vi": "sao lại",
+          "example_en": "Don't copy your friend's homework.",
+          "example_vi": "Đừng sao lại bài tập về nhà của bạn mình."
+        },
+        {
+          "meaning_vi": "sao lại",
+          "example_en": "He tried to copy the style of the famous artist.",
+          "example_vi": "Anh ấy đã cố gắng sao lại phong cách của người nghệ sĩ nổi tiếng."
+        },
+        {
+          "meaning_vi": "sao lại",
+          "example_en": "She copied the notes from the whiteboard.",
+          "example_vi": "Cô ấy đã sao lại các ghi chú từ bảng trắng."
+        },
+        {
+          "meaning_vi": "sao lại",
+          "example_en": "The software allows you to copy data easily.",
+          "example_vi": "Phần mềm cho phép bạn sao lại dữ liệu một cách dễ dàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành danh từ/động từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "copy",
+      "normalized_word": "copy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please bring me the copies of those reports.",
+      "example_vi_clean": "Vui lòng mang cho tôi các bản sao của những báo cáo đó."
+    },
+    {
+      "id": 24198,
+      "quiz_meaning_vi": "ngô",
+      "meaning_vi_clean": "ngô; hạt ngũ cốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngô",
+          "example_en": "We grow corn in our garden.",
+          "example_vi": "Chúng tôi trồng ngô trong vườn của mình."
+        },
+        {
+          "meaning_vi": "ngô",
+          "example_en": "She likes to eat boiled corn.",
+          "example_vi": "Cô ấy thích ăn ngô luộc."
+        },
+        {
+          "meaning_vi": "ngô",
+          "example_en": "The field is full of corn.",
+          "example_vi": "Cánh đồng đầy ngô."
+        },
+        {
+          "meaning_vi": "ngô",
+          "example_en": "He bought a bag of fresh corn.",
+          "example_vi": "Anh ấy đã mua một túi ngô tươi."
+        },
+        {
+          "meaning_vi": "ngô",
+          "example_en": "Corn is a staple food in many countries.",
+          "example_vi": "Ngô là một loại thực phẩm chính ở nhiều quốc gia."
+        },
+        {
+          "meaning_vi": "hạt ngũ cốc",
+          "example_en": "The birds are eating the corn on the ground.",
+          "example_vi": "Những con chim đang ăn các hạt ngũ cốc trên mặt đất."
+        },
+        {
+          "meaning_vi": "hạt ngũ cốc",
+          "example_en": "The farmer stored the corn in the barn.",
+          "example_vi": "Người nông dân đã cất giữ các hạt ngũ cốc trong kho."
+        },
+        {
+          "meaning_vi": "hạt ngũ cốc",
+          "example_en": "They use corn to feed the chickens.",
+          "example_vi": "Họ dùng hạt ngũ cốc để cho gà ăn."
+        },
+        {
+          "meaning_vi": "hạt ngũ cốc",
+          "example_en": "The harvest of corn was very good this year.",
+          "example_vi": "Vụ thu hoạch hạt ngũ cốc năm nay rất tốt."
+        },
+        {
+          "meaning_vi": "hạt ngũ cốc",
+          "example_en": "He scattered some corn for the pigeons.",
+          "example_vi": "Anh ấy rải một ít hạt ngũ cốc cho lũ chim bồ câu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Loại bỏ nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "corn",
+      "normalized_word": "corn",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We grow corn in our garden.",
+      "example_vi_clean": "Chúng tôi trồng ngô trong vườn của mình."
+    },
+    {
+      "id": 24199,
+      "quiz_meaning_vi": "góc",
+      "meaning_vi_clean": "góc; nơi kín đáo; dồn vào thế bí",
+      "examples_clean": [
+        {
+          "meaning_vi": "góc",
+          "example_en": "The shop is on the corner of the street.",
+          "example_vi": "Cửa hàng nằm ở góc phố."
+        },
+        {
+          "meaning_vi": "góc",
+          "example_en": "He sat in the corner of the room.",
+          "example_vi": "Anh ấy ngồi ở góc phòng."
+        },
+        {
+          "meaning_vi": "góc",
+          "example_en": "There is a small table in the corner.",
+          "example_vi": "Có một cái bàn nhỏ ở góc."
+        },
+        {
+          "meaning_vi": "góc",
+          "example_en": "She turned the corner and disappeared.",
+          "example_vi": "Cô ấy rẽ ở góc và biến mất."
+        },
+        {
+          "meaning_vi": "nơi kín đáo",
+          "example_en": "They found a quiet corner to talk.",
+          "example_vi": "Họ tìm thấy một nơi kín đáo để nói chuyện."
+        },
+        {
+          "meaning_vi": "nơi kín đáo",
+          "example_en": "He likes to hide in a dark corner.",
+          "example_vi": "Anh ấy thích trốn ở một nơi kín đáo tối tăm."
+        },
+        {
+          "meaning_vi": "nơi kín đáo",
+          "example_en": "She explored every corner of the old house.",
+          "example_vi": "Cô ấy đã khám phá mọi nơi kín đáo của ngôi nhà cũ."
+        },
+        {
+          "meaning_vi": "dồn vào thế bí",
+          "example_en": "The police cornered the suspect in an alley.",
+          "example_vi": "Cảnh sát đã dồn vào thế bí nghi phạm trong một con hẻm."
+        },
+        {
+          "meaning_vi": "dồn vào thế bí",
+          "example_en": "Don't let them corner you with difficult questions.",
+          "example_vi": "Đừng để họ dồn bạn vào thế bí với những câu hỏi khó."
+        },
+        {
+          "meaning_vi": "dồn vào thế bí",
+          "example_en": "He felt cornered by the situation.",
+          "example_vi": "Anh ấy cảm thấy bị dồn vào thế bí bởi tình huống đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "corner",
+      "normalized_word": "corner",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The shop is on the corner of the street.",
+      "example_vi_clean": "Cửa hàng nằm ở góc phố."
+    },
+    {
+      "id": 24200,
+      "quiz_meaning_vi": "đúng",
+      "meaning_vi_clean": "đúng; sửa",
+      "examples_clean": [
+        {
+          "meaning_vi": "đúng",
+          "example_en": "That is the correct answer.",
+          "example_vi": "Đó là câu trả lời đúng."
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "Please check if the information is correct.",
+          "example_vi": "Vui lòng kiểm tra xem thông tin có đúng không."
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "You are correct about the time.",
+          "example_vi": "Bạn đã đúng về thời gian."
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "Is this the correct way to do it?",
+          "example_vi": "Đây có phải là cách đúng để làm việc đó không?"
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "He gave the correct address.",
+          "example_vi": "Anh ấy đã đưa ra địa chỉ đúng."
+        },
+        {
+          "meaning_vi": "sửa",
+          "example_en": "The teacher will correct your mistakes.",
+          "example_vi": "Giáo viên sẽ sửa các lỗi sai của bạn."
+        },
+        {
+          "meaning_vi": "sửa",
+          "example_en": "Can you correct this sentence for me?",
+          "example_vi": "Bạn có thể sửa câu này giúp tôi không?"
+        },
+        {
+          "meaning_vi": "sửa",
+          "example_en": "She corrected the report before submitting it.",
+          "example_vi": "Cô ấy đã sửa báo cáo trước khi nộp nó."
+        },
+        {
+          "meaning_vi": "sửa",
+          "example_en": "He corrected his posture.",
+          "example_vi": "Anh ấy đã sửa tư thế của mình."
+        },
+        {
+          "meaning_vi": "sửa",
+          "example_en": "It is important to correct errors early.",
+          "example_vi": "Việc sửa các lỗi sai sớm là rất quan trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành tính từ/động từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "correct",
+      "normalized_word": "correct",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "That is the correct answer.",
+      "example_vi_clean": "Đó là câu trả lời đúng."
+    }
+  ]
+}

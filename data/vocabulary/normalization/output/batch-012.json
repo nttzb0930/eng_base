@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24111,
+      "quiz_meaning_vi": "sáng",
+      "meaning_vi_clean": "sáng; tươi; thông minh; vui tươi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sáng",
+          "example_en": "The sun is very bright today.",
+          "example_vi": "Mặt trời hôm nay rất sáng."
+        },
+        {
+          "meaning_vi": "sáng",
+          "example_en": "She wore a bright yellow dress.",
+          "example_vi": "Cô ấy mặc một chiếc váy màu vàng sáng."
+        },
+        {
+          "meaning_vi": "sáng",
+          "example_en": "The stars are bright in the night sky.",
+          "example_vi": "Những ngôi sao sáng trên bầu trời đêm."
+        },
+        {
+          "meaning_vi": "sáng",
+          "example_en": "Keep the room bright with natural light.",
+          "example_vi": "Giữ căn phòng sáng sủa với ánh sáng tự nhiên."
+        },
+        {
+          "meaning_vi": "tươi",
+          "example_en": "She has a bright smile.",
+          "example_vi": "Cô ấy có một nụ cười tươi."
+        },
+        {
+          "meaning_vi": "tươi",
+          "example_en": "The flowers look bright and healthy.",
+          "example_vi": "Những bông hoa trông thật tươi và khỏe mạnh."
+        },
+        {
+          "meaning_vi": "thông minh",
+          "example_en": "He is a bright student in my class.",
+          "example_vi": "Cậu ấy là một học sinh thông minh trong lớp tôi."
+        },
+        {
+          "meaning_vi": "thông minh",
+          "example_en": "She gave a bright answer to the question.",
+          "example_vi": "Cô ấy đã đưa ra một câu trả lời thông minh cho câu hỏi."
+        },
+        {
+          "meaning_vi": "vui tươi",
+          "example_en": "The children were in a bright mood.",
+          "example_vi": "Những đứa trẻ đang trong tâm trạng vui tươi."
+        },
+        {
+          "meaning_vi": "vui tươi",
+          "example_en": "They sang a bright song together.",
+          "example_vi": "Họ cùng nhau hát một bài hát vui tươi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ phó từ sang tính từ. Cập nhật nghĩa phổ biến và bổ sung ví dụ phù hợp CEFR A1.",
+      "word": "bright",
+      "normalized_word": "bright",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The sun is very bright today.",
+      "example_vi_clean": "Mặt trời hôm nay rất sáng."
+    },
+    {
+      "id": 24112,
+      "quiz_meaning_vi": "cầm lại",
+      "meaning_vi_clean": "cầm lại; mang lại; làm cho; dẫn đến",
+      "examples_clean": [
+        {
+          "meaning_vi": "cầm lại",
+          "example_en": "Please bring me a glass of water.",
+          "example_vi": "Làm ơn cầm lại cho tôi một ly nước."
+        },
+        {
+          "meaning_vi": "cầm lại",
+          "example_en": "Did you bring your umbrella today?",
+          "example_vi": "Bạn có cầm lại ô của mình hôm nay không?"
+        },
+        {
+          "meaning_vi": "cầm lại",
+          "example_en": "He will bring his friend to the party.",
+          "example_vi": "Anh ấy sẽ cầm lại bạn của mình đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "cầm lại",
+          "example_en": "Don't forget to bring your book tomorrow.",
+          "example_vi": "Đừng quên cầm lại sách của bạn vào ngày mai."
+        },
+        {
+          "meaning_vi": "mang lại",
+          "example_en": "This job brings me a lot of joy.",
+          "example_vi": "Công việc này mang lại cho tôi rất nhiều niềm vui."
+        },
+        {
+          "meaning_vi": "mang lại",
+          "example_en": "The rain brings life to the plants.",
+          "example_vi": "Cơn mưa mang lại sự sống cho cây cối."
+        },
+        {
+          "meaning_vi": "làm cho",
+          "example_en": "The news brought tears to her eyes.",
+          "example_vi": "Tin tức đó làm cho cô ấy rơi nước mắt."
+        },
+        {
+          "meaning_vi": "làm cho",
+          "example_en": "His jokes bring laughter to everyone.",
+          "example_vi": "Những câu đùa của anh ấy làm cho mọi người cười."
+        },
+        {
+          "meaning_vi": "dẫn đến",
+          "example_en": "Carelessness can bring accidents.",
+          "example_vi": "Sự bất cẩn có thể dẫn đến tai nạn."
+        },
+        {
+          "meaning_vi": "dẫn đến",
+          "example_en": "This path will bring us to the station.",
+          "example_vi": "Con đường này sẽ dẫn đến nhà ga."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, lược bỏ các nghĩa quá chuyên sâu hoặc hiếm gặp. Bổ sung ví dụ minh họa rõ nghĩa.",
+      "word": "bring",
+      "normalized_word": "bring",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please bring me a glass of water.",
+      "example_vi_clean": "Làm ơn cầm lại cho tôi một ly nước."
+    },
+    {
+      "id": 24113,
+      "quiz_meaning_vi": "bị gãy",
+      "meaning_vi_clean": "bị gãy; bị vỡ; đứt quãng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bị gãy",
+          "example_en": "The branch is broken.",
+          "example_vi": "Cành cây bị gãy."
+        },
+        {
+          "meaning_vi": "bị gãy",
+          "example_en": "He has a broken arm.",
+          "example_vi": "Anh ấy bị gãy tay."
+        },
+        {
+          "meaning_vi": "bị gãy",
+          "example_en": "The chair leg is broken.",
+          "example_vi": "Chân ghế bị gãy."
+        },
+        {
+          "meaning_vi": "bị gãy",
+          "example_en": "Be careful with that broken glass.",
+          "example_vi": "Hãy cẩn thận với mảnh kính bị gãy đó."
+        },
+        {
+          "meaning_vi": "bị vỡ",
+          "example_en": "The plate is broken on the floor.",
+          "example_vi": "Cái đĩa bị vỡ trên sàn nhà."
+        },
+        {
+          "meaning_vi": "bị vỡ",
+          "example_en": "The window was broken by the ball.",
+          "example_vi": "Cửa sổ bị vỡ do quả bóng."
+        },
+        {
+          "meaning_vi": "bị vỡ",
+          "example_en": "My phone screen is broken.",
+          "example_vi": "Màn hình điện thoại của tôi bị vỡ."
+        },
+        {
+          "meaning_vi": "đứt quãng",
+          "example_en": "We had a broken conversation.",
+          "example_vi": "Chúng tôi đã có một cuộc trò chuyện đứt quãng."
+        },
+        {
+          "meaning_vi": "đứt quãng",
+          "example_en": "The signal was broken during the call.",
+          "example_vi": "Tín hiệu bị đứt quãng trong suốt cuộc gọi."
+        },
+        {
+          "meaning_vi": "đứt quãng",
+          "example_en": "He spoke in broken sentences.",
+          "example_vi": "Anh ấy nói những câu đứt quãng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lược bỏ các nghĩa không phù hợp cấp độ A1. Bổ sung ví dụ cho các nghĩa còn lại.",
+      "word": "broken",
+      "normalized_word": "broken",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The branch is broken.",
+      "example_vi_clean": "Cành cây bị gãy."
+    },
+    {
+      "id": 24114,
+      "quiz_meaning_vi": "anh",
+      "meaning_vi_clean": "anh; em trai",
+      "examples_clean": [
+        {
+          "meaning_vi": "anh",
+          "example_en": "My older brother is a doctor.",
+          "example_vi": "Anh trai tôi là bác sĩ."
+        },
+        {
+          "meaning_vi": "anh",
+          "example_en": "He is my brother.",
+          "example_vi": "Anh ấy là anh trai tôi."
+        },
+        {
+          "meaning_vi": "anh",
+          "example_en": "I went to the park with my brother.",
+          "example_vi": "Tôi đã đi công viên với anh trai mình."
+        },
+        {
+          "meaning_vi": "anh",
+          "example_en": "My brother likes to play soccer.",
+          "example_vi": "Anh trai tôi thích chơi bóng đá."
+        },
+        {
+          "meaning_vi": "em trai",
+          "example_en": "My younger brother is still in school.",
+          "example_vi": "Em trai tôi vẫn còn đang đi học."
+        },
+        {
+          "meaning_vi": "em trai",
+          "example_en": "I have two brothers.",
+          "example_vi": "Tôi có hai người em trai."
+        },
+        {
+          "meaning_vi": "em trai",
+          "example_en": "My brother is very kind to me.",
+          "example_vi": "Em trai tôi rất tốt với tôi."
+        },
+        {
+          "meaning_vi": "em trai",
+          "example_en": "She is playing with her brother.",
+          "example_vi": "Cô ấy đang chơi với em trai mình."
+        },
+        {
+          "meaning_vi": "em trai",
+          "example_en": "My brother is taller than me.",
+          "example_vi": "Em trai tôi cao hơn tôi."
+        },
+        {
+          "meaning_vi": "em trai",
+          "example_en": "I bought a gift for my brother.",
+          "example_vi": "Tôi đã mua một món quà cho em trai mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lược bỏ các nghĩa tôn giáo hoặc nghề nghiệp hiếm gặp. Bổ sung ví dụ cho anh/em trai.",
+      "word": "brother",
+      "normalized_word": "brother",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My older brother is a doctor.",
+      "example_vi_clean": "Anh trai tôi là bác sĩ."
+    },
+    {
+      "id": 24115,
+      "quiz_meaning_vi": "nâu",
+      "meaning_vi_clean": "nâu; rám nắng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nâu",
+          "example_en": "She has brown eyes.",
+          "example_vi": "Cô ấy có đôi mắt màu nâu."
+        },
+        {
+          "meaning_vi": "nâu",
+          "example_en": "The dog has brown fur.",
+          "example_vi": "Con chó có bộ lông màu nâu."
+        },
+        {
+          "meaning_vi": "nâu",
+          "example_en": "I bought a brown bag.",
+          "example_vi": "Tôi đã mua một cái túi màu nâu."
+        },
+        {
+          "meaning_vi": "nâu",
+          "example_en": "The leaves turn brown in autumn.",
+          "example_vi": "Lá cây chuyển sang màu nâu vào mùa thu."
+        },
+        {
+          "meaning_vi": "nâu",
+          "example_en": "He wore a brown coat.",
+          "example_vi": "Anh ấy mặc một chiếc áo khoác màu nâu."
+        },
+        {
+          "meaning_vi": "rám nắng",
+          "example_en": "His skin is brown from the sun.",
+          "example_vi": "Da anh ấy rám nắng vì ánh mặt trời."
+        },
+        {
+          "meaning_vi": "rám nắng",
+          "example_en": "She got brown after the holiday.",
+          "example_vi": "Cô ấy bị rám nắng sau kỳ nghỉ."
+        },
+        {
+          "meaning_vi": "rám nắng",
+          "example_en": "They look brown from working outside.",
+          "example_vi": "Họ trông rám nắng vì làm việc ngoài trời."
+        },
+        {
+          "meaning_vi": "rám nắng",
+          "example_en": "His face is brown from the summer heat.",
+          "example_vi": "Khuôn mặt anh ấy rám nắng vì cái nóng mùa hè."
+        },
+        {
+          "meaning_vi": "rám nắng",
+          "example_en": "The sun makes our skin brown.",
+          "example_vi": "Mặt trời làm cho da chúng ta rám nắng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang tính từ. Lược bỏ các nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "brown",
+      "normalized_word": "brown",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has brown eyes.",
+      "example_vi_clean": "Cô ấy có đôi mắt màu nâu."
+    },
+    {
+      "id": 24116,
+      "quiz_meaning_vi": "bàn chải",
+      "meaning_vi_clean": "bàn chải; sự chải; chải",
+      "examples_clean": [
+        {
+          "meaning_vi": "bàn chải",
+          "example_en": "I need a new toothbrush.",
+          "example_vi": "Tôi cần một cái bàn chải đánh răng mới."
+        },
+        {
+          "meaning_vi": "bàn chải",
+          "example_en": "She uses a brush for her hair.",
+          "example_vi": "Cô ấy dùng một cái bàn chải cho tóc của mình."
+        },
+        {
+          "meaning_vi": "bàn chải",
+          "example_en": "The brush is in the bathroom.",
+          "example_vi": "Cái bàn chải ở trong phòng tắm."
+        },
+        {
+          "meaning_vi": "bàn chải",
+          "example_en": "Clean the shoes with a brush.",
+          "example_vi": "Làm sạch đôi giày bằng một cái bàn chải."
+        },
+        {
+          "meaning_vi": "sự chải",
+          "example_en": "Give your hair a quick brush.",
+          "example_vi": "Hãy chải tóc nhanh một chút."
+        },
+        {
+          "meaning_vi": "sự chải",
+          "example_en": "The dog needs a good brush.",
+          "example_vi": "Con chó cần được chải lông kỹ."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "Brush your teeth every morning.",
+          "example_vi": "Hãy chải răng mỗi sáng."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "She brushes her hair every day.",
+          "example_vi": "Cô ấy chải tóc mỗi ngày."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "He brushes the dust off his coat.",
+          "example_vi": "Anh ấy chải sạch bụi trên áo khoác."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "I brush my hair before going out.",
+          "example_vi": "Tôi chải tóc trước khi đi ra ngoài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ. Lược bỏ các nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "brush",
+      "normalized_word": "brush",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I need a new toothbrush.",
+      "example_vi_clean": "Tôi cần một cái bàn chải đánh răng mới."
+    },
+    {
+      "id": 24117,
+      "quiz_meaning_vi": "thùng",
+      "meaning_vi_clean": "thùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thùng",
+          "example_en": "Fill the bucket with water.",
+          "example_vi": "Đổ đầy nước vào thùng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "He carried a bucket of sand.",
+          "example_vi": "Anh ấy mang một thùng cát."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The bucket is empty.",
+          "example_vi": "Cái thùng đang trống rỗng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "She put the flowers in a bucket.",
+          "example_vi": "Cô ấy đặt những bông hoa vào trong thùng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "We need a bucket to clean the floor.",
+          "example_vi": "Chúng ta cần một cái thùng để lau sàn."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The bucket is made of plastic.",
+          "example_vi": "Cái thùng được làm bằng nhựa."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "He dropped the bucket in the well.",
+          "example_vi": "Anh ấy làm rơi cái thùng xuống giếng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "Bring me a bucket, please.",
+          "example_vi": "Làm ơn mang cho tôi một cái thùng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The bucket is heavy.",
+          "example_vi": "Cái thùng này nặng quá."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "Wash the car with a bucket of soap.",
+          "example_vi": "Rửa xe với một thùng nước xà phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang danh từ. Lược bỏ các nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "bucket",
+      "normalized_word": "bucket",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Fill the bucket with water.",
+      "example_vi_clean": "Đổ đầy nước vào thùng."
+    },
+    {
+      "id": 24118,
+      "quiz_meaning_vi": "xây dựng",
+      "meaning_vi_clean": "xây dựng; xây",
+      "examples_clean": [
+        {
+          "meaning_vi": "xây dựng",
+          "example_en": "The building of the house took a year.",
+          "example_vi": "Việc xây dựng ngôi nhà mất một năm."
+        },
+        {
+          "meaning_vi": "xây dựng",
+          "example_en": "They are planning the building of a new school.",
+          "example_vi": "Họ đang lên kế hoạch xây dựng một ngôi trường mới."
+        },
+        {
+          "meaning_vi": "xây dựng",
+          "example_en": "The building of the bridge is important.",
+          "example_vi": "Việc xây dựng cây cầu rất quan trọng."
+        },
+        {
+          "meaning_vi": "xây dựng",
+          "example_en": "He works in the building industry.",
+          "example_vi": "Anh ấy làm việc trong ngành xây dựng."
+        },
+        {
+          "meaning_vi": "xây",
+          "example_en": "They want to build a new house.",
+          "example_vi": "Họ muốn xây một ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "xây",
+          "example_en": "Birds build nests in trees.",
+          "example_vi": "Chim xây tổ trên cây."
+        },
+        {
+          "meaning_vi": "xây",
+          "example_en": "We are building a wall.",
+          "example_vi": "Chúng tôi đang xây một bức tường."
+        },
+        {
+          "meaning_vi": "xây",
+          "example_en": "They built a fire in the garden.",
+          "example_vi": "Họ đã xây một đống lửa trong vườn."
+        },
+        {
+          "meaning_vi": "xây",
+          "example_en": "He is building a model plane.",
+          "example_vi": "Anh ấy đang xây một mô hình máy bay."
+        },
+        {
+          "meaning_vi": "xây",
+          "example_en": "They built a new road here.",
+          "example_vi": "Họ đã xây một con đường mới ở đây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lược bỏ các nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "build",
+      "normalized_word": "build",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The building of the house took a year.",
+      "example_vi_clean": "Việc xây dựng ngôi nhà mất một năm."
+    },
+    {
+      "id": 24119,
+      "quiz_meaning_vi": "tòa nhà",
+      "meaning_vi_clean": "tòa nhà; sự xây dựng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tòa nhà",
+          "example_en": "That is a very tall building.",
+          "example_vi": "Đó là một tòa nhà rất cao."
+        },
+        {
+          "meaning_vi": "tòa nhà",
+          "example_en": "The office building is closed today.",
+          "example_vi": "Tòa nhà văn phòng đóng cửa hôm nay."
+        },
+        {
+          "meaning_vi": "tòa nhà",
+          "example_en": "I work in that big building.",
+          "example_vi": "Tôi làm việc trong tòa nhà lớn đó."
+        },
+        {
+          "meaning_vi": "tòa nhà",
+          "example_en": "The school building is old.",
+          "example_vi": "Tòa nhà trường học đã cũ."
+        },
+        {
+          "meaning_vi": "tòa nhà",
+          "example_en": "They are painting the building.",
+          "example_vi": "Họ đang sơn tòa nhà."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "The building of the road is finished.",
+          "example_vi": "Sự xây dựng con đường đã hoàn thành."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "Building takes a lot of time.",
+          "example_vi": "Sự xây dựng tốn rất nhiều thời gian."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "The building of the dam was difficult.",
+          "example_vi": "Sự xây dựng con đập rất khó khăn."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "They focus on the building of new homes.",
+          "example_vi": "Họ tập trung vào sự xây dựng những ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "The building of the park started last month.",
+          "example_vi": "Sự xây dựng công viên đã bắt đầu tháng trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'tòa nhà' vì đây là nghĩa phổ biến nhất của danh từ building. Bổ sung ví dụ.",
+      "word": "building",
+      "normalized_word": "building",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "That is a very tall building.",
+      "example_vi_clean": "Đó là một tòa nhà rất cao."
+    },
+    {
+      "id": 24120,
+      "quiz_meaning_vi": "xe buýt",
+      "meaning_vi_clean": "xe buýt",
+      "examples_clean": [
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "I take the bus to school.",
+          "example_vi": "Tôi đi xe buýt đến trường."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "The bus is late today.",
+          "example_vi": "Xe buýt hôm nay bị trễ."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "Wait for the bus at the station.",
+          "example_vi": "Đợi xe buýt ở nhà ga."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "He missed the bus this morning.",
+          "example_vi": "Anh ấy đã lỡ chuyến xe buýt sáng nay."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "The bus is very crowded.",
+          "example_vi": "Xe buýt rất đông đúc."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "How much is the bus ticket?",
+          "example_vi": "Vé xe buýt giá bao nhiêu?"
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "We got off the bus at the park.",
+          "example_vi": "Chúng tôi xuống xe buýt ở công viên."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "The bus stops here.",
+          "example_vi": "Xe buýt dừng ở đây."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "I prefer going by bus.",
+          "example_vi": "Tôi thích đi bằng xe buýt hơn."
+        },
+        {
+          "meaning_vi": "xe buýt",
+          "example_en": "The bus driver is very friendly.",
+          "example_vi": "Tài xế xe buýt rất thân thiện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ. Lược bỏ các nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "bus",
+      "normalized_word": "bus",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I take the bus to school.",
+      "example_vi_clean": "Tôi đi xe buýt đến trường."
+    }
+  ]
+}

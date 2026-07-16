@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-252",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26511,
+      "word": "bolt",
+      "normalized_word": "bolt",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "phó từ",
+      "phonetic": "/boult/",
+      "primary_meaning_vi": "cái sàng",
+      "meaning_vi": "cái sàng, máy sàng; cái rây; sàng; rây; điều tra; xem xét; mũi tên; cái then, cái chốt cửa; bó (mây, song); súc (giấy, vải...); chớp; tiếng sét; bu-lông; sự chạy trốn; sự chạy lao đi; việc xảy ra bất thình lình; tiếng sét ngang tai; vị trí chốt; chạy trốn; cố gắng hết sức; đóng cửa bằng then, cài chốt; ngốn, nuốt chửng, ăn vội; chạy trốn; chạy lao đi; lồng lên (ngựa); ,  (chính trị) ly khai (đảng); không ủng hộ đường lối của đảng; đóng chốt cửa nhốt ai; đóng chốt cửa không cho ai vào; rất thẳng, thẳng như mũi rên",
+      "example_en": "The problem's solution struck him like a bolt from the blue.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "24 March 1774 - Newspaper: Stamford Mercury - \"Mr. Cole, Basket-maker...has lost near 300 boults of rods\" https//www.britishnewspaperarchive.co.uk/viewer/bl/0000254/17740324/001/0001",
+          "example_vi": null
+        },
+        {
+          "example_en": "The horse made a bolt.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Bolt the vice to the bench.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26512,
+      "word": "bombard",
+      "normalized_word": "bombard",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bɔm'bɑ:d/",
+      "primary_meaning_vi": "bắn phá",
+      "meaning_vi": "bắn phá, ném bom, oanh tạc; tấn công tới tấp; đưa dồn dập (câu hỏi, đơn khiếu nại, lý lẽ, lời chửi bới...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26513,
+      "word": "bomber",
+      "normalized_word": "bomber",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bɔmə/",
+      "primary_meaning_vi": "máy bay ném bom",
+      "meaning_vi": "máy bay ném bom; người phụ trách cắt bom",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26514,
+      "word": "bombing",
+      "normalized_word": "bombing",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "việc ném bom",
+      "meaning_vi": "việc ném bom",
+      "example_en": "I was bombing down the road on my motorbike.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26515,
+      "word": "bony",
+      "normalized_word": "bony",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'bouni/",
+      "primary_meaning_vi": "nhiều xương",
+      "meaning_vi": "nhiều xương; to xương (người); giống xương; rắn như xương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26516,
+      "word": "bookish",
+      "normalized_word": "bookish",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'bukiʃ/",
+      "primary_meaning_vi": "ham đọc sách",
+      "meaning_vi": "ham đọc sách; sách vở",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26517,
+      "word": "booklet",
+      "normalized_word": "booklet",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'buklit/",
+      "primary_meaning_vi": "cuốn sách nhỏ",
+      "meaning_vi": "cuốn sách nhỏ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26518,
+      "word": "bookmark",
+      "normalized_word": "bookmark",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "thẻ đánh dấu trang sách",
+      "meaning_vi": "thẻ đánh dấu trang sách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26519,
+      "word": "boost",
+      "normalized_word": "boost",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bu:st/",
+      "primary_meaning_vi": "sự quảng cáo rùm beng (cho ai)",
+      "meaning_vi": "sự quảng cáo rùm beng (cho ai); sự tăng giá; sự nổi tiếng; sự tăng thế; nâng lên, đưa lên; quảng cáo rùm beng (cho ai); tăng giá; làm cho nổi tiếng; tăng thế",
+      "example_en": "The controversy gave a boost to the author's sales.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This campaign will boost your chances of winning the election.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26520,
+      "word": "booth",
+      "normalized_word": "booth",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bu:ð/",
+      "primary_meaning_vi": "quán",
+      "meaning_vi": "quán, rạp, lều; phòng điện thoại công cộng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

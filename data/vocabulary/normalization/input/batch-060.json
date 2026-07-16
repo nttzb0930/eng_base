@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-060",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24591,
+      "word": "out",
+      "normalized_word": "out",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/aut/",
+      "primary_meaning_vi": "ngoài",
+      "meaning_vi": "ngoài, ở ngoài, ra ngoài; ra; hẳn, hoàn toàn hết; không nắm chính quyền; đang bãi công; tắt, không cháy; không còn là mốt nữa; to thẳng, rõ ra; sai khớp, trật khớp, trẹo xương; gục, bất tỉnh; sai, lầm; không như bình thường, bối rối, luống cuống, lúng túng; đã xuất bản (sách); đã nở (gà con); đã được cho ra giao du (con gái mới lớn lên); đã truyền đi (bức điện); hoàn toàn, hết sức, hết lực; toàn tâm toàn ý; đã dậy ra ngoài được (sau khi ốm khỏi); bỏ xa, không thể so sánh được với; đang đi tìm cái gì; theo đuổi cái gì; quyết tâm kiếm bằng được cái gì; ,  (thông tục) thoát khỏi cảnh khó khăn, thoát khỏi cảnh hiểm nghèo; ra ngoài, ra khỏi, ngoài; vì; bằng; cách xa, cách; sai lạc; trong, trong đám; hết; mất; không; quyết tâm, gắng sức (làm điều gì); cút đi, cút khỏi, ra khỏi; bất hoà, xích mích, không thân thiện; từ ở... ra, từ... ra; ở ngoài, ngoài; ở ngoài, ở xa; quả; (chính trị) (the outs) đảng không nắm chính quyền; sự bỏ sót chữ; chữ bỏ sót; quả bóng đánh ra ngoài sân (quần vợt); ,  (từ lóng) lối thoát; cách cáo từ, cách thoái thác; in; tống cổ nó đi; cho nó đo ván (quyền Anh); lộ ra (điều bí mật...)",
+      "example_en": "They wrote the law to give those organizations an out.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A Brazilian company outed the new mobile phone design.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'm sorry, Mr Smith is out at the moment.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I worked away cleaning the U-bend until all the gunge was out.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24592,
+      "word": "own",
+      "normalized_word": "own",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/oun/",
+      "primary_meaning_vi": "của chính mình",
+      "meaning_vi": "của chính mình, của riêng mình; độc lập cho bản thân mình; tự mình chịu trách nhiệm; với phương tiện của bản thân mình; man; trả thù; giữ vững vị trí, giữ vững lập trường; chẳng kém ai, có thể đối địch được với người; có, là chủ của; nhận, nhìn nhận; thừa nhận là có, thừa nhận là đúng, cam tâm nhận (sự thống trị...); thú nhận, đầu thú; thú, thú nhận",
+      "example_en": "When we move into the new house, the kids will each have their own bedroom.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I own this car.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The United States owns Point Roberts by the terms of the Treaty of Oregon.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I will own my enemies.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24593,
+      "word": "owner",
+      "normalized_word": "owner",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ounə/",
+      "primary_meaning_vi": "người chủ",
+      "meaning_vi": "người chủ, chủ nhân; thuyền trưởng",
+      "example_en": "The police recovered the stolen car and returned it to its owner.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24594,
+      "word": "page",
+      "normalized_word": "page",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/peidʤ/",
+      "primary_meaning_vi": "trang (sách...)",
+      "meaning_vi": "trang (sách...); (nghĩa bóng) trang sử; đánh số trang; tiểu đồng; em nhỏ phục vụ (ở khách sạn, rạp hát...); sai em nhỏ phục vụ gọi (ai); làm em nhỏ phục vụ (ở khách sạn, rạp hát)",
+      "example_en": "the page of history",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The patient paged through magazines while he waited for the doctor.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I’ll be out all day, so page me if you need me.",
+          "example_vi": null
+        },
+        {
+          "example_en": "An SUV parked me in. Could you please page its owner?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24595,
+      "word": "paint",
+      "normalized_word": "paint",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/peint/",
+      "primary_meaning_vi": "sơn",
+      "meaning_vi": "sơn; thuốc màu; phấn (bôi má); đẹp như vẽ; sơn, quét sơn; vẽ, tô vẽ, mô tả; đánh phấn; vẽ tranh; thoa phấn; ghi bằng sơn; sơn phủ lên, lấy sơn quét lấp đi; vẽ màu tươi, vẽ màu sáng; (nghĩa bóng) tô hồng (sự việc gì); mặc thêm là lượt cho phò mã (làm một việc thừa); town",
+      "example_en": "The Nimrods are strong on the outside, but not very good in the paint.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I am running low on paint for my marker.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to paint a portrait or a landscape",
+          "example_vi": null
+        },
+        {
+          "example_en": "I've been painting since I was a young child.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24596,
+      "word": "painting",
+      "normalized_word": "painting",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'peintiɳ/",
+      "primary_meaning_vi": "sự sơn",
+      "meaning_vi": "sự sơn; hội hoạ; bức vẽ, bức tranh",
+      "example_en": "to paint a portrait or a landscape",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I've been painting since I was a young child.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She sued the author of the biography, claiming it painted her as a duplicitous fraud.",
+          "example_vi": null
+        },
+        {
+          "example_en": "\"We'll paint the target for the flyboys,\" the JTAC said.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24597,
+      "word": "pair",
+      "normalized_word": "pair",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/peə/",
+      "primary_meaning_vi": "đôi",
+      "meaning_vi": "đôi, cặp; cặp vợ chồng; đôi đực cái, đôi trống mái (loài vật); chiếc; cái (đồ vật có hai bộ phận); từng đôi, từng cặp; cầu thang, tầng gác; đó lại là vấn đề khác; ghép đôi, ghép cặp; cho yêu nhau, cho lấy nhau (đôi trai gái); kết đôi, sánh cặp; yêu nhau, lấy nhau (đôi trai gái); kết đôi với nhau (con đực con cái, con trống con mái); ghép từng đôi một; hợp thành từng đôi; kết đôi (trong việc thoả thuận không bỏ phiếu ở nghị trường); kết duyên với",
+      "example_en": "I couldn't decide which of the pair of designer shirts I preferred, so I bought the pair.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Spouses should make a great pair.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a pair of scissors; two pairs of spectacles; several pairs of jeans",
+          "example_vi": null
+        },
+        {
+          "example_en": "A pair is harder to drive than two mounts with separate riders.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24598,
+      "word": "palace",
+      "normalized_word": "palace",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'pælis/",
+      "primary_meaning_vi": "cung",
+      "meaning_vi": "cung, điện; lâu đài; chỗ ở chính thức (của một thủ lĩnh tôn giáo); quán ăn trang trí loè loẹt, tiệm rượu trang trí loè loẹt ((cũng) gin palace)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24599,
+      "word": "pants",
+      "normalized_word": "pants",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ số nhiều",
+      "phonetic": "/pænts/",
+      "primary_meaning_vi": "quần lót dài",
+      "meaning_vi": "quần lót dài; quần dài",
+      "example_en": "The film was a load [or pile] of pants.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Your mobile is pants — why don’t you get one like mine?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24600,
+      "word": "paper",
+      "normalized_word": "paper",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'peipə/",
+      "primary_meaning_vi": "giấy",
+      "meaning_vi": "giấy; giấy tờ, giấy má (giấy chứng minh, hồ sơ...); báo; bạc giấy ((cũng) paper money); hối phiếu; gói giấy, túi giấy; giấy vào cửa không mất tiền, vé mời (rạp hát...); đề bài thi; bài luận văn, bài thuyết trình; viết, ghi vào; trên giấy tờ, trên lý thuyết; lãi trên giấy tờ; bắt đầu viết; dán giấy lên; bọc giấy, gói bằng giấy; cung cấp giấy; phát vé mời không để làm đầy (rạp hát...)",
+      "example_en": "a paper of pins, tacks, opium, etc.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "cantharides paper",
+          "example_vi": null
+        },
+        {
+          "example_en": "to paper the hallway walls",
+          "example_vi": null
+        },
+        {
+          "example_en": "After they reached an agreement, their staffs papered it up.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

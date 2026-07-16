@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26121,
+      "quiz_meaning_vi": "bản fax",
+      "meaning_vi_clean": "bản fax; gửi dưới hình thức fax",
+      "examples_clean": [
+        {
+          "meaning_vi": "bản fax",
+          "example_en": "Please send me a copy of the contract by fax.",
+          "example_vi": "Vui lòng gửi cho tôi một bản sao hợp đồng qua fax."
+        },
+        {
+          "meaning_vi": "bản fax",
+          "example_en": "I received a fax from the head office this morning.",
+          "example_vi": "Tôi đã nhận được một bản fax từ văn phòng chính sáng nay."
+        },
+        {
+          "meaning_vi": "bản fax",
+          "example_en": "The fax machine is out of paper.",
+          "example_vi": "Máy fax đã hết giấy rồi."
+        },
+        {
+          "meaning_vi": "bản fax",
+          "example_en": "Could you check if the fax has arrived yet?",
+          "example_vi": "Bạn có thể kiểm tra xem bản fax đã đến chưa không?"
+        },
+        {
+          "meaning_vi": "gửi dưới hình thức fax",
+          "example_en": "I will fax the documents to you immediately.",
+          "example_vi": "Tôi sẽ gửi fax các tài liệu cho bạn ngay lập tức."
+        },
+        {
+          "meaning_vi": "gửi dưới hình thức fax",
+          "example_en": "She faxed her resignation letter to the manager.",
+          "example_vi": "Cô ấy đã gửi fax đơn từ chức cho người quản lý."
+        },
+        {
+          "meaning_vi": "gửi dưới hình thức fax",
+          "example_en": "Can you fax this report to the client?",
+          "example_vi": "Bạn có thể gửi fax báo cáo này cho khách hàng không?"
+        },
+        {
+          "meaning_vi": "gửi dưới hình thức fax",
+          "example_en": "They faxed the details over before the meeting.",
+          "example_vi": "Họ đã gửi fax các chi tiết trước cuộc họp."
+        },
+        {
+          "meaning_vi": "gửi dưới hình thức fax",
+          "example_en": "Please fax your signature on this form.",
+          "example_vi": "Vui lòng gửi fax chữ ký của bạn trên mẫu đơn này."
+        },
+        {
+          "meaning_vi": "gửi dưới hình thức fax",
+          "example_en": "He had to fax the information to several branches.",
+          "example_vi": "Anh ấy đã phải gửi fax thông tin đến nhiều chi nhánh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa và 10 ví dụ phù hợp với từ loại danh từ/động từ.",
+      "word": "fax",
+      "normalized_word": "fax",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please send me a copy of the contract by fax.",
+      "example_vi_clean": "Vui lòng gửi cho tôi một bản sao hợp đồng qua fax."
+    },
+    {
+      "id": 26122,
+      "quiz_meaning_vi": "bữa tiệc",
+      "meaning_vi_clean": "bữa tiệc; dự tiệc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "We had a grand feast to celebrate the harvest.",
+          "example_vi": "Chúng tôi đã có một bữa tiệc lớn để ăn mừng vụ mùa."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The wedding feast lasted until midnight.",
+          "example_vi": "Bữa tiệc cưới kéo dài đến tận nửa đêm."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "They prepared a delicious feast for the guests.",
+          "example_vi": "Họ đã chuẩn bị một bữa tiệc ngon miệng cho các vị khách."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The king held a feast in the great hall.",
+          "example_vi": "Nhà vua đã tổ chức một bữa tiệc trong đại sảnh."
+        },
+        {
+          "meaning_vi": "dự tiệc",
+          "example_en": "We feasted on turkey and dumplings at the party.",
+          "example_vi": "Chúng tôi đã dự tiệc với gà tây và bánh bao tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "dự tiệc",
+          "example_en": "They feasted together after the long journey.",
+          "example_vi": "Họ đã cùng nhau dự tiệc sau chuyến hành trình dài."
+        },
+        {
+          "meaning_vi": "dự tiệc",
+          "example_en": "The villagers feasted to mark the end of the war.",
+          "example_vi": "Dân làng đã dự tiệc để đánh dấu sự kết thúc của cuộc chiến."
+        },
+        {
+          "meaning_vi": "dự tiệc",
+          "example_en": "We feasted until we were completely full.",
+          "example_vi": "Chúng tôi đã dự tiệc cho đến khi no căng bụng."
+        },
+        {
+          "meaning_vi": "dự tiệc",
+          "example_en": "Friends feasted at the restaurant to celebrate his birthday.",
+          "example_vi": "Bạn bè đã dự tiệc tại nhà hàng để chúc mừng sinh nhật anh ấy."
+        },
+        {
+          "meaning_vi": "dự tiệc",
+          "example_en": "They feasted on local delicacies all evening.",
+          "example_vi": "Họ đã dự tiệc với các món đặc sản địa phương suốt cả buổi tối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc bỏ các nghĩa hiếm, giữ lại nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "feast",
+      "normalized_word": "feast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We had a grand feast to celebrate the harvest.",
+      "example_vi_clean": "Chúng tôi đã có một bữa tiệc lớn để ăn mừng vụ mùa."
+    },
+    {
+      "id": 26123,
+      "quiz_meaning_vi": "phà",
+      "meaning_vi_clean": "phà; chuyên chở bằng phà",
+      "examples_clean": [
+        {
+          "meaning_vi": "phà",
+          "example_en": "We took the ferry across the river.",
+          "example_vi": "Chúng tôi đã đi phà qua sông."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry leaves every thirty minutes.",
+          "example_vi": "Phà khởi hành mỗi ba mươi phút."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry was delayed due to bad weather.",
+          "example_vi": "Phà đã bị hoãn do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "We waited at the terminal for the ferry.",
+          "example_vi": "Chúng tôi đã đợi ở nhà ga để lên phà."
+        },
+        {
+          "meaning_vi": "chuyên chở bằng phà",
+          "example_en": "They ferry passengers to the island every day.",
+          "example_vi": "Họ chuyên chở hành khách ra đảo bằng phà mỗi ngày."
+        },
+        {
+          "meaning_vi": "chuyên chở bằng phà",
+          "example_en": "The boat is used to ferry goods across the lake.",
+          "example_vi": "Chiếc thuyền được dùng để chuyên chở hàng hóa qua hồ bằng phà."
+        },
+        {
+          "meaning_vi": "chuyên chở bằng phà",
+          "example_en": "He ferries tourists to the beach during summer.",
+          "example_vi": "Anh ấy chuyên chở khách du lịch đến bãi biển bằng phà trong mùa hè."
+        },
+        {
+          "meaning_vi": "chuyên chở bằng phà",
+          "example_en": "The company ferries workers to the factory site.",
+          "example_vi": "Công ty chuyên chở công nhân đến địa điểm nhà máy bằng phà."
+        },
+        {
+          "meaning_vi": "chuyên chở bằng phà",
+          "example_en": "They had to ferry supplies to the flooded area.",
+          "example_vi": "Họ đã phải chuyên chở nhu yếu phẩm đến khu vực bị ngập lụt bằng phà."
+        },
+        {
+          "meaning_vi": "chuyên chở bằng phà",
+          "example_en": "The small boat ferries people back and forth.",
+          "example_vi": "Chiếc thuyền nhỏ chuyên chở mọi người qua lại bằng phà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, bổ sung ví dụ.",
+      "word": "ferry",
+      "normalized_word": "ferry",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We took the ferry across the river.",
+      "example_vi_clean": "Chúng tôi đã đi phà qua sông."
+    },
+    {
+      "id": 26124,
+      "quiz_meaning_vi": "thuộc ngày lễ",
+      "meaning_vi_clean": "thuộc ngày lễ; vui",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc ngày lễ",
+          "example_en": "The room was decorated with festive lights.",
+          "example_vi": "Căn phòng được trang trí bằng những ánh đèn thuộc ngày lễ."
+        },
+        {
+          "meaning_vi": "thuộc ngày lễ",
+          "example_en": "We enjoyed a festive dinner with our family.",
+          "example_vi": "Chúng tôi đã tận hưởng một bữa tối thuộc ngày lễ cùng gia đình."
+        },
+        {
+          "meaning_vi": "thuộc ngày lễ",
+          "example_en": "The city has a festive atmosphere during Christmas.",
+          "example_vi": "Thành phố có một bầu không khí thuộc ngày lễ trong dịp Giáng sinh."
+        },
+        {
+          "meaning_vi": "thuộc ngày lễ",
+          "example_en": "They wore festive clothes for the celebration.",
+          "example_vi": "Họ mặc những bộ quần áo thuộc ngày lễ để tham dự buổi lễ."
+        },
+        {
+          "meaning_vi": "vui",
+          "example_en": "Everyone was in a festive mood at the party.",
+          "example_vi": "Mọi người đều có tâm trạng vui vẻ tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "vui",
+          "example_en": "The music created a festive feeling in the hall.",
+          "example_vi": "Âm nhạc tạo ra một cảm giác vui vẻ trong hội trường."
+        },
+        {
+          "meaning_vi": "vui",
+          "example_en": "It was a festive occasion for all the neighbors.",
+          "example_vi": "Đó là một dịp vui vẻ cho tất cả những người hàng xóm."
+        },
+        {
+          "meaning_vi": "vui",
+          "example_en": "The festive spirit was evident in their smiles.",
+          "example_vi": "Tinh thần vui vẻ thể hiện rõ trên nụ cười của họ."
+        },
+        {
+          "meaning_vi": "vui",
+          "example_en": "We had a festive time dancing and singing.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian vui vẻ khi nhảy múa và ca hát."
+        },
+        {
+          "meaning_vi": "vui",
+          "example_en": "The festive decorations made the house look bright.",
+          "example_vi": "Những đồ trang trí vui vẻ làm cho ngôi nhà trông thật rực rỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ minh họa.",
+      "word": "festive",
+      "normalized_word": "festive",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The room was decorated with festive lights.",
+      "example_vi_clean": "Căn phòng được trang trí bằng những ánh đèn thuộc ngày lễ."
+    },
+    {
+      "id": 26125,
+      "quiz_meaning_vi": "tìm về",
+      "meaning_vi_clean": "tìm về; bán được",
+      "examples_clean": [
+        {
+          "meaning_vi": "tìm về",
+          "example_en": "Can you fetch my bag from the car?",
+          "example_vi": "Bạn có thể tìm về túi của tôi từ trong xe không?"
+        },
+        {
+          "meaning_vi": "tìm về",
+          "example_en": "The dog loves to fetch the ball.",
+          "example_vi": "Con chó rất thích tìm về quả bóng."
+        },
+        {
+          "meaning_vi": "tìm về",
+          "example_en": "I will fetch some water from the well.",
+          "example_vi": "Tôi sẽ đi tìm về một ít nước từ giếng."
+        },
+        {
+          "meaning_vi": "tìm về",
+          "example_en": "She went to fetch the children from school.",
+          "example_vi": "Cô ấy đã đi tìm về bọn trẻ từ trường học."
+        },
+        {
+          "meaning_vi": "bán được",
+          "example_en": "The painting should fetch a high price at auction.",
+          "example_vi": "Bức tranh đó có lẽ sẽ bán được giá cao tại buổi đấu giá."
+        },
+        {
+          "meaning_vi": "bán được",
+          "example_en": "Old cars like this can fetch a lot of money.",
+          "example_vi": "Những chiếc xe cũ như thế này có thể bán được rất nhiều tiền."
+        },
+        {
+          "meaning_vi": "bán được",
+          "example_en": "His house will fetch a good price in this market.",
+          "example_vi": "Ngôi nhà của anh ấy sẽ bán được giá tốt trong thị trường này."
+        },
+        {
+          "meaning_vi": "bán được",
+          "example_en": "Rare stamps often fetch thousands of dollars.",
+          "example_vi": "Những con tem hiếm thường bán được hàng ngàn đô la."
+        },
+        {
+          "meaning_vi": "bán được",
+          "example_en": "The antique vase fetched more than we expected.",
+          "example_vi": "Chiếc bình cổ đã bán được nhiều hơn chúng tôi mong đợi."
+        },
+        {
+          "meaning_vi": "bán được",
+          "example_en": "These items will fetch a decent profit.",
+          "example_vi": "Những mặt hàng này sẽ bán được một khoản lợi nhuận khá."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phù hợp, giữ nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "fetch",
+      "normalized_word": "fetch",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Can you fetch my bag from the car?",
+      "example_vi_clean": "Bạn có thể tìm về túi của tôi từ trong xe không?"
+    },
+    {
+      "id": 26126,
+      "quiz_meaning_vi": "lính quýnh",
+      "meaning_vi_clean": "lính quýnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "She worked feverishly to finish the project on time.",
+          "example_vi": "Cô ấy làm việc lính quýnh để hoàn thành dự án đúng hạn."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "They were searching feverishly for their lost keys.",
+          "example_vi": "Họ đang tìm kiếm lính quýnh chìa khóa bị mất của mình."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "He typed feverishly to meet the deadline.",
+          "example_vi": "Anh ấy gõ máy lính quýnh để kịp thời hạn."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "The staff cleaned feverishly before the guests arrived.",
+          "example_vi": "Các nhân viên dọn dẹp lính quýnh trước khi khách đến."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "She packed her bags feverishly before the train left.",
+          "example_vi": "Cô ấy đóng gói hành lý lính quýnh trước khi tàu rời đi."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "They were running feverishly around the office.",
+          "example_vi": "Họ đang chạy lính quýnh quanh văn phòng."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "He wrote feverishly in his notebook.",
+          "example_vi": "Anh ấy viết lính quýnh vào sổ tay của mình."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "The team worked feverishly to repair the damage.",
+          "example_vi": "Cả đội làm việc lính quýnh để sửa chữa hư hỏng."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "She was feverishly checking her notes before the exam.",
+          "example_vi": "Cô ấy đang kiểm tra lính quýnh các ghi chú trước kỳ thi."
+        },
+        {
+          "meaning_vi": "lính quýnh",
+          "example_en": "They were feverishly preparing for the big event.",
+          "example_vi": "Họ đang chuẩn bị lính quýnh cho sự kiện lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ.",
+      "word": "feverishly",
+      "normalized_word": "feverishly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "She worked feverishly to finish the project on time.",
+      "example_vi_clean": "Cô ấy làm việc lính quýnh để hoàn thành dự án đúng hạn."
+    },
+    {
+      "id": 26127,
+      "quiz_meaning_vi": "thứ năm",
+      "meaning_vi_clean": "thứ năm; một phần năm",
+      "examples_clean": [
+        {
+          "meaning_vi": "thứ năm",
+          "example_en": "He finished in fifth place in the race.",
+          "example_vi": "Anh ấy về đích ở vị trí thứ năm trong cuộc đua."
+        },
+        {
+          "meaning_vi": "thứ năm",
+          "example_en": "This is the fifth time I have called you.",
+          "example_vi": "Đây là lần thứ năm tôi gọi cho bạn."
+        },
+        {
+          "meaning_vi": "thứ năm",
+          "example_en": "She lives on the fifth floor of the building.",
+          "example_vi": "Cô ấy sống ở tầng thứ năm của tòa nhà."
+        },
+        {
+          "meaning_vi": "thứ năm",
+          "example_en": "It is the fifth day of the month.",
+          "example_vi": "Hôm nay là ngày thứ năm của tháng."
+        },
+        {
+          "meaning_vi": "một phần năm",
+          "example_en": "A fifth of the students passed the test.",
+          "example_vi": "Một phần năm số học sinh đã vượt qua bài kiểm tra."
+        },
+        {
+          "meaning_vi": "một phần năm",
+          "example_en": "He ate a fifth of the cake.",
+          "example_vi": "Anh ấy đã ăn một phần năm cái bánh."
+        },
+        {
+          "meaning_vi": "một phần năm",
+          "example_en": "Only a fifth of the budget was spent.",
+          "example_vi": "Chỉ một phần năm ngân sách đã được chi tiêu."
+        },
+        {
+          "meaning_vi": "một phần năm",
+          "example_en": "She saved a fifth of her salary.",
+          "example_vi": "Cô ấy đã tiết kiệm một phần năm tiền lương của mình."
+        },
+        {
+          "meaning_vi": "một phần năm",
+          "example_en": "A fifth of the population lives in the city.",
+          "example_vi": "Một phần năm dân số sống ở thành phố."
+        },
+        {
+          "meaning_vi": "một phần năm",
+          "example_en": "They used a fifth of the total supplies.",
+          "example_vi": "Họ đã sử dụng một phần năm tổng số nguồn cung cấp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phù hợp, giữ nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "fifth",
+      "normalized_word": "fifth",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He finished in fifth place in the race.",
+      "example_vi_clean": "Anh ấy về đích ở vị trí thứ năm trong cuộc đua."
+    },
+    {
+      "id": 26128,
+      "quiz_meaning_vi": "sự đổ đầy",
+      "meaning_vi_clean": "sự đổ đầy; món thịt nhồi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đổ đầy",
+          "example_en": "The filling of the tank took several minutes.",
+          "example_vi": "Sự đổ đầy bình chứa mất vài phút."
+        },
+        {
+          "meaning_vi": "sự đổ đầy",
+          "example_en": "The filling of the forms is required.",
+          "example_vi": "Sự đổ đầy (điền) các mẫu đơn là bắt buộc."
+        },
+        {
+          "meaning_vi": "sự đổ đầy",
+          "example_en": "He checked the filling of the gaps in the wall.",
+          "example_vi": "Anh ấy kiểm tra sự đổ đầy các khe hở trên tường."
+        },
+        {
+          "meaning_vi": "sự đổ đầy",
+          "example_en": "The filling of the pool was completed yesterday.",
+          "example_vi": "Sự đổ đầy hồ bơi đã hoàn thành ngày hôm qua."
+        },
+        {
+          "meaning_vi": "món thịt nhồi",
+          "example_en": "The pie has a delicious meat filling.",
+          "example_vi": "Chiếc bánh có món thịt nhồi ngon tuyệt."
+        },
+        {
+          "meaning_vi": "món thịt nhồi",
+          "example_en": "I prefer a vegetable filling for my sandwich.",
+          "example_vi": "Tôi thích món thịt nhồi (nhân) rau củ cho bánh mì kẹp của mình."
+        },
+        {
+          "meaning_vi": "món thịt nhồi",
+          "example_en": "The cake has a sweet cream filling.",
+          "example_vi": "Chiếc bánh có món thịt nhồi (nhân) kem ngọt."
+        },
+        {
+          "meaning_vi": "món thịt nhồi",
+          "example_en": "She made a special filling for the turkey.",
+          "example_vi": "Cô ấy đã làm một món thịt nhồi đặc biệt cho gà tây."
+        },
+        {
+          "meaning_vi": "món thịt nhồi",
+          "example_en": "The chocolate filling is very popular.",
+          "example_vi": "Món thịt nhồi (nhân) sô cô la rất phổ biến."
+        },
+        {
+          "meaning_vi": "món thịt nhồi",
+          "example_en": "He added more filling to the pastry.",
+          "example_vi": "Anh ấy đã thêm nhiều món thịt nhồi vào bánh ngọt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "filling",
+      "normalized_word": "filling",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The filling of the tank took several minutes.",
+      "example_vi_clean": "Sự đổ đầy bình chứa mất vài phút."
+    },
+    {
+      "id": 26129,
+      "quiz_meaning_vi": "cái lọc",
+      "meaning_vi_clean": "cái lọc; lọc",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái lọc",
+          "example_en": "You should change the water filter regularly.",
+          "example_vi": "Bạn nên thay cái lọc nước thường xuyên."
+        },
+        {
+          "meaning_vi": "cái lọc",
+          "example_en": "The air filter keeps the room clean.",
+          "example_vi": "Cái lọc không khí giữ cho căn phòng sạch sẽ."
+        },
+        {
+          "meaning_vi": "cái lọc",
+          "example_en": "This coffee machine has a built-in filter.",
+          "example_vi": "Máy pha cà phê này có một cái lọc tích hợp."
+        },
+        {
+          "meaning_vi": "cái lọc",
+          "example_en": "The oil filter needs to be replaced.",
+          "example_vi": "Cái lọc dầu cần được thay thế."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "We need to filter the water before drinking it.",
+          "example_vi": "Chúng ta cần lọc nước trước khi uống."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "She filters the tea to remove the leaves.",
+          "example_vi": "Cô ấy lọc trà để loại bỏ lá."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "The system filters out all the spam emails.",
+          "example_vi": "Hệ thống lọc tất cả các email rác."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "They filter the sand to find gold.",
+          "example_vi": "Họ lọc cát để tìm vàng."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "The light filters through the trees.",
+          "example_vi": "Ánh sáng lọc qua những tán cây."
+        },
+        {
+          "meaning_vi": "lọc",
+          "example_en": "He filters the data to find the right information.",
+          "example_vi": "Anh ấy lọc dữ liệu để tìm thông tin đúng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, bổ sung ví dụ.",
+      "word": "filter",
+      "normalized_word": "filter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You should change the water filter regularly.",
+      "example_vi_clean": "Bạn nên thay cái lọc nước thường xuyên."
+    },
+    {
+      "id": 26130,
+      "quiz_meaning_vi": "tài chính",
+      "meaning_vi_clean": "tài chính",
+      "examples_clean": [
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "The company is facing serious financial problems.",
+          "example_vi": "Công ty đang đối mặt với những vấn đề tài chính nghiêm trọng."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "He is an expert in financial matters.",
+          "example_vi": "Anh ấy là một chuyên gia trong các vấn đề tài chính."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "We need to improve our financial situation.",
+          "example_vi": "Chúng ta cần cải thiện tình hình tài chính của mình."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "The financial report will be published tomorrow.",
+          "example_vi": "Báo cáo tài chính sẽ được công bố vào ngày mai."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "She is studying financial management at university.",
+          "example_vi": "Cô ấy đang học quản lý tài chính tại trường đại học."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "The government provides financial support to students.",
+          "example_vi": "Chính phủ cung cấp hỗ trợ tài chính cho sinh viên."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "They are looking for a financial advisor.",
+          "example_vi": "Họ đang tìm kiếm một cố vấn tài chính."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "The project requires a lot of financial resources.",
+          "example_vi": "Dự án đòi hỏi rất nhiều nguồn lực tài chính."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "He made a wise financial decision.",
+          "example_vi": "Anh ấy đã đưa ra một quyết định tài chính khôn ngoan."
+        },
+        {
+          "meaning_vi": "tài chính",
+          "example_en": "The bank offers various financial services.",
+          "example_vi": "Ngân hàng cung cấp nhiều dịch vụ tài chính khác nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "financial",
+      "normalized_word": "financial",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The company is facing serious financial problems.",
+      "example_vi_clean": "Công ty đang đối mặt với những vấn đề tài chính nghiêm trọng."
+    }
+  ]
+}

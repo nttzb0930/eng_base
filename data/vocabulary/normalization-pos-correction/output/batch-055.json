@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25565,
+      "quiz_meaning_vi": "băng gạc",
+      "meaning_vi_clean": "băng gạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "The nurse applied a clean bandage to the wound.",
+          "example_vi": "Y tá đã băng một miếng băng gạc sạch lên vết thương."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "He wrapped a bandage around his sprained ankle.",
+          "example_vi": "Anh ấy quấn một miếng băng gạc quanh mắt cá chân bị bong gân của mình."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "She needed a bandage for her cut finger.",
+          "example_vi": "Cô ấy cần một miếng băng gạc cho ngón tay bị cắt của mình."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "The doctor changed the bandage every day.",
+          "example_vi": "Bác sĩ đã thay băng gạc mỗi ngày."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "Make sure the bandage is not too tight.",
+          "example_vi": "Hãy đảm bảo băng gạc không quá chặt."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "He bought a roll of bandage at the pharmacy.",
+          "example_vi": "Anh ấy đã mua một cuộn băng gạc tại hiệu thuốc."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "The bandage helped to stop the bleeding.",
+          "example_vi": "Miếng băng gạc đã giúp cầm máu."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "She used a sterile bandage on the burn.",
+          "example_vi": "Cô ấy đã dùng một miếng băng gạc vô trùng cho vết bỏng."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "The bandage needs to be replaced soon.",
+          "example_vi": "Miếng băng gạc cần được thay thế sớm."
+        },
+        {
+          "meaning_vi": "băng gạc",
+          "example_en": "He felt more comfortable with the bandage on his arm.",
+          "example_vi": "Anh ấy cảm thấy thoải mái hơn khi có băng gạc trên cánh tay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'băng gạc' cho danh từ 'bandage' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'băng gạc' là nghĩa phổ biến nhất của danh từ 'bandage'. Cả 10 ví dụ đều sử dụng 'bandage' như một danh từ để chỉ vật liệu dùng để băng bó vết thương."
+      },
+      "word": "bandage",
+      "normalized_word": "bandage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The nurse applied a clean bandage to the wound.",
+      "example_vi_clean": "Y tá đã băng một miếng băng gạc sạch lên vết thương."
+    },
+    {
+      "id": 25566,
+      "quiz_meaning_vi": "tiếng nổ",
+      "meaning_vi_clean": "tiếng nổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "We heard a loud bang from the street.",
+          "example_vi": "Chúng tôi nghe thấy một tiếng nổ lớn từ đường phố."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The door slammed shut with a bang.",
+          "example_vi": "Cánh cửa đóng sập lại với một tiếng nổ."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The fireworks ended with a final bang.",
+          "example_vi": "Pháo hoa kết thúc bằng một tiếng nổ cuối cùng."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "Suddenly, there was a bang and the lights went out.",
+          "example_vi": "Đột nhiên, có một tiếng nổ và đèn vụt tắt."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The car engine made a strange bang.",
+          "example_vi": "Động cơ xe hơi phát ra một tiếng nổ kỳ lạ."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "He jumped at the sudden bang.",
+          "example_vi": "Anh ấy giật mình vì tiếng nổ đột ngột."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The sound of the bang was deafening.",
+          "example_vi": "Âm thanh của tiếng nổ thật chói tai."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "A loud bang echoed through the valley.",
+          "example_vi": "Một tiếng nổ lớn vang vọng khắp thung lũng."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "The bang startled the birds.",
+          "example_vi": "Tiếng nổ làm chim chóc giật mình."
+        },
+        {
+          "meaning_vi": "tiếng nổ",
+          "example_en": "We heard a bang, then silence.",
+          "example_vi": "Chúng tôi nghe thấy một tiếng nổ, rồi im lặng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'tiếng nổ' cho danh từ 'bang' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tiếng nổ' là nghĩa phổ biến nhất của danh từ 'bang'. Cả 10 ví dụ đều sử dụng 'bang' như một danh từ để chỉ âm thanh của một vụ nổ hoặc va chạm mạnh."
+      },
+      "word": "bang",
+      "normalized_word": "bang",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We heard a loud bang from the street.",
+      "example_vi_clean": "Chúng tôi nghe thấy một tiếng nổ lớn từ đường phố."
+    },
+    {
+      "id": 25567,
+      "quiz_meaning_vi": "trần trụi",
+      "meaning_vi_clean": "trần trụi",
+      "examples_clean": [
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "The trees were bare in the winter.",
+          "example_vi": "Cây cối trơ trụi vào mùa đông."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "His feet were bare on the cold floor.",
+          "example_vi": "Chân anh ấy trần trụi trên sàn nhà lạnh lẽo."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "The room was bare except for a table and two chairs.",
+          "example_vi": "Căn phòng trần trụi ngoại trừ một cái bàn và hai cái ghế."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "She gave a bare outline of the plan.",
+          "example_vi": "Cô ấy đã đưa ra một dàn ý sơ lược về kế hoạch."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "He spoke with bare honesty.",
+          "example_vi": "Anh ấy đã nói với sự chân thật trần trụi."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "The landscape was bare and desolate.",
+          "example_vi": "Phong cảnh thật trần trụi và hoang vắng."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "They lived in a bare apartment.",
+          "example_vi": "Họ sống trong một căn hộ trần trụi."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "The walls were bare and unpainted.",
+          "example_vi": "Những bức tường trần trụi và không sơn."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "He had bare minimum resources.",
+          "example_vi": "Anh ấy có nguồn lực tối thiểu trần trụi."
+        },
+        {
+          "meaning_vi": "trần trụi",
+          "example_en": "The stage was bare.",
+          "example_vi": "Sân khấu thì trần trụi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'trần trụi' cho tính từ 'bare' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'trần trụi' là nghĩa phổ biến nhất của tính từ 'bare'. Cả 10 ví dụ đều sử dụng 'bare' để bổ nghĩa cho danh từ, mô tả sự thiếu thốn, trống rỗng hoặc không có gì che phủ."
+      },
+      "word": "bare",
+      "normalized_word": "bare",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The trees were bare in the winter.",
+      "example_vi_clean": "Cây cối trơ trụi vào mùa đông."
+    },
+    {
+      "id": 25571,
+      "quiz_meaning_vi": "thùng",
+      "meaning_vi_clean": "thùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The oil was stored in a large barrel.",
+          "example_vi": "Dầu được lưu trữ trong một thùng lớn."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "He rolled the barrel down the hill.",
+          "example_vi": "Anh ấy lăn cái thùng xuống đồi."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The barrel was made of wood.",
+          "example_vi": "Cái thùng được làm bằng gỗ."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "We need to empty the rain barrel.",
+          "example_vi": "Chúng ta cần đổ hết nước trong thùng hứng mưa."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The barrel contained 50 liters of wine.",
+          "example_vi": "Cái thùng chứa 50 lít rượu."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "He tapped on the barrel.",
+          "example_vi": "Anh ấy gõ vào thùng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The barrel was heavy.",
+          "example_vi": "Cái thùng rất nặng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "They used a barrel to collect rainwater.",
+          "example_vi": "Họ dùng một cái thùng để hứng nước mưa."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The barrel had a lid.",
+          "example_vi": "Cái thùng có nắp."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "He bought a barrel of apples.",
+          "example_vi": "Anh ấy đã mua một thùng táo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'thùng' cho danh từ 'barrel' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'thùng' là nghĩa phổ biến nhất của danh từ 'barrel'. Cả 10 ví dụ đều sử dụng 'barrel' như một danh từ để chỉ một vật chứa hình trụ, thường bằng gỗ hoặc kim loại."
+      },
+      "word": "barrel",
+      "normalized_word": "barrel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The oil was stored in a large barrel.",
+      "example_vi_clean": "Dầu được lưu trữ trong một thùng lớn."
+    },
+    {
+      "id": 25576,
+      "quiz_meaning_vi": "trận chiến",
+      "meaning_vi_clean": "trận chiến",
+      "examples_clean": [
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "The battle lasted for three days.",
+          "example_vi": "Trận chiến kéo dài ba ngày."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "They fought bravely in the battle.",
+          "example_vi": "Họ đã chiến đấu dũng cảm trong trận chiến."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "The battle was won by the enemy.",
+          "example_vi": "Trận chiến đã bị quân địch giành chiến thắng."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "He was a veteran of many battles.",
+          "example_vi": "Ông ấy là một cựu chiến binh của nhiều trận chiến."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "The battle took place on the plains.",
+          "example_vi": "Trận chiến diễn ra trên đồng bằng."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "The soldiers prepared for the upcoming battle.",
+          "example_vi": "Những người lính chuẩn bị cho trận chiến sắp tới."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "It was a fierce battle.",
+          "example_vi": "Đó là một trận chiến khốc liệt."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "The outcome of the battle was uncertain.",
+          "example_vi": "Kết quả của trận chiến không chắc chắn."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "They remembered the battle.",
+          "example_vi": "Họ nhớ về trận chiến."
+        },
+        {
+          "meaning_vi": "trận chiến",
+          "example_en": "The battle was a turning point.",
+          "example_vi": "Trận chiến là một bước ngoặt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'trận chiến' cho danh từ 'battle' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'trận chiến' là nghĩa phổ biến nhất của danh từ 'battle'. Cả 10 ví dụ đều sử dụng 'battle' như một danh từ để chỉ một cuộc xung đột vũ trang quy mô lớn."
+      },
+      "word": "battle",
+      "normalized_word": "battle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The battle lasted for three days.",
+      "example_vi_clean": "Trận chiến kéo dài ba ngày."
+    },
+    {
+      "id": 25577,
+      "quiz_meaning_vi": "râu",
+      "meaning_vi_clean": "râu",
+      "examples_clean": [
+        {
+          "meaning_vi": "râu",
+          "example_en": "He has a long, gray beard.",
+          "example_vi": "Ông ấy có bộ râu dài, bạc."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "The old man stroked his beard thoughtfully.",
+          "example_vi": "Ông lão vuốt râu một cách trầm ngâm."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "He decided to grow a beard.",
+          "example_vi": "Anh ấy quyết định để râu."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "Santa Claus has a white beard.",
+          "example_vi": "Ông già Noel có bộ râu trắng."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "His beard was neatly trimmed.",
+          "example_vi": "Bộ râu của anh ấy được cắt tỉa gọn gàng."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "She liked his short beard.",
+          "example_vi": "Cô ấy thích bộ râu ngắn của anh ấy."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "The beard made him look older.",
+          "example_vi": "Bộ râu khiến anh ấy trông già hơn."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "He shaved off his beard.",
+          "example_vi": "Anh ấy đã cạo bộ râu của mình."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "The beard tickled her chin.",
+          "example_vi": "Bộ râu làm cằm cô ấy ngứa."
+        },
+        {
+          "meaning_vi": "râu",
+          "example_en": "He has a full beard.",
+          "example_vi": "Anh ấy có bộ râu rậm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'râu' cho danh từ 'beard' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'râu' là nghĩa phổ biến nhất của danh từ 'beard'. Cả 10 ví dụ đều sử dụng 'beard' như một danh từ để chỉ bộ râu trên mặt nam giới."
+      },
+      "word": "beard",
+      "normalized_word": "beard",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has a long, gray beard.",
+      "example_vi_clean": "Ông ấy có bộ râu dài, bạc."
+    },
+    {
+      "id": 25587,
+      "quiz_meaning_vi": "lợi ích",
+      "meaning_vi_clean": "lợi ích",
+      "examples_clean": [
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "Regular exercise has many health benefits.",
+          "example_vi": "Tập thể dục thường xuyên có nhiều lợi ích cho sức khỏe."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "What are the benefits of this plan?",
+          "example_vi": "Kế hoạch này có những lợi ích gì?"
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "He received a financial benefit from the investment.",
+          "example_vi": "Anh ấy đã nhận được lợi ích tài chính từ khoản đầu tư."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "The company offers benefits to its employees.",
+          "example_vi": "Công ty cung cấp các phúc lợi cho nhân viên của mình."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "There are no benefits to staying here.",
+          "example_vi": "Ở lại đây không có lợi ích gì."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "The main benefit is increased efficiency.",
+          "example_vi": "Lợi ích chính là tăng hiệu quả."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "She explained the benefits of the new software.",
+          "example_vi": "Cô ấy đã giải thích những lợi ích của phần mềm mới."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "This policy has benefits for everyone.",
+          "example_vi": "Chính sách này có lợi ích cho tất cả mọi người."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "He wanted to know the benefits of membership.",
+          "example_vi": "Anh ấy muốn biết những lợi ích của việc làm thành viên."
+        },
+        {
+          "meaning_vi": "lợi ích",
+          "example_en": "The benefits outweigh the costs.",
+          "example_vi": "Lợi ích lớn hơn chi phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'lợi ích' cho danh từ 'benefit' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'lợi ích' là nghĩa phổ biến nhất của danh từ 'benefit'. Cả 10 ví dụ đều sử dụng 'benefit' như một danh từ để chỉ điều có ích hoặc thuận lợi."
+      },
+      "word": "benefit",
+      "normalized_word": "benefit",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Regular exercise has many health benefits.",
+      "example_vi_clean": "Tập thể dục thường xuyên có nhiều lợi ích cho sức khỏe."
+    },
+    {
+      "id": 25596,
+      "quiz_meaning_vi": "đắng",
+      "meaning_vi_clean": "đắng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đắng",
+          "example_en": "The coffee was too bitter.",
+          "example_vi": "Cà phê quá đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "He had a bitter taste in his mouth.",
+          "example_vi": "Anh ấy có một vị đắng trong miệng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "The medicine had a bitter flavor.",
+          "example_vi": "Thuốc có vị đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "She felt a bitter disappointment.",
+          "example_vi": "Cô ấy cảm thấy một sự thất vọng cay đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "The argument left a bitter feeling.",
+          "example_vi": "Cuộc tranh cãi để lại một cảm giác cay đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "He spoke with bitter sarcasm.",
+          "example_vi": "Anh ấy nói với sự mỉa mai cay đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "The chocolate was dark and bitter.",
+          "example_vi": "Sô cô la thì đen và đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "It was a bitter winter.",
+          "example_vi": "Đó là một mùa đông khắc nghiệt."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "He had a bitter enemy.",
+          "example_vi": "Anh ấy có một kẻ thù cay đắng."
+        },
+        {
+          "meaning_vi": "đắng",
+          "example_en": "The beer had a bitter aftertaste.",
+          "example_vi": "Bia có vị đắng sau khi uống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'đắng' cho tính từ 'bitter' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đắng' là nghĩa phổ biến nhất của tính từ 'bitter'. Cả 10 ví dụ đều sử dụng 'bitter' để mô tả vị giác, cảm xúc hoặc tình huống tiêu cực."
+      },
+      "word": "bitter",
+      "normalized_word": "bitter",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The coffee was too bitter.",
+      "example_vi_clean": "Cà phê quá đắng."
+    },
+    {
+      "id": 25601,
+      "quiz_meaning_vi": "mù",
+      "meaning_vi_clean": "mù",
+      "examples_clean": [
+        {
+          "meaning_vi": "mù",
+          "example_en": "He is blind in one eye.",
+          "example_vi": "Anh ấy bị mù một mắt."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "The blind man used a white cane.",
+          "example_vi": "Người đàn ông mù sử dụng gậy trắng."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "She has been blind since birth.",
+          "example_vi": "Cô ấy bị mù từ khi sinh ra."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "Don't be blind to the facts.",
+          "example_vi": "Đừng mù quáng trước sự thật."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "He was blind with rage.",
+          "example_vi": "Anh ấy mù quáng vì tức giận."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "The blind alley led nowhere.",
+          "example_vi": "Ngõ cụt đó không dẫn đến đâu cả."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "She is partially blind.",
+          "example_vi": "Cô ấy bị mù một phần."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "He is completely blind.",
+          "example_vi": "Anh ấy bị mù hoàn toàn."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "The blind spot in the car needs to be fixed.",
+          "example_vi": "Điểm mù trên xe cần được sửa chữa."
+        },
+        {
+          "meaning_vi": "mù",
+          "example_en": "He acted blind to the danger.",
+          "example_vi": "Anh ấy hành động như thể không thấy nguy hiểm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'mù' cho tính từ 'blind' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'mù' là nghĩa phổ biến nhất của tính từ 'blind'. Cả 10 ví dụ đều sử dụng 'blind' để mô tả tình trạng không nhìn thấy hoặc không nhận thức được điều gì đó."
+      },
+      "word": "blind",
+      "normalized_word": "blind",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is blind in one eye.",
+      "example_vi_clean": "Anh ấy bị mù một mắt."
+    },
+    {
+      "id": 25602,
+      "quiz_meaning_vi": "sự đỏ mặt",
+      "meaning_vi_clean": "sự đỏ mặt",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "She felt a blush creep up her neck.",
+          "example_vi": "Cô ấy cảm thấy một sự đỏ mặt lan lên cổ."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "He couldn't hide his blush.",
+          "example_vi": "Anh ấy không thể che giấu sự đỏ mặt của mình."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "A faint blush appeared on her cheeks.",
+          "example_vi": "Một sự đỏ mặt nhẹ xuất hiện trên má cô ấy."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "The compliment made her blush.",
+          "example_vi": "Lời khen khiến cô ấy đỏ mặt."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "He noticed the blush on her face.",
+          "example_vi": "Anh ấy nhận thấy sự đỏ mặt trên khuôn mặt cô ấy."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "Her blush was a sign of embarrassment.",
+          "example_vi": "Sự đỏ mặt của cô ấy là dấu hiệu của sự bối rối."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "He tried to suppress his blush.",
+          "example_vi": "Anh ấy cố gắng kìm nén sự đỏ mặt của mình."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "The blush faded quickly.",
+          "example_vi": "Sự đỏ mặt nhanh chóng biến mất."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "He saw the blush and knew she was lying.",
+          "example_vi": "Anh ấy thấy sự đỏ mặt và biết cô ấy đang nói dối."
+        },
+        {
+          "meaning_vi": "sự đỏ mặt",
+          "example_en": "A blush spread across her face.",
+          "example_vi": "Một sự đỏ mặt lan khắp khuôn mặt cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất 'sự đỏ mặt' cho danh từ 'blush' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự đỏ mặt' là nghĩa phổ biến nhất của danh từ 'blush'. Cả 10 ví dụ đều sử dụng 'blush' như một danh từ để chỉ hiện tượng khuôn mặt bị đỏ lên do xấu hổ, ngại ngùng hoặc tức giận."
+      },
+      "word": "blush",
+      "normalized_word": "blush",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She felt a blush creep up her neck.",
+      "example_vi_clean": "Cô ấy cảm thấy một sự đỏ mặt lan lên cổ."
+    }
+  ]
+}

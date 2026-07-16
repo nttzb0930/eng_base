@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25695,
+      "quiz_meaning_vi": "kênh",
+      "meaning_vi_clean": "kênh",
+      "examples_clean": [
+        {
+          "meaning_vi": "kênh",
+          "example_en": "The satellite transmits signals through a special channel.",
+          "example_vi": "Vệ tinh truyền tín hiệu qua một kênh đặc biệt."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "We need to find a new distribution channel for our products.",
+          "example_vi": "Chúng ta cần tìm một kênh phân phối mới cho sản phẩm của mình."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "The river has been dredged to create a deeper channel.",
+          "example_vi": "Con sông đã được nạo vét để tạo thành một luồng kênh sâu hơn."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "This television channel broadcasts news 24 hours a day.",
+          "example_vi": "Kênh truyền hình này phát sóng tin tức 24 giờ một ngày."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "He used his influence to open a channel of communication.",
+          "example_vi": "Anh ấy đã dùng ảnh hưởng của mình để mở một kênh liên lạc."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "The internet provides a new channel for learning.",
+          "example_vi": "Internet cung cấp một kênh mới để học tập."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "The ship sailed through the narrow channel.",
+          "example_vi": "Con tàu đã đi qua eo biển hẹp."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "They established a direct channel to the government.",
+          "example_vi": "Họ đã thiết lập một kênh trực tiếp với chính phủ."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "This is the main channel for water to flow.",
+          "example_vi": "Đây là kênh chính cho dòng nước chảy."
+        },
+        {
+          "meaning_vi": "kênh",
+          "example_en": "The company is exploring new sales channels.",
+          "example_vi": "Công ty đang khám phá các kênh bán hàng mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('kênh') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'kênh' là nghĩa phổ biến nhất của 'channel' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "channel",
+      "normalized_word": "channel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The satellite transmits signals through a special channel.",
+      "example_vi_clean": "Vệ tinh truyền tín hiệu qua một kênh đặc biệt."
+    },
+    {
+      "id": 25699,
+      "quiz_meaning_vi": "sự tính phí",
+      "meaning_vi_clean": "sự tính phí",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "The hotel charges a fee for room service.",
+          "example_vi": "Khách sạn tính phí cho dịch vụ phòng."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "What is the charge for a single room per night?",
+          "example_vi": "Chi phí cho một phòng đơn mỗi đêm là bao nhiêu?"
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "There is no charge for children under five.",
+          "example_vi": "Không tính phí cho trẻ em dưới năm tuổi."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "The electricity charge has increased this month.",
+          "example_vi": "Tiền điện đã tăng trong tháng này."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "The credit card company imposes a monthly charge.",
+          "example_vi": "Công ty thẻ tín dụng áp dụng một khoản phí hàng tháng."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "The main charge on the bill was for the food.",
+          "example_vi": "Khoản phí chính trên hóa đơn là cho đồ ăn."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "We were surprised by the high charge for parking.",
+          "example_vi": "Chúng tôi đã ngạc nhiên bởi mức phí đỗ xe cao."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "The bank will charge interest on the loan.",
+          "example_vi": "Ngân hàng sẽ tính lãi cho khoản vay."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "The admission charge is ten dollars.",
+          "example_vi": "Phí vào cửa là mười đô la."
+        },
+        {
+          "meaning_vi": "sự tính phí",
+          "example_en": "He refused to pay the extra charge.",
+          "example_vi": "Anh ấy từ chối trả khoản phí bổ sung."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('sự tính phí') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự tính phí' là nghĩa phổ biến nhất của 'charge' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "charge",
+      "normalized_word": "charge",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The hotel charges a fee for room service.",
+      "example_vi_clean": "Khách sạn tính phí cho dịch vụ phòng."
+    },
+    {
+      "id": 25700,
+      "quiz_meaning_vi": "cỗ xe ngựa",
+      "meaning_vi_clean": "cỗ xe ngựa",
+      "examples_clean": [
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "The ancient Romans used chariots in warfare.",
+          "example_vi": "Người La Mã cổ đại đã sử dụng cỗ xe ngựa trong chiến tranh."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "A chariot is a two-wheeled vehicle pulled by horses.",
+          "example_vi": "Cỗ xe ngựa là một phương tiện hai bánh được kéo bởi ngựa."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "The king arrived in a magnificent chariot.",
+          "example_vi": "Nhà vua đã đến bằng một cỗ xe ngựa lộng lẫy."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "Chariots were used in ancient Olympic Games.",
+          "example_vi": "Cỗ xe ngựa đã được sử dụng trong Thế vận hội Olympic cổ đại."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "He imagined himself as a warrior in a chariot.",
+          "example_vi": "Anh ấy tưởng tượng mình là một chiến binh trên cỗ xe ngựa."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "The museum displays a replica of an ancient chariot.",
+          "example_vi": "Bảo tàng trưng bày một bản sao của một cỗ xe ngựa cổ đại."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "The sound of the chariot wheels echoed in the valley.",
+          "example_vi": "Tiếng bánh xe ngựa vang vọng trong thung lũng."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "She felt like a queen riding in a chariot.",
+          "example_vi": "Cô ấy cảm thấy như một nữ hoàng đang cưỡi trên cỗ xe ngựa."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "The movie depicted a thrilling chariot race.",
+          "example_vi": "Bộ phim đã mô tả một cuộc đua xe ngựa hấp dẫn."
+        },
+        {
+          "meaning_vi": "cỗ xe ngựa",
+          "example_en": "Only the wealthy could afford a chariot.",
+          "example_vi": "Chỉ những người giàu có mới có đủ khả năng mua một cỗ xe ngựa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('cỗ xe ngựa') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cỗ xe ngựa' là nghĩa duy nhất và phổ biến nhất của 'chariot' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "chariot",
+      "normalized_word": "chariot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ancient Romans used chariots in warfare.",
+      "example_vi_clean": "Người La Mã cổ đại đã sử dụng cỗ xe ngựa trong chiến tranh."
+    },
+    {
+      "id": 25702,
+      "quiz_meaning_vi": "sự quyến rũ",
+      "meaning_vi_clean": "sự quyến rũ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "She has a certain charm that attracts people.",
+          "example_vi": "Cô ấy có một sự quyến rũ nhất định thu hút mọi người."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "The old town retains its historical charm.",
+          "example_vi": "Thị trấn cổ kính vẫn giữ được nét quyến rũ lịch sử của nó."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "His charm offensive failed to impress the voters.",
+          "example_vi": "Chiến dịch quyến rũ của ông đã không gây ấn tượng với cử tri."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "The charm of the countryside is its peace and quiet.",
+          "example_vi": "Sự quyến rũ của vùng nông thôn là sự yên bình và tĩnh lặng của nó."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "He tried to win her over with his charm.",
+          "example_vi": "Anh ấy đã cố gắng chinh phục cô ấy bằng sự quyến rũ của mình."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "The movie captured the charm of Paris.",
+          "example_vi": "Bộ phim đã nắm bắt được sự quyến rũ của Paris."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "Her natural charm made her popular.",
+          "example_vi": "Sự quyến rũ tự nhiên của cô ấy đã khiến cô ấy trở nên nổi tiếng."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "The charm bracelet was a gift from her grandmother.",
+          "example_vi": "Chiếc vòng tay charm là một món quà từ bà của cô ấy."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "He spoke with a charm that disarmed everyone.",
+          "example_vi": "Anh ấy nói chuyện với một sự quyến rũ khiến mọi người phải nhún nhường."
+        },
+        {
+          "meaning_vi": "sự quyến rũ",
+          "example_en": "The village has a simple, rustic charm.",
+          "example_vi": "Ngôi làng có một nét quyến rũ mộc mạc, giản dị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('sự quyến rũ') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự quyến rũ' là nghĩa phổ biến nhất của 'charm' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "charm",
+      "normalized_word": "charm",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a certain charm that attracts people.",
+      "example_vi_clean": "Cô ấy có một sự quyến rũ nhất định thu hút mọi người."
+    },
+    {
+      "id": 25703,
+      "quiz_meaning_vi": "cuộc rượt đuổi",
+      "meaning_vi_clean": "cuộc rượt đuổi",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The police were involved in a high-speed chase.",
+          "example_vi": "Cảnh sát đã tham gia vào một cuộc rượt đuổi tốc độ cao."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "It was a thrilling chase through the city streets.",
+          "example_vi": "Đó là một cuộc rượt đuổi gay cấn qua các đường phố."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The cat enjoyed the chase of the toy mouse.",
+          "example_vi": "Con mèo thích thú với cuộc rượt đuổi con chuột đồ chơi."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The movie ended with a dramatic chase scene.",
+          "example_vi": "Bộ phim kết thúc bằng một cảnh rượt đuổi đầy kịch tính."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The dog gave chase to the squirrel.",
+          "example_vi": "Con chó đã đuổi theo con sóc."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "We watched the chase from the window.",
+          "example_vi": "Chúng tôi đã xem cuộc rượt đuổi từ cửa sổ."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The chase lasted for several minutes.",
+          "example_vi": "Cuộc rượt đuổi kéo dài trong vài phút."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "He was caught after a long chase.",
+          "example_vi": "Anh ta đã bị bắt sau một cuộc rượt đuổi dài."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The chase scene was very exciting.",
+          "example_vi": "Cảnh rượt đuổi rất thú vị."
+        },
+        {
+          "meaning_vi": "cuộc rượt đuổi",
+          "example_en": "The chase ended when the suspect surrendered.",
+          "example_vi": "Cuộc rượt đuổi kết thúc khi nghi phạm đầu hàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('cuộc rượt đuổi') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cuộc rượt đuổi' là nghĩa phổ biến nhất của 'chase' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "chase",
+      "normalized_word": "chase",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police were involved in a high-speed chase.",
+      "example_vi_clean": "Cảnh sát đã tham gia vào một cuộc rượt đuổi tốc độ cao."
+    },
+    {
+      "id": 25711,
+      "quiz_meaning_vi": "dàn hợp xướng",
+      "meaning_vi_clean": "dàn hợp xướng",
+      "examples_clean": [
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The choir sang beautifully at the concert.",
+          "example_vi": "Dàn hợp xướng đã hát rất hay trong buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "She joined the church choir.",
+          "example_vi": "Cô ấy đã tham gia dàn hợp xướng của nhà thờ."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The choir practiced for weeks before the performance.",
+          "example_vi": "Dàn hợp xướng đã tập luyện nhiều tuần trước buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The sound of the choir filled the cathedral.",
+          "example_vi": "Âm thanh của dàn hợp xướng đã lấp đầy nhà thờ."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "He is a member of the school choir.",
+          "example_vi": "Anh ấy là thành viên của dàn hợp xướng trường học."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The choir performed a classical piece.",
+          "example_vi": "Dàn hợp xướng đã trình diễn một tác phẩm cổ điển."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The choir director led the singers.",
+          "example_vi": "Nhạc trưởng dàn hợp xướng đã chỉ huy các ca sĩ."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "We heard the choir singing hymns.",
+          "example_vi": "Chúng tôi đã nghe dàn hợp xướng hát thánh ca."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The choir's performance was outstanding.",
+          "example_vi": "Màn trình diễn của dàn hợp xướng thật xuất sắc."
+        },
+        {
+          "meaning_vi": "dàn hợp xướng",
+          "example_en": "The choir is composed of about fifty members.",
+          "example_vi": "Dàn hợp xướng bao gồm khoảng năm mươi thành viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('dàn hợp xướng') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'dàn hợp xướng' là nghĩa phổ biến nhất của 'choir' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "choir",
+      "normalized_word": "choir",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The choir sang beautifully at the concert.",
+      "example_vi_clean": "Dàn hợp xướng đã hát rất hay trong buổi hòa nhạc."
+    },
+    {
+      "id": 25713,
+      "quiz_meaning_vi": "thuộc về Cơ Đốc giáo",
+      "meaning_vi_clean": "thuộc về Cơ Đốc giáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "He is a devout Christian.",
+          "example_vi": "Anh ấy là một người theo đạo Cơ Đốc mộ đạo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "The church follows Christian traditions.",
+          "example_vi": "Nhà thờ tuân theo các truyền thống Cơ Đốc giáo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "Many people celebrate Christian holidays.",
+          "example_vi": "Nhiều người kỷ niệm các ngày lễ Cơ Đốc giáo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "The book discusses Christian ethics.",
+          "example_vi": "Cuốn sách thảo luận về đạo đức Cơ Đốc giáo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "She grew up in a Christian family.",
+          "example_vi": "Cô ấy lớn lên trong một gia đình theo đạo Cơ Đốc."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "The museum has a collection of Christian art.",
+          "example_vi": "Bảo tàng có một bộ sưu tập nghệ thuật Cơ Đốc giáo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "He converted to Christianity.",
+          "example_vi": "Anh ấy đã cải đạo sang Cơ Đốc giáo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "The festival has Christian origins.",
+          "example_vi": "Lễ hội có nguồn gốc từ Cơ Đốc giáo."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "They are raising their children as Christians.",
+          "example_vi": "Họ đang nuôi dạy con cái mình theo đạo Cơ Đốc."
+        },
+        {
+          "meaning_vi": "thuộc về Cơ Đốc giáo",
+          "example_en": "The article explored the influence of Christian thought.",
+          "example_vi": "Bài báo đã khám phá ảnh hưởng của tư tưởng Cơ Đốc giáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('thuộc về Cơ Đốc giáo') và 10 ví dụ theo đúng tính từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'thuộc về Cơ Đốc giáo' là nghĩa phổ biến nhất của 'Christian' ở cấp độ B1 và được dùng như tính từ trong tất cả 10 ví dụ."
+      },
+      "word": "christian",
+      "normalized_word": "christian",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a devout Christian.",
+      "example_vi_clean": "Anh ấy là một người theo đạo Cơ Đốc mộ đạo."
+    },
+    {
+      "id": 25715,
+      "quiz_meaning_vi": "tiếng cười khúc khích",
+      "meaning_vi_clean": "tiếng cười khúc khích",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "I heard a soft chuckle from the next room.",
+          "example_vi": "Tôi nghe thấy tiếng cười khúc khích khe khẽ từ phòng bên cạnh."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "He let out a chuckle of amusement.",
+          "example_vi": "Anh ấy bật ra một tiếng cười khúc khích vì thích thú."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "Her chuckle was infectious.",
+          "example_vi": "Tiếng cười khúc khích của cô ấy thật dễ lây lan."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "A chuckle escaped his lips as he read the joke.",
+          "example_vi": "Một tiếng cười khúc khích thoát ra khỏi môi anh ấy khi anh ấy đọc câu chuyện cười."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "The audience responded with a collective chuckle.",
+          "example_vi": "Khán giả đã đáp lại bằng một tiếng cười khúc khích đồng loạt."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "He tried to hide his chuckle.",
+          "example_vi": "Anh ấy đã cố gắng che giấu tiếng cười khúc khích của mình."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "The story was so funny that it provoked a chuckle.",
+          "example_vi": "Câu chuyện hài hước đến nỗi nó gợi lên một tiếng cười khúc khích."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "She gave a little chuckle.",
+          "example_vi": "Cô ấy cười khúc khích một chút."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "His chuckle suggested he knew something funny.",
+          "example_vi": "Tiếng cười khúc khích của anh ấy cho thấy anh ấy biết điều gì đó hài hước."
+        },
+        {
+          "meaning_vi": "tiếng cười khúc khích",
+          "example_en": "The teacher heard a chuckle from the back of the classroom.",
+          "example_vi": "Giáo viên nghe thấy tiếng cười khúc khích từ phía sau lớp học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('tiếng cười khúc khích') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tiếng cười khúc khích' là nghĩa phổ biến nhất của 'chuckle' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "chuckle",
+      "normalized_word": "chuckle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I heard a soft chuckle from the next room.",
+      "example_vi_clean": "Tôi nghe thấy tiếng cười khúc khích khe khẽ từ phòng bên cạnh."
+    },
+    {
+      "id": 25722,
+      "quiz_meaning_vi": "yêu sách",
+      "meaning_vi_clean": "yêu sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "The workers made a claim for higher wages.",
+          "example_vi": "Công nhân đã đưa ra yêu sách đòi tăng lương."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "She filed a claim for damages.",
+          "example_vi": "Cô ấy đã nộp đơn yêu sách bồi thường thiệt hại."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "The insurance company rejected his claim.",
+          "example_vi": "Công ty bảo hiểm đã từ chối yêu sách của anh ấy."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "He has a claim to the throne.",
+          "example_vi": "Anh ấy có yêu sách đối với ngai vàng."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "The lawyer helped her with her claim.",
+          "example_vi": "Luật sư đã giúp cô ấy với yêu sách của mình."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "This is a valid claim.",
+          "example_vi": "Đây là một yêu sách hợp lệ."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "They are fighting for their claim to independence.",
+          "example_vi": "Họ đang đấu tranh cho yêu sách độc lập của mình."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "The company is dealing with a large number of claims.",
+          "example_vi": "Công ty đang xử lý một số lượng lớn các yêu sách."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "He made a claim that he was innocent.",
+          "example_vi": "Anh ấy đã đưa ra tuyên bố rằng mình vô tội."
+        },
+        {
+          "meaning_vi": "yêu sách",
+          "example_en": "The government acknowledged their claim.",
+          "example_vi": "Chính phủ đã thừa nhận yêu sách của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('yêu sách') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'yêu sách' là nghĩa phổ biến nhất của 'claim' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "claim",
+      "normalized_word": "claim",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The workers made a claim for higher wages.",
+      "example_vi_clean": "Công nhân đã đưa ra yêu sách đòi tăng lương."
+    },
+    {
+      "id": 25725,
+      "quiz_meaning_vi": "tiếng lách cách",
+      "meaning_vi_clean": "tiếng lách cách",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "I heard the click of the lock.",
+          "example_vi": "Tôi nghe thấy tiếng lách cách của ổ khóa."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The mouse made a soft click.",
+          "example_vi": "Con chuột phát ra một tiếng lách cách nhẹ."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "She heard the click of the camera shutter.",
+          "example_vi": "Cô ấy nghe thấy tiếng lách cách của màn trập máy ảnh."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The door closed with a click.",
+          "example_vi": "Cánh cửa đóng lại với một tiếng lách cách."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "He heard the click of the keyboard.",
+          "example_vi": "Anh ấy nghe thấy tiếng lách cách của bàn phím."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The remote control made a click when pressed.",
+          "example_vi": "Điều khiển từ xa phát ra tiếng lách cách khi được nhấn."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The sound of the switch was a distinct click.",
+          "example_vi": "Âm thanh của công tắc là một tiếng lách cách rõ rệt."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "She heard the click of her heels on the floor.",
+          "example_vi": "Cô ấy nghe thấy tiếng gót giày lách cách trên sàn nhà."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The mechanism made a loud click.",
+          "example_vi": "Cơ chế phát ra một tiếng lách cách lớn."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "He heard the click of the pen.",
+          "example_vi": "Anh ấy nghe thấy tiếng lách cách của cây bút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất ('tiếng lách cách') và 10 ví dụ theo đúng danh từ nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tiếng lách cách' là nghĩa phổ biến nhất của 'click' ở cấp độ B1 và được dùng như danh từ trong tất cả 10 ví dụ."
+      },
+      "word": "click",
+      "normalized_word": "click",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I heard the click of the lock.",
+      "example_vi_clean": "Tôi nghe thấy tiếng lách cách của ổ khóa."
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25781,
+      "quiz_meaning_vi": "sự liên quan",
+      "meaning_vi_clean": "sự liên quan; sự liên lạc; mối quan hệ; khách hàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "There is a clear connection between smoking and health problems.",
+          "example_vi": "Có một sự liên quan rõ ràng giữa việc hút thuốc và các vấn đề sức khỏe."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "I see no connection between these two events.",
+          "example_vi": "Tôi không thấy sự liên quan nào giữa hai sự kiện này."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "The police are investigating the connection between the two crimes.",
+          "example_vi": "Cảnh sát đang điều tra sự liên quan giữa hai vụ án."
+        },
+        {
+          "meaning_vi": "sự liên quan",
+          "example_en": "Is there any connection between the two companies?",
+          "example_vi": "Có sự liên quan nào giữa hai công ty này không?"
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "We lost connection with the base during the storm.",
+          "example_vi": "Chúng tôi đã mất sự liên lạc với căn cứ trong cơn bão."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "He tried to establish a connection with his old friends.",
+          "example_vi": "Anh ấy đã cố gắng thiết lập sự liên lạc với những người bạn cũ."
+        },
+        {
+          "meaning_vi": "mối quan hệ",
+          "example_en": "They have a strong connection based on mutual trust.",
+          "example_vi": "Họ có một mối quan hệ bền chặt dựa trên sự tin tưởng lẫn nhau."
+        },
+        {
+          "meaning_vi": "mối quan hệ",
+          "example_en": "She has many useful connections in the business world.",
+          "example_vi": "Cô ấy có nhiều mối quan hệ hữu ích trong giới kinh doanh."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The shop has built up a loyal base of connections over the years.",
+          "example_vi": "Cửa hàng đã xây dựng được một lượng khách hàng trung thành qua nhiều năm."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "He uses his business connections to get better deals.",
+          "example_vi": "Anh ấy sử dụng các khách hàng doanh nghiệp của mình để có được những thỏa thuận tốt hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lọc bỏ các nghĩa hiếm, giữ lại các nghĩa phổ biến nhất. Bổ sung 10 ví dụ minh họa rõ ràng.",
+      "word": "connexion",
+      "normalized_word": "connexion",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is a clear connection between smoking and health problems.",
+      "example_vi_clean": "Có một sự liên quan rõ ràng giữa việc hút thuốc và các vấn đề sức khỏe."
+    },
+    {
+      "id": 25782,
+      "quiz_meaning_vi": "xâm chiếm",
+      "meaning_vi_clean": "xâm chiếm; chiến thắng; chinh phục",
+      "examples_clean": [
+        {
+          "meaning_vi": "xâm chiếm",
+          "example_en": "The army moved to conquer the neighboring territory.",
+          "example_vi": "Quân đội đã tiến quân để xâm chiếm vùng lãnh thổ lân cận."
+        },
+        {
+          "meaning_vi": "xâm chiếm",
+          "example_en": "History is full of attempts to conquer new lands.",
+          "example_vi": "Lịch sử đầy rẫy những nỗ lực xâm chiếm các vùng đất mới."
+        },
+        {
+          "meaning_vi": "xâm chiếm",
+          "example_en": "The invaders sought to conquer the entire region.",
+          "example_vi": "Những kẻ xâm lược đã tìm cách xâm chiếm toàn bộ khu vực."
+        },
+        {
+          "meaning_vi": "xâm chiếm",
+          "example_en": "They failed to conquer the city despite many attacks.",
+          "example_vi": "Họ đã thất bại trong việc xâm chiếm thành phố mặc dù đã tấn công nhiều lần."
+        },
+        {
+          "meaning_vi": "chiến thắng",
+          "example_en": "He managed to conquer his fear of public speaking.",
+          "example_vi": "Anh ấy đã chiến thắng nỗi sợ nói trước đám đông của mình."
+        },
+        {
+          "meaning_vi": "chiến thắng",
+          "example_en": "She worked hard to conquer her bad habits.",
+          "example_vi": "Cô ấy đã làm việc chăm chỉ để chiến thắng những thói quen xấu của mình."
+        },
+        {
+          "meaning_vi": "chiến thắng",
+          "example_en": "It is difficult to conquer such a strong opponent.",
+          "example_vi": "Thật khó để chiến thắng một đối thủ mạnh như vậy."
+        },
+        {
+          "meaning_vi": "chinh phục",
+          "example_en": "The climbers were determined to conquer the mountain peak.",
+          "example_vi": "Những người leo núi đã quyết tâm chinh phục đỉnh núi."
+        },
+        {
+          "meaning_vi": "chinh phục",
+          "example_en": "Science helps us conquer many diseases.",
+          "example_vi": "Khoa học giúp chúng ta chinh phục nhiều loại bệnh tật."
+        },
+        {
+          "meaning_vi": "chinh phục",
+          "example_en": "He wants to conquer the world of music.",
+          "example_vi": "Anh ấy muốn chinh phục thế giới âm nhạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa cho phù hợp với từ loại động từ. Bổ sung 10 ví dụ.",
+      "word": "conquer",
+      "normalized_word": "conquer",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The army moved to conquer the neighboring territory.",
+      "example_vi_clean": "Quân đội đã tiến quân để xâm chiếm vùng lãnh thổ lân cận."
+    },
+    {
+      "id": 25783,
+      "quiz_meaning_vi": "biết rõ",
+      "meaning_vi_clean": "biết rõ; tỉnh táo; có ý thức",
+      "examples_clean": [
+        {
+          "meaning_vi": "biết rõ",
+          "example_en": "I was conscious of someone watching me from the shadows.",
+          "example_vi": "Tôi biết rõ có người đang theo dõi mình từ trong bóng tối."
+        },
+        {
+          "meaning_vi": "biết rõ",
+          "example_en": "She is very conscious of her responsibilities at work.",
+          "example_vi": "Cô ấy biết rõ trách nhiệm của mình tại nơi làm việc."
+        },
+        {
+          "meaning_vi": "biết rõ",
+          "example_en": "He is conscious of the fact that he needs to improve.",
+          "example_vi": "Anh ấy biết rõ thực tế rằng mình cần phải cải thiện."
+        },
+        {
+          "meaning_vi": "biết rõ",
+          "example_en": "They are conscious of the risks involved in this project.",
+          "example_vi": "Họ biết rõ những rủi ro liên quan đến dự án này."
+        },
+        {
+          "meaning_vi": "tỉnh táo",
+          "example_en": "The patient was fully conscious after the surgery.",
+          "example_vi": "Bệnh nhân đã hoàn toàn tỉnh táo sau ca phẫu thuật."
+        },
+        {
+          "meaning_vi": "tỉnh táo",
+          "example_en": "He remained conscious throughout the entire ordeal.",
+          "example_vi": "Anh ấy vẫn tỉnh táo trong suốt thử thách đó."
+        },
+        {
+          "meaning_vi": "tỉnh táo",
+          "example_en": "She was barely conscious when the ambulance arrived.",
+          "example_vi": "Cô ấy gần như không tỉnh táo khi xe cứu thương đến."
+        },
+        {
+          "meaning_vi": "có ý thức",
+          "example_en": "We need to be more conscious of our impact on the environment.",
+          "example_vi": "Chúng ta cần có ý thức hơn về tác động của mình đối với môi trường."
+        },
+        {
+          "meaning_vi": "có ý thức",
+          "example_en": "He is very health-conscious and exercises daily.",
+          "example_vi": "Anh ấy rất có ý thức về sức khỏe và tập thể dục hàng ngày."
+        },
+        {
+          "meaning_vi": "có ý thức",
+          "example_en": "She made a conscious decision to change her career path.",
+          "example_vi": "Cô ấy đã đưa ra một quyết định có ý thức để thay đổi con đường sự nghiệp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lại nghĩa cho phù hợp với tính từ. Bổ sung ví dụ để đủ 10 câu.",
+      "word": "conscious",
+      "normalized_word": "conscious",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I was conscious of someone watching me from the shadows.",
+      "example_vi_clean": "Tôi biết rõ có người đang theo dõi mình từ trong bóng tối."
+    },
+    {
+      "id": 25784,
+      "quiz_meaning_vi": "do đó",
+      "meaning_vi_clean": "do đó; vì vậy",
+      "examples_clean": [
+        {
+          "meaning_vi": "do đó",
+          "example_en": "He didn't study hard; consequently, he failed the exam.",
+          "example_vi": "Anh ấy đã không học hành chăm chỉ; do đó, anh ấy đã trượt kỳ thi."
+        },
+        {
+          "meaning_vi": "do đó",
+          "example_en": "The road was flooded; consequently, the bus was delayed.",
+          "example_vi": "Con đường bị ngập lụt; do đó, chuyến xe buýt đã bị hoãn."
+        },
+        {
+          "meaning_vi": "do đó",
+          "example_en": "She missed the train; consequently, she arrived late.",
+          "example_vi": "Cô ấy đã lỡ chuyến tàu; do đó, cô ấy đã đến muộn."
+        },
+        {
+          "meaning_vi": "do đó",
+          "example_en": "The company lost money; consequently, they had to cut jobs.",
+          "example_vi": "Công ty bị thua lỗ; do đó, họ đã phải cắt giảm việc làm."
+        },
+        {
+          "meaning_vi": "vì vậy",
+          "example_en": "It rained heavily, and consequently, the match was cancelled.",
+          "example_vi": "Trời mưa to, và vì vậy, trận đấu đã bị hủy bỏ."
+        },
+        {
+          "meaning_vi": "vì vậy",
+          "example_en": "He was very tired; consequently, he went to bed early.",
+          "example_vi": "Anh ấy rất mệt; vì vậy, anh ấy đã đi ngủ sớm."
+        },
+        {
+          "meaning_vi": "vì vậy",
+          "example_en": "The prices rose; consequently, demand fell.",
+          "example_vi": "Giá cả tăng lên; vì vậy, nhu cầu đã giảm xuống."
+        },
+        {
+          "meaning_vi": "vì vậy",
+          "example_en": "She forgot her keys; consequently, she couldn't enter the house.",
+          "example_vi": "Cô ấy quên chìa khóa; vì vậy, cô ấy không thể vào nhà."
+        },
+        {
+          "meaning_vi": "vì vậy",
+          "example_en": "The engine failed; consequently, the car stopped.",
+          "example_vi": "Động cơ bị hỏng; vì vậy, chiếc xe đã dừng lại."
+        },
+        {
+          "meaning_vi": "vì vậy",
+          "example_en": "He broke the rules; consequently, he was punished.",
+          "example_vi": "Anh ấy đã phá vỡ các quy tắc; vì vậy, anh ấy đã bị phạt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "consequently",
+      "normalized_word": "consequently",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He didn't study hard; consequently, he failed the exam.",
+      "example_vi_clean": "Anh ấy đã không học hành chăm chỉ; do đó, anh ấy đã trượt kỳ thi."
+    },
+    {
+      "id": 25785,
+      "quiz_meaning_vi": "sự giữ gìn",
+      "meaning_vi_clean": "sự giữ gìn; sự bảo tồn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giữ gìn",
+          "example_en": "The conservation of water is important during the drought.",
+          "example_vi": "Sự giữ gìn nguồn nước là rất quan trọng trong thời gian hạn hán."
+        },
+        {
+          "meaning_vi": "sự giữ gìn",
+          "example_en": "We must focus on the conservation of our natural resources.",
+          "example_vi": "Chúng ta phải tập trung vào sự giữ gìn các nguồn tài nguyên thiên nhiên."
+        },
+        {
+          "meaning_vi": "sự giữ gìn",
+          "example_en": "Energy conservation helps reduce electricity bills.",
+          "example_vi": "Sự giữ gìn năng lượng giúp giảm hóa đơn tiền điện."
+        },
+        {
+          "meaning_vi": "sự giữ gìn",
+          "example_en": "The conservation of historical buildings is a priority.",
+          "example_vi": "Sự giữ gìn các tòa nhà lịch sử là một ưu tiên."
+        },
+        {
+          "meaning_vi": "sự bảo tồn",
+          "example_en": "Wildlife conservation is essential for the ecosystem.",
+          "example_vi": "Sự bảo tồn động vật hoang dã là cần thiết cho hệ sinh thái."
+        },
+        {
+          "meaning_vi": "sự bảo tồn",
+          "example_en": "Many organizations work for the conservation of endangered species.",
+          "example_vi": "Nhiều tổ chức làm việc vì sự bảo tồn các loài có nguy cơ tuyệt chủng."
+        },
+        {
+          "meaning_vi": "sự bảo tồn",
+          "example_en": "The forest conservation project has been very successful.",
+          "example_vi": "Dự án bảo tồn rừng đã rất thành công."
+        },
+        {
+          "meaning_vi": "sự bảo tồn",
+          "example_en": "We need better laws for the conservation of the environment.",
+          "example_vi": "Chúng ta cần những luật tốt hơn cho sự bảo tồn môi trường."
+        },
+        {
+          "meaning_vi": "sự bảo tồn",
+          "example_en": "The museum is dedicated to the conservation of ancient art.",
+          "example_vi": "Bảo tàng dành riêng cho sự bảo tồn nghệ thuật cổ đại."
+        },
+        {
+          "meaning_vi": "sự bảo tồn",
+          "example_en": "Marine conservation is vital for the health of our oceans.",
+          "example_vi": "Sự bảo tồn biển là rất quan trọng đối với sức khỏe của các đại dương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "conservation",
+      "normalized_word": "conservation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The conservation of water is important during the drought.",
+      "example_vi_clean": "Sự giữ gìn nguồn nước là rất quan trọng trong thời gian hạn hán."
+    },
+    {
+      "id": 25786,
+      "quiz_meaning_vi": "bảo thủ",
+      "meaning_vi_clean": "bảo thủ; thận trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bảo thủ",
+          "example_en": "He has very conservative views on education.",
+          "example_vi": "Anh ấy có những quan điểm rất bảo thủ về giáo dục."
+        },
+        {
+          "meaning_vi": "bảo thủ",
+          "example_en": "The older generation tends to be more conservative.",
+          "example_vi": "Thế hệ lớn tuổi có xu hướng bảo thủ hơn."
+        },
+        {
+          "meaning_vi": "bảo thủ",
+          "example_en": "She is conservative in her political beliefs.",
+          "example_vi": "Cô ấy bảo thủ trong các niềm tin chính trị của mình."
+        },
+        {
+          "meaning_vi": "bảo thủ",
+          "example_en": "The company's management is too conservative to innovate.",
+          "example_vi": "Ban quản lý của công ty quá bảo thủ để đổi mới."
+        },
+        {
+          "meaning_vi": "bảo thủ",
+          "example_en": "They prefer a conservative approach to change.",
+          "example_vi": "Họ thích một cách tiếp cận bảo thủ đối với sự thay đổi."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "We made a conservative estimate of the costs.",
+          "example_vi": "Chúng tôi đã đưa ra một ước tính thận trọng về chi phí."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "He is a conservative driver who never speeds.",
+          "example_vi": "Anh ấy là một người lái xe thận trọng, không bao giờ chạy quá tốc độ."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "The doctor gave a conservative prognosis for his recovery.",
+          "example_vi": "Bác sĩ đã đưa ra một tiên lượng thận trọng cho sự hồi phục của anh ấy."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "She took a conservative investment strategy to avoid risk.",
+          "example_vi": "Cô ấy đã chọn một chiến lược đầu tư thận trọng để tránh rủi ro."
+        },
+        {
+          "meaning_vi": "thận trọng",
+          "example_en": "It is better to be conservative when planning for the future.",
+          "example_vi": "Tốt hơn là nên thận trọng khi lập kế hoạch cho tương lai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ theo từ điển. Bổ sung ví dụ.",
+      "word": "conservative",
+      "normalized_word": "conservative",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has very conservative views on education.",
+      "example_vi_clean": "Anh ấy có những quan điểm rất bảo thủ về giáo dục."
+    },
+    {
+      "id": 25787,
+      "quiz_meaning_vi": "đáng kể",
+      "meaning_vi_clean": "đáng kể; lớn",
+      "examples_clean": [
+        {
+          "meaning_vi": "đáng kể",
+          "example_en": "There has been a considerable improvement in his health.",
+          "example_vi": "Đã có một sự cải thiện đáng kể trong sức khỏe của anh ấy."
+        },
+        {
+          "meaning_vi": "đáng kể",
+          "example_en": "The project took a considerable amount of time to finish.",
+          "example_vi": "Dự án đã mất một khoảng thời gian đáng kể để hoàn thành."
+        },
+        {
+          "meaning_vi": "đáng kể",
+          "example_en": "She has a considerable talent for painting.",
+          "example_vi": "Cô ấy có một tài năng đáng kể về hội họa."
+        },
+        {
+          "meaning_vi": "đáng kể",
+          "example_en": "The damage to the building was considerable.",
+          "example_vi": "Thiệt hại đối với tòa nhà là đáng kể."
+        },
+        {
+          "meaning_vi": "đáng kể",
+          "example_en": "He has a considerable influence on the team.",
+          "example_vi": "Anh ấy có một ảnh hưởng đáng kể đối với đội."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "They faced a considerable challenge during the climb.",
+          "example_vi": "Họ đã đối mặt với một thử thách lớn trong chuyến leo núi."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "The cost of the repair was considerable.",
+          "example_vi": "Chi phí sửa chữa là rất lớn."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "There is a considerable difference between the two results.",
+          "example_vi": "Có một sự khác biệt lớn giữa hai kết quả."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "She has a considerable collection of rare books.",
+          "example_vi": "Cô ấy có một bộ sưu tập lớn các cuốn sách quý hiếm."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "The city has a considerable population.",
+          "example_vi": "Thành phố có một dân số lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ. Bổ sung ví dụ.",
+      "word": "considerable",
+      "normalized_word": "considerable",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "There has been a considerable improvement in his health.",
+      "example_vi_clean": "Đã có một sự cải thiện đáng kể trong sức khỏe của anh ấy."
+    },
+    {
+      "id": 25788,
+      "quiz_meaning_vi": "sự cân nhắc",
+      "meaning_vi_clean": "sự cân nhắc; sự quan tâm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cân nhắc",
+          "example_en": "After careful consideration, I accepted the job offer.",
+          "example_vi": "Sau sự cân nhắc kỹ lưỡng, tôi đã chấp nhận lời mời làm việc."
+        },
+        {
+          "meaning_vi": "sự cân nhắc",
+          "example_en": "The proposal is still under consideration.",
+          "example_vi": "Đề xuất vẫn đang được cân nhắc."
+        },
+        {
+          "meaning_vi": "sự cân nhắc",
+          "example_en": "We need to give some consideration to the budget.",
+          "example_vi": "Chúng ta cần dành sự cân nhắc cho ngân sách."
+        },
+        {
+          "meaning_vi": "sự cân nhắc",
+          "example_en": "His decision was made without much consideration.",
+          "example_vi": "Quyết định của anh ấy được đưa ra mà không có nhiều sự cân nhắc."
+        },
+        {
+          "meaning_vi": "sự cân nhắc",
+          "example_en": "The plan deserves further consideration.",
+          "example_vi": "Kế hoạch này xứng đáng được cân nhắc thêm."
+        },
+        {
+          "meaning_vi": "sự quan tâm",
+          "example_en": "He showed great consideration for his elderly neighbors.",
+          "example_vi": "Anh ấy đã thể hiện sự quan tâm lớn đối với những người hàng xóm lớn tuổi của mình."
+        },
+        {
+          "meaning_vi": "sự quan tâm",
+          "example_en": "Please show some consideration for others in the library.",
+          "example_vi": "Vui lòng thể hiện sự quan tâm đến người khác trong thư viện."
+        },
+        {
+          "meaning_vi": "sự quan tâm",
+          "example_en": "She is known for her kindness and consideration.",
+          "example_vi": "Cô ấy nổi tiếng vì sự tử tế và sự quan tâm của mình."
+        },
+        {
+          "meaning_vi": "sự quan tâm",
+          "example_en": "It was a gesture of consideration for his feelings.",
+          "example_vi": "Đó là một cử chỉ thể hiện sự quan tâm đến cảm xúc của anh ấy."
+        },
+        {
+          "meaning_vi": "sự quan tâm",
+          "example_en": "Thank you for your consideration in this matter.",
+          "example_vi": "Cảm ơn bạn vì sự quan tâm của bạn trong vấn đề này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "consideration",
+      "normalized_word": "consideration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "After careful consideration, I accepted the job offer.",
+      "example_vi_clean": "Sau sự cân nhắc kỹ lưỡng, tôi đã chấp nhận lời mời làm việc."
+    },
+    {
+      "id": 25789,
+      "quiz_meaning_vi": "phụ âm",
+      "meaning_vi_clean": "phụ âm; phù hợp",
+      "examples_clean": [
+        {
+          "meaning_vi": "phụ âm",
+          "example_en": "The letter 'B' is a consonant.",
+          "example_vi": "Chữ 'B' là một phụ âm."
+        },
+        {
+          "meaning_vi": "phụ âm",
+          "example_en": "English words often start with a consonant.",
+          "example_vi": "Các từ tiếng Anh thường bắt đầu bằng một phụ âm."
+        },
+        {
+          "meaning_vi": "phụ âm",
+          "example_en": "Can you identify the consonant in this word?",
+          "example_vi": "Bạn có thể xác định phụ âm trong từ này không?"
+        },
+        {
+          "meaning_vi": "phụ âm",
+          "example_en": "The word 'cat' has two consonants.",
+          "example_vi": "Từ 'cat' có hai phụ âm."
+        },
+        {
+          "meaning_vi": "phụ âm",
+          "example_en": "He struggled to pronounce the final consonant.",
+          "example_vi": "Anh ấy đã gặp khó khăn khi phát âm phụ âm cuối."
+        },
+        {
+          "meaning_vi": "phù hợp",
+          "example_en": "His actions were consonant with his beliefs.",
+          "example_vi": "Hành động của anh ấy phù hợp với niềm tin của mình."
+        },
+        {
+          "meaning_vi": "phù hợp",
+          "example_en": "The results are consonant with our expectations.",
+          "example_vi": "Các kết quả phù hợp với kỳ vọng của chúng tôi."
+        },
+        {
+          "meaning_vi": "phù hợp",
+          "example_en": "Her behavior is not consonant with the rules.",
+          "example_vi": "Hành vi của cô ấy không phù hợp với các quy tắc."
+        },
+        {
+          "meaning_vi": "phù hợp",
+          "example_en": "These values are consonant with our company culture.",
+          "example_vi": "Những giá trị này phù hợp với văn hóa công ty chúng tôi."
+        },
+        {
+          "meaning_vi": "phù hợp",
+          "example_en": "The decision is consonant with the law.",
+          "example_vi": "Quyết định này phù hợp với pháp luật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính từ 'thuận tai' sang 'phụ âm' vì đây là nghĩa phổ biến nhất của danh từ. Bổ sung ví dụ.",
+      "word": "consonant",
+      "normalized_word": "consonant",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The letter 'B' is a consonant.",
+      "example_vi_clean": "Chữ 'B' là một phụ âm."
+    },
+    {
+      "id": 25790,
+      "quiz_meaning_vi": "cấu tạo",
+      "meaning_vi_clean": "cấu tạo; thiết lập",
+      "examples_clean": [
+        {
+          "meaning_vi": "cấu tạo",
+          "example_en": "These elements constitute the basic structure of the building.",
+          "example_vi": "Những yếu tố này cấu tạo nên cấu trúc cơ bản của tòa nhà."
+        },
+        {
+          "meaning_vi": "cấu tạo",
+          "example_en": "What constitutes a healthy diet?",
+          "example_vi": "Điều gì cấu tạo nên một chế độ ăn uống lành mạnh?"
+        },
+        {
+          "meaning_vi": "cấu tạo",
+          "example_en": "These small parts constitute the whole machine.",
+          "example_vi": "Những bộ phận nhỏ này cấu tạo nên toàn bộ cỗ máy."
+        },
+        {
+          "meaning_vi": "cấu tạo",
+          "example_en": "The committee is constituted of experts from various fields.",
+          "example_vi": "Ủy ban được cấu tạo bởi các chuyên gia từ nhiều lĩnh vực khác nhau."
+        },
+        {
+          "meaning_vi": "cấu tạo",
+          "example_en": "These facts constitute evidence of his innocence.",
+          "example_vi": "Những sự thật này cấu tạo nên bằng chứng cho sự vô tội của anh ấy."
+        },
+        {
+          "meaning_vi": "thiết lập",
+          "example_en": "They decided to constitute a new board of directors.",
+          "example_vi": "Họ đã quyết định thiết lập một hội đồng quản trị mới."
+        },
+        {
+          "meaning_vi": "thiết lập",
+          "example_en": "The government will constitute a special task force.",
+          "example_vi": "Chính phủ sẽ thiết lập một lực lượng đặc nhiệm đặc biệt."
+        },
+        {
+          "meaning_vi": "thiết lập",
+          "example_en": "The law was constituted to protect the rights of citizens.",
+          "example_vi": "Luật đã được thiết lập để bảo vệ quyền lợi của công dân."
+        },
+        {
+          "meaning_vi": "thiết lập",
+          "example_en": "They aim to constitute a new organization for charity.",
+          "example_vi": "Họ nhắm đến việc thiết lập một tổ chức mới vì mục đích từ thiện."
+        },
+        {
+          "meaning_vi": "thiết lập",
+          "example_en": "The group was constituted to address the local issues.",
+          "example_vi": "Nhóm đã được thiết lập để giải quyết các vấn đề địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "constitute",
+      "normalized_word": "constitute",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "These elements constitute the basic structure of the building.",
+      "example_vi_clean": "Những yếu tố này cấu tạo nên cấu trúc cơ bản của tòa nhà."
+    }
+  ]
+}

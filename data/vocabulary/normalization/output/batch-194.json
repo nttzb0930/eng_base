@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25931,
+      "quiz_meaning_vi": "thẳng",
+      "meaning_vi_clean": "thẳng; ngay; trực tiếp",
+      "examples_clean": [
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "He drove directly to the office without stopping.",
+          "example_vi": "Anh ấy lái xe thẳng đến văn phòng mà không dừng lại."
+        },
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "The road goes directly to the city center.",
+          "example_vi": "Con đường này đi thẳng đến trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "Look directly at me when you speak.",
+          "example_vi": "Hãy nhìn thẳng vào tôi khi bạn nói."
+        },
+        {
+          "meaning_vi": "thẳng",
+          "example_en": "The building is located directly across the street.",
+          "example_vi": "Tòa nhà nằm ngay phía bên kia đường."
+        },
+        {
+          "meaning_vi": "ngay",
+          "example_en": "I will be there directly.",
+          "example_vi": "Tôi sẽ có mặt ở đó ngay."
+        },
+        {
+          "meaning_vi": "ngay",
+          "example_en": "He left directly after the meeting ended.",
+          "example_vi": "Anh ấy rời đi ngay sau khi cuộc họp kết thúc."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "I want to speak to the manager directly.",
+          "example_vi": "Tôi muốn nói chuyện trực tiếp với người quản lý."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "She is directly responsible for this project.",
+          "example_vi": "Cô ấy chịu trách nhiệm trực tiếp cho dự án này."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "We are directly affected by the new policy.",
+          "example_vi": "Chúng tôi bị ảnh hưởng trực tiếp bởi chính sách mới."
+        },
+        {
+          "meaning_vi": "trực tiếp",
+          "example_en": "You can contact the office directly by email.",
+          "example_vi": "Bạn có thể liên hệ trực tiếp với văn phòng qua email."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ loại phó từ, loại bỏ nghĩa liên từ không phổ biến, bổ sung ví dụ minh họa đầy đủ.",
+      "word": "directly",
+      "normalized_word": "directly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He drove directly to the office without stopping.",
+      "example_vi_clean": "Anh ấy lái xe thẳng đến văn phòng mà không dừng lại."
+    },
+    {
+      "id": 25932,
+      "quiz_meaning_vi": "đất",
+      "meaning_vi_clean": "đất; đồ bẩn thỉu",
+      "examples_clean": [
+        {
+          "meaning_vi": "đất",
+          "example_en": "There is dirt on your shoes.",
+          "example_vi": "Có đất dính trên giày của bạn."
+        },
+        {
+          "meaning_vi": "đất",
+          "example_en": "The children were playing in the dirt.",
+          "example_vi": "Lũ trẻ đang chơi đùa dưới đất."
+        },
+        {
+          "meaning_vi": "đất",
+          "example_en": "He wiped the dirt off his hands.",
+          "example_vi": "Anh ấy lau sạch đất trên tay mình."
+        },
+        {
+          "meaning_vi": "đất",
+          "example_en": "The plant needs good soil, not just dirt.",
+          "example_vi": "Cây cần đất tốt, không phải chỉ là đất bẩn."
+        },
+        {
+          "meaning_vi": "đồ bẩn thỉu",
+          "example_en": "The floor was covered in dirt.",
+          "example_vi": "Sàn nhà bị bao phủ bởi đồ bẩn thỉu."
+        },
+        {
+          "meaning_vi": "đồ bẩn thỉu",
+          "example_en": "Wash your clothes to remove the dirt.",
+          "example_vi": "Hãy giặt quần áo để loại bỏ đồ bẩn thỉu."
+        },
+        {
+          "meaning_vi": "đồ bẩn thỉu",
+          "example_en": "The kitchen was full of dirt and grease.",
+          "example_vi": "Nhà bếp đầy đồ bẩn thỉu và dầu mỡ."
+        },
+        {
+          "meaning_vi": "đồ bẩn thỉu",
+          "example_en": "She hates the dirt in the city streets.",
+          "example_vi": "Cô ấy ghét sự bẩn thỉu trên đường phố."
+        },
+        {
+          "meaning_vi": "đồ bẩn thỉu",
+          "example_en": "Clean the dirt from the windows.",
+          "example_vi": "Hãy lau sạch đồ bẩn thỉu trên cửa sổ."
+        },
+        {
+          "meaning_vi": "đồ bẩn thỉu",
+          "example_en": "The dog brought a lot of dirt into the house.",
+          "example_vi": "Con chó đã mang rất nhiều đồ bẩn thỉu vào nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa sai lệch hoàn toàn (đâm bằng dao găm), giữ nghĩa phổ biến là đất và đồ bẩn thỉu.",
+      "word": "dirt",
+      "normalized_word": "dirt",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is dirt on your shoes.",
+      "example_vi_clean": "Có đất dính trên giày của bạn."
+    },
+    {
+      "id": 25933,
+      "quiz_meaning_vi": "sự khuyết tật",
+      "meaning_vi_clean": "sự khuyết tật; sự ốm yếu",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự khuyết tật",
+          "example_en": "The school provides support for students with a disability.",
+          "example_vi": "Trường học cung cấp hỗ trợ cho học sinh có sự khuyết tật."
+        },
+        {
+          "meaning_vi": "sự khuyết tật",
+          "example_en": "He has a physical disability but lives independently.",
+          "example_vi": "Anh ấy có sự khuyết tật về thể chất nhưng sống độc lập."
+        },
+        {
+          "meaning_vi": "sự khuyết tật",
+          "example_en": "The building has access for people with a disability.",
+          "example_vi": "Tòa nhà có lối đi cho người có sự khuyết tật."
+        },
+        {
+          "meaning_vi": "sự khuyết tật",
+          "example_en": "Learning disability affects how people process information.",
+          "example_vi": "Sự khuyết tật trong học tập ảnh hưởng đến cách mọi người xử lý thông tin."
+        },
+        {
+          "meaning_vi": "sự ốm yếu",
+          "example_en": "Her long-term disability prevented her from working.",
+          "example_vi": "Sự ốm yếu kéo dài đã ngăn cản cô ấy làm việc."
+        },
+        {
+          "meaning_vi": "sự ốm yếu",
+          "example_en": "He receives a pension due to his disability.",
+          "example_vi": "Anh ấy nhận lương hưu do sự ốm yếu của mình."
+        },
+        {
+          "meaning_vi": "sự ốm yếu",
+          "example_en": "The company offers insurance for disability.",
+          "example_vi": "Công ty cung cấp bảo hiểm cho sự ốm yếu."
+        },
+        {
+          "meaning_vi": "sự ốm yếu",
+          "example_en": "She overcame her disability to become an athlete.",
+          "example_vi": "Cô ấy đã vượt qua sự ốm yếu của mình để trở thành vận động viên."
+        },
+        {
+          "meaning_vi": "sự ốm yếu",
+          "example_en": "They are campaigning for better rights for those with a disability.",
+          "example_vi": "Họ đang vận động cho quyền lợi tốt hơn cho những người có sự ốm yếu."
+        },
+        {
+          "meaning_vi": "sự ốm yếu",
+          "example_en": "His disability makes it hard to walk long distances.",
+          "example_vi": "Sự ốm yếu khiến anh ấy khó đi bộ quãng đường dài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa 'sự bất tài' thành 'sự khuyết tật' cho phù hợp ngữ cảnh CEFR B1.",
+      "word": "disability",
+      "normalized_word": "disability",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The school provides support for students with a disability.",
+      "example_vi_clean": "Trường học cung cấp hỗ trợ cho học sinh có sự khuyết tật."
+    },
+    {
+      "id": 25934,
+      "quiz_meaning_vi": "làm cho tàn tật",
+      "meaning_vi_clean": "làm cho tàn tật; làm mất khả năng hoạt động",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm cho tàn tật",
+          "example_en": "The accident disabled him for life.",
+          "example_vi": "Tai nạn đã làm cho anh ấy tàn tật suốt đời."
+        },
+        {
+          "meaning_vi": "làm cho tàn tật",
+          "example_en": "The disease can disable a person quickly.",
+          "example_vi": "Căn bệnh có thể làm cho một người tàn tật nhanh chóng."
+        },
+        {
+          "meaning_vi": "làm cho tàn tật",
+          "example_en": "He was disabled in the war.",
+          "example_vi": "Anh ấy đã bị làm cho tàn tật trong chiến tranh."
+        },
+        {
+          "meaning_vi": "làm cho tàn tật",
+          "example_en": "The injury disabled him from playing sports.",
+          "example_vi": "Chấn thương đã làm cho anh ấy tàn tật không thể chơi thể thao."
+        },
+        {
+          "meaning_vi": "làm mất khả năng hoạt động",
+          "example_en": "The virus disabled the computer system.",
+          "example_vi": "Virus đã làm mất khả năng hoạt động của hệ thống máy tính."
+        },
+        {
+          "meaning_vi": "làm mất khả năng hoạt động",
+          "example_en": "They disabled the alarm before entering.",
+          "example_vi": "Họ đã làm mất khả năng hoạt động của báo động trước khi vào."
+        },
+        {
+          "meaning_vi": "làm mất khả năng hoạt động",
+          "example_en": "The police disabled the car to stop the thief.",
+          "example_vi": "Cảnh sát đã làm mất khả năng hoạt động của chiếc xe để chặn tên trộm."
+        },
+        {
+          "meaning_vi": "làm mất khả năng hoạt động",
+          "example_en": "You should disable the feature if you don't use it.",
+          "example_vi": "Bạn nên làm mất khả năng hoạt động của tính năng đó nếu không dùng."
+        },
+        {
+          "meaning_vi": "làm mất khả năng hoạt động",
+          "example_en": "The bomb squad disabled the explosive device.",
+          "example_vi": "Đội phá bom đã làm mất khả năng hoạt động của thiết bị nổ."
+        },
+        {
+          "meaning_vi": "làm mất khả năng hoạt động",
+          "example_en": "The software was disabled by the administrator.",
+          "example_vi": "Phần mềm đã bị làm mất khả năng hoạt động bởi quản trị viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa 'làm cho bất lực' thành 'làm cho tàn tật' và 'làm mất khả năng hoạt động' để rõ nghĩa hơn.",
+      "word": "disable",
+      "normalized_word": "disable",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The accident disabled him for life.",
+      "example_vi_clean": "Tai nạn đã làm cho anh ấy tàn tật suốt đời."
+    },
+    {
+      "id": 25935,
+      "quiz_meaning_vi": "bị tàn tật",
+      "meaning_vi_clean": "bị tàn tật",
+      "examples_clean": [
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "He is a disabled person who loves sports.",
+          "example_vi": "Anh ấy là một người bị tàn tật yêu thể thao."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "The building has facilities for disabled people.",
+          "example_vi": "Tòa nhà có cơ sở vật chất cho người bị tàn tật."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "She works with disabled children.",
+          "example_vi": "Cô ấy làm việc với những trẻ em bị tàn tật."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "Many disabled people face challenges every day.",
+          "example_vi": "Nhiều người bị tàn tật đối mặt với thử thách mỗi ngày."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "The parking space is reserved for disabled drivers.",
+          "example_vi": "Chỗ đậu xe được dành riêng cho tài xế bị tàn tật."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "He became disabled after the accident.",
+          "example_vi": "Anh ấy trở nên bị tàn tật sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "The organization supports disabled veterans.",
+          "example_vi": "Tổ chức này hỗ trợ các cựu chiến binh bị tàn tật."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "They provide equipment for disabled students.",
+          "example_vi": "Họ cung cấp thiết bị cho học sinh bị tàn tật."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "The ramp is for disabled access.",
+          "example_vi": "Lối đi dốc là dành cho người bị tàn tật."
+        },
+        {
+          "meaning_vi": "bị tàn tật",
+          "example_en": "She advocates for the rights of disabled individuals.",
+          "example_vi": "Cô ấy ủng hộ quyền lợi của những cá nhân bị tàn tật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, sửa nghĩa cho chính xác.",
+      "word": "disabled",
+      "normalized_word": "disabled",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a disabled person who loves sports.",
+      "example_vi_clean": "Anh ấy là một người bị tàn tật yêu thể thao."
+    },
+    {
+      "id": 25936,
+      "quiz_meaning_vi": "sự bất đồng",
+      "meaning_vi_clean": "sự bất đồng; sự không đồng ý",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự bất đồng",
+          "example_en": "They had a serious disagreement about the budget.",
+          "example_vi": "Họ đã có một sự bất đồng nghiêm trọng về ngân sách."
+        },
+        {
+          "meaning_vi": "sự bất đồng",
+          "example_en": "The disagreement caused a lot of tension.",
+          "example_vi": "Sự bất đồng đã gây ra nhiều căng thẳng."
+        },
+        {
+          "meaning_vi": "sự bất đồng",
+          "example_en": "There is a fundamental disagreement between the two parties.",
+          "example_vi": "Có một sự bất đồng cơ bản giữa hai bên."
+        },
+        {
+          "meaning_vi": "sự bất đồng",
+          "example_en": "Their disagreement led to a split in the group.",
+          "example_vi": "Sự bất đồng của họ dẫn đến sự chia rẽ trong nhóm."
+        },
+        {
+          "meaning_vi": "sự không đồng ý",
+          "example_en": "He expressed his disagreement with the plan.",
+          "example_vi": "Anh ấy bày tỏ sự không đồng ý của mình với kế hoạch."
+        },
+        {
+          "meaning_vi": "sự không đồng ý",
+          "example_en": "There was a clear disagreement among the members.",
+          "example_vi": "Có một sự không đồng ý rõ ràng giữa các thành viên."
+        },
+        {
+          "meaning_vi": "sự không đồng ý",
+          "example_en": "They settled their disagreement through discussion.",
+          "example_vi": "Họ đã giải quyết sự không đồng ý thông qua thảo luận."
+        },
+        {
+          "meaning_vi": "sự không đồng ý",
+          "example_en": "I have no disagreement with your decision.",
+          "example_vi": "Tôi không có sự không đồng ý nào với quyết định của bạn."
+        },
+        {
+          "meaning_vi": "sự không đồng ý",
+          "example_en": "The disagreement was resolved quickly.",
+          "example_vi": "Sự không đồng ý đã được giải quyết nhanh chóng."
+        },
+        {
+          "meaning_vi": "sự không đồng ý",
+          "example_en": "Public disagreement is common in politics.",
+          "example_vi": "Sự không đồng ý công khai là phổ biến trong chính trị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung ví dụ minh họa.",
+      "word": "disagreement",
+      "normalized_word": "disagreement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They had a serious disagreement about the budget.",
+      "example_vi_clean": "Họ đã có một sự bất đồng nghiêm trọng về ngân sách."
+    },
+    {
+      "id": 25937,
+      "quiz_meaning_vi": "làm thất vọng",
+      "meaning_vi_clean": "làm thất vọng; không làm thỏa mãn",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "I don't want to disappoint you.",
+          "example_vi": "Tôi không muốn làm thất vọng bạn."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "His performance disappointed his fans.",
+          "example_vi": "Màn trình diễn của anh ấy đã làm thất vọng người hâm mộ."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "She was disappointed by the news.",
+          "example_vi": "Cô ấy đã bị làm thất vọng bởi tin tức đó."
+        },
+        {
+          "meaning_vi": "làm thất vọng",
+          "example_en": "Don't let me disappoint you again.",
+          "example_vi": "Đừng để tôi làm thất vọng bạn lần nữa."
+        },
+        {
+          "meaning_vi": "không làm thỏa mãn",
+          "example_en": "The results disappointed our expectations.",
+          "example_vi": "Kết quả đã không làm thỏa mãn kỳ vọng của chúng tôi."
+        },
+        {
+          "meaning_vi": "không làm thỏa mãn",
+          "example_en": "The movie disappointed the critics.",
+          "example_vi": "Bộ phim đã không làm thỏa mãn các nhà phê bình."
+        },
+        {
+          "meaning_vi": "không làm thỏa mãn",
+          "example_en": "The service disappointed the customers.",
+          "example_vi": "Dịch vụ đã không làm thỏa mãn khách hàng."
+        },
+        {
+          "meaning_vi": "không làm thỏa mãn",
+          "example_en": "The food disappointed everyone at the party.",
+          "example_vi": "Đồ ăn đã không làm thỏa mãn mọi người tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "không làm thỏa mãn",
+          "example_en": "The outcome disappointed the team.",
+          "example_vi": "Kết quả đã không làm thỏa mãn cả đội."
+        },
+        {
+          "meaning_vi": "không làm thỏa mãn",
+          "example_en": "The quality of the product disappointed me.",
+          "example_vi": "Chất lượng sản phẩm đã không làm thỏa mãn tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung ví dụ minh họa.",
+      "word": "disappoint",
+      "normalized_word": "disappoint",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I don't want to disappoint you.",
+      "example_vi_clean": "Tôi không muốn làm thất vọng bạn."
+    },
+    {
+      "id": 25938,
+      "quiz_meaning_vi": "sự thất vọng",
+      "meaning_vi_clean": "sự thất vọng; điều gây thất vọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thất vọng",
+          "example_en": "He could not hide his disappointment.",
+          "example_vi": "Anh ấy không thể giấu sự thất vọng của mình."
+        },
+        {
+          "meaning_vi": "sự thất vọng",
+          "example_en": "She felt a deep sense of disappointment.",
+          "example_vi": "Cô ấy cảm thấy một sự thất vọng sâu sắc."
+        },
+        {
+          "meaning_vi": "sự thất vọng",
+          "example_en": "To my disappointment, the show was cancelled.",
+          "example_vi": "Với sự thất vọng của tôi, buổi diễn đã bị hủy."
+        },
+        {
+          "meaning_vi": "sự thất vọng",
+          "example_en": "He expressed his disappointment with the result.",
+          "example_vi": "Anh ấy bày tỏ sự thất vọng với kết quả."
+        },
+        {
+          "meaning_vi": "điều gây thất vọng",
+          "example_en": "The loss was a huge disappointment for the team.",
+          "example_vi": "Trận thua là một điều gây thất vọng lớn cho cả đội."
+        },
+        {
+          "meaning_vi": "điều gây thất vọng",
+          "example_en": "The hotel was a big disappointment.",
+          "example_vi": "Khách sạn là một điều gây thất vọng lớn."
+        },
+        {
+          "meaning_vi": "điều gây thất vọng",
+          "example_en": "It was a disappointment that he couldn't come.",
+          "example_vi": "Thật là một điều gây thất vọng khi anh ấy không thể đến."
+        },
+        {
+          "meaning_vi": "điều gây thất vọng",
+          "example_en": "The weather was a disappointment during our trip.",
+          "example_vi": "Thời tiết là một điều gây thất vọng trong chuyến đi của chúng tôi."
+        },
+        {
+          "meaning_vi": "điều gây thất vọng",
+          "example_en": "His failure was a great disappointment to his parents.",
+          "example_vi": "Sự thất bại của anh ấy là một điều gây thất vọng lớn cho cha mẹ."
+        },
+        {
+          "meaning_vi": "điều gây thất vọng",
+          "example_en": "The final score was a disappointment.",
+          "example_vi": "Tỷ số cuối cùng là một điều gây thất vọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung ví dụ minh họa.",
+      "word": "disappointment",
+      "normalized_word": "disappointment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He could not hide his disappointment.",
+      "example_vi_clean": "Anh ấy không thể giấu sự thất vọng của mình."
+    },
+    {
+      "id": 25939,
+      "quiz_meaning_vi": "thảm họa",
+      "meaning_vi_clean": "thảm họa; tai họa",
+      "examples_clean": [
+        {
+          "meaning_vi": "thảm họa",
+          "example_en": "The earthquake was a terrible disaster.",
+          "example_vi": "Trận động đất là một thảm họa khủng khiếp."
+        },
+        {
+          "meaning_vi": "thảm họa",
+          "example_en": "The flood was a natural disaster.",
+          "example_vi": "Trận lũ lụt là một thảm họa thiên nhiên."
+        },
+        {
+          "meaning_vi": "thảm họa",
+          "example_en": "They are preparing for a potential disaster.",
+          "example_vi": "Họ đang chuẩn bị cho một thảm họa tiềm tàng."
+        },
+        {
+          "meaning_vi": "thảm họa",
+          "example_en": "The fire was a major disaster for the city.",
+          "example_vi": "Vụ hỏa hoạn là một thảm họa lớn cho thành phố."
+        },
+        {
+          "meaning_vi": "tai họa",
+          "example_en": "The war brought disaster to the country.",
+          "example_vi": "Chiến tranh đã mang lại tai họa cho đất nước."
+        },
+        {
+          "meaning_vi": "tai họa",
+          "example_en": "His bad decisions led to a personal disaster.",
+          "example_vi": "Những quyết định sai lầm của anh ấy dẫn đến một tai họa cá nhân."
+        },
+        {
+          "meaning_vi": "tai họa",
+          "example_en": "The project was a complete disaster.",
+          "example_vi": "Dự án là một tai họa hoàn toàn."
+        },
+        {
+          "meaning_vi": "tai họa",
+          "example_en": "We must avoid such a disaster in the future.",
+          "example_vi": "Chúng ta phải tránh một tai họa như vậy trong tương lai."
+        },
+        {
+          "meaning_vi": "tai họa",
+          "example_en": "The party was a disaster because of the rain.",
+          "example_vi": "Bữa tiệc là một tai họa vì trời mưa."
+        },
+        {
+          "meaning_vi": "tai họa",
+          "example_en": "He narrowly escaped a financial disaster.",
+          "example_vi": "Anh ấy suýt thoát khỏi một tai họa tài chính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung ví dụ minh họa.",
+      "word": "disaster",
+      "normalized_word": "disaster",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The earthquake was a terrible disaster.",
+      "example_vi_clean": "Trận động đất là một thảm họa khủng khiếp."
+    },
+    {
+      "id": 25940,
+      "quiz_meaning_vi": "tai hại",
+      "meaning_vi_clean": "tai hại; thảm khốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "tai hại",
+          "example_en": "The decision had a disastrous effect on the company.",
+          "example_vi": "Quyết định đó đã có một ảnh hưởng tai hại đến công ty."
+        },
+        {
+          "meaning_vi": "tai hại",
+          "example_en": "It was a disastrous mistake.",
+          "example_vi": "Đó là một sai lầm tai hại."
+        },
+        {
+          "meaning_vi": "tai hại",
+          "example_en": "The policy proved to be disastrous.",
+          "example_vi": "Chính sách đó đã chứng tỏ là tai hại."
+        },
+        {
+          "meaning_vi": "tai hại",
+          "example_en": "His advice was disastrous for my career.",
+          "example_vi": "Lời khuyên của anh ấy thật tai hại cho sự nghiệp của tôi."
+        },
+        {
+          "meaning_vi": "thảm khốc",
+          "example_en": "The results were disastrous for the team.",
+          "example_vi": "Kết quả thật thảm khốc cho cả đội."
+        },
+        {
+          "meaning_vi": "thảm khốc",
+          "example_en": "They suffered a disastrous defeat.",
+          "example_vi": "Họ đã phải chịu một thất bại thảm khốc."
+        },
+        {
+          "meaning_vi": "thảm khốc",
+          "example_en": "The fire had disastrous consequences.",
+          "example_vi": "Vụ hỏa hoạn đã gây ra những hậu quả thảm khốc."
+        },
+        {
+          "meaning_vi": "thảm khốc",
+          "example_en": "The storm caused disastrous damage to the coast.",
+          "example_vi": "Cơn bão đã gây ra thiệt hại thảm khốc cho bờ biển."
+        },
+        {
+          "meaning_vi": "thảm khốc",
+          "example_en": "The plan was a disastrous failure.",
+          "example_vi": "Kế hoạch đó là một thất bại thảm khốc."
+        },
+        {
+          "meaning_vi": "thảm khốc",
+          "example_en": "The situation became disastrous very quickly.",
+          "example_vi": "Tình hình trở nên thảm khốc rất nhanh chóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ minh họa đầy đủ cho từ vựng.",
+      "word": "disastrous",
+      "normalized_word": "disastrous",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The decision had a disastrous effect on the company.",
+      "example_vi_clean": "Quyết định đó đã có một ảnh hưởng tai hại đến công ty."
+    }
+  ]
+}

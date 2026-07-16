@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-276",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26751,
+      "word": "coward",
+      "normalized_word": "coward",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kauəd/",
+      "primary_meaning_vi": "người nhát gan",
+      "meaning_vi": "người nhát gan, người nhút nhát; người hèn nhát; con vật nhát; nhát gan, nhút nhát; hèn nhát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26752,
+      "word": "cowardly",
+      "normalized_word": "cowardly",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ & phó từ",
+      "phonetic": "/'kauədli/",
+      "primary_meaning_vi": "nhát gan",
+      "meaning_vi": "nhát gan, nhút nhát; hèn nhát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26753,
+      "word": "coziness",
+      "normalized_word": "coziness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "xem cozy",
+      "meaning_vi": "xem cozy",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26754,
+      "word": "cozy",
+      "normalized_word": "cozy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kouzi/",
+      "primary_meaning_vi": "ấm cúng",
+      "meaning_vi": "ấm cúng, thoải mái dễ chịu; ấm giỏ ((cũng) tea cosy); ghế hai chỗ có nệm",
+      "example_en": "He spent all day cosying up to the new boss, hoping for a plum assignment.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26755,
+      "word": "crab",
+      "normalized_word": "crab",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/kræb/",
+      "primary_meaning_vi": "quả táo dại ((cũng) crab apple)",
+      "meaning_vi": "quả táo dại ((cũng) crab apple); cây táo dại ((cũng) crab tree); người hay gắt gỏng, người hay càu nhàu; con cua; can rận ((cũng) crab louse); cái tời; hai số một (chơi súc sắc); (nghĩa bóng) sự thất bại; cào xé (bằng móng); vồ, quắp (chim ưng); công kích chê bai, chỉ trích (ai)",
+      "example_en": "Although crabs themselves are an easily treated inconvenience, the patient and his partner(s) clearly run major STD risks.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26756,
+      "word": "crack",
+      "normalized_word": "crack",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kræk/",
+      "primary_meaning_vi": "cừ",
+      "meaning_vi": "cừ, xuất sắc; quất (roi) đét đét; búng (ngón tay) kêu tanh tách, bẻ (đốt ngón tay) kêu răng rắc; làm nứt, làm rạn, làm vỡ, kẹp vỡ; làm rạn một cái tách; làm tổn thương; làm crackinh (dầu hoả...); kêu răng rắc, kêu đen đét, nổ giòn; nứt nẻ, rạn nứt, vỡ, gãy ((nghĩa đen) & (nghĩa bóng)); nói chuyện vui, nói chuyện phiếm; ,  (từ lóng) đàn áp thẳng tay; tán dương, ca ngợi (ai); vỡ nợ, phá sản; kiệt sức; khoe khoang, khoác lác, huênh hoang, nói phách; mở một chai rượu uống hết với ai; đào ngạch vào ăn trộm, nạy cửa vào ăn trộm; nói đùa một câu; nut",
+      "example_en": "A large crack had formed in the roadway.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Open the door a crack.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I didn't appreciate that crack about my hairstyle.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The crack of the falling branch could be heard for miles.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26757,
+      "word": "craftsman",
+      "normalized_word": "craftsman",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'krɑ:ftsmən/",
+      "primary_meaning_vi": "thợ thủ công",
+      "meaning_vi": "thợ thủ công; người khéo léo, người có kỹ xảo, người điêu luyện, người lành nghề",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26758,
+      "word": "crater",
+      "normalized_word": "crater",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kreitə/",
+      "primary_meaning_vi": "miệng núi lửa",
+      "meaning_vi": "miệng núi lửa; hố (bom, đạn đại bác...)",
+      "example_en": "He cratered into that snow bank about five seconds after his first lesson.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He's a creature of habit. insects and other creatures",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26759,
+      "word": "crawl",
+      "normalized_word": "crawl",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/krɔ:l/",
+      "primary_meaning_vi": "ao nuôi cá",
+      "meaning_vi": "ao nuôi cá; chỗ nuôi rùa; chỗ nuôi tôm; sự bò, sự trường; lối bơi crôn, lối bơi trường ((cũng) crawl stroke); sự kéo lê đi; bò, trườn; lê bước, lê chân, bò lê; bò nhung nhúc, bò lúc nhúc; luồn cúi, quỵ luỵ; sởn gai ốc; ,  (từ lóng) không giữ lời, nuốt lời, tháo lui",
+      "example_en": "My computer has slowed down to a crawl since I installed that software package.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Clutching my wounded side, I crawled back to the trench.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The rush-hour traffic crawled around the bypass.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don't come crawling to me with your useless apologies!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26760,
+      "word": "crease",
+      "normalized_word": "crease",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kri:s/",
+      "primary_meaning_vi": "nếp nhăn",
+      "meaning_vi": "nếp nhăn, nếp gấp; gấp nếp; làm nhăn, làm nhăn mặt; nhàu; có nếp gấp",
+      "example_en": "His pants had a nice sharp crease.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The bullet just creased his shoulder.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

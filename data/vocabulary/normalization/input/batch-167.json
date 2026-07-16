@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-167",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25661,
+      "word": "camel",
+      "normalized_word": "camel",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæməl/",
+      "primary_meaning_vi": "lạc đà",
+      "meaning_vi": "lạc đà; điều khó tin; điều khó chịu đựng được; già néo đứt dây",
+      "example_en": "Are you having a giraffe?!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25662,
+      "word": "campsite",
+      "normalized_word": "campsite",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "địa điểm cắm trại",
+      "meaning_vi": "địa điểm cắm trại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25663,
+      "word": "canal",
+      "normalized_word": "canal",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'næl/",
+      "primary_meaning_vi": "kênh",
+      "meaning_vi": "kênh, sông đào; ống",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25664,
+      "word": "cancel",
+      "normalized_word": "cancel",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kænsəl/",
+      "primary_meaning_vi": "sự xoá bỏ",
+      "meaning_vi": "sự xoá bỏ, sự huỷ bỏ, sự bãi bỏ; lệnh ngược lại, phản lệnh; tờ in hỏng bỏ đi; kim bấm vé (xe lửa...) ((cũng) a pair of cancels); bỏ, xoá bỏ, huỷ bỏ, bãi bỏ (lệnh, khế ước, hợp đồng...); đóng dấu xoá bỏ; thanh toán, trả hết (nợ); khử",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25665,
+      "word": "cancer",
+      "normalized_word": "cancer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kænsə/",
+      "primary_meaning_vi": "bệnh ung thư",
+      "meaning_vi": "bệnh ung thư; ung nhọt, những cái xấu xa (của xã hội); hạ chí tuyến",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25666,
+      "word": "candle",
+      "normalized_word": "candle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kændl/",
+      "primary_meaning_vi": "cây nến",
+      "meaning_vi": "cây nến; nến ((cũng) candle power); burn; thua xa không sánh được, không đáng xách dép cho; game; tắt đèn nhà ngói cũng như nhà tranh; soi (trứng)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25667,
+      "word": "canned",
+      "normalized_word": "canned",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kænd/",
+      "primary_meaning_vi": "được đóng hộp",
+      "meaning_vi": "được đóng hộp; được ghi vào băng, được thu vào đĩa (dây); say mèm, say bí tỉ",
+      "example_en": "They canned air to sell as a novelty to tourists.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They spent August canning fruit and vegetables.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He canned the whole project because he thought it would fail.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can your gob.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25668,
+      "word": "canteen",
+      "normalized_word": "canteen",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kæn'ti:n/",
+      "primary_meaning_vi": "căng tin",
+      "meaning_vi": "căng tin; bi đông (đựng nước); đồ dùng nấu khi ăn đi cắm trại; hộp đựng dao dĩa (của lính); hòm đựng bát đĩa dao dĩa",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25669,
+      "word": "capable",
+      "normalized_word": "capable",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'keipəbl/",
+      "primary_meaning_vi": "có tài",
+      "meaning_vi": "có tài, có năng lực giỏi; có thể, có khả năng, dám, cả gan",
+      "example_en": "As everyone knew, he was capable of violence when roused.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25670,
+      "word": "capacity",
+      "normalized_word": "capacity",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'pæsiti/",
+      "primary_meaning_vi": "sức chứa",
+      "meaning_vi": "sức chứa, chứa đựng, dung tích; năng lực khả năng; khả năng tiếp thu, khả năng thu nhận; năng suất; tư cách, quyền hạn; điện dung; rạp hát chật ních khán giả; đầy ắp; chật ních",
+      "example_en": "It was hauling a capacity load.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Its capacity rating was 150 tons per hour, but its actual maximum capacity was 200 tons per hour.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There will be a capacity crowd at Busch stadium for the sixth game.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

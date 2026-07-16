@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25971,
+      "quiz_meaning_vi": "phim tài liệu",
+      "meaning_vi_clean": "phim tài liệu; tài liệu",
+      "examples_clean": [
+        {
+          "meaning_vi": "phim tài liệu",
+          "example_en": "We watched a fascinating documentary about the deep sea.",
+          "example_vi": "Chúng tôi đã xem một bộ phim tài liệu hấp dẫn về biển sâu."
+        },
+        {
+          "meaning_vi": "phim tài liệu",
+          "example_en": "The documentary explores the impact of climate change.",
+          "example_vi": "Bộ phim tài liệu khám phá tác động của biến đổi khí hậu."
+        },
+        {
+          "meaning_vi": "phim tài liệu",
+          "example_en": "She is producing a documentary on local wildlife.",
+          "example_vi": "Cô ấy đang sản xuất một bộ phim tài liệu về động vật hoang dã địa phương."
+        },
+        {
+          "meaning_vi": "phim tài liệu",
+          "example_en": "The documentary won several awards at the film festival.",
+          "example_vi": "Bộ phim tài liệu đã giành được nhiều giải thưởng tại liên hoan phim."
+        },
+        {
+          "meaning_vi": "tài liệu",
+          "example_en": "Please sign the necessary document for the application.",
+          "example_vi": "Vui lòng ký vào tài liệu cần thiết cho đơn đăng ký."
+        },
+        {
+          "meaning_vi": "tài liệu",
+          "example_en": "The historical document was kept in the museum.",
+          "example_vi": "Tài liệu lịch sử đó đã được lưu giữ trong bảo tàng."
+        },
+        {
+          "meaning_vi": "tài liệu",
+          "example_en": "He provided all the documents required for the case.",
+          "example_vi": "Anh ấy đã cung cấp tất cả các tài liệu cần thiết cho vụ việc."
+        },
+        {
+          "meaning_vi": "tài liệu",
+          "example_en": "The secret documents were finally made public.",
+          "example_vi": "Các tài liệu mật cuối cùng đã được công khai."
+        },
+        {
+          "meaning_vi": "tài liệu",
+          "example_en": "She organized her documents in a neat folder.",
+          "example_vi": "Cô ấy sắp xếp các tài liệu của mình vào một thư mục gọn gàng."
+        },
+        {
+          "meaning_vi": "tài liệu",
+          "example_en": "The legal document outlines the terms of the contract.",
+          "example_vi": "Tài liệu pháp lý nêu rõ các điều khoản của hợp đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành phim tài liệu vì đây là nghĩa phổ biến nhất của từ này ở cấp B1. Bổ sung ví dụ đầy đủ.",
+      "word": "documentary",
+      "normalized_word": "documentary",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We watched a fascinating documentary about the deep sea.",
+      "example_vi_clean": "Chúng tôi đã xem một bộ phim tài liệu hấp dẫn về biển sâu."
+    },
+    {
+      "id": 25972,
+      "quiz_meaning_vi": "cá heo",
+      "meaning_vi_clean": "cá heo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "We saw a group of dolphins swimming near the boat.",
+          "example_vi": "Chúng tôi thấy một đàn cá heo bơi gần thuyền."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "Dolphins are known for their high intelligence.",
+          "example_vi": "Cá heo nổi tiếng với trí thông minh cao."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "The dolphin jumped out of the water to catch a fish.",
+          "example_vi": "Con cá heo nhảy lên khỏi mặt nước để bắt cá."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "Many people enjoy watching dolphin shows at the aquarium.",
+          "example_vi": "Nhiều người thích xem các buổi biểu diễn cá heo tại thủy cung."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "Dolphins communicate with each other using clicks and whistles.",
+          "example_vi": "Cá heo giao tiếp với nhau bằng tiếng lách cách và tiếng huýt sáo."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "The dolphin is a friendly marine mammal.",
+          "example_vi": "Cá heo là một loài động vật có vú thân thiện dưới biển."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "Researchers are studying the migration patterns of dolphins.",
+          "example_vi": "Các nhà nghiên cứu đang nghiên cứu các mô hình di cư của cá heo."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "The dolphin swam alongside the ship for several miles.",
+          "example_vi": "Con cá heo bơi dọc theo con tàu trong vài dặm."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "Conservationists work hard to protect dolphin habitats.",
+          "example_vi": "Các nhà bảo tồn làm việc chăm chỉ để bảo vệ môi trường sống của cá heo."
+        },
+        {
+          "meaning_vi": "cá heo",
+          "example_en": "A dolphin can hold its breath for several minutes.",
+          "example_vi": "Cá heo có thể nín thở trong vài phút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đơn giản hóa nghĩa thành cá heo. Loại bỏ các nghĩa chuyên ngành không cần thiết. Bổ sung 10 ví dụ.",
+      "word": "dolphin",
+      "normalized_word": "dolphin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We saw a group of dolphins swimming near the boat.",
+      "example_vi_clean": "Chúng tôi thấy một đàn cá heo bơi gần thuyền."
+    },
+    {
+      "id": 25973,
+      "quiz_meaning_vi": "chấm nhỏ",
+      "meaning_vi_clean": "chấm nhỏ; dấu chấm; rải rác",
+      "examples_clean": [
+        {
+          "meaning_vi": "chấm nhỏ",
+          "example_en": "I saw a tiny dot of light in the distance.",
+          "example_vi": "Tôi thấy một chấm sáng nhỏ ở phía xa."
+        },
+        {
+          "meaning_vi": "chấm nhỏ",
+          "example_en": "There is a small black dot on the paper.",
+          "example_vi": "Có một chấm đen nhỏ trên tờ giấy."
+        },
+        {
+          "meaning_vi": "chấm nhỏ",
+          "example_en": "The map showed the city as a single dot.",
+          "example_vi": "Bản đồ hiển thị thành phố như một chấm nhỏ."
+        },
+        {
+          "meaning_vi": "chấm nhỏ",
+          "example_en": "She drew a dot on the page to mark the spot.",
+          "example_vi": "Cô ấy vẽ một chấm nhỏ trên trang giấy để đánh dấu vị trí."
+        },
+        {
+          "meaning_vi": "dấu chấm",
+          "example_en": "Don't forget to put a dot over the letter i.",
+          "example_vi": "Đừng quên đặt dấu chấm trên chữ i."
+        },
+        {
+          "meaning_vi": "dấu chấm",
+          "example_en": "The sentence ends with a full stop or a dot.",
+          "example_vi": "Câu kết thúc bằng một dấu chấm."
+        },
+        {
+          "meaning_vi": "dấu chấm",
+          "example_en": "He signed his name with a flourish and a dot.",
+          "example_vi": "Anh ấy ký tên mình với một nét vẽ điệu đà và một dấu chấm."
+        },
+        {
+          "meaning_vi": "rải rác",
+          "example_en": "The hills were dotted with small houses.",
+          "example_vi": "Những ngọn đồi được rải rác những ngôi nhà nhỏ."
+        },
+        {
+          "meaning_vi": "rải rác",
+          "example_en": "Wildflowers dotted the meadow in the spring.",
+          "example_vi": "Hoa dại rải rác khắp đồng cỏ vào mùa xuân."
+        },
+        {
+          "meaning_vi": "rải rác",
+          "example_en": "Small islands dot the coastline of the country.",
+          "example_vi": "Những hòn đảo nhỏ rải rác dọc theo bờ biển của đất nước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ/động từ. Loại bỏ các nghĩa không phù hợp cấp độ. Bổ sung ví dụ.",
+      "word": "dot",
+      "normalized_word": "dot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I saw a tiny dot of light in the distance.",
+      "example_vi_clean": "Tôi thấy một chấm sáng nhỏ ở phía xa."
+    },
+    {
+      "id": 25974,
+      "quiz_meaning_vi": "ở tầng dưới",
+      "meaning_vi_clean": "ở tầng dưới; xuống cầu thang",
+      "examples_clean": [
+        {
+          "meaning_vi": "ở tầng dưới",
+          "example_en": "The kitchen is located downstairs.",
+          "example_vi": "Nhà bếp nằm ở tầng dưới."
+        },
+        {
+          "meaning_vi": "ở tầng dưới",
+          "example_en": "I heard a noise coming from downstairs.",
+          "example_vi": "Tôi nghe thấy tiếng động phát ra từ tầng dưới."
+        },
+        {
+          "meaning_vi": "ở tầng dưới",
+          "example_en": "The guests are waiting in the living room downstairs.",
+          "example_vi": "Các vị khách đang đợi trong phòng khách ở tầng dưới."
+        },
+        {
+          "meaning_vi": "ở tầng dưới",
+          "example_en": "She left her bag downstairs by the front door.",
+          "example_vi": "Cô ấy để túi xách ở tầng dưới cạnh cửa trước."
+        },
+        {
+          "meaning_vi": "xuống cầu thang",
+          "example_en": "He walked downstairs to answer the phone.",
+          "example_vi": "Anh ấy đi xuống cầu thang để trả lời điện thoại."
+        },
+        {
+          "meaning_vi": "xuống cầu thang",
+          "example_en": "Please run downstairs and get me a glass of water.",
+          "example_vi": "Làm ơn chạy xuống cầu thang và lấy cho tôi một cốc nước."
+        },
+        {
+          "meaning_vi": "xuống cầu thang",
+          "example_en": "She hurried downstairs when she heard the doorbell.",
+          "example_vi": "Cô ấy vội vã đi xuống cầu thang khi nghe tiếng chuông cửa."
+        },
+        {
+          "meaning_vi": "xuống cầu thang",
+          "example_en": "We slowly made our way downstairs.",
+          "example_vi": "Chúng tôi chậm rãi đi xuống cầu thang."
+        },
+        {
+          "meaning_vi": "xuống cầu thang",
+          "example_en": "The cat jumped downstairs quickly.",
+          "example_vi": "Con mèo nhảy xuống cầu thang một cách nhanh chóng."
+        },
+        {
+          "meaning_vi": "xuống cầu thang",
+          "example_en": "He fell downstairs and hurt his ankle.",
+          "example_vi": "Anh ấy bị ngã xuống cầu thang và làm đau mắt cá chân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành trạng từ/tính từ. Sửa nghĩa cho phù hợp với cách dùng thông dụng. Bổ sung ví dụ.",
+      "word": "downstairs",
+      "normalized_word": "downstairs",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The kitchen is located downstairs.",
+      "example_vi_clean": "Nhà bếp nằm ở tầng dưới."
+    },
+    {
+      "id": 25975,
+      "quiz_meaning_vi": "hướng xuống",
+      "meaning_vi_clean": "hướng xuống; đi xuống",
+      "examples_clean": [
+        {
+          "meaning_vi": "hướng xuống",
+          "example_en": "The graph shows a downward trend in sales.",
+          "example_vi": "Biểu đồ cho thấy xu hướng đi xuống trong doanh số bán hàng."
+        },
+        {
+          "meaning_vi": "hướng xuống",
+          "example_en": "He made a downward movement with his hand.",
+          "example_vi": "Anh ấy thực hiện một cử chỉ hướng xuống bằng tay."
+        },
+        {
+          "meaning_vi": "hướng xuống",
+          "example_en": "The downward pressure caused the bridge to collapse.",
+          "example_vi": "Áp lực hướng xuống đã khiến cây cầu bị sập."
+        },
+        {
+          "meaning_vi": "hướng xuống",
+          "example_en": "She looked at the map with a downward glance.",
+          "example_vi": "Cô ấy nhìn vào bản đồ với ánh mắt hướng xuống."
+        },
+        {
+          "meaning_vi": "đi xuống",
+          "example_en": "The path leads downward to the river.",
+          "example_vi": "Con đường dẫn đi xuống phía con sông."
+        },
+        {
+          "meaning_vi": "đi xuống",
+          "example_en": "The elevator is moving downward to the lobby.",
+          "example_vi": "Thang máy đang di chuyển đi xuống sảnh."
+        },
+        {
+          "meaning_vi": "đi xuống",
+          "example_en": "Prices have been moving downward for months.",
+          "example_vi": "Giá cả đã đi xuống trong nhiều tháng."
+        },
+        {
+          "meaning_vi": "đi xuống",
+          "example_en": "The bird made a sudden downward dive.",
+          "example_vi": "Con chim thực hiện một cú lao đi xuống đột ngột."
+        },
+        {
+          "meaning_vi": "đi xuống",
+          "example_en": "The road slopes downward towards the valley.",
+          "example_vi": "Con đường dốc đi xuống về phía thung lũng."
+        },
+        {
+          "meaning_vi": "đi xuống",
+          "example_en": "He felt his energy levels moving downward.",
+          "example_vi": "Anh ấy cảm thấy mức năng lượng của mình đang đi xuống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho tự nhiên hơn. Bổ sung ví dụ.",
+      "word": "downward",
+      "normalized_word": "downward",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The graph shows a downward trend in sales.",
+      "example_vi_clean": "Biểu đồ cho thấy xu hướng đi xuống trong doanh số bán hàng."
+    },
+    {
+      "id": 25976,
+      "quiz_meaning_vi": "giấc ngủ ngắn",
+      "meaning_vi_clean": "giấc ngủ ngắn; ngủ gà ngủ gật",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấc ngủ ngắn",
+          "example_en": "I felt refreshed after a short doze.",
+          "example_vi": "Tôi cảm thấy sảng khoái sau một giấc ngủ ngắn."
+        },
+        {
+          "meaning_vi": "giấc ngủ ngắn",
+          "example_en": "He took a quick doze in the afternoon.",
+          "example_vi": "Anh ấy đã có một giấc ngủ ngắn vào buổi chiều."
+        },
+        {
+          "meaning_vi": "giấc ngủ ngắn",
+          "example_en": "A brief doze can help you concentrate better.",
+          "example_vi": "Một giấc ngủ ngắn có thể giúp bạn tập trung tốt hơn."
+        },
+        {
+          "meaning_vi": "giấc ngủ ngắn",
+          "example_en": "She woke up from her doze feeling confused.",
+          "example_vi": "Cô ấy tỉnh dậy sau giấc ngủ ngắn với cảm giác bối rối."
+        },
+        {
+          "meaning_vi": "ngủ gà ngủ gật",
+          "example_en": "He was dozing in front of the television.",
+          "example_vi": "Anh ấy đang ngủ gà ngủ gật trước tivi."
+        },
+        {
+          "meaning_vi": "ngủ gà ngủ gật",
+          "example_en": "I found him dozing in the library.",
+          "example_vi": "Tôi thấy anh ấy đang ngủ gà ngủ gật trong thư viện."
+        },
+        {
+          "meaning_vi": "ngủ gà ngủ gật",
+          "example_en": "The old man was dozing in his chair.",
+          "example_vi": "Ông lão đang ngủ gà ngủ gật trên ghế của mình."
+        },
+        {
+          "meaning_vi": "ngủ gà ngủ gật",
+          "example_en": "She dozed off during the long lecture.",
+          "example_vi": "Cô ấy đã ngủ gà ngủ gật trong suốt bài giảng dài."
+        },
+        {
+          "meaning_vi": "ngủ gà ngủ gật",
+          "example_en": "Don't doze while you are driving.",
+          "example_vi": "Đừng ngủ gà ngủ gật khi bạn đang lái xe."
+        },
+        {
+          "meaning_vi": "ngủ gà ngủ gật",
+          "example_en": "He often dozes during the afternoon meeting.",
+          "example_vi": "Anh ấy thường ngủ gà ngủ gật trong cuộc họp buổi chiều."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ/động từ. Bổ sung ví dụ.",
+      "word": "doze",
+      "normalized_word": "doze",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I felt refreshed after a short doze.",
+      "example_vi_clean": "Tôi cảm thấy sảng khoái sau một giấc ngủ ngắn."
+    },
+    {
+      "id": 25977,
+      "quiz_meaning_vi": "tá",
+      "meaning_vi_clean": "tá; nhiều",
+      "examples_clean": [
+        {
+          "meaning_vi": "tá",
+          "example_en": "I need to buy a dozen eggs for the cake.",
+          "example_vi": "Tôi cần mua một tá trứng để làm bánh."
+        },
+        {
+          "meaning_vi": "tá",
+          "example_en": "He bought a dozen roses for his wife.",
+          "example_vi": "Anh ấy đã mua một tá hoa hồng cho vợ mình."
+        },
+        {
+          "meaning_vi": "tá",
+          "example_en": "There are a dozen pencils in the box.",
+          "example_vi": "Có một tá bút chì trong hộp."
+        },
+        {
+          "meaning_vi": "tá",
+          "example_en": "She ordered a dozen cupcakes for the party.",
+          "example_vi": "Cô ấy đã đặt một tá bánh cupcake cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "tá",
+          "example_en": "A dozen people attended the meeting.",
+          "example_vi": "Một tá người đã tham dự cuộc họp."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "I have dozens of things to do today.",
+          "example_vi": "Tôi có nhiều việc phải làm hôm nay."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "There were dozens of birds in the tree.",
+          "example_vi": "Có nhiều con chim trên cây."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "She has dozens of books on her shelf.",
+          "example_vi": "Cô ấy có nhiều cuốn sách trên kệ."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "Dozens of people waited in line for tickets.",
+          "example_vi": "Nhiều người đã xếp hàng chờ mua vé."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "He has dozens of ideas for the project.",
+          "example_vi": "Anh ấy có nhiều ý tưởng cho dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ/từ hạn định. Bổ sung ví dụ.",
+      "word": "dozen",
+      "normalized_word": "dozen",
+      "cefr_level": "B1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "I need to buy a dozen eggs for the cake.",
+      "example_vi_clean": "Tôi cần mua một tá trứng để làm bánh."
+    },
+    {
+      "id": 25978,
+      "quiz_meaning_vi": "lôi kéo",
+      "meaning_vi_clean": "lôi kéo; kéo lê; kéo dài",
+      "examples_clean": [
+        {
+          "meaning_vi": "lôi kéo",
+          "example_en": "He tried to drag me into the argument.",
+          "example_vi": "Anh ấy cố gắng lôi kéo tôi vào cuộc tranh cãi."
+        },
+        {
+          "meaning_vi": "lôi kéo",
+          "example_en": "Don't drag your friends into your problems.",
+          "example_vi": "Đừng lôi kéo bạn bè vào những vấn đề của bạn."
+        },
+        {
+          "meaning_vi": "lôi kéo",
+          "example_en": "She was dragged into the project against her will.",
+          "example_vi": "Cô ấy bị lôi kéo vào dự án trái với ý muốn của mình."
+        },
+        {
+          "meaning_vi": "lôi kéo",
+          "example_en": "The company is trying to drag more customers in.",
+          "example_vi": "Công ty đang cố gắng lôi kéo thêm khách hàng."
+        },
+        {
+          "meaning_vi": "kéo lê",
+          "example_en": "He had to drag the heavy box across the floor.",
+          "example_vi": "Anh ấy phải kéo lê cái hộp nặng trên sàn nhà."
+        },
+        {
+          "meaning_vi": "kéo lê",
+          "example_en": "She dragged her feet because she was tired.",
+          "example_vi": "Cô ấy kéo lê đôi chân vì cô ấy mệt."
+        },
+        {
+          "meaning_vi": "kéo lê",
+          "example_en": "The child dragged his toy behind him.",
+          "example_vi": "Đứa trẻ kéo lê món đồ chơi của mình phía sau."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "The meeting dragged on for three hours.",
+          "example_vi": "Cuộc họp kéo dài lê thê suốt ba tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "Don't let the discussion drag on too long.",
+          "example_vi": "Đừng để cuộc thảo luận kéo dài quá lâu."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "The winter seemed to drag on forever.",
+          "example_vi": "Mùa đông dường như kéo dài mãi không dứt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành động từ. Loại bỏ các nghĩa chuyên ngành/lóng. Bổ sung ví dụ.",
+      "word": "drag",
+      "normalized_word": "drag",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He tried to drag me into the argument.",
+      "example_vi_clean": "Anh ấy cố gắng lôi kéo tôi vào cuộc tranh cãi."
+    },
+    {
+      "id": 25979,
+      "quiz_meaning_vi": "đột ngột",
+      "meaning_vi_clean": "đột ngột; gây ấn tượng mạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "There was a dramatic change in the weather.",
+          "example_vi": "Có một sự thay đổi đột ngột về thời tiết."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The company saw a dramatic rise in profits.",
+          "example_vi": "Công ty đã chứng kiến sự gia tăng đột ngột về lợi nhuận."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "There has been a dramatic improvement in his health.",
+          "example_vi": "Đã có một sự cải thiện đột ngột về sức khỏe của anh ấy."
+        },
+        {
+          "meaning_vi": "đột ngột",
+          "example_en": "The population has seen a dramatic decline.",
+          "example_vi": "Dân số đã chứng kiến một sự sụt giảm đột ngột."
+        },
+        {
+          "meaning_vi": "gây ấn tượng mạnh",
+          "example_en": "The view from the top of the mountain was dramatic.",
+          "example_vi": "Khung cảnh từ đỉnh núi thật gây ấn tượng mạnh."
+        },
+        {
+          "meaning_vi": "gây ấn tượng mạnh",
+          "example_en": "She gave a dramatic performance on stage.",
+          "example_vi": "Cô ấy đã có một màn trình diễn gây ấn tượng mạnh trên sân khấu."
+        },
+        {
+          "meaning_vi": "gây ấn tượng mạnh",
+          "example_en": "The story had a dramatic ending.",
+          "example_vi": "Câu chuyện có một cái kết gây ấn tượng mạnh."
+        },
+        {
+          "meaning_vi": "gây ấn tượng mạnh",
+          "example_en": "He told the story in a dramatic way.",
+          "example_vi": "Anh ấy kể câu chuyện theo một cách gây ấn tượng mạnh."
+        },
+        {
+          "meaning_vi": "gây ấn tượng mạnh",
+          "example_en": "The lighting created a dramatic effect in the room.",
+          "example_vi": "Ánh sáng tạo ra một hiệu ứng gây ấn tượng mạnh trong phòng."
+        },
+        {
+          "meaning_vi": "gây ấn tượng mạnh",
+          "example_en": "It was a dramatic moment when they finally met.",
+          "example_vi": "Đó là một khoảnh khắc gây ấn tượng mạnh khi họ cuối cùng cũng gặp nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành đột ngột vì đây là nghĩa phổ biến nhất ở B1. Bổ sung ví dụ.",
+      "word": "dramatic",
+      "normalized_word": "dramatic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "There was a dramatic change in the weather.",
+      "example_vi_clean": "Có một sự thay đổi đột ngột về thời tiết."
+    },
+    {
+      "id": 25980,
+      "quiz_meaning_vi": "chết đuối",
+      "meaning_vi_clean": "chết đuối; làm ngập",
+      "examples_clean": [
+        {
+          "meaning_vi": "chết đuối",
+          "example_en": "He nearly drowned in the lake.",
+          "example_vi": "Anh ấy suýt chết đuối dưới hồ."
+        },
+        {
+          "meaning_vi": "chết đuối",
+          "example_en": "Many people drown every year in the sea.",
+          "example_vi": "Nhiều người chết đuối mỗi năm trên biển."
+        },
+        {
+          "meaning_vi": "chết đuối",
+          "example_en": "The lifeguard saved the boy from drowning.",
+          "example_vi": "Nhân viên cứu hộ đã cứu cậu bé khỏi bị chết đuối."
+        },
+        {
+          "meaning_vi": "chết đuối",
+          "example_en": "She learned to swim so she wouldn't drown.",
+          "example_vi": "Cô ấy học bơi để không bị chết đuối."
+        },
+        {
+          "meaning_vi": "chết đuối",
+          "example_en": "It is dangerous to swim where people have drowned before.",
+          "example_vi": "Thật nguy hiểm khi bơi ở nơi mà trước đây đã có người chết đuối."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The heavy rain drowned the fields.",
+          "example_vi": "Cơn mưa lớn làm ngập các cánh đồng."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The flood drowned the entire village.",
+          "example_vi": "Trận lụt làm ngập toàn bộ ngôi làng."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The river overflowed and drowned the road.",
+          "example_vi": "Con sông tràn bờ và làm ngập con đường."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The basement was drowned by the leaking pipe.",
+          "example_vi": "Tầng hầm bị làm ngập bởi đường ống bị rò rỉ."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The storm drowned the garden in water.",
+          "example_vi": "Cơn bão làm ngập khu vườn trong nước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành động từ. Bổ sung ví dụ.",
+      "word": "drown",
+      "normalized_word": "drown",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He nearly drowned in the lake.",
+      "example_vi_clean": "Anh ấy suýt chết đuối dưới hồ."
+    }
+  ]
+}

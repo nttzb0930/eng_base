@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24611,
+      "quiz_meaning_vi": "phép cộng",
+      "meaning_vi_clean": "phép cộng; sự thêm vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "phép cộng",
+          "example_en": "Children learn simple addition in primary school.",
+          "example_vi": "Trẻ em học phép cộng đơn giản ở trường tiểu học."
+        },
+        {
+          "meaning_vi": "phép cộng",
+          "example_en": "She is very fast at addition.",
+          "example_vi": "Cô ấy rất nhanh trong việc làm phép cộng."
+        },
+        {
+          "meaning_vi": "phép cộng",
+          "example_en": "The teacher explained the rules of addition.",
+          "example_vi": "Giáo viên đã giải thích các quy tắc của phép cộng."
+        },
+        {
+          "meaning_vi": "phép cộng",
+          "example_en": "Practice your addition skills every day.",
+          "example_vi": "Hãy luyện tập kỹ năng làm phép cộng của bạn mỗi ngày."
+        },
+        {
+          "meaning_vi": "sự thêm vào",
+          "example_en": "The new garage is a useful addition to the house.",
+          "example_vi": "Nhà để xe mới là một sự thêm vào hữu ích cho ngôi nhà."
+        },
+        {
+          "meaning_vi": "sự thêm vào",
+          "example_en": "His addition to the team improved our performance.",
+          "example_vi": "Sự gia nhập của anh ấy vào đội đã cải thiện hiệu suất của chúng tôi."
+        },
+        {
+          "meaning_vi": "sự thêm vào",
+          "example_en": "The garden is a lovely addition to the property.",
+          "example_vi": "Khu vườn là một sự thêm vào đáng yêu cho bất động sản này."
+        },
+        {
+          "meaning_vi": "sự thêm vào",
+          "example_en": "We made an addition to our original plan.",
+          "example_vi": "Chúng tôi đã thực hiện một sự thêm vào cho kế hoạch ban đầu."
+        },
+        {
+          "meaning_vi": "sự thêm vào",
+          "example_en": "The latest addition to the collection is rare.",
+          "example_vi": "Món đồ mới nhất được thêm vào bộ sưu tập rất hiếm."
+        },
+        {
+          "meaning_vi": "sự thêm vào",
+          "example_en": "This book is a valuable addition to my library.",
+          "example_vi": "Cuốn sách này là một sự thêm vào giá trị cho thư viện của tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa theo từ loại danh từ, loại bỏ các nghĩa không phù hợp cấp độ A2.",
+      "word": "addition",
+      "normalized_word": "addition",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Children learn simple addition in primary school.",
+      "example_vi_clean": "Trẻ em học phép cộng đơn giản ở trường tiểu học."
+    },
+    {
+      "id": 24612,
+      "quiz_meaning_vi": "thêm vào",
+      "meaning_vi_clean": "thêm vào; phụ vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "thêm vào",
+          "example_en": "We need additional information to finish the report.",
+          "example_vi": "Chúng tôi cần thêm thông tin để hoàn thành báo cáo."
+        },
+        {
+          "meaning_vi": "thêm vào",
+          "example_en": "There will be an additional charge for delivery.",
+          "example_vi": "Sẽ có một khoản phí thêm vào cho việc giao hàng."
+        },
+        {
+          "meaning_vi": "thêm vào",
+          "example_en": "She asked for additional time to complete the task.",
+          "example_vi": "Cô ấy đã yêu cầu thêm thời gian để hoàn thành nhiệm vụ."
+        },
+        {
+          "meaning_vi": "thêm vào",
+          "example_en": "The company hired additional staff for the summer.",
+          "example_vi": "Công ty đã thuê thêm nhân viên cho mùa hè."
+        },
+        {
+          "meaning_vi": "phụ vào",
+          "example_en": "He provided additional details about the event.",
+          "example_vi": "Anh ấy đã cung cấp các chi tiết phụ vào về sự kiện."
+        },
+        {
+          "meaning_vi": "phụ vào",
+          "example_en": "They built an additional room for guests.",
+          "example_vi": "Họ đã xây thêm một căn phòng phụ vào cho khách."
+        },
+        {
+          "meaning_vi": "phụ vào",
+          "example_en": "We require additional proof of identity.",
+          "example_vi": "Chúng tôi yêu cầu bằng chứng phụ vào về danh tính."
+        },
+        {
+          "meaning_vi": "phụ vào",
+          "example_en": "The project needs additional funding to succeed.",
+          "example_vi": "Dự án cần nguồn vốn phụ vào để thành công."
+        },
+        {
+          "meaning_vi": "phụ vào",
+          "example_en": "Please read the additional notes at the end.",
+          "example_vi": "Vui lòng đọc các ghi chú phụ vào ở cuối trang."
+        },
+        {
+          "meaning_vi": "phụ vào",
+          "example_en": "There are additional benefits to this membership.",
+          "example_vi": "Có những lợi ích phụ vào cho tư cách thành viên này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ phù hợp.",
+      "word": "additional",
+      "normalized_word": "additional",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We need additional information to finish the report.",
+      "example_vi_clean": "Chúng tôi cần thêm thông tin để hoàn thành báo cáo."
+    },
+    {
+      "id": 24613,
+      "quiz_meaning_vi": "tính từ",
+      "meaning_vi_clean": "tính từ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "Blue is an adjective describing the color of the sky.",
+          "example_vi": "Blue là một tính từ mô tả màu sắc của bầu trời."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "Can you identify the adjective in this sentence?",
+          "example_vi": "Bạn có thể xác định tính từ trong câu này không?"
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "An adjective modifies a noun.",
+          "example_vi": "Một tính từ bổ nghĩa cho một danh từ."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "She used a descriptive adjective to paint the scene.",
+          "example_vi": "Cô ấy đã dùng một tính từ miêu tả để vẽ nên khung cảnh."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "The teacher asked us to list five adjectives.",
+          "example_vi": "Giáo viên yêu cầu chúng tôi liệt kê năm tính từ."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "Happy is a common adjective.",
+          "example_vi": "Happy là một tính từ phổ biến."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "He struggled to find the right adjective.",
+          "example_vi": "Anh ấy đã cố gắng tìm tính từ phù hợp."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "Adjectives make our language more colorful.",
+          "example_vi": "Tính từ làm cho ngôn ngữ của chúng ta phong phú hơn."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "The adjective comes before the noun in this case.",
+          "example_vi": "Tính từ đứng trước danh từ trong trường hợp này."
+        },
+        {
+          "meaning_vi": "tính từ",
+          "example_en": "Learn how to use an adjective correctly.",
+          "example_vi": "Hãy học cách sử dụng tính từ một cách chính xác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'phụ vào' thành 'tính từ' vì đây là nghĩa danh từ phổ biến nhất trong ngữ pháp.",
+      "word": "adjective",
+      "normalized_word": "adjective",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Blue is an adjective describing the color of the sky.",
+      "example_vi_clean": "Blue là một tính từ mô tả màu sắc của bầu trời."
+    },
+    {
+      "id": 24614,
+      "quiz_meaning_vi": "điều chỉnh",
+      "meaning_vi_clean": "điều chỉnh; sửa lại cho đúng",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều chỉnh",
+          "example_en": "You need to adjust the seat to be comfortable.",
+          "example_vi": "Bạn cần điều chỉnh ghế ngồi để cảm thấy thoải mái."
+        },
+        {
+          "meaning_vi": "điều chỉnh",
+          "example_en": "She adjusted the volume on the radio.",
+          "example_vi": "Cô ấy đã điều chỉnh âm lượng trên đài."
+        },
+        {
+          "meaning_vi": "điều chỉnh",
+          "example_en": "It takes time to adjust to a new job.",
+          "example_vi": "Cần có thời gian để điều chỉnh với công việc mới."
+        },
+        {
+          "meaning_vi": "điều chỉnh",
+          "example_en": "He adjusted his glasses before reading.",
+          "example_vi": "Anh ấy đã điều chỉnh kính trước khi đọc."
+        },
+        {
+          "meaning_vi": "sửa lại cho đúng",
+          "example_en": "The recipe was adjusted to suit local tastes.",
+          "example_vi": "Công thức đã được sửa lại cho đúng để phù hợp với khẩu vị địa phương."
+        },
+        {
+          "meaning_vi": "sửa lại cho đúng",
+          "example_en": "We must adjust our plans based on the weather.",
+          "example_vi": "Chúng ta phải sửa lại cho đúng kế hoạch dựa trên thời tiết."
+        },
+        {
+          "meaning_vi": "sửa lại cho đúng",
+          "example_en": "The clock was adjusted to the correct time.",
+          "example_vi": "Đồng hồ đã được sửa lại cho đúng giờ."
+        },
+        {
+          "meaning_vi": "sửa lại cho đúng",
+          "example_en": "He adjusted the settings on his camera.",
+          "example_vi": "Anh ấy đã sửa lại cho đúng các cài đặt trên máy ảnh."
+        },
+        {
+          "meaning_vi": "sửa lại cho đúng",
+          "example_en": "The teacher adjusted the difficulty of the test.",
+          "example_vi": "Giáo viên đã sửa lại cho đúng độ khó của bài kiểm tra."
+        },
+        {
+          "meaning_vi": "sửa lại cho đúng",
+          "example_en": "Please adjust the mirror to see better.",
+          "example_vi": "Vui lòng sửa lại cho đúng gương để nhìn rõ hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ minh họa.",
+      "word": "adjust",
+      "normalized_word": "adjust",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You need to adjust the seat to be comfortable.",
+      "example_vi_clean": "Bạn cần điều chỉnh ghế ngồi để cảm thấy thoải mái."
+    },
+    {
+      "id": 24615,
+      "quiz_meaning_vi": "ngưỡng mộ",
+      "meaning_vi_clean": "ngưỡng mộ; ngắm nhìn",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngưỡng mộ",
+          "example_en": "I really admire her dedication to her work.",
+          "example_vi": "Tôi thực sự ngưỡng mộ sự tận tâm của cô ấy với công việc."
+        },
+        {
+          "meaning_vi": "ngưỡng mộ",
+          "example_en": "He is a man I have always admired.",
+          "example_vi": "Anh ấy là người mà tôi luôn ngưỡng mộ."
+        },
+        {
+          "meaning_vi": "ngưỡng mộ",
+          "example_en": "Many people admire his courage.",
+          "example_vi": "Nhiều người ngưỡng mộ lòng dũng cảm của anh ấy."
+        },
+        {
+          "meaning_vi": "ngưỡng mộ",
+          "example_en": "She is widely admired for her talent.",
+          "example_vi": "Cô ấy được ngưỡng mộ rộng rãi vì tài năng của mình."
+        },
+        {
+          "meaning_vi": "ngưỡng mộ",
+          "example_en": "I admire your honesty in this matter.",
+          "example_vi": "Tôi ngưỡng mộ sự trung thực của bạn trong vấn đề này."
+        },
+        {
+          "meaning_vi": "ngắm nhìn",
+          "example_en": "We stood there to admire the beautiful sunset.",
+          "example_vi": "Chúng tôi đứng đó để ngắm nhìn cảnh hoàng hôn tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "ngắm nhìn",
+          "example_en": "She stopped to admire the flowers in the garden.",
+          "example_vi": "Cô ấy dừng lại để ngắm nhìn những bông hoa trong vườn."
+        },
+        {
+          "meaning_vi": "ngắm nhìn",
+          "example_en": "He took a moment to admire the painting.",
+          "example_vi": "Anh ấy dành một chút thời gian để ngắm nhìn bức tranh."
+        },
+        {
+          "meaning_vi": "ngắm nhìn",
+          "example_en": "They went to the gallery to admire the art.",
+          "example_vi": "Họ đến phòng trưng bày để ngắm nhìn các tác phẩm nghệ thuật."
+        },
+        {
+          "meaning_vi": "ngắm nhìn",
+          "example_en": "I love to admire the view from the balcony.",
+          "example_vi": "Tôi thích ngắm nhìn khung cảnh từ ban công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "admire",
+      "normalized_word": "admire",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I really admire her dedication to her work.",
+      "example_vi_clean": "Tôi thực sự ngưỡng mộ sự tận tâm của cô ấy với công việc."
+    },
+    {
+      "id": 24616,
+      "quiz_meaning_vi": "thừa nhận",
+      "meaning_vi_clean": "thừa nhận; cho vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "He finally admitted that he was wrong.",
+          "example_vi": "Cuối cùng anh ấy đã thừa nhận rằng mình sai."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "She admitted to making a mistake.",
+          "example_vi": "Cô ấy đã thừa nhận việc mắc lỗi."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "It is hard to admit defeat.",
+          "example_vi": "Thật khó để thừa nhận thất bại."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "He admitted his guilt to the police.",
+          "example_vi": "Anh ấy đã thừa nhận tội lỗi của mình với cảnh sát."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "I must admit that I was surprised.",
+          "example_vi": "Tôi phải thừa nhận rằng tôi đã rất ngạc nhiên."
+        },
+        {
+          "meaning_vi": "cho vào",
+          "example_en": "The ticket admits you into the museum.",
+          "example_vi": "Vé này cho phép bạn được cho vào bảo tàng."
+        },
+        {
+          "meaning_vi": "cho vào",
+          "example_en": "The club does not admit anyone under eighteen.",
+          "example_vi": "Câu lạc bộ không cho vào bất kỳ ai dưới mười tám tuổi."
+        },
+        {
+          "meaning_vi": "cho vào",
+          "example_en": "They were admitted to the hospital for treatment.",
+          "example_vi": "Họ đã được cho vào bệnh viện để điều trị."
+        },
+        {
+          "meaning_vi": "cho vào",
+          "example_en": "The door was locked, so nobody could be admitted.",
+          "example_vi": "Cửa đã khóa nên không ai có thể được cho vào."
+        },
+        {
+          "meaning_vi": "cho vào",
+          "example_en": "The university admits students based on grades.",
+          "example_vi": "Trường đại học cho vào sinh viên dựa trên điểm số."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang ngoại động từ/nội động từ tùy ngữ cảnh, chuẩn hóa nghĩa.",
+      "word": "admit",
+      "normalized_word": "admit",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He finally admitted that he was wrong.",
+      "example_vi_clean": "Cuối cùng anh ấy đã thừa nhận rằng mình sai."
+    },
+    {
+      "id": 24617,
+      "quiz_meaning_vi": "trưởng thành",
+      "meaning_vi_clean": "trưởng thành; người lớn",
+      "examples_clean": [
+        {
+          "meaning_vi": "trưởng thành",
+          "example_en": "He is an adult man now.",
+          "example_vi": "Anh ấy bây giờ là một người đàn ông trưởng thành."
+        },
+        {
+          "meaning_vi": "trưởng thành",
+          "example_en": "The plant is now in its adult stage.",
+          "example_vi": "Cây đã ở giai đoạn trưởng thành."
+        },
+        {
+          "meaning_vi": "trưởng thành",
+          "example_en": "She has an adult perspective on life.",
+          "example_vi": "Cô ấy có một cái nhìn trưởng thành về cuộc sống."
+        },
+        {
+          "meaning_vi": "trưởng thành",
+          "example_en": "They are looking for adult education classes.",
+          "example_vi": "Họ đang tìm kiếm các lớp học giáo dục cho người trưởng thành."
+        },
+        {
+          "meaning_vi": "người lớn",
+          "example_en": "The ticket price for an adult is higher.",
+          "example_vi": "Giá vé cho một người lớn thì cao hơn."
+        },
+        {
+          "meaning_vi": "người lớn",
+          "example_en": "Adults should set a good example for children.",
+          "example_vi": "Người lớn nên làm gương tốt cho trẻ em."
+        },
+        {
+          "meaning_vi": "người lớn",
+          "example_en": "The movie is suitable for adults.",
+          "example_vi": "Bộ phim này phù hợp cho người lớn."
+        },
+        {
+          "meaning_vi": "người lớn",
+          "example_en": "He is treated like an adult by his parents.",
+          "example_vi": "Anh ấy được cha mẹ đối xử như một người lớn."
+        },
+        {
+          "meaning_vi": "người lớn",
+          "example_en": "There are many activities for adults here.",
+          "example_vi": "Có nhiều hoạt động cho người lớn ở đây."
+        },
+        {
+          "meaning_vi": "người lớn",
+          "example_en": "She is an adult with many responsibilities.",
+          "example_vi": "Cô ấy là một người lớn với nhiều trách nhiệm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "adult",
+      "normalized_word": "adult",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is an adult man now.",
+      "example_vi_clean": "Anh ấy bây giờ là một người đàn ông trưởng thành."
+    },
+    {
+      "id": 24618,
+      "quiz_meaning_vi": "tiên tiến",
+      "meaning_vi_clean": "tiên tiến; cấp cao",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiên tiến",
+          "example_en": "They are using advanced technology in their factory.",
+          "example_vi": "Họ đang sử dụng công nghệ tiên tiến trong nhà máy của mình."
+        },
+        {
+          "meaning_vi": "tiên tiến",
+          "example_en": "This is an advanced method of farming.",
+          "example_vi": "Đây là một phương pháp canh tác tiên tiến."
+        },
+        {
+          "meaning_vi": "tiên tiến",
+          "example_en": "The country has an advanced healthcare system.",
+          "example_vi": "Đất nước này có một hệ thống chăm sóc sức khỏe tiên tiến."
+        },
+        {
+          "meaning_vi": "tiên tiến",
+          "example_en": "She has an advanced understanding of physics.",
+          "example_vi": "Cô ấy có sự hiểu biết tiên tiến về vật lý."
+        },
+        {
+          "meaning_vi": "tiên tiến",
+          "example_en": "We need advanced tools for this project.",
+          "example_vi": "Chúng ta cần các công cụ tiên tiến cho dự án này."
+        },
+        {
+          "meaning_vi": "cấp cao",
+          "example_en": "He is taking an advanced English course.",
+          "example_vi": "Anh ấy đang tham gia một khóa học tiếng Anh cấp cao."
+        },
+        {
+          "meaning_vi": "cấp cao",
+          "example_en": "This is an advanced level of difficulty.",
+          "example_vi": "Đây là một cấp độ khó cấp cao."
+        },
+        {
+          "meaning_vi": "cấp cao",
+          "example_en": "She passed the advanced exam with ease.",
+          "example_vi": "Cô ấy đã vượt qua kỳ thi cấp cao một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "cấp cao",
+          "example_en": "The book is for advanced students only.",
+          "example_vi": "Cuốn sách này chỉ dành cho học sinh cấp cao."
+        },
+        {
+          "meaning_vi": "cấp cao",
+          "example_en": "They are working on an advanced research project.",
+          "example_vi": "Họ đang làm việc trong một dự án nghiên cứu cấp cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "advanced",
+      "normalized_word": "advanced",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They are using advanced technology in their factory.",
+      "example_vi_clean": "Họ đang sử dụng công nghệ tiên tiến trong nhà máy của mình."
+    },
+    {
+      "id": 24619,
+      "quiz_meaning_vi": "sự thuận lợi",
+      "meaning_vi_clean": "sự thuận lợi; thế lợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thuận lợi",
+          "example_en": "The main advantage of this car is its speed.",
+          "example_vi": "Sự thuận lợi chính của chiếc xe này là tốc độ của nó."
+        },
+        {
+          "meaning_vi": "sự thuận lợi",
+          "example_en": "Living near the office is a great advantage.",
+          "example_vi": "Sống gần văn phòng là một sự thuận lợi lớn."
+        },
+        {
+          "meaning_vi": "sự thuận lợi",
+          "example_en": "There is no advantage in waiting any longer.",
+          "example_vi": "Không có sự thuận lợi nào trong việc chờ đợi lâu hơn nữa."
+        },
+        {
+          "meaning_vi": "sự thuận lợi",
+          "example_en": "She used her advantage to win the game.",
+          "example_vi": "Cô ấy đã sử dụng sự thuận lợi của mình để thắng trò chơi."
+        },
+        {
+          "meaning_vi": "sự thuận lợi",
+          "example_en": "One advantage of the internet is easy access to information.",
+          "example_vi": "Một sự thuận lợi của internet là dễ dàng tiếp cận thông tin."
+        },
+        {
+          "meaning_vi": "thế lợi",
+          "example_en": "The team had the advantage in the second half.",
+          "example_vi": "Đội bóng đã có thế lợi trong hiệp hai."
+        },
+        {
+          "meaning_vi": "thế lợi",
+          "example_en": "He gained an advantage over his opponent.",
+          "example_vi": "Anh ấy đã giành được thế lợi trước đối thủ của mình."
+        },
+        {
+          "meaning_vi": "thế lợi",
+          "example_en": "They lost their advantage during the negotiation.",
+          "example_vi": "Họ đã mất thế lợi trong cuộc đàm phán."
+        },
+        {
+          "meaning_vi": "thế lợi",
+          "example_en": "The high ground gave them a tactical advantage.",
+          "example_vi": "Vị trí cao đã mang lại cho họ một thế lợi chiến thuật."
+        },
+        {
+          "meaning_vi": "thế lợi",
+          "example_en": "We must maintain our advantage in the market.",
+          "example_vi": "Chúng ta phải duy trì thế lợi của mình trên thị trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ, chuẩn hóa nghĩa.",
+      "word": "advantage",
+      "normalized_word": "advantage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The main advantage of this car is its speed.",
+      "example_vi_clean": "Sự thuận lợi chính của chiếc xe này là tốc độ của nó."
+    },
+    {
+      "id": 24620,
+      "quiz_meaning_vi": "phiêu lưu",
+      "meaning_vi_clean": "phiêu lưu; sự mạo hiểm",
+      "examples_clean": [
+        {
+          "meaning_vi": "phiêu lưu",
+          "example_en": "They went on a great adventure in the mountains.",
+          "example_vi": "Họ đã có một chuyến phiêu lưu tuyệt vời trên núi."
+        },
+        {
+          "meaning_vi": "phiêu lưu",
+          "example_en": "Life is an adventure to be enjoyed.",
+          "example_vi": "Cuộc sống là một chuyến phiêu lưu cần được tận hưởng."
+        },
+        {
+          "meaning_vi": "phiêu lưu",
+          "example_en": "He loves reading stories about adventure.",
+          "example_vi": "Anh ấy thích đọc những câu chuyện về phiêu lưu."
+        },
+        {
+          "meaning_vi": "phiêu lưu",
+          "example_en": "We are looking for a new adventure.",
+          "example_vi": "Chúng tôi đang tìm kiếm một chuyến phiêu lưu mới."
+        },
+        {
+          "meaning_vi": "phiêu lưu",
+          "example_en": "Her travels were full of adventure.",
+          "example_vi": "Những chuyến đi của cô ấy đầy ắp sự phiêu lưu."
+        },
+        {
+          "meaning_vi": "sự mạo hiểm",
+          "example_en": "Climbing that cliff was a dangerous adventure.",
+          "example_vi": "Leo lên vách đá đó là một sự mạo hiểm nguy hiểm."
+        },
+        {
+          "meaning_vi": "sự mạo hiểm",
+          "example_en": "He has a spirit of adventure.",
+          "example_vi": "Anh ấy có một tinh thần mạo hiểm."
+        },
+        {
+          "meaning_vi": "sự mạo hiểm",
+          "example_en": "Starting a business is a big adventure.",
+          "example_vi": "Bắt đầu một công việc kinh doanh là một sự mạo hiểm lớn."
+        },
+        {
+          "meaning_vi": "sự mạo hiểm",
+          "example_en": "They decided to take the adventure despite the risks.",
+          "example_vi": "Họ quyết định thực hiện sự mạo hiểm bất chấp những rủi ro."
+        },
+        {
+          "meaning_vi": "sự mạo hiểm",
+          "example_en": "The trip was an adventure for all of us.",
+          "example_vi": "Chuyến đi là một sự mạo hiểm đối với tất cả chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "adventure",
+      "normalized_word": "adventure",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They went on a great adventure in the mountains.",
+      "example_vi_clean": "Họ đã có một chuyến phiêu lưu tuyệt vời trên núi."
+    }
+  ]
+}

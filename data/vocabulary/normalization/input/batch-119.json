@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-119",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25181,
+      "word": "kit",
+      "normalized_word": "kit",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/kit/",
+      "primary_meaning_vi": "của kitten",
+      "meaning_vi": "của kitten; mèo con; thùng gỗ; chậu gỗ; đàn viôlông nhỏ; đồ đạc quần áo (của bộ đội...); hành lý (đi du lịch); đồ lề (đi săn bắn, đi câu...); dụng cụ làm việc, bộ đồ nghề; túi đựng đồ đạc quần áo (của bộ đội...); túi (đầy); cả bọn, cả lũ; trang bị đồ đạc quần áo; sắm sửa đồ lề; sắm sửa đồ nghề",
+      "example_en": "1961 18 Jan, Guardian (cited after OED):",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Always carry a good first-aid kit.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I built the entire car from a kit.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Get your kit off and come to bed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25182,
+      "word": "knock",
+      "normalized_word": "knock",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/nɔk/",
+      "primary_meaning_vi": "cú đánh",
+      "meaning_vi": "cú đánh, cú va chạm; tiếng gõ (cửa); ,  (từ lóng) lời phê bình kịch liệt, lời chỉ trích gay gắt; tiếng nổ lọc xọc (máu bị jơ hoặc hỏng); bị thất bại, bị đánh bại; bị khán giả chê; bị sa sút, bị nghèo khổ; đập, đánh, va đụng; làm choáng người, gây ấn tượng sâu sắc, làm ngạc nhiên hết sức; ,  (từ lóng) phê bình kịch liệt, chỉ trích gay gắt; gõ (cửa); kêu lọc xọc, nổ lọc xọc (máy bị jơ hoặc hỏng); đánh liên hồi, gõ liên hồi; hành hạ, làm khổ, làm ngược đãi (ai); đi lang thang, sống lang thang, sống được chăng hay chớ; va phải, đụng phải; tình cờ, chạm trán, tình cờ gặp (ai); uống; đánh ngâ, húc ngã; phá đổ (nhà...); bắn rơi (máy bay...); đánh quỵ; hạ (uy thế của ai...); gõ búa xuống bàn ra hiệu quyết định bán (bán đấu giá); yêu cầu (ai hát một bài...); dỡ (máy...) thành từng bộ phận nhỏ (cho gọn khi chuyên chở); hạ (giá...); đánh bật đi, đánh văng đi, đánh tung lên; nghỉ, ngừng (việc); ngừng làm việc; giải quyết nhanh, làm mau; rút bớt, bớt đi; ăn cắp, xoáy (cái gì); chết; gõ (tẩu cho tàn thuốc) bật ra; đánh nốc ao, hạ đo ván (quyền Anh); đánh gục, đánh bại (kẻ địch); làm vội (một kế hoạch...); tập hợp vội vàng, vơ váo vào với nhau; ghép vội vào với nhau; đầu hàng, hàng phục, chịu khuất phục, chịu thua; đánh bay lên, đánh tốc lên; gõ cửa đánh thức (ai) dậy; làm vội vàng, giải quyết vội vàng, thu xếp vội vàng (việc gì); làm kiệt sức, làm mệt lử; kiệt sức, mệt lử; ,  (từ lóng) làm cho có mang; ghi nhanh, thắng nhanh (điểm); làm thất bại, làm hỏng (kế hoạch...); chặn đứng (một âm mưu...); thắng ai một cách dễ dàng; đánh ai ngã lăn quay; làm cho ai choáng người, làm cho ai điếng người",
+      "example_en": "I heard a knock on my door.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He took a knock on the head.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He played a slow but sure knock of 35.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don’t knock it until you’ve tried it.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25183,
+      "word": "knowledge",
+      "normalized_word": "knowledge",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nɔlidʤ/",
+      "primary_meaning_vi": "sự biết",
+      "meaning_vi": "sự biết; sự nhận biết, sự nhận ra; sự quen biết; sự hiểu biết, tri thức, kiến thức; học thức; tin, tin tức",
+      "example_en": "His knowledge of Iceland was limited to what he'd seen on the Travel Channel.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Knowledge consists in recognizing the difference between good and bad decisions.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A secretary should have a good knowledge of shorthand.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His library contained the accumulated knowledge of the Greeks and Romans.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25184,
+      "word": "labor",
+      "normalized_word": "labor",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'leibə/ (labor) /'leibə/",
+      "primary_meaning_vi": "lao động",
+      "meaning_vi": "lao động; công việc, công việc nặng nhọc; tầng lớp lao động, nhân công; đau đẻ; những cố gắng vô ích, những nỗ lực uổng công; gắng công, nỗ lực, dốc sức; di chuyển chậm chạp, di chuyển khó khăn; lắc lư tròng trành trên biển động; bị giày vò, quằn quại, chịu đau đớn; là nạn nhân của; đau khổ; dày công trau dồi; chuẩn bị kỹ lưỡng; bàn bạc chi tiết",
+      "example_en": "I think we've all got the idea. There's no need to labour the point.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25185,
+      "word": "labour",
+      "normalized_word": "labour",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'leibə/ (labor) /'leibə/",
+      "primary_meaning_vi": "lao động",
+      "meaning_vi": "lao động; công việc, công việc nặng nhọc; tầng lớp lao động, nhân công; đau đẻ; những cố gắng vô ích, những nỗ lực uổng công; gắng công, nỗ lực, dốc sức; di chuyển chậm chạp, di chuyển khó khăn; lắc lư tròng trành trên biển động; bị giày vò, quằn quại, chịu đau đớn; là nạn nhân của; đau khổ; dày công trau dồi; chuẩn bị kỹ lưỡng; bàn bạc chi tiết",
+      "example_en": "I think we've all got the idea. There's no need to labour the point.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25186,
+      "word": "lack",
+      "normalized_word": "lack",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/læk/",
+      "primary_meaning_vi": "sự thiếu",
+      "meaning_vi": "sự thiếu; thiếu, không có; thiếu, không có (chỉ động tính từ quá khứ)",
+      "example_en": "My life lacks excitement.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He'll never lack for company while he's got all that money.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25187,
+      "word": "lake",
+      "normalized_word": "lake",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/leik/",
+      "primary_meaning_vi": "chất màu đỏ tía (chế từ sơn)",
+      "meaning_vi": "chất màu đỏ tía (chế từ sơn)",
+      "example_en": "For example, the name of a lake prepared by extending the aluminum salt prepared from FD&C Blue No. 1 upon the substratum would be FD&C Blue No. 1--Aluminum Lake.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25188,
+      "word": "lamp",
+      "normalized_word": "lamp",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/læmp/",
+      "primary_meaning_vi": "đèn",
+      "meaning_vi": "đèn; mặt trời, mặt trăng, sao; nguồn ánh sáng (tinh thần...), nguồn hy vọng; góp phần vào bước tiến (của khoa học, của một sự nghiệp...); tỏ ra công phu; phải thức đêm thức hôm để làm; nặng nề, không thanh thoát; cầu kỳ (văn); chiếu sáng, rọi sáng; treo đèn, chăng đèn; ,  (từ lóng) nhìn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25189,
+      "word": "landscape",
+      "normalized_word": "landscape",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'lænskeip/",
+      "primary_meaning_vi": "phong cảnh",
+      "meaning_vi": "phong cảnh; làm đẹp phong cảnh; làm nghề xây dựng vườn hoa và công viên",
+      "example_en": "The software patent landscape has changed considerably in the last years",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25190,
+      "word": "lane",
+      "normalized_word": "lane",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/lein/",
+      "primary_meaning_vi": "đường nhỏ",
+      "meaning_vi": "đường nhỏ, đường làng; đường hẻm, ngõ hẻm (ở thành phố); khoảng giữa hàng người; đường quy định cho tàu biển; đường dành riêng cho xe cộ đi hàng một; hết cơn bỉ cực đến tuần thái lai",
+      "example_en": "And it's Uncle Mo in front by two as they come to the top of the lane.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

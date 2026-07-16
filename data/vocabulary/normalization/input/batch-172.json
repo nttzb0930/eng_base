@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-172",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25711,
+      "word": "choir",
+      "normalized_word": "choir",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'kwaiə/",
+      "primary_meaning_vi": "đội hợp xướng",
+      "meaning_vi": "đội hợp xướng, đội hợp ca (của nhà thờ); chỗ ngồi của đội hợp xướng trong nhà thờ; đội đồng ca; bầy chim; bầy thiên thần; hợp xướng, đồng ca",
+      "example_en": "The church choir practices Thursday nights.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Seraphim, Cherubim, and Thrones are three of the choirs of angels.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25712,
+      "word": "choke",
+      "normalized_word": "choke",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/tʃouk/",
+      "primary_meaning_vi": "lõi rau atisô",
+      "meaning_vi": "lõi rau atisô; sự làm nghẹt, sự làm kẹt, sự tắc lại; sự làm ngột, sự làm tắt (tức) thở; chỗ thắt lại, chỗ co lại, chỗ bóp lại; cuộn cảm kháng ((cũng) choker); van điều tiết không khí; bướm gió; làm nghẹt, làm tắc (tức) thở; làm chết ngạt; bít lại, bịt lại; nén, nuốt (giận, nước mắt); nghẹt thở, ngạt thở, tắc (tức) thở; uất, uất lên; tắc, nghẹt (ống dẫn...); cầm, nuốt (nước mắt); nuốt, nén; lặng thinh, nín lặng; bóp cổ; can gián, khuyên can; đuổi đi; bịt, bít chặt; làm nghẹt (tiếng); lặng thinh, nín lặng",
+      "example_en": "Ever since he choked on a bone, he has refused to eat fish.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The collar of this shirt is too tight; it’s choking me.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to choke a cave passage with boulders and mud",
+          "example_vi": null
+        },
+        {
+          "example_en": "He has a lot of talent, but he tends to choke under pressure.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25713,
+      "word": "christian",
+      "normalized_word": "christian",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kristjən/",
+      "primary_meaning_vi": "đạo Cơ-đốc",
+      "meaning_vi": "đạo Cơ-đốc; tin vào Cơ-đốc; thánh; người văn minh; lễ chôn cất theo đúng thủ tục của nhà thờ; tên thánh; người theo đạo Cơ-đốc; người văn minh (đối với người dã man như thú vật)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25714,
+      "word": "chronological",
+      "normalized_word": "chronological",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,krɔnə'lɔdʤik/ (chronological) /,krɔnə'lɔdʤikəl/",
+      "primary_meaning_vi": "niên đại học",
+      "meaning_vi": "niên đại học; theo thứ tự niên đại; theo thứ tự thời gian",
+      "example_en": "He is 67 in chronological age, but has the mind and body of someone 55.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25715,
+      "word": "chuckle",
+      "normalized_word": "chuckle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'tʃʌkl/",
+      "primary_meaning_vi": "tiếng cười khúc khích",
+      "meaning_vi": "tiếng cười khúc khích; nụ cười thầm; sự khoái trá ra mặt; tiếng cục cục (gà); cười khúc khích; khoái trá; kêu cục cục (gà mái)",
+      "example_en": "She chuckled her assent to my offer as she got in the car.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25716,
+      "word": "circular",
+      "normalized_word": "circular",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sə:kjulə/",
+      "primary_meaning_vi": "tròn",
+      "meaning_vi": "tròn, vòng, vòng quanh; thông tư, thông tin; thông tri, thông tư; giấy báo (gửi cho khách hàng)",
+      "example_en": "Your dictionary defines \"brave\" as \"courageous\", and \"courageous\" as \"brave\". That's a circular definition.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25717,
+      "word": "circus",
+      "normalized_word": "circus",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sə:kəs/",
+      "primary_meaning_vi": "rạp xiếc",
+      "meaning_vi": "rạp xiếc; gánh xiếc; chỗ nhiều đường gặp nhau; tiếng huyên náo, trò chơi ồn ào; trường đấu, trường du hí (ở cổ La-mã); đai vòng",
+      "example_en": "The circus will be in town next week.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Oxford Circus in London is at the north end of Regent Street.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25718,
+      "word": "citizenship",
+      "normalized_word": "citizenship",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sitiznʃip/",
+      "primary_meaning_vi": "tư cách công dân",
+      "meaning_vi": "tư cách công dân; quyền công dân; bổn phận công dân",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25719,
+      "word": "civil",
+      "normalized_word": "civil",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'sivl/",
+      "primary_meaning_vi": "công dân",
+      "meaning_vi": "công dân; thường dân (trái với quân đội); bên đời (trái với bên đạo); hộ (thuộc) dân sự (trái với hình); lễ phép, lễ độ, lịch sự; thường; tổ chức phòng không nhân dân; phong trào chống thuế, chống luật pháp; tiền nghị viện cấp cho nhà vua Anh; giữ lễ phép, giữ lễ độ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25720,
+      "word": "civilisation",
+      "normalized_word": "civilisation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự làm cho văn minh",
+      "meaning_vi": "sự làm cho văn minh, sự khai hoá; nền văn minh; những nước văn minh, những dân tộc văn minh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

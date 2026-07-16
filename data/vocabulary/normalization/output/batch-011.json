@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24101,
+      "quiz_meaning_vi": "phần dưới cùng",
+      "meaning_vi_clean": "phần dưới cùng; đáy; cuối",
+      "examples_clean": [
+        {
+          "meaning_vi": "phần dưới cùng",
+          "example_en": "Footers appear at the bottoms of pages.",
+          "example_vi": "Chân trang xuất hiện ở phần dưới cùng của các trang."
+        },
+        {
+          "meaning_vi": "phần dưới cùng",
+          "example_en": "Write your name at the bottom of the form.",
+          "example_vi": "Hãy viết tên bạn vào phần dưới cùng của mẫu đơn."
+        },
+        {
+          "meaning_vi": "phần dưới cùng",
+          "example_en": "The bottom of the box was broken.",
+          "example_vi": "Phần dưới cùng của chiếc hộp đã bị hỏng."
+        },
+        {
+          "meaning_vi": "phần dưới cùng",
+          "example_en": "She sat at the bottom of the stairs.",
+          "example_vi": "Cô ấy ngồi ở phần dưới cùng của cầu thang."
+        },
+        {
+          "meaning_vi": "đáy",
+          "example_en": "The ship sank to the bottom of the sea.",
+          "example_vi": "Con tàu chìm xuống đáy biển."
+        },
+        {
+          "meaning_vi": "đáy",
+          "example_en": "There is a coin at the bottom of the pool.",
+          "example_vi": "Có một đồng xu ở dưới đáy hồ bơi."
+        },
+        {
+          "meaning_vi": "đáy",
+          "example_en": "He cleaned the bottom of the pan.",
+          "example_vi": "Anh ấy đã cọ sạch đáy chảo."
+        },
+        {
+          "meaning_vi": "cuối",
+          "example_en": "We reached the bottom of the hill.",
+          "example_vi": "Chúng tôi đã đi đến cuối ngọn đồi."
+        },
+        {
+          "meaning_vi": "cuối",
+          "example_en": "The list is at the bottom of the page.",
+          "example_vi": "Danh sách nằm ở cuối trang."
+        },
+        {
+          "meaning_vi": "cuối",
+          "example_en": "He waited until the bottom of the hour.",
+          "example_vi": "Anh ấy đợi cho đến cuối giờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa phổ biến nhất, loại bỏ các nghĩa chuyên ngành hoặc lóng. Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "bottom",
+      "normalized_word": "bottom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Footers appear at the bottoms of pages.",
+      "example_vi_clean": "Chân trang xuất hiện ở phần dưới cùng của các trang."
+    },
+    {
+      "id": 24102,
+      "quiz_meaning_vi": "cái bát",
+      "meaning_vi_clean": "cái bát; bát (đầy)",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái bát",
+          "example_en": "She bought a new ceramic bowl.",
+          "example_vi": "Cô ấy đã mua một cái bát gốm mới."
+        },
+        {
+          "meaning_vi": "cái bát",
+          "example_en": "Put the fruit in a large bowl.",
+          "example_vi": "Hãy đặt trái cây vào một cái bát lớn."
+        },
+        {
+          "meaning_vi": "cái bát",
+          "example_en": "The dog ate from its bowl.",
+          "example_vi": "Con chó ăn từ cái bát của nó."
+        },
+        {
+          "meaning_vi": "cái bát",
+          "example_en": "He washed the dirty bowl.",
+          "example_vi": "Anh ấy đã rửa cái bát bẩn."
+        },
+        {
+          "meaning_vi": "bát (đầy)",
+          "example_en": "You can’t have any more soup – you’ve had three bowls already.",
+          "example_vi": "Bạn không thể ăn thêm súp nữa đâu – bạn đã ăn ba bát rồi."
+        },
+        {
+          "meaning_vi": "bát (đầy)",
+          "example_en": "She ate a bowl of rice for lunch.",
+          "example_vi": "Cô ấy đã ăn một bát cơm cho bữa trưa."
+        },
+        {
+          "meaning_vi": "bát (đầy)",
+          "example_en": "He finished a bowl of hot noodles.",
+          "example_vi": "Anh ấy đã ăn xong một bát mì nóng."
+        },
+        {
+          "meaning_vi": "bát (đầy)",
+          "example_en": "They shared a bowl of salad.",
+          "example_vi": "Họ đã chia nhau một bát salad."
+        },
+        {
+          "meaning_vi": "bát (đầy)",
+          "example_en": "I had a bowl of cereal this morning.",
+          "example_vi": "Tôi đã ăn một bát ngũ cốc sáng nay."
+        },
+        {
+          "meaning_vi": "bát (đầy)",
+          "example_en": "She prepared a bowl of soup for the guest.",
+          "example_vi": "Cô ấy đã chuẩn bị một bát súp cho vị khách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ. Giữ nghĩa phổ biến nhất. Bổ sung ví dụ.",
+      "word": "bowl",
+      "normalized_word": "bowl",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She bought a new ceramic bowl.",
+      "example_vi_clean": "Cô ấy đã mua một cái bát gốm mới."
+    },
+    {
+      "id": 24103,
+      "quiz_meaning_vi": "hộp",
+      "meaning_vi_clean": "hộp; thùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "hộp",
+          "example_en": "Please put the gift in a box.",
+          "example_vi": "Làm ơn đặt món quà vào trong hộp."
+        },
+        {
+          "meaning_vi": "hộp",
+          "example_en": "She opened the box carefully.",
+          "example_vi": "Cô ấy mở chiếc hộp một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "hộp",
+          "example_en": "The shoes came in a cardboard box.",
+          "example_vi": "Đôi giày được đựng trong một chiếc hộp các-tông."
+        },
+        {
+          "meaning_vi": "hộp",
+          "example_en": "He keeps his pens in a small box.",
+          "example_vi": "Anh ấy giữ bút trong một chiếc hộp nhỏ."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "We packed our books into a large box.",
+          "example_vi": "Chúng tôi đã đóng gói sách vào một chiếc thùng lớn."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The delivery man left a box at the door.",
+          "example_vi": "Người giao hàng đã để lại một chiếc thùng ở cửa."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "They moved all their clothes in a box.",
+          "example_vi": "Họ đã chuyển tất cả quần áo của mình trong một chiếc thùng."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "The box was too heavy to lift.",
+          "example_vi": "Chiếc thùng quá nặng để nhấc lên."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "He found an old box in the attic.",
+          "example_vi": "Anh ấy tìm thấy một chiếc thùng cũ trên gác mái."
+        },
+        {
+          "meaning_vi": "thùng",
+          "example_en": "Empty the box before you throw it away.",
+          "example_vi": "Hãy làm trống chiếc thùng trước khi bạn vứt nó đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phù hợp với cấp độ A1. Bổ sung ví dụ.",
+      "word": "box",
+      "normalized_word": "box",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please put the gift in a box.",
+      "example_vi_clean": "Làm ơn đặt món quà vào trong hộp."
+    },
+    {
+      "id": 24104,
+      "quiz_meaning_vi": "con trai",
+      "meaning_vi_clean": "con trai; thiếu niên",
+      "examples_clean": [
+        {
+          "meaning_vi": "con trai",
+          "example_en": "Kate is dating a boy named Jim.",
+          "example_vi": "Kate đang hẹn hò với một cậu con trai tên là Jim."
+        },
+        {
+          "meaning_vi": "con trai",
+          "example_en": "The boy is playing in the park.",
+          "example_vi": "Cậu con trai đang chơi trong công viên."
+        },
+        {
+          "meaning_vi": "con trai",
+          "example_en": "He is a very kind boy.",
+          "example_vi": "Cậu ấy là một cậu con trai rất tốt bụng."
+        },
+        {
+          "meaning_vi": "con trai",
+          "example_en": "The boy helped his mother with the bags.",
+          "example_vi": "Cậu con trai đã giúp mẹ xách túi."
+        },
+        {
+          "meaning_vi": "thiếu niên",
+          "example_en": "The group of boys went to the cinema.",
+          "example_vi": "Nhóm thiếu niên đã đi xem phim."
+        },
+        {
+          "meaning_vi": "thiếu niên",
+          "example_en": "He has been a good boy all year.",
+          "example_vi": "Nó là một thiếu niên ngoan suốt cả năm qua."
+        },
+        {
+          "meaning_vi": "thiếu niên",
+          "example_en": "The boys are practicing football.",
+          "example_vi": "Các thiếu niên đang tập luyện bóng đá."
+        },
+        {
+          "meaning_vi": "thiếu niên",
+          "example_en": "That boy is very talented at music.",
+          "example_vi": "Thiếu niên đó rất có tài về âm nhạc."
+        },
+        {
+          "meaning_vi": "thiếu niên",
+          "example_en": "The boy ran home after school.",
+          "example_vi": "Thiếu niên đó chạy về nhà sau giờ học."
+        },
+        {
+          "meaning_vi": "thiếu niên",
+          "example_en": "I saw a boy reading a book.",
+          "example_vi": "Tôi thấy một thiếu niên đang đọc sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa cơ bản. Bổ sung ví dụ.",
+      "word": "boy",
+      "normalized_word": "boy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Kate is dating a boy named Jim.",
+      "example_vi_clean": "Kate đang hẹn hò với một cậu con trai tên là Jim."
+    },
+    {
+      "id": 24105,
+      "quiz_meaning_vi": "bạn trai",
+      "meaning_vi_clean": "bạn trai",
+      "examples_clean": [
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "She is going out with her boyfriend tonight.",
+          "example_vi": "Cô ấy sẽ đi chơi với bạn trai của mình tối nay."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "My sister's boyfriend is a doctor.",
+          "example_vi": "Bạn trai của chị tôi là bác sĩ."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "She introduced her boyfriend to her parents.",
+          "example_vi": "Cô ấy đã giới thiệu bạn trai của mình với bố mẹ."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "They have been boyfriend and girlfriend for years.",
+          "example_vi": "Họ đã là bạn trai và bạn gái của nhau nhiều năm rồi."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "Her boyfriend bought her flowers.",
+          "example_vi": "Bạn trai của cô ấy đã mua hoa cho cô ấy."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "He is a great boyfriend.",
+          "example_vi": "Anh ấy là một người bạn trai tuyệt vời."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "She is waiting for her boyfriend at the station.",
+          "example_vi": "Cô ấy đang đợi bạn trai ở nhà ga."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "They are visiting her boyfriend's family.",
+          "example_vi": "Họ đang đi thăm gia đình của bạn trai cô ấy."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "She talked about her boyfriend all day.",
+          "example_vi": "Cô ấy nói về bạn trai của mình cả ngày."
+        },
+        {
+          "meaning_vi": "bạn trai",
+          "example_en": "He wants to be a better boyfriend.",
+          "example_vi": "Anh ấy muốn trở thành một người bạn trai tốt hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ.",
+      "word": "boyfriend",
+      "normalized_word": "boyfriend",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is going out with her boyfriend tonight.",
+      "example_vi_clean": "Cô ấy sẽ đi chơi với bạn trai của mình tối nay."
+    },
+    {
+      "id": 24106,
+      "quiz_meaning_vi": "óc",
+      "meaning_vi_clean": "óc; não; trí tuệ",
+      "examples_clean": [
+        {
+          "meaning_vi": "óc",
+          "example_en": "The human brain is very complex.",
+          "example_vi": "Bộ óc con người rất phức tạp."
+        },
+        {
+          "meaning_vi": "óc",
+          "example_en": "She has a sharp brain.",
+          "example_vi": "Cô ấy có một bộ óc nhạy bén."
+        },
+        {
+          "meaning_vi": "óc",
+          "example_en": "He uses his brain to solve problems.",
+          "example_vi": "Anh ấy dùng bộ óc của mình để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "óc",
+          "example_en": "The injury affected his brain.",
+          "example_vi": "Chấn thương đã ảnh hưởng đến bộ óc của anh ấy."
+        },
+        {
+          "meaning_vi": "não",
+          "example_en": "Scientists study how the brain works.",
+          "example_vi": "Các nhà khoa học nghiên cứu cách não hoạt động."
+        },
+        {
+          "meaning_vi": "não",
+          "example_en": "The brain controls all body functions.",
+          "example_vi": "Não điều khiển mọi chức năng của cơ thể."
+        },
+        {
+          "meaning_vi": "não",
+          "example_en": "He suffered a brain injury.",
+          "example_vi": "Anh ấy bị chấn thương não."
+        },
+        {
+          "meaning_vi": "trí tuệ",
+          "example_en": "She has a lot of brains.",
+          "example_vi": "Cô ấy có rất nhiều trí tuệ."
+        },
+        {
+          "meaning_vi": "trí tuệ",
+          "example_en": "He is a man of great brain.",
+          "example_vi": "Anh ấy là một người có trí tuệ tuyệt vời."
+        },
+        {
+          "meaning_vi": "trí tuệ",
+          "example_en": "It takes a lot of brain to do this job.",
+          "example_vi": "Cần rất nhiều trí tuệ để làm công việc này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ. Loại bỏ nghĩa lóng và nghĩa không phù hợp. Bổ sung ví dụ.",
+      "word": "brain",
+      "normalized_word": "brain",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The human brain is very complex.",
+      "example_vi_clean": "Bộ óc con người rất phức tạp."
+    },
+    {
+      "id": 24107,
+      "quiz_meaning_vi": "bánh mì",
+      "meaning_vi_clean": "bánh mì",
+      "examples_clean": [
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "I eat bread for breakfast.",
+          "example_vi": "Tôi ăn bánh mì vào bữa sáng."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "She bought a loaf of bread.",
+          "example_vi": "Cô ấy đã mua một ổ bánh mì."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "The bread is fresh and warm.",
+          "example_vi": "Bánh mì rất tươi và ấm."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "He sliced the bread for the sandwich.",
+          "example_vi": "Anh ấy đã cắt bánh mì để làm bánh sandwich."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "Do you want white bread or brown bread?",
+          "example_vi": "Bạn muốn bánh mì trắng hay bánh mì nâu?"
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "The smell of baking bread is lovely.",
+          "example_vi": "Mùi bánh mì nướng thật tuyệt."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "She put butter on her bread.",
+          "example_vi": "Cô ấy phết bơ lên bánh mì của mình."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "We need to buy more bread.",
+          "example_vi": "Chúng ta cần mua thêm bánh mì."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "The bread was hard because it was old.",
+          "example_vi": "Bánh mì bị cứng vì nó đã cũ."
+        },
+        {
+          "meaning_vi": "bánh mì",
+          "example_en": "He toasted the bread.",
+          "example_vi": "Anh ấy đã nướng bánh mì."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa sai hoàn toàn trong dữ liệu nguồn. Bổ sung ví dụ.",
+      "word": "bread",
+      "normalized_word": "bread",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I eat bread for breakfast.",
+      "example_vi_clean": "Tôi ăn bánh mì vào bữa sáng."
+    },
+    {
+      "id": 24108,
+      "quiz_meaning_vi": "bữa ăn sáng",
+      "meaning_vi_clean": "bữa ăn sáng; ăn sáng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bữa ăn sáng",
+          "example_en": "You should put more protein in her breakfast so she will grow.",
+          "example_vi": "Bạn nên bổ sung thêm protein vào bữa ăn sáng của con bé để nó lớn nhanh."
+        },
+        {
+          "meaning_vi": "bữa ăn sáng",
+          "example_en": "We serve breakfast all day.",
+          "example_vi": "Chúng tôi phục vụ bữa ăn sáng cả ngày."
+        },
+        {
+          "meaning_vi": "bữa ăn sáng",
+          "example_en": "Breakfast is the most important meal.",
+          "example_vi": "Bữa ăn sáng là bữa ăn quan trọng nhất."
+        },
+        {
+          "meaning_vi": "bữa ăn sáng",
+          "example_en": "I had a healthy breakfast.",
+          "example_vi": "Tôi đã có một bữa ăn sáng lành mạnh."
+        },
+        {
+          "meaning_vi": "ăn sáng",
+          "example_en": "We usually breakfast at seven.",
+          "example_vi": "Chúng tôi thường ăn sáng lúc bảy giờ."
+        },
+        {
+          "meaning_vi": "ăn sáng",
+          "example_en": "They breakfasted together in the garden.",
+          "example_vi": "Họ đã ăn sáng cùng nhau trong vườn."
+        },
+        {
+          "meaning_vi": "ăn sáng",
+          "example_en": "Did you breakfast yet?",
+          "example_vi": "Bạn đã ăn sáng chưa?"
+        },
+        {
+          "meaning_vi": "ăn sáng",
+          "example_en": "I like to breakfast early.",
+          "example_vi": "Tôi thích ăn sáng sớm."
+        },
+        {
+          "meaning_vi": "ăn sáng",
+          "example_en": "She breakfasted on coffee and toast.",
+          "example_vi": "Cô ấy đã ăn sáng với cà phê và bánh mì nướng."
+        },
+        {
+          "meaning_vi": "ăn sáng",
+          "example_en": "We will breakfast before we leave.",
+          "example_vi": "Chúng ta sẽ ăn sáng trước khi rời đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang danh từ/động từ. Bổ sung ví dụ.",
+      "word": "breakfast",
+      "normalized_word": "breakfast",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You should put more protein in her breakfast so she will grow.",
+      "example_vi_clean": "Bạn nên bổ sung thêm protein vào bữa ăn sáng của con bé để nó lớn nhanh."
+    },
+    {
+      "id": 24109,
+      "quiz_meaning_vi": "hít",
+      "meaning_vi_clean": "hít; thở",
+      "examples_clean": [
+        {
+          "meaning_vi": "hít",
+          "example_en": "Fish have gills so they can breathe underwater.",
+          "example_vi": "Cá có mang để chúng có thể hít thở dưới nước."
+        },
+        {
+          "meaning_vi": "hít",
+          "example_en": "Try not to breathe too much smoke.",
+          "example_vi": "Cố gắng đừng hít quá nhiều khói."
+        },
+        {
+          "meaning_vi": "hít",
+          "example_en": "She breathed in the fresh air.",
+          "example_vi": "Cô ấy hít không khí trong lành vào."
+        },
+        {
+          "meaning_vi": "hít",
+          "example_en": "He breathed deeply before the race.",
+          "example_vi": "Anh ấy hít sâu trước khi bắt đầu cuộc đua."
+        },
+        {
+          "meaning_vi": "thở",
+          "example_en": "While life as we know it depends on oxygen, scientists have speculated that alien life forms might breathe chlorine or methane.",
+          "example_vi": "Trong khi sự sống như chúng ta biết phụ thuộc vào oxy, các nhà khoa học suy đoán rằng các dạng sống ngoài hành tinh có thể thở bằng clo hoặc metan."
+        },
+        {
+          "meaning_vi": "thở",
+          "example_en": "I will not allow it, as long as I still breathe.",
+          "example_vi": "Tôi sẽ không cho phép điều đó, chừng nào tôi còn thở."
+        },
+        {
+          "meaning_vi": "thở",
+          "example_en": "The baby is breathing quietly.",
+          "example_vi": "Đứa bé đang thở nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "thở",
+          "example_en": "It is hard to breathe in this heat.",
+          "example_vi": "Thật khó để thở trong cái nóng này."
+        },
+        {
+          "meaning_vi": "thở",
+          "example_en": "He breathed a sigh of relief.",
+          "example_vi": "Anh ấy thở phào nhẹ nhõm."
+        },
+        {
+          "meaning_vi": "thở",
+          "example_en": "She stopped to breathe for a moment.",
+          "example_vi": "Cô ấy dừng lại để thở một chút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa cơ bản. Bổ sung ví dụ.",
+      "word": "breathe",
+      "normalized_word": "breathe",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Fish have gills so they can breathe underwater.",
+      "example_vi_clean": "Cá có mang để chúng có thể hít thở dưới nước."
+    },
+    {
+      "id": 24110,
+      "quiz_meaning_vi": "cái cầu",
+      "meaning_vi_clean": "cái cầu; xây cầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái cầu",
+          "example_en": "With enough cable, we can bridge this gorge.",
+          "example_vi": "Với đủ dây cáp, chúng ta có thể xây cầu qua hẻm núi này."
+        },
+        {
+          "meaning_vi": "cái cầu",
+          "example_en": "The bridge is very old.",
+          "example_vi": "Cái cầu này rất cũ."
+        },
+        {
+          "meaning_vi": "cái cầu",
+          "example_en": "We walked across the bridge.",
+          "example_vi": "Chúng tôi đi bộ qua cái cầu."
+        },
+        {
+          "meaning_vi": "cái cầu",
+          "example_en": "The bridge connects the two towns.",
+          "example_vi": "Cái cầu nối liền hai thị trấn."
+        },
+        {
+          "meaning_vi": "xây cầu",
+          "example_en": "They plan to bridge the river here.",
+          "example_vi": "Họ dự định xây cầu qua con sông ở đây."
+        },
+        {
+          "meaning_vi": "xây cầu",
+          "example_en": "It is expensive to bridge such a wide gap.",
+          "example_vi": "Việc xây cầu qua một khoảng cách rộng như vậy rất đắt đỏ."
+        },
+        {
+          "meaning_vi": "xây cầu",
+          "example_en": "The government decided to bridge the stream.",
+          "example_vi": "Chính phủ đã quyết định xây cầu qua con suối."
+        },
+        {
+          "meaning_vi": "xây cầu",
+          "example_en": "They need to bridge the gap between the two banks.",
+          "example_vi": "Họ cần xây cầu để nối hai bờ."
+        },
+        {
+          "meaning_vi": "xây cầu",
+          "example_en": "The engineers will bridge the canyon.",
+          "example_vi": "Các kỹ sư sẽ xây cầu qua hẻm núi."
+        },
+        {
+          "meaning_vi": "xây cầu",
+          "example_en": "They are trying to bridge the river.",
+          "example_vi": "Họ đang cố gắng xây cầu qua con sông."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa 'brit' (sai) thành 'cái cầu'. Bổ sung ví dụ.",
+      "word": "bridge",
+      "normalized_word": "bridge",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "With enough cable, we can bridge this gorge.",
+      "example_vi_clean": "Với đủ dây cáp, chúng ta có thể xây cầu qua hẻm núi này."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-247",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26461,
+      "word": "bankrupt",
+      "normalized_word": "bankrupt",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'bæɳkrəpt/",
+      "primary_meaning_vi": "người vỡ nợ",
+      "meaning_vi": "người vỡ nợ, người phá sản; người mắc nợ không trả được; vỡ nợ, phá sản; thiếu, không có, mất hết; làm vỡ nợ, làm phá sản",
+      "example_en": "a bankrupt merchant",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a morally bankrupt politician",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26462,
+      "word": "bankruptcy",
+      "normalized_word": "bankruptcy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bæɳkrəptsi/",
+      "primary_meaning_vi": "sự vỡ nợ",
+      "meaning_vi": "sự vỡ nợ, sự phá sản; sự mất hoàn toàn (danh sự, tiếng tăm...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26463,
+      "word": "barley",
+      "normalized_word": "barley",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bɑ:li/",
+      "primary_meaning_vi": "lúa mạch",
+      "meaning_vi": "lúa mạch",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26464,
+      "word": "barn",
+      "normalized_word": "barn",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bɑ:n/",
+      "primary_meaning_vi": "kho thóc",
+      "meaning_vi": "kho thóc; ngôi nhà thô sơ; chuồng trâu bò, chuồng ngựa; nơi để xe điện",
+      "example_en": "Maple Leaf Gardens was a grand old barn.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26465,
+      "word": "barometer",
+      "normalized_word": "barometer",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bə'rɔmitə/",
+      "primary_meaning_vi": "phong vũ biểu",
+      "meaning_vi": "phong vũ biểu, cái đo khí áp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26466,
+      "word": "barren",
+      "normalized_word": "barren",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bærən/",
+      "primary_meaning_vi": "cằn cỗi (đất)",
+      "meaning_vi": "cằn cỗi (đất); không có quả (cây); hiếm hoi, không sinh đẻ (đàn bà); không đem lại kết quả; khô khan (văn); dải đất cằn cỗi, cánh đồng hoang",
+      "example_en": "The pine barrens are a site lonely enough to suit any hermit.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I silently wept as my daughter's husband rejected her. What would she do now that she was no longer a maiden but also barren?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26467,
+      "word": "barrier",
+      "normalized_word": "barrier",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bæriə/",
+      "primary_meaning_vi": "đặt vật chướng ngại (để chặn",
+      "meaning_vi": "đặt vật chướng ngại (để chặn, phòng thủ); chắn ngang; chắn lại không cho ra; chắn không cho ra",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26468,
+      "word": "bartender",
+      "normalized_word": "bartender",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bɑ:,tendə/",
+      "primary_meaning_vi": "người phục vụ ở quầy rượu",
+      "meaning_vi": "người phục vụ ở quầy rượu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26469,
+      "word": "battlefield",
+      "normalized_word": "battlefield",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bætlfi:ld/",
+      "primary_meaning_vi": "chiến trường",
+      "meaning_vi": "chiến trường",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26470,
+      "word": "beagle",
+      "normalized_word": "beagle",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bi:gl/",
+      "primary_meaning_vi": "chó săn thỏ",
+      "meaning_vi": "chó săn thỏ; mật thám; gián điệp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

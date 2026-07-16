@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25031,
+      "quiz_meaning_vi": "lũ",
+      "meaning_vi_clean": "lũ; làm ngập",
+      "examples_clean": [
+        {
+          "meaning_vi": "lũ",
+          "example_en": "The heavy rain caused a massive flood in the valley.",
+          "example_vi": "Cơn mưa lớn đã gây ra một trận lũ lớn trong thung lũng."
+        },
+        {
+          "meaning_vi": "lũ",
+          "example_en": "Many people lost their homes during the spring flood.",
+          "example_vi": "Nhiều người đã mất nhà cửa trong trận lũ mùa xuân."
+        },
+        {
+          "meaning_vi": "lũ",
+          "example_en": "The river rose quickly and threatened to flood the nearby village.",
+          "example_vi": "Con sông dâng nhanh và đe dọa gây lũ cho ngôi làng gần đó."
+        },
+        {
+          "meaning_vi": "lũ",
+          "example_en": "Emergency teams are working to help those affected by the flood.",
+          "example_vi": "Các đội cứu hộ đang làm việc để giúp đỡ những người bị ảnh hưởng bởi trận lũ."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The broken pipe flooded the entire kitchen.",
+          "example_vi": "Đường ống bị vỡ đã làm ngập toàn bộ nhà bếp."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "Heavy storms flooded the streets of the city.",
+          "example_vi": "Những cơn bão lớn đã làm ngập các con phố của thành phố."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The basement was flooded after the heavy rainfall.",
+          "example_vi": "Tầng hầm đã bị ngập sau trận mưa lớn."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "Don't let the water flood the floor.",
+          "example_vi": "Đừng để nước làm ngập sàn nhà."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The river flooded the fields during the harvest season.",
+          "example_vi": "Con sông đã làm ngập các cánh đồng trong mùa thu hoạch."
+        },
+        {
+          "meaning_vi": "làm ngập",
+          "example_en": "The dam burst and flooded the surrounding area.",
+          "example_vi": "Con đập bị vỡ và làm ngập khu vực xung quanh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa về lũ và làm ngập, loại bỏ các nghĩa phụ không cần thiết.",
+      "word": "flood",
+      "normalized_word": "flood",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The heavy rain caused a massive flood in the valley.",
+      "example_vi_clean": "Cơn mưa lớn đã gây ra một trận lũ lớn trong thung lũng."
+    },
+    {
+      "id": 25032,
+      "quiz_meaning_vi": "bột",
+      "meaning_vi_clean": "bột; xay thành bột",
+      "examples_clean": [
+        {
+          "meaning_vi": "bột",
+          "example_en": "You need flour to bake a cake.",
+          "example_vi": "Bạn cần bột để nướng bánh."
+        },
+        {
+          "meaning_vi": "bột",
+          "example_en": "She added a little flour to thicken the sauce.",
+          "example_vi": "Cô ấy thêm một ít bột để làm đặc nước sốt."
+        },
+        {
+          "meaning_vi": "bột",
+          "example_en": "The baker kept bags of flour in the pantry.",
+          "example_vi": "Người thợ làm bánh để các bao bột trong tủ đựng thức ăn."
+        },
+        {
+          "meaning_vi": "bột",
+          "example_en": "Mix the flour with water to make the dough.",
+          "example_vi": "Trộn bột với nước để làm bột nhào."
+        },
+        {
+          "meaning_vi": "xay thành bột",
+          "example_en": "They flour the wheat to make bread.",
+          "example_vi": "Họ xay lúa mì thành bột để làm bánh mì."
+        },
+        {
+          "meaning_vi": "xay thành bột",
+          "example_en": "The machine is used to flour the grains.",
+          "example_vi": "Cỗ máy được dùng để xay các loại hạt thành bột."
+        },
+        {
+          "meaning_vi": "xay thành bột",
+          "example_en": "Farmers flour their harvest to sell at the market.",
+          "example_vi": "Nông dân xay thành bột nông sản của họ để bán tại chợ."
+        },
+        {
+          "meaning_vi": "xay thành bột",
+          "example_en": "It takes time to flour the corn properly.",
+          "example_vi": "Cần thời gian để xay ngô thành bột đúng cách."
+        },
+        {
+          "meaning_vi": "xay thành bột",
+          "example_en": "They flour the spices to create a fine powder.",
+          "example_vi": "Họ xay các loại gia vị thành bột để tạo ra bột mịn."
+        },
+        {
+          "meaning_vi": "xay thành bột",
+          "example_en": "The mill is designed to flour large quantities of grain.",
+          "example_vi": "Nhà máy được thiết kế để xay một lượng lớn ngũ cốc thành bột."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và ví dụ cho từ flour (bột) thay vì nhầm lẫn với flower (hoa).",
+      "word": "flour",
+      "normalized_word": "flour",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You need flour to bake a cake.",
+      "example_vi_clean": "Bạn cần bột để nướng bánh."
+    },
+    {
+      "id": 25033,
+      "quiz_meaning_vi": "sương mù",
+      "meaning_vi_clean": "sương mù; làm mờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The thick fog made it difficult to drive.",
+          "example_vi": "Lớp sương mù dày đặc khiến việc lái xe trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "We could barely see the road through the fog.",
+          "example_vi": "Chúng tôi hầu như không thể nhìn thấy con đường qua lớp sương mù."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The morning fog cleared up by noon.",
+          "example_vi": "Lớp sương mù buổi sáng đã tan vào buổi trưa."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "Ships often use radar when there is heavy fog.",
+          "example_vi": "Tàu thuyền thường sử dụng radar khi có sương mù dày đặc."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "The steam fogged the bathroom mirror.",
+          "example_vi": "Hơi nước làm mờ gương phòng tắm."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "Cold air can fog the windows of a car.",
+          "example_vi": "Không khí lạnh có thể làm mờ cửa sổ xe hơi."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "His glasses fogged up when he entered the warm room.",
+          "example_vi": "Kính của anh ấy bị mờ đi khi anh ấy bước vào căn phòng ấm áp."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "The breath from the child fogged the glass.",
+          "example_vi": "Hơi thở của đứa trẻ làm mờ tấm kính."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "Don't let the humidity fog your camera lens.",
+          "example_vi": "Đừng để độ ẩm làm mờ ống kính máy ảnh của bạn."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "The cold weather fogged the glass display case.",
+          "example_vi": "Thời tiết lạnh làm mờ tủ trưng bày bằng kính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa không phổ biến và tập trung vào sương mù và làm mờ.",
+      "word": "fog",
+      "normalized_word": "fog",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The thick fog made it difficult to drive.",
+      "example_vi_clean": "Lớp sương mù dày đặc khiến việc lái xe trở nên khó khăn."
+    },
+    {
+      "id": 25034,
+      "quiz_meaning_vi": "bìa cứng",
+      "meaning_vi_clean": "bìa cứng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "I keep all my important documents in a blue folder.",
+          "example_vi": "Tôi giữ tất cả các tài liệu quan trọng của mình trong một bìa cứng màu xanh."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "Please put your homework in the folder on my desk.",
+          "example_vi": "Vui lòng đặt bài tập về nhà của bạn vào bìa cứng trên bàn của tôi."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "She organized her notes into a neat folder.",
+          "example_vi": "Cô ấy sắp xếp các ghi chú của mình vào một bìa cứng gọn gàng."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "The teacher handed out a folder for the project.",
+          "example_vi": "Giáo viên đã phát một bìa cứng cho dự án."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "He bought a new folder to store his essays.",
+          "example_vi": "Anh ấy đã mua một bìa cứng mới để lưu trữ các bài luận của mình."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "The folder contains all the information you need.",
+          "example_vi": "Bìa cứng chứa tất cả thông tin bạn cần."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "She labeled the folder with her name.",
+          "example_vi": "Cô ấy dán nhãn bìa cứng bằng tên của mình."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "Keep the folder in a safe place.",
+          "example_vi": "Hãy giữ bìa cứng ở một nơi an toàn."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "The folder is made of durable material.",
+          "example_vi": "Bìa cứng được làm bằng vật liệu bền."
+        },
+        {
+          "meaning_vi": "bìa cứng",
+          "example_en": "I found the report inside the folder.",
+          "example_vi": "Tôi đã tìm thấy bản báo cáo bên trong bìa cứng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa bìa cứng và bổ sung đủ 10 ví dụ.",
+      "word": "folder",
+      "normalized_word": "folder",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I keep all my important documents in a blue folder.",
+      "example_vi_clean": "Tôi giữ tất cả các tài liệu quan trọng của mình trong một bìa cứng màu xanh."
+    },
+    {
+      "id": 25035,
+      "quiz_meaning_vi": "đi theo sau",
+      "meaning_vi_clean": "đi theo sau; hiểu kịp",
+      "examples_clean": [
+        {
+          "meaning_vi": "đi theo sau",
+          "example_en": "The dog likes to follow its owner everywhere.",
+          "example_vi": "Con chó thích đi theo sau chủ của nó khắp mọi nơi."
+        },
+        {
+          "meaning_vi": "đi theo sau",
+          "example_en": "Please follow me to the meeting room.",
+          "example_vi": "Vui lòng đi theo sau tôi đến phòng họp."
+        },
+        {
+          "meaning_vi": "đi theo sau",
+          "example_en": "The children followed their teacher to the playground.",
+          "example_vi": "Những đứa trẻ đi theo sau giáo viên của chúng đến sân chơi."
+        },
+        {
+          "meaning_vi": "đi theo sau",
+          "example_en": "Follow the signs to find the exit.",
+          "example_vi": "Hãy đi theo sau các biển báo để tìm lối ra."
+        },
+        {
+          "meaning_vi": "hiểu kịp",
+          "example_en": "I didn't quite follow what you said.",
+          "example_vi": "Tôi không hiểu kịp những gì bạn vừa nói."
+        },
+        {
+          "meaning_vi": "hiểu kịp",
+          "example_en": "Do you follow my explanation?",
+          "example_vi": "Bạn có hiểu kịp lời giải thích của tôi không?"
+        },
+        {
+          "meaning_vi": "hiểu kịp",
+          "example_en": "She spoke so fast that I couldn't follow her.",
+          "example_vi": "Cô ấy nói nhanh đến mức tôi không thể hiểu kịp cô ấy."
+        },
+        {
+          "meaning_vi": "hiểu kịp",
+          "example_en": "It is hard to follow the plot of this movie.",
+          "example_vi": "Thật khó để hiểu kịp cốt truyện của bộ phim này."
+        },
+        {
+          "meaning_vi": "đi theo sau",
+          "example_en": "The car followed us for several miles.",
+          "example_vi": "Chiếc xe đã đi theo sau chúng tôi vài dặm."
+        },
+        {
+          "meaning_vi": "hiểu kịp",
+          "example_en": "I am trying to follow the instructions carefully.",
+          "example_vi": "Tôi đang cố gắng hiểu kịp các hướng dẫn một cách cẩn thận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất và phân bổ ví dụ hợp lý.",
+      "word": "follow",
+      "normalized_word": "follow",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The dog likes to follow its owner everywhere.",
+      "example_vi_clean": "Con chó thích đi theo sau chủ của nó khắp mọi nơi."
+    },
+    {
+      "id": 25036,
+      "quiz_meaning_vi": "người khờ dại",
+      "meaning_vi_clean": "người khờ dại; đánh lừa",
+      "examples_clean": [
+        {
+          "meaning_vi": "người khờ dại",
+          "example_en": "Don't be a fool and trust everyone you meet.",
+          "example_vi": "Đừng là một người khờ dại và tin tưởng tất cả những người bạn gặp."
+        },
+        {
+          "meaning_vi": "người khờ dại",
+          "example_en": "He felt like a fool when he realized his mistake.",
+          "example_vi": "Anh ấy cảm thấy mình như một người khờ dại khi nhận ra sai lầm của mình."
+        },
+        {
+          "meaning_vi": "người khờ dại",
+          "example_en": "Only a fool would believe such a story.",
+          "example_vi": "Chỉ có một người khờ dại mới tin vào câu chuyện như vậy."
+        },
+        {
+          "meaning_vi": "người khờ dại",
+          "example_en": "She played the fool to make everyone laugh.",
+          "example_vi": "Cô ấy đóng vai người khờ dại để làm mọi người cười."
+        },
+        {
+          "meaning_vi": "đánh lừa",
+          "example_en": "He tried to fool me with a fake story.",
+          "example_vi": "Anh ta đã cố gắng đánh lừa tôi bằng một câu chuyện giả."
+        },
+        {
+          "meaning_vi": "đánh lừa",
+          "example_en": "You cannot fool me with those tricks.",
+          "example_vi": "Bạn không thể đánh lừa tôi bằng những trò đó."
+        },
+        {
+          "meaning_vi": "đánh lừa",
+          "example_en": "The bright colors were meant to fool the predators.",
+          "example_vi": "Màu sắc rực rỡ nhằm mục đích đánh lừa những kẻ săn mồi."
+        },
+        {
+          "meaning_vi": "đánh lừa",
+          "example_en": "Don't let his appearance fool you.",
+          "example_vi": "Đừng để vẻ ngoài của anh ta đánh lừa bạn."
+        },
+        {
+          "meaning_vi": "người khờ dại",
+          "example_en": "He was a fool to quit his job without a plan.",
+          "example_vi": "Anh ấy thật là một người khờ dại khi bỏ việc mà không có kế hoạch."
+        },
+        {
+          "meaning_vi": "đánh lừa",
+          "example_en": "They were fooled into signing the contract.",
+          "example_vi": "Họ đã bị đánh lừa để ký vào hợp đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ, loại bỏ các nghĩa không phù hợp.",
+      "word": "fool",
+      "normalized_word": "fool",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Don't be a fool and trust everyone you meet.",
+      "example_vi_clean": "Đừng là một người khờ dại và tin tưởng tất cả những người bạn gặp."
+    },
+    {
+      "id": 25037,
+      "quiz_meaning_vi": "cầu thủ bóng đá",
+      "meaning_vi_clean": "cầu thủ bóng đá",
+      "examples_clean": [
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "He is a famous professional footballer.",
+          "example_vi": "Anh ấy là một cầu thủ bóng đá chuyên nghiệp nổi tiếng."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "The young footballer scored two goals in the match.",
+          "example_vi": "Cầu thủ bóng đá trẻ đã ghi hai bàn thắng trong trận đấu."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "Many children dream of becoming a professional footballer.",
+          "example_vi": "Nhiều đứa trẻ mơ ước trở thành một cầu thủ bóng đá chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "The footballer signed a new contract with the club.",
+          "example_vi": "Cầu thủ bóng đá đã ký một hợp đồng mới với câu lạc bộ."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "She is a talented female footballer.",
+          "example_vi": "Cô ấy là một nữ cầu thủ bóng đá tài năng."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "The footballer was injured during the training session.",
+          "example_vi": "Cầu thủ bóng đá đã bị thương trong buổi tập luyện."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "Every footballer wants to win the championship.",
+          "example_vi": "Mọi cầu thủ bóng đá đều muốn giành chức vô địch."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "The retired footballer now works as a coach.",
+          "example_vi": "Cầu thủ bóng đá đã giải nghệ hiện đang làm huấn luyện viên."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "The fans cheered for their favorite footballer.",
+          "example_vi": "Người hâm mộ đã cổ vũ cho cầu thủ bóng đá yêu thích của họ."
+        },
+        {
+          "meaning_vi": "cầu thủ bóng đá",
+          "example_en": "The footballer ran across the field quickly.",
+          "example_vi": "Cầu thủ bóng đá chạy khắp sân một cách nhanh chóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung nghĩa và 10 ví dụ cho từ footballer.",
+      "word": "footballer",
+      "normalized_word": "footballer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a famous professional footballer.",
+      "example_vi_clean": "Anh ấy là một cầu thủ bóng đá chuyên nghiệp nổi tiếng."
+    },
+    {
+      "id": 25038,
+      "quiz_meaning_vi": "cho",
+      "meaning_vi_clean": "cho; vì",
+      "examples_clean": [
+        {
+          "meaning_vi": "cho",
+          "example_en": "This gift is for you.",
+          "example_vi": "Món quà này là cho bạn."
+        },
+        {
+          "meaning_vi": "cho",
+          "example_en": "I bought some flowers for my mother.",
+          "example_vi": "Tôi đã mua vài bông hoa cho mẹ tôi."
+        },
+        {
+          "meaning_vi": "cho",
+          "example_en": "Is there any mail for me?",
+          "example_vi": "Có thư nào cho tôi không?"
+        },
+        {
+          "meaning_vi": "cho",
+          "example_en": "He prepared a special meal for the guests.",
+          "example_vi": "Anh ấy đã chuẩn bị một bữa ăn đặc biệt cho các vị khách."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "I am happy for you.",
+          "example_vi": "Tôi rất vui vì bạn."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "She was famous for her beautiful voice.",
+          "example_vi": "Cô ấy nổi tiếng vì giọng hát tuyệt vời của mình."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "He was punished for being late.",
+          "example_vi": "Anh ấy bị phạt vì đi muộn."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "I am grateful for your help.",
+          "example_vi": "Tôi rất biết ơn vì sự giúp đỡ của bạn."
+        },
+        {
+          "meaning_vi": "cho",
+          "example_en": "This room is for storage only.",
+          "example_vi": "Căn phòng này chỉ dành cho việc lưu trữ."
+        },
+        {
+          "meaning_vi": "vì",
+          "example_en": "She apologized for the mistake.",
+          "example_vi": "Cô ấy đã xin lỗi vì sai lầm đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "for",
+      "normalized_word": "for",
+      "cefr_level": "A2",
+      "pos": "conjunction",
+      "pos_vi_clean": "liên từ",
+      "example_en_clean": "This gift is for you.",
+      "example_vi_clean": "Món quà này là cho bạn."
+    },
+    {
+      "id": 25039,
+      "quiz_meaning_vi": "cấm",
+      "meaning_vi_clean": "cấm",
+      "examples_clean": [
+        {
+          "meaning_vi": "cấm",
+          "example_en": "Smoking is forbidden in this building.",
+          "example_vi": "Hút thuốc bị cấm trong tòa nhà này."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "The rules forbid the use of mobile phones during class.",
+          "example_vi": "Các quy định cấm sử dụng điện thoại di động trong giờ học."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "They forbid us from entering the restricted area.",
+          "example_vi": "Họ cấm chúng tôi vào khu vực hạn chế."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "The law forbids driving without a license.",
+          "example_vi": "Luật pháp cấm lái xe khi không có bằng lái."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "My parents forbid me to stay out late.",
+          "example_vi": "Cha mẹ tôi cấm tôi đi chơi về muộn."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "The park rules forbid picking the flowers.",
+          "example_vi": "Quy định của công viên cấm hái hoa."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "The teacher forbid the students to talk during the exam.",
+          "example_vi": "Giáo viên cấm học sinh nói chuyện trong khi thi."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "The company policy forbids sharing confidential information.",
+          "example_vi": "Chính sách công ty cấm chia sẻ thông tin bảo mật."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "They forbid any photography inside the museum.",
+          "example_vi": "Họ cấm chụp ảnh bên trong bảo tàng."
+        },
+        {
+          "meaning_vi": "cấm",
+          "example_en": "The sign clearly forbids parking here.",
+          "example_vi": "Biển báo cấm đỗ xe ở đây một cách rõ ràng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "forbid",
+      "normalized_word": "forbid",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Smoking is forbidden in this building.",
+      "example_vi_clean": "Hút thuốc bị cấm trong tòa nhà này."
+    },
+    {
+      "id": 25040,
+      "quiz_meaning_vi": "sức mạnh",
+      "meaning_vi_clean": "sức mạnh; ép buộc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The force of the wind was incredible.",
+          "example_vi": "Sức mạnh của cơn gió thật đáng kinh ngạc."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "He used all his force to push the door open.",
+          "example_vi": "Anh ấy dùng hết sức mạnh của mình để đẩy cửa mở ra."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The force of the impact broke the glass.",
+          "example_vi": "Sức mạnh của cú va chạm đã làm vỡ kính."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "She has the force of personality to lead the team.",
+          "example_vi": "Cô ấy có sức mạnh cá tính để dẫn dắt đội."
+        },
+        {
+          "meaning_vi": "ép buộc",
+          "example_en": "They tried to force him to sign the document.",
+          "example_vi": "Họ đã cố gắng ép buộc anh ấy ký vào tài liệu."
+        },
+        {
+          "meaning_vi": "ép buộc",
+          "example_en": "Don't force yourself to eat if you are not hungry.",
+          "example_vi": "Đừng ép buộc bản thân ăn nếu bạn không đói."
+        },
+        {
+          "meaning_vi": "ép buộc",
+          "example_en": "The police had to force the door open.",
+          "example_vi": "Cảnh sát đã phải ép buộc mở cửa."
+        },
+        {
+          "meaning_vi": "ép buộc",
+          "example_en": "He was forced to leave his home due to the war.",
+          "example_vi": "Anh ấy bị ép buộc phải rời khỏi nhà do chiến tranh."
+        },
+        {
+          "meaning_vi": "sức mạnh",
+          "example_en": "The force of the explosion was felt miles away.",
+          "example_vi": "Sức mạnh của vụ nổ được cảm nhận từ cách xa hàng dặm."
+        },
+        {
+          "meaning_vi": "ép buộc",
+          "example_en": "She felt forced to accept the offer.",
+          "example_vi": "Cô ấy cảm thấy bị ép buộc phải chấp nhận lời đề nghị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa primary_meaning_vi từ 'thác nước' (sai) thành 'sức mạnh' và bổ sung ví dụ.",
+      "word": "force",
+      "normalized_word": "force",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The force of the wind was incredible.",
+      "example_vi_clean": "Sức mạnh của cơn gió thật đáng kinh ngạc."
+    }
+  ]
+}

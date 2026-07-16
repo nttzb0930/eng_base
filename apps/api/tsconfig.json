@@ -1,0 +1,12 @@
+{
+  "extends": "@repo/typescript-config/nest.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist",
+    "paths": {
+      "app/*": ["./src/*"],
+      "module/*": ["./src/module/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "scripts/**/*.ts", "prisma.config.ts"]
+}

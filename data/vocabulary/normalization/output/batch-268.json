@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26671,
+      "quiz_meaning_vi": "sự ép",
+      "meaning_vi_clean": "sự ép; sự nén",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự ép",
+          "example_en": "The constant pressure caused the compression of the metal.",
+          "example_vi": "Áp lực liên tục gây ra sự ép của kim loại."
+        },
+        {
+          "meaning_vi": "sự ép",
+          "example_en": "The compression of the soil is necessary before building.",
+          "example_vi": "Sự ép đất là cần thiết trước khi xây dựng."
+        },
+        {
+          "meaning_vi": "sự ép",
+          "example_en": "Engineers studied the compression of the structural beams.",
+          "example_vi": "Các kỹ sư đã nghiên cứu sự ép của các dầm kết cấu."
+        },
+        {
+          "meaning_vi": "sự ép",
+          "example_en": "The machine is designed for the compression of waste materials.",
+          "example_vi": "Máy được thiết kế cho sự ép các vật liệu thải."
+        },
+        {
+          "meaning_vi": "sự nén",
+          "example_en": "Data compression helps to reduce the size of large files.",
+          "example_vi": "Sự nén dữ liệu giúp giảm kích thước của các tệp lớn."
+        },
+        {
+          "meaning_vi": "sự nén",
+          "example_en": "The engine relies on the compression of air and fuel.",
+          "example_vi": "Động cơ dựa vào sự nén không khí và nhiên liệu."
+        },
+        {
+          "meaning_vi": "sự nén",
+          "example_en": "We need better compression for these video files.",
+          "example_vi": "Chúng ta cần sự nén tốt hơn cho các tệp video này."
+        },
+        {
+          "meaning_vi": "sự nén",
+          "example_en": "The spring works through the compression of its coils.",
+          "example_vi": "Lò xo hoạt động thông qua sự nén các vòng xoắn của nó."
+        },
+        {
+          "meaning_vi": "sự nén",
+          "example_en": "High compression is required for this industrial process.",
+          "example_vi": "Sự nén cao là cần thiết cho quy trình công nghiệp này."
+        },
+        {
+          "meaning_vi": "sự nén",
+          "example_en": "The compression of the gas increases its temperature.",
+          "example_vi": "Sự nén khí làm tăng nhiệt độ của nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "compression",
+      "normalized_word": "compression",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The constant pressure caused the compression of the metal.",
+      "example_vi_clean": "Áp lực liên tục gây ra sự ép của kim loại."
+    },
+    {
+      "id": 26672,
+      "quiz_meaning_vi": "bắt buộc",
+      "meaning_vi_clean": "bắt buộc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "Attendance at the meeting is compulsory for all staff.",
+          "example_vi": "Sự tham dự cuộc họp là bắt buộc đối với tất cả nhân viên."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "Wearing a seatbelt is compulsory by law.",
+          "example_vi": "Việc thắt dây an toàn là bắt buộc theo luật."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "The ten-dollar fee was compulsory for everyone.",
+          "example_vi": "Khoản phí mười đô la là bắt buộc đối với mọi người."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "Such compulsory measures are limited in their scope.",
+          "example_vi": "Những biện pháp bắt buộc như vậy bị hạn chế về phạm vi."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "English is a compulsory subject in this school.",
+          "example_vi": "Tiếng Anh là một môn học bắt buộc ở trường này."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "It is compulsory to show your ID at the entrance.",
+          "example_vi": "Việc xuất trình giấy tờ tùy thân tại lối vào là bắt buộc."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "The training course is compulsory for new employees.",
+          "example_vi": "Khóa đào tạo là bắt buộc đối với nhân viên mới."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "Is it compulsory to wear a uniform here?",
+          "example_vi": "Ở đây có bắt buộc phải mặc đồng phục không?"
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "The government made the vaccination compulsory.",
+          "example_vi": "Chính phủ đã làm cho việc tiêm chủng trở nên bắt buộc."
+        },
+        {
+          "meaning_vi": "bắt buộc",
+          "example_en": "Participation in the project is not compulsory.",
+          "example_vi": "Việc tham gia dự án là không bắt buộc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "compulsory",
+      "normalized_word": "compulsory",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Attendance at the meeting is compulsory for all staff.",
+      "example_vi_clean": "Sự tham dự cuộc họp là bắt buộc đối với tất cả nhân viên."
+    },
+    {
+      "id": 26673,
+      "quiz_meaning_vi": "tính toán",
+      "meaning_vi_clean": "tính toán; ước tính",
+      "examples_clean": [
+        {
+          "meaning_vi": "tính toán",
+          "example_en": "Can anyone here compute the square root of 10201?",
+          "example_vi": "Có ai ở đây có thể tính toán căn bậc hai của 10201 không?"
+        },
+        {
+          "meaning_vi": "tính toán",
+          "example_en": "The computer can compute complex equations in seconds.",
+          "example_vi": "Máy tính có thể tính toán các phương trình phức tạp trong vài giây."
+        },
+        {
+          "meaning_vi": "tính toán",
+          "example_en": "We need to compute the total cost of the project.",
+          "example_vi": "Chúng ta cần tính toán tổng chi phí của dự án."
+        },
+        {
+          "meaning_vi": "tính toán",
+          "example_en": "It is hard to compute the exact number of participants.",
+          "example_vi": "Thật khó để tính toán con số chính xác của những người tham gia."
+        },
+        {
+          "meaning_vi": "ước tính",
+          "example_en": "Experts compute the loss to be around five million dollars.",
+          "example_vi": "Các chuyên gia ước tính khoản lỗ vào khoảng năm triệu đô la."
+        },
+        {
+          "meaning_vi": "ước tính",
+          "example_en": "They compute the distance to be about ten miles.",
+          "example_vi": "Họ ước tính khoảng cách là khoảng mười dặm."
+        },
+        {
+          "meaning_vi": "ước tính",
+          "example_en": "We compute the time needed to finish the task.",
+          "example_vi": "Chúng tôi ước tính thời gian cần thiết để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "ước tính",
+          "example_en": "The software helps to compute the potential risks.",
+          "example_vi": "Phần mềm giúp ước tính các rủi ro tiềm ẩn."
+        },
+        {
+          "meaning_vi": "tính toán",
+          "example_en": "The accountant will compute the taxes for the company.",
+          "example_vi": "Kế toán sẽ tính toán các khoản thuế cho công ty."
+        },
+        {
+          "meaning_vi": "ước tính",
+          "example_en": "Scientists compute the age of the fossil quite accurately.",
+          "example_vi": "Các nhà khoa học ước tính tuổi của hóa thạch khá chính xác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "compute",
+      "normalized_word": "compute",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Can anyone here compute the square root of 10201?",
+      "example_vi_clean": "Có ai ở đây có thể tính toán căn bậc hai của 10201 không?"
+    },
+    {
+      "id": 26674,
+      "quiz_meaning_vi": "giấu giếm",
+      "meaning_vi_clean": "giấu giếm",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "He tried to conceal the truth about his health.",
+          "example_vi": "Anh ấy đã cố gắng giấu giếm sự thật về sức khỏe của mình."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "She could not conceal her excitement about the news.",
+          "example_vi": "Cô ấy không thể giấu giếm sự phấn khích của mình về tin tức đó."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "It is difficult to conceal your feelings from others.",
+          "example_vi": "Thật khó để giấu giếm cảm xúc của bạn với người khác."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "They tried to conceal the evidence of the crime.",
+          "example_vi": "Họ đã cố gắng giấu giếm bằng chứng của vụ án."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "He managed to conceal his disappointment.",
+          "example_vi": "Anh ấy đã xoay xở để giấu giếm sự thất vọng của mình."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "She tried to conceal her tears behind her hands.",
+          "example_vi": "Cô ấy cố gắng giấu giếm những giọt nước mắt sau đôi bàn tay."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "The company tried to conceal the financial losses.",
+          "example_vi": "Công ty đã cố gắng giấu giếm các khoản lỗ tài chính."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "He had nothing to conceal from his family.",
+          "example_vi": "Anh ấy không có gì để giấu giếm gia đình mình."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "She tried to conceal her nervousness during the interview.",
+          "example_vi": "Cô ấy cố gắng giấu giếm sự lo lắng của mình trong buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "giấu giếm",
+          "example_en": "The secret was hard to conceal for so long.",
+          "example_vi": "Bí mật đó thật khó để giấu giếm trong thời gian dài như vậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "conceal",
+      "normalized_word": "conceal",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He tried to conceal the truth about his health.",
+      "example_vi_clean": "Anh ấy đã cố gắng giấu giếm sự thật về sức khỏe của mình."
+    },
+    {
+      "id": 26675,
+      "quiz_meaning_vi": "thừa nhận",
+      "meaning_vi_clean": "thừa nhận; nhường",
+      "examples_clean": [
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "He conceded that he had made a mistake.",
+          "example_vi": "Anh ấy thừa nhận rằng mình đã phạm sai lầm."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "The government finally conceded the need for reform.",
+          "example_vi": "Chính phủ cuối cùng đã thừa nhận nhu cầu cải cách."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "She conceded that the plan might not work.",
+          "example_vi": "Cô ấy thừa nhận rằng kế hoạch có thể không hiệu quả."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "He conceded the race once it was clear he could not win.",
+          "example_vi": "Anh ấy thừa nhận thua cuộc khi rõ ràng là anh ấy không thể thắng."
+        },
+        {
+          "meaning_vi": "nhường",
+          "example_en": "The company conceded some ground to the union.",
+          "example_vi": "Công ty đã nhường một số lợi ích cho công đoàn."
+        },
+        {
+          "meaning_vi": "nhường",
+          "example_en": "They had to concede defeat in the final match.",
+          "example_vi": "Họ đã phải nhường chiến thắng trong trận đấu cuối cùng."
+        },
+        {
+          "meaning_vi": "nhường",
+          "example_en": "The government conceded control of the region.",
+          "example_vi": "Chính phủ đã nhường quyền kiểm soát khu vực."
+        },
+        {
+          "meaning_vi": "nhường",
+          "example_en": "He conceded his seat to the elderly lady.",
+          "example_vi": "Anh ấy đã nhường chỗ ngồi của mình cho bà cụ."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "I must concede that your argument is strong.",
+          "example_vi": "Tôi phải thừa nhận rằng lập luận của bạn rất mạnh mẽ."
+        },
+        {
+          "meaning_vi": "nhường",
+          "example_en": "They conceded the right to use the land.",
+          "example_vi": "Họ đã nhường quyền sử dụng mảnh đất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "concede",
+      "normalized_word": "concede",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He conceded that he had made a mistake.",
+      "example_vi_clean": "Anh ấy thừa nhận rằng mình đã phạm sai lầm."
+    },
+    {
+      "id": 26676,
+      "quiz_meaning_vi": "tính tự phụ",
+      "meaning_vi_clean": "tính tự phụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "His conceit made him very unpopular at work.",
+          "example_vi": "Tính tự phụ khiến anh ấy rất không được lòng mọi người ở nơi làm việc."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "She has a lot of conceit about her intelligence.",
+          "example_vi": "Cô ấy có rất nhiều tính tự phụ về trí thông minh của mình."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "The actor's conceit was evident in his interviews.",
+          "example_vi": "Tính tự phụ của nam diễn viên thể hiện rõ trong các cuộc phỏng vấn."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "He was blinded by his own conceit.",
+          "example_vi": "Anh ấy đã bị che mắt bởi chính tính tự phụ của mình."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "It is hard to deal with someone full of conceit.",
+          "example_vi": "Thật khó để đối phó với một người đầy tính tự phụ."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "His conceit prevented him from learning from others.",
+          "example_vi": "Tính tự phụ đã ngăn cản anh ấy học hỏi từ người khác."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "She showed no conceit despite her great success.",
+          "example_vi": "Cô ấy không hề tỏ ra tính tự phụ mặc dù rất thành công."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "The leader's conceit led to his downfall.",
+          "example_vi": "Tính tự phụ của người lãnh đạo đã dẫn đến sự sụp đổ của ông ta."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "Don't let your success turn into conceit.",
+          "example_vi": "Đừng để thành công của bạn biến thành tính tự phụ."
+        },
+        {
+          "meaning_vi": "tính tự phụ",
+          "example_en": "His conceit is his biggest weakness.",
+          "example_vi": "Tính tự phụ là điểm yếu lớn nhất của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "conceit",
+      "normalized_word": "conceit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His conceit made him very unpopular at work.",
+      "example_vi_clean": "Tính tự phụ khiến anh ấy rất không được lòng mọi người ở nơi làm việc."
+    },
+    {
+      "id": 26677,
+      "quiz_meaning_vi": "có thể hiểu được",
+      "meaning_vi_clean": "có thể hiểu được; có thể tưởng tượng được",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể hiểu được",
+          "example_en": "It is quite conceivable that they will win.",
+          "example_vi": "Việc họ sẽ chiến thắng là hoàn toàn có thể hiểu được."
+        },
+        {
+          "meaning_vi": "có thể hiểu được",
+          "example_en": "His reaction is perfectly conceivable in this situation.",
+          "example_vi": "Phản ứng của anh ấy là hoàn toàn có thể hiểu được trong tình huống này."
+        },
+        {
+          "meaning_vi": "có thể hiểu được",
+          "example_en": "It is conceivable that the project will be delayed.",
+          "example_vi": "Việc dự án bị trì hoãn là có thể hiểu được."
+        },
+        {
+          "meaning_vi": "có thể hiểu được",
+          "example_en": "The change in policy is conceivable given the circumstances.",
+          "example_vi": "Sự thay đổi chính sách là có thể hiểu được trong hoàn cảnh hiện tại."
+        },
+        {
+          "meaning_vi": "có thể tưởng tượng được",
+          "example_en": "They have tried every conceivable method to solve the problem.",
+          "example_vi": "Họ đã thử mọi phương pháp có thể tưởng tượng được để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "có thể tưởng tượng được",
+          "example_en": "It is the worst scenario conceivable.",
+          "example_vi": "Đó là kịch bản tồi tệ nhất có thể tưởng tượng được."
+        },
+        {
+          "meaning_vi": "có thể tưởng tượng được",
+          "example_en": "We have considered all conceivable options.",
+          "example_vi": "Chúng tôi đã xem xét tất cả các lựa chọn có thể tưởng tượng được."
+        },
+        {
+          "meaning_vi": "có thể tưởng tượng được",
+          "example_en": "The view is the most beautiful one conceivable.",
+          "example_vi": "Khung cảnh đó là đẹp nhất có thể tưởng tượng được."
+        },
+        {
+          "meaning_vi": "có thể hiểu được",
+          "example_en": "It is conceivable that he forgot the meeting.",
+          "example_vi": "Việc anh ấy quên cuộc họp là có thể hiểu được."
+        },
+        {
+          "meaning_vi": "có thể tưởng tượng được",
+          "example_en": "There are many conceivable reasons for his absence.",
+          "example_vi": "Có nhiều lý do có thể tưởng tượng được cho sự vắng mặt của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "conceivable",
+      "normalized_word": "conceivable",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is quite conceivable that they will win.",
+      "example_vi_clean": "Việc họ sẽ chiến thắng là hoàn toàn có thể hiểu được."
+    },
+    {
+      "id": 26678,
+      "quiz_meaning_vi": "nghĩ",
+      "meaning_vi_clean": "nghĩ; tưởng tượng; thụ thai",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghĩ",
+          "example_en": "I cannot conceive how they managed to finish so quickly.",
+          "example_vi": "Tôi không thể nghĩ làm thế nào họ xoay xở để hoàn thành nhanh như vậy."
+        },
+        {
+          "meaning_vi": "nghĩ",
+          "example_en": "He conceived the idea while traveling abroad.",
+          "example_vi": "Anh ấy đã nghĩ ra ý tưởng đó khi đang đi du lịch nước ngoài."
+        },
+        {
+          "meaning_vi": "nghĩ",
+          "example_en": "They conceived a new plan for the company.",
+          "example_vi": "Họ đã nghĩ ra một kế hoạch mới cho công ty."
+        },
+        {
+          "meaning_vi": "nghĩ",
+          "example_en": "It is hard to conceive of a world without internet.",
+          "example_vi": "Thật khó để nghĩ về một thế giới không có internet."
+        },
+        {
+          "meaning_vi": "tưởng tượng",
+          "example_en": "I can hardly conceive of such a situation.",
+          "example_vi": "Tôi khó có thể tưởng tượng được một tình huống như vậy."
+        },
+        {
+          "meaning_vi": "tưởng tượng",
+          "example_en": "She could not conceive of living alone.",
+          "example_vi": "Cô ấy không thể tưởng tượng được việc sống một mình."
+        },
+        {
+          "meaning_vi": "thụ thai",
+          "example_en": "Assisted procreation can help those trying to conceive.",
+          "example_vi": "Hỗ trợ sinh sản có thể giúp những người đang cố gắng thụ thai."
+        },
+        {
+          "meaning_vi": "thụ thai",
+          "example_en": "Many couples find it difficult to conceive naturally.",
+          "example_vi": "Nhiều cặp vợ chồng thấy khó khăn để thụ thai một cách tự nhiên."
+        },
+        {
+          "meaning_vi": "nghĩ",
+          "example_en": "The project was conceived in the early nineties.",
+          "example_vi": "Dự án đã được nghĩ ra vào đầu những năm chín mươi."
+        },
+        {
+          "meaning_vi": "tưởng tượng",
+          "example_en": "Can you conceive of a better way to do this?",
+          "example_vi": "Bạn có thể tưởng tượng ra cách nào tốt hơn để làm việc này không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 3 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "conceive",
+      "normalized_word": "conceive",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I cannot conceive how they managed to finish so quickly.",
+      "example_vi_clean": "Tôi không thể nghĩ làm thế nào họ xoay xở để hoàn thành nhanh như vậy."
+    },
+    {
+      "id": 26679,
+      "quiz_meaning_vi": "quan niệm",
+      "meaning_vi_clean": "quan niệm; khái niệm; sự thụ thai",
+      "examples_clean": [
+        {
+          "meaning_vi": "quan niệm",
+          "example_en": "His conception of justice is very different from mine.",
+          "example_vi": "Quan niệm của anh ấy về công lý rất khác với tôi."
+        },
+        {
+          "meaning_vi": "quan niệm",
+          "example_en": "She has a traditional conception of family life.",
+          "example_vi": "Cô ấy có một quan niệm truyền thống về cuộc sống gia đình."
+        },
+        {
+          "meaning_vi": "quan niệm",
+          "example_en": "The public conception of the politician has changed.",
+          "example_vi": "Quan niệm của công chúng về chính trị gia đó đã thay đổi."
+        },
+        {
+          "meaning_vi": "quan niệm",
+          "example_en": "We need to change our conception of success.",
+          "example_vi": "Chúng ta cần thay đổi quan niệm của mình về thành công."
+        },
+        {
+          "meaning_vi": "khái niệm",
+          "example_en": "The basic conception of the project is simple.",
+          "example_vi": "Khái niệm cơ bản của dự án rất đơn giản."
+        },
+        {
+          "meaning_vi": "khái niệm",
+          "example_en": "He struggled with the abstract conception of time.",
+          "example_vi": "Anh ấy đã vật lộn với khái niệm trừu tượng về thời gian."
+        },
+        {
+          "meaning_vi": "sự thụ thai",
+          "example_en": "The period from conception to birth is about nine months.",
+          "example_vi": "Thời kỳ từ sự thụ thai đến khi sinh là khoảng chín tháng."
+        },
+        {
+          "meaning_vi": "sự thụ thai",
+          "example_en": "They are seeking medical advice regarding conception.",
+          "example_vi": "Họ đang tìm kiếm lời khuyên y tế liên quan đến sự thụ thai."
+        },
+        {
+          "meaning_vi": "quan niệm",
+          "example_en": "His conception of the role was quite unique.",
+          "example_vi": "Quan niệm của anh ấy về vai trò đó khá độc đáo."
+        },
+        {
+          "meaning_vi": "khái niệm",
+          "example_en": "The book explores the conception of modern art.",
+          "example_vi": "Cuốn sách khám phá khái niệm về nghệ thuật hiện đại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 3 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "conception",
+      "normalized_word": "conception",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His conception of justice is very different from mine.",
+      "example_vi_clean": "Quan niệm của anh ấy về công lý rất khác với tôi."
+    },
+    {
+      "id": 26680,
+      "quiz_meaning_vi": "về việc",
+      "meaning_vi_clean": "về việc",
+      "examples_clean": [
+        {
+          "meaning_vi": "về việc",
+          "example_en": "I have some questions concerning the new policy.",
+          "example_vi": "Tôi có vài câu hỏi về việc chính sách mới."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "There was a meeting concerning the budget cuts.",
+          "example_vi": "Đã có một cuộc họp về việc cắt giảm ngân sách."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "He wrote a letter concerning his resignation.",
+          "example_vi": "Anh ấy đã viết một lá thư về việc từ chức của mình."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "The report provides details concerning the accident.",
+          "example_vi": "Báo cáo cung cấp chi tiết về việc vụ tai nạn."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "Do you have any information concerning the event?",
+          "example_vi": "Bạn có thông tin nào về việc sự kiện đó không?"
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "The discussion was concerning the future of the company.",
+          "example_vi": "Cuộc thảo luận là về việc tương lai của công ty."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "She gave instructions concerning the project.",
+          "example_vi": "Cô ấy đã đưa ra hướng dẫn về việc dự án."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "The law is concerning the protection of the environment.",
+          "example_vi": "Luật này là về việc bảo vệ môi trường."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "He spoke to me concerning my performance.",
+          "example_vi": "Anh ấy đã nói chuyện với tôi về việc hiệu suất làm việc của tôi."
+        },
+        {
+          "meaning_vi": "về việc",
+          "example_en": "There are many rules concerning safety at work.",
+          "example_vi": "Có nhiều quy định về việc an toàn tại nơi làm việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "concerning",
+      "normalized_word": "concerning",
+      "cefr_level": "B2",
+      "pos": "preposition",
+      "pos_vi_clean": "giới từ",
+      "example_en_clean": "I have some questions concerning the new policy.",
+      "example_vi_clean": "Tôi có vài câu hỏi về việc chính sách mới."
+    }
+  ]
+}

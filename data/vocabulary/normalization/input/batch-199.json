@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-199",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25981,
+      "word": "drunk",
+      "normalized_word": "drunk",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ,  (từ lóng)",
+      "phonetic": "/drʌɳk/",
+      "primary_meaning_vi": "say rượu",
+      "meaning_vi": "say rượu; say sưa, mê mẩn, cuồng lên; chầu say bí tỉ; người say rượu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25982,
+      "word": "dull",
+      "normalized_word": "dull",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/dʌl/",
+      "primary_meaning_vi": "chậm hiểu",
+      "meaning_vi": "chậm hiểu, tối dạ, ngu đần, đần độn; không tinh, mờ (mắt); không thính, nghễnh ngãng (tai); vô tri vô giác (vật); cùn (dao...); đục, mờ đục, xỉn, xám xịt; cảm thấy lờ mờ, cảm thấy không rõ rệt, âm ỉ; thẫn thờ, uể oải, chậm chạp (người, vật); ứ đọng, trì chậm, bán không chạy, ế; đều đều, buồn tẻ, chán ngắt, tẻ ngắt, buồn nản; tối tăm, âm u, u ám, ảm đạm; làm ngu đàn, làm đần dộn; làm cùn; làm mờ đi, làm mờ đục, làm xỉn; làm âm ỉ, làm đỡ nhức nhối, làm đỡ nhói (cơn đau); làm buồn nản; làm tối tăm, làm u ám, làm ảm đạm; hoá ngu đần, đần độn; cùn đi; mờ đi, mờ đục, xỉn đi; âm ỉ, đỡ nhức nhối, đỡ đau (cơn đau); tối sầm lại, thành u ám, thành ảm đạm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25983,
+      "word": "dump",
+      "normalized_word": "dump",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'dʌmi/",
+      "primary_meaning_vi": "vật ngắn bè bè",
+      "meaning_vi": "vật ngắn bè bè, người lùn bè bè; thẻ chì (dùng trong một số trò chơi); đông đum (tiền Uc xưa); (từ lóng) đồng xu; bu lông (đóng tàu); ky (chơi ky); kẹo đum; đống rác, nơi đổ rác; nơi rác rưởi bừa bãi; tiếng rơi bịch, tiếng đổ ầm, tiếng ném phịch xuống; cú đấm bịch; kho đạn tạm thời; đổ thành đống (rác); vứt bỏ, gạt bỏ (ai...); đổ ầm xuống, ném phịch xuống; ,  (từ lóng) đánh gục, đánh ngã; đưa (dân đi trú thừa) ra nước ngoài; đổ rác; ngã phịch xuống, rơi phịch xuống",
+      "example_en": "A toxic waste dump.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The new XML dump is coming soon.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don't feel bad about moving away from this dump.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have to take a dump.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25984,
+      "word": "dustbin",
+      "normalized_word": "dustbin",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dʌstbin/",
+      "primary_meaning_vi": "thùng rác",
+      "meaning_vi": "thùng rác",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25985,
+      "word": "dusty",
+      "normalized_word": "dusty",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'dʌsti/",
+      "primary_meaning_vi": "bụi rậm",
+      "meaning_vi": "bụi rậm, đầy bụi; nhỏ tơi như bụi; khô như bụi; khô khan, vô vị, không có gì lý thú; mơ hồ, lờ mờ, không rõ rệt; kha khá, tàm tạm, không đến nỗi tồi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25986,
+      "word": "duty",
+      "normalized_word": "duty",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dju:ti/",
+      "primary_meaning_vi": "sự tôn kính",
+      "meaning_vi": "sự tôn kính, lòng kính trọng (người trên); bổn phận, nhiệm vụ, trách nhiệm; phận sự, chức vụ, công việc, phần việc làm; phiên làm, phiên trực nhật; thuế (hải quan...); công suất (máy)",
+      "example_en": "We don't have a duty to keep you here.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I’m on duty from 6 pm to 6 am.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25987,
+      "word": "duty-free",
+      "normalized_word": "duty-free",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ & phó từ",
+      "phonetic": "/'dju:ti'fri:/",
+      "primary_meaning_vi": "không phải nộp thuế",
+      "meaning_vi": "không phải nộp thuế, được miễn thuế",
+      "example_en": "We brought back so much duty-free we could hardly walk.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Have you been to Melbourne airport's duty-free?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25988,
+      "word": "duvet",
+      "normalized_word": "duvet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dju:vei/",
+      "primary_meaning_vi": "chăn lông vịt",
+      "meaning_vi": "chăn lông vịt",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25989,
+      "word": "dynasty",
+      "normalized_word": "dynasty",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dinəsti/",
+      "primary_meaning_vi": "triều đại",
+      "meaning_vi": "triều đại, triều vua",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25990,
+      "word": "eager",
+      "normalized_word": "eager",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'i:gə/",
+      "primary_meaning_vi": "ham",
+      "meaning_vi": "ham, háo hức, hăm hở, thiết tha, hau háu; nồng (rượu...); rét ngọt",
+      "example_en": "I was eager to show my teacher how much I'd learned over the holidays.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an eager algorithm",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

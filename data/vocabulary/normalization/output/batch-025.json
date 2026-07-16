@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24241,
+      "quiz_meaning_vi": "cửa",
+      "meaning_vi_clean": "cửa; cửa ra vào; lối vào; cách vài nhà",
+      "examples_clean": [
+        {
+          "meaning_vi": "cửa",
+          "example_en": "I knocked on the wooden door.",
+          "example_vi": "Tôi gõ vào cánh cửa gỗ."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "Please close the door behind you.",
+          "example_vi": "Làm ơn đóng cửa lại sau khi bạn vào."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "The cat is waiting at the door.",
+          "example_vi": "Con mèo đang đợi ở cửa."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "She opened the door to let some fresh air in.",
+          "example_vi": "Cô ấy mở cửa để không khí trong lành tràn vào."
+        },
+        {
+          "meaning_vi": "cửa ra vào",
+          "example_en": "The main door is locked at night.",
+          "example_vi": "Cửa ra vào chính được khóa vào ban đêm."
+        },
+        {
+          "meaning_vi": "cửa ra vào",
+          "example_en": "He stood by the front door waiting for a taxi.",
+          "example_vi": "Anh ấy đứng ở cửa ra vào đợi taxi."
+        },
+        {
+          "meaning_vi": "lối vào",
+          "example_en": "Education is the door to a better future.",
+          "example_vi": "Giáo dục là lối vào cho một tương lai tốt đẹp hơn."
+        },
+        {
+          "meaning_vi": "lối vào",
+          "example_en": "This discovery opened a new door for research.",
+          "example_vi": "Khám phá này đã mở ra một lối vào mới cho nghiên cứu."
+        },
+        {
+          "meaning_vi": "cách vài nhà",
+          "example_en": "They live just two doors down the street.",
+          "example_vi": "Họ sống cách đây chỉ hai nhà trên cùng con phố."
+        },
+        {
+          "meaning_vi": "cách vài nhà",
+          "example_en": "My friend lives three doors away.",
+          "example_vi": "Bạn tôi sống cách đây ba nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là cửa, bổ sung các nghĩa thông dụng khác. Ví dụ được viết lại để phù hợp với trình độ A1.",
+      "word": "door",
+      "normalized_word": "door",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I knocked on the wooden door.",
+      "example_vi_clean": "Tôi gõ vào cánh cửa gỗ."
+    },
+    {
+      "id": 24242,
+      "quiz_meaning_vi": "kịch",
+      "meaning_vi_clean": "kịch; nghệ thuật kịch; sự việc có tính kịch",
+      "examples_clean": [
+        {
+          "meaning_vi": "kịch",
+          "example_en": "She is acting in a school drama.",
+          "example_vi": "Cô ấy đang đóng một vở kịch ở trường."
+        },
+        {
+          "meaning_vi": "kịch",
+          "example_en": "We watched a historical drama last night.",
+          "example_vi": "Chúng tôi đã xem một vở kịch lịch sử tối qua."
+        },
+        {
+          "meaning_vi": "kịch",
+          "example_en": "He enjoys writing short dramas.",
+          "example_vi": "Anh ấy thích viết các vở kịch ngắn."
+        },
+        {
+          "meaning_vi": "kịch",
+          "example_en": "The drama was performed by local students.",
+          "example_vi": "Vở kịch được biểu diễn bởi các học sinh địa phương."
+        },
+        {
+          "meaning_vi": "nghệ thuật kịch",
+          "example_en": "She studied drama at the university.",
+          "example_vi": "Cô ấy đã học nghệ thuật kịch tại trường đại học."
+        },
+        {
+          "meaning_vi": "nghệ thuật kịch",
+          "example_en": "He has a great interest in drama.",
+          "example_vi": "Anh ấy có niềm đam mê lớn với nghệ thuật kịch."
+        },
+        {
+          "meaning_vi": "nghệ thuật kịch",
+          "example_en": "The school offers classes in music and drama.",
+          "example_vi": "Trường có các lớp học về âm nhạc và nghệ thuật kịch."
+        },
+        {
+          "meaning_vi": "sự việc có tính kịch",
+          "example_en": "There was a lot of drama at the meeting.",
+          "example_vi": "Có rất nhiều sự việc kịch tính tại cuộc họp."
+        },
+        {
+          "meaning_vi": "sự việc có tính kịch",
+          "example_en": "I do not like unnecessary drama in my life.",
+          "example_vi": "Tôi không thích những sự việc kịch tính không cần thiết trong cuộc sống."
+        },
+        {
+          "meaning_vi": "sự việc có tính kịch",
+          "example_en": "The situation was full of drama.",
+          "example_vi": "Tình huống đó đầy rẫy những sự việc kịch tính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa và 10 ví dụ phù hợp với trình độ A1.",
+      "word": "drama",
+      "normalized_word": "drama",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is acting in a school drama.",
+      "example_vi_clean": "Cô ấy đang đóng một vở kịch ở trường."
+    },
+    {
+      "id": 24243,
+      "quiz_meaning_vi": "giấc mơ",
+      "meaning_vi_clean": "giấc mơ; điều mơ ước; sự mơ mộng",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "I had a strange dream last night.",
+          "example_vi": "Tôi đã có một giấc mơ kỳ lạ tối qua."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "She woke up from a bad dream.",
+          "example_vi": "Cô ấy tỉnh dậy sau một giấc mơ xấu."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "It felt like a dream.",
+          "example_vi": "Nó cảm giác như một giấc mơ."
+        },
+        {
+          "meaning_vi": "giấc mơ",
+          "example_en": "Do you remember your dreams?",
+          "example_vi": "Bạn có nhớ những giấc mơ của mình không?"
+        },
+        {
+          "meaning_vi": "điều mơ ước",
+          "example_en": "Her dream is to become a doctor.",
+          "example_vi": "Điều mơ ước của cô ấy là trở thành bác sĩ."
+        },
+        {
+          "meaning_vi": "điều mơ ước",
+          "example_en": "He finally achieved his dream.",
+          "example_vi": "Anh ấy cuối cùng đã đạt được điều mơ ước của mình."
+        },
+        {
+          "meaning_vi": "điều mơ ước",
+          "example_en": "It is a dream come true.",
+          "example_vi": "Đó là một điều mơ ước đã trở thành hiện thực."
+        },
+        {
+          "meaning_vi": "sự mơ mộng",
+          "example_en": "He lives in a world of dreams.",
+          "example_vi": "Anh ấy sống trong một thế giới của sự mơ mộng."
+        },
+        {
+          "meaning_vi": "sự mơ mộng",
+          "example_en": "Stop living in a dream and face reality.",
+          "example_vi": "Hãy ngừng sống trong sự mơ mộng và đối mặt với thực tế."
+        },
+        {
+          "meaning_vi": "sự mơ mộng",
+          "example_en": "She was lost in a dream.",
+          "example_vi": "Cô ấy đã chìm đắm trong sự mơ mộng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang danh từ theo yêu cầu, giữ nghĩa danh từ phổ biến.",
+      "word": "dream",
+      "normalized_word": "dream",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I had a strange dream last night.",
+      "example_vi_clean": "Tôi đã có một giấc mơ kỳ lạ tối qua."
+    },
+    {
+      "id": 24244,
+      "quiz_meaning_vi": "quần áo",
+      "meaning_vi_clean": "quần áo; vẻ ngoài; mặc quần áo",
+      "examples_clean": [
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "She bought some new clothes and a dress.",
+          "example_vi": "Cô ấy đã mua vài bộ quần áo mới và một chiếc váy."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "The dress is made of silk.",
+          "example_vi": "Chiếc váy này được làm bằng lụa."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "She wore a beautiful blue dress.",
+          "example_vi": "Cô ấy đã mặc một chiếc váy màu xanh xinh đẹp."
+        },
+        {
+          "meaning_vi": "quần áo",
+          "example_en": "He needs to buy a new dress for the party.",
+          "example_vi": "Anh ấy cần mua một bộ quần áo mới cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The house has a clean dress.",
+          "example_vi": "Ngôi nhà có một vẻ ngoài sạch sẽ."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The garden has a neat dress.",
+          "example_vi": "Khu vườn có một vẻ ngoài gọn gàng."
+        },
+        {
+          "meaning_vi": "mặc quần áo",
+          "example_en": "It takes her ten minutes to dress.",
+          "example_vi": "Cô ấy mất mười phút để mặc quần áo."
+        },
+        {
+          "meaning_vi": "mặc quần áo",
+          "example_en": "He dressed quickly this morning.",
+          "example_vi": "Anh ấy đã mặc quần áo nhanh chóng sáng nay."
+        },
+        {
+          "meaning_vi": "mặc quần áo",
+          "example_en": "Please dress warmly for the cold weather.",
+          "example_vi": "Làm ơn hãy mặc quần áo ấm cho thời tiết lạnh."
+        },
+        {
+          "meaning_vi": "mặc quần áo",
+          "example_en": "She helped the child to dress.",
+          "example_vi": "Cô ấy đã giúp đứa trẻ mặc quần áo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ/động từ, lược bỏ các nghĩa chuyên ngành không cần thiết.",
+      "word": "dress",
+      "normalized_word": "dress",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She bought some new clothes and a dress.",
+      "example_vi_clean": "Cô ấy đã mua vài bộ quần áo mới và một chiếc váy."
+    },
+    {
+      "id": 24245,
+      "quiz_meaning_vi": "đồ uống",
+      "meaning_vi_clean": "đồ uống; hớp; uống",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "Would you like a cold drink?",
+          "example_vi": "Bạn có muốn một món đồ uống lạnh không?"
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "Water is the best drink for health.",
+          "example_vi": "Nước là món đồ uống tốt nhất cho sức khỏe."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "They served a variety of drinks.",
+          "example_vi": "Họ đã phục vụ nhiều loại đồ uống khác nhau."
+        },
+        {
+          "meaning_vi": "đồ uống",
+          "example_en": "I need a refreshing drink.",
+          "example_vi": "Tôi cần một món đồ uống giải khát."
+        },
+        {
+          "meaning_vi": "hớp",
+          "example_en": "He took a quick drink of water.",
+          "example_vi": "Anh ấy đã uống một hớp nước nhanh."
+        },
+        {
+          "meaning_vi": "hớp",
+          "example_en": "She had a small drink from the glass.",
+          "example_vi": "Cô ấy đã uống một hớp nhỏ từ chiếc ly."
+        },
+        {
+          "meaning_vi": "uống",
+          "example_en": "Do you drink coffee every morning?",
+          "example_vi": "Bạn có uống cà phê mỗi sáng không?"
+        },
+        {
+          "meaning_vi": "uống",
+          "example_en": "He drank all the milk.",
+          "example_vi": "Anh ấy đã uống hết chỗ sữa."
+        },
+        {
+          "meaning_vi": "uống",
+          "example_en": "She is drinking tea now.",
+          "example_vi": "Cô ấy đang uống trà bây giờ."
+        },
+        {
+          "meaning_vi": "uống",
+          "example_en": "We should drink more water.",
+          "example_vi": "Chúng ta nên uống nhiều nước hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lược bỏ nghĩa lóng và chuyên ngành, tập trung vào nghĩa cơ bản.",
+      "word": "drink",
+      "normalized_word": "drink",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Would you like a cold drink?",
+      "example_vi_clean": "Bạn có muốn một món đồ uống lạnh không?"
+    },
+    {
+      "id": 24246,
+      "quiz_meaning_vi": "cuộc đi xe",
+      "meaning_vi_clean": "cuộc đi xe; lái xe; đường lái xe",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc đi xe",
+          "example_en": "It was a long drive to the city.",
+          "example_vi": "Đó là một cuộc đi xe dài đến thành phố."
+        },
+        {
+          "meaning_vi": "cuộc đi xe",
+          "example_en": "We enjoyed our drive through the countryside.",
+          "example_vi": "Chúng tôi đã tận hưởng cuộc đi xe qua vùng nông thôn."
+        },
+        {
+          "meaning_vi": "cuộc đi xe",
+          "example_en": "The drive took two hours.",
+          "example_vi": "Cuộc đi xe mất hai tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "cuộc đi xe",
+          "example_en": "Are you ready for the drive?",
+          "example_vi": "Bạn đã sẵn sàng cho cuộc đi xe chưa?"
+        },
+        {
+          "meaning_vi": "lái xe",
+          "example_en": "He knows how to drive a car.",
+          "example_vi": "Anh ấy biết cách lái xe ô tô."
+        },
+        {
+          "meaning_vi": "lái xe",
+          "example_en": "She drives to work every day.",
+          "example_vi": "Cô ấy lái xe đi làm mỗi ngày."
+        },
+        {
+          "meaning_vi": "lái xe",
+          "example_en": "Please drive carefully.",
+          "example_vi": "Làm ơn hãy lái xe cẩn thận."
+        },
+        {
+          "meaning_vi": "lái xe",
+          "example_en": "They are learning to drive.",
+          "example_vi": "Họ đang học lái xe."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "Park your car in the drive.",
+          "example_vi": "Đỗ xe của bạn ở đường lái xe vào nhà."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "The drive is covered with snow.",
+          "example_vi": "Đường lái xe vào nhà bị phủ đầy tuyết."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lược bỏ các nghĩa quá xa lạ, tập trung vào nghĩa danh từ và động từ cơ bản.",
+      "word": "drive",
+      "normalized_word": "drive",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was a long drive to the city.",
+      "example_vi_clean": "Đó là một cuộc đi xe dài đến thành phố."
+    },
+    {
+      "id": 24247,
+      "quiz_meaning_vi": "người lái",
+      "meaning_vi_clean": "người lái; tài xế",
+      "examples_clean": [
+        {
+          "meaning_vi": "người lái",
+          "example_en": "The driver stopped the bus at the station.",
+          "example_vi": "Người lái xe đã dừng xe buýt tại trạm."
+        },
+        {
+          "meaning_vi": "người lái",
+          "example_en": "He is a very careful driver.",
+          "example_vi": "Anh ấy là một người lái xe rất cẩn thận."
+        },
+        {
+          "meaning_vi": "người lái",
+          "example_en": "The driver asked for my ticket.",
+          "example_vi": "Người lái xe đã hỏi vé của tôi."
+        },
+        {
+          "meaning_vi": "người lái",
+          "example_en": "She is a professional driver.",
+          "example_vi": "Cô ấy là một người lái xe chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "người lái",
+          "example_en": "The driver knows the way to the hotel.",
+          "example_vi": "Người lái xe biết đường đến khách sạn."
+        },
+        {
+          "meaning_vi": "tài xế",
+          "example_en": "The taxi driver was very friendly.",
+          "example_vi": "Người tài xế taxi rất thân thiện."
+        },
+        {
+          "meaning_vi": "tài xế",
+          "example_en": "I thanked the driver for the ride.",
+          "example_vi": "Tôi đã cảm ơn người tài xế vì chuyến đi."
+        },
+        {
+          "meaning_vi": "tài xế",
+          "example_en": "The driver helped me with my bags.",
+          "example_vi": "Người tài xế đã giúp tôi mang túi xách."
+        },
+        {
+          "meaning_vi": "tài xế",
+          "example_en": "The driver is waiting outside.",
+          "example_vi": "Người tài xế đang đợi ở bên ngoài."
+        },
+        {
+          "meaning_vi": "tài xế",
+          "example_en": "Every driver must follow the rules.",
+          "example_vi": "Mọi tài xế đều phải tuân thủ luật lệ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa danh từ, bổ sung ví dụ phù hợp.",
+      "word": "driver",
+      "normalized_word": "driver",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The driver stopped the bus at the station.",
+      "example_vi_clean": "Người lái xe đã dừng xe buýt tại trạm."
+    },
+    {
+      "id": 24248,
+      "quiz_meaning_vi": "cái trống",
+      "meaning_vi_clean": "cái trống; tiếng trống; đánh trống",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "He plays the drum in a band.",
+          "example_vi": "Anh ấy chơi cái trống trong một ban nhạc."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "The drum is made of wood and skin.",
+          "example_vi": "Cái trống được làm bằng gỗ và da."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "She bought a small drum for her son.",
+          "example_vi": "Cô ấy đã mua một cái trống nhỏ cho con trai mình."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "The drum sounds very loud.",
+          "example_vi": "Cái trống nghe rất to."
+        },
+        {
+          "meaning_vi": "tiếng trống",
+          "example_en": "We heard the sound of a drum.",
+          "example_vi": "Chúng tôi đã nghe thấy tiếng trống."
+        },
+        {
+          "meaning_vi": "tiếng trống",
+          "example_en": "The drum beat was very fast.",
+          "example_vi": "Tiếng trống rất nhanh."
+        },
+        {
+          "meaning_vi": "tiếng trống",
+          "example_en": "The drum echoed in the hall.",
+          "example_vi": "Tiếng trống vang vọng trong hội trường."
+        },
+        {
+          "meaning_vi": "đánh trống",
+          "example_en": "He likes to drum on the table.",
+          "example_vi": "Anh ấy thích đánh trống trên bàn."
+        },
+        {
+          "meaning_vi": "đánh trống",
+          "example_en": "She is learning how to drum.",
+          "example_vi": "Cô ấy đang học cách đánh trống."
+        },
+        {
+          "meaning_vi": "đánh trống",
+          "example_en": "Stop drumming on your desk.",
+          "example_vi": "Hãy ngừng đánh trống trên bàn của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lược bỏ nghĩa chuyên ngành, tập trung vào nghĩa danh từ và động từ cơ bản.",
+      "word": "drum",
+      "normalized_word": "drum",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He plays the drum in a band.",
+      "example_vi_clean": "Anh ấy chơi cái trống trong một ban nhạc."
+    },
+    {
+      "id": 24249,
+      "quiz_meaning_vi": "khô",
+      "meaning_vi_clean": "khô; làm khô",
+      "examples_clean": [
+        {
+          "meaning_vi": "khô",
+          "example_en": "The clothes are dry now.",
+          "example_vi": "Quần áo đã khô rồi."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The ground is very dry.",
+          "example_vi": "Mặt đất rất khô."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "Keep the bread in a dry place.",
+          "example_vi": "Hãy giữ bánh mì ở nơi khô ráo."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "My throat feels dry.",
+          "example_vi": "Cổ họng tôi cảm thấy khô."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The desert is a dry area.",
+          "example_vi": "Sa mạc là một vùng đất khô."
+        },
+        {
+          "meaning_vi": "làm khô",
+          "example_en": "Please dry your hands with a towel.",
+          "example_vi": "Làm ơn hãy làm khô tay bạn bằng khăn."
+        },
+        {
+          "meaning_vi": "làm khô",
+          "example_en": "She dried the dishes after washing them.",
+          "example_vi": "Cô ấy đã làm khô bát đĩa sau khi rửa chúng."
+        },
+        {
+          "meaning_vi": "làm khô",
+          "example_en": "The sun will dry the wet grass.",
+          "example_vi": "Mặt trời sẽ làm khô cỏ ướt."
+        },
+        {
+          "meaning_vi": "làm khô",
+          "example_en": "He used a hair dryer to dry his hair.",
+          "example_vi": "Anh ấy đã dùng máy sấy để làm khô tóc."
+        },
+        {
+          "meaning_vi": "làm khô",
+          "example_en": "We need to dry these clothes.",
+          "example_vi": "Chúng ta cần làm khô những bộ quần áo này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lược bỏ nghĩa lóng, tập trung vào nghĩa tính từ và động từ cơ bản.",
+      "word": "dry",
+      "normalized_word": "dry",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The clothes are dry now.",
+      "example_vi_clean": "Quần áo đã khô rồi."
+    },
+    {
+      "id": 24250,
+      "quiz_meaning_vi": "đến hạn",
+      "meaning_vi_clean": "đến hạn; phải trả; xứng đáng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The library book is due today.",
+          "example_vi": "Cuốn sách thư viện đã đến hạn trả hôm nay."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The rent is due at the end of the month.",
+          "example_vi": "Tiền thuê nhà đã đến hạn vào cuối tháng."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The baby is due next week.",
+          "example_vi": "Em bé dự kiến sẽ đến hạn chào đời vào tuần tới."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The train is due at five o'clock.",
+          "example_vi": "Tàu dự kiến đến hạn vào lúc năm giờ."
+        },
+        {
+          "meaning_vi": "phải trả",
+          "example_en": "There is a lot of money due.",
+          "example_vi": "Có một khoản tiền lớn phải trả."
+        },
+        {
+          "meaning_vi": "phải trả",
+          "example_en": "The payment is due tomorrow.",
+          "example_vi": "Khoản thanh toán phải trả vào ngày mai."
+        },
+        {
+          "meaning_vi": "phải trả",
+          "example_en": "All fees are due before the start.",
+          "example_vi": "Tất cả các khoản phí phải trả trước khi bắt đầu."
+        },
+        {
+          "meaning_vi": "xứng đáng",
+          "example_en": "He got the respect that was due to him.",
+          "example_vi": "Anh ấy đã nhận được sự tôn trọng xứng đáng với mình."
+        },
+        {
+          "meaning_vi": "xứng đáng",
+          "example_en": "Give him the credit due to him.",
+          "example_vi": "Hãy dành cho anh ấy sự công nhận xứng đáng."
+        },
+        {
+          "meaning_vi": "xứng đáng",
+          "example_en": "They received the praise due to them.",
+          "example_vi": "Họ đã nhận được lời khen ngợi xứng đáng với họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lược bỏ nghĩa danh từ không phổ biến, tập trung vào nghĩa tính từ cơ bản.",
+      "word": "due",
+      "normalized_word": "due",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The library book is due today.",
+      "example_vi_clean": "Cuốn sách thư viện đã đến hạn trả hôm nay."
+    }
+  ]
+}

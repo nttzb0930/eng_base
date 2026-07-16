@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-014",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24131,
+      "word": "cake",
+      "normalized_word": "cake",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/keik/",
+      "primary_meaning_vi": "bánh ngọt",
+      "meaning_vi": "bánh ngọt; thức ăn đóng thành bánh; miếng bánh; vui liên hoan, cuộc truy hoan; bán chạy như tôm tươi; sống sung túc, sống phong lưu; việc ngon ơ, việc dễ làm; việc thú vị; chiếm giải, chiếm giải nhất; chiếm địa vị danh dự hơn tất cả mọi người; được cái nọ mất cái kia; đóng thành bánh, đóng bánh",
+      "example_en": "a johnnycake",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "buckwheat cakes",
+          "example_vi": null
+        },
+        {
+          "example_en": "a cake of sand",
+          "example_vi": null
+        },
+        {
+          "example_en": "Mmm, I'd like to cut me some of that cake!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24132,
+      "word": "call",
+      "normalized_word": "call",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kɔ:l/",
+      "primary_meaning_vi": "tiếng kêu",
+      "meaning_vi": "tiếng kêu, tiếng la, tiếng gọi; tiếng chim kêu; tiếng bắt chước tiếng chim; kèn lệnh, trống lệnh, còi hiệu; lời kêu gọi, tiếng gọi; sự mời, sự triệu tập; sự gọi dây nói, sự nói chuyện bằng dây nói; sự thăm, sự ghé thăm, sự đỗ lại, sự ghé lại; sự đòi hỏi, sự yêu cầu; sự cần thiết; dịp; sự gọi vốn, sự gọi cổ phần; sự vỗ tay mời (diễn viên) ra một lần nữa; sẵn sàng nhận lệnh; lệnh nhập ngũ, lệnh động viên; việc gì mà xấu hổ; close; có quyền được hưởng (nhận) cái gì; nơi thường lui tới công tác; kêu gọi, mời gọi lại; gọi là, tên là; đánh thức, gọi dậy; coi là, cho là, gọi là; gợi, gợi lại, nhắc lại; triệu tập; định ngày (họp, xử...); phát thanh về phía; gọi, kêu to, la to, gọi to; kêu gọi, yêu cầu; gọi, đến tìm (ai) (để lấy cái gì...); dừng lại, đỗ lại (xe lửa...); ghé thăm, lại thăm, tạt vào thăm; (nghĩa bóng) đòi, bắt buộc phải, cần phải; gọi ra một chỗ; kéo sang một bên; gọi đi; mời đi; gọi lại, gọi về; gọi (ai) xuống; xỉ vả, mắng nhiếc thậm tệ; phát huy hết, đem hết; gây ra; gọi ra ngoài; thu về, đòi về, lấy về (tiền...); mời đến, gọi đến, triệu đến; gọi ra chỗ khác; đình lại, hoãn lại, ngừng lại; bỏ đi; làm lãng đi; gọi ra; gọi to; gọi (quân đến đàn áp...); thách đấu gươm; triệu tập (một cuộc họp...); gọi tên; gợi lại, nhắc lại (một kỷ niệm); gọi dây nói; nảy ra (một ý kiến); gây ra (một cuộc tranh luận...); đánh thức, gọi dậy; động viên, gọi (nhập ngũ); làm cho đãng trí; làm cho không chú ý; question; tạo ra, làm nảy sinh ra; play; điểm tên; name; coal; có cái gì; spade",
+      "example_en": "I received several calls today.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I paid a call to a dear friend of mine.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The ship made a call at Southampton.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He heard a call from the other side of the room.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24133,
+      "word": "camera",
+      "normalized_word": "camera",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæmərə/",
+      "primary_meaning_vi": "máy ảnh",
+      "meaning_vi": "máy ảnh; máy quay phim; phòng riêng của quan toà; họp kín; xử kín; trong đời sống riêng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24134,
+      "word": "camp",
+      "normalized_word": "camp",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/kæmp/",
+      "primary_meaning_vi": "trại",
+      "meaning_vi": "trại, chỗ cắm trại, hạ trại; chỗ đóng quân, chỗ đóng trại; đời sông quân đội; phe phái; lều nhỏ (trong rừng); đóng trại, cắm trại, hạ trại",
+      "example_en": "a hunter's camp",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We're planning to camp in the field until Sunday.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Go and camp the flag for the win.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24135,
+      "word": "can",
+      "normalized_word": "can",
+      "cefr_level": "A1",
+      "pos": "modal auxiliary",
+      "pos_vi": "động từ could",
+      "phonetic": "/kæn/",
+      "primary_meaning_vi": "bình",
+      "meaning_vi": "bình, bi đông, ca (đựng nước); vỏ đồ hộp, hộp đồ hộp; ghế đẩu, ghế ngồi ở nhà tiêu; ,  (từ lóng) nhà tù, nhà giam; đã làm xong và sẵn sàng để đem ra dùng; chịu trách nhiệm, gánh trách nhiệm; đóng hộp (thịt, cá, quả...); ghi vào băng ghi âm, thu vào đĩa (bản nhạc); đuổi ra khỏi trường (học sinh); đuổi ra, thải ra; ,  (từ lóng) chấm dứt, chặn lại, ngăn lại; ,  (từ lóng) bỏ tù, bắt giam; có thể, có khả năng; có thể, được phép; biết",
+      "example_en": "She can speak English, French, and German. I can play football. Can you remember your fifth birthday?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "You can go outside and play when you're finished with your homework. Can I use your pen?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Animals can experience emotions.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can you hear that?.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24136,
+      "word": "candy",
+      "normalized_word": "candy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'kændi/",
+      "primary_meaning_vi": "kẹo",
+      "meaning_vi": "kẹo; ,  (từ lóng) côcain; làm thành đường phèn; tẩm đường, ướp đường, ngâm đường (hoa quả...); kết thành đường (mật ong...)",
+      "example_en": "Fruits preserved in sugar candy after a time.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24137,
+      "word": "cap",
+      "normalized_word": "cap",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kæp/",
+      "primary_meaning_vi": "mũ lưỡi trai",
+      "meaning_vi": "mũ lưỡi trai, mũ vải (y tá cấp dưỡng...); mũ (công nhân, giáo sư, quan toà, lính thuỷ...); nắp, mũ (chai, van, bút máy...); đầu (đạn...); tai (nấm...); mỏm, chỏm, chóp, đỉnh; đầu cột; miếng tháp cột buồm; bao giấy hình loa, phễu giấy (để gói); khổ giấy 0, 43 x 0, 35 cm; khúm núm; có tật giật mình; suy nghĩ đắn đo; suy nghĩ kỹ lưỡng; quyến rũ ai, chài ai (để lấy làm chồng); làm bừa không kể gì dư luận; hành động tếu; đội mũ cho (ai); đậy nắp, bịt nắp (cái gì); vượt, làm tốt hơn, làm hay hơn; ngã mũ chào (ai); chính thức nhận (một đấu thủ) vào đội; phát bằng cho (ở trường đại học); làm sưng (một chỗ nào); ngả mũ chào, chào",
+      "example_en": "The children were all wearing caps to protect them from the sun.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He took the cap off the bottle and splashed himself with some cologne.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He had golden caps on his teeth.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There was snow on the cap of the mountain.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24138,
+      "word": "car",
+      "normalized_word": "car",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kɑ:/",
+      "primary_meaning_vi": "xe ô tô",
+      "meaning_vi": "xe ô tô; xe; toa (xe lửa, xe điện); giỏ khí cầu; buồng thang máy; xe, xa",
+      "example_en": "She drove her car to the mall.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The conductor coupled the cars to the locomotive.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The 11:10 to London was operated by a 4-car diesel multiple unit.",
+          "example_vi": null
+        },
+        {
+          "example_en": "From the frontmost car of the subway, he filmed the progress through the tunnel.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24139,
+      "word": "card",
+      "normalized_word": "card",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kɑ:d/",
+      "primary_meaning_vi": "các",
+      "meaning_vi": "các, thiếp, thẻ; quân bài, bài ((cũng) playing card); sự chơi bài; chương trình (cuộc đua...); bản yết thị; quảng cáo (trên báo); , hải la bàn ((cũng) mariner's card); người kỳ quặc; thằng cha, gã; còn nắm bài chủ trong tay; có kế dự phòng; có tất cả bài chủ trong tay; (nghĩa bóng) có tất cả yếu tố thắng lợi trong tay; house; có thể, có lẽ; lý lẽ vững nhất; lá bài chủ (nghĩa bóng); chơi nước bài hay ((nghĩa đen) & (nghĩa bóng)); chơi nước chắc ((nghĩa đen) & (nghĩa bóng)); chơi nước bài bớ, chơi nước bài sai lầm ((nghĩa đen) & (nghĩa bóng)); nói rõ hết ý định, nói rõ hết kế hoạch không cần úp mở giấu giếm; để lộ kế hoạch; nói rành rọt, nói chính xác; đúng thế, thế là đúng, thế là phải; bỏ cuộc, chịu thua không chơi nữa; bàn chải len, bàn cúi; chải (len...)",
+      "example_en": "He played cards with his friends.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He accused them of playing the race card.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What’s on the card for tonight?",
+          "example_vi": null
+        },
+        {
+          "example_en": "He needed to replace the card his computer used to connect to the internet.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24140,
+      "word": "care",
+      "normalized_word": "care",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/keə/",
+      "primary_meaning_vi": "sự chăn sóc",
+      "meaning_vi": "sự chăn sóc, sự chăm nom, sự giữ gìn, sự bảo dưỡng; sự chăm chú, sự chú ý; sự cẩn thận, sự thận trọng; sự lo âu, sự lo lắng; c oào sạch 7ʃ X) nhờ ông X chuyển giúp (viết trên phong bì); lo bạc râu, sầu bạc tóc; trông nom, chăm sóc, nuôi nấng; chú ý đến, để ý đến, quan tâm đến, lo lắng đến; cần đến; thích, muốn; tớ cần đếch gì; tớ cóc cần; không phản đối gì; không đòi hỏi gì hơn",
+      "example_en": "Care should be taken when holding babies.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I don't have a care in the world.",
+          "example_vi": null
+        },
+        {
+          "example_en": "\"She doesn't care what you think.\" \"I don't care, I'm still going.\"",
+          "example_vi": null
+        },
+        {
+          "example_en": "I don't care to hear your opinion.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

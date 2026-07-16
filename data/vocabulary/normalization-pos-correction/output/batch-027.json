@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24594,
+      "quiz_meaning_vi": "trang sách",
+      "meaning_vi_clean": "trang sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "Please turn to the next page.",
+          "example_vi": "Vui lòng lật sang trang tiếp theo."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "Read the first page of the book.",
+          "example_vi": "Hãy đọc trang đầu tiên của cuốn sách."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "There is a picture on this page.",
+          "example_vi": "Có một bức tranh trên trang này."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "I wrote my name on the last page.",
+          "example_vi": "Tôi đã viết tên mình vào trang cuối cùng."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "Find the information on page ten.",
+          "example_vi": "Tìm thông tin ở trang mười."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "She tore a page out of her notebook.",
+          "example_vi": "Cô ấy xé một trang ra khỏi sổ tay của mình."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "The page is blank.",
+          "example_vi": "Trang này để trống."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "He folded the corner of the page.",
+          "example_vi": "Anh ấy gấp góc của trang sách lại."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "This page has a lot of text.",
+          "example_vi": "Trang này có rất nhiều chữ."
+        },
+        {
+          "meaning_vi": "trang sách",
+          "example_en": "Keep your finger on this page.",
+          "example_vi": "Hãy giữ ngón tay của bạn ở trang này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là trang sách và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ page được dùng làm danh từ trong tất cả các câu với nghĩa là trang sách."
+      },
+      "word": "page",
+      "normalized_word": "page",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please turn to the next page.",
+      "example_vi_clean": "Vui lòng lật sang trang tiếp theo."
+    },
+    {
+      "id": 24595,
+      "quiz_meaning_vi": "sơn",
+      "meaning_vi_clean": "sơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sơn",
+          "example_en": "The paint on the wall is still wet.",
+          "example_vi": "Lớp sơn trên tường vẫn còn ướt."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "We need more blue paint for the room.",
+          "example_vi": "Chúng ta cần thêm sơn màu xanh cho căn phòng."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "He spilled some paint on the floor.",
+          "example_vi": "Anh ấy làm đổ một ít sơn xuống sàn nhà."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "The old house needs a new coat of paint.",
+          "example_vi": "Ngôi nhà cũ cần một lớp sơn mới."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "She bought a tin of white paint.",
+          "example_vi": "Cô ấy đã mua một hộp sơn màu trắng."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "The smell of paint is very strong.",
+          "example_vi": "Mùi sơn rất nồng."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "Be careful not to get paint on your clothes.",
+          "example_vi": "Hãy cẩn thận đừng để sơn dính vào quần áo của bạn."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "The artist mixed the paint on his palette.",
+          "example_vi": "Người họa sĩ trộn sơn trên bảng màu của mình."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "This paint is suitable for wood.",
+          "example_vi": "Loại sơn này phù hợp cho gỗ."
+        },
+        {
+          "meaning_vi": "sơn",
+          "example_en": "They removed the old paint from the door.",
+          "example_vi": "Họ đã loại bỏ lớp sơn cũ khỏi cánh cửa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là sơn và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ paint được dùng làm danh từ trong tất cả các câu với nghĩa là chất liệu sơn."
+      },
+      "word": "paint",
+      "normalized_word": "paint",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The paint on the wall is still wet.",
+      "example_vi_clean": "Lớp sơn trên tường vẫn còn ướt."
+    },
+    {
+      "id": 24597,
+      "quiz_meaning_vi": "cặp",
+      "meaning_vi_clean": "cặp",
+      "examples_clean": [
+        {
+          "meaning_vi": "cặp",
+          "example_en": "I bought a new pair of shoes.",
+          "example_vi": "Tôi đã mua một đôi giày mới."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "She has a pair of glasses on her desk.",
+          "example_vi": "Cô ấy có một cặp kính trên bàn làm việc."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "He lost a pair of socks.",
+          "example_vi": "Anh ấy đã làm mất một đôi tất."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "They saw a pair of birds in the tree.",
+          "example_vi": "Họ nhìn thấy một cặp chim trên cây."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "I need a pair of scissors to cut this.",
+          "example_vi": "Tôi cần một cái kéo để cắt cái này."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "She gave me a pair of gloves.",
+          "example_vi": "Cô ấy đã tặng tôi một đôi găng tay."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "He owns a pair of expensive boots.",
+          "example_vi": "Anh ấy sở hữu một đôi ủng đắt tiền."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "There is a pair of earrings on the table.",
+          "example_vi": "Có một đôi bông tai trên bàn."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "We saw a pair of swans in the lake.",
+          "example_vi": "Chúng tôi thấy một cặp thiên nga dưới hồ."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "She wears a pair of jeans every day.",
+          "example_vi": "Cô ấy mặc một chiếc quần jean mỗi ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là cặp/đôi và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ pair được dùng làm danh từ trong tất cả các câu với nghĩa là một cặp hoặc một đôi."
+      },
+      "word": "pair",
+      "normalized_word": "pair",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought a new pair of shoes.",
+      "example_vi_clean": "Tôi đã mua một đôi giày mới."
+    },
+    {
+      "id": 24600,
+      "quiz_meaning_vi": "giấy",
+      "meaning_vi_clean": "giấy",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấy",
+          "example_en": "I need a piece of paper to write on.",
+          "example_vi": "Tôi cần một tờ giấy để viết."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "She folded the paper into a bird.",
+          "example_vi": "Cô ấy gấp tờ giấy thành một con chim."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "The printer is out of paper.",
+          "example_vi": "Máy in hết giấy rồi."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "He threw the paper into the bin.",
+          "example_vi": "Anh ấy ném tờ giấy vào thùng rác."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "This paper is very thin.",
+          "example_vi": "Loại giấy này rất mỏng."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "She drew a picture on the paper.",
+          "example_vi": "Cô ấy vẽ một bức tranh trên giấy."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "Please sign your name on this paper.",
+          "example_vi": "Vui lòng ký tên của bạn vào tờ giấy này."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "He used recycled paper for his project.",
+          "example_vi": "Anh ấy đã sử dụng giấy tái chế cho dự án của mình."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "The paper is white and smooth.",
+          "example_vi": "Tờ giấy này trắng và mịn."
+        },
+        {
+          "meaning_vi": "giấy",
+          "example_en": "Keep the paper in a safe place.",
+          "example_vi": "Hãy giữ tờ giấy ở một nơi an toàn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là giấy và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ paper được dùng làm danh từ trong tất cả các câu với nghĩa là chất liệu giấy."
+      },
+      "word": "paper",
+      "normalized_word": "paper",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I need a piece of paper to write on.",
+      "example_vi_clean": "Tôi cần một tờ giấy để viết."
+    },
+    {
+      "id": 24601,
+      "quiz_meaning_vi": "khả năng",
+      "meaning_vi_clean": "khả năng",
+      "examples_clean": [
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "She has the ability to speak three languages.",
+          "example_vi": "Cô ấy có khả năng nói ba ngôn ngữ."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "He showed great ability in music.",
+          "example_vi": "Anh ấy đã thể hiện khả năng tuyệt vời trong âm nhạc."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "The job requires the ability to work under pressure.",
+          "example_vi": "Công việc đòi hỏi khả năng làm việc dưới áp lực."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "We all have the ability to learn new things.",
+          "example_vi": "Tất cả chúng ta đều có khả năng học hỏi những điều mới."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "His ability to solve problems is impressive.",
+          "example_vi": "Khả năng giải quyết vấn đề của anh ấy rất ấn tượng."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "She has a natural ability for painting.",
+          "example_vi": "Cô ấy có khả năng thiên bẩm về hội họa."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "The test measures your ability in math.",
+          "example_vi": "Bài kiểm tra đo lường khả năng của bạn trong môn toán."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "He lacks the ability to lead the team.",
+          "example_vi": "Anh ấy thiếu khả năng lãnh đạo đội nhóm."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "Her ability to communicate is excellent.",
+          "example_vi": "Khả năng giao tiếp của cô ấy rất xuất sắc."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "They have the ability to finish on time.",
+          "example_vi": "Họ có khả năng hoàn thành đúng hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là khả năng và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ ability được dùng làm danh từ trong tất cả các câu với nghĩa là năng lực hoặc khả năng."
+      },
+      "word": "ability",
+      "normalized_word": "ability",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has the ability to speak three languages.",
+      "example_vi_clean": "Cô ấy có khả năng nói ba ngôn ngữ."
+    },
+    {
+      "id": 24606,
+      "quiz_meaning_vi": "tài khoản",
+      "meaning_vi_clean": "tài khoản",
+      "examples_clean": [
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "I opened a new bank account yesterday.",
+          "example_vi": "Tôi đã mở một tài khoản ngân hàng mới ngày hôm qua."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "Please check your account balance.",
+          "example_vi": "Vui lòng kiểm tra số dư tài khoản của bạn."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "He forgot his password for the account.",
+          "example_vi": "Anh ấy đã quên mật khẩu cho tài khoản của mình."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "You need to log in to your account.",
+          "example_vi": "Bạn cần đăng nhập vào tài khoản của mình."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "She closed her savings account.",
+          "example_vi": "Cô ấy đã đóng tài khoản tiết kiệm của mình."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "The money was transferred to my account.",
+          "example_vi": "Số tiền đã được chuyển vào tài khoản của tôi."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "I have an account on this website.",
+          "example_vi": "Tôi có một tài khoản trên trang web này."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "He keeps his money in a secure account.",
+          "example_vi": "Anh ấy giữ tiền của mình trong một tài khoản an toàn."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "The account is currently inactive.",
+          "example_vi": "Tài khoản hiện đang không hoạt động."
+        },
+        {
+          "meaning_vi": "tài khoản",
+          "example_en": "They created a shared account for expenses.",
+          "example_vi": "Họ đã tạo một tài khoản chung cho các chi phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là tài khoản và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ account được dùng làm danh từ trong tất cả các câu với nghĩa là tài khoản ngân hàng hoặc tài khoản trực tuyến."
+      },
+      "word": "account",
+      "normalized_word": "account",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I opened a new bank account yesterday.",
+      "example_vi_clean": "Tôi đã mở một tài khoản ngân hàng mới ngày hôm qua."
+    },
+    {
+      "id": 24608,
+      "quiz_meaning_vi": "ngang qua",
+      "meaning_vi_clean": "ngang qua",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "He ran across to the other side.",
+          "example_vi": "Anh ấy chạy ngang qua phía bên kia."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "She walked across to say hello.",
+          "example_vi": "Cô ấy đi bộ ngang qua để chào hỏi."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "The cat jumped across to the chair.",
+          "example_vi": "Con mèo nhảy ngang qua cái ghế."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "They swam across to the island.",
+          "example_vi": "Họ bơi ngang qua hòn đảo."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "He looked across at his friend.",
+          "example_vi": "Anh ấy nhìn ngang qua phía bạn mình."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "The bridge goes across to the park.",
+          "example_vi": "Cây cầu bắc ngang qua công viên."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "She stepped across to the window.",
+          "example_vi": "Cô ấy bước ngang qua phía cửa sổ."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "He flew across to another country.",
+          "example_vi": "Anh ấy bay ngang qua một quốc gia khác."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "The road goes across to the city.",
+          "example_vi": "Con đường đi ngang qua thành phố."
+        },
+        {
+          "meaning_vi": "ngang qua",
+          "example_en": "They moved across to the front row.",
+          "example_vi": "Họ di chuyển ngang qua hàng ghế đầu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa phó từ phổ biến nhất là ngang qua và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ across được dùng làm phó từ trong tất cả các câu để chỉ sự di chuyển hoặc vị trí ngang qua."
+      },
+      "word": "across",
+      "normalized_word": "across",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He ran across to the other side.",
+      "example_vi_clean": "Anh ấy chạy ngang qua phía bên kia."
+    },
+    {
+      "id": 24609,
+      "quiz_meaning_vi": "hành động",
+      "meaning_vi_clean": "hành động",
+      "examples_clean": [
+        {
+          "meaning_vi": "hành động",
+          "example_en": "That was a kind act.",
+          "example_vi": "Đó là một hành động tử tế."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "He is responsible for his own act.",
+          "example_vi": "Anh ấy chịu trách nhiệm cho hành động của chính mình."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "It was a brave act to save the child.",
+          "example_vi": "Đó là một hành động dũng cảm để cứu đứa trẻ."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "The act of kindness made her smile.",
+          "example_vi": "Hành động tử tế đó đã làm cô ấy mỉm cười."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "He regretted his foolish act.",
+          "example_vi": "Anh ấy hối hận về hành động dại dột của mình."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "Every act has a consequence.",
+          "example_vi": "Mỗi hành động đều có hậu quả."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "She was surprised by his sudden act.",
+          "example_vi": "Cô ấy ngạc nhiên bởi hành động đột ngột của anh ấy."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "The act was caught on camera.",
+          "example_vi": "Hành động đó đã bị ghi lại trên máy quay."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "He performed a noble act.",
+          "example_vi": "Anh ấy đã thực hiện một hành động cao đẹp."
+        },
+        {
+          "meaning_vi": "hành động",
+          "example_en": "This act is against the law.",
+          "example_vi": "Hành động này là trái pháp luật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là hành động và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ act được dùng làm danh từ trong tất cả các câu với nghĩa là một hành động cụ thể."
+      },
+      "word": "act",
+      "normalized_word": "act",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "That was a kind act.",
+      "example_vi_clean": "Đó là một hành động tử tế."
+    },
+    {
+      "id": 24619,
+      "quiz_meaning_vi": "lợi thế",
+      "meaning_vi_clean": "lợi thế",
+      "examples_clean": [
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "Being tall is an advantage in basketball.",
+          "example_vi": "Cao là một lợi thế trong môn bóng rổ."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "She has the advantage of speaking two languages.",
+          "example_vi": "Cô ấy có lợi thế là nói được hai ngôn ngữ."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "Experience is a big advantage for this job.",
+          "example_vi": "Kinh nghiệm là một lợi thế lớn cho công việc này."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "We have the advantage of a good location.",
+          "example_vi": "Chúng tôi có lợi thế về vị trí tốt."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "He used his speed to his advantage.",
+          "example_vi": "Anh ấy đã sử dụng tốc độ của mình làm lợi thế."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "The team had the advantage of playing at home.",
+          "example_vi": "Đội bóng có lợi thế khi được chơi trên sân nhà."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "This new software gives us a clear advantage.",
+          "example_vi": "Phần mềm mới này mang lại cho chúng ta một lợi thế rõ ràng."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "She sees the advantage of living in the city.",
+          "example_vi": "Cô ấy thấy được lợi thế của việc sống ở thành phố."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "Knowledge is a great advantage in life.",
+          "example_vi": "Kiến thức là một lợi thế lớn trong cuộc sống."
+        },
+        {
+          "meaning_vi": "lợi thế",
+          "example_en": "They lost their advantage in the final minutes.",
+          "example_vi": "Họ đã mất lợi thế của mình trong những phút cuối cùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ phổ biến nhất là lợi thế và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ advantage được dùng làm danh từ trong tất cả các câu với nghĩa là lợi thế hoặc điểm mạnh."
+      },
+      "word": "advantage",
+      "normalized_word": "advantage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Being tall is an advantage in basketball.",
+      "example_vi_clean": "Cao là một lợi thế trong môn bóng rổ."
+    },
+    {
+      "id": 24626,
+      "quiz_meaning_vi": "sau đó",
+      "meaning_vi_clean": "sau đó",
+      "examples_clean": [
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "He finished his work and left shortly after.",
+          "example_vi": "Anh ấy hoàn thành công việc và rời đi ngay sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "We ate dinner and went for a walk after.",
+          "example_vi": "Chúng tôi ăn tối và đi dạo sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "She studied hard and passed the exam after.",
+          "example_vi": "Cô ấy học chăm chỉ và đỗ kỳ thi sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "They played a game and rested after.",
+          "example_vi": "Họ chơi một trò chơi và nghỉ ngơi sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "I cleaned the room and slept after.",
+          "example_vi": "Tôi dọn dẹp phòng và ngủ sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "He bought the ticket and entered soon after.",
+          "example_vi": "Anh ấy mua vé và vào trong ngay sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "We watched a movie and talked after.",
+          "example_vi": "Chúng tôi xem phim và trò chuyện sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "She cooked the meal and served it after.",
+          "example_vi": "Cô ấy nấu bữa ăn và phục vụ nó sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "They arrived at the station and left after.",
+          "example_vi": "Họ đến nhà ga và rời đi sau đó."
+        },
+        {
+          "meaning_vi": "sau đó",
+          "example_en": "He read the book and wrote a review after.",
+          "example_vi": "Anh ấy đọc cuốn sách và viết bài đánh giá sau đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa phó từ phổ biến nhất là sau đó và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ after được dùng làm phó từ trong tất cả các câu để chỉ thời gian xảy ra sau đó."
+      },
+      "word": "after",
+      "normalized_word": "after",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He finished his work and left shortly after.",
+      "example_vi_clean": "Anh ấy hoàn thành công việc và rời đi ngay sau đó."
+    }
+  ]
+}

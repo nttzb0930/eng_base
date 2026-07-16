@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-273",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26721,
+      "word": "convert",
+      "normalized_word": "convert",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'və:t/",
+      "primary_meaning_vi": "người cải đạo",
+      "meaning_vi": "người cải đạo, người thay đổi tín ngưỡng; người theo đạo (nguyện không theo đạo nào); người thay đổi chính kiến; làm đổi tôn giáo, làm đổi đảng phái; đổi, biến đổi; biển thủ, thụt (két), tham ô; xẻ gỗ (còn vỏ)",
+      "example_en": "They were all converts to Islam.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I never really liked broccoli before, but now that I've tasted it the way you cook it, I'm a convert!",
+          "example_vi": null
+        },
+        {
+          "example_en": "A kettle converts water into steam.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He converted his garden into a tennis court.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26722,
+      "word": "convinced",
+      "normalized_word": "convinced",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kən'vinst/",
+      "primary_meaning_vi": "tin chắc",
+      "meaning_vi": "tin chắc",
+      "example_en": "I wouldn't have or do something, unless I'm convinced that it's good.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was convinced he was a great singer, statements of others to the contrary.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26723,
+      "word": "cooperation",
+      "normalized_word": "cooperation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "sự hợp tác",
+      "meaning_vi": "sự hợp tác",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26724,
+      "word": "cooperative",
+      "normalized_word": "cooperative",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "hợp tác",
+      "meaning_vi": "hợp tác",
+      "example_en": "The patient was rarely cooperative, and tended to refuse treatment.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a cooperative business enterprise",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26725,
+      "word": "cope",
+      "normalized_word": "cope",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/koup/",
+      "primary_meaning_vi": "áo lễ",
+      "meaning_vi": "áo lễ; bầu, vòm; áo khoác, màn; nắp khuôn đúc; coping; cái chao, cái chụp; khoác áo lễ (cho giáo sĩ); xây vòm; xây mái (một bức tường); lồi ra (như phần trên cùng của tường); đối phó, đương đầu",
+      "example_en": "I thought I would never be able to cope with life after the amputation, but I have learned how to be happy again.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26726,
+      "word": "copper",
+      "normalized_word": "copper",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kɔpə/",
+      "primary_meaning_vi": "cảnh sát",
+      "meaning_vi": "cảnh sát, mật thám, cớm; đồng (đỏ); đồng xu đồng; thùng nấu quần áo bằng đồng; chảo nấu đồng; mồm, miệng, cổ họng; giải khát, uống cho mát họng; bọc đồng (đáy tàu); mạ đồng; bằng đồng; có màu đồng; bọc đồng (đáy tàu)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26727,
+      "word": "coral",
+      "normalized_word": "coral",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kɔrəl/",
+      "primary_meaning_vi": "san hô",
+      "meaning_vi": "san hô; đồ chơi bằng san hô (của trẻ con); bọc trứng tôm hùm; hữu xạ tự nhiên hương; đỏ như san hô; san hô",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26728,
+      "word": "core",
+      "normalized_word": "core",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kɔ:/",
+      "primary_meaning_vi": "lõi",
+      "meaning_vi": "lõi, hạch (quả táo, quả lê...); điểm trung tâm, nòng cốt, hạt nhân; lõi dây thừng; nòng, lõi, ruột; đáy lòng, thâm tâm, nơi thầm kín nhất; lấy lõi ra, lấy nhân ra",
+      "example_en": "the core of an apple or quince",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the core of a square",
+          "example_vi": null
+        },
+        {
+          "example_en": "the core of a subject",
+          "example_vi": null
+        },
+        {
+          "example_en": "a floor panel with a Nomex honeycomb core",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26729,
+      "word": "cornet",
+      "normalized_word": "cornet",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔ:nit/",
+      "primary_meaning_vi": "kèn coonê",
+      "meaning_vi": "kèn coonê; người thổi kèn coonê; bao giấy hình loa (đựng lạc rang...); khăn trùm của bá tước (màu trắng); sĩ quan kỵ binh cầm cờ lệnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26730,
+      "word": "corona",
+      "normalized_word": "corona",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều coronae",
+      "phonetic": "/kə'rounə/",
+      "primary_meaning_vi": "tán mặt trăng",
+      "meaning_vi": "tán mặt trăng, mặt trời); đèn treo tròn (ở giữa vòm trần nhà thờ); điện hoa; vành; thân răng",
+      "example_en": "The recent surge of deaths due to corona reveals the shortcomings of our current healthcare system.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She caught corona last week.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

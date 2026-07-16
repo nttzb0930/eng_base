@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-142",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25411,
+      "word": "abstract",
+      "normalized_word": "abstract",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'æbstrækt/",
+      "primary_meaning_vi": "trừu tượng",
+      "meaning_vi": "trừu tượng; khó hiểu; lý thuyết không thực tế; số hư; bản tóm tắt (cuốn sách, luận án, bài diễn văn...); vật trừu tượng; trừu tượng hoá; làm đãng trí; rút ra, chiết ra, tách ra; lấy trộm, ăn cắp; tóm tắt, trích yếu",
+      "example_en": "He was wholly abstracted by other objects.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He abstracted out the square root function.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25412,
+      "word": "abundance",
+      "normalized_word": "abundance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'bʌndəns/",
+      "primary_meaning_vi": "sự nhiều",
+      "meaning_vi": "sự nhiều, sự giàu có, sự phong phú; sự thừa thãi, sự dư dật; sự dạt dào (tình cảm, cảm xúc); tình trạng rất đông người",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25413,
+      "word": "abundant",
+      "normalized_word": "abundant",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'bʌndənt/",
+      "primary_meaning_vi": "phong phú",
+      "meaning_vi": "phong phú, nhiều, chan chứa; thừa thãi, dư dật",
+      "example_en": "[W]ith their magical words they [poets] bring forth to our eyesight the abundant images and beauties of creation. — Leigh Hunt, On the Realities of Imagination",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Abundant in goodness and truth. — Exodus, 34:6",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25414,
+      "word": "academic",
+      "normalized_word": "academic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ækə'demik/",
+      "primary_meaning_vi": "học viện",
+      "meaning_vi": "học viện; (thuộc) trường đại học; viện hàn lâm; có tính chất học thuật; lý thuyết suông, trừu tượng, không thực tế; kinh viện; trường phái triết học Pla-ton; hội viên học viện; viện sĩ; người quá nệ kinh viện; lập luận hoàn toàn lý thuyết; mũ áo đại học (của giáo sư và học sinh đại học ở Anh)",
+      "example_en": "the academic sect or philosophy",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I have always had an academic interest in hacking.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'm more academic than athletic — I get lower marks in phys. ed. than in anything else.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25415,
+      "word": "academy",
+      "normalized_word": "academy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'kædəmi/",
+      "primary_meaning_vi": "học viện",
+      "meaning_vi": "học viện; viện hàn lâm; trường chuyên nghiệp; trường tư thục (dành cho trẻ em nhà giàu); vườn A-ca-đê-mi (khu vườn gần A-ten nơi Pla-ton giảng triết học); trường phái triết học Pla-ton; môn đệ của Pla-ton",
+      "example_en": "the military academy at West Point; a riding academy; the Academy of Music.; a music academy; a language academy",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25416,
+      "word": "accent",
+      "normalized_word": "accent",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'æksənt/",
+      "primary_meaning_vi": "trọng âm",
+      "meaning_vi": "trọng âm; dấu trọng âm; giọng; lời nói, lời lẽ; nhấn; dấu nhấn; sự phân biệt rõ rệt; đọc có trọng âm, nói có trọng âm, đọc nhấn mạnh; đánh dấu trọng âm; nhấn mạnh, nêu bật",
+      "example_en": "In the word \"careful\", the accent is placed on the first syllable.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "At this hotel, the accent is on luxury.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The name Cézanne is written with an acute accent.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a broad Irish accent",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25417,
+      "word": "acceptance",
+      "normalized_word": "acceptance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ək'septəbl/",
+      "primary_meaning_vi": "sự nhận",
+      "meaning_vi": "sự nhận, sự chấp nhận, sự chấp thuận; sự thừa nhận, sự công nhận; sự hoan nghênh, sự tán thưởng, sự tán thành; sự tin; sự nhận thanh toán (hoá đơn); hoá đơn được nhận thanh toán; sự thiên vị",
+      "example_en": "the acceptance of a gift, office, doctrine, etc.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25418,
+      "word": "access",
+      "normalized_word": "access",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ækses/",
+      "primary_meaning_vi": "lối vào",
+      "meaning_vi": "lối vào, cửa vào, đường vào; sự đến gần, sự cho vào, sự lui tới; quyền đến gần, quyền lui tới; sự dâng lên (nước triều); cơn; sự thêm vào, sự tăng lên",
+      "example_en": "an access of territory",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25419,
+      "word": "accessible",
+      "normalized_word": "accessible",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/æk'sesəbl/",
+      "primary_meaning_vi": "có thể tới được",
+      "meaning_vi": "có thể tới được, có thể gần được; dễ bị ảnh hưởng; dễ gần (người)",
+      "example_en": "an accessible town or mountain",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "accessible public transport",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25420,
+      "word": "accessory",
+      "normalized_word": "accessory",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/æk'sesəri/ (accessary) /æk'sesəri/",
+      "primary_meaning_vi": "đồ phụ tùng",
+      "meaning_vi": "đồ phụ tùng; vật phụ thuộc; đồ thêm vào; kẻ tòng phạm, kẻ a tòng, kẻ đồng loã; phụ, phụ vào, thêm vào; a tòng, đồng loã",
+      "example_en": "She was accessory to the riot.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the accessories of a mobile phone",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

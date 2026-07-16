@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-136",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25351,
+      "word": "photograph",
+      "normalized_word": "photograph",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'foutəgrɑ:f/",
+      "primary_meaning_vi": "ảnh",
+      "meaning_vi": "ảnh, bức ảnh; chụp ảnh (ai, cái gì); chụp ảnh",
+      "example_en": "She photographs well. The camera loves her.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25352,
+      "word": "photographer",
+      "normalized_word": "photographer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/fə'tɔgrəfə/",
+      "primary_meaning_vi": "nhà nhiếp ảnh",
+      "meaning_vi": "nhà nhiếp ảnh, thợ nhiếp ảnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25353,
+      "word": "photography",
+      "normalized_word": "photography",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/fə'tɔgrəfi/",
+      "primary_meaning_vi": "thuật nhiếp ảnh",
+      "meaning_vi": "thuật nhiếp ảnh, thuật chụp ảnh; sự chụp ảnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25354,
+      "word": "physical",
+      "normalized_word": "physical",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'fizikəl/",
+      "primary_meaning_vi": "vật chất",
+      "meaning_vi": "vật chất; khoa học tự nhiên; theo quy luật khoa học tự nhiên; vật lý; theo vật lý; thân thể, (thuộc) cơ thể, của thân thể; jerk",
+      "example_en": "How long has it been since your last physical?",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25355,
+      "word": "physically",
+      "normalized_word": "physically",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "về thân thể",
+      "meaning_vi": "về thân thể; theo luật tự nhiên",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25356,
+      "word": "pile",
+      "normalized_word": "pile",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/pail/",
+      "primary_meaning_vi": "cọc",
+      "meaning_vi": "cọc, cừ; cột nhà sàn; đóng cọc, đóng cừ (trên một miếng đất...); chồng, đống; giàn thiêu xác; của cải chất đống, tài sản; toà nhà đồ sộ, nhà khối đồ sộ; pin; lò phản ứng; chất đống, chồng chất, xếp thành chồng, tích luỹ (của cải...); dựng (súng) chụm lại với nhau; chất đầy, chất chứa, để đầy; va (tàu) vào đá ngần; làm cho (tàu) mắc cạn; cường điệu, làm quá đáng; làm cho có vẻ đau đớn bi đát hơn; mặt trái đồng tiền; mặt sấp đồng tiền; lông măng, lông mịn; len cừu; tuyết (nhung, thảm, hàng len dệt); dom; bệnh trĩ",
+      "example_en": "When we were looking for a new housemate, we put the nice woman on the \"maybe\" pile, and the annoying guy on the \"no\" pile",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a pile of shot",
+          "example_vi": null
+        },
+        {
+          "example_en": "He made a pile from that invention of his.",
+          "example_vi": null
+        },
+        {
+          "example_en": "They were piling up wood on the wheelbarrow.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25357,
+      "word": "pilgrim",
+      "normalized_word": "pilgrim",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'pilgrim/",
+      "primary_meaning_vi": "người hành hương",
+      "meaning_vi": "người hành hương; người du hành; người đang đi khỏi kiếp trầm luân",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25358,
+      "word": "pill",
+      "normalized_word": "pill",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/pil/",
+      "primary_meaning_vi": "viên thuốc",
+      "meaning_vi": "viên thuốc; điều cay đắng, điều tủi nhục, điều sỉ nhục; ;(đùa cợt) quả bóng đá, quả bóng quần vợt; đạn đại bác; trò chơi bi-a; thuốc chống thụ thai; biện pháp nửa vời không đem lại kết quả gì; cho voi uống thuốc gió; gild; bỏ phiếu đen, bỏ phiếu chống lại (để khai trừ ai); đánh bại; cướp bóc",
+      "example_en": "Jane went on the pill when she left for college.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Pilling is a skill rarely used by modern pharmacists.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She pills herself with all sorts of herbal medicines.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25359,
+      "word": "pilot",
+      "normalized_word": "pilot",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'pailət/",
+      "primary_meaning_vi": "hoa tiêu",
+      "meaning_vi": "hoa tiêu; người lái (máy bay), phi công; người dẫn đường (đi săn...); bỏ rơi một cố vấn đáng tin cậy; dẫn (tàu); lái (máy bay); dìu dắt (ai) qua những khó khăn",
+      "example_en": "We would like to run a pilot in your facility before rolling out the program citywide.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The pilot plant showed the need for major process changes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a pilot light",
+          "example_vi": null
+        },
+        {
+          "example_en": "a pilot vehicle",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25360,
+      "word": "pity",
+      "normalized_word": "pity",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'piti/",
+      "primary_meaning_vi": "lòng thương hại",
+      "meaning_vi": "lòng thương hại, lòng thương xót, lòng trắc ẩn; điều đáng thương hại, điều đáng tiếc; thương hại, thương xót, động lòng trắc ẩn đối với",
+      "example_en": "I can't feel any pity towards the gang, who got injured while attempting to break into a flat.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It's a pity you're feeling unwell because there's a party on tonight.",
+          "example_vi": null
+        },
+        {
+          "example_en": "You have got to pity the guy - he lost his wife, mother and job in the same month.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

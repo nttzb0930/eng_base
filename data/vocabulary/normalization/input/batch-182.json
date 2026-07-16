@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-182",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25811,
+      "word": "council",
+      "normalized_word": "council",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kaunsl/",
+      "primary_meaning_vi": "hội đồng",
+      "meaning_vi": "hội đồng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25812,
+      "word": "counselling",
+      "normalized_word": "counselling",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "lời hướng dẫn",
+      "meaning_vi": "lời hướng dẫn",
+      "example_en": "Psychiatrists, psychologists, social workers and other mental health professionals counsel clients.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I would counsel prudence in this matter.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25813,
+      "word": "count",
+      "normalized_word": "count",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kaunt/",
+      "primary_meaning_vi": "bá tước (không phải ở Anh) ((xem) earl)",
+      "meaning_vi": "bá tước (không phải ở Anh) ((xem) earl); sự đếm; sự tính; tổng số; điểm trong lời buộc tội; sự hoãn họp (khi chỉ có dưới 40 nghị viên có mặt) (nghị viện Anh) ((cũng) count-out); biết đã đếm được bao nhiêu; không nhớ đã đếm được bao nhiêu; đếm; tính; kể cả, gồm cả, tính đến, kể đến; coi là, coi như, chom là; đếm, tính; có giá trị; được kể đến, được tính đến, được chú ý đến, được quan tâm đến; đếm ngược từ 10 đến 0 (trong các cuộc thí nghiệm...); hy vọng ở, trông mong ở; để riêng ra, không tính vào (một tổng số); đếm ra, lấy ra; tuyên bố bị đo ván (quyền Anh) (sau khi đã đếm đến 10 mà chưa dậy được); hoãn họp (vì không đủ 40 người) (nghị viện Anh); cộng sổ, tính sổ; tính toán hơn thiệt; coi như đã chết (mất); rất (ít, không) có giá trị, rất (ít, không) có tác dụng; chicken",
+      "example_en": "Give the chairs a quick count to check if we have enough.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He has a 3–2 count with the bases loaded.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can you count to a hundred?",
+          "example_vi": null
+        },
+        {
+          "example_en": "There are three apples; count them.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25814,
+      "word": "countless",
+      "normalized_word": "countless",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kauntlis/",
+      "primary_meaning_vi": "vô số",
+      "meaning_vi": "vô số, vô kể, không đếm xuể",
+      "example_en": "There is a countless number of stars.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25815,
+      "word": "county",
+      "normalized_word": "county",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kaunti/",
+      "primary_meaning_vi": "hạt",
+      "meaning_vi": "hạt, tỉnh (đơn vị hành chính lớn nhất của Anh); nhân dân (một) hạt (tỉnh); đất (phong của) bá tước; thành phố (trên 50 000 dân) tương đương một hạt (về mặt hành chính); gia đình sống ở một hạt qua nhiều thế hệ; thị xã (nơi đóng cơ quan hành chính của hạt)",
+      "example_en": "He can't come; he's up in the county for agg assault.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25816,
+      "word": "courage",
+      "normalized_word": "courage",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kʌridʤ/",
+      "primary_meaning_vi": "sự can đảm",
+      "meaning_vi": "sự can đảm, sự dũng cảm, dũng khí; tính anh hùng (sau khi uống rượu); thực hiện quan điểm của mình; kiên quyết bảo vệ quan điểm của mình",
+      "example_en": "It takes a lot of courage to be successful in business.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He plucked up the courage to tell her how he felt.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25817,
+      "word": "courageous",
+      "normalized_word": "courageous",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kə'reidʤəs/",
+      "primary_meaning_vi": "can đảm",
+      "meaning_vi": "can đảm, dũng cảm",
+      "example_en": "the most courageous person I have ever met",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a courageous deed",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25818,
+      "word": "courgette",
+      "normalized_word": "courgette",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "bí xanh",
+      "meaning_vi": "bí xanh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25819,
+      "word": "craft",
+      "normalized_word": "craft",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/krɑ:ft/",
+      "primary_meaning_vi": "nghề",
+      "meaning_vi": "nghề, nghề thủ công; tập thể những người cùng nghề (thủ công); mưu mẹo, mánh khoé, ngón xảo quyệt, ngón lừa đảo; (hàng hải) tàu; máy bay; hội tam điểm",
+      "example_en": "The craft of writing plays.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He learned his craft as an apprentice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She represented the craft of brewers.",
+          "example_vi": null
+        },
+        {
+          "example_en": "state crafting; the process of crafting global policing",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25820,
+      "word": "crash",
+      "normalized_word": "crash",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kræʃ/",
+      "primary_meaning_vi": "vải thô (làm khăn lau...)",
+      "meaning_vi": "vải thô (làm khăn lau...); tiếng đổ vỡ loảng xoảng, tiếng va chạm loảng xoảng, tiếng đổ sầm, tiếng nổ (sét...); sự rơi (máy bay); sự đâm sầm vào (ô tô); sự phá sản, sự sụp đổ; rơi vỡ loảng xoảng, dổ ầm xuống; đâm sầm xuống, đâm sầm vào; phá sản; phá tan tành, phá vụn; ,  (từ lóng) lẻn vào không có giấy mời, lẻn vào không có vé; tràn vào, đọt nhập vào, xâm nhập",
+      "example_en": "After the lightning came the crash of thunder.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Nobody survived the plane crash",
+          "example_vi": null
+        },
+        {
+          "example_en": "My computer had a crash so I had to reboot it.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the stock market crash",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

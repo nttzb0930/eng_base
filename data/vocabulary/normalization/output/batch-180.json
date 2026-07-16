@@ -1,0 +1,680 @@
+{
+  "records": [
+    {
+      "id": 25791,
+      "quiz_meaning_vi": "hiến pháp",
+      "meaning_vi_clean": "hiến pháp; thể tạng; tính tình; sự thiết lập",
+      "examples_clean": [
+        {
+          "meaning_vi": "hiến pháp",
+          "example_en": "The country adopted a new constitution last year.",
+          "example_vi": "Đất nước đã thông qua một bản hiến pháp mới vào năm ngoái."
+        },
+        {
+          "meaning_vi": "hiến pháp",
+          "example_en": "The law is a violation of the constitution.",
+          "example_vi": "Đạo luật này là một sự vi phạm hiến pháp."
+        },
+        {
+          "meaning_vi": "hiến pháp",
+          "example_en": "The constitution guarantees freedom of speech.",
+          "example_vi": "Hiến pháp đảm bảo quyền tự do ngôn luận."
+        },
+        {
+          "meaning_vi": "hiến pháp",
+          "example_en": "They are debating changes to the national constitution.",
+          "example_vi": "Họ đang tranh luận về những thay đổi đối với hiến pháp quốc gia."
+        },
+        {
+          "meaning_vi": "thể tạng",
+          "example_en": "He has a strong constitution, so he should recover quickly.",
+          "example_vi": "Anh ấy có một thể tạng khỏe mạnh, vì vậy anh ấy sẽ hồi phục nhanh chóng."
+        },
+        {
+          "meaning_vi": "thể tạng",
+          "example_en": "The cold weather is bad for her delicate constitution.",
+          "example_vi": "Thời tiết lạnh không tốt cho thể tạng yếu ớt của cô ấy."
+        },
+        {
+          "meaning_vi": "tính tình",
+          "example_en": "She has a cheerful constitution that makes her popular.",
+          "example_vi": "Cô ấy có một tính tình vui vẻ khiến cô ấy được mọi người yêu mến."
+        },
+        {
+          "meaning_vi": "tính tình",
+          "example_en": "His nervous constitution makes him worry about everything.",
+          "example_vi": "Tính tình hay lo âu khiến anh ấy lo lắng về mọi thứ."
+        },
+        {
+          "meaning_vi": "sự thiết lập",
+          "example_en": "The constitution of the committee was finalized yesterday.",
+          "example_vi": "Sự thiết lập của ủy ban đã được hoàn tất vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "sự thiết lập",
+          "example_en": "The constitution of the new organization took several months.",
+          "example_vi": "Sự thiết lập của tổ chức mới đã mất vài tháng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lại nghĩa tiếng Việt cho ngắn gọn và phù hợp với từ loại danh từ. Bổ sung đủ 10 ví dụ minh họa cho các nghĩa.",
+      "word": "constitution",
+      "normalized_word": "constitution",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The country adopted a new constitution last year.",
+      "example_vi_clean": "Đất nước đã thông qua một bản hiến pháp mới vào năm ngoái."
+    },
+    {
+      "id": 25792,
+      "quiz_meaning_vi": "làm xây dựng",
+      "meaning_vi_clean": "làm xây dựng; đặt câu; vẽ hình; dựng vở kịch",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm xây dựng",
+          "example_en": "They plan to construct a new bridge across the river.",
+          "example_vi": "Họ dự định xây dựng một cây cầu mới bắc qua sông."
+        },
+        {
+          "meaning_vi": "làm xây dựng",
+          "example_en": "The company will construct a new office building downtown.",
+          "example_vi": "Công ty sẽ xây dựng một tòa nhà văn phòng mới ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "làm xây dựng",
+          "example_en": "It is difficult to construct a house on this rocky ground.",
+          "example_vi": "Thật khó để xây dựng một ngôi nhà trên nền đất đá này."
+        },
+        {
+          "meaning_vi": "làm xây dựng",
+          "example_en": "They constructed the wall using local stone.",
+          "example_vi": "Họ đã xây dựng bức tường bằng đá địa phương."
+        },
+        {
+          "meaning_vi": "đặt câu",
+          "example_en": "Students must construct a sentence using the new vocabulary.",
+          "example_vi": "Học sinh phải đặt một câu sử dụng từ vựng mới."
+        },
+        {
+          "meaning_vi": "đặt câu",
+          "example_en": "He struggled to construct a logical argument for his essay.",
+          "example_vi": "Anh ấy đã rất vất vả để đặt câu lập luận logic cho bài luận của mình."
+        },
+        {
+          "meaning_vi": "vẽ hình",
+          "example_en": "You need a compass to construct a perfect circle.",
+          "example_vi": "Bạn cần một chiếc compa để vẽ hình một vòng tròn hoàn hảo."
+        },
+        {
+          "meaning_vi": "vẽ hình",
+          "example_en": "The teacher showed us how to construct a triangle.",
+          "example_vi": "Giáo viên đã chỉ cho chúng tôi cách vẽ hình một tam giác."
+        },
+        {
+          "meaning_vi": "dựng vở kịch",
+          "example_en": "The director helped the students construct a play from the novel.",
+          "example_vi": "Đạo diễn đã giúp các học sinh dựng vở kịch từ cuốn tiểu thuyết."
+        },
+        {
+          "meaning_vi": "dựng vở kịch",
+          "example_en": "They managed to construct a play based on local history.",
+          "example_vi": "Họ đã xoay xở để dựng vở kịch dựa trên lịch sử địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung ví dụ để đảm bảo đủ 10 câu minh họa cho các nghĩa.",
+      "word": "construct",
+      "normalized_word": "construct",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They plan to construct a new bridge across the river.",
+      "example_vi_clean": "Họ dự định xây dựng một cây cầu mới bắc qua sông."
+    },
+    {
+      "id": 25793,
+      "quiz_meaning_vi": "sự xây dựng",
+      "meaning_vi_clean": "sự xây dựng; vật được xây dựng; cách đặt câu; sự giải thích",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "Construction of the new highway will begin next month.",
+          "example_vi": "Sự xây dựng đường cao tốc mới sẽ bắt đầu vào tháng tới."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "He has worked in the construction industry for ten years.",
+          "example_vi": "Anh ấy đã làm việc trong ngành xây dựng được mười năm."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "The construction of the dam caused many environmental issues.",
+          "example_vi": "Sự xây dựng con đập đã gây ra nhiều vấn đề môi trường."
+        },
+        {
+          "meaning_vi": "sự xây dựng",
+          "example_en": "Safety is the top priority in all construction projects.",
+          "example_vi": "An toàn là ưu tiên hàng đầu trong tất cả các dự án xây dựng."
+        },
+        {
+          "meaning_vi": "vật được xây dựng",
+          "example_en": "The stadium is a massive construction of steel and concrete.",
+          "example_vi": "Sân vận động là một vật được xây dựng đồ sộ bằng thép và bê tông."
+        },
+        {
+          "meaning_vi": "vật được xây dựng",
+          "example_en": "This ancient construction has survived for centuries.",
+          "example_vi": "Vật được xây dựng cổ xưa này đã tồn tại qua nhiều thế kỷ."
+        },
+        {
+          "meaning_vi": "cách đặt câu",
+          "example_en": "The teacher explained the complex construction of the sentence.",
+          "example_vi": "Giáo viên đã giải thích cách đặt câu phức tạp của câu này."
+        },
+        {
+          "meaning_vi": "cách đặt câu",
+          "example_en": "This grammatical construction is common in formal writing.",
+          "example_vi": "Cách đặt câu ngữ pháp này rất phổ biến trong văn viết trang trọng."
+        },
+        {
+          "meaning_vi": "sự giải thích",
+          "example_en": "His construction of the events was different from mine.",
+          "example_vi": "Sự giải thích của anh ấy về các sự kiện khác với tôi."
+        },
+        {
+          "meaning_vi": "sự giải thích",
+          "example_en": "There are several constructions of this legal clause.",
+          "example_vi": "Có nhiều sự giải thích khác nhau cho điều khoản pháp lý này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung ví dụ để đảm bảo đủ 10 câu minh họa cho các nghĩa.",
+      "word": "construction",
+      "normalized_word": "construction",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Construction of the new highway will begin next month.",
+      "example_vi_clean": "Sự xây dựng đường cao tốc mới sẽ bắt đầu vào tháng tới."
+    },
+    {
+      "id": 25794,
+      "quiz_meaning_vi": "thiêu",
+      "meaning_vi_clean": "thiêu; dùng; lãng phí; làm hao mòn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thiêu",
+          "example_en": "The fire consumed the entire forest in just a few hours.",
+          "example_vi": "Ngọn lửa đã thiêu rụi toàn bộ khu rừng chỉ trong vài giờ."
+        },
+        {
+          "meaning_vi": "thiêu",
+          "example_en": "The old house was consumed by flames.",
+          "example_vi": "Ngôi nhà cũ đã bị thiêu rụi bởi ngọn lửa."
+        },
+        {
+          "meaning_vi": "thiêu",
+          "example_en": "The wildfire consumed everything in its path.",
+          "example_vi": "Đám cháy rừng đã thiêu rụi mọi thứ trên đường đi của nó."
+        },
+        {
+          "meaning_vi": "thiêu",
+          "example_en": "The flames consumed the wooden structure quickly.",
+          "example_vi": "Ngọn lửa đã thiêu rụi cấu trúc gỗ một cách nhanh chóng."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "Our family consumes a lot of fresh vegetables every week.",
+          "example_vi": "Gia đình chúng tôi dùng rất nhiều rau tươi mỗi tuần."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "The new car consumes less fuel than the old one.",
+          "example_vi": "Chiếc xe mới dùng ít nhiên liệu hơn chiếc cũ."
+        },
+        {
+          "meaning_vi": "lãng phí",
+          "example_en": "Don't consume your time on useless activities.",
+          "example_vi": "Đừng lãng phí thời gian của bạn vào những hoạt động vô ích."
+        },
+        {
+          "meaning_vi": "lãng phí",
+          "example_en": "He consumed his savings on expensive hobbies.",
+          "example_vi": "Anh ấy đã lãng phí tiền tiết kiệm của mình vào những sở thích đắt đỏ."
+        },
+        {
+          "meaning_vi": "làm hao mòn",
+          "example_en": "The disease slowly consumed his strength.",
+          "example_vi": "Căn bệnh đã làm hao mòn sức lực của anh ấy một cách chậm rãi."
+        },
+        {
+          "meaning_vi": "làm hao mòn",
+          "example_en": "Years of hard work consumed her youthful energy.",
+          "example_vi": "Nhiều năm làm việc vất vả đã làm hao mòn năng lượng tuổi trẻ của cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung ví dụ để đảm bảo đủ 10 câu minh họa cho các nghĩa.",
+      "word": "consume",
+      "normalized_word": "consume",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The fire consumed the entire forest in just a few hours.",
+      "example_vi_clean": "Ngọn lửa đã thiêu rụi toàn bộ khu rừng chỉ trong vài giờ."
+    },
+    {
+      "id": 25795,
+      "quiz_meaning_vi": "người tiêu dùng",
+      "meaning_vi_clean": "người tiêu dùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "The new law protects the consumer.",
+          "example_vi": "Luật mới bảo vệ người tiêu dùng."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "Consumers are demanding better products.",
+          "example_vi": "Người tiêu dùng đang yêu cầu những sản phẩm tốt hơn."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "The company listens to consumer feedback.",
+          "example_vi": "Công ty lắng nghe phản hồi của người tiêu dùng."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "This product is designed for the average consumer.",
+          "example_vi": "Sản phẩm này được thiết kế cho người tiêu dùng bình thường."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "Today's consumer has many choices.",
+          "example_vi": "Người tiêu dùng ngày nay có nhiều lựa chọn."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "Consumers should compare prices before buying.",
+          "example_vi": "Người tiêu dùng nên so sánh giá trước khi mua."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "The survey measures consumer confidence.",
+          "example_vi": "Cuộc khảo sát đo lường niềm tin của người tiêu dùng."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "Higher prices can hurt the consumer.",
+          "example_vi": "Giá cao hơn có thể gây bất lợi cho người tiêu dùng."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "Every consumer has the right to clear information.",
+          "example_vi": "Mọi người tiêu dùng đều có quyền nhận thông tin rõ ràng."
+        },
+        {
+          "meaning_vi": "người tiêu dùng",
+          "example_en": "The website helps consumers make informed decisions.",
+          "example_vi": "Trang web giúp người tiêu dùng đưa ra quyết định có hiểu biết."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại nghĩa nguồn sai 'sự thờ ơ'; giữ nghĩa danh từ phổ biến và viết lại hai ví dụ lỗi.",
+      "word": "consumer",
+      "normalized_word": "consumer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The new law protects the consumer.",
+      "example_vi_clean": "Luật mới bảo vệ người tiêu dùng."
+    },
+    {
+      "id": 25796,
+      "quiz_meaning_vi": "sự tiêu thụ",
+      "meaning_vi_clean": "sự tiêu thụ; sự tiêu diệt; bệnh lao phổi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tiêu thụ",
+          "example_en": "The consumption of electricity increases in summer.",
+          "example_vi": "Sự tiêu thụ điện năng tăng lên vào mùa hè."
+        },
+        {
+          "meaning_vi": "sự tiêu thụ",
+          "example_en": "High sugar consumption is bad for your health.",
+          "example_vi": "Sự tiêu thụ đường cao không tốt cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "sự tiêu thụ",
+          "example_en": "The report analyzes the consumption of natural resources.",
+          "example_vi": "Báo cáo phân tích sự tiêu thụ tài nguyên thiên nhiên."
+        },
+        {
+          "meaning_vi": "sự tiêu thụ",
+          "example_en": "We need to reduce our daily consumption of water.",
+          "example_vi": "Chúng ta cần giảm sự tiêu thụ nước hàng ngày."
+        },
+        {
+          "meaning_vi": "sự tiêu thụ",
+          "example_en": "The consumption of meat has decreased in this country.",
+          "example_vi": "Sự tiêu thụ thịt đã giảm ở quốc gia này."
+        },
+        {
+          "meaning_vi": "sự tiêu diệt",
+          "example_en": "The consumption of the old documents was necessary for security.",
+          "example_vi": "Sự tiêu diệt các tài liệu cũ là cần thiết vì lý do an ninh."
+        },
+        {
+          "meaning_vi": "sự tiêu diệt",
+          "example_en": "The fire led to the total consumption of the barn.",
+          "example_vi": "Đám cháy dẫn đến sự tiêu diệt hoàn toàn nhà kho."
+        },
+        {
+          "meaning_vi": "sự tiêu diệt",
+          "example_en": "The consumption of the evidence was his main goal.",
+          "example_vi": "Sự tiêu diệt bằng chứng là mục tiêu chính của anh ta."
+        },
+        {
+          "meaning_vi": "bệnh lao phổi",
+          "example_en": "In the past, many people died from consumption.",
+          "example_vi": "Trong quá khứ, nhiều người đã chết vì bệnh lao phổi."
+        },
+        {
+          "meaning_vi": "bệnh lao phổi",
+          "example_en": "He was diagnosed with consumption in his youth.",
+          "example_vi": "Anh ấy đã được chẩn đoán mắc bệnh lao phổi khi còn trẻ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung ví dụ để đảm bảo đủ 10 câu minh họa cho các nghĩa.",
+      "word": "consumption",
+      "normalized_word": "consumption",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The consumption of electricity increases in summer.",
+      "example_vi_clean": "Sự tiêu thụ điện năng tăng lên vào mùa hè."
+    },
+    {
+      "id": 25797,
+      "quiz_meaning_vi": "chứa đựng",
+      "meaning_vi_clean": "chứa đựng; kiềm chế; ngăn lại; chia hết",
+      "examples_clean": [
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "This box contains many old photographs.",
+          "example_vi": "Chiếc hộp này chứa đựng nhiều bức ảnh cũ."
+        },
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "The book contains useful information for students.",
+          "example_vi": "Cuốn sách chứa đựng thông tin hữu ích cho học sinh."
+        },
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "Does this drink contain any sugar?",
+          "example_vi": "Đồ uống này có chứa đựng đường không?"
+        },
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "The letter contained a secret message.",
+          "example_vi": "Bức thư chứa đựng một thông điệp bí mật."
+        },
+        {
+          "meaning_vi": "kiềm chế",
+          "example_en": "She could hardly contain her excitement.",
+          "example_vi": "Cô ấy khó có thể kiềm chế sự phấn khích của mình."
+        },
+        {
+          "meaning_vi": "kiềm chế",
+          "example_en": "He tried to contain his anger during the meeting.",
+          "example_vi": "Anh ấy đã cố gắng kiềm chế cơn giận của mình trong cuộc họp."
+        },
+        {
+          "meaning_vi": "ngăn lại",
+          "example_en": "The police tried to contain the spread of the fire.",
+          "example_vi": "Cảnh sát đã cố gắng ngăn lại sự lan rộng của đám cháy."
+        },
+        {
+          "meaning_vi": "ngăn lại",
+          "example_en": "They built a dam to contain the flood waters.",
+          "example_vi": "Họ đã xây một con đập để ngăn lại nước lũ."
+        },
+        {
+          "meaning_vi": "chia hết",
+          "example_en": "Ten contains two as a factor.",
+          "example_vi": "Số mười chia hết cho hai."
+        },
+        {
+          "meaning_vi": "chia hết",
+          "example_en": "The number twelve contains three.",
+          "example_vi": "Số mười hai chia hết cho ba."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung ví dụ để đảm bảo đủ 10 câu minh họa cho các nghĩa.",
+      "word": "contain",
+      "normalized_word": "contain",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "This box contains many old photographs.",
+      "example_vi_clean": "Chiếc hộp này chứa đựng nhiều bức ảnh cũ."
+    },
+    {
+      "id": 25798,
+      "quiz_meaning_vi": "liên tục",
+      "meaning_vi_clean": "liên tục",
+      "examples_clean": [
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continual rain caused the river to overflow.",
+          "example_vi": "Cơn mưa liên tục đã khiến con sông bị tràn bờ."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "He was annoyed by the continual noise from the street.",
+          "example_vi": "Anh ấy cảm thấy khó chịu bởi tiếng ồn liên tục từ đường phố."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continual interruptions made it hard to work.",
+          "example_vi": "Những sự gián đoạn liên tục khiến công việc trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "She is tired of his continual complaints.",
+          "example_vi": "Cô ấy mệt mỏi với những lời phàn nàn liên tục của anh ta."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continual changes in the schedule are confusing.",
+          "example_vi": "Những thay đổi liên tục trong lịch trình thật khó hiểu."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "We need to stop this continual arguing.",
+          "example_vi": "Chúng ta cần dừng cuộc tranh cãi liên tục này lại."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continual pressure at work is affecting his health.",
+          "example_vi": "Áp lực liên tục tại nơi làm việc đang ảnh hưởng đến sức khỏe của anh ấy."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "His continual questions show his curiosity.",
+          "example_vi": "Những câu hỏi liên tục của anh ấy cho thấy sự tò mò của anh ấy."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continual growth of the city is impressive.",
+          "example_vi": "Sự phát triển liên tục của thành phố thật ấn tượng."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "They faced continual problems with the old machine.",
+          "example_vi": "Họ đã đối mặt với những vấn đề liên tục với chiếc máy cũ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung đủ 10 ví dụ.",
+      "word": "continual",
+      "normalized_word": "continual",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The continual rain caused the river to overflow.",
+      "example_vi_clean": "Cơn mưa liên tục đã khiến con sông bị tràn bờ."
+    },
+    {
+      "id": 25799,
+      "quiz_meaning_vi": "liên tục",
+      "meaning_vi_clean": "liên tục",
+      "examples_clean": [
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "It has been raining continually since this morning.",
+          "example_vi": "Trời đã mưa liên tục kể từ sáng nay."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "She talks continually about her new job.",
+          "example_vi": "Cô ấy nói liên tục về công việc mới của mình."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The phone has been ringing continually all day.",
+          "example_vi": "Điện thoại đã reo liên tục cả ngày."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "He is continually checking his watch.",
+          "example_vi": "Anh ấy liên tục kiểm tra đồng hồ của mình."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The baby is crying continually.",
+          "example_vi": "Đứa bé đang khóc liên tục."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "They are continually changing their plans.",
+          "example_vi": "Họ liên tục thay đổi kế hoạch của mình."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The machine runs continually for twenty-four hours.",
+          "example_vi": "Chiếc máy chạy liên tục trong hai mươi bốn giờ."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "She is continually improving her English skills.",
+          "example_vi": "Cô ấy liên tục cải thiện kỹ năng tiếng Anh của mình."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The wind blew continually throughout the night.",
+          "example_vi": "Gió thổi liên tục suốt đêm."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "He is continually making the same mistakes.",
+          "example_vi": "Anh ấy liên tục mắc phải những sai lầm tương tự."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung đủ 10 ví dụ.",
+      "word": "continually",
+      "normalized_word": "continually",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "It has been raining continually since this morning.",
+      "example_vi_clean": "Trời đã mưa liên tục kể từ sáng nay."
+    },
+    {
+      "id": 25800,
+      "quiz_meaning_vi": "liên tục",
+      "meaning_vi_clean": "liên tục; tiến hành; duy trì",
+      "examples_clean": [
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "There was a continuous hum from the engine.",
+          "example_vi": "Có một tiếng vo ve liên tục phát ra từ động cơ."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continuous noise made it hard to sleep.",
+          "example_vi": "Tiếng ồn liên tục khiến tôi khó ngủ."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "We need a continuous supply of water.",
+          "example_vi": "Chúng ta cần một nguồn cung cấp nước liên tục."
+        },
+        {
+          "meaning_vi": "liên tục",
+          "example_en": "The continuous rain caused a flood.",
+          "example_vi": "Cơn mưa liên tục đã gây ra lũ lụt."
+        },
+        {
+          "meaning_vi": "tiến hành",
+          "example_en": "The continuous research is helping us find a cure.",
+          "example_vi": "Việc tiến hành nghiên cứu đang giúp chúng tôi tìm ra phương pháp chữa trị."
+        },
+        {
+          "meaning_vi": "tiến hành",
+          "example_en": "Continuous efforts are needed to solve this problem.",
+          "example_vi": "Việc tiến hành các nỗ lực là cần thiết để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "tiến hành",
+          "example_en": "The continuous development of the software is important.",
+          "example_vi": "Việc tiến hành phát triển phần mềm là rất quan trọng."
+        },
+        {
+          "meaning_vi": "duy trì",
+          "example_en": "We need continuous support from our partners.",
+          "example_vi": "Chúng ta cần sự duy trì hỗ trợ từ các đối tác."
+        },
+        {
+          "meaning_vi": "duy trì",
+          "example_en": "The continuous focus on quality is our goal.",
+          "example_vi": "Việc duy trì sự tập trung vào chất lượng là mục tiêu của chúng tôi."
+        },
+        {
+          "meaning_vi": "duy trì",
+          "example_en": "Continuous communication is key to our success.",
+          "example_vi": "Việc duy trì giao tiếp là chìa khóa cho sự thành công của chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho ngắn gọn. Bổ sung ví dụ để đảm bảo đủ 10 câu minh họa cho các nghĩa.",
+      "word": "continuous",
+      "normalized_word": "continuous",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "There was a continuous hum from the engine.",
+      "example_vi_clean": "Có một tiếng vo ve liên tục phát ra từ động cơ."
+    }
+  ],
+  "audit": {
+    "source": "manual-review-override",
+    "overrideFile": "data\\vocabulary\\normalization\\manual-overrides\\review-required-15.json",
+    "reason": "Rà soát cục bộ 15 record bị AI gắn review_required; giữ nguyên word, POS và CEFR nguồn, loại nghĩa/ví dụ sai từ loại.",
+    "databaseUpdated": false
+  }
+}

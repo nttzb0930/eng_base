@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-249",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26481,
+      "word": "benevolent",
+      "normalized_word": "benevolent",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/bi'nevələnt/",
+      "primary_meaning_vi": "nhân từ",
+      "meaning_vi": "nhân từ, nhân đức, từ thiện, thương người; rộng lượng",
+      "example_en": "Chinese and Eastern mythologies describe dragons as benevolent.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26482,
+      "word": "berry",
+      "normalized_word": "berry",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'beri/",
+      "primary_meaning_vi": "quả mọng",
+      "meaning_vi": "quả mọng; hột (cà phê...); trứng cá, trứng tôm; ,  (từ lóng) đồng đô la; có quả mọng; hái quả mọng",
+      "example_en": "On summer days Grandma used to take us berrying, whether we wanted to go or not.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26483,
+      "word": "bestow",
+      "normalized_word": "bestow",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bi'stou/",
+      "primary_meaning_vi": "bestow on",
+      "meaning_vi": "bestow on,  upon tặng cho, ban cho, dành cho; để, đặt; cho trọ; tìm chỗ ở cho",
+      "example_en": "Medals were bestowed on the winning team.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26484,
+      "word": "betray",
+      "normalized_word": "betray",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bi'trei/",
+      "primary_meaning_vi": "bội phản đem nộp cho",
+      "meaning_vi": "bội phản đem nộp cho, bội phản đem giao cho; phản bội; phụ bạc; tiết lộ, để lộ ra; lừa dối; phụ (lòng tin); dẫn vào (con đường lầm lạc, đến chỗ nguy hiểm...)",
+      "example_en": "an officer betrayed the city",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My eyes have been betraying me since I turned sixty.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Though he had lived in England for many years, a faint accent betrayed his Swedish origin.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26485,
+      "word": "bewilder",
+      "normalized_word": "bewilder",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bi'wildə/",
+      "primary_meaning_vi": "làm bối rối",
+      "meaning_vi": "làm bối rối, làm hoang mang, làm lúng túng; làm ngơ ngác",
+      "example_en": "All the different possible options may bewilder us.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26486,
+      "word": "bewilderment",
+      "normalized_word": "bewilderment",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'wildəmənt/",
+      "primary_meaning_vi": "sự bối rôi",
+      "meaning_vi": "sự bối rôi, sự hoang mang",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26487,
+      "word": "bid",
+      "normalized_word": "bid",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "(bất qui tắc) động từ bad,  bade,  bid; bidden,  bid",
+      "phonetic": "/bid/",
+      "primary_meaning_vi": "sự đặt giá",
+      "meaning_vi": "sự đặt giá, sự trả giá (trong một cuộc bán đấu giá); sự bỏ thầu; sự mời; sự xướng bài (bài brit); tìm cách để đạt được, cố gắng để được; đặt giá; thầu; mời chào; công bố; xướng bài (bài brit); ,  (thơ ca); (từ cổ,nghĩa cổ) bảo, ra lệnh, truyền lệnh; trả hơn tiền; tăng giá; hứa hẹn; có triển vọng",
+      "example_en": "He bade me come in.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She was bidden to the wedding.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Have you ever bid in an auction?",
+          "example_vi": null
+        },
+        {
+          "example_en": "She bid £2000 for the Persian carpet.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26488,
+      "word": "bidding",
+      "normalized_word": "bidding",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bidiɳ/",
+      "primary_meaning_vi": "sự đặt giá",
+      "meaning_vi": "sự đặt giá; sự mời; xự xướng bài (bài brit); mệnh lệnh; tuân lệnh ai; vâng lệnh ai",
+      "example_en": "He bade me come in.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She was bidden to the wedding.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Have you ever bid in an auction?",
+          "example_vi": null
+        },
+        {
+          "example_en": "She bid £2000 for the Persian carpet.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26489,
+      "word": "bikini",
+      "normalized_word": "bikini",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "áo tắm hai mảnh",
+      "meaning_vi": "áo tắm hai mảnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26490,
+      "word": "billion",
+      "normalized_word": "billion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'biljən/",
+      "primary_meaning_vi": "nghìn tỉ",
+      "meaning_vi": "nghìn tỉ; Pháp tỉ nghìn triệu",
+      "example_en": "There were billions of people at the concert.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25241,
+      "quiz_meaning_vi": "tối đa",
+      "meaning_vi_clean": "tối đa",
+      "examples_clean": [
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "He pushed himself to the max.",
+          "example_vi": "Anh ấy đã nỗ lực hết sức mình."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "The car can reach a speed of 200 km/h at the max.",
+          "example_vi": "Chiếc xe có thể đạt tốc độ tối đa 200 km/h."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "We have a budget of five hundred dollars at the max.",
+          "example_vi": "Chúng tôi có ngân sách tối đa là năm trăm đô la."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "You should try to get the max out of your time.",
+          "example_vi": "Bạn nên cố gắng tận dụng tối đa thời gian của mình."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "The room holds fifty people at the max.",
+          "example_vi": "Căn phòng chứa tối đa năm mươi người."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "He was working at the max of his ability.",
+          "example_vi": "Anh ấy đang làm việc với khả năng tối đa của mình."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "The max weight for this elevator is 500kg.",
+          "example_vi": "Trọng lượng tối đa cho thang máy này là 500kg."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "She wants to get the max benefit from the course.",
+          "example_vi": "Cô ấy muốn nhận được lợi ích tối đa từ khóa học."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "The max temperature today will be thirty degrees.",
+          "example_vi": "Nhiệt độ tối đa hôm nay sẽ là ba mươi độ."
+        },
+        {
+          "meaning_vi": "tối đa",
+          "example_en": "We need to reach the max efficiency in our work.",
+          "example_vi": "Chúng ta cần đạt hiệu quả tối đa trong công việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa tối đa, bổ sung 10 ví dụ phù hợp.",
+      "word": "max",
+      "normalized_word": "max",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He pushed himself to the max.",
+      "example_vi_clean": "Anh ấy đã nỗ lực hết sức mình."
+    },
+    {
+      "id": 25242,
+      "quiz_meaning_vi": "hèn hạ",
+      "meaning_vi_clean": "hèn hạ; tầm thường; bủn xỉn",
+      "examples_clean": [
+        {
+          "meaning_vi": "hèn hạ",
+          "example_en": "It was a mean trick to play on her.",
+          "example_vi": "Đó là một trò đùa hèn hạ đối với cô ấy."
+        },
+        {
+          "meaning_vi": "hèn hạ",
+          "example_en": "He felt mean for not helping his friend.",
+          "example_vi": "Anh ấy cảm thấy hèn hạ vì đã không giúp đỡ bạn mình."
+        },
+        {
+          "meaning_vi": "hèn hạ",
+          "example_en": "Don't be so mean to your little brother.",
+          "example_vi": "Đừng hèn hạ với em trai của bạn như vậy."
+        },
+        {
+          "meaning_vi": "hèn hạ",
+          "example_en": "It is mean to laugh at someone's mistakes.",
+          "example_vi": "Thật hèn hạ khi cười nhạo lỗi lầm của người khác."
+        },
+        {
+          "meaning_vi": "tầm thường",
+          "example_en": "They lived in a mean house on the edge of town.",
+          "example_vi": "Họ sống trong một ngôi nhà tầm thường ở rìa thị trấn."
+        },
+        {
+          "meaning_vi": "tầm thường",
+          "example_en": "He came from a mean background.",
+          "example_vi": "Anh ấy xuất thân từ một gia đình tầm thường."
+        },
+        {
+          "meaning_vi": "tầm thường",
+          "example_en": "The room was small and mean.",
+          "example_vi": "Căn phòng nhỏ bé và tầm thường."
+        },
+        {
+          "meaning_vi": "bủn xỉn",
+          "example_en": "He is too mean to buy a gift for his wife.",
+          "example_vi": "Anh ta quá bủn xỉn để mua quà cho vợ mình."
+        },
+        {
+          "meaning_vi": "bủn xỉn",
+          "example_en": "She is known for being mean with money.",
+          "example_vi": "Cô ấy nổi tiếng là người bủn xỉn về tiền bạc."
+        },
+        {
+          "meaning_vi": "bủn xỉn",
+          "example_en": "Don't be mean with the sugar in the coffee.",
+          "example_vi": "Đừng bủn xỉn với đường trong cà phê."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang tính từ, chọn nghĩa phù hợp cấp A2.",
+      "word": "mean",
+      "normalized_word": "mean",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was a mean trick to play on her.",
+      "example_vi_clean": "Đó là một trò đùa hèn hạ đối với cô ấy."
+    },
+    {
+      "id": 25243,
+      "quiz_meaning_vi": "nghĩa",
+      "meaning_vi_clean": "nghĩa; ý nghĩa",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghĩa",
+          "example_en": "What is the meaning of this word?",
+          "example_vi": "Nghĩa của từ này là gì?"
+        },
+        {
+          "meaning_vi": "nghĩa",
+          "example_en": "I don't understand the meaning of his gesture.",
+          "example_vi": "Tôi không hiểu nghĩa cử chỉ của anh ấy."
+        },
+        {
+          "meaning_vi": "nghĩa",
+          "example_en": "The dictionary explains the meaning of words.",
+          "example_vi": "Từ điển giải thích nghĩa của các từ."
+        },
+        {
+          "meaning_vi": "nghĩa",
+          "example_en": "Can you tell me the meaning of this sentence?",
+          "example_vi": "Bạn có thể cho tôi biết nghĩa của câu này không?"
+        },
+        {
+          "meaning_vi": "ý nghĩa",
+          "example_en": "Her work has a deep meaning for many people.",
+          "example_vi": "Công việc của cô ấy có ý nghĩa sâu sắc đối với nhiều người."
+        },
+        {
+          "meaning_vi": "ý nghĩa",
+          "example_en": "Life has a special meaning to everyone.",
+          "example_vi": "Cuộc sống có một ý nghĩa đặc biệt đối với mỗi người."
+        },
+        {
+          "meaning_vi": "ý nghĩa",
+          "example_en": "The song has a lot of meaning for me.",
+          "example_vi": "Bài hát này có rất nhiều ý nghĩa đối với tôi."
+        },
+        {
+          "meaning_vi": "ý nghĩa",
+          "example_en": "We are searching for the true meaning of happiness.",
+          "example_vi": "Chúng ta đang tìm kiếm ý nghĩa thực sự của hạnh phúc."
+        },
+        {
+          "meaning_vi": "ý nghĩa",
+          "example_en": "His smile was full of meaning.",
+          "example_vi": "Nụ cười của anh ấy đầy ý nghĩa."
+        },
+        {
+          "meaning_vi": "ý nghĩa",
+          "example_en": "The project has great meaning for our future.",
+          "example_vi": "Dự án có ý nghĩa lớn đối với tương lai của chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ sang danh từ, bổ sung ví dụ.",
+      "word": "meaning",
+      "normalized_word": "meaning",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "What is the meaning of this word?",
+      "example_vi_clean": "Nghĩa của từ này là gì?"
+    },
+    {
+      "id": 25244,
+      "quiz_meaning_vi": "huy chương",
+      "meaning_vi_clean": "huy chương",
+      "examples_clean": [
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "She won a gold medal in the race.",
+          "example_vi": "Cô ấy đã giành huy chương vàng trong cuộc đua."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "He proudly displayed his medal on the wall.",
+          "example_vi": "Anh ấy tự hào treo huy chương của mình trên tường."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "The athlete received a medal for his performance.",
+          "example_vi": "Vận động viên đã nhận được huy chương cho màn trình diễn của mình."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "They were awarded a medal for bravery.",
+          "example_vi": "Họ đã được trao huy chương vì lòng dũng cảm."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "She has a collection of medals from various competitions.",
+          "example_vi": "Cô ấy có một bộ sưu tập huy chương từ nhiều cuộc thi khác nhau."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "The medal is made of pure silver.",
+          "example_vi": "Huy chương được làm bằng bạc nguyên chất."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "He hopes to win a medal at the next Olympics.",
+          "example_vi": "Anh ấy hy vọng sẽ giành được huy chương tại Thế vận hội tiếp theo."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "The medal was pinned to his jacket.",
+          "example_vi": "Huy chương được ghim vào áo khoác của anh ấy."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "She earned a bronze medal in the swimming event.",
+          "example_vi": "Cô ấy đã giành huy chương đồng trong nội dung bơi lội."
+        },
+        {
+          "meaning_vi": "huy chương",
+          "example_en": "The medal represents his hard work and dedication.",
+          "example_vi": "Huy chương đại diện cho sự chăm chỉ và cống hiến của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa huy chương, bổ sung ví dụ.",
+      "word": "medal",
+      "normalized_word": "medal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She won a gold medal in the race.",
+      "example_vi_clean": "Cô ấy đã giành huy chương vàng trong cuộc đua."
+    },
+    {
+      "id": 25245,
+      "quiz_meaning_vi": "dưa tây",
+      "meaning_vi_clean": "dưa tây",
+      "examples_clean": [
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "I bought a fresh melon at the market.",
+          "example_vi": "Tôi đã mua một quả dưa tây tươi ở chợ."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "She sliced the melon for breakfast.",
+          "example_vi": "Cô ấy đã cắt dưa tây cho bữa sáng."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "This melon is very sweet and juicy.",
+          "example_vi": "Quả dưa tây này rất ngọt và mọng nước."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "We enjoyed a cold melon on a hot day.",
+          "example_vi": "Chúng tôi đã thưởng thức dưa tây mát lạnh vào một ngày nóng."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "He grew some melons in his garden.",
+          "example_vi": "Anh ấy đã trồng vài quả dưa tây trong vườn của mình."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "The melon salad is a healthy dessert.",
+          "example_vi": "Món salad dưa tây là một món tráng miệng lành mạnh."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "She prefers melon over other fruits.",
+          "example_vi": "Cô ấy thích dưa tây hơn các loại trái cây khác."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "The smell of the ripe melon was delicious.",
+          "example_vi": "Mùi của quả dưa tây chín thật thơm ngon."
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "Can you pick a good melon for me?",
+          "example_vi": "Bạn có thể chọn một quả dưa tây ngon cho tôi không?"
+        },
+        {
+          "meaning_vi": "dưa tây",
+          "example_en": "They served melon with ham as an appetizer.",
+          "example_vi": "Họ phục vụ dưa tây với giăm bông như một món khai vị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa dưa tây, bổ sung ví dụ.",
+      "word": "melon",
+      "normalized_word": "melon",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought a fresh melon at the market.",
+      "example_vi_clean": "Tôi đã mua một quả dưa tây tươi ở chợ."
+    },
+    {
+      "id": 25246,
+      "quiz_meaning_vi": "thành viên",
+      "meaning_vi_clean": "thành viên; bộ phận",
+      "examples_clean": [
+        {
+          "meaning_vi": "thành viên",
+          "example_en": "She is a member of the local club.",
+          "example_vi": "Cô ấy là thành viên của câu lạc bộ địa phương."
+        },
+        {
+          "meaning_vi": "thành viên",
+          "example_en": "Every member of the team worked hard.",
+          "example_vi": "Mỗi thành viên trong đội đều làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "thành viên",
+          "example_en": "He is a new member of the committee.",
+          "example_vi": "Anh ấy là thành viên mới của ủy ban."
+        },
+        {
+          "meaning_vi": "thành viên",
+          "example_en": "We need more members for our group.",
+          "example_vi": "Chúng tôi cần thêm thành viên cho nhóm của mình."
+        },
+        {
+          "meaning_vi": "thành viên",
+          "example_en": "The club has over a hundred members.",
+          "example_vi": "Câu lạc bộ có hơn một trăm thành viên."
+        },
+        {
+          "meaning_vi": "bộ phận",
+          "example_en": "The heart is a vital member of the body.",
+          "example_vi": "Tim là một bộ phận quan trọng của cơ thể."
+        },
+        {
+          "meaning_vi": "bộ phận",
+          "example_en": "The structural members of the building are made of steel.",
+          "example_vi": "Các bộ phận kết cấu của tòa nhà được làm bằng thép."
+        },
+        {
+          "meaning_vi": "bộ phận",
+          "example_en": "Each member of the machine has a specific function.",
+          "example_vi": "Mỗi bộ phận của cỗ máy có một chức năng cụ thể."
+        },
+        {
+          "meaning_vi": "bộ phận",
+          "example_en": "The bridge is supported by several strong members.",
+          "example_vi": "Cây cầu được hỗ trợ bởi một vài bộ phận chắc chắn."
+        },
+        {
+          "meaning_vi": "bộ phận",
+          "example_en": "We checked every member of the assembly.",
+          "example_vi": "Chúng tôi đã kiểm tra từng bộ phận của bộ lắp ráp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành thành viên, bổ sung ví dụ.",
+      "word": "member",
+      "normalized_word": "member",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is a member of the local club.",
+      "example_vi_clean": "Cô ấy là thành viên của câu lạc bộ địa phương."
+    },
+    {
+      "id": 25247,
+      "quiz_meaning_vi": "sự đề cập",
+      "meaning_vi_clean": "sự đề cập; sự kể ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "The mention of his name made her blush.",
+          "example_vi": "Sự đề cập đến tên anh ấy làm cô ấy đỏ mặt."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "He made no mention of the incident.",
+          "example_vi": "Anh ấy không hề có sự đề cập nào đến vụ việc."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "Her book deserves a special mention.",
+          "example_vi": "Cuốn sách của cô ấy xứng đáng có một sự đề cập đặc biệt."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "The report includes a brief mention of the problem.",
+          "example_vi": "Báo cáo bao gồm một sự đề cập ngắn gọn về vấn đề."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "Even a small mention can help our cause.",
+          "example_vi": "Ngay cả một sự đề cập nhỏ cũng có thể giúp ích cho mục tiêu của chúng ta."
+        },
+        {
+          "meaning_vi": "sự kể ra",
+          "example_en": "The mention of all the names took a long time.",
+          "example_vi": "Sự kể ra tất cả các tên đã mất nhiều thời gian."
+        },
+        {
+          "meaning_vi": "sự kể ra",
+          "example_en": "His mention of the facts was very clear.",
+          "example_vi": "Sự kể ra các sự kiện của anh ấy rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự kể ra",
+          "example_en": "She avoided the mention of her past.",
+          "example_vi": "Cô ấy tránh sự kể ra về quá khứ của mình."
+        },
+        {
+          "meaning_vi": "sự kể ra",
+          "example_en": "The mention of these details is important.",
+          "example_vi": "Sự kể ra những chi tiết này là quan trọng."
+        },
+        {
+          "meaning_vi": "sự kể ra",
+          "example_en": "He made a quick mention of the main points.",
+          "example_vi": "Anh ấy đã có sự kể ra nhanh chóng về các điểm chính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, bổ sung ví dụ.",
+      "word": "mention",
+      "normalized_word": "mention",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The mention of his name made her blush.",
+      "example_vi_clean": "Sự đề cập đến tên anh ấy làm cô ấy đỏ mặt."
+    },
+    {
+      "id": 25248,
+      "quiz_meaning_vi": "thực đơn",
+      "meaning_vi_clean": "thực đơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "Can I see the menu, please?",
+          "example_vi": "Cho tôi xem thực đơn được không?"
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "The restaurant has a very long menu.",
+          "example_vi": "Nhà hàng có một thực đơn rất dài."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "There are many healthy options on the menu.",
+          "example_vi": "Có nhiều lựa chọn lành mạnh trên thực đơn."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "She is looking at the menu to choose a dish.",
+          "example_vi": "Cô ấy đang xem thực đơn để chọn một món ăn."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "The lunch menu is cheaper than the dinner menu.",
+          "example_vi": "Thực đơn bữa trưa rẻ hơn thực đơn bữa tối."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "They change the menu every season.",
+          "example_vi": "Họ thay đổi thực đơn theo từng mùa."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "Is there a children's menu available?",
+          "example_vi": "Có thực đơn cho trẻ em không?"
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "He chose a steak from the menu.",
+          "example_vi": "Anh ấy đã chọn một món bít tết từ thực đơn."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "The menu is written in French.",
+          "example_vi": "Thực đơn được viết bằng tiếng Pháp."
+        },
+        {
+          "meaning_vi": "thực đơn",
+          "example_en": "We decided to order everything on the menu.",
+          "example_vi": "Chúng tôi quyết định gọi tất cả mọi thứ trên thực đơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa thực đơn, bổ sung ví dụ.",
+      "word": "menu",
+      "normalized_word": "menu",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Can I see the menu, please?",
+      "example_vi_clean": "Cho tôi xem thực đơn được không?"
+    },
+    {
+      "id": 25249,
+      "quiz_meaning_vi": "kim loại",
+      "meaning_vi_clean": "kim loại",
+      "examples_clean": [
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Gold is a precious metal.",
+          "example_vi": "Vàng là một loại kim loại quý."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The box is made of metal.",
+          "example_vi": "Chiếc hộp được làm bằng kim loại."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Iron is a common metal used in construction.",
+          "example_vi": "Sắt là một loại kim loại phổ biến được sử dụng trong xây dựng."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The metal door was very heavy.",
+          "example_vi": "Cánh cửa kim loại rất nặng."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "They recycle metal to protect the environment.",
+          "example_vi": "Họ tái chế kim loại để bảo vệ môi trường."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The metal frame is very strong.",
+          "example_vi": "Khung kim loại rất chắc chắn."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Copper is a metal that conducts electricity well.",
+          "example_vi": "Đồng là một loại kim loại dẫn điện tốt."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The metal surface was cold to the touch.",
+          "example_vi": "Bề mặt kim loại lạnh khi chạm vào."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "He works with metal in his workshop.",
+          "example_vi": "Anh ấy làm việc với kim loại trong xưởng của mình."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The metal pipes are rusting.",
+          "example_vi": "Các ống kim loại đang bị gỉ sét."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, bổ sung ví dụ.",
+      "word": "metal",
+      "normalized_word": "metal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Gold is a precious metal.",
+      "example_vi_clean": "Vàng là một loại kim loại quý."
+    },
+    {
+      "id": 25250,
+      "quiz_meaning_vi": "cái đo",
+      "meaning_vi_clean": "cái đo; đồng hồ đo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái đo",
+          "example_en": "The meter shows how much electricity we used.",
+          "example_vi": "Cái đo cho thấy chúng ta đã sử dụng bao nhiêu điện."
+        },
+        {
+          "meaning_vi": "cái đo",
+          "example_en": "He checked the gas meter this morning.",
+          "example_vi": "Anh ấy đã kiểm tra cái đo khí ga sáng nay."
+        },
+        {
+          "meaning_vi": "cái đo",
+          "example_en": "The water meter is located outside the house.",
+          "example_vi": "Cái đo nước nằm ở bên ngoài ngôi nhà."
+        },
+        {
+          "meaning_vi": "cái đo",
+          "example_en": "The parking meter is broken.",
+          "example_vi": "Cái đo đỗ xe bị hỏng rồi."
+        },
+        {
+          "meaning_vi": "cái đo",
+          "example_en": "We need to read the meter every month.",
+          "example_vi": "Chúng ta cần đọc cái đo mỗi tháng."
+        },
+        {
+          "meaning_vi": "đồng hồ đo",
+          "example_en": "The speedometer is a type of meter.",
+          "example_vi": "Đồng hồ đo tốc độ là một loại đồng hồ đo."
+        },
+        {
+          "meaning_vi": "đồng hồ đo",
+          "example_en": "The pressure meter is showing a high reading.",
+          "example_vi": "Đồng hồ đo áp suất đang hiển thị chỉ số cao."
+        },
+        {
+          "meaning_vi": "đồng hồ đo",
+          "example_en": "He installed a new meter for the heating system.",
+          "example_vi": "Anh ấy đã lắp đặt một đồng hồ đo mới cho hệ thống sưởi."
+        },
+        {
+          "meaning_vi": "đồng hồ đo",
+          "example_en": "The temperature meter is very accurate.",
+          "example_vi": "Đồng hồ đo nhiệt độ rất chính xác."
+        },
+        {
+          "meaning_vi": "đồng hồ đo",
+          "example_en": "Check the meter to see if the tank is full.",
+          "example_vi": "Kiểm tra đồng hồ đo để xem bình đã đầy chưa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa cái đo, bổ sung ví dụ.",
+      "word": "meter",
+      "normalized_word": "meter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The meter shows how much electricity we used.",
+      "example_vi_clean": "Cái đo cho thấy chúng ta đã sử dụng bao nhiêu điện."
+    }
+  ]
+}

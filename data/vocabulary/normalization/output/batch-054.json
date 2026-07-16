@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24531,
+      "quiz_meaning_vi": "núi",
+      "meaning_vi_clean": "núi; đống to",
+      "examples_clean": [
+        {
+          "meaning_vi": "núi",
+          "example_en": "We spent the weekend hiking in the mountains.",
+          "example_vi": "Chúng tôi đã dành cuối tuần để đi bộ đường dài trên núi."
+        },
+        {
+          "meaning_vi": "núi",
+          "example_en": "The high mountain top was covered in snow.",
+          "example_vi": "Đỉnh núi cao được bao phủ bởi tuyết."
+        },
+        {
+          "meaning_vi": "núi",
+          "example_en": "They enjoyed a scenic mountain view from the hotel.",
+          "example_vi": "Họ đã tận hưởng khung cảnh núi non hùng vĩ từ khách sạn."
+        },
+        {
+          "meaning_vi": "núi",
+          "example_en": "We stayed at a cozy mountain lodge for the night.",
+          "example_vi": "Chúng tôi đã ở lại một nhà nghỉ trên núi ấm cúng qua đêm."
+        },
+        {
+          "meaning_vi": "đống to",
+          "example_en": "He was a real mountain of a man, standing seven feet tall.",
+          "example_vi": "Anh ấy là một người đàn ông to lớn như một ngọn núi, cao bảy feet."
+        },
+        {
+          "meaning_vi": "núi",
+          "example_en": "The mountain goat climbed the steep rocks easily.",
+          "example_vi": "Con dê núi leo lên những tảng đá dốc một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "núi",
+          "example_en": "They explored several mountain ranges during their trip.",
+          "example_vi": "Họ đã khám phá vài dãy núi trong chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "đống to",
+          "example_en": "There was a mountain of paperwork waiting for me on my desk.",
+          "example_vi": "Có một đống giấy tờ khổng lồ đang chờ tôi trên bàn làm việc."
+        },
+        {
+          "meaning_vi": "núi",
+          "example_en": "The mountain air is very fresh and clean.",
+          "example_vi": "Không khí trên núi rất trong lành và sạch sẽ."
+        },
+        {
+          "meaning_vi": "đống to",
+          "example_en": "She had a mountain of laundry to wash after the vacation.",
+          "example_vi": "Cô ấy có một đống quần áo khổng lồ cần giặt sau kỳ nghỉ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là núi, bổ sung nghĩa đống to. Loại bỏ các nghĩa không phù hợp cấp A1.",
+      "word": "mountain",
+      "normalized_word": "mountain",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We spent the weekend hiking in the mountains.",
+      "example_vi_clean": "Chúng tôi đã dành cuối tuần để đi bộ đường dài trên núi."
+    },
+    {
+      "id": 24532,
+      "quiz_meaning_vi": "chuột",
+      "meaning_vi_clean": "chuột",
+      "examples_clean": [
+        {
+          "meaning_vi": "chuột",
+          "example_en": "The cat chased the mouse across the kitchen floor.",
+          "example_vi": "Con mèo đuổi theo con chuột khắp sàn bếp."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "A small mouse ran into its hole when it saw us.",
+          "example_vi": "Một con chuột nhỏ chạy vào hang khi thấy chúng tôi."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "The computer mouse is not working properly today.",
+          "example_vi": "Con chuột máy tính hôm nay không hoạt động bình thường."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "She is afraid of mice.",
+          "example_vi": "Cô ấy sợ chuột."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "The mouse nibbled on a piece of cheese.",
+          "example_vi": "Con chuột gặm nhấm một miếng phô mai."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "We set a trap to catch the mouse in the attic.",
+          "example_vi": "Chúng tôi đặt bẫy để bắt con chuột trên gác mái."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "The mouse scurried away into the shadows.",
+          "example_vi": "Con chuột chạy biến vào trong bóng tối."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "He bought a wireless mouse for his laptop.",
+          "example_vi": "Anh ấy đã mua một con chuột không dây cho máy tính xách tay của mình."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "The mouse was hiding behind the cupboard.",
+          "example_vi": "Con chuột đang trốn sau tủ chén."
+        },
+        {
+          "meaning_vi": "chuột",
+          "example_en": "Keep the mouse clean to ensure it works well.",
+          "example_vi": "Hãy giữ cho con chuột sạch sẽ để đảm bảo nó hoạt động tốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Nghĩa chính là chuột.",
+      "word": "mouse",
+      "normalized_word": "mouse",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cat chased the mouse across the kitchen floor.",
+      "example_vi_clean": "Con mèo đuổi theo con chuột khắp sàn bếp."
+    },
+    {
+      "id": 24533,
+      "quiz_meaning_vi": "mồm",
+      "meaning_vi_clean": "mồm; cửa",
+      "examples_clean": [
+        {
+          "meaning_vi": "mồm",
+          "example_en": "Open your mouth and say ah.",
+          "example_vi": "Hãy mở mồm ra và nói a."
+        },
+        {
+          "meaning_vi": "mồm",
+          "example_en": "She covered her mouth when she laughed.",
+          "example_vi": "Cô ấy che mồm khi cười."
+        },
+        {
+          "meaning_vi": "mồm",
+          "example_en": "Don't talk with your mouth full of food.",
+          "example_vi": "Đừng nói chuyện khi mồm đầy thức ăn."
+        },
+        {
+          "meaning_vi": "mồm",
+          "example_en": "He wiped his mouth with a napkin.",
+          "example_vi": "Anh ấy lau mồm bằng khăn ăn."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "The boat reached the mouth of the river.",
+          "example_vi": "Con thuyền đã đến cửa sông."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "They stood at the mouth of the cave.",
+          "example_vi": "Họ đứng ở cửa hang."
+        },
+        {
+          "meaning_vi": "mồm",
+          "example_en": "She has a very small mouth.",
+          "example_vi": "Cô ấy có cái mồm rất nhỏ."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "The tunnel has a wide mouth.",
+          "example_vi": "Đường hầm có một cái cửa rộng."
+        },
+        {
+          "meaning_vi": "mồm",
+          "example_en": "He breathed through his mouth because of his cold.",
+          "example_vi": "Anh ấy thở bằng mồm vì bị cảm lạnh."
+        },
+        {
+          "meaning_vi": "cửa",
+          "example_en": "The mouth of the volcano was smoking.",
+          "example_vi": "Cửa miệng núi lửa đang bốc khói."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ. Nghĩa chính là mồm, bổ sung nghĩa cửa.",
+      "word": "mouth",
+      "normalized_word": "mouth",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Open your mouth and say ah.",
+      "example_vi_clean": "Hãy mở mồm ra và nói a."
+    },
+    {
+      "id": 24534,
+      "quiz_meaning_vi": "sự chuyển động",
+      "meaning_vi_clean": "sự chuyển động; di chuyển",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự chuyển động",
+          "example_en": "The sudden move surprised everyone in the room.",
+          "example_vi": "Sự chuyển động đột ngột làm mọi người trong phòng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự chuyển động",
+          "example_en": "His next move in the game was very clever.",
+          "example_vi": "Nước đi tiếp theo của anh ấy trong trò chơi rất thông minh."
+        },
+        {
+          "meaning_vi": "sự chuyển động",
+          "example_en": "The move to a new city was difficult for the family.",
+          "example_vi": "Việc chuyển đến một thành phố mới thật khó khăn cho gia đình."
+        },
+        {
+          "meaning_vi": "sự chuyển động",
+          "example_en": "We need to make a move before it gets dark.",
+          "example_vi": "Chúng ta cần phải di chuyển trước khi trời tối."
+        },
+        {
+          "meaning_vi": "di chuyển",
+          "example_en": "Please move your chair to the other side.",
+          "example_vi": "Vui lòng di chuyển ghế của bạn sang phía bên kia."
+        },
+        {
+          "meaning_vi": "di chuyển",
+          "example_en": "The train began to move slowly out of the station.",
+          "example_vi": "Con tàu bắt đầu di chuyển chậm rãi ra khỏi nhà ga."
+        },
+        {
+          "meaning_vi": "di chuyển",
+          "example_en": "Can you help me move this heavy table?",
+          "example_vi": "Bạn có thể giúp tôi di chuyển cái bàn nặng này không?"
+        },
+        {
+          "meaning_vi": "di chuyển",
+          "example_en": "Don't move until I tell you to.",
+          "example_vi": "Đừng di chuyển cho đến khi tôi bảo bạn."
+        },
+        {
+          "meaning_vi": "sự chuyển động",
+          "example_en": "The slow move of the clouds was relaxing to watch.",
+          "example_vi": "Sự chuyển động chậm rãi của những đám mây thật thư giãn khi ngắm nhìn."
+        },
+        {
+          "meaning_vi": "di chuyển",
+          "example_en": "They decided to move to the countryside.",
+          "example_vi": "Họ quyết định di chuyển về vùng nông thôn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ và động từ. Nghĩa chính là sự chuyển động.",
+      "word": "move",
+      "normalized_word": "move",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The sudden move surprised everyone in the room.",
+      "example_vi_clean": "Sự chuyển động đột ngột làm mọi người trong phòng ngạc nhiên."
+    },
+    {
+      "id": 24535,
+      "quiz_meaning_vi": "phim",
+      "meaning_vi_clean": "phim",
+      "examples_clean": [
+        {
+          "meaning_vi": "phim",
+          "example_en": "We watched a great movie last night.",
+          "example_vi": "Chúng tôi đã xem một bộ phim tuyệt vời tối qua."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "What is your favorite movie?",
+          "example_vi": "Bộ phim yêu thích của bạn là gì?"
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "Let's go to the movies this weekend.",
+          "example_vi": "Hãy đi xem phim vào cuối tuần này."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "The movie was based on a true story.",
+          "example_vi": "Bộ phim dựa trên một câu chuyện có thật."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "I don't like watching horror movies.",
+          "example_vi": "Tôi không thích xem phim kinh dị."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "The movie lasted for three hours.",
+          "example_vi": "Bộ phim kéo dài ba tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "They are making a new movie in town.",
+          "example_vi": "Họ đang quay một bộ phim mới trong thị trấn."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "The movie has a very sad ending.",
+          "example_vi": "Bộ phim có một cái kết rất buồn."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "I bought tickets for the new action movie.",
+          "example_vi": "Tôi đã mua vé cho bộ phim hành động mới."
+        },
+        {
+          "meaning_vi": "phim",
+          "example_en": "The movie was directed by a famous filmmaker.",
+          "example_vi": "Bộ phim được đạo diễn bởi một nhà làm phim nổi tiếng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa thành phim cho ngắn gọn.",
+      "word": "movie",
+      "normalized_word": "movie",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We watched a great movie last night.",
+      "example_vi_clean": "Chúng tôi đã xem một bộ phim tuyệt vời tối qua."
+    },
+    {
+      "id": 24536,
+      "quiz_meaning_vi": "ông",
+      "meaning_vi_clean": "ông",
+      "examples_clean": [
+        {
+          "meaning_vi": "ông",
+          "example_en": "Mr. Smith is my teacher.",
+          "example_vi": "Ông Smith là giáo viên của tôi."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I have an appointment with Mr. Jones.",
+          "example_vi": "Tôi có một cuộc hẹn với ông Jones."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "Mr. Brown lives next door.",
+          "example_vi": "Ông Brown sống ở nhà bên cạnh."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "Please ask Mr. Davis to call me.",
+          "example_vi": "Làm ơn bảo ông Davis gọi cho tôi."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "Mr. Wilson is a very kind man.",
+          "example_vi": "Ông Wilson là một người đàn ông rất tốt bụng."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I sent a letter to Mr. Thompson.",
+          "example_vi": "Tôi đã gửi một lá thư cho ông Thompson."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "Mr. Green works at the bank.",
+          "example_vi": "Ông Green làm việc tại ngân hàng."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "Is Mr. White at home?",
+          "example_vi": "Ông White có ở nhà không?"
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "Mr. Harris is our new neighbor.",
+          "example_vi": "Ông Harris là hàng xóm mới của chúng tôi."
+        },
+        {
+          "meaning_vi": "ông",
+          "example_en": "I met Mr. Clark at the meeting.",
+          "example_vi": "Tôi đã gặp ông Clark tại cuộc họp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa thành ông (danh xưng).",
+      "word": "mr",
+      "normalized_word": "mr",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Mr. Smith is my teacher.",
+      "example_vi_clean": "Ông Smith là giáo viên của tôi."
+    },
+    {
+      "id": 24537,
+      "quiz_meaning_vi": "bà",
+      "meaning_vi_clean": "bà",
+      "examples_clean": [
+        {
+          "meaning_vi": "bà",
+          "example_en": "Mrs. Smith is a doctor.",
+          "example_vi": "Bà Smith là một bác sĩ."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I spoke to Mrs. Jones yesterday.",
+          "example_vi": "Tôi đã nói chuyện với bà Jones ngày hôm qua."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "Mrs. Brown is very friendly.",
+          "example_vi": "Bà Brown rất thân thiện."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "Please give this to Mrs. Davis.",
+          "example_vi": "Làm ơn đưa cái này cho bà Davis."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "Mrs. Wilson has three children.",
+          "example_vi": "Bà Wilson có ba người con."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I visited Mrs. Thompson last week.",
+          "example_vi": "Tôi đã đến thăm bà Thompson tuần trước."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "Mrs. Green is a teacher.",
+          "example_vi": "Bà Green là một giáo viên."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "Is Mrs. White coming to the party?",
+          "example_vi": "Bà White có đến dự tiệc không?"
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "Mrs. Harris lives in London.",
+          "example_vi": "Bà Harris sống ở London."
+        },
+        {
+          "meaning_vi": "bà",
+          "example_en": "I saw Mrs. Clark at the store.",
+          "example_vi": "Tôi đã thấy bà Clark ở cửa hàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa thành bà (danh xưng).",
+      "word": "mrs",
+      "normalized_word": "mrs",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Mrs. Smith is a doctor.",
+      "example_vi_clean": "Bà Smith là một bác sĩ."
+    },
+    {
+      "id": 24538,
+      "quiz_meaning_vi": "nhiều",
+      "meaning_vi_clean": "nhiều",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "He is much taller than his brother.",
+          "example_vi": "Anh ấy cao hơn nhiều so với anh trai mình."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "I don't go out much these days.",
+          "example_vi": "Dạo này tôi không đi chơi nhiều."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "Thank you very much for your help.",
+          "example_vi": "Cảm ơn bạn rất nhiều vì sự giúp đỡ của bạn."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "She doesn't eat much for breakfast.",
+          "example_vi": "Cô ấy không ăn nhiều vào bữa sáng."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "It doesn't matter much to me.",
+          "example_vi": "Điều đó không quan trọng nhiều đối với tôi."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "He has traveled much in his life.",
+          "example_vi": "Anh ấy đã đi du lịch nhiều trong đời mình."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "I like this book very much.",
+          "example_vi": "Tôi thích cuốn sách này rất nhiều."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "There isn't much time left.",
+          "example_vi": "Không còn nhiều thời gian nữa."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "She works much harder than anyone else.",
+          "example_vi": "Cô ấy làm việc chăm chỉ hơn nhiều so với bất kỳ ai khác."
+        },
+        {
+          "meaning_vi": "nhiều",
+          "example_en": "I don't know much about this topic.",
+          "example_vi": "Tôi không biết nhiều về chủ đề này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành trạng từ. Nghĩa chính là nhiều.",
+      "word": "much",
+      "normalized_word": "much",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He is much taller than his brother.",
+      "example_vi_clean": "Anh ấy cao hơn nhiều so với anh trai mình."
+    },
+    {
+      "id": 24539,
+      "quiz_meaning_vi": "lặng yên",
+      "meaning_vi_clean": "lặng yên; hoa cúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "lặng yên",
+          "example_en": "Keep mum about the surprise party.",
+          "example_vi": "Hãy giữ lặng yên về bữa tiệc bất ngờ."
+        },
+        {
+          "meaning_vi": "lặng yên",
+          "example_en": "He remained mum when asked about the secret.",
+          "example_vi": "Anh ấy vẫn lặng yên khi được hỏi về bí mật."
+        },
+        {
+          "meaning_vi": "lặng yên",
+          "example_en": "They were told to stay mum.",
+          "example_vi": "Họ được bảo là phải giữ lặng yên."
+        },
+        {
+          "meaning_vi": "lặng yên",
+          "example_en": "She kept mum to avoid trouble.",
+          "example_vi": "Cô ấy giữ lặng yên để tránh rắc rối."
+        },
+        {
+          "meaning_vi": "hoa cúc",
+          "example_en": "She bought a beautiful bunch of mums.",
+          "example_vi": "Cô ấy đã mua một bó hoa cúc xinh đẹp."
+        },
+        {
+          "meaning_vi": "hoa cúc",
+          "example_en": "The garden is full of yellow mums.",
+          "example_vi": "Khu vườn đầy những bông hoa cúc vàng."
+        },
+        {
+          "meaning_vi": "hoa cúc",
+          "example_en": "Mums are popular flowers in autumn.",
+          "example_vi": "Hoa cúc là loài hoa phổ biến vào mùa thu."
+        },
+        {
+          "meaning_vi": "hoa cúc",
+          "example_en": "She planted some mums in the front yard.",
+          "example_vi": "Cô ấy đã trồng vài cây hoa cúc ở sân trước."
+        },
+        {
+          "meaning_vi": "hoa cúc",
+          "example_en": "The vase was filled with fresh mums.",
+          "example_vi": "Chiếc bình được cắm đầy những bông hoa cúc tươi."
+        },
+        {
+          "meaning_vi": "lặng yên",
+          "example_en": "It is better to keep mum sometimes.",
+          "example_vi": "Đôi khi tốt hơn là nên giữ lặng yên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa thành lặng yên và hoa cúc.",
+      "word": "mum",
+      "normalized_word": "mum",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Keep mum about the surprise party.",
+      "example_vi_clean": "Hãy giữ lặng yên về bữa tiệc bất ngờ."
+    },
+    {
+      "id": 24540,
+      "quiz_meaning_vi": "nhạc",
+      "meaning_vi_clean": "nhạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "I love listening to music in my free time.",
+          "example_vi": "Tôi thích nghe nhạc vào thời gian rảnh."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "What kind of music do you like?",
+          "example_vi": "Bạn thích loại nhạc nào?"
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "The music was too loud.",
+          "example_vi": "Nhạc quá to."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "She is studying music at university.",
+          "example_vi": "Cô ấy đang học nhạc tại trường đại học."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "Do you play any music instruments?",
+          "example_vi": "Bạn có chơi nhạc cụ nào không?"
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "The music helped me relax after a long day.",
+          "example_vi": "Nhạc giúp tôi thư giãn sau một ngày dài."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "They danced to the beautiful music.",
+          "example_vi": "Họ đã nhảy theo điệu nhạc tuyệt vời."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "I enjoy classical music very much.",
+          "example_vi": "Tôi rất thích nhạc cổ điển."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "The music festival was a great success.",
+          "example_vi": "Lễ hội nhạc đã thành công rực rỡ."
+        },
+        {
+          "meaning_vi": "nhạc",
+          "example_en": "He composed some beautiful music.",
+          "example_vi": "Anh ấy đã sáng tác một vài bản nhạc tuyệt đẹp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa thành nhạc cho ngắn gọn.",
+      "word": "music",
+      "normalized_word": "music",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I love listening to music in my free time.",
+      "example_vi_clean": "Tôi thích nghe nhạc vào thời gian rảnh."
+    }
+  ]
+}

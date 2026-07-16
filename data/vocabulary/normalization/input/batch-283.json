@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-283",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26821,
+      "word": "dehumanize",
+      "normalized_word": "dehumanize",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di:'hju:mənaiz/ (dehumanize) /di:'hju:mənaiz/",
+      "primary_meaning_vi": "làm mất tính người",
+      "meaning_vi": "làm mất tính người, làm thành hung ác dã man, làm thành vô nhân đạo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26822,
+      "word": "delegate",
+      "normalized_word": "delegate",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'deligit/",
+      "primary_meaning_vi": "người đại biểu",
+      "meaning_vi": "người đại biểu, người đại diện; người được uỷ nhiệm; cử làm đại biểu; uỷ quyền, uỷ thác, giao phó",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26823,
+      "word": "deliberate",
+      "normalized_word": "deliberate",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/di'libərit/",
+      "primary_meaning_vi": "có suy nghĩ cân nhắc",
+      "meaning_vi": "có suy nghĩ cân nhắc; thận trọng; có tính toán, cố ý, chủ tâm; thong thả, khoan thai, không vội vàng; cân nhắc kỹ càng; suy nghĩ chín chắn; trao đổi kỹ lưỡng, thảo luận kỹ lưỡng, bàn bạc kỹ lưỡng",
+      "example_en": "It is now time for the jury to deliberate the guilt of the defendant.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Tripping me was deliberate action.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The jury took eight hours to come to its deliberate verdict.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a deliberate opinion; a deliberate measure or result",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26824,
+      "word": "deliberately",
+      "normalized_word": "deliberately",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "xem deliberate",
+      "meaning_vi": "xem deliberate",
+      "example_en": "He deliberately broke that, didn't he?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After being called upon, he strode deliberately up to the blackboard.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26825,
+      "word": "delicacy",
+      "normalized_word": "delicacy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'delikəsi/",
+      "primary_meaning_vi": "sự duyên dáng",
+      "meaning_vi": "sự duyên dáng, sự thanh nhã, sự thanh tao; vẻ thanh tú; sự yếu đuối, sự mỏng manh; trạng thái mảnh khảnh, trạng thái mảnh dẻ; sự tinh vi, sự tinh xảo, sự tinh tế, sự khéo léo; sự nhẹ nhàng; sự mềm mại; sự tế nhị, sự khó xử; sự lịch thiệp, sự nhã nhặn; tính nhạy cảm, tính dễ xúc cảm (người...); tính nhạy (cân, la bàn...); đồ ăn ngon, đồ ăn quý, cao lương mỹ vị",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26826,
+      "word": "delicately",
+      "normalized_word": "delicately",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "công phu",
+      "meaning_vi": "công phu, tinh vi, sắc sảo; tế nhị",
+      "example_en": "The gingerbread was delicately, if imprecisely, captured by the brushstrokes.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He approached the main subject delicately.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26827,
+      "word": "demanding",
+      "normalized_word": "demanding",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "đòi hỏi khắt khe",
+      "meaning_vi": "đòi hỏi khắt khe",
+      "example_en": "I demand to see the manager.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The bank is demanding the mortgage payment.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I demand an immediate explanation.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This job demands a lot of patience.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26828,
+      "word": "demolish",
+      "normalized_word": "demolish",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'mɔliʃ/",
+      "primary_meaning_vi": "phá huỷ",
+      "meaning_vi": "phá huỷ; đánh đổ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26829,
+      "word": "denim",
+      "normalized_word": "denim",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'denim/",
+      "primary_meaning_vi": "vải bông chéo",
+      "meaning_vi": "vải bông chéo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26830,
+      "word": "dense",
+      "normalized_word": "dense",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/dens/",
+      "primary_meaning_vi": "dày đặc",
+      "meaning_vi": "dày đặc, chặt; đông đúc; rậm rạp; đần độn, ngu đần",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

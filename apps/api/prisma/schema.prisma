@@ -1,0 +1,267 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator modelTypes {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// Người dùng hệ thống (admin, staff)
+model users {
+  id            String    @id @default(uuid())
+  /// Email đăng nhập, duy nhất trong hệ thống
+  email         String    @unique
+  /// Mật khẩu đã được hash (PBKDF2)
+  password      String
+  /// Tên đăng nhập duy nhất
+  username      String    @unique
+  /// Họ và tên đầy đủ
+  full_name     String
+  /// Vai trò: ADMIN, USER
+  role          user_role @default(USER)
+  /// JWT refresh token (lưu để invalidate khi logout)
+  refresh_token String?
+  created_at    DateTime  @default(now()) @db.Timestamp(6)
+  updated_at    DateTime  @default(now()) @updatedAt @db.Timestamp(6)
+
+  @@index([role])
+  @@index([email])
+  @@map("users")
+}
+
+model challenge_options {
+  id           Int        @id @default(autoincrement())
+  challenge_id Int
+  text         String
+  correct      Boolean
+  image_src    String?
+  audio_src    String?
+  challenges   challenges @relation(fields: [challenge_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "challenge_options_challenge_id_challenges_id_fk")
+}
+
+model challenge_progress {
+  id           Int        @id @default(autoincrement())
+  user_id      String
+  challenge_id Int
+  completed    Boolean    @default(false)
+  challenges   challenges @relation(fields: [challenge_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "challenge_progress_challenge_id_challenges_id_fk")
+}
+
+model challenges {
+  id                 Int                  @id @default(autoincrement())
+  lesson_id          Int
+  type               type
+  question           String
+  order              Int
+  vocabulary_item_id Int?
+  direction          challenge_direction?
+  challenge_options  challenge_options[]
+  challenge_progress challenge_progress[]
+  lessons            lessons              @relation(fields: [lesson_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "challenges_lesson_id_lessons_id_fk")
+  vocabulary_items   vocabulary_items?    @relation(fields: [vocabulary_item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "challenges_vocabulary_item_id_vocabulary_items_id_fk")
+}
+
+model courses {
+  id            Int             @id @default(autoincrement())
+  title         String
+  image_src     String
+  units         units[]
+  user_progress user_progress[]
+}
+
+model lessons {
+  id         Int          @id @default(autoincrement())
+  title      String
+  unit_id    Int
+  order      Int
+  challenges challenges[]
+  units      units        @relation(fields: [unit_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "lessons_unit_id_units_id_fk")
+}
+
+model units {
+  id          Int       @id @default(autoincrement())
+  title       String
+  description String
+  course_id   Int
+  order       Int
+  lessons     lessons[]
+  courses     courses   @relation(fields: [course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "units_course_id_courses_id_fk")
+}
+
+model user_progress {
+  user_id          String   @id
+  user_name        String   @default("User")
+  user_image_src   String   @default("/mascot.svg")
+  active_course_id Int?
+  hearts           Int      @default(5)
+  points           Int      @default(0)
+  languages        String[] @default(["en"])
+  primary_language String   @default("en")
+  goals            String[] @default([])
+  intensity        String   @default("standard")
+  custom_goal      String?
+  courses          courses? @relation(fields: [active_course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "user_progress_active_course_id_courses_id_fk")
+}
+
+model placement_test_sessions {
+  user_id           String   @id
+  current_theta     Float    @default(2.0)
+  answered_count    Int      @default(0)
+  theta_history     Float[]
+  used_word_ids     Int[]
+  status            String   @default("IN_PROGRESS")
+  final_score       Float?
+  recommended_level String?
+  buffer_options    String[]
+  confirmed_level   String?
+  onboarding_step   Int      @default(1)
+  onboarding_data   Json?
+  created_at        DateTime @default(now()) @db.Timestamp(6)
+  updated_at        DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model practice_sessions {
+  id           Int                      @id @default(autoincrement())
+  user_id      String
+  mode         String
+  correct_count Int                     @default(0)
+  wrong_count   Int                     @default(0)
+  accuracy       Int                    @default(0)
+  created_at   DateTime                 @default(now()) @db.Timestamp(6)
+  items        practice_session_items[]
+
+  @@index([user_id, created_at], map: "practice_sessions_user_created_idx")
+}
+
+model practice_session_items {
+  id                  Int               @id @default(autoincrement())
+  practice_session_id Int
+  vocabulary_item_id  Int
+  challenge_type      String
+  correct             Boolean
+  answer              String?
+  created_at          DateTime          @default(now()) @db.Timestamp(6)
+  practice_sessions   practice_sessions @relation(fields: [practice_session_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "practice_session_items_session_id_fk")
+  vocabulary_items    vocabulary_items  @relation(fields: [vocabulary_item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "practice_session_items_vocab_item_id_fk")
+
+  @@index([practice_session_id], map: "practice_session_items_session_idx")
+  @@index([vocabulary_item_id], map: "practice_session_items_vocab_idx")
+}
+
+model user_saved_words {
+  id                 Int              @id @default(autoincrement())
+  user_id            String
+  vocabulary_item_id Int
+  created_at         DateTime         @default(now()) @db.Timestamp(6)
+  vocabulary_items   vocabulary_items @relation(fields: [vocabulary_item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "user_saved_words_vocabulary_item_id_vocabulary_items_id_fk")
+
+  @@unique([user_id, vocabulary_item_id], map: "user_saved_words_user_vocab_idx")
+}
+
+model user_vocabulary_progress {
+  id                 Int              @id @default(autoincrement())
+  user_id            String
+  vocabulary_item_id Int
+  correct_count      Int              @default(0)
+  wrong_count        Int              @default(0)
+  review_count       Int              @default(0)
+  mastery_level      String           @default("new")
+  ease_factor        Float            @default(2.5)
+  interval_days      Int              @default(0)
+  repetition_count   Int              @default(0)
+  last_reviewed_at   DateTime?        @db.Timestamp(6)
+  next_review_at     DateTime?        @db.Timestamp(6)
+  created_at         DateTime         @default(now()) @db.Timestamp(6)
+  updated_at         DateTime         @default(now()) @updatedAt @db.Timestamp(6)
+  vocabulary_items   vocabulary_items @relation(fields: [vocabulary_item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "user_vocab_progress_vocab_item_id_fk")
+
+  @@unique([user_id, vocabulary_item_id], map: "user_vocabulary_progress_user_vocab_idx")
+}
+
+model vocabulary_items {
+  id                 Int                @id @default(autoincrement())
+  word               String
+  normalized_word    String
+  pos                String
+  pos_vi             String?
+  cefr_level         String
+  phonetic           String?
+  phonetic_source    String?
+  audio_url          String?
+  audio_source       String?
+  example_en         String?
+  example_vi         String?
+  example_source     String?
+  meaning_vi         String
+  primary_meaning_vi String
+  source             String             @default("words-cefr-dictionary")
+  created_at         DateTime           @default(now()) @db.Timestamp(6)
+  updated_at         DateTime           @default(now()) @db.Timestamp(6)
+  challenges         challenges[]
+  user_saved_words   user_saved_words[]
+  user_vocabulary_progress user_vocabulary_progress[]
+  vocabulary_examples vocabulary_examples[]
+  vocabulary_item_topics vocabulary_item_topics[]
+  practice_session_items practice_session_items[]
+}
+
+model vocabulary_examples {
+  id                 Int              @id @default(autoincrement())
+  vocabulary_item_id Int
+  example_en         String
+  example_vi         String?
+  source             String           @default("free-dictionary-api")
+  order              Int              @default(1)
+  created_at         DateTime         @default(now()) @db.Timestamp(6)
+  vocabulary_items   vocabulary_items @relation(fields: [vocabulary_item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "vocabulary_examples_vocabulary_item_id_fk")
+
+  @@unique([vocabulary_item_id, example_en], map: "vocabulary_examples_vocab_example_idx")
+}
+
+model vocabulary_topics {
+  id                     Int                      @id @default(autoincrement())
+  slug                   String                   @unique
+  title                  String
+  description            String
+  order                  Int
+  created_at             DateTime                 @default(now()) @db.Timestamp(6)
+  vocabulary_item_topics vocabulary_item_topics[]
+}
+
+model vocabulary_item_topics {
+  id                 Int               @id @default(autoincrement())
+  vocabulary_item_id Int
+  topic_id           Int
+  created_at         DateTime          @default(now()) @db.Timestamp(6)
+  vocabulary_items   vocabulary_items  @relation(fields: [vocabulary_item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "vocab_item_topics_vocab_item_id_fk")
+  vocabulary_topics  vocabulary_topics @relation(fields: [topic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "vocab_item_topics_topic_id_fk")
+
+  @@unique([vocabulary_item_id, topic_id], map: "vocab_item_topics_item_topic_idx")
+}
+
+enum challenge_direction {
+  EN_TO_VI
+  VI_TO_EN
+}
+
+enum type {
+  SELECT
+  ASSIST
+}
+
+enum user_role {
+  ADMIN
+  USER
+}
+
+model system_settings {
+  key   String @id
+  value String
+
+  @@map("system_settings")
+}

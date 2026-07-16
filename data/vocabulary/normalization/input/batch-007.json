@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-007",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24061,
+      "word": "bear",
+      "normalized_word": "bear",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/beə/",
+      "primary_meaning_vi": "mang",
+      "meaning_vi": "mang, cầm, vác, đội, đeo, ôm; chịu, chịu đựng; sinh, sinh sản, sinh lợi; chịu, chịu đựng; chống đỡ, đỡ; có hiệu lực, ăn thua; rẽ, quay, hướng về; ở vào (vị trí nào...); sinh, sinh sản, sinh lợi; mang đi, cuốn đi, lôi đi; đi xa, đi sang hướng khác; tách ra xa không cho tới gần; mang đi, cuốn đi, lôi đi, đoạt; rời bến xa thuyền (thuyền, tàu); có liên quan tới, quy vào; tì mạnh vào, chống mạnh vào; ấn mạnh xuống; xác nhận, xác minh; chống đỡ (vật gì); ủng hộ (ai); có nghị lực, không để cho quỵ; không thất vọng; tránh (gió ngược); comparison; hand; đè nặng lên ai; đè nén ai; chịu một phần; resemblance; khoan thứ ai, chịu đựng ai; testimony; witness; bây giờ tôi hoàn toàn tin tưởng rằng...; con gấu; người thô lỗ, người thô tục; chòm sao gấu; chịu đựng được sự trừng phạt hành hạ, chịu đựng ngoan cường sự trừng phạt hành hạ; bán da gấu trước khi bắt được gấu; chưa đẻ đã đặt tên; cau có, nhăn nhó, gắt như mắm tôm; liều vô ích; tự dấn thân vào chỗ nguy hiểm một cách không cần thiết; sự đầu cơ giá hạ (chứng khoán); sự làm cho sụt giá (chứng khoán); người đầu cơ giá hạ (chứng khoán); đầu cơ giá hạ (chứng khoán); làm cho sụt giá (chứng khoán)",
+      "example_en": "That window can be a bear to open.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to bear a railroad stock",
+          "example_vi": null
+        },
+        {
+          "example_en": "The great bear market starting in 1929 scared a whole generation of investors.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Judging from the look on his face, he wasn't bearing good news.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24062,
+      "word": "beautiful",
+      "normalized_word": "beautiful",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'bju:təful/",
+      "primary_meaning_vi": "đẹp",
+      "meaning_vi": "đẹp; hay; tốt, tốt đẹp",
+      "example_en": "Hey, beautiful!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Anyone who has ever met her thought she was absolutely beautiful.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It's beautiful outside, let's go for a walk.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The skater performed a beautiful axel.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24063,
+      "word": "because",
+      "normalized_word": "because",
+      "cefr_level": "A1",
+      "pos": "conjunction",
+      "pos_vi": "liên từ",
+      "phonetic": "/bi'kɔz/",
+      "primary_meaning_vi": "vì",
+      "meaning_vi": "vì, bởi vì; vì, do bởi",
+      "example_en": "My life is ruined because of you!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I hid myself because I was afraid.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I don't think he is a nice person, because he yells at people for no reason.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24064,
+      "word": "become",
+      "normalized_word": "become",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bi'kʌm/",
+      "primary_meaning_vi": "trở nên",
+      "meaning_vi": "trở nên, trở thành; vừa, hợp, thích hợp, xứng; xảy đến",
+      "example_en": "It hath becomen so that many a man had to sterve.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She became a doctor when she was 25.",
+          "example_vi": null
+        },
+        {
+          "example_en": "That dress really becomes you.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24065,
+      "word": "bed",
+      "normalized_word": "bed",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bed/",
+      "primary_meaning_vi": "cái giường",
+      "meaning_vi": "cái giường; nền; lòng (sông...); lớp; nấm mồ; hôn nhân; vợ chồng; mình làm mình chịu; sự tiếp đãi; quan hệ vợ chồng; luống hoa hồng; đời sống sung túc dễ dàng; tình trạng bệnh hoạn tàn tật; luống gai; hoàn cảnh khó khăn; bước đường đầy chông gai; sinh; chết bệnh, chết già; càu nhàu, bực dọc, cáu kỉnh, không vui; thôi đừng nói nữa!, im cái mồm đi!, thôi đi!; đuộc suỳ 5, say không biết trời đất gì cả; đi ngủ sớm, trở dậy sớm; đi ngủ từ lúc gà lên chuồng; trở dậy từ lúc gà gáy; bị ốm nằm liệt giường; narrow; xây vào, đặt vào, gắn vào, vùi vào, chôn vào; + out trồng (cây con, cây ươm); + down rải ổ cho ngựa nằm; ; (từ cổ,nghĩa cổ) đặt vào giường, cho đi ngủ; thành tầng, thành lớp; chìm ngập, bị sa lầy; đi ngủ",
+      "example_en": "My cat often sleeps on my bed. I keep a glass of water next to my bed when I sleep.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The meats and cheeses lay on a bed of lettuce.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24066,
+      "word": "bedroom",
+      "normalized_word": "bedroom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bedrum/",
+      "primary_meaning_vi": "buồng ngủ",
+      "meaning_vi": "buồng ngủ",
+      "example_en": "Please don't enter my bedroom without knocking.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24067,
+      "word": "bee",
+      "normalized_word": "bee",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi:/",
+      "primary_meaning_vi": "con ong",
+      "meaning_vi": "con ong; nhà thơ; người bận nhiều việc; buổi vui chơi tập thể, buổi lao động tập thể; hết sức bận; nung nấu trong óc một ý nghĩ gì; có một cái gì ám ảnh trong đầu; ấp ủ trong lòng những mộng tưởng viễn vông; ,  (từ lóng) nài xin, xin lải nhải",
+      "example_en": "geography bee",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Cride out, Now now Sir knight, shew what ye bee,",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24068,
+      "word": "beef",
+      "normalized_word": "beef",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/bi:f/",
+      "primary_meaning_vi": "thịt bò",
+      "meaning_vi": "thịt bò; số nhiều bò thịt (để giết ăn thịt); sức mạnh, thể lực; bắp thịt (người); ,  (từ lóng) lời phàn nàn, lời than vãn; ,  (từ lóng) phàn nàn, than vãn; to beef up (từ Mỹ,nghĩa Mỹ),  (quân sự) tăng cường (về quân sự)",
+      "example_en": "I love eating beef.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He's got a beef with everyone in the room.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Ugh, who just beefed in here?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Those two are beefing right now - best you stay out of it for now.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24069,
+      "word": "before",
+      "normalized_word": "before",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "liên từ",
+      "phonetic": "/bi'fɔ:/",
+      "primary_meaning_vi": "trước",
+      "meaning_vi": "trước, đằng trước; trước đây, ngày trước; ngay bây giờ, chẳng bao lâu nữa; trước, trước mắt, trước mặt; hơn (về chức vị, khả năng...); thà... còn hơn...;; carry; đời còn dài; mast; trước khi; thà... chứ không...",
+      "example_en": "I've never done this before.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I want this done before Monday.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He stood before me.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He performed before the troops in North Africa.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24070,
+      "word": "begin",
+      "normalized_word": "begin",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "(bất qui tắc) động từ began",
+      "phonetic": "/bi'gin/",
+      "primary_meaning_vi": "bắt đầu",
+      "meaning_vi": "bắt đầu, mở đầu, khởi đầu; bắt đầu nói; bắt đầu từ; bắt đầu làm (việc gì); trước hết là, đầu tiên là; world; bắt đầu tốt là làm xong được một nửa công việc",
+      "example_en": "I began playing the piano at the age of five. Now that everyone is here, we should begin the presentation.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The program begins at 9 o'clock on the dot. I rushed to get to class on time, but the lesson had already begun.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

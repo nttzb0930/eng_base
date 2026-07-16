@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-286",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26851,
+      "word": "devil",
+      "normalized_word": "devil",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'devl/",
+      "primary_meaning_vi": "ma",
+      "meaning_vi": "ma, quỷ; điều quái gỡ, điều ghê gớm, điều khủng khiếp; sự giận dữ, sự tức giận; người hung ác, người nanh ác, người ác độc; người quỷ quyệt, người xảo quyệt; người khốn khổ; người bất hạnh, người vô phúc; thư ký riêng (của luật sư, của nhà văn); người học việc (ở xưởng in); thịt nướng tẩm nhiều tiêu ớt; lò than, lò nung; máy xé (vải vụn, giẻ rách); thằng quỷ ranh (hoặc tỏ ý chê là khó ưa, khó chịu, hoặc tỏ ý khen ai là đáng chú ý, vui tính...); sự cãi lộn; sự lộn xộn; sự ồn ào; tất cả cái gì xấu; khôn sống mống chết; between; đối xử công bằng ngay cả với kẻ không xứng đáng; đối xử công bằng ngay cả với kẻ mình không ưa; phá sản, lụn bại; cút đi!; người (điều) phiền toái; raise; vừa nói đến ai thì người đó đã đến ngay; làm thư ký riêng (cho một luật sư); viết văn thuê (cho nhà văn); nướng (thịt...) sau khi tẩm tiêu ớt",
+      "example_en": "The devil in me wants to let him suffer.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Those two kids are devils in a toy store.",
+          "example_vi": null
+        },
+        {
+          "example_en": "That math problem was a devil.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She is having a devil of a time fixing it.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26852,
+      "word": "devote",
+      "normalized_word": "devote",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'vout/",
+      "primary_meaning_vi": "hiến dâng",
+      "meaning_vi": "hiến dâng, dành hết cho",
+      "example_en": "I devoted this afternoon to repainting my study, and nothing will get in my way.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The city was devoted to the flames.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26853,
+      "word": "devoted",
+      "normalized_word": "devoted",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/di'voutid/",
+      "primary_meaning_vi": "hiến cho",
+      "meaning_vi": "hiến cho, dâng cho, dành cho; hết lòng, tận tâm, tận tình, tận tuỵ; sốt sắng, nhiệt tình",
+      "example_en": "I devoted this afternoon to repainting my study, and nothing will get in my way.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The city was devoted to the flames.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Bob and Sara are devoted to their children.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26854,
+      "word": "diarrhea",
+      "normalized_word": "diarrhea",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "như diarrhoea",
+      "meaning_vi": "như diarrhoea",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26855,
+      "word": "diarrhoea",
+      "normalized_word": "diarrhoea",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,daiə'riə/",
+      "primary_meaning_vi": "bệnh ỉa chảy",
+      "meaning_vi": "bệnh ỉa chảy",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26856,
+      "word": "dictator",
+      "normalized_word": "dictator",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dik'teitə/",
+      "primary_meaning_vi": "kẻ độc tài",
+      "meaning_vi": "kẻ độc tài; người có quyền hành tuyệt đối (ở một lĩnh vực nào); người đọc cho (người khác) viết, người đọc chính tả",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26857,
+      "word": "digest",
+      "normalized_word": "digest",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'daidʤest /",
+      "primary_meaning_vi": "sách tóm tắt (chủ yếu là luật)",
+      "meaning_vi": "sách tóm tắt (chủ yếu là luật); tập san văn học, tập san thời sự[di'dʤest]; phân loại, sắp đặt có hệ thống; tóm tắt có hệ thống; suy nghĩ kỹ càng, sắp xếp trong óc; tiêu hoá, làm tiêu hoá (thức ăn); hiểu thấu, lĩnh hội, tiêu hoá (những điều đã học...); đồng hoá (một vùng đất đai chinh phục được); nhịn, chịu đựng, nuốt (nhục...); ninh, sắc (một chất trong rượu...); tiêu, tiêu hoá được",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 10,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26858,
+      "word": "dignify",
+      "normalized_word": "dignify",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'dignifai/",
+      "primary_meaning_vi": "làm cho xứng",
+      "meaning_vi": "làm cho xứng, làm cho xứng đáng; làm cho có vẻ đường hoàng; làm cho có vẻ trang nghiêm; tôn, tôn lên, đề cao",
+      "example_en": "I will not dignify that comment with a response.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26859,
+      "word": "dignity",
+      "normalized_word": "dignity",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'digniti/",
+      "primary_meaning_vi": "chân giá trị",
+      "meaning_vi": "chân giá trị; phẩm giá, phẩm cách; lòng tự trọng; chức tước cao, chức vị cao; thái độ chững chạc, thái độ đường hoàng; vẻ nghiêm trang",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26860,
+      "word": "dilemma",
+      "normalized_word": "dilemma",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'lemə/",
+      "primary_meaning_vi": "song đề",
+      "meaning_vi": "song đề; thế tiến lui đều khó, thế tiến thoái lưỡng nan, tình trạng khó xử",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

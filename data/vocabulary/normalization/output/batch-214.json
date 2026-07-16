@@ -1,0 +1,680 @@
+{
+  "records": [
+    {
+      "id": 26131,
+      "quiz_meaning_vi": "sự tìm ra",
+      "meaning_vi_clean": "sự tìm ra; sự khám phá; sự phát hiện; vật tìm thấy",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tìm ra",
+          "example_en": "The finding of the lost key was a relief.",
+          "example_vi": "Việc tìm ra chiếc chìa khóa bị mất thật là nhẹ nhõm."
+        },
+        {
+          "meaning_vi": "sự tìm ra",
+          "example_en": "His finding of the truth changed everything.",
+          "example_vi": "Việc anh ấy tìm ra sự thật đã thay đổi mọi thứ."
+        },
+        {
+          "meaning_vi": "sự tìm ra",
+          "example_en": "The finding of a solution took several hours.",
+          "example_vi": "Việc tìm ra giải pháp đã mất vài giờ đồng hồ."
+        },
+        {
+          "meaning_vi": "sự tìm ra",
+          "example_en": "She was happy with the finding of her ring.",
+          "example_vi": "Cô ấy rất vui với việc tìm ra chiếc nhẫn của mình."
+        },
+        {
+          "meaning_vi": "sự khám phá",
+          "example_en": "The scientific finding was published in a journal.",
+          "example_vi": "Khám phá khoa học đó đã được công bố trên một tạp chí."
+        },
+        {
+          "meaning_vi": "sự khám phá",
+          "example_en": "This finding could lead to a new treatment.",
+          "example_vi": "Khám phá này có thể dẫn đến một phương pháp điều trị mới."
+        },
+        {
+          "meaning_vi": "sự phát hiện",
+          "example_en": "The police report detailed their latest finding.",
+          "example_vi": "Báo cáo của cảnh sát đã nêu chi tiết về phát hiện mới nhất của họ."
+        },
+        {
+          "meaning_vi": "sự phát hiện",
+          "example_en": "They discussed the finding at the meeting.",
+          "example_vi": "Họ đã thảo luận về phát hiện đó tại cuộc họp."
+        },
+        {
+          "meaning_vi": "vật tìm thấy",
+          "example_en": "The finding was kept in a small box.",
+          "example_vi": "Vật tìm thấy được giữ trong một chiếc hộp nhỏ."
+        },
+        {
+          "meaning_vi": "vật tìm thấy",
+          "example_en": "He showed me his interesting finding from the beach.",
+          "example_vi": "Anh ấy cho tôi xem vật tìm thấy thú vị của mình từ bãi biển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa danh từ, bổ sung ví dụ minh họa đầy đủ các nghĩa.",
+      "word": "finding",
+      "normalized_word": "finding",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The finding of the lost key was a relief.",
+      "example_vi_clean": "Việc tìm ra chiếc chìa khóa bị mất thật là nhẹ nhõm."
+    },
+    {
+      "id": 26132,
+      "quiz_meaning_vi": "ngón tay",
+      "meaning_vi_clean": "ngón tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "She pointed at the map with her finger.",
+          "example_vi": "Cô ấy chỉ vào bản đồ bằng ngón tay."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "He cut his finger while chopping vegetables.",
+          "example_vi": "Anh ấy bị đứt ngón tay khi thái rau."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "The ring was too small for her finger.",
+          "example_vi": "Chiếc nhẫn quá nhỏ so với ngón tay của cô ấy."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "She raised one finger to ask a question.",
+          "example_vi": "Cô ấy giơ một ngón tay để xin hỏi."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "My little finger is still sore.",
+          "example_vi": "Ngón út của tôi vẫn còn đau."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "The child counted on his fingers.",
+          "example_vi": "Đứa trẻ đếm bằng các ngón tay."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "He pressed the button with his finger.",
+          "example_vi": "Anh ấy nhấn nút bằng ngón tay."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "She ran her finger along the edge of the page.",
+          "example_vi": "Cô ấy lướt ngón tay dọc theo mép trang giấy."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "Cold weather made my fingers numb.",
+          "example_vi": "Thời tiết lạnh làm các ngón tay tôi tê cóng."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "There was paint on every finger.",
+          "example_vi": "Ngón tay nào cũng dính sơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ đúng POS danh từ; loại toàn bộ nghĩa và ví dụ động từ.",
+      "word": "finger",
+      "normalized_word": "finger",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She pointed at the map with her finger.",
+      "example_vi_clean": "Cô ấy chỉ vào bản đồ bằng ngón tay."
+    },
+    {
+      "id": 26133,
+      "quiz_meaning_vi": "lính chữa cháy",
+      "meaning_vi_clean": "lính chữa cháy",
+      "examples_clean": [
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "The firefighter rushed into the burning building.",
+          "example_vi": "Người lính chữa cháy lao vào tòa nhà đang bốc cháy."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "A brave firefighter saved the cat from the tree.",
+          "example_vi": "Một người lính chữa cháy dũng cảm đã cứu con mèo trên cây."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "Being a firefighter is a very dangerous job.",
+          "example_vi": "Làm lính chữa cháy là một công việc rất nguy hiểm."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "The firefighter wore a heavy protective suit.",
+          "example_vi": "Người lính chữa cháy mặc một bộ đồ bảo hộ nặng nề."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "Many people admire the work of a firefighter.",
+          "example_vi": "Nhiều người ngưỡng mộ công việc của người lính chữa cháy."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "The firefighter used a hose to put out the fire.",
+          "example_vi": "Người lính chữa cháy dùng vòi phun để dập tắt đám cháy."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "She decided to become a firefighter after the accident.",
+          "example_vi": "Cô ấy quyết định trở thành lính chữa cháy sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "The firefighter team arrived within minutes.",
+          "example_vi": "Đội lính chữa cháy đã đến trong vòng vài phút."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "He thanked the firefighter for his quick response.",
+          "example_vi": "Anh ấy cảm ơn người lính chữa cháy vì phản ứng nhanh chóng."
+        },
+        {
+          "meaning_vi": "lính chữa cháy",
+          "example_en": "The firefighter was honored for his bravery.",
+          "example_vi": "Người lính chữa cháy đã được vinh danh vì sự dũng cảm của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ phù hợp.",
+      "word": "firefighter",
+      "normalized_word": "firefighter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The firefighter rushed into the burning building.",
+      "example_vi_clean": "Người lính chữa cháy lao vào tòa nhà đang bốc cháy."
+    },
+    {
+      "id": 26134,
+      "quiz_meaning_vi": "chắc",
+      "meaning_vi_clean": "chắc; vững chắc; kiên quyết",
+      "examples_clean": [
+        {
+          "meaning_vi": "chắc",
+          "example_en": "The mattress is firm but comfortable.",
+          "example_vi": "Chiếc đệm chắc nhưng thoải mái."
+        },
+        {
+          "meaning_vi": "chắc",
+          "example_en": "Press the soil until it feels firm.",
+          "example_vi": "Hãy nén đất cho đến khi thấy chắc."
+        },
+        {
+          "meaning_vi": "chắc",
+          "example_en": "Choose firm tomatoes for the salad.",
+          "example_vi": "Hãy chọn những quả cà chua chắc để làm món salad."
+        },
+        {
+          "meaning_vi": "chắc",
+          "example_en": "He gave me a firm handshake.",
+          "example_vi": "Anh ấy bắt tay tôi thật chắc."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The ladder must stand on firm ground.",
+          "example_vi": "Chiếc thang phải đứng trên nền đất vững chắc."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "They built the house on a firm foundation.",
+          "example_vi": "Họ xây ngôi nhà trên một nền móng vững chắc."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "She has a firm belief in equal rights.",
+          "example_vi": "Cô ấy có niềm tin vững chắc vào quyền bình đẳng."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "The teacher was firm with the noisy class.",
+          "example_vi": "Giáo viên rất kiên quyết với lớp học ồn ào."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "She remained firm despite the pressure.",
+          "example_vi": "Cô ấy vẫn kiên quyết bất chấp áp lực."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "We need a firm decision by Friday.",
+          "example_vi": "Chúng ta cần một quyết định dứt khoát trước thứ Sáu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ đúng POS tính từ; loại nghĩa danh từ 'hãng' và thay bốn ví dụ sai từ loại.",
+      "word": "firm",
+      "normalized_word": "firm",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The mattress is firm but comfortable.",
+      "example_vi_clean": "Chiếc đệm chắc nhưng thoải mái."
+    },
+    {
+      "id": 26135,
+      "quiz_meaning_vi": "vững chắc",
+      "meaning_vi_clean": "vững chắc; kiên quyết",
+      "examples_clean": [
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The shelf was fixed firmly to the wall.",
+          "example_vi": "Cái kệ được gắn vững chắc vào tường."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "Hold the handle firmly while you climb.",
+          "example_vi": "Hãy nắm chặt tay cầm một cách vững chắc khi bạn leo lên."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The tent was staked firmly into the ground.",
+          "example_vi": "Chiếc lều được cắm cọc vững chắc xuống đất."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "He gripped the steering wheel firmly.",
+          "example_vi": "Anh ấy nắm chặt vô lăng một cách vững chắc."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "She spoke firmly about her requirements.",
+          "example_vi": "Cô ấy nói một cách kiên quyết về các yêu cầu của mình."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "He refused the offer firmly.",
+          "example_vi": "Anh ấy từ chối lời đề nghị một cách kiên quyết."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "The teacher dealt with the problem firmly.",
+          "example_vi": "Giáo viên đã giải quyết vấn đề một cách kiên quyết."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "She stood firmly by her principles.",
+          "example_vi": "Cô ấy kiên quyết giữ vững các nguyên tắc của mình."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "He was told firmly to stop talking.",
+          "example_vi": "Anh ấy được bảo một cách kiên quyết là hãy ngừng nói chuyện."
+        },
+        {
+          "meaning_vi": "kiên quyết",
+          "example_en": "They acted firmly to prevent the disaster.",
+          "example_vi": "Họ đã hành động một cách kiên quyết để ngăn chặn thảm họa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "firmly",
+      "normalized_word": "firmly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The shelf was fixed firmly to the wall.",
+      "example_vi_clean": "Cái kệ được gắn vững chắc vào tường."
+    },
+    {
+      "id": 26136,
+      "quiz_meaning_vi": "thuộc tầng hai",
+      "meaning_vi_clean": "thuộc tầng hai",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "They rented a first-floor flat.",
+          "example_vi": "Họ thuê một căn hộ ở tầng hai."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "The first-floor windows face the park.",
+          "example_vi": "Các cửa sổ tầng hai hướng ra công viên."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "Her first-floor office is above the cafe.",
+          "example_vi": "Văn phòng tầng hai của cô ấy nằm phía trên quán cà phê."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "A first-floor bedroom overlooks the garden.",
+          "example_vi": "Một phòng ngủ ở tầng hai nhìn xuống khu vườn."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "The first-floor balcony needs repair.",
+          "example_vi": "Ban công tầng hai cần được sửa chữa."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "We chose a first-floor room near the stairs.",
+          "example_vi": "Chúng tôi chọn một phòng ở tầng hai gần cầu thang."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "The first-floor corridor was quiet.",
+          "example_vi": "Hành lang tầng hai rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "Smoke came from a first-floor kitchen.",
+          "example_vi": "Khói bốc ra từ một căn bếp ở tầng hai."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "The hotel has a first-floor dining room.",
+          "example_vi": "Khách sạn có một phòng ăn ở tầng hai."
+        },
+        {
+          "meaning_vi": "thuộc tầng hai",
+          "example_en": "Access to the first-floor apartment is by lift.",
+          "example_vi": "Có thể đi thang máy lên căn hộ tầng hai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ POS tính từ ghép và quy ước Anh-Anh của nguồn: first-floor nghĩa là thuộc tầng hai theo cách gọi tại Việt Nam.",
+      "word": "first-floor",
+      "normalized_word": "first-floor",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They rented a first-floor flat.",
+      "example_vi_clean": "Họ thuê một căn hộ ở tầng hai."
+    },
+    {
+      "id": 26137,
+      "quiz_meaning_vi": "sự thích hợp",
+      "meaning_vi_clean": "sự thích hợp; tình trạng sung sức",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thích hợp",
+          "example_en": "The fitness of the candidate for the job was clear.",
+          "example_vi": "Sự thích hợp của ứng viên cho công việc đó rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự thích hợp",
+          "example_en": "They discussed the fitness of the plan.",
+          "example_vi": "Họ đã thảo luận về sự thích hợp của kế hoạch."
+        },
+        {
+          "meaning_vi": "sự thích hợp",
+          "example_en": "He questioned the fitness of the materials.",
+          "example_vi": "Anh ấy đặt câu hỏi về sự thích hợp của các vật liệu."
+        },
+        {
+          "meaning_vi": "sự thích hợp",
+          "example_en": "The fitness of the location was perfect.",
+          "example_vi": "Sự thích hợp của địa điểm đó là hoàn hảo."
+        },
+        {
+          "meaning_vi": "tình trạng sung sức",
+          "example_en": "Regular exercise improves your physical fitness.",
+          "example_vi": "Tập thể dục thường xuyên cải thiện tình trạng sung sức của bạn."
+        },
+        {
+          "meaning_vi": "tình trạng sung sức",
+          "example_en": "She is in great fitness for the marathon.",
+          "example_vi": "Cô ấy đang ở tình trạng sung sức tuyệt vời cho cuộc chạy marathon."
+        },
+        {
+          "meaning_vi": "tình trạng sung sức",
+          "example_en": "He works out to maintain his fitness.",
+          "example_vi": "Anh ấy tập luyện để duy trì tình trạng sung sức của mình."
+        },
+        {
+          "meaning_vi": "tình trạng sung sức",
+          "example_en": "Fitness is important for a healthy life.",
+          "example_vi": "Tình trạng sung sức rất quan trọng cho một cuộc sống khỏe mạnh."
+        },
+        {
+          "meaning_vi": "tình trạng sung sức",
+          "example_en": "The coach checked the players' fitness.",
+          "example_vi": "Huấn luyện viên đã kiểm tra tình trạng sung sức của các cầu thủ."
+        },
+        {
+          "meaning_vi": "tình trạng sung sức",
+          "example_en": "She joined a gym to improve her fitness.",
+          "example_vi": "Cô ấy tham gia một phòng tập để cải thiện tình trạng sung sức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho các nghĩa.",
+      "word": "fitness",
+      "normalized_word": "fitness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The fitness of the candidate for the job was clear.",
+      "example_vi_clean": "Sự thích hợp của ứng viên cho công việc đó rất rõ ràng."
+    },
+    {
+      "id": 26138,
+      "quiz_meaning_vi": "hào nhoáng",
+      "meaning_vi_clean": "hào nhoáng; chớp nhoáng",
+      "examples_clean": [
+        {
+          "meaning_vi": "hào nhoáng",
+          "example_en": "He arrived in a flash new car.",
+          "example_vi": "Anh ấy đến bằng một chiếc xe mới hào nhoáng."
+        },
+        {
+          "meaning_vi": "hào nhoáng",
+          "example_en": "They stayed at a flash hotel downtown.",
+          "example_vi": "Họ ở tại một khách sạn hào nhoáng ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "hào nhoáng",
+          "example_en": "The restaurant looks too flash for us.",
+          "example_vi": "Nhà hàng trông quá hào nhoáng đối với chúng tôi."
+        },
+        {
+          "meaning_vi": "hào nhoáng",
+          "example_en": "She wore a flash designer jacket.",
+          "example_vi": "Cô ấy mặc một chiếc áo khoác hàng hiệu hào nhoáng."
+        },
+        {
+          "meaning_vi": "hào nhoáng",
+          "example_en": "His flash lifestyle impressed the visitors.",
+          "example_vi": "Lối sống hào nhoáng của anh ấy gây ấn tượng với khách."
+        },
+        {
+          "meaning_vi": "hào nhoáng",
+          "example_en": "The office has a flash modern interior.",
+          "example_vi": "Văn phòng có nội thất hiện đại hào nhoáng."
+        },
+        {
+          "meaning_vi": "chớp nhoáng",
+          "example_en": "The store announced a flash sale.",
+          "example_vi": "Cửa hàng công bố một đợt giảm giá chớp nhoáng."
+        },
+        {
+          "meaning_vi": "chớp nhoáng",
+          "example_en": "They carried out a flash inspection.",
+          "example_vi": "Họ tiến hành một cuộc kiểm tra chớp nhoáng."
+        },
+        {
+          "meaning_vi": "chớp nhoáng",
+          "example_en": "A flash storm flooded the street.",
+          "example_vi": "Một cơn bão chớp nhoáng làm ngập đường phố."
+        },
+        {
+          "meaning_vi": "chớp nhoáng",
+          "example_en": "The team made a flash visit to the site.",
+          "example_vi": "Đội đã có một chuyến thăm chớp nhoáng tới địa điểm đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ đúng POS tính từ; thay toàn bộ nghĩa và ví dụ danh từ bằng hai cách dùng tính từ.",
+      "word": "flash",
+      "normalized_word": "flash",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He arrived in a flash new car.",
+      "example_vi_clean": "Anh ấy đến bằng một chiếc xe mới hào nhoáng."
+    },
+    {
+      "id": 26139,
+      "quiz_meaning_vi": "bằng phẳng",
+      "meaning_vi_clean": "bằng phẳng; nhạt nhẽo; xẹp",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The land here is very flat.",
+          "example_vi": "Đất ở đây rất bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "Put the box on a flat surface.",
+          "example_vi": "Hãy đặt chiếc hộp trên một bề mặt bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The road is long and flat.",
+          "example_vi": "Con đường dài và bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "This table is not completely flat.",
+          "example_vi": "Chiếc bàn này không hoàn toàn bằng phẳng."
+        },
+        {
+          "meaning_vi": "nhạt nhẽo",
+          "example_en": "The performance felt flat and lifeless.",
+          "example_vi": "Màn trình diễn có vẻ nhạt nhẽo và thiếu sức sống."
+        },
+        {
+          "meaning_vi": "nhạt nhẽo",
+          "example_en": "His joke fell flat with the audience.",
+          "example_vi": "Câu đùa của anh ấy trở nên nhạt nhẽo trước khán giả."
+        },
+        {
+          "meaning_vi": "nhạt nhẽo",
+          "example_en": "Her voice sounded flat and emotionless.",
+          "example_vi": "Giọng cô ấy nghe nhạt nhẽo và vô cảm."
+        },
+        {
+          "meaning_vi": "xẹp",
+          "example_en": "The bicycle tyre is flat again.",
+          "example_vi": "Lốp xe đạp lại bị xẹp."
+        },
+        {
+          "meaning_vi": "xẹp",
+          "example_en": "We could not drive with a flat tyre.",
+          "example_vi": "Chúng tôi không thể lái xe với một chiếc lốp bị xẹp."
+        },
+        {
+          "meaning_vi": "xẹp",
+          "example_en": "The ball went flat after a few days.",
+          "example_vi": "Quả bóng bị xẹp sau vài ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ đúng POS tính từ; loại nghĩa danh từ 'căn hộ' và thay bốn ví dụ sai từ loại.",
+      "word": "flat",
+      "normalized_word": "flat",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The land here is very flat.",
+      "example_vi_clean": "Đất ở đây rất bằng phẳng."
+    },
+    {
+      "id": 26140,
+      "quiz_meaning_vi": "hương vị",
+      "meaning_vi_clean": "hương vị",
+      "examples_clean": [
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The soup has a rich flavor.",
+          "example_vi": "Món súp có hương vị đậm đà."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "I love the flavor of fresh strawberries.",
+          "example_vi": "Tôi thích hương vị của dâu tây tươi."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This ice cream has a unique flavor.",
+          "example_vi": "Món kem này có hương vị độc đáo."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "Garlic adds flavor to the sauce.",
+          "example_vi": "Tỏi làm tăng hương vị cho nước sốt."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The coffee has a strong flavor.",
+          "example_vi": "Cà phê có hương vị đậm."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "Can you describe the flavor of this dish?",
+          "example_vi": "Bạn có thể mô tả hương vị của món ăn này không?"
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "Cooking slowly brings out the flavor of the meat.",
+          "example_vi": "Nấu chậm làm nổi bật hương vị của thịt."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The lemon gives the cake a fresh flavor.",
+          "example_vi": "Chanh tạo cho chiếc bánh một hương vị tươi mát."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This tea has a delicate flavor.",
+          "example_vi": "Loại trà này có hương vị thanh nhẹ."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The spices produce a warm flavor.",
+          "example_vi": "Các loại gia vị tạo ra một hương vị ấm áp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ đúng POS danh từ; sửa các câu tiếng Anh bị chèn từ tiếng Việt và thống nhất nghĩa 'hương vị'.",
+      "word": "flavor",
+      "normalized_word": "flavor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The soup has a rich flavor.",
+      "example_vi_clean": "Món súp có hương vị đậm đà."
+    }
+  ],
+  "audit": {
+    "source": "manual-review-override",
+    "overrideFile": "data\\vocabulary\\normalization\\manual-overrides\\review-required-15.json",
+    "reason": "Rà soát cục bộ 15 record bị AI gắn review_required; giữ nguyên word, POS và CEFR nguồn, loại nghĩa/ví dụ sai từ loại.",
+    "databaseUpdated": false
+  }
+}

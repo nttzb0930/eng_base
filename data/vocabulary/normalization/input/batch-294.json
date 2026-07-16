@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-294",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26931,
+      "word": "drapery",
+      "normalized_word": "drapery",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dreipəri/",
+      "primary_meaning_vi": "vải vóc",
+      "meaning_vi": "vải vóc; nghề bán vải, nghề bán đồ vải; quần áo xếp nếp; màn rủ xếp nếp, trướng rủ xếp nếp; thuật khắc xếp nếp, thuật vẽ xếp nếp (quần áo, màn... trong điêu khắc, hội hoạ)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26932,
+      "word": "draught",
+      "normalized_word": "draught",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ,  (từ hiếm,nghĩa hiếm) ((cũng) draft)",
+      "phonetic": "/drɑ:ft/",
+      "primary_meaning_vi": "sự kéo",
+      "meaning_vi": "sự kéo; sự kéo lưới (bắt cá); mẻ lưới; sự uống một hơi; hơi, hớp, ngụm; cơn (đau...), chầu (vui...); sự lấy (rượu...) ở thùng ra; lượng (rượu...) lấy ở thùng ra; liều thuốc nước; lượng nước rẽ, lượng xả nước; tầm nước (của thuyền tàu...); gió lò; gió lùa; sự thông gió (ở lò, lò sưởi); cờ đam; phân đội biệt phái, phân đội tăng cường ((thường) draft); bản phác hoạ, bản phác thảo, bản dự thảo ((thường) draft); hối phiếu (bây giờ thg chỉ dùng draft); gặp vận bỉ, gặp vận rủi, lâm vào cảnh túng quẫn; phác thảo, phác hoạ; dự thảo (đạo luật...); lấy ra, rút ra (một phân đội... để làm công tác biệt phái...)",
+      "example_en": "She took a deep draft from the bottle of water.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His first drafts were better than most authors' final products.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He left the country to avoid the draft.",
+          "example_vi": null
+        },
+        {
+          "example_en": "using oxen for draft shot forth an arrow with a mighty draft",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26933,
+      "word": "dread",
+      "normalized_word": "dread",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "tính từ",
+      "phonetic": "/dred/",
+      "primary_meaning_vi": "sự kinh sợ",
+      "meaning_vi": "sự kinh sợ, sự kinh hãi, sự khiếp sợ, sự khiếp đảm; điều làm kinh hãi, vật làm khiếp sợ; kinh sợ, kinh hãi, khiếp sợ; nghĩ đến mà sợ; sợ; dễ sợ, khiếp, kinh khiếp; làm run sợ, làm kinh sợ, uy nghiêm lẫm liệt",
+      "example_en": "my visit to the doctor is filling me with dread",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I'm dreading getting the results of the test, as it could decide my whole life.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26934,
+      "word": "dreadful",
+      "normalized_word": "dreadful",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dredful/",
+      "primary_meaning_vi": "dễ sợ",
+      "meaning_vi": "dễ sợ, khiếp, kinh khiếp; rất tồi, rất xấu; hết sức rầy rà, rất khó chịu, rất bực mình, chán ngấy, làm mệt mỏi; truyện khủng khiếp; tiểu thuyết rùng rợn ((cũng) penny dreadful)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26935,
+      "word": "dreamy",
+      "normalized_word": "dreamy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'dri:mi/",
+      "primary_meaning_vi": "hay mơ màng",
+      "meaning_vi": "hay mơ màng, hay mơ mộng vẩn vơ, không thực tế, hão huyền; như trong giấc mơ, kỳ ảo; mơ hồ, lờ mờ, mờ mịt; ,  (thơ ca) đầy những giấc mơ",
+      "example_en": "I love the doctor in that American TV show: he is so dreamy!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "That place was so dreamy!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26936,
+      "word": "drinkable",
+      "normalized_word": "drinkable",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ,  (thường) số nhiều",
+      "phonetic": "/'driɳkəbl/",
+      "primary_meaning_vi": "có thể uống được",
+      "meaning_vi": "có thể uống được; đồ uống, thức uống",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26937,
+      "word": "droop",
+      "normalized_word": "droop",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/dru:p/",
+      "primary_meaning_vi": "dáng gục xuống",
+      "meaning_vi": "dáng gục xuống, dáng cuối xuống, dáng rũ xuống; vẻ ủ rũ; sự chán nản; sự hạ giọng; ngả xuống, rủ xuống; rũ xuống, gục xuống (vì mệt nhọc...); nhìn xuống (mắt, đầu...); chìm xuống, lặn xế (mặt trời...); ủ rũ; chán nản; cúi, gục (đầu...) xuống",
+      "example_en": "He walked with a discouraged droop.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26938,
+      "word": "dropout",
+      "normalized_word": "dropout",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "chữ ngoài",
+      "meaning_vi": "chữ ngoài",
+      "example_en": "The politicians of the world are mere political university dropouts.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26939,
+      "word": "drought",
+      "normalized_word": "drought",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/draut/ (drouth) /drauθ/",
+      "primary_meaning_vi": "hạn hán",
+      "meaning_vi": "hạn hán; sự khô cạn; sự khát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26940,
+      "word": "duel",
+      "normalized_word": "duel",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'dju:əl/",
+      "primary_meaning_vi": "cuộc đọ kiếm tay đôi",
+      "meaning_vi": "cuộc đọ kiếm tay đôi, cuộc đọ súng tay đôi (để thanh toán một mối bất hoà, một mối hận thù...); cuộc tranh chấp tay đôi (giữa hai người, hai đảng phái...); đọ kiếm tay đôi, đọ súng tay đôi; tranh chấp tay đôi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

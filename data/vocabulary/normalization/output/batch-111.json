@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25101,
+      "quiz_meaning_vi": "gây tai hại",
+      "meaning_vi_clean": "gây tai hại; có hại",
+      "examples_clean": [
+        {
+          "meaning_vi": "gây tai hại",
+          "example_en": "Wear a hat to protect your skin from harmful sunlight.",
+          "example_vi": "Hãy đội mũ để bảo vệ da bạn khỏi ánh nắng gây tai hại."
+        },
+        {
+          "meaning_vi": "gây tai hại",
+          "example_en": "Pollution can have a harmful effect on the environment.",
+          "example_vi": "Ô nhiễm có thể gây tai hại cho môi trường."
+        },
+        {
+          "meaning_vi": "gây tai hại",
+          "example_en": "Smoking is harmful to your health.",
+          "example_vi": "Hút thuốc gây tai hại cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "gây tai hại",
+          "example_en": "Excessive noise can be harmful to your hearing.",
+          "example_vi": "Tiếng ồn quá mức có thể gây tai hại cho thính giác của bạn."
+        },
+        {
+          "meaning_vi": "có hại",
+          "example_en": "Some insects are beneficial, while others are harmful.",
+          "example_vi": "Một số loài côn trùng có lợi, trong khi những loài khác thì có hại."
+        },
+        {
+          "meaning_vi": "có hại",
+          "example_en": "It is harmful to eat too much sugar.",
+          "example_vi": "Ăn quá nhiều đường là có hại."
+        },
+        {
+          "meaning_vi": "có hại",
+          "example_en": "The chemical is harmful if swallowed.",
+          "example_vi": "Hóa chất này có hại nếu nuốt phải."
+        },
+        {
+          "meaning_vi": "có hại",
+          "example_en": "Don't let children play with harmful objects.",
+          "example_vi": "Đừng để trẻ em chơi với những vật dụng có hại."
+        },
+        {
+          "meaning_vi": "có hại",
+          "example_en": "The new policy might be harmful to small businesses.",
+          "example_vi": "Chính sách mới có thể có hại cho các doanh nghiệp nhỏ."
+        },
+        {
+          "meaning_vi": "có hại",
+          "example_en": "Stress can be harmful to your mental well-being.",
+          "example_vi": "Căng thẳng có thể có hại cho sức khỏe tinh thần của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ theo quy tắc.",
+      "word": "harmful",
+      "normalized_word": "harmful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Wear a hat to protect your skin from harmful sunlight.",
+      "example_vi_clean": "Hãy đội mũ để bảo vệ da bạn khỏi ánh nắng gây tai hại."
+    },
+    {
+      "id": 25102,
+      "quiz_meaning_vi": "sự hài hoà",
+      "meaning_vi_clean": "sự hài hoà; sự hoà thuận",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hài hoà",
+          "example_en": "The colors in the room are in perfect harmony.",
+          "example_vi": "Màu sắc trong phòng tạo nên sự hài hoà hoàn hảo."
+        },
+        {
+          "meaning_vi": "sự hài hoà",
+          "example_en": "The building is in harmony with its surroundings.",
+          "example_vi": "Tòa nhà có sự hài hoà với môi trường xung quanh."
+        },
+        {
+          "meaning_vi": "sự hài hoà",
+          "example_en": "We need to live in harmony with nature.",
+          "example_vi": "Chúng ta cần sống trong sự hài hoà với thiên nhiên."
+        },
+        {
+          "meaning_vi": "sự hài hoà",
+          "example_en": "The music creates a sense of harmony.",
+          "example_vi": "Âm nhạc tạo ra cảm giác hài hoà."
+        },
+        {
+          "meaning_vi": "sự hoà thuận",
+          "example_en": "They lived together in peace and harmony.",
+          "example_vi": "Họ sống cùng nhau trong hòa bình và sự hoà thuận."
+        },
+        {
+          "meaning_vi": "sự hoà thuận",
+          "example_en": "The team worked in harmony to finish the project.",
+          "example_vi": "Cả nhóm làm việc trong sự hoà thuận để hoàn thành dự án."
+        },
+        {
+          "meaning_vi": "sự hoà thuận",
+          "example_en": "It is important to maintain harmony within the family.",
+          "example_vi": "Điều quan trọng là duy trì sự hoà thuận trong gia đình."
+        },
+        {
+          "meaning_vi": "sự hoà thuận",
+          "example_en": "The neighbors live in complete harmony.",
+          "example_vi": "Những người hàng xóm sống trong sự hoà thuận tuyệt đối."
+        },
+        {
+          "meaning_vi": "sự hoà thuận",
+          "example_en": "Harmony between different cultures is essential.",
+          "example_vi": "Sự hoà thuận giữa các nền văn hóa khác nhau là rất cần thiết."
+        },
+        {
+          "meaning_vi": "sự hoà thuận",
+          "example_en": "They reached a state of harmony after the argument.",
+          "example_vi": "Họ đã đạt được sự hoà thuận sau cuộc tranh cãi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "harmony",
+      "normalized_word": "harmony",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The colors in the room are in perfect harmony.",
+      "example_vi_clean": "Màu sắc trong phòng tạo nên sự hài hoà hoàn hảo."
+    },
+    {
+      "id": 25103,
+      "quiz_meaning_vi": "việc thu hoạch",
+      "meaning_vi_clean": "việc thu hoạch; mùa gặt",
+      "examples_clean": [
+        {
+          "meaning_vi": "việc thu hoạch",
+          "example_en": "The harvest of the crops begins in autumn.",
+          "example_vi": "Việc thu hoạch mùa màng bắt đầu vào mùa thu."
+        },
+        {
+          "meaning_vi": "việc thu hoạch",
+          "example_en": "They are busy with the harvest this week.",
+          "example_vi": "Họ đang bận rộn với việc thu hoạch trong tuần này."
+        },
+        {
+          "meaning_vi": "việc thu hoạch",
+          "example_en": "The harvest was completed before the rain started.",
+          "example_vi": "Việc thu hoạch đã hoàn tất trước khi trời bắt đầu mưa."
+        },
+        {
+          "meaning_vi": "việc thu hoạch",
+          "example_en": "Modern machines make the harvest much faster.",
+          "example_vi": "Máy móc hiện đại giúp việc thu hoạch nhanh hơn nhiều."
+        },
+        {
+          "meaning_vi": "mùa gặt",
+          "example_en": "The harvest is a busy time for farmers.",
+          "example_vi": "Mùa gặt là thời gian bận rộn đối với nông dân."
+        },
+        {
+          "meaning_vi": "mùa gặt",
+          "example_en": "We had a very good harvest this year.",
+          "example_vi": "Chúng tôi đã có một mùa gặt rất tốt năm nay."
+        },
+        {
+          "meaning_vi": "mùa gặt",
+          "example_en": "The harvest was delayed due to bad weather.",
+          "example_vi": "Mùa gặt đã bị trì hoãn do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "mùa gặt",
+          "example_en": "Farmers celebrate after the harvest.",
+          "example_vi": "Nông dân ăn mừng sau mùa gặt."
+        },
+        {
+          "meaning_vi": "mùa gặt",
+          "example_en": "The harvest provides food for the whole winter.",
+          "example_vi": "Mùa gặt cung cấp thực phẩm cho cả mùa đông."
+        },
+        {
+          "meaning_vi": "mùa gặt",
+          "example_en": "The village festival marks the end of the harvest.",
+          "example_vi": "Lễ hội làng đánh dấu sự kết thúc của mùa gặt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ và chọn nghĩa phổ biến.",
+      "word": "harvest",
+      "normalized_word": "harvest",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The harvest of the crops begins in autumn.",
+      "example_vi_clean": "Việc thu hoạch mùa màng bắt đầu vào mùa thu."
+    },
+    {
+      "id": 25104,
+      "quiz_meaning_vi": "tai nghe",
+      "meaning_vi_clean": "tai nghe",
+      "examples_clean": [
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "She handed me one headphone so I could listen too.",
+          "example_vi": "Cô ấy đưa cho tôi một bên tai nghe để tôi cũng có thể nghe."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "I need to buy a new pair of headphones.",
+          "example_vi": "Tôi cần mua một chiếc tai nghe mới."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "He wears headphones while studying.",
+          "example_vi": "Anh ấy đeo tai nghe trong khi học bài."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "The headphones are connected to the computer.",
+          "example_vi": "Chiếc tai nghe được kết nối với máy tính."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "Please put on your headphones to listen to the audio.",
+          "example_vi": "Vui lòng đeo tai nghe của bạn để nghe âm thanh."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "My headphones are broken.",
+          "example_vi": "Tai nghe của tôi bị hỏng rồi."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "She likes listening to music with headphones.",
+          "example_vi": "Cô ấy thích nghe nhạc bằng tai nghe."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "The sound quality of these headphones is great.",
+          "example_vi": "Chất lượng âm thanh của chiếc tai nghe này rất tuyệt."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "I left my headphones at home.",
+          "example_vi": "Tôi để quên tai nghe ở nhà rồi."
+        },
+        {
+          "meaning_vi": "tai nghe",
+          "example_en": "These headphones are very comfortable.",
+          "example_vi": "Chiếc tai nghe này rất thoải mái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'ống nghe' thành 'tai nghe' cho phù hợp với từ vựng hiện đại.",
+      "word": "headphone",
+      "normalized_word": "headphone",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She handed me one headphone so I could listen too.",
+      "example_vi_clean": "Cô ấy đưa cho tôi một bên tai nghe để tôi cũng có thể nghe."
+    },
+    {
+      "id": 25105,
+      "quiz_meaning_vi": "nhiệt",
+      "meaning_vi_clean": "nhiệt; sức nóng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhiệt",
+          "example_en": "The sun provides light and heat.",
+          "example_vi": "Mặt trời cung cấp ánh sáng và nhiệt."
+        },
+        {
+          "meaning_vi": "nhiệt",
+          "example_en": "The metal expands when exposed to heat.",
+          "example_vi": "Kim loại giãn nở khi tiếp xúc với nhiệt."
+        },
+        {
+          "meaning_vi": "nhiệt",
+          "example_en": "The system is designed to retain heat.",
+          "example_vi": "Hệ thống được thiết kế để giữ nhiệt."
+        },
+        {
+          "meaning_vi": "nhiệt",
+          "example_en": "Heat is a form of energy.",
+          "example_vi": "Nhiệt là một dạng năng lượng."
+        },
+        {
+          "meaning_vi": "sức nóng",
+          "example_en": "The heat of the summer is unbearable.",
+          "example_vi": "Sức nóng của mùa hè thật không thể chịu nổi."
+        },
+        {
+          "meaning_vi": "sức nóng",
+          "example_en": "We tried to escape the heat by staying indoors.",
+          "example_vi": "Chúng tôi cố gắng tránh sức nóng bằng cách ở trong nhà."
+        },
+        {
+          "meaning_vi": "sức nóng",
+          "example_en": "The heat from the fire warmed the room.",
+          "example_vi": "Sức nóng từ ngọn lửa làm ấm căn phòng."
+        },
+        {
+          "meaning_vi": "sức nóng",
+          "example_en": "He felt the heat of the sun on his face.",
+          "example_vi": "Anh ấy cảm nhận được sức nóng của mặt trời trên khuôn mặt."
+        },
+        {
+          "meaning_vi": "sức nóng",
+          "example_en": "The desert is known for its extreme heat.",
+          "example_vi": "Sa mạc nổi tiếng với sức nóng khắc nghiệt."
+        },
+        {
+          "meaning_vi": "sức nóng",
+          "example_en": "The heat made it difficult to work outside.",
+          "example_vi": "Sức nóng khiến việc làm việc ngoài trời trở nên khó khăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa lóng và nghĩa động từ, tập trung vào nghĩa danh từ phổ biến.",
+      "word": "heat",
+      "normalized_word": "heat",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The sun provides light and heat.",
+      "example_vi_clean": "Mặt trời cung cấp ánh sáng và nhiệt."
+    },
+    {
+      "id": 25106,
+      "quiz_meaning_vi": "sự làm nóng",
+      "meaning_vi_clean": "sự làm nóng; sự nóng lên",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự làm nóng",
+          "example_en": "The heating of the water takes only a few minutes.",
+          "example_vi": "Sự làm nóng nước chỉ mất vài phút."
+        },
+        {
+          "meaning_vi": "sự làm nóng",
+          "example_en": "Proper heating is essential for this experiment.",
+          "example_vi": "Sự làm nóng đúng cách là rất cần thiết cho thí nghiệm này."
+        },
+        {
+          "meaning_vi": "sự làm nóng",
+          "example_en": "The process involves the heating of metal parts.",
+          "example_vi": "Quy trình bao gồm sự làm nóng các bộ phận kim loại."
+        },
+        {
+          "meaning_vi": "sự làm nóng",
+          "example_en": "We need to improve the heating of the building.",
+          "example_vi": "Chúng ta cần cải thiện sự làm nóng của tòa nhà."
+        },
+        {
+          "meaning_vi": "sự nóng lên",
+          "example_en": "Global warming refers to the heating of the Earth.",
+          "example_vi": "Sự nóng lên toàn cầu đề cập đến sự nóng lên của Trái Đất."
+        },
+        {
+          "meaning_vi": "sự nóng lên",
+          "example_en": "The heating of the atmosphere is a serious concern.",
+          "example_vi": "Sự nóng lên của khí quyển là một mối quan tâm nghiêm trọng."
+        },
+        {
+          "meaning_vi": "sự nóng lên",
+          "example_en": "We observed the gradual heating of the liquid.",
+          "example_vi": "Chúng tôi quan sát thấy sự nóng lên dần dần của chất lỏng."
+        },
+        {
+          "meaning_vi": "sự nóng lên",
+          "example_en": "The heating of the engine is normal after long use.",
+          "example_vi": "Sự nóng lên của động cơ là bình thường sau khi sử dụng lâu."
+        },
+        {
+          "meaning_vi": "sự nóng lên",
+          "example_en": "The heating of the surface was caused by direct sunlight.",
+          "example_vi": "Sự nóng lên của bề mặt là do ánh nắng trực tiếp."
+        },
+        {
+          "meaning_vi": "sự nóng lên",
+          "example_en": "The heating of the room was slow but steady.",
+          "example_vi": "Sự nóng lên của căn phòng diễn ra chậm nhưng đều đặn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "heating",
+      "normalized_word": "heating",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The heating of the water takes only a few minutes.",
+      "example_vi_clean": "Sự làm nóng nước chỉ mất vài phút."
+    },
+    {
+      "id": 25107,
+      "quiz_meaning_vi": "nặng nề",
+      "meaning_vi_clean": "nặng nề",
+      "examples_clean": [
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "He clomped heavily up the stairs in his boots.",
+          "example_vi": "Anh ấy bước đi nặng nề lên cầu thang với đôi ủng của mình."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "It was raining heavily all night.",
+          "example_vi": "Trời mưa nặng nề suốt cả đêm."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "The door was heavily locked.",
+          "example_vi": "Cánh cửa đã được khóa một cách nặng nề."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "She sighed heavily after hearing the news.",
+          "example_vi": "Cô ấy thở dài nặng nề sau khi nghe tin."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "The city was heavily damaged by the storm.",
+          "example_vi": "Thành phố đã bị hư hại nặng nề bởi cơn bão."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "He relies heavily on his parents for support.",
+          "example_vi": "Anh ấy dựa dẫm nặng nề vào sự hỗ trợ của cha mẹ."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "The traffic was heavily congested this morning.",
+          "example_vi": "Giao thông bị tắc nghẽn nặng nề vào sáng nay."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "The area is heavily populated.",
+          "example_vi": "Khu vực này có dân cư sinh sống nặng nề (đông đúc)."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "The company is heavily in debt.",
+          "example_vi": "Công ty đang nợ nần nặng nề."
+        },
+        {
+          "meaning_vi": "nặng nề",
+          "example_en": "They were heavily criticized for their actions.",
+          "example_vi": "Họ đã bị chỉ trích nặng nề vì những hành động của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "heavily",
+      "normalized_word": "heavily",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He clomped heavily up the stairs in his boots.",
+      "example_vi_clean": "Anh ấy bước đi nặng nề lên cầu thang với đôi ủng của mình."
+    },
+    {
+      "id": 25108,
+      "quiz_meaning_vi": "sự giúp đỡ",
+      "meaning_vi_clean": "sự giúp đỡ; giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "I need some help with my homework.",
+          "example_vi": "Tôi cần một chút sự giúp đỡ với bài tập về nhà."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Thank you for your help.",
+          "example_vi": "Cảm ơn vì sự giúp đỡ của bạn."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "She offered her help to the elderly.",
+          "example_vi": "Cô ấy đã đề nghị sự giúp đỡ của mình cho người già."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Any help would be greatly appreciated.",
+          "example_vi": "Bất kỳ sự giúp đỡ nào cũng sẽ được trân trọng."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "Can you help me carry these bags?",
+          "example_vi": "Bạn có thể giúp đỡ tôi mang những chiếc túi này không?"
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "He always tries to help his friends.",
+          "example_vi": "Anh ấy luôn cố gắng giúp đỡ bạn bè của mình."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "They helped us find the way.",
+          "example_vi": "Họ đã giúp đỡ chúng tôi tìm đường."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "This medicine will help you feel better.",
+          "example_vi": "Loại thuốc này sẽ giúp đỡ bạn cảm thấy tốt hơn."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "We should help those in need.",
+          "example_vi": "Chúng ta nên giúp đỡ những người gặp khó khăn."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "She helped him finish the project on time.",
+          "example_vi": "Cô ấy đã giúp đỡ anh ấy hoàn thành dự án đúng hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ/động từ và chọn nghĩa phổ biến.",
+      "word": "help",
+      "normalized_word": "help",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I need some help with my homework.",
+      "example_vi_clean": "Tôi cần một chút sự giúp đỡ với bài tập về nhà."
+    },
+    {
+      "id": 25109,
+      "quiz_meaning_vi": "có ích",
+      "meaning_vi_clean": "có ích; giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "có ích",
+          "example_en": "This book is very helpful for beginners.",
+          "example_vi": "Cuốn sách này rất có ích cho người mới bắt đầu."
+        },
+        {
+          "meaning_vi": "có ích",
+          "example_en": "Your advice was very helpful.",
+          "example_vi": "Lời khuyên của bạn rất có ích."
+        },
+        {
+          "meaning_vi": "có ích",
+          "example_en": "He gave me some helpful tips.",
+          "example_vi": "Anh ấy đã cho tôi vài mẹo rất có ích."
+        },
+        {
+          "meaning_vi": "có ích",
+          "example_en": "The website provides helpful information.",
+          "example_vi": "Trang web cung cấp thông tin rất có ích."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "She is a very helpful person.",
+          "example_vi": "Cô ấy là một người rất hay giúp đỡ."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "The staff were very helpful during our stay.",
+          "example_vi": "Nhân viên rất hay giúp đỡ trong suốt kỳ nghỉ của chúng tôi."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "He is always helpful to his neighbors.",
+          "example_vi": "Anh ấy luôn hay giúp đỡ hàng xóm của mình."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "It was very helpful of you to come.",
+          "example_vi": "Bạn thật hay giúp đỡ khi đã đến đây."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "They are helpful when someone is in trouble.",
+          "example_vi": "Họ rất hay giúp đỡ khi có ai đó gặp rắc rối."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "She is helpful with the housework.",
+          "example_vi": "Cô ấy rất hay giúp đỡ việc nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "helpful",
+      "normalized_word": "helpful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This book is very helpful for beginners.",
+      "example_vi_clean": "Cuốn sách này rất có ích cho người mới bắt đầu."
+    },
+    {
+      "id": 25110,
+      "quiz_meaning_vi": "người anh hùng",
+      "meaning_vi_clean": "người anh hùng; nhân vật chính",
+      "examples_clean": [
+        {
+          "meaning_vi": "người anh hùng",
+          "example_en": "He is a hero to many children.",
+          "example_vi": "Anh ấy là một người anh hùng đối với nhiều trẻ em."
+        },
+        {
+          "meaning_vi": "người anh hùng",
+          "example_en": "The firefighter was hailed as a hero.",
+          "example_vi": "Người lính cứu hỏa được ca ngợi như một người anh hùng."
+        },
+        {
+          "meaning_vi": "người anh hùng",
+          "example_en": "She acted like a hero in the crisis.",
+          "example_vi": "Cô ấy đã hành động như một người anh hùng trong cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "người anh hùng",
+          "example_en": "Every story needs a hero.",
+          "example_vi": "Mỗi câu chuyện đều cần một người anh hùng."
+        },
+        {
+          "meaning_vi": "nhân vật chính",
+          "example_en": "The hero of the novel faces many challenges.",
+          "example_vi": "Nhân vật chính của cuốn tiểu thuyết đối mặt với nhiều thử thách."
+        },
+        {
+          "meaning_vi": "nhân vật chính",
+          "example_en": "The hero eventually defeats the villain.",
+          "example_vi": "Nhân vật chính cuối cùng đã đánh bại kẻ phản diện."
+        },
+        {
+          "meaning_vi": "nhân vật chính",
+          "example_en": "I really like the hero in this movie.",
+          "example_vi": "Tôi thực sự thích nhân vật chính trong bộ phim này."
+        },
+        {
+          "meaning_vi": "nhân vật chính",
+          "example_en": "The hero's journey is a common theme.",
+          "example_vi": "Hành trình của nhân vật chính là một chủ đề phổ biến."
+        },
+        {
+          "meaning_vi": "nhân vật chính",
+          "example_en": "The hero makes a difficult decision at the end.",
+          "example_vi": "Nhân vật chính đưa ra một quyết định khó khăn ở phần kết."
+        },
+        {
+          "meaning_vi": "nhân vật chính",
+          "example_en": "The story focuses on the hero's growth.",
+          "example_vi": "Câu chuyện tập trung vào sự phát triển của nhân vật chính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "hero",
+      "normalized_word": "hero",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a hero to many children.",
+      "example_vi_clean": "Anh ấy là một người anh hùng đối với nhiều trẻ em."
+    }
+  ]
+}

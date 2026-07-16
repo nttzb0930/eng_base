@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-251",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26501,
+      "word": "blindly",
+      "normalized_word": "blindly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'blaindli/",
+      "primary_meaning_vi": "mù",
+      "meaning_vi": "mù, mù quáng; mò mẫm",
+      "example_en": "I stumbled blindly through the forest, branches whipping at my face.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26502,
+      "word": "blindness",
+      "normalized_word": "blindness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'blaindnis/",
+      "primary_meaning_vi": "sự đui mù",
+      "meaning_vi": "sự đui mù; sự mù quáng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26503,
+      "word": "blink",
+      "normalized_word": "blink",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bliɳk/",
+      "primary_meaning_vi": "cái nháy mắt",
+      "meaning_vi": "cái nháy mắt, cái chớp mắt; ánh lửa chập chờn, ánh lửa lung linh, ánh sáng nhấp nháy; ánh băng (phản chiếu lên chân trời) ((cũng) ice blink); cái nhìn qua, cái nhìn thoáng; ,  (từ lóng) trong tình trạng xấu, trong tình trạng rối loạn lộn xộn; hấp hối, sắp chết; say khướt, say bí tỉ; nháy mắt, chớp mắt; chập chờn, lung linh, nhấp nháy (ánh sáng); bật đèn, nhấp nháy; nhắm mắt lam ngơ; nháy, chớp (mắt); bật (đèn) nhấp nháy; nhắm mắt trước (vấn đề); tránh, lẩn tránh",
+      "example_en": "The loser in the staring game is the person who blinks first.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The blinking text on the screen was distracting.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to blink the question",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26504,
+      "word": "bloodstream",
+      "normalized_word": "bloodstream",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "dòng máu trong cơ thể",
+      "meaning_vi": "dòng máu trong cơ thể",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26505,
+      "word": "bloody",
+      "normalized_word": "bloody",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'blʌdi/",
+      "primary_meaning_vi": "vấy máu",
+      "meaning_vi": "vấy máu, đẫm máu, dính máu; chảy máu, có đổ máu; tàn bạo, khát máu, thích đổ máu, thích giết người ((cũng) bloody minded); đỏ như máu; uộc bloody, hết sức, vô cùng; chết tiệt, trời đánh thánh vật; làm vấy máu; làm đỏ máu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26506,
+      "word": "blooming",
+      "normalized_word": "blooming",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'blu:miɳ/",
+      "primary_meaning_vi": "đang nở hoa",
+      "meaning_vi": "đang nở hoa; tươi đẹp, tươi như hoa nở; đang ở thời kỳ rực rỡ, đang ở thời kỳ tươi đẹp nhất; quá, quá đỗi, quá chừng, hết sức; sự đúc (sắt thép) thành thỏi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26507,
+      "word": "blossom",
+      "normalized_word": "blossom",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'blɔsəm/",
+      "primary_meaning_vi": "hoa (của cây ăn quả)",
+      "meaning_vi": "hoa (của cây ăn quả); sự hứa hẹn, niềm hy vọng; ra hoa, trổ hoa ((nghĩa đen) & (nghĩa bóng))",
+      "example_en": "The blossom has come early this year.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The orchard is in blossom.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26508,
+      "word": "blur",
+      "normalized_word": "blur",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/blə:/",
+      "primary_meaning_vi": "cảnh mờ",
+      "meaning_vi": "cảnh mờ, dáng mập mờ; trạng thái mập mờ; vết mực, vết ố; bết nhơ; làm ô danh ai; làm mờ đi, che mờ; sương mù làm cảnh vật mờ đi; làm bẩn, bôi bẩn; làm nhoè ((nghĩa đen),  (nghĩa bóng))",
+      "example_en": "to blur a photograph by moving the camera while taking it",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to blur a manuscript by handling it while damp",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26509,
+      "word": "blurt",
+      "normalized_word": "blurt",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/blə:t/",
+      "primary_meaning_vi": "thốt ra",
+      "meaning_vi": "thốt ra, nói buột ra",
+      "example_en": "Please think about your reply and don't just blurt out the first thing that comes to mind.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26510,
+      "word": "boiling",
+      "normalized_word": "boiling",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'bɔiliɳ/",
+      "primary_meaning_vi": "sự sôi",
+      "meaning_vi": "sự sôi; sự sôi sục; sôi, đang sôi",
+      "example_en": "Boil some water in a pan.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Boil the eggs for three minutes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Pure water boils at 100 degrees Celsius.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It’s boiling outside!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

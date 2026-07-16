@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-059",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24581,
+      "word": "one",
+      "normalized_word": "one",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "danh từ",
+      "phonetic": "/wʌn/",
+      "primary_meaning_vi": "một",
+      "meaning_vi": "một; như thế không thay đổi; all; kết hôn, lấy nhau; một; một giờ; cú đấm; tính tống thể và tính thống nhất; đã làm lành (với ai); đồng ý (với ai); year; chắc chắn là anh ta sẽ không đến; lần lượt từng người một, từng cái một; another; một người nào đó, một (người, vật...); người ta, ai",
+      "example_en": "I knew as soon I met him that John was the one for me and we were married within a month.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "2003 September 26, \"DEAL WITH IT!!!!11one!!\", in alt.games.video.nintendo.gamecube, Usenet",
+          "example_vi": null
+        },
+        {
+          "example_en": "One day the prince set forth to kill the dragon that had brought terror to his father’s kingdom for centuries.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My aunt used to say, \"One day is just like the other.\"",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24582,
+      "word": "only",
+      "normalized_word": "only",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "liên từ",
+      "phonetic": "/'ounli/",
+      "primary_meaning_vi": "chỉ có một",
+      "meaning_vi": "chỉ có một, duy nhất; tốt nhất, đáng xét nhất; chỉ, mới; cuối cùng; giá mà; also; điều ấy đúng quá đi rồi còn gì nữa; nhưng, chỉ phải; nếu không, chỉ trừ ra",
+      "example_en": "He is the only doctor for miles.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He is their only son, in fact, an only child.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My heart is hers, and hers only.",
+          "example_vi": null
+        },
+        {
+          "example_en": "If there were only one more ticket!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24583,
+      "word": "open",
+      "normalized_word": "open",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'oupən/",
+      "primary_meaning_vi": "mở",
+      "meaning_vi": "mở, ngỏ; mở rộng, không hạn chế; không cấm; trần, không có mui che; không gói, không bọc; trống, hở, lộ thiên, thoáng rộng; thông, không bị tắn nghẽn; công khai, rõ ràng, ra mắt, không che giấu, ai cũng biết; cởi mở, thật tình; thưa, có lỗ hổng, có khe hở...; chưa giải quyết, chưa xong; rộng rãi, phóng khoáng, sẵn sàng tiếp thu cái mới, không thành kiến; còn bỏ trống, chưa ai đảm nhiệm, chưa ai làm...; không đóng băng; không có trong sương giá, dịu, ấm áp; mở ra cho, có thể bị; hở; quang đãng, không có sương mù; mở (âm); buông (dây); ai đến cũng tiếp đãi, rất hiếu khách; lay; arm; chỗ ngoài trời, chỗ thoáng mát, chỗ rộng râi, nơi đồng không mông quạnh; biên khơi; sự công khai; chỗ hở, chỗ mở; (từ Mỹ,nghĩa Mỹ) cuộc thi (điền kinh, thể dục, thể thao...) tranh giải vô địch toàn quốc tế ((cũng) the National Open); mở, bắt đầu, khai mạc; thổ lộ; nhìn thấy, trông thấy; mở cửa; mở ra, trông ra; bắt đầu, khai mạc; huồm poảy khyếm bắt đầu nói (người); nở; trông thấy rõ; phơi bày ra, mở ra, mở rộng ra, trải ra; bộc lộ ra, thổ lộ tâm tình; mở ra, trải ra; làm cho có thể đến được, làm nhìn thấy được; bắt đầu; ,  (từ lóng) bắt đầu nổ súng, bắt đầu tấn công; khai ra (điều bí mật); làm cho ai đi ngoài được, làm cho nhuận tràng; phát biểu đầu tiên trong một cuộc tranh luận; door; mở to mắt, tỏ vẻ ngạc nhiên; làm cho ai trố mắt ra; làm cho ai sáng mắt ra; đứng ở tư thế sắp đánh một cú bên phải (crickê)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24584,
+      "word": "opera",
+      "normalized_word": "opera",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔpərə/",
+      "primary_meaning_vi": "Opêra",
+      "meaning_vi": "Opêra; the opera) nghệ thuật opêra",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24585,
+      "word": "or",
+      "normalized_word": "or",
+      "cefr_level": "A1",
+      "pos": "conjunction",
+      "pos_vi": "liên từ",
+      "phonetic": "/ɔ:/",
+      "primary_meaning_vi": "vàng (ở huy hiệu)",
+      "meaning_vi": "vàng (ở huy hiệu); trước, trước khi; hoặc, hay là; (thơ ca) hoặc... hoặc...; nếu không; tức là",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24586,
+      "word": "orange",
+      "normalized_word": "orange",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'ɔrindʤ/",
+      "primary_meaning_vi": "quả cam",
+      "meaning_vi": "quả cam; cây cam; màu da cam; vắt kiệt (hết tinh tuý của cái gì, hết sức lực của ai); quả cam bị vắt kiệt nước ((nghĩa bóng)); có màu da cam",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24587,
+      "word": "order",
+      "normalized_word": "order",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ɔ:də/",
+      "primary_meaning_vi": "thứ",
+      "meaning_vi": "thứ, bậc, ngôi, hàng, cấp, loại, giai cấp; bậc; thứ tự; trật tự, nội quy, thủ tục (ở nghị viện, ở hội trường...); sai nội qui rồi, không đúng thủ tục rồi!; sự ngăn nắp, sự gọn gàng; chế độ; mệnh lệnh; huân chương; huân chương lao động hạng nhất; huân chương Lê-nin; sự đặt hàng; đơn đặt hàng; phiếu; bộ (đơn vị phân loại); phẩm chức; dòng tu; kiểu; (the order) tư thế bỏ súng xuống để áp vào đùi; biện pháp; xấu, hỏng (máy); trật tự, ngăn nắp; tốt, chạy tốt; đúng nội quy, đúng thủ tục; xấu, hỏng (máy); không đúng nội quy, không đúng thủ tục; cốt để, mục đích để; để mà, cốt để mà; short; một việc khó; làm theo đơn, làm theo yêu cầu (của khách hàng); trang phục hành quân; chương trình làm việc; nhật lệnh; (nghĩa bóng) hiện tình; trang phục duyệt binh; ngừng cuộc thảo luận để nghiên cứu về một điểm thủ tục; ra lệnh; chỉ dẫn; cho, cho dùng (thuốc...); gọi (món ăn, thức uống...), bảo người hầu đưa (thức ăn...); đặt (hàng...); định đoạt (số mệnh...); thu xếp, sắp đặt; bỏ súng xuống áp vào đùi!; sai ai chạy như cờ lông công",
+      "example_en": "The house is in order; the machinery is out of order.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to preserve order in a community or an assembly",
+          "example_vi": null
+        },
+        {
+          "example_en": "St. Ignatius Loyola founded the Jesuit order in 1537.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the Order of the Garter, the Order of the Bath.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24588,
+      "word": "other",
+      "normalized_word": "other",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ʌðə/",
+      "primary_meaning_vi": "khác",
+      "meaning_vi": "khác; kia; every; day; mặt khác; người khác, vật khác, cái khác; khác, cách khác",
+      "example_en": "I'm afraid little Robbie does not always play well with others.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "One boat is not better than the other.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I get paid every other week.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Other than that, I'm fine.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24589,
+      "word": "our",
+      "normalized_word": "our",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "tính từ sở hữu",
+      "phonetic": "/'auə/",
+      "primary_meaning_vi": "của chúng ta",
+      "meaning_vi": "của chúng ta, của chúng tôi, của chúng mình; của trẫm (vua chúa...); thượng đế; Đức Chúa Giê-xu (đối với người theo đạo Thiên chúa); Đức Mẹ đồng trinh (đối với người theo đạo Thiên chúa)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24590,
+      "word": "ours",
+      "normalized_word": "ours",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "đại từ sở hữu",
+      "phonetic": "/'auəz/",
+      "primary_meaning_vi": "cái của chúng ta",
+      "meaning_vi": "cái của chúng ta, cái của chúng tôi, cái của chúng mình; trung đoàn của chúng ta, đội của chúng ta, trung đoàn của chúng tôi, đội của chúng tôi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

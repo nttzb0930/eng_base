@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26031,
+      "quiz_meaning_vi": "vây quanh",
+      "meaning_vi_clean": "vây quanh; gửi kèm theo; chứa đựng",
+      "examples_clean": [
+        {
+          "meaning_vi": "vây quanh",
+          "example_en": "A high wall serves to enclose the garden.",
+          "example_vi": "Một bức tường cao dùng để vây quanh khu vườn."
+        },
+        {
+          "meaning_vi": "vây quanh",
+          "example_en": "The park is enclosed by a tall iron fence.",
+          "example_vi": "Công viên được vây quanh bởi một hàng rào sắt cao."
+        },
+        {
+          "meaning_vi": "vây quanh",
+          "example_en": "The castle was enclosed by a deep moat.",
+          "example_vi": "Lâu đài được vây quanh bởi một con hào sâu."
+        },
+        {
+          "meaning_vi": "vây quanh",
+          "example_en": "Tall trees enclose the small cottage.",
+          "example_vi": "Những cái cây cao vây quanh ngôi nhà nhỏ."
+        },
+        {
+          "meaning_vi": "gửi kèm theo",
+          "example_en": "Please enclose a copy of your ID with the application.",
+          "example_vi": "Vui lòng gửi kèm theo một bản sao căn cước công dân cùng với đơn đăng ký."
+        },
+        {
+          "meaning_vi": "gửi kèm theo",
+          "example_en": "I have enclosed a check for the payment.",
+          "example_vi": "Tôi đã gửi kèm theo một tấm séc để thanh toán."
+        },
+        {
+          "meaning_vi": "gửi kèm theo",
+          "example_en": "She enclosed a photo in her letter to her friend.",
+          "example_vi": "Cô ấy đã gửi kèm theo một bức ảnh trong lá thư gửi cho bạn mình."
+        },
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "The report encloses all the necessary data for the project.",
+          "example_vi": "Bản báo cáo chứa đựng tất cả dữ liệu cần thiết cho dự án."
+        },
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "The package encloses a set of instructions.",
+          "example_vi": "Gói hàng chứa đựng một bộ hướng dẫn."
+        },
+        {
+          "meaning_vi": "chứa đựng",
+          "example_en": "The folder encloses several important documents.",
+          "example_vi": "Thư mục chứa đựng một vài tài liệu quan trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ minh họa cho các nghĩa chính.",
+      "word": "enclose",
+      "normalized_word": "enclose",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "A high wall serves to enclose the garden.",
+      "example_vi_clean": "Một bức tường cao dùng để vây quanh khu vườn."
+    },
+    {
+      "id": 26032,
+      "quiz_meaning_vi": "sự gặp gỡ",
+      "meaning_vi_clean": "sự gặp gỡ; sự gặp phải",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự gặp gỡ",
+          "example_en": "Their first encounter was at a university party.",
+          "example_vi": "Sự gặp gỡ đầu tiên của họ là tại một bữa tiệc ở trường đại học."
+        },
+        {
+          "meaning_vi": "sự gặp gỡ",
+          "example_en": "It was a brief encounter that changed his life.",
+          "example_vi": "Đó là một sự gặp gỡ ngắn ngủi đã thay đổi cuộc đời anh ấy."
+        },
+        {
+          "meaning_vi": "sự gặp gỡ",
+          "example_en": "The encounter between the two leaders was very productive.",
+          "example_vi": "Sự gặp gỡ giữa hai nhà lãnh đạo rất hiệu quả."
+        },
+        {
+          "meaning_vi": "sự gặp gỡ",
+          "example_en": "She remembered their chance encounter in the park.",
+          "example_vi": "Cô ấy nhớ về sự gặp gỡ tình cờ của họ trong công viên."
+        },
+        {
+          "meaning_vi": "sự gặp phải",
+          "example_en": "We had an unexpected encounter with a wild animal.",
+          "example_vi": "Chúng tôi đã có một sự gặp phải bất ngờ với một con vật hoang dã."
+        },
+        {
+          "meaning_vi": "sự gặp phải",
+          "example_en": "The team had a difficult encounter with the opposing players.",
+          "example_vi": "Đội đã có một sự gặp phải khó khăn với các cầu thủ đối phương."
+        },
+        {
+          "meaning_vi": "sự gặp phải",
+          "example_en": "His encounter with the police was quite stressful.",
+          "example_vi": "Sự gặp phải của anh ấy với cảnh sát khá căng thẳng."
+        },
+        {
+          "meaning_vi": "sự gặp phải",
+          "example_en": "She described her encounter with the ghost in the attic.",
+          "example_vi": "Cô ấy mô tả sự gặp phải của mình với con ma trên gác mái."
+        },
+        {
+          "meaning_vi": "sự gặp phải",
+          "example_en": "The hiker had a scary encounter with a snake.",
+          "example_vi": "Người đi bộ đường dài đã có một sự gặp phải đáng sợ với một con rắn."
+        },
+        {
+          "meaning_vi": "sự gặp phải",
+          "example_en": "They survived a dangerous encounter at sea.",
+          "example_vi": "Họ đã sống sót sau một sự gặp phải nguy hiểm trên biển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ verb sang noun, chuẩn hóa nghĩa và ví dụ.",
+      "word": "encounter",
+      "normalized_word": "encounter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Their first encounter was at a university party.",
+      "example_vi_clean": "Sự gặp gỡ đầu tiên của họ là tại một bữa tiệc ở trường đại học."
+    },
+    {
+      "id": 26033,
+      "quiz_meaning_vi": "sự làm can đảm",
+      "meaning_vi_clean": "sự làm can đảm; sự khuyến khích; sự ủng hộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự làm can đảm",
+          "example_en": "He needed some encouragement to face his fears.",
+          "example_vi": "Anh ấy cần một chút sự làm can đảm để đối mặt với nỗi sợ hãi của mình."
+        },
+        {
+          "meaning_vi": "sự làm can đảm",
+          "example_en": "Her words gave him the encouragement he needed.",
+          "example_vi": "Những lời của cô ấy đã mang lại cho anh ấy sự làm can đảm mà anh ấy cần."
+        },
+        {
+          "meaning_vi": "sự làm can đảm",
+          "example_en": "The teacher offered encouragement to the struggling student.",
+          "example_vi": "Giáo viên đã dành sự làm can đảm cho học sinh đang gặp khó khăn."
+        },
+        {
+          "meaning_vi": "sự làm can đảm",
+          "example_en": "With a little encouragement, she finally spoke up.",
+          "example_vi": "Với một chút sự làm can đảm, cuối cùng cô ấy đã lên tiếng."
+        },
+        {
+          "meaning_vi": "sự khuyến khích",
+          "example_en": "The government provides encouragement for small businesses.",
+          "example_vi": "Chính phủ cung cấp sự khuyến khích cho các doanh nghiệp nhỏ."
+        },
+        {
+          "meaning_vi": "sự khuyến khích",
+          "example_en": "Parents should give encouragement to their children's hobbies.",
+          "example_vi": "Cha mẹ nên dành sự khuyến khích cho sở thích của con cái."
+        },
+        {
+          "meaning_vi": "sự khuyến khích",
+          "example_en": "The coach's encouragement helped the team win.",
+          "example_vi": "Sự khuyến khích của huấn luyện viên đã giúp đội giành chiến thắng."
+        },
+        {
+          "meaning_vi": "sự ủng hộ",
+          "example_en": "We appreciate your encouragement in this project.",
+          "example_vi": "Chúng tôi trân trọng sự ủng hộ của bạn trong dự án này."
+        },
+        {
+          "meaning_vi": "sự ủng hộ",
+          "example_en": "He felt a lot of encouragement from his colleagues.",
+          "example_vi": "Anh ấy cảm nhận được rất nhiều sự ủng hộ từ các đồng nghiệp."
+        },
+        {
+          "meaning_vi": "sự ủng hộ",
+          "example_en": "The project succeeded thanks to the encouragement of the community.",
+          "example_vi": "Dự án đã thành công nhờ vào sự ủng hộ của cộng đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "encouragement",
+      "normalized_word": "encouragement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He needed some encouragement to face his fears.",
+      "example_vi_clean": "Anh ấy cần một chút sự làm can đảm để đối mặt với nỗi sợ hãi của mình."
+    },
+    {
+      "id": 26034,
+      "quiz_meaning_vi": "làm can đảm",
+      "meaning_vi_clean": "làm can đảm; khuyến khích; giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "The news was very encouraging for the team.",
+          "example_vi": "Tin tức đó rất làm can đảm cho cả đội."
+        },
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "It is encouraging to see such progress.",
+          "example_vi": "Thật là làm can đảm khi thấy sự tiến bộ như vậy."
+        },
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "His words were very encouraging during the crisis.",
+          "example_vi": "Những lời của anh ấy rất làm can đảm trong suốt cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "làm can đảm",
+          "example_en": "The results of the test were quite encouraging.",
+          "example_vi": "Kết quả của bài kiểm tra khá là làm can đảm."
+        },
+        {
+          "meaning_vi": "khuyến khích",
+          "example_en": "We have an encouraging environment for new ideas.",
+          "example_vi": "Chúng tôi có một môi trường khuyến khích cho những ý tưởng mới."
+        },
+        {
+          "meaning_vi": "khuyến khích",
+          "example_en": "She gave an encouraging smile to the nervous speaker.",
+          "example_vi": "Cô ấy đã dành một nụ cười khuyến khích cho người diễn thuyết đang lo lắng."
+        },
+        {
+          "meaning_vi": "khuyến khích",
+          "example_en": "The teacher gave an encouraging nod to the student.",
+          "example_vi": "Giáo viên đã gật đầu khuyến khích học sinh."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "They provided an encouraging hand to those in need.",
+          "example_vi": "Họ đã đưa ra một bàn tay giúp đỡ cho những người cần."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "The program offers an encouraging approach to learning.",
+          "example_vi": "Chương trình cung cấp một phương pháp giúp đỡ cho việc học tập."
+        },
+        {
+          "meaning_vi": "giúp đỡ",
+          "example_en": "His presence was an encouraging factor in our work.",
+          "example_vi": "Sự hiện diện của anh ấy là một yếu tố giúp đỡ trong công việc của chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và ví dụ cho tính từ.",
+      "word": "encouraging",
+      "normalized_word": "encouraging",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The news was very encouraging for the team.",
+      "example_vi_clean": "Tin tức đó rất làm can đảm cho cả đội."
+    },
+    {
+      "id": 26035,
+      "quiz_meaning_vi": "bộ sách bách khoa",
+      "meaning_vi_clean": "bộ sách bách khoa; sách giáo khoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "She looked up the information in the encyclopedia.",
+          "example_vi": "Cô ấy đã tra cứu thông tin trong bộ sách bách khoa."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "The library has a new edition of the encyclopedia.",
+          "example_vi": "Thư viện có một ấn bản mới của bộ sách bách khoa."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "He spent hours reading the encyclopedia.",
+          "example_vi": "Anh ấy đã dành hàng giờ để đọc bộ sách bách khoa."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "This encyclopedia covers a wide range of topics.",
+          "example_vi": "Bộ sách bách khoa này bao gồm nhiều chủ đề khác nhau."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "They donated an old encyclopedia to the school.",
+          "example_vi": "Họ đã tặng một bộ sách bách khoa cũ cho trường học."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "The book serves as a useful encyclopedia for students.",
+          "example_vi": "Cuốn sách đóng vai trò như một sách giáo khoa hữu ích cho học sinh."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "It is a comprehensive encyclopedia of basic science.",
+          "example_vi": "Đó là một sách giáo khoa toàn diện về khoa học cơ bản."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "The teacher recommended this encyclopedia for beginners.",
+          "example_vi": "Giáo viên đã giới thiệu sách giáo khoa này cho người mới bắt đầu."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "This encyclopedia explains complex concepts simply.",
+          "example_vi": "Sách giáo khoa này giải thích các khái niệm phức tạp một cách đơn giản."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "We use this encyclopedia in our daily lessons.",
+          "example_vi": "Chúng tôi sử dụng sách giáo khoa này trong các bài học hàng ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "encyclopaedia",
+      "normalized_word": "encyclopaedia",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She looked up the information in the encyclopedia.",
+      "example_vi_clean": "Cô ấy đã tra cứu thông tin trong bộ sách bách khoa."
+    },
+    {
+      "id": 26036,
+      "quiz_meaning_vi": "bộ sách bách khoa",
+      "meaning_vi_clean": "bộ sách bách khoa; sách giáo khoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "I found the answer in the encyclopedia.",
+          "example_vi": "Tôi đã tìm thấy câu trả lời trong bộ sách bách khoa."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "The encyclopedia is a great source of knowledge.",
+          "example_vi": "Bộ sách bách khoa là một nguồn kiến thức tuyệt vời."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "She bought a digital encyclopedia for her research.",
+          "example_vi": "Cô ấy đã mua một bộ sách bách khoa kỹ thuật số cho nghiên cứu của mình."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "The encyclopedia contains many illustrations.",
+          "example_vi": "Bộ sách bách khoa chứa nhiều hình minh họa."
+        },
+        {
+          "meaning_vi": "bộ sách bách khoa",
+          "example_en": "He is writing an article for the encyclopedia.",
+          "example_vi": "Anh ấy đang viết một bài báo cho bộ sách bách khoa."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "This encyclopedia is perfect for high school students.",
+          "example_vi": "Sách giáo khoa này rất hoàn hảo cho học sinh trung học."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "The encyclopedia provides clear explanations of terms.",
+          "example_vi": "Sách giáo khoa này cung cấp các giải thích rõ ràng về các thuật ngữ."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "We need a new encyclopedia for the classroom.",
+          "example_vi": "Chúng tôi cần một sách giáo khoa mới cho lớp học."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "The encyclopedia helps students understand history better.",
+          "example_vi": "Sách giáo khoa này giúp học sinh hiểu lịch sử tốt hơn."
+        },
+        {
+          "meaning_vi": "sách giáo khoa",
+          "example_en": "This encyclopedia is a standard reference for the course.",
+          "example_vi": "Sách giáo khoa này là tài liệu tham khảo tiêu chuẩn cho khóa học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "encyclopedia",
+      "normalized_word": "encyclopedia",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I found the answer in the encyclopedia.",
+      "example_vi_clean": "Tôi đã tìm thấy câu trả lời trong bộ sách bách khoa."
+    },
+    {
+      "id": 26037,
+      "quiz_meaning_vi": "gây nguy hiểm",
+      "meaning_vi_clean": "gây nguy hiểm",
+      "examples_clean": [
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "Smoking can endanger your health.",
+          "example_vi": "Hút thuốc có thể gây nguy hiểm cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "Pollution will endanger the local wildlife.",
+          "example_vi": "Ô nhiễm sẽ gây nguy hiểm cho động vật hoang dã địa phương."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "Do not endanger yourself by climbing that tree.",
+          "example_vi": "Đừng gây nguy hiểm cho bản thân bằng cách leo lên cái cây đó."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "His reckless driving endangered many lives.",
+          "example_vi": "Việc lái xe bất cẩn của anh ấy đã gây nguy hiểm cho nhiều mạng sống."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "The storm could endanger the small boats.",
+          "example_vi": "Cơn bão có thể gây nguy hiểm cho những chiếc thuyền nhỏ."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "These chemicals endanger the environment.",
+          "example_vi": "Những hóa chất này gây nguy hiểm cho môi trường."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "Don't endanger the success of the project.",
+          "example_vi": "Đừng gây nguy hiểm cho sự thành công của dự án."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "The fire endangered the entire building.",
+          "example_vi": "Đám cháy đã gây nguy hiểm cho toàn bộ tòa nhà."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "Lack of safety gear will endanger the workers.",
+          "example_vi": "Thiếu thiết bị an toàn sẽ gây nguy hiểm cho công nhân."
+        },
+        {
+          "meaning_vi": "gây nguy hiểm",
+          "example_en": "His actions endanger our future plans.",
+          "example_vi": "Hành động của anh ấy gây nguy hiểm cho các kế hoạch tương lai của chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "endanger",
+      "normalized_word": "endanger",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Smoking can endanger your health.",
+      "example_vi_clean": "Hút thuốc có thể gây nguy hiểm cho sức khỏe của bạn."
+    },
+    {
+      "id": 26038,
+      "quiz_meaning_vi": "vô tận",
+      "meaning_vi_clean": "vô tận; không ngừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "vô tận",
+          "example_en": "The possibilities for the future seem endless.",
+          "example_vi": "Những khả năng cho tương lai dường như vô tận."
+        },
+        {
+          "meaning_vi": "vô tận",
+          "example_en": "We had an endless wait at the airport.",
+          "example_vi": "Chúng tôi đã có một sự chờ đợi vô tận tại sân bay."
+        },
+        {
+          "meaning_vi": "vô tận",
+          "example_en": "The desert stretched out in an endless expanse.",
+          "example_vi": "Sa mạc trải dài trong một không gian vô tận."
+        },
+        {
+          "meaning_vi": "vô tận",
+          "example_en": "She has endless patience with her students.",
+          "example_vi": "Cô ấy có sự kiên nhẫn vô tận với học sinh của mình."
+        },
+        {
+          "meaning_vi": "vô tận",
+          "example_en": "The list of tasks seems endless.",
+          "example_vi": "Danh sách các công việc dường như vô tận."
+        },
+        {
+          "meaning_vi": "không ngừng",
+          "example_en": "They had an endless discussion about the plan.",
+          "example_vi": "Họ đã có một cuộc thảo luận không ngừng về kế hoạch."
+        },
+        {
+          "meaning_vi": "không ngừng",
+          "example_en": "The endless rain made us stay indoors.",
+          "example_vi": "Cơn mưa không ngừng khiến chúng tôi phải ở trong nhà."
+        },
+        {
+          "meaning_vi": "không ngừng",
+          "example_en": "He made endless excuses for being late.",
+          "example_vi": "Anh ấy đã đưa ra những lời bào chữa không ngừng cho việc đi muộn."
+        },
+        {
+          "meaning_vi": "không ngừng",
+          "example_en": "The endless noise from the street is annoying.",
+          "example_vi": "Tiếng ồn không ngừng từ đường phố thật khó chịu."
+        },
+        {
+          "meaning_vi": "không ngừng",
+          "example_en": "She is an endless source of energy.",
+          "example_vi": "Cô ấy là một nguồn năng lượng không ngừng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "endless",
+      "normalized_word": "endless",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The possibilities for the future seem endless.",
+      "example_vi_clean": "Những khả năng cho tương lai dường như vô tận."
+    },
+    {
+      "id": 26039,
+      "quiz_meaning_vi": "chịu đựng",
+      "meaning_vi_clean": "chịu đựng; kéo dài",
+      "examples_clean": [
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "She had to endure a lot of pain.",
+          "example_vi": "Cô ấy đã phải chịu đựng rất nhiều đau đớn."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "They had to endure long hours of work.",
+          "example_vi": "Họ đã phải chịu đựng nhiều giờ làm việc."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "I cannot endure his constant complaining.",
+          "example_vi": "Tôi không thể chịu đựng sự phàn nàn liên tục của anh ấy."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "The soldiers endured harsh conditions.",
+          "example_vi": "Những người lính đã chịu đựng những điều kiện khắc nghiệt."
+        },
+        {
+          "meaning_vi": "chịu đựng",
+          "example_en": "She endured the cold weather without a coat.",
+          "example_vi": "Cô ấy đã chịu đựng thời tiết lạnh mà không có áo khoác."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "The friendship will endure for many years.",
+          "example_vi": "Tình bạn đó sẽ kéo dài trong nhiều năm."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "These traditions endure in our culture.",
+          "example_vi": "Những truyền thống này kéo dài trong văn hóa của chúng ta."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "The building is designed to endure for centuries.",
+          "example_vi": "Tòa nhà được thiết kế để kéo dài trong nhiều thế kỷ."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "His influence will endure long after he is gone.",
+          "example_vi": "Ảnh hưởng của ông ấy sẽ kéo dài rất lâu sau khi ông ấy ra đi."
+        },
+        {
+          "meaning_vi": "kéo dài",
+          "example_en": "The memory of that day will endure forever.",
+          "example_vi": "Ký ức về ngày đó sẽ kéo dài mãi mãi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "endure",
+      "normalized_word": "endure",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She had to endure a lot of pain.",
+      "example_vi_clean": "Cô ấy đã phải chịu đựng rất nhiều đau đớn."
+    },
+    {
+      "id": 26040,
+      "quiz_meaning_vi": "kẻ thù",
+      "meaning_vi_clean": "kẻ thù; thù địch",
+      "examples_clean": [
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "He has many enemies in the business world.",
+          "example_vi": "Anh ấy có nhiều kẻ thù trong giới kinh doanh."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "They were once friends but are now enemies.",
+          "example_vi": "Họ đã từng là bạn nhưng bây giờ là kẻ thù."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "Fear is the greatest enemy of success.",
+          "example_vi": "Sợ hãi là kẻ thù lớn nhất của thành công."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "The army fought against the enemy.",
+          "example_vi": "Quân đội đã chiến đấu chống lại kẻ thù."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "She treated him like an enemy.",
+          "example_vi": "Cô ấy đối xử với anh ta như một kẻ thù."
+        },
+        {
+          "meaning_vi": "thù địch",
+          "example_en": "The two countries have a long history of enemy relations.",
+          "example_vi": "Hai quốc gia có một lịch sử lâu dài về quan hệ thù địch."
+        },
+        {
+          "meaning_vi": "thù địch",
+          "example_en": "They faced enemy fire during the battle.",
+          "example_vi": "Họ đã đối mặt với hỏa lực thù địch trong trận chiến."
+        },
+        {
+          "meaning_vi": "thù địch",
+          "example_en": "The atmosphere in the room was very enemy.",
+          "example_vi": "Bầu không khí trong phòng rất thù địch."
+        },
+        {
+          "meaning_vi": "thù địch",
+          "example_en": "He received an enemy look from his rival.",
+          "example_vi": "Anh ấy nhận được một cái nhìn thù địch từ đối thủ của mình."
+        },
+        {
+          "meaning_vi": "thù địch",
+          "example_en": "They were trapped in enemy territory.",
+          "example_vi": "Họ đã bị mắc kẹt trong lãnh thổ thù địch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ sang danh từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "enemy",
+      "normalized_word": "enemy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has many enemies in the business world.",
+      "example_vi_clean": "Anh ấy có nhiều kẻ thù trong giới kinh doanh."
+    }
+  ]
+}

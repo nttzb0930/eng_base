@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24570,
+      "quiz_meaning_vi": "đúng giờ",
+      "meaning_vi_clean": "đúng giờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "The meeting starts at nine o'clock.",
+          "example_vi": "Cuộc họp bắt đầu lúc chín giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "I will be there at eight o'clock.",
+          "example_vi": "Tôi sẽ có mặt ở đó lúc tám giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "The train leaves at ten o'clock.",
+          "example_vi": "Tàu rời đi lúc mười giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "We finished work at five o'clock.",
+          "example_vi": "Chúng tôi kết thúc công việc lúc năm giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "The store opens at seven o'clock.",
+          "example_vi": "Cửa hàng mở cửa lúc bảy giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "Dinner is served at six o'clock.",
+          "example_vi": "Bữa tối được phục vụ lúc sáu giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "The movie begins at four o'clock.",
+          "example_vi": "Bộ phim bắt đầu lúc bốn giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "She wakes up at six o'clock.",
+          "example_vi": "Cô ấy thức dậy lúc sáu giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "The bus arrives at eleven o'clock.",
+          "example_vi": "Xe buýt đến lúc mười một giờ đúng."
+        },
+        {
+          "meaning_vi": "đúng giờ",
+          "example_en": "The class ends at two o'clock.",
+          "example_vi": "Lớp học kết thúc lúc hai giờ đúng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ chỉ thời gian đúng giờ theo đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ o'clock được dùng như một phó từ chỉ thời gian trong tất cả các ví dụ."
+      },
+      "word": "o'clock",
+      "normalized_word": "o'clock",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The meeting starts at nine o'clock.",
+      "example_vi_clean": "Cuộc họp bắt đầu lúc chín giờ đúng."
+    },
+    {
+      "id": 24573,
+      "quiz_meaning_vi": "không hoạt động",
+      "meaning_vi_clean": "không hoạt động",
+      "examples_clean": [
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The light is off.",
+          "example_vi": "Đèn không sáng."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The computer is off.",
+          "example_vi": "Máy tính đang tắt."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The heater is off.",
+          "example_vi": "Máy sưởi không hoạt động."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The television is off.",
+          "example_vi": "Ti vi đang tắt."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The engine is off.",
+          "example_vi": "Động cơ đã tắt."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The radio is off.",
+          "example_vi": "Đài đang tắt."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The fan is off.",
+          "example_vi": "Quạt không chạy."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The printer is off.",
+          "example_vi": "Máy in đang tắt."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The alarm is off.",
+          "example_vi": "Chuông báo thức đã tắt."
+        },
+        {
+          "meaning_vi": "không hoạt động",
+          "example_en": "The oven is off.",
+          "example_vi": "Lò nướng không hoạt động."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ trạng thái không hoạt động.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ off được dùng làm tính từ bổ nghĩa cho chủ ngữ trong tất cả các ví dụ."
+      },
+      "word": "off",
+      "normalized_word": "off",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The light is off.",
+      "example_vi_clean": "Đèn không sáng."
+    },
+    {
+      "id": 24575,
+      "quiz_meaning_vi": "viên chức",
+      "meaning_vi_clean": "viên chức",
+      "examples_clean": [
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The police officer helped me.",
+          "example_vi": "Viên chức cảnh sát đã giúp tôi."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "A customs officer checked my bag.",
+          "example_vi": "Một viên chức hải quan đã kiểm tra túi của tôi."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The immigration officer asked for my passport.",
+          "example_vi": "Viên chức nhập cư đã yêu cầu hộ chiếu của tôi."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The bank officer explained the loan.",
+          "example_vi": "Viên chức ngân hàng đã giải thích về khoản vay."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The prison officer walked down the hall.",
+          "example_vi": "Viên chức nhà tù đi dọc hành lang."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The health officer inspected the kitchen.",
+          "example_vi": "Viên chức y tế đã kiểm tra nhà bếp."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The traffic officer directed the cars.",
+          "example_vi": "Viên chức giao thông đã điều tiết các xe."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The security officer checked my ID.",
+          "example_vi": "Viên chức an ninh đã kiểm tra thẻ căn cước của tôi."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The court officer called the judge.",
+          "example_vi": "Viên chức tòa án đã gọi thẩm phán."
+        },
+        {
+          "meaning_vi": "viên chức",
+          "example_en": "The government officer signed the document.",
+          "example_vi": "Viên chức chính phủ đã ký vào tài liệu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ người làm việc trong cơ quan nhà nước.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ officer được dùng làm danh từ chỉ người trong tất cả các ví dụ."
+      },
+      "word": "officer",
+      "normalized_word": "officer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police officer helped me.",
+      "example_vi_clean": "Viên chức cảnh sát đã giúp tôi."
+    },
+    {
+      "id": 24579,
+      "quiz_meaning_vi": "cũ",
+      "meaning_vi_clean": "cũ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cũ",
+          "example_en": "He drives an old car.",
+          "example_vi": "Anh ấy lái một chiếc xe cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "They live in an old house.",
+          "example_vi": "Họ sống trong một ngôi nhà cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "I found an old book.",
+          "example_vi": "Tôi tìm thấy một cuốn sách cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "She wears an old coat.",
+          "example_vi": "Cô ấy mặc một chiếc áo khoác cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "This is an old map.",
+          "example_vi": "Đây là một tấm bản đồ cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "He has an old watch.",
+          "example_vi": "Anh ấy có một chiếc đồng hồ cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "They have an old computer.",
+          "example_vi": "Họ có một chiếc máy tính cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "I bought an old chair.",
+          "example_vi": "Tôi đã mua một chiếc ghế cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "She keeps an old photo.",
+          "example_vi": "Cô ấy giữ một bức ảnh cũ."
+        },
+        {
+          "meaning_vi": "cũ",
+          "example_en": "This is an old building.",
+          "example_vi": "Đây là một tòa nhà cũ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ vật đã qua sử dụng lâu ngày.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ old được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các ví dụ."
+      },
+      "word": "old",
+      "normalized_word": "old",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He drives an old car.",
+      "example_vi_clean": "Anh ấy lái một chiếc xe cũ."
+    },
+    {
+      "id": 24580,
+      "quiz_meaning_vi": "một lần",
+      "meaning_vi_clean": "một lần",
+      "examples_clean": [
+        {
+          "meaning_vi": "một lần",
+          "example_en": "I went there once.",
+          "example_vi": "Tôi đã đến đó một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "She visited him once.",
+          "example_vi": "Cô ấy đã thăm anh ấy một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "We met once.",
+          "example_vi": "Chúng tôi đã gặp nhau một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "He called me once.",
+          "example_vi": "Anh ấy đã gọi cho tôi một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "They ate there once.",
+          "example_vi": "Họ đã ăn ở đó một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "I saw it once.",
+          "example_vi": "Tôi đã thấy nó một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "She tried it once.",
+          "example_vi": "Cô ấy đã thử nó một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "We talked once.",
+          "example_vi": "Chúng tôi đã nói chuyện một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "He traveled there once.",
+          "example_vi": "Anh ấy đã du lịch đến đó một lần."
+        },
+        {
+          "meaning_vi": "một lần",
+          "example_en": "They played once.",
+          "example_vi": "Họ đã chơi một lần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ chỉ tần suất một lần.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ once được dùng làm phó từ chỉ tần suất trong tất cả các ví dụ."
+      },
+      "word": "once",
+      "normalized_word": "once",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I went there once.",
+      "example_vi_clean": "Tôi đã đến đó một lần."
+    },
+    {
+      "id": 24582,
+      "quiz_meaning_vi": "duy nhất",
+      "meaning_vi_clean": "duy nhất",
+      "examples_clean": [
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "He is my only friend.",
+          "example_vi": "Anh ấy là người bạn duy nhất của tôi."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "This is the only way.",
+          "example_vi": "Đây là cách duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "She is the only child.",
+          "example_vi": "Cô ấy là người con duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "That is the only choice.",
+          "example_vi": "Đó là lựa chọn duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "He has the only key.",
+          "example_vi": "Anh ấy có chiếc chìa khóa duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "This is the only room.",
+          "example_vi": "Đây là căn phòng duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "She is the only person.",
+          "example_vi": "Cô ấy là người duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "It is the only problem.",
+          "example_vi": "Đó là vấn đề duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "He is the only winner.",
+          "example_vi": "Anh ấy là người chiến thắng duy nhất."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "This is the only answer.",
+          "example_vi": "Đây là câu trả lời duy nhất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ sự duy nhất.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ only được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các ví dụ."
+      },
+      "word": "only",
+      "normalized_word": "only",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is my only friend.",
+      "example_vi_clean": "Anh ấy là người bạn duy nhất của tôi."
+    },
+    {
+      "id": 24583,
+      "quiz_meaning_vi": "mở",
+      "meaning_vi_clean": "mở",
+      "examples_clean": [
+        {
+          "meaning_vi": "mở",
+          "example_en": "The door is open.",
+          "example_vi": "Cánh cửa đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The window is open.",
+          "example_vi": "Cửa sổ đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The shop is open.",
+          "example_vi": "Cửa hàng đang mở cửa."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The box is open.",
+          "example_vi": "Cái hộp đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The gate is open.",
+          "example_vi": "Cổng đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The book is open.",
+          "example_vi": "Cuốn sách đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The bag is open.",
+          "example_vi": "Cái túi đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The drawer is open.",
+          "example_vi": "Ngăn kéo đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The envelope is open.",
+          "example_vi": "Phong bì đang mở."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The jar is open.",
+          "example_vi": "Cái lọ đang mở."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ trạng thái mở.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ open được dùng làm tính từ bổ nghĩa cho chủ ngữ trong tất cả các ví dụ."
+      },
+      "word": "open",
+      "normalized_word": "open",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The door is open.",
+      "example_vi_clean": "Cánh cửa đang mở."
+    },
+    {
+      "id": 24587,
+      "quiz_meaning_vi": "đơn hàng",
+      "meaning_vi_clean": "đơn hàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "I placed an order.",
+          "example_vi": "Tôi đã đặt một đơn hàng."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "The order is ready.",
+          "example_vi": "Đơn hàng đã sẵn sàng."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "He checked the order.",
+          "example_vi": "Anh ấy đã kiểm tra đơn hàng."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "She canceled the order.",
+          "example_vi": "Cô ấy đã hủy đơn hàng."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "The order arrived late.",
+          "example_vi": "Đơn hàng đã đến muộn."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "I received the order.",
+          "example_vi": "Tôi đã nhận được đơn hàng."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "The order is small.",
+          "example_vi": "Đơn hàng này nhỏ."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "He confirmed the order.",
+          "example_vi": "Anh ấy đã xác nhận đơn hàng."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "The order was lost.",
+          "example_vi": "Đơn hàng đã bị mất."
+        },
+        {
+          "meaning_vi": "đơn hàng",
+          "example_en": "She sent the order.",
+          "example_vi": "Cô ấy đã gửi đơn hàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ đơn đặt hàng.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ order được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "order",
+      "normalized_word": "order",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I placed an order.",
+      "example_vi_clean": "Tôi đã đặt một đơn hàng."
+    },
+    {
+      "id": 24591,
+      "quiz_meaning_vi": "ra ngoài",
+      "meaning_vi_clean": "ra ngoài",
+      "examples_clean": [
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "He went out.",
+          "example_vi": "Anh ấy đã đi ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "She is out.",
+          "example_vi": "Cô ấy đang ở ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "They ran out.",
+          "example_vi": "Họ đã chạy ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "I stepped out.",
+          "example_vi": "Tôi đã bước ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "He looked out.",
+          "example_vi": "Anh ấy đã nhìn ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "She walked out.",
+          "example_vi": "Cô ấy đã đi ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "They moved out.",
+          "example_vi": "Họ đã chuyển ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "I climbed out.",
+          "example_vi": "Tôi đã leo ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "He jumped out.",
+          "example_vi": "Anh ấy đã nhảy ra ngoài."
+        },
+        {
+          "meaning_vi": "ra ngoài",
+          "example_en": "She rushed out.",
+          "example_vi": "Cô ấy đã vội vã ra ngoài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ chỉ hướng ra ngoài.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ out được dùng làm phó từ chỉ hướng trong tất cả các ví dụ."
+      },
+      "word": "out",
+      "normalized_word": "out",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He went out.",
+      "example_vi_clean": "Anh ấy đã đi ra ngoài."
+    },
+    {
+      "id": 24592,
+      "quiz_meaning_vi": "của riêng",
+      "meaning_vi_clean": "của riêng",
+      "examples_clean": [
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "I have my own car.",
+          "example_vi": "Tôi có chiếc xe của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "She has her own room.",
+          "example_vi": "Cô ấy có căn phòng của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "He has his own house.",
+          "example_vi": "Anh ấy có ngôi nhà của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "They have their own garden.",
+          "example_vi": "Họ có khu vườn của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "I want my own space.",
+          "example_vi": "Tôi muốn không gian của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "She has her own ideas.",
+          "example_vi": "Cô ấy có những ý tưởng của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "He has his own business.",
+          "example_vi": "Anh ấy có công việc kinh doanh của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "They have their own rules.",
+          "example_vi": "Họ có những quy tắc của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "I have my own opinion.",
+          "example_vi": "Tôi có ý kiến của riêng mình."
+        },
+        {
+          "meaning_vi": "của riêng",
+          "example_en": "She has her own style.",
+          "example_vi": "Cô ấy có phong cách của riêng mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ sự sở hữu riêng.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ own được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các ví dụ."
+      },
+      "word": "own",
+      "normalized_word": "own",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I have my own car.",
+      "example_vi_clean": "Tôi có chiếc xe của riêng mình."
+    }
+  ]
+}

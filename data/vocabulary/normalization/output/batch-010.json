@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24091,
+      "quiz_meaning_vi": "tấm ván",
+      "meaning_vi_clean": "tấm ván; bảng; ban; lên tàu",
+      "examples_clean": [
+        {
+          "meaning_vi": "tấm ván",
+          "example_en": "He cut the wood into a long flat board.",
+          "example_vi": "Anh ấy cắt gỗ thành một tấm ván phẳng dài."
+        },
+        {
+          "meaning_vi": "tấm ván",
+          "example_en": "The floor is made of thick wooden boards.",
+          "example_vi": "Sàn nhà được làm bằng những tấm ván gỗ dày."
+        },
+        {
+          "meaning_vi": "tấm ván",
+          "example_en": "She stood on the diving board before jumping.",
+          "example_vi": "Cô ấy đứng trên tấm ván nhảy trước khi lao xuống."
+        },
+        {
+          "meaning_vi": "tấm ván",
+          "example_en": "We used a board to cover the broken window.",
+          "example_vi": "Chúng tôi dùng một tấm ván để che cửa sổ bị vỡ."
+        },
+        {
+          "meaning_vi": "bảng",
+          "example_en": "Please write your name on the board.",
+          "example_vi": "Vui lòng viết tên của bạn lên bảng."
+        },
+        {
+          "meaning_vi": "bảng",
+          "example_en": "The teacher cleaned the board after the lesson.",
+          "example_vi": "Giáo viên lau bảng sau buổi học."
+        },
+        {
+          "meaning_vi": "ban",
+          "example_en": "The board will meet tomorrow to discuss the plan.",
+          "example_vi": "Ban quản trị sẽ họp vào ngày mai để thảo luận kế hoạch."
+        },
+        {
+          "meaning_vi": "ban",
+          "example_en": "The board decided to hire a new manager.",
+          "example_vi": "Ban lãnh đạo đã quyết định thuê một quản lý mới."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "Passengers are waiting to board the plane.",
+          "example_vi": "Hành khách đang chờ để lên máy bay."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "We will board the ship at noon.",
+          "example_vi": "Chúng tôi sẽ lên tàu vào buổi trưa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lọc bỏ các nghĩa hiếm, chuyên ngành và sai từ loại. Đã bổ sung đủ 10 ví dụ minh họa cho các nghĩa phổ biến nhất.",
+      "word": "board",
+      "normalized_word": "board",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He cut the wood into a long flat board.",
+      "example_vi_clean": "Anh ấy cắt gỗ thành một tấm ván phẳng dài."
+    },
+    {
+      "id": 24092,
+      "quiz_meaning_vi": "tàu thuyền",
+      "meaning_vi_clean": "tàu thuyền; đi tàu",
+      "examples_clean": [
+        {
+          "meaning_vi": "tàu thuyền",
+          "example_en": "They saw a small boat on the lake.",
+          "example_vi": "Họ nhìn thấy một chiếc thuyền nhỏ trên hồ."
+        },
+        {
+          "meaning_vi": "tàu thuyền",
+          "example_en": "The boat sailed across the ocean.",
+          "example_vi": "Con tàu đã đi băng qua đại dương."
+        },
+        {
+          "meaning_vi": "tàu thuyền",
+          "example_en": "He bought a new fishing boat last year.",
+          "example_vi": "Anh ấy đã mua một chiếc thuyền đánh cá mới năm ngoái."
+        },
+        {
+          "meaning_vi": "tàu thuyền",
+          "example_en": "The boat was tied to the dock.",
+          "example_vi": "Chiếc thuyền được buộc vào bến tàu."
+        },
+        {
+          "meaning_vi": "tàu thuyền",
+          "example_en": "We rented a boat for the afternoon.",
+          "example_vi": "Chúng tôi đã thuê một chiếc thuyền cho buổi chiều."
+        },
+        {
+          "meaning_vi": "tàu thuyền",
+          "example_en": "The boat drifted slowly with the current.",
+          "example_vi": "Chiếc thuyền trôi chậm rãi theo dòng nước."
+        },
+        {
+          "meaning_vi": "đi tàu",
+          "example_en": "We like to boat on the river during summer.",
+          "example_vi": "Chúng tôi thích đi thuyền trên sông vào mùa hè."
+        },
+        {
+          "meaning_vi": "đi tàu",
+          "example_en": "They often boat to the nearby island.",
+          "example_vi": "Họ thường đi thuyền đến hòn đảo gần đó."
+        },
+        {
+          "meaning_vi": "đi tàu",
+          "example_en": "It is fun to boat in calm weather.",
+          "example_vi": "Đi thuyền trong thời tiết lặng gió rất thú vị."
+        },
+        {
+          "meaning_vi": "đi tàu",
+          "example_en": "She learned how to boat when she was young.",
+          "example_vi": "Cô ấy đã học cách chèo thuyền khi còn trẻ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ (nghĩa chính) và động từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "boat",
+      "normalized_word": "boat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They saw a small boat on the lake.",
+      "example_vi_clean": "Họ nhìn thấy một chiếc thuyền nhỏ trên hồ."
+    },
+    {
+      "id": 24093,
+      "quiz_meaning_vi": "thân thể",
+      "meaning_vi_clean": "thân thể; thi thể; nhóm; vật thể",
+      "examples_clean": [
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "Exercise is good for your body.",
+          "example_vi": "Tập thể dục tốt cho thân thể của bạn."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "She takes care of her body by eating well.",
+          "example_vi": "Cô ấy chăm sóc thân thể bằng cách ăn uống đầy đủ."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "The human body is very complex.",
+          "example_vi": "Thân thể con người rất phức tạp."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "He felt a chill run through his body.",
+          "example_vi": "Anh ấy cảm thấy một luồng lạnh chạy khắp thân thể."
+        },
+        {
+          "meaning_vi": "thi thể",
+          "example_en": "The police found the body in the forest.",
+          "example_vi": "Cảnh sát đã tìm thấy thi thể trong rừng."
+        },
+        {
+          "meaning_vi": "thi thể",
+          "example_en": "They recovered the body from the water.",
+          "example_vi": "Họ đã vớt thi thể lên từ dưới nước."
+        },
+        {
+          "meaning_vi": "nhóm",
+          "example_en": "A body of experts studied the problem.",
+          "example_vi": "Một nhóm chuyên gia đã nghiên cứu vấn đề này."
+        },
+        {
+          "meaning_vi": "nhóm",
+          "example_en": "The governing body met to vote.",
+          "example_vi": "Nhóm quản lý đã họp để bỏ phiếu."
+        },
+        {
+          "meaning_vi": "vật thể",
+          "example_en": "A strange body was seen in the sky.",
+          "example_vi": "Một vật thể lạ đã được nhìn thấy trên bầu trời."
+        },
+        {
+          "meaning_vi": "vật thể",
+          "example_en": "The light reflected off the solid body.",
+          "example_vi": "Ánh sáng phản chiếu từ vật thể rắn đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "body",
+      "normalized_word": "body",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Exercise is good for your body.",
+      "example_vi_clean": "Tập thể dục tốt cho thân thể của bạn."
+    },
+    {
+      "id": 24094,
+      "quiz_meaning_vi": "xương",
+      "meaning_vi_clean": "xương; hài cốt",
+      "examples_clean": [
+        {
+          "meaning_vi": "xương",
+          "example_en": "The dog is chewing on a bone.",
+          "example_vi": "Con chó đang gặm một khúc xương."
+        },
+        {
+          "meaning_vi": "xương",
+          "example_en": "He broke a bone in his hand.",
+          "example_vi": "Anh ấy bị gãy một khúc xương ở bàn tay."
+        },
+        {
+          "meaning_vi": "xương",
+          "example_en": "Fish have many small bones.",
+          "example_vi": "Cá có nhiều xương nhỏ."
+        },
+        {
+          "meaning_vi": "xương",
+          "example_en": "Calcium is important for strong bones.",
+          "example_vi": "Canxi rất quan trọng cho xương chắc khỏe."
+        },
+        {
+          "meaning_vi": "xương",
+          "example_en": "The cat licked the bone clean.",
+          "example_vi": "Con mèo liếm sạch khúc xương."
+        },
+        {
+          "meaning_vi": "xương",
+          "example_en": "She felt the cold in her bones.",
+          "example_vi": "Cô ấy cảm thấy cái lạnh thấu xương."
+        },
+        {
+          "meaning_vi": "hài cốt",
+          "example_en": "They discovered ancient human bones in the cave.",
+          "example_vi": "Họ đã phát hiện ra hài cốt người cổ đại trong hang."
+        },
+        {
+          "meaning_vi": "hài cốt",
+          "example_en": "The bones were buried centuries ago.",
+          "example_vi": "Hài cốt đã được chôn cất từ nhiều thế kỷ trước."
+        },
+        {
+          "meaning_vi": "hài cốt",
+          "example_en": "Scientists studied the bones to learn about the past.",
+          "example_vi": "Các nhà khoa học đã nghiên cứu hài cốt để tìm hiểu về quá khứ."
+        },
+        {
+          "meaning_vi": "hài cốt",
+          "example_en": "The site contains the bones of many soldiers.",
+          "example_vi": "Khu vực này chứa hài cốt của nhiều binh lính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "bone",
+      "normalized_word": "bone",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The dog is chewing on a bone.",
+      "example_vi_clean": "Con chó đang gặm một khúc xương."
+    },
+    {
+      "id": 24095,
+      "quiz_meaning_vi": "sách",
+      "meaning_vi_clean": "sách; giữ chỗ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sách",
+          "example_en": "I am reading a very interesting book.",
+          "example_vi": "Tôi đang đọc một cuốn sách rất thú vị."
+        },
+        {
+          "meaning_vi": "sách",
+          "example_en": "She put the book back on the shelf.",
+          "example_vi": "Cô ấy đặt cuốn sách trở lại kệ."
+        },
+        {
+          "meaning_vi": "sách",
+          "example_en": "This book has many beautiful pictures.",
+          "example_vi": "Cuốn sách này có nhiều hình ảnh đẹp."
+        },
+        {
+          "meaning_vi": "sách",
+          "example_en": "He wrote a book about his travels.",
+          "example_vi": "Anh ấy đã viết một cuốn sách về những chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "sách",
+          "example_en": "Can I borrow your history book?",
+          "example_vi": "Tôi có thể mượn cuốn sách lịch sử của bạn không?"
+        },
+        {
+          "meaning_vi": "giữ chỗ",
+          "example_en": "I need to book a table for two.",
+          "example_vi": "Tôi cần đặt một bàn cho hai người."
+        },
+        {
+          "meaning_vi": "giữ chỗ",
+          "example_en": "We booked our flight tickets online.",
+          "example_vi": "Chúng tôi đã đặt vé máy bay trực tuyến."
+        },
+        {
+          "meaning_vi": "giữ chỗ",
+          "example_en": "They booked a hotel room for the weekend.",
+          "example_vi": "Họ đã đặt một phòng khách sạn cho cuối tuần."
+        },
+        {
+          "meaning_vi": "giữ chỗ",
+          "example_en": "You should book your seats in advance.",
+          "example_vi": "Bạn nên đặt chỗ trước."
+        },
+        {
+          "meaning_vi": "giữ chỗ",
+          "example_en": "He booked a taxi to the airport.",
+          "example_vi": "Anh ấy đã đặt một chiếc taxi đến sân bay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ và động từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "book",
+      "normalized_word": "book",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I am reading a very interesting book.",
+      "example_vi_clean": "Tôi đang đọc một cuốn sách rất thú vị."
+    },
+    {
+      "id": 24096,
+      "quiz_meaning_vi": "hiệu sách",
+      "meaning_vi_clean": "hiệu sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "I bought this novel at the local bookstore.",
+          "example_vi": "Tôi đã mua cuốn tiểu thuyết này tại hiệu sách địa phương."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "There is a large bookstore near the university.",
+          "example_vi": "Có một hiệu sách lớn gần trường đại học."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "She works part-time at a bookstore.",
+          "example_vi": "Cô ấy làm việc bán thời gian tại một hiệu sách."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "We spent hours browsing in the bookstore.",
+          "example_vi": "Chúng tôi đã dành hàng giờ để xem sách trong hiệu sách."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookstore is closed on Sundays.",
+          "example_vi": "Hiệu sách đóng cửa vào các ngày Chủ nhật."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "He ordered the book from an online bookstore.",
+          "example_vi": "Anh ấy đã đặt cuốn sách từ một hiệu sách trực tuyến."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookstore has a wide selection of magazines.",
+          "example_vi": "Hiệu sách có rất nhiều loại tạp chí."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "They met at the bookstore to study together.",
+          "example_vi": "Họ đã gặp nhau tại hiệu sách để cùng học bài."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookstore is having a big sale today.",
+          "example_vi": "Hiệu sách đang có đợt giảm giá lớn hôm nay."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "I love the smell of books in a bookstore.",
+          "example_vi": "Tôi yêu mùi sách trong một hiệu sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ.",
+      "word": "bookstore",
+      "normalized_word": "bookstore",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought this novel at the local bookstore.",
+      "example_vi_clean": "Tôi đã mua cuốn tiểu thuyết này tại hiệu sách địa phương."
+    },
+    {
+      "id": 24097,
+      "quiz_meaning_vi": "sự khoan",
+      "meaning_vi_clean": "sự khoan; nhàm chán",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự khoan",
+          "example_en": "The boring of the hole took several minutes.",
+          "example_vi": "Việc khoan cái lỗ mất vài phút."
+        },
+        {
+          "meaning_vi": "sự khoan",
+          "example_en": "They used a machine for the boring process.",
+          "example_vi": "Họ đã sử dụng một cái máy cho quá trình khoan."
+        },
+        {
+          "meaning_vi": "sự khoan",
+          "example_en": "The boring of the tunnel is almost finished.",
+          "example_vi": "Việc khoan đường hầm gần như đã hoàn tất."
+        },
+        {
+          "meaning_vi": "sự khoan",
+          "example_en": "He is an expert in deep boring.",
+          "example_vi": "Anh ấy là một chuyên gia về khoan sâu."
+        },
+        {
+          "meaning_vi": "sự khoan",
+          "example_en": "The boring equipment is very heavy.",
+          "example_vi": "Thiết bị khoan rất nặng."
+        },
+        {
+          "meaning_vi": "nhàm chán",
+          "example_en": "The movie was very boring.",
+          "example_vi": "Bộ phim đó rất nhàm chán."
+        },
+        {
+          "meaning_vi": "nhàm chán",
+          "example_en": "I had a boring day at work.",
+          "example_vi": "Tôi đã có một ngày làm việc nhàm chán."
+        },
+        {
+          "meaning_vi": "nhàm chán",
+          "example_en": "He told a boring story.",
+          "example_vi": "Anh ấy đã kể một câu chuyện nhàm chán."
+        },
+        {
+          "meaning_vi": "nhàm chán",
+          "example_en": "It is boring to wait for the bus.",
+          "example_vi": "Thật nhàm chán khi phải chờ xe buýt."
+        },
+        {
+          "meaning_vi": "nhàm chán",
+          "example_en": "She found the lecture quite boring.",
+          "example_vi": "Cô ấy thấy bài giảng khá nhàm chán."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ sang danh từ và tính từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "boring",
+      "normalized_word": "boring",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The boring of the hole took several minutes.",
+      "example_vi_clean": "Việc khoan cái lỗ mất vài phút."
+    },
+    {
+      "id": 24098,
+      "quiz_meaning_vi": "vay",
+      "meaning_vi_clean": "vay; mượn",
+      "examples_clean": [
+        {
+          "meaning_vi": "vay",
+          "example_en": "He had to borrow money from the bank.",
+          "example_vi": "Anh ấy đã phải vay tiền từ ngân hàng."
+        },
+        {
+          "meaning_vi": "vay",
+          "example_en": "They borrowed a large sum to start the business.",
+          "example_vi": "Họ đã vay một khoản tiền lớn để bắt đầu kinh doanh."
+        },
+        {
+          "meaning_vi": "vay",
+          "example_en": "Can I borrow some money for lunch?",
+          "example_vi": "Tôi có thể vay một ít tiền để ăn trưa không?"
+        },
+        {
+          "meaning_vi": "vay",
+          "example_en": "She borrowed from her parents to buy a car.",
+          "example_vi": "Cô ấy đã vay tiền từ cha mẹ để mua một chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "vay",
+          "example_en": "It is not good to borrow too much.",
+          "example_vi": "Vay quá nhiều là không tốt."
+        },
+        {
+          "meaning_vi": "mượn",
+          "example_en": "May I borrow your pen for a moment?",
+          "example_vi": "Tôi có thể mượn cây bút của bạn một lát không?"
+        },
+        {
+          "meaning_vi": "mượn",
+          "example_en": "He borrowed a book from the library.",
+          "example_vi": "Anh ấy đã mượn một cuốn sách từ thư viện."
+        },
+        {
+          "meaning_vi": "mượn",
+          "example_en": "She borrowed my umbrella because it was raining.",
+          "example_vi": "Cô ấy đã mượn chiếc ô của tôi vì trời đang mưa."
+        },
+        {
+          "meaning_vi": "mượn",
+          "example_en": "I borrowed his jacket to keep warm.",
+          "example_vi": "Tôi đã mượn chiếc áo khoác của anh ấy để giữ ấm."
+        },
+        {
+          "meaning_vi": "mượn",
+          "example_en": "They borrowed tools from their neighbor.",
+          "example_vi": "Họ đã mượn dụng cụ từ người hàng xóm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung đủ 10 ví dụ.",
+      "word": "borrow",
+      "normalized_word": "borrow",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He had to borrow money from the bank.",
+      "example_vi_clean": "Anh ấy đã phải vay tiền từ ngân hàng."
+    },
+    {
+      "id": 24099,
+      "quiz_meaning_vi": "cả hai",
+      "meaning_vi_clean": "cả hai",
+      "examples_clean": [
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "Both of them are my friends.",
+          "example_vi": "Cả hai người họ đều là bạn của tôi."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "I like both colors.",
+          "example_vi": "Tôi thích cả hai màu."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "Both students passed the exam.",
+          "example_vi": "Cả hai học sinh đều đã vượt qua kỳ thi."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "She bought both shirts.",
+          "example_vi": "Cô ấy đã mua cả hai chiếc áo."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "Both roads lead to the city center.",
+          "example_vi": "Cả hai con đường đều dẫn đến trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "They both work in the same office.",
+          "example_vi": "Cả hai người họ đều làm việc trong cùng một văn phòng."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "Both parents were very proud of him.",
+          "example_vi": "Cả hai cha mẹ đều rất tự hào về anh ấy."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "I have read both books.",
+          "example_vi": "Tôi đã đọc cả hai cuốn sách."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "Both teams played very well.",
+          "example_vi": "Cả hai đội đều chơi rất tốt."
+        },
+        {
+          "meaning_vi": "cả hai",
+          "example_en": "Both options are acceptable.",
+          "example_vi": "Cả hai lựa chọn đều có thể chấp nhận được."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ phó từ sang từ hạn định/đại từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "both",
+      "normalized_word": "both",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Both of them are my friends.",
+      "example_vi_clean": "Cả hai người họ đều là bạn của tôi."
+    },
+    {
+      "id": 24100,
+      "quiz_meaning_vi": "chai",
+      "meaning_vi_clean": "chai; đóng chai",
+      "examples_clean": [
+        {
+          "meaning_vi": "chai",
+          "example_en": "He drank a bottle of water.",
+          "example_vi": "Anh ấy đã uống một chai nước."
+        },
+        {
+          "meaning_vi": "chai",
+          "example_en": "She put the milk in a glass bottle.",
+          "example_vi": "Cô ấy đã cho sữa vào một cái chai thủy tinh."
+        },
+        {
+          "meaning_vi": "chai",
+          "example_en": "The bottle is empty.",
+          "example_vi": "Cái chai đã trống rỗng."
+        },
+        {
+          "meaning_vi": "chai",
+          "example_en": "He broke the bottle by accident.",
+          "example_vi": "Anh ấy đã làm vỡ cái chai một cách vô tình."
+        },
+        {
+          "meaning_vi": "chai",
+          "example_en": "There is a bottle of wine on the table.",
+          "example_vi": "Có một chai rượu vang trên bàn."
+        },
+        {
+          "meaning_vi": "chai",
+          "example_en": "She recycled the plastic bottle.",
+          "example_vi": "Cô ấy đã tái chế cái chai nhựa."
+        },
+        {
+          "meaning_vi": "đóng chai",
+          "example_en": "They bottle the juice at the factory.",
+          "example_vi": "Họ đóng chai nước ép tại nhà máy."
+        },
+        {
+          "meaning_vi": "đóng chai",
+          "example_en": "The company bottles its own mineral water.",
+          "example_vi": "Công ty tự đóng chai nước khoáng của riêng mình."
+        },
+        {
+          "meaning_vi": "đóng chai",
+          "example_en": "The wine is bottled in France.",
+          "example_vi": "Rượu vang được đóng chai tại Pháp."
+        },
+        {
+          "meaning_vi": "đóng chai",
+          "example_en": "They bottle the beer in large containers.",
+          "example_vi": "Họ đóng chai bia trong các thùng chứa lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ và động từ. Đã bổ sung đủ 10 ví dụ.",
+      "word": "bottle",
+      "normalized_word": "bottle",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He drank a bottle of water.",
+      "example_vi_clean": "Anh ấy đã uống một chai nước."
+    }
+  ]
+}

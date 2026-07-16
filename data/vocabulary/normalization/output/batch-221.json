@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26201,
+      "quiz_meaning_vi": "thán từ biểu lộ cảm xúc",
+      "meaning_vi_clean": "thán từ biểu lộ cảm xúc; đi nào",
+      "examples_clean": [
+        {
+          "meaning_vi": "thán từ biểu lộ cảm xúc",
+          "example_en": "Gee, I didn't know that!",
+          "example_vi": "Chà, tôi không biết điều đó!"
+        },
+        {
+          "meaning_vi": "thán từ biểu lộ cảm xúc",
+          "example_en": "Gee, that is a beautiful dress.",
+          "example_vi": "Chà, đó là một chiếc váy đẹp."
+        },
+        {
+          "meaning_vi": "thán từ biểu lộ cảm xúc",
+          "example_en": "Gee, it is really cold outside today.",
+          "example_vi": "Chà, hôm nay ngoài trời lạnh thật đấy."
+        },
+        {
+          "meaning_vi": "thán từ biểu lộ cảm xúc",
+          "example_en": "Gee, I am so surprised to see you.",
+          "example_vi": "Chà, tôi rất ngạc nhiên khi gặp bạn."
+        },
+        {
+          "meaning_vi": "đi nào",
+          "example_en": "The rider shouted gee to make the horse turn right.",
+          "example_vi": "Người cưỡi ngựa hét lên đi nào để bảo con ngựa rẽ phải."
+        },
+        {
+          "meaning_vi": "đi nào",
+          "example_en": "Gee! Gee! The driver urged the horses forward.",
+          "example_vi": "Đi nào! Đi nào! Người đánh xe thúc giục lũ ngựa tiến lên."
+        },
+        {
+          "meaning_vi": "đi nào",
+          "example_en": "He used the command gee to steer the team.",
+          "example_vi": "Anh ấy dùng lệnh đi nào để điều khiển đàn ngựa."
+        },
+        {
+          "meaning_vi": "đi nào",
+          "example_en": "The farmer shouted gee to guide his horse.",
+          "example_vi": "Người nông dân hét lên đi nào để dẫn đường cho con ngựa của mình."
+        },
+        {
+          "meaning_vi": "đi nào",
+          "example_en": "Mush and gee are common commands for sled dogs.",
+          "example_vi": "Mush và đi nào là những lệnh phổ biến cho chó kéo xe."
+        },
+        {
+          "meaning_vi": "đi nào",
+          "example_en": "The horse responded quickly to the gee command.",
+          "example_vi": "Con ngựa phản ứng nhanh chóng với lệnh đi nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa cổ và từ lóng không cần thiết. Bổ sung ví dụ cho cả hai nghĩa.",
+      "word": "gee",
+      "normalized_word": "gee",
+      "cefr_level": "B1",
+      "pos": "interjection",
+      "pos_vi_clean": "thán từ",
+      "example_en_clean": "Gee, I didn't know that!",
+      "example_vi_clean": "Chà, tôi không biết điều đó!"
+    },
+    {
+      "id": 26202,
+      "quiz_meaning_vi": "Gen",
+      "meaning_vi_clean": "Gen",
+      "examples_clean": [
+        {
+          "meaning_vi": "Gen",
+          "example_en": "A change in a gene is reflected in the protein.",
+          "example_vi": "Một sự thay đổi trong gen được phản ánh trong protein."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "Genes determine many of our physical characteristics.",
+          "example_vi": "Gen quyết định nhiều đặc điểm thể chất của chúng ta."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "Scientists are studying how genes affect health.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu cách gen ảnh hưởng đến sức khỏe."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "We inherit genes from both our parents.",
+          "example_vi": "Chúng ta thừa hưởng gen từ cả cha và mẹ."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "The gene was identified by the research team.",
+          "example_vi": "Gen đó đã được nhóm nghiên cứu xác định."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "Some diseases are caused by a faulty gene.",
+          "example_vi": "Một số bệnh là do gen bị lỗi gây ra."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "The gene is responsible for eye color.",
+          "example_vi": "Gen này chịu trách nhiệm về màu mắt."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "They are mapping every gene in the human body.",
+          "example_vi": "Họ đang lập bản đồ mọi gen trong cơ thể người."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "The gene expression changes under stress.",
+          "example_vi": "Sự biểu hiện gen thay đổi dưới áp lực."
+        },
+        {
+          "meaning_vi": "Gen",
+          "example_en": "This specific gene is found in many plants.",
+          "example_vi": "Gen cụ thể này được tìm thấy trong nhiều loài thực vật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ minh họa.",
+      "word": "gene",
+      "normalized_word": "gene",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A change in a gene is reflected in the protein.",
+      "example_vi_clean": "Một sự thay đổi trong gen được phản ánh trong protein."
+    },
+    {
+      "id": 26203,
+      "quiz_meaning_vi": "chung",
+      "meaning_vi_clean": "chung; tổng; thường",
+      "examples_clean": [
+        {
+          "meaning_vi": "chung",
+          "example_en": "The general public is concerned about the economy.",
+          "example_vi": "Công chúng nói chung đang lo lắng về nền kinh tế."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "There is a general feeling of optimism.",
+          "example_vi": "Có một cảm giác lạc quan chung."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "I have a general idea of what happened.",
+          "example_vi": "Tôi có một ý niệm chung về những gì đã xảy ra."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "The general rule is to arrive on time.",
+          "example_vi": "Quy tắc chung là phải đến đúng giờ."
+        },
+        {
+          "meaning_vi": "tổng",
+          "example_en": "The general manager oversees all departments.",
+          "example_vi": "Tổng giám đốc giám sát tất cả các bộ phận."
+        },
+        {
+          "meaning_vi": "tổng",
+          "example_en": "The general assembly will meet tomorrow.",
+          "example_vi": "Đại hội đồng sẽ họp vào ngày mai."
+        },
+        {
+          "meaning_vi": "tổng",
+          "example_en": "The general cost of the project is high.",
+          "example_vi": "Tổng chi phí của dự án là rất cao."
+        },
+        {
+          "meaning_vi": "thường",
+          "example_en": "It is a general practice to shake hands.",
+          "example_vi": "Bắt tay là một thông lệ thường thấy."
+        },
+        {
+          "meaning_vi": "thường",
+          "example_en": "This is a general problem in many schools.",
+          "example_vi": "Đây là một vấn đề thường gặp ở nhiều trường học."
+        },
+        {
+          "meaning_vi": "thường",
+          "example_en": "He is a general visitor to the library.",
+          "example_vi": "Anh ấy là người thường xuyên đến thư viện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ. Lọc bỏ các nghĩa không phù hợp cấp độ B1.",
+      "word": "general",
+      "normalized_word": "general",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The general public is concerned about the economy.",
+      "example_vi_clean": "Công chúng nói chung đang lo lắng về nền kinh tế."
+    },
+    {
+      "id": 26204,
+      "quiz_meaning_vi": "nói chung",
+      "meaning_vi_clean": "nói chung; thông thường",
+      "examples_clean": [
+        {
+          "meaning_vi": "nói chung",
+          "example_en": "It is generally known that the Earth is round.",
+          "example_vi": "Người ta nói chung đều biết rằng Trái Đất hình tròn."
+        },
+        {
+          "meaning_vi": "nói chung",
+          "example_en": "Generally speaking, the plan is good.",
+          "example_vi": "Nói chung, kế hoạch này rất tốt."
+        },
+        {
+          "meaning_vi": "nói chung",
+          "example_en": "The weather is generally warm in July.",
+          "example_vi": "Thời tiết nói chung là ấm áp vào tháng Bảy."
+        },
+        {
+          "meaning_vi": "nói chung",
+          "example_en": "Generally, people prefer to be happy.",
+          "example_vi": "Nói chung, mọi người thích được hạnh phúc."
+        },
+        {
+          "meaning_vi": "nói chung",
+          "example_en": "The results are generally positive.",
+          "example_vi": "Kết quả nói chung là tích cực."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "I generally have a walk in the afternoon.",
+          "example_vi": "Tôi thường đi dạo vào buổi chiều."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "We generally eat dinner at seven.",
+          "example_vi": "Chúng tôi thường ăn tối lúc bảy giờ."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "She generally arrives before the meeting starts.",
+          "example_vi": "Cô ấy thường đến trước khi cuộc họp bắt đầu."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "They generally go to the beach in summer.",
+          "example_vi": "Họ thường đi biển vào mùa hè."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "I generally read a book before bed.",
+          "example_vi": "Tôi thường đọc sách trước khi đi ngủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "generally",
+      "normalized_word": "generally",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "It is generally known that the Earth is round.",
+      "example_vi_clean": "Người ta nói chung đều biết rằng Trái Đất hình tròn."
+    },
+    {
+      "id": 26205,
+      "quiz_meaning_vi": "sinh",
+      "meaning_vi_clean": "sinh; phát",
+      "examples_clean": [
+        {
+          "meaning_vi": "sinh",
+          "example_en": "The discussion generated a lot of interest.",
+          "example_vi": "Cuộc thảo luận đã sinh ra rất nhiều sự quan tâm."
+        },
+        {
+          "meaning_vi": "sinh",
+          "example_en": "The new policy generated many complaints.",
+          "example_vi": "Chính sách mới đã sinh ra nhiều lời phàn nàn."
+        },
+        {
+          "meaning_vi": "sinh",
+          "example_en": "His speech generated a lot of excitement.",
+          "example_vi": "Bài phát biểu của anh ấy đã sinh ra rất nhiều sự phấn khích."
+        },
+        {
+          "meaning_vi": "sinh",
+          "example_en": "The project generated new ideas for the team.",
+          "example_vi": "Dự án đã sinh ra những ý tưởng mới cho nhóm."
+        },
+        {
+          "meaning_vi": "phát",
+          "example_en": "The wind turbine generates electricity.",
+          "example_vi": "Tuabin gió phát ra điện."
+        },
+        {
+          "meaning_vi": "phát",
+          "example_en": "The machine generates heat during operation.",
+          "example_vi": "Cỗ máy phát ra nhiệt trong quá trình vận hành."
+        },
+        {
+          "meaning_vi": "phát",
+          "example_en": "The system generates a report every day.",
+          "example_vi": "Hệ thống phát ra một báo cáo mỗi ngày."
+        },
+        {
+          "meaning_vi": "phát",
+          "example_en": "This software generates random numbers.",
+          "example_vi": "Phần mềm này phát ra các số ngẫu nhiên."
+        },
+        {
+          "meaning_vi": "phát",
+          "example_en": "The engine generates enough power to move.",
+          "example_vi": "Động cơ phát ra đủ năng lượng để di chuyển."
+        },
+        {
+          "meaning_vi": "phát",
+          "example_en": "The solar panels generate energy from the sun.",
+          "example_vi": "Các tấm pin mặt trời phát ra năng lượng từ mặt trời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "generate",
+      "normalized_word": "generate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The discussion generated a lot of interest.",
+      "example_vi_clean": "Cuộc thảo luận đã sinh ra rất nhiều sự quan tâm."
+    },
+    {
+      "id": 26206,
+      "quiz_meaning_vi": "rộng lượng",
+      "meaning_vi_clean": "rộng lượng; hào phóng",
+      "examples_clean": [
+        {
+          "meaning_vi": "rộng lượng",
+          "example_en": "Thank you for your generous words.",
+          "example_vi": "Cảm ơn những lời nói rộng lượng của bạn."
+        },
+        {
+          "meaning_vi": "rộng lượng",
+          "example_en": "He was generous in forgiving my mistakes.",
+          "example_vi": "Anh ấy rất rộng lượng khi tha thứ cho những sai lầm của tôi."
+        },
+        {
+          "meaning_vi": "rộng lượng",
+          "example_en": "She is always generous to those in need.",
+          "example_vi": "Cô ấy luôn rộng lượng với những người gặp khó khăn."
+        },
+        {
+          "meaning_vi": "rộng lượng",
+          "example_en": "It was generous of him to share his time.",
+          "example_vi": "Thật rộng lượng khi anh ấy chia sẻ thời gian của mình."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "She's been extremely generous with her money.",
+          "example_vi": "Cô ấy đã rất hào phóng với tiền bạc của mình."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "They gave a generous donation to the charity.",
+          "example_vi": "Họ đã quyên góp một khoản hào phóng cho tổ chức từ thiện."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "He offered a generous reward for the lost dog.",
+          "example_vi": "Anh ấy đã đưa ra một phần thưởng hào phóng cho con chó bị lạc."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "The company gave a generous bonus to staff.",
+          "example_vi": "Công ty đã tặng một khoản thưởng hào phóng cho nhân viên."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "She made a generous gift to the museum.",
+          "example_vi": "Cô ấy đã tặng một món quà hào phóng cho bảo tàng."
+        },
+        {
+          "meaning_vi": "hào phóng",
+          "example_en": "He is known for his generous hospitality.",
+          "example_vi": "Anh ấy nổi tiếng với sự hiếu khách hào phóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc bỏ các nghĩa không phù hợp cấp độ B1. Bổ sung ví dụ.",
+      "word": "generous",
+      "normalized_word": "generous",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Thank you for your generous words.",
+      "example_vi_clean": "Cảm ơn những lời nói rộng lượng của bạn."
+    },
+    {
+      "id": 26207,
+      "quiz_meaning_vi": "căn nguyên",
+      "meaning_vi_clean": "căn nguyên; di truyền",
+      "examples_clean": [
+        {
+          "meaning_vi": "căn nguyên",
+          "example_en": "The genetic cause of the disease is unknown.",
+          "example_vi": "Căn nguyên di truyền của căn bệnh này vẫn chưa được biết rõ."
+        },
+        {
+          "meaning_vi": "căn nguyên",
+          "example_en": "We are looking for the genetic origin of the trait.",
+          "example_vi": "Chúng tôi đang tìm kiếm căn nguyên di truyền của đặc điểm này."
+        },
+        {
+          "meaning_vi": "căn nguyên",
+          "example_en": "The study explores the genetic basis of behavior.",
+          "example_vi": "Nghiên cứu khám phá căn nguyên di truyền của hành vi."
+        },
+        {
+          "meaning_vi": "căn nguyên",
+          "example_en": "Genetic factors play a role in this condition.",
+          "example_vi": "Các yếu tố căn nguyên di truyền đóng một vai trò trong tình trạng này."
+        },
+        {
+          "meaning_vi": "di truyền",
+          "example_en": "Genetic engineering is a complex field.",
+          "example_vi": "Kỹ thuật di truyền là một lĩnh vực phức tạp."
+        },
+        {
+          "meaning_vi": "di truyền",
+          "example_en": "They are studying genetic patterns in plants.",
+          "example_vi": "Họ đang nghiên cứu các mô hình di truyền ở thực vật."
+        },
+        {
+          "meaning_vi": "di truyền",
+          "example_en": "Genetic testing can reveal health risks.",
+          "example_vi": "Xét nghiệm di truyền có thể tiết lộ các rủi ro sức khỏe."
+        },
+        {
+          "meaning_vi": "di truyền",
+          "example_en": "The genetic code is the same for all life.",
+          "example_vi": "Mã di truyền là giống nhau cho mọi sự sống."
+        },
+        {
+          "meaning_vi": "di truyền",
+          "example_en": "She has a genetic predisposition to the illness.",
+          "example_vi": "Cô ấy có khuynh hướng di truyền đối với căn bệnh này."
+        },
+        {
+          "meaning_vi": "di truyền",
+          "example_en": "Genetic diversity is important for survival.",
+          "example_vi": "Sự đa dạng di truyền rất quan trọng cho sự sống còn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với từ loại tính từ. Bổ sung ví dụ.",
+      "word": "genetic",
+      "normalized_word": "genetic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The genetic cause of the disease is unknown.",
+      "example_vi_clean": "Căn nguyên di truyền của căn bệnh này vẫn chưa được biết rõ."
+    },
+    {
+      "id": 26208,
+      "quiz_meaning_vi": "về mặt di truyền học",
+      "meaning_vi_clean": "về mặt di truyền học",
+      "examples_clean": [
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "Genetically modified crops are common now.",
+          "example_vi": "Cây trồng biến đổi về mặt di truyền học hiện rất phổ biến."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "The two species are genetically distinct.",
+          "example_vi": "Hai loài này khác biệt về mặt di truyền học."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "They are genetically related to each other.",
+          "example_vi": "Họ có liên quan về mặt di truyền học với nhau."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "The disease is genetically inherited.",
+          "example_vi": "Căn bệnh này được di truyền về mặt di truyền học."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "We are genetically programmed to learn.",
+          "example_vi": "Chúng ta được lập trình về mặt di truyền học để học hỏi."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "The plants were genetically altered in the lab.",
+          "example_vi": "Các loại cây đã được thay đổi về mặt di truyền học trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "These twins are genetically identical.",
+          "example_vi": "Cặp song sinh này giống hệt nhau về mặt di truyền học."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "The population is genetically diverse.",
+          "example_vi": "Quần thể này đa dạng về mặt di truyền học."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "The virus has been genetically sequenced.",
+          "example_vi": "Virus đã được giải trình tự về mặt di truyền học."
+        },
+        {
+          "meaning_vi": "về mặt di truyền học",
+          "example_en": "They are genetically similar to their ancestors.",
+          "example_vi": "Họ tương tự về mặt di truyền học với tổ tiên của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung phonetic và 10 ví dụ.",
+      "word": "genetically",
+      "normalized_word": "genetically",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Genetically modified crops are common now.",
+      "example_vi_clean": "Cây trồng biến đổi về mặt di truyền học hiện rất phổ biến."
+    },
+    {
+      "id": 26209,
+      "quiz_meaning_vi": "di truyền học",
+      "meaning_vi_clean": "di truyền học",
+      "examples_clean": [
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "She is studying genetics at university.",
+          "example_vi": "Cô ấy đang học di truyền học tại trường đại học."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "Genetics explains how traits are passed down.",
+          "example_vi": "Di truyền học giải thích cách các đặc điểm được truyền lại."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "Modern genetics has changed medicine.",
+          "example_vi": "Di truyền học hiện đại đã thay đổi y học."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "He has a deep interest in genetics.",
+          "example_vi": "Anh ấy có niềm đam mê sâu sắc với di truyền học."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "The field of genetics is growing fast.",
+          "example_vi": "Lĩnh vực di truyền học đang phát triển nhanh chóng."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "Genetics plays a key role in evolution.",
+          "example_vi": "Di truyền học đóng một vai trò quan trọng trong tiến hóa."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "They are conducting research in genetics.",
+          "example_vi": "Họ đang thực hiện nghiên cứu trong ngành di truyền học."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "Genetics can help identify family history.",
+          "example_vi": "Di truyền học có thể giúp xác định lịch sử gia đình."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "The professor teaches a course on genetics.",
+          "example_vi": "Giáo sư dạy một khóa học về di truyền học."
+        },
+        {
+          "meaning_vi": "di truyền học",
+          "example_en": "Advances in genetics are truly amazing.",
+          "example_vi": "Những tiến bộ trong di truyền học thực sự rất đáng kinh ngạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "genetics",
+      "normalized_word": "genetics",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is studying genetics at university.",
+      "example_vi_clean": "Cô ấy đang học di truyền học tại trường đại học."
+    },
+    {
+      "id": 26210,
+      "quiz_meaning_vi": "người hào hoa phong nhã",
+      "meaning_vi_clean": "người hào hoa phong nhã; người đàn ông",
+      "examples_clean": [
+        {
+          "meaning_vi": "người hào hoa phong nhã",
+          "example_en": "He is a true gentleman in every way.",
+          "example_vi": "Anh ấy là một người hào hoa phong nhã thực sự về mọi mặt."
+        },
+        {
+          "meaning_vi": "người hào hoa phong nhã",
+          "example_en": "A gentleman always opens the door for others.",
+          "example_vi": "Một người hào hoa phong nhã luôn mở cửa cho người khác."
+        },
+        {
+          "meaning_vi": "người hào hoa phong nhã",
+          "example_en": "He behaved like a gentleman during the dinner.",
+          "example_vi": "Anh ấy cư xử như một người hào hoa phong nhã trong bữa tối."
+        },
+        {
+          "meaning_vi": "người hào hoa phong nhã",
+          "example_en": "It is the mark of a gentleman to be polite.",
+          "example_vi": "Lịch sự là dấu hiệu của một người hào hoa phong nhã."
+        },
+        {
+          "meaning_vi": "người đàn ông",
+          "example_en": "A gentleman asked me for directions.",
+          "example_vi": "Một người đàn ông đã hỏi tôi đường đi."
+        },
+        {
+          "meaning_vi": "người đàn ông",
+          "example_en": "The gentleman in the blue suit is my uncle.",
+          "example_vi": "Người đàn ông mặc bộ vest xanh là chú của tôi."
+        },
+        {
+          "meaning_vi": "người đàn ông",
+          "example_en": "Could you help that gentleman with his bags?",
+          "example_vi": "Bạn có thể giúp người đàn ông đó xách túi không?"
+        },
+        {
+          "meaning_vi": "người đàn ông",
+          "example_en": "The gentleman at the counter will assist you.",
+          "example_vi": "Người đàn ông tại quầy sẽ hỗ trợ bạn."
+        },
+        {
+          "meaning_vi": "người đàn ông",
+          "example_en": "I saw a gentleman waiting for the bus.",
+          "example_vi": "Tôi thấy một người đàn ông đang đợi xe buýt."
+        },
+        {
+          "meaning_vi": "người đàn ông",
+          "example_en": "That gentleman is a regular customer here.",
+          "example_vi": "Người đàn ông đó là khách hàng thường xuyên ở đây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc bỏ các nghĩa cổ, lóng và không phù hợp. Bổ sung ví dụ.",
+      "word": "gentleman",
+      "normalized_word": "gentleman",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a true gentleman in every way.",
+      "example_vi_clean": "Anh ấy là một người hào hoa phong nhã thực sự về mọi mặt."
+    }
+  ]
+}

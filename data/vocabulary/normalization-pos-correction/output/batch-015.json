@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24311,
+      "quiz_meaning_vi": "ngọn lửa",
+      "meaning_vi_clean": "ngọn lửa",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "The fire was very warm.",
+          "example_vi": "Ngọn lửa rất ấm áp."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "We sat around the fire.",
+          "example_vi": "Chúng tôi ngồi quanh ngọn lửa."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "The fire grew larger.",
+          "example_vi": "Ngọn lửa lớn dần lên."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "He looked into the fire.",
+          "example_vi": "Anh ấy nhìn vào ngọn lửa."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "The fire gave off light.",
+          "example_vi": "Ngọn lửa tỏa ra ánh sáng."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "Keep away from the fire.",
+          "example_vi": "Hãy tránh xa ngọn lửa."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "The fire burned all night.",
+          "example_vi": "Ngọn lửa cháy suốt đêm."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "They put out the fire.",
+          "example_vi": "Họ đã dập tắt ngọn lửa."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "The fire was bright red.",
+          "example_vi": "Ngọn lửa có màu đỏ rực."
+        },
+        {
+          "meaning_vi": "ngọn lửa",
+          "example_en": "I saw a small fire.",
+          "example_vi": "Tôi thấy một ngọn lửa nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fire được dùng làm danh từ chỉ ngọn lửa trong tất cả các câu."
+      },
+      "word": "fire",
+      "normalized_word": "fire",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The fire was very warm.",
+      "example_vi_clean": "Ngọn lửa rất ấm áp."
+    },
+    {
+      "id": 24312,
+      "quiz_meaning_vi": "đầu tiên",
+      "meaning_vi_clean": "đầu tiên",
+      "examples_clean": [
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "This is my first car.",
+          "example_vi": "Đây là chiếc xe hơi đầu tiên của tôi."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "It was his first day.",
+          "example_vi": "Đó là ngày đầu tiên của anh ấy."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "She won the first prize.",
+          "example_vi": "Cô ấy đã giành giải nhất."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "Read the first page.",
+          "example_vi": "Hãy đọc trang đầu tiên."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "This is the first time.",
+          "example_vi": "Đây là lần đầu tiên."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "He is the first person.",
+          "example_vi": "Anh ấy là người đầu tiên."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "Take the first road.",
+          "example_vi": "Hãy đi con đường đầu tiên."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "The first lesson is easy.",
+          "example_vi": "Bài học đầu tiên rất dễ."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "Find the first house.",
+          "example_vi": "Hãy tìm ngôi nhà đầu tiên."
+        },
+        {
+          "meaning_vi": "đầu tiên",
+          "example_en": "My first job was hard.",
+          "example_vi": "Công việc đầu tiên của tôi rất vất vả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ first được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các câu."
+      },
+      "word": "first",
+      "normalized_word": "first",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is my first car.",
+      "example_vi_clean": "Đây là chiếc xe hơi đầu tiên của tôi."
+    },
+    {
+      "id": 24316,
+      "quiz_meaning_vi": "lá cờ",
+      "meaning_vi_clean": "lá cờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "The flag is blue.",
+          "example_vi": "Lá cờ có màu xanh dương."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "He held the flag.",
+          "example_vi": "Anh ấy cầm lá cờ."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "The flag flew high.",
+          "example_vi": "Lá cờ bay cao."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "Look at that flag.",
+          "example_vi": "Hãy nhìn lá cờ đó."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "The flag has stars.",
+          "example_vi": "Lá cờ có những ngôi sao."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "She made a flag.",
+          "example_vi": "Cô ấy đã làm một lá cờ."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "The flag is big.",
+          "example_vi": "Lá cờ rất lớn."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "They raised the flag.",
+          "example_vi": "Họ đã kéo lá cờ lên."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "The flag is red.",
+          "example_vi": "Lá cờ có màu đỏ."
+        },
+        {
+          "meaning_vi": "lá cờ",
+          "example_en": "I bought a flag.",
+          "example_vi": "Tôi đã mua một lá cờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ flag được dùng làm danh từ chỉ lá cờ trong tất cả các câu."
+      },
+      "word": "flag",
+      "normalized_word": "flag",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The flag is blue.",
+      "example_vi_clean": "Lá cờ có màu xanh dương."
+    },
+    {
+      "id": 24317,
+      "quiz_meaning_vi": "sàn nhà",
+      "meaning_vi_clean": "sàn nhà",
+      "examples_clean": [
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "The floor is clean.",
+          "example_vi": "Sàn nhà rất sạch."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "Sit on the floor.",
+          "example_vi": "Hãy ngồi trên sàn nhà."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "He dropped it on the floor.",
+          "example_vi": "Anh ấy làm rơi nó xuống sàn nhà."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "The floor is made of wood.",
+          "example_vi": "Sàn nhà được làm bằng gỗ."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "Sweep the floor now.",
+          "example_vi": "Hãy quét sàn nhà ngay đi."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "The floor is cold.",
+          "example_vi": "Sàn nhà rất lạnh."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "She sat on the floor.",
+          "example_vi": "Cô ấy đã ngồi trên sàn nhà."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "The floor is wet.",
+          "example_vi": "Sàn nhà đang bị ướt."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "Walk on the floor.",
+          "example_vi": "Hãy đi trên sàn nhà."
+        },
+        {
+          "meaning_vi": "sàn nhà",
+          "example_en": "Clean the floor today.",
+          "example_vi": "Hãy lau sàn nhà hôm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ floor được dùng làm danh từ chỉ sàn nhà trong tất cả các câu."
+      },
+      "word": "floor",
+      "normalized_word": "floor",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The floor is clean.",
+      "example_vi_clean": "Sàn nhà rất sạch."
+    },
+    {
+      "id": 24318,
+      "quiz_meaning_vi": "bông hoa",
+      "meaning_vi_clean": "bông hoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "The flower is beautiful.",
+          "example_vi": "Bông hoa rất đẹp."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "She picked a flower.",
+          "example_vi": "Cô ấy đã hái một bông hoa."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "This flower smells good.",
+          "example_vi": "Bông hoa này có mùi thơm."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "He gave her a flower.",
+          "example_vi": "Anh ấy đã tặng cô ấy một bông hoa."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "The flower is red.",
+          "example_vi": "Bông hoa có màu đỏ."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "Look at that flower.",
+          "example_vi": "Hãy nhìn bông hoa đó."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "The flower grew fast.",
+          "example_vi": "Bông hoa đã lớn nhanh."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "I like this flower.",
+          "example_vi": "Tôi thích bông hoa này."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "The flower is small.",
+          "example_vi": "Bông hoa rất nhỏ."
+        },
+        {
+          "meaning_vi": "bông hoa",
+          "example_en": "She bought a flower.",
+          "example_vi": "Cô ấy đã mua một bông hoa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ flower được dùng làm danh từ chỉ bông hoa trong tất cả các câu."
+      },
+      "word": "flower",
+      "normalized_word": "flower",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The flower is beautiful.",
+      "example_vi_clean": "Bông hoa rất đẹp."
+    },
+    {
+      "id": 24319,
+      "quiz_meaning_vi": "con ruồi",
+      "meaning_vi_clean": "con ruồi",
+      "examples_clean": [
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "A fly is on the wall.",
+          "example_vi": "Một con ruồi đang ở trên tường."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "The fly is very small.",
+          "example_vi": "Con ruồi rất nhỏ."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "He hit the fly.",
+          "example_vi": "Anh ấy đã đập con ruồi."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "I saw a fly.",
+          "example_vi": "Tôi đã thấy một con ruồi."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "The fly landed there.",
+          "example_vi": "Con ruồi đã đậu ở đó."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "Keep the fly away.",
+          "example_vi": "Hãy xua con ruồi đi."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "The fly is annoying.",
+          "example_vi": "Con ruồi thật phiền phức."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "She caught a fly.",
+          "example_vi": "Cô ấy đã bắt được một con ruồi."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "The fly is black.",
+          "example_vi": "Con ruồi có màu đen."
+        },
+        {
+          "meaning_vi": "con ruồi",
+          "example_en": "Don't let the fly in.",
+          "example_vi": "Đừng để con ruồi bay vào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fly được dùng làm danh từ chỉ con ruồi trong tất cả các câu."
+      },
+      "word": "fly",
+      "normalized_word": "fly",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A fly is on the wall.",
+      "example_vi_clean": "Một con ruồi đang ở trên tường."
+    },
+    {
+      "id": 24327,
+      "quiz_meaning_vi": "mẫu đơn",
+      "meaning_vi_clean": "mẫu đơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "Fill out this form.",
+          "example_vi": "Hãy điền vào mẫu đơn này."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "I need a new form.",
+          "example_vi": "Tôi cần một mẫu đơn mới."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "Sign the form here.",
+          "example_vi": "Hãy ký vào mẫu đơn ở đây."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "The form is long.",
+          "example_vi": "Mẫu đơn này rất dài."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "She gave me a form.",
+          "example_vi": "Cô ấy đã đưa tôi một mẫu đơn."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "Read the form carefully.",
+          "example_vi": "Hãy đọc kỹ mẫu đơn."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "This form is easy.",
+          "example_vi": "Mẫu đơn này rất dễ."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "He lost the form.",
+          "example_vi": "Anh ấy đã làm mất mẫu đơn."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "Bring the form back.",
+          "example_vi": "Hãy mang mẫu đơn quay lại."
+        },
+        {
+          "meaning_vi": "mẫu đơn",
+          "example_en": "I finished the form.",
+          "example_vi": "Tôi đã hoàn thành mẫu đơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ form được dùng làm danh từ chỉ mẫu đơn trong tất cả các câu."
+      },
+      "word": "form",
+      "normalized_word": "form",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Fill out this form.",
+      "example_vi_clean": "Hãy điền vào mẫu đơn này."
+    },
+    {
+      "id": 24331,
+      "quiz_meaning_vi": "miễn phí",
+      "meaning_vi_clean": "miễn phí",
+      "examples_clean": [
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "The book is free.",
+          "example_vi": "Cuốn sách này miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "Is this service free?",
+          "example_vi": "Dịch vụ này có miễn phí không?"
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "The entry is free.",
+          "example_vi": "Vé vào cửa là miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "It is a free gift.",
+          "example_vi": "Đó là một món quà miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "The water is free.",
+          "example_vi": "Nước uống là miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "Everything here is free.",
+          "example_vi": "Mọi thứ ở đây đều miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "The class is free.",
+          "example_vi": "Lớp học này miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "They offer free food.",
+          "example_vi": "Họ cung cấp đồ ăn miễn phí."
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "Is the map free?",
+          "example_vi": "Tấm bản đồ này có miễn phí không?"
+        },
+        {
+          "meaning_vi": "miễn phí",
+          "example_en": "The advice is free.",
+          "example_vi": "Lời khuyên này là miễn phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ free được dùng làm tính từ chỉ sự miễn phí trong tất cả các câu."
+      },
+      "word": "free",
+      "normalized_word": "free",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The book is free.",
+      "example_vi_clean": "Cuốn sách này miễn phí."
+    },
+    {
+      "id": 24333,
+      "quiz_meaning_vi": "bạn bè",
+      "meaning_vi_clean": "bạn bè",
+      "examples_clean": [
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "He is my best friend.",
+          "example_vi": "Anh ấy là bạn thân của tôi."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "She has many friends.",
+          "example_vi": "Cô ấy có nhiều bạn bè."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "I met a friend.",
+          "example_vi": "Tôi đã gặp một người bạn."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "They are good friends.",
+          "example_vi": "Họ là những người bạn tốt."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "Call your friend now.",
+          "example_vi": "Hãy gọi cho bạn của bạn ngay đi."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "My friend is here.",
+          "example_vi": "Bạn của tôi đang ở đây."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "She is a kind friend.",
+          "example_vi": "Cô ấy là một người bạn tốt bụng."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "I like my friend.",
+          "example_vi": "Tôi quý bạn của tôi."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "He is a new friend.",
+          "example_vi": "Anh ấy là một người bạn mới."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "Talk to your friend.",
+          "example_vi": "Hãy nói chuyện với bạn của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ friend được dùng làm danh từ chỉ bạn bè trong tất cả các câu."
+      },
+      "word": "friend",
+      "normalized_word": "friend",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is my best friend.",
+      "example_vi_clean": "Anh ấy là bạn thân của tôi."
+    },
+    {
+      "id": 24336,
+      "quiz_meaning_vi": "phía trước",
+      "meaning_vi_clean": "phía trước",
+      "examples_clean": [
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "The front door is open.",
+          "example_vi": "Cửa phía trước đang mở."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "Sit in the front seat.",
+          "example_vi": "Hãy ngồi ở ghế phía trước."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "The front garden is nice.",
+          "example_vi": "Khu vườn phía trước rất đẹp."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "Look at the front wall.",
+          "example_vi": "Hãy nhìn vào bức tường phía trước."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "The front room is big.",
+          "example_vi": "Căn phòng phía trước rất lớn."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "He is at the front desk.",
+          "example_vi": "Anh ấy đang ở quầy phía trước."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "The front window is clean.",
+          "example_vi": "Cửa sổ phía trước rất sạch."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "Use the front gate.",
+          "example_vi": "Hãy sử dụng cổng phía trước."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "The front row is full.",
+          "example_vi": "Hàng ghế phía trước đã đầy."
+        },
+        {
+          "meaning_vi": "phía trước",
+          "example_en": "Check the front tire.",
+          "example_vi": "Hãy kiểm tra lốp xe phía trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ front được dùng làm tính từ chỉ vị trí phía trước trong tất cả các câu."
+      },
+      "word": "front",
+      "normalized_word": "front",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The front door is open.",
+      "example_vi_clean": "Cửa phía trước đang mở."
+    }
+  ]
+}

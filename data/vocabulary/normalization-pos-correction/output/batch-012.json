@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24246,
+      "quiz_meaning_vi": "đường lái xe",
+      "meaning_vi_clean": "đường lái xe",
+      "examples_clean": [
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "He parked his car in the long drive.",
+          "example_vi": "Anh ấy đỗ xe trên con đường lái xe dài."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "The children are playing on the drive.",
+          "example_vi": "Lũ trẻ đang chơi trên đường lái xe."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "Please keep the drive clear for visitors.",
+          "example_vi": "Vui lòng giữ cho đường lái xe thông thoáng cho khách."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "There is a new gate at the end of the drive.",
+          "example_vi": "Có một cái cổng mới ở cuối đường lái xe."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "She walked up the drive to the front door.",
+          "example_vi": "Cô ấy đi bộ dọc theo đường lái xe đến cửa trước."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "The snow covered the entire drive.",
+          "example_vi": "Tuyết phủ kín toàn bộ đường lái xe."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "We need to clean the drive this weekend.",
+          "example_vi": "Chúng ta cần dọn dẹp đường lái xe vào cuối tuần này."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "His bike is lying on the drive.",
+          "example_vi": "Chiếc xe đạp của cậu ấy đang nằm trên đường lái xe."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "The drive is too narrow for two cars.",
+          "example_vi": "Đường lái xe quá hẹp cho hai chiếc ô tô."
+        },
+        {
+          "meaning_vi": "đường lái xe",
+          "example_en": "They are paving the drive with stones.",
+          "example_vi": "Họ đang lát đá cho con đường lái xe."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ con đường dẫn vào nhà theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chỉ con đường lái xe được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "drive",
+      "normalized_word": "drive",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He parked his car in the long drive.",
+      "example_vi_clean": "Anh ấy đỗ xe trên con đường lái xe dài."
+    },
+    {
+      "id": 24248,
+      "quiz_meaning_vi": "cái trống",
+      "meaning_vi_clean": "cái trống",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "The boy is hitting the drum.",
+          "example_vi": "Cậu bé đang đánh cái trống."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "She learned how to play the drum.",
+          "example_vi": "Cô ấy đã học cách chơi trống."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "The sound of the drum was very loud.",
+          "example_vi": "Âm thanh của cái trống rất lớn."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "He bought a new drum for his band.",
+          "example_vi": "Anh ấy đã mua một cái trống mới cho ban nhạc của mình."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "The drum is made of wood and skin.",
+          "example_vi": "Cái trống được làm bằng gỗ và da."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "Can you hear the beat of the drum?",
+          "example_vi": "Bạn có nghe thấy nhịp điệu của cái trống không?"
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "She put the drum in the corner of the room.",
+          "example_vi": "Cô ấy đặt cái trống vào góc phòng."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "The drum needs a new stick.",
+          "example_vi": "Cái trống cần một cái dùi mới."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "They decorated the drum for the festival.",
+          "example_vi": "Họ đã trang trí cái trống cho lễ hội."
+        },
+        {
+          "meaning_vi": "cái trống",
+          "example_en": "He practiced on his drum every day.",
+          "example_vi": "Anh ấy tập luyện trên cái trống của mình mỗi ngày."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ nhạc cụ theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chỉ nhạc cụ được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "drum",
+      "normalized_word": "drum",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The boy is hitting the drum.",
+      "example_vi_clean": "Cậu bé đang đánh cái trống."
+    },
+    {
+      "id": 24249,
+      "quiz_meaning_vi": "khô",
+      "meaning_vi_clean": "khô",
+      "examples_clean": [
+        {
+          "meaning_vi": "khô",
+          "example_en": "The clothes are dry now.",
+          "example_vi": "Quần áo bây giờ đã khô rồi."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The ground is very dry after the summer.",
+          "example_vi": "Mặt đất rất khô sau mùa hè."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "Keep the bread in a dry place.",
+          "example_vi": "Hãy giữ bánh mì ở nơi khô ráo."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "My skin feels dry in the winter.",
+          "example_vi": "Da tôi cảm thấy khô vào mùa đông."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The leaves on the tree are dry.",
+          "example_vi": "Những chiếc lá trên cây đã khô."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "Is the paint dry yet?",
+          "example_vi": "Sơn đã khô chưa?"
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The river is dry this year.",
+          "example_vi": "Con sông đã khô cạn trong năm nay."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "She needs a dry towel.",
+          "example_vi": "Cô ấy cần một chiếc khăn khô."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The weather is hot and dry.",
+          "example_vi": "Thời tiết nóng và khô."
+        },
+        {
+          "meaning_vi": "khô",
+          "example_en": "The flowers are dry because I forgot to water them.",
+          "example_vi": "Những bông hoa đã khô vì tôi quên tưới nước cho chúng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ trạng thái không ẩm ướt theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ chỉ trạng thái khô được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "dry",
+      "normalized_word": "dry",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The clothes are dry now.",
+      "example_vi_clean": "Quần áo bây giờ đã khô rồi."
+    },
+    {
+      "id": 24250,
+      "quiz_meaning_vi": "đến hạn",
+      "meaning_vi_clean": "đến hạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The library book is due today.",
+          "example_vi": "Cuốn sách thư viện đã đến hạn trả hôm nay."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The rent is due at the end of the month.",
+          "example_vi": "Tiền thuê nhà đã đến hạn vào cuối tháng."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The baby is due in two weeks.",
+          "example_vi": "Em bé dự kiến sẽ chào đời trong hai tuần nữa."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The project is due tomorrow morning.",
+          "example_vi": "Dự án đã đến hạn nộp vào sáng mai."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "Is the payment due now?",
+          "example_vi": "Khoản thanh toán đã đến hạn chưa?"
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The train is due at five o'clock.",
+          "example_vi": "Tàu dự kiến đến lúc năm giờ."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "My essay is due on Friday.",
+          "example_vi": "Bài luận của tôi đến hạn nộp vào thứ Sáu."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The bill is due by the end of the week.",
+          "example_vi": "Hóa đơn đã đến hạn thanh toán vào cuối tuần."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The bus is due in five minutes.",
+          "example_vi": "Xe buýt dự kiến đến trong năm phút nữa."
+        },
+        {
+          "meaning_vi": "đến hạn",
+          "example_en": "The assignment is due before the class starts.",
+          "example_vi": "Bài tập đã đến hạn nộp trước khi lớp học bắt đầu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ thời điểm cần hoàn thành hoặc xuất hiện theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ chỉ thời điểm đến hạn được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "due",
+      "normalized_word": "due",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The library book is due today.",
+      "example_vi_clean": "Cuốn sách thư viện đã đến hạn trả hôm nay."
+    },
+    {
+      "id": 24252,
+      "quiz_meaning_vi": "tai",
+      "meaning_vi_clean": "tai",
+      "examples_clean": [
+        {
+          "meaning_vi": "tai",
+          "example_en": "She has small ears.",
+          "example_vi": "Cô ấy có đôi tai nhỏ."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "He covered his ears because of the noise.",
+          "example_vi": "Anh ấy bịt tai lại vì tiếng ồn."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "The dog has long, soft ears.",
+          "example_vi": "Con chó có đôi tai dài và mềm."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "I have an ache in my left ear.",
+          "example_vi": "Tôi bị đau ở tai trái."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "She whispered something in his ear.",
+          "example_vi": "Cô ấy thì thầm điều gì đó vào tai anh ấy."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "Clean your ears carefully.",
+          "example_vi": "Hãy vệ sinh tai của bạn cẩn thận."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "The music was too loud for my ears.",
+          "example_vi": "Âm nhạc quá lớn đối với tai của tôi."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "He wears glasses behind his ears.",
+          "example_vi": "Anh ấy đeo kính sau tai."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "The rabbit moved its ears to listen.",
+          "example_vi": "Con thỏ cử động đôi tai để lắng nghe."
+        },
+        {
+          "meaning_vi": "tai",
+          "example_en": "She put a flower behind her ear.",
+          "example_vi": "Cô ấy cài một bông hoa sau tai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ bộ phận cơ thể theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chỉ bộ phận cơ thể được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "ear",
+      "normalized_word": "ear",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has small ears.",
+      "example_vi_clean": "Cô ấy có đôi tai nhỏ."
+    },
+    {
+      "id": 24253,
+      "quiz_meaning_vi": "dễ dàng",
+      "meaning_vi_clean": "dễ dàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "This exercise is very easy.",
+          "example_vi": "Bài tập này rất dễ dàng."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "It is easy to learn English.",
+          "example_vi": "Học tiếng Anh rất dễ dàng."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "The test was easy for everyone.",
+          "example_vi": "Bài kiểm tra rất dễ dàng với mọi người."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "She found an easy way to solve the problem.",
+          "example_vi": "Cô ấy đã tìm ra một cách dễ dàng để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "It is not easy to wake up early.",
+          "example_vi": "Thật không dễ dàng để thức dậy sớm."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "The instructions were easy to follow.",
+          "example_vi": "Các hướng dẫn rất dễ dàng để làm theo."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "He made an easy choice.",
+          "example_vi": "Anh ấy đã đưa ra một lựa chọn dễ dàng."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "Is this book easy to read?",
+          "example_vi": "Cuốn sách này có dễ dàng để đọc không?"
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "The path was easy to walk on.",
+          "example_vi": "Con đường rất dễ dàng để đi bộ."
+        },
+        {
+          "meaning_vi": "dễ dàng",
+          "example_en": "It is easy to make mistakes.",
+          "example_vi": "Thật dễ dàng để mắc sai lầm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ sự không khó khăn theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ chỉ sự dễ dàng được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "easy",
+      "normalized_word": "easy",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This exercise is very easy.",
+      "example_vi_clean": "Bài tập này rất dễ dàng."
+    },
+    {
+      "id": 24255,
+      "quiz_meaning_vi": "quả trứng",
+      "meaning_vi_clean": "quả trứng",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "I had an egg for breakfast.",
+          "example_vi": "Tôi đã ăn một quả trứng cho bữa sáng."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "She broke the egg into the bowl.",
+          "example_vi": "Cô ấy đập quả trứng vào bát."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "The bird laid an egg in the nest.",
+          "example_vi": "Con chim đã đẻ một quả trứng trong tổ."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "Do you want a boiled egg?",
+          "example_vi": "Bạn có muốn một quả trứng luộc không?"
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "He bought a dozen eggs at the store.",
+          "example_vi": "Anh ấy đã mua một tá quả trứng ở cửa hàng."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "The egg shell is very thin.",
+          "example_vi": "Vỏ quả trứng rất mỏng."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "She cooked a fried egg for him.",
+          "example_vi": "Cô ấy đã nấu một quả trứng ốp la cho anh ấy."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "The egg is still fresh.",
+          "example_vi": "Quả trứng vẫn còn tươi."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "We need one more egg for the cake.",
+          "example_vi": "Chúng ta cần thêm một quả trứng nữa cho chiếc bánh."
+        },
+        {
+          "meaning_vi": "quả trứng",
+          "example_en": "The egg rolled off the table.",
+          "example_vi": "Quả trứng lăn khỏi bàn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ thực phẩm/sinh học theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chỉ quả trứng được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "egg",
+      "normalized_word": "egg",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I had an egg for breakfast.",
+      "example_vi_clean": "Tôi đã ăn một quả trứng cho bữa sáng."
+    },
+    {
+      "id": 24260,
+      "quiz_meaning_vi": "cơ bản",
+      "meaning_vi_clean": "cơ bản",
+      "examples_clean": [
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "This is an elementary lesson.",
+          "example_vi": "Đây là một bài học cơ bản."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "He has an elementary knowledge of math.",
+          "example_vi": "Anh ấy có kiến thức cơ bản về toán học."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "They learned the elementary rules of the game.",
+          "example_vi": "Họ đã học những quy tắc cơ bản của trò chơi."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "The book covers elementary concepts.",
+          "example_vi": "Cuốn sách bao gồm các khái niệm cơ bản."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "She needs to learn the elementary steps first.",
+          "example_vi": "Cô ấy cần học các bước cơ bản trước."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "These are elementary facts about history.",
+          "example_vi": "Đây là những sự thật cơ bản về lịch sử."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "He gave an elementary explanation.",
+          "example_vi": "Anh ấy đã đưa ra một lời giải thích cơ bản."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "The course is for elementary students.",
+          "example_vi": "Khóa học dành cho học sinh trình độ cơ bản."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "It was an elementary mistake to make.",
+          "example_vi": "Đó là một sai lầm cơ bản cần tránh."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "We started with elementary exercises.",
+          "example_vi": "Chúng tôi bắt đầu với những bài tập cơ bản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ mức độ sơ cấp/cơ bản theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa tính từ chỉ sự cơ bản được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "elementary",
+      "normalized_word": "elementary",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is an elementary lesson.",
+      "example_vi_clean": "Đây là một bài học cơ bản."
+    },
+    {
+      "id": 24263,
+      "quiz_meaning_vi": "thư điện tử",
+      "meaning_vi_clean": "thư điện tử",
+      "examples_clean": [
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "I sent an e-mail to my friend.",
+          "example_vi": "Tôi đã gửi một thư điện tử cho bạn mình."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "Did you get my e-mail?",
+          "example_vi": "Bạn đã nhận được thư điện tử của tôi chưa?"
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "She wrote a long e-mail.",
+          "example_vi": "Cô ấy đã viết một thư điện tử dài."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "Check your e-mail for the update.",
+          "example_vi": "Kiểm tra thư điện tử của bạn để xem cập nhật."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "He replied to the e-mail quickly.",
+          "example_vi": "Anh ấy đã trả lời thư điện tử một cách nhanh chóng."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "I deleted the e-mail by mistake.",
+          "example_vi": "Tôi đã xóa thư điện tử đó do nhầm lẫn."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "The e-mail contains important information.",
+          "example_vi": "Thư điện tử đó chứa thông tin quan trọng."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "She is reading an e-mail on her phone.",
+          "example_vi": "Cô ấy đang đọc thư điện tử trên điện thoại của mình."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "Please print the e-mail for me.",
+          "example_vi": "Vui lòng in thư điện tử đó ra cho tôi."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "He forgot to attach the file to the e-mail.",
+          "example_vi": "Anh ấy đã quên đính kèm tệp vào thư điện tử."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ thư điện tử theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chỉ thư điện tử được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "e-mail",
+      "normalized_word": "e-mail",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I sent an e-mail to my friend.",
+      "example_vi_clean": "Tôi đã gửi một thư điện tử cho bạn mình."
+    },
+    {
+      "id": 24264,
+      "quiz_meaning_vi": "kết thúc",
+      "meaning_vi_clean": "kết thúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "We are near the end of the road.",
+          "example_vi": "Chúng ta đang ở gần phần kết thúc của con đường."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "The end of the movie was sad.",
+          "example_vi": "Phần kết thúc của bộ phim thật buồn."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "He waited until the end of the meeting.",
+          "example_vi": "Anh ấy đã đợi cho đến khi kết thúc cuộc họp."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "The end of the year is coming soon.",
+          "example_vi": "Thời điểm kết thúc năm đang đến gần."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "She sat at the end of the table.",
+          "example_vi": "Cô ấy ngồi ở phần kết thúc của chiếc bàn."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "The end of the book is very exciting.",
+          "example_vi": "Phần kết thúc của cuốn sách rất thú vị."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "They reached the end of the path.",
+          "example_vi": "Họ đã đi đến phần kết thúc của con đường mòn."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "I enjoyed the end of the concert.",
+          "example_vi": "Tôi đã rất thích phần kết thúc của buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "The end of the story is a surprise.",
+          "example_vi": "Phần kết thúc của câu chuyện là một bất ngờ."
+        },
+        {
+          "meaning_vi": "kết thúc",
+          "example_en": "He signed his name at the end of the letter.",
+          "example_vi": "Anh ấy đã ký tên mình ở phần kết thúc của lá thư."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ điểm cuối hoặc sự kết thúc theo đúng POS nguồn.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa danh từ chỉ sự kết thúc được sử dụng nhất quán trong cả 10 ví dụ."
+      },
+      "word": "end",
+      "normalized_word": "end",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We are near the end of the road.",
+      "example_vi_clean": "Chúng ta đang ở gần phần kết thúc của con đường."
+    }
+  ]
+}

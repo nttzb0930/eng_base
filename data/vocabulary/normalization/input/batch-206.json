@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-206",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26051,
+      "word": "entertain",
+      "normalized_word": "entertain",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/,entə'tein/",
+      "primary_meaning_vi": "tiếp đãi",
+      "meaning_vi": "tiếp đãi; chiêu đãi; giải trí, tiêu khiển; nuôi dưỡng, ấp ủ (ảo tưởng, hy vọng, sự nghi ngờ, quan điểm...); hoan nghênh, tán thành (ý kiến, đề nghị...); trao đổi (thư từ...); ,  (văn học) bàn về cái gì",
+      "example_en": "The motivational speaker not only instructed but also entertained the audience.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They enjoy entertaining a lot.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The committee would like to entertain the idea of reducing the budget figures.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26052,
+      "word": "entertainer",
+      "normalized_word": "entertainer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,entə'teinə /",
+      "primary_meaning_vi": "người tiếp đãi",
+      "meaning_vi": "người tiếp đãi, người chiêu đãi; người làm trò mua vui (hát, múa... ở các hộp đêm)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26053,
+      "word": "enthusiasm",
+      "normalized_word": "enthusiasm",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'θju:ziæzm/",
+      "primary_meaning_vi": "sự hăng hái",
+      "meaning_vi": "sự hăng hái, sự nhiệt tình",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26054,
+      "word": "enthusiast",
+      "normalized_word": "enthusiast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'θju:ziæst/",
+      "primary_meaning_vi": "người hăng hái",
+      "meaning_vi": "người hăng hái, người có nhiệt tình; người say mê",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26055,
+      "word": "enthusiastic",
+      "normalized_word": "enthusiastic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/in'θju:zi'æstik/",
+      "primary_meaning_vi": "hăng hái",
+      "meaning_vi": "hăng hái, nhiệt tình; say mê",
+      "example_en": "an enthusiastic lover of art",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26056,
+      "word": "entire",
+      "normalized_word": "entire",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'taiə/",
+      "primary_meaning_vi": "toàn bộ",
+      "meaning_vi": "toàn bộ, toàn thể, toàn vẹn, hoàn toàn; thành một khối, thành một mảng, liền; không thiến, không hoạn; nguyên chất; toàn bộ, toàn thể, cái nguyên vẹn; ngựa không thiến, ngựa giống; bia đen",
+      "example_en": "We had the entire building to ourselves for the evening.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26057,
+      "word": "entirely",
+      "normalized_word": "entirely",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/in'taiəli/",
+      "primary_meaning_vi": "toàn bộ",
+      "meaning_vi": "toàn bộ, toàn vẹn, trọn vẹn; hoàn toàn",
+      "example_en": "It is entirely up to you where we go, as I’ll be happy with anywhere.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This part of the park is used entirely by the workers; everyone else will have to go to the other side.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26058,
+      "word": "entry",
+      "normalized_word": "entry",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'entri/",
+      "primary_meaning_vi": "sự đi vào",
+      "meaning_vi": "sự đi vào; sự ra (của một diễn viên); lối đi vào, cổng đi vào; sự tiếp nhận; sự ghi vào (sổ sách); mục (ghi vào sổ); mục từ (trong từ điển); danh sách người thi đấu; sự ghi tên người thi đấu",
+      "example_en": "Children are allowed entry only if accompanied by an adult.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "What does the entry for 2 August 2005 say?",
+          "example_vi": null
+        },
+        {
+          "example_en": "The entry in the second row and first column of this matrix is 6.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26059,
+      "word": "environmental",
+      "normalized_word": "environmental",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "thuộc về môi trường",
+      "meaning_vi": "thuộc về môi trường",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26060,
+      "word": "environmentalist",
+      "normalized_word": "environmentalist",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "người quan tâm bảo vệ môi trường",
+      "meaning_vi": "người quan tâm bảo vệ môi trường, nhà môi trường học",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

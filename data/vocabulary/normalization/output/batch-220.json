@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26191,
+      "quiz_meaning_vi": "sự ồn ào",
+      "meaning_vi_clean": "sự ồn ào; sự quan trọng hoá",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự ồn ào",
+          "example_en": "They made a big fuss about the wedding plans.",
+          "example_vi": "Họ đã làm ầm ĩ lên về các kế hoạch đám cưới."
+        },
+        {
+          "meaning_vi": "sự ồn ào",
+          "example_en": "If you make enough of a fuss about the problem, maybe they will fix it.",
+          "example_vi": "Nếu bạn làm ầm ĩ đủ về vấn đề đó, có lẽ họ sẽ sửa nó cho bạn."
+        },
+        {
+          "meaning_vi": "sự ồn ào",
+          "example_en": "She made such a fuss when the waiter brought the wrong order.",
+          "example_vi": "Cô ấy đã làm ầm ĩ lên khi người phục vụ mang nhầm món."
+        },
+        {
+          "meaning_vi": "sự ồn ào",
+          "example_en": "There is no need to make a fuss over such a small mistake.",
+          "example_vi": "Không cần phải làm ầm ĩ lên vì một lỗi nhỏ như vậy."
+        },
+        {
+          "meaning_vi": "sự quan trọng hoá",
+          "example_en": "He has a tendency to make a fuss about minor details.",
+          "example_vi": "Anh ấy có xu hướng quan trọng hóa các chi tiết nhỏ."
+        },
+        {
+          "meaning_vi": "sự quan trọng hoá",
+          "example_en": "Don't make a fuss about where we sit for dinner.",
+          "example_vi": "Đừng quan trọng hóa việc chúng ta ngồi đâu để ăn tối."
+        },
+        {
+          "meaning_vi": "sự quan trọng hoá",
+          "example_en": "She makes a fuss about everything her children do.",
+          "example_vi": "Cô ấy quan trọng hóa mọi thứ mà các con cô ấy làm."
+        },
+        {
+          "meaning_vi": "sự quan trọng hoá",
+          "example_en": "It is not worth making a fuss about the seating arrangement.",
+          "example_vi": "Không đáng để quan trọng hóa việc sắp xếp chỗ ngồi."
+        },
+        {
+          "meaning_vi": "sự quan trọng hoá",
+          "example_en": "He likes to make a fuss about his health.",
+          "example_vi": "Anh ấy thích quan trọng hóa vấn đề sức khỏe của mình."
+        },
+        {
+          "meaning_vi": "sự quan trọng hoá",
+          "example_en": "Stop making a fuss about the color of the walls.",
+          "example_vi": "Hãy ngừng quan trọng hóa màu sắc của những bức tường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa phổ biến và bổ sung ví dụ theo quy tắc.",
+      "word": "fuss",
+      "normalized_word": "fuss",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They made a big fuss about the wedding plans.",
+      "example_vi_clean": "Họ đã làm ầm ĩ lên về các kế hoạch đám cưới."
+    },
+    {
+      "id": 26192,
+      "quiz_meaning_vi": "tương lai",
+      "meaning_vi_clean": "tương lai; về sau này",
+      "examples_clean": [
+        {
+          "meaning_vi": "tương lai",
+          "example_en": "There is no future in dwelling on the past.",
+          "example_vi": "Chẳng có tương lai gì nếu cứ mãi đắm chìm trong quá khứ."
+        },
+        {
+          "meaning_vi": "tương lai",
+          "example_en": "Future generations will look back at our achievements.",
+          "example_vi": "Các thế hệ tương lai sẽ nhìn lại những thành tựu của chúng ta."
+        },
+        {
+          "meaning_vi": "tương lai",
+          "example_en": "We need to plan for the future of the company.",
+          "example_vi": "Chúng ta cần lập kế hoạch cho tương lai của công ty."
+        },
+        {
+          "meaning_vi": "tương lai",
+          "example_en": "The future of the project depends on your decision.",
+          "example_vi": "Tương lai của dự án phụ thuộc vào quyết định của bạn."
+        },
+        {
+          "meaning_vi": "về sau này",
+          "example_en": "I will think about that issue later in the future.",
+          "example_vi": "Tôi sẽ suy nghĩ về vấn đề đó về sau này."
+        },
+        {
+          "meaning_vi": "về sau này",
+          "example_en": "You might need this information sometime in the future.",
+          "example_vi": "Bạn có thể cần thông tin này vào một lúc nào đó về sau này."
+        },
+        {
+          "meaning_vi": "về sau này",
+          "example_en": "We can discuss the details in the future.",
+          "example_vi": "Chúng ta có thể thảo luận chi tiết về sau này."
+        },
+        {
+          "meaning_vi": "về sau này",
+          "example_en": "He hopes to travel more in the future.",
+          "example_vi": "Anh ấy hy vọng sẽ đi du lịch nhiều hơn về sau này."
+        },
+        {
+          "meaning_vi": "về sau này",
+          "example_en": "Things will get better in the future.",
+          "example_vi": "Mọi thứ sẽ trở nên tốt hơn về sau này."
+        },
+        {
+          "meaning_vi": "về sau này",
+          "example_en": "Keep this document for reference in the future.",
+          "example_vi": "Hãy giữ tài liệu này để tham khảo về sau này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "future",
+      "normalized_word": "future",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "There is no future in dwelling on the past.",
+      "example_vi_clean": "Chẳng có tương lai gì nếu cứ mãi đắm chìm trong quá khứ."
+    },
+    {
+      "id": 26193,
+      "quiz_meaning_vi": "lợi",
+      "meaning_vi_clean": "lợi; sự tăng thêm",
+      "examples_clean": [
+        {
+          "meaning_vi": "lợi",
+          "example_en": "The company reported a significant gain in profits.",
+          "example_vi": "Công ty đã báo cáo một khoản lợi đáng kể."
+        },
+        {
+          "meaning_vi": "lợi",
+          "example_en": "He saw no gain in working extra hours.",
+          "example_vi": "Anh ấy không thấy lợi lộc gì trong việc làm thêm giờ."
+        },
+        {
+          "meaning_vi": "lợi",
+          "example_en": "The political gain from this policy is unclear.",
+          "example_vi": "Lợi ích chính trị từ chính sách này vẫn chưa rõ ràng."
+        },
+        {
+          "meaning_vi": "lợi",
+          "example_en": "They are only interested in personal gain.",
+          "example_vi": "Họ chỉ quan tâm đến lợi ích cá nhân."
+        },
+        {
+          "meaning_vi": "sự tăng thêm",
+          "example_en": "The gain in speed was noticeable after the upgrade.",
+          "example_vi": "Sự tăng thêm về tốc độ rất đáng chú ý sau khi nâng cấp."
+        },
+        {
+          "meaning_vi": "sự tăng thêm",
+          "example_en": "There was a steady gain in the number of visitors.",
+          "example_vi": "Có một sự tăng thêm đều đặn về số lượng khách tham quan."
+        },
+        {
+          "meaning_vi": "sự tăng thêm",
+          "example_en": "The gain in weight is due to his new diet.",
+          "example_vi": "Sự tăng thêm về cân nặng là do chế độ ăn mới của anh ấy."
+        },
+        {
+          "meaning_vi": "sự tăng thêm",
+          "example_en": "We observed a gain in efficiency across the team.",
+          "example_vi": "Chúng tôi quan sát thấy sự tăng thêm về hiệu suất trong toàn đội."
+        },
+        {
+          "meaning_vi": "sự tăng thêm",
+          "example_en": "The gain in temperature was recorded by the sensor.",
+          "example_vi": "Sự tăng thêm về nhiệt độ đã được cảm biến ghi lại."
+        },
+        {
+          "meaning_vi": "sự tăng thêm",
+          "example_en": "Any gain in productivity is welcome.",
+          "example_vi": "Bất kỳ sự tăng thêm nào về năng suất đều được hoan nghênh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gain",
+      "normalized_word": "gain",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The company reported a significant gain in profits.",
+      "example_vi_clean": "Công ty đã báo cáo một khoản lợi đáng kể."
+    },
+    {
+      "id": 26194,
+      "quiz_meaning_vi": "mật",
+      "meaning_vi_clean": "mật; sự trơ tráo",
+      "examples_clean": [
+        {
+          "meaning_vi": "mật",
+          "example_en": "The gallbladder stores bile, also known as gall.",
+          "example_vi": "Túi mật lưu trữ mật, còn được gọi là dịch mật."
+        },
+        {
+          "meaning_vi": "mật",
+          "example_en": "The bitter taste reminded him of gall.",
+          "example_vi": "Vị đắng làm anh ấy nhớ đến mật."
+        },
+        {
+          "meaning_vi": "mật",
+          "example_en": "In ancient times, gall was used in some medicines.",
+          "example_vi": "Thời cổ đại, mật được dùng trong một số loại thuốc."
+        },
+        {
+          "meaning_vi": "mật",
+          "example_en": "The secretion of gall is essential for digestion.",
+          "example_vi": "Sự tiết mật là cần thiết cho quá trình tiêu hóa."
+        },
+        {
+          "meaning_vi": "sự trơ tráo",
+          "example_en": "He had the gall to ask for a raise after being late.",
+          "example_vi": "Anh ta thật trơ tráo khi đòi tăng lương sau khi đi làm muộn."
+        },
+        {
+          "meaning_vi": "sự trơ tráo",
+          "example_en": "I cannot believe she had the gall to lie to me.",
+          "example_vi": "Tôi không thể tin là cô ấy lại trơ tráo đến mức nói dối tôi."
+        },
+        {
+          "meaning_vi": "sự trơ tráo",
+          "example_en": "It takes a lot of gall to interrupt the meeting.",
+          "example_vi": "Phải rất trơ tráo mới dám ngắt lời cuộc họp."
+        },
+        {
+          "meaning_vi": "sự trơ tráo",
+          "example_en": "He had the gall to blame others for his mistakes.",
+          "example_vi": "Anh ta thật trơ tráo khi đổ lỗi cho người khác về sai lầm của mình."
+        },
+        {
+          "meaning_vi": "sự trơ tráo",
+          "example_en": "She had the gall to walk out without saying goodbye.",
+          "example_vi": "Cô ấy thật trơ tráo khi bỏ đi mà không nói lời tạm biệt."
+        },
+        {
+          "meaning_vi": "sự trơ tráo",
+          "example_en": "Don't have the gall to complain about the service.",
+          "example_vi": "Đừng trơ tráo đến mức phàn nàn về dịch vụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gall",
+      "normalized_word": "gall",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The gallbladder stores bile, also known as gall.",
+      "example_vi_clean": "Túi mật lưu trữ mật, còn được gọi là dịch mật."
+    },
+    {
+      "id": 26195,
+      "quiz_meaning_vi": "galông",
+      "meaning_vi_clean": "galông",
+      "examples_clean": [
+        {
+          "meaning_vi": "galông",
+          "example_en": "The pipe burst and gallons of water flooded the kitchen.",
+          "example_vi": "Đường ống bị vỡ và hàng galông nước tràn vào nhà bếp."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "The car consumes one gallon of fuel every thirty miles.",
+          "example_vi": "Chiếc xe tiêu thụ một galông nhiên liệu mỗi ba mươi dặm."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "We bought five gallons of paint for the living room.",
+          "example_vi": "Chúng tôi đã mua năm galông sơn cho phòng khách."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "The tank holds up to fifty gallons of water.",
+          "example_vi": "Cái bể chứa được tới năm mươi galông nước."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "He poured a gallon of milk into the large bowl.",
+          "example_vi": "Anh ấy đổ một galông sữa vào cái bát lớn."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "The recipe requires a gallon of vegetable stock.",
+          "example_vi": "Công thức yêu cầu một galông nước dùng rau củ."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "They delivered ten gallons of gasoline to the station.",
+          "example_vi": "Họ đã giao mười galông xăng đến trạm."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "A gallon is a common unit of liquid measurement.",
+          "example_vi": "Galông là một đơn vị đo lường chất lỏng phổ biến."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "The pool needs several hundred gallons to be filled.",
+          "example_vi": "Hồ bơi cần vài trăm galông để được lấp đầy."
+        },
+        {
+          "meaning_vi": "galông",
+          "example_en": "She measured out exactly one gallon of juice.",
+          "example_vi": "Cô ấy đã đong chính xác một galông nước ép."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gallon",
+      "normalized_word": "gallon",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The pipe burst and gallons of water flooded the kitchen.",
+      "example_vi_clean": "Đường ống bị vỡ và hàng galông nước tràn vào nhà bếp."
+    },
+    {
+      "id": 26196,
+      "quiz_meaning_vi": "nhà tù",
+      "meaning_vi_clean": "nhà tù; bỏ tù",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà tù",
+          "example_en": "He spent five years in gaol for his crimes.",
+          "example_vi": "Anh ta đã dành năm năm trong nhà tù vì những tội ác của mình."
+        },
+        {
+          "meaning_vi": "nhà tù",
+          "example_en": "The old gaol has been converted into a museum.",
+          "example_vi": "Nhà tù cũ đã được chuyển đổi thành một bảo tàng."
+        },
+        {
+          "meaning_vi": "nhà tù",
+          "example_en": "Conditions in the gaol were very harsh.",
+          "example_vi": "Điều kiện trong nhà tù rất khắc nghiệt."
+        },
+        {
+          "meaning_vi": "nhà tù",
+          "example_en": "He was released from gaol after his sentence ended.",
+          "example_vi": "Anh ta được thả khỏi nhà tù sau khi mãn hạn tù."
+        },
+        {
+          "meaning_vi": "bỏ tù",
+          "example_en": "The judge decided to gaol the offender for a year.",
+          "example_vi": "Thẩm phán quyết định bỏ tù kẻ phạm tội trong một năm."
+        },
+        {
+          "meaning_vi": "bỏ tù",
+          "example_en": "They will gaol anyone who breaks the law.",
+          "example_vi": "Họ sẽ bỏ tù bất cứ ai vi phạm pháp luật."
+        },
+        {
+          "meaning_vi": "bỏ tù",
+          "example_en": "He was gaol for his political activities.",
+          "example_vi": "Anh ta bị bỏ tù vì các hoạt động chính trị của mình."
+        },
+        {
+          "meaning_vi": "bỏ tù",
+          "example_en": "The authorities threatened to gaol the protesters.",
+          "example_vi": "Chính quyền đe dọa sẽ bỏ tù những người biểu tình."
+        },
+        {
+          "meaning_vi": "bỏ tù",
+          "example_en": "It is unfair to gaol someone without a fair trial.",
+          "example_vi": "Thật không công bằng khi bỏ tù ai đó mà không có phiên tòa công bằng."
+        },
+        {
+          "meaning_vi": "bỏ tù",
+          "example_en": "They were gaol for stealing public funds.",
+          "example_vi": "Họ bị bỏ tù vì ăn cắp công quỹ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun/verb, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gaol",
+      "normalized_word": "gaol",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He spent five years in gaol for his crimes.",
+      "example_vi_clean": "Anh ta đã dành năm năm trong nhà tù vì những tội ác của mình."
+    },
+    {
+      "id": 26197,
+      "quiz_meaning_vi": "lỗ hổng",
+      "meaning_vi_clean": "lỗ hổng; chỗ thiếu sót",
+      "examples_clean": [
+        {
+          "meaning_vi": "lỗ hổng",
+          "example_en": "He made a gap in the fence by kicking at a weak spot.",
+          "example_vi": "Anh ấy tạo ra một lỗ hổng trên hàng rào bằng cách đá vào chỗ yếu."
+        },
+        {
+          "meaning_vi": "lỗ hổng",
+          "example_en": "We can slip through that gap between the buildings.",
+          "example_vi": "Chúng ta có thể lách qua lỗ hổng giữa các tòa nhà đó."
+        },
+        {
+          "meaning_vi": "lỗ hổng",
+          "example_en": "There is a gap between the roof and the gutter.",
+          "example_vi": "Có một lỗ hổng giữa mái nhà và máng xối."
+        },
+        {
+          "meaning_vi": "lỗ hổng",
+          "example_en": "The dog found a gap in the hedge and ran away.",
+          "example_vi": "Con chó tìm thấy một lỗ hổng trên hàng rào cây và chạy mất."
+        },
+        {
+          "meaning_vi": "chỗ thiếu sót",
+          "example_en": "I have a gap in my schedule next Tuesday.",
+          "example_vi": "Tôi có một chỗ thiếu sót trong lịch trình vào thứ Ba tới."
+        },
+        {
+          "meaning_vi": "chỗ thiếu sót",
+          "example_en": "There is a gap in our knowledge about this disease.",
+          "example_vi": "Có một chỗ thiếu sót trong kiến thức của chúng ta về căn bệnh này."
+        },
+        {
+          "meaning_vi": "chỗ thiếu sót",
+          "example_en": "The report has a major gap in the data.",
+          "example_vi": "Báo cáo có một chỗ thiếu sót lớn trong dữ liệu."
+        },
+        {
+          "meaning_vi": "chỗ thiếu sót",
+          "example_en": "We need to fill the gap in the team's skills.",
+          "example_vi": "Chúng ta cần lấp đầy chỗ thiếu sót trong kỹ năng của đội."
+        },
+        {
+          "meaning_vi": "chỗ thiếu sót",
+          "example_en": "There is a gap in the historical record of that period.",
+          "example_vi": "Có một chỗ thiếu sót trong hồ sơ lịch sử của giai đoạn đó."
+        },
+        {
+          "meaning_vi": "chỗ thiếu sót",
+          "example_en": "She identified a gap in the market for new products.",
+          "example_vi": "Cô ấy đã xác định được một chỗ thiếu sót trên thị trường cho các sản phẩm mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gap",
+      "normalized_word": "gap",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He made a gap in the fence by kicking at a weak spot.",
+      "example_vi_clean": "Anh ấy tạo ra một lỗ hổng trên hàng rào bằng cách đá vào chỗ yếu."
+    },
+    {
+      "id": 26198,
+      "quiz_meaning_vi": "nghề làm vườn",
+      "meaning_vi_clean": "nghề làm vườn",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "His hobby was gardening.",
+          "example_vi": "Sở thích của anh ấy là nghề làm vườn."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "Gardening is a very relaxing activity.",
+          "example_vi": "Nghề làm vườn là một hoạt động rất thư giãn."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "She learned the basics of gardening from her father.",
+          "example_vi": "Cô ấy đã học những điều cơ bản về nghề làm vườn từ cha mình."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "He spends his weekends doing gardening.",
+          "example_vi": "Anh ấy dành những ngày cuối tuần để làm nghề làm vườn."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "Gardening requires patience and hard work.",
+          "example_vi": "Nghề làm vườn đòi hỏi sự kiên nhẫn và chăm chỉ."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "They are interested in organic gardening.",
+          "example_vi": "Họ quan tâm đến nghề làm vườn hữu cơ."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "Gardening helps to improve the appearance of the house.",
+          "example_vi": "Nghề làm vườn giúp cải thiện vẻ ngoài của ngôi nhà."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "She has a great passion for gardening.",
+          "example_vi": "Cô ấy có niềm đam mê lớn với nghề làm vườn."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "Gardening is good for both physical and mental health.",
+          "example_vi": "Nghề làm vườn tốt cho cả sức khỏe thể chất và tinh thần."
+        },
+        {
+          "meaning_vi": "nghề làm vườn",
+          "example_en": "He bought some new tools for his gardening.",
+          "example_vi": "Anh ấy đã mua một vài dụng cụ mới cho nghề làm vườn của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gardening",
+      "normalized_word": "gardening",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His hobby was gardening.",
+      "example_vi_clean": "Sở thích của anh ấy là nghề làm vườn."
+    },
+    {
+      "id": 26199,
+      "quiz_meaning_vi": "áo quần",
+      "meaning_vi_clean": "áo quần",
+      "examples_clean": [
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "She wore a beautiful garment for the party.",
+          "example_vi": "Cô ấy mặc một bộ áo quần đẹp cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "The shop sells high-quality garments.",
+          "example_vi": "Cửa hàng bán các loại áo quần chất lượng cao."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "Each garment is made from natural materials.",
+          "example_vi": "Mỗi bộ áo quần đều được làm từ vật liệu tự nhiên."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "He carefully folded each garment.",
+          "example_vi": "Anh ấy cẩn thận gấp từng bộ áo quần."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "The garment was designed for comfort.",
+          "example_vi": "Bộ áo quần này được thiết kế để tạo sự thoải mái."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "She is looking for a new garment for the winter.",
+          "example_vi": "Cô ấy đang tìm một bộ áo quần mới cho mùa đông."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "The garment is easy to wash and dry.",
+          "example_vi": "Bộ áo quần này dễ giặt và phơi khô."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "He bought a new garment at the store.",
+          "example_vi": "Anh ấy đã mua một bộ áo quần mới tại cửa hàng."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "The garment fits her perfectly.",
+          "example_vi": "Bộ áo quần này vừa vặn với cô ấy một cách hoàn hảo."
+        },
+        {
+          "meaning_vi": "áo quần",
+          "example_en": "They donated many garments to the charity.",
+          "example_vi": "Họ đã quyên góp nhiều bộ áo quần cho tổ chức từ thiện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành noun, lọc nghĩa và bổ sung ví dụ.",
+      "word": "garment",
+      "normalized_word": "garment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She wore a beautiful garment for the party.",
+      "example_vi_clean": "Cô ấy mặc một bộ áo quần đẹp cho bữa tiệc."
+    },
+    {
+      "id": 26200,
+      "quiz_meaning_vi": "vui vẻ",
+      "meaning_vi_clean": "vui vẻ; rực rỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "They were in a very gay mood at the party.",
+          "example_vi": "Họ đang trong một tâm trạng rất vui vẻ tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She has a gay and lively personality.",
+          "example_vi": "Cô ấy có một tính cách vui vẻ và hoạt bát."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The children were gay as they played in the park.",
+          "example_vi": "Những đứa trẻ rất vui vẻ khi chúng chơi trong công viên."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "It was a gay occasion for everyone involved.",
+          "example_vi": "Đó là một dịp vui vẻ cho tất cả mọi người tham gia."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "She wore a gay dress with many colors.",
+          "example_vi": "Cô ấy mặc một chiếc váy rực rỡ với nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "The garden was full of gay flowers.",
+          "example_vi": "Khu vườn đầy những bông hoa rực rỡ."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "The room was decorated with gay ribbons.",
+          "example_vi": "Căn phòng được trang trí bằng những dải ruy băng rực rỡ."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "He chose a gay tie for the wedding.",
+          "example_vi": "Anh ấy đã chọn một chiếc cà vạt rực rỡ cho đám cưới."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "The sunset painted the sky in gay colors.",
+          "example_vi": "Hoàng hôn đã tô điểm bầu trời bằng những màu sắc rực rỡ."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "The festival was a gay display of lights.",
+          "example_vi": "Lễ hội là một màn trình diễn rực rỡ của ánh sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành adjective, lọc nghĩa và bổ sung ví dụ.",
+      "word": "gay",
+      "normalized_word": "gay",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They were in a very gay mood at the party.",
+      "example_vi_clean": "Họ đang trong một tâm trạng rất vui vẻ tại bữa tiệc."
+    }
+  ]
+}

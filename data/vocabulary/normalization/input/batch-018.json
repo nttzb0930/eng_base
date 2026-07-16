@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-018",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24171,
+      "word": "close",
+      "normalized_word": "close",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/klous/",
+      "primary_meaning_vi": "đóng kín",
+      "meaning_vi": "đóng kín; chật, chật chội; kín, bí hơi, ngột ngạt; chặt, bền, sít, khít; che đậy, bí mật, giấu giếm, kín; dè dặt, kín đáo; hà tiện, bủn xỉn; gần, thân, sát; chặt chẽ, kỹ lưỡng, tỉ mỉ, cẩn thận; hạn chế, cấm; gay go, ngang nhau, ngang sức; cái suýt làm nguy đến tính mạng; sự cạo nhẵn; sự suýt đâm vào nhau; sự hút chết; sát cánh vào nhau mà chiến đấu; kín; ẩn, kín đáo, giấu giếm; gần, sát, ngắn; gần, ở gần; gần, suýt soát; khu đất có rào; sân trường; sân trong (nhà thờ); sự kết thúc, lúc kết thúc; phần cuối; sự ôm nhau vật; sự đánh giáp lá cà; kết; kết thúc, chấm dứt; draw; đóng, khép; làm khít lại, dồn lại gần, làm sát lại nhau; kết thúc, chấm dứt, làm xong; đóng, khép; kết thúc, chấm dứt; bao bọc, bao quanh; đóng cửa hẳn (không buôn bán, không sản xuất nữa); trấn áp, đàn áp; bóp chết (một phong trào cách mạng...); tới gần; ngắn dần; ngày ngắn dần; rào quanh, bao quanh (một miếng đất); tiến sát để tấn công; khít lại, sát lại gần nhau; dồn hàng, siết chặt hàng ngũ; bít lại, cản (đường), làm tắc nghẽn (lối đi); lấp lại (lỗ); đóng kín, đóng hẳn, đóng miệng (vết thương); đến sát gần, dịch lại gần; đánh giáp lá cà, ôm sát người mà vật; đồng ý (với ai); sẵn sàng nhận (điều kiện...)",
+      "example_en": "We owe them our thanks for bringing the project to a successful close.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a close alley; close quarters",
+          "example_vi": null
+        },
+        {
+          "example_en": "Is your house close?",
+          "example_vi": null
+        },
+        {
+          "example_en": "He is a close friend.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24172,
+      "word": "closed",
+      "normalized_word": "closed",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "bảo thủ",
+      "meaning_vi": "bảo thủ; không cởi mở, khép kín",
+      "example_en": "closed source a closed committee",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The set of integers is closed under addition: \\forall x,y\\in\\mathbb{Z}\\,x+y\\in\\mathbb{Z}.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24173,
+      "word": "cloth",
+      "normalized_word": "cloth",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều clothes",
+      "phonetic": "/klɔθ/",
+      "primary_meaning_vi": "vải",
+      "meaning_vi": "vải; khăn; khăn lau; khăn trải (bàn); áo thầy tu; giới thầy tu; liệu vải mà cắt áo; liệu cơm gắp mắm; cùng một giuộc với nhau; không một lời nào là đúng sự thật; hoàn toàn bịa từ đầu đến cuối",
+      "example_en": "He is a respected man of the cloth.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24174,
+      "word": "clothes",
+      "normalized_word": "clothes",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ số nhiều",
+      "phonetic": "/klouðz/",
+      "primary_meaning_vi": "quần áo",
+      "meaning_vi": "quần áo; quần áo bẩn (để đem giặt)",
+      "example_en": "He is a respected man of the cloth.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to feed and clothe a family; to clothe oneself extravagantly",
+          "example_vi": null
+        },
+        {
+          "example_en": "to clothe somebody with authority or power",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24175,
+      "word": "cloud",
+      "normalized_word": "cloud",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ (up,  over)",
+      "phonetic": "/klaud/",
+      "primary_meaning_vi": "mây",
+      "meaning_vi": "mây, đám mây; đám (khói, bụi); đàn, đoàn, bầy (ruồi, muỗi đang bay, ngựa đang phi...); bóng mây, bóng đen; sự buồn rầu; điều bất hạnh; vết vẩn đục (trong hòn ngọc...); trời, bầu trời; lâm vào hoàn cảnh đáng buồn, bị thất thế; bị tu tội; vẻ buồn hiện lên nét mặt; rơi từ trên máy bay xuống; silver; lúc nào cũng mơ tưởng viển vông; sống ở trên mây; mây che, che phủ; làm tối sầm; làm phiền muộn, làm buồn; làm vẩn đục ((nghĩa đen) & (nghĩa bóng)); bị mây che, sầm lại ((nghĩa đen) & (nghĩa bóng))",
+      "example_en": "He opened the door and was greeted by a cloud of bats.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The comic-book character's thoughts appeared in a cloud above his head.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The glass clouds when you breathe on it.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The sky is clouded.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24176,
+      "word": "cloudy",
+      "normalized_word": "cloudy",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'klaudi/",
+      "primary_meaning_vi": "có mây phủ",
+      "meaning_vi": "có mây phủ, đầy mây; u ám; đục, vẩn; tối nghĩa, không sáng tỏ, không rõ ràng (văn); buồn bã, u buồn (người)",
+      "example_en": "a cloudy infrastructure",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24177,
+      "word": "club",
+      "normalized_word": "club",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/klʌb/",
+      "primary_meaning_vi": "dùi cui",
+      "meaning_vi": "dùi cui, gậy tày; gậy (đánh gôn); (đánh bài) quân nhép; hội, câu lạc bộ; trụ sở câu lạc bộ, trụ sở hội ((như) club-house); đánh bằng dùi cui, đánh bằng gậy tày; họp lại, chung nhau; làm lộn xộn, làm rối loạn hàng ngũ, gây chuyện ba gai (trong đơn vị)",
+      "example_en": "She was sitting in a jazz club, sipping wine and listening to a bass player's solo.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Michael stood you up? Welcome to the club.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He clubbed the poor dog.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a medical condition with clubbing of the fingers and toes",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24178,
+      "word": "coach",
+      "normalized_word": "coach",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/koutʃ/",
+      "primary_meaning_vi": "xe ngựa bốn bánh ((thường) bốn ngựa)",
+      "meaning_vi": "xe ngựa bốn bánh ((thường) bốn ngựa); toa hành khách; xe buýt chạy đường dài; người kèm học, thầy dạy tư (luyện thi...); huấn luyện viên; chở bằng xe ngựa; dạy kèm, dạy tư; kèm (để luyện thi); huấn luyện, luyện tập (một vận động viên); hướng dẫn (phi công) bằng điện đài khi bay đêm; dặn dò; gợi ý (ai làm gì, nói gì); cung cấp tài liệu, cung cấp số liệu (cho ai); đi bằng xe ngựa; học tư (ai) (để luyện thi)",
+      "example_en": "John flew coach to Vienna, but first-class back home.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She has coached many opera stars.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24179,
+      "word": "coat",
+      "normalized_word": "coat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ,  (thường) động tính từ quá khứ",
+      "phonetic": "/kout/",
+      "primary_meaning_vi": "áo choàng ngoài",
+      "meaning_vi": "áo choàng ngoài, áo bành tô (đàn ông); áo choàng (phụ nữ); (từ cổ,nghĩa cổ) váy; bộ lông (thú); lớp, lượt (sơn, vôi...); (vỏ, củ hành, củ tỏi); màng; túi (buồm); huy hiệu (của quý tộc, của trường đại học hay học viện); áo giáp; quần áo nữ; đánh cho ai một trận, sửa cho ai một trận; vén váy; đừng lấy bề ngoài mà xét người; mặc áo cà sa không hẳn là sư; cởi áo sẵn sàng đánh nhau; hăm hở bắt tay vào việc, sẵn sàng bắt tay vào việc; trở mặt, phản đảng, đào ngũ; mặc áo choàng; phủ, tẩm, bọc, tráng",
+      "example_en": "When the dog shed its coat, it left hair all over the furniture and the carpet.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The frying pan was coated with a layer of non-stick material, making it easier to wash.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24180,
+      "word": "code",
+      "normalized_word": "code",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/koud/",
+      "primary_meaning_vi": "bộ luật",
+      "meaning_vi": "bộ luật, luật; điều lệ, luật lệ, quy tắc; đạo lý (của một xã hội, của một giai cấp); mã, mật mã; viết bằng mã, viết bằng mật mã (bức điện)",
+      "example_en": "This flavour of soup has been assigned the code WRT-9.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The medical code is a system of rules for the regulation of the professional conduct of physicians.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I wrote some code to reformat text documents.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I learned to code on an early home computer in the 1980s.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

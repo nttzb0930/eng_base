@@ -1,0 +1,308 @@
+{
+  "records": [
+    {
+      "id": 26950,
+      "quiz_meaning_vi": "sự dễ dàng",
+      "meaning_vi_clean": "sự dễ dàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "She passed the exam with ease.",
+          "example_vi": "Cô ấy đã vượt qua kỳ thi một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "He answered the questions with ease.",
+          "example_vi": "Anh ấy đã trả lời các câu hỏi một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "The athlete moved with grace and ease.",
+          "example_vi": "Vận động viên di chuyển với sự duyên dáng và dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "She learned the new language with ease.",
+          "example_vi": "Cô ấy đã học ngôn ngữ mới một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "He climbed the mountain with ease.",
+          "example_vi": "Anh ấy đã leo lên ngọn núi một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "The software is designed for ease of use.",
+          "example_vi": "Phần mềm được thiết kế để dễ dàng sử dụng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "She completed the task with ease.",
+          "example_vi": "Cô ấy đã hoàn thành nhiệm vụ một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "He handled the situation with ease.",
+          "example_vi": "Anh ấy đã xử lý tình huống một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "The transition was made with ease.",
+          "example_vi": "Sự chuyển đổi đã được thực hiện một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "sự dễ dàng",
+          "example_en": "They won the game with ease.",
+          "example_vi": "Họ đã thắng trận đấu một cách dễ dàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa phổ biến nhất theo từ loại danh từ và tạo 10 ví dụ minh họa chính xác.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ được chọn đúng theo từ loại danh từ và nghĩa phổ biến nhất."
+      },
+      "word": "ease",
+      "normalized_word": "ease",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She passed the exam with ease.",
+      "example_vi_clean": "Cô ấy đã vượt qua kỳ thi một cách dễ dàng."
+    },
+    {
+      "id": 26957,
+      "quiz_meaning_vi": "vô cùng hạnh phúc",
+      "meaning_vi_clean": "vô cùng hạnh phúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "She was ecstatic about the news.",
+          "example_vi": "Cô ấy vô cùng hạnh phúc về tin tức đó."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "The fans were ecstatic after the victory.",
+          "example_vi": "Người hâm mộ vô cùng hạnh phúc sau chiến thắng."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "He felt ecstatic when he won the prize.",
+          "example_vi": "Anh ấy cảm thấy vô cùng hạnh phúc khi giành được giải thưởng."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "They were ecstatic to see their family again.",
+          "example_vi": "Họ vô cùng hạnh phúc khi được gặp lại gia đình."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "The children were ecstatic about the trip.",
+          "example_vi": "Những đứa trẻ vô cùng hạnh phúc về chuyến đi."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "She looked ecstatic at the party.",
+          "example_vi": "Cô ấy trông vô cùng hạnh phúc tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "He was ecstatic to receive the job offer.",
+          "example_vi": "Anh ấy vô cùng hạnh phúc khi nhận được lời mời làm việc."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "The audience was ecstatic during the concert.",
+          "example_vi": "Khán giả vô cùng hạnh phúc trong suốt buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "We were ecstatic about the beautiful weather.",
+          "example_vi": "Chúng tôi vô cùng hạnh phúc về thời tiết đẹp."
+        },
+        {
+          "meaning_vi": "vô cùng hạnh phúc",
+          "example_en": "She was ecstatic to hear the good news.",
+          "example_vi": "Cô ấy vô cùng hạnh phúc khi nghe tin tốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa phổ biến nhất theo từ loại tính từ và tạo 10 ví dụ minh họa chính xác.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ được chọn đúng theo từ loại tính từ và nghĩa phổ biến nhất."
+      },
+      "word": "ecstatic",
+      "normalized_word": "ecstatic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She was ecstatic about the news.",
+      "example_vi_clean": "Cô ấy vô cùng hạnh phúc về tin tức đó."
+    },
+    {
+      "id": 26977,
+      "quiz_meaning_vi": "cái ôm",
+      "meaning_vi_clean": "cái ôm",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "She gave him a warm embrace.",
+          "example_vi": "Cô ấy dành cho anh ấy một cái ôm ấm áp."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "He felt her gentle embrace.",
+          "example_vi": "Anh ấy cảm nhận được cái ôm nhẹ nhàng của cô ấy."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "They shared a long embrace at the airport.",
+          "example_vi": "Họ đã trao nhau một cái ôm thật lâu tại sân bay."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "She pulled away from his embrace.",
+          "example_vi": "Cô ấy rời khỏi cái ôm của anh ấy."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "He welcomed her with a tight embrace.",
+          "example_vi": "Anh ấy chào đón cô ấy bằng một cái ôm chặt."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "The mother held her child in a loving embrace.",
+          "example_vi": "Người mẹ ôm con mình trong một cái ôm đầy yêu thương."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "They parted with a final embrace.",
+          "example_vi": "Họ chia tay với một cái ôm cuối cùng."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "She felt safe in his embrace.",
+          "example_vi": "Cô ấy cảm thấy an toàn trong cái ôm của anh ấy."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "He returned her embrace with a smile.",
+          "example_vi": "Anh ấy đáp lại cái ôm của cô ấy bằng một nụ cười."
+        },
+        {
+          "meaning_vi": "cái ôm",
+          "example_en": "The friends greeted each other with an embrace.",
+          "example_vi": "Những người bạn chào nhau bằng một cái ôm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa phổ biến nhất theo từ loại danh từ và tạo 10 ví dụ minh họa chính xác.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ được chọn đúng theo từ loại danh từ và nghĩa phổ biến nhất."
+      },
+      "word": "embrace",
+      "normalized_word": "embrace",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She gave him a warm embrace.",
+      "example_vi_clean": "Cô ấy dành cho anh ấy một cái ôm ấm áp."
+    },
+    {
+      "id": 26984,
+      "quiz_meaning_vi": "nỗ lực",
+      "meaning_vi_clean": "nỗ lực",
+      "examples_clean": [
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "His latest endeavour was a great success.",
+          "example_vi": "Nỗ lực mới nhất của anh ấy đã đạt được thành công lớn."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "She is dedicated to her scientific endeavour.",
+          "example_vi": "Cô ấy tận tâm với nỗ lực khoa học của mình."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "The project was a challenging endeavour.",
+          "example_vi": "Dự án là một nỗ lực đầy thách thức."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "They supported his artistic endeavour.",
+          "example_vi": "Họ đã ủng hộ nỗ lực nghệ thuật của anh ấy."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "It was a difficult endeavour for the team.",
+          "example_vi": "Đó là một nỗ lực khó khăn cho cả nhóm."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "She succeeded in her business endeavour.",
+          "example_vi": "Cô ấy đã thành công trong nỗ lực kinh doanh của mình."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "The research is a collaborative endeavour.",
+          "example_vi": "Nghiên cứu này là một nỗ lực hợp tác."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "He failed in his first endeavour.",
+          "example_vi": "Anh ấy đã thất bại trong nỗ lực đầu tiên của mình."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "The charity is a noble endeavour.",
+          "example_vi": "Tổ chức từ thiện là một nỗ lực cao cả."
+        },
+        {
+          "meaning_vi": "nỗ lực",
+          "example_en": "They are planning a new endeavour.",
+          "example_vi": "Họ đang lên kế hoạch cho một nỗ lực mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa phổ biến nhất theo từ loại danh từ và tạo 10 ví dụ minh họa chính xác.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ được chọn đúng theo từ loại danh từ và nghĩa phổ biến nhất."
+      },
+      "word": "endeavour",
+      "normalized_word": "endeavour",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His latest endeavour was a great success.",
+      "example_vi_clean": "Nỗ lực mới nhất của anh ấy đã đạt được thành công lớn."
+    }
+  ]
+}

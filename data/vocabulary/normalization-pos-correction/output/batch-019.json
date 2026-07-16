@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24406,
+      "quiz_meaning_vi": "sự nắm giữ",
+      "meaning_vi_clean": "sự nắm giữ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "He lost his hold on the rope.",
+          "example_vi": "Anh ấy đã mất sự nắm giữ vào sợi dây."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "She kept a firm hold on the bag.",
+          "example_vi": "Cô ấy giữ chặt sự nắm giữ vào chiếc túi."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "The child has a tight hold of my hand.",
+          "example_vi": "Đứa trẻ có sự nắm giữ chặt lấy tay tôi."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "His hold on the railing saved him.",
+          "example_vi": "Sự nắm giữ của anh ấy vào lan can đã cứu anh ấy."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "She loosened her hold on the steering wheel.",
+          "example_vi": "Cô ấy nới lỏng sự nắm giữ vào vô lăng."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "The climber maintained a steady hold.",
+          "example_vi": "Người leo núi duy trì một sự nắm giữ vững chắc."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "He changed his hold on the bat.",
+          "example_vi": "Anh ấy thay đổi sự nắm giữ vào cây gậy bóng chày."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "She felt her hold slipping away.",
+          "example_vi": "Cô ấy cảm thấy sự nắm giữ của mình đang tuột mất."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "The athlete has a strong hold on the bar.",
+          "example_vi": "Vận động viên có sự nắm giữ mạnh mẽ vào thanh xà."
+        },
+        {
+          "meaning_vi": "sự nắm giữ",
+          "example_en": "He regained his hold after the fall.",
+          "example_vi": "Anh ấy lấy lại sự nắm giữ sau cú ngã."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ hành động nắm giữ và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ hold được dùng làm danh từ chỉ sự nắm giữ trong tất cả các câu."
+      },
+      "word": "hold",
+      "normalized_word": "hold",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He lost his hold on the rope.",
+      "example_vi_clean": "Anh ấy đã mất sự nắm giữ vào sợi dây."
+    },
+    {
+      "id": 24407,
+      "quiz_meaning_vi": "cái lỗ",
+      "meaning_vi_clean": "cái lỗ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "There is a hole in my sock.",
+          "example_vi": "Có một cái lỗ trên chiếc tất của tôi."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "The rabbit ran into a hole.",
+          "example_vi": "Con thỏ chạy vào trong một cái lỗ."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "He dug a hole in the garden.",
+          "example_vi": "Anh ấy đào một cái lỗ trong vườn."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "The mouse made a hole in the wall.",
+          "example_vi": "Con chuột tạo ra một cái lỗ trên tường."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "She found a hole in the fence.",
+          "example_vi": "Cô ấy tìm thấy một cái lỗ trên hàng rào."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "The ball went through a hole.",
+          "example_vi": "Quả bóng đi qua một cái lỗ."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "I saw a hole in the paper.",
+          "example_vi": "Tôi thấy một cái lỗ trên tờ giấy."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "The rain made a hole in the ground.",
+          "example_vi": "Cơn mưa tạo ra một cái lỗ trên mặt đất."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "He covered the hole with a board.",
+          "example_vi": "Anh ấy che cái lỗ bằng một tấm ván."
+        },
+        {
+          "meaning_vi": "cái lỗ",
+          "example_en": "There is a small hole in the bucket.",
+          "example_vi": "Có một cái lỗ nhỏ trên chiếc xô."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ cái lỗ và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ hole được dùng làm danh từ chỉ cái lỗ trong tất cả các câu."
+      },
+      "word": "hole",
+      "normalized_word": "hole",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is a hole in my sock.",
+      "example_vi_clean": "Có một cái lỗ trên chiếc tất của tôi."
+    },
+    {
+      "id": 24410,
+      "quiz_meaning_vi": "niềm hy vọng",
+      "meaning_vi_clean": "niềm hy vọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "She has a hope for a better future.",
+          "example_vi": "Cô ấy có niềm hy vọng về một tương lai tốt đẹp hơn."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "His only hope is to pass the exam.",
+          "example_vi": "Niềm hy vọng duy nhất của anh ấy là vượt qua kỳ thi."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "They gave us a new hope.",
+          "example_vi": "Họ đã mang đến cho chúng tôi một niềm hy vọng mới."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "There is still a hope for success.",
+          "example_vi": "Vẫn còn đó một niềm hy vọng cho sự thành công."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "She lost all hope of finding it.",
+          "example_vi": "Cô ấy đã mất hết niềm hy vọng tìm thấy nó."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "He clings to the hope of returning home.",
+          "example_vi": "Anh ấy bám víu vào niềm hy vọng được trở về nhà."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "The news brought a glimmer of hope.",
+          "example_vi": "Tin tức đã mang lại một tia niềm hy vọng."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "My hope is that everyone stays safe.",
+          "example_vi": "Niềm hy vọng của tôi là mọi người đều được an toàn."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "They shared a common hope for peace.",
+          "example_vi": "Họ chia sẻ một niềm hy vọng chung về hòa bình."
+        },
+        {
+          "meaning_vi": "niềm hy vọng",
+          "example_en": "She expressed her hope for the project.",
+          "example_vi": "Cô ấy bày tỏ niềm hy vọng của mình cho dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ niềm hy vọng và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ hope được dùng làm danh từ chỉ niềm hy vọng trong tất cả các câu."
+      },
+      "word": "hope",
+      "normalized_word": "hope",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a hope for a better future.",
+      "example_vi_clean": "Cô ấy có niềm hy vọng về một tương lai tốt đẹp hơn."
+    },
+    {
+      "id": 24411,
+      "quiz_meaning_vi": "con ngựa",
+      "meaning_vi_clean": "con ngựa",
+      "examples_clean": [
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "The horse is running in the field.",
+          "example_vi": "Con ngựa đang chạy trên cánh đồng."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "She likes to ride a horse.",
+          "example_vi": "Cô ấy thích cưỡi một con ngựa."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "The horse is eating some grass.",
+          "example_vi": "Con ngựa đang ăn cỏ."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "He bought a beautiful horse.",
+          "example_vi": "Anh ấy đã mua một con ngựa đẹp."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "The horse has a brown coat.",
+          "example_vi": "Con ngựa có bộ lông màu nâu."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "They took care of the horse.",
+          "example_vi": "Họ đã chăm sóc con ngựa."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "The horse jumped over the fence.",
+          "example_vi": "Con ngựa đã nhảy qua hàng rào."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "I saw a horse at the farm.",
+          "example_vi": "Tôi đã thấy một con ngựa ở trang trại."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "The horse is very fast.",
+          "example_vi": "Con ngựa rất nhanh."
+        },
+        {
+          "meaning_vi": "con ngựa",
+          "example_en": "She brushed the horse's hair.",
+          "example_vi": "Cô ấy chải lông cho con ngựa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ con ngựa và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ horse được dùng làm danh từ chỉ con ngựa trong tất cả các câu."
+      },
+      "word": "horse",
+      "normalized_word": "horse",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The horse is running in the field.",
+      "example_vi_clean": "Con ngựa đang chạy trên cánh đồng."
+    },
+    {
+      "id": 24413,
+      "quiz_meaning_vi": "nóng",
+      "meaning_vi_clean": "nóng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nóng",
+          "example_en": "It is very hot today.",
+          "example_vi": "Hôm nay trời rất nóng."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "The soup is too hot to eat.",
+          "example_vi": "Món súp quá nóng để ăn."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "Be careful, the plate is hot.",
+          "example_vi": "Hãy cẩn thận, cái đĩa đang nóng."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "I like to drink hot tea.",
+          "example_vi": "Tôi thích uống trà nóng."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "The sun makes the sand hot.",
+          "example_vi": "Mặt trời làm cho cát trở nên nóng."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "He felt hot after the run.",
+          "example_vi": "Anh ấy cảm thấy nóng sau khi chạy."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "The water in the bath is hot.",
+          "example_vi": "Nước trong bồn tắm rất nóng."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "It is a hot summer afternoon.",
+          "example_vi": "Đó là một buổi chiều mùa hè nóng nực."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "The coffee is still hot.",
+          "example_vi": "Cà phê vẫn còn nóng."
+        },
+        {
+          "meaning_vi": "nóng",
+          "example_en": "She prefers hot weather.",
+          "example_vi": "Cô ấy thích thời tiết nóng hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ chỉ nhiệt độ nóng và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ hot được dùng làm tính từ chỉ nhiệt độ nóng trong tất cả các câu."
+      },
+      "word": "hot",
+      "normalized_word": "hot",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is very hot today.",
+      "example_vi_clean": "Hôm nay trời rất nóng."
+    },
+    {
+      "id": 24416,
+      "quiz_meaning_vi": "ngôi nhà",
+      "meaning_vi_clean": "ngôi nhà",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "They live in a big house.",
+          "example_vi": "Họ sống trong một ngôi nhà lớn."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "She painted her house white.",
+          "example_vi": "Cô ấy đã sơn ngôi nhà của mình màu trắng."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "The house has five rooms.",
+          "example_vi": "Ngôi nhà có năm căn phòng."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "He is cleaning the house.",
+          "example_vi": "Anh ấy đang dọn dẹp ngôi nhà."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "I bought a new house.",
+          "example_vi": "Tôi đã mua một ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "The house is near the park.",
+          "example_vi": "Ngôi nhà nằm gần công viên."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "They built the house last year.",
+          "example_vi": "Họ đã xây ngôi nhà vào năm ngoái."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "She invited us to her house.",
+          "example_vi": "Cô ấy đã mời chúng tôi đến ngôi nhà của cô ấy."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "The house looks very old.",
+          "example_vi": "Ngôi nhà trông rất cũ kỹ."
+        },
+        {
+          "meaning_vi": "ngôi nhà",
+          "example_en": "He left the house early.",
+          "example_vi": "Anh ấy đã rời khỏi ngôi nhà từ sớm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ ngôi nhà và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ house được dùng làm danh từ chỉ ngôi nhà trong tất cả các câu."
+      },
+      "word": "house",
+      "normalized_word": "house",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They live in a big house.",
+      "example_vi_clean": "Họ sống trong một ngôi nhà lớn."
+    },
+    {
+      "id": 24417,
+      "quiz_meaning_vi": "như thế nào",
+      "meaning_vi_clean": "như thế nào",
+      "examples_clean": [
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How do you feel today?",
+          "example_vi": "Bạn cảm thấy như thế nào hôm nay?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How does this machine work?",
+          "example_vi": "Cỗ máy này hoạt động như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How can I help you?",
+          "example_vi": "Tôi có thể giúp bạn như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How did you find the book?",
+          "example_vi": "Bạn đã tìm thấy cuốn sách đó như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How is your mother doing?",
+          "example_vi": "Mẹ của bạn dạo này như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How do they travel to work?",
+          "example_vi": "Họ đi làm như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How was the movie last night?",
+          "example_vi": "Bộ phim tối qua như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How should I cook this fish?",
+          "example_vi": "Tôi nên nấu con cá này như thế nào?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How does she speak English so well?",
+          "example_vi": "Cô ấy nói tiếng Anh giỏi như thế nào vậy?"
+        },
+        {
+          "meaning_vi": "như thế nào",
+          "example_en": "How do we get to the station?",
+          "example_vi": "Chúng ta đến nhà ga như thế nào?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa trạng từ nghi vấn chỉ cách thức và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ how được dùng làm trạng từ nghi vấn chỉ cách thức trong tất cả các câu."
+      },
+      "word": "how",
+      "normalized_word": "how",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "How do you feel today?",
+      "example_vi_clean": "Bạn cảm thấy như thế nào hôm nay?"
+    },
+    {
+      "id": 24419,
+      "quiz_meaning_vi": "sự vội vàng",
+      "meaning_vi_clean": "sự vội vàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "He left in a hurry.",
+          "example_vi": "Anh ấy rời đi trong sự vội vàng."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "There is no need for such a hurry.",
+          "example_vi": "Không cần phải có sự vội vàng như vậy."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "She did the work in a hurry.",
+          "example_vi": "Cô ấy đã làm công việc trong sự vội vàng."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "His hurry caused him to make mistakes.",
+          "example_vi": "Sự vội vàng của anh ấy khiến anh ấy mắc lỗi."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "I don't like this constant hurry.",
+          "example_vi": "Tôi không thích sự vội vàng liên tục này."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "She packed her bags in a hurry.",
+          "example_vi": "Cô ấy đã đóng gói hành lý trong sự vội vàng."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "The hurry to finish was obvious.",
+          "example_vi": "Sự vội vàng để hoàn thành là rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "He apologized for his hurry.",
+          "example_vi": "Anh ấy xin lỗi vì sự vội vàng của mình."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "They left the room in a hurry.",
+          "example_vi": "Họ đã rời khỏi phòng trong sự vội vàng."
+        },
+        {
+          "meaning_vi": "sự vội vàng",
+          "example_en": "Avoid any unnecessary hurry.",
+          "example_vi": "Hãy tránh bất kỳ sự vội vàng không cần thiết nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ sự vội vàng và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ hurry được dùng làm danh từ chỉ sự vội vàng trong tất cả các câu."
+      },
+      "word": "hurry",
+      "normalized_word": "hurry",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He left in a hurry.",
+      "example_vi_clean": "Anh ấy rời đi trong sự vội vàng."
+    },
+    {
+      "id": 24420,
+      "quiz_meaning_vi": "người chồng",
+      "meaning_vi_clean": "người chồng",
+      "examples_clean": [
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "Her husband is a doctor.",
+          "example_vi": "Người chồng của cô ấy là bác sĩ."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "He is a very kind husband.",
+          "example_vi": "Anh ấy là một người chồng rất tử tế."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "She went out with her husband.",
+          "example_vi": "Cô ấy đã đi chơi cùng người chồng của mình."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "The husband bought flowers for his wife.",
+          "example_vi": "Người chồng đã mua hoa cho vợ mình."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "I met her husband yesterday.",
+          "example_vi": "Tôi đã gặp người chồng của cô ấy ngày hôm qua."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "He is a proud husband.",
+          "example_vi": "Anh ấy là một người chồng tự hào."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "The husband works in an office.",
+          "example_vi": "Người chồng làm việc trong một văn phòng."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "She loves her husband very much.",
+          "example_vi": "Cô ấy yêu người chồng của mình rất nhiều."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "Every husband should support his wife.",
+          "example_vi": "Mỗi người chồng nên hỗ trợ vợ mình."
+        },
+        {
+          "meaning_vi": "người chồng",
+          "example_en": "The husband and wife are happy.",
+          "example_vi": "Người chồng và người vợ rất hạnh phúc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ người chồng và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ husband được dùng làm danh từ chỉ người chồng trong tất cả các câu."
+      },
+      "word": "husband",
+      "normalized_word": "husband",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Her husband is a doctor.",
+      "example_vi_clean": "Người chồng của cô ấy là bác sĩ."
+    },
+    {
+      "id": 24421,
+      "quiz_meaning_vi": "đá lạnh",
+      "meaning_vi_clean": "đá lạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "I would like some ice in my drink.",
+          "example_vi": "Tôi muốn thêm một ít đá lạnh vào đồ uống của mình."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "The ice is melting in the sun.",
+          "example_vi": "Đá lạnh đang tan chảy dưới ánh mặt trời."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "He put ice on his bruised knee.",
+          "example_vi": "Anh ấy chườm đá lạnh lên đầu gối bị bầm tím."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "The lake is covered with ice.",
+          "example_vi": "Hồ nước được bao phủ bởi đá lạnh."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "She added ice to the juice.",
+          "example_vi": "Cô ấy đã thêm đá lạnh vào nước ép."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "The ice is very cold.",
+          "example_vi": "Đá lạnh rất lạnh."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "We need more ice for the party.",
+          "example_vi": "Chúng ta cần thêm đá lạnh cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "The ice cracked under his weight.",
+          "example_vi": "Đá lạnh đã nứt dưới sức nặng của anh ấy."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "She keeps the fish on ice.",
+          "example_vi": "Cô ấy giữ cá trên đá lạnh."
+        },
+        {
+          "meaning_vi": "đá lạnh",
+          "example_en": "The ice made the drink refreshing.",
+          "example_vi": "Đá lạnh làm cho đồ uống trở nên sảng khoái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ chỉ đá lạnh và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ ice được dùng làm danh từ chỉ đá lạnh trong tất cả các câu."
+      },
+      "word": "ice",
+      "normalized_word": "ice",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I would like some ice in my drink.",
+      "example_vi_clean": "Tôi muốn thêm một ít đá lạnh vào đồ uống của mình."
+    }
+  ]
+}

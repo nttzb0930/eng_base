@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-204",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26031,
+      "word": "enclose",
+      "normalized_word": "enclose",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'klouz/ (inclose) /in'klouz/",
+      "primary_meaning_vi": "vây quanh",
+      "meaning_vi": "vây quanh, rào quanh; bỏ kèm theo, gửi kèm theo (trong phong bì với thư...); đóng vào hộp, đóng vào thùng; nhốt vào...; bao gồm, chứa đựng",
+      "example_en": "to enclose lands",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Please enclose a stamped self-addressed envelope if you require a reply.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26032,
+      "word": "encounter",
+      "normalized_word": "encounter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'kauntə/",
+      "primary_meaning_vi": "sự gặp gỡ",
+      "meaning_vi": "sự gặp gỡ, sự bắt gặp; sự gặp phải; cuộc gặp gỡ; sự chạm trán, sự đọ sức; cuộc chạm trán, cuộc đọ sức; cuộc chạm trán, cuộc đấu (trí...); gặp thình lình, bắt gặp; chạm trán, đọ sức với, đấu với",
+      "example_en": "Their encounter was a matter of chance.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Three armies encountered at Waterloo.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26033,
+      "word": "encouragement",
+      "normalized_word": "encouragement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/in'kʌridʤmənt/",
+      "primary_meaning_vi": "sự làm can đảm",
+      "meaning_vi": "sự làm can đảm, sự làm mạnh dạn; sự khuyến khích, sự cổ vũ, sự động viên; sự giúp đỡ, sự ủng hộ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26034,
+      "word": "encouraging",
+      "normalized_word": "encouraging",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/in'kʌridʤiɳ/",
+      "primary_meaning_vi": "làm can đảm",
+      "meaning_vi": "làm can đảm, làm mạnh dạn; khuyến khích, cổ vũ, động viên; giúp đỡ, ủng hộ",
+      "example_en": "I encouraged him during his race.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We encourage the use of bicycles in the town centre.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The royal family has always encouraged the arts in word and deed",
+          "example_vi": null
+        },
+        {
+          "example_en": "Although there is no cure for the disease yet, the research results are encouraging.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26035,
+      "word": "encyclopaedia",
+      "normalized_word": "encyclopaedia",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/en,saiklou'pi:djə/ (encyclopaedia) /en,saiklou'pi:djə/",
+      "primary_meaning_vi": "bộ sách bách khoa",
+      "meaning_vi": "bộ sách bách khoa; sách giáo khoa về kiến thức chung",
+      "example_en": "His life's work was a four-volume encyclopedia of aviation topics.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26036,
+      "word": "encyclopedia",
+      "normalized_word": "encyclopedia",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/en,saiklou'pi:djə/ (encyclopaedia) /en,saiklou'pi:djə/",
+      "primary_meaning_vi": "bộ sách bách khoa",
+      "meaning_vi": "bộ sách bách khoa; sách giáo khoa về kiến thức chung",
+      "example_en": "His life's work was a four-volume encyclopedia of aviation topics.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26037,
+      "word": "endanger",
+      "normalized_word": "endanger",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": null,
+      "primary_meaning_vi": "gây nguy hiểm",
+      "meaning_vi": "gây nguy hiểm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26038,
+      "word": "endless",
+      "normalized_word": "endless",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'endlis/",
+      "primary_meaning_vi": "vô tận",
+      "meaning_vi": "vô tận, vĩnh viễn, không bao giờ hết; không ngừng, liên tục",
+      "example_en": "endless time; endless praise",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an endless line",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26039,
+      "word": "endure",
+      "normalized_word": "endure",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/in'djuə/",
+      "primary_meaning_vi": "chịu đựng",
+      "meaning_vi": "chịu đựng, cam chịu, chịu được; kéo dài, tồn tại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26040,
+      "word": "enemy",
+      "normalized_word": "enemy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'enimi/",
+      "primary_meaning_vi": "kẻ thù",
+      "meaning_vi": "kẻ thù, kẻ địch, địch thủ; quân địch, tàu địch; thì giờ; ma vương; của địch, thù địch",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

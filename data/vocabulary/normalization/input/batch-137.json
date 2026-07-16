@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-137",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25361,
+      "word": "planet",
+      "normalized_word": "planet",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'plænit/",
+      "primary_meaning_vi": "hành tinh",
+      "meaning_vi": "hành tinh; áo lễ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25362,
+      "word": "plant",
+      "normalized_word": "plant",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/plɑ:nt/",
+      "primary_meaning_vi": "thực vật",
+      "meaning_vi": "thực vật, cây (nhỏ); sự mọc; dáng đứng, thế đứng; máy móc, thiết bị (của một nhà máy); nhà máy ((thường) là công nghiệp nặng); người gài vào (một tổ chức nào để làm tay trong); vật gài bí mật (vào nơi nào như bom, máy ghi âm...); trồng, gieo; cắm, đóng chặt xuống (cọc...); động từ phân thân to plant oneself đứng (ở một chỗ nào để quan sát, dò xét...); thả (cá con... xuống ao cá); di (dân) đến ở... đưa (người) đến ở...; thiết lập, thành lập, đặt (một thành phố, ngôi chùa...); gài (người...) lại làm tay trong; đặt (lính gác...), gài (bom, máy ghi âm...); gieo (ý nghĩ...); bắn, giáng, ném, đâm...; bỏ rơi; chôn (ai); giấu, oa trữ (hàng ăn cắp...); bỏ (cát vàng, quặng khoáng chất...) vào mỏ (để đánh lừa người định mua là mỏ có trữ lượng cao); tính (mưu kế lừa đảo); cấy, chuyển (ở chậu...) xuống đất; ở lì mãi nhà ai",
+      "example_en": "The garden had a couple of trees, and a cluster of colourful plants around the border.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "That gun's not mine! It's a plant! I've never seen it before!",
+          "example_vi": null
+        },
+        {
+          "example_en": "That gun's not mine! It was planted there by the real murderer!",
+          "example_vi": null
+        },
+        {
+          "example_en": "Plant your feet firmly and give the rope a good tug.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25363,
+      "word": "plastic",
+      "normalized_word": "plastic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'plæstik/",
+      "primary_meaning_vi": "chất dẻo ((cũng) plastics)",
+      "meaning_vi": "chất dẻo ((cũng) plastics); dẻo, nặn được; tạo hình; mềm dẻo, mềm mỏng, hay chiều đời; dễ uốn nắn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25364,
+      "word": "plate",
+      "normalized_word": "plate",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/pleit/",
+      "primary_meaning_vi": "bản",
+      "meaning_vi": "bản, tấm phiếu, lá (kim loại); biển, bảng (bằng đồng...); bản khắc kẽm; tranh khắc kẽm, bản đồ khắc kẽm; khuôn in (bằng chì...); tấm kính ảnh, tấm kẽm chụp ảnh (thay cho phim); đòn ngang; thanh ngang; đĩa (để đựng thức ăn); đĩa thức ăn; bát đĩa bằng vàng bạc; đĩa thu tiền quyên (ở nhà thờ); cúp vàng, cúp bạc; cuộc đua tranh cúp vàng; cuộc đua ngựa tranh cúp vàng); lợi giả (để cắm răng giả); đường ray ((cũng) plate rail); bát chữ; bọc sắt, bọc kim loại; mạ; sắp chữ thành bát",
+      "example_en": "I filled my plate from the bountiful table.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I ate a plate of beans.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The meat plate was particularly tasty.",
+          "example_vi": null
+        },
+        {
+          "example_en": "With revenues down and transfer payments up, the legislature has a full plate.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25365,
+      "word": "playful",
+      "normalized_word": "playful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'pleiful/",
+      "primary_meaning_vi": "hay vui đùa",
+      "meaning_vi": "hay vui đùa, hay đùa, hay nghịch, hay khôi hài",
+      "example_en": "Actually, we are pretty playful in our romantic life.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A party hat is a playful conical hat people wear at parties.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A brainteaser is a playful puzzle posed as a test of intelligence.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was a rather playful artist.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25366,
+      "word": "playground",
+      "normalized_word": "playground",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'pleigraund/",
+      "primary_meaning_vi": "sân chơi",
+      "meaning_vi": "sân chơi, sân thể thao (trường học); nước Thuỵ sĩ",
+      "example_en": "The exclusive tropical island was a millionaire's playground.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25367,
+      "word": "pleasant",
+      "normalized_word": "pleasant",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'pleznt/",
+      "primary_meaning_vi": "vui vẻ",
+      "meaning_vi": "vui vẻ, dễ thương (người...); dễ chịu, thú vị, làm thích ý, vừa ý, đẹp hay, vui, êm đềm, dịu dàng; hay vui đùa, hay pha trò, hay khôi hài",
+      "example_en": "It wasn't so hot outside, but pleasant enough to have lunch in the garden.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25368,
+      "word": "pleased",
+      "normalized_word": "pleased",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "hài lòng (thể hiện sự thoả mãn về ai",
+      "meaning_vi": "hài lòng (thể hiện sự thoả mãn về ai/cái gì); sẵn lòng, vui mừng, vui vẻ được làm cái gì",
+      "example_en": "Her presentation pleased the executives.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Just do as you please.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25369,
+      "word": "pleasing",
+      "normalized_word": "pleasing",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'pli:ziɳ/",
+      "primary_meaning_vi": "dễ chịu",
+      "meaning_vi": "dễ chịu, thú vị, làm vui lòng, làm vừa ý",
+      "example_en": "Her presentation pleased the executives.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Just do as you please.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25370,
+      "word": "plenty",
+      "normalized_word": "plenty",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "phó từ",
+      "phonetic": "/'plenti/",
+      "primary_meaning_vi": "sự sung túc",
+      "meaning_vi": "sự sung túc, sự phong phú, sự dồi dào, sự có nhiều; sừng dê kết hoa quả (tượng trưng cho sự phong phú); hoàn toàn, rất lắm",
+      "example_en": "We are lucky to live in a land of peace and plenty.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She was plenty mad at him.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I think six eggs should be plenty for this recipe.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

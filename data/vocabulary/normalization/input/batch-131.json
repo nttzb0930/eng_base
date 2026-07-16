@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-131",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25301,
+      "word": "official",
+      "normalized_word": "official",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'fiʃəl/",
+      "primary_meaning_vi": "chính quyền",
+      "meaning_vi": "chính quyền; (thuộc) văn phòng; chính thức; trịnh trọng, theo nghi thức; để làm thuốc, dùng làm thuốc; viên chức, công chức; uỷ viên tài phán của giáo hội ((thường) official principal)",
+      "example_en": "David Barnes was the official charged with the running of the sports club.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "In most soccer games there are three officials: the referee and two linesmen.",
+          "example_vi": null
+        },
+        {
+          "example_en": "official duties",
+          "example_vi": null
+        },
+        {
+          "example_en": "an official statement or report",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25302,
+      "word": "oil",
+      "normalized_word": "oil",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ɔil/",
+      "primary_meaning_vi": "dầu",
+      "meaning_vi": "dầu; tranh sơn dầu; sự nịnh nọt, sự phỉnh nịnh; thức khuya học tập (làm việc); pour; lửa cháy đổ dầu thêm; chứng tỏ làm việc chăm chỉ, thức khuya dậy sớm; strike; nước và lửa; mặt trăng mặt trời; chó và mèo; tra dầu, bôi dầu, lau dầu; thấm dầu, ngấm dầu; biến thành dầu; đút lót, hối lộ; biến thành dầu; mua chuộc ai, hối lộ ai; nịnh hót, tán khéo; đút lót, hối lộ",
+      "example_en": "I prefer to paint in oil",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25303,
+      "word": "olympic",
+      "normalized_word": "olympic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ou'limpəs/",
+      "primary_meaning_vi": "Ô-lim-pích",
+      "meaning_vi": "Ô-lim-pích; đại hội thể thao Ô-lim-pích (cổ Hy-lạp); đại hội thể thao quốc tế Ô-lim-pích",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25304,
+      "word": "omelet",
+      "normalized_word": "omelet",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔmlit/ (omelette) /'ɔmlit/",
+      "primary_meaning_vi": "trứng tráng",
+      "meaning_vi": "trứng tráng; không xẻ ván sao đóng được thuyền",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25305,
+      "word": "omelette",
+      "normalized_word": "omelette",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔmlit/ (omelette) /'ɔmlit/",
+      "primary_meaning_vi": "trứng tráng",
+      "meaning_vi": "trứng tráng; không xẻ ván sao đóng được thuyền",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25306,
+      "word": "on",
+      "normalized_word": "on",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/ɔn/",
+      "primary_meaning_vi": "trên",
+      "meaning_vi": "trên, ở trên; dựa trên, dựa vào; vào, lúc khi; vào, về phía, bên; với; chống lại; bằng, nhờ vào; về, nói về, bàn về; đang; thuộc, của; có việc, có công tác; instant; purpose; sly; go; mang cái gì trong người; có điều gì đang phàn nàn về ai; hơn ai về cái gì; tiếp, tiếp tục, tiếp diễn, tiến lên; đang, đang có, đang hoạt động; vào; sắp năm mươi tuổi; ủng hộ, sẵn sàng tham gia, đồng ý; biết được ý định của ai; quấy rầy ai; móc máy ai; ngà ngà say; từ ngày đó về sau; lúc lúc, chốc chốc, chập chờn; liên tục, liên miên; về bên trái (crickê); phía trái (crickê)",
+      "example_en": "Can you on the light?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "All the lights are on, so they must be home.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Are we still on for tonight?",
+          "example_vi": null
+        },
+        {
+          "example_en": "I was trying to drink out of the bottle while the top was still on!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25307,
+      "word": "onion",
+      "normalized_word": "onion",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'ʌnjən/",
+      "primary_meaning_vi": "củ hành",
+      "meaning_vi": "củ hành; cây hành; thạo nghề của mình, cừ về công việc của mình, nắm vấn đề của mình; điên, gàn; day hành vào (mắt, để làm chảy nước mắt)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25308,
+      "word": "online",
+      "normalized_word": "online",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "trực tuyến",
+      "meaning_vi": "trực tuyến",
+      "example_en": "I prefer to read online newspapers.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I'll be online tonight, so I'll be able to reply to your email.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Press the F1 key to access the online help.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Once this factory comes online, it will double car production in our country!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25309,
+      "word": "operate",
+      "normalized_word": "operate",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ɔpəreit/",
+      "primary_meaning_vi": "hoạt động (máy...)",
+      "meaning_vi": "hoạt động (máy...); có tác dụng; lợi dụng; mổ; hành quân; đầu cơ; làm cho hoạt động, cho chạy (máy...); thao tác; đưa đến, mang đến, dẫn đến; thi hành, thực hiện, tiến hành; đưa (nhà máy...) vào sản xuất; khai thác (mỏ...); điều khiển (xí nghiệp...)",
+      "example_en": "to operate a machine",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25310,
+      "word": "opinion",
+      "normalized_word": "opinion",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'pinjən/",
+      "primary_meaning_vi": "ý kiến",
+      "meaning_vi": "ý kiến, quan điểm; dư luận; sự đánh giá; (+ phủ định) sự đánh giá cao",
+      "example_en": "Every man is a fool in some man's opinion.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

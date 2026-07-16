@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24731,
+      "quiz_meaning_vi": "mền",
+      "meaning_vi_clean": "mền; lớp phủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "mền",
+          "example_en": "The baby was cold, so his mother put a blanket over him.",
+          "example_vi": "Đứa bé bị lạnh nên mẹ nó đắp một chiếc mền lên người nó."
+        },
+        {
+          "meaning_vi": "mền",
+          "example_en": "I need a warm blanket for the winter nights.",
+          "example_vi": "Tôi cần một chiếc mền ấm cho những đêm mùa đông."
+        },
+        {
+          "meaning_vi": "mền",
+          "example_en": "She wrapped herself in a thick wool blanket.",
+          "example_vi": "Cô ấy quấn mình trong một chiếc mền len dày."
+        },
+        {
+          "meaning_vi": "mền",
+          "example_en": "Please fold the blanket neatly after you wake up.",
+          "example_vi": "Vui lòng gấp mền gọn gàng sau khi bạn thức dậy."
+        },
+        {
+          "meaning_vi": "lớp phủ",
+          "example_en": "The city woke under a thick blanket of fog.",
+          "example_vi": "Thành phố thức giấc dưới một lớp sương mù dày đặc."
+        },
+        {
+          "meaning_vi": "lớp phủ",
+          "example_en": "A fresh layer of snow blanketed the area.",
+          "example_vi": "Một lớp tuyết mới đã phủ kín khu vực này."
+        },
+        {
+          "meaning_vi": "lớp phủ",
+          "example_en": "The forest was covered by a blanket of autumn leaves.",
+          "example_vi": "Khu rừng được bao phủ bởi một lớp lá mùa thu."
+        },
+        {
+          "meaning_vi": "lớp phủ",
+          "example_en": "The mountains were hidden under a blanket of clouds.",
+          "example_vi": "Những ngọn núi bị che khuất dưới một lớp mây dày."
+        },
+        {
+          "meaning_vi": "lớp phủ",
+          "example_en": "The ground was covered with a blanket of flowers.",
+          "example_vi": "Mặt đất được bao phủ bởi một lớp hoa."
+        },
+        {
+          "meaning_vi": "lớp phủ",
+          "example_en": "The lake was silent under a blanket of ice.",
+          "example_vi": "Hồ nước tĩnh lặng dưới một lớp băng phủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là mền, bổ sung nghĩa lớp phủ. Loại bỏ các nghĩa không phù hợp cấp độ A2.",
+      "word": "blanket",
+      "normalized_word": "blanket",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The baby was cold, so his mother put a blanket over him.",
+      "example_vi_clean": "Đứa bé bị lạnh nên mẹ nó đắp một chiếc mền lên người nó."
+    },
+    {
+      "id": 24732,
+      "quiz_meaning_vi": "cô gái tóc hoe",
+      "meaning_vi_clean": "cô gái tóc hoe",
+      "examples_clean": [
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "The blonde girl sat by the window reading a book.",
+          "example_vi": "Cô gái tóc hoe ngồi bên cửa sổ đọc sách."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "She is a beautiful blonde with blue eyes.",
+          "example_vi": "Cô ấy là một cô gái tóc hoe xinh đẹp với đôi mắt xanh."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "The blonde actress won the award last night.",
+          "example_vi": "Nữ diễn viên tóc hoe đã giành giải thưởng tối qua."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "I saw a blonde woman walking in the park.",
+          "example_vi": "Tôi thấy một người phụ nữ tóc hoe đang đi dạo trong công viên."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "The blonde student answered the question correctly.",
+          "example_vi": "Học sinh tóc hoe đã trả lời câu hỏi một cách chính xác."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "She has been a blonde since she was a child.",
+          "example_vi": "Cô ấy đã có mái tóc hoe từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "The blonde model walked down the runway.",
+          "example_vi": "Người mẫu tóc hoe bước đi trên sàn diễn."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "Many people admire her natural blonde hair.",
+          "example_vi": "Nhiều người ngưỡng mộ mái tóc hoe tự nhiên của cô ấy."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "The blonde singer performed a great song.",
+          "example_vi": "Ca sĩ tóc hoe đã biểu diễn một bài hát tuyệt vời."
+        },
+        {
+          "meaning_vi": "cô gái tóc hoe",
+          "example_en": "She is the only blonde in her family.",
+          "example_vi": "Cô ấy là người duy nhất có mái tóc hoe trong gia đình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "blonde",
+      "normalized_word": "blonde",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The blonde girl sat by the window reading a book.",
+      "example_vi_clean": "Cô gái tóc hoe ngồi bên cửa sổ đọc sách."
+    },
+    {
+      "id": 24733,
+      "quiz_meaning_vi": "máu",
+      "meaning_vi_clean": "máu",
+      "examples_clean": [
+        {
+          "meaning_vi": "máu",
+          "example_en": "The doctor took a sample of his blood for testing.",
+          "example_vi": "Bác sĩ đã lấy một mẫu máu của anh ấy để xét nghiệm."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "She lost a lot of blood after the accident.",
+          "example_vi": "Cô ấy đã mất rất nhiều máu sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "Blood flowed from the small cut on his finger.",
+          "example_vi": "Máu chảy ra từ vết cắt nhỏ trên ngón tay anh ấy."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "The nurse checked his blood pressure.",
+          "example_vi": "Y tá đã kiểm tra huyết áp của anh ấy."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "He donated blood to help the hospital.",
+          "example_vi": "Anh ấy đã hiến máu để giúp đỡ bệnh viện."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "The test results showed his blood type.",
+          "example_vi": "Kết quả xét nghiệm cho thấy nhóm máu của anh ấy."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "The wound was covered in dried blood.",
+          "example_vi": "Vết thương bị bao phủ bởi máu khô."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "She felt faint at the sight of blood.",
+          "example_vi": "Cô ấy cảm thấy chóng mặt khi nhìn thấy máu."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "The blood circulation in his legs is poor.",
+          "example_vi": "Sự lưu thông máu ở chân anh ấy rất kém."
+        },
+        {
+          "meaning_vi": "máu",
+          "example_en": "They are related by blood.",
+          "example_vi": "Họ có quan hệ huyết thống với nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phù hợp, giữ nghĩa chính là máu.",
+      "word": "blood",
+      "normalized_word": "blood",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The doctor took a sample of his blood for testing.",
+      "example_vi_clean": "Bác sĩ đã lấy một mẫu máu của anh ấy để xét nghiệm."
+    },
+    {
+      "id": 24734,
+      "quiz_meaning_vi": "hoa",
+      "meaning_vi_clean": "hoa; sự ra hoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The cherry trees are in full bloom.",
+          "example_vi": "Những cây anh đào đang nở rộ."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The garden is full of beautiful blooms.",
+          "example_vi": "Khu vườn đầy những bông hoa xinh đẹp."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "She picked a fresh bloom for her hair.",
+          "example_vi": "Cô ấy hái một bông hoa tươi để cài lên tóc."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The plant produces a small white bloom.",
+          "example_vi": "Cây này tạo ra một bông hoa nhỏ màu trắng."
+        },
+        {
+          "meaning_vi": "sự ra hoa",
+          "example_en": "The spring season brings the bloom of many flowers.",
+          "example_vi": "Mùa xuân mang đến sự ra hoa của nhiều loài cây."
+        },
+        {
+          "meaning_vi": "sự ra hoa",
+          "example_en": "The apple trees are at the peak of their bloom.",
+          "example_vi": "Những cây táo đang ở thời kỳ ra hoa rực rỡ nhất."
+        },
+        {
+          "meaning_vi": "sự ra hoa",
+          "example_en": "We enjoyed the bloom of the roses in the park.",
+          "example_vi": "Chúng tôi đã tận hưởng sự ra hoa của những đóa hồng trong công viên."
+        },
+        {
+          "meaning_vi": "sự ra hoa",
+          "example_en": "The early bloom was caused by the warm weather.",
+          "example_vi": "Sự ra hoa sớm là do thời tiết ấm áp."
+        },
+        {
+          "meaning_vi": "sự ra hoa",
+          "example_en": "The garden looks lovely during the bloom.",
+          "example_vi": "Khu vườn trông rất đáng yêu trong mùa ra hoa."
+        },
+        {
+          "meaning_vi": "sự ra hoa",
+          "example_en": "The flowers are in their second bloom this year.",
+          "example_vi": "Những bông hoa đang trong đợt ra hoa thứ hai trong năm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ, giữ nghĩa hoa và sự ra hoa.",
+      "word": "bloom",
+      "normalized_word": "bloom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cherry trees are in full bloom.",
+      "example_vi_clean": "Những cây anh đào đang nở rộ."
+    },
+    {
+      "id": 24735,
+      "quiz_meaning_vi": "cú đánh đòn",
+      "meaning_vi_clean": "cú đánh đòn; tai hoạ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cú đánh đòn",
+          "example_en": "He received a heavy blow to the head.",
+          "example_vi": "Anh ấy đã nhận một cú đánh mạnh vào đầu."
+        },
+        {
+          "meaning_vi": "cú đánh đòn",
+          "example_en": "The boxer landed a quick blow.",
+          "example_vi": "Võ sĩ quyền anh đã tung ra một cú đánh nhanh."
+        },
+        {
+          "meaning_vi": "cú đánh đòn",
+          "example_en": "She felt the blow on her shoulder.",
+          "example_vi": "Cô ấy cảm thấy cú đánh trên vai mình."
+        },
+        {
+          "meaning_vi": "cú đánh đòn",
+          "example_en": "The blow was strong enough to knock him down.",
+          "example_vi": "Cú đánh đủ mạnh để làm anh ấy ngã xuống."
+        },
+        {
+          "meaning_vi": "tai hoạ",
+          "example_en": "The loss of his job was a severe blow to him.",
+          "example_vi": "Việc mất việc làm là một tai họa lớn đối với anh ấy."
+        },
+        {
+          "meaning_vi": "tai hoạ",
+          "example_en": "The news of her death was a terrible blow.",
+          "example_vi": "Tin tức về cái chết của cô ấy là một tai họa khủng khiếp."
+        },
+        {
+          "meaning_vi": "tai hoạ",
+          "example_en": "This decision is a blow to our plans.",
+          "example_vi": "Quyết định này là một tai họa cho kế hoạch của chúng ta."
+        },
+        {
+          "meaning_vi": "tai hoạ",
+          "example_en": "The failure of the project was a major blow.",
+          "example_vi": "Sự thất bại của dự án là một tai họa lớn."
+        },
+        {
+          "meaning_vi": "tai hoạ",
+          "example_en": "It was a blow to his pride.",
+          "example_vi": "Đó là một tai họa đối với lòng tự trọng của anh ấy."
+        },
+        {
+          "meaning_vi": "tai hoạ",
+          "example_en": "The sudden change was a blow to the team.",
+          "example_vi": "Sự thay đổi đột ngột là một tai họa cho cả đội."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ, giữ nghĩa cú đánh đòn và tai họa.",
+      "word": "blow",
+      "normalized_word": "blow",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He received a heavy blow to the head.",
+      "example_vi_clean": "Anh ấy đã nhận một cú đánh mạnh vào đầu."
+    },
+    {
+      "id": 24736,
+      "quiz_meaning_vi": "nhọt",
+      "meaning_vi_clean": "nhọt; sự sôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhọt",
+          "example_en": "He has a painful boil on his neck.",
+          "example_vi": "Anh ấy có một cái nhọt đau đớn trên cổ."
+        },
+        {
+          "meaning_vi": "nhọt",
+          "example_en": "The doctor treated the boil on her arm.",
+          "example_vi": "Bác sĩ đã điều trị cái nhọt trên cánh tay cô ấy."
+        },
+        {
+          "meaning_vi": "nhọt",
+          "example_en": "She applied a cream to the boil.",
+          "example_vi": "Cô ấy đã bôi kem lên cái nhọt."
+        },
+        {
+          "meaning_vi": "nhọt",
+          "example_en": "The boil is getting smaller now.",
+          "example_vi": "Cái nhọt đang nhỏ dần rồi."
+        },
+        {
+          "meaning_vi": "sự sôi",
+          "example_en": "Add the noodles when the water comes to the boil.",
+          "example_vi": "Cho mì vào khi nước bắt đầu sôi."
+        },
+        {
+          "meaning_vi": "sự sôi",
+          "example_en": "Bring the soup to a boil before serving.",
+          "example_vi": "Đun súp cho sôi trước khi phục vụ."
+        },
+        {
+          "meaning_vi": "sự sôi",
+          "example_en": "The water reached a boil in minutes.",
+          "example_vi": "Nước đã sôi trong vài phút."
+        },
+        {
+          "meaning_vi": "sự sôi",
+          "example_en": "Keep the sauce at a gentle boil.",
+          "example_vi": "Giữ cho nước sốt sôi nhẹ."
+        },
+        {
+          "meaning_vi": "sự sôi",
+          "example_en": "The milk came to a boil and spilled over.",
+          "example_vi": "Sữa đã sôi và trào ra ngoài."
+        },
+        {
+          "meaning_vi": "sự sôi",
+          "example_en": "Wait for the water to reach a boil.",
+          "example_vi": "Hãy đợi cho nước sôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa nhọt và sự sôi, bổ sung ví dụ phù hợp.",
+      "word": "boil",
+      "normalized_word": "boil",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He has a painful boil on his neck.",
+      "example_vi_clean": "Anh ấy có một cái nhọt đau đớn trên cổ."
+    },
+    {
+      "id": 24737,
+      "quiz_meaning_vi": "tiền thưởng",
+      "meaning_vi_clean": "tiền thưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "The employee of the week receives a bonus for his excellent work.",
+          "example_vi": "Nhân viên xuất sắc trong tuần nhận được một khoản tiền thưởng cho công việc tuyệt vời của mình."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "She got a year-end bonus for her hard work.",
+          "example_vi": "Cô ấy đã nhận được tiền thưởng cuối năm vì sự chăm chỉ của mình."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "The company gave everyone a small bonus.",
+          "example_vi": "Công ty đã tặng cho mọi người một khoản tiền thưởng nhỏ."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "He used his bonus to buy a new computer.",
+          "example_vi": "Anh ấy đã dùng tiền thưởng của mình để mua một chiếc máy tính mới."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "The bonus was a nice surprise for the staff.",
+          "example_vi": "Khoản tiền thưởng là một bất ngờ thú vị cho nhân viên."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "They promised a bonus for finishing the project early.",
+          "example_vi": "Họ đã hứa một khoản tiền thưởng nếu hoàn thành dự án sớm."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "Her salary is low, but the bonus helps.",
+          "example_vi": "Lương của cô ấy thấp, nhưng tiền thưởng đã giúp ích."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "The sales team earned a large bonus this month.",
+          "example_vi": "Đội ngũ bán hàng đã kiếm được một khoản tiền thưởng lớn trong tháng này."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "He saved his bonus for a vacation.",
+          "example_vi": "Anh ấy đã tiết kiệm tiền thưởng của mình cho một kỳ nghỉ."
+        },
+        {
+          "meaning_vi": "tiền thưởng",
+          "example_en": "The bonus is based on individual performance.",
+          "example_vi": "Tiền thưởng dựa trên hiệu suất cá nhân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa tiền thưởng, bổ sung đủ 10 ví dụ.",
+      "word": "bonus",
+      "normalized_word": "bonus",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The employee of the week receives a bonus for his excellent work.",
+      "example_vi_clean": "Nhân viên xuất sắc trong tuần nhận được một khoản tiền thưởng cho công việc tuyệt vời của mình."
+    },
+    {
+      "id": 24738,
+      "quiz_meaning_vi": "tủ sách",
+      "meaning_vi_clean": "tủ sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "He keeps his favorite novels in the wooden bookcase.",
+          "example_vi": "Anh ấy giữ những cuốn tiểu thuyết yêu thích của mình trong tủ sách bằng gỗ."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "The bookcase is filled with many interesting books.",
+          "example_vi": "Tủ sách chứa đầy nhiều cuốn sách thú vị."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "She bought a new bookcase for her study room.",
+          "example_vi": "Cô ấy đã mua một chiếc tủ sách mới cho phòng học của mình."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "The old bookcase needs to be painted.",
+          "example_vi": "Chiếc tủ sách cũ cần được sơn lại."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "There are many encyclopedias in the bookcase.",
+          "example_vi": "Có nhiều bộ bách khoa toàn thư trong tủ sách."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "He organized the books in the bookcase by author.",
+          "example_vi": "Anh ấy sắp xếp sách trong tủ sách theo tác giả."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "The bookcase stands against the wall.",
+          "example_vi": "Chiếc tủ sách đặt dựa vào tường."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "She cleaned the dust off the bookcase.",
+          "example_vi": "Cô ấy lau sạch bụi trên tủ sách."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "The bookcase is too heavy to move.",
+          "example_vi": "Chiếc tủ sách quá nặng để di chuyển."
+        },
+        {
+          "meaning_vi": "tủ sách",
+          "example_en": "He found an old map in the bookcase.",
+          "example_vi": "Anh ấy tìm thấy một tấm bản đồ cũ trong tủ sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa tủ sách, bổ sung đủ 10 ví dụ.",
+      "word": "bookcase",
+      "normalized_word": "bookcase",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He keeps his favorite novels in the wooden bookcase.",
+      "example_vi_clean": "Anh ấy giữ những cuốn tiểu thuyết yêu thích của mình trong tủ sách bằng gỗ."
+    },
+    {
+      "id": 24739,
+      "quiz_meaning_vi": "giá sách",
+      "meaning_vi_clean": "giá sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "She placed her textbooks on the bookshelf.",
+          "example_vi": "Cô ấy đặt sách giáo khoa của mình lên giá sách."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "The bookshelf is mounted on the wall.",
+          "example_vi": "Giá sách được gắn trên tường."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "He built a simple bookshelf for his room.",
+          "example_vi": "Anh ấy đã đóng một chiếc giá sách đơn giản cho phòng mình."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "There is no more space on the bookshelf.",
+          "example_vi": "Không còn chỗ trống trên giá sách nữa."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "She reached for a book on the top bookshelf.",
+          "example_vi": "Cô ấy với lấy một cuốn sách trên giá sách cao nhất."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "The bookshelf is made of metal.",
+          "example_vi": "Giá sách được làm bằng kim loại."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "He keeps his dictionary on the bookshelf.",
+          "example_vi": "Anh ấy để từ điển của mình trên giá sách."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "The bookshelf collapsed under the weight of the books.",
+          "example_vi": "Giá sách bị sập dưới sức nặng của những cuốn sách."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "She decorated the bookshelf with small plants.",
+          "example_vi": "Cô ấy trang trí giá sách bằng những chậu cây nhỏ."
+        },
+        {
+          "meaning_vi": "giá sách",
+          "example_en": "He bought a new bookshelf online.",
+          "example_vi": "Anh ấy đã mua một chiếc giá sách mới trên mạng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa giá sách, bổ sung đủ 10 ví dụ.",
+      "word": "bookshelf",
+      "normalized_word": "bookshelf",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She placed her textbooks on the bookshelf.",
+      "example_vi_clean": "Cô ấy đặt sách giáo khoa của mình lên giá sách."
+    },
+    {
+      "id": 24740,
+      "quiz_meaning_vi": "hiệu sách",
+      "meaning_vi_clean": "hiệu sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "I bought a new novel at the local bookshop.",
+          "example_vi": "Tôi đã mua một cuốn tiểu thuyết mới tại hiệu sách địa phương."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookshop is closed on Sundays.",
+          "example_vi": "Hiệu sách đóng cửa vào các ngày Chủ nhật."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "She works part-time at a large bookshop.",
+          "example_vi": "Cô ấy làm việc bán thời gian tại một hiệu sách lớn."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "We met in front of the bookshop.",
+          "example_vi": "Chúng tôi đã gặp nhau trước hiệu sách."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookshop has a wide selection of magazines.",
+          "example_vi": "Hiệu sách có rất nhiều loại tạp chí."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "He spent hours browsing in the bookshop.",
+          "example_vi": "Anh ấy đã dành hàng giờ để xem sách trong hiệu sách."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookshop is located near the university.",
+          "example_vi": "Hiệu sách nằm gần trường đại học."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "They are opening a new bookshop downtown.",
+          "example_vi": "Họ đang mở một hiệu sách mới ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "The bookshop owner is very friendly.",
+          "example_vi": "Chủ hiệu sách rất thân thiện."
+        },
+        {
+          "meaning_vi": "hiệu sách",
+          "example_en": "I ordered the book from an online bookshop.",
+          "example_vi": "Tôi đã đặt cuốn sách từ một hiệu sách trực tuyến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa hiệu sách, bổ sung đủ 10 ví dụ.",
+      "word": "bookshop",
+      "normalized_word": "bookshop",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought a new novel at the local bookshop.",
+      "example_vi_clean": "Tôi đã mua một cuốn tiểu thuyết mới tại hiệu sách địa phương."
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-057",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24561,
+      "word": "nose",
+      "normalized_word": "nose",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/nouz/",
+      "primary_meaning_vi": "mũi (người)",
+      "meaning_vi": "mũi (người); mõm (súc vật); khứu giác; sự đánh hơi; mùi, hương vị; đầu mũi (của một vật gì); trả lời một cách sỗ sàng; trong cơn bực tức với mình lại tự mình làm hại thân mình; đi thẳng về phía trước; chỉ theo linh tính; grindstone; lead; look; người dễ uốn nắn; người bảo sao nghe vậy; phao câu (gà...); chõ mũi vào việc của người khác; phải trả một giá cắt cổ; choán chỗ ai, hất cẳng ai; làm cho ai chưng hửng, làm cho ai thất vọng, làm cho ai vỡ mộng; nói giọng mũi; kiểm diện, đếm số người có mặt; kiểm phiếu; lấy đa số để quyết định một vấn đề gì; hếch mũi nhại (ai); ngay ở trước mắt, ngay ở trước mũi mình; ngửi, đánh hơi ((nghĩa đen) & (nghĩa bóng)); dính vào, chõ vào, xen vào; dí mũi vào, lấy mũi di di (cái gì); đâm bổ xuống (máy bay); lấn đường",
+      "example_en": "She has a cold in the nose.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the nose of a tea-kettle, a bellows, or a fighter plane",
+          "example_vi": null
+        },
+        {
+          "example_en": "Red Rum only won by a nose.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It is essential that a winetaster develops a good nose.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24562,
+      "word": "not",
+      "normalized_word": "not",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/nɔt/",
+      "primary_meaning_vi": "không",
+      "meaning_vi": "không; hẳn là, chắc là; but; half; ít nhất cũng bằng; nhiều nhất cũng chỉ bằng; also; không phải một hai lần; nhiều lần rồi, luôn luôn; seldom; không phải rằng (là)",
+      "example_en": "Did you take out the trash? No, I did not.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It's not you, it's me.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It was not my favorite movie of all time.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He painted the car blue and black, not solid purple.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24563,
+      "word": "note",
+      "normalized_word": "note",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/nout/",
+      "primary_meaning_vi": "lời ghi",
+      "meaning_vi": "lời ghi, lời ghi chép; lời ghi chú, lời chú giải; sự lưu ý, sự chú ý; bức thư ngắn; công hàm; phiếu, giấy; dấu, dấu hiệu, vết; tiếng tăm, danh tiếng; nốt; phím (pianô); điệu, vẻ, giọng, mùi; ghi nhớ, chú ý, lưu ý, nhận thấy; ghi, ghi chép; chú giải, chú thích",
+      "example_en": "a poet of note",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "If you look to the left, you can note the old cathedral.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We noted his speech.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The modular multiplicative inverse of x may be noted x-1.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24564,
+      "word": "notebook",
+      "normalized_word": "notebook",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'noutbuk/",
+      "primary_meaning_vi": "sổ tay",
+      "meaning_vi": "sổ tay, sổ ghi chép",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24565,
+      "word": "nothing",
+      "normalized_word": "nothing",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "phó từ",
+      "phonetic": "/'nʌθiɳ/",
+      "primary_meaning_vi": "sự không có",
+      "meaning_vi": "sự không có, sự không tồn tại; cái không có; người vô dụng, người bất tài, người tầm thường; chuyện lặt vặt, chuyện tầm thường; vật rất tồi, vật tầm thường; con số không; không, không cái gì; không hiểu đầu đuôi; không giải quyết được; không dùng được, không xoay xở được, không xử trí được với; dance; không gì mục đích gì, không được gì; bâng quơ; make; không do dự làm một việc gì; làm một việc gì như thường lệ; không xoay xở gì được, không kiếm chác gì được; next; không có cái gì ngoài; không là cái gì ngoài; không còn cách gì khác ngoài; không chút nào, hẳn không, tuyệt nhiên không",
+      "example_en": "You're nothing to me now!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24566,
+      "word": "november",
+      "normalized_word": "november",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/nou'vembə/",
+      "primary_meaning_vi": "tháng mười một",
+      "meaning_vi": "tháng mười một",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24567,
+      "word": "now",
+      "normalized_word": "now",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/nau/",
+      "primary_meaning_vi": "bây giờ",
+      "meaning_vi": "bây giờ, lúc này, giờ đây, hiện nay, ngày nay; ngay bây giờ, ngay tức khắc, lập tức; lúc ấy, lúc đó, lúc bấy giờ (trong lúc kể chuyện); trong tình trạng đó, trong hoàn cảnh ấy, trong tình thế ấy; nay, mà, vậy thì (ở đầu câu); hả, hãy... mà, nào; thế nào, này, hử; thỉnh thoảng; lúc thì... lúc thì; now (that) thấy rằng, xét thấy, vì, vì chưng, bởi chưng; hiện tại, lúc này",
+      "example_en": "Now is the right time.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She is living in the now.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I think this band's sound is very now.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Now I am six.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24568,
+      "word": "number",
+      "normalized_word": "number",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'nʌmbə/",
+      "primary_meaning_vi": "số",
+      "meaning_vi": "số; đám, bọn, nhóm, toán; sự đếm số lượng; sự hơn về số lượng, số nhiều, đa số; nhịp điệu; câu thơ; số học; ,  (từ lóng) chết; cá nhân, bản thân; ,  (từ lóng) đại uý (hải quân); nó đã chầu trời rồi; đếm; kể vào, liệt vào, tính vào; đánh số, ghi số; lên tới, gồm có, có số dân là (tổng số); thọ (bao nhiêu tuổi); anh ta cũng chẳng còn sống được bao lâu nữa",
+      "example_en": "Zero, one, −1, 2.5, and pi are all numbers.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The number 8 is usually made with a single stroke.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The equation e^{i\\pi}+1=0 includes the most important numbers: 1, 0, \\pi, i, and e.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Horse number 5 won the race.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24569,
+      "word": "nurse",
+      "normalized_word": "nurse",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/nə:s/",
+      "primary_meaning_vi": "cá nhám",
+      "meaning_vi": "cá nhám; vú em, người bảo mẫu, người giữ trẻ; sự nuôi, sự cho bú, sự trông nom; sự được nuôi, sự được cho bú; nơi nuôi dưỡng, xứ sở, vườn ương ((nghĩa bóng)), cái nôi ((nghĩa bóng)); y tá, nữ y tá; cây che bóng; ong thợ; kiến thợ; cho bú, nuôi, trông nom (trẻ nhỏ); bồng, ãm; nựng; săn sóc (người bệnh); chữa (bệnh); chăm chút (cây con, mảnh vườn...); nâng niu (một việc gì...)); nuôi, nuôi dưỡng, ấp ủ (hy vọng, hận thù; phong trào văn nghệ...); ngồi ôm lấy, ngồi thu mình bên (lồng ấp, đống lửa...)",
+      "example_en": "They hired a nurse to care for their young boy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The nurse made her rounds through the hospital ward.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Eton College has been called \"the chief nurse of England's statesmen\".",
+          "example_vi": null
+        },
+        {
+          "example_en": "She believes that nursing her baby will make him strong and healthy.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24570,
+      "word": "o'clock",
+      "normalized_word": "o'clock",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/klɔk/ (o'clock) /ə'klɔk/",
+      "primary_meaning_vi": "đường chỉ viền ở cạnh bít tất",
+      "meaning_vi": "đường chỉ viền ở cạnh bít tất; đồng hồ; giờ; đều đặn, chạy đều, trơn tru, trôi chảy; quay lại thời kỳ đã qua; đi ngược lại bánh xe lịch sử, ngăn chặn sự phát triển; làm việc suốt 12 tiếng; làm việc suốt 24 tiếng; bấm giờ (trong một cuộc chạy đua); ghi giờ; bấm giờ (một cuộc chạy đua); chạy (đi...) mất... (bao nhiêu thời gian)",
+      "example_en": "(rare, nonstandard) What o'clock is it?",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

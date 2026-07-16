@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-163",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25621,
+      "word": "bravely",
+      "normalized_word": "bravely",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "dũng cảm",
+      "meaning_vi": "dũng cảm, gan góc",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25622,
+      "word": "breakthrough",
+      "normalized_word": "breakthrough",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự chọc thủng phòng tuyến",
+      "meaning_vi": "sự chọc thủng phòng tuyến",
+      "example_en": "Albert Einstein is credited with making some of the greatest breakthroughs in modern physics.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a breakthrough technological advance",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25623,
+      "word": "breast",
+      "normalized_word": "breast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/brest/",
+      "primary_meaning_vi": "ngực",
+      "meaning_vi": "ngực; vú; lòng, tâm trạng, tình cảm; nguồn nuôi sống; cái diệp (ở cái cày); gương lò; trẻ còn ẵm ngửa; thú nhận, thú lỗi, nhận tội; khai hết những việc đã làm; lấy ngực để chống đỡ (cái gì); chống lại",
+      "example_en": "Tanya's breasts grew remarkably during pregnancy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She kindled hope in the breast of all who heard her.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The robin has a red breast.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Would you like breast or wing?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25624,
+      "word": "breath",
+      "normalized_word": "breath",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/breθ/",
+      "primary_meaning_vi": "hơi thở",
+      "meaning_vi": "hơi thở, hơi; cơn gió nhẹ; làn hương thoảng; tiếng thì thào; điều cần thiết, điều bắt buộc; porridge; nói khẽ, nói thì thầm, nói thì thào; làm ngạc nhiên, làm kinh ngạc; hoài hơi, phí lời",
+      "example_en": "I could hear the breath of the runner behind me.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I took a deep breath and started the test.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I could feel the runner's breath on my shoulder.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Let's stop for a breath when we get to the top of the hill.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25625,
+      "word": "breathless",
+      "normalized_word": "breathless",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'breθlis/",
+      "primary_meaning_vi": "hết hơi",
+      "meaning_vi": "hết hơi, hổn hển, không kịp thở; nín thở; chết, tắt thở (người); lặng gió",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25626,
+      "word": "breeding",
+      "normalized_word": "breeding",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bri:diɳ/",
+      "primary_meaning_vi": "sự sinh sản",
+      "meaning_vi": "sự sinh sản; sự gây giống, sự chăn nuôi; sự giáo dục, phép lịch sự",
+      "example_en": "Your dog has good breeding.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a pond breeds fish; a northern country breeds stout men",
+          "example_vi": null
+        },
+        {
+          "example_en": "She wanted to breed her cow to the neighbor's registered bull.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He tries to breed blue roses.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25627,
+      "word": "brick",
+      "normalized_word": "brick",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/brik/",
+      "primary_meaning_vi": "gạch",
+      "meaning_vi": "gạch; bánh, thỏi, cục (xà phòng, chè...); người chính trực, người trung hậu; người rộng lượng, người hào hiệp; hớ, phạm sai lầm; say rượu; với tất cả sức mạnh có thể đè bẹp được; straw; bằng gạch; xây gạch bít đi",
+      "example_en": "This wall is made of bricks.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This house is made of brick.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a plastic explosive brick",
+          "example_vi": null
+        },
+        {
+          "example_en": "Thanks for helping me wash the car. You're a brick.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25628,
+      "word": "brief",
+      "normalized_word": "brief",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bri:f/",
+      "primary_meaning_vi": "ngắn",
+      "meaning_vi": "ngắn, vắn tắt, gọn; bản tóm tắt, bản toát yếu; bản tóm tắt hồ sơ của luật sư bào chữa (một vụ kiện); ((nghĩa rộng)) việc kiện, việc tố tụng; lời chỉ dẫn cho phi công (trước khi đi oanh tạc); chiếu thư (của giáo hoàng); tóm lại; tóm tắt lại; lập hồ sơ (một vụ kiện); giao cho luật sư để biện hộ; chỉ dẫn cho phi công (trước khi đi oanh tạc); chỉ dẫn tường tận",
+      "example_en": "We got a news brief.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I wear boxers under trousers but for sports I usually wear a brief.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The U.S. president was briefed on the military coup and its implications on African stability.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Her reign was brief but spectacular.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25629,
+      "word": "briefly",
+      "normalized_word": "briefly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'bri:fli/",
+      "primary_meaning_vi": "ngắn gọn",
+      "meaning_vi": "ngắn gọn, vắn tắt, tóm tắt",
+      "example_en": "He covered the subject briefly in his book.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He only worked here briefly.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Briefly, I am not happy about what happened, but no one will be losing their job.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25630,
+      "word": "brightly",
+      "normalized_word": "brightly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'braitli/",
+      "primary_meaning_vi": "sáng chói",
+      "meaning_vi": "sáng chói; tươi; sáng sủa; rạng rỡ, sáng ngời; rực rỡ",
+      "example_en": "The sun was shining brightly, making me squint.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

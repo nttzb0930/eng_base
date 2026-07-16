@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24821,
+      "quiz_meaning_vi": "uỷ ban",
+      "meaning_vi_clean": "uỷ ban",
+      "examples_clean": [
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "The committee will meet tomorrow to discuss the new policy.",
+          "example_vi": "Uỷ ban sẽ họp vào ngày mai để thảo luận về chính sách mới."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "She was appointed to the committee for urban planning.",
+          "example_vi": "Cô ấy đã được bổ nhiệm vào uỷ ban quy hoạch đô thị."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "The committee members voted unanimously to approve the budget.",
+          "example_vi": "Các thành viên uỷ ban đã bỏ phiếu nhất trí thông qua ngân sách."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "He serves on a committee that oversees local education.",
+          "example_vi": "Anh ấy phục vụ trong một uỷ ban giám sát giáo dục địa phương."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "The committee report was published earlier this morning.",
+          "example_vi": "Báo cáo của uỷ ban đã được công bố sáng sớm nay."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "A special committee was formed to investigate the incident.",
+          "example_vi": "Một uỷ ban đặc biệt đã được thành lập để điều tra vụ việc."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "The committee chair announced the results of the election.",
+          "example_vi": "Chủ tịch uỷ ban đã công bố kết quả của cuộc bầu cử."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "We need to present our findings to the committee.",
+          "example_vi": "Chúng ta cần trình bày những phát hiện của mình cho uỷ ban."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "The committee is responsible for organizing the annual event.",
+          "example_vi": "Uỷ ban chịu trách nhiệm tổ chức sự kiện thường niên."
+        },
+        {
+          "meaning_vi": "uỷ ban",
+          "example_en": "The committee decided to postpone the meeting until next week.",
+          "example_vi": "Uỷ ban đã quyết định hoãn cuộc họp đến tuần sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa uỷ ban, bổ sung 10 ví dụ phù hợp.",
+      "word": "committee",
+      "normalized_word": "committee",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The committee will meet tomorrow to discuss the new policy.",
+      "example_vi_clean": "Uỷ ban sẽ họp vào ngày mai để thảo luận về chính sách mới."
+    },
+    {
+      "id": 24822,
+      "quiz_meaning_vi": "chung",
+      "meaning_vi_clean": "chung; thông thường",
+      "examples_clean": [
+        {
+          "meaning_vi": "chung",
+          "example_en": "The two competitors have the common aim of winning.",
+          "example_vi": "Hai đối thủ có mục tiêu chung là giành chiến thắng."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "They share a common interest in classical music.",
+          "example_vi": "Họ có chung niềm đam mê với nhạc cổ điển."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "We have a common goal to improve our community.",
+          "example_vi": "Chúng ta có mục tiêu chung là cải thiện cộng đồng."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "The house has a common area for all residents.",
+          "example_vi": "Ngôi nhà có một khu vực chung cho tất cả cư dân."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "It is common to find sharks off this coast.",
+          "example_vi": "Việc tìm thấy cá mập ngoài khơi bờ biển này là rất thông thường."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "Colds are a common illness during the winter months.",
+          "example_vi": "Cảm lạnh là một căn bệnh thông thường trong những tháng mùa đông."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "It is common practice to shake hands when meeting.",
+          "example_vi": "Bắt tay khi gặp mặt là một thói quen thông thường."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "This is a common mistake made by many students.",
+          "example_vi": "Đây là một lỗi thông thường mà nhiều học sinh mắc phải."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "The common cold is usually not very serious.",
+          "example_vi": "Bệnh cảm lạnh thông thường thường không quá nghiêm trọng."
+        },
+        {
+          "meaning_vi": "thông thường",
+          "example_en": "It is common for people to feel nervous before a test.",
+          "example_vi": "Việc mọi người cảm thấy lo lắng trước một bài kiểm tra là điều thông thường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "common",
+      "normalized_word": "common",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The two competitors have the common aim of winning.",
+      "example_vi_clean": "Hai đối thủ có mục tiêu chung là giành chiến thắng."
+    },
+    {
+      "id": 24823,
+      "quiz_meaning_vi": "truyền đạt",
+      "meaning_vi_clean": "truyền đạt; giao thiệp",
+      "examples_clean": [
+        {
+          "meaning_vi": "truyền đạt",
+          "example_en": "It is important to communicate your ideas clearly.",
+          "example_vi": "Việc truyền đạt ý tưởng của bạn một cách rõ ràng là rất quan trọng."
+        },
+        {
+          "meaning_vi": "truyền đạt",
+          "example_en": "The teacher communicated the instructions to the class.",
+          "example_vi": "Giáo viên đã truyền đạt các hướng dẫn cho cả lớp."
+        },
+        {
+          "meaning_vi": "truyền đạt",
+          "example_en": "He struggled to communicate his feelings in words.",
+          "example_vi": "Anh ấy gặp khó khăn trong việc truyền đạt cảm xúc của mình bằng lời nói."
+        },
+        {
+          "meaning_vi": "truyền đạt",
+          "example_en": "The news was communicated to the public immediately.",
+          "example_vi": "Tin tức đã được truyền đạt đến công chúng ngay lập tức."
+        },
+        {
+          "meaning_vi": "giao thiệp",
+          "example_en": "They communicate regularly via email and phone.",
+          "example_vi": "Họ giao thiệp thường xuyên qua email và điện thoại."
+        },
+        {
+          "meaning_vi": "giao thiệp",
+          "example_en": "It is difficult to communicate with people who speak a different language.",
+          "example_vi": "Thật khó để giao thiệp với những người nói ngôn ngữ khác."
+        },
+        {
+          "meaning_vi": "giao thiệp",
+          "example_en": "Animals communicate with each other through sounds.",
+          "example_vi": "Động vật giao thiệp với nhau thông qua âm thanh."
+        },
+        {
+          "meaning_vi": "giao thiệp",
+          "example_en": "We need to find better ways to communicate with our clients.",
+          "example_vi": "Chúng ta cần tìm những cách tốt hơn để giao thiệp với khách hàng."
+        },
+        {
+          "meaning_vi": "giao thiệp",
+          "example_en": "They have been communicating for several years.",
+          "example_vi": "Họ đã giao thiệp với nhau được vài năm rồi."
+        },
+        {
+          "meaning_vi": "giao thiệp",
+          "example_en": "Modern technology makes it easier to communicate across the world.",
+          "example_vi": "Công nghệ hiện đại giúp việc giao thiệp trên khắp thế giới trở nên dễ dàng hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ. Giữ 2 nghĩa phổ biến.",
+      "word": "communicate",
+      "normalized_word": "communicate",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It is important to communicate your ideas clearly.",
+      "example_vi_clean": "Việc truyền đạt ý tưởng của bạn một cách rõ ràng là rất quan trọng."
+    },
+    {
+      "id": 24824,
+      "quiz_meaning_vi": "sự truyền đạt",
+      "meaning_vi_clean": "sự truyền đạt; sự liên lạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự truyền đạt",
+          "example_en": "Effective communication is essential for a successful team.",
+          "example_vi": "Sự truyền đạt hiệu quả là điều cần thiết cho một đội ngũ thành công."
+        },
+        {
+          "meaning_vi": "sự truyền đạt",
+          "example_en": "The communication of information must be accurate.",
+          "example_vi": "Sự truyền đạt thông tin phải chính xác."
+        },
+        {
+          "meaning_vi": "sự truyền đạt",
+          "example_en": "Clear communication helps avoid misunderstandings.",
+          "example_vi": "Sự truyền đạt rõ ràng giúp tránh những hiểu lầm."
+        },
+        {
+          "meaning_vi": "sự truyền đạt",
+          "example_en": "The communication of his ideas changed the whole project.",
+          "example_vi": "Sự truyền đạt các ý tưởng của anh ấy đã thay đổi toàn bộ dự án."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "We have lost communication with the base.",
+          "example_vi": "Chúng tôi đã mất sự liên lạc với căn cứ."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "They maintain regular communication by email.",
+          "example_vi": "Họ duy trì sự liên lạc thường xuyên qua email."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "The company improved its internal communication systems.",
+          "example_vi": "Công ty đã cải thiện các hệ thống sự liên lạc nội bộ."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "Communication between the two departments is very poor.",
+          "example_vi": "Sự liên lạc giữa hai phòng ban rất kém."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "He is in constant communication with his family.",
+          "example_vi": "Anh ấy luôn giữ sự liên lạc với gia đình."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "The satellite provides a reliable means of communication.",
+          "example_vi": "Vệ tinh cung cấp một phương tiện sự liên lạc đáng tin cậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến nhất.",
+      "word": "communication",
+      "normalized_word": "communication",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Effective communication is essential for a successful team.",
+      "example_vi_clean": "Sự truyền đạt hiệu quả là điều cần thiết cho một đội ngũ thành công."
+    },
+    {
+      "id": 24825,
+      "quiz_meaning_vi": "công ty",
+      "meaning_vi_clean": "công ty; bạn bè",
+      "examples_clean": [
+        {
+          "meaning_vi": "công ty",
+          "example_en": "She works for a large international company.",
+          "example_vi": "Cô ấy làm việc cho một công ty quốc tế lớn."
+        },
+        {
+          "meaning_vi": "công ty",
+          "example_en": "The company is planning to expand its business.",
+          "example_vi": "Công ty đang có kế hoạch mở rộng kinh doanh."
+        },
+        {
+          "meaning_vi": "công ty",
+          "example_en": "He started his own company last year.",
+          "example_vi": "Anh ấy đã thành lập công ty riêng vào năm ngoái."
+        },
+        {
+          "meaning_vi": "công ty",
+          "example_en": "The company provides excellent benefits to its employees.",
+          "example_vi": "Công ty cung cấp những phúc lợi tuyệt vời cho nhân viên."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "I enjoy your company very much.",
+          "example_vi": "Tôi rất thích có bạn bè là bạn."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "She is good company when you are feeling sad.",
+          "example_vi": "Cô ấy là bạn bè tốt khi bạn cảm thấy buồn."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "He prefers the company of his close friends.",
+          "example_vi": "Anh ấy thích bạn bè là những người bạn thân thiết."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "I don't like being in the company of strangers.",
+          "example_vi": "Tôi không thích ở cùng bạn bè là người lạ."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "They enjoyed the company of their guests all evening.",
+          "example_vi": "Họ đã tận hưởng bạn bè là những vị khách suốt cả buổi tối."
+        },
+        {
+          "meaning_vi": "bạn bè",
+          "example_en": "It is nice to have good company on a long trip.",
+          "example_vi": "Thật tuyệt khi có bạn bè tốt trong một chuyến đi dài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Giữ 2 nghĩa phổ biến.",
+      "word": "company",
+      "normalized_word": "company",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She works for a large international company.",
+      "example_vi_clean": "Cô ấy làm việc cho một công ty quốc tế lớn."
+    },
+    {
+      "id": 24826,
+      "quiz_meaning_vi": "so sánh",
+      "meaning_vi_clean": "so sánh",
+      "examples_clean": [
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "The comparative study shows significant differences.",
+          "example_vi": "Nghiên cứu so sánh cho thấy những khác biệt đáng kể."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "We need a comparative analysis of the two products.",
+          "example_vi": "Chúng ta cần một phân tích so sánh về hai sản phẩm này."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "This is a comparative approach to the problem.",
+          "example_vi": "Đây là một phương pháp so sánh đối với vấn đề này."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "The report provides a comparative view of the market.",
+          "example_vi": "Báo cáo cung cấp một cái nhìn so sánh về thị trường."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "Comparative literature is a fascinating field of study.",
+          "example_vi": "Văn học so sánh là một lĩnh vực nghiên cứu hấp dẫn."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "She made a comparative assessment of the two candidates.",
+          "example_vi": "Cô ấy đã thực hiện một đánh giá so sánh về hai ứng viên."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "The comparative data helps us understand the trends.",
+          "example_vi": "Dữ liệu so sánh giúp chúng ta hiểu được các xu hướng."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "He wrote a comparative essay on different cultures.",
+          "example_vi": "Anh ấy đã viết một bài luận so sánh về các nền văn hóa khác nhau."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "The comparative results were surprising to everyone.",
+          "example_vi": "Kết quả so sánh đã gây ngạc nhiên cho mọi người."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "We used a comparative method to test the theories.",
+          "example_vi": "Chúng tôi đã sử dụng một phương pháp so sánh để kiểm tra các lý thuyết."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa so sánh, bổ sung 10 ví dụ.",
+      "word": "comparative",
+      "normalized_word": "comparative",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The comparative study shows significant differences.",
+      "example_vi_clean": "Nghiên cứu so sánh cho thấy những khác biệt đáng kể."
+    },
+    {
+      "id": 24827,
+      "quiz_meaning_vi": "so sánh",
+      "meaning_vi_clean": "so sánh",
+      "examples_clean": [
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "Compare the tiger's coloration with that of the zebra.",
+          "example_vi": "Hãy so sánh màu sắc của con hổ với con ngựa vằn."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "It is hard to compare these two different situations.",
+          "example_vi": "Thật khó để so sánh hai tình huống khác biệt này."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "Don't compare yourself to others too much.",
+          "example_vi": "Đừng so sánh bản thân với người khác quá nhiều."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "We compared the prices before making a decision.",
+          "example_vi": "Chúng tôi đã so sánh giá cả trước khi đưa ra quyết định."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "Astronomers have compared comets to dirty snowballs.",
+          "example_vi": "Các nhà thiên văn học đã so sánh sao chổi với những quả cầu tuyết bẩn."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "You cannot compare his talent with hers.",
+          "example_vi": "Bạn không thể so sánh tài năng của anh ấy với cô ấy."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "The teacher asked us to compare the two poems.",
+          "example_vi": "Giáo viên yêu cầu chúng tôi so sánh hai bài thơ."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "It is unfair to compare them directly.",
+          "example_vi": "Thật không công bằng khi so sánh họ trực tiếp."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "We compared our notes after the lecture.",
+          "example_vi": "Chúng tôi đã so sánh ghi chú của mình sau bài giảng."
+        },
+        {
+          "meaning_vi": "so sánh",
+          "example_en": "The results compare favorably with last year's.",
+          "example_vi": "Kết quả so sánh khá tốt so với năm ngoái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành động từ. Giữ nghĩa so sánh.",
+      "word": "compare",
+      "normalized_word": "compare",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Compare the tiger's coloration with that of the zebra.",
+      "example_vi_clean": "Hãy so sánh màu sắc của con hổ với con ngựa vằn."
+    },
+    {
+      "id": 24828,
+      "quiz_meaning_vi": "sự cạnh tranh",
+      "meaning_vi_clean": "sự cạnh tranh; cuộc thi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cạnh tranh",
+          "example_en": "The competition for this job is strong.",
+          "example_vi": "Sự cạnh tranh cho công việc này rất mạnh mẽ."
+        },
+        {
+          "meaning_vi": "sự cạnh tranh",
+          "example_en": "There is a lot of competition in the market.",
+          "example_vi": "Có rất nhiều sự cạnh tranh trên thị trường."
+        },
+        {
+          "meaning_vi": "sự cạnh tranh",
+          "example_en": "Healthy competition can improve performance.",
+          "example_vi": "Sự cạnh tranh lành mạnh có thể cải thiện hiệu suất."
+        },
+        {
+          "meaning_vi": "sự cạnh tranh",
+          "example_en": "The company faces stiff competition from abroad.",
+          "example_vi": "Công ty phải đối mặt với sự cạnh tranh gay gắt từ nước ngoài."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "The newspaper is featuring a competition to win a car.",
+          "example_vi": "Tờ báo đang tổ chức một cuộc thi để giành một chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "She entered a singing competition last month.",
+          "example_vi": "Cô ấy đã tham gia một cuộc thi hát vào tháng trước."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "He won first prize in the national competition.",
+          "example_vi": "Anh ấy đã giành giải nhất trong cuộc thi quốc gia."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "The competition will be held in the city center.",
+          "example_vi": "Cuộc thi sẽ được tổ chức tại trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "Many students signed up for the math competition.",
+          "example_vi": "Nhiều học sinh đã đăng ký tham gia cuộc thi toán."
+        },
+        {
+          "meaning_vi": "cuộc thi",
+          "example_en": "The final round of the competition is tomorrow.",
+          "example_vi": "Vòng chung kết của cuộc thi là vào ngày mai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến nhất.",
+      "word": "competition",
+      "normalized_word": "competition",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The competition for this job is strong.",
+      "example_vi_clean": "Sự cạnh tranh cho công việc này rất mạnh mẽ."
+    },
+    {
+      "id": 24829,
+      "quiz_meaning_vi": "phàn nàn",
+      "meaning_vi_clean": "phàn nàn",
+      "examples_clean": [
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "Joe was always complaining about the noise made by his neighbours.",
+          "example_vi": "Joe luôn phàn nàn về tiếng ồn do hàng xóm gây ra."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "She complained about the poor service at the restaurant.",
+          "example_vi": "Cô ấy phàn nàn về dịch vụ kém tại nhà hàng."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "Don't complain if you don't want to help.",
+          "example_vi": "Đừng phàn nàn nếu bạn không muốn giúp đỡ."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "He complained that the room was too cold.",
+          "example_vi": "Anh ấy phàn nàn rằng căn phòng quá lạnh."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "Customers have complained about the new product.",
+          "example_vi": "Khách hàng đã phàn nàn về sản phẩm mới."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "I have nothing to complain about today.",
+          "example_vi": "Tôi không có gì để phàn nàn vào hôm nay."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "They complained to the manager about the delay.",
+          "example_vi": "Họ đã phàn nàn với quản lý về sự chậm trễ."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "Stop complaining and start working.",
+          "example_vi": "Ngừng phàn nàn và bắt đầu làm việc đi."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "She is always complaining about her workload.",
+          "example_vi": "Cô ấy luôn phàn nàn về khối lượng công việc của mình."
+        },
+        {
+          "meaning_vi": "phàn nàn",
+          "example_en": "He complained of a headache all morning.",
+          "example_vi": "Anh ấy phàn nàn về việc bị đau đầu suốt cả buổi sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ. Giữ nghĩa phàn nàn.",
+      "word": "complain",
+      "normalized_word": "complain",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Joe was always complaining about the noise made by his neighbours.",
+      "example_vi_clean": "Joe luôn phàn nàn về tiếng ồn do hàng xóm gây ra."
+    },
+    {
+      "id": 24830,
+      "quiz_meaning_vi": "lời phàn nàn",
+      "meaning_vi_clean": "lời phàn nàn",
+      "examples_clean": [
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "I have no complaints about the quality of his work.",
+          "example_vi": "Tôi không có lời phàn nàn nào về chất lượng công việc của anh ấy."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "The manager received a formal complaint from a customer.",
+          "example_vi": "Quản lý đã nhận được một lời phàn nàn chính thức từ khách hàng."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "She made a complaint about the noise.",
+          "example_vi": "Cô ấy đã đưa ra một lời phàn nàn về tiếng ồn."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "We are dealing with a serious complaint today.",
+          "example_vi": "Chúng tôi đang giải quyết một lời phàn nàn nghiêm trọng hôm nay."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "He ignored the customer's complaint.",
+          "example_vi": "Anh ấy đã phớt lờ lời phàn nàn của khách hàng."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "The company takes every complaint seriously.",
+          "example_vi": "Công ty coi trọng mọi lời phàn nàn."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "There have been many complaints about the new policy.",
+          "example_vi": "Đã có nhiều lời phàn nàn về chính sách mới."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "She filed a complaint with the local authorities.",
+          "example_vi": "Cô ấy đã gửi một lời phàn nàn đến chính quyền địa phương."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "His only complaint was the lack of time.",
+          "example_vi": "Lời phàn nàn duy nhất của anh ấy là sự thiếu hụt thời gian."
+        },
+        {
+          "meaning_vi": "lời phàn nàn",
+          "example_en": "We need to address this complaint immediately.",
+          "example_vi": "Chúng ta cần giải quyết lời phàn nàn này ngay lập tức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa lời phàn nàn, bổ sung 10 ví dụ.",
+      "word": "complaint",
+      "normalized_word": "complaint",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have no complaints about the quality of his work.",
+      "example_vi_clean": "Tôi không có lời phàn nàn nào về chất lượng công việc của anh ấy."
+    }
+  ]
+}

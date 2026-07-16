@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-075",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24741,
+      "word": "boss",
+      "normalized_word": "boss",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  động từ",
+      "phonetic": "/bɔs/",
+      "primary_meaning_vi": "ông chủ",
+      "meaning_vi": "ông chủ, thủ trưởng; ông trùm (của một tổ chức chính trị); tay cừ (trong môn gì); nhà vô địch; chỉ huy, điều khiển; cái bướu; phần lồi, vấu lồi; thế cán, thế bướu; chỗ xây nổi lên; bos",
+      "example_en": "Chat turned to whisper when the boss entered the conference room.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They named him boss because he had good leadership skills.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He is the Republican boss in Kentucky.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There's no olive oil; will sunflower oil do? — I'll have to run that by the boss.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24742,
+      "word": "bra",
+      "normalized_word": "bra",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/brɑ:/",
+      "primary_meaning_vi": "của brassière) cái nịt vú",
+      "meaning_vi": "((viết tắt) của brassière) cái nịt vú, cái yếm",
+      "example_en": "Take it easy, bra!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24743,
+      "word": "brainstorm",
+      "normalized_word": "brainstorm",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự náo động tâm tư bất thần dữ dội",
+      "meaning_vi": "sự náo động tâm tư bất thần dữ dội; sự xúc động mãnh liệt; khoảnh khắc quẫn trí; khoảnh khắc rối trí; như brainwave; vận dụng trí não để tìm hiểu hoặc giải quyết một vấn đề; động não",
+      "example_en": "I had been working on the problem for weeks, and then I had a brainstorm and saw that the solution was easy.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24744,
+      "word": "brake",
+      "normalized_word": "brake",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/breik/",
+      "primary_meaning_vi": "bụi cây",
+      "meaning_vi": "bụi cây; bracken; xe vực ngựa (tập cho ngựa kéo xe); xe ngựa không mui; máy đập (lanh, gai dầu); cái bừa to ((cũng) brake-harrow); đập (lanh, gai dầu); cái hãm, cái phanh; toa phanh ((cũng) brake-van); hãm lại, phanh lại; hãm phanh",
+      "example_en": "The farmer's son brakes the flax while mother brakes the bread dough",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She slammed the brakes when she saw a child run in front of the car.",
+          "example_vi": null
+        },
+        {
+          "example_en": "If the vase falls to the floor, it might break.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can you break a hundred-dollar bill for me?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24745,
+      "word": "branch",
+      "normalized_word": "branch",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/brɑ:ntʃ/",
+      "primary_meaning_vi": "cành cây",
+      "meaning_vi": "cành cây; nhánh (sông); ngả (đường)...; chi (của một dòng họ...); chi nhánh (ngân hàng...); ngành (sản xuất; mậu dịch...); root; + out,  forth) đâm cành, đâm nhánh; phân cành, chia ngã; tách ra, phân nhánh; bỏ nhiều vốn ra kinh doanh; mở rộng các chi nhánh",
+      "example_en": "the branch of an antler, a chandelier, or a railway",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the branches of a hyperbola",
+          "example_vi": null
+        },
+        {
+          "example_en": "Our main branch is downtown, and we have branches in all major suburbs.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the English branch of a family",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24746,
+      "word": "brand",
+      "normalized_word": "brand",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/brænd/",
+      "primary_meaning_vi": "nhãn (hàng hoá)",
+      "meaning_vi": "nhãn (hàng hoá); loại hàng; dấu sắt nung (đóng vào vai tội nhân); vết dấu sắt nung; vết nhơ, vết nhục; khúc củi đang cháy dở; cây đuốc; thanh gươm, thanh kiếm; bệnh gỉ (cây); cứu ra khỏi tình trạng bị huỷ diệt; đóng nhãn (hàng hoá); đóng dấu bằng sắt nung (lên vai tội nhân); đốt bằng sắt nung; làm nhục, làm ô danh; khắc sâu (vào trí nhớ); gọi (ai) là, quy (ai) là",
+      "example_en": "To burn something to brands and ashes.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Some brands of breakfast cereal contain a lot of sugar.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I didn't appreciate his particular brand of flattery.",
+          "example_vi": null
+        },
+        {
+          "example_en": "When they caught him, he was branded and then locked up.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24747,
+      "word": "brave",
+      "normalized_word": "brave",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/breiv/",
+      "primary_meaning_vi": "chiến sĩ da đỏ",
+      "meaning_vi": "chiến sĩ da đỏ; gan dạ, can đảm, dũng cảm; ,  (văn học) đẹp lộng lẫy, sang trọng; hào hoa phong nhã; bất chấp, không sợ, xem khinh; đương đầu với; bất chấp dị nghị, cóc cần",
+      "example_en": "After braving tricks on the high-dive, he braved a jump off the first diving platform.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24748,
+      "word": "break",
+      "normalized_word": "break",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/breik/",
+      "primary_meaning_vi": "xe vực ngựa (tập cho ngựa kéo xe)",
+      "meaning_vi": "xe vực ngựa (tập cho ngựa kéo xe); xe ngựa không mui; sự gãy, sự kéo, sự đứt, sự ngắt; chỗ vỡ, chỗ nứt, chỗ rạn; sự nghỉ, sự dừng lại, sự gián đoạn; giờ nghỉ, giờ ra chơi, giờ giải lao; sự cắt đứt (quan hệ), sự tuyệt giao; sự lỡ lời; sự lầm lỗi; sự vỡ nợ, sự bị phá sản; sự thay đổi (thòi tiết); sự thụt giá thình lình; dịp may, cơ hội; sự đổi giọng; sự chuyển âm vực; mục xen (vào chương trình đang phát) (rađiô, truyền hình); tia hy vọng; bình minh, rạng đông; làm gãy, bẻ gãy, làm đứt, làm vỡ, đập vỡ; cắt, ngắt, làm gián đoạn, ngừng phá; xua tan, làm tan tác; phạm, phạm vi, xâm phạm; truyền đạt, báo (tin); làm suy sụp, làm nhụt (ý chí...), làm mất hết; ngăn đỡ, làm yếu đi, làm nhẹ đi; làm cho thuần thục; tập luyện; đập tan; đàn áp, trấn áp; sửa chữa; mở, mở tung ra, cạy tung ra; gãy, đứt, vỡ; chạy tán loạn, tan tác; ló ra, hé ra, hiện ra; thoát khỏi; sổ ra; ((thể dục,thể thao)) buông ra (quyền Anh); suy nhược, yếu đi; suy sụp, sa sút, phá sản; thay đổi; vỡ tiếng, nức nở, nghẹn ngào (tiếng nói); đột nhiên làm; phá lên; cắt đứt quan hệ, tuyệt giao; phá mà vào, phá mà ra, xông vào nhà; phá cửa vào nhà, bẻ khoá vào nhà; trốn thoát, thoát khỏi; bẻ gãy, rời ra; đập vỡ, đạp tan, đạp đổ, xô đổ; sụp đổ, đổ vỡ tan tành; suy nhược, kiệt sức; làm sa sút, làm suy nhược (sức khoẻ, tinh thần...); vỡ nợ, phá sản, thất cơ lỡ vận; bị pan, bị hỏng (xe cộ); phân ra từng món (chi tiêu...); (hoá) phân nhỏ, phân tích; vỡ ra, nổ ra; vọt ra, bắn ra, tuôn ra; xông vào, phá mà vào (nhà...); ngắt (lời); chặn (lời); cắt ngang (câu chuyện); can thiệp vào; tập luyện (ngựa...); cho vào khuôn phép, dạy dỗ (trẻ con...); rời ra, lìa ra, long ra, bị gãy rời ra; ngừng sững lại, đột nhiên ngừng lại, thôi; cắt đứt quan hệ, tuyệt giao; bẻ ra, bẻ tung ra; nổ bùng, nổ ra; nổi mụn, sùi đỏ lên (mặt); trốn thoát, thoát khỏi, vượt (ngục...); kêu to, phá lên (cười...); mở và bốc dỡ (kho hàng...); kéo lên và mở tung ra (cờ); chạy toán loạn, tan tác, tản ra; giải tán (hội nghị, đám đông, mây...); chia lìa, chia ly, lìa nhau; nghỉ hè (trường học); sụt lở; làm sụt lở (đường sá); thay đổi (thời tiết); suy yếu đi (người); đập vụn, đập nát; ăn ở (nhà ai) được (ai) mời ăn; even; ice; lance; beck; nói (viết) sai ngữ pháp; wheel",
+      "example_en": "The femur has a clean break and so should heal easily.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He waited minutes for a break in the traffic to cross the highway.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Let’s take a five-minute break.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a weekend break on the Isle of Wight",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24749,
+      "word": "breeze",
+      "normalized_word": "breeze",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bri:z/",
+      "primary_meaning_vi": "ruồi trâu",
+      "meaning_vi": "ruồi trâu; than cám; gió nhẹ; gió brizơ; sự cãi cọ; sự nổi cáu; ,  (thông tục) làm một việc mất công vô ích, làm một việc thừa; phát cáu, nối cáu; sợ hãi; thổi nhẹ; đi lướt qua, chạy lướt qua (như gió); thổi mạnh thêm (gió)",
+      "example_en": "The breeze rustled the papers on her desk.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After studying Latin, Spanish was a breeze.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The discovery produced a breeze.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24750,
+      "word": "bride",
+      "normalized_word": "bride",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/braid/",
+      "primary_meaning_vi": "cô dâu",
+      "meaning_vi": "cô dâu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

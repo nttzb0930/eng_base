@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26431,
+      "quiz_meaning_vi": "chăm chú",
+      "meaning_vi_clean": "chăm chú; ân cần",
+      "examples_clean": [
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "She is an attentive listener who always focuses on what others say.",
+          "example_vi": "Cô ấy là một người lắng nghe chăm chú, luôn tập trung vào những gì người khác nói."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "The students were very attentive during the professor's lecture.",
+          "example_vi": "Các sinh viên rất chăm chú trong suốt bài giảng của giáo sư."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "He gave an attentive look at the painting to understand its details.",
+          "example_vi": "Anh ấy nhìn bức tranh một cách chăm chú để hiểu các chi tiết của nó."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "The audience remained attentive throughout the entire performance.",
+          "example_vi": "Khán giả vẫn chăm chú theo dõi trong suốt buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "ân cần",
+          "example_en": "He is a very attentive husband who always cares for his wife's needs.",
+          "example_vi": "Anh ấy là một người chồng rất ân cần, luôn quan tâm đến nhu cầu của vợ mình."
+        },
+        {
+          "meaning_vi": "ân cần",
+          "example_en": "The staff at the hotel were extremely attentive to our requests.",
+          "example_vi": "Nhân viên tại khách sạn vô cùng ân cần với các yêu cầu của chúng tôi."
+        },
+        {
+          "meaning_vi": "ân cần",
+          "example_en": "She was very attentive to her elderly parents during their illness.",
+          "example_vi": "Cô ấy rất ân cần chăm sóc cha mẹ già trong thời gian họ bị bệnh."
+        },
+        {
+          "meaning_vi": "ân cần",
+          "example_en": "The host was very attentive, making sure everyone had enough to eat.",
+          "example_vi": "Người chủ nhà rất ân cần, đảm bảo mọi người đều có đủ đồ ăn."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "She watched the bird with an attentive eye as it built its nest.",
+          "example_vi": "Cô ấy quan sát con chim một cách chăm chú khi nó xây tổ."
+        },
+        {
+          "meaning_vi": "ân cần",
+          "example_en": "His attentive nature made everyone feel welcome at the party.",
+          "example_vi": "Bản tính ân cần của anh ấy khiến mọi người cảm thấy được chào đón tại bữa tiệc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ cho đủ 10 câu, đảm bảo phân bổ nghĩa hợp lý.",
+      "word": "attentive",
+      "normalized_word": "attentive",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is an attentive listener who always focuses on what others say.",
+      "example_vi_clean": "Cô ấy là một người lắng nghe chăm chú, luôn tập trung vào những gì người khác nói."
+    },
+    {
+      "id": 26432,
+      "quiz_meaning_vi": "chăm chú",
+      "meaning_vi_clean": "chăm chú",
+      "examples_clean": [
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "The children listened attentively to the teacher's story.",
+          "example_vi": "Lũ trẻ lắng nghe chăm chú câu chuyện của cô giáo."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "He watched the game attentively from the sidelines.",
+          "example_vi": "Anh ấy theo dõi trận đấu một cách chăm chú từ bên lề."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "She read the letter attentively to catch every detail.",
+          "example_vi": "Cô ấy đọc bức thư một cách chăm chú để nắm bắt mọi chi tiết."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "The audience sat attentively while the speaker presented his ideas.",
+          "example_vi": "Khán giả ngồi chăm chú trong khi diễn giả trình bày ý tưởng của mình."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "He studied the map attentively before starting the journey.",
+          "example_vi": "Anh ấy nghiên cứu bản đồ một cách chăm chú trước khi bắt đầu hành trình."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "The doctor listened attentively to the patient's symptoms.",
+          "example_vi": "Bác sĩ lắng nghe chăm chú các triệu chứng của bệnh nhân."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "She watched the chef cook attentively to learn the recipe.",
+          "example_vi": "Cô ấy quan sát đầu bếp nấu ăn một cách chăm chú để học công thức."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "The cat watched the mouse attentively from the corner.",
+          "example_vi": "Con mèo quan sát con chuột một cách chăm chú từ trong góc."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "They followed the instructions attentively to avoid mistakes.",
+          "example_vi": "Họ làm theo các hướng dẫn một cách chăm chú để tránh sai sót."
+        },
+        {
+          "meaning_vi": "chăm chú",
+          "example_en": "He examined the evidence attentively before making a decision.",
+          "example_vi": "Anh ấy kiểm tra bằng chứng một cách chăm chú trước khi đưa ra quyết định."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa nghĩa chăm chú.",
+      "word": "attentively",
+      "normalized_word": "attentively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The children listened attentively to the teacher's story.",
+      "example_vi_clean": "Lũ trẻ lắng nghe chăm chú câu chuyện của cô giáo."
+    },
+    {
+      "id": 26433,
+      "quiz_meaning_vi": "sự thu hút",
+      "meaning_vi_clean": "sự thu hút; sự hấp dẫn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thu hút",
+          "example_en": "The city's main attractiveness is its historic architecture.",
+          "example_vi": "Sự thu hút chính của thành phố là kiến trúc lịch sử của nó."
+        },
+        {
+          "meaning_vi": "sự thu hút",
+          "example_en": "The natural attractiveness of the beach draws many tourists.",
+          "example_vi": "Sự thu hút tự nhiên của bãi biển thu hút nhiều du khách."
+        },
+        {
+          "meaning_vi": "sự thu hút",
+          "example_en": "We discussed the attractiveness of the new investment plan.",
+          "example_vi": "Chúng tôi đã thảo luận về sự thu hút của kế hoạch đầu tư mới."
+        },
+        {
+          "meaning_vi": "sự thu hút",
+          "example_en": "The attractiveness of the job offer was hard to ignore.",
+          "example_vi": "Sự thu hút của lời mời làm việc đó thật khó mà bỏ qua."
+        },
+        {
+          "meaning_vi": "sự hấp dẫn",
+          "example_en": "She has a natural attractiveness that makes people like her.",
+          "example_vi": "Cô ấy có một sự hấp dẫn tự nhiên khiến mọi người yêu mến cô ấy."
+        },
+        {
+          "meaning_vi": "sự hấp dẫn",
+          "example_en": "The attractiveness of the product lies in its simple design.",
+          "example_vi": "Sự hấp dẫn của sản phẩm nằm ở thiết kế đơn giản của nó."
+        },
+        {
+          "meaning_vi": "sự hấp dẫn",
+          "example_en": "He talked about the attractiveness of living in the countryside.",
+          "example_vi": "Anh ấy nói về sự hấp dẫn của việc sống ở vùng nông thôn."
+        },
+        {
+          "meaning_vi": "sự hấp dẫn",
+          "example_en": "The attractiveness of the offer depends on the current market price.",
+          "example_vi": "Sự hấp dẫn của lời đề nghị phụ thuộc vào giá thị trường hiện tại."
+        },
+        {
+          "meaning_vi": "sự thu hút",
+          "example_en": "The park's attractiveness has increased after the renovation.",
+          "example_vi": "Sự thu hút của công viên đã tăng lên sau khi được cải tạo."
+        },
+        {
+          "meaning_vi": "sự hấp dẫn",
+          "example_en": "The attractiveness of the proposal convinced the board members.",
+          "example_vi": "Sự hấp dẫn của đề xuất đã thuyết phục được các thành viên hội đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "attractiveness",
+      "normalized_word": "attractiveness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The city's main attractiveness is its historic architecture.",
+      "example_vi_clean": "Sự thu hút chính của thành phố là kiến trúc lịch sử của nó."
+    },
+    {
+      "id": 26434,
+      "quiz_meaning_vi": "thuộc tính",
+      "meaning_vi_clean": "thuộc tính; quy cho",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc tính",
+          "example_en": "His finest attribute is his kindness.",
+          "example_vi": "Thuộc tính tốt nhất của anh ấy là lòng tốt."
+        },
+        {
+          "meaning_vi": "thuộc tính",
+          "example_en": "Patience is a key attribute for a good teacher.",
+          "example_vi": "Kiên nhẫn là một thuộc tính quan trọng của một giáo viên giỏi."
+        },
+        {
+          "meaning_vi": "thuộc tính",
+          "example_en": "The software allows you to change the file attribute.",
+          "example_vi": "Phần mềm cho phép bạn thay đổi thuộc tính của tệp tin."
+        },
+        {
+          "meaning_vi": "thuộc tính",
+          "example_en": "Courage is often considered a heroic attribute.",
+          "example_vi": "Lòng dũng cảm thường được coi là một thuộc tính anh hùng."
+        },
+        {
+          "meaning_vi": "quy cho",
+          "example_en": "She attributes her success to hard work.",
+          "example_vi": "Cô ấy quy cho thành công của mình là nhờ làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "quy cho",
+          "example_en": "Experts attribute the rise in temperature to climate change.",
+          "example_vi": "Các chuyên gia quy cho sự tăng nhiệt độ là do biến đổi khí hậu."
+        },
+        {
+          "meaning_vi": "quy cho",
+          "example_en": "He attributes his good health to a balanced diet.",
+          "example_vi": "Anh ấy quy cho sức khỏe tốt của mình là nhờ chế độ ăn uống cân bằng."
+        },
+        {
+          "meaning_vi": "quy cho",
+          "example_en": "They attribute the painting to a famous artist.",
+          "example_vi": "Họ quy cho bức tranh đó là của một họa sĩ nổi tiếng."
+        },
+        {
+          "meaning_vi": "thuộc tính",
+          "example_en": "Honesty is a positive attribute in any relationship.",
+          "example_vi": "Trung thực là một thuộc tính tích cực trong bất kỳ mối quan hệ nào."
+        },
+        {
+          "meaning_vi": "quy cho",
+          "example_en": "The team attributes their victory to excellent teamwork.",
+          "example_vi": "Cả đội quy cho chiến thắng của họ là nhờ tinh thần đồng đội tuyệt vời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang động từ cho nghĩa 'quy cho', bổ sung ví dụ.",
+      "word": "attribute",
+      "normalized_word": "attribute",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His finest attribute is his kindness.",
+      "example_vi_clean": "Thuộc tính tốt nhất của anh ấy là lòng tốt."
+    },
+    {
+      "id": 26435,
+      "quiz_meaning_vi": "không điển hình",
+      "meaning_vi_clean": "không điển hình",
+      "examples_clean": [
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "This is an atypical case that does not follow the usual pattern.",
+          "example_vi": "Đây là một trường hợp không điển hình không tuân theo mô hình thông thường."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "His behavior was atypical for someone in his position.",
+          "example_vi": "Hành vi của anh ấy không điển hình đối với một người ở vị trí của anh ấy."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "The weather this week has been atypical for the season.",
+          "example_vi": "Thời tiết tuần này không điển hình cho mùa này."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "It was an atypical response to such a simple question.",
+          "example_vi": "Đó là một phản ứng không điển hình cho một câu hỏi đơn giản như vậy."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "The symptoms were atypical, making the diagnosis difficult.",
+          "example_vi": "Các triệu chứng không điển hình, khiến việc chẩn đoán trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "This is an atypical example of modern architecture.",
+          "example_vi": "Đây là một ví dụ không điển hình của kiến trúc hiện đại."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "The results were atypical compared to previous studies.",
+          "example_vi": "Kết quả không điển hình so với các nghiên cứu trước đây."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "She made an atypical mistake during the presentation.",
+          "example_vi": "Cô ấy đã mắc một lỗi không điển hình trong bài thuyết trình."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "The plant's growth was atypical due to the lack of sunlight.",
+          "example_vi": "Sự phát triển của cây không điển hình do thiếu ánh sáng mặt trời."
+        },
+        {
+          "meaning_vi": "không điển hình",
+          "example_en": "His reaction was atypical, showing surprise instead of anger.",
+          "example_vi": "Phản ứng của anh ấy không điển hình, thể hiện sự ngạc nhiên thay vì tức giận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung 10 ví dụ.",
+      "word": "atypical",
+      "normalized_word": "atypical",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is an atypical case that does not follow the usual pattern.",
+      "example_vi_clean": "Đây là một trường hợp không điển hình không tuân theo mô hình thông thường."
+    },
+    {
+      "id": 26436,
+      "quiz_meaning_vi": "cà tím",
+      "meaning_vi_clean": "cà tím",
+      "examples_clean": [
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "I bought a fresh aubergine at the market today.",
+          "example_vi": "Tôi đã mua một quả cà tím tươi ở chợ hôm nay."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "She cooked a delicious dish using aubergine and tomatoes.",
+          "example_vi": "Cô ấy đã nấu một món ăn ngon sử dụng cà tím và cà chua."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "Aubergine is a key ingredient in many Mediterranean recipes.",
+          "example_vi": "Cà tím là một nguyên liệu chính trong nhiều công thức nấu ăn Địa Trung Hải."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "He grilled the aubergine slices until they were soft.",
+          "example_vi": "Anh ấy nướng các lát cà tím cho đến khi chúng mềm."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "The recipe calls for two large aubergines.",
+          "example_vi": "Công thức yêu cầu hai quả cà tím lớn."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "We grew some aubergines in our garden this summer.",
+          "example_vi": "Chúng tôi đã trồng vài quả cà tím trong vườn mùa hè này."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "Aubergine can be roasted, fried, or steamed.",
+          "example_vi": "Cà tím có thể được nướng, chiên hoặc hấp."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "She added some chopped aubergine to the vegetable stew.",
+          "example_vi": "Cô ấy thêm một ít cà tím thái nhỏ vào món hầm rau củ."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "The color of the aubergine is a deep purple.",
+          "example_vi": "Màu của quả cà tím là màu tím đậm."
+        },
+        {
+          "meaning_vi": "cà tím",
+          "example_en": "He doesn't like the taste of aubergine very much.",
+          "example_vi": "Anh ấy không thích vị của cà tím lắm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "aubergine",
+      "normalized_word": "aubergine",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought a fresh aubergine at the market today.",
+      "example_vi_clean": "Tôi đã mua một quả cà tím tươi ở chợ hôm nay."
+    },
+    {
+      "id": 26437,
+      "quiz_meaning_vi": "kiểm tra",
+      "meaning_vi_clean": "kiểm tra",
+      "examples_clean": [
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "The company will audit its financial records next month.",
+          "example_vi": "Công ty sẽ kiểm tra các hồ sơ tài chính vào tháng tới."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "They hired an expert to audit the accounts.",
+          "example_vi": "Họ đã thuê một chuyên gia để kiểm tra các tài khoản."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "The government decided to audit the department's spending.",
+          "example_vi": "Chính phủ quyết định kiểm tra chi tiêu của bộ phận này."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "We need to audit the system to ensure it is secure.",
+          "example_vi": "Chúng ta cần kiểm tra hệ thống để đảm bảo nó an toàn."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "The annual audit revealed some errors in the report.",
+          "example_vi": "Cuộc kiểm tra hàng năm đã tiết lộ một số lỗi trong báo cáo."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "An independent firm was brought in to audit the books.",
+          "example_vi": "Một công ty độc lập đã được mời đến để kiểm tra sổ sách."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "The tax office will audit our business records.",
+          "example_vi": "Cơ quan thuế sẽ kiểm tra hồ sơ kinh doanh của chúng tôi."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "He is responsible for the audit of all company assets.",
+          "example_vi": "Anh ấy chịu trách nhiệm kiểm tra tất cả tài sản của công ty."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "The audit showed that the funds were used correctly.",
+          "example_vi": "Cuộc kiểm tra cho thấy các quỹ đã được sử dụng đúng cách."
+        },
+        {
+          "meaning_vi": "kiểm tra",
+          "example_en": "They are preparing for an external audit of their operations.",
+          "example_vi": "Họ đang chuẩn bị cho một cuộc kiểm tra bên ngoài về các hoạt động của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang động từ cho nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "audit",
+      "normalized_word": "audit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The company will audit its financial records next month.",
+      "example_vi_clean": "Công ty sẽ kiểm tra các hồ sơ tài chính vào tháng tới."
+    },
+    {
+      "id": 26438,
+      "quiz_meaning_vi": "thử giọng",
+      "meaning_vi_clean": "thử giọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "I have an audition for a new play tomorrow.",
+          "example_vi": "Tôi có một buổi thử giọng cho một vở kịch mới vào ngày mai."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "She went to several auditions before getting the part.",
+          "example_vi": "Cô ấy đã đi thử giọng vài lần trước khi nhận được vai diễn."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "The director will audition new actors next week.",
+          "example_vi": "Đạo diễn sẽ thử giọng các diễn viên mới vào tuần tới."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "He prepared carefully for his audition.",
+          "example_vi": "Anh ấy đã chuẩn bị kỹ lưỡng cho buổi thử giọng của mình."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "Many singers auditioned for the lead role.",
+          "example_vi": "Nhiều ca sĩ đã thử giọng cho vai chính."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "The audition process was very competitive.",
+          "example_vi": "Quá trình thử giọng rất cạnh tranh."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "She was nervous during her first audition.",
+          "example_vi": "Cô ấy đã rất lo lắng trong buổi thử giọng đầu tiên."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "They are holding auditions for the school musical.",
+          "example_vi": "Họ đang tổ chức các buổi thử giọng cho vở nhạc kịch của trường."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "He did a great job at his audition yesterday.",
+          "example_vi": "Anh ấy đã làm rất tốt trong buổi thử giọng hôm qua."
+        },
+        {
+          "meaning_vi": "thử giọng",
+          "example_en": "The casting director was impressed by her audition.",
+          "example_vi": "Đạo diễn tuyển chọn đã rất ấn tượng với buổi thử giọng của cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Tập trung vào nghĩa thử giọng, bổ sung 10 ví dụ.",
+      "word": "audition",
+      "normalized_word": "audition",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have an audition for a new play tomorrow.",
+      "example_vi_clean": "Tôi có một buổi thử giọng cho một vở kịch mới vào ngày mai."
+    },
+    {
+      "id": 26439,
+      "quiz_meaning_vi": "cho phép",
+      "meaning_vi_clean": "cho phép; ủy quyền",
+      "examples_clean": [
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The manager authorized the extra budget for the project.",
+          "example_vi": "Người quản lý đã cho phép ngân sách bổ sung cho dự án."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The law authorizes the police to search the premises.",
+          "example_vi": "Luật pháp cho phép cảnh sát khám xét cơ sở này."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The school board authorized the new curriculum.",
+          "example_vi": "Hội đồng trường đã cho phép áp dụng chương trình giảng dạy mới."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "Only the director can authorize these payments.",
+          "example_vi": "Chỉ giám đốc mới có thể cho phép các khoản thanh toán này."
+        },
+        {
+          "meaning_vi": "ủy quyền",
+          "example_en": "I have authorized my assistant to sign the documents.",
+          "example_vi": "Tôi đã ủy quyền cho trợ lý của mình ký các tài liệu."
+        },
+        {
+          "meaning_vi": "ủy quyền",
+          "example_en": "The board authorized the CEO to negotiate the deal.",
+          "example_vi": "Hội đồng đã ủy quyền cho CEO đàm phán thỏa thuận."
+        },
+        {
+          "meaning_vi": "ủy quyền",
+          "example_en": "She authorized her lawyer to act on her behalf.",
+          "example_vi": "Cô ấy đã ủy quyền cho luật sư của mình hành động thay mặt cô ấy."
+        },
+        {
+          "meaning_vi": "ủy quyền",
+          "example_en": "The government authorized the committee to investigate the matter.",
+          "example_vi": "Chính phủ đã ủy quyền cho ủy ban điều tra vụ việc."
+        },
+        {
+          "meaning_vi": "cho phép",
+          "example_en": "The permit authorizes you to park here for two hours.",
+          "example_vi": "Giấy phép cho phép bạn đỗ xe ở đây trong hai giờ."
+        },
+        {
+          "meaning_vi": "ủy quyền",
+          "example_en": "He was authorized to make decisions during the meeting.",
+          "example_vi": "Anh ấy đã được ủy quyền đưa ra các quyết định trong cuộc họp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ.",
+      "word": "authorise",
+      "normalized_word": "authorise",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The manager authorized the extra budget for the project.",
+      "example_vi_clean": "Người quản lý đã cho phép ngân sách bổ sung cho dự án."
+    },
+    {
+      "id": 26440,
+      "quiz_meaning_vi": "có thẩm quyền",
+      "meaning_vi_clean": "có thẩm quyền; đáng tin cậy",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "She spoke in an authoritative tone that silenced the room.",
+          "example_vi": "Cô ấy nói bằng một giọng có thẩm quyền khiến cả căn phòng im lặng."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "The report was written by an authoritative body of experts.",
+          "example_vi": "Báo cáo được viết bởi một cơ quan có thẩm quyền gồm các chuyên gia."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "He has an authoritative manner that commands respect.",
+          "example_vi": "Anh ấy có phong thái có thẩm quyền khiến người khác phải tôn trọng."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "The decision was made by the authoritative figures in the organization.",
+          "example_vi": "Quyết định được đưa ra bởi những nhân vật có thẩm quyền trong tổ chức."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "This book is the most authoritative guide on the subject.",
+          "example_vi": "Cuốn sách này là hướng dẫn đáng tin cậy nhất về chủ đề này."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "We need an authoritative source to confirm the facts.",
+          "example_vi": "Chúng ta cần một nguồn đáng tin cậy để xác nhận các sự kiện."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "The article provides an authoritative account of the events.",
+          "example_vi": "Bài báo cung cấp một bản tường thuật đáng tin cậy về các sự kiện."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "She is considered an authoritative voice in the field of science.",
+          "example_vi": "Cô ấy được coi là một tiếng nói đáng tin cậy trong lĩnh vực khoa học."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "The manager gave an authoritative order to stop the work.",
+          "example_vi": "Người quản lý đã đưa ra một mệnh lệnh có thẩm quyền để dừng công việc."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "His research is based on authoritative data from the government.",
+          "example_vi": "Nghiên cứu của anh ấy dựa trên dữ liệu đáng tin cậy từ chính phủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ.",
+      "word": "authoritative",
+      "normalized_word": "authoritative",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She spoke in an authoritative tone that silenced the room.",
+      "example_vi_clean": "Cô ấy nói bằng một giọng có thẩm quyền khiến cả căn phòng im lặng."
+    }
+  ]
+}

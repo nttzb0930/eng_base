@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24751,
+      "quiz_meaning_vi": "sáng chói",
+      "meaning_vi_clean": "sáng chói; rực rỡ; tài giỏi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sáng chói",
+          "example_en": "The brilliant lights along the promenade were beautiful.",
+          "example_vi": "Những ánh đèn sáng chói dọc lối đi dạo thật đẹp."
+        },
+        {
+          "meaning_vi": "sáng chói",
+          "example_en": "The sun was brilliant in the clear blue sky.",
+          "example_vi": "Mặt trời sáng chói trên bầu trời xanh trong."
+        },
+        {
+          "meaning_vi": "sáng chói",
+          "example_en": "She wore a brilliant diamond ring.",
+          "example_vi": "Cô ấy đeo một chiếc nhẫn kim cương sáng chói."
+        },
+        {
+          "meaning_vi": "sáng chói",
+          "example_en": "The stars were brilliant tonight.",
+          "example_vi": "Những ngôi sao sáng chói đêm nay."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "Butterflies with brilliant blue wings flew in the garden.",
+          "example_vi": "Những chú bướm với đôi cánh xanh rực rỡ bay trong vườn."
+        },
+        {
+          "meaning_vi": "rực rỡ",
+          "example_en": "The flowers were a brilliant shade of red.",
+          "example_vi": "Những bông hoa có màu đỏ rực rỡ."
+        },
+        {
+          "meaning_vi": "tài giỏi",
+          "example_en": "The actor's performance in the play was simply brilliant.",
+          "example_vi": "Màn trình diễn của nam diễn viên trong vở kịch thật sự tài giỏi."
+        },
+        {
+          "meaning_vi": "tài giỏi",
+          "example_en": "She is a brilliant scientist who made many discoveries.",
+          "example_vi": "Cô ấy là một nhà khoa học tài giỏi đã thực hiện nhiều khám phá."
+        },
+        {
+          "meaning_vi": "tài giỏi",
+          "example_en": "He came up with a brilliant idea for the project.",
+          "example_vi": "Anh ấy đã đưa ra một ý tưởng tài giỏi cho dự án."
+        },
+        {
+          "meaning_vi": "tài giỏi",
+          "example_en": "It was a brilliant move to win the game.",
+          "example_vi": "Đó là một nước đi tài giỏi để thắng trò chơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành tính từ, chọn lọc nghĩa phổ biến, bổ sung ví dụ đủ 10 câu.",
+      "word": "brilliant",
+      "normalized_word": "brilliant",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The brilliant lights along the promenade were beautiful.",
+      "example_vi_clean": "Những ánh đèn sáng chói dọc lối đi dạo thật đẹp."
+    },
+    {
+      "id": 24752,
+      "quiz_meaning_vi": "con rệp",
+      "meaning_vi_clean": "con rệp; sâu bọ; lỗi kỹ thuật",
+      "examples_clean": [
+        {
+          "meaning_vi": "con rệp",
+          "example_en": "These flies are a bother, but I am worried about a bed bug.",
+          "example_vi": "Những con ruồi này thật phiền phức, nhưng tôi lo về con rệp giường."
+        },
+        {
+          "meaning_vi": "con rệp",
+          "example_en": "The hotel room was infested with bugs.",
+          "example_vi": "Phòng khách sạn bị nhiễm rệp."
+        },
+        {
+          "meaning_vi": "con rệp",
+          "example_en": "I found a bug crawling on the mattress.",
+          "example_vi": "Tôi thấy một con rệp bò trên nệm."
+        },
+        {
+          "meaning_vi": "con rệp",
+          "example_en": "We need to clean the room to get rid of the bugs.",
+          "example_vi": "Chúng ta cần dọn phòng để loại bỏ lũ rệp."
+        },
+        {
+          "meaning_vi": "sâu bọ",
+          "example_en": "He is afraid of every little bug in the garden.",
+          "example_vi": "Anh ấy sợ mọi loại sâu bọ nhỏ trong vườn."
+        },
+        {
+          "meaning_vi": "sâu bọ",
+          "example_en": "The garden is full of interesting bugs.",
+          "example_vi": "Khu vườn đầy những loài sâu bọ thú vị."
+        },
+        {
+          "meaning_vi": "lỗi kỹ thuật",
+          "example_en": "The software bug led the computer to calculate incorrectly.",
+          "example_vi": "Lỗi kỹ thuật phần mềm khiến máy tính tính toán sai."
+        },
+        {
+          "meaning_vi": "lỗi kỹ thuật",
+          "example_en": "The developers are trying to fix the bug in the app.",
+          "example_vi": "Các nhà phát triển đang cố gắng sửa lỗi kỹ thuật trong ứng dụng."
+        },
+        {
+          "meaning_vi": "lỗi kỹ thuật",
+          "example_en": "There is a minor bug in the new update.",
+          "example_vi": "Có một lỗi kỹ thuật nhỏ trong bản cập nhật mới."
+        },
+        {
+          "meaning_vi": "lỗi kỹ thuật",
+          "example_en": "The game crashed because of a bug.",
+          "example_vi": "Trò chơi bị treo vì một lỗi kỹ thuật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, chọn lọc nghĩa phổ biến, bổ sung ví dụ đủ 10 câu.",
+      "word": "bug",
+      "normalized_word": "bug",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "These flies are a bother, but I am worried about a bed bug.",
+      "example_vi_clean": "Những con ruồi này thật phiền phức, nhưng tôi lo về con rệp giường."
+    },
+    {
+      "id": 24753,
+      "quiz_meaning_vi": "củ",
+      "meaning_vi_clean": "củ; bóng đèn",
+      "examples_clean": [
+        {
+          "meaning_vi": "củ",
+          "example_en": "Plant the tulip bulb in the autumn.",
+          "example_vi": "Hãy trồng củ hoa tulip vào mùa thu."
+        },
+        {
+          "meaning_vi": "củ",
+          "example_en": "The onion bulb is ready to be harvested.",
+          "example_vi": "Củ hành tây đã sẵn sàng để thu hoạch."
+        },
+        {
+          "meaning_vi": "củ",
+          "example_en": "Each bulb will grow into a beautiful flower.",
+          "example_vi": "Mỗi củ sẽ phát triển thành một bông hoa đẹp."
+        },
+        {
+          "meaning_vi": "củ",
+          "example_en": "Store the bulbs in a cool, dry place.",
+          "example_vi": "Bảo quản các củ ở nơi khô ráo, thoáng mát."
+        },
+        {
+          "meaning_vi": "bóng đèn",
+          "example_en": "The light bulb burned out and needs replacing.",
+          "example_vi": "Bóng đèn bị cháy và cần được thay thế."
+        },
+        {
+          "meaning_vi": "bóng đèn",
+          "example_en": "He changed the light bulb in the kitchen.",
+          "example_vi": "Anh ấy đã thay bóng đèn trong nhà bếp."
+        },
+        {
+          "meaning_vi": "bóng đèn",
+          "example_en": "The room was lit by a single bulb.",
+          "example_vi": "Căn phòng được chiếu sáng bởi một bóng đèn duy nhất."
+        },
+        {
+          "meaning_vi": "bóng đèn",
+          "example_en": "Energy-saving bulbs help reduce electricity costs.",
+          "example_vi": "Bóng đèn tiết kiệm năng lượng giúp giảm chi phí điện."
+        },
+        {
+          "meaning_vi": "bóng đèn",
+          "example_en": "She bought a new bulb for her desk lamp.",
+          "example_vi": "Cô ấy đã mua một bóng đèn mới cho đèn bàn của mình."
+        },
+        {
+          "meaning_vi": "bóng đèn",
+          "example_en": "The bulb flickered before going out completely.",
+          "example_vi": "Bóng đèn nhấp nháy trước khi tắt hẳn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa primary_meaning_vi, bổ sung ví dụ đủ 10 câu.",
+      "word": "bulb",
+      "normalized_word": "bulb",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Plant the tulip bulb in the autumn.",
+      "example_vi_clean": "Hãy trồng củ hoa tulip vào mùa thu."
+    },
+    {
+      "id": 24754,
+      "quiz_meaning_vi": "vết bỏng",
+      "meaning_vi_clean": "vết bỏng; đốt cháy",
+      "examples_clean": [
+        {
+          "meaning_vi": "vết bỏng",
+          "example_en": "She had second-degree burns from falling in the bonfire.",
+          "example_vi": "Cô ấy bị vết bỏng độ hai do ngã vào đống lửa."
+        },
+        {
+          "meaning_vi": "vết bỏng",
+          "example_en": "Apply cold water to the burn immediately.",
+          "example_vi": "Hãy xả nước lạnh vào vết bỏng ngay lập tức."
+        },
+        {
+          "meaning_vi": "vết bỏng",
+          "example_en": "The burn on his hand is healing well.",
+          "example_vi": "Vết bỏng trên tay anh ấy đang lành tốt."
+        },
+        {
+          "meaning_vi": "vết bỏng",
+          "example_en": "He covered the burn with a clean bandage.",
+          "example_vi": "Anh ấy băng vết bỏng bằng một miếng băng sạch."
+        },
+        {
+          "meaning_vi": "đốt cháy",
+          "example_en": "They're doing a controlled burn of the fields.",
+          "example_vi": "Họ đang thực hiện việc đốt cháy có kiểm soát các cánh đồng."
+        },
+        {
+          "meaning_vi": "đốt cháy",
+          "example_en": "The fire will burn all the dry wood.",
+          "example_vi": "Ngọn lửa sẽ đốt cháy tất cả gỗ khô."
+        },
+        {
+          "meaning_vi": "đốt cháy",
+          "example_en": "We need to burn the trash in the incinerator.",
+          "example_vi": "Chúng ta cần đốt cháy rác trong lò thiêu."
+        },
+        {
+          "meaning_vi": "đốt cháy",
+          "example_en": "The candle will burn for several hours.",
+          "example_vi": "Cây nến sẽ cháy trong vài giờ."
+        },
+        {
+          "meaning_vi": "đốt cháy",
+          "example_en": "Exercise helps to burn extra calories.",
+          "example_vi": "Tập thể dục giúp đốt cháy lượng calo dư thừa."
+        },
+        {
+          "meaning_vi": "đốt cháy",
+          "example_en": "The sun can burn your skin if you stay out too long.",
+          "example_vi": "Mặt trời có thể đốt cháy da bạn nếu bạn ở ngoài quá lâu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ/động từ, chọn lọc nghĩa phổ biến, bổ sung ví dụ đủ 10 câu.",
+      "word": "burn",
+      "normalized_word": "burn",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She had second-degree burns from falling in the bonfire.",
+      "example_vi_clean": "Cô ấy bị vết bỏng độ hai do ngã vào đống lửa."
+    },
+    {
+      "id": 24755,
+      "quiz_meaning_vi": "chôn",
+      "meaning_vi_clean": "chôn; giấu đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "chôn",
+          "example_en": "The dog likes to bury a bone in the garden.",
+          "example_vi": "Con chó thích chôn một khúc xương trong vườn."
+        },
+        {
+          "meaning_vi": "chôn",
+          "example_en": "They buried the treasure deep underground.",
+          "example_vi": "Họ đã chôn kho báu sâu dưới lòng đất."
+        },
+        {
+          "meaning_vi": "chôn",
+          "example_en": "The village buried their dead with great respect.",
+          "example_vi": "Ngôi làng đã chôn cất người chết với sự tôn trọng lớn."
+        },
+        {
+          "meaning_vi": "chôn",
+          "example_en": "He buried his father in the family plot.",
+          "example_vi": "Anh ấy đã chôn cất cha mình trong khu đất của gia đình."
+        },
+        {
+          "meaning_vi": "giấu đi",
+          "example_en": "She buried her face in the pillow to hide her tears.",
+          "example_vi": "Cô ấy giấu đi khuôn mặt vào gối để che giấu những giọt nước mắt."
+        },
+        {
+          "meaning_vi": "giấu đi",
+          "example_en": "He buried his secrets in a locked diary.",
+          "example_vi": "Anh ấy giấu đi những bí mật của mình trong một cuốn nhật ký có khóa."
+        },
+        {
+          "meaning_vi": "giấu đi",
+          "example_en": "They buried their differences and became friends.",
+          "example_vi": "Họ giấu đi những bất đồng và trở thành bạn bè."
+        },
+        {
+          "meaning_vi": "giấu đi",
+          "example_en": "She buried her disappointment behind a smile.",
+          "example_vi": "Cô ấy giấu đi sự thất vọng đằng sau một nụ cười."
+        },
+        {
+          "meaning_vi": "giấu đi",
+          "example_en": "The truth was buried under layers of lies.",
+          "example_vi": "Sự thật đã bị giấu đi dưới những lớp dối trá."
+        },
+        {
+          "meaning_vi": "giấu đi",
+          "example_en": "He buried his head in his work to forget his problems.",
+          "example_vi": "Anh ấy giấu đi những vấn đề của mình bằng cách vùi đầu vào công việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành động từ, chọn lọc nghĩa phổ biến, bổ sung ví dụ đủ 10 câu.",
+      "word": "bury",
+      "normalized_word": "bury",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The dog likes to bury a bone in the garden.",
+      "example_vi_clean": "Con chó thích chôn một khúc xương trong vườn."
+    },
+    {
+      "id": 24756,
+      "quiz_meaning_vi": "bụi cây",
+      "meaning_vi_clean": "bụi cây",
+      "examples_clean": [
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "The cat hid behind a large bush.",
+          "example_vi": "Con mèo trốn sau một bụi cây lớn."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "We planted a rose bush in the front yard.",
+          "example_vi": "Chúng tôi đã trồng một bụi cây hoa hồng ở sân trước."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "The path was overgrown with thick bushes.",
+          "example_vi": "Con đường bị bao phủ bởi những bụi cây rậm rạp."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "He trimmed the bush to keep it neat.",
+          "example_vi": "Anh ấy đã cắt tỉa bụi cây để giữ cho nó gọn gàng."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "Birds often build nests in the bush.",
+          "example_vi": "Chim thường làm tổ trong bụi cây."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "The children played hide-and-seek around the bush.",
+          "example_vi": "Những đứa trẻ chơi trốn tìm quanh bụi cây."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "A small rabbit jumped out of the bush.",
+          "example_vi": "Một chú thỏ nhỏ nhảy ra từ bụi cây."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "The garden has many flowering bushes.",
+          "example_vi": "Khu vườn có nhiều bụi cây ra hoa."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "She sat on a bench near the flowering bush.",
+          "example_vi": "Cô ấy ngồi trên ghế dài gần bụi cây đang nở hoa."
+        },
+        {
+          "meaning_vi": "bụi cây",
+          "example_en": "The bush provides shade for the smaller plants.",
+          "example_vi": "Bụi cây cung cấp bóng mát cho những cây nhỏ hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, chọn lọc nghĩa phổ biến, bổ sung ví dụ đủ 10 câu.",
+      "word": "bush",
+      "normalized_word": "bush",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cat hid behind a large bush.",
+      "example_vi_clean": "Con mèo trốn sau một bụi cây lớn."
+    },
+    {
+      "id": 24757,
+      "quiz_meaning_vi": "nhà kinh doanh",
+      "meaning_vi_clean": "nhà kinh doanh",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "He is a successful businessman in the city.",
+          "example_vi": "Anh ấy là một nhà kinh doanh thành đạt trong thành phố."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "The businessman traveled abroad for a meeting.",
+          "example_vi": "Nhà kinh doanh đã đi nước ngoài để họp."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "Many businessmen attended the conference.",
+          "example_vi": "Nhiều nhà kinh doanh đã tham dự hội nghị."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "She wants to become a professional businessman.",
+          "example_vi": "Cô ấy muốn trở thành một nhà kinh doanh chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "The businessman signed a new contract today.",
+          "example_vi": "Nhà kinh doanh đã ký một hợp đồng mới hôm nay."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "He is a smart businessman who knows the market.",
+          "example_vi": "Anh ấy là một nhà kinh doanh thông minh, người hiểu rõ thị trường."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "The businessman invested in a new startup.",
+          "example_vi": "Nhà kinh doanh đã đầu tư vào một công ty khởi nghiệp mới."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "Being a businessman requires hard work.",
+          "example_vi": "Trở thành một nhà kinh doanh đòi hỏi sự chăm chỉ."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "The businessman discussed the plan with his team.",
+          "example_vi": "Nhà kinh doanh đã thảo luận kế hoạch với đội ngũ của mình."
+        },
+        {
+          "meaning_vi": "nhà kinh doanh",
+          "example_en": "He is a respected businessman in the community.",
+          "example_vi": "Anh ấy là một nhà kinh doanh được kính trọng trong cộng đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đủ 10 câu.",
+      "word": "businessman",
+      "normalized_word": "businessman",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a successful businessman in the city.",
+      "example_vi_clean": "Anh ấy là một nhà kinh doanh thành đạt trong thành phố."
+    },
+    {
+      "id": 24758,
+      "quiz_meaning_vi": "thương gia",
+      "meaning_vi_clean": "thương gia",
+      "examples_clean": [
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "She is a talented businesswoman who runs a large company.",
+          "example_vi": "Cô ấy là một thương gia tài năng điều hành một công ty lớn."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "The businesswoman gave a speech at the event.",
+          "example_vi": "Nữ thương gia đã có bài phát biểu tại sự kiện."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "Many businesswomen are leading major corporations.",
+          "example_vi": "Nhiều thương gia đang lãnh đạo các tập đoàn lớn."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "She is a hardworking businesswoman.",
+          "example_vi": "Cô ấy là một thương gia chăm chỉ."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "The businesswoman negotiated a better deal.",
+          "example_vi": "Nữ thương gia đã đàm phán một thỏa thuận tốt hơn."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "She became a successful businesswoman at a young age.",
+          "example_vi": "Cô ấy đã trở thành một thương gia thành đạt khi còn trẻ."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "The businesswoman manages her own store.",
+          "example_vi": "Nữ thương gia quản lý cửa hàng của riêng mình."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "She is a respected businesswoman in the industry.",
+          "example_vi": "Cô ấy là một thương gia được kính trọng trong ngành."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "The businesswoman traveled to meet her clients.",
+          "example_vi": "Nữ thương gia đã đi công tác để gặp khách hàng của mình."
+        },
+        {
+          "meaning_vi": "thương gia",
+          "example_en": "She is a visionary businesswoman.",
+          "example_vi": "Cô ấy là một thương gia có tầm nhìn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đủ 10 câu.",
+      "word": "businesswoman",
+      "normalized_word": "businesswoman",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is a talented businesswoman who runs a large company.",
+      "example_vi_clean": "Cô ấy là một thương gia tài năng điều hành một công ty lớn."
+    },
+    {
+      "id": 24759,
+      "quiz_meaning_vi": "xe tắc xi",
+      "meaning_vi_clean": "xe tắc xi; buồng lái",
+      "examples_clean": [
+        {
+          "meaning_vi": "xe tắc xi",
+          "example_en": "We took a cab to the airport.",
+          "example_vi": "Chúng tôi đã bắt một chiếc xe tắc xi đến sân bay."
+        },
+        {
+          "meaning_vi": "xe tắc xi",
+          "example_en": "He hailed a cab on the busy street.",
+          "example_vi": "Anh ấy vẫy một chiếc xe tắc xi trên con phố đông đúc."
+        },
+        {
+          "meaning_vi": "xe tắc xi",
+          "example_en": "The cab driver was very friendly.",
+          "example_vi": "Tài xế xe tắc xi rất thân thiện."
+        },
+        {
+          "meaning_vi": "xe tắc xi",
+          "example_en": "I prefer to take a cab when it rains.",
+          "example_vi": "Tôi thích đi xe tắc xi khi trời mưa."
+        },
+        {
+          "meaning_vi": "xe tắc xi",
+          "example_en": "The cab fare was quite expensive.",
+          "example_vi": "Giá cước xe tắc xi khá đắt."
+        },
+        {
+          "meaning_vi": "buồng lái",
+          "example_en": "The pilot sat in the cab of the truck.",
+          "example_vi": "Người lái xe ngồi trong buồng lái của chiếc xe tải."
+        },
+        {
+          "meaning_vi": "buồng lái",
+          "example_en": "The cab of the crane is very high up.",
+          "example_vi": "Buồng lái của chiếc cần cẩu ở rất cao."
+        },
+        {
+          "meaning_vi": "buồng lái",
+          "example_en": "He climbed into the cab to start the engine.",
+          "example_vi": "Anh ấy leo vào buồng lái để khởi động động cơ."
+        },
+        {
+          "meaning_vi": "buồng lái",
+          "example_en": "The cab is designed for driver comfort.",
+          "example_vi": "Buồng lái được thiết kế để tạo sự thoải mái cho người lái."
+        },
+        {
+          "meaning_vi": "buồng lái",
+          "example_en": "The controls are located inside the cab.",
+          "example_vi": "Các bộ điều khiển được đặt bên trong buồng lái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, chọn lọc nghĩa phổ biến, bổ sung ví dụ đủ 10 câu.",
+      "word": "cab",
+      "normalized_word": "cab",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We took a cab to the airport.",
+      "example_vi_clean": "Chúng tôi đã bắt một chiếc xe tắc xi đến sân bay."
+    },
+    {
+      "id": 24760,
+      "quiz_meaning_vi": "quán ăn tự phục vụ",
+      "meaning_vi_clean": "quán ăn tự phục vụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "We had lunch at the school cafeteria.",
+          "example_vi": "Chúng tôi đã ăn trưa tại quán ăn tự phục vụ của trường."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "The cafeteria offers a variety of healthy meals.",
+          "example_vi": "Quán ăn tự phục vụ cung cấp nhiều bữa ăn lành mạnh."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "The cafeteria is open from 11 am to 2 pm.",
+          "example_vi": "Quán ăn tự phục vụ mở cửa từ 11 giờ sáng đến 2 giờ chiều."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "Many employees eat at the company cafeteria.",
+          "example_vi": "Nhiều nhân viên ăn tại quán ăn tự phục vụ của công ty."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "The cafeteria was crowded during the lunch break.",
+          "example_vi": "Quán ăn tự phục vụ rất đông đúc trong giờ nghỉ trưa."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "She works in the hospital cafeteria.",
+          "example_vi": "Cô ấy làm việc tại quán ăn tự phục vụ của bệnh viện."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "The cafeteria serves breakfast every morning.",
+          "example_vi": "Quán ăn tự phục vụ phục vụ bữa sáng mỗi sáng."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "We met at the cafeteria to discuss the project.",
+          "example_vi": "Chúng tôi đã gặp nhau tại quán ăn tự phục vụ để thảo luận về dự án."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "The cafeteria menu changes every day.",
+          "example_vi": "Thực đơn của quán ăn tự phục vụ thay đổi mỗi ngày."
+        },
+        {
+          "meaning_vi": "quán ăn tự phục vụ",
+          "example_en": "The cafeteria is a convenient place to eat.",
+          "example_vi": "Quán ăn tự phục vụ là một nơi thuận tiện để ăn uống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đủ 10 câu.",
+      "word": "cafeteria",
+      "normalized_word": "cafeteria",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We had lunch at the school cafeteria.",
+      "example_vi_clean": "Chúng tôi đã ăn trưa tại quán ăn tự phục vụ của trường."
+    }
+  ]
+}

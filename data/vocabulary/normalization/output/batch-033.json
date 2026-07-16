@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24321,
+      "quiz_meaning_vi": "tiếp theo",
+      "meaning_vi_clean": "tiếp theo; sau đây; những người sau đây",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếp theo",
+          "example_en": "The following day, we went to the beach.",
+          "example_vi": "Ngày tiếp theo, chúng tôi đã đi biển."
+        },
+        {
+          "meaning_vi": "tiếp theo",
+          "example_en": "Please read the following chapter for tomorrow.",
+          "example_vi": "Vui lòng đọc chương tiếp theo cho ngày mai."
+        },
+        {
+          "meaning_vi": "tiếp theo",
+          "example_en": "The following events were quite surprising.",
+          "example_vi": "Những sự kiện tiếp theo khá bất ngờ."
+        },
+        {
+          "meaning_vi": "tiếp theo",
+          "example_en": "He gave the following answer to the question.",
+          "example_vi": "Anh ấy đã đưa ra câu trả lời tiếp theo cho câu hỏi."
+        },
+        {
+          "meaning_vi": "sau đây",
+          "example_en": "The rules are as follows.",
+          "example_vi": "Các quy tắc như sau đây."
+        },
+        {
+          "meaning_vi": "sau đây",
+          "example_en": "Please consider the following points.",
+          "example_vi": "Vui lòng xem xét các điểm sau đây."
+        },
+        {
+          "meaning_vi": "sau đây",
+          "example_en": "Write your name in the following space.",
+          "example_vi": "Viết tên bạn vào khoảng trống sau đây."
+        },
+        {
+          "meaning_vi": "những người sau đây",
+          "example_en": "The following are invited to the meeting.",
+          "example_vi": "Những người sau đây được mời tham dự cuộc họp."
+        },
+        {
+          "meaning_vi": "những người sau đây",
+          "example_en": "The following have been selected for the team.",
+          "example_vi": "Những người sau đây đã được chọn vào đội."
+        },
+        {
+          "meaning_vi": "những người sau đây",
+          "example_en": "The following will represent our school.",
+          "example_vi": "Những người sau đây sẽ đại diện cho trường chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ adjective sang nghĩa phù hợp với từ loại. Bổ sung ví dụ theo quy tắc.",
+      "word": "following",
+      "normalized_word": "following",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The following day, we went to the beach.",
+      "example_vi_clean": "Ngày tiếp theo, chúng tôi đã đi biển."
+    },
+    {
+      "id": 24322,
+      "quiz_meaning_vi": "đồ ăn",
+      "meaning_vi_clean": "đồ ăn; thức ăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồ ăn",
+          "example_en": "We need to buy some food for the party.",
+          "example_vi": "Chúng ta cần mua một ít đồ ăn cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "đồ ăn",
+          "example_en": "This shop sells fresh food every day.",
+          "example_vi": "Cửa hàng này bán đồ ăn tươi mỗi ngày."
+        },
+        {
+          "meaning_vi": "đồ ăn",
+          "example_en": "Do you like Italian food?",
+          "example_vi": "Bạn có thích đồ ăn Ý không?"
+        },
+        {
+          "meaning_vi": "đồ ăn",
+          "example_en": "The food at this restaurant is delicious.",
+          "example_vi": "Đồ ăn ở nhà hàng này rất ngon."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "They provided food and water to the victims.",
+          "example_vi": "Họ đã cung cấp thức ăn và nước uống cho các nạn nhân."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "Healthy thức ăn is important for children.",
+          "example_vi": "Thức ăn lành mạnh rất quan trọng đối với trẻ em."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "The cat is looking for some thức ăn.",
+          "example_vi": "Con mèo đang tìm kiếm thức ăn."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "We should not waste thức ăn.",
+          "example_vi": "Chúng ta không nên lãng phí thức ăn."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "The birds are looking for thức ăn in the garden.",
+          "example_vi": "Những con chim đang tìm kiếm thức ăn trong vườn."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "He is very careful about the thức ăn he eats.",
+          "example_vi": "Anh ấy rất cẩn thận về thức ăn mình ăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa không phù hợp cấp độ A1. Bổ sung ví dụ.",
+      "word": "food",
+      "normalized_word": "food",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We need to buy some food for the party.",
+      "example_vi_clean": "Chúng ta cần mua một ít đồ ăn cho bữa tiệc."
+    },
+    {
+      "id": 24323,
+      "quiz_meaning_vi": "môn bóng đá",
+      "meaning_vi_clean": "môn bóng đá; quả bóng đá",
+      "examples_clean": [
+        {
+          "meaning_vi": "môn bóng đá",
+          "example_en": "I love playing football with my friends.",
+          "example_vi": "Tôi thích chơi môn bóng đá với bạn bè."
+        },
+        {
+          "meaning_vi": "môn bóng đá",
+          "example_en": "He is a professional football player.",
+          "example_vi": "Anh ấy là một cầu thủ môn bóng đá chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "môn bóng đá",
+          "example_en": "We watched a football match on TV.",
+          "example_vi": "Chúng tôi đã xem một trận môn bóng đá trên TV."
+        },
+        {
+          "meaning_vi": "môn bóng đá",
+          "example_en": "Football is the most popular sport in the world.",
+          "example_vi": "Môn bóng đá là môn thể thao phổ biến nhất thế giới."
+        },
+        {
+          "meaning_vi": "quả bóng đá",
+          "example_en": "The football is under the table.",
+          "example_vi": "Quả bóng đá ở dưới gầm bàn."
+        },
+        {
+          "meaning_vi": "quả bóng đá",
+          "example_en": "He kicked the football into the goal.",
+          "example_vi": "Anh ấy đá quả bóng đá vào khung thành."
+        },
+        {
+          "meaning_vi": "quả bóng đá",
+          "example_en": "Can you pass me the football?",
+          "example_vi": "Bạn có thể chuyền cho tôi quả bóng đá không?"
+        },
+        {
+          "meaning_vi": "quả bóng đá",
+          "example_en": "The football is made of leather.",
+          "example_vi": "Quả bóng đá được làm bằng da."
+        },
+        {
+          "meaning_vi": "quả bóng đá",
+          "example_en": "We bought a new football for the game.",
+          "example_vi": "Chúng tôi đã mua một quả bóng đá mới cho trận đấu."
+        },
+        {
+          "meaning_vi": "quả bóng đá",
+          "example_en": "The football rolled into the street.",
+          "example_vi": "Quả bóng đá lăn ra ngoài đường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lại nghĩa chính cho phù hợp với từ loại và ngữ cảnh phổ biến. Bổ sung ví dụ.",
+      "word": "football",
+      "normalized_word": "football",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I love playing football with my friends.",
+      "example_vi_clean": "Tôi thích chơi môn bóng đá với bạn bè."
+    },
+    {
+      "id": 24324,
+      "quiz_meaning_vi": "nước ngoài",
+      "meaning_vi_clean": "nước ngoài; xa lạ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nước ngoài",
+          "example_en": "I want to travel to a foreign country.",
+          "example_vi": "Tôi muốn đi du lịch đến một đất nước nước ngoài."
+        },
+        {
+          "meaning_vi": "nước ngoài",
+          "example_en": "She is learning a foreign language.",
+          "example_vi": "Cô ấy đang học một ngôn ngữ nước ngoài."
+        },
+        {
+          "meaning_vi": "nước ngoài",
+          "example_en": "He works for a foreign company.",
+          "example_vi": "Anh ấy làm việc cho một công ty nước ngoài."
+        },
+        {
+          "meaning_vi": "nước ngoài",
+          "example_en": "They enjoy foreign food.",
+          "example_vi": "Họ thích đồ ăn nước ngoài."
+        },
+        {
+          "meaning_vi": "xa lạ",
+          "example_en": "The city felt very foreign to me.",
+          "example_vi": "Thành phố này cảm thấy rất xa lạ với tôi."
+        },
+        {
+          "meaning_vi": "xa lạ",
+          "example_en": "He felt like a foreign person in this town.",
+          "example_vi": "Anh ấy cảm thấy như một người xa lạ ở thị trấn này."
+        },
+        {
+          "meaning_vi": "xa lạ",
+          "example_en": "The customs here are foreign to our culture.",
+          "example_vi": "Những phong tục ở đây rất xa lạ với văn hóa của chúng tôi."
+        },
+        {
+          "meaning_vi": "xa lạ",
+          "example_en": "Everything in the new office seemed foreign.",
+          "example_vi": "Mọi thứ trong văn phòng mới đều có vẻ xa lạ."
+        },
+        {
+          "meaning_vi": "xa lạ",
+          "example_en": "It is a foreign concept to him.",
+          "example_vi": "Đó là một khái niệm xa lạ đối với anh ấy."
+        },
+        {
+          "meaning_vi": "xa lạ",
+          "example_en": "The landscape looked foreign and beautiful.",
+          "example_vi": "Phong cảnh trông thật xa lạ và đẹp đẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ các nghĩa chuyên ngành. Bổ sung ví dụ.",
+      "word": "foreign",
+      "normalized_word": "foreign",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I want to travel to a foreign country.",
+      "example_vi_clean": "Tôi muốn đi du lịch đến một đất nước nước ngoài."
+    },
+    {
+      "id": 24325,
+      "quiz_meaning_vi": "người nước ngoài",
+      "meaning_vi_clean": "người nước ngoài",
+      "examples_clean": [
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "He is a foreigner living in Vietnam.",
+          "example_vi": "Anh ấy là một người nước ngoài đang sống ở Việt Nam."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "Many foreigners visit this city every year.",
+          "example_vi": "Nhiều người nước ngoài đến thăm thành phố này mỗi năm."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "She likes talking to foreigners.",
+          "example_vi": "Cô ấy thích nói chuyện với người nước ngoài."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "The hotel is popular with foreigners.",
+          "example_vi": "Khách sạn này rất phổ biến với người nước ngoài."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "It is hard for a foreigner to find a job here.",
+          "example_vi": "Thật khó cho một người nước ngoài để tìm việc ở đây."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "He helped the foreigner find the way.",
+          "example_vi": "Anh ấy đã giúp người nước ngoài tìm đường."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "Are there many foreigners in your class?",
+          "example_vi": "Có nhiều người nước ngoài trong lớp của bạn không?"
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "The foreigner asked for directions.",
+          "example_vi": "Người nước ngoài đã hỏi đường."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "She is a foreigner from France.",
+          "example_vi": "Cô ấy là một người nước ngoài đến từ Pháp."
+        },
+        {
+          "meaning_vi": "người nước ngoài",
+          "example_en": "Foreigners are welcome in our country.",
+          "example_vi": "Người nước ngoài luôn được chào đón ở đất nước chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đầy đủ.",
+      "word": "foreigner",
+      "normalized_word": "foreigner",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is a foreigner living in Vietnam.",
+      "example_vi_clean": "Anh ấy là một người nước ngoài đang sống ở Việt Nam."
+    },
+    {
+      "id": 24326,
+      "quiz_meaning_vi": "quên",
+      "meaning_vi_clean": "quên",
+      "examples_clean": [
+        {
+          "meaning_vi": "quên",
+          "example_en": "I often forget where I put my keys.",
+          "example_vi": "Tôi thường quên nơi tôi để chìa khóa."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "Don't forget to lock the door.",
+          "example_vi": "Đừng quên khóa cửa."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "I forgot his name.",
+          "example_vi": "Tôi đã quên tên anh ấy."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "She forgot to bring her umbrella.",
+          "example_vi": "Cô ấy đã quên mang theo ô."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "I will never forget this day.",
+          "example_vi": "Tôi sẽ không bao giờ quên ngày này."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "Did you forget our meeting?",
+          "example_vi": "Bạn có quên cuộc họp của chúng ta không?"
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "He forgot to call me back.",
+          "example_vi": "Anh ấy đã quên gọi lại cho tôi."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "I forgot the password.",
+          "example_vi": "Tôi đã quên mật khẩu."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "Please don't forget to send the email.",
+          "example_vi": "Vui lòng đừng quên gửi email."
+        },
+        {
+          "meaning_vi": "quên",
+          "example_en": "I forgot what I was going to say.",
+          "example_vi": "Tôi đã quên những gì tôi định nói."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ các nghĩa phụ không phù hợp. Bổ sung ví dụ.",
+      "word": "forget",
+      "normalized_word": "forget",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I often forget where I put my keys.",
+      "example_vi_clean": "Tôi thường quên nơi tôi để chìa khóa."
+    },
+    {
+      "id": 24327,
+      "quiz_meaning_vi": "hình",
+      "meaning_vi_clean": "hình; hình thức; mẫu",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình",
+          "example_en": "The clouds took the form of a bird.",
+          "example_vi": "Những đám mây có hình của một con chim."
+        },
+        {
+          "meaning_vi": "hình",
+          "example_en": "Draw a circle or another simple form.",
+          "example_vi": "Vẽ một hình tròn hoặc một hình đơn giản khác."
+        },
+        {
+          "meaning_vi": "hình",
+          "example_en": "The ice was in the form of a cube.",
+          "example_vi": "Đá có hình của một khối lập phương."
+        },
+        {
+          "meaning_vi": "hình",
+          "example_en": "Everything has a specific form.",
+          "example_vi": "Mọi thứ đều có một hình cụ thể."
+        },
+        {
+          "meaning_vi": "hình thức",
+          "example_en": "Exercise is a form of relaxation.",
+          "example_vi": "Tập thể dục là một hình thức thư giãn."
+        },
+        {
+          "meaning_vi": "hình thức",
+          "example_en": "What form of transport do you use?",
+          "example_vi": "Bạn sử dụng hình thức vận chuyển nào?"
+        },
+        {
+          "meaning_vi": "hình thức",
+          "example_en": "This is a new form of communication.",
+          "example_vi": "Đây là một hình thức giao tiếp mới."
+        },
+        {
+          "meaning_vi": "mẫu",
+          "example_en": "Please fill out this application form.",
+          "example_vi": "Vui lòng điền vào mẫu đơn này."
+        },
+        {
+          "meaning_vi": "mẫu",
+          "example_en": "I need to sign the form.",
+          "example_vi": "Tôi cần ký vào mẫu đơn."
+        },
+        {
+          "meaning_vi": "mẫu",
+          "example_en": "The form is available online.",
+          "example_vi": "Mẫu đơn có sẵn trực tuyến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, chọn nghĩa phổ biến nhất. Bổ sung ví dụ.",
+      "word": "form",
+      "normalized_word": "form",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The clouds took the form of a bird.",
+      "example_vi_clean": "Những đám mây có hình của một con chim."
+    },
+    {
+      "id": 24328,
+      "quiz_meaning_vi": "bốn mươi",
+      "meaning_vi_clean": "bốn mươi",
+      "examples_clean": [
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "There are forty students in the class.",
+          "example_vi": "Có bốn mươi học sinh trong lớp."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "He is forty years old.",
+          "example_vi": "Anh ấy bốn mươi tuổi."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "I have forty dollars in my pocket.",
+          "example_vi": "Tôi có bốn mươi đô la trong túi."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "The bus leaves at forty minutes past the hour.",
+          "example_vi": "Xe buýt rời đi lúc bốn mươi phút sau giờ."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "She bought forty apples.",
+          "example_vi": "Cô ấy đã mua bốn mươi quả táo."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "We walked for forty minutes.",
+          "example_vi": "Chúng tôi đã đi bộ trong bốn mươi phút."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "There are forty pages in this book.",
+          "example_vi": "Có bốn mươi trang trong cuốn sách này."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "He counted forty birds in the tree.",
+          "example_vi": "Anh ấy đếm được bốn mươi con chim trên cây."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "The temperature is forty degrees.",
+          "example_vi": "Nhiệt độ là bốn mươi độ."
+        },
+        {
+          "meaning_vi": "bốn mươi",
+          "example_en": "I need forty more minutes to finish.",
+          "example_vi": "Tôi cần thêm bốn mươi phút nữa để hoàn thành."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đầy đủ.",
+      "word": "forty",
+      "normalized_word": "forty",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "There are forty students in the class.",
+      "example_vi_clean": "Có bốn mươi học sinh trong lớp."
+    },
+    {
+      "id": 24329,
+      "quiz_meaning_vi": "bốn",
+      "meaning_vi_clean": "bốn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bốn",
+          "example_en": "There are four people in my family.",
+          "example_vi": "Có bốn người trong gia đình tôi."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "I have four apples.",
+          "example_vi": "Tôi có bốn quả táo."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "The meeting starts at four o'clock.",
+          "example_vi": "Cuộc họp bắt đầu lúc bốn giờ."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "She has four brothers.",
+          "example_vi": "Cô ấy có bốn người anh em trai."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "We have four days left.",
+          "example_vi": "Chúng tôi còn bốn ngày nữa."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "He bought four books.",
+          "example_vi": "Anh ấy đã mua bốn cuốn sách."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "There are four seasons in a year.",
+          "example_vi": "Có bốn mùa trong một năm."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "I need four more chairs.",
+          "example_vi": "Tôi cần thêm bốn cái ghế."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "The car has four wheels.",
+          "example_vi": "Chiếc xe có bốn bánh."
+        },
+        {
+          "meaning_vi": "bốn",
+          "example_en": "She is four years old.",
+          "example_vi": "Cô bé bốn tuổi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa phụ không cần thiết. Bổ sung ví dụ.",
+      "word": "four",
+      "normalized_word": "four",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "There are four people in my family.",
+      "example_vi_clean": "Có bốn người trong gia đình tôi."
+    },
+    {
+      "id": 24330,
+      "quiz_meaning_vi": "mười bốn",
+      "meaning_vi_clean": "mười bốn",
+      "examples_clean": [
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "She is fourteen years old.",
+          "example_vi": "Cô ấy mười bốn tuổi."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "There are fourteen students in the room.",
+          "example_vi": "Có mười bốn học sinh trong phòng."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "I have fourteen pens.",
+          "example_vi": "Tôi có mười bốn cái bút."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "He waited for fourteen minutes.",
+          "example_vi": "Anh ấy đã đợi mười bốn phút."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "There are fourteen days in two weeks.",
+          "example_vi": "Có mười bốn ngày trong hai tuần."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "She bought fourteen flowers.",
+          "example_vi": "Cô ấy đã mua mười bốn bông hoa."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "We have fourteen items to check.",
+          "example_vi": "Chúng tôi có mười bốn mục cần kiểm tra."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "He read fourteen pages.",
+          "example_vi": "Anh ấy đã đọc mười bốn trang."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "There are fourteen chairs in the hall.",
+          "example_vi": "Có mười bốn cái ghế trong hội trường."
+        },
+        {
+          "meaning_vi": "mười bốn",
+          "example_en": "I need fourteen more minutes.",
+          "example_vi": "Tôi cần thêm mười bốn phút nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đầy đủ.",
+      "word": "fourteen",
+      "normalized_word": "fourteen",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "She is fourteen years old.",
+      "example_vi_clean": "Cô ấy mười bốn tuổi."
+    }
+  ]
+}

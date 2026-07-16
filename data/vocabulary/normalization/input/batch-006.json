@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-006",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24051,
+      "word": "band",
+      "normalized_word": "band",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bænd/",
+      "primary_meaning_vi": "dải",
+      "meaning_vi": "dải, băng, đai, nẹp; dải đóng gáy sách; dải cổ áo (thầy tu, quan toà, viện sĩ hàn lâm...); dải băng; buộc dải, buộc băng, đóng đai; làm nẹp; kẻ, vạch, gạch; đoàn, toán, lũ, bọn, bầy; dàn nhạc, ban nhạc; khi mà tình hình trở nên nghiêm trọng; tụ họp thành đoàn, tụ họp thành toán, tụ họp thành bầy",
+      "example_en": "valence band; conduction band",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Just to make the cheese more binding",
+          "example_vi": null
+        },
+        {
+          "example_en": "I wish I knew why the sewing machine binds up after I use it for a while.",
+          "example_vi": null
+        },
+        {
+          "example_en": "These are the ties that bind.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24052,
+      "word": "bank",
+      "normalized_word": "bank",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bæɳk/",
+      "primary_meaning_vi": "đê",
+      "meaning_vi": "đê, gờ, ụ (đất, đá); bờ (sông, hồ, kênh, lạch, ruộng...); đống; bãi ngầm (ở đáy sông); sự nghiêng cánh (máy bay); sự nghiêng sang một bên (ôtô trong khi quành hay chạy vòng tròn); bờ miệng giếng, bờ miệng hầm; đắp bờ (để ngăn); chất đống, dồn thành đống; nghiêng đi (ô tô, máy bay khi lái vòng); nhà ngân hàng; vốn (của) nhà cái; gửi (tiền) vào ngân hàng; gửi tiền ở ngân hàng; đổi tiền; làm cái (đánh bạc); làm chủ ngân hàng; làm nghề đổi tiền; trông nom vào ai, hy vọng vào ai, tin cậy vào ai; chỗ ngồi (của người nô lệ chèo thuyền chiến); dãy mái chèo (thuyền chiến); bàn phím; bàn thợ",
+      "example_en": "blood bank; sperm bank; data bank",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "If you want to buy a bicycle, you need to put the money in your piggy bank.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He banked with Barclays.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'm going to bank the money.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24053,
+      "word": "bar",
+      "normalized_word": "bar",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "giới từ",
+      "phonetic": "/bɑ:/",
+      "primary_meaning_vi": "barơ (đơn vị áp suất)",
+      "meaning_vi": "barơ (đơn vị áp suất); thanh, thỏi; chấn song; then chắn (cửa); vật ngáng; cái ngáng đường (để thu thuế); cồn cát ngầm (ở cửa sông hay hải cảng); vạch ngang (ở trên huy chương); vạch đường kẻ; gạch nhịp; nhịp; thanh, cần; xà; sự kháng biện; vành móng ngựa, toà; nghề luật sư; quầy bán rượu; sự trở ngại, sự cản trở (về tinh thần); cài, then (cửa); chặn (đường...), ngăn cản; vạch đường kẻ; cấm, cấm chỉ; ghét, không ưa (một người, một thói quen); kháng biện; chặn (cửa) không cho ra; chặn (cửa) không cho vào; trừ, trừ ra",
+      "example_en": "The window was protected by steel bars.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Ancient Sparta used iron bars instead of handy coins in more valuable alloy, to physically discourage the use of money.",
+          "example_vi": null
+        },
+        {
+          "example_en": "bar of chocolate",
+          "example_vi": null
+        },
+        {
+          "example_en": "a bar of colour",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24054,
+      "word": "baseball",
+      "normalized_word": "baseball",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'beisbɔ:l/",
+      "primary_meaning_vi": "bóng chày",
+      "meaning_vi": "bóng chày",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24055,
+      "word": "bat",
+      "normalized_word": "bat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bæt/",
+      "primary_meaning_vi": "gây (đánh bóng chày",
+      "meaning_vi": "gây (đánh bóng chày,  crikê); (từ cổ,nghĩa cổ) vợt (quần vợt); vận động viên bóng chày, vận động viên crikê ((cũng) bat sman); cú đánh bất ngờ; bàn đập (của thợ giặt); ,  (từ lóng) giữ một vị trí quan trọng (đánh bóng chày); giữ vai trò quan trọng; thắng, giành được thắng lợi, không bị loại khỏi vòng; ,  (từ lóng) gặp phải một vấn đề khó khăn hóc búa; phải qua một thử thách gay go; thi đấu với ai; một mình không có ai giúp đỡ, đơn thương độc mã; ngay lập tức, không chậm trễ; đánh bằng gậy (bóng chày Ãcrikê); đánh; con dơi; mù tịt; gàn, dở hơi; thật nhanh ba chân bốn cẳng; bước đi, dáng đi; thật nhanh; đi thật nhanh, ba chân bốn cẳng; the bat (Anh,  Ân) (thông tục) tiếng nói, ngôn ngữ nói; ,  (từ lóng) nói tiếng nước ngoài; nháy (mắt); không chợp mắt được lúc nào; cứ điềm nhiên, cứ phớt tỉnh; ,  (từ lóng) sự chè chén linh đình; sự ăn chơi phóng đãng; của battery (quân sự) khẩu đội (pháo)",
+      "example_en": "You've been in for ages. Can I have a bat now?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He batted the ball away with a satisfying thwack.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The cat batted at the toy.",
+          "example_vi": null
+        },
+        {
+          "example_en": "bat one's eyelashes",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24056,
+      "word": "bath",
+      "normalized_word": "bath",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/bɑ:θ/",
+      "primary_meaning_vi": "sự tắm",
+      "meaning_vi": "sự tắm; chậu tắm, bồn tắm, nhà tắm; nhà tắm có bể bơi; sự chém giết, sự làm đổ máu; tắm",
+      "example_en": "a bath of heated sand, ashes, steam, or hot air",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Most Americans don't know 'WC' and many Brits mock 'bathroom' but almost everyone understands 'toilet' or 'lavatory'.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24057,
+      "word": "bathroom",
+      "normalized_word": "bathroom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "thành ngữ bath",
+      "meaning_vi": "thành ngữ bath; bathroom; buồng tắm, nhà vệ sinh; thành ngữ bath; bathroom; buồng tắm, nhà vệ sinh",
+      "example_en": "Most Americans don't know 'WC' and many Brits mock 'bathroom' but almost everyone understands 'toilet' or 'lavatory'.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24058,
+      "word": "be",
+      "normalized_word": "be",
+      "cefr_level": "A1",
+      "pos": "be-verb",
+      "pos_vi": "(bất qui tắc) nội động từ & trợ động từ (số ít was,  số nhiều were,  been)",
+      "phonetic": "/bi:/",
+      "primary_meaning_vi": "thì",
+      "meaning_vi": "thì, là; có, tồn tại, ở, sống; trở nên, trở thành; xảy ra, diễn ra; giá; be to phải, định, sẽ; đang; bị, được; đã đi, đã đến; chống lại; tán thành, đứng về phía",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24059,
+      "word": "beach",
+      "normalized_word": "beach",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bi:tʃ/",
+      "primary_meaning_vi": "sỏi cát (ở bãi biển)",
+      "meaning_vi": "sỏi cát (ở bãi biển); bãi biển; cho (tàu thuyền) lên cạn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24060,
+      "word": "bean",
+      "normalized_word": "bean",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi:n/",
+      "primary_meaning_vi": "đậu",
+      "meaning_vi": "đậu; hột (cà phê); cái đầu; tiền đồng; hăng hái, sôi nổi, phấn chấn; nhân vô thập toàn, người ta ai mà chẳng có khuyết điểm; bị trừng phạt, bị mắng mỏ, bị đánh đập; trừng phạt ai, mắng mỏ ai; hết sức nhanh, mở hết tốc độ; toàn những vật mọn; toàn những chuyện lặt vặt không đáng kể; láu, biết xoay xở; bạn thân, bạn tri kỷ; spill",
+      "example_en": "I haven't got a bean.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The pitcher beaned the batter, rather than letting him hit another home run.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

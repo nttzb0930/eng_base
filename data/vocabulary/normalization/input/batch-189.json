@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-189",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25881,
+      "word": "delicate",
+      "normalized_word": "delicate",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'delikit/",
+      "primary_meaning_vi": "thanh nhã",
+      "meaning_vi": "thanh nhã, thanh tú, thánh thú; mỏng manh, mảnh khảnh, mảnh dẻ; dễ vỡ (đồ thuỷ tinh...); tinh vi, tinh xảo, tinh tế; khéo léo, nhẹ nhàng; mềm mại; tế nhị, khó xử; lịch thiệp, khéo (trong cách đối xử), nhã nhặn, tế nhị, ý tứ; nhẹ, nhạt, phơn phớt (màu); nhạy cảm, thính, nhạy; ngon; thanh cảnh; nâng niu chiều chuộng, cảnh vẻ, yểu điệu, ẻo lả mềm yếu; vui sướng, vui thích, khoái trí",
+      "example_en": "Don't put that in with your jeans: it's a delicate!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The negotiations were very delicate.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Her face was delicate.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Set the washing machine to the delicate cycle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25882,
+      "word": "delight",
+      "normalized_word": "delight",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/di'lait/",
+      "primary_meaning_vi": "sự vui thích",
+      "meaning_vi": "sự vui thích, sự vui sướng; điều thích thú, niềm khoái cảm; làm cho vui thích; ham thích, thích thú; làm vui thích, làm vui sướng, gây khoái cảm, làm say mê; thích thú, ham thích",
+      "example_en": "A beautiful landscape delights the eye.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25883,
+      "word": "delighted",
+      "normalized_word": "delighted",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "vui mừng",
+      "meaning_vi": "vui mừng, hài lòng",
+      "example_en": "A beautiful landscape delights the eye.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25884,
+      "word": "delightful",
+      "normalized_word": "delightful",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/di'laitful/",
+      "primary_meaning_vi": "thích thú",
+      "meaning_vi": "thích thú, thú vị; làm say mê, làm mê mẩn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25885,
+      "word": "deliver",
+      "normalized_word": "deliver",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'livə/",
+      "primary_meaning_vi": "cứu",
+      "meaning_vi": "cứu, cứu khỏi, giải thoát; phân phát (thư), phân phối, giao (hàng); đọc, phát biểu, giãi bày, bày tỏ; giáng, ném, phóng, bắn ra; mở (cuộc tấn công); có công suất là (máy nước, máy điện...); cung cấp (điện) cho (máy...); dỡ, tháo... (ở khuôn ra); sinh đẻ ((nghĩa đen) & (nghĩa bóng)); giao trả, chuyển giao, chuyển nhượng; trả lại, giao nộp; giao chiến; thực hiện điều cam kết",
+      "example_en": "deliver a captive from the prison",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "deliver a package; deliver the mail",
+          "example_vi": null
+        },
+        {
+          "example_en": "deliver the thief to the police",
+          "example_vi": null
+        },
+        {
+          "example_en": "deliver a speech",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25886,
+      "word": "delivery",
+      "normalized_word": "delivery",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'livəri/",
+      "primary_meaning_vi": "sự phân phát (thư)",
+      "meaning_vi": "sự phân phát (thư); sự phân phối, sự giao hàng; cách nói; sự đọc, sự bày tỏ, sự phát biểu (ý kiến); sự sinh đẻ; sự ném, sự phóng, sự bắn (quả bóng, tên đạn...); sự mở (cuộc tấn công); sự ban ra, sự truyền ra (lệnh); sự nhượng bộ, sự đầu hàng, sự chuyển nhượng; công suất (máy nước...)",
+      "example_en": "The delivery was completed by four.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Your delivery is on the table.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The delivery was painful.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His delivery has a catch in it.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25887,
+      "word": "demand",
+      "normalized_word": "demand",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'mɑ:nd/",
+      "primary_meaning_vi": "sự đòi hỏi",
+      "meaning_vi": "sự đòi hỏi, sự yêu cầu; nhu cầu; những sự đòi hỏi cấp bách (đối với thì giờ, túi tiền... của ai); đòi hỏi, yêu cầu; cần, cần phải; hỏi, hỏi gặng",
+      "example_en": "Prices usually go up when demand exceeds supply.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Modern society is responding to women's demands for equality.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His job makes many demands on his time.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She couldn't ignore the newborn baby's demands for attention.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25888,
+      "word": "democracy",
+      "normalized_word": "democracy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'mɔkrəsi/",
+      "primary_meaning_vi": "nền dân chủ",
+      "meaning_vi": "nền dân chủ, chế độ dân chủ; nước (theo chế độ) dân chủ; (Democracy) cương lĩnh đảng Dân chủ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25889,
+      "word": "democratic",
+      "normalized_word": "democratic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,demə'krætik/",
+      "primary_meaning_vi": "dân chủ",
+      "meaning_vi": "dân chủ",
+      "example_en": "The United States is a democratic country, as the citizens are allowed to choose leaders to represent their interests.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Mount Vernon is run by a strong democratic party organization.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25890,
+      "word": "demonstrate",
+      "normalized_word": "demonstrate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'demənstreit/",
+      "primary_meaning_vi": "chứng minh",
+      "meaning_vi": "chứng minh, giải thích; bày tỏ, biểu lộ, làm thấy rõ; biểu tình, biểu tình tuần hành, biểu dương lực lượng; thao diễn",
+      "example_en": "Can you demonstrate the new tools for us?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Those people outside are demonstrating against the election results.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

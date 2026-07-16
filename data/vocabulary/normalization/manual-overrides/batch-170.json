@@ -1,0 +1,26 @@
+{
+  "batchId": "batch-170",
+  "reason": "Sửa thủ công nghĩa quá dài của challenging (id=25693); giữ nguyên 10 câu tiếng Anh từ response Gemini.",
+  "records": [
+    {
+      "id": 25693,
+      "quiz_meaning_vi": "đầy thử thách",
+      "meaning_vi_clean": "đầy thử thách",
+      "example_vi": [
+        "Đây là một nhiệm vụ đầy thử thách đối với học sinh.",
+        "Công việc này rất thử thách nhưng xứng đáng.",
+        "Anh ấy thích làm việc với những dự án đầy thử thách.",
+        "Đó là một chuyến leo núi đầy thử thách để lên đến đỉnh.",
+        "Bài kiểm tra khá thử thách đối với mọi người.",
+        "Cô ấy thấy vai trò mới rất thử thách.",
+        "Cuộc thảo luận rất thử thách và thú vị.",
+        "Ông ấy đã có một bài phát biểu đầy thách thức trước khán giả.",
+        "Cuốn sách đưa ra một góc nhìn đầy thách thức về lịch sử.",
+        "Đó là một trải nghiệm đầy thử thách đã thay đổi suy nghĩ của anh ấy."
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa thủ công nghĩa nguồn dài và không đúng dạng tính từ thành 'đầy thử thách'; giữ 10 câu tiếng Anh và hiệu chỉnh bản dịch."
+    }
+  ]
+}

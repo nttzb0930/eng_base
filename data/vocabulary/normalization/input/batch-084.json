@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-084",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24831,
+      "word": "complete",
+      "normalized_word": "complete",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kəm'pli:t/",
+      "primary_meaning_vi": "đầy đủ",
+      "meaning_vi": "đầy đủ, trọn vẹn, hoàn toàn; hoàn thành, xong; hoàn toàn, toàn diện (người); hoàn thành, làm xong; làm đầy đủ, bổ sung, làm cho trọn vẹn; làm cho hoàn toàn",
+      "example_en": "He completed the assignment on time.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The last chapter completes the book nicely.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After she found the rook, the chess set was complete.",
+          "example_vi": null
+        },
+        {
+          "example_en": "When your homework is complete, you can go and play with Martin.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24832,
+      "word": "composer",
+      "normalized_word": "composer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kəm'pouzə/",
+      "primary_meaning_vi": "người soạn nhạc",
+      "meaning_vi": "người soạn nhạc; người soạn, người sáng tác",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24833,
+      "word": "concentrate",
+      "normalized_word": "concentrate",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kɔnsentreit/",
+      "primary_meaning_vi": "tập trung",
+      "meaning_vi": "tập trung; cô (chất lỏng)",
+      "example_en": "to concentrate rays of light into a focus",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to concentrate acid by evaporation",
+          "example_vi": null
+        },
+        {
+          "example_en": "Population tends to concentrate in cities.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Let me concentrate!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24834,
+      "word": "concern",
+      "normalized_word": "concern",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'sə:n/",
+      "primary_meaning_vi": "sự liên quan tới",
+      "meaning_vi": "sự liên quan tới, sự dính líu tới; lợi, lợi lộc; phần, cổ phần; việc, chuyện phải lo; sự lo lắng, sự lo âu, sự lo ngại; sự quan tâm; hãng buôn, xí nghiệp; công việc kinh doanh; cái, vật (gì); không biết gì đến, không quan tâm gì đến; liên quan, dính líu tới; nhúng vào; lo lắng, băn khoăn; quan tâm; về việc, đối với; về phần tôi, đối với tôi",
+      "example_en": "Judy's eyes filled with concern as she listened to the news report.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The employees’ attitude is really hurting the concern.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A good prince concerns himself in the happiness of his subjects.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I’m concerned that she’s becoming an alcoholic.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24835,
+      "word": "condition",
+      "normalized_word": "condition",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'diʃn/",
+      "primary_meaning_vi": "điều kiện",
+      "meaning_vi": "điều kiện; hoàn cảnh, tình cảnh, tình thế; địa vị, thân phận; trạng thái, tình trạng; mệnh đề điều kiện; kỳ thi vớt; lấy vợ, lấy chồng, lập gia đình; ước định, quy định; tuỳ thuộc vào, quyết định bởi; là điều kiện của, cần thiết cho; thử, kiểm tra phẩm chất (hàng hoá); làm cho sung sức; chăm sóc cho khoẻ mạnh; dự kỳ thi vớt",
+      "example_en": "Environmental protection is a condition for sustainability. What other planets might have the right conditions for life? The union had a dispute over sick time and other conditions of employment.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My aunt couldn't walk up the stairs in her condition.",
+          "example_vi": null
+        },
+        {
+          "example_en": "National reports on the condition of public education are dismal. The condition of man can be classified as civilized or uncivilized.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A man of his condition has no place to make request.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24836,
+      "word": "confident",
+      "normalized_word": "confident",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔnfidənt/",
+      "primary_meaning_vi": "tin chắc",
+      "meaning_vi": "tin chắc, chắc chắn; tự tin; tin tưởng, tin cậy; liều, liều lĩnh; trơ tráo, mặt dạn mày dày; láo xược; người tâm phúc, người tri kỷ",
+      "example_en": "I'm pretty confident that she's not lying, she's acting normally.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24837,
+      "word": "confuse",
+      "normalized_word": "confuse",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'fju:z/",
+      "primary_meaning_vi": "làm lộn xộn",
+      "meaning_vi": "làm lộn xộn, làm lung tung, xáo trộn; làm cho mơ hồ, làm cho mập mờ, làm cho tối, làm rối rắm (ý nghĩa...); lẫn lộn, nhầm lẫn; dạng bị động) làm bối rối, làm ngượng, làm xấu hổ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24838,
+      "word": "confused",
+      "normalized_word": "confused",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'fju:zd/",
+      "primary_meaning_vi": "lẫn lộn",
+      "meaning_vi": "lẫn lộn, lộn xộn, rối rắm; mơ hồ; bối rối, ngượng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24839,
+      "word": "consequence",
+      "normalized_word": "consequence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔnsikwəns/",
+      "primary_meaning_vi": "hậu quả",
+      "meaning_vi": "hậu quả, kết quả; hệ quả; tầm quan trọng, tính trọng đại; vì thế, vậy thì, như vậy thì",
+      "example_en": "I'm warning you. If you don't get me the report on time, there will be consequences.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24840,
+      "word": "consider",
+      "normalized_word": "consider",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/kən'sidə/",
+      "primary_meaning_vi": "cân nhắc",
+      "meaning_vi": "cân nhắc, xem xét, suy xét, suy nghĩ; để ý đến, quan tâm đến, lưu ý đến; xem như, coi như; có ý kiến là",
+      "example_en": "Consider that we’ve had three major events and the year has hardly begun.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I’m considering going to the beach tomorrow.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Consider yourself lucky, but consider your opponent skillful.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She sat there for a moment, considering him.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

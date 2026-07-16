@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24811,
+      "quiz_meaning_vi": "đầu mối",
+      "meaning_vi_clean": "đầu mối; manh mối",
+      "examples_clean": [
+        {
+          "meaning_vi": "đầu mối",
+          "example_en": "The police are looking for a new clue to solve the crime.",
+          "example_vi": "Cảnh sát đang tìm kiếm một đầu mối mới để giải quyết vụ án."
+        },
+        {
+          "meaning_vi": "đầu mối",
+          "example_en": "This small piece of evidence is a vital clue.",
+          "example_vi": "Mảnh bằng chứng nhỏ này là một đầu mối quan trọng."
+        },
+        {
+          "meaning_vi": "đầu mối",
+          "example_en": "Do you have any clue where he might be?",
+          "example_vi": "Bạn có đầu mối nào về việc anh ấy có thể đang ở đâu không?"
+        },
+        {
+          "meaning_vi": "đầu mối",
+          "example_en": "The detective followed every clue he could find.",
+          "example_vi": "Thám tử đã lần theo mọi đầu mối mà anh ta có thể tìm thấy."
+        },
+        {
+          "meaning_vi": "manh mối",
+          "example_en": "They found a hidden clue in the old letter.",
+          "example_vi": "Họ tìm thấy một manh mối ẩn giấu trong bức thư cũ."
+        },
+        {
+          "meaning_vi": "manh mối",
+          "example_en": "The crossword puzzle gave me a clue for the answer.",
+          "example_vi": "Trò chơi ô chữ đã cho tôi một manh mối để tìm ra câu trả lời."
+        },
+        {
+          "meaning_vi": "manh mối",
+          "example_en": "There is not a single clue about who did this.",
+          "example_vi": "Không có lấy một manh mối nào về việc ai đã làm điều này."
+        },
+        {
+          "meaning_vi": "manh mối",
+          "example_en": "She searched the room for any clue.",
+          "example_vi": "Cô ấy lục soát căn phòng để tìm bất kỳ manh mối nào."
+        },
+        {
+          "meaning_vi": "manh mối",
+          "example_en": "The witness provided a key clue to the investigation.",
+          "example_vi": "Nhân chứng đã cung cấp một manh mối quan trọng cho cuộc điều tra."
+        },
+        {
+          "meaning_vi": "manh mối",
+          "example_en": "He left a clue that led us to the truth.",
+          "example_vi": "Anh ấy đã để lại một manh mối dẫn chúng tôi đến sự thật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, loại bỏ các nghĩa không phù hợp cấp độ A2, bổ sung ví dụ.",
+      "word": "clue",
+      "normalized_word": "clue",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police are looking for a new clue to solve the crime.",
+      "example_vi_clean": "Cảnh sát đang tìm kiếm một đầu mối mới để giải quyết vụ án."
+    },
+    {
+      "id": 24812,
+      "quiz_meaning_vi": "bờ biển",
+      "meaning_vi_clean": "bờ biển; đi men bờ biển",
+      "examples_clean": [
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "We spent our summer vacation on the coast.",
+          "example_vi": "Chúng tôi đã dành kỳ nghỉ hè ở bờ biển."
+        },
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "The rocky coast is beautiful at sunset.",
+          "example_vi": "Bờ biển đầy đá rất đẹp vào lúc hoàng hôn."
+        },
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "Many small towns are located along the coast.",
+          "example_vi": "Nhiều thị trấn nhỏ nằm dọc theo bờ biển."
+        },
+        {
+          "meaning_vi": "bờ biển",
+          "example_en": "The storm hit the coast early this morning.",
+          "example_vi": "Cơn bão đã đổ bộ vào bờ biển sáng sớm nay."
+        },
+        {
+          "meaning_vi": "đi men bờ biển",
+          "example_en": "The ship continued to coast along the shoreline.",
+          "example_vi": "Con tàu tiếp tục đi men theo đường bờ biển."
+        },
+        {
+          "meaning_vi": "đi men bờ biển",
+          "example_en": "They decided to coast along the coast to enjoy the view.",
+          "example_vi": "Họ quyết định đi men theo bờ biển để thưởng ngoạn cảnh đẹp."
+        },
+        {
+          "meaning_vi": "đi men bờ biển",
+          "example_en": "The boat will coast past the island tonight.",
+          "example_vi": "Con tàu sẽ đi men qua hòn đảo vào tối nay."
+        },
+        {
+          "meaning_vi": "đi men bờ biển",
+          "example_en": "We watched the fishing boats coast along the horizon.",
+          "example_vi": "Chúng tôi nhìn những con tàu đánh cá đi men theo đường chân trời."
+        },
+        {
+          "meaning_vi": "đi men bờ biển",
+          "example_en": "It is safer to coast near the shore in bad weather.",
+          "example_vi": "Đi men gần bờ sẽ an toàn hơn khi thời tiết xấu."
+        },
+        {
+          "meaning_vi": "đi men bờ biển",
+          "example_en": "The captain steered the vessel to coast along the bay.",
+          "example_vi": "Thuyền trưởng lái con tàu đi men theo vịnh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ (nghĩa chính) và bổ sung nghĩa động từ, làm sạch ví dụ.",
+      "word": "coast",
+      "normalized_word": "coast",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We spent our summer vacation on the coast.",
+      "example_vi_clean": "Chúng tôi đã dành kỳ nghỉ hè ở bờ biển."
+    },
+    {
+      "id": 24813,
+      "quiz_meaning_vi": "đồng tiền",
+      "meaning_vi_clean": "đồng tiền; đúc tiền; đặt ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng tiền",
+          "example_en": "He found an old gold coin in the garden.",
+          "example_vi": "Anh ấy tìm thấy một đồng tiền vàng cũ trong vườn."
+        },
+        {
+          "meaning_vi": "đồng tiền",
+          "example_en": "She keeps a lucky coin in her pocket.",
+          "example_vi": "Cô ấy giữ một đồng tiền may mắn trong túi."
+        },
+        {
+          "meaning_vi": "đồng tiền",
+          "example_en": "The machine only accepts this type of coin.",
+          "example_vi": "Cái máy chỉ chấp nhận loại đồng tiền này."
+        },
+        {
+          "meaning_vi": "đồng tiền",
+          "example_en": "He flipped a coin to decide who goes first.",
+          "example_vi": "Anh ấy tung một đồng tiền để quyết định ai đi trước."
+        },
+        {
+          "meaning_vi": "đúc tiền",
+          "example_en": "The government decided to coin new money for the festival.",
+          "example_vi": "Chính phủ quyết định đúc tiền mới cho lễ hội."
+        },
+        {
+          "meaning_vi": "đúc tiền",
+          "example_en": "They used special metal to coin the currency.",
+          "example_vi": "Họ đã sử dụng kim loại đặc biệt để đúc tiền."
+        },
+        {
+          "meaning_vi": "đúc tiền",
+          "example_en": "The mint is where they coin all the metal money.",
+          "example_vi": "Xưởng đúc tiền là nơi họ đúc tất cả tiền kim loại."
+        },
+        {
+          "meaning_vi": "đặt ra",
+          "example_en": "He was the first to coin the term for this technology.",
+          "example_vi": "Ông ấy là người đầu tiên đặt ra thuật ngữ cho công nghệ này."
+        },
+        {
+          "meaning_vi": "đặt ra",
+          "example_en": "Scientists often coin new words for their discoveries.",
+          "example_vi": "Các nhà khoa học thường đặt ra những từ mới cho các khám phá của họ."
+        },
+        {
+          "meaning_vi": "đặt ra",
+          "example_en": "Who did coin this popular phrase?",
+          "example_vi": "Ai đã đặt ra cụm từ phổ biến này?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ, bổ sung nghĩa và ví dụ phù hợp.",
+      "word": "coin",
+      "normalized_word": "coin",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He found an old gold coin in the garden.",
+      "example_vi_clean": "Anh ấy tìm thấy một đồng tiền vàng cũ trong vườn."
+    },
+    {
+      "id": 24814,
+      "quiz_meaning_vi": "điều chỉnh theo giá sinh hoạt",
+      "meaning_vi_clean": "điều chỉnh theo giá sinh hoạt",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "The salary includes a cola to help with rising costs.",
+          "example_vi": "Mức lương bao gồm khoản điều chỉnh theo giá sinh hoạt để giúp chi trả chi phí tăng cao."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "Employees requested a cola due to high inflation.",
+          "example_vi": "Nhân viên đã yêu cầu một khoản điều chỉnh theo giá sinh hoạt do lạm phát cao."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "The company offers a cola for all staff members.",
+          "example_vi": "Công ty cung cấp khoản điều chỉnh theo giá sinh hoạt cho tất cả nhân viên."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "A cola is essential when living in an expensive city.",
+          "example_vi": "Khoản điều chỉnh theo giá sinh hoạt là cần thiết khi sống ở một thành phố đắt đỏ."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "They calculated the cola based on the consumer price index.",
+          "example_vi": "Họ đã tính toán khoản điều chỉnh theo giá sinh hoạt dựa trên chỉ số giá tiêu dùng."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "The union is negotiating for a better cola.",
+          "example_vi": "Công đoàn đang đàm phán để có khoản điều chỉnh theo giá sinh hoạt tốt hơn."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "Without a cola, real wages have decreased.",
+          "example_vi": "Nếu không có khoản điều chỉnh theo giá sinh hoạt, tiền lương thực tế đã giảm."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "The government announced a small cola for pensioners.",
+          "example_vi": "Chính phủ đã công bố một khoản điều chỉnh theo giá sinh hoạt nhỏ cho người hưởng lương hưu."
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "Is the cola included in your contract?",
+          "example_vi": "Khoản điều chỉnh theo giá sinh hoạt có được bao gồm trong hợp đồng của bạn không?"
+        },
+        {
+          "meaning_vi": "điều chỉnh theo giá sinh hoạt",
+          "example_en": "The cola helps maintain the standard of living.",
+          "example_vi": "Khoản điều chỉnh theo giá sinh hoạt giúp duy trì mức sống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung thông tin thiếu, chuẩn hóa nghĩa và ví dụ.",
+      "word": "cola",
+      "normalized_word": "cola",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The salary includes a cola to help with rising costs.",
+      "example_vi_clean": "Mức lương bao gồm khoản điều chỉnh theo giá sinh hoạt để giúp chi trả chi phí tăng cao."
+    },
+    {
+      "id": 24815,
+      "quiz_meaning_vi": "nhiều màu sắc",
+      "meaning_vi_clean": "nhiều màu sắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "The garden is full of colourful flowers.",
+          "example_vi": "Khu vườn đầy những bông hoa nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "She wore a colourful dress to the party.",
+          "example_vi": "Cô ấy mặc một chiếc váy nhiều màu sắc đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "The painting is very colourful and bright.",
+          "example_vi": "Bức tranh rất nhiều màu sắc và tươi sáng."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "We saw many colourful birds in the forest.",
+          "example_vi": "Chúng tôi đã thấy nhiều loài chim nhiều màu sắc trong rừng."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "The festival was a colourful event.",
+          "example_vi": "Lễ hội là một sự kiện nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "He has a colourful collection of stamps.",
+          "example_vi": "Anh ấy có một bộ sưu tập tem nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "The sunset created a colourful sky.",
+          "example_vi": "Hoàng hôn đã tạo nên một bầu trời nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "The children drew colourful pictures.",
+          "example_vi": "Những đứa trẻ đã vẽ những bức tranh nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "The market is a colourful place to visit.",
+          "example_vi": "Khu chợ là một nơi nhiều màu sắc để ghé thăm."
+        },
+        {
+          "meaning_vi": "nhiều màu sắc",
+          "example_en": "Her room is decorated with colourful posters.",
+          "example_vi": "Phòng của cô ấy được trang trí bằng những tấm áp phích nhiều màu sắc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ.",
+      "word": "colourful",
+      "normalized_word": "colourful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The garden is full of colourful flowers.",
+      "example_vi_clean": "Khu vườn đầy những bông hoa nhiều màu sắc."
+    },
+    {
+      "id": 24816,
+      "quiz_meaning_vi": "cột",
+      "meaning_vi_clean": "cột; mục",
+      "examples_clean": [
+        {
+          "meaning_vi": "cột",
+          "example_en": "The building is supported by large stone columns.",
+          "example_vi": "Tòa nhà được chống đỡ bởi những cái cột đá lớn."
+        },
+        {
+          "meaning_vi": "cột",
+          "example_en": "The table has three columns of data.",
+          "example_vi": "Bảng này có ba cột dữ liệu."
+        },
+        {
+          "meaning_vi": "cột",
+          "example_en": "He stood by the marble column.",
+          "example_vi": "Anh ấy đứng cạnh cái cột bằng đá cẩm thạch."
+        },
+        {
+          "meaning_vi": "cột",
+          "example_en": "Please write your name in the first column.",
+          "example_vi": "Vui lòng viết tên của bạn vào cột đầu tiên."
+        },
+        {
+          "meaning_vi": "mục",
+          "example_en": "She writes a weekly column for the local newspaper.",
+          "example_vi": "Cô ấy viết một mục hàng tuần cho tờ báo địa phương."
+        },
+        {
+          "meaning_vi": "mục",
+          "example_en": "I enjoy reading his column about travel.",
+          "example_vi": "Tôi thích đọc mục của anh ấy về du lịch."
+        },
+        {
+          "meaning_vi": "mục",
+          "example_en": "The advice column helps people with their problems.",
+          "example_vi": "Mục tư vấn giúp mọi người giải quyết các vấn đề của họ."
+        },
+        {
+          "meaning_vi": "mục",
+          "example_en": "Did you see the column in today's paper?",
+          "example_vi": "Bạn có thấy mục trên tờ báo hôm nay không?"
+        },
+        {
+          "meaning_vi": "mục",
+          "example_en": "His column is very popular with readers.",
+          "example_vi": "Mục của anh ấy rất phổ biến với độc giả."
+        },
+        {
+          "meaning_vi": "mục",
+          "example_en": "She has been writing this column for years.",
+          "example_vi": "Cô ấy đã viết mục này trong nhiều năm rồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "column",
+      "normalized_word": "column",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The building is supported by large stone columns.",
+      "example_vi_clean": "Tòa nhà được chống đỡ bởi những cái cột đá lớn."
+    },
+    {
+      "id": 24817,
+      "quiz_meaning_vi": "cái lược",
+      "meaning_vi_clean": "cái lược; chải",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái lược",
+          "example_en": "She bought a new plastic comb.",
+          "example_vi": "Cô ấy đã mua một cái lược nhựa mới."
+        },
+        {
+          "meaning_vi": "cái lược",
+          "example_en": "He keeps a small comb in his pocket.",
+          "example_vi": "Anh ấy giữ một cái lược nhỏ trong túi."
+        },
+        {
+          "meaning_vi": "cái lược",
+          "example_en": "The comb is made of wood.",
+          "example_vi": "Cái lược này được làm bằng gỗ."
+        },
+        {
+          "meaning_vi": "cái lược",
+          "example_en": "I cannot find my comb anywhere.",
+          "example_vi": "Tôi không thể tìm thấy cái lược của mình ở đâu cả."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "She needs to comb her hair before going out.",
+          "example_vi": "Cô ấy cần chải tóc trước khi ra ngoài."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "He combed his hair carefully in front of the mirror.",
+          "example_vi": "Anh ấy chải tóc cẩn thận trước gương."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "Can you help me comb my daughter's hair?",
+          "example_vi": "Bạn có thể giúp tôi chải tóc cho con gái tôi không?"
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "She combed the tangles out of her hair.",
+          "example_vi": "Cô ấy chải những chỗ rối ra khỏi tóc mình."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "He combed his hair back neatly.",
+          "example_vi": "Anh ấy chải tóc ngược ra sau một cách gọn gàng."
+        },
+        {
+          "meaning_vi": "chải",
+          "example_en": "It is important to comb your hair every day.",
+          "example_vi": "Việc chải tóc mỗi ngày là rất quan trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "comb",
+      "normalized_word": "comb",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She bought a new plastic comb.",
+      "example_vi_clean": "Cô ấy đã mua một cái lược nhựa mới."
+    },
+    {
+      "id": 24818,
+      "quiz_meaning_vi": "tiện lợi",
+      "meaning_vi_clean": "tiện lợi; thoải mái",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "This new kitchen is very comfortable to work in.",
+          "example_vi": "Căn bếp mới này rất tiện lợi để làm việc."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "It is a comfortable way to travel.",
+          "example_vi": "Đó là một cách đi lại rất tiện lợi."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "The hotel is in a comfortable location.",
+          "example_vi": "Khách sạn nằm ở một vị trí tiện lợi."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "We need a comfortable solution for our commute.",
+          "example_vi": "Chúng tôi cần một giải pháp tiện lợi cho việc đi lại."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "These shoes are very comfortable.",
+          "example_vi": "Đôi giày này rất thoải mái."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "I feel comfortable in this chair.",
+          "example_vi": "Tôi cảm thấy thoải mái trên chiếc ghế này."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "She made me feel comfortable at her home.",
+          "example_vi": "Cô ấy làm tôi cảm thấy thoải mái tại nhà cô ấy."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "The bed was soft and comfortable.",
+          "example_vi": "Chiếc giường rất mềm mại và thoải mái."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "We had a comfortable stay at the resort.",
+          "example_vi": "Chúng tôi đã có một kỳ nghỉ thoải mái tại khu nghỉ dưỡng."
+        },
+        {
+          "meaning_vi": "thoải mái",
+          "example_en": "He is comfortable with his new job.",
+          "example_vi": "Anh ấy cảm thấy thoải mái với công việc mới của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "comfortable",
+      "normalized_word": "comfortable",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This new kitchen is very comfortable to work in.",
+      "example_vi_clean": "Căn bếp mới này rất tiện lợi để làm việc."
+    },
+    {
+      "id": 24819,
+      "quiz_meaning_vi": "hài hước",
+      "meaning_vi_clean": "hài hước; kịch vui",
+      "examples_clean": [
+        {
+          "meaning_vi": "hài hước",
+          "example_en": "He told a very comic story.",
+          "example_vi": "Anh ấy đã kể một câu chuyện rất hài hước."
+        },
+        {
+          "meaning_vi": "hài hước",
+          "example_en": "The movie had many comic moments.",
+          "example_vi": "Bộ phim có nhiều khoảnh khắc hài hước."
+        },
+        {
+          "meaning_vi": "hài hước",
+          "example_en": "She has a comic sense of humor.",
+          "example_vi": "Cô ấy có khiếu hài hước rất vui nhộn."
+        },
+        {
+          "meaning_vi": "hài hước",
+          "example_en": "The actor gave a comic performance.",
+          "example_vi": "Người diễn viên đã có một màn trình diễn hài hước."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "We went to see a comic at the theater.",
+          "example_vi": "Chúng tôi đã đi xem một vở kịch vui tại nhà hát."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "The comic was very funny.",
+          "example_vi": "Vở kịch vui đó rất buồn cười."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "He is a famous writer of comic plays.",
+          "example_vi": "Ông ấy là một nhà văn nổi tiếng về các vở kịch vui."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "The audience enjoyed the comic.",
+          "example_vi": "Khán giả đã rất thích vở kịch vui đó."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "They are performing a classic comic.",
+          "example_vi": "Họ đang biểu diễn một vở kịch vui kinh điển."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "The comic was a great success.",
+          "example_vi": "Vở kịch vui đó đã thành công rực rỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "comic",
+      "normalized_word": "comic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He told a very comic story.",
+      "example_vi_clean": "Anh ấy đã kể một câu chuyện rất hài hước."
+    },
+    {
+      "id": 24820,
+      "quiz_meaning_vi": "sự cam kết",
+      "meaning_vi_clean": "sự cam kết; lời hứa",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cam kết",
+          "example_en": "He showed a strong commitment to his work.",
+          "example_vi": "Anh ấy đã thể hiện sự cam kết mạnh mẽ với công việc của mình."
+        },
+        {
+          "meaning_vi": "sự cam kết",
+          "example_en": "Marriage is a serious commitment.",
+          "example_vi": "Hôn nhân là một sự cam kết nghiêm túc."
+        },
+        {
+          "meaning_vi": "sự cam kết",
+          "example_en": "The company has a commitment to quality.",
+          "example_vi": "Công ty có sự cam kết về chất lượng."
+        },
+        {
+          "meaning_vi": "sự cam kết",
+          "example_en": "They made a commitment to help the poor.",
+          "example_vi": "Họ đã đưa ra sự cam kết giúp đỡ người nghèo."
+        },
+        {
+          "meaning_vi": "lời hứa",
+          "example_en": "She kept her commitment to visit us.",
+          "example_vi": "Cô ấy đã giữ lời hứa đến thăm chúng tôi."
+        },
+        {
+          "meaning_vi": "lời hứa",
+          "example_en": "It is hard to fulfill such a big commitment.",
+          "example_vi": "Thật khó để thực hiện một lời hứa lớn như vậy."
+        },
+        {
+          "meaning_vi": "lời hứa",
+          "example_en": "He broke his commitment to the team.",
+          "example_vi": "Anh ấy đã phá vỡ lời hứa với đội."
+        },
+        {
+          "meaning_vi": "lời hứa",
+          "example_en": "We need a firm commitment from you.",
+          "example_vi": "Chúng tôi cần một lời hứa chắc chắn từ bạn."
+        },
+        {
+          "meaning_vi": "lời hứa",
+          "example_en": "Her commitment to the project is clear.",
+          "example_vi": "Lời hứa của cô ấy đối với dự án là rất rõ ràng."
+        },
+        {
+          "meaning_vi": "lời hứa",
+          "example_en": "They signed a document as a commitment.",
+          "example_vi": "Họ đã ký một tài liệu như một lời hứa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ các thuật ngữ pháp lý sang nghĩa phổ thông, bổ sung ví dụ.",
+      "word": "commitment",
+      "normalized_word": "commitment",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He showed a strong commitment to his work.",
+      "example_vi_clean": "Anh ấy đã thể hiện sự cam kết mạnh mẽ với công việc của mình."
+    }
+  ]
+}

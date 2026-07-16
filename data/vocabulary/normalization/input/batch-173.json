@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-173",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25721,
+      "word": "civilization",
+      "normalized_word": "civilization",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,sivilai'zeiʃn/",
+      "primary_meaning_vi": "sự làm cho văn minh",
+      "meaning_vi": "sự làm cho văn minh, sự khai hoá; nền văn minh; những nước văn minh, những dân tộc văn minh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25722,
+      "word": "claim",
+      "normalized_word": "claim",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kleim/",
+      "primary_meaning_vi": "sự đòi",
+      "meaning_vi": "sự đòi, sự yêu sách, sự thỉnh cầu; quyền đòi, quyền yêu sách; vật yêu sách; điều yêu sách; , (Uc) quyền khai thác mỏ; luận điệu; lời xác nhận; đòi, yêu sách; thỉnh cầu; đòi hỏi, bắt phải, đáng để; nhận, khai là, cho là, tự cho là; xác nhận, nhận chắc",
+      "example_en": "a claim of ownership",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "You don't have any claim on my time, since I'm no longer your employee.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The company's share price dropped amid claims of accounting fraud.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Miners had to stake their claims during the gold rush.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25723,
+      "word": "classical",
+      "normalized_word": "classical",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'klæsikəl/",
+      "primary_meaning_vi": "kinh điển",
+      "meaning_vi": "kinh điển; cổ điển; không hoa mỹ; hạng ưu (tác phẩm văn học)",
+      "example_en": "classical dance.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25724,
+      "word": "classify",
+      "normalized_word": "classify",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'klæsifai/",
+      "primary_meaning_vi": "phân loại",
+      "meaning_vi": "phân loại",
+      "example_en": "Should we classify \"make up\" as an idiom or as a phrasal verb?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They decided to classify that information.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25725,
+      "word": "click",
+      "normalized_word": "click",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/klik/",
+      "primary_meaning_vi": "tiếng lách cách",
+      "meaning_vi": "tiếng lách cách; con cóc, cái ngàm (bánh xe răng cưa); tật đá chân vào nhau; sự đá chân vào nhau (ngựa); làm thành tiếng lách cách; kêu lách cách; đá chân vào nhau (ngựa); tâm đầu ý hiệp; ăn ý ngay từ phút đầu (hai người); thành công (trong một công việc)",
+      "example_en": "I turned the key, the lock gave a click and the door opened; a click of one’s fingers",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Visit a location, call, or click www.example.com.",
+          "example_vi": null
+        },
+        {
+          "example_en": "From the home page, click through to the Products section.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He bent his fingers back until the joints clicked.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25726,
+      "word": "cliff",
+      "normalized_word": "cliff",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/klif/",
+      "primary_meaning_vi": "vách đá (nhô ra biển)",
+      "meaning_vi": "vách đá (nhô ra biển); câu chuyện hấp dẫn được kể từng phần trên một đài phát thanh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25727,
+      "word": "climate",
+      "normalized_word": "climate",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'klaimit/",
+      "primary_meaning_vi": "khí hậu",
+      "meaning_vi": "khí hậu, thời tiết; miền khí hậu; hoàn cảnh, môi trường, không khí; xu hướng chung (của một tập thể); xu thế (của thời đại)",
+      "example_en": "Industries that require a lot of fossil fuels are unlikely to be popular in the current political climate.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25728,
+      "word": "climber",
+      "normalized_word": "climber",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'klaimə/",
+      "primary_meaning_vi": "người leo trèo",
+      "meaning_vi": "người leo trèo, người leo núi; cây leo; chim leo trèo; kẻ thích bon chen ((cũng) social_climber); climbing_irons",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25729,
+      "word": "clinic",
+      "normalized_word": "clinic",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'klinik/",
+      "primary_meaning_vi": "bệnh viện thực hành",
+      "meaning_vi": "bệnh viện thực hành; sự lên lớp ở buồng bệnh, sự thực hành ở buồng bệnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25730,
+      "word": "clip",
+      "normalized_word": "clip",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/klip/",
+      "primary_meaning_vi": "cái ghim",
+      "meaning_vi": "cái ghim, cái cặp, cái kẹp; cái nạp đạn; sự xén, sự cắt, sự hớt (lông cừu); mớ lông (cừu...) xén ra; cú đánh mạnh, cú quật mạnh; kéo xén; tông-đơ; cái bấm móng tay; cắt, cắt rời ra, xén, hớt (lông cừu, ngựa); rút ngắn, cô lại; bấm, xé đầu (vé, phiếu... để loại đi); nuốt, bỏ bớt, đọc không rõ; đấm mạnh, đánh, nện; sự đi nhanh; đứa bé láo xược, ranh con hỗn xược; đi nhanh; chạy",
+      "example_en": "Use this clip to attach the check to your tax form.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was walking at a fair clip and I was out of breath trying to keep up.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Please clip the photos to the pages where they will go.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I went into the salon to get a clip.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

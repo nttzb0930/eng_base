@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-126",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25251,
+      "word": "method",
+      "normalized_word": "method",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'meθəd/",
+      "primary_meaning_vi": "phương pháp",
+      "meaning_vi": "phương pháp, cách thức; thứ tự; hệ thống; cứ bán cái điên của nó đi mà ăn",
+      "example_en": "If one method doesn't work, you should ask a friend to help you.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The company employs extensive use of 3D modelling combined with solidification simulation to ensure that critical castings are properly methoded.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25252,
+      "word": "metre",
+      "normalized_word": "metre",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mi:tə/",
+      "primary_meaning_vi": "vận luật (trong thơ)",
+      "meaning_vi": "vận luật (trong thơ); nhịp phách; Mét",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25253,
+      "word": "midday",
+      "normalized_word": "midday",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  (thường) định ngữ",
+      "phonetic": "/'middei/",
+      "primary_meaning_vi": "trưa",
+      "meaning_vi": "trưa, buổi trưa",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25254,
+      "word": "midnight",
+      "normalized_word": "midnight",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'midnait/",
+      "primary_meaning_vi": "nửa đêm",
+      "meaning_vi": "nửa đêm, mười hai giờ đêm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25255,
+      "word": "might",
+      "normalized_word": "might",
+      "cefr_level": "A2",
+      "pos": "modal auxiliary",
+      "pos_vi": "danh từ",
+      "phonetic": "/mait/",
+      "primary_meaning_vi": "sức mạnh",
+      "meaning_vi": "sức mạnh, lực (thân thể hoặc tinh thần)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25256,
+      "word": "military",
+      "normalized_word": "military",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'militəri/",
+      "primary_meaning_vi": "quân đội",
+      "meaning_vi": "quân đội, (thuộc) quân sự; the military quân đội, bộ đội",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25257,
+      "word": "million",
+      "normalized_word": "million",
+      "cefr_level": "A2",
+      "pos": "number",
+      "pos_vi": "danh từ",
+      "phonetic": "/'miljən/",
+      "primary_meaning_vi": "triệu",
+      "meaning_vi": "triệu; triệu; (một) triệu đồng bảng; (từ Mỹ,nghĩa Mỹ) (một) triệu đô la; quần chúng, quảng đại quần chúng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25258,
+      "word": "mirror",
+      "normalized_word": "mirror",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'mirə/",
+      "primary_meaning_vi": "gương",
+      "meaning_vi": "gương; hình ảnh trung thực (của cái gì); phản chiếu, phản ánh",
+      "example_en": "I had a look in the mirror to see if the blood had come off my face.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His story is a mirror into the life of orphans growing up.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Although the content had been deleted from his blog, it was still found on some mirrors.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25259,
+      "word": "missing",
+      "normalized_word": "missing",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'misiɳ/",
+      "primary_meaning_vi": "vắng",
+      "meaning_vi": "vắng, thiếu, khuyết, mất tích, thất lạc; the missing (quân sự) những người mất tích",
+      "example_en": "I missed the target.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to miss an opportunity",
+          "example_vi": null
+        },
+        {
+          "example_en": "The car just missed hitting a passer-by.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I miss you! Come home soon!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25260,
+      "word": "mistake",
+      "normalized_word": "mistake",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ mistook; mistaken",
+      "phonetic": "/mis'teik/",
+      "primary_meaning_vi": "lỗi",
+      "meaning_vi": "lỗi, sai lầm, lỗi lầm; không còn nghi ngờ gì nữa; phạm sai lầm, phạm lỗi; hiểu sai, hiểu lầm; lầm, lầm lẫn; không thể nào lầm được",
+      "example_en": "Don't mistake my kindness for weakness.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

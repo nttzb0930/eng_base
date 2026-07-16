@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26498,
+      "quiz_meaning_vi": "vụ nổ",
+      "meaning_vi_clean": "vụ nổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "The blast destroyed the entire building.",
+          "example_vi": "Vụ nổ đã phá hủy toàn bộ tòa nhà."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "Residents heard a loud blast in the middle of the night.",
+          "example_vi": "Người dân nghe thấy một vụ nổ lớn vào giữa đêm."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "The bomb blast shattered windows of nearby houses.",
+          "example_vi": "Vụ nổ bom đã làm vỡ kính cửa sổ của các ngôi nhà gần đó."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "Investigators are trying to find the cause of the blast.",
+          "example_vi": "Các nhà điều tra đang cố gắng tìm ra nguyên nhân của vụ nổ."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "Several people were injured in the blast.",
+          "example_vi": "Một vài người đã bị thương trong vụ nổ."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "The blast could be heard from miles away.",
+          "example_vi": "Vụ nổ có thể được nghe thấy từ cách xa hàng dặm."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "Firefighters rushed to the scene after the blast.",
+          "example_vi": "Lực lượng cứu hỏa đã vội vã đến hiện trường sau vụ nổ."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "The force of the blast knocked him to the ground.",
+          "example_vi": "Sức mạnh của vụ nổ đã đánh ngã anh ấy xuống đất."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "A sudden blast shook the entire neighborhood.",
+          "example_vi": "Một vụ nổ bất ngờ đã làm rung chuyển cả khu dân cư."
+        },
+        {
+          "meaning_vi": "vụ nổ",
+          "example_en": "The factory was closed following the chemical blast.",
+          "example_vi": "Nhà máy đã bị đóng cửa sau vụ nổ hóa chất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'blast' là 'vụ nổ' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vụ nổ' là danh từ và cả 10 ví dụ đều sử dụng 'blast' làm danh từ chỉ vụ nổ."
+      },
+      "word": "blast",
+      "normalized_word": "blast",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The blast destroyed the entire building.",
+      "example_vi_clean": "Vụ nổ đã phá hủy toàn bộ tòa nhà."
+    },
+    {
+      "id": 26500,
+      "quiz_meaning_vi": "sự pha trộn",
+      "meaning_vi_clean": "sự pha trộn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "This coffee is a special blend of beans from Brazil and Colombia.",
+          "example_vi": "Cà phê này là một sự pha trộn đặc biệt của các loại hạt từ Brazil và Colombia."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "The music is a unique blend of jazz and traditional folk.",
+          "example_vi": "Âm nhạc là một sự pha trộn độc đáo giữa nhạc jazz và nhạc dân gian truyền thống."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "Her style is a perfect blend of modern and classic fashion.",
+          "example_vi": "Phong cách của cô ấy là một sự pha trộn hoàn hảo giữa thời trang hiện đại và cổ điển."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "The sauce is a delicious blend of sweet and spicy flavors.",
+          "example_vi": "Nước sốt là một sự pha trộn thơm ngon của hương vị ngọt và cay."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "The novel offers a rich blend of history and fiction.",
+          "example_vi": "Cuốn tiểu thuyết mang lại một sự pha trộn phong phú giữa lịch sử và hư cấu."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "This tea is a refreshing blend of herbs and spices.",
+          "example_vi": "Trà này là một sự pha trộn sảng khoái của các loại thảo mộc và gia vị."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "The city is a fascinating blend of old and new cultures.",
+          "example_vi": "Thành phố là một sự pha trộn hấp dẫn giữa các nền văn hóa cũ và mới."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "The artist uses a beautiful blend of colors in her paintings.",
+          "example_vi": "Họa sĩ sử dụng một sự pha trộn màu sắc đẹp mắt trong các bức tranh của mình."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "The team is a good blend of youth and experience.",
+          "example_vi": "Đội bóng là một sự pha trộn tốt giữa sức trẻ và kinh nghiệm."
+        },
+        {
+          "meaning_vi": "sự pha trộn",
+          "example_en": "This perfume is a subtle blend of floral and woody scents.",
+          "example_vi": "Nước hoa này là một sự pha trộn tinh tế của hương hoa và hương gỗ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'blend' là 'sự pha trộn' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự pha trộn' là danh từ và cả 10 ví dụ đều sử dụng 'blend' làm danh từ."
+      },
+      "word": "blend",
+      "normalized_word": "blend",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This coffee is a special blend of beans from Brazil and Colombia.",
+      "example_vi_clean": "Cà phê này là một sự pha trộn đặc biệt của các loại hạt từ Brazil và Colombia."
+    },
+    {
+      "id": 26505,
+      "quiz_meaning_vi": "đẫm máu",
+      "meaning_vi_clean": "đẫm máu",
+      "examples_clean": [
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "He wiped his bloody hands on a towel.",
+          "example_vi": "Anh ấy lau bàn tay đẫm máu của mình vào một chiếc khăn."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "The battle was long and bloody.",
+          "example_vi": "Trận chiến đã kéo dài và đẫm máu."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "She had a bloody nose after the accident.",
+          "example_vi": "Cô ấy bị chảy máu mũi đẫm máu sau tai nạn."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "The soldiers returned from the bloody conflict.",
+          "example_vi": "Các binh sĩ trở về từ cuộc xung đột đẫm máu."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "He left a bloody footprint on the floor.",
+          "example_vi": "Anh ấy để lại một dấu chân đẫm máu trên sàn nhà."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "The movie contains many bloody scenes of violence.",
+          "example_vi": "Bộ phim chứa nhiều cảnh bạo lực đẫm máu."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "The revolution was a bloody period in the country's history.",
+          "example_vi": "Cuộc cách mạng là một giai đoạn đẫm máu trong lịch sử đất nước."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "He was wearing a bloody shirt when they found him.",
+          "example_vi": "Anh ấy đang mặc một chiếc áo sơ mi đẫm máu khi họ tìm thấy anh ấy."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "The police investigated the bloody crime scene.",
+          "example_vi": "Cảnh sát đã điều tra hiện trường vụ án đẫm máu."
+        },
+        {
+          "meaning_vi": "đẫm máu",
+          "example_en": "It was a bloody fight that left both men injured.",
+          "example_vi": "Đó là một cuộc ẩu đả đẫm máu khiến cả hai người đàn ông đều bị thương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho tính từ 'bloody' là 'đẫm máu' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đẫm máu' là tính từ và cả 10 ví dụ đều sử dụng 'bloody' làm tính từ bổ nghĩa cho danh từ hoặc làm vị ngữ."
+      },
+      "word": "bloody",
+      "normalized_word": "bloody",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He wiped his bloody hands on a towel.",
+      "example_vi_clean": "Anh ấy lau bàn tay đẫm máu của mình vào một chiếc khăn."
+    },
+    {
+      "id": 26506,
+      "quiz_meaning_vi": "nở hoa",
+      "meaning_vi_clean": "nở hoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "The garden was full of blooming roses.",
+          "example_vi": "Khu vườn đầy những bông hồng nở hoa."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "Spring is the season of blooming cherry blossoms.",
+          "example_vi": "Mùa xuân là mùa của hoa anh đào nở hoa."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "She walked through a field of blooming wildflowers.",
+          "example_vi": "Cô ấy đi bộ qua một cánh đồng hoa dại nở hoa."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "The blooming plants attracted many bees and butterflies.",
+          "example_vi": "Những cái cây nở hoa đã thu hút nhiều ong và bướm."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "We sat under a blooming apple tree in the yard.",
+          "example_vi": "Chúng tôi ngồi dưới một cây táo nở hoa trong sân."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "The florist sold beautiful blooming orchids.",
+          "example_vi": "Cửa hàng hoa bán những cành lan nở hoa tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "The park looks lovely with all the blooming shrubs.",
+          "example_vi": "Công viên trông thật đáng yêu với tất cả những bụi cây nở hoa."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "He bought a pot of blooming lilies for his mother.",
+          "example_vi": "Anh ấy mua một chậu hoa ly nở hoa cho mẹ mình."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "The warm weather brought early blooming flowers.",
+          "example_vi": "Thời tiết ấm áp đã mang lại những bông hoa nở hoa sớm."
+        },
+        {
+          "meaning_vi": "nở hoa",
+          "example_en": "I love the scent of blooming jasmine in the evening.",
+          "example_vi": "Tôi yêu hương thơm của hoa nhài nở hoa vào buổi tối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho tính từ 'blooming' là 'nở hoa' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'nở hoa' là tính từ và cả 10 ví dụ đều sử dụng 'blooming' làm tính từ bổ nghĩa cho danh từ."
+      },
+      "word": "blooming",
+      "normalized_word": "blooming",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The garden was full of blooming roses.",
+      "example_vi_clean": "Khu vườn đầy những bông hồng nở hoa."
+    },
+    {
+      "id": 26507,
+      "quiz_meaning_vi": "hoa",
+      "meaning_vi_clean": "hoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The cherry blossom is a symbol of spring in Japan.",
+          "example_vi": "Hoa anh đào là biểu tượng của mùa xuân ở Nhật Bản."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The apple trees are covered in white blossom.",
+          "example_vi": "Những cây táo được bao phủ bởi hoa màu trắng."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "A gentle breeze blew the pink blossom off the trees.",
+          "example_vi": "Một làn gió nhẹ đã thổi bay những bông hoa màu hồng khỏi cây."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The sweet scent of orange blossom filled the air.",
+          "example_vi": "Hương thơm ngọt ngào của hoa cam tràn ngập không khí."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "In spring, the branches are heavy with blossom.",
+          "example_vi": "Vào mùa xuân, các cành cây nặng trĩu hoa."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "She wore a wreath of fresh blossom in her hair.",
+          "example_vi": "Cô ấy đội một vòng hoa tươi trên tóc."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The peach blossom looks beautiful in the garden.",
+          "example_vi": "Hoa đào trông thật đẹp trong khu vườn."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "Bees were flying from blossom to blossom.",
+          "example_vi": "Những con ong đang bay từ bông hoa này sang bông hoa khác."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "The ground was covered with fallen blossom.",
+          "example_vi": "Mặt đất được bao phủ bởi những bông hoa rụng."
+        },
+        {
+          "meaning_vi": "hoa",
+          "example_en": "We went to the park to admire the plum blossom.",
+          "example_vi": "Chúng tôi đã đến công viên để chiêm ngưỡng hoa mận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'blossom' là 'hoa' (đặc biệt là hoa cây ăn quả) và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hoa' là danh từ và cả 10 ví dụ đều sử dụng 'blossom' làm danh từ."
+      },
+      "word": "blossom",
+      "normalized_word": "blossom",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cherry blossom is a symbol of spring in Japan.",
+      "example_vi_clean": "Hoa anh đào là biểu tượng của mùa xuân ở Nhật Bản."
+    },
+    {
+      "id": 26511,
+      "quiz_meaning_vi": "bu-lông",
+      "meaning_vi_clean": "bu-lông",
+      "examples_clean": [
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "He tightened the loose bolt with a wrench.",
+          "example_vi": "Anh ấy đã siết chặt chiếc bu-lông bị lỏng bằng một chiếc cờ lê."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "The steel plates are held together by a heavy bolt.",
+          "example_vi": "Các tấm thép được giữ chặt với nhau bằng một chiếc bu-lông nặng."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "Make sure every bolt is secure before using the machine.",
+          "example_vi": "Hãy đảm bảo mọi bu-lông đều chắc chắn trước khi sử dụng máy."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "The mechanic replaced a rusty bolt on the wheel.",
+          "example_vi": "Người thợ cơ khí đã thay thế một chiếc bu-lông bị rỉ sét trên bánh xe."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "We need a longer bolt to fix this wooden frame.",
+          "example_vi": "Chúng tôi cần một chiếc bu-lông dài hơn để cố định khung gỗ này."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "The bolt snapped under the heavy pressure.",
+          "example_vi": "Chiếc bu-lông đã bị gãy dưới áp lực nặng nề."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "He bought a box of metal bolts from the hardware store.",
+          "example_vi": "Anh ấy đã mua một hộp bu-lông kim loại từ cửa hàng ngũ kim."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "This bolt is too small for the hole.",
+          "example_vi": "Chiếc bu-lông này quá nhỏ so với cái lỗ."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "She found a loose bolt on her bicycle seat.",
+          "example_vi": "Cô ấy tìm thấy một chiếc bu-lông bị lỏng trên yên xe đạp của mình."
+        },
+        {
+          "meaning_vi": "bu-lông",
+          "example_en": "The structure is reinforced with strong steel bolts.",
+          "example_vi": "Cấu trúc được gia cố bằng các bu-lông thép chắc chắn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'bolt' là 'bu-lông' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bu-lông' là danh từ và cả 10 ví dụ đều sử dụng 'bolt' làm danh từ chỉ bu-lông kim loại."
+      },
+      "word": "bolt",
+      "normalized_word": "bolt",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He tightened the loose bolt with a wrench.",
+      "example_vi_clean": "Anh ấy đã siết chặt chiếc bu-lông bị lỏng bằng một chiếc cờ lê."
+    },
+    {
+      "id": 26519,
+      "quiz_meaning_vi": "sự thúc đẩy",
+      "meaning_vi_clean": "sự thúc đẩy",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "The tax cuts gave a major boost to the economy.",
+          "example_vi": "Việc giảm thuế đã tạo ra một sự thúc đẩy lớn cho nền kinh tế."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "Winning the match was a great boost to their confidence.",
+          "example_vi": "Chiến thắng trận đấu là một sự thúc đẩy lớn cho sự tự tin của họ."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "The new marketing campaign provided a boost to sales.",
+          "example_vi": "Chiến dịch tiếp thị mới đã mang lại một sự thúc đẩy cho doanh số bán hàng."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "Her kind words gave him a much-needed emotional boost.",
+          "example_vi": "Những lời tử tế của cô ấy đã mang lại cho anh ấy một sự thúc đẩy tinh thần rất cần thiết."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "The government hopes the funding will be a boost for local businesses.",
+          "example_vi": "Chính phủ hy vọng khoản tài trợ này sẽ là một sự thúc đẩy cho các doanh nghiệp địa phương."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "A cup of coffee in the morning gives me a energy boost.",
+          "example_vi": "Một tách cà phê vào buổi sáng mang lại cho tôi một sự thúc đẩy năng lượng."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "The team received a boost when their star player returned.",
+          "example_vi": "Đội bóng đã nhận được một sự thúc đẩy khi cầu thủ ngôi sao của họ trở lại."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "The tourism industry is expecting a boost this summer.",
+          "example_vi": "Ngành du lịch đang kỳ vọng một sự thúc đẩy vào mùa hè này."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "Getting a promotion was a big boost to his career.",
+          "example_vi": "Được thăng chức là một sự thúc đẩy lớn cho sự nghiệp của anh ấy."
+        },
+        {
+          "meaning_vi": "sự thúc đẩy",
+          "example_en": "The new policy is expected to give a boost to employment.",
+          "example_vi": "Chính sách mới được kỳ vọng sẽ tạo ra một sự thúc đẩy cho việc làm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'boost' là 'sự thúc đẩy' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự thúc đẩy' là danh từ và cả 10 ví dụ đều sử dụng 'boost' làm danh từ."
+      },
+      "word": "boost",
+      "normalized_word": "boost",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The tax cuts gave a major boost to the economy.",
+      "example_vi_clean": "Việc giảm thuế đã tạo ra một sự thúc đẩy lớn cho nền kinh tế."
+    },
+    {
+      "id": 26524,
+      "quiz_meaning_vi": "sự nảy",
+      "meaning_vi_clean": "sự nảy",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "The ball lost its bounce after being left in the rain.",
+          "example_vi": "Quả bóng đã mất đi sự nảy sau khi bị bỏ ngoài mưa."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "He caught the ball on the first bounce.",
+          "example_vi": "Anh ấy đã bắt được quả bóng ngay ở sự nảy đầu tiên."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "The pitch has a very high bounce today.",
+          "example_vi": "Sân đấu có một sự nảy rất cao ngày hôm nay."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "You can adjust the bounce of the trampoline.",
+          "example_vi": "Bạn có thể điều chỉnh sự nảy của tấm bạt lò xo."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "The tennis ball has a good bounce on this surface.",
+          "example_vi": "Quả bóng tennis có một sự nảy tốt trên bề mặt này."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "She watched the bounce of the basketball on the court.",
+          "example_vi": "Cô ấy theo dõi sự nảy của quả bóng rổ trên sân."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "The uneven ground affected the bounce of the ball.",
+          "example_vi": "Mặt đất không bằng phẳng đã ảnh hưởng đến sự nảy của quả bóng."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "This new mattress has a lot of bounce.",
+          "example_vi": "Chiếc nệm mới này có rất nhiều sự nảy."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "The goalkeeper misjudged the bounce of the ball.",
+          "example_vi": "Thủ môn đã phán đoán sai sự nảy của quả bóng."
+        },
+        {
+          "meaning_vi": "sự nảy",
+          "example_en": "The ball took a strange bounce and went out of bounds.",
+          "example_vi": "Quả bóng đã có một sự nảy kỳ lạ và đi ra ngoài biên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'bounce' là 'sự nảy' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự nảy' là danh từ và cả 10 ví dụ đều sử dụng 'bounce' làm danh từ."
+      },
+      "word": "bounce",
+      "normalized_word": "bounce",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ball lost its bounce after being left in the rain.",
+      "example_vi_clean": "Quả bóng đã mất đi sự nảy sau khi bị bỏ ngoài mưa."
+    },
+    {
+      "id": 26527,
+      "quiz_meaning_vi": "dấu ngoặc đơn",
+      "meaning_vi_clean": "dấu ngoặc đơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "Please write your phone number in brackets.",
+          "example_vi": "Vui lòng viết số điện thoại của bạn trong dấu ngoặc đơn."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "The author put the extra information inside a bracket.",
+          "example_vi": "Tác giả đã đặt thông tin bổ sung vào bên trong một dấu ngoặc đơn."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "You need to close the bracket at the end of the sentence.",
+          "example_vi": "Bạn cần đóng dấu ngoặc đơn ở cuối câu."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "The formula contains a bracket that must be calculated first.",
+          "example_vi": "Công thức chứa một dấu ngoặc đơn phải được tính toán trước."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "He forgot to open the bracket in his mathematical equation.",
+          "example_vi": "Anh ấy đã quên mở dấu ngoặc đơn trong phương trình toán học của mình."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "The words in the bracket explain the meaning of the term.",
+          "example_vi": "Các từ trong dấu ngoặc đơn giải thích ý nghĩa của thuật ngữ."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "Make sure each opening bracket has a matching closing one.",
+          "example_vi": "Hãy đảm bảo mỗi dấu ngoặc đơn mở đều có một dấu đóng tương ứng."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "The editor suggested putting the date in a bracket.",
+          "example_vi": "Biên tập viên đề xuất đặt ngày tháng vào trong một dấu ngoặc đơn."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "She used a bracket to separate the translation from the original text.",
+          "example_vi": "Cô ấy đã sử dụng một dấu ngoặc đơn để tách bản dịch khỏi văn bản gốc."
+        },
+        {
+          "meaning_vi": "dấu ngoặc đơn",
+          "example_en": "The programmer made an error by omitting a bracket.",
+          "example_vi": "Lập trình viên đã mắc lỗi do bỏ sót một dấu ngoặc đơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'bracket' là 'dấu ngoặc đơn' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'dấu ngoặc đơn' là danh từ và cả 10 ví dụ đều sử dụng 'bracket' làm danh từ."
+      },
+      "word": "bracket",
+      "normalized_word": "bracket",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please write your phone number in brackets.",
+      "example_vi_clean": "Vui lòng viết số điện thoại của bạn trong dấu ngoặc đơn."
+    },
+    {
+      "id": 26532,
+      "quiz_meaning_vi": "sự chia tay",
+      "meaning_vi_clean": "sự chia tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "She wrote a sad song about her recent breakup.",
+          "example_vi": "Cô ấy đã viết một bài hát buồn về sự chia tay gần đây của mình."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "The breakup of their marriage shocked all their friends.",
+          "example_vi": "Sự chia tay trong cuộc hôn nhân của họ đã làm chấn động tất cả bạn bè của họ."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "He took a long time to recover after the painful breakup.",
+          "example_vi": "Anh ấy đã mất một thời gian dài để hồi phục sau sự chia tay đau đớn."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "They remained good friends even after their breakup.",
+          "example_vi": "Họ vẫn là bạn tốt của nhau ngay cả sau sự chia tay của họ."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "The breakup was mutual and they parted on good terms.",
+          "example_vi": "Sự chia tay là do cả hai phía và họ đã chia tay trong êm đẹp."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "She sought advice from her sister to cope with the breakup.",
+          "example_vi": "Cô ấy đã tìm kiếm lời khuyên từ chị gái để đối phó với sự chia tay."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "A sudden breakup can be very difficult to accept.",
+          "example_vi": "Một sự chia tay đột ngột có thể rất khó để chấp nhận."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "He deleted all her photos from his phone after the breakup.",
+          "example_vi": "Anh ấy đã xóa tất cả ảnh của cô ấy khỏi điện thoại sau sự chia tay."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "Their breakup was caused by a lack of communication.",
+          "example_vi": "Sự chia tay của họ là do thiếu sự giao tiếp."
+        },
+        {
+          "meaning_vi": "sự chia tay",
+          "example_en": "She focused on her career to distract herself from the breakup.",
+          "example_vi": "Cô ấy đã tập trung vào sự nghiệp để giúp bản thân quên đi sự chia tay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'breakup' là 'sự chia tay' và cung cấp đủ 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự chia tay' là danh từ và cả 10 ví dụ đều sử dụng 'breakup' làm danh từ chỉ sự kết thúc của một mối quan hệ."
+      },
+      "word": "breakup",
+      "normalized_word": "breakup",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She wrote a sad song about her recent breakup.",
+      "example_vi_clean": "Cô ấy đã viết một bài hát buồn về sự chia tay gần đây của mình."
+    }
+  ]
+}

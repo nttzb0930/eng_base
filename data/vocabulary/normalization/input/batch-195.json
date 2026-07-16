@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-195",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25941,
+      "word": "disc",
+      "normalized_word": "disc",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/disk/ (disc) /disk/",
+      "primary_meaning_vi": "đĩa",
+      "meaning_vi": "đĩa; đĩa hát; đĩa, vật hình đĩa, bộ phận hình đĩa",
+      "example_en": "A coin is a disc of metal.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Venus's disc cut off light from the Sun.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Turn the disc over, after it has finished.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25942,
+      "word": "discomfort",
+      "normalized_word": "discomfort",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'kʌmfət/",
+      "primary_meaning_vi": "sự khó ở",
+      "meaning_vi": "sự khó ở; sự khó chịu, sự bực bội; sự không an tâm, sự băn khoăn lo lắng, sự buồn phiền; sự thiếu tiện nghi, sự bất tiện; làm khó chịu, làm bực bội; không an tâm, làm băn khoăn lo lắng, làm buồn phiền",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25943,
+      "word": "discount",
+      "normalized_word": "discount",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'diskaunt/",
+      "primary_meaning_vi": "sự bớt",
+      "meaning_vi": "sự bớt, sự giảm, sự trừ (do trả tiền ngay hoặc trả tiền mặt); tiền bớt, tiền trừ, tiền chiết khấu; sự trừ hao (về mức độ xác thực của một câu chuyện, một bản tin...); hạ giá, giảm giá; không được chuộng; giảm giá, bớt giá, chiết khấu (do trả tiền ngay hoặc trả tiền mặt); bản hạ giá; dạm bán hạ giá; trừ hao (về mức độ xác thực của một câu chuyện, một bản tin...); không kể đến, không đếm xỉa đến, không để ý đến; coi nhẹ, đánh giá thấp tầm quan trọng của; sớm làm mất tác dụng (một tin tức...); trường hợp không may đó đã được dự tính trước",
+      "example_en": "This store offers discounts on all its wares. That store specializes in discount wares, too.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Merchants sometimes discount five or six per cent for prompt payment of bills.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the banks discount notes and bills of exchange",
+          "example_vi": null
+        },
+        {
+          "example_en": "They discounted his comments.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25944,
+      "word": "discourage",
+      "normalized_word": "discourage",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'kʌridʤ/",
+      "primary_meaning_vi": "làm mất hết can đảm",
+      "meaning_vi": "làm mất hết can đảm, làm chán nản, làm ngã lòng, làm nản lòng; can ngăn (ai làm việc gì)",
+      "example_en": "Don't be discouraged by the amount of work left to do: you'll finish it in good time.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25945,
+      "word": "discovery",
+      "normalized_word": "discovery",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'kʌvəri/",
+      "primary_meaning_vi": "sự khám phá ra",
+      "meaning_vi": "sự khám phá ra, sự tìm ra, sự phát hiện ra; điều khám phá ra, điều tìm ra, điều phát hiện ra; phát minh; sự để lộ ra (bí mật...); nút mở, nút gỡ (trong một vở kịch...)",
+      "example_en": "This latest discovery should eventually lead to much better treatments for disease.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Automatic discovery of RSS feeds by a Web browser.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The prosecution moved to suppress certain items turned up during discovery.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The defense argued that the plaintiff's discovery was inadequate.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25946,
+      "word": "discrimination",
+      "normalized_word": "discrimination",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis,krimi'neiʃn/",
+      "primary_meaning_vi": "sự phân biệt",
+      "meaning_vi": "sự phân biệt, sự nhận rõ điều khác nhau, sự tách bạch ra; sự biết phân biệt, sự sáng suốt, óc phán đoán, óc suy xét; sự đối xử phân biệt",
+      "example_en": "reverse discrimination",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25947,
+      "word": "disease",
+      "normalized_word": "disease",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'zi:z/",
+      "primary_meaning_vi": "bệnh",
+      "meaning_vi": "bệnh, bệnh tật; tệ nạn; sự hủ bại (xã hội...)",
+      "example_en": "The tomato plants had some kind of disease that left their leaves splotchy and fruit withered.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25948,
+      "word": "disgusting",
+      "normalized_word": "disgusting",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/dis'gʌstiɳ/",
+      "primary_meaning_vi": "làm ghê tởm",
+      "meaning_vi": "làm ghê tởm, làm kinh tởm",
+      "example_en": "It disgusts me to see her chew with her mouth open.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25949,
+      "word": "dishwasher",
+      "normalized_word": "dishwasher",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "máy rửa bát",
+      "meaning_vi": "máy rửa bát, người rửa bát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25950,
+      "word": "disk",
+      "normalized_word": "disk",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/disk/ (disc) /disk/",
+      "primary_meaning_vi": "đĩa",
+      "meaning_vi": "đĩa; đĩa hát; đĩa, vật hình đĩa, bộ phận hình đĩa",
+      "example_en": "A coin is a disk of metal.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Venus' disk cut off light from the Sun.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Turn the disk over, after it has finished.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She burned some disks yesterday to back up her computer.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-181",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25801,
+      "word": "continuously",
+      "normalized_word": "continuously",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/kən'tinjuəsli/",
+      "primary_meaning_vi": "liên tục",
+      "meaning_vi": "liên tục, liên tiếp",
+      "example_en": "The river continuously flows to the sea, it will never pause to let us cross on dry land.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25802,
+      "word": "contrary",
+      "normalized_word": "contrary",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kɔntrəri/",
+      "primary_meaning_vi": "trái ngược",
+      "meaning_vi": "trái ngược, nghịch; trái thói, bướng bỉnh, ngang ngược, khó bảo; sự trái lại; điều trái ngược; trái với, trái ngược với; làm trái (với khuynh hướng, xu hướng của ai)",
+      "example_en": "contrary winds",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "What may be \"politically correct\" could be contrary to the teachings of Jesus.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a contrary disposition; a contrary child",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25803,
+      "word": "contribute",
+      "normalized_word": "contribute",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/kən'tribju:t/",
+      "primary_meaning_vi": "đóng góp",
+      "meaning_vi": "đóng góp, góp phần",
+      "example_en": "to contribute articles to a journal",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25804,
+      "word": "contribution",
+      "normalized_word": "contribution",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔntri'bju:ʃn/",
+      "primary_meaning_vi": "sự đóng góp",
+      "meaning_vi": "sự đóng góp, sự góp phần; phần đóng góp, phần gánh vác; vật đóng góp; bài báo; đảm phụ quốc phòng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25805,
+      "word": "controversial",
+      "normalized_word": "controversial",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,kɔntrə'və:ʃəl/",
+      "primary_meaning_vi": "có thể gây ra tranh luận",
+      "meaning_vi": "có thể gây ra tranh luận, có thể bàn cãi được (vấn đề...); ưa tranh cãi, thích tranh luận (người); một nhân vật được mọi người bàn đến nhiều, một nhân vật lắm kẻ ưa nhưng cũng nhiều người ghét",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25806,
+      "word": "convey",
+      "normalized_word": "convey",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'vei/",
+      "primary_meaning_vi": "chở",
+      "meaning_vi": "chở, chuyên chở, vận chuyển; truyền (âm thanh, hương vị, lệnh, tin); truyền đạt, chuyển; chuyển nhượng, sang tên (tài sản)",
+      "example_en": "Air conveys sound. Water is conveyed through the pipe.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to convey an impression; to convey information",
+          "example_vi": null
+        },
+        {
+          "example_en": "He conveyed ownership of the company to his daughter.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25807,
+      "word": "convince",
+      "normalized_word": "convince",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'vins/",
+      "primary_meaning_vi": "làm cho tin",
+      "meaning_vi": "làm cho tin, làm cho nghe theo, thuyết phục; làm cho nhận thức thấy (sai lầm, tội lỗi...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25808,
+      "word": "copyright",
+      "normalized_word": "copyright",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kɔpirait/",
+      "primary_meaning_vi": "bản quyền",
+      "meaning_vi": "bản quyền, quyền tác giả; tác giả giữ bản quyền; do tác giả giữ bản quyền; được đảm bảo quyền tác giả; giữ quyền tác giả",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25809,
+      "word": "correction",
+      "normalized_word": "correction",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'rekʃn/",
+      "primary_meaning_vi": "sự sửa",
+      "meaning_vi": "sự sửa, sự sửa chữa, sự hiệu chỉnh; sự trừng phạt, sự trừng trị, sự trừng giới; cái đúng; chỗ sửa; nói khi biết rằng có thể có điều sai lầm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25810,
+      "word": "cotton",
+      "normalized_word": "cotton",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'kɔtn/",
+      "primary_meaning_vi": "bông",
+      "meaning_vi": "bông; cây bông; chỉ, sợi; vải bông; hoà hợp, ăn ý; yêu, quyến luyến, ý hợp tâm đầu; bắt đầu thích ai; kết thân với ai; hiểu; làm thân, ngỏ ý trước; gắn bó với ai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

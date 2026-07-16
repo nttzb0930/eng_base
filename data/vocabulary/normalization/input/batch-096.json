@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-096",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24951,
+      "word": "educational",
+      "normalized_word": "educational",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,edju:'keiʃənl/",
+      "primary_meaning_vi": "thuộc ngành giáo dục",
+      "meaning_vi": "thuộc ngành giáo dục; để giáo dục, sư phạm",
+      "example_en": "A school is an educational establishment.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They were shown an educational film about VD.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24952,
+      "word": "effect",
+      "normalized_word": "effect",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/i'fekt/",
+      "primary_meaning_vi": "kết quả",
+      "meaning_vi": "kết quả; hiệu lực, hiệu quả, tác dụng; tác động, ảnh hưởng; ấn tượng; mục đích, ý định; của, của cải, vật dụng; hiệu ứng; thực hiện, thi hành; come; làm cho có hiệu lực, thi hành; không hiệu quả, không có kết quả; thực hiện; đem lại; ký một hợp đồng bảo hiểm",
+      "example_en": "The effect of the hurricane was a devastated landscape.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The effect of flying was most convincing.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I just bought a couple of great effects.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Doppler effect",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24953,
+      "word": "effort",
+      "normalized_word": "effort",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'efət/",
+      "primary_meaning_vi": "sự cố gắng",
+      "meaning_vi": "sự cố gắng, sự ráng sức; sự cố thử làm; sự ra tay; kết quả đạt được (của sự cố gắng)",
+      "example_en": "It took a lot of effort to find a decent-sized, fully-furnished apartment within walking distance of the office. He made a conscious effort to not appear affected by the stories in the paper.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Although he didn't win any medals, Johnson's effort at the Olympics won over many fans.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24954,
+      "word": "elderly",
+      "normalized_word": "elderly",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'eldəli/",
+      "primary_meaning_vi": "sắp già",
+      "meaning_vi": "sắp già",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24955,
+      "word": "electric",
+      "normalized_word": "electric",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/i'lektrik/",
+      "primary_meaning_vi": "điện",
+      "meaning_vi": "điện, có điện, phát điện; làm náo động, làm sôi nổi",
+      "example_en": "We had to sit in the dark because the electric was cut off.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24956,
+      "word": "elephant",
+      "normalized_word": "elephant",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'elifənt/",
+      "primary_meaning_vi": "con voi",
+      "meaning_vi": "con voi; khổ giấy 70 cm x 57, 5 cm; (từ Mỹ,nghĩa Mỹ) đảng Cộng hoà; sắt vòm; đi thăm những kỳ quan (của một thành phố...); biết đời, biết thiên hạ; white",
+      "example_en": "Let's play hide and seek. I'll count. One elephant, two elephant, three elephant...",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24957,
+      "word": "elevator",
+      "normalized_word": "elevator",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'eliveitə/",
+      "primary_meaning_vi": "máy nâng",
+      "meaning_vi": "máy nâng, máy trục; thang máy; cơ nâng; bánh lái độ cao",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24958,
+      "word": "elsewhere",
+      "normalized_word": "elsewhere",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'els'weə/",
+      "primary_meaning_vi": "ở một nơi nào khác",
+      "meaning_vi": "ở một nơi nào khác",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24959,
+      "word": "email",
+      "normalized_word": "email",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "thư điện tử",
+      "meaning_vi": "thư điện tử",
+      "example_en": "He sent me his details via email.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I am searching through my old email.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He sent me an email last week to remind me about the meeting.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don’t send personal messages to my work email.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24960,
+      "word": "embarrassing",
+      "normalized_word": "embarrassing",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/im'bærəsiɳ/",
+      "primary_meaning_vi": "làm lúng túng",
+      "meaning_vi": "làm lúng túng; ngăn trở",
+      "example_en": "The crowd's laughter and jeers embarrassed him.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The motion was advanced in order to embarrass the progress of the bill.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A man or his business is embarrassed when he cannot meet his pecuniary engagements.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

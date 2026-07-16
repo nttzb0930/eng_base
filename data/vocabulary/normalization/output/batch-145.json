@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25441,
+      "quiz_meaning_vi": "làm thích nghi",
+      "meaning_vi_clean": "làm thích nghi; phỏng theo",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm thích nghi",
+          "example_en": "It takes time to adapt to a new environment.",
+          "example_vi": "Cần có thời gian để làm thích nghi với môi trường mới."
+        },
+        {
+          "meaning_vi": "làm thích nghi",
+          "example_en": "Animals must adapt to survive in harsh conditions.",
+          "example_vi": "Động vật phải làm thích nghi để tồn tại trong điều kiện khắc nghiệt."
+        },
+        {
+          "meaning_vi": "làm thích nghi",
+          "example_en": "She quickly adapted to her new job responsibilities.",
+          "example_vi": "Cô ấy nhanh chóng làm thích nghi với trách nhiệm công việc mới."
+        },
+        {
+          "meaning_vi": "làm thích nghi",
+          "example_en": "We need to adapt our plans to the changing situation.",
+          "example_vi": "Chúng ta cần làm thích nghi các kế hoạch của mình với tình hình đang thay đổi."
+        },
+        {
+          "meaning_vi": "phỏng theo",
+          "example_en": "The movie was adapted from a famous novel.",
+          "example_vi": "Bộ phim được phỏng theo một cuốn tiểu thuyết nổi tiếng."
+        },
+        {
+          "meaning_vi": "phỏng theo",
+          "example_en": "He adapted the play for a younger audience.",
+          "example_vi": "Anh ấy đã phỏng theo vở kịch cho khán giả trẻ hơn."
+        },
+        {
+          "meaning_vi": "phỏng theo",
+          "example_en": "They adapted the story into a short television series.",
+          "example_vi": "Họ đã phỏng theo câu chuyện thành một loạt phim truyền hình ngắn."
+        },
+        {
+          "meaning_vi": "phỏng theo",
+          "example_en": "The script was adapted to fit the modern setting.",
+          "example_vi": "Kịch bản đã được phỏng theo để phù hợp với bối cảnh hiện đại."
+        },
+        {
+          "meaning_vi": "làm thích nghi",
+          "example_en": "Plants adapt to different types of soil.",
+          "example_vi": "Thực vật làm thích nghi với các loại đất khác nhau."
+        },
+        {
+          "meaning_vi": "phỏng theo",
+          "example_en": "She adapted the classic song for her own performance.",
+          "example_vi": "Cô ấy đã phỏng theo bài hát cổ điển cho buổi biểu diễn của riêng mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ theo quy tắc CEFR.",
+      "word": "adapt",
+      "normalized_word": "adapt",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It takes time to adapt to a new environment.",
+      "example_vi_clean": "Cần có thời gian để làm thích nghi với môi trường mới."
+    },
+    {
+      "id": 25442,
+      "quiz_meaning_vi": "người nhận",
+      "meaning_vi_clean": "người nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "Please write the name of the addressee clearly on the envelope.",
+          "example_vi": "Vui lòng viết tên người nhận rõ ràng trên phong bì."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The letter reached the addressee after three days.",
+          "example_vi": "Bức thư đã đến tay người nhận sau ba ngày."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The package was returned because the addressee had moved.",
+          "example_vi": "Gói hàng đã bị trả lại vì người nhận đã chuyển đi."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "Make sure the addressee is the correct person.",
+          "example_vi": "Hãy chắc chắn rằng người nhận là đúng người."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The addressee signed for the delivery.",
+          "example_vi": "Người nhận đã ký xác nhận cho việc giao hàng."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The email was sent to the wrong addressee.",
+          "example_vi": "Email đã được gửi nhầm cho người nhận khác."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The addressee was not at home when the parcel arrived.",
+          "example_vi": "Người nhận không có nhà khi bưu kiện đến."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The addressee's address was illegible.",
+          "example_vi": "Địa chỉ của người nhận không thể đọc được."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The addressee is responsible for the contents of the letter.",
+          "example_vi": "Người nhận chịu trách nhiệm về nội dung của bức thư."
+        },
+        {
+          "meaning_vi": "người nhận",
+          "example_en": "The addressee confirmed receipt of the documents.",
+          "example_vi": "Người nhận đã xác nhận việc nhận các tài liệu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "addressee",
+      "normalized_word": "addressee",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please write the name of the addressee clearly on the envelope.",
+      "example_vi_clean": "Vui lòng viết tên người nhận rõ ràng trên phong bì."
+    },
+    {
+      "id": 25443,
+      "quiz_meaning_vi": "sự quản lý",
+      "meaning_vi_clean": "sự quản lý; chính phủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự quản lý",
+          "example_en": "The school is under new administration.",
+          "example_vi": "Trường học đang dưới sự quản lý mới."
+        },
+        {
+          "meaning_vi": "sự quản lý",
+          "example_en": "He is responsible for the daily administration of the office.",
+          "example_vi": "Anh ấy chịu trách nhiệm cho sự quản lý hàng ngày của văn phòng."
+        },
+        {
+          "meaning_vi": "sự quản lý",
+          "example_en": "Good administration is essential for a successful business.",
+          "example_vi": "Sự quản lý tốt là cần thiết cho một doanh nghiệp thành công."
+        },
+        {
+          "meaning_vi": "sự quản lý",
+          "example_en": "The administration of the project was very efficient.",
+          "example_vi": "Sự quản lý của dự án rất hiệu quả."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The current administration has promised to lower taxes.",
+          "example_vi": "Chính phủ hiện tại đã hứa sẽ giảm thuế."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The administration is facing criticism over the new policy.",
+          "example_vi": "Chính phủ đang đối mặt với sự chỉ trích về chính sách mới."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The previous administration failed to solve the housing crisis.",
+          "example_vi": "Chính phủ trước đó đã thất bại trong việc giải quyết khủng hoảng nhà ở."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The administration announced a new plan for education.",
+          "example_vi": "Chính phủ đã công bố một kế hoạch mới cho giáo dục."
+        },
+        {
+          "meaning_vi": "sự quản lý",
+          "example_en": "She has a background in hospital administration.",
+          "example_vi": "Cô ấy có kinh nghiệm trong sự quản lý bệnh viện."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The administration is working to improve public services.",
+          "example_vi": "Chính phủ đang nỗ lực cải thiện các dịch vụ công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chọn 2 nghĩa phổ biến nhất và bổ sung ví dụ.",
+      "word": "administration",
+      "normalized_word": "administration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The school is under new administration.",
+      "example_vi_clean": "Trường học đang dưới sự quản lý mới."
+    },
+    {
+      "id": 25444,
+      "quiz_meaning_vi": "sự ngưỡng mộ",
+      "meaning_vi_clean": "sự ngưỡng mộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "I have great admiration for her hard work.",
+          "example_vi": "Tôi có sự ngưỡng mộ lớn đối với sự chăm chỉ của cô ấy."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "They looked at the painting with admiration.",
+          "example_vi": "Họ nhìn bức tranh với sự ngưỡng mộ."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "He expressed his admiration for the team's performance.",
+          "example_vi": "Anh ấy bày tỏ sự ngưỡng mộ đối với màn trình diễn của đội."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "She won the admiration of her colleagues.",
+          "example_vi": "Cô ấy đã giành được sự ngưỡng mộ của các đồng nghiệp."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "His courage earned him the admiration of everyone.",
+          "example_vi": "Lòng dũng cảm của anh ấy đã mang lại cho anh ấy sự ngưỡng mộ của mọi người."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "We watched the sunset in silent admiration.",
+          "example_vi": "Chúng tôi ngắm hoàng hôn trong sự ngưỡng mộ lặng lẽ."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "She is a person worthy of our admiration.",
+          "example_vi": "Cô ấy là một người xứng đáng với sự ngưỡng mộ của chúng ta."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "The crowd showed their admiration with loud applause.",
+          "example_vi": "Đám đông thể hiện sự ngưỡng mộ của họ bằng những tràng pháo tay lớn."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "I have nothing but admiration for what they have achieved.",
+          "example_vi": "Tôi không có gì ngoài sự ngưỡng mộ đối với những gì họ đã đạt được."
+        },
+        {
+          "meaning_vi": "sự ngưỡng mộ",
+          "example_en": "Her talent is a source of admiration for many.",
+          "example_vi": "Tài năng của cô ấy là một nguồn sự ngưỡng mộ cho nhiều người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "admiration",
+      "normalized_word": "admiration",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have great admiration for her hard work.",
+      "example_vi_clean": "Tôi có sự ngưỡng mộ lớn đối với sự chăm chỉ của cô ấy."
+    },
+    {
+      "id": 25445,
+      "quiz_meaning_vi": "sự nhận vào",
+      "meaning_vi_clean": "sự nhận vào; sự thú nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nhận vào",
+          "example_en": "The university has a strict admission policy.",
+          "example_vi": "Trường đại học có chính sách sự nhận vào nghiêm ngặt."
+        },
+        {
+          "meaning_vi": "sự nhận vào",
+          "example_en": "He was refused admission to the club.",
+          "example_vi": "Anh ấy đã bị từ chối sự nhận vào câu lạc bộ."
+        },
+        {
+          "meaning_vi": "sự nhận vào",
+          "example_en": "The price of admission is five dollars.",
+          "example_vi": "Giá của sự nhận vào là năm đô la."
+        },
+        {
+          "meaning_vi": "sự nhận vào",
+          "example_en": "She applied for admission to the medical school.",
+          "example_vi": "Cô ấy đã nộp đơn xin sự nhận vào trường y."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "His admission of guilt surprised everyone.",
+          "example_vi": "Sự thú nhận tội lỗi của anh ấy đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "By his own admission, he was not prepared for the task.",
+          "example_vi": "Theo sự thú nhận của chính anh ấy, anh ấy đã không chuẩn bị cho nhiệm vụ."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "The politician made an admission about his past mistakes.",
+          "example_vi": "Chính trị gia đã đưa ra một sự thú nhận về những sai lầm trong quá khứ của mình."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "She finally made an admission that she was wrong.",
+          "example_vi": "Cuối cùng cô ấy đã đưa ra một sự thú nhận rằng cô ấy đã sai."
+        },
+        {
+          "meaning_vi": "sự nhận vào",
+          "example_en": "The hospital has a special admission area for emergencies.",
+          "example_vi": "Bệnh viện có một khu vực sự nhận vào đặc biệt cho các trường hợp khẩn cấp."
+        },
+        {
+          "meaning_vi": "sự thú nhận",
+          "example_en": "His admission changed the course of the investigation.",
+          "example_vi": "Sự thú nhận của anh ấy đã thay đổi hướng của cuộc điều tra."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "admission",
+      "normalized_word": "admission",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The university has a strict admission policy.",
+      "example_vi_clean": "Trường đại học có chính sách sự nhận vào nghiêm ngặt."
+    },
+    {
+      "id": 25446,
+      "quiz_meaning_vi": "nhận làm con nuôi",
+      "meaning_vi_clean": "nhận làm con nuôi; chấp nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhận làm con nuôi",
+          "example_en": "They decided to adopt a child from another country.",
+          "example_vi": "Họ quyết định nhận làm con nuôi một đứa trẻ từ một quốc gia khác."
+        },
+        {
+          "meaning_vi": "nhận làm con nuôi",
+          "example_en": "Many people want to adopt babies.",
+          "example_vi": "Nhiều người muốn nhận làm con nuôi trẻ sơ sinh."
+        },
+        {
+          "meaning_vi": "nhận làm con nuôi",
+          "example_en": "She adopted a stray cat from the shelter.",
+          "example_vi": "Cô ấy đã nhận làm con nuôi một con mèo hoang từ trạm cứu hộ."
+        },
+        {
+          "meaning_vi": "nhận làm con nuôi",
+          "example_en": "They were happy to adopt the orphan.",
+          "example_vi": "Họ rất vui khi nhận làm con nuôi đứa trẻ mồ côi."
+        },
+        {
+          "meaning_vi": "chấp nhận",
+          "example_en": "The company decided to adopt a new strategy.",
+          "example_vi": "Công ty đã quyết định chấp nhận một chiến lược mới."
+        },
+        {
+          "meaning_vi": "chấp nhận",
+          "example_en": "We need to adopt a more sustainable lifestyle.",
+          "example_vi": "Chúng ta cần chấp nhận một lối sống bền vững hơn."
+        },
+        {
+          "meaning_vi": "chấp nhận",
+          "example_en": "The committee adopted the new rules yesterday.",
+          "example_vi": "Ủy ban đã chấp nhận các quy tắc mới vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "chấp nhận",
+          "example_en": "They adopted a different approach to solve the problem.",
+          "example_vi": "Họ đã chấp nhận một cách tiếp cận khác để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "nhận làm con nuôi",
+          "example_en": "It is a big responsibility to adopt a pet.",
+          "example_vi": "Đó là một trách nhiệm lớn khi nhận làm con nuôi một thú cưng."
+        },
+        {
+          "meaning_vi": "chấp nhận",
+          "example_en": "The government adopted the proposal without any changes.",
+          "example_vi": "Chính phủ đã chấp nhận đề xuất mà không có bất kỳ thay đổi nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "adopt",
+      "normalized_word": "adopt",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They decided to adopt a child from another country.",
+      "example_vi_clean": "Họ quyết định nhận làm con nuôi một đứa trẻ từ một quốc gia khác."
+    },
+    {
+      "id": 25447,
+      "quiz_meaning_vi": "đáng yêu",
+      "meaning_vi_clean": "đáng yêu",
+      "examples_clean": [
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "What an adorable puppy!",
+          "example_vi": "Một chú cún thật đáng yêu!"
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "She has an adorable smile.",
+          "example_vi": "Cô ấy có một nụ cười đáng yêu."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "The baby is absolutely adorable.",
+          "example_vi": "Đứa bé thật sự rất đáng yêu."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "They live in an adorable little house.",
+          "example_vi": "Họ sống trong một ngôi nhà nhỏ đáng yêu."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "He gave her an adorable gift.",
+          "example_vi": "Anh ấy đã tặng cô ấy một món quà đáng yêu."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "The kitten is so adorable when it plays.",
+          "example_vi": "Chú mèo con thật đáng yêu khi nó chơi đùa."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "She wore an adorable dress to the party.",
+          "example_vi": "Cô ấy đã mặc một chiếc váy đáng yêu đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "It was an adorable gesture from him.",
+          "example_vi": "Đó là một cử chỉ đáng yêu từ anh ấy."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "They have an adorable family.",
+          "example_vi": "Họ có một gia đình đáng yêu."
+        },
+        {
+          "meaning_vi": "đáng yêu",
+          "example_en": "The photos of the children are adorable.",
+          "example_vi": "Những bức ảnh của bọn trẻ thật đáng yêu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "adorable",
+      "normalized_word": "adorable",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "What an adorable puppy!",
+      "example_vi_clean": "Một chú cún thật đáng yêu!"
+    },
+    {
+      "id": 25448,
+      "quiz_meaning_vi": "phó từ",
+      "meaning_vi_clean": "phó từ",
+      "examples_clean": [
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "Quickly is an example of a phó từ.",
+          "example_vi": "Quickly là một ví dụ của phó từ."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "A phó từ often describes how an action is done.",
+          "example_vi": "Một phó từ thường mô tả cách một hành động được thực hiện."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "Many phó từ end in -ly.",
+          "example_vi": "Nhiều phó từ kết thúc bằng -ly."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "He used a phó từ to modify the verb.",
+          "example_vi": "Anh ấy đã sử dụng một phó từ để bổ nghĩa cho động từ."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "The phó từ tells us when the event happened.",
+          "example_vi": "Phó từ cho chúng ta biết khi nào sự kiện xảy ra."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "Can you identify the phó từ in this sentence?",
+          "example_vi": "Bạn có thể xác định phó từ trong câu này không?"
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "The phó từ describes the degree of the adjective.",
+          "example_vi": "Phó từ mô tả mức độ của tính từ."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "She learned how to use a phó từ correctly.",
+          "example_vi": "Cô ấy đã học cách sử dụng phó từ một cách chính xác."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "The phó từ provides more information about the verb.",
+          "example_vi": "Phó từ cung cấp thêm thông tin về động từ."
+        },
+        {
+          "meaning_vi": "phó từ",
+          "example_en": "Every language has its own way of forming a phó từ.",
+          "example_vi": "Mỗi ngôn ngữ có cách riêng để tạo thành phó từ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "adverb",
+      "normalized_word": "adverb",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Quickly is an example of a phó từ.",
+      "example_vi_clean": "Quickly là một ví dụ của phó từ."
+    },
+    {
+      "id": 25449,
+      "quiz_meaning_vi": "thuộc phó từ",
+      "meaning_vi_clean": "thuộc phó từ",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "The phrase acts in an adverbial way.",
+          "example_vi": "Cụm từ này hoạt động theo cách thuộc phó từ."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "He used an adverbial clause to explain the reason.",
+          "example_vi": "Anh ấy đã sử dụng một mệnh đề thuộc phó từ để giải thích lý do."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "The adverbial phrase modifies the whole sentence.",
+          "example_vi": "Cụm từ thuộc phó từ bổ nghĩa cho cả câu."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "Identify the adverbial element in the sentence.",
+          "example_vi": "Xác định thành phần thuộc phó từ trong câu."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "This adverbial construction is very common.",
+          "example_vi": "Cấu trúc thuộc phó từ này rất phổ biến."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "The adverbial modifier adds detail to the verb.",
+          "example_vi": "Từ bổ nghĩa thuộc phó từ thêm chi tiết cho động từ."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "She studied the adverbial forms in English grammar.",
+          "example_vi": "Cô ấy đã nghiên cứu các dạng thuộc phó từ trong ngữ pháp tiếng Anh."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "The adverbial usage is clear in this context.",
+          "example_vi": "Cách sử dụng thuộc phó từ rất rõ ràng trong ngữ cảnh này."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "An adverbial clause can start with 'because'.",
+          "example_vi": "Một mệnh đề thuộc phó từ có thể bắt đầu bằng 'because'."
+        },
+        {
+          "meaning_vi": "thuộc phó từ",
+          "example_en": "The adverbial function is to describe the action.",
+          "example_vi": "Chức năng thuộc phó từ là để mô tả hành động."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "adverbial",
+      "normalized_word": "adverbial",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The phrase acts in an adverbial way.",
+      "example_vi_clean": "Cụm từ này hoạt động theo cách thuộc phó từ."
+    },
+    {
+      "id": 25450,
+      "quiz_meaning_vi": "ám chỉ",
+      "meaning_vi_clean": "ám chỉ",
+      "examples_clean": [
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "He did not advert to the problem during the meeting.",
+          "example_vi": "Anh ấy đã không ám chỉ đến vấn đề trong cuộc họp."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "The speaker did not advert to the recent changes.",
+          "example_vi": "Người nói đã không ám chỉ đến những thay đổi gần đây."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "She failed to advert to the main point of the discussion.",
+          "example_vi": "Cô ấy đã không ám chỉ đến điểm chính của cuộc thảo luận."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "The report does not advert to the financial risks.",
+          "example_vi": "Báo cáo không ám chỉ đến các rủi ro tài chính."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "He briefly adverted to his childhood experiences.",
+          "example_vi": "Anh ấy đã ám chỉ ngắn gọn đến những trải nghiệm thời thơ ấu của mình."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "The author adverted to the historical context of the event.",
+          "example_vi": "Tác giả đã ám chỉ đến bối cảnh lịch sử của sự kiện."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "They did not advert to the possibility of failure.",
+          "example_vi": "Họ đã không ám chỉ đến khả năng thất bại."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "The letter adverted to the need for more staff.",
+          "example_vi": "Bức thư đã ám chỉ đến nhu cầu cần thêm nhân viên."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "She adverted to the importance of teamwork.",
+          "example_vi": "Cô ấy đã ám chỉ đến tầm quan trọng của làm việc nhóm."
+        },
+        {
+          "meaning_vi": "ám chỉ",
+          "example_en": "The article adverted to the benefits of exercise.",
+          "example_vi": "Bài báo đã ám chỉ đến những lợi ích của việc tập thể dục."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ noun sang verb, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "advert",
+      "normalized_word": "advert",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He did not advert to the problem during the meeting.",
+      "example_vi_clean": "Anh ấy đã không ám chỉ đến vấn đề trong cuộc họp."
+    }
+  ]
+}

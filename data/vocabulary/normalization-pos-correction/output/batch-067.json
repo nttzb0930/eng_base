@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26122,
+      "quiz_meaning_vi": "bữa tiệc",
+      "meaning_vi_clean": "bữa tiệc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The wedding feast lasted all night.",
+          "example_vi": "Bữa tiệc cưới kéo dài suốt đêm."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "We had a great feast to celebrate his birthday.",
+          "example_vi": "Chúng tôi đã có một bữa tiệc lớn để ăn mừng sinh nhật anh ấy."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The king held a magnificent feast for his guests.",
+          "example_vi": "Nhà vua đã tổ chức một bữa tiệc lộng lẫy cho các vị khách của mình."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "It was a feast for the eyes, with colorful decorations everywhere.",
+          "example_vi": "Đó là một bữa tiệc thị giác, với những đồ trang trí đầy màu sắc ở khắp nơi."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The harvest feast is an important tradition in our village.",
+          "example_vi": "Lễ hội thu hoạch là một truyền thống quan trọng trong làng chúng tôi."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "They prepared a special feast for the holiday.",
+          "example_vi": "Họ đã chuẩn bị một bữa tiệc đặc biệt cho ngày lễ."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The restaurant offers a seafood feast.",
+          "example_vi": "Nhà hàng có một bữa tiệc hải sản."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "After the long journey, the food was a welcome feast.",
+          "example_vi": "Sau chuyến đi dài, đồ ăn là một bữa tiệc chào đón."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "The children enjoyed the feast of sweets.",
+          "example_vi": "Bọn trẻ thích thú với bữa tiệc bánh kẹo."
+        },
+        {
+          "meaning_vi": "bữa tiệc",
+          "example_en": "It was a feast of flavors, with many different dishes.",
+          "example_vi": "Đó là một bữa tiệc hương vị, với nhiều món ăn khác nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'bữa tiệc' cho danh từ 'feast' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bữa tiệc' và cách dùng trong 10 ví dụ đều đúng với danh từ 'feast'."
+      },
+      "word": "feast",
+      "normalized_word": "feast",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The wedding feast lasted all night.",
+      "example_vi_clean": "Bữa tiệc cưới kéo dài suốt đêm."
+    },
+    {
+      "id": 26123,
+      "quiz_meaning_vi": "phà",
+      "meaning_vi_clean": "phà",
+      "examples_clean": [
+        {
+          "meaning_vi": "phà",
+          "example_en": "We took the ferry across the river.",
+          "example_vi": "Chúng tôi đi phà qua sông."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry service operates every hour.",
+          "example_vi": "Dịch vụ phà hoạt động mỗi giờ."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "You can drive your car onto the ferry.",
+          "example_vi": "Bạn có thể lái xe lên phà."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry was delayed due to bad weather.",
+          "example_vi": "Chuyến phà bị hoãn do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "This ferry connects the island to the mainland.",
+          "example_vi": "Chuyến phà này nối liền hòn đảo với đất liền."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry ticket includes the cost of the journey.",
+          "example_vi": "Vé phà đã bao gồm chi phí chuyến đi."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "Many people use the ferry for their daily commute.",
+          "example_vi": "Nhiều người sử dụng phà cho việc đi lại hàng ngày của họ."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry can carry up to 500 passengers.",
+          "example_vi": "Chiếc phà có thể chở tới 500 hành khách."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "We waited for the ferry at the dock.",
+          "example_vi": "Chúng tôi đợi phà ở bến tàu."
+        },
+        {
+          "meaning_vi": "phà",
+          "example_en": "The ferry ride was smooth and pleasant.",
+          "example_vi": "Chuyến đi phà êm ái và dễ chịu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'phà' cho danh từ 'ferry' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'phà' và cách dùng trong 10 ví dụ đều đúng với danh từ 'ferry'."
+      },
+      "word": "ferry",
+      "normalized_word": "ferry",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We took the ferry across the river.",
+      "example_vi_clean": "Chúng tôi đi phà qua sông."
+    },
+    {
+      "id": 26129,
+      "quiz_meaning_vi": "bộ lọc",
+      "meaning_vi_clean": "bộ lọc",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "The coffee maker has a built-in filter.",
+          "example_vi": "Máy pha cà phê có một bộ lọc tích hợp sẵn."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "You need to replace the water filter regularly.",
+          "example_vi": "Bạn cần thay bộ lọc nước thường xuyên."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "The air filter in the car needs cleaning.",
+          "example_vi": "Bộ lọc gió trong xe hơi cần được làm sạch."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "This camera has a special filter for reducing glare.",
+          "example_vi": "Máy ảnh này có một bộ lọc đặc biệt để giảm chói."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "The photographer used a polarizing filter.",
+          "example_vi": "Nhiếp ảnh gia đã sử dụng một bộ lọc phân cực."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "A good filter can improve the sound quality.",
+          "example_vi": "Một bộ lọc tốt có thể cải thiện chất lượng âm thanh."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "The oil filter should be changed every 5,000 miles.",
+          "example_vi": "Bộ lọc dầu nên được thay đổi sau mỗi 5.000 dặm."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "He installed a new filter on his cigarette.",
+          "example_vi": "Anh ấy đã lắp một bộ lọc mới cho điếu thuốc của mình."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "The filter in the vacuum cleaner is clogged.",
+          "example_vi": "Bộ lọc trong máy hút bụi bị tắc."
+        },
+        {
+          "meaning_vi": "bộ lọc",
+          "example_en": "This device acts as a filter for harmful substances.",
+          "example_vi": "Thiết bị này hoạt động như một bộ lọc các chất độc hại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'bộ lọc' cho danh từ 'filter' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bộ lọc' và cách dùng trong 10 ví dụ đều đúng với danh từ 'filter'."
+      },
+      "word": "filter",
+      "normalized_word": "filter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The coffee maker has a built-in filter.",
+      "example_vi_clean": "Máy pha cà phê có một bộ lọc tích hợp sẵn."
+    },
+    {
+      "id": 26132,
+      "quiz_meaning_vi": "ngón tay",
+      "meaning_vi_clean": "ngón tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "She pointed her finger at the map.",
+          "example_vi": "Cô ấy chỉ ngón tay vào bản đồ."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "He has long, slender fingers.",
+          "example_vi": "Anh ấy có những ngón tay dài, thon thả."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "Please count the items on your fingers.",
+          "example_vi": "Xin hãy đếm các món đồ trên ngón tay của bạn."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "The baby grabbed my finger tightly.",
+          "example_vi": "Em bé nắm chặt ngón tay tôi."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "He hurt his finger while chopping vegetables.",
+          "example_vi": "Anh ấy bị đau ngón tay khi thái rau củ."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "She wore a beautiful ring on her finger.",
+          "example_vi": "Cô ấy đeo một chiếc nhẫn đẹp trên ngón tay."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "He has a callus on his finger from playing the guitar.",
+          "example_vi": "Anh ấy có một vết chai trên ngón tay vì chơi đàn guitar."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "The detective examined the fingerprints on the glass.",
+          "example_vi": "Thám tử xem xét dấu vân tay trên ly."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "She has a nervous habit of biting her fingers.",
+          "example_vi": "Cô ấy có thói quen cắn móng tay vì lo lắng."
+        },
+        {
+          "meaning_vi": "ngón tay",
+          "example_en": "He used his finger to trace the words on the page.",
+          "example_vi": "Anh ấy dùng ngón tay để lần theo các từ trên trang sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'ngón tay' cho danh từ 'finger' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'ngón tay' và cách dùng trong 10 ví dụ đều đúng với danh từ 'finger'."
+      },
+      "word": "finger",
+      "normalized_word": "finger",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She pointed her finger at the map.",
+      "example_vi_clean": "Cô ấy chỉ ngón tay vào bản đồ."
+    },
+    {
+      "id": 26134,
+      "quiz_meaning_vi": "vững chắc",
+      "meaning_vi_clean": "vững chắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The company has a firm financial base.",
+          "example_vi": "Công ty có một nền tảng tài chính vững chắc."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "He has a firm grip on the rope.",
+          "example_vi": "Anh ấy nắm sợi dây chắc chắn."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "She gave him a firm handshake.",
+          "example_vi": "Cô ấy bắt tay anh ấy một cách chắc chắn."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The government needs to take a firm stance on crime.",
+          "example_vi": "Chính phủ cần có lập trường vững chắc về tội phạm."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The table is firm and does not wobble.",
+          "example_vi": "Cái bàn chắc chắn và không bị lung lay."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "He made a firm decision to quit his job.",
+          "example_vi": "Anh ấy đã đưa ra một quyết định chắc chắn là nghỉ việc."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The soil is firm after the rain.",
+          "example_vi": "Mặt đất chắc chắn sau cơn mưa."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "She has a firm belief in her abilities.",
+          "example_vi": "Cô ấy có niềm tin vững chắc vào khả năng của mình."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "The building has a firm foundation.",
+          "example_vi": "Tòa nhà có một nền móng vững chắc."
+        },
+        {
+          "meaning_vi": "vững chắc",
+          "example_en": "He gave the door a firm push.",
+          "example_vi": "Anh ấy đẩy cửa một cách mạnh mẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'vững chắc' cho tính từ 'firm' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vững chắc' và cách dùng trong 10 ví dụ đều đúng với tính từ 'firm'."
+      },
+      "word": "firm",
+      "normalized_word": "firm",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The company has a firm financial base.",
+      "example_vi_clean": "Công ty có một nền tảng tài chính vững chắc."
+    },
+    {
+      "id": 26139,
+      "quiz_meaning_vi": "bằng phẳng",
+      "meaning_vi_clean": "bằng phẳng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The road was flat and straight.",
+          "example_vi": "Con đường bằng phẳng và thẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "She prefers to sleep on a flat pillow.",
+          "example_vi": "Cô ấy thích ngủ trên một chiếc gối bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The landscape was flat for miles.",
+          "example_vi": "Phong cảnh trải dài bằng phẳng hàng dặm."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "He laid the book flat on the table.",
+          "example_vi": "Anh ấy đặt cuốn sách nằm phẳng trên bàn."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The tire is flat.",
+          "example_vi": "Lốp xe bị xẹp."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The artist painted a flat surface.",
+          "example_vi": "Họa sĩ đã vẽ một bề mặt phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "She has flat feet.",
+          "example_vi": "Cô ấy bị bàn chân bẹt."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The music sounded flat.",
+          "example_vi": "Âm nhạc nghe có vẻ đều đều, không có cao độ."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "He gave a flat denial.",
+          "example_vi": "Anh ấy đã phủ nhận một cách thẳng thừng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The cake has a flat top.",
+          "example_vi": "Chiếc bánh có mặt trên phẳng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'bằng phẳng' cho tính từ 'flat' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bằng phẳng' và cách dùng trong 10 ví dụ đều đúng với tính từ 'flat'."
+      },
+      "word": "flat",
+      "normalized_word": "flat",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The road was flat and straight.",
+      "example_vi_clean": "Con đường bằng phẳng và thẳng."
+    },
+    {
+      "id": 26140,
+      "quiz_meaning_vi": "hương vị",
+      "meaning_vi_clean": "hương vị",
+      "examples_clean": [
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This soup has a rich flavor.",
+          "example_vi": "Món súp này có hương vị đậm đà."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "I love the flavor of fresh strawberries.",
+          "example_vi": "Tôi yêu thích hương vị của dâu tây tươi."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The chef added spices to enhance the flavor.",
+          "example_vi": "Đầu bếp đã thêm gia vị để tăng hương vị."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This artificial sweetener has no flavor.",
+          "example_vi": "Chất tạo ngọt nhân tạo này không có hương vị."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The flavor of the chocolate is very intense.",
+          "example_vi": "Hương vị của sô cô la rất đậm đà."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "He described the unique flavor of the dish.",
+          "example_vi": "Anh ấy đã mô tả hương vị độc đáo của món ăn."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The flavor of the wine is complex.",
+          "example_vi": "Hương vị của rượu vang rất phức tạp."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This candy has a fruity flavor.",
+          "example_vi": "Loại kẹo này có hương vị trái cây."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The flavor is what makes this dish special.",
+          "example_vi": "Hương vị là điều làm cho món ăn này đặc biệt."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "He prefers food with a mild flavor.",
+          "example_vi": "Anh ấy thích thức ăn có hương vị nhẹ nhàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'hương vị' cho danh từ 'flavor' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hương vị' và cách dùng trong 10 ví dụ đều đúng với danh từ 'flavor'."
+      },
+      "word": "flavor",
+      "normalized_word": "flavor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This soup has a rich flavor.",
+      "example_vi_clean": "Món súp này có hương vị đậm đà."
+    },
+    {
+      "id": 26141,
+      "quiz_meaning_vi": "hương vị",
+      "meaning_vi_clean": "hương vị",
+      "examples_clean": [
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This dish has a unique flavour.",
+          "example_vi": "Món ăn này có một hương vị độc đáo."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "I enjoy the flavour of dark chocolate.",
+          "example_vi": "Tôi thích hương vị của sô cô la đen."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The chef carefully balanced the flavours.",
+          "example_vi": "Đầu bếp đã cân bằng cẩn thận các hương vị."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This tea has a subtle floral flavour.",
+          "example_vi": "Loại trà này có hương vị hoa tinh tế."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The flavour of the sauce was too strong.",
+          "example_vi": "Hương vị của nước sốt quá mạnh."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "He added herbs to give the food more flavour.",
+          "example_vi": "Anh ấy đã thêm thảo mộc để món ăn có thêm hương vị."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The flavour of the wine is reminiscent of oak.",
+          "example_vi": "Hương vị của rượu vang gợi nhớ đến gỗ sồi."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "This ice cream has a refreshing citrus flavour.",
+          "example_vi": "Kem này có hương vị cam quýt tươi mát."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "The natural flavour of the fruit is preserved.",
+          "example_vi": "Hương vị tự nhiên của trái cây được giữ gìn."
+        },
+        {
+          "meaning_vi": "hương vị",
+          "example_en": "What's your favourite flavour of ice cream?",
+          "example_vi": "Hương vị kem yêu thích của bạn là gì?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'hương vị' cho danh từ 'flavour' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'hương vị' và cách dùng trong 10 ví dụ đều đúng với danh từ 'flavour'."
+      },
+      "word": "flavour",
+      "normalized_word": "flavour",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This dish has a unique flavour.",
+      "example_vi_clean": "Món ăn này có một hương vị độc đáo."
+    },
+    {
+      "id": 26142,
+      "quiz_meaning_vi": "bầy",
+      "meaning_vi_clean": "bầy",
+      "examples_clean": [
+        {
+          "meaning_vi": "bầy",
+          "example_en": "A flock of birds flew overhead.",
+          "example_vi": "Một bầy chim bay qua đầu."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "The shepherd guided his flock.",
+          "example_vi": "Người chăn cừu dẫn dắt đàn cừu của mình."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "A flock of tourists visited the museum.",
+          "example_vi": "Một nhóm khách du lịch đã đến thăm bảo tàng."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "The sheep were gathered into a flock.",
+          "example_vi": "Những con cừu được tập hợp thành một đàn."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "A flock of geese migrated south.",
+          "example_vi": "Một đàn ngỗng di cư về phía nam."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "The priest addressed his flock.",
+          "example_vi": "Vị linh mục nói chuyện với giáo dân của mình."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "We saw a large flock of pigeons in the park.",
+          "example_vi": "Chúng tôi thấy một đàn bồ câu lớn trong công viên."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "The farmer moved the flock to a new pasture.",
+          "example_vi": "Người nông dân đã di chuyển đàn cừu đến một đồng cỏ mới."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "A flock of seagulls circled the boat.",
+          "example_vi": "Một đàn hải âu bay vòng quanh thuyền."
+        },
+        {
+          "meaning_vi": "bầy",
+          "example_en": "The artist painted a flock of sheep in the field.",
+          "example_vi": "Họa sĩ đã vẽ một đàn cừu trên cánh đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'bầy' cho danh từ 'flock' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bầy' và cách dùng trong 10 ví dụ đều đúng với danh từ 'flock'."
+      },
+      "word": "flock",
+      "normalized_word": "flock",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A flock of birds flew overhead.",
+      "example_vi_clean": "Một bầy chim bay qua đầu."
+    },
+    {
+      "id": 26143,
+      "quiz_meaning_vi": "dòng chảy",
+      "meaning_vi_clean": "dòng chảy",
+      "examples_clean": [
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The flow of traffic was heavy this morning.",
+          "example_vi": "Dòng xe cộ vào buổi sáng nay rất đông."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "We studied the flow of water in the river.",
+          "example_vi": "Chúng tôi đã nghiên cứu dòng chảy của nước trong sông."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The smooth flow of conversation made everyone feel comfortable.",
+          "example_vi": "Cuộc trò chuyện diễn ra trôi chảy khiến mọi người cảm thấy thoải mái."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The economy experienced a steady flow of investment.",
+          "example_vi": "Nền kinh tế đã trải qua một dòng đầu tư ổn định."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The artist captured the gentle flow of the silk fabric.",
+          "example_vi": "Nghệ sĩ đã nắm bắt được sự mềm mại, uyển chuyển của vải lụa."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The flow of information is crucial for this project.",
+          "example_vi": "Dòng thông tin là rất quan trọng đối với dự án này."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The flow of refugees increased after the conflict.",
+          "example_vi": "Dòng người tị nạn gia tăng sau cuộc xung đột."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The flow of electricity through the circuit was measured.",
+          "example_vi": "Dòng điện chạy qua mạch đã được đo lường."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The flow of blood to the brain is essential.",
+          "example_vi": "Dòng máu chảy lên não là điều cần thiết."
+        },
+        {
+          "meaning_vi": "dòng chảy",
+          "example_en": "The flow of ideas in the meeting was very productive.",
+          "example_vi": "Luồng ý tưởng trong cuộc họp rất hiệu quả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến 'dòng chảy' cho danh từ 'flow' và 10 ví dụ minh họa đúng nghĩa và từ loại này.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'dòng chảy' và cách dùng trong 10 ví dụ đều đúng với danh từ 'flow'."
+      },
+      "word": "flow",
+      "normalized_word": "flow",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The flow of traffic was heavy this morning.",
+      "example_vi_clean": "Dòng xe cộ vào buổi sáng nay rất đông."
+    }
+  ]
+}

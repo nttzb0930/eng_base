@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26728,
+      "quiz_meaning_vi": "phần lõi",
+      "meaning_vi_clean": "phần lõi",
+      "examples_clean": [
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "She ate the apple but left the core on the plate.",
+          "example_vi": "Cô ấy đã ăn quả táo nhưng để lại phần lõi trên đĩa."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "Scientists are studying the temperature of the Earth's core.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu nhiệt độ của phần lõi Trái Đất."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "The core of the nuclear reactor must be cooled constantly.",
+          "example_vi": "Phần lõi của lò phản ứng hạt nhân phải được làm mát liên tục."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "He threw the pear core into the trash can.",
+          "example_vi": "Anh ấy đã ném phần lõi quả lê vào thùng rác."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "The drill extracted a core of rock from deep underground.",
+          "example_vi": "Mũi khoan đã rút ra một phần lõi đá từ sâu dưới lòng đất."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "The core of the tree was damaged by insects.",
+          "example_vi": "Phần lõi của cái cây đã bị hư hại bởi côn trùng."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "They need to replace the core of the fiber optic cable.",
+          "example_vi": "Họ cần thay thế phần lõi của cáp sợi quang."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "The core of the planet is believed to be made of solid iron.",
+          "example_vi": "Phần lõi của hành tinh được cho là làm bằng sắt đặc."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "She carefully removed the core of the pineapple before slicing it.",
+          "example_vi": "Cô ấy cẩn thận loại bỏ phần lõi của quả dứa trước khi thái lát nó."
+        },
+        {
+          "meaning_vi": "phần lõi",
+          "example_en": "The core of the old tower was built with strong stone.",
+          "example_vi": "Phần lõi của tòa tháp cổ được xây dựng bằng đá chắc chắn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'core' là 'phần lõi' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'phần lõi' và cả 10 ví dụ đều sử dụng từ 'core' dưới dạng danh từ chỉ phần trung tâm hoặc lõi của vật thể."
+      },
+      "word": "core",
+      "normalized_word": "core",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She ate the apple but left the core on the plate.",
+      "example_vi_clean": "Cô ấy đã ăn quả táo nhưng để lại phần lõi trên đĩa."
+    },
+    {
+      "id": 26740,
+      "quiz_meaning_vi": "tham nhũng",
+      "meaning_vi_clean": "tham nhũng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "The citizens protested against the corrupt government officials.",
+          "example_vi": "Người dân đã biểu tình chống lại các quan chức chính phủ tham nhũng."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "He refused to work for a corrupt organization.",
+          "example_vi": "Anh ấy từ chối làm việc cho một tổ chức tham nhũng."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "The corrupt judge was finally arrested for taking bribes.",
+          "example_vi": "Vị thẩm phán tham nhũng cuối cùng đã bị bắt vì nhận hối lộ."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "They are trying to reform the corrupt police force.",
+          "example_vi": "Họ đang cố gắng cải tổ lực lượng cảnh sát tham nhũng."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "The country's economy was ruined by corrupt politicians.",
+          "example_vi": "Nền kinh tế của đất nước đã bị hủy hoại bởi các chính trị gia tham nhũng."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "She wrote an article exposing the corrupt practices in the company.",
+          "example_vi": "Cô ấy đã viết một bài báo vạch trần các hành vi tham nhũng trong công ty."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "A corrupt system makes it hard for honest businesses to succeed.",
+          "example_vi": "Một hệ thống tham nhũng khiến các doanh nghiệp lương thiện khó thành công."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "The mayor promised to eliminate corrupt elements from the administration.",
+          "example_vi": "Thị trưởng hứa sẽ loại bỏ các thành phần tham nhũng khỏi chính quyền."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "He was accused of being a corrupt leader who stole public funds.",
+          "example_vi": "Ông ấy bị cáo buộc là một nhà lãnh đạo tham nhũng đã đánh cắp công quỹ."
+        },
+        {
+          "meaning_vi": "tham nhũng",
+          "example_en": "The investigation revealed how corrupt the local authorities were.",
+          "example_vi": "Cuộc điều tra đã tiết lộ chính quyền địa phương tham nhũng đến mức nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho tính từ 'corrupt' là 'tham nhũng' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tham nhũng' và cả 10 ví dụ đều sử dụng từ 'corrupt' dưới dạng tính từ bổ nghĩa cho danh từ hoặc làm vị ngữ."
+      },
+      "word": "corrupt",
+      "normalized_word": "corrupt",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The citizens protested against the corrupt government officials.",
+      "example_vi_clean": "Người dân đã biểu tình chống lại các quan chức chính phủ tham nhũng."
+    },
+    {
+      "id": 26744,
+      "quiz_meaning_vi": "trang phục",
+      "meaning_vi_clean": "trang phục",
+      "examples_clean": [
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "She wore a beautiful traditional costume to the festival.",
+          "example_vi": "Cô ấy đã mặc một bộ trang phục truyền thống đẹp đẽ đến lễ hội."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "The actors changed into their historical costumes before the play.",
+          "example_vi": "Các diễn viên đã thay sang trang phục lịch sử của họ trước vở kịch."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "He won first prize for the most creative Halloween costume.",
+          "example_vi": "Anh ấy đã giành giải nhất cho bộ trang phục Halloween sáng tạo nhất."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "The museum displays various national costumes from around the world.",
+          "example_vi": "Bảo tàng trưng bày nhiều loại trang phục dân tộc khác nhau từ khắp nơi trên thế giới."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "She is in charge of designing the costumes for the new movie.",
+          "example_vi": "Cô ấy chịu trách nhiệm thiết kế trang phục cho bộ phim mới."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "Children love dressing up in superhero costumes.",
+          "example_vi": "Trẻ em rất thích hóa trang trong những bộ trang phục siêu anh hùng."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "The dancers wore colorful costumes during the performance.",
+          "example_vi": "Các vũ công đã mặc những bộ trang phục đầy màu sắc trong suốt buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "He rented a pirate costume for the fancy dress party.",
+          "example_vi": "Anh ấy đã thuê một bộ trang phục cướp biển cho bữa tiệc hóa trang."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "Every actor must return their costume to the dressing room.",
+          "example_vi": "Mỗi diễn viên phải trả lại trang phục của họ về phòng thay đồ."
+        },
+        {
+          "meaning_vi": "trang phục",
+          "example_en": "The traditional wedding costume in this region is very elaborate.",
+          "example_vi": "Trang phục cưới truyền thống ở vùng này rất cầu kỳ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'costume' là 'trang phục' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'trang phục' và cả 10 ví dụ đều sử dụng từ 'costume' dưới dạng danh từ chỉ quần áo biểu diễn hoặc lễ hội."
+      },
+      "word": "costume",
+      "normalized_word": "costume",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She wore a beautiful traditional costume to the festival.",
+      "example_vi_clean": "Cô ấy đã mặc một bộ trang phục truyền thống đẹp đẽ đến lễ hội."
+    },
+    {
+      "id": 26747,
+      "quiz_meaning_vi": "cơn ho",
+      "meaning_vi_clean": "cơn ho",
+      "examples_clean": [
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "She has a bad cough and needs to see a doctor.",
+          "example_vi": "Cô ấy bị một cơn ho nặng và cần phải đi khám bác sĩ."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "I heard a loud cough from the back of the classroom.",
+          "example_vi": "Tôi nghe thấy một tiếng ho lớn từ phía cuối lớp học."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "This medicine will help soothe your dry cough.",
+          "example_vi": "Thuốc này sẽ giúp làm dịu cơn ho khan của bạn."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "His persistent cough kept him awake all night.",
+          "example_vi": "Cơn ho dai dẳng của anh ấy đã khiến anh ấy mất ngủ cả đêm."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "She covered her mouth to muffle a sudden cough.",
+          "example_vi": "Cô ấy che miệng lại để giảm bớt một cơn ho đột ngột."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "The doctor listened to his chest to check his cough.",
+          "example_vi": "Bác sĩ đã nghe ngực của anh ấy để kiểm tra cơn ho."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "He gave a little cough to attract her attention.",
+          "example_vi": "Anh ấy ho nhẹ một tiếng để thu hút sự chú ý của cô ấy."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "A warm drink can help relieve a nasty cough.",
+          "example_vi": "Một thức uống ấm có thể giúp giảm bớt một cơn ho khó chịu."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "She has been suffering from a chronic cough for weeks.",
+          "example_vi": "Cô ấy đã phải chịu đựng một cơn ho mãn tính trong nhiều tuần."
+        },
+        {
+          "meaning_vi": "cơn ho",
+          "example_en": "The teacher ignored the student's fake cough.",
+          "example_vi": "Giáo viên đã phớt lờ cơn ho giả vờ của học sinh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'cough' là 'cơn ho' (hoặc tiếng ho) và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cơn ho' và cả 10 ví dụ đều sử dụng từ 'cough' dưới dạng danh từ, không dùng làm động từ."
+      },
+      "word": "cough",
+      "normalized_word": "cough",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a bad cough and needs to see a doctor.",
+      "example_vi_clean": "Cô ấy bị một cơn ho nặng và cần phải đi khám bác sĩ."
+    },
+    {
+      "id": 26748,
+      "quiz_meaning_vi": "quầy",
+      "meaning_vi_clean": "quầy",
+      "examples_clean": [
+        {
+          "meaning_vi": "quầy",
+          "example_en": "Please pay for your items at the checkout counter.",
+          "example_vi": "Vui lòng thanh toán cho các mặt hàng của bạn tại quầy thanh toán."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "She stood behind the counter and served the customers.",
+          "example_vi": "Cô ấy đứng sau quầy và phục vụ khách hàng."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "He left his keys on the kitchen counter this morning.",
+          "example_vi": "Anh ấy đã để quên chìa khóa trên quầy bếp sáng nay."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "There was a long queue of people at the ticket counter.",
+          "example_vi": "Có một hàng dài người xếp hàng tại quầy bán vé."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "The receptionist sat behind a large wooden counter.",
+          "example_vi": "Nhân viên lễ tân ngồi sau một chiếc quầy gỗ lớn."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "You can pick up your prescription at the pharmacy counter.",
+          "example_vi": "Bạn có thể nhận đơn thuốc của mình tại quầy thuốc tây."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "She wiped the counter clean with a damp cloth.",
+          "example_vi": "Cô ấy đã lau sạch chiếc quầy bằng một tấm vải ẩm."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "He leaned against the bar counter and ordered a drink.",
+          "example_vi": "Anh ấy tựa vào quầy bar và gọi một món đồ uống."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "The information counter is located near the main entrance.",
+          "example_vi": "Quầy thông tin được đặt gần lối vào chính."
+        },
+        {
+          "meaning_vi": "quầy",
+          "example_en": "She placed the food tray on the service counter.",
+          "example_vi": "Cô ấy đặt khay thức ăn lên quầy phục vụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'counter' là 'quầy' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'quầy' và cả 10 ví dụ đều sử dụng từ 'counter' dưới dạng danh từ chỉ bề mặt phẳng dài để giao dịch hoặc đặt đồ."
+      },
+      "word": "counter",
+      "normalized_word": "counter",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please pay for your items at the checkout counter.",
+      "example_vi_clean": "Vui lòng thanh toán cho các mặt hàng của bạn tại quầy thanh toán."
+    },
+    {
+      "id": 26751,
+      "quiz_meaning_vi": "kẻ hèn nhát",
+      "meaning_vi_clean": "kẻ hèn nhát",
+      "examples_clean": [
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "He called me a coward because I refused to fight.",
+          "example_vi": "Anh ta gọi tôi là kẻ hèn nhát vì tôi từ chối đánh nhau."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "She realized that he was a coward who would never stand up for her.",
+          "example_vi": "Cô ấy nhận ra rằng anh ta là một kẻ hèn nhát sẽ không bao giờ đứng ra bảo vệ cô."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "Don't be a coward, just tell them the truth.",
+          "example_vi": "Đừng làm một kẻ hèn nhát, hãy nói cho họ biết sự thật."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "The soldier was branded a coward for running away from the battle.",
+          "example_vi": "Người lính bị gắn mác là kẻ hèn nhát vì đã bỏ chạy khỏi trận chiến."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "Only a coward would attack someone from behind.",
+          "example_vi": "Chỉ có kẻ hèn nhát mới tấn công ai đó từ phía sau."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "He felt like a coward for not speaking up during the meeting.",
+          "example_vi": "Anh ấy cảm thấy mình như một kẻ hèn nhát vì đã không lên tiếng trong cuộc họp."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "She didn't want to look like a coward in front of her friends.",
+          "example_vi": "Cô ấy không muốn trông giống như một kẻ hèn nhát trước mặt bạn bè."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "They accused him of being a coward when he avoided the challenge.",
+          "example_vi": "Họ cáo buộc anh ta là kẻ hèn nhát khi anh ta né tránh thử thách."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "A true hero is not a coward who hides from danger.",
+          "example_vi": "Một anh hùng thực sự không phải là kẻ hèn nhát trốn tránh nguy hiểm."
+        },
+        {
+          "meaning_vi": "kẻ hèn nhát",
+          "example_en": "He admitted he was a coward when it came to public speaking.",
+          "example_vi": "Anh ấy thừa nhận mình là một kẻ hèn nhát khi nói đến việc phát biểu trước công chúng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'coward' là 'kẻ hèn nhát' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'kẻ hèn nhát' và cả 10 ví dụ đều sử dụng từ 'coward' dưới dạng danh từ chỉ người thiếu can đảm."
+      },
+      "word": "coward",
+      "normalized_word": "coward",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He called me a coward because I refused to fight.",
+      "example_vi_clean": "Anh ta gọi tôi là kẻ hèn nhát vì tôi từ chối đánh nhau."
+    },
+    {
+      "id": 26755,
+      "quiz_meaning_vi": "con cua",
+      "meaning_vi_clean": "con cua",
+      "examples_clean": [
+        {
+          "meaning_vi": "con cua",
+          "example_en": "We caught a small crab on the beach this morning.",
+          "example_vi": "Chúng tôi đã bắt được một con cua nhỏ trên bãi biển sáng nay."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "The crab crawled sideways into the water.",
+          "example_vi": "Con cua bò ngang vào trong nước."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "She ordered a delicious crab salad for lunch.",
+          "example_vi": "Cô ấy đã gọi một món salad cua ngon lành cho bữa trưa."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "He got pinched by a crab while walking on the rocks.",
+          "example_vi": "Anh ấy đã bị một con cua kẹp khi đang đi bộ trên những tảng đá."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "The children watched the crab dig a hole in the sand.",
+          "example_vi": "Lũ trẻ đã xem con cua đào một cái hố trên cát."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "We used a net to catch crabs near the pier.",
+          "example_vi": "Chúng tôi đã dùng một chiếc lưới để bắt cua gần bến tàu."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "This restaurant is famous for its fresh crab dishes.",
+          "example_vi": "Nhà hàng này nổi tiếng với các món cua tươi sống."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "The hard shell of the crab protects it from predators.",
+          "example_vi": "Chiếc mai cứng của con cua bảo vệ nó khỏi những kẻ săn mồi."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "She carefully removed the meat from the crab legs.",
+          "example_vi": "Cô ấy cẩn thận gỡ thịt ra khỏi những chiếc chân cua."
+        },
+        {
+          "meaning_vi": "con cua",
+          "example_en": "A giant crab was spotted near the coral reef.",
+          "example_vi": "Một con cua khổng lồ đã được phát hiện gần rạn san hô."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'crab' là 'con cua' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'con cua' và cả 10 ví dụ đều sử dụng từ 'crab' dưới dạng danh từ chỉ loài giáp xác."
+      },
+      "word": "crab",
+      "normalized_word": "crab",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We caught a small crab on the beach this morning.",
+      "example_vi_clean": "Chúng tôi đã bắt được một con cua nhỏ trên bãi biển sáng nay."
+    },
+    {
+      "id": 26756,
+      "quiz_meaning_vi": "vết nứt",
+      "meaning_vi_clean": "vết nứt",
+      "examples_clean": [
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "There is a small crack in the window glass.",
+          "example_vi": "Có một vết nứt nhỏ trên kính cửa sổ."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "The earthquake caused a deep crack in the road.",
+          "example_vi": "Trận động đất đã gây ra một vết nứt sâu trên mặt đường."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "She noticed a crack in the ceiling of her bedroom.",
+          "example_vi": "Cô ấy nhận thấy một vết nứt trên trần phòng ngủ của mình."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "He glued the ceramic mug to hide the crack.",
+          "example_vi": "Anh ấy đã dán chiếc cốc gốm lại để giấu đi vết nứt."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "Water was leaking through a crack in the pipe.",
+          "example_vi": "Nước đã bị rò rỉ qua một vết nứt trong đường ống."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "The old wall is full of cracks and needs repair.",
+          "example_vi": "Bức tường cũ đầy những vết nứt và cần được sửa chữa."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "You can see a crack in the dry soil due to the drought.",
+          "example_vi": "Bạn có thể thấy một vết nứt trên đất khô cằn do hạn hán."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "He carefully inspected the wooden beam for any cracks.",
+          "example_vi": "Anh ấy đã kiểm tra cẩn thận thanh dầm gỗ xem có vết nứt nào không."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "A tiny crack in the helmet can compromise its safety.",
+          "example_vi": "Một vết nứt nhỏ trên mũ bảo hiểm có thể làm giảm mức độ an toàn của nó."
+        },
+        {
+          "meaning_vi": "vết nứt",
+          "example_en": "The ice on the lake has a dangerous crack in it.",
+          "example_vi": "Lớp băng trên hồ có một vết nứt nguy hiểm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'crack' là 'vết nứt' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vết nứt' và cả 10 ví dụ đều sử dụng từ 'crack' dưới dạng danh từ, không dùng làm động từ."
+      },
+      "word": "crack",
+      "normalized_word": "crack",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is a small crack in the window glass.",
+      "example_vi_clean": "Có một vết nứt nhỏ trên kính cửa sổ."
+    },
+    {
+      "id": 26760,
+      "quiz_meaning_vi": "nếp nhăn",
+      "meaning_vi_clean": "nếp nhăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "She ironed her shirt to get rid of the creases.",
+          "example_vi": "Cô ấy đã ủi chiếc áo sơ mi của mình để loại bỏ các nếp nhăn."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "There was a sharp crease down the front of his trousers.",
+          "example_vi": "Có một nếp nhăn sắc nét dọc theo phía trước quần tây của anh ấy."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "He folded the paper carefully to make a clean crease.",
+          "example_vi": "Anh ấy đã gấp tờ giấy cẩn thận để tạo ra một nếp nhăn sạch sẽ."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "The linen dress gets creases very easily.",
+          "example_vi": "Chiếc váy vải lanh rất dễ bị các nếp nhăn."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "She smoothed out the creases in the tablecloth.",
+          "example_vi": "Cô ấy đã vuốt phẳng các nếp nhăn trên khăn trải bàn."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "He noticed a crease in the map where it had been folded.",
+          "example_vi": "Anh ấy nhận thấy một nếp nhăn trên bản đồ nơi nó đã được gấp lại."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "The packing process left several creases on the leather jacket.",
+          "example_vi": "Quá trình đóng gói đã để lại vài nếp nhăn trên chiếc áo khoác da."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "She tried to iron out the stubborn crease in the curtain.",
+          "example_vi": "Cô ấy đã cố gắng ủi phẳng nếp nhăn cứng đầu trên tấm rèm."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "The pages of the old book were full of creases.",
+          "example_vi": "Các trang của cuốn sách cũ đầy những nếp nhăn."
+        },
+        {
+          "meaning_vi": "nếp nhăn",
+          "example_en": "He made a crease in the cardboard to help it bend.",
+          "example_vi": "Anh ấy đã tạo một nếp nhăn trên bìa cứng để giúp nó gập lại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho danh từ 'crease' là 'nếp nhăn' (trên vải, giấy) và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'nếp nhăn' và cả 10 ví dụ đều sử dụng từ 'crease' dưới dạng danh từ chỉ nếp gấp hoặc nếp nhăn trên bề mặt phẳng."
+      },
+      "word": "crease",
+      "normalized_word": "crease",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She ironed her shirt to get rid of the creases.",
+      "example_vi_clean": "Cô ấy đã ủi chiếc áo sơ mi của mình để loại bỏ các nếp nhăn."
+    },
+    {
+      "id": 26766,
+      "quiz_meaning_vi": "phạm pháp",
+      "meaning_vi_clean": "phạm pháp",
+      "examples_clean": [
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "He was arrested for his involvement in criminal activities.",
+          "example_vi": "Anh ta đã bị bắt vì liên quan đến các hoạt động phạm pháp."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "The police are investigating a criminal network in the city.",
+          "example_vi": "Cảnh sát đang điều tra một mạng lưới phạm pháp trong thành phố."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "She has no prior criminal record.",
+          "example_vi": "Cô ấy không có tiền án phạm pháp nào trước đây."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "Stealing public funds is a serious criminal offense.",
+          "example_vi": "Ăn cắp công quỹ là một hành vi phạm pháp nghiêm trọng."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "They are facing criminal charges for tax evasion.",
+          "example_vi": "Họ đang đối mặt với các cáo buộc phạm pháp vì trốn thuế."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "The lawyer specializes in criminal law.",
+          "example_vi": "Luật sư này chuyên về luật hình sự/phạm pháp."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "He was accused of providing assistance to a criminal gang.",
+          "example_vi": "Anh ta bị cáo buộc cung cấp sự trợ giúp cho một băng nhóm phạm pháp."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "The government is trying to reduce criminal behavior among youth.",
+          "example_vi": "Chính phủ đang cố gắng giảm thiểu hành vi phạm pháp trong giới trẻ."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "She was shocked by the criminal neglect of the animals.",
+          "example_vi": "Cô ấy đã bị sốc trước sự bỏ bê phạm pháp đối với các con vật."
+        },
+        {
+          "meaning_vi": "phạm pháp",
+          "example_en": "The court will decide if his actions were criminal.",
+          "example_vi": "Tòa án sẽ quyết định xem hành động của anh ta có phải là phạm pháp hay không."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất cho tính từ 'criminal' là 'phạm pháp' (hoặc hình sự) và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'phạm pháp' và cả 10 ví dụ đều sử dụng từ 'criminal' dưới dạng tính từ, không dùng làm danh từ chỉ tội phạm."
+      },
+      "word": "criminal",
+      "normalized_word": "criminal",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was arrested for his involvement in criminal activities.",
+      "example_vi_clean": "Anh ta đã bị bắt vì liên quan đến các hoạt động phạm pháp."
+    }
+  ]
+}

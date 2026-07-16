@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24834,
+      "quiz_meaning_vi": "mối quan tâm",
+      "meaning_vi_clean": "mối quan tâm",
+      "examples_clean": [
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "The environment is a major concern for many people.",
+          "example_vi": "Môi trường là một mối quan tâm lớn đối với nhiều người."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "His main concern is the safety of his children.",
+          "example_vi": "Mối quan tâm chính của anh ấy là sự an toàn của các con."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "Health is a primary concern for the elderly.",
+          "example_vi": "Sức khỏe là mối quan tâm hàng đầu của người cao tuổi."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "The rising prices are a serious concern for the government.",
+          "example_vi": "Giá cả tăng cao là một mối quan tâm nghiêm trọng đối với chính phủ."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "Education is a shared concern among parents.",
+          "example_vi": "Giáo dục là mối quan tâm chung của các bậc phụ huynh."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "The lack of water is a growing concern in the region.",
+          "example_vi": "Tình trạng thiếu nước là một mối quan tâm ngày càng tăng trong khu vực."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "Safety at work is a top concern for the manager.",
+          "example_vi": "An toàn tại nơi làm việc là mối quan tâm hàng đầu của người quản lý."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "The future of the company is a big concern for the staff.",
+          "example_vi": "Tương lai của công ty là một mối quan tâm lớn đối với nhân viên."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "Climate change is a global concern today.",
+          "example_vi": "Biến đổi khí hậu là một mối quan tâm toàn cầu hiện nay."
+        },
+        {
+          "meaning_vi": "mối quan tâm",
+          "example_en": "Her only concern is passing the final exam.",
+          "example_vi": "Mối quan tâm duy nhất của cô ấy là vượt qua kỳ thi cuối kỳ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'mối quan tâm' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'concern' được dùng làm danh từ trong tất cả các câu với nghĩa là mối quan tâm."
+      },
+      "word": "concern",
+      "normalized_word": "concern",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The environment is a major concern for many people.",
+      "example_vi_clean": "Môi trường là một mối quan tâm lớn đối với nhiều người."
+    },
+    {
+      "id": 24835,
+      "quiz_meaning_vi": "điều kiện",
+      "meaning_vi_clean": "điều kiện",
+      "examples_clean": [
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "The weather conditions were perfect for a picnic.",
+          "example_vi": "Các điều kiện thời tiết rất hoàn hảo cho một buổi dã ngoại."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "The car is in excellent condition despite its age.",
+          "example_vi": "Chiếc xe vẫn trong điều kiện tuyệt vời mặc dù đã cũ."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "Working conditions in the factory have improved recently.",
+          "example_vi": "Các điều kiện làm việc trong nhà máy đã được cải thiện gần đây."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "You must meet all the conditions to apply for the job.",
+          "example_vi": "Bạn phải đáp ứng tất cả các điều kiện để ứng tuyển vào công việc này."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "The road conditions are dangerous due to the heavy snow.",
+          "example_vi": "Các điều kiện đường sá rất nguy hiểm do tuyết rơi dày."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "He is in a stable condition after the surgery.",
+          "example_vi": "Anh ấy đang trong điều kiện ổn định sau ca phẫu thuật."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "Living conditions in the city are very expensive.",
+          "example_vi": "Các điều kiện sống ở thành phố rất đắt đỏ."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "The contract includes several strict conditions.",
+          "example_vi": "Hợp đồng bao gồm một vài điều kiện nghiêm ngặt."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "The house is in poor condition and needs repairs.",
+          "example_vi": "Ngôi nhà đang trong điều kiện tồi tệ và cần sửa chữa."
+        },
+        {
+          "meaning_vi": "điều kiện",
+          "example_en": "We need to create the right conditions for growth.",
+          "example_vi": "Chúng ta cần tạo ra các điều kiện phù hợp cho sự phát triển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'điều kiện' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'condition' được dùng làm danh từ trong tất cả các câu với nghĩa là điều kiện."
+      },
+      "word": "condition",
+      "normalized_word": "condition",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The weather conditions were perfect for a picnic.",
+      "example_vi_clean": "Các điều kiện thời tiết rất hoàn hảo cho một buổi dã ngoại."
+    },
+    {
+      "id": 24836,
+      "quiz_meaning_vi": "tự tin",
+      "meaning_vi_clean": "tự tin",
+      "examples_clean": [
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She felt confident about her presentation.",
+          "example_vi": "Cô ấy cảm thấy tự tin về bài thuyết trình của mình."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He is a confident speaker in front of large crowds.",
+          "example_vi": "Anh ấy là một người nói tự tin trước đám đông lớn."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "The team is confident that they will win the match.",
+          "example_vi": "Cả đội tự tin rằng họ sẽ thắng trận đấu."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "You should be more confident in your own abilities.",
+          "example_vi": "Bạn nên tự tin hơn vào khả năng của chính mình."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She gave a confident smile before starting the race.",
+          "example_vi": "Cô ấy nở một nụ cười tự tin trước khi bắt đầu cuộc đua."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He seems very confident about his new job.",
+          "example_vi": "Anh ấy có vẻ rất tự tin về công việc mới của mình."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "The students were confident after studying hard.",
+          "example_vi": "Các học sinh cảm thấy tự tin sau khi học tập chăm chỉ."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "She is a confident driver even in heavy traffic.",
+          "example_vi": "Cô ấy là một người lái xe tự tin ngay cả khi giao thông đông đúc."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "They are confident of success in this project.",
+          "example_vi": "Họ tự tin về sự thành công trong dự án này."
+        },
+        {
+          "meaning_vi": "tự tin",
+          "example_en": "He walked with a confident step into the room.",
+          "example_vi": "Anh ấy bước những bước tự tin vào phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'tự tin' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'confident' được dùng làm tính từ trong tất cả các câu với nghĩa là tự tin."
+      },
+      "word": "confident",
+      "normalized_word": "confident",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She felt confident about her presentation.",
+      "example_vi_clean": "Cô ấy cảm thấy tự tin về bài thuyết trình của mình."
+    },
+    {
+      "id": 24842,
+      "quiz_meaning_vi": "sự liên lạc",
+      "meaning_vi_clean": "sự liên lạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "Keep in contact with your family while you are away.",
+          "example_vi": "Hãy giữ liên lạc với gia đình khi bạn đi xa."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "I lost contact with my old school friends.",
+          "example_vi": "Tôi đã mất liên lạc với những người bạn học cũ."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "Please provide your contact details on the form.",
+          "example_vi": "Vui lòng cung cấp thông tin liên lạc của bạn trên biểu mẫu."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "We have been in contact for several years.",
+          "example_vi": "Chúng tôi đã giữ liên lạc trong vài năm qua."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "The office is the main point of contact for customers.",
+          "example_vi": "Văn phòng là điểm liên lạc chính cho khách hàng."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "He made contact with the company by email.",
+          "example_vi": "Anh ấy đã thực hiện liên lạc với công ty qua email."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "It is important to maintain contact with your colleagues.",
+          "example_vi": "Việc duy trì liên lạc với đồng nghiệp là rất quan trọng."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "She established contact with the local authorities.",
+          "example_vi": "Cô ấy đã thiết lập liên lạc với chính quyền địa phương."
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "Do you have any contact with the manager?",
+          "example_vi": "Bạn có bất kỳ sự liên lạc nào với người quản lý không?"
+        },
+        {
+          "meaning_vi": "sự liên lạc",
+          "example_en": "The group is in constant contact via social media.",
+          "example_vi": "Nhóm thường xuyên giữ liên lạc qua mạng xã hội."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'sự liên lạc' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'contact' được dùng làm danh từ trong tất cả các câu với nghĩa là sự liên lạc."
+      },
+      "word": "contact",
+      "normalized_word": "contact",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Keep in contact with your family while you are away.",
+      "example_vi_clean": "Hãy giữ liên lạc với gia đình khi bạn đi xa."
+    },
+    {
+      "id": 24847,
+      "quiz_meaning_vi": "sự tương phản",
+      "meaning_vi_clean": "sự tương phản",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "There is a sharp contrast between the two colors.",
+          "example_vi": "Có một sự tương phản rõ rệt giữa hai màu sắc."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The contrast between day and night is very clear.",
+          "example_vi": "Sự tương phản giữa ngày và đêm rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "Her actions were in contrast to her words.",
+          "example_vi": "Hành động của cô ấy trái ngược với lời nói của cô ấy."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The contrast in their personalities is interesting.",
+          "example_vi": "Sự tương phản trong tính cách của họ rất thú vị."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The photo shows a beautiful contrast of light and shadow.",
+          "example_vi": "Bức ảnh cho thấy sự tương phản đẹp mắt giữa ánh sáng và bóng tối."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "There is a big contrast between city life and country life.",
+          "example_vi": "Có một sự tương phản lớn giữa cuộc sống thành phố và cuộc sống nông thôn."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The contrast makes the design look more modern.",
+          "example_vi": "Sự tương phản làm cho thiết kế trông hiện đại hơn."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "He noted the contrast between the two reports.",
+          "example_vi": "Anh ấy đã ghi chú sự tương phản giữa hai bản báo cáo."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The contrast in temperature was quite noticeable.",
+          "example_vi": "Sự tương phản về nhiệt độ khá đáng chú ý."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "We can see a clear contrast in their results.",
+          "example_vi": "Chúng ta có thể thấy một sự tương phản rõ ràng trong kết quả của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'sự tương phản' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'contrast' được dùng làm danh từ trong tất cả các câu với nghĩa là sự tương phản."
+      },
+      "word": "contrast",
+      "normalized_word": "contrast",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is a sharp contrast between the two colors.",
+      "example_vi_clean": "Có một sự tương phản rõ rệt giữa hai màu sắc."
+    },
+    {
+      "id": 24848,
+      "quiz_meaning_vi": "sự kiểm soát",
+      "meaning_vi_clean": "sự kiểm soát",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The pilot lost control of the plane.",
+          "example_vi": "Phi công đã mất sự kiểm soát máy bay."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "She has full control over her own schedule.",
+          "example_vi": "Cô ấy có toàn quyền kiểm soát lịch trình của riêng mình."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The government has strict control over the borders.",
+          "example_vi": "Chính phủ có sự kiểm soát nghiêm ngặt đối với biên giới."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "He is trying to gain control of the situation.",
+          "example_vi": "Anh ấy đang cố gắng giành lấy sự kiểm soát tình hình."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The remote control is on the table.",
+          "example_vi": "Cái điều khiển từ xa đang ở trên bàn."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "Parents should have some control over what children watch.",
+          "example_vi": "Cha mẹ nên có sự kiểm soát đối với những gì trẻ em xem."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The fire is now under control.",
+          "example_vi": "Đám cháy hiện đã nằm trong sự kiểm soát."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "He lost control of his car on the icy road.",
+          "example_vi": "Anh ấy đã mất sự kiểm soát chiếc xe trên con đường đóng băng."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The manager has control of the entire department.",
+          "example_vi": "Người quản lý có sự kiểm soát toàn bộ phòng ban."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "We need better control of our spending.",
+          "example_vi": "Chúng ta cần sự kiểm soát tốt hơn đối với chi tiêu của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'sự kiểm soát' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'control' được dùng làm danh từ trong tất cả các câu với nghĩa là sự kiểm soát."
+      },
+      "word": "control",
+      "normalized_word": "control",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The pilot lost control of the plane.",
+      "example_vi_clean": "Phi công đã mất sự kiểm soát máy bay."
+    },
+    {
+      "id": 24855,
+      "quiz_meaning_vi": "chi phí",
+      "meaning_vi_clean": "chi phí",
+      "examples_clean": [
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "The cost of living is rising every year.",
+          "example_vi": "Chi phí sinh hoạt đang tăng lên mỗi năm."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "We need to reduce the cost of the project.",
+          "example_vi": "Chúng ta cần giảm chi phí của dự án."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "The total cost of the trip was very high.",
+          "example_vi": "Tổng chi phí của chuyến đi rất cao."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "They are worried about the cost of repairs.",
+          "example_vi": "Họ đang lo lắng về chi phí sửa chữa."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "The cost of the ticket is included in the price.",
+          "example_vi": "Chi phí của tấm vé đã được bao gồm trong giá."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "We must consider the cost before buying it.",
+          "example_vi": "Chúng ta phải cân nhắc chi phí trước khi mua nó."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "The high cost of energy is a problem for many.",
+          "example_vi": "Chi phí năng lượng cao là một vấn đề đối với nhiều người."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "He calculated the cost of the materials.",
+          "example_vi": "Anh ấy đã tính toán chi phí của các vật liệu."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "The cost of education is increasing.",
+          "example_vi": "Chi phí giáo dục đang tăng lên."
+        },
+        {
+          "meaning_vi": "chi phí",
+          "example_en": "They shared the cost of the dinner.",
+          "example_vi": "Họ đã chia sẻ chi phí của bữa tối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'chi phí' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'cost' được dùng làm danh từ trong tất cả các câu với nghĩa là chi phí."
+      },
+      "word": "cost",
+      "normalized_word": "cost",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cost of living is rising every year.",
+      "example_vi_clean": "Chi phí sinh hoạt đang tăng lên mỗi năm."
+    },
+    {
+      "id": 24858,
+      "quiz_meaning_vi": "cặp",
+      "meaning_vi_clean": "cặp",
+      "examples_clean": [
+        {
+          "meaning_vi": "cặp",
+          "example_en": "I saw a young couple walking in the park.",
+          "example_vi": "Tôi thấy một cặp đôi trẻ đang đi dạo trong công viên."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "They are a happy couple who live next door.",
+          "example_vi": "Họ là một cặp đôi hạnh phúc sống ở nhà bên cạnh."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "The couple decided to get married in the summer.",
+          "example_vi": "Cặp đôi đó đã quyết định kết hôn vào mùa hè."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "A couple of friends came to visit me yesterday.",
+          "example_vi": "Một cặp bạn đã đến thăm tôi ngày hôm qua."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "The couple sat at the table near the window.",
+          "example_vi": "Cặp đôi đó ngồi ở cái bàn gần cửa sổ."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "They are a famous couple in the movie industry.",
+          "example_vi": "Họ là một cặp đôi nổi tiếng trong ngành công nghiệp điện ảnh."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "The couple bought a new house in the city.",
+          "example_vi": "Cặp đôi đó đã mua một ngôi nhà mới trong thành phố."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "I met a lovely couple at the party last night.",
+          "example_vi": "Tôi đã gặp một cặp đôi đáng yêu tại bữa tiệc tối qua."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "The couple shared their travel experiences with us.",
+          "example_vi": "Cặp đôi đó đã chia sẻ những trải nghiệm du lịch của họ với chúng tôi."
+        },
+        {
+          "meaning_vi": "cặp",
+          "example_en": "The couple has been together for ten years.",
+          "example_vi": "Cặp đôi đó đã ở bên nhau được mười năm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'cặp' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'couple' được dùng làm danh từ trong tất cả các câu với nghĩa là cặp đôi."
+      },
+      "word": "couple",
+      "normalized_word": "couple",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I saw a young couple walking in the park.",
+      "example_vi_clean": "Tôi thấy một cặp đôi trẻ đang đi dạo trong công viên."
+    },
+    {
+      "id": 24859,
+      "quiz_meaning_vi": "tòa án",
+      "meaning_vi_clean": "tòa án",
+      "examples_clean": [
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "The case will be heard in court tomorrow.",
+          "example_vi": "Vụ án sẽ được xét xử tại tòa án vào ngày mai."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "He had to appear in court for his traffic violation.",
+          "example_vi": "Anh ấy phải ra tòa án vì lỗi vi phạm giao thông."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "The judge arrived at the court early this morning.",
+          "example_vi": "Thẩm phán đã đến tòa án sớm vào sáng nay."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "The lawyer presented the evidence to the court.",
+          "example_vi": "Luật sư đã trình bày bằng chứng trước tòa án."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "She works as a clerk at the local court.",
+          "example_vi": "Cô ấy làm thư ký tại tòa án địa phương."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "The court decided that he was innocent.",
+          "example_vi": "Tòa án đã quyết định rằng anh ấy vô tội."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "They are waiting for the court to announce the verdict.",
+          "example_vi": "Họ đang chờ tòa án công bố phán quyết."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "The building is used as a court for legal matters.",
+          "example_vi": "Tòa nhà được sử dụng làm tòa án cho các vấn đề pháp lý."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "He was sent to court for his crimes.",
+          "example_vi": "Anh ta đã bị đưa ra tòa án vì những tội ác của mình."
+        },
+        {
+          "meaning_vi": "tòa án",
+          "example_en": "The court was full of people watching the trial.",
+          "example_vi": "Tòa án chật kín người đang theo dõi phiên tòa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'tòa án' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'court' được dùng làm danh từ trong tất cả các câu với nghĩa là tòa án."
+      },
+      "word": "court",
+      "normalized_word": "court",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The case will be heard in court tomorrow.",
+      "example_vi_clean": "Vụ án sẽ được xét xử tại tòa án vào ngày mai."
+    },
+    {
+      "id": 24861,
+      "quiz_meaning_vi": "màu kem",
+      "meaning_vi_clean": "màu kem",
+      "examples_clean": [
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "She wore a beautiful cream dress to the party.",
+          "example_vi": "Cô ấy mặc một chiếc váy màu kem xinh đẹp đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The walls in the living room are painted cream.",
+          "example_vi": "Những bức tường trong phòng khách được sơn màu kem."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "He bought a cream shirt for the wedding.",
+          "example_vi": "Anh ấy đã mua một chiếc áo sơ mi màu kem cho đám cưới."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The curtains are a soft cream color.",
+          "example_vi": "Những tấm rèm có màu kem nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "She chose cream tiles for the kitchen floor.",
+          "example_vi": "Cô ấy đã chọn gạch màu kem cho sàn bếp."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The sofa has cream cushions.",
+          "example_vi": "Chiếc ghế sofa có những chiếc gối màu kem."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "They bought a cream carpet for the bedroom.",
+          "example_vi": "Họ đã mua một tấm thảm màu kem cho phòng ngủ."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The car is a light cream color.",
+          "example_vi": "Chiếc xe có màu kem nhạt."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "She prefers cream stationery for her letters.",
+          "example_vi": "Cô ấy thích văn phòng phẩm màu kem cho những lá thư của mình."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The flowers are a lovely shade of cream.",
+          "example_vi": "Những bông hoa có một sắc màu kem đáng yêu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'màu kem' và 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'cream' được dùng làm tính từ trong tất cả các câu với nghĩa là màu kem."
+      },
+      "word": "cream",
+      "normalized_word": "cream",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She wore a beautiful cream dress to the party.",
+      "example_vi_clean": "Cô ấy mặc một chiếc váy màu kem xinh đẹp đến bữa tiệc."
+    }
+  ]
+}

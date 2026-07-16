@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-235",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26341,
+      "word": "adversity",
+      "normalized_word": "adversity",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/əd'və:siti/",
+      "primary_meaning_vi": "sự bất hạnh",
+      "meaning_vi": "sự bất hạnh; vận đen, vận rủi; cảnh nghịch, vận nghịch; tai hoạ, tai ương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26342,
+      "word": "affectionate",
+      "normalized_word": "affectionate",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'fekʃnit/",
+      "primary_meaning_vi": "thương yêu",
+      "meaning_vi": "thương yêu, yêu mến, âu yếm; trìu mến",
+      "example_en": "She eulogised her always warm and affectionate brother.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the affectionate care of a parent; an affectionate countenance; an affectionate message; affectionate language",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26343,
+      "word": "affectionately",
+      "normalized_word": "affectionately",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "âu yếm",
+      "meaning_vi": "âu yếm, trìu mến",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26344,
+      "word": "ageless",
+      "normalized_word": "ageless",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'eidʤlis/",
+      "primary_meaning_vi": "trẻ mãi không già",
+      "meaning_vi": "trẻ mãi không già; mãi mãi, đời đời, vĩnh viễn",
+      "example_en": "The ageless pyramids stood prominently against the sunset.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This memorial will show our ageless respect to those who died.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Her ageless face.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26345,
+      "word": "aggressively",
+      "normalized_word": "aggressively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "xông xáo",
+      "meaning_vi": "xông xáo, tháo vát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26346,
+      "word": "agonise",
+      "normalized_word": "agonise",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'ægənaiz/ (agonise) /'ægənaiz/",
+      "primary_meaning_vi": "chịu đau đớn",
+      "meaning_vi": "chịu đau đớn, chịu khổ sở; quằn quại đau đớn; lo âu, khắc khoải; hấp hối; vật lộn (nghĩa đen) & (nghĩa bóng); cố gắng, tuyệt vọng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26347,
+      "word": "agonize",
+      "normalized_word": "agonize",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'ægənaiz/ (agonise) /'ægənaiz/",
+      "primary_meaning_vi": "chịu đau đớn",
+      "meaning_vi": "chịu đau đớn, chịu khổ sở; quằn quại đau đớn; lo âu, khắc khoải; hấp hối; vật lộn (nghĩa đen) & (nghĩa bóng); cố gắng, tuyệt vọng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26348,
+      "word": "agony",
+      "normalized_word": "agony",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ægəni/",
+      "primary_meaning_vi": "sự đau đớn",
+      "meaning_vi": "sự đau đớn, sự khổ cực, sự thống khổ; sự quằn quại; sự đau đớn cực đô (về thể xác); sự lo âu khắc khoải; cơn hấp hối; sự vật lộn; sự vui thích đến cực độ; mục rao việc riêng (trên báo); bộ quần áo đỏ choé",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26349,
+      "word": "aircraft",
+      "normalized_word": "aircraft",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều không đổi",
+      "phonetic": "/'eəkrɑ:ft/",
+      "primary_meaning_vi": "máy bay",
+      "meaning_vi": "máy bay, tàu bay; khí cầu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26350,
+      "word": "aircrew",
+      "normalized_word": "aircrew",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "toàn thể người lái và nhân viên trên máy bay",
+      "meaning_vi": "toàn thể người lái và nhân viên trên máy bay; phi hành đoàn",
+      "example_en": "The aircrew ran to the bomber.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

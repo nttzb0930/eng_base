@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-275",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26741,
+      "word": "corruption",
+      "normalized_word": "corruption",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'rʌpʃn/",
+      "primary_meaning_vi": "sự hối lộ",
+      "meaning_vi": "sự hối lộ, sự tham nhũng; sự mục nát, sự thối nát; sự sửa đổi làm sai lạc (bài văn, ngôn ngữ...)",
+      "example_en": "a corruption of style",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26742,
+      "word": "cosiness",
+      "normalized_word": "cosiness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "số từ",
+      "phonetic": "/'kouzinis/",
+      "primary_meaning_vi": "sự ấm cúng",
+      "meaning_vi": "sự ấm cúng, sự thoải mái",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26743,
+      "word": "costly",
+      "normalized_word": "costly",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kɔstli/",
+      "primary_meaning_vi": "đắt tiền",
+      "meaning_vi": "đắt tiền, quý giá; tốn tiền, hao tiền tốn của; tai hại",
+      "example_en": "a costly activity",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26744,
+      "word": "costume",
+      "normalized_word": "costume",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kɔstju:m/",
+      "primary_meaning_vi": "quần áo",
+      "meaning_vi": "quần áo, y phục; cách ăn mặc, trang phục, phục sức; buổi khiêu vũ cải trang; đồ nữ trang giả; vở kịch có y phục lịch sử; mặc quần áo cho",
+      "example_en": "The dancer was wearing Highland costume.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We wore gorilla costumes to the party.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The bride wore a grey going-away costume.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26745,
+      "word": "cosy",
+      "normalized_word": "cosy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kouzi/",
+      "primary_meaning_vi": "ấm cúng",
+      "meaning_vi": "ấm cúng, thoải mái dễ chịu; ấm giỏ ((cũng) tea cosy); ghế hai chỗ có nệm",
+      "example_en": "He spent all day cosying up to the new boss, hoping for a plum assignment.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26746,
+      "word": "cottage",
+      "normalized_word": "cottage",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔtidʤ/",
+      "primary_meaning_vi": "nhà tranh",
+      "meaning_vi": "nhà tranh; nhà riêng ở nông thôn; piano; bệnh viên thôn dã (không có nhân viên ở ngay đấy)",
+      "example_en": "Most cottages in the area were larger and more elaborate than my home.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26747,
+      "word": "cough",
+      "normalized_word": "cough",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kɔf/",
+      "primary_meaning_vi": "chứng ho",
+      "meaning_vi": "chứng ho; sự ho; tiếng ho; churchyard; đằng hắng; ho; ho ầm lên để át lời (ai); vừa nói, vừa ho; ho mà khạc ra; phun ra, nhả ra",
+      "example_en": "Behind me, I heard a distinct, dry cough.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Sorry, I can't come to work today – I've got a nasty cough.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was – cough – indisposed.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I breathed in a lungful of smoke by mistake, and started to cough.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26748,
+      "word": "counter",
+      "normalized_word": "counter",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'kauntə/",
+      "primary_meaning_vi": "quầy hàng",
+      "meaning_vi": "quầy hàng, quầy thu tiền; ghi sê (ngân hàng); bàn tính, máy tính; người đếm; thẻ (để đánh bạc thay tiền); ức ngực; thành đuôi tàu; miếng đệm lót giày; đối lập, chống lại, trái lại, ngược lại; sao để đối chiếu (bản văn kiện); đối lập, chống lại, trái lại, ngược lại; đi ngược lại, làm trái lại; phản đối, chống lại, làm trái ngược lại, nói ngược lại; chặn lại và đánh trả, phản công (đấu kiếm, quyền Anh)",
+      "example_en": "He's only 16 months, but is already a good counter – he can count to 100.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He rolled a six on the dice, so moved his counter forward six spaces.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He put his money on the counter, and the shopkeeper put it in the till.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The sum for each contra account is shown in the last column.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26749,
+      "word": "countryman",
+      "normalized_word": "countryman",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kʌntrimən/",
+      "primary_meaning_vi": "người nông thôn",
+      "meaning_vi": "người nông thôn; người đồng xứ, người đồng hương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26750,
+      "word": "courtesy",
+      "normalized_word": "courtesy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kə:tisi/",
+      "primary_meaning_vi": "sự lịch sự",
+      "meaning_vi": "sự lịch sự, sự nhã nhặn; tác phong lịch sự, tác phong nhã nhặn; do ưu đãi mà được, nhờ ơn riêng; do sự giúp đỡ; đến thăm xã giao người nào",
+      "example_en": "He was always known for his grace, kindness, and courtesy to people of every rank.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I offered them a ride simply as a courtesy.",
+          "example_vi": null
+        },
+        {
+          "example_en": "They call this pond a lake by courtesy only.",
+          "example_vi": null
+        },
+        {
+          "example_en": "They received free advertising through the courtesy of the local newspaper.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

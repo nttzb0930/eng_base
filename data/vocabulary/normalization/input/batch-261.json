@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-261",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26601,
+      "word": "characteristic",
+      "normalized_word": "characteristic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kæriktə'ristik/",
+      "primary_meaning_vi": "riêng",
+      "meaning_vi": "riêng, riêng biệt, đặc thù, đặc trưng; đặc tính, đặc điểm",
+      "example_en": "The characteristic of a field, if non-zero, must be a prime number.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26602,
+      "word": "charming",
+      "normalized_word": "charming",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'tʃɑ:miɳ/",
+      "primary_meaning_vi": "đẹp",
+      "meaning_vi": "đẹp, duyên dáng, yêu kiều; có sức quyến rũ, làm say mê, làm mê mẩn",
+      "example_en": "He charmed her with his dashing tales of his days as a sailor.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After winning three games while wearing the chain, Dan began to think it had been charmed.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She led a charmed life.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26603,
+      "word": "cheat",
+      "normalized_word": "cheat",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/tʃi:t/",
+      "primary_meaning_vi": "trò lừa đảo",
+      "meaning_vi": "trò lừa đảo, trò lừa bịp; trò gian lận, ngón gian; người lừa đảo, kẻ gian lận; tên cờ bạc bịp, tên cờ bạc gian lận; cái giá treo cổ; lừa, lừa đảo (ai); tiêu, làm tiêu tan (thì giờ, mệt nhọc, bằng cách đi chơi...); gian lận; đánh bạc bịp; ,  (từ lóng) có ngoại tình; ((thường) + on) không chung thuỷ",
+      "example_en": "My brother flunked biology because he cheated on his mid-term.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After he found out his wife cheated, he left her.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He cheated death when his car collided with a moving train.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He cheated his way into office.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26604,
+      "word": "checkpoint",
+      "normalized_word": "checkpoint",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "điểm kiểm tra",
+      "meaning_vi": "điểm kiểm tra, điểm đánh dấu",
+      "example_en": "The travellers were stopped at the checkpoint.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "You can't finish the race if you haven't passed all of the checkpoints on the track.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26605,
+      "word": "cheeky",
+      "normalized_word": "cheeky",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'tʃi:ki/",
+      "primary_meaning_vi": "táo tợn",
+      "meaning_vi": "táo tợn, cả gan, mặt dạn mày dày, trơ tráo, không biết xấu hổ; vô lễ, hỗn xược",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26606,
+      "word": "cheerfully",
+      "normalized_word": "cheerfully",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "vui vẻ",
+      "meaning_vi": "vui vẻ, phấn khởi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26607,
+      "word": "cheerfulness",
+      "normalized_word": "cheerfulness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'tʃiəfulnis/",
+      "primary_meaning_vi": "sự hoan hỉ",
+      "meaning_vi": "sự hoan hỉ, sự hân hoan, sự vui mừng, sự phấn khởi; sự vui mắt, sự vui vẻ; sự vui lòng, sự sẵn lòng, sự không miễn cưỡng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26608,
+      "word": "chemotherapy",
+      "normalized_word": "chemotherapy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kemou'θerəpi/",
+      "primary_meaning_vi": "phép chữa hoá học",
+      "meaning_vi": "phép chữa hoá học",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26609,
+      "word": "cherry",
+      "normalized_word": "cherry",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'tʃeri/",
+      "primary_meaning_vi": "đỏ màu anh đào",
+      "meaning_vi": "đỏ màu anh đào",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26610,
+      "word": "chew",
+      "normalized_word": "chew",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/tʃu:/",
+      "primary_meaning_vi": "sự nhai",
+      "meaning_vi": "sự nhai; sự nhai thuốc lá; mồi thuốc lá (để) nhai; nhai; ngẫm nghĩ, nghiền ngẫm nghĩ tới nghĩ lui; bite; cud; lải nhải ca cẩm, làu nhàu; ,  (từ lóng) nói chuyện phiếm, tán dóc",
+      "example_en": "I popped the gum into my mouth and gave it a chew.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Phillip purchased a bag of licorice chews at the drugstore.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The school had banned chew and smokes from the school grounds, even for adults.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The ballplayers sat on the bench watching the rain, glumly working their chews.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25061,
+      "quiz_meaning_vi": "xa hơn nữa",
+      "meaning_vi_clean": "xa hơn nữa; thêm nữa; hơn nữa",
+      "examples_clean": [
+        {
+          "meaning_vi": "xa hơn nữa",
+          "example_en": "We decided to walk a little further down the road.",
+          "example_vi": "Chúng tôi quyết định đi bộ xa hơn nữa dọc theo con đường."
+        },
+        {
+          "meaning_vi": "xa hơn nữa",
+          "example_en": "The village is located further than I expected.",
+          "example_vi": "Ngôi làng nằm xa hơn nữa so với tôi tưởng tượng."
+        },
+        {
+          "meaning_vi": "xa hơn nữa",
+          "example_en": "He moved further away from the city center.",
+          "example_vi": "Anh ấy đã chuyển đi xa hơn nữa so với trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "xa hơn nữa",
+          "example_en": "Can you see anything further along the path?",
+          "example_vi": "Bạn có thấy gì xa hơn nữa dọc theo con đường mòn không?"
+        },
+        {
+          "meaning_vi": "thêm nữa",
+          "example_en": "I have no further questions to ask you.",
+          "example_vi": "Tôi không còn câu hỏi nào thêm nữa để hỏi bạn."
+        },
+        {
+          "meaning_vi": "thêm nữa",
+          "example_en": "We need further information before making a decision.",
+          "example_vi": "Chúng tôi cần thêm nữa thông tin trước khi đưa ra quyết định."
+        },
+        {
+          "meaning_vi": "thêm nữa",
+          "example_en": "There will be further updates on this situation.",
+          "example_vi": "Sẽ có thêm nữa các cập nhật về tình hình này."
+        },
+        {
+          "meaning_vi": "hơn nữa",
+          "example_en": "The plan is good, and furthermore, it is cheap.",
+          "example_vi": "Kế hoạch này tốt, và hơn nữa, nó còn rẻ."
+        },
+        {
+          "meaning_vi": "hơn nữa",
+          "example_en": "It is cold, and furthermore, it is raining.",
+          "example_vi": "Trời lạnh, và hơn nữa, trời đang mưa."
+        },
+        {
+          "meaning_vi": "hơn nữa",
+          "example_en": "He is talented and, furthermore, very hardworking.",
+          "example_vi": "Anh ấy tài năng và, hơn nữa, rất chăm chỉ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành tính từ. Cấu trúc lại nghĩa và bổ sung ví dụ theo quy tắc.",
+      "word": "further",
+      "normalized_word": "further",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We decided to walk a little further down the road.",
+      "example_vi_clean": "Chúng tôi quyết định đi bộ xa hơn nữa dọc theo con đường."
+    },
+    {
+      "id": 25062,
+      "quiz_meaning_vi": "phòng trưng bày tranh tượng",
+      "meaning_vi_clean": "phòng trưng bày tranh tượng; hành lang; ban công",
+      "examples_clean": [
+        {
+          "meaning_vi": "phòng trưng bày tranh tượng",
+          "example_en": "We visited the art gallery in the city center.",
+          "example_vi": "Chúng tôi đã ghé thăm phòng trưng bày tranh tượng ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "phòng trưng bày tranh tượng",
+          "example_en": "The gallery is hosting a new exhibition of modern art.",
+          "example_vi": "Phòng trưng bày tranh tượng đang tổ chức một triển lãm nghệ thuật hiện đại mới."
+        },
+        {
+          "meaning_vi": "phòng trưng bày tranh tượng",
+          "example_en": "She works as a curator at a local gallery.",
+          "example_vi": "Cô ấy làm việc như một người quản lý tại một phòng trưng bày tranh tượng địa phương."
+        },
+        {
+          "meaning_vi": "phòng trưng bày tranh tượng",
+          "example_en": "The gallery was filled with beautiful paintings.",
+          "example_vi": "Phòng trưng bày tranh tượng tràn ngập những bức tranh đẹp."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "The long gallery connected the two wings of the castle.",
+          "example_vi": "Hành lang dài nối liền hai cánh của tòa lâu đài."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "They walked through the gallery to reach the library.",
+          "example_vi": "Họ đi qua hành lang để đến thư viện."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "Portraits of ancestors lined the walls of the gallery.",
+          "example_vi": "Chân dung tổ tiên được treo dọc theo các bức tường của hành lang."
+        },
+        {
+          "meaning_vi": "ban công",
+          "example_en": "We sat in the gallery to get a better view of the stage.",
+          "example_vi": "Chúng tôi ngồi ở ban công để có tầm nhìn tốt hơn về sân khấu."
+        },
+        {
+          "meaning_vi": "ban công",
+          "example_en": "The theater has a large gallery for the audience.",
+          "example_vi": "Nhà hát có một ban công lớn dành cho khán giả."
+        },
+        {
+          "meaning_vi": "ban công",
+          "example_en": "Tickets for the gallery are cheaper than those for the stalls.",
+          "example_vi": "Vé cho ban công rẻ hơn vé cho hàng ghế dưới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "gallery",
+      "normalized_word": "gallery",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We visited the art gallery in the city center.",
+      "example_vi_clean": "Chúng tôi đã ghé thăm phòng trưng bày tranh tượng ở trung tâm thành phố."
+    },
+    {
+      "id": 25063,
+      "quiz_meaning_vi": "ga ra",
+      "meaning_vi_clean": "ga ra; nhà để ô tô",
+      "examples_clean": [
+        {
+          "meaning_vi": "ga ra",
+          "example_en": "I parked my car in the garage.",
+          "example_vi": "Tôi đã đỗ xe trong ga ra."
+        },
+        {
+          "meaning_vi": "ga ra",
+          "example_en": "The garage is big enough for two cars.",
+          "example_vi": "Ga ra đủ rộng cho hai chiếc xe hơi."
+        },
+        {
+          "meaning_vi": "ga ra",
+          "example_en": "He is fixing his bike in the garage.",
+          "example_vi": "Anh ấy đang sửa xe đạp trong ga ra."
+        },
+        {
+          "meaning_vi": "ga ra",
+          "example_en": "The garage door is broken.",
+          "example_vi": "Cửa ga ra bị hỏng rồi."
+        },
+        {
+          "meaning_vi": "nhà để ô tô",
+          "example_en": "They built a new house with a large garage.",
+          "example_vi": "Họ đã xây một ngôi nhà mới với một nhà để ô tô lớn."
+        },
+        {
+          "meaning_vi": "nhà để ô tô",
+          "example_en": "My father keeps his tools in the garage.",
+          "example_vi": "Cha tôi để dụng cụ của ông ấy trong nhà để ô tô."
+        },
+        {
+          "meaning_vi": "nhà để ô tô",
+          "example_en": "The car is currently in the garage for repairs.",
+          "example_vi": "Chiếc xe hiện đang ở trong nhà để ô tô để sửa chữa."
+        },
+        {
+          "meaning_vi": "nhà để ô tô",
+          "example_en": "We use the garage for storage as well.",
+          "example_vi": "Chúng tôi cũng sử dụng nhà để ô tô để chứa đồ."
+        },
+        {
+          "meaning_vi": "nhà để ô tô",
+          "example_en": "The garage is attached to the main house.",
+          "example_vi": "Nhà để ô tô được gắn liền với ngôi nhà chính."
+        },
+        {
+          "meaning_vi": "nhà để ô tô",
+          "example_en": "Please clean out the garage this weekend.",
+          "example_vi": "Làm ơn hãy dọn dẹp nhà để ô tô vào cuối tuần này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "garage",
+      "normalized_word": "garage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I parked my car in the garage.",
+      "example_vi_clean": "Tôi đã đỗ xe trong ga ra."
+    },
+    {
+      "id": 25064,
+      "quiz_meaning_vi": "cây tỏi",
+      "meaning_vi_clean": "cây tỏi; củ tỏi",
+      "examples_clean": [
+        {
+          "meaning_vi": "cây tỏi",
+          "example_en": "Garlic is a common ingredient in many dishes.",
+          "example_vi": "Cây tỏi là một nguyên liệu phổ biến trong nhiều món ăn."
+        },
+        {
+          "meaning_vi": "cây tỏi",
+          "example_en": "She grows garlic in her small garden.",
+          "example_vi": "Cô ấy trồng cây tỏi trong khu vườn nhỏ của mình."
+        },
+        {
+          "meaning_vi": "cây tỏi",
+          "example_en": "The smell of garlic is very strong.",
+          "example_vi": "Mùi của cây tỏi rất nồng."
+        },
+        {
+          "meaning_vi": "cây tỏi",
+          "example_en": "Garlic is known for its health benefits.",
+          "example_vi": "Cây tỏi được biết đến với những lợi ích cho sức khỏe."
+        },
+        {
+          "meaning_vi": "củ tỏi",
+          "example_en": "I need one clove of garlic for this recipe.",
+          "example_vi": "Tôi cần một tép tỏi từ củ tỏi cho công thức này."
+        },
+        {
+          "meaning_vi": "củ tỏi",
+          "example_en": "Peel the garlic before chopping it.",
+          "example_vi": "Hãy bóc vỏ củ tỏi trước khi băm nhỏ nó."
+        },
+        {
+          "meaning_vi": "củ tỏi",
+          "example_en": "He bought a bag of garlic at the market.",
+          "example_vi": "Anh ấy đã mua một túi củ tỏi ở chợ."
+        },
+        {
+          "meaning_vi": "củ tỏi",
+          "example_en": "Crush the garlic with the side of a knife.",
+          "example_vi": "Nghiền củ tỏi bằng mặt bên của con dao."
+        },
+        {
+          "meaning_vi": "củ tỏi",
+          "example_en": "Add some garlic to the sauce for flavor.",
+          "example_vi": "Thêm một ít củ tỏi vào nước sốt để tạo hương vị."
+        },
+        {
+          "meaning_vi": "củ tỏi",
+          "example_en": "The recipe calls for fresh garlic.",
+          "example_vi": "Công thức yêu cầu sử dụng củ tỏi tươi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ đầy đủ.",
+      "word": "garlic",
+      "normalized_word": "garlic",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Garlic is a common ingredient in many dishes.",
+      "example_vi_clean": "Cây tỏi là một nguyên liệu phổ biến trong nhiều món ăn."
+    },
+    {
+      "id": 25065,
+      "quiz_meaning_vi": "khí",
+      "meaning_vi_clean": "khí; hơi đốt; xăng",
+      "examples_clean": [
+        {
+          "meaning_vi": "khí",
+          "example_en": "Oxygen is a gas that we need to breathe.",
+          "example_vi": "Oxy là một loại khí mà chúng ta cần để thở."
+        },
+        {
+          "meaning_vi": "khí",
+          "example_en": "The atmosphere is composed of various gases.",
+          "example_vi": "Khí quyển được cấu tạo từ nhiều loại khí khác nhau."
+        },
+        {
+          "meaning_vi": "khí",
+          "example_en": "Some gases are harmful to the environment.",
+          "example_vi": "Một số loại khí gây hại cho môi trường."
+        },
+        {
+          "meaning_vi": "khí",
+          "example_en": "The scientist studied the properties of the gas.",
+          "example_vi": "Nhà khoa học đã nghiên cứu các đặc tính của loại khí đó."
+        },
+        {
+          "meaning_vi": "hơi đốt",
+          "example_en": "We use gas for cooking in our kitchen.",
+          "example_vi": "Chúng tôi sử dụng hơi đốt để nấu ăn trong bếp."
+        },
+        {
+          "meaning_vi": "hơi đốt",
+          "example_en": "Make sure to turn off the gas after cooking.",
+          "example_vi": "Hãy chắc chắn rằng đã tắt hơi đốt sau khi nấu ăn."
+        },
+        {
+          "meaning_vi": "hơi đốt",
+          "example_en": "The house is heated by gas.",
+          "example_vi": "Ngôi nhà được sưởi ấm bằng hơi đốt."
+        },
+        {
+          "meaning_vi": "xăng",
+          "example_en": "We need to stop for gas on the way home.",
+          "example_vi": "Chúng ta cần dừng lại để đổ xăng trên đường về nhà."
+        },
+        {
+          "meaning_vi": "xăng",
+          "example_en": "The car ran out of gas on the highway.",
+          "example_vi": "Chiếc xe đã hết xăng trên đường cao tốc."
+        },
+        {
+          "meaning_vi": "xăng",
+          "example_en": "Gas prices have increased recently.",
+          "example_vi": "Giá xăng đã tăng gần đây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "gas",
+      "normalized_word": "gas",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Oxygen is a gas that we need to breathe.",
+      "example_vi_clean": "Oxy là một loại khí mà chúng ta cần để thở."
+    },
+    {
+      "id": 25066,
+      "quiz_meaning_vi": "cổng",
+      "meaning_vi_clean": "cổng; cửa đập",
+      "examples_clean": [
+        {
+          "meaning_vi": "cổng",
+          "example_en": "Please close the gate behind you.",
+          "example_vi": "Làm ơn hãy đóng cổng sau khi bạn đi qua."
+        },
+        {
+          "meaning_vi": "cổng",
+          "example_en": "The garden gate is painted white.",
+          "example_vi": "Cổng vườn được sơn màu trắng."
+        },
+        {
+          "meaning_vi": "cổng",
+          "example_en": "We waited at the main gate for our friends.",
+          "example_vi": "Chúng tôi đã đợi ở cổng chính để đón bạn bè."
+        },
+        {
+          "meaning_vi": "cổng",
+          "example_en": "The iron gate was locked tight.",
+          "example_vi": "Cổng sắt đã được khóa chặt."
+        },
+        {
+          "meaning_vi": "cổng",
+          "example_en": "The car drove through the open gate.",
+          "example_vi": "Chiếc xe lái qua cái cổng đang mở."
+        },
+        {
+          "meaning_vi": "cửa đập",
+          "example_en": "The flood gate was opened to release the water.",
+          "example_vi": "Cửa đập đã được mở để xả nước."
+        },
+        {
+          "meaning_vi": "cửa đập",
+          "example_en": "The engineers inspected the gate of the dam.",
+          "example_vi": "Các kỹ sư đã kiểm tra cửa đập của con đập."
+        },
+        {
+          "meaning_vi": "cửa đập",
+          "example_en": "The water level is controlled by the gate.",
+          "example_vi": "Mực nước được kiểm soát bởi cửa đập."
+        },
+        {
+          "meaning_vi": "cửa đập",
+          "example_en": "They repaired the damaged gate of the canal.",
+          "example_vi": "Họ đã sửa chữa cửa đập bị hư hỏng của con kênh."
+        },
+        {
+          "meaning_vi": "cửa đập",
+          "example_en": "The gate prevents the river from overflowing.",
+          "example_vi": "Cửa đập ngăn không cho con sông bị tràn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "gate",
+      "normalized_word": "gate",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please close the gate behind you.",
+      "example_vi_clean": "Làm ơn hãy đóng cổng sau khi bạn đi qua."
+    },
+    {
+      "id": 25067,
+      "quiz_meaning_vi": "tập hợp",
+      "meaning_vi_clean": "tập hợp; hái; hiểu",
+      "examples_clean": [
+        {
+          "meaning_vi": "tập hợp",
+          "example_en": "The students gathered in the hall for the meeting.",
+          "example_vi": "Các học sinh tập hợp trong hội trường để họp."
+        },
+        {
+          "meaning_vi": "tập hợp",
+          "example_en": "Crowds gathered to watch the parade.",
+          "example_vi": "Đám đông tập hợp để xem cuộc diễu hành."
+        },
+        {
+          "meaning_vi": "tập hợp",
+          "example_en": "We gathered all the documents for the report.",
+          "example_vi": "Chúng tôi tập hợp tất cả tài liệu cho bản báo cáo."
+        },
+        {
+          "meaning_vi": "tập hợp",
+          "example_en": "The family gathered for dinner on Sunday.",
+          "example_vi": "Gia đình tập hợp để ăn tối vào Chủ nhật."
+        },
+        {
+          "meaning_vi": "hái",
+          "example_en": "She went to the garden to gather some flowers.",
+          "example_vi": "Cô ấy đi ra vườn để hái vài bông hoa."
+        },
+        {
+          "meaning_vi": "hái",
+          "example_en": "They gathered berries in the forest.",
+          "example_vi": "Họ hái quả mọng trong rừng."
+        },
+        {
+          "meaning_vi": "hái",
+          "example_en": "It is time to gather the crops.",
+          "example_vi": "Đã đến lúc hái mùa màng."
+        },
+        {
+          "meaning_vi": "hiểu",
+          "example_en": "I gather that you are not happy with the result.",
+          "example_vi": "Tôi hiểu rằng bạn không hài lòng với kết quả."
+        },
+        {
+          "meaning_vi": "hiểu",
+          "example_en": "From what I gather, the meeting is cancelled.",
+          "example_vi": "Từ những gì tôi hiểu, cuộc họp đã bị hủy."
+        },
+        {
+          "meaning_vi": "hiểu",
+          "example_en": "I gather from your tone that you disagree.",
+          "example_vi": "Tôi hiểu từ giọng điệu của bạn rằng bạn không đồng ý."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "gather",
+      "normalized_word": "gather",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The students gathered in the hall for the meeting.",
+      "example_vi_clean": "Các học sinh tập hợp trong hội trường để họp."
+    },
+    {
+      "id": 25068,
+      "quiz_meaning_vi": "giống",
+      "meaning_vi_clean": "giống",
+      "examples_clean": [
+        {
+          "meaning_vi": "giống",
+          "example_en": "The survey asks for your age and gender.",
+          "example_vi": "Cuộc khảo sát yêu cầu thông tin về tuổi và giới tính của bạn."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "They are working to achieve equality between genders.",
+          "example_vi": "Họ đang làm việc để đạt được sự bình đẳng giữa các giới tính."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "Gender roles have changed significantly over time.",
+          "example_vi": "Vai trò giới tính đã thay đổi đáng kể theo thời gian."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "The study focuses on gender differences in learning.",
+          "example_vi": "Nghiên cứu tập trung vào sự khác biệt giới tính trong học tập."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "We should not discriminate based on gender.",
+          "example_vi": "Chúng ta không nên phân biệt đối xử dựa trên giới tính."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "The form requires you to specify your gender.",
+          "example_vi": "Mẫu đơn yêu cầu bạn chỉ rõ giới tính của mình."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "Gender equality is a fundamental human right.",
+          "example_vi": "Bình đẳng giới là một quyền cơ bản của con người."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "The teacher treats all students equally regardless of gender.",
+          "example_vi": "Giáo viên đối xử công bằng với tất cả học sinh bất kể giới tính."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "She is an expert in gender studies.",
+          "example_vi": "Cô ấy là một chuyên gia trong lĩnh vực nghiên cứu giới tính."
+        },
+        {
+          "meaning_vi": "giống",
+          "example_en": "The policy aims to promote gender balance in the workplace.",
+          "example_vi": "Chính sách nhằm thúc đẩy sự cân bằng giới tính tại nơi làm việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "gender",
+      "normalized_word": "gender",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The survey asks for your age and gender.",
+      "example_vi_clean": "Cuộc khảo sát yêu cầu thông tin về tuổi và giới tính của bạn."
+    },
+    {
+      "id": 25069,
+      "quiz_meaning_vi": "sự sinh ra",
+      "meaning_vi_clean": "sự sinh ra; thế hệ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự sinh ra",
+          "example_en": "The generation of new ideas is important for progress.",
+          "example_vi": "Sự sinh ra những ý tưởng mới rất quan trọng cho sự tiến bộ."
+        },
+        {
+          "meaning_vi": "sự sinh ra",
+          "example_en": "The generation of electricity is a complex process.",
+          "example_vi": "Sự sinh ra điện năng là một quá trình phức tạp."
+        },
+        {
+          "meaning_vi": "sự sinh ra",
+          "example_en": "We are studying the generation of heat in the engine.",
+          "example_vi": "Chúng tôi đang nghiên cứu sự sinh ra nhiệt trong động cơ."
+        },
+        {
+          "meaning_vi": "sự sinh ra",
+          "example_en": "The generation of wealth takes time and effort.",
+          "example_vi": "Sự sinh ra của cải cần thời gian và nỗ lực."
+        },
+        {
+          "meaning_vi": "thế hệ",
+          "example_en": "My generation grew up with computers.",
+          "example_vi": "Thế hệ của tôi lớn lên cùng với máy tính."
+        },
+        {
+          "meaning_vi": "thế hệ",
+          "example_en": "There is a gap between the older and younger generations.",
+          "example_vi": "Có một khoảng cách giữa thế hệ già và thế hệ trẻ."
+        },
+        {
+          "meaning_vi": "thế hệ",
+          "example_en": "This tradition has been passed down through generations.",
+          "example_vi": "Truyền thống này đã được truyền lại qua nhiều thế hệ."
+        },
+        {
+          "meaning_vi": "thế hệ",
+          "example_en": "The new generation is very tech-savvy.",
+          "example_vi": "Thế hệ mới rất am hiểu công nghệ."
+        },
+        {
+          "meaning_vi": "thế hệ",
+          "example_en": "We must protect the planet for future generations.",
+          "example_vi": "Chúng ta phải bảo vệ hành tinh cho các thế hệ tương lai."
+        },
+        {
+          "meaning_vi": "thế hệ",
+          "example_en": "Each generation has its own unique challenges.",
+          "example_vi": "Mỗi thế hệ đều có những thách thức riêng biệt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "generation",
+      "normalized_word": "generation",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The generation of new ideas is important for progress.",
+      "example_vi_clean": "Sự sinh ra những ý tưởng mới rất quan trọng cho sự tiến bộ."
+    },
+    {
+      "id": 25070,
+      "quiz_meaning_vi": "hiền lành",
+      "meaning_vi_clean": "hiền lành; nhẹ nhàng; thoai thoải",
+      "examples_clean": [
+        {
+          "meaning_vi": "hiền lành",
+          "example_en": "He is a very gentle person who loves animals.",
+          "example_vi": "Anh ấy là một người rất hiền lành, người yêu động vật."
+        },
+        {
+          "meaning_vi": "hiền lành",
+          "example_en": "She has a gentle nature that makes everyone feel comfortable.",
+          "example_vi": "Cô ấy có bản tính hiền lành khiến mọi người cảm thấy thoải mái."
+        },
+        {
+          "meaning_vi": "hiền lành",
+          "example_en": "The dog is very gentle with children.",
+          "example_vi": "Con chó rất hiền lành với trẻ em."
+        },
+        {
+          "meaning_vi": "hiền lành",
+          "example_en": "He spoke in a gentle voice.",
+          "example_vi": "Anh ấy nói bằng một giọng hiền lành."
+        },
+        {
+          "meaning_vi": "nhẹ nhàng",
+          "example_en": "Please be gentle when you handle the glass.",
+          "example_vi": "Làm ơn hãy nhẹ nhàng khi bạn cầm chiếc ly."
+        },
+        {
+          "meaning_vi": "nhẹ nhàng",
+          "example_en": "She gave the baby a gentle touch.",
+          "example_vi": "Cô ấy chạm nhẹ nhàng vào đứa bé."
+        },
+        {
+          "meaning_vi": "nhẹ nhàng",
+          "example_en": "The wind was gentle this morning.",
+          "example_vi": "Gió thổi nhẹ nhàng vào sáng nay."
+        },
+        {
+          "meaning_vi": "thoai thoải",
+          "example_en": "The hill has a gentle slope.",
+          "example_vi": "Ngọn đồi có một con dốc thoai thoải."
+        },
+        {
+          "meaning_vi": "thoai thoải",
+          "example_en": "We walked up the gentle path to the top.",
+          "example_vi": "Chúng tôi đi bộ lên con đường thoai thoải đến đỉnh."
+        },
+        {
+          "meaning_vi": "thoai thoải",
+          "example_en": "The river bank is gentle here.",
+          "example_vi": "Bờ sông ở đây thoai thoải."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành tính từ. Cấu trúc lại nghĩa và bổ sung ví dụ.",
+      "word": "gentle",
+      "normalized_word": "gentle",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a very gentle person who loves animals.",
+      "example_vi_clean": "Anh ấy là một người rất hiền lành, người yêu động vật."
+    }
+  ]
+}

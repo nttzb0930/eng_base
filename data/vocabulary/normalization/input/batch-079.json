@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-079",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24781,
+      "word": "challenge",
+      "normalized_word": "challenge",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'tʃælindʤ/",
+      "primary_meaning_vi": "tiếng hô \"đứng lại\" (của lính đứng gác)",
+      "meaning_vi": "tiếng hô \"đứng lại\" (của lính đứng gác); sự thách thức; sự không thừa nhận; hiệu lệnh (cho tàu thuỷ, máy bay) bắt trưng bày dấu hiệu; hô \"đứng lại\" (lính đứng gác); thách, thách thức; không thừa nhận; đòi hỏi, yêu cầu",
+      "example_en": "We challenged the boys next door to a game of football.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to challenge the accuracy of a statement or of a quotation",
+          "example_vi": null
+        },
+        {
+          "example_en": "The sentinel challenged us with \"Who goes there?\"",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24782,
+      "word": "champagne",
+      "normalized_word": "champagne",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ʃæm'pein/",
+      "primary_meaning_vi": "rượu sâm banh",
+      "meaning_vi": "rượu sâm banh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24783,
+      "word": "championship",
+      "normalized_word": "championship",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'tʃæmpjənʃip/",
+      "primary_meaning_vi": "chức vô địch",
+      "meaning_vi": "chức vô địch; danh hiệu quán quân; sự bảo vệ, sự bênh vực, sự đấu tranh cho",
+      "example_en": "His championship of civil rights eventually bore fruit.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24784,
+      "word": "chance",
+      "normalized_word": "chance",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/tʃɑ:ns/",
+      "primary_meaning_vi": "sự may rủi",
+      "meaning_vi": "sự may rủi, sự tình cờ; sự có thể, sự có khả năng, khả năng có thể; cơ hội; số phận; may ra có thể; cơ hội làm giàu, cơ hội để phất; tình cờ, ngẫu nhiên; tình cờ, ngẫu nhiên, may mà; liều, đánh liều; tình cờ mà tìm thấy, tình cờ mà gặp; liều làm mà thành công; cầu may",
+      "example_en": "We had the chance to meet the president last week.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Why leave it to chance when a few simple steps will secure the desired outcome?",
+          "example_vi": null
+        },
+        {
+          "example_en": "There is a 30 percent chance of rain tomorrow.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It chanced that I found a solution the very next day.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24785,
+      "word": "chapter",
+      "normalized_word": "chapter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'tʃæps/",
+      "primary_meaning_vi": "chương (sách)",
+      "meaning_vi": "chương (sách); đề tài, vấn đề; tăng hội; accident; đến cùng; mãi mãi; nói có sách, mách có chứng",
+      "example_en": "Detective novel writers try to keep up the suspense until the last chapter.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24786,
+      "word": "chart",
+      "normalized_word": "chart",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/tʃɑ:t/",
+      "primary_meaning_vi": "bản đồ đi biển",
+      "meaning_vi": "bản đồ đi biển, hải đồ; bản đồ; đồ thị, biểu đồ; vẽ hải đồ; ghi vào hải đồ; vẽ đồ thị, lập biểu đồ",
+      "example_en": "Let's chart how we're going to get from here to there.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The band first charted in 1994.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24787,
+      "word": "cheap",
+      "normalized_word": "cheap",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/tʃi:p/",
+      "primary_meaning_vi": "rẻ",
+      "meaning_vi": "rẻ, rẻ tiền; đi tàu xe hạng ít tiền; ít giá trị, xấu; hời hợt không thành thật; của rẻ là của ôi; thấy khó chịu, thấy khó ở; khinh ai, coi thường ai; ăn ở không ra gì để cho người ta khinh; rẻ, rẻ mạt; hạ, hạ giá; on the cheap rẻ, rẻ tiền",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24788,
+      "word": "cheek",
+      "normalized_word": "cheek",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/tʃi:k/",
+      "primary_meaning_vi": "má",
+      "meaning_vi": "má; sự táo tợn, sự cả gan; thói trơ tráo, tính không biết xấu hổ; lời nói láo xược, lời nói vô lễ; thanh má, thanh đứng (của khung cửa); má (kìm, ròng rọc,  êtô); vai kề vai; thân thiết với nhau, tớ tớ mình mình, mày mày tao tao; cho riêng mình không chia xẻ với ai cả; không thành thật, giả dối; chế nhạo, nhạo báng; láo xược với (ai), hỗn xược với (ai)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24789,
+      "word": "cheer",
+      "normalized_word": "cheer",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/tʃiə/",
+      "primary_meaning_vi": "sự vui vẻ",
+      "meaning_vi": "sự vui vẻ, sự khoái trá; sự cổ vũ, sự khuyến khích; sự hoan hô; tiêng hoan hô; đồ ăn ngon, món ăn thịnh soạn; khí sắc; thể trạng; cố gắng lên!; đừng nản, hãy can đảm lên!; đầy dũng cảm; đầy hy vọng; càng ít người càng được ăn nhiều; làm vui mừng, làm phấn khởi; làm hớn hở ((cũng) cheer up); khích lệ, cổ vũ; hoan hô, tung hô; vui, mừng, khoái, thích; phấn khởi, phấn chấn, hớn hở, vui vẻ lên, hăng hái lên; hoan hô, vỗ tay hoan hô",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24790,
+      "word": "chef",
+      "normalized_word": "chef",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ʃef/",
+      "primary_meaning_vi": "đầu bếp",
+      "meaning_vi": "đầu bếp",
+      "example_en": "Kiss the chef. (slogan on aprons used by home barbecue enthusiasts)",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

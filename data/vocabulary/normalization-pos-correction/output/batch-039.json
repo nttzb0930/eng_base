@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24997,
+      "quiz_meaning_vi": "thêm",
+      "meaning_vi_clean": "thêm",
+      "examples_clean": [
+        {
+          "meaning_vi": "thêm",
+          "example_en": "I need some extra time to finish my homework.",
+          "example_vi": "Tôi cần thêm thời gian để hoàn thành bài tập về nhà."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "There is an extra chair in the living room.",
+          "example_vi": "Có một chiếc ghế thêm ở trong phòng khách."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "She brought an extra blanket because it was cold.",
+          "example_vi": "Cô ấy mang theo một chiếc chăn thêm vì trời lạnh."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "We have an extra ticket for the concert tonight.",
+          "example_vi": "Chúng tôi có một tấm vé thêm cho buổi hòa nhạc tối nay."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "He did some extra work to earn more money.",
+          "example_vi": "Anh ấy đã làm thêm việc để kiếm nhiều tiền hơn."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "Please bring an extra pen for the exam.",
+          "example_vi": "Vui lòng mang theo một chiếc bút thêm cho bài kiểm tra."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "The hotel offers an extra bed for children.",
+          "example_vi": "Khách sạn cung cấp một chiếc giường thêm cho trẻ em."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "I have an extra key to the front door.",
+          "example_vi": "Tôi có một chiếc chìa khóa thêm cho cửa trước."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "They need an extra person to help with the project.",
+          "example_vi": "Họ cần thêm một người để giúp đỡ dự án."
+        },
+        {
+          "meaning_vi": "thêm",
+          "example_en": "There is an extra charge for breakfast.",
+          "example_vi": "Có một khoản phí thêm cho bữa sáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'thêm' cho tính từ extra và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ extra được dùng làm tính từ bổ nghĩa cho danh từ trong cả 10 câu với nghĩa là thêm."
+      },
+      "word": "extra",
+      "normalized_word": "extra",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I need some extra time to finish my homework.",
+      "example_vi_clean": "Tôi cần thêm thời gian để hoàn thành bài tập về nhà."
+    },
+    {
+      "id": 25002,
+      "quiz_meaning_vi": "quen thuộc",
+      "meaning_vi_clean": "quen thuộc",
+      "examples_clean": [
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "The song sounds very familiar to me.",
+          "example_vi": "Bài hát nghe rất quen thuộc với tôi."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "She saw a familiar face in the crowd.",
+          "example_vi": "Cô ấy thấy một gương mặt quen thuộc trong đám đông."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "This place feels familiar because I grew up here.",
+          "example_vi": "Nơi này cảm giác rất quen thuộc vì tôi đã lớn lên ở đây."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "The smell of the bakery is very familiar.",
+          "example_vi": "Mùi của tiệm bánh rất quen thuộc."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "He used a familiar tone when speaking to his brother.",
+          "example_vi": "Anh ấy dùng giọng điệu quen thuộc khi nói chuyện với anh trai mình."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "The story has a familiar plot.",
+          "example_vi": "Câu chuyện có một cốt truyện quen thuộc."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "I am familiar with the rules of this game.",
+          "example_vi": "Tôi rất quen thuộc với các quy tắc của trò chơi này."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "The landscape looks familiar after all these years.",
+          "example_vi": "Phong cảnh trông rất quen thuộc sau bao nhiêu năm."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "She chose a familiar path to walk home.",
+          "example_vi": "Cô ấy chọn một con đường quen thuộc để đi bộ về nhà."
+        },
+        {
+          "meaning_vi": "quen thuộc",
+          "example_en": "The voice on the phone sounded familiar.",
+          "example_vi": "Giọng nói trên điện thoại nghe rất quen thuộc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'quen thuộc' cho tính từ familiar và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ familiar được dùng làm tính từ trong cả 10 câu với nghĩa là quen thuộc."
+      },
+      "word": "familiar",
+      "normalized_word": "familiar",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The song sounds very familiar to me.",
+      "example_vi_clean": "Bài hát nghe rất quen thuộc với tôi."
+    },
+    {
+      "id": 25003,
+      "quiz_meaning_vi": "sang trọng",
+      "meaning_vi_clean": "sang trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "They went to a fancy restaurant for their anniversary.",
+          "example_vi": "Họ đã đến một nhà hàng sang trọng cho ngày kỷ niệm của mình."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "She wore a fancy dress to the party.",
+          "example_vi": "Cô ấy mặc một chiếc váy sang trọng đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "He lives in a fancy apartment in the city center.",
+          "example_vi": "Anh ấy sống trong một căn hộ sang trọng ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "The hotel has a very fancy lobby.",
+          "example_vi": "Khách sạn có một sảnh đợi rất sang trọng."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "They bought some fancy furniture for the living room.",
+          "example_vi": "Họ đã mua một vài món đồ nội thất sang trọng cho phòng khách."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "It was a fancy event with many famous guests.",
+          "example_vi": "Đó là một sự kiện sang trọng với nhiều khách mời nổi tiếng."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "She likes to buy fancy jewelry.",
+          "example_vi": "Cô ấy thích mua trang sức sang trọng."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "The car looks very fancy and expensive.",
+          "example_vi": "Chiếc xe trông rất sang trọng và đắt tiền."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "They served a fancy dinner with five courses.",
+          "example_vi": "Họ đã phục vụ một bữa tối sang trọng với năm món."
+        },
+        {
+          "meaning_vi": "sang trọng",
+          "example_en": "He wore a fancy suit to the wedding.",
+          "example_vi": "Anh ấy mặc một bộ vest sang trọng đến đám cưới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'sang trọng' cho tính từ fancy và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fancy được dùng làm tính từ trong cả 10 câu với nghĩa là sang trọng."
+      },
+      "word": "fancy",
+      "normalized_word": "fancy",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They went to a fancy restaurant for their anniversary.",
+      "example_vi_clean": "Họ đã đến một nhà hàng sang trọng cho ngày kỷ niệm của mình."
+    },
+    {
+      "id": 25004,
+      "quiz_meaning_vi": "tuyệt vời",
+      "meaning_vi_clean": "tuyệt vời",
+      "examples_clean": [
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "We had a fantastic time at the beach.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian tuyệt vời ở bãi biển."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "That is a fantastic idea for the project.",
+          "example_vi": "Đó là một ý tưởng tuyệt vời cho dự án."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "She did a fantastic job on her presentation.",
+          "example_vi": "Cô ấy đã làm một công việc tuyệt vời trong bài thuyết trình của mình."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "The weather today is absolutely fantastic.",
+          "example_vi": "Thời tiết hôm nay thực sự tuyệt vời."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "He is a fantastic teacher who helps everyone.",
+          "example_vi": "Anh ấy là một giáo viên tuyệt vời, người giúp đỡ mọi người."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "The view from the mountain top is fantastic.",
+          "example_vi": "Khung cảnh từ đỉnh núi thật tuyệt vời."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "They gave a fantastic performance last night.",
+          "example_vi": "Họ đã có một màn trình diễn tuyệt vời tối qua."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "It was a fantastic movie with a great ending.",
+          "example_vi": "Đó là một bộ phim tuyệt vời với cái kết hay."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "You look fantastic in that new dress.",
+          "example_vi": "Bạn trông thật tuyệt vời trong chiếc váy mới đó."
+        },
+        {
+          "meaning_vi": "tuyệt vời",
+          "example_en": "The food at the party was fantastic.",
+          "example_vi": "Đồ ăn tại bữa tiệc thật tuyệt vời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'tuyệt vời' cho tính từ fantastic và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fantastic được dùng làm tính từ trong cả 10 câu với nghĩa là tuyệt vời."
+      },
+      "word": "fantastic",
+      "normalized_word": "fantastic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We had a fantastic time at the beach.",
+      "example_vi_clean": "Chúng tôi đã có một khoảng thời gian tuyệt vời ở bãi biển."
+    },
+    {
+      "id": 25005,
+      "quiz_meaning_vi": "giá vé",
+      "meaning_vi_clean": "giá vé",
+      "examples_clean": [
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "The bus fare has increased this year.",
+          "example_vi": "Giá vé xe buýt đã tăng trong năm nay."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "I need to check the train fare before I travel.",
+          "example_vi": "Tôi cần kiểm tra giá vé tàu trước khi đi du lịch."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "The taxi fare was too expensive for me.",
+          "example_vi": "Giá vé taxi quá đắt đối với tôi."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "She paid the bus fare with some coins.",
+          "example_vi": "Cô ấy đã trả giá vé xe buýt bằng vài đồng xu."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "The airline reduced the air fare for students.",
+          "example_vi": "Hãng hàng không đã giảm giá vé máy bay cho sinh viên."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "How much is the subway fare in this city?",
+          "example_vi": "Giá vé tàu điện ngầm ở thành phố này là bao nhiêu?"
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "He didn't have enough money for the bus fare.",
+          "example_vi": "Anh ấy không có đủ tiền cho giá vé xe buýt."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "The ferry fare is included in the tour price.",
+          "example_vi": "Giá vé phà đã được bao gồm trong giá tour."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "They are complaining about the high bus fare.",
+          "example_vi": "Họ đang phàn nàn về giá vé xe buýt cao."
+        },
+        {
+          "meaning_vi": "giá vé",
+          "example_en": "Please keep your ticket to show the fare.",
+          "example_vi": "Vui lòng giữ vé của bạn để chứng minh giá vé đã trả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'giá vé' cho danh từ fare và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fare được dùng làm danh từ trong cả 10 câu với nghĩa là giá vé."
+      },
+      "word": "fare",
+      "normalized_word": "fare",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bus fare has increased this year.",
+      "example_vi_clean": "Giá vé xe buýt đã tăng trong năm nay."
+    },
+    {
+      "id": 25007,
+      "quiz_meaning_vi": "thời trang",
+      "meaning_vi_clean": "thời trang",
+      "examples_clean": [
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "She is very interested in fashion.",
+          "example_vi": "Cô ấy rất quan tâm đến thời trang."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "He works in the fashion industry.",
+          "example_vi": "Anh ấy làm việc trong ngành thời trang."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "This style of clothing is back in fashion.",
+          "example_vi": "Kiểu quần áo này đã quay lại thời trang."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "She reads many magazines about fashion.",
+          "example_vi": "Cô ấy đọc nhiều tạp chí về thời trang."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "The fashion show was very impressive.",
+          "example_vi": "Buổi trình diễn thời trang rất ấn tượng."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "He has a great sense of fashion.",
+          "example_vi": "Anh ấy có gu thời trang rất tốt."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "Fashion changes very quickly these days.",
+          "example_vi": "Thời trang thay đổi rất nhanh những ngày này."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "She wants to be a fashion designer.",
+          "example_vi": "Cô ấy muốn trở thành một nhà thiết kế thời trang."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "They are discussing the latest fashion trends.",
+          "example_vi": "Họ đang thảo luận về các xu hướng thời trang mới nhất."
+        },
+        {
+          "meaning_vi": "thời trang",
+          "example_en": "This shop sells high-end fashion items.",
+          "example_vi": "Cửa hàng này bán các mặt hàng thời trang cao cấp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'thời trang' cho danh từ fashion và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fashion được dùng làm danh từ trong cả 10 câu với nghĩa là thời trang."
+      },
+      "word": "fashion",
+      "normalized_word": "fashion",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is very interested in fashion.",
+      "example_vi_clean": "Cô ấy rất quan tâm đến thời trang."
+    },
+    {
+      "id": 25008,
+      "quiz_meaning_vi": "lỗi",
+      "meaning_vi_clean": "lỗi",
+      "examples_clean": [
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "It was not my fault that the glass broke.",
+          "example_vi": "Đó không phải là lỗi của tôi khi chiếc ly bị vỡ."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "He admitted his fault in the accident.",
+          "example_vi": "Anh ấy đã thừa nhận lỗi của mình trong vụ tai nạn."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "It is my fault that we are late.",
+          "example_vi": "Đó là lỗi của tôi khi chúng ta bị trễ."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "She found a fault in the computer program.",
+          "example_vi": "Cô ấy đã tìm thấy một lỗi trong chương trình máy tính."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "Don't blame me, it's not my fault.",
+          "example_vi": "Đừng đổ lỗi cho tôi, đó không phải là lỗi của tôi."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "The mechanic found a fault in the engine.",
+          "example_vi": "Người thợ máy đã tìm thấy một lỗi trong động cơ."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "Everyone makes a fault sometimes.",
+          "example_vi": "Ai cũng mắc lỗi đôi khi."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "He tried to hide his fault from his teacher.",
+          "example_vi": "Anh ấy đã cố gắng che giấu lỗi của mình với giáo viên."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "The system has a technical fault.",
+          "example_vi": "Hệ thống có một lỗi kỹ thuật."
+        },
+        {
+          "meaning_vi": "lỗi",
+          "example_en": "It is a common fault in this model.",
+          "example_vi": "Đó là một lỗi phổ biến ở mẫu này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'lỗi' cho danh từ fault và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fault được dùng làm danh từ trong cả 10 câu với nghĩa là lỗi."
+      },
+      "word": "fault",
+      "normalized_word": "fault",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was not my fault that the glass broke.",
+      "example_vi_clean": "Đó không phải là lỗi của tôi khi chiếc ly bị vỡ."
+    },
+    {
+      "id": 25009,
+      "quiz_meaning_vi": "sự giúp đỡ",
+      "meaning_vi_clean": "sự giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Could you do me a favor and open the door?",
+          "example_vi": "Bạn có thể giúp tôi một việc và mở cửa không?"
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "She asked for a favor from her neighbor.",
+          "example_vi": "Cô ấy đã nhờ một sự giúp đỡ từ người hàng xóm."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "I owe you a favor for helping me move.",
+          "example_vi": "Tôi nợ bạn một sự giúp đỡ vì đã giúp tôi chuyển nhà."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "He did me a big favor by lending me his car.",
+          "example_vi": "Anh ấy đã giúp tôi một việc lớn bằng cách cho tôi mượn xe."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Can I ask a small favor of you?",
+          "example_vi": "Tôi có thể nhờ bạn một sự giúp đỡ nhỏ được không?"
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "She returned the favor by cooking dinner.",
+          "example_vi": "Cô ấy đã đáp lại sự giúp đỡ bằng cách nấu bữa tối."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "It is a favor I will never forget.",
+          "example_vi": "Đó là một sự giúp đỡ tôi sẽ không bao giờ quên."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "He is always ready to do a favor for others.",
+          "example_vi": "Anh ấy luôn sẵn sàng làm một sự giúp đỡ cho người khác."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "They asked for a favor to finish the work early.",
+          "example_vi": "Họ đã nhờ một sự giúp đỡ để hoàn thành công việc sớm."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "I need a favor to carry these heavy bags.",
+          "example_vi": "Tôi cần một sự giúp đỡ để mang những chiếc túi nặng này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'sự giúp đỡ' cho danh từ favor và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ favor được dùng làm danh từ trong cả 10 câu với nghĩa là sự giúp đỡ."
+      },
+      "word": "favor",
+      "normalized_word": "favor",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Could you do me a favor and open the door?",
+      "example_vi_clean": "Bạn có thể giúp tôi một việc và mở cửa không?"
+    },
+    {
+      "id": 25010,
+      "quiz_meaning_vi": "sự giúp đỡ",
+      "meaning_vi_clean": "sự giúp đỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Could you do me a favour and call him?",
+          "example_vi": "Bạn có thể giúp tôi một việc và gọi cho anh ấy không?"
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "She asked for a favour to help her study.",
+          "example_vi": "Cô ấy đã nhờ một sự giúp đỡ để giúp cô ấy học tập."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "I owe you a favour for your kindness.",
+          "example_vi": "Tôi nợ bạn một sự giúp đỡ vì lòng tốt của bạn."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "He did me a great favour by fixing my bike.",
+          "example_vi": "Anh ấy đã giúp tôi một việc lớn bằng cách sửa xe đạp cho tôi."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "Can I ask a quick favour of you?",
+          "example_vi": "Tôi có thể nhờ bạn một sự giúp đỡ nhanh được không?"
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "She returned the favour when I was sick.",
+          "example_vi": "Cô ấy đã đáp lại sự giúp đỡ khi tôi bị ốm."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "It was a huge favour that saved my day.",
+          "example_vi": "Đó là một sự giúp đỡ lớn đã cứu vãn ngày của tôi."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "He is known for doing a favour for everyone.",
+          "example_vi": "Anh ấy nổi tiếng vì làm một sự giúp đỡ cho mọi người."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "They asked for a favour to move the furniture.",
+          "example_vi": "Họ đã nhờ một sự giúp đỡ để di chuyển đồ đạc."
+        },
+        {
+          "meaning_vi": "sự giúp đỡ",
+          "example_en": "I need a favour to translate this document.",
+          "example_vi": "Tôi cần một sự giúp đỡ để dịch tài liệu này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'sự giúp đỡ' cho danh từ favour và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ favour được dùng làm danh từ trong cả 10 câu với nghĩa là sự giúp đỡ."
+      },
+      "word": "favour",
+      "normalized_word": "favour",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Could you do me a favour and call him?",
+      "example_vi_clean": "Bạn có thể giúp tôi một việc và gọi cho anh ấy không?"
+    },
+    {
+      "id": 25011,
+      "quiz_meaning_vi": "nỗi sợ",
+      "meaning_vi_clean": "nỗi sợ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "She has a great fear of spiders.",
+          "example_vi": "Cô ấy có một nỗi sợ lớn về nhện."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "He overcame his fear of public speaking.",
+          "example_vi": "Anh ấy đã vượt qua nỗi sợ nói trước đám đông của mình."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "The fear of failure stopped him from trying.",
+          "example_vi": "Nỗi sợ thất bại đã ngăn cản anh ấy thử sức."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "They lived in fear of the dark.",
+          "example_vi": "Họ đã sống trong nỗi sợ bóng tối."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "Her fear of flying is very common.",
+          "example_vi": "Nỗi sợ bay của cô ấy rất phổ biến."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "He felt a sudden fear when he heard the noise.",
+          "example_vi": "Anh ấy cảm thấy một nỗi sợ đột ngột khi nghe thấy tiếng ồn."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "The fear of the unknown is natural.",
+          "example_vi": "Nỗi sợ những điều chưa biết là tự nhiên."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "She tried to hide her fear from her friends.",
+          "example_vi": "Cô ấy đã cố gắng che giấu nỗi sợ của mình với bạn bè."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "His fear of heights is well known.",
+          "example_vi": "Nỗi sợ độ cao của anh ấy rất nổi tiếng."
+        },
+        {
+          "meaning_vi": "nỗi sợ",
+          "example_en": "They shared their fear of the storm.",
+          "example_vi": "Họ đã chia sẻ nỗi sợ của mình về cơn bão."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'nỗi sợ' cho danh từ fear và đảm bảo 10 ví dụ đều dùng đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fear được dùng làm danh từ trong cả 10 câu với nghĩa là nỗi sợ."
+      },
+      "word": "fear",
+      "normalized_word": "fear",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a great fear of spiders.",
+      "example_vi_clean": "Cô ấy có một nỗi sợ lớn về nhện."
+    }
+  ]
+}

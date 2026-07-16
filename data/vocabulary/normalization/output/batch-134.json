@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25331,
+      "quiz_meaning_vi": "đèo",
+      "meaning_vi_clean": "đèo; sự thi đỗ; sự chuyền bóng; cú đâm",
+      "examples_clean": [
+        {
+          "meaning_vi": "đèo",
+          "example_en": "The road winds through the mountain pass.",
+          "example_vi": "Con đường uốn lượn qua đèo núi."
+        },
+        {
+          "meaning_vi": "đèo",
+          "example_en": "We drove over the high pass in the Alps.",
+          "example_vi": "Chúng tôi lái xe qua con đèo cao ở dãy Alps."
+        },
+        {
+          "meaning_vi": "đèo",
+          "example_en": "The army secured the narrow pass.",
+          "example_vi": "Quân đội đã kiểm soát con đèo hẹp."
+        },
+        {
+          "meaning_vi": "đèo",
+          "example_en": "Snow blocked the mountain pass for days.",
+          "example_vi": "Tuyết đã chặn con đèo trong nhiều ngày."
+        },
+        {
+          "meaning_vi": "sự thi đỗ",
+          "example_en": "She celebrated her pass in the final exam.",
+          "example_vi": "Cô ấy ăn mừng việc thi đỗ kỳ thi cuối kỳ."
+        },
+        {
+          "meaning_vi": "sự thi đỗ",
+          "example_en": "He needed a pass to get into the university.",
+          "example_vi": "Anh ấy cần một kết quả thi đỗ để vào đại học."
+        },
+        {
+          "meaning_vi": "sự chuyền bóng",
+          "example_en": "The player made a perfect pass to his teammate.",
+          "example_vi": "Cầu thủ đã thực hiện một đường chuyền bóng hoàn hảo cho đồng đội."
+        },
+        {
+          "meaning_vi": "sự chuyền bóng",
+          "example_en": "That was a risky pass during the match.",
+          "example_vi": "Đó là một đường chuyền bóng đầy rủi ro trong trận đấu."
+        },
+        {
+          "meaning_vi": "cú đâm",
+          "example_en": "The fencer prepared for a quick pass.",
+          "example_vi": "Vận động viên đấu kiếm chuẩn bị cho một cú đâm nhanh."
+        },
+        {
+          "meaning_vi": "cú đâm",
+          "example_en": "He blocked the opponent's pass with his sword.",
+          "example_vi": "Anh ấy chặn cú đâm của đối thủ bằng kiếm của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ noun sang danh từ, chọn nghĩa phổ biến nhất là đèo, bổ sung ví dụ cho các nghĩa khác.",
+      "word": "pass",
+      "normalized_word": "pass",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The road winds through the mountain pass.",
+      "example_vi_clean": "Con đường uốn lượn qua đèo núi."
+    },
+    {
+      "id": 25332,
+      "quiz_meaning_vi": "sự đi qua",
+      "meaning_vi_clean": "sự đi qua; lối đi; hành lang; đoạn văn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đi qua",
+          "example_en": "The passage of time is often unnoticed.",
+          "example_vi": "Sự đi qua của thời gian thường không được chú ý."
+        },
+        {
+          "meaning_vi": "sự đi qua",
+          "example_en": "We watched the passage of the ships in the harbor.",
+          "example_vi": "Chúng tôi quan sát sự đi qua của những con tàu trong bến cảng."
+        },
+        {
+          "meaning_vi": "sự đi qua",
+          "example_en": "The passage of the new law caused much debate.",
+          "example_vi": "Sự thông qua của đạo luật mới gây ra nhiều tranh luận."
+        },
+        {
+          "meaning_vi": "sự đi qua",
+          "example_en": "They celebrated the safe passage of the travelers.",
+          "example_vi": "Họ ăn mừng sự đi qua an toàn của những người lữ hành."
+        },
+        {
+          "meaning_vi": "lối đi",
+          "example_en": "The secret passage led to a hidden room.",
+          "example_vi": "Lối đi bí mật dẫn đến một căn phòng ẩn."
+        },
+        {
+          "meaning_vi": "lối đi",
+          "example_en": "Please keep the passage clear for others.",
+          "example_vi": "Vui lòng giữ lối đi thông thoáng cho người khác."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "The office is located at the end of the passage.",
+          "example_vi": "Văn phòng nằm ở cuối hành lang."
+        },
+        {
+          "meaning_vi": "hành lang",
+          "example_en": "He walked down the long, dark passage.",
+          "example_vi": "Anh ấy đi dọc theo hành lang dài và tối."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "Read the following passage carefully.",
+          "example_vi": "Hãy đọc kỹ đoạn văn sau đây."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "She highlighted an interesting passage in the book.",
+          "example_vi": "Cô ấy đã đánh dấu một đoạn văn thú vị trong cuốn sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "passage",
+      "normalized_word": "passage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The passage of time is often unnoticed.",
+      "example_vi_clean": "Sự đi qua của thời gian thường không được chú ý."
+    },
+    {
+      "id": 25333,
+      "quiz_meaning_vi": "hành khách",
+      "meaning_vi_clean": "hành khách; người không đóng góp",
+      "examples_clean": [
+        {
+          "meaning_vi": "hành khách",
+          "example_en": "The passenger sat by the window.",
+          "example_vi": "Hành khách ngồi cạnh cửa sổ."
+        },
+        {
+          "meaning_vi": "hành khách",
+          "example_en": "All passengers must fasten their seatbelts.",
+          "example_vi": "Tất cả hành khách phải thắt dây an toàn."
+        },
+        {
+          "meaning_vi": "hành khách",
+          "example_en": "The bus was full of passengers.",
+          "example_vi": "Chiếc xe buýt đầy hành khách."
+        },
+        {
+          "meaning_vi": "hành khách",
+          "example_en": "She is a frequent passenger on this train line.",
+          "example_vi": "Cô ấy là hành khách thường xuyên trên tuyến tàu này."
+        },
+        {
+          "meaning_vi": "người không đóng góp",
+          "example_en": "He was just a passenger in the group project.",
+          "example_vi": "Anh ta chỉ là người không đóng góp gì trong dự án nhóm."
+        },
+        {
+          "meaning_vi": "người không đóng góp",
+          "example_en": "We cannot afford to have any passengers on this team.",
+          "example_vi": "Chúng ta không thể để có bất kỳ người không đóng góp nào trong đội này."
+        },
+        {
+          "meaning_vi": "người không đóng góp",
+          "example_en": "She felt like a passenger while others did the work.",
+          "example_vi": "Cô ấy cảm thấy mình như người không đóng góp trong khi những người khác làm việc."
+        },
+        {
+          "meaning_vi": "người không đóng góp",
+          "example_en": "Don't be a passenger; get involved in the task.",
+          "example_vi": "Đừng là người không đóng góp; hãy tham gia vào công việc."
+        },
+        {
+          "meaning_vi": "hành khách",
+          "example_en": "The ship carried over a thousand passengers.",
+          "example_vi": "Con tàu chở hơn một ngàn hành khách."
+        },
+        {
+          "meaning_vi": "người không đóng góp",
+          "example_en": "The manager identified the passengers in the department.",
+          "example_vi": "Người quản lý đã xác định những người không đóng góp trong bộ phận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "passenger",
+      "normalized_word": "passenger",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The passenger sat by the window.",
+      "example_vi_clean": "Hành khách ngồi cạnh cửa sổ."
+    },
+    {
+      "id": 25334,
+      "quiz_meaning_vi": "mì ống",
+      "meaning_vi_clean": "mì ống",
+      "examples_clean": [
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "We had pasta for dinner last night.",
+          "example_vi": "Chúng tôi đã ăn mì ống cho bữa tối hôm qua."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "She loves cooking fresh pasta.",
+          "example_vi": "Cô ấy thích nấu mì ống tươi."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "Boil the pasta in salted water.",
+          "example_vi": "Luộc mì ống trong nước muối."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "This pasta dish is very easy to make.",
+          "example_vi": "Món mì ống này rất dễ làm."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "Do you prefer tomato sauce on your pasta?",
+          "example_vi": "Bạn có thích sốt cà chua trên mì ống không?"
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "He bought a bag of dried pasta.",
+          "example_vi": "Anh ấy đã mua một túi mì ống khô."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "The restaurant serves authentic Italian pasta.",
+          "example_vi": "Nhà hàng phục vụ món mì ống Ý chính hiệu."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "Drain the pasta before adding the sauce.",
+          "example_vi": "Để ráo mì ống trước khi thêm sốt."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "Pasta is a staple food in many countries.",
+          "example_vi": "Mì ống là thực phẩm chính ở nhiều quốc gia."
+        },
+        {
+          "meaning_vi": "mì ống",
+          "example_en": "She added some cheese to the pasta.",
+          "example_vi": "Cô ấy đã thêm một ít phô mai vào mì ống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "pasta",
+      "normalized_word": "pasta",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We had pasta for dinner last night.",
+      "example_vi_clean": "Chúng tôi đã ăn mì ống cho bữa tối hôm qua."
+    },
+    {
+      "id": 25335,
+      "quiz_meaning_vi": "đường mòn",
+      "meaning_vi_clean": "đường mòn; con đường",
+      "examples_clean": [
+        {
+          "meaning_vi": "đường mòn",
+          "example_en": "We followed the narrow path through the woods.",
+          "example_vi": "Chúng tôi đi theo con đường mòn hẹp xuyên qua rừng."
+        },
+        {
+          "meaning_vi": "đường mòn",
+          "example_en": "The path was covered with fallen leaves.",
+          "example_vi": "Con đường mòn bị bao phủ bởi lá rụng."
+        },
+        {
+          "meaning_vi": "đường mòn",
+          "example_en": "They cleared a path through the tall grass.",
+          "example_vi": "Họ đã dọn một con đường mòn xuyên qua đám cỏ cao."
+        },
+        {
+          "meaning_vi": "đường mòn",
+          "example_en": "The path leads directly to the river.",
+          "example_vi": "Con đường mòn dẫn thẳng đến con sông."
+        },
+        {
+          "meaning_vi": "con đường",
+          "example_en": "He chose a different path for his career.",
+          "example_vi": "Anh ấy đã chọn một con đường khác cho sự nghiệp của mình."
+        },
+        {
+          "meaning_vi": "con đường",
+          "example_en": "Success is not always a straight path.",
+          "example_vi": "Thành công không phải lúc nào cũng là một con đường thẳng."
+        },
+        {
+          "meaning_vi": "con đường",
+          "example_en": "They are on the path to recovery.",
+          "example_vi": "Họ đang trên con đường hồi phục."
+        },
+        {
+          "meaning_vi": "con đường",
+          "example_en": "Education is the path to a better future.",
+          "example_vi": "Giáo dục là con đường dẫn đến tương lai tốt đẹp hơn."
+        },
+        {
+          "meaning_vi": "đường mòn",
+          "example_en": "The mountain path is very steep.",
+          "example_vi": "Con đường mòn trên núi rất dốc."
+        },
+        {
+          "meaning_vi": "con đường",
+          "example_en": "She found her own path in life.",
+          "example_vi": "Cô ấy đã tìm thấy con đường riêng của mình trong cuộc sống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "path",
+      "normalized_word": "path",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We followed the narrow path through the woods.",
+      "example_vi_clean": "Chúng tôi đi theo con đường mòn hẹp xuyên qua rừng."
+    },
+    {
+      "id": 25336,
+      "quiz_meaning_vi": "máy tính cá nhân",
+      "meaning_vi_clean": "máy tính cá nhân",
+      "examples_clean": [
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "I use my PC for work every day.",
+          "example_vi": "Tôi sử dụng máy tính cá nhân để làm việc mỗi ngày."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "She bought a new PC for her studies.",
+          "example_vi": "Cô ấy đã mua một chiếc máy tính cá nhân mới cho việc học."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "The PC is running very slowly today.",
+          "example_vi": "Máy tính cá nhân đang chạy rất chậm hôm nay."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "He is an expert at fixing any PC.",
+          "example_vi": "Anh ấy là chuyên gia trong việc sửa chữa bất kỳ máy tính cá nhân nào."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "Most offices are equipped with a PC.",
+          "example_vi": "Hầu hết các văn phòng đều được trang bị máy tính cá nhân."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "I saved the document on my PC.",
+          "example_vi": "Tôi đã lưu tài liệu trên máy tính cá nhân của mình."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "The PC crashed while I was playing a game.",
+          "example_vi": "Máy tính cá nhân bị treo khi tôi đang chơi game."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "She prefers using a PC over a laptop.",
+          "example_vi": "Cô ấy thích sử dụng máy tính cá nhân hơn là máy tính xách tay."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "Connect the printer to your PC.",
+          "example_vi": "Kết nối máy in với máy tính cá nhân của bạn."
+        },
+        {
+          "meaning_vi": "máy tính cá nhân",
+          "example_en": "He upgraded the memory of his PC.",
+          "example_vi": "Anh ấy đã nâng cấp bộ nhớ cho máy tính cá nhân của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ null sang danh từ, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "pc",
+      "normalized_word": "pc",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I use my PC for work every day.",
+      "example_vi_clean": "Tôi sử dụng máy tính cá nhân để làm việc mỗi ngày."
+    },
+    {
+      "id": 25337,
+      "quiz_meaning_vi": "đậu Hà-lan",
+      "meaning_vi_clean": "đậu Hà-lan",
+      "examples_clean": [
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "She added some peas to the soup.",
+          "example_vi": "Cô ấy đã thêm một ít đậu Hà-lan vào món súp."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "I don't really like eating peas.",
+          "example_vi": "Tôi không thực sự thích ăn đậu Hà-lan."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "Fresh peas are delicious in the summer.",
+          "example_vi": "Đậu Hà-lan tươi rất ngon vào mùa hè."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "He bought a bag of frozen peas.",
+          "example_vi": "Anh ấy đã mua một túi đậu Hà-lan đông lạnh."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "Peas are a good source of protein.",
+          "example_vi": "Đậu Hà-lan là một nguồn cung cấp protein tốt."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "She shelled the peas for dinner.",
+          "example_vi": "Cô ấy đã tách vỏ đậu Hà-lan cho bữa tối."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "The garden is full of pea plants.",
+          "example_vi": "Khu vườn đầy những cây đậu Hà-lan."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "Would you like some peas with your steak?",
+          "example_vi": "Bạn có muốn ăn kèm đậu Hà-lan với bít tết không?"
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "She cooked the peas until they were soft.",
+          "example_vi": "Cô ấy nấu đậu Hà-lan cho đến khi chúng mềm."
+        },
+        {
+          "meaning_vi": "đậu Hà-lan",
+          "example_en": "He planted peas in the backyard.",
+          "example_vi": "Anh ấy đã trồng đậu Hà-lan ở sân sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "pea",
+      "normalized_word": "pea",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She added some peas to the soup.",
+      "example_vi_clean": "Cô ấy đã thêm một ít đậu Hà-lan vào món súp."
+    },
+    {
+      "id": 25338,
+      "quiz_meaning_vi": "hoà bình",
+      "meaning_vi_clean": "hoà bình; yên ổn; yên lặng",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "They are working towards a peaceful solution.",
+          "example_vi": "Họ đang nỗ lực hướng tới một giải pháp hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "The two countries signed a peaceful agreement.",
+          "example_vi": "Hai quốc gia đã ký một hiệp định hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "Everyone wants to live in a peaceful world.",
+          "example_vi": "Mọi người đều muốn sống trong một thế giới hoà bình."
+        },
+        {
+          "meaning_vi": "hoà bình",
+          "example_en": "The protest remained peaceful throughout the day.",
+          "example_vi": "Cuộc biểu tình vẫn diễn ra trong hoà bình suốt cả ngày."
+        },
+        {
+          "meaning_vi": "yên ổn",
+          "example_en": "It was a peaceful afternoon in the park.",
+          "example_vi": "Đó là một buổi chiều yên ổn trong công viên."
+        },
+        {
+          "meaning_vi": "yên ổn",
+          "example_en": "She enjoys a peaceful life in the countryside.",
+          "example_vi": "Cô ấy tận hưởng một cuộc sống yên ổn ở vùng quê."
+        },
+        {
+          "meaning_vi": "yên ổn",
+          "example_en": "The village is very peaceful at night.",
+          "example_vi": "Ngôi làng rất yên ổn vào ban đêm."
+        },
+        {
+          "meaning_vi": "yên lặng",
+          "example_en": "He sat in the peaceful garden to read.",
+          "example_vi": "Anh ấy ngồi trong khu vườn yên lặng để đọc sách."
+        },
+        {
+          "meaning_vi": "yên lặng",
+          "example_en": "The house was peaceful after the children left.",
+          "example_vi": "Ngôi nhà trở nên yên lặng sau khi lũ trẻ rời đi."
+        },
+        {
+          "meaning_vi": "yên lặng",
+          "example_en": "She found a peaceful spot by the lake.",
+          "example_vi": "Cô ấy tìm thấy một nơi yên lặng bên hồ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "peaceful",
+      "normalized_word": "peaceful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They are working towards a peaceful solution.",
+      "example_vi_clean": "Họ đang nỗ lực hướng tới một giải pháp hoà bình."
+    },
+    {
+      "id": 25339,
+      "quiz_meaning_vi": "quả lê",
+      "meaning_vi_clean": "quả lê",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "She ate a juicy pear for a snack.",
+          "example_vi": "Cô ấy đã ăn một quả lê mọng nước để ăn nhẹ."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "I bought some fresh pears at the market.",
+          "example_vi": "Tôi đã mua vài quả lê tươi ở chợ."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "The pear is very sweet and ripe.",
+          "example_vi": "Quả lê này rất ngọt và chín."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "He peeled the pear before eating it.",
+          "example_vi": "Anh ấy đã gọt vỏ quả lê trước khi ăn."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "Would you like a slice of pear?",
+          "example_vi": "Bạn có muốn một lát lê không?"
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "She made a delicious pear tart.",
+          "example_vi": "Cô ấy đã làm một chiếc bánh tart lê ngon tuyệt."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "The pear tree in the garden is full of fruit.",
+          "example_vi": "Cây lê trong vườn đầy quả."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "He prefers apples to pears.",
+          "example_vi": "Anh ấy thích táo hơn là lê."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "Wash the pear before you eat it.",
+          "example_vi": "Hãy rửa quả lê trước khi bạn ăn nó."
+        },
+        {
+          "meaning_vi": "quả lê",
+          "example_en": "She put the pear in her lunch box.",
+          "example_vi": "Cô ấy đã bỏ quả lê vào hộp cơm trưa của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "pear",
+      "normalized_word": "pear",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She ate a juicy pear for a snack.",
+      "example_vi_clean": "Cô ấy đã ăn một quả lê mọng nước để ăn nhẹ."
+    },
+    {
+      "id": 25340,
+      "quiz_meaning_vi": "đồng xu penni",
+      "meaning_vi_clean": "đồng xu penni; số tiền",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồng xu penni",
+          "example_en": "He found a penny on the sidewalk.",
+          "example_vi": "Anh ấy tìm thấy một đồng xu penni trên vỉa hè."
+        },
+        {
+          "meaning_vi": "đồng xu penni",
+          "example_en": "She saved every penny she could.",
+          "example_vi": "Cô ấy đã tiết kiệm từng đồng xu penni có thể."
+        },
+        {
+          "meaning_vi": "đồng xu penni",
+          "example_en": "The item costs only a few pennies.",
+          "example_vi": "Món đồ chỉ có giá vài đồng xu penni."
+        },
+        {
+          "meaning_vi": "đồng xu penni",
+          "example_en": "He dropped a penny into the fountain.",
+          "example_vi": "Anh ấy đã thả một đồng xu penni xuống đài phun nước."
+        },
+        {
+          "meaning_vi": "số tiền",
+          "example_en": "It didn't cost me a single penny.",
+          "example_vi": "Nó không tốn của tôi một xu nào cả."
+        },
+        {
+          "meaning_vi": "số tiền",
+          "example_en": "She doesn't have a penny to her name.",
+          "example_vi": "Cô ấy không có lấy một xu dính túi."
+        },
+        {
+          "meaning_vi": "số tiền",
+          "example_en": "He spent every penny on his new car.",
+          "example_vi": "Anh ấy đã tiêu sạch số tiền mình có vào chiếc xe mới."
+        },
+        {
+          "meaning_vi": "số tiền",
+          "example_en": "They are counting every penny to save for a house.",
+          "example_vi": "Họ đang tính toán từng xu để tiết kiệm mua nhà."
+        },
+        {
+          "meaning_vi": "đồng xu penni",
+          "example_en": "The machine only accepts pennies.",
+          "example_vi": "Cái máy chỉ chấp nhận các đồng xu penni."
+        },
+        {
+          "meaning_vi": "số tiền",
+          "example_en": "I wouldn't pay a penny for that.",
+          "example_vi": "Tôi sẽ không trả một xu nào cho thứ đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "pence",
+      "normalized_word": "pence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He found a penny on the sidewalk.",
+      "example_vi_clean": "Anh ấy tìm thấy một đồng xu penni trên vỉa hè."
+    }
+  ]
+}

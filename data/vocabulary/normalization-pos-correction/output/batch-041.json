@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25029,
+      "quiz_meaning_vi": "chuyến bay",
+      "meaning_vi_clean": "chuyến bay",
+      "examples_clean": [
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "My flight was delayed by two hours.",
+          "example_vi": "Chuyến bay của tôi đã bị hoãn hai tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "He booked a flight to London.",
+          "example_vi": "Anh ấy đã đặt một chuyến bay đến London."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "The flight arrives at midnight.",
+          "example_vi": "Chuyến bay sẽ hạ cánh vào lúc nửa đêm."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "We missed our flight because of the traffic.",
+          "example_vi": "Chúng tôi đã lỡ chuyến bay vì tắc đường."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "The flight was very comfortable.",
+          "example_vi": "Chuyến bay đó rất thoải mái."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "Is this your first flight?",
+          "example_vi": "Đây có phải là chuyến bay đầu tiên của bạn không?"
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "The flight lasted for ten hours.",
+          "example_vi": "Chuyến bay kéo dài mười tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "She is waiting for her flight at the airport.",
+          "example_vi": "Cô ấy đang đợi chuyến bay của mình tại sân bay."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "The flight was cancelled due to bad weather.",
+          "example_vi": "Chuyến bay đã bị hủy do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "chuyến bay",
+          "example_en": "I checked the status of my flight online.",
+          "example_vi": "Tôi đã kiểm tra tình trạng chuyến bay của mình trực tuyến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa chuyến bay.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ flight được dùng làm danh từ trong tất cả các ví dụ với nghĩa chuyến bay."
+      },
+      "word": "flight",
+      "normalized_word": "flight",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My flight was delayed by two hours.",
+      "example_vi_clean": "Chuyến bay của tôi đã bị hoãn hai tiếng đồng hồ."
+    },
+    {
+      "id": 25030,
+      "quiz_meaning_vi": "vật nổi",
+      "meaning_vi_clean": "vật nổi",
+      "examples_clean": [
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "The child used a float to stay above the water.",
+          "example_vi": "Đứa trẻ dùng một vật nổi để giữ mình trên mặt nước."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "He held onto the float while swimming.",
+          "example_vi": "Anh ấy bám vào vật nổi trong khi bơi."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "The lifeguard threw a float to the swimmer.",
+          "example_vi": "Người cứu hộ ném một vật nổi cho người bơi."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "She bought a colorful float for the pool.",
+          "example_vi": "Cô ấy đã mua một vật nổi đầy màu sắc cho hồ bơi."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "The float kept him safe in the deep end.",
+          "example_vi": "Vật nổi giúp anh ấy an toàn ở khu vực nước sâu."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "They played with a large float in the lake.",
+          "example_vi": "Họ chơi với một vật nổi lớn ở hồ."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "Make sure the float is properly inflated.",
+          "example_vi": "Hãy đảm bảo vật nổi được bơm hơi đúng cách."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "The float drifted away with the current.",
+          "example_vi": "Vật nổi trôi đi theo dòng nước."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "He rested his arms on the float.",
+          "example_vi": "Anh ấy đặt tay lên vật nổi."
+        },
+        {
+          "meaning_vi": "vật nổi",
+          "example_en": "A small float can help beginners learn to swim.",
+          "example_vi": "Một vật nổi nhỏ có thể giúp người mới bắt đầu học bơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa vật nổi.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ float được dùng làm danh từ trong tất cả các ví dụ với nghĩa vật nổi."
+      },
+      "word": "float",
+      "normalized_word": "float",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The child used a float to stay above the water.",
+      "example_vi_clean": "Đứa trẻ dùng một vật nổi để giữ mình trên mặt nước."
+    },
+    {
+      "id": 25031,
+      "quiz_meaning_vi": "lũ lụt",
+      "meaning_vi_clean": "lũ lụt",
+      "examples_clean": [
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "The flood destroyed many houses in the village.",
+          "example_vi": "Trận lũ lụt đã phá hủy nhiều ngôi nhà trong làng."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "They had to leave because of the flood.",
+          "example_vi": "Họ phải rời đi vì trận lũ lụt."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "The flood caused a lot of damage to the crops.",
+          "example_vi": "Trận lũ lụt đã gây ra nhiều thiệt hại cho mùa màng."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "Many people were rescued from the flood.",
+          "example_vi": "Nhiều người đã được giải cứu khỏi trận lũ lụt."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "The flood water rose very quickly.",
+          "example_vi": "Nước lũ dâng lên rất nhanh."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "We are preparing for a possible flood.",
+          "example_vi": "Chúng tôi đang chuẩn bị cho một trận lũ lụt có thể xảy ra."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "The road was closed due to the flood.",
+          "example_vi": "Con đường đã bị đóng cửa do trận lũ lụt."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "The city is still recovering from the flood.",
+          "example_vi": "Thành phố vẫn đang phục hồi sau trận lũ lụt."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "They donated money to help the flood victims.",
+          "example_vi": "Họ đã quyên góp tiền để giúp đỡ các nạn nhân lũ lụt."
+        },
+        {
+          "meaning_vi": "lũ lụt",
+          "example_en": "The flood left mud everywhere in the house.",
+          "example_vi": "Trận lũ lụt để lại bùn khắp nơi trong nhà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa lũ lụt.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ flood được dùng làm danh từ trong tất cả các ví dụ với nghĩa lũ lụt."
+      },
+      "word": "flood",
+      "normalized_word": "flood",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The flood destroyed many houses in the village.",
+      "example_vi_clean": "Trận lũ lụt đã phá hủy nhiều ngôi nhà trong làng."
+    },
+    {
+      "id": 25033,
+      "quiz_meaning_vi": "sương mù",
+      "meaning_vi_clean": "sương mù",
+      "examples_clean": [
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The thick fog made it hard to drive.",
+          "example_vi": "Lớp sương mù dày đặc khiến việc lái xe trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "We could barely see through the fog.",
+          "example_vi": "Chúng tôi hầu như không thể nhìn thấy gì qua lớp sương mù."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The morning fog cleared up by noon.",
+          "example_vi": "Lớp sương mù buổi sáng đã tan vào buổi trưa."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "Flights were delayed because of the heavy fog.",
+          "example_vi": "Các chuyến bay đã bị hoãn do sương mù dày đặc."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "He walked slowly through the dense fog.",
+          "example_vi": "Anh ấy đi bộ chậm rãi qua lớp sương mù dày đặc."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The fog covered the entire valley.",
+          "example_vi": "Sương mù bao phủ toàn bộ thung lũng."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "I lost my way in the thick fog.",
+          "example_vi": "Tôi đã bị lạc trong lớp sương mù dày đặc."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The fog is very cold this morning.",
+          "example_vi": "Sương mù sáng nay rất lạnh."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "They waited for the fog to lift.",
+          "example_vi": "Họ đã đợi cho lớp sương mù tan đi."
+        },
+        {
+          "meaning_vi": "sương mù",
+          "example_en": "The mountain was hidden by the fog.",
+          "example_vi": "Ngọn núi đã bị che khuất bởi lớp sương mù."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa sương mù.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fog được dùng làm danh từ trong tất cả các ví dụ với nghĩa sương mù."
+      },
+      "word": "fog",
+      "normalized_word": "fog",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The thick fog made it hard to drive.",
+      "example_vi_clean": "Lớp sương mù dày đặc khiến việc lái xe trở nên khó khăn."
+    },
+    {
+      "id": 25036,
+      "quiz_meaning_vi": "kẻ ngốc",
+      "meaning_vi_clean": "kẻ ngốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "Don't be such a fool and listen to me.",
+          "example_vi": "Đừng làm một kẻ ngốc như vậy và hãy nghe tôi nói."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "He felt like a fool when he realized his mistake.",
+          "example_vi": "Anh ấy cảm thấy mình như một kẻ ngốc khi nhận ra sai lầm của mình."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "Only a fool would believe that story.",
+          "example_vi": "Chỉ có một kẻ ngốc mới tin câu chuyện đó."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "She didn't want to look like a fool in front of everyone.",
+          "example_vi": "Cô ấy không muốn trông như một kẻ ngốc trước mặt mọi người."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "He is a complete fool for quitting his job.",
+          "example_vi": "Anh ta đúng là một kẻ ngốc khi bỏ việc."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "Don't play the fool in class.",
+          "example_vi": "Đừng đóng vai kẻ ngốc trong lớp học."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "The king had a fool to entertain him.",
+          "example_vi": "Nhà vua có một kẻ ngốc để giải trí cho mình."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "I was a fool to trust him.",
+          "example_vi": "Tôi thật là một kẻ ngốc khi tin tưởng anh ta."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "He acted like a fool at the party.",
+          "example_vi": "Anh ấy đã hành động như một kẻ ngốc tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "kẻ ngốc",
+          "example_en": "She called him a fool for his silly behavior.",
+          "example_vi": "Cô ấy gọi anh ta là kẻ ngốc vì hành vi ngớ ngẩn của anh ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa kẻ ngốc.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fool được dùng làm danh từ trong tất cả các ví dụ với nghĩa kẻ ngốc."
+      },
+      "word": "fool",
+      "normalized_word": "fool",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Don't be such a fool and listen to me.",
+      "example_vi_clean": "Đừng làm một kẻ ngốc như vậy và hãy nghe tôi nói."
+    },
+    {
+      "id": 25040,
+      "quiz_meaning_vi": "lực",
+      "meaning_vi_clean": "lực",
+      "examples_clean": [
+        {
+          "meaning_vi": "lực",
+          "example_en": "The force of the wind was very strong.",
+          "example_vi": "Lực của gió rất mạnh."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "He pushed the door with great force.",
+          "example_vi": "Anh ấy đẩy cánh cửa với một lực rất lớn."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "The impact of the crash had a lot of force.",
+          "example_vi": "Tác động của vụ va chạm có một lực rất mạnh."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "You need to apply more force to open this box.",
+          "example_vi": "Bạn cần dùng thêm lực để mở chiếc hộp này."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "The water hit the rocks with great force.",
+          "example_vi": "Nước đập vào những tảng đá với một lực rất mạnh."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "Gravity is a natural force.",
+          "example_vi": "Trọng lực là một loại lực tự nhiên."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "She used all her force to lift the heavy bag.",
+          "example_vi": "Cô ấy đã dùng hết lực của mình để nhấc chiếc túi nặng."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "The force of the explosion broke the windows.",
+          "example_vi": "Lực của vụ nổ đã làm vỡ các cửa sổ."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "He felt the force of the ball hitting his hand.",
+          "example_vi": "Anh ấy cảm nhận được lực của quả bóng đập vào tay mình."
+        },
+        {
+          "meaning_vi": "lực",
+          "example_en": "The machine works with a constant force.",
+          "example_vi": "Cỗ máy hoạt động với một lực không đổi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa lực.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ force được dùng làm danh từ trong tất cả các ví dụ với nghĩa lực."
+      },
+      "word": "force",
+      "normalized_word": "force",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The force of the wind was very strong.",
+      "example_vi_clean": "Lực của gió rất mạnh."
+    },
+    {
+      "id": 25041,
+      "quiz_meaning_vi": "rừng",
+      "meaning_vi_clean": "rừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "rừng",
+          "example_en": "We went for a walk in the forest.",
+          "example_vi": "Chúng tôi đã đi dạo trong rừng."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "The forest is full of tall trees.",
+          "example_vi": "Khu rừng đầy những cái cây cao."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "Many animals live in this forest.",
+          "example_vi": "Nhiều loài động vật sống trong khu rừng này."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "They got lost in the deep forest.",
+          "example_vi": "Họ đã bị lạc trong khu rừng sâu."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "The forest is very quiet at night.",
+          "example_vi": "Khu rừng rất yên tĩnh vào ban đêm."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "We saw a deer in the forest.",
+          "example_vi": "Chúng tôi đã nhìn thấy một con hươu trong rừng."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "The forest covers a large area.",
+          "example_vi": "Khu rừng bao phủ một diện tích lớn."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "They are protecting the forest from fire.",
+          "example_vi": "Họ đang bảo vệ khu rừng khỏi hỏa hoạn."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "The air in the forest is very fresh.",
+          "example_vi": "Không khí trong rừng rất trong lành."
+        },
+        {
+          "meaning_vi": "rừng",
+          "example_en": "We camped in the middle of the forest.",
+          "example_vi": "Chúng tôi đã cắm trại ở giữa khu rừng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa rừng.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ forest được dùng làm danh từ trong tất cả các ví dụ với nghĩa rừng."
+      },
+      "word": "forest",
+      "normalized_word": "forest",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We went for a walk in the forest.",
+      "example_vi_clean": "Chúng tôi đã đi dạo trong rừng."
+    },
+    {
+      "id": 25043,
+      "quiz_meaning_vi": "cái nĩa",
+      "meaning_vi_clean": "cái nĩa",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "He picked up his fork to eat dinner.",
+          "example_vi": "Anh ấy cầm cái nĩa lên để ăn tối."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "She dropped her fork on the floor.",
+          "example_vi": "Cô ấy đã làm rơi cái nĩa xuống sàn."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "Can you pass me a fork, please?",
+          "example_vi": "Bạn có thể đưa cho tôi cái nĩa được không?"
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "The fork is made of silver.",
+          "example_vi": "Cái nĩa được làm bằng bạc."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "He used a fork to eat the salad.",
+          "example_vi": "Anh ấy dùng cái nĩa để ăn món salad."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "She washed the fork after the meal.",
+          "example_vi": "Cô ấy đã rửa cái nĩa sau bữa ăn."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "There is a fork on the table.",
+          "example_vi": "Có một cái nĩa trên bàn."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "He needs a fork for his pasta.",
+          "example_vi": "Anh ấy cần một cái nĩa cho món mì ống của mình."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "The fork is clean and ready to use.",
+          "example_vi": "Cái nĩa sạch và sẵn sàng để sử dụng."
+        },
+        {
+          "meaning_vi": "cái nĩa",
+          "example_en": "She set the table with a knife and a fork.",
+          "example_vi": "Cô ấy đã bày bàn ăn với một con dao và một cái nĩa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa cái nĩa.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fork được dùng làm danh từ trong tất cả các ví dụ với nghĩa cái nĩa."
+      },
+      "word": "fork",
+      "normalized_word": "fork",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He picked up his fork to eat dinner.",
+      "example_vi_clean": "Anh ấy cầm cái nĩa lên để ăn tối."
+    },
+    {
+      "id": 25045,
+      "quiz_meaning_vi": "vận may",
+      "meaning_vi_clean": "vận may",
+      "examples_clean": [
+        {
+          "meaning_vi": "vận may",
+          "example_en": "He had the good fortune to meet her.",
+          "example_vi": "Anh ấy đã có vận may được gặp cô ấy."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "She believes in her own fortune.",
+          "example_vi": "Cô ấy tin vào vận may của chính mình."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "It was just a matter of fortune.",
+          "example_vi": "Đó chỉ là vấn đề của vận may."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "He had the fortune to win the prize.",
+          "example_vi": "Anh ấy đã có vận may giành được giải thưởng."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "She smiled at her sudden fortune.",
+          "example_vi": "Cô ấy mỉm cười trước vận may bất ngờ của mình."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "His fortune changed for the better.",
+          "example_vi": "Vận may của anh ấy đã thay đổi theo hướng tốt hơn."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "They thanked their fortune for the safe trip.",
+          "example_vi": "Họ cảm ơn vận may của mình vì chuyến đi an toàn."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "She didn't rely on fortune to succeed.",
+          "example_vi": "Cô ấy không dựa vào vận may để thành công."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "He had the fortune of having a great family.",
+          "example_vi": "Anh ấy có vận may là có một gia đình tuyệt vời."
+        },
+        {
+          "meaning_vi": "vận may",
+          "example_en": "Sometimes you need a little fortune in life.",
+          "example_vi": "Đôi khi bạn cần một chút vận may trong cuộc sống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa vận may.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fortune được dùng làm danh từ trong tất cả các ví dụ với nghĩa vận may."
+      },
+      "word": "fortune",
+      "normalized_word": "fortune",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He had the good fortune to meet her.",
+      "example_vi_clean": "Anh ấy đã có vận may được gặp cô ấy."
+    },
+    {
+      "id": 25046,
+      "quiz_meaning_vi": "về phía trước",
+      "meaning_vi_clean": "về phía trước",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "He stepped forward to greet them.",
+          "example_vi": "Anh ấy bước về phía trước để chào họ."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "Please move forward in the line.",
+          "example_vi": "Vui lòng di chuyển về phía trước trong hàng."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "She looked forward to see the stage.",
+          "example_vi": "Cô ấy nhìn về phía trước để thấy sân khấu."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The car moved forward slowly.",
+          "example_vi": "Chiếc xe di chuyển về phía trước một cách chậm rãi."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "He leaned forward to hear better.",
+          "example_vi": "Anh ấy nghiêng người về phía trước để nghe rõ hơn."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "They marched forward with confidence.",
+          "example_vi": "Họ hành quân về phía trước với sự tự tin."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The boat drifted forward with the tide.",
+          "example_vi": "Chiếc thuyền trôi về phía trước theo thủy triều."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "She pushed the chair forward.",
+          "example_vi": "Cô ấy đẩy chiếc ghế về phía trước."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "He ran forward to catch the ball.",
+          "example_vi": "Anh ấy chạy về phía trước để bắt quả bóng."
+        },
+        {
+          "meaning_vi": "về phía trước",
+          "example_en": "The crowd surged forward to see the star.",
+          "example_vi": "Đám đông ùa về phía trước để nhìn thấy ngôi sao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ phổ biến nhất và 10 ví dụ minh họa đúng nghĩa về phía trước.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ forward được dùng làm phó từ trong tất cả các ví dụ với nghĩa về phía trước."
+      },
+      "word": "forward",
+      "normalized_word": "forward",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He stepped forward to greet them.",
+      "example_vi_clean": "Anh ấy bước về phía trước để chào họ."
+    }
+  ]
+}

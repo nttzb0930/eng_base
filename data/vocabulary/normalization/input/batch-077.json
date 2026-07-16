@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-077",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24761,
+      "word": "calendar",
+      "normalized_word": "calendar",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kælində/",
+      "primary_meaning_vi": "lịch (ghi năm tháng)",
+      "meaning_vi": "lịch (ghi năm tháng); lịch công tác; danh sách các vị thánh; danh sách những vụ án được đem ra xét xử; sổ hằng năm (của trường đại học); chương trình nghị sự (của nghị viện...); ghi vào lịch; ghi vào danh sách; sắp xếp (tài liệu) theo trình tự thời gian",
+      "example_en": "The three principal calendars are the Gregorian, Jewish, and Islamic calendars.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Write his birthday on the calendar hanging on the wall.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The club has a busy calendar this year.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a calendar of bills presented in a legislative assemblly; a calendar of causes arranged for trial in court",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24762,
+      "word": "camping",
+      "normalized_word": "camping",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự cắm trại",
+      "meaning_vi": "sự cắm trại",
+      "example_en": "We're planning to camp in the field until Sunday.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Go and camp the flag for the win.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Camping is a favorite summer activity.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24763,
+      "word": "campus",
+      "normalized_word": "campus",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæmpəs/",
+      "primary_meaning_vi": "khu sân bãi (của các trường trung học",
+      "meaning_vi": "khu sân bãi (của các trường trung học, đại học); khu trường sở",
+      "example_en": "The campus is sixty hectares in size.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "During the late 1960s, many an American campus was in a state of turmoil.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24764,
+      "word": "capital",
+      "normalized_word": "capital",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kæpitl/",
+      "primary_meaning_vi": "thủ đô",
+      "meaning_vi": "thủ đô, thủ phủ; chữ viết hoa; tiền vốn, tư bản; đầu cột; kiếm lợi ở, kiếm chác ở, lợi dụng; quan hệ đến sinh mạng; tử hình; chính, ở đầu, ở trên đầu, ở trên hết; chủ yếu, cốt yếu, cơ bản, lớn; tuyệt diệu, thượng hạng, ưu tú, xuất sắc, rất hay; vô cùng tai hại; xây dựng cơ bản; tư liệu sản xuất",
+      "example_en": "He does not have enough capital to start a business.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The Welsh government claims that Cardiff is Europe’s youngest capital.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Interpreters need a good amount of cultural capital in order to function efficiently in the profession.",
+          "example_vi": null
+        },
+        {
+          "example_en": "London and Paris are capital cities.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24765,
+      "word": "captain",
+      "normalized_word": "captain",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæptin/",
+      "primary_meaning_vi": "người cầm đầu",
+      "meaning_vi": "người cầm đầu, người chỉ huy, thủ lĩnh; tướng lão luyện; nhà chiến lược; đại uý; thuyền trưởng, hạm trưởng; đội trưởng, thủ quân; trường lớp; trưởng kíp; phi công",
+      "example_en": "The captain is the last man to leave a sinking ship.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "John Henry said to the captain, \"A man ain't nothing but a man.\"",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24766,
+      "word": "carrot",
+      "normalized_word": "carrot",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kærət/",
+      "primary_meaning_vi": "cây cà rốt",
+      "meaning_vi": "cây cà rốt; củ cà rốt; (từ lóng) tóc đỏ hoe; người tóc đỏ hoe",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24767,
+      "word": "cash",
+      "normalized_word": "cash",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kæʃ/",
+      "primary_meaning_vi": "tiền",
+      "meaning_vi": "tiền, tiền mặt; có tiền; không có tiền, cạn tiền; tiền nhiều như nước; thiếu tiền; down; C.O.D) trả tiền lúc nhận hàng; prompt; tiền mặt; bán lấy tiền mặt; trả tiền mặt, lĩnh tiền mặt; gởi tiền ở ngân hàng; chết; kiếm chác được ở",
+      "example_en": "After you bounced those checks last time, they want to be paid in cash.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24768,
+      "word": "cassette",
+      "normalized_word": "cassette",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "hộp (băng)",
+      "meaning_vi": "hộp (băng); máy ghi âm (loại) hộp băng, cátxét, cassette",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24769,
+      "word": "castle",
+      "normalized_word": "castle",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɑ:sl/",
+      "primary_meaning_vi": "thành trì",
+      "meaning_vi": "thành trì, thành quách; lâu dài; quân cờ thấp; lâu dài trên bãi cát; chuyện viển vông, chuyện không thực hiện được; mơ mộng hão huyền",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24770,
+      "word": "cent",
+      "normalized_word": "cent",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/sent/",
+      "primary_meaning_vi": "đồng xu (bằng 1 qoành 00 đô la)",
+      "meaning_vi": "đồng xu (bằng 1 qoành 00 đô la); care",
+      "example_en": "He blew every last cent.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "shopping center, convention center, civic center, garment center, Lincoln Center for the Performing Arts, Rockefeller Center",
+          "example_vi": null
+        },
+        {
+          "example_en": "the center of attention",
+          "example_vi": null
+        },
+        {
+          "example_en": "a temperature of 34 centigrades",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24691,
+      "quiz_meaning_vi": "số trung bình",
+      "meaning_vi_clean": "số trung bình; trung bình",
+      "examples_clean": [
+        {
+          "meaning_vi": "số trung bình",
+          "example_en": "The average of these three numbers is ten.",
+          "example_vi": "Số trung bình của ba con số này là mười."
+        },
+        {
+          "meaning_vi": "số trung bình",
+          "example_en": "Calculate the average of the test scores.",
+          "example_vi": "Hãy tính số trung bình của các điểm kiểm tra."
+        },
+        {
+          "meaning_vi": "số trung bình",
+          "example_en": "The average of the group was higher than expected.",
+          "example_vi": "Số trung bình của nhóm cao hơn dự kiến."
+        },
+        {
+          "meaning_vi": "số trung bình",
+          "example_en": "Find the average of the following data set.",
+          "example_vi": "Hãy tìm số trung bình của tập dữ liệu sau."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average temperature in July is quite high.",
+          "example_vi": "Nhiệt độ trung bình vào tháng Bảy khá cao."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "He is an average student in my class.",
+          "example_vi": "Cậu ấy là một học sinh trung bình trong lớp tôi."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average person needs eight hours of sleep.",
+          "example_vi": "Một người trung bình cần tám tiếng ngủ."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "We spent an average of two hours commuting.",
+          "example_vi": "Chúng tôi dành trung bình hai tiếng để đi làm."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "The average cost of a house has increased.",
+          "example_vi": "Chi phí trung bình của một ngôi nhà đã tăng lên."
+        },
+        {
+          "meaning_vi": "trung bình",
+          "example_en": "It takes an average of ten minutes to walk there.",
+          "example_vi": "Mất trung bình mười phút để đi bộ đến đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại nghĩa phổ biến nhất, loại bỏ các nghĩa chuyên ngành hoặc quá xa cấp A2.",
+      "word": "average",
+      "normalized_word": "average",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The average of these three numbers is ten.",
+      "example_vi_clean": "Số trung bình của ba con số này là mười."
+    },
+    {
+      "id": 24692,
+      "quiz_meaning_vi": "tránh",
+      "meaning_vi_clean": "tránh",
+      "examples_clean": [
+        {
+          "meaning_vi": "tránh",
+          "example_en": "You should try to avoid eating too much sugar.",
+          "example_vi": "Bạn nên cố gắng tránh ăn quá nhiều đường."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "We left early to avoid the heavy traffic.",
+          "example_vi": "Chúng tôi rời đi sớm để tránh tắc đường."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "He tried to avoid answering my question.",
+          "example_vi": "Anh ấy đã cố gắng tránh trả lời câu hỏi của tôi."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "Please avoid making loud noises in the library.",
+          "example_vi": "Vui lòng tránh gây tiếng ồn lớn trong thư viện."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "She walked quickly to avoid meeting him.",
+          "example_vi": "Cô ấy bước nhanh để tránh gặp anh ta."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "We must avoid making the same mistake again.",
+          "example_vi": "Chúng ta phải tránh lặp lại sai lầm tương tự."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "He took a different route to avoid the construction.",
+          "example_vi": "Anh ấy đi một con đường khác để tránh công trường."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "It is hard to avoid stress in this job.",
+          "example_vi": "Thật khó để tránh căng thẳng trong công việc này."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "They took precautions to avoid any accidents.",
+          "example_vi": "Họ đã thực hiện các biện pháp phòng ngừa để tránh mọi tai nạn."
+        },
+        {
+          "meaning_vi": "tránh",
+          "example_en": "I try to avoid arguments whenever possible.",
+          "example_vi": "Tôi cố gắng tránh các cuộc tranh cãi bất cứ khi nào có thể."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa pháp lý không phù hợp với cấp độ A2.",
+      "word": "avoid",
+      "normalized_word": "avoid",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You should try to avoid eating too much sugar.",
+      "example_vi_clean": "Bạn nên cố gắng tránh ăn quá nhiều đường."
+    },
+    {
+      "id": 24693,
+      "quiz_meaning_vi": "phần thưởng",
+      "meaning_vi_clean": "phần thưởng; tặng thưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "The prize is a great reward for his hard work.",
+          "example_vi": "Giải thưởng là một phần thưởng tuyệt vời cho sự chăm chỉ của anh ấy."
+        },
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "She received an award for her excellent performance.",
+          "example_vi": "Cô ấy đã nhận được một phần thưởng cho màn trình diễn xuất sắc của mình."
+        },
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "The award ceremony will be held tomorrow.",
+          "example_vi": "Lễ trao phần thưởng sẽ được tổ chức vào ngày mai."
+        },
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "He keeps his award on the shelf.",
+          "example_vi": "Anh ấy giữ phần thưởng của mình trên kệ."
+        },
+        {
+          "meaning_vi": "tặng thưởng",
+          "example_en": "The committee decided to award her a scholarship.",
+          "example_vi": "Hội đồng đã quyết định tặng thưởng cho cô ấy một suất học bổng."
+        },
+        {
+          "meaning_vi": "tặng thưởng",
+          "example_en": "They awarded him a gold medal for his bravery.",
+          "example_vi": "Họ đã tặng thưởng cho anh ấy một huy chương vàng vì lòng dũng cảm."
+        },
+        {
+          "meaning_vi": "tặng thưởng",
+          "example_en": "The school awards prizes to the best students.",
+          "example_vi": "Nhà trường tặng thưởng các giải thưởng cho những học sinh giỏi nhất."
+        },
+        {
+          "meaning_vi": "tặng thưởng",
+          "example_en": "She was awarded a certificate for her contribution.",
+          "example_vi": "Cô ấy được tặng thưởng một bằng khen vì sự đóng góp của mình."
+        },
+        {
+          "meaning_vi": "tặng thưởng",
+          "example_en": "The judges awarded the first prize to the team.",
+          "example_vi": "Các giám khảo đã tặng thưởng giải nhất cho đội đó."
+        },
+        {
+          "meaning_vi": "tặng thưởng",
+          "example_en": "He was awarded a contract for the new project.",
+          "example_vi": "Anh ấy được tặng thưởng một hợp đồng cho dự án mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đơn giản hóa nghĩa và bổ sung ví dụ phù hợp với từ loại danh từ và động từ.",
+      "word": "award",
+      "normalized_word": "award",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The prize is a great reward for his hard work.",
+      "example_vi_clean": "Giải thưởng là một phần thưởng tuyệt vời cho sự chăm chỉ của anh ấy."
+    },
+    {
+      "id": 24694,
+      "quiz_meaning_vi": "đáng kinh sợ",
+      "meaning_vi_clean": "đáng kinh sợ; khủng khiếp",
+      "examples_clean": [
+        {
+          "meaning_vi": "đáng kinh sợ",
+          "example_en": "The storm was an awful sight to behold.",
+          "example_vi": "Cơn bão là một cảnh tượng đáng kinh sợ."
+        },
+        {
+          "meaning_vi": "đáng kinh sợ",
+          "example_en": "There was an awful silence in the room.",
+          "example_vi": "Có một sự im lặng đáng kinh sợ trong phòng."
+        },
+        {
+          "meaning_vi": "đáng kinh sợ",
+          "example_en": "The monster in the movie looked truly awful.",
+          "example_vi": "Con quái vật trong phim trông thật đáng kinh sợ."
+        },
+        {
+          "meaning_vi": "đáng kinh sợ",
+          "example_en": "It was an awful experience for everyone involved.",
+          "example_vi": "Đó là một trải nghiệm đáng kinh sợ cho tất cả những người liên quan."
+        },
+        {
+          "meaning_vi": "khủng khiếp",
+          "example_en": "I had an awful headache this morning.",
+          "example_vi": "Tôi bị đau đầu khủng khiếp vào sáng nay."
+        },
+        {
+          "meaning_vi": "khủng khiếp",
+          "example_en": "The food at the restaurant was absolutely awful.",
+          "example_vi": "Đồ ăn ở nhà hàng đó thực sự khủng khiếp."
+        },
+        {
+          "meaning_vi": "khủng khiếp",
+          "example_en": "What an awful day to go outside.",
+          "example_vi": "Thật là một ngày khủng khiếp để ra ngoài."
+        },
+        {
+          "meaning_vi": "khủng khiếp",
+          "example_en": "She felt awful about missing the meeting.",
+          "example_vi": "Cô ấy cảm thấy khủng khiếp vì đã bỏ lỡ cuộc họp."
+        },
+        {
+          "meaning_vi": "khủng khiếp",
+          "example_en": "The weather has been awful all week.",
+          "example_vi": "Thời tiết đã rất khủng khiếp suốt cả tuần."
+        },
+        {
+          "meaning_vi": "khủng khiếp",
+          "example_en": "He made an awful mistake in his report.",
+          "example_vi": "Anh ấy đã mắc một sai lầm khủng khiếp trong báo cáo của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa cổ và nghĩa lóng không cần thiết.",
+      "word": "awful",
+      "normalized_word": "awful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The storm was an awful sight to behold.",
+      "example_vi_clean": "Cơn bão là một cảnh tượng đáng kinh sợ."
+    },
+    {
+      "id": 24695,
+      "quiz_meaning_vi": "lưng",
+      "meaning_vi_clean": "lưng; đằng sau",
+      "examples_clean": [
+        {
+          "meaning_vi": "lưng",
+          "example_en": "He has a pain in his lower back.",
+          "example_vi": "Anh ấy bị đau ở phần lưng dưới."
+        },
+        {
+          "meaning_vi": "lưng",
+          "example_en": "She carried the heavy bag on her back.",
+          "example_vi": "Cô ấy mang chiếc túi nặng trên lưng."
+        },
+        {
+          "meaning_vi": "lưng",
+          "example_en": "The chair has a very comfortable back.",
+          "example_vi": "Chiếc ghế có phần lưng rất thoải mái."
+        },
+        {
+          "meaning_vi": "lưng",
+          "example_en": "He patted me on the back to encourage me.",
+          "example_vi": "Anh ấy vỗ vào lưng tôi để khích lệ tôi."
+        },
+        {
+          "meaning_vi": "đằng sau",
+          "example_en": "There is a garden at the back of the house.",
+          "example_vi": "Có một khu vườn ở đằng sau ngôi nhà."
+        },
+        {
+          "meaning_vi": "đằng sau",
+          "example_en": "Please write your name on the back of the paper.",
+          "example_vi": "Vui lòng viết tên bạn vào mặt đằng sau của tờ giấy."
+        },
+        {
+          "meaning_vi": "đằng sau",
+          "example_en": "He sat in the back of the bus.",
+          "example_vi": "Anh ấy ngồi ở phía đằng sau của xe buýt."
+        },
+        {
+          "meaning_vi": "đằng sau",
+          "example_en": "The back door was left open.",
+          "example_vi": "Cánh cửa đằng sau đã bị để mở."
+        },
+        {
+          "meaning_vi": "đằng sau",
+          "example_en": "Look at the back of the book for the index.",
+          "example_vi": "Hãy nhìn vào phần đằng sau của cuốn sách để xem mục lục."
+        },
+        {
+          "meaning_vi": "đằng sau",
+          "example_en": "She hid behind the back of the curtain.",
+          "example_vi": "Cô ấy trốn sau đằng sau tấm rèm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa quá phức tạp và không phổ biến ở cấp A2.",
+      "word": "back",
+      "normalized_word": "back",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has a pain in his lower back.",
+      "example_vi_clean": "Anh ấy bị đau ở phần lưng dưới."
+    },
+    {
+      "id": 24696,
+      "quiz_meaning_vi": "phía sau",
+      "meaning_vi_clean": "phía sau; nền; kiến thức",
+      "examples_clean": [
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The mountains are in the background of the photo.",
+          "example_vi": "Những ngọn núi nằm ở phía sau của bức ảnh."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "He stayed in the background during the meeting.",
+          "example_vi": "Anh ấy đứng ở phía sau trong suốt cuộc họp."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "The music was playing in the background.",
+          "example_vi": "Nhạc đang phát ở phía sau."
+        },
+        {
+          "meaning_vi": "phía sau",
+          "example_en": "She kept her personal life in the background.",
+          "example_vi": "Cô ấy giữ cuộc sống cá nhân ở phía sau."
+        },
+        {
+          "meaning_vi": "nền",
+          "example_en": "Choose a blue background for your presentation.",
+          "example_vi": "Hãy chọn một cái nền màu xanh cho bài thuyết trình của bạn."
+        },
+        {
+          "meaning_vi": "nền",
+          "example_en": "The website has a white background.",
+          "example_vi": "Trang web có một cái nền màu trắng."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "She has a strong background in mathematics.",
+          "example_vi": "Cô ấy có kiến thức vững chắc về toán học."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "We need to know the background of this issue.",
+          "example_vi": "Chúng ta cần biết kiến thức nền tảng của vấn đề này."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "His family background is very interesting.",
+          "example_vi": "Kiến thức về gia đình của anh ấy rất thú vị."
+        },
+        {
+          "meaning_vi": "kiến thức",
+          "example_en": "The report provides some background on the project.",
+          "example_vi": "Báo cáo cung cấp một số kiến thức nền tảng về dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa và ví dụ cho rõ ràng.",
+      "word": "background",
+      "normalized_word": "background",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The mountains are in the background of the photo.",
+      "example_vi_clean": "Những ngọn núi nằm ở phía sau của bức ảnh."
+    },
+    {
+      "id": 24697,
+      "quiz_meaning_vi": "xấu",
+      "meaning_vi_clean": "xấu; nặng",
+      "examples_clean": [
+        {
+          "meaning_vi": "xấu",
+          "example_en": "He performed badly in the exam.",
+          "example_vi": "Anh ấy đã làm bài thi rất xấu."
+        },
+        {
+          "meaning_vi": "xấu",
+          "example_en": "The team played badly today.",
+          "example_vi": "Đội bóng đã chơi rất xấu hôm nay."
+        },
+        {
+          "meaning_vi": "xấu",
+          "example_en": "The situation was handled badly.",
+          "example_vi": "Tình huống đã được xử lý rất xấu."
+        },
+        {
+          "meaning_vi": "xấu",
+          "example_en": "She behaved badly at the party.",
+          "example_vi": "Cô ấy đã cư xử rất xấu tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "He was badly injured in the accident.",
+          "example_vi": "Anh ấy bị thương nặng trong vụ tai nạn."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "The house was badly damaged by the fire.",
+          "example_vi": "Ngôi nhà bị hư hại nặng bởi vụ hỏa hoạn."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "She is badly in need of help.",
+          "example_vi": "Cô ấy đang rất cần sự giúp đỡ nặng nề."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "The economy is badly affected by the crisis.",
+          "example_vi": "Nền kinh tế bị ảnh hưởng nặng bởi cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "The road was badly blocked by snow.",
+          "example_vi": "Con đường bị chặn nặng bởi tuyết."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "He was badly shaken by the news.",
+          "example_vi": "Anh ấy bị chấn động nặng bởi tin tức đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa 'badly' thành các trạng từ phù hợp.",
+      "word": "badly",
+      "normalized_word": "badly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He performed badly in the exam.",
+      "example_vi_clean": "Anh ấy đã làm bài thi rất xấu."
+    },
+    {
+      "id": 24698,
+      "quiz_meaning_vi": "cầu lông",
+      "meaning_vi_clean": "cầu lông",
+      "examples_clean": [
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "We play badminton every Sunday morning.",
+          "example_vi": "Chúng tôi chơi cầu lông vào mỗi sáng Chủ nhật."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "She is very good at playing badminton.",
+          "example_vi": "Cô ấy rất giỏi chơi cầu lông."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "Do you want to join our badminton club?",
+          "example_vi": "Bạn có muốn tham gia câu lạc bộ cầu lông của chúng tôi không?"
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "I bought a new badminton racket yesterday.",
+          "example_vi": "Tôi đã mua một chiếc vợt cầu lông mới ngày hôm qua."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "Badminton is a popular sport in my country.",
+          "example_vi": "Cầu lông là một môn thể thao phổ biến ở đất nước tôi."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "They are watching a badminton match on TV.",
+          "example_vi": "Họ đang xem một trận đấu cầu lông trên TV."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "We need a net to play badminton.",
+          "example_vi": "Chúng ta cần một cái lưới để chơi cầu lông."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "He won the badminton tournament last year.",
+          "example_vi": "Anh ấy đã thắng giải đấu cầu lông năm ngoái."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "Playing badminton is a great way to exercise.",
+          "example_vi": "Chơi cầu lông là một cách tuyệt vời để tập thể dục."
+        },
+        {
+          "meaning_vi": "cầu lông",
+          "example_en": "She practiced badminton for three hours.",
+          "example_vi": "Cô ấy đã tập cầu lông trong ba tiếng đồng hồ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ nghĩa phụ không liên quan đến môn thể thao.",
+      "word": "badminton",
+      "normalized_word": "badminton",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We play badminton every Sunday morning.",
+      "example_vi_clean": "Chúng tôi chơi cầu lông vào mỗi sáng Chủ nhật."
+    },
+    {
+      "id": 24699,
+      "quiz_meaning_vi": "bỏ lò",
+      "meaning_vi_clean": "bỏ lò; nung",
+      "examples_clean": [
+        {
+          "meaning_vi": "bỏ lò",
+          "example_en": "I will bake a cake for your birthday.",
+          "example_vi": "Tôi sẽ bỏ lò một chiếc bánh cho sinh nhật của bạn."
+        },
+        {
+          "meaning_vi": "bỏ lò",
+          "example_en": "She likes to bake bread every morning.",
+          "example_vi": "Cô ấy thích bỏ lò bánh mì mỗi sáng."
+        },
+        {
+          "meaning_vi": "bỏ lò",
+          "example_en": "The cookies need to bake for ten minutes.",
+          "example_vi": "Những chiếc bánh quy cần được bỏ lò trong mười phút."
+        },
+        {
+          "meaning_vi": "bỏ lò",
+          "example_en": "He is learning how to bake pizza.",
+          "example_vi": "Anh ấy đang học cách bỏ lò bánh pizza."
+        },
+        {
+          "meaning_vi": "nung",
+          "example_en": "The potter will bake the clay pots in the kiln.",
+          "example_vi": "Người thợ gốm sẽ nung những chiếc bình đất sét trong lò."
+        },
+        {
+          "meaning_vi": "nung",
+          "example_en": "They bake the bricks at a very high temperature.",
+          "example_vi": "Họ nung những viên gạch ở nhiệt độ rất cao."
+        },
+        {
+          "meaning_vi": "nung",
+          "example_en": "The clay needs to bake until it is hard.",
+          "example_vi": "Đất sét cần được nung cho đến khi nó cứng lại."
+        },
+        {
+          "meaning_vi": "nung",
+          "example_en": "We watched them bake the traditional pottery.",
+          "example_vi": "Chúng tôi đã xem họ nung đồ gốm truyền thống."
+        },
+        {
+          "meaning_vi": "nung",
+          "example_en": "The sun helped to bake the mud bricks.",
+          "example_vi": "Ánh mặt trời đã giúp nung những viên gạch bùn."
+        },
+        {
+          "meaning_vi": "nung",
+          "example_en": "The tiles are baked in a large oven.",
+          "example_vi": "Những viên gạch lát được nung trong một cái lò lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại các nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "bake",
+      "normalized_word": "bake",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I will bake a cake for your birthday.",
+      "example_vi_clean": "Tôi sẽ bỏ lò một chiếc bánh cho sinh nhật của bạn."
+    },
+    {
+      "id": 24700,
+      "quiz_meaning_vi": "bao lơn",
+      "meaning_vi_clean": "bao lơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "She stood on the balcony to watch the sunset.",
+          "example_vi": "Cô ấy đứng trên bao lơn để ngắm hoàng hôn."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "The hotel room has a small balcony.",
+          "example_vi": "Phòng khách sạn có một cái bao lơn nhỏ."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "We had breakfast on the balcony this morning.",
+          "example_vi": "Chúng tôi đã ăn sáng trên bao lơn sáng nay."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "Flowers are growing on the balcony.",
+          "example_vi": "Những bông hoa đang mọc trên bao lơn."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "He leaned over the balcony to see the street.",
+          "example_vi": "Anh ấy dựa người vào bao lơn để nhìn xuống đường."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "The balcony offers a great view of the city.",
+          "example_vi": "Bao lơn mang lại một tầm nhìn tuyệt vời về thành phố."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "They sat on the balcony and talked for hours.",
+          "example_vi": "Họ ngồi trên bao lơn và nói chuyện hàng giờ."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "The balcony is decorated with lights.",
+          "example_vi": "Bao lơn được trang trí bằng những ánh đèn."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "She keeps her bicycle on the balcony.",
+          "example_vi": "Cô ấy để chiếc xe đạp của mình trên bao lơn."
+        },
+        {
+          "meaning_vi": "bao lơn",
+          "example_en": "The balcony door was left open.",
+          "example_vi": "Cánh cửa bao lơn đã bị để mở."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho từ 'balcony'.",
+      "word": "balcony",
+      "normalized_word": "balcony",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She stood on the balcony to watch the sunset.",
+      "example_vi_clean": "Cô ấy đứng trên bao lơn để ngắm hoàng hôn."
+    }
+  ]
+}

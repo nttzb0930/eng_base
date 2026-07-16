@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24541,
+      "quiz_meaning_vi": "nhạc sĩ",
+      "meaning_vi_clean": "nhạc sĩ; nhà soạn nhạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhạc sĩ",
+          "example_en": "The famous musician played the piano beautifully.",
+          "example_vi": "Người nhạc sĩ nổi tiếng đã chơi đàn piano rất hay."
+        },
+        {
+          "meaning_vi": "nhạc sĩ",
+          "example_en": "She is a talented musician who plays the violin.",
+          "example_vi": "Cô ấy là một nhạc sĩ tài năng chơi đàn vĩ cầm."
+        },
+        {
+          "meaning_vi": "nhạc sĩ",
+          "example_en": "Many musicians performed at the summer festival.",
+          "example_vi": "Nhiều nhạc sĩ đã biểu diễn tại lễ hội mùa hè."
+        },
+        {
+          "meaning_vi": "nhạc sĩ",
+          "example_en": "He hopes to become a professional musician one day.",
+          "example_vi": "Anh ấy hy vọng một ngày nào đó sẽ trở thành một nhạc sĩ chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "nhà soạn nhạc",
+          "example_en": "Beethoven is a world-renowned composer and musician.",
+          "example_vi": "Beethoven là một nhà soạn nhạc và nhạc sĩ nổi tiếng thế giới."
+        },
+        {
+          "meaning_vi": "nhà soạn nhạc",
+          "example_en": "The young composer wrote a new symphony for the orchestra.",
+          "example_vi": "Nhà soạn nhạc trẻ đã viết một bản giao hưởng mới cho dàn nhạc."
+        },
+        {
+          "meaning_vi": "nhà soạn nhạc",
+          "example_en": "She studied the works of every great composer.",
+          "example_vi": "Cô ấy đã nghiên cứu các tác phẩm của mọi nhà soạn nhạc vĩ đại."
+        },
+        {
+          "meaning_vi": "nhà soạn nhạc",
+          "example_en": "The composer spent years perfecting his masterpiece.",
+          "example_vi": "Nhà soạn nhạc đã dành nhiều năm để hoàn thiện kiệt tác của mình."
+        },
+        {
+          "meaning_vi": "nhà soạn nhạc",
+          "example_en": "Many composers find inspiration in nature.",
+          "example_vi": "Nhiều nhà soạn nhạc tìm thấy cảm hứng từ thiên nhiên."
+        },
+        {
+          "meaning_vi": "nhà soạn nhạc",
+          "example_en": "The film score was written by a famous composer.",
+          "example_vi": "Nhạc phim được viết bởi một nhà soạn nhạc nổi tiếng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung nghĩa và 10 ví dụ phù hợp với cấp độ A1.",
+      "word": "musician",
+      "normalized_word": "musician",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The famous musician played the piano beautifully.",
+      "example_vi_clean": "Người nhạc sĩ nổi tiếng đã chơi đàn piano rất hay."
+    },
+    {
+      "id": 24542,
+      "quiz_meaning_vi": "phải",
+      "meaning_vi_clean": "phải; chắc hẳn là; sự cần thiết",
+      "examples_clean": [
+        {
+          "meaning_vi": "phải",
+          "example_en": "You must finish your homework before going out.",
+          "example_vi": "Bạn phải làm xong bài tập về nhà trước khi ra ngoài."
+        },
+        {
+          "meaning_vi": "phải",
+          "example_en": "We must arrive at the airport on time.",
+          "example_vi": "Chúng ta phải đến sân bay đúng giờ."
+        },
+        {
+          "meaning_vi": "phải",
+          "example_en": "Everyone must follow the rules of the game.",
+          "example_vi": "Mọi người phải tuân theo luật chơi."
+        },
+        {
+          "meaning_vi": "phải",
+          "example_en": "You must be quiet in the library.",
+          "example_vi": "Bạn phải giữ im lặng trong thư viện."
+        },
+        {
+          "meaning_vi": "chắc hẳn là",
+          "example_en": "They must be tired after such a long trip.",
+          "example_vi": "Họ chắc hẳn là rất mệt sau chuyến đi dài như vậy."
+        },
+        {
+          "meaning_vi": "chắc hẳn là",
+          "example_en": "It must be raining outside, look at the clouds.",
+          "example_vi": "Chắc hẳn là trời đang mưa bên ngoài, hãy nhìn những đám mây kìa."
+        },
+        {
+          "meaning_vi": "chắc hẳn là",
+          "example_en": "He must be at home because his car is there.",
+          "example_vi": "Anh ấy chắc hẳn là đang ở nhà vì xe của anh ấy ở đó."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "A good dictionary is a must for language learners.",
+          "example_vi": "Một cuốn từ điển tốt là sự cần thiết đối với người học ngôn ngữ."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "Clean water is a must for survival.",
+          "example_vi": "Nước sạch là sự cần thiết để sinh tồn."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "Proper equipment is a must for this sport.",
+          "example_vi": "Thiết bị phù hợp là sự cần thiết cho môn thể thao này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS thành modal auxiliary và bổ sung ví dụ phù hợp.",
+      "word": "must",
+      "normalized_word": "must",
+      "cefr_level": "A1",
+      "pos": "modal auxiliary",
+      "pos_vi_clean": "động từ khuyết thiếu",
+      "example_en_clean": "You must finish your homework before going out.",
+      "example_vi_clean": "Bạn phải làm xong bài tập về nhà trước khi ra ngoài."
+    },
+    {
+      "id": 24543,
+      "quiz_meaning_vi": "của tôi",
+      "meaning_vi_clean": "của tôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "This is my favorite book.",
+          "example_vi": "Đây là cuốn sách yêu thích của tôi."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "I lost my keys yesterday.",
+          "example_vi": "Tôi đã làm mất chìa khóa của tôi ngày hôm qua."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "My brother is a doctor.",
+          "example_vi": "Anh trai của tôi là bác sĩ."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "Can I borrow my friend's pen?",
+          "example_vi": "Tôi có thể mượn bút của bạn tôi không?"
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "My house is near the park.",
+          "example_vi": "Nhà của tôi ở gần công viên."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "I love my family very much.",
+          "example_vi": "Tôi yêu gia đình của tôi rất nhiều."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "My teacher is very kind.",
+          "example_vi": "Giáo viên của tôi rất tốt bụng."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "My dog likes to run in the garden.",
+          "example_vi": "Con chó của tôi thích chạy trong vườn."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "My job is very interesting.",
+          "example_vi": "Công việc của tôi rất thú vị."
+        },
+        {
+          "meaning_vi": "của tôi",
+          "example_en": "My phone is out of battery.",
+          "example_vi": "Điện thoại của tôi hết pin rồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ nghĩa thán từ không phù hợp cấp độ A1 và bổ sung ví dụ.",
+      "word": "my",
+      "normalized_word": "my",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "This is my favorite book.",
+      "example_vi_clean": "Đây là cuốn sách yêu thích của tôi."
+    },
+    {
+      "id": 24544,
+      "quiz_meaning_vi": "tên",
+      "meaning_vi_clean": "tên; đặt tên",
+      "examples_clean": [
+        {
+          "meaning_vi": "tên",
+          "example_en": "What is your name?",
+          "example_vi": "Tên của bạn là gì?"
+        },
+        {
+          "meaning_vi": "tên",
+          "example_en": "I forgot his name.",
+          "example_vi": "Tôi đã quên tên của anh ấy."
+        },
+        {
+          "meaning_vi": "tên",
+          "example_en": "Her name is Sarah.",
+          "example_vi": "Tên của cô ấy là Sarah."
+        },
+        {
+          "meaning_vi": "tên",
+          "example_en": "The name of the street is Main Street.",
+          "example_vi": "Tên của con phố đó là Main Street."
+        },
+        {
+          "meaning_vi": "đặt tên",
+          "example_en": "They decided to name the baby after his grandfather.",
+          "example_vi": "Họ quyết định đặt tên đứa bé theo tên ông của nó."
+        },
+        {
+          "meaning_vi": "đặt tên",
+          "example_en": "The street was named after a famous hero.",
+          "example_vi": "Con phố được đặt tên theo một vị anh hùng nổi tiếng."
+        },
+        {
+          "meaning_vi": "đặt tên",
+          "example_en": "Can you name all the planets in our solar system?",
+          "example_vi": "Bạn có thể kể tên tất cả các hành tinh trong hệ mặt trời của chúng ta không?"
+        },
+        {
+          "meaning_vi": "đặt tên",
+          "example_en": "The committee will name a new leader tomorrow.",
+          "example_vi": "Ủy ban sẽ chỉ định một người lãnh đạo mới vào ngày mai."
+        },
+        {
+          "meaning_vi": "đặt tên",
+          "example_en": "She named her cat Luna.",
+          "example_vi": "Cô ấy đặt tên cho con mèo của mình là Luna."
+        },
+        {
+          "meaning_vi": "đặt tên",
+          "example_en": "The company was named after its founder.",
+          "example_vi": "Công ty được đặt tên theo người sáng lập của nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lọc bỏ các nghĩa phức tạp, giữ lại nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "name",
+      "normalized_word": "name",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "What is your name?",
+      "example_vi_clean": "Tên của bạn là gì?"
+    },
+    {
+      "id": 24545,
+      "quiz_meaning_vi": "quốc tịch",
+      "meaning_vi_clean": "quốc tịch",
+      "examples_clean": [
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "What is your nationality?",
+          "example_vi": "Quốc tịch của bạn là gì?"
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "She has dual nationality.",
+          "example_vi": "Cô ấy có hai quốc tịch."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "He is applying for a new nationality.",
+          "example_vi": "Anh ấy đang nộp đơn xin quốc tịch mới."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "The form asks for your name and nationality.",
+          "example_vi": "Mẫu đơn yêu cầu tên và quốc tịch của bạn."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "People of many nationalities live in this city.",
+          "example_vi": "Người thuộc nhiều quốc tịch sống ở thành phố này."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "His nationality is French.",
+          "example_vi": "Quốc tịch của anh ấy là Pháp."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "They share the same nationality.",
+          "example_vi": "Họ có cùng quốc tịch."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "You need to state your nationality on the passport.",
+          "example_vi": "Bạn cần ghi quốc tịch của mình trên hộ chiếu."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "The students are of different nationalities.",
+          "example_vi": "Các học sinh thuộc các quốc tịch khác nhau."
+        },
+        {
+          "meaning_vi": "quốc tịch",
+          "example_en": "She is proud of her nationality.",
+          "example_vi": "Cô ấy tự hào về quốc tịch của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa chính thành quốc tịch và bổ sung ví dụ.",
+      "word": "nationality",
+      "normalized_word": "nationality",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "What is your nationality?",
+      "example_vi_clean": "Quốc tịch của bạn là gì?"
+    },
+    {
+      "id": 24546,
+      "quiz_meaning_vi": "cổ",
+      "meaning_vi_clean": "cổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cổ",
+          "example_en": "She wears a scarf around her neck.",
+          "example_vi": "Cô ấy quàng khăn quanh cổ."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "He felt a pain in his neck.",
+          "example_vi": "Anh ấy cảm thấy đau ở cổ."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "The giraffe has a very long neck.",
+          "example_vi": "Con hươu cao cổ có cái cổ rất dài."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "She has a necklace around her neck.",
+          "example_vi": "Cô ấy đeo một chiếc vòng cổ quanh cổ."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "The bottle has a narrow neck.",
+          "example_vi": "Cái chai có phần cổ hẹp."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "He washed his face and neck.",
+          "example_vi": "Anh ấy rửa mặt và cổ."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "The shirt is too tight around the neck.",
+          "example_vi": "Chiếc áo quá chật ở phần cổ."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "She felt a cold breeze on her neck.",
+          "example_vi": "Cô ấy cảm thấy một luồng gió lạnh trên cổ."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "He put his arm around her neck.",
+          "example_vi": "Anh ấy vòng tay qua cổ cô ấy."
+        },
+        {
+          "meaning_vi": "cổ",
+          "example_en": "The sweater has a high neck.",
+          "example_vi": "Chiếc áo len có phần cổ cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa lóng và nghĩa không phù hợp, tập trung vào nghĩa cơ bản.",
+      "word": "neck",
+      "normalized_word": "neck",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She wears a scarf around her neck.",
+      "example_vi_clean": "Cô ấy quàng khăn quanh cổ."
+    },
+    {
+      "id": 24547,
+      "quiz_meaning_vi": "cần",
+      "meaning_vi_clean": "cần; sự cần thiết",
+      "examples_clean": [
+        {
+          "meaning_vi": "cần",
+          "example_en": "I need some help with this project.",
+          "example_vi": "Tôi cần một chút giúp đỡ với dự án này."
+        },
+        {
+          "meaning_vi": "cần",
+          "example_en": "Do you need anything from the store?",
+          "example_vi": "Bạn có cần gì từ cửa hàng không?"
+        },
+        {
+          "meaning_vi": "cần",
+          "example_en": "Plants need water and sunlight to grow.",
+          "example_vi": "Cây cối cần nước và ánh sáng mặt trời để phát triển."
+        },
+        {
+          "meaning_vi": "cần",
+          "example_en": "We need to leave early tomorrow.",
+          "example_vi": "Chúng ta cần phải rời đi sớm vào ngày mai."
+        },
+        {
+          "meaning_vi": "cần",
+          "example_en": "He needs a new pair of shoes.",
+          "example_vi": "Anh ấy cần một đôi giày mới."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "There is a great need for more schools in this area.",
+          "example_vi": "Có một sự cần thiết lớn về việc xây thêm trường học ở khu vực này."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "The need for clean energy is increasing.",
+          "example_vi": "Sự cần thiết về năng lượng sạch đang tăng lên."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "They understand the need for change.",
+          "example_vi": "Họ hiểu sự cần thiết của việc thay đổi."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "We must address the need for better healthcare.",
+          "example_vi": "Chúng ta phải giải quyết sự cần thiết về chăm sóc sức khỏe tốt hơn."
+        },
+        {
+          "meaning_vi": "sự cần thiết",
+          "example_en": "The need for food is a basic human requirement.",
+          "example_vi": "Sự cần thiết về thực phẩm là một yêu cầu cơ bản của con người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS và bổ sung ví dụ phù hợp.",
+      "word": "need",
+      "normalized_word": "need",
+      "cefr_level": "A1",
+      "pos": "modal auxiliary",
+      "pos_vi_clean": "động từ khuyết thiếu",
+      "example_en_clean": "I need some help with this project.",
+      "example_vi_clean": "Tôi cần một chút giúp đỡ với dự án này."
+    },
+    {
+      "id": 24548,
+      "quiz_meaning_vi": "người hàng xóm",
+      "meaning_vi_clean": "người hàng xóm",
+      "examples_clean": [
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "My neighbor is very friendly.",
+          "example_vi": "Người hàng xóm của tôi rất thân thiện."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "I often talk to my neighbor.",
+          "example_vi": "Tôi thường nói chuyện với người hàng xóm của mình."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "Our neighbors invited us for dinner.",
+          "example_vi": "Những người hàng xóm đã mời chúng tôi ăn tối."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "She is a kind neighbor.",
+          "example_vi": "Cô ấy là một người hàng xóm tốt bụng."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "The neighbor's dog is barking.",
+          "example_vi": "Con chó của người hàng xóm đang sủa."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "We have new neighbors moving in next door.",
+          "example_vi": "Chúng tôi có những người hàng xóm mới chuyển đến nhà bên cạnh."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "He helps his elderly neighbor with shopping.",
+          "example_vi": "Anh ấy giúp người hàng xóm lớn tuổi của mình đi mua sắm."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "Being a good neighbor is important.",
+          "example_vi": "Trở thành một người hàng xóm tốt là điều quan trọng."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "I borrowed some sugar from my neighbor.",
+          "example_vi": "Tôi đã mượn một ít đường từ người hàng xóm của mình."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "The neighbors are having a party tonight.",
+          "example_vi": "Những người hàng xóm đang tổ chức một bữa tiệc tối nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "neighbor",
+      "normalized_word": "neighbor",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My neighbor is very friendly.",
+      "example_vi_clean": "Người hàng xóm của tôi rất thân thiện."
+    },
+    {
+      "id": 24549,
+      "quiz_meaning_vi": "người hàng xóm",
+      "meaning_vi_clean": "người hàng xóm",
+      "examples_clean": [
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "My neighbour lives in the house next to mine.",
+          "example_vi": "Người hàng xóm của tôi sống ở ngôi nhà bên cạnh nhà tôi."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "She is a helpful neighbour.",
+          "example_vi": "Cô ấy là một người hàng xóm hay giúp đỡ."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "We get along well with our neighbours.",
+          "example_vi": "Chúng tôi hòa thuận với những người hàng xóm của mình."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "The neighbour next door is very quiet.",
+          "example_vi": "Người hàng xóm ở nhà bên cạnh rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "I asked my neighbour to water my plants.",
+          "example_vi": "Tôi nhờ người hàng xóm tưới cây giúp tôi."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "Our neighbours are very welcoming.",
+          "example_vi": "Những người hàng xóm của chúng tôi rất hiếu khách."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "He is the best neighbour I have ever had.",
+          "example_vi": "Anh ấy là người hàng xóm tốt nhất mà tôi từng có."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "The neighbours complained about the noise.",
+          "example_vi": "Những người hàng xóm đã phàn nàn về tiếng ồn."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "She often shares food with her neighbours.",
+          "example_vi": "Cô ấy thường chia sẻ thức ăn với những người hàng xóm của mình."
+        },
+        {
+          "meaning_vi": "người hàng xóm",
+          "example_en": "We are lucky to have such good neighbours.",
+          "example_vi": "Chúng tôi thật may mắn khi có những người hàng xóm tốt như vậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ (cách viết Anh-Anh).",
+      "word": "neighbour",
+      "normalized_word": "neighbour",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My neighbour lives in the house next to mine.",
+      "example_vi_clean": "Người hàng xóm của tôi sống ở ngôi nhà bên cạnh nhà tôi."
+    },
+    {
+      "id": 24550,
+      "quiz_meaning_vi": "không bao giờ",
+      "meaning_vi_clean": "không bao giờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "I will never forget this day.",
+          "example_vi": "Tôi sẽ không bao giờ quên ngày này."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "He never eats meat.",
+          "example_vi": "Anh ấy không bao giờ ăn thịt."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "They never arrive late for work.",
+          "example_vi": "Họ không bao giờ đến làm muộn."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "She has never been to Paris.",
+          "example_vi": "Cô ấy chưa bao giờ đến Paris."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "Never say never.",
+          "example_vi": "Đừng bao giờ nói không bao giờ."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "We never watch television in the morning.",
+          "example_vi": "Chúng tôi không bao giờ xem tivi vào buổi sáng."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "He never tells lies.",
+          "example_vi": "Anh ấy không bao giờ nói dối."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "I never drink coffee before bed.",
+          "example_vi": "Tôi không bao giờ uống cà phê trước khi đi ngủ."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "They never argue with each other.",
+          "example_vi": "Họ không bao giờ tranh cãi với nhau."
+        },
+        {
+          "meaning_vi": "không bao giờ",
+          "example_en": "She never misses a chance to learn.",
+          "example_vi": "Cô ấy không bao giờ bỏ lỡ cơ hội để học hỏi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "never",
+      "normalized_word": "never",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I will never forget this day.",
+      "example_vi_clean": "Tôi sẽ không bao giờ quên ngày này."
+    }
+  ]
+}

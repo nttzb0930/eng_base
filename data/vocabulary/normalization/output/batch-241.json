@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26401,
+      "quiz_meaning_vi": "tầng lớp quý tộc",
+      "meaning_vi_clean": "tầng lớp quý tộc; chế độ quý tộc",
+      "examples_clean": [
+        {
+          "meaning_vi": "tầng lớp quý tộc",
+          "example_en": "The aristocracy held most of the land in the country.",
+          "example_vi": "Tầng lớp quý tộc nắm giữ phần lớn đất đai trong nước."
+        },
+        {
+          "meaning_vi": "tầng lớp quý tộc",
+          "example_en": "She was born into a family of the old aristocracy.",
+          "example_vi": "Cô ấy sinh ra trong một gia đình thuộc tầng lớp quý tộc cũ."
+        },
+        {
+          "meaning_vi": "tầng lớp quý tộc",
+          "example_en": "The aristocracy often influenced the political decisions of the time.",
+          "example_vi": "Tầng lớp quý tộc thường gây ảnh hưởng đến các quyết định chính trị thời bấy giờ."
+        },
+        {
+          "meaning_vi": "tầng lớp quý tộc",
+          "example_en": "Members of the aristocracy attended the royal ball.",
+          "example_vi": "Các thành viên của tầng lớp quý tộc đã tham dự buổi dạ tiệc hoàng gia."
+        },
+        {
+          "meaning_vi": "chế độ quý tộc",
+          "example_en": "The revolution aimed to overthrow the existing aristocracy.",
+          "example_vi": "Cuộc cách mạng nhằm mục đích lật đổ chế độ quý tộc hiện tại."
+        },
+        {
+          "meaning_vi": "chế độ quý tộc",
+          "example_en": "History shows the decline of the aristocracy in many European nations.",
+          "example_vi": "Lịch sử cho thấy sự suy tàn của chế độ quý tộc ở nhiều quốc gia châu Âu."
+        },
+        {
+          "meaning_vi": "chế độ quý tộc",
+          "example_en": "The country moved away from an aristocracy toward a democracy.",
+          "example_vi": "Đất nước đã chuyển dịch từ chế độ quý tộc sang nền dân chủ."
+        },
+        {
+          "meaning_vi": "chế độ quý tộc",
+          "example_en": "Critics argued that the aristocracy was unfair to the common people.",
+          "example_vi": "Các nhà phê bình cho rằng chế độ quý tộc là bất công đối với người dân thường."
+        },
+        {
+          "meaning_vi": "chế độ quý tộc",
+          "example_en": "The aristocracy was replaced by a new system of government.",
+          "example_vi": "Chế độ quý tộc đã được thay thế bằng một hệ thống chính phủ mới."
+        },
+        {
+          "meaning_vi": "chế độ quý tộc",
+          "example_en": "Many people fought against the rigid structure of the aristocracy.",
+          "example_vi": "Nhiều người đã đấu tranh chống lại cấu trúc cứng nhắc của chế độ quý tộc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "aristocracy",
+      "normalized_word": "aristocracy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The aristocracy held most of the land in the country.",
+      "example_vi_clean": "Tầng lớp quý tộc nắm giữ phần lớn đất đai trong nước."
+    },
+    {
+      "id": 26402,
+      "quiz_meaning_vi": "ôm",
+      "meaning_vi_clean": "ôm",
+      "examples_clean": [
+        {
+          "meaning_vi": "ôm",
+          "example_en": "She carried an armful of books into the library.",
+          "example_vi": "Cô ấy mang một ôm sách vào thư viện."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "He brought an armful of firewood into the house.",
+          "example_vi": "Anh ấy mang một ôm củi vào nhà."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "The child held an armful of colorful flowers.",
+          "example_vi": "Đứa trẻ cầm một ôm hoa đầy màu sắc."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "She gathered an armful of laundry from the line.",
+          "example_vi": "Cô ấy gom một ôm quần áo từ dây phơi."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "He struggled with an armful of groceries at the door.",
+          "example_vi": "Anh ấy loay hoay với một ôm đồ tạp hóa ở cửa."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "She dropped an armful of papers on the desk.",
+          "example_vi": "Cô ấy làm rơi một ôm giấy tờ trên bàn làm việc."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "He walked in with an armful of gifts for the children.",
+          "example_vi": "Anh ấy bước vào với một ôm quà cho lũ trẻ."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "She picked up an armful of fallen leaves.",
+          "example_vi": "Cô ấy nhặt một ôm lá rụng."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "He carried an armful of towels to the pool.",
+          "example_vi": "Anh ấy mang một ôm khăn tắm ra hồ bơi."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "She held an armful of blankets to keep warm.",
+          "example_vi": "Cô ấy ôm một ôm chăn để giữ ấm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Nghĩa được chuẩn hóa thành 'ôm' (danh từ chỉ lượng). Bổ sung đủ 10 ví dụ.",
+      "word": "armful",
+      "normalized_word": "armful",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She carried an armful of books into the library.",
+      "example_vi_clean": "Cô ấy mang một ôm sách vào thư viện."
+    },
+    {
+      "id": 26403,
+      "quiz_meaning_vi": "đánh thức",
+      "meaning_vi_clean": "đánh thức; khuấy động",
+      "examples_clean": [
+        {
+          "meaning_vi": "đánh thức",
+          "example_en": "The loud noise outside began to arouse the sleeping baby.",
+          "example_vi": "Tiếng ồn lớn bên ngoài bắt đầu đánh thức đứa bé đang ngủ."
+        },
+        {
+          "meaning_vi": "đánh thức",
+          "example_en": "The alarm clock failed to arouse him from his deep sleep.",
+          "example_vi": "Đồng hồ báo thức đã không thể đánh thức anh ấy khỏi giấc ngủ sâu."
+        },
+        {
+          "meaning_vi": "đánh thức",
+          "example_en": "She tried to arouse her brother for breakfast.",
+          "example_vi": "Cô ấy cố gắng đánh thức anh trai mình để ăn sáng."
+        },
+        {
+          "meaning_vi": "đánh thức",
+          "example_en": "The sudden thunderclap served to arouse everyone in the house.",
+          "example_vi": "Tiếng sấm bất ngờ đã đánh thức mọi người trong nhà."
+        },
+        {
+          "meaning_vi": "khuấy động",
+          "example_en": "The speech was intended to arouse public interest in the project.",
+          "example_vi": "Bài phát biểu nhằm mục đích khuấy động sự quan tâm của công chúng đối với dự án."
+        },
+        {
+          "meaning_vi": "khuấy động",
+          "example_en": "His comments served to arouse suspicion among the staff.",
+          "example_vi": "Những bình luận của anh ấy đã khuấy động sự nghi ngờ trong đội ngũ nhân viên."
+        },
+        {
+          "meaning_vi": "khuấy động",
+          "example_en": "The news helped to arouse a sense of urgency in the community.",
+          "example_vi": "Tin tức đã giúp khuấy động tinh thần khẩn trương trong cộng đồng."
+        },
+        {
+          "meaning_vi": "khuấy động",
+          "example_en": "The film managed to arouse strong emotions in the audience.",
+          "example_vi": "Bộ phim đã thành công trong việc khuấy động những cảm xúc mạnh mẽ nơi khán giả."
+        },
+        {
+          "meaning_vi": "khuấy động",
+          "example_en": "The new policy is likely to arouse significant debate.",
+          "example_vi": "Chính sách mới có khả năng khuấy động các cuộc tranh luận đáng kể."
+        },
+        {
+          "meaning_vi": "khuấy động",
+          "example_en": "She wanted to arouse curiosity about the mystery novel.",
+          "example_vi": "Cô ấy muốn khuấy động sự tò mò về cuốn tiểu thuyết bí ẩn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "arouse",
+      "normalized_word": "arouse",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The loud noise outside began to arouse the sleeping baby.",
+      "example_vi_clean": "Tiếng ồn lớn bên ngoài bắt đầu đánh thức đứa bé đang ngủ."
+    },
+    {
+      "id": 26404,
+      "quiz_meaning_vi": "kiêu ngạo",
+      "meaning_vi_clean": "kiêu ngạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "He was too arrogant to admit he had made a mistake.",
+          "example_vi": "Anh ta quá kiêu ngạo để thừa nhận mình đã phạm sai lầm."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "Her arrogant attitude made it difficult for her to make friends.",
+          "example_vi": "Thái độ kiêu ngạo khiến cô ấy khó kết bạn."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "It is arrogant to assume that you know everything.",
+          "example_vi": "Thật kiêu ngạo khi cho rằng bạn biết mọi thứ."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "The manager's arrogant behavior upset the entire team.",
+          "example_vi": "Hành vi kiêu ngạo của người quản lý đã làm cả nhóm khó chịu."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "Don't be so arrogant about your recent success.",
+          "example_vi": "Đừng quá kiêu ngạo về thành công gần đây của bạn."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "His arrogant tone offended everyone at the meeting.",
+          "example_vi": "Giọng điệu kiêu ngạo của anh ta đã xúc phạm mọi người trong cuộc họp."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "She found his arrogant remarks very disrespectful.",
+          "example_vi": "Cô ấy thấy những lời nhận xét kiêu ngạo của anh ta rất thiếu tôn trọng."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "The arrogant prince refused to listen to his advisors.",
+          "example_vi": "Vị hoàng tử kiêu ngạo từ chối lắng nghe các cố vấn của mình."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "He lost his job because of his arrogant personality.",
+          "example_vi": "Anh ta mất việc vì tính cách kiêu ngạo của mình."
+        },
+        {
+          "meaning_vi": "kiêu ngạo",
+          "example_en": "An arrogant person rarely learns from their failures.",
+          "example_vi": "Một người kiêu ngạo hiếm khi học hỏi được từ những thất bại của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "arrogant",
+      "normalized_word": "arrogant",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was too arrogant to admit he had made a mistake.",
+      "example_vi_clean": "Anh ta quá kiêu ngạo để thừa nhận mình đã phạm sai lầm."
+    },
+    {
+      "id": 26405,
+      "quiz_meaning_vi": "động mạch",
+      "meaning_vi_clean": "động mạch; đường giao thông chính",
+      "examples_clean": [
+        {
+          "meaning_vi": "động mạch",
+          "example_en": "The heart pumps blood through the main artery.",
+          "example_vi": "Tim bơm máu qua động mạch chính."
+        },
+        {
+          "meaning_vi": "động mạch",
+          "example_en": "A blocked artery can lead to serious health problems.",
+          "example_vi": "Động mạch bị tắc có thể dẫn đến các vấn đề sức khỏe nghiêm trọng."
+        },
+        {
+          "meaning_vi": "động mạch",
+          "example_en": "The surgeon repaired the damaged artery during the operation.",
+          "example_vi": "Bác sĩ phẫu thuật đã sửa chữa động mạch bị tổn thương trong ca mổ."
+        },
+        {
+          "meaning_vi": "động mạch",
+          "example_en": "Blood flows away from the heart through an artery.",
+          "example_vi": "Máu chảy ra khỏi tim thông qua động mạch."
+        },
+        {
+          "meaning_vi": "đường giao thông chính",
+          "example_en": "The new highway is a major artery for the city's traffic.",
+          "example_vi": "Đường cao tốc mới là một đường giao thông chính cho lưu lượng xe của thành phố."
+        },
+        {
+          "meaning_vi": "đường giao thông chính",
+          "example_en": "This road serves as an artery connecting the suburbs to the center.",
+          "example_vi": "Con đường này đóng vai trò là đường giao thông chính kết nối vùng ngoại ô với trung tâm."
+        },
+        {
+          "meaning_vi": "đường giao thông chính",
+          "example_en": "Traffic was heavy on the city's main artery.",
+          "example_vi": "Giao thông rất đông đúc trên đường giao thông chính của thành phố."
+        },
+        {
+          "meaning_vi": "đường giao thông chính",
+          "example_en": "The river acts as an artery for trade in the region.",
+          "example_vi": "Con sông đóng vai trò như một đường giao thông chính cho thương mại trong vùng."
+        },
+        {
+          "meaning_vi": "đường giao thông chính",
+          "example_en": "They are planning to widen the city's busiest artery.",
+          "example_vi": "Họ đang lên kế hoạch mở rộng đường giao thông chính bận rộn nhất thành phố."
+        },
+        {
+          "meaning_vi": "đường giao thông chính",
+          "example_en": "The railway is an important artery for transporting goods.",
+          "example_vi": "Đường sắt là một đường giao thông chính quan trọng để vận chuyển hàng hóa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "artery",
+      "normalized_word": "artery",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The heart pumps blood through the main artery.",
+      "example_vi_clean": "Tim bơm máu qua động mạch chính."
+    },
+    {
+      "id": 26406,
+      "quiz_meaning_vi": "nói rõ ràng",
+      "meaning_vi_clean": "nói rõ ràng; có khớp nối",
+      "examples_clean": [
+        {
+          "meaning_vi": "nói rõ ràng",
+          "example_en": "She is able to articulate her thoughts very clearly.",
+          "example_vi": "Cô ấy có khả năng nói rõ ràng suy nghĩ của mình."
+        },
+        {
+          "meaning_vi": "nói rõ ràng",
+          "example_en": "He struggled to articulate his feelings during the interview.",
+          "example_vi": "Anh ấy gặp khó khăn trong việc nói rõ ràng cảm xúc của mình trong buổi phỏng vấn."
+        },
+        {
+          "meaning_vi": "nói rõ ràng",
+          "example_en": "It is important to articulate your goals to the team.",
+          "example_vi": "Điều quan trọng là phải nói rõ ràng các mục tiêu của bạn với cả nhóm."
+        },
+        {
+          "meaning_vi": "nói rõ ràng",
+          "example_en": "The speaker articulated each word with great precision.",
+          "example_vi": "Người diễn thuyết nói rõ ràng từng từ với độ chính xác cao."
+        },
+        {
+          "meaning_vi": "có khớp nối",
+          "example_en": "The robot arm is designed with an articulate joint.",
+          "example_vi": "Cánh tay robot được thiết kế với một khớp nối linh hoạt."
+        },
+        {
+          "meaning_vi": "có khớp nối",
+          "example_en": "The skeleton is articulate, allowing for natural movement.",
+          "example_vi": "Bộ xương có khớp nối, cho phép chuyển động tự nhiên."
+        },
+        {
+          "meaning_vi": "có khớp nối",
+          "example_en": "The toy has articulate limbs that can be moved.",
+          "example_vi": "Món đồ chơi có các chi có khớp nối có thể di chuyển được."
+        },
+        {
+          "meaning_vi": "có khớp nối",
+          "example_en": "The machine features an articulate mechanism for better control.",
+          "example_vi": "Cỗ máy có cơ chế khớp nối để kiểm soát tốt hơn."
+        },
+        {
+          "meaning_vi": "có khớp nối",
+          "example_en": "The model was built with articulate parts.",
+          "example_vi": "Mô hình được xây dựng với các bộ phận có khớp nối."
+        },
+        {
+          "meaning_vi": "có khớp nối",
+          "example_en": "The design requires an articulate connection between the two beams.",
+          "example_vi": "Thiết kế yêu cầu một kết nối có khớp nối giữa hai thanh dầm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa 'articulate' (verb) thành 'nói rõ ràng' và 'có khớp nối'. Bổ sung đủ 10 ví dụ.",
+      "word": "articulate",
+      "normalized_word": "articulate",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She is able to articulate her thoughts very clearly.",
+      "example_vi_clean": "Cô ấy có khả năng nói rõ ràng suy nghĩ của mình."
+    },
+    {
+      "id": 26407,
+      "quiz_meaning_vi": "giả tạo",
+      "meaning_vi_clean": "giả tạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "He smiled artificially to hide his disappointment.",
+          "example_vi": "Anh ấy mỉm cười một cách giả tạo để che giấu sự thất vọng."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "The conversation felt artificially polite.",
+          "example_vi": "Cuộc trò chuyện mang cảm giác lịch sự một cách giả tạo."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "She behaved artificially when she met his parents.",
+          "example_vi": "Cô ấy cư xử một cách giả tạo khi gặp cha mẹ anh ấy."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "The laughter in the room sounded artificially forced.",
+          "example_vi": "Tiếng cười trong phòng nghe có vẻ giả tạo và gượng ép."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "The flowers were arranged artificially to look perfect.",
+          "example_vi": "Những bông hoa được sắp xếp một cách giả tạo để trông thật hoàn hảo."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "He spoke artificially, as if reading from a script.",
+          "example_vi": "Anh ấy nói một cách giả tạo, như thể đang đọc từ kịch bản."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "The situation was kept artificially calm by the guards.",
+          "example_vi": "Tình hình được giữ bình tĩnh một cách giả tạo bởi những người bảo vệ."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "Her concern for him seemed artificially constructed.",
+          "example_vi": "Sự quan tâm của cô ấy dành cho anh ta có vẻ được tạo ra một cách giả tạo."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "The prices were kept artificially low to attract customers.",
+          "example_vi": "Giá cả được giữ thấp một cách giả tạo để thu hút khách hàng."
+        },
+        {
+          "meaning_vi": "giả tạo",
+          "example_en": "The atmosphere in the office was artificially cheerful.",
+          "example_vi": "Bầu không khí trong văn phòng vui vẻ một cách giả tạo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "artificially",
+      "normalized_word": "artificially",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He smiled artificially to hide his disappointment.",
+      "example_vi_clean": "Anh ấy mỉm cười một cách giả tạo để che giấu sự thất vọng."
+    },
+    {
+      "id": 26408,
+      "quiz_meaning_vi": "nghệ thuật",
+      "meaning_vi_clean": "nghệ thuật",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "The painting shows great artistry and skill.",
+          "example_vi": "Bức tranh thể hiện nghệ thuật và kỹ năng tuyệt vời."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "She is known for the artistry in her dance performances.",
+          "example_vi": "Cô ấy nổi tiếng với nghệ thuật trong các màn trình diễn múa của mình."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "The film is a masterpiece of modern artistry.",
+          "example_vi": "Bộ phim là một kiệt tác của nghệ thuật hiện đại."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "He appreciates the artistry involved in making fine jewelry.",
+          "example_vi": "Anh ấy đánh giá cao nghệ thuật trong việc chế tác đồ trang sức tinh xảo."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "The garden was designed with true artistry.",
+          "example_vi": "Khu vườn được thiết kế với nghệ thuật thực thụ."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "Her writing displays a unique sense of artistry.",
+          "example_vi": "Cách viết của cô ấy thể hiện một cảm quan nghệ thuật độc đáo."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "The chef's artistry is evident in every dish he prepares.",
+          "example_vi": "Nghệ thuật của người đầu bếp thể hiện rõ trong từng món ăn anh ấy chuẩn bị."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "The sculpture is a fine example of classical artistry.",
+          "example_vi": "Bức tượng là một ví dụ điển hình của nghệ thuật cổ điển."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "They admired the artistry of the ancient pottery.",
+          "example_vi": "Họ ngưỡng mộ nghệ thuật của đồ gốm cổ."
+        },
+        {
+          "meaning_vi": "nghệ thuật",
+          "example_en": "Music requires both technical skill and pure artistry.",
+          "example_vi": "Âm nhạc đòi hỏi cả kỹ năng kỹ thuật và nghệ thuật thuần túy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "artistry",
+      "normalized_word": "artistry",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The painting shows great artistry and skill.",
+      "example_vi_clean": "Bức tranh thể hiện nghệ thuật và kỹ năng tuyệt vời."
+    },
+    {
+      "id": 26409,
+      "quiz_meaning_vi": "tro",
+      "meaning_vi_clean": "tro; cây tần bì",
+      "examples_clean": [
+        {
+          "meaning_vi": "tro",
+          "example_en": "The fire left nothing but a pile of ash.",
+          "example_vi": "Đống lửa không để lại gì ngoài một đống tro."
+        },
+        {
+          "meaning_vi": "tro",
+          "example_en": "He shook the ash from his cigarette into the tray.",
+          "example_vi": "Anh ấy rũ tro từ điếu thuốc vào khay."
+        },
+        {
+          "meaning_vi": "tro",
+          "example_en": "The volcano covered the town in thick ash.",
+          "example_vi": "Núi lửa bao phủ thị trấn trong lớp tro dày."
+        },
+        {
+          "meaning_vi": "tro",
+          "example_en": "She scattered the ashes of her pet in the garden.",
+          "example_vi": "Cô ấy rải tro của thú cưng trong vườn."
+        },
+        {
+          "meaning_vi": "cây tần bì",
+          "example_en": "The forest is filled with tall ash trees.",
+          "example_vi": "Khu rừng đầy những cây tần bì cao lớn."
+        },
+        {
+          "meaning_vi": "cây tần bì",
+          "example_en": "Ash wood is often used to make baseball bats.",
+          "example_vi": "Gỗ cây tần bì thường được dùng để làm gậy bóng chày."
+        },
+        {
+          "meaning_vi": "cây tần bì",
+          "example_en": "The leaves of the ash tree turn yellow in autumn.",
+          "example_vi": "Lá của cây tần bì chuyển sang màu vàng vào mùa thu."
+        },
+        {
+          "meaning_vi": "cây tần bì",
+          "example_en": "He planted an ash tree in his backyard.",
+          "example_vi": "Anh ấy đã trồng một cây tần bì ở sân sau."
+        },
+        {
+          "meaning_vi": "cây tần bì",
+          "example_en": "The park is famous for its ancient ash trees.",
+          "example_vi": "Công viên nổi tiếng với những cây tần bì cổ thụ."
+        },
+        {
+          "meaning_vi": "cây tần bì",
+          "example_en": "The furniture was crafted from high-quality ash.",
+          "example_vi": "Đồ nội thất được chế tác từ gỗ cây tần bì chất lượng cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung đủ 10 ví dụ.",
+      "word": "ash",
+      "normalized_word": "ash",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The fire left nothing but a pile of ash.",
+      "example_vi_clean": "Đống lửa không để lại gì ngoài một đống tro."
+    },
+    {
+      "id": 26410,
+      "quiz_meaning_vi": "nguyện vọng",
+      "meaning_vi_clean": "nguyện vọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "She has an aspiration to become a doctor.",
+          "example_vi": "Cô ấy có nguyện vọng trở thành bác sĩ."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "His main aspiration is to travel the world.",
+          "example_vi": "Nguyện vọng chính của anh ấy là đi du lịch khắp thế giới."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "The company supports the career aspirations of its employees.",
+          "example_vi": "Công ty hỗ trợ các nguyện vọng nghề nghiệp của nhân viên."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "They shared their aspirations for a better future.",
+          "example_vi": "Họ chia sẻ những nguyện vọng của mình về một tương lai tốt đẹp hơn."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "It is a common aspiration to own a house.",
+          "example_vi": "Sở hữu một ngôi nhà là một nguyện vọng phổ biến."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "She worked hard to fulfill her aspiration of winning the prize.",
+          "example_vi": "Cô ấy đã làm việc chăm chỉ để thực hiện nguyện vọng giành giải thưởng."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "His political aspirations led him to run for office.",
+          "example_vi": "Những nguyện vọng chính trị đã thúc đẩy anh ấy ra tranh cử."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "The school encourages students to follow their academic aspirations.",
+          "example_vi": "Nhà trường khuyến khích học sinh theo đuổi các nguyện vọng học tập của mình."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "She never lost sight of her original aspiration.",
+          "example_vi": "Cô ấy không bao giờ quên đi nguyện vọng ban đầu của mình."
+        },
+        {
+          "meaning_vi": "nguyện vọng",
+          "example_en": "The project reflects the aspirations of the local community.",
+          "example_vi": "Dự án phản ánh những nguyện vọng của cộng đồng địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung đủ 10 ví dụ.",
+      "word": "aspiration",
+      "normalized_word": "aspiration",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has an aspiration to become a doctor.",
+      "example_vi_clean": "Cô ấy có nguyện vọng trở thành bác sĩ."
+    }
+  ]
+}

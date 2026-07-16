@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-092",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24911,
+      "word": "dinosaur",
+      "normalized_word": "dinosaur",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "khủng long",
+      "meaning_vi": "khủng long",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24912,
+      "word": "direct",
+      "normalized_word": "direct",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/di'rekt/",
+      "primary_meaning_vi": "gửi",
+      "meaning_vi": "gửi, viết để gửi cho (ai), viết cho (ai); nói với (ai), nói để nhắn (ai); hướng nhắm (về phía...); chỉ đường; hướng dẫn, chỉ đạo, chi phối; điều khiển, chỉ huy, cai quản; ra lệnh, chỉ thị, bảo; ra lệnh; thẳng, ngay, lập tức; thẳng, trực tiếp, đích thân; ngay thẳng, thẳng thắn; rõ ràng, không quanh co úp mở, minh bạch, rạch ròi; hoàn toàn, tuyệt đối; đi từ tây sang đông, thuận hành; không đảo; trực tiếp; một chiều; thẳng, ngay; lập tức; thẳng, trực tiếp",
+      "example_en": "to direct the affairs of a nation or the movements of an army",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He directed his question to the room in general.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He directed me to the left-hand road.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She directed them to leave immediately.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24913,
+      "word": "direction",
+      "normalized_word": "direction",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'rekʃn/",
+      "primary_meaning_vi": "sự điều khiển",
+      "meaning_vi": "sự điều khiển, sự chỉ huy, sự cai quản; số nhiều) lời chỉ bảo, lời hướng dẫn, chỉ thị, huấn thị; phương hướng, chiều, phía, ngả; mặt, phương diện; directorate",
+      "example_en": "Keep going in the same direction.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The trombonist looked to the bandleader for direction.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The screenplay was good, but the direction was weak.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24914,
+      "word": "director",
+      "normalized_word": "director",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'rektə/",
+      "primary_meaning_vi": "giám đốc",
+      "meaning_vi": "giám đốc, người điều khiển, người chỉ huy; quan đốc chính (hồi cách mạng Pháp); cha đạo; người đạo diễn (phim); đường chuẩn; máy ngắm (ở súng, để điều chỉnh tầm đạn...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24915,
+      "word": "disadvantage",
+      "normalized_word": "disadvantage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,disəd'vɑ:ntidʤ/",
+      "primary_meaning_vi": "sự bất lợi",
+      "meaning_vi": "sự bất lợi; thế bất lợi; sự thiệt hại, mối tổn thất",
+      "example_en": "The disadvantage to owning a food processor is that you have to store it somewhere.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My height is a disadvantage for reaching high shelves.",
+          "example_vi": null
+        },
+        {
+          "example_en": "They fear it might disadvantage honest participants to allow automated entries.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24916,
+      "word": "disagree",
+      "normalized_word": "disagree",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/,disə'gri:/",
+      "primary_meaning_vi": "khác",
+      "meaning_vi": "khác, không giống, không khớp; không hợp, không thích hợp; bất đồng, không đồng ý; bất hoà",
+      "example_en": "Bob says cats are friendlier than dogs, but I disagree.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My results in the laboratory consistently disagree with yours.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24917,
+      "word": "disappear",
+      "normalized_word": "disappear",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/,disə'piə/",
+      "primary_meaning_vi": "biến đi",
+      "meaning_vi": "biến đi, biến mất",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24918,
+      "word": "disappointed",
+      "normalized_word": "disappointed",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "chán nản",
+      "meaning_vi": "chán nản, thất vọng",
+      "example_en": "His lack of respect disappointed her.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After all his anticipation, the trip left him deeply disappointed.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a disappointed tone / face / silence",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24919,
+      "word": "disappointing",
+      "normalized_word": "disappointing",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/,disə'pɔintiɳ/",
+      "primary_meaning_vi": "làm chán ngán",
+      "meaning_vi": "làm chán ngán, làm thất vọng",
+      "example_en": "His lack of respect disappointed her.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "disappointing results / news; a disappointing experience",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24920,
+      "word": "disco",
+      "normalized_word": "disco",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sự khiêu vũ theo các điệu nhạc pop ghi băng",
+      "meaning_vi": "sự khiêu vũ theo các điệu nhạc pop ghi băng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

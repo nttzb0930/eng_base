@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26781,
+      "quiz_meaning_vi": "về phương diện văn hoá",
+      "meaning_vi_clean": "về phương diện văn hoá; theo cách thức văn hoá",
+      "examples_clean": [
+        {
+          "meaning_vi": "về phương diện văn hoá",
+          "example_en": "The two countries are culturally very different.",
+          "example_vi": "Hai quốc gia này rất khác biệt về phương diện văn hoá."
+        },
+        {
+          "meaning_vi": "về phương diện văn hoá",
+          "example_en": "We need to understand the region culturally.",
+          "example_vi": "Chúng ta cần hiểu khu vực này về phương diện văn hoá."
+        },
+        {
+          "meaning_vi": "về phương diện văn hoá",
+          "example_en": "The city is culturally rich and diverse.",
+          "example_vi": "Thành phố này rất phong phú và đa dạng về phương diện văn hoá."
+        },
+        {
+          "meaning_vi": "về phương diện văn hoá",
+          "example_en": "They are culturally distinct from their neighbors.",
+          "example_vi": "Họ khác biệt về phương diện văn hoá so với các nước láng giềng."
+        },
+        {
+          "meaning_vi": "theo cách thức văn hoá",
+          "example_en": "The event was culturally significant for the community.",
+          "example_vi": "Sự kiện này có ý nghĩa quan trọng theo cách thức văn hoá đối với cộng đồng."
+        },
+        {
+          "meaning_vi": "theo cách thức văn hoá",
+          "example_en": "He was raised to behave culturally in public.",
+          "example_vi": "Anh ấy được nuôi dạy để cư xử theo cách thức văn hoá ở nơi công cộng."
+        },
+        {
+          "meaning_vi": "theo cách thức văn hoá",
+          "example_en": "The film is culturally important to our history.",
+          "example_vi": "Bộ phim này quan trọng theo cách thức văn hoá đối với lịch sử của chúng ta."
+        },
+        {
+          "meaning_vi": "theo cách thức văn hoá",
+          "example_en": "They adapted culturally to the new environment.",
+          "example_vi": "Họ đã thích nghi theo cách thức văn hoá với môi trường mới."
+        },
+        {
+          "meaning_vi": "theo cách thức văn hoá",
+          "example_en": "The school promotes activities that are culturally engaging.",
+          "example_vi": "Trường học thúc đẩy các hoạt động mang tính gắn kết theo cách thức văn hoá."
+        },
+        {
+          "meaning_vi": "theo cách thức văn hoá",
+          "example_en": "It is a challenge to translate this text culturally.",
+          "example_vi": "Thật là một thách thức để dịch văn bản này theo cách thức văn hoá."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa và 10 ví dụ phù hợp với từ loại phó từ.",
+      "word": "culturally",
+      "normalized_word": "culturally",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The two countries are culturally very different.",
+      "example_vi_clean": "Hai quốc gia này rất khác biệt về phương diện văn hoá."
+    },
+    {
+      "id": 26782,
+      "quiz_meaning_vi": "món tóc quăn",
+      "meaning_vi_clean": "món tóc quăn; sự uốn quăn; uốn quăn; cuộn lại",
+      "examples_clean": [
+        {
+          "meaning_vi": "món tóc quăn",
+          "example_en": "She has a beautiful curl in her hair.",
+          "example_vi": "Cô ấy có một món tóc quăn rất đẹp."
+        },
+        {
+          "meaning_vi": "món tóc quăn",
+          "example_en": "A single curl fell over her forehead.",
+          "example_vi": "Một món tóc quăn rủ xuống trán cô ấy."
+        },
+        {
+          "meaning_vi": "món tóc quăn",
+          "example_en": "She pinned up every loose curl.",
+          "example_vi": "Cô ấy ghim gọn từng món tóc quăn bị xõa."
+        },
+        {
+          "meaning_vi": "món tóc quăn",
+          "example_en": "The stylist styled each curl carefully.",
+          "example_vi": "Nhà tạo mẫu đã tạo kiểu cho từng món tóc quăn một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "sự uốn quăn",
+          "example_en": "The curl of the ribbon was perfect.",
+          "example_vi": "Sự uốn quăn của dải ruy băng thật hoàn hảo."
+        },
+        {
+          "meaning_vi": "sự uốn quăn",
+          "example_en": "Heat helps in the curl of the hair.",
+          "example_vi": "Nhiệt độ giúp ích cho sự uốn quăn của mái tóc."
+        },
+        {
+          "meaning_vi": "uốn quăn",
+          "example_en": "She likes to curl her hair every morning.",
+          "example_vi": "Cô ấy thích uốn quăn mái tóc của mình mỗi sáng."
+        },
+        {
+          "meaning_vi": "uốn quăn",
+          "example_en": "He used an iron to curl the edges.",
+          "example_vi": "Anh ấy dùng bàn là để uốn quăn các mép giấy."
+        },
+        {
+          "meaning_vi": "cuộn lại",
+          "example_en": "The cat likes to curl up on the sofa.",
+          "example_vi": "Con mèo thích cuộn lại trên ghế sofa."
+        },
+        {
+          "meaning_vi": "cuộn lại",
+          "example_en": "The snake began to curl around the branch.",
+          "example_vi": "Con rắn bắt đầu cuộn lại quanh cành cây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, bổ sung nghĩa và ví dụ.",
+      "word": "curl",
+      "normalized_word": "curl",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a beautiful curl in her hair.",
+      "example_vi_clean": "Cô ấy có một món tóc quăn rất đẹp."
+    },
+    {
+      "id": 26783,
+      "quiz_meaning_vi": "con trỏ",
+      "meaning_vi_clean": "con trỏ; đai gạt",
+      "examples_clean": [
+        {
+          "meaning_vi": "con trỏ",
+          "example_en": "Move the cursor to the end of the line.",
+          "example_vi": "Di chuyển con trỏ đến cuối dòng."
+        },
+        {
+          "meaning_vi": "con trỏ",
+          "example_en": "The cursor is blinking on the screen.",
+          "example_vi": "Con trỏ đang nhấp nháy trên màn hình."
+        },
+        {
+          "meaning_vi": "con trỏ",
+          "example_en": "Click where the cursor is positioned.",
+          "example_vi": "Nhấp chuột vào nơi con trỏ đang đặt."
+        },
+        {
+          "meaning_vi": "con trỏ",
+          "example_en": "I cannot find the cursor on my monitor.",
+          "example_vi": "Tôi không thể tìm thấy con trỏ trên màn hình của mình."
+        },
+        {
+          "meaning_vi": "đai gạt",
+          "example_en": "Adjust the cursor on the slide rule.",
+          "example_vi": "Điều chỉnh đai gạt trên thước tính."
+        },
+        {
+          "meaning_vi": "đai gạt",
+          "example_en": "The cursor helps read the scale accurately.",
+          "example_vi": "Đai gạt giúp đọc thang đo một cách chính xác."
+        },
+        {
+          "meaning_vi": "đai gạt",
+          "example_en": "Slide the cursor to the desired value.",
+          "example_vi": "Trượt đai gạt đến giá trị mong muốn."
+        },
+        {
+          "meaning_vi": "đai gạt",
+          "example_en": "The cursor is made of clear plastic.",
+          "example_vi": "Đai gạt được làm bằng nhựa trong suốt."
+        },
+        {
+          "meaning_vi": "đai gạt",
+          "example_en": "Check if the cursor is aligned correctly.",
+          "example_vi": "Kiểm tra xem đai gạt đã được căn chỉnh đúng chưa."
+        },
+        {
+          "meaning_vi": "đai gạt",
+          "example_en": "The old device uses a manual cursor.",
+          "example_vi": "Thiết bị cũ đó sử dụng một đai gạt thủ công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Cập nhật nghĩa phổ biến nhất là con trỏ máy tính, bổ sung ví dụ.",
+      "word": "cursor",
+      "normalized_word": "cursor",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Move the cursor to the end of the line.",
+      "example_vi_clean": "Di chuyển con trỏ đến cuối dòng."
+    },
+    {
+      "id": 26784,
+      "quiz_meaning_vi": "không gian mạng",
+      "meaning_vi_clean": "không gian mạng",
+      "examples_clean": [
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Many people spend hours in cyberspace.",
+          "example_vi": "Nhiều người dành hàng giờ trong không gian mạng."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Cyberspace has changed how we communicate.",
+          "example_vi": "Không gian mạng đã thay đổi cách chúng ta giao tiếp."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Security in cyberspace is a major concern.",
+          "example_vi": "An ninh trong không gian mạng là một mối quan tâm lớn."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "He is an expert in cyberspace technology.",
+          "example_vi": "Anh ấy là một chuyên gia về công nghệ không gian mạng."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Information travels fast through cyberspace.",
+          "example_vi": "Thông tin truyền đi nhanh chóng qua không gian mạng."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "We need better laws for cyberspace.",
+          "example_vi": "Chúng ta cần những bộ luật tốt hơn cho không gian mạng."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Cyberspace offers endless opportunities for learning.",
+          "example_vi": "Không gian mạng mang đến những cơ hội học tập vô tận."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "The company operates mainly in cyberspace.",
+          "example_vi": "Công ty hoạt động chủ yếu trong không gian mạng."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Protect your identity in cyberspace.",
+          "example_vi": "Hãy bảo vệ danh tính của bạn trong không gian mạng."
+        },
+        {
+          "meaning_vi": "không gian mạng",
+          "example_en": "Cyberspace is a vast digital world.",
+          "example_vi": "Không gian mạng là một thế giới kỹ thuật số rộng lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ 'tự khiển' thành 'không gian mạng' cho phù hợp với thực tế.",
+      "word": "cyberspace",
+      "normalized_word": "cyberspace",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Many people spend hours in cyberspace.",
+      "example_vi_clean": "Nhiều người dành hàng giờ trong không gian mạng."
+    },
+    {
+      "id": 26785,
+      "quiz_meaning_vi": "người đi xe đạp",
+      "meaning_vi_clean": "người đi xe đạp",
+      "examples_clean": [
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "The cyclist wore a bright helmet.",
+          "example_vi": "Người đi xe đạp đội một chiếc mũ bảo hiểm sáng màu."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "Cyclists must follow traffic rules.",
+          "example_vi": "Người đi xe đạp phải tuân thủ luật giao thông."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "The road is dangerous for a cyclist.",
+          "example_vi": "Con đường này nguy hiểm đối với người đi xe đạp."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "A professional cyclist trains every day.",
+          "example_vi": "Một người đi xe đạp chuyên nghiệp tập luyện mỗi ngày."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "The cyclist signaled before turning.",
+          "example_vi": "Người đi xe đạp đã ra hiệu trước khi rẽ."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "Many cyclists prefer riding in the park.",
+          "example_vi": "Nhiều người đi xe đạp thích đạp xe trong công viên."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "The cyclist was exhausted after the race.",
+          "example_vi": "Người đi xe đạp đã kiệt sức sau cuộc đua."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "Drivers should respect every cyclist.",
+          "example_vi": "Người lái xe nên tôn trọng mọi người đi xe đạp."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "The cyclist stopped for a drink of water.",
+          "example_vi": "Người đi xe đạp dừng lại để uống nước."
+        },
+        {
+          "meaning_vi": "người đi xe đạp",
+          "example_en": "She is a dedicated cyclist.",
+          "example_vi": "Cô ấy là một người đi xe đạp tận tâm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "cyclist",
+      "normalized_word": "cyclist",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cyclist wore a bright helmet.",
+      "example_vi_clean": "Người đi xe đạp đội một chiếc mũ bảo hiểm sáng màu."
+    },
+    {
+      "id": 26786,
+      "quiz_meaning_vi": "ngớ ngẩn",
+      "meaning_vi_clean": "ngớ ngẩn; dở người",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngớ ngẩn",
+          "example_en": "Don't ask such a daft question.",
+          "example_vi": "Đừng hỏi một câu hỏi ngớ ngẩn như vậy."
+        },
+        {
+          "meaning_vi": "ngớ ngẩn",
+          "example_en": "It was a daft mistake to make.",
+          "example_vi": "Đó là một sai lầm ngớ ngẩn cần tránh."
+        },
+        {
+          "meaning_vi": "ngớ ngẩn",
+          "example_en": "He felt daft wearing that costume.",
+          "example_vi": "Anh ấy cảm thấy ngớ ngẩn khi mặc bộ trang phục đó."
+        },
+        {
+          "meaning_vi": "ngớ ngẩn",
+          "example_en": "What a daft idea that was!",
+          "example_vi": "Đó quả là một ý tưởng ngớ ngẩn!"
+        },
+        {
+          "meaning_vi": "dở người",
+          "example_en": "He acts a bit daft sometimes.",
+          "example_vi": "Đôi khi anh ấy hành động hơi dở người."
+        },
+        {
+          "meaning_vi": "dở người",
+          "example_en": "She thought his behavior was daft.",
+          "example_vi": "Cô ấy nghĩ hành vi của anh ta thật dở người."
+        },
+        {
+          "meaning_vi": "dở người",
+          "example_en": "Stop being so daft and listen.",
+          "example_vi": "Đừng dở người như thế nữa và hãy lắng nghe đi."
+        },
+        {
+          "meaning_vi": "dở người",
+          "example_en": "They laughed at his daft jokes.",
+          "example_vi": "Họ cười nhạo những trò đùa dở người của anh ta."
+        },
+        {
+          "meaning_vi": "dở người",
+          "example_en": "It is daft to go out in this rain.",
+          "example_vi": "Thật dở người khi đi ra ngoài trong cơn mưa này."
+        },
+        {
+          "meaning_vi": "dở người",
+          "example_en": "He has a daft sense of humor.",
+          "example_vi": "Anh ấy có khiếu hài hước thật dở người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa và 10 ví dụ.",
+      "word": "daft",
+      "normalized_word": "daft",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Don't ask such a daft question.",
+      "example_vi_clean": "Đừng hỏi một câu hỏi ngớ ngẩn như vậy."
+    },
+    {
+      "id": 26787,
+      "quiz_meaning_vi": "nguyền rủa",
+      "meaning_vi_clean": "nguyền rủa; chê trách; chút ít",
+      "examples_clean": [
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "He began to damn his bad luck.",
+          "example_vi": "Anh ấy bắt đầu nguyền rủa vận xui của mình."
+        },
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "She damned the day she met him.",
+          "example_vi": "Cô ấy nguyền rủa cái ngày cô gặp anh ta."
+        },
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "The villain damned the hero.",
+          "example_vi": "Kẻ phản diện nguyền rủa người anh hùng."
+        },
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "He damned the storm for ruining his plans.",
+          "example_vi": "Anh ấy nguyền rủa cơn bão vì đã làm hỏng kế hoạch của mình."
+        },
+        {
+          "meaning_vi": "chê trách",
+          "example_en": "The critics damned the new play.",
+          "example_vi": "Các nhà phê bình chê trách vở kịch mới."
+        },
+        {
+          "meaning_vi": "chê trách",
+          "example_en": "The report damned the company's management.",
+          "example_vi": "Bản báo cáo chê trách sự quản lý của công ty."
+        },
+        {
+          "meaning_vi": "chê trách",
+          "example_en": "His own words damned him.",
+          "example_vi": "Chính những lời nói của anh ta đã chê trách anh ta."
+        },
+        {
+          "meaning_vi": "chút ít",
+          "example_en": "I don't care a damn about it.",
+          "example_vi": "Tôi chẳng quan tâm chút ít nào về điều đó."
+        },
+        {
+          "meaning_vi": "chút ít",
+          "example_en": "It's not worth a damn.",
+          "example_vi": "Nó chẳng đáng giá chút ít nào."
+        },
+        {
+          "meaning_vi": "chút ít",
+          "example_en": "He didn't give a damn what they thought.",
+          "example_vi": "Anh ấy chẳng quan tâm chút ít nào đến những gì họ nghĩ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ/danh từ, bổ sung nghĩa và ví dụ.",
+      "word": "damn",
+      "normalized_word": "damn",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He began to damn his bad luck.",
+      "example_vi_clean": "Anh ấy bắt đầu nguyền rủa vận xui của mình."
+    },
+    {
+      "id": 26788,
+      "quiz_meaning_vi": "cây bồ công anh",
+      "meaning_vi_clean": "cây bồ công anh",
+      "examples_clean": [
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "The lawn is full of yellow dandelions.",
+          "example_vi": "Bãi cỏ đầy những bông hoa bồ công anh vàng."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "She blew the seeds off a dandelion.",
+          "example_vi": "Cô ấy thổi những hạt giống bay khỏi cây bồ công anh."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "Dandelions are often considered weeds.",
+          "example_vi": "Cây bồ công anh thường bị coi là cỏ dại."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "The dandelion has a deep root.",
+          "example_vi": "Cây bồ công anh có bộ rễ sâu."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "Children love picking dandelions.",
+          "example_vi": "Trẻ em thích hái hoa bồ công anh."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "The dandelion flower closes at night.",
+          "example_vi": "Hoa bồ công anh khép lại vào ban đêm."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "He made a wish on a dandelion.",
+          "example_vi": "Anh ấy đã ước một điều khi thổi hoa bồ công anh."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "The dandelion seeds spread in the wind.",
+          "example_vi": "Hạt bồ công anh bay theo gió."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "Some people use dandelion leaves in salads.",
+          "example_vi": "Một số người dùng lá bồ công anh trong món salad."
+        },
+        {
+          "meaning_vi": "cây bồ công anh",
+          "example_en": "The dandelion is a hardy plant.",
+          "example_vi": "Bồ công anh là một loài cây kiên cường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ 'bồ công anh Trung quốc' thành 'cây bồ công anh' cho phổ biến, bổ sung ví dụ.",
+      "word": "dandelion",
+      "normalized_word": "dandelion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The lawn is full of yellow dandelions.",
+      "example_vi_clean": "Bãi cỏ đầy những bông hoa bồ công anh vàng."
+    },
+    {
+      "id": 26789,
+      "quiz_meaning_vi": "người thân yêu",
+      "meaning_vi_clean": "người thân yêu; yêu quý",
+      "examples_clean": [
+        {
+          "meaning_vi": "người thân yêu",
+          "example_en": "She is the darling of the family.",
+          "example_vi": "Cô ấy là người thân yêu của cả gia đình."
+        },
+        {
+          "meaning_vi": "người thân yêu",
+          "example_en": "He always protects his darlings.",
+          "example_vi": "Anh ấy luôn bảo vệ những người thân yêu của mình."
+        },
+        {
+          "meaning_vi": "người thân yêu",
+          "example_en": "She was the darling of the audience.",
+          "example_vi": "Cô ấy là người thân yêu của khán giả."
+        },
+        {
+          "meaning_vi": "người thân yêu",
+          "example_en": "He missed his darlings while away.",
+          "example_vi": "Anh ấy nhớ những người thân yêu của mình khi đi xa."
+        },
+        {
+          "meaning_vi": "yêu quý",
+          "example_en": "She is such a darling girl.",
+          "example_vi": "Cô bé thật là yêu quý."
+        },
+        {
+          "meaning_vi": "yêu quý",
+          "example_en": "Thank you for your darling gift.",
+          "example_vi": "Cảm ơn món quà yêu quý của bạn."
+        },
+        {
+          "meaning_vi": "yêu quý",
+          "example_en": "He gave her a darling smile.",
+          "example_vi": "Anh ấy dành cho cô ấy một nụ cười yêu quý."
+        },
+        {
+          "meaning_vi": "yêu quý",
+          "example_en": "They have a darling little house.",
+          "example_vi": "Họ có một ngôi nhà nhỏ yêu quý."
+        },
+        {
+          "meaning_vi": "yêu quý",
+          "example_en": "What a darling puppy you have!",
+          "example_vi": "Bạn có một chú cún thật yêu quý!"
+        },
+        {
+          "meaning_vi": "yêu quý",
+          "example_en": "She wrote a darling letter to him.",
+          "example_vi": "Cô ấy đã viết một lá thư yêu quý cho anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ và chuẩn hóa nghĩa.",
+      "word": "darling",
+      "normalized_word": "darling",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is the darling of the family.",
+      "example_vi_clean": "Cô ấy là người thân yêu của cả gia đình."
+    },
+    {
+      "id": 26790,
+      "quiz_meaning_vi": "sự lao tới",
+      "meaning_vi_clean": "sự lao tới; chút ít; lao tới",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "He made a dash for the door.",
+          "example_vi": "Anh ấy đã thực hiện một sự lao tới về phía cánh cửa."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "The sudden dash surprised everyone.",
+          "example_vi": "Sự lao tới bất ngờ đó đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "She finished the race with a final dash.",
+          "example_vi": "Cô ấy kết thúc cuộc đua bằng một sự lao tới cuối cùng."
+        },
+        {
+          "meaning_vi": "sự lao tới",
+          "example_en": "The dog's dash caught the ball.",
+          "example_vi": "Sự lao tới của con chó đã bắt được quả bóng."
+        },
+        {
+          "meaning_vi": "chút ít",
+          "example_en": "Add a dash of salt to the soup.",
+          "example_vi": "Thêm một chút ít muối vào món súp."
+        },
+        {
+          "meaning_vi": "chút ít",
+          "example_en": "There is a dash of humor in his speech.",
+          "example_vi": "Có một chút ít sự hài hước trong bài phát biểu của anh ấy."
+        },
+        {
+          "meaning_vi": "chút ít",
+          "example_en": "She added a dash of color to the room.",
+          "example_vi": "Cô ấy thêm một chút ít màu sắc vào căn phòng."
+        },
+        {
+          "meaning_vi": "lao tới",
+          "example_en": "He dashed across the street.",
+          "example_vi": "Anh ấy lao tới băng qua đường."
+        },
+        {
+          "meaning_vi": "lao tới",
+          "example_en": "She dashed to catch the bus.",
+          "example_vi": "Cô ấy lao tới để bắt xe buýt."
+        },
+        {
+          "meaning_vi": "lao tới",
+          "example_en": "The cat dashed under the bed.",
+          "example_vi": "Con mèo lao tới dưới gầm giường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ, bổ sung nghĩa và ví dụ.",
+      "word": "dash",
+      "normalized_word": "dash",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He made a dash for the door.",
+      "example_vi_clean": "Anh ấy đã thực hiện một sự lao tới về phía cánh cửa."
+    }
+  ]
+}

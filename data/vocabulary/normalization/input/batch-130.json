@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-130",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25291,
+      "word": "noon",
+      "normalized_word": "noon",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/nu:n/",
+      "primary_meaning_vi": "trưa",
+      "meaning_vi": "trưa, buổi trưa; đỉnh cao nhất (trong sự nghiệp...)",
+      "example_en": "1885, When night was at its noon I heard a voice chanting the Koran in sweetest accents — Sir Richard Burton, The Book of the Thousand Nights and One Night, Night 17:",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25292,
+      "word": "normal",
+      "normalized_word": "normal",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nɔ:məl/",
+      "primary_meaning_vi": "thường",
+      "meaning_vi": "thường, thông thường, bình thường; tiêu chuẩn; ((toán học)) chuẩn tác; trực giao; tình trạng bình thường, mức bình thường; pháp tuyến; lượng trung bình; thân nhiệt bình thường; dung dịch đương lượng",
+      "example_en": "Heavy workload is the new normal.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Organize the data into third normal form.",
+          "example_vi": null
+        },
+        {
+          "example_en": "John is feeling normal again.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My grandmother attended Mankato State Normal School.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25293,
+      "word": "north",
+      "normalized_word": "north",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/nɔ:θ/",
+      "primary_meaning_vi": "hướng bắc",
+      "meaning_vi": "hướng bắc, phương bắc, phía bắc; miền bắc; gió bấc; bắc, bấc; về hướng bắc, ở phía bắc",
+      "example_en": "Minnesota is in the north of the USA.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Stock prices are heading north.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He lived in north Germany.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The north wind was cold.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25294,
+      "word": "notice",
+      "normalized_word": "notice",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'noutis/",
+      "primary_meaning_vi": "thông tri",
+      "meaning_vi": "thông tri, yết thị, thông cáo; lời báo trước; sự báo trước; thời hạn; đoạn ngắn, bài ngắn (trên báo; để thông báo, để bình phẩm một cuốn sách, một vở kịch); sự chú ý, sự để ý, sự nhận biết; chú ý, để ý, nhận biết; báo trước (đuổi nhà, cho nghỉ việc...; nhận xét về (ai, cái gì); chiếu cố, hạ cố; đối xử lễ độ với",
+      "example_en": "He took no notice of the changes, and went on as though nothing had happened.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I always read the death notices in the paper.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The sidewalk adjacent to the damaged bridge stonework shall be closed until further notice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I can't work here any longer. I'm giving notice.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25295,
+      "word": "noun",
+      "normalized_word": "noun",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/naun/",
+      "primary_meaning_vi": "danh t",
+      "meaning_vi": "danh t",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25296,
+      "word": "novel",
+      "normalized_word": "novel",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nɔvəl/",
+      "primary_meaning_vi": "mới",
+      "meaning_vi": "mới, mới lạ, lạ thường; tiểu thuyết, truyện",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25297,
+      "word": "nowadays",
+      "normalized_word": "nowadays",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nauədeiz/",
+      "primary_meaning_vi": "ngày nay",
+      "meaning_vi": "ngày nay, đời nay, thời buổi này, thời buổi tân tiến này; ngày nay, đời nay, thời buổi này, thời buổi tân tiến này",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25298,
+      "word": "oak",
+      "normalized_word": "oak",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ouk/",
+      "primary_meaning_vi": "cây sồi",
+      "meaning_vi": "cây sồi; lá sồi; màu lá sồi non; gỗ sồi; đồ đạc bằng gỗ sồi; cửa ngoài (của một loạt buồng,  (thường) bằng gỗ sồi ở trường đại học Anh); tàu bè bằng gỗ; cuộc thi ngựa cái ba tuổi ở Ep-xơm; đội tàu và thuỷ thủ của hải quân Anh; cây sồi nơi vua Sác-lơ II ẩn nấp khi bị truy nã ngày 6 9 1651",
+      "example_en": "an oak table, oak beam, etc",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25299,
+      "word": "occupation",
+      "normalized_word": "occupation",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ɔkju'peiʃn/",
+      "primary_meaning_vi": "sự chiếm",
+      "meaning_vi": "sự chiếm, sự giữ, sự chiếm giữ, sự chiếm đóng; sự ở (một ngôi nhà); thời hạn thuê; nghề nghiệp; công việc, việc làm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25300,
+      "word": "offer",
+      "normalized_word": "offer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'ɔfə/",
+      "primary_meaning_vi": "sự đưa tay ra",
+      "meaning_vi": "sự đưa tay ra, sự tỏ ra sẵn sàng cho, sự tỏ ra sẵn sàng làm; sự chào hàng; sự trả giá; lời dạm hỏi, lời đề nghị, lời ướm, lời mời chào; biếu, tặng, dâng, hiến, cúng, tiến; xung phong (nghĩa bóng), tỏ ý muốn, để lộ ý muốn; đưa ra bán, bày ra bán (hàng); giơ ra, chìa ra, đưa ra mời; đưa ra đề nghị; dạm, hỏi, ướm; cúng; xảy ra, xảy đến, xuất hiện; nghênh chiến; chống cự",
+      "example_en": "I decline your offer to contract.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His offer was $3.50 per share.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His first letter was not a real offer, but an attempt to determine interest.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She offered to help with her homework.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

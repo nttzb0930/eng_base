@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-154",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25531,
+      "word": "assignment",
+      "normalized_word": "assignment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'sainmənt/",
+      "primary_meaning_vi": "sự giao việc",
+      "meaning_vi": "sự giao việc, sự phân công; (từ Mỹ,nghĩa Mỹ) việc được giao, việc được phân công; sự chia phần; sự cho là, sự quy cho; sự nhượng lại, sự chuyển nhượng; chứng từ chuyển nhượng",
+      "example_en": "This flow chart represents the assignment of tasks in our committee.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We should not condone the assignment of asylum seekers to that of people smugglers.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The assignment the department gave him proved to be quite challenging.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Unbeknownst to Mr Smith, his new assignment was in fact a demotion.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25532,
+      "word": "assist",
+      "normalized_word": "assist",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'sist/",
+      "primary_meaning_vi": "giúp",
+      "meaning_vi": "giúp, giúp đỡ; dự, có mặt",
+      "example_en": "The foundation gave a much needed assist to the shelter.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He had two assists in the game.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This book will assist you in getting your life in order.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A great part of the nobility assisted to his opinion.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25533,
+      "word": "assistance",
+      "normalized_word": "assistance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'sistəns/",
+      "primary_meaning_vi": "sự giúp đỡ",
+      "meaning_vi": "sự giúp đỡ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25534,
+      "word": "associate",
+      "normalized_word": "associate",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'souʃiit/",
+      "primary_meaning_vi": "kết giao",
+      "meaning_vi": "kết giao, kết hợp liên hợp; liên đới; cùng cộng tác, phụ, phó, trợ; bạn, bạn đồng liêu, người cùng cộng tác; đồng minh; hội viên thông tin, viện sĩ thông tấn (viện hàn lâm khoa học...); vật phụ thuộc (vào vật khác); vật liên kết với vật khác; kết giao, kết hợp, liên hợp, liên kết; cho gia nhập, cho cộng tác; liên tưởng (những ý nghĩ); kết giao, kết bạn với, giao thiệp với; hợp sức; liên hợp lại (vì mục đích chung), liên kết lại",
+      "example_en": "She associates with her coworkers on weekends.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He associated his name with many environmental causes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "particles of gold associated with other substances",
+          "example_vi": null
+        },
+        {
+          "example_en": "The associate editor is someone who has some experience in editing but not sufficient experience to qualify for a senior post.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25535,
+      "word": "assume",
+      "normalized_word": "assume",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'sju:m/",
+      "primary_meaning_vi": "mang",
+      "meaning_vi": "mang, khoác, có, lấy (cái vẻ, tính chất...); làm ra vẻ, giả bộ; cho rằng (là đúng); giả sử (là đúng), thừa nhận; nắm lấy, chiếm lấy; đảm đương, gánh vác, nhận vào mình; áp dụng những biện pháp; chuyển sang thế tấn công",
+      "example_en": "We assume that, as her parents were dentists, she knows quite a bit about dentistry.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Mr. Jones will assume the position of a lifeguard until a proper replacement is found.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He assumed an air of indifference",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25536,
+      "word": "astronomer",
+      "normalized_word": "astronomer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/əs'trɔnəmə/",
+      "primary_meaning_vi": "nhà thiên văn học",
+      "meaning_vi": "nhà thiên văn học",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25537,
+      "word": "athletic",
+      "normalized_word": "athletic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/æθ'letik/",
+      "primary_meaning_vi": "có tính chất lực sĩ",
+      "meaning_vi": "có tính chất lực sĩ, lực lưỡng, khoẻ mạnh; điền kinh; (thuộc) thể thao",
+      "example_en": "Are you a member of the American Athletic Association?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Since you're such an athletic person, you may wish to consider joining.",
+          "example_vi": null
+        },
+        {
+          "example_en": "You have such an athletic build—you must work out regularly.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The center fielder made an athletic play to snatch the ball from over the fence.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25538,
+      "word": "atlantic",
+      "normalized_word": "atlantic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ət'læntik/",
+      "primary_meaning_vi": "núi At-lát (ở Li-bi)",
+      "meaning_vi": "núi At-lát (ở Li-bi); Đại tây dương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25539,
+      "word": "atmosphere",
+      "normalized_word": "atmosphere",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ætməsfiə/",
+      "primary_meaning_vi": "quyển khí",
+      "meaning_vi": "quyển khí; không khí (nghĩa đen) & bóng; Atmôfe (đơn vị)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25540,
+      "word": "atomic",
+      "normalized_word": "atomic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'tɔmik/",
+      "primary_meaning_vi": "nguyên tử",
+      "meaning_vi": "nguyên tử",
+      "example_en": "A stream of atomic hydrogen is emitted.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We built a small atomic bomb in the garage.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The hairs on a bedbug are almost atomic.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A bit is an atomic item of data.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

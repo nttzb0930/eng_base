@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-245",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26441,
+      "word": "authorize",
+      "normalized_word": "authorize",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ɔ:θəraiz/ (authorise) /'ɔ:θəraiz/",
+      "primary_meaning_vi": "cho quyền",
+      "meaning_vi": "cho quyền, uỷ quyền, cho phép; là căn cứ, là cái cớ chính đáng",
+      "example_en": "The General Assembly authorized the Council to take up the matter.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The judge authorized the wiretapping.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26442,
+      "word": "availability",
+      "normalized_word": "availability",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə,veilə'biliti/ (availableness) /ə'veiləblnis/",
+      "primary_meaning_vi": "tính sẵn sàng để dùng",
+      "meaning_vi": "tính sẵn sàng để dùng, tính có thể dùng được; sự có thể kiếm được, sự có thể mua được, sự có thể có được; sự có hiệu lực, sự có giá trị; tính có lợi, tính ích lợi",
+      "example_en": "What is your availability this week?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We have several availabilities.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26443,
+      "word": "await",
+      "normalized_word": "await",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'weit/",
+      "primary_meaning_vi": "đợi",
+      "meaning_vi": "đợi, chờ đợi; để dự trữ cho, dành cho",
+      "example_en": "I await your reply to my letter.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Glorious rewards await the good in heaven; eternal suffering awaits mortal sinners in hell.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26444,
+      "word": "awe",
+      "normalized_word": "awe",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ɔ:/",
+      "primary_meaning_vi": "ván cánh bánh xe nước",
+      "meaning_vi": "ván cánh bánh xe nước; sự sợ hãi, nỗi kinh sợ; làm sợ hãi, làm kinh sợ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26445,
+      "word": "ax",
+      "normalized_word": "ax",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/æks/ (axe) /æks/",
+      "primary_meaning_vi": "cái rìu",
+      "meaning_vi": "cái rìu; giải quyết được một vấn đề khó khăn; bị thải hồi; bị đuổi học (học sinh...); bị (bạn...) bỏ rơi; rút lui khỏi công việc; từ bỏ những việc làm không mang lại kết quả gì; grind; root; liều cho đến cùng; đâm lao theo lao; chặt bằng rìu, đẽo bằng rìu; cắt bớt (khoản chi...)",
+      "example_en": "His girlfriend/boss/schoolmaster gave him the axe.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A financial dealer has an axe in a stock that his buyers don't know about, giving him an advantage in making the most profit.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He got axed in the last round of firings.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I asked her age.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26446,
+      "word": "axe",
+      "normalized_word": "axe",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/æks/ (axe) /æks/",
+      "primary_meaning_vi": "cái rìu",
+      "meaning_vi": "cái rìu; giải quyết được một vấn đề khó khăn; bị thải hồi; bị đuổi học (học sinh...); bị (bạn...) bỏ rơi; rút lui khỏi công việc; từ bỏ những việc làm không mang lại kết quả gì; grind; root; liều cho đến cùng; đâm lao theo lao; chặt bằng rìu, đẽo bằng rìu; cắt bớt (khoản chi...)",
+      "example_en": "His girlfriend/boss/schoolmaster gave him the axe.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A financial dealer has an axe in a stock that his buyers don't know about, giving him an advantage in making the most profit.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He got axed in the last round of firings.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I asked her age.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26447,
+      "word": "axis",
+      "normalized_word": "axis",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æksis/",
+      "primary_meaning_vi": "trục",
+      "meaning_vi": "trục; tia xuyên; trục Béc-lin,  Rô-ma,  Tô-ki-ô (khối liên minh); (thuộc) trục Béc-lin,  Rô-ma,  Tô-ki-ô; hươu sao ((cũng) axis deer)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26448,
+      "word": "backup",
+      "normalized_word": "backup",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "dự phòng",
+      "meaning_vi": "dự phòng; sao lưu (d/đ)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26449,
+      "word": "backward",
+      "normalized_word": "backward",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'bækwəd/",
+      "primary_meaning_vi": "về phía sau",
+      "meaning_vi": "về phía sau, giật lùi; chậm tiến, lạc hậu; muộn, chậm trễ; ngần ngại; về phía sau, lùi; ngược",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26450,
+      "word": "backwards",
+      "normalized_word": "backwards",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'bækwədz/",
+      "primary_meaning_vi": "backward",
+      "meaning_vi": "backward; xuôi ngược, tới lui",
+      "example_en": "The battleship had three backwards guns at the stern, in addition to the primary complement.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The backwards lettering on emergency vehicles makes it possible to read in the rear-view mirror.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Modern medicine regards the use of leeches as a backwards practice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was a very backwards scholar, but he was a marvel on the football field.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

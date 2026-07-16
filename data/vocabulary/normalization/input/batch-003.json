@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-003",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24021,
+      "word": "always",
+      "normalized_word": "always",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ɔ:lwəz/",
+      "primary_meaning_vi": "luôn luôn",
+      "meaning_vi": "luôn luôn, lúc nào cũng, bao giờ cũng, mãi mãi, hoài; đôi khi, đôi lúc, thỉnh thoảng",
+      "example_en": "Airplanes did not always exist as a form of transportation.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "In this street, the shops always close during lunchtime.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I thought I could always go back to work.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24022,
+      "word": "and",
+      "normalized_word": "and",
+      "cefr_level": "A1",
+      "pos": "conjunction",
+      "pos_vi": "liên từ",
+      "phonetic": "/ænd, ənd, ən/",
+      "primary_meaning_vi": "và",
+      "meaning_vi": "và, cùng, với; nếu dường như, tuồng như là; còn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24023,
+      "word": "angry",
+      "normalized_word": "angry",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'æɳgri/",
+      "primary_meaning_vi": "giận",
+      "meaning_vi": "giận, tức giận, cáu; nhức nhối, viêm tấy (vết thương); hung dữ, dữ",
+      "example_en": "An angry mob started looting the warehouse.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The broken glass left two angry cuts across my arm.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Angry clouds raced across the sky.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24024,
+      "word": "animal",
+      "normalized_word": "animal",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/'æniməl/",
+      "primary_meaning_vi": "động vật",
+      "meaning_vi": "động vật, thú vật; người đầy tính thú; động vật, (thuộc) thú vật; xác thịt",
+      "example_en": "A cat is an animal, not a plant. Humans are also animals, under the scientific definition, as we are not plants.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My students are animals.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He's a political animal.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a whole different animal",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24025,
+      "word": "another",
+      "normalized_word": "another",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "đại từ",
+      "phonetic": "/ə'nʌðə/",
+      "primary_meaning_vi": "khác",
+      "meaning_vi": "khác; nữa, thêm... nữa; giống hệt, y như, chẳng khác gì, đúng là; người khác, cái khác; người kia, cái kia; người cùng loại, vật cùng loại; người hệt như, vật hệt như; lẫn nhau",
+      "example_en": "There is one sterling and here is another",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I saw one movie, but I think I will see another.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His interests keep shifting from one thing to another.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24026,
+      "word": "answer",
+      "normalized_word": "answer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'ɑ:nsə/",
+      "primary_meaning_vi": "sự trả lời",
+      "meaning_vi": "sự trả lời; câu trả lời; thư trả lời; lời đối đáp; điều đáp lại, việc làm đáp lại; lời biện bác, lời biện bạch; miếng đánh trả (đấu kiếm); phép giải; lời giải; trả lời, đáp lại; thưa; biện bác; chịu trách nhiệm; đảm bảo, bảo lãnh; xứng với, đúng với, đáp ứng; thành công có kết quả; cãi lại",
+      "example_en": "Her answer to his proposal was a slap in the face.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There is no simple answer to corruption.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He answered the question.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to answer a charge or accusation",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24027,
+      "word": "any",
+      "normalized_word": "any",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "phó từ",
+      "phonetic": "/'eni/",
+      "primary_meaning_vi": "một",
+      "meaning_vi": "một, một (người, vật) nào đó (trong câu hỏi); tuyệt không, không tí nào (ý phủ định); bất cứ (ý khẳng định); một, một người nào đó, một vật nào đó (trong câu hỏi); không chút gì, không đứa nào (ý phủ định); bất cứ vật gì, bất cứ ai (ý khẳng định); một, chút nào, một tí nào (trong câu phủ định, câu hỏi dạng so sánh); hoàn toàn",
+      "example_en": "I will not remain here any longer.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Any may apply.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24028,
+      "word": "anybody",
+      "normalized_word": "anybody",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "đại từ",
+      "phonetic": "/'eni,bɔdi/",
+      "primary_meaning_vi": "một người nào đó",
+      "meaning_vi": "một người nào đó; người nào, ai; bất kỳ ai, bất cứ ai; một người ít nhiều quan trọng",
+      "example_en": "Anybody will do.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Everybody who wants to be anybody will come to Jake's party.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24029,
+      "word": "anyone",
+      "normalized_word": "anyone",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "đại từ",
+      "phonetic": "/'eniwʌn/",
+      "primary_meaning_vi": "người nào",
+      "meaning_vi": "người nào, ai; bất cứ người nào, bất cứ ai",
+      "example_en": "Almost anyone can change a light bulb.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24030,
+      "word": "anything",
+      "normalized_word": "anything",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "danh từ & đại từ",
+      "phonetic": "/'eniθiɳ/",
+      "primary_meaning_vi": "vật gì",
+      "meaning_vi": "vật gì, việc gì (trong câu phủ định và câu hỏi); bất cứ việc gì, bất cứ vật gì (trong câu khẳng định); hết sức, vô cùng, cực kỳ",
+      "example_en": "I would not do it for anything.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She's not anything like as strong as me.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

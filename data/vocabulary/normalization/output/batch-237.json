@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26361,
+      "quiz_meaning_vi": "như một sự lựa chọn",
+      "meaning_vi_clean": "như một sự lựa chọn; hoặc là",
+      "examples_clean": [
+        {
+          "meaning_vi": "như một sự lựa chọn",
+          "example_en": "We could go to the cinema, or alternatively, stay home and watch a movie.",
+          "example_vi": "Chúng ta có thể đi xem phim, hoặc như một sự lựa chọn khác, ở nhà xem phim."
+        },
+        {
+          "meaning_vi": "như một sự lựa chọn",
+          "example_en": "You can pay by cash or, alternatively, use a credit card.",
+          "example_vi": "Bạn có thể trả bằng tiền mặt hoặc, như một sự lựa chọn khác, dùng thẻ tín dụng."
+        },
+        {
+          "meaning_vi": "như một sự lựa chọn",
+          "example_en": "Alternatively, we could meet at the park instead of the cafe.",
+          "example_vi": "Như một sự lựa chọn khác, chúng ta có thể gặp nhau ở công viên thay vì quán cà phê."
+        },
+        {
+          "meaning_vi": "như một sự lựa chọn",
+          "example_en": "She suggested we take the train; alternatively, we could drive.",
+          "example_vi": "Cô ấy gợi ý chúng ta đi tàu; như một sự lựa chọn khác, chúng ta có thể lái xe."
+        },
+        {
+          "meaning_vi": "hoặc là",
+          "example_en": "You can call me, or alternatively, send an email.",
+          "example_vi": "Bạn có thể gọi cho tôi, hoặc là, gửi một email."
+        },
+        {
+          "meaning_vi": "hoặc là",
+          "example_en": "We can walk there, or alternatively, take a taxi.",
+          "example_vi": "Chúng ta có thể đi bộ đến đó, hoặc là, bắt một chiếc taxi."
+        },
+        {
+          "meaning_vi": "hoặc là",
+          "example_en": "The hotel is full, alternatively, we can book a nearby guesthouse.",
+          "example_vi": "Khách sạn đã hết phòng, hoặc là, chúng ta có thể đặt một nhà khách gần đó."
+        },
+        {
+          "meaning_vi": "hoặc là",
+          "example_en": "You can study now, or alternatively, do it tomorrow morning.",
+          "example_vi": "Bạn có thể học bây giờ, hoặc là, làm việc đó vào sáng mai."
+        },
+        {
+          "meaning_vi": "hoặc là",
+          "example_en": "They can join us, or alternatively, meet us later.",
+          "example_vi": "Họ có thể tham gia cùng chúng ta, hoặc là, gặp chúng ta sau."
+        },
+        {
+          "meaning_vi": "hoặc là",
+          "example_en": "We could fly, or alternatively, take the bus.",
+          "example_vi": "Chúng ta có thể đi máy bay, hoặc là, đi xe buýt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa thứ hai và 10 ví dụ minh họa.",
+      "word": "alternatively",
+      "normalized_word": "alternatively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "We could go to the cinema, or alternatively, stay home and watch a movie.",
+      "example_vi_clean": "Chúng ta có thể đi xem phim, hoặc như một sự lựa chọn khác, ở nhà xem phim."
+    },
+    {
+      "id": 26362,
+      "quiz_meaning_vi": "độ cao",
+      "meaning_vi_clean": "độ cao; nơi cao",
+      "examples_clean": [
+        {
+          "meaning_vi": "độ cao",
+          "example_en": "As the altitude increases, the temperature gets lower.",
+          "example_vi": "Khi độ cao tăng lên, nhiệt độ trở nên thấp hơn."
+        },
+        {
+          "meaning_vi": "độ cao",
+          "example_en": "The plane was flying at a high altitude.",
+          "example_vi": "Chiếc máy bay đang bay ở một độ cao lớn."
+        },
+        {
+          "meaning_vi": "độ cao",
+          "example_en": "The pilot checked the altitude before landing.",
+          "example_vi": "Phi công đã kiểm tra độ cao trước khi hạ cánh."
+        },
+        {
+          "meaning_vi": "độ cao",
+          "example_en": "Mountain climbers often struggle with the altitude.",
+          "example_vi": "Những người leo núi thường gặp khó khăn với độ cao."
+        },
+        {
+          "meaning_vi": "nơi cao",
+          "example_en": "They built their cabin in the high altitudes of the mountains.",
+          "example_vi": "Họ đã xây dựng căn nhà gỗ của mình ở những nơi cao trên núi."
+        },
+        {
+          "meaning_vi": "nơi cao",
+          "example_en": "Some plants only grow in the cold altitudes.",
+          "example_vi": "Một số loài cây chỉ phát triển ở những nơi cao lạnh giá."
+        },
+        {
+          "meaning_vi": "nơi cao",
+          "example_en": "The eagle nested in the rocky altitudes.",
+          "example_vi": "Đại bàng làm tổ ở những nơi cao đầy đá."
+        },
+        {
+          "meaning_vi": "nơi cao",
+          "example_en": "He felt dizzy when looking down from the altitude.",
+          "example_vi": "Anh ấy cảm thấy chóng mặt khi nhìn xuống từ nơi cao đó."
+        },
+        {
+          "meaning_vi": "nơi cao",
+          "example_en": "The air is thin in these high altitudes.",
+          "example_vi": "Không khí loãng ở những nơi cao này."
+        },
+        {
+          "meaning_vi": "nơi cao",
+          "example_en": "We enjoyed the view from the mountain altitude.",
+          "example_vi": "Chúng tôi đã tận hưởng tầm nhìn từ nơi cao trên núi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc nghĩa, giữ lại nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "altitude",
+      "normalized_word": "altitude",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "As the altitude increases, the temperature gets lower.",
+      "example_vi_clean": "Khi độ cao tăng lên, nhiệt độ trở nên thấp hơn."
+    },
+    {
+      "id": 26363,
+      "quiz_meaning_vi": "nhôm",
+      "meaning_vi_clean": "nhôm",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The window frames are made of aluminium.",
+          "example_vi": "Khung cửa sổ được làm bằng nhôm."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminium is a lightweight metal used in construction.",
+          "example_vi": "Nhôm là một loại kim loại nhẹ được sử dụng trong xây dựng."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "She wrapped the sandwich in aluminium foil.",
+          "example_vi": "Cô ấy đã gói chiếc bánh sandwich bằng giấy bạc nhôm."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The ladder is made of strong aluminium.",
+          "example_vi": "Chiếc thang được làm bằng nhôm chắc chắn."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Recycling aluminium helps save energy.",
+          "example_vi": "Tái chế nhôm giúp tiết kiệm năng lượng."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The pot is made of high-quality aluminium.",
+          "example_vi": "Chiếc nồi được làm bằng nhôm chất lượng cao."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminium is resistant to corrosion.",
+          "example_vi": "Nhôm có khả năng chống ăn mòn."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "They produce aluminium cans in this factory.",
+          "example_vi": "Họ sản xuất lon nhôm tại nhà máy này."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The bicycle frame is made of aluminium alloy.",
+          "example_vi": "Khung xe đạp được làm bằng hợp kim nhôm."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminium is widely used in the aerospace industry.",
+          "example_vi": "Nhôm được sử dụng rộng rãi trong ngành hàng không vũ trụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "aluminium",
+      "normalized_word": "aluminium",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The window frames are made of aluminium.",
+      "example_vi_clean": "Khung cửa sổ được làm bằng nhôm."
+    },
+    {
+      "id": 26364,
+      "quiz_meaning_vi": "nhôm",
+      "meaning_vi_clean": "nhôm",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminum is commonly used for kitchen utensils.",
+          "example_vi": "Nhôm thường được sử dụng cho các dụng cụ nhà bếp."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The airplane body is built with aluminum.",
+          "example_vi": "Thân máy bay được chế tạo bằng nhôm."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "He bought some aluminum sheets for the project.",
+          "example_vi": "Anh ấy đã mua vài tấm nhôm cho dự án."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminum is a very versatile material.",
+          "example_vi": "Nhôm là một vật liệu rất linh hoạt."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The door handle is made of polished aluminum.",
+          "example_vi": "Tay nắm cửa được làm bằng nhôm đánh bóng."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminum cans are easy to recycle.",
+          "example_vi": "Lon nhôm rất dễ tái chế."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The table legs are made of aluminum.",
+          "example_vi": "Chân bàn được làm bằng nhôm."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "Aluminum is lighter than steel.",
+          "example_vi": "Nhôm nhẹ hơn thép."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "They used aluminum to build the frame.",
+          "example_vi": "Họ đã sử dụng nhôm để xây dựng khung."
+        },
+        {
+          "meaning_vi": "nhôm",
+          "example_en": "The roof is covered with aluminum panels.",
+          "example_vi": "Mái nhà được bao phủ bằng các tấm nhôm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho đồng nhất với từ loại và bổ sung ví dụ.",
+      "word": "aluminum",
+      "normalized_word": "aluminum",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Aluminum is commonly used for kitchen utensils.",
+      "example_vi_clean": "Nhôm thường được sử dụng cho các dụng cụ nhà bếp."
+    },
+    {
+      "id": 26365,
+      "quiz_meaning_vi": "làm kinh ngạc",
+      "meaning_vi_clean": "làm kinh ngạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The magician's tricks never fail to amaze the audience.",
+          "example_vi": "Các thủ thuật của nhà ảo thuật không bao giờ thất bại trong việc làm kinh ngạc khán giả."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "It amazes me how much she has grown in a year.",
+          "example_vi": "Điều đó làm tôi kinh ngạc khi thấy cô ấy đã lớn lên bao nhiêu trong một năm."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The beauty of the landscape will amaze you.",
+          "example_vi": "Vẻ đẹp của phong cảnh sẽ làm bạn kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "His intelligence continues to amaze his teachers.",
+          "example_vi": "Trí thông minh của cậu ấy tiếp tục làm các giáo viên kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The speed of the car amazed everyone watching.",
+          "example_vi": "Tốc độ của chiếc xe đã làm mọi người đang xem kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "She was amazed by the sudden change in his attitude.",
+          "example_vi": "Cô ấy đã bị làm kinh ngạc bởi sự thay đổi đột ngột trong thái độ của anh ấy."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The results of the experiment amazed the scientists.",
+          "example_vi": "Kết quả của thí nghiệm đã làm các nhà khoa học kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "It amazes me that he remembers every detail.",
+          "example_vi": "Điều đó làm tôi kinh ngạc khi anh ấy nhớ từng chi tiết."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The performance was enough to amaze the critics.",
+          "example_vi": "Màn trình diễn đủ để làm các nhà phê bình kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The sheer size of the building amazed the tourists.",
+          "example_vi": "Kích thước khổng lồ của tòa nhà đã làm các du khách kinh ngạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi từ danh từ thành động từ, bổ sung ví dụ.",
+      "word": "amaze",
+      "normalized_word": "amaze",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The magician's tricks never fail to amaze the audience.",
+      "example_vi_clean": "Các thủ thuật của nhà ảo thuật không bao giờ thất bại trong việc làm kinh ngạc khán giả."
+    },
+    {
+      "id": 26366,
+      "quiz_meaning_vi": "sự kinh ngạc",
+      "meaning_vi_clean": "sự kinh ngạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "To my amazement, he won the race.",
+          "example_vi": "Trước sự kinh ngạc của tôi, anh ấy đã thắng cuộc đua."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "She stared at the gift in amazement.",
+          "example_vi": "Cô ấy nhìn món quà trong sự kinh ngạc."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "The crowd watched in amazement as the building collapsed.",
+          "example_vi": "Đám đông nhìn trong sự kinh ngạc khi tòa nhà sụp đổ."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "He expressed his amazement at the beautiful view.",
+          "example_vi": "Anh ấy bày tỏ sự kinh ngạc của mình trước khung cảnh tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "Much to our amazement, the cat could open the door.",
+          "example_vi": "Trước sự kinh ngạc của chúng tôi, con mèo có thể mở cửa."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "She looked at him with pure amazement.",
+          "example_vi": "Cô ấy nhìn anh ấy với sự kinh ngạc thuần túy."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "The news was received with great amazement.",
+          "example_vi": "Tin tức đã được đón nhận với sự kinh ngạc lớn."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "He stood in amazement at the sight of the ocean.",
+          "example_vi": "Anh ấy đứng trong sự kinh ngạc trước cảnh tượng đại dương."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "Her success was a source of amazement to her family.",
+          "example_vi": "Thành công của cô ấy là một nguồn sự kinh ngạc đối với gia đình cô ấy."
+        },
+        {
+          "meaning_vi": "sự kinh ngạc",
+          "example_en": "They watched the show in total amazement.",
+          "example_vi": "Họ đã xem buổi biểu diễn trong sự kinh ngạc hoàn toàn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "amazement",
+      "normalized_word": "amazement",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "To my amazement, he won the race.",
+      "example_vi_clean": "Trước sự kinh ngạc của tôi, anh ấy đã thắng cuộc đua."
+    },
+    {
+      "id": 26367,
+      "quiz_meaning_vi": "đáng kinh ngạc",
+      "meaning_vi_clean": "đáng kinh ngạc; đến không ngờ",
+      "examples_clean": [
+        {
+          "meaning_vi": "đáng kinh ngạc",
+          "example_en": "The team played amazingly well in the final match.",
+          "example_vi": "Đội đã chơi một cách đáng kinh ngạc trong trận chung kết."
+        },
+        {
+          "meaning_vi": "đáng kinh ngạc",
+          "example_en": "She sang amazingly at the concert last night.",
+          "example_vi": "Cô ấy đã hát một cách đáng kinh ngạc tại buổi hòa nhạc tối qua."
+        },
+        {
+          "meaning_vi": "đáng kinh ngạc",
+          "example_en": "The results were amazingly consistent across all tests.",
+          "example_vi": "Các kết quả nhất quán một cách đáng kinh ngạc qua tất cả các bài kiểm tra."
+        },
+        {
+          "meaning_vi": "đáng kinh ngạc",
+          "example_en": "He recovered amazingly fast from his illness.",
+          "example_vi": "Anh ấy đã hồi phục một cách đáng kinh ngạc nhanh chóng sau cơn bệnh."
+        },
+        {
+          "meaning_vi": "đến không ngờ",
+          "example_en": "Amazingly, they arrived on time despite the traffic.",
+          "example_vi": "Đến không ngờ, họ đã đến đúng giờ mặc dù giao thông đông đúc."
+        },
+        {
+          "meaning_vi": "đến không ngờ",
+          "example_en": "Amazingly, the old car still runs perfectly.",
+          "example_vi": "Đến không ngờ, chiếc xe cũ vẫn chạy hoàn hảo."
+        },
+        {
+          "meaning_vi": "đến không ngờ",
+          "example_en": "Amazingly, no one was hurt in the accident.",
+          "example_vi": "Đến không ngờ, không ai bị thương trong vụ tai nạn."
+        },
+        {
+          "meaning_vi": "đến không ngờ",
+          "example_en": "Amazingly, she finished the project in just one day.",
+          "example_vi": "Đến không ngờ, cô ấy đã hoàn thành dự án chỉ trong một ngày."
+        },
+        {
+          "meaning_vi": "đến không ngờ",
+          "example_en": "Amazingly, the weather stayed sunny all week.",
+          "example_vi": "Đến không ngờ, thời tiết vẫn nắng suốt cả tuần."
+        },
+        {
+          "meaning_vi": "đến không ngờ",
+          "example_en": "Amazingly, he found his lost keys in the garden.",
+          "example_vi": "Đến không ngờ, anh ấy đã tìm thấy chìa khóa bị mất trong vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "amazingly",
+      "normalized_word": "amazingly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The team played amazingly well in the final match.",
+      "example_vi_clean": "Đội đã chơi một cách đáng kinh ngạc trong trận chung kết."
+    },
+    {
+      "id": 26368,
+      "quiz_meaning_vi": "đại sứ",
+      "meaning_vi_clean": "đại sứ; người đại diện",
+      "examples_clean": [
+        {
+          "meaning_vi": "đại sứ",
+          "example_en": "The ambassador met with the president to discuss trade.",
+          "example_vi": "Đại sứ đã gặp tổng thống để thảo luận về thương mại."
+        },
+        {
+          "meaning_vi": "đại sứ",
+          "example_en": "She was appointed as the new ambassador to France.",
+          "example_vi": "Cô ấy đã được bổ nhiệm làm đại sứ mới tại Pháp."
+        },
+        {
+          "meaning_vi": "đại sứ",
+          "example_en": "The ambassador hosted a dinner for the visiting diplomats.",
+          "example_vi": "Đại sứ đã tổ chức một bữa tối cho các nhà ngoại giao đến thăm."
+        },
+        {
+          "meaning_vi": "đại sứ",
+          "example_en": "He served as an ambassador for over ten years.",
+          "example_vi": "Ông ấy đã phục vụ với tư cách là đại sứ trong hơn mười năm."
+        },
+        {
+          "meaning_vi": "người đại diện",
+          "example_en": "Athletes are often seen as ambassadors for their countries.",
+          "example_vi": "Các vận động viên thường được xem là những người đại diện cho đất nước của họ."
+        },
+        {
+          "meaning_vi": "người đại diện",
+          "example_en": "She acts as an ambassador for the charity organization.",
+          "example_vi": "Cô ấy đóng vai trò là người đại diện cho tổ chức từ thiện."
+        },
+        {
+          "meaning_vi": "người đại diện",
+          "example_en": "Teachers are ambassadors for the school in the community.",
+          "example_vi": "Giáo viên là những người đại diện cho nhà trường trong cộng đồng."
+        },
+        {
+          "meaning_vi": "người đại diện",
+          "example_en": "He is a great ambassador for the brand.",
+          "example_vi": "Anh ấy là một người đại diện tuyệt vời cho thương hiệu."
+        },
+        {
+          "meaning_vi": "người đại diện",
+          "example_en": "The company chose her as an ambassador for their new campaign.",
+          "example_vi": "Công ty đã chọn cô ấy làm người đại diện cho chiến dịch mới của họ."
+        },
+        {
+          "meaning_vi": "người đại diện",
+          "example_en": "Every employee is an ambassador for our company culture.",
+          "example_vi": "Mỗi nhân viên là một người đại diện cho văn hóa công ty chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung nghĩa thứ hai và 10 ví dụ.",
+      "word": "ambassador",
+      "normalized_word": "ambassador",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ambassador met with the president to discuss trade.",
+      "example_vi_clean": "Đại sứ đã gặp tổng thống để thảo luận về thương mại."
+    },
+    {
+      "id": 26369,
+      "quiz_meaning_vi": "sự tối nghĩa",
+      "meaning_vi_clean": "sự tối nghĩa; sự mơ hồ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tối nghĩa",
+          "example_en": "The ambiguity of the contract led to a legal dispute.",
+          "example_vi": "Sự tối nghĩa của hợp đồng đã dẫn đến một tranh chấp pháp lý."
+        },
+        {
+          "meaning_vi": "sự tối nghĩa",
+          "example_en": "He tried to remove the ambiguity from his instructions.",
+          "example_vi": "Anh ấy đã cố gắng loại bỏ sự tối nghĩa khỏi các hướng dẫn của mình."
+        },
+        {
+          "meaning_vi": "sự tối nghĩa",
+          "example_en": "The ambiguity in the text makes it hard to understand.",
+          "example_vi": "Sự tối nghĩa trong văn bản làm cho nó khó hiểu."
+        },
+        {
+          "meaning_vi": "sự tối nghĩa",
+          "example_en": "There is some ambiguity in the way the law is written.",
+          "example_vi": "Có một chút sự tối nghĩa trong cách luật được viết."
+        },
+        {
+          "meaning_vi": "sự mơ hồ",
+          "example_en": "The ambiguity of his response left us confused.",
+          "example_vi": "Sự mơ hồ trong câu trả lời của anh ấy khiến chúng tôi bối rối."
+        },
+        {
+          "meaning_vi": "sự mơ hồ",
+          "example_en": "She disliked the ambiguity of the situation.",
+          "example_vi": "Cô ấy không thích sự mơ hồ của tình huống này."
+        },
+        {
+          "meaning_vi": "sự mơ hồ",
+          "example_en": "The policy was criticized for its ambiguity.",
+          "example_vi": "Chính sách đã bị chỉ trích vì sự mơ hồ của nó."
+        },
+        {
+          "meaning_vi": "sự mơ hồ",
+          "example_en": "We need to clear up any ambiguity before we proceed.",
+          "example_vi": "Chúng ta cần làm rõ bất kỳ sự mơ hồ nào trước khi tiếp tục."
+        },
+        {
+          "meaning_vi": "sự mơ hồ",
+          "example_en": "The ambiguity of the ending left the audience guessing.",
+          "example_vi": "Sự mơ hồ của cái kết khiến khán giả phải đoán mò."
+        },
+        {
+          "meaning_vi": "sự mơ hồ",
+          "example_en": "He spoke with a certain ambiguity about his future plans.",
+          "example_vi": "Anh ấy đã nói với một sự mơ hồ nhất định về các kế hoạch tương lai của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "ambiguity",
+      "normalized_word": "ambiguity",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ambiguity of the contract led to a legal dispute.",
+      "example_vi_clean": "Sự tối nghĩa của hợp đồng đã dẫn đến một tranh chấp pháp lý."
+    },
+    {
+      "id": 26370,
+      "quiz_meaning_vi": "tối nghĩa",
+      "meaning_vi_clean": "tối nghĩa; mơ hồ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tối nghĩa",
+          "example_en": "The instructions were ambiguous and difficult to follow.",
+          "example_vi": "Các hướng dẫn thì tối nghĩa và khó làm theo."
+        },
+        {
+          "meaning_vi": "tối nghĩa",
+          "example_en": "He gave an ambiguous answer to the question.",
+          "example_vi": "Anh ấy đã đưa ra một câu trả lời tối nghĩa cho câu hỏi."
+        },
+        {
+          "meaning_vi": "tối nghĩa",
+          "example_en": "The meaning of the poem is quite ambiguous.",
+          "example_vi": "Ý nghĩa của bài thơ khá tối nghĩa."
+        },
+        {
+          "meaning_vi": "tối nghĩa",
+          "example_en": "Avoid using ambiguous language in your report.",
+          "example_vi": "Tránh sử dụng ngôn ngữ tối nghĩa trong báo cáo của bạn."
+        },
+        {
+          "meaning_vi": "mơ hồ",
+          "example_en": "She felt an ambiguous sense of relief.",
+          "example_vi": "Cô ấy cảm thấy một cảm giác nhẹ nhõm mơ hồ."
+        },
+        {
+          "meaning_vi": "mơ hồ",
+          "example_en": "The future of the project remains ambiguous.",
+          "example_vi": "Tương lai của dự án vẫn còn mơ hồ."
+        },
+        {
+          "meaning_vi": "mơ hồ",
+          "example_en": "His expression was ambiguous, so I couldn't tell if he was happy.",
+          "example_vi": "Biểu cảm của anh ấy thật mơ hồ, vì vậy tôi không thể biết liệu anh ấy có vui hay không."
+        },
+        {
+          "meaning_vi": "mơ hồ",
+          "example_en": "They had an ambiguous relationship for years.",
+          "example_vi": "Họ đã có một mối quan hệ mơ hồ trong nhiều năm."
+        },
+        {
+          "meaning_vi": "mơ hồ",
+          "example_en": "The rules are too ambiguous to be enforced.",
+          "example_vi": "Các quy tắc quá mơ hồ để có thể thực thi."
+        },
+        {
+          "meaning_vi": "mơ hồ",
+          "example_en": "The results of the survey were ambiguous.",
+          "example_vi": "Kết quả của cuộc khảo sát thật mơ hồ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "ambiguous",
+      "normalized_word": "ambiguous",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The instructions were ambiguous and difficult to follow.",
+      "example_vi_clean": "Các hướng dẫn thì tối nghĩa và khó làm theo."
+    }
+  ]
+}

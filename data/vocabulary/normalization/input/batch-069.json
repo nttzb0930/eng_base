@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-069",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24681,
+      "word": "attack",
+      "normalized_word": "attack",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'tæk/",
+      "primary_meaning_vi": "sự tấn công",
+      "meaning_vi": "sự tấn công, sự công kích; cơn (bệnh); tấn công, công kích; bắt đầu, bắt tay vào, lao vào (công việc); ăn mòn (axit); nhiễm vào (bệnh tật); tấn công, bắt đầu chiến sự",
+      "example_en": "They claimed the censorship of the article was an attack on free speech.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The army timed their attack to coincide with the local celebrations.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Having washed the plates from dinner, I made an attack on the laundry.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I've had an attack of the flu.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24682,
+      "word": "attempt",
+      "normalized_word": "attempt",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'tempt/",
+      "primary_meaning_vi": "sự cố gắng",
+      "meaning_vi": "sự cố gắng, sự thử; sự mưu hại, sự xâm phạm, sự phạm đến; cố gắng; thử, toan; mưu hại; xâm phạm, phạm đến; gắng, chiếm lấy, thử đánh chiếm (một đồn...); gắng, vượt qua (quả núi...)",
+      "example_en": "It was worth the attempt.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "1584 No man can charge us of any attempt against the realm. (Allen's Defence Of English Catholics, cited after Edinburgh review 1883, p. 378)",
+          "example_vi": null
+        },
+        {
+          "example_en": "A group of 80 budding mountaineers attempted Kilimanjaro, but 30 of them didn't make it to the top.",
+          "example_vi": null
+        },
+        {
+          "example_en": "one who attempts the virtue of a woman",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24683,
+      "word": "attention",
+      "normalized_word": "attention",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'tenʃn/",
+      "primary_meaning_vi": "sự chú ý",
+      "meaning_vi": "sự chú ý; sự chăm sóc; sự ân cần, sự chu đáo với ai; tư thế đứng nghiêm; pay",
+      "example_en": "Please direct your attention to the following words.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The company will now come to attention.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24684,
+      "word": "attitude",
+      "normalized_word": "attitude",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ætitju:d/",
+      "primary_meaning_vi": "thái độ",
+      "meaning_vi": "thái độ, quan điểm; tư thế, điệu bộ, dáng dấp",
+      "example_en": "The ballet dancer walked with a graceful attitude.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Don't give me your negative attitude.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The airliner had to land with a nose-up attitude after the incident.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24685,
+      "word": "attractive",
+      "normalized_word": "attractive",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'træktiv/",
+      "primary_meaning_vi": "hút",
+      "meaning_vi": "hút; thu hút, hấp dẫn, lôi cuốn, quyến rũ; có duyên",
+      "example_en": "That's a very attractive offer.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He is an attractive fellow with a trim figure.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24686,
+      "word": "audience",
+      "normalized_word": "audience",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔ:djəns/",
+      "primary_meaning_vi": "những người nghe",
+      "meaning_vi": "những người nghe, thính giả; người xem, khán giả; bạn đọc, độc giả; sự nghe; sự hội kiến, sự yết kiến; sự tiếp kiến",
+      "example_en": "We joined the audience just as the lights went down.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She managed to get an audience with the Pope.",
+          "example_vi": null
+        },
+        {
+          "example_en": "\"Private Eye\" has a small but faithful audience.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The opera singer expanded his audience by singing songs from the shows.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24687,
+      "word": "audio",
+      "normalized_word": "audio",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "thuộc âm thanh",
+      "meaning_vi": "thuộc âm thanh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24688,
+      "word": "author",
+      "normalized_word": "author",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔ:θə/",
+      "primary_meaning_vi": "tác giả",
+      "meaning_vi": "tác giả; người tạo ra, người gây ra; đảng sáng tạo (Chúa)",
+      "example_en": "Have you read any Corinthian authors?",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24689,
+      "word": "automatic",
+      "normalized_word": "automatic",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ɔ:tə'mætik/ (automatical) /,ɔ:tə'mætikəl/",
+      "primary_meaning_vi": "tự động",
+      "meaning_vi": "tự động; vô ý thức, máy móc; máy tự động; thiết bị tự động; súng tự động; súng lục tự động",
+      "example_en": "I never learned to drive a stick. I can only drive an automatic.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The G-men raiding the speakeasy were equipped with .45 automatics, while the local policemen were carrying revolvers and shotguns.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The automatic clothes washer was a great labor-saving device.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Absent-minded doodling is a form of automatic art.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24690,
+      "word": "automatically",
+      "normalized_word": "automatically",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "tự động",
+      "meaning_vi": "tự động",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

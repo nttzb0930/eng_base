@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24651,
+      "quiz_meaning_vi": "lo lắng",
+      "meaning_vi_clean": "lo lắng; khao khát",
+      "examples_clean": [
+        {
+          "meaning_vi": "lo lắng",
+          "example_en": "I could tell she was anxious as she was biting her nails.",
+          "example_vi": "Tôi có thể thấy cô ấy đang lo lắng vì cô ấy cứ cắn móng tay."
+        },
+        {
+          "meaning_vi": "lo lắng",
+          "example_en": "There was an anxious wait before the results were revealed.",
+          "example_vi": "Đã có một khoảng thời gian chờ đợi đầy lo lắng trước khi kết quả được công bố."
+        },
+        {
+          "meaning_vi": "lo lắng",
+          "example_en": "He felt anxious about the upcoming job interview.",
+          "example_vi": "Anh ấy cảm thấy lo lắng về buổi phỏng vấn xin việc sắp tới."
+        },
+        {
+          "meaning_vi": "lo lắng",
+          "example_en": "Parents are often anxious when their children are late home.",
+          "example_vi": "Cha mẹ thường lo lắng khi con cái về nhà muộn."
+        },
+        {
+          "meaning_vi": "khao khát",
+          "example_en": "All the voters were anxious to hear the election result.",
+          "example_vi": "Tất cả cử tri đều khao khát được nghe kết quả bầu cử."
+        },
+        {
+          "meaning_vi": "khao khát",
+          "example_en": "She is anxious to start her new career.",
+          "example_vi": "Cô ấy rất khao khát bắt đầu sự nghiệp mới của mình."
+        },
+        {
+          "meaning_vi": "khao khát",
+          "example_en": "They were anxious to see their family again.",
+          "example_vi": "Họ rất khao khát được gặp lại gia đình mình."
+        },
+        {
+          "meaning_vi": "khao khát",
+          "example_en": "He is anxious to learn more about the project.",
+          "example_vi": "Anh ấy rất khao khát tìm hiểu thêm về dự án."
+        },
+        {
+          "meaning_vi": "lo lắng",
+          "example_en": "The dog looked anxious during the thunderstorm.",
+          "example_vi": "Con chó trông có vẻ lo lắng trong suốt trận giông bão."
+        },
+        {
+          "meaning_vi": "khao khát",
+          "example_en": "We are anxious to finish the work before the deadline.",
+          "example_vi": "Chúng tôi rất khao khát hoàn thành công việc trước thời hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành lo lắng, bổ sung nghĩa khao khát. Cập nhật 10 ví dụ tự nhiên.",
+      "word": "anxious",
+      "normalized_word": "anxious",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I could tell she was anxious as she was biting her nails.",
+      "example_vi_clean": "Tôi có thể thấy cô ấy đang lo lắng vì cô ấy cứ cắn móng tay."
+    },
+    {
+      "id": 24652,
+      "quiz_meaning_vi": "nữa",
+      "meaning_vi_clean": "nữa",
+      "examples_clean": [
+        {
+          "meaning_vi": "nữa",
+          "example_en": "They don't make repairable radios anymore.",
+          "example_vi": "Họ không còn sản xuất những chiếc đài có thể sửa chữa được nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "I don't live in that city anymore.",
+          "example_vi": "Tôi không còn sống ở thành phố đó nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "She doesn't work here anymore.",
+          "example_vi": "Cô ấy không còn làm việc ở đây nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "We don't go to the cinema anymore.",
+          "example_vi": "Chúng tôi không còn đi xem phim nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "He doesn't play football anymore.",
+          "example_vi": "Anh ấy không còn chơi bóng đá nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "They aren't friends anymore.",
+          "example_vi": "Họ không còn là bạn bè nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "I can't wait anymore.",
+          "example_vi": "Tôi không thể chờ đợi thêm nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "It doesn't rain here anymore.",
+          "example_vi": "Ở đây không còn mưa nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "She doesn't speak to him anymore.",
+          "example_vi": "Cô ấy không còn nói chuyện với anh ta nữa."
+        },
+        {
+          "meaning_vi": "nữa",
+          "example_en": "We don't have any milk anymore.",
+          "example_vi": "Chúng tôi không còn chút sữa nào nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa lỗi chính tả 'any more' thành 'anymore' trong ví dụ. Bổ sung đủ 10 ví dụ.",
+      "word": "anymore",
+      "normalized_word": "anymore",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "They don't make repairable radios anymore.",
+      "example_vi_clean": "Họ không còn sản xuất những chiếc đài có thể sửa chữa được nữa."
+    },
+    {
+      "id": 24653,
+      "quiz_meaning_vi": "dù sao chăng nữa",
+      "meaning_vi_clean": "dù sao chăng nữa; thế nào cũng được",
+      "examples_clean": [
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "He didn't enjoy washing his car, but it was so dirty that he did it anyway.",
+          "example_vi": "Anh ấy không thích rửa xe, nhưng nó quá bẩn nên anh ấy vẫn làm dù sao chăng nữa."
+        },
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "I don't think that's true. I haven't found any evidence, anyway.",
+          "example_vi": "Tôi không nghĩ điều đó là đúng. Dù sao chăng nữa, tôi vẫn chưa tìm thấy bằng chứng nào."
+        },
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "It's raining, but I'm going out anyway.",
+          "example_vi": "Trời đang mưa, nhưng dù sao chăng nữa tôi vẫn sẽ ra ngoài."
+        },
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "I'm not sure if I can come, but thanks for the invite anyway.",
+          "example_vi": "Tôi không chắc mình có thể đến không, nhưng dù sao chăng nữa cũng cảm ơn bạn đã mời."
+        },
+        {
+          "meaning_vi": "thế nào cũng được",
+          "example_en": "You can take the bus or the train, it's fine anyway.",
+          "example_vi": "Bạn có thể đi xe buýt hoặc tàu hỏa, thế nào cũng được."
+        },
+        {
+          "meaning_vi": "thế nào cũng được",
+          "example_en": "We can meet at noon or later, it's anyway okay for me.",
+          "example_vi": "Chúng ta có thể gặp nhau vào buổi trưa hoặc muộn hơn, thế nào cũng được đối với tôi."
+        },
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "The plan might fail, but we should try anyway.",
+          "example_vi": "Kế hoạch có thể thất bại, nhưng dù sao chăng nữa chúng ta vẫn nên thử."
+        },
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "I was tired, but I finished the book anyway.",
+          "example_vi": "Tôi đã rất mệt, nhưng dù sao chăng nữa tôi vẫn đọc xong cuốn sách."
+        },
+        {
+          "meaning_vi": "thế nào cũng được",
+          "example_en": "You can sit anywhere, it's anyway fine.",
+          "example_vi": "Bạn có thể ngồi bất cứ đâu, thế nào cũng được."
+        },
+        {
+          "meaning_vi": "dù sao chăng nữa",
+          "example_en": "He didn't want to go, but he went anyway.",
+          "example_vi": "Anh ấy không muốn đi, nhưng dù sao chăng nữa anh ấy vẫn đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "anyway",
+      "normalized_word": "anyway",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He didn't enjoy washing his car, but it was so dirty that he did it anyway.",
+      "example_vi_clean": "Anh ấy không thích rửa xe, nhưng nó quá bẩn nên anh ấy vẫn làm dù sao chăng nữa."
+    },
+    {
+      "id": 24654,
+      "quiz_meaning_vi": "bất kỳ chỗ nào",
+      "meaning_vi_clean": "bất kỳ chỗ nào",
+      "examples_clean": [
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "I don't know where I left my keys. They could be anywhere.",
+          "example_vi": "Tôi không biết mình đã để chìa khóa ở đâu. Chúng có thể ở bất kỳ chỗ nào."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "Anywhere you go in France, there will be bread and wine with dinner.",
+          "example_vi": "Bất kỳ chỗ nào bạn đến ở Pháp, đều sẽ có bánh mì và rượu vang trong bữa tối."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "Anywhere is better than here!",
+          "example_vi": "Bất kỳ chỗ nào cũng tốt hơn ở đây!"
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "You can sit anywhere you like.",
+          "example_vi": "Bạn có thể ngồi bất kỳ chỗ nào bạn thích."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "I can't find my glasses anywhere.",
+          "example_vi": "Tôi không thể tìm thấy kính của mình ở bất kỳ chỗ nào."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "Is there anywhere quiet where we can talk?",
+          "example_vi": "Có bất kỳ chỗ nào yên tĩnh để chúng ta có thể nói chuyện không?"
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "He will go anywhere for a good job.",
+          "example_vi": "Anh ấy sẽ đi bất kỳ chỗ nào để có một công việc tốt."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "I haven't seen him anywhere today.",
+          "example_vi": "Tôi không thấy anh ấy ở bất kỳ chỗ nào hôm nay."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "You can buy this book anywhere online.",
+          "example_vi": "Bạn có thể mua cuốn sách này ở bất kỳ chỗ nào trên mạng."
+        },
+        {
+          "meaning_vi": "bất kỳ chỗ nào",
+          "example_en": "We can travel anywhere during our vacation.",
+          "example_vi": "Chúng ta có thể đi du lịch bất kỳ chỗ nào trong kỳ nghỉ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "anywhere",
+      "normalized_word": "anywhere",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I don't know where I left my keys. They could be anywhere.",
+      "example_vi_clean": "Tôi không biết mình đã để chìa khóa ở đâu. Chúng có thể ở bất kỳ chỗ nào."
+    },
+    {
+      "id": 24655,
+      "quiz_meaning_vi": "riêng ra",
+      "meaning_vi_clean": "riêng ra; tháo rời",
+      "examples_clean": [
+        {
+          "meaning_vi": "riêng ra",
+          "example_en": "Keep the two groups apart.",
+          "example_vi": "Hãy giữ hai nhóm riêng ra."
+        },
+        {
+          "meaning_vi": "riêng ra",
+          "example_en": "They live miles apart.",
+          "example_vi": "Họ sống cách xa nhau hàng dặm."
+        },
+        {
+          "meaning_vi": "riêng ra",
+          "example_en": "The two houses are set apart from the rest of the village.",
+          "example_vi": "Hai ngôi nhà được đặt riêng ra khỏi phần còn lại của ngôi làng."
+        },
+        {
+          "meaning_vi": "riêng ra",
+          "example_en": "Consider the two propositions apart.",
+          "example_vi": "Hãy xem xét hai đề xuất này riêng ra."
+        },
+        {
+          "meaning_vi": "tháo rời",
+          "example_en": "We took the computer apart and put it back together.",
+          "example_vi": "Chúng tôi đã tháo rời máy tính và lắp lại như cũ."
+        },
+        {
+          "meaning_vi": "tháo rời",
+          "example_en": "The engine was taken apart for repairs.",
+          "example_vi": "Động cơ đã được tháo rời để sửa chữa."
+        },
+        {
+          "meaning_vi": "tháo rời",
+          "example_en": "He can take a watch apart in minutes.",
+          "example_vi": "Anh ấy có thể tháo rời một chiếc đồng hồ trong vài phút."
+        },
+        {
+          "meaning_vi": "riêng ra",
+          "example_en": "Stand apart from the others.",
+          "example_vi": "Hãy đứng riêng ra khỏi những người khác."
+        },
+        {
+          "meaning_vi": "tháo rời",
+          "example_en": "The toy fell apart when I touched it.",
+          "example_vi": "Món đồ chơi bị tháo rời khi tôi chạm vào nó."
+        },
+        {
+          "meaning_vi": "riêng ra",
+          "example_en": "Keep your work apart from your personal life.",
+          "example_vi": "Hãy giữ công việc riêng ra khỏi cuộc sống cá nhân của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'riêng ra', bổ sung nghĩa 'tháo rời'. Bổ sung đủ 10 ví dụ.",
+      "word": "apart",
+      "normalized_word": "apart",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Keep the two groups apart.",
+      "example_vi_clean": "Hãy giữ hai nhóm riêng ra."
+    },
+    {
+      "id": 24656,
+      "quiz_meaning_vi": "căn hộ",
+      "meaning_vi_clean": "căn hộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "She lives in a small apartment in the city center.",
+          "example_vi": "Cô ấy sống trong một căn hộ nhỏ ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "They are looking for a new apartment to rent.",
+          "example_vi": "Họ đang tìm một căn hộ mới để thuê."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "His apartment is on the third floor.",
+          "example_vi": "Căn hộ của anh ấy ở tầng ba."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "I share an apartment with two friends.",
+          "example_vi": "Tôi ở chung căn hộ với hai người bạn."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "The apartment has two bedrooms and a kitchen.",
+          "example_vi": "Căn hộ có hai phòng ngủ và một nhà bếp."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "She decorated her apartment with many plants.",
+          "example_vi": "Cô ấy trang trí căn hộ của mình bằng nhiều cây xanh."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "The apartment building is very modern.",
+          "example_vi": "Tòa nhà căn hộ này rất hiện đại."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "We moved into a new apartment last month.",
+          "example_vi": "Chúng tôi đã chuyển đến một căn hộ mới vào tháng trước."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "The apartment is too expensive for me.",
+          "example_vi": "Căn hộ này quá đắt đối với tôi."
+        },
+        {
+          "meaning_vi": "căn hộ",
+          "example_en": "He cleaned his apartment before the guests arrived.",
+          "example_vi": "Anh ấy đã dọn dẹp căn hộ của mình trước khi khách đến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ 'căn phòng' thành 'căn hộ' (nghĩa phổ biến nhất của apartment). Bổ sung 10 ví dụ.",
+      "word": "apartment",
+      "normalized_word": "apartment",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She lives in a small apartment in the city center.",
+      "example_vi_clean": "Cô ấy sống trong một căn hộ nhỏ ở trung tâm thành phố."
+    },
+    {
+      "id": 24657,
+      "quiz_meaning_vi": "xin lỗi",
+      "meaning_vi_clean": "xin lỗi",
+      "examples_clean": [
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "My correspondent apologized for not answering my letter.",
+          "example_vi": "Người thư từ của tôi đã xin lỗi vì không trả lời thư của tôi."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "He apologized for being late.",
+          "example_vi": "Anh ấy đã xin lỗi vì đến muộn."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "She apologized to her teacher for the mistake.",
+          "example_vi": "Cô ấy đã xin lỗi giáo viên của mình vì sai lầm đó."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "You should apologize for what you said.",
+          "example_vi": "Bạn nên xin lỗi vì những gì bạn đã nói."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "They apologized for the inconvenience caused.",
+          "example_vi": "Họ đã xin lỗi vì sự bất tiện gây ra."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "I must apologize for my behavior.",
+          "example_vi": "Tôi phải xin lỗi vì hành vi của mình."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "He apologized to everyone in the room.",
+          "example_vi": "Anh ấy đã xin lỗi mọi người trong phòng."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "She apologized for forgetting the meeting.",
+          "example_vi": "Cô ấy đã xin lỗi vì quên cuộc họp."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "Don't forget to apologize to your brother.",
+          "example_vi": "Đừng quên xin lỗi anh trai của bạn."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "He apologized sincerely for his mistake.",
+          "example_vi": "Anh ấy đã xin lỗi chân thành vì sai lầm của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "apologise",
+      "normalized_word": "apologise",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "My correspondent apologized for not answering my letter.",
+      "example_vi_clean": "Người thư từ của tôi đã xin lỗi vì không trả lời thư của tôi."
+    },
+    {
+      "id": 24658,
+      "quiz_meaning_vi": "xin lỗi",
+      "meaning_vi_clean": "xin lỗi",
+      "examples_clean": [
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "My correspondent apologized for not answering my letter.",
+          "example_vi": "Người thư từ của tôi đã xin lỗi vì không trả lời thư của tôi."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "He apologized for his rude behavior.",
+          "example_vi": "Anh ấy đã xin lỗi vì hành vi thô lỗ của mình."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "She apologized for the delay.",
+          "example_vi": "Cô ấy đã xin lỗi vì sự chậm trễ."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "I apologize for the misunderstanding.",
+          "example_vi": "Tôi xin lỗi vì sự hiểu lầm này."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "They apologized to the customers.",
+          "example_vi": "Họ đã xin lỗi các khách hàng."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "He apologized for breaking the vase.",
+          "example_vi": "Anh ấy đã xin lỗi vì làm vỡ chiếc bình."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "She apologized for not coming to the party.",
+          "example_vi": "Cô ấy đã xin lỗi vì không đến dự tiệc."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "You don't need to apologize for that.",
+          "example_vi": "Bạn không cần phải xin lỗi vì điều đó."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "He apologized to his boss for the error.",
+          "example_vi": "Anh ấy đã xin lỗi sếp của mình vì lỗi sai đó."
+        },
+        {
+          "meaning_vi": "xin lỗi",
+          "example_en": "I apologize for keeping you waiting.",
+          "example_vi": "Tôi xin lỗi vì đã để bạn phải chờ đợi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "apologize",
+      "normalized_word": "apologize",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "My correspondent apologized for not answering my letter.",
+      "example_vi_clean": "Người thư từ của tôi đã xin lỗi vì không trả lời thư của tôi."
+    },
+    {
+      "id": 24659,
+      "quiz_meaning_vi": "hình như",
+      "meaning_vi_clean": "hình như",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently you are quite a good dancer.",
+          "example_vi": "Hình như bạn là một người nhảy khá giỏi."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, it is going to rain today.",
+          "example_vi": "Hình như hôm nay trời sắp mưa."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, they have moved to a new house.",
+          "example_vi": "Hình như họ đã chuyển đến một ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, he didn't know about the meeting.",
+          "example_vi": "Hình như anh ấy không biết về cuộc họp."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, the store is closed on Sundays.",
+          "example_vi": "Hình như cửa hàng đóng cửa vào các ngày Chủ nhật."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, she is very happy with her new job.",
+          "example_vi": "Hình như cô ấy rất vui với công việc mới của mình."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, there was a mistake in the report.",
+          "example_vi": "Hình như đã có một sai sót trong bản báo cáo."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, they are getting married soon.",
+          "example_vi": "Hình như họ sắp kết hôn."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, the train has been delayed.",
+          "example_vi": "Hình như chuyến tàu đã bị hoãn."
+        },
+        {
+          "meaning_vi": "hình như",
+          "example_en": "Apparently, he is the best student in class.",
+          "example_vi": "Hình như anh ấy là học sinh giỏi nhất lớp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'hình như', bổ sung đủ 10 ví dụ.",
+      "word": "apparently",
+      "normalized_word": "apparently",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Apparently you are quite a good dancer.",
+      "example_vi_clean": "Hình như bạn là một người nhảy khá giỏi."
+    },
+    {
+      "id": 24660,
+      "quiz_meaning_vi": "xuất hiện",
+      "meaning_vi_clean": "xuất hiện; có vẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "A great writer appeared at that time.",
+          "example_vi": "Một nhà văn vĩ đại đã xuất hiện vào thời điểm đó."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "The sun appeared behind the clouds.",
+          "example_vi": "Mặt trời xuất hiện sau những đám mây."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "He appeared on stage to give a speech.",
+          "example_vi": "Anh ấy xuất hiện trên sân khấu để phát biểu."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "New problems appeared during the project.",
+          "example_vi": "Những vấn đề mới xuất hiện trong quá trình thực hiện dự án."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "He appeared quite happy with the result.",
+          "example_vi": "Anh ấy có vẻ khá hài lòng với kết quả."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "She appeared tired after the long trip.",
+          "example_vi": "Cô ấy có vẻ mệt mỏi sau chuyến đi dài."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "It appears that we are lost.",
+          "example_vi": "Có vẻ như chúng ta bị lạc rồi."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "The situation appears to be improving.",
+          "example_vi": "Tình hình có vẻ đang cải thiện."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "The stars appeared in the night sky.",
+          "example_vi": "Những ngôi sao xuất hiện trên bầu trời đêm."
+        },
+        {
+          "meaning_vi": "có vẻ",
+          "example_en": "He appeared to be a kind person.",
+          "example_vi": "Anh ấy có vẻ là một người tốt bụng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "appear",
+      "normalized_word": "appear",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "A great writer appeared at that time.",
+      "example_vi_clean": "Một nhà văn vĩ đại đã xuất hiện vào thời điểm đó."
+    }
+  ]
+}

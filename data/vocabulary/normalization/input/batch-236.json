@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-236",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26351,
+      "word": "alcoholism",
+      "normalized_word": "alcoholism",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ælkəhɔlizm/",
+      "primary_meaning_vi": "tác hại của rượu (đối với cơ thể)",
+      "meaning_vi": "tác hại của rượu (đối với cơ thể); chứng nghiện rượu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26352,
+      "word": "alert",
+      "normalized_word": "alert",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'lə:t/",
+      "primary_meaning_vi": "tỉnh táo",
+      "meaning_vi": "tỉnh táo, cảnh giác; linh lợi, nhanh nhẹn, nhanh nhẫu, hoạt bát; sự báo động, sự báo nguy; sự báo động phòng không; thời gian báo động phòng không; sự cảnh giác, sự đề phòng",
+      "example_en": "an airborne alert; ground alert",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26353,
+      "word": "allegation",
+      "normalized_word": "allegation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,æle'geiʃn/",
+      "primary_meaning_vi": "sự viện lý",
+      "meaning_vi": "sự viện lý, sự viện lẽ; luận điệu; lý để vin vào, cớ để vin vào (thường không đúng sự thật)",
+      "example_en": "She put forth several allegations regarding her partner in hopes of discrediting his actions.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26354,
+      "word": "alliance",
+      "normalized_word": "alliance",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'laiəns/",
+      "primary_meaning_vi": "sự liên minh",
+      "meaning_vi": "sự liên minh, khối liên minh khối đồng minh; sự thông gia; quan hệ họ hàng; sự cùng chung một tính chất, sự cùng chung những đức tính",
+      "example_en": "matrimonial alliances; an alliance between church and state, or between two countries",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26355,
+      "word": "ally",
+      "normalized_word": "ally",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'æli/",
+      "primary_meaning_vi": "hòn bi (bằng đá thạch cao)",
+      "meaning_vi": "hòn bi (bằng đá thạch cao); nước đồng minh, nước liên minh; bạn đồng minh; liên kết, liên minh; kết thông gia",
+      "example_en": "the two countries were allies in WWI",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Gruiformes — cranes and allies",
+          "example_vi": null
+        },
+        {
+          "example_en": "The parking lot to my friend's apartment building is in the alley.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He hit one deep into the alley.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26356,
+      "word": "alongside",
+      "normalized_word": "alongside",
+      "cefr_level": "B2",
+      "pos": "preposition",
+      "pos_vi": "phó từ & giới từ",
+      "phonetic": "/ə'lɔɳ'said/",
+      "primary_meaning_vi": "sát cạnh",
+      "meaning_vi": "sát cạnh, kế bên, dọc theo, dọc; sát mạn tàu, dọc theo mạn tàu; song song với, cùng, đồng thời",
+      "example_en": "Ahoy! Bring your boat alongside mine.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The nurse worked alongside the doctor.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26357,
+      "word": "alphabetical",
+      "normalized_word": "alphabetical",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "xem alphabetic",
+      "meaning_vi": "xem alphabetic",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26358,
+      "word": "altar",
+      "normalized_word": "altar",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɔ:ltə/",
+      "primary_meaning_vi": "bàn thờ",
+      "meaning_vi": "bàn thờ, bệ thờ, án thờ; lead",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26359,
+      "word": "alter",
+      "normalized_word": "alter",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ɔ:ltə/",
+      "primary_meaning_vi": "thay đổi",
+      "meaning_vi": "thay đổi, biến đổi, đổi; thay đổi; sửa đổi, sửa lại; thiến, hoạn (súc vật)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26360,
+      "word": "alternate",
+      "normalized_word": "alternate",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/ɔ:l'tə:nit/",
+      "primary_meaning_vi": "xen kẽ",
+      "meaning_vi": "xen kẽ, xen nhau, luân phiên nhau, thay phiên; so le; người thay phiên, người thay thế, người dự khuyết; để xen nhau, xen kẽ, xen nhau; luân phiên, lần lượt kế tiếp nhau",
+      "example_en": "The flood and ebb tides alternate with each other.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The land alternates between rocky hills and sandy plains.",
+          "example_vi": null
+        },
+        {
+          "example_en": "alternate picking is a guitar playing technique",
+          "example_vi": null
+        },
+        {
+          "example_en": "the alternate members 1, 3, 5, 7, etc.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

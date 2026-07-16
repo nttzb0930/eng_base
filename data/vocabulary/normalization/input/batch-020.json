@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-020",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24191,
+      "word": "contest",
+      "normalized_word": "contest",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/kən'test/",
+      "primary_meaning_vi": "cuộc tranh luận",
+      "meaning_vi": "cuộc tranh luận, cuộc tranh cãi; cuộc thi; trận đấu, trận giao tranh; cuộc chiến đấu, cuộc đấu tranh; tranh cãi, tranh luận (một vấn đề gì với ai); đặt vấn đề nghi ngờ không thừa nhận; tranh, tranh giành, tranh đoạt; tranh cử (nghị viện)",
+      "example_en": "The child entered the spelling contest.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I will contest for the open seat on the board.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The rival contested the dictator's re-election because of claims of voting irregularities.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The troops contested every inch of ground.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24192,
+      "word": "conversation",
+      "normalized_word": "conversation",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔnvə'seiʃn/",
+      "primary_meaning_vi": "sự nói chuyện",
+      "meaning_vi": "sự nói chuyện; cuộc nói chuyện, cuộc chuyện trò, cuộc đàm luận; sự giao cấu; sự giao hợp",
+      "example_en": "I had an interesting conversation with Nicolas yesterday about how much he's getting paid.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24193,
+      "word": "cook",
+      "normalized_word": "cook",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kuk/",
+      "primary_meaning_vi": "người nấu ăn",
+      "meaning_vi": "người nấu ăn, người làm bếp, cấp dưỡng, anh nuôi; lắm thầy thối ma; nấu, nấu chín; giả mạo, gian lận, khai gian (những khoản chi tiêu...); ((thường) động tính từ quá khứ) làm kiệt sức, làm mệt phờ (một vận động viên chạy...); nhà nấu bếp, nấu ăn; chín, nấu nhừ; nóng quá bị nổ, nổ vì nóng quá (đun...); bịa ra, tưởng tượng ra, bày đặt ra (câu chuyện...); dự tính, ngấm ngầm, bày (mưu); giết ai, khử ai đi",
+      "example_en": "I'm a terrible cook, so I eat a lot of frozen dinners.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Police found two meth cooks working in the illicit lab.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'm cooking bangers and mash.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He's in the kitchen, cooking.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24194,
+      "word": "cookie",
+      "normalized_word": "cookie",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kuki/",
+      "primary_meaning_vi": "bánh bao",
+      "meaning_vi": "bánh bao; bánh dẹt nhỏ, bánh quy",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24195,
+      "word": "cool",
+      "normalized_word": "cool",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/ku:l/",
+      "primary_meaning_vi": "mát mẻ",
+      "meaning_vi": "mát mẻ, mát; hơi lạnh, nguội; trầm tĩnh, điềm tĩnh, bình tĩnh; lãn đạm, nhạt nhẽo, thờ ơ, không sốt sắng, không nhiệt tình, không mặn mà, không đằm thắm; trơ tráo, mặt dạn mày dày, không biết xấu hổ, không biết ngượng; tròn, gọn (một số tiền); bình tĩnh, không hề nao núng; khí mát; chỗ mát mẻ; làm mát, làm nguội, trở mát, nguội đi; làm mát, làm giảm (nhiệt tình...); nguôi đi; nguôi đi, bình tĩnh lại; nguội lạnh đi, giảm đi (nhiệt tình); heel",
+      "example_en": "in the cool of the morning",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Linen has made cool and breathable clothing for millennia.",
+          "example_vi": null
+        },
+        {
+          "example_en": "If you have a reddish complexion, you should mainly wear cool colors.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His proposals had a cool reception.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24196,
+      "word": "cop",
+      "normalized_word": "cop",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kɔp/",
+      "primary_meaning_vi": "suốt chỉ",
+      "meaning_vi": "suốt chỉ, con chỉ; cảnh sát, mật thám, cớm; sự bắt được, sự tóm được; bắt được, tóm được; bị phạt, bị chỉnh",
+      "example_en": "When caught, he would often cop a vicious blow from his father",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Harold copped to being known as \"Dirty Harry\".",
+          "example_vi": null
+        },
+        {
+          "example_en": "The stature is bowed down in age, the cop is depressed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24197,
+      "word": "copy",
+      "normalized_word": "copy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'kɔpi/",
+      "primary_meaning_vi": "bản sao",
+      "meaning_vi": "bản sao, bản chép lại; sự sao lại, sự chép lại, sự bắt chước, sự phỏng theo, sự mô phỏng; bản, cuộn (sách); số (báo); bản thảo, bản in; đề tài để viết (báo); kiểu, mẫu (một bức hoạ); kiểu (chữ); bản thảo đã sửa và chép lại rõ ràng trước khi đưa in; bản nháp; sao lại, chép lại; bắt chước, phỏng theo, mô phỏng; quay cóp",
+      "example_en": "Please bring me the copies of those reports.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "That handbag is a copy. You can tell because the buckle is different.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Submit all copy to the appropriate editor.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Tim got in trouble for forgetting his maths copy.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24198,
+      "word": "corn",
+      "normalized_word": "corn",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kɔ:n/",
+      "primary_meaning_vi": "chai (chân)",
+      "meaning_vi": "chai (chân); chỗ đau; tread; hạt ngũ cốc; cây ngũ cốc; ngô, bắp ((cũng) Indian corn); ,  (thông tục) rượu ngô; công nhận lời của ai là đúng; nhận lỗi; lợi dụng sự may mắn một cách khôn ngoan; lợi dụng sự thành công một cách khôn ngoan; ,  (từ lóng) khen ai, tán tụng ai, cho ai đi tàu bay; bushel; muối bằng muối hột, muối (thịt...); viên thành hạt nhỏ; nuôi bằng ngô",
+      "example_en": "He paid her the nominal fee of two corns of barley.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to corn gunpowder",
+          "example_vi": null
+        },
+        {
+          "example_en": "Corn the horses.",
+          "example_vi": null
+        },
+        {
+          "example_en": "ale strong enough to corn one",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24199,
+      "word": "corner",
+      "normalized_word": "corner",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'kɔ:nə/",
+      "primary_meaning_vi": "góc (tường",
+      "meaning_vi": "góc (tường, nhà, phố...); nơi kín đáo, xó xỉnh; chỗ ẩn náu, chỗ giấu giếm; nơi, phương; sự đầu cơ, sự lũng đoạn thị trường; quả phạt gốc; đi tắt; drive; ngã té; được ai yêu mến; dành cho ai một cảm tình đặc biệt; có cảm tình với ai, yêu mến ai; ,  (thông tục) chỗ nguy hiểm, chỗ chiến sự xảy ra ác liệt; liếc ai, nhìn trộm ai; nơi nguy hiểm; hoàn cảnh khó khăn; rẽ, ngoặt; vượt qua nơi nguy hiểm, vượt qua giai đoạn khó khăn; đặt thành góc, làm thành góc; để vào góc; dồn vào chân tường, dồn vào thế bí; mua vét (để đầu cơ, lũng đoạn thị trường); vét hàng (để đầu cơ)",
+      "example_en": "The corners of the wire mesh were reinforced with little blobs of solder.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Shining a light in the dark corners of the mind. I took a trip out to his corner of town.",
+          "example_vi": null
+        },
+        {
+          "example_en": "On weekends, Emily liked to find a quiet corner and curl up with a good book.",
+          "example_vi": null
+        },
+        {
+          "example_en": "In the 1970s, private investors tried to get a corner on the silver market, but were ultimately unsuccessful.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24200,
+      "word": "correct",
+      "normalized_word": "correct",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kə'rekt/",
+      "primary_meaning_vi": "đúng",
+      "meaning_vi": "đúng, chính xác; đúng đắn, được hợp, phải, phải lối; làm (nói) đúng lúc; làm (nói) điều phải; sửa, sửa chữa, sửa chữa đúng, hiệu chỉnh; khiển trách, trách mắng; trừng phạt, trừng trị; làm mất tác hại (của cái gì)",
+      "example_en": "The navigator corrected the course of the ship.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It's rude to correct your parents.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

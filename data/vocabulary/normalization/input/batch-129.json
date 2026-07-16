@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-129",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25281,
+      "word": "natural",
+      "normalized_word": "natural",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nætʃrəl/",
+      "primary_meaning_vi": "tự nhiên",
+      "meaning_vi": "tự nhiên, (thuộc) thiên nhiên; thiên tính; bẩm sinh, trời sinh; tự nhiên, đương nhiên, tất nhiên, dĩ nhiên; tự nhiên, không giả tạo, không màu mè; đẻ hoang (con); mọc tự nhiên, dại; tuổi thọ của con người; người bẩm sinh ngớ ngẩn, người bẩm sinh ngu đần; nốt thường; dấu hoàn; người có khiếu tự nhiên (về ngành gì); điều thắng lợi tất nhiên; điều chắc chắn",
+      "example_en": "He's a natural on the saxophone.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The species will be under threat if its natural habitat is destroyed.",
+          "example_vi": null
+        },
+        {
+          "example_en": "In the natural world the fit tend to live on while the weak perish.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Natural food is healthier than processed food.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25282,
+      "word": "nature",
+      "normalized_word": "nature",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'neitʃə/",
+      "primary_meaning_vi": "tự nhiên",
+      "meaning_vi": "tự nhiên, thiên nhiên, tạo hoá; trạng thái tự nhiên; trạng thái nguyên thuỷ; tính, bản chất, bản tính; loại, thứ; sức sống; chức năng tự nhiên; nhu cầu tự nhiên; nhựa (cây); phi thường, siêu phàm, kỳ diệu; debt; debt",
+      "example_en": "Nature never lies (i.e. tells untruths).",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25283,
+      "word": "nearly",
+      "normalized_word": "nearly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'niəli/",
+      "primary_meaning_vi": "gần",
+      "meaning_vi": "gần, sắp, suýt; mặt thiết, sát",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25284,
+      "word": "necessary",
+      "normalized_word": "necessary",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ,  (thường) số nhiều",
+      "phonetic": "/'nesisəri/",
+      "primary_meaning_vi": "cần",
+      "meaning_vi": "cần, cần thiết, thiết yếu; tất nhiên, tất yếu; những thứ cần dùng; (từ lóng) tiền cần thiết, việc cần thiết; nhà xí",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25285,
+      "word": "negative",
+      "normalized_word": "negative",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'negətiv/",
+      "primary_meaning_vi": "không",
+      "meaning_vi": "không; phủ định, phủ nhận, cự tuyệt, phản đối, từ chối; cấm đoán; ,  (toán học); (nhiếp ảnh) âm; lời từ chối, lời cự tuyệt; quyền phủ định, quyền phủ nhận, quyền phủ quyết; tính tiêu cực; số âm; cực âm; bản âm; từ phủ định; phủ nhận; phủ định, cự tuyệt, bác bỏ; phản đối, chống lại (lời phát biểu); làm thành vô hiệu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25286,
+      "word": "nervous",
+      "normalized_word": "nervous",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'nə:vəs/",
+      "primary_meaning_vi": "thần kinh",
+      "meaning_vi": "thần kinh; dễ bị kích thích; nóng nảy, bực dọc; hay hoảng sợ; hay lo lắng, hay bồn chồn; có dũng khí, có khí lực, mạnh mẽ; hùng mạnh; cô đọng, khúc chiết",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25287,
+      "word": "net",
+      "normalized_word": "net",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/net/",
+      "primary_meaning_vi": "lưới",
+      "meaning_vi": "lưới, mạng (tóc, nhện...); cạm, bẫy; vải màn; vải lưới; mạng lưới; bắt bằng lưới, đánh lưới; thả lưới, giăng lưới, bủa lưới ((nghĩa đen) & (nghĩa bóng)), đánh bẫy; che phủ bằng lưới; đan (lưới, võng...); đánh lưới; đan lưới; được lãi thực (là bao nhiêu); thực",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25288,
+      "word": "next",
+      "normalized_word": "next",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/nekst/",
+      "primary_meaning_vi": "sát",
+      "meaning_vi": "sát, gần, ngay bên, bên cạnh; sau, ngay sau, tiếp sau; hầu như không; sau, lần sau, tiếp sau, nữa; ngay; gần bên, bên cạnh, sát nách; người tiếp sau; cái tiếp sau, số (báo) sau...",
+      "example_en": "Next, please, don't hold up the queue!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the next chapter; the next man I see; the next week; the Sunday next before Easter",
+          "example_vi": null
+        },
+        {
+          "example_en": "The man was driven by his love for money and his desire to become the next Bill Gates.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It's the next best thing to ice cream.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25289,
+      "word": "nobody",
+      "normalized_word": "nobody",
+      "cefr_level": "A2",
+      "pos": "pronoun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'noubədi/",
+      "primary_meaning_vi": "không ai",
+      "meaning_vi": "không ai, không người nào; người vô giá trị, người vô dụng, người bất tài, người tầm thường",
+      "example_en": "Whether you're a nobody or a player, everyone in Tinseltown wants to be King of Hollywood! - Conquering Hollywood",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I asked several people, but nobody knew how.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25290,
+      "word": "noisy",
+      "normalized_word": "noisy",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'nɔizi/",
+      "primary_meaning_vi": "ồn ào",
+      "meaning_vi": "ồn ào, om sòm, huyên náo; loè loẹt, sặc sỡ (màu sắc...); đao to búa lớn (văn)",
+      "example_en": "the noisy crowd.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "noisy clothes",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

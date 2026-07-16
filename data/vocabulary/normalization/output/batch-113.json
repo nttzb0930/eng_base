@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25121,
+      "quiz_meaning_vi": "sự kinh khủng",
+      "meaning_vi_clean": "sự kinh khủng; sự ghê rợn; điều kinh khủng; cảnh khủng khiếp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kinh khủng",
+          "example_en": "The horror of the accident was hard to describe.",
+          "example_vi": "Sự kinh khủng của vụ tai nạn thật khó để mô tả."
+        },
+        {
+          "meaning_vi": "sự kinh khủng",
+          "example_en": "She stared at the scene in absolute horror.",
+          "example_vi": "Cô ấy nhìn chằm chằm vào hiện trường với sự kinh khủng tột độ."
+        },
+        {
+          "meaning_vi": "sự kinh khủng",
+          "example_en": "He realized the horror of his mistake too late.",
+          "example_vi": "Anh ấy nhận ra sự kinh khủng của sai lầm mình quá muộn."
+        },
+        {
+          "meaning_vi": "sự kinh khủng",
+          "example_en": "The horror on her face told me everything.",
+          "example_vi": "Sự kinh khủng trên khuôn mặt cô ấy đã nói cho tôi biết tất cả."
+        },
+        {
+          "meaning_vi": "sự ghê rợn",
+          "example_en": "The movie was filled with scenes of pure horror.",
+          "example_vi": "Bộ phim chứa đầy những cảnh tượng ghê rợn thuần túy."
+        },
+        {
+          "meaning_vi": "điều kinh khủng",
+          "example_en": "I saw many horrors during the war.",
+          "example_vi": "Tôi đã chứng kiến nhiều điều kinh khủng trong chiến tranh."
+        },
+        {
+          "meaning_vi": "điều kinh khủng",
+          "example_en": "The news report detailed the horrors of the earthquake.",
+          "example_vi": "Bản tin chi tiết về những điều kinh khủng của trận động đất."
+        },
+        {
+          "meaning_vi": "cảnh khủng khiếp",
+          "example_en": "They escaped the horrors of the burning building.",
+          "example_vi": "Họ đã thoát khỏi cảnh khủng khiếp của tòa nhà đang cháy."
+        },
+        {
+          "meaning_vi": "cảnh khủng khiếp",
+          "example_en": "The book describes the horrors of life in prison.",
+          "example_vi": "Cuốn sách mô tả cảnh khủng khiếp của cuộc sống trong tù."
+        },
+        {
+          "meaning_vi": "cảnh khủng khiếp",
+          "example_en": "The neighbour's kids are a pack of little horrors.",
+          "example_vi": "Mấy đứa trẻ nhà hàng xóm là một lũ quỷ nhỏ kinh khủng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa hiếm/lóng, bổ sung ví dụ minh họa đầy đủ.",
+      "word": "horror",
+      "normalized_word": "horror",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The horror of the accident was hard to describe.",
+      "example_vi_clean": "Sự kinh khủng của vụ tai nạn thật khó để mô tả."
+    },
+    {
+      "id": 25122,
+      "quiz_meaning_vi": "chủ nhà",
+      "meaning_vi_clean": "chủ nhà; chủ tiệc; vật chủ; đám đông",
+      "examples_clean": [
+        {
+          "meaning_vi": "chủ nhà",
+          "example_en": "A good host is always considerate of the guest’s needs.",
+          "example_vi": "Một người chủ nhà tốt luôn quan tâm đến nhu cầu của khách."
+        },
+        {
+          "meaning_vi": "chủ nhà",
+          "example_en": "The host welcomed us warmly into his home.",
+          "example_vi": "Người chủ nhà chào đón chúng tôi nồng nhiệt vào nhà ông ấy."
+        },
+        {
+          "meaning_vi": "chủ nhà",
+          "example_en": "She was a gracious host to all her visitors.",
+          "example_vi": "Cô ấy là một người chủ nhà lịch thiệp với tất cả khách đến thăm."
+        },
+        {
+          "meaning_vi": "chủ nhà",
+          "example_en": "The host showed us where to sit.",
+          "example_vi": "Người chủ nhà chỉ cho chúng tôi chỗ ngồi."
+        },
+        {
+          "meaning_vi": "chủ tiệc",
+          "example_en": "Our company is host of the annual conference this year.",
+          "example_vi": "Công ty chúng tôi là chủ tiệc của hội nghị thường niên năm nay."
+        },
+        {
+          "meaning_vi": "chủ tiệc",
+          "example_en": "The host of the party introduced everyone.",
+          "example_vi": "Người chủ tiệc đã giới thiệu mọi người với nhau."
+        },
+        {
+          "meaning_vi": "vật chủ",
+          "example_en": "Viruses depend on the host that they infect.",
+          "example_vi": "Virus phụ thuộc vào vật chủ mà chúng lây nhiễm."
+        },
+        {
+          "meaning_vi": "vật chủ",
+          "example_en": "The parasite needs a host to survive.",
+          "example_vi": "Ký sinh trùng cần một vật chủ để tồn tại."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "A host of people gathered to watch the parade.",
+          "example_vi": "Một đám đông người đã tụ tập để xem cuộc diễu hành."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "There was a host of reasons for his decision.",
+          "example_vi": "Có một đám đông các lý do cho quyết định của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa chuyên ngành/hiếm, bổ sung ví dụ.",
+      "word": "host",
+      "normalized_word": "host",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A good host is always considerate of the guest’s needs.",
+      "example_vi_clean": "Một người chủ nhà tốt luôn quan tâm đến nhu cầu của khách."
+    },
+    {
+      "id": 25123,
+      "quiz_meaning_vi": "tuy nhiên",
+      "meaning_vi_clean": "tuy nhiên; dù thế nào",
+      "examples_clean": [
+        {
+          "meaning_vi": "tuy nhiên",
+          "example_en": "He told me not to do it; I, however, did it anyway.",
+          "example_vi": "Anh ấy bảo tôi đừng làm; tuy nhiên, tôi vẫn làm."
+        },
+        {
+          "meaning_vi": "tuy nhiên",
+          "example_en": "The plan is good; however, it is very expensive.",
+          "example_vi": "Kế hoạch này tốt; tuy nhiên, nó rất đắt đỏ."
+        },
+        {
+          "meaning_vi": "tuy nhiên",
+          "example_en": "She was tired; however, she finished her work.",
+          "example_vi": "Cô ấy đã mệt; tuy nhiên, cô ấy vẫn hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "tuy nhiên",
+          "example_en": "The weather was bad; however, we went out.",
+          "example_vi": "Thời tiết xấu; tuy nhiên, chúng tôi vẫn đi ra ngoài."
+        },
+        {
+          "meaning_vi": "dù thế nào",
+          "example_en": "However clear you think you've been, questions remain.",
+          "example_vi": "Dù thế nào bạn nghĩ mình đã rõ ràng, nhiều câu hỏi vẫn còn đó."
+        },
+        {
+          "meaning_vi": "dù thế nào",
+          "example_en": "Let me know when you've had your interview, however it goes.",
+          "example_vi": "Hãy cho tôi biết khi bạn phỏng vấn xong, dù thế nào đi nữa."
+        },
+        {
+          "meaning_vi": "dù thế nào",
+          "example_en": "However hard he tried, he could not succeed.",
+          "example_vi": "Dù thế nào anh ấy cố gắng, anh ấy cũng không thể thành công."
+        },
+        {
+          "meaning_vi": "dù thế nào",
+          "example_en": "However much you pay, you cannot buy time.",
+          "example_vi": "Dù thế nào bạn trả bao nhiêu, bạn cũng không thể mua được thời gian."
+        },
+        {
+          "meaning_vi": "dù thế nào",
+          "example_en": "However you look at it, it is a mistake.",
+          "example_vi": "Dù thế nào bạn nhìn nhận nó, đó vẫn là một sai lầm."
+        },
+        {
+          "meaning_vi": "dù thế nào",
+          "example_en": "However they decide, we must be prepared.",
+          "example_vi": "Dù thế nào họ quyết định, chúng ta phải chuẩn bị sẵn sàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa không phù hợp, bổ sung ví dụ.",
+      "word": "however",
+      "normalized_word": "however",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He told me not to do it; I, however, did it anyway.",
+      "example_vi_clean": "Anh ấy bảo tôi đừng làm; tuy nhiên, tôi vẫn làm."
+    },
+    {
+      "id": 25124,
+      "quiz_meaning_vi": "con người",
+      "meaning_vi_clean": "con người; thuộc loài người; có tính người",
+      "examples_clean": [
+        {
+          "meaning_vi": "con người",
+          "example_en": "Humans share common ancestors with other apes.",
+          "example_vi": "Con người có chung tổ tiên với các loài vượn khác."
+        },
+        {
+          "meaning_vi": "con người",
+          "example_en": "It is difficult for a human to run that fast.",
+          "example_vi": "Thật khó cho một con người để chạy nhanh như vậy."
+        },
+        {
+          "meaning_vi": "con người",
+          "example_en": "The study focuses on human behavior.",
+          "example_vi": "Nghiên cứu tập trung vào hành vi của con người."
+        },
+        {
+          "meaning_vi": "con người",
+          "example_en": "We are all human and make mistakes.",
+          "example_vi": "Tất cả chúng ta đều là con người và đều mắc sai lầm."
+        },
+        {
+          "meaning_vi": "thuộc loài người",
+          "example_en": "Human life is precious and should be protected.",
+          "example_vi": "Sự sống thuộc loài người rất quý giá và cần được bảo vệ."
+        },
+        {
+          "meaning_vi": "thuộc loài người",
+          "example_en": "The human brain is incredibly complex.",
+          "example_vi": "Bộ não thuộc loài người vô cùng phức tạp."
+        },
+        {
+          "meaning_vi": "thuộc loài người",
+          "example_en": "Human rights are fundamental to everyone.",
+          "example_vi": "Quyền thuộc loài người là cơ bản đối với mọi người."
+        },
+        {
+          "meaning_vi": "có tính người",
+          "example_en": "To err is human; to forgive, divine.",
+          "example_vi": "Sai lầm là có tính người; tha thứ là thuộc về thần thánh."
+        },
+        {
+          "meaning_vi": "có tính người",
+          "example_en": "He showed a very human side during the crisis.",
+          "example_vi": "Anh ấy đã thể hiện một khía cạnh rất có tính người trong cuộc khủng hoảng."
+        },
+        {
+          "meaning_vi": "có tính người",
+          "example_en": "She has a very human approach to management.",
+          "example_vi": "Cô ấy có cách tiếp cận quản lý rất có tính người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ.",
+      "word": "human",
+      "normalized_word": "human",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Humans share common ancestors with other apes.",
+      "example_vi_clean": "Con người có chung tổ tiên với các loài vượn khác."
+    },
+    {
+      "id": 25125,
+      "quiz_meaning_vi": "trăm",
+      "meaning_vi_clean": "trăm; hàng trăm",
+      "examples_clean": [
+        {
+          "meaning_vi": "trăm",
+          "example_en": "He made a hundred in the historic match.",
+          "example_vi": "Anh ấy đã ghi được một trăm điểm trong trận đấu lịch sử."
+        },
+        {
+          "meaning_vi": "trăm",
+          "example_en": "There are a hundred students in the hall.",
+          "example_vi": "Có một trăm học sinh trong hội trường."
+        },
+        {
+          "meaning_vi": "trăm",
+          "example_en": "I have a hundred things to do today.",
+          "example_vi": "Tôi có một trăm việc phải làm hôm nay."
+        },
+        {
+          "meaning_vi": "trăm",
+          "example_en": "The price is exactly one hundred dollars.",
+          "example_vi": "Giá chính xác là một trăm đô la."
+        },
+        {
+          "meaning_vi": "hàng trăm",
+          "example_en": "Hundreds of people attended the concert.",
+          "example_vi": "Hàng trăm người đã tham dự buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "hàng trăm",
+          "example_en": "I have read hundreds of books on this topic.",
+          "example_vi": "Tôi đã đọc hàng trăm cuốn sách về chủ đề này."
+        },
+        {
+          "meaning_vi": "hàng trăm",
+          "example_en": "Hundreds of birds flew over the lake.",
+          "example_vi": "Hàng trăm con chim bay qua hồ."
+        },
+        {
+          "meaning_vi": "hàng trăm",
+          "example_en": "There are hundreds of stars in the sky.",
+          "example_vi": "Có hàng trăm ngôi sao trên bầu trời."
+        },
+        {
+          "meaning_vi": "hàng trăm",
+          "example_en": "Hundreds of cars were stuck in traffic.",
+          "example_vi": "Hàng trăm chiếc xe bị kẹt trong giao thông."
+        },
+        {
+          "meaning_vi": "hàng trăm",
+          "example_en": "She received hundreds of letters from fans.",
+          "example_vi": "Cô ấy nhận được hàng trăm lá thư từ người hâm mộ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa không phù hợp, bổ sung ví dụ.",
+      "word": "hundred",
+      "normalized_word": "hundred",
+      "cefr_level": "A2",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "He made a hundred in the historic match.",
+      "example_vi_clean": "Anh ấy đã ghi được một trăm điểm trong trận đấu lịch sử."
+    },
+    {
+      "id": 25126,
+      "quiz_meaning_vi": "người đi săn",
+      "meaning_vi_clean": "người đi săn",
+      "examples_clean": [
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter becomes the hunted.",
+          "example_vi": "Người đi săn trở thành kẻ bị săn đuổi."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter tracked the animal through the forest.",
+          "example_vi": "Người đi săn đã lần theo con vật qua khu rừng."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "A skilled hunter knows how to stay quiet.",
+          "example_vi": "Một người đi săn lành nghề biết cách giữ im lặng."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter carried his rifle on his shoulder.",
+          "example_vi": "Người đi săn mang khẩu súng trường trên vai."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter waited patiently for his prey.",
+          "example_vi": "Người đi săn kiên nhẫn chờ đợi con mồi của mình."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "Many ancient tribes relied on the hunter for food.",
+          "example_vi": "Nhiều bộ lạc cổ đại dựa vào người đi săn để có thức ăn."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter set a trap near the river.",
+          "example_vi": "Người đi săn đặt một cái bẫy gần con sông."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "He was a famous hunter in his village.",
+          "example_vi": "Ông ấy là một người đi săn nổi tiếng trong làng."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter wore camouflage clothing.",
+          "example_vi": "Người đi săn mặc quần áo ngụy trang."
+        },
+        {
+          "meaning_vi": "người đi săn",
+          "example_en": "The hunter returned home with nothing.",
+          "example_vi": "Người đi săn trở về nhà mà không có gì."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ.",
+      "word": "hunter",
+      "normalized_word": "hunter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The hunter becomes the hunted.",
+      "example_vi_clean": "Người đi săn trở thành kẻ bị săn đuổi."
+    },
+    {
+      "id": 25127,
+      "quiz_meaning_vi": "giấy tờ tùy thân",
+      "meaning_vi_clean": "giấy tờ tùy thân",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "You need to show your ID to enter the building.",
+          "example_vi": "Bạn cần xuất trình giấy tờ tùy thân để vào tòa nhà."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "Please have your ID ready for inspection.",
+          "example_vi": "Vui lòng chuẩn bị sẵn giấy tờ tùy thân để kiểm tra."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "The guard asked for my ID at the gate.",
+          "example_vi": "Người bảo vệ yêu cầu giấy tờ tùy thân của tôi ở cổng."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "I forgot my ID at home today.",
+          "example_vi": "Tôi đã quên giấy tờ tùy thân ở nhà hôm nay."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "She lost her ID while traveling.",
+          "example_vi": "Cô ấy đã làm mất giấy tờ tùy thân khi đang đi du lịch."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "Do you have any form of ID?",
+          "example_vi": "Bạn có loại giấy tờ tùy thân nào không?"
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "The police checked his ID.",
+          "example_vi": "Cảnh sát đã kiểm tra giấy tờ tùy thân của anh ấy."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "You must carry your ID at all times.",
+          "example_vi": "Bạn phải mang theo giấy tờ tùy thân mọi lúc."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "The clerk asked for ID to verify my age.",
+          "example_vi": "Nhân viên yêu cầu giấy tờ tùy thân để xác minh tuổi của tôi."
+        },
+        {
+          "meaning_vi": "giấy tờ tùy thân",
+          "example_en": "He showed his ID to the receptionist.",
+          "example_vi": "Anh ấy đã đưa giấy tờ tùy thân cho lễ tân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'ít' (sai) thành 'giấy tờ tùy thân' (nghĩa phổ biến nhất của từ viết tắt ID), bổ sung ví dụ.",
+      "word": "id",
+      "normalized_word": "id",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You need to show your ID to enter the building.",
+      "example_vi_clean": "Bạn cần xuất trình giấy tờ tùy thân để vào tòa nhà."
+    },
+    {
+      "id": 25128,
+      "quiz_meaning_vi": "đau yếu",
+      "meaning_vi_clean": "đau yếu; xấu; điều không may",
+      "examples_clean": [
+        {
+          "meaning_vi": "đau yếu",
+          "example_en": "He has been ill for several weeks.",
+          "example_vi": "Anh ấy đã bị đau yếu trong vài tuần."
+        },
+        {
+          "meaning_vi": "đau yếu",
+          "example_en": "She felt too ill to go to work.",
+          "example_vi": "Cô ấy cảm thấy quá đau yếu để đi làm."
+        },
+        {
+          "meaning_vi": "đau yếu",
+          "example_en": "Many people are ill during the winter.",
+          "example_vi": "Nhiều người bị đau yếu trong mùa đông."
+        },
+        {
+          "meaning_vi": "đau yếu",
+          "example_en": "He looked pale and ill.",
+          "example_vi": "Anh ấy trông nhợt nhạt và đau yếu."
+        },
+        {
+          "meaning_vi": "xấu",
+          "example_en": "He suffered from ill treatment at school.",
+          "example_vi": "Anh ấy đã phải chịu sự đối xử xấu ở trường."
+        },
+        {
+          "meaning_vi": "xấu",
+          "example_en": "It is an ill wind that blows nobody any good.",
+          "example_vi": "Đó là một cơn gió xấu không mang lại lợi ích cho ai."
+        },
+        {
+          "meaning_vi": "điều không may",
+          "example_en": "Music won't solve all the world's ills.",
+          "example_vi": "Âm nhạc sẽ không giải quyết được tất cả những điều không may của thế giới."
+        },
+        {
+          "meaning_vi": "điều không may",
+          "example_en": "I wouldn't want you to do me ill.",
+          "example_vi": "Tôi không muốn bạn gây ra điều không may cho tôi."
+        },
+        {
+          "meaning_vi": "điều không may",
+          "example_en": "He suffered from many social ills.",
+          "example_vi": "Anh ấy đã phải chịu đựng nhiều điều không may trong xã hội."
+        },
+        {
+          "meaning_vi": "điều không may",
+          "example_en": "We must address the ills of our society.",
+          "example_vi": "Chúng ta phải giải quyết những điều không may của xã hội chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa không phù hợp, bổ sung ví dụ.",
+      "word": "ill",
+      "normalized_word": "ill",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He has been ill for several weeks.",
+      "example_vi_clean": "Anh ấy đã bị đau yếu trong vài tuần."
+    },
+    {
+      "id": 25129,
+      "quiz_meaning_vi": "không hợp pháp",
+      "meaning_vi_clean": "không hợp pháp",
+      "examples_clean": [
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "Nearly 40 million people live in areas with illegal air pollution.",
+          "example_vi": "Gần 40 triệu người sống ở những khu vực có ô nhiễm không khí không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "Moving a pawn backward is an illegal move in chess.",
+          "example_vi": "Di chuyển quân tốt lùi lại là một nước đi không hợp pháp trong cờ vua."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "It is illegal to drive without a license.",
+          "example_vi": "Lái xe mà không có bằng là không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "They were involved in illegal activities.",
+          "example_vi": "Họ đã tham gia vào các hoạt động không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "The company was fined for illegal dumping.",
+          "example_vi": "Công ty đã bị phạt vì hành vi đổ rác không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "He was arrested for illegal possession of weapons.",
+          "example_vi": "Anh ấy đã bị bắt vì tàng trữ vũ khí không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "The government is trying to stop illegal immigration.",
+          "example_vi": "Chính phủ đang cố gắng ngăn chặn nhập cư không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "Selling drugs is an illegal act.",
+          "example_vi": "Bán ma túy là một hành vi không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "The contract was declared illegal by the court.",
+          "example_vi": "Hợp đồng đã bị tòa án tuyên bố là không hợp pháp."
+        },
+        {
+          "meaning_vi": "không hợp pháp",
+          "example_en": "They are fighting against illegal logging.",
+          "example_vi": "Họ đang đấu tranh chống lại việc khai thác gỗ không hợp pháp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ.",
+      "word": "illegal",
+      "normalized_word": "illegal",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Nearly 40 million people live in areas with illegal air pollution.",
+      "example_vi_clean": "Gần 40 triệu người sống ở những khu vực có ô nhiễm không khí không hợp pháp."
+    },
+    {
+      "id": 25130,
+      "quiz_meaning_vi": "hình ảnh",
+      "meaning_vi_clean": "hình ảnh; tượng; ý niệm",
+      "examples_clean": [
+        {
+          "meaning_vi": "hình ảnh",
+          "example_en": "The Bible forbids the worship of graven images.",
+          "example_vi": "Kinh Thánh cấm việc thờ cúng các hình ảnh chạm khắc."
+        },
+        {
+          "meaning_vi": "hình ảnh",
+          "example_en": "The mirror reflected a clear image of her face.",
+          "example_vi": "Chiếc gương phản chiếu một hình ảnh rõ nét khuôn mặt cô ấy."
+        },
+        {
+          "meaning_vi": "hình ảnh",
+          "example_en": "He has a very positive public image.",
+          "example_vi": "Anh ấy có một hình ảnh công chúng rất tích cực."
+        },
+        {
+          "meaning_vi": "hình ảnh",
+          "example_en": "The image on the screen was blurry.",
+          "example_vi": "Hình ảnh trên màn hình bị mờ."
+        },
+        {
+          "meaning_vi": "tượng",
+          "example_en": "They placed a stone image in the garden.",
+          "example_vi": "Họ đặt một bức tượng đá trong vườn."
+        },
+        {
+          "meaning_vi": "tượng",
+          "example_en": "The temple contained many ancient images.",
+          "example_vi": "Ngôi đền chứa nhiều bức tượng cổ."
+        },
+        {
+          "meaning_vi": "ý niệm",
+          "example_en": "He had a clear image of what he wanted to achieve.",
+          "example_vi": "Anh ấy có một ý niệm rõ ràng về những gì mình muốn đạt được."
+        },
+        {
+          "meaning_vi": "ý niệm",
+          "example_en": "The book gives a vivid image of life in the past.",
+          "example_vi": "Cuốn sách đưa ra một ý niệm sống động về cuộc sống trong quá khứ."
+        },
+        {
+          "meaning_vi": "ý niệm",
+          "example_en": "She formed an image of him in her mind.",
+          "example_vi": "Cô ấy đã hình thành một ý niệm về anh ấy trong tâm trí mình."
+        },
+        {
+          "meaning_vi": "ý niệm",
+          "example_en": "The poem creates a beautiful image of nature.",
+          "example_vi": "Bài thơ tạo ra một ý niệm đẹp về thiên nhiên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa chuyên ngành/động từ không phù hợp, bổ sung ví dụ.",
+      "word": "image",
+      "normalized_word": "image",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The Bible forbids the worship of graven images.",
+      "example_vi_clean": "Kinh Thánh cấm việc thờ cúng các hình ảnh chạm khắc."
+    }
+  ]
+}

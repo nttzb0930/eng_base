@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-061",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24601,
+      "word": "ability",
+      "normalized_word": "ability",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "(pháp lý)",
+      "phonetic": "/ə'biliti/",
+      "primary_meaning_vi": "năng lực",
+      "meaning_vi": "năng lực, khả năng (làm việc gì); tài năng, tài cán; thẩm quyền; khả năng thanh toán được; vốn sẵn có, nguồn vốn (để đáp ứng khi cần thiết)",
+      "example_en": "This phone has the ability to have its software upgraded wirelessly.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She has an uncanny ability to defuse conflict.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24602,
+      "word": "abroad",
+      "normalized_word": "abroad",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/ə'brɔ:d/",
+      "primary_meaning_vi": "ở nước ngoài",
+      "meaning_vi": "ở nước ngoài, ra nước ngoài; khắp nơi, đang truyền đi khắp nơi; ngoài trời (đối với trong nhà); nghĩ sai, nhầm, tưởng lầm; từ nước ngoài",
+      "example_en": "A tree spreads its branches abroad.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24603,
+      "word": "accept",
+      "normalized_word": "accept",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ək'sept/",
+      "primary_meaning_vi": "nhận",
+      "meaning_vi": "nhận, chấp nhận, chấp thuận; thừa nhận; đảm nhận (công việc...); chịu trách nhiệm về; nhận thanh toán (hoá đơn, hối phiếu...)",
+      "example_en": "The Boy Scouts were going to accept him as a member.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I accept the notion that Christ lived.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I accept your proposal, amendment, or excuse.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I accept my punishment.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24604,
+      "word": "acceptable",
+      "normalized_word": "acceptable",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ək'septəbl/",
+      "primary_meaning_vi": "có thể nhận",
+      "meaning_vi": "có thể nhận, có thể chấp nhận; có thể thừa nhận; thoả đáng, làm hài lòng; được hoan nghênh, được tán thưởng",
+      "example_en": "We need to find an acceptable present for Jeff.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The designs were acceptable, but they were nothing special either.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24605,
+      "word": "accident",
+      "normalized_word": "accident",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æksidənt/",
+      "primary_meaning_vi": "sự rủi ro",
+      "meaning_vi": "sự rủi ro, tai nạn, tai biến; sự tình cờ, sự ngẫu nhiên; cái phụ, cái không chủ yếu; sự gồ ghề, sự khấp khểnh; dấu thăng giáng bất thường",
+      "example_en": "to die by an accident",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My insurance went up after the second accident in three months.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Beauty is an accident.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24606,
+      "word": "account",
+      "normalized_word": "account",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'kaunt/",
+      "primary_meaning_vi": "sự tính toán",
+      "meaning_vi": "sự tính toán; sự kế toán; sổ sách, kế toán; bản kê khai; bản thanh toán tiền, bản ghi những món tiền phải trả; sự thanh toán; sự trả dần, sự trả làm nhiều kỳ; tài khoản, số tiền gửi; lợi, lợi ích; lý do, nguyên nhân, sự giải thích; báo cáo, bài tường thuật; sự tường thuật, sự miêu tả; sự đánh giá, sự chú ý, sự lưu tâm; tầm quan trọng, giá trị; theo sự đánh giá chung, theo ý kiến chung; balance; according to all accounts; go; bắt phải báo cáo sổ sách, bắt phải báo cáo mọi khoản thu chi; bắt phải giải thích (về cái gì...); ; (thông tục) nôn mửa; giả mạo sổ sách (kế toán); bịa ra một khoản, kê khai giả mạo một khoản; đòi báo cáo sổ sách; bắt phải giải thích (việc gì...); gây được tiếng tốt cho mình; (thể dục,thể thao) thắng lợi, đạt được kết quả tốt; ngày tận thế; thoát nợ đời; chết; đánh giá cao, coi trọng; mong đợi ở cái gì; hy vọng ở cái gì; không quan tâm đến, không để ý đến, không đếm xỉa đến; vì mình, vì lợi ích của mình, vì mục đích của mình; tự mình phải gánh lấy mọi sự xảy ra; vì ai; thanh toán với ai; trả thù ai, thanh toán mối thù với ai; coi, coi như, coi là, cho là; giải thích (cho); giải thích (việc sử dụng, thanh toán, tính toán tiền nong); bắn được, hạ được",
+      "example_en": "to keep one's account at the bank.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "No satisfactory account has been given of these phenomena.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don't trouble yourself on my account.",
+          "example_vi": null
+        },
+        {
+          "example_en": "An account of a battle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24607,
+      "word": "achieve",
+      "normalized_word": "achieve",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'tʃi:v/",
+      "primary_meaning_vi": "đạt được",
+      "meaning_vi": "đạt được, giành được; hoàn thành, thực hiện",
+      "example_en": "Show all the spoils by valiant kings achieved.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24608,
+      "word": "across",
+      "normalized_word": "across",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "giới từ",
+      "phonetic": "/ə'krɔs/",
+      "primary_meaning_vi": "qua",
+      "meaning_vi": "qua, ngang, ngang qua; bắt chéo, chéo nhau, chéo chữ thập; qua, ngang, ngang qua; ở bên kia, ở phía bên kia; come; cãi nhau với ai; trun; trả thù ai; đánh lừa ai; trừng phạt ai, sửa cho ai một trận",
+      "example_en": "I solved all of the acrosses, but then got stuck on 3 down.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "she helped the blind man across; the river is half a mile across",
+          "example_vi": null
+        },
+        {
+          "example_en": "If we sail off at noon, when will we be across?",
+          "example_vi": null
+        },
+        {
+          "example_en": "He leaned across for a book.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24609,
+      "word": "act",
+      "normalized_word": "act",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ækt/",
+      "primary_meaning_vi": "hành động",
+      "meaning_vi": "hành động, việc làm, cử chỉ, hành vi; đạo luật; chứng thư; hồi, màn (trong vở kịch); tiết mục (xiếc, ca múa nhạc...); luận án, khoá luận; sắp sửa (làm gì); khi đang hành động, quả tang; khoe mẽ, nói khoe; đóng vai (kịch, chèo, tuồng, phim); giả vờ, giả đò \"đóng kịch\"; hành động; cư xử, đối xử; giữ nhiệm vụ, làm công tác, làm; tác động, có tác dụng, có ảnh hưởng; đóng kịch, diễn kịch, thủ vai; hành động theo, làm theo; thực hành cho xứng đáng với, hành động cho xứng đáng với",
+      "example_en": "an act of goodwill",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was caught in the act of stealing.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The pivotal moment in the play was in the first scene of the second act.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Which act did you prefer? The soloist or the band?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24610,
+      "word": "actually",
+      "normalized_word": "actually",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'æktjuəli/",
+      "primary_meaning_vi": "thực sự",
+      "meaning_vi": "thực sự, quả thật, đúng, quả là; hiện tại, hiện thời, hiện nay; ngay cả đến và hơn thế",
+      "example_en": "Actually, I had nothing to do with that incident.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

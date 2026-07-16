@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24181,
+      "quiz_meaning_vi": "cà phê",
+      "meaning_vi_clean": "cà phê; bột cà phê; màu cà phê",
+      "examples_clean": [
+        {
+          "meaning_vi": "cà phê",
+          "example_en": "Would you like a cup of coffee?",
+          "example_vi": "Bạn có muốn một tách cà phê không?"
+        },
+        {
+          "meaning_vi": "cà phê",
+          "example_en": "He did not stay for coffee.",
+          "example_vi": "Anh ấy đã không ở lại để uống cà phê."
+        },
+        {
+          "meaning_vi": "cà phê",
+          "example_en": "They met at a local coffee shop.",
+          "example_vi": "Họ đã gặp nhau tại một quán cà phê địa phương."
+        },
+        {
+          "meaning_vi": "cà phê",
+          "example_en": "I usually drink black coffee in the morning.",
+          "example_vi": "Tôi thường uống cà phê đen vào buổi sáng."
+        },
+        {
+          "meaning_vi": "bột cà phê",
+          "example_en": "She bought a bag of ground coffee.",
+          "example_vi": "Cô ấy đã mua một túi bột cà phê."
+        },
+        {
+          "meaning_vi": "bột cà phê",
+          "example_en": "The smell of fresh coffee filled the kitchen.",
+          "example_vi": "Mùi bột cà phê tươi tràn ngập căn bếp."
+        },
+        {
+          "meaning_vi": "bột cà phê",
+          "example_en": "Add two spoons of coffee to the filter.",
+          "example_vi": "Thêm hai thìa bột cà phê vào phin."
+        },
+        {
+          "meaning_vi": "màu cà phê",
+          "example_en": "She wore a dress in a soft coffee color.",
+          "example_vi": "Cô ấy mặc một chiếc váy màu cà phê nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "màu cà phê",
+          "example_en": "The walls were painted a light coffee shade.",
+          "example_vi": "Những bức tường được sơn màu cà phê nhạt."
+        },
+        {
+          "meaning_vi": "màu cà phê",
+          "example_en": "He chose a coffee colored tie for the meeting.",
+          "example_vi": "Anh ấy đã chọn một chiếc cà vạt màu cà phê cho cuộc họp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa hiếm và bổ sung ví dụ theo quy tắc.",
+      "word": "coffee",
+      "normalized_word": "coffee",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Would you like a cup of coffee?",
+      "example_vi_clean": "Bạn có muốn một tách cà phê không?"
+    },
+    {
+      "id": 24182,
+      "quiz_meaning_vi": "lạnh",
+      "meaning_vi_clean": "lạnh; lạnh lùng; sự cảm lạnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "lạnh",
+          "example_en": "It is very cold outside today.",
+          "example_vi": "Hôm nay trời rất lạnh."
+        },
+        {
+          "meaning_vi": "lạnh",
+          "example_en": "A cold wind whistled through the trees.",
+          "example_vi": "Một cơn gió lạnh rít qua những hàng cây."
+        },
+        {
+          "meaning_vi": "lạnh",
+          "example_en": "The water in the pool was too cold.",
+          "example_vi": "Nước trong hồ bơi quá lạnh."
+        },
+        {
+          "meaning_vi": "lạnh",
+          "example_en": "She was so cold she was shivering.",
+          "example_vi": "Cô ấy lạnh đến mức run rẩy."
+        },
+        {
+          "meaning_vi": "lạnh lùng",
+          "example_en": "He gave me a cold look.",
+          "example_vi": "Anh ấy nhìn tôi một cách lạnh lùng."
+        },
+        {
+          "meaning_vi": "lạnh lùng",
+          "example_en": "She shot me a cold glance before turning her back.",
+          "example_vi": "Cô ấy liếc nhìn tôi lạnh lùng trước khi quay lưng đi."
+        },
+        {
+          "meaning_vi": "lạnh lùng",
+          "example_en": "His response was cold and distant.",
+          "example_vi": "Phản ứng của anh ấy thật lạnh lùng và xa cách."
+        },
+        {
+          "meaning_vi": "sự cảm lạnh",
+          "example_en": "I think I have caught a cold.",
+          "example_vi": "Tôi nghĩ mình bị cảm lạnh rồi."
+        },
+        {
+          "meaning_vi": "sự cảm lạnh",
+          "example_en": "She is staying home with a bad cold.",
+          "example_vi": "Cô ấy đang ở nhà vì bị cảm lạnh nặng."
+        },
+        {
+          "meaning_vi": "sự cảm lạnh",
+          "example_en": "Rest is the best cure for a cold.",
+          "example_vi": "Nghỉ ngơi là cách chữa cảm lạnh tốt nhất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ, chọn lọc nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "cold",
+      "normalized_word": "cold",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is very cold outside today.",
+      "example_vi_clean": "Hôm nay trời rất lạnh."
+    },
+    {
+      "id": 24183,
+      "quiz_meaning_vi": "tập hợp lại",
+      "meaning_vi_clean": "tập hợp lại; thu thập; sưu tầm",
+      "examples_clean": [
+        {
+          "meaning_vi": "tập hợp lại",
+          "example_en": "The students collected in the hall.",
+          "example_vi": "Các học sinh tập hợp lại trong hội trường."
+        },
+        {
+          "meaning_vi": "tập hợp lại",
+          "example_en": "Suzanne collected all the papers she had laid out.",
+          "example_vi": "Suzanne tập hợp lại tất cả các giấy tờ cô ấy đã bày ra."
+        },
+        {
+          "meaning_vi": "tập hợp lại",
+          "example_en": "We need to collect our thoughts before the meeting.",
+          "example_vi": "Chúng ta cần tập hợp lại suy nghĩ trước cuộc họp."
+        },
+        {
+          "meaning_vi": "tập hợp lại",
+          "example_en": "The team collected at the starting line.",
+          "example_vi": "Cả đội tập hợp lại tại vạch xuất phát."
+        },
+        {
+          "meaning_vi": "thu thập",
+          "example_en": "They are collecting data for the project.",
+          "example_vi": "Họ đang thu thập dữ liệu cho dự án."
+        },
+        {
+          "meaning_vi": "thu thập",
+          "example_en": "He went to collect his mail from the box.",
+          "example_vi": "Anh ấy đi thu thập thư từ hộp thư."
+        },
+        {
+          "meaning_vi": "thu thập",
+          "example_en": "The charity collects clothes for the poor.",
+          "example_vi": "Tổ chức từ thiện thu thập quần áo cho người nghèo."
+        },
+        {
+          "meaning_vi": "sưu tầm",
+          "example_en": "She collects stamps from all over the world.",
+          "example_vi": "Cô ấy sưu tầm tem từ khắp nơi trên thế giới."
+        },
+        {
+          "meaning_vi": "sưu tầm",
+          "example_en": "He has collected coins since he was a child.",
+          "example_vi": "Anh ấy đã sưu tầm tiền xu từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "sưu tầm",
+          "example_en": "Many people collect antiques as a hobby.",
+          "example_vi": "Nhiều người sưu tầm đồ cổ như một sở thích."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ, chọn lọc nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "collect",
+      "normalized_word": "collect",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The students collected in the hall.",
+      "example_vi_clean": "Các học sinh tập hợp lại trong hội trường."
+    },
+    {
+      "id": 24184,
+      "quiz_meaning_vi": "sự tập họp",
+      "meaning_vi_clean": "sự tập họp; sự sưu tầm; sự quyên góp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tập họp",
+          "example_en": "There was a large collection of people in the square.",
+          "example_vi": "Có một sự tập họp lớn người dân ở quảng trường."
+        },
+        {
+          "meaning_vi": "sự tập họp",
+          "example_en": "The asteroid belt consists of a collection of dust and rocks.",
+          "example_vi": "Vành đai tiểu hành tinh bao gồm một sự tập họp của bụi và đá."
+        },
+        {
+          "meaning_vi": "sự tập họp",
+          "example_en": "The library has a collection of rare books.",
+          "example_vi": "Thư viện có một sự tập họp các cuốn sách quý hiếm."
+        },
+        {
+          "meaning_vi": "sự tập họp",
+          "example_en": "This is a collection of short stories.",
+          "example_vi": "Đây là một sự tập họp các truyện ngắn."
+        },
+        {
+          "meaning_vi": "sự sưu tầm",
+          "example_en": "He has a superb coin collection.",
+          "example_vi": "Anh ấy có một sự sưu tầm tiền xu tuyệt vời."
+        },
+        {
+          "meaning_vi": "sự sưu tầm",
+          "example_en": "Her art collection is worth millions.",
+          "example_vi": "Sự sưu tầm nghệ thuật của cô ấy trị giá hàng triệu đô."
+        },
+        {
+          "meaning_vi": "sự sưu tầm",
+          "example_en": "He added a new item to his collection.",
+          "example_vi": "Anh ấy đã thêm một món đồ mới vào sự sưu tầm của mình."
+        },
+        {
+          "meaning_vi": "sự quyên góp",
+          "example_en": "They are holding a collection for the local hospital.",
+          "example_vi": "Họ đang tổ chức một sự quyên góp cho bệnh viện địa phương."
+        },
+        {
+          "meaning_vi": "sự quyên góp",
+          "example_en": "The church took up a collection for charity.",
+          "example_vi": "Nhà thờ đã thực hiện một sự quyên góp cho từ thiện."
+        },
+        {
+          "meaning_vi": "sự quyên góp",
+          "example_en": "The collection will be used to build a new school.",
+          "example_vi": "Sự quyên góp sẽ được dùng để xây một ngôi trường mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ minh họa cho từng nghĩa.",
+      "word": "collection",
+      "normalized_word": "collection",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There was a large collection of people in the square.",
+      "example_vi_clean": "Có một sự tập họp lớn người dân ở quảng trường."
+    },
+    {
+      "id": 24185,
+      "quiz_meaning_vi": "trường đại học",
+      "meaning_vi_clean": "trường đại học; học viện",
+      "examples_clean": [
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "She is studying at college.",
+          "example_vi": "Cô ấy đang học tại trường đại học."
+        },
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "He plans to go to college next year.",
+          "example_vi": "Anh ấy dự định đi học đại học vào năm tới."
+        },
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "These should be his college years.",
+          "example_vi": "Đây đáng lẽ là những năm tháng đại học của anh ấy."
+        },
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "She graduated from college last summer.",
+          "example_vi": "Cô ấy đã tốt nghiệp đại học mùa hè năm ngoái."
+        },
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "He met his wife in college.",
+          "example_vi": "Anh ấy đã gặp vợ mình ở trường đại học."
+        },
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "College life can be very busy.",
+          "example_vi": "Cuộc sống đại học có thể rất bận rộn."
+        },
+        {
+          "meaning_vi": "trường đại học",
+          "example_en": "She is a college student.",
+          "example_vi": "Cô ấy là một sinh viên đại học."
+        },
+        {
+          "meaning_vi": "học viện",
+          "example_en": "He is a professor at the college of music.",
+          "example_vi": "Ông ấy là giáo sư tại học viện âm nhạc."
+        },
+        {
+          "meaning_vi": "học viện",
+          "example_en": "The college of surgeons is holding a conference.",
+          "example_vi": "Học viện phẫu thuật đang tổ chức một hội nghị."
+        },
+        {
+          "meaning_vi": "học viện",
+          "example_en": "She applied to the college of art.",
+          "example_vi": "Cô ấy đã nộp đơn vào học viện nghệ thuật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "college",
+      "normalized_word": "college",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is studying at college.",
+      "example_vi_clean": "Cô ấy đang học tại trường đại học."
+    },
+    {
+      "id": 24186,
+      "quiz_meaning_vi": "màu sắc",
+      "meaning_vi_clean": "màu sắc; tô màu",
+      "examples_clean": [
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "Humans and birds can perceive color.",
+          "example_vi": "Con người và chim chóc có thể nhận biết màu sắc."
+        },
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "What is your favorite color?",
+          "example_vi": "Màu sắc yêu thích của bạn là gì?"
+        },
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "The flowers added a lot of color to the garden.",
+          "example_vi": "Những bông hoa đã thêm nhiều màu sắc cho khu vườn."
+        },
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "The painting is full of bright color.",
+          "example_vi": "Bức tranh tràn ngập màu sắc tươi sáng."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "Children love to color in their books.",
+          "example_vi": "Trẻ em thích tô màu vào sách của chúng."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "She used crayons to color the picture.",
+          "example_vi": "Cô ấy dùng bút sáp để tô màu bức tranh."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "Can you color this drawing for me?",
+          "example_vi": "Bạn có thể tô màu bức vẽ này cho tôi không?"
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "He colored the map to show different regions.",
+          "example_vi": "Anh ấy tô màu bản đồ để chỉ các vùng khác nhau."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "She likes to color with markers.",
+          "example_vi": "Cô ấy thích tô màu bằng bút dạ."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "The artist colored the sketch carefully.",
+          "example_vi": "Người nghệ sĩ đã tô màu bản phác thảo một cách cẩn thận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ & động từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "color",
+      "normalized_word": "color",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Humans and birds can perceive color.",
+      "example_vi_clean": "Con người và chim chóc có thể nhận biết màu sắc."
+    },
+    {
+      "id": 24187,
+      "quiz_meaning_vi": "màu sắc",
+      "meaning_vi_clean": "màu sắc; tô màu",
+      "examples_clean": [
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "The autumn leaves have a beautiful colour.",
+          "example_vi": "Những chiếc lá mùa thu có màu sắc tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "She chose a bright colour for her room.",
+          "example_vi": "Cô ấy đã chọn một màu sắc tươi sáng cho căn phòng của mình."
+        },
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "The flag has three different colours.",
+          "example_vi": "Lá cờ có ba màu sắc khác nhau."
+        },
+        {
+          "meaning_vi": "màu sắc",
+          "example_en": "He prefers dark colours for his clothes.",
+          "example_vi": "Anh ấy thích những màu sắc tối cho quần áo của mình."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "She coloured the drawing with pencils.",
+          "example_vi": "Cô ấy đã tô màu bức vẽ bằng bút chì."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "He coloured the map to make it clearer.",
+          "example_vi": "Anh ấy đã tô màu bản đồ để làm nó rõ ràng hơn."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "The children were busy colouring pictures.",
+          "example_vi": "Những đứa trẻ đang bận rộn tô màu các bức tranh."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "She coloured the background blue.",
+          "example_vi": "Cô ấy đã tô màu nền thành màu xanh dương."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "He coloured the design with bright markers.",
+          "example_vi": "Anh ấy đã tô màu thiết kế bằng bút dạ sáng."
+        },
+        {
+          "meaning_vi": "tô màu",
+          "example_en": "They coloured the walls to brighten the room.",
+          "example_vi": "Họ đã tô màu các bức tường để làm sáng căn phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ & động từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "colour",
+      "normalized_word": "colour",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The autumn leaves have a beautiful colour.",
+      "example_vi_clean": "Những chiếc lá mùa thu có màu sắc tuyệt đẹp."
+    },
+    {
+      "id": 24188,
+      "quiz_meaning_vi": "đến",
+      "meaning_vi_clean": "đến; trở nên; xảy ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "đến",
+          "example_en": "Please come here for a moment.",
+          "example_vi": "Làm ơn đến đây một lát."
+        },
+        {
+          "meaning_vi": "đến",
+          "example_en": "She will come to the party tonight.",
+          "example_vi": "Cô ấy sẽ đến bữa tiệc tối nay."
+        },
+        {
+          "meaning_vi": "đến",
+          "example_en": "He came home late last night.",
+          "example_vi": "Anh ấy đã đến nhà muộn tối qua."
+        },
+        {
+          "meaning_vi": "đến",
+          "example_en": "The bus comes every ten minutes.",
+          "example_vi": "Xe buýt đến mỗi mười phút."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "His dream has come true.",
+          "example_vi": "Giấc mơ của anh ấy đã trở nên hiện thực."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "She came to realize the truth.",
+          "example_vi": "Cô ấy đã trở nên nhận ra sự thật."
+        },
+        {
+          "meaning_vi": "trở nên",
+          "example_en": "The situation has come to be very difficult.",
+          "example_vi": "Tình hình đã trở nên rất khó khăn."
+        },
+        {
+          "meaning_vi": "xảy ra",
+          "example_en": "How did this come about?",
+          "example_vi": "Chuyện này đã xảy ra như thế nào?"
+        },
+        {
+          "meaning_vi": "xảy ra",
+          "example_en": "Such things come to pass in life.",
+          "example_vi": "Những điều như vậy xảy ra trong cuộc sống."
+        },
+        {
+          "meaning_vi": "xảy ra",
+          "example_en": "I don't know how it came to happen.",
+          "example_vi": "Tôi không biết làm sao nó lại xảy ra."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "come",
+      "normalized_word": "come",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please come here for a moment.",
+      "example_vi_clean": "Làm ơn đến đây một lát."
+    },
+    {
+      "id": 24189,
+      "quiz_meaning_vi": "máy điện toán",
+      "meaning_vi_clean": "máy điện toán",
+      "examples_clean": [
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "I use my computer for work.",
+          "example_vi": "Tôi sử dụng máy điện toán của mình để làm việc."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "She is learning how to use a computer.",
+          "example_vi": "Cô ấy đang học cách sử dụng máy điện toán."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "My computer is very fast.",
+          "example_vi": "Máy điện toán của tôi rất nhanh."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "He bought a new computer yesterday.",
+          "example_vi": "Anh ấy đã mua một chiếc máy điện toán mới hôm qua."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "The computer is broken.",
+          "example_vi": "Máy điện toán bị hỏng rồi."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "She spends hours on the computer.",
+          "example_vi": "Cô ấy dành hàng giờ trên máy điện toán."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "Do you have a laptop computer?",
+          "example_vi": "Bạn có máy điện toán xách tay không?"
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "He is a computer expert.",
+          "example_vi": "Anh ấy là một chuyên gia máy điện toán."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "The computer screen is too bright.",
+          "example_vi": "Màn hình máy điện toán quá sáng."
+        },
+        {
+          "meaning_vi": "máy điện toán",
+          "example_en": "I saved the file on my computer.",
+          "example_vi": "Tôi đã lưu tệp tin trên máy điện toán của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "computer",
+      "normalized_word": "computer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I use my computer for work.",
+      "example_vi_clean": "Tôi sử dụng máy điện toán của mình để làm việc."
+    },
+    {
+      "id": 24190,
+      "quiz_meaning_vi": "buổi hoà nhạc",
+      "meaning_vi_clean": "buổi hoà nhạc; sự phối hợp",
+      "examples_clean": [
+        {
+          "meaning_vi": "buổi hoà nhạc",
+          "example_en": "I'm going to the rock concert on Friday.",
+          "example_vi": "Tôi sẽ đi xem buổi hoà nhạc rock vào thứ Sáu."
+        },
+        {
+          "meaning_vi": "buổi hoà nhạc",
+          "example_en": "She performed at a concert last night.",
+          "example_vi": "Cô ấy đã biểu diễn tại một buổi hoà nhạc tối qua."
+        },
+        {
+          "meaning_vi": "buổi hoà nhạc",
+          "example_en": "We bought tickets for the concert.",
+          "example_vi": "Chúng tôi đã mua vé cho buổi hoà nhạc."
+        },
+        {
+          "meaning_vi": "buổi hoà nhạc",
+          "example_en": "The concert was a great success.",
+          "example_vi": "Buổi hoà nhạc đã thành công rực rỡ."
+        },
+        {
+          "meaning_vi": "buổi hoà nhạc",
+          "example_en": "He enjoys listening to live concert music.",
+          "example_vi": "Anh ấy thích nghe nhạc buổi hoà nhạc trực tiếp."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "They acted in concert to solve the problem.",
+          "example_vi": "Họ đã hành động trong sự phối hợp để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "The two departments worked in concert.",
+          "example_vi": "Hai bộ phận đã làm việc trong sự phối hợp."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "Success requires the concert of all team members.",
+          "example_vi": "Thành công đòi hỏi sự phối hợp của tất cả các thành viên trong đội."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "They planned the event in concert.",
+          "example_vi": "Họ đã lên kế hoạch cho sự kiện trong sự phối hợp."
+        },
+        {
+          "meaning_vi": "sự phối hợp",
+          "example_en": "The policy was developed in concert with local leaders.",
+          "example_vi": "Chính sách đã được phát triển trong sự phối hợp với các nhà lãnh đạo địa phương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "concert",
+      "normalized_word": "concert",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I'm going to the rock concert on Friday.",
+      "example_vi_clean": "Tôi sẽ đi xem buổi hoà nhạc rock vào thứ Sáu."
+    }
+  ]
+}

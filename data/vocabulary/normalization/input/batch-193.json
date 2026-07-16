@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-193",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25921,
+      "word": "dial",
+      "normalized_word": "dial",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'daiəl/",
+      "primary_meaning_vi": "đồng hồ mặt trời (theo ánh nắng mà tính giờ) ((cũng) sun dial)",
+      "meaning_vi": "đồng hồ mặt trời (theo ánh nắng mà tính giờ) ((cũng) sun dial); mặt đồng hồ, công tơ...) ((cũng) plate dial); đĩa số (máy điện thoại); mặt (người...); la bàn (dùng ở mỏ) ((cũng) miner's dial); đo bằng đĩa số, chỉ bằng đĩa số; quay số (điện thoại tự động)",
+      "example_en": "President Trump has recently dialled down the rhetoric.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "In an emergency dial 999.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Please be careful when dialling.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "LONG_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25922,
+      "word": "dialog",
+      "normalized_word": "dialog",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "hội thoại",
+      "meaning_vi": "hội thoại",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25923,
+      "word": "dialogue",
+      "normalized_word": "dialogue",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'daiəlɔg/ (duologue) /'djuəlɔg/",
+      "primary_meaning_vi": "cuộc đối thoại",
+      "meaning_vi": "cuộc đối thoại; đoạn văn đối thoại; tác phẩm đối thoại",
+      "example_en": "Bill and Melinda maintained a dialogue via email over the course of their long-distance relationship.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The movie had great special effects, but the dialogue was lackluster.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A literary historian, she specialized in the dialogues of ancient Greek philosophers.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Once the My Computer dialogue opens, select Local Disk (C:), then right click and scroll down.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25924,
+      "word": "diameter",
+      "normalized_word": "diameter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dai'æmitə/",
+      "primary_meaning_vi": "đường kính",
+      "meaning_vi": "đường kính; số phóng to (của thấu kính...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25925,
+      "word": "diaper",
+      "normalized_word": "diaper",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'daiəpə/",
+      "primary_meaning_vi": "vải kẻ hình thoi",
+      "meaning_vi": "vải kẻ hình thoi; tã lót bằng vải kẻ hình thoi; khăn vệ sinh khô (phụ nữ); kiểu trang trí hình thoi; in hình thoi (lên vải); thêu hình thoi (vào khăn); trang trí hình thoi (trên tường...); quấn tã lót (cho em bé)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25926,
+      "word": "differ",
+      "normalized_word": "differ",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'difə/",
+      "primary_meaning_vi": "+ from) khác",
+      "meaning_vi": "+ from) khác, không giống; không đồng ý, không tán thành, bất đồng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25927,
+      "word": "digital",
+      "normalized_word": "digital",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'didʤitl/",
+      "primary_meaning_vi": "ngón chân",
+      "meaning_vi": "ngón chân, (thuộc) ngón tay; con số (từ 0 đến 9); phím (pianô)",
+      "example_en": "He moved to digital for the first time, using a Sony camera.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "digital computer; digital clock",
+          "example_vi": null
+        },
+        {
+          "example_en": "Digital payment systems are replacing cash transactions.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25928,
+      "word": "diligence",
+      "normalized_word": "diligence",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dilidʤəns/",
+      "primary_meaning_vi": "sự siêng năng",
+      "meaning_vi": "sự siêng năng, sự chuyên cần, sự cần cù; xe ngựa chở khách",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25929,
+      "word": "diligent",
+      "normalized_word": "diligent",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'dilidʤənt/",
+      "primary_meaning_vi": "siêng năng",
+      "meaning_vi": "siêng năng, chuyên cần, cần cù",
+      "example_en": "Scientists are very diligent in their work.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25930,
+      "word": "dioxide",
+      "normalized_word": "dioxide",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dai'ɔksaid/",
+      "primary_meaning_vi": "đioxyt",
+      "meaning_vi": "đioxyt",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

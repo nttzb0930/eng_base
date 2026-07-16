@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-214",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26131,
+      "word": "finding",
+      "normalized_word": "finding",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'faindiɳ/",
+      "primary_meaning_vi": "sự tìm ra",
+      "meaning_vi": "sự tìm ra, sự khám phá; sự phát hiện; sự phát minh; vật tìm thấy; điều khám phá, tài liệu phát hiện; vật bắt được; sự tuyên án; đồ nghề và nguyên liệu của thợ thủ công",
+      "example_en": "I found my car keys. They were under the couch.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Water is found to be a compound substance.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to find leisure; to find means",
+          "example_vi": null
+        },
+        {
+          "example_en": "Looks like he found a new vehicle for himself!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26132,
+      "word": "finger",
+      "normalized_word": "finger",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'fiɳgə/",
+      "primary_meaning_vi": "ngón tay",
+      "meaning_vi": "ngón tay; ngón tay bao găng; vật hình ngón tay (trong máy...); burn to cross one's fingers; cross to have a finger in the pie; pie to lay a finger on; sờ nhẹ, đụng tới; buông lỏng cái gì; nhích ngón tay (là được); vờ không trông thấy; tôi sốt ruột, tôi nóng lòng (muốn làm cái gì); thumbs; vạch đúng (những cái gì sai trái); mơn trớn ai; dễ dàng, thoải mái; sờ mó; ăn tiền, ăn hối lộ; đánh (đàn); búng (dây đàn bằng ngón tay); ghi cách sử dụng các ngón tay (vào bản nhạc)",
+      "example_en": "Humans have two hands and ten fingers. Each hand has one thumb and four fingers.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a finger of land; a finger of smoke",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26133,
+      "word": "firefighter",
+      "normalized_word": "firefighter",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "lính chữa cháy",
+      "meaning_vi": "lính chữa cháy",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26134,
+      "word": "firm",
+      "normalized_word": "firm",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'fə:m/",
+      "primary_meaning_vi": "hãng",
+      "meaning_vi": "hãng, công ty; chắc, rắn chắc; vững chắc; bền vững; nhất định không thay đổi; mạnh mẽ; kiên quyết, vững vàng, không chùn bước; trung thành, trung kiên; vững như bàn thạch; tin chắc; nắm chắc cái gì; vững, vững vàng; giữ vững niềm tin; làm cho vững vàng, làm cho chắc chắn; nền (đất); cắm chặt (cây) xuống đất; trở nên vững chắc, trở nên rắn chắc",
+      "example_en": "It's good to have a firm grip when shaking hands.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was firm that selling his company would a good choice and didn't let anyone talk him out of it.",
+          "example_vi": null
+        },
+        {
+          "example_en": "firm flesh; firm muscles, firm wood; firm land (i.e. not soft and marshy)",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26135,
+      "word": "firmly",
+      "normalized_word": "firmly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'fə:mli/",
+      "primary_meaning_vi": "vững chắc",
+      "meaning_vi": "vững chắc; kiên quyết",
+      "example_en": "She corrected him firmly but gently.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Tie the rope firmly to the post.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26136,
+      "word": "first-floor",
+      "normalized_word": "first-floor",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "tầng hai",
+      "meaning_vi": "tầng hai; tầng trệt, tầng một",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26137,
+      "word": "fitness",
+      "normalized_word": "fitness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'fitnis/",
+      "primary_meaning_vi": "sự thích hợp",
+      "meaning_vi": "sự thích hợp, sự phù hợp, sự vừa vặn; sự xứng dáng; sự đúng, sự phải; tình trạng sung sức",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26138,
+      "word": "flash",
+      "normalized_word": "flash",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/flæʃ/",
+      "primary_meaning_vi": "ánh sáng loé lên",
+      "meaning_vi": "ánh sáng loé lên; tia; sự bốc cháy; giây lát; sự phô trương; cảnh hồi tưởng ((cũng) flash back); phù hiệu (chỉ đơn vị, sư đoàn...); dòng nước nâng (xả xuống phía dưới đập để nâng mực nước); tiếng lóng kẻ cắp; tin ngắn; bức điện ngắn; chuyện đầu voi đuôi chuột; người nổi tiếng nhất thời; loé sáng, vụt sáng, chiếu sáng; chợt hiện ra, chợt nảy ra, vụt hiện lên, loé lên; tôi chợt nảy ra ý kiến là; chạy vụt; chảy ra thành tấm (thuỷ tinh); chảy ào, chảy tràn ra (nước); làm loé lên, làm rực lên; truyền đi cấp tốc, phát nhanh (tin); ,  (thông tục) khoe, phô, thò ra khoe; thò ra khoe một tập tiền; làm (thuỷ tinh) chảy thành tấm; phủ một lần màu lên (kính); cho nước chảy vào đầy; làm chuyện đầu voi đuôi chuột; nổi giận đùng đùng; loè loẹt, sặc sỡ; giả; lóng; ăn cắp ăn nẩy",
+      "example_en": "I just got my first commando flash.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He flashed the light at the water, trying to see what made the noise.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The light flashed on and off.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The scenery flashed by quickly.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26139,
+      "word": "flat",
+      "normalized_word": "flat",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/flæt/",
+      "primary_meaning_vi": "dãy phòng (ở một tầng trong một nhà khối)",
+      "meaning_vi": "dãy phòng (ở một tầng trong một nhà khối); căn phòng, căn buồng; ngăn, gian; tầng; mặt phẳng; miền đất phẳng; lòng (sông, bàn tay...); miền đất thấp, miền đầm lầy; thuyền đáy bằng; rổ nông, hộp nông; ,  (ngành đường sắt) toa trần ((cũng) flat-car); phần phông đã đóng khung; dấu giáng; giày đề bằng; kẻ lừa bịp; ,  (thông tục) lốp bẹp, lốp xì hơi; chắp vá lại thành một mảnh; giữ cho vẻ trước sau như một; bằng phẳng, bẹt, tẹt; sóng soài, sóng sượt; nhãn; cùng, đồng (màu); nông; hoàn toàn, thẳng, thẳng thừng, dứt khoát; nhạt, tẻ nhạt, vô duyên; hả (rượu...); ế ẩm; không thay đổi, không lên xuống, đứng im (giá cả...); bẹp, xì hơi (lốp xe); bải hoải, buồn nản; không một xu dính túi, kiết xác; giáng; bằng, phẳng, bẹt; sóng sượt, sóng soài; hoàn toàn thất bại; hoàn toàn; thẳng, thẳng thừng, dứt khoát; nói thẳng với ai rằng; đúng; theo dấu giáng; làm bẹt, dát mỏng",
+      "example_en": "She liked to walk in her flats more than in her high heels.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a flat of strawberries",
+          "example_vi": null
+        },
+        {
+          "example_en": "The land around here is flat.",
+          "example_vi": null
+        },
+        {
+          "example_en": "That girl is completely flat on both sides.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 10,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING",
+        "LONG_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26140,
+      "word": "flavor",
+      "normalized_word": "flavor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'fleivə/",
+      "primary_meaning_vi": "vị ngon",
+      "meaning_vi": "vị ngon, mùi thơm; mùi vị; hương vị phảng phất; cho gia vị, làm tăng thêm mùi vị; tăng thêm hứng thú của, thêm thắt vào, thêm mắm thêm muối vào",
+      "example_en": "The flavor of this apple pie is delicious.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Flavor was added to the pudding.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What flavor of bubble gum do you enjoy?",
+          "example_vi": null
+        },
+        {
+          "example_en": "the flavor of an experience",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

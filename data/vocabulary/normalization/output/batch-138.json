@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25371,
+      "quiz_meaning_vi": "số nhiều",
+      "meaning_vi_clean": "số nhiều; dạng số nhiều",
+      "examples_clean": [
+        {
+          "meaning_vi": "số nhiều",
+          "example_en": "The word cats is the plural of cat.",
+          "example_vi": "Từ cats là số nhiều của từ cat."
+        },
+        {
+          "meaning_vi": "số nhiều",
+          "example_en": "Most nouns form the plural by adding s.",
+          "example_vi": "Hầu hết các danh từ tạo thành số nhiều bằng cách thêm s."
+        },
+        {
+          "meaning_vi": "số nhiều",
+          "example_en": "Is this verb in the plural form?",
+          "example_vi": "Động từ này có ở dạng số nhiều không?"
+        },
+        {
+          "meaning_vi": "số nhiều",
+          "example_en": "The plural of child is children.",
+          "example_vi": "Số nhiều của child là children."
+        },
+        {
+          "meaning_vi": "dạng số nhiều",
+          "example_en": "Write the plural form of these words.",
+          "example_vi": "Hãy viết dạng số nhiều của những từ này."
+        },
+        {
+          "meaning_vi": "dạng số nhiều",
+          "example_en": "Some nouns have an irregular plural form.",
+          "example_vi": "Một số danh từ có dạng số nhiều bất quy tắc."
+        },
+        {
+          "meaning_vi": "dạng số nhiều",
+          "example_en": "Check the dictionary for the plural form.",
+          "example_vi": "Hãy kiểm tra từ điển để biết dạng số nhiều."
+        },
+        {
+          "meaning_vi": "dạng số nhiều",
+          "example_en": "The plural form is often used in this context.",
+          "example_vi": "Dạng số nhiều thường được sử dụng trong ngữ cảnh này."
+        },
+        {
+          "meaning_vi": "dạng số nhiều",
+          "example_en": "He forgot to use the plural form.",
+          "example_vi": "Anh ấy đã quên sử dụng dạng số nhiều."
+        },
+        {
+          "meaning_vi": "dạng số nhiều",
+          "example_en": "The plural form is required here.",
+          "example_vi": "Dạng số nhiều là bắt buộc ở đây."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ phù hợp với từ loại danh từ.",
+      "word": "plural",
+      "normalized_word": "plural",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The word cats is the plural of cat.",
+      "example_vi_clean": "Từ cats là số nhiều của từ cat."
+    },
+    {
+      "id": 25372,
+      "quiz_meaning_vi": "cảnh sát",
+      "meaning_vi_clean": "cảnh sát; lực lượng cảnh sát",
+      "examples_clean": [
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "Call the police immediately.",
+          "example_vi": "Hãy gọi cảnh sát ngay lập tức."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police arrived at the scene quickly.",
+          "example_vi": "Cảnh sát đã đến hiện trường nhanh chóng."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "I saw the police talking to a man.",
+          "example_vi": "Tôi thấy cảnh sát đang nói chuyện với một người đàn ông."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police are investigating the accident.",
+          "example_vi": "Cảnh sát đang điều tra vụ tai nạn."
+        },
+        {
+          "meaning_vi": "lực lượng cảnh sát",
+          "example_en": "He decided to join the police force.",
+          "example_vi": "Anh ấy quyết định gia nhập lực lượng cảnh sát."
+        },
+        {
+          "meaning_vi": "lực lượng cảnh sát",
+          "example_en": "The local police are very helpful.",
+          "example_vi": "Lực lượng cảnh sát địa phương rất nhiệt tình."
+        },
+        {
+          "meaning_vi": "lực lượng cảnh sát",
+          "example_en": "The police are patrolling the streets.",
+          "example_vi": "Lực lượng cảnh sát đang tuần tra trên các con phố."
+        },
+        {
+          "meaning_vi": "lực lượng cảnh sát",
+          "example_en": "She works for the national police.",
+          "example_vi": "Cô ấy làm việc cho lực lượng cảnh sát quốc gia."
+        },
+        {
+          "meaning_vi": "lực lượng cảnh sát",
+          "example_en": "The police were called to maintain order.",
+          "example_vi": "Lực lượng cảnh sát đã được gọi đến để duy trì trật tự."
+        },
+        {
+          "meaning_vi": "lực lượng cảnh sát",
+          "example_en": "The police are well-trained professionals.",
+          "example_vi": "Lực lượng cảnh sát là những chuyên gia được đào tạo bài bản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ, cập nhật nghĩa và ví dụ.",
+      "word": "police",
+      "normalized_word": "police",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Call the police immediately.",
+      "example_vi_clean": "Hãy gọi cảnh sát ngay lập tức."
+    },
+    {
+      "id": 25373,
+      "quiz_meaning_vi": "cảnh sát",
+      "meaning_vi_clean": "cảnh sát",
+      "examples_clean": [
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman stopped the car.",
+          "example_vi": "Người cảnh sát đã dừng chiếc xe lại."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "A friendly policeman helped me find the way.",
+          "example_vi": "Một người cảnh sát thân thiện đã giúp tôi tìm đường."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman asked to see my ID.",
+          "example_vi": "Người cảnh sát yêu cầu xem giấy tờ tùy thân của tôi."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman directed the traffic.",
+          "example_vi": "Người cảnh sát đang điều khiển giao thông."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "He wants to be a policeman when he grows up.",
+          "example_vi": "Anh ấy muốn trở thành cảnh sát khi lớn lên."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman walked down the street.",
+          "example_vi": "Người cảnh sát đi bộ dọc theo con phố."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman caught the thief.",
+          "example_vi": "Người cảnh sát đã bắt được tên trộm."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "I spoke to a policeman about the incident.",
+          "example_vi": "Tôi đã nói chuyện với một người cảnh sát về vụ việc."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman wore a blue uniform.",
+          "example_vi": "Người cảnh sát mặc bộ đồng phục màu xanh."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The policeman was very brave.",
+          "example_vi": "Người cảnh sát đó rất dũng cảm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ cho danh từ chỉ người.",
+      "word": "policeman",
+      "normalized_word": "policeman",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The policeman stopped the car.",
+      "example_vi_clean": "Người cảnh sát đã dừng chiếc xe lại."
+    },
+    {
+      "id": 25374,
+      "quiz_meaning_vi": "nữ cảnh sát",
+      "meaning_vi_clean": "nữ cảnh sát",
+      "examples_clean": [
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "The policewoman helped the lost child.",
+          "example_vi": "Nữ cảnh sát đã giúp đỡ đứa trẻ bị lạc."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "She is a brave policewoman.",
+          "example_vi": "Cô ấy là một nữ cảnh sát dũng cảm."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "The policewoman asked for my name.",
+          "example_vi": "Nữ cảnh sát đã hỏi tên tôi."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "A policewoman was patrolling the park.",
+          "example_vi": "Một nữ cảnh sát đang tuần tra trong công viên."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "The policewoman gave me directions.",
+          "example_vi": "Nữ cảnh sát đã chỉ đường cho tôi."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "She has been a policewoman for ten years.",
+          "example_vi": "Cô ấy đã là nữ cảnh sát được mười năm rồi."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "The policewoman checked the security cameras.",
+          "example_vi": "Nữ cảnh sát đã kiểm tra các camera an ninh."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "I saw a policewoman at the station.",
+          "example_vi": "Tôi đã thấy một nữ cảnh sát tại đồn."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "The policewoman was very professional.",
+          "example_vi": "Nữ cảnh sát đó rất chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "nữ cảnh sát",
+          "example_en": "The policewoman wrote down the details.",
+          "example_vi": "Nữ cảnh sát đã ghi lại các chi tiết."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ cho danh từ chỉ người.",
+      "word": "policewoman",
+      "normalized_word": "policewoman",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The policewoman helped the lost child.",
+      "example_vi_clean": "Nữ cảnh sát đã giúp đỡ đứa trẻ bị lạc."
+    },
+    {
+      "id": 25375,
+      "quiz_meaning_vi": "lễ phép",
+      "meaning_vi_clean": "lễ phép; lịch sự",
+      "examples_clean": [
+        {
+          "meaning_vi": "lễ phép",
+          "example_en": "It is polite to say thank you.",
+          "example_vi": "Nói cảm ơn là rất lễ phép."
+        },
+        {
+          "meaning_vi": "lễ phép",
+          "example_en": "The children were very polite to the guests.",
+          "example_vi": "Những đứa trẻ rất lễ phép với khách."
+        },
+        {
+          "meaning_vi": "lễ phép",
+          "example_en": "He gave a polite answer to the teacher.",
+          "example_vi": "Cậu ấy đã trả lời giáo viên một cách lễ phép."
+        },
+        {
+          "meaning_vi": "lễ phép",
+          "example_en": "Always be polite to your elders.",
+          "example_vi": "Luôn luôn lễ phép với người lớn tuổi."
+        },
+        {
+          "meaning_vi": "lịch sự",
+          "example_en": "She is a very polite person.",
+          "example_vi": "Cô ấy là một người rất lịch sự."
+        },
+        {
+          "meaning_vi": "lịch sự",
+          "example_en": "It is not polite to interrupt others.",
+          "example_vi": "Ngắt lời người khác là không lịch sự."
+        },
+        {
+          "meaning_vi": "lịch sự",
+          "example_en": "He sent a polite letter of apology.",
+          "example_vi": "Anh ấy đã gửi một lá thư xin lỗi lịch sự."
+        },
+        {
+          "meaning_vi": "lịch sự",
+          "example_en": "Please be polite when you speak.",
+          "example_vi": "Hãy lịch sự khi bạn nói chuyện."
+        },
+        {
+          "meaning_vi": "lịch sự",
+          "example_en": "They had a polite conversation.",
+          "example_vi": "Họ đã có một cuộc trò chuyện lịch sự."
+        },
+        {
+          "meaning_vi": "lịch sự",
+          "example_en": "She gave a polite smile.",
+          "example_vi": "Cô ấy nở một nụ cười lịch sự."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ cho tính từ.",
+      "word": "polite",
+      "normalized_word": "polite",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is polite to say thank you.",
+      "example_vi_clean": "Nói cảm ơn là rất lễ phép."
+    },
+    {
+      "id": 25376,
+      "quiz_meaning_vi": "chính trị",
+      "meaning_vi_clean": "chính trị",
+      "examples_clean": [
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "He is interested in political issues.",
+          "example_vi": "Anh ấy quan tâm đến các vấn đề chính trị."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "The country is going through a political change.",
+          "example_vi": "Đất nước đang trải qua một sự thay đổi về chính trị."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "She has a strong political opinion.",
+          "example_vi": "Cô ấy có quan điểm chính trị mạnh mẽ."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "They are discussing political events.",
+          "example_vi": "Họ đang thảo luận về các sự kiện chính trị."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "The political situation is stable.",
+          "example_vi": "Tình hình chính trị đang ổn định."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "He is a political leader.",
+          "example_vi": "Ông ấy là một nhà lãnh đạo chính trị."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "They formed a new political party.",
+          "example_vi": "Họ đã thành lập một đảng chính trị mới."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "Political debates are often intense.",
+          "example_vi": "Các cuộc tranh luận chính trị thường rất gay gắt."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "She studies political science.",
+          "example_vi": "Cô ấy học ngành khoa học chính trị."
+        },
+        {
+          "meaning_vi": "chính trị",
+          "example_en": "The political system is complex.",
+          "example_vi": "Hệ thống chính trị rất phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ thành tính từ, cập nhật nghĩa và ví dụ.",
+      "word": "political",
+      "normalized_word": "political",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is interested in political issues.",
+      "example_vi_clean": "Anh ấy quan tâm đến các vấn đề chính trị."
+    },
+    {
+      "id": 25377,
+      "quiz_meaning_vi": "làm ô nhiễm",
+      "meaning_vi_clean": "làm ô nhiễm; làm bẩn",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm ô nhiễm",
+          "example_en": "Factories often pollute the air.",
+          "example_vi": "Các nhà máy thường làm ô nhiễm không khí."
+        },
+        {
+          "meaning_vi": "làm ô nhiễm",
+          "example_en": "Chemicals can pollute the water supply.",
+          "example_vi": "Hóa chất có thể làm ô nhiễm nguồn nước."
+        },
+        {
+          "meaning_vi": "làm ô nhiễm",
+          "example_en": "We should not pollute our environment.",
+          "example_vi": "Chúng ta không nên làm ô nhiễm môi trường."
+        },
+        {
+          "meaning_vi": "làm ô nhiễm",
+          "example_en": "Plastic waste pollutes the oceans.",
+          "example_vi": "Rác thải nhựa làm ô nhiễm các đại dương."
+        },
+        {
+          "meaning_vi": "làm bẩn",
+          "example_en": "Oil spills pollute the beaches.",
+          "example_vi": "Tràn dầu làm bẩn các bãi biển."
+        },
+        {
+          "meaning_vi": "làm bẩn",
+          "example_en": "Don't pollute the clean water.",
+          "example_vi": "Đừng làm bẩn nguồn nước sạch."
+        },
+        {
+          "meaning_vi": "làm bẩn",
+          "example_en": "Smoke pollutes the city air.",
+          "example_vi": "Khói bụi làm bẩn không khí thành phố."
+        },
+        {
+          "meaning_vi": "làm bẩn",
+          "example_en": "The river was polluted by waste.",
+          "example_vi": "Con sông đã bị làm bẩn bởi rác thải."
+        },
+        {
+          "meaning_vi": "làm bẩn",
+          "example_en": "Litter pollutes the park.",
+          "example_vi": "Rác rưởi làm bẩn công viên."
+        },
+        {
+          "meaning_vi": "làm bẩn",
+          "example_en": "Chemicals pollute the soil.",
+          "example_vi": "Hóa chất làm bẩn đất."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa cho phù hợp với từ loại động từ và bổ sung ví dụ.",
+      "word": "pollute",
+      "normalized_word": "pollute",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Factories often pollute the air.",
+      "example_vi_clean": "Các nhà máy thường làm ô nhiễm không khí."
+    },
+    {
+      "id": 25378,
+      "quiz_meaning_vi": "phổ biến",
+      "meaning_vi_clean": "phổ biến; được ưa thích",
+      "examples_clean": [
+        {
+          "meaning_vi": "phổ biến",
+          "example_en": "This is a very popular song.",
+          "example_vi": "Đây là một bài hát rất phổ biến."
+        },
+        {
+          "meaning_vi": "phổ biến",
+          "example_en": "Soccer is a popular sport worldwide.",
+          "example_vi": "Bóng đá là một môn thể thao phổ biến trên toàn thế giới."
+        },
+        {
+          "meaning_vi": "phổ biến",
+          "example_en": "It is a popular belief that cats have nine lives.",
+          "example_vi": "Có một niềm tin phổ biến rằng mèo có chín mạng."
+        },
+        {
+          "meaning_vi": "phổ biến",
+          "example_en": "The internet is a popular tool for learning.",
+          "example_vi": "Internet là một công cụ phổ biến để học tập."
+        },
+        {
+          "meaning_vi": "được ưa thích",
+          "example_en": "She is a popular teacher among students.",
+          "example_vi": "Cô ấy là một giáo viên được học sinh ưa thích."
+        },
+        {
+          "meaning_vi": "được ưa thích",
+          "example_en": "This restaurant is very popular.",
+          "example_vi": "Nhà hàng này rất được ưa thích."
+        },
+        {
+          "meaning_vi": "được ưa thích",
+          "example_en": "He is the most popular boy in class.",
+          "example_vi": "Cậu ấy là cậu bé được ưa thích nhất trong lớp."
+        },
+        {
+          "meaning_vi": "được ưa thích",
+          "example_en": "The book became popular very quickly.",
+          "example_vi": "Cuốn sách đã trở nên được ưa thích rất nhanh chóng."
+        },
+        {
+          "meaning_vi": "được ưa thích",
+          "example_en": "They are a popular couple.",
+          "example_vi": "Họ là một cặp đôi được ưa thích."
+        },
+        {
+          "meaning_vi": "được ưa thích",
+          "example_en": "The show is popular with all ages.",
+          "example_vi": "Chương trình này được ưa thích bởi mọi lứa tuổi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ cho tính từ.",
+      "word": "popular",
+      "normalized_word": "popular",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is a very popular song.",
+      "example_vi_clean": "Đây là một bài hát rất phổ biến."
+    },
+    {
+      "id": 25379,
+      "quiz_meaning_vi": "số dân",
+      "meaning_vi_clean": "số dân; dân cư",
+      "examples_clean": [
+        {
+          "meaning_vi": "số dân",
+          "example_en": "The population of the city is growing.",
+          "example_vi": "Số dân của thành phố đang tăng lên."
+        },
+        {
+          "meaning_vi": "số dân",
+          "example_en": "What is the population of this country?",
+          "example_vi": "Số dân của đất nước này là bao nhiêu?"
+        },
+        {
+          "meaning_vi": "số dân",
+          "example_en": "The population has doubled in ten years.",
+          "example_vi": "Số dân đã tăng gấp đôi trong mười năm."
+        },
+        {
+          "meaning_vi": "số dân",
+          "example_en": "The town has a small population.",
+          "example_vi": "Thị trấn có số dân nhỏ."
+        },
+        {
+          "meaning_vi": "dân cư",
+          "example_en": "The local population is very friendly.",
+          "example_vi": "Dân cư địa phương rất thân thiện."
+        },
+        {
+          "meaning_vi": "dân cư",
+          "example_en": "The area has a large population.",
+          "example_vi": "Khu vực này có dân cư đông đúc."
+        },
+        {
+          "meaning_vi": "dân cư",
+          "example_en": "The government cares about the population.",
+          "example_vi": "Chính phủ quan tâm đến dân cư."
+        },
+        {
+          "meaning_vi": "dân cư",
+          "example_en": "The population needs better services.",
+          "example_vi": "Dân cư cần các dịch vụ tốt hơn."
+        },
+        {
+          "meaning_vi": "dân cư",
+          "example_en": "The population is mostly young.",
+          "example_vi": "Dân cư chủ yếu là người trẻ."
+        },
+        {
+          "meaning_vi": "dân cư",
+          "example_en": "The population lives in the valley.",
+          "example_vi": "Dân cư sống ở trong thung lũng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ cho danh từ.",
+      "word": "population",
+      "normalized_word": "population",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The population of the city is growing.",
+      "example_vi_clean": "Số dân của thành phố đang tăng lên."
+    },
+    {
+      "id": 25380,
+      "quiz_meaning_vi": "chân dung",
+      "meaning_vi_clean": "chân dung; ảnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "chân dung",
+          "example_en": "He painted a beautiful portrait of his wife.",
+          "example_vi": "Anh ấy đã vẽ một bức chân dung tuyệt đẹp về vợ mình."
+        },
+        {
+          "meaning_vi": "chân dung",
+          "example_en": "The museum has many royal portraits.",
+          "example_vi": "Bảo tàng có nhiều bức chân dung hoàng gia."
+        },
+        {
+          "meaning_vi": "chân dung",
+          "example_en": "She sat for a portrait.",
+          "example_vi": "Cô ấy đã ngồi để vẽ chân dung."
+        },
+        {
+          "meaning_vi": "chân dung",
+          "example_en": "The artist is famous for his portraits.",
+          "example_vi": "Người nghệ sĩ nổi tiếng với các bức chân dung của mình."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "I have a portrait of my family on the wall.",
+          "example_vi": "Tôi có một bức ảnh chân dung gia đình trên tường."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "She took a nice portrait of the child.",
+          "example_vi": "Cô ấy đã chụp một bức ảnh chân dung đẹp về đứa trẻ."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "This is a digital portrait.",
+          "example_vi": "Đây là một bức ảnh chân dung kỹ thuật số."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "He keeps a portrait in his wallet.",
+          "example_vi": "Anh ấy giữ một bức ảnh chân dung trong ví."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "The portrait shows her smiling.",
+          "example_vi": "Bức ảnh chân dung cho thấy cô ấy đang cười."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "They framed the portrait.",
+          "example_vi": "Họ đã đóng khung bức ảnh chân dung đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa và bổ sung ví dụ cho danh từ.",
+      "word": "portrait",
+      "normalized_word": "portrait",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He painted a beautiful portrait of his wife.",
+      "example_vi_clean": "Anh ấy đã vẽ một bức chân dung tuyệt đẹp về vợ mình."
+    }
+  ]
+}

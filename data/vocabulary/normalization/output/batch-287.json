@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26861,
+      "quiz_meaning_vi": "mờ",
+      "meaning_vi_clean": "mờ; làm mờ; mờ đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "mờ",
+          "example_en": "The lighting in the room was very dim.",
+          "example_vi": "Ánh sáng trong phòng rất mờ."
+        },
+        {
+          "meaning_vi": "mờ",
+          "example_en": "I could see a dim figure in the distance.",
+          "example_vi": "Tôi có thể thấy một bóng người mờ ở phía xa."
+        },
+        {
+          "meaning_vi": "mờ",
+          "example_en": "She has a dim memory of her childhood.",
+          "example_vi": "Cô ấy có một ký ức mờ nhạt về thời thơ ấu."
+        },
+        {
+          "meaning_vi": "mờ",
+          "example_en": "The stars were dim tonight due to the clouds.",
+          "example_vi": "Những ngôi sao tối nay thật mờ vì mây."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "He dimmed the lights to create a cozy atmosphere.",
+          "example_vi": "Anh ấy làm mờ đèn để tạo không khí ấm cúng."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "The fog dimmed the view of the mountains.",
+          "example_vi": "Sương mù làm mờ tầm nhìn ra những ngọn núi."
+        },
+        {
+          "meaning_vi": "làm mờ",
+          "example_en": "Don't let this failure dim your enthusiasm.",
+          "example_vi": "Đừng để thất bại này làm mờ đi sự nhiệt tình của bạn."
+        },
+        {
+          "meaning_vi": "mờ đi",
+          "example_en": "The lights dimmed as the show began.",
+          "example_vi": "Đèn mờ đi khi buổi biểu diễn bắt đầu."
+        },
+        {
+          "meaning_vi": "mờ đi",
+          "example_en": "His hopes began to dim after the bad news.",
+          "example_vi": "Hy vọng của anh ấy bắt đầu mờ đi sau tin xấu."
+        },
+        {
+          "meaning_vi": "mờ đi",
+          "example_en": "The colors of the painting have dimmed over time.",
+          "example_vi": "Màu sắc của bức tranh đã mờ đi theo thời gian."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, rút gọn danh sách nghĩa quá dài, bổ sung ví dụ đủ 10 câu theo yêu cầu.",
+      "word": "dim",
+      "normalized_word": "dim",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The lighting in the room was very dim.",
+      "example_vi_clean": "Ánh sáng trong phòng rất mờ."
+    },
+    {
+      "id": 26862,
+      "quiz_meaning_vi": "một hào",
+      "meaning_vi_clean": "một hào; tiền",
+      "examples_clean": [
+        {
+          "meaning_vi": "một hào",
+          "example_en": "The candy bar costs only a dime.",
+          "example_vi": "Thanh kẹo chỉ có giá một hào."
+        },
+        {
+          "meaning_vi": "một hào",
+          "example_en": "He found a dime on the sidewalk.",
+          "example_vi": "Anh ấy tìm thấy một hào trên vỉa hè."
+        },
+        {
+          "meaning_vi": "một hào",
+          "example_en": "She dropped a dime into the parking meter.",
+          "example_vi": "Cô ấy bỏ một hào vào đồng hồ đỗ xe."
+        },
+        {
+          "meaning_vi": "một hào",
+          "example_en": "I don't even have a dime in my pocket.",
+          "example_vi": "Tôi thậm chí không có một hào trong túi."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "She didn't spend a dime on the party.",
+          "example_vi": "Cô ấy không tiêu một đồng tiền nào cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "Are you traveling on the company's dime?",
+          "example_vi": "Bạn đang đi du lịch bằng tiền của công ty à?"
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "He would do anything for a dime.",
+          "example_vi": "Anh ta sẽ làm bất cứ điều gì vì tiền."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "They made a lot of dimes in that business.",
+          "example_vi": "Họ đã kiếm được rất nhiều tiền trong công việc kinh doanh đó."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "It's not worth a dime to me.",
+          "example_vi": "Nó chẳng đáng một xu nào đối với tôi."
+        },
+        {
+          "meaning_vi": "tiền",
+          "example_en": "He saved every dime he earned.",
+          "example_vi": "Anh ấy tiết kiệm từng đồng tiền mình kiếm được."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, loại bỏ các nghĩa lóng không phù hợp, bổ sung ví dụ.",
+      "word": "dime",
+      "normalized_word": "dime",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The candy bar costs only a dime.",
+      "example_vi_clean": "Thanh kẹo chỉ có giá một hào."
+    },
+    {
+      "id": 26863,
+      "quiz_meaning_vi": "chiều",
+      "meaning_vi_clean": "chiều; kích thước",
+      "examples_clean": [
+        {
+          "meaning_vi": "chiều",
+          "example_en": "We live in a world of three dimensions.",
+          "example_vi": "Chúng ta sống trong một thế giới có ba chiều."
+        },
+        {
+          "meaning_vi": "chiều",
+          "example_en": "The fourth dimension is often described as time.",
+          "example_vi": "Chiều thứ tư thường được mô tả là thời gian."
+        },
+        {
+          "meaning_vi": "chiều",
+          "example_en": "The problem has a new dimension that we hadn't considered.",
+          "example_vi": "Vấn đề có một chiều hướng mới mà chúng ta chưa xem xét."
+        },
+        {
+          "meaning_vi": "chiều",
+          "example_en": "This adds a new dimension to our understanding of the topic.",
+          "example_vi": "Điều này thêm một chiều hướng mới vào sự hiểu biết của chúng ta về chủ đề này."
+        },
+        {
+          "meaning_vi": "kích thước",
+          "example_en": "What are the dimensions of the box?",
+          "example_vi": "Kích thước của cái hộp là bao nhiêu?"
+        },
+        {
+          "meaning_vi": "kích thước",
+          "example_en": "The room has large dimensions.",
+          "example_vi": "Căn phòng có kích thước lớn."
+        },
+        {
+          "meaning_vi": "kích thước",
+          "example_en": "Please provide the exact dimensions of the table.",
+          "example_vi": "Vui lòng cung cấp kích thước chính xác của cái bàn."
+        },
+        {
+          "meaning_vi": "kích thước",
+          "example_en": "The dimensions of the painting are quite impressive.",
+          "example_vi": "Kích thước của bức tranh khá ấn tượng."
+        },
+        {
+          "meaning_vi": "kích thước",
+          "example_en": "Measure the dimensions before buying the furniture.",
+          "example_vi": "Hãy đo kích thước trước khi mua đồ nội thất."
+        },
+        {
+          "meaning_vi": "kích thước",
+          "example_en": "The project has grown to massive dimensions.",
+          "example_vi": "Dự án đã phát triển đến kích thước khổng lồ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ, làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "dimension",
+      "normalized_word": "dimension",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We live in a world of three dimensions.",
+      "example_vi_clean": "Chúng ta sống trong một thế giới có ba chiều."
+    },
+    {
+      "id": 26864,
+      "quiz_meaning_vi": "nhúng",
+      "meaning_vi_clean": "nhúng; chỗ trũng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhúng",
+          "example_en": "Dip the biscuit into your tea.",
+          "example_vi": "Nhúng bánh quy vào trà của bạn."
+        },
+        {
+          "meaning_vi": "nhúng",
+          "example_en": "She dipped her hand into the water.",
+          "example_vi": "Cô ấy nhúng tay vào nước."
+        },
+        {
+          "meaning_vi": "nhúng",
+          "example_en": "Dip the brush into the paint.",
+          "example_vi": "Nhúng cọ vào sơn."
+        },
+        {
+          "meaning_vi": "nhúng",
+          "example_en": "He dipped the bread in the sauce.",
+          "example_vi": "Anh ấy nhúng bánh mì vào nước sốt."
+        },
+        {
+          "meaning_vi": "chỗ trũng",
+          "example_en": "There is a dip in the road ahead.",
+          "example_vi": "Có một chỗ trũng trên con đường phía trước."
+        },
+        {
+          "meaning_vi": "chỗ trũng",
+          "example_en": "The path goes through a small dip in the field.",
+          "example_vi": "Con đường đi qua một chỗ trũng nhỏ trên cánh đồng."
+        },
+        {
+          "meaning_vi": "chỗ trũng",
+          "example_en": "The car slowed down at the dip in the road.",
+          "example_vi": "Chiếc xe giảm tốc độ tại chỗ trũng trên đường."
+        },
+        {
+          "meaning_vi": "chỗ trũng",
+          "example_en": "Water collected in the dip of the ground.",
+          "example_vi": "Nước đọng lại ở chỗ trũng trên mặt đất."
+        },
+        {
+          "meaning_vi": "chỗ trũng",
+          "example_en": "The landscape is full of dips and hills.",
+          "example_vi": "Phong cảnh đầy những chỗ trũng và đồi."
+        },
+        {
+          "meaning_vi": "chỗ trũng",
+          "example_en": "He hid behind a dip in the landscape.",
+          "example_vi": "Anh ấy trốn sau một chỗ trũng trên địa hình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ/danh từ, làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "dip",
+      "normalized_word": "dip",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Dip the biscuit into your tea.",
+      "example_vi_clean": "Nhúng bánh quy vào trà của bạn."
+    },
+    {
+      "id": 26865,
+      "quiz_meaning_vi": "văn bằng",
+      "meaning_vi_clean": "văn bằng; chứng chỉ",
+      "examples_clean": [
+        {
+          "meaning_vi": "văn bằng",
+          "example_en": "She received her diploma in engineering.",
+          "example_vi": "Cô ấy đã nhận văn bằng kỹ sư của mình."
+        },
+        {
+          "meaning_vi": "văn bằng",
+          "example_en": "He is proud of his university diploma.",
+          "example_vi": "Anh ấy tự hào về văn bằng đại học của mình."
+        },
+        {
+          "meaning_vi": "văn bằng",
+          "example_en": "You need a diploma to apply for this job.",
+          "example_vi": "Bạn cần một văn bằng để ứng tuyển vào công việc này."
+        },
+        {
+          "meaning_vi": "văn bằng",
+          "example_en": "She framed her diploma and hung it on the wall.",
+          "example_vi": "Cô ấy đóng khung văn bằng và treo nó lên tường."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "He earned a diploma in graphic design.",
+          "example_vi": "Anh ấy đã đạt được một chứng chỉ về thiết kế đồ họa."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "The course offers a diploma upon completion.",
+          "example_vi": "Khóa học cung cấp một chứng chỉ sau khi hoàn thành."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "She is studying for a diploma in nursing.",
+          "example_vi": "Cô ấy đang học để lấy chứng chỉ điều dưỡng."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "He holds a diploma from a prestigious school.",
+          "example_vi": "Anh ấy có một chứng chỉ từ một ngôi trường danh giá."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "The diploma is recognized internationally.",
+          "example_vi": "Chứng chỉ này được công nhận trên toàn thế giới."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "She finally got her diploma after years of study.",
+          "example_vi": "Cuối cùng cô ấy cũng nhận được chứng chỉ sau nhiều năm học tập."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm sạch nghĩa, bổ sung ví dụ.",
+      "word": "diploma",
+      "normalized_word": "diploma",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She received her diploma in engineering.",
+      "example_vi_clean": "Cô ấy đã nhận văn bằng kỹ sư của mình."
+    },
+    {
+      "id": 26866,
+      "quiz_meaning_vi": "nhà ngoại giao",
+      "meaning_vi_clean": "nhà ngoại giao",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "The diplomat met with the foreign minister.",
+          "example_vi": "Nhà ngoại giao đã gặp bộ trưởng ngoại giao."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "She has worked as a diplomat for ten years.",
+          "example_vi": "Cô ấy đã làm nhà ngoại giao được mười năm."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "The diplomat negotiated a peace treaty.",
+          "example_vi": "Nhà ngoại giao đã đàm phán một hiệp ước hòa bình."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "He is a skilled diplomat representing his country.",
+          "example_vi": "Anh ấy là một nhà ngoại giao tài năng đại diện cho đất nước mình."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "The diplomat attended the international summit.",
+          "example_vi": "Nhà ngoại giao đã tham dự hội nghị thượng đỉnh quốc tế."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "Being a diplomat requires great communication skills.",
+          "example_vi": "Trở thành một nhà ngoại giao đòi hỏi kỹ năng giao tiếp tuyệt vời."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "The diplomat was sent to resolve the conflict.",
+          "example_vi": "Nhà ngoại giao đã được cử đến để giải quyết xung đột."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "She is a career diplomat with much experience.",
+          "example_vi": "Cô ấy là một nhà ngoại giao chuyên nghiệp với nhiều kinh nghiệm."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "The diplomat spoke at the United Nations.",
+          "example_vi": "Nhà ngoại giao đã phát biểu tại Liên Hợp Quốc."
+        },
+        {
+          "meaning_vi": "nhà ngoại giao",
+          "example_en": "He acted like a diplomat during the argument.",
+          "example_vi": "Anh ấy cư xử như một nhà ngoại giao trong cuộc tranh luận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm sạch nghĩa, bổ sung ví dụ.",
+      "word": "diplomat",
+      "normalized_word": "diplomat",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The diplomat met with the foreign minister.",
+      "example_vi_clean": "Nhà ngoại giao đã gặp bộ trưởng ngoại giao."
+    },
+    {
+      "id": 26867,
+      "quiz_meaning_vi": "sự biến mất",
+      "meaning_vi_clean": "sự biến mất",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "The sudden disappearance of the cat worried the family.",
+          "example_vi": "Sự biến mất đột ngột của con mèo khiến gia đình lo lắng."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "Police are investigating the disappearance of the man.",
+          "example_vi": "Cảnh sát đang điều tra sự biến mất của người đàn ông."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "The disappearance of the forest is a major concern.",
+          "example_vi": "Sự biến mất của khu rừng là một mối quan tâm lớn."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "We were shocked by the disappearance of the evidence.",
+          "example_vi": "Chúng tôi đã bị sốc bởi sự biến mất của bằng chứng."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "The disappearance of the sun behind the clouds made it dark.",
+          "example_vi": "Sự biến mất của mặt trời sau những đám mây làm trời tối đi."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "He could not explain the disappearance of his keys.",
+          "example_vi": "Anh ấy không thể giải thích sự biến mất của chìa khóa của mình."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "The disappearance of the species is due to habitat loss.",
+          "example_vi": "Sự biến mất của loài này là do mất môi trường sống."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "Her disappearance remains a mystery.",
+          "example_vi": "Sự biến mất của cô ấy vẫn là một bí ẩn."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "The disappearance of the snow was a sign of spring.",
+          "example_vi": "Sự biến mất của tuyết là một dấu hiệu của mùa xuân."
+        },
+        {
+          "meaning_vi": "sự biến mất",
+          "example_en": "They reported the disappearance to the authorities.",
+          "example_vi": "Họ đã báo cáo sự biến mất cho chính quyền."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm sạch nghĩa, bổ sung ví dụ.",
+      "word": "disappearance",
+      "normalized_word": "disappearance",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The sudden disappearance of the cat worried the family.",
+      "example_vi_clean": "Sự biến mất đột ngột của con mèo khiến gia đình lo lắng."
+    },
+    {
+      "id": 26868,
+      "quiz_meaning_vi": "sự không tán thành",
+      "meaning_vi_clean": "sự không tán thành",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "She expressed her disapproval of the plan.",
+          "example_vi": "Cô ấy bày tỏ sự không tán thành của mình đối với kế hoạch."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "He looked at me with clear disapproval.",
+          "example_vi": "Anh ấy nhìn tôi với sự không tán thành rõ ràng."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "There was a murmur of disapproval from the crowd.",
+          "example_vi": "Có một tiếng xì xào không tán thành từ đám đông."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "She shook her head in disapproval.",
+          "example_vi": "Cô ấy lắc đầu tỏ ý không tán thành."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "His disapproval was evident in his tone.",
+          "example_vi": "Sự không tán thành của anh ấy thể hiện rõ trong giọng điệu."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "They showed their disapproval by walking out.",
+          "example_vi": "Họ thể hiện sự không tán thành bằng cách bỏ ra ngoài."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "I could sense her disapproval of my choice.",
+          "example_vi": "Tôi có thể cảm nhận được sự không tán thành của cô ấy đối với lựa chọn của tôi."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "The committee voiced their disapproval.",
+          "example_vi": "Ủy ban đã lên tiếng không tán thành."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "He tried to hide his disapproval.",
+          "example_vi": "Anh ấy cố gắng che giấu sự không tán thành của mình."
+        },
+        {
+          "meaning_vi": "sự không tán thành",
+          "example_en": "Her disapproval made him feel uncomfortable.",
+          "example_vi": "Sự không tán thành của cô ấy làm anh ấy cảm thấy không thoải mái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm sạch nghĩa, bổ sung ví dụ.",
+      "word": "disapproval",
+      "normalized_word": "disapproval",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She expressed her disapproval of the plan.",
+      "example_vi_clean": "Cô ấy bày tỏ sự không tán thành của mình đối với kế hoạch."
+    },
+    {
+      "id": 26869,
+      "quiz_meaning_vi": "không tán thành",
+      "meaning_vi_clean": "không tán thành",
+      "examples_clean": [
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "She disapproves of his behavior.",
+          "example_vi": "Cô ấy không tán thành hành vi của anh ấy."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "My parents disapprove of my career choice.",
+          "example_vi": "Cha mẹ tôi không tán thành lựa chọn nghề nghiệp của tôi."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "He disapproves of smoking in the house.",
+          "example_vi": "Anh ấy không tán thành việc hút thuốc trong nhà."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "Many people disapprove of the new law.",
+          "example_vi": "Nhiều người không tán thành luật mới."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "She disapproves of the way he talks to others.",
+          "example_vi": "Cô ấy không tán thành cách anh ấy nói chuyện với người khác."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "Do you disapprove of my decision?",
+          "example_vi": "Bạn có không tán thành quyết định của tôi không?"
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "The teacher disapproves of cheating on exams.",
+          "example_vi": "Giáo viên không tán thành việc gian lận trong các kỳ thi."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "They strongly disapprove of the violence.",
+          "example_vi": "Họ cực lực không tán thành bạo lực."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "I disapprove of wasting time.",
+          "example_vi": "Tôi không tán thành việc lãng phí thời gian."
+        },
+        {
+          "meaning_vi": "không tán thành",
+          "example_en": "He disapproves of the current management style.",
+          "example_vi": "Anh ấy không tán thành phong cách quản lý hiện tại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Làm sạch nghĩa, bổ sung ví dụ.",
+      "word": "disapprove",
+      "normalized_word": "disapprove",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She disapproves of his behavior.",
+      "example_vi_clean": "Cô ấy không tán thành hành vi của anh ấy."
+    },
+    {
+      "id": 26870,
+      "quiz_meaning_vi": "sự dỡ hàng",
+      "meaning_vi_clean": "sự dỡ hàng; sự phóng ra; sự thanh toán",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự dỡ hàng",
+          "example_en": "The discharge of the cargo took all day.",
+          "example_vi": "Việc dỡ hàng mất cả ngày."
+        },
+        {
+          "meaning_vi": "sự dỡ hàng",
+          "example_en": "The ship is ready for the discharge of goods.",
+          "example_vi": "Con tàu đã sẵn sàng cho việc dỡ hàng hóa."
+        },
+        {
+          "meaning_vi": "sự dỡ hàng",
+          "example_en": "They started the discharge of the containers.",
+          "example_vi": "Họ bắt đầu việc dỡ các container."
+        },
+        {
+          "meaning_vi": "sự dỡ hàng",
+          "example_en": "The port handles the discharge of many ships.",
+          "example_vi": "Cảng xử lý việc dỡ hàng của nhiều con tàu."
+        },
+        {
+          "meaning_vi": "sự phóng ra",
+          "example_en": "The discharge of electricity caused a spark.",
+          "example_vi": "Sự phóng ra điện đã gây ra tia lửa."
+        },
+        {
+          "meaning_vi": "sự phóng ra",
+          "example_en": "The factory is responsible for the discharge of waste.",
+          "example_vi": "Nhà máy chịu trách nhiệm về việc xả thải."
+        },
+        {
+          "meaning_vi": "sự phóng ra",
+          "example_en": "The discharge of the missile was successful.",
+          "example_vi": "Việc phóng tên lửa đã thành công."
+        },
+        {
+          "meaning_vi": "sự thanh toán",
+          "example_en": "He made a full discharge of his debts.",
+          "example_vi": "Anh ấy đã thanh toán đầy đủ các khoản nợ của mình."
+        },
+        {
+          "meaning_vi": "sự thanh toán",
+          "example_en": "The discharge of the loan was completed on time.",
+          "example_vi": "Việc thanh toán khoản vay đã được hoàn thành đúng hạn."
+        },
+        {
+          "meaning_vi": "sự thanh toán",
+          "example_en": "She sought the discharge of her financial obligations.",
+          "example_vi": "Cô ấy tìm cách thanh toán các nghĩa vụ tài chính của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ, làm sạch nghĩa và bổ sung ví dụ.",
+      "word": "discharge",
+      "normalized_word": "discharge",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The discharge of the cargo took all day.",
+      "example_vi_clean": "Việc dỡ hàng mất cả ngày."
+    }
+  ]
+}

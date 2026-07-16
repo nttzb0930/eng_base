@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25311,
+      "quiz_meaning_vi": "cơ hội",
+      "meaning_vi_clean": "cơ hội; thời cơ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cơ hội",
+          "example_en": "This is a great opportunity to learn something new.",
+          "example_vi": "Đây là một cơ hội tuyệt vời để học điều gì đó mới."
+        },
+        {
+          "meaning_vi": "cơ hội",
+          "example_en": "I had the opportunity to travel abroad last summer.",
+          "example_vi": "Tôi đã có cơ hội đi du lịch nước ngoài vào mùa hè năm ngoái."
+        },
+        {
+          "meaning_vi": "cơ hội",
+          "example_en": "Don't miss this opportunity to join the team.",
+          "example_vi": "Đừng bỏ lỡ cơ hội này để gia nhập đội."
+        },
+        {
+          "meaning_vi": "cơ hội",
+          "example_en": "She is looking for an opportunity to advance her career.",
+          "example_vi": "Cô ấy đang tìm kiếm một cơ hội để thăng tiến trong sự nghiệp."
+        },
+        {
+          "meaning_vi": "thời cơ",
+          "example_en": "He waited for the right time to seize the opportunity.",
+          "example_vi": "Anh ấy đã chờ đợi thời cơ thích hợp để nắm bắt cơ hội."
+        },
+        {
+          "meaning_vi": "thời cơ",
+          "example_en": "The economic situation provides a unique opportunity for growth.",
+          "example_vi": "Tình hình kinh tế mang lại một thời cơ độc đáo cho sự phát triển."
+        },
+        {
+          "meaning_vi": "thời cơ",
+          "example_en": "We must act now while the opportunity is still available.",
+          "example_vi": "Chúng ta phải hành động ngay bây giờ khi thời cơ vẫn còn."
+        },
+        {
+          "meaning_vi": "thời cơ",
+          "example_en": "The meeting was a perfect opportunity to discuss our plans.",
+          "example_vi": "Cuộc họp là một thời cơ hoàn hảo để thảo luận về các kế hoạch của chúng ta."
+        },
+        {
+          "meaning_vi": "cơ hội",
+          "example_en": "Education gives everyone an equal opportunity to succeed.",
+          "example_vi": "Giáo dục mang lại cho mọi người cơ hội bình đẳng để thành công."
+        },
+        {
+          "meaning_vi": "cơ hội",
+          "example_en": "I am grateful for the opportunity to work with you.",
+          "example_vi": "Tôi rất biết ơn vì có cơ hội được làm việc với bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ theo quy tắc.",
+      "word": "opportunity",
+      "normalized_word": "opportunity",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This is a great opportunity to learn something new.",
+      "example_vi_clean": "Đây là một cơ hội tuyệt vời để học điều gì đó mới."
+    },
+    {
+      "id": 25312,
+      "quiz_meaning_vi": "phản đối",
+      "meaning_vi_clean": "phản đối; đối lập",
+      "examples_clean": [
+        {
+          "meaning_vi": "phản đối",
+          "example_en": "Many people oppose the new tax law.",
+          "example_vi": "Nhiều người phản đối luật thuế mới."
+        },
+        {
+          "meaning_vi": "phản đối",
+          "example_en": "The local community continues to oppose the construction project.",
+          "example_vi": "Cộng đồng địa phương tiếp tục phản đối dự án xây dựng."
+        },
+        {
+          "meaning_vi": "phản đối",
+          "example_en": "She decided to oppose the decision made by the board.",
+          "example_vi": "Cô ấy quyết định phản đối quyết định do hội đồng đưa ra."
+        },
+        {
+          "meaning_vi": "phản đối",
+          "example_en": "Do you oppose the changes to the schedule?",
+          "example_vi": "Bạn có phản đối những thay đổi đối với lịch trình không?"
+        },
+        {
+          "meaning_vi": "đối lập",
+          "example_en": "The two political parties often oppose each other on key issues.",
+          "example_vi": "Hai đảng chính trị thường đối lập nhau về các vấn đề then chốt."
+        },
+        {
+          "meaning_vi": "đối lập",
+          "example_en": "Their views on the matter strongly oppose one another.",
+          "example_vi": "Quan điểm của họ về vấn đề này hoàn toàn đối lập nhau."
+        },
+        {
+          "meaning_vi": "đối lập",
+          "example_en": "The two teams will oppose each other in the final match.",
+          "example_vi": "Hai đội sẽ đối lập nhau trong trận chung kết."
+        },
+        {
+          "meaning_vi": "đối lập",
+          "example_en": "These two ideas oppose each other in every way.",
+          "example_vi": "Hai ý tưởng này đối lập nhau về mọi mặt."
+        },
+        {
+          "meaning_vi": "phản đối",
+          "example_en": "He stood up to oppose the unfair treatment of workers.",
+          "example_vi": "Anh ấy đứng lên để phản đối sự đối xử bất công với người lao động."
+        },
+        {
+          "meaning_vi": "phản đối",
+          "example_en": "They will strongly oppose any attempt to cut funding.",
+          "example_vi": "Họ sẽ phản đối mạnh mẽ bất kỳ nỗ lực cắt giảm ngân sách nào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ, chọn nghĩa phổ biến.",
+      "word": "oppose",
+      "normalized_word": "oppose",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Many people oppose the new tax law.",
+      "example_vi_clean": "Nhiều người phản đối luật thuế mới."
+    },
+    {
+      "id": 25313,
+      "quiz_meaning_vi": "đối diện",
+      "meaning_vi_clean": "đối diện; ngược lại",
+      "examples_clean": [
+        {
+          "meaning_vi": "đối diện",
+          "example_en": "They live in the house opposite ours.",
+          "example_vi": "Họ sống trong ngôi nhà đối diện nhà chúng tôi."
+        },
+        {
+          "meaning_vi": "đối diện",
+          "example_en": "The bank is located opposite the park.",
+          "example_vi": "Ngân hàng nằm đối diện công viên."
+        },
+        {
+          "meaning_vi": "đối diện",
+          "example_en": "She sat opposite me during the meeting.",
+          "example_vi": "Cô ấy ngồi đối diện tôi trong suốt cuộc họp."
+        },
+        {
+          "meaning_vi": "đối diện",
+          "example_en": "There is a small cafe opposite the station.",
+          "example_vi": "Có một quán cà phê nhỏ đối diện nhà ga."
+        },
+        {
+          "meaning_vi": "ngược lại",
+          "example_en": "The result was the opposite of what we expected.",
+          "example_vi": "Kết quả hoàn toàn ngược lại với những gì chúng tôi mong đợi."
+        },
+        {
+          "meaning_vi": "ngược lại",
+          "example_en": "He said the opposite of what he really meant.",
+          "example_vi": "Anh ấy đã nói ngược lại với những gì anh ấy thực sự nghĩ."
+        },
+        {
+          "meaning_vi": "ngược lại",
+          "example_en": "They have opposite opinions on this topic.",
+          "example_vi": "Họ có những ý kiến ngược lại về chủ đề này."
+        },
+        {
+          "meaning_vi": "ngược lại",
+          "example_en": "The two brothers have opposite personalities.",
+          "example_vi": "Hai anh em có tính cách ngược lại nhau."
+        },
+        {
+          "meaning_vi": "đối diện",
+          "example_en": "The store is directly opposite the library.",
+          "example_vi": "Cửa hàng nằm ngay đối diện thư viện."
+        },
+        {
+          "meaning_vi": "đối diện",
+          "example_en": "We stood on opposite sides of the street.",
+          "example_vi": "Chúng tôi đứng ở hai phía đối diện của con đường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ giới từ thành tính từ, chọn nghĩa phổ biến.",
+      "word": "opposite",
+      "normalized_word": "opposite",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They live in the house opposite ours.",
+      "example_vi_clean": "Họ sống trong ngôi nhà đối diện nhà chúng tôi."
+    },
+    {
+      "id": 25314,
+      "quiz_meaning_vi": "tổ chức",
+      "meaning_vi_clean": "tổ chức",
+      "examples_clean": [
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "We need to organize a meeting for next week.",
+          "example_vi": "Chúng ta cần tổ chức một cuộc họp vào tuần tới."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "She helped organize the charity event.",
+          "example_vi": "Cô ấy đã giúp tổ chức sự kiện từ thiện."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "They are trying to organize a trip to the mountains.",
+          "example_vi": "Họ đang cố gắng tổ chức một chuyến đi đến vùng núi."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "It takes time to organize such a large conference.",
+          "example_vi": "Cần có thời gian để tổ chức một hội nghị lớn như vậy."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "Can you organize your files by date?",
+          "example_vi": "Bạn có thể tổ chức các tệp tin của mình theo ngày không?"
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "The school will organize a sports day for students.",
+          "example_vi": "Trường học sẽ tổ chức một ngày hội thể thao cho học sinh."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "He is good at organizing his daily tasks.",
+          "example_vi": "Anh ấy giỏi trong việc tổ chức các công việc hàng ngày của mình."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "We should organize our thoughts before speaking.",
+          "example_vi": "Chúng ta nên tổ chức suy nghĩ của mình trước khi nói."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "They organized a protest against the new policy.",
+          "example_vi": "Họ đã tổ chức một cuộc biểu tình chống lại chính sách mới."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "The club will organize a party to celebrate the success.",
+          "example_vi": "Câu lạc bộ sẽ tổ chức một bữa tiệc để ăn mừng thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, bổ sung nghĩa và ví dụ chuẩn.",
+      "word": "organise",
+      "normalized_word": "organise",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "We need to organize a meeting for next week.",
+      "example_vi_clean": "Chúng ta cần tổ chức một cuộc họp vào tuần tới."
+    },
+    {
+      "id": 25315,
+      "quiz_meaning_vi": "tổ chức",
+      "meaning_vi_clean": "tổ chức",
+      "examples_clean": [
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "They need to organize the event carefully.",
+          "example_vi": "Họ cần tổ chức sự kiện một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "I will organize the documents for the presentation.",
+          "example_vi": "Tôi sẽ tổ chức các tài liệu cho bài thuyết trình."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "She knows how to organize her time effectively.",
+          "example_vi": "Cô ấy biết cách tổ chức thời gian của mình một cách hiệu quả."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "The committee will organize a workshop next month.",
+          "example_vi": "Ủy ban sẽ tổ chức một buổi hội thảo vào tháng tới."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "We must organize our resources to finish the project.",
+          "example_vi": "Chúng ta phải tổ chức các nguồn lực để hoàn thành dự án."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "He helped organize the local community group.",
+          "example_vi": "Anh ấy đã giúp tổ chức nhóm cộng đồng địa phương."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "It is important to organize your notes before studying.",
+          "example_vi": "Việc tổ chức các ghi chú trước khi học là rất quan trọng."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "They organized a team to clean up the park.",
+          "example_vi": "Họ đã tổ chức một đội để dọn dẹp công viên."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "The company will organize a training session for new staff.",
+          "example_vi": "Công ty sẽ tổ chức một buổi đào tạo cho nhân viên mới."
+        },
+        {
+          "meaning_vi": "tổ chức",
+          "example_en": "She is organizing a surprise party for her friend.",
+          "example_vi": "Cô ấy đang tổ chức một bữa tiệc bất ngờ cho bạn mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, bổ sung nghĩa và ví dụ chuẩn.",
+      "word": "organize",
+      "normalized_word": "organize",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They need to organize the event carefully.",
+      "example_vi_clean": "Họ cần tổ chức sự kiện một cách cẩn thận."
+    },
+    {
+      "id": 25316,
+      "quiz_meaning_vi": "có trật tự",
+      "meaning_vi_clean": "có trật tự; được sắp xếp",
+      "examples_clean": [
+        {
+          "meaning_vi": "có trật tự",
+          "example_en": "She has a very organized desk.",
+          "example_vi": "Cô ấy có một chiếc bàn làm việc rất có trật tự."
+        },
+        {
+          "meaning_vi": "có trật tự",
+          "example_en": "He is a very organized person who plans everything.",
+          "example_vi": "Anh ấy là một người rất có trật tự, người lên kế hoạch cho mọi thứ."
+        },
+        {
+          "meaning_vi": "có trật tự",
+          "example_en": "Keep your room organized at all times.",
+          "example_vi": "Hãy giữ phòng của bạn có trật tự mọi lúc."
+        },
+        {
+          "meaning_vi": "có trật tự",
+          "example_en": "An organized approach helps you work faster.",
+          "example_vi": "Một cách tiếp cận có trật tự giúp bạn làm việc nhanh hơn."
+        },
+        {
+          "meaning_vi": "được sắp xếp",
+          "example_en": "The books are well organized on the shelves.",
+          "example_vi": "Những cuốn sách được sắp xếp tốt trên các kệ."
+        },
+        {
+          "meaning_vi": "được sắp xếp",
+          "example_en": "The event was well organized and ran smoothly.",
+          "example_vi": "Sự kiện đã được sắp xếp tốt và diễn ra suôn sẻ."
+        },
+        {
+          "meaning_vi": "được sắp xếp",
+          "example_en": "Everything is organized for the trip tomorrow.",
+          "example_vi": "Mọi thứ đã được sắp xếp cho chuyến đi ngày mai."
+        },
+        {
+          "meaning_vi": "được sắp xếp",
+          "example_en": "The files are organized by category.",
+          "example_vi": "Các tệp tin được sắp xếp theo danh mục."
+        },
+        {
+          "meaning_vi": "có trật tự",
+          "example_en": "She keeps her life very organized.",
+          "example_vi": "Cô ấy giữ cuộc sống của mình rất có trật tự."
+        },
+        {
+          "meaning_vi": "có trật tự",
+          "example_en": "An organized mind is key to success.",
+          "example_vi": "Một trí óc có trật tự là chìa khóa dẫn đến thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ chuẩn.",
+      "word": "organized",
+      "normalized_word": "organized",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has a very organized desk.",
+      "example_vi_clean": "Cô ấy có một chiếc bàn làm việc rất có trật tự."
+    },
+    {
+      "id": 25317,
+      "quiz_meaning_vi": "gốc",
+      "meaning_vi_clean": "gốc; độc đáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "gốc",
+          "example_en": "This is the original version of the document.",
+          "example_vi": "Đây là phiên bản gốc của tài liệu."
+        },
+        {
+          "meaning_vi": "gốc",
+          "example_en": "The original plan was to leave early.",
+          "example_vi": "Kế hoạch gốc là rời đi sớm."
+        },
+        {
+          "meaning_vi": "gốc",
+          "example_en": "She kept the original painting in her house.",
+          "example_vi": "Cô ấy giữ bức tranh gốc trong nhà mình."
+        },
+        {
+          "meaning_vi": "gốc",
+          "example_en": "The original owner of the house was a famous writer.",
+          "example_vi": "Chủ sở hữu gốc của ngôi nhà là một nhà văn nổi tiếng."
+        },
+        {
+          "meaning_vi": "độc đáo",
+          "example_en": "He has a very original way of solving problems.",
+          "example_vi": "Anh ấy có một cách giải quyết vấn đề rất độc đáo."
+        },
+        {
+          "meaning_vi": "độc đáo",
+          "example_en": "The design of the building is quite original.",
+          "example_vi": "Thiết kế của tòa nhà khá độc đáo."
+        },
+        {
+          "meaning_vi": "độc đáo",
+          "example_en": "She came up with an original idea for the project.",
+          "example_vi": "Cô ấy đã đưa ra một ý tưởng độc đáo cho dự án."
+        },
+        {
+          "meaning_vi": "độc đáo",
+          "example_en": "His style of painting is truly original.",
+          "example_vi": "Phong cách vẽ tranh của anh ấy thực sự độc đáo."
+        },
+        {
+          "meaning_vi": "gốc",
+          "example_en": "The original text was written in Latin.",
+          "example_vi": "Văn bản gốc được viết bằng tiếng Latin."
+        },
+        {
+          "meaning_vi": "gốc",
+          "example_en": "We returned to the original location.",
+          "example_vi": "Chúng tôi đã quay lại địa điểm gốc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, chọn nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "original",
+      "normalized_word": "original",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is the original version of the document.",
+      "example_vi_clean": "Đây là phiên bản gốc của tài liệu."
+    },
+    {
+      "id": 25318,
+      "quiz_meaning_vi": "mồ côi",
+      "meaning_vi_clean": "mồ côi",
+      "examples_clean": [
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "The orphan boy lived with his aunt.",
+          "example_vi": "Cậu bé mồ côi sống với dì của mình."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "She grew up as an orphan.",
+          "example_vi": "Cô ấy lớn lên như một đứa trẻ mồ côi."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "Many children were left orphan after the war.",
+          "example_vi": "Nhiều trẻ em đã trở nên mồ côi sau chiến tranh."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "The orphanage provides a home for every orphan.",
+          "example_vi": "Trại trẻ mồ côi cung cấp một mái nhà cho mỗi đứa trẻ mồ côi."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "He decided to adopt an orphan.",
+          "example_vi": "Anh ấy quyết định nhận nuôi một đứa trẻ mồ côi."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "The orphan was well cared for by the community.",
+          "example_vi": "Đứa trẻ mồ côi được cộng đồng chăm sóc chu đáo."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "She works at a center for orphan children.",
+          "example_vi": "Cô ấy làm việc tại một trung tâm cho trẻ em mồ côi."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "The story is about an orphan who finds a new family.",
+          "example_vi": "Câu chuyện kể về một đứa trẻ mồ côi tìm thấy gia đình mới."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "They support orphan children in the region.",
+          "example_vi": "Họ hỗ trợ trẻ em mồ côi trong khu vực."
+        },
+        {
+          "meaning_vi": "mồ côi",
+          "example_en": "Being an orphan was difficult for him.",
+          "example_vi": "Việc là một đứa trẻ mồ côi rất khó khăn đối với anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, chọn nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "orphan",
+      "normalized_word": "orphan",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The orphan boy lived with his aunt.",
+      "example_vi_clean": "Cậu bé mồ côi sống với dì của mình."
+    },
+    {
+      "id": 25319,
+      "quiz_meaning_vi": "bản thân chúng ta",
+      "meaning_vi_clean": "bản thân chúng ta",
+      "examples_clean": [
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We should do it ourselves.",
+          "example_vi": "Chúng ta nên tự mình làm việc đó."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We need to believe in ourselves.",
+          "example_vi": "Chúng ta cần tin tưởng vào bản thân chúng ta."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We are responsible for ourselves.",
+          "example_vi": "Chúng ta chịu trách nhiệm cho bản thân chúng ta."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We can solve this problem ourselves.",
+          "example_vi": "Chúng ta có thể tự mình giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We should keep this secret to ourselves.",
+          "example_vi": "Chúng ta nên giữ bí mật này cho bản thân chúng ta."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We enjoyed ourselves at the party.",
+          "example_vi": "Chúng ta đã rất vui vẻ tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We must protect ourselves from the cold.",
+          "example_vi": "Chúng ta phải tự bảo vệ bản thân chúng ta khỏi cái lạnh."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We often talk to ourselves when thinking.",
+          "example_vi": "Chúng ta thường tự nói chuyện với bản thân chúng ta khi suy nghĩ."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We should be proud of ourselves.",
+          "example_vi": "Chúng ta nên tự hào về bản thân chúng ta."
+        },
+        {
+          "meaning_vi": "bản thân chúng ta",
+          "example_en": "We prepared the meal ourselves.",
+          "example_vi": "Chúng ta đã tự mình chuẩn bị bữa ăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ chuẩn.",
+      "word": "ourselves",
+      "normalized_word": "ourselves",
+      "cefr_level": "A2",
+      "pos": "pronoun",
+      "pos_vi_clean": "đại từ",
+      "example_en_clean": "We should do it ourselves.",
+      "example_vi_clean": "Chúng ta nên tự mình làm việc đó."
+    },
+    {
+      "id": 25320,
+      "quiz_meaning_vi": "lò",
+      "meaning_vi_clean": "lò",
+      "examples_clean": [
+        {
+          "meaning_vi": "lò",
+          "example_en": "She put the cake in the oven.",
+          "example_vi": "Cô ấy đặt chiếc bánh vào lò."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "Preheat the oven to 180 degrees.",
+          "example_vi": "Làm nóng lò trước ở 180 độ."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "The oven is not working properly.",
+          "example_vi": "Lò không hoạt động bình thường."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "Take the pizza out of the oven.",
+          "example_vi": "Lấy bánh pizza ra khỏi lò."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "I need to clean the oven today.",
+          "example_vi": "Tôi cần làm sạch lò hôm nay."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "The smell of bread came from the oven.",
+          "example_vi": "Mùi bánh mì tỏa ra từ lò."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "Is the oven hot enough yet?",
+          "example_vi": "Lò đã đủ nóng chưa?"
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "She baked cookies in the oven.",
+          "example_vi": "Cô ấy đã nướng bánh quy trong lò."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "Don't touch the oven door.",
+          "example_vi": "Đừng chạm vào cửa lò."
+        },
+        {
+          "meaning_vi": "lò",
+          "example_en": "The oven timer went off.",
+          "example_vi": "Hẹn giờ của lò đã reo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ chuẩn.",
+      "word": "oven",
+      "normalized_word": "oven",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She put the cake in the oven.",
+      "example_vi_clean": "Cô ấy đặt chiếc bánh vào lò."
+    }
+  ]
+}

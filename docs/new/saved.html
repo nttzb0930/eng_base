@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VoCaBu — Từ đã lưu</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { outfit: ['Outfit', 'sans-serif'] },
+        colors: {
+          ink: { 900: '#0f172a', 700: '#334155', 500: '#64748b', 400: '#94a3b8', 300: '#cbd5e1' },
+          canvas: '#f7f8fa',
+          line: '#e6e8ee',
+          mint: { 50: '#ecfdf5', 100: '#d1fae5', 200: '#a7f3d0', 500: '#10b981', 600: '#059669', 700: '#047857' },
+          sky: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb' },
+          amber: { 50: '#fffbeb', 100: '#fef3c7', 500: '#f59e0b', 600: '#d97706' },
+          rose: { 50: '#fff1f2', 100: '#ffe4e6', 500: '#f43f5e', 600: '#e11d48' },
+          violet: { 50: '#f5f3ff', 100: '#ede9fe', 500: '#8b5cf6', 600: '#7c3aed' }
+        },
+        boxShadow: {
+          soft: '0 1px 2px rgba(15,23,42,0.04), 0 1px 1px rgba(15,23,42,0.03)',
+          lift: '0 4px 16px -4px rgba(15,23,42,0.08), 0 2px 4px rgba(15,23,42,0.04)'
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html, body { font-family: 'Outfit', sans-serif; }
+  body { background: #f7f8fa; color: #0f172a; }
+  .card-soft { background: #fff; border: 1px solid #eef0f4; border-radius: 18px; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+  .card-soft:hover { transform: translateY(-2px); box-shadow: 0 6px 20px -8px rgba(15,23,42,0.10); border-color: #e2e6ec; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+  .reco-card { background: radial-gradient(120% 140% at 0% 0%, #10b981 0%, #047857 55%, #064e3b 100%); color: #fff; border-radius: 24px; position: relative; overflow: hidden; }
+  .reco-card::after { content: ""; position: absolute; right: -60px; top: -60px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.10), transparent 65%); pointer-events: none; }
+  .review-tile { background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); border-radius: 16px; padding: 16px; cursor: pointer; transition: background .15s ease, transform .15s ease; }
+  .review-tile:hover { background: rgba(255,255,255,0.16); transform: translateY(-2px); }
+  .ico-circle { width: 40px; height: 40px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; }
+  .level-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .stat-tile { background: #fff; border: 1px solid #eef0f4; border-radius: 16px; padding: 16px; }
+  .word-card { background: #fff; border: 1px solid #eef0f4; border-radius: 16px; padding: 16px 18px; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+  .word-card:hover { transform: translateY(-1px); box-shadow: 0 4px 14px -6px rgba(15,23,42,0.08); border-color: #e2e6ec; }
+  .filter-chip { padding: 6px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 600; border: 1.5px solid #e6e8ee; background: #fff; color: #475569; cursor: pointer; transition: all .15s ease; white-space: nowrap; }
+  .filter-chip:hover { border-color: #cbd5e1; }
+  .filter-chip.active { background: #0f172a; border-color: #0f172a; color: #fff; }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px; font-size: 14px; font-weight: 500; color: #334155; transition: background .15s ease, color .15s ease; }
+  .nav-item:hover { background: #f1f3f7; color: #0f172a; }
+  .nav-item.active { background: #ecfdf5; color: #047857; font-weight: 600; }
+  .nav-item.active svg { color: #10b981; }
+  .icon-btn { width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; color: #64748b; background: #f1f3f7; border: none; cursor: pointer; transition: background .15s ease, color .15s ease; }
+  .icon-btn:hover { background: #e6e8ee; color: #0f172a; }
+  .icon-btn.danger:hover { background: #ffe4e6; color: #e11d48; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: #e2e6ec; border-radius: 999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #cbd5e1; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<div class="flex min-h-screen">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="w-[260px] shrink-0 border-r border-line bg-white flex flex-col">
+    <div class="px-5 pt-6 pb-5 flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-mint-500 flex items-center justify-center text-white">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+      </div>
+      <div>
+        <div class="font-extrabold text-[15px] tracking-tight">VoCaBu</div>
+        <div class="text-[11px] text-ink-500 -mt-0.5">English, every day</div>
+      </div>
+    </div>
+
+    <nav class="px-3 py-2 space-y-1 flex-1">
+      <a class="nav-item" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>
+        Dashboard
+      </a>
+      <a class="nav-item" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Học
+      </a>
+      <a class="nav-item" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+        Chủ đề
+      </a>
+      <a class="nav-item active" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+        Từ đã lưu
+      </a>
+      <a class="nav-item" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 22V12h6v10"/></svg>
+        Luyện tập
+      </a>
+      <a class="nav-item" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>
+        Flashcards
+      </a>
+      <a class="nav-item" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        Bảng xếp hạng
+      </a>
+    </nav>
+
+    <div class="p-3 border-t border-line">
+      <div class="flex items-center gap-2.5 px-2 py-2">
+        <div class="w-8 h-8 rounded-full bg-ink-900 text-white flex items-center justify-center text-[12px] font-semibold">N</div>
+        <div class="flex-1 min-w-0">
+          <div class="text-[13px] font-semibold truncate">Nguyễn Văn Hùng</div>
+          <div class="text-[11px] text-ink-500 -mt-0.5">Learner</div>
+        </div>
+        <button class="p-1.5 rounded-md hover:bg-slate-100 text-ink-500">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="flex-1 min-w-0">
+    <div class="max-w-6xl mx-auto px-8 py-10 space-y-8">
+
+      <!-- HEADER -->
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <div class="text-[11px] font-semibold tracking-[0.12em] uppercase text-mint-600 mb-2">Danh sách cá nhân</div>
+          <h1 class="text-[34px] leading-[1.1] font-extrabold tracking-tight text-ink-900">Từ đã lưu</h1>
+          <p class="text-ink-500 mt-2 text-[15px] max-w-2xl">Ôn lại các từ vựng bạn đã lưu khi học bài. Học theo flashcard, làm trắc nghiệm, hoặc nghe phát âm.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="card-soft px-3.5 py-2 text-[13px] font-semibold text-ink-700 inline-flex items-center gap-1.5 hover:border-ink-300">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            Tạo danh sách
+          </button>
+          <button class="card-soft px-3.5 py-2 text-[13px] font-semibold text-ink-700 inline-flex items-center gap-1.5 hover:border-ink-300">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Xuất CSV
+          </button>
+        </div>
+      </div>
+
+      <!-- QUICK REVIEW BANNER -->
+      <div class="reco-card p-7 md:p-8">
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur text-[11px] font-semibold uppercase tracking-wider mb-3">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m3 12 7-7 4 4 7-7"/><path d="M21 8v6h-6"/></svg>
+            Ôn nhanh 12 từ
+          </div>
+          <h2 class="text-[24px] font-extrabold tracking-tight">Chọn cách ôn phù hợp với bạn</h2>
+
+          <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div class="review-tile">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 4v4"/></svg>
+                </div>
+                <div class="flex-1">
+                  <div class="font-bold text-[14px]">Flashcards</div>
+                  <div class="text-[12px] text-white/75">Lật thẻ, tự đánh giá thuộc / chưa thuộc</div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </div>
+            </div>
+
+            <div class="review-tile">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <div class="flex-1">
+                  <div class="font-bold text-[14px]">Trắc nghiệm</div>
+                  <div class="text-[12px] text-white/75">Chọn nghĩa đúng trong 4 đáp án</div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </div>
+            </div>
+
+            <div class="review-tile">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
+                </div>
+                <div class="flex-1">
+                  <div class="font-bold text-[14px]">Nghe & chọn</div>
+                  <div class="text-[12px] text-white/75">Nghe audio, chọn từ nghe được</div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS STRIP -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="stat-tile flex items-center gap-3">
+          <div class="ico-circle bg-rose-50 text-rose-500">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+          </div>
+          <div>
+            <div class="text-[22px] font-extrabold tracking-tight leading-none">12</div>
+            <div class="text-[12px] text-ink-500 mt-1 font-medium">Tổng đã lưu</div>
+          </div>
+        </div>
+
+        <div class="stat-tile flex items-center gap-3">
+          <div class="ico-circle bg-mint-50 text-mint-600">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div>
+            <div class="text-[22px] font-extrabold tracking-tight leading-none">3</div>
+            <div class="text-[12px] text-ink-500 mt-1 font-medium">Đã thành thạo</div>
+          </div>
+        </div>
+
+        <div class="stat-tile flex items-center gap-3">
+          <div class="ico-circle bg-amber-50 text-amber-500">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+          </div>
+          <div>
+            <div class="text-[22px] font-extrabold tracking-tight leading-none">7</div>
+            <div class="text-[12px] text-ink-500 mt-1 font-medium">Cần ôn lại</div>
+          </div>
+        </div>
+
+        <div class="stat-tile flex items-center gap-3">
+          <div class="ico-circle bg-sky-50 text-sky-500">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <div class="text-[22px] font-extrabold tracking-tight leading-none">2</div>
+            <div class="text-[12px] text-ink-500 mt-1 font-medium">Lưu hôm nay</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER + SEARCH BAR -->
+      <div class="card-soft p-3 flex items-center gap-3 flex-wrap">
+        <div class="relative flex-1 min-w-[220px]">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-ink-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Tìm từ, nghĩa, hoặc ví dụ..." class="w-full pl-9 pr-3 py-2 text-[13.5px] bg-slate-50 border border-transparent rounded-lg focus:bg-white focus:border-mint-500 focus:outline-none transition" />
+        </div>
+
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <button class="filter-chip active">Tất cả</button>
+          <button class="filter-chip">A1</button>
+          <button class="filter-chip">A2</button>
+          <button class="filter-chip">B1</button>
+          <button class="filter-chip">B2</button>
+          <button class="filter-chip">Cần ôn</button>
+          <button class="filter-chip">Đã thuộc</button>
+        </div>
+
+        <div class="flex items-center gap-2 pl-2 border-l border-slate-200">
+          <span class="text-[12px] text-ink-500">Sắp xếp</span>
+          <button class="text-[12.5px] font-semibold text-ink-700 inline-flex items-center gap-1 hover:text-ink-900">
+            Mới lưu nhất
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- WORD LIST -->
+      <div class="space-y-2.5">
+
+        <!-- Word 1: mastered -->
+        <div class="word-card flex items-center gap-4">
+          <div class="w-10 h-10 rounded-lg bg-sky-50 text-sky-500 flex items-center justify-center shrink-0">
+            <span class="level-dot bg-sky-500"></span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="font-bold text-[16px] text-ink-900">abruptly</span>
+              <span class="text-[12.5px] text-ink-400 font-mono">/əˈbrʌptli/</span>
+              <span class="pill bg-slate-100 text-ink-700">adverb</span>
+              <span class="pill bg-mint-50 text-mint-700">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Thuộc
+              </span>
+            </div>
+            <div class="text-[13px] text-ink-700 mt-0.5"><span class="text-ink-500">Nghĩa:</span> một cách đột ngột, bất ngờ</div>
+            <div class="text-[12.5px] text-ink-500 mt-1 italic">"She stopped abruptly when she saw the accident."</div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <button class="icon-btn" title="Nghe phát âm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+            <button class="icon-btn" title="Luyện từ này">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </button>
+            <button class="icon-btn danger" title="Xóa khỏi danh sách">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Word 2: needs review -->
+        <div class="word-card flex items-center gap-4">
+          <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-500 flex items-center justify-center shrink-0">
+            <span class="level-dot bg-amber-500"></span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="font-bold text-[16px] text-ink-900">diligent</span>
+              <span class="text-[12.5px] text-ink-400 font-mono">/ˈdɪlɪdʒənt/</span>
+              <span class="pill bg-slate-100 text-ink-700">adjective</span>
+              <span class="pill bg-amber-50 text-amber-700">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Cần ôn
+              </span>
+            </div>
+            <div class="text-[13px] text-ink-700 mt-0.5"><span class="text-ink-500">Nghĩa:</span> chăm chỉ, cần mẫn</div>
+            <div class="text-[12.5px] text-ink-500 mt-1 italic">"She's a diligent student who never misses a deadline."</div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></button>
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></button>
+            <button class="icon-btn danger"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></button>
+          </div>
+        </div>
+
+        <!-- Word 3: not started -->
+        <div class="word-card flex items-center gap-4">
+          <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-500 flex items-center justify-center shrink-0">
+            <span class="level-dot bg-rose-500"></span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="font-bold text-[16px] text-ink-900">meticulous</span>
+              <span class="text-[12.5px] text-ink-400 font-mono">/məˈtɪkjələs/</span>
+              <span class="pill bg-slate-100 text-ink-700">adjective</span>
+              <span class="pill bg-rose-50 text-rose-700">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Chưa học
+              </span>
+            </div>
+            <div class="text-[13px] text-ink-700 mt-0.5"><span class="text-ink-500">Nghĩa:</span> tỉ mỉ, cẩn thận đến từng chi tiết nhỏ</div>
+            <div class="text-[12.5px] text-ink-500 mt-1 italic">"His meticulous notes impressed the whole research team."</div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/></svg></button>
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></button>
+            <button class="icon-btn danger"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/></svg></button>
+          </div>
+        </div>
+
+        <!-- Word 4 -->
+        <div class="word-card flex items-center gap-4">
+          <div class="w-10 h-10 rounded-lg bg-mint-50 text-mint-600 flex items-center justify-center shrink-0">
+            <span class="level-dot bg-mint-500"></span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="font-bold text-[16px] text-ink-900">resilient</span>
+              <span class="text-[12.5px] text-ink-400 font-mono">/rɪˈzɪliənt/</span>
+              <span class="pill bg-slate-100 text-ink-700">adjective</span>
+              <span class="pill bg-amber-50 text-amber-700">Cần ôn</span>
+            </div>
+            <div class="text-[13px] text-ink-700 mt-0.5"><span class="text-ink-500">Nghĩa:</span> kiên cường, có khả năng phục hồi</div>
+            <div class="text-[12.5px] text-ink-500 mt-1 italic">"Children are surprisingly resilient after hardship."</div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/></svg></button>
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></button>
+            <button class="icon-btn danger"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/></svg></button>
+          </div>
+        </div>
+
+        <!-- Word 5 -->
+        <div class="word-card flex items-center gap-4">
+          <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-500 flex items-center justify-center shrink-0">
+            <span class="level-dot bg-rose-500"></span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="font-bold text-[16px] text-ink-900">concise</span>
+              <span class="text-[12.5px] text-ink-400 font-mono">/kənˈsaɪs/</span>
+              <span class="pill bg-slate-100 text-ink-700">adjective</span>
+              <span class="pill bg-mint-50 text-mint-700">Thuộc</span>
+            </div>
+            <div class="text-[13px] text-ink-700 mt-0.5"><span class="text-ink-500">Nghĩa:</span> ngắn gọn, súc tích</div>
+            <div class="text-[12.5px] text-ink-500 mt-1 italic">"Please give a concise summary in two sentences."</div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/></svg></button>
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></button>
+            <button class="icon-btn danger"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/></svg></button>
+          </div>
+        </div>
+
+        <!-- Word 6 -->
+        <div class="word-card flex items-center gap-4">
+          <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-500 flex items-center justify-center shrink-0">
+            <span class="level-dot bg-rose-500"></span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="font-bold text-[16px] text-ink-900">ambiguous</span>
+              <span class="text-[12.5px] text-ink-400 font-mono">/æmˈbɪɡjuəs/</span>
+              <span class="pill bg-slate-100 text-ink-700">adjective</span>
+              <span class="pill bg-amber-50 text-amber-700">Cần ôn</span>
+            </div>
+            <div class="text-[13px] text-ink-700 mt-0.5"><span class="text-ink-500">Nghĩa:</span> mơ hồ, không rõ ràng, có thể hiểu theo nhiều nghĩa</div>
+            <div class="text-[12.5px] text-ink-500 mt-1 italic">"His answer was deliberately ambiguous."</div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/></svg></button>
+            <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></button>
+            <button class="icon-btn danger"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/></svg></button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="flex items-center justify-between pt-2">
+        <div class="text-[12.5px] text-ink-500">Hiển thị <span class="font-semibold text-ink-900">1–6</span> trong <span class="font-semibold text-ink-900">12</span> từ</div>
+        <div class="flex items-center gap-1.5">
+          <button class="icon-btn" disabled style="opacity:0.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          <button class="filter-chip active" style="min-width:32px;text-align:center">1</button>
+          <button class="filter-chip" style="min-width:32px;text-align:center">2</button>
+          <button class="icon-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-line text-[12px] text-ink-500 flex items-center justify-between">
+        <span>VoCaBu · Từ đã lưu prototype</span>
+        <span>Đồng bộ với Dashboard &amp; Luyện tập visual system</span>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script>
+  // Filter chip toggle
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const parent = chip.parentElement;
+      if (parent.querySelectorAll('.filter-chip').length > 1 && parent.querySelectorAll('.filter-chip.active').length > 0) {
+        // single-select per group
+        parent.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      }
+      chip.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25511,
+      "quiz_meaning_vi": "sự đến gần",
+      "meaning_vi_clean": "sự đến gần; cách bắt đầu giải quyết; lối vào; sự tiếp xúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đến gần",
+          "example_en": "The approach of winter brought colder weather.",
+          "example_vi": "Sự đến gần của mùa đông mang theo thời tiết lạnh hơn."
+        },
+        {
+          "meaning_vi": "sự đến gần",
+          "example_en": "We heard the approach of footsteps in the hall.",
+          "example_vi": "Chúng tôi nghe thấy tiếng bước chân đến gần ngoài hành lang."
+        },
+        {
+          "meaning_vi": "sự đến gần",
+          "example_en": "The pilot prepared for the final approach to the airport.",
+          "example_vi": "Phi công chuẩn bị cho lần tiếp cận cuối cùng tới sân bay."
+        },
+        {
+          "meaning_vi": "sự đến gần",
+          "example_en": "The cat watched the approach of the dog with caution.",
+          "example_vi": "Con mèo quan sát sự đến gần của con chó một cách thận trọng."
+        },
+        {
+          "meaning_vi": "cách bắt đầu giải quyết",
+          "example_en": "They have a new approach to solving this problem.",
+          "example_vi": "Họ có một cách tiếp cận mới để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "cách bắt đầu giải quyết",
+          "example_en": "His approach to teaching is very creative.",
+          "example_vi": "Cách tiếp cận của anh ấy đối với việc giảng dạy rất sáng tạo."
+        },
+        {
+          "meaning_vi": "lối vào",
+          "example_en": "The main approach to the house is lined with trees.",
+          "example_vi": "Lối vào chính của ngôi nhà được trồng cây hai bên."
+        },
+        {
+          "meaning_vi": "lối vào",
+          "example_en": "The bridge is the only approach to the island.",
+          "example_vi": "Cây cầu là lối vào duy nhất đến hòn đảo."
+        },
+        {
+          "meaning_vi": "sự tiếp xúc",
+          "example_en": "They made an approach to the company for a partnership.",
+          "example_vi": "Họ đã thực hiện một sự tiếp xúc với công ty để hợp tác."
+        },
+        {
+          "meaning_vi": "sự tiếp xúc",
+          "example_en": "The manager welcomed the approach from the new client.",
+          "example_vi": "Người quản lý hoan nghênh sự tiếp xúc từ khách hàng mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ theo từ điển. Bổ sung nghĩa và ví dụ phù hợp cấp độ B1.",
+      "word": "approach",
+      "normalized_word": "approach",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The approach of winter brought colder weather.",
+      "example_vi_clean": "Sự đến gần của mùa đông mang theo thời tiết lạnh hơn."
+    },
+    {
+      "id": 25512,
+      "quiz_meaning_vi": "sự tán thành",
+      "meaning_vi_clean": "sự tán thành; sự chấp thuận; sự phê chuẩn",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tán thành",
+          "example_en": "He nodded his head in approval.",
+          "example_vi": "Anh ấy gật đầu tán thành."
+        },
+        {
+          "meaning_vi": "sự tán thành",
+          "example_en": "She looked at her son with approval.",
+          "example_vi": "Cô ấy nhìn con trai mình với sự tán thành."
+        },
+        {
+          "meaning_vi": "sự tán thành",
+          "example_en": "The plan met with general approval.",
+          "example_vi": "Kế hoạch đã nhận được sự tán thành chung."
+        },
+        {
+          "meaning_vi": "sự tán thành",
+          "example_en": "His actions did not win the approval of his colleagues.",
+          "example_vi": "Hành động của anh ấy không giành được sự tán thành của đồng nghiệp."
+        },
+        {
+          "meaning_vi": "sự chấp thuận",
+          "example_en": "The project is waiting for final approval.",
+          "example_vi": "Dự án đang chờ sự chấp thuận cuối cùng."
+        },
+        {
+          "meaning_vi": "sự chấp thuận",
+          "example_en": "You need written approval to enter the building.",
+          "example_vi": "Bạn cần sự chấp thuận bằng văn bản để vào tòa nhà."
+        },
+        {
+          "meaning_vi": "sự chấp thuận",
+          "example_en": "The bank gave its approval for the loan.",
+          "example_vi": "Ngân hàng đã đưa ra sự chấp thuận cho khoản vay."
+        },
+        {
+          "meaning_vi": "sự phê chuẩn",
+          "example_en": "The treaty requires the approval of the parliament.",
+          "example_vi": "Hiệp ước yêu cầu sự phê chuẩn của quốc hội."
+        },
+        {
+          "meaning_vi": "sự phê chuẩn",
+          "example_en": "The committee gave its approval to the new rules.",
+          "example_vi": "Ủy ban đã đưa ra sự phê chuẩn cho các quy định mới."
+        },
+        {
+          "meaning_vi": "sự phê chuẩn",
+          "example_en": "The budget is subject to official approval.",
+          "example_vi": "Ngân sách phải chịu sự phê chuẩn chính thức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "approval",
+      "normalized_word": "approval",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He nodded his head in approval.",
+      "example_vi_clean": "Anh ấy gật đầu tán thành."
+    },
+    {
+      "id": 25513,
+      "quiz_meaning_vi": "tán thành",
+      "meaning_vi_clean": "tán thành; chấp thuận; phê chuẩn",
+      "examples_clean": [
+        {
+          "meaning_vi": "tán thành",
+          "example_en": "I do not approve of such behavior.",
+          "example_vi": "Tôi không tán thành hành vi như vậy."
+        },
+        {
+          "meaning_vi": "tán thành",
+          "example_en": "My parents do not approve of my new friends.",
+          "example_vi": "Cha mẹ tôi không tán thành những người bạn mới của tôi."
+        },
+        {
+          "meaning_vi": "tán thành",
+          "example_en": "She does not approve of smoking in the house.",
+          "example_vi": "Cô ấy không tán thành việc hút thuốc trong nhà."
+        },
+        {
+          "meaning_vi": "tán thành",
+          "example_en": "Many people do not approve of the new law.",
+          "example_vi": "Nhiều người không tán thành luật mới."
+        },
+        {
+          "meaning_vi": "chấp thuận",
+          "example_en": "The board will approve the budget tomorrow.",
+          "example_vi": "Hội đồng sẽ chấp thuận ngân sách vào ngày mai."
+        },
+        {
+          "meaning_vi": "chấp thuận",
+          "example_en": "The manager approved my request for leave.",
+          "example_vi": "Người quản lý đã chấp thuận yêu cầu nghỉ phép của tôi."
+        },
+        {
+          "meaning_vi": "chấp thuận",
+          "example_en": "The bank approved the loan application.",
+          "example_vi": "Ngân hàng đã chấp thuận đơn xin vay vốn."
+        },
+        {
+          "meaning_vi": "phê chuẩn",
+          "example_en": "The government approved the new trade agreement.",
+          "example_vi": "Chính phủ đã phê chuẩn hiệp định thương mại mới."
+        },
+        {
+          "meaning_vi": "phê chuẩn",
+          "example_en": "The council approved the construction plans.",
+          "example_vi": "Hội đồng đã phê chuẩn các kế hoạch xây dựng."
+        },
+        {
+          "meaning_vi": "phê chuẩn",
+          "example_en": "The director approved the final design.",
+          "example_vi": "Giám đốc đã phê chuẩn thiết kế cuối cùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ (ngoại động từ/nội động từ). Bổ sung ví dụ.",
+      "word": "approve",
+      "normalized_word": "approve",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I do not approve of such behavior.",
+      "example_vi_clean": "Tôi không tán thành hành vi như vậy."
+    },
+    {
+      "id": 25514,
+      "quiz_meaning_vi": "khoảng chừng",
+      "meaning_vi_clean": "khoảng chừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The journey takes approximately two hours.",
+          "example_vi": "Chuyến đi mất khoảng chừng hai giờ."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "There were approximately fifty people at the party.",
+          "example_vi": "Có khoảng chừng năm mươi người tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The cost is approximately ten dollars.",
+          "example_vi": "Chi phí là khoảng chừng mười đô la."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "It is approximately five miles to the station.",
+          "example_vi": "Khoảng chừng năm dặm nữa là đến nhà ga."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The project will take approximately one month.",
+          "example_vi": "Dự án sẽ mất khoảng chừng một tháng."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The population is approximately one million.",
+          "example_vi": "Dân số là khoảng chừng một triệu người."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The meeting will last approximately an hour.",
+          "example_vi": "Cuộc họp sẽ kéo dài khoảng chừng một giờ."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The temperature is approximately twenty degrees.",
+          "example_vi": "Nhiệt độ là khoảng chừng hai mươi độ."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "He arrived at approximately eight o'clock.",
+          "example_vi": "Anh ấy đến vào khoảng chừng tám giờ."
+        },
+        {
+          "meaning_vi": "khoảng chừng",
+          "example_en": "The distance is approximately ten kilometers.",
+          "example_vi": "Khoảng cách là khoảng chừng mười ki-lô-mét."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "approximately",
+      "normalized_word": "approximately",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The journey takes approximately two hours.",
+      "example_vi_clean": "Chuyến đi mất khoảng chừng hai giờ."
+    },
+    {
+      "id": 25515,
+      "quiz_meaning_vi": "kiến trúc sư",
+      "meaning_vi_clean": "kiến trúc sư; người sáng tạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "kiến trúc sư",
+          "example_en": "The architect designed a beautiful modern building.",
+          "example_vi": "Kiến trúc sư đã thiết kế một tòa nhà hiện đại tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "kiến trúc sư",
+          "example_en": "She is a famous architect in this city.",
+          "example_vi": "Cô ấy là một kiến trúc sư nổi tiếng trong thành phố này."
+        },
+        {
+          "meaning_vi": "kiến trúc sư",
+          "example_en": "The architect presented the plans to the client.",
+          "example_vi": "Kiến trúc sư đã trình bày các bản vẽ cho khách hàng."
+        },
+        {
+          "meaning_vi": "kiến trúc sư",
+          "example_en": "He studied to become an architect.",
+          "example_vi": "Anh ấy đã học để trở thành một kiến trúc sư."
+        },
+        {
+          "meaning_vi": "người sáng tạo",
+          "example_en": "He was the architect of the new peace treaty.",
+          "example_vi": "Ông ấy là người sáng tạo ra hiệp ước hòa bình mới."
+        },
+        {
+          "meaning_vi": "người sáng tạo",
+          "example_en": "She is the architect of her own success.",
+          "example_vi": "Cô ấy là người sáng tạo ra thành công của chính mình."
+        },
+        {
+          "meaning_vi": "người sáng tạo",
+          "example_en": "The architect of the reform program resigned.",
+          "example_vi": "Người sáng tạo ra chương trình cải cách đã từ chức."
+        },
+        {
+          "meaning_vi": "người sáng tạo",
+          "example_en": "They are the architects of their own destiny.",
+          "example_vi": "Họ là những người sáng tạo ra vận mệnh của chính mình."
+        },
+        {
+          "meaning_vi": "người sáng tạo",
+          "example_en": "He is considered the architect of the company's growth.",
+          "example_vi": "Ông ấy được coi là người sáng tạo ra sự tăng trưởng của công ty."
+        },
+        {
+          "meaning_vi": "người sáng tạo",
+          "example_en": "She was the architect of the new policy.",
+          "example_vi": "Cô ấy là người sáng tạo ra chính sách mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "architect",
+      "normalized_word": "architect",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The architect designed a beautiful modern building.",
+      "example_vi_clean": "Kiến trúc sư đã thiết kế một tòa nhà hiện đại tuyệt đẹp."
+    },
+    {
+      "id": 25516,
+      "quiz_meaning_vi": "xuất hiện",
+      "meaning_vi_clean": "xuất hiện; nảy sinh; trở dậy",
+      "examples_clean": [
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "New problems often arise during the project.",
+          "example_vi": "Những vấn đề mới thường xuất hiện trong quá trình dự án."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "A new opportunity has arisen for us.",
+          "example_vi": "Một cơ hội mới đã xuất hiện cho chúng ta."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "Difficulties may arise if we are not careful.",
+          "example_vi": "Những khó khăn có thể xuất hiện nếu chúng ta không cẩn thận."
+        },
+        {
+          "meaning_vi": "xuất hiện",
+          "example_en": "The question arose during the meeting.",
+          "example_vi": "Câu hỏi đã xuất hiện trong cuộc họp."
+        },
+        {
+          "meaning_vi": "nảy sinh",
+          "example_en": "Conflicts often arise from misunderstandings.",
+          "example_vi": "Xung đột thường nảy sinh từ những hiểu lầm."
+        },
+        {
+          "meaning_vi": "nảy sinh",
+          "example_en": "Many ideas arose from our discussion.",
+          "example_vi": "Nhiều ý tưởng đã nảy sinh từ cuộc thảo luận của chúng ta."
+        },
+        {
+          "meaning_vi": "nảy sinh",
+          "example_en": "The need for change arose quickly.",
+          "example_vi": "Nhu cầu thay đổi đã nảy sinh nhanh chóng."
+        },
+        {
+          "meaning_vi": "trở dậy",
+          "example_en": "He arose early to start his day.",
+          "example_vi": "Anh ấy trở dậy sớm để bắt đầu ngày mới."
+        },
+        {
+          "meaning_vi": "trở dậy",
+          "example_en": "She arose from her seat to greet the guest.",
+          "example_vi": "Cô ấy trở dậy khỏi ghế để chào khách."
+        },
+        {
+          "meaning_vi": "trở dậy",
+          "example_en": "They arose at dawn to continue their journey.",
+          "example_vi": "Họ trở dậy vào lúc bình minh để tiếp tục hành trình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ. Bổ sung ví dụ.",
+      "word": "arise",
+      "normalized_word": "arise",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "New problems often arise during the project.",
+      "example_vi_clean": "Những vấn đề mới thường xuất hiện trong quá trình dự án."
+    },
+    {
+      "id": 25517,
+      "quiz_meaning_vi": "số học",
+      "meaning_vi_clean": "số học; sự tính toán",
+      "examples_clean": [
+        {
+          "meaning_vi": "số học",
+          "example_en": "He is very good at arithmetic.",
+          "example_vi": "Anh ấy rất giỏi môn số học."
+        },
+        {
+          "meaning_vi": "số học",
+          "example_en": "The students are learning basic arithmetic.",
+          "example_vi": "Các học sinh đang học số học cơ bản."
+        },
+        {
+          "meaning_vi": "số học",
+          "example_en": "Arithmetic is a fundamental part of mathematics.",
+          "example_vi": "Số học là một phần cơ bản của toán học."
+        },
+        {
+          "meaning_vi": "số học",
+          "example_en": "She enjoys solving arithmetic problems.",
+          "example_vi": "Cô ấy thích giải các bài toán số học."
+        },
+        {
+          "meaning_vi": "số học",
+          "example_en": "The test included several arithmetic questions.",
+          "example_vi": "Bài kiểm tra bao gồm một vài câu hỏi số học."
+        },
+        {
+          "meaning_vi": "sự tính toán",
+          "example_en": "His arithmetic was wrong, so the total was incorrect.",
+          "example_vi": "Sự tính toán của anh ấy bị sai, vì vậy tổng số không chính xác."
+        },
+        {
+          "meaning_vi": "sự tính toán",
+          "example_en": "Check your arithmetic before submitting the report.",
+          "example_vi": "Hãy kiểm tra sự tính toán của bạn trước khi nộp báo cáo."
+        },
+        {
+          "meaning_vi": "sự tính toán",
+          "example_en": "Simple arithmetic is enough for this task.",
+          "example_vi": "Sự tính toán đơn giản là đủ cho nhiệm vụ này."
+        },
+        {
+          "meaning_vi": "sự tính toán",
+          "example_en": "She made an error in her arithmetic.",
+          "example_vi": "Cô ấy đã mắc một lỗi trong sự tính toán của mình."
+        },
+        {
+          "meaning_vi": "sự tính toán",
+          "example_en": "The arithmetic of the budget is quite complex.",
+          "example_vi": "Sự tính toán của ngân sách khá phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ thành danh từ. Bổ sung ví dụ.",
+      "word": "arithmetic",
+      "normalized_word": "arithmetic",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is very good at arithmetic.",
+      "example_vi_clean": "Anh ấy rất giỏi môn số học."
+    },
+    {
+      "id": 25518,
+      "quiz_meaning_vi": "quân đội",
+      "meaning_vi_clean": "quân đội; đám đông",
+      "examples_clean": [
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "He joined the army after finishing school.",
+          "example_vi": "Anh ấy gia nhập quân đội sau khi học xong."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "The army was deployed to the border.",
+          "example_vi": "Quân đội đã được triển khai đến biên giới."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "The army is responsible for national defense.",
+          "example_vi": "Quân đội chịu trách nhiệm về quốc phòng."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "She served in the army for five years.",
+          "example_vi": "Cô ấy đã phục vụ trong quân đội năm năm."
+        },
+        {
+          "meaning_vi": "quân đội",
+          "example_en": "The army marched through the city.",
+          "example_vi": "Quân đội đã hành quân qua thành phố."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "An army of fans waited for the singer.",
+          "example_vi": "Một đám đông người hâm mộ đã chờ đợi ca sĩ."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "An army of volunteers helped clean the park.",
+          "example_vi": "Một đám đông tình nguyện viên đã giúp dọn dẹp công viên."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "An army of reporters surrounded the building.",
+          "example_vi": "Một đám đông phóng viên đã bao vây tòa nhà."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "An army of workers is building the new road.",
+          "example_vi": "Một đám đông công nhân đang xây dựng con đường mới."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "An army of tourists visited the museum.",
+          "example_vi": "Một đám đông du khách đã tham quan bảo tàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "army",
+      "normalized_word": "army",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He joined the army after finishing school.",
+      "example_vi_clean": "Anh ấy gia nhập quân đội sau khi học xong."
+    },
+    {
+      "id": 25519,
+      "quiz_meaning_vi": "sắp xếp",
+      "meaning_vi_clean": "sắp xếp; thu xếp; chuẩn bị",
+      "examples_clean": [
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "Please arrange the books on the shelf.",
+          "example_vi": "Vui lòng sắp xếp các cuốn sách trên kệ."
+        },
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "She arranged the flowers in a vase.",
+          "example_vi": "Cô ấy đã sắp xếp những bông hoa vào bình."
+        },
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "The chairs were arranged in a circle.",
+          "example_vi": "Những chiếc ghế được sắp xếp thành một vòng tròn."
+        },
+        {
+          "meaning_vi": "sắp xếp",
+          "example_en": "He arranged his papers neatly on the desk.",
+          "example_vi": "Anh ấy đã sắp xếp giấy tờ của mình gọn gàng trên bàn."
+        },
+        {
+          "meaning_vi": "thu xếp",
+          "example_en": "I will arrange a meeting for us.",
+          "example_vi": "Tôi sẽ thu xếp một cuộc họp cho chúng ta."
+        },
+        {
+          "meaning_vi": "thu xếp",
+          "example_en": "Can you arrange a taxi for me?",
+          "example_vi": "Bạn có thể thu xếp một chiếc taxi cho tôi không?"
+        },
+        {
+          "meaning_vi": "thu xếp",
+          "example_en": "They arranged to meet at the station.",
+          "example_vi": "Họ đã thu xếp để gặp nhau tại nhà ga."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "We arranged everything for the party.",
+          "example_vi": "Chúng tôi đã chuẩn bị mọi thứ cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "She arranged for a car to pick us up.",
+          "example_vi": "Cô ấy đã chuẩn bị một chiếc xe để đón chúng tôi."
+        },
+        {
+          "meaning_vi": "chuẩn bị",
+          "example_en": "He arranged the travel details.",
+          "example_vi": "Anh ấy đã chuẩn bị các chi tiết chuyến đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành động từ. Bổ sung ví dụ.",
+      "word": "arrange",
+      "normalized_word": "arrange",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please arrange the books on the shelf.",
+      "example_vi_clean": "Vui lòng sắp xếp các cuốn sách trên kệ."
+    },
+    {
+      "id": 25520,
+      "quiz_meaning_vi": "sự sắp xếp",
+      "meaning_vi_clean": "sự sắp xếp; sự thu xếp; sự chuẩn bị",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "The arrangement of the furniture is very nice.",
+          "example_vi": "Sự sắp xếp đồ đạc rất đẹp."
+        },
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "I like the arrangement of the flowers.",
+          "example_vi": "Tôi thích sự sắp xếp của những bông hoa."
+        },
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "The arrangement of the seats was changed.",
+          "example_vi": "Sự sắp xếp các chỗ ngồi đã được thay đổi."
+        },
+        {
+          "meaning_vi": "sự sắp xếp",
+          "example_en": "The arrangement of the books is alphabetical.",
+          "example_vi": "Sự sắp xếp các cuốn sách là theo thứ tự bảng chữ cái."
+        },
+        {
+          "meaning_vi": "sự thu xếp",
+          "example_en": "We have made an arrangement to meet tomorrow.",
+          "example_vi": "Chúng tôi đã có một sự thu xếp để gặp nhau vào ngày mai."
+        },
+        {
+          "meaning_vi": "sự thu xếp",
+          "example_en": "What is the arrangement for the trip?",
+          "example_vi": "Sự thu xếp cho chuyến đi là gì?"
+        },
+        {
+          "meaning_vi": "sự thu xếp",
+          "example_en": "The travel arrangement was very convenient.",
+          "example_vi": "Sự thu xếp đi lại rất thuận tiện."
+        },
+        {
+          "meaning_vi": "sự chuẩn bị",
+          "example_en": "The arrangement for the wedding took months.",
+          "example_vi": "Sự chuẩn bị cho đám cưới mất nhiều tháng."
+        },
+        {
+          "meaning_vi": "sự chuẩn bị",
+          "example_en": "All arrangements for the conference are complete.",
+          "example_vi": "Mọi sự chuẩn bị cho hội nghị đã hoàn tất."
+        },
+        {
+          "meaning_vi": "sự chuẩn bị",
+          "example_en": "She is busy with the arrangement for the party.",
+          "example_vi": "Cô ấy đang bận rộn với sự chuẩn bị cho bữa tiệc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ.",
+      "word": "arrangement",
+      "normalized_word": "arrangement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The arrangement of the furniture is very nice.",
+      "example_vi_clean": "Sự sắp xếp đồ đạc rất đẹp."
+    }
+  ]
+}

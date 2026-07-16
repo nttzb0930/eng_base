@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26271,
+      "quiz_meaning_vi": "thuận tiện",
+      "meaning_vi_clean": "thuận tiện; dễ sử dụng; khéo tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuận tiện",
+          "example_en": "Some people regard duct tape as a handy fix-all.",
+          "example_vi": "Một số người coi băng dính là một giải pháp thuận tiện cho mọi thứ."
+        },
+        {
+          "meaning_vi": "thuận tiện",
+          "example_en": "I keep a first-aid kit handy in case of emergency.",
+          "example_vi": "Tôi luôn để sẵn bộ sơ cứu ở nơi thuận tiện phòng khi khẩn cấp."
+        },
+        {
+          "meaning_vi": "thuận tiện",
+          "example_en": "It is very handy to have a supermarket near the house.",
+          "example_vi": "Thật thuận tiện khi có một siêu thị gần nhà."
+        },
+        {
+          "meaning_vi": "thuận tiện",
+          "example_en": "The map was very handy during our trip.",
+          "example_vi": "Tấm bản đồ rất thuận tiện trong suốt chuyến đi của chúng tôi."
+        },
+        {
+          "meaning_vi": "dễ sử dụng",
+          "example_en": "This new software is very handy for beginners.",
+          "example_vi": "Phần mềm mới này rất dễ sử dụng cho người mới bắt đầu."
+        },
+        {
+          "meaning_vi": "dễ sử dụng",
+          "example_en": "The tool is handy and fits in your pocket.",
+          "example_vi": "Công cụ này dễ sử dụng và vừa vặn trong túi của bạn."
+        },
+        {
+          "meaning_vi": "dễ sử dụng",
+          "example_en": "We need a handy guide for the new equipment.",
+          "example_vi": "Chúng tôi cần một bản hướng dẫn dễ sử dụng cho thiết bị mới."
+        },
+        {
+          "meaning_vi": "khéo tay",
+          "example_en": "She is very handy and made all her own kitchen cupboards.",
+          "example_vi": "Cô ấy rất khéo tay và đã tự đóng tất cả tủ bếp của mình."
+        },
+        {
+          "meaning_vi": "khéo tay",
+          "example_en": "My brother is handy with repairs around the house.",
+          "example_vi": "Anh trai tôi rất khéo tay trong việc sửa chữa quanh nhà."
+        },
+        {
+          "meaning_vi": "khéo tay",
+          "example_en": "He is handy at fixing broken toys.",
+          "example_vi": "Anh ấy rất khéo tay trong việc sửa đồ chơi bị hỏng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung ví dụ theo đúng yêu cầu.",
+      "word": "handy",
+      "normalized_word": "handy",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Some people regard duct tape as a handy fix-all.",
+      "example_vi_clean": "Một số người coi băng dính là một giải pháp thuận tiện cho mọi thứ."
+    },
+    {
+      "id": 26272,
+      "quiz_meaning_vi": "treo",
+      "meaning_vi_clean": "treo; đáng treo cổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "treo",
+          "example_en": "The lights hung from the ceiling.",
+          "example_vi": "Những chiếc đèn treo lơ lửng từ trần nhà."
+        },
+        {
+          "meaning_vi": "treo",
+          "example_en": "Hang those pictures on the wall.",
+          "example_vi": "Hãy treo những bức tranh đó lên tường."
+        },
+        {
+          "meaning_vi": "treo",
+          "example_en": "He hung his coat on the hook.",
+          "example_vi": "Anh ấy treo áo khoác của mình lên móc."
+        },
+        {
+          "meaning_vi": "treo",
+          "example_en": "The curtains were hanging loosely.",
+          "example_vi": "Những tấm rèm đang treo lỏng lẻo."
+        },
+        {
+          "meaning_vi": "treo",
+          "example_en": "A heavy fog hung over the city.",
+          "example_vi": "Một màn sương mù dày đặc treo lơ lửng trên thành phố."
+        },
+        {
+          "meaning_vi": "đáng treo cổ",
+          "example_en": "In the past, that crime was considered hanging.",
+          "example_vi": "Trong quá khứ, tội ác đó bị coi là đáng treo cổ."
+        },
+        {
+          "meaning_vi": "đáng treo cổ",
+          "example_en": "He committed a hanging offense.",
+          "example_vi": "Anh ta đã phạm một tội đáng treo cổ."
+        },
+        {
+          "meaning_vi": "đáng treo cổ",
+          "example_en": "The villain deserved a hanging punishment.",
+          "example_vi": "Kẻ phản diện xứng đáng nhận hình phạt treo cổ."
+        },
+        {
+          "meaning_vi": "đáng treo cổ",
+          "example_en": "It was a hanging matter in those days.",
+          "example_vi": "Đó là một vấn đề đáng treo cổ vào thời đó."
+        },
+        {
+          "meaning_vi": "đáng treo cổ",
+          "example_en": "The law defined it as a hanging crime.",
+          "example_vi": "Luật pháp định nghĩa đó là một tội đáng treo cổ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "hanging",
+      "normalized_word": "hanging",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The lights hung from the ceiling.",
+      "example_vi_clean": "Những chiếc đèn treo lơ lửng từ trần nhà."
+    },
+    {
+      "id": 26273,
+      "quiz_meaning_vi": "bến tàu",
+      "meaning_vi_clean": "bến tàu; nơi ẩn náu; chứa chấp",
+      "examples_clean": [
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "The ship entered the harbour safely.",
+          "example_vi": "Con tàu đã vào bến tàu an toàn."
+        },
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "We walked along the harbour at sunset.",
+          "example_vi": "Chúng tôi đi dạo dọc theo bến tàu lúc hoàng hôn."
+        },
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "Many boats are docked in the harbour.",
+          "example_vi": "Nhiều con thuyền đang neo đậu tại bến tàu."
+        },
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "The harbour is busy with fishing boats.",
+          "example_vi": "Bến tàu rất nhộn nhịp với những con thuyền đánh cá."
+        },
+        {
+          "meaning_vi": "nơi ẩn náu",
+          "example_en": "The island provided a safe harbour for the refugees.",
+          "example_vi": "Hòn đảo cung cấp một nơi ẩn náu an toàn cho những người tị nạn."
+        },
+        {
+          "meaning_vi": "nơi ẩn náu",
+          "example_en": "They found a harbour in the quiet forest.",
+          "example_vi": "Họ đã tìm thấy một nơi ẩn náu trong khu rừng yên tĩnh."
+        },
+        {
+          "meaning_vi": "nơi ẩn náu",
+          "example_en": "The cave served as a harbour during the storm.",
+          "example_vi": "Hang động đóng vai trò là nơi ẩn náu trong cơn bão."
+        },
+        {
+          "meaning_vi": "chứa chấp",
+          "example_en": "It is illegal to harbour criminals.",
+          "example_vi": "Việc chứa chấp tội phạm là bất hợp pháp."
+        },
+        {
+          "meaning_vi": "chứa chấp",
+          "example_en": "She was accused of harbouring a fugitive.",
+          "example_vi": "Cô ấy bị buộc tội chứa chấp một kẻ đào tẩu."
+        },
+        {
+          "meaning_vi": "chứa chấp",
+          "example_en": "They did not know they were harbouring a spy.",
+          "example_vi": "Họ không biết rằng họ đang chứa chấp một điệp viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang danh từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "harbour",
+      "normalized_word": "harbour",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ship entered the harbour safely.",
+      "example_vi_clean": "Con tàu đã vào bến tàu an toàn."
+    },
+    {
+      "id": 26274,
+      "quiz_meaning_vi": "sự gian khổ",
+      "meaning_vi_clean": "sự gian khổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "They endured great hardship during the war.",
+          "example_vi": "Họ đã chịu đựng sự gian khổ lớn trong suốt cuộc chiến."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "Economic hardship forced them to move.",
+          "example_vi": "Sự gian khổ về kinh tế buộc họ phải di chuyển."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "He faced many hardships in his early life.",
+          "example_vi": "Anh ấy đã đối mặt với nhiều sự gian khổ trong cuộc sống đầu đời."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "The winter brought severe hardship to the villagers.",
+          "example_vi": "Mùa đông mang đến sự gian khổ nghiêm trọng cho dân làng."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "She overcame every hardship with courage.",
+          "example_vi": "Cô ấy đã vượt qua mọi sự gian khổ bằng lòng dũng cảm."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "The journey was full of hardship.",
+          "example_vi": "Chuyến đi đầy rẫy sự gian khổ."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "They shared the hardship of the long trek.",
+          "example_vi": "Họ đã chia sẻ sự gian khổ của chuyến đi bộ dài."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "Hardship often builds character.",
+          "example_vi": "Sự gian khổ thường rèn luyện nhân cách."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "We must prepare for potential hardship.",
+          "example_vi": "Chúng ta phải chuẩn bị cho sự gian khổ tiềm tàng."
+        },
+        {
+          "meaning_vi": "sự gian khổ",
+          "example_en": "The family suffered much hardship last year.",
+          "example_vi": "Gia đình đã chịu nhiều sự gian khổ vào năm ngoái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "hardship",
+      "normalized_word": "hardship",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They endured great hardship during the war.",
+      "example_vi_clean": "Họ đã chịu đựng sự gian khổ lớn trong suốt cuộc chiến."
+    },
+    {
+      "id": 26275,
+      "quiz_meaning_vi": "làm việc tích cực và chu đáo",
+      "meaning_vi_clean": "làm việc tích cực và chu đáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "She is a hard-working student who always finishes her homework.",
+          "example_vi": "Cô ấy là một học sinh làm việc tích cực và chu đáo, luôn hoàn thành bài tập về nhà."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "He is known as a hard-working employee.",
+          "example_vi": "Anh ấy được biết đến là một nhân viên làm việc tích cực và chu đáo."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "They are a hard-working team dedicated to success.",
+          "example_vi": "Họ là một đội ngũ làm việc tích cực và chu đáo, tận tâm với thành công."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "Being hard-working is essential for this job.",
+          "example_vi": "Việc làm việc tích cực và chu đáo là rất cần thiết cho công việc này."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "The hard-working staff deserves a bonus.",
+          "example_vi": "Đội ngũ nhân viên làm việc tích cực và chu đáo xứng đáng được thưởng."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "She has always been a hard-working person.",
+          "example_vi": "Cô ấy luôn là một người làm việc tích cực và chu đáo."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "Hard-working farmers produce the best crops.",
+          "example_vi": "Những người nông dân làm việc tích cực và chu đáo tạo ra những vụ mùa tốt nhất."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "He is very hard-working when it comes to his studies.",
+          "example_vi": "Anh ấy rất làm việc tích cực và chu đáo khi nói đến việc học tập."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "The hard-working volunteers helped the community.",
+          "example_vi": "Những tình nguyện viên làm việc tích cực và chu đáo đã giúp đỡ cộng đồng."
+        },
+        {
+          "meaning_vi": "làm việc tích cực và chu đáo",
+          "example_en": "Success comes to those who are hard-working.",
+          "example_vi": "Thành công đến với những người làm việc tích cực và chu đáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "hard-working",
+      "normalized_word": "hard-working",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a hard-working student who always finishes her homework.",
+      "example_vi_clean": "Cô ấy là một học sinh làm việc tích cực và chu đáo, luôn hoàn thành bài tập về nhà."
+    },
+    {
+      "id": 26276,
+      "quiz_meaning_vi": "bộ yên cương",
+      "meaning_vi_clean": "bộ yên cương; khai thác",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ yên cương",
+          "example_en": "The farmer cleaned the horse's harness.",
+          "example_vi": "Người nông dân đã làm sạch bộ yên cương của con ngựa."
+        },
+        {
+          "meaning_vi": "bộ yên cương",
+          "example_en": "He adjusted the harness before riding.",
+          "example_vi": "Anh ấy đã điều chỉnh bộ yên cương trước khi cưỡi."
+        },
+        {
+          "meaning_vi": "bộ yên cương",
+          "example_en": "The horse pulled against the harness.",
+          "example_vi": "Con ngựa kéo căng bộ yên cương."
+        },
+        {
+          "meaning_vi": "bộ yên cương",
+          "example_en": "They bought a new leather harness.",
+          "example_vi": "Họ đã mua một bộ yên cương bằng da mới."
+        },
+        {
+          "meaning_vi": "bộ yên cương",
+          "example_en": "The harness was too tight for the pony.",
+          "example_vi": "Bộ yên cương quá chật đối với con ngựa con."
+        },
+        {
+          "meaning_vi": "khai thác",
+          "example_en": "We must harness solar energy to save the planet.",
+          "example_vi": "Chúng ta phải khai thác năng lượng mặt trời để cứu hành tinh."
+        },
+        {
+          "meaning_vi": "khai thác",
+          "example_en": "The company wants to harness the power of the wind.",
+          "example_vi": "Công ty muốn khai thác sức mạnh của gió."
+        },
+        {
+          "meaning_vi": "khai thác",
+          "example_en": "They are trying to harness new technology for education.",
+          "example_vi": "Họ đang cố gắng khai thác công nghệ mới cho giáo dục."
+        },
+        {
+          "meaning_vi": "khai thác",
+          "example_en": "It is difficult to harness the potential of this river.",
+          "example_vi": "Thật khó để khai thác tiềm năng của con sông này."
+        },
+        {
+          "meaning_vi": "khai thác",
+          "example_en": "We need to harness our resources more effectively.",
+          "example_vi": "Chúng ta cần khai thác các nguồn lực của mình hiệu quả hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang danh từ/động từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "harness",
+      "normalized_word": "harness",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The farmer cleaned the horse's harness.",
+      "example_vi_clean": "Người nông dân đã làm sạch bộ yên cương của con ngựa."
+    },
+    {
+      "id": 26277,
+      "quiz_meaning_vi": "vội",
+      "meaning_vi_clean": "vội; hấp tấp",
+      "examples_clean": [
+        {
+          "meaning_vi": "vội",
+          "example_en": "They made a hasty decision to leave.",
+          "example_vi": "Họ đã đưa ra một quyết định vội vàng để rời đi."
+        },
+        {
+          "meaning_vi": "vội",
+          "example_en": "He took a hasty look at the document.",
+          "example_vi": "Anh ấy đã nhìn vội vào tài liệu."
+        },
+        {
+          "meaning_vi": "vội",
+          "example_en": "She made a hasty exit from the room.",
+          "example_vi": "Cô ấy đã rời khỏi phòng một cách vội vã."
+        },
+        {
+          "meaning_vi": "vội",
+          "example_en": "Don't be so hasty with your answer.",
+          "example_vi": "Đừng quá vội vàng với câu trả lời của bạn."
+        },
+        {
+          "meaning_vi": "vội",
+          "example_en": "A hasty breakfast is all I have time for.",
+          "example_vi": "Một bữa sáng vội vã là tất cả những gì tôi có thời gian cho."
+        },
+        {
+          "meaning_vi": "hấp tấp",
+          "example_en": "It was a hasty conclusion based on little evidence.",
+          "example_vi": "Đó là một kết luận hấp tấp dựa trên ít bằng chứng."
+        },
+        {
+          "meaning_vi": "hấp tấp",
+          "example_en": "His hasty actions caused a lot of trouble.",
+          "example_vi": "Những hành động hấp tấp của anh ấy đã gây ra nhiều rắc rối."
+        },
+        {
+          "meaning_vi": "hấp tấp",
+          "example_en": "Avoid making hasty judgments about people.",
+          "example_vi": "Tránh đưa ra những đánh giá hấp tấp về mọi người."
+        },
+        {
+          "meaning_vi": "hấp tấp",
+          "example_en": "She regretted her hasty words later.",
+          "example_vi": "Cô ấy đã hối hận về những lời nói hấp tấp của mình sau đó."
+        },
+        {
+          "meaning_vi": "hấp tấp",
+          "example_en": "The project failed due to hasty planning.",
+          "example_vi": "Dự án đã thất bại do việc lập kế hoạch hấp tấp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "hasty",
+      "normalized_word": "hasty",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They made a hasty decision to leave.",
+      "example_vi_clean": "Họ đã đưa ra một quyết định vội vàng để rời đi."
+    },
+    {
+      "id": 26278,
+      "quiz_meaning_vi": "cửa sập",
+      "meaning_vi_clean": "cửa sập; sự nở; ấp",
+      "examples_clean": [
+        {
+          "meaning_vi": "cửa sập",
+          "example_en": "The cook passed the dishes through the serving hatch.",
+          "example_vi": "Người đầu bếp chuyển các món ăn qua cửa sập phục vụ."
+        },
+        {
+          "meaning_vi": "cửa sập",
+          "example_en": "He climbed through the hatch to the roof.",
+          "example_vi": "Anh ấy trèo qua cửa sập lên mái nhà."
+        },
+        {
+          "meaning_vi": "cửa sập",
+          "example_en": "The ship's cargo hatch was open.",
+          "example_vi": "Cửa sập chứa hàng của con tàu đã mở."
+        },
+        {
+          "meaning_vi": "cửa sập",
+          "example_en": "Close the hatch before it rains.",
+          "example_vi": "Hãy đóng cửa sập lại trước khi trời mưa."
+        },
+        {
+          "meaning_vi": "sự nở",
+          "example_en": "These pullets are from an April hatch.",
+          "example_vi": "Những con gà tơ này là từ đợt nở tháng Tư."
+        },
+        {
+          "meaning_vi": "sự nở",
+          "example_en": "The hatch of the eggs was successful.",
+          "example_vi": "Sự nở của những quả trứng đã thành công."
+        },
+        {
+          "meaning_vi": "ấp",
+          "example_en": "The hen is sitting on the eggs to hatch them.",
+          "example_vi": "Con gà mái đang ngồi trên những quả trứng để ấp chúng."
+        },
+        {
+          "meaning_vi": "ấp",
+          "example_en": "It takes three weeks for the eggs to hatch.",
+          "example_vi": "Mất ba tuần để những quả trứng ấp nở."
+        },
+        {
+          "meaning_vi": "ấp",
+          "example_en": "The birds hatch their young in the spring.",
+          "example_vi": "Những con chim ấp trứng của chúng vào mùa xuân."
+        },
+        {
+          "meaning_vi": "ấp",
+          "example_en": "We watched the chicks hatch from their shells.",
+          "example_vi": "Chúng tôi đã xem những con gà con ấp nở ra khỏi vỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang danh từ/động từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "hatch",
+      "normalized_word": "hatch",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cook passed the dishes through the serving hatch.",
+      "example_vi_clean": "Người đầu bếp chuyển các món ăn qua cửa sập phục vụ."
+    },
+    {
+      "id": 26279,
+      "quiz_meaning_vi": "lòng căm thù",
+      "meaning_vi_clean": "lòng căm thù; căm ghét",
+      "examples_clean": [
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "One of my pet hates is traffic wardens.",
+          "example_vi": "Một trong những điều tôi căm thù nhất là cảnh sát giao thông."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "He gave me a look filled with pure hate.",
+          "example_vi": "Anh ấy nhìn tôi với ánh mắt đầy lòng căm thù thuần túy."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "The war was fueled by hate.",
+          "example_vi": "Cuộc chiến được thúc đẩy bởi lòng căm thù."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "There is too much hate in the world.",
+          "example_vi": "Có quá nhiều lòng căm thù trên thế giới này."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "He tried to overcome his feelings of hate.",
+          "example_vi": "Anh ấy đã cố gắng vượt qua những cảm giác căm thù của mình."
+        },
+        {
+          "meaning_vi": "căm ghét",
+          "example_en": "I hate being late for meetings.",
+          "example_vi": "Tôi căm ghét việc bị trễ các cuộc họp."
+        },
+        {
+          "meaning_vi": "căm ghét",
+          "example_en": "She hates the cold weather.",
+          "example_vi": "Cô ấy căm ghét thời tiết lạnh giá."
+        },
+        {
+          "meaning_vi": "căm ghét",
+          "example_en": "They hate to see animals suffer.",
+          "example_vi": "Họ căm ghét việc nhìn thấy động vật đau khổ."
+        },
+        {
+          "meaning_vi": "căm ghét",
+          "example_en": "He hates people who lie.",
+          "example_vi": "Anh ấy căm ghét những người nói dối."
+        },
+        {
+          "meaning_vi": "căm ghét",
+          "example_en": "I hate to bother you, but I need help.",
+          "example_vi": "Tôi căm ghét việc làm phiền bạn, nhưng tôi cần sự giúp đỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang danh từ/động từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "hate",
+      "normalized_word": "hate",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "One of my pet hates is traffic wardens.",
+      "example_vi_clean": "Một trong những điều tôi căm thù nhất là cảnh sát giao thông."
+    },
+    {
+      "id": 26280,
+      "quiz_meaning_vi": "lòng căm thù",
+      "meaning_vi_clean": "lòng căm thù",
+      "examples_clean": [
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "His heart was filled with hatred.",
+          "example_vi": "Trái tim anh ấy tràn ngập lòng căm thù."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "Hatred can destroy everything.",
+          "example_vi": "Lòng căm thù có thể phá hủy mọi thứ."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "They felt a deep hatred for their enemies.",
+          "example_vi": "Họ cảm thấy một lòng căm thù sâu sắc đối với kẻ thù của mình."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "Hatred is a very negative emotion.",
+          "example_vi": "Lòng căm thù là một cảm xúc rất tiêu cực."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "She tried to hide her hatred.",
+          "example_vi": "Cô ấy đã cố gắng che giấu lòng căm thù của mình."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "The speech stirred up hatred among the people.",
+          "example_vi": "Bài phát biểu đã khơi dậy lòng căm thù giữa mọi người."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "He could not overcome his hatred.",
+          "example_vi": "Anh ấy không thể vượt qua lòng căm thù của mình."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "Hatred leads to violence.",
+          "example_vi": "Lòng căm thù dẫn đến bạo lực."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "They put aside their hatred for the sake of peace.",
+          "example_vi": "Họ đã gạt bỏ lòng căm thù của mình vì hòa bình."
+        },
+        {
+          "meaning_vi": "lòng căm thù",
+          "example_en": "There is no place for hatred in our society.",
+          "example_vi": "Không có chỗ cho lòng căm thù trong xã hội của chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "hatred",
+      "normalized_word": "hatred",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His heart was filled with hatred.",
+      "example_vi_clean": "Trái tim anh ấy tràn ngập lòng căm thù."
+    }
+  ]
+}

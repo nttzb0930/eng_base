@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25071,
+      "quiz_meaning_vi": "đã quy định",
+      "meaning_vi_clean": "đã quy định; nếu; có xu hướng; đã cho",
+      "examples_clean": [
+        {
+          "meaning_vi": "đã quy định",
+          "example_en": "The meeting will take place at the given time.",
+          "example_vi": "Cuộc họp sẽ diễn ra vào thời gian đã quy định."
+        },
+        {
+          "meaning_vi": "đã quy định",
+          "example_en": "Please complete the task within the given period.",
+          "example_vi": "Vui lòng hoàn thành nhiệm vụ trong khoảng thời gian đã quy định."
+        },
+        {
+          "meaning_vi": "đã quy định",
+          "example_en": "We must follow the given instructions carefully.",
+          "example_vi": "Chúng ta phải tuân theo các hướng dẫn đã quy định một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "đã quy định",
+          "example_en": "The results were within the given parameters.",
+          "example_vi": "Các kết quả nằm trong các thông số đã quy định."
+        },
+        {
+          "meaning_vi": "nếu",
+          "example_en": "Given the circumstances, we should postpone the trip.",
+          "example_vi": "Nếu xét đến hoàn cảnh, chúng ta nên hoãn chuyến đi."
+        },
+        {
+          "meaning_vi": "nếu",
+          "example_en": "Given that it is raining, we will stay inside.",
+          "example_vi": "Nếu xét đến việc trời đang mưa, chúng ta sẽ ở trong nhà."
+        },
+        {
+          "meaning_vi": "có xu hướng",
+          "example_en": "He is given to complaining about small things.",
+          "example_vi": "Anh ấy có xu hướng phàn nàn về những việc nhỏ nhặt."
+        },
+        {
+          "meaning_vi": "có xu hướng",
+          "example_en": "She is given to spending too much money on clothes.",
+          "example_vi": "Cô ấy có xu hướng tiêu quá nhiều tiền vào quần áo."
+        },
+        {
+          "meaning_vi": "đã cho",
+          "example_en": "Calculate the area of the given triangle.",
+          "example_vi": "Hãy tính diện tích của hình tam giác đã cho."
+        },
+        {
+          "meaning_vi": "đã cho",
+          "example_en": "Use the given data to solve the problem.",
+          "example_vi": "Sử dụng dữ liệu đã cho để giải quyết vấn đề."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính xác theo từ loại tính từ, loại bỏ các nghĩa không phù hợp cấp độ A2.",
+      "word": "given",
+      "normalized_word": "given",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The meeting will take place at the given time.",
+      "example_vi_clean": "Cuộc họp sẽ diễn ra vào thời gian đã quy định."
+    },
+    {
+      "id": 25072,
+      "quiz_meaning_vi": "quả cầu",
+      "meaning_vi_clean": "quả cầu; địa cầu; cầu mắt",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả cầu",
+          "example_en": "The teacher used a globe to show us the countries.",
+          "example_vi": "Giáo viên đã sử dụng một quả cầu để chỉ cho chúng tôi các quốc gia."
+        },
+        {
+          "meaning_vi": "quả cầu",
+          "example_en": "There is a small globe on his desk.",
+          "example_vi": "Có một quả cầu nhỏ trên bàn làm việc của anh ấy."
+        },
+        {
+          "meaning_vi": "quả cầu",
+          "example_en": "She spun the globe to find the capital city.",
+          "example_vi": "Cô ấy xoay quả cầu để tìm thành phố thủ đô."
+        },
+        {
+          "meaning_vi": "quả cầu",
+          "example_en": "The antique globe is a beautiful decoration.",
+          "example_vi": "Quả cầu cổ là một vật trang trí đẹp mắt."
+        },
+        {
+          "meaning_vi": "địa cầu",
+          "example_en": "People all over the globe are concerned about climate change.",
+          "example_vi": "Mọi người trên khắp địa cầu đều lo ngại về biến đổi khí hậu."
+        },
+        {
+          "meaning_vi": "địa cầu",
+          "example_en": "This species can be found across the globe.",
+          "example_vi": "Loài này có thể được tìm thấy trên khắp địa cầu."
+        },
+        {
+          "meaning_vi": "địa cầu",
+          "example_en": "The news spread quickly around the globe.",
+          "example_vi": "Tin tức lan truyền nhanh chóng khắp địa cầu."
+        },
+        {
+          "meaning_vi": "địa cầu",
+          "example_en": "He has traveled to many parts of the globe.",
+          "example_vi": "Anh ấy đã đi đến nhiều nơi trên địa cầu."
+        },
+        {
+          "meaning_vi": "cầu mắt",
+          "example_en": "The doctor examined the globe of his eye.",
+          "example_vi": "Bác sĩ đã kiểm tra cầu mắt của anh ấy."
+        },
+        {
+          "meaning_vi": "cầu mắt",
+          "example_en": "An injury to the globe of the eye is serious.",
+          "example_vi": "Một chấn thương ở cầu mắt là rất nghiêm trọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ, chọn lọc nghĩa phổ biến.",
+      "word": "globe",
+      "normalized_word": "globe",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The teacher used a globe to show us the countries.",
+      "example_vi_clean": "Giáo viên đã sử dụng một quả cầu để chỉ cho chúng tôi các quốc gia."
+    },
+    {
+      "id": 25073,
+      "quiz_meaning_vi": "bao tay",
+      "meaning_vi_clean": "bao tay; đeo găng vào",
+      "examples_clean": [
+        {
+          "meaning_vi": "bao tay",
+          "example_en": "I lost one of my gloves in the park.",
+          "example_vi": "Tôi đã làm mất một chiếc bao tay ở công viên."
+        },
+        {
+          "meaning_vi": "bao tay",
+          "example_en": "She bought a new pair of leather gloves.",
+          "example_vi": "Cô ấy đã mua một đôi bao tay da mới."
+        },
+        {
+          "meaning_vi": "bao tay",
+          "example_en": "Wear your gloves to protect your hands from the cold.",
+          "example_vi": "Hãy đeo bao tay để bảo vệ đôi tay khỏi cái lạnh."
+        },
+        {
+          "meaning_vi": "bao tay",
+          "example_en": "The goalkeeper wore thick gloves.",
+          "example_vi": "Thủ môn đã đeo đôi bao tay dày."
+        },
+        {
+          "meaning_vi": "đeo găng vào",
+          "example_en": "He gloved his hands before starting the work.",
+          "example_vi": "Anh ấy đeo găng vào trước khi bắt đầu công việc."
+        },
+        {
+          "meaning_vi": "đeo găng vào",
+          "example_en": "She gloved up to handle the chemicals safely.",
+          "example_vi": "Cô ấy đeo găng vào để xử lý hóa chất một cách an toàn."
+        },
+        {
+          "meaning_vi": "đeo găng vào",
+          "example_en": "The surgeon gloved before the operation.",
+          "example_vi": "Bác sĩ phẫu thuật đeo găng vào trước ca mổ."
+        },
+        {
+          "meaning_vi": "đeo găng vào",
+          "example_en": "He gloved his hands to clean the garden.",
+          "example_vi": "Anh ấy đeo găng vào để dọn dẹp khu vườn."
+        },
+        {
+          "meaning_vi": "đeo găng vào",
+          "example_en": "Make sure you have gloved before touching the equipment.",
+          "example_vi": "Hãy chắc chắn rằng bạn đã đeo găng vào trước khi chạm vào thiết bị."
+        },
+        {
+          "meaning_vi": "đeo găng vào",
+          "example_en": "They gloved up to protect themselves from the virus.",
+          "example_vi": "Họ đeo găng vào để bảo vệ bản thân khỏi vi-rút."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ/động từ, lược bỏ các nghĩa lóng không phù hợp.",
+      "word": "glove",
+      "normalized_word": "glove",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I lost one of my gloves in the park.",
+      "example_vi_clean": "Tôi đã làm mất một chiếc bao tay ở công viên."
+    },
+    {
+      "id": 25074,
+      "quiz_meaning_vi": "bằng vàng",
+      "meaning_vi_clean": "bằng vàng; có màu vàng; quý giá",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "She wears a beautiful golden ring.",
+          "example_vi": "Cô ấy đeo một chiếc nhẫn bằng vàng rất đẹp."
+        },
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "The statue was made of golden material.",
+          "example_vi": "Bức tượng được làm bằng vật liệu bằng vàng."
+        },
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "He gave her a golden necklace for her birthday.",
+          "example_vi": "Anh ấy tặng cô ấy một chiếc vòng cổ bằng vàng vào ngày sinh nhật."
+        },
+        {
+          "meaning_vi": "bằng vàng",
+          "example_en": "The trophy is plated with golden paint.",
+          "example_vi": "Chiếc cúp được mạ bằng sơn bằng vàng."
+        },
+        {
+          "meaning_vi": "có màu vàng",
+          "example_en": "The leaves turned a golden color in autumn.",
+          "example_vi": "Những chiếc lá chuyển sang màu vàng vào mùa thu."
+        },
+        {
+          "meaning_vi": "có màu vàng",
+          "example_en": "The sunset cast a golden light over the sea.",
+          "example_vi": "Ánh hoàng hôn tỏa ra ánh sáng màu vàng trên mặt biển."
+        },
+        {
+          "meaning_vi": "có màu vàng",
+          "example_en": "She has long golden hair.",
+          "example_vi": "Cô ấy có mái tóc dài màu vàng."
+        },
+        {
+          "meaning_vi": "quý giá",
+          "example_en": "This is a golden opportunity to learn a new skill.",
+          "example_vi": "Đây là một cơ hội quý giá để học một kỹ năng mới."
+        },
+        {
+          "meaning_vi": "quý giá",
+          "example_en": "He gave me some golden advice about my career.",
+          "example_vi": "Anh ấy đã cho tôi một lời khuyên quý giá về sự nghiệp của mình."
+        },
+        {
+          "meaning_vi": "quý giá",
+          "example_en": "Time is a golden resource for everyone.",
+          "example_vi": "Thời gian là một nguồn tài nguyên quý giá đối với mọi người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, loại bỏ các nghĩa không phù hợp cấp độ A2.",
+      "word": "golden",
+      "normalized_word": "golden",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She wears a beautiful golden ring.",
+      "example_vi_clean": "Cô ấy đeo một chiếc nhẫn bằng vàng rất đẹp."
+    },
+    {
+      "id": 25075,
+      "quiz_meaning_vi": "môn đánh gôn",
+      "meaning_vi_clean": "môn đánh gôn; chơi gôn",
+      "examples_clean": [
+        {
+          "meaning_vi": "môn đánh gôn",
+          "example_en": "He is very interested in the sport of golf.",
+          "example_vi": "Anh ấy rất quan tâm đến môn đánh gôn."
+        },
+        {
+          "meaning_vi": "môn đánh gôn",
+          "example_en": "Golf is a popular game around the world.",
+          "example_vi": "Môn đánh gôn là một trò chơi phổ biến trên khắp thế giới."
+        },
+        {
+          "meaning_vi": "môn đánh gôn",
+          "example_en": "She watches golf on television every weekend.",
+          "example_vi": "Cô ấy xem môn đánh gôn trên truyền hình mỗi cuối tuần."
+        },
+        {
+          "meaning_vi": "môn đánh gôn",
+          "example_en": "He bought a new set of clubs for golf.",
+          "example_vi": "Anh ấy đã mua một bộ gậy mới cho môn đánh gôn."
+        },
+        {
+          "meaning_vi": "chơi gôn",
+          "example_en": "They like to golf on Sunday mornings.",
+          "example_vi": "Họ thích chơi gôn vào các buổi sáng Chủ nhật."
+        },
+        {
+          "meaning_vi": "chơi gôn",
+          "example_en": "We decided to golf at the local club.",
+          "example_vi": "Chúng tôi quyết định chơi gôn tại câu lạc bộ địa phương."
+        },
+        {
+          "meaning_vi": "chơi gôn",
+          "example_en": "He learned to golf when he was a teenager.",
+          "example_vi": "Anh ấy đã học chơi gôn khi còn là một thiếu niên."
+        },
+        {
+          "meaning_vi": "chơi gôn",
+          "example_en": "She wants to golf with her friends today.",
+          "example_vi": "Cô ấy muốn chơi gôn với bạn bè của mình hôm nay."
+        },
+        {
+          "meaning_vi": "chơi gôn",
+          "example_en": "They often golf during their summer vacation.",
+          "example_vi": "Họ thường chơi gôn trong kỳ nghỉ hè của mình."
+        },
+        {
+          "meaning_vi": "chơi gôn",
+          "example_en": "It is relaxing to golf in the countryside.",
+          "example_vi": "Thật thư giãn khi chơi gôn ở vùng nông thôn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ/động từ, bổ sung ví dụ.",
+      "word": "golf",
+      "normalized_word": "golf",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is very interested in the sport of golf.",
+      "example_vi_clean": "Anh ấy rất quan tâm đến môn đánh gôn."
+    },
+    {
+      "id": 25076,
+      "quiz_meaning_vi": "đẹp",
+      "meaning_vi_clean": "đẹp; có vẻ tốt",
+      "examples_clean": [
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "He is a very good-looking man.",
+          "example_vi": "Anh ấy là một người đàn ông rất đẹp."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "She is a good-looking woman with a kind smile.",
+          "example_vi": "Cô ấy là một người phụ nữ đẹp với nụ cười nhân hậu."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "They have a good-looking house in the suburbs.",
+          "example_vi": "Họ có một ngôi nhà đẹp ở vùng ngoại ô."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "The car is very good-looking and fast.",
+          "example_vi": "Chiếc xe rất đẹp và nhanh."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "She wore a good-looking dress to the party.",
+          "example_vi": "Cô ấy đã mặc một chiếc váy đẹp đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "đẹp",
+          "example_en": "He is a good-looking actor.",
+          "example_vi": "Anh ấy là một diễn viên đẹp."
+        },
+        {
+          "meaning_vi": "có vẻ tốt",
+          "example_en": "The plan seems good-looking for our future.",
+          "example_vi": "Kế hoạch này có vẻ tốt cho tương lai của chúng ta."
+        },
+        {
+          "meaning_vi": "có vẻ tốt",
+          "example_en": "The results look good-looking so far.",
+          "example_vi": "Các kết quả có vẻ tốt cho đến thời điểm này."
+        },
+        {
+          "meaning_vi": "có vẻ tốt",
+          "example_en": "The situation is good-looking for a positive outcome.",
+          "example_vi": "Tình hình có vẻ tốt cho một kết quả tích cực."
+        },
+        {
+          "meaning_vi": "có vẻ tốt",
+          "example_en": "The offer is good-looking enough to accept.",
+          "example_vi": "Lời đề nghị có vẻ tốt đủ để chấp nhận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "good-looking",
+      "normalized_word": "good-looking",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a very good-looking man.",
+      "example_vi_clean": "Anh ấy là một người đàn ông rất đẹp."
+    },
+    {
+      "id": 25077,
+      "quiz_meaning_vi": "sự cai trị",
+      "meaning_vi_clean": "sự cai trị; chính phủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cai trị",
+          "example_en": "The country was under the government of a king.",
+          "example_vi": "Đất nước nằm dưới sự cai trị của một vị vua."
+        },
+        {
+          "meaning_vi": "sự cai trị",
+          "example_en": "The period of government was very peaceful.",
+          "example_vi": "Thời kỳ cai trị đó rất hòa bình."
+        },
+        {
+          "meaning_vi": "sự cai trị",
+          "example_en": "They were unhappy with the current government.",
+          "example_vi": "Họ không hài lòng với sự cai trị hiện tại."
+        },
+        {
+          "meaning_vi": "sự cai trị",
+          "example_en": "Good government is essential for a stable society.",
+          "example_vi": "Sự cai trị tốt là điều cần thiết cho một xã hội ổn định."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The government has announced new tax laws.",
+          "example_vi": "Chính phủ đã công bố các luật thuế mới."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The government is working to improve education.",
+          "example_vi": "Chính phủ đang làm việc để cải thiện giáo dục."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "She works for the local government.",
+          "example_vi": "Cô ấy làm việc cho chính phủ địa phương."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The government provides support for the poor.",
+          "example_vi": "Chính phủ cung cấp sự hỗ trợ cho người nghèo."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The government building is in the city center.",
+          "example_vi": "Tòa nhà chính phủ nằm ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "chính phủ",
+          "example_en": "The government decided to build a new hospital.",
+          "example_vi": "Chính phủ đã quyết định xây dựng một bệnh viện mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "government",
+      "normalized_word": "government",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The country was under the government of a king.",
+      "example_vi_clean": "Đất nước nằm dưới sự cai trị của một vị vua."
+    },
+    {
+      "id": 25078,
+      "quiz_meaning_vi": "vẻ duyên dáng",
+      "meaning_vi_clean": "vẻ duyên dáng; ơn huệ; lời cầu nguyện",
+      "examples_clean": [
+        {
+          "meaning_vi": "vẻ duyên dáng",
+          "example_en": "She moved with grace across the dance floor.",
+          "example_vi": "Cô ấy di chuyển với vẻ duyên dáng trên sàn nhảy."
+        },
+        {
+          "meaning_vi": "vẻ duyên dáng",
+          "example_en": "He accepted the defeat with grace.",
+          "example_vi": "Anh ấy chấp nhận thất bại với vẻ duyên dáng."
+        },
+        {
+          "meaning_vi": "vẻ duyên dáng",
+          "example_en": "The building has a certain grace to it.",
+          "example_vi": "Tòa nhà có một vẻ duyên dáng nhất định."
+        },
+        {
+          "meaning_vi": "vẻ duyên dáng",
+          "example_en": "She speaks with grace and intelligence.",
+          "example_vi": "Cô ấy nói chuyện với vẻ duyên dáng và thông minh."
+        },
+        {
+          "meaning_vi": "ơn huệ",
+          "example_en": "He was saved by the grace of his friends.",
+          "example_vi": "Anh ấy đã được cứu nhờ ơn huệ của bạn bè."
+        },
+        {
+          "meaning_vi": "ơn huệ",
+          "example_en": "It was a grace to be given a second chance.",
+          "example_vi": "Đó là một ơn huệ khi được trao cơ hội thứ hai."
+        },
+        {
+          "meaning_vi": "ơn huệ",
+          "example_en": "She showed grace to those who had wronged her.",
+          "example_vi": "Cô ấy đã thể hiện ơn huệ với những người đã đối xử tệ với mình."
+        },
+        {
+          "meaning_vi": "lời cầu nguyện",
+          "example_en": "They said grace before eating dinner.",
+          "example_vi": "Họ đã đọc lời cầu nguyện trước khi ăn tối."
+        },
+        {
+          "meaning_vi": "lời cầu nguyện",
+          "example_en": "The family always says grace together.",
+          "example_vi": "Gia đình luôn đọc lời cầu nguyện cùng nhau."
+        },
+        {
+          "meaning_vi": "lời cầu nguyện",
+          "example_en": "He finished his grace and started eating.",
+          "example_vi": "Anh ấy kết thúc lời cầu nguyện của mình và bắt đầu ăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ, lược bỏ các nghĩa không phù hợp.",
+      "word": "grace",
+      "normalized_word": "grace",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She moved with grace across the dance floor.",
+      "example_vi_clean": "Cô ấy di chuyển với vẻ duyên dáng trên sàn nhảy."
+    },
+    {
+      "id": 25079,
+      "quiz_meaning_vi": "dần dần",
+      "meaning_vi_clean": "dần dần",
+      "examples_clean": [
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "The weather is gradually getting warmer.",
+          "example_vi": "Thời tiết đang dần dần ấm lên."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "He gradually learned to speak the language.",
+          "example_vi": "Anh ấy đã dần dần học cách nói ngôn ngữ đó."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "The pain gradually went away.",
+          "example_vi": "Cơn đau đã dần dần biến mất."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "She gradually realized the truth.",
+          "example_vi": "Cô ấy đã dần dần nhận ra sự thật."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "The sun gradually rose over the horizon.",
+          "example_vi": "Mặt trời dần dần mọc lên trên đường chân trời."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "We gradually became good friends.",
+          "example_vi": "Chúng tôi đã dần dần trở thành bạn tốt."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "The project is gradually nearing completion.",
+          "example_vi": "Dự án đang dần dần tiến gần đến việc hoàn thành."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "His health is gradually improving.",
+          "example_vi": "Sức khỏe của anh ấy đang dần dần cải thiện."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "The city is gradually changing.",
+          "example_vi": "Thành phố đang dần dần thay đổi."
+        },
+        {
+          "meaning_vi": "dần dần",
+          "example_en": "I gradually understood the complex instructions.",
+          "example_vi": "Tôi đã dần dần hiểu được các hướng dẫn phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung ví dụ.",
+      "word": "gradually",
+      "normalized_word": "gradually",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The weather is gradually getting warmer.",
+      "example_vi_clean": "Thời tiết đang dần dần ấm lên."
+    },
+    {
+      "id": 25080,
+      "quiz_meaning_vi": "gram",
+      "meaning_vi_clean": "gram",
+      "examples_clean": [
+        {
+          "meaning_vi": "gram",
+          "example_en": "The recipe calls for 500 grams of flour.",
+          "example_vi": "Công thức yêu cầu 500 gram bột mì."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "This small package weighs only 50 grams.",
+          "example_vi": "Gói nhỏ này chỉ nặng 50 gram."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "He needs to lose a few grams of weight.",
+          "example_vi": "Anh ấy cần giảm vài gram cân nặng."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "The gold bar weighs exactly 100 grams.",
+          "example_vi": "Thỏi vàng nặng chính xác 100 gram."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "Measure out 200 grams of sugar.",
+          "example_vi": "Đong 200 gram đường."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "The scale shows the weight in grams.",
+          "example_vi": "Cái cân hiển thị trọng lượng bằng gram."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "She added 10 grams of salt to the soup.",
+          "example_vi": "Cô ấy đã thêm 10 gram muối vào món súp."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "Each serving is about 150 grams.",
+          "example_vi": "Mỗi phần ăn là khoảng 150 gram."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "The medicine is measured in grams.",
+          "example_vi": "Thuốc được đo bằng gram."
+        },
+        {
+          "meaning_vi": "gram",
+          "example_en": "He bought 300 grams of coffee beans.",
+          "example_vi": "Anh ấy đã mua 300 gram hạt cà phê."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, loại bỏ các nghĩa không phù hợp, bổ sung ví dụ.",
+      "word": "gram",
+      "normalized_word": "gram",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The recipe calls for 500 grams of flour.",
+      "example_vi_clean": "Công thức yêu cầu 500 gram bột mì."
+    }
+  ]
+}

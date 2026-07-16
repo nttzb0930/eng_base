@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25641,
+      "quiz_meaning_vi": "đâm vào",
+      "meaning_vi_clean": "đâm vào; va chạm; chỗ sưng u",
+      "examples_clean": [
+        {
+          "meaning_vi": "đâm vào",
+          "example_en": "I accidentally bumped into the table and spilled my drink.",
+          "example_vi": "Tôi vô tình đâm vào cái bàn và làm đổ đồ uống."
+        },
+        {
+          "meaning_vi": "đâm vào",
+          "example_en": "The car bumped into the wall during the parking attempt.",
+          "example_vi": "Chiếc xe đâm vào bức tường trong lúc cố gắng đỗ xe."
+        },
+        {
+          "meaning_vi": "đâm vào",
+          "example_en": "He bumped his head on the low ceiling as he entered.",
+          "example_vi": "Anh ấy đâm vào trần nhà thấp khi bước vào."
+        },
+        {
+          "meaning_vi": "đâm vào",
+          "example_en": "She bumped her knee against the chair leg.",
+          "example_vi": "Cô ấy đâm đầu gối vào chân ghế."
+        },
+        {
+          "meaning_vi": "va chạm",
+          "example_en": "We bumped along the rough road in an old truck.",
+          "example_vi": "Chúng tôi va chạm xóc nảy trên con đường gồ ghề bằng một chiếc xe tải cũ."
+        },
+        {
+          "meaning_vi": "va chạm",
+          "example_en": "The two boats bumped together in the harbor.",
+          "example_vi": "Hai chiếc thuyền va chạm vào nhau trong bến cảng."
+        },
+        {
+          "meaning_vi": "va chạm",
+          "example_en": "The bus bumped over the potholes in the street.",
+          "example_vi": "Chiếc xe buýt va chạm xóc nảy qua những ổ gà trên đường."
+        },
+        {
+          "meaning_vi": "chỗ sưng u",
+          "example_en": "He had a large bump on his forehead after the fall.",
+          "example_vi": "Anh ấy có một chỗ sưng u lớn trên trán sau cú ngã."
+        },
+        {
+          "meaning_vi": "chỗ sưng u",
+          "example_en": "The bump on the wall was caused by the heavy door.",
+          "example_vi": "Chỗ sưng u trên tường là do cánh cửa nặng gây ra."
+        },
+        {
+          "meaning_vi": "chỗ sưng u",
+          "example_en": "She felt a small bump on her arm where she was stung.",
+          "example_vi": "Cô ấy cảm thấy một chỗ sưng u nhỏ trên cánh tay nơi bị đốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lọc nghĩa phổ biến, loại bỏ nghĩa lóng và chuyên ngành. Đảm bảo đủ 10 ví dụ với phân bổ hợp lý.",
+      "word": "bump",
+      "normalized_word": "bump",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I accidentally bumped into the table and spilled my drink.",
+      "example_vi_clean": "Tôi vô tình đâm vào cái bàn và làm đổ đồ uống."
+    },
+    {
+      "id": 25642,
+      "quiz_meaning_vi": "búi",
+      "meaning_vi_clean": "búi; chùm; bó",
+      "examples_clean": [
+        {
+          "meaning_vi": "búi",
+          "example_en": "She tied her hair back in a neat bun or bunch.",
+          "example_vi": "Cô ấy buộc tóc lại thành một búi gọn gàng."
+        },
+        {
+          "meaning_vi": "búi",
+          "example_en": "The threads were tangled in a messy bunch.",
+          "example_vi": "Những sợi chỉ bị rối thành một búi lộn xộn."
+        },
+        {
+          "meaning_vi": "búi",
+          "example_en": "He gathered the loose wires into a single bunch.",
+          "example_vi": "Anh ấy gom những sợi dây rời rạc thành một búi duy nhất."
+        },
+        {
+          "meaning_vi": "búi",
+          "example_en": "The wool was pulled into a thick bunch.",
+          "example_vi": "Len được kéo thành một búi dày."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "She bought a fresh bunch of grapes at the market.",
+          "example_vi": "Cô ấy mua một chùm nho tươi ở chợ."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "He held a bunch of balloons for the party.",
+          "example_vi": "Anh ấy cầm một chùm bóng bay cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "chùm",
+          "example_en": "A bunch of flowers was placed on the table.",
+          "example_vi": "Một chùm hoa được đặt trên bàn."
+        },
+        {
+          "meaning_vi": "bó",
+          "example_en": "I have a bunch of keys in my pocket.",
+          "example_vi": "Tôi có một bó chìa khóa trong túi."
+        },
+        {
+          "meaning_vi": "bó",
+          "example_en": "She carried a bunch of letters to the post office.",
+          "example_vi": "Cô ấy mang một bó thư đến bưu điện."
+        },
+        {
+          "meaning_vi": "bó",
+          "example_en": "He tied the sticks into a small bunch.",
+          "example_vi": "Anh ấy buộc những cành cây thành một bó nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Nghĩa được chuẩn hóa theo danh từ.",
+      "word": "bunch",
+      "normalized_word": "bunch",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She tied her hair back in a neat bun or bunch.",
+      "example_vi_clean": "Cô ấy buộc tóc lại thành một búi gọn gàng."
+    },
+    {
+      "id": 25643,
+      "quiz_meaning_vi": "gánh nặng",
+      "meaning_vi_clean": "gánh nặng; trọng tải",
+      "examples_clean": [
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "The heavy debt became a huge burden for the family.",
+          "example_vi": "Khoản nợ lớn đã trở thành một gánh nặng khổng lồ cho gia đình."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "She felt the burden of responsibility on her shoulders.",
+          "example_vi": "Cô ấy cảm thấy gánh nặng trách nhiệm trên vai mình."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "Caring for the elderly can be a financial burden.",
+          "example_vi": "Chăm sóc người già có thể là một gánh nặng tài chính."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "He tried to share the burden of the work with his team.",
+          "example_vi": "Anh ấy cố gắng chia sẻ gánh nặng công việc với nhóm của mình."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "The tax increase is a burden on low-income workers.",
+          "example_vi": "Việc tăng thuế là một gánh nặng đối với người lao động thu nhập thấp."
+        },
+        {
+          "meaning_vi": "gánh nặng",
+          "example_en": "Don't let your worries become a burden to others.",
+          "example_vi": "Đừng để những lo lắng của bạn trở thành gánh nặng cho người khác."
+        },
+        {
+          "meaning_vi": "trọng tải",
+          "example_en": "The ship has a total burden of five thousand tons.",
+          "example_vi": "Con tàu có tổng trọng tải là năm nghìn tấn."
+        },
+        {
+          "meaning_vi": "trọng tải",
+          "example_en": "The bridge has a maximum burden limit for trucks.",
+          "example_vi": "Cây cầu có giới hạn trọng tải tối đa cho xe tải."
+        },
+        {
+          "meaning_vi": "trọng tải",
+          "example_en": "The aircraft's burden capacity is limited by its size.",
+          "example_vi": "Khả năng trọng tải của máy bay bị giới hạn bởi kích thước của nó."
+        },
+        {
+          "meaning_vi": "trọng tải",
+          "example_en": "They calculated the burden of the cargo before loading.",
+          "example_vi": "Họ đã tính toán trọng tải của hàng hóa trước khi bốc xếp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Nghĩa được chuẩn hóa.",
+      "word": "burden",
+      "normalized_word": "burden",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The heavy debt became a huge burden for the family.",
+      "example_vi_clean": "Khoản nợ lớn đã trở thành một gánh nặng khổng lồ cho gia đình."
+    },
+    {
+      "id": 25644,
+      "quiz_meaning_vi": "cục",
+      "meaning_vi_clean": "cục; bàn làm việc; tủ có ngăn kéo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cục",
+          "example_en": "The Federal Bureau of Investigation is a well-known agency.",
+          "example_vi": "Cục Điều tra Liên bang là một cơ quan nổi tiếng."
+        },
+        {
+          "meaning_vi": "cục",
+          "example_en": "She works at the local employment bureau.",
+          "example_vi": "Cô ấy làm việc tại cục việc làm địa phương."
+        },
+        {
+          "meaning_vi": "cục",
+          "example_en": "The travel bureau helped us plan our vacation.",
+          "example_vi": "Cục du lịch đã giúp chúng tôi lên kế hoạch cho kỳ nghỉ."
+        },
+        {
+          "meaning_vi": "cục",
+          "example_en": "He visited the news bureau to report the story.",
+          "example_vi": "Anh ấy đã đến cục tin tức để báo cáo câu chuyện."
+        },
+        {
+          "meaning_vi": "bàn làm việc",
+          "example_en": "She sat at her bureau to write a letter.",
+          "example_vi": "Cô ấy ngồi vào bàn làm việc của mình để viết thư."
+        },
+        {
+          "meaning_vi": "bàn làm việc",
+          "example_en": "His bureau was covered with important documents.",
+          "example_vi": "Bàn làm việc của anh ấy phủ đầy những tài liệu quan trọng."
+        },
+        {
+          "meaning_vi": "bàn làm việc",
+          "example_en": "She organized her files on the bureau.",
+          "example_vi": "Cô ấy sắp xếp các tệp tin trên bàn làm việc."
+        },
+        {
+          "meaning_vi": "tủ có ngăn kéo",
+          "example_en": "He kept his clothes in the wooden bureau.",
+          "example_vi": "Anh ấy cất quần áo trong chiếc tủ có ngăn kéo bằng gỗ."
+        },
+        {
+          "meaning_vi": "tủ có ngăn kéo",
+          "example_en": "The old bureau had a mirror on top.",
+          "example_vi": "Chiếc tủ có ngăn kéo cũ có một cái gương ở trên."
+        },
+        {
+          "meaning_vi": "tủ có ngăn kéo",
+          "example_en": "She found the key inside the drawer of the bureau.",
+          "example_vi": "Cô ấy tìm thấy chìa khóa bên trong ngăn kéo của chiếc tủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho từng nghĩa.",
+      "word": "bureau",
+      "normalized_word": "bureau",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The Federal Bureau of Investigation is a well-known agency.",
+      "example_vi_clean": "Cục Điều tra Liên bang là một cơ quan nổi tiếng."
+    },
+    {
+      "id": 25645,
+      "quiz_meaning_vi": "kẻ trộm đêm",
+      "meaning_vi_clean": "kẻ trộm đêm",
+      "examples_clean": [
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar broke into the house while the family was asleep.",
+          "example_vi": "Kẻ trộm đêm đã đột nhập vào nhà khi gia đình đang ngủ."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "Police are looking for the burglar who stole the jewelry.",
+          "example_vi": "Cảnh sát đang tìm kiếm kẻ trộm đêm đã lấy cắp đồ trang sức."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar left fingerprints on the window frame.",
+          "example_vi": "Kẻ trộm đêm đã để lại dấu vân tay trên khung cửa sổ."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "A burglar was caught by the security camera.",
+          "example_vi": "Một kẻ trộm đêm đã bị camera an ninh ghi lại."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar escaped through the back door.",
+          "example_vi": "Kẻ trộm đêm đã trốn thoát qua cửa sau."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "They installed an alarm to keep the burglar away.",
+          "example_vi": "Họ đã lắp đặt báo động để ngăn kẻ trộm đêm."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar took only cash and small items.",
+          "example_vi": "Kẻ trộm đêm chỉ lấy tiền mặt và những món đồ nhỏ."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar was sentenced to three years in prison.",
+          "example_vi": "Kẻ trộm đêm đã bị kết án ba năm tù."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar wore a mask to hide his face.",
+          "example_vi": "Kẻ trộm đêm đeo mặt nạ để che giấu khuôn mặt."
+        },
+        {
+          "meaning_vi": "kẻ trộm đêm",
+          "example_en": "The burglar was surprised by the homeowner.",
+          "example_vi": "Kẻ trộm đêm đã bị chủ nhà làm cho bất ngờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "burglar",
+      "normalized_word": "burglar",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The burglar broke into the house while the family was asleep.",
+      "example_vi_clean": "Kẻ trộm đêm đã đột nhập vào nhà khi gia đình đang ngủ."
+    },
+    {
+      "id": 25646,
+      "quiz_meaning_vi": "đang cháy",
+      "meaning_vi_clean": "đang cháy; nóng bỏng",
+      "examples_clean": [
+        {
+          "meaning_vi": "đang cháy",
+          "example_en": "The burning building was visible from miles away.",
+          "example_vi": "Tòa nhà đang cháy có thể nhìn thấy từ cách xa hàng dặm."
+        },
+        {
+          "meaning_vi": "đang cháy",
+          "example_en": "He threw the burning wood into the fireplace.",
+          "example_vi": "Anh ấy ném khúc gỗ đang cháy vào lò sưởi."
+        },
+        {
+          "meaning_vi": "đang cháy",
+          "example_en": "The burning candle lit up the dark room.",
+          "example_vi": "Ngọn nến đang cháy thắp sáng căn phòng tối."
+        },
+        {
+          "meaning_vi": "đang cháy",
+          "example_en": "She stared at the burning embers in the fire.",
+          "example_vi": "Cô ấy nhìn chằm chằm vào những tàn lửa đang cháy trong đống lửa."
+        },
+        {
+          "meaning_vi": "đang cháy",
+          "example_en": "The burning sun made it hard to work outside.",
+          "example_vi": "Mặt trời đang cháy nắng khiến việc làm việc ngoài trời trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "đang cháy",
+          "example_en": "He felt a burning sensation in his throat.",
+          "example_vi": "Anh ấy cảm thấy một cảm giác đang cháy rát trong cổ họng."
+        },
+        {
+          "meaning_vi": "nóng bỏng",
+          "example_en": "This is a burning issue that needs immediate attention.",
+          "example_vi": "Đây là một vấn đề nóng bỏng cần được chú ý ngay lập tức."
+        },
+        {
+          "meaning_vi": "nóng bỏng",
+          "example_en": "She had a burning desire to travel the world.",
+          "example_vi": "Cô ấy có một khao khát nóng bỏng được đi du lịch khắp thế giới."
+        },
+        {
+          "meaning_vi": "nóng bỏng",
+          "example_en": "The sand was burning hot under our feet.",
+          "example_vi": "Cát nóng bỏng dưới chân chúng tôi."
+        },
+        {
+          "meaning_vi": "nóng bỏng",
+          "example_en": "He gave a burning speech about social justice.",
+          "example_vi": "Anh ấy đã có một bài phát biểu nóng bỏng về công bằng xã hội."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ sang nghĩa phù hợp. Bổ sung ví dụ cho các nghĩa.",
+      "word": "burning",
+      "normalized_word": "burning",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The burning building was visible from miles away.",
+      "example_vi_clean": "Tòa nhà đang cháy có thể nhìn thấy từ cách xa hàng dặm."
+    },
+    {
+      "id": 25647,
+      "quiz_meaning_vi": "nổ",
+      "meaning_vi_clean": "nổ; vỡ; bùng lên",
+      "examples_clean": [
+        {
+          "meaning_vi": "nổ",
+          "example_en": "The bomb will burst if the timer reaches zero.",
+          "example_vi": "Quả bom sẽ nổ nếu bộ đếm thời gian về không."
+        },
+        {
+          "meaning_vi": "nổ",
+          "example_en": "The tire burst while the car was driving on the highway.",
+          "example_vi": "Lốp xe bị nổ trong khi xe đang chạy trên đường cao tốc."
+        },
+        {
+          "meaning_vi": "nổ",
+          "example_en": "The balloon burst with a loud sound.",
+          "example_vi": "Quả bóng bay nổ với một tiếng động lớn."
+        },
+        {
+          "meaning_vi": "nổ",
+          "example_en": "The pipe burst and flooded the basement.",
+          "example_vi": "Đường ống bị nổ và làm ngập tầng hầm."
+        },
+        {
+          "meaning_vi": "vỡ",
+          "example_en": "The dam burst under the pressure of the floodwater.",
+          "example_vi": "Con đập bị vỡ dưới áp lực của nước lũ."
+        },
+        {
+          "meaning_vi": "vỡ",
+          "example_en": "The bubble burst as soon as it touched the ground.",
+          "example_vi": "Bong bóng vỡ ngay khi nó chạm đất."
+        },
+        {
+          "meaning_vi": "bùng lên",
+          "example_en": "She burst into tears when she heard the news.",
+          "example_vi": "Cô ấy bùng lên khóc khi nghe tin tức."
+        },
+        {
+          "meaning_vi": "bùng lên",
+          "example_en": "Laughter burst from the audience during the show.",
+          "example_vi": "Tiếng cười bùng lên từ khán giả trong buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "bùng lên",
+          "example_en": "The fire burst into flames suddenly.",
+          "example_vi": "Ngọn lửa bùng lên đột ngột."
+        },
+        {
+          "meaning_vi": "bùng lên",
+          "example_en": "He burst into the room without knocking.",
+          "example_vi": "Anh ấy bùng lên xông vào phòng mà không gõ cửa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho các nghĩa.",
+      "word": "burst",
+      "normalized_word": "burst",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The bomb will burst if the timer reaches zero.",
+      "example_vi_clean": "Quả bom sẽ nổ nếu bộ đếm thời gian về không."
+    },
+    {
+      "id": 25648,
+      "quiz_meaning_vi": "tượng nửa người",
+      "meaning_vi_clean": "tượng nửa người; phá sản",
+      "examples_clean": [
+        {
+          "meaning_vi": "tượng nửa người",
+          "example_en": "The museum displayed a marble bust of the emperor.",
+          "example_vi": "Bảo tàng trưng bày một bức tượng nửa người bằng đá cẩm thạch của hoàng đế."
+        },
+        {
+          "meaning_vi": "tượng nửa người",
+          "example_en": "She sculpted a clay bust of her grandfather.",
+          "example_vi": "Cô ấy đã điêu khắc một bức tượng nửa người bằng đất sét của ông mình."
+        },
+        {
+          "meaning_vi": "tượng nửa người",
+          "example_en": "The artist created a bronze bust for the park.",
+          "example_vi": "Người nghệ sĩ đã tạo ra một bức tượng nửa người bằng đồng cho công viên."
+        },
+        {
+          "meaning_vi": "tượng nửa người",
+          "example_en": "He admired the ancient bust in the gallery.",
+          "example_vi": "Anh ấy ngưỡng mộ bức tượng nửa người cổ trong phòng trưng bày."
+        },
+        {
+          "meaning_vi": "phá sản",
+          "example_en": "The company went bust after the financial crisis.",
+          "example_vi": "Công ty đã phá sản sau cuộc khủng hoảng tài chính."
+        },
+        {
+          "meaning_vi": "phá sản",
+          "example_en": "Many small businesses went bust during the recession.",
+          "example_vi": "Nhiều doanh nghiệp nhỏ đã phá sản trong thời kỳ suy thoái."
+        },
+        {
+          "meaning_vi": "phá sản",
+          "example_en": "If we don't change our strategy, we will go bust.",
+          "example_vi": "Nếu chúng ta không thay đổi chiến lược, chúng ta sẽ phá sản."
+        },
+        {
+          "meaning_vi": "phá sản",
+          "example_en": "The bank declared the firm bust last month.",
+          "example_vi": "Ngân hàng đã tuyên bố công ty phá sản vào tháng trước."
+        },
+        {
+          "meaning_vi": "phá sản",
+          "example_en": "He lost all his money and went bust.",
+          "example_vi": "Anh ấy mất hết tiền và bị phá sản."
+        },
+        {
+          "meaning_vi": "phá sản",
+          "example_en": "The project went bust due to lack of funding.",
+          "example_vi": "Dự án đã phá sản do thiếu kinh phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ động từ sang danh từ/tính từ phù hợp. Chuẩn hóa nghĩa.",
+      "word": "bust",
+      "normalized_word": "bust",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The museum displayed a marble bust of the emperor.",
+      "example_vi_clean": "Bảo tàng trưng bày một bức tượng nửa người bằng đá cẩm thạch của hoàng đế."
+    },
+    {
+      "id": 25649,
+      "quiz_meaning_vi": "người hàng thịt",
+      "meaning_vi_clean": "người hàng thịt; giết mổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "người hàng thịt",
+          "example_en": "The butcher sold fresh meat at the local market.",
+          "example_vi": "Người hàng thịt bán thịt tươi ở chợ địa phương."
+        },
+        {
+          "meaning_vi": "người hàng thịt",
+          "example_en": "I went to the butcher to buy some beef.",
+          "example_vi": "Tôi đã đến chỗ người hàng thịt để mua một ít thịt bò."
+        },
+        {
+          "meaning_vi": "người hàng thịt",
+          "example_en": "The butcher is known for his high-quality products.",
+          "example_vi": "Người hàng thịt nổi tiếng với các sản phẩm chất lượng cao."
+        },
+        {
+          "meaning_vi": "người hàng thịt",
+          "example_en": "She works as a butcher in a large supermarket.",
+          "example_vi": "Cô ấy làm việc như một người hàng thịt trong một siêu thị lớn."
+        },
+        {
+          "meaning_vi": "giết mổ",
+          "example_en": "They butcher the animals in a clean facility.",
+          "example_vi": "Họ giết mổ động vật trong một cơ sở sạch sẽ."
+        },
+        {
+          "meaning_vi": "giết mổ",
+          "example_en": "The farmer had to butcher the cow for the winter.",
+          "example_vi": "Người nông dân phải giết mổ con bò cho mùa đông."
+        },
+        {
+          "meaning_vi": "giết mổ",
+          "example_en": "It is important to butcher the meat properly.",
+          "example_vi": "Việc giết mổ thịt đúng cách là rất quan trọng."
+        },
+        {
+          "meaning_vi": "giết mổ",
+          "example_en": "The process of how they butcher the livestock is regulated.",
+          "example_vi": "Quy trình cách họ giết mổ gia súc được quy định chặt chẽ."
+        },
+        {
+          "meaning_vi": "giết mổ",
+          "example_en": "He learned how to butcher a pig from his father.",
+          "example_vi": "Anh ấy đã học cách giết mổ một con lợn từ cha mình."
+        },
+        {
+          "meaning_vi": "giết mổ",
+          "example_en": "They butcher the meat into smaller portions.",
+          "example_vi": "Họ giết mổ thịt thành những phần nhỏ hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ/động từ. Chuẩn hóa nghĩa.",
+      "word": "butcher",
+      "normalized_word": "butcher",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The butcher sold fresh meat at the local market.",
+      "example_vi_clean": "Người hàng thịt bán thịt tươi ở chợ địa phương."
+    },
+    {
+      "id": 25650,
+      "quiz_meaning_vi": "người mua",
+      "meaning_vi_clean": "người mua",
+      "examples_clean": [
+        {
+          "meaning_vi": "người mua",
+          "example_en": "The house attracted many potential buyers.",
+          "example_vi": "Ngôi nhà đã thu hút nhiều người mua tiềm năng."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "She is a regular buyer at this bookstore.",
+          "example_vi": "Cô ấy là một người mua thường xuyên tại hiệu sách này."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "The buyer decided to negotiate the price.",
+          "example_vi": "Người mua đã quyết định thương lượng giá cả."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "We are looking for a serious buyer for our car.",
+          "example_vi": "Chúng tôi đang tìm kiếm một người mua nghiêm túc cho chiếc xe của mình."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "The buyer was satisfied with the quality of the goods.",
+          "example_vi": "Người mua đã hài lòng với chất lượng của hàng hóa."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "Every buyer wants a good deal.",
+          "example_vi": "Mọi người mua đều muốn có một món hời."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "The buyer signed the contract yesterday.",
+          "example_vi": "Người mua đã ký hợp đồng vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "The store offers discounts to every buyer.",
+          "example_vi": "Cửa hàng cung cấp giảm giá cho mọi người mua."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "The buyer inspected the product before paying.",
+          "example_vi": "Người mua đã kiểm tra sản phẩm trước khi thanh toán."
+        },
+        {
+          "meaning_vi": "người mua",
+          "example_en": "She is the main buyer for the company's supplies.",
+          "example_vi": "Cô ấy là người mua chính cho các nguồn cung cấp của công ty."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "buyer",
+      "normalized_word": "buyer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The house attracted many potential buyers.",
+      "example_vi_clean": "Ngôi nhà đã thu hút nhiều người mua tiềm năng."
+    }
+  ]
+}

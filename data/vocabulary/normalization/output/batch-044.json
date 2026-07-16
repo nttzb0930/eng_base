@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24431,
+      "quiz_meaning_vi": "cuộc phỏng vấn",
+      "meaning_vi_clean": "cuộc phỏng vấn; sự gặp gỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "She had a job interview this morning.",
+          "example_vi": "Cô ấy có một cuộc phỏng vấn xin việc sáng nay."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "The reporter conducted an interview with the president.",
+          "example_vi": "Phóng viên đã thực hiện một cuộc phỏng vấn với tổng thống."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "I was nervous before the interview started.",
+          "example_vi": "Tôi đã rất lo lắng trước khi cuộc phỏng vấn bắt đầu."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "The interview lasted for about thirty minutes.",
+          "example_vi": "Cuộc phỏng vấn kéo dài khoảng ba mươi phút."
+        },
+        {
+          "meaning_vi": "sự gặp gỡ",
+          "example_en": "The meeting was a formal interview between the two parties.",
+          "example_vi": "Cuộc họp là một sự gặp gỡ chính thức giữa hai bên."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "He prepared well for his interview.",
+          "example_vi": "Anh ấy đã chuẩn bị kỹ lưỡng cho cuộc phỏng vấn của mình."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "They scheduled an interview for next week.",
+          "example_vi": "Họ đã lên lịch một cuộc phỏng vấn vào tuần tới."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "The interview went better than I expected.",
+          "example_vi": "Cuộc phỏng vấn diễn ra tốt hơn tôi mong đợi."
+        },
+        {
+          "meaning_vi": "sự gặp gỡ",
+          "example_en": "This interview is a chance to get to know each other.",
+          "example_vi": "Sự gặp gỡ này là cơ hội để hiểu rõ về nhau."
+        },
+        {
+          "meaning_vi": "cuộc phỏng vấn",
+          "example_en": "She answered all the questions in the interview.",
+          "example_vi": "Cô ấy đã trả lời tất cả các câu hỏi trong cuộc phỏng vấn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, cập nhật nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "interview",
+      "normalized_word": "interview",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She had a job interview this morning.",
+      "example_vi_clean": "Cô ấy có một cuộc phỏng vấn xin việc sáng nay."
+    },
+    {
+      "id": 24432,
+      "quiz_meaning_vi": "người phỏng vấn",
+      "meaning_vi_clean": "người phỏng vấn",
+      "examples_clean": [
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "The interviewer asked me several difficult questions.",
+          "example_vi": "Người phỏng vấn đã hỏi tôi vài câu hỏi khó."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "She impressed the interviewer with her experience.",
+          "example_vi": "Cô ấy đã gây ấn tượng với người phỏng vấn bằng kinh nghiệm của mình."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "The interviewer took notes during our conversation.",
+          "example_vi": "Người phỏng vấn đã ghi chú trong suốt cuộc trò chuyện của chúng tôi."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "Be polite to the interviewer at all times.",
+          "example_vi": "Hãy luôn lịch sự với người phỏng vấn."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "The interviewer thanked me for coming today.",
+          "example_vi": "Người phỏng vấn đã cảm ơn tôi vì đã đến hôm nay."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "He is a very experienced interviewer.",
+          "example_vi": "Ông ấy là một người phỏng vấn rất giàu kinh nghiệm."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "The interviewer smiled to make me feel comfortable.",
+          "example_vi": "Người phỏng vấn mỉm cười để làm tôi cảm thấy thoải mái."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "I waited for the interviewer to call my name.",
+          "example_vi": "Tôi đã đợi người phỏng vấn gọi tên mình."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "The interviewer reviewed my resume carefully.",
+          "example_vi": "Người phỏng vấn đã xem xét sơ yếu lý lịch của tôi một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "người phỏng vấn",
+          "example_en": "The interviewer asked about my future goals.",
+          "example_vi": "Người phỏng vấn đã hỏi về những mục tiêu tương lai của tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ minh họa.",
+      "word": "interviewer",
+      "normalized_word": "interviewer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The interviewer asked me several difficult questions.",
+      "example_vi_clean": "Người phỏng vấn đã hỏi tôi vài câu hỏi khó."
+    },
+    {
+      "id": 24433,
+      "quiz_meaning_vi": "vào",
+      "meaning_vi_clean": "vào; vào trong",
+      "examples_clean": [
+        {
+          "meaning_vi": "vào",
+          "example_en": "She walked into the room.",
+          "example_vi": "Cô ấy bước vào phòng."
+        },
+        {
+          "meaning_vi": "vào",
+          "example_en": "He jumped into the swimming pool.",
+          "example_vi": "Anh ấy nhảy vào hồ bơi."
+        },
+        {
+          "meaning_vi": "vào",
+          "example_en": "The cat ran into the garden.",
+          "example_vi": "Con mèo chạy vào vườn."
+        },
+        {
+          "meaning_vi": "vào",
+          "example_en": "They drove into the city center.",
+          "example_vi": "Họ lái xe vào trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "vào trong",
+          "example_en": "Put the books into the box.",
+          "example_vi": "Đặt những cuốn sách vào trong hộp."
+        },
+        {
+          "meaning_vi": "vào trong",
+          "example_en": "She poured water into the glass.",
+          "example_vi": "Cô ấy rót nước vào trong ly."
+        },
+        {
+          "meaning_vi": "vào trong",
+          "example_en": "He looked into the mirror.",
+          "example_vi": "Anh ấy nhìn vào trong gương."
+        },
+        {
+          "meaning_vi": "vào trong",
+          "example_en": "The letter was put into the envelope.",
+          "example_vi": "Bức thư đã được đặt vào trong phong bì."
+        },
+        {
+          "meaning_vi": "vào",
+          "example_en": "The train went into the tunnel.",
+          "example_vi": "Con tàu đi vào đường hầm."
+        },
+        {
+          "meaning_vi": "vào trong",
+          "example_en": "She stepped into the elevator.",
+          "example_vi": "Cô ấy bước vào trong thang máy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành giới từ, cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "into",
+      "normalized_word": "into",
+      "cefr_level": "A1",
+      "pos": "preposition",
+      "pos_vi_clean": "giới từ",
+      "example_en_clean": "She walked into the room.",
+      "example_vi_clean": "Cô ấy bước vào phòng."
+    },
+    {
+      "id": 24434,
+      "quiz_meaning_vi": "giới thiệu",
+      "meaning_vi_clean": "giới thiệu",
+      "examples_clean": [
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "Let me introduce you to my family.",
+          "example_vi": "Để tôi giới thiệu bạn với gia đình tôi."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "She introduced a new method of teaching.",
+          "example_vi": "Cô ấy đã giới thiệu một phương pháp giảng dạy mới."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "The teacher introduced the topic to the class.",
+          "example_vi": "Giáo viên đã giới thiệu chủ đề cho cả lớp."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "They introduced me to their colleagues.",
+          "example_vi": "Họ đã giới thiệu tôi với các đồng nghiệp của họ."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "The company introduced a new product line.",
+          "example_vi": "Công ty đã giới thiệu một dòng sản phẩm mới."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "He introduced his friend to the manager.",
+          "example_vi": "Anh ấy đã giới thiệu bạn mình với người quản lý."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "The book introduces basic concepts of science.",
+          "example_vi": "Cuốn sách giới thiệu các khái niệm cơ bản về khoa học."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "She was introduced to the world of music at a young age.",
+          "example_vi": "Cô ấy được giới thiệu với thế giới âm nhạc từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "The host introduced the next performer.",
+          "example_vi": "Người dẫn chương trình đã giới thiệu người biểu diễn tiếp theo."
+        },
+        {
+          "meaning_vi": "giới thiệu",
+          "example_en": "They introduced new rules for the game.",
+          "example_vi": "Họ đã giới thiệu các quy tắc mới cho trò chơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ minh họa.",
+      "word": "introduce",
+      "normalized_word": "introduce",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Let me introduce you to my family.",
+      "example_vi_clean": "Để tôi giới thiệu bạn với gia đình tôi."
+    },
+    {
+      "id": 24435,
+      "quiz_meaning_vi": "hòn đảo",
+      "meaning_vi_clean": "hòn đảo",
+      "examples_clean": [
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "They live on a small island.",
+          "example_vi": "Họ sống trên một hòn đảo nhỏ."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "The island is famous for its beaches.",
+          "example_vi": "Hòn đảo này nổi tiếng với những bãi biển của nó."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "We took a boat to the island.",
+          "example_vi": "Chúng tôi đi thuyền đến hòn đảo."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "The island has a beautiful landscape.",
+          "example_vi": "Hòn đảo có một phong cảnh tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "Many tourists visit the island every summer.",
+          "example_vi": "Nhiều du khách ghé thăm hòn đảo mỗi mùa hè."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "The island is located in the middle of the lake.",
+          "example_vi": "Hòn đảo nằm ở giữa hồ."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "They explored the island on foot.",
+          "example_vi": "Họ đã khám phá hòn đảo bằng cách đi bộ."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "The island is home to many rare birds.",
+          "example_vi": "Hòn đảo là nơi sinh sống của nhiều loài chim quý hiếm."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "We spent our vacation on a tropical island.",
+          "example_vi": "Chúng tôi đã dành kỳ nghỉ của mình trên một hòn đảo nhiệt đới."
+        },
+        {
+          "meaning_vi": "hòn đảo",
+          "example_en": "The island is connected to the mainland by a bridge.",
+          "example_vi": "Hòn đảo được nối với đất liền bằng một cây cầu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "island",
+      "normalized_word": "island",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They live on a small island.",
+      "example_vi_clean": "Họ sống trên một hòn đảo nhỏ."
+    },
+    {
+      "id": 24436,
+      "quiz_meaning_vi": "khoản",
+      "meaning_vi_clean": "khoản; món; tiết mục",
+      "examples_clean": [
+        {
+          "meaning_vi": "khoản",
+          "example_en": "Check every item on the list.",
+          "example_vi": "Kiểm tra từng khoản trong danh sách."
+        },
+        {
+          "meaning_vi": "khoản",
+          "example_en": "There is one more item to discuss.",
+          "example_vi": "Còn một khoản nữa cần thảo luận."
+        },
+        {
+          "meaning_vi": "món",
+          "example_en": "She bought several items at the store.",
+          "example_vi": "Cô ấy đã mua vài món tại cửa hàng."
+        },
+        {
+          "meaning_vi": "món",
+          "example_en": "Please pack all your personal items.",
+          "example_vi": "Vui lòng đóng gói tất cả các món đồ cá nhân của bạn."
+        },
+        {
+          "meaning_vi": "tiết mục",
+          "example_en": "The next item on the program is a dance.",
+          "example_vi": "Tiết mục tiếp theo trong chương trình là một điệu nhảy."
+        },
+        {
+          "meaning_vi": "tiết mục",
+          "example_en": "The concert included many popular items.",
+          "example_vi": "Buổi hòa nhạc bao gồm nhiều tiết mục phổ biến."
+        },
+        {
+          "meaning_vi": "khoản",
+          "example_en": "The budget includes many different items.",
+          "example_vi": "Ngân sách bao gồm nhiều khoản khác nhau."
+        },
+        {
+          "meaning_vi": "món",
+          "example_en": "He found an interesting item at the market.",
+          "example_vi": "Anh ấy đã tìm thấy một món đồ thú vị tại chợ."
+        },
+        {
+          "meaning_vi": "tiết mục",
+          "example_en": "The show had a variety of items.",
+          "example_vi": "Chương trình có nhiều tiết mục đa dạng."
+        },
+        {
+          "meaning_vi": "khoản",
+          "example_en": "We need to review each item carefully.",
+          "example_vi": "Chúng ta cần xem xét kỹ từng khoản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ minh họa.",
+      "word": "item",
+      "normalized_word": "item",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Check every item on the list.",
+      "example_vi_clean": "Kiểm tra từng khoản trong danh sách."
+    },
+    {
+      "id": 24437,
+      "quiz_meaning_vi": "của cái đó",
+      "meaning_vi_clean": "của cái đó",
+      "examples_clean": [
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The dog wagged its tail.",
+          "example_vi": "Con chó vẫy cái đuôi của nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The company changed its name.",
+          "example_vi": "Công ty đã đổi tên của nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The tree lost its leaves in autumn.",
+          "example_vi": "Cái cây rụng lá của nó vào mùa thu."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The car is known for its speed.",
+          "example_vi": "Chiếc xe nổi tiếng vì tốc độ của nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The house has its own garden.",
+          "example_vi": "Ngôi nhà có khu vườn của riêng nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The bird built its nest in the tree.",
+          "example_vi": "Con chim đã xây tổ của nó trên cây."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The city is famous for its history.",
+          "example_vi": "Thành phố nổi tiếng vì lịch sử của nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The book is interesting for its plot.",
+          "example_vi": "Cuốn sách thú vị vì cốt truyện của nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The cat cleaned its paws.",
+          "example_vi": "Con mèo liếm sạch bàn chân của nó."
+        },
+        {
+          "meaning_vi": "của cái đó",
+          "example_en": "The country is proud of its culture.",
+          "example_vi": "Đất nước tự hào về văn hóa của nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ minh họa.",
+      "word": "its",
+      "normalized_word": "its",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "The dog wagged its tail.",
+      "example_vi_clean": "Con chó vẫy cái đuôi của nó."
+    },
+    {
+      "id": 24438,
+      "quiz_meaning_vi": "áo vét tông",
+      "meaning_vi_clean": "áo vét tông; bìa bọc sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "He wore a blue jacket to the meeting.",
+          "example_vi": "Anh ấy mặc một chiếc áo vét tông màu xanh đến cuộc họp."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "She put on her jacket because it was cold.",
+          "example_vi": "Cô ấy mặc áo vét tông vào vì trời lạnh."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "His jacket was made of wool.",
+          "example_vi": "Chiếc áo vét tông của anh ấy được làm bằng len."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "She bought a new jacket for the winter.",
+          "example_vi": "Cô ấy đã mua một chiếc áo vét tông mới cho mùa đông."
+        },
+        {
+          "meaning_vi": "bìa bọc sách",
+          "example_en": "The jacket of the book was very colorful.",
+          "example_vi": "Bìa bọc sách của cuốn sách rất sặc sỡ."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "He hung his jacket on the chair.",
+          "example_vi": "Anh ấy treo chiếc áo vét tông của mình lên ghế."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "The jacket fits him perfectly.",
+          "example_vi": "Chiếc áo vét tông vừa vặn với anh ấy một cách hoàn hảo."
+        },
+        {
+          "meaning_vi": "bìa bọc sách",
+          "example_en": "The author's photo is on the book jacket.",
+          "example_vi": "Ảnh của tác giả nằm trên bìa bọc sách."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "She took off her jacket when she entered the house.",
+          "example_vi": "Cô ấy cởi áo vét tông ra khi bước vào nhà."
+        },
+        {
+          "meaning_vi": "áo vét tông",
+          "example_en": "He lost his jacket at the party.",
+          "example_vi": "Anh ấy đã làm mất chiếc áo vét tông của mình tại bữa tiệc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa pos_vi thành danh từ, cập nhật nghĩa và bổ sung ví dụ.",
+      "word": "jacket",
+      "normalized_word": "jacket",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He wore a blue jacket to the meeting.",
+      "example_vi_clean": "Anh ấy mặc một chiếc áo vét tông màu xanh đến cuộc họp."
+    },
+    {
+      "id": 24439,
+      "quiz_meaning_vi": "tháng giêng",
+      "meaning_vi_clean": "tháng giêng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "January is the first month of the year.",
+          "example_vi": "Tháng giêng là tháng đầu tiên của năm."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "We are going on vacation in January.",
+          "example_vi": "Chúng tôi sẽ đi nghỉ vào tháng giêng."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "It is very cold in January.",
+          "example_vi": "Trời rất lạnh vào tháng giêng."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "My birthday is in January.",
+          "example_vi": "Sinh nhật của tôi vào tháng giêng."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "The school term starts in January.",
+          "example_vi": "Học kỳ bắt đầu vào tháng giêng."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "January is often a busy month for us.",
+          "example_vi": "Tháng giêng thường là một tháng bận rộn đối với chúng tôi."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "They got married last January.",
+          "example_vi": "Họ đã kết hôn vào tháng giêng năm ngoái."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "The weather in January is usually snowy.",
+          "example_vi": "Thời tiết vào tháng giêng thường có tuyết."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "We have a meeting in January.",
+          "example_vi": "Chúng tôi có một cuộc họp vào tháng giêng."
+        },
+        {
+          "meaning_vi": "tháng giêng",
+          "example_en": "January marks the beginning of a new year.",
+          "example_vi": "Tháng giêng đánh dấu sự khởi đầu của một năm mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ minh họa.",
+      "word": "january",
+      "normalized_word": "january",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "January is the first month of the year.",
+      "example_vi_clean": "Tháng giêng là tháng đầu tiên của năm."
+    },
+    {
+      "id": 24440,
+      "quiz_meaning_vi": "quần bằng vải bông dày",
+      "meaning_vi_clean": "quần bằng vải bông dày",
+      "examples_clean": [
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "She is wearing a pair of blue jeans.",
+          "example_vi": "Cô ấy đang mặc một chiếc quần bằng vải bông dày màu xanh."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "These jeans are very comfortable.",
+          "example_vi": "Chiếc quần bằng vải bông dày này rất thoải mái."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "He bought new jeans yesterday.",
+          "example_vi": "Anh ấy đã mua quần bằng vải bông dày mới hôm qua."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "I need to wash my jeans.",
+          "example_vi": "Tôi cần giặt quần bằng vải bông dày của mình."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "Jeans are popular all over the world.",
+          "example_vi": "Quần bằng vải bông dày phổ biến trên toàn thế giới."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "She prefers wearing jeans to skirts.",
+          "example_vi": "Cô ấy thích mặc quần bằng vải bông dày hơn váy."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "These jeans are too long for me.",
+          "example_vi": "Chiếc quần bằng vải bông dày này quá dài đối với tôi."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "He has many pairs of jeans.",
+          "example_vi": "Anh ấy có nhiều chiếc quần bằng vải bông dày."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "Jeans are great for casual wear.",
+          "example_vi": "Quần bằng vải bông dày rất tuyệt cho trang phục thường ngày."
+        },
+        {
+          "meaning_vi": "quần bằng vải bông dày",
+          "example_en": "She ripped her jeans while playing.",
+          "example_vi": "Cô ấy đã làm rách quần bằng vải bông dày khi đang chơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ minh họa.",
+      "word": "jeans",
+      "normalized_word": "jeans",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is wearing a pair of blue jeans.",
+      "example_vi_clean": "Cô ấy đang mặc một chiếc quần bằng vải bông dày màu xanh."
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25721,
+      "quiz_meaning_vi": "nền văn minh",
+      "meaning_vi_clean": "nền văn minh; sự làm cho văn minh",
+      "examples_clean": [
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "Ancient Egyptian civilization lasted for thousands of years.",
+          "example_vi": "Nền văn minh Ai Cập cổ đại đã tồn tại hàng ngàn năm."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "Modern civilization relies heavily on advanced technology.",
+          "example_vi": "Nền văn minh hiện đại phụ thuộc rất nhiều vào công nghệ tiên tiến."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "Many believe that the Mayan civilization was highly advanced.",
+          "example_vi": "Nhiều người tin rằng nền văn minh Maya đã rất phát triển."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "The study of history helps us understand the rise and fall of civilization.",
+          "example_vi": "Việc nghiên cứu lịch sử giúp chúng ta hiểu về sự hưng thịnh và suy tàn của nền văn minh."
+        },
+        {
+          "meaning_vi": "sự làm cho văn minh",
+          "example_en": "The process of civilization brought new laws to the region.",
+          "example_vi": "Quá trình làm cho văn minh đã mang lại những luật lệ mới cho khu vực này."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "We must protect our civilization for future generations.",
+          "example_vi": "Chúng ta phải bảo vệ nền văn minh của mình cho các thế hệ tương lai."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "The ruins provide a glimpse into a lost civilization.",
+          "example_vi": "Những tàn tích mang đến cái nhìn thoáng qua về một nền văn minh đã mất."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "Water is essential for the development of any civilization.",
+          "example_vi": "Nước là yếu tố thiết yếu cho sự phát triển của bất kỳ nền văn minh nào."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "The exhibition showcases artifacts from a great civilization.",
+          "example_vi": "Triển lãm trưng bày các hiện vật từ một nền văn minh vĩ đại."
+        },
+        {
+          "meaning_vi": "nền văn minh",
+          "example_en": "Communication is the backbone of human civilization.",
+          "example_vi": "Giao tiếp là xương sống của nền văn minh nhân loại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa chính và bổ sung 10 ví dụ phù hợp với cấp độ B1.",
+      "word": "civilization",
+      "normalized_word": "civilization",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Ancient Egyptian civilization lasted for thousands of years.",
+      "example_vi_clean": "Nền văn minh Ai Cập cổ đại đã tồn tại hàng ngàn năm."
+    },
+    {
+      "id": 25722,
+      "quiz_meaning_vi": "sự đòi",
+      "meaning_vi_clean": "sự đòi; lời xác nhận; quyền đòi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đòi",
+          "example_en": "The insurance company rejected his claim for damages.",
+          "example_vi": "Công ty bảo hiểm đã từ chối sự đòi bồi thường thiệt hại của anh ấy."
+        },
+        {
+          "meaning_vi": "sự đòi",
+          "example_en": "She filed a claim for compensation after the accident.",
+          "example_vi": "Cô ấy đã nộp đơn đòi bồi thường sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "sự đòi",
+          "example_en": "The government is investigating the claim for land ownership.",
+          "example_vi": "Chính phủ đang điều tra sự đòi quyền sở hữu đất đai."
+        },
+        {
+          "meaning_vi": "sự đòi",
+          "example_en": "He made a claim that the product was defective.",
+          "example_vi": "Anh ấy đưa ra sự đòi bồi hoàn vì sản phẩm bị lỗi."
+        },
+        {
+          "meaning_vi": "lời xác nhận",
+          "example_en": "The company's claim that the drug is safe remains unproven.",
+          "example_vi": "Lời xác nhận của công ty rằng loại thuốc này an toàn vẫn chưa được chứng minh."
+        },
+        {
+          "meaning_vi": "lời xác nhận",
+          "example_en": "There is no evidence to support his claim.",
+          "example_vi": "Không có bằng chứng nào để ủng hộ lời xác nhận của anh ấy."
+        },
+        {
+          "meaning_vi": "lời xác nhận",
+          "example_en": "The report challenges the claim that the economy is improving.",
+          "example_vi": "Báo cáo thách thức lời xác nhận rằng nền kinh tế đang cải thiện."
+        },
+        {
+          "meaning_vi": "quyền đòi",
+          "example_en": "She has a legal claim to the property.",
+          "example_vi": "Cô ấy có quyền đòi hợp pháp đối với tài sản đó."
+        },
+        {
+          "meaning_vi": "quyền đòi",
+          "example_en": "Do you have any claim on this inheritance?",
+          "example_vi": "Bạn có quyền đòi nào đối với khoản thừa kế này không?"
+        },
+        {
+          "meaning_vi": "lời xác nhận",
+          "example_en": "His claim to be an expert was quickly dismissed.",
+          "example_vi": "Lời xác nhận rằng anh ta là một chuyên gia đã nhanh chóng bị bác bỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ thành danh từ, chọn nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "claim",
+      "normalized_word": "claim",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The insurance company rejected his claim for damages.",
+      "example_vi_clean": "Công ty bảo hiểm đã từ chối sự đòi bồi thường thiệt hại của anh ấy."
+    },
+    {
+      "id": 25723,
+      "quiz_meaning_vi": "kinh điển",
+      "meaning_vi_clean": "kinh điển; cổ điển",
+      "examples_clean": [
+        {
+          "meaning_vi": "kinh điển",
+          "example_en": "This book is considered a classical work of literature.",
+          "example_vi": "Cuốn sách này được coi là một tác phẩm kinh điển của văn học."
+        },
+        {
+          "meaning_vi": "kinh điển",
+          "example_en": "He gave a classical performance of the piano concerto.",
+          "example_vi": "Anh ấy đã có một màn trình diễn kinh điển bản hòa tấu piano."
+        },
+        {
+          "meaning_vi": "kinh điển",
+          "example_en": "The movie is a classical example of a thriller.",
+          "example_vi": "Bộ phim là một ví dụ kinh điển của thể loại phim giật gân."
+        },
+        {
+          "meaning_vi": "kinh điển",
+          "example_en": "She studied classical philosophy at university.",
+          "example_vi": "Cô ấy đã học triết học kinh điển tại trường đại học."
+        },
+        {
+          "meaning_vi": "cổ điển",
+          "example_en": "I enjoy listening to classical music in the evening.",
+          "example_vi": "Tôi thích nghe nhạc cổ điển vào buổi tối."
+        },
+        {
+          "meaning_vi": "cổ điển",
+          "example_en": "The building features a classical architectural style.",
+          "example_vi": "Tòa nhà có phong cách kiến trúc cổ điển."
+        },
+        {
+          "meaning_vi": "cổ điển",
+          "example_en": "They are learning classical ballet techniques.",
+          "example_vi": "Họ đang học các kỹ thuật múa ba lê cổ điển."
+        },
+        {
+          "meaning_vi": "cổ điển",
+          "example_en": "The restaurant serves classical French cuisine.",
+          "example_vi": "Nhà hàng phục vụ ẩm thực Pháp cổ điển."
+        },
+        {
+          "meaning_vi": "kinh điển",
+          "example_en": "It was a classical mistake to ignore the warning.",
+          "example_vi": "Đó là một sai lầm kinh điển khi phớt lờ lời cảnh báo."
+        },
+        {
+          "meaning_vi": "cổ điển",
+          "example_en": "The museum houses a collection of classical art.",
+          "example_vi": "Bảo tàng lưu giữ một bộ sưu tập nghệ thuật cổ điển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ minh họa cho cả hai nghĩa.",
+      "word": "classical",
+      "normalized_word": "classical",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This book is considered a classical work of literature.",
+      "example_vi_clean": "Cuốn sách này được coi là một tác phẩm kinh điển của văn học."
+    },
+    {
+      "id": 25724,
+      "quiz_meaning_vi": "phân loại",
+      "meaning_vi_clean": "phân loại",
+      "examples_clean": [
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "Scientists classify animals into different groups.",
+          "example_vi": "Các nhà khoa học phân loại động vật thành các nhóm khác nhau."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "How do you classify this type of music?",
+          "example_vi": "Bạn phân loại loại nhạc này như thế nào?"
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "The library books are classified by subject.",
+          "example_vi": "Sách trong thư viện được phân loại theo chủ đề."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "It is difficult to classify these plants accurately.",
+          "example_vi": "Rất khó để phân loại chính xác những loài thực vật này."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "The government decided to classify the documents as secret.",
+          "example_vi": "Chính phủ quyết định phân loại các tài liệu này là tài liệu mật."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "We need to classify the data before analyzing it.",
+          "example_vi": "Chúng ta cần phân loại dữ liệu trước khi phân tích nó."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "They classify the products based on their quality.",
+          "example_vi": "Họ phân loại các sản phẩm dựa trên chất lượng của chúng."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "Can you classify these items into categories?",
+          "example_vi": "Bạn có thể phân loại những mặt hàng này thành các danh mục không?"
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "The system helps to classify emails automatically.",
+          "example_vi": "Hệ thống giúp phân loại email một cách tự động."
+        },
+        {
+          "meaning_vi": "phân loại",
+          "example_en": "Experts classify this disease as highly contagious.",
+          "example_vi": "Các chuyên gia phân loại căn bệnh này là có khả năng lây nhiễm cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã giữ nghĩa chính và bổ sung đủ 10 ví dụ.",
+      "word": "classify",
+      "normalized_word": "classify",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Scientists classify animals into different groups.",
+      "example_vi_clean": "Các nhà khoa học phân loại động vật thành các nhóm khác nhau."
+    },
+    {
+      "id": 25725,
+      "quiz_meaning_vi": "tiếng lách cách",
+      "meaning_vi_clean": "tiếng lách cách; kêu lách cách; nhấp chuột",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "I heard a sharp click as the door locked.",
+          "example_vi": "Tôi nghe thấy một tiếng lách cách sắc bén khi cửa khóa lại."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The pen makes a soft click when you press it.",
+          "example_vi": "Chiếc bút tạo ra tiếng lách cách nhẹ khi bạn nhấn nó."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "There was a click of the camera shutter.",
+          "example_vi": "Có một tiếng lách cách của màn trập máy ảnh."
+        },
+        {
+          "meaning_vi": "tiếng lách cách",
+          "example_en": "The lock gave a click and opened.",
+          "example_vi": "Ổ khóa phát ra tiếng lách cách và mở ra."
+        },
+        {
+          "meaning_vi": "kêu lách cách",
+          "example_en": "His joints clicked as he stood up.",
+          "example_vi": "Các khớp xương của anh ấy kêu lách cách khi anh ấy đứng dậy."
+        },
+        {
+          "meaning_vi": "kêu lách cách",
+          "example_en": "The metal parts clicked together.",
+          "example_vi": "Các bộ phận kim loại kêu lách cách vào nhau."
+        },
+        {
+          "meaning_vi": "nhấp chuột",
+          "example_en": "Click on the icon to open the file.",
+          "example_vi": "Nhấp chuột vào biểu tượng để mở tệp tin."
+        },
+        {
+          "meaning_vi": "nhấp chuột",
+          "example_en": "You need to click the link to register.",
+          "example_vi": "Bạn cần nhấp chuột vào liên kết để đăng ký."
+        },
+        {
+          "meaning_vi": "nhấp chuột",
+          "example_en": "Click here for more information.",
+          "example_vi": "Nhấp chuột vào đây để biết thêm thông tin."
+        },
+        {
+          "meaning_vi": "nhấp chuột",
+          "example_en": "Double click the mouse to select the folder.",
+          "example_vi": "Nhấp chuột hai lần để chọn thư mục."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ thành danh từ/động từ, bổ sung nghĩa nhấp chuột và ví dụ.",
+      "word": "click",
+      "normalized_word": "click",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I heard a sharp click as the door locked.",
+      "example_vi_clean": "Tôi nghe thấy một tiếng lách cách sắc bén khi cửa khóa lại."
+    },
+    {
+      "id": 25726,
+      "quiz_meaning_vi": "vách đá",
+      "meaning_vi_clean": "vách đá",
+      "examples_clean": [
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "The house is perched on the edge of a high cliff.",
+          "example_vi": "Ngôi nhà nằm chênh vênh trên mép một vách đá cao."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "We looked down from the cliff at the crashing waves.",
+          "example_vi": "Chúng tôi nhìn xuống từ vách đá vào những con sóng đang vỗ mạnh."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "The path runs along the top of the cliff.",
+          "example_vi": "Con đường chạy dọc theo đỉnh vách đá."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "Be careful not to fall off the cliff.",
+          "example_vi": "Hãy cẩn thận đừng ngã khỏi vách đá."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "The birds nested in the side of the cliff.",
+          "example_vi": "Những con chim làm tổ trên sườn vách đá."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "The cliff rises steeply from the sea.",
+          "example_vi": "Vách đá dựng đứng từ mặt biển."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "They climbed the rocky cliff with great difficulty.",
+          "example_vi": "Họ leo lên vách đá đầy đá với rất nhiều khó khăn."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "The view from the cliff is absolutely breathtaking.",
+          "example_vi": "Khung cảnh từ vách đá thực sự ngoạn mục."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "Erosion has caused the cliff to crumble.",
+          "example_vi": "Sự xói mòn đã làm cho vách đá bị sạt lở."
+        },
+        {
+          "meaning_vi": "vách đá",
+          "example_en": "A lighthouse stands on the edge of the cliff.",
+          "example_vi": "Một ngọn hải đăng đứng trên mép vách đá."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã giữ nghĩa chính và bổ sung 10 ví dụ.",
+      "word": "cliff",
+      "normalized_word": "cliff",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The house is perched on the edge of a high cliff.",
+      "example_vi_clean": "Ngôi nhà nằm chênh vênh trên mép một vách đá cao."
+    },
+    {
+      "id": 25727,
+      "quiz_meaning_vi": "khí hậu",
+      "meaning_vi_clean": "khí hậu; môi trường",
+      "examples_clean": [
+        {
+          "meaning_vi": "khí hậu",
+          "example_en": "The region has a warm and humid climate.",
+          "example_vi": "Khu vực này có khí hậu ấm áp và ẩm ướt."
+        },
+        {
+          "meaning_vi": "khí hậu",
+          "example_en": "Climate change is a major global concern.",
+          "example_vi": "Biến đổi khí hậu là một mối quan tâm lớn trên toàn cầu."
+        },
+        {
+          "meaning_vi": "khí hậu",
+          "example_en": "Many people move to areas with a better climate.",
+          "example_vi": "Nhiều người chuyển đến những khu vực có khí hậu tốt hơn."
+        },
+        {
+          "meaning_vi": "khí hậu",
+          "example_en": "The local climate is perfect for growing grapes.",
+          "example_vi": "Khí hậu địa phương rất hoàn hảo để trồng nho."
+        },
+        {
+          "meaning_vi": "môi trường",
+          "example_en": "The current economic climate is very challenging.",
+          "example_vi": "Môi trường kinh tế hiện tại đang rất thách thức."
+        },
+        {
+          "meaning_vi": "môi trường",
+          "example_en": "We need to create a positive climate for learning.",
+          "example_vi": "Chúng ta cần tạo ra một môi trường tích cực cho việc học tập."
+        },
+        {
+          "meaning_vi": "môi trường",
+          "example_en": "The political climate has changed significantly this year.",
+          "example_vi": "Môi trường chính trị đã thay đổi đáng kể trong năm nay."
+        },
+        {
+          "meaning_vi": "khí hậu",
+          "example_en": "Plants adapt to the climate of their environment.",
+          "example_vi": "Thực vật thích nghi với khí hậu của môi trường sống của chúng."
+        },
+        {
+          "meaning_vi": "môi trường",
+          "example_en": "The company wants to improve the working climate.",
+          "example_vi": "Công ty muốn cải thiện môi trường làm việc."
+        },
+        {
+          "meaning_vi": "khí hậu",
+          "example_en": "The harsh climate makes life difficult in the desert.",
+          "example_vi": "Khí hậu khắc nghiệt làm cho cuộc sống trở nên khó khăn trên sa mạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho cả nghĩa đen và nghĩa bóng.",
+      "word": "climate",
+      "normalized_word": "climate",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The region has a warm and humid climate.",
+      "example_vi_clean": "Khu vực này có khí hậu ấm áp và ẩm ướt."
+    },
+    {
+      "id": 25728,
+      "quiz_meaning_vi": "người leo trèo",
+      "meaning_vi_clean": "người leo trèo; cây leo",
+      "examples_clean": [
+        {
+          "meaning_vi": "người leo trèo",
+          "example_en": "The climber reached the summit after hours of effort.",
+          "example_vi": "Người leo trèo đã lên đến đỉnh sau nhiều giờ nỗ lực."
+        },
+        {
+          "meaning_vi": "người leo trèo",
+          "example_en": "Experienced climbers always use safety ropes.",
+          "example_vi": "Những người leo trèo có kinh nghiệm luôn sử dụng dây an toàn."
+        },
+        {
+          "meaning_vi": "người leo trèo",
+          "example_en": "She is a talented rock climber.",
+          "example_vi": "Cô ấy là một người leo trèo vách đá tài năng."
+        },
+        {
+          "meaning_vi": "người leo trèo",
+          "example_en": "The mountain climber prepared his gear carefully.",
+          "example_vi": "Người leo trèo núi đã chuẩn bị thiết bị của mình một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "người leo trèo",
+          "example_en": "He is a social climber who wants to meet wealthy people.",
+          "example_vi": "Anh ta là một kẻ thích bon chen muốn làm quen với những người giàu có."
+        },
+        {
+          "meaning_vi": "cây leo",
+          "example_en": "This plant is a fast-growing climber.",
+          "example_vi": "Loài cây này là một loại cây leo phát triển nhanh."
+        },
+        {
+          "meaning_vi": "cây leo",
+          "example_en": "We planted some climbers against the garden wall.",
+          "example_vi": "Chúng tôi đã trồng một vài loại cây leo dựa vào tường vườn."
+        },
+        {
+          "meaning_vi": "cây leo",
+          "example_en": "The climber needs a trellis to grow properly.",
+          "example_vi": "Cây leo cần một giàn để phát triển đúng cách."
+        },
+        {
+          "meaning_vi": "người leo trèo",
+          "example_en": "The young climber showed great courage on the mountain.",
+          "example_vi": "Người leo trèo trẻ tuổi đã thể hiện lòng dũng cảm tuyệt vời trên núi."
+        },
+        {
+          "meaning_vi": "cây leo",
+          "example_en": "Ivy is a common type of climber.",
+          "example_vi": "Cây thường xuân là một loại cây leo phổ biến."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho cả hai nghĩa.",
+      "word": "climber",
+      "normalized_word": "climber",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The climber reached the summit after hours of effort.",
+      "example_vi_clean": "Người leo trèo đã lên đến đỉnh sau nhiều giờ nỗ lực."
+    },
+    {
+      "id": 25729,
+      "quiz_meaning_vi": "phòng khám",
+      "meaning_vi_clean": "phòng khám",
+      "examples_clean": [
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "She works as a nurse at a local clinic.",
+          "example_vi": "Cô ấy làm y tá tại một phòng khám địa phương."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "You should make an appointment at the clinic.",
+          "example_vi": "Bạn nên đặt lịch hẹn tại phòng khám."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "The clinic offers free health check-ups.",
+          "example_vi": "Phòng khám cung cấp các buổi kiểm tra sức khỏe miễn phí."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "He went to the clinic to get his flu shot.",
+          "example_vi": "Anh ấy đã đến phòng khám để tiêm phòng cúm."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "The dental clinic is open on weekends.",
+          "example_vi": "Phòng khám nha khoa mở cửa vào cuối tuần."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "They are building a new medical clinic in the city.",
+          "example_vi": "Họ đang xây dựng một phòng khám y tế mới trong thành phố."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "The clinic is closed for the holiday.",
+          "example_vi": "Phòng khám đóng cửa vào ngày lễ."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "She visited the skin clinic for a consultation.",
+          "example_vi": "Cô ấy đã đến phòng khám da liễu để được tư vấn."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "The clinic provides excellent care for patients.",
+          "example_vi": "Phòng khám cung cấp dịch vụ chăm sóc tuyệt vời cho bệnh nhân."
+        },
+        {
+          "meaning_vi": "phòng khám",
+          "example_en": "I need to pick up my prescription from the clinic.",
+          "example_vi": "Tôi cần lấy đơn thuốc của mình từ phòng khám."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'bệnh viện thực hành' thành 'phòng khám' cho phù hợp với cách dùng hiện đại và bổ sung ví dụ.",
+      "word": "clinic",
+      "normalized_word": "clinic",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She works as a nurse at a local clinic.",
+      "example_vi_clean": "Cô ấy làm y tá tại một phòng khám địa phương."
+    },
+    {
+      "id": 25730,
+      "quiz_meaning_vi": "cái kẹp",
+      "meaning_vi_clean": "cái kẹp; cắt; đoạn phim",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái kẹp",
+          "example_en": "Use a paper clip to hold these documents together.",
+          "example_vi": "Sử dụng một cái kẹp giấy để giữ các tài liệu này lại với nhau."
+        },
+        {
+          "meaning_vi": "cái kẹp",
+          "example_en": "She used a hair clip to keep her hair back.",
+          "example_vi": "Cô ấy dùng một cái kẹp tóc để giữ tóc ra phía sau."
+        },
+        {
+          "meaning_vi": "cái kẹp",
+          "example_en": "The clip on the bag is broken.",
+          "example_vi": "Cái kẹp trên túi đã bị hỏng."
+        },
+        {
+          "meaning_vi": "cắt",
+          "example_en": "Can you clip the article from the newspaper for me?",
+          "example_vi": "Bạn có thể cắt bài báo đó ra khỏi tờ báo giúp tôi không?"
+        },
+        {
+          "meaning_vi": "cắt",
+          "example_en": "He clipped the hedge to keep it neat.",
+          "example_vi": "Anh ấy cắt tỉa hàng rào để giữ cho nó gọn gàng."
+        },
+        {
+          "meaning_vi": "cắt",
+          "example_en": "She clipped the coupon from the magazine.",
+          "example_vi": "Cô ấy cắt phiếu giảm giá từ tạp chí."
+        },
+        {
+          "meaning_vi": "đoạn phim",
+          "example_en": "I watched a short clip of the movie online.",
+          "example_vi": "Tôi đã xem một đoạn phim ngắn của bộ phim trên mạng."
+        },
+        {
+          "meaning_vi": "đoạn phim",
+          "example_en": "The news showed a clip of the interview.",
+          "example_vi": "Bản tin đã chiếu một đoạn phim của cuộc phỏng vấn."
+        },
+        {
+          "meaning_vi": "đoạn phim",
+          "example_en": "He shared a funny video clip with his friends.",
+          "example_vi": "Anh ấy đã chia sẻ một đoạn phim hài hước với bạn bè của mình."
+        },
+        {
+          "meaning_vi": "cái kẹp",
+          "example_en": "The metal clip holds the wires in place.",
+          "example_vi": "Cái kẹp kim loại giữ các dây điện ở đúng vị trí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ thành danh từ/động từ, bổ sung nghĩa đoạn phim và ví dụ.",
+      "word": "clip",
+      "normalized_word": "clip",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Use a paper clip to hold these documents together.",
+      "example_vi_clean": "Sử dụng một cái kẹp giấy để giữ các tài liệu này lại với nhau."
+    }
+  ]
+}

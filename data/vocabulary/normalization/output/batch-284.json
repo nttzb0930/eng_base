@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26831,
+      "quiz_meaning_vi": "dày đặc",
+      "meaning_vi_clean": "dày đặc; rậm rạp",
+      "examples_clean": [
+        {
+          "meaning_vi": "dày đặc",
+          "example_en": "The area is densely populated with many people.",
+          "example_vi": "Khu vực này có dân cư sinh sống dày đặc."
+        },
+        {
+          "meaning_vi": "dày đặc",
+          "example_en": "Smoke was densely packed in the small room.",
+          "example_vi": "Khói bao phủ dày đặc trong căn phòng nhỏ."
+        },
+        {
+          "meaning_vi": "dày đặc",
+          "example_en": "The city center is densely built with tall buildings.",
+          "example_vi": "Trung tâm thành phố được xây dựng dày đặc các tòa nhà cao tầng."
+        },
+        {
+          "meaning_vi": "dày đặc",
+          "example_en": "Traffic was densely moving along the main highway.",
+          "example_vi": "Giao thông di chuyển dày đặc dọc theo đường cao tốc chính."
+        },
+        {
+          "meaning_vi": "rậm rạp",
+          "example_en": "The forest was densely covered with ancient trees.",
+          "example_vi": "Khu rừng được bao phủ rậm rạp bởi những cây cổ thụ."
+        },
+        {
+          "meaning_vi": "rậm rạp",
+          "example_en": "They walked through the densely overgrown garden.",
+          "example_vi": "Họ đi bộ qua khu vườn rậm rạp cây cối."
+        },
+        {
+          "meaning_vi": "rậm rạp",
+          "example_en": "The jungle is densely filled with exotic plants.",
+          "example_vi": "Khu rừng nhiệt đới rậm rạp đầy những loài cây lạ."
+        },
+        {
+          "meaning_vi": "rậm rạp",
+          "example_en": "He has a densely growing beard.",
+          "example_vi": "Anh ấy có bộ râu mọc rậm rạp."
+        },
+        {
+          "meaning_vi": "rậm rạp",
+          "example_en": "The bushes were densely clustered together.",
+          "example_vi": "Những bụi cây mọc rậm rạp sát vào nhau."
+        },
+        {
+          "meaning_vi": "rậm rạp",
+          "example_en": "The vines were densely tangled on the wall.",
+          "example_vi": "Những dây leo mọc rậm rạp đan xen trên tường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ theo quy tắc.",
+      "word": "densely",
+      "normalized_word": "densely",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The area is densely populated with many people.",
+      "example_vi_clean": "Khu vực này có dân cư sinh sống dày đặc."
+    },
+    {
+      "id": 26832,
+      "quiz_meaning_vi": "răng",
+      "meaning_vi_clean": "răng; âm răng",
+      "examples_clean": [
+        {
+          "meaning_vi": "răng",
+          "example_en": "She went to the clinic for a dental checkup.",
+          "example_vi": "Cô ấy đã đến phòng khám để kiểm tra răng."
+        },
+        {
+          "meaning_vi": "răng",
+          "example_en": "Good dental hygiene is important for your health.",
+          "example_vi": "Vệ sinh răng miệng tốt rất quan trọng cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "răng",
+          "example_en": "The dentist provided excellent dental care.",
+          "example_vi": "Nha sĩ đã cung cấp dịch vụ chăm sóc răng miệng tuyệt vời."
+        },
+        {
+          "meaning_vi": "răng",
+          "example_en": "He needs a dental implant after the accident.",
+          "example_vi": "Anh ấy cần cấy ghép răng sau vụ tai nạn."
+        },
+        {
+          "meaning_vi": "âm răng",
+          "example_en": "The sound is classified as a dental consonant.",
+          "example_vi": "Âm thanh đó được phân loại là một âm răng."
+        },
+        {
+          "meaning_vi": "âm răng",
+          "example_en": "In this language, the letter T represents a dental sound.",
+          "example_vi": "Trong ngôn ngữ này, chữ T đại diện cho một âm răng."
+        },
+        {
+          "meaning_vi": "âm răng",
+          "example_en": "Students learned how to articulate dental sounds correctly.",
+          "example_vi": "Học sinh đã học cách phát âm các âm răng một cách chính xác."
+        },
+        {
+          "meaning_vi": "âm răng",
+          "example_en": "The phonetic symbol indicates a dental articulation.",
+          "example_vi": "Ký hiệu ngữ âm chỉ ra một cách phát âm âm răng."
+        },
+        {
+          "meaning_vi": "âm răng",
+          "example_en": "Linguists study the evolution of dental sounds.",
+          "example_vi": "Các nhà ngôn ngữ học nghiên cứu sự tiến hóa của các âm răng."
+        },
+        {
+          "meaning_vi": "âm răng",
+          "example_en": "The dental fricative is common in many languages.",
+          "example_vi": "Âm xát răng phổ biến trong nhiều ngôn ngữ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ (đúng với từ dental). Bổ sung ví dụ cho cả 2 nghĩa.",
+      "word": "dental",
+      "normalized_word": "dental",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She went to the clinic for a dental checkup.",
+      "example_vi_clean": "Cô ấy đã đến phòng khám để kiểm tra răng."
+    },
+    {
+      "id": 26833,
+      "quiz_meaning_vi": "có thể tin được",
+      "meaning_vi_clean": "có thể tin được; đáng tin cậy; có căn cứ",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể tin được",
+          "example_en": "He is a very dependable person in our team.",
+          "example_vi": "Anh ấy là một người rất có thể tin được trong nhóm chúng tôi."
+        },
+        {
+          "meaning_vi": "có thể tin được",
+          "example_en": "She is a dependable source of information.",
+          "example_vi": "Cô ấy là một nguồn thông tin có thể tin được."
+        },
+        {
+          "meaning_vi": "có thể tin được",
+          "example_en": "We need a dependable car for long trips.",
+          "example_vi": "Chúng tôi cần một chiếc xe có thể tin được cho những chuyến đi dài."
+        },
+        {
+          "meaning_vi": "có thể tin được",
+          "example_en": "His advice is always dependable.",
+          "example_vi": "Lời khuyên của anh ấy luôn có thể tin được."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "She has proven to be a dependable employee.",
+          "example_vi": "Cô ấy đã chứng tỏ mình là một nhân viên đáng tin cậy."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "A dependable friend is hard to find.",
+          "example_vi": "Một người bạn đáng tin cậy rất khó tìm."
+        },
+        {
+          "meaning_vi": "đáng tin cậy",
+          "example_en": "The company offers dependable service to all clients.",
+          "example_vi": "Công ty cung cấp dịch vụ đáng tin cậy cho tất cả khách hàng."
+        },
+        {
+          "meaning_vi": "có căn cứ",
+          "example_en": "The theory is based on dependable evidence.",
+          "example_vi": "Lý thuyết này dựa trên những bằng chứng có căn cứ."
+        },
+        {
+          "meaning_vi": "có căn cứ",
+          "example_en": "His argument seems quite dependable.",
+          "example_vi": "Lập luận của anh ấy có vẻ khá có căn cứ."
+        },
+        {
+          "meaning_vi": "có căn cứ",
+          "example_en": "We need dependable data to make a decision.",
+          "example_vi": "Chúng tôi cần dữ liệu có căn cứ để đưa ra quyết định."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa và bổ sung ví dụ cho đủ 3 nghĩa.",
+      "word": "dependable",
+      "normalized_word": "dependable",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a very dependable person in our team.",
+      "example_vi_clean": "Anh ấy là một người rất có thể tin được trong nhóm chúng tôi."
+    },
+    {
+      "id": 26834,
+      "quiz_meaning_vi": "người được uỷ quyền",
+      "meaning_vi_clean": "người được uỷ quyền; phó; đại diện",
+      "examples_clean": [
+        {
+          "meaning_vi": "người được uỷ quyền",
+          "example_en": "The deputy was authorized to sign the contract.",
+          "example_vi": "Người được uỷ quyền đã được phép ký hợp đồng."
+        },
+        {
+          "meaning_vi": "người được uỷ quyền",
+          "example_en": "She acted as a deputy for the director.",
+          "example_vi": "Cô ấy đóng vai trò là người được uỷ quyền cho giám đốc."
+        },
+        {
+          "meaning_vi": "người được uỷ quyền",
+          "example_en": "The deputy handled the matter while the boss was away.",
+          "example_vi": "Người được uỷ quyền đã giải quyết vấn đề trong khi sếp đi vắng."
+        },
+        {
+          "meaning_vi": "người được uỷ quyền",
+          "example_en": "He is the deputy in charge of this department.",
+          "example_vi": "Anh ấy là người được uỷ quyền phụ trách bộ phận này."
+        },
+        {
+          "meaning_vi": "phó",
+          "example_en": "The deputy manager will lead the meeting today.",
+          "example_vi": "Phó quản lý sẽ chủ trì cuộc họp hôm nay."
+        },
+        {
+          "meaning_vi": "phó",
+          "example_en": "She was promoted to deputy head of the school.",
+          "example_vi": "Cô ấy được thăng chức làm phó hiệu trưởng nhà trường."
+        },
+        {
+          "meaning_vi": "phó",
+          "example_en": "The deputy sheriff arrived at the scene quickly.",
+          "example_vi": "Phó cảnh sát trưởng đã đến hiện trường nhanh chóng."
+        },
+        {
+          "meaning_vi": "đại diện",
+          "example_en": "The deputy spoke on behalf of the organization.",
+          "example_vi": "Người đại diện đã phát biểu thay mặt cho tổ chức."
+        },
+        {
+          "meaning_vi": "đại diện",
+          "example_en": "He sent his deputy to attend the conference.",
+          "example_vi": "Ông ấy đã cử người đại diện của mình tham dự hội nghị."
+        },
+        {
+          "meaning_vi": "đại diện",
+          "example_en": "The deputy presented the report to the committee.",
+          "example_vi": "Người đại diện đã trình bày báo cáo trước ủy ban."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Rút gọn nghĩa để tập trung vào các nghĩa phổ biến nhất. Bổ sung ví dụ cho đủ 3 nghĩa.",
+      "word": "deputy",
+      "normalized_word": "deputy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The deputy was authorized to sign the contract.",
+      "example_vi_clean": "Người được uỷ quyền đã được phép ký hợp đồng."
+    },
+    {
+      "id": 26835,
+      "quiz_meaning_vi": "xuống",
+      "meaning_vi_clean": "xuống; bắt nguồn từ",
+      "examples_clean": [
+        {
+          "meaning_vi": "xuống",
+          "example_en": "They began to descend the mountain slowly.",
+          "example_vi": "Họ bắt đầu đi xuống núi một cách chậm rãi."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "The sun began to descend below the horizon.",
+          "example_vi": "Mặt trời bắt đầu lặn xuống dưới đường chân trời."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "Please descend the stairs carefully.",
+          "example_vi": "Vui lòng đi xuống cầu thang một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "xuống",
+          "example_en": "The plane started to descend for landing.",
+          "example_vi": "Máy bay bắt đầu hạ xuống để hạ cánh."
+        },
+        {
+          "meaning_vi": "bắt nguồn từ",
+          "example_en": "This tradition descends from ancient times.",
+          "example_vi": "Truyền thống này bắt nguồn từ thời cổ đại."
+        },
+        {
+          "meaning_vi": "bắt nguồn từ",
+          "example_en": "Many languages descend from a common ancestor.",
+          "example_vi": "Nhiều ngôn ngữ bắt nguồn từ một tổ tiên chung."
+        },
+        {
+          "meaning_vi": "bắt nguồn từ",
+          "example_en": "His family descends from royalty.",
+          "example_vi": "Gia đình anh ấy bắt nguồn từ dòng dõi hoàng gia."
+        },
+        {
+          "meaning_vi": "bắt nguồn từ",
+          "example_en": "The custom descends from the Middle Ages.",
+          "example_vi": "Phong tục này bắt nguồn từ thời Trung cổ."
+        },
+        {
+          "meaning_vi": "bắt nguồn từ",
+          "example_en": "These stories descend from oral history.",
+          "example_vi": "Những câu chuyện này bắt nguồn từ lịch sử truyền miệng."
+        },
+        {
+          "meaning_vi": "bắt nguồn từ",
+          "example_en": "The modern design descends from earlier models.",
+          "example_vi": "Thiết kế hiện đại bắt nguồn từ các mẫu trước đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Rút gọn nghĩa, tập trung vào 2 nghĩa phổ biến nhất. Bổ sung ví dụ cho đủ 10 câu.",
+      "word": "descend",
+      "normalized_word": "descend",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They began to descend the mountain slowly.",
+      "example_vi_clean": "Họ bắt đầu đi xuống núi một cách chậm rãi."
+    },
+    {
+      "id": 26836,
+      "quiz_meaning_vi": "diễn tả",
+      "meaning_vi_clean": "diễn tả; mô tả",
+      "examples_clean": [
+        {
+          "meaning_vi": "diễn tả",
+          "example_en": "He gave a very descriptive account of the event.",
+          "example_vi": "Anh ấy đã đưa ra một bản tường thuật rất diễn tả về sự kiện."
+        },
+        {
+          "meaning_vi": "diễn tả",
+          "example_en": "The author uses descriptive language to paint a picture.",
+          "example_vi": "Tác giả sử dụng ngôn ngữ diễn tả để vẽ nên một bức tranh."
+        },
+        {
+          "meaning_vi": "diễn tả",
+          "example_en": "Her writing style is highly descriptive.",
+          "example_vi": "Phong cách viết của cô ấy rất diễn tả."
+        },
+        {
+          "meaning_vi": "diễn tả",
+          "example_en": "The report provides a descriptive analysis of the data.",
+          "example_vi": "Báo cáo cung cấp một phân tích diễn tả về dữ liệu."
+        },
+        {
+          "meaning_vi": "mô tả",
+          "example_en": "The book contains many descriptive passages about nature.",
+          "example_vi": "Cuốn sách chứa nhiều đoạn mô tả về thiên nhiên."
+        },
+        {
+          "meaning_vi": "mô tả",
+          "example_en": "He provided a descriptive summary of the project.",
+          "example_vi": "Anh ấy đã cung cấp một bản tóm tắt mô tả về dự án."
+        },
+        {
+          "meaning_vi": "mô tả",
+          "example_en": "The map is very descriptive of the terrain.",
+          "example_vi": "Bản đồ rất mô tả về địa hình."
+        },
+        {
+          "meaning_vi": "mô tả",
+          "example_en": "She wrote a descriptive essay about her hometown.",
+          "example_vi": "Cô ấy đã viết một bài văn mô tả về quê hương mình."
+        },
+        {
+          "meaning_vi": "mô tả",
+          "example_en": "The labels are descriptive of the contents.",
+          "example_vi": "Các nhãn dán rất mô tả về nội dung bên trong."
+        },
+        {
+          "meaning_vi": "mô tả",
+          "example_en": "The film is a descriptive look at urban life.",
+          "example_vi": "Bộ phim là một cái nhìn mô tả về cuộc sống đô thị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với tính từ descriptive. Bổ sung ví dụ.",
+      "word": "descriptive",
+      "normalized_word": "descriptive",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He gave a very descriptive account of the event.",
+      "example_vi_clean": "Anh ấy đã đưa ra một bản tường thuật rất diễn tả về sự kiện."
+    },
+    {
+      "id": 26837,
+      "quiz_meaning_vi": "đáng thèm muốn",
+      "meaning_vi_clean": "đáng thèm muốn; đáng ao ước",
+      "examples_clean": [
+        {
+          "meaning_vi": "đáng thèm muốn",
+          "example_en": "The new car is a highly desirable item.",
+          "example_vi": "Chiếc xe mới là một món đồ rất đáng thèm muốn."
+        },
+        {
+          "meaning_vi": "đáng thèm muốn",
+          "example_en": "He has a desirable job in a top company.",
+          "example_vi": "Anh ấy có một công việc đáng thèm muốn tại một công ty hàng đầu."
+        },
+        {
+          "meaning_vi": "đáng thèm muốn",
+          "example_en": "The location of the house is very desirable.",
+          "example_vi": "Vị trí của ngôi nhà rất đáng thèm muốn."
+        },
+        {
+          "meaning_vi": "đáng thèm muốn",
+          "example_en": "She possesses many desirable qualities.",
+          "example_vi": "Cô ấy sở hữu nhiều phẩm chất đáng thèm muốn."
+        },
+        {
+          "meaning_vi": "đáng ao ước",
+          "example_en": "It is a desirable outcome for everyone.",
+          "example_vi": "Đó là một kết quả đáng ao ước cho tất cả mọi người."
+        },
+        {
+          "meaning_vi": "đáng ao ước",
+          "example_en": "Living in the city center is very desirable.",
+          "example_vi": "Sống ở trung tâm thành phố rất đáng ao ước."
+        },
+        {
+          "meaning_vi": "đáng ao ước",
+          "example_en": "The candidate has all the desirable skills.",
+          "example_vi": "Ứng viên có tất cả các kỹ năng đáng ao ước."
+        },
+        {
+          "meaning_vi": "đáng ao ước",
+          "example_en": "A peaceful life is a desirable goal.",
+          "example_vi": "Một cuộc sống bình yên là một mục tiêu đáng ao ước."
+        },
+        {
+          "meaning_vi": "đáng ao ước",
+          "example_en": "The apartment is in a desirable neighborhood.",
+          "example_vi": "Căn hộ nằm trong một khu phố đáng ao ước."
+        },
+        {
+          "meaning_vi": "đáng ao ước",
+          "example_en": "This is a highly desirable opportunity for growth.",
+          "example_vi": "Đây là một cơ hội đáng ao ước để phát triển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Rút gọn nghĩa, tập trung vào 2 nghĩa phổ biến. Bổ sung ví dụ.",
+      "word": "desirable",
+      "normalized_word": "desirable",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The new car is a highly desirable item.",
+      "example_vi_clean": "Chiếc xe mới là một món đồ rất đáng thèm muốn."
+    },
+    {
+      "id": 26838,
+      "quiz_meaning_vi": "bàn giấy",
+      "meaning_vi_clean": "bàn giấy; mặt bàn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bàn giấy",
+          "example_en": "He keeps his important files on his desktop.",
+          "example_vi": "Anh ấy giữ các tệp quan trọng trên bàn giấy của mình."
+        },
+        {
+          "meaning_vi": "bàn giấy",
+          "example_en": "The office is equipped with a large desktop.",
+          "example_vi": "Văn phòng được trang bị một chiếc bàn giấy lớn."
+        },
+        {
+          "meaning_vi": "bàn giấy",
+          "example_en": "She cleared her desktop before leaving.",
+          "example_vi": "Cô ấy đã dọn dẹp bàn giấy của mình trước khi rời đi."
+        },
+        {
+          "meaning_vi": "bàn giấy",
+          "example_en": "He works at his desktop all day.",
+          "example_vi": "Anh ấy làm việc tại bàn giấy của mình cả ngày."
+        },
+        {
+          "meaning_vi": "mặt bàn",
+          "example_en": "The computer icon is on the desktop.",
+          "example_vi": "Biểu tượng máy tính nằm trên mặt bàn làm việc."
+        },
+        {
+          "meaning_vi": "mặt bàn",
+          "example_en": "I customized my desktop with a new wallpaper.",
+          "example_vi": "Tôi đã tùy chỉnh mặt bàn làm việc của mình với một hình nền mới."
+        },
+        {
+          "meaning_vi": "mặt bàn",
+          "example_en": "The files are scattered across the desktop.",
+          "example_vi": "Các tệp tin nằm rải rác trên mặt bàn làm việc."
+        },
+        {
+          "meaning_vi": "mặt bàn",
+          "example_en": "He organized the icons on his desktop.",
+          "example_vi": "Anh ấy đã sắp xếp các biểu tượng trên mặt bàn làm việc."
+        },
+        {
+          "meaning_vi": "mặt bàn",
+          "example_en": "The desktop is full of shortcuts.",
+          "example_vi": "Mặt bàn làm việc đầy các lối tắt."
+        },
+        {
+          "meaning_vi": "mặt bàn",
+          "example_en": "She saved the document to the desktop.",
+          "example_vi": "Cô ấy đã lưu tài liệu vào mặt bàn làm việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với ngữ cảnh hiện đại (máy tính). Bổ sung ví dụ.",
+      "word": "desktop",
+      "normalized_word": "desktop",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He keeps his important files on his desktop.",
+      "example_vi_clean": "Anh ấy giữ các tệp quan trọng trên bàn giấy của mình."
+    },
+    {
+      "id": 26839,
+      "quiz_meaning_vi": "sự tàn phá",
+      "meaning_vi_clean": "sự tàn phá; cảnh tan hoang",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tàn phá",
+          "example_en": "The war left a trail of desolation.",
+          "example_vi": "Chiến tranh đã để lại một dấu vết của sự tàn phá."
+        },
+        {
+          "meaning_vi": "sự tàn phá",
+          "example_en": "The earthquake caused widespread desolation.",
+          "example_vi": "Trận động đất đã gây ra sự tàn phá trên diện rộng."
+        },
+        {
+          "meaning_vi": "sự tàn phá",
+          "example_en": "We were shocked by the desolation of the city.",
+          "example_vi": "Chúng tôi đã bị sốc bởi sự tàn phá của thành phố."
+        },
+        {
+          "meaning_vi": "sự tàn phá",
+          "example_en": "The storm brought total desolation to the coast.",
+          "example_vi": "Cơn bão đã mang đến sự tàn phá hoàn toàn cho bờ biển."
+        },
+        {
+          "meaning_vi": "cảnh tan hoang",
+          "example_en": "They looked at the desolation left by the fire.",
+          "example_vi": "Họ nhìn vào cảnh tan hoang do vụ hỏa hoạn để lại."
+        },
+        {
+          "meaning_vi": "cảnh tan hoang",
+          "example_en": "The landscape was a scene of complete desolation.",
+          "example_vi": "Phong cảnh là một cảnh tan hoang hoàn toàn."
+        },
+        {
+          "meaning_vi": "cảnh tan hoang",
+          "example_en": "The village was in a state of desolation.",
+          "example_vi": "Ngôi làng đang trong tình trạng cảnh tan hoang."
+        },
+        {
+          "meaning_vi": "cảnh tan hoang",
+          "example_en": "He felt a sense of desolation in the empty house.",
+          "example_vi": "Anh ấy cảm thấy một nỗi buồn hiu quạnh trong ngôi nhà trống."
+        },
+        {
+          "meaning_vi": "cảnh tan hoang",
+          "example_en": "The desolation of the area was heartbreaking.",
+          "example_vi": "Cảnh tan hoang của khu vực thật đau lòng."
+        },
+        {
+          "meaning_vi": "cảnh tan hoang",
+          "example_en": "They tried to rebuild after the desolation.",
+          "example_vi": "Họ đã cố gắng xây dựng lại sau cảnh tan hoang."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Rút gọn nghĩa, tập trung vào 2 nghĩa phổ biến. Bổ sung ví dụ.",
+      "word": "desolation",
+      "normalized_word": "desolation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The war left a trail of desolation.",
+      "example_vi_clean": "Chiến tranh đã để lại một dấu vết của sự tàn phá."
+    },
+    {
+      "id": 26840,
+      "quiz_meaning_vi": "liều lĩnh",
+      "meaning_vi_clean": "liều lĩnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "He drove desperately through the heavy traffic.",
+          "example_vi": "Anh ấy lái xe liều lĩnh qua dòng xe cộ đông đúc."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "She acted desperately to save her business.",
+          "example_vi": "Cô ấy đã hành động liều lĩnh để cứu công việc kinh doanh của mình."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "They were desperately trying to find a way out.",
+          "example_vi": "Họ đã cố gắng liều lĩnh để tìm lối thoát."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "He made a desperately risky decision.",
+          "example_vi": "Anh ấy đã đưa ra một quyết định liều lĩnh đầy rủi ro."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "The team fought desperately to win the game.",
+          "example_vi": "Đội đã chiến đấu liều lĩnh để giành chiến thắng trong trận đấu."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "She clung desperately to the rope.",
+          "example_vi": "Cô ấy bám liều lĩnh vào sợi dây."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "He searched desperately for his lost keys.",
+          "example_vi": "Anh ấy tìm kiếm liều lĩnh chìa khóa bị mất của mình."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "They worked desperately to finish the project on time.",
+          "example_vi": "Họ đã làm việc liều lĩnh để hoàn thành dự án đúng hạn."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "She ran desperately to catch the train.",
+          "example_vi": "Cô ấy chạy liều lĩnh để bắt kịp chuyến tàu."
+        },
+        {
+          "meaning_vi": "liều lĩnh",
+          "example_en": "He shouted desperately for help.",
+          "example_vi": "Anh ấy hét lên liều lĩnh để cầu cứu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính, bổ sung 10 ví dụ.",
+      "word": "desperately",
+      "normalized_word": "desperately",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He drove desperately through the heavy traffic.",
+      "example_vi_clean": "Anh ấy lái xe liều lĩnh qua dòng xe cộ đông đúc."
+    }
+  ]
+}

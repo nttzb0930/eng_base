@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-090",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24891,
+      "word": "death",
+      "normalized_word": "death",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/deθ/",
+      "primary_meaning_vi": "sự chết",
+      "meaning_vi": "sự chết; cái chết; sự tiêu tan, sự tan vỡ, sự kết liễu, sự chấm dứt; thạo bắn (thú, chim...); thạo, giỏi, cừ (về cái gì...); yêu thiết tha, yêu say đắm, yêu mê mệt (cái gì...); được mục kích cái chết của con cáo (săn cáo); được mục kích sự sụp đổ của một công cuộc; bám không rời, bám chặt; bám một cách tuyệt vọng; chết thì ai cũng như ai; chết là hết nợ; meet; snatch; cái chết bất thình lình; ,  (từ lóng) rượu rất nặng; uýtky rẻ tiền; làm chết cười; cho đến chết, cho đến hơi thở cuối cùng",
+      "example_en": "The death of my grandmother saddened the whole family.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "When death walked in, a chill spread through the room.",
+          "example_vi": null
+        },
+        {
+          "example_en": "England scored a goal at the death to even the score at one all.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24892,
+      "word": "debate",
+      "normalized_word": "debate",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/di'beit/",
+      "primary_meaning_vi": "cuộc tranh luận",
+      "meaning_vi": "cuộc tranh luận, cuộc thảo luận, cuộc tranh cãi; biên bản chính thức của những phiên họp nghị viện; tranh luận, tranh cãi, bàn cãi (một vấn đề...); suy nghĩ, cân nhắc",
+      "example_en": "After a four-hour debate, the committee voted to table the motion.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The debate over the age of the universe is thousands of years old.",
+          "example_vi": null
+        },
+        {
+          "example_en": "There has been considerable debate concerning exactly how to format these articles.",
+          "example_vi": null
+        },
+        {
+          "example_en": "\"Debate me, coward!\" snarled the completely normal intellectual.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24893,
+      "word": "decide",
+      "normalized_word": "decide",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/di'said/",
+      "primary_meaning_vi": "giải quyết",
+      "meaning_vi": "giải quyết, phân xử; quyết định; lựa chọn, quyết định chọn; chọn, quyết định chọn",
+      "example_en": "Her last-minute goal decided the game.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I have decided that it is healthier to walk to work.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24894,
+      "word": "deeply",
+      "normalized_word": "deeply",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'di:pli/",
+      "primary_meaning_vi": "sâu",
+      "meaning_vi": "sâu; sâu xa, sâu sắc; hết sức, vô cùng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24895,
+      "word": "degree",
+      "normalized_word": "degree",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'gri:/",
+      "primary_meaning_vi": "mức độ",
+      "meaning_vi": "mức độ, trình độ; địa vị, cấp bậc (trong xã hội); độ; bậc; cấp; quan hệ họ hàng gần quá không cho phép lấy nhau; tra hỏi, tra tấn để bắt cung khai",
+      "example_en": "She has two bachelor's degrees and is studying towards a master's degree.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A right angle is a ninety-degree angle.",
+          "example_vi": null
+        },
+        {
+          "example_en": "180 degrees Fahrenheit is equivalent to 100 degrees Celsius.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A quadratic polynomial is a polynomial of degree 2.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24896,
+      "word": "delay",
+      "normalized_word": "delay",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/di'lei/",
+      "primary_meaning_vi": "sự chậm trễ",
+      "meaning_vi": "sự chậm trễ; sự trì hoãn; điều làm trở ngại; sự cản trở; làm chậm trễ; hoãn lại (cuộc họp, chuyến đi...); làm trở ngại, cản trở; ủ, ram (thép); chậm trễ, lần lữa, kề cà",
+      "example_en": "the delay before the echo of a sound",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The mail is delayed by a heavy fall of snow.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24897,
+      "word": "dentist",
+      "normalized_word": "dentist",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dentist/",
+      "primary_meaning_vi": "thầy thuốc chữa răng",
+      "meaning_vi": "thầy thuốc chữa răng; thợ trồng răng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24898,
+      "word": "depend",
+      "normalized_word": "depend",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/di'pend/",
+      "primary_meaning_vi": "phụ thuộc",
+      "meaning_vi": "phụ thuộc, tuỳ thuộc, tuỳ thuộc; dựa vào, ỷ vào, trông mong vào; tin vào; treo, chưa giải quyết, chưa xử (án...); (+ from) treo lủng lẳng",
+      "example_en": "We would like to go skiing, but it depends on the amount of snow.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "we depend on the mailman to come at the usual time.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a cause depending in court",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24899,
+      "word": "description",
+      "normalized_word": "description",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'kripʃn/",
+      "primary_meaning_vi": "sự tả",
+      "meaning_vi": "sự tả, sự diễn tả, sự mô tả, sự miêu tả; diện mạo, tướng mạo, hình dạng; sự vạch, sự vẽ (hình); hạng, loại; nghề nghiệp, công tác (ở hộ chiếu, giấy chứng minh...)",
+      "example_en": "The zoo had no lions, tigers, or cats of any description.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The type description of the fungus was written by a botanist.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24900,
+      "word": "desert",
+      "normalized_word": "desert",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/di'zə:t/",
+      "primary_meaning_vi": "công lao",
+      "meaning_vi": "công lao, giá trị; sự xứng đáng, sự đáng (khen thưởng, trừng phạt...); những người xứng đáng; những cái đáng được (thưởng, phạt); sa mạc; nơi hoang vắng, nơi quạnh quẽ, nơi vắng vẻ; vấn đề khô khan vô vị; hiu quạnh, quạnh quẽ, vắng vẻ, không người ở; bỏ hoang, hoang phế; rời đi, bỏ đi, bỏ trốn, trốn khỏi; ruồng bỏ, bỏ mặc, bỏ rơi; đào ngũ",
+      "example_en": "They were marooned on a desert island in the Pacific.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "You can't just drive off and desert me here, in the middle of nowhere.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Anyone found deserting will be punished.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    }
+  ]
+}

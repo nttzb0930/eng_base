@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24501,
+      "quiz_meaning_vi": "diêm",
+      "meaning_vi_clean": "diêm; cuộc thi đấu; đối thủ; cái xứng nhau",
+      "examples_clean": [
+        {
+          "meaning_vi": "diêm",
+          "example_en": "She struck a match to light the candle.",
+          "example_vi": "Cô ấy quẹt một que diêm để thắp nến."
+        },
+        {
+          "meaning_vi": "diêm",
+          "example_en": "Keep matches away from children.",
+          "example_vi": "Hãy để diêm tránh xa tầm tay trẻ em."
+        },
+        {
+          "meaning_vi": "diêm",
+          "example_en": "He used a match to start the campfire.",
+          "example_vi": "Anh ấy dùng một que diêm để nhóm lửa trại."
+        },
+        {
+          "meaning_vi": "diêm",
+          "example_en": "The box of matches was empty.",
+          "example_vi": "Hộp diêm đã hết sạch."
+        },
+        {
+          "meaning_vi": "cuộc thi đấu",
+          "example_en": "Our team won the football match yesterday.",
+          "example_vi": "Đội của chúng tôi đã thắng trận đấu bóng đá ngày hôm qua."
+        },
+        {
+          "meaning_vi": "cuộc thi đấu",
+          "example_en": "Are you going to watch the tennis match?",
+          "example_vi": "Bạn có định xem trận đấu quần vợt không?"
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "He finally met his match in the final round.",
+          "example_vi": "Cuối cùng anh ấy đã gặp đối thủ xứng tầm ở vòng chung kết."
+        },
+        {
+          "meaning_vi": "đối thủ",
+          "example_en": "She is a tough match for any player.",
+          "example_vi": "Cô ấy là một đối thủ đáng gờm cho bất kỳ người chơi nào."
+        },
+        {
+          "meaning_vi": "cái xứng nhau",
+          "example_en": "The tie is a perfect match for your shirt.",
+          "example_vi": "Cà vạt này rất hợp với áo sơ mi của bạn."
+        },
+        {
+          "meaning_vi": "cái xứng nhau",
+          "example_en": "These two colors are a good match.",
+          "example_vi": "Hai màu này rất hợp nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Bổ sung nghĩa phổ biến và 10 ví dụ minh họa.",
+      "word": "match",
+      "normalized_word": "match",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She struck a match to light the candle.",
+      "example_vi_clean": "Cô ấy quẹt một que diêm để thắp nến."
+    },
+    {
+      "id": 24502,
+      "quiz_meaning_vi": "toán",
+      "meaning_vi_clean": "toán",
+      "examples_clean": [
+        {
+          "meaning_vi": "toán",
+          "example_en": "I am not very good at math.",
+          "example_vi": "Tôi không giỏi môn toán lắm."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "She loves solving difficult math problems.",
+          "example_vi": "Cô ấy thích giải các bài toán khó."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "Math is my favorite subject at school.",
+          "example_vi": "Toán là môn học yêu thích của tôi ở trường."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "He is studying math at the university.",
+          "example_vi": "Anh ấy đang học toán tại trường đại học."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "Can you help me with my math homework?",
+          "example_vi": "Bạn có thể giúp tôi làm bài tập toán không?"
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "The math test was very challenging.",
+          "example_vi": "Bài kiểm tra toán rất thử thách."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "She has a talent for math.",
+          "example_vi": "Cô ấy có năng khiếu về toán."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "We need to use math to calculate the budget.",
+          "example_vi": "Chúng ta cần dùng toán để tính toán ngân sách."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "Math helps develop logical thinking.",
+          "example_vi": "Toán học giúp phát triển tư duy logic."
+        },
+        {
+          "meaning_vi": "toán",
+          "example_en": "He scored high in his math exam.",
+          "example_vi": "Anh ấy đạt điểm cao trong bài thi toán."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung POS và 10 ví dụ minh họa.",
+      "word": "math",
+      "normalized_word": "math",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I am not very good at math.",
+      "example_vi_clean": "Tôi không giỏi môn toán lắm."
+    },
+    {
+      "id": 24503,
+      "quiz_meaning_vi": "môn toán",
+      "meaning_vi_clean": "môn toán; toán học",
+      "examples_clean": [
+        {
+          "meaning_vi": "môn toán",
+          "example_en": "Maths is a compulsory subject in this school.",
+          "example_vi": "Môn toán là môn học bắt buộc tại trường này."
+        },
+        {
+          "meaning_vi": "môn toán",
+          "example_en": "She finds maths quite easy to understand.",
+          "example_vi": "Cô ấy thấy môn toán khá dễ hiểu."
+        },
+        {
+          "meaning_vi": "môn toán",
+          "example_en": "We have a maths lesson every morning.",
+          "example_vi": "Chúng tôi có một tiết học toán mỗi sáng."
+        },
+        {
+          "meaning_vi": "môn toán",
+          "example_en": "He is excellent at maths.",
+          "example_vi": "Anh ấy rất giỏi môn toán."
+        },
+        {
+          "meaning_vi": "toán học",
+          "example_en": "Maths is the foundation of many sciences.",
+          "example_vi": "Toán học là nền tảng của nhiều ngành khoa học."
+        },
+        {
+          "meaning_vi": "toán học",
+          "example_en": "She is interested in the history of maths.",
+          "example_vi": "Cô ấy quan tâm đến lịch sử toán học."
+        },
+        {
+          "meaning_vi": "toán học",
+          "example_en": "Modern maths uses complex formulas.",
+          "example_vi": "Toán học hiện đại sử dụng các công thức phức tạp."
+        },
+        {
+          "meaning_vi": "toán học",
+          "example_en": "He wants to pursue a career in maths.",
+          "example_vi": "Anh ấy muốn theo đuổi sự nghiệp trong ngành toán học."
+        },
+        {
+          "meaning_vi": "toán học",
+          "example_en": "Maths requires a lot of practice.",
+          "example_vi": "Toán học đòi hỏi rất nhiều sự luyện tập."
+        },
+        {
+          "meaning_vi": "toán học",
+          "example_en": "The beauty of maths lies in its precision.",
+          "example_vi": "Vẻ đẹp của toán học nằm ở sự chính xác của nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "maths",
+      "normalized_word": "maths",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Maths is a compulsory subject in this school.",
+      "example_vi_clean": "Môn toán là môn học bắt buộc tại trường này."
+    },
+    {
+      "id": 24504,
+      "quiz_meaning_vi": "việc",
+      "meaning_vi_clean": "việc; vấn đề; vật chất; có ý nghĩa",
+      "examples_clean": [
+        {
+          "meaning_vi": "việc",
+          "example_en": "What is the matter with you today?",
+          "example_vi": "Hôm nay bạn bị làm sao vậy?"
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "It is a private matter between us.",
+          "example_vi": "Đó là việc riêng giữa chúng tôi."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "We need to discuss this matter further.",
+          "example_vi": "Chúng ta cần thảo luận thêm về việc này."
+        },
+        {
+          "meaning_vi": "việc",
+          "example_en": "He is busy with some urgent matters.",
+          "example_vi": "Anh ấy đang bận với một vài việc khẩn cấp."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "The matter of safety is our top priority.",
+          "example_vi": "Vấn đề an toàn là ưu tiên hàng đầu của chúng tôi."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "That is a complex matter to solve.",
+          "example_vi": "Đó là một vấn đề phức tạp để giải quyết."
+        },
+        {
+          "meaning_vi": "vật chất",
+          "example_en": "Everything in the universe is made of matter.",
+          "example_vi": "Mọi thứ trong vũ trụ đều được tạo thành từ vật chất."
+        },
+        {
+          "meaning_vi": "vật chất",
+          "example_en": "Scientists study the properties of matter.",
+          "example_vi": "Các nhà khoa học nghiên cứu các tính chất của vật chất."
+        },
+        {
+          "meaning_vi": "có ý nghĩa",
+          "example_en": "It does not matter if you are late.",
+          "example_vi": "Việc bạn đến muộn không có ý nghĩa gì cả."
+        },
+        {
+          "meaning_vi": "có ý nghĩa",
+          "example_en": "Does it matter which one I choose?",
+          "example_vi": "Việc tôi chọn cái nào có quan trọng không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Bổ sung nghĩa phổ biến và 10 ví dụ minh họa.",
+      "word": "matter",
+      "normalized_word": "matter",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "What is the matter with you today?",
+      "example_vi_clean": "Hôm nay bạn bị làm sao vậy?"
+    },
+    {
+      "id": 24505,
+      "quiz_meaning_vi": "có thể",
+      "meaning_vi_clean": "có thể; có lẽ; được phép",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We may go to the beach this weekend.",
+          "example_vi": "Chúng tôi có thể đi biển vào cuối tuần này."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "It may rain later today.",
+          "example_vi": "Trời có thể mưa vào cuối ngày hôm nay."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "She may arrive late for the meeting.",
+          "example_vi": "Cô ấy có thể đến muộn buổi họp."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "They may change their plans soon.",
+          "example_vi": "Họ có thể thay đổi kế hoạch sớm."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "He may be at home right now.",
+          "example_vi": "Có lẽ anh ấy đang ở nhà ngay lúc này."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "You may find the answer in this book.",
+          "example_vi": "Có lẽ bạn sẽ tìm thấy câu trả lời trong cuốn sách này."
+        },
+        {
+          "meaning_vi": "được phép",
+          "example_en": "You may leave the room now.",
+          "example_vi": "Bạn được phép rời khỏi phòng bây giờ."
+        },
+        {
+          "meaning_vi": "được phép",
+          "example_en": "May I use your phone for a moment?",
+          "example_vi": "Tôi có được phép dùng điện thoại của bạn một lát không?"
+        },
+        {
+          "meaning_vi": "được phép",
+          "example_en": "Students may not use calculators in this test.",
+          "example_vi": "Học sinh không được phép sử dụng máy tính trong bài kiểm tra này."
+        },
+        {
+          "meaning_vi": "được phép",
+          "example_en": "Visitors may park in the front area.",
+          "example_vi": "Khách được phép đỗ xe ở khu vực phía trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành modal auxiliary. Bổ sung nghĩa phổ biến và 10 ví dụ minh họa.",
+      "word": "may",
+      "normalized_word": "may",
+      "cefr_level": "A1",
+      "pos": "modal auxiliary",
+      "pos_vi_clean": "động từ khuyết thiếu",
+      "example_en_clean": "We may go to the beach this weekend.",
+      "example_vi_clean": "Chúng tôi có thể đi biển vào cuối tuần này."
+    },
+    {
+      "id": 24506,
+      "quiz_meaning_vi": "có thể",
+      "meaning_vi_clean": "có thể; có lẽ",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Maybe we should ask for help.",
+          "example_vi": "Có thể chúng ta nên nhờ giúp đỡ."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Maybe it is a good idea to wait.",
+          "example_vi": "Có thể đó là một ý hay khi chờ đợi."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Maybe she forgot about the appointment.",
+          "example_vi": "Có thể cô ấy đã quên cuộc hẹn."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Maybe they will come later.",
+          "example_vi": "Có thể họ sẽ đến muộn hơn."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Maybe he is tired after the long trip.",
+          "example_vi": "Có lẽ anh ấy mệt sau chuyến đi dài."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Maybe it will be sunny tomorrow.",
+          "example_vi": "Có lẽ ngày mai trời sẽ nắng."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Maybe you are right about that.",
+          "example_vi": "Có lẽ bạn đúng về điều đó."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Maybe we can finish this tomorrow.",
+          "example_vi": "Có lẽ chúng ta có thể hoàn thành việc này vào ngày mai."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Maybe there is another way to do it.",
+          "example_vi": "Có lẽ có một cách khác để làm việc đó."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Maybe I should call him now.",
+          "example_vi": "Có lẽ tôi nên gọi cho anh ấy bây giờ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "maybe",
+      "normalized_word": "maybe",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Maybe we should ask for help.",
+      "example_vi_clean": "Có thể chúng ta nên nhờ giúp đỡ."
+    },
+    {
+      "id": 24507,
+      "quiz_meaning_vi": "tôi",
+      "meaning_vi_clean": "tôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tôi",
+          "example_en": "Can you help me with this bag?",
+          "example_vi": "Bạn có thể giúp tôi với cái túi này không?"
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "She gave me a beautiful gift.",
+          "example_vi": "Cô ấy đã tặng tôi một món quà đẹp."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "Please listen to me carefully.",
+          "example_vi": "Hãy lắng nghe tôi một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "He told me the truth.",
+          "example_vi": "Anh ấy đã nói với tôi sự thật."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "They invited me to their party.",
+          "example_vi": "Họ đã mời tôi đến bữa tiệc của họ."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "Do you remember me?",
+          "example_vi": "Bạn có nhớ tôi không?"
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "The teacher asked me a question.",
+          "example_vi": "Giáo viên đã hỏi tôi một câu hỏi."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "It was a surprise for me.",
+          "example_vi": "Đó là một bất ngờ đối với tôi."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "She sat next to me.",
+          "example_vi": "Cô ấy ngồi cạnh tôi."
+        },
+        {
+          "meaning_vi": "tôi",
+          "example_en": "Nobody told me about the change.",
+          "example_vi": "Không ai nói với tôi về sự thay đổi đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "me",
+      "normalized_word": "me",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi_clean": "đại từ",
+      "example_en_clean": "Can you help me with this bag?",
+      "example_vi_clean": "Bạn có thể giúp tôi với cái túi này không?"
+    },
+    {
+      "id": 24508,
+      "quiz_meaning_vi": "bữa ăn",
+      "meaning_vi_clean": "bữa ăn; ăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bữa ăn",
+          "example_en": "Dinner is my favorite meal of the day.",
+          "example_vi": "Bữa tối là bữa ăn yêu thích của tôi trong ngày."
+        },
+        {
+          "meaning_vi": "bữa ăn",
+          "example_en": "We had a delicious meal at the restaurant.",
+          "example_vi": "Chúng tôi đã có một bữa ăn ngon tại nhà hàng."
+        },
+        {
+          "meaning_vi": "bữa ăn",
+          "example_en": "It is important to have a healthy meal.",
+          "example_vi": "Việc có một bữa ăn lành mạnh là rất quan trọng."
+        },
+        {
+          "meaning_vi": "bữa ăn",
+          "example_en": "She prepared a quick meal for us.",
+          "example_vi": "Cô ấy đã chuẩn bị một bữa ăn nhanh cho chúng tôi."
+        },
+        {
+          "meaning_vi": "bữa ăn",
+          "example_en": "They enjoyed the meal together.",
+          "example_vi": "Họ đã thưởng thức bữa ăn cùng nhau."
+        },
+        {
+          "meaning_vi": "bữa ăn",
+          "example_en": "The meal was served at noon.",
+          "example_vi": "Bữa ăn được phục vụ vào buổi trưa."
+        },
+        {
+          "meaning_vi": "ăn",
+          "example_en": "We meal together every Sunday.",
+          "example_vi": "Chúng tôi ăn cùng nhau mỗi Chủ nhật."
+        },
+        {
+          "meaning_vi": "ăn",
+          "example_en": "They meal at the local canteen.",
+          "example_vi": "Họ ăn tại căng tin địa phương."
+        },
+        {
+          "meaning_vi": "ăn",
+          "example_en": "We usually meal with our family.",
+          "example_vi": "Chúng tôi thường ăn cùng gia đình."
+        },
+        {
+          "meaning_vi": "ăn",
+          "example_en": "It is nice to meal in the garden.",
+          "example_vi": "Thật tuyệt khi ăn trong vườn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Bổ sung nghĩa phổ biến và 10 ví dụ minh họa.",
+      "word": "meal",
+      "normalized_word": "meal",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Dinner is my favorite meal of the day.",
+      "example_vi_clean": "Bữa tối là bữa ăn yêu thích của tôi trong ngày."
+    },
+    {
+      "id": 24509,
+      "quiz_meaning_vi": "thịt",
+      "meaning_vi_clean": "thịt; thức ăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thịt",
+          "example_en": "She does not eat meat.",
+          "example_vi": "Cô ấy không ăn thịt."
+        },
+        {
+          "meaning_vi": "thịt",
+          "example_en": "This dish contains a lot of meat.",
+          "example_vi": "Món này chứa rất nhiều thịt."
+        },
+        {
+          "meaning_vi": "thịt",
+          "example_en": "He bought some fresh meat at the market.",
+          "example_vi": "Anh ấy đã mua một ít thịt tươi ở chợ."
+        },
+        {
+          "meaning_vi": "thịt",
+          "example_en": "They serve different types of meat here.",
+          "example_vi": "Họ phục vụ nhiều loại thịt khác nhau ở đây."
+        },
+        {
+          "meaning_vi": "thịt",
+          "example_en": "The meat was cooked perfectly.",
+          "example_vi": "Miếng thịt đã được nấu chín hoàn hảo."
+        },
+        {
+          "meaning_vi": "thịt",
+          "example_en": "I prefer chicken meat to beef.",
+          "example_vi": "Tôi thích thịt gà hơn thịt bò."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "The meat of the story is the moral lesson.",
+          "example_vi": "Thức ăn (nội dung chính) của câu chuyện là bài học đạo đức."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "He provided the meat for the discussion.",
+          "example_vi": "Anh ấy cung cấp nội dung chính cho cuộc thảo luận."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "This book is meat for the mind.",
+          "example_vi": "Cuốn sách này là thức ăn cho tâm trí."
+        },
+        {
+          "meaning_vi": "thức ăn",
+          "example_en": "They found the meat of the problem.",
+          "example_vi": "Họ đã tìm ra phần cốt lõi (thức ăn) của vấn đề."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "meat",
+      "normalized_word": "meat",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She does not eat meat.",
+      "example_vi_clean": "Cô ấy không ăn thịt."
+    },
+    {
+      "id": 24510,
+      "quiz_meaning_vi": "y học",
+      "meaning_vi_clean": "y học; thuốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "y học",
+          "example_en": "She is studying medicine at university.",
+          "example_vi": "Cô ấy đang học y học tại trường đại học."
+        },
+        {
+          "meaning_vi": "y học",
+          "example_en": "Modern medicine has saved many lives.",
+          "example_vi": "Y học hiện đại đã cứu sống nhiều người."
+        },
+        {
+          "meaning_vi": "y học",
+          "example_en": "He is interested in the field of medicine.",
+          "example_vi": "Anh ấy quan tâm đến lĩnh vực y học."
+        },
+        {
+          "meaning_vi": "y học",
+          "example_en": "Advances in medicine are very fast.",
+          "example_vi": "Những tiến bộ trong y học rất nhanh chóng."
+        },
+        {
+          "meaning_vi": "thuốc",
+          "example_en": "You should take your medicine on time.",
+          "example_vi": "Bạn nên uống thuốc đúng giờ."
+        },
+        {
+          "meaning_vi": "thuốc",
+          "example_en": "The doctor prescribed some medicine for me.",
+          "example_vi": "Bác sĩ đã kê đơn thuốc cho tôi."
+        },
+        {
+          "meaning_vi": "thuốc",
+          "example_en": "Keep the medicine in a safe place.",
+          "example_vi": "Hãy để thuốc ở nơi an toàn."
+        },
+        {
+          "meaning_vi": "thuốc",
+          "example_en": "This medicine tastes very bitter.",
+          "example_vi": "Loại thuốc này có vị rất đắng."
+        },
+        {
+          "meaning_vi": "thuốc",
+          "example_en": "Did you finish taking your medicine?",
+          "example_vi": "Bạn đã uống hết thuốc chưa?"
+        },
+        {
+          "meaning_vi": "thuốc",
+          "example_en": "She needs to buy more medicine.",
+          "example_vi": "Cô ấy cần mua thêm thuốc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa.",
+      "word": "medicine",
+      "normalized_word": "medicine",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is studying medicine at university.",
+      "example_vi_clean": "Cô ấy đang học y học tại trường đại học."
+    }
+  ]
+}

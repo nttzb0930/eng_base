@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25162,
+      "quiz_meaning_vi": "mời",
+      "meaning_vi_clean": "mời",
+      "examples_clean": [
+        {
+          "meaning_vi": "mời",
+          "example_en": "They decided to invite all their friends to the party.",
+          "example_vi": "Họ quyết định mời tất cả bạn bè đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "Did you invite her to your wedding last week?",
+          "example_vi": "Bạn đã mời cô ấy đến đám cưới của mình tuần trước chưa?"
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "I want to invite you to dinner at my house.",
+          "example_vi": "Tôi muốn mời bạn đến ăn tối tại nhà tôi."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "She forgot to invite him to the meeting.",
+          "example_vi": "Cô ấy đã quên mời anh ấy đến cuộc họp."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "We should invite our new neighbors for coffee.",
+          "example_vi": "Chúng ta nên mời những người hàng xóm mới đến uống cà phê."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "He was happy to invite his parents to the graduation ceremony.",
+          "example_vi": "Anh ấy rất vui khi mời cha mẹ mình đến dự lễ tốt nghiệp."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "Please invite anyone you think would enjoy the event.",
+          "example_vi": "Hãy mời bất cứ ai mà bạn nghĩ sẽ thích sự kiện này."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "They didn't invite us to the concert.",
+          "example_vi": "Họ đã không mời chúng tôi đến buổi hòa nhạc."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "I will invite my colleagues to join the picnic.",
+          "example_vi": "Tôi sẽ mời các đồng nghiệp của mình tham gia buổi dã ngoại."
+        },
+        {
+          "meaning_vi": "mời",
+          "example_en": "Did they invite you to join the club?",
+          "example_vi": "Họ có mời bạn tham gia câu lạc bộ không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'mời' là động từ phổ biến nhất cho từ invite.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'mời' là động từ và tất cả 10 ví dụ đều sử dụng 'invite' như một động từ."
+      },
+      "word": "invite",
+      "normalized_word": "invite",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They decided to invite all their friends to the party.",
+      "example_vi_clean": "Họ quyết định mời tất cả bạn bè đến bữa tiệc."
+    },
+    {
+      "id": 25163,
+      "quiz_meaning_vi": "vấn đề",
+      "meaning_vi_clean": "vấn đề",
+      "examples_clean": [
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "We need to discuss this important issue today.",
+          "example_vi": "Chúng ta cần thảo luận về vấn đề quan trọng này hôm nay."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "The main issue is that we don't have enough money.",
+          "example_vi": "Vấn đề chính là chúng ta không có đủ tiền."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "She raised a difficult issue during the meeting.",
+          "example_vi": "Cô ấy đã nêu ra một vấn đề khó khăn trong cuộc họp."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "There is a serious issue with the computer system.",
+          "example_vi": "Có một vấn đề nghiêm trọng với hệ thống máy tính."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "They are trying to solve the environmental issue.",
+          "example_vi": "Họ đang cố gắng giải quyết vấn đề môi trường."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "I don't see any issue with your plan.",
+          "example_vi": "Tôi không thấy có vấn đề gì với kế hoạch của bạn."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "The health issue was caused by poor diet.",
+          "example_vi": "Vấn đề sức khỏe đó là do chế độ ăn uống kém."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "We must address this safety issue immediately.",
+          "example_vi": "Chúng ta phải giải quyết vấn đề an toàn này ngay lập tức."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "His behavior is a major issue for the team.",
+          "example_vi": "Hành vi của anh ấy là một vấn đề lớn đối với cả đội."
+        },
+        {
+          "meaning_vi": "vấn đề",
+          "example_en": "Can you help me with this technical issue?",
+          "example_vi": "Bạn có thể giúp tôi giải quyết vấn đề kỹ thuật này không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'vấn đề' là danh từ phổ biến nhất cho từ issue.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vấn đề' là danh từ và tất cả 10 ví dụ đều sử dụng 'issue' như một danh từ."
+      },
+      "word": "issue",
+      "normalized_word": "issue",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We need to discuss this important issue today.",
+      "example_vi_clean": "Chúng ta cần thảo luận về vấn đề quan trọng này hôm nay."
+    },
+    {
+      "id": 25166,
+      "quiz_meaning_vi": "mứt",
+      "meaning_vi_clean": "mứt",
+      "examples_clean": [
+        {
+          "meaning_vi": "mứt",
+          "example_en": "I like to put strawberry jam on my toast.",
+          "example_vi": "Tôi thích phết mứt dâu lên bánh mì nướng."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "She made some delicious apricot jam this morning.",
+          "example_vi": "Cô ấy đã làm một ít mứt mơ ngon tuyệt vào sáng nay."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "Do you have any orange jam in the cupboard?",
+          "example_vi": "Bạn có hũ mứt cam nào trong tủ không?"
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "The children ate bread with jam for breakfast.",
+          "example_vi": "Bọn trẻ đã ăn bánh mì với mứt cho bữa sáng."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "This homemade jam tastes much better than the store-bought one.",
+          "example_vi": "Loại mứt nhà làm này có vị ngon hơn nhiều so với loại mua ở cửa hàng."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "He spread a thick layer of jam on his pancake.",
+          "example_vi": "Anh ấy phết một lớp mứt dày lên bánh kếp của mình."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "We need to buy more jam for the weekend.",
+          "example_vi": "Chúng ta cần mua thêm mứt cho cuối tuần."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "The jar of jam was almost empty.",
+          "example_vi": "Hũ mứt đã gần hết sạch rồi."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "She gave me a jar of raspberry jam as a gift.",
+          "example_vi": "Cô ấy tặng tôi một hũ mứt mâm xôi làm quà."
+        },
+        {
+          "meaning_vi": "mứt",
+          "example_en": "Would you like some jam with your scones?",
+          "example_vi": "Bạn có muốn dùng chút mứt với bánh nướng không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'mứt' là danh từ phổ biến nhất cho từ jam.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'mứt' là danh từ và tất cả 10 ví dụ đều sử dụng 'jam' như một danh từ."
+      },
+      "word": "jam",
+      "normalized_word": "jam",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I like to put strawberry jam on my toast.",
+      "example_vi_clean": "Tôi thích phết mứt dâu lên bánh mì nướng."
+    },
+    {
+      "id": 25167,
+      "quiz_meaning_vi": "thạch",
+      "meaning_vi_clean": "thạch",
+      "examples_clean": [
+        {
+          "meaning_vi": "thạch",
+          "example_en": "The children love eating fruit jelly for dessert.",
+          "example_vi": "Bọn trẻ rất thích ăn thạch trái cây làm món tráng miệng."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "She made a bowl of strawberry jelly.",
+          "example_vi": "Cô ấy đã làm một bát thạch dâu tây."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "The jelly wobbled when he touched the plate.",
+          "example_vi": "Miếng thạch rung rinh khi anh ấy chạm vào đĩa."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "We bought some lime jelly from the supermarket.",
+          "example_vi": "Chúng tôi đã mua một ít thạch chanh từ siêu thị."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "Is there any jelly left in the fridge?",
+          "example_vi": "Còn thạch nào trong tủ lạnh không?"
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "He served the jelly with a scoop of ice cream.",
+          "example_vi": "Anh ấy phục vụ món thạch kèm với một viên kem."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "The jelly is very sweet and refreshing.",
+          "example_vi": "Món thạch này rất ngọt và mát."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "She prepared the jelly for the birthday party.",
+          "example_vi": "Cô ấy đã chuẩn bị món thạch cho bữa tiệc sinh nhật."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "The orange jelly looks very bright and colorful.",
+          "example_vi": "Món thạch cam trông rất sáng và đầy màu sắc."
+        },
+        {
+          "meaning_vi": "thạch",
+          "example_en": "They enjoyed the cold jelly on a hot day.",
+          "example_vi": "Họ đã thưởng thức món thạch lạnh vào một ngày nóng nực."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'thạch' là danh từ phổ biến nhất cho từ jelly.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'thạch' là danh từ và tất cả 10 ví dụ đều sử dụng 'jelly' như một danh từ."
+      },
+      "word": "jelly",
+      "normalized_word": "jelly",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The children love eating fruit jelly for dessert.",
+      "example_vi_clean": "Bọn trẻ rất thích ăn thạch trái cây làm món tráng miệng."
+    },
+    {
+      "id": 25168,
+      "quiz_meaning_vi": "câu đùa",
+      "meaning_vi_clean": "câu đùa",
+      "examples_clean": [
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "He told a funny joke that made everyone laugh.",
+          "example_vi": "Anh ấy kể một câu đùa vui khiến mọi người đều cười."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "I didn't understand the joke he told.",
+          "example_vi": "Tôi đã không hiểu câu đùa mà anh ấy kể."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "She loves to share a good joke with her friends.",
+          "example_vi": "Cô ấy thích chia sẻ một câu đùa hay với bạn bè của mình."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "That was a really bad joke.",
+          "example_vi": "Đó là một câu đùa thực sự tệ."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "He is always making a joke about something.",
+          "example_vi": "Anh ấy lúc nào cũng đùa về một điều gì đó."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "Can you tell me another joke?",
+          "example_vi": "Bạn có thể kể cho tôi một câu đùa khác không?"
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "The joke was so funny that I couldn't stop laughing.",
+          "example_vi": "Câu đùa đó buồn cười đến mức tôi không thể ngừng cười."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "Don't take his joke too seriously.",
+          "example_vi": "Đừng coi câu đùa của anh ấy quá nghiêm trọng."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "She laughed at his silly joke.",
+          "example_vi": "Cô ấy đã cười trước câu đùa ngớ ngẩn của anh ấy."
+        },
+        {
+          "meaning_vi": "câu đùa",
+          "example_en": "He wrote a joke on a piece of paper.",
+          "example_vi": "Anh ấy đã viết một câu đùa lên một mảnh giấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'câu đùa' là danh từ phổ biến nhất cho từ joke.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'câu đùa' là danh từ và tất cả 10 ví dụ đều sử dụng 'joke' như một danh từ."
+      },
+      "word": "joke",
+      "normalized_word": "joke",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He told a funny joke that made everyone laugh.",
+      "example_vi_clean": "Anh ấy kể một câu đùa vui khiến mọi người đều cười."
+    },
+    {
+      "id": 25169,
+      "quiz_meaning_vi": "chuyến đi",
+      "meaning_vi_clean": "chuyến đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "It was a long journey across the country.",
+          "example_vi": "Đó là một chuyến đi dài băng qua đất nước."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "They enjoyed their journey to the mountains.",
+          "example_vi": "Họ đã tận hưởng chuyến đi đến vùng núi."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "The journey took three hours by train.",
+          "example_vi": "Chuyến đi mất ba tiếng đồng hồ bằng tàu hỏa."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "We are planning a journey to Europe next year.",
+          "example_vi": "Chúng tôi đang lên kế hoạch cho một chuyến đi đến châu Âu vào năm tới."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "The journey was tiring but very interesting.",
+          "example_vi": "Chuyến đi thật mệt mỏi nhưng rất thú vị."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "She started her journey early in the morning.",
+          "example_vi": "Cô ấy bắt đầu chuyến đi của mình vào sáng sớm."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "I hope you have a safe journey home.",
+          "example_vi": "Tôi hy vọng bạn có một chuyến đi về nhà an toàn."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "The journey through the forest was beautiful.",
+          "example_vi": "Chuyến đi xuyên qua khu rừng thật đẹp."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "They shared stories about their journey.",
+          "example_vi": "Họ đã chia sẻ những câu chuyện về chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "chuyến đi",
+          "example_en": "This journey changed his life forever.",
+          "example_vi": "Chuyến đi này đã thay đổi cuộc đời anh ấy mãi mãi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'chuyến đi' là danh từ phổ biến nhất cho từ journey.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'chuyến đi' là danh từ và tất cả 10 ví dụ đều sử dụng 'journey' như một danh từ."
+      },
+      "word": "journey",
+      "normalized_word": "journey",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "It was a long journey across the country.",
+      "example_vi_clean": "Đó là một chuyến đi dài băng qua đất nước."
+    },
+    {
+      "id": 25171,
+      "quiz_meaning_vi": "cấp dưới",
+      "meaning_vi_clean": "cấp dưới",
+      "examples_clean": [
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "He is a junior employee in our company.",
+          "example_vi": "Anh ấy là một nhân viên cấp dưới trong công ty chúng tôi."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "She works as a junior assistant to the manager.",
+          "example_vi": "Cô ấy làm trợ lý cấp dưới cho người quản lý."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "The junior staff members are learning new skills.",
+          "example_vi": "Các nhân viên cấp dưới đang học những kỹ năng mới."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "He is a junior partner at the law firm.",
+          "example_vi": "Anh ấy là một đối tác cấp dưới tại công ty luật."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "They are looking for a junior developer for the team.",
+          "example_vi": "Họ đang tìm kiếm một lập trình viên cấp dưới cho nhóm."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "She is a junior researcher in the laboratory.",
+          "example_vi": "Cô ấy là một nhà nghiên cứu cấp dưới trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "The junior officers followed the orders.",
+          "example_vi": "Các sĩ quan cấp dưới đã tuân theo mệnh lệnh."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "He is a junior member of the committee.",
+          "example_vi": "Anh ấy là một thành viên cấp dưới của ủy ban."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "She is a junior designer with great potential.",
+          "example_vi": "Cô ấy là một nhà thiết kế cấp dưới với tiềm năng lớn."
+        },
+        {
+          "meaning_vi": "cấp dưới",
+          "example_en": "The junior accountant helped with the report.",
+          "example_vi": "Kế toán cấp dưới đã giúp làm báo cáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'cấp dưới' là tính từ phổ biến nhất cho từ junior.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cấp dưới' là tính từ và tất cả 10 ví dụ đều sử dụng 'junior' như một tính từ bổ nghĩa cho danh từ."
+      },
+      "word": "junior",
+      "normalized_word": "junior",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a junior employee in our company.",
+      "example_vi_clean": "Anh ấy là một nhân viên cấp dưới trong công ty chúng tôi."
+    },
+    {
+      "id": 25172,
+      "quiz_meaning_vi": "đồ bỏ đi",
+      "meaning_vi_clean": "đồ bỏ đi",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "We need to clear out all this junk from the garage.",
+          "example_vi": "Chúng ta cần dọn sạch tất cả đống đồ bỏ đi này ra khỏi nhà để xe."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "His room is full of old junk.",
+          "example_vi": "Phòng của anh ấy đầy những món đồ bỏ đi cũ kỹ."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "I threw away a lot of junk yesterday.",
+          "example_vi": "Tôi đã vứt đi rất nhiều đồ bỏ đi vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "Why do you keep all this junk?",
+          "example_vi": "Tại sao bạn lại giữ tất cả đống đồ bỏ đi này?"
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "The attic is filled with junk from years ago.",
+          "example_vi": "Gác mái chứa đầy những món đồ bỏ đi từ nhiều năm trước."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "She sold her junk at the garage sale.",
+          "example_vi": "Cô ấy đã bán đống đồ bỏ đi của mình tại buổi bán hàng thanh lý."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "This old computer is just junk now.",
+          "example_vi": "Chiếc máy tính cũ này giờ chỉ là đồ bỏ đi thôi."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "He spent the weekend sorting through his junk.",
+          "example_vi": "Anh ấy đã dành cả cuối tuần để phân loại đống đồ bỏ đi của mình."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "There is so much junk in the basement.",
+          "example_vi": "Có rất nhiều đồ bỏ đi dưới tầng hầm."
+        },
+        {
+          "meaning_vi": "đồ bỏ đi",
+          "example_en": "Don't buy that junk, it will break soon.",
+          "example_vi": "Đừng mua đống đồ bỏ đi đó, nó sẽ sớm hỏng thôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'đồ bỏ đi' là danh từ phổ biến nhất cho từ junk.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'đồ bỏ đi' là danh từ và tất cả 10 ví dụ đều sử dụng 'junk' như một danh từ."
+      },
+      "word": "junk",
+      "normalized_word": "junk",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We need to clear out all this junk from the garage.",
+      "example_vi_clean": "Chúng ta cần dọn sạch tất cả đống đồ bỏ đi này ra khỏi nhà để xe."
+    },
+    {
+      "id": 25179,
+      "quiz_meaning_vi": "tốt bụng",
+      "meaning_vi_clean": "tốt bụng",
+      "examples_clean": [
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "She is a very kindly person who helps everyone.",
+          "example_vi": "Cô ấy là một người rất tốt bụng, người luôn giúp đỡ mọi người."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "He gave me a kindly smile when I arrived.",
+          "example_vi": "Anh ấy đã dành cho tôi một nụ cười tốt bụng khi tôi đến."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "The old man had a kindly face.",
+          "example_vi": "Ông lão có một khuôn mặt tốt bụng."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "She offered a kindly word of advice.",
+          "example_vi": "Cô ấy đã đưa ra một lời khuyên tốt bụng."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "They received a kindly welcome from the host.",
+          "example_vi": "Họ đã nhận được sự chào đón tốt bụng từ người chủ nhà."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "He is known for his kindly nature.",
+          "example_vi": "Anh ấy nổi tiếng với bản tính tốt bụng của mình."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "She wrote a kindly letter to her neighbor.",
+          "example_vi": "Cô ấy đã viết một lá thư tốt bụng cho người hàng xóm."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "The teacher gave a kindly look to the student.",
+          "example_vi": "Giáo viên đã dành một cái nhìn tốt bụng cho học sinh."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "He made a kindly gesture to help the poor.",
+          "example_vi": "Anh ấy đã có một cử chỉ tốt bụng để giúp đỡ người nghèo."
+        },
+        {
+          "meaning_vi": "tốt bụng",
+          "example_en": "She has a kindly heart towards animals.",
+          "example_vi": "Cô ấy có một trái tim tốt bụng đối với động vật."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'tốt bụng' là tính từ phổ biến nhất cho từ kindly.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'tốt bụng' là tính từ và tất cả 10 ví dụ đều sử dụng 'kindly' như một tính từ bổ nghĩa cho danh từ."
+      },
+      "word": "kindly",
+      "normalized_word": "kindly",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a very kindly person who helps everyone.",
+      "example_vi_clean": "Cô ấy là một người rất tốt bụng, người luôn giúp đỡ mọi người."
+    },
+    {
+      "id": 25181,
+      "quiz_meaning_vi": "bộ dụng cụ",
+      "meaning_vi_clean": "bộ dụng cụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "He bought a new tool kit for his repairs.",
+          "example_vi": "Anh ấy đã mua một bộ dụng cụ mới để sửa chữa."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "She keeps a first-aid kit in her car.",
+          "example_vi": "Cô ấy luôn để một bộ dụng cụ sơ cứu trong xe hơi."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "The science kit includes everything you need for the experiment.",
+          "example_vi": "Bộ dụng cụ khoa học bao gồm mọi thứ bạn cần cho thí nghiệm."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "We need a sewing kit to fix the clothes.",
+          "example_vi": "Chúng ta cần một bộ dụng cụ may vá để sửa quần áo."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "He opened the repair kit to check the parts.",
+          "example_vi": "Anh ấy mở bộ dụng cụ sửa chữa để kiểm tra các bộ phận."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "The art kit has many different colors.",
+          "example_vi": "Bộ dụng cụ vẽ có nhiều màu sắc khác nhau."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "She received a gardening kit as a birthday present.",
+          "example_vi": "Cô ấy đã nhận được một bộ dụng cụ làm vườn làm quà sinh nhật."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "The survival kit is essential for the trip.",
+          "example_vi": "Bộ dụng cụ sinh tồn rất cần thiết cho chuyến đi."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "He lost his cleaning kit somewhere.",
+          "example_vi": "Anh ấy đã làm mất bộ dụng cụ vệ sinh ở đâu đó rồi."
+        },
+        {
+          "meaning_vi": "bộ dụng cụ",
+          "example_en": "The model kit was very difficult to build.",
+          "example_vi": "Bộ dụng cụ lắp ráp mô hình rất khó để xây dựng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'bộ dụng cụ' là danh từ phổ biến nhất cho từ kit.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bộ dụng cụ' là danh từ và tất cả 10 ví dụ đều sử dụng 'kit' như một danh từ."
+      },
+      "word": "kit",
+      "normalized_word": "kit",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He bought a new tool kit for his repairs.",
+      "example_vi_clean": "Anh ấy đã mua một bộ dụng cụ mới để sửa chữa."
+    }
+  ]
+}

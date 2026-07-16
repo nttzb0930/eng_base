@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-113",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25121,
+      "word": "horror",
+      "normalized_word": "horror",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hɔrə/",
+      "primary_meaning_vi": "sự khiếp",
+      "meaning_vi": "sự khiếp, sự ghê rợn; điều kinh khủng; cảnh khủng khiếp; sự ghét độc địa, sự ghê tởm; sự rùng mình; cơn rùng mình, sự sợ hãi; trạng thái ủ rũ buồn nản (trong cơn mê sảng của những người nghiện rượu nặng)",
+      "example_en": "I saw many horrors during the war.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The neighbour's kids are a pack of little horrors!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25122,
+      "word": "host",
+      "normalized_word": "host",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/houst/",
+      "primary_meaning_vi": "chủ nhà",
+      "meaning_vi": "chủ nhà; chủ tiệc; chủ khách sạn, chủ quán trọ; cây chủ, vật chủ; quên không tính đến khó khăn; quên không tính đến sự phản đối; đặt kế hoạch mà không trao đổi với những nhân vật hữu quan chủ yếu; số đông, loạt (người, sự việc, đồ vật), đám đông; đạo quân; các thiên thể; các thiên thần tiên nữ; tôn bánh thánh",
+      "example_en": "A good host is always considerate of the guest’s needs.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Our company is host of the annual conference this year.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The host was terrible, but the acts themselves were good.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Viruses depend on the host that they infect in order to be able to reproduce.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25123,
+      "word": "however",
+      "normalized_word": "however",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "liên từ",
+      "phonetic": "/hau'evə/",
+      "primary_meaning_vi": "dù đến đâu",
+      "meaning_vi": "dù đến đâu, dù cách nào, dù cách gì; tuy nhiên, tuy thế, tuy vậy",
+      "example_en": "He told me not to do it. I, however, did it anyway. / I did it anyway, however. / (sometimes proscribed:) However, I did it anyway.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "However clear you think you've been, many questions will remain.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Let me know when you've had your interview, however it goes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "However were you able to do it?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25124,
+      "word": "human",
+      "normalized_word": "human",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hju:mən/",
+      "primary_meaning_vi": "con người",
+      "meaning_vi": "con người, (thuộc) loài người; có tính người, có tình cảm của con người; con người",
+      "example_en": "Humans share common ancestors with other apes.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "To err is human; to forgive, divine.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25125,
+      "word": "hundred",
+      "normalized_word": "hundred",
+      "cefr_level": "A2",
+      "pos": "number",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hʌndrəd/",
+      "primary_meaning_vi": "trăm",
+      "meaning_vi": "trăm; rất bận phải làm trăm công nghìn việc; trăm; hàng trăm; hạt, khu vực (ở Anh); làm với năng xuất cao nhất; một trăm hai mươi; kẹo trứng chim để bày lên bánh; một trăm phần trăm hoàn toàn",
+      "example_en": "He made a hundred in the historic match.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a hundred, one hundred",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25126,
+      "word": "hunter",
+      "normalized_word": "hunter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hʌntə/",
+      "primary_meaning_vi": "người đi săn",
+      "meaning_vi": "người đi săn; người đi lùng, người đi kiếm ((thường) trong từ ghép); ngựa săn; đồng hồ có nắp (cho mặt kính) (của những người săn cáo) ((cũng) hungting-watch)",
+      "example_en": "The hunter becomes the hunted.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25127,
+      "word": "id",
+      "normalized_word": "id",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/id/",
+      "primary_meaning_vi": "ít (đơn vị chất giống)",
+      "meaning_vi": "ít (đơn vị chất giống); xung động bản năng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25128,
+      "word": "ill",
+      "normalized_word": "ill",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/il/",
+      "primary_meaning_vi": "đau yếu",
+      "meaning_vi": "đau yếu, ốm; xấu, tồi, kém; ác; không may, rủi; khó; cái xấu lan nhanh, thói xấu dễ bắt chước; điều không làm lợi cho ai là điều xấu; xấu, tồi, kém; sai; ác; khó chịu; không lợi, không may, rủi cho; khó mà, hầu như, không thể; điều xấu, việc ác, điều hại; những vụ rủi ro, những điều bất hạnh",
+      "example_en": "Music won't solve all the world's ills, but it can make them easier to bear.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I wouldn't want you to do me ill.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I am incapacitated by rheumatism and other ills.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He suffered from ill treatment.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25129,
+      "word": "illegal",
+      "normalized_word": "illegal",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/i'li:gəl/",
+      "primary_meaning_vi": "không hợp pháp",
+      "meaning_vi": "không hợp pháp, trái luật",
+      "example_en": "Nearly 40 million people live in UK areas with illegal air pollution",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Moving a pawn backward is an illegal move in chess.",
+          "example_vi": null
+        },
+        {
+          "example_en": "illegal immigrant; illegal logger; illegal pilot",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25130,
+      "word": "image",
+      "normalized_word": "image",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'imidʤ/",
+      "primary_meaning_vi": "hình",
+      "meaning_vi": "hình, hình ảnh, ảnh (trong gương...); vật giống hệt (vật khác); người giống hệt (người khác); hình tượng; tượng, thần tượng, thánh tượng; ý niệm, ý tưởng, quan niệm; tượng trưng, điển hình, hiện thân (của cái gì); vẽ hình; phản ánh (như ở trong gương); hình dung, tưởng tượng ra; mô tả sinh động, mô tả bằng hình tượng; là tượng trưng của, là điển hình của, là hiện thân của, tượng trưng cho (cái gì)",
+      "example_en": "The Bible forbids the worship of graven images.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Most game console emulators do not come with any ROM images for copyright reasons.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The number 6 is the image of 3 under f that is defined as f(x) = 2x.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

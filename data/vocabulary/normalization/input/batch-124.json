@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-124",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25231,
+      "word": "manage",
+      "normalized_word": "manage",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'mænidʤ/",
+      "primary_meaning_vi": "quản lý",
+      "meaning_vi": "quản lý, trông nom; chế ngự, kiềm chế; điều khiển, sai khiến, dạy dỗ, dạy bảo; thoát khỏi, gỡ khỏi; xoay xở được, giải quyết được; dùng, sử dụng; đạt kết quả, đạt mục đích, xoay sở được, tìm được cách",
+      "example_en": "He managed to climb the tower.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It's a tough job, but I'll manage.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25232,
+      "word": "manager",
+      "normalized_word": "manager",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mænidʤə/",
+      "primary_meaning_vi": "người quản lý",
+      "meaning_vi": "người quản lý, quản đốc, giám đốc; người trông nom; người nội trợ",
+      "example_en": "a file manager; a task manager; Program Manager",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25233,
+      "word": "manner",
+      "normalized_word": "manner",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'mænə/",
+      "primary_meaning_vi": "cách",
+      "meaning_vi": "cách, lối, kiểu; in; cách, lối, thói, kiểu; dáng, vẻ, bộ dạng, thái độ, cử chỉ; cách xử sự, cách cư xử; phong tục, tập quán; lối, bút pháp (của một nhà văn, hoạ sĩ...); loại, hạng; means; mean; theo một cách hiểu nào đó; ở mức độ nào đó; bẩm sinh đã quen (với cái gì, làm gì...)",
+      "example_en": "His natural manner makes him seem like the boss.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "These people have strange manners.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It is in a manner done already.",
+          "example_vi": null
+        },
+        {
+          "example_en": "All manner of persons participate.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25234,
+      "word": "mark",
+      "normalized_word": "mark",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/mɑ:k/",
+      "primary_meaning_vi": "đồng Mác (tiền Đức)",
+      "meaning_vi": "đồng Mác (tiền Đức); dấu, nhãn, nhãn hiệu; dấu, vết, lằn; bớt (người), đốm, lang (súc vật); dấu chữ thập (thay chữ ký của những người không biết viết); đích, mục đích, mục tiêu ((nghĩa đen) & (nghĩa bóng)); chứng cớ, biểu hiện; danh vọng, danh tiếng; mức, tiêu chuẩn, trình độ; điểm, điểm số; đánh dấu, ghi dấu; cho điểm, ghi điểm; chỉ, bày tỏ; biểu lộ, biểu thị; chứng tỏ, đặc trưng; để ý, chú ý; ghi (giá hàng) hạ hơn (trên phiếu ghi giá); chọn lựa, phân biệt, tách ra ((nghĩa đen) & (nghĩa bóng)); giới hạn, vẽ ranh giới, quy định ranh giới (để xây dựng); vạch (con đường); vạch, đề ra (kế hoạch); chỉ định, chọn lựa (để làm một nhiệm vụ, công việc gì); ghi (giá hàng) cao hơn (trên phiếu ghi giá); định giá bán (bằng cách cộng thêm kinh phí vào giá vốn); giậm chân tại chỗ theo nhịp; giậm chân tại chỗ, không tiến chút nào",
+      "example_en": "to mark a box or bale of merchandise",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "See where this pencil has marked the paper.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She folded over the corner of the page to mark where she left off reading.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A bell marked the end of visiting hours.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25235,
+      "word": "market",
+      "normalized_word": "market",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'mɑ:kit/",
+      "primary_meaning_vi": "chợ",
+      "meaning_vi": "chợ; thị trường, nơi tiêu thụ; khách hàng; giá thị trường; tình hình thị trường; làm hỏng việc, làm lỡ việc; hỏng kế hoạch, tính sai; bán rẻ danh dự; bán ở chợ, bán ở thị trường; mua bán ở chợ",
+      "example_en": "The privilege to hold a weekly market was invaluable for any feudal era burgh.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Stop by the market on your way home and pick up some milk",
+          "example_vi": null
+        },
+        {
+          "example_en": "We believe that the market for the new widget is the older homeowner.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Foreign markets were lost as our currency rose versus their valuta.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25236,
+      "word": "married",
+      "normalized_word": "married",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'mærid/",
+      "primary_meaning_vi": "cưới",
+      "meaning_vi": "cưới, kết hôn, thành lập gia đình; vợ chồng",
+      "example_en": "married to one's work.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Neither of her daughters showed any desire to marry.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His daughter was married some five years ago to a tailor's apprentice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was eager to marry his daughter to a nobleman.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25237,
+      "word": "marry",
+      "normalized_word": "marry",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "thán từ",
+      "phonetic": "/'mæri/",
+      "primary_meaning_vi": "cưới (vợ)",
+      "meaning_vi": "cưới (vợ), lấy (chồng); lấy vợ cho, lấy chồng cho, gả, làm lễ cưới cho ở nhà thờ; kết hợp chặt chẽ; kết hôn, lấy vợ, lấy chồng; thế à!, ồ!",
+      "example_en": "Neither of her daughters showed any desire to marry.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His daughter was married some five years ago to a tailor's apprentice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was eager to marry his daughter to a nobleman.",
+          "example_vi": null
+        },
+        {
+          "example_en": "In some cultures, it is acceptable for an uncle to marry his niece.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25238,
+      "word": "marvellous",
+      "normalized_word": "marvellous",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'mɑ:viləs/",
+      "primary_meaning_vi": "kỳ lạ",
+      "meaning_vi": "kỳ lạ, kỳ diệu, tuyệt diệu, phi thường",
+      "example_en": "I went to a marvellous party last week.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25239,
+      "word": "marvelous",
+      "normalized_word": "marvelous",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "như marvellous",
+      "meaning_vi": "như marvellous",
+      "example_en": "I went to a marvelous party last week.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25240,
+      "word": "material",
+      "normalized_word": "material",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/mə'tiəriəl/",
+      "primary_meaning_vi": "vật chất",
+      "meaning_vi": "vật chất; thân thể, (thuộc) xác thịt; hữu hình, cụ thể, thực chất; quan trọng, trọng đại, cần thiết; chất, tài liệu, nguyên liệu, vật liệu; vải",
+      "example_en": "Asphalt, composed of oil and sand, is a widely used material for roads.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We were a warm-up act at the time; we didn't have enough original material to headline.",
+          "example_vi": null
+        },
+        {
+          "example_en": "You'll need about a yard of material to make this.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He is not the only one. I believe we have lots of presidential material in various public offices.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

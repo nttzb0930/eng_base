@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25451,
+      "quiz_meaning_vi": "quảng cáo",
+      "meaning_vi_clean": "quảng cáo; thông báo",
+      "examples_clean": [
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "They advertise their products on television every evening.",
+          "example_vi": "Họ quảng cáo sản phẩm của mình trên truyền hình mỗi tối."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "Many companies advertise on social media to reach young people.",
+          "example_vi": "Nhiều công ty quảng cáo trên mạng xã hội để tiếp cận giới trẻ."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "You should advertise your car in the local newspaper to sell it faster.",
+          "example_vi": "Bạn nên quảng cáo chiếc xe của mình trên báo địa phương để bán nó nhanh hơn."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "The store decided to advertise the sale on their website.",
+          "example_vi": "Cửa hàng quyết định quảng cáo đợt giảm giá trên trang web của họ."
+        },
+        {
+          "meaning_vi": "thông báo",
+          "example_en": "The school will advertise the date of the meeting to all parents.",
+          "example_vi": "Nhà trường sẽ thông báo ngày họp cho tất cả phụ huynh."
+        },
+        {
+          "meaning_vi": "thông báo",
+          "example_en": "They need to advertise the vacancy to find a new employee.",
+          "example_vi": "Họ cần thông báo về vị trí tuyển dụng để tìm nhân viên mới."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "It is expensive to advertise during the Super Bowl.",
+          "example_vi": "Quảng cáo trong trận Super Bowl rất đắt đỏ."
+        },
+        {
+          "meaning_vi": "thông báo",
+          "example_en": "The government will advertise the new rules next week.",
+          "example_vi": "Chính phủ sẽ thông báo các quy định mới vào tuần tới."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "She wants to advertise her services as a private tutor.",
+          "example_vi": "Cô ấy muốn quảng cáo dịch vụ gia sư của mình."
+        },
+        {
+          "meaning_vi": "thông báo",
+          "example_en": "Please advertise the event on the community bulletin board.",
+          "example_vi": "Vui lòng thông báo về sự kiện trên bảng tin cộng đồng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa sang quảng cáo/thông báo, loại bỏ các nghĩa rườm rà. Bổ sung 10 ví dụ tự nhiên.",
+      "word": "advertise",
+      "normalized_word": "advertise",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "They advertise their products on television every evening.",
+      "example_vi_clean": "Họ quảng cáo sản phẩm của mình trên truyền hình mỗi tối."
+    },
+    {
+      "id": 25452,
+      "quiz_meaning_vi": "cố vấn",
+      "meaning_vi_clean": "cố vấn; người khuyên bảo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "He acts as a financial adviser to many wealthy families.",
+          "example_vi": "Ông ấy đóng vai trò là cố vấn tài chính cho nhiều gia đình giàu có."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The president met with his senior political adviser.",
+          "example_vi": "Tổng thống đã gặp cố vấn chính trị cấp cao của mình."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "She is a trusted adviser on environmental issues.",
+          "example_vi": "Cô ấy là một cố vấn đáng tin cậy về các vấn đề môi trường."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "You should talk to your academic adviser about your course choices.",
+          "example_vi": "Bạn nên nói chuyện với cố vấn học tập về việc chọn khóa học của mình."
+        },
+        {
+          "meaning_vi": "người khuyên bảo",
+          "example_en": "My grandfather has always been a wise adviser to me.",
+          "example_vi": "Ông tôi luôn là một người khuyên bảo sáng suốt đối với tôi."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The company hired an external adviser to improve efficiency.",
+          "example_vi": "Công ty đã thuê một cố vấn bên ngoài để cải thiện hiệu quả."
+        },
+        {
+          "meaning_vi": "người khuyên bảo",
+          "example_en": "She needs a good adviser to help her through this difficult time.",
+          "example_vi": "Cô ấy cần một người khuyên bảo tốt để giúp cô ấy vượt qua thời điểm khó khăn này."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The legal adviser reviewed the contract before we signed it.",
+          "example_vi": "Cố vấn pháp lý đã xem xét hợp đồng trước khi chúng tôi ký."
+        },
+        {
+          "meaning_vi": "người khuyên bảo",
+          "example_en": "He is a kind adviser who listens to all my problems.",
+          "example_vi": "Anh ấy là một người khuyên bảo tử tế, người lắng nghe mọi vấn đề của tôi."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The team needs an expert adviser to guide the project.",
+          "example_vi": "Nhóm cần một cố vấn chuyên môn để hướng dẫn dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "adviser",
+      "normalized_word": "adviser",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He acts as a financial adviser to many wealthy families.",
+      "example_vi_clean": "Ông ấy đóng vai trò là cố vấn tài chính cho nhiều gia đình giàu có."
+    },
+    {
+      "id": 25453,
+      "quiz_meaning_vi": "cố vấn",
+      "meaning_vi_clean": "cố vấn; người khuyên bảo",
+      "examples_clean": [
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The government appointed a new economic advisor.",
+          "example_vi": "Chính phủ đã bổ nhiệm một cố vấn kinh tế mới."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "She works as a career advisor for university students.",
+          "example_vi": "Cô ấy làm cố vấn nghề nghiệp cho sinh viên đại học."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "He is a security advisor for the international organization.",
+          "example_vi": "Anh ấy là cố vấn an ninh cho tổ chức quốc tế."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The advisor suggested a new strategy for the business.",
+          "example_vi": "Cố vấn đã đề xuất một chiến lược mới cho doanh nghiệp."
+        },
+        {
+          "meaning_vi": "người khuyên bảo",
+          "example_en": "A good advisor can change the course of your life.",
+          "example_vi": "Một người khuyên bảo tốt có thể thay đổi hướng đi cuộc đời bạn."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The advisor provided valuable insights into the market.",
+          "example_vi": "Cố vấn đã cung cấp những hiểu biết có giá trị về thị trường."
+        },
+        {
+          "meaning_vi": "người khuyên bảo",
+          "example_en": "She acted as an advisor to her younger brother.",
+          "example_vi": "Cô ấy đóng vai trò là người khuyên bảo cho em trai mình."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The technical advisor helped fix the software issues.",
+          "example_vi": "Cố vấn kỹ thuật đã giúp sửa các lỗi phần mềm."
+        },
+        {
+          "meaning_vi": "người khuyên bảo",
+          "example_en": "He is a trusted advisor who always gives honest feedback.",
+          "example_vi": "Anh ấy là một người khuyên bảo đáng tin cậy, người luôn đưa ra phản hồi trung thực."
+        },
+        {
+          "meaning_vi": "cố vấn",
+          "example_en": "The health advisor recommended a balanced diet.",
+          "example_vi": "Cố vấn sức khỏe đã khuyến nghị một chế độ ăn uống cân bằng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "advisor",
+      "normalized_word": "advisor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The government appointed a new economic advisor.",
+      "example_vi_clean": "Chính phủ đã bổ nhiệm một cố vấn kinh tế mới."
+    },
+    {
+      "id": 25454,
+      "quiz_meaning_vi": "thể dục nhịp điệu",
+      "meaning_vi_clean": "thể dục nhịp điệu",
+      "examples_clean": [
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "She goes to an aerobics class every Tuesday evening.",
+          "example_vi": "Cô ấy đi học lớp thể dục nhịp điệu vào mỗi tối thứ Ba."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "Aerobics is a great way to improve your heart health.",
+          "example_vi": "Thể dục nhịp điệu là một cách tuyệt vời để cải thiện sức khỏe tim mạch."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "They enjoy doing aerobics to upbeat music.",
+          "example_vi": "Họ thích tập thể dục nhịp điệu trên nền nhạc sôi động."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "I find aerobics more fun than lifting weights.",
+          "example_vi": "Tôi thấy thể dục nhịp điệu vui hơn là tập tạ."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "The gym offers a variety of aerobics sessions.",
+          "example_vi": "Phòng tập cung cấp nhiều buổi tập thể dục nhịp điệu khác nhau."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "Doing aerobics helps you burn calories effectively.",
+          "example_vi": "Tập thể dục nhịp điệu giúp bạn đốt cháy calo hiệu quả."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "She has been doing aerobics for over five years.",
+          "example_vi": "Cô ấy đã tập thể dục nhịp điệu được hơn năm năm rồi."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "Aerobics can be done at home with online videos.",
+          "example_vi": "Thể dục nhịp điệu có thể được tập tại nhà với các video trực tuyến."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "The instructor leads the aerobics class with high energy.",
+          "example_vi": "Huấn luyện viên dẫn dắt lớp thể dục nhịp điệu với năng lượng cao."
+        },
+        {
+          "meaning_vi": "thể dục nhịp điệu",
+          "example_en": "We started our morning with a short aerobics routine.",
+          "example_vi": "Chúng tôi bắt đầu buổi sáng bằng một bài tập thể dục nhịp điệu ngắn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "aerobics",
+      "normalized_word": "aerobics",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She goes to an aerobics class every Tuesday evening.",
+      "example_vi_clean": "Cô ấy đi học lớp thể dục nhịp điệu vào mỗi tối thứ Ba."
+    },
+    {
+      "id": 25455,
+      "quiz_meaning_vi": "làm ảnh hưởng đến",
+      "meaning_vi_clean": "làm ảnh hưởng đến; làm xúc động",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm ảnh hưởng đến",
+          "example_en": "The new law will affect everyone in the country.",
+          "example_vi": "Luật mới sẽ làm ảnh hưởng đến mọi người trong cả nước."
+        },
+        {
+          "meaning_vi": "làm ảnh hưởng đến",
+          "example_en": "Pollution can affect the quality of our water.",
+          "example_vi": "Ô nhiễm có thể làm ảnh hưởng đến chất lượng nước của chúng ta."
+        },
+        {
+          "meaning_vi": "làm ảnh hưởng đến",
+          "example_en": "The weather may affect our travel plans.",
+          "example_vi": "Thời tiết có thể làm ảnh hưởng đến kế hoạch du lịch của chúng ta."
+        },
+        {
+          "meaning_vi": "làm ảnh hưởng đến",
+          "example_en": "His decision will affect the future of the company.",
+          "example_vi": "Quyết định của anh ấy sẽ làm ảnh hưởng đến tương lai của công ty."
+        },
+        {
+          "meaning_vi": "làm xúc động",
+          "example_en": "The sad story deeply affected the audience.",
+          "example_vi": "Câu chuyện buồn đã làm xúc động khán giả sâu sắc."
+        },
+        {
+          "meaning_vi": "làm xúc động",
+          "example_en": "She was visibly affected by the kind gesture.",
+          "example_vi": "Cô ấy đã rất xúc động trước cử chỉ tử tế đó."
+        },
+        {
+          "meaning_vi": "làm ảnh hưởng đến",
+          "example_en": "Lack of sleep can affect your concentration.",
+          "example_vi": "Thiếu ngủ có thể làm ảnh hưởng đến sự tập trung của bạn."
+        },
+        {
+          "meaning_vi": "làm xúc động",
+          "example_en": "The music affected him in a way he couldn't explain.",
+          "example_vi": "Âm nhạc đã làm anh ấy xúc động theo cách mà anh ấy không thể giải thích được."
+        },
+        {
+          "meaning_vi": "làm ảnh hưởng đến",
+          "example_en": "Rising prices affect low-income families the most.",
+          "example_vi": "Giá cả tăng cao làm ảnh hưởng đến các gia đình thu nhập thấp nhiều nhất."
+        },
+        {
+          "meaning_vi": "làm xúc động",
+          "example_en": "The film's ending affected everyone in the room.",
+          "example_vi": "Kết thúc của bộ phim đã làm mọi người trong phòng xúc động."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ thành động từ, chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "affect",
+      "normalized_word": "affect",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The new law will affect everyone in the country.",
+      "example_vi_clean": "Luật mới sẽ làm ảnh hưởng đến mọi người trong cả nước."
+    },
+    {
+      "id": 25456,
+      "quiz_meaning_vi": "tình cảm",
+      "meaning_vi_clean": "tình cảm; lòng yêu thương",
+      "examples_clean": [
+        {
+          "meaning_vi": "tình cảm",
+          "example_en": "He shows his affection through small acts of kindness.",
+          "example_vi": "Anh ấy thể hiện tình cảm của mình qua những hành động tử tế nhỏ bé."
+        },
+        {
+          "meaning_vi": "tình cảm",
+          "example_en": "There is a lot of affection between the two friends.",
+          "example_vi": "Có rất nhiều tình cảm giữa hai người bạn."
+        },
+        {
+          "meaning_vi": "lòng yêu thương",
+          "example_en": "She has deep affection for her grandparents.",
+          "example_vi": "Cô ấy có lòng yêu thương sâu sắc dành cho ông bà mình."
+        },
+        {
+          "meaning_vi": "lòng yêu thương",
+          "example_en": "Children need affection to grow up happily.",
+          "example_vi": "Trẻ em cần lòng yêu thương để lớn lên hạnh phúc."
+        },
+        {
+          "meaning_vi": "tình cảm",
+          "example_en": "He expressed his affection in a heartfelt letter.",
+          "example_vi": "Anh ấy đã bày tỏ tình cảm của mình trong một lá thư chân thành."
+        },
+        {
+          "meaning_vi": "lòng yêu thương",
+          "example_en": "They have a great deal of affection for their pets.",
+          "example_vi": "Họ dành rất nhiều lòng yêu thương cho thú cưng của mình."
+        },
+        {
+          "meaning_vi": "tình cảm",
+          "example_en": "It is important to show affection to your family members.",
+          "example_vi": "Điều quan trọng là phải thể hiện tình cảm với các thành viên trong gia đình."
+        },
+        {
+          "meaning_vi": "lòng yêu thương",
+          "example_en": "Her affection for the children is obvious to everyone.",
+          "example_vi": "Lòng yêu thương của cô ấy dành cho lũ trẻ là điều ai cũng thấy rõ."
+        },
+        {
+          "meaning_vi": "tình cảm",
+          "example_en": "They shared a moment of mutual affection.",
+          "example_vi": "Họ đã chia sẻ một khoảnh khắc đầy tình cảm với nhau."
+        },
+        {
+          "meaning_vi": "lòng yêu thương",
+          "example_en": "He won her affection with his honesty.",
+          "example_vi": "Anh ấy đã chiếm được lòng yêu thương của cô ấy bằng sự trung thực."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, loại bỏ các nghĩa không phù hợp (bệnh tật), bổ sung ví dụ.",
+      "word": "affection",
+      "normalized_word": "affection",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He shows his affection through small acts of kindness.",
+      "example_vi_clean": "Anh ấy thể hiện tình cảm của mình qua những hành động tử tế nhỏ bé."
+    },
+    {
+      "id": 25457,
+      "quiz_meaning_vi": "có thể",
+      "meaning_vi_clean": "có thể; có đủ khả năng",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We can afford to go on holiday this year.",
+          "example_vi": "Chúng ta có thể đi nghỉ mát trong năm nay."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "I cannot afford to lose my job right now.",
+          "example_vi": "Tôi không thể để mất công việc của mình lúc này."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "They finally have enough money to afford a new house.",
+          "example_vi": "Cuối cùng họ cũng có đủ khả năng để mua một ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "Can you afford to pay for the tickets?",
+          "example_vi": "Bạn có đủ khả năng chi trả cho những tấm vé không?"
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We can't afford to wait any longer.",
+          "example_vi": "Chúng ta không thể chờ đợi thêm được nữa."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "She is working hard so she can afford university fees.",
+          "example_vi": "Cô ấy đang làm việc chăm chỉ để có đủ khả năng chi trả học phí đại học."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "I don't think we can afford the time to do that.",
+          "example_vi": "Tôi không nghĩ chúng ta có thể dành thời gian để làm việc đó."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "Only a few people can afford such expensive cars.",
+          "example_vi": "Chỉ một vài người có đủ khả năng mua những chiếc xe đắt tiền như vậy."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We can't afford any more mistakes.",
+          "example_vi": "Chúng ta không thể để xảy ra thêm bất kỳ sai lầm nào nữa."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "He saved money so he could afford a better computer.",
+          "example_vi": "Anh ấy đã tiết kiệm tiền để có đủ khả năng mua một chiếc máy tính tốt hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "afford",
+      "normalized_word": "afford",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "We can afford to go on holiday this year.",
+      "example_vi_clean": "Chúng ta có thể đi nghỉ mát trong năm nay."
+    },
+    {
+      "id": 25458,
+      "quiz_meaning_vi": "sau này",
+      "meaning_vi_clean": "sau này; về sau",
+      "examples_clean": [
+        {
+          "meaning_vi": "sau này",
+          "example_en": "He moved to London and afterward became a famous writer.",
+          "example_vi": "Anh ấy chuyển đến London và sau này trở thành một nhà văn nổi tiếng."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "We met for coffee and talked about what we would do afterward.",
+          "example_vi": "Chúng tôi gặp nhau uống cà phê và nói về những gì chúng tôi sẽ làm sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "The house was renovated shortly afterward.",
+          "example_vi": "Ngôi nhà đã được cải tạo không lâu về sau."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "She realized her mistake only afterward.",
+          "example_vi": "Cô ấy chỉ nhận ra sai lầm của mình về sau."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "They got married and lived happily ever afterward.",
+          "example_vi": "Họ kết hôn và sống hạnh phúc mãi về sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "He felt much better afterward.",
+          "example_vi": "Anh ấy cảm thấy tốt hơn nhiều về sau."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "We can discuss the details afterward.",
+          "example_vi": "Chúng ta có thể thảo luận chi tiết sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "The pain started shortly afterward.",
+          "example_vi": "Cơn đau bắt đầu không lâu về sau."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "I will call you afterward.",
+          "example_vi": "Tôi sẽ gọi cho bạn sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "They left and we didn't see them again until long afterward.",
+          "example_vi": "Họ rời đi và chúng tôi không gặp lại họ cho đến tận rất lâu về sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "afterward",
+      "normalized_word": "afterward",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He moved to London and afterward became a famous writer.",
+      "example_vi_clean": "Anh ấy chuyển đến London và sau này trở thành một nhà văn nổi tiếng."
+    },
+    {
+      "id": 25459,
+      "quiz_meaning_vi": "sau này",
+      "meaning_vi_clean": "sau này; về sau",
+      "examples_clean": [
+        {
+          "meaning_vi": "sau này",
+          "example_en": "We went to the cinema and afterwards we had dinner.",
+          "example_vi": "Chúng tôi đi xem phim và sau này chúng tôi đi ăn tối."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "She left the company shortly afterwards.",
+          "example_vi": "Cô ấy rời công ty không lâu sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "He regretted his words afterwards.",
+          "example_vi": "Anh ấy đã hối hận về những lời nói của mình về sau."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "They moved to a new city shortly afterwards.",
+          "example_vi": "Họ chuyển đến một thành phố mới không lâu về sau."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "We can talk about the plan afterwards.",
+          "example_vi": "Chúng ta có thể nói về kế hoạch sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "The meeting ended and everyone left shortly afterwards.",
+          "example_vi": "Cuộc họp kết thúc và mọi người rời đi không lâu về sau."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "I will finish my work and go home afterwards.",
+          "example_vi": "Tôi sẽ hoàn thành công việc và về nhà sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "She felt much calmer afterwards.",
+          "example_vi": "Cô ấy cảm thấy bình tĩnh hơn nhiều về sau."
+        },
+        {
+          "meaning_vi": "sau này",
+          "example_en": "They decided to get married shortly afterwards.",
+          "example_vi": "Họ quyết định kết hôn không lâu sau này."
+        },
+        {
+          "meaning_vi": "về sau",
+          "example_en": "He realized the truth long afterwards.",
+          "example_vi": "Anh ấy nhận ra sự thật rất lâu về sau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "afterwards",
+      "normalized_word": "afterwards",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "We went to the cinema and afterwards we had dinner.",
+      "example_vi_clean": "Chúng tôi đi xem phim và sau này chúng tôi đi ăn tối."
+    },
+    {
+      "id": 25460,
+      "quiz_meaning_vi": "những việc phải làm",
+      "meaning_vi_clean": "những việc phải làm; chương trình nghị sự",
+      "examples_clean": [
+        {
+          "meaning_vi": "những việc phải làm",
+          "example_en": "I have a long agenda of things to do today.",
+          "example_vi": "Tôi có một danh sách dài những việc phải làm hôm nay."
+        },
+        {
+          "meaning_vi": "những việc phải làm",
+          "example_en": "What is on your agenda for this afternoon?",
+          "example_vi": "Những việc phải làm của bạn chiều nay là gì?"
+        },
+        {
+          "meaning_vi": "chương trình nghị sự",
+          "example_en": "The main item on the agenda is the new budget.",
+          "example_vi": "Mục chính trong chương trình nghị sự là ngân sách mới."
+        },
+        {
+          "meaning_vi": "chương trình nghị sự",
+          "example_en": "We need to follow the agenda for the meeting.",
+          "example_vi": "Chúng ta cần tuân theo chương trình nghị sự cho cuộc họp."
+        },
+        {
+          "meaning_vi": "những việc phải làm",
+          "example_en": "She keeps a daily agenda to stay organized.",
+          "example_vi": "Cô ấy giữ một danh sách những việc phải làm hàng ngày để luôn ngăn nắp."
+        },
+        {
+          "meaning_vi": "chương trình nghị sự",
+          "example_en": "The committee will discuss the agenda tomorrow.",
+          "example_vi": "Ủy ban sẽ thảo luận về chương trình nghị sự vào ngày mai."
+        },
+        {
+          "meaning_vi": "những việc phải làm",
+          "example_en": "He added a new task to his agenda.",
+          "example_vi": "Anh ấy đã thêm một nhiệm vụ mới vào những việc phải làm của mình."
+        },
+        {
+          "meaning_vi": "chương trình nghị sự",
+          "example_en": "The agenda was sent to all participants beforehand.",
+          "example_vi": "Chương trình nghị sự đã được gửi cho tất cả người tham gia trước đó."
+        },
+        {
+          "meaning_vi": "những việc phải làm",
+          "example_en": "My agenda is full for the rest of the week.",
+          "example_vi": "Những việc phải làm của tôi đã kín cho phần còn lại của tuần."
+        },
+        {
+          "meaning_vi": "chương trình nghị sự",
+          "example_en": "They decided to change the agenda at the last minute.",
+          "example_vi": "Họ quyết định thay đổi chương trình nghị sự vào phút cuối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa, bổ sung 10 ví dụ minh họa.",
+      "word": "agenda",
+      "normalized_word": "agenda",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I have a long agenda of things to do today.",
+      "example_vi_clean": "Tôi có một danh sách dài những việc phải làm hôm nay."
+    }
+  ]
+}

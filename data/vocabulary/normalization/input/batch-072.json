@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-072",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24711,
+      "word": "battery",
+      "normalized_word": "battery",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bætəri/",
+      "primary_meaning_vi": "khẩu đội (pháo)",
+      "meaning_vi": "khẩu đội (pháo); bộ pin, ắc quy; bộ; dãy chuồng nuôi gà nhốt; sự hành hung, sự bạo hành; lấy gậy ông đập lưng ông",
+      "example_en": "Schoolchildren take a battery of standard tests to measure their progress.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24712,
+      "word": "bay",
+      "normalized_word": "bay",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/bei/",
+      "primary_meaning_vi": "hồng",
+      "meaning_vi": "hồng; ngựa hồng; vịnh; gian (nhà); ô (chuồng ngựa); phần nhà xây lồi ra ngoài; nhịp (cầu); chỗ tránh nhau (trong chiến hào); cây nguyệt quế; vòng nguyệt quế; tiếng chó sủa; cùng đường; bị dồn vào nước đường cùng; dồn vào nước đường cùng, dồn vào chân tường; giữ không cho ai lại gần; chống lại một cách tuyệt hảo; sủa (chó); sủa trăng",
+      "example_en": "to bay the bear",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24713,
+      "word": "beauty",
+      "normalized_word": "beauty",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'bju:ti/",
+      "primary_meaning_vi": "vẻ đẹp",
+      "meaning_vi": "vẻ đẹp, sắc đẹp, nhan sắc; cái đẹp, cái hay; người đẹp, vật đẹp; nhan sắc chỉ là bề ngoài",
+      "example_en": "1988, \"… beauty and recollection, like danger, glamour, greed, hunger- everything but disappointment and desire- were concepts belonging to other people.” -Second Son, Robert Ferro",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Brigitte Bardot was a renowned beauty.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What a goal! That was a real beauty!",
+          "example_vi": null
+        },
+        {
+          "example_en": "The beauty of the deal is it costs nothing!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24714,
+      "word": "been",
+      "normalized_word": "been",
+      "cefr_level": "A2",
+      "pos": "be-verb",
+      "pos_vi": "(bất qui tắc) nội động từ & trợ động từ (số ít was,  số nhiều were,  been)",
+      "phonetic": "/bi:/",
+      "primary_meaning_vi": "thì",
+      "meaning_vi": "thì, là; có, tồn tại, ở, sống; trở nên, trở thành; xảy ra, diễn ra; giá; be to phải, định, sẽ; đang; bị, được; đã đi, đã đến; chống lại; tán thành, đứng về phía",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24715,
+      "word": "beer",
+      "normalized_word": "beer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi:n/",
+      "primary_meaning_vi": "rượu bia",
+      "meaning_vi": "rượu bia; ngà ngà say; những cái thú vị, những trò giải trí vui chơi",
+      "example_en": "Beer is brewed all over the world.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Can I buy you a beer?",
+          "example_vi": null
+        },
+        {
+          "example_en": "I haven't tried this beer before.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24716,
+      "word": "beg",
+      "normalized_word": "beg",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/beg/",
+      "primary_meaning_vi": "ăn xin",
+      "meaning_vi": "ăn xin, xin; cầu xin; đề nghi thiết tha, khẩn cầu; xin trân trọng (trong thư giao dịch); đứng lên hai chân sau (chó chầu ăn); đề nghị (ai) giúp đỡ; xin phép; xin miễn cho cái gì; xin lỗi; question; xin ai tha thứ, xin ai miễn thứ; go",
+      "example_en": "He begged on the street corner from passers-by.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He begged her to go to the prom with him.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What was the beginning of the dispute?",
+          "example_vi": null
+        },
+        {
+          "example_en": "That house is at the beginning of the street.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24717,
+      "word": "beginner",
+      "normalized_word": "beginner",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'ginə/",
+      "primary_meaning_vi": "người bắt đầu",
+      "meaning_vi": "người bắt đầu; người mới học; người mới ra đời; người mới vào nghề",
+      "example_en": "I'm new to learning Japanese: I'm just a beginner.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The beginner of the games lit the ceremonial torch.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24718,
+      "word": "beginning",
+      "normalized_word": "beginning",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'giniɳ/",
+      "primary_meaning_vi": "phần đầu",
+      "meaning_vi": "phần đầu; lúc bắt đầu, lúc khởi đầu; căn nguyên, nguyên do; battle; đầu xuôi đuôi lọt; bắt đầu của sự kết thúc",
+      "example_en": "What was the beginning of the dispute?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "That house is at the beginning of the street.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I began playing the piano at the age of five. Now that everyone is here, we should begin the presentation.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The program begins at 9 o'clock on the dot. I rushed to get to class on time, but the lesson had already begun.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24719,
+      "word": "behavior",
+      "normalized_word": "behavior",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "cách xử lý",
+      "meaning_vi": "cách xử lý, chế độ; hành vi, trạng thái",
+      "example_en": "He was on his best behavior when her family visited.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24720,
+      "word": "behaviour",
+      "normalized_word": "behaviour",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'heivjə/",
+      "primary_meaning_vi": "thái độ",
+      "meaning_vi": "thái độ, cách đối xử; cách cư xử, cách ăn ở; tư cách đạo đức; cách chạy (máy móc); tác động (chất...); gắng có thái độ tốt, gắng đối xử tốt; hết sức thận trọng giữ gìn trong cách đối xử sao cho đúng đắn; tạo điều kiện cho ai có thể tu tỉnh lại",
+      "example_en": "She can't stop the strange behaviour because she has OCD (obsessive-compulsive disorder).",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

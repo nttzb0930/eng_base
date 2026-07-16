@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 26040,
+      "quiz_meaning_vi": "kẻ thù",
+      "meaning_vi_clean": "kẻ thù",
+      "examples_clean": [
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "The two countries have been enemies for decades.",
+          "example_vi": "Hai quốc gia đã là kẻ thù trong nhiều thập kỷ."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "He made many enemies during his time in office.",
+          "example_vi": "Anh ấy đã tạo ra nhiều kẻ thù trong thời gian tại vị."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "She saw her former friend as her worst enemy.",
+          "example_vi": "Cô ấy coi người bạn cũ là kẻ thù lớn nhất của mình."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "They united to fight against a common enemy.",
+          "example_vi": "Họ đã đoàn kết để chiến đấu chống lại một kẻ thù chung."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "The enemy attacked the city at dawn.",
+          "example_vi": "Kẻ thù đã tấn công thành phố vào lúc bình minh."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "He was captured by the enemy during the war.",
+          "example_vi": "Anh ấy đã bị kẻ thù bắt giữ trong suốt cuộc chiến."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "We must not let our personal differences make us enemies.",
+          "example_vi": "Chúng ta không được để những khác biệt cá nhân biến chúng ta thành kẻ thù."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "The general planned a strategy to defeat the enemy.",
+          "example_vi": "Vị tướng đã lên kế hoạch chiến thuật để đánh bại kẻ thù."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "She felt that her anxiety was her own worst enemy.",
+          "example_vi": "Cô cảm thấy rằng sự lo lắng của chính mình là kẻ thù lớn nhất của cô."
+        },
+        {
+          "meaning_vi": "kẻ thù",
+          "example_en": "The soldiers defended the border against the enemy.",
+          "example_vi": "Các binh sĩ đã bảo vệ biên giới chống lại kẻ thù."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'kẻ thù' cho danh từ 'enemy' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'kẻ thù' và cả 10 ví dụ đều sử dụng từ 'enemy' dưới dạng danh từ một cách chính xác."
+      },
+      "word": "enemy",
+      "normalized_word": "enemy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The two countries have been enemies for decades.",
+      "example_vi_clean": "Hai quốc gia đã là kẻ thù trong nhiều thập kỷ."
+    },
+    {
+      "id": 26043,
+      "quiz_meaning_vi": "động cơ",
+      "meaning_vi_clean": "động cơ",
+      "examples_clean": [
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "The car engine started making a strange noise.",
+          "example_vi": "Động cơ ô tô bắt đầu phát ra tiếng động lạ."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "He knows how to repair a diesel engine.",
+          "example_vi": "Anh ấy biết cách sửa chữa động cơ diesel."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "The plane had to land because of engine trouble.",
+          "example_vi": "Máy bay phải hạ cánh vì sự cố động cơ."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "She turned off the engine and got out of the car.",
+          "example_vi": "Cô ấy tắt động cơ và bước ra khỏi xe."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "This new model has a very powerful engine.",
+          "example_vi": "Mẫu xe mới này có một động cơ rất mạnh mẽ."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "The mechanic is checking the engine of the truck.",
+          "example_vi": "Người thợ cơ khí đang kiểm tra động cơ của chiếc xe tải."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "Steam engines were widely used in the nineteenth century.",
+          "example_vi": "Động cơ hơi nước đã được sử dụng rộng rãi vào thế kỷ mười chín."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "You should check the engine oil regularly.",
+          "example_vi": "Bạn nên kiểm tra dầu động cơ thường xuyên."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "The boat's engine failed in the middle of the lake.",
+          "example_vi": "Động cơ của chiếc thuyền bị hỏng ở giữa hồ."
+        },
+        {
+          "meaning_vi": "động cơ",
+          "example_en": "He spent the afternoon cleaning his motorcycle engine.",
+          "example_vi": "Anh ấy đã dành cả buổi chiều để lau chùi động cơ xe máy của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'động cơ' cho danh từ 'engine' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'động cơ' và cả 10 ví dụ đều sử dụng từ 'engine' dưới dạng danh từ một cách chính xác."
+      },
+      "word": "engine",
+      "normalized_word": "engine",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The car engine started making a strange noise.",
+      "example_vi_clean": "Động cơ ô tô bắt đầu phát ra tiếng động lạ."
+    },
+    {
+      "id": 26056,
+      "quiz_meaning_vi": "toàn bộ",
+      "meaning_vi_clean": "toàn bộ",
+      "examples_clean": [
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "She spent the entire day cleaning the house.",
+          "example_vi": "Cô ấy đã dành toàn bộ ngày để dọn dẹp nhà cửa."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "The entire family gathered for the holiday dinner.",
+          "example_vi": "Toàn bộ gia đình đã tụ họp cho bữa tối ngày lễ."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "I read the entire book in just one sitting.",
+          "example_vi": "Tôi đã đọc toàn bộ cuốn sách chỉ trong một lần ngồi."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "The entire project took three months to complete.",
+          "example_vi": "Toàn bộ dự án mất ba tháng để hoàn thành."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "He lost his entire savings in the bad investment.",
+          "example_vi": "Anh ấy đã mất toàn bộ tiền tiết kiệm của mình vào khoản đầu tư tồi tệ."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "The entire town was flooded after the heavy rain.",
+          "example_vi": "Toàn bộ thị trấn đã bị ngập lụt sau trận mưa lớn."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "She wanted to travel the entire world.",
+          "example_vi": "Cô ấy muốn đi du lịch toàn bộ thế giới."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "The entire staff attended the safety training session.",
+          "example_vi": "Toàn bộ nhân viên đã tham dự buổi đào tạo an toàn."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "He ate the entire pizza by himself.",
+          "example_vi": "Anh ấy đã tự mình ăn hết toàn bộ chiếc bánh pizza."
+        },
+        {
+          "meaning_vi": "toàn bộ",
+          "example_en": "The entire building was destroyed by the fire.",
+          "example_vi": "Toàn bộ tòa nhà đã bị phá hủy bởi trận hỏa hoạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'toàn bộ' cho tính từ 'entire' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'toàn bộ' và cả 10 ví dụ đều sử dụng từ 'entire' dưới dạng tính từ bổ nghĩa cho danh từ đứng sau."
+      },
+      "word": "entire",
+      "normalized_word": "entire",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She spent the entire day cleaning the house.",
+      "example_vi_clean": "Cô ấy đã dành toàn bộ ngày để dọn dẹp nhà cửa."
+    },
+    {
+      "id": 26061,
+      "quiz_meaning_vi": "ngang bằng",
+      "meaning_vi_clean": "ngang bằng",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "All citizens should have equal rights under the law.",
+          "example_vi": "Tất cả công dân nên có quyền lợi ngang bằng trước pháp luật."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "The two teams are of equal strength.",
+          "example_vi": "Hai đội có sức mạnh ngang bằng nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "Cut the cake into four equal parts.",
+          "example_vi": "Hãy cắt chiếc bánh thành bốn phần ngang bằng nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "Men and women deserve equal pay for equal work.",
+          "example_vi": "Nam và nữ xứng đáng nhận mức lương ngang bằng cho công việc như nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "They divided the profits into equal shares.",
+          "example_vi": "Họ đã chia lợi nhuận thành các phần ngang bằng nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "The recipe requires equal amounts of flour and sugar.",
+          "example_vi": "Công thức yêu cầu lượng bột và đường ngang bằng nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "We need to ensure equal opportunities for all students.",
+          "example_vi": "Chúng ta cần đảm bảo cơ hội ngang bằng cho tất cả học sinh."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "The distance from here to both cities is equal.",
+          "example_vi": "Khoảng cách từ đây đến cả hai thành phố là ngang bằng nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "She believes that everyone is born equal.",
+          "example_vi": "Cô ấy tin rằng mọi người sinh ra đều ngang bằng nhau."
+        },
+        {
+          "meaning_vi": "ngang bằng",
+          "example_en": "The scale showed that the two weights were equal.",
+          "example_vi": "Chiếc cân cho thấy hai khối lượng ngang bằng nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'ngang bằng' cho tính từ 'equal' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'ngang bằng' và cả 10 ví dụ đều sử dụng từ 'equal' dưới dạng tính từ (bổ nghĩa danh từ hoặc làm vị ngữ)."
+      },
+      "word": "equal",
+      "normalized_word": "equal",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "All citizens should have equal rights under the law.",
+      "example_vi_clean": "Tất cả công dân nên có quyền lợi ngang bằng trước pháp luật."
+    },
+    {
+      "id": 26071,
+      "quiz_meaning_vi": "bằng phẳng",
+      "meaning_vi_clean": "bằng phẳng",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The concrete floor is smooth and even.",
+          "example_vi": "Sàn bê tông nhẵn và bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "It is difficult to ride a bicycle on an uneven road; we need an even path.",
+          "example_vi": "Rất khó để đi xe đạp trên con đường gồ ghề; chúng ta cần một lối đi bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "She tried to make the soil even before planting the seeds.",
+          "example_vi": "Cô ấy đã cố gắng làm cho đất bằng phẳng trước khi gieo hạt."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The table will wobble if the floor is not even.",
+          "example_vi": "Chiếc bàn sẽ bị khập khiễng nếu sàn nhà không bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "They searched for an even spot in the forest to set up camp.",
+          "example_vi": "Họ đã tìm kiếm một địa điểm bằng phẳng trong rừng để dựng trại."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The plasterer made the wall perfectly even.",
+          "example_vi": "Thợ trát vữa đã làm cho bức tường hoàn toàn bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "You should lay the tiles on an even surface.",
+          "example_vi": "Bạn nên lát gạch trên một bề mặt bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The lawn needs to be rolled to keep it even.",
+          "example_vi": "Bãi cỏ cần được lu để giữ cho nó bằng phẳng."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "The top of the wall was not even, so some bricks were higher.",
+          "example_vi": "Phần đỉnh của bức tường không bằng phẳng, vì vậy một số viên gạch cao hơn."
+        },
+        {
+          "meaning_vi": "bằng phẳng",
+          "example_en": "He leveled the ground to make it even for the patio.",
+          "example_vi": "Anh ấy đã san bằng mặt đất để làm cho nó bằng phẳng cho khoảng sân nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'bằng phẳng' cho tính từ 'even' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'bằng phẳng' và cả 10 ví dụ đều sử dụng từ 'even' dưới dạng tính từ chỉ bề mặt phẳng lặng, không gồ ghề."
+      },
+      "word": "even",
+      "normalized_word": "even",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The concrete floor is smooth and even.",
+      "example_vi_clean": "Sàn bê tông nhẵn và bằng phẳng."
+    },
+    {
+      "id": 26086,
+      "quiz_meaning_vi": "lối ra",
+      "meaning_vi_clean": "lối ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "The emergency exit is located at the back of the theater.",
+          "example_vi": "Lối ra khẩn cấp nằm ở phía sau nhà hát."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "Please keep the exit clear in case of fire.",
+          "example_vi": "Vui lòng giữ cho lối ra thông thoáng trong trường hợp có hỏa hoạn."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "We missed our exit on the highway and had to turn back.",
+          "example_vi": "Chúng tôi đã bỏ lỡ lối ra trên đường cao tốc và phải quay lại."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "He walked quickly toward the main exit of the building.",
+          "example_vi": "Anh ấy đi nhanh về phía lối ra chính của tòa nhà."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "The sign clearly points to the nearest exit.",
+          "example_vi": "Biển báo chỉ rõ ràng hướng đến lối ra gần nhất."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "There are three exits in this exhibition hall.",
+          "example_vi": "Có ba lối ra trong phòng triển lãm này."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "She stood near the exit, waiting for her friend.",
+          "example_vi": "Cô ấy đứng gần lối ra, đợi bạn mình."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "The security guard showed us the way to the exit.",
+          "example_vi": "Nhân viên bảo vệ đã chỉ cho chúng tôi đường đến lối ra."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "You can find the exit next to the elevator.",
+          "example_vi": "Bạn có thể tìm thấy lối ra bên cạnh thang máy."
+        },
+        {
+          "meaning_vi": "lối ra",
+          "example_en": "The crowd rushed toward the exit when the alarm rang.",
+          "example_vi": "Đám đông đã lao về phía lối ra khi chuông báo động vang lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'lối ra' cho danh từ 'exit' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'lối ra' và cả 10 ví dụ đều sử dụng từ 'exit' dưới dạng danh từ một cách chính xác."
+      },
+      "word": "exit",
+      "normalized_word": "exit",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The emergency exit is located at the back of the theater.",
+      "example_vi_clean": "Lối ra khẩn cấp nằm ở phía sau nhà hát."
+    },
+    {
+      "id": 26105,
+      "quiz_meaning_vi": "mờ nhạt",
+      "meaning_vi_clean": "mờ nhạt",
+      "examples_clean": [
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "I heard a faint sound coming from the basement.",
+          "example_vi": "Tôi nghe thấy một âm thanh mờ nhạt phát ra từ tầng hầm."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "There was a faint smell of perfume in the room.",
+          "example_vi": "Có một mùi nước hoa mờ nhạt trong phòng."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "We could see the faint outline of the mountains in the distance.",
+          "example_vi": "Chúng tôi có thể nhìn thấy đường nét mờ nhạt của những ngọn núi ở phía xa."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "She gave a faint smile before turning away.",
+          "example_vi": "Cô ấy nở một nụ cười mờ nhạt trước khi quay đi."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "The light from the flashlight was getting faint.",
+          "example_vi": "Ánh sáng từ đèn pin đang trở nên mờ nhạt."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "There is a faint chance that we might win the game.",
+          "example_vi": "Có một cơ hội mờ nhạt là chúng ta có thể thắng trận đấu."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "He wrote the note in faint pencil lines.",
+          "example_vi": "Anh ấy đã viết lời nhắn bằng những nét bút chì mờ nhạt."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "I have a faint memory of visiting this place as a child.",
+          "example_vi": "Tôi có một ký ức mờ nhạt về việc ghé thăm nơi này khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "The stars were faint because of the city lights.",
+          "example_vi": "Những ngôi sao mờ nhạt vì ánh đèn thành phố."
+        },
+        {
+          "meaning_vi": "mờ nhạt",
+          "example_en": "She spoke in a faint voice that was hard to hear.",
+          "example_vi": "Cô ấy nói bằng một giọng nói mờ nhạt rất khó nghe."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'mờ nhạt' cho tính từ 'faint' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'mờ nhạt' và cả 10 ví dụ đều sử dụng từ 'faint' dưới dạng tính từ để chỉ âm thanh, ánh sáng, mùi hương hoặc ký ức không rõ ràng."
+      },
+      "word": "faint",
+      "normalized_word": "faint",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I heard a faint sound coming from the basement.",
+      "example_vi_clean": "Tôi nghe thấy một âm thanh mờ nhạt phát ra từ tầng hầm."
+    },
+    {
+      "id": 26107,
+      "quiz_meaning_vi": "giả",
+      "meaning_vi_clean": "giả",
+      "examples_clean": [
+        {
+          "meaning_vi": "giả",
+          "example_en": "He was caught trying to use a fake passport.",
+          "example_vi": "Anh ấy đã bị bắt khi cố gắng sử dụng một hộ chiếu giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "She bought a fake leather jacket at the market.",
+          "example_vi": "Cô ấy đã mua một chiếc áo khoác da giả ở chợ."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The painting turned out to be a fake masterpiece.",
+          "example_vi": "Bức tranh hóa ra là một tác phẩm nghệ thuật giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "He wore a fake beard for the costume party.",
+          "example_vi": "Anh ấy đã đeo một bộ râu giả cho bữa tiệc hóa trang."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The police warned the public about fake banknotes.",
+          "example_vi": "Cảnh sát đã cảnh báo công chúng về những tờ tiền giấy giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "She put on a fake smile to hide her sadness.",
+          "example_vi": "Cô ấy đã nở một nụ cười giả tạo để che giấu nỗi buồn của mình."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The flowers in the vase are fake, but they look real.",
+          "example_vi": "Những bông hoa trong bình là giả, nhưng chúng trông như thật."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "He gave the police a fake name and address.",
+          "example_vi": "Anh ấy đã đưa cho cảnh sát một cái tên và địa chỉ giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "This watch is a fake Rolex.",
+          "example_vi": "Chiếc đồng hồ này là một chiếc Rolex giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "They were accused of spreading fake news.",
+          "example_vi": "Họ bị buộc tội lan truyền tin tức giả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'giả' cho tính từ 'fake' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'giả' và cả 10 ví dụ đều sử dụng từ 'fake' dưới dạng tính từ bổ nghĩa cho danh từ đứng sau."
+      },
+      "word": "fake",
+      "normalized_word": "fake",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He was caught trying to use a fake passport.",
+      "example_vi_clean": "Anh ấy đã bị bắt khi cố gắng sử dụng một hộ chiếu giả."
+    },
+    {
+      "id": 26108,
+      "quiz_meaning_vi": "cú ngã",
+      "meaning_vi_clean": "cú ngã",
+      "examples_clean": [
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "He broke his arm in a bad fall from the ladder.",
+          "example_vi": "Anh ấy đã bị gãy tay trong một cú ngã đau từ trên thang."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "She was lucky to survive the fall from the balcony.",
+          "example_vi": "Cô ấy đã may mắn sống sót sau cú ngã từ ban công."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "The old man had a fall and was taken to the hospital.",
+          "example_vi": "Cụ ông đã bị một cú ngã và được đưa đến bệnh viện."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "He got some bruises from a fall on the ice.",
+          "example_vi": "Anh ấy bị vài vết bầm tím từ một cú ngã trên băng."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "The rider was injured in a fall from his horse.",
+          "example_vi": "Người cưỡi ngựa đã bị thương trong một cú ngã từ trên ngựa."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "She suffered a serious head injury after a fall.",
+          "example_vi": "Cô ấy đã bị chấn thương đầu nghiêm trọng sau một cú ngã."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "He protected his head during the fall.",
+          "example_vi": "Anh ấy đã bảo vệ đầu của mình trong suốt cú ngã."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "The safety net prevented a dangerous fall.",
+          "example_vi": "Lưới an toàn đã ngăn chặn một cú ngã nguy hiểm."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "She is recovering from a fall down the stairs.",
+          "example_vi": "Cô ấy đang hồi phục sau một cú ngã cầu thang."
+        },
+        {
+          "meaning_vi": "cú ngã",
+          "example_en": "He warned the children to be careful to avoid a fall.",
+          "example_vi": "Anh ấy đã cảnh báo lũ trẻ phải cẩn thận để tránh một cú ngã."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'cú ngã' cho danh từ 'fall' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cú ngã' và cả 10 ví dụ đều sử dụng từ 'fall' dưới dạng danh từ một cách chính xác, không dùng nghĩa động từ hay nghĩa 'mùa thu'."
+      },
+      "word": "fall",
+      "normalized_word": "fall",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He broke his arm in a bad fall from the ladder.",
+      "example_vi_clean": "Anh ấy đã bị gãy tay trong một cú ngã đau từ trên thang."
+    },
+    {
+      "id": 26114,
+      "quiz_meaning_vi": "xa hơn",
+      "meaning_vi_clean": "xa hơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "We walked farther down the road to find a hotel.",
+          "example_vi": "Chúng tôi đã đi bộ xa hơn dọc theo con đường để tìm một khách sạn."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "He can throw the ball much farther than I can.",
+          "example_vi": "Anh ấy có thể ném quả bóng xa hơn tôi rất nhiều."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "The school lies farther to the north.",
+          "example_vi": "Trường học nằm xa hơn về phía bắc."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "We must travel farther to reach the coast.",
+          "example_vi": "Chúng ta phải di chuyển xa hơn để đến được bờ biển."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "He ran farther than anyone else in the race.",
+          "example_vi": "Anh ấy đã chạy xa hơn bất kỳ ai khác trong cuộc đua."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "She looked farther into the distance.",
+          "example_vi": "Cô ấy đã nhìn xa hơn vào khoảng không."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "The boat drifted farther away from the shore.",
+          "example_vi": "Chiếc thuyền đã trôi dạt xa hơn khỏi bờ."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "We need to go farther to find clean water.",
+          "example_vi": "Chúng ta cần đi xa hơn để tìm nước sạch."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "He pushed the box farther into the corner.",
+          "example_vi": "Anh ấy đã đẩy chiếc hộp xa hơn vào trong góc."
+        },
+        {
+          "meaning_vi": "xa hơn",
+          "example_en": "They decided to drive farther north for their vacation.",
+          "example_vi": "Họ đã quyết định lái xe xa hơn về phía bắc cho kỳ nghỉ của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phổ biến nhất là 'xa hơn' cho trạng từ 'farther' và cung cấp 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'xa hơn' và cả 10 ví dụ đều sử dụng từ 'farther' dưới dạng trạng từ bổ nghĩa cho động từ."
+      },
+      "word": "farther",
+      "normalized_word": "farther",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "We walked farther down the road to find a hotel.",
+      "example_vi_clean": "Chúng tôi đã đi bộ xa hơn dọc theo con đường để tìm một khách sạn."
+    }
+  ]
+}

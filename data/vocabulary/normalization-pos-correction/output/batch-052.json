@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25382,
+      "quiz_meaning_vi": "có thể",
+      "meaning_vi_clean": "có thể",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể",
+          "example_en": "It is possible to finish the work today.",
+          "example_vi": "Có thể hoàn thành công việc vào hôm nay."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Is it possible for you to help me?",
+          "example_vi": "Bạn có thể giúp tôi được không?"
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We want to find the best possible solution.",
+          "example_vi": "Chúng tôi muốn tìm giải pháp tốt nhất có thể."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "It is not possible to enter the building now.",
+          "example_vi": "Hiện tại không thể vào tòa nhà này."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "They made every possible effort to win.",
+          "example_vi": "Họ đã nỗ lực hết sức có thể để giành chiến thắng."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Is it possible that he forgot the meeting?",
+          "example_vi": "Liệu có khả năng là anh ấy đã quên cuộc họp không?"
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We need to keep the room as clean as possible.",
+          "example_vi": "Chúng ta cần giữ căn phòng sạch sẽ nhất có thể."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "It is possible that it will rain later.",
+          "example_vi": "Có khả năng là trời sẽ mưa sau đó."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "I will arrive as soon as possible.",
+          "example_vi": "Tôi sẽ đến sớm nhất có thể."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Finding a seat was barely possible.",
+          "example_vi": "Việc tìm một chỗ ngồi gần như là không thể."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'có thể' cho tính từ possible và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ possible được dùng làm tính từ trong tất cả các câu ví dụ."
+      },
+      "word": "possible",
+      "normalized_word": "possible",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is possible to finish the work today.",
+      "example_vi_clean": "Có thể hoàn thành công việc vào hôm nay."
+    },
+    {
+      "id": 25384,
+      "quiz_meaning_vi": "rót",
+      "meaning_vi_clean": "rót",
+      "examples_clean": [
+        {
+          "meaning_vi": "rót",
+          "example_en": "Please pour some water into my glass.",
+          "example_vi": "Làm ơn rót nước vào ly của tôi."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "She poured coffee for all the guests.",
+          "example_vi": "Cô ấy rót cà phê cho tất cả các vị khách."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "He poured the milk over his cereal.",
+          "example_vi": "Anh ấy rót sữa lên ngũ cốc của mình."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "Can you pour me a cup of tea?",
+          "example_vi": "Bạn có thể rót cho tôi một tách trà không?"
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "She poured the juice into a pitcher.",
+          "example_vi": "Cô ấy rót nước ép vào một cái bình."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "He poured wine for everyone at the table.",
+          "example_vi": "Anh ấy rót rượu cho mọi người tại bàn."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "I will pour the soup into the bowls.",
+          "example_vi": "Tôi sẽ rót súp vào các bát."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "She poured oil into the frying pan.",
+          "example_vi": "Cô ấy rót dầu vào chảo chiên."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "He poured the drink carefully to avoid spilling.",
+          "example_vi": "Anh ấy rót đồ uống cẩn thận để tránh bị đổ."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "They poured lemonade for the children.",
+          "example_vi": "Họ rót nước chanh cho bọn trẻ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'rót' cho động từ pour và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ pour được dùng làm động từ trong tất cả các câu ví dụ."
+      },
+      "word": "pour",
+      "normalized_word": "pour",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please pour some water into my glass.",
+      "example_vi_clean": "Làm ơn rót nước vào ly của tôi."
+    },
+    {
+      "id": 25385,
+      "quiz_meaning_vi": "quyền lực",
+      "meaning_vi_clean": "quyền lực",
+      "examples_clean": [
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The president has a lot of power.",
+          "example_vi": "Tổng thống có rất nhiều quyền lực."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "She used her power to help others.",
+          "example_vi": "Cô ấy đã sử dụng quyền lực của mình để giúp đỡ người khác."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The government has the power to change laws.",
+          "example_vi": "Chính phủ có quyền lực để thay đổi luật pháp."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "He abused his power in the company.",
+          "example_vi": "Anh ta đã lạm dụng quyền lực của mình trong công ty."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "They are fighting for political power.",
+          "example_vi": "Họ đang đấu tranh vì quyền lực chính trị."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The king held absolute power over the land.",
+          "example_vi": "Nhà vua nắm giữ quyền lực tuyệt đối trên vùng đất đó."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "She gained more power after the promotion.",
+          "example_vi": "Cô ấy có nhiều quyền lực hơn sau khi được thăng chức."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The people demanded more power in decision making.",
+          "example_vi": "Người dân yêu cầu có nhiều quyền lực hơn trong việc ra quyết định."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "His power grew as he became more popular.",
+          "example_vi": "Quyền lực của anh ấy tăng lên khi anh ấy trở nên nổi tiếng hơn."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The committee has the power to make final decisions.",
+          "example_vi": "Ủy ban có quyền lực để đưa ra các quyết định cuối cùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'quyền lực' cho danh từ power và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ power được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "power",
+      "normalized_word": "power",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The president has a lot of power.",
+      "example_vi_clean": "Tổng thống có rất nhiều quyền lực."
+    },
+    {
+      "id": 25394,
+      "quiz_meaning_vi": "niềm tự hào",
+      "meaning_vi_clean": "niềm tự hào",
+      "examples_clean": [
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "She felt a sense of pride in her work.",
+          "example_vi": "Cô ấy cảm thấy niềm tự hào về công việc của mình."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "His pride prevented him from asking for help.",
+          "example_vi": "Niềm tự hào đã ngăn cản anh ấy yêu cầu sự giúp đỡ."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "The team is a source of pride for the school.",
+          "example_vi": "Đội bóng là một niềm tự hào cho ngôi trường."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "She swallowed her pride and apologized.",
+          "example_vi": "Cô ấy đã gạt bỏ niềm tự hào của mình và xin lỗi."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "He took great pride in his garden.",
+          "example_vi": "Anh ấy rất tự hào về khu vườn của mình."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "Her pride was hurt by his comments.",
+          "example_vi": "Niềm tự hào của cô ấy đã bị tổn thương bởi những lời bình luận của anh ta."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "They showed their pride in their national heritage.",
+          "example_vi": "Họ thể hiện niềm tự hào về di sản quốc gia của mình."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "Winning the gold medal was his greatest pride.",
+          "example_vi": "Giành huy chương vàng là niềm tự hào lớn nhất của anh ấy."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "She has too much pride to admit she was wrong.",
+          "example_vi": "Cô ấy có quá nhiều niềm tự hào để thừa nhận mình đã sai."
+        },
+        {
+          "meaning_vi": "niềm tự hào",
+          "example_en": "The city takes pride in its beautiful parks.",
+          "example_vi": "Thành phố lấy làm tự hào về những công viên xinh đẹp của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'niềm tự hào' cho danh từ pride và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ pride được dùng làm danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "pride",
+      "normalized_word": "pride",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She felt a sense of pride in her work.",
+      "example_vi_clean": "Cô ấy cảm thấy niềm tự hào về công việc của mình."
+    },
+    {
+      "id": 25395,
+      "quiz_meaning_vi": "chính",
+      "meaning_vi_clean": "chính",
+      "examples_clean": [
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal reason for his absence was illness.",
+          "example_vi": "Lý do chính cho sự vắng mặt của anh ấy là bị ốm."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "This is the principal cause of the problem.",
+          "example_vi": "Đây là nguyên nhân chính của vấn đề."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal goal is to improve education.",
+          "example_vi": "Mục tiêu chính là cải thiện giáo dục."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "She is the principal actor in the play.",
+          "example_vi": "Cô ấy là diễn viên chính trong vở kịch."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal office is located downtown.",
+          "example_vi": "Văn phòng chính nằm ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal source of income is farming.",
+          "example_vi": "Nguồn thu nhập chính là làm nông."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal street is very busy.",
+          "example_vi": "Con phố chính rất đông đúc."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "His principal concern is the safety of the children.",
+          "example_vi": "Mối quan tâm chính của anh ấy là sự an toàn của bọn trẻ."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal character in the book is a hero.",
+          "example_vi": "Nhân vật chính trong cuốn sách là một người hùng."
+        },
+        {
+          "meaning_vi": "chính",
+          "example_en": "The principal task is to finish the report.",
+          "example_vi": "Nhiệm vụ chính là hoàn thành bản báo cáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'chính' cho tính từ principal và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ principal được dùng làm tính từ trong tất cả các câu ví dụ."
+      },
+      "word": "principal",
+      "normalized_word": "principal",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The principal reason for his absence was illness.",
+      "example_vi_clean": "Lý do chính cho sự vắng mặt của anh ấy là bị ốm."
+    },
+    {
+      "id": 25397,
+      "quiz_meaning_vi": "riêng tư",
+      "meaning_vi_clean": "riêng tư",
+      "examples_clean": [
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "This is a private conversation.",
+          "example_vi": "Đây là một cuộc trò chuyện riêng tư."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "She prefers to keep her life private.",
+          "example_vi": "Cô ấy thích giữ cuộc sống của mình riêng tư."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "They have a private garden behind the house.",
+          "example_vi": "Họ có một khu vườn riêng tư phía sau ngôi nhà."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "He made a private phone call.",
+          "example_vi": "Anh ấy đã thực hiện một cuộc gọi riêng tư."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "The meeting was held in a private room.",
+          "example_vi": "Cuộc họp được tổ chức trong một căn phòng riêng tư."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "I value my private time in the evening.",
+          "example_vi": "Tôi trân trọng thời gian riêng tư của mình vào buổi tối."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "They have their own private entrance.",
+          "example_vi": "Họ có lối vào riêng tư của riêng mình."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "She shared her private thoughts with me.",
+          "example_vi": "Cô ấy đã chia sẻ những suy nghĩ riêng tư của mình với tôi."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "The beach is for private use only.",
+          "example_vi": "Bãi biển này chỉ dành cho mục đích sử dụng riêng tư."
+        },
+        {
+          "meaning_vi": "riêng tư",
+          "example_en": "He keeps his private documents in a safe.",
+          "example_vi": "Anh ấy giữ các tài liệu riêng tư của mình trong két sắt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'riêng tư' cho tính từ private và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ private được dùng làm tính từ trong tất cả các câu ví dụ."
+      },
+      "word": "private",
+      "normalized_word": "private",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This is a private conversation.",
+      "example_vi_clean": "Đây là một cuộc trò chuyện riêng tư."
+    },
+    {
+      "id": 25401,
+      "quiz_meaning_vi": "từ bỏ",
+      "meaning_vi_clean": "từ bỏ",
+      "examples_clean": [
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "He decided to abandon his plans.",
+          "example_vi": "Anh ấy quyết định từ bỏ các kế hoạch của mình."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "They had to abandon the ship during the storm.",
+          "example_vi": "Họ phải từ bỏ con tàu trong cơn bão."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "She will never abandon her dream.",
+          "example_vi": "Cô ấy sẽ không bao giờ từ bỏ ước mơ của mình."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "The soldiers were forced to abandon the base.",
+          "example_vi": "Những người lính đã buộc phải từ bỏ căn cứ."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "Don't abandon your responsibilities.",
+          "example_vi": "Đừng từ bỏ trách nhiệm của bạn."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "He abandoned his career to travel the world.",
+          "example_vi": "Anh ấy đã từ bỏ sự nghiệp để đi du lịch thế giới."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "The project was abandoned due to lack of funds.",
+          "example_vi": "Dự án đã bị từ bỏ do thiếu kinh phí."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "She felt abandoned by her friends.",
+          "example_vi": "Cô ấy cảm thấy bị bạn bè từ bỏ."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "They abandoned the search after three days.",
+          "example_vi": "Họ đã từ bỏ cuộc tìm kiếm sau ba ngày."
+        },
+        {
+          "meaning_vi": "từ bỏ",
+          "example_en": "He had to abandon his car on the road.",
+          "example_vi": "Anh ấy đã phải từ bỏ chiếc xe của mình trên đường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'từ bỏ' cho động từ abandon và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ abandon được dùng làm động từ trong tất cả các câu ví dụ."
+      },
+      "word": "abandon",
+      "normalized_word": "abandon",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He decided to abandon his plans.",
+      "example_vi_clean": "Anh ấy quyết định từ bỏ các kế hoạch của mình."
+    },
+    {
+      "id": 25404,
+      "quiz_meaning_vi": "lên tàu",
+      "meaning_vi_clean": "lên tàu",
+      "examples_clean": [
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "All passengers are now aboard.",
+          "example_vi": "Tất cả hành khách hiện đã lên tàu."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "He stepped aboard and found his seat.",
+          "example_vi": "Anh ấy bước lên tàu và tìm chỗ ngồi của mình."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "The captain welcomed everyone aboard.",
+          "example_vi": "Thuyền trưởng chào mừng mọi người lên tàu."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "She was already aboard when the ship left.",
+          "example_vi": "Cô ấy đã lên tàu khi con tàu rời đi."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "We were happy to be aboard the plane.",
+          "example_vi": "Chúng tôi rất vui khi được lên máy bay."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "He helped the children get aboard.",
+          "example_vi": "Anh ấy giúp bọn trẻ lên tàu."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "Once aboard, you can relax.",
+          "example_vi": "Một khi đã lên tàu, bạn có thể thư giãn."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "They rushed to get aboard before it departed.",
+          "example_vi": "Họ vội vã lên tàu trước khi nó khởi hành."
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "Is everyone aboard the bus yet?",
+          "example_vi": "Mọi người đã lên xe buýt hết chưa?"
+        },
+        {
+          "meaning_vi": "lên tàu",
+          "example_en": "She felt excited to be aboard the cruise ship.",
+          "example_vi": "Cô ấy cảm thấy hào hứng khi được lên tàu du lịch."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'lên tàu' cho phó từ aboard và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ aboard được dùng làm phó từ trong tất cả các câu ví dụ."
+      },
+      "word": "aboard",
+      "normalized_word": "aboard",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "All passengers are now aboard.",
+      "example_vi_clean": "Tất cả hành khách hiện đã lên tàu."
+    },
+    {
+      "id": 25405,
+      "quiz_meaning_vi": "ở trên",
+      "meaning_vi_clean": "ở trên",
+      "examples_clean": [
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "The above information is correct.",
+          "example_vi": "Thông tin ở trên là chính xác."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "Please read the above paragraph carefully.",
+          "example_vi": "Vui lòng đọc kỹ đoạn văn ở trên."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "The above examples are very clear.",
+          "example_vi": "Các ví dụ ở trên rất rõ ràng."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "Check the above list for details.",
+          "example_vi": "Kiểm tra danh sách ở trên để biết chi tiết."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "The above statement is true.",
+          "example_vi": "Lời tuyên bố ở trên là đúng."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "Refer to the above section for help.",
+          "example_vi": "Tham khảo phần ở trên để được giúp đỡ."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "The above rules must be followed.",
+          "example_vi": "Các quy tắc ở trên phải được tuân thủ."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "Look at the above picture.",
+          "example_vi": "Hãy nhìn vào bức tranh ở trên."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "The above address is where we live.",
+          "example_vi": "Địa chỉ ở trên là nơi chúng tôi sống."
+        },
+        {
+          "meaning_vi": "ở trên",
+          "example_en": "The above price includes tax.",
+          "example_vi": "Giá ở trên đã bao gồm thuế."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'ở trên' cho tính từ above và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ above được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các câu ví dụ."
+      },
+      "word": "above",
+      "normalized_word": "above",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The above information is correct.",
+      "example_vi_clean": "Thông tin ở trên là chính xác."
+    },
+    {
+      "id": 25411,
+      "quiz_meaning_vi": "trừu tượng",
+      "meaning_vi_clean": "trừu tượng",
+      "examples_clean": [
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "He likes to paint abstract art.",
+          "example_vi": "Anh ấy thích vẽ tranh trừu tượng."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "The concept of love is quite abstract.",
+          "example_vi": "Khái niệm về tình yêu khá là trừu tượng."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "She prefers abstract ideas to concrete ones.",
+          "example_vi": "Cô ấy thích những ý tưởng trừu tượng hơn là những thứ cụ thể."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "The lecture was too abstract for me.",
+          "example_vi": "Bài giảng quá trừu tượng đối với tôi."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "They discussed abstract theories in class.",
+          "example_vi": "Họ đã thảo luận về các lý thuyết trừu tượng trong lớp."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "His writing style is very abstract.",
+          "example_vi": "Phong cách viết của anh ấy rất trừu tượng."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "Mathematics deals with abstract numbers.",
+          "example_vi": "Toán học giải quyết các con số trừu tượng."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "She created an abstract design for the logo.",
+          "example_vi": "Cô ấy đã tạo ra một thiết kế trừu tượng cho logo."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "It is hard to explain such abstract thoughts.",
+          "example_vi": "Thật khó để giải thích những suy nghĩ trừu tượng như vậy."
+        },
+        {
+          "meaning_vi": "trừu tượng",
+          "example_en": "The film has an abstract plot.",
+          "example_vi": "Bộ phim có một cốt truyện trừu tượng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'trừu tượng' cho tính từ abstract và cung cấp 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ abstract được dùng làm tính từ trong tất cả các câu ví dụ."
+      },
+      "word": "abstract",
+      "normalized_word": "abstract",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He likes to paint abstract art.",
+      "example_vi_clean": "Anh ấy thích vẽ tranh trừu tượng."
+    }
+  ]
+}

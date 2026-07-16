@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-257",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26561,
+      "word": "calmly",
+      "normalized_word": "calmly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'kɑ:mli/",
+      "primary_meaning_vi": "yên lặng",
+      "meaning_vi": "yên lặng, êm ả, êm đềm; bình tĩnh, điềm tĩnh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26562,
+      "word": "campaign",
+      "normalized_word": "campaign",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kæm'pein/",
+      "primary_meaning_vi": "chiến dịch",
+      "meaning_vi": "chiến dịch; cuộc vận động; đi chiến dịch, tham gia chiến dịch",
+      "example_en": "The company is targeting children in their latest advertising campaign.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She campaigned for better social security.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26563,
+      "word": "candidate",
+      "normalized_word": "candidate",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kændidit/",
+      "primary_meaning_vi": "người ứng cử",
+      "meaning_vi": "người ứng cử; người dự thi; thí sinh; người dự tuyển (vào một chức gì)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26564,
+      "word": "cane",
+      "normalized_word": "cane",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kein/",
+      "primary_meaning_vi": "cây trúc",
+      "meaning_vi": "cây trúc, cây mía ((cũng) sugar cane); cây lau; cây mây, sợi mây (để đan mặt ghế...); can, ba toong, gậy; roi (để đánh); thỏi (sáp...); đánh bằng roi, quất; dùng đòn vọt để bắt (học); đan mây vào",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26565,
+      "word": "canon",
+      "normalized_word": "canon",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kænən/",
+      "primary_meaning_vi": "tiêu chuẩn",
+      "meaning_vi": "tiêu chuẩn; luật lệ, quy tắc, phép tắc; nghị định của giáo hội; kinh sách được công nhận; giáo sĩ; danh sách các tác phẩm được công nhận là đúng của một tác giả; canông; cái móc chuông; chữ cỡ 48; canyon",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26566,
+      "word": "capability",
+      "normalized_word": "capability",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,keipə'biliti/",
+      "primary_meaning_vi": "khả năng",
+      "meaning_vi": "khả năng, năng lực; năng lực tiềm tàng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26567,
+      "word": "caption",
+      "normalized_word": "caption",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæpʃn/",
+      "primary_meaning_vi": "đầu đề (một chương mục",
+      "meaning_vi": "đầu đề (một chương mục, một bài báo...); đoạn thuyết minh, lời chú thích (trên màn ảnh, dưới hình vẽ); sự bắt bớ, sự giam giữ; bản chỉ dẫn kèm theo hồ sơ",
+      "example_en": "Only once the drawing is done will the letterer caption it.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26568,
+      "word": "captive",
+      "normalized_word": "captive",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kæptiv/",
+      "primary_meaning_vi": "bị bắt giữ",
+      "meaning_vi": "bị bắt giữ, bị giam cầm; tù nhân, người bị bắt giữ",
+      "example_en": "captive chains; captive hours",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26569,
+      "word": "caravan",
+      "normalized_word": "caravan",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/,kærə'væn/",
+      "primary_meaning_vi": "đoàn bộ hành",
+      "meaning_vi": "đoàn bộ hành, đoàn người đi buôn (tập họp nhau để vượt xa mạc hoặc các vùng nguy hiểm); đoàn người hành hương; xe lớn, xe moóc (dùng làm nơi ở), nhà lưu động; xe tải lớn có mui; đi chơi bằng nhà lưu động; định cư ở khu vực nhà lưu động",
+      "example_en": "The wedding party got in their cars and caravaned from the chapel to the reception hall.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "When my parents retired they really got back into caravanning.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26570,
+      "word": "carbon",
+      "normalized_word": "carbon",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɑ:bən/",
+      "primary_meaning_vi": "cacbon",
+      "meaning_vi": "cacbon; giấy than; bản sao bằng giấy than; thỏi than (làm đèn cung lửa); kim cương đen (để khoan đá)",
+      "example_en": "A methane molecule is made up of a single carbon with four hydrogens.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "When I send it, I'll carbon Julia so she's aware.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

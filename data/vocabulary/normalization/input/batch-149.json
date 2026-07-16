@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-149",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25481,
+      "word": "amusing",
+      "normalized_word": "amusing",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'mju:ziɳ/",
+      "primary_meaning_vi": "vui",
+      "meaning_vi": "vui, làm cho buồn cười; giải trí, tiêu khiển",
+      "example_en": "I watch these movies because they amuse me.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His jokes rarely fail to amuse.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The film has some amusing moments, but it is unlikely to make you laugh out loud.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25482,
+      "word": "analyse",
+      "normalized_word": "analyse",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ænəlaiz/",
+      "primary_meaning_vi": "phân tích",
+      "meaning_vi": "phân tích; giải tích",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25483,
+      "word": "analysis",
+      "normalized_word": "analysis",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều analyses",
+      "phonetic": "/ə'næləsis/",
+      "primary_meaning_vi": "sự phân tích",
+      "meaning_vi": "sự phân tích; ,  (hoá học) phép phân tích; giải tích",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25484,
+      "word": "analyze",
+      "normalized_word": "analyze",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ænəlaiz/",
+      "primary_meaning_vi": "phân tích",
+      "meaning_vi": "phân tích; giải tích",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25485,
+      "word": "anger",
+      "normalized_word": "anger",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'æɳgə/",
+      "primary_meaning_vi": "sự tức giận",
+      "meaning_vi": "sự tức giận, sự giận dữ; mối giận; chọc tức, làm tức giận",
+      "example_en": "You need to control your anger.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He who angers you conquers you.",
+          "example_vi": null
+        },
+        {
+          "example_en": "You anger too easily.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25486,
+      "word": "angle",
+      "normalized_word": "angle",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'æɳgl/",
+      "primary_meaning_vi": "góc",
+      "meaning_vi": "góc; góc xó; quan điểm, khía cạnh; đi xiên góc, rẽ về; làm sai lệch, xuyên tạc (sự việc, câu chuyện); lưỡi câu; người câu cá; câu cá; câu, kiếm chác, tranh thủ",
+      "example_en": "the angle between lines A and B",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The angle between lines A and B is π/4 radians, or 45 degrees.",
+          "example_vi": null
+        },
+        {
+          "example_en": "an angle of a building",
+          "example_vi": null
+        },
+        {
+          "example_en": "The horse took off at an angle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25487,
+      "word": "animated",
+      "normalized_word": "animated",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'ænimeitid/",
+      "primary_meaning_vi": "đầy sức sống",
+      "meaning_vi": "đầy sức sống, đầy sinh khí; nhộn nhịp, náo nhiệt, sôi nổi; được cổ vũ, phấn khởi lên",
+      "example_en": "If we animate the model, we can see the complexity of the action.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an animated discussion",
+          "example_vi": null
+        },
+        {
+          "example_en": "an animated film",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25488,
+      "word": "animation",
+      "normalized_word": "animation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,æni'meiʃn/",
+      "primary_meaning_vi": "lòng hăng hái",
+      "meaning_vi": "lòng hăng hái, nhiệt tình; sự cao hứng, sự hào hứng; tính hoạt bát, sinh khí; sự nhộn nhịp, sự náo nhiệt, sự sôi nổi; tính sinh động, tính linh hoạt; sự cỗ vũ; sự sản xuất phim hoạt hoạ",
+      "example_en": "He recited the story with great animation.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25489,
+      "word": "announce",
+      "normalized_word": "announce",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'nauns/",
+      "primary_meaning_vi": "báo",
+      "meaning_vi": "báo, loan báo, thông tri; công bố, tuyên bố; đọc bản giới thiêu tin tức, đọc chương trình (ở đài phát thanh); tuyên bố ra ứng cử",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25490,
+      "word": "announcement",
+      "normalized_word": "announcement",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'naunsmənt/",
+      "primary_meaning_vi": "lời rao",
+      "meaning_vi": "lời rao, lời loan báo; cáo thị, thông cáo; lời công bố, lời tuyên bố",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26541,
+      "quiz_meaning_vi": "rộng",
+      "meaning_vi_clean": "rộng; chung",
+      "examples_clean": [
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The policy is broadly supported by the public.",
+          "example_vi": "Chính sách này được công chúng ủng hộ rộng rãi."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "He smiled broadly when he saw his family.",
+          "example_vi": "Anh ấy cười rộng miệng khi nhìn thấy gia đình mình."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The road was broadly paved for heavy traffic.",
+          "example_vi": "Con đường được trải rộng cho xe cộ qua lại."
+        },
+        {
+          "meaning_vi": "rộng",
+          "example_en": "The river flows broadly through the valley.",
+          "example_vi": "Con sông chảy rộng khắp thung lũng."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "Broadly speaking, the plan is a success.",
+          "example_vi": "Nói một cách chung, kế hoạch này là một thành công."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "Broadly, we agree with your proposal.",
+          "example_vi": "Nhìn chung, chúng tôi đồng ý với đề xuất của bạn."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "Broadly, the results were as expected.",
+          "example_vi": "Nhìn chung, kết quả đúng như mong đợi."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "Broadly, the project covers three main areas.",
+          "example_vi": "Nhìn chung, dự án bao gồm ba lĩnh vực chính."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "Broadly, the situation has improved.",
+          "example_vi": "Nhìn chung, tình hình đã được cải thiện."
+        },
+        {
+          "meaning_vi": "chung",
+          "example_en": "Broadly, the team is happy with the outcome.",
+          "example_vi": "Nhìn chung, cả đội hài lòng với kết quả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ phù hợp với từ loại phó từ.",
+      "word": "broadly",
+      "normalized_word": "broadly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The policy is broadly supported by the public.",
+      "example_vi_clean": "Chính sách này được công chúng ủng hộ rộng rãi."
+    },
+    {
+      "id": 26542,
+      "quiz_meaning_vi": "cuốn sách mỏng",
+      "meaning_vi_clean": "cuốn sách mỏng",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "I picked up a travel brochure at the airport.",
+          "example_vi": "Tôi đã lấy một cuốn sách mỏng du lịch tại sân bay."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "The brochure provides details about the new course.",
+          "example_vi": "Cuốn sách mỏng cung cấp thông tin chi tiết về khóa học mới."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "Please read the brochure before the meeting.",
+          "example_vi": "Vui lòng đọc cuốn sách mỏng trước cuộc họp."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "They sent us a brochure with all the prices.",
+          "example_vi": "Họ đã gửi cho chúng tôi một cuốn sách mỏng với tất cả giá cả."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "The company brochure is very colorful.",
+          "example_vi": "Cuốn sách mỏng của công ty rất nhiều màu sắc."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "You can find the information in the brochure.",
+          "example_vi": "Bạn có thể tìm thấy thông tin trong cuốn sách mỏng."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "She designed a brochure for the charity event.",
+          "example_vi": "Cô ấy đã thiết kế một cuốn sách mỏng cho sự kiện từ thiện."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "The brochure lists all the available services.",
+          "example_vi": "Cuốn sách mỏng liệt kê tất cả các dịch vụ hiện có."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "I kept the brochure as a souvenir.",
+          "example_vi": "Tôi đã giữ cuốn sách mỏng làm kỷ niệm."
+        },
+        {
+          "meaning_vi": "cuốn sách mỏng",
+          "example_en": "The brochure is available in several languages.",
+          "example_vi": "Cuốn sách mỏng có sẵn bằng nhiều ngôn ngữ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "brochure",
+      "normalized_word": "brochure",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I picked up a travel brochure at the airport.",
+      "example_vi_clean": "Tôi đã lấy một cuốn sách mỏng du lịch tại sân bay."
+    },
+    {
+      "id": 26543,
+      "quiz_meaning_vi": "anh rể",
+      "meaning_vi_clean": "anh rể; anh vợ",
+      "examples_clean": [
+        {
+          "meaning_vi": "anh rể",
+          "example_en": "My brother-in-law is a doctor.",
+          "example_vi": "Anh rể tôi là một bác sĩ."
+        },
+        {
+          "meaning_vi": "anh rể",
+          "example_en": "I went fishing with my brother-in-law.",
+          "example_vi": "Tôi đã đi câu cá với anh rể mình."
+        },
+        {
+          "meaning_vi": "anh rể",
+          "example_en": "My brother-in-law helped me fix the car.",
+          "example_vi": "Anh rể tôi đã giúp tôi sửa xe."
+        },
+        {
+          "meaning_vi": "anh rể",
+          "example_en": "We are visiting my brother-in-law this weekend.",
+          "example_vi": "Chúng tôi sẽ đến thăm anh rể vào cuối tuần này."
+        },
+        {
+          "meaning_vi": "anh vợ",
+          "example_en": "My brother-in-law invited us to dinner.",
+          "example_vi": "Anh vợ tôi đã mời chúng tôi đi ăn tối."
+        },
+        {
+          "meaning_vi": "anh vợ",
+          "example_en": "I get along well with my brother-in-law.",
+          "example_vi": "Tôi rất hòa thuận với anh vợ mình."
+        },
+        {
+          "meaning_vi": "anh vợ",
+          "example_en": "My brother-in-law works in the city.",
+          "example_vi": "Anh vợ tôi làm việc trong thành phố."
+        },
+        {
+          "meaning_vi": "anh vợ",
+          "example_en": "I bought a gift for my brother-in-law.",
+          "example_vi": "Tôi đã mua một món quà cho anh vợ mình."
+        },
+        {
+          "meaning_vi": "anh vợ",
+          "example_en": "My brother-in-law is very kind to us.",
+          "example_vi": "Anh vợ tôi rất tốt với chúng tôi."
+        },
+        {
+          "meaning_vi": "anh vợ",
+          "example_en": "We played chess with my brother-in-law.",
+          "example_vi": "Chúng tôi đã chơi cờ với anh vợ tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho cả hai nghĩa.",
+      "word": "brother-in-law",
+      "normalized_word": "brother-in-law",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My brother-in-law is a doctor.",
+      "example_vi_clean": "Anh rể tôi là một bác sĩ."
+    },
+    {
+      "id": 26544,
+      "quiz_meaning_vi": "đọc lướt qua",
+      "meaning_vi_clean": "đọc lướt qua; xem lướt qua",
+      "examples_clean": [
+        {
+          "meaning_vi": "đọc lướt qua",
+          "example_en": "I just browsed the newspaper this morning.",
+          "example_vi": "Tôi chỉ đọc lướt qua tờ báo sáng nay."
+        },
+        {
+          "meaning_vi": "đọc lướt qua",
+          "example_en": "She browsed through the magazine while waiting.",
+          "example_vi": "Cô ấy đọc lướt qua cuốn tạp chí trong khi chờ đợi."
+        },
+        {
+          "meaning_vi": "đọc lướt qua",
+          "example_en": "He browsed the book before buying it.",
+          "example_vi": "Anh ấy đọc lướt qua cuốn sách trước khi mua nó."
+        },
+        {
+          "meaning_vi": "đọc lướt qua",
+          "example_en": "I browsed the report to find the main points.",
+          "example_vi": "Tôi đọc lướt qua bản báo cáo để tìm các điểm chính."
+        },
+        {
+          "meaning_vi": "xem lướt qua",
+          "example_en": "We browsed the shops in the city center.",
+          "example_vi": "Chúng tôi xem lướt qua các cửa hàng ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "xem lướt qua",
+          "example_en": "She browsed the website for new clothes.",
+          "example_vi": "Cô ấy xem lướt qua trang web để tìm quần áo mới."
+        },
+        {
+          "meaning_vi": "xem lướt qua",
+          "example_en": "He browsed the shelves for a good novel.",
+          "example_vi": "Anh ấy xem lướt qua các kệ sách để tìm một cuốn tiểu thuyết hay."
+        },
+        {
+          "meaning_vi": "xem lướt qua",
+          "example_en": "I browsed the menu before ordering.",
+          "example_vi": "Tôi xem lướt qua thực đơn trước khi gọi món."
+        },
+        {
+          "meaning_vi": "xem lướt qua",
+          "example_en": "They browsed the art gallery for hours.",
+          "example_vi": "Họ xem lướt qua phòng trưng bày nghệ thuật trong nhiều giờ."
+        },
+        {
+          "meaning_vi": "xem lướt qua",
+          "example_en": "I browsed the catalog for some ideas.",
+          "example_vi": "Tôi xem lướt qua danh mục để tìm vài ý tưởng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa không phù hợp (cành non) và tập trung vào nghĩa động từ phổ biến.",
+      "word": "browse",
+      "normalized_word": "browse",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I just browsed the newspaper this morning.",
+      "example_vi_clean": "Tôi chỉ đọc lướt qua tờ báo sáng nay."
+    },
+    {
+      "id": 26545,
+      "quiz_meaning_vi": "vết thâm tím",
+      "meaning_vi_clean": "vết thâm tím; làm thâm tím",
+      "examples_clean": [
+        {
+          "meaning_vi": "vết thâm tím",
+          "example_en": "She had a large bruise on her arm.",
+          "example_vi": "Cô ấy có một vết thâm tím lớn trên cánh tay."
+        },
+        {
+          "meaning_vi": "vết thâm tím",
+          "example_en": "The bruise on his leg is fading.",
+          "example_vi": "Vết thâm tím trên chân anh ấy đang mờ dần."
+        },
+        {
+          "meaning_vi": "vết thâm tím",
+          "example_en": "He covered the bruise with makeup.",
+          "example_vi": "Anh ấy che vết thâm tím bằng đồ trang điểm."
+        },
+        {
+          "meaning_vi": "vết thâm tím",
+          "example_en": "The fall left a nasty bruise on her knee.",
+          "example_vi": "Cú ngã để lại một vết thâm tím khó coi trên đầu gối cô ấy."
+        },
+        {
+          "meaning_vi": "làm thâm tím",
+          "example_en": "Bananas bruise easily if you drop them.",
+          "example_vi": "Chuối dễ bị làm thâm tím nếu bạn làm rơi chúng."
+        },
+        {
+          "meaning_vi": "làm thâm tím",
+          "example_en": "He bruised his shoulder in the accident.",
+          "example_vi": "Anh ấy bị làm thâm tím vai trong vụ tai nạn."
+        },
+        {
+          "meaning_vi": "làm thâm tím",
+          "example_en": "The peach was bruised during transport.",
+          "example_vi": "Quả đào bị làm thâm tím trong quá trình vận chuyển."
+        },
+        {
+          "meaning_vi": "làm thâm tím",
+          "example_en": "She bruised her ego when she lost the game.",
+          "example_vi": "Cô ấy bị tổn thương lòng tự trọng khi thua trận đấu."
+        },
+        {
+          "meaning_vi": "làm thâm tím",
+          "example_en": "Be careful not to bruise the fruit.",
+          "example_vi": "Hãy cẩn thận đừng làm thâm tím trái cây."
+        },
+        {
+          "meaning_vi": "làm thâm tím",
+          "example_en": "The impact bruised his ribs.",
+          "example_vi": "Cú va chạm làm thâm tím xương sườn của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho cả danh từ và động từ.",
+      "word": "bruise",
+      "normalized_word": "bruise",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She had a large bruise on her arm.",
+      "example_vi_clean": "Cô ấy có một vết thâm tím lớn trên cánh tay."
+    },
+    {
+      "id": 26546,
+      "quiz_meaning_vi": "chồi",
+      "meaning_vi_clean": "chồi; nảy chồi",
+      "examples_clean": [
+        {
+          "meaning_vi": "chồi",
+          "example_en": "The trees are full of green buds.",
+          "example_vi": "Những cái cây đầy những chồi xanh."
+        },
+        {
+          "meaning_vi": "chồi",
+          "example_en": "I saw a small bud on the rose bush.",
+          "example_vi": "Tôi thấy một cái chồi nhỏ trên bụi hoa hồng."
+        },
+        {
+          "meaning_vi": "chồi",
+          "example_en": "The buds will open in the spring.",
+          "example_vi": "Những cái chồi sẽ nở vào mùa xuân."
+        },
+        {
+          "meaning_vi": "chồi",
+          "example_en": "The plant is producing new buds.",
+          "example_vi": "Cây đang ra những cái chồi mới."
+        },
+        {
+          "meaning_vi": "nảy chồi",
+          "example_en": "The trees finally began to bud.",
+          "example_vi": "Những cái cây cuối cùng đã bắt đầu nảy chồi."
+        },
+        {
+          "meaning_vi": "nảy chồi",
+          "example_en": "The roses will bud in early May.",
+          "example_vi": "Hoa hồng sẽ nảy chồi vào đầu tháng Năm."
+        },
+        {
+          "meaning_vi": "nảy chồi",
+          "example_en": "The branches are starting to bud.",
+          "example_vi": "Các cành cây đang bắt đầu nảy chồi."
+        },
+        {
+          "meaning_vi": "nảy chồi",
+          "example_en": "Watch the plants bud in the garden.",
+          "example_vi": "Hãy quan sát những cái cây nảy chồi trong vườn."
+        },
+        {
+          "meaning_vi": "nảy chồi",
+          "example_en": "The spring weather helps the plants bud.",
+          "example_vi": "Thời tiết mùa xuân giúp cây cối nảy chồi."
+        },
+        {
+          "meaning_vi": "nảy chồi",
+          "example_en": "The garden is beautiful when the flowers bud.",
+          "example_vi": "Khu vườn thật đẹp khi hoa nảy chồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ các nghĩa không phù hợp (tiếng lóng) và chuẩn hóa nghĩa danh từ/động từ.",
+      "word": "bud",
+      "normalized_word": "bud",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The trees are full of green buds.",
+      "example_vi_clean": "Những cái cây đầy những chồi xanh."
+    },
+    {
+      "id": 26547,
+      "quiz_meaning_vi": "ngân sách",
+      "meaning_vi_clean": "ngân sách; ghi vào ngân sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngân sách",
+          "example_en": "We need to plan our budget carefully.",
+          "example_vi": "Chúng ta cần lập ngân sách cẩn thận."
+        },
+        {
+          "meaning_vi": "ngân sách",
+          "example_en": "The project has a limited budget.",
+          "example_vi": "Dự án có một ngân sách hạn chế."
+        },
+        {
+          "meaning_vi": "ngân sách",
+          "example_en": "They cut the budget for the new school.",
+          "example_vi": "Họ đã cắt giảm ngân sách cho ngôi trường mới."
+        },
+        {
+          "meaning_vi": "ngân sách",
+          "example_en": "We are working on a tight budget.",
+          "example_vi": "Chúng tôi đang làm việc với một ngân sách eo hẹp."
+        },
+        {
+          "meaning_vi": "ghi vào ngân sách",
+          "example_en": "The company budgeted for the new equipment.",
+          "example_vi": "Công ty đã ghi vào ngân sách cho thiết bị mới."
+        },
+        {
+          "meaning_vi": "ghi vào ngân sách",
+          "example_en": "We have budgeted for travel expenses.",
+          "example_vi": "Chúng tôi đã ghi vào ngân sách cho chi phí đi lại."
+        },
+        {
+          "meaning_vi": "ghi vào ngân sách",
+          "example_en": "They budgeted the project at ten thousand dollars.",
+          "example_vi": "Họ đã ghi vào ngân sách dự án là mười ngàn đô la."
+        },
+        {
+          "meaning_vi": "ghi vào ngân sách",
+          "example_en": "Have you budgeted for the repairs?",
+          "example_vi": "Bạn đã ghi vào ngân sách cho việc sửa chữa chưa?"
+        },
+        {
+          "meaning_vi": "ghi vào ngân sách",
+          "example_en": "The government budgeted for the new road.",
+          "example_vi": "Chính phủ đã ghi vào ngân sách cho con đường mới."
+        },
+        {
+          "meaning_vi": "ghi vào ngân sách",
+          "example_en": "We budgeted for the event last month.",
+          "example_vi": "Chúng tôi đã ghi vào ngân sách cho sự kiện tháng trước."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ tính từ sang danh từ/động từ và chuẩn hóa nghĩa.",
+      "word": "budget",
+      "normalized_word": "budget",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We need to plan our budget carefully.",
+      "example_vi_clean": "Chúng ta cần lập ngân sách cẩn thận."
+    },
+    {
+      "id": 26548,
+      "quiz_meaning_vi": "chứng cuồng ăn vô độ",
+      "meaning_vi_clean": "chứng cuồng ăn vô độ",
+      "examples_clean": [
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "She is receiving treatment for bulimia.",
+          "example_vi": "Cô ấy đang được điều trị chứng cuồng ăn vô độ."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Bulimia is a serious eating disorder.",
+          "example_vi": "Chứng cuồng ăn vô độ là một rối loạn ăn uống nghiêm trọng."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Many people suffer from bulimia in silence.",
+          "example_vi": "Nhiều người chịu đựng chứng cuồng ăn vô độ trong im lặng."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "The doctor explained the risks of bulimia.",
+          "example_vi": "Bác sĩ đã giải thích những rủi ro của chứng cuồng ăn vô độ."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Support groups help those with bulimia.",
+          "example_vi": "Các nhóm hỗ trợ giúp đỡ những người mắc chứng cuồng ăn vô độ."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Early diagnosis of bulimia is important.",
+          "example_vi": "Việc chẩn đoán sớm chứng cuồng ăn vô độ rất quan trọng."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "She wrote a book about her battle with bulimia.",
+          "example_vi": "Cô ấy đã viết một cuốn sách về cuộc chiến với chứng cuồng ăn vô độ."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Bulimia can have long-term health effects.",
+          "example_vi": "Chứng cuồng ăn vô độ có thể gây ra những ảnh hưởng sức khỏe lâu dài."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Therapy is often used to treat bulimia.",
+          "example_vi": "Liệu pháp thường được sử dụng để điều trị chứng cuồng ăn vô độ."
+        },
+        {
+          "meaning_vi": "chứng cuồng ăn vô độ",
+          "example_en": "Understanding bulimia is the first step to recovery.",
+          "example_vi": "Hiểu về chứng cuồng ăn vô độ là bước đầu tiên để phục hồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung đủ 10 ví dụ.",
+      "word": "bulimia",
+      "normalized_word": "bulimia",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is receiving treatment for bulimia.",
+      "example_vi_clean": "Cô ấy đang được điều trị chứng cuồng ăn vô độ."
+    },
+    {
+      "id": 26549,
+      "quiz_meaning_vi": "bắt nạt",
+      "meaning_vi_clean": "bắt nạt; kẻ hay bắt nạt",
+      "examples_clean": [
+        {
+          "meaning_vi": "bắt nạt",
+          "example_en": "You shouldn't bully your classmates.",
+          "example_vi": "Bạn không nên bắt nạt bạn cùng lớp."
+        },
+        {
+          "meaning_vi": "bắt nạt",
+          "example_en": "He was bullied at school for years.",
+          "example_vi": "Anh ấy đã bị bắt nạt ở trường trong nhiều năm."
+        },
+        {
+          "meaning_vi": "bắt nạt",
+          "example_en": "It is wrong to bully others.",
+          "example_vi": "Bắt nạt người khác là sai trái."
+        },
+        {
+          "meaning_vi": "bắt nạt",
+          "example_en": "The teacher stopped the students from bullying.",
+          "example_vi": "Giáo viên đã ngăn các học sinh bắt nạt nhau."
+        },
+        {
+          "meaning_vi": "kẻ hay bắt nạt",
+          "example_en": "The school bully was finally punished.",
+          "example_vi": "Kẻ hay bắt nạt ở trường cuối cùng đã bị phạt."
+        },
+        {
+          "meaning_vi": "kẻ hay bắt nạt",
+          "example_en": "Don't be a bully to your younger brother.",
+          "example_vi": "Đừng trở thành kẻ hay bắt nạt em trai mình."
+        },
+        {
+          "meaning_vi": "kẻ hay bắt nạt",
+          "example_en": "She stood up to the bully.",
+          "example_vi": "Cô ấy đã đứng lên chống lại kẻ hay bắt nạt."
+        },
+        {
+          "meaning_vi": "kẻ hay bắt nạt",
+          "example_en": "The bully was afraid of the principal.",
+          "example_vi": "Kẻ hay bắt nạt đã sợ hiệu trưởng."
+        },
+        {
+          "meaning_vi": "kẻ hay bắt nạt",
+          "example_en": "He was known as the local bully.",
+          "example_vi": "Anh ta được biết đến là kẻ hay bắt nạt trong vùng."
+        },
+        {
+          "meaning_vi": "kẻ hay bắt nạt",
+          "example_en": "Every school has its own bully.",
+          "example_vi": "Mỗi trường học đều có kẻ hay bắt nạt riêng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ thán từ sang động từ/danh từ và chuẩn hóa nghĩa.",
+      "word": "bully",
+      "normalized_word": "bully",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You shouldn't bully your classmates.",
+      "example_vi_clean": "Bạn không nên bắt nạt bạn cùng lớp."
+    },
+    {
+      "id": 26550,
+      "quiz_meaning_vi": "mông",
+      "meaning_vi_clean": "mông; kẻ lười biếng",
+      "examples_clean": [
+        {
+          "meaning_vi": "mông",
+          "example_en": "Sit on your bum and listen.",
+          "example_vi": "Hãy ngồi xuống mông và lắng nghe."
+        },
+        {
+          "meaning_vi": "mông",
+          "example_en": "He fell on his bum.",
+          "example_vi": "Anh ấy ngã đập mông xuống đất."
+        },
+        {
+          "meaning_vi": "mông",
+          "example_en": "The chair is hard on my bum.",
+          "example_vi": "Cái ghế này làm đau mông tôi."
+        },
+        {
+          "meaning_vi": "mông",
+          "example_en": "She hurt her bum during the game.",
+          "example_vi": "Cô ấy bị đau mông trong trận đấu."
+        },
+        {
+          "meaning_vi": "kẻ lười biếng",
+          "example_en": "He is just a bum who does nothing.",
+          "example_vi": "Anh ta chỉ là một kẻ lười biếng không làm gì cả."
+        },
+        {
+          "meaning_vi": "kẻ lười biếng",
+          "example_en": "Don't be a bum, get a job.",
+          "example_vi": "Đừng làm kẻ lười biếng, hãy tìm việc làm đi."
+        },
+        {
+          "meaning_vi": "kẻ lười biếng",
+          "example_en": "He lived like a bum for years.",
+          "example_vi": "Anh ta đã sống như một kẻ lười biếng trong nhiều năm."
+        },
+        {
+          "meaning_vi": "kẻ lười biếng",
+          "example_en": "The bum asked for some money.",
+          "example_vi": "Kẻ lười biếng đó đã xin một ít tiền."
+        },
+        {
+          "meaning_vi": "kẻ lười biếng",
+          "example_en": "He was called a bum by his boss.",
+          "example_vi": "Anh ta bị sếp gọi là kẻ lười biếng."
+        },
+        {
+          "meaning_vi": "kẻ lười biếng",
+          "example_en": "Stop acting like a bum.",
+          "example_vi": "Đừng cư xử như một kẻ lười biếng nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho danh từ.",
+      "word": "bum",
+      "normalized_word": "bum",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Sit on your bum and listen.",
+      "example_vi_clean": "Hãy ngồi xuống mông và lắng nghe."
+    }
+  ]
+}

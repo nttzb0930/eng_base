@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24861,
+      "quiz_meaning_vi": "kem",
+      "meaning_vi_clean": "kem; màu kem",
+      "examples_clean": [
+        {
+          "meaning_vi": "kem",
+          "example_en": "Add a little cream to your coffee.",
+          "example_vi": "Thêm một chút kem vào cà phê của bạn."
+        },
+        {
+          "meaning_vi": "kem",
+          "example_en": "She whipped the cream until it was thick.",
+          "example_vi": "Cô ấy đánh bông kem cho đến khi nó đặc lại."
+        },
+        {
+          "meaning_vi": "kem",
+          "example_en": "The recipe calls for fresh cream.",
+          "example_vi": "Công thức này yêu cầu kem tươi."
+        },
+        {
+          "meaning_vi": "kem",
+          "example_en": "Would you like some cream with your strawberries?",
+          "example_vi": "Bạn có muốn dùng kem với dâu tây không?"
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "She wore a beautiful cream dress to the party.",
+          "example_vi": "Cô ấy mặc một chiếc váy màu kem tuyệt đẹp đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The walls of the living room are painted cream.",
+          "example_vi": "Những bức tường của phòng khách được sơn màu kem."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "He bought a pair of cream trousers for the summer.",
+          "example_vi": "Anh ấy đã mua một chiếc quần tây màu kem cho mùa hè."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The curtains are a soft shade of cream.",
+          "example_vi": "Những tấm rèm có màu kem nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "The flowers were a delicate cream color.",
+          "example_vi": "Những bông hoa có màu kem tinh tế."
+        },
+        {
+          "meaning_vi": "màu kem",
+          "example_en": "Her shoes matched her cream handbag perfectly.",
+          "example_vi": "Đôi giày của cô ấy rất hợp với chiếc túi xách màu kem."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là adjective nhưng từ này chủ yếu là danh từ. Đã sửa lại nghĩa và ví dụ cho phù hợp với danh từ.",
+      "word": "cream",
+      "normalized_word": "cream",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Add a little cream to your coffee.",
+      "example_vi_clean": "Thêm một chút kem vào cà phê của bạn."
+    },
+    {
+      "id": 24862,
+      "quiz_meaning_vi": "tạo",
+      "meaning_vi_clean": "tạo; gây ra",
+      "examples_clean": [
+        {
+          "meaning_vi": "tạo",
+          "example_en": "You can create a new file on your computer.",
+          "example_vi": "Bạn có thể tạo một tệp mới trên máy tính của mình."
+        },
+        {
+          "meaning_vi": "tạo",
+          "example_en": "The artist likes to create beautiful paintings.",
+          "example_vi": "Người nghệ sĩ thích tạo ra những bức tranh đẹp."
+        },
+        {
+          "meaning_vi": "tạo",
+          "example_en": "We want to create a better future for our children.",
+          "example_vi": "Chúng tôi muốn tạo ra một tương lai tốt đẹp hơn cho con cái mình."
+        },
+        {
+          "meaning_vi": "tạo",
+          "example_en": "She hopes to create a friendly atmosphere in the office.",
+          "example_vi": "Cô ấy hy vọng tạo ra một bầu không khí thân thiện trong văn phòng."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The loud noise created a lot of confusion.",
+          "example_vi": "Tiếng ồn lớn đã gây ra rất nhiều sự bối rối."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "His comments created a lot of problems for the team.",
+          "example_vi": "Những bình luận của anh ấy đã gây ra nhiều vấn đề cho cả nhóm."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The new law will create many changes in the industry.",
+          "example_vi": "Luật mới sẽ gây ra nhiều thay đổi trong ngành."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "Don't create any more trouble for your parents.",
+          "example_vi": "Đừng gây thêm rắc rối cho cha mẹ bạn nữa."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The storm created a lot of damage to the houses.",
+          "example_vi": "Cơn bão đã gây ra nhiều thiệt hại cho các ngôi nhà."
+        },
+        {
+          "meaning_vi": "gây ra",
+          "example_en": "The delay created a long queue at the station.",
+          "example_vi": "Sự chậm trễ đã gây ra một hàng dài tại nhà ga."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là nội động từ nhưng create là ngoại động từ. Đã sửa lại nghĩa và ví dụ.",
+      "word": "create",
+      "normalized_word": "create",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You can create a new file on your computer.",
+      "example_vi_clean": "Bạn có thể tạo một tệp mới trên máy tính của mình."
+    },
+    {
+      "id": 24863,
+      "quiz_meaning_vi": "sáng tạo",
+      "meaning_vi_clean": "sáng tạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "She is a very creative person who loves art.",
+          "example_vi": "Cô ấy là một người rất sáng tạo, người yêu nghệ thuật."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "We need to find a creative solution to this problem.",
+          "example_vi": "Chúng ta cần tìm một giải pháp sáng tạo cho vấn đề này."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The children had a creative afternoon painting pictures.",
+          "example_vi": "Những đứa trẻ đã có một buổi chiều sáng tạo khi vẽ tranh."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "He has a creative approach to teaching history.",
+          "example_vi": "Anh ấy có một cách tiếp cận sáng tạo để dạy lịch sử."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The company encourages creative thinking among employees.",
+          "example_vi": "Công ty khuyến khích tư duy sáng tạo giữa các nhân viên."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "It was a creative way to decorate the room.",
+          "example_vi": "Đó là một cách sáng tạo để trang trí căn phòng."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "She wrote a creative story for her school project.",
+          "example_vi": "Cô ấy đã viết một câu chuyện sáng tạo cho dự án trường học của mình."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The chef is known for his creative dishes.",
+          "example_vi": "Đầu bếp nổi tiếng với những món ăn sáng tạo của mình."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "They are looking for a creative designer for the project.",
+          "example_vi": "Họ đang tìm kiếm một nhà thiết kế sáng tạo cho dự án."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "His creative ideas helped the team succeed.",
+          "example_vi": "Những ý tưởng sáng tạo của anh ấy đã giúp cả nhóm thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "creative",
+      "normalized_word": "creative",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a very creative person who loves art.",
+      "example_vi_clean": "Cô ấy là một người rất sáng tạo, người yêu nghệ thuật."
+    },
+    {
+      "id": 24864,
+      "quiz_meaning_vi": "óc sáng tạo",
+      "meaning_vi_clean": "óc sáng tạo; tính sáng tạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "óc sáng tạo",
+          "example_en": "She has a lot of creativity when it comes to design.",
+          "example_vi": "Cô ấy có rất nhiều óc sáng tạo khi nói đến thiết kế."
+        },
+        {
+          "meaning_vi": "óc sáng tạo",
+          "example_en": "The job requires a great deal of creativity.",
+          "example_vi": "Công việc này đòi hỏi rất nhiều óc sáng tạo."
+        },
+        {
+          "meaning_vi": "óc sáng tạo",
+          "example_en": "He uses his creativity to solve difficult problems.",
+          "example_vi": "Anh ấy sử dụng óc sáng tạo của mình để giải quyết các vấn đề khó khăn."
+        },
+        {
+          "meaning_vi": "óc sáng tạo",
+          "example_en": "Art classes help children develop their creativity.",
+          "example_vi": "Các lớp học nghệ thuật giúp trẻ phát triển óc sáng tạo."
+        },
+        {
+          "meaning_vi": "tính sáng tạo",
+          "example_en": "The creativity of the solution surprised everyone.",
+          "example_vi": "Tính sáng tạo của giải pháp đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "tính sáng tạo",
+          "example_en": "We value the creativity shown in your report.",
+          "example_vi": "Chúng tôi đánh giá cao tính sáng tạo được thể hiện trong báo cáo của bạn."
+        },
+        {
+          "meaning_vi": "tính sáng tạo",
+          "example_en": "The project was praised for its originality and creativity.",
+          "example_vi": "Dự án được khen ngợi vì tính độc đáo và tính sáng tạo."
+        },
+        {
+          "meaning_vi": "tính sáng tạo",
+          "example_en": "There is a lack of creativity in this new design.",
+          "example_vi": "Có sự thiếu hụt tính sáng tạo trong thiết kế mới này."
+        },
+        {
+          "meaning_vi": "tính sáng tạo",
+          "example_en": "Her work is known for its unique creativity.",
+          "example_vi": "Công việc của cô ấy nổi tiếng với tính sáng tạo độc đáo."
+        },
+        {
+          "meaning_vi": "tính sáng tạo",
+          "example_en": "The team needs more creativity to finish the task.",
+          "example_vi": "Cả nhóm cần thêm tính sáng tạo để hoàn thành nhiệm vụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "creativity",
+      "normalized_word": "creativity",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a lot of creativity when it comes to design.",
+      "example_vi_clean": "Cô ấy có rất nhiều óc sáng tạo khi nói đến thiết kế."
+    },
+    {
+      "id": 24865,
+      "quiz_meaning_vi": "sinh vật",
+      "meaning_vi_clean": "sinh vật; người",
+      "examples_clean": [
+        {
+          "meaning_vi": "sinh vật",
+          "example_en": "The ocean is home to many strange creatures.",
+          "example_vi": "Đại dương là nhà của nhiều sinh vật kỳ lạ."
+        },
+        {
+          "meaning_vi": "sinh vật",
+          "example_en": "Every living creature needs water to survive.",
+          "example_vi": "Mọi sinh vật sống đều cần nước để tồn tại."
+        },
+        {
+          "meaning_vi": "sinh vật",
+          "example_en": "Scientists discovered a new creature in the forest.",
+          "example_vi": "Các nhà khoa học đã phát hiện ra một sinh vật mới trong rừng."
+        },
+        {
+          "meaning_vi": "sinh vật",
+          "example_en": "The forest is full of small creatures.",
+          "example_vi": "Khu rừng đầy những sinh vật nhỏ bé."
+        },
+        {
+          "meaning_vi": "người",
+          "example_en": "He is a strange creature who likes to stay alone.",
+          "example_vi": "Anh ta là một người kỳ lạ, người thích ở một mình."
+        },
+        {
+          "meaning_vi": "người",
+          "example_en": "She is a gentle creature who never hurts anyone.",
+          "example_vi": "Cô ấy là một người hiền lành, người không bao giờ làm hại ai."
+        },
+        {
+          "meaning_vi": "người",
+          "example_en": "Poor creature, he has had a very hard life.",
+          "example_vi": "Tội nghiệp, anh ấy đã có một cuộc đời rất khó khăn."
+        },
+        {
+          "meaning_vi": "người",
+          "example_en": "He is a creature of habit and likes his routine.",
+          "example_vi": "Anh ấy là một người theo thói quen và thích sự ổn định của mình."
+        },
+        {
+          "meaning_vi": "người",
+          "example_en": "She is a lonely creature living in the city.",
+          "example_vi": "Cô ấy là một người cô đơn sống trong thành phố."
+        },
+        {
+          "meaning_vi": "người",
+          "example_en": "He is a funny creature who always makes us laugh.",
+          "example_vi": "Anh ấy là một người vui tính, người luôn làm chúng tôi cười."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "creature",
+      "normalized_word": "creature",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ocean is home to many strange creatures.",
+      "example_vi_clean": "Đại dương là nhà của nhiều sinh vật kỳ lạ."
+    },
+    {
+      "id": 24866,
+      "quiz_meaning_vi": "sự tin",
+      "meaning_vi_clean": "sự tin; uy tín; công trạng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tin",
+          "example_en": "I give no credit to his story.",
+          "example_vi": "Tôi không tin vào câu chuyện của anh ta."
+        },
+        {
+          "meaning_vi": "sự tin",
+          "example_en": "It is hard to give credit to such a rumor.",
+          "example_vi": "Thật khó để tin vào một tin đồn như vậy."
+        },
+        {
+          "meaning_vi": "sự tin",
+          "example_en": "She does not give much credit to what he says.",
+          "example_vi": "Cô ấy không tin lắm vào những gì anh ta nói."
+        },
+        {
+          "meaning_vi": "sự tin",
+          "example_en": "I find it difficult to give credit to his excuse.",
+          "example_vi": "Tôi thấy khó mà tin vào lời bào chữa của anh ta."
+        },
+        {
+          "meaning_vi": "uy tín",
+          "example_en": "The company has a lot of credit in the market.",
+          "example_vi": "Công ty có rất nhiều uy tín trên thị trường."
+        },
+        {
+          "meaning_vi": "uy tín",
+          "example_en": "He has built up a good credit over the years.",
+          "example_vi": "Anh ấy đã xây dựng được uy tín tốt qua nhiều năm."
+        },
+        {
+          "meaning_vi": "uy tín",
+          "example_en": "Her reputation adds credit to the organization.",
+          "example_vi": "Danh tiếng của cô ấy làm tăng uy tín cho tổ chức."
+        },
+        {
+          "meaning_vi": "công trạng",
+          "example_en": "He deserves credit for his hard work.",
+          "example_vi": "Anh ấy xứng đáng được ghi nhận công trạng vì sự chăm chỉ của mình."
+        },
+        {
+          "meaning_vi": "công trạng",
+          "example_en": "She took all the credit for the team's success.",
+          "example_vi": "Cô ấy đã nhận hết công trạng về sự thành công của cả nhóm."
+        },
+        {
+          "meaning_vi": "công trạng",
+          "example_en": "Give credit where credit is due.",
+          "example_vi": "Hãy ghi nhận công trạng cho người xứng đáng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là ngoại động từ nhưng credit thường là danh từ. Đã sửa lại nghĩa và ví dụ.",
+      "word": "credit",
+      "normalized_word": "credit",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I give no credit to his story.",
+      "example_vi_clean": "Tôi không tin vào câu chuyện của anh ta."
+    },
+    {
+      "id": 24867,
+      "quiz_meaning_vi": "chơi crikê",
+      "meaning_vi_clean": "chơi crikê",
+      "examples_clean": [
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "They enjoy playing cricket on weekends.",
+          "example_vi": "Họ thích chơi crikê vào cuối tuần."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "He is a very good cricket player.",
+          "example_vi": "Anh ấy là một người chơi crikê rất giỏi."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "The cricket match lasted for three days.",
+          "example_vi": "Trận đấu crikê kéo dài trong ba ngày."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "She watches cricket on television every summer.",
+          "example_vi": "Cô ấy xem crikê trên truyền hình mỗi mùa hè."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "They are building a new cricket field.",
+          "example_vi": "Họ đang xây dựng một sân crikê mới."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "He bought a new cricket bat yesterday.",
+          "example_vi": "Anh ấy đã mua một chiếc gậy crikê mới ngày hôm qua."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "The school team won the cricket tournament.",
+          "example_vi": "Đội của trường đã thắng giải đấu crikê."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "Cricket is a popular sport in many countries.",
+          "example_vi": "Crikê là một môn thể thao phổ biến ở nhiều quốc gia."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "They practiced cricket in the park.",
+          "example_vi": "Họ đã tập chơi crikê trong công viên."
+        },
+        {
+          "meaning_vi": "chơi crikê",
+          "example_en": "He learned how to play cricket at school.",
+          "example_vi": "Anh ấy đã học cách chơi crikê ở trường."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là nội động từ nhưng cricket là danh từ. Đã sửa lại nghĩa và ví dụ.",
+      "word": "cricket",
+      "normalized_word": "cricket",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They enjoy playing cricket on weekends.",
+      "example_vi_clean": "Họ thích chơi crikê vào cuối tuần."
+    },
+    {
+      "id": 24868,
+      "quiz_meaning_vi": "tội ác",
+      "meaning_vi_clean": "tội ác; tội lỗi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tội ác",
+          "example_en": "The police are trying to stop violent crime.",
+          "example_vi": "Cảnh sát đang cố gắng ngăn chặn tội ác bạo lực."
+        },
+        {
+          "meaning_vi": "tội ác",
+          "example_en": "He was sent to prison for his crime.",
+          "example_vi": "Anh ta đã bị tống giam vì tội ác của mình."
+        },
+        {
+          "meaning_vi": "tội ác",
+          "example_en": "The crime rate has increased this year.",
+          "example_vi": "Tỷ lệ tội ác đã tăng trong năm nay."
+        },
+        {
+          "meaning_vi": "tội ác",
+          "example_en": "They are investigating a serious crime.",
+          "example_vi": "Họ đang điều tra một tội ác nghiêm trọng."
+        },
+        {
+          "meaning_vi": "tội lỗi",
+          "example_en": "It is a crime to waste so much food.",
+          "example_vi": "Thật là một tội lỗi khi lãng phí quá nhiều thức ăn."
+        },
+        {
+          "meaning_vi": "tội lỗi",
+          "example_en": "He felt a sense of crime after what he did.",
+          "example_vi": "Anh ấy cảm thấy một sự tội lỗi sau những gì mình đã làm."
+        },
+        {
+          "meaning_vi": "tội lỗi",
+          "example_en": "It is a crime to treat people like that.",
+          "example_vi": "Thật là một tội lỗi khi đối xử với mọi người như vậy."
+        },
+        {
+          "meaning_vi": "tội lỗi",
+          "example_en": "She confessed her crime to the priest.",
+          "example_vi": "Cô ấy đã thú nhận tội lỗi của mình với vị linh mục."
+        },
+        {
+          "meaning_vi": "tội lỗi",
+          "example_en": "He was burdened by his past crime.",
+          "example_vi": "Anh ấy bị đè nặng bởi tội lỗi trong quá khứ của mình."
+        },
+        {
+          "meaning_vi": "tội lỗi",
+          "example_en": "They were punished for their crime.",
+          "example_vi": "Họ đã bị trừng phạt vì tội lỗi của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là ngoại động từ nhưng crime là danh từ. Đã sửa lại nghĩa và ví dụ.",
+      "word": "crime",
+      "normalized_word": "crime",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police are trying to stop violent crime.",
+      "example_vi_clean": "Cảnh sát đang cố gắng ngăn chặn tội ác bạo lực."
+    },
+    {
+      "id": 24869,
+      "quiz_meaning_vi": "giòn",
+      "meaning_vi_clean": "giòn; mát",
+      "examples_clean": [
+        {
+          "meaning_vi": "giòn",
+          "example_en": "The cookies are very crisp.",
+          "example_vi": "Những chiếc bánh quy rất giòn."
+        },
+        {
+          "meaning_vi": "giòn",
+          "example_en": "I like to eat crisp apples.",
+          "example_vi": "Tôi thích ăn những quả táo giòn."
+        },
+        {
+          "meaning_vi": "giòn",
+          "example_en": "The bacon should be cooked until it is crisp.",
+          "example_vi": "Thịt xông khói nên được nấu cho đến khi nó giòn."
+        },
+        {
+          "meaning_vi": "giòn",
+          "example_en": "The bread was fresh and crisp.",
+          "example_vi": "Bánh mì tươi và giòn."
+        },
+        {
+          "meaning_vi": "mát",
+          "example_en": "The morning air was crisp and fresh.",
+          "example_vi": "Không khí buổi sáng thật mát mẻ và trong lành."
+        },
+        {
+          "meaning_vi": "mát",
+          "example_en": "We enjoyed the crisp autumn weather.",
+          "example_vi": "Chúng tôi đã tận hưởng thời tiết mát mẻ của mùa thu."
+        },
+        {
+          "meaning_vi": "mát",
+          "example_en": "The mountain air is always crisp.",
+          "example_vi": "Không khí trên núi luôn mát mẻ."
+        },
+        {
+          "meaning_vi": "mát",
+          "example_en": "It was a crisp day in late October.",
+          "example_vi": "Đó là một ngày mát mẻ vào cuối tháng Mười."
+        },
+        {
+          "meaning_vi": "mát",
+          "example_en": "She loves the crisp feeling of the winter air.",
+          "example_vi": "Cô ấy yêu cảm giác mát mẻ của không khí mùa đông."
+        },
+        {
+          "meaning_vi": "mát",
+          "example_en": "The breeze was crisp and invigorating.",
+          "example_vi": "Cơn gió thật mát mẻ và sảng khoái."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là danh từ nhưng crisp là tính từ. Đã sửa lại nghĩa và ví dụ.",
+      "word": "crisp",
+      "normalized_word": "crisp",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cookies are very crisp.",
+      "example_vi_clean": "Những chiếc bánh quy rất giòn."
+    },
+    {
+      "id": 24870,
+      "quiz_meaning_vi": "phê bình",
+      "meaning_vi_clean": "phê bình; chỉ trích",
+      "examples_clean": [
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "The teacher asked us to criticize the poem.",
+          "example_vi": "Giáo viên yêu cầu chúng tôi phê bình bài thơ."
+        },
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "It is easy to criticize but hard to create.",
+          "example_vi": "Thật dễ để phê bình nhưng khó để sáng tạo."
+        },
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "She was asked to criticize the new book.",
+          "example_vi": "Cô ấy được yêu cầu phê bình cuốn sách mới."
+        },
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "He likes to criticize modern art.",
+          "example_vi": "Anh ấy thích phê bình nghệ thuật hiện đại."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "They criticized him for being late.",
+          "example_vi": "Họ chỉ trích anh ấy vì đã đến muộn."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "Don't criticize others if you are not perfect.",
+          "example_vi": "Đừng chỉ trích người khác nếu bạn không hoàn hảo."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "She was criticized for her poor performance.",
+          "example_vi": "Cô ấy đã bị chỉ trích vì màn trình diễn kém cỏi của mình."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "The government was criticized for the new policy.",
+          "example_vi": "Chính phủ đã bị chỉ trích vì chính sách mới."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "He is always criticizing his colleagues.",
+          "example_vi": "Anh ấy luôn chỉ trích các đồng nghiệp của mình."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "She felt hurt when they criticized her work.",
+          "example_vi": "Cô ấy cảm thấy bị tổn thương khi họ chỉ trích công việc của cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "criticise",
+      "normalized_word": "criticise",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The teacher asked us to criticize the poem.",
+      "example_vi_clean": "Giáo viên yêu cầu chúng tôi phê bình bài thơ."
+    }
+  ]
+}

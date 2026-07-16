@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-099",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24981,
+      "word": "ever",
+      "normalized_word": "ever",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'evə/",
+      "primary_meaning_vi": "bao giờ",
+      "meaning_vi": "bao giờ; từ trước đến giờ; hàng, từng; luôn luôn, mãi mãi; nhỉ; có bao giờ anh (nghe chuyện như thế, thấy chuyện như thế) chưa?; thế không?; anon; suốt từ đó, mãi mãi từ đó; rất là, thật là, lắm, hết sức; mãi mãi; bạn thân của anh (công thức cuối thư)",
+      "example_en": "It was ever thus.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He's back and better than ever.",
+          "example_vi": null
+        },
+        {
+          "example_en": "How can I ever get there in time?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24982,
+      "word": "evidence",
+      "normalized_word": "evidence",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'evidəns/",
+      "primary_meaning_vi": "tính hiển nhiên",
+      "meaning_vi": "tính hiển nhiên; tính rõ ràng, tính rõ rệt; chứng, chứng cớ, bằng chứng; dấu hiệu; chứng chỉ; tố cáo những kẻ đồng loã; chứng tỏ, chứng minh; làm chứng",
+      "example_en": "There is no evidence that anyone was here earlier.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She was furious, as evidenced by her slamming the door.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24983,
+      "word": "exactly",
+      "normalized_word": "exactly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/ig'zæktli/",
+      "primary_meaning_vi": "chính xác",
+      "meaning_vi": "chính xác, đúng đắn; đúng như thế, đúng như vậy (dùng trong câu trả lời)",
+      "example_en": "He divided the coins exactly in half.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He did it that way exactly to prove the point.",
+          "example_vi": null
+        },
+        {
+          "example_en": "So you're saying that we have only three days left? — Yes, exactly!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24984,
+      "word": "exam",
+      "normalized_word": "exam",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ig'zæm/",
+      "primary_meaning_vi": "của examination",
+      "meaning_vi": "(viết tắt) của examination",
+      "example_en": "He examined the crime scene for clues.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The doctor examined the patient.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The witness was examined under oath.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24985,
+      "word": "except",
+      "normalized_word": "except",
+      "cefr_level": "A2",
+      "pos": "conjunction",
+      "pos_vi": "liên từ",
+      "phonetic": "/ik'sept/",
+      "primary_meaning_vi": "trừ ra",
+      "meaning_vi": "trừ ra, loại ra; phản đối, chống lại; trừ, trừ ra, không kể; trừ phi",
+      "example_en": "to except to a witness or his testimony",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There was nothing in the cupboard except a tin of beans.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I never made fun of her except teasingly.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24986,
+      "word": "exchange",
+      "normalized_word": "exchange",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/iks'tʃeindʤ/",
+      "primary_meaning_vi": "sự đổi",
+      "meaning_vi": "sự đổi, sự đổi chác, sự trao đổi; vật trao đổi; sự đổi tiền; nghề đổi tiền; sự hối đoái; cơ quan hối đoái; sự thanh toán nợ bằng hối phiếu; tổng đài (dây nói); đổi, đổi chác, trao đổi; đổi ra được, ngang với (tiền); ,  (hàng hải) chuyển (từ trung đoàn này sang trung đoàn khác, từ tàu này sang tàu khác); đối với một sĩ quan khác",
+      "example_en": "All in all, it was an even exchange.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The stock exchange is open for trading.",
+          "example_vi": null
+        },
+        {
+          "example_en": "NPA-NXX-1234 is standard format, where NPA is the area code and NXX is the exchange.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After an exchange with the manager, we were no wiser.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24987,
+      "word": "exercise",
+      "normalized_word": "exercise",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'eksəsaiz/",
+      "primary_meaning_vi": "sự thi hành",
+      "meaning_vi": "sự thi hành, sự thực hiện; sự sử dụng (quyền, nghề nghiệp, chức năng...); thể dục, sự rèn luyện thân thể; sự rèn luyện trí óc; bài tập; bài thi diễn thuyết; sự tập luyện; sự tập trận sự diễn tập; thể thao quốc phòng; sự thờ cúng, sự lễ bái; (số nhiều) lễ (ở trường học...); làm, thi hành, thực hiện (nhiệm vụ, chức vụ...); hành (nghề...); sử dụng; tập luyện, rèn luyện; thử thách; dạng bị động quấy rầy, làm phiền khổ; làm băn khoăn, làm lo âu; tập luyện; rèn luyện thân thể",
+      "example_en": "The teacher told us that the next exercise is to write an essay.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I do crosswords for mental exercise.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The law guarantees us the free exercise of our rights.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I assisted the ailing vicar in the exercise of his parish duties.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24988,
+      "word": "exhibition",
+      "normalized_word": "exhibition",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,eksi'biʃn/",
+      "primary_meaning_vi": "cuộc triển lãm cuộc trưng bày",
+      "meaning_vi": "cuộc triển lãm cuộc trưng bày; sự phô bày, sự trưng bày; sự bày tỏ, sự biểu lộ; sự thao diễn; học bổng; dở trò dơ dáng dại hình",
+      "example_en": "There was an art exhibition on in the town hall.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24989,
+      "word": "exist",
+      "normalized_word": "exist",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ig'zist/",
+      "primary_meaning_vi": "tồn tại",
+      "meaning_vi": "tồn tại, sống; hiện có",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24990,
+      "word": "expect",
+      "normalized_word": "expect",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/iks'pekt/",
+      "primary_meaning_vi": "mong chờ",
+      "meaning_vi": "mong chờ, chờ đợi, ngóng chờ, trông mong; nghĩ rằng, chắc rằng, cho rằng; có mang, có thai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

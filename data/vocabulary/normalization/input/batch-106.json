@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-106",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25051,
+      "word": "freeze",
+      "normalized_word": "freeze",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/fri:z/",
+      "primary_meaning_vi": "sự đông vì lạnh",
+      "meaning_vi": "sự đông vì lạnh, sự giá lạnh; tình trạng đông vì lạnh; tiết đông giá; sự ổn định; sự hạn định (giá cả, tiền lương...); đóng băng; đông lại (vì lạnh), lạnh cứng; thấy lạnh, thấy giá; thấy ớn lạnh, thấy ghê ghê (vì sợ); làm đóng băng; làm đông, làm lạnh cứng; ướp lạnh (thức ăn); làm (ai) ớn lạnh; làm lạnh nhạt (tình cảm); làm tê liệt (khả năng...); ngăn cản, cản trở (sự thực hiện); ổn định; hạn định (giá cả, tiền lương...); nắm chặt lấy, giữ chặt lấy; cho (ai) ra rìa; phủ đầy băng; bị phủ đầy băng; làm ai sợ hết hồn; mức chịu đựng cao nhất",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25052,
+      "word": "fresh",
+      "normalized_word": "fresh",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/freʃ/",
+      "primary_meaning_vi": "tươi (hoa",
+      "meaning_vi": "tươi (hoa, trứng, sữa, cá, thịt...); tươi tắn, mơn mởn; còn rõ rệt, chưa phai mờ; trong sạch, tươi mát, mát mẻ (không khí...); mới; vừa mới tới, vừa mới ra; non nớt, ít kinh nghiệm; không mặn, không chát (bơ...); ngọt (nước); khoẻ khắn, sảng khoái, khoẻ mạnh, lanh lợi; ,  (từ lóng) hỗn xược, xấc láo, sỗ sàng; ,  (từ lóng) ngà ngà say, chếnh choáng; vừa mới có sữa (bò cái sau khi đẻ); mới; lúc tươi mát, lúc mát mẻ; dòng nước trong mát",
+      "example_en": "He followed the fresh hoofprints to find the deer.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "After taking a beating in the boxing ring, the left side of his face looked like fresh meat.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What a nice fresh breeze.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After a day at sea it was good to feel the fresh water of the stream.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25053,
+      "word": "fridge",
+      "normalized_word": "fridge",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/fridʤ/ (fridge) /fridʤ/ (frige) /fridʤ/",
+      "primary_meaning_vi": "tủ ướp lạnh ((viết tắt) của frigerator)",
+      "meaning_vi": "tủ ướp lạnh ((viết tắt) của frigerator)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25054,
+      "word": "friendship",
+      "normalized_word": "friendship",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'frendʃip/",
+      "primary_meaning_vi": "tình bạn",
+      "meaning_vi": "tình bạn, tình hữu nghị",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25055,
+      "word": "frighten",
+      "normalized_word": "frighten",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'fraitn/",
+      "primary_meaning_vi": "làm hoảng sợ",
+      "meaning_vi": "làm hoảng sợ, làm sợ",
+      "example_en": "Avery puts a sheet over her head, pretending to be a ghost to frighten Emily.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25056,
+      "word": "frightened",
+      "normalized_word": "frightened",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'fraitnd/",
+      "primary_meaning_vi": "hoảng sợ",
+      "meaning_vi": "hoảng sợ, khiếp đảm",
+      "example_en": "Avery puts a sheet over her head, pretending to be a ghost to frighten Emily.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25057,
+      "word": "frightening",
+      "normalized_word": "frightening",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": null,
+      "primary_meaning_vi": "kinh khủng",
+      "meaning_vi": "kinh khủng, khủng khiếp",
+      "example_en": "Avery puts a sheet over her head, pretending to be a ghost to frighten Emily.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Riding the rollercoaster was a frightening experience.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25058,
+      "word": "fry",
+      "normalized_word": "fry",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/frai/",
+      "primary_meaning_vi": "cá mới nở",
+      "meaning_vi": "cá mới nở, cá bột; cá hồi hai năm; thịt rán; rán, chiên; fish",
+      "example_en": "to be in a fry",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a fry of children",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25059,
+      "word": "fully",
+      "normalized_word": "fully",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'fuli/",
+      "primary_meaning_vi": "đầy đủ",
+      "meaning_vi": "đầy đủ, hoàn toàn",
+      "example_en": "He fully met his responsibilities.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He is fully capable of meeting his responsibilities.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25060,
+      "word": "furniture",
+      "normalized_word": "furniture",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'fə:nitʃə/",
+      "primary_meaning_vi": "đồ đạc (trong nhà)",
+      "meaning_vi": "đồ đạc (trong nhà); trang bị (của máy móc, tàu bè); cái chèn,  lanhgô; yên cương (ngựa); tiền; sách vở; trí thức và óc thông minh",
+      "example_en": "A chair is furniture. Sofas are also furniture.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

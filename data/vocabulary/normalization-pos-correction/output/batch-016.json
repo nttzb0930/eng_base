@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24337,
+      "quiz_meaning_vi": "trái cây",
+      "meaning_vi_clean": "trái cây",
+      "examples_clean": [
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "I eat fresh fruit every morning.",
+          "example_vi": "Tôi ăn trái cây tươi mỗi sáng."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "She bought some fruit at the market.",
+          "example_vi": "Cô ấy đã mua một ít trái cây ở chợ."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "Do you like to eat tropical fruit?",
+          "example_vi": "Bạn có thích ăn trái cây nhiệt đới không?"
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "The bowl is full of delicious fruit.",
+          "example_vi": "Cái bát đầy trái cây ngon lành."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "He washes the fruit before eating it.",
+          "example_vi": "Anh ấy rửa trái cây trước khi ăn."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "We need to buy more fruit for the party.",
+          "example_vi": "Chúng ta cần mua thêm trái cây cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "This kind of fruit is very sweet.",
+          "example_vi": "Loại trái cây này rất ngọt."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "They grow their own fruit in the garden.",
+          "example_vi": "Họ tự trồng trái cây trong vườn."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "Please put the fruit in the refrigerator.",
+          "example_vi": "Làm ơn để trái cây vào tủ lạnh."
+        },
+        {
+          "meaning_vi": "trái cây",
+          "example_en": "The children love eating fruit for a snack.",
+          "example_vi": "Bọn trẻ thích ăn trái cây làm bữa phụ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fruit được dùng làm danh từ trong tất cả các ví dụ với nghĩa trái cây."
+      },
+      "word": "fruit",
+      "normalized_word": "fruit",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I eat fresh fruit every morning.",
+      "example_vi_clean": "Tôi ăn trái cây tươi mỗi sáng."
+    },
+    {
+      "id": 24338,
+      "quiz_meaning_vi": "đầy",
+      "meaning_vi_clean": "đầy",
+      "examples_clean": [
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The glass is full of water.",
+          "example_vi": "Cái ly đầy nước."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "Her bag is full of books.",
+          "example_vi": "Cái túi của cô ấy đầy sách."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The room was full of people.",
+          "example_vi": "Căn phòng đầy người."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The bus is full today.",
+          "example_vi": "Xe buýt hôm nay chật kín người."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "My plate is full of vegetables.",
+          "example_vi": "Đĩa của tôi đầy rau."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The parking lot is full now.",
+          "example_vi": "Bãi đỗ xe hiện đã đầy."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "His life is full of happiness.",
+          "example_vi": "Cuộc sống của anh ấy tràn đầy hạnh phúc."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The box is full of old toys.",
+          "example_vi": "Cái hộp đầy những món đồ chơi cũ."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The streets are full of cars.",
+          "example_vi": "Đường phố đầy xe cộ."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The fridge is full of food.",
+          "example_vi": "Tủ lạnh đầy thức ăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ full được dùng làm tính từ bổ nghĩa cho danh từ hoặc làm vị ngữ trong tất cả các ví dụ."
+      },
+      "word": "full",
+      "normalized_word": "full",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The glass is full of water.",
+      "example_vi_clean": "Cái ly đầy nước."
+    },
+    {
+      "id": 24339,
+      "quiz_meaning_vi": "vui vẻ",
+      "meaning_vi_clean": "vui vẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "It was a fun day at the beach.",
+          "example_vi": "Đó là một ngày vui vẻ ở bãi biển."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "We had a fun time together.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian vui vẻ bên nhau."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "Learning English can be fun.",
+          "example_vi": "Học tiếng Anh có thể rất vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "They are a fun group of friends.",
+          "example_vi": "Họ là một nhóm bạn vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "That was a fun game to play.",
+          "example_vi": "Đó là một trò chơi vui vẻ để tham gia."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She has a fun personality.",
+          "example_vi": "Cô ấy có một tính cách vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "We went on a fun trip last summer.",
+          "example_vi": "Chúng tôi đã có một chuyến đi vui vẻ vào mùa hè năm ngoái."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "It is a fun activity for children.",
+          "example_vi": "Đó là một hoạt động vui vẻ cho trẻ em."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The party was very fun.",
+          "example_vi": "Bữa tiệc rất vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "He told a fun story to the class.",
+          "example_vi": "Anh ấy đã kể một câu chuyện vui vẻ cho cả lớp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ fun được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các ví dụ."
+      },
+      "word": "fun",
+      "normalized_word": "fun",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was a fun day at the beach.",
+      "example_vi_clean": "Đó là một ngày vui vẻ ở bãi biển."
+    },
+    {
+      "id": 24340,
+      "quiz_meaning_vi": "buồn cười",
+      "meaning_vi_clean": "buồn cười",
+      "examples_clean": [
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "That is a very funny story.",
+          "example_vi": "Đó là một câu chuyện rất buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "He made a funny face at me.",
+          "example_vi": "Anh ấy làm một vẻ mặt buồn cười với tôi."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "The movie was so funny.",
+          "example_vi": "Bộ phim đó thật buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "She told a funny joke.",
+          "example_vi": "Cô ấy đã kể một câu chuyện đùa buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "I heard a funny noise outside.",
+          "example_vi": "Tôi nghe thấy một tiếng động buồn cười bên ngoài."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "The clown is very funny.",
+          "example_vi": "Chú hề rất buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "They wore funny hats to the party.",
+          "example_vi": "Họ đội những chiếc mũ buồn cười đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "It is a funny thing to say.",
+          "example_vi": "Đó là một điều buồn cười để nói."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "The dog did a funny trick.",
+          "example_vi": "Con chó đã làm một trò buồn cười."
+        },
+        {
+          "meaning_vi": "buồn cười",
+          "example_en": "We watched a funny cartoon.",
+          "example_vi": "Chúng tôi đã xem một bộ phim hoạt hình buồn cười."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ funny được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các ví dụ."
+      },
+      "word": "funny",
+      "normalized_word": "funny",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "That is a very funny story.",
+      "example_vi_clean": "Đó là một câu chuyện rất buồn cười."
+    },
+    {
+      "id": 24341,
+      "quiz_meaning_vi": "trò chơi",
+      "meaning_vi_clean": "trò chơi",
+      "examples_clean": [
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "We played a fun game together.",
+          "example_vi": "Chúng tôi đã chơi một trò chơi vui vẻ cùng nhau."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "The children love this game.",
+          "example_vi": "Bọn trẻ rất thích trò chơi này."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "He is good at every game.",
+          "example_vi": "Anh ấy giỏi mọi trò chơi."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "Let us start a new game.",
+          "example_vi": "Hãy bắt đầu một trò chơi mới."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "This game is very easy to learn.",
+          "example_vi": "Trò chơi này rất dễ học."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "They won the game yesterday.",
+          "example_vi": "Họ đã thắng trò chơi ngày hôm qua."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "I bought a new board game.",
+          "example_vi": "Tôi đã mua một trò chơi cờ bàn mới."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "The game lasts for one hour.",
+          "example_vi": "Trò chơi kéo dài trong một giờ."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "She is teaching me a new game.",
+          "example_vi": "Cô ấy đang dạy tôi một trò chơi mới."
+        },
+        {
+          "meaning_vi": "trò chơi",
+          "example_en": "We finished the game quickly.",
+          "example_vi": "Chúng tôi đã kết thúc trò chơi một cách nhanh chóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ game được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "game",
+      "normalized_word": "game",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We played a fun game together.",
+      "example_vi_clean": "Chúng tôi đã chơi một trò chơi vui vẻ cùng nhau."
+    },
+    {
+      "id": 24345,
+      "quiz_meaning_vi": "con ma",
+      "meaning_vi_clean": "con ma",
+      "examples_clean": [
+        {
+          "meaning_vi": "con ma",
+          "example_en": "The child is afraid of a ghost.",
+          "example_vi": "Đứa trẻ sợ con ma."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "He told a story about a ghost.",
+          "example_vi": "Anh ấy đã kể một câu chuyện về con ma."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "She saw a ghost in the old house.",
+          "example_vi": "Cô ấy đã thấy một con ma trong ngôi nhà cũ."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "Is there really a ghost here?",
+          "example_vi": "Có thực sự có con ma ở đây không?"
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "The ghost appeared in the dark.",
+          "example_vi": "Con ma xuất hiện trong bóng tối."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "They dressed up as a ghost for Halloween.",
+          "example_vi": "Họ đã hóa trang thành con ma cho lễ Halloween."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "I do not believe in any ghost.",
+          "example_vi": "Tôi không tin vào bất kỳ con ma nào."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "The ghost made a scary sound.",
+          "example_vi": "Con ma đã tạo ra một âm thanh đáng sợ."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "He drew a picture of a ghost.",
+          "example_vi": "Anh ấy đã vẽ một bức tranh về con ma."
+        },
+        {
+          "meaning_vi": "con ma",
+          "example_en": "The movie is about a friendly ghost.",
+          "example_vi": "Bộ phim nói về một con ma thân thiện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ ghost được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "ghost",
+      "normalized_word": "ghost",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The child is afraid of a ghost.",
+      "example_vi_clean": "Đứa trẻ sợ con ma."
+    },
+    {
+      "id": 24346,
+      "quiz_meaning_vi": "món quà",
+      "meaning_vi_clean": "món quà",
+      "examples_clean": [
+        {
+          "meaning_vi": "món quà",
+          "example_en": "I bought a gift for my mother.",
+          "example_vi": "Tôi đã mua một món quà cho mẹ tôi."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "She opened her birthday gift.",
+          "example_vi": "Cô ấy đã mở món quà sinh nhật của mình."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "He gave me a nice gift.",
+          "example_vi": "Anh ấy đã tặng tôi một món quà đẹp."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "This is a special gift for you.",
+          "example_vi": "Đây là một món quà đặc biệt dành cho bạn."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "They wrapped the gift in paper.",
+          "example_vi": "Họ đã gói món quà bằng giấy."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "I received a gift from my friend.",
+          "example_vi": "Tôi đã nhận được một món quà từ bạn tôi."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "We need to choose a gift for him.",
+          "example_vi": "Chúng ta cần chọn một món quà cho anh ấy."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "The gift was inside a big box.",
+          "example_vi": "Món quà nằm bên trong một cái hộp lớn."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "She likes every gift she gets.",
+          "example_vi": "Cô ấy thích mọi món quà cô ấy nhận được."
+        },
+        {
+          "meaning_vi": "món quà",
+          "example_en": "He forgot to bring a gift.",
+          "example_vi": "Anh ấy đã quên mang theo một món quà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ gift được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "gift",
+      "normalized_word": "gift",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I bought a gift for my mother.",
+      "example_vi_clean": "Tôi đã mua một món quà cho mẹ tôi."
+    },
+    {
+      "id": 24348,
+      "quiz_meaning_vi": "đưa",
+      "meaning_vi_clean": "đưa",
+      "examples_clean": [
+        {
+          "meaning_vi": "đưa",
+          "example_en": "Please give me the book.",
+          "example_vi": "Làm ơn đưa cho tôi cuốn sách."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "She will give him a pen.",
+          "example_vi": "Cô ấy sẽ đưa cho anh ấy một cái bút."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "Can you give me some water?",
+          "example_vi": "Bạn có thể đưa cho tôi ít nước không?"
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "He gave her a beautiful flower.",
+          "example_vi": "Anh ấy đã đưa cho cô ấy một bông hoa đẹp."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "They give us their address.",
+          "example_vi": "Họ đưa cho chúng tôi địa chỉ của họ."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "I give my friend a small gift.",
+          "example_vi": "Tôi đưa cho bạn tôi một món quà nhỏ."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "Please give the key to him.",
+          "example_vi": "Làm ơn đưa chìa khóa cho anh ấy."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "She gave me a piece of paper.",
+          "example_vi": "Cô ấy đã đưa cho tôi một mảnh giấy."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "We give them our help.",
+          "example_vi": "Chúng tôi đưa cho họ sự giúp đỡ của mình."
+        },
+        {
+          "meaning_vi": "đưa",
+          "example_en": "He gave the money to the shopkeeper.",
+          "example_vi": "Anh ấy đã đưa tiền cho người bán hàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa động từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "verb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ give được dùng làm động từ trong tất cả các ví dụ."
+      },
+      "word": "give",
+      "normalized_word": "give",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please give me the book.",
+      "example_vi_clean": "Làm ơn đưa cho tôi cuốn sách."
+    },
+    {
+      "id": 24350,
+      "quiz_meaning_vi": "cái ly",
+      "meaning_vi_clean": "cái ly",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "I need a glass of water.",
+          "example_vi": "Tôi cần một cái ly nước."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "She broke a glass on the floor.",
+          "example_vi": "Cô ấy đã làm vỡ một cái ly trên sàn nhà."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "He filled the glass with juice.",
+          "example_vi": "Anh ấy đã đổ đầy cái ly bằng nước ép."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "There is a glass on the table.",
+          "example_vi": "Có một cái ly trên bàn."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "Please wash the glass.",
+          "example_vi": "Làm ơn rửa cái ly."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "I bought a new glass today.",
+          "example_vi": "Tôi đã mua một cái ly mới hôm nay."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "The glass is very clean.",
+          "example_vi": "Cái ly rất sạch."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "She put the glass in the sink.",
+          "example_vi": "Cô ấy đặt cái ly vào bồn rửa."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "He drank from a glass.",
+          "example_vi": "Anh ấy đã uống từ một cái ly."
+        },
+        {
+          "meaning_vi": "cái ly",
+          "example_en": "The glass fell and broke.",
+          "example_vi": "Cái ly đã rơi và vỡ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ glass được dùng làm danh từ trong tất cả các ví dụ."
+      },
+      "word": "glass",
+      "normalized_word": "glass",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I need a glass of water.",
+      "example_vi_clean": "Tôi cần một cái ly nước."
+    },
+    {
+      "id": 24353,
+      "quiz_meaning_vi": "tốt",
+      "meaning_vi_clean": "tốt",
+      "examples_clean": [
+        {
+          "meaning_vi": "tốt",
+          "example_en": "She is a good student.",
+          "example_vi": "Cô ấy là một học sinh tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "It is a good day to go out.",
+          "example_vi": "Đó là một ngày tốt để đi ra ngoài."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "He did a good job.",
+          "example_vi": "Anh ấy đã làm một công việc tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "This is a good book to read.",
+          "example_vi": "Đây là một cuốn sách tốt để đọc."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "We had a good time at the party.",
+          "example_vi": "Chúng tôi đã có một khoảng thời gian tốt tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "That is a good idea.",
+          "example_vi": "Đó là một ý tưởng tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "She is a good friend of mine.",
+          "example_vi": "Cô ấy là một người bạn tốt của tôi."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "The food tastes very good.",
+          "example_vi": "Thức ăn có vị rất tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "He is in good health.",
+          "example_vi": "Anh ấy đang có sức khỏe tốt."
+        },
+        {
+          "meaning_vi": "tốt",
+          "example_en": "It is a good place to live.",
+          "example_vi": "Đó là một nơi tốt để sống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ phổ biến nhất và 10 ví dụ minh họa đúng từ loại.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ good được dùng làm tính từ bổ nghĩa cho danh từ trong tất cả các ví dụ."
+      },
+      "word": "good",
+      "normalized_word": "good",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She is a good student.",
+      "example_vi_clean": "Cô ấy là một học sinh tốt."
+    }
+  ]
+}

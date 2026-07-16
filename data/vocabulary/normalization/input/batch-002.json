@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-002",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24011,
+      "word": "age",
+      "normalized_word": "age",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/eidʤ/",
+      "primary_meaning_vi": "tuổi",
+      "meaning_vi": "tuổi; tuổi già, tuổi tác; thời đại, thời kỳ; tuổi trưởng thành; , ((thường) số nhiều) lâu lắm, hàng thế kỷ; thế hệ; xử sự đúng lúc với bậc tuổi mình; consent; già mà còn khoẻ, nom trẻ hơn tuổi; (thông tục) một thời gian dài, hàng thế kỷ; tuổi già, tuổi già sung sướng; tuổi già, tuổi hạc; những bệnh tật lúc tuổi già; look",
+      "example_en": "the age of infancy",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the age of consent; the age of discretion",
+          "example_vi": null
+        },
+        {
+          "example_en": "the golden age; the age of Pericles",
+          "example_vi": null
+        },
+        {
+          "example_en": "the Bronze Age was followed by the Iron Age; the Tithonian Age was the last in the Late Jurassic epoch",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24012,
+      "word": "ago",
+      "normalized_word": "ago",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/ə'gou/",
+      "primary_meaning_vi": "trước đây",
+      "meaning_vi": "trước đây, về trước",
+      "example_en": "in days ago/in days agone",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Woe the day- she is agone!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24013,
+      "word": "agree",
+      "normalized_word": "agree",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'gri:/",
+      "primary_meaning_vi": "đồng ý",
+      "meaning_vi": "đồng ý, tán thành, bằng lòng, thoả thuận; hoà thuận; hợp với, phù hợp với, thích hợp với; hợp (về cách, giống, số...); cân bằng (các khoản chi thu...); đồng ý!, tán thành!; sống với nhau như chó với mèo; differ",
+      "example_en": "all parties agree in the expediency of the law.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to agree to an offer, or to opinion.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the picture does not agree with the original; the two scales agree exactly.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the same food does not agree with every constitution.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24014,
+      "word": "airplane",
+      "normalized_word": "airplane",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'eəplein/",
+      "primary_meaning_vi": "máy bay",
+      "meaning_vi": "máy bay, tàu bay",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24015,
+      "word": "airport",
+      "normalized_word": "airport",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "sân bay",
+      "meaning_vi": "sân bay, phi trường",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24016,
+      "word": "album",
+      "normalized_word": "album",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ælbəm/",
+      "primary_meaning_vi": "tập ảnh",
+      "meaning_vi": "tập ảnh, quyển anbom",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24017,
+      "word": "almost",
+      "normalized_word": "almost",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ɔ:lmoust/",
+      "primary_meaning_vi": "hầu (như)",
+      "meaning_vi": "hầu (như), gần (như), suýt nữa, tí nữa",
+      "example_en": "In all the submissions, they found four papers that were clearly worth publishing and another dozen almosts.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Almost all people went there. - Not all but very close to it.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24018,
+      "word": "along",
+      "normalized_word": "along",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "giới từ",
+      "phonetic": "/ə'lɔɳ/",
+      "primary_meaning_vi": "theo chiều dài",
+      "meaning_vi": "theo chiều dài, suốt theo; tiến lên, về phía trước; vì, do bởi; theo cùng với, song song với; luôn luôn, bao giờ cũng; dọc theo, theo",
+      "example_en": "John played the piano and everyone sang along.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Don't stop here. Just move along.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24019,
+      "word": "already",
+      "normalized_word": "already",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/ɔ:l'redi/",
+      "primary_meaning_vi": "đã",
+      "meaning_vi": "đã, rồi; đã... rồi",
+      "example_en": "Are you quitting already?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Be quiet already!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24020,
+      "word": "also",
+      "normalized_word": "also",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ɔ:lsou/",
+      "primary_meaning_vi": "cũng",
+      "meaning_vi": "cũng, cũng vậy, cũng thế; hơn nữa, ngoài ra",
+      "example_en": "They had porridge for breakfast, and also toast.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

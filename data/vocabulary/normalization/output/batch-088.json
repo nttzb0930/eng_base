@@ -1,0 +1,680 @@
+{
+  "records": [
+    {
+      "id": 24871,
+      "quiz_meaning_vi": "phê bình",
+      "meaning_vi_clean": "phê bình; phê phán; bình phẩm; chỉ trích",
+      "examples_clean": [
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "The teacher criticized his essay for being too short.",
+          "example_vi": "Giáo viên phê bình bài luận của anh ấy vì quá ngắn."
+        },
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "She was criticized for her lack of preparation.",
+          "example_vi": "Cô ấy bị phê bình vì thiếu sự chuẩn bị."
+        },
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "It is easy to criticize others when you are not involved.",
+          "example_vi": "Thật dễ dàng để phê bình người khác khi bạn không tham gia."
+        },
+        {
+          "meaning_vi": "phê bình",
+          "example_en": "They criticized the new policy during the meeting.",
+          "example_vi": "Họ đã phê bình chính sách mới trong cuộc họp."
+        },
+        {
+          "meaning_vi": "phê phán",
+          "example_en": "The article strongly criticizes the government's recent decisions.",
+          "example_vi": "Bài báo phê phán mạnh mẽ các quyết định gần đây của chính phủ."
+        },
+        {
+          "meaning_vi": "phê phán",
+          "example_en": "He often criticizes the way things are done here.",
+          "example_vi": "Anh ấy thường phê phán cách mọi việc được thực hiện ở đây."
+        },
+        {
+          "meaning_vi": "bình phẩm",
+          "example_en": "Critics gathered to criticize the new art exhibition.",
+          "example_vi": "Các nhà phê bình tập trung để bình phẩm triển lãm nghệ thuật mới."
+        },
+        {
+          "meaning_vi": "bình phẩm",
+          "example_en": "Don't criticize my cooking until you have tasted it.",
+          "example_vi": "Đừng bình phẩm món ăn của tôi cho đến khi bạn nếm thử nó."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "The opposition party continues to criticize the leader.",
+          "example_vi": "Đảng đối lập tiếp tục chỉ trích người lãnh đạo."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "She felt hurt when her colleagues criticized her work.",
+          "example_vi": "Cô ấy cảm thấy bị tổn thương khi đồng nghiệp chỉ trích công việc của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung đủ 10 ví dụ minh họa cho các nghĩa.",
+      "word": "criticize",
+      "normalized_word": "criticize",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The teacher criticized his essay for being too short.",
+      "example_vi_clean": "Giáo viên phê bình bài luận của anh ấy vì quá ngắn."
+    },
+    {
+      "id": 24872,
+      "quiz_meaning_vi": "dấu chữ thập",
+      "meaning_vi_clean": "dấu chữ thập; thánh giá",
+      "examples_clean": [
+        {
+          "meaning_vi": "dấu chữ thập",
+          "example_en": "Put a cross next to the correct answer.",
+          "example_vi": "Hãy đặt một dấu chữ thập bên cạnh câu trả lời đúng."
+        },
+        {
+          "meaning_vi": "dấu chữ thập",
+          "example_en": "She drew a small cross on the map.",
+          "example_vi": "Cô ấy vẽ một dấu chữ thập nhỏ trên bản đồ."
+        },
+        {
+          "meaning_vi": "dấu chữ thập",
+          "example_en": "The red cross marks the meeting point.",
+          "example_vi": "Dấu chữ thập màu đỏ đánh dấu điểm gặp mặt."
+        },
+        {
+          "meaning_vi": "dấu chữ thập",
+          "example_en": "Each wrong answer received a cross.",
+          "example_vi": "Mỗi câu trả lời sai đều bị đánh một dấu chữ thập."
+        },
+        {
+          "meaning_vi": "dấu chữ thập",
+          "example_en": "The two lines form a cross.",
+          "example_vi": "Hai đường thẳng tạo thành một dấu chữ thập."
+        },
+        {
+          "meaning_vi": "dấu chữ thập",
+          "example_en": "There is a cross above the door.",
+          "example_vi": "Có một dấu chữ thập phía trên cửa."
+        },
+        {
+          "meaning_vi": "thánh giá",
+          "example_en": "She wears a silver cross around her neck.",
+          "example_vi": "Cô ấy đeo một cây thánh giá bằng bạc quanh cổ."
+        },
+        {
+          "meaning_vi": "thánh giá",
+          "example_en": "A wooden cross stood beside the church.",
+          "example_vi": "Một cây thánh giá bằng gỗ đứng cạnh nhà thờ."
+        },
+        {
+          "meaning_vi": "thánh giá",
+          "example_en": "The old cross was carefully restored.",
+          "example_vi": "Cây thánh giá cũ đã được phục chế cẩn thận."
+        },
+        {
+          "meaning_vi": "thánh giá",
+          "example_en": "The cross is an important Christian symbol.",
+          "example_vi": "Thánh giá là một biểu tượng quan trọng của Kitô giáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ đúng POS danh từ; loại nghĩa tính từ và động từ, chỉ giữ hai nghĩa danh từ phổ biến.",
+      "word": "cross",
+      "normalized_word": "cross",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Put a cross next to the correct answer.",
+      "example_vi_clean": "Hãy đặt một dấu chữ thập bên cạnh câu trả lời đúng."
+    },
+    {
+      "id": 24873,
+      "quiz_meaning_vi": "đám đông",
+      "meaning_vi_clean": "đám đông; nhóm người; sự tụ tập",
+      "examples_clean": [
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "A large crowd gathered to watch the parade.",
+          "example_vi": "Một đám đông lớn đã tụ tập để xem cuộc diễu hành."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The crowd cheered when the singer appeared.",
+          "example_vi": "Đám đông reo hò khi ca sĩ xuất hiện."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "He disappeared into the crowd.",
+          "example_vi": "Anh ấy biến mất vào đám đông."
+        },
+        {
+          "meaning_vi": "đám đông",
+          "example_en": "The police tried to control the angry crowd.",
+          "example_vi": "Cảnh sát đã cố gắng kiểm soát đám đông đang giận dữ."
+        },
+        {
+          "meaning_vi": "nhóm người",
+          "example_en": "He is not the type of person to follow the crowd.",
+          "example_vi": "Anh ấy không phải là kiểu người chạy theo nhóm người khác."
+        },
+        {
+          "meaning_vi": "nhóm người",
+          "example_en": "She felt uncomfortable in such a noisy crowd.",
+          "example_vi": "Cô ấy cảm thấy không thoải mái trong một nhóm người ồn ào như vậy."
+        },
+        {
+          "meaning_vi": "nhóm người",
+          "example_en": "The crowd of students waited for the results.",
+          "example_vi": "Nhóm học sinh chờ đợi kết quả."
+        },
+        {
+          "meaning_vi": "sự tụ tập",
+          "example_en": "The crowd at the station was very dense.",
+          "example_vi": "Sự tụ tập tại nhà ga rất đông đúc."
+        },
+        {
+          "meaning_vi": "sự tụ tập",
+          "example_en": "There was a huge crowd outside the stadium.",
+          "example_vi": "Có một sự tụ tập lớn bên ngoài sân vận động."
+        },
+        {
+          "meaning_vi": "sự tụ tập",
+          "example_en": "The crowd dispersed after the concert ended.",
+          "example_vi": "Sự tụ tập giải tán sau khi buổi hòa nhạc kết thúc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là noun, đã sửa lại nghĩa và bổ sung ví dụ phù hợp.",
+      "word": "crowd",
+      "normalized_word": "crowd",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A large crowd gathered to watch the parade.",
+      "example_vi_clean": "Một đám đông lớn đã tụ tập để xem cuộc diễu hành."
+    },
+    {
+      "id": 24874,
+      "quiz_meaning_vi": "đông đúc",
+      "meaning_vi_clean": "đông đúc; đầy; chật ních",
+      "examples_clean": [
+        {
+          "meaning_vi": "đông đúc",
+          "example_en": "The streets were very crowded during the festival.",
+          "example_vi": "Các con phố rất đông đúc trong suốt lễ hội."
+        },
+        {
+          "meaning_vi": "đông đúc",
+          "example_en": "We visited a crowded market in the city center.",
+          "example_vi": "Chúng tôi đã ghé thăm một khu chợ đông đúc ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "đông đúc",
+          "example_en": "It is a crowded beach in the summer.",
+          "example_vi": "Đó là một bãi biển đông đúc vào mùa hè."
+        },
+        {
+          "meaning_vi": "đông đúc",
+          "example_en": "The train was crowded with commuters.",
+          "example_vi": "Chuyến tàu rất đông đúc với những người đi làm."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The room was crowded with furniture.",
+          "example_vi": "Căn phòng đầy ắp đồ đạc."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "The shelves were crowded with books.",
+          "example_vi": "Các kệ đầy ắp sách."
+        },
+        {
+          "meaning_vi": "đầy",
+          "example_en": "Her mind was crowded with many thoughts.",
+          "example_vi": "Tâm trí cô ấy đầy ắp những suy nghĩ."
+        },
+        {
+          "meaning_vi": "chật ních",
+          "example_en": "The bus was crowded, so we had to stand.",
+          "example_vi": "Chiếc xe buýt chật ních, vì vậy chúng tôi phải đứng."
+        },
+        {
+          "meaning_vi": "chật ních",
+          "example_en": "The elevator was crowded with people.",
+          "example_vi": "Thang máy chật ních người."
+        },
+        {
+          "meaning_vi": "chật ních",
+          "example_en": "The small cafe was crowded with students.",
+          "example_vi": "Quán cà phê nhỏ chật ních sinh viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung đủ 10 ví dụ cho các nghĩa.",
+      "word": "crowded",
+      "normalized_word": "crowded",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The streets were very crowded during the festival.",
+      "example_vi_clean": "Các con phố rất đông đúc trong suốt lễ hội."
+    },
+    {
+      "id": 24875,
+      "quiz_meaning_vi": "mũ miện",
+      "meaning_vi_clean": "mũ miện; đỉnh; phần thưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "mũ miện",
+          "example_en": "The king wore a golden crown on his head.",
+          "example_vi": "Nhà vua đội một chiếc mũ miện bằng vàng trên đầu."
+        },
+        {
+          "meaning_vi": "mũ miện",
+          "example_en": "The queen's crown was decorated with jewels.",
+          "example_vi": "Chiếc mũ miện của nữ hoàng được trang trí bằng đá quý."
+        },
+        {
+          "meaning_vi": "mũ miện",
+          "example_en": "He inherited the crown from his father.",
+          "example_vi": "Anh ấy thừa kế chiếc mũ miện từ cha mình."
+        },
+        {
+          "meaning_vi": "mũ miện",
+          "example_en": "The crown is a symbol of royal power.",
+          "example_vi": "Mũ miện là biểu tượng của quyền lực hoàng gia."
+        },
+        {
+          "meaning_vi": "đỉnh",
+          "example_en": "They reached the crown of the mountain at noon.",
+          "example_vi": "Họ đã lên đến đỉnh núi vào buổi trưa."
+        },
+        {
+          "meaning_vi": "đỉnh",
+          "example_en": "The crown of the tree was covered in snow.",
+          "example_vi": "Đỉnh của cái cây bị bao phủ bởi tuyết."
+        },
+        {
+          "meaning_vi": "đỉnh",
+          "example_en": "He touched the crown of his head.",
+          "example_vi": "Anh ấy chạm vào đỉnh đầu của mình."
+        },
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "Winning the gold medal was the crown of her career.",
+          "example_vi": "Giành huy chương vàng là phần thưởng cho sự nghiệp của cô ấy."
+        },
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "Hard work is the crown of success.",
+          "example_vi": "Làm việc chăm chỉ là phần thưởng của sự thành công."
+        },
+        {
+          "meaning_vi": "phần thưởng",
+          "example_en": "This award is the crown of his long efforts.",
+          "example_vi": "Giải thưởng này là phần thưởng cho những nỗ lực lâu dài của anh ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là noun, đã lọc nghĩa và bổ sung ví dụ.",
+      "word": "crown",
+      "normalized_word": "crown",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The king wore a golden crown on his head.",
+      "example_vi_clean": "Nhà vua đội một chiếc mũ miện bằng vàng trên đầu."
+    },
+    {
+      "id": 24876,
+      "quiz_meaning_vi": "cuộc đi chơi biển",
+      "meaning_vi_clean": "cuộc đi chơi biển; đi chơi biển",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc đi chơi biển",
+          "example_en": "They went on a cruise around the Mediterranean.",
+          "example_vi": "Họ đã đi một cuộc đi chơi biển quanh Địa Trung Hải."
+        },
+        {
+          "meaning_vi": "cuộc đi chơi biển",
+          "example_en": "The cruise was the highlight of their vacation.",
+          "example_vi": "Cuộc đi chơi biển là điểm nhấn trong kỳ nghỉ của họ."
+        },
+        {
+          "meaning_vi": "cuộc đi chơi biển",
+          "example_en": "She booked a luxury cruise for her parents.",
+          "example_vi": "Cô ấy đã đặt một cuộc đi chơi biển sang trọng cho cha mẹ mình."
+        },
+        {
+          "meaning_vi": "cuộc đi chơi biển",
+          "example_en": "The cruise ship departed early in the morning.",
+          "example_vi": "Con tàu của cuộc đi chơi biển đã khởi hành vào sáng sớm."
+        },
+        {
+          "meaning_vi": "đi chơi biển",
+          "example_en": "We plan to cruise along the coast next summer.",
+          "example_vi": "Chúng tôi dự định đi chơi biển dọc theo bờ biển vào mùa hè tới."
+        },
+        {
+          "meaning_vi": "đi chơi biển",
+          "example_en": "They love to cruise on the open sea.",
+          "example_vi": "Họ thích đi chơi biển trên vùng biển rộng."
+        },
+        {
+          "meaning_vi": "đi chơi biển",
+          "example_en": "It is relaxing to cruise on a calm ocean.",
+          "example_vi": "Thật thư giãn khi đi chơi biển trên đại dương yên bình."
+        },
+        {
+          "meaning_vi": "đi chơi biển",
+          "example_en": "He decided to cruise to the nearby islands.",
+          "example_vi": "Anh ấy quyết định đi chơi biển đến các hòn đảo gần đó."
+        },
+        {
+          "meaning_vi": "đi chơi biển",
+          "example_en": "Many tourists cruise to see the sunset.",
+          "example_vi": "Nhiều du khách đi chơi biển để ngắm hoàng hôn."
+        },
+        {
+          "meaning_vi": "đi chơi biển",
+          "example_en": "They spent the whole day cruising.",
+          "example_vi": "Họ đã dành cả ngày để đi chơi biển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là noun, đã sửa lại nghĩa và bổ sung ví dụ.",
+      "word": "cruise",
+      "normalized_word": "cruise",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They went on a cruise around the Mediterranean.",
+      "example_vi_clean": "Họ đã đi một cuộc đi chơi biển quanh Địa Trung Hải."
+    },
+    {
+      "id": 24877,
+      "quiz_meaning_vi": "tủ",
+      "meaning_vi_clean": "tủ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tủ",
+          "example_en": "Put the cups back into the cupboard.",
+          "example_vi": "Hãy cất những chiếc cốc trở lại vào tủ."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "She cleaned the kitchen cupboard yesterday.",
+          "example_vi": "Cô ấy đã dọn dẹp cái tủ bếp vào ngày hôm qua."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "There is some food in the cupboard.",
+          "example_vi": "Có một ít thức ăn trong tủ."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "He opened the cupboard to find a plate.",
+          "example_vi": "Anh ấy mở tủ để tìm một cái đĩa."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "The cupboard is full of old dishes.",
+          "example_vi": "Cái tủ đầy những bát đĩa cũ."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "She bought a new wooden cupboard for the dining room.",
+          "example_vi": "Cô ấy đã mua một cái tủ gỗ mới cho phòng ăn."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "Please lock the cupboard after using it.",
+          "example_vi": "Vui lòng khóa tủ sau khi sử dụng."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "He hid the gift in the cupboard.",
+          "example_vi": "Anh ấy giấu món quà trong tủ."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "The cupboard door is broken.",
+          "example_vi": "Cánh cửa tủ bị hỏng."
+        },
+        {
+          "meaning_vi": "tủ",
+          "example_en": "She organized the spices in the cupboard.",
+          "example_vi": "Cô ấy sắp xếp các loại gia vị trong tủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung đủ 10 ví dụ.",
+      "word": "cupboard",
+      "normalized_word": "cupboard",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Put the cups back into the cupboard.",
+      "example_vi_clean": "Hãy cất những chiếc cốc trở lại vào tủ."
+    },
+    {
+      "id": 24878,
+      "quiz_meaning_vi": "bột ca ri",
+      "meaning_vi_clean": "bột ca ri; món ca ri",
+      "examples_clean": [
+        {
+          "meaning_vi": "bột ca ri",
+          "example_en": "Add a teaspoon of curry powder to the sauce.",
+          "example_vi": "Thêm một thìa cà phê bột ca ri vào nước sốt."
+        },
+        {
+          "meaning_vi": "bột ca ri",
+          "example_en": "She bought some fresh curry powder at the market.",
+          "example_vi": "Cô ấy đã mua một ít bột ca ri tươi ở chợ."
+        },
+        {
+          "meaning_vi": "bột ca ri",
+          "example_en": "The curry powder gives the dish a spicy flavor.",
+          "example_vi": "Bột ca ri mang lại cho món ăn hương vị cay nồng."
+        },
+        {
+          "meaning_vi": "bột ca ri",
+          "example_en": "He mixed the curry powder with yogurt.",
+          "example_vi": "Anh ấy trộn bột ca ri với sữa chua."
+        },
+        {
+          "meaning_vi": "bột ca ri",
+          "example_en": "Store the curry powder in a cool place.",
+          "example_vi": "Bảo quản bột ca ri ở nơi thoáng mát."
+        },
+        {
+          "meaning_vi": "món ca ri",
+          "example_en": "We had a delicious chicken curry for dinner.",
+          "example_vi": "Chúng tôi đã có một món ca ri gà ngon tuyệt cho bữa tối."
+        },
+        {
+          "meaning_vi": "món ca ri",
+          "example_en": "She knows how to cook a traditional curry.",
+          "example_vi": "Cô ấy biết cách nấu một món ca ri truyền thống."
+        },
+        {
+          "meaning_vi": "món ca ri",
+          "example_en": "This curry is too spicy for me.",
+          "example_vi": "Món ca ri này quá cay đối với tôi."
+        },
+        {
+          "meaning_vi": "món ca ri",
+          "example_en": "They ordered a vegetable curry at the restaurant.",
+          "example_vi": "Họ đã gọi món ca ri rau củ tại nhà hàng."
+        },
+        {
+          "meaning_vi": "món ca ri",
+          "example_en": "The smell of the curry filled the kitchen.",
+          "example_vi": "Mùi của món ca ri lan tỏa khắp căn bếp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là noun, đã lọc nghĩa và bổ sung ví dụ.",
+      "word": "curry",
+      "normalized_word": "curry",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Add a teaspoon of curry powder to the sauce.",
+      "example_vi_clean": "Thêm một thìa cà phê bột ca ri vào nước sốt."
+    },
+    {
+      "id": 24879,
+      "quiz_meaning_vi": "sự nguyền rủa",
+      "meaning_vi_clean": "sự nguyền rủa; tai ương; nguyền rủa",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nguyền rủa",
+          "example_en": "The witch cast a curse on the village.",
+          "example_vi": "Phù thủy đã buông lời nguyền rủa lên ngôi làng."
+        },
+        {
+          "meaning_vi": "sự nguyền rủa",
+          "example_en": "He believed he was under a curse.",
+          "example_vi": "Anh ấy tin rằng mình đang bị một sự nguyền rủa."
+        },
+        {
+          "meaning_vi": "sự nguyền rủa",
+          "example_en": "The curse was finally broken.",
+          "example_vi": "Sự nguyền rủa cuối cùng đã được hóa giải."
+        },
+        {
+          "meaning_vi": "sự nguyền rủa",
+          "example_en": "She feared the curse of the ancient tomb.",
+          "example_vi": "Cô ấy sợ sự nguyền rủa của ngôi mộ cổ."
+        },
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "Poverty is a curse for many families.",
+          "example_vi": "Nghèo đói là một tai ương đối với nhiều gia đình."
+        },
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "War is a terrible curse on humanity.",
+          "example_vi": "Chiến tranh là một tai ương khủng khiếp đối với nhân loại."
+        },
+        {
+          "meaning_vi": "tai ương",
+          "example_en": "Greed is often seen as a curse.",
+          "example_vi": "Lòng tham thường được xem là một tai ương."
+        },
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "He cursed his bad luck.",
+          "example_vi": "Anh ấy nguyền rủa vận xui của mình."
+        },
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "She cursed the day she met him.",
+          "example_vi": "Cô ấy nguyền rủa ngày cô ấy gặp anh ta."
+        },
+        {
+          "meaning_vi": "nguyền rủa",
+          "example_en": "Don't curse at people when you are angry.",
+          "example_vi": "Đừng nguyền rủa mọi người khi bạn đang giận dữ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "POS nguồn là noun, đã bổ sung nghĩa động từ và ví dụ.",
+      "word": "curse",
+      "normalized_word": "curse",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The witch cast a curse on the village.",
+      "example_vi_clean": "Phù thủy đã buông lời nguyền rủa lên ngôi làng."
+    },
+    {
+      "id": 24880,
+      "quiz_meaning_vi": "phong tục",
+      "meaning_vi_clean": "phong tục; khách hàng; sự đặt mua",
+      "examples_clean": [
+        {
+          "meaning_vi": "phong tục",
+          "example_en": "The Ancient Egyptian culture had many distinctive and interesting beliefs and customs.",
+          "example_vi": "Văn hóa Ai Cập cổ đại có nhiều niềm tin và phong tục độc đáo và thú vị."
+        },
+        {
+          "meaning_vi": "phong tục",
+          "example_en": "It is a local custom to shake hands when meeting.",
+          "example_vi": "Đó là một phong tục địa phương khi bắt tay lúc gặp mặt."
+        },
+        {
+          "meaning_vi": "phong tục",
+          "example_en": "They follow the customs of their ancestors.",
+          "example_vi": "Họ tuân theo các phong tục của tổ tiên mình."
+        },
+        {
+          "meaning_vi": "phong tục",
+          "example_en": "Wedding customs vary from country to country.",
+          "example_vi": "Các phong tục đám cưới khác nhau tùy theo từng quốc gia."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The shop has many loyal customers.",
+          "example_vi": "Cửa hàng có nhiều khách hàng trung thành."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "We always try to satisfy our customers.",
+          "example_vi": "Chúng tôi luôn cố gắng làm hài lòng khách hàng của mình."
+        },
+        {
+          "meaning_vi": "khách hàng",
+          "example_en": "The customer is always right.",
+          "example_vi": "Khách hàng luôn luôn đúng."
+        },
+        {
+          "meaning_vi": "sự đặt mua",
+          "example_en": "My feet are very large, so I need custom shoes.",
+          "example_vi": "Chân tôi rất to, vì vậy tôi cần giày đặt mua riêng."
+        },
+        {
+          "meaning_vi": "sự đặt mua",
+          "example_en": "We can embroider a wide range of ready designs or a custom logo.",
+          "example_vi": "Chúng tôi có thể thêu nhiều mẫu thiết kế sẵn hoặc một logo đặt mua riêng."
+        },
+        {
+          "meaning_vi": "sự đặt mua",
+          "example_en": "They offer custom services for special events.",
+          "example_vi": "Họ cung cấp các dịch vụ đặt mua riêng cho các sự kiện đặc biệt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung đủ 10 ví dụ.",
+      "word": "custom",
+      "normalized_word": "custom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The Ancient Egyptian culture had many distinctive and interesting beliefs and customs.",
+      "example_vi_clean": "Văn hóa Ai Cập cổ đại có nhiều niềm tin và phong tục độc đáo và thú vị."
+    }
+  ],
+  "audit": {
+    "source": "manual-review-override",
+    "overrideFile": "data\\vocabulary\\normalization\\manual-overrides\\review-required-15.json",
+    "reason": "Rà soát cục bộ 15 record bị AI gắn review_required; giữ nguyên word, POS và CEFR nguồn, loại nghĩa/ví dụ sai từ loại.",
+    "databaseUpdated": false
+  }
+}

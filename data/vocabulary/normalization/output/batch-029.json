@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24281,
+      "quiz_meaning_vi": "mắt",
+      "meaning_vi_clean": "mắt; con mắt; lỗ kim; sự nhìn",
+      "examples_clean": [
+        {
+          "meaning_vi": "mắt",
+          "example_en": "Bright lights really hurt my eyes.",
+          "example_vi": "Ánh sáng mạnh thực sự làm đau mắt tôi."
+        },
+        {
+          "meaning_vi": "mắt",
+          "example_en": "She has beautiful brown eyes.",
+          "example_vi": "Cô ấy có đôi mắt màu nâu tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "mắt",
+          "example_en": "He wiped the dust from his eyes.",
+          "example_vi": "Anh ấy lau bụi ra khỏi mắt mình."
+        },
+        {
+          "meaning_vi": "mắt",
+          "example_en": "Keep your eyes on the road.",
+          "example_vi": "Hãy giữ mắt nhìn vào con đường."
+        },
+        {
+          "meaning_vi": "con mắt",
+          "example_en": "The peacock has many eyes on its tail.",
+          "example_vi": "Con công có nhiều con mắt trên đuôi của nó."
+        },
+        {
+          "meaning_vi": "lỗ kim",
+          "example_en": "It is hard to thread a needle through such a small eye.",
+          "example_vi": "Thật khó để xỏ chỉ qua lỗ kim nhỏ như vậy."
+        },
+        {
+          "meaning_vi": "sự nhìn",
+          "example_en": "The painting was pleasing to the eye.",
+          "example_vi": "Bức tranh rất vừa mắt."
+        },
+        {
+          "meaning_vi": "mắt",
+          "example_en": "She closed her eyes to sleep.",
+          "example_vi": "Cô ấy nhắm mắt lại để ngủ."
+        },
+        {
+          "meaning_vi": "con mắt",
+          "example_en": "His eyes were wide with surprise.",
+          "example_vi": "Đôi mắt anh ấy mở to vì ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự nhìn",
+          "example_en": "Beauty is in the eye of the beholder.",
+          "example_vi": "Vẻ đẹp nằm trong con mắt của người nhìn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là mắt. Loại bỏ các nghĩa lóng, chuyên ngành và nghĩa không thuộc từ loại danh từ. Bổ sung 10 ví dụ phù hợp.",
+      "word": "eye",
+      "normalized_word": "eye",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Bright lights really hurt my eyes.",
+      "example_vi_clean": "Ánh sáng mạnh thực sự làm đau mắt tôi."
+    },
+    {
+      "id": 24282,
+      "quiz_meaning_vi": "mặt",
+      "meaning_vi_clean": "mặt; vẻ mặt; thể diện; bề mặt",
+      "examples_clean": [
+        {
+          "meaning_vi": "mặt",
+          "example_en": "That girl has a pretty face.",
+          "example_vi": "Cô gái đó có khuôn mặt xinh xắn."
+        },
+        {
+          "meaning_vi": "mặt",
+          "example_en": "He washed his face before breakfast.",
+          "example_vi": "Anh ấy rửa mặt trước khi ăn sáng."
+        },
+        {
+          "meaning_vi": "mặt",
+          "example_en": "She turned her face away from the light.",
+          "example_vi": "Cô ấy quay mặt đi khỏi ánh sáng."
+        },
+        {
+          "meaning_vi": "mặt",
+          "example_en": "He has a kind face.",
+          "example_vi": "Anh ấy có một khuôn mặt nhân hậu."
+        },
+        {
+          "meaning_vi": "vẻ mặt",
+          "example_en": "Why the sad face today?",
+          "example_vi": "Tại sao hôm nay lại có vẻ mặt buồn bã vậy?"
+        },
+        {
+          "meaning_vi": "vẻ mặt",
+          "example_en": "She had a happy face when she heard the news.",
+          "example_vi": "Cô ấy có vẻ mặt vui vẻ khi nghe tin đó."
+        },
+        {
+          "meaning_vi": "thể diện",
+          "example_en": "He did it to save face.",
+          "example_vi": "Anh ấy làm vậy để giữ thể diện."
+        },
+        {
+          "meaning_vi": "bề mặt",
+          "example_en": "The face of the clock is broken.",
+          "example_vi": "Bề mặt của chiếc đồng hồ bị vỡ."
+        },
+        {
+          "meaning_vi": "bề mặt",
+          "example_en": "The rock has a smooth face.",
+          "example_vi": "Tảng đá có một bề mặt nhẵn."
+        },
+        {
+          "meaning_vi": "thể diện",
+          "example_en": "She was worried about losing face in front of her friends.",
+          "example_vi": "Cô ấy lo lắng về việc mất thể diện trước mặt bạn bè."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là mặt. Loại bỏ các nghĩa động từ và nghĩa lóng. Bổ sung 10 ví dụ phù hợp.",
+      "word": "face",
+      "normalized_word": "face",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "That girl has a pretty face.",
+      "example_vi_clean": "Cô gái đó có khuôn mặt xinh xắn."
+    },
+    {
+      "id": 24283,
+      "quiz_meaning_vi": "nhà máy",
+      "meaning_vi_clean": "nhà máy; xí nghiệp; xưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà máy",
+          "example_en": "My father works in a car factory.",
+          "example_vi": "Cha tôi làm việc trong một nhà máy ô tô."
+        },
+        {
+          "meaning_vi": "nhà máy",
+          "example_en": "The factory produces thousands of toys.",
+          "example_vi": "Nhà máy sản xuất hàng ngàn món đồ chơi."
+        },
+        {
+          "meaning_vi": "nhà máy",
+          "example_en": "They are building a new factory nearby.",
+          "example_vi": "Họ đang xây dựng một nhà máy mới gần đây."
+        },
+        {
+          "meaning_vi": "nhà máy",
+          "example_en": "The factory closed down last year.",
+          "example_vi": "Nhà máy đã đóng cửa vào năm ngoái."
+        },
+        {
+          "meaning_vi": "xí nghiệp",
+          "example_en": "He manages a large textile enterprise.",
+          "example_vi": "Ông ấy quản lý một xí nghiệp dệt lớn."
+        },
+        {
+          "meaning_vi": "xưởng",
+          "example_en": "She works in a small furniture workshop.",
+          "example_vi": "Cô ấy làm việc trong một xưởng nội thất nhỏ."
+        },
+        {
+          "meaning_vi": "nhà máy",
+          "example_en": "The factory employs over five hundred people.",
+          "example_vi": "Nhà máy thuê hơn năm trăm nhân viên."
+        },
+        {
+          "meaning_vi": "nhà máy",
+          "example_en": "Safety rules are important in the factory.",
+          "example_vi": "Các quy tắc an toàn rất quan trọng trong nhà máy."
+        },
+        {
+          "meaning_vi": "xưởng",
+          "example_en": "The artist has a studio workshop in the city.",
+          "example_vi": "Người nghệ sĩ có một xưởng làm việc trong thành phố."
+        },
+        {
+          "meaning_vi": "xí nghiệp",
+          "example_en": "The state-owned enterprise is very successful.",
+          "example_vi": "Xí nghiệp nhà nước này rất thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là nhà máy. Bổ sung các từ đồng nghĩa xí nghiệp, xưởng và 10 ví dụ phù hợp.",
+      "word": "factory",
+      "normalized_word": "factory",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My father works in a car factory.",
+      "example_vi_clean": "Cha tôi làm việc trong một nhà máy ô tô."
+    },
+    {
+      "id": 24284,
+      "quiz_meaning_vi": "hội chợ",
+      "meaning_vi_clean": "hội chợ; công bằng; khá tốt; vàng hoe",
+      "examples_clean": [
+        {
+          "meaning_vi": "hội chợ",
+          "example_en": "We went to the local summer fair.",
+          "example_vi": "Chúng tôi đã đi hội chợ mùa hè ở địa phương."
+        },
+        {
+          "meaning_vi": "hội chợ",
+          "example_en": "There are many games at the fair.",
+          "example_vi": "Có rất nhiều trò chơi tại hội chợ."
+        },
+        {
+          "meaning_vi": "hội chợ",
+          "example_en": "She bought a souvenir at the craft fair.",
+          "example_vi": "Cô ấy đã mua một món quà lưu niệm tại hội chợ thủ công."
+        },
+        {
+          "meaning_vi": "hội chợ",
+          "example_en": "The book fair attracts many readers.",
+          "example_vi": "Hội chợ sách thu hút rất nhiều độc giả."
+        },
+        {
+          "meaning_vi": "công bằng",
+          "example_en": "It is not fair to treat them differently.",
+          "example_vi": "Thật không công bằng khi đối xử với họ khác biệt."
+        },
+        {
+          "meaning_vi": "công bằng",
+          "example_en": "We need a fair trial for everyone.",
+          "example_vi": "Chúng ta cần một phiên tòa công bằng cho mọi người."
+        },
+        {
+          "meaning_vi": "khá tốt",
+          "example_en": "He has a fair chance of winning.",
+          "example_vi": "Anh ấy có một cơ hội khá tốt để chiến thắng."
+        },
+        {
+          "meaning_vi": "vàng hoe",
+          "example_en": "She has long fair hair.",
+          "example_vi": "Cô ấy có mái tóc dài vàng hoe."
+        },
+        {
+          "meaning_vi": "công bằng",
+          "example_en": "The rules should be fair to all players.",
+          "example_vi": "Các quy tắc nên công bằng với tất cả người chơi."
+        },
+        {
+          "meaning_vi": "khá tốt",
+          "example_en": "The weather was fair for our trip.",
+          "example_vi": "Thời tiết khá tốt cho chuyến đi của chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là hội chợ. Bổ sung các nghĩa tính từ phổ biến và 10 ví dụ phù hợp.",
+      "word": "fair",
+      "normalized_word": "fair",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We went to the local summer fair.",
+      "example_vi_clean": "Chúng tôi đã đi hội chợ mùa hè ở địa phương."
+    },
+    {
+      "id": 24285,
+      "quiz_meaning_vi": "tiên",
+      "meaning_vi_clean": "tiên",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiên",
+          "example_en": "The fairy granted her three wishes.",
+          "example_vi": "Nàng tiên đã ban cho cô ấy ba điều ước."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "Children love stories about fairies.",
+          "example_vi": "Trẻ em rất thích những câu chuyện về các nàng tiên."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "She dressed up as a fairy for the party.",
+          "example_vi": "Cô ấy đã hóa trang thành một nàng tiên cho bữa tiệc."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "The fairy flew away into the forest.",
+          "example_vi": "Nàng tiên bay vào trong rừng."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "In the story, the fairy helped the poor boy.",
+          "example_vi": "Trong câu chuyện, nàng tiên đã giúp đỡ cậu bé nghèo."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "She has a fairy like grace.",
+          "example_vi": "Cô ấy có vẻ duyên dáng như tiên."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "The fairy tale ended happily.",
+          "example_vi": "Câu chuyện cổ tích kết thúc có hậu."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "They believe in fairies.",
+          "example_vi": "Họ tin vào các nàng tiên."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "The fairy waved her magic wand.",
+          "example_vi": "Nàng tiên vẫy cây đũa phép của mình."
+        },
+        {
+          "meaning_vi": "tiên",
+          "example_en": "A little fairy appeared in her dream.",
+          "example_vi": "Một nàng tiên nhỏ xuất hiện trong giấc mơ của cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là tiên. Loại bỏ các nghĩa lóng không phù hợp. Bổ sung 10 ví dụ phù hợp.",
+      "word": "fairy",
+      "normalized_word": "fairy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The fairy granted her three wishes.",
+      "example_vi_clean": "Nàng tiên đã ban cho cô ấy ba điều ước."
+    },
+    {
+      "id": 24286,
+      "quiz_meaning_vi": "sai",
+      "meaning_vi_clean": "sai; không thật; giả",
+      "examples_clean": [
+        {
+          "meaning_vi": "sai",
+          "example_en": "The answer you gave is false.",
+          "example_vi": "Câu trả lời bạn đưa ra là sai."
+        },
+        {
+          "meaning_vi": "sai",
+          "example_en": "It is false to say that he was there.",
+          "example_vi": "Thật sai khi nói rằng anh ấy đã ở đó."
+        },
+        {
+          "meaning_vi": "sai",
+          "example_en": "He made a false assumption.",
+          "example_vi": "Anh ấy đã đưa ra một giả định sai."
+        },
+        {
+          "meaning_vi": "sai",
+          "example_en": "The information provided was false.",
+          "example_vi": "Thông tin được cung cấp là sai."
+        },
+        {
+          "meaning_vi": "không thật",
+          "example_en": "She gave a false name to the police.",
+          "example_vi": "Cô ấy đã đưa một cái tên không thật cho cảnh sát."
+        },
+        {
+          "meaning_vi": "không thật",
+          "example_en": "He felt a false sense of security.",
+          "example_vi": "Anh ấy cảm thấy một cảm giác an toàn không thật."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "The painting turned out to be a false copy.",
+          "example_vi": "Bức tranh hóa ra là một bản sao giả."
+        },
+        {
+          "meaning_vi": "giả",
+          "example_en": "He has a false tooth.",
+          "example_vi": "Anh ấy có một chiếc răng giả."
+        },
+        {
+          "meaning_vi": "sai",
+          "example_en": "The alarm was a false alarm.",
+          "example_vi": "Báo động đó là một báo động sai."
+        },
+        {
+          "meaning_vi": "không thật",
+          "example_en": "They made false promises to the people.",
+          "example_vi": "Họ đã đưa ra những lời hứa không thật với người dân."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là sai. Bổ sung các nghĩa liên quan và 10 ví dụ phù hợp.",
+      "word": "false",
+      "normalized_word": "false",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The answer you gave is false.",
+      "example_vi_clean": "Câu trả lời bạn đưa ra là sai."
+    },
+    {
+      "id": 24287,
+      "quiz_meaning_vi": "gia đình",
+      "meaning_vi_clean": "gia đình; dòng dõi",
+      "examples_clean": [
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "Our family lives in town.",
+          "example_vi": "Gia đình chúng tôi sống trong thị trấn."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "She comes from a large family.",
+          "example_vi": "Cô ấy đến từ một gia đình đông con."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "Family is very important to him.",
+          "example_vi": "Gia đình rất quan trọng đối với anh ấy."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "They spent the weekend with their family.",
+          "example_vi": "Họ đã dành cuối tuần với gia đình của mình."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "He supports his family by working hard.",
+          "example_vi": "Anh ấy nuôi gia đình bằng cách làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "The whole family went on vacation.",
+          "example_vi": "Cả gia đình đã đi nghỉ mát."
+        },
+        {
+          "meaning_vi": "dòng dõi",
+          "example_en": "He belongs to a noble family.",
+          "example_vi": "Anh ấy thuộc về một dòng dõi quý tộc."
+        },
+        {
+          "meaning_vi": "dòng dõi",
+          "example_en": "The family history is very interesting.",
+          "example_vi": "Lịch sử dòng dõi này rất thú vị."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "She is the youngest in the family.",
+          "example_vi": "Cô ấy là người trẻ nhất trong gia đình."
+        },
+        {
+          "meaning_vi": "gia đình",
+          "example_en": "They are a happy family.",
+          "example_vi": "Họ là một gia đình hạnh phúc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là gia đình. Bổ sung nghĩa dòng dõi và 10 ví dụ phù hợp.",
+      "word": "family",
+      "normalized_word": "family",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Our family lives in town.",
+      "example_vi_clean": "Gia đình chúng tôi sống trong thị trấn."
+    },
+    {
+      "id": 24288,
+      "quiz_meaning_vi": "nổi tiếng",
+      "meaning_vi_clean": "nổi tiếng; trứ danh",
+      "examples_clean": [
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "Some people are only famous within their city.",
+          "example_vi": "Một số người chỉ nổi tiếng trong thành phố của họ."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "She wants to be a famous singer.",
+          "example_vi": "Cô ấy muốn trở thành một ca sĩ nổi tiếng."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "He is a famous actor in our country.",
+          "example_vi": "Anh ấy là một diễn viên nổi tiếng ở đất nước chúng tôi."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "The city is famous for its beautiful parks.",
+          "example_vi": "Thành phố này nổi tiếng với những công viên xinh đẹp."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "They visited a famous museum.",
+          "example_vi": "Họ đã đến thăm một bảo tàng nổi tiếng."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "He became famous after his first book.",
+          "example_vi": "Anh ấy trở nên nổi tiếng sau cuốn sách đầu tiên của mình."
+        },
+        {
+          "meaning_vi": "trứ danh",
+          "example_en": "This restaurant is famous for its pizza.",
+          "example_vi": "Nhà hàng này trứ danh với món bánh pizza của họ."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "She is famous for her kindness.",
+          "example_vi": "Cô ấy nổi tiếng vì lòng tốt của mình."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "It is a famous landmark in the area.",
+          "example_vi": "Đó là một địa danh nổi tiếng trong khu vực."
+        },
+        {
+          "meaning_vi": "nổi tiếng",
+          "example_en": "Many famous people live in this neighborhood.",
+          "example_vi": "Nhiều người nổi tiếng sống trong khu phố này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là nổi tiếng. Bổ sung nghĩa trứ danh và 10 ví dụ phù hợp.",
+      "word": "famous",
+      "normalized_word": "famous",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Some people are only famous within their city.",
+      "example_vi_clean": "Một số người chỉ nổi tiếng trong thành phố của họ."
+    },
+    {
+      "id": 24289,
+      "quiz_meaning_vi": "người hâm mộ",
+      "meaning_vi_clean": "người hâm mộ; cái quạt",
+      "examples_clean": [
+        {
+          "meaning_vi": "người hâm mộ",
+          "example_en": "She is a big fan of that band.",
+          "example_vi": "Cô ấy là một người hâm mộ lớn của ban nhạc đó."
+        },
+        {
+          "meaning_vi": "người hâm mộ",
+          "example_en": "The fans cheered for their team.",
+          "example_vi": "Những người hâm mộ đã cổ vũ cho đội của họ."
+        },
+        {
+          "meaning_vi": "người hâm mộ",
+          "example_en": "He has many fans around the world.",
+          "example_vi": "Anh ấy có nhiều người hâm mộ trên khắp thế giới."
+        },
+        {
+          "meaning_vi": "người hâm mộ",
+          "example_en": "The fans waited for hours to see her.",
+          "example_vi": "Những người hâm mộ đã đợi hàng giờ để gặp cô ấy."
+        },
+        {
+          "meaning_vi": "cái quạt",
+          "example_en": "It is hot, please turn on the fan.",
+          "example_vi": "Trời nóng quá, làm ơn bật cái quạt lên."
+        },
+        {
+          "meaning_vi": "cái quạt",
+          "example_en": "She used a hand fan to cool herself.",
+          "example_vi": "Cô ấy dùng một cái quạt tay để làm mát bản thân."
+        },
+        {
+          "meaning_vi": "cái quạt",
+          "example_en": "The ceiling fan is spinning fast.",
+          "example_vi": "Cái quạt trần đang quay nhanh."
+        },
+        {
+          "meaning_vi": "người hâm mộ",
+          "example_en": "The singer thanked her fans for their support.",
+          "example_vi": "Ca sĩ đã cảm ơn những người hâm mộ vì sự ủng hộ của họ."
+        },
+        {
+          "meaning_vi": "cái quạt",
+          "example_en": "The electric fan helps in the summer.",
+          "example_vi": "Cái quạt điện giúp ích vào mùa hè."
+        },
+        {
+          "meaning_vi": "người hâm mộ",
+          "example_en": "He is a loyal fan of the club.",
+          "example_vi": "Anh ấy là một người hâm mộ trung thành của câu lạc bộ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là người hâm mộ. Bổ sung nghĩa cái quạt và 10 ví dụ phù hợp.",
+      "word": "fan",
+      "normalized_word": "fan",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is a big fan of that band.",
+      "example_vi_clean": "Cô ấy là một người hâm mộ lớn của ban nhạc đó."
+    },
+    {
+      "id": 24290,
+      "quiz_meaning_vi": "trang trại",
+      "meaning_vi_clean": "trang trại; nông trường",
+      "examples_clean": [
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "They live on a large farm.",
+          "example_vi": "Họ sống trong một trang trại lớn."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "He works on his family farm.",
+          "example_vi": "Anh ấy làm việc trong trang trại của gia đình mình."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "The farm has many cows and sheep.",
+          "example_vi": "Trang trại có nhiều bò và cừu."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "We visited a dairy farm yesterday.",
+          "example_vi": "Chúng tôi đã thăm một trang trại bò sữa ngày hôm qua."
+        },
+        {
+          "meaning_vi": "nông trường",
+          "example_en": "The state farm produces a lot of wheat.",
+          "example_vi": "Nông trường nhà nước sản xuất rất nhiều lúa mì."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "She wants to buy a small farm.",
+          "example_vi": "Cô ấy muốn mua một trang trại nhỏ."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "The farm is located in the countryside.",
+          "example_vi": "Trang trại nằm ở vùng nông thôn."
+        },
+        {
+          "meaning_vi": "nông trường",
+          "example_en": "They work on a large collective farm.",
+          "example_vi": "Họ làm việc trong một nông trường tập thể lớn."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "The farm provides fresh vegetables.",
+          "example_vi": "Trang trại cung cấp rau tươi."
+        },
+        {
+          "meaning_vi": "trang trại",
+          "example_en": "He grew up on a chicken farm.",
+          "example_vi": "Anh ấy lớn lên trong một trang trại gà."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính là trang trại. Bổ sung nghĩa nông trường và 10 ví dụ phù hợp.",
+      "word": "farm",
+      "normalized_word": "farm",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They live on a large farm.",
+      "example_vi_clean": "Họ sống trong một trang trại lớn."
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26971,
+      "quiz_meaning_vi": "cơ bản",
+      "meaning_vi_clean": "cơ bản; thuộc sức mạnh thiên nhiên",
+      "examples_clean": [
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "The plan has a very simple and elemental structure.",
+          "example_vi": "Kế hoạch này có cấu trúc rất đơn giản và cơ bản."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "He has an elemental understanding of the subject.",
+          "example_vi": "Anh ấy có sự hiểu biết cơ bản về chủ đề này."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "These are the elemental rules of the game.",
+          "example_vi": "Đây là những quy tắc cơ bản của trò chơi."
+        },
+        {
+          "meaning_vi": "cơ bản",
+          "example_en": "The book covers the elemental principles of physics.",
+          "example_vi": "Cuốn sách bao gồm các nguyên lý cơ bản của vật lý."
+        },
+        {
+          "meaning_vi": "thuộc sức mạnh thiên nhiên",
+          "example_en": "The storm showed the elemental power of nature.",
+          "example_vi": "Cơn bão cho thấy sức mạnh thiên nhiên dữ dội."
+        },
+        {
+          "meaning_vi": "thuộc sức mạnh thiên nhiên",
+          "example_en": "She felt an elemental fear during the earthquake.",
+          "example_vi": "Cô ấy cảm thấy một nỗi sợ hãi nguyên thủy trong trận động đất."
+        },
+        {
+          "meaning_vi": "thuộc sức mạnh thiên nhiên",
+          "example_en": "The landscape has an elemental beauty that is hard to describe.",
+          "example_vi": "Phong cảnh có một vẻ đẹp tự nhiên nguyên sơ khó tả."
+        },
+        {
+          "meaning_vi": "thuộc sức mạnh thiên nhiên",
+          "example_en": "His anger was an elemental force that no one could stop.",
+          "example_vi": "Cơn giận của anh ấy là một sức mạnh tự nhiên không ai có thể ngăn cản."
+        },
+        {
+          "meaning_vi": "thuộc sức mạnh thiên nhiên",
+          "example_en": "The ancient tribes worshipped elemental spirits.",
+          "example_vi": "Các bộ lạc cổ đại thờ phụng các linh hồn thiên nhiên."
+        },
+        {
+          "meaning_vi": "thuộc sức mạnh thiên nhiên",
+          "example_en": "The fire raged with an elemental intensity.",
+          "example_vi": "Ngọn lửa bùng cháy với cường độ dữ dội của tự nhiên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ các nghĩa quá chuyên ngành hoặc hiếm, tập trung vào nghĩa cơ bản và sức mạnh thiên nhiên.",
+      "word": "elemental",
+      "normalized_word": "elemental",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The plan has a very simple and elemental structure.",
+      "example_vi_clean": "Kế hoạch này có cấu trúc rất đơn giản và cơ bản."
+    },
+    {
+      "id": 26972,
+      "quiz_meaning_vi": "đủ tư cách",
+      "meaning_vi_clean": "đủ tư cách; có thể chọn được",
+      "examples_clean": [
+        {
+          "meaning_vi": "đủ tư cách",
+          "example_en": "You are eligible for a discount if you are a student.",
+          "example_vi": "Bạn đủ tư cách nhận giảm giá nếu bạn là sinh viên."
+        },
+        {
+          "meaning_vi": "đủ tư cách",
+          "example_en": "Only citizens are eligible to vote in the election.",
+          "example_vi": "Chỉ công dân mới đủ tư cách bỏ phiếu trong cuộc bầu cử."
+        },
+        {
+          "meaning_vi": "đủ tư cách",
+          "example_en": "He is eligible for early retirement next year.",
+          "example_vi": "Anh ấy đủ tư cách nghỉ hưu sớm vào năm tới."
+        },
+        {
+          "meaning_vi": "đủ tư cách",
+          "example_en": "Check if you are eligible for the scholarship program.",
+          "example_vi": "Hãy kiểm tra xem bạn có đủ tư cách cho chương trình học bổng không."
+        },
+        {
+          "meaning_vi": "có thể chọn được",
+          "example_en": "The candidate is eligible for the position based on his experience.",
+          "example_vi": "Ứng viên này có thể chọn được cho vị trí dựa trên kinh nghiệm của anh ấy."
+        },
+        {
+          "meaning_vi": "có thể chọn được",
+          "example_en": "Not all applicants are eligible for the final round.",
+          "example_vi": "Không phải tất cả ứng viên đều có thể chọn được cho vòng cuối."
+        },
+        {
+          "meaning_vi": "có thể chọn được",
+          "example_en": "The items are eligible for return within thirty days.",
+          "example_vi": "Các mặt hàng này có thể chọn được để trả lại trong vòng ba mươi ngày."
+        },
+        {
+          "meaning_vi": "có thể chọn được",
+          "example_en": "She is an eligible bachelor in the eyes of many.",
+          "example_vi": "Cô ấy là một người độc thân đáng mơ ước trong mắt nhiều người."
+        },
+        {
+          "meaning_vi": "có thể chọn được",
+          "example_en": "The project is eligible for government funding.",
+          "example_vi": "Dự án này có thể chọn được để nhận tài trợ từ chính phủ."
+        },
+        {
+          "meaning_vi": "có thể chọn được",
+          "example_en": "Are these documents eligible for submission?",
+          "example_vi": "Những tài liệu này có thể chọn được để nộp không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ phù hợp.",
+      "word": "eligible",
+      "normalized_word": "eligible",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "You are eligible for a discount if you are a student.",
+      "example_vi_clean": "Bạn đủ tư cách nhận giảm giá nếu bạn là sinh viên."
+    },
+    {
+      "id": 26973,
+      "quiz_meaning_vi": "Một kiểu chữ",
+      "meaning_vi_clean": "Một kiểu chữ",
+      "examples_clean": [
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "The document was typed using the elite font style.",
+          "example_vi": "Tài liệu được đánh máy bằng kiểu chữ elite."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "Elite is a common typeface for old typewriters.",
+          "example_vi": "Elite là một kiểu chữ phổ biến cho các máy đánh chữ cũ."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "Please set the printer to use the elite font.",
+          "example_vi": "Vui lòng cài đặt máy in sử dụng kiểu chữ elite."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "The elite style fits twelve characters per inch.",
+          "example_vi": "Kiểu chữ elite vừa vặn mười hai ký tự mỗi inch."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "She prefers the elite font for her reports.",
+          "example_vi": "Cô ấy thích kiểu chữ elite cho các báo cáo của mình."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "The typewriter ribbon was designed for elite characters.",
+          "example_vi": "Dải băng máy đánh chữ được thiết kế cho các ký tự elite."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "Check if the document is in elite or pica.",
+          "example_vi": "Kiểm tra xem tài liệu có ở kiểu elite hay pica."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "The elite font is very readable for long texts.",
+          "example_vi": "Kiểu chữ elite rất dễ đọc cho các văn bản dài."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "Many old documents were printed in elite.",
+          "example_vi": "Nhiều tài liệu cũ đã được in bằng kiểu elite."
+        },
+        {
+          "meaning_vi": "Một kiểu chữ",
+          "example_en": "The elite typeface is standard for this machine.",
+          "example_vi": "Kiểu chữ elite là tiêu chuẩn cho chiếc máy này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã giữ nghĩa duy nhất và bổ sung 10 ví dụ.",
+      "word": "elite",
+      "normalized_word": "elite",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The document was typed using the elite font style.",
+      "example_vi_clean": "Tài liệu được đánh máy bằng kiểu chữ elite."
+    },
+    {
+      "id": 26974,
+      "quiz_meaning_vi": "tài hùng biện",
+      "meaning_vi_clean": "tài hùng biện; môn tu từ",
+      "examples_clean": [
+        {
+          "meaning_vi": "tài hùng biện",
+          "example_en": "She is known for her great eloquence in public speaking.",
+          "example_vi": "Cô ấy nổi tiếng với tài hùng biện tuyệt vời khi nói trước công chúng."
+        },
+        {
+          "meaning_vi": "tài hùng biện",
+          "example_en": "His eloquence moved the entire audience to tears.",
+          "example_vi": "Tài hùng biện của anh ấy đã khiến cả khán giả rơi nước mắt."
+        },
+        {
+          "meaning_vi": "tài hùng biện",
+          "example_en": "The politician used his eloquence to win the debate.",
+          "example_vi": "Chính trị gia đã sử dụng tài hùng biện của mình để thắng cuộc tranh luận."
+        },
+        {
+          "meaning_vi": "tài hùng biện",
+          "example_en": "True eloquence comes from a deep understanding of the topic.",
+          "example_vi": "Tài hùng biện thực sự đến từ sự hiểu biết sâu sắc về chủ đề."
+        },
+        {
+          "meaning_vi": "môn tu từ",
+          "example_en": "The professor taught a course on the history of eloquence.",
+          "example_vi": "Giáo sư đã dạy một khóa học về lịch sử môn tu từ."
+        },
+        {
+          "meaning_vi": "môn tu từ",
+          "example_en": "Studying eloquence helps improve your writing skills.",
+          "example_vi": "Học môn tu từ giúp cải thiện kỹ năng viết của bạn."
+        },
+        {
+          "meaning_vi": "môn tu từ",
+          "example_en": "The book explores the ancient art of eloquence.",
+          "example_vi": "Cuốn sách khám phá nghệ thuật cổ xưa của môn tu từ."
+        },
+        {
+          "meaning_vi": "môn tu từ",
+          "example_en": "He is an expert in the field of eloquence.",
+          "example_vi": "Anh ấy là một chuyên gia trong lĩnh vực môn tu từ."
+        },
+        {
+          "meaning_vi": "môn tu từ",
+          "example_en": "The curriculum includes a module on eloquence.",
+          "example_vi": "Chương trình giảng dạy bao gồm một học phần về môn tu từ."
+        },
+        {
+          "meaning_vi": "môn tu từ",
+          "example_en": "She wrote a thesis on the principles of eloquence.",
+          "example_vi": "Cô ấy đã viết một luận văn về các nguyên tắc của môn tu từ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "eloquence",
+      "normalized_word": "eloquence",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is known for her great eloquence in public speaking.",
+      "example_vi_clean": "Cô ấy nổi tiếng với tài hùng biện tuyệt vời khi nói trước công chúng."
+    },
+    {
+      "id": 26975,
+      "quiz_meaning_vi": "hùng biện",
+      "meaning_vi_clean": "hùng biện",
+      "examples_clean": [
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "He gave an eloquent speech at the graduation ceremony.",
+          "example_vi": "Anh ấy đã có một bài phát biểu hùng biện tại lễ tốt nghiệp."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "She is an eloquent speaker who can inspire anyone.",
+          "example_vi": "Cô ấy là một diễn giả hùng biện có thể truyền cảm hứng cho bất kỳ ai."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "His eloquent defense saved him from the accusations.",
+          "example_vi": "Lời bào chữa hùng biện của anh ấy đã cứu anh khỏi những lời buộc tội."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "The writer is known for her eloquent prose.",
+          "example_vi": "Nhà văn nổi tiếng với văn phong hùng biện của mình."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "She made an eloquent plea for peace.",
+          "example_vi": "Cô ấy đã đưa ra một lời kêu gọi hùng biện vì hòa bình."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "The silence was an eloquent response to his question.",
+          "example_vi": "Sự im lặng là một câu trả lời hùng biện cho câu hỏi của anh ấy."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "He wrote an eloquent letter to the editor.",
+          "example_vi": "Anh ấy đã viết một lá thư hùng biện gửi cho biên tập viên."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "Her eyes were eloquent of her deep sadness.",
+          "example_vi": "Đôi mắt cô ấy nói lên một cách hùng biện nỗi buồn sâu sắc."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "The painting is an eloquent expression of his feelings.",
+          "example_vi": "Bức tranh là một sự thể hiện hùng biện về cảm xúc của anh ấy."
+        },
+        {
+          "meaning_vi": "hùng biện",
+          "example_en": "They delivered an eloquent argument in court.",
+          "example_vi": "Họ đã đưa ra một lập luận hùng biện tại tòa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "eloquent",
+      "normalized_word": "eloquent",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He gave an eloquent speech at the graduation ceremony.",
+      "example_vi_clean": "Anh ấy đã có một bài phát biểu hùng biện tại lễ tốt nghiệp."
+    },
+    {
+      "id": 26976,
+      "quiz_meaning_vi": "toà đại sứ",
+      "meaning_vi_clean": "toà đại sứ; sứ mệnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "toà đại sứ",
+          "example_en": "The American embassy to France is located in Paris.",
+          "example_vi": "Toà đại sứ Mỹ tại Pháp nằm ở Paris."
+        },
+        {
+          "meaning_vi": "toà đại sứ",
+          "example_en": "She works at the British embassy in Tokyo.",
+          "example_vi": "Cô ấy làm việc tại toà đại sứ Anh ở Tokyo."
+        },
+        {
+          "meaning_vi": "toà đại sứ",
+          "example_en": "The embassy was closed for the national holiday.",
+          "example_vi": "Toà đại sứ đã đóng cửa vào ngày lễ quốc gia."
+        },
+        {
+          "meaning_vi": "toà đại sứ",
+          "example_en": "He visited the embassy to renew his passport.",
+          "example_vi": "Anh ấy đã đến toà đại sứ để gia hạn hộ chiếu."
+        },
+        {
+          "meaning_vi": "sứ mệnh",
+          "example_en": "The diplomat was sent on a special embassy to the king.",
+          "example_vi": "Nhà ngoại giao đã được cử đi trong một sứ mệnh đặc biệt đến gặp nhà vua."
+        },
+        {
+          "meaning_vi": "sứ mệnh",
+          "example_en": "The embassy was successful in negotiating the treaty.",
+          "example_vi": "Sứ mệnh đã thành công trong việc đàm phán hiệp ước."
+        },
+        {
+          "meaning_vi": "sứ mệnh",
+          "example_en": "They returned from their embassy with good news.",
+          "example_vi": "Họ đã trở về từ sứ mệnh của mình với tin tốt lành."
+        },
+        {
+          "meaning_vi": "sứ mệnh",
+          "example_en": "The embassy was meant to improve relations between the countries.",
+          "example_vi": "Sứ mệnh nhằm mục đích cải thiện mối quan hệ giữa các quốc gia."
+        },
+        {
+          "meaning_vi": "sứ mệnh",
+          "example_en": "He led the embassy to the neighboring country.",
+          "example_vi": "Ông ấy đã dẫn đầu sứ mệnh đến quốc gia láng giềng."
+        },
+        {
+          "meaning_vi": "sứ mệnh",
+          "example_en": "The embassy faced many challenges during the journey.",
+          "example_vi": "Sứ mệnh đã đối mặt với nhiều thách thức trong suốt hành trình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa primary_meaning_vi và bổ sung ví dụ.",
+      "word": "embassy",
+      "normalized_word": "embassy",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The American embassy to France is located in Paris.",
+      "example_vi_clean": "Toà đại sứ Mỹ tại Pháp nằm ở Paris."
+    },
+    {
+      "id": 26977,
+      "quiz_meaning_vi": "ôm",
+      "meaning_vi_clean": "ôm; bao gồm",
+      "examples_clean": [
+        {
+          "meaning_vi": "ôm",
+          "example_en": "She gave her son a warm embrace.",
+          "example_vi": "Cô ấy dành cho con trai mình một cái ôm ấm áp."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "They shared a long embrace at the airport.",
+          "example_vi": "Họ đã trao nhau một cái ôm thật lâu tại sân bay."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "He tried to embrace his friend after a long time.",
+          "example_vi": "Anh ấy cố gắng ôm người bạn của mình sau một thời gian dài."
+        },
+        {
+          "meaning_vi": "ôm",
+          "example_en": "The mother embraced her child tightly.",
+          "example_vi": "Người mẹ ôm chặt đứa con của mình."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The curriculum embraces a wide range of subjects.",
+          "example_vi": "Chương trình giảng dạy bao gồm nhiều môn học khác nhau."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "His research embraces many different fields of study.",
+          "example_vi": "Nghiên cứu của anh ấy bao gồm nhiều lĩnh vực học tập khác nhau."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The plan embraces all the necessary changes.",
+          "example_vi": "Kế hoạch bao gồm tất cả những thay đổi cần thiết."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The term embraces both physical and mental health.",
+          "example_vi": "Thuật ngữ này bao gồm cả sức khỏe thể chất và tinh thần."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The book embraces the history of the entire region.",
+          "example_vi": "Cuốn sách bao gồm lịch sử của toàn bộ khu vực."
+        },
+        {
+          "meaning_vi": "bao gồm",
+          "example_en": "The project embraces several smaller initiatives.",
+          "example_vi": "Dự án bao gồm một vài sáng kiến nhỏ hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang động từ (theo nghĩa phổ biến) và bổ sung ví dụ.",
+      "word": "embrace",
+      "normalized_word": "embrace",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She gave her son a warm embrace.",
+      "example_vi_clean": "Cô ấy dành cho con trai mình một cái ôm ấm áp."
+    },
+    {
+      "id": 26978,
+      "quiz_meaning_vi": "sự nổi lên",
+      "meaning_vi_clean": "sự nổi lên",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of the internet changed the world.",
+          "example_vi": "Sự nổi lên của internet đã thay đổi thế giới."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "We witnessed the emergence of a new political party.",
+          "example_vi": "Chúng tôi đã chứng kiến sự nổi lên của một đảng phái chính trị mới."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of new technologies is very fast.",
+          "example_vi": "Sự nổi lên của các công nghệ mới rất nhanh chóng."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of the sun marked the start of the day.",
+          "example_vi": "Sự nổi lên của mặt trời đánh dấu sự bắt đầu của ngày mới."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of this problem was unexpected.",
+          "example_vi": "Sự nổi lên của vấn đề này là không ngờ tới."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of the butterfly from the cocoon is fascinating.",
+          "example_vi": "Sự nổi lên của con bướm từ cái kén thật thú vị."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of a leader is crucial for the team.",
+          "example_vi": "Sự nổi lên của một người lãnh đạo là rất quan trọng cho đội."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of the truth surprised everyone.",
+          "example_vi": "Sự nổi lên của sự thật đã làm mọi người ngạc nhiên."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of new markets offers many opportunities.",
+          "example_vi": "Sự nổi lên của các thị trường mới mang lại nhiều cơ hội."
+        },
+        {
+          "meaning_vi": "sự nổi lên",
+          "example_en": "The emergence of the stars was beautiful to watch.",
+          "example_vi": "Sự nổi lên của những ngôi sao thật đẹp để ngắm nhìn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "emergence",
+      "normalized_word": "emergence",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The emergence of the internet changed the world.",
+      "example_vi_clean": "Sự nổi lên của internet đã thay đổi thế giới."
+    },
+    {
+      "id": 26979,
+      "quiz_meaning_vi": "nhấn mạnh",
+      "meaning_vi_clean": "nhấn mạnh; mạnh mẽ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "He emphatically denied the allegations against him.",
+          "example_vi": "Anh ấy nhấn mạnh việc phủ nhận các cáo buộc chống lại mình."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "She emphatically stated that she would not resign.",
+          "example_vi": "Cô ấy nhấn mạnh rằng cô ấy sẽ không từ chức."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "The report emphatically rejects the proposed changes.",
+          "example_vi": "Báo cáo nhấn mạnh việc bác bỏ những thay đổi được đề xuất."
+        },
+        {
+          "meaning_vi": "nhấn mạnh",
+          "example_en": "They emphatically agreed with the new plan.",
+          "example_vi": "Họ nhấn mạnh sự đồng ý với kế hoạch mới."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "He spoke emphatically about the need for reform.",
+          "example_vi": "Anh ấy đã nói một cách mạnh mẽ về nhu cầu cải cách."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "She argued emphatically for her point of view.",
+          "example_vi": "Cô ấy đã tranh luận một cách mạnh mẽ cho quan điểm của mình."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "The team responded emphatically to the challenge.",
+          "example_vi": "Đội đã phản ứng một cách mạnh mẽ trước thử thách."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "He shook his head emphatically to say no.",
+          "example_vi": "Anh ấy lắc đầu một cách mạnh mẽ để nói không."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "The public reacted emphatically to the news.",
+          "example_vi": "Công chúng đã phản ứng một cách mạnh mẽ trước tin tức này."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "She defended her decision emphatically.",
+          "example_vi": "Cô ấy đã bảo vệ quyết định của mình một cách mạnh mẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "emphatically",
+      "normalized_word": "emphatically",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He emphatically denied the allegations against him.",
+      "example_vi_clean": "Anh ấy nhấn mạnh việc phủ nhận các cáo buộc chống lại mình."
+    },
+    {
+      "id": 26980,
+      "quiz_meaning_vi": "thuê",
+      "meaning_vi_clean": "thuê; dùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuê",
+          "example_en": "The company decided to employ more staff for the project.",
+          "example_vi": "Công ty quyết định thuê thêm nhân viên cho dự án."
+        },
+        {
+          "meaning_vi": "thuê",
+          "example_en": "They employ over five hundred people in the factory.",
+          "example_vi": "Họ thuê hơn năm trăm người trong nhà máy."
+        },
+        {
+          "meaning_vi": "thuê",
+          "example_en": "She was employed as a consultant for the firm.",
+          "example_vi": "Cô ấy được thuê làm tư vấn cho công ty."
+        },
+        {
+          "meaning_vi": "thuê",
+          "example_en": "The school district has six thousand teachers in its employ.",
+          "example_vi": "Học khu có sáu ngàn giáo viên đang được họ thuê."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "The artist employed a new technique in this painting.",
+          "example_vi": "Người nghệ sĩ đã dùng một kỹ thuật mới trong bức tranh này."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "He employed all his strength to lift the heavy box.",
+          "example_vi": "Anh ấy đã dùng hết sức lực của mình để nâng chiếc hộp nặng."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "The police employed force to control the crowd.",
+          "example_vi": "Cảnh sát đã dùng vũ lực để kiểm soát đám đông."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "She employed a clever strategy to win the game.",
+          "example_vi": "Cô ấy đã dùng một chiến thuật thông minh để thắng trò chơi."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "They employed various methods to solve the problem.",
+          "example_vi": "Họ đã dùng nhiều phương pháp khác nhau để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "dùng",
+          "example_en": "The writer employed irony to make his point.",
+          "example_vi": "Nhà văn đã dùng sự mỉa mai để làm rõ quan điểm của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa primary_meaning_vi thành 'thuê' (phổ biến hơn) và bổ sung ví dụ.",
+      "word": "employ",
+      "normalized_word": "employ",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The company decided to employ more staff for the project.",
+      "example_vi_clean": "Công ty quyết định thuê thêm nhân viên cho dự án."
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26661,
+      "quiz_meaning_vi": "năng lực",
+      "meaning_vi_clean": "năng lực; thẩm quyền",
+      "examples_clean": [
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "She has the professional competence to lead the team.",
+          "example_vi": "Cô ấy có năng lực chuyên môn để dẫn dắt đội ngũ."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "The test is designed to assess the student's linguistic competence.",
+          "example_vi": "Bài kiểm tra được thiết kế để đánh giá năng lực ngôn ngữ của học sinh."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "He demonstrated great competence in handling the crisis.",
+          "example_vi": "Anh ấy đã thể hiện năng lực tuyệt vời trong việc xử lý khủng hoảng."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "The company values technical competence above all else.",
+          "example_vi": "Công ty coi trọng năng lực kỹ thuật hơn tất cả mọi thứ."
+        },
+        {
+          "meaning_vi": "thẩm quyền",
+          "example_en": "That question is outside the competence of this local court.",
+          "example_vi": "Câu hỏi đó nằm ngoài thẩm quyền của tòa án địa phương này."
+        },
+        {
+          "meaning_vi": "thẩm quyền",
+          "example_en": "The committee acted within its legal competence.",
+          "example_vi": "Ủy ban đã hành động trong phạm vi thẩm quyền pháp lý của mình."
+        },
+        {
+          "meaning_vi": "thẩm quyền",
+          "example_en": "It is not within my competence to approve this budget.",
+          "example_vi": "Việc phê duyệt ngân sách này không thuộc thẩm quyền của tôi."
+        },
+        {
+          "meaning_vi": "thẩm quyền",
+          "example_en": "The board has the competence to make final decisions.",
+          "example_vi": "Hội đồng có thẩm quyền đưa ra các quyết định cuối cùng."
+        },
+        {
+          "meaning_vi": "năng lực",
+          "example_en": "Developing core competence is essential for long-term success.",
+          "example_vi": "Phát triển năng lực cốt lõi là điều cần thiết cho sự thành công lâu dài."
+        },
+        {
+          "meaning_vi": "thẩm quyền",
+          "example_en": "The matter falls under the competence of the ministry.",
+          "example_vi": "Vấn đề này thuộc thẩm quyền của bộ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ nghĩa hiếm về tiền bạc, tập trung vào năng lực và thẩm quyền.",
+      "word": "competence",
+      "normalized_word": "competence",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has the professional competence to lead the team.",
+      "example_vi_clean": "Cô ấy có năng lực chuyên môn để dẫn dắt đội ngũ."
+    },
+    {
+      "id": 26662,
+      "quiz_meaning_vi": "có đủ khả năng",
+      "meaning_vi_clean": "có đủ khả năng; có thẩm quyền",
+      "examples_clean": [
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "He is a very competent manager who gets results.",
+          "example_vi": "Anh ấy là một người quản lý có đủ khả năng, người luôn đạt được kết quả."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "She is a competent teacher with years of experience.",
+          "example_vi": "Cô ấy là một giáo viên có đủ khả năng với nhiều năm kinh nghiệm."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "We need a competent person to fix the computer system.",
+          "example_vi": "Chúng ta cần một người có đủ khả năng để sửa hệ thống máy tính."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "The team is competent enough to handle the project alone.",
+          "example_vi": "Nhóm đủ khả năng để tự mình xử lý dự án."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "The competent authority will review your application.",
+          "example_vi": "Cơ quan có thẩm quyền sẽ xem xét đơn của bạn."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "Only a competent court can issue such an order.",
+          "example_vi": "Chỉ tòa án có thẩm quyền mới có thể ban hành lệnh như vậy."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "Please contact the competent department for further details.",
+          "example_vi": "Vui lòng liên hệ với bộ phận có thẩm quyền để biết thêm chi tiết."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "The competent body has approved the new regulations.",
+          "example_vi": "Cơ quan có thẩm quyền đã phê duyệt các quy định mới."
+        },
+        {
+          "meaning_vi": "có đủ khả năng",
+          "example_en": "He is a competent skier and enjoys the mountains.",
+          "example_vi": "Anh ấy là một người trượt tuyết có đủ khả năng và yêu thích những ngọn núi."
+        },
+        {
+          "meaning_vi": "có thẩm quyền",
+          "example_en": "The competent official signed the document.",
+          "example_vi": "Viên chức có thẩm quyền đã ký vào tài liệu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ nghĩa hiếm, tập trung vào nghĩa phổ biến.",
+      "word": "competent",
+      "normalized_word": "competent",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is a very competent manager who gets results.",
+      "example_vi_clean": "Anh ấy là một người quản lý có đủ khả năng, người luôn đạt được kết quả."
+    },
+    {
+      "id": 26663,
+      "quiz_meaning_vi": "biên soạn",
+      "meaning_vi_clean": "biên soạn; sưu tập tài liệu",
+      "examples_clean": [
+        {
+          "meaning_vi": "biên soạn",
+          "example_en": "She is compiling a list of the best books of the year.",
+          "example_vi": "Cô ấy đang biên soạn một danh sách những cuốn sách hay nhất trong năm."
+        },
+        {
+          "meaning_vi": "biên soạn",
+          "example_en": "The report was compiled by a team of experts.",
+          "example_vi": "Bản báo cáo đã được biên soạn bởi một nhóm chuyên gia."
+        },
+        {
+          "meaning_vi": "biên soạn",
+          "example_en": "He spent years compiling data for his research.",
+          "example_vi": "Anh ấy đã dành nhiều năm để biên soạn dữ liệu cho nghiên cứu của mình."
+        },
+        {
+          "meaning_vi": "biên soạn",
+          "example_en": "We are compiling a dictionary of local dialects.",
+          "example_vi": "Chúng tôi đang biên soạn một cuốn từ điển về các phương ngữ địa phương."
+        },
+        {
+          "meaning_vi": "sưu tập tài liệu",
+          "example_en": "The author compiled various articles into a single volume.",
+          "example_vi": "Tác giả đã sưu tập các bài báo khác nhau thành một tập sách."
+        },
+        {
+          "meaning_vi": "sưu tập tài liệu",
+          "example_en": "They are compiling evidence for the upcoming trial.",
+          "example_vi": "Họ đang sưu tập tài liệu chứng cứ cho phiên tòa sắp tới."
+        },
+        {
+          "meaning_vi": "sưu tập tài liệu",
+          "example_en": "She compiled a collection of traditional recipes.",
+          "example_vi": "Cô ấy đã sưu tập tài liệu về các công thức nấu ăn truyền thống."
+        },
+        {
+          "meaning_vi": "sưu tập tài liệu",
+          "example_en": "The librarian is compiling a list of new arrivals.",
+          "example_vi": "Thủ thư đang sưu tập tài liệu về danh sách các sách mới về."
+        },
+        {
+          "meaning_vi": "biên soạn",
+          "example_en": "It takes time to compile such a comprehensive guide.",
+          "example_vi": "Mất nhiều thời gian để biên soạn một hướng dẫn toàn diện như vậy."
+        },
+        {
+          "meaning_vi": "sưu tập tài liệu",
+          "example_en": "He compiled notes from several different sources.",
+          "example_vi": "Anh ấy đã sưu tập tài liệu từ nhiều nguồn khác nhau."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã loại bỏ nghĩa kỹ thuật lập trình (compile code) để giữ đúng nghĩa từ điển thông dụng.",
+      "word": "compile",
+      "normalized_word": "compile",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "She is compiling a list of the best books of the year.",
+      "example_vi_clean": "Cô ấy đang biên soạn một danh sách những cuốn sách hay nhất trong năm."
+    },
+    {
+      "id": 26664,
+      "quiz_meaning_vi": "sự hoàn thành",
+      "meaning_vi_clean": "sự hoàn thành",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "The project is nearing completion.",
+          "example_vi": "Dự án đang tiến gần đến sự hoàn thành."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "We expect the completion of the building by next month.",
+          "example_vi": "Chúng tôi mong đợi sự hoàn thành của tòa nhà vào tháng tới."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "He was rewarded upon the completion of his task.",
+          "example_vi": "Anh ấy đã được thưởng sau khi hoàn thành nhiệm vụ."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "The completion of the bridge will improve traffic flow.",
+          "example_vi": "Sự hoàn thành của cây cầu sẽ cải thiện lưu lượng giao thông."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "She felt a sense of pride at the completion of her degree.",
+          "example_vi": "Cô ấy cảm thấy tự hào khi hoàn thành bằng cấp của mình."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "The contract requires the completion of all work by Friday.",
+          "example_vi": "Hợp đồng yêu cầu sự hoàn thành tất cả công việc trước thứ Sáu."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "They celebrated the completion of the new park.",
+          "example_vi": "Họ đã ăn mừng sự hoàn thành của công viên mới."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "The completion of the survey took three weeks.",
+          "example_vi": "Sự hoàn thành của cuộc khảo sát mất ba tuần."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "Please sign the form upon completion of the course.",
+          "example_vi": "Vui lòng ký vào biểu mẫu sau khi hoàn thành khóa học."
+        },
+        {
+          "meaning_vi": "sự hoàn thành",
+          "example_en": "The completion of the merger was announced today.",
+          "example_vi": "Sự hoàn thành của vụ sáp nhập đã được công bố hôm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "completion",
+      "normalized_word": "completion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The project is nearing completion.",
+      "example_vi_clean": "Dự án đang tiến gần đến sự hoàn thành."
+    },
+    {
+      "id": 26665,
+      "quiz_meaning_vi": "nước da",
+      "meaning_vi_clean": "nước da; vẻ ngoài; tính chất",
+      "examples_clean": [
+        {
+          "meaning_vi": "nước da",
+          "example_en": "She has a very fair complexion.",
+          "example_vi": "Cô ấy có một nước da rất trắng."
+        },
+        {
+          "meaning_vi": "nước da",
+          "example_en": "He has a healthy, sun-tanned complexion.",
+          "example_vi": "Anh ấy có một nước da rám nắng khỏe mạnh."
+        },
+        {
+          "meaning_vi": "nước da",
+          "example_en": "A pale complexion can sometimes indicate illness.",
+          "example_vi": "Một nước da nhợt nhạt đôi khi có thể báo hiệu bệnh tật."
+        },
+        {
+          "meaning_vi": "nước da",
+          "example_en": "She takes good care of her complexion.",
+          "example_vi": "Cô ấy chăm sóc rất kỹ cho nước da của mình."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The whole complexion of the situation has changed.",
+          "example_vi": "Toàn bộ vẻ ngoài của tình hình đã thay đổi."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The new evidence gave a different complexion to the case.",
+          "example_vi": "Bằng chứng mới đã mang lại một vẻ ngoài khác cho vụ án."
+        },
+        {
+          "meaning_vi": "tính chất",
+          "example_en": "The complexion of the work is quite demanding.",
+          "example_vi": "Tính chất của công việc này khá đòi hỏi."
+        },
+        {
+          "meaning_vi": "tính chất",
+          "example_en": "The political complexion of the region is shifting.",
+          "example_vi": "Tính chất chính trị của khu vực đang thay đổi."
+        },
+        {
+          "meaning_vi": "vẻ ngoài",
+          "example_en": "The city has a different complexion at night.",
+          "example_vi": "Thành phố có một vẻ ngoài khác biệt vào ban đêm."
+        },
+        {
+          "meaning_vi": "tính chất",
+          "example_en": "The project's complexion changed after the budget cut.",
+          "example_vi": "Tính chất của dự án đã thay đổi sau khi bị cắt giảm ngân sách."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho các nghĩa khác nhau.",
+      "word": "complexion",
+      "normalized_word": "complexion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a very fair complexion.",
+      "example_vi_clean": "Cô ấy có một nước da rất trắng."
+    },
+    {
+      "id": 26666,
+      "quiz_meaning_vi": "sự phức tạp",
+      "meaning_vi_clean": "sự phức tạp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "The complexity of the problem is overwhelming.",
+          "example_vi": "Sự phức tạp của vấn đề này thật quá sức."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "We need to reduce the complexity of the system.",
+          "example_vi": "Chúng ta cần giảm bớt sự phức tạp của hệ thống."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "The complexity of the task requires careful planning.",
+          "example_vi": "Sự phức tạp của nhiệm vụ đòi hỏi sự lập kế hoạch cẩn thận."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "I was surprised by the complexity of the plot.",
+          "example_vi": "Tôi đã ngạc nhiên bởi sự phức tạp của cốt truyện."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "The complexity of human emotions is fascinating.",
+          "example_vi": "Sự phức tạp của cảm xúc con người thật thú vị."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "He explained the complexity of the legal process.",
+          "example_vi": "Anh ấy đã giải thích sự phức tạp của quy trình pháp lý."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "The complexity of the design makes it expensive to build.",
+          "example_vi": "Sự phức tạp của thiết kế làm cho nó đắt đỏ khi xây dựng."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "They underestimated the complexity of the project.",
+          "example_vi": "Họ đã đánh giá thấp sự phức tạp của dự án."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "The complexity of the issue makes it hard to solve.",
+          "example_vi": "Sự phức tạp của vấn đề làm cho nó khó giải quyết."
+        },
+        {
+          "meaning_vi": "sự phức tạp",
+          "example_en": "She enjoys the complexity of modern art.",
+          "example_vi": "Cô ấy thích sự phức tạp của nghệ thuật hiện đại."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "complexity",
+      "normalized_word": "complexity",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The complexity of the problem is overwhelming.",
+      "example_vi_clean": "Sự phức tạp của vấn đề này thật quá sức."
+    },
+    {
+      "id": 26667,
+      "quiz_meaning_vi": "hợp thành",
+      "meaning_vi_clean": "hợp thành; thành phần",
+      "examples_clean": [
+        {
+          "meaning_vi": "hợp thành",
+          "example_en": "Trust is a key component of any relationship.",
+          "example_vi": "Sự tin tưởng là một yếu tố hợp thành quan trọng của bất kỳ mối quan hệ nào."
+        },
+        {
+          "meaning_vi": "hợp thành",
+          "example_en": "The engine has many different components.",
+          "example_vi": "Động cơ có nhiều bộ phận hợp thành khác nhau."
+        },
+        {
+          "meaning_vi": "hợp thành",
+          "example_en": "Each component plays a vital role in the machine.",
+          "example_vi": "Mỗi bộ phận hợp thành đóng một vai trò quan trọng trong cỗ máy."
+        },
+        {
+          "meaning_vi": "hợp thành",
+          "example_en": "We need to check every component before assembly.",
+          "example_vi": "Chúng ta cần kiểm tra mọi bộ phận hợp thành trước khi lắp ráp."
+        },
+        {
+          "meaning_vi": "thành phần",
+          "example_en": "The main component of the diet is vegetables.",
+          "example_vi": "Thành phần chính của chế độ ăn uống là rau củ."
+        },
+        {
+          "meaning_vi": "thành phần",
+          "example_en": "Water is a major component of the human body.",
+          "example_vi": "Nước là một thành phần chính của cơ thể con người."
+        },
+        {
+          "meaning_vi": "thành phần",
+          "example_en": "The chemical component was identified in the lab.",
+          "example_vi": "Thành phần hóa học đã được xác định trong phòng thí nghiệm."
+        },
+        {
+          "meaning_vi": "thành phần",
+          "example_en": "This product contains a natural component.",
+          "example_vi": "Sản phẩm này chứa một thành phần tự nhiên."
+        },
+        {
+          "meaning_vi": "hợp thành",
+          "example_en": "The software is a core component of the system.",
+          "example_vi": "Phần mềm là một bộ phận hợp thành cốt lõi của hệ thống."
+        },
+        {
+          "meaning_vi": "thành phần",
+          "example_en": "They analyzed the components of the mixture.",
+          "example_vi": "Họ đã phân tích các thành phần của hỗn hợp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "component",
+      "normalized_word": "component",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Trust is a key component of any relationship.",
+      "example_vi_clean": "Sự tin tưởng là một yếu tố hợp thành quan trọng của bất kỳ mối quan hệ nào."
+    },
+    {
+      "id": 26668,
+      "quiz_meaning_vi": "sự hiểu",
+      "meaning_vi_clean": "sự hiểu; sự bao gồm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "He has a good comprehension of the subject.",
+          "example_vi": "Anh ấy có sự hiểu biết tốt về chủ đề này."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "The test measures reading comprehension.",
+          "example_vi": "Bài kiểm tra đo lường sự hiểu biết khi đọc."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "She lacks a basic comprehension of the rules.",
+          "example_vi": "Cô ấy thiếu sự hiểu biết cơ bản về các quy tắc."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "His comprehension of the situation was limited.",
+          "example_vi": "Sự hiểu biết của anh ấy về tình hình là hạn chế."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "It is beyond my comprehension why he did that.",
+          "example_vi": "Thật ngoài sự hiểu biết của tôi tại sao anh ấy lại làm điều đó."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "The teacher checked the students' comprehension.",
+          "example_vi": "Giáo viên đã kiểm tra sự hiểu biết của học sinh."
+        },
+        {
+          "meaning_vi": "sự bao gồm",
+          "example_en": "The comprehension of all these items in the list is necessary.",
+          "example_vi": "Sự bao gồm tất cả các mục này trong danh sách là cần thiết."
+        },
+        {
+          "meaning_vi": "sự bao gồm",
+          "example_en": "The contract includes the comprehension of all services.",
+          "example_vi": "Hợp đồng bao gồm sự bao hàm tất cả các dịch vụ."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "She showed a deep comprehension of the issues.",
+          "example_vi": "Cô ấy đã thể hiện sự hiểu biết sâu sắc về các vấn đề."
+        },
+        {
+          "meaning_vi": "sự hiểu",
+          "example_en": "His comprehension improved after the lecture.",
+          "example_vi": "Sự hiểu biết của anh ấy đã cải thiện sau bài giảng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "comprehension",
+      "normalized_word": "comprehension",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He has a good comprehension of the subject.",
+      "example_vi_clean": "Anh ấy có sự hiểu biết tốt về chủ đề này."
+    },
+    {
+      "id": 26669,
+      "quiz_meaning_vi": "bao hàm toàn diện",
+      "meaning_vi_clean": "bao hàm toàn diện; thông minh",
+      "examples_clean": [
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "The report provides a comprehensive overview of the market.",
+          "example_vi": "Bản báo cáo cung cấp một cái nhìn bao hàm toàn diện về thị trường."
+        },
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "We need a comprehensive plan to solve this issue.",
+          "example_vi": "Chúng ta cần một kế hoạch bao hàm toàn diện để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "The book is a comprehensive guide to gardening.",
+          "example_vi": "Cuốn sách là một hướng dẫn bao hàm toàn diện về làm vườn."
+        },
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "They conducted a comprehensive study on the topic.",
+          "example_vi": "Họ đã thực hiện một nghiên cứu bao hàm toàn diện về chủ đề này."
+        },
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "The insurance policy offers comprehensive coverage.",
+          "example_vi": "Chính sách bảo hiểm cung cấp sự bảo vệ bao hàm toàn diện."
+        },
+        {
+          "meaning_vi": "thông minh",
+          "example_en": "She is a comprehensive student who learns quickly.",
+          "example_vi": "Cô ấy là một học sinh thông minh, người học hỏi rất nhanh."
+        },
+        {
+          "meaning_vi": "thông minh",
+          "example_en": "He gave a comprehensive answer to the difficult question.",
+          "example_vi": "Anh ấy đã đưa ra một câu trả lời thông minh cho câu hỏi khó."
+        },
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "The list is not comprehensive, but it covers the basics.",
+          "example_vi": "Danh sách này không bao hàm toàn diện, nhưng nó bao gồm những điều cơ bản."
+        },
+        {
+          "meaning_vi": "bao hàm toàn diện",
+          "example_en": "We are looking for a comprehensive solution.",
+          "example_vi": "Chúng tôi đang tìm kiếm một giải pháp bao hàm toàn diện."
+        },
+        {
+          "meaning_vi": "thông minh",
+          "example_en": "His comprehensive mind allowed him to grasp the concept.",
+          "example_vi": "Trí tuệ thông minh của anh ấy cho phép anh ấy nắm bắt khái niệm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lược bỏ nghĩa trường học (comprehensive school) vì ít phổ biến và gây nhầm lẫn, tập trung vào nghĩa tính từ.",
+      "word": "comprehensive",
+      "normalized_word": "comprehensive",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The report provides a comprehensive overview of the market.",
+      "example_vi_clean": "Bản báo cáo cung cấp một cái nhìn bao hàm toàn diện về thị trường."
+    },
+    {
+      "id": 26670,
+      "quiz_meaning_vi": "gạc",
+      "meaning_vi_clean": "gạc; ép; nén",
+      "examples_clean": [
+        {
+          "meaning_vi": "gạc",
+          "example_en": "Apply a cold compress to the injury.",
+          "example_vi": "Hãy đắp một miếng gạc lạnh lên vết thương."
+        },
+        {
+          "meaning_vi": "gạc",
+          "example_en": "She used a warm compress to soothe the pain.",
+          "example_vi": "Cô ấy đã dùng một miếng gạc ấm để làm dịu cơn đau."
+        },
+        {
+          "meaning_vi": "gạc",
+          "example_en": "The nurse changed the compress on his arm.",
+          "example_vi": "Y tá đã thay miếng gạc trên cánh tay của anh ấy."
+        },
+        {
+          "meaning_vi": "gạc",
+          "example_en": "Keep the compress in place for ten minutes.",
+          "example_vi": "Giữ miếng gạc tại chỗ trong mười phút."
+        },
+        {
+          "meaning_vi": "ép",
+          "example_en": "The machine is used to compress the waste.",
+          "example_vi": "Cỗ máy được sử dụng để ép rác thải."
+        },
+        {
+          "meaning_vi": "ép",
+          "example_en": "You can compress the files to save space.",
+          "example_vi": "Bạn có thể ép các tệp tin để tiết kiệm không gian."
+        },
+        {
+          "meaning_vi": "nén",
+          "example_en": "The air is compressed in the tank.",
+          "example_vi": "Không khí được nén trong bình."
+        },
+        {
+          "meaning_vi": "nén",
+          "example_en": "He compressed his thoughts into a short speech.",
+          "example_vi": "Anh ấy đã nén những suy nghĩ của mình thành một bài phát biểu ngắn."
+        },
+        {
+          "meaning_vi": "ép",
+          "example_en": "The soil was compressed by the heavy roller.",
+          "example_vi": "Đất đã bị ép bởi chiếc xe lu nặng."
+        },
+        {
+          "meaning_vi": "nén",
+          "example_en": "The data is compressed for faster transmission.",
+          "example_vi": "Dữ liệu được nén để truyền tải nhanh hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ cho cả danh từ và động từ.",
+      "word": "compress",
+      "normalized_word": "compress",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Apply a cold compress to the injury.",
+      "example_vi_clean": "Hãy đắp một miếng gạc lạnh lên vết thương."
+    }
+  ]
+}

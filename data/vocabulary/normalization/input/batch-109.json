@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-109",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25081,
+      "word": "gramme",
+      "normalized_word": "gramme",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/græm/",
+      "primary_meaning_vi": "gam",
+      "meaning_vi": "gam",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25082,
+      "word": "grandchild",
+      "normalized_word": "grandchild",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'græntʃaid/",
+      "primary_meaning_vi": "cháu (của ông bà)",
+      "meaning_vi": "cháu (của ông bà)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25083,
+      "word": "granddad",
+      "normalized_word": "granddad",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'grændæd/ (grandad) /'grændæd/",
+      "primary_meaning_vi": "nhuấy &",
+      "meaning_vi": "nhuấy &",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25084,
+      "word": "granddaughter",
+      "normalized_word": "granddaughter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'græn,dɔ:tə/",
+      "primary_meaning_vi": "cháu gái (của ông bà)",
+      "meaning_vi": "cháu gái (của ông bà)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25085,
+      "word": "grandson",
+      "normalized_word": "grandson",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'grænsʌn/",
+      "primary_meaning_vi": "cháu trai (gọi bằng ông nội",
+      "meaning_vi": "cháu trai (gọi bằng ông nội, ông ngoại)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25086,
+      "word": "granny",
+      "normalized_word": "granny",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'græni/ (granny) /'græni/",
+      "primary_meaning_vi": "bà",
+      "meaning_vi": "bà; bà già; , lóng pháo lớn",
+      "example_en": "I'm going to be a granny.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There are too many grannies around here getting in the way.",
+          "example_vi": null
+        },
+        {
+          "example_en": "granny dress; granny glasses",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25087,
+      "word": "grateful",
+      "normalized_word": "grateful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'greitful/",
+      "primary_meaning_vi": "biết ơn",
+      "meaning_vi": "biết ơn; dễ chịu, khoan khoái",
+      "example_en": "I'm grateful that you helped me out.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25088,
+      "word": "greatly",
+      "normalized_word": "greatly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'greitli/",
+      "primary_meaning_vi": "rất lắm",
+      "meaning_vi": "rất lắm; cao thượng, cao cả",
+      "example_en": "Expenses greatly exceeded revenues this year.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25089,
+      "word": "greedy",
+      "normalized_word": "greedy",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'gri:di/",
+      "primary_meaning_vi": "tham ăn",
+      "meaning_vi": "tham ăn, háu ăn; tham lam, hám; thèm khát, thiết tha",
+      "example_en": "This regular expression performs a greedy match.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25090,
+      "word": "grilled",
+      "normalized_word": "grilled",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/grild/",
+      "primary_meaning_vi": "có lưới sắt",
+      "meaning_vi": "có lưới sắt",
+      "example_en": "Why don't we get together Saturday and grill some burgers?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The police grilled him about his movements at the time of the crime.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After a day in the sun, he looked more grilled than his hamburger.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-027",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24261,
+      "word": "eleven",
+      "normalized_word": "eleven",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi": "danh từ",
+      "phonetic": "/i'levn/",
+      "primary_meaning_vi": "mười một",
+      "meaning_vi": "mười một; số mười một; đội mười một người; mười một đồ đệ của Chúa Giê-xu (trừ Giu-đa)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24262,
+      "word": "else",
+      "normalized_word": "else",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/els/",
+      "primary_meaning_vi": "khác",
+      "meaning_vi": "khác, nữa; nếu không",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24263,
+      "word": "e-mail",
+      "normalized_word": "e-mail",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "thư điện tử",
+      "meaning_vi": "thư điện tử",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24264,
+      "word": "end",
+      "normalized_word": "end",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/end/",
+      "primary_meaning_vi": "giới hạn",
+      "meaning_vi": "giới hạn; đầu, đầu mút (dây...); đuôi; đáy (thùng...) đoạn cuối; mẩu thừa, mẩu còn lại; sự kết thúc; sự kết liễu, sự chết; kết quả; mục đích; wit; hoàn thành; bị kiệt quệ; tether; với một đầu quay vào (ai); deep; cuối cùng về sau; keep; chấm dứt; meet; vô cùng; rất nhiều; tuyệt diệu; liền, liên tục; thẳng đứng; đặt nối đàu vào nhau; chấm dứt, bãi bỏ; lộn ngược lại, trở đầu lại, quay ngược lại; world; kết thúc, chấm dứt; kết liễu, diệt; kết thúc, chấm dứt; đi đến chỗ, đưa đến kết quả là; kết luận, kết thúc; kết thúc bằng; cuối cùng sẽ làm việc gì; smoke",
+      "example_en": "At the end of the road, turn left.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Is there no end to this madness?",
+          "example_vi": null
+        },
+        {
+          "example_en": "He met a terrible end in the jungle.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Hold the string at both ends.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24265,
+      "word": "engineer",
+      "normalized_word": "engineer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/,endʤi'niə/",
+      "primary_meaning_vi": "kỹ sư",
+      "meaning_vi": "kỹ sư, công trình sư; kỹ sư xây dựng ((cũng) civil engineer); công binh; người thiết kế và xây dựng công sự; người phụ trách máy; (từ Mỹ,nghĩa Mỹ) người lái đầu máy xe lửa; người nghĩ ra, người bày ra, người vạch ra, người bố trí (mưu kế...); nghĩ ra, bày ra, vạch ra, bố trí, sắp đặt (mưu kế...); làm kỹ sư, làm công trình sư",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24266,
+      "word": "enjoy",
+      "normalized_word": "enjoy",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/in'dʤɔi/",
+      "primary_meaning_vi": "thích thú",
+      "meaning_vi": "thích thú, khoái (cái gì); được hưởng, được, có được",
+      "example_en": "Enjoy your holidays! I enjoy dancing.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I plan to go travelling while I still enjoy good health.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I enjoyed a lot.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24267,
+      "word": "evening",
+      "normalized_word": "evening",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i':vniɳ/",
+      "primary_meaning_vi": "buổi chiều",
+      "meaning_vi": "buổi chiều, buổi tối, tối đêm; lúc xế bóng",
+      "example_en": "It was the evening of the Roman Empire.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We need to even this playing field; the west goal is too low.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Thrice nine evens twenty seven.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We need to even the score.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24268,
+      "word": "event",
+      "normalized_word": "event",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/i'vent/",
+      "primary_meaning_vi": "sự việc",
+      "meaning_vi": "sự việc, sự kiện; sự kiện quan trọng; cuộc đấu, cuộc thi; trường hợp, khả năng có thể xảy ra; kết quả, hậu quả",
+      "example_en": "I went to an event in San Francisco last week.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "In the event, he turned out to have what I needed anyway.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24269,
+      "word": "every",
+      "normalized_word": "every",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi": "tính từ",
+      "phonetic": "/'evri/",
+      "primary_meaning_vi": "mỗi",
+      "meaning_vi": "mỗi, mọi; mọi người; thỉnh thoảng; hai ngày một lần",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24270,
+      "word": "everybody",
+      "normalized_word": "everybody",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'evribɔdi/ (everyone) /'evriwʌn/",
+      "primary_meaning_vi": "mọi người",
+      "meaning_vi": "mọi người, tất cả mọi người, ai ai; mỗi người",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

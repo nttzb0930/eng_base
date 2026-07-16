@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-028",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24271,
+      "word": "everyday",
+      "normalized_word": "everyday",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'evridei/",
+      "primary_meaning_vi": "hằng ngày",
+      "meaning_vi": "hằng ngày, dùng hằng ngày; thường, thông thường, xảy ra hằng ngày; tầm thường",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24272,
+      "word": "everyone",
+      "normalized_word": "everyone",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'evribɔdi/ (everyone) /'evriwʌn/",
+      "primary_meaning_vi": "mọi người",
+      "meaning_vi": "mọi người, tất cả mọi người, ai ai; mỗi người",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24273,
+      "word": "everything",
+      "normalized_word": "everything",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi": "đại từ",
+      "phonetic": "/'evriθiɳ/",
+      "primary_meaning_vi": "mọi vật",
+      "meaning_vi": "mọi vật, tất cả, mọi cái, tất cả mọi thứ; cái quan trọng bậc nhất, điều quan trọng bậc nhất",
+      "example_en": "I checked the list again and everything is done.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A:What do you want to do at the amusement park? B:Everything!",
+          "example_vi": null
+        },
+        {
+          "example_en": "She wasn't feeling well this morning but now everything is fine.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It took everything in me to resist the temptation to skip work on my birthday.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24274,
+      "word": "everywhere",
+      "normalized_word": "everywhere",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'evriweə/",
+      "primary_meaning_vi": "ở mọi nơi",
+      "meaning_vi": "ở mọi nơi, khắp nơi, khắp chốn",
+      "example_en": "He delivers the mail everywhere on this street.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I've looked everywhere in the house and still can't find my glasses.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24275,
+      "word": "example",
+      "normalized_word": "example",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ (từ hiếm,nghĩa hiếm)",
+      "phonetic": "/ig'zɑ:mpl/",
+      "primary_meaning_vi": "thí dụ",
+      "meaning_vi": "thí dụ, ví dụ; mẫu, gương mẫu, gương; cái để làm gương; tiền lệ, lệ trước, vật so sánh, cái tương đương; dùng làm thí dụ; dùng làm mẫu; dùng làm gương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24276,
+      "word": "excellent",
+      "normalized_word": "excellent",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'eksələnt/",
+      "primary_meaning_vi": "hơn hẳn",
+      "meaning_vi": "hơn hẳn, trội hơn; rất tốt, thượng hạng, xuất sắc, ưu tú",
+      "example_en": "Bill and Ted had an excellent adventure last week in preparation of their history exam.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24277,
+      "word": "excited",
+      "normalized_word": "excited",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ik'saitid/",
+      "primary_meaning_vi": "bị kích thích",
+      "meaning_vi": "bị kích thích, bị kích động; sôi nổi; hãy bình tĩnh! đừng nóng mà!",
+      "example_en": "The fireworks which opened the festivities excited anyone present.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Favoritism tends to excite jealousy in the ones not being favored.",
+          "example_vi": null
+        },
+        {
+          "example_en": "By applying electric potential to the neon atoms, the electrons become excited, then emit a photon when returning to normal.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to excite a dynamo",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24278,
+      "word": "exciting",
+      "normalized_word": "exciting",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ik'saitiɳ/",
+      "primary_meaning_vi": "kích thích",
+      "meaning_vi": "kích thích, kích động; hứng thú, lý thú, hồi hộp; làm say mê, làm náo động; để kích thích",
+      "example_en": "The fireworks which opened the festivities excited anyone present.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Favoritism tends to excite jealousy in the ones not being favored.",
+          "example_vi": null
+        },
+        {
+          "example_en": "By applying electric potential to the neon atoms, the electrons become excited, then emit a photon when returning to normal.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to excite a dynamo",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24279,
+      "word": "excuse",
+      "normalized_word": "excuse",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/iks'kju:z/",
+      "primary_meaning_vi": "lời xin lỗi",
+      "meaning_vi": "lời xin lỗi; lý do để xin lỗi; lời bào chữa; lý do để bào chữa; sự miễn cho, sự tha cho (nhiệm vụ gì); tha lỗi, thứ lỗi, tha thứ, miễn thứ, lượng thứ, bỏ quá đi cho; cố làm giảm lỗi của, cố làm giảm trách nhiệm của (ai, việc gì); bào chữa, giải tội cho (ai); là cớ để bào chữa cho; miễn cho, tha cho",
+      "example_en": "Tell me why you were late – and I don't want to hear any excuses!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He's a sorry excuse of a doctor.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I excused him his transgressions.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I excused myself from the proceedings to think over what I'd heard.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24280,
+      "word": "expensive",
+      "normalized_word": "expensive",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/iks'pensiv/",
+      "primary_meaning_vi": "đắt tiền",
+      "meaning_vi": "đắt tiền; xa hoa",
+      "example_en": "an unnecessarily expensive choice of algorithm",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Typography Showcase — Inter for Vietnamese</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 32px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #F6F8FB;
+    color: #0B1220;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  h1, h2, h3, h4, p { margin: 0; }
+  section {
+    background: #fff;
+    border: 1px solid #E6EAF0;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #5A6478;
+    margin-bottom: 20px;
+  }
+
+  /* Type scale */
+  .type-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid #F0F2F5;
+    align-items: baseline;
+  }
+  .type-row:last-child { border-bottom: none; }
+  .type-label {
+    font-size: 12px;
+    color: #8A93A6;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .type-display { font-size: 32px; font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+  .type-h2 { font-size: 24px; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+  .type-h3 { font-size: 18px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; }
+  .type-h4 { font-size: 16px; font-weight: 700; line-height: 1.4; }
+  .type-body-lg { font-size: 15px; line-height: 1.55; }
+  .type-body { font-size: 14px; line-height: 1.55; }
+  .type-body-medium { font-size: 14px; font-weight: 500; line-height: 1.5; }
+  .type-body-sm { font-size: 13px; line-height: 1.55; }
+  .type-caption { font-size: 12px; font-weight: 600; line-height: 1.3; letter-spacing: 0.05em; text-transform: uppercase; color: #5A6478; }
+  .type-micro { font-size: 11px; font-weight: 500; line-height: 1.3; color: #8A93A6; }
+
+  /* Weight showcase */
+  .weight-grid {
+    display: grid;
+    gap: 12px;
+  }
+  .weight-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+    align-items: center;
+    padding: 8px 0;
+  }
+  .weight-name { font-size: 12px; color: #8A93A6; font-family: 'JetBrains Mono', monospace; }
+  .weight-sample { font-size: 18px; }
+  .w400 { font-weight: 400; }
+  .w500 { font-weight: 500; }
+  .w600 { font-weight: 600; }
+  .w700 { font-weight: 700; }
+  .w800 { font-weight: 800; }
+
+  /* VN test */
+  .vn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .vn-card {
+    background: #F8FAFC;
+    border: 1px solid #E6EAF0;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .vn-title {
+    font-size: 11px;
+    color: #8A93A6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  .vn-text {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .vn-special {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  /* Comparison */
+  .compare-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #F0F2F5;
+  }
+  .compare-label { font-size: 11px; color: #8A93A6; font-family: 'JetBrains Mono', monospace; padding-top: 4px;}
+  .compare-sample { font-size: 16px; line-height: 1.55; }
+  .font-inter { font-family: 'Inter', sans-serif; }
+  .font-system { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .font-roboto { font-family: 'Roboto', sans-serif; }
+  .font-arial { font-family: Arial, sans-serif; }
+
+  /* Tabular nums */
+  .num-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .num-sample {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .num-tabular { font-variant-numeric: tabular-nums; }
+  .num-default { font-variant-numeric: normal; }
+  .num-label {
+    font-size: 12px;
+    color: #5A6478;
+  }
+  .num-list {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-top: 16px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header style="margin-bottom: 32px;">
+    <h1 style="font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px;">Typography Showcase</h1>
+    <p style="color: #5A6478; font-size: 15px;">Test type scale, weight, và render tiếng Việt với Inter</p>
+  </header>
+
+  <!-- TYPE SCALE -->
+  <section>
+    <div class="section-title">Type Scale</div>
+
+    <div class="type-row">
+      <div class="type-label">display<br/>32 / 700</div>
+      <div class="type-display">Tiến độ học tập của bạn</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">h2<br/>24 / 700</div>
+      <div class="type-h2">12 từ đang chờ bạn ôn lại</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">h3<br/>18 / 700</div>
+      <div class="type-h3">Hoạt động 7 ngày qua</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">h4<br/>16 / 700</div>
+      <div class="type-h4">Phiên học gần đây</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">body-lg<br/>15 / 400</div>
+      <div class="type-body-lg">Dùng spaced repetition để ghi nhớ từ vựng lâu hơn. Mỗi ngày chỉ cần 10 phút, bạn sẽ thấy tiến bộ rõ rệt.</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">body<br/>14 / 400</div>
+      <div class="type-body">Bạn đang ở A1 · Sơ cấp. Hôm nay có 12 từ cần ôn — chỉ 8 phút thôi!</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">body-sm<br/>13 / 500</div>
+      <div class="type-body" style="font-weight: 500;">14.5% chương trình A1 · +12 tuần này</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">caption<br/>12 / 600</div>
+      <div class="type-caption">Từ đã học · đã thành thạo</div>
+    </div>
+
+    <div class="type-row">
+      <div class="type-label">micro<br/>11 / 500</div>
+      <div class="type-micro">Tooltip · helper text · tag nhỏ</div>
+    </div>
+  </section>
+
+  <!-- WEIGHTS -->
+  <section>
+    <div class="section-title">Font Weights — Inter</div>
+    <div class="weight-grid">
+      <div class="weight-row">
+        <div class="weight-name">400 regular</div>
+        <div class="weight-sample w400">Hôm nay bạn có 12 từ cần ôn lại</div>
+      </div>
+      <div class="weight-row">
+        <div class="weight-name">500 medium</div>
+        <div class="weight-sample w500">Hôm nay bạn có 12 từ cần ôn lại</div>
+      </div>
+      <div class="weight-row">
+        <div class="weight-name">600 semibold</div>
+        <div class="weight-sample w600">Hôm nay bạn có 12 từ cần ôn lại</div>
+      </div>
+      <div class="weight-row">
+        <div class="weight-name">700 bold</div>
+        <div class="weight-sample w700">Hôm nay bạn có 12 từ cần ôn lại</div>
+      </div>
+      <div class="weight-row">
+        <div class="weight-name">800 extrabold</div>
+        <div class="weight-sample w800">Hôm nay bạn có 12 từ cần ôn lại</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIETNAMESE TEST -->
+  <section>
+    <div class="section-title">Vietnamese Rendering Test</div>
+    <div class="vn-grid">
+      <div class="vn-card">
+        <div class="vn-title">Có dấu cơ bản</div>
+        <div class="vn-text">Tiếng Việt có dấu: à, á, ả, ã, ạ, ằ, ắ, ẳ, ẵ, ặ, ầ, ấ, ẩ, ẫ, ậ, è, é, ẻ, ẽ, ẹ, ề, ế, ể, ễ, ệ, ì, í, ỉ, ĩ, ị, ò, ó, ỏ, õ, ọ, ồ, ố, ổ, ỗ, ộ, ờ, ớ, ở, ỡ, ợ, ù, ú, ủ, ũ, ụ, ừ, ứ, ử, ữ, ự, ỳ, ý, ỷ, ỹ, ỵ, đ</div>
+      </div>
+
+      <div class="vn-card">
+        <div class="vn-title">Họ tên phổ biến</div>
+        <div class="vn-text vn-special">Nguyễn Văn An</div>
+        <div class="vn-text vn-special" style="margin-top: 8px;">Trần Thị Bình</div>
+        <div class="vn-text vn-special" style="margin-top: 8px;">Lê Hoàng Cường</div>
+        <div class="vn-text vn-special" style="margin-top: 8px;">Phạm Quốc Đạt</div>
+        <div class="vn-text vn-special" style="margin-top: 8px;">Hoàng Thị Thanh Xuân</div>
+      </div>
+
+      <div class="vn-card">
+        <div class="vn-title">Từ chuyên ngành</div>
+        <div class="vn-text">Spaced Repetition · Flashcard · Phát âm · Ngữ pháp · Từ vựng · Luyện tập · Đánh giá · Tiến độ</div>
+      </div>
+
+      <div class="vn-card">
+        <div class="vn-title">Mixed VN + EN + Số</div>
+        <div class="vn-text">Bài 7 · A1: Family &amp; Relationships — 24 từ mới, 6 ngữ pháp. Hoàn thành 45%.</div>
+        <div class="vn-text" style="margin-top: 8px; font-weight: 600;">87/600 từ · 23 thành thạo · 14.5%</div>
+      </div>
+
+      <div class="vn-card">
+        <div class="vn-title">Ký tự đặc biệt</div>
+        <div class="vn-text vn-special">Đường, Giỗ, Nghỉ, Phở, Quế, Triều, Trẻ, Lễ, Mỹ, Tỷ, Rủ, Sữa, Gửi, Ngủ</div>
+      </div>
+
+      <div class="vn-card">
+        <div class="vn-title">Câu dài + xuống dòng</div>
+        <div class="vn-text">Chỉ 10 phút mỗi ngày, bạn sẽ ghi nhớ được hơn 600 từ vựng tiếng Anh thông dụng trong vòng 4 tháng. Bắt đầu từ hôm nay, kiên trì là chìa khóa của thành công.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FONT COMPARISON -->
+  <section>
+    <div class="section-title">Font Comparison — Cùng một dòng chữ</div>
+
+    <div class="compare-row">
+      <div class="compare-label">Inter<br/>(chọn)</div>
+      <div class="compare-sample font-inter">Hôm nay bạn có 12 từ cần ôn lại. Bắt đầu thôi! 🔥</div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-label">System UI<br/>(macOS)</div>
+      <div class="compare-sample font-system">Hôm nay bạn có 12 từ cần ôn lại. Bắt đầu thôi! 🔥</div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-label">Roboto</div>
+      <div class="compare-sample font-roboto">Hôm nay bạn có 12 từ cần ôn lại. Bắt đầu thôi! 🔥</div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-label">Arial</div>
+      <div class="compare-sample font-arial">Hôm nay bạn có 12 từ cần ôn lại. Bắt đầu thôi! 🔥</div>
+    </div>
+  </section>
+
+  <!-- TABULAR NUMS -->
+  <section>
+    <div class="section-title">Tabular Numbers — Quan trọng cho dashboard</div>
+    <p style="color: #5A6478; font-size: 14px; margin-bottom: 20px;">
+      Số dùng <code style="background: #F0F2F5; padding: 2px 6px; border-radius: 4px;">font-variant-numeric: tabular-nums</code> sẽ thẳng hàng đều, dễ scan mắt khi hiển thị danh sách số liệu.
+    </p>
+
+    <div class="num-grid">
+      <div>
+        <div class="num-sample num-default">87</div>
+        <div class="num-label">❌ Default — số có chiều rộng khác nhau</div>
+      </div>
+      <div>
+        <div class="num-sample num-tabular">87</div>
+        <div class="num-label">✅ Tabular — mọi số cùng chiều rộng</div>
+      </div>
+    </div>
+
+    <div class="num-list num-default" style="margin-top: 32px;">
+      <div>87 / 600 từ</div>
+      <div>23 thành thạo</div>
+      <div>142 lượt ôn</div>
+      <div>14.5% chương trình</div>
+    </div>
+
+    <div class="num-list num-tabular" style="margin-top: 16px; background: #ECFDF5; padding: 16px; border-radius: 8px;">
+      <div>87 / 600 từ</div>
+      <div>23 thành thạo</div>
+      <div>142 lượt ôn</div>
+      <div>14.5% chương trình</div>
+    </div>
+  </section>
+
+  <!-- DOs & DONTs -->
+  <section>
+    <div class="section-title">Do &amp; Don't khi dùng Inter cho tiếng Việt</div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+      <div style="background: #ECFDF5; border: 1px solid #10B981; border-radius: 10px; padding: 16px;">
+        <div style="font-size: 12px; color: #059669; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">✅ Nên</div>
+        <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+          <li>Heading dùng <code>tracking-tight</code></li>
+          <li>Body tiếng Việt dài: <code>leading-[1.55]</code></li>
+          <li>Số liệu: <code>tabular-nums</code></li>
+          <li>CAPS label: <code>tracking-wider</code></li>
+          <li>Weight tối đa 700 cho body, 800 cho display</li>
+        </ul>
+      </div>
+      <div style="background: #FFF1F2; border: 1px solid #F43F5E; border-radius: 10px; padding: 16px;">
+        <div style="font-size: 12px; color: #F43F5E; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">❌ Tránh</div>
+        <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+          <li>Set <code>tracking-wide</code> cho heading VN</li>
+          <li>Dùng <code>font-black</code> (900) — quá đậm</li>
+          <li><code>leading-6</code> cho paragraph dài tiếng Việt</li>
+          <li>Hardcode <code>text-[16px]</code> thay vì dùng token</li>
+          <li>Letter-spacing dương cho body text</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26761,
+      "quiz_meaning_vi": "sự tạo thành",
+      "meaning_vi_clean": "sự tạo thành; tác phẩm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tạo thành",
+          "example_en": "The restructure resulted in the creation of a number of shared services.",
+          "example_vi": "Việc tái cơ cấu đã dẫn đến sự tạo thành một số dịch vụ chia sẻ."
+        },
+        {
+          "meaning_vi": "sự tạo thành",
+          "example_en": "The creation of new jobs is a priority for the government.",
+          "example_vi": "Sự tạo thành các công việc mới là ưu tiên của chính phủ."
+        },
+        {
+          "meaning_vi": "sự tạo thành",
+          "example_en": "Scientists are studying the creation of the universe.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu sự tạo thành của vũ trụ."
+        },
+        {
+          "meaning_vi": "sự tạo thành",
+          "example_en": "The creation of this committee will help solve the problem.",
+          "example_vi": "Sự tạo thành ủy ban này sẽ giúp giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "tác phẩm",
+          "example_en": "I think the manufacturer was so ashamed of its creation that it didn't put its name on it.",
+          "example_vi": "Tôi nghĩ nhà sản xuất đã rất xấu hổ về tác phẩm của mình đến nỗi họ không đặt tên lên đó."
+        },
+        {
+          "meaning_vi": "tác phẩm",
+          "example_en": "This painting is a beautiful creation by a local artist.",
+          "example_vi": "Bức tranh này là một tác phẩm tuyệt đẹp của một nghệ sĩ địa phương."
+        },
+        {
+          "meaning_vi": "tác phẩm",
+          "example_en": "The chef presented his latest culinary creation to the guests.",
+          "example_vi": "Đầu bếp đã giới thiệu tác phẩm ẩm thực mới nhất của mình cho các vị khách."
+        },
+        {
+          "meaning_vi": "tác phẩm",
+          "example_en": "Every novel is a unique creation of the author's imagination.",
+          "example_vi": "Mỗi cuốn tiểu thuyết là một tác phẩm độc đáo từ trí tưởng tượng của tác giả."
+        },
+        {
+          "meaning_vi": "tác phẩm",
+          "example_en": "She is proud of her latest fashion creation.",
+          "example_vi": "Cô ấy tự hào về tác phẩm thời trang mới nhất của mình."
+        },
+        {
+          "meaning_vi": "tác phẩm",
+          "example_en": "The garden is a wonderful creation of nature and human effort.",
+          "example_vi": "Khu vườn là một tác phẩm tuyệt vời của thiên nhiên và nỗ lực con người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ theo đúng phân bổ.",
+      "word": "creation",
+      "normalized_word": "creation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The restructure resulted in the creation of a number of shared services.",
+      "example_vi_clean": "Việc tái cơ cấu đã dẫn đến sự tạo thành một số dịch vụ chia sẻ."
+    },
+    {
+      "id": 26762,
+      "quiz_meaning_vi": "sáng tạo",
+      "meaning_vi_clean": "sáng tạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "We need to think creatively to solve this difficult problem.",
+          "example_vi": "Chúng ta cần suy nghĩ sáng tạo để giải quyết vấn đề khó khăn này."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "She approaches her work very creatively.",
+          "example_vi": "Cô ấy tiếp cận công việc của mình một cách rất sáng tạo."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The team worked creatively to design the new logo.",
+          "example_vi": "Nhóm đã làm việc sáng tạo để thiết kế logo mới."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "You can use these materials creatively to make decorations.",
+          "example_vi": "Bạn có thể sử dụng những vật liệu này một cách sáng tạo để làm đồ trang trí."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "He writes creatively about his childhood experiences.",
+          "example_vi": "Anh ấy viết một cách sáng tạo về những trải nghiệm thời thơ ấu của mình."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The students were encouraged to express themselves creatively.",
+          "example_vi": "Các học sinh được khuyến khích thể hiện bản thân một cách sáng tạo."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "They solved the puzzle creatively in just a few minutes.",
+          "example_vi": "Họ đã giải câu đố một cách sáng tạo chỉ trong vài phút."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The director directed the play very creatively.",
+          "example_vi": "Đạo diễn đã chỉ đạo vở kịch một cách rất sáng tạo."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "She uses her spare time to paint creatively.",
+          "example_vi": "Cô ấy dùng thời gian rảnh để vẽ một cách sáng tạo."
+        },
+        {
+          "meaning_vi": "sáng tạo",
+          "example_en": "The software allows users to edit photos creatively.",
+          "example_vi": "Phần mềm cho phép người dùng chỉnh sửa ảnh một cách sáng tạo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cách dùng phó từ.",
+      "word": "creatively",
+      "normalized_word": "creatively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "We need to think creatively to solve this difficult problem.",
+      "example_vi_clean": "Chúng ta cần suy nghĩ sáng tạo để giải quyết vấn đề khó khăn này."
+    },
+    {
+      "id": 26763,
+      "quiz_meaning_vi": "lạch",
+      "meaning_vi_clean": "lạch; sông con",
+      "examples_clean": [
+        {
+          "meaning_vi": "lạch",
+          "example_en": "We walked along the small creek to find a place to fish.",
+          "example_vi": "Chúng tôi đi dọc theo con lạch nhỏ để tìm chỗ câu cá."
+        },
+        {
+          "meaning_vi": "lạch",
+          "example_en": "The water in the creek was very clear and cold.",
+          "example_vi": "Nước trong lạch rất trong và lạnh."
+        },
+        {
+          "meaning_vi": "lạch",
+          "example_en": "Children were playing near the creek during the summer.",
+          "example_vi": "Trẻ em đang chơi gần con lạch trong suốt mùa hè."
+        },
+        {
+          "meaning_vi": "lạch",
+          "example_en": "The path follows the winding creek through the forest.",
+          "example_vi": "Con đường chạy dọc theo con lạch quanh co xuyên qua khu rừng."
+        },
+        {
+          "meaning_vi": "sông con",
+          "example_en": "The boat sailed up the creek to reach the village.",
+          "example_vi": "Chiếc thuyền đi ngược dòng sông con để đến ngôi làng."
+        },
+        {
+          "meaning_vi": "sông con",
+          "example_en": "Many birds live along the banks of the creek.",
+          "example_vi": "Nhiều loài chim sống dọc theo bờ của con sông con này."
+        },
+        {
+          "meaning_vi": "sông con",
+          "example_en": "The heavy rain caused the creek to overflow its banks.",
+          "example_vi": "Cơn mưa lớn khiến con sông con tràn bờ."
+        },
+        {
+          "meaning_vi": "sông con",
+          "example_en": "We crossed the creek using a wooden bridge.",
+          "example_vi": "Chúng tôi băng qua con sông con bằng một cây cầu gỗ."
+        },
+        {
+          "meaning_vi": "sông con",
+          "example_en": "The creek flows into the larger river nearby.",
+          "example_vi": "Con sông con này chảy vào con sông lớn hơn gần đó."
+        },
+        {
+          "meaning_vi": "sông con",
+          "example_en": "They built a small cabin by the creek.",
+          "example_vi": "Họ đã xây một căn nhà gỗ nhỏ bên cạnh con sông con."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chọn 2 nghĩa phổ biến nhất. Bổ sung 10 ví dụ.",
+      "word": "creek",
+      "normalized_word": "creek",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We walked along the small creek to find a place to fish.",
+      "example_vi_clean": "Chúng tôi đi dọc theo con lạch nhỏ để tìm chỗ câu cá."
+    },
+    {
+      "id": 26764,
+      "quiz_meaning_vi": "rùng mình",
+      "meaning_vi_clean": "rùng mình",
+      "examples_clean": [
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "That creepy old man keeps leering at me.",
+          "example_vi": "Ông già rùng mình đó cứ nhìn chằm chằm vào tôi."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "I had a creepy feeling that someone was watching me.",
+          "example_vi": "Tôi có cảm giác rùng mình rằng ai đó đang theo dõi mình."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "The abandoned house had a creepy atmosphere at night.",
+          "example_vi": "Ngôi nhà bỏ hoang có bầu không khí rùng mình vào ban đêm."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "He told a creepy story that made us all nervous.",
+          "example_vi": "Anh ấy kể một câu chuyện rùng mình khiến tất cả chúng tôi lo lắng."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "There was a creepy silence in the dark hallway.",
+          "example_vi": "Có một sự im lặng rùng mình trong hành lang tối."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "She felt a creepy sensation on her skin.",
+          "example_vi": "Cô ấy cảm thấy một cảm giác rùng mình trên da."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "The movie had some very creepy scenes.",
+          "example_vi": "Bộ phim có vài cảnh rất rùng mình."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "It is creepy how he knows everything about us.",
+          "example_vi": "Thật rùng mình khi anh ta biết mọi thứ về chúng tôi."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "The doll's eyes looked quite creepy in the dark.",
+          "example_vi": "Đôi mắt của con búp bê trông khá rùng mình trong bóng tối."
+        },
+        {
+          "meaning_vi": "rùng mình",
+          "example_en": "I don't like walking alone in that creepy alley.",
+          "example_vi": "Tôi không thích đi bộ một mình trong con hẻm rùng mình đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung 10 ví dụ.",
+      "word": "creepy",
+      "normalized_word": "creepy",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "That creepy old man keeps leering at me.",
+      "example_vi_clean": "Ông già rùng mình đó cứ nhìn chằm chằm vào tôi."
+    },
+    {
+      "id": 26765,
+      "quiz_meaning_vi": "toàn bộ thuỷ thủ trên tàu",
+      "meaning_vi_clean": "toàn bộ thuỷ thủ trên tàu; đội",
+      "examples_clean": [
+        {
+          "meaning_vi": "toàn bộ thuỷ thủ trên tàu",
+          "example_en": "The captain and the crew are preparing for the long voyage.",
+          "example_vi": "Thuyền trưởng và toàn bộ thuỷ thủ trên tàu đang chuẩn bị cho chuyến đi dài."
+        },
+        {
+          "meaning_vi": "toàn bộ thuỷ thủ trên tàu",
+          "example_en": "The crew worked hard to keep the ship safe during the storm.",
+          "example_vi": "Toàn bộ thuỷ thủ trên tàu đã làm việc chăm chỉ để giữ an toàn cho con tàu trong cơn bão."
+        },
+        {
+          "meaning_vi": "toàn bộ thuỷ thủ trên tàu",
+          "example_en": "All members of the crew were experienced sailors.",
+          "example_vi": "Tất cả thành viên của toàn bộ thuỷ thủ trên tàu đều là những người đi biển giàu kinh nghiệm."
+        },
+        {
+          "meaning_vi": "toàn bộ thuỷ thủ trên tàu",
+          "example_en": "The crew was exhausted after the long journey.",
+          "example_vi": "Toàn bộ thuỷ thủ trên tàu đã kiệt sức sau chuyến hành trình dài."
+        },
+        {
+          "meaning_vi": "đội",
+          "example_en": "The film crew spent weeks shooting in the mountains.",
+          "example_vi": "Đội làm phim đã dành nhiều tuần để quay ở vùng núi."
+        },
+        {
+          "meaning_vi": "đội",
+          "example_en": "A maintenance crew arrived to fix the broken power lines.",
+          "example_vi": "Một đội bảo trì đã đến để sửa chữa đường dây điện bị hỏng."
+        },
+        {
+          "meaning_vi": "đội",
+          "example_en": "The cleaning crew comes every morning to tidy the office.",
+          "example_vi": "Đội vệ sinh đến mỗi sáng để dọn dẹp văn phòng."
+        },
+        {
+          "meaning_vi": "đội",
+          "example_en": "The rescue crew saved the hikers trapped in the cave.",
+          "example_vi": "Đội cứu hộ đã cứu những người đi bộ đường dài bị mắc kẹt trong hang."
+        },
+        {
+          "meaning_vi": "đội",
+          "example_en": "Our construction crew finished the project ahead of schedule.",
+          "example_vi": "Đội xây dựng của chúng tôi đã hoàn thành dự án trước thời hạn."
+        },
+        {
+          "meaning_vi": "đội",
+          "example_en": "The camera crew captured some amazing footage of the wildlife.",
+          "example_vi": "Đội quay phim đã ghi lại được những thước phim tuyệt vời về động vật hoang dã."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ loại (danh từ). Bổ sung 10 ví dụ.",
+      "word": "crew",
+      "normalized_word": "crew",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The captain and the crew are preparing for the long voyage.",
+      "example_vi_clean": "Thuyền trưởng và toàn bộ thuỷ thủ trên tàu đang chuẩn bị cho chuyến đi dài."
+    },
+    {
+      "id": 26766,
+      "quiz_meaning_vi": "có tội",
+      "meaning_vi_clean": "có tội; tội phạm",
+      "examples_clean": [
+        {
+          "meaning_vi": "có tội",
+          "example_en": "The jury found the defendant guilty of a criminal act.",
+          "example_vi": "Bồi thẩm đoàn thấy bị cáo có tội với hành vi phạm tội."
+        },
+        {
+          "meaning_vi": "có tội",
+          "example_en": "It is a criminal waste of time to wait here all day.",
+          "example_vi": "Thật là một sự lãng phí có tội khi phải đợi ở đây cả ngày."
+        },
+        {
+          "meaning_vi": "có tội",
+          "example_en": "He was involved in criminal activities in his youth.",
+          "example_vi": "Anh ấy đã tham gia vào các hoạt động có tội khi còn trẻ."
+        },
+        {
+          "meaning_vi": "có tội",
+          "example_en": "The judge described the behavior as criminal negligence.",
+          "example_vi": "Thẩm phán mô tả hành vi đó là sự cẩu thả có tội."
+        },
+        {
+          "meaning_vi": "tội phạm",
+          "example_en": "The police are trying to catch the dangerous criminal.",
+          "example_vi": "Cảnh sát đang cố gắng bắt giữ tên tội phạm nguy hiểm."
+        },
+        {
+          "meaning_vi": "tội phạm",
+          "example_en": "The criminal was sentenced to ten years in prison.",
+          "example_vi": "Tên tội phạm đã bị kết án mười năm tù."
+        },
+        {
+          "meaning_vi": "tội phạm",
+          "example_en": "Society must protect itself from the actions of a criminal.",
+          "example_vi": "Xã hội phải tự bảo vệ mình khỏi những hành động của một tội phạm."
+        },
+        {
+          "meaning_vi": "tội phạm",
+          "example_en": "The detective tracked down the criminal after months of investigation.",
+          "example_vi": "Thám tử đã truy lùng tên tội phạm sau nhiều tháng điều tra."
+        },
+        {
+          "meaning_vi": "tội phạm",
+          "example_en": "Many people believe that a criminal can change for the better.",
+          "example_vi": "Nhiều người tin rằng một tội phạm có thể thay đổi theo hướng tốt hơn."
+        },
+        {
+          "meaning_vi": "tội phạm",
+          "example_en": "The criminal escaped from the high-security prison.",
+          "example_vi": "Tên tội phạm đã trốn thoát khỏi nhà tù an ninh nghiêm ngặt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ/danh từ. Bổ sung 10 ví dụ.",
+      "word": "criminal",
+      "normalized_word": "criminal",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The jury found the defendant guilty of a criminal act.",
+      "example_vi_clean": "Bồi thẩm đoàn thấy bị cáo có tội với hành vi phạm tội."
+    },
+    {
+      "id": 26767,
+      "quiz_meaning_vi": "làm tàn tật",
+      "meaning_vi_clean": "làm tàn tật; làm tê liệt",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm tàn tật",
+          "example_en": "The accident threatened to cripple him for life.",
+          "example_vi": "Tai nạn đe dọa làm tàn tật anh ấy suốt đời."
+        },
+        {
+          "meaning_vi": "làm tàn tật",
+          "example_en": "The disease can cripple a person if not treated early.",
+          "example_vi": "Căn bệnh có thể làm tàn tật một người nếu không được điều trị sớm."
+        },
+        {
+          "meaning_vi": "làm tàn tật",
+          "example_en": "He was crippled in a war many years ago.",
+          "example_vi": "Anh ấy đã bị làm tàn tật trong một cuộc chiến nhiều năm trước."
+        },
+        {
+          "meaning_vi": "làm tàn tật",
+          "example_en": "The injury was severe enough to cripple the athlete.",
+          "example_vi": "Chấn thương đủ nghiêm trọng để làm tàn tật vận động viên này."
+        },
+        {
+          "meaning_vi": "làm tê liệt",
+          "example_en": "The strike threatened to cripple the city's transport system.",
+          "example_vi": "Cuộc đình công đe dọa làm tê liệt hệ thống giao thông của thành phố."
+        },
+        {
+          "meaning_vi": "làm tê liệt",
+          "example_en": "High inflation can cripple the national economy.",
+          "example_vi": "Lạm phát cao có thể làm tê liệt nền kinh tế quốc gia."
+        },
+        {
+          "meaning_vi": "làm tê liệt",
+          "example_en": "The cyberattack managed to cripple the company's servers.",
+          "example_vi": "Cuộc tấn công mạng đã làm tê liệt các máy chủ của công ty."
+        },
+        {
+          "meaning_vi": "làm tê liệt",
+          "example_en": "Lack of funding will cripple the research project.",
+          "example_vi": "Thiếu kinh phí sẽ làm tê liệt dự án nghiên cứu."
+        },
+        {
+          "meaning_vi": "làm tê liệt",
+          "example_en": "The heavy snowstorm managed to cripple the power grid.",
+          "example_vi": "Trận bão tuyết lớn đã làm tê liệt lưới điện."
+        },
+        {
+          "meaning_vi": "làm tê liệt",
+          "example_en": "The new regulations might cripple small businesses.",
+          "example_vi": "Các quy định mới có thể làm tê liệt các doanh nghiệp nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang động từ. Bổ sung 10 ví dụ.",
+      "word": "cripple",
+      "normalized_word": "cripple",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The accident threatened to cripple him for life.",
+      "example_vi_clean": "Tai nạn đe dọa làm tàn tật anh ấy suốt đời."
+    },
+    {
+      "id": 26768,
+      "quiz_meaning_vi": "chỉ trích",
+      "meaning_vi_clean": "chỉ trích; trầm trọng",
+      "examples_clean": [
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "I looked critically at the frayed carpet of the hotel room.",
+          "example_vi": "Tôi nhìn một cách chỉ trích vào tấm thảm sờn của phòng khách sạn."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "The teacher spoke critically about the student's poor performance.",
+          "example_vi": "Giáo viên đã nói một cách chỉ trích về kết quả học tập kém của học sinh."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "She examined the report critically before signing it.",
+          "example_vi": "Cô ấy đã xem xét bản báo cáo một cách chỉ trích trước khi ký."
+        },
+        {
+          "meaning_vi": "chỉ trích",
+          "example_en": "The public reacted critically to the new government policy.",
+          "example_vi": "Công chúng đã phản ứng một cách chỉ trích đối với chính sách mới của chính phủ."
+        },
+        {
+          "meaning_vi": "trầm trọng",
+          "example_en": "The patient is still critically ill in the hospital.",
+          "example_vi": "Bệnh nhân vẫn đang bị ốm trầm trọng trong bệnh viện."
+        },
+        {
+          "meaning_vi": "trầm trọng",
+          "example_en": "The situation is critically dangerous for everyone involved.",
+          "example_vi": "Tình hình đang nguy hiểm một cách trầm trọng đối với tất cả những người liên quan."
+        },
+        {
+          "meaning_vi": "trầm trọng",
+          "example_en": "The bridge is critically damaged and needs immediate repair.",
+          "example_vi": "Cây cầu bị hư hại trầm trọng và cần được sửa chữa ngay lập tức."
+        },
+        {
+          "meaning_vi": "trầm trọng",
+          "example_en": "The company is in a critically weak financial position.",
+          "example_vi": "Công ty đang ở trong một vị thế tài chính yếu kém trầm trọng."
+        },
+        {
+          "meaning_vi": "trầm trọng",
+          "example_en": "The water supply is critically low this summer.",
+          "example_vi": "Nguồn cung cấp nước đang ở mức thấp trầm trọng vào mùa hè này."
+        },
+        {
+          "meaning_vi": "trầm trọng",
+          "example_en": "The project is critically important for our future success.",
+          "example_vi": "Dự án này quan trọng một cách trầm trọng đối với sự thành công tương lai của chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến. Bổ sung 10 ví dụ.",
+      "word": "critically",
+      "normalized_word": "critically",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I looked critically at the frayed carpet of the hotel room.",
+      "example_vi_clean": "Tôi nhìn một cách chỉ trích vào tấm thảm sờn của phòng khách sạn."
+    },
+    {
+      "id": 26769,
+      "quiz_meaning_vi": "sự phê bình",
+      "meaning_vi_clean": "sự phê bình",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The politician received a lot of public criticism for his controversial stance.",
+          "example_vi": "Chính trị gia đã nhận nhiều sự phê bình từ công chúng vì lập trường gây tranh cãi của mình."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "She accepted the criticism and tried to improve her work.",
+          "example_vi": "Cô ấy đã chấp nhận sự phê bình và cố gắng cải thiện công việc của mình."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The book received harsh criticism from the literary experts.",
+          "example_vi": "Cuốn sách đã nhận sự phê bình gay gắt từ các chuyên gia văn học."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "Constructive criticism is helpful for personal growth.",
+          "example_vi": "Sự phê bình mang tính xây dựng rất hữu ích cho sự phát triển cá nhân."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "He was sensitive to any form of criticism.",
+          "example_vi": "Anh ấy rất nhạy cảm với bất kỳ hình thức sự phê bình nào."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The film director ignored the criticism from the media.",
+          "example_vi": "Đạo diễn phim đã phớt lờ sự phê bình từ truyền thông."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "There has been a lot of criticism regarding the new law.",
+          "example_vi": "Đã có rất nhiều sự phê bình liên quan đến đạo luật mới."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "She offered some helpful criticism on my presentation.",
+          "example_vi": "Cô ấy đã đưa ra một vài sự phê bình hữu ích về bài thuyết trình của tôi."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The artist was used to criticism of his work.",
+          "example_vi": "Người nghệ sĩ đã quen với sự phê bình về tác phẩm của mình."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The government faced strong criticism for its economic policy.",
+          "example_vi": "Chính phủ đã đối mặt với sự phê bình mạnh mẽ vì chính sách kinh tế của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa chính. Bổ sung 10 ví dụ.",
+      "word": "criticism",
+      "normalized_word": "criticism",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The politician received a lot of public criticism for his controversial stance.",
+      "example_vi_clean": "Chính trị gia đã nhận nhiều sự phê bình từ công chúng vì lập trường gây tranh cãi của mình."
+    },
+    {
+      "id": 26770,
+      "quiz_meaning_vi": "cá sấu",
+      "meaning_vi_clean": "cá sấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "The crocodile waited patiently in the water for its prey.",
+          "example_vi": "Con cá sấu kiên nhẫn chờ đợi con mồi dưới nước."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "We saw a large crocodile sunning itself on the riverbank.",
+          "example_vi": "Chúng tôi thấy một con cá sấu lớn đang phơi mình trên bờ sông."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "Crocodiles are known for their powerful jaws.",
+          "example_vi": "Cá sấu nổi tiếng với bộ hàm mạnh mẽ của chúng."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "The crocodile is a dangerous predator in the swamp.",
+          "example_vi": "Cá sấu là một loài săn mồi nguy hiểm trong đầm lầy."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "She wore a bag made of crocodile skin.",
+          "example_vi": "Cô ấy đeo một chiếc túi làm từ da cá sấu."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "The crocodile slipped silently into the murky water.",
+          "example_vi": "Con cá sấu trượt lặng lẽ xuống dòng nước đục."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "Many tourists visit the park to see the crocodiles.",
+          "example_vi": "Nhiều du khách đến thăm công viên để xem những con cá sấu."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "The crocodile's eyes glowed in the dark.",
+          "example_vi": "Đôi mắt của con cá sấu sáng lên trong bóng tối."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "He was afraid of encountering a crocodile while swimming.",
+          "example_vi": "Anh ấy sợ gặp phải cá sấu khi đang bơi."
+        },
+        {
+          "meaning_vi": "cá sấu",
+          "example_en": "The crocodile is a reptile that lives in tropical regions.",
+          "example_vi": "Cá sấu là một loài bò sát sống ở các vùng nhiệt đới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn. Bổ sung 10 ví dụ.",
+      "word": "crocodile",
+      "normalized_word": "crocodile",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The crocodile waited patiently in the water for its prey.",
+      "example_vi_clean": "Con cá sấu kiên nhẫn chờ đợi con mồi dưới nước."
+    }
+  ]
+}

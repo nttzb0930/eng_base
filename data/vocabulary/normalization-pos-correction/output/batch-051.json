@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25332,
+      "quiz_meaning_vi": "đoạn văn",
+      "meaning_vi_clean": "đoạn văn",
+      "examples_clean": [
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "Please read the first passage of the book.",
+          "example_vi": "Vui lòng đọc đoạn văn đầu tiên của cuốn sách."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "The teacher asked us to summarize the passage.",
+          "example_vi": "Giáo viên yêu cầu chúng tôi tóm tắt đoạn văn đó."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "I found a difficult word in this passage.",
+          "example_vi": "Tôi tìm thấy một từ khó trong đoạn văn này."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "She translated the passage into her native language.",
+          "example_vi": "Cô ấy đã dịch đoạn văn đó sang tiếng mẹ đẻ của mình."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "Can you explain the meaning of this passage?",
+          "example_vi": "Bạn có thể giải thích ý nghĩa của đoạn văn này không?"
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "The passage is very interesting to read.",
+          "example_vi": "Đoạn văn này rất thú vị để đọc."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "He highlighted the important sentences in the passage.",
+          "example_vi": "Anh ấy đã làm nổi bật các câu quan trọng trong đoạn văn."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "We need to analyze the passage carefully.",
+          "example_vi": "Chúng ta cần phân tích đoạn văn này một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "The passage describes the history of the city.",
+          "example_vi": "Đoạn văn mô tả lịch sử của thành phố."
+        },
+        {
+          "meaning_vi": "đoạn văn",
+          "example_en": "I have finished reading the assigned passage.",
+          "example_vi": "Tôi đã đọc xong đoạn văn được giao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'đoạn văn' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'đoạn văn'."
+      },
+      "word": "passage",
+      "normalized_word": "passage",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please read the first passage of the book.",
+      "example_vi_clean": "Vui lòng đọc đoạn văn đầu tiên của cuốn sách."
+    },
+    {
+      "id": 25341,
+      "quiz_meaning_vi": "hạt tiêu",
+      "meaning_vi_clean": "hạt tiêu",
+      "examples_clean": [
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "Add some salt and pepper to the soup.",
+          "example_vi": "Thêm một chút muối và hạt tiêu vào món súp."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "She likes to put a lot of pepper on her eggs.",
+          "example_vi": "Cô ấy thích cho nhiều hạt tiêu vào món trứng của mình."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "The pepper gives the dish a spicy flavor.",
+          "example_vi": "Hạt tiêu mang lại hương vị cay nồng cho món ăn."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "Do you have any black pepper in the kitchen?",
+          "example_vi": "Bạn có hạt tiêu đen trong bếp không?"
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "He ground some fresh pepper over the salad.",
+          "example_vi": "Anh ấy xay một ít hạt tiêu tươi lên món salad."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "The recipe calls for a teaspoon of pepper.",
+          "example_vi": "Công thức nấu ăn yêu cầu một thìa cà phê hạt tiêu."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "I accidentally spilled the pepper on the table.",
+          "example_vi": "Tôi vô tình làm đổ hạt tiêu lên bàn."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "This pepper is very strong and spicy.",
+          "example_vi": "Loại hạt tiêu này rất đậm đà và cay."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "Keep the pepper in a dry place.",
+          "example_vi": "Hãy giữ hạt tiêu ở nơi khô ráo."
+        },
+        {
+          "meaning_vi": "hạt tiêu",
+          "example_en": "She bought a new grinder for the pepper.",
+          "example_vi": "Cô ấy đã mua một chiếc máy xay mới cho hạt tiêu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'hạt tiêu' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'hạt tiêu'."
+      },
+      "word": "pepper",
+      "normalized_word": "pepper",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Add some salt and pepper to the soup.",
+      "example_vi_clean": "Thêm một chút muối và hạt tiêu vào món súp."
+    },
+    {
+      "id": 25342,
+      "quiz_meaning_vi": "hoàn hảo",
+      "meaning_vi_clean": "hoàn hảo",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "It was a perfect day for a picnic.",
+          "example_vi": "Đó là một ngày hoàn hảo cho một chuyến dã ngoại."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "She speaks perfect English.",
+          "example_vi": "Cô ấy nói tiếng Anh hoàn hảo."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "The weather is perfect for swimming.",
+          "example_vi": "Thời tiết thật hoàn hảo để đi bơi."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "He did a perfect job on the project.",
+          "example_vi": "Anh ấy đã làm một công việc hoàn hảo cho dự án."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "This is the perfect gift for her.",
+          "example_vi": "Đây là món quà hoàn hảo cho cô ấy."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "Everything was in perfect condition.",
+          "example_vi": "Mọi thứ đều ở trong tình trạng hoàn hảo."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "They made a perfect team.",
+          "example_vi": "Họ đã tạo thành một đội hoàn hảo."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "The cake was perfect in every way.",
+          "example_vi": "Chiếc bánh hoàn hảo về mọi mặt."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "It is the perfect time to start.",
+          "example_vi": "Đây là thời điểm hoàn hảo để bắt đầu."
+        },
+        {
+          "meaning_vi": "hoàn hảo",
+          "example_en": "She has a perfect smile.",
+          "example_vi": "Cô ấy có một nụ cười hoàn hảo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'hoàn hảo' phù hợp với tính từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào tính từ 'hoàn hảo'."
+      },
+      "word": "perfect",
+      "normalized_word": "perfect",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was a perfect day for a picnic.",
+      "example_vi_clean": "Đó là một ngày hoàn hảo cho một chuyến dã ngoại."
+    },
+    {
+      "id": 25346,
+      "quiz_meaning_vi": "nước hoa",
+      "meaning_vi_clean": "nước hoa",
+      "examples_clean": [
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "She wears a lovely perfume every day.",
+          "example_vi": "Cô ấy dùng một loại nước hoa đáng yêu mỗi ngày."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "He bought a bottle of perfume for his mother.",
+          "example_vi": "Anh ấy đã mua một chai nước hoa cho mẹ mình."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "The smell of her perfume is very sweet.",
+          "example_vi": "Mùi nước hoa của cô ấy rất ngọt ngào."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "I am looking for a new perfume to buy.",
+          "example_vi": "Tôi đang tìm mua một loại nước hoa mới."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "This perfume is quite expensive.",
+          "example_vi": "Loại nước hoa này khá đắt tiền."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "She sprayed some perfume on her wrist.",
+          "example_vi": "Cô ấy xịt một ít nước hoa lên cổ tay."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "Do you like the scent of this perfume?",
+          "example_vi": "Bạn có thích mùi hương của loại nước hoa này không?"
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "He gave her perfume as a birthday present.",
+          "example_vi": "Anh ấy tặng cô ấy nước hoa làm quà sinh nhật."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "The perfume bottle is made of glass.",
+          "example_vi": "Chai nước hoa được làm bằng thủy tinh."
+        },
+        {
+          "meaning_vi": "nước hoa",
+          "example_en": "She keeps her perfume on the dressing table.",
+          "example_vi": "Cô ấy để nước hoa trên bàn trang điểm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'nước hoa' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'nước hoa'."
+      },
+      "word": "perfume",
+      "normalized_word": "perfume",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She wears a lovely perfume every day.",
+      "example_vi_clean": "Cô ấy dùng một loại nước hoa đáng yêu mỗi ngày."
+    },
+    {
+      "id": 25358,
+      "quiz_meaning_vi": "viên thuốc",
+      "meaning_vi_clean": "viên thuốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The doctor told me to take one pill every day.",
+          "example_vi": "Bác sĩ bảo tôi uống một viên thuốc mỗi ngày."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "She swallowed the pill with a glass of water.",
+          "example_vi": "Cô ấy nuốt viên thuốc với một cốc nước."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "Keep the pill bottle away from children.",
+          "example_vi": "Để lọ thuốc tránh xa tầm tay trẻ em."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "He forgot to take his morning pill.",
+          "example_vi": "Anh ấy quên uống viên thuốc buổi sáng."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "This pill helps to reduce the pain.",
+          "example_vi": "Viên thuốc này giúp giảm đau."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The pill is very small and easy to swallow.",
+          "example_vi": "Viên thuốc rất nhỏ và dễ nuốt."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "She took a pill for her headache.",
+          "example_vi": "Cô ấy đã uống một viên thuốc để trị đau đầu."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "Are you sure you took the right pill?",
+          "example_vi": "Bạn có chắc là mình đã uống đúng viên thuốc không?"
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The doctor prescribed a new pill for her.",
+          "example_vi": "Bác sĩ đã kê một loại thuốc mới cho cô ấy."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "I need to buy more pills at the pharmacy.",
+          "example_vi": "Tôi cần mua thêm thuốc ở hiệu thuốc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'viên thuốc' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'viên thuốc'."
+      },
+      "word": "pill",
+      "normalized_word": "pill",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The doctor told me to take one pill every day.",
+      "example_vi_clean": "Bác sĩ bảo tôi uống một viên thuốc mỗi ngày."
+    },
+    {
+      "id": 25359,
+      "quiz_meaning_vi": "phi công",
+      "meaning_vi_clean": "phi công",
+      "examples_clean": [
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot announced that we would land soon.",
+          "example_vi": "Phi công thông báo rằng chúng tôi sẽ hạ cánh sớm."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "She wants to become a pilot when she grows up.",
+          "example_vi": "Cô ấy muốn trở thành phi công khi lớn lên."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot is very experienced.",
+          "example_vi": "Người phi công này rất giàu kinh nghiệm."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot greeted the passengers at the door.",
+          "example_vi": "Phi công chào đón hành khách tại cửa máy bay."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "He has been a pilot for ten years.",
+          "example_vi": "Anh ấy đã làm phi công được mười năm rồi."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot wore a smart uniform.",
+          "example_vi": "Người phi công mặc một bộ đồng phục lịch sự."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot checked the plane before takeoff.",
+          "example_vi": "Phi công đã kiểm tra máy bay trước khi cất cánh."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "Many people dream of being a pilot.",
+          "example_vi": "Nhiều người mơ ước được làm phi công."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot spoke to the control tower.",
+          "example_vi": "Phi công đã nói chuyện với đài kiểm soát không lưu."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot landed the plane safely.",
+          "example_vi": "Phi công đã hạ cánh máy bay một cách an toàn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'phi công' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'phi công'."
+      },
+      "word": "pilot",
+      "normalized_word": "pilot",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The pilot announced that we would land soon.",
+      "example_vi_clean": "Phi công thông báo rằng chúng tôi sẽ hạ cánh sớm."
+    },
+    {
+      "id": 25362,
+      "quiz_meaning_vi": "cây cối",
+      "meaning_vi_clean": "cây cối",
+      "examples_clean": [
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "She waters the plant every morning.",
+          "example_vi": "Cô ấy tưới cây mỗi sáng."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "This plant needs a lot of sunlight.",
+          "example_vi": "Cái cây này cần nhiều ánh sáng mặt trời."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "He has many plants in his living room.",
+          "example_vi": "Anh ấy có nhiều cây cối trong phòng khách."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "The plant is growing very fast.",
+          "example_vi": "Cái cây đang lớn rất nhanh."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "I bought a new plant for my desk.",
+          "example_vi": "Tôi đã mua một cái cây mới cho bàn làm việc của mình."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "Some plants do not need much water.",
+          "example_vi": "Một số loại cây không cần nhiều nước."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "She put the plant near the window.",
+          "example_vi": "Cô ấy đặt cái cây gần cửa sổ."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "The leaves of the plant are turning yellow.",
+          "example_vi": "Lá của cái cây đang chuyển sang màu vàng."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "He is learning how to take care of a plant.",
+          "example_vi": "Anh ấy đang học cách chăm sóc một cái cây."
+        },
+        {
+          "meaning_vi": "cây cối",
+          "example_en": "This plant has beautiful flowers.",
+          "example_vi": "Cái cây này có những bông hoa rất đẹp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'cây cối' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'cây cối'."
+      },
+      "word": "plant",
+      "normalized_word": "plant",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She waters the plant every morning.",
+      "example_vi_clean": "Cô ấy tưới cây mỗi sáng."
+    },
+    {
+      "id": 25364,
+      "quiz_meaning_vi": "cái đĩa",
+      "meaning_vi_clean": "cái đĩa",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "Please put the food on the plate.",
+          "example_vi": "Vui lòng đặt thức ăn lên cái đĩa."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "She broke a plate while washing the dishes.",
+          "example_vi": "Cô ấy đã làm vỡ một cái đĩa khi đang rửa bát."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "He served the cake on a small plate.",
+          "example_vi": "Anh ấy phục vụ bánh trên một cái đĩa nhỏ."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "There is a clean plate for everyone.",
+          "example_vi": "Có một cái đĩa sạch cho mỗi người."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "She bought a set of new plates.",
+          "example_vi": "Cô ấy đã mua một bộ đĩa mới."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "The plate is very hot, so be careful.",
+          "example_vi": "Cái đĩa rất nóng, vì vậy hãy cẩn thận."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "He left his plate on the table.",
+          "example_vi": "Anh ấy để cái đĩa của mình trên bàn."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "Can you pass me a plate, please?",
+          "example_vi": "Bạn có thể đưa cho tôi một cái đĩa được không?"
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "The plate is made of white ceramic.",
+          "example_vi": "Cái đĩa được làm bằng gốm trắng."
+        },
+        {
+          "meaning_vi": "cái đĩa",
+          "example_en": "She wiped the plate with a cloth.",
+          "example_vi": "Cô ấy lau cái đĩa bằng một chiếc khăn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'cái đĩa' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'cái đĩa'."
+      },
+      "word": "plate",
+      "normalized_word": "plate",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please put the food on the plate.",
+      "example_vi_clean": "Vui lòng đặt thức ăn lên cái đĩa."
+    },
+    {
+      "id": 25372,
+      "quiz_meaning_vi": "cảnh sát",
+      "meaning_vi_clean": "cảnh sát",
+      "examples_clean": [
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police arrived at the scene quickly.",
+          "example_vi": "Cảnh sát đã đến hiện trường rất nhanh."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "He called the police when he saw the thief.",
+          "example_vi": "Anh ấy đã gọi cảnh sát khi nhìn thấy tên trộm."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police are investigating the accident.",
+          "example_vi": "Cảnh sát đang điều tra vụ tai nạn."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "She asked the police for directions.",
+          "example_vi": "Cô ấy đã hỏi cảnh sát đường đi."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police stopped the car for speeding.",
+          "example_vi": "Cảnh sát đã dừng chiếc xe vì chạy quá tốc độ."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police officer helped the old lady.",
+          "example_vi": "Viên cảnh sát đã giúp đỡ bà cụ."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "They saw the police car on the street.",
+          "example_vi": "Họ nhìn thấy xe cảnh sát trên đường."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police are looking for the missing boy.",
+          "example_vi": "Cảnh sát đang tìm kiếm cậu bé bị mất tích."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "He wants to work for the police.",
+          "example_vi": "Anh ấy muốn làm việc cho cảnh sát."
+        },
+        {
+          "meaning_vi": "cảnh sát",
+          "example_en": "The police questioned the witnesses.",
+          "example_vi": "Cảnh sát đã thẩm vấn các nhân chứng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'cảnh sát' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'cảnh sát'."
+      },
+      "word": "police",
+      "normalized_word": "police",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police arrived at the scene quickly.",
+      "example_vi_clean": "Cảnh sát đã đến hiện trường rất nhanh."
+    },
+    {
+      "id": 25381,
+      "quiz_meaning_vi": "vị trí",
+      "meaning_vi_clean": "vị trí",
+      "examples_clean": [
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "He applied for a new position at the company.",
+          "example_vi": "Anh ấy đã ứng tuyển vào một vị trí mới tại công ty."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "The house is in a good position near the park.",
+          "example_vi": "Ngôi nhà nằm ở một vị trí tốt gần công viên."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "She held a high position in the government.",
+          "example_vi": "Cô ấy giữ một vị trí cao trong chính phủ."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "Can you change your position slightly?",
+          "example_vi": "Bạn có thể thay đổi vị trí của mình một chút không?"
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "The team is in a strong position to win.",
+          "example_vi": "Đội đang ở một vị trí thuận lợi để giành chiến thắng."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "He marked the position on the map.",
+          "example_vi": "Anh ấy đã đánh dấu vị trí trên bản đồ."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "She sat in a comfortable position.",
+          "example_vi": "Cô ấy ngồi ở một vị trí thoải mái."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "The company is looking for someone for this position.",
+          "example_vi": "Công ty đang tìm người cho vị trí này."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "The chair is in the wrong position.",
+          "example_vi": "Cái ghế đang ở sai vị trí."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "He explained his position on the matter.",
+          "example_vi": "Anh ấy đã giải thích vị trí (quan điểm) của mình về vấn đề này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa 'vị trí' phù hợp với danh từ cấp độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa và ví dụ đều tập trung vào danh từ 'vị trí'."
+      },
+      "word": "position",
+      "normalized_word": "position",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He applied for a new position at the company.",
+      "example_vi_clean": "Anh ấy đã ứng tuyển vào một vị trí mới tại công ty."
+    }
+  ]
+}

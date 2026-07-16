@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-133",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25321,
+      "word": "over",
+      "normalized_word": "over",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "tính từ",
+      "phonetic": "/'ouvə/",
+      "primary_meaning_vi": "trên",
+      "meaning_vi": "trên; ở trên; trên khắp, ở khắp; hơn, trên; hơn, nhiều hơn; qua, sang, đến tận; mê ai, phải lòng ai, say ai; từ bên này đến bên kia, bao quát; khó quá chúng tôi không hiểu được; vượt qua đầu chúng tôi, không hỏi ý kiến chúng tôi; yêu say đắm; boot; nhảy lên (hào giao thông) để công kích; đi ngủ mà còn suy nghĩ đến công việc; nói chuyện trong khi uống trà; nghiêng, ngửa; qua, sang; khắp, khắp chỗ, khắp nơi; ngược; lần nữa, lại; quá, hơn; từ đầu đến cuối, kỹ lưỡng, cẩn thận; qua, xong, hết; all; lại nữa; đối lập với; above; nhiều lần lặp đi lặp lại; cái thêm vào, cái vượt quá; ,  (quân sự) phát đạn nổ quá mục tiêu; cao hơn; ở ngoài hơn; nhiều hơn, quá; qua, xong hết",
+      "example_en": "He overed the fence in good style.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The cattle have been overing all day because of the flies.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The show is over.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I'm going to look over our department's expenses.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25322,
+      "word": "overweight",
+      "normalized_word": "overweight",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'ouvəweit/",
+      "primary_meaning_vi": "trọng lượng trội ((nghĩa đen) & (nghĩa bóng))",
+      "meaning_vi": "trọng lượng trội ((nghĩa đen) & (nghĩa bóng)); số cân thừa (béo quá); quá trọng lượng hợp lệ; béo quá; cân nặng hơn, có trọng lượng hơn; đè trĩu lên",
+      "example_en": "Apple common stock is one of our overweights.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Our portfolio is very overweight (in) Asian technology stocks.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "LONG_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25323,
+      "word": "pacific",
+      "normalized_word": "pacific",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/pə'sifik/",
+      "primary_meaning_vi": "thái bình",
+      "meaning_vi": "thái bình, hoà bình, ưa hoà bình; Thái bình dương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25324,
+      "word": "pack",
+      "normalized_word": "pack",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/pæk/",
+      "primary_meaning_vi": "bó",
+      "meaning_vi": "bó, gói; ba lô (quần áo); đàn, bầy (chó săn, chó sói...); lũ, loạt, lô; bộ, cỗ (bài); kiện (hàng); khối lượng hàng (cá, hoa quả...) đóng gói trong một vụ; phương pháp đóng gói hàng; hàng tiền đạo (bóng, bầu dục); đám băng nổi ((cũng) pack ice); khăn ướt để đắp, mền ướt để cuốn (người); sự đắp khăn ướt, sự cuốn mền ướt (vào người); lượt đắp (kem đắp vào mặt cho mịn da...); gói, bọc lại, buộc lại; đóng gói, đóng hộp, đóng kiện; tập hợp lại thành bầy (chó); sắp thành bộ, sắp thành cỗ (bài); xếp chặt (vào hòm, hộp); ních người (vào phòng, xe); thồ hàng lên (ngựa, súc vật...); nhét, hàn, gắn (khe hở); đắp khăn ướt lên, cuốn mền ướt vào (người); xếp người phe mình (vào hội đồng giám khảo...) để chiếm đa số khi quyết định; ,  (từ lóng) nện, giáng; + up) sắp xếp hành lý; đóng gói, đóng kiện; tụ tập thành bầy, tụ tập thành đàn; khăn gói ra đi, cuốn gói; tống tiền (ai), cho (ai) đi xa, tống cổ (ai) đi; khăn gói ra đi, cuốn gói; làm xong, hoàn thành; thôi ngừng; không chạy, chết máy, không nổ (máy...)",
+      "example_en": "The horses carried the packs across the plain.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "a pack of complaints",
+          "example_vi": null
+        },
+        {
+          "example_en": "We were going to play cards, but nobody brought a pack.",
+          "example_vi": null
+        },
+        {
+          "example_en": "cut the pack",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25325,
+      "word": "painter",
+      "normalized_word": "painter",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/peintə/",
+      "primary_meaning_vi": "thợ sơn",
+      "meaning_vi": "thợ sơn; hoạ sĩ; dây néo (thuyền tàu); cắt đứt, đoạn tuyệt",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25326,
+      "word": "pal",
+      "normalized_word": "pal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/pæl/",
+      "primary_meaning_vi": "bạn",
+      "meaning_vi": "bạn; + up) đánh bạn, kết bạn",
+      "example_en": "Little Timmy's out playing with his pals.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Don't you threaten me, pal – I'll report you to the police.",
+          "example_vi": null
+        },
+        {
+          "example_en": "John plans to pal around with Joe today.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25327,
+      "word": "pan",
+      "normalized_word": "pan",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ (+ out)",
+      "phonetic": "/pæn - pɑ:n/",
+      "primary_meaning_vi": "pɑ:n",
+      "meaning_vi": "pɑ:n/; thần đồng quê; ông Tạo; đạo nhiều thần; lá trầu không (để ăn trầu); miếng trầu; xoong, chảo; đĩa cân; cái giần (để đãi vàng); nồi, bể (luyện kim...); đất trũng lòng chảo; tầng đất cái ((cũng) hard pan); ổ nạp thuốc súng (ở một số súng cổ); sọ ((cũng) brain pan); ,  (từ lóng) đầu; mặt; đãi (vàng ở trong cát, bằng cái giần); chỉ trích gay gắt, phê bình nghiêm khắc; đâi được vàng, có vàng (cát...); kết quả",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25328,
+      "word": "panic",
+      "normalized_word": "panic",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'pænik/",
+      "primary_meaning_vi": "cây tắc",
+      "meaning_vi": "cây tắc; sự hoảng sợ, sự hoang mang sợ hãi; hoảng sợ, hoang mang sợ hãi; làm hoảng sợ, làm hoang mang sợ hãi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25329,
+      "word": "part",
+      "normalized_word": "part",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "phó từ",
+      "phonetic": "/pɑ:t/",
+      "primary_meaning_vi": "phần",
+      "meaning_vi": "phần, bộ phận, tập (sách); bộ phận cơ thể; phần việc, nhiệm vụ; vai, vai trò; lời nói của một vai kịch; bản chép lời của một vai kịch; nơi, vùng; phía, bè; bè; tài năng; về phần tôi; phần lớn, phần nhiều; một phần, phần nào; về phía; parcel; loại từ; không chấp nhất điều gì; không phật ý về việc gì; tham gia vào; chia thành từng phần, chia làm đôi; rẽ ra, tách ra, tách làm đôi; phân phối, chia phần (cái gì); rẽ ra, tách ra, đứt; chia tay, từ biệt, ra đi; chết; bỏ, lìa bỏ; brass; cắt đắt quan hệ bầu bạn với; một phần",
+      "example_en": "to do one’s part",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The part of his hair was slightly to the left.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to part the curtains",
+          "example_vi": null
+        },
+        {
+          "example_en": "A rope parts. His hair parts in the middle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25330,
+      "word": "partly",
+      "normalized_word": "partly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'pɑ:tli/",
+      "primary_meaning_vi": "một phần",
+      "meaning_vi": "một phần, phần nào",
+      "example_en": "they partly finished the house so they could move in before winter; the car was partly visible in the garage",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

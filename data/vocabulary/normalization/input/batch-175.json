@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-175",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25741,
+      "word": "comedian",
+      "normalized_word": "comedian",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'mi:djən/",
+      "primary_meaning_vi": "diễn viên kịch vui",
+      "meaning_vi": "diễn viên kịch vui; người đóng kịch vui; nhà soạn kịch vui",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25742,
+      "word": "comedy",
+      "normalized_word": "comedy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔmidi/",
+      "primary_meaning_vi": "kịch vui",
+      "meaning_vi": "kịch vui, hài kịch; thể kịch nói thông thường; thể kịch nói cổ Hy-lạp (có nhiều trò hề và có tính chất chính trị); thể kịch nói cổ Hy-lạp trung kỳ (có tính chất quá độ giữa thể kịch nói cổ và thể kịch nói hiện đại); thể kịch nói hiện đại Hy-lạp; trò hài kịch, tấn hài kịch (trong cuộc sống)",
+      "example_en": "Why would you be watching comedy when there are kids starving right now?",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25743,
+      "word": "comet",
+      "normalized_word": "comet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔmit/",
+      "primary_meaning_vi": "sao chổi",
+      "meaning_vi": "sao chổi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25744,
+      "word": "comfort",
+      "normalized_word": "comfort",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kʌmfət/",
+      "primary_meaning_vi": "sự an ủi",
+      "meaning_vi": "sự an ủi, sự khuyên giải; người an ủi, người khuyên giải; nguồn an ủi, lời an ủi; sự an nhàn, sự nhàn hạ; sự sung túc; tiện nghi; chăn lông vịt; đồ ăn ngon, quần áo đẹp...; những thứ lặt vặt cần dùng hằng ngày (cho cá nhân như thuốc lá...); dỗ dành, an ủi, khuyên giải, làm khuây khoả",
+      "example_en": "Sleep in comfort with our new mattress.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the comforts of home",
+          "example_vi": null
+        },
+        {
+          "example_en": "We still have the spare tire? That's a comfort at least.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The outcome of the peace negotiations in Moscow in 1940 was a heavy blow to the young nation, but in the same time a great comfort: at least the independency was preserved.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25745,
+      "word": "comma",
+      "normalized_word": "comma",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔmə/",
+      "primary_meaning_vi": "dấu phẩy",
+      "meaning_vi": "dấu phẩy; dấu ngoặc kép",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25746,
+      "word": "command",
+      "normalized_word": "command",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kə'mɑ:nd/",
+      "primary_meaning_vi": "lệnh",
+      "meaning_vi": "lệnh, mệnh lệnh; quyền chỉ huy, quyền điều khiển; sự làm chủ; sự kiềm chế, sự nén; sự tinh thông, sự thành thạo; đội quân (dưới quyền chỉ huy của một sĩ quan); bộ tư lệnh; sẵn sàng để tuỳ ý sử dụng; khi mệnh lệnh được ban ra; tối biểu diễn do lệnh của vua; điều khiển, chỉ huy; dưới quyền chỉ huy của; nắm quyền chỉ huy; ra lệnh, hạ lệnh; chỉ huy, điều khiển; chế ngự, kiềm chế, nén; sẵn, có sẵn (để sử dụng); đủ tư cách để, đáng được; bắt phải, khiến phải; bao quát; ra lệnh, hạ lệnh; chỉ huy, điều khiển",
+      "example_en": "I was given a command to cease shooting.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to have command of an army",
+          "example_vi": null
+        },
+        {
+          "example_en": "England has long held command of the sea",
+          "example_vi": null
+        },
+        {
+          "example_en": "General Smith was placed in command.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25747,
+      "word": "comment",
+      "normalized_word": "comment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'kɔment/",
+      "primary_meaning_vi": "lời bình luận",
+      "meaning_vi": "lời bình luận; lời chú giải, lời chú thích, lời dẫn giải; lời phê bình, lời chỉ trích; bình luận; chú thích, dẫn giải; phê bình, chỉ trích",
+      "example_en": "I have no comment on that.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I wish I'd commented this complicated algorithm back when I remembered how it worked.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25748,
+      "word": "commercial",
+      "normalized_word": "commercial",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'mə:ʃl/",
+      "primary_meaning_vi": "buôn bán",
+      "meaning_vi": "buôn bán; (thuộc) thương mại; (thuộc) thương nghiệp; buổi phát thanh quảng cáo hàng; người chào hàng; buổi phát thanh quảng cáo hàng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25749,
+      "word": "commit",
+      "normalized_word": "commit",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kə'mit/",
+      "primary_meaning_vi": "giao",
+      "meaning_vi": "giao, gửi, giao phó, uỷ nhiệm, uỷ thác; bỏ tù, giam giữ, tống giam; chuyển (một đạo luật...) cho tiểu ban xét (ở nghị viện); hứa, cam kết; làm hại đến, làm liên luỵ; dính vào; đưa (quân) đi đánh; memory; ghi chép",
+      "example_en": "Tony should be committed to a nuthouse!",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to commit a series of heinous crimes",
+          "example_vi": null
+        },
+        {
+          "example_en": "to commit oneself to a certain action",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25750,
+      "word": "commonly",
+      "normalized_word": "commonly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'kɔmənli/",
+      "primary_meaning_vi": "thường thường",
+      "meaning_vi": "thường thường, thông thường, bình thường; tầm thường, thô tục",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

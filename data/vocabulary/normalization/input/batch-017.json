@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-017",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24161,
+      "word": "cinema",
+      "normalized_word": "cinema",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'sinimə/",
+      "primary_meaning_vi": "rạp xi nê",
+      "meaning_vi": "rạp xi nê, rạp chiếu bóng; the cinema điện ảnh, xi nê, phim chiếu bóng; nghệ thuật điện ảnh; kỹ thuật điện ảnh",
+      "example_en": "The cinema is right across the street from the restaurant.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Despite the critics, he produced excellent cinema.",
+          "example_vi": null
+        },
+        {
+          "example_en": "In the long history of Spanish cinema [...] .",
+          "example_vi": null
+        },
+        {
+          "example_en": "Throughout the history of cinema, filmmakers [...] .",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24162,
+      "word": "circle",
+      "normalized_word": "circle",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'sə:kl/",
+      "primary_meaning_vi": "đường tròn",
+      "meaning_vi": "đường tròn, hình tròn; sự tuần hoàn; nhóm, giới; sự chạy quanh (ngựa); quỹ đạo (hành tinh); phạm vi; hàng ghế sắp tròn (trong rạp hát); mắt thâm quầng; chạy nhông, chạy nhắng lên (mà không được việc gì); square; đi chung quanh, xoay quanh; vây quanh; quay lộn; xoay quanh; lượn tròn, lượn quanh (máy bay); được chuyền quanh (rượu...); tin truyền đi, tin lan đi",
+      "example_en": "The set of all points (x, y) such that (x − 1)2 + y2 = r2 is a circle of radius r around the point (1, 0).",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Children, please join hands and form a circle.",
+          "example_vi": null
+        },
+        {
+          "example_en": "circle of friends",
+          "example_vi": null
+        },
+        {
+          "example_en": "The ten Circles of the Holy Roman Empire were those principalities or provinces which had seats in the German Diet.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24163,
+      "word": "city",
+      "normalized_word": "city",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'siti/",
+      "primary_meaning_vi": "thành phố",
+      "meaning_vi": "thành phố, thành thị, đô thị; dân thành thị; trung tâm thương nghiệp và tài chính thành phố Luân-đôn; (thuộc) thành phố; thiên đường; thành phố độc lập và có chủ quyền (như một nước)",
+      "example_en": "São Paulo is the largest city in South America.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I'm going into the city today to do some shopping.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It's video game city in here!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24164,
+      "word": "class",
+      "normalized_word": "class",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/klɑ:s/",
+      "primary_meaning_vi": "giai cấp",
+      "meaning_vi": "giai cấp; hạng, loại; lớp; lớp học; giờ học, buổi học; , (không phải Anh) khoá lính (lớp lính trong một năm); khoá học sinh (đại học); tính ưu tú, tính tuyệt vời; sự thanh nhã, sự thanh cao; phần thưởng hạng ưu; khác biệt, khác đời; tốt hơn cả, hay hơn cả, đẹp hơn cả; cái này chẳng dùng làm gì được; giành được vinh dự",
+      "example_en": "Often used to imply membership of a large class.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Jane Austen's works deal with class in 18th-century England.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Apologizing for losing your temper, even though you were badly provoked, showed real class.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The class was noisy, but the teacher was able to get their attention with a story.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24165,
+      "word": "classmate",
+      "normalized_word": "classmate",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "bạn cùng  lớp",
+      "meaning_vi": "bạn cùng  lớp",
+      "example_en": "Danny and I have been classmates for five years, but I've never spoken to him outside of lessons.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24166,
+      "word": "classroom",
+      "normalized_word": "classroom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "phòng đọc",
+      "meaning_vi": "phòng đọc",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24167,
+      "word": "clean",
+      "normalized_word": "clean",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kli:n/",
+      "primary_meaning_vi": "sạch",
+      "meaning_vi": "sạch, sạch sẽ; trong sạch không tội lỗi; không lỗi, dễ đọc (bản in); thẳng, không có mấu; không nham nhở; cân đối, đẹp; nhanh, khéo gọn; không bị ô uế; không bệnh tật; có thể ăn thịt được; sạch như chùi; cách ăn nói nhã nhặn; tình trạng không một tí gì ràng buộc; không dính líu gì về việc đó; breast; quét sạch, hoàn toàn xoá bỏ; heel; sự lau sạch, sự rửa sạch, sự quét sạch; hoàn toàn, hẳn; sạch, sạch sẽ; lau chùi, rửa sạch, cạo sạch, đánh sạch, tẩy sạch, vét sạch, quét sạch; chải (ngựa); làm cho sạch, quét sạch (tường...); cạo, nạo, dọn sạch, làm cho sạch; dọn, dọn dẹp, dọn vệ sinh; sắp xếp gọn ghẽ; hoàn thành công việc; , lóng vớ được món tiền lớn; nhẵn túi, cháy túi, sạch túi, bị bòn rút hết",
+      "example_en": "This place needs a clean.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Can you clean the windows today?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Clean your room right now!",
+          "example_vi": null
+        },
+        {
+          "example_en": "She just likes to clean. That’s why I married her.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24168,
+      "word": "clever",
+      "normalized_word": "clever",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'klevə/",
+      "primary_meaning_vi": "lanh lợi",
+      "meaning_vi": "lanh lợi, thông minh; giỏi, tài giỏi, khéo léo, lành nghề; thần tình, tài tình, hay; khôn ngoan, lâu; ,  (thông tục) tốt bụng, tử tế",
+      "example_en": "clever like a fox",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24169,
+      "word": "climb",
+      "normalized_word": "climb",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/klaim/",
+      "primary_meaning_vi": "sự leo trèo",
+      "meaning_vi": "sự leo trèo; vật trèo qua; vật phải trèo lên; leo, trèo, leo trèo; lên, lên cao; leo (cây); leo lên tới, trèo lên tới; trèo xuống, tụt xuống; thoái bộ, thụt lùi, lùi lại; chịu thua, nhượng bộ",
+      "example_en": "Prices climbed steeply.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Climbing a tree",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24170,
+      "word": "clock",
+      "normalized_word": "clock",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/klɔk/ (o'clock) /ə'klɔk/",
+      "primary_meaning_vi": "đường chỉ viền ở cạnh bít tất",
+      "meaning_vi": "đường chỉ viền ở cạnh bít tất; đồng hồ; giờ; đều đặn, chạy đều, trơn tru, trôi chảy; quay lại thời kỳ đã qua; đi ngược lại bánh xe lịch sử, ngăn chặn sự phát triển; làm việc suốt 12 tiếng; làm việc suốt 24 tiếng; bấm giờ (trong một cuộc chạy đua); ghi giờ; bấm giờ (một cuộc chạy đua); chạy (đi...) mất... (bao nhiêu thời gian)",
+      "example_en": "This car has over 300,000 miles on the clock.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I can't go off to lunch yet: I'm still on the clock.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was clocked at 155 miles per hour.",
+          "example_vi": null
+        },
+        {
+          "example_en": "When the boxer let down his guard, his opponent clocked him.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    }
+  ]
+}

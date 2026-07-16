@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-269",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26681,
+      "word": "concession",
+      "normalized_word": "concession",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'seʃn/",
+      "primary_meaning_vi": "sự nhượng",
+      "meaning_vi": "sự nhượng, sự nhượng bộ; sự nhường (đất đai...); đất nhượng (đất đai, đồn điền, mỏ do chính quyền thực dân chiếm đoạt của nhân dân để cấp cho bè lũ); nhượng địa, tô giới",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26682,
+      "word": "concrete",
+      "normalized_word": "concrete",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/'kɔnkri:t/",
+      "primary_meaning_vi": "cụ thể",
+      "meaning_vi": "cụ thể; bằng bê tông; vật cụ thể; bê tông; thực tế, trong thực tế; cụ thể; đúc thành một khối; chắc lại; rải bê tông; đổ bê tông; đúc bằng bê tông",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26683,
+      "word": "condemn",
+      "normalized_word": "condemn",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kən'dem/",
+      "primary_meaning_vi": "kết án",
+      "meaning_vi": "kết án, kết tội, xử, xử phạt; chỉ trích, chê trách, lên án, quy tội; bắt buộc, ép; tịch thu (hàng lậu...); thải, loại bỏ đi (đồ dùng cũ...); chạy, tuyên bố hết hy vọng, tuyên bố không chữa được (người bệnh); cell",
+      "example_en": "The president condemned the terrorists.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The house was condemned after it was badly damaged by fire.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26684,
+      "word": "conductor",
+      "normalized_word": "conductor",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'dʌktə/",
+      "primary_meaning_vi": "người chỉ huy",
+      "meaning_vi": "người chỉ huy, người chỉ đạo, người điều khiển, người dẫn đường; người bán vé (xe điện, xe buýt); người phục vụ hành khách (xe lửa); chất dẫn (điện, nhiệt); dây dẫn",
+      "example_en": "train conductor; tram conductor",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26685,
+      "word": "cone",
+      "normalized_word": "cone",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/koun/",
+      "primary_meaning_vi": "hình nón",
+      "meaning_vi": "hình nón; vật hình nón; nón; ốc nón; tín hiệu báo bão (hình nón); bột áo (bột mịn để xoa bột bánh mì đã nhào); làm thành hình nón; có hình nón",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26686,
+      "word": "conference",
+      "normalized_word": "conference",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔnfərəns/",
+      "primary_meaning_vi": "sự bàn bạc",
+      "meaning_vi": "sự bàn bạc, sự hội ý; hội nghị",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26687,
+      "word": "confess",
+      "normalized_word": "confess",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/kən'fes/",
+      "primary_meaning_vi": "thú tội",
+      "meaning_vi": "thú tội, thú nhận; xưng tội; nghe xưng tội",
+      "example_en": "I confess to spray-painting all over that mural!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26688,
+      "word": "confession",
+      "normalized_word": "confession",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'feʃn/",
+      "primary_meaning_vi": "sự thú tội",
+      "meaning_vi": "sự thú tội, sự thú nhận; sự xưng tội; tôi đã xưng; sự tuyên bố (nguyên tắc của mình về một vấn đề gì); sự phát biểu (về tín ngưỡng); tín điều",
+      "example_en": "Without the real murderer's confession, an innocent person will go to jail.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He forced me to sign a confession!",
+          "example_vi": null
+        },
+        {
+          "example_en": "I went to confession and now I feel much better about what I had done.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26689,
+      "word": "confidently",
+      "normalized_word": "confidently",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "tự tin",
+      "meaning_vi": "tự tin",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26690,
+      "word": "confine",
+      "normalized_word": "confine",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/kən'fain/",
+      "primary_meaning_vi": "giam giữ",
+      "meaning_vi": "giam giữ, giam hãm, giam cầm, nhốt giữ lại; hạn chế; (+ on,  to,  with) tiếp giáp với, giáp giới với; ở cữ, đẻ; bị liệt giường; số nhiều) biên giới; ranh giới (giữa hai loại ý kiến...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-215",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26141,
+      "word": "flavour",
+      "normalized_word": "flavour",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'fleivə/",
+      "primary_meaning_vi": "vị ngon",
+      "meaning_vi": "vị ngon, mùi thơm; mùi vị; hương vị phảng phất; cho gia vị, làm tăng thêm mùi vị; tăng thêm hứng thú của, thêm thắt vào, thêm mắm thêm muối vào",
+      "example_en": "The flavor of this apple pie is delicious.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Flavor was added to the pudding.",
+          "example_vi": null
+        },
+        {
+          "example_en": "What flavor of bubble gum do you enjoy?",
+          "example_vi": null
+        },
+        {
+          "example_en": "the flavor of an experience",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26142,
+      "word": "flock",
+      "normalized_word": "flock",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/flock/",
+      "primary_meaning_vi": "cụm",
+      "meaning_vi": "cụm, túm (bông, len); len phế phẩm, bông phế phẩm (để nhồi nệm); bột len, bột vải (để rắc lên giấy dán tường); (hoá học) kết tủa xốp, chất lẳng xốp; nhồi (nệm...) bằng bông len phế phẩm; đám đông; đàn, bầy; các con chiên, giáo dân; đám con chiên nào cũng có con chiên ghẻ; tụ tập, quây quần, tập trung lại thành đám đông; lũ lượt kéo đến; bird",
+      "example_en": "People flocked to the cinema to see the new film.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26143,
+      "word": "flow",
+      "normalized_word": "flow",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/flow/",
+      "primary_meaning_vi": "sự chảy",
+      "meaning_vi": "sự chảy; lượng chảy, lưu lượng; luồng nước; nước triều lên; sự đổ hàng hoá vào một nước; sự bay dập dờn (quần áo...); dòng, luồng; tính vui vẻ, tính sảng khoái; chuyện trò vui vẻ; chảy; rủ xuống, xoà xuống; lên (thuỷ triều); phun ra, toé ra, tuôn ra; đổ (máu); thấy kinh nhiều (đàn bà); xuất phát, bắt nguồn (từ); rót tràn đầy (rượu); ùa tới, tràn tới, đến tới tấp; trôi chảy (văn); bay dập dờn (quần áo, tóc...); tràn trề; đứng về phe thắng, phù thịnh",
+      "example_en": "The notion of flow is basic to the study of ordinary differential equations.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The room was small, but it had good symmetry and flow.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Other devices measure water flow in streams fed by melted ice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Tampons can be small or large, slender or thick. From “slender” to “super”, you can pick the size that matches your flow.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 26144,
+      "word": "fluent",
+      "normalized_word": "fluent",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/fluent/",
+      "primary_meaning_vi": "lưu loát",
+      "meaning_vi": "lưu loát, trôi chảy, viết lưu loát; uyển chuyển, dễ dàng (cử động); cháy, dễ cháy",
+      "example_en": "fluent handwriting",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She's fluent in French.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26145,
+      "word": "fluently",
+      "normalized_word": "fluently",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "trôi chảy",
+      "meaning_vi": "trôi chảy; lưu loát; trôi chảy; lưu loát",
+      "example_en": "He lived in Mexico, so he is able to speak Spanish fluently.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26146,
+      "word": "flunk",
+      "normalized_word": "flunk",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ,  (từ Mỹ,nghĩa Mỹ),  (thông tục)",
+      "phonetic": "/flunk/",
+      "primary_meaning_vi": "hỏng (thi)",
+      "meaning_vi": "hỏng (thi); đánh hỏng, làm thi trượt; hỏng thi, thi trượt; chịu thua, rút lui; đuổi ra khỏi trường (vì lười biếng...)",
+      "example_en": "He flunked math, again.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Unsatisfied with Fred's progress, the teacher flunked him.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26147,
+      "word": "flute",
+      "normalized_word": "flute",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/flute/",
+      "primary_meaning_vi": "cái sáo",
+      "meaning_vi": "cái sáo; người thổi sáo, tay sáo; đường rãnh máng (ở cột); nếp máng (tạo nên ở quần áo hồ cứng); thổi sáo; nói thánh thót, hát thánh thót (như tiếng sáo); làm rãnh máng (ở cột); tạo nếp máng (ở quần áo hồ cứng)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26148,
+      "word": "fold",
+      "normalized_word": "fold",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/fould/",
+      "primary_meaning_vi": "bãi rào (nhốt súc vật)",
+      "meaning_vi": "bãi rào (nhốt súc vật); các con chiên; nhóm người cùng chung quyền lợi, nhóm người cùng chung mục đích; trở về với gia đình; quây (bâi) cho súc vật (để bán đất); cho (súc vật) vào bâi rào, quây (súc vật) vào bãi rào; nếp gấp; khe núi, hốc núi; khúc cuộn (của con rắn); nếp oằn; gấp, gập; vén, xắn; khoanh (tay); bọc kỹ; bao phủ; ôm, ãm (vào lòng); gập lại, gấp nếp lại",
+      "example_en": "After two reraises in quick succession, John realised his best option was probably a fold.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "If you fold the sheets, they'll fit more easily in the drawer.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Cardboard doesn't fold very easily.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The chair folded under his enormous weight.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26149,
+      "word": "folk",
+      "normalized_word": "folk",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  (thường) số nhiều",
+      "phonetic": "/fouk/",
+      "primary_meaning_vi": "người",
+      "meaning_vi": "người; (thông tục) người thân thuộc; dân tộc, dân gian; người lười không thiếu lý do để lười",
+      "example_en": "Young folk, old folk, everybody come, / To our little Sunday School and have a lot of fun.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "folk psychology; folk linguistics",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26150,
+      "word": "fond",
+      "normalized_word": "fond",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/fɔnd/",
+      "primary_meaning_vi": "nền (bằng ren)",
+      "meaning_vi": "nền (bằng ren); yêu mến quá đỗi, yêu dấu; trìu mếm; cả tin, ngây thơ",
+      "example_en": "a fond farewell",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I have fond grandparents who spoil me.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He used the fond to make a classic French pan sauce.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

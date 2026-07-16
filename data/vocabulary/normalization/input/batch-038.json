@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-038",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24371,
+      "word": "guitar",
+      "normalized_word": "guitar",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": null,
+      "primary_meaning_vi": "chơi đàn ghita",
+      "meaning_vi": "chơi đàn ghita",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24372,
+      "word": "guy",
+      "normalized_word": "guy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/gai/",
+      "primary_meaning_vi": "dây",
+      "meaning_vi": "dây, xích; buộc bằng dây, xích lại; bù nhìn; ngáo ộp; người ăn mặc kỳ quái; ,  (từ lóng) anh chàng, gã; sự chuồn; lời nói đùa, lời pha trò; lời nói giễu; bêu hình nộm (của ai); chế giễu (ai); chuồn",
+      "example_en": "The dog's left foreleg was broken, poor little guy.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This guy is the partial derivative of that guy with respect to x.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Hey, guy, give a man a break, would ya?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24373,
+      "word": "habit",
+      "normalized_word": "habit",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'hæbit/",
+      "primary_meaning_vi": "thói quen",
+      "meaning_vi": "thói quen, tập quán; thể chất, tạng người; vóc người; tính khí, tính tình; cách mọc; cách phát triển; bộ quần áo đi ngựa (của đàn bà) ((cũng) riding habit); áo (chủ yếu là của thầy tu); mặc quần áo cho; ở, cư trú tại (một nơi nào)",
+      "example_en": "It’s become a habit of mine to have a cup of coffee after dinner.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "By force of habit, he dressed for work even though it was holiday.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It’s interesting how Catholic and Buddhist monks both wear habits.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The new riding habits of the team looked smashing!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24374,
+      "word": "had",
+      "normalized_word": "had",
+      "cefr_level": "A1",
+      "pos": "have-verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/hæv, həv, v/ (has) /hæz, həz, əz, z/ (hast) /hæst/",
+      "primary_meaning_vi": "có",
+      "meaning_vi": "có; nhận được, biết được; ăn; uống; hút; hưởng; bị; cho phép; muốn (ai làm gì); biết, hiểu; nhớ; phải, có bổn phận phải, bắt buộc phải; nói, cho là, chủ trương; tin chắc là; thắng, thắng thế; tóm, nắm, nắm chặt ((nghĩa đen) & (nghĩa bóng)); sai khiến, nhờ, bảo, bắt (ai làm gì...); bịp, lừa bịp; tấn công, công kích; coa mặc, vẫn mặc (quần áo...); có đội, vẫn đội (mũ...); gọi lên, triệu lên, mời lên; bắt, đưa ra toà; better; had better; ngừng lại!, thôi!; giải quyết một cuộc tranh cãi (với ai); nói cho ra lý lẽ (với ai); đi nhổ răng; không có thế lợi gì hơn ai; không có chứng cớ gì để buộc tội ai; thằng cha ấy thế là toi rồi; thằng cha ấy thế là hết thời (lỗi thời) rồi; thằng cha ấy chẳng hòng gì được nữa đâu; the haves and havenots (thông tục) những người giàu và những người nghèo; sự lừa bịp; hành động lừa bịp",
+      "example_en": "I have a house and a car.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Do you have the key? (not necessarily one's own key)",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have a really mean boss.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Can I have a look at that?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24375,
+      "word": "hair",
+      "normalized_word": "hair",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/heə/",
+      "primary_meaning_vi": "tóc",
+      "meaning_vi": "tóc, lông (người, thú, cây...); bộ lông (thú); xuềnh xoàng, tự nhiên, không nghi thức gò bó; ngược lông (vuốt); trái với y muốn, trái ngược; cùng một giuộc; làm cho ai chết vì buồn; suýt nữa, chỉ một ít nữa; rất đúng, đúng hoàn toàn; mắng mỏ ai, xỉ vả ai, sửa lưng ai; khống chế ai, bắt ai thế nào cũng chịu; treo trên sợi tóc; bình tĩnh; rụng tóc, rụng lông; nổi cáu, mất bình tĩnh; làm cho ai sửng sốt, làm cho ai ngạc nhiên, làm cho ai kinh ngạc; làm cho ai khiếp sợ; không tỏ ra vẻ mệt nhọc một chút nào; phớt tỉnh, không sợ hãi, không nao núng; tóc dựng ngược lên (vì sợ hãi...); split; lấy độc trị độc",
+      "example_en": "In the western world, women usually have long hair while men usually have short hair.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Internal hairs occur in the flower stalk of the yellow frog lily (Nuphar).",
+          "example_vi": null
+        },
+        {
+          "example_en": "Just a little louder please—turn that knob a hair to the right.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24376,
+      "word": "hall",
+      "normalized_word": "hall",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/hɔ:l/",
+      "primary_meaning_vi": "phòng lớn",
+      "meaning_vi": "phòng lớn, đại sảnh (trong các lâu đài); lâu đài (của địa chủ); phòng họp lớn, hội trường (để hội họp, hoà nhạc...); toà (thị chính, toà án...), trụ sở lớn (các nghiệp đoàn...); phòng ăn lớn (ở các trường học); bữa ăn ở phòng ăn lớn (ở các trường học); bữa ăn ở phòng ăn lớn; nhà ở (của học sinh và cán bộ trường đại học Anh); phòng lên lớp; phòng đợi, hành lang ở cửa vào (của một toà nhà lớn)",
+      "example_en": "The drinking fountain was out in the hall.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The hotel had three halls for conferences, and two were in use by the convention.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The duke lived in a great hall overlooking the sea.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The student government hosted several social events so that students from different halls would intermingle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24377,
+      "word": "hamburger",
+      "normalized_word": "hamburger",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'hæmbə:gə/",
+      "primary_meaning_vi": "thịt băm viên",
+      "meaning_vi": "thịt băm viên; xúc xích hambua",
+      "example_en": "I'm going to make you into hamburger if you do that again.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24378,
+      "word": "hand",
+      "normalized_word": "hand",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/hænd/",
+      "primary_meaning_vi": "tay",
+      "meaning_vi": "tay, bàn tay (người); bàn chân trước (loài vật bốn chân); quyền hành; sự có sãn (trong tay); sự nắm giữ (trong tay); sự kiểm soát; sự tham gia, sự nhúng tay vào; phần tham gia; sự hứa hôn; số nhiều) công nhân, nhân công (nhà máy, công trường...); thuỷ thủ; người làm (một việc gì), một tay; nguồn; sự khéo léo, sự khéo tay; chữ viết tay; chữ ký; kim (đồng hồ); nải (chuối); buộc, (một) nắm; gang tay (đơn vị đo chiều cao của ngựa, bằng 4 insơ); phía, bên, hướng; sắp bài (có trên tay); ván bài; chân đánh bài; tiếng vỗ tay hoan hô; gần ngay, có thể với tới được, rất tiện tay; sắp đến, sắp tới; ở tay ai, từ tay ai; giúp đỡ ai một tay; glove; ăn cháo đái bát; nuôi bằng sữa bò (trẻ con); hống hách; kiêu căng, ngạo mạn; đầu hàng, hạ vũ khí, chịu thua (cuộc); vô tội thì chẳng việc gì mà phải thanh minh; sự trong trắng, sự vô tội; đến tay đã nhận (thư từ...); làm một cố gắng nhỏ, trở bàn tay ((thường),  phủ định); chiến đấu vì lợi ích của bản thân; thắng thế, chiếm ưu thế; gạt bỏ cái gì, tống khứ cái gì; giũ trách nhiệm về một việc gì; whip_hand; glad; đi tay nắm tay, đi bằng hàng với, đi song song với ((nghĩa đen) & (nghĩa bóng)); tay này bắt tiếp lên tay kia (như lúc leo dây); tiến bộ chắc chắn, tiến bộ nhanh; dễ dàng, không khó khăn gì; được hoàn toàn tự do hành động, được hành động hoàn toàn theo ý mình; lóng ngóng, hậu đậu; hào phóng, rộng rãi; anh ta chưa quen tay, anh ta bỏ lâu không luyện tập; nắm chắc trong tay; bận việc, không được một lúc nào rảnh rỗi; bị trói tay ((nghĩa đen) & (nghĩa bóng)); bàn tay sắt, sự độc tài chuyên chế; sự giúp đỡ; join; khống chế ai, kiềm chế ai chặt chẽ; vẫn tập luyện đều; đặt tay vào, để tay vào, sờ vào; chiếm lấy, nắm lấy (cái gì); hành hung; live; trong tay, chịu trách nhiệm phải cáng đáng; ngay lập tức, không chậm trễ; không chuẩn bị trước; ứng khẩu, tuỳ hứng; không nắm được, không kiểm soát được nữa; đừng dính vào chuyện riêng của vợ chồng người ta; plough; tận tay phục vụ ai, làm mọi việc lặt vặt để phục vụ ai; sự giơ tay biểu quyết (bầu); được vỗ tay thưa thớt; ngồi khoanh tay không làm gì; chặn tay ai lại (không cho làm gì); nhận làm, chịu trách nhiệm làm, chịu cáng đáng; tự mình nắm lấy vận mệnh của mình; bỏ cuộc; đã nhận được, đã đến tay (thư); wash; đưa, trao tay, chuyển giao; truyền cho; đưa tay đỡ; cuộn (buồm) lại; check",
+      "example_en": "Her hands are really strong.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an old hand at speaking; large farms need many farm hands",
+          "example_vi": null
+        },
+        {
+          "example_en": "Bob gave Alice a hand to move the furniture.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Given under my Hand and Seal of the State this 1st Day of January, 2010.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24379,
+      "word": "handsome",
+      "normalized_word": "handsome",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'hænsəm/",
+      "primary_meaning_vi": "đẹp",
+      "meaning_vi": "đẹp; tốt đẹp, rộng rãi, hào phóng, hậu hĩ; lớn, đáng kể; đẹp nết hơn đẹp người; xét người bằng việc làm đừng xét qua lời nói",
+      "example_en": "a handsome garment, house, tree, or horse",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Handsome is as handsome does.",
+          "example_vi": null
+        },
+        {
+          "example_en": "a handsome salary",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24380,
+      "word": "happen",
+      "normalized_word": "happen",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'hæpən/",
+      "primary_meaning_vi": "xảy đến",
+      "meaning_vi": "xảy đến, xảy ra; ngẫu nhiên xảy ra, tình cờ xảy ra; tình cờ, ngẫu nhiên; tình cờ gặp, ngẫu nhiên gặp; ngẫu nhiên thấy; ngẫu nhiên mà, tình cờ mà; nếu tôi có mệnh hệ nào",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

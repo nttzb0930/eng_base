@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25741,
+      "quiz_meaning_vi": "diễn viên kịch vui",
+      "meaning_vi_clean": "diễn viên kịch vui; người đóng kịch vui",
+      "examples_clean": [
+        {
+          "meaning_vi": "diễn viên kịch vui",
+          "example_en": "The comedian told many funny jokes.",
+          "example_vi": "Diễn viên kịch vui đã kể nhiều câu chuyện cười."
+        },
+        {
+          "meaning_vi": "diễn viên kịch vui",
+          "example_en": "She is a famous comedian in our country.",
+          "example_vi": "Cô ấy là một diễn viên kịch vui nổi tiếng ở nước chúng tôi."
+        },
+        {
+          "meaning_vi": "diễn viên kịch vui",
+          "example_en": "The comedian made the audience laugh all night.",
+          "example_vi": "Diễn viên kịch vui đã làm khán giả cười suốt đêm."
+        },
+        {
+          "meaning_vi": "diễn viên kịch vui",
+          "example_en": "He started his career as a stand-up comedian.",
+          "example_vi": "Anh ấy bắt đầu sự nghiệp của mình với tư cách là một diễn viên kịch vui độc thoại."
+        },
+        {
+          "meaning_vi": "người đóng kịch vui",
+          "example_en": "The comedian performed a hilarious sketch.",
+          "example_vi": "Người đóng kịch vui đã trình diễn một tiểu phẩm rất hài hước."
+        },
+        {
+          "meaning_vi": "người đóng kịch vui",
+          "example_en": "Many comedians use their own life experiences for their acts.",
+          "example_vi": "Nhiều người đóng kịch vui sử dụng trải nghiệm cuộc sống của chính họ cho các tiết mục của mình."
+        },
+        {
+          "meaning_vi": "người đóng kịch vui",
+          "example_en": "The comedian was very quick-witted during the show.",
+          "example_vi": "Người đóng kịch vui rất nhanh trí trong suốt buổi diễn."
+        },
+        {
+          "meaning_vi": "người đóng kịch vui",
+          "example_en": "A good comedian knows how to time their punchlines.",
+          "example_vi": "Một người đóng kịch vui giỏi biết cách căn thời gian cho các câu chốt hạ của mình."
+        },
+        {
+          "meaning_vi": "người đóng kịch vui",
+          "example_en": "The comedian received a standing ovation.",
+          "example_vi": "Người đóng kịch vui đã nhận được sự tán thưởng nhiệt liệt."
+        },
+        {
+          "meaning_vi": "người đóng kịch vui",
+          "example_en": "She is a talented comedian with a unique style.",
+          "example_vi": "Cô ấy là một người đóng kịch vui tài năng với phong cách độc đáo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, loại bỏ nghĩa nhà soạn kịch vui vì ít phổ biến. Bổ sung 10 ví dụ.",
+      "word": "comedian",
+      "normalized_word": "comedian",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The comedian told many funny jokes.",
+      "example_vi_clean": "Diễn viên kịch vui đã kể nhiều câu chuyện cười."
+    },
+    {
+      "id": 25742,
+      "quiz_meaning_vi": "kịch vui",
+      "meaning_vi_clean": "kịch vui; hài kịch",
+      "examples_clean": [
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "We went to see a comedy at the local theater.",
+          "example_vi": "Chúng tôi đã đi xem một vở kịch vui tại nhà hát địa phương."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "The play was a lighthearted comedy.",
+          "example_vi": "Vở kịch đó là một vở kịch vui nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "She enjoys watching romantic comedy movies.",
+          "example_vi": "Cô ấy thích xem các bộ phim kịch vui lãng mạn."
+        },
+        {
+          "meaning_vi": "kịch vui",
+          "example_en": "The comedy was a huge success with the audience.",
+          "example_vi": "Vở kịch vui đã thành công rực rỡ với khán giả."
+        },
+        {
+          "meaning_vi": "hài kịch",
+          "example_en": "He is writing a new script for a television comedy.",
+          "example_vi": "Anh ấy đang viết kịch bản mới cho một bộ hài kịch truyền hình."
+        },
+        {
+          "meaning_vi": "hài kịch",
+          "example_en": "The show is a classic example of British comedy.",
+          "example_vi": "Chương trình này là một ví dụ điển hình của hài kịch Anh."
+        },
+        {
+          "meaning_vi": "hài kịch",
+          "example_en": "They laughed throughout the entire comedy.",
+          "example_vi": "Họ đã cười suốt cả buổi hài kịch."
+        },
+        {
+          "meaning_vi": "hài kịch",
+          "example_en": "The film is a dark comedy about modern life.",
+          "example_vi": "Bộ phim là một vở hài kịch đen về cuộc sống hiện đại."
+        },
+        {
+          "meaning_vi": "hài kịch",
+          "example_en": "She has a great talent for acting in comedy.",
+          "example_vi": "Cô ấy có tài năng lớn trong việc diễn xuất hài kịch."
+        },
+        {
+          "meaning_vi": "hài kịch",
+          "example_en": "The comedy was full of funny situations.",
+          "example_vi": "Vở hài kịch đầy ắp những tình huống buồn cười."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa kịch vui và hài kịch, loại bỏ các nghĩa chuyên ngành Hy Lạp cổ. Bổ sung 10 ví dụ.",
+      "word": "comedy",
+      "normalized_word": "comedy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We went to see a comedy at the local theater.",
+      "example_vi_clean": "Chúng tôi đã đi xem một vở kịch vui tại nhà hát địa phương."
+    },
+    {
+      "id": 25743,
+      "quiz_meaning_vi": "sao chổi",
+      "meaning_vi_clean": "sao chổi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "A bright comet was visible in the night sky.",
+          "example_vi": "Một ngôi sao chổi sáng rực có thể nhìn thấy trên bầu trời đêm."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "Scientists are studying the path of the comet.",
+          "example_vi": "Các nhà khoa học đang nghiên cứu quỹ đạo của sao chổi."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "The comet appears in the sky every seventy years.",
+          "example_vi": "Sao chổi xuất hiện trên bầu trời mỗi bảy mươi năm một lần."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "We used a telescope to see the comet clearly.",
+          "example_vi": "Chúng tôi đã dùng kính thiên văn để nhìn rõ sao chổi."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "The comet left a long tail of dust behind it.",
+          "example_vi": "Sao chổi để lại một cái đuôi bụi dài phía sau nó."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "Many people gathered to watch the passing comet.",
+          "example_vi": "Nhiều người đã tập trung để xem ngôi sao chổi đi ngang qua."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "The comet is made of ice and rock.",
+          "example_vi": "Sao chổi được cấu tạo từ băng và đá."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "It is rare to see such a large comet.",
+          "example_vi": "Thật hiếm khi thấy một ngôi sao chổi lớn như vậy."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "The comet was named after the astronomer who discovered it.",
+          "example_vi": "Sao chổi được đặt tên theo nhà thiên văn học đã phát hiện ra nó."
+        },
+        {
+          "meaning_vi": "sao chổi",
+          "example_en": "The comet's orbit takes it close to the sun.",
+          "example_vi": "Quỹ đạo của sao chổi đưa nó đến gần mặt trời."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa sao chổi. Bổ sung 10 ví dụ.",
+      "word": "comet",
+      "normalized_word": "comet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "A bright comet was visible in the night sky.",
+      "example_vi_clean": "Một ngôi sao chổi sáng rực có thể nhìn thấy trên bầu trời đêm."
+    },
+    {
+      "id": 25744,
+      "quiz_meaning_vi": "sự an ủi",
+      "meaning_vi_clean": "sự an ủi; sự tiện nghi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự an ủi",
+          "example_en": "Her words were a great comfort to me.",
+          "example_vi": "Lời nói của cô ấy là một sự an ủi lớn đối với tôi."
+        },
+        {
+          "meaning_vi": "sự an ủi",
+          "example_en": "He found comfort in his family's support.",
+          "example_vi": "Anh ấy tìm thấy sự an ủi trong sự ủng hộ của gia đình."
+        },
+        {
+          "meaning_vi": "sự an ủi",
+          "example_en": "It is a comfort to know that you are safe.",
+          "example_vi": "Thật là một sự an ủi khi biết rằng bạn được an toàn."
+        },
+        {
+          "meaning_vi": "sự an ủi",
+          "example_en": "She offered him comfort during his time of grief.",
+          "example_vi": "Cô ấy đã mang đến cho anh ấy sự an ủi trong thời gian đau buồn."
+        },
+        {
+          "meaning_vi": "sự tiện nghi",
+          "example_en": "The hotel offers every modern comfort.",
+          "example_vi": "Khách sạn cung cấp mọi sự tiện nghi hiện đại."
+        },
+        {
+          "meaning_vi": "sự tiện nghi",
+          "example_en": "They live in great comfort in their new house.",
+          "example_vi": "Họ sống trong sự tiện nghi tuyệt vời tại ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "sự tiện nghi",
+          "example_en": "The car is designed for maximum comfort.",
+          "example_vi": "Chiếc xe được thiết kế để đạt sự tiện nghi tối đa."
+        },
+        {
+          "meaning_vi": "sự tiện nghi",
+          "example_en": "He enjoys the comforts of a quiet life.",
+          "example_vi": "Anh ấy tận hưởng sự tiện nghi của một cuộc sống yên tĩnh."
+        },
+        {
+          "meaning_vi": "sự tiện nghi",
+          "example_en": "We want to provide comfort for all our guests.",
+          "example_vi": "Chúng tôi muốn mang lại sự tiện nghi cho tất cả khách hàng của mình."
+        },
+        {
+          "meaning_vi": "sự tiện nghi",
+          "example_en": "The cabin was small but provided basic comfort.",
+          "example_vi": "Căn chòi nhỏ nhưng cung cấp sự tiện nghi cơ bản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Giữ nghĩa sự an ủi và sự tiện nghi. Bổ sung 10 ví dụ.",
+      "word": "comfort",
+      "normalized_word": "comfort",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Her words were a great comfort to me.",
+      "example_vi_clean": "Lời nói của cô ấy là một sự an ủi lớn đối với tôi."
+    },
+    {
+      "id": 25745,
+      "quiz_meaning_vi": "dấu phẩy",
+      "meaning_vi_clean": "dấu phẩy",
+      "examples_clean": [
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "You should put a comma after the introductory phrase.",
+          "example_vi": "Bạn nên đặt một dấu phẩy sau cụm từ mở đầu."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "Don't forget to use a comma in your sentence.",
+          "example_vi": "Đừng quên sử dụng dấu phẩy trong câu của bạn."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "The comma helps to separate items in a list.",
+          "example_vi": "Dấu phẩy giúp phân tách các mục trong một danh sách."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "He missed a comma in his essay.",
+          "example_vi": "Anh ấy đã thiếu một dấu phẩy trong bài luận của mình."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "The comma indicates a short pause in reading.",
+          "example_vi": "Dấu phẩy biểu thị một khoảng dừng ngắn khi đọc."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "Check your punctuation, especially the comma usage.",
+          "example_vi": "Kiểm tra dấu câu của bạn, đặc biệt là cách dùng dấu phẩy."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "A comma can change the meaning of a sentence.",
+          "example_vi": "Một dấu phẩy có thể thay đổi nghĩa của câu."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "She added a comma to clarify the sentence structure.",
+          "example_vi": "Cô ấy đã thêm một dấu phẩy để làm rõ cấu trúc câu."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "The teacher corrected the comma in my writing.",
+          "example_vi": "Giáo viên đã sửa dấu phẩy trong bài viết của tôi."
+        },
+        {
+          "meaning_vi": "dấu phẩy",
+          "example_en": "Use a comma before the conjunction in this case.",
+          "example_vi": "Sử dụng dấu phẩy trước liên từ trong trường hợp này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ nghĩa dấu ngoặc kép vì sai. Bổ sung 10 ví dụ.",
+      "word": "comma",
+      "normalized_word": "comma",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You should put a comma after the introductory phrase.",
+      "example_vi_clean": "Bạn nên đặt một dấu phẩy sau cụm từ mở đầu."
+    },
+    {
+      "id": 25746,
+      "quiz_meaning_vi": "lệnh",
+      "meaning_vi_clean": "lệnh; quyền chỉ huy; sự thành thạo",
+      "examples_clean": [
+        {
+          "meaning_vi": "lệnh",
+          "example_en": "The officer gave the command to advance.",
+          "example_vi": "Sĩ quan đã đưa ra lệnh tiến lên."
+        },
+        {
+          "meaning_vi": "lệnh",
+          "example_en": "He followed the command without hesitation.",
+          "example_vi": "Anh ấy đã tuân theo lệnh mà không do dự."
+        },
+        {
+          "meaning_vi": "lệnh",
+          "example_en": "The computer executed the command immediately.",
+          "example_vi": "Máy tính đã thực thi lệnh ngay lập tức."
+        },
+        {
+          "meaning_vi": "lệnh",
+          "example_en": "She gave a command to stop the music.",
+          "example_vi": "Cô ấy đã ra lệnh dừng âm nhạc."
+        },
+        {
+          "meaning_vi": "quyền chỉ huy",
+          "example_en": "He was in command of the entire operation.",
+          "example_vi": "Anh ấy nắm quyền chỉ huy toàn bộ chiến dịch."
+        },
+        {
+          "meaning_vi": "quyền chỉ huy",
+          "example_en": "The general took command of the troops.",
+          "example_vi": "Vị tướng đã nắm quyền chỉ huy quân đội."
+        },
+        {
+          "meaning_vi": "quyền chỉ huy",
+          "example_en": "She has been in command for five years.",
+          "example_vi": "Cô ấy đã nắm quyền chỉ huy được năm năm."
+        },
+        {
+          "meaning_vi": "sự thành thạo",
+          "example_en": "He has a good command of the English language.",
+          "example_vi": "Anh ấy có sự thành thạo tốt về tiếng Anh."
+        },
+        {
+          "meaning_vi": "sự thành thạo",
+          "example_en": "Her command of French is impressive.",
+          "example_vi": "Sự thành thạo tiếng Pháp của cô ấy rất ấn tượng."
+        },
+        {
+          "meaning_vi": "sự thành thạo",
+          "example_en": "You need a better command of the subject.",
+          "example_vi": "Bạn cần sự thành thạo tốt hơn về môn học này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Giữ các nghĩa phổ biến. Bổ sung 10 ví dụ.",
+      "word": "command",
+      "normalized_word": "command",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The officer gave the command to advance.",
+      "example_vi_clean": "Sĩ quan đã đưa ra lệnh tiến lên."
+    },
+    {
+      "id": 25747,
+      "quiz_meaning_vi": "lời bình luận",
+      "meaning_vi_clean": "lời bình luận; sự phê bình",
+      "examples_clean": [
+        {
+          "meaning_vi": "lời bình luận",
+          "example_en": "He made a brief comment on the situation.",
+          "example_vi": "Anh ấy đã đưa ra một lời bình luận ngắn gọn về tình hình."
+        },
+        {
+          "meaning_vi": "lời bình luận",
+          "example_en": "Do you have any comment on this report?",
+          "example_vi": "Bạn có lời bình luận nào về bản báo cáo này không?"
+        },
+        {
+          "meaning_vi": "lời bình luận",
+          "example_en": "Her comment was very helpful to us.",
+          "example_vi": "Lời bình luận của cô ấy rất hữu ích với chúng tôi."
+        },
+        {
+          "meaning_vi": "lời bình luận",
+          "example_en": "The article included a comment from the expert.",
+          "example_vi": "Bài báo bao gồm một lời bình luận từ chuyên gia."
+        },
+        {
+          "meaning_vi": "lời bình luận",
+          "example_en": "I don't want to make any comment right now.",
+          "example_vi": "Tôi không muốn đưa ra bất kỳ lời bình luận nào ngay lúc này."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The book received a lot of negative comment.",
+          "example_vi": "Cuốn sách đã nhận được nhiều sự phê bình tiêu cực."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "His comment on my work was quite harsh.",
+          "example_vi": "Sự phê bình của anh ấy về công việc của tôi khá gay gắt."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "She is open to any constructive comment.",
+          "example_vi": "Cô ấy cởi mở với bất kỳ sự phê bình mang tính xây dựng nào."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "The teacher's comment helped me improve.",
+          "example_vi": "Sự phê bình của giáo viên đã giúp tôi tiến bộ."
+        },
+        {
+          "meaning_vi": "sự phê bình",
+          "example_en": "They invited public comment on the new policy.",
+          "example_vi": "Họ đã mời sự phê bình từ công chúng về chính sách mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ. Bổ sung 10 ví dụ.",
+      "word": "comment",
+      "normalized_word": "comment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He made a brief comment on the situation.",
+      "example_vi_clean": "Anh ấy đã đưa ra một lời bình luận ngắn gọn về tình hình."
+    },
+    {
+      "id": 25748,
+      "quiz_meaning_vi": "thương mại",
+      "meaning_vi_clean": "thương mại; quảng cáo",
+      "examples_clean": [
+        {
+          "meaning_vi": "thương mại",
+          "example_en": "The city is a major commercial center.",
+          "example_vi": "Thành phố này là một trung tâm thương mại lớn."
+        },
+        {
+          "meaning_vi": "thương mại",
+          "example_en": "They are planning a new commercial development.",
+          "example_vi": "Họ đang lên kế hoạch cho một dự án phát triển thương mại mới."
+        },
+        {
+          "meaning_vi": "thương mại",
+          "example_en": "The building is for commercial use only.",
+          "example_vi": "Tòa nhà này chỉ dành cho mục đích thương mại."
+        },
+        {
+          "meaning_vi": "thương mại",
+          "example_en": "He works in the commercial sector.",
+          "example_vi": "Anh ấy làm việc trong lĩnh vực thương mại."
+        },
+        {
+          "meaning_vi": "thương mại",
+          "example_en": "The commercial success of the film was unexpected.",
+          "example_vi": "Sự thành công về mặt thương mại của bộ phim là không ngờ tới."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "I saw a new commercial for that car on TV.",
+          "example_vi": "Tôi đã thấy một quảng cáo mới cho chiếc xe đó trên TV."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "The commercial was very catchy.",
+          "example_vi": "Quảng cáo đó rất bắt tai."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "They spent a lot of money on the commercial.",
+          "example_vi": "Họ đã chi rất nhiều tiền cho quảng cáo đó."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "The commercial aired during the football match.",
+          "example_vi": "Quảng cáo đã được phát sóng trong trận đấu bóng đá."
+        },
+        {
+          "meaning_vi": "quảng cáo",
+          "example_en": "She starred in a commercial for a soft drink.",
+          "example_vi": "Cô ấy đã đóng vai chính trong một quảng cáo cho một loại nước ngọt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ (nghĩa chính) và danh từ (nghĩa quảng cáo). Bổ sung 10 ví dụ.",
+      "word": "commercial",
+      "normalized_word": "commercial",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The city is a major commercial center.",
+      "example_vi_clean": "Thành phố này là một trung tâm thương mại lớn."
+    },
+    {
+      "id": 25749,
+      "quiz_meaning_vi": "cam kết",
+      "meaning_vi_clean": "cam kết; phạm tội; giao phó",
+      "examples_clean": [
+        {
+          "meaning_vi": "cam kết",
+          "example_en": "He decided to commit himself to the project.",
+          "example_vi": "Anh ấy quyết định cam kết với dự án."
+        },
+        {
+          "meaning_vi": "cam kết",
+          "example_en": "They have committed to helping the poor.",
+          "example_vi": "Họ đã cam kết giúp đỡ người nghèo."
+        },
+        {
+          "meaning_vi": "cam kết",
+          "example_en": "She is not ready to commit to a long-term relationship.",
+          "example_vi": "Cô ấy chưa sẵn sàng cam kết cho một mối quan hệ lâu dài."
+        },
+        {
+          "meaning_vi": "cam kết",
+          "example_en": "We must commit to our goals.",
+          "example_vi": "Chúng ta phải cam kết với các mục tiêu của mình."
+        },
+        {
+          "meaning_vi": "phạm tội",
+          "example_en": "He did not commit the crime.",
+          "example_vi": "Anh ấy đã không phạm tội đó."
+        },
+        {
+          "meaning_vi": "phạm tội",
+          "example_en": "It is wrong to commit such an act.",
+          "example_vi": "Thật sai trái khi phạm tội như vậy."
+        },
+        {
+          "meaning_vi": "phạm tội",
+          "example_en": "She committed a serious mistake.",
+          "example_vi": "Cô ấy đã phạm một sai lầm nghiêm trọng."
+        },
+        {
+          "meaning_vi": "giao phó",
+          "example_en": "She committed her children to the care of her sister.",
+          "example_vi": "Cô ấy đã giao phó các con cho chị gái chăm sóc."
+        },
+        {
+          "meaning_vi": "giao phó",
+          "example_en": "He committed the task to his assistant.",
+          "example_vi": "Anh ấy đã giao phó nhiệm vụ cho trợ lý của mình."
+        },
+        {
+          "meaning_vi": "giao phó",
+          "example_en": "The documents were committed to the archives.",
+          "example_vi": "Các tài liệu đã được giao phó cho bộ phận lưu trữ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ các nghĩa phổ biến. Bổ sung 10 ví dụ.",
+      "word": "commit",
+      "normalized_word": "commit",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "He decided to commit himself to the project.",
+      "example_vi_clean": "Anh ấy quyết định cam kết với dự án."
+    },
+    {
+      "id": 25750,
+      "quiz_meaning_vi": "thường thường",
+      "meaning_vi_clean": "thường thường",
+      "examples_clean": [
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "This plant is commonly found in the forest.",
+          "example_vi": "Loài cây này thường thường được tìm thấy trong rừng."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "It is commonly believed that exercise is good.",
+          "example_vi": "Người ta thường thường tin rằng tập thể dục là tốt."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "These problems are commonly seen in beginners.",
+          "example_vi": "Những vấn đề này thường thường thấy ở người mới bắt đầu."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "The name is commonly used in this region.",
+          "example_vi": "Cái tên này thường thường được sử dụng ở vùng này."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "Such errors are commonly made by students.",
+          "example_vi": "Những lỗi như vậy thường thường được học sinh mắc phải."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "This bird is commonly seen in the park.",
+          "example_vi": "Loài chim này thường thường được thấy trong công viên."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "It is a commonly accepted fact.",
+          "example_vi": "Đó là một sự thật thường thường được chấp nhận."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "These items are commonly sold in supermarkets.",
+          "example_vi": "Những mặt hàng này thường thường được bán trong siêu thị."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "The disease is commonly treated with medicine.",
+          "example_vi": "Căn bệnh này thường thường được điều trị bằng thuốc."
+        },
+        {
+          "meaning_vi": "thường thường",
+          "example_en": "This method is commonly used by experts.",
+          "example_vi": "Phương pháp này thường thường được các chuyên gia sử dụng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ nghĩa tầm thường, thô tục vì không phù hợp ngữ cảnh B1. Bổ sung 10 ví dụ.",
+      "word": "commonly",
+      "normalized_word": "commonly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "This plant is commonly found in the forest.",
+      "example_vi_clean": "Loài cây này thường thường được tìm thấy trong rừng."
+    }
+  ]
+}

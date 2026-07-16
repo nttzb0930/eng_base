@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 24471,
+      "quiz_meaning_vi": "chân",
+      "meaning_vi_clean": "chân",
+      "examples_clean": [
+        {
+          "meaning_vi": "chân",
+          "example_en": "She hurt her leg while running.",
+          "example_vi": "Cô ấy bị đau chân khi đang chạy."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "He has a long leg.",
+          "example_vi": "Anh ấy có đôi chân dài."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "The dog has a broken leg.",
+          "example_vi": "Con chó bị gãy một cái chân."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "My leg feels very tired today.",
+          "example_vi": "Chân tôi cảm thấy rất mỏi hôm nay."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "She sat with her leg crossed.",
+          "example_vi": "Cô ấy ngồi vắt chéo chân."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "He injured his leg in the game.",
+          "example_vi": "Anh ấy bị thương ở chân trong trận đấu."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "The child has a small leg.",
+          "example_vi": "Đứa trẻ có cái chân nhỏ."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "I felt a pain in my leg.",
+          "example_vi": "Tôi cảm thấy đau ở chân."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "She stretched her leg out.",
+          "example_vi": "Cô ấy duỗi chân ra."
+        },
+        {
+          "meaning_vi": "chân",
+          "example_en": "He broke his leg skiing.",
+          "example_vi": "Anh ấy bị gãy chân khi đang trượt tuyết."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'chân' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'leg' được dùng làm danh từ chỉ bộ phận cơ thể trong tất cả các ví dụ."
+      },
+      "word": "leg",
+      "normalized_word": "leg",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She hurt her leg while running.",
+      "example_vi_clean": "Cô ấy bị đau chân khi đang chạy."
+    },
+    {
+      "id": 24472,
+      "quiz_meaning_vi": "bài học",
+      "meaning_vi_clean": "bài học",
+      "examples_clean": [
+        {
+          "meaning_vi": "bài học",
+          "example_en": "We have a math lesson today.",
+          "example_vi": "Chúng tôi có một bài học toán hôm nay."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "The lesson was very interesting.",
+          "example_vi": "Bài học đó rất thú vị."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "She learned a new lesson.",
+          "example_vi": "Cô ấy đã học một bài học mới."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "The teacher started the lesson.",
+          "example_vi": "Giáo viên bắt đầu bài học."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "I missed the last lesson.",
+          "example_vi": "Tôi đã bỏ lỡ bài học cuối cùng."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "This lesson is quite difficult.",
+          "example_vi": "Bài học này khá khó."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "They finished the lesson early.",
+          "example_vi": "Họ đã kết thúc bài học sớm."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "Please review your lesson.",
+          "example_vi": "Vui lòng ôn lại bài học của bạn."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "The lesson covers many topics.",
+          "example_vi": "Bài học bao gồm nhiều chủ đề."
+        },
+        {
+          "meaning_vi": "bài học",
+          "example_en": "He prepared for the next lesson.",
+          "example_vi": "Anh ấy đã chuẩn bị cho bài học tiếp theo."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'bài học' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'lesson' được dùng làm danh từ chỉ đơn vị kiến thức trong tất cả các ví dụ."
+      },
+      "word": "lesson",
+      "normalized_word": "lesson",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We have a math lesson today.",
+      "example_vi_clean": "Chúng tôi có một bài học toán hôm nay."
+    },
+    {
+      "id": 24474,
+      "quiz_meaning_vi": "lá thư",
+      "meaning_vi_clean": "lá thư",
+      "examples_clean": [
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "I received a letter from him.",
+          "example_vi": "Tôi đã nhận được một lá thư từ anh ấy."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "She wrote a long letter.",
+          "example_vi": "Cô ấy đã viết một lá thư dài."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "He sent a letter by post.",
+          "example_vi": "Anh ấy đã gửi một lá thư qua đường bưu điện."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "The letter arrived this morning.",
+          "example_vi": "Lá thư đã đến vào sáng nay."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "I am reading a letter.",
+          "example_vi": "Tôi đang đọc một lá thư."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "She opened the letter carefully.",
+          "example_vi": "Cô ấy mở lá thư một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "He kept the letter in his bag.",
+          "example_vi": "Anh ấy giữ lá thư trong túi của mình."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "The letter was very short.",
+          "example_vi": "Lá thư đó rất ngắn."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "I lost the letter somewhere.",
+          "example_vi": "Tôi đã làm mất lá thư ở đâu đó."
+        },
+        {
+          "meaning_vi": "lá thư",
+          "example_en": "She posted the letter yesterday.",
+          "example_vi": "Cô ấy đã gửi lá thư đó vào ngày hôm qua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'lá thư' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'letter' được dùng làm danh từ chỉ văn bản gửi đi trong tất cả các ví dụ."
+      },
+      "word": "letter",
+      "normalized_word": "letter",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I received a letter from him.",
+      "example_vi_clean": "Tôi đã nhận được một lá thư từ anh ấy."
+    },
+    {
+      "id": 24477,
+      "quiz_meaning_vi": "nhẹ",
+      "meaning_vi_clean": "nhẹ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "This box is very light.",
+          "example_vi": "Cái hộp này rất nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "She carries a light bag.",
+          "example_vi": "Cô ấy mang một chiếc túi nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "The material is soft and light.",
+          "example_vi": "Chất liệu này mềm và nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "He prefers a light jacket.",
+          "example_vi": "Anh ấy thích một chiếc áo khoác nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "The suitcase is light enough to carry.",
+          "example_vi": "Chiếc vali đủ nhẹ để mang theo."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "It is a light object.",
+          "example_vi": "Đó là một vật nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "She chose a light chair.",
+          "example_vi": "Cô ấy đã chọn một chiếc ghế nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "The wind is very light today.",
+          "example_vi": "Gió hôm nay rất nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "He needs a light blanket.",
+          "example_vi": "Anh ấy cần một chiếc chăn nhẹ."
+        },
+        {
+          "meaning_vi": "nhẹ",
+          "example_en": "This is a light piece of paper.",
+          "example_vi": "Đây là một mảnh giấy nhẹ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa tính từ 'nhẹ' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'light' được dùng làm tính từ chỉ trọng lượng trong tất cả các ví dụ."
+      },
+      "word": "light",
+      "normalized_word": "light",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This box is very light.",
+      "example_vi_clean": "Cái hộp này rất nhẹ."
+    },
+    {
+      "id": 24479,
+      "quiz_meaning_vi": "đường kẻ",
+      "meaning_vi_clean": "đường kẻ",
+      "examples_clean": [
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "Draw a straight line on the paper.",
+          "example_vi": "Hãy vẽ một đường kẻ thẳng trên giấy."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "She followed the line on the map.",
+          "example_vi": "Cô ấy đi theo đường kẻ trên bản đồ."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "The line is too long.",
+          "example_vi": "Đường kẻ đó quá dài."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "He marked the page with a line.",
+          "example_vi": "Anh ấy đánh dấu trang bằng một đường kẻ."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "There is a thin line here.",
+          "example_vi": "Có một đường kẻ mỏng ở đây."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "The line shows the border.",
+          "example_vi": "Đường kẻ đó thể hiện biên giới."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "She erased the line.",
+          "example_vi": "Cô ấy đã xóa đường kẻ đó."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "The line is not straight.",
+          "example_vi": "Đường kẻ đó không thẳng."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "He drew a line with a pen.",
+          "example_vi": "Anh ấy đã vẽ một đường kẻ bằng bút."
+        },
+        {
+          "meaning_vi": "đường kẻ",
+          "example_en": "Look at the blue line.",
+          "example_vi": "Hãy nhìn vào đường kẻ màu xanh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'đường kẻ' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'line' được dùng làm danh từ chỉ vạch kẻ trong tất cả các ví dụ."
+      },
+      "word": "line",
+      "normalized_word": "line",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Draw a straight line on the paper.",
+      "example_vi_clean": "Hãy vẽ một đường kẻ thẳng trên giấy."
+    },
+    {
+      "id": 24481,
+      "quiz_meaning_vi": "danh sách",
+      "meaning_vi_clean": "danh sách",
+      "examples_clean": [
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "I made a shopping list.",
+          "example_vi": "Tôi đã lập một danh sách mua sắm."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "Her name is on the list.",
+          "example_vi": "Tên cô ấy có trong danh sách."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "He checked the list carefully.",
+          "example_vi": "Anh ấy đã kiểm tra danh sách một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "The list is very long.",
+          "example_vi": "Danh sách đó rất dài."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "Please add my name to the list.",
+          "example_vi": "Vui lòng thêm tên tôi vào danh sách."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "She read the list aloud.",
+          "example_vi": "Cô ấy đã đọc to danh sách."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "I lost the list of names.",
+          "example_vi": "Tôi đã làm mất danh sách tên."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "The list contains many items.",
+          "example_vi": "Danh sách đó chứa nhiều mục."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "He updated the list today.",
+          "example_vi": "Anh ấy đã cập nhật danh sách hôm nay."
+        },
+        {
+          "meaning_vi": "danh sách",
+          "example_en": "This is a complete list.",
+          "example_vi": "Đây là một danh sách đầy đủ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'danh sách' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'list' được dùng làm danh từ chỉ tập hợp các mục trong tất cả các ví dụ."
+      },
+      "word": "list",
+      "normalized_word": "list",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I made a shopping list.",
+      "example_vi_clean": "Tôi đã lập một danh sách mua sắm."
+    },
+    {
+      "id": 24483,
+      "quiz_meaning_vi": "nhỏ",
+      "meaning_vi_clean": "nhỏ",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "She has a little dog.",
+          "example_vi": "Cô ấy có một con chó nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "He lives in a little house.",
+          "example_vi": "Anh ấy sống trong một ngôi nhà nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "I saw a little bird.",
+          "example_vi": "Tôi đã thấy một con chim nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "She has little hands.",
+          "example_vi": "Cô ấy có đôi bàn tay nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "He bought a little gift.",
+          "example_vi": "Anh ấy đã mua một món quà nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "The little boy is playing.",
+          "example_vi": "Cậu bé nhỏ đang chơi đùa."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "They have a little garden.",
+          "example_vi": "Họ có một khu vườn nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "She wrote a little note.",
+          "example_vi": "Cô ấy đã viết một mẩu ghi chú nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "He has a little car.",
+          "example_vi": "Anh ấy có một chiếc xe hơi nhỏ."
+        },
+        {
+          "meaning_vi": "nhỏ",
+          "example_en": "It is a little problem.",
+          "example_vi": "Đó là một vấn đề nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa tính từ 'nhỏ' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'little' được dùng làm tính từ chỉ kích thước trong tất cả các ví dụ."
+      },
+      "word": "little",
+      "normalized_word": "little",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has a little dog.",
+      "example_vi_clean": "Cô ấy có một con chó nhỏ."
+    },
+    {
+      "id": 24486,
+      "quiz_meaning_vi": "dài",
+      "meaning_vi_clean": "dài",
+      "examples_clean": [
+        {
+          "meaning_vi": "dài",
+          "example_en": "She has long hair.",
+          "example_vi": "Cô ấy có mái tóc dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The road is very long.",
+          "example_vi": "Con đường đó rất dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "He wrote a long letter.",
+          "example_vi": "Anh ấy đã viết một lá thư dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "It was a long day.",
+          "example_vi": "Đó là một ngày dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The movie is too long.",
+          "example_vi": "Bộ phim đó quá dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "She has long legs.",
+          "example_vi": "Cô ấy có đôi chân dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "He took a long walk.",
+          "example_vi": "Anh ấy đã đi bộ một quãng đường dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The table is long.",
+          "example_vi": "Cái bàn đó dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "It is a long story.",
+          "example_vi": "Đó là một câu chuyện dài."
+        },
+        {
+          "meaning_vi": "dài",
+          "example_en": "The train is very long.",
+          "example_vi": "Đoàn tàu đó rất dài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa tính từ 'dài' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'long' được dùng làm tính từ chỉ độ dài trong tất cả các ví dụ."
+      },
+      "word": "long",
+      "normalized_word": "long",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She has long hair.",
+      "example_vi_clean": "Cô ấy có mái tóc dài."
+    },
+    {
+      "id": 24487,
+      "quiz_meaning_vi": "cái nhìn",
+      "meaning_vi_clean": "cái nhìn",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "She gave me a quick look.",
+          "example_vi": "Cô ấy đã cho tôi một cái nhìn nhanh."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "He had a sad look on his face.",
+          "example_vi": "Anh ấy có một cái nhìn buồn trên khuôn mặt."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "Take a look at this picture.",
+          "example_vi": "Hãy nhìn vào bức tranh này."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "She had a happy look.",
+          "example_vi": "Cô ấy có một cái nhìn vui vẻ."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "He gave the room a look.",
+          "example_vi": "Anh ấy đã nhìn quanh căn phòng."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "I had a look at the menu.",
+          "example_vi": "Tôi đã xem qua thực đơn."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "She gave him a strange look.",
+          "example_vi": "Cô ấy đã nhìn anh ấy một cách lạ lùng."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "The house has a modern look.",
+          "example_vi": "Ngôi nhà có một cái nhìn hiện đại."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "He took a look at the clock.",
+          "example_vi": "Anh ấy đã nhìn vào chiếc đồng hồ."
+        },
+        {
+          "meaning_vi": "cái nhìn",
+          "example_en": "She gave the paper a look.",
+          "example_vi": "Cô ấy đã xem qua tờ giấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'cái nhìn' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'look' được dùng làm danh từ chỉ hành động hoặc vẻ ngoài trong tất cả các ví dụ."
+      },
+      "word": "look",
+      "normalized_word": "look",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She gave me a quick look.",
+      "example_vi_clean": "Cô ấy đã cho tôi một cái nhìn nhanh."
+    },
+    {
+      "id": 24489,
+      "quiz_meaning_vi": "tình yêu",
+      "meaning_vi_clean": "tình yêu",
+      "examples_clean": [
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "They share a great love.",
+          "example_vi": "Họ chia sẻ một tình yêu tuyệt vời."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "Love is very important.",
+          "example_vi": "Tình yêu rất quan trọng."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "She writes about love.",
+          "example_vi": "Cô ấy viết về tình yêu."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "He believes in true love.",
+          "example_vi": "Anh ấy tin vào tình yêu đích thực."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "Their love is strong.",
+          "example_vi": "Tình yêu của họ rất bền chặt."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "She found her love.",
+          "example_vi": "Cô ấy đã tìm thấy tình yêu của mình."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "Love makes people happy.",
+          "example_vi": "Tình yêu làm cho mọi người hạnh phúc."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "He expressed his love.",
+          "example_vi": "Anh ấy đã bày tỏ tình yêu của mình."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "Love is a beautiful thing.",
+          "example_vi": "Tình yêu là một điều đẹp đẽ."
+        },
+        {
+          "meaning_vi": "tình yêu",
+          "example_en": "They celebrate their love.",
+          "example_vi": "Họ kỷ niệm tình yêu của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã xác định nghĩa danh từ 'tình yêu' và tạo 10 ví dụ phù hợp.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Từ 'love' được dùng làm danh từ chỉ cảm xúc trong tất cả các ví dụ."
+      },
+      "word": "love",
+      "normalized_word": "love",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They share a great love.",
+      "example_vi_clean": "Họ chia sẻ một tình yêu tuyệt vời."
+    }
+  ]
+}

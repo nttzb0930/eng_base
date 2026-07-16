@@ -1,0 +1,120 @@
+{
+  "totalVocabularyItems": 3000,
+  "alreadyEnrichedExamples": 55,
+  "pendingExamplesBeforeRun": 2945,
+  "requestedLimit": "all",
+  "selectedForRun": 2945,
+  "checked": 2945,
+  "updated": 2129,
+  "missingExample": 816,
+  "failed": 0,
+  "concurrency": 1,
+  "requestDelayMs": 1200,
+  "samples": {
+    "updated": [
+      {
+        "word": "at",
+        "exampleEn": "Cars 2 is the most influential film of all time. Don't @ me."
+      },
+      {
+        "word": "august",
+        "exampleEn": "an august patron of the arts"
+      },
+      {
+        "word": "autumn",
+        "exampleEn": "autumn leaves"
+      },
+      {
+        "word": "awake",
+        "exampleEn": "They were awake to the possibility of a decline in sales."
+      },
+      {
+        "word": "away",
+        "exampleEn": "At 9 o'clock sharp he awayed to bed."
+      },
+      {
+        "word": "baby",
+        "exampleEn": "When is your baby due?"
+      },
+      {
+        "word": "bad",
+        "exampleEn": "Abducting children is bad for mothers."
+      },
+      {
+        "word": "bag",
+        "exampleEn": "Acid House is not my bag: I prefer the more traditional styles of music."
+      },
+      {
+        "word": "ball",
+        "exampleEn": "a ball of spittle; a fecal ball"
+      },
+      {
+        "word": "band",
+        "exampleEn": "valence band; conduction band"
+      },
+      {
+        "word": "bank",
+        "exampleEn": "blood bank; sperm bank; data bank"
+      },
+      {
+        "word": "bar",
+        "exampleEn": "The window was protected by steel bars."
+      },
+      {
+        "word": "bat",
+        "exampleEn": "You've been in for ages. Can I have a bat now?"
+      },
+      {
+        "word": "bath",
+        "exampleEn": "a bath of heated sand, ashes, steam, or hot air"
+      },
+      {
+        "word": "bathroom",
+        "exampleEn": "Most Americans don't know 'WC' and many Brits mock 'bathroom' but almost everyone understands 'toilet' or 'lavatory'."
+      },
+      {
+        "word": "bean",
+        "exampleEn": "I haven't got a bean."
+      },
+      {
+        "word": "bear",
+        "exampleEn": "That window can be a bear to open."
+      },
+      {
+        "word": "beautiful",
+        "exampleEn": "Hey, beautiful!"
+      },
+      {
+        "word": "because",
+        "exampleEn": "My life is ruined because of you!"
+      },
+      {
+        "word": "become",
+        "exampleEn": "It hath becomen so that many a man had to sterve."
+      }
+    ],
+    "missingExample": [
+      "actor",
+      "aeroplane",
+      "afternoon",
+      "airplane",
+      "airport",
+      "album",
+      "and",
+      "apple",
+      "april",
+      "apron",
+      "are",
+      "aunt",
+      "banana",
+      "baseball",
+      "be",
+      "beach",
+      "being",
+      "bicycle",
+      "birthday",
+      "bookstore"
+    ],
+    "failed": []
+  }
+}

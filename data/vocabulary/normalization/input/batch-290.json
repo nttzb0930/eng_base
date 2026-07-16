@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-290",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26891,
+      "word": "disqualify",
+      "normalized_word": "disqualify",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'kwɔlifai/",
+      "primary_meaning_vi": "làm cho không đủ tư cách (giữ một nhiệm vụ gì...)",
+      "meaning_vi": "làm cho không đủ tư cách (giữ một nhiệm vụ gì...); tuyên bố không đủ tư cách; loại ra không cho thi, sự truất quyền dự thi (của một người, một đội nào vi phạm điều lệ...)",
+      "example_en": "My age disqualifies me for the position.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The athlete was disqualified after performance-enhancing drugs were found in his hotel room.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26892,
+      "word": "disregard",
+      "normalized_word": "disregard",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'disri'gɑ:d/",
+      "primary_meaning_vi": "sự không để ý",
+      "meaning_vi": "sự không để ý, sự không đếm xỉa đến, sự bất chấp, sự coi thường, sự coi nhẹ; không để ý đến, không đếm xỉa đến, bất chấp, coi thường, coi nhẹ",
+      "example_en": "The government's disregard for the needs of disabled people is outrageous.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26893,
+      "word": "disrupt",
+      "normalized_word": "disrupt",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'rʌpt/",
+      "primary_meaning_vi": "đập gãy",
+      "meaning_vi": "đập gãy, đập vỗ, phá vỡ",
+      "example_en": "Hecklers disrupted the man's speech.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Work on the tunnel was disrupted by a strike.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The internet makes it easier for leaner businesses to disrupt the larger and more unwieldy ones.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26894,
+      "word": "dissatisfaction",
+      "normalized_word": "dissatisfaction",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dis,sætis'fækʃn/",
+      "primary_meaning_vi": "sự không bằng lòng",
+      "meaning_vi": "sự không bằng lòng, sự không hài lòng, sự không thoả mãn, sự bất mãn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26895,
+      "word": "dissatisfied",
+      "normalized_word": "dissatisfied",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'dis'sætisfaid/",
+      "primary_meaning_vi": "không bằng lòng",
+      "meaning_vi": "không bằng lòng, không hài lòng, không thoả mãn, bất mãn",
+      "example_en": "We offer refunds to dissatisfied customers.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26896,
+      "word": "dissident",
+      "normalized_word": "dissident",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'disidənt/",
+      "primary_meaning_vi": "dissenter",
+      "meaning_vi": "dissenter",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26897,
+      "word": "distinguished",
+      "normalized_word": "distinguished",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/dis'tiɳgwiʃt/",
+      "primary_meaning_vi": "đặc biệt",
+      "meaning_vi": "đặc biệt, khác biệt, đáng chú ý; ưu tú, xuất sắc, lỗi lạc; distingué",
+      "example_en": "The soldier distinguished himself in combat and received a medal.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The lecture was attended by many distinguished mathematicians.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Her father was a distinguished gentleman, albeit a poor one.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Let X be a topological space with a distinguished point p.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26898,
+      "word": "distortion",
+      "normalized_word": "distortion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'tɔ:ʃn/",
+      "primary_meaning_vi": "sự vặn vẹo",
+      "meaning_vi": "sự vặn vẹo, sự bóp méo, sự làm méo mó; sự bóp méo, sự xuyên tạc (sự thật...); tình trạng không rõ và không chính xác (dây nói...)",
+      "example_en": "The story he told was a bit of a distortion.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This recording sounds awful due to the distortion.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26899,
+      "word": "distract",
+      "normalized_word": "distract",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'trækt/",
+      "primary_meaning_vi": "làm sao lãng",
+      "meaning_vi": "làm sao lãng, làm lãng đi, làm lãng trí; làm rối bời, làm rối trí; động tính từ quá khứ) làm điên cuồng, làm mất trí, làm quẫn trí",
+      "example_en": "The crowd was distracted by a helicopter hovering over the stadium when the only goal of the game was scored.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26900,
+      "word": "distraction",
+      "normalized_word": "distraction",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'trækʃn/",
+      "primary_meaning_vi": "sự giải trí",
+      "meaning_vi": "sự giải trí, sự tiêu khiển; trò giải trí, trò tiêu khiển; sự bối rối, sự rối trí; sự điên cuồng, sự mất trí, sự quẫn trí",
+      "example_en": "Poking one's eye is a good distraction from a hurting toe.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We have to reduce distraction in class if we want students to achieve good results.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The incessant nightmares drove him to distraction.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

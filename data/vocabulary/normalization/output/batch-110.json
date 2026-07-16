@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25091,
+      "quiz_meaning_vi": "lính gác",
+      "meaning_vi_clean": "lính gác; người bảo vệ; sự đề phòng; cái chắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "lính gác",
+          "example_en": "The prison guard stood at the main gate all night.",
+          "example_vi": "Người lính gác đứng ở cổng chính suốt cả đêm."
+        },
+        {
+          "meaning_vi": "lính gác",
+          "example_en": "The guard checked our identification cards before letting us in.",
+          "example_vi": "Người lính gác kiểm tra thẻ căn cước của chúng tôi trước khi cho vào."
+        },
+        {
+          "meaning_vi": "lính gác",
+          "example_en": "A guard was posted outside the royal palace.",
+          "example_vi": "Một người lính gác được bố trí bên ngoài cung điện hoàng gia."
+        },
+        {
+          "meaning_vi": "lính gác",
+          "example_en": "The guard walked slowly along the perimeter of the fence.",
+          "example_vi": "Người lính gác đi bộ chậm rãi dọc theo chu vi hàng rào."
+        },
+        {
+          "meaning_vi": "người bảo vệ",
+          "example_en": "He works as a security guard for a large bank.",
+          "example_vi": "Anh ấy làm công việc bảo vệ cho một ngân hàng lớn."
+        },
+        {
+          "meaning_vi": "người bảo vệ",
+          "example_en": "The bodyguard protected the celebrity from the crowd.",
+          "example_vi": "Người bảo vệ đã che chở cho người nổi tiếng khỏi đám đông."
+        },
+        {
+          "meaning_vi": "sự đề phòng",
+          "example_en": "You should keep your guard up when walking alone at night.",
+          "example_vi": "Bạn nên giữ sự đề phòng khi đi bộ một mình vào ban đêm."
+        },
+        {
+          "meaning_vi": "sự đề phòng",
+          "example_en": "His sudden question caught me off my guard.",
+          "example_vi": "Câu hỏi bất ngờ của anh ấy khiến tôi mất cảnh giác."
+        },
+        {
+          "meaning_vi": "cái chắn",
+          "example_en": "The machine has a metal guard to protect the operator.",
+          "example_vi": "Cỗ máy có một cái chắn kim loại để bảo vệ người vận hành."
+        },
+        {
+          "meaning_vi": "cái chắn",
+          "example_en": "He replaced the broken chain guard on his bicycle.",
+          "example_vi": "Anh ấy đã thay cái chắn xích bị hỏng trên xe đạp của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ động từ sang danh từ theo từ điển chuẩn. Nghĩa được rút gọn và phân bổ ví dụ hợp lý.",
+      "word": "guard",
+      "normalized_word": "guard",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The prison guard stood at the main gate all night.",
+      "example_vi_clean": "Người lính gác đứng ở cổng chính suốt cả đêm."
+    },
+    {
+      "id": 25092,
+      "quiz_meaning_vi": "súng",
+      "meaning_vi_clean": "súng; săn lùng",
+      "examples_clean": [
+        {
+          "meaning_vi": "súng",
+          "example_en": "The police officer carried a gun in his holster.",
+          "example_vi": "Viên cảnh sát mang theo một khẩu súng trong bao súng."
+        },
+        {
+          "meaning_vi": "súng",
+          "example_en": "He learned how to shoot a gun at the range.",
+          "example_vi": "Anh ấy đã học cách bắn súng tại trường bắn."
+        },
+        {
+          "meaning_vi": "súng",
+          "example_en": "The soldier cleaned his gun every morning.",
+          "example_vi": "Người lính lau chùi khẩu súng của mình mỗi sáng."
+        },
+        {
+          "meaning_vi": "súng",
+          "example_en": "Strict laws regulate the ownership of guns in this country.",
+          "example_vi": "Các luật nghiêm ngặt quản lý việc sở hữu súng ở quốc gia này."
+        },
+        {
+          "meaning_vi": "săn lùng",
+          "example_en": "The detectives are gunning for the criminal who escaped.",
+          "example_vi": "Các thám tử đang săn lùng tên tội phạm đã trốn thoát."
+        },
+        {
+          "meaning_vi": "săn lùng",
+          "example_en": "The team is gunning for the championship title this year.",
+          "example_vi": "Đội bóng đang săn lùng danh hiệu vô địch năm nay."
+        },
+        {
+          "meaning_vi": "săn lùng",
+          "example_en": "They are gunning for a promotion in the new department.",
+          "example_vi": "Họ đang săn lùng một vị trí thăng tiến trong bộ phận mới."
+        },
+        {
+          "meaning_vi": "săn lùng",
+          "example_en": "The company is gunning for new market opportunities abroad.",
+          "example_vi": "Công ty đang săn lùng các cơ hội thị trường mới ở nước ngoài."
+        },
+        {
+          "meaning_vi": "súng",
+          "example_en": "The hunter kept his gun ready in case he saw a deer.",
+          "example_vi": "Người thợ săn giữ khẩu súng sẵn sàng phòng khi thấy hươu."
+        },
+        {
+          "meaning_vi": "súng",
+          "example_en": "She bought a toy gun for her son to play with.",
+          "example_vi": "Cô ấy đã mua một khẩu súng đồ chơi cho con trai chơi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ động từ sang danh từ. Nghĩa được làm gọn và bổ sung ví dụ cho cả nghĩa danh từ và động từ (nghĩa bóng).",
+      "word": "gun",
+      "normalized_word": "gun",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police officer carried a gun in his holster.",
+      "example_vi_clean": "Viên cảnh sát mang theo một khẩu súng trong bao súng."
+    },
+    {
+      "id": 25093,
+      "quiz_meaning_vi": "nửa giá tiền",
+      "meaning_vi_clean": "nửa giá tiền",
+      "examples_clean": [
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "I bought this shirt at half-price during the sale.",
+          "example_vi": "Tôi đã mua chiếc áo này với nửa giá tiền trong đợt giảm giá."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "The store is offering half-price tickets for children.",
+          "example_vi": "Cửa hàng đang cung cấp vé nửa giá tiền cho trẻ em."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "Everything in the shop is currently half-price.",
+          "example_vi": "Mọi thứ trong cửa hàng hiện đang được bán với nửa giá tiền."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "We found some half-price books at the local market.",
+          "example_vi": "Chúng tôi đã tìm thấy vài cuốn sách nửa giá tiền ở chợ địa phương."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "She managed to get the dress at half-price.",
+          "example_vi": "Cô ấy đã xoay xở mua được chiếc váy với nửa giá tiền."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "The hotel offers half-price rooms in the off-season.",
+          "example_vi": "Khách sạn cung cấp phòng với nửa giá tiền vào mùa thấp điểm."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "You can get these items at half-price today.",
+          "example_vi": "Bạn có thể mua những món đồ này với nửa giá tiền hôm nay."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "The restaurant serves half-price meals on Tuesdays.",
+          "example_vi": "Nhà hàng phục vụ các bữa ăn với nửa giá tiền vào thứ Ba."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "He sold his old bike at half-price to his friend.",
+          "example_vi": "Anh ấy đã bán chiếc xe đạp cũ của mình với nửa giá tiền cho bạn."
+        },
+        {
+          "meaning_vi": "nửa giá tiền",
+          "example_en": "The software is available at half-price for students.",
+          "example_vi": "Phần mềm này có sẵn với nửa giá tiền cho sinh viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ phó từ sang tính từ. Nghĩa được chuẩn hóa và bổ sung 10 ví dụ.",
+      "word": "half-price",
+      "normalized_word": "half-price",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I bought this shirt at half-price during the sale.",
+      "example_vi_clean": "Tôi đã mua chiếc áo này với nửa giá tiền trong đợt giảm giá."
+    },
+    {
+      "id": 25094,
+      "quiz_meaning_vi": "thịt giăm bông",
+      "meaning_vi_clean": "thịt giăm bông",
+      "examples_clean": [
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "I would like a sandwich with ham and cheese.",
+          "example_vi": "Tôi muốn một chiếc bánh mì kẹp với thịt giăm bông và phô mai."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "She sliced some ham for the salad.",
+          "example_vi": "Cô ấy đã thái một ít thịt giăm bông cho món salad."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "The pizza is topped with ham and pineapple.",
+          "example_vi": "Chiếc bánh pizza được phủ thịt giăm bông và dứa."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "He ate a piece of ham for breakfast.",
+          "example_vi": "Anh ấy đã ăn một miếng thịt giăm bông cho bữa sáng."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "We bought a large ham for the holiday dinner.",
+          "example_vi": "Chúng tôi đã mua một miếng thịt giăm bông lớn cho bữa tối ngày lễ."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "The smell of cooked ham filled the kitchen.",
+          "example_vi": "Mùi thịt giăm bông nấu chín tràn ngập căn bếp."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "Would you prefer turkey or ham in your roll?",
+          "example_vi": "Bạn thích thịt gà tây hay thịt giăm bông trong bánh cuộn của mình?"
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "The deli sells high-quality smoked ham.",
+          "example_vi": "Cửa hàng thực phẩm bán thịt giăm bông hun khói chất lượng cao."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "She added diced ham to the omelet.",
+          "example_vi": "Cô ấy đã thêm thịt giăm bông thái hạt lựu vào món trứng ốp la."
+        },
+        {
+          "meaning_vi": "thịt giăm bông",
+          "example_en": "The ham was perfectly seasoned and very tender.",
+          "example_vi": "Miếng thịt giăm bông được nêm nếm hoàn hảo và rất mềm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa nghĩa từ 'tỉnh' (sai) thành 'thịt giăm bông' (đúng). Bổ sung 10 ví dụ.",
+      "word": "ham",
+      "normalized_word": "ham",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I would like a sandwich with ham and cheese.",
+      "example_vi_clean": "Tôi muốn một chiếc bánh mì kẹp với thịt giăm bông và phô mai."
+    },
+    {
+      "id": 25095,
+      "quiz_meaning_vi": "túi xách",
+      "meaning_vi_clean": "túi xách",
+      "examples_clean": [
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "She kept her keys inside her leather handbag.",
+          "example_vi": "Cô ấy giữ chìa khóa bên trong chiếc túi xách da của mình."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "I forgot my handbag on the bus this morning.",
+          "example_vi": "Tôi đã để quên túi xách trên xe buýt sáng nay."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "Her handbag matches her shoes perfectly.",
+          "example_vi": "Chiếc túi xách của cô ấy rất hợp với đôi giày."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "She reached into her handbag to find her phone.",
+          "example_vi": "Cô ấy thò tay vào túi xách để tìm điện thoại."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "The thief snatched her handbag and ran away.",
+          "example_vi": "Tên trộm đã giật túi xách của cô ấy và bỏ chạy."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "She bought a new handbag for the wedding party.",
+          "example_vi": "Cô ấy đã mua một chiếc túi xách mới cho bữa tiệc cưới."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "There is not much space in her small handbag.",
+          "example_vi": "Không có nhiều chỗ trong chiếc túi xách nhỏ của cô ấy."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "She organized all her makeup in her handbag.",
+          "example_vi": "Cô ấy sắp xếp tất cả đồ trang điểm trong túi xách của mình."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "He carried her heavy handbag while they walked.",
+          "example_vi": "Anh ấy đã xách chiếc túi xách nặng của cô ấy trong khi họ đi bộ."
+        },
+        {
+          "meaning_vi": "túi xách",
+          "example_en": "The designer handbag was very expensive.",
+          "example_vi": "Chiếc túi xách hàng hiệu đó rất đắt tiền."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "handbag",
+      "normalized_word": "handbag",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She kept her keys inside her leather handbag.",
+      "example_vi_clean": "Cô ấy giữ chìa khóa bên trong chiếc túi xách da của mình."
+    },
+    {
+      "id": 25096,
+      "quiz_meaning_vi": "người khuyết tật",
+      "meaning_vi_clean": "người khuyết tật",
+      "examples_clean": [
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "The building has special facilities for the handicapped.",
+          "example_vi": "Tòa nhà có các tiện nghi đặc biệt dành cho người khuyết tật."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "We should provide more support for the handicapped in our community.",
+          "example_vi": "Chúng ta nên cung cấp thêm sự hỗ trợ cho người khuyết tật trong cộng đồng."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "The parking space is reserved for the handicapped.",
+          "example_vi": "Chỗ đậu xe này được dành riêng cho người khuyết tật."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "Many handicapped people lead very active and fulfilling lives.",
+          "example_vi": "Nhiều người khuyết tật có cuộc sống rất năng động và trọn vẹn."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "The charity raises money to help the handicapped.",
+          "example_vi": "Tổ chức từ thiện gây quỹ để giúp đỡ người khuyết tật."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "Access for the handicapped is a priority for the new design.",
+          "example_vi": "Lối đi cho người khuyết tật là ưu tiên cho thiết kế mới."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "She works with handicapped children at the local school.",
+          "example_vi": "Cô ấy làm việc với trẻ em khuyết tật tại trường học địa phương."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "The government provides benefits for the handicapped.",
+          "example_vi": "Chính phủ cung cấp các khoản trợ cấp cho người khuyết tật."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "They organized a sports event for the handicapped.",
+          "example_vi": "Họ đã tổ chức một sự kiện thể thao cho người khuyết tật."
+        },
+        {
+          "meaning_vi": "người khuyết tật",
+          "example_en": "The ramp makes it easier for the handicapped to enter.",
+          "example_vi": "Đường dốc giúp người khuyết tật vào dễ dàng hơn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa từ 'tật nguyền' thành 'người khuyết tật' để phù hợp với ngôn ngữ hiện đại. Bổ sung 10 ví dụ.",
+      "word": "handicapped",
+      "normalized_word": "handicapped",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The building has special facilities for the handicapped.",
+      "example_vi_clean": "Tòa nhà có các tiện nghi đặc biệt dành cho người khuyết tật."
+    },
+    {
+      "id": 25097,
+      "quiz_meaning_vi": "tay cầm",
+      "meaning_vi_clean": "tay cầm; xử lý",
+      "examples_clean": [
+        {
+          "meaning_vi": "tay cầm",
+          "example_en": "The door handle is broken and needs to be replaced.",
+          "example_vi": "Tay cầm cửa bị hỏng và cần được thay thế."
+        },
+        {
+          "meaning_vi": "tay cầm",
+          "example_en": "She turned the handle to open the heavy gate.",
+          "example_vi": "Cô ấy xoay tay cầm để mở cánh cổng nặng nề."
+        },
+        {
+          "meaning_vi": "tay cầm",
+          "example_en": "The suitcase has a comfortable handle for carrying.",
+          "example_vi": "Chiếc vali có tay cầm thoải mái để xách."
+        },
+        {
+          "meaning_vi": "tay cầm",
+          "example_en": "He gripped the handle of the umbrella tightly.",
+          "example_vi": "Anh ấy nắm chặt tay cầm của chiếc ô."
+        },
+        {
+          "meaning_vi": "xử lý",
+          "example_en": "She knows how to handle difficult customers.",
+          "example_vi": "Cô ấy biết cách xử lý những khách hàng khó tính."
+        },
+        {
+          "meaning_vi": "xử lý",
+          "example_en": "The manager will handle the complaints personally.",
+          "example_vi": "Người quản lý sẽ đích thân xử lý các khiếu nại."
+        },
+        {
+          "meaning_vi": "xử lý",
+          "example_en": "Can you handle this project on your own?",
+          "example_vi": "Bạn có thể tự mình xử lý dự án này không?"
+        },
+        {
+          "meaning_vi": "xử lý",
+          "example_en": "The computer is fast enough to handle complex tasks.",
+          "example_vi": "Máy tính đủ nhanh để xử lý các tác vụ phức tạp."
+        },
+        {
+          "meaning_vi": "tay cầm",
+          "example_en": "The mug has a small handle that is easy to hold.",
+          "example_vi": "Chiếc cốc có tay cầm nhỏ dễ cầm."
+        },
+        {
+          "meaning_vi": "xử lý",
+          "example_en": "He is learning how to handle the new machinery.",
+          "example_vi": "Anh ấy đang học cách xử lý cỗ máy mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ/động từ. Nghĩa được rút gọn và bổ sung ví dụ.",
+      "word": "handle",
+      "normalized_word": "handle",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The door handle is broken and needs to be replaced.",
+      "example_vi_clean": "Tay cầm cửa bị hỏng và cần được thay thế."
+    },
+    {
+      "id": 25098,
+      "quiz_meaning_vi": "một cách hạnh phúc",
+      "meaning_vi_clean": "một cách hạnh phúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "They lived happily ever after in their new home.",
+          "example_vi": "Họ đã sống một cách hạnh phúc mãi mãi về sau trong ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "The children played happily in the garden all afternoon.",
+          "example_vi": "Những đứa trẻ chơi đùa một cách hạnh phúc trong vườn suốt cả buổi chiều."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "She smiled happily when she heard the good news.",
+          "example_vi": "Cô ấy mỉm cười một cách hạnh phúc khi nghe tin tốt."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "They are happily married and have two children.",
+          "example_vi": "Họ đã kết hôn một cách hạnh phúc và có hai con."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "The dog wagged its tail happily at its owner.",
+          "example_vi": "Chú chó vẫy đuôi một cách hạnh phúc với chủ của nó."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "He accepted the award happily.",
+          "example_vi": "Anh ấy đã nhận giải thưởng một cách hạnh phúc."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "They chatted happily over a cup of coffee.",
+          "example_vi": "Họ trò chuyện một cách hạnh phúc bên tách cà phê."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "The couple walked happily along the beach.",
+          "example_vi": "Cặp đôi đi bộ một cách hạnh phúc dọc theo bãi biển."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "She sang happily while working in the kitchen.",
+          "example_vi": "Cô ấy hát một cách hạnh phúc trong khi làm việc trong bếp."
+        },
+        {
+          "meaning_vi": "một cách hạnh phúc",
+          "example_en": "They spent the day happily exploring the city.",
+          "example_vi": "Họ đã dành cả ngày một cách hạnh phúc để khám phá thành phố."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "happily",
+      "normalized_word": "happily",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "They lived happily ever after in their new home.",
+      "example_vi_clean": "Họ đã sống một cách hạnh phúc mãi mãi về sau trong ngôi nhà mới."
+    },
+    {
+      "id": 25099,
+      "quiz_meaning_vi": "hạnh phúc",
+      "meaning_vi_clean": "hạnh phúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "Money cannot always buy true happiness.",
+          "example_vi": "Tiền không phải lúc nào cũng có thể mua được hạnh phúc thực sự."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "Her children are the source of her happiness.",
+          "example_vi": "Các con là nguồn hạnh phúc của cô ấy."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "He found happiness in his simple life.",
+          "example_vi": "Anh ấy tìm thấy hạnh phúc trong cuộc sống giản dị của mình."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "They wish you a lifetime of happiness together.",
+          "example_vi": "Họ chúc bạn một đời hạnh phúc bên nhau."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "Happiness is a state of mind.",
+          "example_vi": "Hạnh phúc là một trạng thái tâm trí."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "She shared her happiness with all her friends.",
+          "example_vi": "Cô ấy chia sẻ hạnh phúc của mình với tất cả bạn bè."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "The secret to happiness is being grateful.",
+          "example_vi": "Bí quyết của hạnh phúc là biết ơn."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "They celebrated their happiness with a big party.",
+          "example_vi": "Họ ăn mừng hạnh phúc của mình bằng một bữa tiệc lớn."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "He felt a sense of happiness after the success.",
+          "example_vi": "Anh ấy cảm thấy một niềm hạnh phúc sau thành công đó."
+        },
+        {
+          "meaning_vi": "hạnh phúc",
+          "example_en": "Nothing can replace the happiness of a family.",
+          "example_vi": "Không gì có thể thay thế hạnh phúc của một gia đình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "happiness",
+      "normalized_word": "happiness",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Money cannot always buy true happiness.",
+      "example_vi_clean": "Tiền không phải lúc nào cũng có thể mua được hạnh phúc thực sự."
+    },
+    {
+      "id": 25100,
+      "quiz_meaning_vi": "hầu như không",
+      "meaning_vi_clean": "hầu như không; khó khăn",
+      "examples_clean": [
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "I could hardly hear what he was saying.",
+          "example_vi": "Tôi hầu như không thể nghe thấy những gì anh ấy đang nói."
+        },
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "There was hardly anyone at the party when we arrived.",
+          "example_vi": "Hầu như không có ai ở bữa tiệc khi chúng tôi đến."
+        },
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "She hardly ever goes out on weekdays.",
+          "example_vi": "Cô ấy hầu như không bao giờ đi chơi vào các ngày trong tuần."
+        },
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "I hardly know him, so I cannot judge.",
+          "example_vi": "Tôi hầu như không biết anh ấy, vì vậy tôi không thể đánh giá."
+        },
+        {
+          "meaning_vi": "khó khăn",
+          "example_en": "They worked hard and lived hardly during the war.",
+          "example_vi": "Họ làm việc chăm chỉ và sống một cách khó khăn trong thời chiến."
+        },
+        {
+          "meaning_vi": "khó khăn",
+          "example_en": "The family struggled hardly to make ends meet.",
+          "example_vi": "Gia đình đã phải vật lộn một cách khó khăn để trang trải cuộc sống."
+        },
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "It is hardly surprising that they won the game.",
+          "example_vi": "Việc họ thắng trận đấu hầu như không có gì đáng ngạc nhiên."
+        },
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "He hardly slept at all last night.",
+          "example_vi": "Anh ấy hầu như không ngủ được chút nào đêm qua."
+        },
+        {
+          "meaning_vi": "khó khăn",
+          "example_en": "They were hardly pressed by the lack of resources.",
+          "example_vi": "Họ đã bị gây áp lực một cách khó khăn bởi sự thiếu hụt tài nguyên."
+        },
+        {
+          "meaning_vi": "hầu như không",
+          "example_en": "I hardly recognized her with her new haircut.",
+          "example_vi": "Tôi hầu như không nhận ra cô ấy với kiểu tóc mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ. Nghĩa 'khó khăn' được giữ lại để đảm bảo tính đa dạng.",
+      "word": "hardly",
+      "normalized_word": "hardly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I could hardly hear what he was saying.",
+      "example_vi_clean": "Tôi hầu như không thể nghe thấy những gì anh ấy đang nói."
+    }
+  ]
+}

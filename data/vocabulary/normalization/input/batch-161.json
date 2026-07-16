@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-161",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25601,
+      "word": "blind",
+      "normalized_word": "blind",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "nội động từ",
+      "phonetic": "/blaind/",
+      "primary_meaning_vi": "đui mù",
+      "meaning_vi": "đui mù; không nhìn thấy, không thấy được; mù quáng; không có lối ra, cụt (ngõ...); không rõ ràng, khó thấy, khó nhìn; say bí tỉ ((cũng) blind drunk); mặt sơ hở của mình; bức màn che; mành mành, rèm; miếng (da, vải) che mắt (ngựa); cớ, bề ngoài giả dối; chầu rượu bí tỉ; luỹ chắn, công sự; (số nhiều) những người mù; xứ mù thằng chột làm vua; làm đui mù, làm loà mắt; làm mù quáng; đi liều, vặn ẩu (ô tô, mô tô)",
+      "example_en": "a duck blind",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The blinds are $10/$20 and the ante is $1.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The blinds immediately folded when I reraised.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don't wave that pencil in my face - do you want to blind me?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25602,
+      "word": "blush",
+      "normalized_word": "blush",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/blʌʃ/",
+      "primary_meaning_vi": "sự đỏ mặt (vì thẹn)",
+      "meaning_vi": "sự đỏ mặt (vì thẹn); ánh hồng, nét ửng đỏ; cái nhìn, cái liếc mắt; làm cho ai thẹn đỏ mặt; đỏ mặt (vì thẹn); thẹn; ửng đỏ, ửng hồng",
+      "example_en": "He wasn't used to this much attention, so he blushed as he saw dozens of pairs of eyes watching him.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I wasn't surprised, but it was embarrassing enough that I blushed a little pink.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Looking at me with a knowing glare, she blushed her discomfort with the situation.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The garden was full of blossoms that blushed in myriad shades to form a beautiful carpet of color.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25603,
+      "word": "boast",
+      "normalized_word": "boast",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/boust/",
+      "primary_meaning_vi": "lời nói khoác",
+      "meaning_vi": "lời nói khoác; sự khoe khoang; niềm tự kiêu, niềm kiêu hãnh; trăm voi không được bát nước xáo; khoe khoang, khoác lác; tự kiêu, lấy làm kiêu hãnh (về cái gì)",
+      "example_en": "It was his regular boast that he could eat two full English breakfasts in one sitting.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His family boasted a famous name.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25604,
+      "word": "bold",
+      "normalized_word": "bold",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/bould/",
+      "primary_meaning_vi": "dũng cảm",
+      "meaning_vi": "dũng cảm, táo bạo, cả gan; trơ trẽn, trơ tráo, liều lĩnh; rõ, rõ nét; dốc ngược, dốc đứng; mặt dày, mày dạn, trơ tráo như gáo múc dầu; đánh liều, đánh bạo (làm việc gì); face",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25605,
+      "word": "boldly",
+      "normalized_word": "boldly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "táo bạo",
+      "meaning_vi": "táo bạo, liều lĩnh; trơ trẽn, trâng tráo",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25606,
+      "word": "bomb",
+      "normalized_word": "bomb",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bɔm/",
+      "primary_meaning_vi": "quả bom",
+      "meaning_vi": "quả bom; ném một quả bom vào; gây sự xôn xao, gây sự chấn động lớn; ném bom, oanh tạc; ném bom để lùa (ai) ra khỏi (nơi nào); chất bom (vào máy bay)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25607,
+      "word": "bond",
+      "normalized_word": "bond",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bɔnd/",
+      "primary_meaning_vi": "dây đai",
+      "meaning_vi": "dây đai, đay buộc; ((nghĩa bóng)) mối quan hệ, mối ràng buộc; giao kèo, khế ước, lời cam kết; phiếu nợ, bông; gông cùm, xiềng xích, sự tù tội; sự gửi vào kho; sự liên kết; kiểu xây ghép (gạch, đá, để làm cho tường vững); gửi (hàng) vào kho; xây ghép (gạch, đá)",
+      "example_en": "The prisoner was brought before the tribunal in iron bonds.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "They had grown up as friends and neighbors, and not even vastly differing political views could break the bond of their friendship.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Organic chemistry primarily consists of the study of carbon bonds, in their many variations.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Herbert resented his wife for subjecting him to the bonds of matrimony; he claimed they had gotten married while drunk.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25608,
+      "word": "boom",
+      "normalized_word": "boom",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bu:m/",
+      "primary_meaning_vi": "sào căng buồm",
+      "meaning_vi": "sào căng buồm; hàng rào gỗ nổi (chắn cửa sông, cửa cảng); cần (máy trục); xà dọc (cánh máy bay); tiếng nổ đùng đùng (súng); tiếng gầm (sóng); tiếng oang oang; tiếng kêu vo vo; nổ đùng đùng (súng); nói oang oang; kêu vo vo, kêu vo ve (sâu bọ); sự tăng vọt (giá cả); sự phất trong (buôn bán...); sự nổi tiếng thình lình (nhờ quảng cáo rùm beng); thành phố phát triển nhanh; quảng cáo rùm beng (cho một mặt hàng gì mới...); tăng vọt (giá cả); phất (công việc buôn bán...); thình lình trở nên nổi tiếng (nhờ quảng cáo rùm beng)",
+      "example_en": "The boom of the surf.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "You should prepare for the coming boom in the tech industry.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I can hear the organ slowly booming from the chapel.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Men in grey robes slowly boom the drums of death.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25609,
+      "word": "boot",
+      "normalized_word": "boot",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bu:t/",
+      "primary_meaning_vi": "to boot thêm vào đó",
+      "meaning_vi": "to boot thêm vào đó, nữa; giày ống; ngăn để hành lý (đằng sau xe ô tô, xe ngựa); giày tra tấn (dụng cụ tra tấn hình giày ống); đánh ai nhừ tử; đánh ai thâm tím mình mẩy; die; bị đuổi, bị tống cổ ra, bị đá đít; đá đít ai, đuổi ai, tống cổ ai; heart; liếm gót ai, bợ đỡ ai; rán hết sức, ; dữ dội, mạnh mẽ, mãnh liệt; đã trót thì phải trét; sự thật lại là ngược lại; trách nhiệm thuộc về phía bên kia; đi giày ống cho; đá (ai); tra tấn (bằng giày tra tấn); đuổi ra, tống cổ ra, đá đít ((nghĩa bóng))",
+      "example_en": "I booted the ball toward my teammate.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We need to boot those troublemakers as soon as possible",
+          "example_vi": null
+        },
+        {
+          "example_en": "Sorry, I didn’t mean to boot all over your couch.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It took three boots, but I finally got the application installed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25610,
+      "word": "border",
+      "normalized_word": "border",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'bɔ:də/",
+      "primary_meaning_vi": "bờ",
+      "meaning_vi": "bờ, mép, vỉa, lề; biên giới; đường viền (để làm cho chắc, để trang trí); vùng biên giới giữa Anh và Ê-cốt; (từ Mỹ,nghĩa Mỹ) biên giới của văn minh; luống chạy quanh vườn; viền; tiếp, giáp với; gần như, giống như",
+      "example_en": "the borders of the garden",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "There's a nice frilly border around the picture frame.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The border between Canada and USA is the longest in the world.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Denmark borders Germany to the south.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

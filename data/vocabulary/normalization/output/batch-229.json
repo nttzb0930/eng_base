@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26281,
+      "quiz_meaning_vi": "nơi thường lui tới",
+      "meaning_vi_clean": "nơi thường lui tới; nơi hay lai vãng",
+      "examples_clean": [
+        {
+          "meaning_vi": "nơi thường lui tới",
+          "example_en": "I went back to the town where I used to live and visited all my old haunts.",
+          "example_vi": "Tôi quay lại thị trấn nơi tôi từng sống và ghé thăm tất cả những nơi tôi thường lui tới."
+        },
+        {
+          "meaning_vi": "nơi thường lui tới",
+          "example_en": "This cafe is a popular haunt for local artists.",
+          "example_vi": "Quán cà phê này là nơi thường lui tới của các nghệ sĩ địa phương."
+        },
+        {
+          "meaning_vi": "nơi thường lui tới",
+          "example_en": "The park was a favorite haunt of mine during my childhood.",
+          "example_vi": "Công viên là nơi tôi thường lui tới trong suốt thời thơ ấu."
+        },
+        {
+          "meaning_vi": "nơi thường lui tới",
+          "example_en": "They discovered a secret haunt in the woods where they could play.",
+          "example_vi": "Họ phát hiện ra một nơi thường lui tới bí mật trong rừng để có thể chơi đùa."
+        },
+        {
+          "meaning_vi": "nơi hay lai vãng",
+          "example_en": "The old library is a quiet haunt for students studying for exams.",
+          "example_vi": "Thư viện cũ là nơi hay lai vãng của các sinh viên đang ôn thi."
+        },
+        {
+          "meaning_vi": "nơi hay lai vãng",
+          "example_en": "That bar is a common haunt for people working in the city center.",
+          "example_vi": "Quán bar đó là nơi hay lai vãng của những người làm việc ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "nơi hay lai vãng",
+          "example_en": "The riverbank is a frequent haunt for local fishermen.",
+          "example_vi": "Bờ sông là nơi hay lai vãng của những ngư dân địa phương."
+        },
+        {
+          "meaning_vi": "nơi hay lai vãng",
+          "example_en": "She has many haunts in the city that she visits on weekends.",
+          "example_vi": "Cô ấy có nhiều nơi hay lai vãng trong thành phố mà cô ấy ghé thăm vào cuối tuần."
+        },
+        {
+          "meaning_vi": "nơi hay lai vãng",
+          "example_en": "The bookstore is a regular haunt for book lovers.",
+          "example_vi": "Hiệu sách là nơi hay lai vãng thường xuyên của những người yêu sách."
+        },
+        {
+          "meaning_vi": "nơi hay lai vãng",
+          "example_en": "These mountains are a known haunt for rare birds.",
+          "example_vi": "Những ngọn núi này là nơi hay lai vãng của các loài chim quý hiếm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ nội động từ sang danh từ theo từ điển. Đã lọc nghĩa phù hợp cấp độ B1 và bổ sung 10 ví dụ minh họa.",
+      "word": "haunt",
+      "normalized_word": "haunt",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I went back to the town where I used to live and visited all my old haunts.",
+      "example_vi_clean": "Tôi quay lại thị trấn nơi tôi từng sống và ghé thăm tất cả những nơi tôi thường lui tới."
+    },
+    {
+      "id": 26282,
+      "quiz_meaning_vi": "bến tàu",
+      "meaning_vi_clean": "bến tàu; nơi trú ẩn",
+      "examples_clean": [
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "The ship finally arrived at the safe haven after the storm.",
+          "example_vi": "Con tàu cuối cùng đã cập bến tàu an toàn sau cơn bão."
+        },
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "They built a small haven for the fishing boats.",
+          "example_vi": "Họ đã xây dựng một bến tàu nhỏ cho các thuyền đánh cá."
+        },
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "The harbor serves as a haven for many merchant vessels.",
+          "example_vi": "Cảng biển đóng vai trò là bến tàu cho nhiều tàu buôn."
+        },
+        {
+          "meaning_vi": "bến tàu",
+          "example_en": "We watched the boats leave the haven early in the morning.",
+          "example_vi": "Chúng tôi nhìn những con thuyền rời bến tàu vào sáng sớm."
+        },
+        {
+          "meaning_vi": "nơi trú ẩn",
+          "example_en": "The forest provided a haven for the wild animals.",
+          "example_vi": "Khu rừng cung cấp một nơi trú ẩn cho các loài động vật hoang dã."
+        },
+        {
+          "meaning_vi": "nơi trú ẩn",
+          "example_en": "His home became a haven of peace for his friends.",
+          "example_vi": "Nhà của anh ấy đã trở thành một nơi trú ẩn bình yên cho bạn bè."
+        },
+        {
+          "meaning_vi": "nơi trú ẩn",
+          "example_en": "The library is a haven for those who love reading.",
+          "example_vi": "Thư viện là nơi trú ẩn cho những ai yêu thích đọc sách."
+        },
+        {
+          "meaning_vi": "nơi trú ẩn",
+          "example_en": "They sought a haven from the cold winter wind.",
+          "example_vi": "Họ tìm kiếm một nơi trú ẩn khỏi cơn gió mùa đông lạnh giá."
+        },
+        {
+          "meaning_vi": "nơi trú ẩn",
+          "example_en": "The garden is a quiet haven in the middle of the city.",
+          "example_vi": "Khu vườn là một nơi trú ẩn yên tĩnh giữa lòng thành phố."
+        },
+        {
+          "meaning_vi": "nơi trú ẩn",
+          "example_en": "This organization offers a haven for refugees.",
+          "example_vi": "Tổ chức này cung cấp một nơi trú ẩn cho những người tị nạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung nghĩa và 10 ví dụ phù hợp.",
+      "word": "haven",
+      "normalized_word": "haven",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ship finally arrived at the safe haven after the storm.",
+      "example_vi_clean": "Con tàu cuối cùng đã cập bến tàu an toàn sau cơn bão."
+    },
+    {
+      "id": 26283,
+      "quiz_meaning_vi": "mối nguy",
+      "meaning_vi_clean": "mối nguy; sự may rủi",
+      "examples_clean": [
+        {
+          "meaning_vi": "mối nguy",
+          "example_en": "Smoking is a serious hazard to your health.",
+          "example_vi": "Hút thuốc là một mối nguy nghiêm trọng đối với sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "mối nguy",
+          "example_en": "The icy roads are a major hazard for drivers.",
+          "example_vi": "Những con đường đóng băng là một mối nguy lớn đối với người lái xe."
+        },
+        {
+          "meaning_vi": "mối nguy",
+          "example_en": "They identified several fire hazards in the building.",
+          "example_vi": "Họ đã xác định được một vài mối nguy hỏa hoạn trong tòa nhà."
+        },
+        {
+          "meaning_vi": "mối nguy",
+          "example_en": "Pollution is a hazard to the environment.",
+          "example_vi": "Ô nhiễm là một mối nguy đối với môi trường."
+        },
+        {
+          "meaning_vi": "sự may rủi",
+          "example_en": "Life is full of hazards that we cannot control.",
+          "example_vi": "Cuộc sống đầy rẫy những sự may rủi mà chúng ta không thể kiểm soát."
+        },
+        {
+          "meaning_vi": "sự may rủi",
+          "example_en": "He took the job at the hazard of losing his savings.",
+          "example_vi": "Anh ấy nhận công việc với sự may rủi là có thể mất hết tiền tiết kiệm."
+        },
+        {
+          "meaning_vi": "sự may rủi",
+          "example_en": "They left their success to the hazard of the market.",
+          "example_vi": "Họ phó mặc sự thành công của mình cho sự may rủi của thị trường."
+        },
+        {
+          "meaning_vi": "sự may rủi",
+          "example_en": "The outcome was left to the hazard of chance.",
+          "example_vi": "Kết quả được phó mặc cho sự may rủi của vận may."
+        },
+        {
+          "meaning_vi": "sự may rủi",
+          "example_en": "He accepted the hazard of the journey.",
+          "example_vi": "Anh ấy chấp nhận sự may rủi của chuyến đi."
+        },
+        {
+          "meaning_vi": "sự may rủi",
+          "example_en": "We must consider the hazard involved in this investment.",
+          "example_vi": "Chúng ta phải cân nhắc sự may rủi liên quan đến khoản đầu tư này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Đã chọn nghĩa phổ biến nhất và bổ sung 10 ví dụ.",
+      "word": "hazard",
+      "normalized_word": "hazard",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Smoking is a serious hazard to your health.",
+      "example_vi_clean": "Hút thuốc là một mối nguy nghiêm trọng đối với sức khỏe của bạn."
+    },
+    {
+      "id": 26284,
+      "quiz_meaning_vi": "tiêu đề",
+      "meaning_vi_clean": "tiêu đề; dòng đầu",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiêu đề",
+          "example_en": "The headline of the newspaper caught my attention immediately.",
+          "example_vi": "Tiêu đề của tờ báo đã thu hút sự chú ý của tôi ngay lập tức."
+        },
+        {
+          "meaning_vi": "tiêu đề",
+          "example_en": "She read the headline and decided to buy the magazine.",
+          "example_vi": "Cô ấy đọc tiêu đề và quyết định mua tạp chí đó."
+        },
+        {
+          "meaning_vi": "tiêu đề",
+          "example_en": "The article had a very shocking headline.",
+          "example_vi": "Bài báo có một tiêu đề rất gây sốc."
+        },
+        {
+          "meaning_vi": "tiêu đề",
+          "example_en": "Can you think of a better headline for this story?",
+          "example_vi": "Bạn có thể nghĩ ra một tiêu đề hay hơn cho câu chuyện này không?"
+        },
+        {
+          "meaning_vi": "dòng đầu",
+          "example_en": "The main news is printed in the headline of the page.",
+          "example_vi": "Tin tức chính được in ở dòng đầu của trang báo."
+        },
+        {
+          "meaning_vi": "dòng đầu",
+          "example_en": "He wrote the date in the headline of his report.",
+          "example_vi": "Anh ấy viết ngày tháng ở dòng đầu của bản báo cáo."
+        },
+        {
+          "meaning_vi": "dòng đầu",
+          "example_en": "The headline clearly states the purpose of the document.",
+          "example_vi": "Dòng đầu nêu rõ mục đích của tài liệu."
+        },
+        {
+          "meaning_vi": "dòng đầu",
+          "example_en": "Check the headline to see if you have the right file.",
+          "example_vi": "Kiểm tra dòng đầu để xem bạn có đúng tệp tin không."
+        },
+        {
+          "meaning_vi": "dòng đầu",
+          "example_en": "The headline summarizes the entire article.",
+          "example_vi": "Dòng đầu tóm tắt toàn bộ bài viết."
+        },
+        {
+          "meaning_vi": "dòng đầu",
+          "example_en": "Please include your name in the headline of the form.",
+          "example_vi": "Vui lòng điền tên của bạn vào dòng đầu của biểu mẫu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ ngoại động từ sang danh từ. Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "headline",
+      "normalized_word": "headline",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The headline of the newspaper caught my attention immediately.",
+      "example_vi_clean": "Tiêu đề của tờ báo đã thu hút sự chú ý của tôi ngay lập tức."
+    },
+    {
+      "id": 26285,
+      "quiz_meaning_vi": "chữa khỏi",
+      "meaning_vi_clean": "chữa khỏi; làm lành; hàn gắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "chữa khỏi",
+          "example_en": "The doctor was able to heal the patient completely.",
+          "example_vi": "Bác sĩ đã có thể chữa khỏi hoàn toàn cho bệnh nhân."
+        },
+        {
+          "meaning_vi": "chữa khỏi",
+          "example_en": "Modern medicine can heal many diseases.",
+          "example_vi": "Y học hiện đại có thể chữa khỏi nhiều loại bệnh."
+        },
+        {
+          "meaning_vi": "chữa khỏi",
+          "example_en": "He believes that nature can heal the body.",
+          "example_vi": "Anh ấy tin rằng thiên nhiên có thể chữa khỏi cơ thể."
+        },
+        {
+          "meaning_vi": "chữa khỏi",
+          "example_en": "They are looking for a way to heal the infection.",
+          "example_vi": "Họ đang tìm cách để chữa khỏi tình trạng nhiễm trùng."
+        },
+        {
+          "meaning_vi": "làm lành",
+          "example_en": "This ointment will help to heal the wound quickly.",
+          "example_vi": "Thuốc mỡ này sẽ giúp làm lành vết thương nhanh chóng."
+        },
+        {
+          "meaning_vi": "làm lành",
+          "example_en": "It takes time for a broken bone to heal.",
+          "example_vi": "Cần có thời gian để xương gãy làm lành."
+        },
+        {
+          "meaning_vi": "làm lành",
+          "example_en": "The cut on his finger began to heal after a few days.",
+          "example_vi": "Vết cắt trên ngón tay anh ấy bắt đầu làm lành sau vài ngày."
+        },
+        {
+          "meaning_vi": "hàn gắn",
+          "example_en": "They are trying to heal their broken relationship.",
+          "example_vi": "Họ đang cố gắng hàn gắn mối quan hệ đã rạn nứt của mình."
+        },
+        {
+          "meaning_vi": "hàn gắn",
+          "example_en": "Time will help to heal the pain of loss.",
+          "example_vi": "Thời gian sẽ giúp hàn gắn nỗi đau mất mát."
+        },
+        {
+          "meaning_vi": "hàn gắn",
+          "example_en": "The two countries are working to heal old wounds.",
+          "example_vi": "Hai quốc gia đang nỗ lực hàn gắn những vết thương cũ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "heal",
+      "normalized_word": "heal",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The doctor was able to heal the patient completely.",
+      "example_vi_clean": "Bác sĩ đã có thể chữa khỏi hoàn toàn cho bệnh nhân."
+    },
+    {
+      "id": 26286,
+      "quiz_meaning_vi": "để chữa bệnh",
+      "meaning_vi_clean": "để chữa bệnh; đang lành lại",
+      "examples_clean": [
+        {
+          "meaning_vi": "để chữa bệnh",
+          "example_en": "The plant has healing properties for the skin.",
+          "example_vi": "Loài cây này có đặc tính để chữa bệnh cho da."
+        },
+        {
+          "meaning_vi": "để chữa bệnh",
+          "example_en": "She is interested in healing arts and meditation.",
+          "example_vi": "Cô ấy quan tâm đến các phương pháp để chữa bệnh và thiền định."
+        },
+        {
+          "meaning_vi": "để chữa bệnh",
+          "example_en": "They use traditional herbs for healing purposes.",
+          "example_vi": "Họ sử dụng các loại thảo mộc truyền thống cho mục đích để chữa bệnh."
+        },
+        {
+          "meaning_vi": "để chữa bệnh",
+          "example_en": "The healing power of music is well known.",
+          "example_vi": "Sức mạnh để chữa bệnh của âm nhạc đã được biết đến rộng rãi."
+        },
+        {
+          "meaning_vi": "đang lành lại",
+          "example_en": "The healing wound looks much better today.",
+          "example_vi": "Vết thương đang lành lại trông khá hơn nhiều vào hôm nay."
+        },
+        {
+          "meaning_vi": "đang lành lại",
+          "example_en": "He felt the healing process was going well.",
+          "example_vi": "Anh ấy cảm thấy quá trình đang lành lại đang diễn ra tốt đẹp."
+        },
+        {
+          "meaning_vi": "đang lành lại",
+          "example_en": "Keep the area clean to support the healing skin.",
+          "example_vi": "Giữ khu vực đó sạch sẽ để hỗ trợ phần da đang lành lại."
+        },
+        {
+          "meaning_vi": "đang lành lại",
+          "example_en": "The doctor checked the healing cut on his arm.",
+          "example_vi": "Bác sĩ kiểm tra vết cắt đang lành lại trên cánh tay anh ấy."
+        },
+        {
+          "meaning_vi": "đang lành lại",
+          "example_en": "She noticed the healing tissue was pink and healthy.",
+          "example_vi": "Cô ấy nhận thấy mô đang lành lại có màu hồng và khỏe mạnh."
+        },
+        {
+          "meaning_vi": "đang lành lại",
+          "example_en": "The healing process can be slow for older people.",
+          "example_vi": "Quá trình đang lành lại có thể chậm đối với người lớn tuổi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "healing",
+      "normalized_word": "healing",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The plant has healing properties for the skin.",
+      "example_vi_clean": "Loài cây này có đặc tính để chữa bệnh cho da."
+    },
+    {
+      "id": 26287,
+      "quiz_meaning_vi": "thính giác",
+      "meaning_vi_clean": "thính giác; sự nghe",
+      "examples_clean": [
+        {
+          "meaning_vi": "thính giác",
+          "example_en": "The old man has very poor hearing.",
+          "example_vi": "Ông lão có thính giác rất kém."
+        },
+        {
+          "meaning_vi": "thính giác",
+          "example_en": "Cats have an excellent sense of hearing.",
+          "example_vi": "Mèo có thính giác rất tuyệt vời."
+        },
+        {
+          "meaning_vi": "thính giác",
+          "example_en": "Loud music can damage your hearing.",
+          "example_vi": "Âm nhạc lớn có thể làm hỏng thính giác của bạn."
+        },
+        {
+          "meaning_vi": "thính giác",
+          "example_en": "She had her hearing tested at the clinic.",
+          "example_vi": "Cô ấy đã đi kiểm tra thính giác tại phòng khám."
+        },
+        {
+          "meaning_vi": "sự nghe",
+          "example_en": "The judge scheduled a hearing for next week.",
+          "example_vi": "Thẩm phán đã lên lịch cho một phiên sự nghe vào tuần tới."
+        },
+        {
+          "meaning_vi": "sự nghe",
+          "example_en": "He requested a public hearing to discuss the issue.",
+          "example_vi": "Anh ấy yêu cầu một phiên sự nghe công khai để thảo luận về vấn đề này."
+        },
+        {
+          "meaning_vi": "sự nghe",
+          "example_en": "The committee will hold a hearing on the new law.",
+          "example_vi": "Ủy ban sẽ tổ chức một phiên sự nghe về luật mới."
+        },
+        {
+          "meaning_vi": "sự nghe",
+          "example_en": "She attended the hearing to support her friend.",
+          "example_vi": "Cô ấy đã tham dự phiên sự nghe để ủng hộ bạn mình."
+        },
+        {
+          "meaning_vi": "sự nghe",
+          "example_en": "The hearing lasted for three hours.",
+          "example_vi": "Phiên sự nghe kéo dài trong ba giờ."
+        },
+        {
+          "meaning_vi": "sự nghe",
+          "example_en": "They are waiting for the results of the hearing.",
+          "example_vi": "Họ đang chờ đợi kết quả của phiên sự nghe."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "hearing",
+      "normalized_word": "hearing",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The old man has very poor hearing.",
+      "example_vi_clean": "Ông lão có thính giác rất kém."
+    },
+    {
+      "id": 26288,
+      "quiz_meaning_vi": "vui vẻ",
+      "meaning_vi_clean": "vui vẻ; nồng nhiệt; thịnh soạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "He gave a hearty laugh at the joke.",
+          "example_vi": "Anh ấy cười một cách vui vẻ trước câu chuyện đùa."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "They had a hearty conversation about their future.",
+          "example_vi": "Họ đã có một cuộc trò chuyện vui vẻ về tương lai của mình."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She is always in a hearty mood in the morning.",
+          "example_vi": "Cô ấy luôn có tâm trạng vui vẻ vào buổi sáng."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The children were in a hearty spirit during the party.",
+          "example_vi": "Những đứa trẻ có tinh thần vui vẻ trong suốt bữa tiệc."
+        },
+        {
+          "meaning_vi": "nồng nhiệt",
+          "example_en": "We received a hearty welcome from our hosts.",
+          "example_vi": "Chúng tôi nhận được sự chào đón nồng nhiệt từ những người chủ nhà."
+        },
+        {
+          "meaning_vi": "nồng nhiệt",
+          "example_en": "He gave me a hearty handshake.",
+          "example_vi": "Anh ấy bắt tay tôi một cách nồng nhiệt."
+        },
+        {
+          "meaning_vi": "nồng nhiệt",
+          "example_en": "They offered their hearty support for the project.",
+          "example_vi": "Họ đã dành sự ủng hộ nồng nhiệt cho dự án."
+        },
+        {
+          "meaning_vi": "thịnh soạn",
+          "example_en": "We enjoyed a hearty meal after the long hike.",
+          "example_vi": "Chúng tôi đã thưởng thức một bữa ăn thịnh soạn sau chuyến đi bộ dài."
+        },
+        {
+          "meaning_vi": "thịnh soạn",
+          "example_en": "They prepared a hearty breakfast for the guests.",
+          "example_vi": "Họ đã chuẩn bị một bữa sáng thịnh soạn cho các vị khách."
+        },
+        {
+          "meaning_vi": "thịnh soạn",
+          "example_en": "He has a hearty appetite for such a small person.",
+          "example_vi": "Anh ấy có một bữa ăn thịnh soạn đối với một người nhỏ bé như vậy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã sửa POS từ danh từ sang tính từ. Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ.",
+      "word": "hearty",
+      "normalized_word": "hearty",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He gave a hearty laugh at the joke.",
+      "example_vi_clean": "Anh ấy cười một cách vui vẻ trước câu chuyện đùa."
+    },
+    {
+      "id": 26289,
+      "quiz_meaning_vi": "bếp lò",
+      "meaning_vi_clean": "bếp lò; lò sưởi",
+      "examples_clean": [
+        {
+          "meaning_vi": "bếp lò",
+          "example_en": "She cooked the soup on the heater.",
+          "example_vi": "Cô ấy nấu món súp trên bếp lò."
+        },
+        {
+          "meaning_vi": "bếp lò",
+          "example_en": "The old heater is still working well.",
+          "example_vi": "Chiếc bếp lò cũ vẫn hoạt động tốt."
+        },
+        {
+          "meaning_vi": "bếp lò",
+          "example_en": "He cleaned the heater after cooking dinner.",
+          "example_vi": "Anh ấy lau chùi bếp lò sau khi nấu bữa tối."
+        },
+        {
+          "meaning_vi": "bếp lò",
+          "example_en": "They bought a new heater for the kitchen.",
+          "example_vi": "Họ đã mua một chiếc bếp lò mới cho nhà bếp."
+        },
+        {
+          "meaning_vi": "lò sưởi",
+          "example_en": "Turn on the heater; I'm cold.",
+          "example_vi": "Bật lò sưởi lên; tôi đang thấy lạnh."
+        },
+        {
+          "meaning_vi": "lò sưởi",
+          "example_en": "The heater keeps the room warm all night.",
+          "example_vi": "Lò sưởi giữ cho căn phòng ấm áp suốt đêm."
+        },
+        {
+          "meaning_vi": "lò sưởi",
+          "example_en": "We need to fix the heater before winter.",
+          "example_vi": "Chúng ta cần sửa lò sưởi trước mùa đông."
+        },
+        {
+          "meaning_vi": "lò sưởi",
+          "example_en": "The heater is located in the corner of the living room.",
+          "example_vi": "Lò sưởi được đặt ở góc phòng khách."
+        },
+        {
+          "meaning_vi": "lò sưởi",
+          "example_en": "She sat near the heater to get warm.",
+          "example_vi": "Cô ấy ngồi gần lò sưởi để làm ấm người."
+        },
+        {
+          "meaning_vi": "lò sưởi",
+          "example_en": "The heater automatically turns off when the room is warm.",
+          "example_vi": "Lò sưởi tự động tắt khi căn phòng đã ấm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "heater",
+      "normalized_word": "heater",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She cooked the soup on the heater.",
+      "example_vi_clean": "Cô ấy nấu món súp trên bếp lò."
+    },
+    {
+      "id": 26290,
+      "quiz_meaning_vi": "thiên đường",
+      "meaning_vi_clean": "thiên đường; bầu trời; niềm hạnh phúc",
+      "examples_clean": [
+        {
+          "meaning_vi": "thiên đường",
+          "example_en": "They believe that good people go to heaven.",
+          "example_vi": "Họ tin rằng những người tốt sẽ lên thiên đường."
+        },
+        {
+          "meaning_vi": "thiên đường",
+          "example_en": "The island is a tropical heaven for tourists.",
+          "example_vi": "Hòn đảo này là một thiên đường nhiệt đới cho khách du lịch."
+        },
+        {
+          "meaning_vi": "thiên đường",
+          "example_en": "This garden is a little heaven on earth.",
+          "example_vi": "Khu vườn này là một thiên đường nhỏ trên mặt đất."
+        },
+        {
+          "meaning_vi": "thiên đường",
+          "example_en": "He dreams of a place that is like heaven.",
+          "example_vi": "Anh ấy mơ về một nơi giống như thiên đường."
+        },
+        {
+          "meaning_vi": "bầu trời",
+          "example_en": "The birds flew across the blue heaven.",
+          "example_vi": "Những chú chim bay ngang qua bầu trời xanh."
+        },
+        {
+          "meaning_vi": "bầu trời",
+          "example_en": "The stars shone brightly in the heaven above.",
+          "example_vi": "Những ngôi sao tỏa sáng rực rỡ trên bầu trời phía trên."
+        },
+        {
+          "meaning_vi": "bầu trời",
+          "example_en": "He looked up at the vast heaven.",
+          "example_vi": "Anh ấy nhìn lên bầu trời bao la."
+        },
+        {
+          "meaning_vi": "niềm hạnh phúc",
+          "example_en": "Being with her is pure heaven.",
+          "example_vi": "Được ở bên cô ấy là niềm hạnh phúc tuyệt vời."
+        },
+        {
+          "meaning_vi": "niềm hạnh phúc",
+          "example_en": "The vacation was absolute heaven for the family.",
+          "example_vi": "Kỳ nghỉ là niềm hạnh phúc tuyệt đối cho cả gia đình."
+        },
+        {
+          "meaning_vi": "niềm hạnh phúc",
+          "example_en": "Eating this cake is like a slice of heaven.",
+          "example_vi": "Ăn chiếc bánh này giống như một niềm hạnh phúc nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung 10 ví dụ phù hợp.",
+      "word": "heaven",
+      "normalized_word": "heaven",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They believe that good people go to heaven.",
+      "example_vi_clean": "Họ tin rằng những người tốt sẽ lên thiên đường."
+    }
+  ]
+}

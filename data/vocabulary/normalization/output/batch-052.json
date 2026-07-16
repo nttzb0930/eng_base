@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24511,
+      "quiz_meaning_vi": "gặp",
+      "meaning_vi_clean": "gặp; gặp gỡ; đáp ứng; thanh toán",
+      "examples_clean": [
+        {
+          "meaning_vi": "gặp",
+          "example_en": "I hope to meet you at the station.",
+          "example_vi": "Tôi hy vọng được gặp bạn tại nhà ga."
+        },
+        {
+          "meaning_vi": "gặp",
+          "example_en": "We met by chance in the park.",
+          "example_vi": "Chúng tôi tình cờ gặp nhau trong công viên."
+        },
+        {
+          "meaning_vi": "gặp",
+          "example_en": "Did you meet anyone interesting at the party?",
+          "example_vi": "Bạn có gặp ai thú vị ở bữa tiệc không?"
+        },
+        {
+          "meaning_vi": "gặp",
+          "example_en": "They met for the first time last year.",
+          "example_vi": "Họ gặp nhau lần đầu tiên vào năm ngoái."
+        },
+        {
+          "meaning_vi": "gặp gỡ",
+          "example_en": "The committee meets once a month.",
+          "example_vi": "Ủy ban gặp gỡ mỗi tháng một lần."
+        },
+        {
+          "meaning_vi": "gặp gỡ",
+          "example_en": "We should meet to discuss the project.",
+          "example_vi": "Chúng ta nên gặp gỡ để thảo luận về dự án."
+        },
+        {
+          "meaning_vi": "đáp ứng",
+          "example_en": "This product meets all our requirements.",
+          "example_vi": "Sản phẩm này đáp ứng mọi yêu cầu của chúng tôi."
+        },
+        {
+          "meaning_vi": "đáp ứng",
+          "example_en": "The company failed to meet the deadline.",
+          "example_vi": "Công ty đã không đáp ứng được thời hạn."
+        },
+        {
+          "meaning_vi": "thanh toán",
+          "example_en": "He struggled to meet his monthly bills.",
+          "example_vi": "Anh ấy chật vật để thanh toán các hóa đơn hàng tháng."
+        },
+        {
+          "meaning_vi": "thanh toán",
+          "example_en": "They have enough money to meet the costs.",
+          "example_vi": "Họ có đủ tiền để thanh toán các chi phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ sang động từ. Cấu trúc lại nghĩa theo từ loại động từ phổ biến nhất. Bổ sung 10 ví dụ minh họa các nghĩa chính.",
+      "word": "meet",
+      "normalized_word": "meet",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I hope to meet you at the station.",
+      "example_vi_clean": "Tôi hy vọng được gặp bạn tại nhà ga."
+    },
+    {
+      "id": 24512,
+      "quiz_meaning_vi": "cuộc họp",
+      "meaning_vi_clean": "cuộc họp; cuộc gặp gỡ",
+      "examples_clean": [
+        {
+          "meaning_vi": "cuộc họp",
+          "example_en": "We have a meeting at ten o'clock.",
+          "example_vi": "Chúng tôi có một cuộc họp lúc mười giờ."
+        },
+        {
+          "meaning_vi": "cuộc họp",
+          "example_en": "The meeting was cancelled due to bad weather.",
+          "example_vi": "Cuộc họp đã bị hủy do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "cuộc họp",
+          "example_en": "Please prepare the agenda for the meeting.",
+          "example_vi": "Vui lòng chuẩn bị chương trình nghị sự cho cuộc họp."
+        },
+        {
+          "meaning_vi": "cuộc họp",
+          "example_en": "She is currently in a meeting.",
+          "example_vi": "Cô ấy hiện đang trong một cuộc họp."
+        },
+        {
+          "meaning_vi": "cuộc gặp gỡ",
+          "example_en": "Our meeting was completely unexpected.",
+          "example_vi": "Cuộc gặp gỡ của chúng tôi hoàn toàn bất ngờ."
+        },
+        {
+          "meaning_vi": "cuộc gặp gỡ",
+          "example_en": "It was a pleasant meeting with old friends.",
+          "example_vi": "Đó là một cuộc gặp gỡ thú vị với những người bạn cũ."
+        },
+        {
+          "meaning_vi": "cuộc gặp gỡ",
+          "example_en": "They arranged a secret meeting.",
+          "example_vi": "Họ đã sắp xếp một cuộc gặp gỡ bí mật."
+        },
+        {
+          "meaning_vi": "cuộc gặp gỡ",
+          "example_en": "The meeting of the two leaders was historic.",
+          "example_vi": "Cuộc gặp gỡ của hai nhà lãnh đạo mang tính lịch sử."
+        },
+        {
+          "meaning_vi": "cuộc họp",
+          "example_en": "Everyone attended the staff meeting.",
+          "example_vi": "Mọi người đều tham dự cuộc họp nhân viên."
+        },
+        {
+          "meaning_vi": "cuộc gặp gỡ",
+          "example_en": "I look forward to our next meeting.",
+          "example_vi": "Tôi mong chờ cuộc gặp gỡ tiếp theo của chúng ta."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành 'cuộc họp' cho phù hợp với CEFR A1. Bổ sung ví dụ đầy đủ.",
+      "word": "meeting",
+      "normalized_word": "meeting",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We have a meeting at ten o'clock.",
+      "example_vi_clean": "Chúng tôi có một cuộc họp lúc mười giờ."
+    },
+    {
+      "id": 24513,
+      "quiz_meaning_vi": "trí nhớ",
+      "meaning_vi_clean": "trí nhớ; ký ức; kỷ niệm",
+      "examples_clean": [
+        {
+          "meaning_vi": "trí nhớ",
+          "example_en": "She has a very good memory for names.",
+          "example_vi": "Cô ấy có trí nhớ rất tốt về tên người."
+        },
+        {
+          "meaning_vi": "trí nhớ",
+          "example_en": "My memory is not as good as it used to be.",
+          "example_vi": "Trí nhớ của tôi không còn tốt như trước nữa."
+        },
+        {
+          "meaning_vi": "trí nhớ",
+          "example_en": "He has a photographic memory.",
+          "example_vi": "Anh ấy có trí nhớ siêu phàm."
+        },
+        {
+          "meaning_vi": "trí nhớ",
+          "example_en": "Exercise can help improve your memory.",
+          "example_vi": "Tập thể dục có thể giúp cải thiện trí nhớ của bạn."
+        },
+        {
+          "meaning_vi": "ký ức",
+          "example_en": "I have fond memories of my childhood.",
+          "example_vi": "Tôi có những ký ức đẹp về tuổi thơ của mình."
+        },
+        {
+          "meaning_vi": "ký ức",
+          "example_en": "The memory of that day still haunts me.",
+          "example_vi": "Ký ức về ngày đó vẫn ám ảnh tôi."
+        },
+        {
+          "meaning_vi": "ký ức",
+          "example_en": "It is a painful memory for her.",
+          "example_vi": "Đó là một ký ức đau buồn đối với cô ấy."
+        },
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "We keep this photo as a memory of our trip.",
+          "example_vi": "Chúng tôi giữ bức ảnh này như một kỷ niệm về chuyến đi."
+        },
+        {
+          "meaning_vi": "kỷ niệm",
+          "example_en": "The statue was built in memory of the hero.",
+          "example_vi": "Bức tượng được xây dựng để tưởng nhớ người anh hùng."
+        },
+        {
+          "meaning_vi": "trí nhớ",
+          "example_en": "Try to commit the numbers to memory.",
+          "example_vi": "Hãy cố gắng ghi nhớ những con số đó vào trí nhớ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ cho các nghĩa khác nhau.",
+      "word": "memory",
+      "normalized_word": "memory",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has a very good memory for names.",
+      "example_vi_clean": "Cô ấy có trí nhớ rất tốt về tên người."
+    },
+    {
+      "id": 24514,
+      "quiz_meaning_vi": "vui vẻ",
+      "meaning_vi_clean": "vui vẻ; thú vị",
+      "examples_clean": [
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "They had a very merry time at the party.",
+          "example_vi": "Họ đã có một khoảng thời gian rất vui vẻ tại bữa tiệc."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "Everyone was in a merry mood.",
+          "example_vi": "Mọi người đều đang trong tâm trạng vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "She has a merry laugh.",
+          "example_vi": "Cô ấy có một điệu cười vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "We wished everyone a merry Christmas.",
+          "example_vi": "Chúng tôi chúc mọi người một Giáng sinh vui vẻ."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "The children were merry and full of energy.",
+          "example_vi": "Những đứa trẻ rất vui vẻ và tràn đầy năng lượng."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "It was a merry little story.",
+          "example_vi": "Đó là một câu chuyện nhỏ thú vị."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "The play was a merry comedy.",
+          "example_vi": "Vở kịch là một vở hài kịch thú vị."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "They spent a merry afternoon in the park.",
+          "example_vi": "Họ đã dành một buổi chiều thú vị trong công viên."
+        },
+        {
+          "meaning_vi": "vui vẻ",
+          "example_en": "He is a merry person to be around.",
+          "example_vi": "Anh ấy là một người vui vẻ để ở gần."
+        },
+        {
+          "meaning_vi": "thú vị",
+          "example_en": "The music created a merry atmosphere.",
+          "example_vi": "Âm nhạc tạo ra một bầu không khí thú vị."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "merry",
+      "normalized_word": "merry",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They had a very merry time at the party.",
+      "example_vi_clean": "Họ đã có một khoảng thời gian rất vui vẻ tại bữa tiệc."
+    },
+    {
+      "id": 24515,
+      "quiz_meaning_vi": "thông điệp",
+      "meaning_vi_clean": "thông điệp; tin nhắn",
+      "examples_clean": [
+        {
+          "meaning_vi": "thông điệp",
+          "example_en": "The main message of the film is about love.",
+          "example_vi": "Thông điệp chính của bộ phim là về tình yêu."
+        },
+        {
+          "meaning_vi": "thông điệp",
+          "example_en": "He sent a message of peace to the nation.",
+          "example_vi": "Ông ấy đã gửi một thông điệp hòa bình đến quốc gia."
+        },
+        {
+          "meaning_vi": "thông điệp",
+          "example_en": "The message was clear to everyone.",
+          "example_vi": "Thông điệp đó rõ ràng với tất cả mọi người."
+        },
+        {
+          "meaning_vi": "thông điệp",
+          "example_en": "She tried to convey a message of hope.",
+          "example_vi": "Cô ấy đã cố gắng truyền tải một thông điệp hy vọng."
+        },
+        {
+          "meaning_vi": "tin nhắn",
+          "example_en": "I received a text message from him.",
+          "example_vi": "Tôi đã nhận được một tin nhắn từ anh ấy."
+        },
+        {
+          "meaning_vi": "tin nhắn",
+          "example_en": "Did you get my message?",
+          "example_vi": "Bạn có nhận được tin nhắn của tôi không?"
+        },
+        {
+          "meaning_vi": "tin nhắn",
+          "example_en": "Please leave a message after the beep.",
+          "example_vi": "Vui lòng để lại tin nhắn sau tiếng bíp."
+        },
+        {
+          "meaning_vi": "tin nhắn",
+          "example_en": "She checked her messages on her phone.",
+          "example_vi": "Cô ấy kiểm tra các tin nhắn trên điện thoại của mình."
+        },
+        {
+          "meaning_vi": "tin nhắn",
+          "example_en": "I will send you a message later.",
+          "example_vi": "Tôi sẽ gửi cho bạn một tin nhắn sau."
+        },
+        {
+          "meaning_vi": "thông điệp",
+          "example_en": "The book carries a powerful message.",
+          "example_vi": "Cuốn sách mang một thông điệp mạnh mẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang danh từ. Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "message",
+      "normalized_word": "message",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The main message of the film is about love.",
+      "example_vi_clean": "Thông điệp chính của bộ phim là về tình yêu."
+    },
+    {
+      "id": 24516,
+      "quiz_meaning_vi": "giữa",
+      "meaning_vi_clean": "giữa",
+      "examples_clean": [
+        {
+          "meaning_vi": "giữa",
+          "example_en": "He sat in the middle of the room.",
+          "example_vi": "Anh ấy ngồi ở giữa căn phòng."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "I woke up in the middle of the night.",
+          "example_vi": "Tôi thức dậy vào giữa đêm."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "The house is in the middle of the forest.",
+          "example_vi": "Ngôi nhà nằm ở giữa khu rừng."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "She stood in the middle of the crowd.",
+          "example_vi": "Cô ấy đứng ở giữa đám đông."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "The middle part of the book is boring.",
+          "example_vi": "Phần giữa của cuốn sách thì nhàm chán."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "He is in the middle of his work.",
+          "example_vi": "Anh ấy đang ở giữa công việc của mình."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "The middle lane is for fast cars.",
+          "example_vi": "Làn đường ở giữa dành cho xe chạy nhanh."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "They met in the middle of the street.",
+          "example_vi": "Họ gặp nhau ở giữa đường."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "The middle child is often the quietest.",
+          "example_vi": "Đứa con ở giữa thường là đứa trầm tính nhất."
+        },
+        {
+          "meaning_vi": "giữa",
+          "example_en": "Draw a line in the middle of the page.",
+          "example_vi": "Vẽ một đường ở giữa trang giấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ sang tính từ/danh từ. Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "middle",
+      "normalized_word": "middle",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He sat in the middle of the room.",
+      "example_vi_clean": "Anh ấy ngồi ở giữa căn phòng."
+    },
+    {
+      "id": 24517,
+      "quiz_meaning_vi": "sữa",
+      "meaning_vi_clean": "sữa",
+      "examples_clean": [
+        {
+          "meaning_vi": "sữa",
+          "example_en": "Do you want milk in your coffee?",
+          "example_vi": "Bạn có muốn thêm sữa vào cà phê không?"
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "The cat is drinking milk.",
+          "example_vi": "Con mèo đang uống sữa."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "We need to buy a carton of milk.",
+          "example_vi": "Chúng ta cần mua một hộp sữa."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "Milk is good for your bones.",
+          "example_vi": "Sữa tốt cho xương của bạn."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "She poured some milk into the bowl.",
+          "example_vi": "Cô ấy đổ một ít sữa vào bát."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "Is there any milk left in the fridge?",
+          "example_vi": "Còn sữa trong tủ lạnh không?"
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "He drinks a glass of milk every morning.",
+          "example_vi": "Anh ấy uống một ly sữa mỗi sáng."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "The baby is crying for milk.",
+          "example_vi": "Đứa bé đang khóc đòi sữa."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "Fresh milk is delivered daily.",
+          "example_vi": "Sữa tươi được giao hàng ngày."
+        },
+        {
+          "meaning_vi": "sữa",
+          "example_en": "I prefer soy milk to cow's milk.",
+          "example_vi": "Tôi thích sữa đậu nành hơn sữa bò."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ. Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "milk",
+      "normalized_word": "milk",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Do you want milk in your coffee?",
+      "example_vi_clean": "Bạn có muốn thêm sữa vào cà phê không?"
+    },
+    {
+      "id": 24518,
+      "quiz_meaning_vi": "tâm trí",
+      "meaning_vi_clean": "tâm trí; ý nghĩ; chú ý",
+      "examples_clean": [
+        {
+          "meaning_vi": "tâm trí",
+          "example_en": "His mind is always full of new ideas.",
+          "example_vi": "Tâm trí anh ấy luôn đầy ắp những ý tưởng mới."
+        },
+        {
+          "meaning_vi": "tâm trí",
+          "example_en": "She has a very sharp mind.",
+          "example_vi": "Cô ấy có một tâm trí rất nhạy bén."
+        },
+        {
+          "meaning_vi": "tâm trí",
+          "example_en": "Keep that in your mind.",
+          "example_vi": "Hãy giữ điều đó trong tâm trí bạn."
+        },
+        {
+          "meaning_vi": "tâm trí",
+          "example_en": "It was all in his mind.",
+          "example_vi": "Tất cả chỉ là trong tâm trí anh ấy."
+        },
+        {
+          "meaning_vi": "ý nghĩ",
+          "example_en": "I changed my mind about the trip.",
+          "example_vi": "Tôi đã thay đổi ý nghĩ về chuyến đi."
+        },
+        {
+          "meaning_vi": "ý nghĩ",
+          "example_en": "What is on your mind?",
+          "example_vi": "Bạn đang có ý nghĩ gì vậy?"
+        },
+        {
+          "meaning_vi": "ý nghĩ",
+          "example_en": "The thought crossed my mind.",
+          "example_vi": "Ý nghĩ đó đã thoáng qua trong đầu tôi."
+        },
+        {
+          "meaning_vi": "chú ý",
+          "example_en": "Mind the gap when you get off the train.",
+          "example_vi": "Hãy chú ý khoảng cách khi bạn xuống tàu."
+        },
+        {
+          "meaning_vi": "chú ý",
+          "example_en": "Mind your own business.",
+          "example_vi": "Hãy chú ý việc của bạn đi."
+        },
+        {
+          "meaning_vi": "tâm trí",
+          "example_en": "A healthy body makes a healthy mind.",
+          "example_vi": "Một cơ thể khỏe mạnh tạo nên một tâm trí khỏe mạnh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ sang danh từ. Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "mind",
+      "normalized_word": "mind",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His mind is always full of new ideas.",
+      "example_vi_clean": "Tâm trí anh ấy luôn đầy ắp những ý tưởng mới."
+    },
+    {
+      "id": 24519,
+      "quiz_meaning_vi": "phút",
+      "meaning_vi_clean": "phút; một lát",
+      "examples_clean": [
+        {
+          "meaning_vi": "phút",
+          "example_en": "The meeting will start in five minutes.",
+          "example_vi": "Cuộc họp sẽ bắt đầu trong năm phút nữa."
+        },
+        {
+          "meaning_vi": "phút",
+          "example_en": "It takes ten minutes to walk there.",
+          "example_vi": "Mất mười phút để đi bộ đến đó."
+        },
+        {
+          "meaning_vi": "phút",
+          "example_en": "She arrived a few minutes late.",
+          "example_vi": "Cô ấy đến trễ vài phút."
+        },
+        {
+          "meaning_vi": "phút",
+          "example_en": "The game lasts for ninety minutes.",
+          "example_vi": "Trận đấu kéo dài trong chín mươi phút."
+        },
+        {
+          "meaning_vi": "phút",
+          "example_en": "I have only a few minutes left.",
+          "example_vi": "Tôi chỉ còn vài phút nữa thôi."
+        },
+        {
+          "meaning_vi": "một lát",
+          "example_en": "Wait a minute, I will be right back.",
+          "example_vi": "Đợi một lát, tôi sẽ quay lại ngay."
+        },
+        {
+          "meaning_vi": "một lát",
+          "example_en": "Can you spare a minute?",
+          "example_vi": "Bạn có thể dành cho tôi một lát không?"
+        },
+        {
+          "meaning_vi": "một lát",
+          "example_en": "I will be ready in a minute.",
+          "example_vi": "Tôi sẽ sẵn sàng trong một lát nữa."
+        },
+        {
+          "meaning_vi": "một lát",
+          "example_en": "Just give me a minute to think.",
+          "example_vi": "Chỉ cho tôi một lát để suy nghĩ."
+        },
+        {
+          "meaning_vi": "phút",
+          "example_en": "The train leaves in twenty minutes.",
+          "example_vi": "Tàu sẽ rời đi trong hai mươi phút nữa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ sang danh từ. Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "minute",
+      "normalized_word": "minute",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The meeting will start in five minutes.",
+      "example_vi_clean": "Cuộc họp sẽ bắt đầu trong năm phút nữa."
+    },
+    {
+      "id": 24520,
+      "quiz_meaning_vi": "lỡ",
+      "meaning_vi_clean": "lỡ; bỏ lỡ; nhớ",
+      "examples_clean": [
+        {
+          "meaning_vi": "lỡ",
+          "example_en": "I missed the bus this morning.",
+          "example_vi": "Tôi đã lỡ chuyến xe buýt sáng nay."
+        },
+        {
+          "meaning_vi": "lỡ",
+          "example_en": "He missed his flight to London.",
+          "example_vi": "Anh ấy đã lỡ chuyến bay đến London."
+        },
+        {
+          "meaning_vi": "lỡ",
+          "example_en": "I missed the beginning of the movie.",
+          "example_vi": "Tôi đã lỡ phần đầu của bộ phim."
+        },
+        {
+          "meaning_vi": "bỏ lỡ",
+          "example_en": "Don't miss this great opportunity.",
+          "example_vi": "Đừng bỏ lỡ cơ hội tuyệt vời này."
+        },
+        {
+          "meaning_vi": "bỏ lỡ",
+          "example_en": "She missed the chance to win.",
+          "example_vi": "Cô ấy đã bỏ lỡ cơ hội chiến thắng."
+        },
+        {
+          "meaning_vi": "bỏ lỡ",
+          "example_en": "I missed the deadline for the application.",
+          "example_vi": "Tôi đã bỏ lỡ thời hạn nộp đơn."
+        },
+        {
+          "meaning_vi": "nhớ",
+          "example_en": "I really miss my family.",
+          "example_vi": "Tôi thực sự nhớ gia đình mình."
+        },
+        {
+          "meaning_vi": "nhớ",
+          "example_en": "Do you miss your old friends?",
+          "example_vi": "Bạn có nhớ những người bạn cũ không?"
+        },
+        {
+          "meaning_vi": "nhớ",
+          "example_en": "I miss living in the countryside.",
+          "example_vi": "Tôi nhớ cuộc sống ở vùng quê."
+        },
+        {
+          "meaning_vi": "lỡ",
+          "example_en": "He missed the target by an inch.",
+          "example_vi": "Anh ấy đã lỡ mục tiêu trong gang tấc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang động từ. Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "miss",
+      "normalized_word": "miss",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I missed the bus this morning.",
+      "example_vi_clean": "Tôi đã lỡ chuyến xe buýt sáng nay."
+    }
+  ]
+}

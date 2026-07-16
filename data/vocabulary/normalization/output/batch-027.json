@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24261,
+      "quiz_meaning_vi": "mười một",
+      "meaning_vi_clean": "mười một; số mười một",
+      "examples_clean": [
+        {
+          "meaning_vi": "mười một",
+          "example_en": "There are eleven players in a football team.",
+          "example_vi": "Có mười một cầu thủ trong một đội bóng đá."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "She has eleven books on her desk.",
+          "example_vi": "Cô ấy có mười một cuốn sách trên bàn."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "The meeting starts at eleven o'clock.",
+          "example_vi": "Cuộc họp bắt đầu lúc mười một giờ."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "He waited for eleven minutes.",
+          "example_vi": "Anh ấy đã đợi mười một phút."
+        },
+        {
+          "meaning_vi": "số mười một",
+          "example_en": "The number eleven is considered lucky by some.",
+          "example_vi": "Số mười một được một số người coi là may mắn."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "They have eleven children in their family.",
+          "example_vi": "Họ có mười một người con trong gia đình."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "I bought eleven apples at the market.",
+          "example_vi": "Tôi đã mua mười một quả táo ở chợ."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "The bus arrives at eleven thirty.",
+          "example_vi": "Xe buýt đến lúc mười một giờ ba mươi."
+        },
+        {
+          "meaning_vi": "số mười một",
+          "example_en": "Write the number eleven on the board.",
+          "example_vi": "Hãy viết số mười một lên bảng."
+        },
+        {
+          "meaning_vi": "mười một",
+          "example_en": "She is eleven years old today.",
+          "example_vi": "Hôm nay cô bé tròn mười một tuổi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ đầy đủ.",
+      "word": "eleven",
+      "normalized_word": "eleven",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi_clean": "số từ",
+      "example_en_clean": "There are eleven players in a football team.",
+      "example_vi_clean": "Có mười một cầu thủ trong một đội bóng đá."
+    },
+    {
+      "id": 24262,
+      "quiz_meaning_vi": "khác",
+      "meaning_vi_clean": "khác; nếu không",
+      "examples_clean": [
+        {
+          "meaning_vi": "khác",
+          "example_en": "Would you like anything else to drink?",
+          "example_vi": "Bạn có muốn uống gì khác không?"
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "I have nothing else to say.",
+          "example_vi": "Tôi không còn gì khác để nói."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "Is there anyone else coming to the party?",
+          "example_vi": "Có ai khác đến dự tiệc không?"
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "We need to find somewhere else to stay.",
+          "example_vi": "Chúng ta cần tìm nơi khác để ở."
+        },
+        {
+          "meaning_vi": "nếu không",
+          "example_en": "Hurry up, or else you will be late.",
+          "example_vi": "Nhanh lên, nếu không bạn sẽ bị trễ đấy."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "What else did you buy at the store?",
+          "example_vi": "Bạn đã mua gì khác ở cửa hàng vậy?"
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "Nobody else knows the secret.",
+          "example_vi": "Không có ai khác biết bí mật này."
+        },
+        {
+          "meaning_vi": "nếu không",
+          "example_en": "Eat your vegetables, or else you get no dessert.",
+          "example_vi": "Ăn rau đi, nếu không con sẽ không được ăn tráng miệng."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "Do you have any other ideas or something else?",
+          "example_vi": "Bạn có ý tưởng nào khác hay thứ gì khác không?"
+        },
+        {
+          "meaning_vi": "nếu không",
+          "example_en": "Study hard, or else you might fail the exam.",
+          "example_vi": "Hãy học chăm chỉ, nếu không bạn có thể trượt kỳ thi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa và bổ sung ví dụ.",
+      "word": "else",
+      "normalized_word": "else",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Would you like anything else to drink?",
+      "example_vi_clean": "Bạn có muốn uống gì khác không?"
+    },
+    {
+      "id": 24263,
+      "quiz_meaning_vi": "thư điện tử",
+      "meaning_vi_clean": "thư điện tử",
+      "examples_clean": [
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "I sent an e-mail to my teacher.",
+          "example_vi": "Tôi đã gửi một thư điện tử cho giáo viên của mình."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "Please check your e-mail for the update.",
+          "example_vi": "Vui lòng kiểm tra thư điện tử của bạn để xem cập nhật."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "She received an important e-mail this morning.",
+          "example_vi": "Cô ấy đã nhận được một thư điện tử quan trọng sáng nay."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "Can you reply to my e-mail soon?",
+          "example_vi": "Bạn có thể trả lời thư điện tử của tôi sớm không?"
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "He wrote an e-mail to his friend abroad.",
+          "example_vi": "Anh ấy đã viết một thư điện tử cho bạn mình ở nước ngoài."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "I forgot to attach the file to my e-mail.",
+          "example_vi": "Tôi quên đính kèm tệp vào thư điện tử của mình."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "The company sent an e-mail to all employees.",
+          "example_vi": "Công ty đã gửi một thư điện tử cho tất cả nhân viên."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "Did you get my e-mail about the meeting?",
+          "example_vi": "Bạn có nhận được thư điện tử của tôi về cuộc họp không?"
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "She spends time reading e-mail every morning.",
+          "example_vi": "Cô ấy dành thời gian đọc thư điện tử mỗi sáng."
+        },
+        {
+          "meaning_vi": "thư điện tử",
+          "example_en": "It is faster to send an e-mail than a letter.",
+          "example_vi": "Gửi thư điện tử nhanh hơn gửi thư tay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, bổ sung ví dụ.",
+      "word": "e-mail",
+      "normalized_word": "e-mail",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I sent an e-mail to my teacher.",
+      "example_vi_clean": "Tôi đã gửi một thư điện tử cho giáo viên của mình."
+    },
+    {
+      "id": 24264,
+      "quiz_meaning_vi": "sự kết thúc",
+      "meaning_vi_clean": "sự kết thúc; giới hạn; mục đích",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The movie had a happy end.",
+          "example_vi": "Bộ phim có một cái kết hạnh phúc."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "This is the end of our journey.",
+          "example_vi": "Đây là sự kết thúc của hành trình của chúng ta."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "They reached the end of the road.",
+          "example_vi": "Họ đã đi đến cuối con đường."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The end of the year is a busy time.",
+          "example_vi": "Cuối năm là thời điểm bận rộn."
+        },
+        {
+          "meaning_vi": "giới hạn",
+          "example_en": "There is no end to his patience.",
+          "example_vi": "Sự kiên nhẫn của anh ấy là không có giới hạn."
+        },
+        {
+          "meaning_vi": "giới hạn",
+          "example_en": "We must set an end to this waste.",
+          "example_vi": "Chúng ta phải đặt ra giới hạn cho sự lãng phí này."
+        },
+        {
+          "meaning_vi": "mục đích",
+          "example_en": "He will do anything to achieve his end.",
+          "example_vi": "Anh ấy sẽ làm bất cứ điều gì để đạt được mục đích của mình."
+        },
+        {
+          "meaning_vi": "sự kết thúc",
+          "example_en": "The war finally came to an end.",
+          "example_vi": "Cuộc chiến cuối cùng đã đi đến hồi kết."
+        },
+        {
+          "meaning_vi": "mục đích",
+          "example_en": "The means justify the end.",
+          "example_vi": "Phương tiện biện minh cho mục đích."
+        },
+        {
+          "meaning_vi": "giới hạn",
+          "example_en": "The budget has an end, so spend wisely.",
+          "example_vi": "Ngân sách có giới hạn, vì vậy hãy chi tiêu khôn ngoan."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lọc nghĩa phổ biến, bổ sung ví dụ.",
+      "word": "end",
+      "normalized_word": "end",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The movie had a happy end.",
+      "example_vi_clean": "Bộ phim có một cái kết hạnh phúc."
+    },
+    {
+      "id": 24265,
+      "quiz_meaning_vi": "kỹ sư",
+      "meaning_vi_clean": "kỹ sư",
+      "examples_clean": [
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "My brother is a civil engineer.",
+          "example_vi": "Anh trai tôi là một kỹ sư xây dựng."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "The engineer designed the new bridge.",
+          "example_vi": "Người kỹ sư đã thiết kế cây cầu mới."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "She works as a software engineer.",
+          "example_vi": "Cô ấy làm việc với tư cách là một kỹ sư phần mềm."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "The engineer checked the machine carefully.",
+          "example_vi": "Người kỹ sư đã kiểm tra cái máy một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "He wants to become an electrical engineer.",
+          "example_vi": "Anh ấy muốn trở thành một kỹ sư điện."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "The engineer solved the technical problem.",
+          "example_vi": "Người kỹ sư đã giải quyết vấn đề kỹ thuật."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "Many engineers work in this factory.",
+          "example_vi": "Nhiều kỹ sư làm việc trong nhà máy này."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "The engineer explained how the engine works.",
+          "example_vi": "Người kỹ sư đã giải thích cách động cơ hoạt động."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "She is a talented mechanical engineer.",
+          "example_vi": "Cô ấy là một kỹ sư cơ khí tài năng."
+        },
+        {
+          "meaning_vi": "kỹ sư",
+          "example_en": "The engineer supervised the construction project.",
+          "example_vi": "Người kỹ sư đã giám sát dự án xây dựng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS, lọc nghĩa, bổ sung ví dụ.",
+      "word": "engineer",
+      "normalized_word": "engineer",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My brother is a civil engineer.",
+      "example_vi_clean": "Anh trai tôi là một kỹ sư xây dựng."
+    },
+    {
+      "id": 24266,
+      "quiz_meaning_vi": "thích thú",
+      "meaning_vi_clean": "thích thú; được hưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "I enjoy reading books in my free time.",
+          "example_vi": "Tôi thích đọc sách vào thời gian rảnh."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "We really enjoyed the concert last night.",
+          "example_vi": "Chúng tôi thực sự thích buổi hòa nhạc tối qua."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "Do you enjoy playing tennis?",
+          "example_vi": "Bạn có thích chơi quần vợt không?"
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "She enjoys spending time with her family.",
+          "example_vi": "Cô ấy thích dành thời gian cho gia đình."
+        },
+        {
+          "meaning_vi": "được hưởng",
+          "example_en": "He enjoys a good reputation in the community.",
+          "example_vi": "Anh ấy được hưởng danh tiếng tốt trong cộng đồng."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "They enjoyed a delicious meal together.",
+          "example_vi": "Họ đã thưởng thức một bữa ăn ngon cùng nhau."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "I enjoy listening to classical music.",
+          "example_vi": "Tôi thích nghe nhạc cổ điển."
+        },
+        {
+          "meaning_vi": "được hưởng",
+          "example_en": "She enjoys the benefits of her hard work.",
+          "example_vi": "Cô ấy được hưởng những lợi ích từ sự chăm chỉ của mình."
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "Did you enjoy your vacation?",
+          "example_vi": "Bạn có thích kỳ nghỉ của mình không?"
+        },
+        {
+          "meaning_vi": "thích thú",
+          "example_en": "He enjoys helping others solve problems.",
+          "example_vi": "Anh ấy thích giúp người khác giải quyết vấn đề."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa, bổ sung ví dụ.",
+      "word": "enjoy",
+      "normalized_word": "enjoy",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I enjoy reading books in my free time.",
+      "example_vi_clean": "Tôi thích đọc sách vào thời gian rảnh."
+    },
+    {
+      "id": 24267,
+      "quiz_meaning_vi": "buổi chiều",
+      "meaning_vi_clean": "buổi chiều; buổi tối",
+      "examples_clean": [
+        {
+          "meaning_vi": "buổi chiều",
+          "example_en": "I usually go for a walk in the evening.",
+          "example_vi": "Tôi thường đi dạo vào buổi chiều tối."
+        },
+        {
+          "meaning_vi": "buổi chiều",
+          "example_en": "We have a meeting this evening.",
+          "example_vi": "Chúng tôi có một cuộc họp vào buổi chiều tối nay."
+        },
+        {
+          "meaning_vi": "buổi chiều",
+          "example_en": "The sun sets in the evening.",
+          "example_vi": "Mặt trời lặn vào buổi chiều tối."
+        },
+        {
+          "meaning_vi": "buổi chiều",
+          "example_en": "She studies English every evening.",
+          "example_vi": "Cô ấy học tiếng Anh mỗi buổi chiều tối."
+        },
+        {
+          "meaning_vi": "buổi tối",
+          "example_en": "What are you doing this evening?",
+          "example_vi": "Bạn đang làm gì vào buổi tối nay?"
+        },
+        {
+          "meaning_vi": "buổi tối",
+          "example_en": "They had a nice dinner in the evening.",
+          "example_vi": "Họ đã có một bữa tối ngon lành vào buổi tối."
+        },
+        {
+          "meaning_vi": "buổi tối",
+          "example_en": "The evening air is very cool.",
+          "example_vi": "Không khí buổi tối rất mát mẻ."
+        },
+        {
+          "meaning_vi": "buổi tối",
+          "example_en": "I like to read before I go to sleep in the evening.",
+          "example_vi": "Tôi thích đọc sách trước khi đi ngủ vào buổi tối."
+        },
+        {
+          "meaning_vi": "buổi chiều",
+          "example_en": "The sky looks beautiful in the late evening.",
+          "example_vi": "Bầu trời trông rất đẹp vào cuối buổi chiều."
+        },
+        {
+          "meaning_vi": "buổi tối",
+          "example_en": "We watched a movie together in the evening.",
+          "example_vi": "Chúng tôi đã xem một bộ phim cùng nhau vào buổi tối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "evening",
+      "normalized_word": "evening",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I usually go for a walk in the evening.",
+      "example_vi_clean": "Tôi thường đi dạo vào buổi chiều tối."
+    },
+    {
+      "id": 24268,
+      "quiz_meaning_vi": "sự việc",
+      "meaning_vi_clean": "sự việc; sự kiện",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự việc",
+          "example_en": "The event changed his life forever.",
+          "example_vi": "Sự việc đó đã thay đổi cuộc đời anh ấy mãi mãi."
+        },
+        {
+          "meaning_vi": "sự việc",
+          "example_en": "It was a strange event that no one could explain.",
+          "example_vi": "Đó là một sự việc kỳ lạ mà không ai có thể giải thích."
+        },
+        {
+          "meaning_vi": "sự việc",
+          "example_en": "We should learn from this event.",
+          "example_vi": "Chúng ta nên học hỏi từ sự việc này."
+        },
+        {
+          "meaning_vi": "sự việc",
+          "example_en": "The event was reported in the news.",
+          "example_vi": "Sự việc đã được đưa tin trên bản tin."
+        },
+        {
+          "meaning_vi": "sự kiện",
+          "example_en": "The charity event was a great success.",
+          "example_vi": "Sự kiện từ thiện đã thành công rực rỡ."
+        },
+        {
+          "meaning_vi": "sự kiện",
+          "example_en": "Are you going to the sports event?",
+          "example_vi": "Bạn có định đi xem sự kiện thể thao không?"
+        },
+        {
+          "meaning_vi": "sự kiện",
+          "example_en": "The school is hosting a special event.",
+          "example_vi": "Trường học đang tổ chức một sự kiện đặc biệt."
+        },
+        {
+          "meaning_vi": "sự kiện",
+          "example_en": "She is planning the event for next month.",
+          "example_vi": "Cô ấy đang lên kế hoạch cho sự kiện vào tháng tới."
+        },
+        {
+          "meaning_vi": "sự kiện",
+          "example_en": "Many people attended the cultural event.",
+          "example_vi": "Nhiều người đã tham dự sự kiện văn hóa."
+        },
+        {
+          "meaning_vi": "sự việc",
+          "example_en": "In any event, we must be prepared.",
+          "example_vi": "Dù trong bất kỳ sự việc nào, chúng ta cũng phải chuẩn bị sẵn sàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "event",
+      "normalized_word": "event",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The event changed his life forever.",
+      "example_vi_clean": "Sự việc đó đã thay đổi cuộc đời anh ấy mãi mãi."
+    },
+    {
+      "id": 24269,
+      "quiz_meaning_vi": "mỗi",
+      "meaning_vi_clean": "mỗi; mọi",
+      "examples_clean": [
+        {
+          "meaning_vi": "mỗi",
+          "example_en": "Every student has a book.",
+          "example_vi": "Mỗi học sinh đều có một cuốn sách."
+        },
+        {
+          "meaning_vi": "mỗi",
+          "example_en": "I go to the gym every day.",
+          "example_vi": "Tôi đi tập thể dục mỗi ngày."
+        },
+        {
+          "meaning_vi": "mỗi",
+          "example_en": "Every person needs water to live.",
+          "example_vi": "Mỗi người đều cần nước để sống."
+        },
+        {
+          "meaning_vi": "mỗi",
+          "example_en": "She checks her phone every hour.",
+          "example_vi": "Cô ấy kiểm tra điện thoại mỗi giờ."
+        },
+        {
+          "meaning_vi": "mọi",
+          "example_en": "Every child likes to play.",
+          "example_vi": "Mọi đứa trẻ đều thích chơi đùa."
+        },
+        {
+          "meaning_vi": "mọi",
+          "example_en": "Every room in the house is clean.",
+          "example_vi": "Mọi căn phòng trong nhà đều sạch sẽ."
+        },
+        {
+          "meaning_vi": "mọi",
+          "example_en": "He knows every street in this city.",
+          "example_vi": "Anh ấy biết mọi con phố trong thành phố này."
+        },
+        {
+          "meaning_vi": "mỗi",
+          "example_en": "Every member of the team worked hard.",
+          "example_vi": "Mỗi thành viên trong đội đều làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "mọi",
+          "example_en": "Every detail is important.",
+          "example_vi": "Mọi chi tiết đều quan trọng."
+        },
+        {
+          "meaning_vi": "mỗi",
+          "example_en": "I visit my parents every weekend.",
+          "example_vi": "Tôi thăm bố mẹ mỗi cuối tuần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "every",
+      "normalized_word": "every",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "Every student has a book.",
+      "example_vi_clean": "Mỗi học sinh đều có một cuốn sách."
+    },
+    {
+      "id": 24270,
+      "quiz_meaning_vi": "mọi người",
+      "meaning_vi_clean": "mọi người",
+      "examples_clean": [
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody is ready to go.",
+          "example_vi": "Mọi người đã sẵn sàng để đi."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody likes him.",
+          "example_vi": "Mọi người đều quý mến anh ấy."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "I want everybody to listen carefully.",
+          "example_vi": "Tôi muốn mọi người lắng nghe cẩn thận."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody was surprised by the news.",
+          "example_vi": "Mọi người đều ngạc nhiên trước tin tức đó."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Is everybody here today?",
+          "example_vi": "Hôm nay mọi người có mặt đông đủ không?"
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody needs a friend.",
+          "example_vi": "Mọi người đều cần một người bạn."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody enjoyed the party.",
+          "example_vi": "Mọi người đều thích bữa tiệc."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody knows the answer to this question.",
+          "example_vi": "Mọi người đều biết câu trả lời cho câu hỏi này."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody should follow the rules.",
+          "example_vi": "Mọi người nên tuân thủ các quy tắc."
+        },
+        {
+          "meaning_vi": "mọi người",
+          "example_en": "Everybody laughed at the joke.",
+          "example_vi": "Mọi người đều cười vì câu chuyện đùa đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa, bổ sung ví dụ.",
+      "word": "everybody",
+      "normalized_word": "everybody",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi_clean": "đại từ",
+      "example_en_clean": "Everybody is ready to go.",
+      "example_vi_clean": "Mọi người đã sẵn sàng để đi."
+    }
+  ]
+}

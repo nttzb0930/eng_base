@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24581,
+      "quiz_meaning_vi": "một",
+      "meaning_vi_clean": "một; một người nào đó; người ta",
+      "examples_clean": [
+        {
+          "meaning_vi": "một",
+          "example_en": "I have only one brother.",
+          "example_vi": "Tôi chỉ có một người anh trai."
+        },
+        {
+          "meaning_vi": "một",
+          "example_en": "She bought one apple at the market.",
+          "example_vi": "Cô ấy đã mua một quả táo ở chợ."
+        },
+        {
+          "meaning_vi": "một",
+          "example_en": "One day, we will travel the world.",
+          "example_vi": "Một ngày nào đó, chúng ta sẽ đi du lịch khắp thế giới."
+        },
+        {
+          "meaning_vi": "một",
+          "example_en": "He is one of my best friends.",
+          "example_vi": "Anh ấy là một trong những người bạn thân nhất của tôi."
+        },
+        {
+          "meaning_vi": "một người nào đó",
+          "example_en": "One should always be kind to others.",
+          "example_vi": "Một người nên luôn tử tế với người khác."
+        },
+        {
+          "meaning_vi": "một người nào đó",
+          "example_en": "If one wants to succeed, one must work hard.",
+          "example_vi": "Nếu một người muốn thành công, người đó phải làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "người ta",
+          "example_en": "One never knows what might happen tomorrow.",
+          "example_vi": "Người ta không bao giờ biết điều gì có thể xảy ra vào ngày mai."
+        },
+        {
+          "meaning_vi": "người ta",
+          "example_en": "One can see the mountains from here.",
+          "example_vi": "Người ta có thể nhìn thấy những ngọn núi từ đây."
+        },
+        {
+          "meaning_vi": "một",
+          "example_en": "I need one more pen to finish my work.",
+          "example_vi": "Tôi cần thêm một chiếc bút nữa để hoàn thành công việc."
+        },
+        {
+          "meaning_vi": "một",
+          "example_en": "She is the one who helped me yesterday.",
+          "example_vi": "Cô ấy là người đã giúp tôi ngày hôm qua."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ loại danh từ/đại từ, loại bỏ các nghĩa không phù hợp CEFR A1, bổ sung ví dụ chuẩn.",
+      "word": "one",
+      "normalized_word": "one",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "I have only one brother.",
+      "example_vi_clean": "Tôi chỉ có một người anh trai."
+    },
+    {
+      "id": 24582,
+      "quiz_meaning_vi": "chỉ có một",
+      "meaning_vi_clean": "chỉ có một; duy nhất; chỉ",
+      "examples_clean": [
+        {
+          "meaning_vi": "chỉ có một",
+          "example_en": "He is the only child in his family.",
+          "example_vi": "Anh ấy là con một trong gia đình."
+        },
+        {
+          "meaning_vi": "chỉ có một",
+          "example_en": "This is the only way to solve the problem.",
+          "example_vi": "Đây là cách duy nhất để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "chỉ có một",
+          "example_en": "There is only one seat left on the bus.",
+          "example_vi": "Chỉ còn một chỗ ngồi trên xe buýt."
+        },
+        {
+          "meaning_vi": "chỉ có một",
+          "example_en": "She is the only person who knows the secret.",
+          "example_vi": "Cô ấy là người duy nhất biết bí mật này."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "The only reason I came was to see you.",
+          "example_vi": "Lý do duy nhất tôi đến là để gặp bạn."
+        },
+        {
+          "meaning_vi": "duy nhất",
+          "example_en": "It was the only book I had with me.",
+          "example_vi": "Đó là cuốn sách duy nhất tôi mang theo."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "I only want a glass of water.",
+          "example_vi": "Tôi chỉ muốn một cốc nước."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "He only arrived a few minutes ago.",
+          "example_vi": "Anh ấy chỉ mới đến vài phút trước."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "They only have two hours to finish the test.",
+          "example_vi": "Họ chỉ có hai giờ để hoàn thành bài kiểm tra."
+        },
+        {
+          "meaning_vi": "chỉ",
+          "example_en": "I only speak a little bit of French.",
+          "example_vi": "Tôi chỉ nói được một chút tiếng Pháp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ liên từ sang tính từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "only",
+      "normalized_word": "only",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is the only child in his family.",
+      "example_vi_clean": "Anh ấy là con một trong gia đình."
+    },
+    {
+      "id": 24583,
+      "quiz_meaning_vi": "mở",
+      "meaning_vi_clean": "mở; cởi mở; trống",
+      "examples_clean": [
+        {
+          "meaning_vi": "mở",
+          "example_en": "The shop is open until nine o'clock.",
+          "example_vi": "Cửa hàng mở cửa đến chín giờ."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "Please keep the window open for fresh air.",
+          "example_vi": "Vui lòng giữ cửa sổ mở để có không khí trong lành."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The door was wide open when I arrived.",
+          "example_vi": "Cánh cửa mở toang khi tôi đến."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "Is the library open on Sundays?",
+          "example_vi": "Thư viện có mở cửa vào Chủ nhật không?"
+        },
+        {
+          "meaning_vi": "cởi mở",
+          "example_en": "She is very open about her feelings.",
+          "example_vi": "Cô ấy rất cởi mở về cảm xúc của mình."
+        },
+        {
+          "meaning_vi": "cởi mở",
+          "example_en": "We had an open discussion about the plan.",
+          "example_vi": "Chúng tôi đã có một cuộc thảo luận cởi mở về kế hoạch."
+        },
+        {
+          "meaning_vi": "trống",
+          "example_en": "They played football in the open field.",
+          "example_vi": "Họ chơi bóng đá trên cánh đồng trống."
+        },
+        {
+          "meaning_vi": "trống",
+          "example_en": "The road ahead was open and clear.",
+          "example_vi": "Con đường phía trước trống trải và thông thoáng."
+        },
+        {
+          "meaning_vi": "mở",
+          "example_en": "The bottle is open, so be careful.",
+          "example_vi": "Cái chai đã mở rồi, nên hãy cẩn thận."
+        },
+        {
+          "meaning_vi": "cởi mở",
+          "example_en": "He has an open mind to new ideas.",
+          "example_vi": "Anh ấy có tư duy cởi mở với những ý tưởng mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ nội động từ sang tính từ, lọc nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "open",
+      "normalized_word": "open",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The shop is open until nine o'clock.",
+      "example_vi_clean": "Cửa hàng mở cửa đến chín giờ."
+    },
+    {
+      "id": 24584,
+      "quiz_meaning_vi": "Opêra",
+      "meaning_vi_clean": "Opêra",
+      "examples_clean": [
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "We went to the opera last night.",
+          "example_vi": "Chúng tôi đã đi xem opêra tối qua."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "She loves listening to classical opera.",
+          "example_vi": "Cô ấy thích nghe nhạc opêra cổ điển."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "The opera house is a beautiful building.",
+          "example_vi": "Nhà hát opêra là một tòa nhà đẹp."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "He is a famous opera singer.",
+          "example_vi": "Anh ấy là một ca sĩ opêra nổi tiếng."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "They are performing a new opera tonight.",
+          "example_vi": "Họ đang biểu diễn một vở opêra mới tối nay."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "I have never seen an opera before.",
+          "example_vi": "Tôi chưa bao giờ xem opêra trước đây."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "The opera was written in the 19th century.",
+          "example_vi": "Vở opêra này được viết vào thế kỷ 19."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "She bought tickets for the opera.",
+          "example_vi": "Cô ấy đã mua vé xem opêra."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "The opera performance lasted three hours.",
+          "example_vi": "Buổi biểu diễn opêra kéo dài ba giờ."
+        },
+        {
+          "meaning_vi": "Opêra",
+          "example_en": "He enjoys the drama of the opera.",
+          "example_vi": "Anh ấy thích sự kịch tính của opêra."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "opera",
+      "normalized_word": "opera",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We went to the opera last night.",
+      "example_vi_clean": "Chúng tôi đã đi xem opêra tối qua."
+    },
+    {
+      "id": 24585,
+      "quiz_meaning_vi": "hoặc",
+      "meaning_vi_clean": "hoặc; hay là",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "Would you like tea or coffee?",
+          "example_vi": "Bạn muốn dùng trà hay cà phê?"
+        },
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "You can go by bus or by train.",
+          "example_vi": "Bạn có thể đi bằng xe buýt hoặc tàu hỏa."
+        },
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "Is it red or blue?",
+          "example_vi": "Nó màu đỏ hay màu xanh?"
+        },
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "We can meet today or tomorrow.",
+          "example_vi": "Chúng ta có thể gặp nhau hôm nay hoặc ngày mai."
+        },
+        {
+          "meaning_vi": "hay là",
+          "example_en": "Should I stay or should I go?",
+          "example_vi": "Tôi nên ở lại hay là nên đi?"
+        },
+        {
+          "meaning_vi": "hay là",
+          "example_en": "Do you want to eat now or later?",
+          "example_vi": "Bạn muốn ăn bây giờ hay là lát nữa?"
+        },
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "You can call me or send an email.",
+          "example_vi": "Bạn có thể gọi cho tôi hoặc gửi email."
+        },
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "It is either true or false.",
+          "example_vi": "Nó hoặc là đúng hoặc là sai."
+        },
+        {
+          "meaning_vi": "hay là",
+          "example_en": "Are you tired or are you hungry?",
+          "example_vi": "Bạn đang mệt hay là đang đói?"
+        },
+        {
+          "meaning_vi": "hoặc",
+          "example_en": "Choose a book or a magazine.",
+          "example_vi": "Hãy chọn một cuốn sách hoặc một tạp chí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ nghĩa sai (vàng), chuẩn hóa nghĩa liên từ và bổ sung ví dụ.",
+      "word": "or",
+      "normalized_word": "or",
+      "cefr_level": "A1",
+      "pos": "conjunction",
+      "pos_vi_clean": "liên từ",
+      "example_en_clean": "Would you like tea or coffee?",
+      "example_vi_clean": "Bạn muốn dùng trà hay cà phê?"
+    },
+    {
+      "id": 24586,
+      "quiz_meaning_vi": "quả cam",
+      "meaning_vi_clean": "quả cam; màu da cam",
+      "examples_clean": [
+        {
+          "meaning_vi": "quả cam",
+          "example_en": "I ate an orange for breakfast.",
+          "example_vi": "Tôi đã ăn một quả cam vào bữa sáng."
+        },
+        {
+          "meaning_vi": "quả cam",
+          "example_en": "She drank a glass of orange juice.",
+          "example_vi": "Cô ấy đã uống một ly nước cam."
+        },
+        {
+          "meaning_vi": "quả cam",
+          "example_en": "These oranges are very sweet.",
+          "example_vi": "Những quả cam này rất ngọt."
+        },
+        {
+          "meaning_vi": "quả cam",
+          "example_en": "He peeled the orange carefully.",
+          "example_vi": "Anh ấy bóc vỏ quả cam một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "màu da cam",
+          "example_en": "Her favorite color is orange.",
+          "example_vi": "Màu yêu thích của cô ấy là màu da cam."
+        },
+        {
+          "meaning_vi": "màu da cam",
+          "example_en": "The sunset turned the sky orange.",
+          "example_vi": "Hoàng hôn làm bầu trời chuyển sang màu da cam."
+        },
+        {
+          "meaning_vi": "màu da cam",
+          "example_en": "He wore an orange shirt today.",
+          "example_vi": "Hôm nay anh ấy mặc một chiếc áo màu da cam."
+        },
+        {
+          "meaning_vi": "quả cam",
+          "example_en": "Would you like an orange?",
+          "example_vi": "Bạn có muốn một quả cam không?"
+        },
+        {
+          "meaning_vi": "màu da cam",
+          "example_en": "The flowers are bright orange.",
+          "example_vi": "Những bông hoa có màu da cam rực rỡ."
+        },
+        {
+          "meaning_vi": "quả cam",
+          "example_en": "She bought a bag of oranges.",
+          "example_vi": "Cô ấy đã mua một túi cam."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ tính từ sang danh từ/tính từ, loại bỏ nghĩa bóng không phù hợp, bổ sung ví dụ.",
+      "word": "orange",
+      "normalized_word": "orange",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I ate an orange for breakfast.",
+      "example_vi_clean": "Tôi đã ăn một quả cam vào bữa sáng."
+    },
+    {
+      "id": 24587,
+      "quiz_meaning_vi": "thứ tự",
+      "meaning_vi_clean": "thứ tự; mệnh lệnh; sự đặt hàng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thứ tự",
+          "example_en": "Please put the books in alphabetical order.",
+          "example_vi": "Vui lòng sắp xếp các cuốn sách theo thứ tự bảng chữ cái."
+        },
+        {
+          "meaning_vi": "thứ tự",
+          "example_en": "The events happened in that order.",
+          "example_vi": "Các sự kiện đã xảy ra theo thứ tự đó."
+        },
+        {
+          "meaning_vi": "thứ tự",
+          "example_en": "Everything is in perfect order.",
+          "example_vi": "Mọi thứ đều theo đúng thứ tự."
+        },
+        {
+          "meaning_vi": "thứ tự",
+          "example_en": "He listed the names in order of age.",
+          "example_vi": "Anh ấy liệt kê tên theo thứ tự tuổi tác."
+        },
+        {
+          "meaning_vi": "mệnh lệnh",
+          "example_en": "The soldiers followed the order.",
+          "example_vi": "Những người lính đã tuân theo mệnh lệnh."
+        },
+        {
+          "meaning_vi": "mệnh lệnh",
+          "example_en": "He gave an order to stop.",
+          "example_vi": "Anh ấy đã đưa ra mệnh lệnh dừng lại."
+        },
+        {
+          "meaning_vi": "sự đặt hàng",
+          "example_en": "I placed an order for a new computer.",
+          "example_vi": "Tôi đã đặt hàng một chiếc máy tính mới."
+        },
+        {
+          "meaning_vi": "sự đặt hàng",
+          "example_en": "Your order will arrive tomorrow.",
+          "example_vi": "Đơn đặt hàng của bạn sẽ đến vào ngày mai."
+        },
+        {
+          "meaning_vi": "mệnh lệnh",
+          "example_en": "They must obey the captain's order.",
+          "example_vi": "Họ phải tuân theo mệnh lệnh của thuyền trưởng."
+        },
+        {
+          "meaning_vi": "sự đặt hàng",
+          "example_en": "Can I take your order now?",
+          "example_vi": "Tôi có thể nhận đơn đặt hàng của bạn bây giờ không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ ngoại động từ sang danh từ, lọc nghĩa phổ biến và bổ sung ví dụ.",
+      "word": "order",
+      "normalized_word": "order",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Please put the books in alphabetical order.",
+      "example_vi_clean": "Vui lòng sắp xếp các cuốn sách theo thứ tự bảng chữ cái."
+    },
+    {
+      "id": 24588,
+      "quiz_meaning_vi": "khác",
+      "meaning_vi_clean": "khác; kia",
+      "examples_clean": [
+        {
+          "meaning_vi": "khác",
+          "example_en": "Do you have any other questions?",
+          "example_vi": "Bạn có câu hỏi nào khác không?"
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "I have other things to do today.",
+          "example_vi": "Tôi có những việc khác phải làm hôm nay."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "Some people like tea, others like coffee.",
+          "example_vi": "Một số người thích trà, những người khác thích cà phê."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "She chose another path, not this one.",
+          "example_vi": "Cô ấy đã chọn một con đường khác, không phải con đường này."
+        },
+        {
+          "meaning_vi": "kia",
+          "example_en": "On the other side of the street, there is a park.",
+          "example_vi": "Ở phía bên kia đường, có một công viên."
+        },
+        {
+          "meaning_vi": "kia",
+          "example_en": "He held the bag in his other hand.",
+          "example_vi": "Anh ấy cầm chiếc túi ở bàn tay kia."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "We need to find other ways to help.",
+          "example_vi": "Chúng ta cần tìm những cách khác để giúp đỡ."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "Are there any other students coming?",
+          "example_vi": "Có học sinh nào khác sẽ đến không?"
+        },
+        {
+          "meaning_vi": "kia",
+          "example_en": "Look at the other building over there.",
+          "example_vi": "Hãy nhìn tòa nhà kia ở đằng kia."
+        },
+        {
+          "meaning_vi": "khác",
+          "example_en": "I have no other choice.",
+          "example_vi": "Tôi không còn lựa chọn nào khác."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ phó từ sang hạn định từ, chuẩn hóa nghĩa và ví dụ.",
+      "word": "other",
+      "normalized_word": "other",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "Do you have any other questions?",
+      "example_vi_clean": "Bạn có câu hỏi nào khác không?"
+    },
+    {
+      "id": 24589,
+      "quiz_meaning_vi": "của chúng ta",
+      "meaning_vi_clean": "của chúng ta; của chúng tôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "của chúng ta",
+          "example_en": "This is our house.",
+          "example_vi": "Đây là ngôi nhà của chúng ta."
+        },
+        {
+          "meaning_vi": "của chúng ta",
+          "example_en": "Our teacher is very kind.",
+          "example_vi": "Giáo viên của chúng ta rất tốt bụng."
+        },
+        {
+          "meaning_vi": "của chúng ta",
+          "example_en": "We love our country.",
+          "example_vi": "Chúng ta yêu đất nước của chúng ta."
+        },
+        {
+          "meaning_vi": "của chúng ta",
+          "example_en": "Our team won the game.",
+          "example_vi": "Đội của chúng ta đã thắng trận đấu."
+        },
+        {
+          "meaning_vi": "của chúng tôi",
+          "example_en": "Our office is in the city center.",
+          "example_vi": "Văn phòng của chúng tôi ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "của chúng tôi",
+          "example_en": "Our parents are coming to visit.",
+          "example_vi": "Cha mẹ của chúng tôi sắp đến thăm."
+        },
+        {
+          "meaning_vi": "của chúng tôi",
+          "example_en": "Our car broke down yesterday.",
+          "example_vi": "Xe của chúng tôi bị hỏng ngày hôm qua."
+        },
+        {
+          "meaning_vi": "của chúng tôi",
+          "example_en": "Our dog is very friendly.",
+          "example_vi": "Con chó của chúng tôi rất thân thiện."
+        },
+        {
+          "meaning_vi": "của chúng ta",
+          "example_en": "Our future depends on what we do now.",
+          "example_vi": "Tương lai của chúng ta phụ thuộc vào những gì chúng ta làm bây giờ."
+        },
+        {
+          "meaning_vi": "của chúng tôi",
+          "example_en": "Our project is almost finished.",
+          "example_vi": "Dự án của chúng tôi gần như đã hoàn thành."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ tính từ sở hữu, loại bỏ nghĩa tôn giáo/cổ, bổ sung ví dụ.",
+      "word": "our",
+      "normalized_word": "our",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "This is our house.",
+      "example_vi_clean": "Đây là ngôi nhà của chúng ta."
+    },
+    {
+      "id": 24590,
+      "quiz_meaning_vi": "cái của chúng ta",
+      "meaning_vi_clean": "cái của chúng ta; cái của chúng tôi",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái của chúng ta",
+          "example_en": "This house is ours.",
+          "example_vi": "Ngôi nhà này là của chúng ta."
+        },
+        {
+          "meaning_vi": "cái của chúng ta",
+          "example_en": "The victory is ours.",
+          "example_vi": "Chiến thắng là của chúng ta."
+        },
+        {
+          "meaning_vi": "cái của chúng ta",
+          "example_en": "Is this book yours or ours?",
+          "example_vi": "Cuốn sách này là của bạn hay của chúng ta?"
+        },
+        {
+          "meaning_vi": "cái của chúng ta",
+          "example_en": "The responsibility is ours.",
+          "example_vi": "Trách nhiệm là của chúng ta."
+        },
+        {
+          "meaning_vi": "cái của chúng tôi",
+          "example_en": "Their car is red, but ours is blue.",
+          "example_vi": "Xe của họ màu đỏ, nhưng xe của chúng tôi màu xanh."
+        },
+        {
+          "meaning_vi": "cái của chúng tôi",
+          "example_en": "Our garden is bigger than ours.",
+          "example_vi": "Vườn của họ lớn hơn vườn của chúng tôi."
+        },
+        {
+          "meaning_vi": "cái của chúng tôi",
+          "example_en": "They have their own ideas, and we have ours.",
+          "example_vi": "Họ có ý tưởng của họ, và chúng tôi có ý tưởng của chúng tôi."
+        },
+        {
+          "meaning_vi": "cái của chúng tôi",
+          "example_en": "The decision was ours to make.",
+          "example_vi": "Quyết định đó là của chúng tôi."
+        },
+        {
+          "meaning_vi": "cái của chúng ta",
+          "example_en": "The future is ours to shape.",
+          "example_vi": "Tương lai là của chúng ta để định hình."
+        },
+        {
+          "meaning_vi": "cái của chúng tôi",
+          "example_en": "Their house is old, but ours is new.",
+          "example_vi": "Nhà của họ cũ, nhưng nhà của chúng tôi mới."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa từ loại từ đại từ sở hữu, loại bỏ nghĩa quân đội, bổ sung ví dụ.",
+      "word": "ours",
+      "normalized_word": "ours",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi_clean": "đại từ",
+      "example_en_clean": "This house is ours.",
+      "example_vi_clean": "Ngôi nhà này là của chúng ta."
+    }
+  ]
+}

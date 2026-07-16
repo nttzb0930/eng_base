@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-056",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24551,
+      "word": "new",
+      "normalized_word": "new",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "phó từ",
+      "phonetic": "/nju:/",
+      "primary_meaning_vi": "mới",
+      "meaning_vi": "mới, mới mẻ, mới lạ; khác hẳn; tân tiến, tân thời, hiện đại; mới nổi (gia đình, người); mới từ (nơi nào đến); chưa quen; leaf; mới ((thường) trong từ ghép)",
+      "example_en": "Out with the old, in with the new.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This is a new scratch on my car! The band just released a new album.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We turned up some new evidence from the old files.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My new car is much better than my previous one, even though it is older. We had been in our new house for five years by then.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24552,
+      "word": "news",
+      "normalized_word": "news",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều dùng như số ít",
+      "phonetic": "/nju:z/",
+      "primary_meaning_vi": "tin",
+      "meaning_vi": "tin, tin tức",
+      "example_en": "Is there any news about the storm?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Did you hear/read/see the latest news?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24553,
+      "word": "newspaper",
+      "normalized_word": "newspaper",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nju:z,peipə/",
+      "primary_meaning_vi": "báo",
+      "meaning_vi": "báo",
+      "example_en": "She newspapered one end of the room before painting the bookcase.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He newspapered his way through the South on the sports beat, avoiding dry towns.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was newspapered out of public life.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24554,
+      "word": "nice",
+      "normalized_word": "nice",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/nais/",
+      "primary_meaning_vi": "thú vị",
+      "meaning_vi": "thú vị, dễ chịu; tốt, hấp dẫn; xinh đẹp; ngoan; tốt, tử tế, chu đáo; tỉ mỉ, câu nệ; khó tính, khảnh, cầu kỳ; sành sỏi, tế nhị, tinh vi, kỹ; hay ho; chính xác (cân)",
+      "example_en": "What is a nice person like you doing in a place like this?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The soup is nice and hot.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Children, play nice.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Nice! I couldn't have done better.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24555,
+      "word": "night",
+      "normalized_word": "night",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/nait/",
+      "primary_meaning_vi": "đêm",
+      "meaning_vi": "đêm, tối, cảnh tối tăm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24556,
+      "word": "nine",
+      "normalized_word": "nine",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi": "danh từ",
+      "phonetic": "/nain/",
+      "primary_meaning_vi": "chín",
+      "meaning_vi": "chín; cái kỳ lạ nhất thời; số chín; quân chín; ,  (thể dục,thể thao) đội bóng chín người; (thần thoại,thần học) chín nàng thơ; tâng bốc ai đến tận mây xanh, tán dương ai hết lời; dress",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24557,
+      "word": "nineteen",
+      "normalized_word": "nineteen",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nain'ti:n/",
+      "primary_meaning_vi": "mười chín",
+      "meaning_vi": "mười chín; số mười chín; dozen",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24558,
+      "word": "ninety",
+      "normalized_word": "ninety",
+      "cefr_level": "A1",
+      "pos": "number",
+      "pos_vi": "danh từ",
+      "phonetic": "/'nainti/",
+      "primary_meaning_vi": "chín mươi",
+      "meaning_vi": "chín mươi; số chín mươi; (the nineties) những năm 90 (từ 90 đến 99 của thế kỷ); những năm tuổi trên 90 (từ 90 đến 99)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24559,
+      "word": "no",
+      "normalized_word": "no",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "danh từ,  số nhiều noes",
+      "phonetic": "/nou/",
+      "primary_meaning_vi": "không",
+      "meaning_vi": "không; lời từ chối, lời nói \"không\" ; không; phiếu chống; người bỏ phiếu chống",
+      "example_en": "The workers voted on whether to strike, and there were thirty \"yeses\" and two \"nos\".",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I just want to find out whether she's coming or no. (Scotland)",
+          "example_vi": null
+        },
+        {
+          "example_en": "He ran to the edge of the swimming pool and dived in.",
+          "example_vi": null
+        },
+        {
+          "example_en": "For six hours the tide flows in, then for another six hours it flows out.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24560,
+      "word": "noise",
+      "normalized_word": "noise",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/nɔiz/",
+      "primary_meaning_vi": "tiếng",
+      "meaning_vi": "tiếng; tiếng ồn ào, tiếng om sòm, tiếng huyên náo; loan (tin), đồn",
+      "example_en": "He knew that it was trash day, when the garbage collectors made all the noise.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The problems with the new computer system are causing a lot of noise at Head Office.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

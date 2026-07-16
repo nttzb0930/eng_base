@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26061,
+      "quiz_meaning_vi": "ngang",
+      "meaning_vi_clean": "ngang; bằng; bình đẳng",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngang",
+          "example_en": "The two lines are equal in length.",
+          "example_vi": "Hai đường thẳng này có chiều dài ngang nhau."
+        },
+        {
+          "meaning_vi": "ngang",
+          "example_en": "They are equal in strength and skill.",
+          "example_vi": "Họ ngang tài ngang sức về cả thể lực lẫn kỹ năng."
+        },
+        {
+          "meaning_vi": "ngang",
+          "example_en": "The two teams are equal in the competition.",
+          "example_vi": "Hai đội ngang bằng nhau trong cuộc thi."
+        },
+        {
+          "meaning_vi": "ngang",
+          "example_en": "He is equal to the task ahead.",
+          "example_vi": "Anh ấy đủ khả năng cho nhiệm vụ phía trước."
+        },
+        {
+          "meaning_vi": "bằng",
+          "example_en": "Two plus two is equal to four.",
+          "example_vi": "Hai cộng hai bằng bốn."
+        },
+        {
+          "meaning_vi": "bằng",
+          "example_en": "The cost is equal to our budget.",
+          "example_vi": "Chi phí bằng với ngân sách của chúng ta."
+        },
+        {
+          "meaning_vi": "bằng",
+          "example_en": "The results are equal for both groups.",
+          "example_vi": "Kết quả bằng nhau cho cả hai nhóm."
+        },
+        {
+          "meaning_vi": "bình đẳng",
+          "example_en": "All people should have equal rights.",
+          "example_vi": "Mọi người nên có quyền bình đẳng."
+        },
+        {
+          "meaning_vi": "bình đẳng",
+          "example_en": "We strive for an equal society.",
+          "example_vi": "Chúng ta phấn đấu vì một xã hội bình đẳng."
+        },
+        {
+          "meaning_vi": "bình đẳng",
+          "example_en": "They were treated as equal partners.",
+          "example_vi": "Họ được đối xử như những đối tác bình đẳng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành tính từ theo từ điển chuẩn. Giữ nghĩa phổ biến, loại bỏ nghĩa động từ gây nhiễu.",
+      "word": "equal",
+      "normalized_word": "equal",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The two lines are equal in length.",
+      "example_vi_clean": "Hai đường thẳng này có chiều dài ngang nhau."
+    },
+    {
+      "id": 26062,
+      "quiz_meaning_vi": "sự bình đẳng",
+      "meaning_vi_clean": "sự bình đẳng; tính ngang bằng",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự bình đẳng",
+          "example_en": "The law ensures equality for all citizens.",
+          "example_vi": "Luật pháp đảm bảo sự bình đẳng cho mọi công dân."
+        },
+        {
+          "meaning_vi": "sự bình đẳng",
+          "example_en": "We are fighting for gender equality.",
+          "example_vi": "Chúng tôi đang đấu tranh cho sự bình đẳng giới."
+        },
+        {
+          "meaning_vi": "sự bình đẳng",
+          "example_en": "Equality is a fundamental human right.",
+          "example_vi": "Sự bình đẳng là một quyền cơ bản của con người."
+        },
+        {
+          "meaning_vi": "sự bình đẳng",
+          "example_en": "They believe in equality of opportunity.",
+          "example_vi": "Họ tin vào sự bình đẳng về cơ hội."
+        },
+        {
+          "meaning_vi": "tính ngang bằng",
+          "example_en": "There is a sense of equality in the team.",
+          "example_vi": "Có một cảm giác về tính ngang bằng trong nhóm."
+        },
+        {
+          "meaning_vi": "tính ngang bằng",
+          "example_en": "The equality of the two sides is clear.",
+          "example_vi": "Tính ngang bằng của hai bên rất rõ ràng."
+        },
+        {
+          "meaning_vi": "tính ngang bằng",
+          "example_en": "Mathematical equality is essential in this proof.",
+          "example_vi": "Tính ngang bằng toán học là cần thiết trong chứng minh này."
+        },
+        {
+          "meaning_vi": "tính ngang bằng",
+          "example_en": "The treaty aims for the equality of nations.",
+          "example_vi": "Hiệp ước hướng tới tính ngang bằng giữa các quốc gia."
+        },
+        {
+          "meaning_vi": "sự bình đẳng",
+          "example_en": "Social equality is hard to achieve.",
+          "example_vi": "Sự bình đẳng xã hội rất khó đạt được."
+        },
+        {
+          "meaning_vi": "tính ngang bằng",
+          "example_en": "We must maintain the equality of distribution.",
+          "example_vi": "Chúng ta phải duy trì tính ngang bằng trong phân phối."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành sự bình đẳng, bổ sung ví dụ minh họa.",
+      "word": "equality",
+      "normalized_word": "equality",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The law ensures equality for all citizens.",
+      "example_vi_clean": "Luật pháp đảm bảo sự bình đẳng cho mọi công dân."
+    },
+    {
+      "id": 26063,
+      "quiz_meaning_vi": "bằng nhau",
+      "meaning_vi_clean": "bằng nhau; đều",
+      "examples_clean": [
+        {
+          "meaning_vi": "bằng nhau",
+          "example_en": "The cake was divided equally among the children.",
+          "example_vi": "Chiếc bánh được chia bằng nhau cho những đứa trẻ."
+        },
+        {
+          "meaning_vi": "bằng nhau",
+          "example_en": "Both teams played equally well.",
+          "example_vi": "Cả hai đội đều chơi hay bằng nhau."
+        },
+        {
+          "meaning_vi": "bằng nhau",
+          "example_en": "The two rooms are equally large.",
+          "example_vi": "Hai căn phòng rộng bằng nhau."
+        },
+        {
+          "meaning_vi": "bằng nhau",
+          "example_en": "They are equally responsible for the mistake.",
+          "example_vi": "Họ chịu trách nhiệm bằng nhau cho sai lầm này."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The students were equally distributed in the room.",
+          "example_vi": "Các học sinh được phân bổ đều trong phòng."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The paint was applied equally across the wall.",
+          "example_vi": "Sơn được quét đều khắp bức tường."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The light is spread equally in the hall.",
+          "example_vi": "Ánh sáng được lan tỏa đều trong hội trường."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The workload is shared equally among us.",
+          "example_vi": "Khối lượng công việc được chia đều giữa chúng tôi."
+        },
+        {
+          "meaning_vi": "bằng nhau",
+          "example_en": "The two candidates are equally qualified.",
+          "example_vi": "Hai ứng viên có trình độ bằng nhau."
+        },
+        {
+          "meaning_vi": "đều",
+          "example_en": "The heat is distributed equally in the oven.",
+          "example_vi": "Nhiệt được phân bổ đều trong lò nướng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ cho đủ 10 câu.",
+      "word": "equally",
+      "normalized_word": "equally",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The cake was divided equally among the children.",
+      "example_vi_clean": "Chiếc bánh được chia bằng nhau cho những đứa trẻ."
+    },
+    {
+      "id": 26064,
+      "quiz_meaning_vi": "thiết bị",
+      "meaning_vi_clean": "thiết bị; dụng cụ",
+      "examples_clean": [
+        {
+          "meaning_vi": "thiết bị",
+          "example_en": "The gym has modern exercise equipment.",
+          "example_vi": "Phòng tập thể dục có thiết bị tập luyện hiện đại."
+        },
+        {
+          "meaning_vi": "thiết bị",
+          "example_en": "We need to buy new office equipment.",
+          "example_vi": "Chúng ta cần mua thiết bị văn phòng mới."
+        },
+        {
+          "meaning_vi": "thiết bị",
+          "example_en": "The laboratory is full of scientific equipment.",
+          "example_vi": "Phòng thí nghiệm đầy thiết bị khoa học."
+        },
+        {
+          "meaning_vi": "thiết bị",
+          "example_en": "They are installing new safety equipment.",
+          "example_vi": "Họ đang lắp đặt thiết bị an toàn mới."
+        },
+        {
+          "meaning_vi": "dụng cụ",
+          "example_en": "He packed his camping equipment.",
+          "example_vi": "Anh ấy đã đóng gói dụng cụ cắm trại của mình."
+        },
+        {
+          "meaning_vi": "dụng cụ",
+          "example_en": "The kitchen is well-stocked with cooking equipment.",
+          "example_vi": "Nhà bếp được trang bị đầy đủ dụng cụ nấu nướng."
+        },
+        {
+          "meaning_vi": "dụng cụ",
+          "example_en": "She bought some gardening equipment.",
+          "example_vi": "Cô ấy đã mua một số dụng cụ làm vườn."
+        },
+        {
+          "meaning_vi": "dụng cụ",
+          "example_en": "The rescue team brought specialized equipment.",
+          "example_vi": "Đội cứu hộ đã mang theo dụng cụ chuyên dụng."
+        },
+        {
+          "meaning_vi": "thiết bị",
+          "example_en": "The factory needs better production equipment.",
+          "example_vi": "Nhà máy cần thiết bị sản xuất tốt hơn."
+        },
+        {
+          "meaning_vi": "dụng cụ",
+          "example_en": "Do you have the right equipment for the job?",
+          "example_vi": "Bạn có đủ dụng cụ phù hợp cho công việc này không?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành thiết bị, bổ sung ví dụ.",
+      "word": "equipment",
+      "normalized_word": "equipment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The gym has modern exercise equipment.",
+      "example_vi_clean": "Phòng tập thể dục có thiết bị tập luyện hiện đại."
+    },
+    {
+      "id": 26065,
+      "quiz_meaning_vi": "thời đại",
+      "meaning_vi_clean": "thời đại; kỷ nguyên",
+      "examples_clean": [
+        {
+          "meaning_vi": "thời đại",
+          "example_en": "We live in an era of technology.",
+          "example_vi": "Chúng ta đang sống trong một thời đại công nghệ."
+        },
+        {
+          "meaning_vi": "thời đại",
+          "example_en": "This is the end of an era.",
+          "example_vi": "Đây là sự kết thúc của một thời đại."
+        },
+        {
+          "meaning_vi": "thời đại",
+          "example_en": "The Victorian era was a time of change.",
+          "example_vi": "Thời đại Victoria là một thời kỳ của sự thay đổi."
+        },
+        {
+          "meaning_vi": "thời đại",
+          "example_en": "He was a man of his era.",
+          "example_vi": "Ông ấy là một người của thời đại mình."
+        },
+        {
+          "meaning_vi": "kỷ nguyên",
+          "example_en": "The space era began in the twentieth century.",
+          "example_vi": "Kỷ nguyên không gian bắt đầu vào thế kỷ hai mươi."
+        },
+        {
+          "meaning_vi": "kỷ nguyên",
+          "example_en": "A new era of peace has started.",
+          "example_vi": "Một kỷ nguyên hòa bình mới đã bắt đầu."
+        },
+        {
+          "meaning_vi": "kỷ nguyên",
+          "example_en": "The digital era has changed how we work.",
+          "example_vi": "Kỷ nguyên số đã thay đổi cách chúng ta làm việc."
+        },
+        {
+          "meaning_vi": "kỷ nguyên",
+          "example_en": "We are entering a new era of discovery.",
+          "example_vi": "Chúng ta đang bước vào một kỷ nguyên khám phá mới."
+        },
+        {
+          "meaning_vi": "thời đại",
+          "example_en": "The era of steam power is long gone.",
+          "example_vi": "Thời đại của năng lượng hơi nước đã qua lâu rồi."
+        },
+        {
+          "meaning_vi": "kỷ nguyên",
+          "example_en": "This discovery marks a new era in medicine.",
+          "example_vi": "Khám phá này đánh dấu một kỷ nguyên mới trong y học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ.",
+      "word": "era",
+      "normalized_word": "era",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We live in an era of technology.",
+      "example_vi_clean": "Chúng ta đang sống trong một thời đại công nghệ."
+    },
+    {
+      "id": 26066,
+      "quiz_meaning_vi": "bản chất",
+      "meaning_vi_clean": "bản chất; thực chất",
+      "examples_clean": [
+        {
+          "meaning_vi": "bản chất",
+          "example_en": "Kindness is the essence of her character.",
+          "example_vi": "Lòng tốt là bản chất trong tính cách của cô ấy."
+        },
+        {
+          "meaning_vi": "bản chất",
+          "example_en": "The essence of the problem is lack of time.",
+          "example_vi": "Bản chất của vấn đề là thiếu thời gian."
+        },
+        {
+          "meaning_vi": "bản chất",
+          "example_en": "Freedom is the essence of democracy.",
+          "example_vi": "Tự do là bản chất của dân chủ."
+        },
+        {
+          "meaning_vi": "bản chất",
+          "example_en": "Humor is the essence of a good story.",
+          "example_vi": "Sự hài hước là bản chất của một câu chuyện hay."
+        },
+        {
+          "meaning_vi": "thực chất",
+          "example_en": "The real essence of the plan is simple.",
+          "example_vi": "Thực chất của kế hoạch này rất đơn giản."
+        },
+        {
+          "meaning_vi": "thực chất",
+          "example_en": "We need to understand the essence of the situation.",
+          "example_vi": "Chúng ta cần hiểu thực chất của tình hình."
+        },
+        {
+          "meaning_vi": "thực chất",
+          "example_en": "The essence of his argument was clear.",
+          "example_vi": "Thực chất lập luận của anh ấy rất rõ ràng."
+        },
+        {
+          "meaning_vi": "thực chất",
+          "example_en": "They discussed the essence of the agreement.",
+          "example_vi": "Họ đã thảo luận về thực chất của thỏa thuận."
+        },
+        {
+          "meaning_vi": "bản chất",
+          "example_en": "The essence of life is to learn.",
+          "example_vi": "Bản chất của cuộc sống là học hỏi."
+        },
+        {
+          "meaning_vi": "thực chất",
+          "example_en": "The essence of the matter is quite complex.",
+          "example_vi": "Thực chất của vấn đề khá phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành bản chất, loại bỏ các nghĩa phụ không cần thiết như nước hoa.",
+      "word": "essence",
+      "normalized_word": "essence",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Kindness is the essence of her character.",
+      "example_vi_clean": "Lòng tốt là bản chất trong tính cách của cô ấy."
+    },
+    {
+      "id": 26067,
+      "quiz_meaning_vi": "cần thiết",
+      "meaning_vi_clean": "cần thiết; thiết yếu",
+      "examples_clean": [
+        {
+          "meaning_vi": "cần thiết",
+          "example_en": "It is essential to arrive on time.",
+          "example_vi": "Việc đến đúng giờ là rất cần thiết."
+        },
+        {
+          "meaning_vi": "cần thiết",
+          "example_en": "Water is essential for life.",
+          "example_vi": "Nước là thứ cần thiết cho sự sống."
+        },
+        {
+          "meaning_vi": "cần thiết",
+          "example_en": "He has the essential skills for the job.",
+          "example_vi": "Anh ấy có những kỹ năng cần thiết cho công việc."
+        },
+        {
+          "meaning_vi": "cần thiết",
+          "example_en": "Taking notes is essential for learning.",
+          "example_vi": "Ghi chú là việc cần thiết để học tập."
+        },
+        {
+          "meaning_vi": "thiết yếu",
+          "example_en": "These are the essential items for the trip.",
+          "example_vi": "Đây là những món đồ thiết yếu cho chuyến đi."
+        },
+        {
+          "meaning_vi": "thiết yếu",
+          "example_en": "Good communication is essential in a team.",
+          "example_vi": "Giao tiếp tốt là điều thiết yếu trong một đội."
+        },
+        {
+          "meaning_vi": "thiết yếu",
+          "example_en": "The essential part of the plan is safety.",
+          "example_vi": "Phần thiết yếu của kế hoạch là sự an toàn."
+        },
+        {
+          "meaning_vi": "thiết yếu",
+          "example_en": "We have all the essential equipment.",
+          "example_vi": "Chúng tôi có tất cả các thiết bị thiết yếu."
+        },
+        {
+          "meaning_vi": "cần thiết",
+          "example_en": "Is it essential to finish today?",
+          "example_vi": "Có cần thiết phải hoàn thành hôm nay không?"
+        },
+        {
+          "meaning_vi": "thiết yếu",
+          "example_en": "Trust is essential for a friendship.",
+          "example_vi": "Sự tin tưởng là điều thiết yếu cho tình bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành cần thiết, bổ sung ví dụ.",
+      "word": "essential",
+      "normalized_word": "essential",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is essential to arrive on time.",
+      "example_vi_clean": "Việc đến đúng giờ là rất cần thiết."
+    },
+    {
+      "id": 26068,
+      "quiz_meaning_vi": "sự thành lập",
+      "meaning_vi_clean": "sự thành lập; cơ sở",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "The establishment of the company took years.",
+          "example_vi": "Sự thành lập công ty đã mất nhiều năm."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "They celebrated the establishment of the new club.",
+          "example_vi": "Họ đã ăn mừng sự thành lập của câu lạc bộ mới."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "The establishment of peace is our goal.",
+          "example_vi": "Sự thành lập hòa bình là mục tiêu của chúng tôi."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "He oversaw the establishment of the school.",
+          "example_vi": "Ông ấy giám sát sự thành lập của ngôi trường."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "This is a well-known business establishment.",
+          "example_vi": "Đây là một cơ sở kinh doanh nổi tiếng."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "The restaurant is a popular local establishment.",
+          "example_vi": "Nhà hàng này là một cơ sở địa phương phổ biến."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "They visited the research establishment.",
+          "example_vi": "Họ đã đến thăm cơ sở nghiên cứu."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "The hotel is a large establishment.",
+          "example_vi": "Khách sạn này là một cơ sở lớn."
+        },
+        {
+          "meaning_vi": "sự thành lập",
+          "example_en": "The establishment of rules is necessary.",
+          "example_vi": "Sự thành lập các quy tắc là cần thiết."
+        },
+        {
+          "meaning_vi": "cơ sở",
+          "example_en": "The hospital is a medical establishment.",
+          "example_vi": "Bệnh viện là một cơ sở y tế."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành sự thành lập, bổ sung ví dụ.",
+      "word": "establishment",
+      "normalized_word": "establishment",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The establishment of the company took years.",
+      "example_vi_clean": "Sự thành lập công ty đã mất nhiều năm."
+    },
+    {
+      "id": 26069,
+      "quiz_meaning_vi": "vĩnh viễn",
+      "meaning_vi_clean": "vĩnh viễn; bất diệt",
+      "examples_clean": [
+        {
+          "meaning_vi": "vĩnh viễn",
+          "example_en": "They promised eternal love to each other.",
+          "example_vi": "Họ đã hứa hẹn tình yêu vĩnh viễn với nhau."
+        },
+        {
+          "meaning_vi": "vĩnh viễn",
+          "example_en": "The beauty of the mountains is eternal.",
+          "example_vi": "Vẻ đẹp của những ngọn núi là vĩnh viễn."
+        },
+        {
+          "meaning_vi": "vĩnh viễn",
+          "example_en": "He is seeking eternal peace.",
+          "example_vi": "Anh ấy đang tìm kiếm sự bình yên vĩnh viễn."
+        },
+        {
+          "meaning_vi": "vĩnh viễn",
+          "example_en": "The stars seem eternal in the night sky.",
+          "example_vi": "Những ngôi sao dường như vĩnh viễn trên bầu trời đêm."
+        },
+        {
+          "meaning_vi": "bất diệt",
+          "example_en": "His work has an eternal quality.",
+          "example_vi": "Tác phẩm của ông ấy có một phẩm chất bất diệt."
+        },
+        {
+          "meaning_vi": "bất diệt",
+          "example_en": "The legend of the hero is eternal.",
+          "example_vi": "Huyền thoại về người anh hùng là bất diệt."
+        },
+        {
+          "meaning_vi": "bất diệt",
+          "example_en": "Truth is often considered eternal.",
+          "example_vi": "Sự thật thường được coi là bất diệt."
+        },
+        {
+          "meaning_vi": "bất diệt",
+          "example_en": "They hope for eternal life.",
+          "example_vi": "Họ hy vọng vào cuộc sống bất diệt."
+        },
+        {
+          "meaning_vi": "vĩnh viễn",
+          "example_en": "The change is not eternal.",
+          "example_vi": "Sự thay đổi này không phải là vĩnh viễn."
+        },
+        {
+          "meaning_vi": "bất diệt",
+          "example_en": "Art can be an eternal expression of human spirit.",
+          "example_vi": "Nghệ thuật có thể là sự thể hiện bất diệt của tinh thần con người."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành vĩnh viễn, bổ sung ví dụ.",
+      "word": "eternal",
+      "normalized_word": "eternal",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They promised eternal love to each other.",
+      "example_vi_clean": "Họ đã hứa hẹn tình yêu vĩnh viễn với nhau."
+    },
+    {
+      "id": 26070,
+      "quiz_meaning_vi": "sự vĩnh viễn",
+      "meaning_vi_clean": "sự vĩnh viễn; thời gian vô tận",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự vĩnh viễn",
+          "example_en": "He thought about the concept of eternity.",
+          "example_vi": "Anh ấy suy nghĩ về khái niệm sự vĩnh viễn."
+        },
+        {
+          "meaning_vi": "sự vĩnh viễn",
+          "example_en": "The monument stands as a symbol of eternity.",
+          "example_vi": "Đài tưởng niệm đứng đó như một biểu tượng của sự vĩnh viễn."
+        },
+        {
+          "meaning_vi": "sự vĩnh viễn",
+          "example_en": "They believe in the promise of eternity.",
+          "example_vi": "Họ tin vào lời hứa về sự vĩnh viễn."
+        },
+        {
+          "meaning_vi": "sự vĩnh viễn",
+          "example_en": "Eternity is hard for humans to imagine.",
+          "example_vi": "Sự vĩnh viễn rất khó để con người hình dung."
+        },
+        {
+          "meaning_vi": "thời gian vô tận",
+          "example_en": "It felt like an eternity waiting for the bus.",
+          "example_vi": "Cảm giác như một thời gian vô tận khi chờ xe buýt."
+        },
+        {
+          "meaning_vi": "thời gian vô tận",
+          "example_en": "He spent an eternity looking for his keys.",
+          "example_vi": "Anh ấy đã mất một thời gian vô tận để tìm chìa khóa."
+        },
+        {
+          "meaning_vi": "thời gian vô tận",
+          "example_en": "The meeting lasted an eternity.",
+          "example_vi": "Cuộc họp kéo dài như một thời gian vô tận."
+        },
+        {
+          "meaning_vi": "thời gian vô tận",
+          "example_en": "It seemed like an eternity before she replied.",
+          "example_vi": "Dường như đã mất một thời gian vô tận trước khi cô ấy trả lời."
+        },
+        {
+          "meaning_vi": "sự vĩnh viễn",
+          "example_en": "The stars represent eternity to many.",
+          "example_vi": "Những ngôi sao đại diện cho sự vĩnh viễn đối với nhiều người."
+        },
+        {
+          "meaning_vi": "thời gian vô tận",
+          "example_en": "Waiting for the results felt like an eternity.",
+          "example_vi": "Chờ đợi kết quả cảm giác như một thời gian vô tận."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành sự vĩnh viễn, bổ sung ví dụ.",
+      "word": "eternity",
+      "normalized_word": "eternity",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He thought about the concept of eternity.",
+      "example_vi_clean": "Anh ấy suy nghĩ về khái niệm sự vĩnh viễn."
+    }
+  ]
+}

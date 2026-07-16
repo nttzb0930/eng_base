@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-266",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26651,
+      "word": "commission",
+      "normalized_word": "commission",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kə'miʃn/",
+      "primary_meaning_vi": "lệnh",
+      "meaning_vi": "lệnh, mệnh lệnh; nhiệm vụ, phận sự; sự uỷ nhiệm, sự uỷ thác; công việc uỷ nhiệm, công việc uỷ thác; hội đồng uỷ ban; tiền hoa hồng; sự phạm, sự can phạm; bằng phong các cấp sĩ quan; sự trang bị vũ khí; uỷ nhiệm, uỷ thác; đặt làm, đặt mua (một bức tranh...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26652,
+      "word": "commonwealth",
+      "normalized_word": "commonwealth",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kɔmənwelθ/",
+      "primary_meaning_vi": "toàn thể nhân dân (của một nước)",
+      "meaning_vi": "toàn thể nhân dân (của một nước); khối cộng đồng; nước cộng hoà; Commonwealth liên bang Uc; Commonwealth chính phủ cộng hoà Anh (thời kỳ Crôm-oen 1649 1660); đoàn kịch góp (trong đó diễn viên chia nhau tiền thu); commonweal",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26653,
+      "word": "communicative",
+      "normalized_word": "communicative",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kə'mju:nikətiv/",
+      "primary_meaning_vi": "dễ truyền đi",
+      "meaning_vi": "dễ truyền đi; hay lan truyền; cởi mở, hay thổ lộ tâm sự; thích chuyện trò",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26654,
+      "word": "community",
+      "normalized_word": "community",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kə'mju:niti/",
+      "primary_meaning_vi": "dân",
+      "meaning_vi": "dân, dân chúng, nhân dân (cùng ở một địa phương, quận, huyện, khu phố, tỉnh...); phường, hội, phái, nhóm người (cùng tôn giáo, cùng quốc tịch...); sở hữu cộng đồng, sở hữu chung; công chúng, xã hội; câu lạc bộ khu vực; đồng ca, sự hát tập thể",
+      "example_en": "a community of goods",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26655,
+      "word": "commute",
+      "normalized_word": "commute",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/kə'mju:t/",
+      "primary_meaning_vi": "thay thế",
+      "meaning_vi": "thay thế, thay đổi nhau, đổi nhau, giao hoán; giảm (hình phạt, tội); đi làm hằng ngày bằng vé tháng; đi lại đều đặn (giữa hai địa điểm); đảo mạch, chuyển mạch",
+      "example_en": "to commute tithes into rentcharges for a sum; to commute market rents for a premium, to commute daily fares for a season ticket",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A pair of matrices share the same set of eigenvectors if and only if they commute.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I commute from Brooklyn to Manhattan by bicycle.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26656,
+      "word": "compassion",
+      "normalized_word": "compassion",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/kəm'pæʃn/",
+      "primary_meaning_vi": "lòng thương",
+      "meaning_vi": "lòng thương, lòng trắc ẩn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26657,
+      "word": "compassionate",
+      "normalized_word": "compassionate",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kəm'pæʃənit/",
+      "primary_meaning_vi": "thương hại",
+      "meaning_vi": "thương hại, thương xót, động lòng thương, động lòng trắc ẩn; trợ cấp ngoài chế độ; phép nghỉ cho vì thương tình; thương hại, thương xót, động lòng thương, động lòng trắc ẩn",
+      "example_en": "The Compassionate, the All-Compassionate",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "compassionate leave; a compassionate visa",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26658,
+      "word": "compatible",
+      "normalized_word": "compatible",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/kəm'pætəbl/",
+      "primary_meaning_vi": "hợp",
+      "meaning_vi": "hợp, thích hợp, tương hợp",
+      "example_en": "a computer company that sells IBM compatibles",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This printer isn't compatible with my computer.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My neighbours and I are not very compatible: they're loud and I'm an introvert.",
+          "example_vi": null
+        },
+        {
+          "example_en": "His actions were compatible with his sermons.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26659,
+      "word": "compensate",
+      "normalized_word": "compensate",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/'kɔmpenseit/",
+      "primary_meaning_vi": "bù",
+      "meaning_vi": "bù, đền bù, bồi thường; bù",
+      "example_en": "It is hard work, but they will compensate you well for it.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "His loud voice cannot compensate for a lack of personality.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I don't like driving that old car because it always steers a little to the left so I'm forever compensating for that when I drive it. Trust me, it gets annoying real fast.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26660,
+      "word": "compensation",
+      "normalized_word": "compensation",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kɔmpen'seiʃn/",
+      "primary_meaning_vi": "sự đền bù",
+      "meaning_vi": "sự đền bù, sự bồi thường (thiệt hại); vật đền bù, vật bồi thường; sự bù",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-278",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26771,
+      "word": "crossly",
+      "normalized_word": "crossly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'krɔsli/",
+      "primary_meaning_vi": "cáu kỉnh",
+      "meaning_vi": "cáu kỉnh, gắt gỏng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26772,
+      "word": "crucial",
+      "normalized_word": "crucial",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kru:ʃjəl/",
+      "primary_meaning_vi": "quyết định",
+      "meaning_vi": "quyết định; cốt yếu, chủ yếu; hình chữ thập",
+      "example_en": "A secure supply of crude oil is crucial for any modern nation, let alone a superpower.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Delbert Wilkins is the most crucial pirate radio DJ in Brixton.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26773,
+      "word": "cruelly",
+      "normalized_word": "cruelly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'kruili/",
+      "primary_meaning_vi": "độc ác",
+      "meaning_vi": "độc ác, dữ tợn, hung ác, ác nghiệt, tàn ác, tàn bạo, tàn nhẫn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26774,
+      "word": "cruelty",
+      "normalized_word": "cruelty",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kruəlti/",
+      "primary_meaning_vi": "sự hung ác",
+      "meaning_vi": "sự hung ác, sự tàn ác, sự tàn bạo, sự tàn nhẫn, tính độc ác, tính ác nghiệt; hành động tàn ác",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26775,
+      "word": "crystallise",
+      "normalized_word": "crystallise",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/'kristəlaiz/ (crystallise) /'kristəlaiz/",
+      "primary_meaning_vi": "kết tinh",
+      "meaning_vi": "kết tinh; bọc đường kính, rắc đường kính",
+      "example_en": "I crystallized the copper sulphate by slowly cooling a saturated solution.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The copper sulphate crystallized from solution.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After some thought, I crystallized my ideas for the paper.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My ideas crystallized overnight.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26776,
+      "word": "crystallize",
+      "normalized_word": "crystallize",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/'kristəlaiz/ (crystallise) /'kristəlaiz/",
+      "primary_meaning_vi": "kết tinh",
+      "meaning_vi": "kết tinh; bọc đường kính, rắc đường kính",
+      "example_en": "I crystallized the copper sulphate by slowly cooling a saturated solution.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The copper sulphate crystallized from solution.",
+          "example_vi": null
+        },
+        {
+          "example_en": "After some thought, I crystallized my ideas for the paper.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My ideas crystallized overnight.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26777,
+      "word": "cube",
+      "normalized_word": "cube",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kju:b/",
+      "primary_meaning_vi": "hình lập phương",
+      "meaning_vi": "hình lập phương, hình khối; luỹ thừa ba; căn bậc ba; lên tam thừa; đo thể tích; lát bằng gạch hình khối; thái thành hình khối, thái hạt lựu (cà rốt...)",
+      "example_en": "a stock cube",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the cube of 2 is 8",
+          "example_vi": null
+        },
+        {
+          "example_en": "Three cubed can be written as 33, and equals twenty-seven.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Cube the ham right after adding the curry to the rice.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26778,
+      "word": "cubism",
+      "normalized_word": "cubism",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kju:bizm/",
+      "primary_meaning_vi": "xu hướng lập thể",
+      "meaning_vi": "xu hướng lập thể",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26779,
+      "word": "cuff",
+      "normalized_word": "cuff",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kʌf/",
+      "primary_meaning_vi": "cổ tay áo (sơ mi",
+      "meaning_vi": "cổ tay áo (sơ mi, vét); cổ tay áo giả; gấu vén lên, gấu lơ-vê (quần); ,  (từ lóng) cho vay, cho chịu; không mất tiền, không phải trả tiền; cái tát, cái bạt tai; cú đấm, cú thoi, quả thụi; dở đấm dở đá với nhau; tát, bạt tai; đấm, thoi, thụi",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26780,
+      "word": "culmination",
+      "normalized_word": "culmination",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,kʌlmi'neiʃn/",
+      "primary_meaning_vi": "điểm cao nhất",
+      "meaning_vi": "điểm cao nhất, cực điểm, tột độ, tột bậc; qua đường kinh (thiên thể...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

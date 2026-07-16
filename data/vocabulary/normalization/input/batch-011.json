@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-011",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24101,
+      "word": "bottom",
+      "normalized_word": "bottom",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'bɔtəm/",
+      "primary_meaning_vi": "phần dưới cùng",
+      "meaning_vi": "phần dưới cùng; đáy; bụng tàu; tàu; mặt (ghế); đít; cơ sở; ngọn nguồn; bản chất; sức chịu đựng, sức dai; bẻ gãy một lý lẽ; tự lập không nhờ vả ai; cuối, cuối cùng, thấp nhất; căn bản; dốc túi đánh cược; làm đáy (thùng, xoong...); đóng mặt (ghế); mò xuống tận đáy; ((nghĩa bóng)) xem xét kỹ lưỡng (một vấn đề); căn cứ vào, dựa trên; chạm đáy",
+      "example_en": "Footers appear at the bottoms of pages.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Where shall we go for a walk? How about Ashcombe Bottom?",
+          "example_vi": null
+        },
+        {
+          "example_en": "a horse of a good bottom",
+          "example_vi": null
+        },
+        {
+          "example_en": "to bottom a chair",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24102,
+      "word": "bowl",
+      "normalized_word": "bowl",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/boul/",
+      "primary_meaning_vi": "cái bát",
+      "meaning_vi": "cái bát; bát (đầy); nõ (điếu, tẩu thuốc lá); long (thìa, môi); sự ăn uống, sự chè chén; quả bóng gỗ; trò chơi bóng gỗ; (tiếng địa phương) trò chơi kí; chơi ném bóng gỗ; lăn (quả bóng); bon nhanh (xe); đánh đổ, đánh ngã; làm bối rối; làm sửng sốt, làm kinh ngạc",
+      "example_en": "You can’t have any more soup – you’ve had three bowls already.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "This restaurant offers a number of different bowls.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Direct the cleaning fluid around the toilet bowl and under the rim.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We were bowled rapidly along the road.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24103,
+      "word": "box",
+      "normalized_word": "box",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bɔks/",
+      "primary_meaning_vi": "hộp",
+      "meaning_vi": "hộp, thùng, tráp, bao; chỗ ngồi (của người đánh xe ngựa); lô (rạp hát); phòng nhỏ (khách sạn); ô (chuồng ngựa); chòi, điếm (canh); ghế (ở toà án, cho quan toà, nhân chứng...); tủ sắt, két sắt (để bạc); ông, hộp (bỏ tiền); quà (lễ giáng sinh); lều nhỏ, chỗ trú chân (của người đi săn); hộp ống lót; cùng chung một cảnh ngộ (với ai); suy nghĩ chính chắn, thận trọng; bỏ vào hộp; đệ (đơn) lên toà án; ngăn riêng ra; nhốt riêng vào từng ô chuồng; nhốt vào chuông hẹp; đóng kín vào hộp; compass; cái tát, cái bạt; tát, bạt (tai...); đánh quyền Anh; cây hoàng dương",
+      "example_en": "Leave this place before I box you!",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24104,
+      "word": "boy",
+      "normalized_word": "boy",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bɔi/",
+      "primary_meaning_vi": "con trai",
+      "meaning_vi": "con trai, thiếu niên; con trai (con đẻ ra); học trò trai, học sinh nam; người đầy tớ trai; bạn thân; người vẫn giữ được tính hồn nhiên của tuổi thiếu niên; (từ lóng) rượu sâm banh; bạn thân, bạn tri kỷ; ,  (từ lóng) ông chú, ông trùm; ,  (từ lóng) pháo, đại bác; người lái máy bay",
+      "example_en": "Kate is dating a boy named Jim.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Are you getting a boy cat or a girl cat?",
+          "example_vi": null
+        },
+        {
+          "example_en": "Don't boy me!",
+          "example_vi": null
+        },
+        {
+          "example_en": "Boy, I wish I could go to Canada!",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24105,
+      "word": "boyfriend",
+      "normalized_word": "boyfriend",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "bạn trai (đi lại thường xuyên với một cô gái",
+      "meaning_vi": "bạn trai (đi lại thường xuyên với một cô gái, một chị phụ nữ)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24106,
+      "word": "brain",
+      "normalized_word": "brain",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/brein/",
+      "primary_meaning_vi": "óc",
+      "meaning_vi": "óc, não; đầu óc, trí óc; trí tuệ; trí lực; sự thông minh; máy tính điện tử; dở điên, dở gàn; luôn luôn nghĩ ngợi về một điều gì; bị một điều gì ám ảnh; nhàn cư vi bất thiện; làm cho ai choáng váng đầu óc; moi và dùng những ý kiến của ai; nặn óc, vắt óc suy nghĩ; làm cho đầu óc ai hoa lên; làm cho ai đâm ra tự đắc lố bịch; đánh vỡ óc, đánh vỡ đầu (ai)",
+      "example_en": "She was a total brain.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "She has a lot of brains.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The computer's brain is capable of millions of calculations a second.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I have too much on my brain today.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24107,
+      "word": "bread",
+      "normalized_word": "bread",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/bred/",
+      "primary_meaning_vi": "làm thủng",
+      "meaning_vi": "làm thủng; chọc thủng, phá vỡ (tuyến phòng thủ); nhảy lên khỏi mặt nước (cá voi); bánh mì; miếng ăn, kế sinh nhai; bánh mì phết bơ; miếng ăn; kế sinh nhai; miếng ăn; kế sinh nhai; cuộc sống thanh đạm; sự phong lưu, sự sung túc; kiếm ăn, kiếm sống; phiền não, sầu khổ, đau buồn; nhàn rỗi, vô công rỗi nghề; suốt đời sống dư dật sung túc; butter; sống đạm bạc; quarel; lấy mất kế sinh nhai của ai, cướp cơm chim của ai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24108,
+      "word": "breakfast",
+      "normalized_word": "breakfast",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/'brekfəst/",
+      "primary_meaning_vi": "bữa ăn sáng",
+      "meaning_vi": "bữa ăn sáng, bữa điểm tâm; ăn sáng, điểm tâm; mời (ai) ăn điểm tâm",
+      "example_en": "You should put more protein in her breakfast so she will grow.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We serve breakfast all day.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24109,
+      "word": "breathe",
+      "normalized_word": "breathe",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bri:ð/",
+      "primary_meaning_vi": "hít",
+      "meaning_vi": "hít, thở; thốt ra, nói lộ ra; thở ra; truyền thổi vào; biểu lộ, toát ra, tỏ ra; để cho thở, để cho lấy hơi; làm (ai) hết hơi, làm (ai) mệt đứt hơi; thở, hô hấp; sống, hình như còn sống; thổi nhẹ (gió); nói nhỏ, nói thì thào; nói lên; làm mờ, làm lu mờ (tiếng tăm...)",
+      "example_en": "Fish have gills so they can breathe underwater.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "While life as we know it depends on oxygen, scientists have speculated that alien life forms might breathe chlorine or methane.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I will not allow it, as long as I still breathe.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Try not to breathe too much smoke.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24110,
+      "word": "bridge",
+      "normalized_word": "bridge",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/bridʤ/",
+      "primary_meaning_vi": "brit",
+      "meaning_vi": "brit; cái cầu; sống (mũi); cái ngựa đàn (viôlông,  ghita...); cầu; đài chỉ huy của thuyền trưởng; đường rút lui mở ra cho kẻ địch thua trận; burn; xây cầu qua (sông...); vắt ngang; vượt qua, khắc phục; lấp cái hố ngăn cách; nối lại quan hệ",
+      "example_en": "With enough cable, we can bridge this gorge.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The two groups were able to bridge their differences.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Bidding is an essential element of the game of bridge.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

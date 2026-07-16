@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-140",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25391,
+      "word": "prepare",
+      "normalized_word": "prepare",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/pri'peə/",
+      "primary_meaning_vi": "sửa soạn sắm sửa",
+      "meaning_vi": "sửa soạn sắm sửa, chuẩn bị, dự bị; soạn (bài); chuẩn bị cho, rèn cặp cho (ai đi thi...); điều chế, pha chế (thuốc); làm, dọn, nấu (cơm, thức ăn); chuẩn bị tư tưởng cho (ai, để nghe một tin gì...); sửa soạn, sắm sửa, chuẩn bị, dự bị; sẵn sàng; vui lòng (làm gì)",
+      "example_en": "We prepared the spacecraft for takeoff.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "We prepared a fish for dinner.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We prepared for a bumpy ride.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She prepared a meal from what was left in the cupboards.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25392,
+      "word": "pressure",
+      "normalized_word": "pressure",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'preʃə/",
+      "primary_meaning_vi": "sức ép",
+      "meaning_vi": "sức ép, áp lực ((nghĩa đen) & (nghĩa bóng)), áp suất; sự đè nặng, sự ép buộc, sự thúc bách; cảnh quẩn bách; sự vội vã, sự cấp bách, sự gấp, sự khẩn cấp; ứng suất; áp suất cao; sự tích cực hết sức; sự hăng hái hết sức, sự khẩn trương hết sức",
+      "example_en": "Apply pressure to the wound to stop the bleeding.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the pressure of poverty; the pressure of taxes; the pressure of motives on the mind; the pressure of civilization.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She has felt pressure lately because her boss expects her to get the job done by the first.",
+          "example_vi": null
+        },
+        {
+          "example_en": "the pressure of business",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25393,
+      "word": "prevent",
+      "normalized_word": "prevent",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/pri'vent/",
+      "primary_meaning_vi": "ngăn ngừa",
+      "meaning_vi": "ngăn ngừa; ngăn trở, ngăn ngừa; đón trước, làm trước, giải quyết trước, chặn trước, đối phó trước; dẫn đường đi trước",
+      "example_en": "I brush my teeth regularly to prevent them from turning yellow.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25394,
+      "word": "pride",
+      "normalized_word": "pride",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "phó từ (+ on,  upon)",
+      "phonetic": "/praid/",
+      "primary_meaning_vi": "sự kiêu hãnh",
+      "meaning_vi": "sự kiêu hãnh, sự hãnh diện; niềm kiêu hãnh, niềm hãnh diện, tính tự cao, tính tự phụ, tính kiêu căng; lòng tự trọng ((cũng) proper pride); lòng tự hào về công việc của mình; độ đẹp nhất, độ rực rỡ nhất, độ chín muồi, độ phát triển nhất; tính hăng (ngựa); sự tráng lệ, sự huy hoàng, sự lộng lẫy; đàn, bầy; sương lúc mặt trời mọc; địa vị cao quý; sự tự phụ về địa vị cao quý của mình; sự ngạo mạn; fall; nén tự ái, đẹp lòng tự ái; lấy làm kiêu hãnh (về cái gì...); lấy làm tự hào (về việc gì...)",
+      "example_en": "He had pride of ownership in his department.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to be in the pride of one's life.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A pride of lions often consists of a dominant male, his harem and their offspring, but young adult males 'leave home' to roam about as bachelors pride until able to seize/establish a family pride of their own.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I pride myself on being a good judge of character.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25395,
+      "word": "principal",
+      "normalized_word": "principal",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'prinsəpəl/",
+      "primary_meaning_vi": "chính",
+      "meaning_vi": "chính, chủ yếu; chính; người đứng đầu; giám đốc, hiệu trưởng; chủ, chủ mướn, chủ thuê; người uỷ nhiệm; người đọ súng (đọ gươm) tay đôi; thủ phạm chính; tiền vốn; vốn chính, vốn nguyên thuỷ; xà cái, xà chính",
+      "example_en": "A portion of your mortgage payment goes to reduce the principal, and the rest covers interest.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My principal sells metal shims.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Smith is the principal architect of this design.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25396,
+      "word": "printer",
+      "normalized_word": "printer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'printə/",
+      "primary_meaning_vi": "thợ in",
+      "meaning_vi": "thợ in; chủ nhà in; máy in; thợ in vải hoa; thợ học việc ở nhà in; mực in; đống chữ in lộn xộn, sự hỗn độn, sự lộn xộn ((cũng) pie)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25397,
+      "word": "private",
+      "normalized_word": "private",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/private/",
+      "primary_meaning_vi": "riêng",
+      "meaning_vi": "riêng, tư, cá nhân; riêng, mật, kín; xa vắng, khuất nẻo, hẻo lánh (chỗ, nơi); thích ẩn dật, thích sống cách biệt (người); lính trơn, binh nhì; lính trơn, binh nhì; chỗ kín (bộ phận sinh dục); riêng tư, kín đáo, bí mật",
+      "example_en": "If you want to learn ballet, consider taking privates.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Her address is private; you can't have it.",
+          "example_vi": null
+        },
+        {
+          "example_en": "private property",
+          "example_vi": null
+        },
+        {
+          "example_en": "He quit public life, living quietly as a private citizen.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25398,
+      "word": "pro",
+      "normalized_word": "pro",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều pros",
+      "phonetic": "/pro/",
+      "primary_meaning_vi": "của professionaln đấu thủ nhà nghề",
+      "meaning_vi": "của professionaln đấu thủ nhà nghề",
+      "example_en": "What are the pros and cons of buying a car?",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He is pro exercise but against physical exertion, quite a conundrum.",
+          "example_vi": null
+        },
+        {
+          "example_en": "When it comes to DIY, he's a real pro.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He landed a pro mentorship gig.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25399,
+      "word": "probably",
+      "normalized_word": "probably",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "hầu như chắc chắn",
+      "meaning_vi": "hầu như chắc chắn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25400,
+      "word": "produce",
+      "normalized_word": "produce",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/produce/",
+      "primary_meaning_vi": "sản lượng",
+      "meaning_vi": "sản lượng; sản vật, sản phẩm; kết quả; trình ra, đưa ra, giơ ra; sản xuất, chế tạo; viết ra (một cuốn sách); xuất bản (sách, phim...); gây ra (một cảm giác...); đem lại (kết quả...); sinh đẻ; kéo dài (một đường thẳng...)",
+      "example_en": "to produce a side of a triangle",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to produce a man's life to threescore",
+          "example_vi": null
+        },
+        {
+          "example_en": "highly produced sound",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

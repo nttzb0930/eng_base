@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-280",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26791,
+      "word": "data",
+      "normalized_word": "data",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'deitə/",
+      "primary_meaning_vi": "số nhiều của datum",
+      "meaning_vi": "số nhiều của datum; dùng như số ít) số liệu, dữ kiện; tài liệu, cứ liệu (cung cấp những điều cần thiết)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26792,
+      "word": "database",
+      "normalized_word": "database",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "kho dữ liệu",
+      "meaning_vi": "kho dữ liệu, cơ sở dữ liệu [TN]",
+      "example_en": "I have a database of all my contacts in my personal organizer.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The \"books\" database will have three tables, and the \"customers\" database will have two tables.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Which database do you use: MySQL or Oracle?",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26793,
+      "word": "dated",
+      "normalized_word": "dated",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'deitid/",
+      "primary_meaning_vi": "đề nghị",
+      "meaning_vi": "đề nghị; lỗi thời, cũ kỹ, không hợp thời",
+      "example_en": "to date a letter, a bond, a deed, or a charter",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to date the building of the pyramids",
+          "example_vi": null
+        },
+        {
+          "example_en": "They met a couple of years ago, but have been dating for about five months.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The comedian dated himself by making quips about bands from the 1960s.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26794,
+      "word": "daughter-in-law",
+      "normalized_word": "daughter-in-law",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ,  số nhiều daughters-in-law",
+      "phonetic": "/'dɔ:tərinlɔ:/",
+      "primary_meaning_vi": "con dấu",
+      "meaning_vi": "con dấu; con gái riêng (của vợ, của chồng)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26795,
+      "word": "dawn",
+      "normalized_word": "dawn",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/dɔ:n/",
+      "primary_meaning_vi": "bình minh",
+      "meaning_vi": "bình minh, rạng đông, lúc sáng tinh mơ; buổi đầu; sự hé rạng; tia sáng đầu tiên (của hy vọng...); bắt đầu rạng, bắt đầu lộ ra, bắt đầu nở ra, hé nở; bắt đầu hiện ra trong trí, loé ra trong trí; trở nên rõ ràng",
+      "example_en": "She rose before dawn to meet the train.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the dawn of civilization",
+          "example_vi": null
+        },
+        {
+          "example_en": "A new day dawns.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I don’t want to be there when the truth dawns on him.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26796,
+      "word": "daytime",
+      "normalized_word": "daytime",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": null,
+      "primary_meaning_vi": "thời gian giữa lúc mặt trời mọc và mặt trời lặn",
+      "meaning_vi": "thời gian giữa lúc mặt trời mọc và mặt trời lặn; ban ngày",
+      "example_en": "daytime television",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26797,
+      "word": "dearly",
+      "normalized_word": "dearly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "thán từ",
+      "phonetic": "/diə/",
+      "primary_meaning_vi": "thân",
+      "meaning_vi": "thân, thân yêu, thân mến, yêu quý; kính thưa, thưa; thân mến (viết trong thư); đáng yêu, đáng mến; thiết tha, chân tình; yêu mến ai, yêu quý ai; life; người thân mến, người yêu quý; người đáng yêu, người đáng quý; vật đáng yêu, vật đáng quý; đắt; thân mến, yêu mến, thương mến; trời ơi!, than ôi! ((cũng) dear me)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 9,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 26798,
+      "word": "debit",
+      "normalized_word": "debit",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'debit/",
+      "primary_meaning_vi": "sự ghi nợ",
+      "meaning_vi": "sự ghi nợ; món nợ khoản nợ; bên nợ; ghi (một món nợ) vào sổ nợ (debit against,  to) ghi (một món nợ) vào sổ ai",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26799,
+      "word": "decade",
+      "normalized_word": "decade",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'dekeid/",
+      "primary_meaning_vi": "bộ mười",
+      "meaning_vi": "bộ mười, nhóm mười; thời kỳ mười năm; tuần (mười ngày)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26800,
+      "word": "decay",
+      "normalized_word": "decay",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/di'kei/",
+      "primary_meaning_vi": "tình trạng suy tàn",
+      "meaning_vi": "tình trạng suy tàn, tình trạng suy sụp, tình trạng sa sút (quốc gia, gia đình...); tình trạng đổ nát, tình trạng mục nát (nhà cửa...); tình trạng thối rữa; chỗ thối (quả); tình trạng sâu, tình trạng mục (răng, xương, gỗ...); sự rã, sự phân rã; suy tàn, suy sụp (quốc gia, gia đình...); đổ nát, mục nát (nhà cửa...); suy tàn, suy sụp, sa sút (quốc gia, gia đình...); hư nát, đổ nát, mục nát (nhà cửa...); sự suy nhược (sức khoẻ); thối rữa (quả); sâu, mục (răng, xương, gỗ...); rã, phân rã; làm sâu (răng...), làm mục nát (gỗ...)",
+      "example_en": "The pair loved to take pictures in the decaying hospital on forty-third street.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The cat's body decayed rapidly.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The extreme humidity decayed the wooden sculptures in the museum's collection in a matter of years.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

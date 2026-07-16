@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-196",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25951,
+      "word": "dissolve",
+      "normalized_word": "dissolve",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/di'zɔlv/",
+      "primary_meaning_vi": "rã ra",
+      "meaning_vi": "rã ra, tan rã, phân huỷ; hoà tan; làm tan ra; giải tán (nghị viện, quốc hội...); giải thể (công ty, tổ chức...); huỷ bỏ (giao kèo, cuộc hôn nhân...); làm tan, làm biến đi (mây mù, hình ảnh...); rã ra, tan rã, phân huỷ; hoà tan; tan ra; giải tán, bị giải tán (nghị viện, quốc hội); giải thể, bị giải thể (công ty, tổ chức...); bị huỷ bỏ; tan biến, biến mất; mờ, chồng; sự mờ chồng",
+      "example_en": "The ruling party or coalition sometimes dissolves parliament early when the polls are favorable, hoping to reconvene with a larger majority.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to dissolve an injunction",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25952,
+      "word": "distance",
+      "normalized_word": "distance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'distəns/",
+      "primary_meaning_vi": "khoảng cách",
+      "meaning_vi": "khoảng cách, tầm xa; khoảng (thời gian); quãng đường; (thể dục,thể thao) quãng đường chạy đua (dài 240 iat); nơi xa, đằng xa, phía xa; thái độ cách biệt, thái độ xa cách; sự cách biệt, sự xa cách; cảnh xa (của một bức hoạ); khoảng cách (giữa hai nốt); để ở xa, đặt ở xa; làm xa ra; làm dường như ở xa; bỏ xa (trong cuộc chạy đua, cuộc thi...)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 25953,
+      "word": "distant",
+      "normalized_word": "distant",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'distənt/",
+      "primary_meaning_vi": "xa",
+      "meaning_vi": "xa, cách, xa cách; có thái độ cách biệt, có thái độ xa cách, không thân mật, lạnh nhạt",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25954,
+      "word": "distinction",
+      "normalized_word": "distinction",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'tiɳkʃn/",
+      "primary_meaning_vi": "sự phân biệt",
+      "meaning_vi": "sự phân biệt; điều phân biệt, điều khác nhau; nét đặc biệt, màu sắc riêng, tính độc đáo (văn); dấu hiệu đặc biệt; biểu hiện danh dự, tước hiệu, danh hiệu; sự biệt đãi, sự ưu đãi, sự trọng vọng; sự ưu tú, sự xuất chúng, sự lỗi lạc",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25955,
+      "word": "distinctly",
+      "normalized_word": "distinctly",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/dis'tiɳktli/",
+      "primary_meaning_vi": "riêng biệt",
+      "meaning_vi": "riêng biệt; rõ ràng, rành mạch, minh bạch, rõ rệt",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25956,
+      "word": "distinguish",
+      "normalized_word": "distinguish",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "nội động từ",
+      "phonetic": "/dis'tiɳgwiʃ/",
+      "primary_meaning_vi": "phân biệt",
+      "meaning_vi": "phân biệt; nghe ra, nhận ra; chia thành, xếp thành (loại...); phân biệt, nhận định sự khác nhau (giữa...)",
+      "example_en": "The soldier distinguished himself in combat and received a medal.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25957,
+      "word": "distribute",
+      "normalized_word": "distribute",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/dis'tribju:t/",
+      "primary_meaning_vi": "phân bổ",
+      "meaning_vi": "phân bổ, phân phối, phân phát; rắc, rải; sắp xếp, xếp loại, phân loại; bỏ (chữ in) (dỡ chữ xếp vào từng ô)",
+      "example_en": "He distributed the bread amongst his followers.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The agency distributes newspapers to local shops.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A network of children distributes flyers to every house.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I raked the soil then distributed grass seed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25958,
+      "word": "distribution",
+      "normalized_word": "distribution",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,distri'bju:ʃn/",
+      "primary_meaning_vi": "sự phân bổ",
+      "meaning_vi": "sự phân bổ, sự phân phối, sự phân phát; sự rắc, sự rải; sự sắp xếp, sự xếp loại, sự phân loại; bỏ chữ (xếp vào từng ô)",
+      "example_en": "The distribution of my little rock magazine is about 3,000.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The wealth distribution became extremely skewed in the kleptocracy.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The declarer had 3-6-2-2 distribution.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25959,
+      "word": "district",
+      "normalized_word": "district",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'distrikt/",
+      "primary_meaning_vi": "địa hạt",
+      "meaning_vi": "địa hạt, khu vực, quận, huyện, khu; vùng, miền; khu vực bầu cử; giáo khu nhỏ; thuộc địa hạt, thuộc quận, thuộc huyện, thuộc khu; thuộc giáo khu nhỏ; chia thành địa hạt, chia thành khu vực, chia thành quận, chia thành huyện, chia thành khu",
+      "example_en": "the Soho district of London",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "the Lake District in Cumbria",
+          "example_vi": null
+        },
+        {
+          "example_en": "South Oxfordshire District Council",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25960,
+      "word": "disturbance",
+      "normalized_word": "disturbance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/dis'tə:bəns/",
+      "primary_meaning_vi": "sự làm mất yên tĩnh",
+      "meaning_vi": "sự làm mất yên tĩnh, sự làm náo động; sự quấy rầy, sự làm bối rối, sự làm lo âu; sự làm xáo lộn; sự làm nhiễu loạn; sự nhiễu loạn; âm tạp, quyển khí; sự vi phạn (quyền hưởng dụng)",
+      "example_en": "That guy causes a lot of trouble, you know, he's such a disturbance.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

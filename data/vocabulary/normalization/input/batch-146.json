@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-146",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25451,
+      "word": "advertise",
+      "normalized_word": "advertise",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/'ædvətaiz/ (advertize) /'ædvətaiz/",
+      "primary_meaning_vi": "báo cho biết",
+      "meaning_vi": "báo cho biết, báo cho ai biết trước; quảng cáo (hàng); đăng báo; yết thị; thông báo (cho mọi người biết)",
+      "example_en": "For personal needs, advertise on the internet or in a local newspaper.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Over the air, they advertise their product on drive-time radio talk shows and TV news shows.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25452,
+      "word": "adviser",
+      "normalized_word": "adviser",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/əd'vaizə/ (advisor) /əd'vaizə/",
+      "primary_meaning_vi": "người khuyên bảo",
+      "meaning_vi": "người khuyên bảo, người chỉ bảo, cố vấn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25453,
+      "word": "advisor",
+      "normalized_word": "advisor",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/əd'vaizə/ (advisor) /əd'vaizə/",
+      "primary_meaning_vi": "người khuyên bảo",
+      "meaning_vi": "người khuyên bảo, người chỉ bảo, cố vấn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25454,
+      "word": "aerobics",
+      "normalized_word": "aerobics",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ, pl",
+      "phonetic": null,
+      "primary_meaning_vi": "thể dục nhịp điệu",
+      "meaning_vi": "thể dục nhịp điệu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25455,
+      "word": "affect",
+      "normalized_word": "affect",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'fekt/",
+      "primary_meaning_vi": "làm ảnh hưởng đến",
+      "meaning_vi": "làm ảnh hưởng đến, làm tác động đến; chạm đến; làm xúc động, làm cảm động, làm mủi lòng; làm nhiễm phải, làm mắc (bệnh); (thường) dạng bị động; bổ nhiệm; giả vờ, giả bộ, làm ra vẻ; có hình dạng, thành hình; dùng, ưa dùng, thích; thích ăn mặc quần áo hào nhoáng; yêu dấu, âu yếm; sự xúc động",
+      "example_en": "The experience affected me deeply.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He was deeply affected by the tragic ending of the play.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Hepatitis affects the liver.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He managed to affect a smile despite feeling quite miserable.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25456,
+      "word": "affection",
+      "normalized_word": "affection",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'fekʃn/",
+      "primary_meaning_vi": "sự làm ảnh hưởng đến",
+      "meaning_vi": "sự làm ảnh hưởng đến, sự làm tác động đến; tình cảm, cảm xúc; + towards,  for) lòng yêu thương, sự yêu mến, tình cảm, thiện ý; bệnh tật, bệnh hoạn; affection towards khuynh hướng, thiện ý về; tính chất, thuộc tính; trạng thái cơ thể (do bị một cái gì tác động vào...); lối sống",
+      "example_en": "I have a lot of affection for my little sister.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25457,
+      "word": "afford",
+      "normalized_word": "afford",
+      "cefr_level": "B1",
+      "pos": "verb",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'fɔ:d/",
+      "primary_meaning_vi": "có thể",
+      "meaning_vi": "có thể, có đủ sức, có đủ khả năng, có đủ điều kiện (để làm gì); cho, tạo cho, cấp cho, ban cho",
+      "example_en": "I think we can afford the extra hour it will take. We can only afford to buy a small car at the moment.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "A affords his goods cheaper than B.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Grapes afford wine. Olives afford oil. The earth affords fruit. The sea affords an abundant supply of fish.",
+          "example_vi": null
+        },
+        {
+          "example_en": "A good life affords consolation in old age.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25458,
+      "word": "afterward",
+      "normalized_word": "afterward",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ɑ:ftəwəd/ (afterward) /'ɑ:ftəwədz/",
+      "primary_meaning_vi": "sau này",
+      "meaning_vi": "sau này, về sau, sau đấy, rồi thì",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25459,
+      "word": "afterwards",
+      "normalized_word": "afterwards",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/'ɑ:ftəwəd/ (afterward) /'ɑ:ftəwədz/",
+      "primary_meaning_vi": "sau này",
+      "meaning_vi": "sau này, về sau, sau đấy, rồi thì",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25460,
+      "word": "agenda",
+      "normalized_word": "agenda",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'dʤendə/",
+      "primary_meaning_vi": "những việc phải làm",
+      "meaning_vi": "những việc phải làm; chương trình nghị sự; nhật ký công tác",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

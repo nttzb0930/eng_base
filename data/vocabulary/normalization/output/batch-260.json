@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26591,
+      "quiz_meaning_vi": "hầm chứa",
+      "meaning_vi_clean": "hầm chứa; hầm rượu",
+      "examples_clean": [
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "We keep the old furniture in the cellar.",
+          "example_vi": "Chúng tôi giữ đồ đạc cũ trong hầm chứa."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "The house has a large cellar for storage.",
+          "example_vi": "Ngôi nhà có một hầm chứa lớn để lưu trữ đồ."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "It was cool and dark down in the cellar.",
+          "example_vi": "Dưới hầm chứa trời tối và mát mẻ."
+        },
+        {
+          "meaning_vi": "hầm chứa",
+          "example_en": "They converted the cellar into a playroom.",
+          "example_vi": "Họ đã cải tạo hầm chứa thành phòng chơi."
+        },
+        {
+          "meaning_vi": "hầm rượu",
+          "example_en": "He has an impressive collection in his wine cellar.",
+          "example_vi": "Ông ấy có một bộ sưu tập ấn tượng trong hầm rượu của mình."
+        },
+        {
+          "meaning_vi": "hầm rượu",
+          "example_en": "The restaurant keeps its best bottles in the cellar.",
+          "example_vi": "Nhà hàng giữ những chai rượu ngon nhất của họ trong hầm rượu."
+        },
+        {
+          "meaning_vi": "hầm rượu",
+          "example_en": "We visited the historic cellar during our trip.",
+          "example_vi": "Chúng tôi đã ghé thăm hầm rượu lịch sử trong chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "hầm rượu",
+          "example_en": "The temperature in the cellar is perfect for aging wine.",
+          "example_vi": "Nhiệt độ trong hầm rượu rất lý tưởng để ủ rượu."
+        },
+        {
+          "meaning_vi": "hầm rượu",
+          "example_en": "They store their vintage wines in a cool cellar.",
+          "example_vi": "Họ lưu trữ những loại rượu vang lâu năm trong một hầm rượu mát mẻ."
+        },
+        {
+          "meaning_vi": "hầm rượu",
+          "example_en": "The cellar is filled with barrels of fine wine.",
+          "example_vi": "Hầm rượu chứa đầy những thùng rượu vang hảo hạng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Tách nghĩa thành hầm chứa và hầm rượu để đảm bảo tính chính xác.",
+      "word": "cellar",
+      "normalized_word": "cellar",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We keep the old furniture in the cellar.",
+      "example_vi_clean": "Chúng tôi giữ đồ đạc cũ trong hầm chứa."
+    },
+    {
+      "id": 26592,
+      "quiz_meaning_vi": "người chơi viôlôngxen",
+      "meaning_vi_clean": "người chơi viôlôngxen",
+      "examples_clean": [
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "The cellist played a beautiful solo.",
+          "example_vi": "Người chơi viôlôngxen đã chơi một bản độc tấu tuyệt đẹp."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "She is a talented cellist in the local orchestra.",
+          "example_vi": "Cô ấy là một người chơi viôlôngxen tài năng trong dàn nhạc địa phương."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "The famous cellist performed at the concert hall.",
+          "example_vi": "Người chơi viôlôngxen nổi tiếng đã biểu diễn tại nhà hát."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "He has been a professional cellist for ten years.",
+          "example_vi": "Anh ấy đã là một người chơi viôlôngxen chuyên nghiệp được mười năm."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "The young cellist practiced for hours every day.",
+          "example_vi": "Người chơi viôlôngxen trẻ tuổi đã luyện tập hàng giờ mỗi ngày."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "Many people admire the skill of this cellist.",
+          "example_vi": "Nhiều người ngưỡng mộ kỹ năng của người chơi viôlôngxen này."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "The cellist sat in the front row of the stage.",
+          "example_vi": "Người chơi viôlôngxen ngồi ở hàng ghế đầu của sân khấu."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "She studied to become a professional cellist.",
+          "example_vi": "Cô ấy đã học để trở thành một người chơi viôlôngxen chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "The cellist tuned the instrument before the show.",
+          "example_vi": "Người chơi viôlôngxen đã chỉnh dây đàn trước buổi biểu diễn."
+        },
+        {
+          "meaning_vi": "người chơi viôlôngxen",
+          "example_en": "A great cellist can express deep emotions through music.",
+          "example_vi": "Một người chơi viôlôngxen giỏi có thể truyền tải những cảm xúc sâu sắc qua âm nhạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ.",
+      "word": "cellist",
+      "normalized_word": "cellist",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The cellist played a beautiful solo.",
+      "example_vi_clean": "Người chơi viôlôngxen đã chơi một bản độc tấu tuyệt đẹp."
+    },
+    {
+      "id": 26593,
+      "quiz_meaning_vi": "đàn viôlôngxen",
+      "meaning_vi_clean": "đàn viôlôngxen",
+      "examples_clean": [
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "She learned how to play the cello at school.",
+          "example_vi": "Cô ấy đã học cách chơi đàn viôlôngxen ở trường."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "The sound of the cello is very deep and rich.",
+          "example_vi": "Âm thanh của đàn viôlôngxen rất trầm và ấm."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "He bought a new cello for his daughter.",
+          "example_vi": "Anh ấy đã mua một cây đàn viôlôngxen mới cho con gái mình."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "The cello is a large string instrument.",
+          "example_vi": "Đàn viôlôngxen là một loại nhạc cụ dây lớn."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "She carries her cello in a protective case.",
+          "example_vi": "Cô ấy mang đàn viôlôngxen của mình trong một chiếc hộp bảo vệ."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "The cello requires a lot of practice to master.",
+          "example_vi": "Đàn viôlôngxen đòi hỏi rất nhiều sự luyện tập để thành thạo."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "He played a beautiful melody on the cello.",
+          "example_vi": "Anh ấy đã chơi một giai điệu tuyệt đẹp trên đàn viôlôngxen."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "The cello was placed carefully on the stand.",
+          "example_vi": "Cây đàn viôlôngxen được đặt cẩn thận trên giá đỡ."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "She loves the warm tone of the cello.",
+          "example_vi": "Cô ấy yêu âm sắc ấm áp của đàn viôlôngxen."
+        },
+        {
+          "meaning_vi": "đàn viôlôngxen",
+          "example_en": "The orchestra has several players on the cello.",
+          "example_vi": "Dàn nhạc có vài người chơi đàn viôlôngxen."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ.",
+      "word": "cello",
+      "normalized_word": "cello",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She learned how to play the cello at school.",
+      "example_vi_clean": "Cô ấy đã học cách chơi đàn viôlôngxen ở trường."
+    },
+    {
+      "id": 26594,
+      "quiz_meaning_vi": "nghĩa trang",
+      "meaning_vi_clean": "nghĩa trang",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "They visited the old cemetery on Sunday.",
+          "example_vi": "Họ đã đến thăm nghĩa trang cũ vào Chủ nhật."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "The cemetery is located near the church.",
+          "example_vi": "Nghĩa trang nằm gần nhà thờ."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "It is very quiet in the cemetery.",
+          "example_vi": "Trong nghĩa trang rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "Many famous people are buried in this cemetery.",
+          "example_vi": "Nhiều người nổi tiếng được chôn cất tại nghĩa trang này."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "The cemetery is well maintained by the city.",
+          "example_vi": "Nghĩa trang được thành phố bảo trì tốt."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "They walked through the cemetery to reach the park.",
+          "example_vi": "Họ đi bộ qua nghĩa trang để đến công viên."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "The cemetery is full of old trees.",
+          "example_vi": "Nghĩa trang đầy những cây cổ thụ."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "She left flowers at the cemetery.",
+          "example_vi": "Cô ấy đã để lại hoa tại nghĩa trang."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "The cemetery is open to visitors during the day.",
+          "example_vi": "Nghĩa trang mở cửa cho khách tham quan vào ban ngày."
+        },
+        {
+          "meaning_vi": "nghĩa trang",
+          "example_en": "They held a small ceremony at the cemetery.",
+          "example_vi": "Họ đã tổ chức một buổi lễ nhỏ tại nghĩa trang."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ.",
+      "word": "cemetery",
+      "normalized_word": "cemetery",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They visited the old cemetery on Sunday.",
+      "example_vi_clean": "Họ đã đến thăm nghĩa trang cũ vào Chủ nhật."
+    },
+    {
+      "id": 26595,
+      "quiz_meaning_vi": "chia trăm độ",
+      "meaning_vi_clean": "chia trăm độ",
+      "examples_clean": [
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "The thermometer uses a centigrade scale.",
+          "example_vi": "Nhiệt kế sử dụng thang đo chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "Water boils at 100 degrees centigrade.",
+          "example_vi": "Nước sôi ở 100 độ chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "The temperature is measured in centigrade.",
+          "example_vi": "Nhiệt độ được đo bằng thang chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "It is 20 degrees centigrade outside today.",
+          "example_vi": "Hôm nay bên ngoài là 20 độ chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "Most countries use the centigrade system.",
+          "example_vi": "Hầu hết các quốc gia sử dụng hệ thống chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "The centigrade scale is based on water.",
+          "example_vi": "Thang đo chia trăm độ dựa trên nước."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "Convert the temperature to centigrade.",
+          "example_vi": "Hãy chuyển đổi nhiệt độ sang thang chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "The weather report is given in centigrade.",
+          "example_vi": "Bản tin thời tiết được đưa ra bằng thang chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "Freezing point is zero degrees centigrade.",
+          "example_vi": "Điểm đóng băng là không độ chia trăm độ."
+        },
+        {
+          "meaning_vi": "chia trăm độ",
+          "example_en": "The centigrade scale is easy to understand.",
+          "example_vi": "Thang đo chia trăm độ rất dễ hiểu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ thành danh từ. Giữ nghĩa chính, bổ sung 10 ví dụ.",
+      "word": "centigrade",
+      "normalized_word": "centigrade",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The thermometer uses a centigrade scale.",
+      "example_vi_clean": "Nhiệt kế sử dụng thang đo chia trăm độ."
+    },
+    {
+      "id": 26596,
+      "quiz_meaning_vi": "giấy chứng nhận",
+      "meaning_vi_clean": "giấy chứng nhận; chứng chỉ",
+      "examples_clean": [
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "You need a birth certificate to apply for a passport.",
+          "example_vi": "Bạn cần giấy chứng nhận khai sinh để xin hộ chiếu."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "The marriage certificate was signed by the official.",
+          "example_vi": "Giấy chứng nhận kết hôn đã được ký bởi viên chức."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "Please keep your medical certificate in a safe place.",
+          "example_vi": "Vui lòng giữ giấy chứng nhận y tế của bạn ở nơi an toàn."
+        },
+        {
+          "meaning_vi": "giấy chứng nhận",
+          "example_en": "The death certificate is required for the legal process.",
+          "example_vi": "Giấy chứng nhận tử vong là cần thiết cho quy trình pháp lý."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "She earned a certificate in computer science.",
+          "example_vi": "Cô ấy đã đạt được một chứng chỉ về khoa học máy tính."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "He is studying for a professional certificate.",
+          "example_vi": "Anh ấy đang học để lấy một chứng chỉ chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "The course provides a certificate upon completion.",
+          "example_vi": "Khóa học cung cấp một chứng chỉ sau khi hoàn thành."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "She framed her teaching certificate.",
+          "example_vi": "Cô ấy đã đóng khung chứng chỉ giảng dạy của mình."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "He holds a certificate in language teaching.",
+          "example_vi": "Anh ấy có một chứng chỉ về giảng dạy ngôn ngữ."
+        },
+        {
+          "meaning_vi": "chứng chỉ",
+          "example_en": "The certificate proves that she passed the exam.",
+          "example_vi": "Chứng chỉ chứng minh rằng cô ấy đã vượt qua kỳ thi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Tách nghĩa thành giấy chứng nhận và chứng chỉ.",
+      "word": "certificate",
+      "normalized_word": "certificate",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You need a birth certificate to apply for a passport.",
+      "example_vi_clean": "Bạn cần giấy chứng nhận khai sinh để xin hộ chiếu."
+    },
+    {
+      "id": 26597,
+      "quiz_meaning_vi": "sự cấp giấy chứng nhận",
+      "meaning_vi_clean": "sự cấp giấy chứng nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "The process of certification takes several weeks.",
+          "example_vi": "Quá trình sự cấp giấy chứng nhận mất vài tuần."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "They are applying for ISO certification.",
+          "example_vi": "Họ đang nộp đơn xin sự cấp giấy chứng nhận ISO."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "Certification is required for this job.",
+          "example_vi": "Sự cấp giấy chứng nhận là bắt buộc cho công việc này."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "The company received its safety certification today.",
+          "example_vi": "Công ty đã nhận được sự cấp giấy chứng nhận an toàn hôm nay."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "He is responsible for the certification of new products.",
+          "example_vi": "Anh ấy chịu trách nhiệm về sự cấp giấy chứng nhận cho các sản phẩm mới."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "The certification ensures the quality of the goods.",
+          "example_vi": "Sự cấp giấy chứng nhận đảm bảo chất lượng của hàng hóa."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "We need to renew our professional certification.",
+          "example_vi": "Chúng tôi cần gia hạn sự cấp giấy chứng nhận chuyên môn của mình."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "The certification program is very popular.",
+          "example_vi": "Chương trình sự cấp giấy chứng nhận rất phổ biến."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "She completed the certification requirements.",
+          "example_vi": "Cô ấy đã hoàn thành các yêu cầu về sự cấp giấy chứng nhận."
+        },
+        {
+          "meaning_vi": "sự cấp giấy chứng nhận",
+          "example_en": "The certification is valid for two years.",
+          "example_vi": "Sự cấp giấy chứng nhận có hiệu lực trong hai năm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung 10 ví dụ.",
+      "word": "certification",
+      "normalized_word": "certification",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The process of certification takes several weeks.",
+      "example_vi_clean": "Quá trình sự cấp giấy chứng nhận mất vài tuần."
+    },
+    {
+      "id": 26598,
+      "quiz_meaning_vi": "chứng nhận",
+      "meaning_vi_clean": "chứng nhận; chứng thực",
+      "examples_clean": [
+        {
+          "meaning_vi": "chứng nhận",
+          "example_en": "The doctor certified that he was fit to work.",
+          "example_vi": "Bác sĩ đã chứng nhận rằng anh ấy đủ sức khỏe để làm việc."
+        },
+        {
+          "meaning_vi": "chứng nhận",
+          "example_en": "The school certified her completion of the course.",
+          "example_vi": "Nhà trường đã chứng nhận việc cô ấy hoàn thành khóa học."
+        },
+        {
+          "meaning_vi": "chứng nhận",
+          "example_en": "They certified the documents as authentic.",
+          "example_vi": "Họ đã chứng nhận các tài liệu là xác thực."
+        },
+        {
+          "meaning_vi": "chứng nhận",
+          "example_en": "The organization certified the new safety standards.",
+          "example_vi": "Tổ chức đã chứng nhận các tiêu chuẩn an toàn mới."
+        },
+        {
+          "meaning_vi": "chứng thực",
+          "example_en": "He certified the signature on the contract.",
+          "example_vi": "Anh ấy đã chứng thực chữ ký trên hợp đồng."
+        },
+        {
+          "meaning_vi": "chứng thực",
+          "example_en": "The lawyer certified the copy of the will.",
+          "example_vi": "Luật sư đã chứng thực bản sao của di chúc."
+        },
+        {
+          "meaning_vi": "chứng thực",
+          "example_en": "She certified that the information was correct.",
+          "example_vi": "Cô ấy đã chứng thực rằng thông tin là chính xác."
+        },
+        {
+          "meaning_vi": "chứng thực",
+          "example_en": "The accountant certified the financial report.",
+          "example_vi": "Kế toán đã chứng thực báo cáo tài chính."
+        },
+        {
+          "meaning_vi": "chứng thực",
+          "example_en": "They certified the quality of the materials.",
+          "example_vi": "Họ đã chứng thực chất lượng của các vật liệu."
+        },
+        {
+          "meaning_vi": "chứng thực",
+          "example_en": "The official certified the results of the election.",
+          "example_vi": "Viên chức đã chứng thực kết quả của cuộc bầu cử."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ.",
+      "word": "certify",
+      "normalized_word": "certify",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The doctor certified that he was fit to work.",
+      "example_vi_clean": "Bác sĩ đã chứng nhận rằng anh ấy đủ sức khỏe để làm việc."
+    },
+    {
+      "id": 26599,
+      "quiz_meaning_vi": "thủ tướng",
+      "meaning_vi_clean": "thủ tướng; hiệu trưởng",
+      "examples_clean": [
+        {
+          "meaning_vi": "thủ tướng",
+          "example_en": "The German Chancellor gave a speech today.",
+          "example_vi": "Thủ tướng Đức đã có bài phát biểu hôm nay."
+        },
+        {
+          "meaning_vi": "thủ tướng",
+          "example_en": "The Chancellor met with other world leaders.",
+          "example_vi": "Thủ tướng đã gặp gỡ các nhà lãnh đạo thế giới khác."
+        },
+        {
+          "meaning_vi": "thủ tướng",
+          "example_en": "The Chancellor announced new economic policies.",
+          "example_vi": "Thủ tướng đã công bố các chính sách kinh tế mới."
+        },
+        {
+          "meaning_vi": "thủ tướng",
+          "example_en": "The Chancellor is the head of the government.",
+          "example_vi": "Thủ tướng là người đứng đầu chính phủ."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The university Chancellor presided over the graduation.",
+          "example_vi": "Hiệu trưởng trường đại học đã chủ trì lễ tốt nghiệp."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The Chancellor welcomed the new students.",
+          "example_vi": "Hiệu trưởng đã chào đón các sinh viên mới."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The Chancellor awarded the honorary degrees.",
+          "example_vi": "Hiệu trưởng đã trao các bằng danh dự."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The Chancellor spoke at the university anniversary.",
+          "example_vi": "Hiệu trưởng đã phát biểu tại lễ kỷ niệm của trường."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The Chancellor oversees the academic affairs.",
+          "example_vi": "Hiệu trưởng giám sát các vấn đề học thuật."
+        },
+        {
+          "meaning_vi": "hiệu trưởng",
+          "example_en": "The Chancellor met with the faculty members.",
+          "example_vi": "Hiệu trưởng đã gặp gỡ các giảng viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa chính thành thủ tướng (phổ biến hơn) và hiệu trưởng. Bổ sung 10 ví dụ.",
+      "word": "chancellor",
+      "normalized_word": "chancellor",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The German Chancellor gave a speech today.",
+      "example_vi_clean": "Thủ tướng Đức đã có bài phát biểu hôm nay."
+    },
+    {
+      "id": 26600,
+      "quiz_meaning_vi": "hỗn độn",
+      "meaning_vi_clean": "hỗn độn; hỗn loạn",
+      "examples_clean": [
+        {
+          "meaning_vi": "hỗn độn",
+          "example_en": "The room was in a chaotic state.",
+          "example_vi": "Căn phòng ở trong một trạng thái hỗn độn."
+        },
+        {
+          "meaning_vi": "hỗn độn",
+          "example_en": "The situation became chaotic after the news.",
+          "example_vi": "Tình hình trở nên hỗn độn sau tin tức đó."
+        },
+        {
+          "meaning_vi": "hỗn độn",
+          "example_en": "His desk is always in a chaotic mess.",
+          "example_vi": "Bàn làm việc của anh ấy luôn trong tình trạng hỗn độn."
+        },
+        {
+          "meaning_vi": "hỗn độn",
+          "example_en": "The traffic was chaotic during the storm.",
+          "example_vi": "Giao thông rất hỗn độn trong suốt cơn bão."
+        },
+        {
+          "meaning_vi": "hỗn loạn",
+          "example_en": "The crowd was chaotic and hard to control.",
+          "example_vi": "Đám đông rất hỗn loạn và khó kiểm soát."
+        },
+        {
+          "meaning_vi": "hỗn loạn",
+          "example_en": "The market was chaotic due to the price changes.",
+          "example_vi": "Thị trường rất hỗn loạn do những thay đổi về giá."
+        },
+        {
+          "meaning_vi": "hỗn loạn",
+          "example_en": "The scene at the airport was chaotic.",
+          "example_vi": "Khung cảnh tại sân bay rất hỗn loạn."
+        },
+        {
+          "meaning_vi": "hỗn loạn",
+          "example_en": "The protest turned chaotic by the evening.",
+          "example_vi": "Cuộc biểu tình trở nên hỗn loạn vào buổi tối."
+        },
+        {
+          "meaning_vi": "hỗn loạn",
+          "example_en": "The transition period was quite chaotic.",
+          "example_vi": "Giai đoạn chuyển tiếp khá hỗn loạn."
+        },
+        {
+          "meaning_vi": "hỗn loạn",
+          "example_en": "The chaotic events led to many problems.",
+          "example_vi": "Những sự kiện hỗn loạn đã dẫn đến nhiều vấn đề."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung 10 ví dụ.",
+      "word": "chaotic",
+      "normalized_word": "chaotic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The room was in a chaotic state.",
+      "example_vi_clean": "Căn phòng ở trong một trạng thái hỗn độn."
+    }
+  ]
+}

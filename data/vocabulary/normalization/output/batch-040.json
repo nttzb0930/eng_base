@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24391,
+      "quiz_meaning_vi": "nghe",
+      "meaning_vi_clean": "nghe; nghe nói; nhận được tin",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghe",
+          "example_en": "I can hear someone talking in the next room.",
+          "example_vi": "Tôi có thể nghe thấy ai đó đang nói chuyện trong phòng bên cạnh."
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "Did you hear that strange noise just now?",
+          "example_vi": "Bạn có nghe thấy tiếng động lạ đó vừa rồi không?"
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "She could hear the birds singing in the morning.",
+          "example_vi": "Cô ấy có thể nghe thấy tiếng chim hót vào buổi sáng."
+        },
+        {
+          "meaning_vi": "nghe",
+          "example_en": "I heard a knock at the door.",
+          "example_vi": "Tôi nghe thấy tiếng gõ cửa."
+        },
+        {
+          "meaning_vi": "nghe nói",
+          "example_en": "I heard that they are moving to a new house.",
+          "example_vi": "Tôi nghe nói họ sắp chuyển đến một ngôi nhà mới."
+        },
+        {
+          "meaning_vi": "nghe nói",
+          "example_en": "Have you heard that the concert was cancelled?",
+          "example_vi": "Bạn đã nghe nói buổi hòa nhạc bị hủy chưa?"
+        },
+        {
+          "meaning_vi": "nghe nói",
+          "example_en": "I heard it is going to rain tomorrow.",
+          "example_vi": "Tôi nghe nói ngày mai trời sẽ mưa."
+        },
+        {
+          "meaning_vi": "nhận được tin",
+          "example_en": "I was glad to hear the good news about your job.",
+          "example_vi": "Tôi rất vui khi nhận được tin tốt về công việc của bạn."
+        },
+        {
+          "meaning_vi": "nhận được tin",
+          "example_en": "We were shocked to hear of his sudden departure.",
+          "example_vi": "Chúng tôi đã rất sốc khi nhận được tin về sự ra đi đột ngột của anh ấy."
+        },
+        {
+          "meaning_vi": "nhận được tin",
+          "example_en": "I hope to hear from you soon.",
+          "example_vi": "Tôi hy vọng sớm nhận được tin từ bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa phổ biến, loại bỏ các nghĩa hiếm hoặc không phù hợp cấp độ A1. Bổ sung ví dụ minh họa rõ ràng.",
+      "word": "hear",
+      "normalized_word": "hear",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I can hear someone talking in the next room.",
+      "example_vi_clean": "Tôi có thể nghe thấy ai đó đang nói chuyện trong phòng bên cạnh."
+    },
+    {
+      "id": 24392,
+      "quiz_meaning_vi": "tim",
+      "meaning_vi_clean": "tim; trái tim; trung tâm",
+      "examples_clean": [
+        {
+          "meaning_vi": "tim",
+          "example_en": "The heart pumps blood throughout the body.",
+          "example_vi": "Tim bơm máu đi khắp cơ thể."
+        },
+        {
+          "meaning_vi": "tim",
+          "example_en": "He has a strong heart.",
+          "example_vi": "Anh ấy có một trái tim khỏe mạnh."
+        },
+        {
+          "meaning_vi": "tim",
+          "example_en": "The doctor listened to her heart.",
+          "example_vi": "Bác sĩ đã nghe tim của cô ấy."
+        },
+        {
+          "meaning_vi": "tim",
+          "example_en": "Regular exercise is good for your heart.",
+          "example_vi": "Tập thể dục thường xuyên rất tốt cho tim của bạn."
+        },
+        {
+          "meaning_vi": "trái tim",
+          "example_en": "She has a kind heart.",
+          "example_vi": "Cô ấy có một trái tim nhân hậu."
+        },
+        {
+          "meaning_vi": "trái tim",
+          "example_en": "He put his heart into the project.",
+          "example_vi": "Anh ấy đã đặt cả trái tim vào dự án này."
+        },
+        {
+          "meaning_vi": "trái tim",
+          "example_en": "She broke his heart when she left.",
+          "example_vi": "Cô ấy đã làm tan nát trái tim anh ấy khi cô ấy rời đi."
+        },
+        {
+          "meaning_vi": "trái tim",
+          "example_en": "I know the song by heart.",
+          "example_vi": "Tôi thuộc lòng bài hát đó."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "The park is in the heart of the city.",
+          "example_vi": "Công viên nằm ở trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "trung tâm",
+          "example_en": "This issue is at the heart of the matter.",
+          "example_vi": "Vấn đề này nằm ở trung tâm của sự việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa cơ bản, loại bỏ các nghĩa lóng hoặc quá phức tạp. Bổ sung ví dụ cho từng nghĩa.",
+      "word": "heart",
+      "normalized_word": "heart",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The heart pumps blood throughout the body.",
+      "example_vi_clean": "Tim bơm máu đi khắp cơ thể."
+    },
+    {
+      "id": 24393,
+      "quiz_meaning_vi": "nặng",
+      "meaning_vi_clean": "nặng; lớn; dữ dội",
+      "examples_clean": [
+        {
+          "meaning_vi": "nặng",
+          "example_en": "This box is too heavy for me to carry.",
+          "example_vi": "Cái hộp này quá nặng để tôi có thể mang theo."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "He lifted the heavy stone with ease.",
+          "example_vi": "Anh ấy nhấc hòn đá nặng một cách dễ dàng."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "The bag was heavy with books.",
+          "example_vi": "Cái túi nặng trĩu vì sách."
+        },
+        {
+          "meaning_vi": "nặng",
+          "example_en": "She has a heavy suitcase.",
+          "example_vi": "Cô ấy có một chiếc vali nặng."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "There was heavy traffic on the highway.",
+          "example_vi": "Có lưu lượng giao thông lớn trên đường cao tốc."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "He has a heavy workload this week.",
+          "example_vi": "Anh ấy có khối lượng công việc lớn trong tuần này."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "She made a heavy investment in the company.",
+          "example_vi": "Cô ấy đã thực hiện một khoản đầu tư lớn vào công ty."
+        },
+        {
+          "meaning_vi": "dữ dội",
+          "example_en": "We had heavy rain all night.",
+          "example_vi": "Chúng tôi đã có một trận mưa dữ dội suốt đêm."
+        },
+        {
+          "meaning_vi": "dữ dội",
+          "example_en": "The city suffered heavy damage in the storm.",
+          "example_vi": "Thành phố đã chịu thiệt hại dữ dội trong cơn bão."
+        },
+        {
+          "meaning_vi": "dữ dội",
+          "example_en": "They were involved in heavy fighting.",
+          "example_vi": "Họ đã tham gia vào một cuộc chiến dữ dội."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ. Giữ nghĩa phổ biến, loại bỏ nghĩa chuyên ngành. Bổ sung ví dụ.",
+      "word": "heavy",
+      "normalized_word": "heavy",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "This box is too heavy for me to carry.",
+      "example_vi_clean": "Cái hộp này quá nặng để tôi có thể mang theo."
+    },
+    {
+      "id": 24394,
+      "quiz_meaning_vi": "chào anh!",
+      "meaning_vi_clean": "chào anh!; này",
+      "examples_clean": [
+        {
+          "meaning_vi": "chào anh!",
+          "example_en": "Hello, how are you today?",
+          "example_vi": "Chào anh, hôm nay anh thế nào?"
+        },
+        {
+          "meaning_vi": "chào anh!",
+          "example_en": "Hello, it is nice to meet you.",
+          "example_vi": "Chào anh, rất vui được gặp anh."
+        },
+        {
+          "meaning_vi": "chào anh!",
+          "example_en": "Hello, is anyone home?",
+          "example_vi": "Chào anh, có ai ở nhà không?"
+        },
+        {
+          "meaning_vi": "chào anh!",
+          "example_en": "Hello, I am calling about the job.",
+          "example_vi": "Chào anh, tôi gọi điện về công việc."
+        },
+        {
+          "meaning_vi": "này",
+          "example_en": "Hello? Can you hear me?",
+          "example_vi": "Này? Bạn có nghe thấy tôi không?"
+        },
+        {
+          "meaning_vi": "này",
+          "example_en": "Hello! Are you listening to me?",
+          "example_vi": "Này! Bạn có đang nghe tôi nói không?"
+        },
+        {
+          "meaning_vi": "này",
+          "example_en": "Hello, look at this!",
+          "example_vi": "Này, nhìn cái này đi!"
+        },
+        {
+          "meaning_vi": "này",
+          "example_en": "Hello, wait for me!",
+          "example_vi": "Này, đợi tôi với!"
+        },
+        {
+          "meaning_vi": "này",
+          "example_en": "Hello, what are you doing?",
+          "example_vi": "Này, bạn đang làm gì thế?"
+        },
+        {
+          "meaning_vi": "này",
+          "example_en": "Hello, pay attention please.",
+          "example_vi": "Này, làm ơn chú ý đi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang thán từ. Giữ nghĩa chào hỏi và nghĩa gọi chú ý. Bổ sung ví dụ.",
+      "word": "hello",
+      "normalized_word": "hello",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Hello, how are you today?",
+      "example_vi_clean": "Chào anh, hôm nay anh thế nào?"
+    },
+    {
+      "id": 24395,
+      "quiz_meaning_vi": "nó",
+      "meaning_vi_clean": "nó; của nó",
+      "examples_clean": [
+        {
+          "meaning_vi": "nó",
+          "example_en": "I saw her at the park yesterday.",
+          "example_vi": "Tôi đã thấy cô ấy ở công viên hôm qua."
+        },
+        {
+          "meaning_vi": "nó",
+          "example_en": "Please give this book to her.",
+          "example_vi": "Làm ơn đưa cuốn sách này cho cô ấy."
+        },
+        {
+          "meaning_vi": "nó",
+          "example_en": "I talked to her about the plan.",
+          "example_vi": "Tôi đã nói chuyện với cô ấy về kế hoạch."
+        },
+        {
+          "meaning_vi": "nó",
+          "example_en": "She is my friend, I like her.",
+          "example_vi": "Cô ấy là bạn tôi, tôi quý cô ấy."
+        },
+        {
+          "meaning_vi": "của nó",
+          "example_en": "This is her bag.",
+          "example_vi": "Đây là túi của cô ấy."
+        },
+        {
+          "meaning_vi": "của nó",
+          "example_en": "I like her new car.",
+          "example_vi": "Tôi thích chiếc xe mới của cô ấy."
+        },
+        {
+          "meaning_vi": "của nó",
+          "example_en": "Her name is Sarah.",
+          "example_vi": "Tên của cô ấy là Sarah."
+        },
+        {
+          "meaning_vi": "của nó",
+          "example_en": "She lost her keys.",
+          "example_vi": "Cô ấy đã làm mất chìa khóa của mình."
+        },
+        {
+          "meaning_vi": "của nó",
+          "example_en": "I read her book.",
+          "example_vi": "Tôi đã đọc cuốn sách của cô ấy."
+        },
+        {
+          "meaning_vi": "của nó",
+          "example_en": "She is wearing her favorite dress.",
+          "example_vi": "Cô ấy đang mặc chiếc váy yêu thích của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa tiếng Việt cho phù hợp với từ loại (tính từ sở hữu/đại từ). Bổ sung ví dụ.",
+      "word": "her",
+      "normalized_word": "her",
+      "cefr_level": "A1",
+      "pos": "determiner",
+      "pos_vi_clean": "từ hạn định",
+      "example_en_clean": "I saw her at the park yesterday.",
+      "example_vi_clean": "Tôi đã thấy cô ấy ở công viên hôm qua."
+    },
+    {
+      "id": 24396,
+      "quiz_meaning_vi": "đây",
+      "meaning_vi_clean": "đây; ở đây",
+      "examples_clean": [
+        {
+          "meaning_vi": "đây",
+          "example_en": "Here is your coffee.",
+          "example_vi": "Đây là cà phê của bạn."
+        },
+        {
+          "meaning_vi": "đây",
+          "example_en": "Here is the book you asked for.",
+          "example_vi": "Đây là cuốn sách bạn đã hỏi."
+        },
+        {
+          "meaning_vi": "đây",
+          "example_en": "Here is the key to the front door.",
+          "example_vi": "Đây là chìa khóa cửa trước."
+        },
+        {
+          "meaning_vi": "đây",
+          "example_en": "Here is my phone number.",
+          "example_vi": "Đây là số điện thoại của tôi."
+        },
+        {
+          "meaning_vi": "ở đây",
+          "example_en": "I live here with my family.",
+          "example_vi": "Tôi sống ở đây với gia đình."
+        },
+        {
+          "meaning_vi": "ở đây",
+          "example_en": "Please sit here.",
+          "example_vi": "Làm ơn ngồi ở đây."
+        },
+        {
+          "meaning_vi": "ở đây",
+          "example_en": "Is there a bank near here?",
+          "example_vi": "Có ngân hàng nào gần đây không?"
+        },
+        {
+          "meaning_vi": "ở đây",
+          "example_en": "We are here for the meeting.",
+          "example_vi": "Chúng tôi ở đây để họp."
+        },
+        {
+          "meaning_vi": "ở đây",
+          "example_en": "It is very quiet here.",
+          "example_vi": "Ở đây rất yên tĩnh."
+        },
+        {
+          "meaning_vi": "ở đây",
+          "example_en": "I have been here for two hours.",
+          "example_vi": "Tôi đã ở đây được hai tiếng rồi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang trạng từ. Giữ nghĩa phổ biến. Bổ sung ví dụ.",
+      "word": "here",
+      "normalized_word": "here",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Here is your coffee.",
+      "example_vi_clean": "Đây là cà phê của bạn."
+    },
+    {
+      "id": 24397,
+      "quiz_meaning_vi": "cái của nó",
+      "meaning_vi_clean": "cái của nó",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "This book is hers.",
+          "example_vi": "Cuốn sách này là của cô ấy."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "The pen on the table is hers.",
+          "example_vi": "Cái bút trên bàn là của cô ấy."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "I think this bag is hers.",
+          "example_vi": "Tôi nghĩ cái túi này là của cô ấy."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "The decision was hers alone.",
+          "example_vi": "Quyết định đó là của riêng cô ấy."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "Is this umbrella hers?",
+          "example_vi": "Cái ô này có phải của cô ấy không?"
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "The car is hers, not mine.",
+          "example_vi": "Chiếc xe là của cô ấy, không phải của tôi."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "That house is hers.",
+          "example_vi": "Ngôi nhà đó là của cô ấy."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "The success is hers.",
+          "example_vi": "Sự thành công đó là của cô ấy."
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "Are these keys hers?",
+          "example_vi": "Những chiếc chìa khóa này có phải của cô ấy không?"
+        },
+        {
+          "meaning_vi": "cái của nó",
+          "example_en": "The choice is hers.",
+          "example_vi": "Sự lựa chọn là của cô ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa đại từ sở hữu. Bổ sung ví dụ.",
+      "word": "hers",
+      "normalized_word": "hers",
+      "cefr_level": "A1",
+      "pos": "pronoun",
+      "pos_vi_clean": "đại từ",
+      "example_en_clean": "This book is hers.",
+      "example_vi_clean": "Cuốn sách này là của cô ấy."
+    },
+    {
+      "id": 24398,
+      "quiz_meaning_vi": "này!",
+      "meaning_vi_clean": "này!; chào",
+      "examples_clean": [
+        {
+          "meaning_vi": "này!",
+          "example_en": "Hi! How are you doing?",
+          "example_vi": "Này! Bạn khỏe không?"
+        },
+        {
+          "meaning_vi": "này!",
+          "example_en": "Hi, nice to see you again.",
+          "example_vi": "Này, rất vui được gặp lại bạn."
+        },
+        {
+          "meaning_vi": "này!",
+          "example_en": "Hi, are you coming with us?",
+          "example_vi": "Này, bạn có đi cùng chúng tôi không?"
+        },
+        {
+          "meaning_vi": "này!",
+          "example_en": "Hi, wait for me!",
+          "example_vi": "Này, đợi tôi với!"
+        },
+        {
+          "meaning_vi": "chào",
+          "example_en": "She gave me a friendly hi.",
+          "example_vi": "Cô ấy đã chào tôi một cách thân thiện."
+        },
+        {
+          "meaning_vi": "chào",
+          "example_en": "We just said hi and walked away.",
+          "example_vi": "Chúng tôi chỉ chào nhau rồi bỏ đi."
+        },
+        {
+          "meaning_vi": "chào",
+          "example_en": "He waved to say hi.",
+          "example_vi": "Anh ấy vẫy tay để chào."
+        },
+        {
+          "meaning_vi": "chào",
+          "example_en": "I got a quick hi from him.",
+          "example_vi": "Tôi nhận được một lời chào nhanh từ anh ấy."
+        },
+        {
+          "meaning_vi": "chào",
+          "example_en": "Just wanted to say hi.",
+          "example_vi": "Chỉ muốn gửi lời chào thôi."
+        },
+        {
+          "meaning_vi": "chào",
+          "example_en": "She smiled and said hi.",
+          "example_vi": "Cô ấy mỉm cười và chào."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa thán từ chào hỏi. Bổ sung ví dụ.",
+      "word": "hi",
+      "normalized_word": "hi",
+      "cefr_level": "A1",
+      "pos": "interjection",
+      "pos_vi_clean": "thán từ",
+      "example_en_clean": "Hi! How are you doing?",
+      "example_vi_clean": "Này! Bạn khỏe không?"
+    },
+    {
+      "id": 24399,
+      "quiz_meaning_vi": "trốn",
+      "meaning_vi_clean": "trốn; che giấu",
+      "examples_clean": [
+        {
+          "meaning_vi": "trốn",
+          "example_en": "The children like to hide behind the trees.",
+          "example_vi": "Lũ trẻ thích trốn sau những cái cây."
+        },
+        {
+          "meaning_vi": "trốn",
+          "example_en": "He hid in the closet during the game.",
+          "example_vi": "Anh ấy đã trốn trong tủ quần áo trong lúc chơi trò chơi."
+        },
+        {
+          "meaning_vi": "trốn",
+          "example_en": "The cat hid under the bed.",
+          "example_vi": "Con mèo đã trốn dưới gầm giường."
+        },
+        {
+          "meaning_vi": "trốn",
+          "example_en": "They hid from the rain in a small cave.",
+          "example_vi": "Họ đã trốn mưa trong một cái hang nhỏ."
+        },
+        {
+          "meaning_vi": "che giấu",
+          "example_en": "She tried to hide her feelings.",
+          "example_vi": "Cô ấy đã cố gắng che giấu cảm xúc của mình."
+        },
+        {
+          "meaning_vi": "che giấu",
+          "example_en": "He hid the truth from his parents.",
+          "example_vi": "Anh ấy đã che giấu sự thật với cha mẹ mình."
+        },
+        {
+          "meaning_vi": "che giấu",
+          "example_en": "They hid the money in a safe place.",
+          "example_vi": "Họ đã che giấu số tiền ở một nơi an toàn."
+        },
+        {
+          "meaning_vi": "che giấu",
+          "example_en": "She hid her face in her hands.",
+          "example_vi": "Cô ấy đã che giấu khuôn mặt trong đôi bàn tay."
+        },
+        {
+          "meaning_vi": "che giấu",
+          "example_en": "He hid the key under the mat.",
+          "example_vi": "Anh ấy đã giấu chìa khóa dưới tấm thảm."
+        },
+        {
+          "meaning_vi": "che giấu",
+          "example_en": "They hid the evidence.",
+          "example_vi": "Họ đã che giấu bằng chứng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa danh từ không liên quan (da sống). Giữ nghĩa động từ phổ biến. Bổ sung ví dụ.",
+      "word": "hide",
+      "normalized_word": "hide",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The children like to hide behind the trees.",
+      "example_vi_clean": "Lũ trẻ thích trốn sau những cái cây."
+    },
+    {
+      "id": 24400,
+      "quiz_meaning_vi": "cao",
+      "meaning_vi_clean": "cao; đắt; lớn",
+      "examples_clean": [
+        {
+          "meaning_vi": "cao",
+          "example_en": "The mountain is very high.",
+          "example_vi": "Ngọn núi đó rất cao."
+        },
+        {
+          "meaning_vi": "cao",
+          "example_en": "He is a very high jumper.",
+          "example_vi": "Anh ấy là một vận động viên nhảy cao."
+        },
+        {
+          "meaning_vi": "cao",
+          "example_en": "The wall is too high to climb.",
+          "example_vi": "Bức tường quá cao để leo qua."
+        },
+        {
+          "meaning_vi": "cao",
+          "example_en": "She has high standards for her work.",
+          "example_vi": "Cô ấy có tiêu chuẩn cao cho công việc của mình."
+        },
+        {
+          "meaning_vi": "đắt",
+          "example_en": "The prices are very high in this shop.",
+          "example_vi": "Giá cả rất đắt ở cửa hàng này."
+        },
+        {
+          "meaning_vi": "đắt",
+          "example_en": "They had to pay a high price for the house.",
+          "example_vi": "Họ đã phải trả một cái giá đắt cho ngôi nhà."
+        },
+        {
+          "meaning_vi": "đắt",
+          "example_en": "High costs make it difficult to start a business.",
+          "example_vi": "Chi phí đắt đỏ khiến việc khởi nghiệp trở nên khó khăn."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "There is a high demand for this product.",
+          "example_vi": "Có nhu cầu lớn cho sản phẩm này."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "He has a high opinion of her.",
+          "example_vi": "Anh ấy có đánh giá lớn về cô ấy."
+        },
+        {
+          "meaning_vi": "lớn",
+          "example_en": "The risk of failure is high.",
+          "example_vi": "Nguy cơ thất bại là rất lớn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang tính từ. Giữ nghĩa phổ biến, loại bỏ nghĩa chuyên ngành. Bổ sung ví dụ.",
+      "word": "high",
+      "normalized_word": "high",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The mountain is very high.",
+      "example_vi_clean": "Ngọn núi đó rất cao."
+    }
+  ]
+}

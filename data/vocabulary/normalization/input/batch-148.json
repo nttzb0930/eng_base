@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-148",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25471,
+      "word": "allergic",
+      "normalized_word": "allergic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'lə:dʤik/",
+      "primary_meaning_vi": "dị ứng",
+      "meaning_vi": "dị ứng; dễ có ác cảm",
+      "example_en": "I am allergic to cats.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25472,
+      "word": "allowance",
+      "normalized_word": "allowance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/ə'lauəns/",
+      "primary_meaning_vi": "sự cho phép",
+      "meaning_vi": "sự cho phép; sự thừa nhận, sự công nhận, sự thú nhận; tiền trợ cấp; tiền cấp phát; tiền bỏ túi, tiền tiêu vặt; phần tiền, khẩu phần, phần ăn; sự kể đến, sự tính đến, sự chiếu cố đến, sự dung thứ; sự trừ, sự bớt; ; (vật lý) hạn định cho phép; chia phần ăn cho; cấp một số tiền cho (ai), trợ cấp",
+      "example_en": "her meagre allowance of food or drink",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "to make allowance for his naivety",
+          "example_vi": null
+        },
+        {
+          "example_en": "Tare and tret are examples of allowance.",
+          "example_vi": null
+        },
+        {
+          "example_en": "On the Flat, an apprentice jockey starts with an allowance of 7 lb.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25473,
+      "word": "aloud",
+      "normalized_word": "aloud",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": "/ə'laud/",
+      "primary_meaning_vi": "lớn tiếng to",
+      "meaning_vi": "lớn tiếng to; oang oang, inh lên, ầm ầm; thấy rõ, rõ rành rành",
+      "example_en": "Try speaking aloud rather than whispering.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "speaking aloud rather than thinking thoughts privately",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25474,
+      "word": "alphabet",
+      "normalized_word": "alphabet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ælfəbit/",
+      "primary_meaning_vi": "bảng chữ cái",
+      "meaning_vi": "bảng chữ cái, hệ thống chữ cái; điều cơ bản, bước đầu",
+      "example_en": "In the first year of school, pupils are taught to recite the alphabet.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Let L be a regular language over the alphabet \\Sigma.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25475,
+      "word": "alternative",
+      "normalized_word": "alternative",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/ɔ:l'tə:nətiv/",
+      "primary_meaning_vi": "xen nhau",
+      "meaning_vi": "xen nhau; thay đổi nhau, thay phiên nhau; lựa chọn (một trong hai); hoặc cái này hoặc cái kia (trong hai cái); loại trừ lẫn nhau (hai cái); sự lựa chon (một trong hai); con đường, chước cách",
+      "example_en": "an alternative proposition",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25476,
+      "word": "altogether",
+      "normalized_word": "altogether",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ɔ:ltə'geðə/",
+      "primary_meaning_vi": "hoàn toàn",
+      "meaning_vi": "hoàn toàn, hầu; nhìn chung, nói chung; nhìn toàn bộ; cả thảy, tất cả; toàn thể, toàn bộ; (thông tục) người mẫu khoả thân (để vẽ...); người trần truồng",
+      "example_en": "Altogether, I'm sorry it happened.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 25477,
+      "word": "amazing",
+      "normalized_word": "amazing",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'meiziɳ/",
+      "primary_meaning_vi": "làm kinh ngạc",
+      "meaning_vi": "làm kinh ngạc, làm sửng sốt, làm hết sức ngạc nhiên",
+      "example_en": "He was amazed when he found that the girl was a robot.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "2015, June 10, Lindsey Bever, \"Morning Mix: Another reason seeing-eye dogs are amazing\"http//www.washingtonpost.com/news/morning-mix/wp/2015/06/10/another-heroic-story-showing-why-seeing-eye-dogs-are-amazing/",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25478,
+      "word": "ambitious",
+      "normalized_word": "ambitious",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/æm'biʃəs/",
+      "primary_meaning_vi": "có nhiều hoài bão",
+      "meaning_vi": "có nhiều hoài bão, có nhiều khát vọng; có nhiều tham vọng",
+      "example_en": "an ambitious person",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "an ambitious attempt to take power",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25479,
+      "word": "ambulance",
+      "normalized_word": "ambulance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æmbjuləns/",
+      "primary_meaning_vi": "xe cứu thương",
+      "meaning_vi": "xe cứu thương, xe cấp cứu; để cứu thương",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25480,
+      "word": "amount",
+      "normalized_word": "amount",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/ə'maunt/",
+      "primary_meaning_vi": "số lượng",
+      "meaning_vi": "số lượng, số nhiều; tổng số; thực chất, giá trị thực; tầm quan trọng, ý nghĩa; lên đến, lên tới (tiền); chung qui là, rốt cuộc là, có nghĩa là, chẳng khác gì là",
+      "example_en": "The amount of atmospheric pollution threatens a health crisis.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Pour a small amount of water into the dish.",
+          "example_vi": null
+        },
+        {
+          "example_en": "It amounts to three dollars and change.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He was a pretty good student, but never amounted to much professionally.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    }
+  ]
+}

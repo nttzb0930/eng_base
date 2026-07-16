@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26961,
+      "quiz_meaning_vi": "thầy dạy",
+      "meaning_vi_clean": "thầy dạy; nhà sư phạm",
+      "examples_clean": [
+        {
+          "meaning_vi": "thầy dạy",
+          "example_en": "She is a dedicated educator who loves her students.",
+          "example_vi": "Cô ấy là một thầy dạy tận tâm, người yêu quý học sinh của mình."
+        },
+        {
+          "meaning_vi": "thầy dạy",
+          "example_en": "The educator explained the complex theory clearly.",
+          "example_vi": "Người thầy dạy đã giải thích lý thuyết phức tạp một cách rõ ràng."
+        },
+        {
+          "meaning_vi": "thầy dạy",
+          "example_en": "Many educators are concerned about the new curriculum.",
+          "example_vi": "Nhiều thầy dạy đang lo ngại về chương trình giảng dạy mới."
+        },
+        {
+          "meaning_vi": "thầy dạy",
+          "example_en": "He has been a respected educator for over thirty years.",
+          "example_vi": "Ông ấy đã là một thầy dạy được kính trọng trong hơn ba mươi năm."
+        },
+        {
+          "meaning_vi": "nhà sư phạm",
+          "example_en": "She is a renowned educator in the field of early childhood development.",
+          "example_vi": "Bà ấy là một nhà sư phạm nổi tiếng trong lĩnh vực phát triển trẻ thơ."
+        },
+        {
+          "meaning_vi": "nhà sư phạm",
+          "example_en": "The conference brought together every leading educator in the country.",
+          "example_vi": "Hội nghị đã tập hợp mọi nhà sư phạm hàng đầu trong cả nước."
+        },
+        {
+          "meaning_vi": "nhà sư phạm",
+          "example_en": "As an educator, he believes in fostering creativity.",
+          "example_vi": "Với tư cách là một nhà sư phạm, ông ấy tin vào việc nuôi dưỡng sự sáng tạo."
+        },
+        {
+          "meaning_vi": "nhà sư phạm",
+          "example_en": "The school board hired a new educator to lead the department.",
+          "example_vi": "Hội đồng nhà trường đã thuê một nhà sư phạm mới để lãnh đạo khoa."
+        },
+        {
+          "meaning_vi": "nhà sư phạm",
+          "example_en": "She is a brilliant educator who inspires her colleagues.",
+          "example_vi": "Bà ấy là một nhà sư phạm xuất sắc, người truyền cảm hứng cho các đồng nghiệp."
+        },
+        {
+          "meaning_vi": "nhà sư phạm",
+          "example_en": "The role of an educator is to guide students toward knowledge.",
+          "example_vi": "Vai trò của một nhà sư phạm là hướng dẫn học sinh đến với tri thức."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ phù hợp với nghĩa thầy dạy và nhà sư phạm.",
+      "word": "educator",
+      "normalized_word": "educator",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is a dedicated educator who loves her students.",
+      "example_vi_clean": "Cô ấy là một thầy dạy tận tâm, người yêu quý học sinh của mình."
+    },
+    {
+      "id": 26962,
+      "quiz_meaning_vi": "có kết quả",
+      "meaning_vi_clean": "có kết quả; có hiệu lực; có hiệu quả",
+      "examples_clean": [
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "The new policy was implemented effectively across the company.",
+          "example_vi": "Chính sách mới đã được thực hiện có kết quả trên toàn công ty."
+        },
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "We need to communicate more effectively to avoid mistakes.",
+          "example_vi": "Chúng ta cần giao tiếp có kết quả hơn để tránh sai sót."
+        },
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "The team worked effectively to finish the project on time.",
+          "example_vi": "Nhóm đã làm việc có kết quả để hoàn thành dự án đúng hạn."
+        },
+        {
+          "meaning_vi": "có kết quả",
+          "example_en": "She manages her time effectively to balance work and life.",
+          "example_vi": "Cô ấy quản lý thời gian của mình có kết quả để cân bằng công việc và cuộc sống."
+        },
+        {
+          "meaning_vi": "có hiệu lực",
+          "example_en": "The law becomes effectively binding starting next month.",
+          "example_vi": "Luật sẽ có hiệu lực ràng buộc bắt đầu từ tháng tới."
+        },
+        {
+          "meaning_vi": "có hiệu lực",
+          "example_en": "The agreement is effectively in place until the end of the year.",
+          "example_vi": "Thỏa thuận này có hiệu lực cho đến cuối năm."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "This medicine works effectively against the common cold.",
+          "example_vi": "Loại thuốc này có hiệu quả chống lại bệnh cảm thông thường."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "The marketing campaign was effectively designed to reach young people.",
+          "example_vi": "Chiến dịch tiếp thị đã được thiết kế có hiệu quả để tiếp cận giới trẻ."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "They used the resources effectively to solve the problem.",
+          "example_vi": "Họ đã sử dụng các nguồn lực có hiệu quả để giải quyết vấn đề."
+        },
+        {
+          "meaning_vi": "có hiệu quả",
+          "example_en": "The system operates effectively under high pressure.",
+          "example_vi": "Hệ thống vận hành có hiệu quả dưới áp lực cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ và chuẩn hóa nghĩa.",
+      "word": "effectively",
+      "normalized_word": "effectively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "The new policy was implemented effectively across the company.",
+      "example_vi_clean": "Chính sách mới đã được thực hiện có kết quả trên toàn công ty."
+    },
+    {
+      "id": 26963,
+      "quiz_meaning_vi": "sự có hiệu lực",
+      "meaning_vi_clean": "sự có hiệu lực; ấn tượng sâu sắc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự có hiệu lực",
+          "example_en": "The effectiveness of the drug was well established.",
+          "example_vi": "Sự có hiệu lực của loại thuốc này đã được xác lập rõ ràng."
+        },
+        {
+          "meaning_vi": "sự có hiệu lực",
+          "example_en": "He questioned the effectiveness of the treatment.",
+          "example_vi": "Anh ấy đặt câu hỏi về sự có hiệu lực của phương pháp điều trị."
+        },
+        {
+          "meaning_vi": "sự có hiệu lực",
+          "example_en": "We are testing the effectiveness of the new security system.",
+          "example_vi": "Chúng tôi đang kiểm tra sự có hiệu lực của hệ thống an ninh mới."
+        },
+        {
+          "meaning_vi": "sự có hiệu lực",
+          "example_en": "The report highlights the effectiveness of the current strategy.",
+          "example_vi": "Báo cáo làm nổi bật sự có hiệu lực của chiến lược hiện tại."
+        },
+        {
+          "meaning_vi": "sự có hiệu lực",
+          "example_en": "They discussed the effectiveness of the new teaching methods.",
+          "example_vi": "Họ đã thảo luận về sự có hiệu lực của các phương pháp giảng dạy mới."
+        },
+        {
+          "meaning_vi": "sự có hiệu lực",
+          "example_en": "The effectiveness of the law is being debated in parliament.",
+          "example_vi": "Sự có hiệu lực của luật đang được tranh luận tại quốc hội."
+        },
+        {
+          "meaning_vi": "ấn tượng sâu sắc",
+          "example_en": "The speech left an effectiveness that stayed with the audience.",
+          "example_vi": "Bài phát biểu để lại một ấn tượng sâu sắc đọng lại trong lòng khán giả."
+        },
+        {
+          "meaning_vi": "ấn tượng sâu sắc",
+          "example_en": "Her performance had a lasting effectiveness on everyone present.",
+          "example_vi": "Màn trình diễn của cô ấy để lại một ấn tượng sâu sắc với tất cả những người có mặt."
+        },
+        {
+          "meaning_vi": "ấn tượng sâu sắc",
+          "example_en": "The movie's ending had a profound effectiveness on the viewers.",
+          "example_vi": "Cái kết của bộ phim để lại một ấn tượng sâu sắc đối với người xem."
+        },
+        {
+          "meaning_vi": "ấn tượng sâu sắc",
+          "example_en": "The art exhibition left an effectiveness that was hard to forget.",
+          "example_vi": "Triển lãm nghệ thuật để lại một ấn tượng sâu sắc khó quên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung ví dụ và chuẩn hóa nghĩa.",
+      "word": "effectiveness",
+      "normalized_word": "effectiveness",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The effectiveness of the drug was well established.",
+      "example_vi_clean": "Sự có hiệu lực của loại thuốc này đã được xác lập rõ ràng."
+    },
+    {
+      "id": 26964,
+      "quiz_meaning_vi": "chọn",
+      "meaning_vi_clean": "chọn; bầu; quyết định",
+      "examples_clean": [
+        {
+          "meaning_vi": "chọn",
+          "example_en": "You can elect to pay by credit card or cash.",
+          "example_vi": "Bạn có thể chọn thanh toán bằng thẻ tín dụng hoặc tiền mặt."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "Many people elect to work from home these days.",
+          "example_vi": "Nhiều người chọn làm việc tại nhà trong những ngày này."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "She elected to stay behind while the others went out.",
+          "example_vi": "Cô ấy chọn ở lại trong khi những người khác đi ra ngoài."
+        },
+        {
+          "meaning_vi": "chọn",
+          "example_en": "They elected to take the scenic route instead of the highway.",
+          "example_vi": "Họ chọn đi con đường ngắm cảnh thay vì đường cao tốc."
+        },
+        {
+          "meaning_vi": "bầu",
+          "example_en": "The citizens will elect a new mayor next month.",
+          "example_vi": "Người dân sẽ bầu một thị trưởng mới vào tháng tới."
+        },
+        {
+          "meaning_vi": "bầu",
+          "example_en": "The committee will elect a chairperson at the meeting.",
+          "example_vi": "Ủy ban sẽ bầu một chủ tịch tại cuộc họp."
+        },
+        {
+          "meaning_vi": "bầu",
+          "example_en": "They elected him as their representative.",
+          "example_vi": "Họ đã bầu ông ấy làm đại diện của họ."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "He elected to resign rather than face a public scandal.",
+          "example_vi": "Ông ấy quyết định từ chức thay vì đối mặt với bê bối công khai."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "We elected to postpone the event due to bad weather.",
+          "example_vi": "Chúng tôi quyết định hoãn sự kiện do thời tiết xấu."
+        },
+        {
+          "meaning_vi": "quyết định",
+          "example_en": "She elected to pursue a career in medicine.",
+          "example_vi": "Cô ấy quyết định theo đuổi sự nghiệp y khoa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "elect",
+      "normalized_word": "elect",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "You can elect to pay by credit card or cash.",
+      "example_vi_clean": "Bạn có thể chọn thanh toán bằng thẻ tín dụng hoặc tiền mặt."
+    },
+    {
+      "id": 26965,
+      "quiz_meaning_vi": "có thể chọn lọc",
+      "meaning_vi_clean": "có thể chọn lọc; do chọn lọc bằng bầu cử",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể chọn lọc",
+          "example_en": "My insurance wouldn't pay for the operation because it was elective surgery.",
+          "example_vi": "Bảo hiểm của tôi không chi trả cho ca phẫu thuật vì đó là phẫu thuật có thể chọn lọc."
+        },
+        {
+          "meaning_vi": "có thể chọn lọc",
+          "example_en": "This course is elective, so you don't have to take it.",
+          "example_vi": "Khóa học này có thể chọn lọc, vì vậy bạn không bắt buộc phải học."
+        },
+        {
+          "meaning_vi": "có thể chọn lọc",
+          "example_en": "Students can choose from several elective subjects.",
+          "example_vi": "Học sinh có thể chọn từ một vài môn học có thể chọn lọc."
+        },
+        {
+          "meaning_vi": "có thể chọn lọc",
+          "example_en": "The program offers many elective activities for students.",
+          "example_vi": "Chương trình cung cấp nhiều hoạt động có thể chọn lọc cho học sinh."
+        },
+        {
+          "meaning_vi": "có thể chọn lọc",
+          "example_en": "Participation in the workshop is elective.",
+          "example_vi": "Việc tham gia hội thảo là có thể chọn lọc."
+        },
+        {
+          "meaning_vi": "do chọn lọc bằng bầu cử",
+          "example_en": "The position is elective, not appointed.",
+          "example_vi": "Vị trí này là do chọn lọc bằng bầu cử, không phải do bổ nhiệm."
+        },
+        {
+          "meaning_vi": "do chọn lọc bằng bầu cử",
+          "example_en": "He holds an elective office in the local government.",
+          "example_vi": "Ông ấy giữ một chức vụ do chọn lọc bằng bầu cử trong chính quyền địa phương."
+        },
+        {
+          "meaning_vi": "do chọn lọc bằng bầu cử",
+          "example_en": "The system of elective government is fundamental to democracy.",
+          "example_vi": "Hệ thống chính quyền do chọn lọc bằng bầu cử là nền tảng của dân chủ."
+        },
+        {
+          "meaning_vi": "do chọn lọc bằng bầu cử",
+          "example_en": "She is running for an elective seat in the council.",
+          "example_vi": "Cô ấy đang tranh cử một ghế do chọn lọc bằng bầu cử trong hội đồng."
+        },
+        {
+          "meaning_vi": "do chọn lọc bằng bầu cử",
+          "example_en": "The elective process ensures that the people have a voice.",
+          "example_vi": "Quy trình do chọn lọc bằng bầu cử đảm bảo rằng người dân có tiếng nói."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "elective",
+      "normalized_word": "elective",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "My insurance wouldn't pay for the operation because it was elective surgery.",
+      "example_vi_clean": "Bảo hiểm của tôi không chi trả cho ca phẫu thuật vì đó là phẫu thuật có thể chọn lọc."
+    },
+    {
+      "id": 26966,
+      "quiz_meaning_vi": "thợ lắp điện",
+      "meaning_vi_clean": "thợ lắp điện; thợ điện",
+      "examples_clean": [
+        {
+          "meaning_vi": "thợ lắp điện",
+          "example_en": "We called an electrician to fix the wiring in the kitchen.",
+          "example_vi": "Chúng tôi đã gọi một thợ lắp điện để sửa hệ thống dây điện trong bếp."
+        },
+        {
+          "meaning_vi": "thợ lắp điện",
+          "example_en": "The electrician installed new lights in the living room.",
+          "example_vi": "Người thợ lắp điện đã lắp đèn mới trong phòng khách."
+        },
+        {
+          "meaning_vi": "thợ lắp điện",
+          "example_en": "You should hire a qualified electrician for this job.",
+          "example_vi": "Bạn nên thuê một thợ lắp điện có trình độ cho công việc này."
+        },
+        {
+          "meaning_vi": "thợ lắp điện",
+          "example_en": "The electrician checked the fuse box for any faults.",
+          "example_vi": "Người thợ lắp điện đã kiểm tra hộp cầu chì xem có lỗi gì không."
+        },
+        {
+          "meaning_vi": "thợ điện",
+          "example_en": "My brother works as an electrician for a large construction firm.",
+          "example_vi": "Anh trai tôi làm thợ điện cho một công ty xây dựng lớn."
+        },
+        {
+          "meaning_vi": "thợ điện",
+          "example_en": "The electrician arrived early to start the repairs.",
+          "example_vi": "Người thợ điện đã đến sớm để bắt đầu sửa chữa."
+        },
+        {
+          "meaning_vi": "thợ điện",
+          "example_en": "She is training to become a professional electrician.",
+          "example_vi": "Cô ấy đang được đào tạo để trở thành một thợ điện chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "thợ điện",
+          "example_en": "The electrician warned us about the old wiring.",
+          "example_vi": "Người thợ điện đã cảnh báo chúng tôi về hệ thống dây điện cũ."
+        },
+        {
+          "meaning_vi": "thợ điện",
+          "example_en": "He has been an electrician for over twenty years.",
+          "example_vi": "Ông ấy đã làm thợ điện được hơn hai mươi năm."
+        },
+        {
+          "meaning_vi": "thợ điện",
+          "example_en": "The electrician fixed the power outage in our neighborhood.",
+          "example_vi": "Người thợ điện đã sửa sự cố mất điện trong khu phố của chúng tôi."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ và chuẩn hóa nghĩa.",
+      "word": "electrician",
+      "normalized_word": "electrician",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "We called an electrician to fix the wiring in the kitchen.",
+      "example_vi_clean": "Chúng tôi đã gọi một thợ lắp điện để sửa hệ thống dây điện trong bếp."
+    },
+    {
+      "id": 26967,
+      "quiz_meaning_vi": "điện tử học",
+      "meaning_vi_clean": "điện tử học",
+      "examples_clean": [
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "Electronics is a popular subject at the university.",
+          "example_vi": "Điện tử học là một môn học phổ biến tại trường đại học."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "He is studying electronics to become an engineer.",
+          "example_vi": "Anh ấy đang học điện tử học để trở thành kỹ sư."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "The field of electronics has changed rapidly over the years.",
+          "example_vi": "Lĩnh vực điện tử học đã thay đổi nhanh chóng qua nhiều năm."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "She has a deep interest in modern electronics.",
+          "example_vi": "Cô ấy có niềm đam mê sâu sắc với điện tử học hiện đại."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "The electronics industry is growing very fast.",
+          "example_vi": "Ngành công nghiệp điện tử học đang phát triển rất nhanh."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "He reads many books about electronics in his spare time.",
+          "example_vi": "Anh ấy đọc nhiều sách về điện tử học trong thời gian rảnh."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "The professor is an expert in the field of electronics.",
+          "example_vi": "Giáo sư là một chuyên gia trong lĩnh vực điện tử học."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "Electronics plays a crucial role in our daily lives.",
+          "example_vi": "Điện tử học đóng một vai trò quan trọng trong cuộc sống hàng ngày của chúng ta."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "They are developing new devices using advanced electronics.",
+          "example_vi": "Họ đang phát triển các thiết bị mới sử dụng điện tử học tiên tiến."
+        },
+        {
+          "meaning_vi": "điện tử học",
+          "example_en": "The course covers the basics of electronics.",
+          "example_vi": "Khóa học bao gồm những kiến thức cơ bản về điện tử học."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ và chuẩn hóa nghĩa.",
+      "word": "electronics",
+      "normalized_word": "electronics",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Electronics is a popular subject at the university.",
+      "example_vi_clean": "Điện tử học là một môn học phổ biến tại trường đại học."
+    },
+    {
+      "id": 26968,
+      "quiz_meaning_vi": "tính thanh lịch",
+      "meaning_vi_clean": "tính thanh lịch; tính tao nhã; tính nhã",
+      "examples_clean": [
+        {
+          "meaning_vi": "tính thanh lịch",
+          "example_en": "The bride was elegance personified.",
+          "example_vi": "Cô dâu là hiện thân của tính thanh lịch."
+        },
+        {
+          "meaning_vi": "tính thanh lịch",
+          "example_en": "The simple dress had a quiet elegance.",
+          "example_vi": "Chiếc váy đơn giản mang một tính thanh lịch nhẹ nhàng."
+        },
+        {
+          "meaning_vi": "tính thanh lịch",
+          "example_en": "She moved with a natural elegance.",
+          "example_vi": "Cô ấy di chuyển với một tính thanh lịch tự nhiên."
+        },
+        {
+          "meaning_vi": "tính thanh lịch",
+          "example_en": "The hotel is known for its style and elegance.",
+          "example_vi": "Khách sạn nổi tiếng với phong cách và tính thanh lịch."
+        },
+        {
+          "meaning_vi": "tính tao nhã",
+          "example_en": "The room was decorated with great elegance.",
+          "example_vi": "Căn phòng được trang trí với tính tao nhã tuyệt vời."
+        },
+        {
+          "meaning_vi": "tính tao nhã",
+          "example_en": "He admired the elegance of her handwriting.",
+          "example_vi": "Anh ấy ngưỡng mộ tính tao nhã trong chữ viết của cô ấy."
+        },
+        {
+          "meaning_vi": "tính tao nhã",
+          "example_en": "The garden was designed with a sense of elegance.",
+          "example_vi": "Khu vườn được thiết kế với một cảm giác về tính tao nhã."
+        },
+        {
+          "meaning_vi": "tính nhã",
+          "example_en": "The proof of the theorem had a pleasing elegance.",
+          "example_vi": "Cách chứng minh định lý này có một tính nhã làm hài lòng người đọc."
+        },
+        {
+          "meaning_vi": "tính nhã",
+          "example_en": "The author is known for the elegance of his prose.",
+          "example_vi": "Tác giả nổi tiếng với tính nhã trong văn xuôi của mình."
+        },
+        {
+          "meaning_vi": "tính nhã",
+          "example_en": "There is a certain elegance in the way she speaks.",
+          "example_vi": "Có một tính nhã nhất định trong cách cô ấy nói chuyện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ và chuẩn hóa nghĩa.",
+      "word": "elegance",
+      "normalized_word": "elegance",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The bride was elegance personified.",
+      "example_vi_clean": "Cô dâu là hiện thân của tính thanh lịch."
+    },
+    {
+      "id": 26969,
+      "quiz_meaning_vi": "thanh lịch",
+      "meaning_vi_clean": "thanh lịch; tao nhã; nhã",
+      "examples_clean": [
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "She looked very elegant in her evening gown.",
+          "example_vi": "Cô ấy trông rất thanh lịch trong chiếc váy dạ hội của mình."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "He is an elegant man with good manners.",
+          "example_vi": "Anh ấy là một người đàn ông thanh lịch với cách cư xử tốt."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "The restaurant has an elegant atmosphere.",
+          "example_vi": "Nhà hàng có một bầu không khí thanh lịch."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "They hosted an elegant dinner party.",
+          "example_vi": "Họ đã tổ chức một bữa tiệc tối thanh lịch."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "The furniture in the house is very elegant.",
+          "example_vi": "Đồ nội thất trong nhà rất tao nhã."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "She has an elegant way of walking.",
+          "example_vi": "Cô ấy có dáng đi rất tao nhã."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "The design of the building is simple yet elegant.",
+          "example_vi": "Thiết kế của tòa nhà đơn giản nhưng tao nhã."
+        },
+        {
+          "meaning_vi": "nhã",
+          "example_en": "an elegant solution",
+          "example_vi": "một giải pháp nhã"
+        },
+        {
+          "meaning_vi": "nhã",
+          "example_en": "The poem is written in an elegant style.",
+          "example_vi": "Bài thơ được viết theo một phong cách nhã."
+        },
+        {
+          "meaning_vi": "nhã",
+          "example_en": "He gave an elegant explanation for the complex problem.",
+          "example_vi": "Anh ấy đã đưa ra một lời giải thích nhã cho vấn đề phức tạp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ và chuẩn hóa nghĩa.",
+      "word": "elegant",
+      "normalized_word": "elegant",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She looked very elegant in her evening gown.",
+      "example_vi_clean": "Cô ấy trông rất thanh lịch trong chiếc váy dạ hội của mình."
+    },
+    {
+      "id": 26970,
+      "quiz_meaning_vi": "thanh lịch",
+      "meaning_vi_clean": "thanh lịch; tao nhã",
+      "examples_clean": [
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "She dressed elegantly for the wedding.",
+          "example_vi": "Cô ấy ăn mặc thanh lịch cho đám cưới."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "The room was elegantly furnished.",
+          "example_vi": "Căn phòng được trang bị nội thất thanh lịch."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "He spoke elegantly about the importance of art.",
+          "example_vi": "Anh ấy nói chuyện một cách thanh lịch về tầm quan trọng của nghệ thuật."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "The table was elegantly set for dinner.",
+          "example_vi": "Bàn ăn được bày biện thanh lịch cho bữa tối."
+        },
+        {
+          "meaning_vi": "thanh lịch",
+          "example_en": "She moved elegantly across the dance floor.",
+          "example_vi": "Cô ấy di chuyển thanh lịch trên sàn nhảy."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "The garden was elegantly landscaped.",
+          "example_vi": "Khu vườn được thiết kế cảnh quan một cách tao nhã."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "The building was elegantly designed.",
+          "example_vi": "Tòa nhà được thiết kế một cách tao nhã."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "She writes elegantly in her journals.",
+          "example_vi": "Cô ấy viết một cách tao nhã trong nhật ký của mình."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "The gift was elegantly wrapped.",
+          "example_vi": "Món quà được gói một cách tao nhã."
+        },
+        {
+          "meaning_vi": "tao nhã",
+          "example_en": "They lived elegantly in their new home.",
+          "example_vi": "Họ sống một cách tao nhã trong ngôi nhà mới của mình."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã bổ sung 10 ví dụ và chuẩn hóa nghĩa.",
+      "word": "elegantly",
+      "normalized_word": "elegantly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "She dressed elegantly for the wedding.",
+      "example_vi_clean": "Cô ấy ăn mặc thanh lịch cho đám cưới."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-237",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26361,
+      "word": "alternatively",
+      "normalized_word": "alternatively",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "như một sự lựa chọn",
+      "meaning_vi": "như một sự lựa chọn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26362,
+      "word": "altitude",
+      "normalized_word": "altitude",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æltitju:d/",
+      "primary_meaning_vi": "độ cao ((thường) so với mặt biển)",
+      "meaning_vi": "độ cao ((thường) so với mặt biển); nơi cao, chỗ cao, đỉnh cao; địa vị cao; độ cao, đường cao; không bay được lên cao; hạ thấp xuống",
+      "example_en": "As the altitude increases, the temperature gets lower, so remember to bring warm clothes to the mountains.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The perpendicular height of a triangle is known as its altitude.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26363,
+      "word": "aluminium",
+      "normalized_word": "aluminium",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ælju'minjəm/",
+      "primary_meaning_vi": "nhôm",
+      "meaning_vi": "nhôm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26364,
+      "word": "aluminum",
+      "normalized_word": "aluminum",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'ljuminəm/",
+      "primary_meaning_vi": "aluminium",
+      "meaning_vi": "(như) aluminium",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26365,
+      "word": "amaze",
+      "normalized_word": "amaze",
+      "cefr_level": "B2",
+      "pos": "verb",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'meiz/",
+      "primary_meaning_vi": "làm kinh ngạc",
+      "meaning_vi": "làm kinh ngạc, làm sửng sốt, làm hết sức ngạc nhiên; (như) amazement",
+      "example_en": "He was amazed when he found that the girl was a robot.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26366,
+      "word": "amazement",
+      "normalized_word": "amazement",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'meizmənt/",
+      "primary_meaning_vi": "sự kinh ngạc",
+      "meaning_vi": "sự kinh ngạc, sự sửng sốt, sự hết sức ngạc nhiên",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26367,
+      "word": "amazingly",
+      "normalized_word": "amazingly",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "đáng kinh ngạc",
+      "meaning_vi": "đáng kinh ngạc, đến không ngờ",
+      "example_en": "That violin solo was played amazingly.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Amazingly, no one was injured in the crash.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The car has amazingly low fuel consumption.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26368,
+      "word": "ambassador",
+      "normalized_word": "ambassador",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/æm'bæsədə/",
+      "primary_meaning_vi": "đại sứ",
+      "meaning_vi": "đại sứ; người đại diện sứ giả",
+      "example_en": "As front hall porter, you are an ambassador for the hotel.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26369,
+      "word": "ambiguity",
+      "normalized_word": "ambiguity",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,æmbi'gju:iti/ (ambiguousness) /æm'bigjuəsnis/",
+      "primary_meaning_vi": "sự tối nghĩa",
+      "meaning_vi": "sự tối nghĩa, sự không rõ nghĩa; sự không rõ ràng, sự mơ hồ, sự nhập nhằng",
+      "example_en": "His speech was made with such great ambiguity that neither supporter nor opponent could be certain of his true position.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26370,
+      "word": "ambiguous",
+      "normalized_word": "ambiguous",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/æm'bigjuəs/",
+      "primary_meaning_vi": "tối nghĩa",
+      "meaning_vi": "tối nghĩa; không rõ ràng, mơ hồ; nước đôi, nhập nhằng",
+      "example_en": "The politician was criticized for his ambiguous statements and lack of precision.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "He gave an ambiguous answer.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26241,
+      "quiz_meaning_vi": "sự tốt nghiệp",
+      "meaning_vi_clean": "sự tốt nghiệp; lễ trao bằng tốt nghiệp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tốt nghiệp",
+          "example_en": "She is looking forward to her graduation next month.",
+          "example_vi": "Cô ấy đang mong chờ lễ tốt nghiệp của mình vào tháng tới."
+        },
+        {
+          "meaning_vi": "sự tốt nghiệp",
+          "example_en": "Many students find jobs shortly after graduation.",
+          "example_vi": "Nhiều sinh viên tìm được việc làm ngay sau khi tốt nghiệp."
+        },
+        {
+          "meaning_vi": "sự tốt nghiệp",
+          "example_en": "He received his diploma at the graduation ceremony.",
+          "example_vi": "Anh ấy đã nhận bằng tốt nghiệp tại buổi lễ tốt nghiệp."
+        },
+        {
+          "meaning_vi": "sự tốt nghiệp",
+          "example_en": "Graduation marks the end of a long academic journey.",
+          "example_vi": "Tốt nghiệp đánh dấu sự kết thúc của một hành trình học tập dài."
+        },
+        {
+          "meaning_vi": "lễ trao bằng tốt nghiệp",
+          "example_en": "The graduation was held in the university hall.",
+          "example_vi": "Lễ trao bằng tốt nghiệp được tổ chức tại hội trường đại học."
+        },
+        {
+          "meaning_vi": "lễ trao bằng tốt nghiệp",
+          "example_en": "Her parents attended the graduation to support her.",
+          "example_vi": "Cha mẹ cô ấy đã tham dự lễ tốt nghiệp để ủng hộ cô."
+        },
+        {
+          "meaning_vi": "lễ trao bằng tốt nghiệp",
+          "example_en": "The graduation ceremony lasted for three hours.",
+          "example_vi": "Buổi lễ trao bằng tốt nghiệp kéo dài ba tiếng đồng hồ."
+        },
+        {
+          "meaning_vi": "lễ trao bằng tốt nghiệp",
+          "example_en": "Everyone wore formal clothes to the graduation.",
+          "example_vi": "Mọi người đều mặc trang phục trang trọng đến buổi lễ tốt nghiệp."
+        },
+        {
+          "meaning_vi": "lễ trao bằng tốt nghiệp",
+          "example_en": "The principal gave a speech at the graduation.",
+          "example_vi": "Hiệu trưởng đã có bài phát biểu tại buổi lễ tốt nghiệp."
+        },
+        {
+          "meaning_vi": "lễ trao bằng tốt nghiệp",
+          "example_en": "They took many photos after the graduation.",
+          "example_vi": "Họ đã chụp rất nhiều ảnh sau buổi lễ tốt nghiệp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã lọc bỏ các nghĩa chuyên ngành không phù hợp B1, tập trung vào nghĩa tốt nghiệp phổ biến.",
+      "word": "graduation",
+      "normalized_word": "graduation",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is looking forward to her graduation next month.",
+      "example_vi_clean": "Cô ấy đang mong chờ lễ tốt nghiệp của mình vào tháng tới."
+    },
+    {
+      "id": 26242,
+      "quiz_meaning_vi": "trợ cấp",
+      "meaning_vi_clean": "trợ cấp; tiền trợ cấp; sự ban cho; thừa nhận",
+      "examples_clean": [
+        {
+          "meaning_vi": "trợ cấp",
+          "example_en": "The government decided to grant funds to the local school.",
+          "example_vi": "Chính phủ đã quyết định cấp kinh phí cho trường học địa phương."
+        },
+        {
+          "meaning_vi": "trợ cấp",
+          "example_en": "They applied for a research grant to continue their work.",
+          "example_vi": "Họ đã nộp đơn xin trợ cấp nghiên cứu để tiếp tục công việc của mình."
+        },
+        {
+          "meaning_vi": "trợ cấp",
+          "example_en": "The charity provides a grant to help families in need.",
+          "example_vi": "Tổ chức từ thiện cung cấp một khoản trợ cấp để giúp đỡ các gia đình khó khăn."
+        },
+        {
+          "meaning_vi": "trợ cấp",
+          "example_en": "She was granted permission to leave early.",
+          "example_vi": "Cô ấy đã được cấp phép để rời đi sớm."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "The grant covers the cost of tuition and books.",
+          "example_vi": "Khoản tiền trợ cấp chi trả cho học phí và sách vở."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "He used the grant to start his own small business.",
+          "example_vi": "Anh ấy đã dùng khoản tiền trợ cấp để bắt đầu công việc kinh doanh nhỏ của mình."
+        },
+        {
+          "meaning_vi": "sự ban cho",
+          "example_en": "The king granted them the right to trade freely.",
+          "example_vi": "Nhà vua đã ban cho họ quyền tự do buôn bán."
+        },
+        {
+          "meaning_vi": "sự ban cho",
+          "example_en": "I wish you could grant me this one favor.",
+          "example_vi": "Tôi ước bạn có thể ban cho tôi ân huệ này."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "I grant that the situation is difficult.",
+          "example_vi": "Tôi thừa nhận rằng tình hình hiện tại rất khó khăn."
+        },
+        {
+          "meaning_vi": "thừa nhận",
+          "example_en": "Even if I grant your point, I still disagree.",
+          "example_vi": "Ngay cả khi tôi thừa nhận quan điểm của bạn, tôi vẫn không đồng ý."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ/động từ theo từ điển, bổ sung nghĩa và ví dụ phù hợp.",
+      "word": "grant",
+      "normalized_word": "grant",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The government decided to grant funds to the local school.",
+      "example_vi_clean": "Chính phủ đã quyết định cấp kinh phí cho trường học địa phương."
+    },
+    {
+      "id": 26243,
+      "quiz_meaning_vi": "đồ thị",
+      "meaning_vi_clean": "đồ thị; vẽ đồ thị",
+      "examples_clean": [
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "The graph shows the increase in sales over the year.",
+          "example_vi": "Đồ thị cho thấy sự gia tăng doanh số trong năm qua."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "Look at the graph to understand the data trends.",
+          "example_vi": "Hãy nhìn vào đồ thị để hiểu các xu hướng dữ liệu."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "The graph clearly illustrates the temperature changes.",
+          "example_vi": "Đồ thị minh họa rõ ràng những thay đổi về nhiệt độ."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "She drew a graph to compare the two results.",
+          "example_vi": "Cô ấy đã vẽ một đồ thị để so sánh hai kết quả."
+        },
+        {
+          "meaning_vi": "vẽ đồ thị",
+          "example_en": "We need to graph the results of our experiment.",
+          "example_vi": "Chúng ta cần vẽ đồ thị cho các kết quả thí nghiệm của mình."
+        },
+        {
+          "meaning_vi": "vẽ đồ thị",
+          "example_en": "It is easier to graph the data using software.",
+          "example_vi": "Dễ dàng hơn khi vẽ đồ thị dữ liệu bằng phần mềm."
+        },
+        {
+          "meaning_vi": "vẽ đồ thị",
+          "example_en": "Can you graph this function on the whiteboard?",
+          "example_vi": "Bạn có thể vẽ đồ thị hàm số này trên bảng trắng không?"
+        },
+        {
+          "meaning_vi": "vẽ đồ thị",
+          "example_en": "The students were asked to graph the population growth.",
+          "example_vi": "Học sinh được yêu cầu vẽ đồ thị tăng trưởng dân số."
+        },
+        {
+          "meaning_vi": "vẽ đồ thị",
+          "example_en": "He learned how to graph equations in math class.",
+          "example_vi": "Anh ấy đã học cách vẽ đồ thị các phương trình trong lớp toán."
+        },
+        {
+          "meaning_vi": "vẽ đồ thị",
+          "example_en": "They will graph the progress of the project weekly.",
+          "example_vi": "Họ sẽ vẽ đồ thị tiến độ của dự án hàng tuần."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ động từ thành danh từ/động từ, loại bỏ nghĩa không phổ biến.",
+      "word": "graph",
+      "normalized_word": "graph",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The graph shows the increase in sales over the year.",
+      "example_vi_clean": "Đồ thị cho thấy sự gia tăng doanh số trong năm qua."
+    },
+    {
+      "id": 26244,
+      "quiz_meaning_vi": "sinh động",
+      "meaning_vi_clean": "sinh động; đồ thị",
+      "examples_clean": [
+        {
+          "meaning_vi": "sinh động",
+          "example_en": "He gave a graphic description of the accident.",
+          "example_vi": "Anh ấy đã đưa ra một mô tả sinh động về vụ tai nạn."
+        },
+        {
+          "meaning_vi": "sinh động",
+          "example_en": "The book provides a graphic account of life in the war.",
+          "example_vi": "Cuốn sách cung cấp một bản tường thuật sinh động về cuộc sống trong chiến tranh."
+        },
+        {
+          "meaning_vi": "sinh động",
+          "example_en": "She has a graphic way of telling stories.",
+          "example_vi": "Cô ấy có cách kể chuyện rất sinh động."
+        },
+        {
+          "meaning_vi": "sinh động",
+          "example_en": "The movie contains some very graphic scenes.",
+          "example_vi": "Bộ phim chứa một vài cảnh quay rất sinh động."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "The report includes several graphic representations of data.",
+          "example_vi": "Báo cáo bao gồm một vài biểu diễn đồ thị của dữ liệu."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "Graphic design is an important part of marketing.",
+          "example_vi": "Thiết kế đồ họa là một phần quan trọng của tiếp thị."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "The software helps create high-quality graphic images.",
+          "example_vi": "Phần mềm giúp tạo ra các hình ảnh đồ họa chất lượng cao."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "He is studying graphic arts at the university.",
+          "example_vi": "Anh ấy đang học nghệ thuật đồ họa tại trường đại học."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "The graphic quality of the screen is excellent.",
+          "example_vi": "Chất lượng đồ họa của màn hình rất tuyệt vời."
+        },
+        {
+          "meaning_vi": "đồ thị",
+          "example_en": "They used graphic symbols to explain the instructions.",
+          "example_vi": "Họ đã sử dụng các ký hiệu đồ họa để giải thích các hướng dẫn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, ưu tiên nghĩa 'sinh động' vì đây là nghĩa phổ biến của tính từ graphic.",
+      "word": "graphic",
+      "normalized_word": "graphic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He gave a graphic description of the accident.",
+      "example_vi_clean": "Anh ấy đã đưa ra một mô tả sinh động về vụ tai nạn."
+    },
+    {
+      "id": 26245,
+      "quiz_meaning_vi": "môn đồ họa",
+      "meaning_vi_clean": "môn đồ họa; hình ảnh đồ họa",
+      "examples_clean": [
+        {
+          "meaning_vi": "môn đồ họa",
+          "example_en": "She is taking a course in computer graphics.",
+          "example_vi": "Cô ấy đang tham gia một khóa học về đồ họa máy tính."
+        },
+        {
+          "meaning_vi": "môn đồ họa",
+          "example_en": "He is very talented at graphics.",
+          "example_vi": "Anh ấy rất có năng khiếu về đồ họa."
+        },
+        {
+          "meaning_vi": "môn đồ họa",
+          "example_en": "The school offers a degree in graphics.",
+          "example_vi": "Trường cung cấp bằng cấp về môn đồ họa."
+        },
+        {
+          "meaning_vi": "môn đồ họa",
+          "example_en": "Graphics is a challenging but rewarding field.",
+          "example_vi": "Đồ họa là một lĩnh vực đầy thử thách nhưng bổ ích."
+        },
+        {
+          "meaning_vi": "hình ảnh đồ họa",
+          "example_en": "This game is really fun, but the graphics aren't very good.",
+          "example_vi": "Trò chơi này thực sự rất vui, nhưng hình ảnh đồ họa thì không tốt lắm."
+        },
+        {
+          "meaning_vi": "hình ảnh đồ họa",
+          "example_en": "The new console has amazing graphics.",
+          "example_vi": "Máy chơi game mới có hình ảnh đồ họa tuyệt vời."
+        },
+        {
+          "meaning_vi": "hình ảnh đồ họa",
+          "example_en": "The website uses simple graphics to attract users.",
+          "example_vi": "Trang web sử dụng các hình ảnh đồ họa đơn giản để thu hút người dùng."
+        },
+        {
+          "meaning_vi": "hình ảnh đồ họa",
+          "example_en": "We need to improve the graphics on our presentation.",
+          "example_vi": "Chúng ta cần cải thiện hình ảnh đồ họa trong bài thuyết trình."
+        },
+        {
+          "meaning_vi": "hình ảnh đồ họa",
+          "example_en": "The graphics in this movie are very realistic.",
+          "example_vi": "Hình ảnh đồ họa trong bộ phim này rất chân thực."
+        },
+        {
+          "meaning_vi": "hình ảnh đồ họa",
+          "example_en": "He spent hours editing the graphics for the project.",
+          "example_vi": "Anh ấy đã dành hàng giờ để chỉnh sửa hình ảnh đồ họa cho dự án."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung POS (danh từ) và hoàn thiện ví dụ.",
+      "word": "graphics",
+      "normalized_word": "graphics",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She is taking a course in computer graphics.",
+      "example_vi_clean": "Cô ấy đang tham gia một khóa học về đồ họa máy tính."
+    },
+    {
+      "id": 26246,
+      "quiz_meaning_vi": "lòng biết ơn",
+      "meaning_vi_clean": "lòng biết ơn",
+      "examples_clean": [
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "She expressed her gratitude for their help.",
+          "example_vi": "Cô ấy bày tỏ lòng biết ơn vì sự giúp đỡ của họ."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "I would like to show my gratitude with a small gift.",
+          "example_vi": "Tôi muốn bày tỏ lòng biết ơn của mình bằng một món quà nhỏ."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "He felt a deep sense of gratitude towards his teacher.",
+          "example_vi": "Anh ấy cảm thấy một lòng biết ơn sâu sắc đối với giáo viên của mình."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "Words cannot express my gratitude for your support.",
+          "example_vi": "Lời nói không thể diễn tả hết lòng biết ơn của tôi vì sự ủng hộ của bạn."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "They sent a letter to show their gratitude.",
+          "example_vi": "Họ đã gửi một lá thư để bày tỏ lòng biết ơn của mình."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "Gratitude is a very important virtue.",
+          "example_vi": "Lòng biết ơn là một đức tính rất quan trọng."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "She smiled with gratitude when she received the news.",
+          "example_vi": "Cô ấy mỉm cười với lòng biết ơn khi nhận được tin tức."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "We owe him a debt of gratitude.",
+          "example_vi": "Chúng tôi nợ anh ấy một lòng biết ơn."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "He showed his gratitude by working harder.",
+          "example_vi": "Anh ấy thể hiện lòng biết ơn bằng cách làm việc chăm chỉ hơn."
+        },
+        {
+          "meaning_vi": "lòng biết ơn",
+          "example_en": "The community showed their gratitude to the volunteers.",
+          "example_vi": "Cộng đồng đã bày tỏ lòng biết ơn đối với các tình nguyện viên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "gratitude",
+      "normalized_word": "gratitude",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She expressed her gratitude for their help.",
+      "example_vi_clean": "Cô ấy bày tỏ lòng biết ơn vì sự giúp đỡ của họ."
+    },
+    {
+      "id": 26247,
+      "quiz_meaning_vi": "nghiêm trọng",
+      "meaning_vi_clean": "nghiêm trọng; mồ mả",
+      "examples_clean": [
+        {
+          "meaning_vi": "nghiêm trọng",
+          "example_en": "The situation is very grave.",
+          "example_vi": "Tình hình rất nghiêm trọng."
+        },
+        {
+          "meaning_vi": "nghiêm trọng",
+          "example_en": "He made a grave mistake in his judgment.",
+          "example_vi": "Anh ấy đã phạm một sai lầm nghiêm trọng trong phán đoán của mình."
+        },
+        {
+          "meaning_vi": "nghiêm trọng",
+          "example_en": "There is a grave concern about the environment.",
+          "example_vi": "Có một mối lo ngại nghiêm trọng về môi trường."
+        },
+        {
+          "meaning_vi": "nghiêm trọng",
+          "example_en": "The illness is grave and requires immediate treatment.",
+          "example_vi": "Căn bệnh rất nghiêm trọng và cần được điều trị ngay lập tức."
+        },
+        {
+          "meaning_vi": "nghiêm trọng",
+          "example_en": "She looked grave when she heard the bad news.",
+          "example_vi": "Cô ấy trông rất nghiêm trọng khi nghe tin xấu."
+        },
+        {
+          "meaning_vi": "mồ mả",
+          "example_en": "They visited the grave of their grandfather.",
+          "example_vi": "Họ đã đến thăm mộ của ông mình."
+        },
+        {
+          "meaning_vi": "mồ mả",
+          "example_en": "The grave was covered with flowers.",
+          "example_vi": "Ngôi mộ được phủ đầy hoa."
+        },
+        {
+          "meaning_vi": "mồ mả",
+          "example_en": "He stood silently by the grave.",
+          "example_vi": "Anh ấy đứng lặng lẽ bên ngôi mộ."
+        },
+        {
+          "meaning_vi": "mồ mả",
+          "example_en": "They cleaned the grave before the holiday.",
+          "example_vi": "Họ đã dọn dẹp ngôi mộ trước ngày lễ."
+        },
+        {
+          "meaning_vi": "mồ mả",
+          "example_en": "The old grave was hidden by tall grass.",
+          "example_vi": "Ngôi mộ cũ bị che khuất bởi cỏ cao."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ/danh từ, chọn nghĩa phổ biến nhất là 'nghiêm trọng' và 'mồ mả'.",
+      "word": "grave",
+      "normalized_word": "grave",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The situation is very grave.",
+      "example_vi_clean": "Tình hình rất nghiêm trọng."
+    },
+    {
+      "id": 26248,
+      "quiz_meaning_vi": "nước thịt",
+      "meaning_vi_clean": "nước thịt; nước xốt",
+      "examples_clean": [
+        {
+          "meaning_vi": "nước thịt",
+          "example_en": "She poured the hot gravy over the roast beef.",
+          "example_vi": "Cô ấy rưới nước thịt nóng lên món thịt bò nướng."
+        },
+        {
+          "meaning_vi": "nước thịt",
+          "example_en": "The gravy adds a lot of flavor to the meal.",
+          "example_vi": "Nước thịt làm tăng thêm nhiều hương vị cho bữa ăn."
+        },
+        {
+          "meaning_vi": "nước thịt",
+          "example_en": "He likes to dip his bread in the gravy.",
+          "example_vi": "Anh ấy thích chấm bánh mì vào nước thịt."
+        },
+        {
+          "meaning_vi": "nước thịt",
+          "example_en": "The gravy was too salty for my taste.",
+          "example_vi": "Nước thịt quá mặn so với khẩu vị của tôi."
+        },
+        {
+          "meaning_vi": "nước thịt",
+          "example_en": "She made the gravy from the juices of the chicken.",
+          "example_vi": "Cô ấy làm nước thịt từ nước tiết ra của con gà."
+        },
+        {
+          "meaning_vi": "nước xốt",
+          "example_en": "This gravy goes well with mashed potatoes.",
+          "example_vi": "Nước xốt này rất hợp với khoai tây nghiền."
+        },
+        {
+          "meaning_vi": "nước xốt",
+          "example_en": "Can you pass me the gravy, please?",
+          "example_vi": "Bạn có thể chuyển cho tôi nước xốt được không?"
+        },
+        {
+          "meaning_vi": "nước xốt",
+          "example_en": "The chef prepared a delicious gravy for the steak.",
+          "example_vi": "Đầu bếp đã chuẩn bị một loại nước xốt ngon cho món bít tết."
+        },
+        {
+          "meaning_vi": "nước xốt",
+          "example_en": "She thickened the gravy with a little flour.",
+          "example_vi": "Cô ấy làm đặc nước xốt bằng một ít bột mì."
+        },
+        {
+          "meaning_vi": "nước xốt",
+          "example_en": "The gravy is served in a small boat.",
+          "example_vi": "Nước xốt được phục vụ trong một chiếc thuyền nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa phổ biến, loại bỏ nghĩa lóng không phù hợp B1, bổ sung ví dụ.",
+      "word": "gravy",
+      "normalized_word": "gravy",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She poured the hot gravy over the roast beef.",
+      "example_vi_clean": "Cô ấy rưới nước thịt nóng lên món thịt bò nướng."
+    },
+    {
+      "id": 26249,
+      "quiz_meaning_vi": "nhà kính",
+      "meaning_vi_clean": "nhà kính",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "They grow tomatoes in a greenhouse.",
+          "example_vi": "Họ trồng cà chua trong nhà kính."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "The flowers in the greenhouse are blooming beautifully.",
+          "example_vi": "Những bông hoa trong nhà kính đang nở rất đẹp."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "It is very warm inside the greenhouse.",
+          "example_vi": "Bên trong nhà kính rất ấm áp."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "She spends her weekends working in the greenhouse.",
+          "example_vi": "Cô ấy dành những ngày cuối tuần để làm việc trong nhà kính."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "The greenhouse protects the plants from the cold.",
+          "example_vi": "Nhà kính bảo vệ cây cối khỏi cái lạnh."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "We built a small greenhouse in our backyard.",
+          "example_vi": "Chúng tôi đã xây một nhà kính nhỏ ở sân sau."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "The greenhouse needs more ventilation.",
+          "example_vi": "Nhà kính cần thêm sự thông gió."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "Many exotic plants are kept in the greenhouse.",
+          "example_vi": "Nhiều loại cây lạ được giữ trong nhà kính."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "The glass of the greenhouse was broken by the storm.",
+          "example_vi": "Kính của nhà kính đã bị vỡ do cơn bão."
+        },
+        {
+          "meaning_vi": "nhà kính",
+          "example_en": "He bought some new seeds for the greenhouse.",
+          "example_vi": "Anh ấy đã mua một vài hạt giống mới cho nhà kính."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nguyên nghĩa, bổ sung đủ 10 ví dụ.",
+      "word": "greenhouse",
+      "normalized_word": "greenhouse",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They grow tomatoes in a greenhouse.",
+      "example_vi_clean": "Họ trồng cà chua trong nhà kính."
+    },
+    {
+      "id": 26250,
+      "quiz_meaning_vi": "lời chào hỏi",
+      "meaning_vi_clean": "lời chào hỏi; lời chào mừng",
+      "examples_clean": [
+        {
+          "meaning_vi": "lời chào hỏi",
+          "example_en": "He gave a friendly greeting to everyone.",
+          "example_vi": "Anh ấy đã gửi một lời chào hỏi thân thiện đến mọi người."
+        },
+        {
+          "meaning_vi": "lời chào hỏi",
+          "example_en": "She offered a warm greeting when I arrived.",
+          "example_vi": "Cô ấy đã gửi một lời chào hỏi nồng nhiệt khi tôi đến."
+        },
+        {
+          "meaning_vi": "lời chào hỏi",
+          "example_en": "It is polite to exchange a greeting.",
+          "example_vi": "Thật lịch sự khi trao đổi một lời chào hỏi."
+        },
+        {
+          "meaning_vi": "lời chào hỏi",
+          "example_en": "He didn't even offer a greeting.",
+          "example_vi": "Anh ấy thậm chí không đưa ra một lời chào hỏi nào."
+        },
+        {
+          "meaning_vi": "lời chào hỏi",
+          "example_en": "A simple greeting can make someone's day.",
+          "example_vi": "Một lời chào hỏi đơn giản có thể làm một ngày của ai đó trở nên tốt đẹp."
+        },
+        {
+          "meaning_vi": "lời chào mừng",
+          "example_en": "The mayor gave a greeting to the visitors.",
+          "example_vi": "Thị trưởng đã gửi lời chào mừng đến các du khách."
+        },
+        {
+          "meaning_vi": "lời chào mừng",
+          "example_en": "They received a warm greeting at the airport.",
+          "example_vi": "Họ đã nhận được một lời chào mừng nồng nhiệt tại sân bay."
+        },
+        {
+          "meaning_vi": "lời chào mừng",
+          "example_en": "The card contained a special greeting for her birthday.",
+          "example_vi": "Tấm thiệp chứa một lời chào mừng đặc biệt cho sinh nhật của cô ấy."
+        },
+        {
+          "meaning_vi": "lời chào mừng",
+          "example_en": "He wrote a greeting on the front of the package.",
+          "example_vi": "Anh ấy đã viết một lời chào mừng trên mặt trước của gói hàng."
+        },
+        {
+          "meaning_vi": "lời chào mừng",
+          "example_en": "The crowd shouted a greeting to the team.",
+          "example_vi": "Đám đông đã hét lên một lời chào mừng đến đội bóng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho ngắn gọn, bổ sung đủ 10 ví dụ.",
+      "word": "greeting",
+      "normalized_word": "greeting",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He gave a friendly greeting to everyone.",
+      "example_vi_clean": "Anh ấy đã gửi một lời chào hỏi thân thiện đến mọi người."
+    }
+  ]
+}

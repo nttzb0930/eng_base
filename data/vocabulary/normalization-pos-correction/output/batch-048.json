@@ -1,0 +1,764 @@
+{
+  "records": [
+    {
+      "id": 25242,
+      "quiz_meaning_vi": "xấu tính",
+      "meaning_vi_clean": "xấu tính",
+      "examples_clean": [
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "It was mean of him to laugh at her.",
+          "example_vi": "Anh ta thật xấu tính khi cười nhạo cô ấy."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "Don't be so mean to your little brother.",
+          "example_vi": "Đừng xấu tính với em trai của con như vậy."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "She felt mean for not sharing her toys.",
+          "example_vi": "Cô bé cảm thấy mình thật xấu tính vì đã không chia sẻ đồ chơi."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "He is known for being mean to animals.",
+          "example_vi": "Anh ta nổi tiếng là người xấu tính với động vật."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "It is mean to exclude people from the game.",
+          "example_vi": "Thật xấu tính khi loại người khác ra khỏi trò chơi."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "She apologized for her mean behavior yesterday.",
+          "example_vi": "Cô ấy đã xin lỗi vì hành vi xấu tính của mình ngày hôm qua."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "The teacher told the students not to be mean.",
+          "example_vi": "Giáo viên bảo các học sinh không được xấu tính."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "He regretted saying such mean things to her.",
+          "example_vi": "Anh ấy hối hận vì đã nói những lời xấu tính như vậy với cô ấy."
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "Why are you being so mean today?",
+          "example_vi": "Tại sao hôm nay bạn lại xấu tính như vậy?"
+        },
+        {
+          "meaning_vi": "xấu tính",
+          "example_en": "It was a mean trick to play on a friend.",
+          "example_vi": "Đó là một trò đùa xấu tính đối với một người bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'xấu tính' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'xấu tính' là tính từ, tất cả 10 ví dụ đều dùng 'mean' để mô tả tính cách hoặc hành vi của người."
+      },
+      "word": "mean",
+      "normalized_word": "mean",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It was mean of him to laugh at her.",
+      "example_vi_clean": "Anh ta thật xấu tính khi cười nhạo cô ấy."
+    },
+    {
+      "id": 25247,
+      "quiz_meaning_vi": "sự đề cập",
+      "meaning_vi_clean": "sự đề cập",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "His mention of the problem was very helpful.",
+          "example_vi": "Sự đề cập của anh ấy về vấn đề này rất hữu ích."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "There was no mention of the price in the letter.",
+          "example_vi": "Không có sự đề cập nào về giá cả trong lá thư."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "She made a brief mention of her plans.",
+          "example_vi": "Cô ấy đã có một sự đề cập ngắn gọn về các kế hoạch của mình."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "The report includes a mention of the new policy.",
+          "example_vi": "Bản báo cáo bao gồm một sự đề cập về chính sách mới."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "I appreciate your kind mention of my work.",
+          "example_vi": "Tôi trân trọng sự đề cập tử tế của bạn về công việc của tôi."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "The book contains a mention of historical events.",
+          "example_vi": "Cuốn sách chứa đựng một sự đề cập về các sự kiện lịch sử."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "His name deserves a mention in the article.",
+          "example_vi": "Tên của anh ấy xứng đáng có một sự đề cập trong bài báo."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "The email had a mention of the meeting time.",
+          "example_vi": "Email đó có một sự đề cập về thời gian cuộc họp."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "She was pleased by the mention of her success.",
+          "example_vi": "Cô ấy cảm thấy hài lòng vì sự đề cập về thành công của mình."
+        },
+        {
+          "meaning_vi": "sự đề cập",
+          "example_en": "The document lacks a mention of the deadline.",
+          "example_vi": "Tài liệu thiếu một sự đề cập về hạn chót."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'sự đề cập' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sự đề cập' là danh từ, tất cả 10 ví dụ đều dùng 'mention' như một danh từ."
+      },
+      "word": "mention",
+      "normalized_word": "mention",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His mention of the problem was very helpful.",
+      "example_vi_clean": "Sự đề cập của anh ấy về vấn đề này rất hữu ích."
+    },
+    {
+      "id": 25249,
+      "quiz_meaning_vi": "kim loại",
+      "meaning_vi_clean": "kim loại",
+      "examples_clean": [
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "This box is made of a strong metal.",
+          "example_vi": "Chiếc hộp này được làm từ một loại kim loại bền."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Gold is a very valuable metal.",
+          "example_vi": "Vàng là một loại kim loại rất có giá trị."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The gate is made of heavy metal.",
+          "example_vi": "Cánh cổng được làm bằng kim loại nặng."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Iron is a common type of metal.",
+          "example_vi": "Sắt là một loại kim loại phổ biến."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "They recycle old metal to save resources.",
+          "example_vi": "Họ tái chế kim loại cũ để tiết kiệm tài nguyên."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The sculpture is made of shiny metal.",
+          "example_vi": "Bức tượng được làm từ kim loại sáng bóng."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Copper is a useful metal for electricity.",
+          "example_vi": "Đồng là một loại kim loại hữu ích cho điện."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The tools are made of hard metal.",
+          "example_vi": "Các công cụ được làm từ kim loại cứng."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "Silver is a beautiful metal used in jewelry.",
+          "example_vi": "Bạc là một loại kim loại đẹp được dùng trong trang sức."
+        },
+        {
+          "meaning_vi": "kim loại",
+          "example_en": "The bridge is built with steel metal.",
+          "example_vi": "Cây cầu được xây dựng bằng kim loại thép."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'kim loại' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'kim loại' là danh từ, tất cả 10 ví dụ đều dùng 'metal' như một danh từ."
+      },
+      "word": "metal",
+      "normalized_word": "metal",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This box is made of a strong metal.",
+      "example_vi_clean": "Chiếc hộp này được làm từ một loại kim loại bền."
+    },
+    {
+      "id": 25256,
+      "quiz_meaning_vi": "quân sự",
+      "meaning_vi_clean": "quân sự",
+      "examples_clean": [
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "He decided to join the military service.",
+          "example_vi": "Anh ấy quyết định tham gia nghĩa vụ quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "They live on a military base.",
+          "example_vi": "Họ sống trong một căn cứ quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The government increased military spending.",
+          "example_vi": "Chính phủ đã tăng chi tiêu quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "She has a military background.",
+          "example_vi": "Cô ấy có nền tảng quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The military parade was very impressive.",
+          "example_vi": "Cuộc diễu hành quân sự rất ấn tượng."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "He wears a military uniform.",
+          "example_vi": "Anh ấy mặc quân phục."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "They received military training last year.",
+          "example_vi": "Họ đã nhận được sự huấn luyện quân sự vào năm ngoái."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The military aircraft flew over the city.",
+          "example_vi": "Chiếc máy bay quân sự đã bay qua thành phố."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "He is interested in military history.",
+          "example_vi": "Anh ấy quan tâm đến lịch sử quân sự."
+        },
+        {
+          "meaning_vi": "quân sự",
+          "example_en": "The military strategy was successful.",
+          "example_vi": "Chiến lược quân sự đó đã thành công."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'quân sự' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'quân sự' là tính từ, tất cả 10 ví dụ đều dùng 'military' để bổ nghĩa cho danh từ."
+      },
+      "word": "military",
+      "normalized_word": "military",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He decided to join the military service.",
+      "example_vi_clean": "Anh ấy quyết định tham gia nghĩa vụ quân sự."
+    },
+    {
+      "id": 25260,
+      "quiz_meaning_vi": "sai lầm",
+      "meaning_vi_clean": "sai lầm",
+      "examples_clean": [
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "I made a mistake in my homework.",
+          "example_vi": "Tôi đã mắc một sai lầm trong bài tập về nhà."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "It was a big mistake to trust him.",
+          "example_vi": "Đó là một sai lầm lớn khi tin tưởng anh ta."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "Everyone makes a mistake sometimes.",
+          "example_vi": "Ai cũng có lúc mắc sai lầm."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "She realized her mistake immediately.",
+          "example_vi": "Cô ấy nhận ra sai lầm của mình ngay lập tức."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "Don't worry about such a small mistake.",
+          "example_vi": "Đừng lo lắng về một sai lầm nhỏ như vậy."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "He admitted his mistake to the teacher.",
+          "example_vi": "Anh ấy đã thừa nhận sai lầm của mình với giáo viên."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "Learning from a mistake is important.",
+          "example_vi": "Học hỏi từ sai lầm là điều quan trọng."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "The report contains a spelling mistake.",
+          "example_vi": "Bản báo cáo có một sai lầm về chính tả."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "It was a honest mistake.",
+          "example_vi": "Đó là một sai lầm vô ý."
+        },
+        {
+          "meaning_vi": "sai lầm",
+          "example_en": "She corrected the mistake in the document.",
+          "example_vi": "Cô ấy đã sửa sai lầm trong tài liệu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'sai lầm' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'sai lầm' là danh từ, tất cả 10 ví dụ đều dùng 'mistake' như một danh từ."
+      },
+      "word": "mistake",
+      "normalized_word": "mistake",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I made a mistake in my homework.",
+      "example_vi_clean": "Tôi đã mắc một sai lầm trong bài tập về nhà."
+    },
+    {
+      "id": 25265,
+      "quiz_meaning_vi": "nhất",
+      "meaning_vi_clean": "nhất",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhất",
+          "example_en": "This is the most beautiful place I have seen.",
+          "example_vi": "Đây là nơi đẹp nhất mà tôi từng thấy."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "He is the most intelligent student in class.",
+          "example_vi": "Cậu ấy là học sinh thông minh nhất lớp."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "That was the most exciting game ever.",
+          "example_vi": "Đó là trò chơi thú vị nhất từ trước đến nay."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "She is the most helpful person I know.",
+          "example_vi": "Cô ấy là người hay giúp đỡ nhất mà tôi biết."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "This is the most difficult task of all.",
+          "example_vi": "Đây là nhiệm vụ khó nhất trong tất cả."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "It was the most interesting book I read.",
+          "example_vi": "Đó là cuốn sách thú vị nhất tôi từng đọc."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "He is the most famous singer in the country.",
+          "example_vi": "Anh ấy là ca sĩ nổi tiếng nhất đất nước."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "This is the most important rule to follow.",
+          "example_vi": "Đây là quy tắc quan trọng nhất cần tuân theo."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "She is the most talented artist here.",
+          "example_vi": "Cô ấy là nghệ sĩ tài năng nhất ở đây."
+        },
+        {
+          "meaning_vi": "nhất",
+          "example_en": "That was the most delicious meal I had.",
+          "example_vi": "Đó là bữa ăn ngon nhất tôi từng dùng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa phó từ 'nhất' (dùng trong so sánh nhất) phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "adverb",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'nhất' là phó từ, tất cả 10 ví dụ đều dùng 'most' để bổ nghĩa cho tính từ trong so sánh nhất."
+      },
+      "word": "most",
+      "normalized_word": "most",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "This is the most beautiful place I have seen.",
+      "example_vi_clean": "Đây là nơi đẹp nhất mà tôi từng thấy."
+    },
+    {
+      "id": 25269,
+      "quiz_meaning_vi": "cái cốc",
+      "meaning_vi_clean": "cái cốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "She drank tea from a large mug.",
+          "example_vi": "Cô ấy uống trà từ một cái cốc lớn."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "He broke his favorite coffee mug.",
+          "example_vi": "Anh ấy đã làm vỡ cái cốc cà phê yêu thích của mình."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "I bought a new mug for my desk.",
+          "example_vi": "Tôi đã mua một cái cốc mới cho bàn làm việc của mình."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "The mug is full of hot chocolate.",
+          "example_vi": "Cái cốc đầy sô-cô-la nóng."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "She washed the dirty mug in the sink.",
+          "example_vi": "Cô ấy đã rửa cái cốc bẩn trong bồn rửa."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "He put the mug on the table.",
+          "example_vi": "Anh ấy đặt cái cốc lên bàn."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "This mug has a picture of a cat.",
+          "example_vi": "Cái cốc này có hình một con mèo."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "She filled the mug with cold water.",
+          "example_vi": "Cô ấy đổ đầy nước lạnh vào cái cốc."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "He dropped the mug on the floor.",
+          "example_vi": "Anh ấy làm rơi cái cốc xuống sàn."
+        },
+        {
+          "meaning_vi": "cái cốc",
+          "example_en": "The mug is made of ceramic.",
+          "example_vi": "Cái cốc được làm bằng gốm."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'cái cốc' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'cái cốc' là danh từ, tất cả 10 ví dụ đều dùng 'mug' như một danh từ."
+      },
+      "word": "mug",
+      "normalized_word": "mug",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She drank tea from a large mug.",
+      "example_vi_clean": "Cô ấy uống trà từ một cái cốc lớn."
+    },
+    {
+      "id": 25270,
+      "quiz_meaning_vi": "vụ giết người",
+      "meaning_vi_clean": "vụ giết người",
+      "examples_clean": [
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "The police are investigating the murder.",
+          "example_vi": "Cảnh sát đang điều tra vụ giết người đó."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "He was accused of committing a murder.",
+          "example_vi": "Anh ta bị buộc tội thực hiện một vụ giết người."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "The news reported a murder in the city.",
+          "example_vi": "Tin tức đã đưa tin về một vụ giết người trong thành phố."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "She read a book about a mysterious murder.",
+          "example_vi": "Cô ấy đã đọc một cuốn sách về một vụ giết người bí ẩn."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "The witness saw the murder happen.",
+          "example_vi": "Nhân chứng đã nhìn thấy vụ giết người xảy ra."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "They solved the murder after many years.",
+          "example_vi": "Họ đã giải quyết vụ giết người sau nhiều năm."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "The murder shocked the whole community.",
+          "example_vi": "Vụ giết người đã gây sốc cho cả cộng đồng."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "He was found guilty of murder.",
+          "example_vi": "Anh ta bị kết tội giết người."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "The detective studied the murder scene.",
+          "example_vi": "Thám tử đã nghiên cứu hiện trường vụ giết người."
+        },
+        {
+          "meaning_vi": "vụ giết người",
+          "example_en": "There was a murder in the small village.",
+          "example_vi": "Đã có một vụ giết người ở ngôi làng nhỏ đó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'vụ giết người' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'vụ giết người' là danh từ, tất cả 10 ví dụ đều dùng 'murder' như một danh từ."
+      },
+      "word": "murder",
+      "normalized_word": "murder",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The police are investigating the murder.",
+      "example_vi_clean": "Cảnh sát đang điều tra vụ giết người đó."
+    },
+    {
+      "id": 25272,
+      "quiz_meaning_vi": "nấm",
+      "meaning_vi_clean": "nấm",
+      "examples_clean": [
+        {
+          "meaning_vi": "nấm",
+          "example_en": "She picked a mushroom in the forest.",
+          "example_vi": "Cô ấy đã hái một cây nấm trong rừng."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "He added a mushroom to the salad.",
+          "example_vi": "Anh ấy đã thêm một cây nấm vào món salad."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "This mushroom is safe to eat.",
+          "example_vi": "Cây nấm này an toàn để ăn."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "They found a large mushroom under the tree.",
+          "example_vi": "Họ đã tìm thấy một cây nấm lớn dưới gốc cây."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "The soup is made with mushroom.",
+          "example_vi": "Món súp được làm với nấm."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "Be careful, that mushroom is poisonous.",
+          "example_vi": "Hãy cẩn thận, cây nấm đó có độc."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "She bought some fresh mushroom at the market.",
+          "example_vi": "Cô ấy đã mua một ít nấm tươi ở chợ."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "The mushroom grew quickly after the rain.",
+          "example_vi": "Cây nấm đã mọc nhanh chóng sau cơn mưa."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "He cooked the mushroom with garlic.",
+          "example_vi": "Anh ấy đã nấu nấm với tỏi."
+        },
+        {
+          "meaning_vi": "nấm",
+          "example_en": "The pizza has mushroom on top.",
+          "example_vi": "Chiếc bánh pizza có nấm ở trên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa danh từ 'nấm' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "noun",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'nấm' là danh từ, tất cả 10 ví dụ đều dùng 'mushroom' như một danh từ."
+      },
+      "word": "mushroom",
+      "normalized_word": "mushroom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She picked a mushroom in the forest.",
+      "example_vi_clean": "Cô ấy đã hái một cây nấm trong rừng."
+    },
+    {
+      "id": 25279,
+      "quiz_meaning_vi": "quốc gia",
+      "meaning_vi_clean": "quốc gia",
+      "examples_clean": [
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "They celebrated the national holiday.",
+          "example_vi": "Họ đã ăn mừng ngày lễ quốc gia."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "He is a national hero in his country.",
+          "example_vi": "Anh ấy là một anh hùng quốc gia ở đất nước mình."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national team won the game.",
+          "example_vi": "Đội tuyển quốc gia đã thắng trận đấu."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "They discussed the national economy.",
+          "example_vi": "Họ đã thảo luận về nền kinh tế quốc gia."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national park is very beautiful.",
+          "example_vi": "Công viên quốc gia đó rất đẹp."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "She works for a national newspaper.",
+          "example_vi": "Cô ấy làm việc cho một tờ báo quốc gia."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national anthem was played.",
+          "example_vi": "Quốc ca đã được phát lên."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "They have a national meeting every year.",
+          "example_vi": "Họ có một cuộc họp quốc gia mỗi năm."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "The national museum is closed today.",
+          "example_vi": "Bảo tàng quốc gia đóng cửa hôm nay."
+        },
+        {
+          "meaning_vi": "quốc gia",
+          "example_en": "He is interested in national politics.",
+          "example_vi": "Anh ấy quan tâm đến chính trị quốc gia."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Đã tạo lại nghĩa tính từ 'quốc gia' phù hợp với trình độ A2.",
+      "pos_verification": {
+        "expected_pos": "adjective",
+        "senses_checked": 1,
+        "examples_checked": 10,
+        "quiz_meaning_matches_expected_pos": true,
+        "all_senses_match_expected_pos": true,
+        "all_examples_use_expected_pos": true,
+        "explanation": "Nghĩa 'quốc gia' là tính từ, tất cả 10 ví dụ đều dùng 'national' để bổ nghĩa cho danh từ."
+      },
+      "word": "national",
+      "normalized_word": "national",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They celebrated the national holiday.",
+      "example_vi_clean": "Họ đã ăn mừng ngày lễ quốc gia."
+    }
+  ]
+}

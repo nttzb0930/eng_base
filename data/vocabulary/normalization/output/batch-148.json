@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25471,
+      "quiz_meaning_vi": "dị ứng",
+      "meaning_vi_clean": "dị ứng; dễ có ác cảm",
+      "examples_clean": [
+        {
+          "meaning_vi": "dị ứng",
+          "example_en": "I am allergic to cats.",
+          "example_vi": "Tôi bị dị ứng với mèo."
+        },
+        {
+          "meaning_vi": "dị ứng",
+          "example_en": "She is allergic to peanuts.",
+          "example_vi": "Cô ấy bị dị ứng với đậu phộng."
+        },
+        {
+          "meaning_vi": "dị ứng",
+          "example_en": "Many people are allergic to pollen in the spring.",
+          "example_vi": "Nhiều người bị dị ứng với phấn hoa vào mùa xuân."
+        },
+        {
+          "meaning_vi": "dị ứng",
+          "example_en": "He discovered he was allergic to strawberries.",
+          "example_vi": "Anh ấy phát hiện ra mình bị dị ứng với dâu tây."
+        },
+        {
+          "meaning_vi": "dễ có ác cảm",
+          "example_en": "He is allergic to any kind of change in the office.",
+          "example_vi": "Anh ấy rất dễ có ác cảm với bất kỳ sự thay đổi nào trong văn phòng."
+        },
+        {
+          "meaning_vi": "dễ có ác cảm",
+          "example_en": "She seems allergic to hard work.",
+          "example_vi": "Cô ấy có vẻ rất dễ có ác cảm với công việc nặng nhọc."
+        },
+        {
+          "meaning_vi": "dễ có ác cảm",
+          "example_en": "The manager is allergic to new ideas.",
+          "example_vi": "Người quản lý rất dễ có ác cảm với những ý tưởng mới."
+        },
+        {
+          "meaning_vi": "dễ có ác cảm",
+          "example_en": "They are allergic to criticism of any kind.",
+          "example_vi": "Họ rất dễ có ác cảm với bất kỳ lời chỉ trích nào."
+        },
+        {
+          "meaning_vi": "dị ứng",
+          "example_en": "The doctor tested me to see what I am allergic to.",
+          "example_vi": "Bác sĩ đã kiểm tra để xem tôi bị dị ứng với thứ gì."
+        },
+        {
+          "meaning_vi": "dị ứng",
+          "example_en": "My skin gets red because I am allergic to this soap.",
+          "example_vi": "Da tôi bị đỏ vì tôi bị dị ứng với loại xà phòng này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sắp xếp lại nghĩa, bổ sung ví dụ cho đủ 10 câu và đảm bảo phân bổ đúng tỷ lệ.",
+      "word": "allergic",
+      "normalized_word": "allergic",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "I am allergic to cats.",
+      "example_vi_clean": "Tôi bị dị ứng với mèo."
+    },
+    {
+      "id": 25472,
+      "quiz_meaning_vi": "sự cho phép",
+      "meaning_vi_clean": "sự cho phép; tiền trợ cấp",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "You need parental allowance to go on the trip.",
+          "example_vi": "Bạn cần sự cho phép của cha mẹ để đi chuyến đi này."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "The teacher gave her allowance to leave the room.",
+          "example_vi": "Giáo viên đã cho phép cô ấy rời khỏi phòng."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "He acted without the allowance of his boss.",
+          "example_vi": "Anh ấy đã hành động mà không có sự cho phép của sếp."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "The rules make no allowance for such behavior.",
+          "example_vi": "Các quy định không có sự cho phép cho hành vi như vậy."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "My parents give me a weekly allowance.",
+          "example_vi": "Cha mẹ cho tôi một khoản tiền trợ cấp hàng tuần."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "He spends his entire allowance on video games.",
+          "example_vi": "Anh ấy tiêu toàn bộ tiền trợ cấp của mình vào trò chơi điện tử."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "The government provides a monthly allowance for families.",
+          "example_vi": "Chính phủ cung cấp một khoản tiền trợ cấp hàng tháng cho các gia đình."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "She saved part of her allowance to buy a gift.",
+          "example_vi": "Cô ấy đã tiết kiệm một phần tiền trợ cấp để mua quà."
+        },
+        {
+          "meaning_vi": "sự cho phép",
+          "example_en": "We must seek allowance before entering the building.",
+          "example_vi": "Chúng ta phải xin sự cho phép trước khi vào tòa nhà."
+        },
+        {
+          "meaning_vi": "tiền trợ cấp",
+          "example_en": "His allowance is not enough to cover his expenses.",
+          "example_vi": "Khoản tiền trợ cấp của anh ấy không đủ để trang trải chi phí."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa quá chuyên ngành hoặc hiếm, giữ lại 2 nghĩa phổ biến nhất.",
+      "word": "allowance",
+      "normalized_word": "allowance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "You need parental allowance to go on the trip.",
+      "example_vi_clean": "Bạn cần sự cho phép của cha mẹ để đi chuyến đi này."
+    },
+    {
+      "id": 25473,
+      "quiz_meaning_vi": "lớn tiếng",
+      "meaning_vi_clean": "lớn tiếng",
+      "examples_clean": [
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "Try speaking aloud rather than whispering.",
+          "example_vi": "Hãy thử nói lớn tiếng thay vì thì thầm."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "She read the poem aloud to the class.",
+          "example_vi": "Cô ấy đọc bài thơ lớn tiếng cho cả lớp nghe."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "He thought his worries aloud.",
+          "example_vi": "Anh ấy nói ra những lo lắng của mình một cách lớn tiếng."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "Please read the instructions aloud for everyone.",
+          "example_vi": "Vui lòng đọc hướng dẫn lớn tiếng cho mọi người cùng nghe."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "She laughed aloud at the funny joke.",
+          "example_vi": "Cô ấy cười lớn tiếng trước câu chuyện đùa vui nhộn."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "He cried aloud in pain.",
+          "example_vi": "Anh ấy kêu lên lớn tiếng vì đau đớn."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "Don't talk aloud in the library.",
+          "example_vi": "Đừng nói lớn tiếng trong thư viện."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "She wondered aloud where he had gone.",
+          "example_vi": "Cô ấy tự hỏi lớn tiếng xem anh ấy đã đi đâu."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "The news was announced aloud to the crowd.",
+          "example_vi": "Tin tức được thông báo lớn tiếng cho đám đông."
+        },
+        {
+          "meaning_vi": "lớn tiếng",
+          "example_en": "He shouted aloud to get their attention.",
+          "example_vi": "Anh ấy hét lớn tiếng để thu hút sự chú ý của họ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "aloud",
+      "normalized_word": "aloud",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Try speaking aloud rather than whispering.",
+      "example_vi_clean": "Hãy thử nói lớn tiếng thay vì thì thầm."
+    },
+    {
+      "id": 25474,
+      "quiz_meaning_vi": "bảng chữ cái",
+      "meaning_vi_clean": "bảng chữ cái",
+      "examples_clean": [
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "In the first year of school, pupils are taught to recite the alphabet.",
+          "example_vi": "Trong năm học đầu tiên, học sinh được dạy đọc thuộc bảng chữ cái."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "The English alphabet has twenty-six letters.",
+          "example_vi": "Bảng chữ cái tiếng Anh có hai mươi sáu chữ cái."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "Can you say the alphabet backwards?",
+          "example_vi": "Bạn có thể đọc ngược bảng chữ cái không?"
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "The children are learning the letters of the alphabet.",
+          "example_vi": "Những đứa trẻ đang học các chữ cái trong bảng chữ cái."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "The names are listed in order of the alphabet.",
+          "example_vi": "Các tên được liệt kê theo thứ tự bảng chữ cái."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "She knows the Greek alphabet well.",
+          "example_vi": "Cô ấy biết rõ bảng chữ cái Hy Lạp."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "The alphabet is the foundation of reading.",
+          "example_vi": "Bảng chữ cái là nền tảng của việc đọc."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "He wrote the alphabet on the blackboard.",
+          "example_vi": "Anh ấy viết bảng chữ cái lên bảng đen."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "The alphabet is organized from A to Z.",
+          "example_vi": "Bảng chữ cái được sắp xếp từ A đến Z."
+        },
+        {
+          "meaning_vi": "bảng chữ cái",
+          "example_en": "Learning the alphabet is the first step in language study.",
+          "example_vi": "Học bảng chữ cái là bước đầu tiên trong việc học ngôn ngữ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa phổ biến nhất, bổ sung ví dụ.",
+      "word": "alphabet",
+      "normalized_word": "alphabet",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "In the first year of school, pupils are taught to recite the alphabet.",
+      "example_vi_clean": "Trong năm học đầu tiên, học sinh được dạy đọc thuộc bảng chữ cái."
+    },
+    {
+      "id": 25475,
+      "quiz_meaning_vi": "sự lựa chọn",
+      "meaning_vi_clean": "sự lựa chọn; thay thế",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự lựa chọn",
+          "example_en": "We have no alternative but to wait.",
+          "example_vi": "Chúng tôi không có sự lựa chọn nào khác ngoài việc chờ đợi."
+        },
+        {
+          "meaning_vi": "sự lựa chọn",
+          "example_en": "Is there an alternative to this plan?",
+          "example_vi": "Có sự lựa chọn nào khác cho kế hoạch này không?"
+        },
+        {
+          "meaning_vi": "sự lựa chọn",
+          "example_en": "She offered me an alternative.",
+          "example_vi": "Cô ấy đã đưa ra cho tôi một sự lựa chọn."
+        },
+        {
+          "meaning_vi": "sự lựa chọn",
+          "example_en": "We need to find a better alternative.",
+          "example_vi": "Chúng ta cần tìm một sự lựa chọn tốt hơn."
+        },
+        {
+          "meaning_vi": "thay thế",
+          "example_en": "We are looking for alternative energy sources.",
+          "example_vi": "Chúng tôi đang tìm kiếm các nguồn năng lượng thay thế."
+        },
+        {
+          "meaning_vi": "thay thế",
+          "example_en": "They suggested an alternative route.",
+          "example_vi": "Họ đã gợi ý một con đường thay thế."
+        },
+        {
+          "meaning_vi": "thay thế",
+          "example_en": "This is an alternative solution to the problem.",
+          "example_vi": "Đây là một giải pháp thay thế cho vấn đề này."
+        },
+        {
+          "meaning_vi": "thay thế",
+          "example_en": "He proposed an alternative method.",
+          "example_vi": "Anh ấy đã đề xuất một phương pháp thay thế."
+        },
+        {
+          "meaning_vi": "sự lựa chọn",
+          "example_en": "The alternative is to cancel the event.",
+          "example_vi": "Sự lựa chọn khác là hủy bỏ sự kiện."
+        },
+        {
+          "meaning_vi": "thay thế",
+          "example_en": "They use alternative materials for construction.",
+          "example_vi": "Họ sử dụng các vật liệu thay thế để xây dựng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ tính từ sang danh từ/tính từ phù hợp, chọn nghĩa phổ biến.",
+      "word": "alternative",
+      "normalized_word": "alternative",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "We have no alternative but to wait.",
+      "example_vi_clean": "Chúng tôi không có sự lựa chọn nào khác ngoài việc chờ đợi."
+    },
+    {
+      "id": 25476,
+      "quiz_meaning_vi": "hoàn toàn",
+      "meaning_vi_clean": "hoàn toàn; nhìn chung",
+      "examples_clean": [
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "Altogether, I'm sorry it happened.",
+          "example_vi": "Hoàn toàn, tôi xin lỗi vì điều đó đã xảy ra."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "The plan was altogether different from what I expected.",
+          "example_vi": "Kế hoạch hoàn toàn khác với những gì tôi mong đợi."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "He was altogether too tired to continue.",
+          "example_vi": "Anh ấy hoàn toàn quá mệt để tiếp tục."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "It is altogether impossible to finish today.",
+          "example_vi": "Hoàn toàn không thể hoàn thành trong hôm nay."
+        },
+        {
+          "meaning_vi": "nhìn chung",
+          "example_en": "Altogether, it was a successful event.",
+          "example_vi": "Nhìn chung, đó là một sự kiện thành công."
+        },
+        {
+          "meaning_vi": "nhìn chung",
+          "example_en": "Altogether, the results are very encouraging.",
+          "example_vi": "Nhìn chung, kết quả rất đáng khích lệ."
+        },
+        {
+          "meaning_vi": "nhìn chung",
+          "example_en": "Altogether, there were fifty people present.",
+          "example_vi": "Nhìn chung, có năm mươi người có mặt."
+        },
+        {
+          "meaning_vi": "nhìn chung",
+          "example_en": "Altogether, the trip was worth the effort.",
+          "example_vi": "Nhìn chung, chuyến đi rất đáng công sức."
+        },
+        {
+          "meaning_vi": "hoàn toàn",
+          "example_en": "She was altogether surprised by the news.",
+          "example_vi": "Cô ấy hoàn toàn ngạc nhiên trước tin tức đó."
+        },
+        {
+          "meaning_vi": "nhìn chung",
+          "example_en": "Altogether, the team performed well.",
+          "example_vi": "Nhìn chung, cả đội đã thể hiện tốt."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ sang phó từ, chọn nghĩa phổ biến.",
+      "word": "altogether",
+      "normalized_word": "altogether",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "Altogether, I'm sorry it happened.",
+      "example_vi_clean": "Hoàn toàn, tôi xin lỗi vì điều đó đã xảy ra."
+    },
+    {
+      "id": 25477,
+      "quiz_meaning_vi": "làm kinh ngạc",
+      "meaning_vi_clean": "làm kinh ngạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The view from the top was amazing.",
+          "example_vi": "Khung cảnh từ trên đỉnh thật làm kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "She has an amazing talent for music.",
+          "example_vi": "Cô ấy có một tài năng làm kinh ngạc về âm nhạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "It is amazing how fast children learn.",
+          "example_vi": "Thật làm kinh ngạc khi thấy trẻ em học nhanh như thế nào."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "He told an amazing story about his travels.",
+          "example_vi": "Anh ấy kể một câu chuyện làm kinh ngạc về những chuyến đi của mình."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The results of the experiment were amazing.",
+          "example_vi": "Kết quả của thí nghiệm thật làm kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "She did an amazing job on the project.",
+          "example_vi": "Cô ấy đã làm một công việc làm kinh ngạc trong dự án."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "It was an amazing experience for all of us.",
+          "example_vi": "Đó là một trải nghiệm làm kinh ngạc cho tất cả chúng tôi."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The speed of the car was amazing.",
+          "example_vi": "Tốc độ của chiếc xe thật làm kinh ngạc."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "He has an amazing memory for names.",
+          "example_vi": "Anh ấy có một trí nhớ làm kinh ngạc về tên người."
+        },
+        {
+          "meaning_vi": "làm kinh ngạc",
+          "example_en": "The performance was truly amazing.",
+          "example_vi": "Màn trình diễn thực sự làm kinh ngạc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "amazing",
+      "normalized_word": "amazing",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The view from the top was amazing.",
+      "example_vi_clean": "Khung cảnh từ trên đỉnh thật làm kinh ngạc."
+    },
+    {
+      "id": 25478,
+      "quiz_meaning_vi": "có nhiều hoài bão",
+      "meaning_vi_clean": "có nhiều hoài bão",
+      "examples_clean": [
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "He is an ambitious young man.",
+          "example_vi": "Anh ấy là một thanh niên có nhiều hoài bão."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "She has ambitious plans for her career.",
+          "example_vi": "Cô ấy có những kế hoạch có nhiều hoài bão cho sự nghiệp của mình."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "They are very ambitious about the future.",
+          "example_vi": "Họ rất có nhiều hoài bão về tương lai."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "An ambitious student always works hard.",
+          "example_vi": "Một học sinh có nhiều hoài bão luôn làm việc chăm chỉ."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "She set an ambitious goal for herself.",
+          "example_vi": "Cô ấy đặt ra một mục tiêu có nhiều hoài bão cho bản thân."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "He is too ambitious to be satisfied with this.",
+          "example_vi": "Anh ấy quá có nhiều hoài bão để hài lòng với điều này."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "The company has ambitious expansion plans.",
+          "example_vi": "Công ty có những kế hoạch mở rộng có nhiều hoài bão."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "She is an ambitious leader.",
+          "example_vi": "Cô ấy là một nhà lãnh đạo có nhiều hoài bão."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "His ambitious nature helped him succeed.",
+          "example_vi": "Bản tính có nhiều hoài bão đã giúp anh ấy thành công."
+        },
+        {
+          "meaning_vi": "có nhiều hoài bão",
+          "example_en": "They made an ambitious attempt to win.",
+          "example_vi": "Họ đã thực hiện một nỗ lực có nhiều hoài bão để giành chiến thắng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "ambitious",
+      "normalized_word": "ambitious",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "He is an ambitious young man.",
+      "example_vi_clean": "Anh ấy là một thanh niên có nhiều hoài bão."
+    },
+    {
+      "id": 25479,
+      "quiz_meaning_vi": "xe cứu thương",
+      "meaning_vi_clean": "xe cứu thương",
+      "examples_clean": [
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "The ambulance arrived at the scene quickly.",
+          "example_vi": "Xe cứu thương đã đến hiện trường nhanh chóng."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "He was taken to the hospital by ambulance.",
+          "example_vi": "Anh ấy được đưa đến bệnh viện bằng xe cứu thương."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "We heard the siren of an ambulance.",
+          "example_vi": "Chúng tôi nghe thấy tiếng còi của một chiếc xe cứu thương."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "The ambulance crew helped the injured man.",
+          "example_vi": "Đội ngũ xe cứu thương đã giúp đỡ người đàn ông bị thương."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "Call an ambulance immediately!",
+          "example_vi": "Hãy gọi xe cứu thương ngay lập tức!"
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "The ambulance is equipped with medical tools.",
+          "example_vi": "Xe cứu thương được trang bị các dụng cụ y tế."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "She works as a driver for an ambulance.",
+          "example_vi": "Cô ấy làm tài xế cho một chiếc xe cứu thương."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "The ambulance rushed to the emergency.",
+          "example_vi": "Xe cứu thương lao đến nơi cấp cứu."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "They waited for the ambulance to arrive.",
+          "example_vi": "Họ đã đợi xe cứu thương đến."
+        },
+        {
+          "meaning_vi": "xe cứu thương",
+          "example_en": "The ambulance took the patient to the clinic.",
+          "example_vi": "Xe cứu thương đã đưa bệnh nhân đến phòng khám."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Chuẩn hóa nghĩa và bổ sung ví dụ.",
+      "word": "ambulance",
+      "normalized_word": "ambulance",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The ambulance arrived at the scene quickly.",
+      "example_vi_clean": "Xe cứu thương đã đến hiện trường nhanh chóng."
+    },
+    {
+      "id": 25480,
+      "quiz_meaning_vi": "số lượng",
+      "meaning_vi_clean": "số lượng; tổng số",
+      "examples_clean": [
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "The amount of atmospheric pollution threatens a health crisis.",
+          "example_vi": "Số lượng ô nhiễm khí quyển đe dọa một cuộc khủng hoảng sức khỏe."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "Pour a small amount of water into the dish.",
+          "example_vi": "Đổ một số lượng nhỏ nước vào đĩa."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "A large amount of money was spent on the project.",
+          "example_vi": "Một số lượng lớn tiền đã được chi cho dự án."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "We need a certain amount of time to finish.",
+          "example_vi": "Chúng ta cần một số lượng thời gian nhất định để hoàn thành."
+        },
+        {
+          "meaning_vi": "tổng số",
+          "example_en": "The total amount of the bill is fifty dollars.",
+          "example_vi": "Tổng số của hóa đơn là năm mươi đô la."
+        },
+        {
+          "meaning_vi": "tổng số",
+          "example_en": "The amount of the donation was impressive.",
+          "example_vi": "Tổng số tiền quyên góp thật ấn tượng."
+        },
+        {
+          "meaning_vi": "tổng số",
+          "example_en": "He calculated the final amount.",
+          "example_vi": "Anh ấy đã tính toán tổng số cuối cùng."
+        },
+        {
+          "meaning_vi": "tổng số",
+          "example_en": "The amount of sales has increased this month.",
+          "example_vi": "Tổng số doanh thu đã tăng trong tháng này."
+        },
+        {
+          "meaning_vi": "số lượng",
+          "example_en": "What is the amount of sugar needed?",
+          "example_vi": "Số lượng đường cần thiết là bao nhiêu?"
+        },
+        {
+          "meaning_vi": "tổng số",
+          "example_en": "The amount of debt is growing.",
+          "example_vi": "Tổng số nợ đang tăng lên."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ sang danh từ, chọn nghĩa phổ biến.",
+      "word": "amount",
+      "normalized_word": "amount",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The amount of atmospheric pollution threatens a health crisis.",
+      "example_vi_clean": "Số lượng ô nhiễm khí quyển đe dọa một cuộc khủng hoảng sức khỏe."
+    }
+  ]
+}

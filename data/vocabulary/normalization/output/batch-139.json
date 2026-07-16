@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25381,
+      "quiz_meaning_vi": "vị trí",
+      "meaning_vi_clean": "vị trí; chức vụ; tư thế",
+      "examples_clean": [
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "The hotel is in a perfect position near the beach.",
+          "example_vi": "Khách sạn nằm ở một vị trí hoàn hảo gần bãi biển."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "He moved into a better position to see the stage.",
+          "example_vi": "Anh ấy di chuyển đến một vị trí tốt hơn để nhìn thấy sân khấu."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "The team is currently in a strong position to win the game.",
+          "example_vi": "Đội hiện đang ở vị trí thuận lợi để thắng trận đấu."
+        },
+        {
+          "meaning_vi": "vị trí",
+          "example_en": "Please mark your current position on the map.",
+          "example_vi": "Vui lòng đánh dấu vị trí hiện tại của bạn trên bản đồ."
+        },
+        {
+          "meaning_vi": "chức vụ",
+          "example_en": "She applied for a high-level position at the company.",
+          "example_vi": "Cô ấy đã ứng tuyển vào một chức vụ cấp cao tại công ty."
+        },
+        {
+          "meaning_vi": "chức vụ",
+          "example_en": "He has held this position for over ten years.",
+          "example_vi": "Ông ấy đã giữ chức vụ này hơn mười năm rồi."
+        },
+        {
+          "meaning_vi": "chức vụ",
+          "example_en": "The position of manager is currently vacant.",
+          "example_vi": "Chức vụ quản lý hiện đang bị bỏ trống."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "Stand in this position with your arms at your side.",
+          "example_vi": "Hãy đứng ở tư thế này với hai tay đặt dọc theo cơ thể."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "Yoga helps you improve your body position.",
+          "example_vi": "Yoga giúp bạn cải thiện tư thế cơ thể."
+        },
+        {
+          "meaning_vi": "tư thế",
+          "example_en": "He sat in a comfortable position on the sofa.",
+          "example_vi": "Anh ấy ngồi ở một tư thế thoải mái trên ghế sofa."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Giữ 3 nghĩa phổ biến nhất và phân bổ ví dụ theo quy tắc.",
+      "word": "position",
+      "normalized_word": "position",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The hotel is in a perfect position near the beach.",
+      "example_vi_clean": "Khách sạn nằm ở một vị trí hoàn hảo gần bãi biển."
+    },
+    {
+      "id": 25382,
+      "quiz_meaning_vi": "có thể",
+      "meaning_vi_clean": "có thể; khả thi",
+      "examples_clean": [
+        {
+          "meaning_vi": "có thể",
+          "example_en": "It is possible to finish the work by tomorrow.",
+          "example_vi": "Có thể hoàn thành công việc vào ngày mai."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "Is it possible for you to help me with this?",
+          "example_vi": "Bạn có thể giúp tôi việc này được không?"
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "It is possible that it will rain later today.",
+          "example_vi": "Có thể trời sẽ mưa vào cuối ngày hôm nay."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We want to make it possible for everyone to attend.",
+          "example_vi": "Chúng tôi muốn tạo điều kiện để mọi người đều có thể tham dự."
+        },
+        {
+          "meaning_vi": "khả thi",
+          "example_en": "We need to find a possible solution to this problem.",
+          "example_vi": "Chúng ta cần tìm một giải pháp khả thi cho vấn đề này."
+        },
+        {
+          "meaning_vi": "khả thi",
+          "example_en": "Is that a possible outcome for the project?",
+          "example_vi": "Đó có phải là một kết quả khả thi cho dự án không?"
+        },
+        {
+          "meaning_vi": "khả thi",
+          "example_en": "They are discussing all possible options.",
+          "example_vi": "Họ đang thảo luận về tất cả các lựa chọn khả thi."
+        },
+        {
+          "meaning_vi": "khả thi",
+          "example_en": "There are several possible reasons for his absence.",
+          "example_vi": "Có một vài lý do khả thi cho sự vắng mặt của anh ấy."
+        },
+        {
+          "meaning_vi": "khả thi",
+          "example_en": "We must consider every possible risk.",
+          "example_vi": "Chúng ta phải xem xét mọi rủi ro khả thi."
+        },
+        {
+          "meaning_vi": "khả thi",
+          "example_en": "This is the best possible result we could hope for.",
+          "example_vi": "Đây là kết quả khả thi tốt nhất mà chúng ta có thể hy vọng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành tính từ. Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "possible",
+      "normalized_word": "possible",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "It is possible to finish the work by tomorrow.",
+      "example_vi_clean": "Có thể hoàn thành công việc vào ngày mai."
+    },
+    {
+      "id": 25383,
+      "quiz_meaning_vi": "có lẽ",
+      "meaning_vi_clean": "có lẽ; có thể",
+      "examples_clean": [
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "It was possibly the best day of my life.",
+          "example_vi": "Đó có lẽ là ngày tuyệt vời nhất trong cuộc đời tôi."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "He is possibly the most talented student in the class.",
+          "example_vi": "Anh ấy có lẽ là học sinh tài năng nhất trong lớp."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "Possibly we should wait for a better time.",
+          "example_vi": "Có lẽ chúng ta nên đợi một thời điểm tốt hơn."
+        },
+        {
+          "meaning_vi": "có lẽ",
+          "example_en": "She is possibly going to move to another city.",
+          "example_vi": "Cô ấy có lẽ sẽ chuyển đến một thành phố khác."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "I couldn't possibly finish this task alone.",
+          "example_vi": "Tôi không thể nào hoàn thành nhiệm vụ này một mình được."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "How could you possibly think that?",
+          "example_vi": "Làm sao bạn có thể nghĩ như vậy được?"
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "They couldn't possibly have known about the surprise.",
+          "example_vi": "Họ không thể nào biết trước về sự bất ngờ đó được."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "I can't possibly accept such a generous gift.",
+          "example_vi": "Tôi không thể nào nhận món quà hào phóng như vậy được."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "We couldn't possibly arrive before noon.",
+          "example_vi": "Chúng tôi không thể nào đến trước buổi trưa được."
+        },
+        {
+          "meaning_vi": "có thể",
+          "example_en": "She couldn't possibly be angry with you.",
+          "example_vi": "Cô ấy không thể nào giận bạn được."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "possibly",
+      "normalized_word": "possibly",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "It was possibly the best day of my life.",
+      "example_vi_clean": "Đó có lẽ là ngày tuyệt vời nhất trong cuộc đời tôi."
+    },
+    {
+      "id": 25384,
+      "quiz_meaning_vi": "rót",
+      "meaning_vi_clean": "rót; đổ",
+      "examples_clean": [
+        {
+          "meaning_vi": "rót",
+          "example_en": "Could you please pour me a glass of water?",
+          "example_vi": "Bạn có thể rót cho tôi một ly nước được không?"
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "She poured some tea into the cup.",
+          "example_vi": "Cô ấy rót một ít trà vào tách."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "He poured wine for all the guests.",
+          "example_vi": "Anh ấy rót rượu cho tất cả các vị khách."
+        },
+        {
+          "meaning_vi": "rót",
+          "example_en": "Pour the milk slowly into the mixture.",
+          "example_vi": "Rót sữa từ từ vào hỗn hợp."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The rain poured down all afternoon.",
+          "example_vi": "Mưa đổ xuống suốt cả buổi chiều."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "He poured the water out of the bucket.",
+          "example_vi": "Anh ấy đổ nước ra khỏi xô."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "Don't pour hot oil into the plastic container.",
+          "example_vi": "Đừng đổ dầu nóng vào hộp nhựa."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The river pours into the sea at this point.",
+          "example_vi": "Con sông đổ ra biển tại điểm này."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "She poured the contents of the bag onto the table.",
+          "example_vi": "Cô ấy đổ hết đồ trong túi ra bàn."
+        },
+        {
+          "meaning_vi": "đổ",
+          "example_en": "The crowd poured out of the stadium after the match.",
+          "example_vi": "Đám đông đổ ra khỏi sân vận động sau trận đấu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ danh từ thành động từ. Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "pour",
+      "normalized_word": "pour",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Could you please pour me a glass of water?",
+      "example_vi_clean": "Bạn có thể rót cho tôi một ly nước được không?"
+    },
+    {
+      "id": 25385,
+      "quiz_meaning_vi": "khả năng",
+      "meaning_vi_clean": "khả năng; quyền lực",
+      "examples_clean": [
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "She has the ability and power to solve this issue.",
+          "example_vi": "Cô ấy có khả năng và năng lực để giải quyết vấn đề này."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "He has a special power to make people laugh.",
+          "example_vi": "Anh ấy có một khả năng đặc biệt làm mọi người cười."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "The machine has the power to process data quickly.",
+          "example_vi": "Cỗ máy có khả năng xử lý dữ liệu nhanh chóng."
+        },
+        {
+          "meaning_vi": "khả năng",
+          "example_en": "It is beyond my power to change the rules.",
+          "example_vi": "Việc thay đổi các quy tắc nằm ngoài khả năng của tôi."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The president has a lot of political power.",
+          "example_vi": "Tổng thống có rất nhiều quyền lực chính trị."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "They are fighting for power in the government.",
+          "example_vi": "Họ đang tranh giành quyền lực trong chính phủ."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The new law limits the power of the police.",
+          "example_vi": "Luật mới hạn chế quyền lực của cảnh sát."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "She used her power to help those in need.",
+          "example_vi": "Cô ấy đã sử dụng quyền lực của mình để giúp đỡ những người cần."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "The party in power is making new changes.",
+          "example_vi": "Đảng cầm quyền đang thực hiện những thay đổi mới."
+        },
+        {
+          "meaning_vi": "quyền lực",
+          "example_en": "He abused his power to gain more money.",
+          "example_vi": "Anh ta đã lạm dụng quyền lực của mình để kiếm thêm tiền."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ ngoại động từ thành danh từ. Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "power",
+      "normalized_word": "power",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She has the ability and power to solve this issue.",
+      "example_vi_clean": "Cô ấy có khả năng và năng lực để giải quyết vấn đề này."
+    },
+    {
+      "id": 25386,
+      "quiz_meaning_vi": "hùng mạnh",
+      "meaning_vi_clean": "hùng mạnh; mạnh mẽ",
+      "examples_clean": [
+        {
+          "meaning_vi": "hùng mạnh",
+          "example_en": "They built a powerful empire in the past.",
+          "example_vi": "Họ đã xây dựng một đế chế hùng mạnh trong quá khứ."
+        },
+        {
+          "meaning_vi": "hùng mạnh",
+          "example_en": "The country has a powerful army to protect its borders.",
+          "example_vi": "Đất nước có một quân đội hùng mạnh để bảo vệ biên giới."
+        },
+        {
+          "meaning_vi": "hùng mạnh",
+          "example_en": "He is one of the most powerful leaders in the world.",
+          "example_vi": "Ông ấy là một trong những nhà lãnh đạo hùng mạnh nhất thế giới."
+        },
+        {
+          "meaning_vi": "hùng mạnh",
+          "example_en": "The powerful king ruled for many years.",
+          "example_vi": "Vị vua hùng mạnh đã trị vì trong nhiều năm."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "She gave a powerful speech that moved everyone.",
+          "example_vi": "Cô ấy đã có một bài phát biểu mạnh mẽ làm lay động mọi người."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "The car has a powerful engine.",
+          "example_vi": "Chiếc xe có một động cơ mạnh mẽ."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "He has a powerful influence on his students.",
+          "example_vi": "Anh ấy có một tầm ảnh hưởng mạnh mẽ đối với học sinh của mình."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "The storm was very powerful last night.",
+          "example_vi": "Cơn bão rất mạnh mẽ vào đêm qua."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "We need a powerful tool to fix this.",
+          "example_vi": "Chúng ta cần một công cụ mạnh mẽ để sửa chữa việc này."
+        },
+        {
+          "meaning_vi": "mạnh mẽ",
+          "example_en": "She has a powerful voice for singing.",
+          "example_vi": "Cô ấy có một giọng hát mạnh mẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "powerful",
+      "normalized_word": "powerful",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "They built a powerful empire in the past.",
+      "example_vi_clean": "Họ đã xây dựng một đế chế hùng mạnh trong quá khứ."
+    },
+    {
+      "id": 25387,
+      "quiz_meaning_vi": "đúng",
+      "meaning_vi_clean": "đúng; tỉ mỉ",
+      "examples_clean": [
+        {
+          "meaning_vi": "đúng",
+          "example_en": "Can you give me the precise time of the meeting?",
+          "example_vi": "Bạn có thể cho tôi biết thời gian đúng của cuộc họp không?"
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "He gave a precise answer to the question.",
+          "example_vi": "Anh ấy đã đưa ra một câu trả lời đúng cho câu hỏi."
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "We need precise measurements for the project.",
+          "example_vi": "Chúng ta cần những số đo đúng cho dự án."
+        },
+        {
+          "meaning_vi": "đúng",
+          "example_en": "The precise location is marked on the map.",
+          "example_vi": "Vị trí đúng được đánh dấu trên bản đồ."
+        },
+        {
+          "meaning_vi": "tỉ mỉ",
+          "example_en": "She is very precise about her work.",
+          "example_vi": "Cô ấy rất tỉ mỉ trong công việc của mình."
+        },
+        {
+          "meaning_vi": "tỉ mỉ",
+          "example_en": "He is a precise person who likes everything in order.",
+          "example_vi": "Anh ấy là một người tỉ mỉ, thích mọi thứ ngăn nắp."
+        },
+        {
+          "meaning_vi": "tỉ mỉ",
+          "example_en": "The instructions were very precise and easy to follow.",
+          "example_vi": "Các hướng dẫn rất tỉ mỉ và dễ làm theo."
+        },
+        {
+          "meaning_vi": "tỉ mỉ",
+          "example_en": "She gave a precise description of the suspect.",
+          "example_vi": "Cô ấy đã đưa ra một mô tả tỉ mỉ về nghi phạm."
+        },
+        {
+          "meaning_vi": "tỉ mỉ",
+          "example_en": "He is known for his precise attention to detail.",
+          "example_vi": "Anh ấy nổi tiếng vì sự chú ý tỉ mỉ đến từng chi tiết."
+        },
+        {
+          "meaning_vi": "tỉ mỉ",
+          "example_en": "The artist was precise in every brushstroke.",
+          "example_vi": "Người nghệ sĩ rất tỉ mỉ trong từng nét vẽ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "precise",
+      "normalized_word": "precise",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Can you give me the precise time of the meeting?",
+      "example_vi_clean": "Bạn có thể cho tôi biết thời gian đúng của cuộc họp không?"
+    },
+    {
+      "id": 25388,
+      "quiz_meaning_vi": "nói trước",
+      "meaning_vi_clean": "nói trước; dự đoán",
+      "examples_clean": [
+        {
+          "meaning_vi": "nói trước",
+          "example_en": "It is hard to say what will happen, nobody can say before.",
+          "example_vi": "Thật khó để nói điều gì sẽ xảy ra, không ai có thể nói trước được."
+        },
+        {
+          "meaning_vi": "nói trước",
+          "example_en": "She didn't say before that she was leaving.",
+          "example_vi": "Cô ấy đã không nói trước rằng cô ấy sẽ rời đi."
+        },
+        {
+          "meaning_vi": "nói trước",
+          "example_en": "I wish you had said before that you were busy.",
+          "example_vi": "Tôi ước gì bạn đã nói trước rằng bạn bận."
+        },
+        {
+          "meaning_vi": "nói trước",
+          "example_en": "He should have said before about the changes.",
+          "example_vi": "Anh ấy lẽ ra nên nói trước về những thay đổi."
+        },
+        {
+          "meaning_vi": "dự đoán",
+          "example_en": "Experts predict that the economy will improve.",
+          "example_vi": "Các chuyên gia dự đoán rằng nền kinh tế sẽ cải thiện."
+        },
+        {
+          "meaning_vi": "dự đoán",
+          "example_en": "It is difficult to predict the weather for next week.",
+          "example_vi": "Thật khó để dự đoán thời tiết cho tuần tới."
+        },
+        {
+          "meaning_vi": "dự đoán",
+          "example_en": "They predict a big win for the team.",
+          "example_vi": "Họ dự đoán một chiến thắng lớn cho đội."
+        },
+        {
+          "meaning_vi": "dự đoán",
+          "example_en": "No one can predict the future with certainty.",
+          "example_vi": "Không ai có thể dự đoán tương lai một cách chắc chắn."
+        },
+        {
+          "meaning_vi": "dự đoán",
+          "example_en": "The report predicts a rise in prices.",
+          "example_vi": "Báo cáo dự đoán sự tăng giá."
+        },
+        {
+          "meaning_vi": "dự đoán",
+          "example_en": "She predicted that he would be late.",
+          "example_vi": "Cô ấy đã dự đoán rằng anh ấy sẽ đến muộn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "predict",
+      "normalized_word": "predict",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "It is hard to say what will happen, nobody can say before.",
+      "example_vi_clean": "Thật khó để nói điều gì sẽ xảy ra, không ai có thể nói trước được."
+    },
+    {
+      "id": 25389,
+      "quiz_meaning_vi": "sự nói trước",
+      "meaning_vi_clean": "sự nói trước; sự dự đoán",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự nói trước",
+          "example_en": "His prediction was based on what he said before.",
+          "example_vi": "Sự nói trước của anh ấy dựa trên những gì anh ấy đã nói trước đó."
+        },
+        {
+          "meaning_vi": "sự nói trước",
+          "example_en": "There was no prediction before the event happened.",
+          "example_vi": "Không có sự nói trước nào trước khi sự kiện xảy ra."
+        },
+        {
+          "meaning_vi": "sự nói trước",
+          "example_en": "She made a prediction before the meeting started.",
+          "example_vi": "Cô ấy đã có sự nói trước trước khi cuộc họp bắt đầu."
+        },
+        {
+          "meaning_vi": "sự nói trước",
+          "example_en": "The prediction before the game was wrong.",
+          "example_vi": "Sự nói trước trước trận đấu đã sai."
+        },
+        {
+          "meaning_vi": "sự dự đoán",
+          "example_en": "Her prediction about the election was correct.",
+          "example_vi": "Sự dự đoán của cô ấy về cuộc bầu cử là đúng."
+        },
+        {
+          "meaning_vi": "sự dự đoán",
+          "example_en": "The scientist's prediction proved to be true.",
+          "example_vi": "Sự dự đoán của nhà khoa học đã được chứng minh là đúng."
+        },
+        {
+          "meaning_vi": "sự dự đoán",
+          "example_en": "We are waiting for the final prediction.",
+          "example_vi": "Chúng tôi đang chờ đợi sự dự đoán cuối cùng."
+        },
+        {
+          "meaning_vi": "sự dự đoán",
+          "example_en": "His prediction was based on careful research.",
+          "example_vi": "Sự dự đoán của anh ấy dựa trên nghiên cứu cẩn thận."
+        },
+        {
+          "meaning_vi": "sự dự đoán",
+          "example_en": "The weather prediction was not very accurate.",
+          "example_vi": "Sự dự đoán thời tiết không chính xác lắm."
+        },
+        {
+          "meaning_vi": "sự dự đoán",
+          "example_en": "They made a bold prediction about the future.",
+          "example_vi": "Họ đã đưa ra một sự dự đoán táo bạo về tương lai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "prediction",
+      "normalized_word": "prediction",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "His prediction was based on what he said before.",
+      "example_vi_clean": "Sự nói trước của anh ấy dựa trên những gì anh ấy đã nói trước đó."
+    },
+    {
+      "id": 25390,
+      "quiz_meaning_vi": "thích hơn",
+      "meaning_vi_clean": "thích hơn; trình",
+      "examples_clean": [
+        {
+          "meaning_vi": "thích hơn",
+          "example_en": "I prefer tea to coffee in the morning.",
+          "example_vi": "Tôi thích trà hơn cà phê vào buổi sáng."
+        },
+        {
+          "meaning_vi": "thích hơn",
+          "example_en": "She prefers walking to driving to work.",
+          "example_vi": "Cô ấy thích đi bộ hơn là lái xe đi làm."
+        },
+        {
+          "meaning_vi": "thích hơn",
+          "example_en": "Do you prefer reading books or watching movies?",
+          "example_vi": "Bạn thích đọc sách hơn hay xem phim hơn?"
+        },
+        {
+          "meaning_vi": "thích hơn",
+          "example_en": "He prefers to stay at home on weekends.",
+          "example_vi": "Anh ấy thích ở nhà hơn vào cuối tuần."
+        },
+        {
+          "meaning_vi": "trình",
+          "example_en": "The lawyer will prefer a formal complaint to the court.",
+          "example_vi": "Luật sư sẽ trình một đơn khiếu nại chính thức lên tòa án."
+        },
+        {
+          "meaning_vi": "trình",
+          "example_en": "They had to prefer the documents to the manager.",
+          "example_vi": "Họ đã phải trình các tài liệu cho người quản lý."
+        },
+        {
+          "meaning_vi": "trình",
+          "example_en": "She preferred her request to the committee.",
+          "example_vi": "Cô ấy đã trình yêu cầu của mình lên ủy ban."
+        },
+        {
+          "meaning_vi": "trình",
+          "example_en": "The proposal was preferred to the board for review.",
+          "example_vi": "Đề xuất đã được trình lên hội đồng để xem xét."
+        },
+        {
+          "meaning_vi": "trình",
+          "example_en": "He preferred his case to the judge.",
+          "example_vi": "Anh ấy đã trình vụ việc của mình lên thẩm phán."
+        },
+        {
+          "meaning_vi": "trình",
+          "example_en": "Please prefer your application to the office.",
+          "example_vi": "Vui lòng trình đơn đăng ký của bạn lên văn phòng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến và phân bổ ví dụ theo quy tắc.",
+      "word": "prefer",
+      "normalized_word": "prefer",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "I prefer tea to coffee in the morning.",
+      "example_vi_clean": "Tôi thích trà hơn cà phê vào buổi sáng."
+    }
+  ]
+}

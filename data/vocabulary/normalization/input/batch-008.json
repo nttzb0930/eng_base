@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-008",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24071,
+      "word": "behind",
+      "normalized_word": "behind",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "danh từ",
+      "phonetic": "/bi'haind/",
+      "primary_meaning_vi": "sau",
+      "meaning_vi": "sau, ở đằng sau; chậm, trễ; sau, ở đằng sau; kém; cũ rích, cổ lỗ; tìm hiểu động cơ của ai, tìm hiểu ẩn ý của ai; mông đít",
+      "example_en": "to look behind",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I'm two weeks behind in my schedule.",
+          "example_vi": null
+        },
+        {
+          "example_en": "My watch is four minutes behind.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He left behind a legacy of death and sorrow.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24072,
+      "word": "being",
+      "normalized_word": "being",
+      "cefr_level": "A1",
+      "pos": "be-verb",
+      "pos_vi": "tính từ",
+      "phonetic": "/'bi:iɳ/",
+      "primary_meaning_vi": "sinh vật",
+      "meaning_vi": "sinh vật; con người; sự tồn tại; sự sống; bản chất; thể chất (con người); come; đấng chí tôn Thượng đế; hiện tại, hiện nay, này",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24073,
+      "word": "believe",
+      "normalized_word": "believe",
+      "cefr_level": "A1",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/bi'li:v/",
+      "primary_meaning_vi": "tin",
+      "meaning_vi": "tin, tin tưởng; cho rằng, nghĩ rằng; làm ra vẻ, giả vờ",
+      "example_en": "I believe there are faeries.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Why did I ever believe you?",
+          "example_vi": null
+        },
+        {
+          "example_en": "After that night in the church, I believed.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24074,
+      "word": "bell",
+      "normalized_word": "bell",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/bel/",
+      "primary_meaning_vi": "cái chuông",
+      "meaning_vi": "cái chuông; nhạc (ở cổ ngựa...); tiếng chuông; tràng hoa; thể vòm; giữ vai trò phụ trách, giữ vai trò lãnh đạo, ở địa vị hàng đầu; chiếm giải nhất trong cuộc thi; thất bại trong cuộc thi; rung chuông; tiến bộ, đạt được những kết quả tốt; tự mình làm quảng cáo cho mình, tự mình khua chuông gõ mõ cho mình; buộc chuông vào, treo chuông vào; đứng mũi chịu sào; giơ đầu chịu báng; tiếng kêu động đực (hươu nai); kêu, rống (hươu nai động đực)",
+      "example_en": "I’ll give you a bell later.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Who will bell the cat?",
+          "example_vi": null
+        },
+        {
+          "example_en": "to bell a tube",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24075,
+      "word": "below",
+      "normalized_word": "below",
+      "cefr_level": "A1",
+      "pos": "adverb",
+      "pos_vi": "giới từ",
+      "phonetic": "/bi'lou/",
+      "primary_meaning_vi": "ở dưới",
+      "meaning_vi": "ở dưới, ở bên dưới, ở dưới thấp, ở phía dưới; dưới, ở dưới, thấp hơn; không xứng đáng; không đáng phải quan tâm; mark; par",
+      "example_en": "the landlubbers lying down below",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The treasure is buried two meters below the surface.",
+          "example_vi": null
+        },
+        {
+          "example_en": "\"By their execution hereof, the Parties incur a legal obligation to pass consideration under this Loan Contract as is set forth below.\"",
+          "example_vi": null
+        },
+        {
+          "example_en": "The temperature is below zero.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24076,
+      "word": "beside",
+      "normalized_word": "beside",
+      "cefr_level": "A1",
+      "pos": "preposition",
+      "pos_vi": "giới từ",
+      "phonetic": "/bi'said/",
+      "primary_meaning_vi": "bên",
+      "meaning_vi": "bên, bên cạnh; so với; xa, ngoài, ở ngoài; không tự kiềm chế được, không tự chủ được; quýnh lên (vì cáu, giận, vui, mừng...)",
+      "example_en": "A small table beside the bed",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "That is beside the point",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24077,
+      "word": "best",
+      "normalized_word": "best",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/best/",
+      "primary_meaning_vi": "tốt nhất",
+      "meaning_vi": "tốt nhất, hay nhất, đẹp nhất, giỏi nhất; đại bộ phận; đi thật nhanh, đi ba chân bốn cẳng; làm công việc mình thành thạo nhất; tốt nhất, hay nhất; hơn nhất; tốt nhất là, khôn hơn hết là; cái tốt nhất, cái hay nhất, cái đẹp nhất; cố gắng lớn nhất; quần áo đẹp nhất; trong điều kiện tốt nhất, trong hoàn cảnh tốt nhất; không có triển vọng gì hay, không hy vọng gì có chuyện tốt đẹp xảy ra; lúc đẹp nhất, lúc tốt nhất, lúc sung sức nhất, lúc rực rỡ nhất; cầu toàn thường khi lại hỏng việc; làm hết sức mình; thắng thế (trong khi tranh luận...); thắng ai; không có cá thì lấy rau má làm ngon; Sunday; mặc dầu có khó khăn vẫn vui vẻ cố gắng; không nản lòng trong lúc khó khăn; tận dụng cái hay, cái tốt đẹp của việc gì; chịu đựng cái gì; tranh thủ thời gian; đi thật nhanh; gửi lời chào, gửi lời chúc mừng; với tất cả sự hiểu biết của mình; với tất cả khả năng của mình; như bất cứ ai; hơn, thắng (ai); ranh ma hơn, láu cá hơn (ai)",
+      "example_en": "I did my best.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "I was somewhat distant lately, and my lady promised me head every Tuesday of the week when I'm nice to her, so I better be on my best.",
+          "example_vi": null
+        },
+        {
+          "example_en": "Unpacking took the best part of a week.",
+          "example_vi": null
+        },
+        {
+          "example_en": "In my opinion, mushrooms are the best pizza toppings.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24078,
+      "word": "better",
+      "normalized_word": "better",
+      "cefr_level": "A1",
+      "pos": "adjective",
+      "pos_vi": "danh từ+ (bettor)",
+      "phonetic": "/'betə/",
+      "primary_meaning_vi": "cấp so sánh của good",
+      "meaning_vi": "cấp so sánh của good; hơn, tốt hơn, khá hơn, hay hơn, đẹp hơn; khoẻ hơn, dễ chịu hơn, đã đỡ (người ốm...); khấm khá hơn, phong lưu hơn; hứa ít làm nhiều; phần lớn, đa số; không hơn gì; đã có thời kỳ khấm khá; half; cấp so sánh của well; hơn, tốt hơn, hay hơn; muộn còn hơn không; nên, tốt hơn là; không tin (lời ai nói); không dại gì mà làm (một việc gì); thay đổi ý kiến; làm cho tốt hơn, cải tiến, cải thiện; vượt, hơn; đặt địa vị cao hơn, được ăn lương cao hơn; người trên, người hơn (tuổi, địa vị, tài năng); thế lợi hơn; dù sau này tốt xấu ra sao (câu này dùng trong khi làm lễ cưới ở nhà thờ); người đánh cuộc, người đánh cá",
+      "example_en": "He quickly found Ali his better in the ring.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The soup is good and hot.",
+          "example_vi": null
+        },
+        {
+          "example_en": "I had been sick, but now I'm well.",
+          "example_vi": null
+        },
+        {
+          "example_en": "“How are you?” — “I'm well, thank you!”",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 24079,
+      "word": "between",
+      "normalized_word": "between",
+      "cefr_level": "A1",
+      "pos": "preposition",
+      "pos_vi": "phó từ",
+      "phonetic": "/bi'twi:n/",
+      "primary_meaning_vi": "giữa",
+      "meaning_vi": "giữa, ở giữa; trong khoảng; nửa... nửa; vừa... vừa; lâm vào hoàn cảnh bế tắc không có lối thoát; tiến lên mắc núi, lùi lại mắc sông; cup; ở đầu sóng ngọn gió; ở giữa; ở cách xa nhau, thưa thớt",
+      "example_en": "I want to buy one that costs somewhere between forty and fifty dollars.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "conversation between friends",
+          "example_vi": null
+        },
+        {
+          "example_en": "Between you and me, I think the boss is crazy. Let's keep this between ourselves.",
+          "example_vi": null
+        },
+        {
+          "example_en": "He's between jobs right now. The shuttle runs between the town and the airport.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24080,
+      "word": "bicycle",
+      "normalized_word": "bicycle",
+      "cefr_level": "A1",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/'baisikl/",
+      "primary_meaning_vi": "xe đạp",
+      "meaning_vi": "xe đạp; đi xe đạp",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

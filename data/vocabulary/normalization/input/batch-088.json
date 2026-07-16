@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-088",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 24871,
+      "word": "criticize",
+      "normalized_word": "criticize",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi": "động từ",
+      "phonetic": "/'kritisaiz/ (criticise) /'kritisaiz/",
+      "primary_meaning_vi": "phê bình",
+      "meaning_vi": "phê bình, phê phán, bình phẩm, chỉ trích",
+      "example_en": "They criticized him for endangering people's lives.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24872,
+      "word": "cross",
+      "normalized_word": "cross",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/krɔs/",
+      "primary_meaning_vi": "đạo Cơ-đốc",
+      "meaning_vi": "đạo Cơ-đốc; dấu chữ thập, hình chữ thập; dấu gạch ngang ở chữ cái (như ở chữ đ,  t); nỗi đau khổ, nỗi thống khổ; bước thử thách; sự gian nan; bội tính; sự tạp giao; vật lai giống; sự pha tạp; sự gian lận, sự lừa đảo, sự ăn cắp; cây thánh giá của Đức Chúa; Bắc đẩu bội tinh hạng năm; hội chữ thập đỏ; đánh dấu chữ thập thay cho chữ ký (đối với người không biết viết); chéo nhau, vắt ngang; bực mình, cáu, gắt; đối, trái ngược, ngược lại; lai, lai giống; bất lương, man trá; kiếm được bằng những thủ đoạn bất lương; tức điên lên; qua, đi qua, vượt, đi ngang qua; đưa (ai cái gì...) đi ngang qua; gạch ngang, gạch chéo, xoá; đặt chéo nhau, bắt chéo; gặp mặt, cham mặt (một người ở ngoài đường); cưỡi (ngựa); viết đè lên (một chữ, một trang đã viết); cản trở, gây trở ngại; tạp giao, lai giống (động vật); vượt qua, đi qua; gặp nhau, giao nhau, chéo ngang, chéo nhau; gạch đi, xoá đi; đi qua, vượt qua, vượt, ngang qua; tạp giao, lai giống; làm dấu chữ thập; móc ngón tay vào nhau để cầu may; làm dấu thánh giá; chợt nảy ra trong óc; cho người nào tiền, thưởng tiền người nào; gặp ai; ngáng trở kế hoạch của ai; Styx; sword",
+      "example_en": "Put a cross for a wrong answer and a tick for a right one.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Criminals were commonly executed on a wooden cross.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She made the cross after swearing.",
+          "example_vi": null
+        },
+        {
+          "example_en": "She was wearing a cross on her necklace.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "DUPLICATE_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24873,
+      "word": "crowd",
+      "normalized_word": "crowd",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kraud/",
+      "primary_meaning_vi": "đám đông",
+      "meaning_vi": "đám đông; quần chúng; bọn, lũ, nhóm, tụi, cánh; đống, vô số; crowd of sail (hàng hải) sự căng hết (thảy) buồm, sự căng nhiều buồm; anh ta chẳng có gì xấu để cho thiên hạ phải để ý, anh ta cũng chẳng có gì để thiên hạ phải để nói; xúm lại, tụ tập, đổ xô đến; len vào, chen vào, len qua; đi hết tốc độ, căng hết buồm mà đi; làm cho chật ních, chồng chất, nhét đầy, nhồi nhét; tụ tập, tập hợp; dùng áp lực đối với (ai), cưỡng bách, thúc giục; quấy rầy; làm trở ngại, cản (đối phương); ùa vào, đổ xô vào, lũ lượt kéo vào; ùa ra, đổ xô ra, lũ lượt kéo ra; đuổi ra ngoài, không cho vào (vì quá đông); gương hết (thảy) buồm",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24874,
+      "word": "crowded",
+      "normalized_word": "crowded",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'kraudid/",
+      "primary_meaning_vi": "đông đúc",
+      "meaning_vi": "đông đúc; đầy, tràn đầy; chật ních",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24875,
+      "word": "crown",
+      "normalized_word": "crown",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/kraun/",
+      "primary_meaning_vi": "mũ miện",
+      "meaning_vi": "mũ miện; vua, ngôi vua; vòng hoa, vòng lá (đội trên đầu); (nghĩa bóng) phần thưởng; đỉnh, ngọn, chóp, chỏm (núi, cây, mũ...); đỉnh đầu; đầu; đỉnh cao nhất, sự tột cùng (của hạnh phúc...); đồng curon (tiền Anh, bằng 5 silinh); thân răng; khổ giấy 15 x 20; thái tử; có khổ rồi mới có sướng; có gian khổ mới có vinh quang; đội mũ miện; tôn lên làm vua; thưởng, ban thưởng, tặng thưởng; mang vinh dự cho; đặt lên đỉnh, bao quanh ở đỉnh; làm cho hoàn hảo; bịt (răng, bằng vàng, bạc...); ,  (thông tục) giáng cho một cú vào đầu (ai); nâng (một quân cờ đam) len thành con đam; lại thêm nữa là, cuối cùng lại thêm; lại khổ thêm nữa là, cuối cùng lại khổ nữa là; bọn vua chúa",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24876,
+      "word": "cruise",
+      "normalized_word": "cruise",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/kru:z/",
+      "primary_meaning_vi": "cuộc đi chơi biển (bằng tàu thuỷ)",
+      "meaning_vi": "cuộc đi chơi biển (bằng tàu thuỷ); cuộc tuần tra trên biển; đi chơi biển (bằng tàu thuỷ); tuần tra trên biển; xe tắc xi đang đi chậm kiếm khách; bay với tốc độ tiết kiệm xăng nhất (máy bay)",
+      "example_en": "Germany cruised to a World Cup victory over the short-handed Australians.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "NOISY_PRIMARY_MEANING"
+      ]
+    },
+    {
+      "id": 24877,
+      "word": "cupboard",
+      "normalized_word": "cupboard",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kʌpbəd/",
+      "primary_meaning_vi": "tủ (có ngăn)",
+      "meaning_vi": "tủ (có ngăn), tủ búp phê; mối tình vờ vịt (vì lợi); kêu đói, thấy đói, thấy kiến bò bụng ((thường) + belly,  inside,  stomach); skeleton",
+      "example_en": "Put the cups back into the cupboard.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 24878,
+      "word": "curry",
+      "normalized_word": "curry",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/'kʌri/",
+      "primary_meaning_vi": "bột ca ri",
+      "meaning_vi": "bột ca ri; món ca ri; nấu ca ri, cho bột ca ri (vào đồ ăn); chải lông (cho ngựa); sang sưa (da thuộc); đánh đập, hành hạ (ai); nịnh hót ai, bợ đỡ ai, xun xoe với ai để cầu ân huệ, cầu cạnh ai để xin ân huệ",
+      "example_en": "Michelangelo personally quarried marble from the world-famous quarry at Carrara.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 24879,
+      "word": "curse",
+      "normalized_word": "curse",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "động từ",
+      "phonetic": "/kə:s/",
+      "primary_meaning_vi": "sự nguyền rủa",
+      "meaning_vi": "sự nguyền rủa, sự chửi rủa; tai ương, tai hoạ; vật ghê tở, vật đáng nguyền rủa; lời thề độc; sự trục xuất ra khỏi giáo hội; cái của nợ (sự thấy kinh...) ((thường) the curse); ác giả ác báo; không cần, bất chấp, không thèm đếm xỉa đến; không đáng giá một trinh, đáng bỏ đi; bị nguyền; bị bùa, bị chài; nguyền rủa, chửi rủa; báng bổ; động tính từ quá khứ) làm khổ sở, làm đau đớn; trục xuất ra khỏi giáo hội; dale",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 8,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 24880,
+      "word": "custom",
+      "normalized_word": "custom",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'kʌstəm/",
+      "primary_meaning_vi": "phong tục",
+      "meaning_vi": "phong tục, tục lệ; luật pháp theo tục lệ; sự quen mua hàng, sự làm khách hàng; khách hàng, bạn hàng, mối hàng; thuế quan; sự đặt, sự thửa, sự đặt mua",
+      "example_en": "The Ancient Egyptian culture had many distinctive and interesting beliefs and customs.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "My feet are very large, so I need custom shoes.",
+          "example_vi": null
+        },
+        {
+          "example_en": "We can embroider a wide range of ready designs or a custom logo.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

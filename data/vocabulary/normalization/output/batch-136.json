@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 25351,
+      "quiz_meaning_vi": "ảnh",
+      "meaning_vi_clean": "ảnh; chụp ảnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "She keeps a small photograph of her family in her wallet.",
+          "example_vi": "Cô ấy giữ một tấm ảnh nhỏ của gia đình trong ví."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "The photograph shows the beautiful landscape of the mountains.",
+          "example_vi": "Bức ảnh cho thấy phong cảnh tuyệt đẹp của những ngọn núi."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "He took a photograph of the sunset at the beach.",
+          "example_vi": "Anh ấy đã chụp một tấm ảnh hoàng hôn trên bãi biển."
+        },
+        {
+          "meaning_vi": "ảnh",
+          "example_en": "This old photograph brings back many happy memories.",
+          "example_vi": "Tấm ảnh cũ này gợi lại nhiều kỷ niệm vui vẻ."
+        },
+        {
+          "meaning_vi": "chụp ảnh",
+          "example_en": "She photographs well in natural light.",
+          "example_vi": "Cô ấy chụp ảnh rất đẹp dưới ánh sáng tự nhiên."
+        },
+        {
+          "meaning_vi": "chụp ảnh",
+          "example_en": "He loves to photograph birds in the forest.",
+          "example_vi": "Anh ấy thích chụp ảnh các loài chim trong rừng."
+        },
+        {
+          "meaning_vi": "chụp ảnh",
+          "example_en": "They decided to photograph the event for the school magazine.",
+          "example_vi": "Họ quyết định chụp ảnh sự kiện cho tạp chí của trường."
+        },
+        {
+          "meaning_vi": "chụp ảnh",
+          "example_en": "The professional will photograph the wedding ceremony.",
+          "example_vi": "Người chuyên nghiệp sẽ chụp ảnh buổi lễ cưới."
+        },
+        {
+          "meaning_vi": "chụp ảnh",
+          "example_en": "It is difficult to photograph animals that move quickly.",
+          "example_vi": "Thật khó để chụp ảnh những con vật di chuyển nhanh."
+        },
+        {
+          "meaning_vi": "chụp ảnh",
+          "example_en": "She learned how to photograph people in the studio.",
+          "example_vi": "Cô ấy đã học cách chụp ảnh mọi người trong phòng thu."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ/động từ. Tách nghĩa rõ ràng thành ảnh và chụp ảnh.",
+      "word": "photograph",
+      "normalized_word": "photograph",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She keeps a small photograph of her family in her wallet.",
+      "example_vi_clean": "Cô ấy giữ một tấm ảnh nhỏ của gia đình trong ví."
+    },
+    {
+      "id": 25352,
+      "quiz_meaning_vi": "nhà nhiếp ảnh",
+      "meaning_vi_clean": "nhà nhiếp ảnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "The photographer captured a stunning image of the city.",
+          "example_vi": "Nhà nhiếp ảnh đã ghi lại một hình ảnh tuyệt đẹp của thành phố."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "She hired a professional photographer for her wedding.",
+          "example_vi": "Cô ấy đã thuê một nhà nhiếp ảnh chuyên nghiệp cho đám cưới của mình."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "The photographer adjusted the camera lens carefully.",
+          "example_vi": "Nhà nhiếp ảnh đã điều chỉnh ống kính máy ảnh một cách cẩn thận."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "Many photographers prefer to work in natural light.",
+          "example_vi": "Nhiều nhà nhiếp ảnh thích làm việc dưới ánh sáng tự nhiên."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "The photographer waited hours for the perfect shot.",
+          "example_vi": "Nhà nhiếp ảnh đã đợi hàng giờ để có được bức ảnh hoàn hảo."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "He is a talented photographer who travels the world.",
+          "example_vi": "Anh ấy là một nhà nhiếp ảnh tài năng đi du lịch khắp thế giới."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "The photographer displayed his work in a local gallery.",
+          "example_vi": "Nhà nhiếp ảnh đã trưng bày tác phẩm của mình tại một phòng tranh địa phương."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "A good photographer knows how to tell a story through images.",
+          "example_vi": "Một nhà nhiếp ảnh giỏi biết cách kể một câu chuyện qua hình ảnh."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "The photographer used a tripod to keep the camera steady.",
+          "example_vi": "Nhà nhiếp ảnh đã sử dụng chân máy để giữ máy ảnh ổn định."
+        },
+        {
+          "meaning_vi": "nhà nhiếp ảnh",
+          "example_en": "She wants to become a fashion photographer in the future.",
+          "example_vi": "Cô ấy muốn trở thành một nhà nhiếp ảnh thời trang trong tương lai."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho danh từ chỉ người.",
+      "word": "photographer",
+      "normalized_word": "photographer",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The photographer captured a stunning image of the city.",
+      "example_vi_clean": "Nhà nhiếp ảnh đã ghi lại một hình ảnh tuyệt đẹp của thành phố."
+    },
+    {
+      "id": 25353,
+      "quiz_meaning_vi": "thuật nhiếp ảnh",
+      "meaning_vi_clean": "thuật nhiếp ảnh; sự chụp ảnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "thuật nhiếp ảnh",
+          "example_en": "He is studying the history of photography at university.",
+          "example_vi": "Anh ấy đang học về lịch sử thuật nhiếp ảnh tại trường đại học."
+        },
+        {
+          "meaning_vi": "thuật nhiếp ảnh",
+          "example_en": "Digital photography has changed the way we see the world.",
+          "example_vi": "Thuật nhiếp ảnh kỹ thuật số đã thay đổi cách chúng ta nhìn thế giới."
+        },
+        {
+          "meaning_vi": "thuật nhiếp ảnh",
+          "example_en": "She has a deep interest in the art of photography.",
+          "example_vi": "Cô ấy có niềm đam mê sâu sắc với nghệ thuật nhiếp ảnh."
+        },
+        {
+          "meaning_vi": "thuật nhiếp ảnh",
+          "example_en": "Photography requires both technical skill and creativity.",
+          "example_vi": "Thuật nhiếp ảnh đòi hỏi cả kỹ năng kỹ thuật và sự sáng tạo."
+        },
+        {
+          "meaning_vi": "sự chụp ảnh",
+          "example_en": "Photography is a popular hobby among young people.",
+          "example_vi": "Sự chụp ảnh là một sở thích phổ biến của giới trẻ."
+        },
+        {
+          "meaning_vi": "sự chụp ảnh",
+          "example_en": "She took a course in photography to improve her skills.",
+          "example_vi": "Cô ấy đã tham gia một khóa học về sự chụp ảnh để cải thiện kỹ năng."
+        },
+        {
+          "meaning_vi": "sự chụp ảnh",
+          "example_en": "His passion for photography started when he was a child.",
+          "example_vi": "Niềm đam mê sự chụp ảnh của anh ấy bắt đầu từ khi còn nhỏ."
+        },
+        {
+          "meaning_vi": "sự chụp ảnh",
+          "example_en": "Photography allows us to capture moments in time.",
+          "example_vi": "Sự chụp ảnh cho phép chúng ta lưu giữ những khoảnh khắc trong thời gian."
+        },
+        {
+          "meaning_vi": "sự chụp ảnh",
+          "example_en": "They spent the afternoon practicing photography in the park.",
+          "example_vi": "Họ đã dành cả buổi chiều để thực hành sự chụp ảnh trong công viên."
+        },
+        {
+          "meaning_vi": "sự chụp ảnh",
+          "example_en": "Photography is a great way to express your feelings.",
+          "example_vi": "Sự chụp ảnh là một cách tuyệt vời để thể hiện cảm xúc của bạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ minh họa cho danh từ chỉ lĩnh vực và hành động.",
+      "word": "photography",
+      "normalized_word": "photography",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He is studying the history of photography at university.",
+      "example_vi_clean": "Anh ấy đang học về lịch sử thuật nhiếp ảnh tại trường đại học."
+    },
+    {
+      "id": 25354,
+      "quiz_meaning_vi": "vật chất",
+      "meaning_vi_clean": "vật chất; thân thể",
+      "examples_clean": [
+        {
+          "meaning_vi": "vật chất",
+          "example_en": "The physical world is governed by scientific laws.",
+          "example_vi": "Thế giới vật chất được điều khiển bởi các quy luật khoa học."
+        },
+        {
+          "meaning_vi": "vật chất",
+          "example_en": "We need to understand the physical properties of this material.",
+          "example_vi": "Chúng ta cần hiểu các đặc tính vật chất của vật liệu này."
+        },
+        {
+          "meaning_vi": "vật chất",
+          "example_en": "The physical environment affects how we live.",
+          "example_vi": "Môi trường vật chất ảnh hưởng đến cách chúng ta sống."
+        },
+        {
+          "meaning_vi": "vật chất",
+          "example_en": "Science studies the physical nature of the universe.",
+          "example_vi": "Khoa học nghiên cứu bản chất vật chất của vũ trụ."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "She needs a physical examination before starting the job.",
+          "example_vi": "Cô ấy cần một cuộc kiểm tra thân thể trước khi bắt đầu công việc."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "Regular exercise is good for your physical health.",
+          "example_vi": "Tập thể dục thường xuyên tốt cho sức khỏe thân thể của bạn."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "He is in good physical condition for his age.",
+          "example_vi": "Anh ấy có tình trạng thân thể tốt so với tuổi của mình."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "The sport requires a lot of physical strength.",
+          "example_vi": "Môn thể thao này đòi hỏi rất nhiều sức mạnh thân thể."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "Physical activity helps reduce stress.",
+          "example_vi": "Hoạt động thân thể giúp giảm căng thẳng."
+        },
+        {
+          "meaning_vi": "thân thể",
+          "example_en": "They are focusing on his physical development.",
+          "example_vi": "Họ đang tập trung vào sự phát triển thân thể của cậu ấy."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với cấp độ A2, tập trung vào vật chất và thân thể.",
+      "word": "physical",
+      "normalized_word": "physical",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "The physical world is governed by scientific laws.",
+      "example_vi_clean": "Thế giới vật chất được điều khiển bởi các quy luật khoa học."
+    },
+    {
+      "id": 25355,
+      "quiz_meaning_vi": "về thân thể",
+      "meaning_vi_clean": "về thân thể",
+      "examples_clean": [
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "He is physically fit and ready for the race.",
+          "example_vi": "Anh ấy khỏe mạnh về thân thể và sẵn sàng cho cuộc đua."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "They are physically similar but have different personalities.",
+          "example_vi": "Họ giống nhau về thân thể nhưng có tính cách khác nhau."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "It is impossible to be in two places physically at once.",
+          "example_vi": "Không thể có mặt ở hai nơi về thân thể cùng một lúc."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "She is physically exhausted after the long trip.",
+          "example_vi": "Cô ấy kiệt sức về thân thể sau chuyến đi dài."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "The work is physically demanding for everyone.",
+          "example_vi": "Công việc này đòi hỏi nhiều về thân thể đối với mọi người."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "He was physically present but mentally absent.",
+          "example_vi": "Anh ấy có mặt về thân thể nhưng tâm trí lại vắng mặt."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "The children are growing physically very fast.",
+          "example_vi": "Những đứa trẻ đang phát triển về thân thể rất nhanh."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "She is physically unable to lift such heavy boxes.",
+          "example_vi": "Cô ấy không thể về thân thể để nâng những chiếc hộp nặng như vậy."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "They are physically active throughout the day.",
+          "example_vi": "Họ hoạt động về thân thể suốt cả ngày."
+        },
+        {
+          "meaning_vi": "về thân thể",
+          "example_en": "The injury affected him physically for a long time.",
+          "example_vi": "Chấn thương đã ảnh hưởng đến anh ấy về thân thể trong một thời gian dài."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ cho phó từ chỉ trạng thái thân thể.",
+      "word": "physically",
+      "normalized_word": "physically",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "He is physically fit and ready for the race.",
+      "example_vi_clean": "Anh ấy khỏe mạnh về thân thể và sẵn sàng cho cuộc đua."
+    },
+    {
+      "id": 25356,
+      "quiz_meaning_vi": "chồng",
+      "meaning_vi_clean": "chồng; đống",
+      "examples_clean": [
+        {
+          "meaning_vi": "chồng",
+          "example_en": "She put a pile of books on the table.",
+          "example_vi": "Cô ấy đặt một chồng sách lên bàn."
+        },
+        {
+          "meaning_vi": "chồng",
+          "example_en": "He made a pile of papers for the meeting.",
+          "example_vi": "Anh ấy tạo một chồng giấy tờ cho cuộc họp."
+        },
+        {
+          "meaning_vi": "chồng",
+          "example_en": "There is a pile of laundry waiting to be washed.",
+          "example_vi": "Có một chồng quần áo đang chờ được giặt."
+        },
+        {
+          "meaning_vi": "chồng",
+          "example_en": "She organized the files into a neat pile.",
+          "example_vi": "Cô ấy sắp xếp các tệp tin thành một chồng gọn gàng."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "The children played in a pile of leaves.",
+          "example_vi": "Những đứa trẻ chơi đùa trong một đống lá."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "He swept the dirt into a small pile.",
+          "example_vi": "Anh ấy quét bụi thành một đống nhỏ."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "There was a pile of snow in front of the house.",
+          "example_vi": "Có một đống tuyết trước nhà."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "They found a pile of old clothes in the attic.",
+          "example_vi": "Họ tìm thấy một đống quần áo cũ trên gác mái."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "The wood was stacked in a large pile.",
+          "example_vi": "Gỗ được xếp thành một đống lớn."
+        },
+        {
+          "meaning_vi": "đống",
+          "example_en": "She threw the trash into a pile.",
+          "example_vi": "Cô ấy ném rác thành một đống."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa cho phù hợp với cấp độ A2, tập trung vào nghĩa danh từ phổ biến.",
+      "word": "pile",
+      "normalized_word": "pile",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She put a pile of books on the table.",
+      "example_vi_clean": "Cô ấy đặt một chồng sách lên bàn."
+    },
+    {
+      "id": 25357,
+      "quiz_meaning_vi": "người hành hương",
+      "meaning_vi_clean": "người hành hương",
+      "examples_clean": [
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "The pilgrim traveled a long way to reach the holy site.",
+          "example_vi": "Người hành hương đã đi một quãng đường dài để đến địa điểm linh thiêng."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "Many pilgrims visit this temple every year.",
+          "example_vi": "Nhiều người hành hương đến thăm ngôi đền này mỗi năm."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "The pilgrim carried only a small bag with him.",
+          "example_vi": "Người hành hương chỉ mang theo một chiếc túi nhỏ."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "She met many pilgrims on her journey.",
+          "example_vi": "Cô ấy đã gặp nhiều người hành hương trên hành trình của mình."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "The pilgrims sang songs as they walked.",
+          "example_vi": "Những người hành hương hát những bài hát khi họ đi bộ."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "He felt like a pilgrim searching for truth.",
+          "example_vi": "Anh ấy cảm thấy như một người hành hương đang tìm kiếm sự thật."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "The path was used by pilgrims for centuries.",
+          "example_vi": "Con đường này đã được người hành hương sử dụng trong nhiều thế kỷ."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "The pilgrim stopped to rest under a tree.",
+          "example_vi": "Người hành hương dừng lại để nghỉ ngơi dưới một cái cây."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "They welcomed the pilgrims with food and water.",
+          "example_vi": "Họ chào đón những người hành hương bằng thức ăn và nước uống."
+        },
+        {
+          "meaning_vi": "người hành hương",
+          "example_en": "The life of a pilgrim is often very simple.",
+          "example_vi": "Cuộc sống của một người hành hương thường rất đơn giản."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ cho danh từ người hành hương.",
+      "word": "pilgrim",
+      "normalized_word": "pilgrim",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The pilgrim traveled a long way to reach the holy site.",
+      "example_vi_clean": "Người hành hương đã đi một quãng đường dài để đến địa điểm linh thiêng."
+    },
+    {
+      "id": 25358,
+      "quiz_meaning_vi": "viên thuốc",
+      "meaning_vi_clean": "viên thuốc",
+      "examples_clean": [
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "She took a pill for her headache.",
+          "example_vi": "Cô ấy đã uống một viên thuốc cho cơn đau đầu."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The doctor prescribed a new pill for his condition.",
+          "example_vi": "Bác sĩ đã kê một viên thuốc mới cho tình trạng của anh ấy."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "He swallowed the pill with a glass of water.",
+          "example_vi": "Anh ấy nuốt viên thuốc với một ly nước."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "Make sure to take the pill at the same time every day.",
+          "example_vi": "Hãy chắc chắn uống viên thuốc vào cùng một thời điểm mỗi ngày."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "She keeps her pills in a small container.",
+          "example_vi": "Cô ấy giữ các viên thuốc của mình trong một chiếc hộp nhỏ."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The pill is very small and easy to swallow.",
+          "example_vi": "Viên thuốc rất nhỏ và dễ nuốt."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "He forgot to take his daily pill.",
+          "example_vi": "Anh ấy quên uống viên thuốc hàng ngày của mình."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The pharmacist explained how to take the pill.",
+          "example_vi": "Dược sĩ đã giải thích cách uống viên thuốc."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "She found a pill on the floor.",
+          "example_vi": "Cô ấy tìm thấy một viên thuốc trên sàn nhà."
+        },
+        {
+          "meaning_vi": "viên thuốc",
+          "example_en": "The doctor said the pill would help her sleep.",
+          "example_vi": "Bác sĩ nói viên thuốc sẽ giúp cô ấy ngủ ngon."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ, loại bỏ các nghĩa không phù hợp cấp độ A2.",
+      "word": "pill",
+      "normalized_word": "pill",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She took a pill for her headache.",
+      "example_vi_clean": "Cô ấy đã uống một viên thuốc cho cơn đau đầu."
+    },
+    {
+      "id": 25359,
+      "quiz_meaning_vi": "phi công",
+      "meaning_vi_clean": "phi công; lái",
+      "examples_clean": [
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot landed the plane safely.",
+          "example_vi": "Phi công đã hạ cánh máy bay an toàn."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "She wants to become a pilot when she grows up.",
+          "example_vi": "Cô ấy muốn trở thành phi công khi lớn lên."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "The pilot announced the flight time to the passengers.",
+          "example_vi": "Phi công đã thông báo thời gian bay cho hành khách."
+        },
+        {
+          "meaning_vi": "phi công",
+          "example_en": "He has been a pilot for over twenty years.",
+          "example_vi": "Anh ấy đã là phi công hơn hai mươi năm."
+        },
+        {
+          "meaning_vi": "lái",
+          "example_en": "He learned how to pilot a small aircraft.",
+          "example_vi": "Anh ấy đã học cách lái một chiếc máy bay nhỏ."
+        },
+        {
+          "meaning_vi": "lái",
+          "example_en": "She can pilot the boat through the narrow channel.",
+          "example_vi": "Cô ấy có thể lái con thuyền qua kênh hẹp."
+        },
+        {
+          "meaning_vi": "lái",
+          "example_en": "It takes skill to pilot a plane in bad weather.",
+          "example_vi": "Cần có kỹ năng để lái máy bay trong thời tiết xấu."
+        },
+        {
+          "meaning_vi": "lái",
+          "example_en": "They are training to pilot the new helicopter.",
+          "example_vi": "Họ đang được đào tạo để lái chiếc trực thăng mới."
+        },
+        {
+          "meaning_vi": "lái",
+          "example_en": "He was asked to pilot the project through its first phase.",
+          "example_vi": "Anh ấy được yêu cầu lái dự án qua giai đoạn đầu tiên."
+        },
+        {
+          "meaning_vi": "lái",
+          "example_en": "She knows how to pilot the ship into the harbor.",
+          "example_vi": "Cô ấy biết cách lái con tàu vào bến cảng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ/động từ, tập trung vào nghĩa phi công và lái.",
+      "word": "pilot",
+      "normalized_word": "pilot",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The pilot landed the plane safely.",
+      "example_vi_clean": "Phi công đã hạ cánh máy bay an toàn."
+    },
+    {
+      "id": 25360,
+      "quiz_meaning_vi": "lòng thương hại",
+      "meaning_vi_clean": "lòng thương hại; điều đáng tiếc",
+      "examples_clean": [
+        {
+          "meaning_vi": "lòng thương hại",
+          "example_en": "She felt a sense of pity for the homeless dog.",
+          "example_vi": "Cô ấy cảm thấy lòng thương hại đối với chú chó vô gia cư."
+        },
+        {
+          "meaning_vi": "lòng thương hại",
+          "example_en": "He looked at her with pity in his eyes.",
+          "example_vi": "Anh ấy nhìn cô ấy với lòng thương hại trong mắt."
+        },
+        {
+          "meaning_vi": "lòng thương hại",
+          "example_en": "They showed pity to the poor family.",
+          "example_vi": "Họ đã thể hiện lòng thương hại đối với gia đình nghèo khó."
+        },
+        {
+          "meaning_vi": "lòng thương hại",
+          "example_en": "I don't want your pity, I want your help.",
+          "example_vi": "Tôi không muốn lòng thương hại của bạn, tôi muốn sự giúp đỡ của bạn."
+        },
+        {
+          "meaning_vi": "điều đáng tiếc",
+          "example_en": "It is a pity that you cannot come to the party.",
+          "example_vi": "Thật là một điều đáng tiếc khi bạn không thể đến bữa tiệc."
+        },
+        {
+          "meaning_vi": "điều đáng tiếc",
+          "example_en": "What a pity we missed the train!",
+          "example_vi": "Thật là một điều đáng tiếc khi chúng ta lỡ chuyến tàu!"
+        },
+        {
+          "meaning_vi": "điều đáng tiếc",
+          "example_en": "It's a pity the weather is so bad today.",
+          "example_vi": "Thật là một điều đáng tiếc khi thời tiết hôm nay quá tệ."
+        },
+        {
+          "meaning_vi": "điều đáng tiếc",
+          "example_en": "It is a pity to waste such good food.",
+          "example_vi": "Thật là một điều đáng tiếc khi lãng phí thức ăn ngon như vậy."
+        },
+        {
+          "meaning_vi": "điều đáng tiếc",
+          "example_en": "It's a pity he didn't get the job.",
+          "example_vi": "Thật là một điều đáng tiếc khi anh ấy không nhận được công việc."
+        },
+        {
+          "meaning_vi": "điều đáng tiếc",
+          "example_en": "It is a pity that the museum is closed today.",
+          "example_vi": "Thật là một điều đáng tiếc khi bảo tàng đóng cửa hôm nay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS thành danh từ, tách nghĩa rõ ràng thành lòng thương hại và điều đáng tiếc.",
+      "word": "pity",
+      "normalized_word": "pity",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "She felt a sense of pity for the homeless dog.",
+      "example_vi_clean": "Cô ấy cảm thấy lòng thương hại đối với chú chó vô gia cư."
+    }
+  ]
+}

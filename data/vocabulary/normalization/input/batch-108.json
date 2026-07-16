@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-108",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 25071,
+      "word": "given",
+      "normalized_word": "given",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'givn/",
+      "primary_meaning_vi": "đề ngày (tài liệu",
+      "meaning_vi": "đề ngày (tài liệu, văn kiện); nếu; đã quy định; (toán học) đã cho; có xu hướng, quen thói; thêm vào coi như phụ lục, thêm vào coi như bổ sung; tên thánh",
+      "example_en": "I give it a 95% chance of success.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "One pillar gave, then more, and suddenly the whole floor pancaked onto the floor below.",
+          "example_vi": null
+        },
+        {
+          "example_en": "They're giving my favorite show!",
+          "example_vi": null
+        },
+        {
+          "example_en": "The master bedroom gives onto a spacious balcony.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25072,
+      "word": "globe",
+      "normalized_word": "globe",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/gloub/",
+      "primary_meaning_vi": "quả cầu",
+      "meaning_vi": "quả cầu; địa cầu, trái đất, thế giới; cầu mắt; chao đèn hình cầu; bầu nuôi cá vàng; làm thành hình cầu; thành hình cầu",
+      "example_en": "the globe of the eye; the globe of a lamp",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25073,
+      "word": "glove",
+      "normalized_word": "glove",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/glʌv/",
+      "primary_meaning_vi": "bao tay",
+      "meaning_vi": "bao tay, tất tay, găng; rất thân với; cộng tác với; ăn cánh với; tranh luận (đấu tranh) với ai; đối xử thẳng tay với ai; vừa như in; nhận lời thách thức; thách thức; mang bao tay vào, đeo găng vào",
+      "example_en": "I wore gloves to keep my hands warm.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Frederico had a great glove, but he couldn't hit a curveball, so he never broke into the pros.",
+          "example_vi": null
+        },
+        {
+          "example_en": "to throw down the glove, i.e. to offer a challenge; to take up the glove, to accept it",
+          "example_vi": null
+        },
+        {
+          "example_en": "He gloved the line drive for the third out.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 25074,
+      "word": "golden",
+      "normalized_word": "golden",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'gouldən/",
+      "primary_meaning_vi": "bằng vàng",
+      "meaning_vi": "bằng vàng; có vàng, nhiều vàng; có màu vàng; quý giá, quý báu, quý như vàng; thịnh vượng; hạnh phúc; thành phố Xan-Fran-xit-co; mean; sự tôn trọng; quy tắc đối với người khác phải như nình muốn người ta đối với mình; bang Ca-li-fo-ni; wedding; calf",
+      "example_en": "She wore a golden crown.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "Under a golden sun.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The Renaissance was a golden era.",
+          "example_vi": null
+        },
+        {
+          "example_en": "This is a golden opportunity",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25075,
+      "word": "golf",
+      "normalized_word": "golf",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "nội động từ",
+      "phonetic": "/gɔlf/",
+      "primary_meaning_vi": "môn đánh gôn",
+      "meaning_vi": "môn đánh gôn; chơi gôn",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25076,
+      "word": "good-looking",
+      "normalized_word": "good-looking",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/'gud'lukiɳ/",
+      "primary_meaning_vi": "đẹp",
+      "meaning_vi": "đẹp, đẹp trai; có vẻ tốt, có vẻ phúc hậu",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25077,
+      "word": "government",
+      "normalized_word": "government",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'gʌvnmənt/",
+      "primary_meaning_vi": "sự cai trị",
+      "meaning_vi": "sự cai trị, sự thống trị; chính phủ, nội các; chính quyền; chính thể; bang; tỉnh (địa hạt dưới quyền cai trị của một viên thống đốc hoặc thủ hiến); sự cai quản; sự kiềm chế; sự chi phối",
+      "example_en": "If the citizens must follow the law, then the government must follow the constitution.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25078,
+      "word": "grace",
+      "normalized_word": "grace",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "ngoại động từ",
+      "phonetic": "/greis/",
+      "primary_meaning_vi": "vẻ duyên dáng",
+      "meaning_vi": "vẻ duyên dáng, vẻ yêu kiều; vẻ uyển chuyển; vẻ phong nhã, vẻ thanh nhã; thái độ (trong khi làm việc gì); ơn huệ; sự trọng đãi, sự chiếu cố; sự gia hạn, sự cho hoãn (có tính chất gia ơn); sự miễn xá, sự khoan hồng, sự khoan dung; ơn trời, ơn Chúa; lời cầu nguyện (trước hay sau bữa ăn cơm); ngài (tiếng xưng hô với những người thuộc dòng quý tộc, với các giám mục...); nét hoa mỹ (trong bản nhạc, bài ca); sự cho phép dự thi (ở trường đại học); (The Graces) (thần thoại,thần học) thần Mỹ nữ; ăn nằm với nhau trước khi cưới; làm cho duyên dáng thêm; làm vinh dự, làm vẻ vang, ban vinh dự cho",
+      "example_en": "The Princess brought grace to an otherwise dull and boring party.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "It has become less common to say grace before having dinner.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The dancer moved with grace and strength.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The repayment of the loan starts after a three-year grace.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "LONG_MEANING"
+      ]
+    },
+    {
+      "id": 25079,
+      "word": "gradually",
+      "normalized_word": "gradually",
+      "cefr_level": "A2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "dần dần",
+      "meaning_vi": "dần dần, từ từ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 25080,
+      "word": "gram",
+      "normalized_word": "gram",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/græm/",
+      "primary_meaning_vi": "gramme",
+      "meaning_vi": "gramme; đậu Thổ-nhĩ-kỳ; đậu xanh",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

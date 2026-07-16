@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 26261,
+      "quiz_meaning_vi": "phòng tập thể dục",
+      "meaning_vi_clean": "phòng tập thể dục; tập thể dục",
+      "examples_clean": [
+        {
+          "meaning_vi": "phòng tập thể dục",
+          "example_en": "I go to the gym three times a week to stay fit.",
+          "example_vi": "Tôi đến phòng tập thể dục ba lần một tuần để giữ dáng."
+        },
+        {
+          "meaning_vi": "phòng tập thể dục",
+          "example_en": "The school has a large gym for basketball and volleyball.",
+          "example_vi": "Trường có một phòng tập thể dục lớn để chơi bóng rổ và bóng chuyền."
+        },
+        {
+          "meaning_vi": "phòng tập thể dục",
+          "example_en": "She left her gym bag in the locker room.",
+          "example_vi": "Cô ấy để quên túi đồ tập thể dục trong phòng thay đồ."
+        },
+        {
+          "meaning_vi": "phòng tập thể dục",
+          "example_en": "They are building a new gym near the city center.",
+          "example_vi": "Họ đang xây một phòng tập thể dục mới gần trung tâm thành phố."
+        },
+        {
+          "meaning_vi": "tập thể dục",
+          "example_en": "He likes to gym early in the morning before work.",
+          "example_vi": "Anh ấy thích tập thể dục vào sáng sớm trước khi đi làm."
+        },
+        {
+          "meaning_vi": "tập thể dục",
+          "example_en": "We gym together every Saturday to motivate each other.",
+          "example_vi": "Chúng tôi tập thể dục cùng nhau mỗi thứ Bảy để tạo động lực cho nhau."
+        },
+        {
+          "meaning_vi": "tập thể dục",
+          "example_en": "It is important to gym regularly for your health.",
+          "example_vi": "Việc tập thể dục thường xuyên rất quan trọng cho sức khỏe của bạn."
+        },
+        {
+          "meaning_vi": "tập thể dục",
+          "example_en": "She decided to gym more often to improve her stamina.",
+          "example_vi": "Cô ấy quyết định tập thể dục thường xuyên hơn để cải thiện sức bền."
+        },
+        {
+          "meaning_vi": "phòng tập thể dục",
+          "example_en": "The hotel gym is equipped with modern machines.",
+          "example_vi": "Phòng tập thể dục của khách sạn được trang bị các máy móc hiện đại."
+        },
+        {
+          "meaning_vi": "tập thể dục",
+          "example_en": "Do you gym at home or at a professional center?",
+          "example_vi": "Bạn tập thể dục ở nhà hay tại một trung tâm chuyên nghiệp?"
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa nghĩa từ loại danh từ thành phòng tập thể dục và bổ sung nghĩa động từ tập thể dục. Bổ sung 10 ví dụ phù hợp.",
+      "word": "gym",
+      "normalized_word": "gym",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I go to the gym three times a week to stay fit.",
+      "example_vi_clean": "Tôi đến phòng tập thể dục ba lần một tuần để giữ dáng."
+    },
+    {
+      "id": 26262,
+      "quiz_meaning_vi": "môi trường sống",
+      "meaning_vi_clean": "môi trường sống; nơi ở",
+      "examples_clean": [
+        {
+          "meaning_vi": "môi trường sống",
+          "example_en": "The rainforest is the natural habitat of many rare species.",
+          "example_vi": "Rừng nhiệt đới là môi trường sống tự nhiên của nhiều loài quý hiếm."
+        },
+        {
+          "meaning_vi": "môi trường sống",
+          "example_en": "Pollution is destroying the habitat of many sea creatures.",
+          "example_vi": "Ô nhiễm đang phá hủy môi trường sống của nhiều sinh vật biển."
+        },
+        {
+          "meaning_vi": "môi trường sống",
+          "example_en": "We must protect the habitat of endangered animals.",
+          "example_vi": "Chúng ta phải bảo vệ môi trường sống của các loài động vật có nguy cơ tuyệt chủng."
+        },
+        {
+          "meaning_vi": "môi trường sống",
+          "example_en": "This desert habitat is home to many unique plants.",
+          "example_vi": "Môi trường sống sa mạc này là nhà của nhiều loài thực vật độc đáo."
+        },
+        {
+          "meaning_vi": "nơi ở",
+          "example_en": "The city provides a suitable habitat for many urban birds.",
+          "example_vi": "Thành phố cung cấp một nơi ở phù hợp cho nhiều loài chim đô thị."
+        },
+        {
+          "meaning_vi": "nơi ở",
+          "example_en": "The cave serves as a safe habitat for the bats.",
+          "example_vi": "Hang động đóng vai trò là nơi ở an toàn cho loài dơi."
+        },
+        {
+          "meaning_vi": "nơi ở",
+          "example_en": "They are studying the habitat of the local mountain goats.",
+          "example_vi": "Họ đang nghiên cứu nơi ở của loài dê núi địa phương."
+        },
+        {
+          "meaning_vi": "nơi ở",
+          "example_en": "The wetland is a vital habitat for migratory birds.",
+          "example_vi": "Vùng đất ngập nước là nơi ở quan trọng cho các loài chim di cư."
+        },
+        {
+          "meaning_vi": "môi trường sống",
+          "example_en": "Climate change is altering the habitat of polar bears.",
+          "example_vi": "Biến đổi khí hậu đang làm thay đổi môi trường sống của gấu Bắc Cực."
+        },
+        {
+          "meaning_vi": "nơi ở",
+          "example_en": "The forest offers a perfect habitat for small mammals.",
+          "example_vi": "Khu rừng cung cấp một nơi ở hoàn hảo cho các loài thú nhỏ."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ nghĩa chính, bổ sung ví dụ minh họa rõ ràng.",
+      "word": "habitat",
+      "normalized_word": "habitat",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The rainforest is the natural habitat of many rare species.",
+      "example_vi_clean": "Rừng nhiệt đới là môi trường sống tự nhiên của nhiều loài quý hiếm."
+    },
+    {
+      "id": 26263,
+      "quiz_meaning_vi": "thợ làm tóc",
+      "meaning_vi_clean": "thợ làm tóc",
+      "examples_clean": [
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "My hairdresser recommended a new style for my hair.",
+          "example_vi": "Thợ làm tóc của tôi đã gợi ý một kiểu mới cho tóc của tôi."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "She has been a professional hairdresser for ten years.",
+          "example_vi": "Cô ấy đã là một thợ làm tóc chuyên nghiệp được mười năm."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "I need to book an appointment with my hairdresser.",
+          "example_vi": "Tôi cần đặt lịch hẹn với thợ làm tóc của mình."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "The hairdresser cut my hair exactly how I wanted.",
+          "example_vi": "Người thợ làm tóc đã cắt tóc cho tôi đúng như ý tôi muốn."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "He is a talented hairdresser who works in a busy salon.",
+          "example_vi": "Anh ấy là một thợ làm tóc tài năng làm việc tại một tiệm đông khách."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "Ask your hairdresser about the best products for your hair.",
+          "example_vi": "Hãy hỏi thợ làm tóc của bạn về những sản phẩm tốt nhất cho tóc của bạn."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "The hairdresser gave me a very modern haircut.",
+          "example_vi": "Người thợ làm tóc đã cắt cho tôi một kiểu tóc rất hiện đại."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "Many people trust their regular hairdresser with their look.",
+          "example_vi": "Nhiều người tin tưởng giao diện mạo của họ cho người thợ làm tóc quen thuộc."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "The hairdresser was very friendly and professional.",
+          "example_vi": "Người thợ làm tóc rất thân thiện và chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "thợ làm tóc",
+          "example_en": "I am looking for a new hairdresser in this area.",
+          "example_vi": "Tôi đang tìm một thợ làm tóc mới trong khu vực này."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ đầy đủ.",
+      "word": "hairdresser",
+      "normalized_word": "hairdresser",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "My hairdresser recommended a new style for my hair.",
+      "example_vi_clean": "Thợ làm tóc của tôi đã gợi ý một kiểu mới cho tóc của tôi."
+    },
+    {
+      "id": 26264,
+      "quiz_meaning_vi": "nửa",
+      "meaning_vi_clean": "nửa; một nửa",
+      "examples_clean": [
+        {
+          "meaning_vi": "nửa",
+          "example_en": "I ate half of the apple for my snack.",
+          "example_vi": "Tôi đã ăn một nửa quả táo cho bữa ăn nhẹ."
+        },
+        {
+          "meaning_vi": "nửa",
+          "example_en": "She cut the sandwich in half to share with me.",
+          "example_vi": "Cô ấy cắt đôi chiếc bánh mì để chia sẻ với tôi."
+        },
+        {
+          "meaning_vi": "nửa",
+          "example_en": "We have been waiting for half an hour.",
+          "example_vi": "Chúng tôi đã đợi được nửa giờ rồi."
+        },
+        {
+          "meaning_vi": "nửa",
+          "example_en": "The glass is half full of water.",
+          "example_vi": "Cái ly chứa đầy một nửa nước."
+        },
+        {
+          "meaning_vi": "một nửa",
+          "example_en": "Half of the students passed the difficult exam.",
+          "example_vi": "Một nửa số học sinh đã vượt qua kỳ thi khó khăn đó."
+        },
+        {
+          "meaning_vi": "một nửa",
+          "example_en": "He spent half his money on new books.",
+          "example_vi": "Anh ấy đã dành một nửa số tiền của mình để mua sách mới."
+        },
+        {
+          "meaning_vi": "một nửa",
+          "example_en": "I only understood half of what he said.",
+          "example_vi": "Tôi chỉ hiểu được một nửa những gì anh ấy nói."
+        },
+        {
+          "meaning_vi": "một nửa",
+          "example_en": "Half the team was absent due to the flu.",
+          "example_vi": "Một nửa đội đã vắng mặt do bị cúm."
+        },
+        {
+          "meaning_vi": "nửa",
+          "example_en": "The road is half finished after months of work.",
+          "example_vi": "Con đường mới chỉ hoàn thành một nửa sau nhiều tháng làm việc."
+        },
+        {
+          "meaning_vi": "một nửa",
+          "example_en": "She finished half the project before the deadline.",
+          "example_vi": "Cô ấy đã hoàn thành một nửa dự án trước thời hạn."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc bỏ các nghĩa quá xa lạ, giữ nghĩa phổ biến nhất. Bổ sung 10 ví dụ.",
+      "word": "half",
+      "normalized_word": "half",
+      "cefr_level": "B1",
+      "pos": "adverb",
+      "pos_vi_clean": "phó từ",
+      "example_en_clean": "I ate half of the apple for my snack.",
+      "example_vi_clean": "Tôi đã ăn một nửa quả táo cho bữa ăn nhẹ."
+    },
+    {
+      "id": 26265,
+      "quiz_meaning_vi": "cái búa",
+      "meaning_vi_clean": "cái búa; đóng bằng búa",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái búa",
+          "example_en": "He used a hammer to drive the nail into the wall.",
+          "example_vi": "Anh ấy dùng cái búa để đóng đinh vào tường."
+        },
+        {
+          "meaning_vi": "cái búa",
+          "example_en": "Keep the hammer in the toolbox after you finish.",
+          "example_vi": "Hãy cất cái búa vào hộp dụng cụ sau khi bạn làm xong."
+        },
+        {
+          "meaning_vi": "cái búa",
+          "example_en": "The carpenter picked up his hammer to start working.",
+          "example_vi": "Người thợ mộc cầm cái búa lên để bắt đầu làm việc."
+        },
+        {
+          "meaning_vi": "cái búa",
+          "example_en": "She bought a new hammer for her home repairs.",
+          "example_vi": "Cô ấy đã mua một cái búa mới để sửa chữa nhà cửa."
+        },
+        {
+          "meaning_vi": "đóng bằng búa",
+          "example_en": "You need to hammer the stake firmly into the ground.",
+          "example_vi": "Bạn cần đóng cái cọc thật chắc xuống đất bằng búa."
+        },
+        {
+          "meaning_vi": "đóng bằng búa",
+          "example_en": "He had to hammer the metal piece to shape it.",
+          "example_vi": "Anh ấy phải dùng búa đóng vào miếng kim loại để tạo hình nó."
+        },
+        {
+          "meaning_vi": "đóng bằng búa",
+          "example_en": "They hammered the boards together to build a fence.",
+          "example_vi": "Họ đóng các tấm ván lại với nhau bằng búa để làm hàng rào."
+        },
+        {
+          "meaning_vi": "đóng bằng búa",
+          "example_en": "She hammered the nail until it was flush with the wood.",
+          "example_vi": "Cô ấy đóng đinh bằng búa cho đến khi nó phẳng với mặt gỗ."
+        },
+        {
+          "meaning_vi": "cái búa",
+          "example_en": "The judge hit the table with a small wooden hammer.",
+          "example_vi": "Vị thẩm phán gõ xuống bàn bằng một cái búa gỗ nhỏ."
+        },
+        {
+          "meaning_vi": "đóng bằng búa",
+          "example_en": "Carefully hammer the pieces together without damaging them.",
+          "example_vi": "Hãy cẩn thận đóng các mảnh lại với nhau bằng búa mà không làm hỏng chúng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ nội động từ thành danh từ và động từ. Bổ sung 10 ví dụ.",
+      "word": "hammer",
+      "normalized_word": "hammer",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He used a hammer to drive the nail into the wall.",
+      "example_vi_clean": "Anh ấy dùng cái búa để đóng đinh vào tường."
+    },
+    {
+      "id": 26266,
+      "quiz_meaning_vi": "môn bóng ném",
+      "meaning_vi_clean": "môn bóng ném",
+      "examples_clean": [
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "Handball is a fast-paced team sport.",
+          "example_vi": "Bóng ném là một môn thể thao đồng đội có nhịp độ nhanh."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "We played a game of handball during physical education.",
+          "example_vi": "Chúng tôi đã chơi một trận bóng ném trong giờ thể dục."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "The school team won the regional handball championship.",
+          "example_vi": "Đội bóng ném của trường đã giành chức vô địch khu vực."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "He is very skilled at playing handball.",
+          "example_vi": "Anh ấy rất có kỹ năng trong việc chơi bóng ném."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "Handball requires good coordination and speed.",
+          "example_vi": "Bóng ném đòi hỏi sự phối hợp và tốc độ tốt."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "They are watching a professional handball match on TV.",
+          "example_vi": "Họ đang xem một trận bóng ném chuyên nghiệp trên TV."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "She joined the handball club at the university.",
+          "example_vi": "Cô ấy đã tham gia câu lạc bộ bóng ném tại trường đại học."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "The rules of handball are quite simple to learn.",
+          "example_vi": "Luật chơi bóng ném khá đơn giản để học."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "Handball is popular in many European countries.",
+          "example_vi": "Bóng ném phổ biến ở nhiều quốc gia châu Âu."
+        },
+        {
+          "meaning_vi": "môn bóng ném",
+          "example_en": "We need a new ball for our handball practice.",
+          "example_vi": "Chúng tôi cần một quả bóng mới cho buổi tập bóng ném."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "handball",
+      "normalized_word": "handball",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Handball is a fast-paced team sport.",
+      "example_vi_clean": "Bóng ném là một môn thể thao đồng đội có nhịp độ nhanh."
+    },
+    {
+      "id": 26267,
+      "quiz_meaning_vi": "cầm tay",
+      "meaning_vi_clean": "cầm tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "She uses a hand-held device to scan the barcodes.",
+          "example_vi": "Cô ấy sử dụng một thiết bị cầm tay để quét mã vạch."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "The camera is small and hand-held for easy travel.",
+          "example_vi": "Chiếc máy ảnh này nhỏ và cầm tay để dễ dàng mang đi du lịch."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "He bought a hand-held fan to stay cool in summer.",
+          "example_vi": "Anh ấy đã mua một chiếc quạt cầm tay để giữ mát vào mùa hè."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "This hand-held vacuum cleaner is perfect for small messes.",
+          "example_vi": "Chiếc máy hút bụi cầm tay này rất hoàn hảo cho những vết bẩn nhỏ."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "The game console is a popular hand-held gaming system.",
+          "example_vi": "Máy chơi game này là một hệ thống chơi game cầm tay phổ biến."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "They used a hand-held radio to communicate in the woods.",
+          "example_vi": "Họ đã sử dụng một chiếc bộ đàm cầm tay để liên lạc trong rừng."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "The doctor used a hand-held light to examine her throat.",
+          "example_vi": "Bác sĩ đã dùng một chiếc đèn cầm tay để kiểm tra cổ họng của cô ấy."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "This hand-held GPS helps us find our way during hikes.",
+          "example_vi": "Thiết bị GPS cầm tay này giúp chúng tôi tìm đường trong các chuyến đi bộ đường dài."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "She prefers a hand-held mirror for applying makeup.",
+          "example_vi": "Cô ấy thích dùng gương cầm tay để trang điểm."
+        },
+        {
+          "meaning_vi": "cầm tay",
+          "example_en": "The hand-held microphone allows the speaker to move around.",
+          "example_vi": "Chiếc micro cầm tay cho phép người nói di chuyển xung quanh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "hand-held",
+      "normalized_word": "hand-held",
+      "cefr_level": "B1",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "She uses a hand-held device to scan the barcodes.",
+      "example_vi_clean": "Cô ấy sử dụng một thiết bị cầm tay để quét mã vạch."
+    },
+    {
+      "id": 26268,
+      "quiz_meaning_vi": "khăn tay",
+      "meaning_vi_clean": "khăn tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "He took out a clean handkerchief to wipe his glasses.",
+          "example_vi": "Anh ấy lấy ra một chiếc khăn tay sạch để lau kính."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "She kept a lace handkerchief in her handbag.",
+          "example_vi": "Cô ấy giữ một chiếc khăn tay ren trong túi xách của mình."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "He offered her his handkerchief when she started crying.",
+          "example_vi": "Anh ấy đưa cho cô ấy chiếc khăn tay của mình khi cô ấy bắt đầu khóc."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "My grandfather always carries a cotton handkerchief.",
+          "example_vi": "Ông tôi luôn mang theo một chiếc khăn tay bằng vải cotton."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "She used a handkerchief to dab her forehead.",
+          "example_vi": "Cô ấy dùng khăn tay để thấm mồ hôi trên trán."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "The handkerchief was embroidered with his initials.",
+          "example_vi": "Chiếc khăn tay được thêu tên viết tắt của anh ấy."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "He blew his nose into a handkerchief.",
+          "example_vi": "Anh ấy hỉ mũi vào một chiếc khăn tay."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "She washed the handkerchief and hung it to dry.",
+          "example_vi": "Cô ấy giặt chiếc khăn tay và treo nó lên cho khô."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "He folded the handkerchief neatly and put it in his pocket.",
+          "example_vi": "Anh ấy gấp chiếc khăn tay gọn gàng và bỏ vào túi."
+        },
+        {
+          "meaning_vi": "khăn tay",
+          "example_en": "A silk handkerchief is a classic gift for a gentleman.",
+          "example_vi": "Một chiếc khăn tay bằng lụa là món quà cổ điển cho một quý ông."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Lọc bỏ các nghĩa phụ không cần thiết, giữ nghĩa chính. Bổ sung 10 ví dụ.",
+      "word": "handkerchief",
+      "normalized_word": "handkerchief",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "He took out a clean handkerchief to wipe his glasses.",
+      "example_vi_clean": "Anh ấy lấy ra một chiếc khăn tay sạch để lau kính."
+    },
+    {
+      "id": 26269,
+      "quiz_meaning_vi": "cái bắt tay",
+      "meaning_vi_clean": "cái bắt tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "They sealed the deal with a firm handshake.",
+          "example_vi": "Họ đã chốt thỏa thuận bằng một cái bắt tay chắc chắn."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "A friendly handshake is a common way to greet someone.",
+          "example_vi": "Một cái bắt tay thân thiện là cách phổ biến để chào hỏi ai đó."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "He offered a handshake to show his respect.",
+          "example_vi": "Anh ấy đưa tay ra bắt để thể hiện sự tôn trọng."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "The interview ended with a professional handshake.",
+          "example_vi": "Buổi phỏng vấn kết thúc bằng một cái bắt tay chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "She gave him a quick handshake before leaving.",
+          "example_vi": "Cô ấy bắt tay anh ấy nhanh chóng trước khi rời đi."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "A handshake can tell you a lot about a person's confidence.",
+          "example_vi": "Một cái bắt tay có thể cho bạn biết nhiều điều về sự tự tin của một người."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "They exchanged a handshake after the game.",
+          "example_vi": "Họ đã bắt tay nhau sau trận đấu."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "The handshake between the two leaders was historic.",
+          "example_vi": "Cái bắt tay giữa hai nhà lãnh đạo mang tính lịch sử."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "He felt a weak handshake from the nervous candidate.",
+          "example_vi": "Anh ấy cảm nhận được một cái bắt tay yếu ớt từ ứng viên đang lo lắng."
+        },
+        {
+          "meaning_vi": "cái bắt tay",
+          "example_en": "Always look the person in the eye during a handshake.",
+          "example_vi": "Luôn nhìn vào mắt người đối diện khi bắt tay."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "handshake",
+      "normalized_word": "handshake",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "They sealed the deal with a firm handshake.",
+      "example_vi_clean": "Họ đã chốt thỏa thuận bằng một cái bắt tay chắc chắn."
+    },
+    {
+      "id": 26270,
+      "quiz_meaning_vi": "chữ viết tay",
+      "meaning_vi_clean": "chữ viết tay",
+      "examples_clean": [
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "Her handwriting is very neat and easy to read.",
+          "example_vi": "Chữ viết tay của cô ấy rất gọn gàng và dễ đọc."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "I could barely recognize his handwriting on the note.",
+          "example_vi": "Tôi hầu như không nhận ra chữ viết tay của anh ấy trên tờ giấy ghi chú."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "The letter was written in beautiful handwriting.",
+          "example_vi": "Bức thư được viết bằng chữ viết tay rất đẹp."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "He has messy handwriting that is hard to decipher.",
+          "example_vi": "Anh ấy có chữ viết tay cẩu thả rất khó đọc."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "Please submit your essay in clear handwriting.",
+          "example_vi": "Vui lòng nộp bài luận của bạn bằng chữ viết tay rõ ràng."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "She practiced her handwriting every day to improve it.",
+          "example_vi": "Cô ấy luyện chữ viết tay mỗi ngày để cải thiện nó."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "The old document was in a very elegant handwriting.",
+          "example_vi": "Tài liệu cũ đó được viết bằng một kiểu chữ viết tay rất thanh lịch."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "Can you read this handwriting on the envelope?",
+          "example_vi": "Bạn có đọc được chữ viết tay trên phong bì này không?"
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "His handwriting has changed a lot over the years.",
+          "example_vi": "Chữ viết tay của anh ấy đã thay đổi rất nhiều qua các năm."
+        },
+        {
+          "meaning_vi": "chữ viết tay",
+          "example_en": "The teacher praised her for her neat handwriting.",
+          "example_vi": "Giáo viên đã khen ngợi cô ấy vì chữ viết tay gọn gàng."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Bổ sung 10 ví dụ.",
+      "word": "handwriting",
+      "normalized_word": "handwriting",
+      "cefr_level": "B1",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Her handwriting is very neat and easy to read.",
+      "example_vi_clean": "Chữ viết tay của cô ấy rất gọn gàng và dễ đọc."
+    }
+  ]
+}

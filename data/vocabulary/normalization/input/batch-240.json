@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-240",
+  "sourceSnapshotExportedAt": "2026-07-13T16:19:11.237Z",
+  "records": [
+    {
+      "id": 26391,
+      "word": "antivirus",
+      "normalized_word": "antivirus",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": null,
+      "phonetic": null,
+      "primary_meaning_vi": "chống virus (một trình tiện ích được biên soạn để kiểm tra và khử bỏ các virus máy tính)",
+      "meaning_vi": "chống virus (một trình tiện ích được biên soạn để kiểm tra và khử bỏ các virus máy tính)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 7,
+      "flags": [
+        "POS_MISMATCH",
+        "NOISY_PRIMARY_MEANING",
+        "LONG_PRIMARY_MEANING",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26392,
+      "word": "apostrophe",
+      "normalized_word": "apostrophe",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'pɔstrəfi/",
+      "primary_meaning_vi": "hô ngữ",
+      "meaning_vi": "hô ngữ; dấu lược",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26393,
+      "word": "applicant",
+      "normalized_word": "applicant",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/'æplikənt/",
+      "primary_meaning_vi": "người xin việc",
+      "meaning_vi": "người xin việc; người thỉnh cầu; nguyên cáo, người thưa kiện",
+      "example_en": "Our job advertisement attracted seven applicants.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26394,
+      "word": "appreciative",
+      "normalized_word": "appreciative",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "tính từ",
+      "phonetic": "/ə'pri:ʃjətiv/",
+      "primary_meaning_vi": "biết đánh giá",
+      "meaning_vi": "biết đánh giá, biết thưởng thức; khen ngợi, đánh giá cao, tán thưởng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26395,
+      "word": "appropriately",
+      "normalized_word": "appropriately",
+      "cefr_level": "B2",
+      "pos": "adverb",
+      "pos_vi": "phó từ",
+      "phonetic": null,
+      "primary_meaning_vi": "thích hợp",
+      "meaning_vi": "thích hợp, thích đáng",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26396,
+      "word": "approximate",
+      "normalized_word": "approximate",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "động từ",
+      "phonetic": "/ə'prɔksimit/",
+      "primary_meaning_vi": "approximate to giống với",
+      "meaning_vi": "approximate to giống với, giống hệt với; xấp xỉ, gần đúng; rất gần nhau; gắn với; làm cho gắn với; xấp xỉ với, gần đúng với; làm cho xấp xỉ với, làm cho gần đúng với",
+      "example_en": "NASA's Genesis spacecraft has on board an ion monitor to record the speed, density, temperature and approximate composition of the solar wind ions.",
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26397,
+      "word": "arch",
+      "normalized_word": "arch",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "tính từ",
+      "phonetic": "/ɑ:tʃ/",
+      "primary_meaning_vi": "khung tò vò",
+      "meaning_vi": "khung tò vò, cửa tò vò; hình cung; vòm; nhịp cuốn (cầu...); xây khung vòm ở trên (cửa...); xây cuốn vòng cung; uốn cong; cong lại, uốn vòng cung; tinh nghịch, tinh quái, hóm, láu",
+      "example_en": "to pass into the arch of a bridge",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The cat arched its back",
+          "example_vi": null
+        },
+        {
+          "example_en": "I attempted to hide my emotions, but an arch remark escaped my lips.",
+          "example_vi": null
+        },
+        {
+          "example_en": "They were arch enemies.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 5,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES"
+      ]
+    },
+    {
+      "id": 26398,
+      "word": "archaeologist",
+      "normalized_word": "archaeologist",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/,ɑ:ki'ɔlədʤist/ (archaeologer) /,ɑ:ki'ɔlədʤə/",
+      "primary_meaning_vi": "nhà khảo cổ",
+      "meaning_vi": "nhà khảo cổ",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 0,
+      "flags": []
+    },
+    {
+      "id": 26399,
+      "word": "arctic",
+      "normalized_word": "arctic",
+      "cefr_level": "B2",
+      "pos": "adjective",
+      "pos_vi": "danh từ",
+      "phonetic": "/'ɑ:ktik/",
+      "primary_meaning_vi": "bắc cực",
+      "meaning_vi": "bắc cực; (thuộc) phương bắc; giá rét, băng giá; the Artic bắc cực; (từ Mỹ,nghĩa Mỹ) ủng bao (ủng cao su bọc ngoài một đôi giày khác)",
+      "example_en": null,
+      "example_vi": null,
+      "alternative_examples": [],
+      "risk_score": 6,
+      "flags": [
+        "POS_MISMATCH",
+        "MANY_SENSES",
+        "MISSING_EXAMPLE"
+      ]
+    },
+    {
+      "id": 26400,
+      "word": "arena",
+      "normalized_word": "arena",
+      "cefr_level": "B2",
+      "pos": "noun",
+      "pos_vi": "danh từ",
+      "phonetic": "/ə'ri:nə/",
+      "primary_meaning_vi": "trường đấu (ở La mã)",
+      "meaning_vi": "trường đấu (ở La mã); trường đấu tranh, vũ đài, phạm vi hoạt động",
+      "example_en": "A large crowd filled the seats of the arena.",
+      "example_vi": null,
+      "alternative_examples": [
+        {
+          "example_en": "The arena is grey with white beams.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The gladiators entered the arena.",
+          "example_vi": null
+        },
+        {
+          "example_en": "The company was a player in the maritime insurance arena.",
+          "example_vi": null
+        }
+      ],
+      "risk_score": 0,
+      "flags": []
+    }
+  ]
+}

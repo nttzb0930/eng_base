@@ -1,0 +1,674 @@
+{
+  "records": [
+    {
+      "id": 24841,
+      "quiz_meaning_vi": "gồm có",
+      "meaning_vi_clean": "gồm có; cốt ở",
+      "examples_clean": [
+        {
+          "meaning_vi": "gồm có",
+          "example_en": "The greeting package consists of some brochures, a pen, and a notepad.",
+          "example_vi": "Gói quà chào mừng gồm có vài tờ rơi, một cây bút và một cuốn sổ tay."
+        },
+        {
+          "meaning_vi": "gồm có",
+          "example_en": "The committee consists of ten members from different departments.",
+          "example_vi": "Ủy ban gồm có mười thành viên từ các phòng ban khác nhau."
+        },
+        {
+          "meaning_vi": "gồm có",
+          "example_en": "Their diet consists mainly of vegetables and fruits.",
+          "example_vi": "Chế độ ăn của họ chủ yếu gồm có rau và trái cây."
+        },
+        {
+          "meaning_vi": "gồm có",
+          "example_en": "The test consists of three parts: reading, writing, and listening.",
+          "example_vi": "Bài kiểm tra gồm có ba phần: đọc, viết và nghe."
+        },
+        {
+          "meaning_vi": "cốt ở",
+          "example_en": "The beauty of the poem consists in its simplicity.",
+          "example_vi": "Vẻ đẹp của bài thơ cốt ở sự giản dị của nó."
+        },
+        {
+          "meaning_vi": "cốt ở",
+          "example_en": "True happiness consists in being content with what you have.",
+          "example_vi": "Hạnh phúc thực sự cốt ở việc hài lòng với những gì bạn có."
+        },
+        {
+          "meaning_vi": "cốt ở",
+          "example_en": "The problem consists in the lack of communication between teams.",
+          "example_vi": "Vấn đề cốt ở sự thiếu giao tiếp giữa các nhóm."
+        },
+        {
+          "meaning_vi": "cốt ở",
+          "example_en": "Success often consists in hard work and perseverance.",
+          "example_vi": "Thành công thường cốt ở sự chăm chỉ và kiên trì."
+        },
+        {
+          "meaning_vi": "cốt ở",
+          "example_en": "The main difficulty consists in finding a suitable location.",
+          "example_vi": "Khó khăn chính cốt ở việc tìm một địa điểm phù hợp."
+        },
+        {
+          "meaning_vi": "cốt ở",
+          "example_en": "The value of the advice consists in its practical application.",
+          "example_vi": "Giá trị của lời khuyên cốt ở tính ứng dụng thực tế của nó."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ lại 2 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ theo đúng phân bổ.",
+      "word": "consist",
+      "normalized_word": "consist",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "The greeting package consists of some brochures, a pen, and a notepad.",
+      "example_vi_clean": "Gói quà chào mừng gồm có vài tờ rơi, một cây bút và một cuốn sổ tay."
+    },
+    {
+      "id": 24842,
+      "quiz_meaning_vi": "sự tiếp xúc",
+      "meaning_vi_clean": "sự tiếp xúc; người đầu mối liên lạc",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tiếp xúc",
+          "example_en": "I haven't been in contact with her for years.",
+          "example_vi": "Tôi đã không giữ sự tiếp xúc với cô ấy trong nhiều năm."
+        },
+        {
+          "meaning_vi": "sự tiếp xúc",
+          "example_en": "Avoid direct contact with the chemical substance.",
+          "example_vi": "Tránh sự tiếp xúc trực tiếp với chất hóa học đó."
+        },
+        {
+          "meaning_vi": "sự tiếp xúc",
+          "example_en": "The virus spreads through close contact with infected people.",
+          "example_vi": "Vi-rút lây lan qua sự tiếp xúc gần với người bị nhiễm bệnh."
+        },
+        {
+          "meaning_vi": "sự tiếp xúc",
+          "example_en": "We need to maintain contact with our international partners.",
+          "example_vi": "Chúng ta cần duy trì sự tiếp xúc với các đối tác quốc tế."
+        },
+        {
+          "meaning_vi": "người đầu mối liên lạc",
+          "example_en": "She is my main contact for this project.",
+          "example_vi": "Cô ấy là người đầu mối liên lạc chính của tôi cho dự án này."
+        },
+        {
+          "meaning_vi": "người đầu mối liên lạc",
+          "example_en": "Do you have a contact in the local government?",
+          "example_vi": "Bạn có người đầu mối liên lạc nào trong chính quyền địa phương không?"
+        },
+        {
+          "meaning_vi": "người đầu mối liên lạc",
+          "example_en": "I added his email to my list of professional contacts.",
+          "example_vi": "Tôi đã thêm email của anh ấy vào danh sách người đầu mối liên lạc chuyên nghiệp."
+        },
+        {
+          "meaning_vi": "người đầu mối liên lạc",
+          "example_en": "He has many useful contacts in the music industry.",
+          "example_vi": "Anh ấy có nhiều người đầu mối liên lạc hữu ích trong ngành âm nhạc."
+        },
+        {
+          "meaning_vi": "người đầu mối liên lạc",
+          "example_en": "Please provide a contact in case of an emergency.",
+          "example_vi": "Vui lòng cung cấp một người đầu mối liên lạc trong trường hợp khẩn cấp."
+        },
+        {
+          "meaning_vi": "người đầu mối liên lạc",
+          "example_en": "She is a valuable contact for anyone looking for a job.",
+          "example_vi": "Cô ấy là một người đầu mối liên lạc quý giá cho bất kỳ ai đang tìm việc."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa quá chuyên ngành hoặc không phù hợp A2. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "contact",
+      "normalized_word": "contact",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "I haven't been in contact with her for years.",
+      "example_vi_clean": "Tôi đã không giữ sự tiếp xúc với cô ấy trong nhiều năm."
+    },
+    {
+      "id": 24843,
+      "quiz_meaning_vi": "cái đựng",
+      "meaning_vi_clean": "cái đựng",
+      "examples_clean": [
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "This plastic container is perfect for storing leftovers.",
+          "example_vi": "Cái đựng bằng nhựa này rất hoàn hảo để lưu trữ thức ăn thừa."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "Make sure the container is sealed tightly.",
+          "example_vi": "Hãy đảm bảo cái đựng được đóng kín chặt."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "The food container should be washed before reuse.",
+          "example_vi": "Cái đựng thực phẩm nên được rửa sạch trước khi tái sử dụng."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "She poured the milk into a glass container.",
+          "example_vi": "Cô ấy đổ sữa vào một cái đựng bằng thủy tinh."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "The shipping container was loaded onto the truck.",
+          "example_vi": "Cái đựng hàng hóa đã được chất lên xe tải."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "Keep the medicine in its original container.",
+          "example_vi": "Giữ thuốc trong cái đựng ban đầu của nó."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "He bought a large container of ice cream.",
+          "example_vi": "Anh ấy đã mua một cái đựng kem lớn."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "The container is made of recycled materials.",
+          "example_vi": "Cái đựng này được làm từ vật liệu tái chế."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "Label every container so you know what is inside.",
+          "example_vi": "Dán nhãn mọi cái đựng để bạn biết bên trong có gì."
+        },
+        {
+          "meaning_vi": "cái đựng",
+          "example_en": "The container leaked during the transport.",
+          "example_vi": "Cái đựng đã bị rò rỉ trong quá trình vận chuyển."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung 10 ví dụ tự nhiên.",
+      "word": "container",
+      "normalized_word": "container",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "This plastic container is perfect for storing leftovers.",
+      "example_vi_clean": "Cái đựng bằng nhựa này rất hoàn hảo để lưu trữ thức ăn thừa."
+    },
+    {
+      "id": 24844,
+      "quiz_meaning_vi": "ngữ cảnh",
+      "meaning_vi_clean": "ngữ cảnh",
+      "examples_clean": [
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "In what context did your attack on him happen?",
+          "example_vi": "Trong ngữ cảnh nào thì vụ tấn công của bạn đối với anh ta đã xảy ra?"
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "You need to understand the context of the conversation.",
+          "example_vi": "Bạn cần hiểu ngữ cảnh của cuộc trò chuyện."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "The word has different meanings depending on the context.",
+          "example_vi": "Từ này có những nghĩa khác nhau tùy thuộc vào ngữ cảnh."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "Without any context, the sentence is hard to translate.",
+          "example_vi": "Nếu không có ngữ cảnh, câu này rất khó dịch."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "The historical context is important for this study.",
+          "example_vi": "Ngữ cảnh lịch sử rất quan trọng cho nghiên cứu này."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "She explained the situation in its proper context.",
+          "example_vi": "Cô ấy đã giải thích tình huống trong ngữ cảnh phù hợp của nó."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "Try to guess the meaning from the context.",
+          "example_vi": "Hãy cố gắng đoán nghĩa từ ngữ cảnh."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "The quote was taken out of context.",
+          "example_vi": "Câu trích dẫn đã bị lấy ra khỏi ngữ cảnh."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "We must consider the social context of the problem.",
+          "example_vi": "Chúng ta phải xem xét ngữ cảnh xã hội của vấn đề."
+        },
+        {
+          "meaning_vi": "ngữ cảnh",
+          "example_en": "The book provides a clear context for the events.",
+          "example_vi": "Cuốn sách cung cấp một ngữ cảnh rõ ràng cho các sự kiện."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "context",
+      "normalized_word": "context",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "In what context did your attack on him happen?",
+      "example_vi_clean": "Trong ngữ cảnh nào thì vụ tấn công của bạn đối với anh ta đã xảy ra?"
+    },
+    {
+      "id": 24845,
+      "quiz_meaning_vi": "lục địa",
+      "meaning_vi_clean": "lục địa",
+      "examples_clean": [
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "Africa is a large continent.",
+          "example_vi": "Châu Phi là một lục địa lớn."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "There are seven continents on Earth.",
+          "example_vi": "Có bảy lục địa trên Trái Đất."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "The continent is home to many different cultures.",
+          "example_vi": "Lục địa này là nơi sinh sống của nhiều nền văn hóa khác nhau."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "Scientists study the movement of the continents.",
+          "example_vi": "Các nhà khoa học nghiên cứu sự di chuyển của các lục địa."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "Australia is both a country and a continent.",
+          "example_vi": "Úc vừa là một quốc gia vừa là một lục địa."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "The climate varies across the continent.",
+          "example_vi": "Khí hậu thay đổi trên khắp lục địa."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "They traveled across the entire continent by train.",
+          "example_vi": "Họ đã đi khắp lục địa bằng tàu hỏa."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "The continent has vast natural resources.",
+          "example_vi": "Lục địa này có nguồn tài nguyên thiên nhiên phong phú."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "Many species are unique to this continent.",
+          "example_vi": "Nhiều loài sinh vật chỉ có ở lục địa này."
+        },
+        {
+          "meaning_vi": "lục địa",
+          "example_en": "The continent is surrounded by oceans.",
+          "example_vi": "Lục địa này được bao quanh bởi các đại dương."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Loại bỏ các nghĩa cổ/không phù hợp. Giữ 1 nghĩa phổ biến nhất.",
+      "word": "continent",
+      "normalized_word": "continent",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Africa is a large continent.",
+      "example_vi_clean": "Châu Phi là một lục địa lớn."
+    },
+    {
+      "id": 24846,
+      "quiz_meaning_vi": "tiếp tục",
+      "meaning_vi_clean": "tiếp tục",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "Please continue with your work.",
+          "example_vi": "Vui lòng tiếp tục công việc của bạn."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "The rain continued all night.",
+          "example_vi": "Cơn mưa tiếp tục suốt cả đêm."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "We will continue our discussion tomorrow.",
+          "example_vi": "Chúng ta sẽ tiếp tục cuộc thảo luận vào ngày mai."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "She continued to study despite the noise.",
+          "example_vi": "Cô ấy tiếp tục học mặc dù có tiếng ồn."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "The show will continue after a short break.",
+          "example_vi": "Chương trình sẽ tiếp tục sau một khoảng nghỉ ngắn."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "He continued walking until he reached the park.",
+          "example_vi": "Anh ấy tiếp tục đi bộ cho đến khi đến công viên."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "The company will continue to grow this year.",
+          "example_vi": "Công ty sẽ tiếp tục phát triển trong năm nay."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "They decided to continue their journey.",
+          "example_vi": "Họ quyết định tiếp tục hành trình của mình."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "The noise continued for several hours.",
+          "example_vi": "Tiếng ồn tiếp tục trong vài giờ."
+        },
+        {
+          "meaning_vi": "tiếp tục",
+          "example_en": "I want to continue learning English.",
+          "example_vi": "Tôi muốn tiếp tục học tiếng Anh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "continue",
+      "normalized_word": "continue",
+      "cefr_level": "A2",
+      "pos": "verb",
+      "pos_vi_clean": "động từ",
+      "example_en_clean": "Please continue with your work.",
+      "example_vi_clean": "Vui lòng tiếp tục công việc của bạn."
+    },
+    {
+      "id": 24847,
+      "quiz_meaning_vi": "sự tương phản",
+      "meaning_vi_clean": "sự tương phản; làm tương phản",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "There is a sharp contrast between the two colors.",
+          "example_vi": "Có một sự tương phản rõ rệt giữa hai màu sắc."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The contrast between his words and actions is clear.",
+          "example_vi": "Sự tương phản giữa lời nói và hành động của anh ấy rất rõ ràng."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "In contrast to his brother, he is very quiet.",
+          "example_vi": "Trái ngược với anh trai mình, anh ấy rất trầm tính."
+        },
+        {
+          "meaning_vi": "sự tương phản",
+          "example_en": "The contrast in their personalities is interesting.",
+          "example_vi": "Sự tương phản trong tính cách của họ rất thú vị."
+        },
+        {
+          "meaning_vi": "làm tương phản",
+          "example_en": "The white walls contrast with the dark furniture.",
+          "example_vi": "Những bức tường trắng làm tương phản với đồ nội thất tối màu."
+        },
+        {
+          "meaning_vi": "làm tương phản",
+          "example_en": "The bright lights contrast with the dark sky.",
+          "example_vi": "Ánh đèn sáng làm tương phản với bầu trời tối."
+        },
+        {
+          "meaning_vi": "làm tương phản",
+          "example_en": "The author contrasts the two main characters.",
+          "example_vi": "Tác giả làm tương phản hai nhân vật chính."
+        },
+        {
+          "meaning_vi": "làm tương phản",
+          "example_en": "The music contrasts with the peaceful scene.",
+          "example_vi": "Âm nhạc làm tương phản với khung cảnh yên bình."
+        },
+        {
+          "meaning_vi": "làm tương phản",
+          "example_en": "We can contrast these two theories.",
+          "example_vi": "Chúng ta có thể làm tương phản hai lý thuyết này."
+        },
+        {
+          "meaning_vi": "làm tương phản",
+          "example_en": "The red dress contrasts with the green background.",
+          "example_vi": "Chiếc váy đỏ làm tương phản với nền xanh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Sửa POS từ noun sang verb/noun. Giữ 2 nghĩa phổ biến nhất.",
+      "word": "contrast",
+      "normalized_word": "contrast",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "There is a sharp contrast between the two colors.",
+      "example_vi_clean": "Có một sự tương phản rõ rệt giữa hai màu sắc."
+    },
+    {
+      "id": 24848,
+      "quiz_meaning_vi": "sự kiểm soát",
+      "meaning_vi_clean": "sự kiểm soát; kiểm soát",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The government has complete control over the situation.",
+          "example_vi": "Chính phủ có sự kiểm soát hoàn toàn đối với tình hình."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "He lost control of the car on the icy road.",
+          "example_vi": "Anh ấy đã mất sự kiểm soát chiếc xe trên con đường băng giá."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "The fire is now under control.",
+          "example_vi": "Đám cháy hiện đã nằm trong sự kiểm soát."
+        },
+        {
+          "meaning_vi": "sự kiểm soát",
+          "example_en": "She has good control of her emotions.",
+          "example_vi": "Cô ấy có sự kiểm soát tốt cảm xúc của mình."
+        },
+        {
+          "meaning_vi": "kiểm soát",
+          "example_en": "You need to control your spending.",
+          "example_vi": "Bạn cần kiểm soát chi tiêu của mình."
+        },
+        {
+          "meaning_vi": "kiểm soát",
+          "example_en": "He tried to control the crowd.",
+          "example_vi": "Anh ấy đã cố gắng kiểm soát đám đông."
+        },
+        {
+          "meaning_vi": "kiểm soát",
+          "example_en": "The remote control helps you control the TV.",
+          "example_vi": "Điều khiển từ xa giúp bạn kiểm soát tivi."
+        },
+        {
+          "meaning_vi": "kiểm soát",
+          "example_en": "It is hard to control a wild animal.",
+          "example_vi": "Rất khó để kiểm soát một con vật hoang dã."
+        },
+        {
+          "meaning_vi": "kiểm soát",
+          "example_en": "She can control the speed of the machine.",
+          "example_vi": "Cô ấy có thể kiểm soát tốc độ của máy móc."
+        },
+        {
+          "meaning_vi": "kiểm soát",
+          "example_en": "We must control the spread of the disease.",
+          "example_vi": "Chúng ta phải kiểm soát sự lây lan của dịch bệnh."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 2 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "control",
+      "normalized_word": "control",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "The government has complete control over the situation.",
+      "example_vi_clean": "Chính phủ có sự kiểm soát hoàn toàn đối với tình hình."
+    },
+    {
+      "id": 24849,
+      "quiz_meaning_vi": "sự tiện lợi",
+      "meaning_vi_clean": "sự tiện lợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "Fast food is popular because of its cost and convenience.",
+          "example_vi": "Đồ ăn nhanh phổ biến vì giá cả và sự tiện lợi của nó."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "We chose this hotel for its convenience.",
+          "example_vi": "Chúng tôi chọn khách sạn này vì sự tiện lợi của nó."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "The convenience of online shopping is undeniable.",
+          "example_vi": "Sự tiện lợi của mua sắm trực tuyến là không thể phủ nhận."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "Modern appliances add to the convenience of our lives.",
+          "example_vi": "Các thiết bị hiện đại làm tăng thêm sự tiện lợi cho cuộc sống của chúng ta."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "Please call me at your convenience.",
+          "example_vi": "Vui lòng gọi cho tôi vào lúc bạn thấy sự tiện lợi nhất."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "The location of the house is a great convenience.",
+          "example_vi": "Vị trí của ngôi nhà là một sự tiện lợi lớn."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "We value the convenience of having a nearby store.",
+          "example_vi": "Chúng tôi coi trọng sự tiện lợi khi có một cửa hàng gần đó."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "The new system was designed for the convenience of users.",
+          "example_vi": "Hệ thống mới được thiết kế vì sự tiện lợi của người dùng."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "She appreciates the convenience of public transport.",
+          "example_vi": "Cô ấy đánh giá cao sự tiện lợi của phương tiện công cộng."
+        },
+        {
+          "meaning_vi": "sự tiện lợi",
+          "example_en": "Convenience is often more important than price.",
+          "example_vi": "Sự tiện lợi thường quan trọng hơn giá cả."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "convenience",
+      "normalized_word": "convenience",
+      "cefr_level": "A2",
+      "pos": "noun",
+      "pos_vi_clean": "danh từ",
+      "example_en_clean": "Fast food is popular because of its cost and convenience.",
+      "example_vi_clean": "Đồ ăn nhanh phổ biến vì giá cả và sự tiện lợi của nó."
+    },
+    {
+      "id": 24850,
+      "quiz_meaning_vi": "tiện lợi",
+      "meaning_vi_clean": "tiện lợi",
+      "examples_clean": [
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "Fast food might be convenient, but it's also very unhealthy.",
+          "example_vi": "Đồ ăn nhanh có thể tiện lợi, nhưng nó cũng rất không tốt cho sức khỏe."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "Is it convenient for you to meet tomorrow?",
+          "example_vi": "Ngày mai bạn gặp có tiện lợi không?"
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "This is a very convenient location for the office.",
+          "example_vi": "Đây là một vị trí rất tiện lợi cho văn phòng."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "Online banking is very convenient.",
+          "example_vi": "Ngân hàng trực tuyến rất tiện lợi."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "It is convenient to have a bus stop nearby.",
+          "example_vi": "Có một trạm xe buýt gần đây thật tiện lợi."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "Please choose a time that is convenient for you.",
+          "example_vi": "Vui lòng chọn một thời gian tiện lợi cho bạn."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "The new app makes shopping more convenient.",
+          "example_vi": "Ứng dụng mới làm cho việc mua sắm tiện lợi hơn."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "It is not convenient to talk right now.",
+          "example_vi": "Bây giờ không tiện lợi để nói chuyện."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "A small car is convenient for city driving.",
+          "example_vi": "Một chiếc xe nhỏ thì tiện lợi cho việc lái xe trong thành phố."
+        },
+        {
+          "meaning_vi": "tiện lợi",
+          "example_en": "We need a more convenient way to communicate.",
+          "example_vi": "Chúng ta cần một cách tiện lợi hơn để giao tiếp."
+        }
+      ],
+      "confidence": "high",
+      "review_required": false,
+      "correction_notes": "Giữ 1 nghĩa phổ biến nhất. Bổ sung đủ 10 ví dụ.",
+      "word": "convenient",
+      "normalized_word": "convenient",
+      "cefr_level": "A2",
+      "pos": "adjective",
+      "pos_vi_clean": "tính từ",
+      "example_en_clean": "Fast food might be convenient, but it's also very unhealthy.",
+      "example_vi_clean": "Đồ ăn nhanh có thể tiện lợi, nhưng nó cũng rất không tốt cho sức khỏe."
+    }
+  ]
+}
