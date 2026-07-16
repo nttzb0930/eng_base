@@ -1,6 +1,7 @@
-import { BadRequestException, Injectable } from "@nestjs/common";
+import { Injectable } from "@nestjs/common";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { authBadRequest } from "../auth-failure";
 import type { RegisterDto } from "../dto/register.dto";
 import { PasswordService } from "../service/password.service";
 
@@ -16,13 +17,15 @@ export class RegisterUserUseCase {
     const email = input.email?.trim().toLowerCase();
     const fullName = input.fullName?.trim();
     if (!username || !email || !input.password || !fullName) {
-      throw new BadRequestException("MISSING_FIELDS");
+      throw authBadRequest("MISSING_FIELDS", "missing_registration_fields");
     }
 
     const existing = await this.prisma.users.findFirst({
       where: { OR: [{ username }, { email }] },
     });
-    if (existing) throw new BadRequestException("USER_ALREADY_EXISTS");
+    if (existing) {
+      throw authBadRequest("USER_ALREADY_EXISTS", "identity_already_exists");
+    }
 
     await this.prisma.users.create({
       data: {

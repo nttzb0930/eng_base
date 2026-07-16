@@ -1,11 +1,8 @@
-import {
-  BadRequestException,
-  Injectable,
-  UnauthorizedException,
-} from "@nestjs/common";
+import { Injectable } from "@nestjs/common";
 import type { user_role } from "@prisma/client";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { authBadRequest, authUnauthorized } from "../auth-failure";
 import { toAuthUser } from "../auth-user";
 import type { LoginDto } from "../dto/login.dto";
 import { AuthTokenService } from "../service/auth-token.service";
@@ -44,9 +41,9 @@ export class LoginUserUseCase {
     const username = input.username?.trim();
     if (!username || !input.password) {
       if (requiredRole === "ADMIN") {
-        throw new UnauthorizedException("INVALID_CREDENTIALS");
+        throw authUnauthorized("INVALID_CREDENTIALS", "missing_credentials");
       }
-      throw new BadRequestException("MISSING_CREDENTIALS");
+      throw authBadRequest("MISSING_CREDENTIALS", "missing_credentials");
     }
 
     const user = await this.prisma.users.findFirst({
@@ -59,12 +56,14 @@ export class LoginUserUseCase {
         ],
       },
     });
-    if (
-      !user ||
-      (requiredRole && user.role !== requiredRole) ||
-      !(await this.passwords.verify(input.password, user.password))
-    ) {
-      throw new UnauthorizedException("INVALID_CREDENTIALS");
+    if (!user) {
+      throw authUnauthorized("INVALID_CREDENTIALS", "user_not_found");
+    }
+    if (requiredRole && user.role !== requiredRole) {
+      throw authUnauthorized("INVALID_CREDENTIALS", "role_mismatch");
+    }
+    if (!(await this.passwords.verify(input.password, user.password))) {
+      throw authUnauthorized("INVALID_CREDENTIALS", "password_mismatch");
     }
 
     if (requiredRole === "ADMIN") {

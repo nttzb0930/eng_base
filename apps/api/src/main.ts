@@ -4,7 +4,6 @@ import { ValidationPipe } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
 
 import { AppModule } from "./app.module";
-import { PrismaExceptionFilter } from "./common/filters/prisma-exception.filter";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -14,10 +13,9 @@ async function bootstrap() {
     origin: (process.env.CORS_ORIGINS ?? "http://localhost:3000,http://localhost:3001")
       .split(",")
       .map((origin) => origin.trim()),
-    exposedHeaders: ["Content-Range"],
+    exposedHeaders: ["Content-Range", "X-Request-Id"],
     credentials: true,
   });
-  app.useGlobalFilters(new PrismaExceptionFilter());
   app.useGlobalPipes(
     new ValidationPipe({
       transform: true,

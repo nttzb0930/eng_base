@@ -1,9 +1,12 @@
 import { Module } from "@nestjs/common";
-import { APP_INTERCEPTOR } from "@nestjs/core";
+import { APP_FILTER, APP_INTERCEPTOR } from "@nestjs/core";
 import { ConfigModule } from "@nestjs/config";
 
 import { AuthModule } from "./module/auth";
 import { AuthContextInterceptor } from "./common/auth-context";
+import { AllExceptionsFilter } from "./common/filters/all-exceptions.filter";
+import { HttpLoggingInterceptor } from "./common/interceptors/http-logging.interceptor";
+import { LoggingModule } from "./common/logging";
 import { jwtConfig, validateEnvironment } from "./config";
 
 import { UserModule } from "./module/user/user.module";
@@ -29,6 +32,7 @@ import { HealthModule } from "./module/health";
       load: [jwtConfig],
     }),
     PrismaModule,
+    LoggingModule,
     AuthModule,
     UserModule,
     SettingsModule,
@@ -46,7 +50,15 @@ import { HealthModule } from "./module/health";
   providers: [
     {
       provide: APP_INTERCEPTOR,
+      useClass: HttpLoggingInterceptor,
+    },
+    {
+      provide: APP_INTERCEPTOR,
       useClass: AuthContextInterceptor,
+    },
+    {
+      provide: APP_FILTER,
+      useClass: AllExceptionsFilter,
     },
   ],
 })

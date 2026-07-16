@@ -124,3 +124,31 @@ test("register, refresh and logout use cases preserve session persistence", asyn
   );
   assert.equal(fake.currentUser()?.refresh_token, null);
 });
+
+test("Auth failures keep public codes while carrying safe internal reasons", async () => {
+  const missingUser = new LoginUserUseCase(
+    createPrismaFake().prisma,
+    tokens,
+    passwords
+  );
+  await assert.rejects(
+    () => missingUser.execute({ username: "missing", password: "secret" }),
+    (error: unknown) =>
+      error instanceof Error &&
+      error.message === "INVALID_CREDENTIALS" &&
+      error.cause instanceof Error &&
+      error.cause.message === "user_not_found"
+  );
+
+  await assert.rejects(
+    () =>
+      new RefreshTokenUseCase(createPrismaFake().prisma, tokens).execute(
+        undefined
+      ),
+    (error: unknown) =>
+      error instanceof Error &&
+      error.message === "REFRESH_TOKEN_INVALID" &&
+      error.cause instanceof Error &&
+      error.cause.message === "refresh_token_missing"
+  );
+});

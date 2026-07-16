@@ -66,6 +66,9 @@ feature refactor.
   `scripts/support/script-prisma.ts`.
 - Other capabilities import Vocabulary through `src/module/vocabulary`; its
   public types, mappers, and builders are owned there.
+- HTTP failures are logged once by the common exception filter. Do not add
+  duplicate use-case error logs or log passwords, tokens, cookies, sessions,
+  secrets, or authorization headers.
 - Nest request DTOs and Prisma mappers stay in `apps/api`; Prisma models never
   cross the HTTP boundary.
 - Introduce repository seams only when there are real interchangeable adapters.

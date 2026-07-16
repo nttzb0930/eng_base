@@ -27,6 +27,8 @@ Auth use-case organization is recorded in
 Admin delivery, Course Management roles, Vocabulary ownership, and the script
 Prisma Adapter are recorded in
 [ADR 0016](adr/0016-domain-owner-locality.md).
+Centralized HTTP logging, redaction, and exception mapping are recorded in
+[ADR 0017](adr/0017-centralized-http-logging.md).
 
 Reference documents:
 

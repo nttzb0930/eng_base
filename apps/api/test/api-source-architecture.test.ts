@@ -31,6 +31,19 @@ test("API infrastructure follows the EC source profile", () => {
   assert.ok(existsSync(join(apiRoot, "scripts/support/script-prisma.ts")));
   assert.ok(existsSync(join(sourceRoot, "module/auth/index.ts")));
   assert.ok(existsSync(join(sourceRoot, "module/health/health.module.ts")));
+  assert.ok(existsSync(join(sourceRoot, "common/logging/logging.module.ts")));
+  assert.ok(
+    existsSync(join(sourceRoot, "common/filters/all-exceptions.filter.ts"))
+  );
+  assert.ok(
+    existsSync(
+      join(sourceRoot, "common/interceptors/http-logging.interceptor.ts")
+    )
+  );
+  assert.equal(
+    existsSync(join(sourceRoot, "common/filters/prisma-exception.filter.ts")),
+    false
+  );
 });
 
 test("Prisma has one generated client Interface", () => {

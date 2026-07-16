@@ -10,7 +10,10 @@ folders are named by a concrete runtime responsibility.
 apps/api/src/
   common/
     decorators/                 reusable Nest delivery decorators
-    filters/                    cross-capability exception mapping
+    filters/                    centralized exception mapping/logging
+    http/                       request metadata
+    interceptors/               request lifecycle delivery
+    logging/                    structured logger and redaction
   config/
     index.ts                    configuration Interface
     env.validation.ts           startup environment validation
@@ -63,6 +66,12 @@ second Course owner.
 Admin delivery for User, Practice, Settings, and Courses stays inside those
 owners. A generic `module/admin` is forbidden. Vocabulary owns its public types,
 mappers, builders, and grouped tests; callers use its root Interface.
+
+HTTP observability is cross-capability infrastructure. The logging interceptor
+owns request IDs and successful-request timing; the exception filter owns error
+classification and logs each failure once. Capability use cases provide stable
+public error codes and may attach safe internal reasons, but must never log
+passwords, access/refresh tokens, cookies, or authorization headers.
 
 ## Module depth
 
