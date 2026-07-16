@@ -45,6 +45,8 @@ model challenge_progress {
   challenge_id Int
   completed    Boolean    @default(false)
   challenges   challenges @relation(fields: [challenge_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "challenge_progress_challenge_id_challenges_id_fk")
+
+  @@unique([user_id, challenge_id], map: "challenge_progress_user_challenge_idx")
 }
 
 model challenges {

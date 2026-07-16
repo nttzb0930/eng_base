@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
@@ -48,20 +48,13 @@ test("Auth Module separates behavior from delivery infrastructure", () => {
 });
 
 test("Actor identity is delivered explicitly and ambient auth is forbidden", () => {
-  const sources = [
-    "module/courses/courses.service.ts",
-    "module/dashboard/dashboard.service.ts",
-    "module/flashcards/flashcards.service.ts",
-    "module/placement-test/placement-test.service.ts",
-    "module/practice/practice.service.ts",
-    "module/progress/progress.service.ts",
-    "module/review/review.service.ts",
-    "module/topics/topics.service.ts",
-    "module/vocabulary/vocabulary.service.ts",
-  ];
+  const moduleRoot = join(sourceRoot, "module");
+  const sources = readdirSync(moduleRoot, { recursive: true })
+    .map(String)
+    .filter((file) => file.endsWith(".ts"));
 
   for (const file of sources) {
-    const source = readFileSync(join(sourceRoot, file), "utf8");
+    const source = readFileSync(join(moduleRoot, file), "utf8");
     assert.doesNotMatch(source, /auth-context|\bauth\s*\(\s*\)/, file);
   }
 

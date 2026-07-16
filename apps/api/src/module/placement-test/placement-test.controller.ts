@@ -1,65 +1,40 @@
-import { Controller, Get, Post, Body, UseGuards } from "@nestjs/common";
-import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
+
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
-import { PlacementTestService } from "./placement-test.service";
-import { IsNumber, IsString, IsArray, IsOptional } from "class-validator";
-
-export class SubmitAnswerDto {
-  @IsNumber()
-  challengeId!: number;
-
-  @IsNumber()
-  selectedOptionId!: number;
-}
-
-export class ConfirmLevelDto {
-  @IsString()
-  level!: string;
-
-  @IsArray()
-  @IsString({ each: true })
-  @IsOptional()
-  languages?: string[];
-
-  @IsString()
-  @IsOptional()
-  primaryLanguage?: string;
-
-  @IsArray()
-  @IsString({ each: true })
-  @IsOptional()
-  goals?: string[];
-
-  @IsString()
-  @IsOptional()
-  intensity?: string;
-
-  @IsString()
-  @IsOptional()
-  customGoal?: string;
-}
-
-export class UpdateOnboardingDto {
-  @IsNumber()
-  step!: number;
-
-  @IsOptional()
-  data?: any;
-}
+import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import {
+  ConfirmPlacementLevelDto,
+  SubmitPlacementAnswerDto,
+  UpdateOnboardingDto,
+} from "./dto/placement-test.dto";
+import { ConfirmPlacementLevelUseCase } from "./use-cases/confirm-placement-level.use-case";
+import { GetNextPlacementQuestionUseCase } from "./use-cases/get-next-placement-question.use-case";
+import { ResetPlacementTestUseCase } from "./use-cases/reset-placement-test.use-case";
+import { SubmitPlacementAnswerUseCase } from "./use-cases/submit-placement-answer.use-case";
+import { UpdateOnboardingStateUseCase } from "./use-cases/update-onboarding-state.use-case";
 
 @Controller("placement-test")
 @UseGuards(UserJwtGuard)
 export class PlacementTestController {
-  constructor(private readonly placementTestService: PlacementTestService) {}
+  constructor(
+    private readonly getNextQuestion: GetNextPlacementQuestionUseCase,
+    private readonly submitPlacementAnswer: SubmitPlacementAnswerUseCase,
+    private readonly confirmPlacementLevel: ConfirmPlacementLevelUseCase,
+    private readonly updateOnboardingState: UpdateOnboardingStateUseCase,
+    private readonly resetPlacementTest: ResetPlacementTestUseCase
+  ) {}
 
   @Get("question")
-  getNextQuestion(@CurrentUserId() userId: string) {
-    return this.placementTestService.getNextQuestion(userId);
+  question(@CurrentUserId() userId: string) {
+    return this.getNextQuestion.execute(userId);
   }
 
   @Post("answer")
-  submitAnswer(@CurrentUserId() userId: string, @Body() body: SubmitAnswerDto) {
-    return this.placementTestService.submitAnswer(
+  answer(
+    @CurrentUserId() userId: string,
+    @Body() body: SubmitPlacementAnswerDto
+  ) {
+    return this.submitPlacementAnswer.execute(
       userId,
       body.challengeId,
       body.selectedOptionId
@@ -67,32 +42,23 @@ export class PlacementTestController {
   }
 
   @Post("confirm")
-  confirmLevel(@CurrentUserId() userId: string, @Body() body: ConfirmLevelDto) {
-    return this.placementTestService.confirmLevel(
-      userId,
-      body.level,
-      body.languages,
-      body.goals,
-      body.intensity,
-      body.primaryLanguage,
-      body.customGoal
-    );
+  confirm(
+    @CurrentUserId() userId: string,
+    @Body() body: ConfirmPlacementLevelDto
+  ) {
+    return this.confirmPlacementLevel.execute(userId, body);
   }
 
   @Post("reset")
-  resetTest(@CurrentUserId() userId: string) {
-    return this.placementTestService.resetTest(userId);
+  reset(@CurrentUserId() userId: string) {
+    return this.resetPlacementTest.execute(userId);
   }
 
   @Post("onboarding")
-  updateOnboarding(
+  onboarding(
     @CurrentUserId() userId: string,
     @Body() body: UpdateOnboardingDto
   ) {
-    return this.placementTestService.updateOnboardingState(
-      userId,
-      body.step,
-      body.data
-    );
+    return this.updateOnboardingState.execute(userId, body.step, body.data);
   }
 }
