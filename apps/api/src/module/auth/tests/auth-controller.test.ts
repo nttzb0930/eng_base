@@ -7,6 +7,7 @@ import { METHOD_METADATA, PATH_METADATA } from "@nestjs/common/constants";
 
 import { AdminAuthController } from "../admin-auth.controller";
 import { AuthController } from "../auth.controller";
+import { AUTH_RATE_LIMIT_POLICY } from "../../../common/decorators/auth-rate-limit.decorator";
 
 function routesOf(controller: new (...arguments_: never[]) => unknown) {
   const root = Reflect.getMetadata(PATH_METADATA, controller) as string;
@@ -36,4 +37,32 @@ test("Auth delivery preserves learner and admin route Interfaces", () => {
     "POST /auth/register",
   ]);
   assert.deepEqual(routesOf(AdminAuthController), ["POST /admin/auth/login"]);
+});
+
+test("Auth delivery declares endpoint-specific rate-limit policies", () => {
+  assert.equal(
+    Reflect.getMetadata(AUTH_RATE_LIMIT_POLICY, AuthController.prototype.login),
+    "login"
+  );
+  assert.equal(
+    Reflect.getMetadata(
+      AUTH_RATE_LIMIT_POLICY,
+      AdminAuthController.prototype.login
+    ),
+    "login"
+  );
+  assert.equal(
+    Reflect.getMetadata(
+      AUTH_RATE_LIMIT_POLICY,
+      AuthController.prototype.register
+    ),
+    "register"
+  );
+  assert.equal(
+    Reflect.getMetadata(
+      AUTH_RATE_LIMIT_POLICY,
+      AuthController.prototype.refresh
+    ),
+    "refresh"
+  );
 });

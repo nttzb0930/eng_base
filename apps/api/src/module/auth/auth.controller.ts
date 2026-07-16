@@ -1,6 +1,7 @@
 import { Body, Controller, Headers, Post, Req, Res } from "@nestjs/common";
 import type { Request, Response } from "express";
 
+import { AuthRateLimit } from "../../common/decorators/auth-rate-limit.decorator";
 import { LoginDto } from "./dto/login.dto";
 import { RegisterDto } from "./dto/register.dto";
 import { AuthTokenService } from "./service/auth-token.service";
@@ -20,6 +21,7 @@ export class AuthController {
   ) {}
 
   @Post("login")
+  @AuthRateLimit("login")
   async login(
     @Body() body: LoginDto,
     @Res({ passthrough: true }) response: Response
@@ -31,11 +33,13 @@ export class AuthController {
   }
 
   @Post("register")
+  @AuthRateLimit("register")
   register(@Body() body: RegisterDto) {
     return this.registerUser.execute(body);
   }
 
   @Post("refresh")
+  @AuthRateLimit("refresh")
   async refresh(
     @Req() request: Request,
     @Res({ passthrough: true }) response: Response

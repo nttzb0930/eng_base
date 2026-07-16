@@ -37,6 +37,9 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
   guards and request identity extraction are delivery infrastructure under
   `common`. Actor identity is passed explicitly into behavior; ambient request
   context is forbidden.
+- Authentication rate limiting is HTTP delivery infrastructure under `common`.
+  Auth controllers declare policies; Auth use cases never learn IP, request, or
+  throttler storage details.
 - Shared packages must not import from applications.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
 - `packages/shared` is a transitional aggregator. New contracts use capability subpaths rather than expanding the legacy root barrel; the package name remains unchanged under ADR 0011.

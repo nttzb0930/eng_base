@@ -32,6 +32,15 @@ test("API infrastructure follows the EC source profile", () => {
   assert.ok(existsSync(join(sourceRoot, "module/auth/index.ts")));
   assert.ok(existsSync(join(sourceRoot, "module/health/health.module.ts")));
   assert.ok(existsSync(join(sourceRoot, "common/logging/logging.module.ts")));
+  assert.ok(existsSync(join(sourceRoot, "config/rate-limit.config.ts")));
+  assert.ok(
+    existsSync(
+      join(sourceRoot, "common/guards/application-throttler.guard.ts")
+    )
+  );
+  assert.ok(
+    existsSync(join(sourceRoot, "common/rate-limit/rate-limit.options.ts"))
+  );
   assert.ok(
     existsSync(join(sourceRoot, "common/filters/all-exceptions.filter.ts"))
   );

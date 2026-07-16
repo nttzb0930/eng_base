@@ -19,6 +19,16 @@ const ApiEnvironmentSchema = z
       .trim()
       .min(1)
       .default("http://localhost:3000,http://localhost:3001"),
+    RATE_LIMIT_TTL: z.coerce.number().int().positive().default(60),
+    RATE_LIMIT_MAX: z.coerce.number().int().positive().default(100),
+    AUTH_LOGIN_IP_LIMIT: z.coerce.number().int().positive().default(10),
+    AUTH_LOGIN_IDENTITY_LIMIT: z.coerce.number().int().positive().default(5),
+    AUTH_LOGIN_TTL: z.coerce.number().int().positive().default(60),
+    AUTH_REGISTER_IP_LIMIT: z.coerce.number().int().positive().default(5),
+    AUTH_REGISTER_TTL: z.coerce.number().int().positive().default(3600),
+    AUTH_REFRESH_IP_LIMIT: z.coerce.number().int().positive().default(30),
+    AUTH_REFRESH_SESSION_LIMIT: z.coerce.number().int().positive().default(10),
+    AUTH_REFRESH_TTL: z.coerce.number().int().positive().default(60),
   })
   .refine(
     (configuration) =>
