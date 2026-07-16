@@ -11,7 +11,6 @@ import {
 import type { Response } from "express";
 
 import { AdminJwtGuard } from "../../../common/guards/admin-jwt.guard";
-import { AdminController } from "../../admin/admin.controller";
 import type { FilterParseResult } from "../../../common/decorators/filter-parse.decorator";
 import { CourseManagementController } from "./course-management.controller";
 import type { CourseManagementService } from "./course-management.service";
@@ -93,30 +92,6 @@ test("controller owns the exact 25 existing admin course-management routes", () 
     "PUT /admin/lessons/:id",
     "PUT /admin/units/:id",
   ]);
-});
-
-test("legacy AdminController no longer owns course-management routes", () => {
-  const courseManagementRoots = new Set([
-    "courses",
-    "units",
-    "lessons",
-    "challenges",
-    "challengeOptions",
-  ]);
-  const legacyPaths = Object.getOwnPropertyNames(AdminController.prototype)
-    .flatMap((property) => {
-      const handler = Object.getOwnPropertyDescriptor(
-        AdminController.prototype,
-        property
-      )?.value as unknown;
-      if (typeof handler !== "function") return [];
-      const path = Reflect.getMetadata(PATH_METADATA, handler) as
-        string | undefined;
-      return path === undefined ? [] : [path];
-    })
-    .filter((path) => courseManagementRoots.has(path.split("/")[0] ?? ""));
-
-  assert.deepEqual(legacyPaths, []);
 });
 
 test("non-paged lists preserve Content-Range and omit pagination arguments", async () => {

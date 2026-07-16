@@ -6,7 +6,8 @@ import { AuthModule } from "./module/auth";
 import { AuthContextInterceptor } from "./common/auth-context";
 import { jwtConfig, validateEnvironment } from "./config";
 
-import { AdminModule } from "./module/admin/admin.module";
+import { UserModule } from "./module/user/user.module";
+import { SettingsModule } from "./module/settings/settings.module";
 import { DashboardModule } from "./module/dashboard/dashboard.module";
 import { CoursesModule } from "./module/courses";
 import { FlashcardsModule } from "./module/flashcards/flashcards.module";
@@ -29,7 +30,8 @@ import { HealthModule } from "./module/health";
     }),
     PrismaModule,
     AuthModule,
-    AdminModule,
+    UserModule,
+    SettingsModule,
     DashboardModule,
     CoursesModule,
     FlashcardsModule,

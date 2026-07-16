@@ -64,28 +64,11 @@ export default tseslint.config(
     },
   },
   {
-    files: ["src/module/admin/**/*.ts"],
-    rules: {
-      "no-restricted-syntax": [
-        "error",
-        {
-          selector:
-            "MemberExpression[object.type='MemberExpression'][object.property.name='prisma'][property.name=/^(courses|units|lessons|challenges|challenge_options)$/]",
-          message: "Course-content persistence is owned by the Courses module.",
-        },
-      ],
-    },
-  },
-  {
     // Exact legacy allowlist. New files must keep no-explicit-any enabled.
     // Remove individual entries as these call sites gain typed interfaces.
     files: [
       "scripts/export-vocab.ts",
       "scripts/seed.ts",
-      "src/module/admin/admin-auth.controller.ts",
-      "src/module/admin/admin-mappers.ts",
-      "src/module/admin/admin.controller.ts",
-      "src/module/admin/admin.service.ts",
       "src/module/placement-test/placement-test.controller.ts",
       "src/module/placement-test/placement-test.service.ts",
       "src/common/decorators/filter-parse.decorator.ts",
