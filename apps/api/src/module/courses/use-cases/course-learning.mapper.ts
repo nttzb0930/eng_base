@@ -1,13 +1,16 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import type {
-  CourseDto,
-  CourseLessonDto,
-  CourseUnitDto,
-  LessonChallengeDirection,
-  LessonChallengeOptionDto,
-  LessonChallengeType,
-} from "@repo/shared/courses";
+  Challenge,
+  ChallengeProgress,
+  Course,
+  CourseLesson,
+  CourseUnit,
+  LessonChallengeOption,
+  LessonWithChallenges,
+  UnitWithLessons,
+  UserProgress,
+} from "@repo/shared";
 import type {
   challenge_options as challenge_optionsModel,
   challenge_progress as challenge_progressModel,
@@ -27,62 +30,6 @@ import type {
   VocabularyExample,
   VocabularyItem,
 } from "../../vocabulary";
-
-export type Course = CourseDto;
-
-export type UnitRecord = CourseUnitDto;
-
-export type LessonRecord = CourseLessonDto;
-
-export type ChallengeOption = LessonChallengeOptionDto;
-
-export type ChallengeProgress = {
-  id: number;
-  userId: string;
-  challengeId: number;
-  completed: boolean;
-};
-
-export type Challenge = {
-  id: number;
-  lessonId: number;
-  vocabularyItemId: number | null;
-  type: LessonChallengeType;
-  direction: LessonChallengeDirection | null;
-  question: string;
-  order: number;
-  challengeOptions: ChallengeOption[];
-  challengeProgress: ChallengeProgress[];
-  vocabularyItem: VocabularyItem | null;
-};
-
-export type LessonWithChallenges = LessonRecord & {
-  challenges: Challenge[];
-};
-
-export type LessonWithCompletion = LessonRecord & {
-  completed: boolean;
-};
-
-export type LessonWithUnit = LessonRecord & {
-  unit: UnitRecord;
-};
-
-export type UnitWithLessons = UnitRecord & {
-  lessons: LessonWithCompletion[];
-};
-
-export type UserProgress = {
-  userId: string;
-  userName: string;
-  userImageSrc: string;
-  activeCourseId: number | null;
-  hearts: number;
-  points: number;
-  activeCourse: Course | null;
-  isPlacementTestConfirmed: boolean;
-  primaryLanguage: string;
-};
 
 export type RawVocabularyItem = vocabulary_itemsModel & {
   user_saved_words?: user_saved_wordsModel[];
@@ -121,7 +68,7 @@ export class CourseLearningMapper {
     };
   }
 
-  protected mapUnitRecord(unit: unitsModel): UnitRecord {
+  protected mapUnitRecord(unit: unitsModel): CourseUnit {
     return {
       id: unit.id,
       title: unit.title,
@@ -131,7 +78,7 @@ export class CourseLearningMapper {
     };
   }
 
-  protected mapLessonRecord(lesson: lessonsModel): LessonRecord {
+  protected mapLessonRecord(lesson: lessonsModel): CourseLesson {
     return {
       id: lesson.id,
       title: lesson.title,
@@ -235,7 +182,7 @@ export class CourseLearningMapper {
 
   protected mapChallengeOption(
     option: challenge_optionsModel
-  ): ChallengeOption {
+  ): LessonChallengeOption {
     return {
       id: option.id,
       challengeId: option.challenge_id,

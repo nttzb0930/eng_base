@@ -1,5 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import type {
+  Course,
+  CourseLesson,
+  CourseUnit,
+  LessonChallenge,
+  LessonChallengeOption,
+} from "@repo/shared";
 
 import {
   mapChallenge,
@@ -20,15 +27,27 @@ import {
 } from "../mappers/course-content.mapper";
 
 test("persistence mappers expose the existing camelCase course-management contract", () => {
+  const expectedCourse = {
+    id: 1,
+    title: "English",
+    imageSrc: "/english.svg",
+  } satisfies Course;
   assert.deepEqual(
     mapCourse({
       id: 1,
       title: "English",
       image_src: "/english.svg",
     } as Parameters<typeof mapCourse>[0]),
-    { id: 1, title: "English", imageSrc: "/english.svg" }
+    expectedCourse
   );
 
+  const expectedUnit = {
+    id: 2,
+    title: "Basics",
+    description: "Start here",
+    courseId: 1,
+    order: 3,
+  } satisfies CourseUnit;
   assert.deepEqual(
     mapUnit({
       id: 2,
@@ -37,15 +56,15 @@ test("persistence mappers expose the existing camelCase course-management contra
       course_id: 1,
       order: 3,
     } as Parameters<typeof mapUnit>[0]),
-    {
-      id: 2,
-      title: "Basics",
-      description: "Start here",
-      courseId: 1,
-      order: 3,
-    }
+    expectedUnit
   );
 
+  const expectedLesson = {
+    id: 4,
+    title: "Greetings",
+    unitId: 2,
+    order: 5,
+  } satisfies CourseLesson;
   assert.deepEqual(
     mapLesson({
       id: 4,
@@ -53,9 +72,18 @@ test("persistence mappers expose the existing camelCase course-management contra
       unit_id: 2,
       order: 5,
     } as Parameters<typeof mapLesson>[0]),
-    { id: 4, title: "Greetings", unitId: 2, order: 5 }
+    expectedLesson
   );
 
+  const expectedChallenge = {
+    id: 6,
+    lessonId: 4,
+    type: "SELECT",
+    question: "Hello?",
+    order: 7,
+    vocabularyItemId: null,
+    direction: "EN_TO_VI",
+  } satisfies LessonChallenge;
   assert.deepEqual(
     mapChallenge({
       id: 6,
@@ -66,17 +94,17 @@ test("persistence mappers expose the existing camelCase course-management contra
       vocabulary_item_id: null,
       direction: "EN_TO_VI",
     } as Parameters<typeof mapChallenge>[0]),
-    {
-      id: 6,
-      lessonId: 4,
-      type: "SELECT",
-      question: "Hello?",
-      order: 7,
-      vocabularyItemId: null,
-      direction: "EN_TO_VI",
-    }
+    expectedChallenge
   );
 
+  const expectedOption = {
+    id: 8,
+    challengeId: 6,
+    text: "Hello",
+    correct: true,
+    imageSrc: null,
+    audioSrc: "/hello.mp3",
+  } satisfies LessonChallengeOption;
   assert.deepEqual(
     mapChallengeOption({
       id: 8,
@@ -86,14 +114,7 @@ test("persistence mappers expose the existing camelCase course-management contra
       image_src: null,
       audio_src: "/hello.mp3",
     } as Parameters<typeof mapChallengeOption>[0]),
-    {
-      id: 8,
-      challengeId: 6,
-      text: "Hello",
-      correct: true,
-      imageSrc: null,
-      audioSrc: "/hello.mp3",
-    }
+    expectedOption
   );
 });
 

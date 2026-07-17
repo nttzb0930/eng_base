@@ -1,10 +1,10 @@
 import type {
-  CourseDto,
-  CourseLessonDto,
-  CourseUnitDto,
-  LessonChallengeDto,
-  LessonChallengeOptionDto,
-} from "@repo/shared/courses";
+  Course,
+  CourseLesson,
+  CourseUnit,
+  LessonChallenge,
+  LessonChallengeOption,
+} from "@repo/shared";
 
 import type {
   challenge_options as challenge_optionsModel,
@@ -26,13 +26,13 @@ import type {
   UnitUpdateDto,
 } from "../dto/course-content-management.dto";
 
-export const mapCourse = (course: coursesModel): CourseDto => ({
+export const mapCourse = (course: coursesModel): Course => ({
   id: course.id,
   title: course.title,
   imageSrc: course.image_src,
 });
 
-export const mapUnit = (unit: unitsModel): CourseUnitDto => ({
+export const mapUnit = (unit: unitsModel): CourseUnit => ({
   id: unit.id,
   title: unit.title,
   description: unit.description,
@@ -40,7 +40,7 @@ export const mapUnit = (unit: unitsModel): CourseUnitDto => ({
   order: unit.order,
 });
 
-export const mapLesson = (lesson: lessonsModel): CourseLessonDto => ({
+export const mapLesson = (lesson: lessonsModel): CourseLesson => ({
   id: lesson.id,
   title: lesson.title,
   unitId: lesson.unit_id,
@@ -49,7 +49,7 @@ export const mapLesson = (lesson: lessonsModel): CourseLessonDto => ({
 
 export const mapChallenge = (
   challenge: challengesModel
-): LessonChallengeDto => ({
+): LessonChallenge => ({
   id: challenge.id,
   lessonId: challenge.lesson_id,
   type: challenge.type,
@@ -61,7 +61,7 @@ export const mapChallenge = (
 
 export const mapChallengeOption = (
   option: challenge_optionsModel
-): LessonChallengeOptionDto => ({
+): LessonChallengeOption => ({
   id: option.id,
   challengeId: option.challenge_id,
   text: option.text,

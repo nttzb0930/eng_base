@@ -1,10 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import {
-  CourseLearningMapper,
-  type LessonWithChallenges,
-  type UnitRecord,
-} from "./course-learning.mapper";
+import { CourseLearningMapper } from "./course-learning.mapper";
+import type { CourseUnit, LessonWithChallenges } from "@repo/shared";
 import { GetUserProgressUseCase } from "./get-user-progress.use-case";
 
 @Injectable()
@@ -44,7 +41,7 @@ export class GetCourseProgressUseCase extends CourseLearningMapper {
 
     const firstUncompletedLesson = unitsInActiveCourse
       .flatMap((unit) => unit.lessons)
-      .map((lesson): LessonWithChallenges & { unit: UnitRecord } => ({
+      .map((lesson): LessonWithChallenges & { unit: CourseUnit } => ({
         ...this.mapLessonWithChallenges(lesson),
         unit: this.mapUnitRecord(lesson.units),
       }))

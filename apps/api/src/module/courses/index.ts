@@ -5,14 +5,16 @@ export { GetLessonPercentageUseCase } from "./use-cases/get-lesson-percentage.us
 export { GetUserProgressUseCase } from "./use-cases/get-user-progress.use-case";
 export type {
   Challenge,
-  ChallengeOption,
   ChallengeProgress,
   Course,
-  LessonRecord,
   LessonWithChallenges,
   LessonWithCompletion,
   LessonWithUnit,
-  UnitRecord,
   UnitWithLessons,
   UserProgress,
-} from "./use-cases/course-learning.mapper";
+} from "@repo/shared";
+export type {
+  LessonChallengeOption as ChallengeOption,
+  CourseLesson as LessonRecord,
+  CourseUnit as UnitRecord,
+} from "@repo/shared";

@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
@@ -76,4 +76,16 @@ test("Vocabulary owns its types, mappers, builders and tests", () => {
     existsSync(join(vocabularyRoot, "vocabulary-item.mapper.ts")),
     false
   );
+});
+
+test("Course producers use the EC shared root interface", () => {
+  for (const file of [
+    "module/courses/dto/course-content-management.dto.ts",
+    "module/courses/mappers/course-content.mapper.ts",
+    "module/courses/use-cases/course-learning.mapper.ts",
+  ]) {
+    const source = readFileSync(join(sourceRoot, file), "utf8");
+    assert.equal(source.includes("@repo/shared/courses"), false, file);
+    assert.equal(source.includes("CourseDto"), false, file);
+  }
 });

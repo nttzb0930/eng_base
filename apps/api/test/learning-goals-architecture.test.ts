@@ -217,7 +217,7 @@ test("Goal use cases own behavior instead of forwarding through hidden aggregate
   }
 });
 
-test("Application consumers use shared capability subpath Interfaces", () => {
+test("Application consumers avoid private Shared deep imports", () => {
   const repositoryRoot = join(import.meta.dirname, "../../..");
   for (const relativeRoot of [
     "apps/api/src",
@@ -234,7 +234,7 @@ test("Application consumers use shared capability subpath Interfaces", () => {
       const source = readFileSync(join(root, file), "utf8");
       assert.doesNotMatch(
         source,
-        /from ["']@repo\/shared["']/,
+        /@repo\/shared\/(?:src|dist)\//,
         `${relativeRoot}/${file}`
       );
     }

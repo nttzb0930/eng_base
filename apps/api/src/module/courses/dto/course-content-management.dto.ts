@@ -9,19 +9,19 @@ import {
 import {
   LESSON_CHALLENGE_DIRECTIONS,
   LESSON_CHALLENGE_TYPES,
-  type CreateCourseLessonRequest,
-  type CreateCourseRequest,
-  type CreateCourseUnitRequest,
-  type CreateLessonChallengeOptionRequest,
-  type CreateLessonChallengeRequest,
+  type CreateCourseLessonPayload,
+  type CreateCoursePayload,
+  type CreateCourseUnitPayload,
+  type CreateLessonChallengeOptionPayload,
+  type CreateLessonChallengePayload,
   type LessonChallengeDirection,
   type LessonChallengeType,
-  type UpdateCourseLessonRequest,
-  type UpdateCourseRequest,
-  type UpdateCourseUnitRequest,
-  type UpdateLessonChallengeOptionRequest,
-  type UpdateLessonChallengeRequest,
-} from "@repo/shared/courses";
+  type UpdateCourseLessonPayload,
+  type UpdateCoursePayload,
+  type UpdateCourseUnitPayload,
+  type UpdateLessonChallengeOptionPayload,
+  type UpdateLessonChallengePayload,
+} from "@repo/shared";
 
 const CHALLENGE_TYPE_ENUM = Object.fromEntries(
   LESSON_CHALLENGE_TYPES.map((value) => [value, value])
@@ -31,7 +31,7 @@ const CHALLENGE_DIRECTION_ENUM = Object.fromEntries(
   LESSON_CHALLENGE_DIRECTIONS.map((value) => [value, value])
 ) as Record<LessonChallengeDirection, LessonChallengeDirection>;
 
-export class CourseCreateDto implements CreateCourseRequest {
+export class CourseCreateDto implements CreateCoursePayload {
   @IsString()
   @IsNotEmpty()
   title!: string;
@@ -41,7 +41,7 @@ export class CourseCreateDto implements CreateCourseRequest {
   imageSrc!: string;
 }
 
-export class CourseUpdateDto implements UpdateCourseRequest {
+export class CourseUpdateDto implements UpdateCoursePayload {
   @IsString()
   @IsOptional()
   title?: string;
@@ -51,7 +51,7 @@ export class CourseUpdateDto implements UpdateCourseRequest {
   imageSrc?: string;
 }
 
-export class UnitCreateDto implements CreateCourseUnitRequest {
+export class UnitCreateDto implements CreateCourseUnitPayload {
   @IsString()
   @IsNotEmpty()
   title!: string;
@@ -69,7 +69,7 @@ export class UnitCreateDto implements CreateCourseUnitRequest {
   order!: number;
 }
 
-export class UnitUpdateDto implements UpdateCourseUnitRequest {
+export class UnitUpdateDto implements UpdateCourseUnitPayload {
   @IsString()
   @IsOptional()
   title?: string;
@@ -87,7 +87,7 @@ export class UnitUpdateDto implements UpdateCourseUnitRequest {
   order?: number;
 }
 
-export class LessonCreateDto implements CreateCourseLessonRequest {
+export class LessonCreateDto implements CreateCourseLessonPayload {
   @IsString()
   @IsNotEmpty()
   title!: string;
@@ -101,7 +101,7 @@ export class LessonCreateDto implements CreateCourseLessonRequest {
   order!: number;
 }
 
-export class LessonUpdateDto implements UpdateCourseLessonRequest {
+export class LessonUpdateDto implements UpdateCourseLessonPayload {
   @IsString()
   @IsOptional()
   title?: string;
@@ -115,7 +115,7 @@ export class LessonUpdateDto implements UpdateCourseLessonRequest {
   order?: number;
 }
 
-export class ChallengeCreateDto implements CreateLessonChallengeRequest {
+export class ChallengeCreateDto implements CreateLessonChallengePayload {
   @IsNumber()
   @IsNotEmpty()
   lessonId!: number;
@@ -141,7 +141,7 @@ export class ChallengeCreateDto implements CreateLessonChallengeRequest {
   direction?: LessonChallengeDirection | null;
 }
 
-export class ChallengeUpdateDto implements UpdateLessonChallengeRequest {
+export class ChallengeUpdateDto implements UpdateLessonChallengePayload {
   @IsNumber()
   @IsOptional()
   lessonId?: number;
@@ -167,7 +167,7 @@ export class ChallengeUpdateDto implements UpdateLessonChallengeRequest {
   direction?: LessonChallengeDirection | null;
 }
 
-export class ChallengeOptionCreateDto implements CreateLessonChallengeOptionRequest {
+export class ChallengeOptionCreateDto implements CreateLessonChallengeOptionPayload {
   @IsNumber()
   @IsNotEmpty()
   challengeId!: number;
@@ -189,7 +189,7 @@ export class ChallengeOptionCreateDto implements CreateLessonChallengeOptionRequ
   audioSrc?: string | null;
 }
 
-export class ChallengeOptionUpdateDto implements UpdateLessonChallengeOptionRequest {
+export class ChallengeOptionUpdateDto implements UpdateLessonChallengeOptionPayload {
   @IsNumber()
   @IsOptional()
   challengeId?: number;

@@ -11,7 +11,7 @@ import {
   UseGuards,
 } from "@nestjs/common";
 import type { Response } from "express";
-import { LessonChallengeTypeSchema } from "@repo/shared/courses";
+import { LESSON_CHALLENGE_TYPES } from "@repo/shared";
 import { z } from "zod";
 
 import { FilterParse } from "../../common/decorators/filter-parse.decorator";
@@ -56,7 +56,7 @@ export class AdminChallengesController {
           .string()
           .transform((value) => parseInt(value) || undefined)
           .optional(),
-        type: LessonChallengeTypeSchema.optional(),
+        type: z.enum(LESSON_CHALLENGE_TYPES).optional(),
       }),
     })
     query: AdminListFilter
