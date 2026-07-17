@@ -171,14 +171,15 @@ test("course resource separates paged and raw-list capabilities", async () => {
   );
 });
 
-test("resource modules reject persistence-shaped responses", async () => {
-  const { http } = createHttpStub({
-    id: 7,
-    title: "English",
-    image_src: "/en.svg",
-  });
+test("course resource returns its typed wire response unchanged", async () => {
+  const course = { id: 7, title: "English", imageSrc: "/en.svg" };
+  const { http } = createHttpStub(course);
 
-  await assert.rejects(() =>
-    createCourseApi(http).create({ title: "English", imageSrc: "/en.svg" })
+  assert.deepEqual(
+    await createCourseApi(http).create({
+      title: "English",
+      imageSrc: "/en.svg",
+    }),
+    course
   );
 });

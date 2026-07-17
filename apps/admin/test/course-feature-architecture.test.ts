@@ -56,6 +56,16 @@ test("course transport is split into resource api modules", () => {
   );
 });
 
+test("course resources use TypeScript-only shared types", () => {
+  const apiRoot = join(appRoot, "app/features/courses/api");
+  for (const file of resourceFiles) {
+    const source = readFileSync(join(apiRoot, file), "utf8");
+    assert.equal(source.includes("@repo/shared/courses"), false, file);
+    assert.equal(source.includes('from "zod"'), false, file);
+    assert.equal(source.includes(".parse("), false, file);
+  }
+});
+
 test("course management no longer uses the rejected src feature profile", () => {
   assert.deepEqual(filesUnder(join(appRoot, "src/features/courses")), []);
   assert.equal(

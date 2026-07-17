@@ -1,13 +1,13 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type {
-  CourseManagementPageQuery,
-  CreateCourseLessonRequest,
-  UpdateCourseLessonRequest,
-} from "@repo/shared/courses";
+  CourseLessonQueryParams,
+  CreateCourseLessonPayload,
+  UpdateCourseLessonPayload,
+} from "@repo/shared";
 
 import { lessonApi, lessonKeys } from "../api/lesson.api";
 
-export function useLessons(query: CourseManagementPageQuery) {
+export function useLessons(query: CourseLessonQueryParams) {
   return useQuery({
     queryKey: lessonKeys.list(query),
     queryFn: () => lessonApi.listPage(query),
@@ -25,7 +25,7 @@ export function useAllLessons() {
 export function useCreateLesson() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: CreateCourseLessonRequest) => lessonApi.create(body),
+    mutationFn: (body: CreateCourseLessonPayload) => lessonApi.create(body),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: lessonKeys.all });
     },
@@ -35,7 +35,7 @@ export function useCreateLesson() {
 export function useUpdateLesson(id: number | null) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: UpdateCourseLessonRequest) =>
+    mutationFn: (body: UpdateCourseLessonPayload) =>
       lessonApi.update(id ?? 0, body),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: lessonKeys.all });

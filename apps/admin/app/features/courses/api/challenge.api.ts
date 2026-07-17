@@ -1,11 +1,10 @@
 import {
-  LessonChallengeDtoSchema,
-  PaginatedLessonChallengesDtoSchema,
-  type CourseManagementPageQuery,
-  type CreateLessonChallengeRequest,
-  type UpdateLessonChallengeRequest,
-} from "@repo/shared/courses";
-import { z } from "zod";
+  type CreateLessonChallengePayload,
+  type LessonChallenge,
+  type LessonChallengeQueryParams,
+  type PaginatedLessonChallengesResponse,
+  type UpdateLessonChallengePayload,
+} from "@repo/shared";
 
 import { adminHttpClient } from "@/src/services/http/admin-http-client";
 import {
@@ -16,37 +15,34 @@ import {
 
 export const challengeKeys = {
   all: ["challenges"] as const,
-  list: (query: CourseManagementPageQuery) =>
+  list: (query: LessonChallengeQueryParams) =>
     [...challengeKeys.all, "list", query] as const,
   allList: () => [...challengeKeys.all, "all"] as const,
 };
 
 export function createChallengeApi(http: CourseManagementHttp) {
   return {
-    async listPage(query: CourseManagementPageQuery) {
-      const response = await http.get<unknown>("/admin/challenges", {
-        params: { ...query },
-      });
-      return response.data === undefined
-        ? emptyCourseManagementPage
-        : PaginatedLessonChallengesDtoSchema.parse(response.data);
+    async listPage(query: LessonChallengeQueryParams) {
+      const response = await http.get<PaginatedLessonChallengesResponse>(
+        "/admin/challenges",
+        {
+          params: { ...query },
+        }
+      );
+      return response.data ?? emptyCourseManagementPage;
     },
     async listAll() {
-      const response = await http.get<unknown>("/admin/challenges");
-      return response.data === undefined
-        ? []
-        : z.array(LessonChallengeDtoSchema).parse(response.data);
+      const response = await http.get<LessonChallenge[]>("/admin/challenges");
+      return response.data ?? [];
     },
-    async create(body: CreateLessonChallengeRequest) {
+    async create(body: CreateLessonChallengePayload) {
       return requireCourseManagementData(
-        await http.post<unknown>("/admin/challenges", body),
-        LessonChallengeDtoSchema
+        await http.post<LessonChallenge>("/admin/challenges", body)
       );
     },
-    async update(id: number, body: UpdateLessonChallengeRequest) {
+    async update(id: number, body: UpdateLessonChallengePayload) {
       return requireCourseManagementData(
-        await http.put<unknown>(`/admin/challenges/${id}`, body),
-        LessonChallengeDtoSchema
+        await http.put<LessonChallenge>(`/admin/challenges/${id}`, body)
       );
     },
     async remove(id: number) {

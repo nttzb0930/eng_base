@@ -1,13 +1,13 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type {
-  CourseManagementPageQuery,
-  CreateLessonChallengeRequest,
-  UpdateLessonChallengeRequest,
-} from "@repo/shared/courses";
+  CreateLessonChallengePayload,
+  LessonChallengeQueryParams,
+  UpdateLessonChallengePayload,
+} from "@repo/shared";
 
 import { challengeApi, challengeKeys } from "../api/challenge.api";
 
-export function useChallenges(query: CourseManagementPageQuery) {
+export function useChallenges(query: LessonChallengeQueryParams) {
   return useQuery({
     queryKey: challengeKeys.list(query),
     queryFn: () => challengeApi.listPage(query),
@@ -25,7 +25,7 @@ export function useAllChallenges() {
 export function useCreateChallenge() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: CreateLessonChallengeRequest) =>
+    mutationFn: (body: CreateLessonChallengePayload) =>
       challengeApi.create(body),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: challengeKeys.all });
@@ -36,7 +36,7 @@ export function useCreateChallenge() {
 export function useUpdateChallenge(id: number | null) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: UpdateLessonChallengeRequest) =>
+    mutationFn: (body: UpdateLessonChallengePayload) =>
       challengeApi.update(id ?? 0, body),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: challengeKeys.all });

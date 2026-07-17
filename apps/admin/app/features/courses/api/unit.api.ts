@@ -1,11 +1,10 @@
 import {
-  CourseUnitDtoSchema,
-  PaginatedCourseUnitsDtoSchema,
-  type CourseManagementPageQuery,
-  type CreateCourseUnitRequest,
-  type UpdateCourseUnitRequest,
-} from "@repo/shared/courses";
-import { z } from "zod";
+  type CourseUnit,
+  type CourseUnitQueryParams,
+  type CreateCourseUnitPayload,
+  type PaginatedCourseUnitsResponse,
+  type UpdateCourseUnitPayload,
+} from "@repo/shared";
 
 import { adminHttpClient } from "@/src/services/http/admin-http-client";
 import {
@@ -16,37 +15,34 @@ import {
 
 export const unitKeys = {
   all: ["units"] as const,
-  list: (query: CourseManagementPageQuery) =>
+  list: (query: CourseUnitQueryParams) =>
     [...unitKeys.all, "list", query] as const,
   allList: () => [...unitKeys.all, "all"] as const,
 };
 
 export function createUnitApi(http: CourseManagementHttp) {
   return {
-    async listPage(query: CourseManagementPageQuery) {
-      const response = await http.get<unknown>("/admin/units", {
-        params: { ...query },
-      });
-      return response.data === undefined
-        ? emptyCourseManagementPage
-        : PaginatedCourseUnitsDtoSchema.parse(response.data);
+    async listPage(query: CourseUnitQueryParams) {
+      const response = await http.get<PaginatedCourseUnitsResponse>(
+        "/admin/units",
+        {
+          params: { ...query },
+        }
+      );
+      return response.data ?? emptyCourseManagementPage;
     },
     async listAll() {
-      const response = await http.get<unknown>("/admin/units");
-      return response.data === undefined
-        ? []
-        : z.array(CourseUnitDtoSchema).parse(response.data);
+      const response = await http.get<CourseUnit[]>("/admin/units");
+      return response.data ?? [];
     },
-    async create(body: CreateCourseUnitRequest) {
+    async create(body: CreateCourseUnitPayload) {
       return requireCourseManagementData(
-        await http.post<unknown>("/admin/units", body),
-        CourseUnitDtoSchema
+        await http.post<CourseUnit>("/admin/units", body)
       );
     },
-    async update(id: number, body: UpdateCourseUnitRequest) {
+    async update(id: number, body: UpdateCourseUnitPayload) {
       return requireCourseManagementData(
-        await http.put<unknown>(`/admin/units/${id}`, body),
-        CourseUnitDtoSchema
+        await http.put<CourseUnit>(`/admin/units/${id}`, body)
       );
     },
     async remove(id: number) {

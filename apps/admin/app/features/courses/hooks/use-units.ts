@@ -1,13 +1,13 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type {
-  CourseManagementPageQuery,
-  CreateCourseUnitRequest,
-  UpdateCourseUnitRequest,
-} from "@repo/shared/courses";
+  CourseUnitQueryParams,
+  CreateCourseUnitPayload,
+  UpdateCourseUnitPayload,
+} from "@repo/shared";
 
 import { unitApi, unitKeys } from "../api/unit.api";
 
-export function useUnits(query: CourseManagementPageQuery) {
+export function useUnits(query: CourseUnitQueryParams) {
   return useQuery({
     queryKey: unitKeys.list(query),
     queryFn: () => unitApi.listPage(query),
@@ -25,7 +25,7 @@ export function useAllUnits() {
 export function useCreateUnit() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: CreateCourseUnitRequest) => unitApi.create(body),
+    mutationFn: (body: CreateCourseUnitPayload) => unitApi.create(body),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: unitKeys.all });
     },
@@ -35,7 +35,7 @@ export function useCreateUnit() {
 export function useUpdateUnit(id: number | null) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: UpdateCourseUnitRequest) =>
+    mutationFn: (body: UpdateCourseUnitPayload) =>
       unitApi.update(id ?? 0, body),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: unitKeys.all });

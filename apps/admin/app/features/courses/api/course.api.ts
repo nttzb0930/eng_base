@@ -1,11 +1,10 @@
 import {
-  CourseDtoSchema,
-  PaginatedCoursesDtoSchema,
-  type CourseManagementPageQuery,
-  type CreateCourseRequest,
-  type UpdateCourseRequest,
-} from "@repo/shared/courses";
-import { z } from "zod";
+  type Course,
+  type CourseQueryParams,
+  type CreateCoursePayload,
+  type PaginatedCoursesResponse,
+  type UpdateCoursePayload,
+} from "@repo/shared";
 
 import { adminHttpClient } from "@/src/services/http/admin-http-client";
 import {
@@ -16,37 +15,34 @@ import {
 
 export const courseKeys = {
   all: ["courses"] as const,
-  list: (query: CourseManagementPageQuery) =>
+  list: (query: CourseQueryParams) =>
     [...courseKeys.all, "list", query] as const,
   allList: () => [...courseKeys.all, "all"] as const,
 };
 
 export function createCourseApi(http: CourseManagementHttp) {
   return {
-    async listPage(query: CourseManagementPageQuery) {
-      const response = await http.get<unknown>("/admin/courses", {
-        params: { ...query },
-      });
-      return response.data === undefined
-        ? emptyCourseManagementPage
-        : PaginatedCoursesDtoSchema.parse(response.data);
+    async listPage(query: CourseQueryParams) {
+      const response = await http.get<PaginatedCoursesResponse>(
+        "/admin/courses",
+        {
+          params: { ...query },
+        }
+      );
+      return response.data ?? emptyCourseManagementPage;
     },
     async listAll() {
-      const response = await http.get<unknown>("/admin/courses");
-      return response.data === undefined
-        ? []
-        : z.array(CourseDtoSchema).parse(response.data);
+      const response = await http.get<Course[]>("/admin/courses");
+      return response.data ?? [];
     },
-    async create(body: CreateCourseRequest) {
+    async create(body: CreateCoursePayload) {
       return requireCourseManagementData(
-        await http.post<unknown>("/admin/courses", body),
-        CourseDtoSchema
+        await http.post<Course>("/admin/courses", body)
       );
     },
-    async update(id: number, body: UpdateCourseRequest) {
+    async update(id: number, body: UpdateCoursePayload) {
       return requireCourseManagementData(
-        await http.put<unknown>(`/admin/courses/${id}`, body),
-        CourseDtoSchema
+        await http.put<Course>(`/admin/courses/${id}`, body)
       );
     },
     async remove(id: number) {

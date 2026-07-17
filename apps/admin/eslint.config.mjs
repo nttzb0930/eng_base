@@ -2,14 +2,6 @@ import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
 import nextTypescript from "eslint-config-next/typescript";
 import prettier from "eslint-config-prettier";
 
-const courseContractPaths = [
-  {
-    name: "@repo/shared",
-    importNames: ["Course", "UnitRecord", "LessonRecord", "ChallengeOption"],
-    message: "Import Course contracts from @repo/shared/courses.",
-  },
-];
-
 const privateSharedPatterns = [
   {
     group: [
@@ -34,7 +26,6 @@ const eslintConfig = [
       "no-restricted-imports": [
         "error",
         {
-          paths: courseContractPaths,
           patterns: privateSharedPatterns,
         },
       ],
@@ -46,7 +37,6 @@ const eslintConfig = [
       "no-restricted-imports": [
         "error",
         {
-          paths: courseContractPaths,
           patterns: [
             ...privateSharedPatterns,
             {

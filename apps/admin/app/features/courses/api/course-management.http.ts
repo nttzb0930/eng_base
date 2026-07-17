@@ -1,5 +1,3 @@
-import { z } from "zod";
-
 import type { ApiEnvelope } from "@/src/lib/http-client";
 
 export type CourseManagementHttp = {
@@ -24,13 +22,10 @@ export const emptyCourseManagementPage = {
   },
 };
 
-export function requireCourseManagementData<T>(
-  response: ApiEnvelope<unknown>,
-  schema: z.ZodType<T>
-): T {
+export function requireCourseManagementData<T>(response: ApiEnvelope<T>): T {
   if (response.data === undefined) {
     throw new Error("Course management response did not contain data");
   }
 
-  return schema.parse(response.data);
+  return response.data;
 }

@@ -1,16 +1,16 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type {
-  CourseManagementPageQuery,
-  CreateLessonChallengeOptionRequest,
-  UpdateLessonChallengeOptionRequest,
-} from "@repo/shared/courses";
+  CreateLessonChallengeOptionPayload,
+  LessonChallengeOptionQueryParams,
+  UpdateLessonChallengeOptionPayload,
+} from "@repo/shared";
 
 import {
   challengeOptionApi,
   challengeOptionKeys,
 } from "../api/challenge-option.api";
 
-export function useChallengeOptions(query: CourseManagementPageQuery) {
+export function useChallengeOptions(query: LessonChallengeOptionQueryParams) {
   return useQuery({
     queryKey: challengeOptionKeys.list(query),
     queryFn: () => challengeOptionApi.listPage(query),
@@ -20,7 +20,7 @@ export function useChallengeOptions(query: CourseManagementPageQuery) {
 export function useCreateChallengeOption() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: CreateLessonChallengeOptionRequest) =>
+    mutationFn: (body: CreateLessonChallengeOptionPayload) =>
       challengeOptionApi.create(body),
     onSuccess: () => {
       void queryClient.invalidateQueries({
@@ -33,7 +33,7 @@ export function useCreateChallengeOption() {
 export function useUpdateChallengeOption(id: number | null) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (body: UpdateLessonChallengeOptionRequest) =>
+    mutationFn: (body: UpdateLessonChallengeOptionPayload) =>
       challengeOptionApi.update(id ?? 0, body),
     onSuccess: () => {
       void queryClient.invalidateQueries({

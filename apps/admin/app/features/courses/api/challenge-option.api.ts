@@ -1,10 +1,10 @@
 import {
-  LessonChallengeOptionDtoSchema,
-  PaginatedLessonChallengeOptionsDtoSchema,
-  type CourseManagementPageQuery,
-  type CreateLessonChallengeOptionRequest,
-  type UpdateLessonChallengeOptionRequest,
-} from "@repo/shared/courses";
+  type CreateLessonChallengeOptionPayload,
+  type LessonChallengeOption,
+  type LessonChallengeOptionQueryParams,
+  type PaginatedLessonChallengeOptionsResponse,
+  type UpdateLessonChallengeOptionPayload,
+} from "@repo/shared";
 
 import { adminHttpClient } from "@/src/services/http/admin-http-client";
 import {
@@ -15,30 +15,30 @@ import {
 
 export const challengeOptionKeys = {
   all: ["challenge-options"] as const,
-  list: (query: CourseManagementPageQuery) =>
+  list: (query: LessonChallengeOptionQueryParams) =>
     [...challengeOptionKeys.all, "list", query] as const,
 };
 
 export function createChallengeOptionApi(http: CourseManagementHttp) {
   return {
-    async listPage(query: CourseManagementPageQuery) {
-      const response = await http.get<unknown>("/admin/challengeOptions", {
-        params: { ...query },
-      });
-      return response.data === undefined
-        ? emptyCourseManagementPage
-        : PaginatedLessonChallengeOptionsDtoSchema.parse(response.data);
+    async listPage(query: LessonChallengeOptionQueryParams) {
+      const response = await http.get<PaginatedLessonChallengeOptionsResponse>(
+        "/admin/challengeOptions",
+        { params: { ...query } }
+      );
+      return response.data ?? emptyCourseManagementPage;
     },
-    async create(body: CreateLessonChallengeOptionRequest) {
+    async create(body: CreateLessonChallengeOptionPayload) {
       return requireCourseManagementData(
-        await http.post<unknown>("/admin/challengeOptions", body),
-        LessonChallengeOptionDtoSchema
+        await http.post<LessonChallengeOption>("/admin/challengeOptions", body)
       );
     },
-    async update(id: number, body: UpdateLessonChallengeOptionRequest) {
+    async update(id: number, body: UpdateLessonChallengeOptionPayload) {
       return requireCourseManagementData(
-        await http.put<unknown>(`/admin/challengeOptions/${id}`, body),
-        LessonChallengeOptionDtoSchema
+        await http.put<LessonChallengeOption>(
+          `/admin/challengeOptions/${id}`,
+          body
+        )
       );
     },
     async remove(id: number) {

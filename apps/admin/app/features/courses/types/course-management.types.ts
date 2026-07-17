@@ -1,25 +1,25 @@
 import type {
-  CourseDto,
-  CourseLessonDto,
-  CourseUnitDto,
-  LessonChallengeDto,
-  LessonChallengeOptionDto,
-} from "@repo/shared/courses";
+  Course,
+  CourseLesson,
+  CourseUnit,
+  LessonChallenge,
+  LessonChallengeOption,
+} from "@repo/shared";
 
-export type CourseViewModel = CourseDto;
+export type CourseViewModel = Course;
 
-export type CourseUnitViewModel = CourseUnitDto & {
-  courses?: Pick<CourseDto, "id" | "title">;
+export type CourseUnitViewModel = CourseUnit & {
+  courses?: Pick<Course, "id" | "title">;
 };
 
-export type CourseLessonViewModel = CourseLessonDto & {
-  units?: Pick<CourseUnitDto, "id" | "title">;
+export type CourseLessonViewModel = CourseLesson & {
+  units?: Pick<CourseUnit, "id" | "title">;
 };
 
-export type LessonChallengeViewModel = LessonChallengeDto & {
-  lessons?: Pick<CourseLessonDto, "id" | "title">;
+export type LessonChallengeViewModel = LessonChallenge & {
+  lessons?: Pick<CourseLesson, "id" | "title">;
 };
 
-export type LessonChallengeOptionViewModel = LessonChallengeOptionDto & {
-  challenges?: Pick<LessonChallengeDto, "id" | "question">;
+export type LessonChallengeOptionViewModel = LessonChallengeOption & {
+  challenges?: Pick<LessonChallenge, "id" | "question">;
 };
