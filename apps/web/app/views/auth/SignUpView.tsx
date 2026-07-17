@@ -5,14 +5,18 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { withLocale } from "@/app/i18n/paths";
 import { toast } from "sonner";
 import { Loader2, Mail, Lock, User } from "lucide-react";
 import Image from "next/image";
-import { authService } from "@/src/services/auth/auth.service";
 
-export default function SignUpPage() {
+export function SignUpView() {
   const router = useRouter();
   const t = useTranslations("auth");
+  const locale = useCurrentLocale();
+  const { register } = useAuth();
   const [username, setUsername] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,10 +32,10 @@ export default function SignUpPage() {
 
     setLoading(true);
     try {
-      await authService.register({ username, email, password, fullName });
+      await register({ username, email, password, fullName });
 
       toast.success(t("signUpSuccess"));
-      router.push("/sign-in");
+      router.push(withLocale("/sign-in", locale));
     } catch (error) {
       if (error instanceof Error && error.message === "USER_ALREADY_EXISTS") {
         toast.error(t("userExistsError"));

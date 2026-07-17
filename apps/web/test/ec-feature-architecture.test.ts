@@ -25,3 +25,26 @@ test("Web shared presentation and i18n live under app", () => {
     assert.equal(existsSync(join(root, path)), false, `${path} must be removed`);
   }
 });
+
+test("Web Auth follows the EC client feature profile", () => {
+  for (const path of [
+    "app/features/auth/api/auth.api.ts",
+    "app/features/auth/hooks/use-auth.ts",
+    "app/features/auth/store/auth-session.store.ts",
+    "app/features/auth/types/auth.types.ts",
+    "app/providers.tsx",
+    "app/views/auth/SignInView.tsx",
+    "app/views/auth/SignUpView.tsx",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+
+  for (const path of [
+    "src/services/auth",
+    "src/stores/auth-session.store.ts",
+    "src/providers.tsx",
+    "src/views/auth",
+  ]) {
+    assert.equal(existsSync(join(root, path)), false, `${path} must be removed`);
+  }
+});

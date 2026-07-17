@@ -10,7 +10,7 @@ import { cn } from "@/app/utils/cn";
 import { SidebarItem } from "./SidebarItem";
 import { Avatar, AvatarFallback } from "@/app/components/ui/avatar";
 import { Button } from "@/app/components/ui/button";
-import { useAuth } from "@/src/providers";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
 
 type SidebarProps = {
   className?: string;

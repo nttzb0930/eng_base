@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, LogOut } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
-import { useAuth } from "@/src/providers";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
 import { useTranslations } from "next-intl";
 import {
   Dialog,

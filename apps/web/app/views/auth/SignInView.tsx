@@ -5,14 +5,17 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { withLocale } from "@/app/i18n/paths";
 import { toast } from "sonner";
 import { Loader2, Mail, Lock } from "lucide-react";
 import Image from "next/image";
-import { useAuth } from "@/src/providers";
 
-export default function SignInPage() {
+export function SignInView() {
   const router = useRouter();
   const t = useTranslations("auth");
+  const locale = useCurrentLocale();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -30,7 +33,7 @@ export default function SignInPage() {
       await login({ username, password });
 
       toast.success(t("signInSuccess"));
-      router.push("/placement-test");
+      router.push(withLocale("/placement-test", locale));
     } catch (error) {
       toast.error(error instanceof Error ? error.message : t("signInFailedError"));
     } finally {

@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
 import { withLocale } from "@/app/i18n/paths";
-import { useAuth } from "@/src/providers";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
 
 export default function MarketingPage() {
   const t = useTranslations("marketing");

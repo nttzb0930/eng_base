@@ -1,12 +1,4 @@
-export type AuthUser = {
-  id: string;
-  username: string;
-  email: string;
-  role: string;
-  fullName: string;
-};
-
-type AuthSession = { accessToken: string | null; user: AuthUser | null };
+import type { AuthSession } from "../types/auth.types";
 
 let session: AuthSession = { accessToken: null, user: null };
 const listeners = new Set<() => void>();

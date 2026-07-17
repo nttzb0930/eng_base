@@ -1,5 +1,5 @@
 import axios, { AxiosError, type InternalAxiosRequestConfig } from "axios";
-import { clearAuthSession, getAuthSession, setAccessToken } from "@/src/stores/auth-session.store";
+import { clearAuthSession, getAuthSession, setAccessToken } from "@/app/features/auth/store/auth-session.store";
 
 type RetryableConfig = InternalAxiosRequestConfig & { _authRetry?: boolean };
 const baseURL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";

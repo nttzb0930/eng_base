@@ -12,7 +12,7 @@ import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
 import { Avatar, AvatarFallback } from "@/app/components/ui/avatar";
-import { useAuth } from "@/src/providers";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
 
 type HeaderProps = {
   className?: string;

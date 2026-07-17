@@ -4,7 +4,7 @@ import { getLocale, getMessages } from "next-intl/server";
 
 import { Toaster } from "@/app/components/ui/sonner";
 import { siteConfig } from "@/app/config";
-import { Providers } from "@/src/providers";
+import { Providers } from "@/app/providers";
 
 import "./globals.css";
 
