@@ -25,7 +25,7 @@ export function SettingsView() {
         if (val) {
           setMaxHearts(val);
         }
-      } catch (error) {
+      } catch {
         toast.error("Không thể tải cấu hình từ máy chủ");
       }
     }

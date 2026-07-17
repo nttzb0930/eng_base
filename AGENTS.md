@@ -26,6 +26,9 @@ feature refactor.
 - Do not add new domain code to the legacy `src/views`, `src/services`,
   `src/types`, or `src/constants` buckets. `app/views` is an intentional EC
   composition layer, not that legacy technical bucket.
+- In Admin, `src/services/http` is the retained transport exception. Auth,
+  Courses, Practice, Settings, and Users behavior belongs under `app/features`
+  and their screens belong under `app/views`.
 - Cross-cutting infrastructure may remain in clearly framework-owned locations,
   for example `src/lib` and the existing `src/services/http` adapter.
 

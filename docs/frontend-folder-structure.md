@@ -10,21 +10,32 @@ uses the EC profile accepted in ADR 0013.
 apps/admin/
   app/
     (dashboard)/<resource>/page.tsx
+    components/
+      data-table/
+      feedback/
+      ui/
     features/<capability>/
       api/<resource>.api.ts
       hooks/use-<resources>.ts
       types/
       tests/
     views/<resource>/<Resource>View.tsx
+    hooks/
+    utils/
+    providers.tsx
   src/
-    components/                 legacy/shared application UI
-    services/http/              cross-cutting HTTP transport
+    services/http/              retained cross-cutting HTTP transport
 ```
 
-`app/features/courses` owns Course Management behavior. `app/views` is the EC
-screen-composition layer and does not transfer domain ownership away from
-Courses. The old `src/views` and domain `src/services` paths remain migration
-sources, not templates for touched capabilities.
+`app/features/courses`, `auth`, `users`, `practice`, and `settings` demonstrate
+the migrated profile. `app/views` is the EC screen-composition layer and does
+not transfer domain ownership away from the feature owner. Shared presentation
+primitives live under `app/components`, `app/hooks`, `app/utils`, and
+`app/providers.tsx`. The only retained Admin `src` exception is the existing
+`src/services/http` transport.
+
+Do not add new Admin domain code to `src/views` or `src/services/<capability>`.
+Those paths are migration history, not valid templates.
 
 ## Placement rules
 

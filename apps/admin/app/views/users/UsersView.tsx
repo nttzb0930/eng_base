@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Plus, Edit2, Trash2, Loader2, ShieldAlert, UserCheck } from "lucide-react";
 import { toast } from "sonner";
 
@@ -23,11 +23,11 @@ export function UsersView() {
   const users = usersQuery.data?.data ?? [];
   const pagination = usersQuery.data?.pagination;
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = useCallback(async (id: string) => {
     if (!confirm("Bạn có chắc chắn muốn xóa người dùng này?")) return;
     try { await deleteUserMutation.mutateAsync(id); toast.success("Xóa người dùng thành công"); }
     catch (e) { toast.error(e instanceof Error ? e.message : "Thao tác thất bại"); }
-  };
+  }, [deleteUserMutation]);
 
   const [isOpen, setIsOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);

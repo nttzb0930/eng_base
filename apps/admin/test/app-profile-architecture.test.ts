@@ -111,3 +111,28 @@ test("Admin Settings follows the EC feature and view profile", () => {
   assert.equal(routeSource.includes("@/app/views/settings/SettingsView"), true);
   assert.equal(routeSource.includes("@/src/views/settings"), false);
 });
+
+test("Admin has no legacy capability implementation or imports", () => {
+  for (const path of [
+    "src/services/auth",
+    "src/services/users",
+    "src/services/practice-sessions",
+    "src/services/settings",
+    "src/views/login",
+    "src/views/users",
+    "src/views/practice-sessions",
+    "src/views/settings",
+  ]) {
+    assert.deepEqual(filesUnder(join(root, path)), [], `${path} must be empty`);
+  }
+
+  const appSources = filesUnder(join(root, "app")).filter((file) => /\.(ts|tsx)$/.test(file));
+  for (const file of appSources) {
+    const source = readFileSync(file, "utf8");
+    assert.equal(source.includes("@/src/views/"), false, `${file} imports legacy View code`);
+    assert.equal(source.includes("@/src/services/auth"), false, `${file} imports legacy Auth`);
+    assert.equal(source.includes("@/src/services/users"), false, `${file} imports legacy Users`);
+    assert.equal(source.includes("@/src/services/practice-sessions"), false, `${file} imports legacy Practice`);
+    assert.equal(source.includes("@/src/services/settings"), false, `${file} imports legacy Settings`);
+  }
+});

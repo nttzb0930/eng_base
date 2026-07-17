@@ -23,7 +23,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/app/components/ui/table";
-import { ArrowDown, ArrowUp, Loader2 } from "lucide-react";
+import { ArrowDown, ArrowUp } from "lucide-react";
 import * as React from "react";
 
 export interface Column<T> {
