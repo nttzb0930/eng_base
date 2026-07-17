@@ -6,7 +6,7 @@ import { Challenge } from "@/src/views/lesson/challenge";
 import { Footer } from "@/src/views/lesson/footer";
 import { Header } from "@/src/views/lesson/header";
 import { QuestionBubble } from "@/src/views/lesson/question-bubble";
-import { useLocalizedChallengeQuestion } from "@/src/lib/i18n/use-localized-challenge-question";
+import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 
 import { useQuiz, type QuizChallenge } from "./hooks/useQuiz";
 import LessonCompleteView from "./LessonCompleteView";

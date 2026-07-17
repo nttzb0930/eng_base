@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
-import { cn } from "@/src/lib/utils";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
 
 type SidebarItemProps = {
   label: string;

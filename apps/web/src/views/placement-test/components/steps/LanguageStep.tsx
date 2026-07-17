@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Globe, Sparkles } from "lucide-react";
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/app/utils/cn";
 import { motion, AnimatePresence } from "framer-motion";
 
 type LanguageOption = {

@@ -1,7 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 
-import { withLocale } from "@/src/lib/i18n/paths";
-import { isLocale } from "@/src/lib/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
+import { isLocale } from "@/app/i18n/config";
 
 type LocalePageProps = {
   params: Promise<{

@@ -5,8 +5,8 @@ import { forwardRef, type ComponentProps } from "react";
 import NextLink from "next/link";
 import { useLocale } from "next-intl";
 
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
-import { shouldSkipLocalePrefix, withLocale } from "@/src/lib/i18n/paths";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { shouldSkipLocalePrefix, withLocale } from "@/app/i18n/paths";
 
 type LocalizedLinkProps = Omit<ComponentProps<typeof NextLink>, "href"> & {
   href: string;

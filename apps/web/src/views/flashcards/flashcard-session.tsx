@@ -13,7 +13,7 @@ import { Volume2 } from "lucide-react";
 import { animated, useSpring } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import Image from "next/image";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Confetti from "react-confetti";
@@ -22,11 +22,11 @@ import { toast } from "sonner";
 
 import { recordFlashcardRating } from "@/src/services/vocabulary/flashcard-progress.service";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import type { PracticeResultItem } from "@/src/views/practice/practice-result";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
-import { cn } from "@/src/lib/utils";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
 import type { VocabularyItem } from "@/src/modules/learning/queries";
 import type { FlashcardRating } from "@/src/modules/vocabulary/progress";
 

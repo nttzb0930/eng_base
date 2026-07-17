@@ -2,10 +2,10 @@ import Image from "next/image";
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { Avatar, AvatarImage } from "@/src/components/ui/avatar";
-import { Separator } from "@/src/components/ui/separator";
-import { getLocalizedPath } from "@/src/lib/i18n/server";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { Avatar, AvatarImage } from "@/app/components/ui/avatar";
+import { Separator } from "@/app/components/ui/separator";
+import { getLocalizedPath } from "@/app/i18n/server";
 import {
   getTopTenUsers,
   getUserProgress,

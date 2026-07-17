@@ -1,4 +1,4 @@
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import {
@@ -17,12 +17,12 @@ import {
   Target,
 } from "lucide-react";
 
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { Button } from "@/src/components/ui/button";
-import { Progress } from "@/src/components/ui/progress";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { getLocalizedPath } from "@/src/lib/i18n/server";
-import { cn } from "@/src/lib/utils";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { Button } from "@/app/components/ui/button";
+import { Progress } from "@/app/components/ui/progress";
+import { withLocale } from "@/app/i18n/paths";
+import { getLocalizedPath } from "@/app/i18n/server";
+import { cn } from "@/app/utils/cn";
 import { getDashboardStats } from "@/src/modules/dashboard/queries";
 import { getUserProgress } from "@/src/modules/learning/queries";
 import { getDailyReviewSummary } from "@/src/modules/review/daily-review";

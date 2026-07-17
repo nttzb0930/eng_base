@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import {
   Dialog,
   DialogContent,
@@ -14,7 +14,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/src/components/ui/dialog";
+} from "@/app/components/ui/dialog";
 import { useExitModal } from "@/src/stores/use-exit-modal";
 
 export const ExitModal = () => {

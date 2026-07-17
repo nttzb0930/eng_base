@@ -1,4 +1,4 @@
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/app/utils/cn";
 
 type SkeletonProps = React.HTMLAttributes<HTMLDivElement>;
 

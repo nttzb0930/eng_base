@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 
 type PracticeSessionShellProps = {
   children: React.ReactNode;

@@ -14,11 +14,11 @@ import { redirect } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import { AuthRedirector } from "@/src/components/auth-redirector";
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { cn } from "@/src/lib/utils";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
+import { cn } from "@/app/utils/cn";
 import { getUserProgress } from "@/src/modules/learning/queries";
 import { getDictationPracticeLevelSummary } from "@/src/modules/practice/dictation-session";
 import {

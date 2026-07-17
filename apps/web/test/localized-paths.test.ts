@@ -4,7 +4,7 @@ import test from "node:test";
 import {
   shouldSkipLocalePrefix,
   withLocale,
-} from "../src/lib/i18n/paths";
+} from "../app/i18n/paths";
 
 test("withLocale prefixes learner paths and preserves query strings", () => {
   assert.equal(withLocale("/practice?mode=listening", "en"), "/en/practice?mode=listening");

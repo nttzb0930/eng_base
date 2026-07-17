@@ -2,12 +2,12 @@ import type { PropsWithChildren } from "react";
 import { redirect } from "next/navigation";
 import { getLocale } from "next-intl/server";
 
-import { withLocale } from "@/src/lib/i18n/paths";
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
 import { getUserProgress } from "@/src/modules/learning/queries";
-import { MobileHeader } from "@/src/components/mobile-header";
-import { Header } from "@/src/components/header";
-import { ScrollToTopButton } from "@/src/components/scroll-to-top-button";
+import { MobileHeader } from "@/app/components/navigation/MobileHeader";
+import { Header } from "@/app/components/navigation/Header";
+import { ScrollToTopButton } from "@/app/components/navigation/ScrollToTopButton";
 
 const MainLayout = async ({ children }: PropsWithChildren) => {
   const currentLocale = await getLocale();

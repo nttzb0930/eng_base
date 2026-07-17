@@ -1,1 +1,1 @@
-export { LeaderboardPageSkeleton as default } from "@/src/components/route-skeletons";
+export { LeaderboardPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";

@@ -1,4 +1,4 @@
-import { SessionPageSkeleton } from "@/src/components/route-skeletons";
+import { SessionPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 
 export default function Loading() {
   return <SessionPageSkeleton embedded />;

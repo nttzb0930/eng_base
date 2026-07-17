@@ -1,5 +1,5 @@
 import type { Challenge as ChallengeType, ChallengeOption } from "@/src/modules/learning/queries";
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/app/utils/cn";
 
 import { Card } from "./card";
 

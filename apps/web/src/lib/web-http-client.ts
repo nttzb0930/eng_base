@@ -3,6 +3,7 @@ import { clearAuthSession, getAuthSession, setAccessToken } from "@/src/stores/a
 
 type RetryableConfig = InternalAxiosRequestConfig & { _authRetry?: boolean };
 const baseURL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/;
 
 export const webHttpClient = axios.create({
   baseURL,
@@ -16,6 +17,17 @@ let onUnauthenticated: (() => void) | null = null;
 
 export function setOnUnauthenticated(callback: () => void) {
   onUnauthenticated = callback;
+}
+
+export function reviveApiDates(value: unknown): unknown {
+  if (typeof value === "string" && ISO_DATE.test(value)) return new Date(value);
+  if (Array.isArray(value)) return value.map(reviveApiDates);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, reviveApiDates(item)]),
+    );
+  }
+  return value;
 }
 
 async function refreshAccessToken() {
@@ -40,7 +52,10 @@ webHttpClient.interceptors.request.use((config) => {
 });
 
 webHttpClient.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    response.data = reviveApiDates(response.data);
+    return response;
+  },
   async (error: AxiosError) => {
     const config = error.config as RetryableConfig | undefined;
     const authRoute = config?.url?.includes("/auth/login") ||

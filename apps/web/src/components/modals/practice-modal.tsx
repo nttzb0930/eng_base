@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/src/components/ui/dialog";
+} from "@/app/components/ui/dialog";
 import { usePracticeModal } from "@/src/stores/use-practice-modal";
 
 export const PracticeModal = () => {

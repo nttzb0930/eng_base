@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { getTranslations } from "next-intl/server";
 
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
 import { getSavedWordReviewChallenges } from "@/src/modules/vocabulary/review-session";
 
 import { SavedWordsReviewQuiz } from "@/src/views/saved-words/review/review-quiz";

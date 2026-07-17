@@ -6,9 +6,9 @@ import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
 import { Volume2, Award, ArrowRight, BookOpen, Compass, CheckCircle2, AlertTriangle, RefreshCw } from "lucide-react";
 
-import { Button } from "@/src/components/ui/button";
-import { cn } from "@/src/lib/utils";
-import { useLocalizedChallengeQuestion } from "@/src/lib/i18n/use-localized-challenge-question";
+import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
+import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 import type { PlacementTestResponse } from "@repo/shared/placement-test";
 import { usePlacementTest } from "./hooks/usePlacementTest";
 import NewUserOnboarding from "./components/new-user-onboarding";
@@ -19,7 +19,7 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-} from "@/src/components/ui/dialog";
+} from "@/app/components/ui/dialog";
 
 type PlacementTestViewProps = {
   initialData: PlacementTestResponse | null;

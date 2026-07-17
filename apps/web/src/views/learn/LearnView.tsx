@@ -4,11 +4,11 @@ import { ArrowRight, BookOpen, Check, LockKeyhole, Play, Sparkles } from "lucide
 import { useTranslations } from "next-intl";
 
 import { DiscoveryTabs } from "@/src/components/discovery-tabs";
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Progress } from "@/src/components/ui/progress";
-import { cn } from "@/src/lib/utils";
-import { withLocale } from "@/src/lib/i18n/paths";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Progress } from "@/app/components/ui/progress";
+import { cn } from "@/app/utils/cn";
+import { withLocale } from "@/app/i18n/paths";
 import type {
   UnitWithLessons,
   CourseProgress,

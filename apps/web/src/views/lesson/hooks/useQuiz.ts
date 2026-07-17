@@ -12,7 +12,7 @@ import { toggleSavedWord } from "@/src/services/vocabulary/saved-words.service";
 import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
 import { reduceHearts } from "@/src/services/progress/user-progress.service";
 import { MAX_HEARTS } from "@/src/constants";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import type {
   Challenge as LessonChallenge,
   UserSavedWord,

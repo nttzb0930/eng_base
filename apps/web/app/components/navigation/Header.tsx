@@ -3,15 +3,15 @@
 import { useState, useEffect, useRef } from "react";
 import { LogOut, Home, BookOpen, Target, Trophy, Bookmark, Heart, Layers } from "lucide-react";
 import Image from "next/image";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
-import { cn } from "@/src/lib/utils";
-import { Avatar, AvatarFallback } from "@/src/components/ui/avatar";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
+import { Avatar, AvatarFallback } from "@/app/components/ui/avatar";
 import { useAuth } from "@/src/providers";
 
 type HeaderProps = {

@@ -1,9 +1,9 @@
 import { BookmarkCheck, CalendarClock, Layers3 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
 import { getSavedVocabularyWords } from "@/src/modules/learning/queries";
 
 import { SavedWordsExplorer } from "@/src/views/saved-words/saved-words-explorer";

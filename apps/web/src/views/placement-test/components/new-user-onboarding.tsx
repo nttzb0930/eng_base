@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, LogOut } from "lucide-react";
-import { Button } from "@/src/components/ui/button";
-import { cn } from "@/src/lib/utils";
+import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
 import { useAuth } from "@/src/providers";
 import { useTranslations } from "next-intl";
 import {
@@ -14,7 +14,7 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-} from "@/src/components/ui/dialog";
+} from "@/app/components/ui/dialog";
 
 import LanguageStep from "./steps/LanguageStep";
 import LevelStep from "./steps/LevelStep";

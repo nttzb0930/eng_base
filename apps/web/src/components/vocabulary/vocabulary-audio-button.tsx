@@ -3,7 +3,7 @@
 import { Volume2 } from "lucide-react";
 import { useState } from "react";
 
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 
 type VocabularyAudioButtonProps = {
   audioUrl: string;

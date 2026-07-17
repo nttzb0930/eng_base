@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 
 export const Footer = () => {
   const t = useTranslations("marketing.languages");

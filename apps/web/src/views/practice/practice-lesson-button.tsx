@@ -1,11 +1,11 @@
 "use client";
 
 import { Crown, Lock, Star } from "lucide-react";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/ui/button";
-import { cn } from "@/src/lib/utils";
+import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
 import type { PracticeCefrLevel } from "@/src/modules/practice/fill-blank-session";
 
 type PracticeLessonButtonProps = {

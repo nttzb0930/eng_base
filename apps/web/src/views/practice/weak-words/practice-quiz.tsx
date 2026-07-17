@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 
 import { Volume2 } from "lucide-react";
 import Image from "next/image";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Confetti from "react-confetti";
@@ -13,11 +13,11 @@ import { toast } from "sonner";
 
 import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
-import { useLocalizedChallengeQuestion } from "@/src/lib/i18n/use-localized-challenge-question";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 import type { WeakWordsPracticeChallenge } from "@/src/modules/practice/weak-words-session";
 
 import { Challenge } from "@/src/views/lesson/challenge";

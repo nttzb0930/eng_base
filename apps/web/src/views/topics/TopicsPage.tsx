@@ -3,11 +3,11 @@ import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 
 import { DiscoveryTabs } from "@/src/components/discovery-tabs";
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Progress } from "@/src/components/ui/progress";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { getLocalizedPath } from "@/src/lib/i18n/server";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Progress } from "@/app/components/ui/progress";
+import { withLocale } from "@/app/i18n/paths";
+import { getLocalizedPath } from "@/app/i18n/server";
 import { getUserProgress } from "@/src/modules/learning/queries";
 import { getVocabularyTopics } from "@/src/modules/topics/queries";
 

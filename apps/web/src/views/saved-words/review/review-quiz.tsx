@@ -11,11 +11,11 @@ import { Volume2 } from "lucide-react";
 
 import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
-import { useLocalizedChallengeQuestion } from "@/src/lib/i18n/use-localized-challenge-question";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 import type { SavedWordReviewChallenge } from "@/src/modules/vocabulary/review-session";
 
 import { Challenge } from "@/src/views/lesson/challenge";

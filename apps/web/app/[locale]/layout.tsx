@@ -5,7 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { ExitModal } from "@/src/components/modals/exit-modal";
 import { HeartsModal } from "@/src/components/modals/hearts-modal";
 import { PracticeModal } from "@/src/components/modals/practice-modal";
-import { isLocale } from "@/src/lib/i18n/config";
+import { isLocale } from "@/app/i18n/config";
 
 type LocaleLayoutProps = {
   children: React.ReactNode;

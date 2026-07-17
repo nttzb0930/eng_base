@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { HelpCircle } from "lucide-react";
-import { Button } from "@/src/components/ui/button";
-import { cn } from "@/src/lib/utils";
+import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
 import {
   Dialog,
   DialogContent,
@@ -12,7 +12,7 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-} from "@/src/components/ui/dialog";
+} from "@/app/components/ui/dialog";
 
 type LevelStepProps = {
   selectedLangs: string[];

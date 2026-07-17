@@ -1,4 +1,4 @@
-import { MobileSidebar } from "./mobile-sidebar";
+import { MobileSidebar } from "./MobileSidebar";
 import { Sparkles } from "lucide-react";
 
 export const MobileHeader = () => {

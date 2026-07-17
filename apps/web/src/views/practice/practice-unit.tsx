@@ -1,9 +1,9 @@
 import { NotebookText } from "lucide-react";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
 import type { PracticeCefrLevel } from "@/src/modules/practice/fill-blank-session";
 
 import { PracticeLessonButton } from "./practice-lesson-button";

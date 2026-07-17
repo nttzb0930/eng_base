@@ -1,1 +1,1 @@
-export { SavedWordsPageSkeleton as default } from "@/src/components/route-skeletons";
+export { SavedWordsPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-import { getLocalizedPath } from "@/src/lib/i18n/server";
+import { getLocalizedPath } from "@/app/i18n/server";
 import { getUserProgress } from "@/src/modules/learning/queries";
 import {
   getDictationPracticeChallenges,

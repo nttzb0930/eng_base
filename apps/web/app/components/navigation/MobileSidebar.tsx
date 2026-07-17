@@ -3,9 +3,9 @@
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/src/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/app/components/ui/sheet";
 
-import { Sidebar } from "./sidebar";
+import { Sidebar } from "./Sidebar";
 
 export const MobileSidebar = () => {
   const t = useTranslations("common");

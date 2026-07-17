@@ -2,10 +2,10 @@
 
 import { ArrowRight, Check, Crown, LockKeyhole, Play } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Progress } from "@/src/components/ui/progress";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { cn } from "@/src/lib/utils";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Progress } from "@/app/components/ui/progress";
+import { withLocale } from "@/app/i18n/paths";
+import { cn } from "@/app/utils/cn";
 
 type LessonButtonProps = {
   id: number;

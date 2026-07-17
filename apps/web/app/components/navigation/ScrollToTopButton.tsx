@@ -5,9 +5,9 @@ import { ArrowUp } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { cn } from "@/src/lib/utils";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 
 export const ScrollToTopButton = () => {
   const pathname = usePathname();

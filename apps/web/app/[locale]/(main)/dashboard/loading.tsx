@@ -1,1 +1,1 @@
-export { DashboardPageSkeleton as default } from "@/src/components/route-skeletons";
+export { DashboardPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";

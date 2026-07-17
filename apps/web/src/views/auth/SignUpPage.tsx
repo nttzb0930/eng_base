@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Button } from "@/src/components/ui/button";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Button } from "@/app/components/ui/button";
 import { toast } from "sonner";
 import { Loader2, Mail, Lock, User } from "lucide-react";
 import Image from "next/image";

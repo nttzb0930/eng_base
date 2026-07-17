@@ -1,8 +1,8 @@
 "use client";
 
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
 import {
   ArrowRight,
   Award,

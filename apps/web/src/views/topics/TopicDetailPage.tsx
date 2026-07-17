@@ -1,17 +1,17 @@
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { ArrowLeft, BookOpenText, Brain } from "lucide-react";
 
-import { FeedWrapper } from "@/src/components/feed-wrapper";
-import { StickyWrapper } from "@/src/components/sticky-wrapper";
-import { Button } from "@/src/components/ui/button";
-import { Progress } from "@/src/components/ui/progress";
+import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { StickyWrapper } from "@/app/components/layout/StickyWrapper";
+import { Button } from "@/app/components/ui/button";
+import { Progress } from "@/app/components/ui/progress";
 import { UserProgress } from "@/src/components/user-progress";
 import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { getLocalizedPath } from "@/src/lib/i18n/server";
-import { cn } from "@/src/lib/utils";
+import { withLocale } from "@/app/i18n/paths";
+import { getLocalizedPath } from "@/app/i18n/server";
+import { cn } from "@/app/utils/cn";
 import {
   getUserProgress,
 } from "@/src/modules/learning/queries";

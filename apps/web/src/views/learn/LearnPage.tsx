@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation";
 import { getLocale } from "next-intl/server";
 
-import { withLocale } from "@/src/lib/i18n/paths";
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
 import {
   getCourseProgress,
   getLessonPercentage,

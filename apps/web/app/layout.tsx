@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
-import { Toaster } from "@/src/components/ui/sonner";
-import { siteConfig } from "@/src/config";
+import { Toaster } from "@/app/components/ui/sonner";
+import { siteConfig } from "@/app/config";
 import { Providers } from "@/src/providers";
 
 import "./globals.css";

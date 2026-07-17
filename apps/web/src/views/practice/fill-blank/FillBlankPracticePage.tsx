@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 import { getUserProgress } from "@/src/modules/learning/queries";
-import { getLocalizedPath } from "@/src/lib/i18n/server";
+import { getLocalizedPath } from "@/app/i18n/server";
 import {
   getFillBlankPracticeChallenges,
   getFillBlankPracticeLevelSummary,

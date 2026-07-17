@@ -1,7 +1,7 @@
 import { getRequestConfig } from "next-intl/server";
 import { headers } from "next/headers";
 
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requestedLocale = await requestLocale;

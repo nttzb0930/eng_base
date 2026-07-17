@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
-import { shouldSkipLocalePrefix } from "@/src/lib/i18n/paths";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { shouldSkipLocalePrefix } from "@/app/i18n/paths";
 
 const publicRoutes = [
   /^\/$/,

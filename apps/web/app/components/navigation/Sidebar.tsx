@@ -1,15 +1,15 @@
 "use client";
 
 import { LogOut, Sparkles } from "lucide-react";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
 
-import { withLocale } from "@/src/lib/i18n/paths";
-import { cn } from "@/src/lib/utils";
+import { withLocale } from "@/app/i18n/paths";
+import { cn } from "@/app/utils/cn";
 
-import { SidebarItem } from "./sidebar-item";
-import { Avatar, AvatarFallback } from "@/src/components/ui/avatar";
-import { Button } from "@/src/components/ui/button";
+import { SidebarItem } from "./SidebarItem";
+import { Avatar, AvatarFallback } from "@/app/components/ui/avatar";
+import { Button } from "@/app/components/ui/button";
 import { useAuth } from "@/src/providers";
 
 type SidebarProps = {

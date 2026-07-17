@@ -1,8 +1,8 @@
 "use client";
 
 import type { PracticeResultItem } from "@/src/views/practice/practice-result";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { Button } from "@/src/components/ui/button";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Button } from "@/app/components/ui/button";
 import {
   ArrowRight,
   Award,

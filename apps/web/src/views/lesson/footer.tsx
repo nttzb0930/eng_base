@@ -2,10 +2,10 @@ import { CheckCircle, XCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useKey, useMedia } from "react-use";
 
-import { Button } from "@/src/components/ui/button";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { useCurrentLocale } from "@/src/lib/i18n/use-current-locale";
-import { cn } from "@/src/lib/utils";
+import { Button } from "@/app/components/ui/button";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
 
 type FooterProps = {
   onCheck: () => void;

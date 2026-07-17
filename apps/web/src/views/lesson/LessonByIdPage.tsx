@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 import type { Challenge } from "@/src/modules/learning/queries";
-import { getLocalizedPath } from "@/src/lib/i18n/server";
+import { getLocalizedPath } from "@/app/i18n/server";
 import { getLesson, getUnits, getUserProgress } from "@/src/modules/learning/queries";
 import { QuizView } from "@/src/views";
 

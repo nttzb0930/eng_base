@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useAudio, useKey } from "react-use";
 import { motion } from "framer-motion";
 
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/app/utils/cn";
 import type { PlayableChallengeType } from "./challenge";
 
 type CardProps = {

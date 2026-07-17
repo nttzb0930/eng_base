@@ -2,7 +2,7 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { Progress } from "@/src/components/ui/progress";
+import { Progress } from "@/app/components/ui/progress";
 import { useExitModal } from "@/src/stores/use-exit-modal";
 
 type HeaderProps = {

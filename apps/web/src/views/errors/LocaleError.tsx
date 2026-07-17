@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useParams } from "next/navigation";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { useAuth } from "@/src/providers";
 
 export default function ErrorPage({

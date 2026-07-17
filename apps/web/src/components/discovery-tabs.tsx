@@ -1,7 +1,7 @@
 import { Grid2X2, Layers3 } from "lucide-react";
-import { LocalizedLink as Link } from "@/src/components/localized-link";
-import { withLocale } from "@/src/lib/i18n/paths";
-import { cn } from "@/src/lib/utils";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { withLocale } from "@/app/i18n/paths";
+import { cn } from "@/app/utils/cn";
 
 type DiscoveryTabsProps = {
   active: "learn" | "topics";

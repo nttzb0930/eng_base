@@ -3,8 +3,8 @@ import PlacementTestView from "@/src/views/placement-test/PlacementTestView";
 import { AuthRedirector } from "@/src/components/auth-redirector";
 import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
-import { defaultLocale, isLocale } from "@/src/lib/i18n/config";
-import { withLocale } from "@/src/lib/i18n/paths";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
 
 const PlacementTestPage = async () => {
   const currentLocale = await getLocale();

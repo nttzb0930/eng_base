@@ -1,1 +1,1 @@
-export { TopicsPageSkeleton as default } from "@/src/components/route-skeletons";
+export { TopicsPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";

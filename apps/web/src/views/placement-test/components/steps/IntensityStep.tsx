@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Sprout, Zap, Rocket, Trophy, Check, BookOpen, Clock } from "lucide-react";
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/app/utils/cn";
 
 type IntensityOption = {
   id: string;

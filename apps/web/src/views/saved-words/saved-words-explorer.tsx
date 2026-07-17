@@ -16,8 +16,8 @@ import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
 import { VocabularyAudioButton } from "@/src/components/vocabulary/vocabulary-audio-button";
-import { Button } from "@/src/components/ui/button";
-import { cn } from "@/src/lib/utils";
+import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
 import { getVocabularyReviewStatus } from "@/src/modules/vocabulary/review-status";
 import { toggleSavedWord } from "@/src/services/vocabulary/saved-words.service";
 

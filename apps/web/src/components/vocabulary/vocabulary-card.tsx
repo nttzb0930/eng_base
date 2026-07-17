@@ -1,8 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import type { VocabularyItem } from "@/src/modules/learning/queries";
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/app/utils/cn";
 
 import { VocabularyAudioButton } from "./vocabulary-audio-button";
 

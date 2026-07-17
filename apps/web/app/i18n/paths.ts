@@ -2,7 +2,7 @@ import {
   defaultLocale,
   isLocale,
   type Locale,
-} from "@/src/lib/i18n/config";
+} from "@/app/i18n/config";
 
 const PUBLIC_PATH_PREFIXES = [
   "/api",
