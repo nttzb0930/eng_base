@@ -1,4 +1,4 @@
-import { SettingsView } from "@/src/views/settings/settings.view";
+import { SettingsView } from "@/app/views/settings/SettingsView";
 
 export default function SettingsPage() {
   return <SettingsView />;

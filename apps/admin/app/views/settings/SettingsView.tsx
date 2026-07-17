@@ -1,37 +1,38 @@
 "use client";
 
-import React, { useEffect, useState, useTransition } from "react";
+import React, { useEffect, useState } from "react";
 import { Sliders, Save, Loader2, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 
+import { useSetting, useUpdateSetting } from "@/app/features/settings/hooks/use-setting";
 import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/app/components/ui/card";
 import { Label } from "@/app/components/ui/label";
-import { settingsService } from "@/src/services/settings/settings.service";
 
 export function SettingsView() {
   const [maxHearts, setMaxHearts] = useState("5");
-  const [isLoading, setIsLoading] = useState(true);
-  const [isPending, startTransition] = useTransition();
+  const settingQuery = useSetting("MAX_HEARTS");
+  const updateSetting = useUpdateSetting("MAX_HEARTS");
 
   useEffect(() => {
-    async function loadSetting() {
+    function loadSetting() {
       try {
-        const val = await settingsService.getSetting("MAX_HEARTS");
+        if (settingQuery.error) {
+          throw settingQuery.error;
+        }
+        const val = settingQuery.data;
         if (val) {
           setMaxHearts(val);
         }
       } catch (error) {
         toast.error("Không thể tải cấu hình từ máy chủ");
-      } finally {
-        setIsLoading(false);
       }
     }
     loadSetting();
-  }, []);
+  }, [settingQuery.data, settingQuery.error]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const valInt = parseInt(maxHearts, 10);
     if (isNaN(valInt) || valInt < 1) {
@@ -39,17 +40,15 @@ export function SettingsView() {
       return;
     }
 
-    startTransition(async () => {
-      try {
-        await settingsService.updateSetting("MAX_HEARTS", maxHearts);
+    try {
+      await updateSetting.mutateAsync(maxHearts);
         toast.success("Đã lưu cấu hình hệ thống thành công!");
       } catch (error) {
         toast.error(error instanceof Error ? error.message : "Không thể cập nhật cấu hình");
       }
-    });
   };
 
-  if (isLoading) {
+  if (settingQuery.isLoading) {
     return (
       <div className="flex h-[50vh] items-center justify-center">
         <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
@@ -109,10 +108,10 @@ export function SettingsView() {
               </span>
               <Button
                 type="submit"
-                disabled={isPending}
+                disabled={updateSetting.isPending}
                 className="bg-zinc-900 hover:bg-zinc-800 text-zinc-50 font-bold rounded-lg h-9 px-5 gap-2 cursor-pointer active:scale-95 transition-all shadow-sm"
               >
-                {isPending ? (
+                {updateSetting.isPending ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
                     Đang lưu...
