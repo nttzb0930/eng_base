@@ -5,14 +5,14 @@ import { Plus, Edit2, Trash2, Loader2, ShieldAlert, UserCheck } from "lucide-rea
 import { toast } from "sonner";
 
 import type { User, UpdateUserBody } from "@/src/services/users/users.service";
-import { useTableControls } from "@/src/hooks/use-table-controls";
-import { useDebounce } from "@/src/hooks/use-debounce";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { DataTableCard, type Column } from "@/src/components/data-table";
+import { useTableControls } from "@/app/hooks/use-table-controls";
+import { useDebounce } from "@/app/hooks/use-debounce";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/app/components/ui/dialog";
+import { Label } from "@/app/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/app/components/ui/select";
+import { DataTableCard, type Column } from "@/app/components/data-table";
 import { useUsers, useCreateUser, useUpdateUser, useDeleteUser } from "./hooks/use-users";
 
 export function UsersView() {

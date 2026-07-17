@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDebounce } from "@/src/hooks/use-debounce";
+import { useDebounce } from "@/app/hooks/use-debounce";
 import { useUsers, useDeleteUser } from "./use-users";
 import { toast } from "sonner";
 

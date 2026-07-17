@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader } from "@/app/components/ui/card";
+import { Input } from "@/app/components/ui/input";
 import { Search } from "lucide-react";
 import { DataTable, type DataTableProps } from "./data-table";
 

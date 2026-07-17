@@ -21,8 +21,8 @@ import {
 import { toast } from "sonner";
 
 import { AuthGuard } from "@/components/auth/AuthGuard";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { cn } from "@/app/utils/cn";
+import { Button } from "@/app/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -30,7 +30,7 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-} from "@/components/ui/dropdown-menu";
+} from "@/app/components/ui/dropdown-menu";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

@@ -4,10 +4,10 @@ import React, { useEffect, useState, useTransition } from "react";
 import { Sliders, Save, Loader2, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/app/components/ui/card";
+import { Label } from "@/app/components/ui/label";
 import { settingsService } from "@/src/services/settings/settings.service";
 
 export function SettingsView() {

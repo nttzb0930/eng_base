@@ -5,13 +5,13 @@ import { BarChart3, CheckCircle2, Eye, Trash2, XCircle } from "lucide-react";
 import { toast } from "sonner";
 
 import type { PracticeSessionItem } from "@/src/services/practice-sessions/practice-sessions.service";
-import { useDebounce } from "@/src/hooks/use-debounce";
-import { useTableControls } from "@/src/hooks/use-table-controls";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Card, CardContent } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { DataTableCard, type Column } from "@/src/components/data-table";
+import { useDebounce } from "@/app/hooks/use-debounce";
+import { useTableControls } from "@/app/hooks/use-table-controls";
+import { Button } from "@/app/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/app/components/ui/dialog";
+import { Card, CardContent } from "@/app/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/app/components/ui/table";
+import { DataTableCard, type Column } from "@/app/components/data-table";
 import { useDeletePracticeSession, usePracticeSessionDetails, usePracticeSessions } from "./hooks/use-practice-sessions";
 import type { PracticeSession } from "@/src/services/practice-sessions/practice-sessions.service";
 

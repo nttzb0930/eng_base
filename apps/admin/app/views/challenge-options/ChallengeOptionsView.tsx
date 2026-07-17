@@ -14,26 +14,26 @@ import {
 import { toast } from "sonner";
 
 import type { LessonChallengeOptionViewModel as ChallengeOption } from "@/app/features/courses/types/course-management.types";
-import { useTableControls } from "@/src/hooks/use-table-controls";
-import { useDebounce } from "@/src/hooks/use-debounce";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useTableControls } from "@/app/hooks/use-table-controls";
+import { useDebounce } from "@/app/hooks/use-debounce";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
+} from "@/app/components/ui/dialog";
+import { Label } from "@/app/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { DataTableCard, type Column } from "@/src/components/data-table";
+} from "@/app/components/ui/select";
+import { DataTableCard, type Column } from "@/app/components/data-table";
 import { useAllChallenges } from "@/app/features/courses/hooks/use-challenges";
 import {
   useChallengeOptions,

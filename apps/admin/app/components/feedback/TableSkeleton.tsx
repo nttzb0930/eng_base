@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/app/components/ui/table";
 
 export function TableSkeleton({ columnsCount = 5, rowsCount = 5 }: { columnsCount?: number; rowsCount?: number }) {
   return (
