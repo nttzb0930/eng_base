@@ -13,7 +13,7 @@ apps/
   admin/               management UI
   api/                 business behavior and database ownership
 packages/
-  shared/              transitional cross-runtime contracts/constants
+  shared/              cross-runtime TypeScript types/constants
   eslint-config/       lint configuration
   typescript-config/   TypeScript configuration
 data/                  vocabulary snapshots, proposals, audits, backups
@@ -21,14 +21,13 @@ docs/adr/              accepted architecture decisions
 ```
 
 ADR 0011 fixes these package names. `packages/shared` remains the package name;
-"transitional" means its legacy root exports are being split into explicit
-capability subpaths, not that a refactor may rename the package.
+ADR 0021 defines its EC TypeScript-only source profile and root Interface.
 
 ## Organize ownership by capability
 
 Ownership is capability-first; physical layout follows a documented runtime
-profile. Web and Admin use the EC frontend profile while API and shared
-contracts remain self-contained capability modules.
+profile. Web and Admin use the EC frontend profile, API owns runtime validation
+and behavior, and Shared owns framework-neutral declarations and constants.
 
 ```text
 apps/web/app/features/<capability>/
@@ -65,9 +64,14 @@ apps/api/src/common/           cross-capability Nest infrastructure
 apps/api/src/config/           validated runtime configuration
 apps/api/src/database/prisma/  persistence adapters
 
-packages/shared/src/<capability>/
-  index.ts              public contract Interface
-  <capability>.contract.ts
+packages/shared/src/
+  constants/
+    <domain>.ts         framework-neutral runtime values
+    index.ts            constants-only exports
+  types/
+    <domain>.ts         cross-runtime TypeScript declarations
+    index.ts            types-only exports
+  index.ts              root package exports only
 ```
 
 The API currently uses the singular path `src/module`. Renaming the entire tree
@@ -99,36 +103,38 @@ domain layers speculatively.
   not for domain data fetching.
 - Feature root barrels are optional in the EC profile. Consumers use the
   documented resource API/hook Interface rather than an artificial aggregate.
-- Consumers import Course contracts from `@repo/shared/courses`, whose source
-  Interface is `packages/shared/src/courses/index.ts`.
-- New contracts are not added to the legacy `@repo/shared` root barrel.
+- Consumers import cross-runtime types and constants from `@repo/shared`.
+- Capability subpaths, `src/contracts.ts`, and `*.contract.ts` are not valid
+  Shared destinations.
 - `index.ts` files export; they do not contain behavior.
 
 ## Type ownership
 
-| Shape                                    | Owner                                | Course example                                 |
-| ---------------------------------------- | ------------------------------------ | ---------------------------------------------- |
-| JSON request/response and runtime schema | `packages/shared` capability subpath | `CourseDtoSchema`, `CreateCourseRequestSchema` |
-| HTTP validation class                    | API capability                       | `CourseCreateDto` with `class-validator`       |
-| Persistence record/query                 | API capability and Prisma            | `coursesModel`, snake_case columns             |
-| Persistence-to-wire mapping              | API capability                       | `mapCourse`, `toCourseData`                    |
-| UI presentation/form/table state         | Frontend capability                  | `CourseUnitViewModel`                          |
+| Shape                            | Owner                               | Course example                           |
+| -------------------------------- | ----------------------------------- | ---------------------------------------- |
+| Cross-runtime TypeScript shape   | `packages/shared/src/types`         | `Course`, `CreateCoursePayload`          |
+| Shared runtime constant          | `packages/shared/src/constants`     | `LESSON_CHALLENGE_TYPES`                 |
+| HTTP request validation class    | API capability                      | `CourseCreateDto` with `class-validator` |
+| Persistence record/query         | API capability and Prisma           | `coursesModel`, snake_case columns       |
+| Persistence-to-wire mapping      | API capability                      | `mapCourse`, `toCourseData`              |
+| UI presentation/form/table state | Frontend capability                 | `CourseUnitViewModel`                    |
 
-Wire contracts are JSON boundaries, not domain entities and not database models.
-Prisma types must never leak to Admin, Web, or `packages/shared`. A ViewModel may
-extend a wire DTO for display, but stays local to the frontend capability.
+Shared wire types are compile-time boundaries, not database models and not
+runtime validators. Prisma types must never leak to Admin, Web, or
+`packages/shared`. A ViewModel may extend a Shared type for display, but stays
+local to the frontend capability.
 
 ## Dependency direction
 
 ```text
 Next route -> app view -> feature hook -> resource API -> transport
                                              |
-                                             -> @repo/shared/<capability>
+                                             -> @repo/shared
 
 Nest controller -> capability service -> Prisma
        |                    |
        -> request DTO       -> persistence/wire mapper
-                  both -> @repo/shared/<capability>
+                  both -> @repo/shared
 ```
 
 Controllers do not query Prisma. Shared packages do not import applications.
@@ -145,7 +151,8 @@ acceptable.
   `PascalCase`; functions and values use `camelCase`.
 - Use role suffixes only when they communicate a boundary: `.controller.ts`,
   `.service.ts`, `.dto.ts`, `.mapper.ts`, `.api.ts`, `.test.ts`.
-- Contract response names end in `Dto`; mutation inputs end in `Request`.
+- Shared entity names use domain nouns; mutation inputs end in `Payload`, list
+  outputs end in `Response`, and query inputs end in `QueryParams`.
 - Database naming is mapped explicitly; never rename wire fields to match Prisma.
 
 ## Forbidden for new domain code
@@ -174,7 +181,7 @@ or Web `src/lib/web-http-client.ts`.
 `pnpm architecture:check` runs structural and contract boundary checks. Course
 Management additionally has:
 
-- shared wire-schema characterization tests;
+- Shared root-export and filesystem architecture tests;
 - API controller, service, and mapper tests;
 - Admin resource API and query-key tests;
 - an Admin route/import test that enforces the accepted EC profile.

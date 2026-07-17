@@ -9,7 +9,7 @@ owned capability or a public Interface.
 - `apps/web`: learner-facing Next.js runtime.
 - `apps/admin`: management Next.js runtime.
 - `apps/api`: NestJS runtime, Prisma, PostgreSQL, business behavior, and data scripts.
-- `packages/shared`: transitional cross-runtime contract package and framework-neutral constants.
+- `packages/shared`: cross-runtime TypeScript types and framework-neutral constants.
 
 These package names are fixed by ADR 0011. Do not rename them as part of a
 feature refactor.
@@ -55,7 +55,8 @@ feature refactor.
   `hooks` folder, and UI-only types in its `types` folder.
 - A feature root `index.ts` is optional. Add one only when there is a genuine
   public feature Interface; routes in this profile do not require it.
-- Import Course wire contracts only from `@repo/shared/courses`.
+- Import cross-runtime types and constants only from the root `@repo/shared`
+  Interface.
 - Localized navigation must preserve the active locale. Do not create a
   non-localized implementation route when the canonical route is under `[locale]`.
 
@@ -91,13 +92,18 @@ feature refactor.
 
 ## Contract conventions
 
-- `packages/shared/src/courses/course.contract.ts` defines Course wire DTO,
-  request, pagination, and enum schemas.
-- `packages/shared/src/courses/index.ts` is its public source Interface;
-  consumers import the package subpath `@repo/shared/courses`.
-- Shared contracts describe JSON at runtime boundaries. They are not Prisma
-  models and not Admin-local ViewModels.
-- Do not add new capability contracts to the legacy shared root barrel.
+- Cross-runtime TypeScript types live in
+  `packages/shared/src/types/<domain>.ts`; runtime constants live in
+  `packages/shared/src/constants/<domain>.ts`.
+- Shared domain filenames are singular kebab-case. Shared `index.ts` files
+  export only and contain no behavior or type declarations.
+- Consumers import only from `@repo/shared`. Capability subpaths,
+  `src/contracts.ts`, `*.contract.ts`, and Shared Zod wire schemas are forbidden.
+- Shared types describe the agreed wire shape at compile time. API mappers and
+  Nest DTOs own producer/request validation; mapper and resource tests protect
+  behavior at runtime.
+- Prisma types, Nest DTO classes, frontend ViewModels, browser transport, Auth
+  session behavior, React hooks, and UI do not belong in Shared.
 
 ## Verification
 
@@ -111,9 +117,9 @@ pnpm lint
 pnpm build
 ```
 
-Course Management also has contract, API mapper/service/controller, resource
-API, query-key, and import-boundary characterization tests. Preserve observable HTTP
-and cache behavior while moving implementation.
+Course Management also has Shared Interface, API mapper/service/controller,
+resource API, query-key, and import-boundary characterization tests. Preserve
+observable HTTP and cache behavior while moving implementation.
 
 ## Vocabulary data safety
 

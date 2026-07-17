@@ -106,10 +106,10 @@ templates.
 | Feature-owned component                | `app/features/<capability>/components`           |
 | Route-level screen                     | `app/views/<resource>/<Resource>View.tsx`        |
 | Next route adapter                     | `app/**/page.tsx`                                |
-| Cross-runtime JSON contract            | `@repo/shared/<capability>`                      |
+| Cross-runtime TypeScript type/constant | root `@repo/shared`                              |
 
 Split API files by externally meaningful resource. Course, Unit, Lesson,
-Challenge, and Challenge Option have independent HTTP paths, schemas, and cache
+Challenge, and Challenge Option have independent HTTP paths, shapes, and cache
 roots, so each has its own `.api.ts`. A hierarchy does not justify one broad
 `course-management.client.ts`.
 

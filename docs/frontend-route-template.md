@@ -27,12 +27,13 @@ Add only boundaries used by the behavior. Do not add a root `index.ts`,
 Checklist:
 
 - [ ] The route imports its EC view and contains no feature behavior.
-- [ ] Each HTTP resource has an owning `.api.ts` and runtime response parsing.
+- [ ] Each HTTP resource has an owning `.api.ts` and typed response Interface.
 - [ ] Query keys live with the resource API; hooks own query orchestration.
-- [ ] Wire contracts come from `@repo/shared/<capability>`.
+- [ ] Cross-runtime types/constants come from root `@repo/shared`.
 - [ ] UI-only state stays local to the owning capability/view.
 - [ ] No code was added to the rejected `src/features` profile for this runtime.
-- [ ] Tests cover HTTP compatibility, schemas, keys, and import boundaries.
+- [ ] Tests cover HTTP compatibility, mapper/resource shapes, keys, and import boundaries.
 - [ ] Architecture, test, type, lint, and build gates pass.
 
-See [Frontend folder structure](frontend-folder-structure.md) and ADR 0013.
+See [Frontend folder structure](frontend-folder-structure.md), ADR 0013, and
+ADR 0021.

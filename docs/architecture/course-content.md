@@ -64,44 +64,50 @@ apps/admin/app/views/
   challenges/ChallengesView.tsx
   challenge-options/ChallengeOptionsView.tsx
 
-packages/shared/src/courses/
-  index.ts                       source public Interface
-  course.contract.ts
+packages/shared/src/
+  constants/course.ts
+  types/common.ts
+  types/course.ts
+  index.ts                       root public Interface
 ```
 
-The runtime import for contracts is:
+The Shared import is:
 
 ```ts
 import {
-  CourseDtoSchema,
-  type CreateCourseRequest,
-} from "@repo/shared/courses";
+  LESSON_CHALLENGE_TYPES,
+  type Course,
+  type CreateCoursePayload,
+} from "@repo/shared";
 ```
 
-Do not import Course contracts from a private source path or add new contract
-definitions to the legacy shared root barrel. A few deprecated root aliases may
-remain temporarily so unmigrated consumers keep compiling; new code uses only
-`@repo/shared/courses`.
+Do not import from a private Shared source path or create a Course capability
+subpath. `src/contracts.ts`, `*.contract.ts`, Shared Zod wire schemas, and
+compatibility forwarding barrels are forbidden.
 
 ## Contract boundary
 
-`course.contract.ts` describes JSON on the wire:
+`types/course.ts` describes compile-time wire shapes:
 
-- entity response DTO schemas;
-- create/update Request schemas;
-- challenge enum schemas/constants;
-- paginated response schemas;
-- the Admin page query shape.
+- entity response types;
+- create/update Payload types;
+- paginated Response types;
+- Admin QueryParams types.
 
-The Admin resource API modules parse response data with these Zod schemas. API
+`constants/course.ts` owns the challenge value arrays used at runtime. API
 `class-validator` DTO classes validate incoming HTTP bodies and implement the
-shared Request types, but remain Nest-specific. API mappers translate Prisma
-snake_case fields such as `course_id`, `image_src`, and `vocabulary_item_id` to
-camelCase wire DTOs.
+Shared Payload types, but remain Nest-specific. API mappers declare explicit
+Shared return types and translate Prisma snake_case fields such as `course_id`,
+`image_src`, and `vocabulary_item_id` to camelCase wire fields.
+
+Admin resource modules use typed HTTP envelopes and do not Zod-parse Course
+responses. This is an intentional TypeScript-only trade-off: API mapper tests
+lock the producer shape, while Admin resource tests lock endpoints, payloads,
+pagination, and unchanged response delivery.
 
 Admin-local types may add presentation relationships such as a course title
 on a Unit row. Those fields are not guaranteed HTTP response fields and do not
-belong in the shared contract.
+belong in Shared.
 
 ## Management HTTP Interface
 
@@ -157,12 +163,13 @@ its existing scope.
 
 ## Characterization and enforcement
 
-- `packages/shared/test/courses/course.contract.test.ts` rejects persistence
-  naming and locks wire/pagination schemas; the adjacent package-export test
-  locks the public subpath.
+- `packages/shared/test/ec-shared-profile.architecture.test.ts` rejects legacy
+  contract folders, capability imports, and non-root package exports.
+- `packages/shared/test/ec-shared-root.test.ts` and `package-exports.test.ts`
+  lock the root types/constants Interface and private-path boundary.
 - API management tests lock mapper translation, use-case behavior, controller
   routes, pagination selection, and `Content-Range` behavior.
-- Admin feature tests lock endpoint paths, runtime response parsing, list
+- Admin feature tests lock endpoint paths, typed response delivery, list
   capabilities, and query-key shapes.
 - `apps/admin/test/course-feature-architecture.test.ts` requires EC view imports,
   resource API files, and rejects the superseded `src/features/courses`,

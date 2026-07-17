@@ -7,7 +7,7 @@ Standard 1.5.0** and stays inside the owning capability.
 ## Boundary flow
 
 ```text
-packages/shared/<capability>     JSON schemas and TypeScript wire types
+packages/shared                 TypeScript wire types and constants
              |                               |
              v                               v
 API controller -> capability service -> Prisma/mapper
@@ -20,9 +20,9 @@ Each runtime owns its adapter:
 
 - API owns authentication guards, Nest DTO validation, business behavior,
   Prisma access, and persistence/wire mapping.
-- Admin/Web own their HTTP transport configuration, runtime response parsing,
-  cache behavior, form state, and ViewModels.
-- `packages/shared` owns only framework-neutral JSON contracts/constants.
+- Admin/Web own their HTTP transport configuration, cache behavior, form state,
+  ViewModels, and any runtime response validation their boundary actually needs.
+- `packages/shared` owns only framework-neutral TypeScript types/constants.
 
 Do not share a frontend service instance between Admin and Web when auth, route
 scope, or response visibility differs. Share the wire contract when the actual
@@ -40,9 +40,9 @@ apps/admin/app/features/courses/api/challenge.api.ts
 apps/admin/app/features/courses/api/challenge-option.api.ts
 ```
 
-Each module delegates bearer-token/envelope transport to the existing cross-cutting
-`src/services/http/admin-http-client.ts`, owns the Course endpoint strings, and
-parses response data with schemas from `@repo/shared/courses`.
+Each module delegates bearer-token/envelope transport to the existing
+cross-cutting `src/services/http/admin-http-client.ts`, owns the Course endpoint
+strings, and types response data with declarations from `@repo/shared`.
 
 Use one API module per independently addressed resource. Do not aggregate these
 Interfaces into `course-management.client.ts` merely because they share a domain
@@ -50,10 +50,10 @@ hierarchy. Small shared HTTP helpers may remain private inside the capability.
 
 A client method should:
 
-1. accept a shared Request type or an explicit feature-local input;
+1. accept a Shared Payload type or an explicit feature-local input;
 2. call the app's infrastructure HTTP adapter;
-3. parse untrusted response data with the shared wire schema;
-4. return the parsed value rather than transport/envelope detail;
+3. return typed response data rather than transport/envelope detail;
+4. add runtime parsing in the owning runtime only when the boundary requires it;
 5. preserve exact compatibility paths and methods.
 
 Views and components do not hardcode endpoint strings. React Query hooks call
@@ -62,10 +62,11 @@ resource APIs and own query keys, orchestration, and invalidation.
 ## Contract versus local types
 
 ```text
-@repo/shared/courses
-  CourseDto / CourseDtoSchema             wire response
-  CreateCourseRequest / ...Schema         wire request
-  PaginatedCoursesDto / ...Schema         wire list response
+@repo/shared
+  Course                                  wire response type
+  CreateCoursePayload                     wire request type
+  PaginatedCoursesResponse                wire list response type
+  CourseQueryParams                       list query type
 
 apps/api/.../dto/course-content-management.dto.ts  Nest validation classes
 apps/api/.../mappers/course-content.mapper.ts      Prisma <-> wire conversion
@@ -73,7 +74,7 @@ apps/admin/app/features/.../types/*.ts    Admin-only ViewModels
 ```
 
 Do not expose Prisma-generated models as API types. Do not add UI-only joined
-labels, modal state, selected rows, or form errors to shared contracts.
+labels, modal state, selected rows, or form errors to Shared types.
 
 ## Course list capabilities
 
@@ -97,7 +98,7 @@ resource:
 - Has a distinct `[..., "all"]` query key where the Admin exposes it.
 
 Do not merge the methods merely because both send GET to the same path. Their
-response schemas and cache capabilities differ. The same API behavior exists for
+response shapes and cache capabilities differ. The same API behavior exists for
 courses, units, lessons, challenges, and challenge options; the Admin client only
 needs `listAll` where a current lookup consumer exists.
 
@@ -116,13 +117,11 @@ Relative to the API client's base URL/global prefix, Course Management uses:
 PUT and the camelCase `challengeOptions` path are existing public behavior. A
 folder rename must not silently change either.
 
-## Known `search` / `q` drift
+## `search` / `q` compatibility
 
-The Admin page query currently sends `search`; API `FilterParse` currently reads
-`q`. Search text is therefore not applied by the API predicate. This migration
-records the drift without changing it so a structural commit does not mix in an
-observable query fix. Repair it separately with a compatibility decision and
-request/controller/client tests.
+Admin sends `search`; older callers may send `q`. API `FilterParse` accepts both
+and maps them to one validated search predicate. Do not remove either spelling
+without a compatibility decision and request/controller/client tests.
 
 ## Query keys and invalidation
 
@@ -146,12 +145,14 @@ invalidate the resource root so both list forms refresh. Query hooks live under
 For a new capability, characterize at least:
 
 - exact HTTP method/path/body;
-- runtime rejection of an invalid response shape;
+- representative typed response delivery and empty-envelope behavior;
 - paged versus raw-array list behavior;
 - stable query-key and invalidation scope;
 - API request validation and persistence/wire mapping;
 - delivery compatibility such as headers and route spelling.
 
 Course examples live in the Admin feature tests, API management tests, and
-`packages/shared/test/courses/`. Run `pnpm architecture:check` plus the normal
-repository gates before handoff.
+`packages/shared/test/`. The API mapper test owns camelCase producer evidence;
+frontend tests must not claim that TypeScript-only Shared types reject malformed
+runtime JSON. Run `pnpm architecture:check` plus the normal repository gates
+before handoff.
