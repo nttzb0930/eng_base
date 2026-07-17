@@ -19,11 +19,17 @@ test("localized routes are the canonical learner route tree", () => {
   assert.equal(existsSync(join(appDirectory, "lesson")), false);
 });
 
-test("localized routes do not delegate to non-localized route trees", () => {
+test("localized learner routes compose app Views instead of legacy src Views", () => {
   const localizedDirectory = join(appDirectory, "[locale]");
-  const routeImports = collectTypeScriptFiles(localizedDirectory)
-    .map((file) => ({ file, source: readFileSync(file, "utf8") }))
-    .filter(({ source }) => source.includes('from "@/app/(main)') || source.includes('from "@/app/lesson'));
 
-  assert.deepEqual(routeImports, []);
+  const routeFiles = collectTypeScriptFiles(localizedDirectory).filter((file) =>
+    /(?:page|layout|error)\.tsx$/.test(file),
+  );
+
+  for (const file of routeFiles) {
+    const source = readFileSync(file, "utf8");
+    assert.equal(source.includes("@/src/views/"), false, `${file} imports a legacy View`);
+    assert.equal(source.includes("@/src/modules/"), false, `${file} imports a legacy module`);
+    assert.equal(source.includes("@/src/services/"), false, `${file} imports a legacy service`);
+  }
 });

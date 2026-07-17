@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Progress } from "@/app/components/ui/progress";
-import { useExitModal } from "@/src/stores/use-exit-modal";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 
 type HeaderProps = {
   hearts: number;

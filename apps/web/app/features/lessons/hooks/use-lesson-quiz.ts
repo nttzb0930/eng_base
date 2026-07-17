@@ -17,7 +17,7 @@ import type {
   VocabularyItem,
 } from "@repo/shared/learning";
 import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
-import { useHeartsModal } from "@/src/stores/use-hearts-modal";
+import { useHeartsModal } from "@/app/features/progress/store/hearts-modal.store";
 import { usePracticeModal } from "@/app/features/practice/store/practice-modal.store";
 
 export type QuizChallenge = LessonChallenge & {

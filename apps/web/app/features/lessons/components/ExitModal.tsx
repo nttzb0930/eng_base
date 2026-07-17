@@ -15,7 +15,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/app/components/ui/dialog";
-import { useExitModal } from "@/src/stores/use-exit-modal";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 
 export const ExitModal = () => {
   const t = useTranslations("modals");

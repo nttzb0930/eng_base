@@ -13,13 +13,13 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/app/components/ui/dialog";
-import { useHeartsModal } from "@/src/stores/use-hearts-modal";
+import { progressApi } from "@/app/features/progress/api/progress.api";
+import { useHeartsModal } from "@/app/features/progress/store/hearts-modal.store";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 
 import { useTransition } from "react";
 import { Loader2 } from "lucide-react";
-import { refillHearts, resetLessonProgress } from "@/src/services/progress/user-progress.service";
 
 export const HeartsModal = () => {
   const t = useTranslations("modals");
@@ -31,16 +31,16 @@ export const HeartsModal = () => {
   const onRefillAndRestart = () => {
     startTransition(async () => {
       try {
-        await refillHearts();
+        await progressApi.refillHearts();
         if (lessonId) {
-          await resetLessonProgress(lessonId);
+          await progressApi.resetLesson(lessonId);
           close();
           router.push(withLocale(`/lesson/${lessonId}`, locale));
         } else {
           close();
           router.push(withLocale("/learn", locale));
         }
-      } catch (error) {
+      } catch {
         close();
         router.push(withLocale("/learn", locale));
       }

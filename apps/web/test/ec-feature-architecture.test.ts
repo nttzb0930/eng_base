@@ -1,9 +1,18 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
 const root = process.cwd();
+
+function filesUnder(directory: string): string[] {
+  if (!existsSync(directory)) return [];
+
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(directory, entry.name);
+    return entry.isDirectory() ? filesUnder(path) : [path];
+  });
+}
 
 test("Web shared presentation and i18n live under app", () => {
   for (const path of [
@@ -75,5 +84,39 @@ test("Web Courses and Progress use client feature owners", () => {
     assert.equal(source.includes("@/src/views/courses"), false, `${path} imports legacy Courses View`);
     assert.equal(source.includes("@/src/modules/learning/queries"), false, `${path} imports server learning queries`);
     assert.equal(source.includes("@/src/services/progress"), false, `${path} imports legacy Progress services`);
+  }
+});
+
+test("Web domain code no longer uses legacy technical buckets or authenticated server HTTP", () => {
+  for (const path of ["src/modules", "src/services", "src/views", "src/stores"]) {
+    assert.deepEqual(filesUnder(join(root, path)), [], `${path} must be empty`);
+  }
+
+  for (const path of [
+    "src/lib/api-client.ts",
+    "src/lib/client-api-request.ts",
+    "src/components/auth-redirector.tsx",
+  ]) {
+    assert.equal(existsSync(join(root, path)), false, `${path} must be removed`);
+  }
+
+  for (const file of filesUnder(join(root, "app")).filter((path) => /\.(ts|tsx)$/.test(path))) {
+    const normalizedFile = file.replaceAll("\\", "/");
+    const source = readFileSync(file, "utf8");
+
+    if (normalizedFile.endsWith("app/i18n/request.ts") || normalizedFile.endsWith("app/i18n/server.ts")) {
+      continue;
+    }
+
+    assert.equal(source.includes("next/headers"), false, `${file} performs server-only authenticated work`);
+    assert.equal(source.includes("@/src/modules/"), false, `${file} imports legacy modules`);
+    assert.equal(source.includes("@/src/services/"), false, `${file} imports legacy services`);
+    assert.equal(source.includes("@/src/views/"), false, `${file} imports legacy Views`);
+    assert.equal(source.includes("@/src/stores/"), false, `${file} imports legacy stores`);
+    assert.equal(
+      /router\.(?:push|replace)\(\s*["']\//u.test(source),
+      false,
+      `${file} navigates without locale ownership`,
+    );
   }
 });

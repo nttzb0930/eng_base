@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Globe, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { cn } from "@/app/utils/cn";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -55,6 +55,7 @@ export default function LanguageStep({
             >
               <div className="flex items-center justify-between w-full">
                 <div className="flex items-center gap-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- Remote flag SVG host is not part of the app image pipeline. */}
                   <img
                     src={`https://hatscripts.github.io/circle-flags/flags/${lang.flagCode}.svg`}
                     alt={lang.nativeName}

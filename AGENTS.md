@@ -16,26 +16,38 @@ feature refactor.
 
 ## Capability-first ownership
 
-- Admin follows the EC frontend profile: domain adapters and hooks live under
-  `app/features/<capability>`, while route-level screens live under `app/views`.
+- Web and Admin follow the EC frontend profile: domain adapters and hooks live
+  under `app/features/<capability>`, while route-level screens live under
+  `app/views`.
 - Organize backend behavior under its owning `src/module/<capability>` folder.
   The singular `module` path is the current repository path; a mass rename is a
   separate mechanical migration.
 - Technical folders such as `api`, `hooks`, `types`, `mappers`, and `tests`
   remain subordinate to a business owner.
-- Do not add new domain code to the legacy `src/views`, `src/services`,
-  `src/types`, or `src/constants` buckets. `app/views` is an intentional EC
-  composition layer, not that legacy technical bucket.
+- Do not add frontend domain code to legacy `src/modules`, `src/views`,
+  `src/services`, `src/stores`, `src/types`, or `src/constants` buckets.
+  `app/views` is an intentional EC composition layer, not that legacy technical
+  bucket.
 - In Admin, `src/services/http` is the retained transport exception. Auth,
   Courses, Practice, Settings, and Users behavior belongs under `app/features`
   and their screens belong under `app/views`.
-- Cross-cutting infrastructure may remain in clearly framework-owned locations,
-  for example `src/lib` and the existing `src/services/http` adapter.
+- In Web, `src/lib/web-http-client.ts` is the retained browser transport
+  exception. Do not create `platform`, `app/lib/http`, `*.server.ts`,
+  `*.client.ts`, `api-request.server.ts`, or `api-request.client.ts` for
+  authenticated resource data.
+- Cross-cutting infrastructure may remain only in clearly framework-owned
+  locations, for example Web `src/lib/web-http-client.ts` and Admin
+  `src/services/http`.
 
 ## Frontend conventions
 
-- Keep `app/**/page.tsx` and route layouts thin. In the Admin EC profile, a route
-  imports its screen from `@/app/views/<resource>/<Resource>View`.
+- Keep `app/**/page.tsx` and route layouts thin. In the frontend EC profile, a
+  route imports its screen from `@/app/views/<resource>/<Resource>View`.
+- Web authenticated data flow is:
+  `localized route -> app/views -> app/features hook -> resource .api.ts -> src/lib/web-http-client.ts`.
+- Do not fetch authenticated Web data from Server Components with `cookies()` or
+  `next/headers`. `next/headers` is reserved for framework infrastructure such
+  as next-intl request setup.
 - Split HTTP adapters by resource (`course.api.ts`, `unit.api.ts`) when the API
   exposes independent resource Interfaces; do not create an aggregate client
   merely because the resources belong to one hierarchy.

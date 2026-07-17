@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 
-import { ExitModal } from "@/src/components/modals/exit-modal";
-import { HeartsModal } from "@/src/components/modals/hearts-modal";
+import { ExitModal } from "@/app/features/lessons/components/ExitModal";
+import { HeartsModal } from "@/app/features/progress/components/HeartsModal";
 import { PracticeModal } from "@/app/features/practice/components/PracticeModal";
 import { isLocale } from "@/app/i18n/config";
 

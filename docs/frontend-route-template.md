@@ -1,6 +1,6 @@
 # Frontend Route Template
 
-Use this template for a new route in the Admin EC profile.
+Use this template for a new route in the frontend EC profile.
 
 ```tsx
 // app/(dashboard)/examples/page.tsx
@@ -30,7 +30,7 @@ Checklist:
 - [ ] Each HTTP resource has an owning `.api.ts` and runtime response parsing.
 - [ ] Query keys live with the resource API; hooks own query orchestration.
 - [ ] Wire contracts come from `@repo/shared/<capability>`.
-- [ ] UI-only state stays local to the Admin capability/view.
+- [ ] UI-only state stays local to the owning capability/view.
 - [ ] No code was added to the rejected `src/features` profile for this runtime.
 - [ ] Tests cover HTTP compatibility, schemas, keys, and import boundaries.
 - [ ] Architecture, test, type, lint, and build gates pass.

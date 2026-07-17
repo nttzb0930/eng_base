@@ -1,8 +1,9 @@
 # Codebase Structure
 
-This is the repository profile for **Web Base Standard 1.5.0**. Migration is
-incremental: existing behavior may remain in legacy locations, but every new
-capability and every touched golden slice must converge on this structure.
+This is the repository profile for **Web Base Standard 1.5.0**. Frontend domain
+code follows the EC-derived `app/features` + `app/views` profile. Legacy
+technical buckets such as `src/modules`, `src/services`, `src/views`, and
+`src/stores` are not valid frontend destinations.
 
 ## Workspace and runtime owners
 
@@ -26,10 +27,22 @@ capability subpaths, not that a refactor may rename the package.
 ## Organize ownership by capability
 
 Ownership is capability-first; physical layout follows a documented runtime
-profile. Admin uses the EC profile while API and shared contracts remain
-self-contained capability modules.
+profile. Web and Admin use the EC frontend profile while API and shared
+contracts remain self-contained capability modules.
 
 ```text
+apps/web/app/features/<capability>/
+  api/<resource>.api.ts  browser resource HTTP Interface
+  hooks/use-*.ts         query orchestration
+  components/            feature-owned presentation
+  store/                 feature-owned client state
+  types/                 local ViewModels and input shapes
+  tests/
+apps/web/app/views/<resource>/
+  <Resource>View.tsx     route-level screen composition
+apps/web/src/lib/
+  web-http-client.ts     retained browser transport exception
+
 apps/admin/app/features/<capability>/
   api/<resource>.api.ts  resource HTTP Interface and query keys
   hooks/use-*.ts         query orchestration
@@ -77,7 +90,13 @@ domain layers speculatively.
 
 ## Public Interfaces
 
-- Admin route adapters import their screen from `@/app/views/<resource>`.
+- Web and Admin route adapters import their screen from
+  `@/app/views/<resource>`.
+- Web authenticated API flow is:
+  `localized route -> app/views -> app/features hook -> resource .api.ts -> src/lib/web-http-client.ts`.
+- Web does not use authenticated Server Component HTTP. `next/headers` is
+  allowed for framework-owned infrastructure such as next-intl request setup,
+  not for domain data fetching.
 - Feature root barrels are optional in the EC profile. Consumers use the
   documented resource API/hook Interface rather than an artificial aggregate.
 - Consumers import Course contracts from `@repo/shared/courses`, whose source
@@ -102,7 +121,7 @@ extend a wire DTO for display, but stays local to the frontend capability.
 ## Dependency direction
 
 ```text
-Next route -> app view -> feature hook -> resource API
+Next route -> app view -> feature hook -> resource API -> transport
                                              |
                                              -> @repo/shared/<capability>
 
@@ -134,8 +153,10 @@ acceptable.
 Do not create app-wide domain buckets such as:
 
 ```text
-src/views/<domain>       legacy source profile
+src/modules/<domain>     legacy frontend source profile
+src/views/<domain>
 src/services/<domain>
+src/stores/<domain>
 src/types/<domain>
 src/constants/<domain>
 src/controllers/<domain>
@@ -144,9 +165,9 @@ src/repositories/<domain>
 
 These legacy paths scatter ownership. `app/views` is allowed by the EC profile
 as a thin screen-composition layer backed by `app/features`; it is not equivalent
-to legacy `src/views`. Existing legacy paths remain valid until their owner is migrated. Cross-cutting framework
-infrastructure, for example the existing Admin HTTP transport, may remain in a
-clearly infrastructure-owned location.
+to legacy `src/views`. Cross-cutting framework infrastructure may remain only in
+a clearly infrastructure-owned exception, for example Admin `src/services/http`
+or Web `src/lib/web-http-client.ts`.
 
 ## Enforcement
 
@@ -157,6 +178,8 @@ Management additionally has:
 - API controller, service, and mapper tests;
 - Admin resource API and query-key tests;
 - an Admin route/import test that enforces the accepted EC profile.
+- Web route/import and feature-architecture tests that reject legacy frontend
+  buckets and authenticated server HTTP.
 - an API source-profile test that rejects split Auth/Prisma/support roots and a
   duplicate Prisma generator.
 - an Auth architecture test that rejects persistence/crypto in controllers,

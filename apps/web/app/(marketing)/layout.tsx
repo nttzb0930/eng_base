@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from "react";
 
-import { Footer } from "@/src/views/marketing/footer";
-import { Header } from "@/src/views/marketing/header";
+import { Footer } from "@/app/views/marketing/Footer";
+import { Header } from "@/app/views/marketing/Header";
 
 const MarketingLayout = ({ children }: PropsWithChildren) => {
   return (

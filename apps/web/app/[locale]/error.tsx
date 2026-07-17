@@ -1,3 +1,3 @@
 "use client";
 
-export { default } from "@/src/views/errors/LocaleError";
+export { default } from "@/app/views/errors/LocaleError";

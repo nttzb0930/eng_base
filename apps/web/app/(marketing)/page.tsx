@@ -1,1 +1,1 @@
-export { default } from "@/src/views/marketing/MarketingPage";
+export { default } from "@/app/views/marketing/MarketingView";

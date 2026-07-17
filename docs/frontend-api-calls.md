@@ -2,7 +2,7 @@
 
 This document replaces the former mojibake examples based on app-wide
 `src/services` and `src/views` buckets. New integration follows **Web Base
-Standard 1.1.0** and stays inside the owning capability.
+Standard 1.5.0** and stays inside the owning capability.
 
 ## Boundary flow
 
@@ -57,8 +57,7 @@ A client method should:
 5. preserve exact compatibility paths and methods.
 
 Views and components do not hardcode endpoint strings. React Query hooks call
-resource APIs and own orchestration/invalidation. Query-key factories are
-colocated in the owning resource `.api.ts`.
+resource APIs and own query keys, orchestration, and invalidation.
 
 ## Contract versus local types
 

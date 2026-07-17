@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
@@ -41,7 +41,8 @@ export function usePlacementTest() {
   const t = useTranslations("placementTest");
   const [pending, startTransition] = useTransition();
 
-  const [session, setSession] = useState<PlacementTestResponse | null>(null);
+  const [sessionOverride, setSessionOverride] =
+    useState<PlacementTestResponse | null>(null);
   const [selectedOptionId, setSelectedOptionId] = useState<
     number | undefined
   >(undefined);
@@ -62,13 +63,7 @@ export function usePlacementTest() {
     src: "/incorrect.wav",
   });
 
-  useEffect(() => {
-    if (!initialQuestionQuery.data) return;
-    setSession(initialQuestionQuery.data);
-    setSelectedOptionId(undefined);
-    setIsCorrect(null);
-    setAnsweredState("unanswered");
-  }, [initialQuestionQuery.data]);
+  const session = sessionOverride ?? initialQuestionQuery.data ?? null;
 
   const isQuestionSession = session?.status === "IN_PROGRESS";
   const questionSession = isQuestionSession
@@ -141,7 +136,7 @@ export function usePlacementTest() {
         try {
           const data = await placementTestApi.nextQuestion();
           queryClient.setQueryData(placementTestKeys.question, data);
-          setSession(data);
+          setSessionOverride(data);
           setSelectedOptionId(undefined);
           setIsCorrect(null);
           setAnsweredState("unanswered");
@@ -171,7 +166,7 @@ export function usePlacementTest() {
         }
 
         if (result.status === "COMPLETED") {
-          setSession(result);
+          setSessionOverride(result);
         }
       } catch (err) {
         toast.error(getErrorMessage(err, "toast.submitAnswerError"));
@@ -218,7 +213,14 @@ export function usePlacementTest() {
     startTransition(async () => {
       try {
         await placementTestApi.reset();
-        setSession(null);
+        queryClient.setQueryData<PlacementTestResponse | undefined>(
+          placementTestKeys.question,
+          undefined,
+        );
+        setSessionOverride(null);
+        setSelectedOptionId(undefined);
+        setIsCorrect(null);
+        setAnsweredState("unanswered");
         await Promise.all([
           queryClient.invalidateQueries({ queryKey: placementTestKeys.all }),
           queryClient.invalidateQueries({ queryKey: progressKeys.all }),

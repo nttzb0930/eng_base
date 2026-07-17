@@ -127,6 +127,7 @@ export default function LevelStep({
           >
             {/* Header: flag, translated name, native name, beta badge */}
             <div className="flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element -- Remote flag SVG host is not part of the app image pipeline. */}
               <img
                 src={`https://hatscripts.github.io/circle-flags/flags/${metadata.flagCode}.svg`}
                 alt={metadata.nativeName}
