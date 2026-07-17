@@ -46,3 +46,6 @@ next-env.d.ts
 # testing tools
 /ngrok
 /stripe
+
+# local agent execution artifacts
+/.superpowers/
