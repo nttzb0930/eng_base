@@ -2,16 +2,16 @@
 
 import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
 
-import { Challenge } from "@/src/views/lesson/challenge";
-import { Footer } from "@/src/views/lesson/footer";
-import { Header } from "@/src/views/lesson/header";
-import { QuestionBubble } from "@/src/views/lesson/question-bubble";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 
-import { useQuiz, type QuizChallenge } from "./hooks/useQuiz";
-import LessonCompleteView from "./LessonCompleteView";
+import { useLessonQuiz, type QuizChallenge } from "../hooks/use-lesson-quiz";
+import { Challenge } from "./LessonChallenge";
+import { LessonComplete } from "./LessonComplete";
+import { Footer } from "./LessonFooter";
+import { Header } from "./LessonHeader";
+import { QuestionBubble } from "./QuestionBubble";
 
-type QuizViewProps = {
+type LessonQuizProps = {
   initialPercentage: number;
   initialHearts: number;
   initialLessonId: number;
@@ -20,7 +20,7 @@ type QuizViewProps = {
   nextLesson: { id: number; title: string } | null;
 };
 
-export default function QuizView(props: QuizViewProps) {
+export function LessonQuiz(props: LessonQuizProps) {
   const localizeChallengeQuestion = useLocalizedChallengeQuestion();
   const {
     t,
@@ -49,13 +49,13 @@ export default function QuizView(props: QuizViewProps) {
     onSelect,
     onContinue,
     onToggleSavedWord,
-  } = useQuiz(props);
+  } = useLessonQuiz(props);
 
   if (!challenge) {
     return (
       <>
         {finishAudio}
-        <LessonCompleteView
+        <LessonComplete
           lessonId={lessonId}
           lessonTitle={props.initialLessonTitle}
           nextLesson={props.nextLesson}

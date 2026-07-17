@@ -37,7 +37,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
   const [queryClient] = useState(() => new QueryClient());
-  const [status, setStatus] = useState<AuthStatus>("loading");
+  const [status, setStatus] = useState<AuthStatus>(() =>
+    typeof document === "undefined" || hasRefreshSession()
+      ? "loading"
+      : "unauthenticated",
+  );
   useSyncExternalStore(subscribeAuthSession, getAuthSession, getAuthSession);
 
   const redirectToSignIn = useCallback(() => {
@@ -53,7 +57,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
     if (!hasRefreshSession()) {
       clearAuthSession();
-      setStatus("unauthenticated");
       return;
     }
 

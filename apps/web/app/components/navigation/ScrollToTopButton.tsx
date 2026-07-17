@@ -1,18 +1,30 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { ArrowUp } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { cn } from "@/app/utils/cn";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+
+const subscribeToScroll = (listener: () => void) => {
+  window.addEventListener("scroll", listener, { passive: true });
+
+  return () => window.removeEventListener("scroll", listener);
+};
+
+const getScrollVisibilitySnapshot = () =>
+  typeof window !== "undefined" && window.scrollY > 300;
 
 export const ScrollToTopButton = () => {
   const pathname = usePathname();
   const locale = useCurrentLocale();
-  const [isVisible, setIsVisible] = useState(false);
+  const isVisible = useSyncExternalStore(
+    subscribeToScroll,
+    getScrollVisibilitySnapshot,
+    () => false,
+  );
 
   // List of paths where the scroll to top button is allowed
   const allowedPaths = [
@@ -23,24 +35,6 @@ export const ScrollToTopButton = () => {
   ];
 
   const shouldRender = allowedPaths.includes(pathname);
-
-  useEffect(() => {
-    if (!shouldRender) {
-      setIsVisible(false);
-      return;
-    }
-
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [shouldRender]);
 
   const scrollToTop = () => {
     window.scrollTo({

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import type { UnitWithLessons, CourseProgress } from "@/src/modules/learning/queries";
+import type { CourseProgress, UnitWithLessons } from "@repo/shared/learning";
 
 type UseLearnProps = {
   units: UnitWithLessons[];

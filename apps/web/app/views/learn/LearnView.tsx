@@ -1,30 +1,22 @@
 "use client";
 
+import { useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, BookOpen, Check, LockKeyhole, Play, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { DiscoveryTabs } from "@/src/components/discovery-tabs";
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Progress } from "@/app/components/ui/progress";
+import { Unit } from "@/app/features/courses/components/Unit";
+import { useLearn } from "@/app/features/courses/hooks/use-learn";
+import { useUnits } from "@/app/features/courses/hooks/use-units";
+import { useCourseProgress, useLessonPercentage, useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
 import { withLocale } from "@/app/i18n/paths";
-import type {
-  UnitWithLessons,
-  CourseProgress,
-  UserProgress as UserProgressType,
-} from "@/src/modules/learning/queries";
-
-import { Unit } from "./components/unit";
-import { useLearn } from "./hooks/useLearn";
-
-type LearnViewProps = {
-  units: UnitWithLessons[];
-  courseProgress: CourseProgress;
-  userProgress: UserProgressType;
-  lessonPercentage: number;
-  unitParam?: string;
-};
 
 const levelStyles = [
   "border-sky-100 bg-sky-50 text-sky-600",
@@ -33,16 +25,53 @@ const levelStyles = [
   "border-rose-100 bg-rose-50 text-rose-600",
 ] as const;
 
-export default function LearnView({
-  units,
-  courseProgress,
-  userProgress,
-  lessonPercentage,
-  unitParam,
-}: LearnViewProps) {
-  const { t, unlockedUnitIds, activeUnitId, selectedUnit, getCefrLevel } =
-    useLearn({ units, courseProgress, unitParam });
+export function LearnView() {
+  const router = useRouter();
+  const locale = useCurrentLocale();
+  const searchParams = useSearchParams();
   const nav = useTranslations("navigation");
+  const unitParam = searchParams.get("unit") ?? undefined;
+  const unitsQuery = useUnits();
+  const courseProgressQuery = useCourseProgress();
+  const userProgressQuery = useUserProgress();
+  const lessonPercentageQuery = useLessonPercentage();
+  const units = unitsQuery.data ?? [];
+  const courseProgress = courseProgressQuery.data;
+  const userProgress = userProgressQuery.data;
+  const lessonPercentage = lessonPercentageQuery.data ?? 0;
+  const { t, unlockedUnitIds, activeUnitId, selectedUnit, getCefrLevel } =
+    useLearn({ units, courseProgress: courseProgress ?? {}, unitParam });
+
+  useEffect(() => {
+    if (
+      !unitsQuery.isLoading &&
+      !courseProgressQuery.isLoading &&
+      !userProgressQuery.isLoading &&
+      (!courseProgress || !userProgress || !userProgress.activeCourse)
+    ) {
+      router.replace(withLocale("/placement-test", locale));
+    }
+  }, [
+    courseProgress,
+    courseProgressQuery.isLoading,
+    locale,
+    router,
+    unitsQuery.isLoading,
+    userProgress,
+    userProgressQuery.isLoading,
+  ]);
+
+  if (
+    unitsQuery.isLoading ||
+    courseProgressQuery.isLoading ||
+    userProgressQuery.isLoading ||
+    lessonPercentageQuery.isLoading ||
+    !courseProgress ||
+    !userProgress ||
+    !userProgress.activeCourse
+  ) {
+    return <ListPageSkeleton />;
+  }
 
   const selectedLevel = selectedUnit ? getCefrLevel(selectedUnit.title) : null;
   const selectedTitle = selectedLevel

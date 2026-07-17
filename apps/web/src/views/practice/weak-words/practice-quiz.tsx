@@ -20,9 +20,9 @@ import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 import type { WeakWordsPracticeChallenge } from "@/src/modules/practice/weak-words-session";
 
-import { Challenge } from "@/src/views/lesson/challenge";
-import { Footer } from "@/src/views/lesson/footer";
-import { QuestionBubble } from "@/src/views/lesson/question-bubble";
+import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
+import { Footer } from "@/app/features/lessons/components/LessonFooter";
+import { QuestionBubble } from "@/app/features/lessons/components/QuestionBubble";
 import { PracticeResult, type PracticeResultItem } from "../practice-result";
 import { PracticeSessionShell } from "../practice-session-shell";
 

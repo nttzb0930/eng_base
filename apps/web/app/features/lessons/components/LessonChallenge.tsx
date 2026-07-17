@@ -1,7 +1,10 @@
-import type { Challenge as ChallengeType, ChallengeOption } from "@/src/modules/learning/queries";
+import type {
+  Challenge as ChallengeType,
+  ChallengeOption,
+} from "@repo/shared/learning";
 import { cn } from "@/app/utils/cn";
 
-import { Card } from "./card";
+import { Card } from "./LessonCard";
 
 export type PlayableChallengeType =
   | ChallengeType["type"]

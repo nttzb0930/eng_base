@@ -6,18 +6,17 @@ import { useTranslations } from "next-intl";
 import { useAudio, useWindowSize, useMount } from "react-use";
 import { toast } from "sonner";
 
-import { upsertChallengeProgress } from "@/src/services/progress/challenge-progress.service";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
 import { toggleSavedWord } from "@/src/services/vocabulary/saved-words.service";
 import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
-import { reduceHearts } from "@/src/services/progress/user-progress.service";
-import { MAX_HEARTS } from "@/src/constants";
+import { MAX_HEARTS } from "@repo/shared/progress";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { progressApi } from "@/app/features/progress/api/progress.api";
 import type {
   Challenge as LessonChallenge,
   UserSavedWord,
   VocabularyItem,
-} from "@/src/modules/learning/queries";
+} from "@repo/shared/learning";
 import type { PracticeResultItem } from "@/src/views/practice/practice-result";
 import { useHeartsModal } from "@/src/stores/use-hearts-modal";
 import { usePracticeModal } from "@/src/stores/use-practice-modal";
@@ -31,19 +30,19 @@ export type QuizChallenge = LessonChallenge & {
   | null;
 };
 
-type UseQuizParams = {
+type UseLessonQuizParams = {
   initialPercentage: number;
   initialHearts: number;
   initialLessonId: number;
   initialLessonChallenges: QuizChallenge[];
 };
 
-export function useQuiz({
+export function useLessonQuiz({
   initialPercentage,
   initialHearts,
   initialLessonId,
   initialLessonChallenges,
-}: UseQuizParams) {
+}: UseLessonQuizParams) {
   const t = useTranslations("lesson");
   const locale = useCurrentLocale();
   const vocabularyT = useTranslations("vocabulary");
@@ -178,7 +177,7 @@ export function useQuiz({
 
     if (correctOption.id === selectedOption) {
       startTransition(() => {
-        upsertChallengeProgress(challenge.id)
+        progressApi.completeChallenge(challenge.id)
           .then((response) => {
             if (response?.error === "hearts") {
               setHearts(0);
@@ -217,7 +216,7 @@ export function useQuiz({
       });
     } else {
       startTransition(() => {
-        reduceHearts(challenge.id)
+        progressApi.reduceHearts(challenge.id)
           .then((response) => {
             setWrongCount((current) => current + 1);
             const reviewedItem = createReviewedItem(

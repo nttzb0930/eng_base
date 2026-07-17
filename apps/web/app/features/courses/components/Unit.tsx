@@ -1,7 +1,7 @@
-import type { LessonWithCompletion, LessonWithUnit } from "@/src/modules/learning/queries";
+import type { LessonWithCompletion, LessonWithUnit } from "@repo/shared/learning";
 
-import { LessonButton } from "./lesson-button";
-import { UnitBanner } from "./unit-banner";
+import { LessonButton } from "./LessonButton";
+import { UnitBanner } from "./UnitBanner";
 
 type UnitProps = {
   id: number;

@@ -18,7 +18,7 @@ import {
 import { useTranslations } from "next-intl";
 import Confetti from "react-confetti";
 
-type LessonCompleteViewProps = {
+type LessonCompleteProps = {
   lessonId: number;
   lessonTitle: string;
   nextLesson: { id: number; title: string } | null;
@@ -38,7 +38,7 @@ const formatDuration = (seconds: number) => {
   return `${minutes}:${remainder.toString().padStart(2, "0")}`;
 };
 
-export default function LessonCompleteView({
+export function LessonComplete({
   lessonId,
   lessonTitle,
   nextLesson,
@@ -50,7 +50,7 @@ export default function LessonCompleteView({
   reviewedItems,
   width,
   height,
-}: LessonCompleteViewProps) {
+}: LessonCompleteProps) {
   const t = useTranslations("lessonComplete");
   const totalAttempts = correctCount + wrongCount;
   const accuracy =

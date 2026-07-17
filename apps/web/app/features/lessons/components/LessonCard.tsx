@@ -5,7 +5,7 @@ import { useAudio, useKey } from "react-use";
 import { motion } from "framer-motion";
 
 import { cn } from "@/app/utils/cn";
-import type { PlayableChallengeType } from "./challenge";
+import type { PlayableChallengeType } from "./LessonChallenge";
 
 type CardProps = {
   id: number;

@@ -20,8 +20,8 @@ import { withLocale } from "@/app/i18n/paths";
 import type { PracticeCefrLevel } from "@/src/modules/practice/fill-blank-session";
 import type { ListeningPracticeChallenge } from "@/src/modules/practice/listening-session";
 
-import { Challenge } from "@/src/views/lesson/challenge";
-import { Footer } from "@/src/views/lesson/footer";
+import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
+import { Footer } from "@/app/features/lessons/components/LessonFooter";
 import { PracticeResult, type PracticeResultItem } from "../practice-result";
 import { PracticeSessionShell } from "../practice-session-shell";
 
