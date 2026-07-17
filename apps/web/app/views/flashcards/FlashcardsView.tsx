@@ -1,23 +1,19 @@
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { redirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
-import {
-  Bookmark,
-  Brain,
-  CalendarClock,
-  Layers,
-} from "lucide-react";
+"use client";
 
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Bookmark, Brain, CalendarClock, Layers } from "lucide-react";
+import { CEFR_LEVELS } from "@repo/shared";
+
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { useFlashcardSummary } from "@/app/features/flashcards/hooks/use-flashcards";
+import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
 import { withLocale } from "@/app/i18n/paths";
-import { getLocalizedPath } from "@/app/i18n/server";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
-import {
-  getUserProgress,
-} from "@/src/modules/learning/queries";
-import { PRACTICE_CEFR_LEVELS } from "@/src/modules/practice/fill-blank-session";
-import { getFlashcardDeckSummary } from "@/src/modules/flashcards/queries";
-
 const deckCards = [
   {
     key: "due",
@@ -49,15 +45,25 @@ const getToneClasses = (tone: "rose" | "sky" | "orange" | "green") => {
   return "border-green-600 bg-green-500";
 };
 
-const FlashcardsPage = async () => {
-  const t = await getTranslations("flashcards");
-  const [userProgress, summary] = await Promise.all([
-    getUserProgress(),
-    getFlashcardDeckSummary(),
-  ]);
+export function FlashcardsView() {
+  const t = useTranslations("flashcards");
+  const router = useRouter();
+  const locale = useCurrentLocale();
+  const userProgressQuery = useUserProgress();
+  const summaryQuery = useFlashcardSummary();
 
-  if (!userProgress?.activeCourse) {
-    redirect(await getLocalizedPath("/courses"));
+  const userProgress = userProgressQuery.data;
+  const summary = summaryQuery.data;
+  const isLoading = userProgressQuery.isLoading || summaryQuery.isLoading;
+
+  useEffect(() => {
+    if (!isLoading && !userProgress?.activeCourse) {
+      router.replace(withLocale("/courses", locale));
+    }
+  }, [isLoading, locale, router, userProgress?.activeCourse]);
+
+  if (isLoading || !userProgress?.activeCourse || !summary) {
+    return <ListPageSkeleton />;
   }
 
   return (
@@ -125,7 +131,7 @@ const FlashcardsPage = async () => {
                 {t("cefrDecks")}
               </h2>
               <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-                {PRACTICE_CEFR_LEVELS.map((level) => {
+                {CEFR_LEVELS.map((level) => {
                   const count = summary.levels[level];
                   const disabled = count === 0;
 
@@ -162,6 +168,4 @@ const FlashcardsPage = async () => {
       </div>
     </div>
   );
-};
-
-export default FlashcardsPage;
+}

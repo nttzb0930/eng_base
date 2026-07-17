@@ -1,28 +1,30 @@
+"use client";
+
 import Image from "next/image";
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
+import { SessionPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { SavedWordsReviewQuiz } from "@/app/features/review/components/SavedWordsReviewQuiz";
+import type { SavedWordsReviewMode } from "@/app/features/review/api/review.api";
+import { useSavedWordsReviewChallenges } from "@/app/features/review/hooks/use-review";
 import { withLocale } from "@/app/i18n/paths";
-import { getSavedWordReviewChallenges } from "@/src/modules/vocabulary/review-session";
 
-import { SavedWordsReviewQuiz } from "@/src/views/saved-words/review/review-quiz";
-
-type SavedWordsReviewPageProps = {
-  searchParams: Promise<{
-    mode?: string;
-  }>;
+type SavedWordsReviewViewProps = {
+  mode?: string;
 };
 
-const SavedWordsReviewPage = async ({
-  searchParams,
-}: SavedWordsReviewPageProps) => {
-  const t = await getTranslations("savedWords");
-  const { mode } = await searchParams;
-  const reviewMode = mode === "due" ? "due" : "all";
-  const challenges = await getSavedWordReviewChallenges(reviewMode);
+export function SavedWordsReviewView({ mode }: SavedWordsReviewViewProps) {
+  const t = useTranslations("savedWords");
+  const reviewMode: SavedWordsReviewMode = mode === "due" ? "due" : "all";
+  const challengesQuery = useSavedWordsReviewChallenges(reviewMode);
+  const challenges = challengesQuery.data ?? [];
 
+  if (challengesQuery.isLoading) {
+    return <SessionPageSkeleton embedded />;
+  }
   if (challenges.length === 0) {
     return (
       <div className="px-6">
@@ -65,6 +67,4 @@ const SavedWordsReviewPage = async ({
       reviewMode={reviewMode}
     />
   );
-};
-
-export default SavedWordsReviewPage;
+}

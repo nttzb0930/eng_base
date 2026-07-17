@@ -26,7 +26,7 @@ import type { PracticeResultItem } from "@/src/views/practice/practice-result";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
-import type { VocabularyItem } from "@/src/modules/learning/queries";
+import type { VocabularyItem } from "@repo/shared/vocabulary";
 import { vocabularyApi, type FlashcardRating } from "@/app/features/vocabulary/api/vocabulary.api";
 
 type FlashcardSessionProps = {

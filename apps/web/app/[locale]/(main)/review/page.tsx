@@ -1,1 +1,5 @@
-export { default } from "@/src/views/review/ReviewPage";
+import { ReviewView } from "@/app/views/review/ReviewView";
+
+export default function ReviewPage() {
+  return <ReviewView />;
+}
