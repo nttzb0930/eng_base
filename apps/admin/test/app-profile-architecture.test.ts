@@ -85,3 +85,17 @@ test("Admin Users follows the EC feature and view profile", () => {
   assert.equal(routeSource.includes("@/app/views/users/UsersView"), true);
   assert.equal(routeSource.includes("@/src/views/users"), false);
 });
+
+test("Admin Practice Sessions follows the Practice owner profile", () => {
+  assert.equal(existsSync(join(root, "app/features/practice/api/practice-session.api.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/practice/hooks/use-practice-sessions.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/practice/types/practice-session.types.ts")), true);
+  assert.equal(existsSync(join(root, "app/views/practice-sessions/PracticeSessionsView.tsx")), true);
+  assert.equal(existsSync(join(root, "src/services/practice-sessions")), false);
+  assert.equal(existsSync(join(root, "src/views/practice-sessions")), false);
+  assert.equal(existsSync(join(root, "app/features/practice-sessions")), false);
+
+  const routeSource = readFileSync(join(root, "app/(dashboard)/practice-sessions/page.tsx"), "utf8");
+  assert.equal(routeSource.includes("@/app/views/practice-sessions/PracticeSessionsView"), true);
+  assert.equal(routeSource.includes("@/src/views/practice-sessions"), false);
+});

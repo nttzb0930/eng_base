@@ -1,4 +1,4 @@
-import { PracticeSessionsView } from "@/src/views/practice-sessions/practice-sessions.view";
+import { PracticeSessionsView } from "@/app/views/practice-sessions/PracticeSessionsView";
 
 export default function PracticeSessionsPage() {
   return <PracticeSessionsView />;

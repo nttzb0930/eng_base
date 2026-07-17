@@ -4,7 +4,8 @@ import React, { useMemo, useState } from "react";
 import { BarChart3, CheckCircle2, Eye, Trash2, XCircle } from "lucide-react";
 import { toast } from "sonner";
 
-import type { PracticeSessionItem } from "@/src/services/practice-sessions/practice-sessions.service";
+import { useDeletePracticeSession, usePracticeSessionDetails, usePracticeSessions } from "@/app/features/practice/hooks/use-practice-sessions";
+import type { PracticeSession, PracticeSessionItem } from "@/app/features/practice/types/practice-session.types";
 import { useDebounce } from "@/app/hooks/use-debounce";
 import { useTableControls } from "@/app/hooks/use-table-controls";
 import { Button } from "@/app/components/ui/button";
@@ -12,8 +13,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Card, CardContent } from "@/app/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/app/components/ui/table";
 import { DataTableCard, type Column } from "@/app/components/data-table";
-import { useDeletePracticeSession, usePracticeSessionDetails, usePracticeSessions } from "./hooks/use-practice-sessions";
-import type { PracticeSession } from "@/src/services/practice-sessions/practice-sessions.service";
 
 export function PracticeSessionsView() {
   const { currentPage, setCurrentPage, pageSize, setPageSize, searchQuery, setSearchQuery } = useTableControls();
