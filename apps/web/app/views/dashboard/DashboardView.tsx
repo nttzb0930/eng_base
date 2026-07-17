@@ -1,6 +1,8 @@
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { redirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import {
   ArrowRight,
   Activity,
@@ -17,15 +19,17 @@ import {
   Target,
 } from "lucide-react";
 
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { Progress } from "@/app/components/ui/progress";
+import { useDashboard } from "@/app/features/dashboard/hooks/use-dashboard";
+import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { useDailyReviewSummary } from "@/app/features/review/hooks/use-review";
 import { withLocale } from "@/app/i18n/paths";
-import { getLocalizedPath } from "@/app/i18n/server";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
-import { getDashboardStats } from "@/src/modules/dashboard/queries";
-import { getUserProgress } from "@/src/modules/learning/queries";
-import { getDailyReviewSummary } from "@/src/modules/review/daily-review";
 
 const overviewCards = [
   {
@@ -66,16 +70,30 @@ const getModeLabelKey = (mode: string) => {
   return `modes.${mode}` as const;
 };
 
-const DashboardPage = async () => {
-  const t = await getTranslations("dashboard");
-  const [userProgress, dashboard, dailyReview] = await Promise.all([
-    getUserProgress(),
-    getDashboardStats(),
-    getDailyReviewSummary(),
-  ]);
+export function DashboardView() {
+  const t = useTranslations("dashboard");
+  const router = useRouter();
+  const locale = useCurrentLocale();
+  const userProgressQuery = useUserProgress();
+  const dashboardQuery = useDashboard();
+  const dailyReviewQuery = useDailyReviewSummary();
 
-  if (!userProgress?.activeCourse) {
-    redirect(await getLocalizedPath("/courses"));
+  const userProgress = userProgressQuery.data;
+  const dashboard = dashboardQuery.data;
+  const dailyReview = dailyReviewQuery.data;
+  const isLoading =
+    userProgressQuery.isLoading ||
+    dashboardQuery.isLoading ||
+    dailyReviewQuery.isLoading;
+
+  useEffect(() => {
+    if (!isLoading && !userProgress?.activeCourse) {
+      router.replace(withLocale("/courses", locale));
+    }
+  }, [isLoading, locale, router, userProgress?.activeCourse]);
+
+  if (isLoading || !userProgress?.activeCourse || !dashboard || !dailyReview) {
+    return <ListPageSkeleton />;
   }
 
   const activeLevel =
@@ -654,6 +672,4 @@ const DashboardPage = async () => {
       </div>
     </div>
   );
-};
-
-export default DashboardPage;
+}

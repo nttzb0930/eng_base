@@ -5,7 +5,6 @@ import type {
   Course,
   CourseDetails,
   CourseProgress,
-  LeaderboardUser,
   LessonDetails,
   LessonWithCompletion,
   LessonWithUnit,
@@ -68,8 +67,4 @@ export const getLessonPercentage = cache(() =>
 
 export const getSavedVocabularyWords = cache(() =>
   apiRequest<SavedVocabularyWord[]>("/vocabulary/saved-words")
-);
-
-export const getTopTenUsers = cache(() =>
-  apiRequest<LeaderboardUser[]>("/leaderboard")
 );

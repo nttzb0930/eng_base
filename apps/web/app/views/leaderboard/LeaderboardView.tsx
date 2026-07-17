@@ -1,28 +1,38 @@
-import Image from "next/image";
-import { redirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+"use client";
 
+import { useEffect } from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { Avatar, AvatarImage } from "@/app/components/ui/avatar";
 import { Separator } from "@/app/components/ui/separator";
-import { getLocalizedPath } from "@/app/i18n/server";
-import {
-  getTopTenUsers,
-  getUserProgress,
-} from "@/src/modules/learning/queries";
+import { useLeaderboard } from "@/app/features/leaderboard/hooks/use-leaderboard";
+import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 
-const LeaderboardPage = async () => {
-  const t = await getTranslations("leaderboard");
-  const userProgressData = getUserProgress();
-  const leaderboardData = getTopTenUsers();
+export function LeaderboardView() {
+  const t = useTranslations("leaderboard");
+  const router = useRouter();
+  const locale = useCurrentLocale();
+  const userProgressQuery = useUserProgress();
+  const leaderboardQuery = useLeaderboard();
 
-  const [userProgress, leaderboard] = await Promise.all([
-    userProgressData,
-    leaderboardData,
-  ]);
+  const userProgress = userProgressQuery.data;
+  const leaderboard = leaderboardQuery.data ?? [];
+  const isLoading = userProgressQuery.isLoading || leaderboardQuery.isLoading;
 
-  if (!userProgress || !userProgress.activeCourse) {
-    redirect(await getLocalizedPath("/courses"));
+  useEffect(() => {
+    if (!isLoading && !userProgress?.activeCourse) {
+      router.replace(withLocale("/courses", locale));
+    }
+  }, [isLoading, locale, router, userProgress?.activeCourse]);
+
+  if (isLoading || !userProgress?.activeCourse) {
+    return <ListPageSkeleton />;
   }
 
   return (
@@ -70,6 +80,4 @@ const LeaderboardPage = async () => {
       </div>
     </div>
   );
-};
-
-export default LeaderboardPage;
+}
