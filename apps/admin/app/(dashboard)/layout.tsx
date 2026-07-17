@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
-import { AuthGuard } from "@/components/auth/AuthGuard";
+import { AuthGuard } from "@/app/features/auth/components/AuthGuard";
 import { cn } from "@/app/utils/cn";
 import { Button } from "@/app/components/ui/button";
 import {

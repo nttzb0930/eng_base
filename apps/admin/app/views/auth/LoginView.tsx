@@ -9,8 +9,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 import { Label } from "@/app/components/ui/label";
+import { useAdminLogin } from "@/app/features/auth/hooks/use-admin-login";
 import { HttpClientError } from "@/src/lib/http-client";
-import { useAdminLogin } from "./hooks/use-admin-login";
 
 export function LoginView() {
   const router = useRouter();

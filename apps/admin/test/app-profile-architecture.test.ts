@@ -61,3 +61,14 @@ test("Admin architecture check includes every architecture test", () => {
 
   assert.equal(packageJson.scripts?.["architecture:check"], 'tsx --test "test/*architecture.test.ts"');
 });
+
+test("Admin Auth follows the EC feature and view profile", () => {
+  assert.equal(existsSync(join(root, "app/features/auth/api/auth.api.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/auth/hooks/use-admin-login.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/auth/components/AuthGuard.tsx")), true);
+  assert.equal(existsSync(join(root, "app/features/auth/types/auth.types.ts")), true);
+  assert.equal(existsSync(join(root, "app/views/auth/LoginView.tsx")), true);
+  assert.equal(existsSync(join(root, "src/services/auth")), false);
+  assert.equal(existsSync(join(root, "src/views/login")), false);
+  assert.equal(existsSync(join(root, "components/auth/AuthGuard.tsx")), false);
+});

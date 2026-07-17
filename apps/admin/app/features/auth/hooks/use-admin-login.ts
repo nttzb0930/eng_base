@@ -1,8 +1,9 @@
 import { useMutation } from "@tanstack/react-query";
-import { authService } from "@/src/services/auth/auth.service";
+
+import { authApi } from "../api/auth.api";
 
 export function useAdminLogin() {
   return useMutation({
-    mutationFn: authService.login,
+    mutationFn: authApi.login,
   });
 }
