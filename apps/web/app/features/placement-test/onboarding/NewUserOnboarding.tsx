@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ArrowRight, LogOut } from "lucide-react";
+import { LogOut } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
@@ -16,11 +16,12 @@ import {
   DialogFooter,
 } from "@/app/components/ui/dialog";
 
-import LanguageStep from "./steps/LanguageStep";
-import LevelStep from "./steps/LevelStep";
-import GoalStep from "./steps/GoalStep";
-import IntensityStep from "./steps/IntensityStep";
-import { updateOnboardingAction } from "@/src/services/placement-test/placement-test.service";
+import { useUpdatePlacementOnboarding } from "../hooks/use-placement-test";
+import type { PlacementOnboardingData } from "../types/placement-test.types";
+import LanguageStep from "./LanguageStep";
+import LevelStep from "./LevelStep";
+import GoalStep from "./GoalStep";
+import IntensityStep from "./IntensityStep";
 
 type NewUserOnboardingProps = {
   onComplete: (
@@ -33,14 +34,7 @@ type NewUserOnboardingProps = {
   ) => void;
   onStartTest: () => void;
   initialStep?: number;
-  initialData?: {
-    selectedLangs?: string[];
-    primaryLang?: string | null;
-    selectedLevels?: Record<string, string>;
-    selectedGoals?: string[];
-    customGoal?: string;
-    selectedIntensity?: string;
-  };
+  initialData?: PlacementOnboardingData;
 };
 
 export default function NewUserOnboarding({
@@ -50,6 +44,7 @@ export default function NewUserOnboarding({
   initialData,
 }: NewUserOnboardingProps) {
   const { logout } = useAuth();
+  const updateOnboarding = useUpdatePlacementOnboarding();
   const t = useTranslations("placementTest");
   const [step, setStep] = useState(initialStep || 1);
   const [selectedLangs, setSelectedLangs] = useState<string[]>(initialData?.selectedLangs || []);
@@ -71,7 +66,7 @@ export default function NewUserOnboarding({
         customGoal,
         selectedIntensity,
       };
-      await updateOnboardingAction(nextStep, dataToSave);
+      await updateOnboarding.mutateAsync({ step: nextStep, data: dataToSave });
     } catch (error) {
       console.error("Failed to save onboarding state to DB:", error);
     }

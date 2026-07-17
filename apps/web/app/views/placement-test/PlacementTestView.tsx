@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
@@ -9,9 +10,11 @@ import { Volume2, Award, ArrowRight, BookOpen, Compass, CheckCircle2, AlertTrian
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
-import type { PlacementTestResponse } from "@repo/shared/placement-test";
-import { usePlacementTest } from "./hooks/usePlacementTest";
-import NewUserOnboarding from "./components/new-user-onboarding";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { withLocale } from "@/app/i18n/paths";
+import { usePlacementTest } from "@/app/features/placement-test/hooks/use-placement-test";
+import NewUserOnboarding from "@/app/features/placement-test/onboarding/NewUserOnboarding";
+import type { PlacementOnboardingData } from "@/app/features/placement-test/types/placement-test.types";
 import {
   Dialog,
   DialogContent,
@@ -21,11 +24,9 @@ import {
   DialogFooter,
 } from "@/app/components/ui/dialog";
 
-type PlacementTestViewProps = {
-  initialData: PlacementTestResponse | null;
-};
-
-export default function PlacementTestView({ initialData }: PlacementTestViewProps) {
+export function PlacementTestView() {
+  const router = useRouter();
+  const locale = useCurrentLocale();
   const localizeChallengeQuestion = useLocalizedChallengeQuestion();
   const { width: confettiWidth, height: confettiHeight } = useWindowSize();
   const {
@@ -45,12 +46,15 @@ export default function PlacementTestView({ initialData }: PlacementTestViewProp
     handleContinue,
     handleConfirmLevel,
     handleReset,
-  } = usePlacementTest(initialData);
+    isInitialLoading,
+    hasInitialError,
+  } = usePlacementTest();
 
-  const isFirstQuestion = initialData?.status === "IN_PROGRESS" && initialData.questionNumber === 1;
-  const [showIntro, setShowIntro] = useState(isFirstQuestion);
+  const isFirstQuestion = session?.status === "IN_PROGRESS" && session.questionNumber === 1;
+  const [showIntro, setShowIntro] = useState(false);
   const [isSkipModalOpen, setIsSkipModalOpen] = useState(false);
   const bypassWarning = useRef(false);
+  const hasInitializedIntro = useRef(false);
 
   // Warn user before reloading or leaving the page during an active test session
   useEffect(() => {
@@ -64,6 +68,18 @@ export default function PlacementTestView({ initialData }: PlacementTestViewProp
       window.removeEventListener("beforeunload", handleBeforeUnload);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isFirstQuestion || hasInitializedIntro.current) return;
+    hasInitializedIntro.current = true;
+    setShowIntro(true);
+  }, [isFirstQuestion]);
+
+  useEffect(() => {
+    if (session?.status !== "CONFIRMED") return;
+    bypassWarning.current = true;
+    router.replace(withLocale("/learn", locale));
+  }, [locale, router, session?.status]);
 
   const handleConfirmLevelWithBypass = (
     level: string,
@@ -91,7 +107,7 @@ export default function PlacementTestView({ initialData }: PlacementTestViewProp
   };
 
   // 1. Màn hình lỗi nếu không lấy được dữ liệu ban đầu
-  if (initialData === null && !session) {
+  if (hasInitialError) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 bg-neutral-50 p-6 text-center">
         <div className="h-16 w-16 bg-rose-100 rounded-full flex items-center justify-center mb-2">
@@ -112,7 +128,7 @@ export default function PlacementTestView({ initialData }: PlacementTestViewProp
   }
 
   // 2. Màn hình loading khởi tạo
-  if (!session) {
+  if (isInitialLoading || !session || session.status === "CONFIRMED") {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 bg-neutral-50 text-neutral-600">
         <RefreshCw className="h-10 w-10 animate-spin text-sky-500" />
@@ -127,8 +143,12 @@ export default function PlacementTestView({ initialData }: PlacementTestViewProp
       <NewUserOnboarding
         onComplete={handleConfirmLevelWithBypass}
         onStartTest={() => setShowIntro(false)}
-        initialStep={initialData && "onboardingStep" in initialData ? initialData.onboardingStep : undefined}
-        initialData={initialData && "onboardingData" in initialData ? (initialData.onboardingData as any) : undefined}
+        initialStep={"onboardingStep" in session ? session.onboardingStep : undefined}
+        initialData={
+          "onboardingData" in session
+            ? (session.onboardingData as PlacementOnboardingData | undefined)
+            : undefined
+        }
       />
     );
   }
