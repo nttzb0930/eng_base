@@ -2,7 +2,8 @@
 
 ## Status
 
-Approved direction; pending written-spec review before implementation planning.
+Approved on 2026-07-17. Implementation is split into independent Web and Admin
+plans under `docs/superpowers/plans`.
 
 ## Objective
 
