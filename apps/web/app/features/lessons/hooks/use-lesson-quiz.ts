@@ -8,14 +8,14 @@ import { toast } from "sonner";
 
 import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
-import { MAX_HEARTS } from "@repo/shared/progress";
+import { MAX_HEARTS } from "@repo/shared";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { progressApi } from "@/app/features/progress/api/progress.api";
 import type {
   Challenge as LessonChallenge,
   UserSavedWord,
   VocabularyItem,
-} from "@repo/shared/learning";
+} from "@repo/shared";
 import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
 import { useHeartsModal } from "@/app/features/progress/store/hearts-modal.store";
 import { usePracticeModal } from "@/app/features/practice/store/practice-modal.store";

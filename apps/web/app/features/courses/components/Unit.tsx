@@ -1,4 +1,4 @@
-import type { LessonWithCompletion, LessonWithUnit } from "@repo/shared/learning";
+import type { LessonWithCompletion, LessonWithUnit } from "@repo/shared";
 
 import { LessonButton } from "./LessonButton";
 import { UnitBanner } from "./UnitBanner";

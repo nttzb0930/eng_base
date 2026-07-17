@@ -1,4 +1,4 @@
-import type { SavedVocabularyWord } from "@repo/shared/vocabulary";
+import type { SavedVocabularyWord } from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

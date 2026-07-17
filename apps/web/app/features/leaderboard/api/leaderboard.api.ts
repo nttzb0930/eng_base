@@ -1,4 +1,4 @@
-import type { LeaderboardUser } from "@repo/shared/learning";
+import type { LeaderboardUser } from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

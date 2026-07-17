@@ -1,6 +1,6 @@
 "use client";
 
-import type { SavedVocabularyWord } from "@repo/shared/vocabulary";
+import type { SavedVocabularyWord } from "@repo/shared";
 import {
   Bookmark,
   Check,

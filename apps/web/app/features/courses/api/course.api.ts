@@ -1,4 +1,4 @@
-import type { Course, CourseDetails } from "@repo/shared/learning";
+import type { Course, CourseDetails } from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

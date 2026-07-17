@@ -3,7 +3,7 @@ import type {
   ReviewSummary,
   SavedWordReviewChallenge,
   SavedWordsReviewSummary,
-} from "@repo/shared/review";
+} from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

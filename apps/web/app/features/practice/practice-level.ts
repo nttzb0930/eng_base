@@ -1,5 +1,5 @@
 import { CEFR_LEVELS } from "@repo/shared";
-import type { PracticeCefrLevel } from "@repo/shared/practice";
+import type { PracticeCefrLevel } from "@repo/shared";
 
 export type { PracticeCefrLevel };
 

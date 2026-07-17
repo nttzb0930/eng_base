@@ -1,4 +1,4 @@
-import type { Course } from "@repo/shared/learning";
+import type { Course } from "@repo/shared";
 
 type UserProgressProps = {
   activeCourse: Course;

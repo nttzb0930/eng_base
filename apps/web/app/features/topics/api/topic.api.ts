@@ -1,7 +1,7 @@
 import type {
   VocabularyTopic,
   VocabularyTopicDetails,
-} from "@repo/shared/vocabulary";
+} from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

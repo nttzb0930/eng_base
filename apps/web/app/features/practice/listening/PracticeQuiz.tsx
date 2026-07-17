@@ -17,7 +17,7 @@ import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
 import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
-import type { ListeningPracticeChallenge } from "@repo/shared/practice";
+import type { ListeningPracticeChallenge } from "@repo/shared";
 
 import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
 import { Footer } from "@/app/features/lessons/components/LessonFooter";

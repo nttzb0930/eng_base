@@ -1,13 +1,13 @@
 import type {
   PlacementTestResponse,
   SubmitAnswerResponse,
-} from "@repo/shared/placement-test";
+} from "@repo/shared";
 
 export type {
   PlacementTestQuestion,
   PlacementTestResponse,
   SubmitAnswerResponse,
-} from "@repo/shared/placement-test";
+} from "@repo/shared";
 
 export type SubmitPlacementAnswerInput = {
   challengeId: number;

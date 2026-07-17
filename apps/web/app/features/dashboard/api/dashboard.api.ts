@@ -1,4 +1,4 @@
-import type { DashboardStats } from "@repo/shared/dashboard";
+import type { DashboardStats } from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

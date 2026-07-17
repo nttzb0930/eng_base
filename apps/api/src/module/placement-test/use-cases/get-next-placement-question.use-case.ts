@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import type { Prisma } from "@prisma/client";
-import type { PlacementTestResponse } from "@repo/shared/placement-test";
+import type { PlacementTestResponse } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import {

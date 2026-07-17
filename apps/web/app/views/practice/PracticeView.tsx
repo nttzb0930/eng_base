@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import type { PracticeLevelSummary } from "@repo/shared/practice";
+import type { PracticeLevelSummary } from "@repo/shared";
 import {
   ArrowRight,
   BookOpenText,

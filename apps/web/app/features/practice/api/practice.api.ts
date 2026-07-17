@@ -5,7 +5,7 @@ import type {
   PracticeLevelSummary,
   WeakWordsPracticeChallenge,
   WeakWordsSummary,
-} from "@repo/shared/practice";
+} from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

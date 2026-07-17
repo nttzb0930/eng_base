@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import type { Challenge } from "@repo/shared/learning";
+import type { Challenge } from "@repo/shared";
 
 import { SessionPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { useUnits } from "@/app/features/courses/hooks/use-units";

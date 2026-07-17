@@ -1,5 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
-import type { VocabularyItem } from "@repo/shared/vocabulary";
+import type { VocabularyItem } from "@repo/shared";
 
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";

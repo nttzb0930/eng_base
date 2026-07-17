@@ -1,14 +1,6 @@
 import prettier from "eslint-config-prettier";
 import tseslint from "typescript-eslint";
 
-const courseContractPaths = [
-  {
-    name: "@repo/shared",
-    importNames: ["Course", "UnitRecord", "LessonRecord", "ChallengeOption"],
-    message: "Import Course contracts from @repo/shared/courses.",
-  },
-];
-
 const privateSharedPatterns = [
   {
     group: [
@@ -37,7 +29,6 @@ export default tseslint.config(
       "no-restricted-imports": [
         "error",
         {
-          paths: courseContractPaths,
           patterns: privateSharedPatterns,
         },
       ],
@@ -50,7 +41,6 @@ export default tseslint.config(
       "no-restricted-imports": [
         "error",
         {
-          paths: courseContractPaths,
           patterns: [
             ...privateSharedPatterns,
             {

@@ -1,7 +1,7 @@
 import type {
   Challenge as ChallengeType,
-  ChallengeOption,
-} from "@repo/shared/learning";
+  LessonChallengeOption,
+} from "@repo/shared";
 import { cn } from "@/app/utils/cn";
 
 import { Card } from "./LessonCard";
@@ -12,7 +12,7 @@ export type PlayableChallengeType =
   | "FILL_BLANK";
 
 type ChallengeProps = {
-  options: ChallengeOption[];
+  options: LessonChallengeOption[];
   onSelect: (id: number) => void;
   status: "correct" | "wrong" | "none";
   selectedOption?: number;

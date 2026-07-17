@@ -16,7 +16,7 @@ import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
-import type { DictationPracticeChallenge } from "@repo/shared/practice";
+import type { DictationPracticeChallenge } from "@repo/shared";
 import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
 
 import { PracticeResult, type PracticeResultItem } from "../components/PracticeResult";

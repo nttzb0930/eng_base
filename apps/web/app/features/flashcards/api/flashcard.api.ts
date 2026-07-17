@@ -1,5 +1,4 @@
-import type { FlashcardSummary } from "@repo/shared/flashcards";
-import type { VocabularyItem } from "@repo/shared/vocabulary";
+import type { FlashcardSummary, VocabularyItem } from "@repo/shared";
 
 import { webHttpClient } from "@/src/lib/web-http-client";
 

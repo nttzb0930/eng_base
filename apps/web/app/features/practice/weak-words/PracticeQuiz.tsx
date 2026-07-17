@@ -18,7 +18,7 @@ import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyC
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
-import type { WeakWordsPracticeChallenge } from "@repo/shared/practice";
+import type { WeakWordsPracticeChallenge } from "@repo/shared";
 
 import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
 import { Footer } from "@/app/features/lessons/components/LessonFooter";
