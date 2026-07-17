@@ -1,10 +1,10 @@
 import { useLocale, useTranslations } from "next-intl";
+import type { VocabularyItem } from "@repo/shared/vocabulary";
 
 import { Button } from "@/app/components/ui/button";
-import type { VocabularyItem } from "@/src/modules/learning/queries";
 import { cn } from "@/app/utils/cn";
 
-import { VocabularyAudioButton } from "./vocabulary-audio-button";
+import { VocabularyAudioButton } from "./VocabularyAudioButton";
 
 type VocabularyCardProps = {
   item: VocabularyItem;

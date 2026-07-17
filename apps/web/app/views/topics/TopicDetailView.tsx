@@ -1,52 +1,64 @@
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { notFound, redirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
-import { ArrowLeft, BookOpenText, Brain } from "lucide-react";
+"use client";
 
+import { useEffect } from "react";
+import { ArrowLeft, BookOpenText, Brain } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { CEFR_LEVELS } from "@repo/shared";
+
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
-import { StickyWrapper } from "@/app/components/layout/StickyWrapper";
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { Progress } from "@/app/components/ui/progress";
-import { UserProgress } from "@/src/components/user-progress";
-import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
+import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { useTopic } from "@/app/features/topics/hooks/use-topics";
+import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
-import { getLocalizedPath } from "@/app/i18n/server";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
-import {
-  getUserProgress,
-} from "@/src/modules/learning/queries";
-import { PRACTICE_CEFR_LEVELS } from "@/src/modules/practice/fill-blank-session";
-import { getVocabularyTopicBySlug } from "@/src/modules/topics/queries";
 
-type TopicDetailPageProps = {
-  params: Promise<{
-    slug: string;
-  }>;
-  searchParams: Promise<{
-    level?: string;
-  }>;
+type TopicDetailViewProps = {
+  slug: string;
+  level?: string;
 };
-
 const getPercent = (value: number, total: number) => {
   return total === 0 ? 0 : Math.round((value / total) * 100);
 };
 
-const TopicDetailPage = async ({
-  params,
-  searchParams,
-}: TopicDetailPageProps) => {
-  const t = await getTranslations("topics");
-  const { slug } = await params;
-  const { level } = await searchParams;
-  const [userProgress, topic] = await Promise.all([
-    getUserProgress(),
-    getVocabularyTopicBySlug(slug, level),
-  ]);
+export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
+  const t = useTranslations("topics");
+  const router = useRouter();
+  const locale = useCurrentLocale();
+  const userProgressQuery = useUserProgress();
+  const topicQuery = useTopic(slug, level);
 
-  if (!userProgress?.activeCourse) {
-    redirect(await getLocalizedPath("/courses"));
+  const userProgress = userProgressQuery.data;
+  const topic = topicQuery.data;
+  const isLoading = userProgressQuery.isLoading || topicQuery.isLoading;
+
+  useEffect(() => {
+    if (!isLoading && !userProgress?.activeCourse) {
+      router.replace(withLocale("/courses", locale));
+    }
+  }, [isLoading, locale, router, userProgress?.activeCourse]);
+
+  if (isLoading || !userProgress?.activeCourse) {
+    return <ListPageSkeleton />;
   }
-  if (!topic) notFound();
+
+  if (!topic) {
+    return (
+      <FeedWrapper>
+        <div className="surface-panel border-dashed p-8 text-center">
+          <p className="font-bold text-neutral-700">{t("emptyTitle")}</p>
+          <Button asChild variant="secondary" className="mt-4">
+            <Link href={withLocale("/topics")}>{t("back")}</Link>
+          </Button>
+        </div>
+      </FeedWrapper>
+    );
+  }
 
   const learnedPercent = getPercent(topic.stats.learned, topic.stats.total);
   const masteredPercent = getPercent(topic.stats.mastered, topic.stats.total);
@@ -115,7 +127,7 @@ const TopicDetailPage = async ({
                   <span className="text-sm font-black uppercase">{t("all")}</span>
                 </Link>
               </Button>
-              {PRACTICE_CEFR_LEVELS.map((cefrLevel) => {
+              {CEFR_LEVELS.map((cefrLevel) => {
                 const active = topic.selectedLevel === cefrLevel;
                 const count = topic.countsByLevel[cefrLevel];
 
@@ -203,6 +215,4 @@ const TopicDetailPage = async ({
       </div>
     </div>
   );
-};
-
-export default TopicDetailPage;
+}

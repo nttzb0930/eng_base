@@ -8,7 +8,6 @@ import type {
   LessonDetails,
   LessonWithCompletion,
   LessonWithUnit,
-  SavedVocabularyWord,
   UnitRecord,
   UnitWithLessons,
   UserProgress,
@@ -63,8 +62,4 @@ export const getLesson = cache((id?: number) => {
 
 export const getLessonPercentage = cache(() =>
   apiRequest<number>("/progress/lesson-percentage")
-);
-
-export const getSavedVocabularyWords = cache(() =>
-  apiRequest<SavedVocabularyWord[]>("/vocabulary/saved-words")
 );

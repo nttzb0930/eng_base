@@ -1,16 +1,23 @@
-import { BookmarkCheck, CalendarClock, Layers3 } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+"use client";
 
+import { BookmarkCheck, CalendarClock, Layers3 } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { SavedWordsExplorer } from "@/app/features/vocabulary/components/SavedWordsExplorer";
+import { useSavedWords } from "@/app/features/vocabulary/hooks/use-vocabulary";
 import { withLocale } from "@/app/i18n/paths";
-import { getSavedVocabularyWords } from "@/src/modules/learning/queries";
+export function SavedWordsView() {
+  const t = useTranslations("savedWords");
+  const savedWordsQuery = useSavedWords();
 
-import { SavedWordsExplorer } from "@/src/views/saved-words/saved-words-explorer";
+  if (savedWordsQuery.isLoading) {
+    return <ListPageSkeleton />;
+  }
 
-const SavedWordsPage = async () => {
-  const t = await getTranslations("savedWords");
-  const savedWords = await getSavedVocabularyWords();
+  const savedWords = savedWordsQuery.data ?? [];
   const hasWords = savedWords.length > 0;
 
   return (
@@ -111,6 +118,4 @@ const SavedWordsPage = async () => {
       )}
     </div>
   );
-};
-
-export default SavedWordsPage;
+}

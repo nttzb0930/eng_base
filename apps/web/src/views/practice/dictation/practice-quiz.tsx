@@ -11,10 +11,10 @@ import Confetti from "react-confetti";
 import { useAudio, useWindowSize } from "react-use";
 import { toast } from "sonner";
 
-import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
+import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
 import { Button } from "@/app/components/ui/button";
-import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
+import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
 import type { DictationPracticeChallenge } from "@/src/modules/practice/dictation-session";
 import type { PracticeCefrLevel } from "@/src/modules/practice/fill-blank-session";
@@ -34,7 +34,7 @@ const normalizeAnswer = (value: string) => {
     .toLowerCase()
     .trim()
     .replace(/[.,!?;:"]/g, "")
-    .replace(/[’`]/g, "'")
+    .replace(/[â€™`]/g, "'")
     .replace(/\s+/g, " ");
 };
 
@@ -167,7 +167,7 @@ export const DictationPracticeQuiz = ({
     addReviewedItem(correct, answer);
 
     startTransition(() => {
-      recordVocabularyReviewResult(challenge.vocabularyItem.id, correct).catch(
+      vocabularyApi.recordReview(challenge.vocabularyItem.id, correct).catch(
         () => toast.error(t("saveProgressError"))
       );
     });

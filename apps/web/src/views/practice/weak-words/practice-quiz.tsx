@@ -11,10 +11,10 @@ import Confetti from "react-confetti";
 import { useAudio, useWindowSize } from "react-use";
 import { toast } from "sonner";
 
-import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
+import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
 import { Button } from "@/app/components/ui/button";
-import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
+import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
@@ -157,7 +157,7 @@ export const WeakWordsPracticeQuiz = ({
       addReviewedItem(true, correctOption.text);
 
       startTransition(() => {
-        recordVocabularyReviewResult(challenge.vocabularyItem.id, true).catch(
+        vocabularyApi.recordReview(challenge.vocabularyItem.id, true).catch(
           () => toast.error(t("saveReviewError"))
         );
       });
@@ -168,7 +168,7 @@ export const WeakWordsPracticeQuiz = ({
       addReviewedItem(false, options.find((option) => option.id === selectedOption)?.text);
 
       startTransition(() => {
-        recordVocabularyReviewResult(challenge.vocabularyItem.id, false).catch(
+        vocabularyApi.recordReview(challenge.vocabularyItem.id, false).catch(
           () => toast.error(t("saveReviewError"))
         );
       });

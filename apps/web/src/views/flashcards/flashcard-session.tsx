@@ -20,7 +20,6 @@ import Confetti from "react-confetti";
 import { useAudio, useWindowSize } from "react-use";
 import { toast } from "sonner";
 
-import { recordFlashcardRating } from "@/src/services/vocabulary/flashcard-progress.service";
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
 import { Button } from "@/app/components/ui/button";
 import type { PracticeResultItem } from "@/src/views/practice/practice-result";
@@ -28,7 +27,7 @@ import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
 import type { VocabularyItem } from "@/src/modules/learning/queries";
-import type { FlashcardRating } from "@/src/modules/vocabulary/progress";
+import { vocabularyApi, type FlashcardRating } from "@/app/features/vocabulary/api/vocabulary.api";
 
 type FlashcardSessionProps = {
   initialItems: VocabularyItem[];
@@ -143,7 +142,7 @@ export const FlashcardSession = ({
     if (!item || pending) return;
 
     startTransition(() => {
-      recordFlashcardRating(item.id, rating)
+      vocabularyApi.recordFlashcard(item.id, rating)
         .then(() => {
           setReviewedItems((current) => [
             ...current,

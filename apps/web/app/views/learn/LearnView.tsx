@@ -1,11 +1,11 @@
-"use client";
+﻿"use client";
 
 import { useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, BookOpen, Check, LockKeyhole, Play, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { DiscoveryTabs } from "@/src/components/discovery-tabs";
+import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
 import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
@@ -170,7 +170,7 @@ export function LearnView() {
                       <Icon className="h-5 w-5" aria-hidden="true" />
                     </span>
                     <span className="rounded-md bg-white/70 px-2 py-1 text-[11px] font-semibold">
-                      {locked ? "—" : `${percent}%`}
+                      {locked ? "â€”" : `${percent}%`}
                     </span>
                   </div>
                   <div className="mt-5">

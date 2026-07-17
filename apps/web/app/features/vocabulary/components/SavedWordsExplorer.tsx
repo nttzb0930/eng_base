@@ -12,14 +12,14 @@ import {
 } from "lucide-react";
 import { useMemo, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
-import { VocabularyAudioButton } from "@/src/components/vocabulary/vocabulary-audio-button";
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
-import { getVocabularyReviewStatus } from "@/src/modules/vocabulary/review-status";
-import { toggleSavedWord } from "@/src/services/vocabulary/saved-words.service";
+
+import { useToggleSavedWord } from "../hooks/use-vocabulary";
+import { getVocabularyReviewStatus } from "../vocabulary-review-status";
+import { VocabularyAudioButton } from "./VocabularyAudioButton";
 
 type SavedWordsExplorerProps = {
   initialWords: SavedVocabularyWord[];
@@ -34,7 +34,6 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
   const t = useTranslations("savedWords");
   const vocabularyT = useTranslations("vocabulary");
   const locale = useLocale();
-  const router = useRouter();
   const [words, setWords] = useState(initialWords);
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
@@ -42,6 +41,7 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
   const [page, setPage] = useState(1);
   const [removingId, setRemovingId] = useState<number | null>(null);
   const [pending, startTransition] = useTransition();
+  const toggleSavedWord = useToggleSavedWord();
 
   const stats = useMemo(
     () =>
@@ -121,12 +121,11 @@ export function SavedWordsExplorer({ initialWords }: SavedWordsExplorerProps) {
   const removeWord = (savedWord: SavedVocabularyWord) => {
     setRemovingId(savedWord.id);
     startTransition(() => {
-      void toggleSavedWord(savedWord.vocabularyItem.id)
+      void toggleSavedWord.mutateAsync(savedWord.vocabularyItem.id)
         .then((response) => {
           if (response.saved) throw new Error("Word remained saved");
           setWords((current) => current.filter((word) => word.id !== savedWord.id));
           toast.success(t("removeSuccess", { word: savedWord.vocabularyItem.word }));
-          router.refresh();
         })
         .catch(() => toast.error(t("removeError")))
         .finally(() => setRemovingId(null));

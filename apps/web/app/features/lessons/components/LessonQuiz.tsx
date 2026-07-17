@@ -1,6 +1,6 @@
-"use client";
+﻿"use client";
 
-import { VocabularyCard } from "@/src/components/vocabulary/vocabulary-card";
+import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 

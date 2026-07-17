@@ -1,29 +1,42 @@
-import { ArrowRight, Layers, Sparkles } from "lucide-react";
-import { redirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+"use client";
 
-import { DiscoveryTabs } from "@/src/components/discovery-tabs";
+import { useEffect } from "react";
+import { ArrowRight, Layers, Sparkles } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Progress } from "@/app/components/ui/progress";
+import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
+import { useTopics } from "@/app/features/topics/hooks/use-topics";
 import { withLocale } from "@/app/i18n/paths";
-import { getLocalizedPath } from "@/app/i18n/server";
-import { getUserProgress } from "@/src/modules/learning/queries";
-import { getVocabularyTopics } from "@/src/modules/topics/queries";
-
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 const getPercent = (value: number, total: number) =>
   total === 0 ? 0 : Math.round((value / total) * 100);
 
-const TopicsPage = async () => {
-  const [t, nav, userProgress, topics] = await Promise.all([
-    getTranslations("topics"),
-    getTranslations("navigation"),
-    getUserProgress(),
-    getVocabularyTopics(),
-  ]);
+export function TopicsView() {
+  const t = useTranslations("topics");
+  const nav = useTranslations("navigation");
+  const router = useRouter();
+  const locale = useCurrentLocale();
+  const userProgressQuery = useUserProgress();
+  const topicsQuery = useTopics();
 
-  if (!userProgress?.activeCourse) {
-    redirect(await getLocalizedPath("/courses"));
+  const userProgress = userProgressQuery.data;
+  const topics = topicsQuery.data ?? [];
+  const isLoading = userProgressQuery.isLoading || topicsQuery.isLoading;
+
+  useEffect(() => {
+    if (!isLoading && !userProgress?.activeCourse) {
+      router.replace(withLocale("/courses", locale));
+    }
+  }, [isLoading, locale, router, userProgress?.activeCourse]);
+
+  if (isLoading || !userProgress?.activeCourse) {
+    return <ListPageSkeleton />;
   }
 
   const recommended = [...topics].sort((a, b) => {
@@ -144,6 +157,4 @@ const TopicsPage = async () => {
       </div>
     </FeedWrapper>
   );
-};
-
-export default TopicsPage;
+}

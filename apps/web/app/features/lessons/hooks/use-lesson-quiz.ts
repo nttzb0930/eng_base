@@ -7,8 +7,7 @@ import { useAudio, useWindowSize, useMount } from "react-use";
 import { toast } from "sonner";
 
 import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
-import { toggleSavedWord } from "@/src/services/vocabulary/saved-words.service";
-import { recordVocabularyReviewResult } from "@/src/services/vocabulary/vocabulary-progress.service";
+import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { MAX_HEARTS } from "@repo/shared/progress";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { progressApi } from "@/app/features/progress/api/progress.api";
@@ -108,7 +107,7 @@ export function useLessonQuiz({
   const onToggleSavedWord = () => {
     if (!vocabularyItem) return;
     startTransition(() => {
-      toggleSavedWord(vocabularyItem.id)
+      vocabularyApi.toggleSaved(vocabularyItem.id)
         .then((response) => {
           setSavedVocabularyIds((current) => {
             const next = new Set(current);
@@ -195,7 +194,7 @@ export function useLessonQuiz({
               : reviewedItems;
             if (reviewedItem) {
               setReviewedItems(nextReviewedItems);
-              void recordVocabularyReviewResult(
+              void vocabularyApi.recordReview(
                 reviewedItem.vocabularyItemId,
                 true
               ).catch(() => toast.error(t("genericError")));
@@ -225,7 +224,7 @@ export function useLessonQuiz({
             );
             if (reviewedItem) {
               setReviewedItems((current) => [...current, reviewedItem]);
-              void recordVocabularyReviewResult(
+              void vocabularyApi.recordReview(
                 reviewedItem.vocabularyItemId,
                 false
               ).catch(() => toast.error(t("genericError")));

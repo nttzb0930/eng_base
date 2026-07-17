@@ -1,1 +1,5 @@
-export { default } from "@/src/views/saved-words/SavedWordsPage";
+import { SavedWordsView } from "@/app/views/saved-words/SavedWordsView";
+
+export default function SavedWordsPage() {
+  return <SavedWordsView />;
+}
