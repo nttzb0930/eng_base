@@ -2,8 +2,7 @@
 
 ## Status
 
-Design direction approved on 2026-07-18. This written specification is pending
-final user review before implementation planning.
+Approved on 2026-07-18 for implementation planning and sequential execution.
 
 ## Objective
 
