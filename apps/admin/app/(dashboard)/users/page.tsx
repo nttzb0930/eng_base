@@ -1,4 +1,4 @@
-import { UsersView } from "@/src/views/users/users.view";
+import { UsersView } from "@/app/views/users/UsersView";
 
 export default function UsersPage() {
   return <UsersView />;

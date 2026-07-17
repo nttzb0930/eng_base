@@ -72,3 +72,16 @@ test("Admin Auth follows the EC feature and view profile", () => {
   assert.equal(existsSync(join(root, "src/views/login")), false);
   assert.equal(existsSync(join(root, "components/auth/AuthGuard.tsx")), false);
 });
+
+test("Admin Users follows the EC feature and view profile", () => {
+  assert.equal(existsSync(join(root, "app/features/users/api/user.api.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/users/hooks/use-users.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/users/types/user-management.types.ts")), true);
+  assert.equal(existsSync(join(root, "app/views/users/UsersView.tsx")), true);
+  assert.equal(existsSync(join(root, "src/services/users")), false);
+  assert.equal(existsSync(join(root, "src/views/users")), false);
+
+  const routeSource = readFileSync(join(root, "app/(dashboard)/users/page.tsx"), "utf8");
+  assert.equal(routeSource.includes("@/app/views/users/UsersView"), true);
+  assert.equal(routeSource.includes("@/src/views/users"), false);
+});

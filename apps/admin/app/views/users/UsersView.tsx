@@ -4,7 +4,8 @@ import React, { useMemo, useState } from "react";
 import { Plus, Edit2, Trash2, Loader2, ShieldAlert, UserCheck } from "lucide-react";
 import { toast } from "sonner";
 
-import type { User, UpdateUserBody } from "@/src/services/users/users.service";
+import type { UpdateUserBody, User } from "@/app/features/users/types/user-management.types";
+import { useUsers, useCreateUser, useUpdateUser, useDeleteUser } from "@/app/features/users/hooks/use-users";
 import { useTableControls } from "@/app/hooks/use-table-controls";
 import { useDebounce } from "@/app/hooks/use-debounce";
 import { Button } from "@/app/components/ui/button";
@@ -13,7 +14,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Label } from "@/app/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/app/components/ui/select";
 import { DataTableCard, type Column } from "@/app/components/data-table";
-import { useUsers, useCreateUser, useUpdateUser, useDeleteUser } from "./hooks/use-users";
 
 export function UsersView() {
   const { currentPage, setCurrentPage, pageSize, setPageSize, searchQuery, setSearchQuery } = useTableControls();
