@@ -141,8 +141,28 @@ test("Vocabulary exposes goal use cases without an aggregate service", () => {
   }
 });
 
+test("Topics expose flat goal Interfaces without an aggregate service", () => {
+  const root = join(sourceRoot, "topics");
+  assert.equal(existsSync(join(root, "topics.service.ts")), false);
+  assert.ok(
+    existsSync(join(root, "use-cases/list-vocabulary-topics.use-case.ts"))
+  );
+  assert.ok(
+    existsSync(join(root, "use-cases/get-vocabulary-topic.use-case.ts"))
+  );
+  assert.ok(existsSync(join(root, "index.ts")));
+});
+
 test("Topics list delivery batches relations instead of querying per topic", () => {
-  const source = readFileSync(join(sourceRoot, "topics/topics.service.ts"), "utf8");
+  const source = readFileSync(
+    join(sourceRoot, "topics/use-cases/list-vocabulary-topics.use-case.ts"),
+    "utf8"
+  );
+  const sharedSource = readFileSync(
+    join(sourceRoot, "topics/use-cases/topic-source.ts"),
+    "utf8"
+  );
+  assert.match(sharedSource, /getRawTopicVocabularyRelations/);
   assert.match(source, /getRawTopicVocabularyRelations/);
   assert.doesNotMatch(source, /topics\.map\(async/);
 });
@@ -173,6 +193,7 @@ test("Goal use cases own behavior instead of forwarding through hidden aggregate
     "progress",
     "review",
     "settings",
+    "topics",
     "user",
   ]) {
     const useCaseRoot = join(sourceRoot, moduleName, "use-cases");

@@ -1,16 +1,20 @@
 import { Controller, Get, Param, Query, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
-import { TopicsService } from "./topics.service";
+import { GetVocabularyTopicUseCase } from "./use-cases/get-vocabulary-topic.use-case";
+import { ListVocabularyTopicsUseCase } from "./use-cases/list-vocabulary-topics.use-case";
 
 @Controller("topics")
 @UseGuards(UserJwtGuard)
 export class TopicsController {
-  constructor(private readonly topicsService: TopicsService) {}
+  constructor(
+    private readonly listVocabularyTopics: ListVocabularyTopicsUseCase,
+    private readonly getVocabularyTopic: GetVocabularyTopicUseCase
+  ) {}
 
   @Get()
   getTopics(@CurrentUserId() userId: string) {
-    return this.topicsService.getVocabularyTopics(userId);
+    return this.listVocabularyTopics.execute(userId);
   }
 
   @Get(":slug")
@@ -19,6 +23,6 @@ export class TopicsController {
     @Param("slug") slug: string,
     @Query("level") level?: string
   ) {
-    return this.topicsService.getVocabularyTopicBySlug(userId, slug, level);
+    return this.getVocabularyTopic.execute(userId, slug, level);
   }
 }
