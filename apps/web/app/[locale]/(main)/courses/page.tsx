@@ -1,1 +1,5 @@
-export { default } from "@/src/views/courses/CoursesPage";
+import { CoursesView } from "@/app/views/courses/CoursesView";
+
+export default function CoursesPage() {
+  return <CoursesView />;
+}

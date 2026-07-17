@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { cn } from "@/app/utils/cn";
 
-type CardProps = {
+type CourseCardProps = {
   title: string;
   id: number;
   imageSrc: string;
@@ -12,14 +12,14 @@ type CardProps = {
   isActive?: boolean;
 };
 
-export const Card = ({
+export const CourseCard = ({
   title,
   id,
   imageSrc,
   onClick,
   disabled,
   isActive,
-}: CardProps) => {
+}: CourseCardProps) => {
   return (
     <div
       onClick={() => onClick(id)}

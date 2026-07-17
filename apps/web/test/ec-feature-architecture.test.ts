@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
@@ -46,5 +46,34 @@ test("Web Auth follows the EC client feature profile", () => {
     "src/views/auth",
   ]) {
     assert.equal(existsSync(join(root, path)), false, `${path} must be removed`);
+  }
+});
+
+test("Web Courses and Progress use client feature owners", () => {
+  for (const path of [
+    "app/features/courses/api/course.api.ts",
+    "app/features/courses/hooks/use-courses.ts",
+    "app/features/courses/components/CourseCard.tsx",
+    "app/features/progress/api/progress.api.ts",
+    "app/features/progress/hooks/use-user-progress.ts",
+    "app/components/layout/LearnerShell.tsx",
+    "app/views/courses/CoursesView.tsx",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+
+  const coursesRoute = join(root, "app/[locale]/(main)/courses/page.tsx");
+  assert.equal(existsSync(coursesRoute), true);
+  assert.equal(existsSync(join(root, "src/views/courses")), false);
+
+  for (const path of [
+    "app/[locale]/(main)/courses/page.tsx",
+    "app/[locale]/(main)/layout.tsx",
+    "app/[locale]/lesson/layout.tsx",
+  ]) {
+    const source = readFileSync(join(root, path), "utf8");
+    assert.equal(source.includes("@/src/views/courses"), false, `${path} imports legacy Courses View`);
+    assert.equal(source.includes("@/src/modules/learning/queries"), false, `${path} imports server learning queries`);
+    assert.equal(source.includes("@/src/services/progress"), false, `${path} imports legacy Progress services`);
   }
 });
