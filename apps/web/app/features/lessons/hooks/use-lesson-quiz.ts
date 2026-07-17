@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { useAudio, useWindowSize, useMount } from "react-use";
 import { toast } from "sonner";
 
-import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
+import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { MAX_HEARTS } from "@repo/shared/progress";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
@@ -16,9 +16,9 @@ import type {
   UserSavedWord,
   VocabularyItem,
 } from "@repo/shared/learning";
-import type { PracticeResultItem } from "@/src/views/practice/practice-result";
+import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
 import { useHeartsModal } from "@/src/stores/use-hearts-modal";
-import { usePracticeModal } from "@/src/stores/use-practice-modal";
+import { usePracticeModal } from "@/app/features/practice/store/practice-modal.store";
 
 export type QuizChallenge = LessonChallenge & {
   completed: boolean;
@@ -124,7 +124,7 @@ export function useLessonQuiz({
   };
 
   const saveCompletedSession = (items: PracticeResultItem[]) => {
-    recordPracticeSessionResult({
+    practiceApi.recordSession({
       mode: "lesson",
       items: items.map((item) => ({
         vocabularyItemId: item.vocabularyItemId,

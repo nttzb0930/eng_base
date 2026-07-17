@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { Volume2 } from "lucide-react";
 
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
-import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
+import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
@@ -24,7 +24,7 @@ import { QuestionBubble } from "@/app/features/lessons/components/QuestionBubble
 import {
   PracticeResult,
   type PracticeResultItem,
-} from "@/src/views/practice/practice-result";
+} from "@/app/features/practice/components/PracticeResult";
 
 type SavedWordsReviewQuizProps = {
   initialChallenges: SavedWordReviewChallenge[];
@@ -105,7 +105,7 @@ export const SavedWordsReviewQuiz = ({
     }
 
     sessionSavedRef.current = true;
-    recordPracticeSessionResult({
+    practiceApi.recordSession({
       mode: "saved_words",
       items: reviewedItems.map((item) => ({
         vocabularyItemId: item.vocabularyItemId,

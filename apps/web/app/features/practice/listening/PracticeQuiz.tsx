@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 
 import { Volume2 } from "lucide-react";
 import Image from "next/image";
@@ -12,31 +12,34 @@ import { useAudio, useWindowSize } from "react-use";
 import { toast } from "sonner";
 
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
-import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
+import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
-import { useCurrentLocale } from "@/app/i18n/use-current-locale";
-import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
-import type { WeakWordsPracticeChallenge } from "@/src/modules/practice/weak-words-session";
+import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
+import type { ListeningPracticeChallenge } from "@repo/shared/practice";
 
 import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
 import { Footer } from "@/app/features/lessons/components/LessonFooter";
-import { QuestionBubble } from "@/app/features/lessons/components/QuestionBubble";
-import { PracticeResult, type PracticeResultItem } from "../practice-result";
-import { PracticeSessionShell } from "../practice-session-shell";
+import { PracticeResult, type PracticeResultItem } from "../components/PracticeResult";
+import { PracticeSessionShell } from "../components/PracticeSessionShell";
 
-type WeakWordsPracticeQuizProps = {
-  initialChallenges: WeakWordsPracticeChallenge[];
+type ListeningPracticeQuizProps = {
+  initialChallenges: ListeningPracticeChallenge[];
+  practiceLevel?: PracticeCefrLevel;
+  lessonNumber: number;
+  totalLessons?: number;
 };
 
-export const WeakWordsPracticeQuiz = ({
+export const ListeningPracticeQuiz = ({
   initialChallenges,
-}: WeakWordsPracticeQuizProps) => {
+  practiceLevel,
+  lessonNumber,
+  totalLessons,
+}: ListeningPracticeQuizProps) => {
   const t = useTranslations("practice");
-  const locale = useCurrentLocale();
   const lessonT = useTranslations("lesson");
-  const localizeChallengeQuestion = useLocalizedChallengeQuestion();
+  const vocabularyT = useTranslations("vocabulary");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [correctAudio, _correctAudioElement, correctControls] = useAudio({
     src: "/correct.wav",
@@ -60,17 +63,20 @@ export const WeakWordsPracticeQuiz = ({
   const [wrongCount, setWrongCount] = useState(0);
   const [reviewedItems, setReviewedItems] = useState<PracticeResultItem[]>([]);
   const [pending, startTransition] = useTransition();
-
-  const percentage = useMemo(() => {
-    return (activeIndex / initialChallenges.length) * 100;
-  }, [activeIndex, initialChallenges.length]);
+  const [savedVocabularyIds, setSavedVocabularyIds] = useState(
+    () =>
+      new Set(
+        initialChallenges
+          .filter(
+            (challenge) => challenge.vocabularyItem.userSavedWords.length > 0
+          )
+          .map((challenge) => challenge.vocabularyItem.id)
+      )
+  );
 
   const challenge = initialChallenges[activeIndex];
   const options = challenge?.challengeOptions ?? [];
-  const isListeningChallenge = challenge?.type === "LISTEN_SELECT";
-  const isFillBlankChallenge = challenge?.type === "FILL_BLANK";
-  const shouldHideVocabularyPrompt =
-    challenge?.type === "ASSIST" && status === "none";
+  const percentage = (activeIndex / initialChallenges.length) * 100;
 
   const onSelect = (id: number) => {
     if (status !== "none") return;
@@ -82,6 +88,27 @@ export const WeakWordsPracticeQuiz = ({
 
     const audio = new Audio(challenge.vocabularyItem.audioUrl);
     void audio.play().catch(() => toast.error(t("playAudioError")));
+  };
+
+  const onToggleSavedWord = () => {
+    if (!challenge) return;
+
+    const vocabularyItemId = challenge.vocabularyItem.id;
+
+    startTransition(() => {
+      vocabularyApi.toggleSaved(vocabularyItemId)
+        .then((response) => {
+          setSavedVocabularyIds((current) => {
+            const next = new Set(current);
+
+            if (response.saved) next.add(vocabularyItemId);
+            else next.delete(vocabularyItemId);
+
+            return next;
+          });
+        })
+        .catch(() => toast.error(lessonT("saveError")));
+    });
   };
 
   const onPracticeAgain = () => {
@@ -101,15 +128,15 @@ export const WeakWordsPracticeQuiz = ({
     }
 
     sessionSavedRef.current = true;
-    recordPracticeSessionResult({
-      mode: "weak_words",
+    practiceApi.recordSession({
+      mode: "listening",
       items: reviewedItems.map((item) => ({
         vocabularyItemId: item.vocabularyItemId,
         challengeType: item.challengeType,
         correct: item.correct,
         answer: item.answer,
       })),
-    }).catch(() => toast.error(t("saveReviewError")));
+    }).catch(() => toast.error(t("saveProgressError")));
   }, [challenge, reviewedItems, t]);
 
   const addReviewedItem = (correct: boolean, answer?: string) => {
@@ -128,6 +155,16 @@ export const WeakWordsPracticeQuiz = ({
       },
     ]);
   };
+
+  const mapHref = practiceLevel
+    ? `/practice?mode=listening&level=${practiceLevel}`
+    : "/practice?mode=listening&level=mix";
+  const nextLessonHref =
+    practiceLevel && totalLessons && lessonNumber < totalLessons
+      ? `/practice/listening?level=${practiceLevel}&lesson=${
+          lessonNumber + 1
+        }`
+      : undefined;
 
   const onContinue = () => {
     if (!challenge) return;
@@ -158,7 +195,7 @@ export const WeakWordsPracticeQuiz = ({
 
       startTransition(() => {
         vocabularyApi.recordReview(challenge.vocabularyItem.id, true).catch(
-          () => toast.error(t("saveReviewError"))
+          () => toast.error(t("saveProgressError"))
         );
       });
     } else {
@@ -169,7 +206,7 @@ export const WeakWordsPracticeQuiz = ({
 
       startTransition(() => {
         vocabularyApi.recordReview(challenge.vocabularyItem.id, false).catch(
-          () => toast.error(t("saveReviewError"))
+          () => toast.error(t("saveProgressError"))
         );
       });
     }
@@ -185,13 +222,15 @@ export const WeakWordsPracticeQuiz = ({
           height={96}
         />
         <h1 className="text-2xl font-bold text-neutral-700">
-          {t("noWeakWords")}
+          {t("noListeningAudio")}
         </h1>
         <p className="text-base leading-7 text-muted-foreground">
-          {t("weakWordsEmptyDescription")}
+          {t("listeningEmptyDescription", {
+            level: practiceLevel ? t("atLevel", { level: practiceLevel }) : "",
+          })}
         </p>
         <Button asChild variant="primary" size="lg">
-          <Link href={withLocale("/practice")}>{t("backToPractice")}</Link>
+          <Link href={withLocale(mapHref)}>{t("backToPractice")}</Link>
         </Button>
       </div>
     );
@@ -213,10 +252,11 @@ export const WeakWordsPracticeQuiz = ({
         />
 
         <PracticeResult
-          title={t("weakWordsCompleteTitle")}
+          title={t("listeningCompleteTitle")}
           correctCount={correctCount}
           wrongCount={wrongCount}
-          mapHref={withLocale("/practice")}
+          mapHref={mapHref}
+          nextLessonHref={nextLessonHref}
           reviewedItems={reviewedItems}
           onRetry={onPracticeAgain}
         />
@@ -224,15 +264,7 @@ export const WeakWordsPracticeQuiz = ({
     );
   }
 
-  const localizedQuestion = localizeChallengeQuestion(challenge);
-  const title =
-    challenge.type === "LISTEN_SELECT"
-      ? t("listenAndChoose")
-      : challenge.type === "FILL_BLANK"
-        ? t("completeSentence")
-        : challenge.type === "ASSIST"
-          ? lessonT("selectCorrectWord")
-          : localizedQuestion;
+  const isSaved = savedVocabularyIds.has(challenge.vocabularyItem.id);
 
   return (
     <>
@@ -241,7 +273,7 @@ export const WeakWordsPracticeQuiz = ({
 
       <PracticeSessionShell
         exitLabel={t("exit")}
-        onExit={() => router.push(withLocale("/practice", locale))}
+        onExit={() => router.push(mapHref)}
         percentage={percentage}
         current={activeIndex + 1}
         total={initialChallenges.length}
@@ -254,68 +286,48 @@ export const WeakWordsPracticeQuiz = ({
         }
       >
             <h1 className="text-balance text-center text-xl font-bold leading-tight text-foreground lg:text-left lg:text-3xl">
-              {title}
+              {t("listenAndChoose")}
+              {practiceLevel ? ` - ${practiceLevel}` : ""}
             </h1>
 
-            {isListeningChallenge ? (
-              <div className="rounded-lg border-2 border-slate-200 bg-white p-6 text-center shadow-sm">
-                <Button
-                  type="button"
-                  variant="primary"
-                  size="lg"
-                  onClick={onPlayPromptAudio}
-                  className="h-20 w-20 rounded-full p-0"
-                  aria-label={t("playPronunciation")}
-                  title={t("playPronunciation")}
-                >
-                  <Volume2 className="h-8 w-8" />
-                </Button>
+            <div className="rounded-lg border-2 border-slate-200 bg-white p-6 text-center shadow-sm">
+              <Button
+                type="button"
+                variant="primary"
+                size="lg"
+                onClick={onPlayPromptAudio}
+                className="h-20 w-20 rounded-full p-0"
+                aria-label={t("playPronunciation")}
+                title={t("playPronunciation")}
+              >
+                <Volume2 className="h-8 w-8" />
+              </Button>
 
-                {status !== "none" && (
-                  <div className="mt-5 text-left">
-                    <VocabularyCard
-                      item={challenge.vocabularyItem}
-                      showMeaning
-                    />
-                  </div>
-                )}
-              </div>
-            ) : isFillBlankChallenge ? (
-              <div className="rounded-lg border-2 border-slate-200 bg-white p-5 shadow-sm">
-                <p className="text-lg font-bold leading-8 text-neutral-700">
-                  {localizedQuestion}
-                </p>
-
-                {status !== "none" && (
-                  <div className="mt-5">
-                    <VocabularyCard
-                      item={challenge.vocabularyItem}
-                      showMeaning
-                    />
-                  </div>
-                )}
-              </div>
-            ) : shouldHideVocabularyPrompt ? null : (
-              <VocabularyCard
-                item={challenge.vocabularyItem}
-                showMeaning={status !== "none"}
-              />
-            )}
-
-            <div>
-              {challenge.type === "ASSIST" && (
-                <QuestionBubble question={localizedQuestion} />
+              {status !== "none" && (
+                <div className="mt-5 text-left">
+                  <VocabularyCard
+                    item={challenge.vocabularyItem}
+                    showMeaning
+                    action={{
+                      label: vocabularyT("save"),
+                      activeLabel: vocabularyT("saved"),
+                      active: isSaved,
+                      disabled: pending,
+                      onClick: onToggleSavedWord,
+                    }}
+                  />
+                </div>
               )}
-
-              <Challenge
-                options={options}
-                onSelect={onSelect}
-                status={status}
-                selectedOption={selectedOption}
-                disabled={pending}
-                type={challenge.type}
-              />
             </div>
+
+            <Challenge
+              options={options}
+              onSelect={onSelect}
+              status={status}
+              selectedOption={selectedOption}
+              disabled={pending}
+              type={challenge.type}
+            />
       </PracticeSessionShell>
     </>
   );

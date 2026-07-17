@@ -3,7 +3,7 @@ import {
   normalizePracticeCefrLevel,
   PRACTICE_CEFR_LEVELS,
   type PracticeCefrLevel,
-} from "@/src/modules/practice/fill-blank-session";
+} from "@/app/features/practice/practice-level";
 
 export const PRACTICE_MODES = ["fill-blank", "listening", "dictation"] as const;
 export type PracticeMode = (typeof PRACTICE_MODES)[number];

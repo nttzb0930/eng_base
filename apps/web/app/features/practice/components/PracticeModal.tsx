@@ -12,7 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/app/components/ui/dialog";
-import { usePracticeModal } from "@/src/stores/use-practice-modal";
+import { usePracticeModal } from "@/app/features/practice/store/practice-modal.store";
 
 export const PracticeModal = () => {
   const t = useTranslations("modals");

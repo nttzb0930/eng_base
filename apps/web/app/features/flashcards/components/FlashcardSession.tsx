@@ -20,9 +20,9 @@ import Confetti from "react-confetti";
 import { useAudio, useWindowSize } from "react-use";
 import { toast } from "sonner";
 
-import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
+import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
-import type { PracticeResultItem } from "@/src/views/practice/practice-result";
+import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
@@ -172,7 +172,7 @@ export const FlashcardSession = ({
     }
 
     sessionSavedRef.current = true;
-    recordPracticeSessionResult({
+    practiceApi.recordSession({
       mode: "flashcards",
       items: reviewedItems.map((reviewedItem) => ({
         vocabularyItemId: reviewedItem.vocabularyItemId,

@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
 import { withLocale } from "@/app/i18n/paths";
-import type { PracticeCefrLevel } from "@/src/modules/practice/fill-blank-session";
+import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
 
-import { PracticeLessonButton } from "./practice-lesson-button";
+import { PracticeLessonButton } from "./PracticeLessonButton";
 
 type PracticeUnitProps = {
   level: PracticeCefrLevel;

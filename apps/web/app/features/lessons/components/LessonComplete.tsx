@@ -1,6 +1,6 @@
 "use client";
 
-import type { PracticeResultItem } from "@/src/views/practice/practice-result";
+import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import {

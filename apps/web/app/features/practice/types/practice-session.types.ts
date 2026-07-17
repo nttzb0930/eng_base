@@ -1,5 +1,3 @@
-import { apiRequest } from "@/src/lib/api-client";
-
 export type PracticeSessionMode =
   | "lesson"
   | "fill_blank"
@@ -21,11 +19,3 @@ export type PracticeSessionResultInput = {
   mode: PracticeSessionMode;
   items: PracticeSessionResultItemInput[];
 };
-
-export const createPracticeSessionResult = (
-  input: PracticeSessionResultInput
-) =>
-  apiRequest<unknown>("/practice/sessions", {
-    method: "POST",
-    body: input,
-  });

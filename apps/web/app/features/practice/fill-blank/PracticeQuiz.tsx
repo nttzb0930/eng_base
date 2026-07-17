@@ -11,19 +11,17 @@ import { useAudio, useWindowSize } from "react-use";
 import { toast } from "sonner";
 
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
-import { recordPracticeSessionResult } from "@/src/services/practice/practice-sessions.service";
+import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { withLocale } from "@/app/i18n/paths";
-import type {
-  FillBlankPracticeChallenge,
-  PracticeCefrLevel,
-} from "@/src/modules/practice/fill-blank-session";
+import type { FillBlankPracticeChallenge } from "@repo/shared/practice";
+import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
 
 import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
 import { Footer } from "@/app/features/lessons/components/LessonFooter";
-import { PracticeResult, type PracticeResultItem } from "../practice-result";
-import { PracticeSessionShell } from "../practice-session-shell";
+import { PracticeResult, type PracticeResultItem } from "../components/PracticeResult";
+import { PracticeSessionShell } from "../components/PracticeSessionShell";
 
 type FillBlankPracticeQuizProps = {
   initialChallenges: FillBlankPracticeChallenge[];
@@ -125,7 +123,7 @@ export const FillBlankPracticeQuiz = ({
     }
 
     sessionSavedRef.current = true;
-    recordPracticeSessionResult({
+    practiceApi.recordSession({
       mode: "fill_blank",
       items: reviewedItems.map((item) => ({
         vocabularyItemId: item.vocabularyItemId,

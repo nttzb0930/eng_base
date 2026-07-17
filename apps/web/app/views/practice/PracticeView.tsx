@@ -1,3 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import type { PracticeLevelSummary } from "@repo/shared/practice";
 import {
   ArrowRight,
   BookOpenText,
@@ -10,24 +16,17 @@ import {
   Sparkles,
   Target,
 } from "lucide-react";
-import { redirect } from "next/navigation";
-import { getLocale, getTranslations } from "next-intl/server";
 
-import { AuthRedirector } from "@/src/components/auth-redirector";
+import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { defaultLocale, isLocale } from "@/app/i18n/config";
-import { withLocale } from "@/app/i18n/paths";
-import { cn } from "@/app/utils/cn";
-import { getUserProgress } from "@/src/modules/learning/queries";
-import { getDictationPracticeLevelSummary } from "@/src/modules/practice/dictation-session";
 import {
-  getFillBlankPracticeLevelSummary,
-  PRACTICE_CEFR_LEVELS,
-} from "@/src/modules/practice/fill-blank-session";
-import { getListeningPracticeLevelSummary } from "@/src/modules/practice/listening-session";
-import { getWeakWordsPracticeSummary } from "@/src/modules/practice/weak-words-session";
-
+  useDictationPracticeSummary,
+  useFillBlankPracticeSummary,
+  useListeningPracticeSummary,
+  useWeakWordsPracticeSummary,
+} from "@/app/features/practice/hooks/use-practice";
+import { PRACTICE_CEFR_LEVELS } from "@/app/features/practice/practice-level";
 import {
   getPracticeModeWordCount,
   getPracticeStartHref,
@@ -36,12 +35,16 @@ import {
   normalizePracticeLevelSelection,
   normalizePracticeMode,
   type PracticeMode,
-} from "@/src/views/practice/practice-config";
+} from "@/app/features/practice/practice-config";
+import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { withLocale } from "@/app/i18n/paths";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
 
-type PracticePageProps = {
-  searchParams: Promise<{ level?: string; mode?: string }>;
+type PracticeViewProps = {
+  level?: string;
+  mode?: string;
 };
-
 const practiceModes: Record<
   PracticeMode,
   {
@@ -81,51 +84,52 @@ const levelDots = {
   B2: "bg-rose-500",
 } as const;
 
-const PracticePage = async ({ searchParams }: PracticePageProps) => {
-  const t = await getTranslations("practice");
-  const currentLocale = await getLocale();
-  const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
-  const { level, mode } = await searchParams;
+export function PracticeView({ level, mode }: PracticeViewProps) {
+  const t = useTranslations("practice");
+  const router = useRouter();
+  const locale = useCurrentLocale();
   const selectedMode = normalizePracticeMode(mode);
   const selectedLevel = normalizePracticeLevelSelection(level);
+  const userProgressQuery = useUserProgress();
+  const fillBlankSummaryQuery = useFillBlankPracticeSummary();
+  const listeningSummaryQuery = useListeningPracticeSummary();
+  const dictationSummaryQuery = useDictationPracticeSummary();
+  const weakWordsSummaryQuery = useWeakWordsPracticeSummary();
 
-  let userProgress: Awaited<ReturnType<typeof getUserProgress>>;
-  let fillBlankSummary: Awaited<ReturnType<typeof getFillBlankPracticeLevelSummary>>;
-  let listeningSummary: Awaited<ReturnType<typeof getListeningPracticeLevelSummary>>;
-  let dictationSummary: Awaited<ReturnType<typeof getDictationPracticeLevelSummary>>;
-  let weakWordsSummary: Awaited<ReturnType<typeof getWeakWordsPracticeSummary>>;
+  const userProgress = userProgressQuery.data;
+  const fillBlankSummary = fillBlankSummaryQuery.data;
+  const listeningSummary = listeningSummaryQuery.data;
+  const dictationSummary = dictationSummaryQuery.data;
+  const weakWordsSummary = weakWordsSummaryQuery.data;
+  const isLoading =
+    userProgressQuery.isLoading ||
+    fillBlankSummaryQuery.isLoading ||
+    listeningSummaryQuery.isLoading ||
+    dictationSummaryQuery.isLoading ||
+    weakWordsSummaryQuery.isLoading;
 
-  try {
-    [
-      userProgress,
-      fillBlankSummary,
-      listeningSummary,
-      dictationSummary,
-      weakWordsSummary,
-    ] = await Promise.all([
-      getUserProgress(),
-      getFillBlankPracticeLevelSummary(),
-      getListeningPracticeLevelSummary(),
-      getDictationPracticeLevelSummary(),
-      getWeakWordsPracticeSummary(),
-    ]);
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : String(error);
-    if (message.includes("Unauthorized") || message.includes("TOKEN_INVALID")) {
-      return <AuthRedirector locale={locale} />;
+  useEffect(() => {
+    if (!isLoading && !userProgress?.activeCourse) {
+      router.replace(withLocale("/placement-test", locale));
     }
-    redirect(withLocale("/placement-test", locale));
-  }
+  }, [isLoading, locale, router, userProgress?.activeCourse]);
 
-  if (!userProgress?.activeCourse) {
-    redirect(withLocale("/placement-test", locale));
+  if (
+    isLoading ||
+    !userProgress?.activeCourse ||
+    !fillBlankSummary ||
+    !listeningSummary ||
+    !dictationSummary ||
+    !weakWordsSummary
+  ) {
+    return <ListPageSkeleton />;
   }
 
   const summaries = {
     "fill-blank": fillBlankSummary,
     listening: listeningSummary,
     dictation: dictationSummary,
-  } satisfies Record<PracticeMode, typeof fillBlankSummary>;
+  } satisfies Record<PracticeMode, PracticeLevelSummary>;
   const selectedSummary = summaries[selectedMode];
   const selectedModeConfig = practiceModes[selectedMode];
   const selectedWordCount = getPracticeWordCount(selectedSummary, selectedLevel);
@@ -364,6 +368,4 @@ const PracticePage = async ({ searchParams }: PracticePageProps) => {
       </div>
     </FeedWrapper>
   );
-};
-
-export default PracticePage;
+}

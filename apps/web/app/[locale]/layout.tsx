@@ -4,7 +4,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 
 import { ExitModal } from "@/src/components/modals/exit-modal";
 import { HeartsModal } from "@/src/components/modals/hearts-modal";
-import { PracticeModal } from "@/src/components/modals/practice-modal";
+import { PracticeModal } from "@/app/features/practice/components/PracticeModal";
 import { isLocale } from "@/app/i18n/config";
 
 type LocaleLayoutProps = {
