@@ -33,3 +33,18 @@ test("localized learner routes compose app Views instead of legacy src Views", (
     assert.equal(source.includes("@/src/services/"), false, `${file} imports a legacy service`);
   }
 });
+
+test("route pages compose Views explicitly instead of default re-exports", () => {
+  const routePages = collectTypeScriptFiles(appDirectory).filter((file) =>
+    /page\.tsx$/.test(file),
+  );
+
+  for (const file of routePages) {
+    const source = readFileSync(file, "utf8");
+    assert.doesNotMatch(
+      source,
+      /export\s*\{\s*default\s*\}\s*from/,
+      `${file} re-exports a View instead of composing it at the route boundary`,
+    );
+  }
+});

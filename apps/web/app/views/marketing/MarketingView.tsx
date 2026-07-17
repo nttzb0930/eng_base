@@ -9,7 +9,7 @@ import { Button } from "@/app/components/ui/button";
 import { withLocale } from "@/app/i18n/paths";
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
 
-export default function MarketingPage() {
+export function MarketingView() {
   const t = useTranslations("marketing");
   const { status } = useAuth();
   const loading = status === "loading";
