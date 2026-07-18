@@ -1,13 +1,28 @@
 # Project Context
 
-The architecture baseline is **Web Base Standard 1.5.0**, adopted incrementally.
-Legacy modules may remain until their behavior is covered and moved; new code
-must follow the capability-first rules in `docs/architecture/codebase-structure.md`.
+English Base is a capability-first learning platform. New and changed code must
+follow the ownership and dependency rules in
+`docs/architecture/codebase-structure.md`.
 
 ## Shared language
 
 - **Learner**: the authenticated user completing lessons, practice, review, or placement activities.
 - **Vocabulary item**: one English word and its normalized Vietnamese learning content, including part of speech, meanings, pronunciation, and examples.
+- **Canonical vocabulary catalog**: the versioned repository source at
+  `data/vocabulary/vocabulary-catalog.json`. It defines vocabulary records and
+  Topic relationships but does not prove that a particular database environment
+  has applied the latest source.
+- **Topic taxonomy**: the versioned set of exactly 103 learning Topics in
+  `data/vocabulary/topics.json`.
+- **Vocabulary classification**: the fail-closed workflow that assigns an
+  existing catalog record to zero or one canonical Topic without creating new
+  vocabulary.
+- **Topic expansion proposal**: an AI-assisted proposal for new vocabulary that
+  fills a Topic deficit. It cannot enter the catalog until its contract passes
+  validation and a person accepts it.
+- **Human vocabulary review**: a deliberate, versioned decision or override.
+  Raw provider output, rejected responses, reports, and backups are not human
+  review records.
 - **Lesson challenge**: a persisted question belonging to a lesson. Its correct answer may reference a vocabulary item.
 - **Course content**: the ordered Course -> Unit -> Lesson -> Lesson challenge -> Challenge option hierarchy.
 - **Course Management**: the Admin capability for listing and mutating course content. It is an Interface of the Courses domain, not a separate business owner.
@@ -20,7 +35,6 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
   completion recording. Each owning capability keeps its scoring, persistence
   endpoint, and mode-specific presentation.
 - **Placement test**: an adaptive session used to estimate a learner's starting level and initialize course progress.
-- **Normalized vocabulary dataset**: the reviewed 3,000-item dataset currently stored in PostgreSQL. Changes to it require the dedicated dry-run, backup, confirmation, and audit workflow.
 - **Runtime owner**: the application responsible for an implementation. Web owns learner UI, Admin owns management UI, and API owns business behavior and database access.
 - **Authentication session**: the access-token and persisted refresh-token
   lifecycle shared by Learner and Admin login delivery. Auth owns the behavior;
@@ -50,8 +64,8 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
 - `packages/shared` is the stable TypeScript-only aggregator. Consumers use its
   root Interface; capability subpaths are forbidden by ADR 0021.
-- Ownership is capability-first. Each runtime may select a documented filesystem
-  profile; the Admin EC profile separates `app/features` behavior from
+- Ownership is capability-first. Each runtime follows its documented filesystem
+  profile; the frontend feature/view profile separates `app/features` behavior from
   `app/views` screen composition without changing domain ownership.
 - Courses owns both learner-facing reads and Admin Course Management CRUD. The Admin API module must not duplicate these mutations.
 - Admin is a caller and authorization mode, not a business owner; Admin HTTP
@@ -73,8 +87,10 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 
 ## Data safety
 
-- Architecture refactors must not run vocabulary seed, normalization, correction, or database apply commands.
+- Repository source data and deployed PostgreSQL state are separate. A valid
+  canonical catalog does not imply that seed or synchronization has run.
+- Architecture refactors must not run vocabulary seed, normalization,
+  correction, enrichment, provider, or database apply commands.
 - Prisma schema changes and data migrations require a separate reviewed task.
-- Existing vocabulary backups and audit artifacts are retained until an explicit cleanup task approves removal.
-- The prepared `challenge_progress(user_id, challenge_id)` uniqueness migration
-  must be reviewed and applied separately; architecture refactors do not apply it.
+- Generated vocabulary work and backups stay in ignored local directories;
+  versioned review files contain only deliberate human decisions.

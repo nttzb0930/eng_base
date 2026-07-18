@@ -80,7 +80,7 @@ test("active architecture docs describe the current frontend profile", () => {
     "CONTEXT.md",
     "docs/architecture/codebase-structure.md",
     "docs/frontend-api-calls.md",
-    "docs/overview.md",
+    "docs/README.md",
   ];
   const staleStatements = [
     "src/lib/web-http-client.ts",

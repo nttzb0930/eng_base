@@ -1,8 +1,17 @@
 # Agent Workflow
 
-This repository follows **Web Base Standard 1.5.0**. Read `CONTEXT.md`, the
-relevant document in `docs/architecture/`, and accepted ADRs before changing an
-owned capability or a public Interface.
+This repository uses a capability-first architecture. Start with `CONTEXT.md`
+and `docs/README.md`, then read the relevant current architecture document and
+accepted ADR before changing an owned capability or public Interface.
+
+## Required reading
+
+- `CONTEXT.md` defines domain language and stable compatibility constraints.
+- `docs/README.md` maps each subject to its canonical document.
+- `docs/architecture/codebase-structure.md` defines workspace ownership and
+  dependency direction.
+- `docs/data/vocabulary-pipeline.md` is required reading before changing
+  vocabulary source data or running data scripts.
 
 ## Runtime ownership
 
@@ -17,7 +26,7 @@ feature refactor.
 
 ## Capability-first ownership
 
-- Web and Admin follow the EC frontend profile: domain adapters and hooks live
+- Web and Admin follow the feature/view frontend profile: domain adapters and hooks live
   under `app/features/<capability>`, while route-level screens live under
   `app/views`.
 - Organize backend behavior under its owning `src/module/<capability>` folder.
@@ -27,7 +36,7 @@ feature refactor.
   remain subordinate to a business owner.
 - Do not add frontend domain code to legacy `src/modules`, `src/views`,
   `src/services`, `src/stores`, `src/types`, or `src/constants` buckets.
-  `app/views` is an intentional EC composition layer, not that legacy technical
+  `app/views` is an intentional screen-composition layer, not that legacy technical
   bucket.
 - In Admin and Web, browser transport belongs to Auth under
   `app/features/auth/api`; other features consume that transport through their
@@ -41,7 +50,7 @@ feature refactor.
 
 ## Frontend conventions
 
-- Keep `app/**/page.tsx` and route layouts thin. In the frontend EC profile, a
+- Keep `app/**/page.tsx` and route layouts thin. In the feature/view profile, a
   route imports its screen from `@/app/views/<resource>/<Resource>View`.
 - Web authenticated data flow is:
   `localized route -> app/views -> app/features hook -> resource .api.ts -> app/features/auth/api/web-http-client.ts`.
@@ -62,7 +71,7 @@ feature refactor.
 
 ## Backend conventions
 
-- API follows the EC source profile: `common` for cross-capability Nest
+- API follows the capability-owned source profile: `common` for cross-capability Nest
   infrastructure, `config` for validated runtime configuration,
   `database/prisma` for persistence adapters, and `module/<capability>` for
   business owners.
@@ -105,6 +114,18 @@ feature refactor.
 - Prisma types, Nest DTO classes, frontend ViewModels, browser transport, Auth
   session behavior, React hooks, and UI do not belong in Shared.
 
+## Change and documentation rules
+
+- Update the canonical document in the same commit when a change affects a
+  public Interface, compatibility behavior, ownership rule, operating command,
+  data source, or data workflow.
+- ADRs record why a durable decision exists. Architecture documents describe
+  the resulting current state; guides own repeatable commands.
+- Do not copy the same normative rule into multiple documents. Link to its
+  canonical owner instead.
+- Reference projects and migration history are not architecture vocabulary.
+  State the English Base requirement and its trade-off directly.
+
 ## Verification
 
 Run the narrowest relevant command while developing, then run all gates before handoff:
@@ -121,8 +142,15 @@ Course Management also has Shared Interface, API mapper/service/controller,
 resource API, query-key, and import-boundary characterization tests. Preserve
 observable HTTP and cache behavior while moving implementation.
 
+Vocabulary pipeline changes must also run the standalone catalog, seed-data,
+Topic classification, and Topic expansion tests documented in
+`docs/data/vocabulary-pipeline.md`.
+
 ## Vocabulary data safety
 
-Do not run `db:seed`, `db:push`, `data:sync-vocab-normalization`, or
-`data:sync-vocab-pos-correction` during architecture refactors. Database writes
-require explicit user confirmation.
+The only versioned vocabulary sources are the canonical catalog, Topic
+taxonomy, prompts, and deliberate human review decisions. `working/` and
+`backups/` are local generated artifacts. Do not run `db:seed`, `db:push`,
+`db:migrate:reset`, enrichment, AI-provider, normalization sync, or POS sync
+during architecture refactors. Database and provider writes require explicit
+user confirmation.

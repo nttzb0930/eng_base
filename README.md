@@ -1,50 +1,75 @@
-# Lingo English Learning
+# English Base
 
-Monorepo for the English vocabulary learning product.
+English Base là monorepo nền tảng cho sản phẩm học tiếng Anh dành cho người Việt. Dự án cung cấp ứng dụng học tập, trang quản trị, API nghiệp vụ và pipeline dữ liệu từ vựng trong cùng một workspace có quy tắc ownership rõ ràng.
 
-## Applications
+## Mục tiêu dự án
 
-- apps/web: learner-facing Next.js application on port 3000.
-- apps/admin: React Admin hosted by Next.js on port 3001.
-- apps/api: NestJS API and the only runtime that accesses PostgreSQL/Prisma, on port 4000.
+- Cung cấp base có thể tái sử dụng cho các sản phẩm học tập khác.
+- Giữ nghiệp vụ theo capability thay vì gom code vào các folder kỹ thuật toàn cục.
+- Tách giao diện Learner, giao diện Admin và API thành các runtime độc lập.
+- Duy trì contract TypeScript dùng chung mà không làm rò rỉ Prisma hoặc framework internals.
+- Bảo vệ các workflow dữ liệu và database bằng bước review, dry run và xác nhận rõ ràng.
 
-## Packages
+## Cấu trúc monorepo
 
-- packages/shared: shared contracts and constants.
-- packages/eslint-config: shared ESLint foundations.
-- packages/typescript-config: shared TypeScript configurations.
+```text
+apps/
+  web/                 Next.js cho Learner, cổng 3000
+  admin/               Next.js/React Admin, cổng 3001
+  api/                 NestJS, Prisma và PostgreSQL, cổng 4000
+packages/
+  shared/              TypeScript wire types và constants trung lập framework
+  ui/                  React UI primitives dùng chung cho Web và Admin
+  eslint-config/       cấu hình ESLint dùng chung
+  typescript-config/   cấu hình TypeScript dùng chung
+data/vocabulary/       catalog, taxonomy, prompts và dữ liệu pipeline chính thức
+```
 
-## Setup
+`packages/shared` chỉ cung cấp kiểu TypeScript ở compile time và constants dùng chung. Validation request, mapper response, ViewModel, HTTP client và UI vẫn thuộc runtime sử dụng chúng.
 
-    pnpm install
-    pnpm db:generate
-    pnpm db:push
-    pnpm dev
+## Yêu cầu môi trường
 
-The root .env is loaded by all applications. See .env.example.
+- Node.js phiên bản LTS tương thích với các package hiện tại.
+- pnpm `10.30.1`.
+- Docker Desktop hoặc một PostgreSQL 15 tương thích.
+- PowerShell cho các command mẫu trên Windows.
 
-## Common commands
+## Khởi động nhanh
 
-    pnpm dev
-    pnpm dev:web
-    pnpm dev:admin
-    pnpm dev:api
-    pnpm check-types
-    pnpm lint
-    pnpm test
-    pnpm build
-    pnpm db:studio
-    pnpm db:seed
+```powershell
+pnpm install
+Copy-Item .env.example .env
+docker compose up -d db
+pnpm db:generate
+pnpm --filter @repo/api db:migrate:deploy
+pnpm dev
+```
 
-Vocabulary build/enrichment commands run from the API workspace:
+File `.env` ở root được Web, Admin, API và các offline script sử dụng. Thay các secret mẫu trước khi chạy Auth ngoài môi trường local.
 
-    pnpm --filter @repo/api data:build-vocab
-    pnpm --filter @repo/api data:enrich-audio -- --limit all
-    pnpm --filter @repo/api data:enrich-examples -- --limit all
-    pnpm --filter @repo/api data:seed-topics
+## Các lệnh thường dùng
 
-## Runtime ownership
+```powershell
+pnpm dev
+pnpm dev:web
+pnpm dev:admin
+pnpm dev:api
+pnpm architecture:check
+pnpm test
+pnpm check-types
+pnpm lint
+pnpm build
+pnpm db:studio
+```
 
-apps/web and apps/admin authenticate through the NestJS JWT/refresh-token flow and call the API using bearer tokens. Prisma schema, generated client, database mutations, learning queries, review scheduling, and data scripts belong to apps/api.
+Các hướng dẫn setup, migration và verification được điều hướng từ [English Base documentation](docs/README.md).
 
-Architecture vocabulary and placement rules are documented in `CONTEXT.md`, `AGENTS.md`, `docs/architecture/codebase-structure.md`, and `docs/adr/`.
+## Quy tắc an toàn dữ liệu
+
+> Các lệnh `db:seed`, `db:push`, `db:migrate:reset`, vocabulary enrichment, normalization/POS sync và AI-provider có thể thay đổi database hoặc dữ liệu nguồn. Không chạy chúng chỉ để kiểm tra kiến trúc, compile hoặc test. Hãy đọc workflow tương ứng và có xác nhận rõ ràng trước khi chạy.
+
+Pipeline vocabulary, nguồn canonical và chính sách artifact được mô tả tại [Vocabulary data pipeline](docs/data/vocabulary-pipeline.md).
+
+## Tài liệu kiến trúc
+
+Bắt đầu từ [English Base documentation](docs/README.md). Domain language nằm trong [CONTEXT.md](CONTEXT.md), workflow bắt buộc cho coder/agent nằm trong [AGENTS.md](AGENTS.md), còn lý do của các quyết định kiến trúc nằm trong `docs/adr/`.
