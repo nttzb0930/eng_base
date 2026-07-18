@@ -158,6 +158,26 @@ test("Web Courses and Progress use client feature owners", () => {
   }
 });
 
+test("Web Learning Session owns the shared learner lifecycle", () => {
+  for (const path of [
+    "app/features/learning-session/learning-session-state.ts",
+    "app/features/learning-session/use-learning-session.ts",
+    "app/features/learning-session/tests/learning-session-state.test.ts",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+
+  for (const file of filesUnder(join(root, "app")).filter((path) => /\.(ts|tsx)$/.test(path))) {
+    if (file.includes(`${join("learning-session", "tests")}`)) continue;
+    const source = readFileSync(file, "utf8");
+    assert.equal(
+      source.includes("features/learning-session/tests"),
+      false,
+      `${file} imports private Learning Session tests`,
+    );
+  }
+});
+
 test("Web domain code no longer uses legacy technical buckets or authenticated server HTTP", () => {
   for (const path of ["src/modules", "src/services", "src/views", "src/stores"]) {
     assert.deepEqual(filesUnder(join(root, path)), [], `${path} must be empty`);
