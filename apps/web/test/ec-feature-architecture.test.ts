@@ -17,6 +17,9 @@ function filesUnder(directory: string): string[] {
 test("Web shared presentation and i18n live under app", () => {
   for (const path of [
     "app/components/ui/button.tsx",
+    "app/components/ui/avatar.tsx",
+    "app/components/ui/dialog.tsx",
+    "app/components/ui/separator.tsx",
     "app/components/navigation/LocalizedLink.tsx",
     "app/components/layout/FeedWrapper.tsx",
     "app/components/feedback/RouteSkeletons.tsx",
@@ -35,9 +38,22 @@ test("Web shared presentation and i18n live under app", () => {
   }
 });
 
+test("Web reusable Radix primitives are imported from the shared UI package", () => {
+  for (const path of [
+    "app/components/ui/avatar.tsx",
+    "app/components/ui/dialog.tsx",
+    "app/components/ui/separator.tsx",
+  ]) {
+    const source = readFileSync(join(root, path), "utf8");
+    assert.equal(source.includes('from "@repo/ui"'), true, `${path} must re-export @repo/ui primitives`);
+    assert.equal(source.includes("@radix-ui/"), false, `${path} must not own shared Radix implementation`);
+  }
+});
+
 test("Web Auth follows the EC client feature profile", () => {
   for (const path of [
     "app/features/auth/api/auth.api.ts",
+    "app/features/auth/api/web-http-client.ts",
     "app/features/auth/hooks/use-auth.ts",
     "app/features/auth/store/auth-session.store.ts",
     "app/features/auth/types/auth.types.ts",
@@ -50,6 +66,7 @@ test("Web Auth follows the EC client feature profile", () => {
 
   for (const path of [
     "src/services/auth",
+    "src/lib/web-http-client.ts",
     "src/stores/auth-session.store.ts",
     "src/providers.tsx",
     "src/views/auth",
@@ -110,6 +127,7 @@ test("Web domain code no longer uses legacy technical buckets or authenticated s
 
     assert.equal(source.includes("next/headers"), false, `${file} performs server-only authenticated work`);
     assert.equal(source.includes("@/src/modules/"), false, `${file} imports legacy modules`);
+    assert.equal(source.includes("@/src/lib/"), false, `${file} imports legacy lib`);
     assert.equal(source.includes("@/src/services/"), false, `${file} imports legacy services`);
     assert.equal(source.includes("@/src/views/"), false, `${file} imports legacy Views`);
     assert.equal(source.includes("@/src/stores/"), false, `${file} imports legacy stores`);

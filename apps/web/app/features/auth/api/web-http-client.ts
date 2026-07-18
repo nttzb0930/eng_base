@@ -1,7 +1,9 @@
 import axios, { AxiosError, type InternalAxiosRequestConfig } from "axios";
-import { clearAuthSession, getAuthSession, setAccessToken } from "@/app/features/auth/store/auth-session.store";
+
+import { clearAuthSession, getAuthSession, setAccessToken } from "../store/auth-session.store";
 
 type RetryableConfig = InternalAxiosRequestConfig & { _authRetry?: boolean };
+
 const baseURL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/;
 
@@ -58,8 +60,10 @@ webHttpClient.interceptors.response.use(
   },
   async (error: AxiosError) => {
     const config = error.config as RetryableConfig | undefined;
-    const authRoute = config?.url?.includes("/auth/login") ||
-      config?.url?.includes("/auth/refresh") || config?.url?.includes("/auth/logout");
+    const authRoute =
+      config?.url?.includes("/auth/login") ||
+      config?.url?.includes("/auth/refresh") ||
+      config?.url?.includes("/auth/logout");
     if (error.response?.status === 401 && config && !config._authRetry && !authRoute) {
       config._authRetry = true;
       try {

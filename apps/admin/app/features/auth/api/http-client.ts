@@ -53,7 +53,6 @@ export function createHttpClient({
       body: options.body ? JSON.stringify(options.body) : undefined,
     });
 
-    // Handle 401/403 — clear auth and emit event
     if (response.status === 401 || response.status === 403) {
       if (typeof window !== "undefined") {
         localStorage.removeItem("admin_token");
@@ -80,8 +79,6 @@ export function createHttpClient({
       throw new HttpClientError("Invalid API response", response.status);
     }
 
-    // The Nest API returns raw JSON. Keep the normalization here so domain
-    // services always consume one stable client contract.
     return { success: true, data: payload as T };
   }
 

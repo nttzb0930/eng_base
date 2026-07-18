@@ -1,6 +1,6 @@
 import type { CourseProgress, UserProgress } from "@repo/shared";
 
-import { webHttpClient } from "@/src/lib/web-http-client";
+import { webHttpClient } from "@/app/features/auth/api/web-http-client";
 
 export type ProgressHttp = {
   get<T>(path: string): Promise<{ data: T }>;

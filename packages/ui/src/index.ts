@@ -1,6 +1,11 @@
 "use client";
 
 export {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "./avatar.js";
+export {
   Dialog,
   DialogClose,
   DialogContent,
@@ -11,4 +16,5 @@ export {
   DialogPortal,
   DialogTitle,
   DialogTrigger,
-} from "@repo/ui";
+} from "./dialog.js";
+export { Separator } from "./separator.js";

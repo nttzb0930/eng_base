@@ -1,4 +1,4 @@
-import type { ApiEnvelope } from "@/src/lib/http-client";
+import type { ApiEnvelope } from "@/app/features/auth/api/http-client";
 
 export type CourseManagementHttp = {
   get<T>(

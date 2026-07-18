@@ -6,7 +6,7 @@ import {
   type UpdateCoursePayload,
 } from "@repo/shared";
 
-import { adminHttpClient } from "@/src/services/http/admin-http-client";
+import { adminHttpClient } from "@/app/features/auth/api/admin-http-client";
 import {
   emptyCourseManagementPage,
   requireCourseManagementData,
