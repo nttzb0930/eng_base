@@ -1,4 +1,8 @@
-# Vocabulary data pipeline
+# Vocabulary Data Pipeline
+
+This document owns vocabulary source, provenance, workflow, review, and
+database-write safety. A successful source validation does not mean a database
+environment is synchronized with the repository.
 
 ## Canonical sources
 
@@ -18,6 +22,25 @@ data/vocabulary/
 claim that audio or examples exist. Topic arrays in the catalog are the only
 source used to create vocabulary-topic relations.
 
+The catalog currently contains 3,000 records. The taxonomy contains exactly 103
+Topics. Record identity is `normalizedWord + pos + cefrLevel`; duplicate
+identities are rejected before merge or seed.
+
+## Version-control policy
+
+| Path                      | Meaning                                                              | Commit?           |
+| ------------------------- | -------------------------------------------------------------------- | ----------------- |
+| `vocabulary-catalog.json` | canonical vocabulary source                                          | yes               |
+| `topics.json`             | canonical Topic taxonomy                                             | yes               |
+| `prompts/`                | versioned provider behavior contracts                                | yes               |
+| `reviews/`                | deliberate human decisions/overrides                                 | yes, when present |
+| `working/`                | batches, output, rejected data, reports, previews, snapshots, audits | no                |
+| `backups/`                | local safety copies created before a write                           | no                |
+
+Do not move raw provider output into `reviews/`. A review file represents a
+human decision consumed by a merge/override flow; machine output stays under
+`working/` even when a person has inspected it.
+
 ## Script ownership
 
 Vocabulary scripts are grouped by goal:
@@ -36,6 +59,99 @@ apps/api/scripts/vocabulary/
 Pure validators and their tests stay inside the flow that owns them. Do not add
 a generic `scripts/lib` folder or put a vocabulary script directly under
 `apps/api/scripts`.
+
+## Catalog build and validation
+
+Build the canonical candidate from the configured CEFR word list and Vietnamese
+dictionary inputs:
+
+```powershell
+pnpm --filter @repo/api data:build-vocab
+```
+
+The catalog builder writes `data/vocabulary/vocabulary-catalog.json` and an
+ignored report below `working/catalog/`. Treat this as a canonical-source write:
+review record counts, identity duplicates, CEFR/POS values, examples, provenance,
+and the full Git diff before commit.
+
+Catalog validation rejects malformed records, duplicate identity, duplicate
+taxonomy slugs, and unknown Topic slugs. Unclassified records are valid but are
+reported explicitly; validation must never invent a Topic through keyword
+matching.
+
+## Dictionary enrichment
+
+Dictionary workflows are owned by `dictionary-enrichment/`:
+
+```powershell
+pnpm --filter @repo/api data:enrich-json -- --limit <count|all>
+pnpm --filter @repo/api data:enrich-audio -- --limit <count|all>
+pnpm --filter @repo/api data:enrich-examples -- --limit <count|all>
+pnpm --filter @repo/api data:export-vocab
+```
+
+These commands may call external services and may update source/database fields
+depending on the command. Run a small explicit limit first, preserve provenance,
+review missing/404/429 behavior, and inspect the produced report/diff. A
+dictionary lookup sets `dictionaryLookupCompleted`; it does not guarantee that
+audio or an example was found.
+
+Dictionary enrichment is not the AI Topic expansion flow. It enriches known
+records and must not silently create a new catalog identity or Topic relation.
+
+## Normalization
+
+Normalization starts from an exported database snapshot and produces reviewable
+proposals without writing PostgreSQL:
+
+```powershell
+pnpm --filter @repo/api data:export-vocab-snapshot
+pnpm --filter @repo/api data:export-vocab-risk
+pnpm --filter @repo/api data:prepare-vocab-normalization
+pnpm --filter @repo/api data:normalize-vocab-gemini
+pnpm --filter @repo/api data:merge-vocab-normalization
+```
+
+Preparation records the snapshot hash and deterministic batch membership.
+Provider output is validated against the source record; invalid batches remain
+under `working/normalization/rejected/`. A person can create a deliberate
+`reviews/normalization/batch-NNN.json` decision and apply it with:
+
+```powershell
+pnpm --filter @repo/api data:apply-vocab-normalization-override -- batch-NNN
+```
+
+Merge produces proposals and review reports with `databaseUpdated: false`. The
+database sync supports `plan`, `preview`, `dry-run`, and `apply` modes:
+
+```powershell
+pnpm --filter @repo/api data:sync-vocab-normalization -- plan
+pnpm --filter @repo/api data:sync-vocab-normalization -- preview
+pnpm --filter @repo/api data:sync-vocab-normalization -- dry-run
+```
+
+Apply is blocked unless all review-required records are resolved, the live DB
+still matches the source snapshot, the dry-run matches the proposal hash, and
+the operator supplies the exact confirmation printed by the plan. Apply creates
+an ignored backup and post-apply audit. Never skip directly to apply.
+
+## Part-of-speech correction
+
+POS correction uses the database snapshot plus risk audit to select candidates:
+
+```powershell
+pnpm --filter @repo/api data:prepare-vocab-pos-correction
+pnpm --filter @repo/api data:correct-vocab-pos-gemini
+pnpm --filter @repo/api data:merge-vocab-pos-correction
+pnpm --filter @repo/api data:sync-vocab-pos-correction -- plan
+pnpm --filter @repo/api data:sync-vocab-pos-correction -- dry-run
+```
+
+The proposal must retain immutable identity/source fields expected by the
+validator. Database apply requires the exact confirmation reported by the plan,
+checks live drift, writes a local backup, updates dependent challenge meaning or
+answer fields in one reviewed flow, and writes a post-apply audit. Do not reuse a
+normalization confirmation for POS correction.
 
 ## Classification flow
 
@@ -79,7 +195,34 @@ Generated words retain `source: ai-topic-expansion`, start with
 `dictionaryLookupCompleted: false`, and cannot duplicate a catalog
 `normalizedWord + pos + cefrLevel` identity.
 
-## Seed and database safety
+## Human review
+
+Human review is a data decision, not a folder for all generated results. Review
+the original source, provider proposal, validation errors, meanings, POS/CEFR,
+Topic, provenance, and all examples. Topic expansion requires exactly 10
+distinct bilingual example pairs, and its primary example fields must match the
+first pair.
+
+An accepted review authorizes only the corresponding source merge. It does not
+authorize database seed/sync, dictionary enrichment, or another provider call.
+Commit a review file only when it remains a meaningful input or audit decision
+for future maintainers.
+
+## Database snapshots and risk audits
+
+Read-only export commands create ignored working artifacts:
+
+```powershell
+pnpm --filter @repo/api data:export-vocab-snapshot
+pnpm --filter @repo/api data:export-vocab-risk
+```
+
+A snapshot captures the baseline expected by normalization/POS validation. A
+risk audit selects suspicious records; it is not canonical vocabulary source.
+Both become stale when the database changes. Never commit them or reuse them
+against a different environment.
+
+## Seed and confirmed database writes
 
 Both `db:seed` and `data:seed-topics` load and validate
 `vocabulary-catalog.json` and `topics.json`. Seed scripts must not declare a
@@ -90,9 +233,35 @@ the database remain explicit (`db:seed`, enrichment commands, or a confirmed
 normalization/POS apply). Review dry-run output before an apply. Never run a
 database-writing command merely to validate source files.
 
-## Version-control policy
+`data:seed-topics` synchronizes canonical Topic records and catalog relations; it
+is not a classifier. `db:seed` may write broad learning content and progress
+dependencies. Confirm the target environment, backup policy, expected record
+counts, and relationship behavior before either command.
 
-Commit canonical JSON, prompts, human review files, scripts, tests, and docs.
-Do not commit batch input/output, manifests, rejected responses, snapshots,
-previews, reports, dry-runs, audits, or backups. These artifacts remain local
-and can be regenerated or retained for audit outside Git.
+## Failure, rollback, and recovery
+
+- Provider/validation failure: retain rejected output under `working/`, fix the
+  prompt/input or human decision, and rerun only the failed deterministic batch.
+- Catalog merge failure: the canonical file must remain unchanged; investigate
+  the validation error before retrying.
+- Database drift: stop the apply, export a new snapshot, and restart the proposal
+  flow. Do not force an old proposal onto changed data.
+- Partial/failed DB apply: preserve backup and audit artifacts, inspect the
+  transaction/migration state, and use a reviewed repair plan. Do not mark an
+  operation successful by editing its audit JSON.
+- Incorrect canonical merge: restore the local backup or revert the source
+  commit, rerun validation, and only then plan a separate database correction if
+  the incorrect source was already applied.
+
+## Verification
+
+Run the API source-layout tests plus the pure workflow suite:
+
+```powershell
+pnpm --filter @repo/api test
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+```
+
+These commands do not call providers or write PostgreSQL. Also run formatting,
+type, lint, and build gates required by the owning change. Generated `working/`
+and `backups/` files must remain ignored and absent from the commit.
