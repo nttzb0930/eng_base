@@ -7,7 +7,7 @@ import type {
   WeakWordsSummary,
 } from "@repo/shared";
 
-import { webHttpClient } from "@/src/lib/web-http-client";
+import { webHttpClient } from "@/app/features/auth/api/web-http-client";
 
 import type { PracticeSessionResultInput } from "../types/practice-session.types";
 

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { reviveApiDates } from "../src/lib/web-http-client";
+import { reviveApiDates } from "../app/features/auth/api/web-http-client";
 
 test("browser API transport preserves the previous ISO date revival behavior", () => {
   const value = reviveApiDates({

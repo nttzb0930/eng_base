@@ -1,4 +1,4 @@
-import { createHttpClient } from "@/src/lib/http-client";
+import { createHttpClient } from "./http-client";
 
 export const adminHttpClient = createHttpClient({
   baseUrl: process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api",

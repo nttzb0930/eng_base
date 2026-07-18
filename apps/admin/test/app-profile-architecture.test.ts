@@ -16,6 +16,9 @@ function filesUnder(directory: string): string[] {
 test("shared Admin presentation primitives live under app", () => {
   for (const path of [
     "app/components/ui/button.tsx",
+    "app/components/ui/avatar.tsx",
+    "app/components/ui/dialog.tsx",
+    "app/components/ui/separator.tsx",
     "app/components/data-table/data-table-card.tsx",
     "app/components/feedback/TableSkeleton.tsx",
     "app/hooks/use-debounce.ts",
@@ -35,6 +38,18 @@ test("shared Admin presentation primitives live under app", () => {
     "src/lib/utils.ts",
   ]) {
     assert.equal(existsSync(join(root, path)), false, `${path} must be removed`);
+  }
+});
+
+test("Admin reusable Radix primitives are imported from the shared UI package", () => {
+  for (const path of [
+    "app/components/ui/avatar.tsx",
+    "app/components/ui/dialog.tsx",
+    "app/components/ui/separator.tsx",
+  ]) {
+    const source = readFileSync(join(root, path), "utf8");
+    assert.equal(source.includes('from "@repo/ui"'), true, `${path} must re-export @repo/ui primitives`);
+    assert.equal(source.includes("@radix-ui/"), false, `${path} must not own shared Radix implementation`);
   }
 });
 
@@ -64,11 +79,15 @@ test("Admin architecture check includes every architecture test", () => {
 
 test("Admin Auth follows the EC feature and view profile", () => {
   assert.equal(existsSync(join(root, "app/features/auth/api/auth.api.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/auth/api/http-client.ts")), true);
+  assert.equal(existsSync(join(root, "app/features/auth/api/admin-http-client.ts")), true);
   assert.equal(existsSync(join(root, "app/features/auth/hooks/use-admin-login.ts")), true);
   assert.equal(existsSync(join(root, "app/features/auth/components/AuthGuard.tsx")), true);
   assert.equal(existsSync(join(root, "app/features/auth/types/auth.types.ts")), true);
   assert.equal(existsSync(join(root, "app/views/auth/LoginView.tsx")), true);
   assert.equal(existsSync(join(root, "src/services/auth")), false);
+  assert.equal(existsSync(join(root, "src/lib/http-client.ts")), false);
+  assert.deepEqual(filesUnder(join(root, "src/services/http")), [], "src/services/http must be empty");
   assert.equal(existsSync(join(root, "src/views/login")), false);
   assert.equal(existsSync(join(root, "components/auth/AuthGuard.tsx")), false);
 });
@@ -130,6 +149,8 @@ test("Admin has no legacy capability implementation or imports", () => {
   for (const file of appSources) {
     const source = readFileSync(file, "utf8");
     assert.equal(source.includes("@/src/views/"), false, `${file} imports legacy View code`);
+    assert.equal(source.includes("@/src/lib/"), false, `${file} imports legacy lib`);
+    assert.equal(source.includes("@/src/services/http"), false, `${file} imports legacy HTTP service`);
     assert.equal(source.includes("@/src/services/auth"), false, `${file} imports legacy Auth`);
     assert.equal(source.includes("@/src/services/users"), false, `${file} imports legacy Users`);
     assert.equal(source.includes("@/src/services/practice-sessions"), false, `${file} imports legacy Practice`);

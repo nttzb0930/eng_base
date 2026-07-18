@@ -5,7 +5,7 @@ import {
   createHttpClient,
   HttpClientError,
   unwrap,
-} from "../src/lib/http-client";
+} from "../app/features/auth/api/http-client";
 
 test("admin HTTP interface unwraps a successful API envelope", () => {
   assert.deepEqual(unwrap({ success: true, data: { id: 7 } }), { id: 7 });

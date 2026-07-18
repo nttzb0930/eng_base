@@ -19,7 +19,7 @@ import {
 import type { LoginBody, RegisterBody } from "@/app/features/auth/types/auth.types";
 import { defaultLocale, isLocale } from "@/app/i18n/config";
 import { withLocale } from "@/app/i18n/paths";
-import { setOnUnauthenticated } from "@/src/lib/web-http-client";
+import { setOnUnauthenticated } from "@/app/features/auth/api/web-http-client";
 
 function localeFromPathname(pathname: string) {
   const firstSegment = pathname.split("/").filter(Boolean)[0] ?? "";

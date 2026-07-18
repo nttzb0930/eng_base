@@ -1,5 +1,5 @@
-import type { ApiEnvelope } from "@/src/lib/http-client";
-import { adminHttpClient } from "@/src/services/http/admin-http-client";
+import type { ApiEnvelope } from "@/app/features/auth/api/http-client";
+import { adminHttpClient } from "@/app/features/auth/api/admin-http-client";
 
 import type {
   ListPracticeSessionsQuery,
