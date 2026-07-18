@@ -78,6 +78,7 @@ test("Web Auth follows the EC client feature profile", () => {
     "app/features/auth/api/auth.api.ts",
     "app/features/auth/api/web-http-client.ts",
     "app/features/auth/hooks/use-auth.ts",
+    "app/features/auth/session/auth-session-bootstrap.ts",
     "app/features/auth/store/auth-session.store.ts",
     "app/features/auth/types/auth.types.ts",
     "app/providers.tsx",
@@ -86,6 +87,12 @@ test("Web Auth follows the EC client feature profile", () => {
   ]) {
     assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
   }
+
+  assert.equal(
+    existsSync(join(root, "app/features/auth/components/AuthSessionProvider.tsx")),
+    false,
+    "Auth bootstrap stays behind the root Providers module",
+  );
 
   for (const path of [
     "src/services/auth",
