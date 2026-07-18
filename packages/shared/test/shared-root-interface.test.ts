@@ -11,7 +11,7 @@ import {
   type PaginatedCoursesResponse,
 } from "@repo/shared";
 
-test("shared exposes the EC TypeScript-only root interface", () => {
+test("Shared exposes the TypeScript-only root Interface", () => {
   const course: Course = { id: 1, title: "English", imageSrc: "/en.svg" };
   const payload: CreateCoursePayload = {
     title: "English",

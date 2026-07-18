@@ -45,7 +45,7 @@ function filesUnder(directory: string): string[] {
   });
 }
 
-test("course routes follow the ecommerce Admin view profile", () => {
+test("course routes follow the Admin feature/view profile", () => {
   for (const [routeFile, expectedImport] of Object.entries(routeImports)) {
     const source = readFileSync(join(appRoot, routeFile), "utf8");
     assert.equal(

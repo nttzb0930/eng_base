@@ -97,7 +97,7 @@ test("active architecture docs describe the current frontend profile", () => {
   }
 });
 
-test("Web Auth follows the EC client feature profile", () => {
+test("Web Auth follows the frontend feature/view profile", () => {
   for (const path of [
     "app/features/auth/api/auth.api.ts",
     "app/features/auth/api/web-http-client.ts",

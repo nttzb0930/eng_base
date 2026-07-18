@@ -78,7 +78,7 @@ test("Vocabulary owns its types, mappers, builders and tests", () => {
   );
 });
 
-test("Course producers use the EC shared root interface", () => {
+test("Course producers use the Shared root Interface", () => {
   for (const file of [
     "module/courses/dto/course-content-management.dto.ts",
     "module/courses/mappers/course-content.mapper.ts",

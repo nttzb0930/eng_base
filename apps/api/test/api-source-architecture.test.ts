@@ -15,7 +15,7 @@ function filesUnder(directory: string): string[] {
   });
 }
 
-test("API infrastructure follows the EC source profile", () => {
+test("API infrastructure follows the capability-owned source profile", () => {
   assert.deepEqual(filesUnder(join(sourceRoot, "auth")), []);
   assert.deepEqual(filesUnder(join(sourceRoot, "db")), []);
   assert.deepEqual(filesUnder(join(sourceRoot, "prisma")), []);

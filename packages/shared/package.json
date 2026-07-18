@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "architecture:check": "tsx --test test/ec-shared-profile.architecture.test.ts",
+    "architecture:check": "tsx --test test/shared-package-profile.architecture.test.ts",
     "check-types": "tsc --noEmit",
     "dev": "tsc -p tsconfig.json --watch --preserveWatchOutput",
     "pretest": "pnpm run build",

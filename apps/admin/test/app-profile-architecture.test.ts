@@ -97,7 +97,7 @@ test("Admin architecture check includes every architecture test", () => {
   assert.equal(packageJson.scripts?.["architecture:check"], 'tsx --test "test/*architecture.test.ts"');
 });
 
-test("Admin Auth follows the EC feature and view profile", () => {
+test("Admin Auth follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/auth/api/auth.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/auth/api/http-client.ts")), true);
   assert.equal(existsSync(join(root, "app/features/auth/api/admin-http-client.ts")), true);
@@ -112,7 +112,7 @@ test("Admin Auth follows the EC feature and view profile", () => {
   assert.equal(existsSync(join(root, "components/auth/AuthGuard.tsx")), false);
 });
 
-test("Admin Users follows the EC feature and view profile", () => {
+test("Admin Users follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/users/api/user.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/users/hooks/use-users.ts")), true);
   assert.equal(existsSync(join(root, "app/features/users/types/user-management.types.ts")), true);
@@ -139,7 +139,7 @@ test("Admin Practice Sessions follows the Practice owner profile", () => {
   assert.equal(routeSource.includes("@/src/views/practice-sessions"), false);
 });
 
-test("Admin Settings follows the EC feature and view profile", () => {
+test("Admin Settings follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/settings/api/setting.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/settings/hooks/use-setting.ts")), true);
   assert.equal(existsSync(join(root, "app/views/settings/SettingsView.tsx")), true);

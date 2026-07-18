@@ -17,7 +17,7 @@ function filesUnder(directory: string): string[] {
   });
 }
 
-test("application source imports only the EC shared root interface", () => {
+test("application source imports only the Shared root Interface", () => {
   for (const root of ["apps/api/src", "apps/admin/app", "apps/web/app"]) {
     for (const file of filesUnder(join(repoRoot, root))) {
       const source = readFileSync(file, "utf8");
