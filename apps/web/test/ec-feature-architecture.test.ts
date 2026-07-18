@@ -58,6 +58,21 @@ test("Web root metadata is declared directly in the root layout", () => {
   assert.equal(layoutSource.includes("@/app/config"), false, "app/layout.tsx must not import generic app config");
 });
 
+test("Web default test command includes root and feature test seams", () => {
+  const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
+    scripts?: Record<string, string>;
+  };
+  const rootTests = filesUnder(join(root, "test")).filter((path) => path.endsWith(".test.ts"));
+  const featureTests = filesUnder(join(root, "app")).filter((path) => path.endsWith(".test.ts"));
+
+  assert.ok(rootTests.length > 0, "Web root test seam must contain tests");
+  assert.ok(featureTests.length > 0, "Web feature test seam must contain tests");
+  assert.equal(
+    packageJson.scripts?.test,
+    'tsx --test "test/**/*.test.ts" "app/**/*.test.ts"',
+  );
+});
+
 test("Web Auth follows the EC client feature profile", () => {
   for (const path of [
     "app/features/auth/api/auth.api.ts",
