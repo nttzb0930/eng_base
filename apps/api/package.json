@@ -35,7 +35,12 @@
     "data:correct-vocab-pos-gemini": "dotenv -e ../../.env -- tsx ./scripts/run-vocab-pos-correction-gemini.ts",
     "data:merge-vocab-pos-correction": "dotenv -e ../../.env -- tsx ./scripts/merge-vocab-pos-correction.ts",
     "data:sync-vocab-pos-correction": "dotenv -e ../../.env -- tsx ./scripts/sync-vocab-pos-correction-to-db.ts",
-    "data:seed-topics": "dotenv -e ../../.env -- tsx ./scripts/seed-vocab-topics.ts"
+    "data:seed-topics": "dotenv -e ../../.env -- tsx ./scripts/seed-vocab-topics.ts",
+    "data:prepare-topics": "dotenv -e ../../.env -- tsx ./scripts/prepare-vocab-topics.ts",
+    "data:classify-topics-ai": "dotenv -e ../../.env -- tsx ./scripts/run-vocab-topics-gemini.ts",
+    "data:merge-topics": "dotenv -e ../../.env -- tsx ./scripts/merge-vocab-topics.ts",
+    "data:generate-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/generate-topic-expansion.ts",
+    "data:merge-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/merge-topic-expansion.ts"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",

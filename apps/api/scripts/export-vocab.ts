@@ -10,7 +10,7 @@ const DATASET_PATH = path.join(
   "..",
   "data",
   "vocabulary",
-  "phase1-vocabulary.json"
+  "vocabulary-catalog.json"
 );
 
 if (!process.env.DATABASE_URL) {
@@ -33,7 +33,7 @@ async function main() {
 
   console.log(`Loaded ${dbItems.length} items from database.`);
 
-  console.log("Reading existing phase1-vocabulary.json...");
+  console.log("Reading existing vocabulary-catalog.json...");
   const fileRaw = await readFile(DATASET_PATH, "utf8");
   const fileItems = JSON.parse(fileRaw) as any[];
 
@@ -72,7 +72,7 @@ async function main() {
 
   console.log(`Updated ${updatedCount} items in JSON with enriched data.`);
 
-  console.log("Writing back to phase1-vocabulary.json...");
+  console.log("Writing back to vocabulary-catalog.json...");
   await writeFile(DATASET_PATH, JSON.stringify(mergedItems, null, 2) + "\n", "utf8");
   console.log("Export complete!");
 }

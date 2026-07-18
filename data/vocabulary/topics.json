@@ -1,0 +1,723 @@
+[
+  {
+    "slug": "personal-information",
+    "title": "Personal Information",
+    "description": "Vocabulary related to personal information.",
+    "order": 1,
+    "group": "People"
+  },
+  {
+    "slug": "family",
+    "title": "Family",
+    "description": "Vocabulary related to family.",
+    "order": 2,
+    "group": "People"
+  },
+  {
+    "slug": "friends",
+    "title": "Friends",
+    "description": "Vocabulary related to friends.",
+    "order": 3,
+    "group": "People"
+  },
+  {
+    "slug": "relationships",
+    "title": "Relationships",
+    "description": "Vocabulary related to relationships.",
+    "order": 4,
+    "group": "People"
+  },
+  {
+    "slug": "appearance",
+    "title": "Appearance",
+    "description": "Vocabulary related to appearance.",
+    "order": 5,
+    "group": "People"
+  },
+  {
+    "slug": "personality",
+    "title": "Personality",
+    "description": "Vocabulary related to personality.",
+    "order": 6,
+    "group": "People"
+  },
+  {
+    "slug": "emotions",
+    "title": "Emotions",
+    "description": "Vocabulary related to emotions.",
+    "order": 7,
+    "group": "People"
+  },
+  {
+    "slug": "body",
+    "title": "Body",
+    "description": "Vocabulary related to body.",
+    "order": 8,
+    "group": "People"
+  },
+  {
+    "slug": "daily-routine",
+    "title": "Daily Routine",
+    "description": "Vocabulary related to daily routine.",
+    "order": 9,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "home",
+    "title": "Home",
+    "description": "Vocabulary related to home.",
+    "order": 10,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "household-items",
+    "title": "Household Items",
+    "description": "Vocabulary related to household items.",
+    "order": 11,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "furniture",
+    "title": "Furniture",
+    "description": "Vocabulary related to furniture.",
+    "order": 12,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "clothing",
+    "title": "Clothing",
+    "description": "Vocabulary related to clothing.",
+    "order": 13,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "fashion",
+    "title": "Fashion",
+    "description": "Vocabulary related to fashion.",
+    "order": 14,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "shopping",
+    "title": "Shopping",
+    "description": "Vocabulary related to shopping.",
+    "order": 15,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "online-shopping",
+    "title": "Online Shopping",
+    "description": "Vocabulary related to online shopping.",
+    "order": 16,
+    "group": "Daily Life"
+  },
+  {
+    "slug": "food",
+    "title": "Food",
+    "description": "Vocabulary related to food.",
+    "order": 17,
+    "group": "Food & Drink"
+  },
+  {
+    "slug": "cooking",
+    "title": "Cooking",
+    "description": "Vocabulary related to cooking.",
+    "order": 18,
+    "group": "Food & Drink"
+  },
+  {
+    "slug": "restaurant",
+    "title": "Restaurant",
+    "description": "Vocabulary related to restaurant.",
+    "order": 19,
+    "group": "Food & Drink"
+  },
+  {
+    "slug": "coffee",
+    "title": "Coffee & Tea",
+    "description": "Vocabulary related to coffee & tea.",
+    "order": 20,
+    "group": "Food & Drink"
+  },
+  {
+    "slug": "diet",
+    "title": "Diet & Nutrition",
+    "description": "Vocabulary related to diet & nutrition.",
+    "order": 21,
+    "group": "Food & Drink"
+  },
+  {
+    "slug": "school",
+    "title": "School",
+    "description": "Vocabulary related to school.",
+    "order": 22,
+    "group": "Education"
+  },
+  {
+    "slug": "university",
+    "title": "University",
+    "description": "Vocabulary related to university.",
+    "order": 23,
+    "group": "Education"
+  },
+  {
+    "slug": "education",
+    "title": "Education",
+    "description": "Vocabulary related to education.",
+    "order": 24,
+    "group": "Education"
+  },
+  {
+    "slug": "languages",
+    "title": "Languages",
+    "description": "Vocabulary related to languages.",
+    "order": 25,
+    "group": "Education"
+  },
+  {
+    "slug": "reading",
+    "title": "Reading",
+    "description": "Vocabulary related to reading.",
+    "order": 26,
+    "group": "Education"
+  },
+  {
+    "slug": "books",
+    "title": "Books",
+    "description": "Vocabulary related to books.",
+    "order": 27,
+    "group": "Education"
+  },
+  {
+    "slug": "exams",
+    "title": "Exams",
+    "description": "Vocabulary related to exams.",
+    "order": 28,
+    "group": "Education"
+  },
+  {
+    "slug": "job",
+    "title": "Job",
+    "description": "Vocabulary related to job.",
+    "order": 29,
+    "group": "Work"
+  },
+  {
+    "slug": "career",
+    "title": "Career",
+    "description": "Vocabulary related to career.",
+    "order": 30,
+    "group": "Work"
+  },
+  {
+    "slug": "interview",
+    "title": "Interview",
+    "description": "Vocabulary related to interview.",
+    "order": 31,
+    "group": "Work"
+  },
+  {
+    "slug": "office",
+    "title": "Office",
+    "description": "Vocabulary related to office.",
+    "order": 32,
+    "group": "Work"
+  },
+  {
+    "slug": "business",
+    "title": "Business",
+    "description": "Vocabulary related to business.",
+    "order": 33,
+    "group": "Work"
+  },
+  {
+    "slug": "entrepreneurship",
+    "title": "Entrepreneurship",
+    "description": "Vocabulary related to entrepreneurship.",
+    "order": 34,
+    "group": "Work"
+  },
+  {
+    "slug": "leadership",
+    "title": "Leadership",
+    "description": "Vocabulary related to leadership.",
+    "order": 35,
+    "group": "Work"
+  },
+  {
+    "slug": "teamwork",
+    "title": "Teamwork",
+    "description": "Vocabulary related to teamwork.",
+    "order": 36,
+    "group": "Work"
+  },
+  {
+    "slug": "technology",
+    "title": "Technology",
+    "description": "Vocabulary related to technology.",
+    "order": 37,
+    "group": "Technology"
+  },
+  {
+    "slug": "internet",
+    "title": "Internet",
+    "description": "Vocabulary related to internet.",
+    "order": 38,
+    "group": "Technology"
+  },
+  {
+    "slug": "smartphones",
+    "title": "Smartphones",
+    "description": "Vocabulary related to smartphones.",
+    "order": 39,
+    "group": "Technology"
+  },
+  {
+    "slug": "social-media",
+    "title": "Social Media",
+    "description": "Vocabulary related to social media.",
+    "order": 40,
+    "group": "Technology"
+  },
+  {
+    "slug": "artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "description": "Vocabulary related to artificial intelligence.",
+    "order": 41,
+    "group": "Technology"
+  },
+  {
+    "slug": "future-technology",
+    "title": "Future Technology",
+    "description": "Vocabulary related to future technology.",
+    "order": 42,
+    "group": "Technology"
+  },
+  {
+    "slug": "gaming",
+    "title": "Gaming",
+    "description": "Vocabulary related to gaming.",
+    "order": 43,
+    "group": "Technology"
+  },
+  {
+    "slug": "movies",
+    "title": "Movies",
+    "description": "Vocabulary related to movies.",
+    "order": 44,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "tv-shows",
+    "title": "TV Shows",
+    "description": "Vocabulary related to tv shows.",
+    "order": 45,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "music",
+    "title": "Music",
+    "description": "Vocabulary related to music.",
+    "order": 46,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "photography",
+    "title": "Photography",
+    "description": "Vocabulary related to photography.",
+    "order": 47,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "drawing-and-painting",
+    "title": "Drawing & Painting",
+    "description": "Vocabulary related to drawing & painting.",
+    "order": 48,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "dancing",
+    "title": "Dancing",
+    "description": "Vocabulary related to dancing.",
+    "order": 49,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "singing",
+    "title": "Singing",
+    "description": "Vocabulary related to singing.",
+    "order": 50,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "hobbies",
+    "title": "Hobbies",
+    "description": "Vocabulary related to hobbies.",
+    "order": 51,
+    "group": "Entertainment"
+  },
+  {
+    "slug": "travel",
+    "title": "Travel",
+    "description": "Vocabulary related to travel.",
+    "order": 52,
+    "group": "Travel"
+  },
+  {
+    "slug": "vacation",
+    "title": "Vacation",
+    "description": "Vocabulary related to vacation.",
+    "order": 53,
+    "group": "Travel"
+  },
+  {
+    "slug": "hotel",
+    "title": "Hotel",
+    "description": "Vocabulary related to hotel.",
+    "order": 54,
+    "group": "Travel"
+  },
+  {
+    "slug": "airport",
+    "title": "Airport",
+    "description": "Vocabulary related to airport.",
+    "order": 55,
+    "group": "Travel"
+  },
+  {
+    "slug": "transportation",
+    "title": "Transportation",
+    "description": "Vocabulary related to transportation.",
+    "order": 56,
+    "group": "Travel"
+  },
+  {
+    "slug": "driving",
+    "title": "Driving",
+    "description": "Vocabulary related to driving.",
+    "order": 57,
+    "group": "Travel"
+  },
+  {
+    "slug": "traffic",
+    "title": "Traffic",
+    "description": "Vocabulary related to traffic.",
+    "order": 58,
+    "group": "Travel"
+  },
+  {
+    "slug": "weather",
+    "title": "Weather",
+    "description": "Vocabulary related to weather.",
+    "order": 59,
+    "group": "Nature"
+  },
+  {
+    "slug": "seasons",
+    "title": "Seasons",
+    "description": "Vocabulary related to seasons.",
+    "order": 60,
+    "group": "Nature"
+  },
+  {
+    "slug": "nature",
+    "title": "Nature",
+    "description": "Vocabulary related to nature.",
+    "order": 61,
+    "group": "Nature"
+  },
+  {
+    "slug": "plants",
+    "title": "Plants",
+    "description": "Vocabulary related to plants.",
+    "order": 62,
+    "group": "Nature"
+  },
+  {
+    "slug": "animals",
+    "title": "Animals",
+    "description": "Vocabulary related to animals.",
+    "order": 63,
+    "group": "Nature"
+  },
+  {
+    "slug": "pets",
+    "title": "Pets",
+    "description": "Vocabulary related to pets.",
+    "order": 64,
+    "group": "Nature"
+  },
+  {
+    "slug": "wild-animals",
+    "title": "Wild Animals",
+    "description": "Vocabulary related to wild animals.",
+    "order": 65,
+    "group": "Nature"
+  },
+  {
+    "slug": "environment",
+    "title": "Environment",
+    "description": "Vocabulary related to environment.",
+    "order": 66,
+    "group": "Environment"
+  },
+  {
+    "slug": "pollution",
+    "title": "Pollution",
+    "description": "Vocabulary related to pollution.",
+    "order": 67,
+    "group": "Environment"
+  },
+  {
+    "slug": "recycling",
+    "title": "Recycling",
+    "description": "Vocabulary related to recycling.",
+    "order": 68,
+    "group": "Environment"
+  },
+  {
+    "slug": "climate-change",
+    "title": "Climate Change",
+    "description": "Vocabulary related to climate change.",
+    "order": 69,
+    "group": "Environment"
+  },
+  {
+    "slug": "renewable-energy",
+    "title": "Renewable Energy",
+    "description": "Vocabulary related to renewable energy.",
+    "order": 70,
+    "group": "Environment"
+  },
+  {
+    "slug": "health",
+    "title": "Health",
+    "description": "Vocabulary related to health.",
+    "order": 71,
+    "group": "Health"
+  },
+  {
+    "slug": "mental-health",
+    "title": "Mental Health",
+    "description": "Vocabulary related to mental health.",
+    "order": 72,
+    "group": "Health"
+  },
+  {
+    "slug": "exercise",
+    "title": "Exercise",
+    "description": "Vocabulary related to exercise.",
+    "order": 73,
+    "group": "Health"
+  },
+  {
+    "slug": "medicine",
+    "title": "Medicine",
+    "description": "Vocabulary related to medicine.",
+    "order": 74,
+    "group": "Health"
+  },
+  {
+    "slug": "diseases",
+    "title": "Diseases",
+    "description": "Vocabulary related to diseases.",
+    "order": 75,
+    "group": "Health"
+  },
+  {
+    "slug": "banking",
+    "title": "Banking",
+    "description": "Vocabulary related to banking.",
+    "order": 76,
+    "group": "Finance"
+  },
+  {
+    "slug": "economy",
+    "title": "Economy",
+    "description": "Vocabulary related to economy.",
+    "order": 77,
+    "group": "Finance"
+  },
+  {
+    "slug": "money",
+    "title": "Money",
+    "description": "Vocabulary related to money.",
+    "order": 78,
+    "group": "Finance"
+  },
+  {
+    "slug": "tax",
+    "title": "Tax",
+    "description": "Vocabulary related to tax.",
+    "order": 79,
+    "group": "Finance"
+  },
+  {
+    "slug": "insurance",
+    "title": "Insurance",
+    "description": "Vocabulary related to insurance.",
+    "order": 80,
+    "group": "Finance"
+  },
+  {
+    "slug": "investment",
+    "title": "Investment",
+    "description": "Vocabulary related to investment.",
+    "order": 81,
+    "group": "Finance"
+  },
+  {
+    "slug": "laws",
+    "title": "Laws",
+    "description": "Vocabulary related to laws.",
+    "order": 82,
+    "group": "Society"
+  },
+  {
+    "slug": "crime-and-safety",
+    "title": "Crime & Safety",
+    "description": "Vocabulary related to crime & safety.",
+    "order": 83,
+    "group": "Society"
+  },
+  {
+    "slug": "human-rights",
+    "title": "Human Rights",
+    "description": "Vocabulary related to human rights.",
+    "order": 84,
+    "group": "Society"
+  },
+  {
+    "slug": "community",
+    "title": "Community",
+    "description": "Vocabulary related to community.",
+    "order": 85,
+    "group": "Society"
+  },
+  {
+    "slug": "culture",
+    "title": "Culture",
+    "description": "Vocabulary related to culture.",
+    "order": 86,
+    "group": "Society"
+  },
+  {
+    "slug": "religion",
+    "title": "Religion",
+    "description": "Vocabulary related to religion.",
+    "order": 87,
+    "group": "Society"
+  },
+  {
+    "slug": "history",
+    "title": "History",
+    "description": "Vocabulary related to history.",
+    "order": 88,
+    "group": "Society"
+  },
+  {
+    "slug": "mathematics",
+    "title": "Mathematics",
+    "description": "Vocabulary related to mathematics.",
+    "order": 89,
+    "group": "Science"
+  },
+  {
+    "slug": "physics",
+    "title": "Physics",
+    "description": "Vocabulary related to physics.",
+    "order": 90,
+    "group": "Science"
+  },
+  {
+    "slug": "chemistry",
+    "title": "Chemistry",
+    "description": "Vocabulary related to chemistry.",
+    "order": 91,
+    "group": "Science"
+  },
+  {
+    "slug": "biology",
+    "title": "Biology",
+    "description": "Vocabulary related to biology.",
+    "order": 92,
+    "group": "Science"
+  },
+  {
+    "slug": "space-exploration",
+    "title": "Space Exploration",
+    "description": "Vocabulary related to space exploration.",
+    "order": 93,
+    "group": "Science"
+  },
+  {
+    "slug": "communication-skills",
+    "title": "Communication Skills",
+    "description": "Vocabulary related to communication skills.",
+    "order": 94,
+    "group": "Skills"
+  },
+  {
+    "slug": "writing",
+    "title": "Writing",
+    "description": "Vocabulary related to writing.",
+    "order": 95,
+    "group": "Skills"
+  },
+  {
+    "slug": "speaking",
+    "title": "Speaking",
+    "description": "Vocabulary related to speaking.",
+    "order": 96,
+    "group": "Skills"
+  },
+  {
+    "slug": "problem-solving",
+    "title": "Problem Solving",
+    "description": "Vocabulary related to problem solving.",
+    "order": 97,
+    "group": "Skills"
+  },
+  {
+    "slug": "decision-making",
+    "title": "Decision Making",
+    "description": "Vocabulary related to decision making.",
+    "order": 98,
+    "group": "Skills"
+  },
+  {
+    "slug": "success",
+    "title": "Success",
+    "description": "Vocabulary related to success.",
+    "order": 99,
+    "group": "Personal Development"
+  },
+  {
+    "slug": "failure",
+    "title": "Failure",
+    "description": "Vocabulary related to failure.",
+    "order": 100,
+    "group": "Personal Development"
+  },
+  {
+    "slug": "goals-and-ambitions",
+    "title": "Goals & Ambitions",
+    "description": "Vocabulary related to goals & ambitions.",
+    "order": 101,
+    "group": "Personal Development"
+  },
+  {
+    "slug": "stress",
+    "title": "Stress",
+    "description": "Vocabulary related to stress.",
+    "order": 102,
+    "group": "Personal Development"
+  },
+  {
+    "slug": "happiness",
+    "title": "Happiness",
+    "description": "Vocabulary related to happiness.",
+    "order": 103,
+    "group": "Personal Development"
+  }
+]

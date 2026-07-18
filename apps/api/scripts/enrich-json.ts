@@ -7,7 +7,7 @@ const DATASET_PATH = path.join(
   "..",
   "data",
   "vocabulary",
-  "phase1-vocabulary.json"
+  "vocabulary-catalog.json"
 );
 
 const DEFAULT_CONCURRENCY = 1;
@@ -30,7 +30,7 @@ type VocabularySeedItem = {
   exampleVi?: string | null;
   exampleSource?: string | null;
   examples?: string[];
-  enriched?: boolean;
+  dictionaryLookupCompleted?: boolean;
 };
 
 type DictionaryPhonetic = {
@@ -189,12 +189,12 @@ const main = async () => {
   const concurrency = getConcurrency();
   const requestDelayMs = getRequestDelayMs();
 
-  console.log("Reading dataset from phase1-vocabulary.json...");
+  console.log("Reading dataset from vocabulary-catalog.json...");
   const raw = await readFile(DATASET_PATH, "utf8");
   const dataset: VocabularySeedItem[] = JSON.parse(raw);
 
   const pendingItems = dataset.filter(
-    (item) => !item.enriched
+    (item) => !item.dictionaryLookupCompleted
   );
 
   console.log(
@@ -228,7 +228,7 @@ const main = async () => {
       try {
         const result = await fetchFromDictionaryApi(item.word);
 
-        item.enriched = true; // Mark as checked/processed successfully
+        item.dictionaryLookupCompleted = true;
 
         if (result) {
           const hasAudio = !!result.audioUrl;
@@ -272,7 +272,7 @@ const main = async () => {
   console.log(`- Updated: ${updatedCount} words`);
   console.log(`- Missing/Not found: ${missingCount} words`);
   console.log(`- Failed: ${failedCount} words`);
-  console.log("All updates saved to phase1-vocabulary.json!");
+  console.log("All updates saved to vocabulary-catalog.json!");
 };
 
 main().catch(console.error);

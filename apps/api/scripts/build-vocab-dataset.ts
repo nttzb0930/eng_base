@@ -80,8 +80,8 @@ const DEFAULT_DICTIONARY_PATH = path.join(
   "english-vietnamese.txt"
 );
 const OUTPUT_DIR = path.join(ROOT, "data", "vocabulary");
-const OUTPUT_JSON = path.join(OUTPUT_DIR, "phase1-vocabulary.json");
-const OUTPUT_REPORT = path.join(OUTPUT_DIR, "phase1-vocabulary-report.json");
+const OUTPUT_JSON = path.join(OUTPUT_DIR, "vocabulary-catalog.json");
+const OUTPUT_REPORT = path.join(OUTPUT_DIR, "vocabulary-catalog-report.json");
 
 const cefrPath = process.env.CEFR_WORDLIST_PATH || DEFAULT_CEFR_PATH;
 const dictionaryPath = process.env.VI_DICTIONARY_PATH || DEFAULT_DICTIONARY_PATH;

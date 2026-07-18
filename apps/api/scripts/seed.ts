@@ -41,7 +41,7 @@ const DATASET_PATH = path.join(
   "..",
   "data",
   "vocabulary",
-  "phase1-vocabulary.json"
+  "vocabulary-catalog.json"
 );
 
 if (!process.env.DATABASE_URL) {
