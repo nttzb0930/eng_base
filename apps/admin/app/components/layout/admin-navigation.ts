@@ -1,0 +1,37 @@
+import {
+  Activity,
+  Bookmark,
+  BookOpen,
+  CheckSquare,
+  HelpCircle,
+  Layers,
+  Settings,
+  Users,
+} from "lucide-react";
+
+export const adminNavigation = [
+  { href: "/courses", label: "Khóa học (Courses)", icon: BookOpen },
+  { href: "/units", label: "Chương học (Units)", icon: Layers },
+  { href: "/lessons", label: "Bài học (Lessons)", icon: Bookmark },
+  { href: "/challenges", label: "Thử thách (Challenges)", icon: HelpCircle },
+  { href: "/challenge-options", label: "Đáp án (Options)", icon: CheckSquare },
+  { href: "/users", label: "Người dùng (Users)", icon: Users },
+  {
+    href: "/practice-sessions",
+    label: "Lịch sử luyện tập (Practice)",
+    icon: Activity,
+  },
+  { href: "/settings", label: "Cấu hình (Settings)", icon: Settings },
+] as const;
+
+export function getAdminPageTitle(pathname: string) {
+  if (pathname.startsWith("/courses")) return "Quản lý khóa học";
+  if (pathname.startsWith("/units")) return "Quản lý chương học";
+  if (pathname.startsWith("/lessons")) return "Quản lý bài học";
+  if (pathname.startsWith("/challenges")) return "Quản lý thử thách";
+  if (pathname.startsWith("/challenge-options")) return "Quản lý đáp án & câu hỏi";
+  if (pathname.startsWith("/users")) return "Quản lý người dùng";
+  if (pathname.startsWith("/practice-sessions")) return "Lịch sử luyện tập học viên";
+  if (pathname.startsWith("/settings")) return "Cấu hình hệ thống";
+  return "Lingo Admin panel";
+}
