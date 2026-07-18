@@ -26,7 +26,7 @@ export function useLearningSession<TItem>({
     completionGate.current.record(state.reviewedItems, onComplete);
   }, [complete, onComplete, state.reviewedItems]);
 
-  const recordAnswer = useCallback((correct: boolean, item: TItem) => {
+  const recordAnswer = useCallback((correct: boolean, item?: TItem) => {
     dispatch({ type: "record-answer", correct, item });
   }, []);
 

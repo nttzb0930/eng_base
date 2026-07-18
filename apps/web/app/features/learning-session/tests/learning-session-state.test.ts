@@ -47,6 +47,17 @@ test("learning session clears feedback without losing accumulated results", () =
   assert.deepEqual(cleared.reviewedItems, [{ id: 1, correct: true }]);
 });
 
+test("learning session counts feedback without requiring a reviewed item", () => {
+  const answered = learningSessionReducer(createLearningSessionState<ReviewedItem>(), {
+    type: "record-answer",
+    correct: true,
+  });
+
+  assert.equal(answered.status, "correct");
+  assert.equal(answered.correctCount, 1);
+  assert.deepEqual(answered.reviewedItems, []);
+});
+
 test("learning session reset removes all accumulated results", () => {
   const answered = learningSessionReducer(createLearningSessionState<ReviewedItem>(), {
     type: "record-answer",

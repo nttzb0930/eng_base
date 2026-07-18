@@ -210,6 +210,29 @@ test("Practice and Review adapters use the Learning Session interface", () => {
   }
 });
 
+test("Lesson adapter uses the Learning Session interface", () => {
+  const path = "app/features/lessons/hooks/use-lesson-quiz.ts";
+  const source = readFileSync(join(root, path), "utf8");
+
+  assert.equal(source.includes("useLearningSession"), true, `${path} must use Learning Session`);
+  assert.equal(source.includes("const [status, setStatus]"), false, `${path} owns feedback state`);
+  assert.equal(
+    source.includes("const [correctCount, setCorrectCount]"),
+    false,
+    `${path} owns correct count`,
+  );
+  assert.equal(
+    source.includes("const [wrongCount, setWrongCount]"),
+    false,
+    `${path} owns wrong count`,
+  );
+  assert.equal(
+    source.includes("const [reviewedItems, setReviewedItems]"),
+    false,
+    `${path} owns reviewed items`,
+  );
+});
+
 test("Web domain code no longer uses legacy technical buckets or authenticated server HTTP", () => {
   for (const path of ["src/modules", "src/services", "src/views", "src/stores"]) {
     assert.deepEqual(filesUnder(join(root, path)), [], `${path} must be empty`);

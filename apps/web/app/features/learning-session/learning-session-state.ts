@@ -8,7 +8,7 @@ export type LearningSessionState<TItem> = {
 };
 
 export type LearningSessionAction<TItem> =
-  | { type: "record-answer"; correct: boolean; item: TItem }
+  | { type: "record-answer"; correct: boolean; item?: TItem }
   | { type: "clear-feedback" }
   | { type: "reset" };
 
@@ -31,7 +31,10 @@ export function learningSessionReducer<TItem>(
         status: action.correct ? "correct" : "wrong",
         correctCount: state.correctCount + (action.correct ? 1 : 0),
         wrongCount: state.wrongCount + (action.correct ? 0 : 1),
-        reviewedItems: [...state.reviewedItems, action.item],
+        reviewedItems:
+          action.item === undefined
+            ? state.reviewedItems
+            : [...state.reviewedItems, action.item],
       };
     case "clear-feedback":
       return { ...state, status: "none" };

@@ -19,6 +19,7 @@ import type {
 import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
 import { useHeartsModal } from "@/app/features/progress/store/hearts-modal.store";
 import { usePracticeModal } from "@/app/features/practice/store/practice-modal.store";
+import { useLearningSession } from "@/app/features/learning-session/use-learning-session";
 
 export type QuizChallenge = LessonChallenge & {
   completed: boolean;
@@ -66,9 +67,8 @@ export function useLessonQuiz({
   const [startedAt] = useState(() => Date.now());
   const [durationSeconds, setDurationSeconds] = useState(1);
   const [hearts, setHearts] = useState(initialHearts);
-  const [correctCount, setCorrectCount] = useState(0);
-  const [wrongCount, setWrongCount] = useState(0);
   const [earnedXp, setEarnedXp] = useState(0);
+  const [sessionComplete, setSessionComplete] = useState(false);
   const [percentage, setPercentage] = useState(() =>
     initialPercentage === 100 ? 0 : initialPercentage
   );
@@ -80,8 +80,6 @@ export function useLessonQuiz({
   );
 
   const [selectedOption, setSelectedOption] = useState<number>();
-  const [status, setStatus] = useState<"none" | "wrong" | "correct">("none");
-  const [reviewedItems, setReviewedItems] = useState<PracticeResultItem[]>([]);
   const [savedVocabularyIds, setSavedVocabularyIds] = useState(
     () =>
       new Set(
@@ -95,6 +93,28 @@ export function useLessonQuiz({
 
   const challenge = challengeQueue[0];
   const options = challenge?.challengeOptions ?? [];
+  const {
+    state: { status, correctCount, wrongCount, reviewedItems },
+    recordAnswer,
+    clearFeedback,
+  } = useLearningSession<PracticeResultItem>({
+    complete: sessionComplete,
+    onComplete: async (items) => {
+      try {
+        await practiceApi.recordSession({
+          mode: "lesson",
+          items: items.map((item) => ({
+            vocabularyItemId: item.vocabularyItemId,
+            challengeType: item.challengeType,
+            correct: item.correct,
+            answer: item.answer,
+          })),
+        });
+      } catch {
+        toast.error(t("genericError"));
+      }
+    },
+  });
   const vocabularyItem = challenge?.vocabularyItem;
   const isSaved = !!vocabularyItem && savedVocabularyIds.has(vocabularyItem.id);
   const shouldHideVocabularyPrompt = challenge?.type === "ASSIST" && status === "none";
@@ -123,18 +143,6 @@ export function useLessonQuiz({
     });
   };
 
-  const saveCompletedSession = (items: PracticeResultItem[]) => {
-    practiceApi.recordSession({
-      mode: "lesson",
-      items: items.map((item) => ({
-        vocabularyItemId: item.vocabularyItemId,
-        challengeType: item.challengeType,
-        correct: item.correct,
-        answer: item.answer,
-      })),
-    }).catch(() => toast.error(t("genericError")));
-  };
-
   const createReviewedItem = (
     correct: boolean,
     answer?: string
@@ -159,14 +167,14 @@ export function useLessonQuiz({
       setChallengeQueue(([current, ...remaining]) =>
         current ? [...remaining, current] : remaining
       );
-      setStatus("none");
+      clearFeedback();
       setSelectedOption(undefined);
       return;
     }
 
     if (status === "correct") {
       setChallengeQueue((current) => current.slice(1));
-      setStatus("none");
+      clearFeedback();
       setSelectedOption(undefined);
       return;
     }
@@ -184,16 +192,11 @@ export function useLessonQuiz({
               return;
             }
             void correctControls.play();
-            setStatus("correct");
-            setCorrectCount((current) => current + 1);
             setEarnedXp((current) => current + 10);
             setPercentage((prev) => prev + 100 / challenges.length);
             const reviewedItem = createReviewedItem(true, correctOption.text);
-            const nextReviewedItems = reviewedItem
-              ? [...reviewedItems, reviewedItem]
-              : reviewedItems;
+            recordAnswer(true, reviewedItem ?? undefined);
             if (reviewedItem) {
-              setReviewedItems(nextReviewedItems);
               void vocabularyApi.recordReview(
                 reviewedItem.vocabularyItemId,
                 true
@@ -203,9 +206,7 @@ export function useLessonQuiz({
               setDurationSeconds(
                 Math.max(1, Math.round((Date.now() - startedAt) / 1000))
               );
-              if (nextReviewedItems.length > 0) {
-                saveCompletedSession(nextReviewedItems);
-              }
+              setSessionComplete(true);
             }
             if (initialPercentage === 100) {
               setHearts((prev) => Math.min(prev + 1, MAX_HEARTS));
@@ -217,13 +218,12 @@ export function useLessonQuiz({
       startTransition(() => {
         progressApi.reduceHearts(challenge.id)
           .then((response) => {
-            setWrongCount((current) => current + 1);
             const reviewedItem = createReviewedItem(
               false,
               options.find((option) => option.id === selectedOption)?.text
             );
+            recordAnswer(false, reviewedItem ?? undefined);
             if (reviewedItem) {
-              setReviewedItems((current) => [...current, reviewedItem]);
               void vocabularyApi.recordReview(
                 reviewedItem.vocabularyItemId,
                 false
@@ -231,12 +231,12 @@ export function useLessonQuiz({
             }
 
             if (response?.error === "hearts") {
+              clearFeedback();
               setHearts(0);
               openHeartsModal(initialLessonId);
               return;
             }
             void incorrectControls.play();
-            setStatus("wrong");
             if (!response?.error) setHearts((prev) => Math.max(prev - 1, 0));
           })
           .catch(() => toast.error(t("genericError")));
