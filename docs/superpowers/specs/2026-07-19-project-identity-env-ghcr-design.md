@@ -274,6 +274,69 @@ release tag. A `v1.2.3` release produces `v1.2.3`, `1.2`, `1`, and SHA tags;
 The workflow builds and publishes artifacts only. Deploying those artifacts is
 a separate future decision.
 
+## Root README and operating guides
+
+The root `README.md` remains Vietnamese and becomes the practical entrypoint for
+humans evaluating or starting the repository. It must not duplicate complete
+architecture rules, environment reference material, or CI implementation
+details. It summarizes them and links to their canonical owners.
+
+The README contains these sections in order:
+
+1. project identity and purpose;
+2. applications and technology stack, including local ports;
+3. architecture principles;
+4. current monorepo structure, including Docker and GitHub workflows;
+5. prerequisites with exact supported Node and pnpm versions;
+6. step-by-step local setup from `.env.example` through migrations and startup;
+7. local access URLs;
+8. environment model and public/private variable distinction;
+9. command reference with purpose and data-safety classification;
+10. Docker images and GHCR usage;
+11. the two CI/image workflows and their triggers;
+12. Git/release guidance without claiming unenforced hooks;
+13. canonical documentation links and database/vocabulary safety warnings.
+
+The README must not mention Make, Docker Hub, Redis, BullMQ, MinIO, Telegram,
+VPS deployment, benchmarks, staging environments, or commit-hook enforcement
+that this repository does not provide.
+
+Two English canonical guides own the detailed operating rules:
+
+```text
+docs/guides/environment-configuration.md
+docs/guides/ci-cd.md
+```
+
+`environment-configuration.md` defines:
+
+- the committed/ignored env file policy;
+- every environment group and its runtime owner;
+- local `DB_*` resolution versus hosted `DATABASE_URL` override;
+- how API, Prisma CLI, offline scripts, Web, and Admin consume configuration;
+- build-time public values versus runtime secrets;
+- local, CI, Docker, and future production examples using placeholders only;
+- validation, failure behavior, secret rotation, and troubleshooting;
+- the safe procedure for moving local data from `lingo` to `eng_base` without
+  silently mutating the existing database.
+
+`ci-cd.md` defines:
+
+- the responsibility and trigger of `ci.yml` and `docker-build.yml`;
+- required GitHub permissions and why `GITHUB_TOKEN` is sufficient for GHCR;
+- image naming and tag policy;
+- repository variables versus secrets;
+- public Next.js build arguments and private API runtime values;
+- package visibility and the first-push GHCR behavior;
+- local Docker build/pull/run examples;
+- failure diagnosis, cache behavior, and release verification;
+- the explicit boundary that image publication is not application deployment.
+
+`docs/README.md`, `AGENTS.md`, and the root README link to these guides without
+copying their normative content. Existing local-development and verification
+guides link to the new owner when an environment or workflow detail would
+otherwise be repeated.
+
 ## Security and failure behavior
 
 - Required runtime secrets fail validation; production never falls back to
@@ -314,7 +377,8 @@ not justify weakening the workflow or static architecture checks.
 3. Replace `Lingo`/`VoCaBu` usage and centralize Course/protocol constants.
 4. Add database URL resolution and migrate all database consumers.
 5. Update `.env.example`, Compose, local-development docs, verification docs,
-   and architecture guidance.
+   architecture guidance, the root README, and the two canonical operating
+   guides.
 6. Add `.dockerignore` and the three multi-stage Dockerfiles.
 7. Add `ci.yml` and `docker-build.yml`.
 8. Run narrow tests, the full verification gate, and Docker builds when
@@ -329,6 +393,10 @@ not justify weakening the workflow or static architecture checks.
 - Root package identity is `eng_base`; public UI consistently says
   `English Base`.
 - `.env.example` is complete, safe, grouped, and matches validated usage.
+- The Vietnamese root README provides complete onboarding without claiming
+  tooling or deployment features the repository does not contain.
+- English environment and CI/CD guides are linked from the canonical docs index
+  and own detailed configuration/workflow instructions.
 - All database consumers use one tested resolver.
 - Existing local database state is not mutated.
 - Three production Dockerfiles build from the monorepo root without secrets.
