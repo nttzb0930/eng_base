@@ -10,16 +10,23 @@ Vocabulary cards currently show word, phonetic, audio, meaning, and progress. Le
 
 ## Decision
 
-Add optional example sentence fields to `vocabulary_items`.
+Keep optional primary example fields on `vocabulary_items`.
 
 - `example_en`
 - `example_vi`
 - `example_source`
 
-Use `scripts/vocabulary/dictionary-enrichment/enrich-vocab-examples.ts` to fetch examples from Free Dictionary API when available. Keep `example_vi` null until a translation or LLM enrichment phase is added.
+Store the reviewed one-to-many example set in `vocabulary_examples`, including
+English text, optional Vietnamese translation, provenance, and order. Use
+`apps/api/scripts/vocabulary/dictionary-enrichment/enrich-vocab-examples.ts` for
+dictionary candidates and the canonical vocabulary pipeline for bilingual AI
+enrichment. The current catalog targets exactly ten distinct bilingual examples
+per vocabulary item.
 
 ## Consequences
 
 - Vocabulary cards can show usage context immediately.
 - Missing examples do not break lessons or review.
-- Fill-in-the-blank challenges can use `example_en` in a later phase.
+- Consumers prefer `vocabulary_examples` and may fall back to the primary
+  fields during migration or partial enrichment.
+- Fill-in-the-blank and dictation flows can reuse the reviewed examples.

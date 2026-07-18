@@ -20,13 +20,20 @@ The table stores:
 - `wrong_count`
 - `review_count`
 - `mastery_level`
+- `ease_factor`
+- `interval_days`
+- `repetition_count`
 - `last_reviewed_at`
 - `next_review_at`
 
-Saved Words Review updates this table after each answer.
+Review, practice, and flashcard result flows update this table through
+capability-owned use cases. Updates that increment counters must be atomic so
+concurrent answers cannot overwrite one another.
 
 ## Consequences
 
 - `/saved-words` can show mastery state and review stats.
 - `/saved-words/review` can prioritize due and weak words.
-- A future spaced repetition algorithm can deepen the scheduling implementation without changing the review UI interface.
+- Scheduling can evolve without changing the frontend response interface.
+- Progress mutation requires behavioral and concurrency tests because it is a
+  shared learner-state boundary.

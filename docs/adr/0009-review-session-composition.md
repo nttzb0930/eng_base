@@ -1,4 +1,4 @@
-# 0009 Review Session Composition
+# ADR 0009: Compose Review Sessions from Core and Enhanced Challenges
 
 ## Status
 
@@ -32,14 +32,17 @@ challenge:
 - `FILL_BLANK` when an example sentence contains the target word or a basic
   inflected form.
 
-`FILL_BLANK` examples are selected randomly from `vocabulary_examples` and fall
-back to `vocabulary_items.example_en` when the examples table has not been
-backfilled yet.
+`FILL_BLANK` examples are selected from `vocabulary_examples` and fall back to
+`vocabulary_items.example_en` for partially enriched records. Composition
+belongs to the Review capability under
+`apps/api/src/module/review/use-cases`.
 
 ## Consequences
 
 - Review sessions stay shorter and less predictable.
 - Extra enrichment data improves the review experience without changing seeded
   lesson challenges.
+- Random choice must remain inside the stated composition bounds; it must not
+  change response shape or create an unbounded number of challenges.
 - `FILL_BLANK` can use forms such as `word`, `words`, `worded`, `wording`, and
   common `-e`/`-y` variants.

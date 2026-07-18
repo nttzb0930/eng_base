@@ -10,13 +10,13 @@ The app now persists vocabulary progress and review scheduling fields. Users nee
 
 ## Decision
 
-Add review dashboard UI to `/saved-words`.
+Add review summary UI to the localized saved-words route.
 
 - Show total saved words.
 - Show due words.
 - Show learning, review, and mastered counts.
-- Support `/saved-words/review?mode=due`.
-- Support `/saved-words/review?mode=all`.
+- Support `/{locale}/saved-words/review?mode=due`.
+- Support `/{locale}/saved-words/review?mode=all`.
 
 Due words are vocabulary items with no progress yet or `nextReviewAt <= now`.
 
@@ -24,4 +24,6 @@ Due words are vocabulary items with no progress yet or `nextReviewAt <= now`.
 
 - Users can focus on due words first.
 - Review scheduling becomes visible without adding a more complex spaced repetition algorithm yet.
-- The next scheduling implementation can change queue scoring inside `modules/vocabulary/review-session.ts` without changing page routes.
+- Queue scoring belongs to API use cases under
+  `apps/api/src/module/review/use-cases`; it can change without changing page
+  routes.

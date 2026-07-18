@@ -1,4 +1,4 @@
-# 0010 Standalone Fill-Blank Practice
+# ADR 0010: Provide Standalone Fill-Blank Practice
 
 ## Status
 
@@ -15,15 +15,19 @@ exploration slower.
 Add a standalone practice route:
 
 ```txt
-/practice/fill-blank
+/{locale}/practice/fill-blank
 ```
 
-The route generates local `FILL_BLANK` challenges from all vocabulary items that
+The Practice API generates `FILL_BLANK` challenges from vocabulary items that
 have usable examples. It does not require the word to be saved first.
 
 After answering, the learner sees the vocabulary card and can save the word.
 Practice results still update `user_vocabulary_progress`, even when the word is
 not saved.
+
+The API behavior belongs to the Practice capability under
+`apps/api/src/module/practice/use-cases`; the route page is a thin localized
+frontend entrypoint.
 
 ## Consequences
 

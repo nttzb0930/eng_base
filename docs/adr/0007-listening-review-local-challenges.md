@@ -1,4 +1,4 @@
-# ADR 0007: Generate Listening Challenges Only in Review Sessions
+# ADR 0007: Generate Listening Challenges Without Persisted Lesson Types
 
 ## Status
 
@@ -6,13 +6,17 @@ Accepted
 
 ## Context
 
-Pronunciation audio now exists on vocabulary items. Listening practice is valuable, but adding a new persisted challenge type would require reseeding lesson content and changing the Prisma enum.
+Pronunciation audio exists on vocabulary items. Listening practice is valuable,
+but adding a persisted lesson challenge type would couple the feature to seeded
+lesson content and the Prisma enum.
 
 ## Decision
 
-Generate `LISTEN_SELECT` challenges only inside saved-word review sessions.
+Generate `LISTEN_SELECT` challenges at request time in learner review or
+practice flows.
 
-- Source: saved vocabulary items with `audioUrl`.
+- Source: eligible vocabulary items with `audioUrl`; saved-word review narrows
+  this to the learner's saved set.
 - Prompt: play pronunciation audio.
 - Answer options: English words.
 - Progress write: existing `user_vocabulary_progress`.
@@ -23,4 +27,6 @@ Do not add `LISTEN_SELECT` to the persisted `type` enum yet.
 
 - Listening practice ships without reseeding lesson content.
 - Lesson challenges remain stable.
-- If listening works well, a later phase can add persisted listening challenges to the main lesson seed.
+- The Review and Practice capabilities may compose listening sessions without
+  owning a second persisted challenge model.
+- Persisted lesson listening remains a separate future decision.
