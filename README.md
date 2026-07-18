@@ -62,7 +62,9 @@ pnpm build
 pnpm db:studio
 ```
 
-Các hướng dẫn setup, migration và verification được điều hướng từ [English Base documentation](docs/README.md).
+Xem [Local development](docs/guides/local-development.md) để setup, tạo/deploy
+migration và xử lý lỗi kết nối. Xem [Verification](docs/guides/verification.md)
+để chọn test hẹp và chạy full gate trước handoff.
 
 ## Quy tắc an toàn dữ liệu
 

@@ -39,10 +39,14 @@ change. Do not preserve contradictory rules as temporary alternatives.
 
 ## Development guides
 
-The root [`README.md`](../README.md) contains the safe quick start. Commands that
-write schema, data, or provider output require the workflow owner and explicit
-approval; a successful compile or architecture check never requires a database
-write.
+- [Local development](guides/local-development.md): environment, PostgreSQL,
+  Prisma generation, migrations, startup, and safe troubleshooting.
+- [Verification](guides/verification.md): test layers, narrow commands,
+  vocabulary workflow tests, and the full pre-handoff gate.
+
+Commands that write schema, data, or provider output require the workflow owner
+and explicit approval; a successful compile or architecture check never
+requires a database write.
 
 ## Data workflows
 

@@ -14,6 +14,7 @@ accepted ADR before changing an owned capability or public Interface.
   localization, and UI ownership.
 - `docs/architecture/api.md` defines Nest capability ownership, Auth delivery,
   Prisma, errors, rate limits, and transaction rules.
+- `docs/guides/verification.md` defines narrow and full verification gates.
 - `docs/data/vocabulary-pipeline.md` is required reading before changing
   vocabulary source data or running data scripts.
 
@@ -141,6 +142,9 @@ pnpm check-types
 pnpm lint
 pnpm build
 ```
+
+See `docs/guides/verification.md` for test-layer responsibilities and the
+standalone vocabulary workflow command.
 
 Course Management also has Shared Interface, API mapper/service/controller,
 resource API, query-key, and import-boundary characterization tests. Preserve
