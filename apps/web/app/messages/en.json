@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "mascotAlt": "VoCaBu mascot",
+    "mascotAlt": "Learning mascot",
     "dashboard": "Dashboard",
     "learn": "Learn",
     "topics": "Topics",
@@ -13,7 +13,7 @@
   },
   "marketing": {
     "login": "Log in",
-    "mascotAlt": "VoCaBu mascot",
+    "mascotAlt": "Learning mascot",
     "sourceCodeAlt": "Source code",
     "languages": {
       "croatian": "Croatian",
@@ -22,7 +22,7 @@
       "italian": "Italian",
       "japanese": "Japanese"
     },
-    "headline": "Learn, practice and master English vocabulary with VoCaBu.",
+    "headline": "Learn, practice and master English vocabulary.",
     "continueLearning": "Continue Learning",
     "getStarted": "Get Started",
     "alreadyHaveAccount": "I already have an account"
@@ -167,7 +167,7 @@
     "completeTitle": "Daily review complete."
   },
   "lesson": {
-    "mascotAlt": "VoCaBu mascot",
+    "mascotAlt": "Learning mascot",
     "heartAlt": "Heart",
     "closeLesson": "Exit lesson",
     "nicelyDone": "Nicely done!",
@@ -240,7 +240,7 @@
     "startPractice": "Start practice",
     "selectionUnavailable": "No practice available",
     "progressSaved": "Your practice progress is saved after each completed session.",
-    "mascotAlt": "VoCaBu mascot",
+    "mascotAlt": "Learning mascot",
     "title": "Practice",
     "description": "Choose a mode and CEFR level to practice English vocabulary.",
     "weakWordsReview": "Weak Words Review",
@@ -376,7 +376,7 @@
     "description": "See where you stand among other learners in the community."
   },
   "flashcards": {
-    "mascotAlt": "VoCaBu mascot",
+    "mascotAlt": "Learning mascot",
     "title": "Flashcards",
     "description": "Flip cards, rate your memory, and schedule the next review.",
     "dueReview": "Due Review",
@@ -525,7 +525,7 @@
         "title": "Which languages do you want to learn?",
         "desc": "Select 1 or more from our 5 supported languages",
         "beta": "BETA - UNDER REVIEW",
-        "warning": "Currently, VoCaBu is fully optimized for the {course} course. Other language courses are under development and will be updated soon!",
+        "warning": "Currently, the learning experience is fully optimized for the {course} course. Other language courses are under development and will be updated soon!",
         "langEnglish": "English",
         "langJapanese": "Japanese",
         "langGerman": "German",
@@ -626,7 +626,7 @@
     "processing": "Processing...",
     "signInSlogan": "Master English Vocabulary Smartly",
     "signInSloganDesc": "Learn CEFR-aligned vocabulary effectively using Spaced Repetition.",
-    "signUpSlogan": "Join VoCaBu English Learning",
+    "signUpSlogan": "Start learning English",
     "signUpSloganDesc": "Create a free account in seconds to start tracking your progress and conquer new vocabulary goals.",
     "usernamePlaceholder": "john_doe",
     "fullNamePlaceholder": "John Doe",

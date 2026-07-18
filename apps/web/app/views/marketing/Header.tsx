@@ -9,6 +9,8 @@ import { Button } from "@/app/components/ui/button";
 import { withLocale } from "@/app/i18n/paths";
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
 
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
+
 export const Header = () => {
   const t = useTranslations("marketing");
   const { status } = useAuth();
@@ -27,24 +29,20 @@ export const Header = () => {
           />
 
           <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
-            VoCaBu
+            {appName}
           </h1>
         </Link>
 
         <div className="flex gap-x-3">
           {loading ? (
-            <Loader className="h-5 w-5 animate-spin text-muted-foreground" />
+            <Loader className="text-muted-foreground h-5 w-5 animate-spin" />
           ) : isSignedIn ? (
             <Button size="lg" variant="secondary" asChild>
-              <Link href={withLocale("/learn")}>
-                {t("continueLearning")}
-              </Link>
+              <Link href={withLocale("/learn")}>{t("continueLearning")}</Link>
             </Button>
           ) : (
             <Button size="lg" variant="ghost" asChild>
-              <Link href="/sign-in">
-                {t("login")}
-              </Link>
+              <Link href="/sign-in">{t("login")}</Link>
             </Button>
           )}
         </div>

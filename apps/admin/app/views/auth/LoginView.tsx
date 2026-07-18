@@ -5,12 +5,21 @@ import { useRouter } from "next/navigation";
 import { GraduationCap, Lock, User, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/app/components/ui/card";
 import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 import { Label } from "@/app/components/ui/label";
 import { useAdminLogin } from "@/app/features/auth/hooks/use-admin-login";
 import { HttpClientError } from "@/app/features/auth/api/http-client";
+
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
 
 export function LoginView() {
   const router = useRouter();
@@ -35,30 +44,30 @@ export function LoginView() {
       });
       localStorage.setItem("admin_token", data.token);
       localStorage.setItem("admin_user", JSON.stringify(data.user));
-      
+
       toast.success("Successfully logged in!");
       router.push("/courses");
     } catch (error) {
       toast.error(
         error instanceof HttpClientError && error.status === 401
           ? "Tên đăng nhập hoặc mật khẩu không đúng."
-          : "Không thể kết nối đến máy chủ.",
+          : "Không thể kết nối đến máy chủ."
       );
     }
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 flex flex-col items-center justify-center p-4 relative overflow-hidden">
-      <Card className="w-full max-w-md bg-white border-zinc-200 text-zinc-900 shadow-lg relative z-10">
-        <CardHeader className="space-y-3 flex flex-col items-center text-center">
-          <div className="p-3 bg-zinc-100 text-zinc-900 rounded-2xl border border-zinc-200">
+    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-zinc-50 p-4">
+      <Card className="relative z-10 w-full max-w-md border-zinc-200 bg-white text-zinc-900 shadow-lg">
+        <CardHeader className="flex flex-col items-center space-y-3 text-center">
+          <div className="rounded-2xl border border-zinc-200 bg-zinc-100 p-3 text-zinc-900">
             <GraduationCap className="h-10 w-10" />
           </div>
           <div>
             <CardTitle className="text-3xl font-black tracking-tight text-zinc-900">
-              Lingo Admin
+              {appName} Admin
             </CardTitle>
-            <CardDescription className="text-zinc-500 mt-1.5 font-medium">
+            <CardDescription className="mt-1.5 font-medium text-zinc-500">
               English learning content administration
             </CardDescription>
           </div>
@@ -66,7 +75,9 @@ export function LoginView() {
         <form onSubmit={handleLogin}>
           <CardContent className="space-y-4 pt-2">
             <div className="space-y-2">
-              <Label className="text-zinc-700 font-semibold">Tên đăng nhập</Label>
+              <Label className="font-semibold text-zinc-700">
+                Tên đăng nhập
+              </Label>
               <div className="relative">
                 <User className="absolute left-3 top-3 h-4 w-4 text-zinc-400" />
                 <Input
@@ -75,12 +86,12 @@ export function LoginView() {
                   value={formUsername}
                   onChange={(e) => setFormUsername(e.target.value)}
                   placeholder="Nhập tên đăng nhập admin"
-                  className="pl-10 bg-white border-zinc-200 text-zinc-900 placeholder:text-zinc-400 focus-visible:ring-zinc-400"
+                  className="border-zinc-200 bg-white pl-10 text-zinc-900 placeholder:text-zinc-400 focus-visible:ring-zinc-400"
                 />
               </div>
             </div>
             <div className="space-y-2">
-              <Label className="text-zinc-700 font-semibold">Mật khẩu</Label>
+              <Label className="font-semibold text-zinc-700">Mật khẩu</Label>
               <div className="relative">
                 <Lock className="absolute left-3 top-3 h-4 w-4 text-zinc-400" />
                 <Input
@@ -90,16 +101,16 @@ export function LoginView() {
                   value={formPassword}
                   onChange={(e) => setFormPassword(e.target.value)}
                   placeholder="Nhập mật khẩu"
-                  className="pl-10 bg-white border-zinc-200 text-zinc-900 placeholder:text-zinc-400 focus-visible:ring-zinc-400"
+                  className="border-zinc-200 bg-white pl-10 text-zinc-900 placeholder:text-zinc-400 focus-visible:ring-zinc-400"
                 />
               </div>
             </div>
           </CardContent>
-          <CardFooter className="pt-2 pb-6">
+          <CardFooter className="pb-6 pt-2">
             <Button
               type="submit"
               disabled={loginMutation.isPending}
-              className="w-full bg-zinc-900 hover:bg-zinc-800 text-zinc-55 hover:text-zinc-50 font-semibold h-11 shadow-sm border-0 cursor-pointer"
+              className="text-zinc-55 h-11 w-full cursor-pointer border-0 bg-zinc-900 font-semibold shadow-sm hover:bg-zinc-800 hover:text-zinc-50"
             >
               {loginMutation.isPending ? (
                 <span className="flex items-center gap-2">

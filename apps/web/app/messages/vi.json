@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "mascotAlt": "Linh vật VoCaBu",
+    "mascotAlt": "Linh vật học tập",
     "dashboard": "Thống kê",
     "learn": "Học tập",
     "topics": "Chủ đề",
@@ -13,7 +13,7 @@
   },
   "marketing": {
     "login": "Đăng nhập",
-    "mascotAlt": "Linh vật VoCaBu",
+    "mascotAlt": "Linh vật học tập",
     "sourceCodeAlt": "Mã nguồn",
     "languages": {
       "croatian": "Tiếng Croatia",
@@ -22,7 +22,7 @@
       "italian": "Tiếng Ý",
       "japanese": "Tiếng Nhật"
     },
-    "headline": "Học, luyện tập và làm chủ từ vựng tiếng Anh cùng VoCaBu.",
+    "headline": "Học, luyện tập và làm chủ từ vựng tiếng Anh.",
     "continueLearning": "Tiếp tục học",
     "getStarted": "Bắt đầu",
     "alreadyHaveAccount": "Tôi đã có tài khoản"
@@ -167,7 +167,7 @@
     "completeTitle": "Hoàn thành ôn tập hằng ngày."
   },
   "lesson": {
-    "mascotAlt": "Linh vật VoCaBu",
+    "mascotAlt": "Linh vật học tập",
     "heartAlt": "Trái tim",
     "closeLesson": "Thoát bài học",
     "nicelyDone": "Làm tốt lắm!",
@@ -244,7 +244,7 @@
     "startPractice": "Bắt đầu luyện",
     "selectionUnavailable": "Chưa có bài luyện",
     "progressSaved": "Tiến độ luyện tập được lưu sau mỗi phiên hoàn thành.",
-    "mascotAlt": "Linh vật VoCaBu",
+    "mascotAlt": "Linh vật học tập",
     "title": "Luyện tập",
     "description": "Chọn chế độ và cấp độ CEFR để luyện từ vựng tiếng Anh.",
     "weakWordsReview": "Ôn từ còn yếu",
@@ -376,7 +376,7 @@
     "description": "Xem vị trí của bạn trong cộng đồng người học."
   },
   "flashcards": {
-    "mascotAlt": "Linh vật VoCaBu",
+    "mascotAlt": "Linh vật học tập",
     "title": "Thẻ ghi nhớ",
     "description": "Lật thẻ, tự đánh giá trí nhớ và lên lịch ôn tiếp theo.",
     "dueReview": "Ôn đến hạn",
@@ -524,7 +524,7 @@
         "title": "Bạn muốn học những ngôn ngữ nào?",
         "desc": "Chọn 1 hoặc nhiều ngôn ngữ trong 5 ngôn ngữ được hỗ trợ",
         "beta": "BETA - ĐANG THẨM DUYỆT",
-        "warning": "Hiện tại VoCaBu đang tối ưu hóa hệ thống bài tập tốt nhất cho khóa học {course}. Các khóa học khác đang được hoàn thiện dữ liệu và sẽ được cập nhật sớm nhất!",
+        "warning": "Hiện tại hệ thống đang tối ưu hóa trải nghiệm bài tập cho khóa học {course}. Các khóa học khác đang được hoàn thiện dữ liệu và sẽ được cập nhật sớm nhất!",
         "langEnglish": "Tiếng Anh",
         "langJapanese": "Tiếng Nhật",
         "langGerman": "Tiếng Đức",
@@ -625,7 +625,7 @@
     "processing": "Đang xử lý...",
     "signInSlogan": "Làm chủ từ vựng tiếng Anh thông minh",
     "signInSloganDesc": "Học từ vựng theo chuẩn CEFR hiệu quả bằng phương pháp lặp lại ngắt quãng (Spaced Repetition).",
-    "signUpSlogan": "Tham gia học từ vựng cùng VoCaBu",
+    "signUpSlogan": "Bắt đầu học tiếng Anh",
     "signUpSloganDesc": "Tạo tài khoản miễn phí chỉ trong vài giây để bắt đầu theo dõi tiến trình và chinh phục mục tiêu từ vựng mới.",
     "usernamePlaceholder": "john_doe",
     "fullNamePlaceholder": "Nguyễn Văn A",

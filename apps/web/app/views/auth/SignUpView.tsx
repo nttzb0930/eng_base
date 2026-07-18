@@ -12,6 +12,8 @@ import { toast } from "sonner";
 import { Loader2, Mail, Lock, User } from "lucide-react";
 import Image from "next/image";
 
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
+
 export function SignUpView() {
   const router = useRouter();
   const t = useTranslations("auth");
@@ -40,7 +42,9 @@ export function SignUpView() {
       if (error instanceof Error && error.message === "USER_ALREADY_EXISTS") {
         toast.error(t("userExistsError"));
       } else {
-        toast.error(error instanceof Error ? error.message : t("signUpFailedError"));
+        toast.error(
+          error instanceof Error ? error.message : t("signUpFailedError")
+        );
       }
     } finally {
       setLoading(false);
@@ -48,14 +52,14 @@ export function SignUpView() {
   };
 
   return (
-    <div className="min-h-screen w-full flex flex-col lg:flex-row bg-white">
+    <div className="flex min-h-screen w-full flex-col bg-white lg:flex-row">
       {/* Left side: Branding & Hero - Hidden on Mobile */}
-      <div className="hidden lg:flex lg:w-1/2 relative bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 flex-col justify-between p-12 text-white overflow-hidden">
+      <div className="relative hidden flex-col justify-between overflow-hidden bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 p-12 text-white lg:flex lg:w-1/2">
         {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
-        
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent" />
+
         {/* Top Logo */}
-        <Link href="/" className="flex items-center gap-x-3 z-10">
+        <Link href="/" className="z-10 flex items-center gap-x-3">
           <Image
             src="/mascot.svg"
             alt="Mascot"
@@ -64,56 +68,57 @@ export function SignUpView() {
             className="drop-shadow-md"
           />
           <h1 className="text-3xl font-extrabold tracking-wide text-white drop-shadow-sm">
-            VoCaBu
+            {appName}
           </h1>
         </Link>
 
         {/* Mascot Center Illustration */}
-        <div className="flex flex-col items-center justify-center flex-grow py-12 z-10">
-          <div className="relative w-[320px] h-[320px] hover:scale-105 transition-transform duration-500 ease-out">
-            <Image src="/hero.svg" alt="Hero Illustration" fill className="object-contain" priority />
+        <div className="z-10 flex flex-grow flex-col items-center justify-center py-12">
+          <div className="relative h-[320px] w-[320px] transition-transform duration-500 ease-out hover:scale-105">
+            <Image
+              src="/hero.svg"
+              alt="Hero Illustration"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          <h2 className="text-3xl font-bold text-center max-w-md mt-8 leading-tight">
+          <h2 className="mt-8 max-w-md text-center text-3xl font-bold leading-tight">
             {t("signUpSlogan")}
           </h2>
-          <p className="text-green-100 text-center max-w-sm mt-3 text-sm font-medium">
+          <p className="mt-3 max-w-sm text-center text-sm font-medium text-green-100">
             {t("signUpSloganDesc")}
           </p>
         </div>
 
         {/* Footer info */}
-        <div className="text-xs text-green-200 z-10">
-          © {new Date().getFullYear()} VoCaBu.
+        <div className="z-10 text-xs text-green-200">
+          © {new Date().getFullYear()} {appName}.
         </div>
       </div>
 
       {/* Right side: Register Form */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-20 bg-slate-50 lg:bg-white">
+      <div className="flex w-full flex-col justify-center bg-slate-50 px-6 py-12 sm:px-12 lg:w-1/2 lg:bg-white lg:px-20">
         <div className="mx-auto w-full max-w-md">
           {/* Logo visible only on Mobile */}
-          <div className="flex justify-center lg:hidden mb-8">
+          <div className="mb-8 flex justify-center lg:hidden">
             <Link href="/" className="flex items-center gap-x-3">
-              <Image
-                src="/mascot.svg"
-                alt="Mascot"
-                height={40}
-                width={40}
-              />
+              <Image src="/mascot.svg" alt="Mascot" height={40} width={40} />
               <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
-                VoCaBu
+                {appName}
               </h1>
             </Link>
           </div>
 
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl font-extrabold text-neutral-800 tracking-tight">
+            <h2 className="text-3xl font-extrabold tracking-tight text-neutral-800">
               {t("signUpTitle")}
             </h2>
             <p className="mt-3 text-sm text-neutral-600">
               {t("hasAccount")}{" "}
               <Link
                 href="/sign-in"
-                className="font-semibold text-green-600 hover:text-green-500 transition-colors"
+                className="font-semibold text-green-600 transition-colors hover:text-green-500"
               >
                 {t("signInHere")}
               </Link>
@@ -125,12 +130,12 @@ export function SignUpView() {
               <div>
                 <label
                   htmlFor="username"
-                  className="block text-sm font-semibold text-neutral-700 mb-1.5"
+                  className="mb-1.5 block text-sm font-semibold text-neutral-700"
                 >
                   {t("usernameLabel")}
                 </label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                  <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5">
                     <User className="h-4.5 w-4.5 text-neutral-400" />
                   </div>
                   <input
@@ -140,7 +145,7 @@ export function SignUpView() {
                     required
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="pl-11 block w-full px-3.5 py-3 border border-slate-200 rounded-xl text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent sm:text-sm transition-all shadow-sm bg-white"
+                    className="block w-full rounded-xl border border-slate-200 bg-white px-3.5 py-3 pl-11 text-neutral-800 placeholder-neutral-400 shadow-sm transition-all focus:border-transparent focus:outline-none focus:ring-2 focus:ring-green-500 sm:text-sm"
                     placeholder={t("usernamePlaceholder")}
                   />
                 </div>
@@ -149,12 +154,12 @@ export function SignUpView() {
               <div>
                 <label
                   htmlFor="fullName"
-                  className="block text-sm font-semibold text-neutral-700 mb-1.5"
+                  className="mb-1.5 block text-sm font-semibold text-neutral-700"
                 >
                   {t("fullNameLabel")}
                 </label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                  <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5">
                     <User className="h-4.5 w-4.5 text-neutral-400" />
                   </div>
                   <input
@@ -164,7 +169,7 @@ export function SignUpView() {
                     required
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="pl-11 block w-full px-3.5 py-3 border border-slate-200 rounded-xl text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent sm:text-sm transition-all shadow-sm bg-white"
+                    className="block w-full rounded-xl border border-slate-200 bg-white px-3.5 py-3 pl-11 text-neutral-800 placeholder-neutral-400 shadow-sm transition-all focus:border-transparent focus:outline-none focus:ring-2 focus:ring-green-500 sm:text-sm"
                     placeholder={t("fullNamePlaceholder")}
                   />
                 </div>
@@ -173,12 +178,12 @@ export function SignUpView() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold text-neutral-700 mb-1.5"
+                  className="mb-1.5 block text-sm font-semibold text-neutral-700"
                 >
                   {t("emailLabel")}
                 </label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                  <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5">
                     <Mail className="h-4.5 w-4.5 text-neutral-400" />
                   </div>
                   <input
@@ -188,7 +193,7 @@ export function SignUpView() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="pl-11 block w-full px-3.5 py-3 border border-slate-200 rounded-xl text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent sm:text-sm transition-all shadow-sm bg-white"
+                    className="block w-full rounded-xl border border-slate-200 bg-white px-3.5 py-3 pl-11 text-neutral-800 placeholder-neutral-400 shadow-sm transition-all focus:border-transparent focus:outline-none focus:ring-2 focus:ring-green-500 sm:text-sm"
                     placeholder={t("emailPlaceholder")}
                   />
                 </div>
@@ -197,12 +202,12 @@ export function SignUpView() {
               <div>
                 <label
                   htmlFor="password"
-                  className="block text-sm font-semibold text-neutral-700 mb-1.5"
+                  className="mb-1.5 block text-sm font-semibold text-neutral-700"
                 >
                   {t("passwordLabel")}
                 </label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                  <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5">
                     <Lock className="h-4.5 w-4.5 text-neutral-400" />
                   </div>
                   <input
@@ -212,7 +217,7 @@ export function SignUpView() {
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="pl-11 block w-full px-3.5 py-3 border border-slate-200 rounded-xl text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent sm:text-sm transition-all shadow-sm bg-white"
+                    className="block w-full rounded-xl border border-slate-200 bg-white px-3.5 py-3 pl-11 text-neutral-800 placeholder-neutral-400 shadow-sm transition-all focus:border-transparent focus:outline-none focus:ring-2 focus:ring-green-500 sm:text-sm"
                     placeholder={t("passwordPlaceholder")}
                   />
                 </div>
@@ -222,7 +227,7 @@ export function SignUpView() {
                 <Button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl text-sm font-bold text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all shadow-md active:scale-98"
+                  className="active:scale-98 flex w-full justify-center rounded-xl border border-transparent bg-green-600 px-4 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                 >
                   {loading ? (
                     <>

@@ -17,6 +17,7 @@ function filesUnder(directory: string): string[] {
 
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const path = join(directory, entry.name);
+    if (path === join(workspaceRoot, "docs", "superpowers")) return [];
     if (entry.name === "node_modules" || entry.name === ".next" || entry.name === "dist") {
       return [];
     }

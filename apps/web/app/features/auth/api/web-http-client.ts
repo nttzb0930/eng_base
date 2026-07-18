@@ -1,6 +1,10 @@
 import axios, { AxiosError, type InternalAxiosRequestConfig } from "axios";
 
-import { clearAuthSession, getAuthSession, setAccessToken } from "../store/auth-session.store";
+import {
+  clearAuthSession,
+  getAuthSession,
+  setAccessToken,
+} from "../store/auth-session.store";
 
 type RetryableConfig = InternalAxiosRequestConfig & { _authRetry?: boolean };
 
@@ -26,7 +30,7 @@ export function reviveApiDates(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(reviveApiDates);
   if (value && typeof value === "object") {
     return Object.fromEntries(
-      Object.entries(value).map(([key, item]) => [key, reviveApiDates(item)]),
+      Object.entries(value).map(([key, item]) => [key, reviveApiDates(item)])
     );
   }
   return value;
@@ -35,7 +39,11 @@ export function reviveApiDates(value: unknown): unknown {
 async function refreshAccessToken() {
   if (!refreshRequest) {
     refreshRequest = axios
-      .post<{ access_token: string }>(`${baseURL}/auth/refresh`, {}, { withCredentials: true })
+      .post<{ access_token: string }>(
+        `${baseURL}/auth/refresh`,
+        {},
+        { withCredentials: true }
+      )
       .then(({ data }) => {
         setAccessToken(data.access_token);
         return data.access_token;
@@ -64,7 +72,12 @@ webHttpClient.interceptors.response.use(
       config?.url?.includes("/auth/login") ||
       config?.url?.includes("/auth/refresh") ||
       config?.url?.includes("/auth/logout");
-    if (error.response?.status === 401 && config && !config._authRetry && !authRoute) {
+    if (
+      error.response?.status === 401 &&
+      config &&
+      !config._authRetry &&
+      !authRoute
+    ) {
       config._authRetry = true;
       try {
         const token = await refreshAccessToken();
@@ -76,5 +89,5 @@ webHttpClient.interceptors.response.use(
       }
     }
     throw error;
-  },
+  }
 );

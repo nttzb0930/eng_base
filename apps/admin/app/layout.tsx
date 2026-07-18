@@ -5,8 +5,10 @@ import { Providers } from "@/app/providers";
 
 import "./globals.css";
 
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
+
 export const metadata: Metadata = {
-  title: "Lingo Admin",
+  title: `${appName} Admin`,
   description: "English learning content administration",
 };
 

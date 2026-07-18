@@ -5,8 +5,9 @@ import { ChevronLeft, ChevronRight, GraduationCap } from "lucide-react";
 
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
-
 import { adminNavigation } from "./admin-navigation";
+
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
 
 type AdminSidebarProps = {
   pathname: string;
@@ -28,7 +29,9 @@ export function AdminSidebar({
       className={cn(
         "fixed inset-y-0 left-0 z-40 flex flex-col border-r border-zinc-200 bg-white transition-all duration-300 ease-in-out md:static",
         isCollapsed ? "w-0 md:w-20" : "w-64",
-        isMobileOpen ? "w-64 translate-x-0" : "-translate-x-full md:translate-x-0",
+        isMobileOpen
+          ? "w-64 translate-x-0"
+          : "-translate-x-full md:translate-x-0"
       )}
     >
       <div className="flex h-16 shrink-0 items-center gap-2.5 border-b border-zinc-200 px-6">
@@ -38,10 +41,10 @@ export function AdminSidebar({
         <span
           className={cn(
             "truncate text-lg font-black tracking-tight text-zinc-900 transition-opacity duration-300 ease-in-out",
-            isCollapsed && "pointer-events-none md:opacity-0",
+            isCollapsed && "pointer-events-none md:opacity-0"
           )}
         >
-          Lingo Admin
+          {appName} Admin
         </span>
       </div>
 
@@ -60,7 +63,7 @@ export function AdminSidebar({
                 "flex w-full cursor-pointer items-center rounded-lg px-4 py-2.5 text-sm font-semibold transition-all duration-200",
                 isActive
                   ? "bg-zinc-100 font-bold text-zinc-900"
-                  : "text-zinc-650 hover:bg-zinc-50 hover:text-zinc-900",
+                  : "text-zinc-650 hover:bg-zinc-50 hover:text-zinc-900"
               )}
             >
               <Icon className="h-4 w-4 shrink-0" />
@@ -69,7 +72,7 @@ export function AdminSidebar({
                   "truncate text-nowrap transition-all duration-300 ease-in-out",
                   isCollapsed
                     ? "pointer-events-none ml-0 md:max-w-0 md:opacity-0"
-                    : "ml-3 max-w-[180px] opacity-100",
+                    : "ml-3 max-w-[180px] opacity-100"
                 )}
               >
                 {item.label}
@@ -97,7 +100,7 @@ export function AdminSidebar({
                 "truncate text-nowrap text-xs font-semibold transition-all duration-300 ease-in-out",
                 isCollapsed
                   ? "ml-0 md:max-w-0 md:opacity-0"
-                  : "ml-2.5 max-w-[150px] opacity-100",
+                  : "ml-2.5 max-w-[150px] opacity-100"
               )}
             >
               Thu gọn menu

@@ -11,8 +11,10 @@ export const viewport: Viewport = {
   themeColor: "#22C55E",
 };
 
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
+
 export const metadata: Metadata = {
-  title: "VoCaBu",
+  title: appName,
   description:
     "English vocabulary learning app for Vietnamese learners with CEFR lessons, quizzes, flashcards, review scheduling, and progress tracking.",
   keywords: [
@@ -29,7 +31,6 @@ export const metadata: Metadata = {
     "postgresql",
     "prisma",
     "radix-ui",
-    "lingo",
     "jwt",
     "tailwindcss",
     "typescript",
@@ -49,7 +50,12 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
-            <Toaster position="top-right" theme="light" richColors closeButton />
+            <Toaster
+              position="top-right"
+              theme="light"
+              richColors
+              closeButton
+            />
             {children}
           </Providers>
         </NextIntlClientProvider>

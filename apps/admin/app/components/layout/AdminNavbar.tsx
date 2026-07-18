@@ -12,6 +12,8 @@ import {
   DropdownMenuTrigger,
 } from "@/app/components/ui/dropdown-menu";
 
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
+
 type AdminNavbarProps = {
   title: string;
   username: string;
@@ -31,18 +33,18 @@ export function AdminNavbar({
         <Button
           variant="ghost"
           size="icon"
-          className="shrink-0 text-zinc-650 hover:text-zinc-900 md:hidden"
+          className="text-zinc-650 shrink-0 hover:text-zinc-900 md:hidden"
           onClick={onToggleMobile}
         >
           <Menu className="h-5 w-5" />
         </Button>
 
         <div className="min-w-0">
-          <h2 className="truncate text-sm font-bold leading-none text-zinc-900 capitalize">
+          <h2 className="truncate text-sm font-bold capitalize leading-none text-zinc-900">
             {title}
           </h2>
           <span className="mt-1 block text-[10px] font-semibold uppercase tracking-wider text-zinc-400">
-            Lingo Admin panel
+            {appName} Admin panel
           </span>
         </div>
       </div>
@@ -71,7 +73,7 @@ export function AdminNavbar({
             <DropdownMenuSeparator className="my-1 bg-zinc-100" />
             <DropdownMenuItem
               onClick={onLogout}
-              className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 text-xs font-bold text-zinc-650 transition duration-200 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
+              className="text-zinc-650 flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 text-xs font-bold transition duration-200 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
             >
               <LogOut className="h-3.5 w-3.5" />
               <span>Đăng xuất</span>

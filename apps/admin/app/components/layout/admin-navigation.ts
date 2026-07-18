@@ -9,6 +9,8 @@ import {
   Users,
 } from "lucide-react";
 
+const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
+
 export const adminNavigation = [
   { href: "/courses", label: "Khóa học (Courses)", icon: BookOpen },
   { href: "/units", label: "Chương học (Units)", icon: Layers },
@@ -29,9 +31,11 @@ export function getAdminPageTitle(pathname: string) {
   if (pathname.startsWith("/units")) return "Quản lý chương học";
   if (pathname.startsWith("/lessons")) return "Quản lý bài học";
   if (pathname.startsWith("/challenges")) return "Quản lý thử thách";
-  if (pathname.startsWith("/challenge-options")) return "Quản lý đáp án & câu hỏi";
+  if (pathname.startsWith("/challenge-options"))
+    return "Quản lý đáp án & câu hỏi";
   if (pathname.startsWith("/users")) return "Quản lý người dùng";
-  if (pathname.startsWith("/practice-sessions")) return "Lịch sử luyện tập học viên";
+  if (pathname.startsWith("/practice-sessions"))
+    return "Lịch sử luyện tập học viên";
   if (pathname.startsWith("/settings")) return "Cấu hình hệ thống";
-  return "Lingo Admin panel";
+  return `${appName} Admin panel`;
 }
