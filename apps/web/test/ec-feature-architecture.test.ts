@@ -50,6 +50,14 @@ test("Web reusable Radix primitives are imported from the shared UI package", ()
   }
 });
 
+test("Web root metadata is declared directly in the root layout", () => {
+  assert.equal(existsSync(join(root, "app/config")), false, "app/config must not own root metadata");
+
+  const layoutSource = readFileSync(join(root, "app/layout.tsx"), "utf8");
+  assert.equal(layoutSource.includes("export const metadata"), true, "app/layout.tsx must export metadata");
+  assert.equal(layoutSource.includes("@/app/config"), false, "app/layout.tsx must not import generic app config");
+});
+
 test("Web Auth follows the EC client feature profile", () => {
   for (const path of [
     "app/features/auth/api/auth.api.ts",
