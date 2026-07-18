@@ -6,14 +6,16 @@ workspace:
 - `apps/api` exposes HTTP, owns business behavior, Prisma, and PostgreSQL.
 - `apps/web` owns the learner-facing Next.js interface.
 - `apps/admin` owns the management Next.js interface.
-- `packages/shared` is the transitional home for cross-runtime contracts and
-  framework-neutral constants.
+- `packages/shared` is the stable TypeScript-only home for cross-runtime wire
+  declarations and framework-neutral constants.
+- `packages/ui` owns exact React presentation primitives shared by Web and Admin.
 - `packages/eslint-config` and `packages/typescript-config` own workspace tooling.
 
-Those are the packages that currently exist. The repository does not currently
-provide `packages/hooks` or `packages/ui`; do not design imports around them.
-Apps may import packages. Packages must not import apps. Package ownership and
-names are fixed by [ADR 0011](adr/0011-monorepo-runtime-ownership.md).
+The repository does not provide a speculative `packages/hooks` package. Apps
+may import packages. Packages must not import apps. Runtime package ownership
+and names are fixed by [ADR 0011](adr/0011-monorepo-runtime-ownership.md);
+Shared's TypeScript-only root Interface is fixed by
+[ADR 0021](adr/0021-ec-shared-typescript-profile.md).
 
 The Course content hierarchy is the first completed capability-first golden
 slice. Its decisions and compatibility constraints are documented in

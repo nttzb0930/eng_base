@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { useMemo, useState, useTransition } from "react";
 
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -13,6 +13,7 @@ import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
+import { useLearningSession } from "@/app/features/learning-session/use-learning-session";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
@@ -54,15 +55,10 @@ export const SavedWordsReviewQuiz = ({
   });
 
   const router = useRouter();
-  const sessionSavedRef = useRef(false);
   const { width, height } = useWindowSize();
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number>();
-  const [status, setStatus] = useState<"none" | "wrong" | "correct">("none");
-  const [correctCount, setCorrectCount] = useState(0);
-  const [wrongCount, setWrongCount] = useState(0);
-  const [reviewedItems, setReviewedItems] = useState<PracticeResultItem[]>([]);
   const [pending, startTransition] = useTransition();
 
   const percentage = useMemo(() => {
@@ -71,6 +67,29 @@ export const SavedWordsReviewQuiz = ({
 
   const challenge = initialChallenges[activeIndex];
   const options = challenge?.challengeOptions ?? [];
+  const {
+    state: { status, correctCount, wrongCount, reviewedItems },
+    recordAnswer,
+    clearFeedback,
+    reset,
+  } = useLearningSession<PracticeResultItem>({
+    complete: initialChallenges.length > 0 && !challenge,
+    onComplete: async (items) => {
+      try {
+        await practiceApi.recordSession({
+          mode: "saved_words",
+          items: items.map((item) => ({
+            vocabularyItemId: item.vocabularyItemId,
+            challengeType: item.challengeType,
+            correct: item.correct,
+            answer: item.answer,
+          })),
+        });
+      } catch {
+        toast.error(practiceT("saveReviewError"));
+      }
+    },
+  });
   const isListeningChallenge = challenge?.type === "LISTEN_SELECT";
   const isFillBlankChallenge = challenge?.type === "FILL_BLANK";
   const shouldHideVocabularyPrompt =
@@ -89,62 +108,38 @@ export const SavedWordsReviewQuiz = ({
   };
 
   const onReviewAgain = () => {
-    sessionSavedRef.current = false;
     setActiveIndex(0);
     setSelectedOption(undefined);
-    setStatus("none");
-    setCorrectCount(0);
-    setWrongCount(0);
-    setReviewedItems([]);
+    reset();
     router.refresh();
   };
 
-  useEffect(() => {
-    if (challenge || reviewedItems.length === 0 || sessionSavedRef.current) {
-      return;
-    }
-
-    sessionSavedRef.current = true;
-    practiceApi.recordSession({
-      mode: "saved_words",
-      items: reviewedItems.map((item) => ({
-        vocabularyItemId: item.vocabularyItemId,
-        challengeType: item.challengeType,
-        correct: item.correct,
-        answer: item.answer,
-      })),
-    }).catch(() => toast.error(practiceT("saveReviewError")));
-  }, [challenge, practiceT, reviewedItems]);
-
-  const addReviewedItem = (correct: boolean, answer?: string) => {
+  const recordReviewedAnswer = (correct: boolean, answer?: string) => {
     if (!challenge) return;
 
-    setReviewedItems((current) => [
-      ...current,
-      {
-        vocabularyItemId: challenge.vocabularyItem.id,
-        word: challenge.vocabularyItem.word,
-        meaning: challenge.vocabularyItem.primaryMeaningVi,
-        cefrLevel: challenge.vocabularyItem.cefrLevel,
-        correct,
-        challengeType: challenge.type,
-        answer,
-      },
-    ]);
+    recordAnswer(correct, {
+      vocabularyItemId: challenge.vocabularyItem.id,
+      word: challenge.vocabularyItem.word,
+      meaning: challenge.vocabularyItem.primaryMeaningVi,
+      cefrLevel: challenge.vocabularyItem.cefrLevel,
+      correct,
+      challengeType: challenge.type,
+      answer,
+    });
   };
 
   const onContinue = () => {
     if (!challenge) return;
 
     if (status === "wrong") {
-      setStatus("none");
+      clearFeedback();
       setSelectedOption(undefined);
       return;
     }
 
     if (status === "correct") {
       setActiveIndex((current) => current + 1);
-      setStatus("none");
+      clearFeedback();
       setSelectedOption(undefined);
       return;
     }
@@ -156,9 +151,7 @@ export const SavedWordsReviewQuiz = ({
 
     if (correctOption.id === selectedOption) {
       void correctControls.play();
-      setCorrectCount((current) => current + 1);
-      setStatus("correct");
-      addReviewedItem(true, correctOption.text);
+      recordReviewedAnswer(true, correctOption.text);
 
       startTransition(() => {
         vocabularyApi.recordReview(challenge.vocabularyItem.id, true).catch(
@@ -167,9 +160,10 @@ export const SavedWordsReviewQuiz = ({
       });
     } else {
       void incorrectControls.play();
-      setWrongCount((current) => current + 1);
-      setStatus("wrong");
-      addReviewedItem(false, options.find((option) => option.id === selectedOption)?.text);
+      recordReviewedAnswer(
+        false,
+        options.find((option) => option.id === selectedOption)?.text,
+      );
 
       startTransition(() => {
         vocabularyApi.recordReview(challenge.vocabularyItem.id, false).catch(

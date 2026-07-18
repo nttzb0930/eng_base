@@ -58,11 +58,51 @@ test("Web root metadata is declared directly in the root layout", () => {
   assert.equal(layoutSource.includes("@/app/config"), false, "app/layout.tsx must not import generic app config");
 });
 
+test("Web default test command includes root and feature test seams", () => {
+  const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
+    scripts?: Record<string, string>;
+  };
+  const rootTests = filesUnder(join(root, "test")).filter((path) => path.endsWith(".test.ts"));
+  const featureTests = filesUnder(join(root, "app")).filter((path) => path.endsWith(".test.ts"));
+
+  assert.ok(rootTests.length > 0, "Web root test seam must contain tests");
+  assert.ok(featureTests.length > 0, "Web feature test seam must contain tests");
+  assert.equal(
+    packageJson.scripts?.test,
+    'tsx --test "test/**/*.test.ts" "app/**/*.test.ts"',
+  );
+});
+
+test("active architecture docs describe the current frontend profile", () => {
+  const workspaceRoot = join(root, "..", "..");
+  const activeDocs = [
+    "AGENTS.md",
+    "CONTEXT.md",
+    "docs/architecture/codebase-structure.md",
+    "docs/frontend-api-calls.md",
+    "docs/overview.md",
+  ];
+  const staleStatements = [
+    "src/lib/web-http-client.ts",
+    "src/services/http/admin-http-client.ts",
+    "@repo/shared/courses",
+    "do not provide `packages/hooks` or `packages/ui`",
+  ];
+
+  for (const path of activeDocs) {
+    const source = readFileSync(join(workspaceRoot, path), "utf8");
+    for (const statement of staleStatements) {
+      assert.equal(source.includes(statement), false, `${path} contains stale '${statement}'`);
+    }
+  }
+});
+
 test("Web Auth follows the EC client feature profile", () => {
   for (const path of [
     "app/features/auth/api/auth.api.ts",
     "app/features/auth/api/web-http-client.ts",
     "app/features/auth/hooks/use-auth.ts",
+    "app/features/auth/session/auth-session-bootstrap.ts",
     "app/features/auth/store/auth-session.store.ts",
     "app/features/auth/types/auth.types.ts",
     "app/providers.tsx",
@@ -71,6 +111,12 @@ test("Web Auth follows the EC client feature profile", () => {
   ]) {
     assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
   }
+
+  assert.equal(
+    existsSync(join(root, "app/features/auth/components/AuthSessionProvider.tsx")),
+    false,
+    "Auth bootstrap stays behind the root Providers module",
+  );
 
   for (const path of [
     "src/services/auth",
@@ -110,6 +156,81 @@ test("Web Courses and Progress use client feature owners", () => {
     assert.equal(source.includes("@/src/modules/learning/queries"), false, `${path} imports server learning queries`);
     assert.equal(source.includes("@/src/services/progress"), false, `${path} imports legacy Progress services`);
   }
+});
+
+test("Web Learning Session owns the shared learner lifecycle", () => {
+  for (const path of [
+    "app/features/learning-session/learning-session-state.ts",
+    "app/features/learning-session/use-learning-session.ts",
+    "app/features/learning-session/tests/learning-session-state.test.ts",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+
+  for (const file of filesUnder(join(root, "app")).filter((path) => /\.(ts|tsx)$/.test(path))) {
+    if (file.includes(`${join("learning-session", "tests")}`)) continue;
+    const source = readFileSync(file, "utf8");
+    assert.equal(
+      source.includes("features/learning-session/tests"),
+      false,
+      `${file} imports private Learning Session tests`,
+    );
+  }
+});
+
+test("Practice and Review adapters use the Learning Session interface", () => {
+  const adapters = [
+    "app/features/practice/fill-blank/PracticeQuiz.tsx",
+    "app/features/practice/listening/PracticeQuiz.tsx",
+    "app/features/practice/dictation/PracticeQuiz.tsx",
+    "app/features/practice/weak-words/PracticeQuiz.tsx",
+    "app/features/review/components/DailyReviewQuiz.tsx",
+    "app/features/review/components/SavedWordsReviewQuiz.tsx",
+  ];
+
+  for (const path of adapters) {
+    const source = readFileSync(join(root, path), "utf8");
+    assert.equal(source.includes("useLearningSession"), true, `${path} must use Learning Session`);
+    assert.equal(source.includes("const [status, setStatus]"), false, `${path} owns feedback state`);
+    assert.equal(
+      source.includes("const [correctCount, setCorrectCount]"),
+      false,
+      `${path} owns correct count`,
+    );
+    assert.equal(
+      source.includes("const [wrongCount, setWrongCount]"),
+      false,
+      `${path} owns wrong count`,
+    );
+    assert.equal(
+      source.includes("const [reviewedItems, setReviewedItems]"),
+      false,
+      `${path} owns reviewed items`,
+    );
+  }
+});
+
+test("Lesson adapter uses the Learning Session interface", () => {
+  const path = "app/features/lessons/hooks/use-lesson-quiz.ts";
+  const source = readFileSync(join(root, path), "utf8");
+
+  assert.equal(source.includes("useLearningSession"), true, `${path} must use Learning Session`);
+  assert.equal(source.includes("const [status, setStatus]"), false, `${path} owns feedback state`);
+  assert.equal(
+    source.includes("const [correctCount, setCorrectCount]"),
+    false,
+    `${path} owns correct count`,
+  );
+  assert.equal(
+    source.includes("const [wrongCount, setWrongCount]"),
+    false,
+    `${path} owns wrong count`,
+  );
+  assert.equal(
+    source.includes("const [reviewedItems, setReviewedItems]"),
+    false,
+    `${path} owns reviewed items`,
+  );
 });
 
 test("Web domain code no longer uses legacy technical buckets or authenticated server HTTP", () => {

@@ -16,6 +16,7 @@ import {
   setAuthSession,
   subscribeAuthSession,
 } from "@/app/features/auth/store/auth-session.store";
+import { createAuthSessionBootstrap } from "@/app/features/auth/session/auth-session-bootstrap";
 import type { LoginBody, RegisterBody } from "@/app/features/auth/types/auth.types";
 import { defaultLocale, isLocale } from "@/app/i18n/config";
 import { withLocale } from "@/app/i18n/paths";
@@ -42,6 +43,18 @@ export function Providers({ children }: { children: React.ReactNode }) {
       ? "loading"
       : "unauthenticated",
   );
+  const [authSessionBootstrap] = useState(() =>
+    createAuthSessionBootstrap({
+      hasRefreshSession,
+      refresh: () => authApi.refresh(),
+      setAuthenticated: (result) => {
+        setAuthSession({ accessToken: result.access_token, user: result.user });
+        setStatus("authenticated");
+      },
+      clearSession: clearAuthSession,
+      setUnauthenticated: () => setStatus("unauthenticated"),
+    }),
+  );
   useSyncExternalStore(subscribeAuthSession, getAuthSession, getAuthSession);
 
   const redirectToSignIn = useCallback(() => {
@@ -54,23 +67,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
       setStatus("unauthenticated");
       redirectToSignIn();
     });
-
-    if (!hasRefreshSession()) {
-      clearAuthSession();
-      return;
-    }
-
-    authApi
-      .refresh()
-      .then((result) => {
-        setAuthSession({ accessToken: result.access_token, user: result.user });
-        setStatus("authenticated");
-      })
-      .catch(() => {
-        clearAuthSession();
-        setStatus("unauthenticated");
-      });
   }, [queryClient, redirectToSignIn]);
+
+  useEffect(() => {
+    void authSessionBootstrap.run();
+  }, [authSessionBootstrap]);
 
   const login = useCallback(async (body: LoginBody) => {
     const result = await authApi.login(body);

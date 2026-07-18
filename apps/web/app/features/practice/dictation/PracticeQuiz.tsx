@@ -15,6 +15,7 @@ import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
+import { useLearningSession } from "@/app/features/learning-session/use-learning-session";
 import { withLocale } from "@/app/i18n/paths";
 import type { DictationPracticeChallenge } from "@repo/shared";
 import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
@@ -59,19 +60,37 @@ export const DictationPracticeQuiz = ({
   });
 
   const router = useRouter();
-  const sessionSavedRef = useRef(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const { width, height } = useWindowSize();
   const [activeIndex, setActiveIndex] = useState(0);
   const [answer, setAnswer] = useState("");
-  const [status, setStatus] = useState<"none" | "wrong" | "correct">("none");
-  const [correctCount, setCorrectCount] = useState(0);
-  const [wrongCount, setWrongCount] = useState(0);
-  const [reviewedItems, setReviewedItems] = useState<PracticeResultItem[]>([]);
   const [pending, startTransition] = useTransition();
 
   const challenge = initialChallenges[activeIndex];
   const percentage = (activeIndex / initialChallenges.length) * 100;
+  const {
+    state: { status, correctCount, wrongCount, reviewedItems },
+    recordAnswer,
+    clearFeedback,
+    reset,
+  } = useLearningSession<PracticeResultItem>({
+    complete: initialChallenges.length > 0 && !challenge,
+    onComplete: async (items) => {
+      try {
+        await practiceApi.recordSession({
+          mode: "dictation",
+          items: items.map((item) => ({
+            vocabularyItemId: item.vocabularyItemId,
+            challengeType: item.challengeType,
+            correct: item.correct,
+            answer: item.answer,
+          })),
+        });
+      } catch {
+        toast.error(t("saveProgressError"));
+      }
+    },
+  });
   const mapHref = practiceLevel
     ? `/practice?mode=dictation&level=${practiceLevel}`
     : "/practice?mode=dictation&level=mix";
@@ -94,48 +113,24 @@ export const DictationPracticeQuiz = ({
   };
 
   const onPracticeAgain = () => {
-    sessionSavedRef.current = false;
     setActiveIndex(0);
     setAnswer("");
-    setStatus("none");
-    setCorrectCount(0);
-    setWrongCount(0);
-    setReviewedItems([]);
+    reset();
     router.refresh();
   };
 
-  useEffect(() => {
-    if (challenge || reviewedItems.length === 0 || sessionSavedRef.current) {
-      return;
-    }
-
-    sessionSavedRef.current = true;
-    practiceApi.recordSession({
-      mode: "dictation",
-      items: reviewedItems.map((item) => ({
-        vocabularyItemId: item.vocabularyItemId,
-        challengeType: item.challengeType,
-        correct: item.correct,
-        answer: item.answer,
-      })),
-    }).catch(() => toast.error(t("saveProgressError")));
-  }, [challenge, reviewedItems, t]);
-
-  const addReviewedItem = (correct: boolean, userAnswer: string) => {
+  const recordReviewedAnswer = (correct: boolean, userAnswer: string) => {
     if (!challenge) return;
 
-    setReviewedItems((current) => [
-      ...current,
-      {
-        vocabularyItemId: challenge.vocabularyItem.id,
-        word: challenge.vocabularyItem.word,
-        meaning: challenge.vocabularyItem.primaryMeaningVi,
-        cefrLevel: challenge.vocabularyItem.cefrLevel,
-        correct,
-        challengeType: challenge.type,
-        answer: userAnswer,
-      },
-    ]);
+    recordAnswer(correct, {
+      vocabularyItemId: challenge.vocabularyItem.id,
+      word: challenge.vocabularyItem.word,
+      meaning: challenge.vocabularyItem.primaryMeaningVi,
+      cefrLevel: challenge.vocabularyItem.cefrLevel,
+      correct,
+      challengeType: challenge.type,
+      answer: userAnswer,
+    });
   };
 
   const onContinue = () => {
@@ -144,7 +139,7 @@ export const DictationPracticeQuiz = ({
     if (status !== "none") {
       setActiveIndex((current) => current + 1);
       setAnswer("");
-      setStatus("none");
+      clearFeedback();
       return;
     }
 
@@ -156,15 +151,11 @@ export const DictationPracticeQuiz = ({
 
     if (correct) {
       void correctControls.play();
-      setCorrectCount((current) => current + 1);
-      setStatus("correct");
     } else {
       void incorrectControls.play();
-      setWrongCount((current) => current + 1);
-      setStatus("wrong");
     }
 
-    addReviewedItem(correct, answer);
+    recordReviewedAnswer(correct, answer);
 
     startTransition(() => {
       vocabularyApi.recordReview(challenge.vocabularyItem.id, correct).catch(

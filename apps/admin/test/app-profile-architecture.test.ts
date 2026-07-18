@@ -41,6 +41,26 @@ test("shared Admin presentation primitives live under app", () => {
   }
 });
 
+test("Admin dashboard route composes the deep Admin shell", () => {
+  for (const path of [
+    "app/components/layout/admin-navigation.ts",
+    "app/components/layout/AdminSidebar.tsx",
+    "app/components/layout/AdminNavbar.tsx",
+    "app/components/layout/AdminShell.tsx",
+    "app/store/sidebar.store.ts",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+
+  const layoutPath = join(root, "app/(dashboard)/layout.tsx");
+  const source = readFileSync(layoutPath, "utf8");
+  assert.equal(source.includes("@/app/components/layout/AdminShell"), true);
+  assert.equal(source.includes("localStorage"), false, "route layout owns Auth storage");
+  assert.equal(source.includes("navItems"), false, "route layout owns navigation");
+  assert.equal(source.includes("getPageTitle"), false, "route layout owns title mapping");
+  assert.ok(source.split(/\r?\n/u).length < 30, "dashboard route layout must stay thin");
+});
+
 test("Admin reusable Radix primitives are imported from the shared UI package", () => {
   for (const path of [
     "app/components/ui/avatar.tsx",

@@ -10,6 +10,7 @@ owned capability or a public Interface.
 - `apps/admin`: management Next.js runtime.
 - `apps/api`: NestJS runtime, Prisma, PostgreSQL, business behavior, and data scripts.
 - `packages/shared`: cross-runtime TypeScript types and framework-neutral constants.
+- `packages/ui`: exact React presentation primitives shared by Web and Admin.
 
 These package names are fixed by ADR 0011. Do not rename them as part of a
 feature refactor.
@@ -28,23 +29,22 @@ feature refactor.
   `src/services`, `src/stores`, `src/types`, or `src/constants` buckets.
   `app/views` is an intentional EC composition layer, not that legacy technical
   bucket.
-- In Admin, `src/services/http` is the retained transport exception. Auth,
-  Courses, Practice, Settings, and Users behavior belongs under `app/features`
-  and their screens belong under `app/views`.
-- In Web, `src/lib/web-http-client.ts` is the retained browser transport
-  exception. Do not create `platform`, `app/lib/http`, `*.server.ts`,
+- In Admin and Web, browser transport belongs to Auth under
+  `app/features/auth/api`; other features consume that transport through their
+  resource `.api.ts` modules.
+- Do not create `platform`, `app/lib/http`, `*.server.ts`,
   `*.client.ts`, `api-request.server.ts`, or `api-request.client.ts` for
   authenticated resource data.
 - Cross-cutting infrastructure may remain only in clearly framework-owned
-  locations, for example Web `src/lib/web-http-client.ts` and Admin
-  `src/services/http`.
+  locations. Browser authentication/session transport is owned by each
+  runtime's Auth feature rather than a root technical bucket.
 
 ## Frontend conventions
 
 - Keep `app/**/page.tsx` and route layouts thin. In the frontend EC profile, a
   route imports its screen from `@/app/views/<resource>/<Resource>View`.
 - Web authenticated data flow is:
-  `localized route -> app/views -> app/features hook -> resource .api.ts -> src/lib/web-http-client.ts`.
+  `localized route -> app/views -> app/features hook -> resource .api.ts -> app/features/auth/api/web-http-client.ts`.
 - Do not fetch authenticated Web data from Server Components with `cookies()` or
   `next/headers`. `next/headers` is reserved for framework infrastructure such
   as next-intl request setup.
