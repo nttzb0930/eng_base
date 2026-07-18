@@ -1,0 +1,339 @@
+# Project Identity, Environment, Docker, and GHCR Design
+
+## Status
+
+Approved in conversation on 2026-07-19. This specification defines the design
+checkpoint before implementation.
+
+## Context
+
+The repository is technically named `eng_base`, while its public product name
+is `English Base`. The current source still mixes that identity with historical
+`Lingo` names and the learner-facing `VoCaBu` brand. Database, health, Admin,
+locale transport, metadata, and documentation therefore do not describe one
+system consistently.
+
+Environment access is also split between validated API configuration, direct
+`process.env` reads, duplicated localhost fallbacks, and one complete
+`DATABASE_URL`. The local Docker database cannot reuse individual database
+fields without duplicating connection information.
+
+The reference Ecommerce repository demonstrates useful patterns: grouped
+database variables, namespaced Nest configuration, GitHub Actions, multi-stage
+Docker builds, and image publishing. It also includes Docker Hub credentials,
+notifications, path filtering, SSH, and VPS deployment that English Base does
+not currently need. English Base will adopt the useful boundaries without
+copying that operational complexity or any Ecommerce-specific name.
+
+## Goals
+
+- Use `eng_base` as the technical repository/codebase identity.
+- Use `English Base` as the public product identity.
+- Remove historical `Lingo` and `VoCaBu` branding from active source, tests,
+  configuration, Docker, and documentation.
+- Define one documented root environment contract with strict ownership and
+  safe defaults.
+- Support component-based PostgreSQL settings locally and a single
+  `DATABASE_URL` override in hosted environments.
+- Ensure Prisma CLI, Nest runtime, migrations, and offline scripts resolve the
+  same database URL.
+- Add reproducible Docker images for API, Web, and Admin.
+- Add exactly two GitHub workflows: verification and GHCR image publishing.
+- Publish images directly to GitHub Container Registry with `GITHUB_TOKEN`.
+
+## Non-goals
+
+- Creating a GitHub repository or pushing the current local repository.
+- Docker Hub accounts, repositories, access tokens, or images.
+- SSH, VPS, Kubernetes, cloud-platform, or application deployment.
+- Running a database migration, reset, seed, or vocabulary-provider workflow.
+- Renaming the existing local PostgreSQL database automatically.
+- Moving or recreating the existing `v1.0.1` tag.
+- Adding Redis, background workers, notifications, or observability services.
+- Turning the product into a general-purpose white-label platform.
+
+## Canonical identity
+
+| Concern                     | Canonical value      | Ownership                        |
+| --------------------------- | -------------------- | -------------------------------- |
+| Repository and root package | `eng_base`           | root workspace                   |
+| Public product              | `English Base`       | public environment config        |
+| Admin product               | `English Base Admin` | Admin derives from product name  |
+| API display name            | `English Base API`   | API application config           |
+| API service identifier      | `eng-base-api`       | API application config           |
+| PostgreSQL database         | `eng_base`           | local infrastructure config      |
+| PostgreSQL container        | `eng-base-db`        | Docker Compose                   |
+| Locale transport header     | `x-app-locale`       | Web i18n infrastructure constant |
+| Default course              | `English Vocabulary` | Courses capability constant      |
+
+`English Vocabulary` is domain content, not product branding. Seed and
+Placement Test code must import one Courses-owned constant instead of repeating
+the title string. Auth cookie names are protocol constants and remain API-owned;
+they are not environment variables.
+
+The English vocabulary word `clerk` remains in the canonical catalog. The
+Clerk-residue architecture test also remains. Neither is a Clerk authentication
+dependency.
+
+## Root environment contract
+
+Only `.env.example` is committed. `.env` is the ignored local file. Production
+secrets are supplied by the deployment runtime; GitHub Actions uses repository
+variables, environment variables, and the built-in `GITHUB_TOKEN` as described
+below.
+
+The template is grouped by owner:
+
+```dotenv
+# Application identity
+APP_NAME="English Base"
+APP_SERVICE_NAME=eng-base-api
+NEXT_PUBLIC_APP_NAME="English Base"
+
+# Runtime
+NODE_ENV=development
+TZ=Asia/Ho_Chi_Minh
+NEXT_TELEMETRY_DISABLED=1
+
+# Local PostgreSQL components
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=replace-with-local-password
+DB_NAME=eng_base
+DB_SCHEMA=public
+
+# Hosted/managed PostgreSQL override; empty locally
+DATABASE_URL=
+
+# Runtime URLs
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXT_PUBLIC_ADMIN_URL=http://localhost:3001
+NEXT_PUBLIC_API_URL=http://localhost:4000/api
+API_PORT=4000
+CORS_ORIGINS=http://localhost:3000,http://localhost:3001
+```
+
+JWT, rate-limit, proxy, and offline vocabulary sections remain grouped below
+these values. Examples contain placeholders only. No committed file contains a
+working password, JWT secret, provider key, registry token, or SSH key.
+
+### Public and private variables
+
+- `NEXT_PUBLIC_*` values are public and may be embedded into Web/Admin bundles.
+- `DATABASE_URL`, `DB_PASSWORD`, JWT secrets, and provider keys are server-only.
+- A value must never be duplicated with a public prefix for convenience.
+- Docker build arguments may contain only `NEXT_PUBLIC_*` values.
+- API secrets are injected when an API container starts, never when it builds.
+
+## Database URL resolution
+
+A framework-neutral API config function owns URL construction:
+
+```text
+apps/api/src/config/database-url.ts
+  resolveDatabaseUrl(environment): string
+```
+
+Resolution is deterministic:
+
+1. A non-empty `DATABASE_URL` wins and must parse as a PostgreSQL URL.
+2. Otherwise all `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, and
+   `DB_SCHEMA` components are validated.
+3. User, password, database, and schema components are encoded safely before a
+   PostgreSQL URL is returned.
+4. Missing or invalid configuration fails closed with an actionable error.
+
+The root API environment schema accepts exactly one usable route: a valid URL
+override or a complete set of components. `prisma.config.ts`, the Prisma
+adapter, Nest runtime, seed entrypoint, and database-writing offline scripts all
+reuse this resolver. No second interpolation or URL-building implementation is
+allowed.
+
+Docker Compose maps `DB_USER`, `DB_PASSWORD`, and `DB_NAME` to the official
+PostgreSQL variables. The API runs on the host during the current local
+workflow, so `DB_HOST=localhost` remains the default. A future containerized API
+may override only `DB_HOST=db`.
+
+The existing ignored `.env` continues to target `lingo` until the developer
+explicitly creates `eng_base` and chooses whether to migrate local data. Source
+changes must not silently break or mutate that database.
+
+## Application configuration ownership
+
+### API
+
+- Zod validates runtime configuration at startup.
+- `ConfigModule` loads application, JWT, database, and rate-limit config.
+- Capabilities consume injected configuration instead of reading `process.env`.
+- Direct environment reads are limited to bootstrap/configuration boundaries,
+  Prisma CLI support, and offline script entrypoints.
+- Health reports `APP_SERVICE_NAME`; logging uses the application identity.
+- CORS, port, proxy trust, cookie security, and authentication consume validated
+  configuration rather than repeating localhost or production checks.
+
+### Web and Admin
+
+Each Next.js runtime owns one small public-environment module. It reads explicit
+`NEXT_PUBLIC_*` keys, validates required values, normalizes trailing slashes,
+and exports a typed object. Components, metadata, navigation utilities, and HTTP
+adapters import that object rather than reading `process.env`.
+
+The product name is used by metadata, Web marketing/auth content, Admin title,
+navigation, and accessible labels. Translated messages that mention the product
+use an `{appName}` parameter or a value supplied by the public-environment
+owner; they do not embed `VoCaBu`.
+
+The API URL has one owner per frontend runtime. There are no duplicate
+`http://localhost:4000/api` fallbacks in HTTP adapters.
+
+## Docker design
+
+The repository adds:
+
+```text
+.dockerignore
+apps/api/Dockerfile
+apps/web/Dockerfile
+apps/admin/Dockerfile
+```
+
+All Dockerfiles use multi-stage builds, pnpm's locked dependency graph, and the
+monorepo root as build context.
+
+- API image generates Prisma, builds Nest, and runs only the compiled runtime
+  plus required production dependencies and Prisma artifacts.
+- Web and Admin images use Next standalone output and run as non-root users.
+- Images contain no `.env`, Git metadata, vocabulary working/backups, local
+  database data, test output, or provider credentials.
+- Web/Admin Dockerfiles accept only the explicit public build arguments required
+  by their environment modules.
+- API performs no migration or seed during image build or container startup.
+
+## GitHub Actions design
+
+Exactly these workflow files are added:
+
+```text
+.github/workflows/ci.yml
+.github/workflows/docker-build.yml
+```
+
+No notification action, Docker Hub integration, SSH deployment, or separate CD
+workflow is included.
+
+### `ci.yml`
+
+Triggers:
+
+- every branch push;
+- pull requests targeting `main`;
+- manual `workflow_dispatch`.
+
+The workflow grants read-only repository contents permission, uses Node 22 and
+the repository-declared pnpm version, caches pnpm dependencies, and installs
+with `--frozen-lockfile`. It then runs, in fail-fast order:
+
+1. Prisma client generation;
+2. `pnpm architecture:check`;
+3. `pnpm test`;
+4. the standalone 20-test vocabulary workflow command;
+5. `pnpm check-types`;
+6. `pnpm lint`;
+7. `pnpm build`;
+8. Prettier/check-diff verification required by the canonical guide.
+
+CI supplies only safe placeholder values required for compilation. It does not
+start PostgreSQL or call migration, seed, sync, enrichment, or an AI provider.
+
+### `docker-build.yml`
+
+Triggers:
+
+- pushes to `main`;
+- tags matching `v*`;
+- manual `workflow_dispatch`.
+
+The workflow has `contents: read` and `packages: write`. It logs in to
+`ghcr.io` with `${{ github.actor }}` and `${{ secrets.GITHUB_TOKEN }}`. No
+registry account or custom registry token is required.
+
+A matrix builds API, Web, and Admin using their own Dockerfiles. The owner is
+normalized to lowercase before composing image names:
+
+```text
+ghcr.io/<owner>/eng-base-api
+ghcr.io/<owner>/eng-base-web
+ghcr.io/<owner>/eng-base-admin
+```
+
+Docker metadata publishes applicable tags for branch, commit SHA, and semantic
+release tag. A `v1.2.3` release produces `v1.2.3`, `1.2`, `1`, and SHA tags;
+`main` produces `main` and SHA tags. Buildx uses the GitHub Actions cache.
+
+The workflow builds and publishes artifacts only. Deploying those artifacts is
+a separate future decision.
+
+## Security and failure behavior
+
+- Required runtime secrets fail validation; production never falls back to
+  example JWT secrets or database passwords.
+- Workflow logs do not print complete environment files or secret values.
+- Docker build args are assumed public and are reviewed accordingly.
+- `GITHUB_TOKEN` is scoped to package publication by workflow permissions.
+- CI fails if naming residue, forbidden Clerk dependencies, private env exposure,
+  duplicated database URL construction, missing Dockerfiles, or unexpected
+  workflow files return.
+- A failed image build prevents publication for that matrix entry and reports
+  the failing runtime directly.
+
+## Testing and architecture enforcement
+
+Implementation adds or updates tests for:
+
+- database URL override, component construction, encoding, and invalid input;
+- API environment identity and required-secret validation;
+- Web/Admin public-environment normalization and required values;
+- consistent product/service/header/database naming;
+- absence of active `Lingo` and `VoCaBu` residue;
+- continued absence of Clerk dependencies and env keys;
+- shared default Course title ownership;
+- exactly two workflow files and required GHCR permissions/triggers;
+- Dockerfile presence and secret-free build-argument policy.
+
+The existing full repository and vocabulary gates remain mandatory. Docker image
+builds are verified by `docker-build.yml`; implementation should also build each
+image locally when Docker is available, but lack of a local Docker daemon does
+not justify weakening the workflow or static architecture checks.
+
+## Rollout order
+
+1. Add characterization tests for identity, environment, workflow, and Docker
+   invariants.
+2. Introduce canonical identity and public-environment owners.
+3. Replace `Lingo`/`VoCaBu` usage and centralize Course/protocol constants.
+4. Add database URL resolution and migrate all database consumers.
+5. Update `.env.example`, Compose, local-development docs, verification docs,
+   and architecture guidance.
+6. Add `.dockerignore` and the three multi-stage Dockerfiles.
+7. Add `ci.yml` and `docker-build.yml`.
+8. Run narrow tests, the full verification gate, and Docker builds when
+   available.
+9. Commit implementation without moving `v1.0.1`; release tagging is a separate
+   user decision after review.
+
+## Acceptance criteria
+
+- Active tracked source/config/docs contain no historical `Lingo` or `VoCaBu`
+  branding.
+- Root package identity is `eng_base`; public UI consistently says
+  `English Base`.
+- `.env.example` is complete, safe, grouped, and matches validated usage.
+- All database consumers use one tested resolver.
+- Existing local database state is not mutated.
+- Three production Dockerfiles build from the monorepo root without secrets.
+- `.github/workflows` contains exactly `ci.yml` and `docker-build.yml`.
+- CI runs every canonical verification gate without database/provider writes.
+- Docker images publish only to GHCR using the built-in GitHub token.
+- No Docker Hub, deploy, notification, registry-creation, or SSH setup is
+  required.
