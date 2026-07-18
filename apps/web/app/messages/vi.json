@@ -34,7 +34,7 @@
   },
   "banner": {
     "notice": "Tính năng tạo tài khoản hiện chưa khả dụng",
-    "reason": "do gói Clerk hiện tại đã đạt giới hạn người dùng. Để trải nghiệm ứng dụng, vui lòng",
+    "reason": "vì đăng ký công khai đang tắt trong môi trường demo này. Để trải nghiệm ứng dụng, vui lòng",
     "fork": "fork kho mã nguồn này",
     "or": "hoặc",
     "contact": "liên hệ quản trị viên",

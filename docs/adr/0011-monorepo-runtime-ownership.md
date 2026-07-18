@@ -18,7 +18,7 @@ Use a pnpm and Turborepo monorepo:
 - packages/shared owns cross-runtime contracts and constants.
 - packages/typescript-config and packages/eslint-config own workspace configuration.
 
-Main and admin authenticate through Clerk and call the API with bearer tokens. They must not import Prisma or access PostgreSQL directly.
+Main and admin authenticate through the API-owned auth module. Browser clients store access tokens in their app session state and use API refresh cookies for renewal. They must not import Prisma or access PostgreSQL directly.
 
 ## Consequences
 

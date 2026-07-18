@@ -34,7 +34,7 @@
   },
   "banner": {
     "notice": "Account creation is currently unavailable",
-    "reason": "because the current Clerk plan has reached its user limit. To try the app, please",
+    "reason": "because public signup is disabled in this demo environment. To try the app, please",
     "fork": "fork this repository",
     "or": "or",
     "contact": "contact the administrator",
