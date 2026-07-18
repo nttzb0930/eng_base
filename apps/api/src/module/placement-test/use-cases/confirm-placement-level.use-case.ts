@@ -4,6 +4,7 @@ import {
   NotFoundException,
 } from "@nestjs/common";
 import { Prisma } from "@prisma/client";
+import { DEFAULT_ENGLISH_COURSE_TITLE } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import { PLACEMENT_LEVELS } from "./placement-test.rules";
@@ -38,7 +39,7 @@ export class ConfirmPlacementLevelUseCase {
         }
 
         const defaultCourse = await transaction.courses.findFirst({
-          where: { title: "English Vocabulary" },
+          where: { title: DEFAULT_ENGLISH_COURSE_TITLE },
         });
         if (!defaultCourse) throw new NotFoundException("Course not found");
 

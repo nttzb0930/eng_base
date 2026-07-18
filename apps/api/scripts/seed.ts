@@ -4,6 +4,7 @@ import path from "node:path";
 import * as bcrypt from "bcryptjs";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient, type Prisma } from "@prisma/client";
+import { DEFAULT_ENGLISH_COURSE_TITLE } from "@repo/shared";
 
 import { vocabularyIdentity } from "./vocabulary/catalog/vocabulary-catalog.js";
 import { loadVocabularySeedData } from "./vocabulary/database/vocabulary-seed-data.js";
@@ -314,7 +315,7 @@ const main = async () => {
 
   const course = await prisma.courses.create({
     data: {
-      title: "English Vocabulary",
+      title: DEFAULT_ENGLISH_COURSE_TITLE,
       image_src: "/mascot.svg",
     },
   });
