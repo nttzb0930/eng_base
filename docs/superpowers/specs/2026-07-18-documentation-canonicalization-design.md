@@ -84,7 +84,8 @@ The Vietnamese root README will contain:
 - product purpose and current scope;
 - the Web, Admin, API, Shared, and UI runtime/package map;
 - prerequisites and a safe local quick start;
-- `.env` setup, PostgreSQL startup, Prisma generation, and migration commands;
+- `.env` setup, PostgreSQL startup through the Compose `db` service, Prisma
+  generation, and migration commands;
 - common development and verification commands;
 - an explicit warning around seed, reset, push, enrichment, and sync commands;
 - a link to `docs/README.md` for architecture and data workflows.
