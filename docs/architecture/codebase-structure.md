@@ -1,9 +1,9 @@
 # Codebase Structure
 
-This is the repository profile for **Web Base Standard 1.5.0**. Frontend domain
-code follows the EC-derived `app/features` + `app/views` profile. Legacy
-technical buckets such as `src/modules`, `src/services`, `src/views`, and
-`src/stores` are not valid frontend destinations.
+English Base organizes code by runtime owner and business capability. Frontend
+domain code uses `app/features` for capability implementation and `app/views`
+for route-level composition. Root technical buckets such as `src/modules`,
+`src/services`, `src/views`, and `src/stores` are not valid frontend owners.
 
 ## Workspace and runtime owners
 
@@ -17,18 +17,21 @@ packages/
   ui/                  exact React primitives shared by Web and Admin
   eslint-config/       lint configuration
   typescript-config/   TypeScript configuration
-data/                  vocabulary snapshots, proposals, audits, backups
+data/                  canonical vocabulary sources and local pipeline artifacts
 docs/adr/              accepted architecture decisions
 ```
 
 ADR 0011 fixes these package names. `packages/shared` remains the package name;
-ADR 0021 defines its EC TypeScript-only source profile and root Interface.
+ADR 0021 defines its TypeScript-only source profile and root Interface.
 
 ## Organize ownership by capability
 
 Ownership is capability-first; physical layout follows a documented runtime
-profile. Web and Admin use the EC frontend profile, API owns runtime validation
-and behavior, and Shared owns framework-neutral declarations and constants.
+profile. Web and Admin use the feature/view frontend profile, API owns runtime
+validation and behavior, and Shared owns framework-neutral declarations and
+constants. See [Frontend architecture](frontend.md) and
+[Backend folder structure](../backend-folder-structure.md) for runtime-specific
+details.
 
 ```text
 apps/web/app/features/<capability>/
@@ -104,7 +107,7 @@ domain layers speculatively.
 - Web does not use authenticated Server Component HTTP. `next/headers` is
   allowed for framework-owned infrastructure such as next-intl request setup,
   not for domain data fetching.
-- Feature root barrels are optional in the EC profile. Consumers use the
+- Feature root barrels are optional. Consumers use the
   documented resource API/hook Interface rather than an artificial aggregate.
 - Consumers import cross-runtime types and constants from `@repo/shared`.
 - Capability subpaths, `src/contracts.ts`, and `*.contract.ts` are not valid
@@ -113,14 +116,14 @@ domain layers speculatively.
 
 ## Type ownership
 
-| Shape                            | Owner                               | Course example                           |
-| -------------------------------- | ----------------------------------- | ---------------------------------------- |
-| Cross-runtime TypeScript shape   | `packages/shared/src/types`         | `Course`, `CreateCoursePayload`          |
-| Shared runtime constant          | `packages/shared/src/constants`     | `LESSON_CHALLENGE_TYPES`                 |
-| HTTP request validation class    | API capability                      | `CourseCreateDto` with `class-validator` |
-| Persistence record/query         | API capability and Prisma           | `coursesModel`, snake_case columns       |
-| Persistence-to-wire mapping      | API capability                      | `mapCourse`, `toCourseData`              |
-| UI presentation/form/table state | Frontend capability                 | `CourseUnitViewModel`                    |
+| Shape                            | Owner                           | Course example                           |
+| -------------------------------- | ------------------------------- | ---------------------------------------- |
+| Cross-runtime TypeScript shape   | `packages/shared/src/types`     | `Course`, `CreateCoursePayload`          |
+| Shared runtime constant          | `packages/shared/src/constants` | `LESSON_CHALLENGE_TYPES`                 |
+| HTTP request validation class    | API capability                  | `CourseCreateDto` with `class-validator` |
+| Persistence record/query         | API capability and Prisma       | `coursesModel`, snake_case columns       |
+| Persistence-to-wire mapping      | API capability                  | `mapCourse`, `toCourseData`              |
+| UI presentation/form/table state | Frontend capability             | `CourseUnitViewModel`                    |
 
 Shared wire types are compile-time boundaries, not database models and not
 runtime validators. Prisma types must never leak to Admin, Web, or
@@ -173,10 +176,10 @@ src/controllers/<domain>
 src/repositories/<domain>
 ```
 
-These legacy paths scatter ownership. `app/views` is allowed by the EC profile
-as a thin screen-composition layer backed by `app/features`; it is not equivalent
-to legacy `src/views`. Browser session transport is the documented Auth-owned
-infrastructure exception under each runtime's `app/features/auth/api` folder.
+These legacy paths scatter ownership. `app/views` is a thin screen-composition
+layer backed by `app/features`; it is not equivalent to legacy `src/views`.
+Browser session transport is the documented Auth-owned infrastructure exception
+under each runtime's `app/features/auth/api` folder.
 
 ## Enforcement
 
@@ -186,7 +189,7 @@ Management additionally has:
 - Shared root-export and filesystem architecture tests;
 - API controller, service, and mapper tests;
 - Admin resource API and query-key tests;
-- an Admin route/import test that enforces the accepted EC profile.
+- an Admin route/import test that enforces the feature/view profile.
 - Web route/import and feature-architecture tests that reject legacy frontend
   buckets and authenticated server HTTP.
 - an API source-profile test that rejects split Auth/Prisma/support roots and a

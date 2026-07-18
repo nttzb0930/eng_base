@@ -30,10 +30,8 @@ change. Do not preserve contradictory rules as temporary alternatives.
 
 - [Codebase structure](architecture/codebase-structure.md): workspace ownership,
   dependency direction, type placement, naming, and forbidden technical buckets.
-- [Frontend folder structure](frontend-folder-structure.md): current Web/Admin
-  feature and view placement.
-- [Frontend/API integration](frontend-api-calls.md): browser resource APIs,
-  query keys, wire types, and compatibility behavior.
+- [Frontend architecture](architecture/frontend.md): Web/Admin feature and view
+  placement, browser resource APIs, query keys, localization, and UI ownership.
 - [Backend folder structure](backend-folder-structure.md): API source roots,
   capability Modules, Prisma ownership, and safety.
 - [Course content](architecture/course-content.md): worked capability example

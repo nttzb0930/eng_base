@@ -10,6 +10,8 @@ accepted ADR before changing an owned capability or public Interface.
 - `docs/README.md` maps each subject to its canonical document.
 - `docs/architecture/codebase-structure.md` defines workspace ownership and
   dependency direction.
+- `docs/architecture/frontend.md` defines Web/Admin placement, browser data flow,
+  localization, and UI ownership.
 - `docs/data/vocabulary-pipeline.md` is required reading before changing
   vocabulary source data or running data scripts.
 
