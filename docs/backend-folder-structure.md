@@ -31,6 +31,14 @@ apps/api/src/
   main.ts                       process/bootstrap adapter
 apps/api/scripts/support/
   script-prisma.ts              offline-script persistence Adapter
+apps/api/scripts/vocabulary/
+  catalog/                      canonical catalog owner
+  database/                     vocabulary database adapters
+  dictionary-enrichment/        dictionary lookup workflows
+  normalization/                meaning/example normalization
+  pos-correction/               part-of-speech correction
+  topic-classification/         existing-word classification
+  topic-expansion/              review-gated new-word proposals
 ```
 
 The repository deliberately retains singular `src/module`. Renaming it to
@@ -46,6 +54,11 @@ map records inside the owning capability. Never edit or recreate
 Nest Modules inject `PrismaService`. Offline vocabulary scripts import
 `scripts/support/script-prisma.ts`. Both Adapters share connection construction
 through `prisma.config.ts`; neither is a second database owner.
+
+Vocabulary script helpers and tests are colocated with the workflow that owns
+them. A generic `scripts/lib` folder and vocabulary scripts at the scripts root
+are forbidden. Generated batch/report data is ignored; only canonical sources,
+prompts, and human review decisions are versioned.
 
 Prisma records stay API-local and must be mapped before crossing an HTTP wire
 Interface. Database columns such as `image_src` and `course_id` are translated

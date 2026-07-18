@@ -49,3 +49,7 @@ next-env.d.ts
 
 # local agent execution artifacts
 /.superpowers/
+
+# generated vocabulary pipeline artifacts
+/data/vocabulary/working/
+/data/vocabulary/backups/

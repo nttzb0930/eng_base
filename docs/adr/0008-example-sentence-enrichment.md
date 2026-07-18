@@ -16,7 +16,7 @@ Add optional example sentence fields to `vocabulary_items`.
 - `example_vi`
 - `example_source`
 
-Use `scripts/enrich-vocab-examples.ts` to fetch examples from Free Dictionary API when available. Keep `example_vi` null until a translation or LLM enrichment phase is added.
+Use `scripts/vocabulary/dictionary-enrichment/enrich-vocab-examples.ts` to fetch examples from Free Dictionary API when available. Keep `example_vi` null until a translation or LLM enrichment phase is added.
 
 ## Consequences
 
