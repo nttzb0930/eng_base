@@ -12,6 +12,8 @@ accepted ADR before changing an owned capability or public Interface.
   dependency direction.
 - `docs/architecture/frontend.md` defines Web/Admin placement, browser data flow,
   localization, and UI ownership.
+- `docs/architecture/api.md` defines Nest capability ownership, Auth delivery,
+  Prisma, errors, rate limits, and transaction rules.
 - `docs/data/vocabulary-pipeline.md` is required reading before changing
   vocabulary source data or running data scripts.
 

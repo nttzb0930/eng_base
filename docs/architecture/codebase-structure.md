@@ -30,8 +30,7 @@ Ownership is capability-first; physical layout follows a documented runtime
 profile. Web and Admin use the feature/view frontend profile, API owns runtime
 validation and behavior, and Shared owns framework-neutral declarations and
 constants. See [Frontend architecture](frontend.md) and
-[Backend folder structure](../backend-folder-structure.md) for runtime-specific
-details.
+[API architecture](api.md) for runtime-specific details.
 
 ```text
 apps/web/app/features/<capability>/

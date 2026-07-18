@@ -1,8 +1,8 @@
 # Course Content Architecture
 
-Course content is the repository's **Web Base Standard 1.5.0 golden slice**. Use
-it as the reference when migrating another capability; copy its ownership and
-Interface rules, not its domain-specific files verbatim.
+Course content is the repository's worked capability example. Use its ownership
+and Interface rules when evaluating another capability; do not copy
+Course-specific controllers, resources, or hierarchy into unrelated domains.
 
 ## Domain hierarchy and owner
 
@@ -163,15 +163,15 @@ its existing scope.
 
 ## Characterization and enforcement
 
-- `packages/shared/test/ec-shared-profile.architecture.test.ts` rejects legacy
+- `packages/shared/test/shared-package-profile.architecture.test.ts` rejects legacy
   contract folders, capability imports, and non-root package exports.
-- `packages/shared/test/ec-shared-root.test.ts` and `package-exports.test.ts`
+- `packages/shared/test/shared-root-interface.test.ts` and `package-exports.test.ts`
   lock the root types/constants Interface and private-path boundary.
 - API management tests lock mapper translation, use-case behavior, controller
   routes, pagination selection, and `Content-Range` behavior.
 - Admin feature tests lock endpoint paths, typed response delivery, list
   capabilities, and query-key shapes.
-- `apps/admin/test/course-feature-architecture.test.ts` requires EC view imports,
+- `apps/admin/test/course-feature-architecture.test.ts` requires feature/view imports,
   resource API files, and rejects the superseded `src/features/courses`,
   `catalog`, and aggregate client layout.
 - `pnpm architecture:check` runs repository architecture checks through Turbo.
