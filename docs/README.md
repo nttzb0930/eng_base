@@ -55,10 +55,9 @@ requires a database write.
 
 ## Architecture decision records
 
-The [`adr/`](adr/) directory records why durable decisions exist. A decision
-record explains context and trade-offs; it is not a folder template or an
-operating guide. Newer ADRs must state which earlier decision they amend or
-supersede.
+The [ADR catalog](adr/README.md) records why durable decisions exist and shows
+which decisions amend or supersede others. A decision record explains context
+and trade-offs; it is not a folder template or an operating guide.
 
 ## Historical material
 

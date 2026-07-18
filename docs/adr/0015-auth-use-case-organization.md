@@ -13,10 +13,10 @@ file. Guards and request context were exported from the Auth root alongside
 cryptographic helper functions, making the Auth Interface nearly as broad as
 its Implementation.
 
-The EC reference separates authentication behavior into use cases and token
-services while placing Nest guards and request identity infrastructure under
-`common`. English Base needs the same ownership model but does not currently
-need EC verification, email, or Redis workflows.
+Authentication needs goal-specific use cases and token services, while Nest
+guards and request identity remain cross-capability HTTP infrastructure. The
+current product does not require verification-email or distributed-session
+workflows.
 
 ## Decision
 

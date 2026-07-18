@@ -1,8 +1,8 @@
-# ADR 0021: EC Shared TypeScript-Only Profile
+# ADR 0021: Expose Shared TypeScript Through One Root Interface
 
 ## Status
 
-Accepted on 2026-07-18.
+Accepted
 
 ## Context
 
@@ -13,14 +13,13 @@ capability subpaths, while Course defined Zod schemas in
 global contract bucket, a forwarding capability folder, and a schema-first
 Course exception.
 
-The repository uses EC as its reference profile. EC keeps reusable TypeScript
-declarations and runtime constants in explicit shared folders and exposes a
-small package Interface. English Base also retains runtime-specific validation
-inside the runtime that owns it.
+Reusable TypeScript declarations and runtime constants need explicit folders
+and a small package interface. Runtime-specific validation remains inside the
+runtime that owns it.
 
 ## Decision
 
-`packages/shared` follows the EC TypeScript-only profile:
+`packages/shared` follows this TypeScript-only profile:
 
 - domain TypeScript declarations live in `src/types/<domain>.ts`;
 - framework-neutral runtime values live in `src/constants/<domain>.ts`;

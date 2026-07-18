@@ -26,7 +26,8 @@ formatting across capability owners.
 - Both `search` and `q` are accepted during compatibility, and paged list size is
   capped at 100.
 - Progress and Placement Test multi-write goals use serializable transactions.
-  Challenge progress identity is protected by a prepared unique migration.
+  Challenge progress identity is protected by the applied
+  `20260716180000_add_challenge_progress_identity` migration.
 
 ## Consequences
 
@@ -34,4 +35,5 @@ formatting across capability owners.
 - Delivery callers no longer learn Prisma query naming.
 - Existing routes, response envelopes, `Content-Range`, and unpaged lookup
   behavior remain unchanged.
-- The database migration remains a separately reviewed/apply operation.
+- Reapplying the same challenge completion cannot create a second progress
+  identity.

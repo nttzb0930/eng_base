@@ -7,13 +7,8 @@ Accepted
 ## Context
 
 Authentication endpoints were protected by credential validation but accepted
-unbounded login, registration, and refresh attempts. The EC reference registers
-`@nestjs/throttler` globally from `config/rate-limit.config.ts`; its current
-Implementation limits by IP only and does not apply separate login identity or
-refresh-session policies.
-
-English Base needs the EC filesystem profile while also protecting the actual
-Authentication session Interface against brute force and token replay bursts.
+unbounded login, registration, and refresh attempts. Protecting the session
+boundary requires distinct IP, login-identity, and refresh-session policies.
 Rate limiting is HTTP delivery infrastructure, not Auth business behavior.
 
 ## Decision
@@ -32,8 +27,8 @@ Rate limiting is HTTP delivery infrastructure, not Auth business behavior.
   `retryAfterSeconds` body field, and the standard `Retry-After` header.
 - Passwords, authorization headers, cookies, sessions, and tokens remain
   recursively redacted by centralized logging under ADR 0017.
-- The default storage Adapter is process-local, matching the EC baseline. A
-  shared storage Adapter is required before running more than one API replica.
+- The default storage adapter is process-local. A shared storage adapter is
+  required before running more than one API replica.
 
 ## Consequences
 
@@ -43,6 +38,5 @@ Rate limiting is HTTP delivery infrastructure, not Auth business behavior.
   cannot bypass the login-identity policy within one API replica.
 - Tests exercise the public 429 contract and prove tracker values do not expose
   usernames or refresh tokens.
-- Multi-replica deployment must introduce a shared Throttler storage Adapter
+- Multi-replica deployment must introduce a shared Throttler storage adapter
   (for example Redis) without changing controllers or Auth use cases.
-

@@ -9,8 +9,7 @@ Accepted
 Repeated challenge-completion requests could award points more than once even
 though challenge identity was unique. Vocabulary review flows also performed a
 read, calculated counters in memory, and wrote absolute values, allowing two
-concurrent attempts to overwrite one another. Topic listing queried vocabulary
-once per topic.
+concurrent attempts to overwrite one another.
 
 ## Decision
 
@@ -22,10 +21,6 @@ once per topic.
 - Vocabulary review scheduling is a pure internal rule. Progress writes run in
   a serializable transaction, take a PostgreSQL transaction advisory lock for
   the Learner and Vocabulary item identity, and use atomic counter increments.
-- Topic listing loads Topic relations and Vocabulary items in batches; query
-  count does not grow with the number of Topics.
-- Reverse-proxy trust is explicit through `TRUST_PROXY_HOPS`, defaulting to zero
-  so forwarded client IP headers are ignored unless deployment opts in.
 
 ## Consequences
 
@@ -34,6 +29,6 @@ once per topic.
   Locality behind one rule.
 - Vocabulary delivery calls goal Interfaces directly without a compatibility
   facade.
-- Topic reads avoid the prior N+1 query pattern.
-- Deployments behind a known proxy must configure its exact hop count so rate
-  limiting sees the client IP.
+- This decision is limited to learner progress identity, scheduling, and
+  concurrent writes. Topic query batching and proxy trust are API infrastructure
+  concerns documented in `docs/architecture/api.md`.

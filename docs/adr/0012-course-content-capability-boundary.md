@@ -2,7 +2,8 @@
 
 ## Status
 
-Accepted; filesystem details amended by ADRs 0013 and 0016
+Accepted; filesystem and Shared interface details amended by ADRs 0013, 0016,
+and 0021
 
 ## Context
 
@@ -17,21 +18,19 @@ existing clients depend on its pagination and route details.
 
 ## Decision
 
-Adopt the Course content hierarchy as the **Web Base Standard 1.3.0 golden
-slice**.
+Use Course Content as the reference capability for ownership across runtimes.
 
 - Courses is the API domain owner for learner reads and Admin management CRUD.
 - API management delivery, validation, behavior, mapping, and tests live under
   the `courses` owner and its `dto`, `mappers`, `use-cases`, and `tests` roles,
   as amended by ADR 0016.
-- Admin Course Management follows the EC Admin profile recorded in ADR 0013.
-- The public wire Interface is `@repo/shared/courses`, sourced from
-  `packages/shared/src/courses/index.ts` and `course.contract.ts`.
+- Admin Course Management follows the feature/view profile recorded in ADR 0013.
+- Public wire types are exported from the root `@repo/shared` interface as
+  amended by ADR 0021.
 - Nest validation DTOs implement shared request shapes but remain API-local.
 - Prisma models and snake_case mapping remain API-local. Admin-enriched
   ViewModels remain feature-local.
-- Package names stay as accepted in ADR 0011. `packages/shared` is migrated by
-  capability subpath, not renamed.
+- Package names stay as accepted in ADR 0011.
 
 The existing HTTP Interface is preserved:
 
@@ -39,12 +38,8 @@ The existing HTTP Interface is preserved:
 - `page` absent: return a raw array and `Content-Range`.
 - Updates use `PUT`.
 - `/admin/challengeOptions` retains its camelCase spelling.
-- The Admin `search` versus API `q` query drift is recorded but not changed in
-  this structural refactor.
-
-Migration is incremental. Other API modules and frontend `src/views` or
-`src/services` directories remain legacy until separately characterized and
-moved.
+- Admin list delivery accepts both `search` and `q`; the owner maps either key
+  into the same neutral list query.
 
 ## Consequences
 
@@ -53,7 +48,7 @@ moved.
 - Contract consumers cannot accidentally depend on Prisma naming or Admin UI
   joins.
 - Routes and external clients retain observable behavior.
-- Some old and new structures coexist temporarily; architecture checks prevent
-  Course Management from moving back into legacy technical buckets.
-- Correcting the search query name or normalizing endpoint spelling requires a
-  separate compatibility decision and tests.
+- Architecture checks prevent Course Management from moving into generic Admin
+  ownership or nested management buckets.
+- Supporting both query names preserves compatibility without exposing Prisma
+  query construction to controllers.

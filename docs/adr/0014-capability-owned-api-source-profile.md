@@ -1,4 +1,4 @@
-# ADR 0014: EC API Source Profile
+# ADR 0014: Use Capability-Owned API Source Layout
 
 ## Status
 
@@ -9,12 +9,12 @@ Accepted; amended by ADRs 0015 and 0016
 The API runtime split authentication implementation between `src/auth` and
 `src/module/auth`, exposed two Prisma client generations, and used ambiguous
 root folders named `db`, `prisma`, and `support`. Health delivery also lived at
-the source root. These paths reduced locality and made the English Base differ
-from the established EC backend profile without a domain reason.
+the source root. These paths reduced locality and exposed multiple ways to
+locate authentication, health, and persistence code.
 
 ## Decision
 
-Adopt the EC API source profile:
+Use this API source profile:
 
 ```text
 apps/api/src/
@@ -51,4 +51,5 @@ the Prisma schema, database data, HTTP routes, or wire contracts.
 - Data scripts retain a dedicated Prisma client adapter without creating a
   second database owner.
 - Architecture tests reject the former root folders and duplicate generator.
-- Other API Modules can migrate incrementally without copying EC domain code.
+- New API behavior must follow the same capability ownership and infrastructure
+  boundaries.
