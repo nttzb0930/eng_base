@@ -57,19 +57,24 @@ copying that operational complexity or any Ecommerce-specific name.
 | Concern                     | Canonical value      | Ownership                        |
 | --------------------------- | -------------------- | -------------------------------- |
 | Repository and root package | `eng_base`           | root workspace                   |
-| Public product              | `English Base`       | public environment config        |
+| Public product              | `English Base`       | frontend public environment      |
 | Admin product               | `English Base Admin` | Admin derives from product name  |
 | API display name            | `English Base API`   | API application config           |
 | API service identifier      | `eng-base-api`       | API application config           |
 | PostgreSQL database         | `eng_base`           | local infrastructure config      |
 | PostgreSQL container        | `eng-base-db`        | Docker Compose                   |
 | Locale transport header     | `x-app-locale`       | Web i18n infrastructure constant |
-| Default course              | `English Vocabulary` | Courses capability constant      |
+| English course code         | `english-vocabulary` | Courses capability constant      |
 
-`English Vocabulary` is domain content, not product branding. Seed and
-Placement Test code must import one Courses-owned constant instead of repeating
-the title string. Auth cookie names are protocol constants and remain API-owned;
-they are not environment variables.
+Application identity does not belong in `packages/shared`. The API reads its
+identity from validated server environment configuration. Web and Admin read
+`NEXT_PUBLIC_APP_NAME` directly at their owning Next.js boundaries and fall back
+to `English Base`; they do not introduce a frontend `environment.ts` convention.
+
+The English course is identified by the immutable `courses.code` value
+`english-vocabulary`, not by its editable display title. Seed and Placement Test
+import one Courses-owned code constant. Auth cookie names are protocol constants
+and remain API-owned; they are not environment variables.
 
 The English vocabulary word `clerk` remains in the canonical catalog. The
 Clerk-residue architecture test also remains. Neither is a Clerk authentication
@@ -86,7 +91,7 @@ The template is grouped by owner:
 
 ```dotenv
 # Application identity
-APP_NAME="English Base"
+APP_NAME="English Base API"
 APP_SERVICE_NAME=eng-base-api
 NEXT_PUBLIC_APP_NAME="English Base"
 
@@ -103,8 +108,8 @@ DB_PASSWORD=replace-with-local-password
 DB_NAME=eng_base
 DB_SCHEMA=public
 
-# Hosted/managed PostgreSQL override; empty locally
-DATABASE_URL=
+# Composed locally; replace with a complete provider URL in production
+DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?schema=${DB_SCHEMA}
 
 # Runtime URLs
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -137,11 +142,13 @@ apps/api/src/config/database-url.ts
 
 Resolution is deterministic:
 
-1. A non-empty `DATABASE_URL` wins and must parse as a PostgreSQL URL.
-2. Otherwise all `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, and
-   `DB_SCHEMA` components are validated.
-3. User, password, database, and schema components are encoded safely before a
-   PostgreSQL URL is returned.
+1. A non-empty, fully resolved `DATABASE_URL` wins and must parse as a
+   PostgreSQL URL.
+2. A missing URL or a template URL that still contains `${...}` is constructed
+   from `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, and
+   `DB_SCHEMA`.
+3. All components are validated; user, password, database, and schema values are
+   encoded safely before construction.
 4. Missing or invalid configuration fails closed with an actionable error.
 
 The root API environment schema accepts exactly one usable route: a valid URL
@@ -174,15 +181,33 @@ changes must not silently break or mutate that database.
 
 ### Web and Admin
 
-Each Next.js runtime owns one small public-environment module. It reads explicit
-`NEXT_PUBLIC_*` keys, validates required values, normalizes trailing slashes,
-and exports a typed object. Components, metadata, navigation utilities, and HTTP
-adapters import that object rather than reading `process.env`.
+Frontend configuration follows the reference codebase's direct ownership style.
+Metadata and branded UI read `NEXT_PUBLIC_APP_NAME` with the `English Base`
+fallback. HTTP adapters read `NEXT_PUBLIC_API_URL`; absolute-URL helpers read
+`NEXT_PUBLIC_APP_URL`. No generic `environment.ts`, config folder, or frontend
+environment abstraction is introduced. Required public URL values are supplied
+and checked by build/test configuration.
 
 The product name is used by metadata, Web marketing/auth content, Admin title,
 navigation, and accessible labels. Translated messages that mention the product
-use an `{appName}` parameter or a value supplied by the public-environment
-owner; they do not embed `VoCaBu`.
+use an `{appName}` parameter or a value supplied by the owning frontend
+boundary; they do not embed `VoCaBu`.
+
+## Course identity
+
+`courses` gains an immutable unique `code`. The initial English course uses
+`english-vocabulary`. A migration backfills that code for the existing English
+course and deterministic `course-<id>` values for any other existing records
+before applying `UNIQUE` and `NOT NULL` constraints.
+
+Course creation requires a kebab-case code. Course updates do not accept code,
+and Admin shows it as read-only after creation. Titles and images remain
+editable. Database relations continue using numeric course IDs. Placement Test
+looks up the English course by code.
+
+No `slug` or learner Course Detail route is added. Slug remains a future URL
+concern for a route such as `/[locale]/courses/[slug]`; business behavior must
+continue using immutable code even if editable slugs are introduced later.
 
 The API URL has one owner per frontend runtime. There are no duplicate
 `http://localhost:4000/api` fallbacks in HTTP adapters.
@@ -356,11 +381,11 @@ Implementation adds or updates tests for:
 
 - database URL override, component construction, encoding, and invalid input;
 - API environment identity and required-secret validation;
-- Web/Admin public-environment normalization and required values;
+- frontend public-variable ownership and required build values;
 - consistent product/service/header/database naming;
 - absence of active `Lingo` and `VoCaBu` residue;
 - continued absence of Clerk dependencies and env keys;
-- shared default Course title ownership;
+- immutable Course code migration, creation, mapping, and Placement Test lookup;
 - exactly two workflow files and required GHCR permissions/triggers;
 - Dockerfile presence and secret-free build-argument policy.
 
@@ -373,18 +398,20 @@ not justify weakening the workflow or static architecture checks.
 
 1. Add characterization tests for identity, environment, workflow, and Docker
    invariants.
-2. Introduce canonical identity and public-environment owners.
-3. Replace `Lingo`/`VoCaBu` usage and centralize Course/protocol constants.
-4. Add database URL resolution and migrate all database consumers.
-5. Update `.env.example`, Compose, local-development docs, verification docs,
+2. Introduce canonical identity without a frontend environment abstraction.
+3. Replace `Lingo`/`VoCaBu` usage and centralize protocol constants.
+4. Add immutable Course code across migration, API, Shared types, seed, Admin,
+   and Placement Test.
+5. Add database URL resolution and migrate all database consumers.
+6. Update `.env.example`, Compose, local-development docs, verification docs,
    architecture guidance, the root README, and the two canonical operating
    guides.
-6. Add `.dockerignore` and the three multi-stage Dockerfiles.
-7. Add `ci.yml` and `docker-build.yml`.
-8. Run narrow tests, the full verification gate, and Docker builds when
+7. Add `.dockerignore` and the three multi-stage Dockerfiles.
+8. Add `ci.yml` and `docker-build.yml`.
+9. Run narrow tests, the full verification gate, and Docker builds when
    available.
-9. Commit implementation without moving `v1.0.1`; release tagging is a separate
-   user decision after review.
+10. Commit implementation without moving `v1.0.1`; release tagging is a separate
+    user decision after review.
 
 ## Acceptance criteria
 
@@ -398,6 +425,7 @@ not justify weakening the workflow or static architecture checks.
 - English environment and CI/CD guides are linked from the canonical docs index
   and own detailed configuration/workflow instructions.
 - All database consumers use one tested resolver.
+- Course selection and Placement Test do not depend on an editable course title.
 - Existing local database state is not mutated.
 - Three production Dockerfiles build from the monorepo root without secrets.
 - `.github/workflows` contains exactly `ci.yml` and `docker-build.yml`.
