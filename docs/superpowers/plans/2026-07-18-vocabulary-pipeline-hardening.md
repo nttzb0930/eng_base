@@ -4,7 +4,7 @@
 
 **Goal:** Replace the phase-based vocabulary data layout with one validated catalog, one 103-topic taxonomy, reproducible classification/expansion pipelines, and database seed code that consumes only canonical sources.
 
-**Architecture:** Pure functions under `apps/api/scripts/lib` own catalog validation, deterministic classification merging, and expansion validation. CLI scripts only perform file/provider/database I/O around those functions. Canonical JSON files are versioned; generated AI working artifacts are ignored and may replace the catalog only through validated atomic merges.
+**Architecture:** Pure functions are colocated under the owning `apps/api/scripts/vocabulary/<flow>/` folder for catalog validation, deterministic classification merging, and expansion validation. CLI scripts only perform file/provider/database I/O around those functions. Canonical JSON files are versioned; generated AI working artifacts are ignored and may replace the catalog only through validated atomic merges.
 
 **Tech Stack:** TypeScript 6, Node.js filesystem APIs, `tsx --test`, Prisma 7, PostgreSQL, pnpm monorepo.
 
@@ -15,6 +15,7 @@
 - `dictionaryLookupCompleted` means Dictionary API lookup completed; audio/example presence is derived from their fields.
 - AI classification assigns zero or one primary topic while the catalog keeps `topics: string[]`.
 - AI expansion artifacts require validation and acceptance before merge.
+- AI expansion defaults to exactly 10 bilingual example pairs per generated word.
 - Generated working files and backups are ignored and never read by runtime or database seed.
 - No database write command runs without explicit user confirmation.
 - All production behavior follows red-green-refactor.
@@ -94,8 +95,8 @@ git commit -m "refactor(data): establish canonical vocabulary catalog"
 ### Task 2: Add pure catalog and taxonomy validation
 
 **Files:**
-- Create: `apps/api/scripts/lib/vocabulary-catalog.ts`
-- Create: `apps/api/scripts/lib/vocabulary-catalog.test.ts`
+- Create: `apps/api/scripts/vocabulary/catalog/vocabulary-catalog.ts`
+- Create: `apps/api/scripts/vocabulary/catalog/vocabulary-catalog.test.ts`
 
 **Interfaces:**
 - Produces `VocabularyTopicDefinition`, `VocabularyCatalogItem`, `VocabularyValidationReport`.
@@ -154,14 +155,14 @@ Required fields are `word`, `normalizedWord`, `pos`, `cefrLevel`, `meaningVi`, a
 - [ ] **Step 4: Run narrow tests and full API tests**
 
 ```bash
-pnpm --filter @repo/api exec tsx --test scripts/lib/vocabulary-catalog.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts
 pnpm --filter @repo/api test
 ```
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add apps/api/scripts/lib/vocabulary-catalog.ts apps/api/scripts/lib/vocabulary-catalog.test.ts
+git add apps/api/scripts/vocabulary/catalog/vocabulary-catalog.ts apps/api/scripts/vocabulary/catalog/vocabulary-catalog.test.ts
 git commit -m "feat(data): validate canonical vocabulary sources"
 ```
 
@@ -170,11 +171,11 @@ git commit -m "feat(data): validate canonical vocabulary sources"
 ### Task 3: Harden deterministic topic classification
 
 **Files:**
-- Create: `apps/api/scripts/lib/topic-classification.ts`
-- Create: `apps/api/scripts/lib/topic-classification.test.ts`
-- Create: `apps/api/scripts/prepare-vocab-topics.ts`
-- Create: `apps/api/scripts/run-vocab-topics-gemini.ts`
-- Create: `apps/api/scripts/merge-vocab-topics.ts`
+- Create: `apps/api/scripts/vocabulary/topic-classification/topic-classification.ts`
+- Create: `apps/api/scripts/vocabulary/topic-classification/topic-classification.test.ts`
+- Create: `apps/api/scripts/vocabulary/topic-classification/prepare-vocab-topics.ts`
+- Create: `apps/api/scripts/vocabulary/topic-classification/run-vocab-topics-gemini.ts`
+- Create: `apps/api/scripts/vocabulary/topic-classification/merge-vocab-topics.ts`
 
 **Interfaces:**
 - Produces `createClassificationPlan(catalog, batchSize)`.
@@ -220,7 +221,7 @@ The plan includes `schemaVersion: 1`, batch hashes, all record IDs, and catalog 
 - [ ] **Step 5: Run narrow tests, typecheck, and lint**
 
 ```bash
-pnpm --filter @repo/api exec tsx --test scripts/lib/topic-classification.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/topic-classification/topic-classification.test.ts
 pnpm --filter @repo/api check-types
 pnpm --filter @repo/api lint
 ```
@@ -228,7 +229,7 @@ pnpm --filter @repo/api lint
 - [ ] **Step 6: Commit**
 
 ```bash
-git add apps/api/scripts/lib/topic-classification.ts apps/api/scripts/lib/topic-classification.test.ts apps/api/scripts/prepare-vocab-topics.ts apps/api/scripts/run-vocab-topics-gemini.ts apps/api/scripts/merge-vocab-topics.ts
+git add apps/api/scripts/vocabulary/topic-classification/topic-classification.ts apps/api/scripts/vocabulary/topic-classification/topic-classification.test.ts apps/api/scripts/vocabulary/topic-classification/prepare-vocab-topics.ts apps/api/scripts/vocabulary/topic-classification/run-vocab-topics-gemini.ts apps/api/scripts/vocabulary/topic-classification/merge-vocab-topics.ts
 git commit -m "feat(data): harden vocabulary topic classification"
 ```
 
@@ -237,10 +238,10 @@ git commit -m "feat(data): harden vocabulary topic classification"
 ### Task 4: Add review-gated topic expansion
 
 **Files:**
-- Create: `apps/api/scripts/lib/topic-expansion.ts`
-- Create: `apps/api/scripts/lib/topic-expansion.test.ts`
-- Create: `apps/api/scripts/generate-topic-expansion.ts`
-- Create: `apps/api/scripts/merge-topic-expansion.ts`
+- Create: `apps/api/scripts/vocabulary/topic-expansion/topic-expansion.ts`
+- Create: `apps/api/scripts/vocabulary/topic-expansion/topic-expansion.test.ts`
+- Create: `apps/api/scripts/vocabulary/topic-expansion/generate-topic-expansion.ts`
+- Create: `apps/api/scripts/vocabulary/topic-expansion/merge-topic-expansion.ts`
 
 **Interfaces:**
 - Produces `calculateTopicDeficits(topics, catalog, minimumWords)`.
@@ -279,12 +280,12 @@ Reject duplicate `normalizedWord + pos` against either the catalog or the same a
 
 - [ ] **Step 4: Adapt expansion CLIs**
 
-`generate` defaults `VOCAB_TOPIC_MINIMUM_WORDS` to 30, writes `status: "review"`, and creates only the deficit count. `merge` requires `status: "accepted"`, validates again, backs up the catalog, and replaces it atomically.
+`generate` defaults `VOCAB_TOPIC_MINIMUM_WORDS` to 30 and `VOCAB_TOPIC_EXAMPLES_PER_WORD` to 10, writes `status: "review"`, and creates only the deficit count. Provider JSON Schema and business validation require exactly the configured number of bilingual example pairs. `merge` requires `status: "accepted"`, validates again, backs up the catalog, and replaces it atomically.
 
 - [ ] **Step 5: Run narrow and API gates**
 
 ```bash
-pnpm --filter @repo/api exec tsx --test scripts/lib/topic-expansion.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/topic-expansion/topic-expansion.test.ts
 pnpm --filter @repo/api test
 pnpm --filter @repo/api check-types
 pnpm --filter @repo/api lint
@@ -293,7 +294,7 @@ pnpm --filter @repo/api lint
 - [ ] **Step 6: Commit**
 
 ```bash
-git add apps/api/scripts/lib/topic-expansion.ts apps/api/scripts/lib/topic-expansion.test.ts apps/api/scripts/generate-topic-expansion.ts apps/api/scripts/merge-topic-expansion.ts
+git add apps/api/scripts/vocabulary/topic-expansion/topic-expansion.ts apps/api/scripts/vocabulary/topic-expansion/topic-expansion.test.ts apps/api/scripts/vocabulary/topic-expansion/generate-topic-expansion.ts apps/api/scripts/vocabulary/topic-expansion/merge-topic-expansion.ts
 git commit -m "feat(data): gate vocabulary topic expansion by review"
 ```
 
@@ -302,10 +303,10 @@ git commit -m "feat(data): gate vocabulary topic expansion by review"
 ### Task 5: Make seed consume canonical sources only
 
 **Files:**
-- Create: `apps/api/scripts/lib/vocabulary-seed-data.ts`
-- Create: `apps/api/scripts/lib/vocabulary-seed-data.test.ts`
+- Create: `apps/api/scripts/vocabulary/database/vocabulary-seed-data.ts`
+- Create: `apps/api/scripts/vocabulary/database/vocabulary-seed-data.test.ts`
 - Modify: `apps/api/scripts/seed.ts`
-- Modify: `apps/api/scripts/seed-vocab-topics.ts`
+- Modify: `apps/api/scripts/vocabulary/database/seed-vocab-topics.ts`
 - Modify: `apps/api/test/vocabulary-data-architecture.test.ts`
 
 **Interfaces:**
@@ -340,7 +341,7 @@ The loader parses both canonical JSON files, calls `assertVocabularySourcesValid
 - [ ] **Step 4: Verify without writing to the database**
 
 ```bash
-pnpm --filter @repo/api exec tsx --test scripts/lib/vocabulary-seed-data.test.ts test/vocabulary-data-architecture.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/database/vocabulary-seed-data.test.ts test/vocabulary-data-architecture.test.ts
 pnpm --filter @repo/api check-types
 pnpm --filter @repo/api lint
 ```
@@ -350,7 +351,7 @@ Do not run `db:seed` in this task.
 - [ ] **Step 5: Commit**
 
 ```bash
-git add apps/api/scripts/lib/vocabulary-seed-data.ts apps/api/scripts/lib/vocabulary-seed-data.test.ts apps/api/scripts/seed.ts apps/api/scripts/seed-vocab-topics.ts apps/api/test/vocabulary-data-architecture.test.ts
+git add apps/api/scripts/vocabulary/database/vocabulary-seed-data.ts apps/api/scripts/vocabulary/database/vocabulary-seed-data.test.ts apps/api/scripts/seed.ts apps/api/scripts/vocabulary/database/seed-vocab-topics.ts apps/api/test/vocabulary-data-architecture.test.ts
 git commit -m "refactor(data): seed vocabulary from canonical sources"
 ```
 

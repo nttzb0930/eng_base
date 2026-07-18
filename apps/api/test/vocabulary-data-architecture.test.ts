@@ -37,15 +37,83 @@ test("generated vocabulary working data is ignored", () => {
 
   assert.match(gitignore, /\/data\/vocabulary\/working\//u);
   assert.match(gitignore, /\/data\/vocabulary\/backups\//u);
+  assert.deepEqual(
+    readdirSync(vocabularyRoot)
+      .filter((name) => /report|snapshot|normalization|correction/iu.test(name))
+      .sort(),
+    [],
+  );
 });
 
 test("vocabulary scripts use canonical catalog names and lookup metadata", () => {
-  const scriptsRoot = join(apiRoot, "scripts");
-  const scriptSource = readdirSync(scriptsRoot)
+  const scriptsRoot = join(apiRoot, "scripts", "vocabulary");
+  const scriptSource = readdirSync(scriptsRoot, { recursive: true })
     .filter((name) => name.endsWith(".ts"))
     .map((name) => readFileSync(join(scriptsRoot, name), "utf8"))
     .join("\n");
 
   assert.doesNotMatch(scriptSource, /phase1-vocabulary/u);
   assert.doesNotMatch(scriptSource, /item\.enriched|enriched\?:\s*boolean/u);
+});
+
+test("vocabulary scripts are owned by explicit workflow folders", () => {
+  const scriptsRoot = join(apiRoot, "scripts");
+  const vocabularyScriptsRoot = join(scriptsRoot, "vocabulary");
+  const expectedFlows = [
+    "catalog",
+    "database",
+    "dictionary-enrichment",
+    "normalization",
+    "pos-correction",
+    "topic-classification",
+    "topic-expansion",
+  ];
+
+  for (const flow of expectedFlows) {
+    assert.equal(existsSync(join(vocabularyScriptsRoot, flow)), true, flow);
+  }
+
+  const rootVocabularyScripts = readdirSync(scriptsRoot).filter((name) =>
+    /vocab|topic/u.test(name),
+  );
+  assert.deepEqual(rootVocabularyScripts, ["vocabulary"]);
+  assert.equal(existsSync(join(scriptsRoot, "lib")), false);
+});
+
+test("database seed adapters consume canonical sources without topic declarations", () => {
+  const seedSource = [
+    readFileSync(join(apiRoot, "scripts", "seed.ts"), "utf8"),
+    readFileSync(
+      join(
+        apiRoot,
+        "scripts",
+        "vocabulary",
+        "database",
+        "seed-vocab-topics.ts",
+      ),
+      "utf8",
+    ),
+  ].join("\n");
+
+  assert.match(seedSource, /loadVocabularySeedData/u);
+  assert.doesNotMatch(seedSource, /topicDefinitions|topicsToSeed/u);
+  assert.doesNotMatch(seedSource, /daily-life|food-drink/u);
+});
+
+test("AI prompts define stable runtime contracts without duplicated taxonomy", () => {
+  const classificationPrompt = readFileSync(
+    join(vocabularyRoot, "prompts", "topic-classification.md"),
+    "utf8",
+  );
+  const expansionPrompt = readFileSync(
+    join(vocabularyRoot, "prompts", "topic-expansion.md"),
+    "utf8",
+  );
+  const prompts = `${classificationPrompt}\n${expansionPrompt}`;
+
+  assert.doesNotMatch(prompts, /\{\{/u);
+  assert.doesNotMatch(prompts, /Ã|Ä|â/u);
+  assert.doesNotMatch(classificationPrompt, /- personal-information:/u);
+  assert.match(classificationPrompt, /schemaVersion/u);
+  assert.match(expansionPrompt, /exactly 10 bilingual example pairs/iu);
 });

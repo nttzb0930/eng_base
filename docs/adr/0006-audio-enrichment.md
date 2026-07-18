@@ -16,7 +16,7 @@ Add optional pronunciation fields to `vocabulary_items`.
 - `audio_source`
 - `phonetic_source`
 
-Use `scripts/enrich-vocab-audio.ts` to fetch audio from Free Dictionary API and store the URL in PostgreSQL.
+Use `scripts/vocabulary/dictionary-enrichment/enrich-vocab-audio.ts` to fetch audio from Free Dictionary API and store the URL in PostgreSQL.
 
 ## Consequences
 

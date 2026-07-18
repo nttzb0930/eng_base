@@ -19,6 +19,12 @@ the catalog is continuously enriched and versioned by Git.
 
 Every script, seed path, test, and active document must use the canonical names.
 
+Vocabulary scripts live under `apps/api/scripts/vocabulary/<flow>/`. The flow
+owns its CLI adapters, pure helpers, and tests; a generic `scripts/lib` folder
+is forbidden. Canonical data stays at the vocabulary root, prompts and human
+reviews are versioned subfolders, and every machine-generated artifact is
+written below `working/<flow>/`.
+
 ## Vocabulary item semantics
 
 The legacy `enriched` field is renamed to
@@ -81,6 +87,9 @@ and provenance fields. It only changes the `topics` field.
 New records use `source: "ai-topic-expansion"`,
 `exampleSource: "ai-topic-expansion"`, the target topic slug, and
 `dictionaryLookupCompleted: false` until Dictionary API lookup is attempted.
+Every generated word contains exactly 10 distinct English-Vietnamese example
+pairs by default. The provider schema and the business validator both enforce
+the configured count; incomplete output is rejected rather than truncated.
 
 ## Generated artifact policy
 
@@ -91,6 +100,8 @@ Generated working files are not application inputs and are not committed:
   per-topic reports, and ad hoc subsets;
 - expansion `output/`;
 - timestamped catalog backups and temporary files.
+- normalization and POS-correction batches, proposals, reports, dry-runs,
+  previews, snapshots, and database audits.
 
 They live under `data/vocabulary/working/` or `data/vocabulary/backups/`, both
 covered by `.gitignore`. The source scripts and prompts remain versioned.
