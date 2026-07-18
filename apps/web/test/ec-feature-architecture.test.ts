@@ -73,6 +73,30 @@ test("Web default test command includes root and feature test seams", () => {
   );
 });
 
+test("active architecture docs describe the current frontend profile", () => {
+  const workspaceRoot = join(root, "..", "..");
+  const activeDocs = [
+    "AGENTS.md",
+    "CONTEXT.md",
+    "docs/architecture/codebase-structure.md",
+    "docs/frontend-api-calls.md",
+    "docs/overview.md",
+  ];
+  const staleStatements = [
+    "src/lib/web-http-client.ts",
+    "src/services/http/admin-http-client.ts",
+    "@repo/shared/courses",
+    "do not provide `packages/hooks` or `packages/ui`",
+  ];
+
+  for (const path of activeDocs) {
+    const source = readFileSync(join(workspaceRoot, path), "utf8");
+    for (const statement of staleStatements) {
+      assert.equal(source.includes(statement), false, `${path} contains stale '${statement}'`);
+    }
+  }
+});
+
 test("Web Auth follows the EC client feature profile", () => {
   for (const path of [
     "app/features/auth/api/auth.api.ts",

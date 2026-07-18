@@ -14,6 +14,7 @@ apps/
   api/                 business behavior and database ownership
 packages/
   shared/              cross-runtime TypeScript types/constants
+  ui/                  exact React primitives shared by Web and Admin
   eslint-config/       lint configuration
   typescript-config/   TypeScript configuration
 data/                  vocabulary snapshots, proposals, audits, backups
@@ -39,8 +40,8 @@ apps/web/app/features/<capability>/
   tests/
 apps/web/app/views/<resource>/
   <Resource>View.tsx     route-level screen composition
-apps/web/src/lib/
-  web-http-client.ts     retained browser transport exception
+apps/web/app/features/auth/api/
+  web-http-client.ts     learner browser/session transport
 
 apps/admin/app/features/<capability>/
   api/<resource>.api.ts  resource HTTP Interface and query keys
@@ -49,6 +50,8 @@ apps/admin/app/features/<capability>/
   tests/
 apps/admin/app/views/<resource>/
   <Resource>View.tsx     route-level screen composition
+apps/admin/app/features/auth/api/
+  admin-http-client.ts   Admin browser/session transport
 
 apps/api/src/module/<capability>/
   index.ts              public module Interface
@@ -97,7 +100,7 @@ domain layers speculatively.
 - Web and Admin route adapters import their screen from
   `@/app/views/<resource>`.
 - Web authenticated API flow is:
-  `localized route -> app/views -> app/features hook -> resource .api.ts -> src/lib/web-http-client.ts`.
+  `localized route -> app/views -> app/features hook -> resource .api.ts -> app/features/auth/api/web-http-client.ts`.
 - Web does not use authenticated Server Component HTTP. `next/headers` is
   allowed for framework-owned infrastructure such as next-intl request setup,
   not for domain data fetching.
@@ -172,9 +175,8 @@ src/repositories/<domain>
 
 These legacy paths scatter ownership. `app/views` is allowed by the EC profile
 as a thin screen-composition layer backed by `app/features`; it is not equivalent
-to legacy `src/views`. Cross-cutting framework infrastructure may remain only in
-a clearly infrastructure-owned exception, for example Admin `src/services/http`
-or Web `src/lib/web-http-client.ts`.
+to legacy `src/views`. Browser session transport is the documented Auth-owned
+infrastructure exception under each runtime's `app/features/auth/api` folder.
 
 ## Enforcement
 

@@ -40,9 +40,10 @@ apps/admin/app/features/courses/api/challenge.api.ts
 apps/admin/app/features/courses/api/challenge-option.api.ts
 ```
 
-Each module delegates bearer-token/envelope transport to the existing
-cross-cutting `src/services/http/admin-http-client.ts`, owns the Course endpoint
-strings, and types response data with declarations from `@repo/shared`.
+Each module delegates bearer-token/envelope transport to the Admin Auth-owned
+`app/features/auth/api/admin-http-client.ts`, owns the Course endpoint strings,
+and types response data with declarations from the root `@repo/shared`
+Interface.
 
 Use one API module per independently addressed resource. Do not aggregate these
 Interfaces into `course-management.client.ts` merely because they share a domain

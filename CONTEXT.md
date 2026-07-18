@@ -15,13 +15,19 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
 - **Vocabulary progress**: the learner's persistent correctness, mastery, and scheduling state for one vocabulary item.
 - **Review session**: a set of challenges composed from saved, due, or weak vocabulary items.
 - **Practice session**: a standalone activity such as fill-blank, listening, dictation, or weak-word practice.
+- **Learning session**: the Web lifecycle shared by Lesson, Practice, and Review
+  presentation: answer feedback, attempt counts, reviewed items, and one-time
+  completion recording. Each owning capability keeps its scoring, persistence
+  endpoint, and mode-specific presentation.
 - **Placement test**: an adaptive session used to estimate a learner's starting level and initialize course progress.
 - **Normalized vocabulary dataset**: the reviewed 3,000-item dataset currently stored in PostgreSQL. Changes to it require the dedicated dry-run, backup, confirmation, and audit workflow.
 - **Runtime owner**: the application responsible for an implementation. Web owns learner UI, Admin owns management UI, and API owns business behavior and database access.
 - **Authentication session**: the access-token and persisted refresh-token
   lifecycle shared by Learner and Admin login delivery. Auth owns the behavior;
   HTTP controllers own cookies.
-- **Wire contract**: the JSON-safe request or response shape shared across API, Admin, and Web. Course wire contracts are imported from `@repo/shared/courses`.
+- **Wire contract**: the JSON-safe request or response shape shared across API,
+  Admin, and Web. Consumers import its TypeScript declaration from the root
+  `@repo/shared` Interface.
 - **Persistence model**: the Prisma/database representation owned only by API. It may use database naming such as `image_src` and must be mapped to a wire contract.
 - **ViewModel**: UI-only state or enriched presentation shape owned by one frontend feature. It must not be promoted to a cross-runtime contract merely for convenience.
 
@@ -42,7 +48,8 @@ must follow the capability-first rules in `docs/architecture/codebase-structure.
   throttler storage details.
 - Shared packages must not import from applications.
 - Cross-runtime contracts belong in `packages/shared`; Nest-only DTOs and view-local state remain application-local.
-- `packages/shared` is a transitional aggregator. New contracts use capability subpaths rather than expanding the legacy root barrel; the package name remains unchanged under ADR 0011.
+- `packages/shared` is the stable TypeScript-only aggregator. Consumers use its
+  root Interface; capability subpaths are forbidden by ADR 0021.
 - Ownership is capability-first. Each runtime may select a documented filesystem
   profile; the Admin EC profile separates `app/features` behavior from
   `app/views` screen composition without changing domain ownership.
