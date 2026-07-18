@@ -221,7 +221,7 @@ test("Application consumers avoid private Shared deep imports", () => {
   const repositoryRoot = join(import.meta.dirname, "../../..");
   for (const relativeRoot of [
     "apps/api/src",
-    "apps/web/src",
+    "apps/web/app",
     "apps/admin/app",
     "apps/admin/src",
   ]) {
