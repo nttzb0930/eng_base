@@ -128,4 +128,3 @@ pnpm --filter @repo/admin build
   implementations qualify.
 - No Redis, Server Component authenticated fetching, or new state library.
 - No mass rename of routes, features, Views, DTOs, or wire fields.
-
