@@ -24,6 +24,19 @@ const resourceFiles = [
   "challenge-option.api.ts",
 ];
 
+const managementScreens = {
+  "app/views/courses/CoursesView.tsx":
+    "app/features/courses/components/CoursesManagementScreen.tsx",
+  "app/views/units/UnitsView.tsx":
+    "app/features/courses/components/UnitsManagementScreen.tsx",
+  "app/views/lessons/LessonsView.tsx":
+    "app/features/courses/components/LessonsManagementScreen.tsx",
+  "app/views/challenges/ChallengesView.tsx":
+    "app/features/courses/components/ChallengesManagementScreen.tsx",
+  "app/views/challenge-options/ChallengeOptionsView.tsx":
+    "app/features/courses/components/ChallengeOptionsManagementScreen.tsx",
+};
+
 function filesUnder(directory: string): string[] {
   if (!existsSync(directory)) return [];
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -54,6 +67,19 @@ test("course transport is split into resource api modules", () => {
     false,
     "the aggregate client must not return"
   );
+});
+
+test("course management presentation stays behind the Courses owner", () => {
+  for (const [viewPath, screenPath] of Object.entries(managementScreens)) {
+    assert.equal(existsSync(join(appRoot, screenPath)), true, `${screenPath} must exist`);
+
+    const source = readFileSync(join(appRoot, viewPath), "utf8");
+    assert.equal(source.includes("@/app/features/courses/components/"), true, viewPath);
+    assert.equal(source.includes("useState"), false, `${viewPath} owns form state`);
+    assert.equal(source.includes("useCreate"), false, `${viewPath} owns mutations`);
+    assert.equal(source.includes("useUpdate"), false, `${viewPath} owns mutations`);
+    assert.equal(source.includes("useDelete"), false, `${viewPath} owns mutations`);
+  }
 });
 
 test("course resources use TypeScript-only shared types", () => {
