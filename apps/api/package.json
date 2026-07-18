@@ -28,7 +28,6 @@
     "data:prepare-vocab-normalization": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/prepare-vocab-normalization.ts",
     "data:normalize-vocab-gemini": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/run-vocab-normalization-gemini.ts",
     "data:apply-vocab-normalization-override": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/apply-vocab-normalization-override.ts",
-    "data:apply-vocab-review-overrides": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/apply-vocab-review-overrides.ts",
     "data:merge-vocab-normalization": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/merge-vocab-normalization.ts",
     "data:sync-vocab-normalization": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/sync-vocab-normalization-to-db.ts",
     "data:prepare-vocab-pos-correction": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/pos-correction/prepare-vocab-pos-correction.ts",
