@@ -7,7 +7,7 @@
     "start:dev": "dotenv -e ../../.env -- nest start --watch",
     "start": "dotenv -e ../../.env -- node dist/main.js",
     "build": "nest build",
-    "architecture:check": "tsx --test test/api-source-architecture.test.ts test/auth-source-architecture.test.ts test/domain-ownership-architecture.test.ts test/environment-ownership.architecture.test.ts test/learning-goals-architecture.test.ts && eslint src/common src/module/user src/module/practice src/module/settings src/module/courses src/module/progress src/module/placement-test --max-warnings=0",
+    "architecture:check": "tsx --test test/api-source-architecture.test.ts test/auth-source-architecture.test.ts test/docker-architecture.test.ts test/domain-ownership-architecture.test.ts test/environment-ownership.architecture.test.ts test/learning-goals-architecture.test.ts && eslint src/common src/module/user src/module/practice src/module/settings src/module/courses src/module/progress src/module/placement-test --max-warnings=0",
     "test": "tsx --test \"src/**/*.test.ts\" \"src/**/*.spec.ts\" \"test/**/*.test.ts\"",
     "lint": "eslint src scripts --max-warnings=0",
     "check-types": "tsc --noEmit",
