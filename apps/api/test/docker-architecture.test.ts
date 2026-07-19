@@ -44,3 +44,48 @@ test("Docker context excludes secrets and generated output but keeps canonical d
   assert.doesNotMatch(source, /data\/vocabulary\/vocabulary-catalog\.json/u);
   assert.doesNotMatch(source, /data\/vocabulary\/prompts/u);
 });
+
+for (const frontend of [
+  { name: "web", port: 3000 },
+  { name: "admin", port: 3001 },
+]) {
+  test(`${frontend.name} Dockerfile defines a standalone non-root image`, () => {
+    const applicationRoot = join(workspaceRoot, `apps/${frontend.name}`);
+    const dockerfilePath = join(applicationRoot, "Dockerfile");
+    assert.equal(existsSync(dockerfilePath), true);
+
+    const source = readFileSync(dockerfilePath, "utf8");
+    assert.match(source, /FROM node:22(?:\.[0-9]+)*(?:-alpine)?/u);
+    assert.match(source, /corepack enable/u);
+    assert.match(source, /pnpm install --frozen-lockfile/u);
+    assert.match(
+      source,
+      new RegExp(`pnpm --filter @repo/${frontend.name} build`, "u")
+    );
+    assert.match(source, /COPY --from=builder .*\.next\/standalone/u);
+    assert.match(source, /COPY --from=builder .*\.next\/static/u);
+    assert.match(source, /USER (?:node|[1-9][0-9]*)/u);
+    assert.match(source, new RegExp(`EXPOSE ${frontend.port}`, "u"));
+    assert.match(source, /CMD \["node", "server\.js"\]/u);
+
+    const arguments_ = [...source.matchAll(/^ARG\s+([A-Z0-9_]+)/gmu)].map(
+      (match) => match[1]
+    );
+    assert.deepEqual(arguments_.sort(), [
+      "NEXT_PUBLIC_API_URL",
+      "NEXT_PUBLIC_APP_NAME",
+      "NEXT_PUBLIC_APP_URL",
+    ]);
+
+    const nextConfig = readFileSync(
+      join(applicationRoot, "next.config.ts"),
+      "utf8"
+    );
+    assert.match(nextConfig, /output:\s*["']standalone["']/u);
+    assert.match(nextConfig, /outputFileTracingRoot/u);
+    assert.match(
+      nextConfig,
+      /transpilePackages:\s*\[[^\]]*"@repo\/shared"[^\]]*"@repo\/ui"/su
+    );
+  });
+}

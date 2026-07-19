@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
+import path from "node:path";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@repo/shared"],
+  output: "standalone",
+  outputFileTracingRoot: path.join(import.meta.dirname, "../.."),
+  transpilePackages: ["@repo/shared", "@repo/ui"],
 };
 
 export default nextConfig;
