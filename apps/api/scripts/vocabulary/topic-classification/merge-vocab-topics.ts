@@ -1,13 +1,14 @@
 import { access, copyFile, mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { isDeepStrictEqual } from "node:util";
 
 import {
   createClassificationPlan,
   mergeClassifications,
   validateClassificationResults,
-  type ClassificationOutput,
   type ClassificationPlan,
 } from "./topic-classification.js";
+import { collectClassificationOutputs } from "./topic-classification-merge.js";
 import {
   assertVocabularySourcesValid,
   type VocabularyCatalogItem,
@@ -18,8 +19,13 @@ const repositoryRoot = path.resolve(process.cwd(), "../..");
 const vocabularyRoot = path.join(repositoryRoot, "data/vocabulary");
 const catalogPath = path.join(vocabularyRoot, "vocabulary-catalog.json");
 const topicsPath = path.join(vocabularyRoot, "topics.json");
+const promptPath = path.join(
+  vocabularyRoot,
+  "prompts/topic-classification.md",
+);
 const workingRoot = path.join(vocabularyRoot, "working/topic-classification");
 const outputRoot = path.join(workingRoot, "output");
+const rejectedRoot = path.join(workingRoot, "rejected");
 const manifestPath = path.join(workingRoot, "manifest.json");
 const backupRoot = path.join(vocabularyRoot, "backups");
 const checkOnly = process.argv.slice(2).includes("--check");
@@ -37,31 +43,49 @@ const exists = async (filePath: string) => {
 };
 
 async function main() {
-  const [catalog, topics, plan] = await Promise.all([
+  const [catalog, topics, plan, prompt] = await Promise.all([
     readJson<VocabularyCatalogItem[]>(catalogPath),
     readJson<VocabularyTopicDefinition[]>(topicsPath),
     readJson<ClassificationPlan>(manifestPath),
+    readFile(promptPath, "utf8"),
   ]);
   assertVocabularySourcesValid(topics, catalog);
 
-  const currentPlan = createClassificationPlan(catalog, plan.batchSize);
-  if (currentPlan.catalogSha256 !== plan.catalogSha256) {
-    throw new Error("Classification manifest does not match the canonical catalog");
+  const currentPlan = createClassificationPlan(catalog, plan.batchSize, {
+    topics,
+    prompt,
+  });
+  if (!isDeepStrictEqual(currentPlan, plan)) {
+    throw new Error(
+      "Classification manifest does not match canonical catalog, taxonomy, or prompt",
+    );
   }
 
-  const outputs: ClassificationOutput[] = [];
+  const artifacts: unknown[] = [];
+  const rejectedBatchIds = new Set<string>();
   for (const batch of plan.batches) {
     const outputPath = path.join(outputRoot, batch.outputFile);
-    if (!(await exists(outputPath))) continue;
-    const output = await readJson<{ records: ClassificationOutput["records"] }>(
-      outputPath,
-    );
-    outputs.push({ batchId: batch.batchId, records: output.records });
+    if (await exists(outputPath)) {
+      artifacts.push(await readJson<unknown>(outputPath));
+    }
+    if (await exists(path.join(rejectedRoot, batch.outputFile))) {
+      rejectedBatchIds.add(batch.batchId);
+    }
+  }
+
+  const collection = collectClassificationOutputs({
+    plan,
+    artifacts,
+    rejectedBatchIds,
+    topicSlugs: new Set(topics.map((topic) => topic.slug)),
+  });
+  if (collection.errors.length > 0) {
+    throw new Error(collection.errors.join("\n"));
   }
 
   const validation = validateClassificationResults(
     plan,
-    outputs,
+    collection.outputs,
     new Set(topics.map((topic) => topic.slug)),
   );
   if (validation.errors.length > 0) {

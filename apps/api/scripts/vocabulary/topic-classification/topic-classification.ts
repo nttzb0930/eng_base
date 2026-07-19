@@ -1,6 +1,9 @@
 import { createHash } from "node:crypto";
 
-import type { VocabularyCatalogItem } from "../catalog/vocabulary-catalog.js";
+import type {
+  VocabularyCatalogItem,
+  VocabularyTopicDefinition,
+} from "../catalog/vocabulary-catalog.js";
 
 export type ClassificationInputRecord = {
   id: number;
@@ -19,8 +22,10 @@ export type ClassificationBatch = {
 };
 
 export type ClassificationPlan = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   catalogSha256: string;
+  topicTaxonomySha256: string;
+  promptSha256: string;
   totalRecords: number;
   batchSize: number;
   batches: ClassificationBatch[];
@@ -49,6 +54,10 @@ export const sha256 = (value: unknown) =>
 export function createClassificationPlan(
   catalog: VocabularyCatalogItem[],
   batchSize: number,
+  sources: {
+    topics: VocabularyTopicDefinition[];
+    prompt: string;
+  },
 ): ClassificationPlan {
   if (!Number.isInteger(batchSize) || batchSize < 1) {
     throw new Error("Classification batch size must be a positive integer");
@@ -76,8 +85,10 @@ export function createClassificationPlan(
   }
 
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     catalogSha256: sha256(catalog),
+    topicTaxonomySha256: sha256(sources.topics),
+    promptSha256: sha256(sources.prompt),
     totalRecords: records.length,
     batchSize,
     batches,
@@ -163,8 +174,10 @@ export function validateClassificationBatchResponse(
 ): ClassificationValidationResult {
   return validateClassificationResults(
     {
-      schemaVersion: 1,
+      schemaVersion: 2,
       catalogSha256: "single-batch-validation",
+      topicTaxonomySha256: "single-batch-validation",
+      promptSha256: "single-batch-validation",
       totalRecords: batch.records.length,
       batchSize: batch.records.length,
       batches: [batch],

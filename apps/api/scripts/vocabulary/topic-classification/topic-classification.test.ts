@@ -10,6 +10,25 @@ import {
 } from "./topic-classification.js";
 import type { VocabularyCatalogItem } from "../catalog/vocabulary-catalog.js";
 
+const planningSources = {
+  topics: [
+    {
+      slug: "airport",
+      title: "Airport",
+      titleVi: "Sân bay",
+      description: "Airport vocabulary.",
+      descriptionVi: "Từ vựng dùng tại sân bay.",
+      order: 1,
+      group: "Travel",
+      groupVi: "Du lịch",
+    },
+  ],
+  prompt: "Classify every record.",
+};
+
+const createPlan = (items = catalog, batchSize = 2) =>
+  createClassificationPlan(items, batchSize, planningSources);
+
 const item = (word: string): VocabularyCatalogItem => ({
   word,
   normalizedWord: word.toLowerCase(),
@@ -25,7 +44,7 @@ const item = (word: string): VocabularyCatalogItem => ({
 const catalog = [item("Airport"), item("Hotel"), item("Passport")];
 
 test("classification batches keep stable one-based record IDs", () => {
-  const plan = createClassificationPlan(catalog, 2);
+  const plan = createPlan();
 
   assert.deepEqual(
     plan.batches.map((batch) => batch.records.map((record) => record.id)),
@@ -38,14 +57,34 @@ test("classification batches keep stable one-based record IDs", () => {
 });
 
 test("classification planning is deterministic", () => {
-  assert.deepEqual(
-    createClassificationPlan(catalog, 2),
-    createClassificationPlan(catalog, 2),
+  assert.deepEqual(createPlan(), createPlan());
+});
+
+test("classification plan fingerprints catalog taxonomy and prompt", () => {
+  const plan = createPlan();
+
+  assert.equal(plan.schemaVersion, 2);
+  assert.match(plan.catalogSha256, /^[a-f0-9]{64}$/u);
+  assert.match(plan.topicTaxonomySha256, /^[a-f0-9]{64}$/u);
+  assert.match(plan.promptSha256, /^[a-f0-9]{64}$/u);
+  assert.notEqual(
+    plan.topicTaxonomySha256,
+    createClassificationPlan(catalog, 2, {
+      ...planningSources,
+      topics: [{ ...planningSources.topics[0]!, titleVi: "Phi trường" }],
+    }).topicTaxonomySha256,
+  );
+  assert.notEqual(
+    plan.promptSha256,
+    createClassificationPlan(catalog, 2, {
+      ...planningSources,
+      prompt: "Changed prompt.",
+    }).promptSha256,
   );
 });
 
 test("classification validation rejects duplicated and unknown record IDs", () => {
-  const plan = createClassificationPlan(catalog, 2);
+  const plan = createPlan();
   const outputs: ClassificationOutput[] = [
     {
       batchId: "batch-001",
@@ -70,7 +109,7 @@ test("classification validation rejects duplicated and unknown record IDs", () =
 });
 
 test("classification validation rejects unknown and multiple topics", () => {
-  const plan = createClassificationPlan([catalog[0]!], 50);
+  const plan = createPlan([catalog[0]!], 50);
   const result = validateClassificationResults(
     plan,
     [
@@ -87,7 +126,7 @@ test("classification validation rejects unknown and multiple topics", () => {
 });
 
 test("provider batch response fails closed instead of filtering invalid output", () => {
-  const batch = createClassificationPlan(catalog.slice(0, 2), 50).batches[0]!;
+  const batch = createPlan(catalog.slice(0, 2), 50).batches[0]!;
   const result = validateClassificationBatchResponse(
     batch,
     [{ id: 1, topics: ["missing"] }],
