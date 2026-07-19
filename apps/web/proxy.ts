@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { defaultLocale, isLocale } from "@/app/i18n/config";
 import { shouldSkipLocalePrefix } from "@/app/i18n/paths";
+import { LOCALE_REQUEST_HEADER } from "@/app/i18n/request-header";
 
 const publicRoutes = [
   /^\/$/,
@@ -60,7 +61,7 @@ export function proxy(request: NextRequest) {
   // 3. Set header for next-intl locale context
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set(
-    "x-lingo-locale",
+    LOCALE_REQUEST_HEADER,
     isLocale(firstSegment) ? firstSegment : defaultLocale
   );
 

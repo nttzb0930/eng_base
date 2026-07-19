@@ -41,3 +41,21 @@ test("frontend identity follows runtime ownership without legacy branding", () =
 
   assert.deepEqual(offenders, []);
 });
+
+test("Web locale transport uses one neutral request-header contract", () => {
+  const localeHeaderPath = join(webRoot, "app/i18n/request-header.ts");
+  const proxySource = readFileSync(join(webRoot, "proxy.ts"), "utf8");
+  const requestSource = readFileSync(
+    join(webRoot, "app/i18n/request.ts"),
+    "utf8"
+  );
+
+  assert.equal(existsSync(localeHeaderPath), true);
+  assert.match(
+    readFileSync(localeHeaderPath, "utf8"),
+    /LOCALE_REQUEST_HEADER\s*=\s*["']x-app-locale["']/u
+  );
+  assert.match(proxySource, /requestHeaders\.set\(\s*LOCALE_REQUEST_HEADER/u);
+  assert.match(requestSource, /\.get\(LOCALE_REQUEST_HEADER\)/u);
+  assert.doesNotMatch(`${proxySource}\n${requestSource}`, /x-lingo-locale/iu);
+});
