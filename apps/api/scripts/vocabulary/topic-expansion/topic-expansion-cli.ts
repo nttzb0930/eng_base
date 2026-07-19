@@ -1,9 +1,17 @@
-import type { TopicDeficit } from "./topic-expansion.js";
-import type { VocabularyTopicDefinition } from "../catalog/vocabulary-catalog.js";
+import type {
+  TopicDeficit,
+  TopicExpansionArtifact,
+} from "./topic-expansion.js";
+import type {
+  VocabularyCatalogItem,
+  VocabularyTopicDefinition,
+} from "../catalog/vocabulary-catalog.js";
 
 export type TopicExpansionArguments = {
   json: boolean;
   topicSlug: string | null;
+  chunks: number;
+  chunkSize: number | null;
 };
 
 export type TopicDeficitReportEntry = TopicDeficit & {
@@ -58,16 +66,38 @@ export type TopicExpansionEvent = {
   chunked?: boolean;
 };
 
+export type TopicExpansionExclusionWord = {
+  word: string;
+  pos: string;
+};
+
 export function parseTopicExpansionArguments(
   args: string[]
 ): TopicExpansionArguments {
   let json = false;
+  let chunks = 1;
+  let chunkSize: number | null = null;
   const topicSlugs: string[] = [];
 
-  for (const argument of args) {
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
     if (argument === "--") continue;
     if (argument === "--json") {
       json = true;
+      continue;
+    }
+    if (argument === "--chunks") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunks requires a value");
+      chunks = parsePositiveIntegerFlag("--chunks", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--chunk-size") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunk-size requires a value");
+      chunkSize = parsePositiveIntegerFlag("--chunk-size", value);
+      index += 1;
       continue;
     }
     if (argument.startsWith("--")) {
@@ -80,7 +110,7 @@ export function parseTopicExpansionArguments(
     throw new Error("Topic expansion accepts at most one Topic slug");
   }
 
-  return { json, topicSlug: topicSlugs[0] ?? null };
+  return { json, topicSlug: topicSlugs[0] ?? null, chunks, chunkSize };
 }
 
 export function resolveTopicExpansionRequest(
@@ -110,6 +140,57 @@ export function formatTopicExpansionEvent(
     .filter(([key, value]) => key !== "event" && value !== undefined)
     .map(([key, value]) => `${key}=${String(value)}`);
   return `[${event.event}] ${fields.join(" ")}`;
+}
+
+export function formatTopicExpansionChunkFileName(chunkNumber: number): string {
+  if (!Number.isInteger(chunkNumber) || chunkNumber < 1) {
+    throw new Error("Topic expansion chunk number must be a positive integer");
+  }
+  return `chunk-${String(chunkNumber).padStart(3, "0")}.json`;
+}
+
+export function getNextTopicExpansionChunkNumber(fileNames: string[]): number {
+  const chunkNumbers = fileNames
+    .map((fileName) => /^chunk-(\d{3})\.json$/u.exec(fileName)?.[1])
+    .filter((value): value is string => value !== undefined)
+    .map((value) => Number.parseInt(value, 10));
+  return Math.max(0, ...chunkNumbers) + 1;
+}
+
+export function createTopicExpansionExclusionWords(input: {
+  topicSlug: string;
+  catalog: VocabularyCatalogItem[];
+  pendingArtifacts: TopicExpansionArtifact[];
+  generatedInThisRun: VocabularyCatalogItem[];
+}): TopicExpansionExclusionWord[] {
+  const exclusions: TopicExpansionExclusionWord[] = [];
+  const seen = new Set<string>();
+  const add = (word: Partial<VocabularyCatalogItem>) => {
+    const normalizedWord =
+      typeof word.normalizedWord === "string" && word.normalizedWord.trim()
+        ? word.normalizedWord.trim().toLowerCase()
+        : typeof word.word === "string"
+          ? word.word.trim().toLowerCase()
+          : "";
+    const pos =
+      typeof word.pos === "string" ? word.pos.trim().toLowerCase() : "";
+    if (!normalizedWord || !pos) return;
+    const identity = `${normalizedWord}|${pos}`;
+    if (seen.has(identity)) return;
+    seen.add(identity);
+    exclusions.push({ word: normalizedWord, pos });
+  };
+
+  for (const word of input.catalog) {
+    if ((word.topics ?? []).includes(input.topicSlug)) add(word);
+  }
+  for (const artifact of input.pendingArtifacts) {
+    if (artifact.targetTopicSlug !== input.topicSlug) continue;
+    for (const word of artifact.words) add(word);
+  }
+  for (const word of input.generatedInThisRun) add(word);
+
+  return exclusions;
 }
 
 export function createTopicDeficitReport(input: {
@@ -241,3 +322,11 @@ export function formatGenerationCreated(
 }
 
 const formatNumber = (value: number) => value.toLocaleString("en-US");
+
+const parsePositiveIntegerFlag = (flag: string, value: string): number => {
+  const parsed = Number.parseInt(value, 10);
+  if (!Number.isInteger(parsed) || parsed < 1 || String(parsed) !== value) {
+    throw new Error(`${flag} must be a positive integer`);
+  }
+  return parsed;
+};

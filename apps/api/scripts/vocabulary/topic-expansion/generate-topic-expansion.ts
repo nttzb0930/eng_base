@@ -1,15 +1,25 @@
 import "dotenv/config";
 
 import { GoogleGenAI } from "@google/genai";
-import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import {
+  mkdir,
+  readFile,
+  readdir,
+  rename,
+  rm,
+  writeFile,
+} from "node:fs/promises";
 import path from "node:path";
 
 import {
+  createTopicExpansionExclusionWords,
   createTopicDeficitReport,
+  formatTopicExpansionChunkFileName,
   formatGenerationCreated,
   formatGenerationStart,
   formatTopicDeficitReport,
   formatTopicExpansionEvent,
+  getNextTopicExpansionChunkNumber,
   parseTopicExpansionArguments,
   resolveTopicExpansionRequest,
 } from "./topic-expansion-cli.js";
@@ -64,6 +74,28 @@ const startedAt = Date.now();
 
 const readJson = async <T>(filePath: string) =>
   JSON.parse(await readFile(filePath, "utf8")) as T;
+
+const readJsonIfExists = async <T>(filePath: string): Promise<T | null> => {
+  try {
+    return await readJson<T>(filePath);
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return null;
+    }
+    throw error;
+  }
+};
+
+const readDirIfExists = async (directoryPath: string): Promise<string[]> => {
+  try {
+    return await readdir(directoryPath);
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return [];
+    }
+    throw error;
+  }
+};
 
 const writeJsonAtomically = async (targetPath: string, value: unknown) => {
   const temporaryPath = `${targetPath}.${process.pid}.tmp`;
@@ -245,123 +277,191 @@ async function main() {
     throw new Error(`Topic "${arguments_.topicSlug}" has no expansion deficit`);
   }
   const topic = topics.find((entry) => entry.slug === arguments_.topicSlug)!;
-  const expansionRequest = resolveTopicExpansionRequest(deficit, chunkSize);
+  const effectiveChunkSize = arguments_.chunkSize ?? chunkSize;
+  const queueMode = arguments_.chunks > 1 || arguments_.chunkSize !== null;
+  const topicOutputRoot = path.join(outputRoot, topic.slug);
+  const queueFileNames = await readDirIfExists(topicOutputRoot);
+  const pendingQueueArtifacts = (
+    await Promise.all(
+      queueFileNames
+        .filter((fileName) => /^chunk-\d{3}\.json$/u.test(fileName))
+        .sort()
+        .map((fileName) =>
+          readJson<TopicExpansionArtifact>(path.join(topicOutputRoot, fileName))
+        )
+    )
+  ).filter((artifact) => artifact.targetTopicSlug === topic.slug);
+  const legacyArtifact = await readJsonIfExists<TopicExpansionArtifact>(
+    path.join(outputRoot, `${topic.slug}.json`)
+  );
+  const pendingArtifacts =
+    legacyArtifact?.targetTopicSlug === topic.slug
+      ? [legacyArtifact, ...pendingQueueArtifacts]
+      : pendingQueueArtifacts;
+  const pendingWordCount = pendingArtifacts.reduce(
+    (total, artifact) => total + artifact.words.length,
+    0
+  );
+  const generatedInThisRun: VocabularyCatalogItem[] = [];
+  const generatedChunkFileNames: string[] = [];
   const emitDebug = (
     event: Parameters<typeof formatTopicExpansionEvent>[0]
   ) => {
     if (!debugEnabled) return;
     console.log(formatTopicExpansionEvent(event, arguments_.json));
   };
-  const existingWords = catalog
-    .filter((item) => (item.topics ?? []).includes(topic.slug))
-    .map((item) => ({ word: item.word, pos: item.pos }));
 
-  emitDebug({
-    event: "run-start",
-    topic: topic.slug,
-    durationMs: Date.now() - startedAt,
-    requestedWords: expansionRequest.requestedWords,
-    totalMissingWords: expansionRequest.totalMissingWords,
-    chunkSize: expansionRequest.chunkSize,
-    chunked: expansionRequest.chunked,
-  });
-
-  if (arguments_.json) {
-    console.log(
-      JSON.stringify({
-        event: "generation-start",
-        topic: topic.slug,
-        requestedWords: expansionRequest.requestedWords,
-        totalMissingWords: expansionRequest.totalMissingWords,
-        chunkSize: expansionRequest.chunkSize,
-        chunked: expansionRequest.chunked,
-      })
+  for (let chunkIndex = 0; chunkIndex < arguments_.chunks; chunkIndex += 1) {
+    const remainingDeficit = {
+      ...deficit,
+      requestedCount: Math.max(
+        0,
+        deficit.requestedCount - pendingWordCount - generatedInThisRun.length
+      ),
+    };
+    if (remainingDeficit.requestedCount < 1) break;
+    const expansionRequest = resolveTopicExpansionRequest(
+      remainingDeficit,
+      effectiveChunkSize
     );
-  } else {
-    console.log(formatGenerationStart(topic, expansionRequest.requestedWords));
-  }
+    const existingWords = createTopicExpansionExclusionWords({
+      topicSlug: topic.slug,
+      catalog,
+      pendingArtifacts,
+      generatedInThisRun,
+    });
 
-  const providerStartedAt = Date.now();
-  emitDebug({
-    event: "provider-request-start",
-    topic: topic.slug,
-    durationMs: providerStartedAt - startedAt,
-    requestedWords: expansionRequest.requestedWords,
-  });
-  const generatedWords = await generate(
-    systemInstruction,
-    `Generate exactly ${expansionRequest.requestedWords} new words for this topic:\n${JSON.stringify(
-      topic
-    )}\n\nDo not duplicate these existing words:\n${JSON.stringify(existingWords)}`
-  );
-  emitDebug({
-    event: "provider-response-received",
-    topic: topic.slug,
-    durationMs: Date.now() - providerStartedAt,
-    generatedWords: generatedWords.length,
-  });
-  const words: VocabularyCatalogItem[] = generatedWords.map((word) => ({
-    ...word,
-    source: "ai-topic-expansion",
-    exampleSource: "ai-topic-expansion",
-    dictionaryLookupCompleted: false,
-    topics: [topic.slug],
-  }));
-  const artifact: TopicExpansionArtifact = {
-    schemaVersion: 1,
-    status: "review",
-    targetTopicSlug: topic.slug,
-    requestedCount: expansionRequest.requestedWords,
-    examplesPerWord: 10,
-    generatedAt: new Date().toISOString(),
-    words,
-  };
-  const validationStartedAt = Date.now();
-  emitDebug({
-    event: "validation-start",
-    topic: topic.slug,
-    durationMs: validationStartedAt - startedAt,
-    generatedWords: words.length,
-  });
-  const validation = validateExpansionArtifact(catalog, artifact, topics);
-  if (validation.errors.length > 0) {
     emitDebug({
-      event: "validation-failed",
+      event: "run-start",
+      topic: topic.slug,
+      durationMs: Date.now() - startedAt,
+      requestedWords: expansionRequest.requestedWords,
+      totalMissingWords: expansionRequest.totalMissingWords,
+      chunkSize: expansionRequest.chunkSize,
+      chunked: expansionRequest.chunked,
+    });
+
+    if (arguments_.json) {
+      console.log(
+        JSON.stringify({
+          event: "generation-start",
+          topic: topic.slug,
+          requestedWords: expansionRequest.requestedWords,
+          totalMissingWords: expansionRequest.totalMissingWords,
+          chunkSize: expansionRequest.chunkSize,
+          chunked: expansionRequest.chunked,
+        })
+      );
+    } else {
+      console.log(
+        formatGenerationStart(topic, expansionRequest.requestedWords)
+      );
+    }
+
+    const providerStartedAt = Date.now();
+    emitDebug({
+      event: "provider-request-start",
+      topic: topic.slug,
+      durationMs: providerStartedAt - startedAt,
+      requestedWords: expansionRequest.requestedWords,
+    });
+    const generatedWords = await generate(
+      systemInstruction,
+      `Generate exactly ${expansionRequest.requestedWords} new words for this topic:\n${JSON.stringify(
+        topic
+      )}\n\nDo not duplicate these existing words:\n${JSON.stringify(existingWords)}`
+    );
+    emitDebug({
+      event: "provider-response-received",
+      topic: topic.slug,
+      durationMs: Date.now() - providerStartedAt,
+      generatedWords: generatedWords.length,
+    });
+    const words: VocabularyCatalogItem[] = generatedWords.map((word) => ({
+      ...word,
+      source: "ai-topic-expansion",
+      exampleSource: "ai-topic-expansion",
+      dictionaryLookupCompleted: false,
+      topics: [topic.slug],
+    }));
+    const artifact: TopicExpansionArtifact = {
+      schemaVersion: 1,
+      status: "review",
+      targetTopicSlug: topic.slug,
+      requestedCount: expansionRequest.requestedWords,
+      examplesPerWord: 10,
+      generatedAt: new Date().toISOString(),
+      words,
+    };
+    const validationStartedAt = Date.now();
+    emitDebug({
+      event: "validation-start",
+      topic: topic.slug,
+      durationMs: validationStartedAt - startedAt,
+      generatedWords: words.length,
+    });
+    const duplicateGuardCatalog = [
+      ...catalog,
+      ...pendingArtifacts.flatMap((pendingArtifact) => pendingArtifact.words),
+      ...generatedInThisRun,
+    ];
+    const validation = validateExpansionArtifact(
+      duplicateGuardCatalog,
+      artifact,
+      topics
+    );
+    if (validation.errors.length > 0) {
+      emitDebug({
+        event: "validation-failed",
+        topic: topic.slug,
+        durationMs: Date.now() - validationStartedAt,
+        errorCount: validation.errors.length,
+      });
+      throw new Error(validation.errors.join("\n"));
+    }
+    emitDebug({
+      event: "validation-success",
       topic: topic.slug,
       durationMs: Date.now() - validationStartedAt,
-      errorCount: validation.errors.length,
+      generatedWords: words.length,
     });
-    throw new Error(validation.errors.join("\n"));
-  }
-  emitDebug({
-    event: "validation-success",
-    topic: topic.slug,
-    durationMs: Date.now() - validationStartedAt,
-    generatedWords: words.length,
-  });
 
-  const outputPath = path.join(outputRoot, `${topic.slug}.json`);
-  await writeJsonAtomically(outputPath, artifact);
-  emitDebug({
-    event: "artifact-written",
-    topic: topic.slug,
-    durationMs: Date.now() - startedAt,
-    generatedWords: words.length,
-    outputPath,
-  });
+    const outputPath = queueMode
+      ? path.join(
+          topicOutputRoot,
+          formatTopicExpansionChunkFileName(
+            getNextTopicExpansionChunkNumber([
+              ...queueFileNames,
+              ...generatedChunkFileNames,
+            ])
+          )
+        )
+      : path.join(outputRoot, `${topic.slug}.json`);
+    if (queueMode) await mkdir(topicOutputRoot, { recursive: true });
+    await writeJsonAtomically(outputPath, artifact);
+    generatedChunkFileNames.push(path.basename(outputPath));
+    generatedInThisRun.push(...words);
+    emitDebug({
+      event: "artifact-written",
+      topic: topic.slug,
+      durationMs: Date.now() - startedAt,
+      generatedWords: words.length,
+      outputPath,
+    });
 
-  if (arguments_.json) {
-    console.log(
-      JSON.stringify({
-        event: "generation-created-for-review",
-        topic: topic.slug,
-        generatedWords: words.length,
-        outputPath,
-        databaseUpdated: false,
-      })
-    );
-  } else {
-    console.log(formatGenerationCreated(topic, words.length, outputPath));
+    if (arguments_.json) {
+      console.log(
+        JSON.stringify({
+          event: "generation-created-for-review",
+          topic: topic.slug,
+          generatedWords: words.length,
+          outputPath,
+          databaseUpdated: false,
+        })
+      );
+    } else {
+      console.log(formatGenerationCreated(topic, words.length, outputPath));
+    }
   }
 }
 

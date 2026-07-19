@@ -11,10 +11,13 @@ import {
 } from "./topic-expansion.js";
 import {
   createTopicDeficitReport,
+  createTopicExpansionExclusionWords,
   formatGenerationCreated,
   formatGenerationStart,
+  formatTopicExpansionChunkFileName,
   formatTopicDeficitReport,
   formatTopicExpansionEvent,
+  getNextTopicExpansionChunkNumber,
   parseTopicExpansionArguments,
   resolveTopicExpansionRequest,
 } from "./topic-expansion-cli.js";
@@ -219,10 +222,28 @@ test("Topic expansion arguments accept pnpm delimiter and JSON mode", () => {
   assert.deepEqual(parseTopicExpansionArguments(["--", "--json"]), {
     json: true,
     topicSlug: null,
+    chunks: 1,
+    chunkSize: null,
   });
   assert.deepEqual(
     parseTopicExpansionArguments(["--", "transportation", "--json"]),
-    { json: true, topicSlug: "transportation" }
+    { json: true, topicSlug: "transportation", chunks: 1, chunkSize: null }
+  );
+  assert.deepEqual(
+    parseTopicExpansionArguments([
+      "--",
+      "artificial-intelligence",
+      "--chunks",
+      "10",
+      "--chunk-size",
+      "5",
+    ]),
+    {
+      json: false,
+      topicSlug: "artificial-intelligence",
+      chunks: 10,
+      chunkSize: 5,
+    }
   );
 });
 
@@ -234,6 +255,14 @@ test("Topic expansion arguments reject unknown flags and multiple slugs", () => 
   assert.throws(
     () => parseTopicExpansionArguments(["airport", "hotel"]),
     /accepts at most one Topic slug/u
+  );
+  assert.throws(
+    () => parseTopicExpansionArguments(["airport", "--chunks", "0"]),
+    /--chunks must be a positive integer/u
+  );
+  assert.throws(
+    () => parseTopicExpansionArguments(["airport", "--chunk-size"]),
+    /--chunk-size requires a value/u
   );
 });
 
@@ -369,6 +398,56 @@ test("Topic expansion debug events are bounded and support JSONL", () => {
   );
 });
 
+test("Topic expansion queue helpers name chunks and find the next slot", () => {
+  assert.equal(formatTopicExpansionChunkFileName(1), "chunk-001.json");
+  assert.equal(formatTopicExpansionChunkFileName(12), "chunk-012.json");
+  assert.equal(
+    getNextTopicExpansionChunkNumber([
+      "chunk-001.json",
+      "chunk-003.json",
+      "notes.txt",
+    ]),
+    4
+  );
+});
+
+test("Topic expansion exclusions include catalog pending and in-run words", () => {
+  const pending = artifact("review");
+  pending.words = [
+    {
+      ...generated,
+      word: "pending term",
+      normalizedWord: "pending term",
+      pos: "noun",
+    },
+  ];
+  const exclusions = createTopicExpansionExclusionWords({
+    topicSlug: "airport",
+    catalog: [
+      item(1),
+      { ...item(2), topics: ["hotel"] },
+      { ...item(3), word: "Duplicate", normalizedWord: "duplicate" },
+    ],
+    pendingArtifacts: [pending],
+    generatedInThisRun: [
+      { ...generated, word: "In Run", normalizedWord: "in run", pos: "noun" },
+      {
+        ...generated,
+        word: "Duplicate",
+        normalizedWord: "duplicate",
+        pos: "noun",
+      },
+    ],
+  });
+
+  assert.deepEqual(exclusions, [
+    { word: "airport word 1", pos: "noun" },
+    { word: "duplicate", pos: "noun" },
+    { word: "pending term", pos: "noun" },
+    { word: "in run", pos: "noun" },
+  ]);
+});
+
 test("Topic expansion generator exposes report artifact and JSON mode", async () => {
   const source = await readFile(
     path.resolve(
@@ -389,8 +468,26 @@ test("Topic expansion generator exposes report artifact and JSON mode", async ()
   assert.match(source, /validation-success/u);
   assert.match(source, /validation-failed/u);
   assert.match(source, /artifact-written/u);
+  assert.match(source, /createTopicExpansionExclusionWords/u);
+  assert.match(source, /getNextTopicExpansionChunkNumber/u);
+  assert.match(source, /arguments_\.chunks/u);
+  assert.match(source, /duplicateGuardCatalog/u);
   assert.doesNotMatch(
     source,
     /console\.log\(\s*JSON\.stringify\(\{\s*action:\s*"vocabulary-topic-expansion-deficits"/su
   );
+});
+
+test("Topic expansion merge exposes all accepted chunk mode", async () => {
+  const source = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/merge-topic-expansion.ts"
+    ),
+    "utf8"
+  );
+
+  assert.match(source, /--all-accepted/u);
+  assert.match(source, /chunk-\\d\{3\}\\\.json/u);
+  assert.match(source, /vocabulary-topic-expansion-chunks-merged/u);
 });

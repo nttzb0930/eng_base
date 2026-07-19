@@ -253,6 +253,28 @@ and merge that artifact, then run the same Topic again to create the next chunk.
 This keeps the provider response small enough to validate reliably while
 preserving the exact 10-example requirement per generated word.
 
+For faster review batching, request multiple small chunks in one command:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-expansion -- artificial-intelligence --chunks 10 --chunk-size 5
+```
+
+Batch mode writes queue artifacts under the ignored Topic folder:
+
+```text
+working/topic-expansion/artificial-intelligence/chunk-001.json
+working/topic-expansion/artificial-intelligence/chunk-002.json
+```
+
+Each provider request excludes canonical catalog words, existing pending queue
+artifacts, and words generated earlier in the same command. This gives the AI
+request memory without relying on provider session state. Review the chunk files,
+change only good chunks to `status: "accepted"`, then merge all accepted chunks:
+
+```powershell
+pnpm --filter @repo/api data:merge-topic-expansion -- artificial-intelligence --all-accepted
+```
+
 Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
 bounded events for `run-start`, `provider-request-start`,
 `provider-response-received`, `validation-start`, `validation-success`,
