@@ -10,6 +10,7 @@ import {
 } from "./topic-expansion.js";
 import {
   createTopicExpansionQueueJobs,
+  createTopicExpansionWorkerCommand,
   parseTopicExpansionQueueArguments,
   type TopicExpansionQueueJob,
 } from "./topic-expansion-cli.js";
@@ -48,9 +49,6 @@ const emit = (
   console.log(`[${event}] ${fields.join(" ")}`);
 };
 
-const createPnpmCommand = () =>
-  process.platform === "win32" ? "pnpm.cmd" : "pnpm";
-
 const runTopicJob = async (
   job: TopicExpansionQueueJob,
   input: {
@@ -60,18 +58,13 @@ const runTopicJob = async (
   }
 ): Promise<void> =>
   new Promise((resolve, reject) => {
-    const args = [
-      "--filter",
-      "@repo/api",
-      "data:generate-topic-expansion",
-      "--",
-      job.topicSlug,
-      "--chunks",
-      String(job.chunks),
-      "--chunk-size",
-      String(input.chunkSize),
-      ...(input.json ? ["--json"] : []),
-    ];
+    const command = createTopicExpansionWorkerCommand({
+      platform: process.platform,
+      topicSlug: job.topicSlug,
+      chunks: job.chunks,
+      chunkSize: input.chunkSize,
+      json: input.json,
+    });
     emit(
       "worker-start",
       {
@@ -84,7 +77,7 @@ const runTopicJob = async (
       },
       input.json
     );
-    const child = spawn(createPnpmCommand(), args, {
+    const child = spawn(command.command, command.args, {
       cwd: repositoryRoot,
       env: process.env,
       stdio: "inherit",

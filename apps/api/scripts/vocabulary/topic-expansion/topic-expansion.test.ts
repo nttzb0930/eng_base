@@ -19,6 +19,7 @@ import {
   formatTopicExpansionEvent,
   getNextTopicExpansionChunkNumber,
   createTopicExpansionQueueJobs,
+  createTopicExpansionWorkerCommand,
   parseTopicExpansionArguments,
   parseTopicExpansionQueueArguments,
   resolveTopicExpansionRequest,
@@ -334,6 +335,37 @@ test("Topic expansion queue jobs cap chunks per topic and skip completed topics"
   );
 });
 
+test("Topic expansion worker command uses cmd on Windows for pnpm scripts", () => {
+  assert.deepEqual(
+    createTopicExpansionWorkerCommand({
+      platform: "win32",
+      topicSlug: "artificial-intelligence",
+      chunks: 10,
+      chunkSize: 5,
+      json: true,
+    }),
+    {
+      command: "cmd.exe",
+      args: [
+        "/d",
+        "/s",
+        "/c",
+        "pnpm.cmd",
+        "--filter",
+        "@repo/api",
+        "data:generate-topic-expansion",
+        "--",
+        "artificial-intelligence",
+        "--chunks",
+        "10",
+        "--chunk-size",
+        "5",
+        "--json",
+      ],
+    }
+  );
+});
+
 test("deficit report reconciles totals and preserves bilingual taxonomy order", () => {
   const report = createTopicDeficitReport({
     topics: reportTopics,
@@ -571,10 +603,9 @@ test("Topic expansion queue runner uses bounded workers around the single Topic 
 
   assert.match(source, /parseTopicExpansionQueueArguments/u);
   assert.match(source, /createTopicExpansionQueueJobs/u);
+  assert.match(source, /createTopicExpansionWorkerCommand/u);
   assert.match(source, /worker-start/u);
   assert.match(source, /worker-finished/u);
-  assert.match(source, /data:generate-topic-expansion/u);
-  assert.match(source, /--chunks/u);
-  assert.match(source, /--chunk-size/u);
+  assert.match(source, /spawn\(command\.command, command\.args/u);
   assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
 });

@@ -27,6 +27,11 @@ export type TopicExpansionQueueJob = {
   chunks: number;
 };
 
+export type TopicExpansionWorkerCommand = {
+  command: string;
+  args: string[];
+};
+
 export type TopicDeficitReportEntry = TopicDeficit & {
   title: string;
   titleVi: string;
@@ -198,6 +203,39 @@ export function createTopicExpansionQueueJobs(
         Math.ceil(deficit.requestedCount / options.chunkSize)
       ),
     }));
+}
+
+export function createTopicExpansionWorkerCommand(input: {
+  platform: NodeJS.Platform;
+  topicSlug: string;
+  chunks: number;
+  chunkSize: number;
+  json: boolean;
+}): TopicExpansionWorkerCommand {
+  const pnpmArgs = [
+    "--filter",
+    "@repo/api",
+    "data:generate-topic-expansion",
+    "--",
+    input.topicSlug,
+    "--chunks",
+    String(input.chunks),
+    "--chunk-size",
+    String(input.chunkSize),
+    ...(input.json ? ["--json"] : []),
+  ];
+
+  if (input.platform === "win32") {
+    return {
+      command: "cmd.exe",
+      args: ["/d", "/s", "/c", "pnpm.cmd", ...pnpmArgs],
+    };
+  }
+
+  return {
+    command: "pnpm",
+    args: pnpmArgs,
+  };
 }
 
 export function resolveTopicExpansionRequest(
