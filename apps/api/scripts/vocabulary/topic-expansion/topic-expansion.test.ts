@@ -16,9 +16,12 @@ const topics: VocabularyTopicDefinition[] = [
   {
     slug: "airport",
     title: "Airport",
+    titleVi: "Sân bay",
     description: "Airport vocabulary.",
+    descriptionVi: "Từ vựng dùng tại sân bay.",
     order: 1,
     group: "Travel",
+    groupVi: "Du lịch",
   },
 ];
 

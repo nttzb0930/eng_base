@@ -225,7 +225,11 @@ model vocabulary_topics {
   id                     Int                      @id @default(autoincrement())
   slug                   String                   @unique
   title                  String
+  title_vi               String?
   description            String
+  description_vi         String?
+  group_name             String?
+  group_name_vi          String?
   order                  Int
   created_at             DateTime                 @default(now()) @db.Timestamp(6)
   vocabulary_item_topics vocabulary_item_topics[]

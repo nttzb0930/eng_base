@@ -7,7 +7,10 @@ import { PrismaClient, type Prisma } from "@prisma/client";
 import { createPrismaAdapter } from "../src/database/prisma/prisma.config.js";
 import { ENGLISH_VOCABULARY_COURSE_CODE } from "../src/module/courses/course.constants.js";
 import { vocabularyIdentity } from "./vocabulary/catalog/vocabulary-catalog.js";
-import { loadVocabularySeedData } from "./vocabulary/database/vocabulary-seed-data.js";
+import {
+  loadVocabularySeedData,
+  mapVocabularyTopicPersistenceData,
+} from "./vocabulary/database/vocabulary-seed-data.js";
 
 type CefrLevel = "A1" | "A2" | "B1" | "B2";
 
@@ -261,18 +264,13 @@ const main = async () => {
 
   console.log("Seeding canonical vocabulary topics and relations");
   for (const topic of seedData.topics) {
+    const persistenceData = mapVocabularyTopicPersistenceData(topic);
     await prisma.vocabulary_topics.upsert({
       where: { slug: topic.slug },
-      update: {
-        title: topic.title,
-        description: topic.description,
-        order: topic.order,
-      },
+      update: persistenceData,
       create: {
         slug: topic.slug,
-        title: topic.title,
-        description: topic.description,
-        order: topic.order,
+        ...persistenceData,
       },
     });
   }
