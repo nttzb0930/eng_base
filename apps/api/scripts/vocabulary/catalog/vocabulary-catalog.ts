@@ -1,9 +1,12 @@
 export type VocabularyTopicDefinition = {
   slug: string;
   title: string;
+  titleVi: string;
   description: string;
+  descriptionVi: string;
   order: number;
   group: string;
+  groupVi: string;
 };
 
 export type VocabularyCatalogItem = {
@@ -50,6 +53,8 @@ export function validateVocabularySources(
 ): VocabularyValidationReport {
   const errors: string[] = [];
   const topicSlugs = new Set<string>();
+  const topicOrders = new Set<number>();
+  const groupTranslations = new Map<string, string>();
 
   for (const topic of topics) {
     const slug = topic.slug.trim();
@@ -59,6 +64,42 @@ export function validateVocabularySources(
       errors.push(`Duplicate topic slug "${slug}"`);
     } else {
       topicSlugs.add(slug);
+    }
+
+    const requiredFields = [
+      ["title", topic.title],
+      ["titleVi", topic.titleVi],
+      ["description", topic.description],
+      ["descriptionVi", topic.descriptionVi],
+      ["group", topic.group],
+      ["groupVi", topic.groupVi],
+    ] as const;
+
+    for (const [field, value] of requiredFields) {
+      if (!value?.trim()) {
+        errors.push(
+          `Topic "${slug || "<empty>"}" has empty required field "${field}"`,
+        );
+      }
+    }
+
+    if (topicOrders.has(topic.order)) {
+      errors.push(`Duplicate topic order ${topic.order}`);
+    } else {
+      topicOrders.add(topic.order);
+    }
+
+    const group = topic.group?.trim();
+    const groupVi = topic.groupVi?.trim();
+    if (group && groupVi) {
+      const existingGroupVi = groupTranslations.get(group);
+      if (existingGroupVi && existingGroupVi !== groupVi) {
+        errors.push(
+          `Topic group "${group}" has conflicting Vietnamese names "${existingGroupVi}" and "${groupVi}"`,
+        );
+      } else {
+        groupTranslations.set(group, groupVi);
+      }
     }
   }
 

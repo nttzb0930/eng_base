@@ -17,6 +17,13 @@ test("vocabulary data has one canonical catalog and taxonomy", () => {
 
   const topics = JSON.parse(readFileSync(topicsPath, "utf8")) as Array<{
     slug: string;
+    title: string;
+    titleVi?: string;
+    description: string;
+    descriptionVi?: string;
+    order: number;
+    group: string;
+    groupVi?: string;
   }>;
   const catalog = JSON.parse(readFileSync(catalogPath, "utf8")) as Array<
     Record<string, unknown>
@@ -24,6 +31,36 @@ test("vocabulary data has one canonical catalog and taxonomy", () => {
 
   assert.equal(topics.length, 103);
   assert.equal(new Set(topics.map((topic) => topic.slug)).size, 103);
+  assert.equal(new Set(topics.map((topic) => topic.order)).size, 103);
+  for (const topic of topics) {
+    assert.notEqual(topic.title.trim(), "", `${topic.slug}.title`);
+    assert.equal(typeof topic.titleVi, "string", `${topic.slug}.titleVi`);
+    assert.notEqual(topic.titleVi?.trim(), "", `${topic.slug}.titleVi`);
+    assert.notEqual(topic.description.trim(), "", `${topic.slug}.description`);
+    assert.equal(
+      typeof topic.descriptionVi,
+      "string",
+      `${topic.slug}.descriptionVi`,
+    );
+    assert.notEqual(
+      topic.descriptionVi?.trim(),
+      "",
+      `${topic.slug}.descriptionVi`,
+    );
+    assert.notEqual(topic.group.trim(), "", `${topic.slug}.group`);
+    assert.equal(typeof topic.groupVi, "string", `${topic.slug}.groupVi`);
+    assert.notEqual(topic.groupVi?.trim(), "", `${topic.slug}.groupVi`);
+  }
+
+  const topicSlugs = new Set(topics.map((topic) => topic.slug));
+  for (const item of catalog) {
+    const assignedTopics = item.topics ?? [];
+    assert.equal(Array.isArray(assignedTopics), true);
+    for (const slug of assignedTopics as unknown[]) {
+      assert.equal(typeof slug, "string");
+      assert.equal(topicSlugs.has(slug as string), true, String(slug));
+    }
+  }
   assert.equal(catalog.length, 3000);
   assert.equal(catalog.some((item) => "enriched" in item), false);
   assert.equal(
