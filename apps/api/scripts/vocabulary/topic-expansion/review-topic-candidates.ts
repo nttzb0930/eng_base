@@ -187,7 +187,7 @@ async function main() {
         `Topic: ${JSON.stringify(topic)}`,
         "Decision rules:",
         "- core: directly defines the topic and should be learned inside this topic.",
-        "- supporting: related but better suited to a broader nearby topic.",
+        "- supporting: related and useful for this topic, but broader or secondary.",
         "- reject: off-topic, romantic-only, object-only, overly generic, or too context-dependent.",
         "Return one decision for every candidate.",
         `Candidates: ${JSON.stringify(artifact.candidates)}`,

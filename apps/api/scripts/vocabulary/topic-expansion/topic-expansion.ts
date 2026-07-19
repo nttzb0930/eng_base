@@ -25,6 +25,7 @@ export type TopicCandidate = {
   word: string;
   pos: string;
   cefrLevel: string;
+  tier?: "core" | "supporting";
 };
 
 export type RejectedTopicCandidate = TopicCandidate & {
@@ -199,14 +200,16 @@ export function applyTopicCandidateReview(
   for (const candidate of artifact.candidates) {
     const decision = decisionsByIdentity.get(candidateIdentity(candidate));
     if (!decision || decision.decision === "core") {
-      reviewedCandidates.push(candidate);
+      reviewedCandidates.push({ ...candidate, tier: "core" });
       continue;
     }
-    const reason =
-      decision.decision === "supporting"
-        ? (`supporting:${decision.reason}` as const)
-        : (`review:${decision.reason}` as const);
-    rejectedCandidates.push(rejectCandidate(candidate, reason));
+    if (decision.decision === "supporting") {
+      reviewedCandidates.push({ ...candidate, tier: "supporting" });
+      continue;
+    }
+    rejectedCandidates.push(
+      rejectCandidate(candidate, `review:${decision.reason}`)
+    );
   }
 
   return {

@@ -321,11 +321,11 @@ or review every chunk for the topic:
 pnpm --filter @repo/api data:review-topic-candidates -- friends --all
 ```
 
-The reviewer keeps `core` candidates and moves `supporting` or `reject`
-decisions into `rejected` with reasons such as
-`supporting:social-life-action` or `review:romantic-relationship`. This step
-updates only ignored candidate artifacts; it does not write the catalog or
-PostgreSQL.
+The reviewer keeps both `core` and `supporting` candidates. It writes a `tier`
+field on kept candidates so learning flows can prioritize core words first and
+supporting words later. Only `reject` decisions move into `rejected` with
+reasons such as `review:romantic-relationship`. This step updates only ignored
+candidate artifacts; it does not write the catalog or PostgreSQL.
 
 Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
 bounded events for `run-start`, `provider-request-start`,

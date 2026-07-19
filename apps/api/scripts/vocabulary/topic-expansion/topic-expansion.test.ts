@@ -349,7 +349,7 @@ test("Topic candidate dedupe rejects catalog and artifact duplicates without fai
   );
 });
 
-test("Topic candidate review keeps core and rejects weaker decisions", () => {
+test("Topic candidate review keeps core and supporting tiers and rejects only rejected decisions", () => {
   const reviewed = applyTopicCandidateReview(
     candidateArtifact([
       { word: "buddy", pos: "noun", cefrLevel: "B1" },
@@ -382,17 +382,20 @@ test("Topic candidate review keeps core and rejects weaker decisions", () => {
   );
 
   assert.deepEqual(reviewed.candidates, [
-    { word: "buddy", pos: "noun", cefrLevel: "B1" },
+    { word: "buddy", pos: "noun", cefrLevel: "B1", tier: "core" },
+    {
+      word: "socialize",
+      pos: "verb",
+      cefrLevel: "B1",
+      tier: "supporting",
+    },
   ]);
   assert.deepEqual(
     reviewed.rejected.map((candidate) => ({
       word: candidate.word,
       reason: candidate.reason,
     })),
-    [
-      { word: "socialize", reason: "supporting:social-life-action" },
-      { word: "soulmate", reason: "review:romantic-relationship" },
-    ]
+    [{ word: "soulmate", reason: "review:romantic-relationship" }]
   );
 });
 
