@@ -4,11 +4,9 @@ export {};
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      // NestJS API URL used by server-side adapters
-      API_URL: string;
-
-      // public app url
+      NEXT_PUBLIC_APP_NAME: string;
       NEXT_PUBLIC_APP_URL: string;
+      NEXT_PUBLIC_API_URL: string;
     }
   }
 }

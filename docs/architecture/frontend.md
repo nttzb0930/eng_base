@@ -17,6 +17,16 @@ packages/ui     exact reusable React primitives shared by Web and Admin
 Neither frontend imports Prisma, Nest DTO classes, API implementation, or the
 other application. Both call `apps/api` through authenticated browser HTTP.
 
+## Environment boundary
+
+Web and Admin read only explicit `NEXT_PUBLIC_APP_NAME`,
+`NEXT_PUBLIC_APP_URL`, and `NEXT_PUBLIC_API_URL` values. These values are public
+and may be compiled into browser bundles. There is no generic frontend
+environment module or Shared application-identity constant; framework
+boundaries read their owned public value directly. The canonical file policy,
+security rules, and deployment examples live in
+[Environment configuration](../guides/environment-configuration.md).
+
 ## Feature and view profile
 
 The dependency flow is:

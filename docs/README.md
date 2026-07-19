@@ -39,6 +39,9 @@ change. Do not preserve contradictory rules as temporary alternatives.
 
 ## Development guides
 
+- [Environment configuration](guides/environment-configuration.md): file
+  policy, runtime ownership, database URL resolution, secrets, CI, containers,
+  hosted environments, and troubleshooting.
 - [Local development](guides/local-development.md): environment, PostgreSQL,
   Prisma generation, migrations, startup, and safe troubleshooting.
 - [Verification](guides/verification.md): test layers, narrow commands,

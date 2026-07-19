@@ -176,8 +176,8 @@ not live below `src/` and is never edited by hand.
 
 Nest injects `src/database/prisma/prisma.service.ts`. Offline scripts create
 their client through `scripts/support/script-prisma.ts`. Both use the same
-validated database configuration but remain separate process adapters; the
-script adapter is not a second database owner.
+`resolveDatabaseUrl` configuration boundary but remain separate process
+adapters; the script adapter is not a second database owner.
 
 Prisma schema changes require a reviewed migration. `prisma generate` changes
 client code only; it does not update PostgreSQL. Migration, reset, push, seed,
@@ -213,7 +213,9 @@ settings.
 
 Secrets must be distinct and sufficiently strong. Do not read environment
 variables ad hoc throughout capability code; add validated configuration to its
-runtime owner.
+runtime owner. [Environment configuration](../guides/environment-configuration.md)
+owns the variable table, public/private boundary, database resolution order,
+secret handling, and deployment examples.
 
 ## Naming and folder rules
 

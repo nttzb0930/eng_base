@@ -15,6 +15,8 @@ accepted ADR before changing an owned capability or public Interface.
 - `docs/architecture/api.md` defines Nest capability ownership, Auth delivery,
   Prisma, errors, rate limits, and transaction rules.
 - `docs/guides/verification.md` defines narrow and full verification gates.
+- `docs/guides/environment-configuration.md` defines environment ownership,
+  database URL resolution, and the public/private boundary.
 - `docs/data/vocabulary-pipeline.md` is required reading before changing
   vocabulary source data or running data scripts.
 
@@ -130,6 +132,9 @@ feature refactor.
   canonical owner instead.
 - Reference projects and migration history are not architecture vocabulary.
   State the English Base requirement and its trade-off directly.
+- Do not introduce ad hoc environment reads. Follow the canonical environment
+  guide and keep frontend variables public-only, API reads at configuration
+  boundaries, and secrets out of build arguments.
 
 ## Verification
 

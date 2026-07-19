@@ -29,31 +29,30 @@ Copy-Item .env.example .env
 ```
 
 All three applications and API offline scripts load the root `.env`. At minimum,
-local API startup requires a reachable `DATABASE_URL` plus distinct
-`JWT_ACCESS_SECRET` and `JWT_REFRESH_SECRET` values of at least 32 characters.
-
-`NEXT_PUBLIC_*` values are compiled into browser code and are not secrets.
-Provider keys and dictionary paths below the offline-vocabulary section are not
-required to boot Web, Admin, or API. Do not populate or invoke provider settings
-unless the corresponding data workflow is the explicit task.
+local API startup requires either a resolved PostgreSQL `DATABASE_URL` or all
+six `DB_*` components, plus distinct `JWT_ACCESS_SECRET` and
+`JWT_REFRESH_SECRET` values of at least 32 characters. Read
+[Environment configuration](environment-configuration.md) for the canonical
+file policy, ownership table, resolver behavior, and public/private boundary.
 
 ## Start PostgreSQL
 
-The Compose service is named `db` and publishes PostgreSQL on port `5432`:
+The Compose service is named `db`. It reads database identity from `.env` and
+publishes `${DB_PORT:-5432}`:
 
 ```powershell
 docker compose up -d db
 docker compose ps
 ```
 
-The repository example URL is:
+With the example component values, the resolved URL has this shape:
 
 ```text
-postgresql://postgres:123456@localhost:5432/lingo
+postgresql://postgres:<local-password>@localhost:5432/eng_base?schema=public
 ```
 
-These credentials are local-development defaults only. Do not reuse them in a
-shared or production environment.
+Choose the local password in the ignored `.env`; no password is hardcoded by
+Compose. Do not reuse local credentials in a shared or production environment.
 
 Stop the container without deleting its named volume:
 
@@ -158,7 +157,8 @@ reset or seed as a compile/test prerequisite.
 
 1. Run `docker compose ps` and confirm service `db` is healthy.
 2. Check that port `5432` is not occupied by another PostgreSQL instance.
-3. Compare `.env` `DATABASE_URL` with the actual host, port, user, password, and database.
+3. Compare `.env` `DATABASE_URL` or `DB_*` values with the actual host, port,
+   user, password, database, and schema.
 4. Start or restart the intended PostgreSQL service, then rerun the same migration command.
 
 Do not change migration history to solve a network error.
@@ -181,8 +181,9 @@ requires a reviewed backup, repair plan, and verification of schema and data.
 
 Read the startup validation message and correct `.env`. JWT secrets must be
 different; `TRUST_PROXY_HOPS` must reflect the known proxy chain; CORS origins
-must list the actual frontend origins. Do not weaken validation in order to boot
-a misconfigured environment.
+must list the actual frontend origins; the database contract must resolve as
+documented in [Environment configuration](environment-configuration.md). Do
+not weaken validation in order to boot a misconfigured environment.
 
 ## Data-changing commands
 
