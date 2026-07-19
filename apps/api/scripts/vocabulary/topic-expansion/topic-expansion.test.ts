@@ -18,7 +18,9 @@ import {
   formatTopicDeficitReport,
   formatTopicExpansionEvent,
   getNextTopicExpansionChunkNumber,
+  createTopicExpansionQueueJobs,
   parseTopicExpansionArguments,
+  parseTopicExpansionQueueArguments,
   resolveTopicExpansionRequest,
 } from "./topic-expansion-cli.js";
 import type {
@@ -266,6 +268,72 @@ test("Topic expansion arguments reject unknown flags and multiple slugs", () => 
   );
 });
 
+test("Topic expansion queue arguments default to bounded conservative execution", () => {
+  assert.deepEqual(parseTopicExpansionQueueArguments(["--"]), {
+    json: false,
+    workers: 1,
+    chunksPerTopic: 10,
+    chunkSize: null,
+  });
+  assert.deepEqual(
+    parseTopicExpansionQueueArguments([
+      "--",
+      "--json",
+      "--workers",
+      "3",
+      "--chunk-size",
+      "5",
+      "--chunks-per-topic",
+      "10",
+    ]),
+    {
+      json: true,
+      workers: 3,
+      chunksPerTopic: 10,
+      chunkSize: 5,
+    }
+  );
+});
+
+test("Topic expansion queue arguments reject unsafe values", () => {
+  assert.throws(
+    () => parseTopicExpansionQueueArguments(["--workers", "0"]),
+    /--workers must be a positive integer/u
+  );
+  assert.throws(
+    () => parseTopicExpansionQueueArguments(["--chunks-per-topic"]),
+    /--chunks-per-topic requires a value/u
+  );
+  assert.throws(
+    () => parseTopicExpansionQueueArguments(["airport"]),
+    /does not accept positional Topic slugs/u
+  );
+});
+
+test("Topic expansion queue jobs cap chunks per topic and skip completed topics", () => {
+  assert.deepEqual(
+    createTopicExpansionQueueJobs(
+      [
+        {
+          slug: "artificial-intelligence",
+          existingCount: 0,
+          requestedCount: 300,
+        },
+        { slug: "airport", existingCount: 298, requestedCount: 2 },
+      ],
+      { chunkSize: 5, chunksPerTopic: 10 }
+    ),
+    [
+      {
+        topicSlug: "artificial-intelligence",
+        requestedCount: 300,
+        chunks: 10,
+      },
+      { topicSlug: "airport", requestedCount: 2, chunks: 1 },
+    ]
+  );
+});
+
 test("deficit report reconciles totals and preserves bilingual taxonomy order", () => {
   const report = createTopicDeficitReport({
     topics: reportTopics,
@@ -490,4 +558,23 @@ test("Topic expansion merge exposes all accepted chunk mode", async () => {
   assert.match(source, /--all-accepted/u);
   assert.match(source, /chunk-\\d\{3\}\\\.json/u);
   assert.match(source, /vocabulary-topic-expansion-chunks-merged/u);
+});
+
+test("Topic expansion queue runner uses bounded workers around the single Topic runner", async () => {
+  const source = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/generate-topic-expansion-queue.ts"
+    ),
+    "utf8"
+  );
+
+  assert.match(source, /parseTopicExpansionQueueArguments/u);
+  assert.match(source, /createTopicExpansionQueueJobs/u);
+  assert.match(source, /worker-start/u);
+  assert.match(source, /worker-finished/u);
+  assert.match(source, /data:generate-topic-expansion/u);
+  assert.match(source, /--chunks/u);
+  assert.match(source, /--chunk-size/u);
+  assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
 });

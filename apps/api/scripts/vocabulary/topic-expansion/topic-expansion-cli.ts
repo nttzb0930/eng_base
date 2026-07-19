@@ -14,6 +14,19 @@ export type TopicExpansionArguments = {
   chunkSize: number | null;
 };
 
+export type TopicExpansionQueueArguments = {
+  json: boolean;
+  workers: number;
+  chunksPerTopic: number;
+  chunkSize: number | null;
+};
+
+export type TopicExpansionQueueJob = {
+  topicSlug: string;
+  requestedCount: number;
+  chunks: number;
+};
+
 export type TopicDeficitReportEntry = TopicDeficit & {
   title: string;
   titleVi: string;
@@ -111,6 +124,80 @@ export function parseTopicExpansionArguments(
   }
 
   return { json, topicSlug: topicSlugs[0] ?? null, chunks, chunkSize };
+}
+
+export function parseTopicExpansionQueueArguments(
+  args: string[]
+): TopicExpansionQueueArguments {
+  let json = false;
+  let workers = 1;
+  let chunksPerTopic = 10;
+  let chunkSize: number | null = null;
+
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
+    if (argument === "--") continue;
+    if (argument === "--json") {
+      json = true;
+      continue;
+    }
+    if (argument === "--workers") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--workers requires a value");
+      workers = parsePositiveIntegerFlag("--workers", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--chunks-per-topic") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunks-per-topic requires a value");
+      chunksPerTopic = parsePositiveIntegerFlag("--chunks-per-topic", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--chunk-size") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunk-size requires a value");
+      chunkSize = parsePositiveIntegerFlag("--chunk-size", value);
+      index += 1;
+      continue;
+    }
+    if (argument.startsWith("--")) {
+      throw new Error(`Unknown Topic expansion queue flag "${argument}"`);
+    }
+    throw new Error(
+      "Topic expansion queue does not accept positional Topic slugs"
+    );
+  }
+
+  return { json, workers, chunksPerTopic, chunkSize };
+}
+
+export function createTopicExpansionQueueJobs(
+  deficits: TopicDeficit[],
+  options: { chunkSize: number; chunksPerTopic: number }
+): TopicExpansionQueueJob[] {
+  if (!Number.isInteger(options.chunkSize) || options.chunkSize < 1) {
+    throw new Error(
+      "Topic expansion queue chunk size must be a positive integer"
+    );
+  }
+  if (!Number.isInteger(options.chunksPerTopic) || options.chunksPerTopic < 1) {
+    throw new Error(
+      "Topic expansion queue chunks per topic must be a positive integer"
+    );
+  }
+
+  return deficits
+    .filter((deficit) => deficit.requestedCount > 0)
+    .map((deficit) => ({
+      topicSlug: deficit.slug,
+      requestedCount: deficit.requestedCount,
+      chunks: Math.min(
+        options.chunksPerTopic,
+        Math.ceil(deficit.requestedCount / options.chunkSize)
+      ),
+    }));
 }
 
 export function resolveTopicExpansionRequest(

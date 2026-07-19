@@ -275,6 +275,19 @@ change only good chunks to `status: "accepted"`, then merge all accepted chunks:
 pnpm --filter @repo/api data:merge-topic-expansion -- artificial-intelligence --all-accepted
 ```
 
+For many deficient topics, use the queue runner. It parallelizes across topics
+only; chunks inside one topic remain sequential so the next request can exclude
+words produced by earlier chunks for the same topic:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-expansion-queue -- --workers 3 --chunk-size 5 --chunks-per-topic 10
+```
+
+This example runs up to three topics at the same time and creates at most 10
+chunks per topic, 5 words per chunk, per queue run. Re-run the queue after
+review and merge. Do not raise worker count aggressively; provider rate limits
+and JSON quality usually fail before local CPU becomes the bottleneck.
+
 Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
 bounded events for `run-start`, `provider-request-start`,
 `provider-response-received`, `validation-start`, `validation-success`,

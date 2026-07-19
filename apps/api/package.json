@@ -40,6 +40,7 @@
     "data:classify-topics-ai": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-classification/run-vocab-topics-gemini.ts",
     "data:merge-topics": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-classification/merge-vocab-topics.ts",
     "data:generate-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/generate-topic-expansion.ts",
+    "data:generate-topic-expansion-queue": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/generate-topic-expansion-queue.ts",
     "data:merge-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion.ts"
   },
   "dependencies": {
