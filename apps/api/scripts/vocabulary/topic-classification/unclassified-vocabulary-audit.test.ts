@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
 
 import { auditUnclassifiedVocabulary } from "./unclassified-vocabulary-audit.js";
@@ -107,4 +109,15 @@ test("audit is deterministic and does not mutate catalog input", () => {
 
   assert.deepEqual(first, second);
   assert.deepEqual(catalog, before);
+});
+
+test("audit package command is offline and provider independent", async () => {
+  const packageJson = JSON.parse(
+    await readFile(path.resolve(process.cwd(), "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+
+  assert.equal(
+    packageJson.scripts?.["data:audit-unclassified-topics"],
+    "tsx ./scripts/vocabulary/topic-classification/audit-unclassified-topics.ts"
+  );
 });

@@ -208,6 +208,18 @@ rejected, mixed-provider/model, legacy, or stale artifacts before writing. A
 successful real merge creates an ignored backup and atomically replaces only
 the catalog. Classification and merge never update PostgreSQL.
 
+Audit the merged catalog before Topic expansion:
+
+```powershell
+pnpm --filter @repo/api data:audit-unclassified-topics
+```
+
+The audit is deterministic and local. It separates unclassified function words,
+content recovery candidates, and manual or normalization review records below
+the ignored `working/topic-classification/audit/` directory. It does not call a
+provider, mutate the canonical catalog, or write PostgreSQL. Audit output does
+not authorize recovery classification or Topic expansion.
+
 ## Topic expansion flow
 
 Running the command without a topic only reports deficits and does not call a
@@ -300,7 +312,7 @@ Run the API source-layout tests plus the pure workflow suite:
 
 ```powershell
 pnpm --filter @repo/api test
-pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
 ```
 
 These commands do not call providers or write PostgreSQL. Also run formatting,

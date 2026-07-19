@@ -35,6 +35,7 @@
     "data:merge-vocab-pos-correction": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/pos-correction/merge-vocab-pos-correction.ts",
     "data:sync-vocab-pos-correction": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/pos-correction/sync-vocab-pos-correction-to-db.ts",
     "data:seed-topics": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/seed-vocab-topics.ts",
+    "data:audit-unclassified-topics": "tsx ./scripts/vocabulary/topic-classification/audit-unclassified-topics.ts",
     "data:prepare-topics": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-classification/prepare-vocab-topics.ts",
     "data:classify-topics-ai": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-classification/run-vocab-topics-gemini.ts",
     "data:merge-topics": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-classification/merge-vocab-topics.ts",
