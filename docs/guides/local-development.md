@@ -126,6 +126,21 @@ Default local endpoints:
 Authenticated flows need API plus the selected frontend. API startup validates
 database, JWT, CORS, rate-limit, and proxy settings before serving requests.
 
+## Build production containers
+
+Build the three production images from the repository root:
+
+```powershell
+docker build -f apps/api/Dockerfile -t eng-base-api:local .
+docker build -f apps/web/Dockerfile -t eng-base-web:local .
+docker build -f apps/admin/Dockerfile -t eng-base-admin:local .
+```
+
+Image construction generates/compiles code but does not connect to PostgreSQL,
+migrate, seed, or start a runtime. Web/Admin public values are build arguments;
+API secrets are runtime values. Read [CI/CD and GHCR](ci-cd.md) for published
+image names, Variables, pull/run commands, and container networking notes.
+
 ## Prisma Studio
 
 Open the local database browser:

@@ -17,6 +17,8 @@ accepted ADR before changing an owned capability or public Interface.
 - `docs/guides/verification.md` defines narrow and full verification gates.
 - `docs/guides/environment-configuration.md` defines environment ownership,
   database URL resolution, and the public/private boundary.
+- `docs/guides/ci-cd.md` defines CI gates, GHCR image publication, and the
+  publish-not-deploy boundary.
 - `docs/data/vocabulary-pipeline.md` is required reading before changing
   vocabulary source data or running data scripts.
 

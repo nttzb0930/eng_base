@@ -18,6 +18,19 @@ Course
 read flows and Admin management CRUD. "Admin" describes a caller/delivery
 surface, not a second owner of Course behavior.
 
+## Course identity
+
+`Course.code` is the stable business identity. It is required at creation,
+unique, immutable, and kebab-case; Admin displays it but excludes it from update
+payloads. Numeric `id` remains the persistence key for relationships. `title`
+and `imageSrc` are editable presentation content and must not be used to locate
+the English course in business behavior.
+
+English Base currently has no Course `slug` and no public Course Detail route.
+Do not add a second URL identity until a real public/detail navigation goal
+exists. If that goal is introduced later, keep business lookup on `code` and
+define slug edit/redirect policy separately.
+
 ## Runtime layout
 
 ```text

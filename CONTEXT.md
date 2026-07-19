@@ -25,6 +25,9 @@ follow the ownership and dependency rules in
   review records.
 - **Lesson challenge**: a persisted question belonging to a lesson. Its correct answer may reference a vocabulary item.
 - **Course content**: the ordered Course -> Unit -> Lesson -> Lesson challenge -> Challenge option hierarchy.
+- **Course code**: the unique, immutable kebab-case business identity of a
+  Course. Numeric ID remains relational identity; title remains editable
+  presentation content.
 - **Course Management**: the Admin capability for listing and mutating course content. It is an Interface of the Courses domain, not a separate business owner.
 - **Saved word**: a learner-selected vocabulary item kept for later study.
 - **Vocabulary progress**: the learner's persistent correctness, mastery, and scheduling state for one vocabulary item.
@@ -68,6 +71,8 @@ follow the ownership and dependency rules in
   profile; the frontend feature/view profile separates `app/features` behavior from
   `app/views` screen composition without changing domain ownership.
 - Courses owns both learner-facing reads and Admin Course Management CRUD. The Admin API module must not duplicate these mutations.
+- Course behavior locates a Course by immutable code, never by editable title.
+  No Course slug or public Course Detail route exists yet.
 - Admin is a caller and authorization mode, not a business owner; Admin HTTP
   delivery remains in the capability whose behavior it exposes.
 - Vocabulary owns vocabulary item/progress/example types and the mapping and

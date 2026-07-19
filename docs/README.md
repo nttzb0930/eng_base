@@ -44,6 +44,8 @@ change. Do not preserve contradictory rules as temporary alternatives.
   hosted environments, and troubleshooting.
 - [Local development](guides/local-development.md): environment, PostgreSQL,
   Prisma generation, migrations, startup, and safe troubleshooting.
+- [CI/CD and GHCR](guides/ci-cd.md): verification triggers, image publication,
+  GitHub Variables, package permissions, tags, and failure diagnosis.
 - [Verification](guides/verification.md): test layers, narrow commands,
   vocabulary workflow tests, and the full pre-handoff gate.
 

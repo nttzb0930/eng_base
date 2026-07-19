@@ -60,12 +60,16 @@ Run sequentially from the repository root:
 ```powershell
 pnpm architecture:check
 pnpm test
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
 pnpm check-types
 pnpm lint
 pnpm build
+pnpm exec prettier --check README.md AGENTS.md CONTEXT.md "docs/**/*.md" ".github/workflows/*.yml"
 ```
 
-For a vocabulary pipeline change, run the standalone workflow command above in addition to the full gate.
+The standalone vocabulary command remains explicit even though normal API tests
+cover source-layout rules; it proves the pure pipeline contracts without a
+provider or database.
 
 Before commit or handoff, also run:
 
