@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NODE_ENV: test
+      NEXT_TELEMETRY_DISABLED: 1
+      APP_NAME: English Base API
+      APP_SERVICE_NAME: eng-base-api
+      API_PORT: 4000
+      CORS_ORIGINS: http://localhost:3000,http://localhost:3001
+      TRUST_PROXY_HOPS: 0
+      NEXT_PUBLIC_APP_NAME: English Base
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      NEXT_PUBLIC_API_URL: http://localhost:4000/api
+      DATABASE_URL: postgresql://ci:ci@localhost:5432/eng_base?schema=public
+      JWT_ACCESS_SECRET: ci-access-secret-0123456789-abcdefgh
+      JWT_REFRESH_SECRET: ci-refresh-secret-9876543210-hgfedcba
+      JWT_ACCESS_EXPIRES_IN: 15m
+      JWT_REFRESH_EXPIRES_IN: 7d
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Check architecture
+        run: pnpm architecture:check
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Run standalone vocabulary workflow tests
+        run: pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+
+      - name: Check types
+        run: pnpm check-types
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Build applications
+        run: pnpm build
+
+      - name: Check formatting
+        run: pnpm exec prettier --check README.md AGENTS.md CONTEXT.md "docs/**/*.md" ".github/workflows/*.yml"
