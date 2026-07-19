@@ -309,6 +309,24 @@ generation does not write the canonical catalog or PostgreSQL. Accepted
 candidates are the input for a later enrichment step that creates full
 vocabulary records with meanings and exactly 10 bilingual examples.
 
+Before human review, run the candidate reviewer to filter weak topic matches:
+
+```powershell
+pnpm --filter @repo/api data:review-topic-candidates -- friends --chunk chunk-002.json
+```
+
+or review every chunk for the topic:
+
+```powershell
+pnpm --filter @repo/api data:review-topic-candidates -- friends --all
+```
+
+The reviewer keeps `core` candidates and moves `supporting` or `reject`
+decisions into `rejected` with reasons such as
+`supporting:social-life-action` or `review:romantic-relationship`. This step
+updates only ignored candidate artifacts; it does not write the catalog or
+PostgreSQL.
+
 Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
 bounded events for `run-start`, `provider-request-start`,
 `provider-response-received`, `validation-start`, `validation-success`,

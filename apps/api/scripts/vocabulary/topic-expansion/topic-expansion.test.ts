@@ -5,6 +5,7 @@ import test from "node:test";
 
 import {
   calculateTopicDeficits,
+  applyTopicCandidateReview,
   dedupeTopicCandidates,
   mergeAcceptedExpansion,
   validateExpansionArtifact,
@@ -23,6 +24,7 @@ import {
   createTopicExpansionQueueJobs,
   createTopicExpansionWorkerCommand,
   parseTopicCandidateGenerationArguments,
+  parseTopicCandidateReviewArguments,
   parseTopicExpansionArguments,
   parseTopicExpansionQueueArguments,
   resolveTopicExpansionRequest,
@@ -344,6 +346,82 @@ test("Topic candidate dedupe rejects catalog and artifact duplicates without fai
       { word: "Companion", reason: "artifact-duplicate" },
       { word: "supportive", reason: "artifact-duplicate" },
     ]
+  );
+});
+
+test("Topic candidate review keeps core and rejects weaker decisions", () => {
+  const reviewed = applyTopicCandidateReview(
+    candidateArtifact([
+      { word: "buddy", pos: "noun", cefrLevel: "B1" },
+      { word: "socialize", pos: "verb", cefrLevel: "B1" },
+      { word: "soulmate", pos: "noun", cefrLevel: "C1" },
+    ]),
+    [
+      {
+        word: "buddy",
+        pos: "noun",
+        cefrLevel: "B1",
+        decision: "core",
+        reason: "direct-friend-label",
+      },
+      {
+        word: "socialize",
+        pos: "verb",
+        cefrLevel: "B1",
+        decision: "supporting",
+        reason: "social-life-action",
+      },
+      {
+        word: "soulmate",
+        pos: "noun",
+        cefrLevel: "C1",
+        decision: "reject",
+        reason: "romantic-relationship",
+      },
+    ]
+  );
+
+  assert.deepEqual(reviewed.candidates, [
+    { word: "buddy", pos: "noun", cefrLevel: "B1" },
+  ]);
+  assert.deepEqual(
+    reviewed.rejected.map((candidate) => ({
+      word: candidate.word,
+      reason: candidate.reason,
+    })),
+    [
+      { word: "socialize", reason: "supporting:social-life-action" },
+      { word: "soulmate", reason: "review:romantic-relationship" },
+    ]
+  );
+});
+
+test("Topic candidate review arguments select all chunks or one chunk", () => {
+  assert.deepEqual(
+    parseTopicCandidateReviewArguments(["--", "friends", "--all", "--json"]),
+    {
+      json: true,
+      topicSlug: "friends",
+      all: true,
+      chunkFileName: null,
+    }
+  );
+  assert.deepEqual(
+    parseTopicCandidateReviewArguments([
+      "friends",
+      "--chunk",
+      "chunk-002.json",
+    ]),
+    {
+      json: false,
+      topicSlug: "friends",
+      all: false,
+      chunkFileName: "chunk-002.json",
+    }
+  );
+  assert.throws(
+    () => parseTopicCandidateReviewArguments(["friends"]),
+    /requires --all or --chunk/u
   );
 });
 
@@ -705,5 +783,23 @@ test("Topic candidate generator writes review artifacts without provider secrets
   assert.match(source, /not merely usable in a sentence/u);
   assert.match(source, /generic verbs/u);
   assert.match(source, /defend, lend, entertain/u);
+  assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
+});
+
+test("Topic candidate reviewer applies provider decisions without provider secrets", async () => {
+  const source = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/review-topic-candidates.ts"
+    ),
+    "utf8"
+  );
+
+  assert.match(source, /parseTopicCandidateReviewArguments/u);
+  assert.match(source, /applyTopicCandidateReview/u);
+  assert.match(source, /working\/topic-candidates/u);
+  assert.match(source, /core/u);
+  assert.match(source, /supporting/u);
+  assert.match(source, /reject/u);
   assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
 });

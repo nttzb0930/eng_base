@@ -28,6 +28,13 @@ export type TopicCandidateGenerationArguments = {
   chunkSize: number;
 };
 
+export type TopicCandidateReviewArguments = {
+  json: boolean;
+  topicSlug: string;
+  all: boolean;
+  chunkFileName: string | null;
+};
+
 export type TopicExpansionQueueJob = {
   topicSlug: string;
   requestedCount: number;
@@ -230,6 +237,52 @@ export function parseTopicCandidateGenerationArguments(
   }
 
   return { json, topicSlug: topicSlugs[0]!, count, chunkSize };
+}
+
+export function parseTopicCandidateReviewArguments(
+  args: string[]
+): TopicCandidateReviewArguments {
+  let json = false;
+  let all = false;
+  let chunkFileName: string | null = null;
+  const topicSlugs: string[] = [];
+
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
+    if (argument === "--") continue;
+    if (argument === "--json") {
+      json = true;
+      continue;
+    }
+    if (argument === "--all") {
+      all = true;
+      continue;
+    }
+    if (argument === "--chunk") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunk requires a value");
+      if (!/^chunk-\d{3}\.json$/u.test(value)) {
+        throw new Error("--chunk must be a chunk-001.json style file name");
+      }
+      chunkFileName = value;
+      index += 1;
+      continue;
+    }
+    if (argument.startsWith("--")) {
+      throw new Error(`Unknown Topic candidate review flag "${argument}"`);
+    }
+    topicSlugs.push(argument);
+  }
+
+  if (topicSlugs.length < 1) throw new Error("Topic slug is required");
+  if (topicSlugs.length > 1) {
+    throw new Error("Topic candidate review accepts exactly one Topic slug");
+  }
+  if (all === (chunkFileName !== null)) {
+    throw new Error("Topic candidate review requires --all or --chunk");
+  }
+
+  return { json, topicSlug: topicSlugs[0]!, all, chunkFileName };
 }
 
 export function createTopicExpansionQueueJobs(

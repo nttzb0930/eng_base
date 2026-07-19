@@ -28,12 +28,21 @@ export type TopicCandidate = {
 };
 
 export type RejectedTopicCandidate = TopicCandidate & {
-  reason:
-    | "catalog-duplicate"
-    | "artifact-duplicate"
-    | "invalid-word"
-    | "invalid-pos"
-    | "invalid-cefr-level";
+  reason: TopicCandidateRejectionReason;
+};
+
+export type TopicCandidateRejectionReason =
+  | "catalog-duplicate"
+  | "artifact-duplicate"
+  | "invalid-word"
+  | "invalid-pos"
+  | "invalid-cefr-level"
+  | `supporting:${string}`
+  | `review:${string}`;
+
+export type TopicCandidateReviewDecision = TopicCandidate & {
+  decision: "core" | "supporting" | "reject";
+  reason: string;
 };
 
 export type TopicCandidateArtifact = {
@@ -173,6 +182,37 @@ export function dedupeTopicCandidates(
     ...artifact,
     requestedCount: acceptedCandidates.length,
     candidates: acceptedCandidates,
+    rejected: rejectedCandidates,
+  };
+}
+
+export function applyTopicCandidateReview(
+  artifact: TopicCandidateArtifact,
+  decisions: TopicCandidateReviewDecision[]
+): TopicCandidateArtifact {
+  const decisionsByIdentity = new Map(
+    decisions.map((decision) => [candidateIdentity(decision), decision])
+  );
+  const reviewedCandidates: TopicCandidate[] = [];
+  const rejectedCandidates: RejectedTopicCandidate[] = [...artifact.rejected];
+
+  for (const candidate of artifact.candidates) {
+    const decision = decisionsByIdentity.get(candidateIdentity(candidate));
+    if (!decision || decision.decision === "core") {
+      reviewedCandidates.push(candidate);
+      continue;
+    }
+    const reason =
+      decision.decision === "supporting"
+        ? (`supporting:${decision.reason}` as const)
+        : (`review:${decision.reason}` as const);
+    rejectedCandidates.push(rejectCandidate(candidate, reason));
+  }
+
+  return {
+    ...artifact,
+    requestedCount: reviewedCandidates.length,
+    candidates: reviewedCandidates,
     rejected: rejectedCandidates,
   };
 }
