@@ -270,6 +270,31 @@ const assertGeneratedWordsMatchCandidates = (
   }
 };
 
+const isBilingualExample = (
+  value: unknown
+): value is { exampleEn: string; exampleVi: string } =>
+  typeof value === "object" &&
+  value !== null &&
+  "exampleEn" in value &&
+  "exampleVi" in value &&
+  typeof value.exampleEn === "string" &&
+  typeof value.exampleVi === "string";
+
+const normalizePrimaryExample = (
+  word: VocabularyCatalogItem
+): VocabularyCatalogItem => {
+  const firstExample = Array.isArray(word.examples) ? word.examples[0] : null;
+  if (!isBilingualExample(firstExample)) {
+    return word;
+  }
+
+  return {
+    ...word,
+    exampleEn: firstExample.exampleEn,
+    exampleVi: firstExample.exampleVi,
+  };
+};
+
 async function main() {
   const arguments_ = parseTopicCandidateEnrichmentArguments(
     process.argv.slice(2)
@@ -324,7 +349,7 @@ async function main() {
       exampleSource: "ai-topic-expansion",
       dictionaryLookupCompleted: false,
       topics: [topic.slug],
-    }));
+    })).map(normalizePrimaryExample);
     assertGeneratedWordsMatchCandidates(words, candidateBatch);
 
     const artifact: TopicExpansionArtifact = {
