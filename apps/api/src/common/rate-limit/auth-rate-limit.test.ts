@@ -15,6 +15,7 @@ import {
   readAuthRateLimitPolicy,
   refreshSession,
 } from "./auth-rate-limit";
+import { AUTH_COOKIE_NAMES } from "../http/auth-cookie.constants";
 
 class TestController {
   @AuthRateLimit("login")
@@ -53,7 +54,7 @@ test("auth rate-limit metadata and trackers do not expose credentials", () => {
   assert.match(loginIdentity(request), /^[a-f0-9]{64}$/);
   assert.doesNotMatch(loginIdentity(request), /learner-one/i);
 
-  request.headers.cookie = "client_refresh_token=refresh-secret";
+  request.headers.cookie = `${AUTH_COOKIE_NAMES.refresh}=refresh-secret`;
   assert.match(refreshSession(request), /^[a-f0-9]{64}$/);
   assert.doesNotMatch(refreshSession(request), /refresh-secret/);
 });

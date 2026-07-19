@@ -1,7 +1,18 @@
-import { Body, Controller, Headers, Post, Req, Res } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Headers,
+  Inject,
+  Post,
+  Req,
+  Res,
+} from "@nestjs/common";
+import type { ConfigType } from "@nestjs/config";
 import type { Request, Response } from "express";
 
 import { AuthRateLimit } from "../../common/decorators/auth-rate-limit.decorator";
+import { AUTH_COOKIE_NAMES } from "../../common/http/auth-cookie.constants";
+import { applicationConfig } from "../../config";
 import { LoginDto } from "./dto/login.dto";
 import { RegisterDto } from "./dto/register.dto";
 import { AuthTokenService } from "./service/auth-token.service";
@@ -17,7 +28,9 @@ export class AuthController {
     private readonly registerUser: RegisterUserUseCase,
     private readonly refreshToken: RefreshTokenUseCase,
     private readonly logoutUser: LogoutUserUseCase,
-    private readonly tokens: AuthTokenService
+    private readonly tokens: AuthTokenService,
+    @Inject(applicationConfig.KEY)
+    private readonly application: ConfigType<typeof applicationConfig>
   ) {}
 
   @Post("login")
@@ -46,7 +59,7 @@ export class AuthController {
   ) {
     try {
       const result = await this.refreshToken.execute(
-        this.readCookie(request, "client_refresh_token")
+        this.readCookie(request, AUTH_COOKIE_NAMES.refresh)
       );
       this.setAccessCookie(response, result.accessToken);
       return { access_token: result.accessToken, user: result.user };
@@ -62,7 +75,7 @@ export class AuthController {
     @Res({ passthrough: true }) response: Response,
     @Headers("authorization") authorization?: string
   ) {
-    const refreshToken = this.readCookie(request, "client_refresh_token");
+    const refreshToken = this.readCookie(request, AUTH_COOKIE_NAMES.refresh);
     const accessToken = authorization?.startsWith("Bearer ")
       ? authorization.slice(7)
       : undefined;
@@ -72,15 +85,15 @@ export class AuthController {
   }
 
   private setSessionCookies(response: Response, refreshToken: string) {
-    const secure = process.env.NODE_ENV === "production";
-    response.cookie("client_refresh_token", refreshToken, {
+    const secure = this.application.isProduction;
+    response.cookie(AUTH_COOKIE_NAMES.refresh, refreshToken, {
       httpOnly: true,
       secure,
       sameSite: "lax",
       path: "/",
       maxAge: this.tokens.refreshMaxAgeMs,
     });
-    response.cookie("client_has_rt", "1", {
+    response.cookie(AUTH_COOKIE_NAMES.refreshMarker, "1", {
       httpOnly: false,
       secure,
       sameSite: "lax",
@@ -90,9 +103,9 @@ export class AuthController {
   }
 
   private setAccessCookie(response: Response, accessToken: string) {
-    response.cookie("user_token", accessToken, {
+    response.cookie(AUTH_COOKIE_NAMES.access, accessToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: this.application.isProduction,
       sameSite: "lax",
       path: "/",
       maxAge: this.tokens.accessMaxAgeMs,
@@ -101,16 +114,22 @@ export class AuthController {
 
   private clearSessionCookies(response: Response) {
     const options = {
-      secure: process.env.NODE_ENV === "production",
+      secure: this.application.isProduction,
       sameSite: "lax" as const,
       path: "/",
     };
-    response.clearCookie("client_refresh_token", {
+    response.clearCookie(AUTH_COOKIE_NAMES.refresh, {
       ...options,
       httpOnly: true,
     });
-    response.clearCookie("client_has_rt", { ...options, httpOnly: false });
-    response.clearCookie("user_token", { ...options, httpOnly: true });
+    response.clearCookie(AUTH_COOKIE_NAMES.refreshMarker, {
+      ...options,
+      httpOnly: false,
+    });
+    response.clearCookie(AUTH_COOKIE_NAMES.access, {
+      ...options,
+      httpOnly: true,
+    });
   }
 
   private readCookie(request: Request, name: string) {

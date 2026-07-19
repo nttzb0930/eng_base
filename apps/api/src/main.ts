@@ -1,22 +1,27 @@
 import "reflect-metadata";
 
 import { ValidationPipe } from "@nestjs/common";
+import type { ConfigType } from "@nestjs/config";
 import { NestFactory } from "@nestjs/core";
 
 import { AppModule } from "./app.module";
+import { applicationConfig } from "./config";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const trustProxyHops = Number(process.env.TRUST_PROXY_HOPS ?? 0);
-  if (trustProxyHops > 0) {
-    app.getHttpAdapter().getInstance().set("trust proxy", trustProxyHops);
+  const application = app.get<ConfigType<typeof applicationConfig>>(
+    applicationConfig.KEY
+  );
+  if (application.trustProxyHops > 0) {
+    app
+      .getHttpAdapter()
+      .getInstance()
+      .set("trust proxy", application.trustProxyHops);
   }
 
   app.setGlobalPrefix("api");
   app.enableCors({
-    origin: (process.env.CORS_ORIGINS ?? "http://localhost:3000,http://localhost:3001")
-      .split(",")
-      .map((origin) => origin.trim()),
+    origin: application.corsOrigins,
     exposedHeaders: ["Content-Range", "X-Request-Id"],
     credentials: true,
   });
@@ -27,7 +32,7 @@ async function bootstrap() {
     })
   );
 
-  await app.listen(Number(process.env.API_PORT ?? 4000));
+  await app.listen(application.port);
 }
 
 void bootstrap();

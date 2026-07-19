@@ -13,6 +13,8 @@ const ApiEnvironmentSchema = z
       .min(32, "JWT_REFRESH_SECRET must be at least 32 characters"),
     JWT_ACCESS_EXPIRES_IN: z.string().trim().min(1).default("15m"),
     JWT_REFRESH_EXPIRES_IN: z.string().trim().min(1).default("7d"),
+    APP_NAME: z.string().trim().min(1).default("English Base API"),
+    APP_SERVICE_NAME: z.string().trim().min(1).default("eng-base-api"),
     API_PORT: z.coerce.number().int().positive().default(4000),
     CORS_ORIGINS: z
       .string()

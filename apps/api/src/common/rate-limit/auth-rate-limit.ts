@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import type { ExecutionContext } from "@nestjs/common";
 import type { Request } from "express";
 
+import { AUTH_COOKIE_NAMES } from "../http/auth-cookie.constants";
 import {
   AUTH_RATE_LIMIT_POLICY,
   type AuthRateLimitPolicy,
@@ -11,8 +12,7 @@ export function readAuthRateLimitPolicy(
   context: ExecutionContext
 ): AuthRateLimitPolicy | undefined {
   return Reflect.getMetadata(AUTH_RATE_LIMIT_POLICY, context.getHandler()) as
-    | AuthRateLimitPolicy
-    | undefined;
+    AuthRateLimitPolicy | undefined;
 }
 
 export function requestIp(request: Request) {
@@ -32,7 +32,7 @@ export function refreshSession(request: Request) {
   const cookie = request.headers.cookie
     ?.split(";")
     .map((item) => item.trim().split("="))
-    .find(([key]) => key === "client_refresh_token");
+    .find(([key]) => key === AUTH_COOKIE_NAMES.refresh);
   const token = cookie ? decodeURIComponent(cookie.slice(1).join("=")) : "";
   return token ? opaqueTracker(token) : `ip:${requestIp(request)}`;
 }
@@ -40,4 +40,3 @@ export function refreshSession(request: Request) {
 function opaqueTracker(value: string) {
   return createHash("sha256").update(value).digest("hex");
 }
-

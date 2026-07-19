@@ -9,7 +9,12 @@ import { HttpLoggingInterceptor } from "./common/interceptors/http-logging.inter
 import { LoggingModule } from "./common/logging";
 import { ApplicationThrottlerGuard } from "./common/guards/application-throttler.guard";
 import { createRateLimitOptions } from "./common/rate-limit/rate-limit.options";
-import { jwtConfig, rateLimitConfig, validateEnvironment } from "./config";
+import {
+  applicationConfig,
+  jwtConfig,
+  rateLimitConfig,
+  validateEnvironment,
+} from "./config";
 
 import { UserModule } from "./module/user";
 import { SettingsModule } from "./module/settings";
@@ -31,7 +36,7 @@ import { HealthModule } from "./module/health";
       isGlobal: true,
       envFilePath: ["../../.env", ".env"],
       validate: validateEnvironment,
-      load: [jwtConfig, rateLimitConfig],
+      load: [applicationConfig, jwtConfig, rateLimitConfig],
     }),
     ThrottlerModule.forRootAsync({
       imports: [ConfigModule],
