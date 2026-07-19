@@ -6,6 +6,7 @@ import path from "node:path";
 
 import {
   applyTopicCandidateReview,
+  candidateIdentity,
   type TopicCandidateArtifact,
   type TopicCandidateReviewDecision,
 } from "./topic-expansion.js";
@@ -31,6 +32,10 @@ const model =
   process.env.VOCAB_TOPIC_MODEL?.trim() ||
   process.env.GEMINI_VOCAB_POS_CORRECTION_MODEL?.trim() ||
   "gemini-2.5-flash";
+const reviewBatchSize = Number.parseInt(
+  process.env.VOCAB_TOPIC_REVIEW_BATCH_SIZE?.trim() || "25",
+  10
+);
 
 const readJson = async <T>(filePath: string) =>
   JSON.parse(await readFile(filePath, "utf8")) as T;
@@ -48,6 +53,17 @@ const writeJsonAtomically = async (targetPath: string, value: unknown) => {
     await rm(temporaryPath, { force: true });
     throw error;
   }
+};
+
+const chunk = <T>(items: T[], size: number): T[][] => {
+  if (!Number.isInteger(size) || size < 1) {
+    throw new Error("VOCAB_TOPIC_REVIEW_BATCH_SIZE must be a positive integer");
+  }
+  const chunks: T[][] = [];
+  for (let index = 0; index < items.length; index += size) {
+    chunks.push(items.slice(index, index + size));
+  }
+  return chunks;
 };
 
 const parseJson = (text: string): ProviderResponse => {
@@ -181,20 +197,46 @@ async function main() {
     ) {
       continue;
     }
-    const decisions = await generateReview(
-      [
-        "Classify each candidate for Topic relevance.",
-        `Topic: ${JSON.stringify(topic)}`,
-        "Decision rules:",
-        "- core: directly defines the topic and should be learned inside this topic.",
-        "- supporting: related and useful for this topic, but broader or secondary.",
-        "- reject: off-topic, romantic-only, object-only, overly generic, or too context-dependent.",
-        "Return one decision for every candidate.",
-        `Candidates: ${JSON.stringify(artifact.candidates)}`,
-      ].join("\n")
+    let reviewed = artifact;
+    const pendingCandidates = reviewed.candidates.filter(
+      (candidate) => !candidate.tier
     );
-    const reviewed = applyTopicCandidateReview(artifact, decisions);
-    await writeJsonAtomically(filePath, reviewed);
+    if (pendingCandidates.length < 1) {
+      reviewedFiles += 1;
+      keptCandidates += reviewed.candidates.length;
+      continue;
+    }
+
+    for (const candidateBatch of chunk(pendingCandidates, reviewBatchSize)) {
+      const decisions = await generateReview(
+        [
+          "Classify each candidate for Topic relevance.",
+          `Topic: ${JSON.stringify(topic)}`,
+          "Decision rules:",
+          "- core: directly defines the topic and should be learned inside this topic.",
+          "- supporting: related and useful for this topic, but broader or secondary.",
+          "- reject: off-topic, romantic-only, object-only, overly generic, or too context-dependent.",
+          "Return one decision for every candidate.",
+          `Candidates: ${JSON.stringify(candidateBatch)}`,
+        ].join("\n")
+      );
+      const batchReview = applyTopicCandidateReview(
+        { ...reviewed, candidates: candidateBatch, rejected: [] },
+        decisions
+      );
+      const reviewedIdentities = new Set(candidateBatch.map(candidateIdentity));
+      const remainingCandidates = reviewed.candidates.filter(
+        (candidate) => !reviewedIdentities.has(candidateIdentity(candidate))
+      );
+      reviewed = {
+        ...reviewed,
+        requestedCount:
+          remainingCandidates.length + batchReview.candidates.length,
+        candidates: [...remainingCandidates, ...batchReview.candidates],
+        rejected: [...reviewed.rejected, ...batchReview.rejected],
+      };
+      await writeJsonAtomically(filePath, reviewed);
+    }
     reviewedFiles += 1;
     keptCandidates += reviewed.candidates.length;
     rejectedCandidates += reviewed.rejected.length - artifact.rejected.length;

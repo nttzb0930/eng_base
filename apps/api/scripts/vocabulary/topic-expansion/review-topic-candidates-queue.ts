@@ -120,14 +120,30 @@ async function main() {
   );
 
   const runWorker = async (workerIndex: number) => {
-    while (failures.length === 0) {
+    while (true) {
       const topicSlug = jobs[nextIndex];
       nextIndex += 1;
       if (!topicSlug) return;
-      await runTopic(topicSlug, {
-        json: arguments_.json,
-        workerIndex,
-      });
+      try {
+        await runTopic(topicSlug, {
+          json: arguments_.json,
+          workerIndex,
+        });
+      } catch (error) {
+        const failure =
+          error instanceof Error ? error : new Error(String(error));
+        failures.push(failure);
+        emit(
+          "worker-failed",
+          {
+            topic: topicSlug,
+            worker: workerIndex,
+            durationMs: Date.now() - startedAt,
+          },
+          arguments_.json
+        );
+        console.error(failure.message);
+      }
     }
   };
 
@@ -140,7 +156,11 @@ async function main() {
       })
     )
   );
-  if (failures.length > 0) throw failures[0];
+  if (failures.length > 0) {
+    throw new Error(
+      `Topic candidate review queue finished with ${failures.length} failed topic(s)`
+    );
+  }
 
   emit(
     "run-finished",

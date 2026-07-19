@@ -1,4 +1,5 @@
 import type {
+  TopicCandidateEnrichmentTier,
   TopicDeficit,
   TopicExpansionArtifact,
 } from "./topic-expansion.js";
@@ -33,6 +34,14 @@ export type TopicCandidateReviewArguments = {
   topicSlug: string;
   all: boolean;
   chunkFileName: string | null;
+};
+
+export type TopicCandidateEnrichmentArguments = {
+  json: boolean;
+  topicSlug: string;
+  limit: number;
+  chunkSize: number;
+  tier: TopicCandidateEnrichmentTier;
 };
 
 export type TopicCandidateQueueArguments = {
@@ -289,6 +298,62 @@ export function parseTopicCandidateReviewArguments(
   }
 
   return { json, topicSlug: topicSlugs[0]!, all, chunkFileName };
+}
+
+export function parseTopicCandidateEnrichmentArguments(
+  args: string[]
+): TopicCandidateEnrichmentArguments {
+  let json = false;
+  let limit = 30;
+  let chunkSize = 5;
+  let tier: TopicCandidateEnrichmentTier = "all";
+  const topicSlugs: string[] = [];
+
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
+    if (argument === "--") continue;
+    if (argument === "--json") {
+      json = true;
+      continue;
+    }
+    if (argument === "--limit") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--limit requires a value");
+      limit = parsePositiveIntegerFlag("--limit", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--chunk-size") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunk-size requires a value");
+      chunkSize = parsePositiveIntegerFlag("--chunk-size", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--tier") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--tier requires a value");
+      if (value !== "core" && value !== "supporting" && value !== "all") {
+        throw new Error("--tier must be core, supporting, or all");
+      }
+      tier = value;
+      index += 1;
+      continue;
+    }
+    if (argument.startsWith("--")) {
+      throw new Error(`Unknown Topic candidate enrichment flag "${argument}"`);
+    }
+    topicSlugs.push(argument);
+  }
+
+  if (topicSlugs.length < 1) throw new Error("Topic slug is required");
+  if (topicSlugs.length > 1) {
+    throw new Error(
+      "Topic candidate enrichment accepts exactly one Topic slug"
+    );
+  }
+
+  return { json, topicSlug: topicSlugs[0]!, limit, chunkSize, tier };
 }
 
 export function parseTopicCandidateQueueArguments(

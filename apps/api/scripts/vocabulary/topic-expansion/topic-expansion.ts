@@ -46,6 +46,8 @@ export type TopicCandidateReviewDecision = TopicCandidate & {
   reason: string;
 };
 
+export type TopicCandidateEnrichmentTier = "core" | "supporting" | "all";
+
 export type TopicCandidateArtifact = {
   schemaVersion: 1;
   status: "review" | "accepted" | "rejected";
@@ -121,7 +123,7 @@ export function calculateTopicDeficits(
     .filter((deficit) => deficit.requestedCount > 0);
 }
 
-const candidateIdentity = (candidate: TopicCandidate) =>
+export const candidateIdentity = (candidate: TopicCandidate) =>
   `${candidate.word.trim().toLowerCase()}|${candidate.pos
     .trim()
     .toLowerCase()}|${candidate.cefrLevel.trim().toLowerCase()}`;
@@ -227,6 +229,42 @@ export function applyTopicCandidateReview(
     candidates: reviewedCandidates,
     rejected: rejectedCandidates,
   };
+}
+
+export function selectTopicCandidatesForEnrichment(input: {
+  topicSlug: string;
+  candidates: TopicCandidate[];
+  catalog: VocabularyCatalogItem[];
+  pendingArtifacts: TopicExpansionArtifact[];
+  tier: TopicCandidateEnrichmentTier;
+  limit: number;
+}): TopicCandidate[] {
+  if (!Number.isInteger(input.limit) || input.limit < 1) {
+    throw new Error(
+      "Topic candidate enrichment limit must be a positive integer"
+    );
+  }
+
+  const knownIdentities = new Set(input.catalog.map(vocabularyIdentity));
+  for (const artifact of input.pendingArtifacts) {
+    for (const word of artifact.words) {
+      if (hasIdentityFields(word))
+        knownIdentities.add(vocabularyIdentity(word));
+    }
+  }
+
+  const tierRank = (candidate: TopicCandidate) =>
+    candidate.tier === "core" ? 0 : 1;
+
+  return input.candidates
+    .filter((candidate) => {
+      if (!candidate.tier) return false;
+      if (input.tier !== "all" && candidate.tier !== input.tier) return false;
+      return !knownIdentities.has(candidateIdentity(candidate));
+    })
+    .sort((left, right) => tierRank(left) - tierRank(right))
+    .slice(0, input.limit)
+    .map((candidate) => ({ ...candidate }));
 }
 
 export function validateExpansionArtifact(

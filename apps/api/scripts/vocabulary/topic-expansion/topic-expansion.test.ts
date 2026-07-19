@@ -6,6 +6,7 @@ import test from "node:test";
 import {
   calculateTopicDeficits,
   applyTopicCandidateReview,
+  selectTopicCandidatesForEnrichment,
   dedupeTopicCandidates,
   mergeAcceptedExpansion,
   validateExpansionArtifact,
@@ -26,6 +27,7 @@ import {
   createTopicExpansionQueueJobs,
   createTopicExpansionWorkerCommand,
   parseTopicCandidateGenerationArguments,
+  parseTopicCandidateEnrichmentArguments,
   parseTopicCandidateQueueArguments,
   parseTopicCandidateReviewArguments,
   parseTopicExpansionArguments,
@@ -448,6 +450,90 @@ test("Topic candidate review arguments select all chunks or one chunk", () => {
     () => parseTopicCandidateReviewArguments(["friends"]),
     /requires --all or --chunk/u
   );
+});
+
+test("Topic candidate enrichment arguments support limit chunk size and tier", () => {
+  assert.deepEqual(
+    parseTopicCandidateEnrichmentArguments([
+      "--",
+      "friends",
+      "--limit",
+      "30",
+      "--chunk-size",
+      "5",
+      "--tier",
+      "core",
+      "--json",
+    ]),
+    {
+      json: true,
+      topicSlug: "friends",
+      limit: 30,
+      chunkSize: 5,
+      tier: "core",
+    }
+  );
+  assert.throws(
+    () => parseTopicCandidateEnrichmentArguments(["--limit", "5"]),
+    /Topic slug is required/u
+  );
+  assert.throws(
+    () => parseTopicCandidateEnrichmentArguments(["friends", "--tier", "bad"]),
+    /--tier must be core, supporting, or all/u
+  );
+});
+
+test("Topic candidate enrichment selects reviewed core candidates before supporting and skips known words", () => {
+  const selected = selectTopicCandidatesForEnrichment({
+    topicSlug: "friends",
+    candidates: [
+      {
+        word: "supportive",
+        pos: "adjective",
+        cefrLevel: "B1",
+        tier: "supporting",
+      },
+      { word: "buddy", pos: "noun", cefrLevel: "B1", tier: "core" },
+      { word: "friend", pos: "noun", cefrLevel: "A1", tier: "core" },
+      { word: "untiered", pos: "noun", cefrLevel: "B1" },
+    ],
+    catalog: [
+      {
+        ...generated,
+        normalizedWord: "friend",
+        word: "friend",
+        pos: "noun",
+        cefrLevel: "A1",
+      },
+    ],
+    pendingArtifacts: [
+      {
+        ...artifact("review"),
+        targetTopicSlug: "friends",
+        words: [
+          {
+            ...generated,
+            normalizedWord: "buddy",
+            word: "buddy",
+            pos: "noun",
+            cefrLevel: "B1",
+            topics: ["friends"],
+          },
+        ],
+      },
+    ],
+    tier: "all",
+    limit: 10,
+  });
+
+  assert.deepEqual(selected, [
+    {
+      word: "supportive",
+      pos: "adjective",
+      cefrLevel: "B1",
+      tier: "supporting",
+    },
+  ]);
 });
 
 test("Topic candidate queue arguments default to conservative workers", () => {
@@ -903,6 +989,38 @@ test("Topic candidate reviewer applies provider decisions without provider secre
   assert.match(source, /core/u);
   assert.match(source, /supporting/u);
   assert.match(source, /reject/u);
+  assert.match(source, /VOCAB_TOPIC_REVIEW_BATCH_SIZE/u);
+  assert.match(source, /candidateBatch/u);
+  assert.match(source, /writeJsonAtomically\(filePath, reviewed\)/u);
+  assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
+});
+
+test("Topic candidate enricher converts reviewed candidates into expansion artifacts", async () => {
+  const [source, packageJsonText] = await Promise.all([
+    readFile(
+      path.resolve(
+        process.cwd(),
+        "scripts/vocabulary/topic-expansion/enrich-topic-candidates.ts"
+      ),
+      "utf8"
+    ),
+    readFile(path.resolve(process.cwd(), "package.json"), "utf8"),
+  ]);
+  const packageJson = JSON.parse(packageJsonText) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.match(source, /parseTopicCandidateEnrichmentArguments/u);
+  assert.match(source, /selectTopicCandidatesForEnrichment/u);
+  assert.match(source, /validateExpansionArtifact/u);
+  assert.match(source, /working\/topic-candidates/u);
+  assert.match(source, /working\/topic-expansion/u);
+  assert.match(source, /source: "ai-topic-expansion"/u);
+  assert.match(source, /dictionaryLookupCompleted: false/u);
+  assert.match(
+    packageJson.scripts?.["data:enrich-topic-candidates"] ?? "",
+    /enrich-topic-candidates\.ts/u
+  );
   assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
 });
 
@@ -928,6 +1046,8 @@ test("Topic candidate queue runners use bounded workers and single-topic scripts
   assert.match(reviewSource, /parseTopicCandidateQueueArguments/u);
   assert.match(reviewSource, /createTopicCandidateReviewWorkerCommand/u);
   assert.match(reviewSource, /worker-start/u);
+  assert.match(reviewSource, /worker-failed/u);
+  assert.doesNotMatch(reviewSource, /while \(failures\.length === 0\)/u);
   assert.doesNotMatch(
     `${generateSource}\n${reviewSource}`,
     /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u

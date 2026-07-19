@@ -45,6 +45,7 @@
     "data:generate-topic-candidates-queue": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/generate-topic-candidates-queue.ts",
     "data:review-topic-candidates": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/review-topic-candidates.ts",
     "data:review-topic-candidates-queue": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/review-topic-candidates-queue.ts",
+    "data:enrich-topic-candidates": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/enrich-topic-candidates.ts",
     "data:merge-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion.ts"
   },
   "dependencies": {
