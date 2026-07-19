@@ -211,8 +211,13 @@ async function main() {
     [
       `Generate exactly ${arguments_.count} candidate English vocabulary words for this topic.`,
       `Topic: ${JSON.stringify(topic)}`,
+      "Select core vocabulary for the topic: words that directly name the people, objects, qualities, states, actions, or phrases that define the topic.",
+      "A candidate must be topic-defining, not merely usable in a sentence about the topic.",
       "Return only word identities. Do not include meanings, examples, or audio.",
-      "Avoid proper nouns, phrases longer than three words, and words unrelated to the topic.",
+      "Avoid generic verbs and broad social actions unless they are direct topic labels.",
+      "For a friends/friendship topic, avoid weak contextual verbs such as defend, lend, entertain, help, make, get, do, and give unless the word itself names a friendship concept.",
+      "Prefer concrete topic labels and stable collocations over context-only verbs.",
+      "Avoid proper nouns, phrases longer than three words, idioms that require a full sentence, and words unrelated to the topic.",
     ].join("\n")
   );
 

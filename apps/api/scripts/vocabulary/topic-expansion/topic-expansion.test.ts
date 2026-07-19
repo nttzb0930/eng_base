@@ -701,5 +701,9 @@ test("Topic candidate generator writes review artifacts without provider secrets
   assert.match(source, /dedupeTopicCandidates/u);
   assert.match(source, /working\/topic-candidates/u);
   assert.match(source, /chunk-\\d\{3\}\\\.json/u);
+  assert.match(source, /core vocabulary/u);
+  assert.match(source, /not merely usable in a sentence/u);
+  assert.match(source, /generic verbs/u);
+  assert.match(source, /defend, lend, entertain/u);
   assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
 });
