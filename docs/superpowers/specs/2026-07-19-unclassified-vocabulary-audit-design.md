@@ -73,8 +73,8 @@ Topics itself.
 
 ### Normalization review
 
-`normalization-review.json` receives all remaining unclassified records,
-including `adverb`, `number`, `interjection`, blank POS, and unknown POS values.
+`normalization-review.json` receives all remaining valid unclassified records,
+including `adverb`, `number`, `interjection`, and unknown non-empty POS values.
 The first version deliberately avoids semantic guesses such as deciding which
 sense of `bank` or `ball` is correct. Missing required identity or meaning
 fields remain canonical source validation failures rather than audit warnings.
@@ -134,7 +134,7 @@ Pure behavioral tests must prove:
 
 1. known grammar POS values enter the function-word bucket;
 2. noun, adjective, and verb records enter content recovery;
-3. adverb, number, interjection, blank, and unknown POS values enter
+3. adverb, number, interjection, and unknown non-empty POS values enter
    normalization review;
 4. only records with empty `topics` are audited;
 5. buckets are mutually exclusive and counts reconcile;
