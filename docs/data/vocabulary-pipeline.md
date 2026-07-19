@@ -327,6 +327,22 @@ supporting words later. Only `reject` decisions move into `rejected` with
 reasons such as `review:romantic-relationship`. This step updates only ignored
 candidate artifacts; it does not write the catalog or PostgreSQL.
 
+For all topics, keep generation and review as two separate queues:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-candidates-queue -- --workers 3 --count 20
+```
+
+Then review every topic folder that has generated candidate chunks:
+
+```powershell
+pnpm --filter @repo/api data:review-topic-candidates-queue -- --workers 3
+```
+
+Use this order for large runs: generate all topic candidates, review all topic
+candidates, spot-check several artifacts manually, then enrich accepted
+candidates in a later step.
+
 Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
 bounded events for `run-start`, `provider-request-start`,
 `provider-response-received`, `validation-start`, `validation-success`,

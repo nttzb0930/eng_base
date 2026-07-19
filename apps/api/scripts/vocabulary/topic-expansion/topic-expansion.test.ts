@@ -14,6 +14,8 @@ import {
 } from "./topic-expansion.js";
 import {
   createTopicDeficitReport,
+  createTopicCandidateGenerationWorkerCommand,
+  createTopicCandidateReviewWorkerCommand,
   createTopicExpansionExclusionWords,
   formatGenerationCreated,
   formatGenerationStart,
@@ -24,6 +26,7 @@ import {
   createTopicExpansionQueueJobs,
   createTopicExpansionWorkerCommand,
   parseTopicCandidateGenerationArguments,
+  parseTopicCandidateQueueArguments,
   parseTopicCandidateReviewArguments,
   parseTopicExpansionArguments,
   parseTopicExpansionQueueArguments,
@@ -428,6 +431,83 @@ test("Topic candidate review arguments select all chunks or one chunk", () => {
   );
 });
 
+test("Topic candidate queue arguments default to conservative workers", () => {
+  assert.deepEqual(parseTopicCandidateQueueArguments(["--"]), {
+    json: false,
+    workers: 1,
+    count: 20,
+  });
+  assert.deepEqual(
+    parseTopicCandidateQueueArguments([
+      "--",
+      "--json",
+      "--workers",
+      "3",
+      "--count",
+      "50",
+    ]),
+    {
+      json: true,
+      workers: 3,
+      count: 50,
+    }
+  );
+  assert.throws(
+    () => parseTopicCandidateQueueArguments(["--workers", "0"]),
+    /--workers must be a positive integer/u
+  );
+});
+
+test("Topic candidate queue worker commands use Windows-safe pnpm spawning", () => {
+  assert.deepEqual(
+    createTopicCandidateGenerationWorkerCommand({
+      platform: "win32",
+      topicSlug: "friends",
+      count: 20,
+      json: true,
+    }),
+    {
+      command: "cmd.exe",
+      args: [
+        "/d",
+        "/s",
+        "/c",
+        "pnpm.cmd",
+        "--filter",
+        "@repo/api",
+        "data:generate-topic-candidates",
+        "--",
+        "friends",
+        "--count",
+        "20",
+        "--json",
+      ],
+    }
+  );
+  assert.deepEqual(
+    createTopicCandidateReviewWorkerCommand({
+      platform: "win32",
+      topicSlug: "friends",
+      json: false,
+    }),
+    {
+      command: "cmd.exe",
+      args: [
+        "/d",
+        "/s",
+        "/c",
+        "pnpm.cmd",
+        "--filter",
+        "@repo/api",
+        "data:review-topic-candidates",
+        "--",
+        "friends",
+        "--all",
+      ],
+    }
+  );
+});
+
 test("Topic expansion queue arguments default to bounded conservative execution", () => {
   assert.deepEqual(parseTopicExpansionQueueArguments(["--"]), {
     json: false,
@@ -805,4 +885,32 @@ test("Topic candidate reviewer applies provider decisions without provider secre
   assert.match(source, /supporting/u);
   assert.match(source, /reject/u);
   assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
+});
+
+test("Topic candidate queue runners use bounded workers and single-topic scripts", async () => {
+  const generateSource = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/generate-topic-candidates-queue.ts"
+    ),
+    "utf8"
+  );
+  const reviewSource = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/review-topic-candidates-queue.ts"
+    ),
+    "utf8"
+  );
+
+  assert.match(generateSource, /parseTopicCandidateQueueArguments/u);
+  assert.match(generateSource, /createTopicCandidateGenerationWorkerCommand/u);
+  assert.match(generateSource, /worker-start/u);
+  assert.match(reviewSource, /parseTopicCandidateQueueArguments/u);
+  assert.match(reviewSource, /createTopicCandidateReviewWorkerCommand/u);
+  assert.match(reviewSource, /worker-start/u);
+  assert.doesNotMatch(
+    `${generateSource}\n${reviewSource}`,
+    /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u
+  );
 });

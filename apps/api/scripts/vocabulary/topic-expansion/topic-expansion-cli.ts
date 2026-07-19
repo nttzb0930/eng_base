@@ -35,6 +35,12 @@ export type TopicCandidateReviewArguments = {
   chunkFileName: string | null;
 };
 
+export type TopicCandidateQueueArguments = {
+  json: boolean;
+  workers: number;
+  count: number;
+};
+
 export type TopicExpansionQueueJob = {
   topicSlug: string;
   requestedCount: number;
@@ -285,6 +291,43 @@ export function parseTopicCandidateReviewArguments(
   return { json, topicSlug: topicSlugs[0]!, all, chunkFileName };
 }
 
+export function parseTopicCandidateQueueArguments(
+  args: string[]
+): TopicCandidateQueueArguments {
+  let json = false;
+  let workers = 1;
+  let count = 20;
+
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
+    if (argument === "--") continue;
+    if (argument === "--json") {
+      json = true;
+      continue;
+    }
+    if (argument === "--workers") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--workers requires a value");
+      workers = parsePositiveIntegerFlag("--workers", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--count") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--count requires a value");
+      count = parsePositiveIntegerFlag("--count", value);
+      index += 1;
+      continue;
+    }
+    if (argument.startsWith("--")) {
+      throw new Error(`Unknown Topic candidate queue flag "${argument}"`);
+    }
+    throw new Error("Topic candidate queue does not accept positional slugs");
+  }
+
+  return { json, workers, count };
+}
+
 export function createTopicExpansionQueueJobs(
   deficits: TopicDeficit[],
   options: { chunkSize: number; chunksPerTopic: number }
@@ -343,6 +386,54 @@ export function createTopicExpansionWorkerCommand(input: {
     command: "pnpm",
     args: pnpmArgs,
   };
+}
+
+const createPnpmWorkerCommand = (
+  platform: NodeJS.Platform,
+  args: string[]
+): TopicExpansionWorkerCommand => {
+  if (platform === "win32") {
+    return {
+      command: "cmd.exe",
+      args: ["/d", "/s", "/c", "pnpm.cmd", ...args],
+    };
+  }
+
+  return { command: "pnpm", args };
+};
+
+export function createTopicCandidateGenerationWorkerCommand(input: {
+  platform: NodeJS.Platform;
+  topicSlug: string;
+  count: number;
+  json: boolean;
+}): TopicExpansionWorkerCommand {
+  return createPnpmWorkerCommand(input.platform, [
+    "--filter",
+    "@repo/api",
+    "data:generate-topic-candidates",
+    "--",
+    input.topicSlug,
+    "--count",
+    String(input.count),
+    ...(input.json ? ["--json"] : []),
+  ]);
+}
+
+export function createTopicCandidateReviewWorkerCommand(input: {
+  platform: NodeJS.Platform;
+  topicSlug: string;
+  json: boolean;
+}): TopicExpansionWorkerCommand {
+  return createPnpmWorkerCommand(input.platform, [
+    "--filter",
+    "@repo/api",
+    "data:review-topic-candidates",
+    "--",
+    input.topicSlug,
+    "--all",
+    ...(input.json ? ["--json"] : []),
+  ]);
 }
 
 export function resolveTopicExpansionRequest(
