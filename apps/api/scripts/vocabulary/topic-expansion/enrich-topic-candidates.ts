@@ -167,7 +167,7 @@ const parseJson = (text: string): ProviderResponse => {
 
 const envValue = (parts: string[]) => process.env[parts.join("_")]?.trim();
 
-const generate = async (systemInstruction: string, prompt: string) => {
+const generateOnce = async (systemInstruction: string, prompt: string) => {
   if (provider === "openai-compatible") {
     const apiKey = envValue(["OPENAI", "API", "KEY"]);
     const baseUrl = envValue(["OPENAI", "BASE", "URL"])?.replace(/\/+$/u, "");
@@ -218,6 +218,47 @@ const generate = async (systemInstruction: string, prompt: string) => {
     },
   });
   return parseJson(response.text ?? "{}").words;
+};
+
+const retryAttempts = Number.parseInt(
+  process.env.VOCAB_AI_RETRY_ATTEMPTS?.trim() || "4",
+  10
+);
+const retryDelayMs = Number.parseInt(
+  process.env.VOCAB_AI_RETRY_DELAY_MS?.trim() || "2000",
+  10
+);
+
+const sleep = async (durationMs: number) =>
+  new Promise((resolve) => {
+    setTimeout(resolve, durationMs);
+  });
+
+const shouldRetryProviderError = (error: unknown) => {
+  const message = error instanceof Error ? error.message : String(error);
+  return /HTTP (?:429|500|502|503|504)\b|ECONNRESET|ETIMEDOUT|fetch failed/iu.test(
+    message
+  );
+};
+
+const generate = async (systemInstruction: string, prompt: string) => {
+  const attempts =
+    Number.isInteger(retryAttempts) && retryAttempts > 0 ? retryAttempts : 4;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await generateOnce(systemInstruction, prompt);
+    } catch (error) {
+      if (attempt >= attempts || !shouldRetryProviderError(error)) {
+        throw error;
+      }
+      const backoffMs = retryDelayMs * attempt;
+      console.warn(
+        `AI provider request failed; retrying attempt ${attempt + 1}/${attempts} after ${backoffMs}ms`
+      );
+      await sleep(backoffMs);
+    }
+  }
+  throw new Error("AI provider retry loop failed unexpectedly");
 };
 
 const readCandidateArtifacts = async (topicSlug: string) => {
@@ -343,13 +384,15 @@ async function main() {
           `Candidates to enrich: ${JSON.stringify(candidateBatch)}`,
         ].join("\n")
       )
-    ).map((word): VocabularyCatalogItem => ({
-      ...word,
-      source: "ai-topic-expansion",
-      exampleSource: "ai-topic-expansion",
-      dictionaryLookupCompleted: false,
-      topics: [topic.slug],
-    })).map(normalizePrimaryExample);
+    )
+      .map((word): VocabularyCatalogItem => ({
+        ...word,
+        source: "ai-topic-expansion",
+        exampleSource: "ai-topic-expansion",
+        dictionaryLookupCompleted: false,
+        topics: [topic.slug],
+      }))
+      .map(normalizePrimaryExample);
     assertGeneratedWordsMatchCandidates(words, candidateBatch);
 
     const artifact: TopicExpansionArtifact = {
