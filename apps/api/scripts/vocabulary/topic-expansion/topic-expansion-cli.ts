@@ -50,6 +50,14 @@ export type TopicCandidateQueueArguments = {
   count: number;
 };
 
+export type TopicCandidateEnrichmentQueueArguments = {
+  json: boolean;
+  workers: number;
+  limit: number;
+  chunkSize: number;
+  tier: TopicCandidateEnrichmentTier;
+};
+
 export type TopicExpansionQueueJob = {
   topicSlug: string;
   requestedCount: number;
@@ -393,6 +401,66 @@ export function parseTopicCandidateQueueArguments(
   return { json, workers, count };
 }
 
+export function parseTopicCandidateEnrichmentQueueArguments(
+  args: string[]
+): TopicCandidateEnrichmentQueueArguments {
+  let json = false;
+  let workers = 1;
+  let limit = 30;
+  let chunkSize = 5;
+  let tier: TopicCandidateEnrichmentTier = "all";
+
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
+    if (argument === "--") continue;
+    if (argument === "--json") {
+      json = true;
+      continue;
+    }
+    if (argument === "--workers") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--workers requires a value");
+      workers = parsePositiveIntegerFlag("--workers", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--limit") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--limit requires a value");
+      limit = parsePositiveIntegerFlag("--limit", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--chunk-size") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunk-size requires a value");
+      chunkSize = parsePositiveIntegerFlag("--chunk-size", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--tier") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--tier requires a value");
+      if (value !== "core" && value !== "supporting" && value !== "all") {
+        throw new Error("--tier must be core, supporting, or all");
+      }
+      tier = value;
+      index += 1;
+      continue;
+    }
+    if (argument.startsWith("--")) {
+      throw new Error(
+        `Unknown Topic candidate enrichment queue flag "${argument}"`
+      );
+    }
+    throw new Error(
+      "Topic candidate enrichment queue does not accept positional slugs"
+    );
+  }
+
+  return { json, workers, limit, chunkSize, tier };
+}
+
 export function createTopicExpansionQueueJobs(
   deficits: TopicDeficit[],
   options: { chunkSize: number; chunksPerTopic: number }
@@ -497,6 +565,30 @@ export function createTopicCandidateReviewWorkerCommand(input: {
     "--",
     input.topicSlug,
     "--all",
+    ...(input.json ? ["--json"] : []),
+  ]);
+}
+
+export function createTopicCandidateEnrichmentWorkerCommand(input: {
+  platform: NodeJS.Platform;
+  topicSlug: string;
+  limit: number;
+  chunkSize: number;
+  tier: TopicCandidateEnrichmentTier;
+  json: boolean;
+}): TopicExpansionWorkerCommand {
+  return createPnpmWorkerCommand(input.platform, [
+    "--filter",
+    "@repo/api",
+    "data:enrich-topic-candidates",
+    "--",
+    input.topicSlug,
+    "--limit",
+    String(input.limit),
+    "--chunk-size",
+    String(input.chunkSize),
+    "--tier",
+    input.tier,
     ...(input.json ? ["--json"] : []),
   ]);
 }

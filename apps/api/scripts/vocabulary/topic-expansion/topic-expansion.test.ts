@@ -16,6 +16,7 @@ import {
 import {
   createTopicDeficitReport,
   createTopicCandidateGenerationWorkerCommand,
+  createTopicCandidateEnrichmentWorkerCommand,
   createTopicCandidateReviewWorkerCommand,
   createTopicExpansionExclusionWords,
   formatGenerationCreated,
@@ -28,6 +29,7 @@ import {
   createTopicExpansionWorkerCommand,
   parseTopicCandidateGenerationArguments,
   parseTopicCandidateEnrichmentArguments,
+  parseTopicCandidateEnrichmentQueueArguments,
   parseTopicCandidateQueueArguments,
   parseTopicCandidateReviewArguments,
   parseTopicExpansionArguments,
@@ -483,6 +485,38 @@ test("Topic candidate enrichment arguments support limit chunk size and tier", (
   );
 });
 
+test("Topic candidate enrichment queue arguments support workers limit chunk size and tier", () => {
+  assert.deepEqual(
+    parseTopicCandidateEnrichmentQueueArguments([
+      "--",
+      "--workers",
+      "3",
+      "--limit",
+      "30",
+      "--chunk-size",
+      "5",
+      "--tier",
+      "core",
+      "--json",
+    ]),
+    {
+      json: true,
+      workers: 3,
+      limit: 30,
+      chunkSize: 5,
+      tier: "core",
+    }
+  );
+  assert.throws(
+    () => parseTopicCandidateEnrichmentQueueArguments(["friends"]),
+    /does not accept positional slugs/u
+  );
+  assert.throws(
+    () => parseTopicCandidateEnrichmentQueueArguments(["--tier", "bad"]),
+    /--tier must be core, supporting, or all/u
+  );
+});
+
 test("Topic candidate enrichment selects reviewed core candidates before supporting and skips known words", () => {
   const selected = selectTopicCandidatesForEnrichment({
     topicSlug: "friends",
@@ -608,6 +642,37 @@ test("Topic candidate queue worker commands use Windows-safe pnpm spawning", () 
         "--",
         "friends",
         "--all",
+      ],
+    }
+  );
+  assert.deepEqual(
+    createTopicCandidateEnrichmentWorkerCommand({
+      platform: "win32",
+      topicSlug: "friends",
+      limit: 30,
+      chunkSize: 5,
+      tier: "core",
+      json: true,
+    }),
+    {
+      command: "cmd.exe",
+      args: [
+        "/d",
+        "/s",
+        "/c",
+        "pnpm.cmd",
+        "--filter",
+        "@repo/api",
+        "data:enrich-topic-candidates",
+        "--",
+        "friends",
+        "--limit",
+        "30",
+        "--chunk-size",
+        "5",
+        "--tier",
+        "core",
+        "--json",
       ],
     }
   );
@@ -1039,6 +1104,16 @@ test("Topic candidate queue runners use bounded workers and single-topic scripts
     ),
     "utf8"
   );
+  const enrichSource = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/enrich-topic-candidates-queue.ts"
+    ),
+    "utf8"
+  );
+  const packageJson = JSON.parse(
+    await readFile(path.resolve(process.cwd(), "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
 
   assert.match(generateSource, /parseTopicCandidateQueueArguments/u);
   assert.match(generateSource, /createTopicCandidateGenerationWorkerCommand/u);
@@ -1048,8 +1123,16 @@ test("Topic candidate queue runners use bounded workers and single-topic scripts
   assert.match(reviewSource, /worker-start/u);
   assert.match(reviewSource, /worker-failed/u);
   assert.doesNotMatch(reviewSource, /while \(failures\.length === 0\)/u);
+  assert.match(enrichSource, /parseTopicCandidateEnrichmentQueueArguments/u);
+  assert.match(enrichSource, /createTopicCandidateEnrichmentWorkerCommand/u);
+  assert.match(enrichSource, /worker-start/u);
+  assert.match(enrichSource, /worker-failed/u);
+  assert.match(
+    packageJson.scripts?.["data:enrich-topic-candidates-queue"] ?? "",
+    /enrich-topic-candidates-queue\.ts/u
+  );
   assert.doesNotMatch(
-    `${generateSource}\n${reviewSource}`,
+    `${generateSource}\n${reviewSource}\n${enrichSource}`,
     /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u
   );
 });
