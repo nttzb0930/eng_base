@@ -90,6 +90,40 @@ from `.env`, publishes `${DB_PORT:-5432}`, and is addressed as service `db` in
 Compose networks. Do not put container-only hostnames into the shared local URL
 unless the API also runs in that network.
 
+## Offline vocabulary providers
+
+Vocabulary provider variables are read only by explicit data commands. They are
+not required to boot Web, Admin, or API. Keep real keys in the ignored root
+`.env`; committed examples must leave key values empty.
+
+For an OpenAI-compatible local proxy whose API root is
+`http://127.0.0.1:8045/v1`, use:
+
+```dotenv
+VOCAB_AI_PROVIDER=openai-compatible
+VOCAB_TOPIC_MODEL=gemini-3-flash
+VOCAB_TOPIC_BATCH_SIZE=50
+VOCAB_TOPIC_MINIMUM_WORDS=30
+VOCAB_AI_CONCURRENCY=3
+VOCAB_AI_DEBUG=false
+OPENAI_API_KEY=replace-in-local-env-only
+OPENAI_BASE_URL=http://127.0.0.1:8045/v1
+```
+
+`OPENAI_BASE_URL` is the API root, not the complete endpoint. The Topic runner
+appends `/chat/completions`; setting the complete endpoint would duplicate that
+path. Use `GEMINI_API_KEY` only when `VOCAB_AI_PROVIDER=gemini`.
+
+Basic run and per-batch progress is always printed. Set `VOCAB_AI_DEBUG=true`
+only for bounded provider/model, record-count, mismatch-code, and fingerprint
+prefix metadata. Debug mode still excludes keys, authorization headers, full
+prompts, full batches, and raw provider responses.
+
+Any key pasted into chat, terminal history, logs, or a Git commit must be
+rotated. Removing it from the current `.env.example` does not remove it from Git
+history; history rewriting is a separate destructive operation that requires a
+reviewed backup and explicit approval before any remote push.
+
 ## CI configuration
 
 CI uses synthetic compile-only values:

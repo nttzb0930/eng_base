@@ -26,6 +26,21 @@ The catalog currently contains 3,000 records. The taxonomy contains exactly 103
 Topics. Record identity is `normalizedWord + pos + cefrLevel`; duplicate
 identities are rejected before merge or seed.
 
+Each canonical Topic has stable `slug` and `order` fields plus manually authored
+English/Vietnamese presentation fields:
+
+```text
+title, description, group
+titleVi, descriptionVi, groupVi
+```
+
+`vocabulary-catalog.json[*].topics` remains an array of canonical slug strings.
+Never embed localized Topic objects into catalog records. Seed synchronization
+copies the taxonomy presentation fields into PostgreSQL. The Topic API accepts
+`locale=en|vi`, defaults to English, and returns one localized
+`title`/`description`/`group` shape with field-level English fallback. Web cache
+keys include locale and group the learn-by-topic catalog by the returned group.
+
 ## Version-control policy
 
 | Path                      | Meaning                                                              | Commit?           |
@@ -162,11 +177,36 @@ pnpm --filter @repo/api data:merge-topics -- --check
 pnpm --filter @repo/api data:merge-topics
 ```
 
-Prepare creates deterministic one-based IDs and a catalog SHA-256 manifest.
+Prepare creates deterministic one-based IDs and a version-2 manifest. The
+manifest fingerprints the catalog, bilingual taxonomy, prompt, and every batch
+input. Run prepare again after any of those canonical inputs changes.
+
+Every output stores an execution identity containing the input/catalog/
+taxonomy/prompt fingerprints plus provider and model. An existing output is
+reused only when the complete identity and its records validate exactly. A
+legacy or stale output is reported as `batch-stale` and regenerated; file
+existence alone never causes a skip.
+
+Basic `run-start`, per-batch, and `run-finished` JSON events are always printed.
+Set `VOCAB_AI_DEBUG=true` for bounded mismatch reasons and fingerprint prefixes;
+keys, prompts, batches, and raw responses are never logged. Concurrency remains
+bounded by `VOCAB_AI_CONCURRENCY`.
+
+Run one deterministic batch when resuming or diagnosing:
+
+```powershell
+pnpm --filter @repo/api data:classify-topics-ai -- batch-001
+```
+
 Provider responses must return exactly one result for every requested ID, zero
-or one canonical topic, and no extra IDs. Invalid responses go to `rejected`;
-the runner never silently drops unknown topics. Merge writes an ignored backup
-and atomically replaces only the catalog after full validation.
+or one canonical topic, and no extra IDs. Invalid responses write sanitized
+metadata under `working/topic-classification/rejected/`. A requested rejected or
+missing batch makes the command exit nonzero.
+
+`data:merge-topics -- --check` and the real merge both reject missing,
+rejected, mixed-provider/model, legacy, or stale artifacts before writing. A
+successful real merge creates an ignored backup and atomically replaces only
+the catalog. Classification and merge never update PostgreSQL.
 
 ## Topic expansion flow
 
@@ -234,7 +274,8 @@ normalization/POS apply). Review dry-run output before an apply. Never run a
 database-writing command merely to validate source files.
 
 `data:seed-topics` synchronizes canonical Topic records and catalog relations; it
-is not a classifier. `db:seed` may write broad learning content and progress
+also synchronizes English/Vietnamese Topic presentation fields and is not a
+classifier. `db:seed` may write broad learning content and progress
 dependencies. Confirm the target environment, backup policy, expected record
 counts, and relationship behavior before either command.
 
