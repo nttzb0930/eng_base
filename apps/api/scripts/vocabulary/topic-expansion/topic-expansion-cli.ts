@@ -32,7 +32,7 @@ export type TopicDeficitReport = {
 };
 
 export function parseTopicExpansionArguments(
-  args: string[],
+  args: string[]
 ): TopicExpansionArguments {
   let json = false;
   const topicSlugs: string[] = [];
@@ -62,7 +62,9 @@ export function createTopicDeficitReport(input: {
   minimumWords: number;
   catalogItems: number;
 }): TopicDeficitReport {
-  const topicsBySlug = new Map(input.topics.map((topic) => [topic.slug, topic]));
+  const topicsBySlug = new Map(
+    input.topics.map((topic) => [topic.slug, topic])
+  );
   const groups: TopicDeficitReportGroup[] = [];
   const groupsByName = new Map<string, TopicDeficitReportGroup>();
 
@@ -105,7 +107,7 @@ export function createTopicDeficitReport(input: {
     emptyTopics: entries.filter((topic) => topic.existingCount === 0).length,
     requestedNewWords: entries.reduce(
       (total, topic) => total + topic.requestedCount,
-      0,
+      0
     ),
     catalogItems: input.catalogItems,
     groups,
@@ -116,7 +118,7 @@ export function createTopicDeficitReport(input: {
 
 export function formatTopicDeficitReport(
   report: TopicDeficitReport,
-  reportPath: string,
+  reportPath: string
 ): string {
   const lines = [
     "Vocabulary Topic Expansion Deficits",
@@ -136,18 +138,20 @@ export function formatTopicDeficitReport(
     lines.push("", `${group.group} / ${group.groupVi}`);
     const slugWidth = Math.max(
       "topic".length,
-      ...group.topics.map((topic) => topic.slug.length),
+      ...group.topics.map((topic) => topic.slug.length)
     );
     lines.push(
-      `${"topic".padEnd(slugWidth)}  existing  missing  title / titleVi`,
+      `${"topic".padEnd(slugWidth)}  existing  missing  title / titleVi`
     );
     for (const topic of group.topics) {
       lines.push(
-        `${topic.slug.padEnd(slugWidth)}  ${String(topic.existingCount).padStart(
-          8,
+        `${topic.slug.padEnd(slugWidth)}  ${String(
+          topic.existingCount
+        ).padStart(
+          8
         )}  ${String(topic.requestedCount).padStart(7)}  ${topic.title} / ${
           topic.titleVi
-        }`,
+        }`
       );
     }
   }
@@ -157,7 +161,7 @@ export function formatTopicDeficitReport(
 
 export function formatGenerationStart(
   topic: VocabularyTopicDefinition,
-  requestedCount: number,
+  requestedCount: number
 ): string {
   return [
     `Generating ${requestedCount} words for ${topic.slug}`,
@@ -169,7 +173,7 @@ export function formatGenerationStart(
 export function formatGenerationCreated(
   topic: VocabularyTopicDefinition,
   generatedWords: number,
-  outputPath: string,
+  outputPath: string
 ): string {
   return [
     `Created review artifact for ${topic.slug}`,

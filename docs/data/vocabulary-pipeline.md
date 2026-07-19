@@ -229,11 +229,23 @@ provider:
 pnpm --filter @repo/api data:generate-topic-expansion
 ```
 
+The no-slug command prints a bilingual grouped table and atomically writes the
+full deterministic report to ignored
+`working/topic-expansion/deficits.json`. Automation can request compact JSON:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-expansion -- --json
+```
+
 Generate one review artifact for a selected deficient topic:
 
 ```powershell
 pnpm --filter @repo/api data:generate-topic-expansion -- airport
 ```
+
+Passing a Topic slug prints bounded generation progress in human mode. Add
+`--json` to receive JSONL start/completion events. Neither completion mode
+writes PostgreSQL; the generated artifact remains in `review`.
 
 Every generated word must have exactly 10 bilingual example pairs. AI output
 uses a versioned JSON contract and provider JSON Schema. The artifact starts in

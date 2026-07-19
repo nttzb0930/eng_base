@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
 
 import {
@@ -95,7 +97,7 @@ const generated: VocabularyCatalogItem = {
 };
 
 const artifact = (
-  status: TopicExpansionArtifact["status"],
+  status: TopicExpansionArtifact["status"]
 ): TopicExpansionArtifact => ({
   schemaVersion: 1,
   status,
@@ -117,7 +119,7 @@ test("topic deficits request only the number of missing words", () => {
 test("review expansion cannot merge", () => {
   assert.throws(
     () => mergeAcceptedExpansion([], artifact("review"), topics),
-    /must be accepted/u,
+    /must be accepted/u
   );
 });
 
@@ -133,7 +135,7 @@ test("expansion validation rejects existing vocabulary identities", () => {
   const result = validateExpansionArtifact(
     [generated],
     artifact("accepted"),
-    topics,
+    topics
   );
 
   assert.match(result.errors.join("\n"), /already exists in catalog/u);
@@ -145,7 +147,10 @@ test("expansion validation rejects the wrong target topic", () => {
 
   const result = validateExpansionArtifact([], invalid, topics);
 
-  assert.match(result.errors.join("\n"), /must reference target topic "airport"/u);
+  assert.match(
+    result.errors.join("\n"),
+    /must reference target topic "airport"/u
+  );
 });
 
 test("expansion validation requires the exact word and example counts", () => {
@@ -156,7 +161,10 @@ test("expansion validation requires the exact word and example counts", () => {
   const result = validateExpansionArtifact([], invalid, topics);
 
   assert.match(result.errors.join("\n"), /requires exactly 2 words/u);
-  assert.match(result.errors.join("\n"), /requires exactly 10 bilingual examples/u);
+  assert.match(
+    result.errors.join("\n"),
+    /requires exactly 10 bilingual examples/u
+  );
 });
 
 test("expansion validation requires distinct examples and matching primary example", () => {
@@ -186,18 +194,18 @@ test("Topic expansion arguments accept pnpm delimiter and JSON mode", () => {
   });
   assert.deepEqual(
     parseTopicExpansionArguments(["--", "transportation", "--json"]),
-    { json: true, topicSlug: "transportation" },
+    { json: true, topicSlug: "transportation" }
   );
 });
 
 test("Topic expansion arguments reject unknown flags and multiple slugs", () => {
   assert.throws(
     () => parseTopicExpansionArguments(["--verbose"]),
-    /Unknown Topic expansion flag "--verbose"/u,
+    /Unknown Topic expansion flag "--verbose"/u
   );
   assert.throws(
     () => parseTopicExpansionArguments(["airport", "hotel"]),
-    /accepts at most one Topic slug/u,
+    /accepts at most one Topic slug/u
   );
 });
 
@@ -235,7 +243,7 @@ test("deficit report reconciles totals and preserves bilingual taxonomy order", 
         groupVi: "Công nghệ",
         slugs: ["technology", "artificial-intelligence"],
       },
-    ],
+    ]
   );
   assert.equal(report.providerCalled, false);
   assert.equal(report.databaseUpdated, false);
@@ -250,7 +258,7 @@ test("human deficit output is readable and contains every affected Topic", () =>
   });
   const text = formatTopicDeficitReport(
     report,
-    "data/vocabulary/working/topic-expansion/deficits.json",
+    "data/vocabulary/working/topic-expansion/deficits.json"
   );
 
   assert.match(text, /Vocabulary Topic Expansion Deficits/u);
@@ -260,17 +268,35 @@ test("human deficit output is readable and contains every affected Topic", () =>
   assert.match(text, /Database updated\s+: no/u);
   assert.equal(
     formatTopicDeficitReport(report, "report.json"),
-    formatTopicDeficitReport(report, "report.json"),
+    formatTopicDeficitReport(report, "report.json")
   );
 });
 
 test("human generation messages expose bounded progress without provider data", () => {
   assert.match(
     formatGenerationStart(reportTopics[0]!, 12),
-    /Generating 12 words for airport/u,
+    /Generating 12 words for airport/u
   );
   assert.match(
     formatGenerationCreated(reportTopics[0]!, 12, "airport.json"),
-    /Created review artifact.*airport\.json/su,
+    /Created review artifact.*airport\.json/su
+  );
+});
+
+test("Topic expansion generator exposes report artifact and JSON mode", async () => {
+  const source = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/generate-topic-expansion.ts"
+    ),
+    "utf8"
+  );
+
+  assert.match(source, /parseTopicExpansionArguments/u);
+  assert.match(source, /deficits\.json/u);
+  assert.match(source, /formatTopicDeficitReport/u);
+  assert.doesNotMatch(
+    source,
+    /console\.log\(\s*JSON\.stringify\(\{\s*action:\s*"vocabulary-topic-expansion-deficits"/su
   );
 });
