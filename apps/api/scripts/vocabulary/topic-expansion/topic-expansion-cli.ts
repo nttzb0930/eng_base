@@ -31,6 +31,33 @@ export type TopicDeficitReport = {
   databaseUpdated: false;
 };
 
+export type TopicExpansionRequest = {
+  totalMissingWords: number;
+  requestedWords: number;
+  chunkSize: number;
+  chunked: boolean;
+};
+
+export type TopicExpansionEvent = {
+  event:
+    | "run-start"
+    | "provider-request-start"
+    | "provider-response-received"
+    | "validation-start"
+    | "validation-success"
+    | "validation-failed"
+    | "artifact-written";
+  topic: string;
+  durationMs?: number;
+  requestedWords?: number;
+  generatedWords?: number;
+  outputPath?: string;
+  errorCount?: number;
+  chunkSize?: number;
+  totalMissingWords?: number;
+  chunked?: boolean;
+};
+
 export function parseTopicExpansionArguments(
   args: string[]
 ): TopicExpansionArguments {
@@ -54,6 +81,35 @@ export function parseTopicExpansionArguments(
   }
 
   return { json, topicSlug: topicSlugs[0] ?? null };
+}
+
+export function resolveTopicExpansionRequest(
+  deficit: TopicDeficit,
+  chunkSize: number
+): TopicExpansionRequest {
+  if (!Number.isInteger(chunkSize) || chunkSize < 1) {
+    throw new Error("Topic expansion chunk size must be a positive integer");
+  }
+
+  const requestedWords = Math.min(deficit.requestedCount, chunkSize);
+  return {
+    totalMissingWords: deficit.requestedCount,
+    requestedWords,
+    chunkSize,
+    chunked: requestedWords < deficit.requestedCount,
+  };
+}
+
+export function formatTopicExpansionEvent(
+  event: TopicExpansionEvent,
+  json: boolean
+): string {
+  if (json) return JSON.stringify(event);
+
+  const fields = Object.entries(event)
+    .filter(([key, value]) => key !== "event" && value !== undefined)
+    .map(([key, value]) => `${key}=${String(value)}`);
+  return `[${event.event}] ${fields.join(" ")}`;
 }
 
 export function createTopicDeficitReport(input: {

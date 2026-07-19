@@ -247,6 +247,19 @@ Passing a Topic slug prints bounded generation progress in human mode. Add
 `--json` to receive JSONL start/completion events. Neither completion mode
 writes PostgreSQL; the generated artifact remains in `review`.
 
+Topic expansion is chunked. `VOCAB_TOPIC_EXPANSION_CHUNK_SIZE` defaults to `30`,
+so a Topic missing 300 words creates a 30-word review artifact per run. Review
+and merge that artifact, then run the same Topic again to create the next chunk.
+This keeps the provider response small enough to validate reliably while
+preserving the exact 10-example requirement per generated word.
+
+Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
+bounded events for `run-start`, `provider-request-start`,
+`provider-response-received`, `validation-start`, `validation-success`,
+`validation-failed`, and `artifact-written`, each with `durationMs` where
+available. Debug output never logs provider keys, prompts, raw responses,
+cookies, or database credentials.
+
 Every generated word must have exactly 10 bilingual example pairs. AI output
 uses a versioned JSON contract and provider JSON Schema. The artifact starts in
 `review`; a person must inspect it and set `status` to `accepted` before:

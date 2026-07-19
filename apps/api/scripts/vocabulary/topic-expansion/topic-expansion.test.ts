@@ -14,7 +14,9 @@ import {
   formatGenerationCreated,
   formatGenerationStart,
   formatTopicDeficitReport,
+  formatTopicExpansionEvent,
   parseTopicExpansionArguments,
+  resolveTopicExpansionRequest,
 } from "./topic-expansion-cli.js";
 import type {
   VocabularyCatalogItem,
@@ -283,6 +285,64 @@ test("human generation messages expose bounded progress without provider data", 
   );
 });
 
+test("Topic expansion request chunks large deficits", () => {
+  assert.deepEqual(
+    resolveTopicExpansionRequest(
+      {
+        slug: "artificial-intelligence",
+        existingCount: 0,
+        requestedCount: 300,
+      },
+      30
+    ),
+    {
+      totalMissingWords: 300,
+      requestedWords: 30,
+      chunkSize: 30,
+      chunked: true,
+    }
+  );
+  assert.deepEqual(
+    resolveTopicExpansionRequest(
+      { slug: "airport", existingCount: 10, requestedCount: 20 },
+      30
+    ),
+    {
+      totalMissingWords: 20,
+      requestedWords: 20,
+      chunkSize: 30,
+      chunked: false,
+    }
+  );
+  assert.throws(
+    () =>
+      resolveTopicExpansionRequest(
+        { slug: "airport", existingCount: 10, requestedCount: 20 },
+        0
+      ),
+    /chunk size must be a positive integer/u
+  );
+});
+
+test("Topic expansion debug events are bounded and support JSONL", () => {
+  const event = {
+    event: "provider-response-received",
+    topic: "airport",
+    durationMs: 1234,
+    generatedWords: 29,
+  } as const;
+
+  assert.equal(formatTopicExpansionEvent(event, true), JSON.stringify(event));
+  assert.match(
+    formatTopicExpansionEvent(event, false),
+    /\[provider-response-received\] topic=airport durationMs=1234 generatedWords=29/u
+  );
+  assert.doesNotMatch(
+    formatTopicExpansionEvent(event, false),
+    /prompt|raw|key/u
+  );
+});
+
 test("Topic expansion generator exposes report artifact and JSON mode", async () => {
   const source = await readFile(
     path.resolve(
@@ -295,6 +355,14 @@ test("Topic expansion generator exposes report artifact and JSON mode", async ()
   assert.match(source, /parseTopicExpansionArguments/u);
   assert.match(source, /deficits\.json/u);
   assert.match(source, /formatTopicDeficitReport/u);
+  assert.match(source, /VOCAB_AI_DEBUG/u);
+  assert.match(source, /VOCAB_TOPIC_EXPANSION_CHUNK_SIZE/u);
+  assert.match(source, /provider-request-start/u);
+  assert.match(source, /provider-response-received/u);
+  assert.match(source, /validation-start/u);
+  assert.match(source, /validation-success/u);
+  assert.match(source, /validation-failed/u);
+  assert.match(source, /artifact-written/u);
   assert.doesNotMatch(
     source,
     /console\.log\(\s*JSON\.stringify\(\{\s*action:\s*"vocabulary-topic-expansion-deficits"/su

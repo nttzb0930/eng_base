@@ -9,7 +9,9 @@ import {
   formatGenerationCreated,
   formatGenerationStart,
   formatTopicDeficitReport,
+  formatTopicExpansionEvent,
   parseTopicExpansionArguments,
+  resolveTopicExpansionRequest,
 } from "./topic-expansion-cli.js";
 import {
   calculateTopicDeficits,
@@ -53,6 +55,12 @@ const model =
   process.env.VOCAB_TOPIC_MODEL?.trim() ||
   process.env.GEMINI_VOCAB_POS_CORRECTION_MODEL?.trim() ||
   "gemini-2.5-flash";
+const debugEnabled = process.env.VOCAB_AI_DEBUG === "true";
+const chunkSize = Number.parseInt(
+  process.env.VOCAB_TOPIC_EXPANSION_CHUNK_SIZE ?? "30",
+  10
+);
+const startedAt = Date.now();
 
 const readJson = async <T>(filePath: string) =>
   JSON.parse(await readFile(filePath, "utf8")) as T;
@@ -237,28 +245,61 @@ async function main() {
     throw new Error(`Topic "${arguments_.topicSlug}" has no expansion deficit`);
   }
   const topic = topics.find((entry) => entry.slug === arguments_.topicSlug)!;
+  const expansionRequest = resolveTopicExpansionRequest(deficit, chunkSize);
+  const emitDebug = (
+    event: Parameters<typeof formatTopicExpansionEvent>[0]
+  ) => {
+    if (!debugEnabled) return;
+    console.log(formatTopicExpansionEvent(event, arguments_.json));
+  };
   const existingWords = catalog
     .filter((item) => (item.topics ?? []).includes(topic.slug))
     .map((item) => ({ word: item.word, pos: item.pos }));
+
+  emitDebug({
+    event: "run-start",
+    topic: topic.slug,
+    durationMs: Date.now() - startedAt,
+    requestedWords: expansionRequest.requestedWords,
+    totalMissingWords: expansionRequest.totalMissingWords,
+    chunkSize: expansionRequest.chunkSize,
+    chunked: expansionRequest.chunked,
+  });
 
   if (arguments_.json) {
     console.log(
       JSON.stringify({
         event: "generation-start",
         topic: topic.slug,
-        requestedWords: deficit.requestedCount,
+        requestedWords: expansionRequest.requestedWords,
+        totalMissingWords: expansionRequest.totalMissingWords,
+        chunkSize: expansionRequest.chunkSize,
+        chunked: expansionRequest.chunked,
       })
     );
   } else {
-    console.log(formatGenerationStart(topic, deficit.requestedCount));
+    console.log(formatGenerationStart(topic, expansionRequest.requestedWords));
   }
 
+  const providerStartedAt = Date.now();
+  emitDebug({
+    event: "provider-request-start",
+    topic: topic.slug,
+    durationMs: providerStartedAt - startedAt,
+    requestedWords: expansionRequest.requestedWords,
+  });
   const generatedWords = await generate(
     systemInstruction,
-    `Generate exactly ${deficit.requestedCount} new words for this topic:\n${JSON.stringify(
+    `Generate exactly ${expansionRequest.requestedWords} new words for this topic:\n${JSON.stringify(
       topic
     )}\n\nDo not duplicate these existing words:\n${JSON.stringify(existingWords)}`
   );
+  emitDebug({
+    event: "provider-response-received",
+    topic: topic.slug,
+    durationMs: Date.now() - providerStartedAt,
+    generatedWords: generatedWords.length,
+  });
   const words: VocabularyCatalogItem[] = generatedWords.map((word) => ({
     ...word,
     source: "ai-topic-expansion",
@@ -270,18 +311,44 @@ async function main() {
     schemaVersion: 1,
     status: "review",
     targetTopicSlug: topic.slug,
-    requestedCount: deficit.requestedCount,
+    requestedCount: expansionRequest.requestedWords,
     examplesPerWord: 10,
     generatedAt: new Date().toISOString(),
     words,
   };
+  const validationStartedAt = Date.now();
+  emitDebug({
+    event: "validation-start",
+    topic: topic.slug,
+    durationMs: validationStartedAt - startedAt,
+    generatedWords: words.length,
+  });
   const validation = validateExpansionArtifact(catalog, artifact, topics);
   if (validation.errors.length > 0) {
+    emitDebug({
+      event: "validation-failed",
+      topic: topic.slug,
+      durationMs: Date.now() - validationStartedAt,
+      errorCount: validation.errors.length,
+    });
     throw new Error(validation.errors.join("\n"));
   }
+  emitDebug({
+    event: "validation-success",
+    topic: topic.slug,
+    durationMs: Date.now() - validationStartedAt,
+    generatedWords: words.length,
+  });
 
   const outputPath = path.join(outputRoot, `${topic.slug}.json`);
   await writeJsonAtomically(outputPath, artifact);
+  emitDebug({
+    event: "artifact-written",
+    topic: topic.slug,
+    durationMs: Date.now() - startedAt,
+    generatedWords: words.length,
+    outputPath,
+  });
 
   if (arguments_.json) {
     console.log(
