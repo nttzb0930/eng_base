@@ -12,6 +12,7 @@ import { Progress } from "@/app/components/ui/progress";
 import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
 import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
 import { useTopics } from "@/app/features/topics/hooks/use-topics";
+import { groupVocabularyTopics } from "@/app/features/topics/utils/group-vocabulary-topics";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 const getPercent = (value: number, total: number) =>
@@ -23,7 +24,7 @@ export function TopicsView() {
   const router = useRouter();
   const locale = useCurrentLocale();
   const userProgressQuery = useUserProgress();
-  const topicsQuery = useTopics();
+  const topicsQuery = useTopics(locale);
 
   const userProgress = userProgressQuery.data;
   const topics = topicsQuery.data ?? [];
@@ -44,6 +45,7 @@ export function TopicsView() {
     const bProgress = getPercent(b.learned, b.total);
     return bProgress - aProgress;
   })[0];
+  const topicGroups = groupVocabularyTopics(topics);
 
   return (
     <FeedWrapper>
@@ -108,49 +110,84 @@ export function TopicsView() {
               <p className="mt-2 text-sm text-muted-foreground">{t("emptyDescription")}</p>
             </div>
           ) : (
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {topics.map((topic) => {
-                const learnedPercent = getPercent(topic.learned, topic.total);
-                const masteredPercent = getPercent(topic.mastered, topic.total);
+            <div className="space-y-10">
+              {topicGroups.map((topicGroup) => (
+                <section key={topicGroup.name}>
+                  <div className="mb-4 flex items-center justify-between gap-4 border-b pb-3">
+                    <h3 className="text-xl font-bold text-foreground">
+                      {topicGroup.name}
+                    </h3>
+                    <span className="tabular text-sm text-muted-foreground">
+                      {topicGroup.topics.length}
+                    </span>
+                  </div>
 
-                return (
-                  <Link
-                    key={topic.id}
-                    href={withLocale(`/topics/${topic.slug}`)}
-                    className="group flex min-h-64 flex-col rounded-2xl border bg-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-primary/25 hover:shadow-lift"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <span className="grid h-10 w-10 place-items-center rounded-xl bg-secondary text-secondary-foreground">
-                        <Layers className="h-5 w-5" aria-hidden="true" />
-                      </span>
-                      <span className="tabular rounded-md bg-muted px-2 py-1 text-[11px] font-semibold text-muted-foreground">
-                        {learnedPercent}%
-                      </span>
-                    </div>
+                  <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    {topicGroup.topics.map((topic) => {
+                      const learnedPercent = getPercent(
+                        topic.learned,
+                        topic.total,
+                      );
+                      const masteredPercent = getPercent(
+                        topic.mastered,
+                        topic.total,
+                      );
 
-                    <h3 className="mt-5 text-lg font-bold text-foreground">{topic.title}</h3>
-                    <p className="mt-1 line-clamp-2 text-sm leading-5 text-muted-foreground">
-                      {topic.description}
-                    </p>
+                      return (
+                        <Link
+                          key={topic.id}
+                          href={withLocale(`/topics/${topic.slug}`)}
+                          className="group flex min-h-64 flex-col rounded-2xl border bg-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-primary/25 hover:shadow-lift"
+                        >
+                          <div className="flex items-start justify-between gap-3">
+                            <span className="grid h-10 w-10 place-items-center rounded-xl bg-secondary text-secondary-foreground">
+                              <Layers
+                                className="h-5 w-5"
+                                aria-hidden="true"
+                              />
+                            </span>
+                            <span className="tabular rounded-md bg-muted px-2 py-1 text-[11px] font-semibold text-muted-foreground">
+                              {learnedPercent}%
+                            </span>
+                          </div>
 
-                    <div className="mt-auto pt-5">
-                      <div className="flex items-center justify-between text-xs font-semibold">
-                        <span className="tabular text-foreground/75">
-                          {t("learned", { learned: topic.learned, total: topic.total })}
-                        </span>
-                        <ArrowRight className="h-4 w-4 text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                      </div>
-                      <Progress value={learnedPercent} className="mt-2 h-1.5" />
-                      <div className="mt-1 h-0.5 rounded-full bg-primary/25">
-                        <div
-                          className="h-full rounded-full bg-primary"
-                          style={{ width: `${masteredPercent}%` }}
-                        />
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })}
+                          <h4 className="mt-5 text-lg font-bold text-foreground">
+                            {topic.title}
+                          </h4>
+                          <p className="mt-1 line-clamp-2 text-sm leading-5 text-muted-foreground">
+                            {topic.description}
+                          </p>
+
+                          <div className="mt-auto pt-5">
+                            <div className="flex items-center justify-between text-xs font-semibold">
+                              <span className="tabular text-foreground/75">
+                                {t("learned", {
+                                  learned: topic.learned,
+                                  total: topic.total,
+                                })}
+                              </span>
+                              <ArrowRight
+                                className="h-4 w-4 text-primary transition-transform group-hover:translate-x-1"
+                                aria-hidden="true"
+                              />
+                            </div>
+                            <Progress
+                              value={learnedPercent}
+                              className="mt-2 h-1.5"
+                            />
+                            <div className="mt-1 h-0.5 rounded-full bg-primary/25">
+                              <div
+                                className="h-full rounded-full bg-primary"
+                                style={{ width: `${masteredPercent}%` }}
+                              />
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </section>
+              ))}
             </div>
           )}
         </section>

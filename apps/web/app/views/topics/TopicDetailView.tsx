@@ -31,7 +31,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
   const router = useRouter();
   const locale = useCurrentLocale();
   const userProgressQuery = useUserProgress();
-  const topicQuery = useTopic(slug, level);
+  const topicQuery = useTopic(slug, locale, level);
 
   const userProgress = userProgressQuery.data;
   const topic = topicQuery.data;
