@@ -5,8 +5,10 @@ import test from "node:test";
 
 import {
   calculateTopicDeficits,
+  dedupeTopicCandidates,
   mergeAcceptedExpansion,
   validateExpansionArtifact,
+  type TopicCandidateArtifact,
   type TopicExpansionArtifact,
 } from "./topic-expansion.js";
 import {
@@ -20,6 +22,7 @@ import {
   getNextTopicExpansionChunkNumber,
   createTopicExpansionQueueJobs,
   createTopicExpansionWorkerCommand,
+  parseTopicCandidateGenerationArguments,
   parseTopicExpansionArguments,
   parseTopicExpansionQueueArguments,
   resolveTopicExpansionRequest,
@@ -114,6 +117,18 @@ const artifact = (
   examplesPerWord: 10,
   generatedAt: "2026-07-18T00:00:00.000Z",
   words: [generated],
+});
+
+const candidateArtifact = (
+  candidates: TopicCandidateArtifact["candidates"]
+): TopicCandidateArtifact => ({
+  schemaVersion: 1,
+  status: "review",
+  targetTopicSlug: "airport",
+  requestedCount: candidates.length,
+  generatedAt: "2026-07-20T00:00:00.000Z",
+  candidates,
+  rejected: [],
 });
 
 test("topic deficits request only the number of missing words", () => {
@@ -266,6 +281,69 @@ test("Topic expansion arguments reject unknown flags and multiple slugs", () => 
   assert.throws(
     () => parseTopicExpansionArguments(["airport", "--chunk-size"]),
     /--chunk-size requires a value/u
+  );
+});
+
+test("Topic candidate generation arguments support count and chunk size", () => {
+  assert.deepEqual(
+    parseTopicCandidateGenerationArguments([
+      "--",
+      "friends",
+      "--count",
+      "50",
+      "--chunk-size",
+      "25",
+      "--json",
+    ]),
+    {
+      json: true,
+      topicSlug: "friends",
+      count: 50,
+      chunkSize: 25,
+    }
+  );
+  assert.throws(
+    () => parseTopicCandidateGenerationArguments(["--count", "5"]),
+    /Topic slug is required/u
+  );
+  assert.throws(
+    () => parseTopicCandidateGenerationArguments(["friends", "--count", "0"]),
+    /--count must be a positive integer/u
+  );
+});
+
+test("Topic candidate dedupe rejects catalog and artifact duplicates without failing", () => {
+  const result = dedupeTopicCandidates(
+    [
+      {
+        ...generated,
+        normalizedWord: "dependable",
+        pos: "adjective",
+        cefrLevel: "B2",
+      },
+    ],
+    [candidateArtifact([{ word: "companion", pos: "noun", cefrLevel: "B1" }])],
+    candidateArtifact([
+      { word: "dependable", pos: "adjective", cefrLevel: "B2" },
+      { word: "Companion", pos: "noun", cefrLevel: "B1" },
+      { word: "supportive", pos: "adjective", cefrLevel: "B1" },
+      { word: "supportive", pos: "adjective", cefrLevel: "B1" },
+    ])
+  );
+
+  assert.deepEqual(result.candidates, [
+    { word: "supportive", pos: "adjective", cefrLevel: "B1" },
+  ]);
+  assert.deepEqual(
+    result.rejected.map((candidate) => ({
+      word: candidate.word,
+      reason: candidate.reason,
+    })),
+    [
+      { word: "dependable", reason: "catalog-duplicate" },
+      { word: "Companion", reason: "artifact-duplicate" },
+      { word: "supportive", reason: "artifact-duplicate" },
+    ]
   );
 });
 
@@ -607,5 +685,21 @@ test("Topic expansion queue runner uses bounded workers around the single Topic 
   assert.match(source, /worker-start/u);
   assert.match(source, /worker-finished/u);
   assert.match(source, /spawn\(command\.command, command\.args/u);
+  assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
+});
+
+test("Topic candidate generator writes review artifacts without provider secrets", async () => {
+  const source = await readFile(
+    path.resolve(
+      process.cwd(),
+      "scripts/vocabulary/topic-expansion/generate-topic-candidates.ts"
+    ),
+    "utf8"
+  );
+
+  assert.match(source, /parseTopicCandidateGenerationArguments/u);
+  assert.match(source, /dedupeTopicCandidates/u);
+  assert.match(source, /working\/topic-candidates/u);
+  assert.match(source, /chunk-\\d\{3\}\\\.json/u);
   assert.doesNotMatch(source, /raw response|GEMINI_API_KEY|OPENAI_API_KEY/u);
 });

@@ -21,6 +21,13 @@ export type TopicExpansionQueueArguments = {
   chunkSize: number | null;
 };
 
+export type TopicCandidateGenerationArguments = {
+  json: boolean;
+  topicSlug: string;
+  count: number;
+  chunkSize: number;
+};
+
 export type TopicExpansionQueueJob = {
   topicSlug: string;
   requestedCount: number;
@@ -176,6 +183,53 @@ export function parseTopicExpansionQueueArguments(
   }
 
   return { json, workers, chunksPerTopic, chunkSize };
+}
+
+export function parseTopicCandidateGenerationArguments(
+  args: string[]
+): TopicCandidateGenerationArguments {
+  let json = false;
+  let count = 50;
+  let chunkSize = 50;
+  const topicSlugs: string[] = [];
+
+  for (let index = 0; index < args.length; index += 1) {
+    const argument = args[index]!;
+    if (argument === "--") continue;
+    if (argument === "--json") {
+      json = true;
+      continue;
+    }
+    if (argument === "--count") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--count requires a value");
+      count = parsePositiveIntegerFlag("--count", value);
+      index += 1;
+      continue;
+    }
+    if (argument === "--chunk-size") {
+      const value = args[index + 1];
+      if (!value) throw new Error("--chunk-size requires a value");
+      chunkSize = parsePositiveIntegerFlag("--chunk-size", value);
+      index += 1;
+      continue;
+    }
+    if (argument.startsWith("--")) {
+      throw new Error(`Unknown Topic candidate generation flag "${argument}"`);
+    }
+    topicSlugs.push(argument);
+  }
+
+  if (topicSlugs.length < 1) {
+    throw new Error("Topic slug is required");
+  }
+  if (topicSlugs.length > 1) {
+    throw new Error(
+      "Topic candidate generation accepts exactly one Topic slug"
+    );
+  }
+
+  return { json, topicSlug: topicSlugs[0]!, count, chunkSize };
 }
 
 export function createTopicExpansionQueueJobs(

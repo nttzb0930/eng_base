@@ -21,6 +21,31 @@ export type TopicExpansionArtifact = {
   words: VocabularyCatalogItem[];
 };
 
+export type TopicCandidate = {
+  word: string;
+  pos: string;
+  cefrLevel: string;
+};
+
+export type RejectedTopicCandidate = TopicCandidate & {
+  reason:
+    | "catalog-duplicate"
+    | "artifact-duplicate"
+    | "invalid-word"
+    | "invalid-pos"
+    | "invalid-cefr-level";
+};
+
+export type TopicCandidateArtifact = {
+  schemaVersion: 1;
+  status: "review" | "accepted" | "rejected";
+  targetTopicSlug: string;
+  requestedCount: number;
+  generatedAt: string;
+  candidates: TopicCandidate[];
+  rejected: RejectedTopicCandidate[];
+};
+
 export type ExpansionValidationResult = {
   errors: string[];
 };
@@ -42,6 +67,8 @@ const identityVocabularyFields = [
 
 const isNonEmptyString = (value: unknown): value is string =>
   typeof value === "string" && value.trim().length > 0;
+
+const allowedCefrLevels = new Set(["A1", "A2", "B1", "B2", "C1", "C2"]);
 
 const vocabularyLabel = (
   word: Partial<VocabularyCatalogItem>,
@@ -82,6 +109,72 @@ export function calculateTopicDeficits(
       };
     })
     .filter((deficit) => deficit.requestedCount > 0);
+}
+
+const candidateIdentity = (candidate: TopicCandidate) =>
+  `${candidate.word.trim().toLowerCase()}|${candidate.pos
+    .trim()
+    .toLowerCase()}|${candidate.cefrLevel.trim().toLowerCase()}`;
+
+const rejectCandidate = (
+  candidate: TopicCandidate,
+  reason: RejectedTopicCandidate["reason"]
+): RejectedTopicCandidate => ({ ...candidate, reason });
+
+export function dedupeTopicCandidates(
+  catalog: VocabularyCatalogItem[],
+  pendingArtifacts: TopicCandidateArtifact[],
+  artifact: TopicCandidateArtifact
+): TopicCandidateArtifact {
+  const knownIdentities = new Set(catalog.map(vocabularyIdentity));
+  for (const pendingArtifact of pendingArtifacts) {
+    if (pendingArtifact.targetTopicSlug !== artifact.targetTopicSlug) continue;
+    for (const candidate of pendingArtifact.candidates) {
+      knownIdentities.add(candidateIdentity(candidate));
+    }
+  }
+
+  const acceptedCandidates: TopicCandidate[] = [];
+  const rejectedCandidates: RejectedTopicCandidate[] = [...artifact.rejected];
+
+  for (const candidate of artifact.candidates) {
+    if (!isNonEmptyString(candidate.word)) {
+      rejectedCandidates.push(rejectCandidate(candidate, "invalid-word"));
+      continue;
+    }
+    if (!isNonEmptyString(candidate.pos)) {
+      rejectedCandidates.push(rejectCandidate(candidate, "invalid-pos"));
+      continue;
+    }
+    if (!allowedCefrLevels.has(candidate.cefrLevel)) {
+      rejectedCandidates.push(rejectCandidate(candidate, "invalid-cefr-level"));
+      continue;
+    }
+
+    const identity = candidateIdentity(candidate);
+    if (catalog.some((item) => vocabularyIdentity(item) === identity)) {
+      rejectedCandidates.push(rejectCandidate(candidate, "catalog-duplicate"));
+      continue;
+    }
+    if (knownIdentities.has(identity)) {
+      rejectedCandidates.push(rejectCandidate(candidate, "artifact-duplicate"));
+      continue;
+    }
+
+    knownIdentities.add(identity);
+    acceptedCandidates.push({
+      word: candidate.word.trim().toLowerCase(),
+      pos: candidate.pos.trim().toLowerCase(),
+      cefrLevel: candidate.cefrLevel.trim().toUpperCase(),
+    });
+  }
+
+  return {
+    ...artifact,
+    requestedCount: acceptedCandidates.length,
+    candidates: acceptedCandidates,
+    rejected: rejectedCandidates,
+  };
 }
 
 export function validateExpansionArtifact(

@@ -288,6 +288,27 @@ chunks per topic, 5 words per chunk, per queue run. Re-run the queue after
 review and merge. Do not raise worker count aggressively; provider rate limits
 and JSON quality usually fail before local CPU becomes the bottleneck.
 
+For larger scale expansion, prefer the candidate-first flow. It asks the
+provider for word identities only, deduplicates them against the catalog and
+pending candidate artifacts, and writes a review artifact without failing the
+whole run on duplicates:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-candidates -- friends --count 50 --chunk-size 50
+```
+
+Candidate artifacts are ignored working files:
+
+```text
+working/topic-candidates/friends/chunk-001.json
+```
+
+The artifact contains `candidates` for review and `rejected` entries with stable
+reasons such as `catalog-duplicate` and `artifact-duplicate`. Candidate
+generation does not write the canonical catalog or PostgreSQL. Accepted
+candidates are the input for a later enrichment step that creates full
+vocabulary records with meanings and exactly 10 bilingual examples.
+
 Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
 bounded events for `run-start`, `provider-request-start`,
 `provider-response-received`, `validation-start`, `validation-success`,
