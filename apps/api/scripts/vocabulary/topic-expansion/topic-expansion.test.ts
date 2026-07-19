@@ -402,6 +402,25 @@ test("Topic candidate review keeps core and supporting tiers and rejects only re
   );
 });
 
+test("Topic candidate review ignores malformed provider decisions instead of crashing", () => {
+  const reviewed = applyTopicCandidateReview(
+    candidateArtifact([{ word: "mentor", pos: "noun", cefrLevel: "B2" }]),
+    [
+      {
+        word: "mentor",
+        pos: "noun",
+        decision: "reject",
+        reason: "missing-cefr-level",
+      } as unknown as Parameters<typeof applyTopicCandidateReview>[1][number],
+    ]
+  );
+
+  assert.deepEqual(reviewed.candidates, [
+    { word: "mentor", pos: "noun", cefrLevel: "B2", tier: "core" },
+  ]);
+  assert.deepEqual(reviewed.rejected, []);
+});
+
 test("Topic candidate review arguments select all chunks or one chunk", () => {
   assert.deepEqual(
     parseTopicCandidateReviewArguments(["--", "friends", "--all", "--json"]),

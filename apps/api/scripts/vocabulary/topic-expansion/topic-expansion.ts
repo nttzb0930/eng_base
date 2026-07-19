@@ -126,6 +126,13 @@ const candidateIdentity = (candidate: TopicCandidate) =>
     .trim()
     .toLowerCase()}|${candidate.cefrLevel.trim().toLowerCase()}`;
 
+const hasCandidateIdentityFields = (
+  candidate: Partial<TopicCandidate>
+): candidate is TopicCandidate =>
+  isNonEmptyString(candidate.word) &&
+  isNonEmptyString(candidate.pos) &&
+  isNonEmptyString(candidate.cefrLevel);
+
 const rejectCandidate = (
   candidate: TopicCandidate,
   reason: RejectedTopicCandidate["reason"]
@@ -192,7 +199,9 @@ export function applyTopicCandidateReview(
   decisions: TopicCandidateReviewDecision[]
 ): TopicCandidateArtifact {
   const decisionsByIdentity = new Map(
-    decisions.map((decision) => [candidateIdentity(decision), decision])
+    decisions
+      .filter(hasCandidateIdentityFields)
+      .map((decision) => [candidateIdentity(decision), decision])
   );
   const reviewedCandidates: TopicCandidate[] = [];
   const rejectedCandidates: RejectedTopicCandidate[] = [...artifact.rejected];
