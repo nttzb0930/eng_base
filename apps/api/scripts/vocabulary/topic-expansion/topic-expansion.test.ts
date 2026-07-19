@@ -169,6 +169,32 @@ test("expansion validation requires the exact word and example counts", () => {
   );
 });
 
+test("expansion validation reports malformed AI words instead of crashing", () => {
+  const invalid = artifact("review");
+  invalid.requestedCount = 30;
+  invalid.words = [
+    ...Array.from({ length: 30 }, (_, index) => ({
+      ...generated,
+      word: `generated ${index}`,
+      normalizedWord: `generated ${index}`,
+    })),
+    {
+      ...generated,
+      word: "missing normalized word",
+      normalizedWord: undefined,
+    } as unknown as VocabularyCatalogItem,
+  ];
+
+  assert.doesNotThrow(() => validateExpansionArtifact([], invalid, topics));
+  const result = validateExpansionArtifact([], invalid, topics);
+
+  assert.match(result.errors.join("\n"), /requires exactly 30 words/u);
+  assert.match(
+    result.errors.join("\n"),
+    /Vocabulary "missing normalized word" has invalid required field "normalizedWord"/u
+  );
+});
+
 test("expansion validation requires distinct examples and matching primary example", () => {
   const invalid = artifact("review");
   const repeated = {

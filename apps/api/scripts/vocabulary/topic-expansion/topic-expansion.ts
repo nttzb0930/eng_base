@@ -25,10 +25,45 @@ export type ExpansionValidationResult = {
   errors: string[];
 };
 
+const requiredVocabularyStringFields = [
+  "word",
+  "normalizedWord",
+  "pos",
+  "cefrLevel",
+  "meaningVi",
+  "primaryMeaningVi",
+] as const satisfies ReadonlyArray<keyof VocabularyCatalogItem>;
+
+const identityVocabularyFields = [
+  "normalizedWord",
+  "pos",
+  "cefrLevel",
+] as const satisfies ReadonlyArray<keyof VocabularyCatalogItem>;
+
+const isNonEmptyString = (value: unknown): value is string =>
+  typeof value === "string" && value.trim().length > 0;
+
+const vocabularyLabel = (
+  word: Partial<VocabularyCatalogItem>,
+  index: number
+) => (isNonEmptyString(word.word) ? word.word.trim() : `<word ${index + 1}>`);
+
+const hasIdentityFields = (
+  word: Partial<VocabularyCatalogItem>
+): word is VocabularyCatalogItem =>
+  identityVocabularyFields.every((field) => isNonEmptyString(word[field]));
+
+const hasCatalogRequiredFields = (
+  word: Partial<VocabularyCatalogItem>
+): word is VocabularyCatalogItem =>
+  requiredVocabularyStringFields.every((field) =>
+    isNonEmptyString(word[field])
+  );
+
 export function calculateTopicDeficits(
   topics: VocabularyTopicDefinition[],
   catalog: VocabularyCatalogItem[],
-  minimumWords: number,
+  minimumWords: number
 ): TopicDeficit[] {
   if (!Number.isInteger(minimumWords) || minimumWords < 1) {
     throw new Error("Topic minimum word count must be a positive integer");
@@ -38,7 +73,7 @@ export function calculateTopicDeficits(
     .sort((left, right) => left.order - right.order)
     .map((topic) => {
       const existingCount = catalog.filter((item) =>
-        (item.topics ?? []).includes(topic.slug),
+        (item.topics ?? []).includes(topic.slug)
       ).length;
       return {
         slug: topic.slug,
@@ -52,7 +87,7 @@ export function calculateTopicDeficits(
 export function validateExpansionArtifact(
   catalog: VocabularyCatalogItem[],
   artifact: TopicExpansionArtifact,
-  topics: VocabularyTopicDefinition[],
+  topics: VocabularyTopicDefinition[]
 ): ExpansionValidationResult {
   const errors: string[] = [];
   const topicSlugs = new Set(topics.map((topic) => topic.slug));
@@ -62,28 +97,39 @@ export function validateExpansionArtifact(
 
   if (artifact.words.length !== artifact.requestedCount) {
     errors.push(
-      `Expansion for "${artifact.targetTopicSlug}" requires exactly ${artifact.requestedCount} words`,
+      `Expansion for "${artifact.targetTopicSlug}" requires exactly ${artifact.requestedCount} words`
     );
   }
 
   const catalogIdentities = new Set(catalog.map(vocabularyIdentity));
   const artifactIdentities = new Set<string>();
-  for (const word of artifact.words) {
-    const identity = vocabularyIdentity(word);
-    if (catalogIdentities.has(identity)) {
-      errors.push(`Vocabulary "${identity}" already exists in catalog`);
+  let hasMalformedRequiredFields = false;
+  for (const [index, word] of artifact.words.entries()) {
+    const label = vocabularyLabel(word, index);
+    for (const field of requiredVocabularyStringFields) {
+      if (!isNonEmptyString(word[field])) {
+        hasMalformedRequiredFields = true;
+        errors.push(
+          `Vocabulary "${label}" has invalid required field "${field}"`
+        );
+      }
     }
-    if (artifactIdentities.has(identity)) {
-      errors.push(`Duplicate expansion vocabulary identity "${identity}"`);
-    }
-    artifactIdentities.add(identity);
 
-    if (
-      word.topics?.length !== 1 ||
-      word.topics[0] !== artifact.targetTopicSlug
-    ) {
+    const identity = hasIdentityFields(word) ? vocabularyIdentity(word) : label;
+    if (hasIdentityFields(word)) {
+      if (catalogIdentities.has(identity)) {
+        errors.push(`Vocabulary "${identity}" already exists in catalog`);
+      }
+      if (artifactIdentities.has(identity)) {
+        errors.push(`Duplicate expansion vocabulary identity "${identity}"`);
+      }
+      artifactIdentities.add(identity);
+    }
+
+    const wordTopics = Array.isArray(word.topics) ? word.topics : [];
+    if (wordTopics.length !== 1 || wordTopics[0] !== artifact.targetTopicSlug) {
       errors.push(
-        `Vocabulary "${identity}" must reference target topic "${artifact.targetTopicSlug}"`,
+        `Vocabulary "${identity}" must reference target topic "${artifact.targetTopicSlug}"`
       );
     }
     if (word.source !== "ai-topic-expansion") {
@@ -95,10 +141,13 @@ export function validateExpansionArtifact(
     if (word.dictionaryLookupCompleted !== false) {
       errors.push(`Vocabulary "${identity}" must await dictionary lookup`);
     }
-    if (!word.exampleEn?.trim() || !word.exampleVi?.trim()) {
+    if (
+      !isNonEmptyString(word.exampleEn) ||
+      !isNonEmptyString(word.exampleVi)
+    ) {
       errors.push(`Vocabulary "${identity}" requires bilingual example text`);
     }
-    const examples = word.examples ?? [];
+    const examples = Array.isArray(word.examples) ? word.examples : [];
     const hasBilingualExamples = examples.every(
       (example) =>
         typeof example === "object" &&
@@ -106,14 +155,11 @@ export function validateExpansionArtifact(
         typeof example.exampleEn === "string" &&
         example.exampleEn.trim().length > 0 &&
         typeof example.exampleVi === "string" &&
-        example.exampleVi.trim().length > 0,
+        example.exampleVi.trim().length > 0
     );
-    if (
-      examples.length !== artifact.examplesPerWord ||
-      !hasBilingualExamples
-    ) {
+    if (examples.length !== artifact.examplesPerWord || !hasBilingualExamples) {
       errors.push(
-        `Vocabulary "${identity}" requires exactly ${artifact.examplesPerWord} bilingual examples`,
+        `Vocabulary "${identity}" requires exactly ${artifact.examplesPerWord} bilingual examples`
       );
     }
     if (hasBilingualExamples) {
@@ -124,36 +170,46 @@ export function validateExpansionArtifact(
       const firstExample = bilingualExamples[0];
       if (
         firstExample &&
-        (word.exampleEn?.trim() !== firstExample.exampleEn.trim() ||
-          word.exampleVi?.trim() !== firstExample.exampleVi.trim())
+        (!isNonEmptyString(word.exampleEn) ||
+          !isNonEmptyString(word.exampleVi) ||
+          word.exampleEn.trim() !== firstExample.exampleEn.trim() ||
+          word.exampleVi.trim() !== firstExample.exampleVi.trim())
       ) {
         errors.push(
-          `Vocabulary "${identity}" must use its first bilingual example as the primary example`,
+          `Vocabulary "${identity}" must use its first bilingual example as the primary example`
         );
       }
       const distinctExamples = new Set(
         bilingualExamples.map(
           (example) =>
-            `${example.exampleEn.trim().toLowerCase()}|${example.exampleVi.trim().toLowerCase()}`,
-        ),
+            `${example.exampleEn.trim().toLowerCase()}|${example.exampleVi.trim().toLowerCase()}`
+        )
       );
       if (distinctExamples.size !== bilingualExamples.length) {
         errors.push(
-          `Vocabulary "${identity}" requires distinct bilingual examples`,
+          `Vocabulary "${identity}" requires distinct bilingual examples`
         );
       }
     }
   }
 
-  const sourceReport = validateVocabularySources(topics, artifact.words);
-  errors.push(...sourceReport.errors);
+  if (!hasMalformedRequiredFields) {
+    const sourceReport = validateVocabularySources(topics, artifact.words);
+    errors.push(...sourceReport.errors);
+  } else {
+    const sourceReadyWords = artifact.words.filter(hasCatalogRequiredFields);
+    if (sourceReadyWords.length > 0) {
+      const sourceReport = validateVocabularySources(topics, sourceReadyWords);
+      errors.push(...sourceReport.errors);
+    }
+  }
   return { errors };
 }
 
 export function mergeAcceptedExpansion(
   catalog: VocabularyCatalogItem[],
   artifact: TopicExpansionArtifact,
-  topics: VocabularyTopicDefinition[],
+  topics: VocabularyTopicDefinition[]
 ): VocabularyCatalogItem[] {
   if (artifact.status !== "accepted") {
     throw new Error("Topic expansion artifact must be accepted before merge");
