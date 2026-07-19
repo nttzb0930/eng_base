@@ -2,9 +2,9 @@ import "dotenv/config";
 import path from "node:path";
 
 import * as bcrypt from "bcryptjs";
-import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient, type Prisma } from "@prisma/client";
 
+import { createPrismaAdapter } from "../src/database/prisma/prisma.config.js";
 import { ENGLISH_VOCABULARY_COURSE_CODE } from "../src/module/courses/course.constants.js";
 import { vocabularyIdentity } from "./vocabulary/catalog/vocabulary-catalog.js";
 import { loadVocabularySeedData } from "./vocabulary/database/vocabulary-seed-data.js";
@@ -53,12 +53,8 @@ const VOCABULARY_DATA_DIRECTORY = path.join(
   "vocabulary"
 );
 
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL is not defined");
-}
-
 const prisma = new PrismaClient({
-  adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL }),
+  adapter: createPrismaAdapter(),
 });
 
 const chunk = <T>(items: T[], size: number) => {
@@ -164,11 +160,11 @@ const resetDevData = async () => {
 const main = async () => {
   const seedData = await loadVocabularySeedData(VOCABULARY_DATA_DIRECTORY);
   const unsupportedLevels = seedData.catalog.filter(
-    (item) => !LEVELS.includes(item.cefrLevel as CefrLevel),
+    (item) => !LEVELS.includes(item.cefrLevel as CefrLevel)
   );
   if (unsupportedLevels.length > 0) {
     throw new Error(
-      `Development curriculum seed supports ${LEVELS.join(", ")}; found ${unsupportedLevels[0]?.cefrLevel}`,
+      `Development curriculum seed supports ${LEVELS.join(", ")}; found ${unsupportedLevels[0]?.cefrLevel}`
     );
   }
   const vocabulary = seedData.catalog as VocabularySeedItem[];
@@ -215,16 +211,16 @@ const main = async () => {
         word: item.word,
         normalized_word: item.normalizedWord,
         pos: item.pos,
-      pos_vi: item.posVi,
-      cefr_level: item.cefrLevel,
-      phonetic: item.phonetic,
-      phonetic_source: item.phonetic ? "english-vietnamese-dictionary" : null,
-      audio_url: item.audioUrl ?? null,
-      audio_source: item.audioSource ?? null,
-      example_en: item.exampleEn ?? null,
-      example_vi: item.exampleVi ?? null,
-      example_source: item.exampleSource ?? null,
-      meaning_vi: item.meaningVi,
+        pos_vi: item.posVi,
+        cefr_level: item.cefrLevel,
+        phonetic: item.phonetic,
+        phonetic_source: item.phonetic ? "english-vietnamese-dictionary" : null,
+        audio_url: item.audioUrl ?? null,
+        audio_source: item.audioSource ?? null,
+        example_en: item.exampleEn ?? null,
+        example_vi: item.exampleVi ?? null,
+        example_source: item.exampleSource ?? null,
+        meaning_vi: item.meaningVi,
         primary_meaning_vi: item.primaryMeaningVi,
         source: item.source,
       })),
@@ -237,7 +233,7 @@ const main = async () => {
   const vocabularyByWord = new Map(
     insertedVocabulary.map((item) => [
       `${item.normalized_word.trim().toLowerCase()}|${item.pos.trim().toLowerCase()}|${item.cefr_level.trim().toLowerCase()}`,
-      item
+      item,
     ])
   );
 
@@ -282,14 +278,14 @@ const main = async () => {
   }
   const insertedTopics = await prisma.vocabulary_topics.findMany();
   const topicIdBySlug = new Map(
-    insertedTopics.map((topic) => [topic.slug, topic.id]),
+    insertedTopics.map((topic) => [topic.slug, topic.id])
   );
   const relationRows = seedData.relations.map((relation) => {
     const vocabularyItem = vocabularyByWord.get(relation.vocabularyIdentity);
     const topicId = topicIdBySlug.get(relation.topicSlug);
     if (!vocabularyItem || topicId === undefined) {
       throw new Error(
-        `Cannot resolve vocabulary topic relation ${relation.vocabularyIdentity} -> ${relation.topicSlug}`,
+        `Cannot resolve vocabulary topic relation ${relation.vocabularyIdentity} -> ${relation.topicSlug}`
       );
     }
     return {

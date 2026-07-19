@@ -1,8 +1,16 @@
 import { z } from "zod";
 
+import { resolveDatabaseUrl } from "./database-url";
+
 const ApiEnvironmentSchema = z
   .object({
-    DATABASE_URL: z.string().trim().min(1, "DATABASE_URL is required"),
+    DATABASE_URL: z.string().trim().min(1).optional(),
+    DB_HOST: z.string().trim().min(1).optional(),
+    DB_PORT: z.string().trim().min(1).optional(),
+    DB_USER: z.string().trim().min(1).optional(),
+    DB_PASSWORD: z.string().trim().min(1).optional(),
+    DB_NAME: z.string().trim().min(1).optional(),
+    DB_SCHEMA: z.string().trim().min(1).optional(),
     JWT_ACCESS_SECRET: z
       .string()
       .trim()
@@ -41,6 +49,19 @@ const ApiEnvironmentSchema = z
       path: ["JWT_REFRESH_SECRET"],
     }
   )
+  .superRefine((configuration, context) => {
+    try {
+      resolveDatabaseUrl(configuration);
+    } catch (error) {
+      context.addIssue({
+        code: "custom",
+        path: ["DATABASE_URL"],
+        message: `DATABASE_URL configuration is invalid: ${
+          error instanceof Error ? error.message : "unknown database error"
+        }`,
+      });
+    }
+  })
   .passthrough();
 
 export function validateEnvironment(configuration: Record<string, unknown>) {

@@ -2,9 +2,8 @@ import "dotenv/config";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { PrismaPg } from "@prisma/adapter-pg";
-
 import { PrismaClient } from "@prisma/client";
+import { createPrismaAdapter } from "../../../src/database/prisma/prisma.config.js";
 
 type DictionaryPhonetic = {
   text?: unknown;
@@ -54,12 +53,8 @@ const REPORT_PATH = path.join(
   "audio-enrichment-report.json"
 );
 
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL is not defined");
-}
-
 const prisma = new PrismaClient({
-  adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL }),
+  adapter: createPrismaAdapter(),
 });
 
 const getNumberArg = (name: string) => {
