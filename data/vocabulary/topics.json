@@ -2,722 +2,1031 @@
   {
     "slug": "personal-information",
     "title": "Personal Information",
+    "titleVi": "Thông tin cá nhân",
     "description": "Vocabulary related to personal information.",
+    "descriptionVi": "Từ vựng về thông tin cá nhân và cách giới thiệu bản thân.",
     "order": 1,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "family",
     "title": "Family",
+    "titleVi": "Gia đình",
     "description": "Vocabulary related to family.",
+    "descriptionVi": "Từ vựng về các thành viên và mối quan hệ trong gia đình.",
     "order": 2,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "friends",
     "title": "Friends",
+    "titleVi": "Bạn bè",
     "description": "Vocabulary related to friends.",
+    "descriptionVi": "Từ vựng về bạn bè và các hoạt động cùng bạn bè.",
     "order": 3,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "relationships",
     "title": "Relationships",
+    "titleVi": "Các mối quan hệ",
     "description": "Vocabulary related to relationships.",
+    "descriptionVi": "Từ vựng về các mối quan hệ xã hội và tình cảm.",
     "order": 4,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "appearance",
     "title": "Appearance",
+    "titleVi": "Ngoại hình",
     "description": "Vocabulary related to appearance.",
+    "descriptionVi": "Từ vựng dùng để mô tả ngoại hình và diện mạo.",
     "order": 5,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "personality",
     "title": "Personality",
+    "titleVi": "Tính cách",
     "description": "Vocabulary related to personality.",
+    "descriptionVi": "Từ vựng dùng để mô tả tính cách và phẩm chất con người.",
     "order": 6,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "emotions",
     "title": "Emotions",
+    "titleVi": "Cảm xúc",
     "description": "Vocabulary related to emotions.",
+    "descriptionVi": "Từ vựng về cảm xúc, tâm trạng và cách thể hiện chúng.",
     "order": 7,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "body",
     "title": "Body",
+    "titleVi": "Cơ thể",
     "description": "Vocabulary related to body.",
+    "descriptionVi": "Từ vựng về các bộ phận và đặc điểm của cơ thể.",
     "order": 8,
-    "group": "People"
+    "group": "People",
+    "groupVi": "Con người"
   },
   {
     "slug": "daily-routine",
     "title": "Daily Routine",
+    "titleVi": "Sinh hoạt hằng ngày",
     "description": "Vocabulary related to daily routine.",
+    "descriptionVi": "Từ vựng về các hoạt động và thói quen hằng ngày.",
     "order": 9,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "home",
     "title": "Home",
+    "titleVi": "Nhà ở",
     "description": "Vocabulary related to home.",
+    "descriptionVi": "Từ vựng về nhà ở, các phòng và không gian sống.",
     "order": 10,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "household-items",
     "title": "Household Items",
+    "titleVi": "Đồ dùng gia đình",
     "description": "Vocabulary related to household items.",
+    "descriptionVi": "Từ vựng về các vật dụng thường dùng trong gia đình.",
     "order": 11,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "furniture",
     "title": "Furniture",
+    "titleVi": "Nội thất",
     "description": "Vocabulary related to furniture.",
+    "descriptionVi": "Từ vựng về đồ nội thất và cách bố trí không gian.",
     "order": 12,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "clothing",
     "title": "Clothing",
+    "titleVi": "Quần áo",
     "description": "Vocabulary related to clothing.",
+    "descriptionVi": "Từ vựng về quần áo, phụ kiện và cách ăn mặc.",
     "order": 13,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "fashion",
     "title": "Fashion",
+    "titleVi": "Thời trang",
     "description": "Vocabulary related to fashion.",
+    "descriptionVi": "Từ vựng về phong cách, xu hướng và ngành thời trang.",
     "order": 14,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "shopping",
     "title": "Shopping",
+    "titleVi": "Mua sắm",
     "description": "Vocabulary related to shopping.",
+    "descriptionVi": "Từ vựng dùng khi chọn hàng, hỏi giá và thanh toán.",
     "order": 15,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "online-shopping",
     "title": "Online Shopping",
+    "titleVi": "Mua sắm trực tuyến",
     "description": "Vocabulary related to online shopping.",
+    "descriptionVi": "Từ vựng về đặt hàng, giao nhận và thanh toán trực tuyến.",
     "order": 16,
-    "group": "Daily Life"
+    "group": "Daily Life",
+    "groupVi": "Đời sống hằng ngày"
   },
   {
     "slug": "food",
     "title": "Food",
+    "titleVi": "Thực phẩm",
     "description": "Vocabulary related to food.",
+    "descriptionVi": "Từ vựng về thực phẩm, món ăn và hương vị.",
     "order": 17,
-    "group": "Food & Drink"
+    "group": "Food & Drink",
+    "groupVi": "Ẩm thực"
   },
   {
     "slug": "cooking",
     "title": "Cooking",
+    "titleVi": "Nấu ăn",
     "description": "Vocabulary related to cooking.",
+    "descriptionVi": "Từ vựng về nguyên liệu, dụng cụ và phương pháp nấu ăn.",
     "order": 18,
-    "group": "Food & Drink"
+    "group": "Food & Drink",
+    "groupVi": "Ẩm thực"
   },
   {
     "slug": "restaurant",
     "title": "Restaurant",
+    "titleVi": "Nhà hàng",
     "description": "Vocabulary related to restaurant.",
+    "descriptionVi": "Từ vựng dùng khi đặt bàn, gọi món và dùng bữa tại nhà hàng.",
     "order": 19,
-    "group": "Food & Drink"
+    "group": "Food & Drink",
+    "groupVi": "Ẩm thực"
   },
   {
     "slug": "coffee",
     "title": "Coffee & Tea",
+    "titleVi": "Cà phê và trà",
     "description": "Vocabulary related to coffee & tea.",
+    "descriptionVi": "Từ vựng về cà phê, trà và cách gọi đồ uống.",
     "order": 20,
-    "group": "Food & Drink"
+    "group": "Food & Drink",
+    "groupVi": "Ẩm thực"
   },
   {
     "slug": "diet",
     "title": "Diet & Nutrition",
+    "titleVi": "Chế độ ăn và dinh dưỡng",
     "description": "Vocabulary related to diet & nutrition.",
+    "descriptionVi": "Từ vựng về chế độ ăn, dinh dưỡng và thói quen ăn uống.",
     "order": 21,
-    "group": "Food & Drink"
+    "group": "Food & Drink",
+    "groupVi": "Ẩm thực"
   },
   {
     "slug": "school",
     "title": "School",
+    "titleVi": "Trường học",
     "description": "Vocabulary related to school.",
+    "descriptionVi": "Từ vựng về trường học, lớp học và hoạt động học tập.",
     "order": 22,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "university",
     "title": "University",
+    "titleVi": "Đại học",
     "description": "Vocabulary related to university.",
+    "descriptionVi": "Từ vựng về đời sống, môn học và hoạt động tại đại học.",
     "order": 23,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "education",
     "title": "Education",
+    "titleVi": "Giáo dục",
     "description": "Vocabulary related to education.",
+    "descriptionVi": "Từ vựng về hệ thống, phương pháp và chính sách giáo dục.",
     "order": 24,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "languages",
     "title": "Languages",
+    "titleVi": "Ngôn ngữ",
     "description": "Vocabulary related to languages.",
+    "descriptionVi": "Từ vựng về ngôn ngữ, việc học và sử dụng ngoại ngữ.",
     "order": 25,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "reading",
     "title": "Reading",
+    "titleVi": "Đọc hiểu",
     "description": "Vocabulary related to reading.",
+    "descriptionVi": "Từ vựng về kỹ năng đọc, tài liệu và thói quen đọc sách.",
     "order": 26,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "books",
     "title": "Books",
+    "titleVi": "Sách",
     "description": "Vocabulary related to books.",
+    "descriptionVi": "Từ vựng về sách, thể loại và hoạt động xuất bản.",
     "order": 27,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "exams",
     "title": "Exams",
+    "titleVi": "Kỳ thi",
     "description": "Vocabulary related to exams.",
+    "descriptionVi": "Từ vựng về ôn tập, làm bài và kết quả thi.",
     "order": 28,
-    "group": "Education"
+    "group": "Education",
+    "groupVi": "Giáo dục"
   },
   {
     "slug": "job",
     "title": "Job",
+    "titleVi": "Công việc",
     "description": "Vocabulary related to job.",
+    "descriptionVi": "Từ vựng về công việc, nghề nghiệp và nhiệm vụ chuyên môn.",
     "order": 29,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "career",
     "title": "Career",
+    "titleVi": "Sự nghiệp",
     "description": "Vocabulary related to career.",
+    "descriptionVi": "Từ vựng về định hướng, phát triển và thăng tiến sự nghiệp.",
     "order": 30,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "interview",
     "title": "Interview",
+    "titleVi": "Phỏng vấn",
     "description": "Vocabulary related to interview.",
+    "descriptionVi": "Từ vựng dùng khi chuẩn bị và tham gia phỏng vấn việc làm.",
     "order": 31,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "office",
     "title": "Office",
+    "titleVi": "Văn phòng",
     "description": "Vocabulary related to office.",
+    "descriptionVi": "Từ vựng về môi trường, thiết bị và hoạt động tại văn phòng.",
     "order": 32,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "business",
     "title": "Business",
+    "titleVi": "Kinh doanh",
     "description": "Vocabulary related to business.",
+    "descriptionVi": "Từ vựng về doanh nghiệp, giao dịch và hoạt động kinh doanh.",
     "order": 33,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "entrepreneurship",
     "title": "Entrepreneurship",
+    "titleVi": "Khởi nghiệp",
     "description": "Vocabulary related to entrepreneurship.",
+    "descriptionVi": "Từ vựng về khởi nghiệp, xây dựng và vận hành doanh nghiệp.",
     "order": 34,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "leadership",
     "title": "Leadership",
+    "titleVi": "Lãnh đạo",
     "description": "Vocabulary related to leadership.",
+    "descriptionVi": "Từ vựng về năng lực lãnh đạo và quản lý đội ngũ.",
     "order": 35,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "teamwork",
     "title": "Teamwork",
+    "titleVi": "Làm việc nhóm",
     "description": "Vocabulary related to teamwork.",
+    "descriptionVi": "Từ vựng về hợp tác, phân công và làm việc trong nhóm.",
     "order": 36,
-    "group": "Work"
+    "group": "Work",
+    "groupVi": "Công việc"
   },
   {
     "slug": "technology",
     "title": "Technology",
+    "titleVi": "Công nghệ",
     "description": "Vocabulary related to technology.",
+    "descriptionVi": "Từ vựng chung về công nghệ, thiết bị và đổi mới kỹ thuật.",
     "order": 37,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "internet",
     "title": "Internet",
+    "titleVi": "Internet",
     "description": "Vocabulary related to internet.",
+    "descriptionVi": "Từ vựng về kết nối, trình duyệt và sử dụng Internet.",
     "order": 38,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "smartphones",
     "title": "Smartphones",
+    "titleVi": "Điện thoại thông minh",
     "description": "Vocabulary related to smartphones.",
+    "descriptionVi": "Từ vựng về điện thoại thông minh, ứng dụng và tính năng.",
     "order": 39,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "social-media",
     "title": "Social Media",
+    "titleVi": "Mạng xã hội",
     "description": "Vocabulary related to social media.",
+    "descriptionVi": "Từ vựng về nền tảng, nội dung và tương tác trên mạng xã hội.",
     "order": 40,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "artificial-intelligence",
     "title": "Artificial Intelligence",
+    "titleVi": "Trí tuệ nhân tạo",
     "description": "Vocabulary related to artificial intelligence.",
+    "descriptionVi": "Từ vựng về trí tuệ nhân tạo, dữ liệu và hệ thống thông minh.",
     "order": 41,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "future-technology",
     "title": "Future Technology",
+    "titleVi": "Công nghệ tương lai",
     "description": "Vocabulary related to future technology.",
+    "descriptionVi": "Từ vựng về các xu hướng và phát minh công nghệ trong tương lai.",
     "order": 42,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "gaming",
     "title": "Gaming",
+    "titleVi": "Trò chơi điện tử",
     "description": "Vocabulary related to gaming.",
+    "descriptionVi": "Từ vựng về trò chơi điện tử, lối chơi và cộng đồng người chơi.",
     "order": 43,
-    "group": "Technology"
+    "group": "Technology",
+    "groupVi": "Công nghệ"
   },
   {
     "slug": "movies",
     "title": "Movies",
+    "titleVi": "Phim ảnh",
     "description": "Vocabulary related to movies.",
+    "descriptionVi": "Từ vựng về phim ảnh, thể loại và quá trình sản xuất phim.",
     "order": 44,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "tv-shows",
     "title": "TV Shows",
+    "titleVi": "Chương trình truyền hình",
     "description": "Vocabulary related to tv shows.",
+    "descriptionVi": "Từ vựng về chương trình truyền hình, tập phim và khán giả.",
     "order": 45,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "music",
     "title": "Music",
+    "titleVi": "Âm nhạc",
     "description": "Vocabulary related to music.",
+    "descriptionVi": "Từ vựng về âm nhạc, nhạc cụ và các thể loại nhạc.",
     "order": 46,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "photography",
     "title": "Photography",
+    "titleVi": "Nhiếp ảnh",
     "description": "Vocabulary related to photography.",
+    "descriptionVi": "Từ vựng về nhiếp ảnh, máy ảnh và kỹ thuật chụp hình.",
     "order": 47,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "drawing-and-painting",
     "title": "Drawing & Painting",
+    "titleVi": "Vẽ và hội họa",
     "description": "Vocabulary related to drawing & painting.",
+    "descriptionVi": "Từ vựng về vẽ, hội họa, vật liệu và kỹ thuật tạo hình.",
     "order": 48,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "dancing",
     "title": "Dancing",
+    "titleVi": "Khiêu vũ",
     "description": "Vocabulary related to dancing.",
+    "descriptionVi": "Từ vựng về khiêu vũ, động tác và các thể loại nhảy.",
     "order": 49,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "singing",
     "title": "Singing",
+    "titleVi": "Ca hát",
     "description": "Vocabulary related to singing.",
+    "descriptionVi": "Từ vựng về ca hát, giọng hát và biểu diễn thanh nhạc.",
     "order": 50,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "hobbies",
     "title": "Hobbies",
+    "titleVi": "Sở thích",
     "description": "Vocabulary related to hobbies.",
+    "descriptionVi": "Từ vựng về sở thích và các hoạt động trong thời gian rảnh.",
     "order": 51,
-    "group": "Entertainment"
+    "group": "Entertainment",
+    "groupVi": "Giải trí"
   },
   {
     "slug": "travel",
     "title": "Travel",
+    "titleVi": "Du lịch",
     "description": "Vocabulary related to travel.",
+    "descriptionVi": "Từ vựng chung về hành trình, điểm đến và trải nghiệm du lịch.",
     "order": 52,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "vacation",
     "title": "Vacation",
+    "titleVi": "Kỳ nghỉ",
     "description": "Vocabulary related to vacation.",
+    "descriptionVi": "Từ vựng về kỳ nghỉ, kế hoạch và hoạt động thư giãn.",
     "order": 53,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "hotel",
     "title": "Hotel",
+    "titleVi": "Khách sạn",
     "description": "Vocabulary related to hotel.",
+    "descriptionVi": "Từ vựng dùng khi đặt phòng, nhận phòng và lưu trú tại khách sạn.",
     "order": 54,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "airport",
     "title": "Airport",
+    "titleVi": "Sân bay",
     "description": "Vocabulary related to airport.",
+    "descriptionVi": "Từ vựng dùng khi làm thủ tục, lên máy bay và di chuyển tại sân bay.",
     "order": 55,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "transportation",
     "title": "Transportation",
+    "titleVi": "Phương tiện giao thông",
     "description": "Vocabulary related to transportation.",
+    "descriptionVi": "Từ vựng về các phương tiện và hình thức di chuyển.",
     "order": 56,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "driving",
     "title": "Driving",
+    "titleVi": "Lái xe",
     "description": "Vocabulary related to driving.",
+    "descriptionVi": "Từ vựng về lái xe, thao tác điều khiển và quy tắc đường bộ.",
     "order": 57,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "traffic",
     "title": "Traffic",
+    "titleVi": "Giao thông",
     "description": "Vocabulary related to traffic.",
+    "descriptionVi": "Từ vựng về tình trạng giao thông, biển báo và đường sá.",
     "order": 58,
-    "group": "Travel"
+    "group": "Travel",
+    "groupVi": "Du lịch"
   },
   {
     "slug": "weather",
     "title": "Weather",
+    "titleVi": "Thời tiết",
     "description": "Vocabulary related to weather.",
+    "descriptionVi": "Từ vựng về điều kiện thời tiết và dự báo khí tượng.",
     "order": 59,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "seasons",
     "title": "Seasons",
+    "titleVi": "Các mùa",
     "description": "Vocabulary related to seasons.",
+    "descriptionVi": "Từ vựng về các mùa và những thay đổi theo mùa trong năm.",
     "order": 60,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "nature",
     "title": "Nature",
+    "titleVi": "Thiên nhiên",
     "description": "Vocabulary related to nature.",
+    "descriptionVi": "Từ vựng về cảnh quan, hiện tượng và thế giới tự nhiên.",
     "order": 61,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "plants",
     "title": "Plants",
+    "titleVi": "Thực vật",
     "description": "Vocabulary related to plants.",
+    "descriptionVi": "Từ vựng về cây cối, hoa, bộ phận và sự phát triển của thực vật.",
     "order": 62,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "animals",
     "title": "Animals",
+    "titleVi": "Động vật",
     "description": "Vocabulary related to animals.",
+    "descriptionVi": "Từ vựng chung về động vật, đặc điểm và môi trường sống.",
     "order": 63,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "pets",
     "title": "Pets",
+    "titleVi": "Thú cưng",
     "description": "Vocabulary related to pets.",
+    "descriptionVi": "Từ vựng về thú cưng, chăm sóc và hành vi của vật nuôi.",
     "order": 64,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "wild-animals",
     "title": "Wild Animals",
+    "titleVi": "Động vật hoang dã",
     "description": "Vocabulary related to wild animals.",
+    "descriptionVi": "Từ vựng về động vật hoang dã và môi trường sống tự nhiên.",
     "order": 65,
-    "group": "Nature"
+    "group": "Nature",
+    "groupVi": "Thiên nhiên"
   },
   {
     "slug": "environment",
     "title": "Environment",
+    "titleVi": "Môi trường",
     "description": "Vocabulary related to environment.",
+    "descriptionVi": "Từ vựng về môi trường, hệ sinh thái và hoạt động bảo tồn.",
     "order": 66,
-    "group": "Environment"
+    "group": "Environment",
+    "groupVi": "Môi trường"
   },
   {
     "slug": "pollution",
     "title": "Pollution",
+    "titleVi": "Ô nhiễm",
     "description": "Vocabulary related to pollution.",
+    "descriptionVi": "Từ vựng về các dạng ô nhiễm, nguyên nhân và tác động.",
     "order": 67,
-    "group": "Environment"
+    "group": "Environment",
+    "groupVi": "Môi trường"
   },
   {
     "slug": "recycling",
     "title": "Recycling",
+    "titleVi": "Tái chế",
     "description": "Vocabulary related to recycling.",
+    "descriptionVi": "Từ vựng về phân loại chất thải, tái sử dụng và tái chế.",
     "order": 68,
-    "group": "Environment"
+    "group": "Environment",
+    "groupVi": "Môi trường"
   },
   {
     "slug": "climate-change",
     "title": "Climate Change",
+    "titleVi": "Biến đổi khí hậu",
     "description": "Vocabulary related to climate change.",
+    "descriptionVi": "Từ vựng về biến đổi khí hậu, nguyên nhân và hậu quả toàn cầu.",
     "order": 69,
-    "group": "Environment"
+    "group": "Environment",
+    "groupVi": "Môi trường"
   },
   {
     "slug": "renewable-energy",
     "title": "Renewable Energy",
+    "titleVi": "Năng lượng tái tạo",
     "description": "Vocabulary related to renewable energy.",
+    "descriptionVi": "Từ vựng về các nguồn năng lượng sạch và công nghệ tái tạo.",
     "order": 70,
-    "group": "Environment"
+    "group": "Environment",
+    "groupVi": "Môi trường"
   },
   {
     "slug": "health",
     "title": "Health",
+    "titleVi": "Sức khỏe",
     "description": "Vocabulary related to health.",
+    "descriptionVi": "Từ vựng chung về sức khỏe, triệu chứng và chăm sóc cơ thể.",
     "order": 71,
-    "group": "Health"
+    "group": "Health",
+    "groupVi": "Sức khỏe"
   },
   {
     "slug": "mental-health",
     "title": "Mental Health",
+    "titleVi": "Sức khỏe tinh thần",
     "description": "Vocabulary related to mental health.",
+    "descriptionVi": "Từ vựng về sức khỏe tinh thần, cảm xúc và hỗ trợ tâm lý.",
     "order": 72,
-    "group": "Health"
+    "group": "Health",
+    "groupVi": "Sức khỏe"
   },
   {
     "slug": "exercise",
     "title": "Exercise",
+    "titleVi": "Tập thể dục",
     "description": "Vocabulary related to exercise.",
+    "descriptionVi": "Từ vựng về vận động, bài tập và rèn luyện thể lực.",
     "order": 73,
-    "group": "Health"
+    "group": "Health",
+    "groupVi": "Sức khỏe"
   },
   {
     "slug": "medicine",
     "title": "Medicine",
+    "titleVi": "Y học và thuốc",
     "description": "Vocabulary related to medicine.",
+    "descriptionVi": "Từ vựng về y học, thuốc men và hoạt động điều trị.",
     "order": 74,
-    "group": "Health"
+    "group": "Health",
+    "groupVi": "Sức khỏe"
   },
   {
     "slug": "diseases",
     "title": "Diseases",
+    "titleVi": "Bệnh tật",
     "description": "Vocabulary related to diseases.",
+    "descriptionVi": "Từ vựng về bệnh tật, chẩn đoán và quá trình hồi phục.",
     "order": 75,
-    "group": "Health"
+    "group": "Health",
+    "groupVi": "Sức khỏe"
   },
   {
     "slug": "banking",
     "title": "Banking",
+    "titleVi": "Ngân hàng",
     "description": "Vocabulary related to banking.",
+    "descriptionVi": "Từ vựng về tài khoản, giao dịch và dịch vụ ngân hàng.",
     "order": 76,
-    "group": "Finance"
+    "group": "Finance",
+    "groupVi": "Tài chính"
   },
   {
     "slug": "economy",
     "title": "Economy",
+    "titleVi": "Kinh tế",
     "description": "Vocabulary related to economy.",
+    "descriptionVi": "Từ vựng về nền kinh tế, thị trường và các chỉ số kinh tế.",
     "order": 77,
-    "group": "Finance"
+    "group": "Finance",
+    "groupVi": "Tài chính"
   },
   {
     "slug": "money",
     "title": "Money",
+    "titleVi": "Tiền bạc",
     "description": "Vocabulary related to money.",
+    "descriptionVi": "Từ vựng về tiền bạc, chi tiêu, tiết kiệm và thanh toán.",
     "order": 78,
-    "group": "Finance"
+    "group": "Finance",
+    "groupVi": "Tài chính"
   },
   {
     "slug": "tax",
     "title": "Tax",
+    "titleVi": "Thuế",
     "description": "Vocabulary related to tax.",
+    "descriptionVi": "Từ vựng về các loại thuế, khai thuế và nghĩa vụ thuế.",
     "order": 79,
-    "group": "Finance"
+    "group": "Finance",
+    "groupVi": "Tài chính"
   },
   {
     "slug": "insurance",
     "title": "Insurance",
+    "titleVi": "Bảo hiểm",
     "description": "Vocabulary related to insurance.",
+    "descriptionVi": "Từ vựng về hợp đồng, quyền lợi và yêu cầu bồi thường bảo hiểm.",
     "order": 80,
-    "group": "Finance"
+    "group": "Finance",
+    "groupVi": "Tài chính"
   },
   {
     "slug": "investment",
     "title": "Investment",
+    "titleVi": "Đầu tư",
     "description": "Vocabulary related to investment.",
+    "descriptionVi": "Từ vựng về đầu tư, tài sản, lợi nhuận và rủi ro.",
     "order": 81,
-    "group": "Finance"
+    "group": "Finance",
+    "groupVi": "Tài chính"
   },
   {
     "slug": "laws",
     "title": "Laws",
+    "titleVi": "Pháp luật",
     "description": "Vocabulary related to laws.",
+    "descriptionVi": "Từ vựng về pháp luật, quy định và các thủ tục pháp lý.",
     "order": 82,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "crime-and-safety",
     "title": "Crime & Safety",
+    "titleVi": "Tội phạm và an toàn",
     "description": "Vocabulary related to crime & safety.",
+    "descriptionVi": "Từ vựng về tội phạm, phòng ngừa và bảo đảm an toàn.",
     "order": 83,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "human-rights",
     "title": "Human Rights",
+    "titleVi": "Quyền con người",
     "description": "Vocabulary related to human rights.",
+    "descriptionVi": "Từ vựng về quyền con người, bình đẳng và tự do cơ bản.",
     "order": 84,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "community",
     "title": "Community",
+    "titleVi": "Cộng đồng",
     "description": "Vocabulary related to community.",
+    "descriptionVi": "Từ vựng về cộng đồng, hoạt động địa phương và hỗ trợ xã hội.",
     "order": 85,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "culture",
     "title": "Culture",
+    "titleVi": "Văn hóa",
     "description": "Vocabulary related to culture.",
+    "descriptionVi": "Từ vựng về văn hóa, phong tục, truyền thống và bản sắc.",
     "order": 86,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "religion",
     "title": "Religion",
+    "titleVi": "Tôn giáo",
     "description": "Vocabulary related to religion.",
+    "descriptionVi": "Từ vựng về tôn giáo, tín ngưỡng và thực hành tâm linh.",
     "order": 87,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "history",
     "title": "History",
+    "titleVi": "Lịch sử",
     "description": "Vocabulary related to history.",
+    "descriptionVi": "Từ vựng về sự kiện, thời kỳ và nhân vật lịch sử.",
     "order": 88,
-    "group": "Society"
+    "group": "Society",
+    "groupVi": "Xã hội"
   },
   {
     "slug": "mathematics",
     "title": "Mathematics",
+    "titleVi": "Toán học",
     "description": "Vocabulary related to mathematics.",
+    "descriptionVi": "Từ vựng về số học, hình học và các khái niệm toán học.",
     "order": 89,
-    "group": "Science"
+    "group": "Science",
+    "groupVi": "Khoa học"
   },
   {
     "slug": "physics",
     "title": "Physics",
+    "titleVi": "Vật lý",
     "description": "Vocabulary related to physics.",
+    "descriptionVi": "Từ vựng về vật lý, lực, năng lượng và vật chất.",
     "order": 90,
-    "group": "Science"
+    "group": "Science",
+    "groupVi": "Khoa học"
   },
   {
     "slug": "chemistry",
     "title": "Chemistry",
+    "titleVi": "Hóa học",
     "description": "Vocabulary related to chemistry.",
+    "descriptionVi": "Từ vựng về hóa học, nguyên tố, hợp chất và phản ứng.",
     "order": 91,
-    "group": "Science"
+    "group": "Science",
+    "groupVi": "Khoa học"
   },
   {
     "slug": "biology",
     "title": "Biology",
+    "titleVi": "Sinh học",
     "description": "Vocabulary related to biology.",
+    "descriptionVi": "Từ vựng về sinh học, tế bào, sinh vật và sự sống.",
     "order": 92,
-    "group": "Science"
+    "group": "Science",
+    "groupVi": "Khoa học"
   },
   {
     "slug": "space-exploration",
     "title": "Space Exploration",
+    "titleVi": "Khám phá không gian",
     "description": "Vocabulary related to space exploration.",
+    "descriptionVi": "Từ vựng về vũ trụ, tàu không gian và hoạt động thám hiểm.",
     "order": 93,
-    "group": "Science"
+    "group": "Science",
+    "groupVi": "Khoa học"
   },
   {
     "slug": "communication-skills",
     "title": "Communication Skills",
+    "titleVi": "Kỹ năng giao tiếp",
     "description": "Vocabulary related to communication skills.",
+    "descriptionVi": "Từ vựng về lắng nghe, diễn đạt và tương tác hiệu quả.",
     "order": 94,
-    "group": "Skills"
+    "group": "Skills",
+    "groupVi": "Kỹ năng"
   },
   {
     "slug": "writing",
     "title": "Writing",
+    "titleVi": "Kỹ năng viết",
     "description": "Vocabulary related to writing.",
+    "descriptionVi": "Từ vựng về kỹ năng viết, cấu trúc và biên tập văn bản.",
     "order": 95,
-    "group": "Skills"
+    "group": "Skills",
+    "groupVi": "Kỹ năng"
   },
   {
     "slug": "speaking",
     "title": "Speaking",
+    "titleVi": "Kỹ năng nói",
     "description": "Vocabulary related to speaking.",
+    "descriptionVi": "Từ vựng về kỹ năng nói, phát âm và trình bày ý tưởng.",
     "order": 96,
-    "group": "Skills"
+    "group": "Skills",
+    "groupVi": "Kỹ năng"
   },
   {
     "slug": "problem-solving",
     "title": "Problem Solving",
+    "titleVi": "Giải quyết vấn đề",
     "description": "Vocabulary related to problem solving.",
+    "descriptionVi": "Từ vựng về phân tích, tìm giải pháp và xử lý vấn đề.",
     "order": 97,
-    "group": "Skills"
+    "group": "Skills",
+    "groupVi": "Kỹ năng"
   },
   {
     "slug": "decision-making",
     "title": "Decision Making",
+    "titleVi": "Ra quyết định",
     "description": "Vocabulary related to decision making.",
+    "descriptionVi": "Từ vựng về cân nhắc lựa chọn và đưa ra quyết định.",
     "order": 98,
-    "group": "Skills"
+    "group": "Skills",
+    "groupVi": "Kỹ năng"
   },
   {
     "slug": "success",
     "title": "Success",
+    "titleVi": "Thành công",
     "description": "Vocabulary related to success.",
+    "descriptionVi": "Từ vựng về thành công, thành tựu và các yếu tố tạo nên kết quả tốt.",
     "order": 99,
-    "group": "Personal Development"
+    "group": "Personal Development",
+    "groupVi": "Phát triển bản thân"
   },
   {
     "slug": "failure",
     "title": "Failure",
+    "titleVi": "Thất bại",
     "description": "Vocabulary related to failure.",
+    "descriptionVi": "Từ vựng về thất bại, khó khăn và bài học từ sai sót.",
     "order": 100,
-    "group": "Personal Development"
+    "group": "Personal Development",
+    "groupVi": "Phát triển bản thân"
   },
   {
     "slug": "goals-and-ambitions",
     "title": "Goals & Ambitions",
+    "titleVi": "Mục tiêu và hoài bão",
     "description": "Vocabulary related to goals & ambitions.",
+    "descriptionVi": "Từ vựng về mục tiêu, hoài bão và kế hoạch phát triển cá nhân.",
     "order": 101,
-    "group": "Personal Development"
+    "group": "Personal Development",
+    "groupVi": "Phát triển bản thân"
   },
   {
     "slug": "stress",
     "title": "Stress",
+    "titleVi": "Căng thẳng",
     "description": "Vocabulary related to stress.",
+    "descriptionVi": "Từ vựng về căng thẳng, nguyên nhân và cách ứng phó.",
     "order": 102,
-    "group": "Personal Development"
+    "group": "Personal Development",
+    "groupVi": "Phát triển bản thân"
   },
   {
     "slug": "happiness",
     "title": "Happiness",
+    "titleVi": "Hạnh phúc",
     "description": "Vocabulary related to happiness.",
+    "descriptionVi": "Từ vựng về hạnh phúc, sự hài lòng và trạng thái tích cực.",
     "order": 103,
-    "group": "Personal Development"
+    "group": "Personal Development",
+    "groupVi": "Phát triển bản thân"
   }
 ]
