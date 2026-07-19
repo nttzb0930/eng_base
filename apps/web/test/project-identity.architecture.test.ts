@@ -10,6 +10,9 @@ const sharedConstantsRoot = join(
   workspaceRoot,
   "packages/shared/src/constants"
 );
+const legacyProductBrand = ["lin", "go"].join("");
+const legacyPrototypeBrand = ["voca", "bu"].join("");
+const legacyLocaleHeader = ["x", legacyProductBrand, "locale"].join("-");
 
 function sourceFilesUnder(directory: string): string[] {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -36,7 +39,12 @@ test("frontend identity follows runtime ownership without legacy branding", () =
 
   const offenders = [join(webRoot, "app"), join(adminRoot, "app")]
     .flatMap(sourceFilesUnder)
-    .filter((file) => /\b(?:lingo|vocabu)\b/iu.test(readFileSync(file, "utf8")))
+    .filter((file) =>
+      new RegExp(
+        `\\b(?:${legacyProductBrand}|${legacyPrototypeBrand})\\b`,
+        "iu"
+      ).test(readFileSync(file, "utf8"))
+    )
     .map((file) => relative(workspaceRoot, file).replaceAll("\\", "/"));
 
   assert.deepEqual(offenders, []);
@@ -57,5 +65,8 @@ test("Web locale transport uses one neutral request-header contract", () => {
   );
   assert.match(proxySource, /requestHeaders\.set\(\s*LOCALE_REQUEST_HEADER/u);
   assert.match(requestSource, /\.get\(LOCALE_REQUEST_HEADER\)/u);
-  assert.doesNotMatch(`${proxySource}\n${requestSource}`, /x-lingo-locale/iu);
+  assert.doesNotMatch(
+    `${proxySource}\n${requestSource}`,
+    new RegExp(legacyLocaleHeader, "iu")
+  );
 });

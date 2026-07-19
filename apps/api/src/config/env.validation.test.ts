@@ -5,7 +5,7 @@ import { validateEnvironment } from "./env.validation";
 
 test("API environment Interface validates database configuration and defaults", () => {
   const configuration = validateEnvironment({
-    DATABASE_URL: "postgresql://localhost/lingo",
+    DATABASE_URL: "postgresql://localhost/eng_base",
     JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
     JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
   });
@@ -22,7 +22,7 @@ test("API environment Interface validates database configuration and defaults", 
 
 test("API environment Interface validates trusted proxy hop count", () => {
   const base = {
-    DATABASE_URL: "postgresql://localhost/lingo",
+    DATABASE_URL: "postgresql://localhost/eng_base",
     JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
     JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
   };
@@ -93,13 +93,14 @@ test("API environment Interface resolves templates and rejects invalid database 
 
 test("API environment Interface rejects missing, weak, or reused JWT secrets", () => {
   assert.throws(
-    () => validateEnvironment({ DATABASE_URL: "postgresql://localhost/lingo" }),
+    () =>
+      validateEnvironment({ DATABASE_URL: "postgresql://localhost/eng_base" }),
     /JWT_ACCESS_SECRET/
   );
   assert.throws(
     () =>
       validateEnvironment({
-        DATABASE_URL: "postgresql://localhost/lingo",
+        DATABASE_URL: "postgresql://localhost/eng_base",
         JWT_ACCESS_SECRET: "short",
         JWT_REFRESH_SECRET: "also-short",
       }),
@@ -108,7 +109,7 @@ test("API environment Interface rejects missing, weak, or reused JWT secrets", (
   assert.throws(
     () =>
       validateEnvironment({
-        DATABASE_URL: "postgresql://localhost/lingo",
+        DATABASE_URL: "postgresql://localhost/eng_base",
         JWT_ACCESS_SECRET: "same-secret-that-is-long-enough-123",
         JWT_REFRESH_SECRET: "same-secret-that-is-long-enough-123",
       }),
