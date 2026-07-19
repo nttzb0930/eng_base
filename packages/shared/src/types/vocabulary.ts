@@ -67,6 +67,7 @@ export type VocabularyTopic = {
   slug: string;
   title: string;
   description: string;
+  group: string;
   order: number;
   total: number;
   learned: number;

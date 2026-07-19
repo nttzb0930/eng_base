@@ -15,7 +15,11 @@ export type RawVocabularyTopic = {
   id: number;
   slug: string;
   title: string;
+  title_vi: string | null;
   description: string;
+  description_vi: string | null;
+  group_name: string | null;
+  group_name_vi: string | null;
   order: number;
   created_at: Date;
 };
@@ -68,7 +72,8 @@ export class TopicSource {
 
   protected async getRawTopics() {
     return this.prisma.$queryRaw<RawVocabularyTopic[]>`
-      SELECT id, slug, title, description, "order", created_at
+      SELECT id, slug, title, title_vi, description, description_vi,
+             group_name, group_name_vi, "order", created_at
       FROM vocabulary_topics
       ORDER BY "order" ASC
     `;
@@ -76,7 +81,8 @@ export class TopicSource {
 
   protected async getRawTopicBySlug(slug: string) {
     const topics = await this.prisma.$queryRaw<RawVocabularyTopic[]>`
-      SELECT id, slug, title, description, "order", created_at
+      SELECT id, slug, title, title_vi, description, description_vi,
+             group_name, group_name_vi, "order", created_at
       FROM vocabulary_topics
       WHERE slug = ${slug}
       LIMIT 1

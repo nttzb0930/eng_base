@@ -1,5 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import {
+  localizeVocabularyTopic,
+  type TopicLocale,
+} from "../topic-locale";
 import { PRACTICE_CEFR_LEVELS, type PracticeCefrLevel, TopicSource } from "./topic-source";
 
 @Injectable()
@@ -8,7 +12,12 @@ export class GetVocabularyTopicUseCase extends TopicSource {
     super(prisma);
   }
 
-  async execute(userId: string, slug: string, level?: string) {
+  async execute(
+    userId: string,
+    slug: string,
+    level?: string,
+    locale: TopicLocale = "en",
+  ) {
     const normalizedLevel = this.normalizePracticeCefrLevel(level);
     const topic = await this.getRawTopicBySlug(slug);
 
@@ -31,11 +40,7 @@ export class GetVocabularyTopicUseCase extends TopicSource {
     ) as Record<PracticeCefrLevel, number>;
 
     return {
-      id: topic.id,
-      slug: topic.slug,
-      title: topic.title,
-      description: topic.description,
-      order: topic.order,
+      ...localizeVocabularyTopic(topic, locale),
       selectedLevel: normalizedLevel,
       countsByLevel,
       stats: this.getTopicStats(allItems),
