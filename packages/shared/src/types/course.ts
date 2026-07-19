@@ -10,6 +10,7 @@ export type LessonChallengeDirection =
 
 export type Course = {
   id: number;
+  code: string;
   title: string;
   imageSrc: string;
 };
@@ -56,8 +57,8 @@ export type PaginatedLessonChallengesResponse =
 export type PaginatedLessonChallengeOptionsResponse =
   PaginatedResponse<LessonChallengeOption>;
 
-export type CreateCoursePayload = Pick<Course, "title" | "imageSrc">;
-export type UpdateCoursePayload = Partial<CreateCoursePayload>;
+export type CreateCoursePayload = Pick<Course, "code" | "title" | "imageSrc">;
+export type UpdateCoursePayload = Partial<Pick<Course, "title" | "imageSrc">>;
 export type CreateCourseUnitPayload = Omit<CourseUnit, "id">;
 export type UpdateCourseUnitPayload = Partial<CreateCourseUnitPayload>;
 export type CreateCourseLessonPayload = Omit<CourseLesson, "id">;

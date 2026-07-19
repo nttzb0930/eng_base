@@ -4,7 +4,12 @@ import test from "node:test";
 import { CEFR_LEVELS, type Course } from "@repo/shared";
 
 test("the declared shared root package interface resolves", () => {
-  const course: Course = { id: 1, title: "English", imageSrc: "/en.svg" };
+  const course: Course = {
+    id: 1,
+    code: "english-vocabulary",
+    title: "English",
+    imageSrc: "/en.svg",
+  };
   assert.equal(course.title, "English");
   assert.equal(CEFR_LEVELS[0], "A1");
 });

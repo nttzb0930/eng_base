@@ -28,6 +28,7 @@ import type {
 
 export const mapCourse = (course: coursesModel): Course => ({
   id: course.id,
+  code: course.code,
   title: course.title,
   imageSrc: course.image_src,
 });
@@ -47,9 +48,7 @@ export const mapLesson = (lesson: lessonsModel): CourseLesson => ({
   order: lesson.order,
 });
 
-export const mapChallenge = (
-  challenge: challengesModel
-): LessonChallenge => ({
+export const mapChallenge = (challenge: challengesModel): LessonChallenge => ({
   id: challenge.id,
   lessonId: challenge.lesson_id,
   type: challenge.type,
@@ -71,6 +70,7 @@ export const mapChallengeOption = (
 });
 
 export const toCourseCreateData = (body: CourseCreateDto) => ({
+  code: body.code,
   title: body.title,
   image_src: body.imageSrc,
 });

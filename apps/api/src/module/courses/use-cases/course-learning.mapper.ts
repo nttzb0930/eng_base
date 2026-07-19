@@ -63,6 +63,7 @@ export class CourseLearningMapper {
   protected mapCourse(course: coursesModel): Course {
     return {
       id: course.id,
+      code: course.code,
       title: course.title,
       imageSrc: course.image_src,
     };

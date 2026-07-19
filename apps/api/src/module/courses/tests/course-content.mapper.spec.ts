@@ -29,12 +29,14 @@ import {
 test("persistence mappers expose the existing camelCase course-management contract", () => {
   const expectedCourse = {
     id: 1,
+    code: "english-vocabulary",
     title: "English",
     imageSrc: "/english.svg",
   } satisfies Course;
   assert.deepEqual(
     mapCourse({
       id: 1,
+      code: "english-vocabulary",
       title: "English",
       image_src: "/english.svg",
     } as Parameters<typeof mapCourse>[0]),
@@ -120,8 +122,16 @@ test("persistence mappers expose the existing camelCase course-management contra
 
 test("write mappers preserve the existing snake_case persistence seam", () => {
   assert.deepEqual(
-    toCourseCreateData({ title: "English", imageSrc: "/english.svg" }),
-    { title: "English", image_src: "/english.svg" }
+    toCourseCreateData({
+      code: "english-vocabulary",
+      title: "English",
+      imageSrc: "/english.svg",
+    }),
+    {
+      code: "english-vocabulary",
+      title: "English",
+      image_src: "/english.svg",
+    }
   );
   assert.deepEqual(toCourseData({ imageSrc: "/new.svg" }), {
     image_src: "/new.svg",

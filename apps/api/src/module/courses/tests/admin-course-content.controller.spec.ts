@@ -128,7 +128,14 @@ test("unpaged delivery preserves Content-Range without requesting a count", asyn
   await sendAdminListResponse(response, query, (listQuery, includeTotal) => {
     calls.push([listQuery, includeTotal]);
     return Promise.resolve({
-      data: [{ id: 1, title: "English", imageSrc: "/en.svg" }],
+      data: [
+        {
+          id: 1,
+          code: "english-vocabulary",
+          title: "English",
+          imageSrc: "/en.svg",
+        },
+      ],
     });
   });
 
@@ -163,13 +170,27 @@ test("paged delivery preserves the response pagination contract", async () => {
 
   await sendAdminListResponse(response, query, () =>
     Promise.resolve({
-      data: [{ id: 3, title: "English", imageSrc: "/en.svg" }],
+      data: [
+        {
+          id: 3,
+          code: "english-vocabulary",
+          title: "English",
+          imageSrc: "/en.svg",
+        },
+      ],
       total: 5,
     })
   );
 
   assert.deepEqual(result.body, {
-    data: [{ id: 3, title: "English", imageSrc: "/en.svg" }],
+    data: [
+      {
+        id: 3,
+        code: "english-vocabulary",
+        title: "English",
+        imageSrc: "/en.svg",
+      },
+    ],
     pagination: {
       total: 5,
       page: 2,

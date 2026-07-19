@@ -5,6 +5,7 @@ import {
   IsNumber,
   IsOptional,
   IsString,
+  Matches,
 } from "class-validator";
 import {
   LESSON_CHALLENGE_DIRECTIONS,
@@ -22,6 +23,7 @@ import {
   type UpdateLessonChallengeOptionPayload,
   type UpdateLessonChallengePayload,
 } from "@repo/shared";
+import { COURSE_CODE_PATTERN } from "../course.constants";
 
 const CHALLENGE_TYPE_ENUM = Object.fromEntries(
   LESSON_CHALLENGE_TYPES.map((value) => [value, value])
@@ -32,6 +34,11 @@ const CHALLENGE_DIRECTION_ENUM = Object.fromEntries(
 ) as Record<LessonChallengeDirection, LessonChallengeDirection>;
 
 export class CourseCreateDto implements CreateCoursePayload {
+  @IsString()
+  @IsNotEmpty()
+  @Matches(COURSE_CODE_PATTERN)
+  code!: string;
+
   @IsString()
   @IsNotEmpty()
   title!: string;

@@ -65,6 +65,7 @@ model challenges {
 
 model courses {
   id            Int             @id @default(autoincrement())
+  code          String          @unique
   title         String
   image_src     String
   units         units[]
@@ -123,14 +124,14 @@ model placement_test_sessions {
 }
 
 model practice_sessions {
-  id           Int                      @id @default(autoincrement())
-  user_id      String
-  mode         String
-  correct_count Int                     @default(0)
-  wrong_count   Int                     @default(0)
-  accuracy       Int                    @default(0)
-  created_at   DateTime                 @default(now()) @db.Timestamp(6)
-  items        practice_session_items[]
+  id            Int                      @id @default(autoincrement())
+  user_id       String
+  mode          String
+  correct_count Int                      @default(0)
+  wrong_count   Int                      @default(0)
+  accuracy      Int                      @default(0)
+  created_at    DateTime                 @default(now()) @db.Timestamp(6)
+  items         practice_session_items[]
 
   @@index([user_id, created_at], map: "practice_sessions_user_created_idx")
 }
@@ -181,30 +182,30 @@ model user_vocabulary_progress {
 }
 
 model vocabulary_items {
-  id                 Int                @id @default(autoincrement())
-  word               String
-  normalized_word    String
-  pos                String
-  pos_vi             String?
-  cefr_level         String
-  phonetic           String?
-  phonetic_source    String?
-  audio_url          String?
-  audio_source       String?
-  example_en         String?
-  example_vi         String?
-  example_source     String?
-  meaning_vi         String
-  primary_meaning_vi String
-  source             String             @default("words-cefr-dictionary")
-  created_at         DateTime           @default(now()) @db.Timestamp(6)
-  updated_at         DateTime           @default(now()) @db.Timestamp(6)
-  challenges         challenges[]
-  user_saved_words   user_saved_words[]
+  id                       Int                        @id @default(autoincrement())
+  word                     String
+  normalized_word          String
+  pos                      String
+  pos_vi                   String?
+  cefr_level               String
+  phonetic                 String?
+  phonetic_source          String?
+  audio_url                String?
+  audio_source             String?
+  example_en               String?
+  example_vi               String?
+  example_source           String?
+  meaning_vi               String
+  primary_meaning_vi       String
+  source                   String                     @default("words-cefr-dictionary")
+  created_at               DateTime                   @default(now()) @db.Timestamp(6)
+  updated_at               DateTime                   @default(now()) @db.Timestamp(6)
+  challenges               challenges[]
+  user_saved_words         user_saved_words[]
   user_vocabulary_progress user_vocabulary_progress[]
-  vocabulary_examples vocabulary_examples[]
-  vocabulary_item_topics vocabulary_item_topics[]
-  practice_session_items practice_session_items[]
+  vocabulary_examples      vocabulary_examples[]
+  vocabulary_item_topics   vocabulary_item_topics[]
+  practice_session_items   practice_session_items[]
 }
 
 model vocabulary_examples {

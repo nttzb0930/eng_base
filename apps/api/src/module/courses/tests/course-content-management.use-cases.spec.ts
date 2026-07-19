@@ -16,7 +16,12 @@ const createPrisma = (missing = false) => {
     findMany(arguments_: unknown) {
       calls.push({ operation: "findMany", arguments: arguments_ });
       return Promise.resolve([
-        { id: 1, title: "English", image_src: "/en.svg" },
+        {
+          id: 1,
+          code: "english-vocabulary",
+          title: "English",
+          image_src: "/en.svg",
+        },
       ]);
     },
     count(arguments_: unknown) {
@@ -26,12 +31,24 @@ const createPrisma = (missing = false) => {
     findUnique(arguments_: unknown) {
       calls.push({ operation: "findUnique", arguments: arguments_ });
       return Promise.resolve(
-        missing ? null : { id: 1, title: "English", image_src: "/en.svg" }
+        missing
+          ? null
+          : {
+              id: 1,
+              code: "english-vocabulary",
+              title: "English",
+              image_src: "/en.svg",
+            }
       );
     },
     create(arguments_: unknown) {
       calls.push({ operation: "create", arguments: arguments_ });
-      return Promise.resolve({ id: 1, title: "English", image_src: "/en.svg" });
+      return Promise.resolve({
+        id: 1,
+        code: "english-vocabulary",
+        title: "English",
+        image_src: "/en.svg",
+      });
     },
   };
   const units = {
@@ -77,7 +94,14 @@ test("list use case maps data and owns optional count coordination", async () =>
   };
 
   assert.deepEqual(await useCase.execute(query, true), {
-    data: [{ id: 1, title: "English", imageSrc: "/en.svg" }],
+    data: [
+      {
+        id: 1,
+        code: "english-vocabulary",
+        title: "English",
+        imageSrc: "/en.svg",
+      },
+    ],
     total: 7,
   });
   assert.deepEqual(calls, [
@@ -107,6 +131,7 @@ test("write use cases preserve DTO-to-Prisma mapping", async () => {
   const { prisma, calls } = createPrisma();
 
   await new CreateAdminCourseUseCase(prisma).execute({
+    code: "english-vocabulary",
     title: "English",
     imageSrc: "/en.svg",
   });
@@ -115,7 +140,13 @@ test("write use cases preserve DTO-to-Prisma mapping", async () => {
   assert.deepEqual(calls, [
     {
       operation: "create",
-      arguments: { data: { title: "English", image_src: "/en.svg" } },
+      arguments: {
+        data: {
+          code: "english-vocabulary",
+          title: "English",
+          image_src: "/en.svg",
+        },
+      },
     },
     {
       operation: "update",

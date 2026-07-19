@@ -12,8 +12,14 @@ import {
 } from "@repo/shared";
 
 test("Shared exposes the TypeScript-only root Interface", () => {
-  const course: Course = { id: 1, title: "English", imageSrc: "/en.svg" };
+  const course: Course = {
+    id: 1,
+    code: "english-vocabulary",
+    title: "English",
+    imageSrc: "/en.svg",
+  };
   const payload: CreateCoursePayload = {
+    code: "english-vocabulary",
     title: "English",
     imageSrc: "/en.svg",
   };
@@ -36,6 +42,7 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   };
 
   assert.equal(course.title, payload.title);
+  assert.equal(course.code, payload.code);
   assert.equal(page.data[0]?.imageSrc, "/en.svg");
   assert.equal(flashcards.levels.A1, 0);
   assert.deepEqual(CEFR_LEVELS, ["A1", "A2", "B1", "B2"]);

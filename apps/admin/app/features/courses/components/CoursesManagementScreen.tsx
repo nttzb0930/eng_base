@@ -46,6 +46,7 @@ export function CoursesManagementScreen() {
   const [isOpen, setIsOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [activeId, setActiveId] = useState<number | null>(null);
+  const [code, setCode] = useState("");
   const [title, setTitle] = useState("");
   const [imageSrc, setImageSrc] = useState("");
   const createMutation = useCreateCourse();
@@ -56,6 +57,7 @@ export function CoursesManagementScreen() {
   const handleOpenCreate = () => {
     setIsEdit(false);
     setActiveId(null);
+    setCode("");
     setTitle("");
     setImageSrc("");
     setIsOpen(true);
@@ -63,6 +65,7 @@ export function CoursesManagementScreen() {
   const handleOpenEdit = (c: Course) => {
     setIsEdit(true);
     setActiveId(c.id);
+    setCode(c.code);
     setTitle(c.title);
     setImageSrc(c.imageSrc);
     setIsOpen(true);
@@ -78,7 +81,8 @@ export function CoursesManagementScreen() {
   };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title.trim() || !imageSrc.trim()) {
+    const validCode = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(code.trim());
+    if ((!isEdit && !validCode) || !title.trim() || !imageSrc.trim()) {
       toast.error("Vui lòng điền đầy đủ thông tin");
       return;
     }
@@ -86,7 +90,11 @@ export function CoursesManagementScreen() {
       if (isEdit && activeId !== null) {
         await updateMutation.mutateAsync({ title, imageSrc });
       } else {
-        await createMutation.mutateAsync({ title, imageSrc });
+        await createMutation.mutateAsync({
+          code: code.trim(),
+          title: title.trim(),
+          imageSrc: imageSrc.trim(),
+        });
       }
       toast.success(isEdit ? "Cập nhật thành công" : "Tạo khóa học thành công");
       setIsOpen(false);
@@ -102,6 +110,13 @@ export function CoursesManagementScreen() {
       className: "w-16",
       cell: (item) => (
         <span className="text-xs font-semibold text-zinc-400">#{item.id}</span>
+      ),
+    },
+    {
+      header: "Mã khóa học",
+      accessorKey: "code",
+      cell: (item) => (
+        <span className="font-mono text-xs text-zinc-600">{item.code}</span>
       ),
     },
     {
@@ -191,6 +206,20 @@ export function CoursesManagementScreen() {
             </DialogDescription>
           </DialogHeader>
           <form onSubmit={handleSubmit} className="space-y-4 pt-2">
+            <div className="space-y-2">
+              <Label className="text-sm font-semibold text-zinc-700">
+                Mã khóa học (code)
+              </Label>
+              <Input
+                required
+                disabled={isEdit}
+                value={code}
+                onChange={(event) => setCode(event.target.value)}
+                placeholder="Ví dụ: english-vocabulary"
+                pattern="[a-z0-9]+(?:-[a-z0-9]+)*"
+                className="border-zinc-200 bg-white font-mono text-zinc-900 focus-visible:ring-zinc-400 disabled:cursor-not-allowed disabled:bg-zinc-100"
+              />
+            </div>
             <div className="space-y-2">
               <Label className="text-sm font-semibold text-zinc-700">
                 Tiêu đề khóa học

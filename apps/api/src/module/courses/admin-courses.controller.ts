@@ -48,8 +48,8 @@ export class AdminCoursesController {
       allowSorting: true,
       defaultSortBy: "id",
       defaultSort: "asc",
-      allowedSortBy: ["id", "title"],
-      searchBy: ["title"],
+      allowedSortBy: ["id", "code", "title"],
+      searchBy: ["code", "title"],
       schema: z.object({}),
     })
     query: AdminListFilter

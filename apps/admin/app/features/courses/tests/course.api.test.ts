@@ -45,8 +45,17 @@ const cases = [
   {
     name: "courses",
     path: "/admin/courses",
-    response: { id: 7, title: "English", imageSrc: "/en.svg" },
-    createBody: { title: "English", imageSrc: "/en.svg" },
+    response: {
+      id: 7,
+      code: "english-vocabulary",
+      title: "English",
+      imageSrc: "/en.svg",
+    },
+    createBody: {
+      code: "english-vocabulary",
+      title: "English",
+      imageSrc: "/en.svg",
+    },
     updateBody: { title: "English A1" },
     createApi: createCourseApi,
   },
@@ -141,7 +150,14 @@ for (const resource of cases) {
 
 test("course resource separates paged and raw-list capabilities", async () => {
   const paged = createHttpStub({
-    data: [{ id: 7, title: "English", imageSrc: "/en.svg" }],
+    data: [
+      {
+        id: 7,
+        code: "english-vocabulary",
+        title: "English",
+        imageSrc: "/en.svg",
+      },
+    ],
     pagination: {
       total: 1,
       page: 2,
@@ -163,7 +179,12 @@ test("course resource separates paged and raw-list capabilities", async () => {
   ]);
 
   const raw = createHttpStub([
-    { id: 7, title: "English", imageSrc: "/en.svg" },
+    {
+      id: 7,
+      code: "english-vocabulary",
+      title: "English",
+      imageSrc: "/en.svg",
+    },
   ]);
   assert.equal(
     (await createCourseApi(raw.http).listAll())[0]?.title,
@@ -172,11 +193,17 @@ test("course resource separates paged and raw-list capabilities", async () => {
 });
 
 test("course resource returns its typed wire response unchanged", async () => {
-  const course = { id: 7, title: "English", imageSrc: "/en.svg" };
+  const course = {
+    id: 7,
+    code: "english-vocabulary",
+    title: "English",
+    imageSrc: "/en.svg",
+  };
   const { http } = createHttpStub(course);
 
   assert.deepEqual(
     await createCourseApi(http).create({
+      code: "english-vocabulary",
       title: "English",
       imageSrc: "/en.svg",
     }),
