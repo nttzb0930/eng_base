@@ -292,3 +292,22 @@ test("focused learning routes use the generic Learner session frame", () => {
   assert.equal(lessonLayoutSource.includes('mode="session"'), true);
   assert.equal(sessionLayoutSource.includes('mode="session"'), true);
 });
+
+test("Practice session shell consumes the focused frame without header offsets", () => {
+  const path = "app/features/practice/components/PracticeSessionShell.tsx";
+  const source = readFileSync(join(root, path), "utf8");
+
+  assert.equal(source.includes('className="flex h-full min-h-0 flex-col overflow-hidden"'), true);
+  assert.equal(source.includes("calc(100dvh"), false);
+});
+
+test("Web production build overrides the shared development environment", () => {
+  const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.equal(
+    packageJson.scripts?.build,
+    "dotenv -e ../../.env -v NODE_ENV=production -- next build --turbopack",
+  );
+});

@@ -82,6 +82,24 @@ Components through feature hooks. `next/headers` and request configuration are
 reserved for Next.js/next-intl infrastructure; they are not a second domain HTTP
 runtime.
 
+Localized Learner routes separate browsing screens from focused learning
+sessions without changing their public URLs:
+
+```text
+apps/web/app/[locale]/
+  (main)/                 navigation-enabled Learner browsing routes
+    practice/page.tsx     Practice mode selection
+  (session)/              focused full-viewport learning routes
+    practice/*            active Practice quizzes
+  lesson/                 focused Lesson routes using the same session frame
+```
+
+Route groups such as `(main)` and `(session)` do not appear in the URL. Session
+routes do not render global navigation or the main page container; their owning
+feature supplies focused exit, progress, and completion controls. Authentication
+and placement confirmation remain centralized in `LearnerShell` for both route
+profiles.
+
 ## Admin layout
 
 ```text

@@ -22,7 +22,7 @@ export function PracticeSessionShell({
   total,
 }: PracticeSessionShellProps) {
   return (
-    <div className="flex h-[calc(100dvh-7rem)] min-h-0 flex-col overflow-hidden lg:h-[calc(100dvh-5rem)]">
+    <div className="flex h-full min-h-0 flex-col overflow-hidden">
       <header className="flex shrink-0 items-center gap-4 border-b px-2 py-4 sm:px-6 lg:gap-6">
         <Button variant="ghost" size="sm" onClick={onExit}>
           {exitLabel}
