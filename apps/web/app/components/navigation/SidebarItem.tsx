@@ -20,7 +20,8 @@ export const SidebarItem = ({ label, iconSrc, href }: SidebarItemProps) => {
   const pathname = usePathname();
   const locale = useCurrentLocale();
   const localizedHref = withLocale(href, locale);
-  const isActive = pathname === localizedHref;
+  const isActive =
+    pathname === localizedHref || pathname.startsWith(localizedHref + "/");
 
   return (
     <Button

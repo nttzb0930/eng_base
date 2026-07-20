@@ -104,7 +104,9 @@ export const Header = ({ className }: HeaderProps) => {
           {navItems.map((item) => {
             const Icon = item.icon;
             const localizedHref = withLocale(item.href, locale);
-            const isActive = pathname === localizedHref;
+            const isActive =
+              pathname === localizedHref ||
+              pathname.startsWith(localizedHref + "/");
 
             return (
               <Link
