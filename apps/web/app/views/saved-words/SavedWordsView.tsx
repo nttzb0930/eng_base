@@ -26,7 +26,7 @@ export function SavedWordsView() {
         <p className="mb-2 text-xs font-bold uppercase tracking-[0.14em] text-primary">
           {t("eyebrow")}
         </p>
-        <h1 className="text-3xl font-black tracking-tight text-foreground sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {t("title")}
         </h1>
         <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
@@ -43,7 +43,7 @@ export function SavedWordsView() {
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-100">
                   {t("quickReviewEyebrow", { count: savedWords.length })}
                 </p>
-                <h2 className="mt-2 text-2xl font-black tracking-tight">
+                <h2 className="mt-2 text-2xl font-bold tracking-tight">
                   {t("quickReviewTitle")}
                 </h2>
               </div>
@@ -107,7 +107,7 @@ export function SavedWordsView() {
           <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
             <BookmarkCheck className="h-7 w-7" />
           </span>
-          <h2 className="mt-5 text-xl font-black">{t("emptyTitle")}</h2>
+          <h2 className="mt-5 text-xl font-bold">{t("emptyTitle")}</h2>
           <p className="mt-2 max-w-md text-sm leading-6 text-muted-foreground">
             {t("emptyDescription")}
           </p>

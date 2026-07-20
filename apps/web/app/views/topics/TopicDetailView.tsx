@@ -81,28 +81,28 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
             </Button>
 
             <div className="rounded-xl bg-green-500 p-6 text-white">
-              <p className="text-sm font-black uppercase text-white/80">
+              <p className="text-sm font-semibold uppercase text-white/80">
                 {t("eyebrow")}
               </p>
-              <h1 className="mt-2 text-3xl font-black">{topic.title}</h1>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight">{topic.title}</h1>
               <p className="mt-3 text-lg leading-7 text-white/90">
                 {topic.description}
               </p>
               <div className="mt-5 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-lg bg-white/15 p-3">
-                  <p className="text-2xl font-black">{topic.stats.total}</p>
+                  <p className="text-2xl font-bold">{topic.stats.total}</p>
                   <p className="text-xs font-bold uppercase text-white/80">
                     {t("words")}
                   </p>
                 </div>
                 <div className="rounded-lg bg-white/15 p-3">
-                  <p className="text-2xl font-black">{topic.stats.learned}</p>
+                  <p className="text-2xl font-bold">{topic.stats.learned}</p>
                   <p className="text-xs font-bold uppercase text-white/80">
                     {t("learnedLabel")}
                   </p>
                 </div>
                 <div className="rounded-lg bg-white/15 p-3">
-                  <p className="text-2xl font-black">{topic.stats.mastered}</p>
+                  <p className="text-2xl font-bold">{topic.stats.mastered}</p>
                   <p className="text-xs font-bold uppercase text-white/80">
                     {t("mastered")}
                   </p>
@@ -124,7 +124,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
                 className="h-auto justify-start p-4"
               >
                 <Link href={withLocale(`/topics/${topic.slug}`)}>
-                  <span className="text-sm font-black uppercase">{t("all")}</span>
+                  <span className="text-sm font-bold uppercase">{t("all")}</span>
                 </Link>
               </Button>
               {CEFR_LEVELS.map((cefrLevel) => {
@@ -142,7 +142,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
                     {count > 0 ? (
                       <Link href={withLocale(`/topics/${topic.slug}?level=${cefrLevel}`)}>
                         <span className="flex flex-col items-start">
-                          <span className="text-sm font-black uppercase">
+                          <span className="text-sm font-bold uppercase">
                             {cefrLevel}
                           </span>
                           <span className="text-xs font-bold opacity-80">
@@ -152,7 +152,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
                       </Link>
                     ) : (
                       <span className="flex flex-col items-start">
-                        <span className="text-sm font-black uppercase">
+                        <span className="text-sm font-bold uppercase">
                           {cefrLevel}
                         </span>
                         <span className="text-xs font-bold opacity-80">
@@ -191,7 +191,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
                 <h2 className="text-xl font-bold text-neutral-800">
                   {t("vocabulary")}
                 </h2>
-                <p className="text-sm font-black uppercase text-muted-foreground">
+                <p className="text-sm font-semibold uppercase text-muted-foreground">
                   {t("wordCount", { count: topic.filteredStats.total })}
                 </p>
               </div>

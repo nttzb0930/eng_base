@@ -36,7 +36,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
             <Sparkles className="h-5 w-5" aria-hidden="true" />
           </span>
           <div>
-            <h1 className="text-foreground text-xl font-bold tracking-tight">
+            <h1 className="text-foreground text-xl font-semibold tracking-tight">
               {appName}
             </h1>
             <p className="text-muted-foreground text-[11px] font-medium">

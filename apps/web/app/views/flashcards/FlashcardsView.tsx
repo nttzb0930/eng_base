@@ -106,7 +106,7 @@ export function FlashcardsView() {
                       <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-white/20">
                         <Icon className="h-6 w-6" />
                       </span>
-                      <span className="block text-xl font-black">
+                      <span className="block text-xl font-bold">
                         {t(deck.titleKey)}
                       </span>
                       <span
@@ -118,7 +118,7 @@ export function FlashcardsView() {
                         {t(deck.descriptionKey)}
                       </span>
                     </span>
-                    <span className="mt-5 text-sm font-black uppercase">
+                    <span className="mt-5 text-sm font-semibold uppercase">
                       {t("wordCount", { count })}
                     </span>
                   </Link>
@@ -153,7 +153,7 @@ export function FlashcardsView() {
                     >
                       <span className="flex items-center gap-2">
                         <Layers className="h-5 w-5" />
-                        <span className="text-lg font-black">{level}</span>
+                        <span className="text-lg font-bold">{level}</span>
                       </span>
                       <span className="mt-2 block text-xs font-bold uppercase opacity-85">
                         {t("wordCount", { count })}

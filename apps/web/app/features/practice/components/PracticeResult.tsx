@@ -122,7 +122,7 @@ export const PracticeResult = ({
           </span>
         </div>
 
-        <h1 className="mt-2 text-balance text-3xl font-black tracking-tight text-foreground sm:text-4xl">
+        <h1 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {title}
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-muted-foreground sm:text-base">
@@ -165,11 +165,10 @@ export const PracticeResult = ({
         <article className="rounded-2xl border bg-card p-5">
           <div className="flex items-start gap-4">
             <span
-              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${
-                perfect
+              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${perfect
                   ? "bg-amber-100 text-amber-600"
                   : "bg-rose-50 text-rose-600"
-              }`}
+                }`}
             >
               {perfect ? (
                 <Award className="h-7 w-7" />
@@ -179,9 +178,8 @@ export const PracticeResult = ({
             </span>
             <div className="min-w-0">
               <p
-                className={`text-xs font-bold uppercase tracking-[0.12em] ${
-                  perfect ? "text-amber-700" : "text-rose-600"
-                }`}
+                className={`text-xs font-bold uppercase tracking-[0.12em] ${perfect ? "text-amber-700" : "text-rose-600"
+                  }`}
               >
                 {perfect ? t("wordsRemembered") : t("wordsToReview")}
               </p>

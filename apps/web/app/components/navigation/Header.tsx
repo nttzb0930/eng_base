@@ -87,10 +87,10 @@ export const Header = ({ className }: HeaderProps) => {
             className="h-[38px] w-[38px]"
           />
           <div>
-            <h1 className="text-base font-black leading-none tracking-tight text-slate-800">
+            <h1 className="text-base font-semibold leading-none tracking-tight text-slate-800">
               {appName}
             </h1>
-            <p className="mt-0.5 text-[10px] font-semibold leading-none text-slate-400">
+            <p className="mt-0.5 text-[10px] font-normal leading-none text-slate-400">
               English, every day
             </p>
           </div>
@@ -113,9 +113,9 @@ export const Header = ({ className }: HeaderProps) => {
                 key={item.href}
                 href={localizedHref}
                 className={cn(
-                  "relative flex flex-shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-1.5 text-[13px] font-semibold transition-all duration-200",
+                  "relative flex flex-shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-1.5 text-[13px] font-medium transition-all duration-200",
                   isActive
-                    ? "font-semibold text-sky-600"
+                    ? "text-sky-600"
                     : "text-slate-500 hover:text-slate-900"
                 )}
               >
