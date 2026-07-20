@@ -48,3 +48,28 @@ test("route pages compose Views explicitly instead of default re-exports", () =>
     );
   }
 });
+
+test("Practice browsing stays in main while active quizzes use the session route group", () => {
+  const localizedDirectory = join(appDirectory, "[locale]");
+  const practiceModes = ["fill-blank", "listening", "dictation", "weak-words"];
+
+  assert.equal(
+    existsSync(join(localizedDirectory, "(main)", "practice", "page.tsx")),
+    true,
+  );
+
+  for (const mode of practiceModes) {
+    for (const filename of ["page.tsx", "loading.tsx"]) {
+      assert.equal(
+        existsSync(join(localizedDirectory, "(session)", "practice", mode, filename)),
+        true,
+        `${mode}/${filename} must use the focused session route group`,
+      );
+      assert.equal(
+        existsSync(join(localizedDirectory, "(main)", "practice", mode, filename)),
+        false,
+        `${mode}/${filename} must not inherit the main navigation layout`,
+      );
+    }
+  }
+});
