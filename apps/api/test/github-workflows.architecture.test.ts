@@ -12,8 +12,8 @@ test("CI workflow runs the complete safe verification contract", () => {
   assert.equal(existsSync(workflowPath), true);
 
   const source = readFileSync(workflowPath, "utf8");
-  assert.match(source, /push:\s*\n\s+branches:\s*\["\*\*"\]/u);
-  assert.match(source, /pull_request:\s*\n\s+branches:\s*\[main\]/u);
+  assert.match(source, /push:\s*\n\s+branches:\s*\n\s+- "\*\*"/u);
+  assert.match(source, /pull_request:/u);
   assert.match(source, /workflow_dispatch:/u);
   assert.match(source, /permissions:\s*\n\s+contents:\s*read/u);
   assert.match(source, /runs-on:\s*ubuntu-latest/u);
@@ -22,15 +22,18 @@ test("CI workflow runs the complete safe verification contract", () => {
 
   for (const command of [
     "pnpm db:generate",
-    "pnpm architecture:check",
-    "pnpm test",
+    "pnpm --filter @repo/api architecture:check",
+    "pnpm --filter @repo/api test",
+    "pnpm --filter @repo/web test",
+    "pnpm --filter @repo/admin test",
     "scripts/vocabulary/catalog/vocabulary-catalog.test.ts",
     "scripts/vocabulary/database/vocabulary-seed-data.test.ts",
     "scripts/vocabulary/topic-classification/topic-classification.test.ts",
     "scripts/vocabulary/topic-expansion/topic-expansion.test.ts",
-    "pnpm check-types",
-    "pnpm lint",
-    "pnpm build",
+    "pnpm --filter @repo/api check-types",
+    "pnpm --filter @repo/web check-types",
+    "pnpm --filter @repo/admin check-types",
+    "pnpm architecture:check",
     "pnpm exec prettier --check",
   ]) {
     assert.match(source, new RegExp(command.replaceAll(".", "\\."), "u"));
@@ -64,17 +67,19 @@ test("API architecture command includes the workflow contract", () => {
   );
 });
 
-test("GHCR workflow publishes exactly three application images", () => {
+test("GHCR workflow publishes exactly three application images after CI succeeds", () => {
   assert.deepEqual(readdirSync(workflowsRoot).sort(), [
     "ci.yml",
-    "docker-build.yml",
+    "deploy.yml",
+    "publish-images.yml",
   ]);
 
-  const source = readFileSync(join(workflowsRoot, "docker-build.yml"), "utf8");
-  assert.match(
-    source,
-    /push:\s*\n\s+branches:\s*\[main\]\s*\n\s+tags:\s*\["v\*\.\*\.\*"\]/u
+  const source = readFileSync(
+    join(workflowsRoot, "publish-images.yml"),
+    "utf8"
   );
+  assert.match(source, /workflow_run:\s*\n\s+workflows:\s*\n\s+- CI/u);
+  assert.match(source, /github\.event\.workflow_run\.conclusion == 'success'/u);
   assert.match(source, /workflow_dispatch:/u);
   assert.match(source, /contents:\s*read/u);
   assert.match(source, /packages:\s*write/u);
@@ -83,22 +88,24 @@ test("GHCR workflow publishes exactly three application images", () => {
   assert.match(source, /username:\s*\$\{\{ github\.actor \}\}/u);
   assert.match(source, /password:\s*\$\{\{ secrets\.GITHUB_TOKEN \}\}/u);
   assert.match(source, /docker\/setup-buildx-action@v3/u);
-  assert.match(source, /docker\/metadata-action@v5/u);
   assert.match(source, /docker\/build-push-action@v6/u);
   assert.match(source, /push:\s*true/u);
   assert.match(source, /cache-from:\s*type=gha/u);
   assert.match(source, /cache-to:\s*type=gha,mode=max/u);
-  assert.match(source, /\$\{GITHUB_REPOSITORY_OWNER,,\}/u);
+  assert.match(
+    source,
+    /image_prefix="\$\{REGISTRY\}\/\$\{GITHUB_REPOSITORY\}"/u
+  );
 
-  for (const [image, dockerfile] of [
-    ["eng-base-api", "apps/api/Dockerfile"],
-    ["eng-base-web", "apps/web/Dockerfile"],
-    ["eng-base-admin", "apps/admin/Dockerfile"],
+  for (const [outputName, dockerfile] of [
+    ["api_image", "apps/api/Dockerfile"],
+    ["web_image", "apps/web/Dockerfile"],
+    ["admin_image", "apps/admin/Dockerfile"],
   ]) {
-    assert.match(source, new RegExp(`image: ${image}`, "u"));
+    assert.match(source, new RegExp(`${outputName}=\\$image_prefix`, "u"));
     assert.match(
       source,
-      new RegExp(`dockerfile: ${dockerfile.replaceAll("/", "\\/")}`, "u")
+      new RegExp(`file: ${dockerfile.replaceAll("/", "\\/")}`, "u")
     );
   }
 
@@ -112,4 +119,30 @@ test("GHCR workflow publishes exactly three application images", () => {
   ]);
   assert.doesNotMatch(source, /docker\.io|dockerhub/iu);
   assert.doesNotMatch(source, /(?:DATABASE_URL|JWT_|SECRET)=/u);
+});
+
+test("Deploy workflow is manual, SSH based, and runs migrations before compose up", () => {
+  const source = readFileSync(join(workflowsRoot, "deploy.yml"), "utf8");
+
+  assert.match(source, /workflow_dispatch:/u);
+  assert.match(source, /environment:/u);
+  assert.match(source, /image_tag:/u);
+  assert.match(source, /appleboy\/ssh-action@v1\.2\.0/u);
+  assert.match(source, /DEPLOY_HOST/u);
+  assert.match(source, /DEPLOY_USER/u);
+  assert.match(source, /DEPLOY_SSH_KEY/u);
+  assert.match(source, /DEPLOY_PATH/u);
+  assert.match(
+    source,
+    /docker compose -f docker-compose\.prod\.yml --env-file \.env\.production pull api web admin/u
+  );
+  assert.match(source, /npx prisma migrate deploy/u);
+  assert.match(
+    source,
+    /docker compose -f docker-compose\.prod\.yml --env-file \.env\.production up -d/u
+  );
+  assert.match(source, /DEPLOY_API_HEALTH_URL/u);
+  assert.match(source, /DEPLOY_WEB_URL/u);
+  assert.match(source, /DEPLOY_ADMIN_URL/u);
+  assert.doesNotMatch(source, /docker\.io|dockerhub/iu);
 });

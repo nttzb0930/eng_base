@@ -1,30 +1,31 @@
 # CI/CD and GHCR
 
-This guide owns English Base continuous verification and container publication.
-The repository publishes images; it does not automatically deploy applications
-or mutate a database.
+This guide owns English Base continuous verification, container publication,
+and production deployment orchestration.
 
 ## Workflow inventory
 
-`.github/workflows` contains exactly two files:
+`.github/workflows` contains exactly three files:
 
-| Workflow           | Triggers                                   | Permission                          | Responsibility                              |
-| ------------------ | ------------------------------------------ | ----------------------------------- | ------------------------------------------- |
-| `ci.yml`           | every push, pull request to `main`, manual | `contents: read`                    | generate, verify, test, lint, build, format |
-| `docker-build.yml` | push to `main`, `v*.*.*` tag, manual       | `contents: read`, `packages: write` | build and publish three GHCR images         |
+| Workflow             | Triggers                                  | Permission                          | Responsibility                                 |
+| -------------------- | ----------------------------------------- | ----------------------------------- | ---------------------------------------------- |
+| `ci.yml`             | every push, pull request, manual          | `contents: read`                    | generate, verify, test, lint, build, format    |
+| `publish-images.yml` | successful `CI` on `main`, manual         | `contents: read`, `packages: write` | build and publish three GHCR images            |
+| `deploy.yml`         | manual with environment and published tag | `contents: read`                    | deploy published images over SSH, health check |
 
 Do not combine publication with CI. A failing application gate should be clear
-without registry noise, and image publication should not need database or
-provider credentials.
+without registry noise. Do not deploy directly from source; deploy a previously
+published immutable image tag.
 
 ## Continuous verification
 
 CI uses Node.js 22, the repository pnpm version, a frozen lockfile, and synthetic
-compile-only environment values. It runs, in order:
+compile-only environment values. It is split into packages, API, Web, Admin, and
+repository checks. Across those jobs it runs:
 
 1. Prisma client generation;
 2. all architecture checks;
-3. workspace tests;
+3. runtime and package tests;
 4. the standalone vocabulary workflow tests;
 5. TypeScript checks;
 6. lint;
@@ -94,7 +95,8 @@ accepts no secret build argument.
 
 ## Build and publication flow
 
-For each matrix entry the workflow:
+`publish-images.yml` starts automatically only after `CI` succeeds on `main`, or
+manually through `workflow_dispatch`. For each image the workflow:
 
 1. checks out the exact commit;
 2. initializes Buildx;
@@ -107,6 +109,47 @@ For each matrix entry the workflow:
 Frontend entries pass only the three approved `NEXT_PUBLIC_*` Docker arguments.
 The API entry uses a separate build step with no build arguments. Dockerfiles do
 not migrate, seed, or start an application during image construction.
+
+## Deployment flow
+
+`deploy.yml` is manual. It requires an `environment` and an `image_tag` that
+already exists in GHCR. It resolves these images:
+
+```text
+ghcr.io/<owner>/<repo>-api:<image_tag>
+ghcr.io/<owner>/<repo>-web:<image_tag>
+ghcr.io/<owner>/<repo>-admin:<image_tag>
+```
+
+The deployment job connects over SSH, updates `.env.production` with
+`API_IMAGE`, `WEB_IMAGE`, `ADMIN_IMAGE`, and `IMAGE_TAG`, then runs:
+
+```text
+docker compose -f docker-compose.prod.yml --env-file .env.production pull api web admin
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npx prisma migrate deploy
+docker compose -f docker-compose.prod.yml --env-file .env.production up -d
+```
+
+Deployment requires these GitHub environment secrets:
+
+| Secret           | Purpose                                        |
+| ---------------- | ---------------------------------------------- |
+| `DEPLOY_HOST`    | SSH host                                       |
+| `DEPLOY_USER`    | SSH user                                       |
+| `DEPLOY_SSH_KEY` | Private key for the deployment user            |
+| `DEPLOY_PATH`    | Directory containing `docker-compose.prod.yml` |
+| `DEPLOY_PORT`    | Optional SSH port; defaults to `22`            |
+
+Optional health-check secrets:
+
+| Secret                  | Purpose              |
+| ----------------------- | -------------------- |
+| `DEPLOY_API_HEALTH_URL` | API health endpoint  |
+| `DEPLOY_WEB_URL`        | Learner Web endpoint |
+| `DEPLOY_ADMIN_URL`      | Admin endpoint       |
+
+The workflow runs database migrations, but it does not seed application data.
+Production seed/import tasks require an explicit runbook and backup policy.
 
 ## Package visibility and access
 
@@ -186,10 +229,9 @@ reviewed need.
 The Git ref must match `v*.*.*`. Inspect metadata output and confirm the Git tag
 was pushed; a local tag alone does not trigger GitHub Actions.
 
-## Publish is not deploy
+## Deployment is not data import
 
-The Docker workflow ends when images are stored in GHCR. It does not select an
-environment, update a service, run migrations, seed data, change package
-visibility, or verify production traffic. Those actions require a separate,
-reviewed deployment design with environment protection, rollback, database
-backup/migration policy, and post-release health checks.
+The deployment workflow rolls out images and applies schema migrations. It does
+not run `db:seed`, vocabulary enrichment, topic classification, topic expansion,
+or audio enrichment. Those data workflows can be destructive or provider-backed
+and require an explicit backup/review step.
