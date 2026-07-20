@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
+import { resolvePostAuthRedirect } from "@/app/features/auth/routing/resolve-post-auth-redirect";
+import { progressApi } from "@/app/features/progress/api/progress.api";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { withLocale } from "@/app/i18n/paths";
 import { toast } from "sonner";
@@ -33,9 +35,10 @@ export function SignInView() {
     setLoading(true);
     try {
       await login({ username, password });
+      const progress = await progressApi.getUserProgress();
 
       toast.success(t("signInSuccess"));
-      router.push(withLocale("/placement-test", locale));
+      router.push(withLocale(resolvePostAuthRedirect(progress), locale));
     } catch (error) {
       toast.error(
         error instanceof Error ? error.message : t("signInFailedError")
