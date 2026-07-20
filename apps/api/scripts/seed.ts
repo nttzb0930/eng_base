@@ -12,7 +12,8 @@ import {
   mapVocabularyTopicPersistenceData,
 } from "./vocabulary/database/vocabulary-seed-data.js";
 
-type CefrLevel = "A1" | "A2" | "B1" | "B2";
+type CefrLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+type CurriculumCefrLevel = "A1" | "A2" | "B1" | "B2";
 
 type VocabularySeedItem = {
   word: string;
@@ -43,10 +44,11 @@ type SeedReport = {
     challenges: number;
     challengeOptions: number;
   };
-  byLevel: Record<CefrLevel, { words: number; lessons: number }>;
+  byLevel: Record<CurriculumCefrLevel, { words: number; lessons: number }>;
 };
 
-const LEVELS: CefrLevel[] = ["A1", "A2", "B1", "B2"];
+const LEVELS: CefrLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const CURRICULUM_LEVELS: CurriculumCefrLevel[] = ["A1", "A2", "B1", "B2"];
 const WORDS_PER_LESSON = 15;
 const VOCABULARY_DATA_DIRECTORY = path.join(
   process.cwd(),
@@ -167,7 +169,7 @@ const main = async () => {
   );
   if (unsupportedLevels.length > 0) {
     throw new Error(
-      `Development curriculum seed supports ${LEVELS.join(", ")}; found ${unsupportedLevels[0]?.cefrLevel}`
+      `Vocabulary seed supports ${LEVELS.join(", ")}; found ${unsupportedLevels[0]?.cefrLevel}`
     );
   }
   const vocabulary = seedData.catalog as VocabularySeedItem[];
@@ -317,7 +319,7 @@ const main = async () => {
 
   report.seeded.courses = 1;
 
-  for (const [levelIndex, level] of LEVELS.entries()) {
+  for (const [levelIndex, level] of CURRICULUM_LEVELS.entries()) {
     const unit = await prisma.units.create({
       data: {
         course_id: course.id,
@@ -349,7 +351,7 @@ const main = async () => {
       report.byLevel[level].lessons += 1;
 
       const challengeRows = lessonWords.flatMap((word, wordIndex) => {
-        const key = `${word.normalizedWord}_${word.pos.toLowerCase()}_${word.cefrLevel.toLowerCase()}`;
+        const key = vocabularyIdentity(word);
         const vocabularyItem = vocabularyByWord.get(key);
         if (!vocabularyItem) return [];
 
