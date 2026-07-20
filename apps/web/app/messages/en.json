@@ -60,13 +60,67 @@
     "cefrProgress": "CEFR progress",
     "cefrDescription": "Learned and mastered vocabulary by level.",
     "levelProgress": "{learned}/{total} learned · {mastered} mastered · {accuracy}% accuracy",
+    "totalWordsCount": "{count} cards total",
+    "levelNames": {
+      "A1": "Beginner",
+      "A2": "Elementary",
+      "B1": "Intermediate",
+      "B2": "Upper-intermediate"
+    },
+    "levelDescriptions": {
+      "A1": "First 867 words you'll need",
+      "A2": "Build everyday confidence",
+      "B1": "Hold real conversations",
+      "B2": "Read, write and argue in English"
+    },
+    "masteredLabel": "mastered",
+    "dueText": "{count} due",
+    "dueZeroText": "0 due",
+    "lockedText": "Locked",
+    "continueText": "Continue →",
+    "reviewText": "Review →",
+    "weeklyActivityTitle": "7-day activity",
+    "weeklyActiveDays": "{count}/7 active days",
+    "weeklyReviewedWords": "{count} words reviewed",
+    "activityDayTitle": "{count} words on {date}",
+    "learningOverviewTitle": "LEARNING OVERVIEW",
+    "cardsReviewedLabel": "Cards reviewed",
+    "cardsReviewedSub": "across all reviews",
+    "accuracyLabel": "Accuracy",
+    "accuracySub": "across all reviews",
+    "xpEarnedLabel": "Total XP",
+    "xpEarnedSub": "across all learning activity",
+    "reviewQueuesTitle": "Your review queues",
+    "reviewQueuesSub": "Three ways to keep words fresh",
+    "queues": {
+      "due": {
+        "pill": "● Due now",
+        "title": "Due for review",
+        "desc": "Words whose memory is fading. The scheduler picked them — review them now to lock them in long-term.",
+        "countText": "{count} cards waiting",
+        "cta": "Review now"
+      },
+      "saved": {
+        "pill": "● Saved",
+        "title": "Saved words",
+        "desc": "Words you hearted from lessons and topics. Turn them into flashcards with one tap to start reviewing them.",
+        "countText": "{count} words saved",
+        "cta": "Practice saved"
+      },
+      "weak": {
+        "pill": "● Needs work",
+        "title": "Weak words",
+        "desc": "Words you've gotten wrong 3+ times. Focused practice here gives the biggest improvement per minute.",
+        "countText": "{count} words to revisit",
+        "cta": "Focus on weak"
+      }
+    },
     "recommended": {
       "eyebrow": "Recommended today",
       "title": "What to study next",
       "description": "Today's plan: {total} words · {due} due · {weak} weak.",
       "viewAll": "All practice",
       "breakdown": {
-        "total": "Plan words",
         "due": "Due now",
         "weak": "Weak words",
         "saved": "Saved words"
@@ -110,6 +164,8 @@
     "continuePractice": "Continue practice",
     "topWeakWords": "Top weak words",
     "topWeakWordsDescription": "Prioritized by wrong answers.",
+    "weakQueueTag": "Needs work",
+    "weakQueueCta": "Focus on weak",
     "noWeakWords": "No weak words yet.",
     "noWeakWordsDescription": "Missed answers will appear here.",
     "wrongCount": "{count} wrong",

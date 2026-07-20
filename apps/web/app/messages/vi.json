@@ -60,13 +60,67 @@
     "cefrProgress": "Tiến độ CEFR",
     "cefrDescription": "Từ đã học và đã thành thạo theo từng cấp độ.",
     "levelProgress": "{learned}/{total} đã học · {mastered} thành thạo · {accuracy}% chính xác",
+    "totalWordsCount": "{count} từ vựng tổng cộng",
+    "levelNames": {
+      "A1": "Beginner",
+      "A2": "Elementary",
+      "B1": "Intermediate",
+      "B2": "Upper-intermediate"
+    },
+    "levelDescriptions": {
+      "A1": "867 từ cốt lõi cho người mới bắt đầu",
+      "A2": "Xây dựng sự tự tin giao tiếp hằng ngày",
+      "B1": "Giao tiếp tự nhiên trong cuộc sống",
+      "B2": "Đọc, viết và tranh luận bằng tiếng Anh"
+    },
+    "masteredLabel": "đã thuộc",
+    "dueText": "{count} đến hạn",
+    "dueZeroText": "0 đến hạn",
+    "lockedText": "Khoá",
+    "continueText": "Tiếp tục →",
+    "reviewText": "Ôn tập →",
+    "weeklyActivityTitle": "Hoạt động 7 ngày",
+    "weeklyActiveDays": "{count}/7 ngày có hoạt động",
+    "weeklyReviewedWords": "Đã luyện {count} từ",
+    "activityDayTitle": "{count} từ vào ngày {date}",
+    "learningOverviewTitle": "TỔNG QUAN HỌC TẬP",
+    "cardsReviewedLabel": "Từ đã ôn tập",
+    "cardsReviewedSub": "trên toàn bộ lượt ôn",
+    "accuracyLabel": "Độ chính xác",
+    "accuracySub": "trên toàn bộ lượt ôn",
+    "xpEarnedLabel": "Tổng điểm XP",
+    "xpEarnedSub": "trên toàn bộ hoạt động học",
+    "reviewQueuesTitle": "Hàng đợi ôn tập",
+    "reviewQueuesSub": "Ba cách để giữ từ vựng luôn mới",
+    "queues": {
+      "due": {
+        "pill": "● Đến hạn",
+        "title": "Đến hạn ôn tập",
+        "desc": "Từ vựng sắp quên. Thuật toán đã chọn chúng — ôn tập ngay để ghi nhớ lâu dài.",
+        "countText": "{count} thẻ đang đợi",
+        "cta": "Ôn tập ngay"
+      },
+      "saved": {
+        "pill": "● Đã lưu",
+        "title": "Từ đã lưu",
+        "desc": "Những từ bạn đã yêu thích từ bài học. Chuyển thành thẻ ghi nhớ để ôn tập nhanh.",
+        "countText": "{count} từ đã lưu",
+        "cta": "Luyện từ đã lưu"
+      },
+      "weak": {
+        "pill": "● Cần luyện tập",
+        "title": "Từ còn yếu",
+        "desc": "Từ bạn đã trả lời sai trên 3 lần. Tập trung ôn tập ở đây giúp cải thiện nhanh nhất.",
+        "countText": "{count} từ cần xem lại",
+        "cta": "Luyện từ yếu"
+      }
+    },
     "recommended": {
       "eyebrow": "Gợi ý hôm nay",
       "title": "Nên học gì tiếp",
       "description": "Kế hoạch hôm nay: {total} từ · {due} đến hạn · {weak} từ yếu.",
       "viewAll": "Tất cả luyện tập",
       "breakdown": {
-        "total": "Từ trong kế hoạch",
         "due": "Đến hạn ngay",
         "weak": "Từ còn yếu",
         "saved": "Từ đã lưu"
@@ -110,6 +164,8 @@
     "continuePractice": "Tiếp tục luyện tập",
     "topWeakWords": "Từ yếu nhất",
     "topWeakWordsDescription": "Ưu tiên theo số lần trả lời sai.",
+    "weakQueueTag": "Cần chú ý",
+    "weakQueueCta": "Luyện từ yếu",
     "noWeakWords": "Chưa có từ yếu.",
     "noWeakWordsDescription": "Các câu trả lời sai sẽ xuất hiện ở đây.",
     "wrongCount": "{count} sai",

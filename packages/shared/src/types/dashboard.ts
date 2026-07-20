@@ -19,6 +19,7 @@ export type DashboardStats = {
     learned: number;
     mastered: number;
     accuracy: number;
+    due: number;
   }>;
   topWeakWords: Array<{
     id: number;

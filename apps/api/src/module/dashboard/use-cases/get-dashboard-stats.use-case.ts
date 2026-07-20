@@ -11,6 +11,7 @@ export type DashboardLevelProgress = {
   learned: number;
   mastered: number;
   accuracy: number;
+  due: number;
 };
 
 export type DashboardWeakWord = {
@@ -63,6 +64,7 @@ export class GetDashboardStatsUseCase {
       learned: 0,
       mastered: 0,
       accuracy: 0,
+      due: 0,
     }));
   }
 
@@ -249,6 +251,12 @@ export class GetDashboardStatsUseCase {
         (sum, progress) => sum + progress.wrong_count,
         0
       );
+      const levelDueCount = levelRows.filter(
+        (progress) =>
+          progress.review_count > 0 &&
+          (progress.next_review_at === null ||
+            progress.next_review_at <= new Date())
+      ).length;
 
       return {
         level,
@@ -258,6 +266,7 @@ export class GetDashboardStatsUseCase {
           (progress) => progress.mastery_level === "mastered"
         ).length,
         accuracy: this.getAccuracy(levelCorrectCount, levelWrongCount),
+        due: levelDueCount,
       };
     });
 
