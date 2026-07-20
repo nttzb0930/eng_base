@@ -115,7 +115,7 @@ export const Header = ({ className }: HeaderProps) => {
                 className={cn(
                   "relative flex flex-shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-1.5 text-[13px] font-semibold transition-all duration-200",
                   isActive
-                    ? "font-extrabold text-sky-600"
+                    ? "font-semibold text-sky-600"
                     : "text-slate-500 hover:text-slate-900"
                 )}
               >
@@ -197,7 +197,7 @@ export const Header = ({ className }: HeaderProps) => {
                       className={cn(
                         "flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900",
                         pathname === withLocale("/saved-words", locale) &&
-                          "bg-slate-50 text-slate-900"
+                        "bg-slate-50 text-slate-900"
                       )}
                     >
                       <Heart className="h-4 w-4 text-slate-400" />
@@ -210,7 +210,7 @@ export const Header = ({ className }: HeaderProps) => {
                       className={cn(
                         "flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900",
                         pathname === withLocale("/flashcards", locale) &&
-                          "bg-slate-50 text-slate-900"
+                        "bg-slate-50 text-slate-900"
                       )}
                     >
                       <Layers className="h-4 w-4 text-slate-400" />
