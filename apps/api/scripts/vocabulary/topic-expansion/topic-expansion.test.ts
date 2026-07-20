@@ -1001,6 +1001,37 @@ test("Topic expansion merge exposes all accepted chunk mode", async () => {
   assert.match(source, /vocabulary-topic-expansion-chunks-merged/u);
 });
 
+test("Topic expansion audit accepts valid chunks without provider calls", async () => {
+  const [source, packageJsonText] = await Promise.all([
+    readFile(
+      path.resolve(
+        process.cwd(),
+        "scripts/vocabulary/topic-expansion/audit-topic-expansion.ts"
+      ),
+      "utf8"
+    ),
+    readFile(path.resolve(process.cwd(), "package.json"), "utf8"),
+  ]);
+  const packageJson = JSON.parse(packageJsonText) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.match(source, /validateExpansionArtifact/u);
+  assert.match(source, /candidateIdentity/u);
+  assert.match(source, /vocabularyIdentity/u);
+  assert.match(source, /--accept-valid/u);
+  assert.match(source, /topic-expansion-audit/u);
+  assert.match(source, /databaseUpdated: false/u);
+  assert.match(
+    packageJson.scripts?.["data:audit-topic-expansion"] ?? "",
+    /audit-topic-expansion\.ts/u
+  );
+  assert.doesNotMatch(
+    source,
+    /GoogleGenAI|chat\/completions|generateContent|GEMINI_API_KEY|OPENAI_API_KEY/u
+  );
+});
+
 test("Topic expansion queue runner uses bounded workers around the single Topic runner", async () => {
   const source = await readFile(
     path.resolve(
