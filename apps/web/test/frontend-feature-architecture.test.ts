@@ -275,3 +275,20 @@ test("Web React Query defaults follow the shared client cache policy", () => {
   assert.equal(providerSource.includes("retry: 1"), true);
   assert.equal(providerSource.includes("refetchOnWindowFocus: false"), true);
 });
+
+test("focused learning routes use the generic Learner session frame", () => {
+  const learnerShellPath = "app/components/layout/LearnerShell.tsx";
+  const lessonLayoutPath = "app/[locale]/lesson/layout.tsx";
+  const sessionLayoutPath = "app/[locale]/(session)/layout.tsx";
+
+  assert.equal(existsSync(join(root, sessionLayoutPath)), true);
+
+  const learnerShellSource = readFileSync(join(root, learnerShellPath), "utf8");
+  const lessonLayoutSource = readFileSync(join(root, lessonLayoutPath), "utf8");
+  const sessionLayoutSource = readFileSync(join(root, sessionLayoutPath), "utf8");
+
+  assert.equal(learnerShellSource.includes('mode?: "main" | "session"'), true);
+  assert.equal(learnerShellSource.includes('mode === "lesson"'), false);
+  assert.equal(lessonLayoutSource.includes('mode="session"'), true);
+  assert.equal(sessionLayoutSource.includes('mode="session"'), true);
+});

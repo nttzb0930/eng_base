@@ -10,13 +10,13 @@ import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress
 
 type LearnerShellProps = {
   children: React.ReactNode;
-  mode?: "main" | "lesson";
+  mode?: "main" | "session";
 };
 
 export function LearnerShell({ children, mode = "main" }: LearnerShellProps) {
   const { status } = useAuth();
   const progressQuery = useUserProgress(status === "authenticated");
-  const fallback = mode === "lesson" ? <SessionPageSkeleton embedded /> : <ListPageSkeleton />;
+  const fallback = mode === "session" ? <SessionPageSkeleton embedded /> : <ListPageSkeleton />;
 
   if (status !== "authenticated" || progressQuery.isLoading) return fallback;
 
@@ -29,7 +29,7 @@ export function LearnerShell({ children, mode = "main" }: LearnerShellProps) {
     );
   }
 
-  if (mode === "lesson") {
+  if (mode === "session") {
     return <div className="flex h-dvh min-h-0 w-full flex-col overflow-hidden">{children}</div>;
   }
 
