@@ -1001,6 +1001,36 @@ test("Topic expansion merge exposes all accepted chunk mode", async () => {
   assert.match(source, /vocabulary-topic-expansion-chunks-merged/u);
 });
 
+test("Topic expansion bulk merge writes backup and report without database updates", async () => {
+  const [source, packageJsonText] = await Promise.all([
+    readFile(
+      path.resolve(
+        process.cwd(),
+        "scripts/vocabulary/topic-expansion/merge-topic-expansion-accepted-all.ts"
+      ),
+      "utf8"
+    ),
+    readFile(path.resolve(process.cwd(), "package.json"), "utf8"),
+  ]);
+  const packageJson = JSON.parse(packageJsonText) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.match(source, /mergeAcceptedExpansion/u);
+  assert.match(source, /status !== "accepted"/u);
+  assert.match(source, /vocabulary-catalog\.before-all-topic-expansion/u);
+  assert.match(source, /topic-expansion-merge-all/u);
+  assert.match(source, /databaseUpdated: false/u);
+  assert.match(
+    packageJson.scripts?.["data:merge-topic-expansion-accepted-all"] ?? "",
+    /merge-topic-expansion-accepted-all\.ts/u
+  );
+  assert.doesNotMatch(
+    source,
+    /GoogleGenAI|chat\/completions|generateContent|GEMINI_API_KEY|OPENAI_API_KEY/u
+  );
+});
+
 test("Topic expansion audit accepts valid chunks without provider calls", async () => {
   const [source, packageJsonText] = await Promise.all([
     readFile(
