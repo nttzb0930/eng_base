@@ -15,13 +15,19 @@ export function useTopics(locale: string) {
   return useQuery({
     queryKey: topicKeys.list(locale),
     queryFn: () => topicApi.list(locale),
+    staleTime: 5 * 60 * 1000,
   });
 }
 
-export function useTopic(slug: string | undefined, locale: string, level?: string) {
+export function useTopic(
+  slug: string | undefined,
+  locale: string,
+  level?: string
+) {
   return useQuery({
     queryKey: topicKeys.detail(slug ?? "", locale, level),
     queryFn: () => topicApi.detail(slug!, locale, level),
     enabled: !!slug,
+    staleTime: 5 * 60 * 1000,
   });
 }

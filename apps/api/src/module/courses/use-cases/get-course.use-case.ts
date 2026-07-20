@@ -13,10 +13,10 @@ export class GetCourseUseCase extends CourseLearningMapper {
       where: { id: courseId },
       include: {
         units: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
           include: {
             lessons: {
-              orderBy: { order: "asc" },
+              orderBy: [{ order: "asc" }, { id: "asc" }],
             },
           },
         },

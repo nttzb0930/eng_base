@@ -129,7 +129,7 @@ export class PracticeSource {
           where: { user_id: userId },
         },
         vocabulary_examples: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
       skip: (lessonNumber - 1) * PRACTICE_WORDS_PER_LESSON,

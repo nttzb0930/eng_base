@@ -64,7 +64,7 @@ export class TopicSource {
           where: userId ? { user_id: userId } : { user_id: "__none__" },
         },
         vocabulary_examples: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
     });

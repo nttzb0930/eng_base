@@ -267,3 +267,11 @@ test("Web domain code no longer uses legacy technical buckets or authenticated s
     );
   }
 });
+
+test("Web React Query defaults follow the shared client cache policy", () => {
+  const providerSource = readFileSync(join(root, "app/providers.tsx"), "utf8");
+
+  assert.equal(providerSource.includes("staleTime: 60 * 1000"), true);
+  assert.equal(providerSource.includes("retry: 1"), true);
+  assert.equal(providerSource.includes("refetchOnWindowFocus: false"), true);
+});

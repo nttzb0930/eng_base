@@ -42,7 +42,7 @@ export class GetWeakWordsPracticeChallengesUseCase extends PracticeSource {
               where: { user_id: userId },
             },
             vocabulary_examples: {
-              orderBy: { order: "asc" },
+              orderBy: [{ order: "asc" }, { id: "asc" }],
             },
           },
         },

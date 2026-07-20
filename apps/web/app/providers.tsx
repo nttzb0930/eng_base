@@ -37,7 +37,18 @@ function hasRefreshSession() {
 export function Providers({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
-  const [queryClient] = useState(() => new QueryClient());
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 60 * 1000,
+            retry: 1,
+            refetchOnWindowFocus: false,
+          },
+        },
+      }),
+  );
   const [status, setStatus] = useState<AuthStatus>(() =>
     typeof document === "undefined" || hasRefreshSession()
       ? "loading"

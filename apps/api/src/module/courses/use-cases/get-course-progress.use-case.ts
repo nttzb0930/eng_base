@@ -20,13 +20,14 @@ export class GetCourseProgressUseCase extends CourseLearningMapper {
 
     const unitsInActiveCourse = await this.prisma.units.findMany({
       where: { course_id: userProgress.activeCourseId },
-      orderBy: { order: "asc" },
+      orderBy: [{ order: "asc" }, { id: "asc" }],
       include: {
         lessons: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
           include: {
             units: true,
             challenges: {
+              orderBy: [{ order: "asc" }, { id: "asc" }],
               include: {
                 vocabulary_items: true,
                 challenge_progress: {

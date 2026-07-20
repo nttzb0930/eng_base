@@ -188,7 +188,7 @@ export class FlashcardQuerySource {
           where: { user_id: userId },
         },
         vocabulary_examples: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
       orderBy: {

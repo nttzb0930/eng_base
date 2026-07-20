@@ -5,7 +5,10 @@ import { ReviewSource } from "./review-source";
 
 @Injectable()
 export class DailyReviewSource extends ReviewSource {
-  constructor(prisma: PrismaService, savedWords: GetSavedVocabularyWordsUseCase) {
+  constructor(
+    prisma: PrismaService,
+    savedWords: GetSavedVocabularyWordsUseCase
+  ) {
     super(prisma, savedWords);
   }
 
@@ -29,7 +32,7 @@ export class DailyReviewSource extends ReviewSource {
           where: { user_id: userId },
         },
         vocabulary_examples: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
     });
