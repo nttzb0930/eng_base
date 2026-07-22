@@ -546,3 +546,48 @@ git diff -- apps/web/app/i18n/locale-preference.ts apps/web/app/components/Local
 ```
 
 Expected: no whitespace errors, no generated artifacts, no database changes, and only the planned feature hunks mixed with clearly identified pre-existing user edits.
+
+### Task 4: Local System-Language Flag Assets
+
+**Files:**
+- Create: `apps/web/public/flags/gb.svg`
+- Create: `apps/web/public/flags/vn.svg`
+- Modify: `apps/web/app/features/placement-test/onboarding/SystemLanguageStep.tsx`
+- Test: `apps/web/test/system-language-onboarding.test.ts`
+
+**Interfaces:**
+- Consumes: Next.js `Image` and the HatScripts `circle-flags` SVG artwork already referenced by the target-language step.
+- Produces: two repository-owned public assets at `/flags/gb.svg` and `/flags/vn.svg`.
+
+- [ ] **Step 1: Extend the structural test and confirm RED**
+
+Assert that both files exist and that `SystemLanguageStep.tsx` imports `Image`, declares `flagSrc` values for both local paths, renders `<Image>`, and uses `alt=""` because the adjacent visible names carry the accessible label.
+
+Run:
+
+```powershell
+pnpm --filter @repo/web exec tsx --test test/system-language-onboarding.test.ts
+```
+
+Expected: FAIL because the local assets and `next/image` rendering do not exist.
+
+- [ ] **Step 2: Vendor the two SVG files**
+
+Download `gb.svg` and `vn.svg` from the MIT-licensed HatScripts `circle-flags` repository into `apps/web/public/flags/`. Do not install a package and do not retain a runtime CDN URL in `SystemLanguageStep`.
+
+- [ ] **Step 3: Render local assets with Next Image**
+
+Import `Image` from `next/image`, replace each option's `code` with `flagSrc`, and render a 44 by 44 decorative image inside the existing icon slot. Keep visible translated and native language names, button semantics, `aria-pressed`, selection checkmark, and responsive styles unchanged.
+
+- [ ] **Step 4: Verify GREEN**
+
+Run:
+
+```powershell
+pnpm --filter @repo/web exec tsx --test test/system-language-onboarding.test.ts
+pnpm --filter @repo/web check-types
+pnpm --filter @repo/web exec eslint app/features/placement-test/onboarding/SystemLanguageStep.tsx test/system-language-onboarding.test.ts
+pnpm --filter @repo/web build
+```
+
+Expected: focused tests, type-check, scoped lint, and production build all pass.

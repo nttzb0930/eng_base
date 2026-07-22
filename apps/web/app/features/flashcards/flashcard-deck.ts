@@ -1,21 +1,13 @@
-import { CEFR_LEVELS } from "@repo/shared";
 import type { PracticeCefrLevel } from "@repo/shared";
 
 export type FlashcardSource = "due" | "saved" | "weak";
-export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel;
+export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel | (string & {});
 
 export const normalizeFlashcardDeck = (
   value?: string | null,
-): FlashcardDeckKey => {
-  if (value === "due" || value === "saved" || value === "weak") {
-    return value;
-  }
-
-  if (CEFR_LEVELS.includes(value as PracticeCefrLevel)) {
-    return value as PracticeCefrLevel;
-  }
-
-  return "due";
+): string => {
+  if (!value) return "due";
+  return value;
 };
 
 export const getFlashcardDeckTitle = (deck: FlashcardDeckKey) => {

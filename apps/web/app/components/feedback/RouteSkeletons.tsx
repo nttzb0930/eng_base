@@ -77,6 +77,59 @@ export function DiscoveryPageSkeleton() {
   );
 }
 
+export function LearnPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <HeroSkeleton className="rounded-2xl" />
+      <Skeleton className="mb-4 mt-9 h-4 w-36" />
+      <div className="grid gap-5 md:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Skeleton key={index} className="h-80 rounded-2xl border bg-card" />
+        ))}
+      </div>
+      <Skeleton className="mb-4 mt-10 h-4 w-40" />
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton key={index} className="h-32 rounded-2xl border bg-card" />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function LearnLevelPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <Skeleton className="mb-7 h-12 w-64" />
+      <Skeleton className="mb-4 mt-6 h-4 w-48" />
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {Array.from({ length: 6 }).map((_, index) => (
+          <Skeleton key={index} className="h-[185px] rounded-2xl border bg-card" />
+        ))}
+      </div>
+      <Skeleton className="mb-4 mt-10 h-4 w-44" />
+      <Skeleton className="h-28 rounded-2xl border bg-card" />
+    </LoadingFrame>
+  );
+}
+
+export function CoursesPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <Skeleton className="mb-7 h-12 w-64" />
+      <Skeleton className="mb-4 mt-4 h-4 w-32" />
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Skeleton key={index} className="h-[175px] rounded-2xl border bg-card" />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
 export function TopicsPageSkeleton() {
   return (
     <LoadingFrame>
@@ -89,6 +142,26 @@ export function TopicsPageSkeleton() {
           <CardSkeleton key={index} compact />
         ))}
       </div>
+    </LoadingFrame>
+  );
+}
+
+export function TopicDetailPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <Skeleton className="mb-6 h-5 w-72" />
+      <Skeleton className="h-48 rounded-2xl border bg-card" />
+      <div className="mt-7 grid gap-4 md:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Skeleton key={index} className="h-20 rounded-xl border bg-card" />
+        ))}
+      </div>
+      <div className="mt-6 flex flex-wrap gap-2">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton key={index} className="h-9 w-28 rounded-xl border bg-card" />
+        ))}
+      </div>
+      <Skeleton className="mt-6 h-96 rounded-2xl border bg-card" />
     </LoadingFrame>
   );
 }
@@ -111,6 +184,32 @@ export function PracticePageSkeleton() {
         ))}
       </div>
       <Skeleton className="mt-9 h-24 w-full rounded-2xl border" />
+    </LoadingFrame>
+  );
+}
+
+export function FlashcardsPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <div className="mb-9 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton key={index} className="h-44 rounded-2xl border bg-card" />
+        ))}
+      </div>
+      <HeroSkeleton className="rounded-2xl" />
+      <Skeleton className="mb-4 mt-10 h-6 w-40" />
+      <div className="grid gap-4 sm:grid-cols-2">
+        {Array.from({ length: 2 }).map((_, index) => (
+          <Skeleton key={index} className="h-80 rounded-2xl border bg-card" />
+        ))}
+      </div>
+      <Skeleton className="mb-4 mt-10 h-6 w-40" />
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton key={index} className="h-[165px] rounded-2xl border bg-card" />
+        ))}
+      </div>
     </LoadingFrame>
   );
 }

@@ -18,6 +18,7 @@ export function useUserProgress(enabled = true) {
     queryKey: progressKeys.user,
     queryFn: progressApi.getUserProgress,
     enabled,
+    staleTime: 5 * 60 * 1000,
   });
 }
 
@@ -26,6 +27,7 @@ export function useCourseProgress(enabled = true) {
     queryKey: progressKeys.course,
     queryFn: progressApi.getCourseProgress,
     enabled,
+    staleTime: 5 * 60 * 1000,
   });
 }
 
@@ -34,6 +36,7 @@ export function useLessonPercentage(enabled = true) {
     queryKey: progressKeys.lessonPercentage,
     queryFn: progressApi.getLessonPercentage,
     enabled,
+    staleTime: 5 * 60 * 1000,
   });
 }
 

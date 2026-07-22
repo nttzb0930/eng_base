@@ -7,7 +7,6 @@ import {
   BookOpen,
   Target,
   Trophy,
-  Bookmark,
   Heart,
   Layers,
 } from "lucide-react";
@@ -60,7 +59,6 @@ export const Header = ({ className }: HeaderProps) => {
     { label: t("dashboard"), href: "/dashboard", icon: Home },
     { label: t("learn"), href: "/learn", icon: BookOpen },
     { label: t("practice"), href: "/practice", icon: Target },
-    { label: t("topics"), href: "/topics", icon: Bookmark },
     { label: t("savedWords"), href: "/saved-words", icon: Heart },
     { label: t("flashcards"), href: "/flashcards", icon: Layers },
     { label: t("leaderboard"), href: "/leaderboard", icon: Trophy },

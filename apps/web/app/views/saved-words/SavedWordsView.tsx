@@ -3,7 +3,7 @@
 import { BookmarkCheck, CalendarClock, Layers3 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
+import { SavedWordsPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { SavedWordsExplorer } from "@/app/features/vocabulary/components/SavedWordsExplorer";
@@ -14,7 +14,7 @@ export function SavedWordsView() {
   const savedWordsQuery = useSavedWords();
 
   if (savedWordsQuery.isLoading) {
-    return <ListPageSkeleton />;
+    return <SavedWordsPageSkeleton />;
   }
 
   const savedWords = savedWordsQuery.data ?? [];

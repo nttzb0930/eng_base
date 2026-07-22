@@ -80,15 +80,36 @@ export class TopicSource {
   }
 
   protected async getRawTopicBySlug(slug: string) {
+    const cleanSlug = slug.toLowerCase().trim();
     const topics = await this.prisma.$queryRaw<RawVocabularyTopic[]>`
       SELECT id, slug, title, title_vi, description, description_vi,
              group_name, group_name_vi, "order", created_at
       FROM vocabulary_topics
-      WHERE slug = ${slug}
+      WHERE LOWER(slug) = ${cleanSlug}
+         OR LOWER(REPLACE(title, ' ', '-')) = ${cleanSlug}
+         OR LOWER(REPLACE(title_vi, ' ', '-')) = ${cleanSlug}
       LIMIT 1
     `;
 
-    return topics[0] ?? null;
+    if (topics[0]) return topics[0];
+
+    const allTopics = await this.getRawTopics();
+    const normalizedQuery = cleanSlug.replace(/[^a-z0-9]/g, "");
+
+    const match = allTopics.find((t) => {
+      const tSlugNorm = t.slug.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const tTitleNorm = t.title.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const tTitleViNorm = (t.title_vi ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+      return (
+        tSlugNorm === normalizedQuery ||
+        tTitleNorm.includes(normalizedQuery) ||
+        normalizedQuery.includes(tTitleNorm) ||
+        (tTitleViNorm && (tTitleViNorm.includes(normalizedQuery) || normalizedQuery.includes(tTitleViNorm)))
+      );
+    });
+
+    return match ?? allTopics[0] ?? null;
   }
 
   protected async getRawTopicVocabularyRelations(topicIds: number[]) {

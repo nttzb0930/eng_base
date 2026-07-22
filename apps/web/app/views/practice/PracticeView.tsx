@@ -17,7 +17,7 @@ import {
   Target,
 } from "lucide-react";
 
-import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
+import { PracticePageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import {
@@ -122,7 +122,7 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
     !dictationSummary ||
     !weakWordsSummary
   ) {
-    return <ListPageSkeleton />;
+    return <PracticePageSkeleton />;
   }
 
   const summaries = {

@@ -1,1 +1,1 @@
-export { DiscoveryPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";
+export { LearnPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";

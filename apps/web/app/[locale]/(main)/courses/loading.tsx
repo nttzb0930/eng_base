@@ -1,1 +1,1 @@
-export { ListPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";
+export { CoursesPageSkeleton as default } from "@/app/components/feedback/RouteSkeletons";

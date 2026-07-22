@@ -87,17 +87,17 @@ export const VocabularyCard = ({
 
   return (
     <article
-      className={cn("rounded-lg border-2 bg-white p-4 shadow-sm", className)}
+      className={cn("rounded-2xl border border-border bg-card p-4 shadow-sm transition-all duration-200 hover:shadow-md", className)}
     >
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <div className="flex flex-wrap items-center gap-2">
-            <h2 className="text-xl font-bold text-neutral-800">{item.word}</h2>
+            <h2 className="text-xl font-bold text-foreground">{item.word}</h2>
             {item.audioUrl && (
               <VocabularyAudioButton audioUrl={item.audioUrl} label={item.word} />
             )}
             {item.phonetic && (
-              <span className="text-sm font-semibold text-slate-500">
+              <span className="font-mono text-sm font-medium text-muted-foreground">
                 {item.phonetic}
               </span>
             )}

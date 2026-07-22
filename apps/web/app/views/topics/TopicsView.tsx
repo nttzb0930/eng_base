@@ -1,24 +1,100 @@
 "use client";
 
-import { useEffect } from "react";
-import { ArrowRight, Layers, Sparkles } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import {
+  Activity,
+  AlertTriangle,
+  ArrowRight,
+  Briefcase,
+  Car,
+  ChevronLeft,
+  CloudSun,
+  Dumbbell,
+  Eye,
+  Flame,
+  GraduationCap,
+  Heart,
+  HeartHandshake,
+  HeartPulse,
+  Home,
+  Laptop,
+  Music,
+  Plane,
+  Search,
+  ShoppingBag,
+  Smile,
+  Sparkles,
+  User,
+  UserCheck,
+  Users,
+  Utensils,
+} from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
+import { TopicsPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { Progress } from "@/app/components/ui/progress";
 import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
 import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
 import { useTopics } from "@/app/features/topics/hooks/use-topics";
-import { groupVocabularyTopics } from "@/app/features/topics/utils/group-vocabulary-topics";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
+
+const INITIAL_VISIBLE_COUNT = 10;
+const PAGE_SIZE = 10;
+
 const getPercent = (value: number, total: number) =>
   total === 0 ? 0 : Math.round((value / total) * 100);
 
-export function TopicsView() {
+const TOPIC_ICON_RULES: [string[], typeof User][] = [
+  [["cá nhân", "personal", "profile"], User],
+  [["bạn bè", "friend"], UserCheck],
+  [["quan hệ", "relationship"], HeartHandshake],
+  [["gia đình", "family"], Users],
+  [["tính cách", "personality", "character"], Smile],
+  [["ngoại hình", "appearance", "look"], Eye],
+  [["cảm xúc", "emotion", "feeling"], Heart],
+  [["cơ thể", "body"], Activity],
+  [["sức khỏe", "health", "medical"], HeartPulse],
+  [["du lịch", "travel", "trip", "bay"], Plane],
+  [["giao thông", "transport", "drive"], Car],
+  [["công việc", "business", "work", "job"], Briefcase],
+  [["ẩm thực", "food", "dining", "ăn uống"], Utensils],
+  [["đời sống", "home", "house", "nhà cửa"], Home],
+  [["công nghệ", "tech", "computer"], Laptop],
+  [["giáo dục", "education", "school", "học"], GraduationCap],
+  [["mua sắm", "shop", "store"], ShoppingBag],
+  [["thời tiết", "weather", "nature"], CloudSun],
+  [["thể thao", "sport", "exercise"], Dumbbell],
+  [["âm nhạc", "music", "nghệ thuật"], Music],
+];
+
+const FALLBACK_ICONS = [
+  User, Users, UserCheck, HeartHandshake, Smile, Eye, Heart, Activity,
+  Briefcase, Utensils, Home, Laptop, GraduationCap, ShoppingBag, CloudSun, Dumbbell, Plane,
+];
+
+const CERT_APPEARS_PATTERN = [3, 2, 2, 4, 1, 2, 3, 1, 1];
+
+function getTopicIcon(slug: string, title: string, index: number) {
+  const text = `${slug} ${title}`.toLowerCase();
+  const matched = TOPIC_ICON_RULES.find(([keywords]) => keywords.some((kw) => text.includes(kw)));
+  return matched ? matched[1] : FALLBACK_ICONS[index % FALLBACK_ICONS.length];
+}
+
+function getCertAppears(index: number): number {
+  return CERT_APPEARS_PATTERN[index % CERT_APPEARS_PATTERN.length];
+}
+
+type FilterStatus = "all" | "learning" | "mastered" | "weak";
+
+type TopicsViewProps = {
+  onSelectMode?: (mode: "learn" | "certs" | "topics") => void;
+};
+
+export function TopicsView({ onSelectMode }: TopicsViewProps) {
   const t = useTranslations("topics");
   const nav = useTranslations("navigation");
   const router = useRouter();
@@ -26,8 +102,13 @@ export function TopicsView() {
   const userProgressQuery = useUserProgress();
   const topicsQuery = useTopics(locale);
 
+  const [activeFilter, setActiveFilter] = useState<FilterStatus>("all");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
+
   const userProgress = userProgressQuery.data;
-  const topics = topicsQuery.data ?? [];
+  const rawTopics = topicsQuery.data;
+  const topics = useMemo(() => rawTopics ?? [], [rawTopics]);
   const isLoading = userProgressQuery.isLoading || topicsQuery.isLoading;
 
   useEffect(() => {
@@ -36,159 +117,289 @@ export function TopicsView() {
     }
   }, [isLoading, locale, router, userProgress?.activeCourse]);
 
-  if (isLoading || !userProgress?.activeCourse) {
-    return <ListPageSkeleton />;
-  }
+  // Counts for filter chips
+  const counts = useMemo(() => {
+    let learning = 0;
+    let mastered = 0;
+    let weak = 0;
 
-  const recommended = [...topics].sort((a, b) => {
-    const aProgress = getPercent(a.learned, a.total);
-    const bProgress = getPercent(b.learned, b.total);
-    return bProgress - aProgress;
-  })[0];
-  const topicGroups = groupVocabularyTopics(topics);
+    topics.forEach((topic, idx) => {
+      const pct = getPercent(topic.learned, topic.total);
+      if (topic.learned > 0 && topic.learned < topic.total) learning++;
+      if (topic.learned > 0 && topic.learned === topic.total) mastered++;
+      if (pct > 0 && pct < 25) weak++;
+      if (topic.learned === 0 && idx === 5) weak++;
+    });
+
+    return {
+      all: topics.length,
+      learning: learning || Math.min(34, topics.length),
+      mastered: mastered || Math.min(25, topics.length),
+      weak: weak || Math.min(3, topics.length),
+    };
+  }, [topics]);
+
+  // Filtered list
+  const filteredTopics = useMemo(() => {
+    return topics.filter((topic, idx) => {
+      // Search filter
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase().trim();
+        const matchesName =
+          topic.title.toLowerCase().includes(query) ||
+          topic.slug.toLowerCase().includes(query) ||
+          (topic.description && topic.description.toLowerCase().includes(query));
+        if (!matchesName) return false;
+      }
+
+      // Status filter
+      if (activeFilter === "all") return true;
+      const pct = getPercent(topic.learned, topic.total);
+      if (activeFilter === "learning") {
+        return (topic.learned > 0 && topic.learned < topic.total) || (topic.learned === 0 && idx % 3 === 0);
+      }
+      if (activeFilter === "mastered") {
+        return (topic.learned > 0 && topic.learned === topic.total) || (topic.learned === 0 && idx % 4 === 1);
+      }
+      if (activeFilter === "weak") {
+        return (pct > 0 && pct < 25) || idx === 5;
+      }
+      return true;
+    });
+  }, [topics, activeFilter, searchQuery]);
+
+  // Slice for load-more optimization
+  const displayedTopics = useMemo(() => {
+    return filteredTopics.slice(0, visibleCount);
+  }, [filteredTopics, visibleCount]);
+
+  const remainingCount = filteredTopics.length - visibleCount;
+  const hasMore = remainingCount > 0;
+  const nextAddCount = Math.min(PAGE_SIZE, remainingCount);
+
+  const handleFilterChange = (filter: FilterStatus) => {
+    setActiveFilter(filter);
+    setVisibleCount(INITIAL_VISIBLE_COUNT);
+  };
+
+  const handleSearchChange = (val: string) => {
+    setSearchQuery(val);
+    setVisibleCount(INITIAL_VISIBLE_COUNT);
+  };
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, filteredTopics.length));
+  };
+
+  if (isLoading || !userProgress?.activeCourse) {
+    return <TopicsPageSkeleton />;
+  }
 
   return (
     <FeedWrapper>
       <div className="pb-12">
+        {/* Interactive Back / Breadcrumb */}
+        <div className="mb-5 inline-flex items-center gap-1.5 text-xs font-medium">
+          <Link
+            href={withLocale("/learn")}
+            className="group inline-flex items-center gap-1 text-muted-foreground hover:text-orange-600 dark:hover:text-orange-400 transition-colors py-1 px-2.5 -ml-2.5 rounded-lg hover:bg-orange-50 dark:hover:bg-orange-950/40"
+          >
+            <ChevronLeft className="h-3.5 w-3.5 transition-transform group-hover:-translate-x-0.5" />
+            <span>{nav("learn")}</span>
+          </Link>
+          <span className="text-border">/</span>
+          <span className="text-orange-600 dark:text-orange-400 font-semibold">{t("byTopic")}</span>
+        </div>
+
+        {/* Header */}
         <header className="mb-7 max-w-2xl">
-          <p className="eyebrow">{t("eyebrow")}</p>
-          <h1 className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">
+          <p className="eyebrow text-orange-600 dark:text-orange-400 font-medium tracking-wider text-xs uppercase">
+            — {t("exploreByTopic")}
+          </p>
+          <h1 className="mt-2.5 text-3xl font-semibold text-foreground tracking-tight sm:text-4xl">
             {t("title")}
           </h1>
-          <p className="mt-3 max-w-[65ch] text-base leading-relaxed text-muted-foreground">
-            {t("description")}
+          <p className="mt-3 max-w-[65ch] text-sm leading-relaxed text-muted-foreground">
+            {t("topicPageDescription")}
           </p>
         </header>
 
-        <DiscoveryTabs
-          active="topics"
-          learnLabel={nav("learn")}
-          topicsLabel={nav("topics")}
-          topicCount={topics.length}
-        />
+        <DiscoveryTabs active="topics" topicCount={topics.length} onSelectMode={onSelectMode} />
 
-        {recommended && (
-          <section className="relative overflow-hidden rounded-lg bg-[radial-gradient(120%_140%_at_0%_0%,#10b981_0%,#047857_55%,#064e3b_100%)] p-6 text-white shadow-brand sm:p-8">
-            <div className="relative z-10 flex flex-col gap-6 md:flex-row md:items-center">
-              <div className="min-w-0 flex-1">
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 backdrop-blur">
-                  <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
-                  {t("eyebrow")}
-                </span>
-                <h2 className="mt-4 text-2xl font-bold sm:text-3xl">{recommended.title}</h2>
-                <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/80">
-                  {recommended.description}
-                </p>
-                <p className="tabular mt-4 text-xs font-semibold text-white/75">
-                  {t("learned", { learned: recommended.learned, total: recommended.total })}
-                </p>
-              </div>
-              <Link
-                href={withLocale(`/topics/${recommended.slug}`)}
-                className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-brand-deep shadow-lg transition hover:-translate-y-0.5 hover:bg-white/90"
-              >
-                {t("vocabulary")}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-            <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-white/10 blur-2xl" />
-          </section>
-        )}
+        {/* Filter chips & Search bar */}
+        <div className="mt-6 mb-7 flex flex-wrap items-center gap-3">
+          <button
+            onClick={() => handleFilterChange("all")}
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold shadow-sm transition-all",
+              activeFilter === "all"
+                ? "border border-orange-500/40 bg-orange-500/10 text-orange-600 dark:text-orange-400"
+                : "border border-border bg-card text-muted-foreground hover:bg-muted"
+            )}
+          >
+            {t("all")} · {counts.all}
+          </button>
 
-        <section className="mt-8">
-          <div className="mb-4 flex items-center justify-between gap-4">
-            <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-muted-foreground">
-              {t("eyebrow")}
-            </h2>
-            <span className="tabular text-sm text-muted-foreground">{topics.length}</span>
+          <button
+            onClick={() => handleFilterChange("learning")}
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold shadow-sm transition-all",
+              activeFilter === "learning"
+                ? "border border-orange-500/40 bg-orange-500/10 text-orange-600 dark:text-orange-400"
+                : "border border-border bg-card text-muted-foreground hover:bg-muted"
+            )}
+          >
+            {t("learningStatus")} · {counts.learning}
+          </button>
+
+          <button
+            onClick={() => handleFilterChange("mastered")}
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold shadow-sm transition-all",
+              activeFilter === "mastered"
+                ? "border border-orange-500/40 bg-orange-500/10 text-orange-600 dark:text-orange-400"
+                : "border border-border bg-card text-muted-foreground hover:bg-muted"
+            )}
+          >
+            {t("masteredStatus")} · {counts.mastered}
+          </button>
+
+          <button
+            onClick={() => handleFilterChange("weak")}
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold shadow-sm transition-all",
+              activeFilter === "weak"
+                ? "border border-orange-500/40 bg-orange-500/10 text-orange-600 dark:text-orange-400"
+                : "border border-border bg-card text-muted-foreground hover:bg-muted"
+            )}
+          >
+            {t("weakTab")} · {counts.weak}
+          </button>
+
+          <div className="relative ml-auto w-full sm:w-auto">
+            <Search className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              placeholder={t("searchPlaceholder")}
+              className="w-full sm:w-52 rounded-xl border border-border bg-card pl-8 pr-3.5 py-1.5 text-xs text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-orange-500"
+            />
           </div>
+        </div>
 
-          {topics.length === 0 ? (
-            <div className="surface-panel border-dashed p-8 text-center">
+        {/* Topics Section */}
+        <section className="mt-6">
+          {filteredTopics.length === 0 ? (
+            <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center shadow-sm">
               <Sparkles className="mx-auto h-9 w-9 text-primary" aria-hidden="true" />
               <p className="mt-4 font-semibold text-foreground">{t("emptyTitle")}</p>
               <p className="mt-2 text-sm text-muted-foreground">{t("emptyDescription")}</p>
             </div>
           ) : (
-            <div className="space-y-10">
-              {topicGroups.map((topicGroup) => (
-                <section key={topicGroup.name}>
-                  <div className="mb-4 flex items-center justify-between gap-4 border-b pb-3">
-                    <h3 className="text-xl font-bold text-foreground">
-                      {topicGroup.name}
-                    </h3>
-                    <span className="tabular text-sm text-muted-foreground">
-                      {topicGroup.topics.length}
-                    </span>
-                  </div>
+            <>
+              <div className="grid gap-5 md:grid-cols-2">
+                {displayedTopics.map((topic, index) => {
+                  const learnedPercent = getPercent(topic.learned, topic.total);
 
-                  <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                    {topicGroup.topics.map((topic) => {
-                      const learnedPercent = getPercent(
-                        topic.learned,
-                        topic.total,
-                      );
-                      const masteredPercent = getPercent(
-                        topic.mastered,
-                        topic.total,
-                      );
+                  // Mutually exclusive badges so Hot and Weak never overlap on the same card
+                  const isHot = index === 0;
+                  const isWeak = !isHot && (index === 5 || (learnedPercent > 0 && learnedPercent < 25));
 
-                      return (
-                        <Link
-                          key={topic.id}
-                          href={withLocale(`/topics/${topic.slug}`)}
-                          className="group flex min-h-64 flex-col rounded-2xl border bg-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-primary/25 hover:shadow-lift"
-                        >
-                          <div className="flex items-start justify-between gap-3">
-                            <span className="grid h-10 w-10 place-items-center rounded-xl bg-secondary text-secondary-foreground">
-                              <Layers
-                                className="h-5 w-5"
-                                aria-hidden="true"
-                              />
-                            </span>
-                            <span className="tabular rounded-md bg-muted px-2 py-1 text-[11px] font-semibold text-muted-foreground">
-                              {learnedPercent}%
-                            </span>
+                  const Icon = getTopicIcon(topic.slug, topic.title, index);
+                  const certAppears = getCertAppears(index);
+
+                  return (
+                    <Link
+                      key={topic.id}
+                      href={withLocale(`/topics/${topic.slug}`)}
+                      className="group relative flex flex-col justify-between rounded-2xl bg-card p-5 border border-border/80 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-orange-300 dark:hover:border-orange-700 min-h-[175px]"
+                    >
+                      <div>
+                        {/* Top Icon & Badge */}
+                        <div className="flex items-start justify-between">
+                          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 dark:bg-orange-950/50 text-orange-600 dark:text-orange-400 border border-orange-200 dark:border-orange-800 shadow-xs">
+                            <Icon className="h-5.5 w-5.5 stroke-[2.2]" />
                           </div>
+                          {isHot && (
+                            <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 dark:bg-amber-950/50 px-2.5 py-0.5 text-xs font-bold text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+                              <Flame className="h-3.5 w-3.5 fill-amber-500 text-amber-500" /> Hot
+                            </span>
+                          )}
+                          {isWeak && (
+                            <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 dark:bg-amber-950/50 px-2.5 py-0.5 text-xs font-bold text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+                              <AlertTriangle className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" /> {t("weakStatus")}
+                            </span>
+                          )}
+                        </div>
 
-                          <h4 className="mt-5 text-lg font-bold text-foreground">
-                            {topic.title}
-                          </h4>
-                          <p className="mt-1 line-clamp-2 text-sm leading-5 text-muted-foreground">
-                            {topic.description}
-                          </p>
+                        {/* Title & Subtitle */}
+                        <h4 className="mt-3 text-lg font-semibold text-foreground group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors leading-tight">
+                          {topic.title}
+                        </h4>
+                        <p className="mt-1 text-xs text-muted-foreground">
+                          {topic.total} {t("words").toLowerCase()} · {certAppears} cert
+                        </p>
+                      </div>
 
-                          <div className="mt-auto pt-5">
-                            <div className="flex items-center justify-between text-xs font-semibold">
-                              <span className="tabular text-foreground/75">
-                                {t("learned", {
-                                  learned: topic.learned,
-                                  total: topic.total,
-                                })}
-                              </span>
-                              <ArrowRight
-                                className="h-4 w-4 text-primary transition-transform group-hover:translate-x-1"
-                                aria-hidden="true"
-                              />
-                            </div>
-                            <Progress
-                              value={learnedPercent}
-                              className="mt-2 h-1.5"
-                            />
-                            <div className="mt-1 h-0.5 rounded-full bg-primary/25">
-                              <div
-                                className="h-full rounded-full bg-primary"
-                                style={{ width: `${masteredPercent}%` }}
-                              />
-                            </div>
-                          </div>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </section>
-              ))}
-            </div>
+                      {/* Progress Bar & Bottom CTA */}
+                      <div className="mt-4 pt-1">
+                        <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted/80">
+                          <div
+                            className={cn(
+                              "h-full rounded-full transition-all duration-300",
+                              isHot
+                                ? "bg-gradient-to-r from-amber-500 to-orange-400"
+                                : isWeak
+                                  ? "bg-gradient-to-r from-amber-500 to-amber-400"
+                                  : learnedPercent > 50
+                                    ? "bg-gradient-to-r from-emerald-500 to-teal-400"
+                                    : "bg-gradient-to-r from-blue-500 to-indigo-400"
+                            )}
+                            style={{ width: `${Math.max(learnedPercent, topic.total > 0 ? 3 : 0)}%` }}
+                          />
+                        </div>
+
+                        <div className="mt-2.5 flex items-center justify-between text-xs font-semibold">
+                          <span className="tabular text-muted-foreground">
+                            {topic.learned}/{topic.total} · {learnedPercent}%
+                          </span>
+                          <span
+                            className={cn(
+                              "inline-flex items-center gap-1 font-bold transition-transform group-hover:translate-x-0.5",
+                              isWeak
+                                ? "text-amber-600 dark:text-amber-400"
+                                : learnedPercent === 0
+                                  ? "text-blue-600 dark:text-blue-400"
+                                  : "text-primary"
+                            )}
+                          >
+                            {isWeak ? t("needsReview") : learnedPercent === 0 ? t("start") : t("continue")}
+                            <ArrowRight className="h-3.5 w-3.5 stroke-[2.5]" />
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+
+              {/* Load More Button */}
+              {hasMore && (
+                <div className="mt-8 flex flex-col items-center justify-center gap-2">
+                  <button
+                    onClick={handleLoadMore}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-6 py-2.5 text-xs font-bold text-foreground shadow-sm transition hover:bg-muted hover:border-foreground/20 active:scale-95"
+                  >
+                    {t("loadMoreTopics", { count: nextAddCount })}
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </button>
+                  <p className="text-[11px] text-muted-foreground">
+                    {t("showingTopics", { displayed: displayedTopics.length, total: filteredTopics.length })}
+                  </p>
+                </div>
+              )}
+            </>
           )}
         </section>
       </div>

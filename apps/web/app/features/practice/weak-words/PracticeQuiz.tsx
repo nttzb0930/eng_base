@@ -289,6 +289,13 @@ export const WeakWordsPracticeQuiz = ({
                   </div>
                 )}
               </div>
+            ) : challenge.direction === "VI_TO_EN" || challenge.type === "SELECT" ? (
+              status !== "none" ? (
+                <VocabularyCard
+                  item={challenge.vocabularyItem}
+                  showMeaning
+                />
+              ) : null
             ) : shouldHideVocabularyPrompt ? null : (
               <VocabularyCard
                 item={challenge.vocabularyItem}

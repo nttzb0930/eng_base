@@ -22,11 +22,20 @@ test("Flashcard resources preserve summary and session routes", async () => {
   ]);
 });
 
-test("normalizeFlashcardDeck keeps known decks and falls back to due", () => {
-  for (const deck of ["due", "saved", "weak", "A1", "A2", "B1", "B2"] as const) {
+test("normalizeFlashcardDeck keeps named decks and falls back to due", () => {
+  for (const deck of [
+    "due",
+    "saved",
+    "weak",
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "travel-and-transport",
+  ] as const) {
     assert.equal(normalizeFlashcardDeck(deck), deck);
   }
 
-  assert.equal(normalizeFlashcardDeck("C1"), "due");
   assert.equal(normalizeFlashcardDeck(undefined), "due");
 });

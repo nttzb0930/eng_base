@@ -14,7 +14,7 @@ import {
   Target,
 } from "lucide-react";
 
-import { ListPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
+import { DashboardPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
@@ -91,7 +91,7 @@ export function DashboardView() {
   }, [isLoading, locale, router, userProgress?.activeCourse]);
 
   if (isLoading || !userProgress?.activeCourse || !dashboard || !dailyReview) {
-    return <ListPageSkeleton />;
+    return <DashboardPageSkeleton />;
   }
 
   const activeLevel =
@@ -250,7 +250,7 @@ export function DashboardView() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-50 text-orange-500">
                       <AlertTriangle className="h-5 w-5" />
                     </div>
-                    <span className="rounded-full bg-orange-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-orange-600">
+                    <span className="rounded-full bg-orange-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-orange-600">
                       {t("queues.weak.pill")}
                     </span>
                   </div>
@@ -506,7 +506,7 @@ export function DashboardView() {
                                   ? "bg-gradient-to-br from-orange-500 to-amber-500 text-white shadow-sm"
                                   : "border border-amber-200/30 bg-white/60 text-amber-800",
                                 isToday &&
-                                  "ring-2 ring-orange-500 ring-offset-2 ring-offset-orange-50"
+                                "ring-2 ring-orange-500 ring-offset-2 ring-offset-orange-50"
                               )}
                               title={t("activityDayTitle", {
                                 count: day.wordCount,

@@ -3,10 +3,18 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LogOut } from "lucide-react";
-import { Button } from "@/app/components/ui/button";
-import { cn } from "@/app/utils/cn";
-import { useAuth } from "@/app/features/auth/hooks/use-auth";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { Button } from "@/app/components/ui/button";
+import { useAuth } from "@/app/features/auth/hooks/use-auth";
+import type { Locale } from "@/app/i18n/config";
+import {
+  buildLocalePreferencePath,
+  getBrowserLocaleStorage,
+  writeLocalePreference,
+} from "@/app/i18n/locale-preference";
+import { useCurrentLocale } from "@/app/i18n/use-current-locale";
+import { cn } from "@/app/utils/cn";
 import {
   Dialog,
   DialogContent,
@@ -22,6 +30,13 @@ import LanguageStep from "./LanguageStep";
 import LevelStep from "./LevelStep";
 import GoalStep from "./GoalStep";
 import IntensityStep from "./IntensityStep";
+import {
+  getOnboardingStepMessageKey,
+  ONBOARDING_FLOW_VERSION,
+  ONBOARDING_TOTAL_STEPS,
+  resolveInitialOnboardingStep,
+} from "./onboarding-flow";
+import SystemLanguageStep from "./SystemLanguageStep";
 
 type NewUserOnboardingProps = {
   onComplete: (
@@ -44,9 +59,14 @@ export default function NewUserOnboarding({
   initialData,
 }: NewUserOnboardingProps) {
   const { logout } = useAuth();
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = useCurrentLocale();
   const updateOnboarding = useUpdatePlacementOnboarding();
   const t = useTranslations("placementTest");
-  const [step, setStep] = useState(initialStep || 1);
+  const [step, setStep] = useState(() =>
+    resolveInitialOnboardingStep(initialStep, initialData),
+  );
   const [selectedLangs, setSelectedLangs] = useState<string[]>(initialData?.selectedLangs || []);
   const [primaryLang, setPrimaryLang] = useState<string | null>(initialData?.primaryLang || null);
   const [selectedLevels, setSelectedLevels] = useState<Record<string, string>>(initialData?.selectedLevels || {});
@@ -59,6 +79,7 @@ export default function NewUserOnboarding({
   const saveOnboardingState = async (nextStep: number) => {
     try {
       const dataToSave = {
+        flowVersion: ONBOARDING_FLOW_VERSION,
         selectedLangs,
         primaryLang,
         selectedLevels,
@@ -72,7 +93,7 @@ export default function NewUserOnboarding({
     }
   };
 
-  const progressPercent = (step / 4) * 100;
+  const progressPercent = (step / ONBOARDING_TOTAL_STEPS) * 100;
 
   // Warn user before reloading or leaving the page
   useEffect(() => {
@@ -88,9 +109,9 @@ export default function NewUserOnboarding({
   }, []);
 
   const handleNext = () => {
-    if (step === 1 && selectedLangs.length === 0) return;
+    if (step === 2 && selectedLangs.length === 0) return;
 
-    if (step < 4) {
+    if (step < ONBOARDING_TOTAL_STEPS) {
       const nextStep = step + 1;
       setStep(nextStep);
       void saveOnboardingState(nextStep);
@@ -171,6 +192,20 @@ export default function NewUserOnboarding({
     });
   };
 
+  const handleSelectSystemLocale = (nextLocale: Locale) => {
+    writeLocalePreference(getBrowserLocaleStorage(), nextLocale);
+    if (nextLocale === locale) return;
+
+    router.replace(
+      buildLocalePreferencePath(
+        pathname,
+        window.location.search,
+        window.location.hash,
+        nextLocale,
+      ),
+    );
+  };
+
   const handleSetPrimary = (id: string) => {
     if (selectedLangs.includes(id)) {
       setPrimaryLang(id);
@@ -202,7 +237,8 @@ export default function NewUserOnboarding({
     exit: { opacity: 0, x: -20 },
   };
 
-  const isNextDisabled = step === 1 && selectedLangs.length === 0;
+  const isNextDisabled = step === 2 && selectedLangs.length === 0;
+  const stepMessageKey = getOnboardingStepMessageKey(step);
 
   return (
     <div className="flex flex-col h-screen bg-slate-50/50 text-slate-800 w-full overflow-hidden">
@@ -217,7 +253,7 @@ export default function NewUserOnboarding({
             </span>
             <div className="flex items-start justify-between gap-4 w-full">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                {t(`newOnboarding.step${step}.title`)}
+                {t(`newOnboarding.${stepMessageKey}.title`)}
               </h2>
               <button
                 onClick={handleLogout}
@@ -228,7 +264,7 @@ export default function NewUserOnboarding({
               </button>
             </div>
             <p className="text-sm text-slate-500 font-medium mt-2 leading-relaxed">
-              {t(`newOnboarding.step${step}.desc`)}
+              {t(`newOnboarding.${stepMessageKey}.desc`)}
             </p>
 
             {/* Custom Progress Bar */}
@@ -253,6 +289,13 @@ export default function NewUserOnboarding({
               className="flex-1 flex flex-col min-h-0 overflow-y-auto pr-1"
             >
               {step === 1 && (
+                <SystemLanguageStep
+                  selectedLocale={locale}
+                  onSelectLocale={handleSelectSystemLocale}
+                />
+              )}
+
+              {step === 2 && (
                 <LanguageStep
                   selectedLangs={selectedLangs}
                   onToggleLang={handleToggleLang}
@@ -261,7 +304,7 @@ export default function NewUserOnboarding({
                 />
               )}
 
-              {step === 2 && (
+              {step === 3 && (
                 <LevelStep
                   selectedLangs={selectedLangs}
                   selectedLevels={selectedLevels}
@@ -272,7 +315,7 @@ export default function NewUserOnboarding({
                 />
               )}
 
-              {step === 3 && (
+              {step === 4 && (
                 <GoalStep
                   selectedGoals={selectedGoals}
                   onToggleGoal={handleToggleGoal}
@@ -281,7 +324,7 @@ export default function NewUserOnboarding({
                 />
               )}
 
-              {step === 4 && (
+              {step === 5 && (
                 <IntensityStep
                   selectedIntensity={selectedIntensity}
                   onSelectIntensity={setSelectedIntensity}
@@ -315,7 +358,7 @@ export default function NewUserOnboarding({
               )}
             >
               <span>
-                {step === 4 
+                {step === ONBOARDING_TOTAL_STEPS
                   ? t("newOnboarding.step4.startCTA") 
                   : `${t("newOnboarding.step4.nextCTA")} →`
                 }

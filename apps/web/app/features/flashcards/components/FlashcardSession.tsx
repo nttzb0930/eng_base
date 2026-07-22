@@ -84,9 +84,8 @@ export const FlashcardSession = ({
   const locale = useCurrentLocale();
   const router = useRouter();
   const { width, height } = useWindowSize();
-  const [finishAudio] = useAudio({
+  const [finishAudio, , finishControls] = useAudio({
     src: "/finish.mp3",
-    autoPlay: true,
   });
   const [activeIndex, setActiveIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -115,6 +114,12 @@ export const FlashcardSession = ({
   const percentage = useMemo(() => {
     return (activeIndex / initialItems.length) * 100;
   }, [activeIndex, initialItems.length]);
+
+  useEffect(() => {
+    if (!item && reviewedItems.length > 0) {
+      void finishControls.play();
+    }
+  }, [item, reviewedItems.length, finishControls]);
 
   const onPlayAudio = () => {
     if (!item?.audioUrl) return;
@@ -262,23 +267,26 @@ export const FlashcardSession = ({
 
   if (initialItems.length === 0) {
     return (
-      <div className="mx-auto flex h-full max-w-xl flex-col items-center justify-center gap-y-5 px-6 text-center">
-        <Image
-          src="/mascot.svg"
-          alt={t("mascotAlt")}
-          width={96}
-          height={96}
-        />
-        <h1 className="text-2xl font-bold text-neutral-700">
-          {t("emptyTitle")}
-        </h1>
-        <p className="text-base leading-7 text-muted-foreground">
-          {t("emptyDescription")}
-        </p>
-        <Button asChild variant="primary" size="lg">
-          <Link href={withLocale("/flashcards")}>{t("backToFlashcards")}</Link>
-        </Button>
-      </div>
+      <>
+        {finishAudio}
+        <div className="mx-auto flex h-full max-w-xl flex-col items-center justify-center gap-y-5 px-6 text-center">
+          <Image
+            src="/mascot.svg"
+            alt={t("mascotAlt")}
+            width={96}
+            height={96}
+          />
+          <h1 className="text-xl font-semibold text-foreground">
+            {t("emptyTitle")}
+          </h1>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            {t("emptyDescription")}
+          </p>
+          <Button asChild variant="primary" size="lg">
+            <Link href={withLocale("/flashcards")}>{t("backToFlashcards")}</Link>
+          </Button>
+        </div>
+      </>
     );
   }
 
@@ -298,10 +306,10 @@ export const FlashcardSession = ({
         <div className="mx-auto flex h-full max-w-lg flex-col items-center justify-center gap-y-5 px-6 text-center">
           <Image src="/finish.svg" alt={t("finishAlt")} height={100} width={100} />
           <div>
-            <p className="text-sm font-black uppercase tracking-wide text-green-500">
+            <p className="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
               {t("complete")}
             </p>
-            <h1 className="mt-2 text-2xl font-bold text-neutral-700 lg:text-3xl">
+            <h1 className="mt-2 text-2xl font-semibold text-foreground lg:text-3xl tracking-tight">
               {deckTitle}
             </h1>
           </div>
@@ -310,23 +318,23 @@ export const FlashcardSession = ({
             {ratingConfigs.map((config) => (
               <div
                 key={config.rating}
-                className="rounded-xl border-2 bg-white p-4 text-center"
+                className="rounded-xl border border-border/80 bg-card p-4 text-center shadow-xs"
               >
-                <p className="text-2xl font-black text-neutral-800">
+                <p className="text-2xl font-semibold text-foreground">
                   {counts[config.rating]}
                 </p>
-                <p className="mt-1 text-xs font-bold uppercase text-muted-foreground">
+                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   {t(config.rating)}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="font-bold text-neutral-600">
+          <p className="text-sm font-medium text-muted-foreground">
             {t("reviewedCards", { count: reviewedCount })}
           </p>
 
-          <p className="rounded-lg bg-green-50 px-4 py-3 text-sm font-bold leading-6 text-green-700">
+          <p className="rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 px-4 py-3 text-sm font-medium leading-relaxed text-emerald-700 dark:text-emerald-400">
             {t("scheduleUpdated")}
           </p>
 
@@ -350,7 +358,8 @@ export const FlashcardSession = ({
   const examples = getExamples(item);
   return (
     <>
-      <header className="flex items-center justify-between border-b-2 px-6 py-4 lg:px-10">
+      {finishAudio}
+      <header className="flex items-center justify-between border-b border-border/80 px-6 py-4 lg:px-10 bg-background/95 backdrop-blur-xs">
         <Button
           variant="ghost"
           size="sm"
@@ -358,13 +367,13 @@ export const FlashcardSession = ({
         >
           {t("exit")}
         </Button>
-        <div className="h-4 flex-1 rounded-full bg-slate-200">
+        <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-muted mx-4">
           <div
-            className="h-full rounded-full bg-green-500 transition-all"
+            className="h-full rounded-full bg-emerald-500 transition-all duration-300"
             style={{ width: `${percentage}%` }}
           />
         </div>
-        <p className="ml-4 text-sm font-bold text-neutral-500">
+        <p className="text-xs font-semibold text-muted-foreground">
           {activeIndex + 1}/{initialItems.length}
         </p>
       </header>
@@ -372,10 +381,10 @@ export const FlashcardSession = ({
       <div className="flex flex-1 items-center justify-center px-6 py-8">
         <div className="flex w-full max-w-2xl flex-col items-center gap-6">
           <div className="text-center">
-            <p className="text-sm font-black uppercase tracking-wide text-green-500">
+            <p className="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
               {deckTitle}
             </p>
-            <h1 className="mt-2 text-2xl font-bold text-neutral-800">
+            <h1 className="mt-1.5 text-2xl font-semibold text-foreground tracking-tight">
               {flipped ? t("rememberQuestion") : t("tapToReveal")}
             </h1>
           </div>
@@ -393,10 +402,10 @@ export const FlashcardSession = ({
               setFlipped((current) => !current);
             }}
             className={cn(
-              "relative flex min-h-[360px] w-full touch-none select-none flex-col justify-center rounded-2xl border-2 border-b-8 bg-white p-8 text-center shadow-sm",
+              "relative flex min-h-[380px] w-full touch-none select-none flex-col justify-center rounded-2xl border bg-card p-8 text-center shadow-sm transition-all duration-200",
               flipped
-                ? "border-green-500"
-                : "border-slate-200 hover:border-green-400"
+                ? "border-emerald-500/80 shadow-md"
+                : "border-border/80 hover:border-emerald-500/40 hover:shadow-md"
             )}
             style={{
               x,
@@ -408,7 +417,7 @@ export const FlashcardSession = ({
             {swipeRating && (
               <div
                 className={cn(
-                  "absolute inset-4 flex items-center justify-center rounded-xl border-4 border-dashed border-current bg-white/75 text-4xl font-black uppercase",
+                  "absolute inset-4 flex items-center justify-center rounded-xl border-2 border-dashed border-current bg-background/90 text-2xl font-semibold uppercase tracking-wider backdrop-blur-xs",
                   getSwipeOverlayClassName(swipeRating)
                 )}
               >
@@ -418,11 +427,11 @@ export const FlashcardSession = ({
 
             {!flipped ? (
               <div className="space-y-5">
-                <p className="text-5xl font-black text-neutral-800">
+                <p className="text-4xl sm:text-5xl font-semibold text-foreground tracking-tight">
                   {item.word}
                 </p>
                 {item.phonetic && (
-                  <p className="text-xl font-bold text-muted-foreground">
+                  <p className="text-lg font-medium text-muted-foreground">
                     {item.phonetic}
                   </p>
                 )}
@@ -436,11 +445,11 @@ export const FlashcardSession = ({
                       event.stopPropagation();
                       onPlayAudio();
                     }}
-                    className="h-16 w-16 rounded-full p-0"
+                    className="h-14 w-14 rounded-full p-0 shadow-xs hover:scale-105 transition-transform"
                     aria-label={t("playPronunciation")}
                     title={t("playPronunciation")}
                   >
-                    <Volume2 className="h-7 w-7" />
+                    <Volume2 className="h-6 w-6" />
                   </Button>
                 </div>
               </div>
@@ -448,42 +457,42 @@ export const FlashcardSession = ({
               <div className="space-y-5 text-left">
                 <div>
                   <div className="flex flex-wrap items-center gap-3">
-                    <h2 className="text-4xl font-black text-neutral-800">
+                    <h2 className="text-3xl font-semibold text-foreground tracking-tight">
                       {item.word}
                     </h2>
-                    <span className="rounded-md bg-slate-100 px-2 py-1 text-xs font-black uppercase text-slate-500">
+                    <span className="rounded-md bg-muted px-2 py-0.5 text-xs font-semibold uppercase text-muted-foreground border border-border/50">
                       {item.cefrLevel}
                     </span>
-                    <span className="rounded-md bg-slate-100 px-2 py-1 text-xs font-black uppercase text-slate-500">
+                    <span className="rounded-md bg-muted px-2 py-0.5 text-xs font-semibold uppercase text-muted-foreground border border-border/50">
                       {item.pos}
                     </span>
                   </div>
                   {item.phonetic && (
-                    <p className="mt-2 text-lg font-bold text-muted-foreground">
+                    <p className="mt-1.5 text-base font-medium text-muted-foreground">
                       {item.phonetic}
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <p className="text-sm font-black uppercase text-green-500">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
                     {t("meaning")}
                   </p>
-                  <p className="mt-1 text-xl font-bold leading-8 text-neutral-800">
+                  <p className="mt-1 text-lg font-medium leading-relaxed text-foreground">
                     {item.meaningVi}
                   </p>
                 </div>
 
                 {examples.length > 0 && (
                   <div>
-                    <p className="text-sm font-black uppercase text-sky-500">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400">
                       {t("examples")}
                     </p>
                     <div className="mt-2 space-y-2">
                       {examples.map((example) => (
                         <p
                           key={example}
-                          className="rounded-lg bg-slate-50 p-3 text-base font-semibold leading-7 text-neutral-700"
+                          className="rounded-xl bg-muted/50 border border-border/40 p-3.5 text-sm font-medium leading-relaxed text-foreground"
                         >
                           {example}
                         </p>
@@ -500,11 +509,32 @@ export const FlashcardSession = ({
               variant="primary"
               size="lg"
               onClick={() => setFlipped(true)}
+              className="w-full sm:w-auto px-8 font-semibold shadow-xs"
             >
               {t("showAnswer")}
             </Button>
-          ) : null}
-
+          ) : (
+            <div className="grid w-full grid-cols-2 gap-3.5 sm:max-w-md">
+              <Button
+                variant="dangerOutline"
+                size="lg"
+                onClick={() => onRate("again")}
+                disabled={pending}
+                className="w-full font-semibold"
+              >
+                {t("again")}
+              </Button>
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={() => onRate("good")}
+                disabled={pending}
+                className="w-full font-semibold shadow-xs"
+              >
+                {t("good")}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </>

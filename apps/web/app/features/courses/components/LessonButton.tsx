@@ -16,6 +16,15 @@ type LessonButtonProps = {
   percentage: number;
 };
 
+function getCefrModuleTitle(index: number): string {
+  const lessonNum = index + 1;
+  if (lessonNum <= 10) return "Mô-đun 1 · Khởi động";
+  if (lessonNum <= 20) return "Mô-đun 2 · Tăng tốc";
+  if (lessonNum <= 30) return "Mô-đun 3 · Bứt phá";
+  if (lessonNum <= 40) return "Mô-đun 4 · Nâng cao";
+  return "Mô-đun 5 · Về đích";
+}
+
 export const LessonButton = ({
   id,
   index,
@@ -30,6 +39,8 @@ export const LessonButton = ({
   const href = isCompleted ? withLocale(`/lesson/${id}`) : withLocale("/lesson");
   const Icon = locked ? LockKeyhole : isCompleted ? Check : isLast ? Crown : Play;
   const safePercentage = Number.isNaN(percentage) ? 0 : percentage;
+
+  const moduleTitle = getCefrModuleTitle(index);
 
   const content = (
     <>
@@ -50,10 +61,13 @@ export const LessonButton = ({
           {Math.round(safePercentage)}%
         </span>
       </div>
-      <p className="mt-4 text-base font-semibold text-foreground">
-        {t("lessonLabel", { number: index + 1 })}
+      <p className="mt-4 text-base font-bold text-foreground">
+        Bài {index + 1}
       </p>
-      <p className="mt-1 text-xs font-medium text-muted-foreground">
+      <p className="mt-0.5 text-xs font-medium text-primary">
+        {moduleTitle}
+      </p>
+      <p className="mt-1.5 text-xs text-muted-foreground">
         {locked ? t("locked") : current ? t("continueLearning") : t("completed")}
       </p>
       <div className="mt-4 flex items-center gap-3">

@@ -40,6 +40,12 @@ The system locale itself is not sent to the onboarding API and is not included i
 - Use semantic buttons with visible selected state and `aria-pressed`.
 - Maintain keyboard operation and a minimum 44px target size.
 - Do not rely only on flag imagery or color to communicate the selection.
+- Show local circular flag assets for English (`/flags/gb.svg`) and Vietnamese
+  (`/flags/vn.svg`) while retaining the visible language names as the primary
+  labels. The flags are decorative and therefore use empty alternative text.
+- Vendor only these two MIT-licensed SVG files from the same HatScripts
+  `circle-flags` collection already used by the target-language step. Do not add
+  a flag package or make the system-language step depend on a runtime CDN.
 - Preserve the current responsive onboarding card, focus treatment, motion behavior, and logout/navigation controls.
 
 ## Failure Handling

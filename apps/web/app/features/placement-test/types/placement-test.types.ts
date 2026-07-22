@@ -44,6 +44,7 @@ export type UpdateOnboardingResponse = {
 };
 
 export type PlacementOnboardingData = {
+  flowVersion?: number;
   selectedLangs?: string[];
   primaryLang?: string | null;
   selectedLevels?: Record<string, string>;

@@ -58,6 +58,13 @@ requires a database write.
 - [Vocabulary data pipeline](data/vocabulary-pipeline.md): canonical inputs,
   generated artifacts, classification, expansion, seed safety, and review gates.
 
+## Product features
+
+- [Feature overview](features-overview.md): trạng thái triển khai và lộ trình
+  tiếp theo cho CEFR vocabulary, Anh - Việt, quiz hai chiều, distractor,
+  Reading, AI Writing, pronunciation audio, personalized review và AI Learning
+  Assistant.
+
 ## Architecture decision records
 
 The [ADR catalog](adr/README.md) records why durable decisions exist and shows
