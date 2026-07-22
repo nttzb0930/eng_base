@@ -20,6 +20,25 @@ test("CI workflow runs the complete safe verification contract", () => {
   assert.match(source, /node-version:\s*22/u);
   assert.match(source, /pnpm install --frozen-lockfile/u);
 
+  const apiJob = source.slice(
+    source.indexOf("  api:"),
+    source.indexOf("  web:"),
+  );
+  const webJob = source.slice(
+    source.indexOf("  web:"),
+    source.indexOf("  admin:"),
+  );
+  const adminJob = source.slice(
+    source.indexOf("  admin:"),
+    source.indexOf("  repository:"),
+  );
+
+  assert.match(apiJob, /pnpm --filter @repo\/shared build/u);
+  for (const job of [webJob, adminJob]) {
+    assert.match(job, /pnpm --filter @repo\/shared build/u);
+    assert.match(job, /pnpm --filter @repo\/ui build/u);
+  }
+
   for (const command of [
     "pnpm db:generate",
     "pnpm --filter @repo/api architecture:check",

@@ -61,7 +61,7 @@ test("vocabulary data has one canonical catalog and taxonomy", () => {
       assert.equal(topicSlugs.has(slug as string), true, String(slug));
     }
   }
-  assert.equal(catalog.length, 3000);
+  assert.equal(catalog.length, 7429);
   assert.equal(catalog.some((item) => "enriched" in item), false);
   assert.equal(
     catalog.filter((item) => item.dictionaryLookupCompleted === true).length,

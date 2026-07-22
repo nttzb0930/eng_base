@@ -97,6 +97,17 @@ test("Admin architecture check includes every architecture test", () => {
   assert.equal(packageJson.scripts?.["architecture:check"], 'tsx --test "test/*architecture.test.ts"');
 });
 
+test("Admin production build pins the production Node environment", () => {
+  const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.equal(
+    packageJson.scripts?.build,
+    "dotenv -e ../../.env -v NODE_ENV=production -- next build --turbopack",
+  );
+});
+
 test("Admin Auth follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/auth/api/auth.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/auth/api/http-client.ts")), true);

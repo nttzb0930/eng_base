@@ -66,6 +66,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared build
       - run: pnpm db:generate
       - run: pnpm --filter @repo/api architecture:check
       - run: pnpm --filter @repo/api test
@@ -86,6 +87,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared build
+      - run: pnpm --filter @repo/ui build
       - run: pnpm --filter @repo/web test
       - run: pnpm --filter @repo/web check-types
       - run: pnpm --filter @repo/web lint
@@ -103,6 +106,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared build
+      - run: pnpm --filter @repo/ui build
       - run: pnpm --filter @repo/admin test
       - run: pnpm --filter @repo/admin check-types
       - run: pnpm --filter @repo/admin lint
