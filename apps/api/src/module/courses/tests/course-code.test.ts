@@ -83,3 +83,26 @@ test("Course code migration backfills before enforcing uniqueness", () => {
   assert.ok(notNullPosition > backfillPosition);
   assert.ok(uniquePosition > notNullPosition);
 });
+
+test("Unit CEFR migration backfills English levels before constraining data", () => {
+  const migration = readFileSync(
+    join(
+      process.cwd(),
+      "prisma/migrations/20260722180000_add_unit_cefr_level/migration.sql"
+    ),
+    "utf8"
+  );
+
+  const addPosition = migration.indexOf('ADD COLUMN "cefr_level" VARCHAR(2)');
+  const backfillPosition = migration.indexOf("WHEN 1 THEN 'A1'");
+  const guardPosition = migration.indexOf("RAISE EXCEPTION");
+  const constraintPosition = migration.indexOf("units_cefr_level_check");
+  const indexPosition = migration.indexOf("units_course_id_cefr_level_idx");
+
+  assert.ok(addPosition >= 0);
+  assert.ok(backfillPosition > addPosition);
+  assert.ok(guardPosition > backfillPosition);
+  assert.ok(constraintPosition > guardPosition);
+  assert.ok(indexPosition > constraintPosition);
+  assert.match(migration, /english-vocabulary/u);
+});
