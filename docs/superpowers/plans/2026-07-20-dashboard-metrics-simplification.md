@@ -21,10 +21,12 @@
 ### Task 1: Seven-day presentation calculations
 
 **Files:**
+
 - Create: `apps/web/app/features/dashboard/dashboard-presentation.ts`
 - Create: `apps/web/app/features/dashboard/tests/dashboard-presentation.test.ts`
 
 **Interfaces:**
+
 - Consumes: `DashboardStats["activity"]` from the root `@repo/shared` interface.
 - Produces: `summarizeWeeklyActivity(activity): { activeDays: number; reviewedWords: number }`.
 - Produces: `formatActivityWeekday(dateKey: string, locale: string): string`.
@@ -103,11 +105,13 @@ git commit -m "test: define dashboard weekly presentation"
 ### Task 2: Render truthful Dashboard metrics
 
 **Files:**
+
 - Modify: `apps/web/app/views/dashboard/DashboardView.tsx`
 - Modify: `apps/web/app/messages/en.json`
 - Modify: `apps/web/app/messages/vi.json`
 
 **Interfaces:**
+
 - Consumes: `summarizeWeeklyActivity` and `formatActivityWeekday` from Task 1.
 - Consumes: `dailyReview.due`, `dailyReview.saved`, and `dailyReview.weak`.
 - Consumes: lifetime `dashboard.overview.totalReviews`, `dashboard.overview.accuracy`, and `userProgress.points`.

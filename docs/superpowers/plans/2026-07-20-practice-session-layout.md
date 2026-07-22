@@ -21,17 +21,17 @@
 
 ## File Map
 
-| File | Responsibility |
-| --- | --- |
-| `apps/web/app/components/layout/LearnerShell.tsx` | Selects the authenticated main or focused session frame. |
-| `apps/web/app/[locale]/lesson/layout.tsx` | Adapts Lesson routes to the generic session frame. |
-| `apps/web/app/[locale]/(session)/layout.tsx` | Adapts focused Practice routes to the generic session frame. |
-| `apps/web/app/[locale]/(main)/practice/page.tsx` | Keeps the Practice mode-selection screen in the main frame. |
-| `apps/web/app/[locale]/(session)/practice/*/{page,loading}.tsx` | Owns the four active Practice route adapters and their focused loading states. |
-| `apps/web/app/features/practice/components/PracticeSessionShell.tsx` | Lays out Practice session header, scrolling question body, and footer. |
-| `apps/web/test/route-architecture.test.ts` | Protects route-group ownership and unchanged route boundaries. |
-| `apps/web/test/frontend-feature-architecture.test.ts` | Protects the shared session-mode contract and viewport ownership. |
-| `docs/architecture/frontend.md` | Documents main versus focused Learner route ownership. |
+| File                                                                 | Responsibility                                                                 |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| `apps/web/app/components/layout/LearnerShell.tsx`                    | Selects the authenticated main or focused session frame.                       |
+| `apps/web/app/[locale]/lesson/layout.tsx`                            | Adapts Lesson routes to the generic session frame.                             |
+| `apps/web/app/[locale]/(session)/layout.tsx`                         | Adapts focused Practice routes to the generic session frame.                   |
+| `apps/web/app/[locale]/(main)/practice/page.tsx`                     | Keeps the Practice mode-selection screen in the main frame.                    |
+| `apps/web/app/[locale]/(session)/practice/*/{page,loading}.tsx`      | Owns the four active Practice route adapters and their focused loading states. |
+| `apps/web/app/features/practice/components/PracticeSessionShell.tsx` | Lays out Practice session header, scrolling question body, and footer.         |
+| `apps/web/test/route-architecture.test.ts`                           | Protects route-group ownership and unchanged route boundaries.                 |
+| `apps/web/test/frontend-feature-architecture.test.ts`                | Protects the shared session-mode contract and viewport ownership.              |
+| `docs/architecture/frontend.md`                                      | Documents main versus focused Learner route ownership.                         |
 
 ---
 
@@ -63,7 +63,10 @@ test("focused learning routes use the generic Learner session frame", () => {
 
   const learnerShellSource = readFileSync(join(root, learnerShellPath), "utf8");
   const lessonLayoutSource = readFileSync(join(root, lessonLayoutPath), "utf8");
-  const sessionLayoutSource = readFileSync(join(root, sessionLayoutPath), "utf8");
+  const sessionLayoutSource = readFileSync(
+    join(root, sessionLayoutPath),
+    "utf8"
+  );
 
   assert.equal(learnerShellSource.includes('mode?: "main" | "session"'), true);
   assert.equal(learnerShellSource.includes('mode === "lesson"'), false);
@@ -95,7 +98,12 @@ type LearnerShellProps = {
 export function LearnerShell({ children, mode = "main" }: LearnerShellProps) {
   const { status } = useAuth();
   const progressQuery = useUserProgress(status === "authenticated");
-  const fallback = mode === "session" ? <SessionPageSkeleton embedded /> : <ListPageSkeleton />;
+  const fallback =
+    mode === "session" ? (
+      <SessionPageSkeleton embedded />
+    ) : (
+      <ListPageSkeleton />
+    );
 
   if (status !== "authenticated" || progressQuery.isLoading) return fallback;
 
@@ -109,7 +117,11 @@ export function LearnerShell({ children, mode = "main" }: LearnerShellProps) {
   }
 
   if (mode === "session") {
-    return <div className="flex h-dvh min-h-0 w-full flex-col overflow-hidden">{children}</div>;
+    return (
+      <div className="flex h-dvh min-h-0 w-full flex-col overflow-hidden">
+        {children}
+      </div>
+    );
   }
 
   return (
@@ -199,20 +211,24 @@ test("Practice browsing stays in main while active quizzes use the session route
 
   assert.equal(
     existsSync(join(localizedDirectory, "(main)", "practice", "page.tsx")),
-    true,
+    true
   );
 
   for (const mode of practiceModes) {
     for (const filename of ["page.tsx", "loading.tsx"]) {
       assert.equal(
-        existsSync(join(localizedDirectory, "(session)", "practice", mode, filename)),
+        existsSync(
+          join(localizedDirectory, "(session)", "practice", mode, filename)
+        ),
         true,
-        `${mode}/${filename} must use the focused session route group`,
+        `${mode}/${filename} must use the focused session route group`
       );
       assert.equal(
-        existsSync(join(localizedDirectory, "(main)", "practice", mode, filename)),
+        existsSync(
+          join(localizedDirectory, "(main)", "practice", mode, filename)
+        ),
         false,
-        `${mode}/${filename} must not inherit the main navigation layout`,
+        `${mode}/${filename} must not inherit the main navigation layout`
       );
     }
   }
@@ -287,7 +303,10 @@ test("Practice session shell consumes the focused frame without header offsets",
   const path = "app/features/practice/components/PracticeSessionShell.tsx";
   const source = readFileSync(join(root, path), "utf8");
 
-  assert.equal(source.includes('className="flex h-full min-h-0 flex-col overflow-hidden"'), true);
+  assert.equal(
+    source.includes('className="flex h-full min-h-0 flex-col overflow-hidden"'),
+    true
+  );
   assert.equal(source.includes("calc(100dvh"), false);
 });
 ```

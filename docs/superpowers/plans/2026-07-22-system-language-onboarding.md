@@ -35,12 +35,14 @@
 ### Task 1: Browser Locale Preference Infrastructure
 
 **Files:**
+
 - Create: `apps/web/app/i18n/locale-preference.ts`
 - Create: `apps/web/app/components/LocalePreferenceSync.tsx`
 - Modify: `apps/web/app/[locale]/layout.tsx`
 - Test: `apps/web/test/locale-preference.test.ts`
 
 **Interfaces:**
+
 - Consumes: `isLocale`, `Locale`, and `withLocale` from the existing i18n modules.
 - Produces: `LOCALE_STORAGE_KEY`, `DEFAULT_PREFERRED_LOCALE`, `getBrowserLocaleStorage()`, `readLocalePreference(storage)`, `writeLocalePreference(storage, locale)`, and `buildLocalePreferencePath(pathname, search, hash, locale)`.
 
@@ -103,8 +105,13 @@ test("locale preference survives unavailable browser storage", () => {
 
 test("locale preference path replaces locale and preserves URL suffixes", () => {
   assert.equal(
-    buildLocalePreferencePath("/vi/placement-test", "?from=signup", "#language", "en"),
-    "/en/placement-test?from=signup#language",
+    buildLocalePreferencePath(
+      "/vi/placement-test",
+      "?from=signup",
+      "#language",
+      "en"
+    ),
+    "/en/placement-test?from=signup#language"
   );
 });
 ```
@@ -141,7 +148,7 @@ export function getBrowserLocaleStorage(): LocalePreferenceStorage | undefined {
 }
 
 export function readLocalePreference(
-  storage?: LocalePreferenceStorage,
+  storage?: LocalePreferenceStorage
 ): Locale {
   try {
     const stored = storage?.getItem(LOCALE_STORAGE_KEY) ?? null;
@@ -155,7 +162,7 @@ export function readLocalePreference(
 
 export function writeLocalePreference(
   storage: LocalePreferenceStorage | undefined,
-  locale: Locale,
+  locale: Locale
 ) {
   try {
     storage?.setItem(LOCALE_STORAGE_KEY, locale);
@@ -168,7 +175,7 @@ export function buildLocalePreferencePath(
   pathname: string,
   search: string,
   hash: string,
-  locale: Locale,
+  locale: Locale
 ) {
   return withLocale(`${pathname}${search}${hash}`, locale);
 }
@@ -211,8 +218,8 @@ export function LocalePreferenceSync() {
         pathname,
         window.location.search,
         window.location.hash,
-        preferredLocale,
-      ),
+        preferredLocale
+      )
     );
   }, [locale, pathname, router]);
 
@@ -244,6 +251,7 @@ git commit -m "feat(web): remember browser locale preference"
 ### Task 2: Five-Step Onboarding and System Language UI
 
 **Files:**
+
 - Create: `apps/web/app/features/placement-test/onboarding/onboarding-flow.ts`
 - Create: `apps/web/app/features/placement-test/onboarding/SystemLanguageStep.tsx`
 - Modify: `apps/web/app/features/placement-test/onboarding/NewUserOnboarding.tsx`
@@ -253,6 +261,7 @@ git commit -m "feat(web): remember browser locale preference"
 - Test: `apps/web/test/system-language-onboarding.test.ts`
 
 **Interfaces:**
+
 - Consumes: locale preference functions from Task 1 and the existing Placement Test mutation/data interfaces.
 - Produces: `ONBOARDING_FLOW_VERSION = 2`, `ONBOARDING_TOTAL_STEPS = 5`, `resolveInitialOnboardingStep()`, `getOnboardingStepMessageKey()`, and `SystemLanguageStep`.
 
@@ -276,10 +285,13 @@ const webRoot = join(import.meta.dirname, "..");
 
 test("new onboarding has five steps and maps display messages", () => {
   assert.equal(ONBOARDING_TOTAL_STEPS, 5);
-  assert.deepEqual(
-    [1, 2, 3, 4, 5].map(getOnboardingStepMessageKey),
-    ["systemLanguage", "step1", "step2", "step3", "step4"],
-  );
+  assert.deepEqual([1, 2, 3, 4, 5].map(getOnboardingStepMessageKey), [
+    "systemLanguage",
+    "step1",
+    "step2",
+    "step3",
+    "step4",
+  ]);
 });
 
 test("onboarding resumes version two directly and shifts legacy progress", () => {
@@ -291,8 +303,12 @@ test("onboarding resumes version two directly and shifts legacy progress", () =>
 });
 
 test("locale catalogs expose matching system-language onboarding copy", () => {
-  const en = JSON.parse(readFileSync(join(webRoot, "app/messages/en.json"), "utf8"));
-  const vi = JSON.parse(readFileSync(join(webRoot, "app/messages/vi.json"), "utf8"));
+  const en = JSON.parse(
+    readFileSync(join(webRoot, "app/messages/en.json"), "utf8")
+  );
+  const vi = JSON.parse(
+    readFileSync(join(webRoot, "app/messages/vi.json"), "utf8")
+  );
   const enStep = en.placementTest.newOnboarding.systemLanguage;
   const viStep = vi.placementTest.newOnboarding.systemLanguage;
 
@@ -303,8 +319,11 @@ test("locale catalogs expose matching system-language onboarding copy", () => {
 
 test("system language choices are semantic pressed buttons", () => {
   const source = readFileSync(
-    join(webRoot, "app/features/placement-test/onboarding/SystemLanguageStep.tsx"),
-    "utf8",
+    join(
+      webRoot,
+      "app/features/placement-test/onboarding/SystemLanguageStep.tsx"
+    ),
+    "utf8"
   );
   assert.match(source, /<button/);
   assert.match(source, /aria-pressed=/);
@@ -334,11 +353,11 @@ export const ONBOARDING_TOTAL_STEPS = 5;
 
 export function resolveInitialOnboardingStep(
   initialStep?: number,
-  initialData?: PlacementOnboardingData,
+  initialData?: PlacementOnboardingData
 ) {
   const boundedStep = Math.min(
     ONBOARDING_TOTAL_STEPS,
-    Math.max(1, Math.trunc(initialStep ?? 1)),
+    Math.max(1, Math.trunc(initialStep ?? 1))
   );
   if (initialData?.flowVersion === ONBOARDING_FLOW_VERSION) return boundedStep;
   return boundedStep > 1
@@ -373,7 +392,12 @@ type SystemLanguageStepProps = {
 
 const SYSTEM_LANGUAGE_OPTIONS = [
   { locale: "en", labelKey: "english", nativeName: "English", code: "EN" },
-  { locale: "vi", labelKey: "vietnamese", nativeName: "Tiếng Việt", code: "VI" },
+  {
+    locale: "vi",
+    labelKey: "vietnamese",
+    nativeName: "Tiếng Việt",
+    code: "VI",
+  },
 ] as const;
 
 export default function SystemLanguageStep({
@@ -396,7 +420,7 @@ export default function SystemLanguageStep({
               "min-h-28 rounded-2xl border-2 p-5 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2",
               isSelected
                 ? "border-sky-500 bg-sky-50 text-sky-900"
-                : "border-slate-200 bg-white text-slate-700 hover:border-sky-300",
+                : "border-slate-200 bg-white text-slate-700 hover:border-sky-300"
             )}
           >
             <span className="flex items-start justify-between gap-4">
@@ -421,7 +445,10 @@ export default function SystemLanguageStep({
                   </span>
                 </span>
               ) : (
-                <Languages className="h-6 w-6 text-slate-300" aria-hidden="true" />
+                <Languages
+                  className="h-6 w-6 text-slate-300"
+                  aria-hidden="true"
+                />
               )}
             </span>
           </button>
@@ -458,8 +485,8 @@ const handleSelectSystemLocale = (nextLocale: Locale) => {
       pathname,
       window.location.search,
       window.location.hash,
-      nextLocale,
-    ),
+      nextLocale
+    )
   );
 };
 ```
@@ -507,9 +534,11 @@ Expected: the locale catalogs contain existing user edits plus the new localized
 ### Task 3: Full Web and Repository Verification
 
 **Files:**
+
 - Verify only; fix failures in the owning Task 1 or Task 2 file.
 
 **Interfaces:**
+
 - Consumes: the complete five-step onboarding feature.
 - Produces: verification evidence for behavior, architecture, typing, lint, and production compilation.
 
@@ -550,12 +579,14 @@ Expected: no whitespace errors, no generated artifacts, no database changes, and
 ### Task 4: Local System-Language Flag Assets
 
 **Files:**
+
 - Create: `apps/web/public/flags/gb.svg`
 - Create: `apps/web/public/flags/vn.svg`
 - Modify: `apps/web/app/features/placement-test/onboarding/SystemLanguageStep.tsx`
 - Test: `apps/web/test/system-language-onboarding.test.ts`
 
 **Interfaces:**
+
 - Consumes: Next.js `Image` and the HatScripts `circle-flags` SVG artwork already referenced by the target-language step.
 - Produces: two repository-owned public assets at `/flags/gb.svg` and `/flags/vn.svg`.
 

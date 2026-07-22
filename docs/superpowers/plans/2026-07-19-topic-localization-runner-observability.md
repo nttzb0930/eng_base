@@ -217,13 +217,14 @@ export type TopicLocale = (typeof TOPIC_LOCALES)[number];
 
 export function localizeVocabularyTopic(
   topic: RawVocabularyTopic,
-  locale: TopicLocale,
+  locale: TopicLocale
 ) {
   const englishGroup = topic.group_name?.trim() || "Other";
   return {
     id: topic.id,
     slug: topic.slug,
-    title: locale === "vi" ? topic.title_vi?.trim() || topic.title : topic.title,
+    title:
+      locale === "vi" ? topic.title_vi?.trim() || topic.title : topic.title,
     description:
       locale === "vi"
         ? topic.description_vi?.trim() || topic.description
@@ -315,7 +316,7 @@ git commit -m "feat(api): validate vocabulary topic locale"
 [
   { method: "GET", path: "/topics?locale=vi" },
   { method: "GET", path: "/topics/travel?locale=vi&level=A1" },
-]
+];
 ```
 
 - [ ] Add query-key tests proving English and Vietnamese list/detail keys differ.
@@ -368,7 +369,7 @@ export type VocabularyTopicGroup = {
 };
 
 export function groupVocabularyTopics(
-  topics: readonly VocabularyTopic[],
+  topics: readonly VocabularyTopic[]
 ): VocabularyTopicGroup[] {
   // Sort a copy by `order`, then accumulate by trimmed `group || "Other"`.
 }
