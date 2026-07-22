@@ -12,6 +12,7 @@ import { AdminChallengesController } from "./admin-challenges.controller";
 import { AdminChallengeOptionsController } from "./admin-challenge-options.controller";
 import { ADMIN_COURSE_CONTENT_USE_CASES } from "./use-cases";
 import { GetCourseProgressUseCase } from "./use-cases/get-course-progress.use-case";
+import { GetCefrLevelProgressUseCase } from "./use-cases/get-cefr-level-progress.use-case";
 import { GetCourseUnitsUseCase } from "./use-cases/get-course-units.use-case";
 import { GetCourseUseCase } from "./use-cases/get-course.use-case";
 import { GetCurrentLessonUseCase } from "./use-cases/get-current-lesson.use-case";
@@ -38,6 +39,7 @@ import { ListCoursesUseCase } from "./use-cases/list-courses.use-case";
     GetUserProgressUseCase,
     GetCourseUnitsUseCase,
     GetCourseProgressUseCase,
+    GetCefrLevelProgressUseCase,
     GetCurrentLessonUseCase,
     GetLessonPercentageUseCase,
     GetLeaderboardUseCase,
@@ -49,6 +51,7 @@ import { ListCoursesUseCase } from "./use-cases/list-courses.use-case";
     GetCourseUseCase,
     GetUserProgressUseCase,
     GetCourseProgressUseCase,
+    GetCefrLevelProgressUseCase,
     GetLessonPercentageUseCase,
   ],
 })

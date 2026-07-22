@@ -9,6 +9,7 @@ import {
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import {
+  GetCefrLevelProgressUseCase,
   GetCourseProgressUseCase,
   GetLessonPercentageUseCase,
   GetUserProgressUseCase,
@@ -26,6 +27,7 @@ export class ProgressController {
     private readonly getUserProgressGoal: GetUserProgressUseCase,
     private readonly getCourseProgressGoal: GetCourseProgressUseCase,
     private readonly getLessonPercentageGoal: GetLessonPercentageUseCase,
+    private readonly getCefrLevelProgressGoal: GetCefrLevelProgressUseCase,
     private readonly selectActiveCourse: SelectActiveCourseUseCase,
     private readonly reduceHeartsGoal: ReduceHeartsUseCase,
     private readonly refillHeartsGoal: RefillHeartsUseCase,
@@ -46,6 +48,11 @@ export class ProgressController {
   @Get("lesson-percentage")
   getLessonPercentage(@CurrentUserId() userId: string) {
     return this.getLessonPercentageGoal.execute(userId);
+  }
+
+  @Get("cefr-levels")
+  getCefrLevels(@CurrentUserId() userId: string) {
+    return this.getCefrLevelProgressGoal.execute(userId);
   }
 
   @Post("courses/:id")
