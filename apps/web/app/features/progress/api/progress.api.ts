@@ -6,6 +6,14 @@ import type {
 
 import { webHttpClient } from "@/app/features/auth/api/web-http-client";
 
+export const progressKeys = {
+  all: ["progress"] as const,
+  user: ["progress", "user"] as const,
+  course: ["progress", "course"] as const,
+  lessonPercentage: ["progress", "lesson-percentage"] as const,
+  cefrLevels: ["progress", "cefr-levels"] as const,
+};
+
 export type ProgressHttp = {
   get<T>(path: string): Promise<{ data: T }>;
   post<T>(path: string): Promise<{ data: T }>;

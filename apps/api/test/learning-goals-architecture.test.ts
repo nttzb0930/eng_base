@@ -9,6 +9,7 @@ test("Progress and Placement Test expose flat goal-named use cases", () => {
   const expected = {
     progress: [
       "complete-challenge.use-case.ts",
+      "get-cefr-level-progress.use-case.ts",
       "reduce-hearts.use-case.ts",
       "refill-hearts.use-case.ts",
       "reset-lesson-progress.use-case.ts",

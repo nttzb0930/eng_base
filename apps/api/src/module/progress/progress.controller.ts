@@ -9,12 +9,12 @@ import {
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import {
-  GetCefrLevelProgressUseCase,
   GetCourseProgressUseCase,
   GetLessonPercentageUseCase,
   GetUserProgressUseCase,
 } from "../courses";
 import { CompleteChallengeUseCase } from "./use-cases/complete-challenge.use-case";
+import { GetCefrLevelProgressUseCase } from "./use-cases/get-cefr-level-progress.use-case";
 import { ReduceHeartsUseCase } from "./use-cases/reduce-hearts.use-case";
 import { RefillHeartsUseCase } from "./use-cases/refill-hearts.use-case";
 import { ResetLessonProgressUseCase } from "./use-cases/reset-lesson-progress.use-case";

@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
 import { courseKeys } from "@/app/features/courses/hooks/use-courses";
-import { progressKeys } from "@/app/features/progress/hooks/use-user-progress";
+import { progressKeys } from "@/app/features/progress/api/progress.api";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { withLocale } from "@/app/i18n/paths";
 

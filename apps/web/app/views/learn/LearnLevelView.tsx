@@ -212,13 +212,16 @@ export function LearnLevelView({ onSelectMode }: LearnLevelViewProps) {
 
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {cefrSummary.levels.map((levelProgress, index) => {
-              const unitItem = units.find(
+              const levelUnits = units.filter(
                 (unit) => unit.cefrLevel === levelProgress.level
               );
-              const active = unitItem?.id === activeUnitId;
+              const active = levelUnits.some((unit) => unit.id === activeUnitId);
+              const targetUnit =
+                levelUnits.find((unit) => unit.id === activeUnitId) ??
+                levelUnits[0];
               const locked =
                 !levelProgress.unlocked ||
-                (unitItem ? !unlockedUnitIds.has(unitItem.id) : false);
+                (targetUnit ? !unlockedUnitIds.has(targetUnit.id) : false);
               const percent = levelProgress.totalWords
                 ? Math.round(
                     (levelProgress.masteredWords / levelProgress.totalWords) *
@@ -315,9 +318,9 @@ export function LearnLevelView({ onSelectMode }: LearnLevelViewProps) {
                   </div>
 
                   <div className="mt-5">
-                    {!locked && unitItem ? (
+                    {!locked && targetUnit ? (
                       <Link
-                        href={withLocale(`/learn/level?unit=${unitItem.id}`)}
+                        href={withLocale(`/learn/level?unit=${targetUnit.id}`)}
                         className={cn(
                           "shadow-xs inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl text-xs font-bold transition",
                           active

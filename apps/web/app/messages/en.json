@@ -435,6 +435,100 @@
     "mascotAlt": "Learning mascot",
     "title": "Flashcards",
     "description": "Flip cards, rate your memory, and schedule the next review.",
+    "createDeck": "Create a new deck",
+    "dueToday": "Due today",
+    "dueMetricDescription": "Words scheduled by SRS for today's review.",
+    "savedMetricDescription": "Vocabulary cards saved from lessons and practice.",
+    "weakMetricDescription": "Words missed often or still below mastery.",
+    "accuracy": "Accuracy",
+    "accuracyDescription": "Estimated recall strength across your current decks.",
+    "today": "Today",
+    "dueHeroTitle": "{count} words are waiting for review",
+    "dueHeroDescription": "Start with due words first, then switch to saved, weak, CEFR, certificate, or topic decks.",
+    "savedShort": "Saved",
+    "weakShort": "Weak",
+    "accuracyShort": "Accuracy",
+    "dueSessionMeta": "~5 min · {count} words",
+    "quickReviewTitle": "Quick review",
+    "quickReviewDescription": "Smart decks generated from your learning history.",
+    "savedReviewTitle": "Review saved words",
+    "weakReviewTitle": "Review weak words",
+    "needsReview": "Needs review",
+    "chooseDeckTitle": "Choose a deck",
+    "chooseDeckDescription": "Review by CEFR level, certificate goal, or real-life topic.",
+    "reviewNow": "Review now",
+    "continueReview": "Continue",
+    "startReview": "Start",
+    "reviewText": "Review",
+    "locked": "Locked",
+    "weakStatus": "Weak",
+    "tabs": {
+      "cefr": "CEFR levels",
+      "cert": "Certificates",
+      "topic": "Topics"
+    },
+    "levels": {
+      "A1": {
+        "title": "Beginner A1",
+        "description": "Entry vocabulary for daily survival and first conversations."
+      },
+      "A2": {
+        "title": "Elementary A2",
+        "description": "Common vocabulary for familiar everyday situations."
+      },
+      "B1": {
+        "title": "Intermediate B1",
+        "description": "Vocabulary for opinions, stories, work, and travel."
+      },
+      "B2": {
+        "title": "Upper-intermediate B2",
+        "description": "Academic, professional, and nuanced vocabulary."
+      }
+    },
+    "certDecks": {
+      "ielts": {
+        "title": "IELTS Academic",
+        "description": "Core vocabulary for IELTS Academic preparation.",
+        "meta": "Band 6.5+ target"
+      },
+      "toeic": {
+        "title": "TOEIC 600+",
+        "description": "Workplace, office, and business communication vocabulary.",
+        "meta": "600+ target"
+      },
+      "business": {
+        "title": "Business English",
+        "description": "Meetings, negotiation, presentation, and business email vocabulary.",
+        "meta": "New deck"
+      },
+      "toefl": {
+        "title": "TOEFL iBT",
+        "description": "Academic vocabulary for university-level English tasks.",
+        "meta": "Unlock later"
+      }
+    },
+    "topicDecks": {
+      "travel": {
+        "title": "Travel & Transport",
+        "description": "Airport, hotel, directions, transport, and trip planning vocabulary.",
+        "meta": "Travel deck"
+      },
+      "food": {
+        "title": "Food & Dining",
+        "description": "Restaurants, ingredients, cooking, and ordering food.",
+        "meta": "Food deck"
+      },
+      "health": {
+        "title": "Health & Body",
+        "description": "Body parts, symptoms, appointments, and basic healthcare.",
+        "meta": "Needs attention"
+      },
+      "technology": {
+        "title": "Technology",
+        "description": "Devices, software, internet, and digital communication.",
+        "meta": "Technology deck"
+      }
+    },
     "dueReview": "Due Review",
     "dueReviewDescription": "Words scheduled for review today.",
     "savedWords": "Saved Words",

@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import type { CefrLevel, CourseProgress, UnitWithLessons } from "@repo/shared";
 
 type UseLearnProps = {
@@ -16,8 +15,6 @@ export function useLearn({
   unlockedLevels,
   unitParam,
 }: UseLearnProps) {
-  const t = useTranslations("learn");
-
   const unlockedUnitIds = new Set(
     units
       .filter(
@@ -41,7 +38,6 @@ export function useLearn({
   const selectedUnit = units.find((unitItem) => unitItem.id === activeUnitId);
 
   return {
-    t,
     unlockedUnitIds,
     activeUnitId,
     selectedUnit,

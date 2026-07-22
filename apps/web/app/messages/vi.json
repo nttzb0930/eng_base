@@ -435,6 +435,100 @@
     "mascotAlt": "Linh vật học tập",
     "title": "Thẻ ghi nhớ",
     "description": "Lật thẻ, tự đánh giá trí nhớ và lên lịch ôn tiếp theo.",
+    "createDeck": "Tạo bộ thẻ mới",
+    "dueToday": "Đến hạn hôm nay",
+    "dueMetricDescription": "Các từ được SRS lên lịch ôn trong hôm nay.",
+    "savedMetricDescription": "Thẻ từ vựng đã lưu từ bài học và luyện tập.",
+    "weakMetricDescription": "Các từ hay trả lời sai hoặc chưa đạt mức thành thạo.",
+    "accuracy": "Độ chính xác",
+    "accuracyDescription": "Ước tính khả năng ghi nhớ trên các bộ thẻ hiện tại.",
+    "today": "Hôm nay",
+    "dueHeroTitle": "{count} từ đang chờ bạn ôn",
+    "dueHeroDescription": "Ưu tiên ôn từ đến hạn trước, sau đó chuyển sang bộ đã lưu, từ yếu, CEFR, chứng chỉ hoặc chủ đề.",
+    "savedShort": "Đã lưu",
+    "weakShort": "Từ yếu",
+    "accuracyShort": "Chính xác",
+    "dueSessionMeta": "~5 phút · {count} từ",
+    "quickReviewTitle": "Ôn tập nhanh",
+    "quickReviewDescription": "Các bộ thẻ thông minh được tạo từ lịch sử học của bạn.",
+    "savedReviewTitle": "Ôn từ đã lưu",
+    "weakReviewTitle": "Ôn từ còn yếu",
+    "needsReview": "Cần ôn",
+    "chooseDeckTitle": "Chọn bộ thẻ",
+    "chooseDeckDescription": "Ôn theo cấp độ CEFR, mục tiêu chứng chỉ hoặc chủ đề thực tế.",
+    "reviewNow": "Ôn ngay",
+    "continueReview": "Ôn tiếp",
+    "startReview": "Bắt đầu",
+    "reviewText": "Ôn tập",
+    "locked": "Khóa",
+    "weakStatus": "Yếu",
+    "tabs": {
+      "cefr": "Cấp độ CEFR",
+      "cert": "Chứng chỉ",
+      "topic": "Chủ đề"
+    },
+    "levels": {
+      "A1": {
+        "title": "Sơ cấp A1",
+        "description": "Từ vựng nhập môn cho giao tiếp cơ bản hằng ngày."
+      },
+      "A2": {
+        "title": "Sơ cấp A2",
+        "description": "Từ vựng thông dụng trong các tình huống quen thuộc."
+      },
+      "B1": {
+        "title": "Trung cấp B1",
+        "description": "Từ vựng để nêu ý kiến, kể chuyện, đi làm và du lịch."
+      },
+      "B2": {
+        "title": "Trung cấp B2",
+        "description": "Từ vựng học thuật, công việc và diễn đạt sắc thái."
+      }
+    },
+    "certDecks": {
+      "ielts": {
+        "title": "IELTS Academic",
+        "description": "Từ vựng cốt lõi để luyện IELTS Academic.",
+        "meta": "Mục tiêu Band 6.5+"
+      },
+      "toeic": {
+        "title": "TOEIC 600+",
+        "description": "Từ vựng công sở, văn phòng và giao tiếp doanh nghiệp.",
+        "meta": "Mục tiêu 600+"
+      },
+      "business": {
+        "title": "Business English",
+        "description": "Từ vựng họp, thương lượng, thuyết trình và email công việc.",
+        "meta": "Bộ thẻ mới"
+      },
+      "toefl": {
+        "title": "TOEFL iBT",
+        "description": "Từ vựng học thuật cho các nhiệm vụ tiếng Anh bậc đại học.",
+        "meta": "Mở sau"
+      }
+    },
+    "topicDecks": {
+      "travel": {
+        "title": "Travel & Transport",
+        "description": "Từ vựng sân bay, khách sạn, chỉ đường, phương tiện và kế hoạch du lịch.",
+        "meta": "Bộ du lịch"
+      },
+      "food": {
+        "title": "Food & Dining",
+        "description": "Từ vựng nhà hàng, nguyên liệu, nấu ăn và gọi món.",
+        "meta": "Bộ ẩm thực"
+      },
+      "health": {
+        "title": "Health & Body",
+        "description": "Từ vựng cơ thể, triệu chứng, lịch khám và chăm sóc sức khỏe cơ bản.",
+        "meta": "Cần chú ý"
+      },
+      "technology": {
+        "title": "Technology",
+        "description": "Từ vựng thiết bị, phần mềm, internet và giao tiếp số.",
+        "meta": "Bộ công nghệ"
+      }
+    },
     "dueReview": "Ôn đến hạn",
     "dueReviewDescription": "Các từ cần ôn trong hôm nay.",
     "savedWords": "Từ đã lưu",
