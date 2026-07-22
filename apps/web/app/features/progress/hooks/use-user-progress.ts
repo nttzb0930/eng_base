@@ -11,6 +11,7 @@ export const progressKeys = {
   user: ["progress", "user"] as const,
   course: ["progress", "course"] as const,
   lessonPercentage: ["progress", "lesson-percentage"] as const,
+  cefrLevels: ["progress", "cefr-levels"] as const,
 };
 
 export function useUserProgress(enabled = true) {
@@ -35,6 +36,15 @@ export function useLessonPercentage(enabled = true) {
   return useQuery({
     queryKey: progressKeys.lessonPercentage,
     queryFn: progressApi.getLessonPercentage,
+    enabled,
+    staleTime: 5 * 60 * 1000,
+  });
+}
+
+export function useCefrLevelProgress(enabled = true) {
+  return useQuery({
+    queryKey: progressKeys.cefrLevels,
+    queryFn: progressApi.getCefrLevels,
     enabled,
     staleTime: 5 * 60 * 1000,
   });
