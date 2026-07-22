@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Plus, Edit2, Trash2, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { CEFR_LEVELS, type CefrLevel } from "@repo/shared";
 
 import type { CourseUnitViewModel as Unit } from "@/app/features/courses/types/course-management.types";
 import { useTableControls } from "@/app/hooks/use-table-controls";
@@ -60,6 +61,7 @@ export function UnitsManagementScreen() {
   const [description, setDescription] = useState("");
   const [courseId, setCourseId] = useState("");
   const [order, setOrder] = useState(1);
+  const [cefrLevel, setCefrLevel] = useState<"none" | CefrLevel>("none");
   const createMutation = useCreateUnit();
   const updateMutation = useUpdateUnit(activeId);
   const deleteMutation = useDeleteUnit();
@@ -72,6 +74,7 @@ export function UnitsManagementScreen() {
     setDescription("");
     setCourseId(courses[0]?.id?.toString() || "");
     setOrder(1);
+    setCefrLevel("none");
     setIsOpen(true);
   };
   const handleOpenEdit = (u: Unit) => {
@@ -81,6 +84,7 @@ export function UnitsManagementScreen() {
     setDescription(u.description);
     setCourseId(u.courseId.toString());
     setOrder(u.order);
+    setCefrLevel(u.cefrLevel ?? "none");
     setIsOpen(true);
   };
   const handleDelete = async (id: number) => {
@@ -95,7 +99,13 @@ export function UnitsManagementScreen() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const body = { title, description, courseId: parseInt(courseId), order };
+      const body = {
+        title,
+        description,
+        courseId: parseInt(courseId),
+        order,
+        cefrLevel: cefrLevel === "none" ? null : cefrLevel,
+      };
       if (isEdit && activeId !== null) await updateMutation.mutateAsync(body);
       else await createMutation.mutateAsync(body);
       toast.success(isEdit ? "Cập nhật thành công" : "Tạo thành công");
@@ -131,6 +141,15 @@ export function UnitsManagementScreen() {
       cell: (i) => (
         <span className="text-sm text-zinc-700">
           {i.courses?.title || `ID: ${i.courseId}`}
+        </span>
+      ),
+    },
+    {
+      header: "CEFR",
+      className: "w-20 text-center",
+      cell: (i) => (
+        <span className="inline-flex min-w-9 justify-center rounded-md bg-zinc-100 px-2 py-1 text-xs font-bold text-zinc-700">
+          {i.cefrLevel ?? "—"}
         </span>
       ),
     },
@@ -236,8 +255,8 @@ export function UnitsManagementScreen() {
                 className="border-zinc-200 bg-white"
               />
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="space-y-2 sm:col-span-2">
                 <Label className="text-sm font-semibold text-zinc-700">
                   Khóa học
                 </Label>
@@ -249,6 +268,29 @@ export function UnitsManagementScreen() {
                     {courses.map((c) => (
                       <SelectItem key={c.id} value={c.id.toString()}>
                         {c.title}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label className="text-sm font-semibold text-zinc-700">
+                  Trình độ CEFR
+                </Label>
+                <Select
+                  value={cefrLevel}
+                  onValueChange={(value) =>
+                    setCefrLevel(value as "none" | CefrLevel)
+                  }
+                >
+                  <SelectTrigger className="border-zinc-200 bg-white">
+                    <SelectValue placeholder="Chọn trình độ" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="none">Không gán</SelectItem>
+                    {CEFR_LEVELS.map((level) => (
+                      <SelectItem key={level} value={level}>
+                        {level}
                       </SelectItem>
                     ))}
                   </SelectContent>

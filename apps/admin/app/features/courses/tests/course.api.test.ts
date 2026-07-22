@@ -68,9 +68,16 @@ const cases = [
       description: "A1",
       courseId: 1,
       order: 1,
+      cefrLevel: "A1",
     },
-    createBody: { title: "Basics", description: "A1", courseId: 1, order: 1 },
-    updateBody: { order: 2 },
+    createBody: {
+      title: "Basics",
+      description: "A1",
+      courseId: 1,
+      order: 1,
+      cefrLevel: "A1",
+    },
+    updateBody: { order: 2, cefrLevel: null },
     createApi: createUnitApi,
   },
   {
