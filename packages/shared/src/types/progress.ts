@@ -1,3 +1,4 @@
+import type { CefrLevel } from "../constants/cefr.js";
 import type { Course } from "./course.js";
 import type { LessonWithUnit } from "./learning.js";
 
@@ -23,4 +24,19 @@ export type UserProgress = {
 export type CourseProgress = {
   activeLesson?: LessonWithUnit;
   activeLessonId?: number;
+};
+
+export type CefrLevelProgress = {
+  level: CefrLevel;
+  totalWords: number;
+  learnedWords: number;
+  masteredWords: number;
+  completedLessons: number;
+  totalLessons: number;
+  unlocked: boolean;
+};
+
+export type CefrProgressSummary = {
+  totalWords: number;
+  levels: CefrLevelProgress[];
 };

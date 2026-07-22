@@ -49,6 +49,7 @@ test("persistence mappers expose the existing camelCase course-management contra
     description: "Start here",
     courseId: 1,
     order: 3,
+    cefrLevel: "A1",
   } satisfies CourseUnit;
   assert.deepEqual(
     mapUnit({
@@ -57,6 +58,7 @@ test("persistence mappers expose the existing camelCase course-management contra
       description: "Start here",
       course_id: 1,
       order: 3,
+      cefr_level: "A1",
     } as Parameters<typeof mapUnit>[0]),
     expectedUnit
   );
@@ -142,15 +144,18 @@ test("write mappers preserve the existing snake_case persistence seam", () => {
       description: "Start here",
       courseId: 1,
       order: 2,
+      cefrLevel: "A1",
     }),
     {
       title: "Basics",
       description: "Start here",
       course_id: 1,
       order: 2,
+      cefr_level: "A1",
     }
   );
   assert.deepEqual(toUnitData({ courseId: 3 }), { course_id: 3 });
+  assert.deepEqual(toUnitData({ cefrLevel: null }), { cefr_level: null });
   assert.deepEqual(
     toLessonCreateData({ title: "Greetings", unitId: 2, order: 1 }),
     { title: "Greetings", unit_id: 2, order: 1 }

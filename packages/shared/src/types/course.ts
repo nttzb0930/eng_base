@@ -2,6 +2,7 @@ import {
   LESSON_CHALLENGE_DIRECTIONS,
   LESSON_CHALLENGE_TYPES,
 } from "../constants/course.js";
+import type { CefrLevel } from "../constants/cefr.js";
 import type { PaginatedResponse } from "./common.js";
 
 export type LessonChallengeType = (typeof LESSON_CHALLENGE_TYPES)[number];
@@ -21,6 +22,7 @@ export type CourseUnit = {
   description: string;
   courseId: number;
   order: number;
+  cefrLevel: CefrLevel | null;
 };
 
 export type CourseLesson = {

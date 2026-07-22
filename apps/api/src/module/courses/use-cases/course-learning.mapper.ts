@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import type {
+  CefrLevel,
   Challenge,
   ChallengeProgress,
   Course,
@@ -76,6 +77,7 @@ export class CourseLearningMapper {
       description: unit.description,
       courseId: unit.course_id,
       order: unit.order,
+      cefrLevel: unit.cefr_level as CefrLevel | null,
     };
   }
 

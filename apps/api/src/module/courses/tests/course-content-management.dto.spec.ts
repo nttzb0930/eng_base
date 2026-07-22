@@ -5,7 +5,41 @@ import { validate } from "class-validator";
 import {
   ChallengeCreateDto,
   ChallengeOptionCreateDto,
+  UnitCreateDto,
+  UnitUpdateDto,
 } from "../dto/course-content-management.dto";
+
+test("Unit creation requires an explicit nullable CEFR level", async () => {
+  const missing = Object.assign(new UnitCreateDto(), {
+    title: "Basics",
+    description: "Start here",
+    courseId: 1,
+    order: 1,
+  });
+  assert.equal(
+    (await validate(missing)).some((error) => error.property === "cefrLevel"),
+    true
+  );
+
+  const cleared = Object.assign(missing, { cefrLevel: null });
+  assert.deepEqual(await validate(cleared), []);
+});
+
+test("Unit DTO accepts supported and explicitly cleared CEFR levels", async () => {
+  const valid = Object.assign(new UnitUpdateDto(), { cefrLevel: "B2" });
+  assert.deepEqual(await validate(valid), []);
+
+  const cleared = Object.assign(new UnitUpdateDto(), { cefrLevel: null });
+  assert.deepEqual(await validate(cleared), []);
+});
+
+test("Unit DTO rejects unsupported CEFR levels", async () => {
+  const invalid = Object.assign(new UnitUpdateDto(), { cefrLevel: "C1" });
+  assert.equal(
+    (await validate(invalid)).some((error) => error.property === "cefrLevel"),
+    true
+  );
+});
 
 test("challenge DTO preserves optional-nullable request fields", async () => {
   const dto = Object.assign(new ChallengeCreateDto(), {
