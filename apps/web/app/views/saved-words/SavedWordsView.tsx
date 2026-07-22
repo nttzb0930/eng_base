@@ -1,6 +1,6 @@
 "use client";
 
-import { BookmarkCheck, CalendarClock, Layers3 } from "lucide-react";
+import { Bookmark, BookmarkCheck, CalendarClock, Layers3 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { SavedWordsPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
@@ -23,8 +23,9 @@ export function SavedWordsView() {
   return (
     <div className="pb-12">
       <header className="mb-7 max-w-3xl">
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.14em] text-primary">
-          {t("eyebrow")}
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-2">
+          <Bookmark className="h-4 w-4" />
+          <span>{t("eyebrow")}</span>
         </p>
         <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {t("title")}

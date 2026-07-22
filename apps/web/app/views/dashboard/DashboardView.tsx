@@ -12,6 +12,7 @@ import {
   Heart,
   AlertTriangle,
   Target,
+  LayoutDashboard,
 } from "lucide-react";
 
 import { DashboardPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
@@ -105,7 +106,10 @@ export function DashboardView() {
         <FeedWrapper>
           <div className="flex w-full flex-col pb-12">
             <header className="mb-7 max-w-2xl">
-              <p className="eyebrow">{t("eyebrow")}</p>
+              <p className="eyebrow text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider text-xs uppercase inline-flex items-center gap-2">
+                <LayoutDashboard className="h-4 w-4" />
+                <span>{t("eyebrow")}</span>
+              </p>
               <h1 className="text-foreground mt-2 text-3xl font-semibold sm:text-4xl">
                 {t("title")}
               </h1>

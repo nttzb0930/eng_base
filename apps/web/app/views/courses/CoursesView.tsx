@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, ChevronLeft, Lock, Plus } from "lucide-react";
+import { ArrowRight, ChevronLeft, GraduationCap, Lock, Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { CoursesPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
@@ -48,7 +48,10 @@ export function CoursesView({ onSelectMode }: CoursesViewProps) {
         </div>
 
         <header className="mb-7 max-w-2xl">
-          <p className="eyebrow text-emerald-600 dark:text-emerald-400 font-medium tracking-wider text-xs uppercase">— {t("exploreByCert")}</p>
+          <p className="eyebrow text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider text-xs uppercase inline-flex items-center gap-2">
+            <GraduationCap className="h-4 w-4" />
+            <span>{t("exploreByCert")}</span>
+          </p>
           <h1 className="mt-2.5 text-3xl font-semibold text-foreground tracking-tight sm:text-4xl">
             {t("certTitle")}
           </h1>
