@@ -20,17 +20,17 @@ Learner, nghiệp vụ API và dữ liệu cần thiết đã kết nối end-to
 
 ## Tổng quan nhanh
 
-| Mục  | Tính năng             | Trạng thái hiện tại        | Hướng tiếp theo                                                          |
-| ---- | --------------------- | -------------------------- | ------------------------------------------------------------------------ |
-| 6.1  | Học từ vựng theo CEFR | **Đã triển khai một phần** | Chuẩn hóa tiến độ thật A1–B2; chỉ mở C1–C2 khi catalog hỗ trợ.           |
-| 6.2  | Hỗ trợ Anh - Việt     | **Đã triển khai**          | Hoàn thiện độ phủ bản dịch và loại bỏ chuỗi JSX chưa qua i18n.           |
-| 6.3  | Quiz hai chiều        | **Đã triển khai**          | Mở rộng coverage và analytics theo từng hướng.                           |
-| 6.5  | Đáp án nhiễu          | **Đã triển khai một phần** | Đưa Topic practice về backend và nâng chất lượng distractor.             |
-| 6.6  | Reading theo level    | **Chưa triển khai**        | Xây capability Reading dựa trên CEFR, passage và comprehension question. |
-| 6.7  | AI sửa Writing        | **Chưa triển khai**        | Xây Writing workflow và AI feedback có cấu trúc.                         |
-| 6.8  | Audio phát âm         | **Đã triển khai**          | Kiểm soát coverage, fallback và chất lượng audio.                        |
-| 6.9  | Ôn tập cá nhân hóa    | **Đã triển khai một phần** | Phát triển từ scheduler theo luật sang kế hoạch thích ứng theo mục tiêu. |
-| 6.10 | AI Learning Assistant | **Chưa triển khai**        | Xây assistant có grounding từ course, vocabulary và learner progress.    |
+| Mục  | Tính năng             | Trạng thái hiện tại        | Hướng tiếp theo                                                                 |
+| ---- | --------------------- | -------------------------- | ------------------------------------------------------------------------------- |
+| 6.1  | Học từ vựng theo CEFR | **Đã triển khai một phần** | Mở rộng dữ liệu thật sang Topics/Flashcards; chỉ thêm C1–C2 khi catalog hỗ trợ. |
+| 6.2  | Hỗ trợ Anh - Việt     | **Đã triển khai**          | Hoàn thiện độ phủ bản dịch và loại bỏ chuỗi JSX chưa qua i18n.                  |
+| 6.3  | Quiz hai chiều        | **Đã triển khai**          | Mở rộng coverage và analytics theo từng hướng.                                  |
+| 6.5  | Đáp án nhiễu          | **Đã triển khai một phần** | Đưa Topic practice về backend và nâng chất lượng distractor.                    |
+| 6.6  | Reading theo level    | **Chưa triển khai**        | Xây capability Reading dựa trên CEFR, passage và comprehension question.        |
+| 6.7  | AI sửa Writing        | **Chưa triển khai**        | Xây Writing workflow và AI feedback có cấu trúc.                                |
+| 6.8  | Audio phát âm         | **Đã triển khai**          | Kiểm soát coverage, fallback và chất lượng audio.                               |
+| 6.9  | Ôn tập cá nhân hóa    | **Đã triển khai một phần** | Phát triển từ scheduler theo luật sang kế hoạch thích ứng theo mục tiêu.        |
+| 6.10 | AI Learning Assistant | **Chưa triển khai**        | Xây assistant có grounding từ course, vocabulary và learner progress.           |
 
 Mục **6.4** không nằm trong danh sách yêu cầu hiện tại nên được giữ trống để
 không tự suy diễn thêm phạm vi sản phẩm.
@@ -75,26 +75,36 @@ danh sách từ không phân tầng.
 - Flashcard hỗ trợ deck theo A1–B2.
 - Dashboard tổng hợp total, learned, mastered, accuracy và due theo level.
 - Topic detail có thể lọc vocabulary theo level.
+- Unit sở hữu `cefr_level` nullable rõ ràng; migration backfill A1–B2 theo dữ
+  liệu Course hiện tại, có guard, constraint và index. Admin có thể gán hoặc
+  bỏ gán CEFR khi quản lý Unit.
+- `GET /progress/cefr-levels` tổng hợp `totalWords`, `learnedWords`,
+  `masteredWords`, `completedLessons`, `totalLessons` và `unlocked` cho đúng
+  user đang đăng nhập.
+- Backend luôn mở A1, mở level Placement đã xác nhận cùng các level thấp hơn,
+  và mở level tiếp theo khi level trước có catalog khác rỗng đạt ít nhất 80%
+  mastered words.
+- Learn và Learn Level chỉ render A1–B2 từ summary backend, liên kết Unit qua
+  field persisted, dùng Dashboard cho overview và có skeleton/error/empty state
+  riêng. UI không còn suy từ Unit title/order hoặc dùng số liệu CEFR mẫu.
 
 ### Giới hạn hiện tại
 
-- Một số màn hình đang hiển thị C1/C2, tổng số từ, phần trăm và trạng thái khóa
-  bằng dữ liệu hard-code; Shared và các query runtime mới hỗ trợ A1–B2.
-- `LearnLevelView` còn suy ra số từ đã học bằng số lesson hoàn thành nhân với
-  một hằng số, không phải vocabulary progress thật.
-- Quy tắc mở khóa “đạt 80% level trước” mới xuất hiện trong UI, chưa phải một
-  invariant do backend sở hữu.
-- Course Unit và CEFR level hiện liên hệ qua title/order thay vì một field level
-  rõ ràng.
+- Migration Unit CEFR đã được version hóa nhưng chưa được chạy trong quá trình
+  triển khai feature; môi trường đích phải áp dụng migration theo deployment
+  workflow trước khi dùng endpoint mới.
+- Một số Topic và Flashcard UI vẫn còn presentation state hoặc số liệu
+  hard-code; chúng chưa được tính là tiến độ CEFR chuẩn hóa.
+- Catalog chính thức mới có A1–B2; chưa có dữ liệu C1/C2 đã review.
 
 ### Hướng tiếp tục
 
-1. Giữ A1–B2 là phạm vi chính thức cho đến khi catalog có C1/C2 đã được review.
-2. Mở rộng learner level summary với `totalWords`, `learnedWords`,
-   `masteredWords`, `completedLessons`, `totalLessons` và `unlocked`.
-3. Đưa unlock policy về Courses/Progress capability; UI chỉ render kết quả.
-4. Thay toàn bộ số fallback trên `/learn` và `/learn/level` bằng dữ liệu thật.
-5. Bổ sung test cho level mapping, unlock policy và progression qua nhiều Unit.
+1. Áp dụng migration bằng deployment workflow đã được review; không dùng
+   `db:push` hoặc backfill ad hoc.
+2. Thay hard-code còn lại trong Topic/Flashcard bằng vocabulary progress thật.
+3. Bổ sung integration coverage cho Course có nhiều Unit cùng CEFR và learner
+   chuyển active Course.
+4. Giữ A1–B2 là phạm vi chính thức cho đến khi catalog có C1/C2 đã được review.
 
 ### Tiêu chí hoàn thành
 
@@ -125,8 +135,9 @@ giao diện hệ thống bằng tiếng Việt hoặc tiếng Anh.
 
 ### Giới hạn hiện tại
 
-- Một số chuỗi tiếng Việt vẫn viết trực tiếp trong JSX, đặc biệt ở Learn Level,
-  Flashcards và Topic Detail.
+- Một số chuỗi tiếng Việt vẫn viết trực tiếp trong JSX, đặc biệt ở Flashcards
+  và Topic Detail. Copy được chạm tới trong Learn/Learn Level đã có key Anh -
+  Việt tương ứng.
 - Một số example translation có thể là `null` trong dữ liệu chưa enrich đủ.
 - Nội dung domain do Admin nhập chưa có workflow bắt buộc đủ cả hai locale.
 
@@ -491,7 +502,11 @@ biến câu trả lời model thành learner progress nếu chưa có hành đ�
 
 ### Giai đoạn 1 — Làm sạch dữ liệu thật đang có
 
-- thay hard-code ở Learn, Learn Level, Topics và Flashcards;
+- đã thay hard-code CEFR ở Learn/Learn Level bằng Dashboard và CEFR summary
+  backend;
+- đã persist Unit CEFR, thêm Admin management và đưa quy tắc mastery 80% về
+  backend;
+- tiếp tục thay hard-code ở Topics và Flashcards;
 - đưa Topic Practice challenge generation về backend;
 - hoàn thiện i18n Anh - Việt;
 - thêm validation cho onboarding language/goal/intensity;
