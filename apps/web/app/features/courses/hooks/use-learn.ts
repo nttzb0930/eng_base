@@ -1,45 +1,38 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import type { CourseProgress, UnitWithLessons } from "@repo/shared";
+import type { CefrLevel, CourseProgress, UnitWithLessons } from "@repo/shared";
 
 type UseLearnProps = {
   units: UnitWithLessons[];
   courseProgress: CourseProgress;
+  unlockedLevels: ReadonlySet<CefrLevel>;
   unitParam?: string;
 };
 
-const CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
-type CefrLevel = (typeof CEFR_LEVELS)[number];
-
-export const getCefrLevel = (title: string): CefrLevel | null => {
-  const level = title.split(" ")[0];
-  return CEFR_LEVELS.includes(level as CefrLevel) ? (level as CefrLevel) : null;
-};
-
-export function useLearn({ units, courseProgress, unitParam }: UseLearnProps) {
+export function useLearn({
+  units,
+  courseProgress,
+  unlockedLevels,
+  unitParam,
+}: UseLearnProps) {
   const t = useTranslations("learn");
 
-  const unlockedUnitIds = new Set<number>();
-  let previousUnitsCompleted = true;
-
-  for (const unitItem of units) {
-    if (previousUnitsCompleted) {
-      unlockedUnitIds.add(unitItem.id);
-    }
-
-    const unitCompleted =
-      unitItem.lessons.length > 0 &&
-      unitItem.lessons.every((lesson) => lesson.completed);
-
-    previousUnitsCompleted = previousUnitsCompleted && unitCompleted;
-  }
+  const unlockedUnitIds = new Set(
+    units
+      .filter(
+        (unitItem) =>
+          unitItem.cefrLevel !== null && unlockedLevels.has(unitItem.cefrLevel)
+      )
+      .map((unitItem) => unitItem.id)
+  );
 
   const requestedUnitId = unitParam ? Number(unitParam) : undefined;
   const requestedUnitIsUnlocked =
     requestedUnitId !== undefined && unlockedUnitIds.has(requestedUnitId);
   const fallbackUnitId =
-    courseProgress.activeLesson?.unitId && unlockedUnitIds.has(courseProgress.activeLesson.unitId)
+    courseProgress.activeLesson?.unitId &&
+    unlockedUnitIds.has(courseProgress.activeLesson.unitId)
       ? courseProgress.activeLesson.unitId
       : units.find((unitItem) => unlockedUnitIds.has(unitItem.id))?.id;
   const activeUnitId = requestedUnitIsUnlocked
@@ -52,6 +45,5 @@ export function useLearn({ units, courseProgress, unitParam }: UseLearnProps) {
     unlockedUnitIds,
     activeUnitId,
     selectedUnit,
-    getCefrLevel,
   };
 }
