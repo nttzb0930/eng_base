@@ -8,6 +8,7 @@ import {
   ArrowRight,
   BookOpenText,
   Check,
+  Dumbbell,
   Headphones,
   Keyboard,
   Play,
@@ -147,7 +148,10 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
     <FeedWrapper>
       <div className="pb-12">
         <header className="mb-8 max-w-3xl">
-          <p className="eyebrow">{t("eyebrow")}</p>
+          <p className="eyebrow text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider text-xs uppercase inline-flex items-center gap-2">
+            <Dumbbell className="h-4 w-4" />
+            <span>{t("eyebrow")}</span>
+          </p>
           <h1 className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">
             {t("title")}
           </h1>

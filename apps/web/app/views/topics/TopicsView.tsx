@@ -9,6 +9,7 @@ import {
   Car,
   ChevronLeft,
   CloudSun,
+  Compass,
   Dumbbell,
   Eye,
   Flame,
@@ -213,8 +214,9 @@ export function TopicsView({ onSelectMode }: TopicsViewProps) {
 
         {/* Header */}
         <header className="mb-7 max-w-2xl">
-          <p className="eyebrow text-orange-600 dark:text-orange-400 font-medium tracking-wider text-xs uppercase">
-            — {t("exploreByTopic")}
+          <p className="eyebrow text-orange-600 dark:text-orange-400 font-semibold tracking-wider text-xs uppercase inline-flex items-center gap-2">
+            <Compass className="h-4 w-4" />
+            <span>{t("exploreByTopic")}</span>
           </p>
           <h1 className="mt-2.5 text-3xl font-semibold text-foreground tracking-tight sm:text-4xl">
             {t("title")}

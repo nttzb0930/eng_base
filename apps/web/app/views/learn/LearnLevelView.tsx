@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronUp, Lock, Play } from "lucide-react";
+import { ChevronLeft, ChevronUp, Layers, Lock, Play } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
@@ -118,7 +118,10 @@ export function LearnLevelView({ onSelectMode }: LearnLevelViewProps) {
 
         {/* Header */}
         <header className="mb-7 max-w-2xl">
-          <p className="eyebrow text-blue-600 dark:text-blue-400 font-medium tracking-wider text-xs uppercase">— {topicsT("exploreByLevel")}</p>
+          <p className="eyebrow text-blue-600 dark:text-blue-400 font-semibold tracking-wider text-xs uppercase inline-flex items-center gap-2">
+            <Layers className="h-4 w-4" />
+            <span>{topicsT("exploreByLevel")}</span>
+          </p>
           <h1 className="mt-2.5 text-3xl font-semibold text-foreground tracking-tight sm:text-4xl">
             {topicsT("levelTitle")}
           </h1>
