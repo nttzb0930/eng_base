@@ -13,7 +13,7 @@ import type {
 const NOW = new Date("2026-07-24T00:00:00.000Z");
 
 const createProgress = (
-  overrides: Partial<UserVocabularyProgress> = {},
+  overrides: Partial<UserVocabularyProgress> = {}
 ): UserVocabularyProgress => ({
   id: 1,
   userId: "learner-1",
@@ -34,7 +34,7 @@ const createProgress = (
 
 const createItem = (
   id: number,
-  progress?: UserVocabularyProgress,
+  progress?: UserVocabularyProgress
 ): VocabularyItem => ({
   id,
   word: `word-${id}`,
@@ -72,10 +72,7 @@ test("unreviewed vocabulary is unlearned only", () => {
 });
 
 test("reviewed non-mastered vocabulary is learning", () => {
-  const state = getVocabularyLearnerState(
-    createItem(1, createProgress()),
-    NOW,
-  );
+  const state = getVocabularyLearnerState(createItem(1, createProgress()), NOW);
 
   assert.equal(state.learned, true);
   assert.equal(state.learning, true);
@@ -90,9 +87,9 @@ test("mastered vocabulary remains mastered when due", () => {
       createProgress({
         masteryLevel: "mastered",
         nextReviewAt: new Date("2026-07-24T00:00:00.000Z"),
-      }),
+      })
     ),
-    NOW,
+    NOW
   );
 
   assert.equal(state.mastered, true);
@@ -103,7 +100,7 @@ test("mastered vocabulary remains mastered when due", () => {
 test("wrong reviewed vocabulary is weak", () => {
   const state = getVocabularyLearnerState(
     createItem(1, createProgress({ wrongCount: 1 })),
-    NOW,
+    NOW
   );
 
   assert.equal(state.weak, true);
@@ -111,16 +108,13 @@ test("wrong reviewed vocabulary is weak", () => {
 });
 
 test("null or expired next review is due after a review", () => {
-  const nullSchedule = createItem(
-    1,
-    createProgress({ nextReviewAt: null }),
-  );
+  const nullSchedule = createItem(1, createProgress({ nextReviewAt: null }));
   const expiredSchedule = createItem(
     2,
     createProgress({
       vocabularyItemId: 2,
       nextReviewAt: new Date("2026-07-23T23:59:59.000Z"),
-    }),
+    })
   );
 
   assert.equal(getVocabularyLearnerState(nullSchedule, NOW).due, true);
@@ -137,7 +131,7 @@ test("reordering items preserves every aggregate count", () => {
         vocabularyItemId: 3,
         masteryLevel: "mastered",
         nextReviewAt: null,
-      }),
+      })
     ),
   ];
 
@@ -154,6 +148,6 @@ test("reordering items preserves every aggregate count", () => {
   assert.deepEqual(summarizeVocabularyLearnerStates(items, NOW), expected);
   assert.deepEqual(
     summarizeVocabularyLearnerStates([...items].reverse(), NOW),
-    expected,
+    expected
   );
 });

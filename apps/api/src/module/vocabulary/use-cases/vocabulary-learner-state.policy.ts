@@ -7,7 +7,7 @@ import type { VocabularyItem } from "../types/vocabulary.types";
 
 export const getVocabularyLearnerState = (
   item: VocabularyItem,
-  now: Date,
+  now: Date
 ): VocabularyLearnerState => {
   const progress = item.userVocabularyProgress[0] ?? null;
   const learned = (progress?.reviewCount ?? 0) > 0;
@@ -31,7 +31,7 @@ export const getVocabularyLearnerState = (
 
 export const summarizeVocabularyLearnerStates = (
   items: readonly VocabularyItem[],
-  now: Date,
+  now: Date
 ): VocabularyTopicProgressStats =>
   items.reduce<VocabularyTopicProgressStats>(
     (stats, item) => {
@@ -54,5 +54,5 @@ export const summarizeVocabularyLearnerStates = (
       mastered: 0,
       weak: 0,
       due: 0,
-    },
+    }
   );

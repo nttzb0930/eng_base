@@ -79,7 +79,7 @@ test("Shared exposes the TypeScript-only root Interface", () => {
 test("Shared publishes the vocabulary learner progress contract", async () => {
   const declarations = await readFile(
     new URL("../dist/types/vocabulary.d.ts", import.meta.url),
-    "utf8",
+    "utf8"
   );
 
   assert.match(declarations, /export type VocabularyLearnerState =/);
