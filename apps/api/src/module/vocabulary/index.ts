@@ -1,6 +1,10 @@
 export { VocabularyModule } from "./vocabulary.module";
 export { GetSavedVocabularyWordsUseCase } from "./use-cases/get-saved-vocabulary-words.use-case";
 export {
+  getVocabularyLearnerState,
+  summarizeVocabularyLearnerStates,
+} from "./use-cases/vocabulary-learner-state.policy";
+export {
   getBlankedExample,
   getDistractors,
   toReviewSourceItem,

@@ -1,7 +1,12 @@
 import { Injectable } from "@nestjs/common";
 import { Prisma } from "@prisma/client";
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { mapVocabularyItem, type VocabularyItem } from "../../vocabulary";
+import {
+  getVocabularyLearnerState,
+  mapVocabularyItem,
+  summarizeVocabularyLearnerStates,
+  type VocabularyItem,
+} from "../../vocabulary";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";
 export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
@@ -99,13 +104,17 @@ export class TopicSource {
     const match = allTopics.find((t) => {
       const tSlugNorm = t.slug.toLowerCase().replace(/[^a-z0-9]/g, "");
       const tTitleNorm = t.title.toLowerCase().replace(/[^a-z0-9]/g, "");
-      const tTitleViNorm = (t.title_vi ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const tTitleViNorm = (t.title_vi ?? "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
 
       return (
         tSlugNorm === normalizedQuery ||
         tTitleNorm.includes(normalizedQuery) ||
         normalizedQuery.includes(tTitleNorm) ||
-        (tTitleViNorm && (tTitleViNorm.includes(normalizedQuery) || normalizedQuery.includes(tTitleViNorm)))
+        (tTitleViNorm &&
+          (tTitleViNorm.includes(normalizedQuery) ||
+            normalizedQuery.includes(tTitleViNorm)))
       );
     });
 
@@ -122,18 +131,14 @@ export class TopicSource {
     `;
   }
 
-  protected getTopicStats(items: VocabularyItem[]) {
-    const learned = items.filter(
-      (item) => item.userVocabularyProgress[0]?.reviewCount > 0
-    ).length;
-    const mastered = items.filter(
-      (item) => item.userVocabularyProgress[0]?.masteryLevel === "mastered"
-    ).length;
+  protected getTopicStats(items: VocabularyItem[], now: Date) {
+    return summarizeVocabularyLearnerStates(items, now);
+  }
 
+  protected withLearnerState(item: VocabularyItem, now: Date) {
     return {
-      total: items.length,
-      learned,
-      mastered,
+      ...item,
+      learnerState: getVocabularyLearnerState(item, now),
     };
   }
 

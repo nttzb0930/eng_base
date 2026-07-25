@@ -4,15 +4,11 @@ import type { VocabularyTopic } from "@repo/shared";
 
 type GroupModule = {
   groupVocabularyTopics?: (
-    topics: readonly VocabularyTopic[],
+    topics: readonly VocabularyTopic[]
   ) => Array<{ name: string; topics: VocabularyTopic[] }>;
 };
 
-const topic = (
-  id: number,
-  order: number,
-  group: string,
-): VocabularyTopic => ({
+const topic = (id: number, order: number, group: string): VocabularyTopic => ({
   id,
   slug: `topic-${id}`,
   title: `Topic ${id}`,
@@ -21,13 +17,17 @@ const topic = (
   order,
   total: 0,
   learned: 0,
+  learning: 0,
+  unlearned: 0,
   mastered: 0,
+  weak: 0,
+  due: 0,
 });
 
 async function loadGrouper() {
   return import("../utils/group-vocabulary-topics")
     .then((module) => module as GroupModule)
-    .catch(() => ({} as GroupModule));
+    .catch(() => ({}) as GroupModule);
 }
 
 test("topic groups follow first topic order and cards remain ordered", async () => {
@@ -49,7 +49,7 @@ test("topic groups follow first topic order and cards remain ordered", async () 
     [
       { name: "People", orders: [10] },
       { name: "Travel", orders: [20, 30] },
-    ],
+    ]
   );
 });
 
@@ -63,7 +63,10 @@ test("topic grouping does not mutate its input", async () => {
 
   groupVocabularyTopics(input);
 
-  assert.deepEqual(input.map((item) => item.id), before);
+  assert.deepEqual(
+    input.map((item) => item.id),
+    before
+  );
 });
 
 test("blank topic groups share the stable Other bucket", async () => {
@@ -71,11 +74,14 @@ test("blank topic groups share the stable Other bucket", async () => {
   assert.equal(typeof groupVocabularyTopics, "function");
   if (!groupVocabularyTopics) return;
 
-  const groups = groupVocabularyTopics([
-    topic(1, 1, ""),
-    topic(2, 2, "   "),
-  ]);
+  const groups = groupVocabularyTopics([topic(1, 1, ""), topic(2, 2, "   ")]);
 
-  assert.deepEqual(groups.map((group) => group.name), ["Other"]);
-  assert.deepEqual(groups[0]?.topics.map((item) => item.id), [1, 2]);
+  assert.deepEqual(
+    groups.map((group) => group.name),
+    ["Other"]
+  );
+  assert.deepEqual(
+    groups[0]?.topics.map((item) => item.id),
+    [1, 2]
+  );
 });
