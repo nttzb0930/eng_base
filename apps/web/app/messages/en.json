@@ -355,6 +355,12 @@
     "dictationEmptyDescription": "Run audio enrichment first, then come back to practice dictation{level}.",
     "noWeakWords": "No weak words yet.",
     "weakWordsEmptyDescription": "Keep practicing lessons. Words you miss or need to review will appear here.",
+    "topicLoadError": "Could not load this practice session.",
+    "topicLoadErrorDescription": "Check your connection and try again.",
+    "topicPracticeEmpty": "No words match this practice mode yet.",
+    "topicPracticeEmptyDescription": "Choose another mode or keep learning words in this topic.",
+    "tryAgain": "Try again",
+    "backToTopic": "Back to topic",
     "saveProgressError": "Could not save practice progress.",
     "saveReviewError": "Could not save review progress."
   },
