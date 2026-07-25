@@ -62,14 +62,17 @@ export type RandomSource = () => number;
 export class PracticeSource {
   constructor(
     protected readonly prisma: PrismaService,
-    protected readonly random: RandomSource = Math.random
+    protected readonly random: RandomSource = Math.random,
   ) {}
 
-  protected shuffle<T>(items: readonly T[]): T[] {
+  protected shuffle<T>(
+    items: readonly T[],
+    random: RandomSource = this.random,
+  ): T[] {
     const result = [...items];
 
     for (let index = result.length - 1; index > 0; index -= 1) {
-      const target = Math.floor(this.random() * (index + 1));
+      const target = Math.floor(random() * (index + 1));
       [result[index], result[target]] = [result[target], result[index]];
     }
 
@@ -112,7 +115,7 @@ export class PracticeSource {
   async getPracticeVocabularyItems(
     userId: string,
     level?: PracticeCefrLevel,
-    lessonNumber = 1
+    lessonNumber = 1,
   ) {
     const eligibleItems = await this.prisma.vocabulary_items.findMany({
       where: {
