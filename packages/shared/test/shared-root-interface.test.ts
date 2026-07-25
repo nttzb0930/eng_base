@@ -8,6 +8,7 @@ import {
   MAX_HEARTS,
   type Course,
   type CreateCoursePayload,
+  type FlashcardDeckSummary,
   type FlashcardSummary,
   type PaginatedCoursesResponse,
   type VocabularyLearnerState,
@@ -38,11 +39,30 @@ test("Shared exposes the TypeScript-only root Interface", () => {
       hasPrev: false,
     },
   };
+  const deck: FlashcardDeckSummary = {
+    key: "travel",
+    source: "topic",
+    total: 20,
+    learned: 8,
+    mastered: 3,
+    due: 4,
+    accuracy: 75,
+    lastReviewedAt: new Date("2026-07-24T00:00:00.000Z"),
+    available: true,
+  };
   const flashcards: FlashcardSummary = {
-    due: 0,
-    saved: 0,
-    weak: 0,
-    levels: { A1: 0, A2: 0, B1: 0, B2: 0 },
+    overview: {
+      due: 4,
+      saved: 6,
+      weak: 2,
+      learned: 8,
+      mastered: 3,
+      accuracy: 75,
+      lastReviewedAt: deck.lastReviewedAt,
+    },
+    systemDecks: [],
+    cefrDecks: [],
+    topicDecks: [deck],
   };
   const topicStats: VocabularyTopicProgressStats = {
     total: 1,
@@ -67,7 +87,7 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   assert.equal(course.title, payload.title);
   assert.equal(course.code, payload.code);
   assert.equal(page.data[0]?.imageSrc, "/en.svg");
-  assert.equal(flashcards.levels.A1, 0);
+  assert.equal(flashcards.topicDecks[0]?.key, "travel");
   assert.equal(topicStats.weak, 1);
   assert.equal(learnerState.due, true);
   assert.deepEqual(topicDetailsItems, []);
@@ -86,4 +106,16 @@ test("Shared publishes the vocabulary learner progress contract", async () => {
   assert.match(declarations, /export type VocabularyTopicProgressStats =/);
   assert.match(declarations, /learnerState: VocabularyLearnerState/);
   assert.match(declarations, /items: VocabularyTopicItem\[\]/);
+});
+
+test("Shared publishes Flashcard deck summary contracts", async () => {
+  const declarations = await readFile(
+    new URL("../dist/types/flashcard.d.ts", import.meta.url),
+    "utf8"
+  );
+
+  assert.match(declarations, /export type FlashcardDeckSource =/);
+  assert.match(declarations, /export type FlashcardDeckSummary =/);
+  assert.match(declarations, /overview:/);
+  assert.match(declarations, /topicDecks: FlashcardDeckSummary\[\]/);
 });
