@@ -1,8 +1,17 @@
-import { Body, Controller, Get, Post, Query, UseGuards } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  Post,
+  Query,
+  UseGuards,
+} from "@nestjs/common";
 
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { PracticeSessionResultInputDto } from "./dto/practice-session-result.dto";
+import { TopicPracticeQueryDto } from "./dto/topic-practice-query.dto";
 import { CreatePracticeSessionResultUseCase } from "./use-cases/create-practice-session-result.use-case";
 import { GetDictationPracticeChallengesUseCase } from "./use-cases/get-dictation-practice-challenges.use-case";
 import { GetDictationPracticeSummaryUseCase } from "./use-cases/get-dictation-practice-summary.use-case";
@@ -10,6 +19,7 @@ import { GetFillBlankPracticeChallengesUseCase } from "./use-cases/get-fill-blan
 import { GetFillBlankPracticeSummaryUseCase } from "./use-cases/get-fill-blank-practice-summary.use-case";
 import { GetListeningPracticeChallengesUseCase } from "./use-cases/get-listening-practice-challenges.use-case";
 import { GetListeningPracticeSummaryUseCase } from "./use-cases/get-listening-practice-summary.use-case";
+import { GetTopicPracticeChallengesUseCase } from "./use-cases/get-topic-practice-challenges.use-case";
 import { GetWeakWordsPracticeChallengesUseCase } from "./use-cases/get-weak-words-practice-challenges.use-case";
 import { GetWeakWordsPracticeSummaryUseCase } from "./use-cases/get-weak-words-practice-summary.use-case";
 
@@ -25,7 +35,8 @@ export class PracticeController {
     private readonly dictationChallenges: GetDictationPracticeChallengesUseCase,
     private readonly weakWordsSummary: GetWeakWordsPracticeSummaryUseCase,
     private readonly weakWordsChallenges: GetWeakWordsPracticeChallengesUseCase,
-    private readonly createSessionResult: CreatePracticeSessionResultUseCase
+    private readonly topicChallenges: GetTopicPracticeChallengesUseCase,
+    private readonly createSessionResult: CreatePracticeSessionResultUseCase,
   ) {}
 
   @Get("fill-blank/summary")
@@ -80,10 +91,19 @@ export class PracticeController {
     return this.weakWordsChallenges.execute(userId);
   }
 
+  @Get("topics/:slug/challenges")
+  getTopicChallenges(
+    @CurrentUserId() userId: string,
+    @Param("slug") slug: string,
+    @Query() query: TopicPracticeQueryDto,
+  ) {
+    return this.topicChallenges.execute(userId, slug, query.mode);
+  }
+
   @Post("sessions")
   createSession(
     @CurrentUserId() userId: string,
-    @Body() body: PracticeSessionResultInputDto
+    @Body() body: PracticeSessionResultInputDto,
   ) {
     return this.createSessionResult.execute(userId, body);
   }

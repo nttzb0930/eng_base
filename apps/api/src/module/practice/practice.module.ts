@@ -11,6 +11,7 @@ import { GetFillBlankPracticeChallengesUseCase } from "./use-cases/get-fill-blan
 import { GetFillBlankPracticeSummaryUseCase } from "./use-cases/get-fill-blank-practice-summary.use-case";
 import { GetListeningPracticeChallengesUseCase } from "./use-cases/get-listening-practice-challenges.use-case";
 import { GetListeningPracticeSummaryUseCase } from "./use-cases/get-listening-practice-summary.use-case";
+import { GetTopicPracticeChallengesUseCase } from "./use-cases/get-topic-practice-challenges.use-case";
 import { GetWeakWordsPracticeChallengesUseCase } from "./use-cases/get-weak-words-practice-challenges.use-case";
 import { GetWeakWordsPracticeSummaryUseCase } from "./use-cases/get-weak-words-practice-summary.use-case";
 import { ListAdminPracticeSessionsUseCase } from "./use-cases/list-admin-practice-sessions.use-case";
@@ -25,6 +26,7 @@ import { RemoveAdminPracticeSessionUseCase } from "./use-cases/remove-admin-prac
     GetListeningPracticeChallengesUseCase,
     GetDictationPracticeSummaryUseCase,
     GetDictationPracticeChallengesUseCase,
+    GetTopicPracticeChallengesUseCase,
     GetWeakWordsPracticeSummaryUseCase,
     GetWeakWordsPracticeChallengesUseCase,
     CreatePracticeSessionResultUseCase,

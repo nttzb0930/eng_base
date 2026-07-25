@@ -1,6 +1,7 @@
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import type { TopicPracticeMode } from "@repo/shared";
 
 import { dashboardKeys } from "@/app/features/dashboard/hooks/use-dashboard";
 import { reviewKeys } from "@/app/features/review/hooks/use-review";
@@ -27,6 +28,8 @@ export const practiceKeys = {
     ["practice", "dictation", "challenges", query ?? {}] as const,
   weakWordsSummary: ["practice", "weak-words", "summary"] as const,
   weakWordsChallenges: ["practice", "weak-words", "challenges"] as const,
+  topicChallenges: (slug: string, mode: TopicPracticeMode) =>
+    ["practice", "topics", slug, "challenges", mode] as const,
 };
 
 export function useFillBlankPracticeSummary() {
@@ -82,6 +85,17 @@ export function useWeakWordsPracticeChallenges() {
   return useQuery({
     queryKey: practiceKeys.weakWordsChallenges,
     queryFn: practiceApi.listWeakWordsChallenges,
+  });
+}
+
+export function useTopicPracticeChallenges(
+  slug: string,
+  mode: TopicPracticeMode,
+) {
+  return useQuery({
+    queryKey: practiceKeys.topicChallenges(slug, mode),
+    queryFn: () => practiceApi.listTopicChallenges(slug, mode),
+    enabled: Boolean(slug),
   });
 }
 

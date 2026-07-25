@@ -56,12 +56,27 @@ export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
 
 export const WEAK_WORDS_LIMIT = 20;
 
+export type RandomSource = () => number;
+
 @Injectable()
 export class PracticeSource {
-  constructor(protected readonly prisma: PrismaService) {}
+  constructor(
+    protected readonly prisma: PrismaService,
+    protected readonly random: RandomSource = Math.random,
+  ) {}
 
-  protected shuffle<T>(items: T[]): T[] {
-    return [...items].sort(() => Math.random() - 0.5);
+  protected shuffle<T>(
+    items: readonly T[],
+    random: RandomSource = this.random,
+  ): T[] {
+    const result = [...items];
+
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const target = Math.floor(random() * (index + 1));
+      [result[index], result[target]] = [result[target], result[index]];
+    }
+
+    return result;
   }
 
   protected isPracticeCefrLevel(value: string): value is PracticeCefrLevel {
@@ -100,7 +115,7 @@ export class PracticeSource {
   async getPracticeVocabularyItems(
     userId: string,
     level?: PracticeCefrLevel,
-    lessonNumber = 1
+    lessonNumber = 1,
   ) {
     const eligibleItems = await this.prisma.vocabulary_items.findMany({
       where: {

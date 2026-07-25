@@ -28,6 +28,7 @@ test("Practice resource preserves mode summary, challenges, and session routes",
   await api.listDictationChallenges({ level: "B1", lesson: 4 });
   await api.getWeakWordsSummary();
   await api.listWeakWordsChallenges();
+  await api.listTopicChallenges("travel & food", "weak");
   await api.recordSession({ mode: "fill_blank", items: [] });
 
   assert.deepEqual(requests, [
@@ -39,6 +40,10 @@ test("Practice resource preserves mode summary, challenges, and session routes",
     { method: "GET", path: "/practice/dictation/challenges?level=B1&lesson=4" },
     { method: "GET", path: "/practice/weak-words/summary" },
     { method: "GET", path: "/practice/weak-words/challenges" },
+    {
+      method: "GET",
+      path: "/practice/topics/travel%20%26%20food/challenges?mode=weak",
+    },
     {
       method: "POST",
       path: "/practice/sessions",
