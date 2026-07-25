@@ -1,10 +1,22 @@
 import { Injectable } from "@nestjs/common";
+import type { FlashcardSummary } from "@repo/shared";
+
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import {
+  getVocabularyLearnerState,
+  mapVocabularyItem,
+  type VocabularyItem,
+} from "../../vocabulary";
+import { summarizeFlashcardDeck } from "./flashcard-deck-summary.policy";
 import {
   FlashcardQuerySource,
   PRACTICE_CEFR_LEVELS,
-  type PracticeCefrLevel,
 } from "./flashcard-source";
+
+type TopicDeckGroup = {
+  order: number;
+  items: VocabularyItem[];
+};
 
 @Injectable()
 export class GetFlashcardDeckSummaryUseCase extends FlashcardQuerySource {
@@ -12,65 +24,104 @@ export class GetFlashcardDeckSummaryUseCase extends FlashcardQuerySource {
     super(prisma);
   }
 
-  async execute(userId: string) {
-    if (!userId) {
-      return {
-        due: 0,
-        saved: 0,
-        weak: 0,
-        levels: Object.fromEntries(
-          PRACTICE_CEFR_LEVELS.map((level) => [level, 0])
-        ) as Record<PracticeCefrLevel, number>,
-      };
-    }
-
-    const [saved, due, weak, ...levelCounts] = await Promise.all([
-      this.prisma.user_saved_words.count({
-        where: { user_id: userId },
-      }),
-      this.prisma.user_vocabulary_progress.count({
-        where: {
-          user_id: userId,
-          review_count: {
-            gt: 0,
-          },
-          OR: [
-            {
-              next_review_at: null,
+  async execute(
+    userId: string,
+    now: Date = new Date(),
+  ): Promise<FlashcardSummary> {
+    const rawItems = userId
+      ? await this.prisma.vocabulary_items.findMany({
+          orderBy: { id: "asc" },
+          include: {
+            user_saved_words: { where: { user_id: userId } },
+            user_vocabulary_progress: { where: { user_id: userId } },
+            vocabulary_examples: {
+              orderBy: [{ order: "asc" }, { id: "asc" }],
             },
-            {
-              next_review_at: {
-                lte: new Date(),
+            vocabulary_item_topics: {
+              include: {
+                vocabulary_topics: {
+                  select: { slug: true, order: true },
+                },
               },
             },
-          ],
-        },
-      }),
-      this.prisma.user_vocabulary_progress.count({
-        where: {
-          user_id: userId,
-          review_count: {
-            gt: 0,
           },
-          wrong_count: {
-            gt: 0,
-          },
-        },
-      }),
-      ...PRACTICE_CEFR_LEVELS.map((level) =>
-        this.prisma.vocabulary_items.count({
-          where: { cefr_level: level },
         })
+      : [];
+    const items = rawItems.map(mapVocabularyItem);
+    const dueItems = items.filter(
+      (item) => getVocabularyLearnerState(item, now).due,
+    );
+    const savedItems = items.filter(
+      (item) => item.userSavedWords.length > 0,
+    );
+    const weakItems = items.filter(
+      (item) => getVocabularyLearnerState(item, now).weak,
+    );
+    const dueDeck = summarizeFlashcardDeck("due", "due", dueItems, now);
+    const savedDeck = summarizeFlashcardDeck(
+      "saved",
+      "saved",
+      savedItems,
+      now,
+    );
+    const weakDeck = summarizeFlashcardDeck(
+      "weak",
+      "weak",
+      weakItems,
+      now,
+    );
+    const allDeck = summarizeFlashcardDeck("all", "cefr", items, now);
+    const cefrDecks = PRACTICE_CEFR_LEVELS.map((level) =>
+      summarizeFlashcardDeck(
+        level,
+        "cefr",
+        items.filter((item) => item.cefrLevel === level),
+        now,
       ),
-    ]);
+    );
+    const topicGroups = new Map<string, TopicDeckGroup>();
+
+    rawItems.forEach((rawItem, index) => {
+      const item = items[index];
+      if (!item) return;
+
+      for (const relation of rawItem.vocabulary_item_topics) {
+        const topic = relation.vocabulary_topics;
+        const group = topicGroups.get(topic.slug);
+
+        if (group) {
+          group.items.push(item);
+        } else {
+          topicGroups.set(topic.slug, {
+            order: topic.order,
+            items: [item],
+          });
+        }
+      }
+    });
+
+    const topicDecks = [...topicGroups.entries()]
+      .sort(
+        ([slugA, groupA], [slugB, groupB]) =>
+          groupA.order - groupB.order || slugA.localeCompare(slugB),
+      )
+      .map(([slug, group]) =>
+        summarizeFlashcardDeck(slug, "topic", group.items, now),
+      );
 
     return {
-      due,
-      saved,
-      weak,
-      levels: Object.fromEntries(
-        PRACTICE_CEFR_LEVELS.map((level, index) => [level, levelCounts[index]])
-      ) as Record<PracticeCefrLevel, number>,
+      overview: {
+        due: dueDeck.total,
+        saved: savedDeck.total,
+        weak: weakDeck.total,
+        learned: allDeck.learned,
+        mastered: allDeck.mastered,
+        accuracy: allDeck.accuracy,
+        lastReviewedAt: allDeck.lastReviewedAt,
+      },
+      systemDecks: [dueDeck, savedDeck, weakDeck],
+      cefrDecks,
+      topicDecks,
     };
   }
 }
