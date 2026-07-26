@@ -73,6 +73,10 @@ danh sách từ không phân tầng.
   xác nhận là hoàn thành.
 - Practice hỗ trợ chọn level cho fill-blank, listening và dictation.
 - Flashcard hỗ trợ deck theo A1–B2.
+- Flashcard summary trả overview, system deck, CEFR deck và Topic deck từ
+  vocabulary progress thật; accuracy không có attempt được trả về `null`.
+- Flashcard Topic session dùng identity rõ ràng
+  `source=topic&slug=<topic-slug>` và không fallback deck sai về `due`.
 - Dashboard tổng hợp total, learned, mastered, accuracy và due theo level.
 - Topic detail có thể lọc vocabulary theo level.
 - Unit sở hữu `cefr_level` nullable rõ ràng; migration backfill A1–B2 theo dữ
@@ -93,18 +97,15 @@ danh sách từ không phân tầng.
 - Migration Unit CEFR đã được version hóa nhưng chưa được chạy trong quá trình
   triển khai feature; môi trường đích phải áp dụng migration theo deployment
   workflow trước khi dùng endpoint mới.
-- Một số Topic và Flashcard UI vẫn còn presentation state hoặc số liệu
-  hard-code; chúng chưa được tính là tiến độ CEFR chuẩn hóa.
 - Catalog chính thức mới có A1–B2; chưa có dữ liệu C1/C2 đã review.
 
 ### Hướng tiếp tục
 
 1. Áp dụng migration bằng deployment workflow đã được review; không dùng
    `db:push` hoặc backfill ad hoc.
-2. Thay hard-code còn lại trong Topic/Flashcard bằng vocabulary progress thật.
-3. Bổ sung integration coverage cho Course có nhiều Unit cùng CEFR và learner
+2. Bổ sung integration coverage cho Course có nhiều Unit cùng CEFR và learner
    chuyển active Course.
-4. Giữ A1–B2 là phạm vi chính thức cho đến khi catalog có C1/C2 đã được review.
+3. Giữ A1–B2 là phạm vi chính thức cho đến khi catalog có C1/C2 đã được review.
 
 ### Tiêu chí hoàn thành
 
@@ -219,20 +220,11 @@ Tạo các lựa chọn sai đủ hợp lý để kiểm tra kiến thức thậ
 
 ### Giới hạn hiện tại
 
-- Topic Practice còn lấy ba phần tử ngẫu nhiên ngay trên client và chưa dùng
-  vocabulary challenge builder của backend.
 - Chưa có metric đo độ khó hoặc tỷ lệ distractor bị loại theo từng level.
-- Random sorting phù hợp với quy mô hiện tại nhưng chưa phải thuật toán shuffle
-  có kiểm soát cho session lớn.
 
 ### Hướng tiếp tục
 
-1. Thêm Topic Practice interface do Practice capability sở hữu, ví dụ
-   `GET /practice/topics/:slug/challenges?mode=weak|new|all`.
-2. Dùng Vocabulary challenge builder cho Topic Practice để có một policy duy
-   nhất.
-3. Bổ sung seedable Fisher–Yates shuffle cho test và session composition.
-4. Ghi diagnostic không chứa nội dung nhạy cảm về kích thước candidate pool và
+1. Ghi diagnostic không chứa nội dung nhạy cảm về kích thước candidate pool và
    fallback strategy.
 
 ### Tiêu chí hoàn thành
@@ -506,8 +498,8 @@ biến câu trả lời model thành learner progress nếu chưa có hành đ�
   backend;
 - đã persist Unit CEFR, thêm Admin management và đưa quy tắc mastery 80% về
   backend;
-- tiếp tục thay hard-code ở Topics và Flashcards;
-- đưa Topic Practice challenge generation về backend;
+- đã thay hard-code learner state ở Topics và Flashcards bằng progress backend;
+- đã đưa Topic Practice challenge generation về backend;
 - hoàn thiện i18n Anh - Việt;
 - thêm validation cho onboarding language/goal/intensity;
 - thống nhất CEFR A1–B2 trên Web, API và Shared.

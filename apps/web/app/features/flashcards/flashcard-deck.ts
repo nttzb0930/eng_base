@@ -1,14 +1,11 @@
 import type { PracticeCefrLevel } from "@repo/shared";
 
 export type FlashcardSource = "due" | "saved" | "weak";
-export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel | (string & {});
+export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel;
 
-export const normalizeFlashcardDeck = (
-  value?: string | null,
-): string => {
-  if (!value) return "due";
-  return value;
-};
+export type FlashcardSessionRequest =
+  | { deck: FlashcardDeckKey }
+  | { source: "topic"; slug: string };
 
 export const getFlashcardDeckTitle = (deck: FlashcardDeckKey) => {
   if (deck === "due") return "Due Review";

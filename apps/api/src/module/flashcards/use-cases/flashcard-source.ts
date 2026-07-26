@@ -1,5 +1,6 @@
-import { Injectable } from "@nestjs/common";
+import { BadRequestException, Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import type { FlashcardSessionQueryDto } from "../dto/flashcard-session-query.dto";
 import type {
   UserSavedWord,
   UserVocabularyProgress,
@@ -14,6 +15,12 @@ export const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
 export type PracticeCefrLevel = (typeof PRACTICE_CEFR_LEVELS)[number];
 
 export type FlashcardDeckKey = FlashcardSource | PracticeCefrLevel;
+
+export type FlashcardSessionTarget =
+  | { source: "legacy"; deck: FlashcardDeckKey }
+  | { source: "topic"; slug: string };
+
+export type RandomSource = () => number;
 
 export type RawFlashcardVocabularyItem = Awaited<
   ReturnType<FlashcardQuerySource["getFlashcardVocabularyItems"]>
@@ -33,19 +40,54 @@ export class FlashcardQuerySource {
     return value === "due" || value === "saved" || value === "weak";
   }
 
-  protected normalizeFlashcardDeck(value?: string | null): FlashcardDeckKey {
+  protected parseFlashcardDeck(value?: string | null): FlashcardDeckKey {
     if (!value) return "due" as const;
     if (this.isFlashcardSource(value)) return value;
     if (this.isPracticeCefrLevel(value)) return value;
-    return "due" as const;
+    throw new BadRequestException("INVALID_FLASHCARD_DECK");
   }
 
-  protected shuffle<T>(items: T[]): T[] {
-    return [...items].sort(() => Math.random() - 0.5);
+  protected parseFlashcardSessionQuery(
+    query: FlashcardSessionQueryDto,
+  ): FlashcardSessionTarget {
+    const deck = query.deck?.trim();
+    const slug = query.slug?.trim();
+
+    if (deck && (query.source || slug)) {
+      throw new BadRequestException("INVALID_FLASHCARD_SESSION_QUERY");
+    }
+
+    if (query.source === "topic") {
+      if (!slug) {
+        throw new BadRequestException("FLASHCARD_TOPIC_SLUG_REQUIRED");
+      }
+
+      return { source: "topic", slug: slug.toLowerCase() };
+    }
+
+    if (query.source || slug) {
+      throw new BadRequestException("INVALID_FLASHCARD_SESSION_QUERY");
+    }
+
+    return { source: "legacy", deck: this.parseFlashcardDeck(deck) };
+  }
+
+  protected shuffle<T>(
+    items: readonly T[],
+    random: RandomSource = Math.random,
+  ): T[] {
+    const result = [...items];
+
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const target = Math.floor(random() * (index + 1));
+      [result[index], result[target]] = [result[target], result[index]];
+    }
+
+    return result;
   }
 
   protected mapSavedWord(
-    savedWord: RawFlashcardVocabularyItem["user_saved_words"][number]
+    savedWord: RawFlashcardVocabularyItem["user_saved_words"][number],
   ): UserSavedWord {
     return {
       id: savedWord.id,
@@ -56,7 +98,7 @@ export class FlashcardQuerySource {
   }
 
   protected mapVocabularyProgress(
-    progress: RawFlashcardVocabularyItem["user_vocabulary_progress"][number]
+    progress: RawFlashcardVocabularyItem["user_vocabulary_progress"][number],
   ): UserVocabularyProgress {
     return {
       id: progress.id,
@@ -77,7 +119,7 @@ export class FlashcardQuerySource {
   }
 
   protected mapVocabularyExample(
-    example: RawFlashcardVocabularyItem["vocabulary_examples"][number]
+    example: RawFlashcardVocabularyItem["vocabulary_examples"][number],
   ): VocabularyExample {
     return {
       id: example.id,
@@ -91,7 +133,7 @@ export class FlashcardQuerySource {
   }
 
   protected mapVocabularyItem(
-    item: RawFlashcardVocabularyItem
+    item: RawFlashcardVocabularyItem,
   ): VocabularyItem {
     return {
       id: item.id,
@@ -124,7 +166,7 @@ export class FlashcardQuerySource {
 
   protected async getFlashcardVocabularyItems(
     userId: string,
-    deck: FlashcardDeckKey
+    deck: FlashcardDeckKey,
   ) {
     return this.prisma.vocabulary_items.findMany({
       where: {
@@ -195,6 +237,30 @@ export class FlashcardQuerySource {
         id: "asc",
       },
       take: this.isPracticeCefrLevel(deck) ? 300 : 200,
+    });
+  }
+
+  protected async getTopicFlashcardVocabularyItems(
+    userId: string,
+    slug: string,
+  ) {
+    return this.prisma.vocabulary_topics.findUnique({
+      where: { slug },
+      include: {
+        vocabulary_item_topics: {
+          include: {
+            vocabulary_items: {
+              include: {
+                user_saved_words: { where: { user_id: userId } },
+                user_vocabulary_progress: { where: { user_id: userId } },
+                vocabulary_examples: {
+                  orderBy: [{ order: "asc" }, { id: "asc" }],
+                },
+              },
+            },
+          },
+        },
+      },
     });
   }
 }

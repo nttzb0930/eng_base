@@ -1,6 +1,7 @@
 import { Controller, Get, Query, UseGuards } from "@nestjs/common";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
+import { FlashcardSessionQueryDto } from "./dto/flashcard-session-query.dto";
 import { GetFlashcardDeckSummaryUseCase } from "./use-cases/get-flashcard-deck-summary.use-case";
 import { GetFlashcardSessionItemsUseCase } from "./use-cases/get-flashcard-session-items.use-case";
 
@@ -9,7 +10,7 @@ import { GetFlashcardSessionItemsUseCase } from "./use-cases/get-flashcard-sessi
 export class FlashcardsController {
   constructor(
     private readonly getDeckSummary: GetFlashcardDeckSummaryUseCase,
-    private readonly getSessionItems: GetFlashcardSessionItemsUseCase
+    private readonly getSessionItems: GetFlashcardSessionItemsUseCase,
   ) {}
 
   @Get("summary")
@@ -20,8 +21,8 @@ export class FlashcardsController {
   @Get("session")
   getFlashcardSession(
     @CurrentUserId() userId: string,
-    @Query("deck") deck?: string
+    @Query() query: FlashcardSessionQueryDto,
   ) {
-    return this.getSessionItems.execute(userId, deck);
+    return this.getSessionItems.execute(userId, query);
   }
 }
