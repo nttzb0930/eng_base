@@ -106,4 +106,11 @@ test("Certificate domain ownership has one accepted decision", () => {
     /Decision: Certificate is (a Course|a vocabulary taxonomy)/
   );
   assert.doesNotMatch(adr, /TBD|undecided|decide later/i);
+
+  const courseArchitecture = readFileSync(
+    join(repositoryRoot, "docs/architecture/course-content.md"),
+    "utf8"
+  );
+  assert.match(courseArchitecture, /Certificate learning is owned by Courses/);
+  assert.match(courseArchitecture, /ADR 0022/);
 });
