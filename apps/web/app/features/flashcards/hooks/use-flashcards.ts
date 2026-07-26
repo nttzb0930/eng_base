@@ -3,13 +3,13 @@
 import { useQuery } from "@tanstack/react-query";
 
 import { flashcardApi } from "../api/flashcard.api";
-import { normalizeFlashcardDeck } from "../flashcard-deck";
+import type { FlashcardSessionRequest } from "../flashcard-deck";
 
 export const flashcardKeys = {
   all: ["flashcards"] as const,
   summary: ["flashcards", "summary"] as const,
-  session: (deck?: string | null) =>
-    ["flashcards", "session", normalizeFlashcardDeck(deck)] as const,
+  session: (request: FlashcardSessionRequest) =>
+    ["flashcards", "session", request] as const,
 };
 
 export function useFlashcardSummary() {
@@ -19,9 +19,9 @@ export function useFlashcardSummary() {
   });
 }
 
-export function useFlashcardSession(deck?: string | null) {
+export function useFlashcardSession(request: FlashcardSessionRequest) {
   return useQuery({
-    queryKey: flashcardKeys.session(deck),
-    queryFn: () => flashcardApi.getSession(deck),
+    queryKey: flashcardKeys.session(request),
+    queryFn: () => flashcardApi.getSession(request),
   });
 }

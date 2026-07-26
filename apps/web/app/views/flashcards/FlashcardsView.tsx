@@ -10,7 +10,6 @@ import {
   Calendar,
   CalendarClock,
   ChevronRight,
-  GraduationCap,
   Layers,
   ListFilter,
   Lock,
@@ -18,32 +17,22 @@ import {
   Tag,
   Target,
 } from "lucide-react";
-import { CEFR_LEVELS } from "@repo/shared";
+import type { FlashcardDeckSummary } from "@repo/shared";
 
 import { FlashcardsPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useFlashcardSummary } from "@/app/features/flashcards/hooks/use-flashcards";
 import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
+import { useTopics } from "@/app/features/topics/hooks/use-topics";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
 
-type DeckTab = "cefr" | "cert" | "topic";
+type DeckTab = "cefr" | "topic";
 
-const CERT_DECKS = [
-  { key: "ielts", deck: "IELTS Academic", percent: 42, locked: false },
-  { key: "toeic", deck: "TOEIC 600+", percent: 18, locked: false },
-  { key: "business", deck: "Business English", percent: 0, locked: false },
-  { key: "toefl", deck: "TOEFL iBT", percent: 0, locked: true },
-] as const;
-
-const TOPIC_DECKS = [
-  { key: "travel", deck: "Travel & Transport", percent: 64, weak: false },
-  { key: "food", deck: "Food & Dining", percent: 78, weak: false },
-  { key: "health", deck: "Health & Body", percent: 18, weak: true },
-  { key: "technology", deck: "Technology", percent: 8, weak: false },
-] as const;
+const getDeckProgress = (deck: FlashcardDeckSummary) =>
+  deck.total > 0 ? Math.round((deck.learned / deck.total) * 100) : 0;
 
 export function FlashcardsView() {
   const t = useTranslations("flashcards");
@@ -51,11 +40,15 @@ export function FlashcardsView() {
   const locale = useCurrentLocale();
   const userProgressQuery = useUserProgress();
   const summaryQuery = useFlashcardSummary();
+  const topicsQuery = useTopics(locale);
   const [activeTab, setActiveTab] = useState<DeckTab>("cefr");
 
   const userProgress = userProgressQuery.data;
   const summary = summaryQuery.data;
-  const isLoading = userProgressQuery.isLoading || summaryQuery.isLoading;
+  const isLoading =
+    userProgressQuery.isLoading ||
+    summaryQuery.isLoading ||
+    topicsQuery.isLoading;
 
   useEffect(() => {
     if (!isLoading && !userProgress?.activeCourse) {
@@ -67,16 +60,13 @@ export function FlashcardsView() {
     return <FlashcardsPageSkeleton />;
   }
 
-  const dueCount = summary.due;
-  const savedCount = summary.saved;
-  const weakCount = summary.weak;
-  const totalLevelWords = CEFR_LEVELS.reduce(
-    (total, level) => total + (summary.levels[level] ?? 0),
-    0
-  );
-  const accuracy = totalLevelWords > 0
-    ? Math.round(((savedCount - weakCount) / totalLevelWords) * 100)
-    : 0;
+  const dueCount = summary.overview.due;
+  const savedCount = summary.overview.saved;
+  const weakCount = summary.overview.weak;
+  const accuracy =
+    summary.overview.accuracy === null
+      ? t("notAvailable")
+      : `${summary.overview.accuracy}%`;
 
   return (
     <FeedWrapper>
@@ -91,10 +81,10 @@ export function FlashcardsView() {
             </p>
           </div>
           <Link
-            href={withLocale("/flashcards/session?deck=all")}
+            href={withLocale("/flashcards/session?deck=due")}
             className="border-border/80 bg-card text-foreground shadow-xs inline-flex min-h-10 shrink-0 items-center justify-center gap-1.5 rounded-xl border px-4 text-xs font-semibold transition-colors hover:bg-muted"
           >
-            {t("createDeck")}
+            {t("reviewDue")}
           </Link>
         </header>
 
@@ -122,7 +112,7 @@ export function FlashcardsView() {
           />
           <MetricCard
             icon={<Target className="h-6 w-6" />}
-            value={`${accuracy}%`}
+            value={accuracy}
             title={t("accuracy")}
             description={t("accuracyDescription")}
             tone="emerald"
@@ -147,7 +137,7 @@ export function FlashcardsView() {
               <div className="grid max-w-md grid-cols-3 gap-3">
                 <HeroStat value={savedCount} label={t("savedShort")} />
                 <HeroStat value={weakCount} label={t("weakShort")} />
-                <HeroStat value={`${accuracy}%`} label={t("accuracyShort")} />
+                <HeroStat value={accuracy} label={t("accuracyShort")} />
               </div>
             </div>
             <div className="flex shrink-0 flex-col items-start justify-center md:items-end">
@@ -213,21 +203,14 @@ export function FlashcardsView() {
           <div className="mb-5 flex flex-wrap items-center gap-2">
             <DeckTabButton
               active={activeTab === "cefr"}
-              count={CEFR_LEVELS.length}
+              count={summary.cefrDecks.length}
               icon={<Layers className="h-3.5 w-3.5" />}
               label={t("tabs.cefr")}
               onClick={() => setActiveTab("cefr")}
             />
             <DeckTabButton
-              active={activeTab === "cert"}
-              count={CERT_DECKS.length}
-              icon={<GraduationCap className="h-3.5 w-3.5" />}
-              label={t("tabs.cert")}
-              onClick={() => setActiveTab("cert")}
-            />
-            <DeckTabButton
               active={activeTab === "topic"}
-              count={TOPIC_DECKS.length}
+              count={summary.topicDecks.length}
               icon={<Tag className="h-3.5 w-3.5" />}
               label={t("tabs.topic")}
               onClick={() => setActiveTab("topic")}
@@ -236,23 +219,32 @@ export function FlashcardsView() {
 
           {activeTab === "cefr" && (
             <div className="animate-page-enter grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {CEFR_LEVELS.map((level) => {
-                const count = summary.levels[level] ?? 0;
-                const locked = count === 0;
-                const percent = totalLevelWords
-                  ? Math.round((count / totalLevelWords) * 100)
-                  : 0;
+              {summary.cefrDecks.map((deck) => {
+                const percent = getDeckProgress(deck);
                 return (
                   <DeckCard
-                    key={level}
-                    href={`/flashcards/session?deck=${level}`}
-                    locked={locked}
-                    marker={level}
-                    title={t(`levels.${level}.title`)}
-                    description={t(`levels.${level}.description`)}
-                    meta={t("wordCount", { count })}
+                    key={deck.key}
+                    href={`/flashcards/session?deck=${deck.key}`}
+                    locked={!deck.available}
+                    marker={deck.key}
+                    title={t(`levels.${deck.key}.title`)}
+                    description={t(`levels.${deck.key}.description`)}
+                    meta={t("deckProgress", {
+                      learned: deck.learned,
+                      total: deck.total,
+                      mastered: deck.mastered,
+                    })}
                     percent={percent}
-                    action={percent > 0 ? t("continueReview") : t("startReview")}
+                    badge={
+                      deck.accuracy === null
+                        ? t("notAvailable")
+                        : t("accuracyValue", { accuracy: deck.accuracy })
+                    }
+                    action={
+                      deck.learned > 0
+                        ? t("continueReview")
+                        : t("startReview")
+                    }
                     lockedLabel={t("locked")}
                   />
                 );
@@ -260,42 +252,41 @@ export function FlashcardsView() {
             </div>
           )}
 
-          {activeTab === "cert" && (
-            <div className="animate-page-enter grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {CERT_DECKS.map((cert) => (
-                <DeckCard
-                  key={cert.key}
-                  href={`/flashcards/session?deck=${cert.deck}`}
-                  locked={cert.locked}
-                  marker={<GraduationCap className="h-5 w-5" />}
-                  title={t(`certDecks.${cert.key}.title`)}
-                  description={t(`certDecks.${cert.key}.description`)}
-                  meta={t(`certDecks.${cert.key}.meta`)}
-                  percent={cert.percent}
-                  action={cert.percent > 0 ? t("continueReview") : t("startReview")}
-                  lockedLabel={t("locked")}
-                />
-              ))}
-            </div>
-          )}
-
           {activeTab === "topic" && (
             <div className="animate-page-enter grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {TOPIC_DECKS.map((topic) => (
-                <DeckCard
-                  key={topic.key}
-                  href={`/flashcards/session?deck=${topic.deck}`}
-                  locked={false}
-                  marker={<Tag className="h-5 w-5" />}
-                  title={t(`topicDecks.${topic.key}.title`)}
-                  description={t(`topicDecks.${topic.key}.description`)}
-                  meta={t(`topicDecks.${topic.key}.meta`)}
-                  percent={topic.percent}
-                  badge={topic.weak ? t("weakStatus") : undefined}
-                  action={t("reviewText")}
-                  lockedLabel={t("locked")}
-                />
-              ))}
+              {summary.topicDecks.map((deck) => {
+                const topic = topicsQuery.data?.find(
+                  (item) => item.slug === deck.key,
+                );
+
+                return (
+                  <DeckCard
+                    key={deck.key}
+                    href={`/flashcards/session?source=topic&slug=${encodeURIComponent(deck.key)}`}
+                    locked={!deck.available}
+                    marker={<Tag className="h-5 w-5" />}
+                    title={topic?.title ?? deck.key}
+                    description={topic?.description ?? t("topicDescription")}
+                    meta={t("deckProgress", {
+                      learned: deck.learned,
+                      total: deck.total,
+                      mastered: deck.mastered,
+                    })}
+                    percent={getDeckProgress(deck)}
+                    badge={
+                      deck.accuracy === null
+                        ? t("notAvailable")
+                        : t("accuracyValue", { accuracy: deck.accuracy })
+                    }
+                    action={
+                      deck.learned > 0
+                        ? t("continueReview")
+                        : t("startReview")
+                    }
+                    lockedLabel={t("locked")}
+                  />
+                );
+              })}
             </div>
           )}
         </section>

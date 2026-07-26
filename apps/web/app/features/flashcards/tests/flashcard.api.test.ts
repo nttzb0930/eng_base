@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { createFlashcardApi } from "../api/flashcard.api";
-import { normalizeFlashcardDeck } from "../flashcard-deck";
 
 test("Flashcard resources preserve summary and session routes", async () => {
   const requests: unknown[] = [];
@@ -14,28 +13,15 @@ test("Flashcard resources preserve summary and session routes", async () => {
   });
 
   await api.getSummary();
-  await api.getSession("saved");
+  await api.getSession({ deck: "saved" });
+  await api.getSession({ source: "topic", slug: "travel & transport" });
 
   assert.deepEqual(requests, [
     { method: "GET", path: "/flashcards/summary" },
     { method: "GET", path: "/flashcards/session?deck=saved" },
+    {
+      method: "GET",
+      path: "/flashcards/session?source=topic&slug=travel+%26+transport",
+    },
   ]);
-});
-
-test("normalizeFlashcardDeck keeps named decks and falls back to due", () => {
-  for (const deck of [
-    "due",
-    "saved",
-    "weak",
-    "A1",
-    "A2",
-    "B1",
-    "B2",
-    "C1",
-    "travel-and-transport",
-  ] as const) {
-    assert.equal(normalizeFlashcardDeck(deck), deck);
-  }
-
-  assert.equal(normalizeFlashcardDeck(undefined), "due");
 });
