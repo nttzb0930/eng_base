@@ -31,7 +31,7 @@ export function DiscoveryTabs({
   certsLabel,
   levelCount,
   topicCount,
-  certCount = 4,
+  certCount = 0,
 }: DiscoveryTabsProps) {
   const t = useTranslations("topics");
 
@@ -44,24 +44,33 @@ export function DiscoveryTabs({
   return (
     <nav
       aria-label="Chế độ học tập"
-      className="mb-7 inline-flex flex-wrap items-center gap-1.5 rounded-xl border border-border/80 bg-background p-1.5 shadow-sm"
+      className="border-border/80 bg-background mb-7 inline-flex flex-wrap items-center gap-1.5 rounded-xl border p-1.5 shadow-sm"
     >
       {tabs.map(({ key, href, Icon }) => {
         const selected = active === key;
         const displayLabel =
           key === "learn"
-            ? learnLabel ?? fallbackLabels.learn
+            ? (learnLabel ?? fallbackLabels.learn)
             : key === "topics"
-              ? topicsLabel ?? fallbackLabels.topics
-              : certsLabel ?? fallbackLabels.certs;
+              ? (topicsLabel ?? fallbackLabels.topics)
+              : (certsLabel ?? fallbackLabels.certs);
 
         const count =
-          key === "learn" ? levelCount : key === "topics" ? topicCount : certCount;
+          key === "learn"
+            ? levelCount
+            : key === "topics"
+              ? topicCount
+              : certCount;
 
-        const getTabStyles = (tabKey: "learn" | "certs" | "topics", isSelected: boolean) => {
+        const getTabStyles = (
+          tabKey: "learn" | "certs" | "topics",
+          isSelected: boolean
+        ) => {
           if (isSelected) {
-            if (tabKey === "learn") return "bg-blue-600 text-white shadow-sm hover:bg-blue-700";
-            if (tabKey === "certs") return "bg-emerald-600 text-white shadow-sm hover:bg-emerald-700";
+            if (tabKey === "learn")
+              return "bg-blue-600 text-white shadow-sm hover:bg-blue-700";
+            if (tabKey === "certs")
+              return "bg-emerald-600 text-white shadow-sm hover:bg-emerald-700";
             return "bg-orange-500 text-white shadow-sm hover:bg-orange-600";
           }
           if (tabKey === "learn") {
@@ -73,7 +82,10 @@ export function DiscoveryTabs({
           return "text-muted-foreground hover:bg-orange-50 dark:hover:bg-orange-950/50 hover:text-orange-600 dark:hover:text-orange-400";
         };
 
-        const getBadgeStyles = (tabKey: "learn" | "certs" | "topics", isSelected: boolean) => {
+        const getBadgeStyles = (
+          tabKey: "learn" | "certs" | "topics",
+          isSelected: boolean
+        ) => {
           if (isSelected) return "bg-white/20 text-white";
           if (tabKey === "learn") {
             return "bg-muted-foreground/10 text-muted-foreground group-hover:bg-blue-100 dark:group-hover:bg-blue-900/40 group-hover:text-blue-600 dark:group-hover:text-blue-400";
@@ -97,7 +109,7 @@ export function DiscoveryTabs({
               }
             }}
             className={cn(
-              "group inline-flex min-h-10 items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 cursor-pointer",
+              "group inline-flex min-h-10 cursor-pointer items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200",
               getTabStyles(key, selected)
             )}
           >

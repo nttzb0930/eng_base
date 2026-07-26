@@ -82,7 +82,7 @@ export function FlashcardsView() {
           </div>
           <Link
             href={withLocale("/flashcards/session?deck=due")}
-            className="border-border/80 bg-card text-foreground shadow-xs inline-flex min-h-10 shrink-0 items-center justify-center gap-1.5 rounded-xl border px-4 text-xs font-semibold transition-colors hover:bg-muted"
+            className="border-border/80 bg-card text-foreground shadow-xs hover:bg-muted inline-flex min-h-10 shrink-0 items-center justify-center gap-1.5 rounded-xl border px-4 text-xs font-semibold transition-colors"
           >
             {t("reviewDue")}
           </Link>
@@ -119,7 +119,7 @@ export function FlashcardsView() {
           />
         </section>
 
-        <section className="relative mb-9 overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 p-6 text-white shadow-xl dark:from-emerald-900 dark:via-emerald-950 dark:to-emerald-900 sm:p-8">
+        <section className="relative mb-9 overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 p-6 text-white shadow-xl sm:p-8 dark:from-emerald-900 dark:via-emerald-950 dark:to-emerald-900">
           <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
           <div className="relative z-10 flex flex-col justify-between gap-6 md:flex-row md:items-center">
@@ -217,6 +217,10 @@ export function FlashcardsView() {
             />
           </div>
 
+          <p className="text-muted-foreground mb-5 text-xs">
+            {t("certificateUnavailable")}
+          </p>
+
           {activeTab === "cefr" && (
             <div className="animate-page-enter grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {summary.cefrDecks.map((deck) => {
@@ -241,9 +245,7 @@ export function FlashcardsView() {
                         : t("accuracyValue", { accuracy: deck.accuracy })
                     }
                     action={
-                      deck.learned > 0
-                        ? t("continueReview")
-                        : t("startReview")
+                      deck.learned > 0 ? t("continueReview") : t("startReview")
                     }
                     lockedLabel={t("locked")}
                   />
@@ -256,7 +258,7 @@ export function FlashcardsView() {
             <div className="animate-page-enter grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {summary.topicDecks.map((deck) => {
                 const topic = topicsQuery.data?.find(
-                  (item) => item.slug === deck.key,
+                  (item) => item.slug === deck.key
                 );
 
                 return (
@@ -279,9 +281,7 @@ export function FlashcardsView() {
                         : t("accuracyValue", { accuracy: deck.accuracy })
                     }
                     action={
-                      deck.learned > 0
-                        ? t("continueReview")
-                        : t("startReview")
+                      deck.learned > 0 ? t("continueReview") : t("startReview")
                     }
                     lockedLabel={t("locked")}
                   />
@@ -320,7 +320,12 @@ function MetricCard({
   return (
     <div className="border-border/80 bg-card shadow-xs group relative flex flex-col justify-between rounded-2xl border p-5 transition-all duration-200 hover:shadow-md sm:p-6">
       <div className="flex items-center justify-between gap-3">
-        <div className={cn("shadow-xs flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border", toneClass)}>
+        <div
+          className={cn(
+            "shadow-xs flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border",
+            toneClass
+          )}
+        >
           {icon}
         </div>
         <div className="text-foreground text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -340,7 +345,9 @@ function MetricCard({
 function HeroStat({ value, label }: { value: number | string; label: string }) {
   return (
     <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur-md">
-      <div className="text-xl font-semibold text-white sm:text-2xl">{value}</div>
+      <div className="text-xl font-semibold text-white sm:text-2xl">
+        {value}
+      </div>
       <div className="mt-0.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-100/80">
         {label}
       </div>
@@ -374,13 +381,28 @@ function ReviewDeckCard({
 
   return (
     <article className="border-border/80 bg-card shadow-xs group relative flex flex-col justify-between rounded-2xl border p-5 transition-all duration-200 hover:shadow-md">
-      <div className={cn("absolute left-0 right-0 top-0 h-1 rounded-t-2xl bg-gradient-to-r", toneClass)} />
+      <div
+        className={cn(
+          "absolute left-0 right-0 top-0 h-1 rounded-t-2xl bg-gradient-to-r",
+          toneClass
+        )}
+      />
       <div>
         <div className="flex items-center justify-between">
-          <div className={cn("shadow-xs flex h-11 w-11 items-center justify-center rounded-xl border", toneClass)}>
+          <div
+            className={cn(
+              "shadow-xs flex h-11 w-11 items-center justify-center rounded-xl border",
+              toneClass
+            )}
+          >
             {icon}
           </div>
-          <span className={cn("inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold", toneClass)}>
+          <span
+            className={cn(
+              "inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold",
+              toneClass
+            )}
+          >
             <span className="h-1.5 w-1.5 rounded-full bg-current" />
             {badge}
           </span>
@@ -398,7 +420,7 @@ function ReviewDeckCard({
           </div>
           <Link
             href={withLocale("/saved-words")}
-            className="border-border/80 bg-muted/40 text-muted-foreground inline-flex min-h-10 w-10 items-center justify-center rounded-xl border transition-colors hover:bg-muted hover:text-foreground"
+            className="border-border/80 bg-muted/40 text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 w-10 items-center justify-center rounded-xl border transition-colors"
             title={title}
           >
             <ListFilter className="h-4 w-4" />
@@ -409,7 +431,9 @@ function ReviewDeckCard({
         href={withLocale(href)}
         className={cn(
           "shadow-xs mt-5 inline-flex min-h-10 items-center justify-center gap-1.5 rounded-xl text-xs font-semibold text-white transition-colors",
-          tone === "sky" ? "bg-sky-600 hover:bg-sky-700" : "bg-orange-600 hover:bg-orange-700"
+          tone === "sky"
+            ? "bg-sky-600 hover:bg-sky-700"
+            : "bg-orange-600 hover:bg-orange-700"
         )}
       >
         {action}
@@ -438,13 +462,18 @@ function DeckTabButton({
       className={cn(
         "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold transition-all",
         active
-          ? "border-emerald-600 bg-emerald-600 text-white shadow-xs"
+          ? "shadow-xs border-emerald-600 bg-emerald-600 text-white"
           : "border-border/80 bg-card text-muted-foreground hover:bg-muted hover:text-foreground"
       )}
     >
       {icon}
       <span>{label}</span>
-      <span className={cn("rounded-full px-1.5 py-0.2 text-[10px]", active ? "bg-white/20 text-white" : "bg-muted text-muted-foreground")}>
+      <span
+        className={cn(
+          "py-0.2 rounded-full px-1.5 text-[10px]",
+          active ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"
+        )}
+      >
         {count}
       </span>
     </button>
@@ -508,8 +537,11 @@ function DeckCard({
         </p>
       </div>
       <div className="mt-4">
-        <div className="h-1.5 overflow-hidden rounded-full bg-muted">
-          <div className="h-full rounded-full bg-emerald-500" style={{ width: `${percent}%` }} />
+        <div className="bg-muted h-1.5 overflow-hidden rounded-full">
+          <div
+            className="h-full rounded-full bg-emerald-500"
+            style={{ width: `${percent}%` }}
+          />
         </div>
         <div className="mt-2.5 flex items-center justify-between text-xs font-medium">
           <span className="text-emerald-600 dark:text-emerald-400">{meta}</span>
