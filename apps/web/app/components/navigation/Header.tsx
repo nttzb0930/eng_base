@@ -9,6 +9,7 @@ import {
   Trophy,
   Heart,
   Layers,
+  BookOpenText,
 } from "lucide-react";
 import Image from "next/image";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
@@ -59,6 +60,7 @@ export const Header = ({ className }: HeaderProps) => {
     { label: t("dashboard"), href: "/dashboard", icon: Home },
     { label: t("learn"), href: "/learn", icon: BookOpen },
     { label: t("practice"), href: "/practice", icon: Target },
+    { label: t("reading"), href: "/reading", icon: BookOpenText },
     { label: t("savedWords"), href: "/saved-words", icon: Heart },
     { label: t("flashcards"), href: "/flashcards", icon: Layers },
     { label: t("leaderboard"), href: "/leaderboard", icon: Trophy },
@@ -195,7 +197,7 @@ export const Header = ({ className }: HeaderProps) => {
                       className={cn(
                         "flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900",
                         pathname === withLocale("/saved-words", locale) &&
-                        "bg-slate-50 text-slate-900"
+                          "bg-slate-50 text-slate-900"
                       )}
                     >
                       <Heart className="h-4 w-4 text-slate-400" />
@@ -208,7 +210,7 @@ export const Header = ({ className }: HeaderProps) => {
                       className={cn(
                         "flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900",
                         pathname === withLocale("/flashcards", locale) &&
-                        "bg-slate-50 text-slate-900"
+                          "bg-slate-50 text-slate-900"
                       )}
                     >
                       <Layers className="h-4 w-4 text-slate-400" />
