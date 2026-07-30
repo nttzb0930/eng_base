@@ -29,6 +29,7 @@ import { ProgressModule } from "./module/progress";
 import { PlacementTestModule } from "./module/placement-test";
 import { PrismaModule } from "./database/prisma/prisma.module";
 import { HealthModule } from "./module/health";
+import { ReadingModule } from "./module/reading";
 
 @Module({
   imports: [
@@ -57,6 +58,7 @@ import { HealthModule } from "./module/health";
     VocabularyModule,
     ProgressModule,
     PlacementTestModule,
+    ReadingModule,
     HealthModule,
   ],
   providers: [
