@@ -1,11 +1,26 @@
 import {
   IsArray,
+  IsIn,
   IsInt,
   IsObject,
   IsOptional,
   IsString,
+  MaxLength,
   Min,
 } from "class-validator";
+import { Transform } from "class-transformer";
+import {
+  CEFR_LEVELS,
+  LEARNING_INTENSITY_IDS,
+  ONBOARDING_GOAL_IDS,
+  TARGET_LANGUAGE_IDS,
+  type CefrLevel,
+  type LearningIntensityId,
+  type OnboardingGoalId,
+  type TargetLanguageId,
+} from "@repo/shared";
+
+import { IsPrimaryLanguageSelected } from "./is-primary-language-selected.validator";
 
 export class SubmitPlacementAnswerDto {
   @IsInt()
@@ -16,28 +31,31 @@ export class SubmitPlacementAnswerDto {
 }
 
 export class ConfirmPlacementLevelDto {
-  @IsString()
-  level!: string;
+  @IsIn([...CEFR_LEVELS])
+  level!: CefrLevel;
 
   @IsArray()
-  @IsString({ each: true })
+  @IsIn([...TARGET_LANGUAGE_IDS], { each: true })
   @IsOptional()
-  languages?: string[];
+  languages?: TargetLanguageId[];
 
-  @IsString()
+  @IsIn([...TARGET_LANGUAGE_IDS])
+  @IsPrimaryLanguageSelected()
   @IsOptional()
-  primaryLanguage?: string;
+  primaryLanguage?: TargetLanguageId;
 
   @IsArray()
-  @IsString({ each: true })
+  @IsIn([...ONBOARDING_GOAL_IDS], { each: true })
   @IsOptional()
-  goals?: string[];
+  goals?: OnboardingGoalId[];
 
-  @IsString()
+  @IsIn([...LEARNING_INTENSITY_IDS])
   @IsOptional()
-  intensity?: string;
+  intensity?: LearningIntensityId;
 
+  @Transform(({ value }) => (typeof value === "string" ? value.trim() : value))
   @IsString()
+  @MaxLength(300)
   @IsOptional()
   customGoal?: string;
 }
