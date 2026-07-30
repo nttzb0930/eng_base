@@ -6,6 +6,7 @@ import {
   BookOpen,
   Calendar,
   Compass,
+  Flame,
   GraduationCap,
   Play,
   PlusCircle,
@@ -48,6 +49,7 @@ function LearnFeedback({
 
 export function LearnView() {
   const t = useTranslations("learn");
+  const dashboardT = useTranslations("dashboard");
   const topicsT = useTranslations("topics");
   const router = useRouter();
   const locale = useCurrentLocale();
@@ -156,6 +158,17 @@ export function LearnView() {
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3.5 py-1 text-sm font-medium text-white backdrop-blur-md">
                   <Calendar className="h-4 w-4" />
                   <span>{t("today")}</span>
+                </span>
+                <span
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3.5 py-1 text-sm font-medium text-white backdrop-blur-md"
+                  title={dashboardT("streakTimeZone")}
+                >
+                  <Flame className="h-4 w-4" aria-hidden="true" />
+                  <span>
+                    {dashboardT("currentStreak", {
+                      count: dashboard.streak.currentStreak,
+                    })}
+                  </span>
                 </span>
               </div>
 
