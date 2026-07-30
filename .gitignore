@@ -54,3 +54,6 @@ next-env.d.ts
 # generated vocabulary pipeline artifacts
 /data/vocabulary/working/
 /data/vocabulary/backups/
+
+# licensed content pipeline artifacts
+/var/licensed-content/

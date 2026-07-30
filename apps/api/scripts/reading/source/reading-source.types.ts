@@ -59,3 +59,63 @@ export type CanonicalReadingSourcePackage = {
   vocabulary: unknown[];
   embeddedMedia: CanonicalReadingSourceMedia[];
 };
+
+export type ReadingSourceAccessSummary = {
+  sourceId: string;
+  sourceLevel: "1" | "2";
+  isFree: boolean;
+  isHidden: boolean;
+};
+
+export type ReadingSourceImageInspection = {
+  url: string;
+  bytes: number | null;
+  mimeType: string | null;
+};
+
+export type ReadingSourceInventory = {
+  schemaVersion: 1;
+  source: "dautoeic";
+  createdAt: string;
+  visibleCount: number;
+  acceptedCount: number;
+  excludedNotFreeCount: number;
+  excludedHiddenCount: number;
+  sourceLevelCounts: Record<"1" | "2", number>;
+  questionCount: number;
+  embeddedImageCount: number;
+  knownImageBytes: number;
+  unknownImageSizeCount: number;
+  acceptedSourceIds: string[];
+  inventorySha256: string;
+};
+
+export interface DautoeicReadingSource {
+  listAccessSummaries(): Promise<ReadingSourceAccessSummary[]>;
+  listReadingRows(): Promise<ReadingSourceRow[]>;
+  inspectEmbeddedImage(url: string): Promise<ReadingSourceImageInspection>;
+  openEmbeddedImage(url: string): Promise<Response>;
+}
+
+export interface ReadingSourceStorage {
+  writeInventory(inventory: ReadingSourceInventory): Promise<string>;
+  readApprovedInventory(sha256: string): Promise<ReadingSourceInventory>;
+  writePackageFile(
+    sourceId: string,
+    sourceVersion: string,
+    name: "content.json" | "manifest.json" | "validation.json",
+    value: unknown,
+  ): Promise<void>;
+  writeMedia(input: {
+    sourceId: string;
+    sourceVersion: string;
+    mediaId: string;
+    response: Response;
+  }): Promise<{
+    storageKey: string;
+    bytes: number;
+    sha256: string;
+    mimeType: string;
+  }>;
+  packageExists(sourceId: string, sourceVersion: string): Promise<boolean>;
+}
