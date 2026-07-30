@@ -470,18 +470,23 @@ export function DashboardView() {
                   {/* Weekly activity + learning overview */}
                   <div className="mt-6 grid gap-4 lg:grid-cols-[1.35fr_1fr]">
                     {/* Weekly activity */}
-                    <div className="shadow-panel relative flex flex-col justify-between gap-5 overflow-hidden rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-orange-100 p-5 sm:flex-row sm:items-center sm:p-6">
+                    <div
+                      className="shadow-panel relative flex flex-col justify-between gap-5 overflow-hidden rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-orange-100 p-5 sm:flex-row sm:items-center sm:p-6"
+                      title={t("streakTimeZone")}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 text-2xl text-white shadow-md">
                           <Flame className="h-7 w-7" aria-hidden="true" />
                         </div>
                         <div>
                           <h3 className="text-base font-semibold text-amber-900">
-                            {t("weeklyActivityTitle")}
+                            {t("currentStreak", {
+                              count: dashboard.streak.currentStreak,
+                            })}
                           </h3>
                           <p className="mt-1 text-sm font-semibold text-amber-800">
-                            {t("weeklyActiveDays", {
-                              count: weeklyActivity.activeDays,
+                            {t("longestStreak", {
+                              count: dashboard.streak.longestStreak,
                             })}
                           </p>
                           <p className="mt-1 text-xs text-amber-700">
