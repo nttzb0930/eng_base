@@ -329,6 +329,7 @@
     "correct": "Đúng",
     "wrong": "Sai",
     "xpEarned": "XP nhận được",
+    "xpUnit": "XP",
     "accuracy": "Độ chính xác",
     "continue": "Tiếp tục",
     "backToMap": "Quay lại bản đồ",
@@ -435,7 +436,30 @@
   },
   "leaderboard": {
     "title": "Bảng xếp hạng",
-    "description": "Xem vị trí của bạn trong cộng đồng người học."
+    "description": "Xem vị trí của bạn trong cộng đồng người học.",
+    "seasonSummary": "Mùa giải #{season} · Còn {days} ngày",
+    "periodWeekly": "Tuần này",
+    "periodMonthly": "Tháng này",
+    "periodAllTime": "Tất cả",
+    "points": "{points} XP",
+    "todayGain": "+{points} XP hôm nay",
+    "yourPosition": "Vị trí của bạn",
+    "rankSummary": "Hạng #{rank} / {total} người học",
+    "yourXp": "XP của bạn",
+    "nextRank": "Còn {points} XP để lên hạng #{rank}",
+    "detailsTitle": "Bảng xếp hạng chi tiết",
+    "participants": "{count} người tham gia",
+    "you": "Bạn",
+    "level": "Cấp độ {level}",
+    "streakDays": "Chuỗi {count} ngày",
+    "loadMore": "Xem thêm {count} người học",
+    "seasonRewards": "Phần thưởng mùa giải",
+    "rankFirst": "Hạng 1",
+    "rankSecondThird": "Hạng 2–3",
+    "rankFourthTenth": "Hạng 4–10",
+    "rewardGold": "500 XP + Huy hiệu Vàng",
+    "rewardSilver": "300 XP + Huy hiệu Bạc",
+    "rewardBronze": "100 XP + Huy hiệu Đồng"
   },
   "flashcards": {
     "mascotAlt": "Linh vật học tập",
@@ -607,6 +631,11 @@
     "phoneticColumn": "Phát âm",
     "meaningColumn": "Nghĩa tiếng Việt",
     "statusColumn": "Trạng thái",
+    "actionsColumn": "Thao tác",
+    "filterTitle": "Bộ lọc",
+    "gridViewTitle": "Xem dạng lưới",
+    "playPronunciation": "Phát âm",
+    "startLearningAria": "Bắt đầu học",
     "weakStatus": "Yếu",
     "learningStatus": "Đang học",
     "masteredStatus": "Thuộc",
@@ -661,6 +690,17 @@
   "courses": {
     "title": "Khóa học ngôn ngữ",
     "error": "Đã xảy ra lỗi. Vui lòng thử lại."
+  },
+  "errorBoundary": {
+    "redirecting": "Đang chuyển hướng đến trang đăng nhập...",
+    "title": "Đã xảy ra lỗi hệ thống",
+    "description": "Trang bạn yêu cầu tạm thời không thể xử lý. Hãy thử tải lại hoặc quay về trang chủ.",
+    "retry": "Thử lại ngay",
+    "dashboard": "Về trang chủ",
+    "technicalDetails": "Chi tiết kỹ thuật",
+    "errorName": "Lỗi",
+    "unknownError": "Lỗi không xác định",
+    "digestId": "Mã lỗi: {digest}"
   },
   "learn": {
     "eyebrow": "HỌC TỪ VỰNG",
@@ -899,6 +939,8 @@
     }
   },
   "auth": {
+    "mascotAlt": "Linh vật English Base",
+    "heroAlt": "Minh họa học tiếng Anh",
     "signInTitle": "Đăng nhập tài khoản",
     "signUpTitle": "Đăng ký tài khoản",
     "noAccount": "Chưa có tài khoản?",

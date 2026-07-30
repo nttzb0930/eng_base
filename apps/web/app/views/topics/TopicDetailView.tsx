@@ -331,13 +331,13 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
 
               <button
                 className="border-border/80 hover:bg-muted text-muted-foreground rounded-xl border p-2 transition-colors"
-                title="Bộ lọc"
+                title={t("filterTitle")}
               >
                 <Filter className="h-4 w-4" />
               </button>
               <button
                 className="border-border/80 hover:bg-muted text-muted-foreground rounded-xl border p-2 transition-colors"
-                title="Xem dạng lưới"
+                title={t("gridViewTitle")}
               >
                 <Grid className="h-4 w-4" />
               </button>
@@ -360,7 +360,9 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
                     <th className="w-36 px-4 py-3">{t("phoneticColumn")}</th>
                     <th className="px-4 py-3">{t("meaningColumn")}</th>
                     <th className="w-40 px-4 py-3">{t("statusColumn")}</th>
-                    <th className="w-24 px-4 py-3 text-center">Thao tác</th>
+                    <th className="w-24 px-4 py-3 text-center">
+                      {t("actionsColumn")}
+                    </th>
                   </tr>
                 </thead>
 
@@ -414,7 +416,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
                                     ? "animate-pulse text-emerald-600"
                                     : "text-muted-foreground"
                                 )}
-                                title="Phát âm"
+                                title={t("playPronunciation")}
                               >
                                 <Volume2 className="h-3.5 w-3.5" />
                               </button>
@@ -531,7 +533,7 @@ export function TopicDetailView({ slug, level }: TopicDetailViewProps) {
       <button
         onClick={() => setShowStudyModal(true)}
         className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-600 text-2xl text-white shadow-lg transition-transform hover:scale-110 active:scale-95 lg:hidden"
-        aria-label="Bắt đầu học"
+        aria-label={t("startLearningAria")}
       >
         <Plus className="h-7 w-7" />
       </button>

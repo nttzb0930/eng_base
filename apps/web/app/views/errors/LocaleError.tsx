@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { AlertTriangle, ChevronDown, ChevronUp, Home, RefreshCw, Terminal } from "lucide-react";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
@@ -15,6 +16,7 @@ export default function ErrorPage({
   reset: () => void;
 }) {
   const { logout } = useAuth();
+  const t = useTranslations("errorBoundary");
   const params = useParams();
   const locale = (params?.locale as string) || "vi";
   const [showDetails, setShowDetails] = useState(false);
@@ -39,7 +41,7 @@ export default function ErrorPage({
         <div className="flex flex-col items-center gap-3">
           <div className="h-9 w-9 animate-spin rounded-full border-3 border-primary border-t-transparent" />
           <p className="text-sm font-medium text-muted-foreground">
-            {locale === "vi" ? "Đang chuyển hướng đăng nhập..." : "Redirecting to sign-in..."}
+            {t("redirecting")}
           </p>
         </div>
       </div>
@@ -68,12 +70,10 @@ export default function ErrorPage({
         {/* Header Content */}
         <div className="mt-5 text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            {locale === "vi" ? "Đã xảy ra lỗi hệ thống" : "Something went wrong"}
+            {t("title")}
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            {locale === "vi"
-              ? "Trang bạn yêu cầu tạm thời không thể xử lý. Hãy thử tải lại hoặc quay về trang chủ."
-              : "We couldn't process your request. Please try refreshing or return to the dashboard."}
+            {t("description")}
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function ErrorPage({
             className="w-full sm:flex-1 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary text-primary-foreground text-sm font-semibold shadow-xs transition hover:bg-primary/90 active:scale-[0.98]"
           >
             <RefreshCw className="h-4 w-4" />
-            {locale === "vi" ? "Thử lại ngay" : "Try again"}
+            {t("retry")}
           </button>
 
           <Link
@@ -92,7 +92,7 @@ export default function ErrorPage({
             className="w-full sm:flex-1 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border/80 bg-card text-foreground text-sm font-semibold shadow-xs transition hover:bg-muted active:scale-[0.98]"
           >
             <Home className="h-4 w-4 text-muted-foreground" />
-            {locale === "vi" ? "Về trang chủ" : "Dashboard"}
+            {t("dashboard")}
           </Link>
         </div>
 
@@ -104,7 +104,7 @@ export default function ErrorPage({
           >
             <span className="inline-flex items-center gap-1.5">
               <Terminal className="h-3.5 w-3.5" />
-              {locale === "vi" ? "Chi tiết kỹ thuật (Developer)" : "Technical Details"}
+              {t("technicalDetails")}
             </span>
             {showDetails ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
           </button>
@@ -112,9 +112,14 @@ export default function ErrorPage({
           {showDetails && (
             <div className="mt-3 animate-page-enter rounded-xl bg-muted/60 p-3.5 font-mono text-[11px] leading-relaxed text-muted-foreground border border-border/40 overflow-x-auto max-h-40">
               <p className="font-semibold text-rose-500 mb-1">
-                {error.name || "Error"}: {error.message || "Unknown error"}
+                {error.name || t("errorName")}:{" "}
+                {error.message || t("unknownError")}
               </p>
-              {error.digest && <p className="text-[10px] opacity-75">Digest ID: {error.digest}</p>}
+              {error.digest && (
+                <p className="text-[10px] opacity-75">
+                  {t("digestId", { digest: error.digest })}
+                </p>
+              )}
             </div>
           )}
         </div>

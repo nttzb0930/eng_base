@@ -325,6 +325,7 @@
     "correct": "Correct",
     "wrong": "Wrong",
     "xpEarned": "XP earned",
+    "xpUnit": "XP",
     "accuracy": "Accuracy",
     "sessionReview": "Session review",
     "sessionReviewDescription": "{count} reviewed words were saved to your history.",
@@ -435,7 +436,30 @@
   },
   "leaderboard": {
     "title": "Leaderboard",
-    "description": "See where you stand among other learners in the community."
+    "description": "See where you stand among other learners in the community.",
+    "seasonSummary": "Season #{season} · {days} days remaining",
+    "periodWeekly": "This week",
+    "periodMonthly": "This month",
+    "periodAllTime": "All time",
+    "points": "{points} XP",
+    "todayGain": "+{points} XP today",
+    "yourPosition": "Your position",
+    "rankSummary": "Rank #{rank} / {total} learners",
+    "yourXp": "Your XP",
+    "nextRank": "{points} XP to rank #{rank}",
+    "detailsTitle": "Detailed leaderboard",
+    "participants": "{count} participants",
+    "you": "You",
+    "level": "Level {level}",
+    "streakDays": "{count}-day streak",
+    "loadMore": "Show {count} more learners",
+    "seasonRewards": "Season rewards",
+    "rankFirst": "Rank 1",
+    "rankSecondThird": "Ranks 2–3",
+    "rankFourthTenth": "Ranks 4–10",
+    "rewardGold": "500 XP + Gold badge",
+    "rewardSilver": "300 XP + Silver badge",
+    "rewardBronze": "100 XP + Bronze badge"
   },
   "flashcards": {
     "mascotAlt": "Learning mascot",
@@ -607,6 +631,11 @@
     "phoneticColumn": "Phonetic",
     "meaningColumn": "Meaning",
     "statusColumn": "Status",
+    "actionsColumn": "Actions",
+    "filterTitle": "Filter",
+    "gridViewTitle": "Grid view",
+    "playPronunciation": "Play pronunciation",
+    "startLearningAria": "Start learning",
     "weakStatus": "Weak",
     "learningStatus": "Learning",
     "masteredStatus": "Mastered",
@@ -661,6 +690,17 @@
   "courses": {
     "title": "Language Courses",
     "error": "Something went wrong. Please try again."
+  },
+  "errorBoundary": {
+    "redirecting": "Redirecting to sign-in...",
+    "title": "Something went wrong",
+    "description": "We couldn't process your request. Please try refreshing or return to the dashboard.",
+    "retry": "Try again",
+    "dashboard": "Dashboard",
+    "technicalDetails": "Technical details",
+    "errorName": "Error",
+    "unknownError": "Unknown error",
+    "digestId": "Digest ID: {digest}"
   },
   "learn": {
     "eyebrow": "VOCABULARY LEARNING",
@@ -899,6 +939,8 @@
     }
   },
   "auth": {
+    "mascotAlt": "English Base mascot",
+    "heroAlt": "English learning illustration",
     "signInTitle": "Sign In to your Account",
     "signUpTitle": "Create an Account",
     "noAccount": "Don't have an account?",

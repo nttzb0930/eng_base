@@ -94,7 +94,12 @@ export function LeaderboardView() {
         <div className="text-center space-y-3">
           <div className="inline-flex items-center gap-2 bg-emerald-100/80 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-semibold border border-emerald-200/50 shadow-xs">
             <Trophy className="w-4 h-4 text-emerald-600" />
-            <span>Mùa giải #{seasonInfo.seasonNumber} • Còn {seasonInfo.daysRemaining} ngày nữa</span>
+            <span>
+              {t("seasonSummary", {
+                season: seasonInfo.seasonNumber,
+                days: seasonInfo.daysRemaining,
+              })}
+            </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
             {t("title")}
@@ -117,7 +122,7 @@ export function LeaderboardView() {
               }`}
             >
               <CalendarDays className="w-4 h-4" />
-              Tuần này
+              {t("periodWeekly")}
             </button>
             <button
               type="button"
@@ -129,7 +134,7 @@ export function LeaderboardView() {
               }`}
             >
               <Calendar className="w-4 h-4" />
-              Tháng này
+              {t("periodMonthly")}
             </button>
             <button
               type="button"
@@ -141,7 +146,7 @@ export function LeaderboardView() {
               }`}
             >
               <InfinityIcon className="w-4 h-4" />
-              Tất cả
+              {t("periodAllTime")}
             </button>
           </div>
         </div>
@@ -168,7 +173,7 @@ export function LeaderboardView() {
                     {top2.userName}
                   </div>
                   <div className="text-slate-600 font-semibold text-xs sm:text-sm">
-                    {top2.points} XP
+                    {t("points", { points: top2.points })}
                   </div>
                   <div className="mt-3 bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 h-24 sm:h-32 rounded-t-2xl flex flex-col items-center justify-center text-white/90 shadow-md">
                     <Medal className="w-8 h-8 drop-shadow-md" />
@@ -197,10 +202,10 @@ export function LeaderboardView() {
                     {top1.userName}
                   </div>
                   <div className="text-amber-600 font-extrabold text-sm sm:text-base">
-                    {top1.points} XP
+                    {t("points", { points: top1.points })}
                   </div>
                   <div className="text-xs text-emerald-600 font-medium mt-0.5">
-                    +{top1.weeklyGain ?? 45} XP hôm nay
+                    {t("todayGain", { points: top1.weeklyGain ?? 45 })}
                   </div>
                   <div className="mt-3 bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 h-32 sm:h-40 rounded-t-2xl flex flex-col items-center justify-center text-white shadow-lg relative overflow-hidden">
                     <Trophy className="w-10 h-10 drop-shadow-md relative z-10" />
@@ -226,7 +231,7 @@ export function LeaderboardView() {
                     {top3.userName}
                   </div>
                   <div className="text-amber-700 font-semibold text-xs sm:text-sm">
-                    {top3.points} XP
+                    {t("points", { points: top3.points })}
                   </div>
                   <div className="mt-3 bg-gradient-to-b from-amber-600 via-orange-600 to-amber-700 h-20 sm:h-28 rounded-t-2xl flex flex-col items-center justify-center text-white/90 shadow-md">
                     <Medal className="w-7 h-7 drop-shadow-md" />
@@ -249,15 +254,26 @@ export function LeaderboardView() {
                 </AvatarFallback>
               </Avatar>
               <div>
-                <div className="text-emerald-100 text-xs sm:text-sm font-medium">Vị trí của bạn</div>
+                <div className="text-emerald-100 text-xs sm:text-sm font-medium">
+                  {t("yourPosition")}
+                </div>
                 <div className="text-xl sm:text-2xl font-black">
-                  Hạng #{currentUserRank.rank} / {currentUserRank.totalLearners.toLocaleString("vi-VN")} người học
+                  {t("rankSummary", {
+                    rank: currentUserRank.rank,
+                    total: currentUserRank.totalLearners.toLocaleString(
+                      locale === "vi" ? "vi-VN" : "en-US"
+                    ),
+                  })}
                 </div>
               </div>
             </div>
             <div className="text-left sm:text-right">
-              <div className="text-emerald-100 text-xs sm:text-sm font-medium">XP của bạn</div>
-              <div className="text-2xl sm:text-3xl font-black">{currentUserRank.points} XP</div>
+              <div className="text-emerald-100 text-xs sm:text-sm font-medium">
+                {t("yourXp")}
+              </div>
+              <div className="text-2xl sm:text-3xl font-black">
+                {t("points", { points: currentUserRank.points })}
+              </div>
             </div>
           </div>
 
@@ -269,7 +285,12 @@ export function LeaderboardView() {
               />
             </div>
             <div className="flex justify-between text-xs text-emerald-100 font-medium">
-              <span>Còn {currentUserRank.nextRankPointsNeeded} XP nữa để lên hạng #{currentUserRank.nextRankNumber}</span>
+              <span>
+                {t("nextRank", {
+                  points: currentUserRank.nextRankPointsNeeded,
+                  rank: currentUserRank.nextRankNumber,
+                })}
+              </span>
               <span>{currentUserRank.percentileText}</span>
             </div>
           </div>
@@ -280,11 +301,17 @@ export function LeaderboardView() {
           <div className="p-5 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
             <h3 className="font-bold text-gray-800 text-base sm:text-lg flex items-center gap-2">
               <ListOrdered className="w-5 h-5 text-emerald-600" />
-              Bảng xếp hạng chi tiết
+              {t("detailsTitle")}
             </h3>
             <div className="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-500 bg-white px-3 py-1 rounded-full border border-gray-200">
               <Users className="w-4 h-4 text-gray-400" />
-              <span>{currentUserRank.totalLearners.toLocaleString("vi-VN")} người tham gia</span>
+              <span>
+                {t("participants", {
+                  count: currentUserRank.totalLearners.toLocaleString(
+                    locale === "vi" ? "vi-VN" : "en-US"
+                  ),
+                })}
+              </span>
             </div>
           </div>
 
@@ -315,23 +342,23 @@ export function LeaderboardView() {
                       <span>{user.userName}</span>
                       {isCurrentUser && (
                         <span className="bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-                          Bạn
+                          {t("you")}
                         </span>
                       )}
                     </div>
                     <div className="text-xs text-gray-500 flex items-center gap-2 mt-0.5">
-                      <span>Level {user.level ?? 10}</span>
+                      <span>{t("level", { level: user.level ?? 10 })}</span>
                       <span>•</span>
                       <span className="flex items-center gap-1 text-orange-600 font-medium">
                         <Flame className="w-3.5 h-3.5 fill-orange-500 text-orange-500" />
-                        {user.streak ?? 7} ngày streak
+                        {t("streakDays", { count: user.streak ?? 7 })}
                       </span>
                     </div>
                   </div>
 
                   <div className="text-right">
                     <div className="font-bold text-gray-900 text-sm sm:text-base">
-                      {user.points} XP
+                      {t("points", { points: user.points })}
                     </div>
                     {user.trend === "up" && (
                       <div className="text-xs font-semibold text-emerald-600 flex items-center justify-end gap-0.5">
@@ -365,7 +392,9 @@ export function LeaderboardView() {
                 className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold text-sm transition-colors py-1 px-4 rounded-xl hover:bg-emerald-50"
               >
                 <ChevronDown className="w-4 h-4" />
-                <span>Xem thêm {topUsers.length - visibleCount} người học</span>
+                <span>
+                  {t("loadMore", { count: topUsers.length - visibleCount })}
+                </span>
               </button>
             </div>
           )}
@@ -375,28 +404,34 @@ export function LeaderboardView() {
         <div className="bg-gradient-to-br from-amber-50/80 via-orange-50/50 to-amber-100/50 rounded-3xl p-6 border border-amber-200/80 shadow-xs">
           <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-4 flex items-center gap-2">
             <Gift className="w-5 h-5 text-amber-500" />
-            Phần thưởng mùa giải
+            {t("seasonRewards")}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-4 text-center border border-amber-100 shadow-xs transition-transform hover:-translate-y-0.5">
               <div className="text-3xl mb-2">🥇</div>
-              <div className="font-bold text-gray-900 text-sm">Hạng 1</div>
+              <div className="font-bold text-gray-900 text-sm">
+                {t("rankFirst")}
+              </div>
               <div className="text-xs text-amber-700 font-medium mt-1">
-                500 XP + Huy hiệu Vàng
+                {t("rewardGold")}
               </div>
             </div>
             <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-4 text-center border border-slate-100 shadow-xs transition-transform hover:-translate-y-0.5">
               <div className="text-3xl mb-2">🥈</div>
-              <div className="font-bold text-gray-900 text-sm">Hạng 2-3</div>
+              <div className="font-bold text-gray-900 text-sm">
+                {t("rankSecondThird")}
+              </div>
               <div className="text-xs text-slate-600 font-medium mt-1">
-                300 XP + Huy hiệu Bạc
+                {t("rewardSilver")}
               </div>
             </div>
             <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-4 text-center border border-orange-100 shadow-xs transition-transform hover:-translate-y-0.5">
               <div className="text-3xl mb-2">🥉</div>
-              <div className="font-bold text-gray-900 text-sm">Hạng 4-10</div>
+              <div className="font-bold text-gray-900 text-sm">
+                {t("rankFourthTenth")}
+              </div>
               <div className="text-xs text-orange-700 font-medium mt-1">
-                100 XP + Huy hiệu Đồng
+                {t("rewardBronze")}
               </div>
             </div>
           </div>
