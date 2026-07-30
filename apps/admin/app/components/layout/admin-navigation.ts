@@ -2,6 +2,7 @@ import {
   Activity,
   Bookmark,
   BookOpen,
+  BookOpenText,
   CheckSquare,
   HelpCircle,
   Layers,
@@ -17,6 +18,11 @@ export const adminNavigation = [
   { href: "/lessons", label: "Bài học (Lessons)", icon: Bookmark },
   { href: "/challenges", label: "Thử thách (Challenges)", icon: HelpCircle },
   { href: "/challenge-options", label: "Đáp án (Options)", icon: CheckSquare },
+  {
+    href: "/reading-passages",
+    label: "Đọc hiểu (Reading)",
+    icon: BookOpenText,
+  },
   { href: "/users", label: "Người dùng (Users)", icon: Users },
   {
     href: "/practice-sessions",
@@ -33,6 +39,8 @@ export function getAdminPageTitle(pathname: string) {
   if (pathname.startsWith("/challenges")) return "Quản lý thử thách";
   if (pathname.startsWith("/challenge-options"))
     return "Quản lý đáp án & câu hỏi";
+  if (pathname.startsWith("/reading-passages"))
+    return "Quản lý nội dung đọc hiểu";
   if (pathname.startsWith("/users")) return "Quản lý người dùng";
   if (pathname.startsWith("/practice-sessions"))
     return "Lịch sử luyện tập học viên";
