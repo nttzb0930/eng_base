@@ -51,9 +51,9 @@
     "data:merge-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion.ts",
     "data:merge-topic-expansion-accepted-all": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion-accepted-all.ts",
     "data:import-reading-a1": "dotenv -e ../../.env -- tsx ./scripts/reading/import-reading-a1.ts",
-    "data:inventory-reading-source": "dotenv -e ../../.env -- tsx ./scripts/reading/source/inventory-reading-source.ts",
-    "data:download-reading-source": "dotenv -e ../../.env -- tsx ./scripts/reading/source/download-reading-source.ts",
-    "data:validate-reading-source": "dotenv -e ../../.env -- tsx ./scripts/reading/source/validate-reading-source.ts",
+    "data:inventory-reading-source": "tsx ./scripts/reading/source/inventory-reading-source.ts",
+    "data:download-reading-source": "tsx ./scripts/reading/source/download-reading-source.ts",
+    "data:validate-reading-source": "tsx ./scripts/reading/source/validate-reading-source.ts",
     "data:import-reading-candidates": "dotenv -e ../../.env -- tsx ./scripts/reading/source/import-reading-candidates.ts"
   },
   "dependencies": {

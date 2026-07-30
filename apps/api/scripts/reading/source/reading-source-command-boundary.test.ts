@@ -12,11 +12,15 @@ test("registers separated Reading source operator commands", () => {
   ) as { scripts?: Record<string, string> };
   assert.equal(
     packageJson.scripts?.["data:download-reading-source"],
-    "dotenv -e ../../.env -- tsx ./scripts/reading/source/download-reading-source.ts",
+    "tsx ./scripts/reading/source/download-reading-source.ts",
   );
   assert.equal(
     packageJson.scripts?.["data:validate-reading-source"],
-    "dotenv -e ../../.env -- tsx ./scripts/reading/source/validate-reading-source.ts",
+    "tsx ./scripts/reading/source/validate-reading-source.ts",
+  );
+  assert.equal(
+    packageJson.scripts?.["data:inventory-reading-source"],
+    "tsx ./scripts/reading/source/inventory-reading-source.ts",
   );
   assert.equal(
     packageJson.scripts?.["data:import-reading-candidates"],
@@ -39,10 +43,14 @@ test("keeps inventory, download, validation, and Prisma boundaries separate", ()
   );
 
   assert.doesNotMatch(inventory, /downloadReadingSource|Prisma/u);
+  assert.doesNotMatch(inventory, /process\.env|dotenv/u);
   assert.match(download, /downloadReadingSource/u);
-  assert.doesNotMatch(download, /Prisma|migrate/u);
+  assert.doesNotMatch(download, /Prisma|migrate|process\.env|dotenv/u);
   assert.match(validation, /validateStoredReadingPackages/u);
-  assert.doesNotMatch(validation, /DautoeicReadingSource|Prisma|migrate/u);
+  assert.doesNotMatch(
+    validation,
+    /DautoeicReadingSource|Prisma|migrate|process\.env|dotenv/u,
+  );
 });
 
 test("does not invoke Reading source operations from runtime, build, seed, or CI", () => {

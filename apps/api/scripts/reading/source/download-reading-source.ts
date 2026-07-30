@@ -1,31 +1,26 @@
 import {
-  createReadingSourceFromEnvironment,
-  createReadingStorageFromEnvironment,
-  readingPositiveInteger,
-  requireReadingEnvironment,
+  loadReadingSourceRuntime,
 } from "./reading-source.cli.js";
 import { downloadReadingSource } from "./reading-source.download.js";
 
 async function main() {
-  const sourceUrl = requireReadingEnvironment("READING_SOURCE_URL");
-  const storage = createReadingStorageFromEnvironment();
-  const approvedSha256 = requireReadingEnvironment(
-    "READING_APPROVED_INVENTORY_SHA256",
-  );
+  const runtime = loadReadingSourceRuntime({
+    argv: process.argv.slice(2),
+    requireAuthorization: true,
+    requireApprovedSha: true,
+  });
+  if (!runtime.source || !runtime.approvedSha256) {
+    throw new Error("Reading download runtime is incomplete");
+  }
   const summary = await downloadReadingSource({
-    source: createReadingSourceFromEnvironment(sourceUrl),
-    storage,
-    approvedInventory: await storage.readApprovedInventory(approvedSha256),
-    license: {
-      name: requireReadingEnvironment("READING_LICENSE_NAME"),
-      reference: requireReadingEnvironment("READING_LICENSE_REFERENCE"),
-      intendedUse: requireReadingEnvironment("READING_LICENSE_INTENDED_USE"),
-    },
-    sourceWebUrl: sourceUrl,
-    concurrency: readingPositiveInteger(
-      "READING_SOURCE_DOWNLOAD_CONCURRENCY",
-      4,
+    source: runtime.source,
+    storage: runtime.storage,
+    approvedInventory: await runtime.storage.readApprovedInventory(
+      runtime.approvedSha256,
     ),
+    license: runtime.profile.license,
+    sourceWebUrl: runtime.profile.sourceWebUrl,
+    concurrency: runtime.profile.downloadConcurrency,
     now: () => new Date(),
   });
   console.log(JSON.stringify(summary, null, 2));

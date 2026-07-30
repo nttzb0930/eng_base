@@ -187,7 +187,7 @@ test("registers inventory as an explicit read-only operator command", () => {
   ) as { scripts?: Record<string, string> };
   assert.equal(
     packageJson.scripts?.["data:inventory-reading-source"],
-    "dotenv -e ../../.env -- tsx ./scripts/reading/source/inventory-reading-source.ts",
+    "tsx ./scripts/reading/source/inventory-reading-source.ts",
   );
 
   const source = readFileSync(

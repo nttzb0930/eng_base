@@ -4,7 +4,7 @@ import {
   importReadingSourceCandidates,
   type ReadingCandidateImportStore,
 } from "./reading-source.import.js";
-import { createReadingStorageFromEnvironment } from "./reading-source.cli.js";
+import { loadReadingSourceRuntime } from "./reading-source.cli.js";
 import prisma from "../../support/script-prisma.js";
 
 const store: ReadingCandidateImportStore = {
@@ -51,7 +51,9 @@ const store: ReadingCandidateImportStore = {
 async function main() {
   try {
     const summary = await importReadingSourceCandidates({
-      storage: createReadingStorageFromEnvironment(),
+      storage: loadReadingSourceRuntime({
+        argv: process.argv.slice(2),
+      }).storage,
       store,
     });
     console.log(JSON.stringify(summary, null, 2));
