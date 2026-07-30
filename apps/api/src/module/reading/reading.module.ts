@@ -16,9 +16,20 @@ import { ListReadingAttemptsUseCase } from "./use-cases/list-reading-attempts.us
 import { ListReadingPassagesUseCase } from "./use-cases/list-reading-passages.use-case";
 import { SubmitReadingAttemptUseCase } from "./use-cases/submit-reading-attempt.use-case";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
+import { AdminReadingSourceCandidatesController } from "./admin-reading-source-candidates.controller";
+import { ReadingSourceCandidateRepository } from "./repository/reading-source-candidate.repository";
+import { PrismaReadingSourceCandidateRepository } from "./repository/prisma-reading-source-candidate.repository";
+import { ConvertReadingSourceCandidateUseCase } from "./use-cases/convert-reading-source-candidate.use-case";
+import { GetReadingSourceCandidateUseCase } from "./use-cases/get-reading-source-candidate.use-case";
+import { ListReadingSourceCandidatesUseCase } from "./use-cases/list-reading-source-candidates.use-case";
+import { RejectReadingSourceCandidateUseCase } from "./use-cases/reject-reading-source-candidate.use-case";
 
 @Module({
-  controllers: [AdminReadingController, ReadingController],
+  controllers: [
+    AdminReadingController,
+    AdminReadingSourceCandidatesController,
+    ReadingController,
+  ],
   providers: [
     ListAdminReadingPassagesUseCase,
     ListReadingTopicOptionsUseCase,
@@ -32,6 +43,14 @@ import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
     ListReadingAttemptsUseCase,
     GetReadingAttemptUseCase,
     SubmitReadingAttemptUseCase,
+    ListReadingSourceCandidatesUseCase,
+    GetReadingSourceCandidateUseCase,
+    ConvertReadingSourceCandidateUseCase,
+    RejectReadingSourceCandidateUseCase,
+    {
+      provide: ReadingSourceCandidateRepository,
+      useClass: PrismaReadingSourceCandidateRepository,
+    },
     AdminJwtGuard,
     UserJwtGuard,
   ],

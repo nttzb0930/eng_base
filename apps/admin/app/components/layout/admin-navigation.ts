@@ -23,6 +23,11 @@ export const adminNavigation = [
     label: "Đọc hiểu (Reading)",
     icon: BookOpenText,
   },
+  {
+    href: "/reading-source-candidates",
+    label: "Duyệt nguồn Reading",
+    icon: BookOpenText,
+  },
   { href: "/users", label: "Người dùng (Users)", icon: Users },
   {
     href: "/practice-sessions",
@@ -42,6 +47,8 @@ export function getAdminPageTitle(pathname: string) {
   if (pathname.startsWith("/reading-passages"))
     return "Quản lý nội dung đọc hiểu";
   if (pathname.startsWith("/users")) return "Quản lý người dùng";
+  if (pathname.startsWith("/reading-source-candidates"))
+    return "Kiểm duyệt nguồn Reading";
   if (pathname.startsWith("/practice-sessions"))
     return "Lịch sử luyện tập học viên";
   if (pathname.startsWith("/settings")) return "Cấu hình hệ thống";

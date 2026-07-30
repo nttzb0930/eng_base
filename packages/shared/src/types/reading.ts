@@ -134,3 +134,54 @@ export type ReadingSourceCandidateIdentity = {
   sourceVersion: string;
   status: ReadingSourceCandidateStatus;
 };
+
+export type ReadingSourceChoice = {
+  label: string;
+  text: string;
+};
+
+export type AdminReadingSourceCandidateSummary = {
+  id: number;
+  source: string;
+  sourceId: string;
+  sourceVersion: string;
+  sourceLevel: "1" | "2";
+  sourceTitle: string;
+  sourceTopic: string | null;
+  status: ReadingSourceCandidateStatus;
+  contentSha256: string;
+  licenseReference: string;
+  questionCount: number;
+  importedAt: string;
+  convertedPassageId: number | null;
+};
+
+export type AdminReadingSourceCandidateDetail =
+  AdminReadingSourceCandidateSummary & {
+    sourceHtml: string;
+    plainTextDraft: string;
+    questions: Array<{
+      question: string;
+      translation: string;
+      explanation: string;
+      choices: ReadingSourceChoice[];
+      correct: string;
+    }>;
+    vocabulary: unknown[];
+    rejectionReason: string | null;
+  };
+
+export type AdminReadingSourceCandidateList = {
+  items: AdminReadingSourceCandidateSummary[];
+  total: number;
+};
+
+export type ConvertReadingSourceCandidatePayload =
+  CreateReadingPassagePayload;
+
+export type ConvertReadingSourceCandidateResult = {
+  candidate: AdminReadingSourceCandidateDetail;
+  passage: AdminReadingPassage;
+};
+
+export type RejectReadingSourceCandidatePayload = { reason: string };
