@@ -2,6 +2,10 @@ import {
   type AdminReadingPassage,
   type CreateReadingPassagePayload,
   type ReadingCefrLevel,
+  type ReadingAttemptResult,
+  type ReadingAttemptSummary,
+  type ReadingPassageDetail,
+  type ReadingPassageSummary,
   type ReadingPublicationStatus,
   type ReadingQuestionInput,
   type UpdateReadingPassagePayload,
@@ -100,6 +104,109 @@ export function toReadingContentInput(
         order: option.order,
         correct: option.correct,
       })),
+    })),
+  };
+}
+
+type ReadingAttemptSummaryRecord = {
+  id: number;
+  passage_id: number;
+  passage_title_snapshot: string;
+  correct_count: number;
+  total_count: number;
+  accuracy: number;
+  submitted_at: Date;
+};
+
+export function mapReadingAttemptSummary(
+  attempt: ReadingAttemptSummaryRecord,
+): ReadingAttemptSummary {
+  return {
+    id: attempt.id,
+    passageId: attempt.passage_id,
+    passageTitle: attempt.passage_title_snapshot,
+    correctCount: attempt.correct_count,
+    totalCount: attempt.total_count,
+    accuracy: attempt.accuracy,
+    submittedAt: attempt.submitted_at.toISOString(),
+  };
+}
+
+export function mapReadingPassageSummary(passage: {
+  id: number;
+  slug: string;
+  title: string;
+  cefr_level: string;
+  estimated_minutes: number;
+  vocabulary_topics: { title: string } | null;
+  _count: { reading_questions: number };
+  reading_attempts: ReadingAttemptSummaryRecord[];
+}): ReadingPassageSummary {
+  return {
+    id: passage.id,
+    slug: passage.slug,
+    title: passage.title,
+    cefrLevel: passage.cefr_level as ReadingCefrLevel,
+    topicTitle: passage.vocabulary_topics?.title ?? null,
+    estimatedMinutes: passage.estimated_minutes,
+    questionCount: passage._count.reading_questions,
+    latestAttempt: passage.reading_attempts[0]
+      ? mapReadingAttemptSummary(passage.reading_attempts[0])
+      : null,
+  };
+}
+
+export function mapReadingPassageDetail(passage: {
+  id: number;
+  slug: string;
+  title: string;
+  body: string;
+  cefr_level: string;
+  estimated_minutes: number;
+  vocabulary_topics: { title: string } | null;
+  reading_questions: Array<{
+    id: number;
+    prompt: string;
+    order: number;
+    reading_options: Array<{ id: number; text: string; order: number }>;
+  }>;
+}): ReadingPassageDetail {
+  return {
+    id: passage.id,
+    slug: passage.slug,
+    title: passage.title,
+    body: passage.body,
+    cefrLevel: passage.cefr_level as ReadingCefrLevel,
+    topicTitle: passage.vocabulary_topics?.title ?? null,
+    estimatedMinutes: passage.estimated_minutes,
+    questions: passage.reading_questions.map((question) => ({
+      id: question.id,
+      prompt: question.prompt,
+      order: question.order,
+      options: question.reading_options,
+    })),
+  };
+}
+
+export function mapReadingAttemptResult(
+  attempt: ReadingAttemptSummaryRecord & {
+    reading_attempt_answers: Array<{
+      question_id_snapshot: number;
+      question_prompt_snapshot: string;
+      selected_option_text_snapshot: string;
+      correct_option_text_snapshot: string;
+      correct: boolean;
+    }>;
+  },
+): ReadingAttemptResult {
+  return {
+    ...mapReadingAttemptSummary(attempt),
+    answers: attempt.reading_attempt_answers.map((answer) => ({
+      questionId: answer.question_id_snapshot,
+      question: answer.question_prompt_snapshot,
+      selectedOption: answer.selected_option_text_snapshot,
+      correctOption: answer.correct_option_text_snapshot,
+      correct: answer.correct,
     })),
   };
 }

@@ -85,3 +85,9 @@ export class ReadingPassageCreateDto
 }
 
 export class ReadingPassageUpdateDto extends ReadingPassageContentDto {}
+
+export class ReadingLevelQueryDto {
+  @IsIn(READING_CEFR_LEVELS)
+  @IsOptional()
+  level: ReadingCefrLevel = "A1";
+}
