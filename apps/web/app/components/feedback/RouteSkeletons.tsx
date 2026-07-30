@@ -309,6 +309,69 @@ export function LeaderboardPageSkeleton() {
   );
 }
 
+export function ReadingListPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <div className="mt-8 grid gap-4 md:grid-cols-2">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <div key={index} className="bg-card rounded-2xl border p-6">
+            <div className="flex justify-between">
+              <Skeleton className="h-6 w-12 rounded-full" />
+              <Skeleton className="h-4 w-24" />
+            </div>
+            <Skeleton className="mt-6 h-7 w-2/3" />
+            <Skeleton className="mt-3 h-4 w-4/5" />
+            <Skeleton className="mt-8 h-5 w-28" />
+          </div>
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function ReadingSessionPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <div className="mx-auto grid max-w-6xl gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_250px]">
+        <div>
+          <div className="bg-card rounded-2xl border p-8">
+            <Skeleton className="h-4 w-20" />
+            <Skeleton className="mt-4 h-10 w-2/3" />
+            <div className="mt-8 space-y-4">
+              {Array.from({ length: 7 }).map((_, index) => (
+                <Skeleton
+                  key={index}
+                  className={cn("h-4", index % 3 === 2 ? "w-4/5" : "w-full")}
+                />
+              ))}
+            </div>
+          </div>
+          <Skeleton className="mt-8 h-64 rounded-2xl border" />
+        </div>
+        <Skeleton className="order-first h-56 rounded-2xl border lg:order-last" />
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function ReadingResultPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <div className="mx-auto max-w-3xl space-y-6 px-4 py-8">
+        <div className="bg-card rounded-2xl border p-8">
+          <Skeleton className="h-4 w-24" />
+          <Skeleton className="mt-4 h-9 w-3/4" />
+          <Skeleton className="mt-8 h-16 w-28" />
+        </div>
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Skeleton key={index} className="h-52 rounded-2xl border" />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
 export function SessionPageSkeleton({
   embedded = false,
 }: {

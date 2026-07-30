@@ -49,7 +49,7 @@ test("main route loading files do not export the generic list skeleton", () => {
   for (const path of loadingFiles) {
     const source = readFileSync(path, "utf8");
     assert.equal(
-      source.includes("ListPageSkeleton"),
+      /\bListPageSkeleton\b/u.test(source),
       false,
       `${path} must use a page-specific skeleton`,
     );

@@ -8,3 +8,4 @@ export * from "./flashcard.js";
 export * from "./dashboard.js";
 export * from "./progress.js";
 export * from "./placement-test.js";
+export * from "./reading.js";

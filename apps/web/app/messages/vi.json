@@ -6,6 +6,7 @@
     "topics": "Chủ đề",
     "savedWords": "Từ đã lưu",
     "practice": "Luyện tập",
+    "reading": "Đọc hiểu",
     "flashcards": "Thẻ ghi nhớ",
     "leaderboard": "Bảng xếp hạng",
     "learner": "Học viên",
@@ -939,6 +940,60 @@
       "resetConfirm": "Bạn có chắc chắn muốn làm lại từ đầu? Mọi tiến độ kiểm tra hiện tại sẽ bị mất.",
       "resetSuccess": "Đã reset bài kiểm tra thành công!",
       "resetError": "Không thể reset bài kiểm tra."
+    }
+  },
+  "reading": {
+    "loading": "Đang tải nội dung đọc hiểu",
+    "list": {
+      "eyebrow": "Luyện đọc · A1",
+      "title": "Đọc đúng trình độ của bạn",
+      "description": "Rèn khả năng đọc hiểu với các đoạn văn ngắn, tập trung và câu hỏi dành cho trình độ CEFR A1.",
+      "results": "Các bài đọc hiện có",
+      "latestAccuracy": "Gần nhất: {accuracy}%",
+      "noTopic": "Tổng hợp",
+      "minutes": "{count} phút",
+      "questions": "{count} câu hỏi",
+      "start": "Bắt đầu đọc",
+      "readAgain": "Đọc lại"
+    },
+    "empty": {
+      "title": "Chưa có bài đọc A1",
+      "description": "Bài luyện đọc mới sẽ xuất hiện tại đây sau khi được xuất bản."
+    },
+    "error": {
+      "title": "Không thể tải nội dung đọc hiểu",
+      "description": "Hãy kiểm tra kết nối và thử lại.",
+      "retry": "Thử lại"
+    },
+    "session": {
+      "back": "Quay lại Đọc hiểu",
+      "notAvailable": "Bài đọc này không tồn tại hoặc chưa được xuất bản.",
+      "questionsTitle": "Kiểm tra mức độ hiểu bài",
+      "progress": "Đã trả lời {answered}/{total}",
+      "submit": "Nộp câu trả lời",
+      "submitError": "Không thể nộp câu trả lời. Hãy thử lại; các lựa chọn của bạn vẫn được giữ nguyên."
+    },
+    "preferences": {
+      "title": "Hiển thị bài đọc",
+      "fontSize": "Cỡ chữ",
+      "fontNormal": "Vừa",
+      "fontLarge": "Lớn",
+      "fontExtraLarge": "Rất lớn",
+      "lineHeight": "Giãn dòng",
+      "lineComfortable": "Thoải mái",
+      "lineRelaxed": "Rộng"
+    },
+    "result": {
+      "eyebrow": "Kết quả đọc hiểu",
+      "score": "Đúng {correct}/{total} câu",
+      "backToList": "Chọn bài đọc khác",
+      "reviewTitle": "Xem lại câu trả lời",
+      "question": "Câu {number}",
+      "correct": "Đúng",
+      "incorrect": "Cần xem lại",
+      "yourAnswer": "Câu trả lời của bạn",
+      "correctAnswer": "Đáp án đúng",
+      "notAvailable": "Kết quả này không tồn tại hoặc thuộc về học viên khác."
     }
   },
   "auth": {

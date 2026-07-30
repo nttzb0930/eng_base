@@ -68,6 +68,11 @@ export const Sidebar = ({ className }: SidebarProps) => {
           iconSrc="/learn.svg"
         />
         <SidebarItem
+          label={t("reading")}
+          href={withLocale("/reading")}
+          iconSrc="/learn.svg"
+        />
+        <SidebarItem
           label={t("flashcards")}
           href={withLocale("/flashcards")}
           iconSrc="/points.svg"

@@ -8,7 +8,10 @@ import {
   LESSON_CHALLENGE_TYPES,
   MAX_HEARTS,
   ONBOARDING_GOAL_IDS,
+  READING_CEFR_LEVELS,
+  READING_PUBLICATION_STATUSES,
   TARGET_LANGUAGE_IDS,
+  type AdminReadingPassage,
   type Course,
   type CreateCoursePayload,
   type DashboardStreak,
@@ -17,6 +20,9 @@ import {
   type LearningIntensityId,
   type OnboardingGoalId,
   type PaginatedCoursesResponse,
+  type ReadingAttemptResult,
+  type ReadingPassageSummary,
+  type ReadingSubmissionPayload,
   type TargetLanguageId,
   type VocabularyLearnerState,
   type VocabularyTopicDetails,
@@ -129,6 +135,68 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   assert.equal(learningIntensity, "standard");
   assert.equal(streak.currentStreak, 3);
   assert.equal(MAX_HEARTS, 5);
+});
+
+test("Shared publishes the Reading A1 root Interface", async () => {
+  const passage: AdminReadingPassage = {
+    id: 1,
+    slug: "a-day-in-hanoi",
+    title: "A Day in Hanoi",
+    body: "Mia lives in Hanoi.",
+    cefrLevel: "A1",
+    topicId: null,
+    topicTitle: null,
+    estimatedMinutes: 3,
+    status: "DRAFT",
+    publishedAt: null,
+    createdAt: "2026-07-30T00:00:00.000Z",
+    updatedAt: "2026-07-30T00:00:00.000Z",
+    questions: [],
+  };
+  const summary: ReadingPassageSummary = {
+    id: passage.id,
+    slug: passage.slug,
+    title: passage.title,
+    cefrLevel: passage.cefrLevel,
+    topicTitle: null,
+    estimatedMinutes: passage.estimatedMinutes,
+    questionCount: 1,
+    latestAttempt: null,
+  };
+  const submission: ReadingSubmissionPayload = {
+    submissionKey: "00000000-0000-4000-8000-000000000001",
+    answers: [{ questionId: 1, optionId: 2 }],
+  };
+  const result: ReadingAttemptResult = {
+    id: 10,
+    passageId: passage.id,
+    passageTitle: passage.title,
+    correctCount: 1,
+    totalCount: 1,
+    accuracy: 100,
+    submittedAt: "2026-07-30T00:05:00.000Z",
+    answers: [
+      {
+        questionId: 1,
+        question: "Where does Mia live?",
+        selectedOption: "In Hanoi",
+        correctOption: "In Hanoi",
+        correct: true,
+      },
+    ],
+  };
+
+  assert.deepEqual(READING_CEFR_LEVELS, ["A1"]);
+  assert.deepEqual(READING_PUBLICATION_STATUSES, ["DRAFT", "PUBLISHED"]);
+  assert.equal(summary.slug, passage.slug);
+  assert.equal(submission.answers.length, result.answers.length);
+
+  const declarations = await readFile(
+    new URL("../dist/types/reading.d.ts", import.meta.url),
+    "utf8"
+  );
+  assert.match(declarations, /export type AdminReadingPassage =/);
+  assert.match(declarations, /export type ReadingAttemptResult =/);
 });
 
 test("Shared publishes the vocabulary learner progress contract", async () => {

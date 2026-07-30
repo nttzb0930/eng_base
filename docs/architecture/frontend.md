@@ -66,6 +66,7 @@ apps/web/app/
     placement-test/
     practice/
     progress/
+    reading/
     review/
     topics/
     vocabulary/
@@ -89,8 +90,11 @@ sessions without changing their public URLs:
 apps/web/app/[locale]/
   (main)/                 navigation-enabled Learner browsing routes
     practice/page.tsx     Practice mode selection
+    reading/page.tsx      published A1 passage discovery
   (session)/              focused full-viewport learning routes
     practice/*            active Practice quizzes
+    reading/[slug]        passage and comprehension questions
+    reading/results/*     persisted Reading attempt result
   lesson/                 focused Lesson routes using the same session frame
 ```
 
@@ -111,6 +115,7 @@ apps/admin/app/
     auth/
     courses/
     practice/
+    reading/
     settings/
     users/
   hooks/                       demonstrated cross-capability Admin hooks
@@ -124,6 +129,13 @@ apps/admin/app/
 Admin has no domain `src/` tree. Admin is a caller and authorization mode in the
 API, not a backend domain owner. Frontend features are named after the capability
 whose data and workflows they present.
+
+Reading uses the same feature/view profile in both frontends. Admin exposes
+`/reading-passages` for nested question authoring and publication. Web exposes a
+localized `/reading` list plus focused session/result routes. Display
+preferences contain only font scale and line height and are stored defensively
+under `reading-display-preferences`; they are not learner progress or a server
+contract.
 
 ## Browser data flow
 

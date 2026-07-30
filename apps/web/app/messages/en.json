@@ -6,6 +6,7 @@
     "topics": "Topics",
     "savedWords": "Saved Words",
     "practice": "Practice",
+    "reading": "Reading",
     "flashcards": "Flashcards",
     "leaderboard": "Leaderboard",
     "learner": "Learner",
@@ -939,6 +940,60 @@
       "resetConfirm": "Are you sure you want to start over? All current test progress will be lost.",
       "resetSuccess": "Successfully reset the test!",
       "resetError": "Could not reset the test."
+    }
+  },
+  "reading": {
+    "loading": "Loading reading content",
+    "list": {
+      "eyebrow": "Reading practice · A1",
+      "title": "Read at your level",
+      "description": "Build comprehension with short, focused passages and questions written for CEFR A1.",
+      "results": "Available reading passages",
+      "latestAccuracy": "Latest: {accuracy}%",
+      "noTopic": "General",
+      "minutes": "{count} min",
+      "questions": "{count} questions",
+      "start": "Start reading",
+      "readAgain": "Read again"
+    },
+    "empty": {
+      "title": "No A1 passages yet",
+      "description": "New reading practice will appear here when it is published."
+    },
+    "error": {
+      "title": "Reading content could not be loaded",
+      "description": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "session": {
+      "back": "Back to Reading",
+      "notAvailable": "This passage is unavailable or has not been published.",
+      "questionsTitle": "Check your understanding",
+      "progress": "{answered} of {total} answered",
+      "submit": "Submit answers",
+      "submitError": "Your answers could not be submitted. Try again; your selections have been kept."
+    },
+    "preferences": {
+      "title": "Reading display",
+      "fontSize": "Font size",
+      "fontNormal": "Normal",
+      "fontLarge": "Large",
+      "fontExtraLarge": "Extra large",
+      "lineHeight": "Line spacing",
+      "lineComfortable": "Comfortable",
+      "lineRelaxed": "Relaxed"
+    },
+    "result": {
+      "eyebrow": "Reading result",
+      "score": "{correct} of {total} correct",
+      "backToList": "Choose another passage",
+      "reviewTitle": "Review your answers",
+      "question": "Question {number}",
+      "correct": "Correct",
+      "incorrect": "Needs review",
+      "yourAnswer": "Your answer",
+      "correctAnswer": "Correct answer",
+      "notAvailable": "This result does not exist or belongs to another learner."
     }
   },
   "auth": {

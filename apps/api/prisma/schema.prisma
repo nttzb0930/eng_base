@@ -8,21 +8,22 @@ datasource db {
 
 /// Người dùng hệ thống (admin, staff)
 model users {
-  id            String    @id @default(uuid())
+  id               String             @id @default(uuid())
   /// Email đăng nhập, duy nhất trong hệ thống
-  email         String    @unique
+  email            String             @unique
   /// Mật khẩu đã được hash (PBKDF2)
-  password      String
+  password         String
   /// Tên đăng nhập duy nhất
-  username      String    @unique
+  username         String             @unique
   /// Họ và tên đầy đủ
-  full_name     String
+  full_name        String
   /// Vai trò: ADMIN, USER
-  role          user_role @default(USER)
+  role             user_role          @default(USER)
   /// JWT refresh token (lưu để invalidate khi logout)
-  refresh_token String?
-  created_at    DateTime  @default(now()) @db.Timestamp(6)
-  updated_at    DateTime  @default(now()) @updatedAt @db.Timestamp(6)
+  refresh_token    String?
+  created_at       DateTime           @default(now()) @db.Timestamp(6)
+  updated_at       DateTime           @default(now()) @updatedAt @db.Timestamp(6)
+  reading_attempts reading_attempts[]
 
   @@index([role])
   @@index([email])
@@ -234,6 +235,7 @@ model vocabulary_topics {
   order                  Int
   created_at             DateTime                 @default(now()) @db.Timestamp(6)
   vocabulary_item_topics vocabulary_item_topics[]
+  reading_passages       reading_passages[]
 }
 
 model vocabulary_item_topics {
@@ -245,6 +247,80 @@ model vocabulary_item_topics {
   vocabulary_topics  vocabulary_topics @relation(fields: [topic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "vocab_item_topics_topic_id_fk")
 
   @@unique([vocabulary_item_id, topic_id], map: "vocab_item_topics_item_topic_idx")
+}
+
+model reading_passages {
+  id                Int                        @id @default(autoincrement())
+  slug              String                     @unique
+  title             String
+  body              String
+  cefr_level        String                     @db.VarChar(2)
+  topic_id          Int?
+  estimated_minutes Int
+  status            reading_publication_status @default(DRAFT)
+  published_at      DateTime?                  @db.Timestamp(6)
+  created_at        DateTime                   @default(now()) @db.Timestamp(6)
+  updated_at        DateTime                   @default(now()) @updatedAt @db.Timestamp(6)
+  vocabulary_topics vocabulary_topics?         @relation(fields: [topic_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "reading_passages_topic_id_fkey")
+  reading_questions reading_questions[]
+  reading_attempts  reading_attempts[]
+
+  @@index([cefr_level, status], map: "reading_passages_level_status_idx")
+}
+
+model reading_questions {
+  id               Int               @id @default(autoincrement())
+  passage_id       Int
+  prompt           String
+  order            Int
+  reading_passages reading_passages  @relation(fields: [passage_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_questions_passage_id_fkey")
+  reading_options  reading_options[]
+
+  @@unique([passage_id, order], map: "reading_questions_passage_order_key")
+}
+
+model reading_options {
+  id                Int               @id @default(autoincrement())
+  question_id       Int
+  text              String
+  order             Int
+  correct           Boolean           @default(false)
+  reading_questions reading_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_options_question_id_fkey")
+
+  @@unique([question_id, order], map: "reading_options_question_order_key")
+}
+
+model reading_attempts {
+  id                      Int                       @id @default(autoincrement())
+  user_id                 String
+  passage_id              Int
+  submission_key          String                    @db.Uuid
+  submission_fingerprint  String
+  passage_title_snapshot  String
+  correct_count           Int
+  total_count             Int
+  accuracy                Int
+  submitted_at            DateTime                  @default(now()) @db.Timestamp(6)
+  users                   users                     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_attempts_user_id_fkey")
+  reading_passages        reading_passages          @relation(fields: [passage_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "reading_attempts_passage_id_fkey")
+  reading_attempt_answers reading_attempt_answers[]
+
+  @@unique([user_id, submission_key], map: "reading_attempts_user_submission_key_key")
+  @@index([user_id, submitted_at], map: "reading_attempts_user_submitted_idx")
+}
+
+model reading_attempt_answers {
+  id                            Int              @id @default(autoincrement())
+  attempt_id                    Int
+  question_id_snapshot          Int
+  selected_option_id_snapshot   Int
+  question_prompt_snapshot      String
+  selected_option_text_snapshot String
+  correct_option_text_snapshot  String
+  correct                       Boolean
+  reading_attempts              reading_attempts @relation(fields: [attempt_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_attempt_answers_attempt_id_fkey")
+
+  @@unique([attempt_id, question_id_snapshot], map: "reading_attempt_answers_attempt_question_key")
 }
 
 enum challenge_direction {
@@ -260,6 +336,11 @@ enum type {
 enum user_role {
   ADMIN
   USER
+}
+
+enum reading_publication_status {
+  DRAFT
+  PUBLISHED
 }
 
 model system_settings {
