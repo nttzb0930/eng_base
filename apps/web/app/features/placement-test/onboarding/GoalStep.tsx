@@ -1,26 +1,31 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { ONBOARDING_GOAL_IDS, type OnboardingGoalId } from "@repo/shared";
 import { cn } from "@/app/utils/cn";
 
 type GoalOption = {
-  id: string;
   nameKey: string;
   emoji: string;
 };
 
-const GOALS: GoalOption[] = [
-  { id: "travel", nameKey: "step3.goalTravel", emoji: "✈️" },
-  { id: "career", nameKey: "step3.goalCareer", emoji: "💼" },
-  { id: "exams", nameKey: "step3.goalExams", emoji: "🎓" },
-  { id: "culture", nameKey: "step3.goalCulture", emoji: "🎬" },
-  { id: "study_abroad", nameKey: "step3.goalStudyAbroad", emoji: "🏫" },
-  { id: "hobby", nameKey: "step3.goalHobby", emoji: "🎨" },
-];
+const GOAL_METADATA: Record<OnboardingGoalId, GoalOption> = {
+  travel: { nameKey: "step3.goalTravel", emoji: "✈️" },
+  career: { nameKey: "step3.goalCareer", emoji: "💼" },
+  exams: { nameKey: "step3.goalExams", emoji: "🎓" },
+  culture: { nameKey: "step3.goalCulture", emoji: "🎬" },
+  study_abroad: { nameKey: "step3.goalStudyAbroad", emoji: "🏫" },
+  hobby: { nameKey: "step3.goalHobby", emoji: "🎨" },
+};
+
+const GOALS = ONBOARDING_GOAL_IDS.map((id) => ({
+  id,
+  ...GOAL_METADATA[id],
+}));
 
 type GoalStepProps = {
-  selectedGoals: string[];
-  onToggleGoal: (id: string) => void;
+  selectedGoals: OnboardingGoalId[];
+  onToggleGoal: (id: OnboardingGoalId) => void;
   customGoal: string;
   onCustomGoalChange: (value: string) => void;
 };

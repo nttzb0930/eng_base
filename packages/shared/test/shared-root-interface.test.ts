@@ -4,13 +4,19 @@ import test from "node:test";
 
 import {
   CEFR_LEVELS,
+  LEARNING_INTENSITY_IDS,
   LESSON_CHALLENGE_TYPES,
   MAX_HEARTS,
+  ONBOARDING_GOAL_IDS,
+  TARGET_LANGUAGE_IDS,
   type Course,
   type CreateCoursePayload,
   type FlashcardDeckSummary,
   type FlashcardSummary,
+  type LearningIntensityId,
+  type OnboardingGoalId,
   type PaginatedCoursesResponse,
+  type TargetLanguageId,
   type VocabularyLearnerState,
   type VocabularyTopicDetails,
   type VocabularyTopicProgressStats,
@@ -83,6 +89,9 @@ test("Shared exposes the TypeScript-only root Interface", () => {
     masteryLevel: "learning",
   };
   const topicDetailsItems: VocabularyTopicDetails["items"] = [];
+  const targetLanguage: TargetLanguageId = "en";
+  const onboardingGoal: OnboardingGoalId = "travel";
+  const learningIntensity: LearningIntensityId = "standard";
 
   assert.equal(course.title, payload.title);
   assert.equal(course.code, payload.code);
@@ -93,6 +102,24 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   assert.deepEqual(topicDetailsItems, []);
   assert.deepEqual(CEFR_LEVELS, ["A1", "A2", "B1", "B2"]);
   assert.deepEqual(LESSON_CHALLENGE_TYPES, ["SELECT", "ASSIST"]);
+  assert.deepEqual(TARGET_LANGUAGE_IDS, ["en", "ja", "de", "zh", "ko"]);
+  assert.deepEqual(ONBOARDING_GOAL_IDS, [
+    "travel",
+    "career",
+    "exams",
+    "culture",
+    "study_abroad",
+    "hobby",
+  ]);
+  assert.deepEqual(LEARNING_INTENSITY_IDS, [
+    "relaxed",
+    "standard",
+    "accelerated",
+    "intensive",
+  ]);
+  assert.equal(targetLanguage, "en");
+  assert.equal(onboardingGoal, "travel");
+  assert.equal(learningIntensity, "standard");
   assert.equal(MAX_HEARTS, 5);
 });
 

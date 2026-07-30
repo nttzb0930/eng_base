@@ -5,6 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LogOut } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import type {
+  LearningIntensityId,
+  OnboardingGoalId,
+  TargetLanguageId,
+} from "@repo/shared";
 import { Button } from "@/app/components/ui/button";
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
 import type { Locale } from "@/app/i18n/config";
@@ -41,10 +46,10 @@ import SystemLanguageStep from "./SystemLanguageStep";
 type NewUserOnboardingProps = {
   onComplete: (
     level: string,
-    languages?: string[],
-    goals?: string[],
-    intensity?: string,
-    primaryLanguage?: string,
+    languages?: TargetLanguageId[],
+    goals?: OnboardingGoalId[],
+    intensity?: LearningIntensityId,
+    primaryLanguage?: TargetLanguageId,
     customGoal?: string,
   ) => void;
   onStartTest: () => void;
@@ -67,12 +72,12 @@ export default function NewUserOnboarding({
   const [step, setStep] = useState(() =>
     resolveInitialOnboardingStep(initialStep, initialData),
   );
-  const [selectedLangs, setSelectedLangs] = useState<string[]>(initialData?.selectedLangs || []);
-  const [primaryLang, setPrimaryLang] = useState<string | null>(initialData?.primaryLang || null);
-  const [selectedLevels, setSelectedLevels] = useState<Record<string, string>>(initialData?.selectedLevels || {});
-  const [selectedGoals, setSelectedGoals] = useState<string[]>(initialData?.selectedGoals || []);
+  const [selectedLangs, setSelectedLangs] = useState<TargetLanguageId[]>(initialData?.selectedLangs || []);
+  const [primaryLang, setPrimaryLang] = useState<TargetLanguageId | null>(initialData?.primaryLang || null);
+  const [selectedLevels, setSelectedLevels] = useState<Partial<Record<TargetLanguageId, string>>>(initialData?.selectedLevels || {});
+  const [selectedGoals, setSelectedGoals] = useState<OnboardingGoalId[]>(initialData?.selectedGoals || []);
   const [customGoal, setCustomGoal] = useState<string>(initialData?.customGoal || "");
-  const [selectedIntensity, setSelectedIntensity] = useState<string>(initialData?.selectedIntensity || "standard");
+  const [selectedIntensity, setSelectedIntensity] = useState<LearningIntensityId>(initialData?.selectedIntensity || "standard");
   const [isLeaveModalOpen, setIsLeaveModalOpen] = useState(false);
   const bypassWarning = useRef(false);
 
@@ -156,9 +161,9 @@ export default function NewUserOnboarding({
     }
   };
 
-  const handleToggleLang = (id: string) => {
+  const handleToggleLang = (id: TargetLanguageId) => {
     const isSelected = selectedLangs.includes(id);
-    let updatedLangs: string[];
+    let updatedLangs: TargetLanguageId[];
     if (isSelected) {
       updatedLangs = selectedLangs.filter((lang) => lang !== id);
     } else {
@@ -206,13 +211,13 @@ export default function NewUserOnboarding({
     );
   };
 
-  const handleSetPrimary = (id: string) => {
+  const handleSetPrimary = (id: TargetLanguageId) => {
     if (selectedLangs.includes(id)) {
       setPrimaryLang(id);
     }
   };
 
-  const handleToggleGoal = (id: string) => {
+  const handleToggleGoal = (id: OnboardingGoalId) => {
     if (selectedGoals.includes(id)) {
       setSelectedGoals((prev) => prev.filter((g) => g !== id));
     } else {
@@ -394,7 +399,8 @@ export default function NewUserOnboarding({
               onClick={() => {
                 setIsLeaveModalOpen(false);
                 bypassWarning.current = true;
-                const finalLangs = selectedLangs.length > 0 ? selectedLangs : ["en"];
+                const finalLangs: TargetLanguageId[] =
+                  selectedLangs.length > 0 ? selectedLangs : ["en"];
                 const finalPrimary = primaryLang || finalLangs[0];
                 onComplete(
                   "A1",
