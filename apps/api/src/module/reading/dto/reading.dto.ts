@@ -1,12 +1,14 @@
 import { Type } from "class-transformer";
 import {
   IsArray,
+  ArrayMinSize,
   IsBoolean,
   IsIn,
   IsInt,
   IsNotEmpty,
   IsOptional,
   IsString,
+  IsUUID,
   Matches,
   Min,
   ValidateNested,
@@ -17,6 +19,7 @@ import {
   type ReadingCefrLevel,
   type ReadingOptionInput,
   type ReadingQuestionInput,
+  type ReadingSubmissionPayload,
   type UpdateReadingPassagePayload,
 } from "@repo/shared";
 
@@ -90,4 +93,25 @@ export class ReadingLevelQueryDto {
   @IsIn(READING_CEFR_LEVELS)
   @IsOptional()
   level: ReadingCefrLevel = "A1";
+}
+
+export class ReadingAnswerDto {
+  @IsInt()
+  @Min(1)
+  questionId!: number;
+
+  @IsInt()
+  @Min(1)
+  optionId!: number;
+}
+
+export class ReadingSubmissionDto implements ReadingSubmissionPayload {
+  @IsUUID()
+  submissionKey!: string;
+
+  @IsArray()
+  @ArrayMinSize(1)
+  @ValidateNested({ each: true })
+  @Type(() => ReadingAnswerDto)
+  answers!: ReadingAnswerDto[];
 }

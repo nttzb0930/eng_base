@@ -14,6 +14,7 @@ import { GetReadingAttemptUseCase } from "./use-cases/get-reading-attempt.use-ca
 import { GetReadingPassageUseCase } from "./use-cases/get-reading-passage.use-case";
 import { ListReadingAttemptsUseCase } from "./use-cases/list-reading-attempts.use-case";
 import { ListReadingPassagesUseCase } from "./use-cases/list-reading-passages.use-case";
+import { SubmitReadingAttemptUseCase } from "./use-cases/submit-reading-attempt.use-case";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 
 @Module({
@@ -30,6 +31,7 @@ import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
     GetReadingPassageUseCase,
     ListReadingAttemptsUseCase,
     GetReadingAttemptUseCase,
+    SubmitReadingAttemptUseCase,
     AdminJwtGuard,
     UserJwtGuard,
   ],

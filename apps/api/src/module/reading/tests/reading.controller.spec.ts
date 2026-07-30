@@ -43,5 +43,6 @@ test("Reading controller exposes guarded learner read routes", () => {
     "GET attempts/:attemptId",
     "GET passages",
     "GET passages/:slug",
+    "POST passages/:passageId/attempts",
   ]);
 });
