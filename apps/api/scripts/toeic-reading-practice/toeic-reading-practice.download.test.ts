@@ -111,6 +111,11 @@ test("downloads only approved Reading JSON and finalizes manifest last", async (
     storage,
     approvedInventorySha256: "a".repeat(64),
     now: () => new Date("2026-07-31T00:00:00.000Z"),
+    license: {
+      name: "Public source",
+      reference: "https://source.example/mock-test",
+      intendedUse: "Review before publication",
+    },
   });
 
   assert.deepEqual(requestedTests, ["test-1"]);
@@ -118,6 +123,9 @@ test("downloads only approved Reading JSON and finalizes manifest last", async (
     writes.map((write) => write.name),
     ["content.json", "validation.json", "manifest.json"]
   );
+  const manifest = writes.find((write) => write.name === "manifest.json")
+    ?.value as { license?: { reference?: string } };
+  assert.equal(manifest.license?.reference, "https://source.example/mock-test");
   assert.deepEqual(result.completed, ["test-1"]);
   assert.deepEqual(result.questionCounts, { "5": 30, "6": 16, "7": 54 });
 });
@@ -152,6 +160,11 @@ test("rejects incomplete content without finalizing a manifest", async () => {
     storage,
     approvedInventorySha256: "a".repeat(64),
     now: () => new Date("2026-07-31T00:00:00.000Z"),
+    license: {
+      name: "Public source",
+      reference: "https://source.example/mock-test",
+      intendedUse: "Review before publication",
+    },
   });
 
   assert.equal(result.rejected.length, 1);

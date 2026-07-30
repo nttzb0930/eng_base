@@ -20,6 +20,11 @@ export async function downloadToeicReadingPractice(input: {
   >;
   approvedInventorySha256: string;
   now: () => Date;
+  license: {
+    name: string;
+    reference: string;
+    intendedUse: string;
+  };
 }): Promise<ToeicReadingDownloadSummary> {
   const inventory = await input.storage.readInventory(
     input.approvedInventorySha256
@@ -126,6 +131,7 @@ export async function downloadToeicReadingPractice(input: {
           sourceVersion: canonical.sourceVersion,
           inventorySha256: inventory.inventorySha256,
           acquiredAt: input.now().toISOString(),
+          license: input.license,
           mediaStatus:
             canonical.media.length === 0 ? "NOT_REQUIRED" : "PENDING",
         }

@@ -15,6 +15,7 @@ async function main() {
     storage: runtime.storage,
     approvedInventorySha256: runtime.options.approvedSha256,
     now: () => new Date(),
+    license: runtime.profile.license,
   });
   console.log(JSON.stringify(result, null, 2));
   if (result.rejected.length > 0 || result.failed.length > 0) {
