@@ -84,7 +84,7 @@ export function FlashcardsView() {
             href={withLocale("/flashcards/session?deck=due")}
             className="border-border/80 bg-card text-foreground shadow-xs hover:bg-muted inline-flex min-h-10 shrink-0 items-center justify-center gap-1.5 rounded-xl border px-4 text-xs font-semibold transition-colors"
           >
-            {t("reviewDue")}
+            {t("dueReview")}
           </Link>
         </header>
 
@@ -146,7 +146,7 @@ export function FlashcardsView() {
                 className="inline-flex items-center gap-2.5 rounded-xl bg-white px-7 py-3.5 text-sm font-semibold text-emerald-700 shadow-lg transition-all duration-200 hover:scale-105 hover:bg-emerald-50 hover:shadow-xl active:scale-95"
               >
                 <Play className="h-4 w-4 fill-emerald-700 text-emerald-700" />
-                {t("reviewDue")}
+                {t("dueReview")}
               </Link>
               <p className="mt-2.5 text-xs font-medium text-emerald-100/90">
                 {t("dueSessionMeta", { count: dueCount })}

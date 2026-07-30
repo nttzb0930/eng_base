@@ -115,7 +115,7 @@ export const PracticeResult = ({
             {perfect ? "100%" : `${accuracy}%`}
           </span>
           <span className="absolute -right-5 top-14 rounded-full border bg-card px-3 py-1.5 text-xs font-bold shadow-sm">
-            +{earnedXp} XP
+            +{earnedXp} {t("xpUnit")}
           </span>
           <span className="absolute -left-2 bottom-7 rounded-full border bg-card px-3 py-1.5 text-xs font-bold shadow-sm">
             {correctCount}/{totalCount}
@@ -140,7 +140,9 @@ export const PracticeResult = ({
           </p>
           <p className="mt-1 text-3xl font-black tabular-nums">
             {earnedXp}{" "}
-            <span className="text-sm font-semibold text-muted-foreground">XP</span>
+            <span className="text-sm font-semibold text-muted-foreground">
+              {t("xpUnit")}
+            </span>
           </p>
         </div>
       </section>

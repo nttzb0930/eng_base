@@ -62,7 +62,7 @@ export function SignUpView() {
         <Link href="/" className="z-10 flex items-center gap-x-3">
           <Image
             src="/mascot.svg"
-            alt="Mascot"
+            alt={t("mascotAlt")}
             height={44}
             width={44}
             className="drop-shadow-md"
@@ -77,7 +77,7 @@ export function SignUpView() {
           <div className="relative h-[320px] w-[320px] transition-transform duration-500 ease-out hover:scale-105">
             <Image
               src="/hero.svg"
-              alt="Hero Illustration"
+              alt={t("heroAlt")}
               fill
               className="object-contain"
               priority
@@ -103,7 +103,7 @@ export function SignUpView() {
           {/* Logo visible only on Mobile */}
           <div className="mb-8 flex justify-center lg:hidden">
             <Link href="/" className="flex items-center gap-x-3">
-              <Image src="/mascot.svg" alt="Mascot" height={40} width={40} />
+              <Image src="/mascot.svg" alt={t("mascotAlt")} height={40} width={40} />
               <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
                 {appName}
               </h1>
