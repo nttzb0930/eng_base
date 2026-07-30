@@ -33,6 +33,11 @@ follow the ownership and dependency rules in
 - **Vocabulary progress**: the learner's persistent correctness, mastery, and scheduling state for one vocabulary item.
 - **Review session**: a set of challenges composed from saved, due, or weak vocabulary items.
 - **Practice session**: a standalone activity such as fill-blank, listening, dictation, or weak-word practice.
+- **Reading passage**: a publishable CEFR-scoped text with an optional Topic,
+  estimated reading time, and ordered comprehension questions/options.
+- **Reading attempt**: an idempotently submitted, backend-graded result owned by
+  Reading. Its answer rows keep immutable question, selected-option, and
+  correct-option text snapshots so later content edits do not rewrite history.
 - **Learning session**: the Web lifecycle shared by Lesson, Practice, and Review
   presentation: answer feedback, attempt counts, reviewed items, and one-time
   completion recording. Each owning capability keeps its scoring, persistence
@@ -77,6 +82,9 @@ follow the ownership and dependency rules in
   delivery remains in the capability whose behavior it exposes.
 - Vocabulary owns vocabulary item/progress/example types and the mapping and
   challenge-building implementation used by learning flows.
+- Reading owns passage publication, learner discovery, comprehension grading,
+  and Reading attempt history. It may reference the Topic taxonomy, but it does
+  not update Practice sessions or Vocabulary progress.
 - Add seams only when there are at least two real adapters, such as Prisma in production and an in-memory repository in tests.
 - A use case represents one goal. Plural CRUD/management use-case aggregates
   and compatibility facades that only forward to goal use cases are forbidden.

@@ -3,7 +3,7 @@
 Tài liệu này mô tả trạng thái hiện tại và hướng phát triển tiếp theo của các
 tính năng học tập chính trong English Base. Trạng thái được đối chiếu với mã
 nguồn, wire contract, Prisma schema và các ADR đang được chấp nhận tại ngày
-22/07/2026.
+30/07/2026.
 
 Tài liệu không coi một giao diện minh họa hoặc dữ liệu hard-code là một tính
 năng đã hoàn thành. Một tính năng chỉ được đánh dấu **Đã triển khai** khi luồng
@@ -26,7 +26,7 @@ Learner, nghiệp vụ API và dữ liệu cần thiết đã kết nối end-to
 | 6.2  | Hỗ trợ Anh - Việt     | **Đã triển khai**          | Hoàn thiện độ phủ bản dịch và loại bỏ chuỗi JSX chưa qua i18n.                  |
 | 6.3  | Quiz hai chiều        | **Đã triển khai**          | Mở rộng coverage và analytics theo từng hướng.                                  |
 | 6.5  | Đáp án nhiễu          | **Đã triển khai một phần** | Đưa Topic practice về backend và nâng chất lượng distractor.                    |
-| 6.6  | Reading theo level    | **Chưa triển khai**        | Xây capability Reading dựa trên CEFR, passage và comprehension question.        |
+| 6.6  | Reading theo level    | **Đã triển khai một phần** | Mở rộng A2–B2; thêm highlight/dictionary và triển khai migration vận hành.      |
 | 6.7  | AI sửa Writing        | **Chưa triển khai**        | Xây Writing workflow và AI feedback có cấu trúc.                                |
 | 6.8  | Audio phát âm         | **Đã triển khai**          | Kiểm soát coverage, fallback và chất lượng audio.                               |
 | 6.9  | Ôn tập cá nhân hóa    | **Đã triển khai một phần** | Phát triển từ scheduler theo luật sang kế hoạch thích ứng theo mục tiêu.        |
@@ -235,7 +235,21 @@ Tạo các lựa chọn sai đủ hợp lý để kiểm tra kiến thức thậ
 
 ## 6.6. Reading theo level
 
-**Trạng thái: Chưa triển khai.**
+**Trạng thái: Đã triển khai một phần — vertical slice A1.**
+
+### Đã triển khai
+
+- Persistence và migration cho passage, question, option, publication status,
+  attempt và immutable answer snapshot.
+- Shared wire contract dùng chung cho API, Admin và Web.
+- Admin tạo/sửa passage A1, quản lý câu hỏi–đáp án lồng nhau và
+  publish/unpublish.
+- Learner xem danh sách passage đã publish, đọc toàn văn, chọn đáp án và xem
+  kết quả/lịch sử được backend chấm.
+- Submission idempotent theo learner/submission key; Reading attempt độc lập
+  với Practice session và Vocabulary progress.
+- Giao diện Anh–Việt, điều khiển cỡ chữ/giãn dòng lưu localStorage, keyboard
+  focus và skeleton riêng cho list/session/result.
 
 ### Nền tảng có thể tái sử dụng
 
@@ -263,7 +277,7 @@ Reading Passage
        └─ answer options / expected answer
 ```
 
-Các goal interface dự kiến:
+Các goal interface hiện có:
 
 - lấy danh sách passage theo CEFR level;
 - bắt đầu reading session;
@@ -271,17 +285,18 @@ Các goal interface dự kiến:
 - hoàn thành session và ghi kết quả;
 - xem lịch sử/accuracy theo level.
 
-### Thứ tự thực hiện
+### Phạm vi còn lại
 
-1. Định nghĩa Shared wire types và persistence model cho passage/question.
-2. Xây Admin workflow tạo và publish reading content.
-3. Xây API list/detail/session result với validation.
-4. Xây Web reading view có font size, line height và keyboard accessibility.
-5. Thêm vocabulary highlight/dictionary sau khi core comprehension ổn định.
+1. Triển khai migration đã review lên từng môi trường vận hành và author dữ
+   liệu A1 thật; repository migration không chứng minh database đã apply.
+2. Mở rộng content/policy và learner filter từ A1 sang A2–B2.
+3. Thêm vocabulary highlight/dictionary sau khi core comprehension ổn định.
+4. Bổ sung analytics tổng hợp accuracy theo level/topic; lịch sử attempt thô đã
+   có nhưng chưa có dashboard phân tích.
 
 ### Tiêu chí hoàn thành
 
-- Learner chọn được A1–B2 và nhận passage đúng level.
+- Learner nhận đúng passage A1 đã publish; A2–B2 vẫn là phạm vi tiếp theo.
 - Câu hỏi comprehension được chấm bởi backend.
 - Kết quả Reading được ghi riêng, không làm sai vocabulary review counters.
 - Admin có thể tạo, sửa, publish và unpublish passage.

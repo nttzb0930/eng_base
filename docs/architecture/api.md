@@ -57,6 +57,22 @@ Admin is a caller and authorization mode, not a default business owner. An
 `/admin/*` controller stays with Users, Practice, Settings, Courses, or the
 capability whose behavior it exposes.
 
+### Reading ownership
+
+`src/module/reading` owns both Admin authoring/publication and Learner
+discovery, submission, history, and result delivery. Passage content is
+validated before persistence and again before publication. Learner detail
+queries never select option correctness; grading uses server-owned content only.
+
+Reading submissions are idempotent per `(user_id, submission_key)`. A retry with
+the same normalized answer fingerprint returns the persisted attempt, while a
+different payload using the same key is rejected. Attempt answers persist
+immutable text snapshots so editing a passage cannot alter prior results.
+
+Reading may use `vocabulary_topics` as an optional taxonomy reference. It does
+not write `practice_sessions`, `practice_session_items`, or
+`user_vocabulary_progress`; Reading accuracy is an independent learning signal.
+
 ## Goal use cases
 
 One use case represents one user or system goal. Goal files stay flat under
