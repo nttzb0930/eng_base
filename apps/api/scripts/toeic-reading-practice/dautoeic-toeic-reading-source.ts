@@ -264,7 +264,6 @@ export function createDautoeicToeicReadingSource(
           "passage_text",
           "passage_text_2",
           "passage_text_3",
-          "dich_nghia",
         ].join(","),
         (value) => value,
         (url) => {

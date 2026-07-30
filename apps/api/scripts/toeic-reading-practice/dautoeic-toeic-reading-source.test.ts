@@ -60,6 +60,7 @@ test("requests only the Reading index and maps public source metadata", async ()
     (await source.listQuestionIndex("test-1"))[0]?.sourceNumber,
     119
   );
+  await source.readPassages("test-1");
 
   const questionUrl = urls.find((url) =>
     url.pathname.endsWith("/mock_test_questions")
@@ -69,6 +70,14 @@ test("requests only the Reading index and maps public source metadata", async ()
   assert.match(
     questionUrl?.searchParams.get("select") ?? "",
     /question_number/u
+  );
+  const passageUrl = urls.find((url) =>
+    url.pathname.endsWith("/mock_test_passages")
+  );
+  assert.equal(passageUrl?.searchParams.get("part"), "in.(6,7)");
+  assert.doesNotMatch(
+    passageUrl?.searchParams.get("select") ?? "",
+    /dich_nghia/u
   );
 });
 
