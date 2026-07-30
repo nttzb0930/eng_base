@@ -1,6 +1,9 @@
 import type {
+  LearningIntensityId,
+  OnboardingGoalId,
   PlacementTestResponse,
   SubmitAnswerResponse,
+  TargetLanguageId,
 } from "@repo/shared";
 
 export type {
@@ -16,10 +19,10 @@ export type SubmitPlacementAnswerInput = {
 
 export type ConfirmPlacementLevelInput = {
   level: string;
-  languages?: string[];
-  goals?: string[];
-  intensity?: string;
-  primaryLanguage?: string;
+  languages?: TargetLanguageId[];
+  goals?: OnboardingGoalId[];
+  intensity?: LearningIntensityId;
+  primaryLanguage?: TargetLanguageId;
   customGoal?: string;
 };
 
@@ -45,12 +48,12 @@ export type UpdateOnboardingResponse = {
 
 export type PlacementOnboardingData = {
   flowVersion?: number;
-  selectedLangs?: string[];
-  primaryLang?: string | null;
-  selectedLevels?: Record<string, string>;
-  selectedGoals?: string[];
+  selectedLangs?: TargetLanguageId[];
+  primaryLang?: TargetLanguageId | null;
+  selectedLevels?: Partial<Record<TargetLanguageId, string>>;
+  selectedGoals?: OnboardingGoalId[];
   customGoal?: string;
-  selectedIntensity?: string;
+  selectedIntensity?: LearningIntensityId;
 };
 
 export type PlacementTestApi = {

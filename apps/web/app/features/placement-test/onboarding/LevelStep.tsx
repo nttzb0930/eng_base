@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { HelpCircle } from "lucide-react";
+import type { TargetLanguageId } from "@repo/shared";
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
 import {
@@ -15,9 +16,9 @@ import {
 } from "@/app/components/ui/dialog";
 
 type LevelStepProps = {
-  selectedLangs: string[];
-  selectedLevels: Record<string, string>;
-  onSelectLevel: (langId: string, level: string) => void;
+  selectedLangs: TargetLanguageId[];
+  selectedLevels: Partial<Record<TargetLanguageId, string>>;
+  onSelectLevel: (langId: TargetLanguageId, level: string) => void;
   onStartTest: () => void;
 };
 

@@ -6,6 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
 import { Volume2, Award, ArrowRight, BookOpen, Compass, CheckCircle2, AlertTriangle, RefreshCw } from "lucide-react";
+import type {
+  LearningIntensityId,
+  OnboardingGoalId,
+  TargetLanguageId,
+} from "@repo/shared";
 
 import { Button } from "@/app/components/ui/button";
 import { cn } from "@/app/utils/cn";
@@ -83,10 +88,10 @@ export function PlacementTestView() {
 
   const handleConfirmLevelWithBypass = (
     level: string,
-    languages?: string[],
-    goals?: string[],
-    intensity?: string,
-    primaryLanguage?: string,
+    languages?: TargetLanguageId[],
+    goals?: OnboardingGoalId[],
+    intensity?: LearningIntensityId,
+    primaryLanguage?: TargetLanguageId,
     customGoal?: string,
   ) => {
     bypassWarning.current = true;

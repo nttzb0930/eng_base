@@ -6,6 +6,11 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
 import { useAudio, useKey } from "react-use";
 import { toast } from "sonner";
+import type {
+  LearningIntensityId,
+  OnboardingGoalId,
+  TargetLanguageId,
+} from "@repo/shared";
 
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
 import { courseKeys } from "@/app/features/courses/hooks/use-courses";
@@ -176,10 +181,10 @@ export function usePlacementTest() {
 
   const handleConfirmLevel = (
     level: string,
-    languages?: string[],
-    goals?: string[],
-    intensity?: string,
-    primaryLanguage?: string,
+    languages?: TargetLanguageId[],
+    goals?: OnboardingGoalId[],
+    intensity?: LearningIntensityId,
+    primaryLanguage?: TargetLanguageId,
     customGoal?: string,
   ) => {
     const input: ConfirmPlacementLevelInput = {
