@@ -7,6 +7,7 @@ import {
 } from "node:fs";
 import {
   mkdir,
+  readdir,
   readFile,
   rename,
   rm,
@@ -127,6 +128,22 @@ export function createFileReadingSourceStorage(input: {
       );
     },
 
+    async writeRejectedValidation(sourceId, sourceVersion, value) {
+      assertSafeSegment(sourceId, "sourceId");
+      assertSafeSegment(sourceVersion, "sourceVersion");
+      await writeJsonAtomic(
+        join(
+          root,
+          "rejected",
+          "reading",
+          sourceId,
+          sourceVersion,
+          "validation.json",
+        ),
+        value,
+      );
+    },
+
     async writeMedia({ sourceId, sourceVersion, mediaId, response }) {
       assertSafeSegment(mediaId, "mediaId");
       if (!response.body) throw new Error("Reading media response has no body");
@@ -181,6 +198,42 @@ export function createFileReadingSourceStorage(input: {
       return existsSync(
         join(packageDirectory(sourceId, sourceVersion), "manifest.json"),
       );
+    },
+
+    async listCompletePackages() {
+      const readingRoot = join(root, "reading");
+      if (!existsSync(readingRoot)) return [];
+      const packages: Array<{ sourceId: string; sourceVersion: string }> = [];
+      for (const sourceId of await readdir(readingRoot)) {
+        assertSafeSegment(sourceId, "sourceId");
+        const sourceDirectory = join(readingRoot, sourceId);
+        for (const sourceVersion of await readdir(sourceDirectory)) {
+          assertSafeSegment(sourceVersion, "sourceVersion");
+          if (
+            existsSync(
+              join(
+                packageDirectory(sourceId, sourceVersion),
+                "manifest.json",
+              ),
+            )
+          ) {
+            packages.push({ sourceId, sourceVersion });
+          }
+        }
+      }
+      return packages.sort((left, right) =>
+        `${left.sourceId}/${left.sourceVersion}`.localeCompare(
+          `${right.sourceId}/${right.sourceVersion}`,
+        ),
+      );
+    },
+
+    async readPackageFile(sourceId, sourceVersion, name) {
+      const content = await readFile(
+        join(packageDirectory(sourceId, sourceVersion), name),
+        "utf8",
+      );
+      return JSON.parse(content) as unknown;
     },
   };
 }

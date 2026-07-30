@@ -90,6 +90,33 @@ export type ReadingSourceInventory = {
   inventorySha256: string;
 };
 
+export type ReadingSourceLicense = {
+  name: string;
+  reference: string;
+  intendedUse: string;
+};
+
+export type ReadingSourcePackageFile =
+  | "content.json"
+  | "manifest.json"
+  | "validation.json";
+
+export type ReadingSourceManifest = {
+  schemaVersion: 1;
+  source: "dautoeic";
+  sourceId: string;
+  sourceVersion: string;
+  sourceWebUrl: string;
+  accessClassification: "BASIC_FREE";
+  approvedInventorySha256: string;
+  license: ReadingSourceLicense;
+  createdAt: string;
+  files: {
+    content: { sha256: string };
+    validation: { sha256: string };
+  };
+};
+
 export interface DautoeicReadingSource {
   listAccessSummaries(): Promise<ReadingSourceAccessSummary[]>;
   listReadingRows(): Promise<ReadingSourceRow[]>;
@@ -103,7 +130,12 @@ export interface ReadingSourceStorage {
   writePackageFile(
     sourceId: string,
     sourceVersion: string,
-    name: "content.json" | "manifest.json" | "validation.json",
+    name: ReadingSourcePackageFile,
+    value: unknown,
+  ): Promise<void>;
+  writeRejectedValidation(
+    sourceId: string,
+    sourceVersion: string,
     value: unknown,
   ): Promise<void>;
   writeMedia(input: {
@@ -118,4 +150,12 @@ export interface ReadingSourceStorage {
     mimeType: string;
   }>;
   packageExists(sourceId: string, sourceVersion: string): Promise<boolean>;
+  listCompletePackages(): Promise<
+    Array<{ sourceId: string; sourceVersion: string }>
+  >;
+  readPackageFile(
+    sourceId: string,
+    sourceVersion: string,
+    name: ReadingSourcePackageFile,
+  ): Promise<unknown>;
 }
