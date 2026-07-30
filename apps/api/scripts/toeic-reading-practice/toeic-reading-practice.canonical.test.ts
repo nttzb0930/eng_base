@@ -51,13 +51,13 @@ function sourcePassages(questions = sourceRows()) {
       passage_text: `Passage body ${index + 1}`,
       passage_text_2: null,
       passage_text_3: null,
-    }),
+    })
   );
 }
 
 function build(
   questions: unknown[] = sourceRows(),
-  passages: unknown[] = sourcePassages(),
+  passages: unknown[] = sourcePassages()
 ) {
   return withSourceVersion(
     buildToeicReadingPracticeTest({
@@ -66,7 +66,7 @@ function build(
       title: "2026 Test 1",
       questions,
       passages,
-    }),
+    })
   );
 }
 
@@ -79,7 +79,7 @@ test("builds one deterministic 100-question Reading package", () => {
       [5, 30],
       [6, 16],
       [7, 54],
-    ],
+    ]
   );
   assert.equal(value.parts[0]?.questions[18]?.sourceNumber, 119);
   assert.equal(validateToeicReadingPracticeTest(value).valid, true);
@@ -88,21 +88,20 @@ test("builds one deterministic 100-question Reading package", () => {
 });
 
 test("rejects incomplete Reading packages and invalid answer keys", () => {
-  const incomplete = build(sourceRows().filter((row) => row.question_number !== 119));
+  const incomplete = build(
+    sourceRows().filter((row) => row.question_number !== 119)
+  );
   assert.equal(validateToeicReadingPracticeTest(incomplete).valid, false);
 
   const invalidAnswer = sourceRows();
   invalidAnswer[0] = { ...invalidAnswer[0]!, correct_answer: "E" };
-  assert.throws(
-    () => build(invalidAnswer),
-    /correct_answer/u,
-  );
+  assert.throws(() => build(invalidAnswer), /correct_answer/u);
 });
 
 test("dynamic source statistics do not affect the content digest", () => {
   const value = build();
   assert.equal(
     sha256Canonical({ ...value, practiceStats: [{ errorRate: 0.1 }] }),
-    sha256Canonical({ ...value, practiceStats: [{ errorRate: 0.9 }] }),
+    sha256Canonical({ ...value, practiceStats: [{ errorRate: 0.9 }] })
   );
 });

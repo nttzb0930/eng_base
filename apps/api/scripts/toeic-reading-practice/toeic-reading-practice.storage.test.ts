@@ -31,25 +31,19 @@ test("atomically stores approved inventories and complete packages", async () =>
     const key = await storage.writeInventory(inventory);
     assert.equal(
       key,
-      `inventories/toeic-reading-practice/${inventory.inventorySha256}.json`,
+      `inventories/toeic-reading-practice/${inventory.inventorySha256}.json`
     );
     assert.deepEqual(
       await storage.readInventory(inventory.inventorySha256),
-      inventory,
+      inventory
     );
-    await storage.writePackageFile(
-      "test-1",
-      "b".repeat(64),
-      "content.json",
-      { title: "Test 1" },
-    );
+    await storage.writePackageFile("test-1", "b".repeat(64), "content.json", {
+      title: "Test 1",
+    });
     assert.equal(await storage.packageExists("test-1", "b".repeat(64)), false);
-    await storage.writePackageFile(
-      "test-1",
-      "b".repeat(64),
-      "manifest.json",
-      { complete: true },
-    );
+    await storage.writePackageFile("test-1", "b".repeat(64), "manifest.json", {
+      complete: true,
+    });
     assert.equal(await storage.packageExists("test-1", "b".repeat(64)), true);
     assert.equal(
       JSON.parse(
@@ -59,21 +53,16 @@ test("atomically stores approved inventories and complete packages", async () =>
             "toeic-reading-practice",
             "test-1",
             "b".repeat(64),
-            "content.json",
+            "content.json"
           ),
-          "utf8",
-        ),
+          "utf8"
+        )
       ).title,
-      "Test 1",
+      "Test 1"
     );
     await assert.rejects(
-      storage.writePackageFile(
-        "../escape",
-        "b".repeat(64),
-        "content.json",
-        {},
-      ),
-      /unsafe/u,
+      storage.writePackageFile("../escape", "b".repeat(64), "content.json", {}),
+      /unsafe/u
     );
   } finally {
     await rm(root, { recursive: true, force: true });

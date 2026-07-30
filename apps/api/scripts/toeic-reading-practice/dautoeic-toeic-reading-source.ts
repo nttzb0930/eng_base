@@ -9,7 +9,9 @@ import type {
   ToeicSourceTest,
 } from "./toeic-reading-practice.types.js";
 
-const sourceId = z.union([z.string().trim().min(1), z.number()]).transform(String);
+const sourceId = z
+  .union([z.string().trim().min(1), z.number()])
+  .transform(String);
 const setSchema = z
   .object({
     id: sourceId,
@@ -43,7 +45,13 @@ const statSchema = z
   .object({
     item_id: sourceId,
     part: z.union([z.literal(5), z.literal(6), z.literal(7)]),
-    difficulty_level: z.coerce.number().int().min(1).max(5).nullable().optional(),
+    difficulty_level: z.coerce
+      .number()
+      .int()
+      .min(1)
+      .max(5)
+      .nullable()
+      .optional(),
     error_rate: z.coerce.number().min(0).max(1).nullable().optional(),
     total_attempts: z.coerce.number().int().nonnegative().nullable().optional(),
   })
@@ -70,7 +78,7 @@ function assertAllowedUrl(value: string, hosts: Set<string>) {
 }
 
 export function createDautoeicToeicReadingSource(
-  config: SourceConfig,
+  config: SourceConfig
 ): ToeicReadingSource {
   const hosts = new Set(config.allowedHosts);
   const baseUrl = assertAllowedUrl(config.baseUrl, hosts);
@@ -97,7 +105,7 @@ export function createDautoeicToeicReadingSource(
       if (response.url) assertAllowedUrl(response.url, hosts);
       if (response.status === 401 || response.status === 403) {
         throw new Error(
-          `TOEIC Reading source authorization failed (${response.status})`,
+          `TOEIC Reading source authorization failed (${response.status})`
         );
       }
       if (
@@ -108,7 +116,9 @@ export function createDautoeicToeicReadingSource(
         continue;
       }
       if (!response.ok) {
-        throw new Error(`TOEIC Reading source request failed (${response.status})`);
+        throw new Error(
+          `TOEIC Reading source request failed (${response.status})`
+        );
       }
       return response;
     }
@@ -131,7 +141,7 @@ export function createDautoeicToeicReadingSource(
     table: string,
     select: string,
     parse: (value: unknown) => T,
-    filters?: (url: URL) => void,
+    filters?: (url: URL) => void
   ) {
     const values: T[] = [];
     for (let offset = 0; ; offset += pageSize) {
@@ -163,7 +173,7 @@ export function createDautoeicToeicReadingSource(
             hidden: row.is_hidden,
           };
         },
-        (url) => url.searchParams.set("order", "order_index.asc,id.asc"),
+        (url) => url.searchParams.set("order", "order_index.asc,id.asc")
       );
     },
 
@@ -183,7 +193,7 @@ export function createDautoeicToeicReadingSource(
             updatedAt: row.updated_at ?? null,
           };
         },
-        (url) => url.searchParams.set("order", "order_index.asc,id.asc"),
+        (url) => url.searchParams.set("order", "order_index.asc,id.asc")
       );
     },
 
@@ -206,7 +216,7 @@ export function createDautoeicToeicReadingSource(
           url.searchParams.set("test_id", `eq.${sourceTestId}`);
           url.searchParams.set("part", "in.(5,6,7)");
           url.searchParams.set("order", "question_number.asc,id.asc");
-        },
+        }
       );
     },
 
@@ -236,7 +246,7 @@ export function createDautoeicToeicReadingSource(
           url.searchParams.set("test_id", `eq.${sourceTestId}`);
           url.searchParams.set("part", "in.(5,6,7)");
           url.searchParams.set("order", "question_number.asc,id.asc");
-        },
+        }
       );
     },
 
@@ -261,14 +271,14 @@ export function createDautoeicToeicReadingSource(
           url.searchParams.set("test_id", `eq.${sourceTestId}`);
           url.searchParams.set("part", "in.(6,7)");
           url.searchParams.set("order", "order_index.asc,id.asc");
-        },
+        }
       );
     },
 
     async readPracticeStats(part: ToeicReadingPart) {
       const url = new URL(
         "/rest/v1/rpc/get_practice_stats_page",
-        baseUrl.origin,
+        baseUrl.origin
       );
       try {
         const value = await readJson(url, {

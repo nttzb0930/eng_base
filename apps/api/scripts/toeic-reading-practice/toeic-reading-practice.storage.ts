@@ -1,13 +1,15 @@
 import { existsSync } from "node:fs";
-import {
-  mkdir,
-  readFile,
-  readdir,
-  rename,
-  writeFile,
-} from "node:fs/promises";
+import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
 import { homedir } from "node:os";
-import { dirname, isAbsolute, join, parse, relative, resolve, sep } from "node:path";
+import {
+  dirname,
+  isAbsolute,
+  join,
+  parse,
+  relative,
+  resolve,
+  sep,
+} from "node:path";
 
 import type {
   ToeicReadingInventory,
@@ -22,7 +24,12 @@ function safeSegment(value: string, label: string) {
 
 function inside(parent: string, child: string) {
   const result = relative(parent, child);
-  return result !== "" && result !== ".." && !result.startsWith(`..${sep}`) && !isAbsolute(result);
+  return (
+    result !== "" &&
+    result !== ".." &&
+    !result.startsWith(`..${sep}`) &&
+    !isAbsolute(result)
+  );
 }
 
 function resolveRoot(input: {
@@ -31,11 +38,14 @@ function resolveRoot(input: {
 }) {
   const repositoryRoot = resolve(input.repositoryRoot);
   const privateParent = resolve(repositoryRoot, "var", "licensed-content");
-  const root = resolve(
-    input.configuredRoot ?? join(privateParent, "dautoeic"),
-  );
+  const root = resolve(input.configuredRoot ?? join(privateParent, "dautoeic"));
   if (
-    [repositoryRoot, resolve(repositoryRoot, ".."), resolve(homedir()), parse(root).root].includes(root)
+    [
+      repositoryRoot,
+      resolve(repositoryRoot, ".."),
+      resolve(homedir()),
+      parse(root).root,
+    ].includes(root)
   ) {
     throw new Error("unsafe TOEIC Reading storage root");
   }
@@ -76,21 +86,21 @@ export function createFileToeicReadingStorage(input: {
       return JSON.parse(
         await readFile(
           join(root, "inventories", "toeic-reading-practice", `${sha256}.json`),
-          "utf8",
-        ),
+          "utf8"
+        )
       ) as ToeicReadingInventory;
     },
 
     async packageExists(sourceTestId, sourceVersion) {
       return existsSync(
-        join(packageDirectory(sourceTestId, sourceVersion), "manifest.json"),
+        join(packageDirectory(sourceTestId, sourceVersion), "manifest.json")
       );
     },
 
     async writePackageFile(sourceTestId, sourceVersion, name, value) {
       await atomicJson(
         join(packageDirectory(sourceTestId, sourceVersion), name),
-        value,
+        value
       );
     },
 
@@ -101,15 +111,15 @@ export function createFileToeicReadingStorage(input: {
       for (const sourceTestId of await readdir(packageRoot)) {
         safeSegment(sourceTestId, "sourceTestId");
         for (const sourceVersion of await readdir(
-          join(packageRoot, sourceTestId),
+          join(packageRoot, sourceTestId)
         )) {
           safeSegment(sourceVersion, "sourceVersion");
           if (
             existsSync(
               join(
                 packageDirectory(sourceTestId, sourceVersion),
-                "manifest.json",
-              ),
+                "manifest.json"
+              )
             )
           ) {
             values.push({ sourceTestId, sourceVersion });
@@ -118,8 +128,8 @@ export function createFileToeicReadingStorage(input: {
       }
       return values.sort((left, right) =>
         `${left.sourceTestId}/${left.sourceVersion}`.localeCompare(
-          `${right.sourceTestId}/${right.sourceVersion}`,
-        ),
+          `${right.sourceTestId}/${right.sourceVersion}`
+        )
       );
     },
 
@@ -128,8 +138,8 @@ export function createFileToeicReadingStorage(input: {
       return JSON.parse(
         await readFile(
           join(packageDirectory(sourceTestId, sourceVersion), name),
-          "utf8",
-        ),
+          "utf8"
+        )
       ) as unknown;
     },
   };

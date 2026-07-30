@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "source": "dautoeic",
+  "sourceWebUrl": "https://dautoeic.com/mock-test",
+  "apiBaseUrl": "https://qfhmnlvgweznzcsoijyr.supabase.co",
+  "allowedHosts": ["qfhmnlvgweznzcsoijyr.supabase.co"],
+  "license": {
+    "name": "Public basic/free source access",
+    "reference": "https://dautoeic.com/mock-test",
+    "intendedUse": "English Base TOEIC Reading review; publication requires admin approval"
+  },
+  "timeoutMs": 20000,
+  "maxRetries": 3,
+  "downloadConcurrency": 2
+}

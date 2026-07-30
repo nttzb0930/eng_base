@@ -54,7 +54,10 @@
     "data:inventory-reading-source": "tsx ./scripts/reading/source/inventory-reading-source.ts",
     "data:download-reading-source": "tsx ./scripts/reading/source/download-reading-source.ts",
     "data:validate-reading-source": "tsx ./scripts/reading/source/validate-reading-source.ts",
-    "data:import-reading-candidates": "dotenv -e ../../.env -- tsx ./scripts/reading/source/import-reading-candidates.ts"
+    "data:import-reading-candidates": "dotenv -e ../../.env -- tsx ./scripts/reading/source/import-reading-candidates.ts",
+    "data:inventory-toeic-reading-practice": "tsx ./scripts/toeic-reading-practice/inventory-toeic-reading-practice.ts",
+    "data:download-toeic-reading-practice": "tsx ./scripts/toeic-reading-practice/download-toeic-reading-practice.ts",
+    "data:validate-toeic-reading-practice": "tsx ./scripts/toeic-reading-practice/validate-toeic-reading-practice.ts"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",

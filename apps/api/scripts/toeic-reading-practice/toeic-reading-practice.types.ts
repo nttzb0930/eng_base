@@ -95,7 +95,9 @@ export type ToeicReadingSource = {
   listQuestionIndex(sourceTestId: string): Promise<ToeicQuestionIndexRow[]>;
   readQuestions(sourceTestId: string): Promise<unknown[]>;
   readPassages(sourceTestId: string): Promise<unknown[]>;
-  readPracticeStats(part: ToeicReadingPart): Promise<ToeicPracticeStat[] | null>;
+  readPracticeStats(
+    part: ToeicReadingPart
+  ): Promise<ToeicPracticeStat[] | null>;
 };
 
 export type ToeicReadingInventoryTest = {
@@ -143,7 +145,7 @@ export type ToeicReadingStorage = {
       | "practice-stats.json"
       | "validation.json"
       | "manifest.json",
-    value: unknown,
+    value: unknown
   ): Promise<void>;
   listCompletePackages(): Promise<
     Array<{ sourceTestId: string; sourceVersion: string }>
@@ -151,6 +153,6 @@ export type ToeicReadingStorage = {
   readPackageFile(
     sourceTestId: string,
     sourceVersion: string,
-    name: string,
+    name: string
   ): Promise<unknown>;
 };

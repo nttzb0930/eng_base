@@ -9,10 +9,14 @@ import {
   type ToeicReadingPracticeTest,
 } from "./toeic-reading-practice.types.js";
 
-const nullableString = z.string().nullable().optional().transform((value) => {
-  const normalized = value?.trim();
-  return normalized ? normalized : null;
-});
+const nullableString = z
+  .string()
+  .nullable()
+  .optional()
+  .transform((value) => {
+    const normalized = value?.trim();
+    return normalized ? normalized : null;
+  });
 
 const questionSchema = z
   .object({
@@ -57,7 +61,7 @@ function stableValue(value: unknown): unknown {
       Object.entries(value as Record<string, unknown>)
         .filter(([key]) => key !== "sourceVersion" && key !== "practiceStats")
         .sort(([left], [right]) => left.localeCompare(right))
-        .map(([key, child]) => [key, stableValue(child)]),
+        .map(([key, child]) => [key, stableValue(child)])
     );
   }
   return value;
@@ -81,9 +85,7 @@ function mediaReference(url: string): ToeicReadingMediaReference {
   };
 }
 
-function choices(
-  row: z.infer<typeof questionSchema>,
-): ToeicReadingChoice[] {
+function choices(row: z.infer<typeof questionSchema>): ToeicReadingChoice[] {
   const values = [
     ["A", row.option_a],
     ["B", row.option_b],
@@ -110,7 +112,8 @@ export function buildToeicReadingPracticeTest(input: {
   const mediaByUrl = new Map<string, ToeicReadingMediaReference>();
 
   for (const row of [...questions, ...passages]) {
-    if (row.image_url) mediaByUrl.set(row.image_url, mediaReference(row.image_url));
+    if (row.image_url)
+      mediaByUrl.set(row.image_url, mediaReference(row.image_url));
   }
 
   const parts = ([5, 6, 7] as const).map((part) => {
@@ -160,20 +163,20 @@ export function buildToeicReadingPracticeTest(input: {
     title: input.title.trim(),
     parts,
     media: [...mediaByUrl.values()].sort((left, right) =>
-      left.id.localeCompare(right.id),
+      left.id.localeCompare(right.id)
     ),
   };
 }
 
 export function withSourceVersion(
-  value: Omit<ToeicReadingPracticeTest, "sourceVersion">,
+  value: Omit<ToeicReadingPracticeTest, "sourceVersion">
 ): ToeicReadingPracticeTest {
   return { ...value, sourceVersion: sha256Canonical(value) };
 }
 
 export function validateToeicReadingPracticeTest(
   value: unknown,
-  options: { requireDownloadedMedia?: boolean } = {},
+  options: { requireDownloadedMedia?: boolean } = {}
 ) {
   const errors: string[] = [];
   if (!value || typeof value !== "object") {
@@ -188,23 +191,27 @@ export function validateToeicReadingPracticeTest(
     const found = test.parts?.find((entry) => entry.part === part);
     if (found?.questions.length !== TOEIC_READING_PART_COUNTS[part]) {
       errors.push(
-        `Part ${part} must contain ${TOEIC_READING_PART_COUNTS[part]} questions`,
+        `Part ${part} must contain ${TOEIC_READING_PART_COUNTS[part]} questions`
       );
     }
   }
   for (const question of allQuestions) {
-    if (ids.has(question.sourceQuestionId)) errors.push("Duplicate question ID");
-    if (numbers.has(question.sourceNumber)) errors.push("Duplicate question number");
+    if (ids.has(question.sourceQuestionId))
+      errors.push("Duplicate question ID");
+    if (numbers.has(question.sourceNumber))
+      errors.push("Duplicate question number");
     ids.add(question.sourceQuestionId);
     numbers.add(question.sourceNumber);
     if (question.choices.filter((choice) => choice.correct).length !== 1) {
-      errors.push(`Question ${question.sourceNumber} must have one correct choice`);
+      errors.push(
+        `Question ${question.sourceNumber} must have one correct choice`
+      );
     }
   }
   if (
     allQuestions.length !== 100 ||
     Array.from({ length: 100 }, (_, index) => index + 101).some(
-      (number) => !numbers.has(number),
+      (number) => !numbers.has(number)
     )
   ) {
     errors.push("Reading questions must be numbered 101..200");

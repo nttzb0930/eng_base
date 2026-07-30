@@ -86,10 +86,10 @@ test("downloads only approved Reading JSON and finalizes manifest last", async (
     readInventory: async () => inventory(),
     packageExists: async () => false,
     writePackageFile: async (
-    _testId: string,
-    _version: string,
-    name: string,
-    value: unknown,
+      _testId: string,
+      _version: string,
+      name: string,
+      value: unknown
     ) => {
       writes.push({ name, value });
     },
@@ -116,7 +116,7 @@ test("downloads only approved Reading JSON and finalizes manifest last", async (
   assert.deepEqual(requestedTests, ["test-1"]);
   assert.deepEqual(
     writes.map((write) => write.name),
-    ["content.json", "validation.json", "manifest.json"],
+    ["content.json", "validation.json", "manifest.json"]
   );
   assert.deepEqual(result.completed, ["test-1"]);
   assert.deepEqual(result.questionCounts, { "5": 30, "6": 16, "7": 54 });
@@ -133,7 +133,7 @@ test("rejects incomplete content without finalizing a manifest", async () => {
     writePackageFile: async (
       _testId: string,
       _version: string,
-      name: string,
+      name: string
     ) => {
       writes.push(name);
     },

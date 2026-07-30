@@ -56,10 +56,7 @@ test("selects the newest 10 public 2026 tests and reports 1,000 questions", asyn
     ],
     listTests: async () => tests,
     listQuestionIndex: async (testId: string) => questionIndex(testId),
-  } as Pick<
-    ToeicReadingSource,
-    "listSets" | "listTests" | "listQuestionIndex"
-  >;
+  } as Pick<ToeicReadingSource, "listSets" | "listTests" | "listQuestionIndex">;
 
   const inventory = await inventoryToeicReadingPractice({
     source,
@@ -95,10 +92,7 @@ test("rejects an incomplete selected test before content download", async () => 
       },
     ],
     listQuestionIndex: async () => questionIndex("test-1").slice(1),
-  } as Pick<
-    ToeicReadingSource,
-    "listSets" | "listTests" | "listQuestionIndex"
-  >;
+  } as Pick<ToeicReadingSource, "listSets" | "listTests" | "listQuestionIndex">;
 
   await assert.rejects(
     inventoryToeicReadingPractice({
@@ -107,6 +101,6 @@ test("rejects an incomplete selected test before content download", async () => 
       limitTests: 1,
       observedAt: "2026-07-31T00:00:00.000Z",
     }),
-    /must expose 30\/16\/54 Reading questions/u,
+    /must expose 30\/16\/54 Reading questions/u
   );
 });

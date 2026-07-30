@@ -56,14 +56,20 @@ test("requests only the Reading index and maps public source metadata", async ()
 
   assert.equal((await source.listSets())[0]?.name, "2026");
   assert.equal((await source.listTests())[0]?.free, true);
-  assert.equal((await source.listQuestionIndex("test-1"))[0]?.sourceNumber, 119);
+  assert.equal(
+    (await source.listQuestionIndex("test-1"))[0]?.sourceNumber,
+    119
+  );
 
   const questionUrl = urls.find((url) =>
-    url.pathname.endsWith("/mock_test_questions"),
+    url.pathname.endsWith("/mock_test_questions")
   );
   assert.equal(questionUrl?.searchParams.get("test_id"), "eq.test-1");
   assert.equal(questionUrl?.searchParams.get("part"), "in.(5,6,7)");
-  assert.match(questionUrl?.searchParams.get("select") ?? "", /question_number/u);
+  assert.match(
+    questionUrl?.searchParams.get("select") ?? "",
+    /question_number/u
+  );
 });
 
 test("fails closed on authorization errors without retrying", async () => {

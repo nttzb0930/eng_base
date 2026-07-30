@@ -22,16 +22,14 @@ export async function downloadToeicReadingPractice(input: {
   now: () => Date;
 }): Promise<ToeicReadingDownloadSummary> {
   const inventory = await input.storage.readInventory(
-    input.approvedInventorySha256,
+    input.approvedInventorySha256
   );
   if (inventory.inventorySha256 !== input.approvedInventorySha256) {
     throw new Error("Approved TOEIC Reading inventory checksum mismatch");
   }
   const stats = (
     await Promise.all(
-      ([5, 6, 7] as const).map((part) =>
-        input.source.readPracticeStats(part),
-      ),
+      ([5, 6, 7] as const).map((part) => input.source.readPracticeStats(part))
     )
   ).flatMap((value) => value ?? []);
   const completed: string[] = [];
@@ -48,7 +46,8 @@ export async function downloadToeicReadingPractice(input: {
       ]);
       const referencedPassageIds = new Set(selected.passageIds);
       const passages = allPassages.filter((value) => {
-        if (!value || typeof value !== "object" || !("id" in value)) return false;
+        if (!value || typeof value !== "object" || !("id" in value))
+          return false;
         return referencedPassageIds.has(String(value.id));
       });
       const canonical = withSourceVersion(
@@ -58,7 +57,7 @@ export async function downloadToeicReadingPractice(input: {
           title: selected.title,
           questions,
           passages,
-        }),
+        })
       );
       const validation = validateToeicReadingPracticeTest(canonical);
       if (!validation.valid) {
@@ -66,7 +65,7 @@ export async function downloadToeicReadingPractice(input: {
           selected.sourceTestId,
           canonical.sourceVersion,
           "validation.json",
-          validation,
+          validation
         );
         rejected.push({
           sourceTestId: selected.sourceTestId,
@@ -77,7 +76,7 @@ export async function downloadToeicReadingPractice(input: {
       if (
         await input.storage.packageExists(
           selected.sourceTestId,
-          canonical.sourceVersion,
+          canonical.sourceVersion
         )
       ) {
         resumed.push(selected.sourceTestId);
@@ -85,10 +84,10 @@ export async function downloadToeicReadingPractice(input: {
       }
       const ids = new Set([
         ...canonical.parts.flatMap((part) =>
-          part.questions.map((question) => question.sourceQuestionId),
+          part.questions.map((question) => question.sourceQuestionId)
         ),
         ...canonical.parts.flatMap((part) =>
-          part.stimuli.map((stimulus) => stimulus.sourceStimulusId),
+          part.stimuli.map((stimulus) => stimulus.sourceStimulusId)
         ),
       ]);
       const packageStats = stats.filter((stat) => ids.has(stat.sourceItemId));
@@ -96,7 +95,7 @@ export async function downloadToeicReadingPractice(input: {
         selected.sourceTestId,
         canonical.sourceVersion,
         "content.json",
-        canonical,
+        canonical
       );
       if (packageStats.length > 0) {
         await input.storage.writePackageFile(
@@ -106,14 +105,14 @@ export async function downloadToeicReadingPractice(input: {
           {
             observedAt: input.now().toISOString(),
             items: packageStats,
-          },
+          }
         );
       }
       await input.storage.writePackageFile(
         selected.sourceTestId,
         canonical.sourceVersion,
         "validation.json",
-        validation,
+        validation
       );
       await input.storage.writePackageFile(
         selected.sourceTestId,
@@ -129,7 +128,7 @@ export async function downloadToeicReadingPractice(input: {
           acquiredAt: input.now().toISOString(),
           mediaStatus:
             canonical.media.length === 0 ? "NOT_REQUIRED" : "PENDING",
-        },
+        }
       );
       for (const part of canonical.parts) {
         questionCounts[String(part.part) as "5" | "6" | "7"] +=
@@ -144,12 +143,13 @@ export async function downloadToeicReadingPractice(input: {
     }
   }
 
-  const sortIds = (values: string[]) => values.sort((a, b) => a.localeCompare(b));
+  const sortIds = (values: string[]) =>
+    values.sort((a, b) => a.localeCompare(b));
   return {
     completed: sortIds(completed),
     resumed: sortIds(resumed),
     rejected: rejected.sort((a, b) =>
-      a.sourceTestId.localeCompare(b.sourceTestId),
+      a.sourceTestId.localeCompare(b.sourceTestId)
     ),
     failed: failed.sort((a, b) => a.sourceTestId.localeCompare(b.sourceTestId)),
     questionCounts,

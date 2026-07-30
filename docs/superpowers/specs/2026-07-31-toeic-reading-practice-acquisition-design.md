@@ -26,8 +26,7 @@ The first delivery includes:
 - deterministic checksums and versioned private packages;
 - resumable downloads with bounded concurrency;
 - offline validation and an aggregate completeness report;
-- metadata/JSON download without Reading media by default, followed by an
-  explicit `--media-only` operation;
+- metadata/JSON download without Reading media;
 - CLI operation without a database connection;
 - credentials supplied through CLI input or an ignored private authorization
   file, never committed to Git or printed.
@@ -40,8 +39,8 @@ The first delivery excludes:
 - Admin and learner interfaces;
 - attempts, progress, scoring, or analytics;
 - deleting or reclassifying the previously acquired bilingual Reading data;
-- downloading Listening Parts 1 through 4, transcripts, or audio during the
-  Reading pilot;
+- downloading Listening Parts 1 through 4, transcripts, audio, or Reading
+  media during the JSON pilot;
 - automatic publication.
 
 ## Domain Boundaries
@@ -280,7 +279,6 @@ The documented pilot invocations are:
 data:inventory-toeic-reading-practice --set=2026 --limit-tests=10
 data:download-toeic-reading-practice --set=2026 --limit-tests=10 --skip-media
 data:validate-toeic-reading-practice --set=2026 --limit-tests=10
-data:download-toeic-reading-practice --set=2026 --limit-tests=10 --media-only
 ```
 
 Inventory and download do not require `.env` or a database. Authorization may
@@ -324,8 +322,8 @@ application startup, migrations, or tests.
 - Download processes only the operator-approved inventory.
 - Every completed test has 100 Reading questions, canonical content, a
   statistics snapshot when available, manifest, and validation.
-- The default pilot download fetches no Listening content or audio and leaves
-  Reading media pending until the explicit `--media-only` operation.
+- The pilot download fetches no Listening content, audio, or Reading media and
+  leaves Reading media references pending for a later reviewed phase.
 - The example Part 5 sentence numbered 119 is acquired if and only if it is
   included in the public/free records returned by the approved source
   inventory.
