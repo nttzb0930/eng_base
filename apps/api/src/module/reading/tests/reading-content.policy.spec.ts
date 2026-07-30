@@ -23,17 +23,19 @@ const validPassage: CreateReadingPassagePayload = {
   ],
 };
 
-test("accepts a complete A1 Reading aggregate", () => {
-  assert.deepEqual(validateReadingContent(validPassage), []);
+test("accepts complete Reading aggregates from A1 through B2", () => {
+  for (const cefrLevel of ["A1", "A2", "B1", "B2"] as const) {
+    assert.deepEqual(validateReadingContent({ ...validPassage, cefrLevel }), []);
+  }
 });
 
 test("rejects levels that are not enabled for Reading", () => {
   assert.deepEqual(
     validateReadingContent({
       ...validPassage,
-      cefrLevel: "A2" as "A1",
+      cefrLevel: "C1" as "A1",
     }),
-    ["Reading currently supports A1 only"],
+    ["Unsupported Reading CEFR level"],
   );
 });
 

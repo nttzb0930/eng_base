@@ -264,8 +264,38 @@ model reading_passages {
   vocabulary_topics vocabulary_topics?         @relation(fields: [topic_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "reading_passages_topic_id_fkey")
   reading_questions reading_questions[]
   reading_attempts  reading_attempts[]
+  reading_source_candidates reading_source_candidates[]
 
   @@index([cefr_level, status], map: "reading_passages_level_status_idx")
+}
+
+model reading_source_candidates {
+  id                        Int                             @id @default(autoincrement())
+  source                    String
+  source_id                 String
+  source_version            String
+  content_sha256            String                        @db.VarChar(64)
+  access_classification     String
+  license_name              String
+  license_reference         String
+  license_intended_use      String
+  approved_inventory_sha256 String                        @db.VarChar(64)
+  source_level              String                        @db.VarChar(2)
+  source_title              String
+  source_topic              String?
+  source_html               String
+  plain_text_draft          String
+  canonical_json            Json
+  status                    reading_source_candidate_status @default(PENDING)
+  rejection_reason          String?
+  converted_passage_id      Int?
+  created_at                DateTime                      @default(now()) @db.Timestamp(6)
+  updated_at                DateTime                      @default(now()) @updatedAt @db.Timestamp(6)
+  reading_passages          reading_passages?             @relation(fields: [converted_passage_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "reading_source_candidates_converted_passage_id_fkey")
+
+  @@unique([source, source_id, source_version], map: "reading_source_candidates_source_identity_key")
+  @@index([status, created_at], map: "reading_source_candidates_status_created_idx")
+  @@index([converted_passage_id], map: "reading_source_candidates_converted_passage_idx")
 }
 
 model reading_questions {
@@ -341,6 +371,12 @@ enum user_role {
 enum reading_publication_status {
   DRAFT
   PUBLISHED
+}
+
+enum reading_source_candidate_status {
+  PENDING
+  CONVERTED
+  REJECTED
 }
 
 model system_settings {

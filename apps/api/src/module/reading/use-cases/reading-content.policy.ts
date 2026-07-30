@@ -25,7 +25,7 @@ export function validateReadingContent(input: ReadingContentInput): string[] {
   if (!input.title.trim()) issues.push("Passage title is required");
   if (!input.body.trim()) issues.push("Passage body is required");
   if (!READING_CEFR_LEVELS.includes(input.cefrLevel)) {
-    issues.push("Reading currently supports A1 only");
+    issues.push("Unsupported Reading CEFR level");
   }
   if (!isPositiveInteger(input.estimatedMinutes)) {
     issues.push("Estimated minutes must be a positive integer");

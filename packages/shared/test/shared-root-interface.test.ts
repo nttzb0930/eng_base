@@ -186,7 +186,7 @@ test("Shared publishes the Reading A1 root Interface", async () => {
     ],
   };
 
-  assert.deepEqual(READING_CEFR_LEVELS, ["A1"]);
+  assert.deepEqual(READING_CEFR_LEVELS, ["A1", "A2", "B1", "B2"]);
   assert.deepEqual(READING_PUBLICATION_STATUSES, ["DRAFT", "PUBLISHED"]);
   assert.equal(summary.slug, passage.slug);
   assert.equal(submission.answers.length, result.answers.length);

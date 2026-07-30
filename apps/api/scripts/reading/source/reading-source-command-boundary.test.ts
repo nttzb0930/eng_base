@@ -18,6 +18,10 @@ test("registers separated Reading source operator commands", () => {
     packageJson.scripts?.["data:validate-reading-source"],
     "dotenv -e ../../.env -- tsx ./scripts/reading/source/validate-reading-source.ts",
   );
+  assert.equal(
+    packageJson.scripts?.["data:import-reading-candidates"],
+    "dotenv -e ../../.env -- tsx ./scripts/reading/source/import-reading-candidates.ts",
+  );
 });
 
 test("keeps inventory, download, validation, and Prisma boundaries separate", () => {

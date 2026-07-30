@@ -1,6 +1,7 @@
 import type {
   ReadingCefrLevel,
   ReadingPublicationStatus,
+  ReadingSourceCandidateStatus,
 } from "../constants/reading.js";
 
 export type ReadingOptionInput = {
@@ -117,4 +118,19 @@ export type ReadingAttemptAnswerResult = {
 
 export type ReadingAttemptResult = ReadingAttemptSummary & {
   answers: ReadingAttemptAnswerResult[];
+};
+
+export type ReadingCandidateImportSummary = {
+  created: string[];
+  unchanged: string[];
+  immutableSkipped: string[];
+  rejected: string[];
+  failed: Array<{ sourceId: string; category: string }>;
+};
+
+export type ReadingSourceCandidateIdentity = {
+  source: string;
+  sourceId: string;
+  sourceVersion: string;
+  status: ReadingSourceCandidateStatus;
 };
