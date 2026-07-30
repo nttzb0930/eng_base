@@ -11,6 +11,7 @@ import {
   TARGET_LANGUAGE_IDS,
   type Course,
   type CreateCoursePayload,
+  type DashboardStreak,
   type FlashcardDeckSummary,
   type FlashcardSummary,
   type LearningIntensityId,
@@ -92,6 +93,12 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   const targetLanguage: TargetLanguageId = "en";
   const onboardingGoal: OnboardingGoalId = "travel";
   const learningIntensity: LearningIntensityId = "standard";
+  const streak: DashboardStreak = {
+    currentStreak: 3,
+    longestStreak: 5,
+    lastLearningAt: new Date("2026-07-24T10:00:00.000Z"),
+    timeZone: "UTC",
+  };
 
   assert.equal(course.title, payload.title);
   assert.equal(course.code, payload.code);
@@ -120,6 +127,7 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   assert.equal(targetLanguage, "en");
   assert.equal(onboardingGoal, "travel");
   assert.equal(learningIntensity, "standard");
+  assert.equal(streak.currentStreak, 3);
   assert.equal(MAX_HEARTS, 5);
 });
 
@@ -133,6 +141,16 @@ test("Shared publishes the vocabulary learner progress contract", async () => {
   assert.match(declarations, /export type VocabularyTopicProgressStats =/);
   assert.match(declarations, /learnerState: VocabularyLearnerState/);
   assert.match(declarations, /items: VocabularyTopicItem\[\]/);
+});
+
+test("Shared publishes the Dashboard streak contract", async () => {
+  const declarations = await readFile(
+    new URL("../dist/types/dashboard.d.ts", import.meta.url),
+    "utf8"
+  );
+
+  assert.match(declarations, /export type DashboardStreak =/);
+  assert.match(declarations, /streak: DashboardStreak/);
 });
 
 test("Shared publishes Flashcard deck summary contracts", async () => {
