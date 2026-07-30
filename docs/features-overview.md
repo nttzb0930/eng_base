@@ -250,6 +250,11 @@ Tạo các lựa chọn sai đủ hợp lý để kiểm tra kiến thức thậ
   với Practice session và Vocabulary progress.
 - Giao diện Anh–Việt, điều khiển cỡ chữ/giãn dòng lưu localStorage, keyboard
   focus và skeleton riêng cho list/session/result.
+- Bộ nội dung canonical gồm 12 passage A1 quốc tế, 48 câu hỏi và answer key đã
+  review được version hóa tại `data/reading/a1/passages.json`.
+- Validator/audit offline và importer explicit hỗ trợ tạo/cập nhật draft
+  idempotent; passage đã publish được giữ nguyên để tránh thay đổi nội dung đang
+  phục vụ Learner ngoài quy trình review.
 
 ### Nền tảng có thể tái sử dụng
 
@@ -287,8 +292,9 @@ Các goal interface hiện có:
 
 ### Phạm vi còn lại
 
-1. Triển khai migration đã review lên từng môi trường vận hành và author dữ
-   liệu A1 thật; repository migration không chứng minh database đã apply.
+1. Trên từng môi trường vận hành: áp dụng migration đã review, chạy importer
+   A1, review draft trong Admin, publish từng passage và smoke test. Dataset và
+   importer trong repository không chứng minh database nào đã được cập nhật.
 2. Mở rộng content/policy và learner filter từ A1 sang A2–B2.
 3. Thêm vocabulary highlight/dictionary sau khi core comprehension ổn định.
 4. Bổ sung analytics tổng hợp accuracy theo level/topic; lịch sử attempt thô đã
@@ -525,7 +531,9 @@ Kết quả: các feature 6.1, 6.2, 6.3, 6.5, 6.8 và 6.9 có nền tảng đán
 ### Giai đoạn 2 — Reading theo level
 
 - xây content model và Admin workflow;
-- phát hành Reading A1 trước như một vertical slice;
+- đã version hóa bộ 12 passage Reading A1 và importer draft-only; bước vận hành
+  còn lại là apply migration, import, review, publish và smoke test trên từng
+  môi trường được phê duyệt;
 - sau khi result persistence ổn định mới mở A2–B2.
 
 ### Giai đoạn 3 — Writing trước, AI feedback sau

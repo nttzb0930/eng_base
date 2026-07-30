@@ -13,6 +13,7 @@ apps/api/
     schema.prisma              persistence model
     migrations/                ordered schema changes
   scripts/
+    reading/                   validated Reading content and explicit importer
     support/                   offline script adapters
     vocabulary/                data workflows grouped by goal
   src/
@@ -72,6 +73,15 @@ immutable text snapshots so editing a passage cannot alter prior results.
 Reading may use `vocabulary_topics` as an optional taxonomy reference. It does
 not write `practice_sessions`, `practice_session_items`, or
 `user_vocabulary_progress`; Reading accuracy is an independent learning signal.
+
+`data/reading/a1/passages.json` is the canonical, versioned Reading A1 content
+source. Pure modules under `scripts/reading/content` validate its structure,
+semantic invariants, Topic references, answer keys, and vocabulary warnings
+without environment or database access. `scripts/reading/import` owns
+persistence-neutral draft synchronization; the Prisma adapter is composed only
+by the explicit `data:import-reading-a1` operator command. New and existing
+drafts are synchronized transactionally, while published passages are left
+unchanged. Startup, build, CI, seed, and migration do not invoke the importer.
 
 ## Goal use cases
 
