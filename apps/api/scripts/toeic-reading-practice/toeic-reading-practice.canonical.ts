@@ -6,7 +6,6 @@ import {
   TOEIC_READING_PART_COUNTS,
   type ToeicReadingChoice,
   type ToeicReadingMediaReference,
-  type ToeicReadingPart,
   type ToeicReadingPracticeTest,
 } from "./toeic-reading-practice.types.js";
 
