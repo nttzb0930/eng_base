@@ -6,6 +6,7 @@ import {
   BookOpen,
   Calendar,
   Compass,
+  GraduationCap,
   Play,
   PlusCircle,
   RotateCw,
@@ -279,8 +280,8 @@ export function LearnView() {
 
             <div className="bg-card shadow-xs group relative flex flex-col justify-between rounded-2xl border-2 border-emerald-500/80 p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
               <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-xs font-bold tracking-tight text-emerald-600 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400">
-                  IELTS
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-600 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400">
+                  <GraduationCap className="h-6 w-6" />
                 </div>
                 <h4 className="text-foreground mt-4 text-xl font-semibold transition-colors group-hover:text-emerald-600 dark:group-hover:text-emerald-400">
                   {topicsT("byCert")}

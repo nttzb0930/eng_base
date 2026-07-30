@@ -40,6 +40,7 @@ explicitly amends. Architecture documents describe the resulting current state.
 | [0019](0019-auth-endpoint-rate-limiting.md)                 | Rate-limit authentication at the HTTP seam                     | Accepted; builds on ADRs 0015 and 0017                                      |
 | [0020](0020-idempotent-learning-progress.md)                | Make learning progress writes idempotent and concurrent-safe   | Accepted                                                                    |
 | [0021](0021-shared-typescript-root-interface.md)            | Expose Shared TypeScript through one root interface            | Accepted; supersedes Shared naming and export details in ADRs 0012 and 0013 |
+| [0022](0022-certificate-domain-ownership.md)                | Keep Certificate learning in Courses                           | Accepted; builds on ADRs 0012 and 0016                                      |
 
 ## Creating a decision record
 

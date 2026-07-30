@@ -31,6 +31,20 @@ Do not add a second URL identity until a real public/detail navigation goal
 exists. If that goal is introduced later, keep business lookup on `code` and
 define slug edit/redirect policy separately.
 
+## Certificate Courses
+
+Certificate learning is owned by Courses. IELTS, TOEIC, TOEFL, and VSTEP
+experiences use the same ordered Course Content hierarchy, Admin authoring
+boundary, active Course selection, and learner progress as other Courses.
+Immutable Course codes identify these experiences; editable titles, response
+order, Topics, and static Web configuration do not.
+
+The first release does not add independent Certificate enrollment, vocabulary
+membership, progress tables, or unlock dependencies. When no accepted
+Certificate Course exists, learner views show a localized unavailable state
+instead of sample progress. [ADR 0022](../adr/0022-certificate-domain-ownership.md)
+owns the decision and initial code identities.
+
 ## Runtime layout
 
 ```text
