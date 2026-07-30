@@ -49,7 +49,8 @@
     "data:enrich-topic-candidates-queue": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/enrich-topic-candidates-queue.ts",
     "data:audit-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/audit-topic-expansion.ts",
     "data:merge-topic-expansion": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion.ts",
-    "data:merge-topic-expansion-accepted-all": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion-accepted-all.ts"
+    "data:merge-topic-expansion-accepted-all": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/topic-expansion/merge-topic-expansion-accepted-all.ts",
+    "data:import-reading-a1": "dotenv -e ../../.env -- tsx ./scripts/reading/import-reading-a1.ts"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",
