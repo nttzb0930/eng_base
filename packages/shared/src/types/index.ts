@@ -9,3 +9,6 @@ export * from "./dashboard.js";
 export * from "./progress.js";
 export * from "./placement-test.js";
 export * from "./reading.js";
+export * from "./toeic-reading.js";
+export * from "./toeic-listening.js";
+export * from "./toeic-grammar.js";
