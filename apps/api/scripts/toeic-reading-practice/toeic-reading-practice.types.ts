@@ -133,6 +133,16 @@ export type ToeicReadingDownloadSummary = {
   questionCounts: Record<"5" | "6" | "7", number>;
 };
 
+export type ToeicReadingImportResult = "CREATED" | "UPDATED" | "SKIPPED";
+
+export type ToeicReadingImportSummary = {
+  created: string[];
+  updated: string[];
+  skipped: string[];
+  rejected: Array<{ sourceTestId: string; errors: string[] }>;
+  failed: Array<{ sourceTestId: string; category: string }>;
+};
+
 export type ToeicReadingStorage = {
   writeInventory(value: ToeicReadingInventory): Promise<string>;
   readInventory(sha256: string): Promise<ToeicReadingInventory>;
