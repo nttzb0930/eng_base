@@ -87,3 +87,22 @@ export type ToeicGrammarSource = {
   readSetQuestions(sourceSetId: string): Promise<ToeicGrammarQuestion[]>;
   readDifficultyQuestions(level: number): Promise<ToeicGrammarQuestion[]>;
 };
+
+export type ToeicGrammarInventory = {
+  schemaVersion: 1;
+  source: "dautoeic";
+  inventorySha256: string;
+  topics: ToeicGrammarTopic[];
+  subtopics: ToeicGrammarSubtopic[];
+  topicQuestionIds: Record<string, string[]>;
+  sets: ToeicGrammarSet[];
+  difficultyLevels: ToeicGrammarDifficultyLevel[];
+  counts: {
+    topics: number;
+    subtopics: number;
+    sets: number;
+    topicQuestions: number;
+    setQuestions: number;
+    difficultyQuestions: number;
+  };
+};
