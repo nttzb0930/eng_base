@@ -27,7 +27,7 @@ test("parses a bounded pilot and validates approved inventory SHA", () => {
   );
 });
 
-test("keeps inventory, download, and validation command boundaries offline", () => {
+test("keeps acquisition and database import command boundaries separate", () => {
   const inventory = readFileSync(
     resolve(directory, "inventory-toeic-reading-practice.ts"),
     "utf8"
@@ -38,6 +38,10 @@ test("keeps inventory, download, and validation command boundaries offline", () 
   );
   const validation = readFileSync(
     resolve(directory, "validate-toeic-reading-practice.ts"),
+    "utf8"
+  );
+  const importer = readFileSync(
+    resolve(directory, "import-toeic-reading-practice.ts"),
     "utf8"
   );
   const packageJson = readFileSync(
@@ -51,8 +55,20 @@ test("keeps inventory, download, and validation command boundaries offline", () 
     validation,
     /dautoeic-toeic-reading-source|Prisma|fetch/u
   );
+  assert.match(importer, /script-prisma/u);
+  assert.doesNotMatch(
+    importer,
+    /authorization|approved-sha|dautoeic-toeic-reading-source|fetch|migrate|seed/iu
+  );
   assert.doesNotMatch(
     packageJson,
     /data:(?:inventory|download|validate)-toeic-reading-practice[^"]*dotenv/u
+  );
+  const packageScripts = (
+    JSON.parse(packageJson) as { scripts: Record<string, string> }
+  ).scripts;
+  assert.match(
+    packageScripts["data:import-toeic-reading-practice"] ?? "",
+    /^dotenv /u
   );
 });
