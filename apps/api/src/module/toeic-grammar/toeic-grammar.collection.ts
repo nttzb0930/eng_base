@@ -6,7 +6,8 @@ export function grammarCollectionQuestionWhere(
   mode: ToeicGrammarPracticeMode,
   target: string
 ): Prisma.grammar_questionsWhereInput {
-  if (!target.trim()) throw new BadRequestException("Grammar target is required");
+  if (!target.trim())
+    throw new BadRequestException("Grammar target is required");
   switch (mode) {
     case "topic":
       return { grammar_topics: { source_topic_id: target } };

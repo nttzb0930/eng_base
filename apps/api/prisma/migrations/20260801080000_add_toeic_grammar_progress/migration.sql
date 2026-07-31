@@ -22,6 +22,7 @@ CREATE TABLE "grammar_question_attempts" (
     "question_translation_snapshot" TEXT,
     "answer_translation_snapshot" TEXT,
     "vocabulary_snapshot" JSONB NOT NULL,
+    "collection_progress_snapshot" JSONB NOT NULL,
     "correct" BOOLEAN NOT NULL,
     "attempted_at" TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 

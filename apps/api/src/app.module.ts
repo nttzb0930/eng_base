@@ -30,6 +30,9 @@ import { PlacementTestModule } from "./module/placement-test";
 import { PrismaModule } from "./database/prisma/prisma.module";
 import { HealthModule } from "./module/health";
 import { ReadingModule } from "./module/reading";
+import { ToeicReadingModule } from "./module/toeic-reading/toeic-reading.module";
+import { ToeicListeningModule } from "./module/toeic-listening/toeic-listening.module";
+import { ToeicGrammarModule } from "./module/toeic-grammar";
 
 @Module({
   imports: [
@@ -59,6 +62,9 @@ import { ReadingModule } from "./module/reading";
     ProgressModule,
     PlacementTestModule,
     ReadingModule,
+    ToeicReadingModule,
+    ToeicListeningModule,
+    ToeicGrammarModule,
     HealthModule,
   ],
   providers: [

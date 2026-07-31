@@ -98,8 +98,97 @@ the idempotent identity: an identical version is skipped, while a new version
 replaces one aggregate transactionally and publishes it immediately. Startup,
 build, CI, seed, and migration never invoke this importer.
 
-Learner attempts, grading endpoints, and presentation are separate TOEIC
-capability behavior; content publication alone does not expose a learner route.
+TOEIC Listening acquisition is a separate, local-first pipeline linked to the
+exact approved Reading inventory SHA. Inventory and download do not require a
+database; media is resumable and remains under ignored licensed-content
+storage. `data:import-toeic-listening-practice` is the only database-writing
+step. It requires the matching Reading test to exist, replaces only Parts 1–4
+inside one transaction, preserves Parts 5–7 and the Reading source version,
+then publishes the independent Listening version.
+
+The authenticated `module/toeic-listening` capability exposes overview, test
+list/detail, and local media routes under `/toeic/listening`. Reads accept an
+optional Part 1, 2, 3, or 4 and use projections that exclude correctness,
+transcripts, translations, explanations, provider URLs, and storage paths.
+Parts 1–2 return option labels without printable text; Parts 3–4 return their
+printable prompts and options.
+
+Part practice exposes `POST /toeic/listening/tests/:testId/check-answer`. It
+requires the exact Listening source version, an explicit Part 1–4, and option
+ownership for one question. Only after that selection is validated does it
+return correctness, the correct option, translation, transcript, explanation,
+and the prepared vocabulary cache owned by that exact question. A question
+without prepared cache returns an empty vocabulary array and never triggers a
+provider or AI request. Full Test has no
+equivalent request shape; its Web flow continues to reveal review data only
+after submission. Vocabulary matching reuses Vocabulary-owned behavior and
+does not persist inferred TOEIC-to-vocabulary relationships.
+
+The imported Part 1–2 source translation is a labeled block. The check-answer
+use case parses its `(A)`–`(D)` markers at read time and returns a question
+translation where Part 2 provides one plus per-choice translations. This adds
+no persistence column or migration. Parts 3–4 are not parsed as choices because
+their source field represents the conversation or talk translation.
+
+Media delivery resolves opaque asset IDs only when they belong to published
+Listening content with `DOWNLOADED` status. The resolved real path must remain
+inside the injected licensed-content root. GET and HEAD support complete and
+single byte-range responses; malformed, multiple, or unsatisfiable ranges fail
+with HTTP 416 without exposing filesystem errors.
+
+Listening submissions use a client UUID idempotency key and the published
+Listening source version. The server validates complete Full or Part 1–4 scope,
+owns the answer key, and stores immutable question, option, transcript,
+explanation, stimulus, and media-identity snapshots. Account-scoped attempt
+list/detail routes return those snapshots, so later content replacement cannot
+rewrite historical results.
+
+Listening draft progress is authenticated and backend-owned per learner, test,
+and `FULL`/`PART_1`–`PART_4` scope. A 30-day snapshot stores answers, review
+markers, active question, completed/active media, and playback position. Reads
+discard expired or source-version-stale drafts; successful submissions remove
+the matching draft transactionally.
+
+The authenticated `module/toeic-reading` capability exposes overview, test
+list/detail, submission, and attempt history/result routes under
+`/toeic/reading`. Learner test detail uses explicit persistence projections that
+exclude option correctness and grading explanations. Submission includes the
+published `source_version`, validates complete option ownership, grades on the
+server, and persists one immutable attempt aggregate transactionally.
+
+Test list, detail, and history reads accept an optional Part 5, 6, or 7. A
+selected Part projects only that Part's stimuli and questions, grading requires
+exactly that Part, and the attempt stores `practice_part`. Omitting the Part
+preserves Full Test behavior across all 100 Reading questions. Legacy Full Test
+attempts keep `practice_part = null`.
+
+Test discovery orders newer source-set labels first and applies natural numeric
+ordering within each set, so titles are delivered as `Test 1`, `Test 2`, ...
+
+TOEIC Reading draft progress is backend-owned and authenticated. One snapshot is
+stored per `(user_id, test_id, scope)`, where scope is Full Test, Part 5, Part 6,
+or Part 7. The API derives `user_id` only from the JWT context and validates
+every question and option against the published test before an atomic upsert.
+Drafts expire 30 days after their latest save; expired, unpublished, or
+source-version-mismatched drafts are discarded. Test summaries expose only the
+matching learner's answered count, total count, active question, and update time.
+A successful new submission deletes its matching draft in the attempt
+transaction; an identical idempotent retry also performs cleanup.
+`Test 10` regardless of import timestamps or database IDs.
+
+The approved inventory's source-set label is canonical provenance, not a value
+derived from a source update timestamp. It flows through private canonical
+packages into `toeic_test_sets.title`, allowing Learner delivery to identify the
+set as `2026` without inventing difficulty levels.
+
+`(user_id, submission_key)` is the attempt idempotency identity. Identical
+retries return the original result, conflicting key reuse is rejected, and a
+source-version mismatch requires the Learner to reload. Result delivery reads
+only attempt snapshots, remains scoped to the authenticated Learner, and does
+not depend on current mutable question content. Applying the attempt migration
+remains an explicit operator action; startup, build, and tests do not apply it.
+The fingerprint includes Part scope for Part practice while retaining the
+previous fingerprint shape for Full Test compatibility.
 
 ## Goal use cases
 
@@ -214,6 +303,22 @@ shared storage Adapter such as Redis; controller policies and Auth use cases do
 not change.
 
 ## Prisma and offline scripts
+
+TOEIC Grammar source acquisition uses the checksum-approved private workflow
+documented in
+[`licensed-toeic-grammar-operations.md`](../guides/licensed-toeic-grammar-operations.md).
+The inventory, download, and validation commands remain outside the Nest
+runtime and do not create a Prisma client. Only the explicit import command
+uses `scripts/support/script-prisma.ts` to replace one source-owned snapshot in
+a transaction.
+
+The authenticated `module/toeic-grammar` capability exposes the active catalog,
+learner-safe practice collections, and immediate server-side grading under
+`/toeic/grammar`. Initial question reads omit answer correctness and review-only
+enrichment. Answer submission validates snapshot, collection membership, and
+option ownership before persisting immutable attempt snapshots and account-owned
+source-question progress in one transaction. Grammar progress never uses
+browser local storage and survives replacement of database question row IDs.
 
 `@prisma/client` is the only generated Prisma Interface. Generated source does
 not live below `src/` and is never edited by hand.

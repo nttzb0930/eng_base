@@ -67,21 +67,20 @@ export class GetToeicGrammarPracticeUseCase {
         },
       },
     });
-    const progressRows =
-      await this.prisma.grammar_question_progress.findMany({
-        where: {
-          user_id: userId,
-          source: snapshot.source,
-          source_question_id: {
-            in: questions.map((question) => question.source_question_id),
-          },
+    const progressRows = await this.prisma.grammar_question_progress.findMany({
+      where: {
+        user_id: userId,
+        source: snapshot.source,
+        source_question_id: {
+          in: questions.map((question) => question.source_question_id),
         },
-        select: {
-          source_question_id: true,
-          last_selected_option_label: true,
-          last_correct: true,
-        },
-      });
+      },
+      select: {
+        source_question_id: true,
+        last_selected_option_label: true,
+        last_correct: true,
+      },
+    });
     const progress = grammarProgressMap(progressRows);
     const learnerQuestions = questions.map((question) => ({
       id: question.id,

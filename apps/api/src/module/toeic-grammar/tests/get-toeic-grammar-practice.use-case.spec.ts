@@ -78,13 +78,10 @@ test("practice returns safe ordered questions and starts at first unanswered", a
       ["id", "label", "text"],
     ]
   );
-  assert.deepEqual(
-    (questionQuery as { where: unknown }).where,
-    {
-      snapshot_id: 1,
-      grammar_topics: { source_topic_id: "topic-1" },
-    }
-  );
+  assert.deepEqual((questionQuery as { where: unknown }).where, {
+    snapshot_id: 1,
+    grammar_topics: { source_topic_id: "topic-1" },
+  });
 });
 
 test("practice rejects a missing collection", async () => {
