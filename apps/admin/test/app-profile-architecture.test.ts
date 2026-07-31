@@ -73,6 +73,16 @@ test("Admin reusable Radix primitives are imported from the shared UI package", 
   }
 });
 
+test("Admin Tailwind scans shared UI primitive sources", () => {
+  const source = readFileSync(join(root, "tailwind.config.ts"), "utf8");
+
+  assert.equal(
+    source.includes("../../packages/ui/src/**/*.{ts,tsx}"),
+    true,
+    "shared dialog classes must be present in the Admin CSS build",
+  );
+});
+
 test("shared Admin presentation imports use app-owned paths", () => {
   const sourceFiles = [
     ...filesUnder(join(root, "app")),
