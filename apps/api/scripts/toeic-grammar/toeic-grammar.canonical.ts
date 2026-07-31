@@ -227,6 +227,7 @@ function assertInvariants(value: GrammarSnapshotContent) {
 
 export function grammarContentSha256(value: GrammarSnapshotContent) {
   const { contentSha256: _ignored, ...content } = value;
+  void _ignored;
   return createHash("sha256").update(JSON.stringify(content)).digest("hex");
 }
 
