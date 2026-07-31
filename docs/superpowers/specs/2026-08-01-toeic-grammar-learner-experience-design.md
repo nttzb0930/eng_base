@@ -228,7 +228,7 @@ operator step; automated tests do not write to the user's development data.
 
 ## Delivery order
 
-1. Shared learner-safe contracts and API repository/use-case/controller flow.
+1. Shared learner-safe contracts and Prisma-backed API use-case/controller flow.
 2. Progress migration and Prisma adapter with transactional grading.
 3. Grammar catalog route, API adapter, hooks, cards, and localized skeleton.
 4. Focused single-question practice route and immediate-feedback flow.
