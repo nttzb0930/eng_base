@@ -65,12 +65,111 @@ model challenges {
 }
 
 model courses {
-  id            Int             @id @default(autoincrement())
-  code          String          @unique
+  id              Int               @id @default(autoincrement())
+  code            String            @unique
+  title           String
+  image_src       String
+  units           units[]
+  user_progress   user_progress[]
+  toeic_test_sets toeic_test_sets[]
+}
+
+model toeic_test_sets {
+  id            Int           @id @default(autoincrement())
+  course_id     Int
+  source        String
+  source_set_id String
   title         String
-  image_src     String
-  units         units[]
-  user_progress user_progress[]
+  created_at    DateTime      @default(now()) @db.Timestamp(6)
+  updated_at    DateTime      @default(now()) @updatedAt @db.Timestamp(6)
+  courses       courses       @relation(fields: [course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_test_sets_course_id_fkey")
+  toeic_tests   toeic_tests[]
+
+  @@unique([course_id, source, source_set_id], map: "toeic_test_sets_course_source_set_key")
+}
+
+model toeic_tests {
+  id                 Int                      @id @default(autoincrement())
+  test_set_id        Int
+  source             String
+  source_test_id     String
+  source_version     String                   @db.VarChar(64)
+  title              String
+  status             toeic_publication_status @default(PUBLISHED)
+  published_at       DateTime?                @db.Timestamp(6)
+  created_at         DateTime                 @default(now()) @db.Timestamp(6)
+  updated_at         DateTime                 @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_test_sets    toeic_test_sets          @relation(fields: [test_set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_tests_test_set_id_fkey")
+  toeic_stimuli      toeic_stimuli[]
+  toeic_questions    toeic_questions[]
+  toeic_media_assets toeic_media_assets[]
+
+  @@unique([source, source_test_id], map: "toeic_tests_source_test_id_key")
+  @@index([status, published_at], map: "toeic_tests_status_published_idx")
+}
+
+model toeic_stimuli {
+  id                 Int               @id @default(autoincrement())
+  test_id            Int
+  source_stimulus_id String
+  part               Int
+  kind               String
+  body               String?
+  translation        String?
+  toeic_tests        toeic_tests       @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_stimuli_test_id_fkey")
+  toeic_questions    toeic_questions[]
+
+  @@unique([test_id, source_stimulus_id], map: "toeic_stimuli_test_source_id_key")
+  @@index([test_id, part], map: "toeic_stimuli_test_part_idx")
+}
+
+model toeic_questions {
+  id                     Int                      @id @default(autoincrement())
+  test_id                Int
+  stimulus_id            Int?
+  source_question_id     String
+  number                 Int
+  part                   Int
+  prompt                 String
+  translation            String?
+  explanation            String?
+  difficulty_level       Int?
+  error_rate             Float?
+  total_attempts         Int?
+  toeic_tests            toeic_tests              @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_questions_test_id_fkey")
+  toeic_stimuli          toeic_stimuli?            @relation(fields: [stimulus_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "toeic_questions_stimulus_id_fkey")
+  toeic_question_options toeic_question_options[]
+
+  @@unique([test_id, source_question_id], map: "toeic_questions_test_source_id_key")
+  @@unique([test_id, number], map: "toeic_questions_test_number_key")
+  @@index([test_id, part], map: "toeic_questions_test_part_idx")
+  @@index([stimulus_id], map: "toeic_questions_stimulus_idx")
+}
+
+model toeic_question_options {
+  id              Int             @id @default(autoincrement())
+  question_id     Int
+  label           String          @db.VarChar(1)
+  text            String
+  correct         Boolean         @default(false)
+  toeic_questions toeic_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_question_options_question_id_fkey")
+
+  @@unique([question_id, label], map: "toeic_question_options_question_label_key")
+}
+
+model toeic_media_assets {
+  id              Int         @id @default(autoincrement())
+  test_id         Int
+  source_media_id String
+  source_url      String
+  storage_path    String?
+  sha256          String?     @db.VarChar(64)
+  bytes           Int?
+  content_type    String?
+  status          String
+  toeic_tests     toeic_tests @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_media_assets_test_id_fkey")
+
+  @@unique([test_id, source_media_id], map: "toeic_media_assets_test_source_id_key")
 }
 
 model lessons {
@@ -377,6 +476,11 @@ enum reading_source_candidate_status {
   PENDING
   CONVERTED
   REJECTED
+}
+
+enum toeic_publication_status {
+  DRAFT
+  PUBLISHED
 }
 
 model system_settings {
