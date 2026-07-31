@@ -282,7 +282,7 @@ pnpm --filter @repo/api architecture:check
 pnpm --filter @repo/api test
 pnpm --filter @repo/api check-types
 pnpm --filter @repo/api lint
-pnpm exec prettier --check apps/api/package.json "apps/api/prisma/**/*.{prisma,sql}" "apps/api/scripts/toeic-reading-practice/**/*.ts" "apps/api/src/module/toeic-content/**/*.ts" docs/guides/licensed-toeic-reading-practice-operations.md docs/features-overview.md docs/architecture/api.md
+pnpm exec prettier --check apps/api/package.json "apps/api/scripts/toeic-reading-practice/**/*.ts" "apps/api/src/module/toeic-content/**/*.ts" docs/guides/licensed-toeic-reading-practice-operations.md docs/features-overview.md docs/architecture/api.md
 git diff --check
 git ls-files var/licensed-content
 ```

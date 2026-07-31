@@ -5,7 +5,7 @@ import test from "node:test";
 
 const migrationPath = resolve(
   process.cwd(),
-  "prisma/migrations/20260731040000_add_toeic_reading_content/migration.sql",
+  "prisma/migrations/20260731040000_add_toeic_reading_content/migration.sql"
 );
 
 test("creates the Course-owned TOEIC Reading aggregate", () => {
@@ -24,7 +24,7 @@ test("creates the Course-owned TOEIC Reading aggregate", () => {
   }
   assert.match(
     sql,
-    /CREATE UNIQUE INDEX "toeic_tests_source_test_id_key".*ON "toeic_tests"\("source", "source_test_id"\)/su,
+    /CREATE UNIQUE INDEX "toeic_tests_source_test_id_key".*ON "toeic_tests"\("source", "source_test_id"\)/su
   );
   assert.match(sql, /FOREIGN KEY \("course_id"\).*"courses"/su);
   assert.match(sql, /CHECK \("part" IN \(5, 6, 7\)\)/u);

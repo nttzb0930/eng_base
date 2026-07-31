@@ -83,3 +83,39 @@ $json.parts | Select-Object part, @{Name="Questions";Expression={$_.questions.Co
 ```
 
 Do not commit files under `var/licensed-content`.
+
+## 4. Apply schema and import published content
+
+This is the only phase that connects to PostgreSQL. Confirm the target database
+and ensure a Course with the immutable code `toeic-600` already exists.
+The importer fails before package writes when that Course is missing; it never
+creates or seeds the Course.
+
+Apply pending migrations:
+
+```cmd
+pnpm --filter @repo/api db:migrate:deploy
+```
+
+Then import every complete local package:
+
+```cmd
+pnpm --filter @repo/api data:import-toeic-reading-practice
+```
+
+The summary contains:
+
+- `created`: a new source test was inserted and published;
+- `updated`: a changed version replaced the owned content in one
+  transaction and was published immediately;
+- `skipped`: the same source test and source version already exist;
+- `rejected`: validation, checksum, or package identity failed before a
+  database transaction;
+- `failed`: that test's transaction failed and rolled back.
+
+Idempotency uses `(source, sourceTestId)`. Re-running unchanged packages
+does not create duplicates. A new `sourceVersion` replaces the owned
+content atomically while leaving the test in `PUBLISHED` state.
+
+The command does not migrate, seed, fetch from the source, or accept source
+authorization. Learner API and UI are delivered separately.

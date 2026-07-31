@@ -83,6 +83,24 @@ by the explicit `data:import-reading-a1` operator command. New and existing
 drafts are synchronized transactionally, while published passages are left
 unchanged. Startup, build, CI, seed, and migration do not invoke the importer.
 
+### TOEIC content ownership
+
+TOEIC exam content is a dedicated Course-owned aggregate associated with the
+immutable Course code `toeic-600`. It does not reuse CEFR
+`reading_passages`: TOEIC tests own source identity, Parts 5-7, grouped
+stimuli, numbered questions, answer options, media metadata, and source practice
+statistics.
+
+Private canonical packages remain under ignored `var/licensed-content`
+storage. The explicit `data:import-toeic-reading-practice` command
+revalidates each package before persistence. `(source, source_test_id)` is
+the idempotent identity: an identical version is skipped, while a new version
+replaces one aggregate transactionally and publishes it immediately. Startup,
+build, CI, seed, and migration never invoke this importer.
+
+Learner attempts, grading endpoints, and presentation are separate TOEIC
+capability behavior; content publication alone does not expose a learner route.
+
 ## Goal use cases
 
 One use case represents one user or system goal. Goal files stay flat under

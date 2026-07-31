@@ -571,3 +571,15 @@ Kết quả: các feature 6.1, 6.2, 6.3, 6.5, 6.8 và 6.9 có nền tảng đán
 - [API architecture](architecture/api.md)
 - [Vocabulary data pipeline](data/vocabulary-pipeline.md)
 - [ADR catalog](adr/README.md)
+
+## TOEIC Reading theo chứng chỉ
+
+Pipeline đã inventory, tải và validate 10 đề TOEIC Reading với tổng cộng 1.000
+câu Part 5-7. Repository đã có migration và importer idempotent để liên kết nội
+dung với Course `toeic-600`, import trực tiếp ở trạng thái `PUBLISHED`,
+bỏ qua cùng phiên bản và thay thế transactionally khi có phiên bản mới.
+
+Migration và importer không được tự động chạy trên database. Sau khi operator
+áp dụng schema và import dữ liệu, các phase tiếp theo là learner API không làm
+lộ đáp án, attempt/chấm điểm, rồi UI từ thẻ **Theo chứng chỉ** đến TOEIC Reading
+Part 5-7.
