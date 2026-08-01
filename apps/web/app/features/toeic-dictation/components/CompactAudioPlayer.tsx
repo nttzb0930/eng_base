@@ -322,7 +322,7 @@ export function CompactAudioPlayer({
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {[0, 1, 2].map((value) => (
+                      {[0.5, 1, 1.5, 2].map((value) => (
                           <SelectItem key={value} value={String(value)}>
                             {value} {replaySecondsSuffix}
                           </SelectItem>
