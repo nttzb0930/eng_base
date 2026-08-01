@@ -28,3 +28,18 @@ test("Dashboard keeps variable content contained and delays dense grids", () => 
   assert.doesNotMatch(dashboard, /sm:grid-cols-3/);
   assert.match(dashboard, /overflow-hidden rounded-lg bg-gradient-to-br p-5/);
 });
+
+test("Dashboard skeleton mirrors queue and CEFR responsive grids", () => {
+  const skeletons = read("app/components/feedback/RouteSkeletons.tsx");
+  const dashboardSkeleton = skeletons.slice(
+    skeletons.indexOf("export function DashboardPageSkeleton"),
+    skeletons.indexOf("export function ListPageSkeleton")
+  );
+
+  assert.match(dashboardSkeleton, /grid gap-4 md:grid-cols-3/);
+  assert.match(dashboardSkeleton, /grid gap-4 sm:grid-cols-2 xl:grid-cols-4/);
+  assert.doesNotMatch(
+    dashboardSkeleton,
+    /Array\.from\(\{ length: 4 \}\)[\s\S]*compact/
+  );
+});
