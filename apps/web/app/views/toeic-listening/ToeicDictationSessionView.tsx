@@ -448,7 +448,7 @@ export function ToeicDictationSessionView({
                     )}
                   </div>
                 ) : mode === "check" ? (
-                  <div className="bg-muted/50 mt-5 rounded-xl p-4">
+                  <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4 dark:border-slate-800 dark:bg-slate-900/40">
                     <div className="bg-background mb-4 inline-flex w-fit items-center gap-1 rounded-md p-1 text-xs font-semibold">
                       {[30, 50, 100].map((value) => (
                         <button
