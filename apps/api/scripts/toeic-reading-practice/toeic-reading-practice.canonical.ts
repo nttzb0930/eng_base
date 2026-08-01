@@ -101,6 +101,7 @@ function choices(row: z.infer<typeof questionSchema>): ToeicReadingChoice[] {
 
 export function buildToeicReadingPracticeTest(input: {
   sourceSetId: string;
+  sourceSetName: string;
   sourceTestId: string;
   title: string;
   questions: unknown[];
@@ -159,6 +160,7 @@ export function buildToeicReadingPracticeTest(input: {
     schemaVersion: 1,
     source: "dautoeic",
     sourceSetId: input.sourceSetId,
+    sourceSetName: input.sourceSetName.trim(),
     sourceTestId: input.sourceTestId,
     title: input.title.trim(),
     parts,
@@ -183,6 +185,9 @@ export function validateToeicReadingPracticeTest(
     return { valid: false, errors: ["Package must be an object"] };
   }
   const test = value as ToeicReadingPracticeTest;
+  if (!test.sourceSetName?.trim()) {
+    errors.push("Source set name is required");
+  }
   const allQuestions = test.parts?.flatMap((part) => part.questions) ?? [];
   const ids = new Set<string>();
   const numbers = new Set<number>();

@@ -116,3 +116,16 @@ test("API environment Interface rejects missing, weak, or reused JWT secrets", (
     /must be different/
   );
 });
+
+test("API environment Interface rejects an empty licensed content root", () => {
+  assert.throws(
+    () =>
+      validateEnvironment({
+        DATABASE_URL: "postgresql://localhost/eng_base",
+        JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
+        JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
+        LICENSED_CONTENT_ROOT: "   ",
+      }),
+    /LICENSED_CONTENT_ROOT/
+  );
+});

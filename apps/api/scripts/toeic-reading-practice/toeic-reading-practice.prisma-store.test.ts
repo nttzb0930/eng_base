@@ -10,6 +10,7 @@ function content(sourceVersion: string): ToeicReadingPracticeTest {
     schemaVersion: 1,
     source: "dautoeic",
     sourceSetId: "set-2026",
+    sourceSetName: "2026",
     sourceTestId: "test-1",
     sourceVersion,
     title: "Test 1",
@@ -63,11 +64,15 @@ test("skips the same source version without opening a transaction", async () => 
 
 test("replaces a changed test in one transaction and republishes it", async () => {
   let transactions = 0;
+  const testSetUpserts: Array<Record<string, unknown>> = [];
   const updates: Array<Record<string, unknown>> = [];
   const questionCreates: Array<Record<string, unknown>> = [];
   const transaction = {
     toeic_test_sets: {
-      upsert: async () => ({ id: 21 }),
+      upsert: async (input: Record<string, unknown>) => {
+        testSetUpserts.push(input);
+        return { id: 21 };
+      },
     },
     toeic_media_assets: {
       deleteMany: async () => ({ count: 0 }),
@@ -122,6 +127,13 @@ test("replaces a changed test in one transaction and republishes it", async () =
 
   assert.equal(result, "UPDATED");
   assert.equal(transactions, 1);
+  assert.deepEqual(testSetUpserts[0]?.create, {
+    course_id: 7,
+    source: "dautoeic",
+    source_set_id: "set-2026",
+    title: "2026",
+  });
+  assert.deepEqual(testSetUpserts[0]?.update, { title: "2026" });
   assert.deepEqual(updates[0], {
     test_set_id: 21,
     source_version: "b".repeat(64),

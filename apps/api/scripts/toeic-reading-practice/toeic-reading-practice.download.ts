@@ -58,6 +58,7 @@ export async function downloadToeicReadingPractice(input: {
       const canonical = withSourceVersion(
         buildToeicReadingPracticeTest({
           sourceSetId: selected.sourceSetId,
+          sourceSetName: inventory.sourceSet,
           sourceTestId: selected.sourceTestId,
           title: selected.title,
           questions,

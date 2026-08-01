@@ -132,9 +132,9 @@ export function createPrismaToeicReadingImportStore(
             course_id: courseId,
             source: content.source,
             source_set_id: content.sourceSetId,
-            title: content.sourceSetId,
+            title: content.sourceSetName,
           },
-          update: { title: content.sourceSetId },
+          update: { title: content.sourceSetName },
           select: { id: true },
         });
 

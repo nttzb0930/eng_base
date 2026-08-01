@@ -44,6 +44,7 @@ export type ToeicReadingPracticeTest = {
   schemaVersion: 1;
   source: "dautoeic";
   sourceSetId: string;
+  sourceSetName: string;
   sourceTestId: string;
   sourceVersion: string;
   title: string;

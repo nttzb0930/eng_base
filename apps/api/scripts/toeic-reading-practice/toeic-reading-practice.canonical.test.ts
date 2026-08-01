@@ -62,6 +62,7 @@ function build(
   return withSourceVersion(
     buildToeicReadingPracticeTest({
       sourceSetId: "set-2026",
+      sourceSetName: "2026",
       sourceTestId: "test-2026-01",
       title: "2026 Test 1",
       questions,
@@ -82,6 +83,7 @@ test("builds one deterministic 100-question Reading package", () => {
     ]
   );
   assert.equal(value.parts[0]?.questions[18]?.sourceNumber, 119);
+  assert.equal(value.sourceSetName, "2026");
   assert.equal(validateToeicReadingPracticeTest(value).valid, true);
   assert.match(value.sourceVersion, /^[a-f0-9]{64}$/u);
   assert.equal(build().sourceVersion, value.sourceVersion);

@@ -16,6 +16,7 @@ function content(sourceTestId: string): ToeicReadingPracticeTest {
     schemaVersion: 1,
     source: "dautoeic",
     sourceSetId: "set-2026",
+    sourceSetName: "2026",
     sourceTestId,
     title: sourceTestId,
     parts: ([5, 6, 7] as const).map((part) => {

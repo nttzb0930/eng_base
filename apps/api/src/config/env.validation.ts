@@ -40,6 +40,7 @@ const ApiEnvironmentSchema = z
     AUTH_REFRESH_SESSION_LIMIT: z.coerce.number().int().positive().default(10),
     AUTH_REFRESH_TTL: z.coerce.number().int().positive().default(60),
     TRUST_PROXY_HOPS: z.coerce.number().int().min(0).max(10).default(0),
+    LICENSED_CONTENT_ROOT: z.string().trim().min(1).optional(),
   })
   .refine(
     (configuration) =>
