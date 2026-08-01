@@ -45,3 +45,12 @@ test("Grammar catalog renders URL-backed tabs and server progress", () => {
   assert.match(card, /unansweredCount/);
   assert.doesNotMatch(view, /localStorage/);
 });
+
+test("Grammar Topics renders aggregate cards and opens the first subtopic", () => {
+  const view = read("app/views/toeic-grammar/ToeicGrammarCatalogView.tsx");
+
+  assert.match(view, /firstToeicGrammarSubtopicTarget/);
+  assert.match(view, /catalog\.topics\.map/);
+  assert.doesNotMatch(view, /topic\.subtopics\.map/);
+  assert.doesNotMatch(view, /<details/);
+});

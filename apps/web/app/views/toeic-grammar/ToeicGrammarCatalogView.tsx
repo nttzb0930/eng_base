@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowLeft, BookOpenCheck, RotateCcw } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
@@ -10,7 +10,10 @@ import { ToeicGrammarCatalogSkeleton } from "@/app/features/toeic-grammar/compon
 import { ToeicGrammarCatalogTabs } from "@/app/features/toeic-grammar/components/ToeicGrammarCatalogTabs";
 import { ToeicGrammarProgressCard } from "@/app/features/toeic-grammar/components/ToeicGrammarProgressCard";
 import { useToeicGrammarCatalog } from "@/app/features/toeic-grammar/hooks/use-toeic-grammar";
-import type { ToeicGrammarCatalogTab } from "@/app/features/toeic-grammar/toeic-grammar-route";
+import {
+  firstToeicGrammarSubtopicTarget,
+  type ToeicGrammarCatalogTab,
+} from "@/app/features/toeic-grammar/toeic-grammar-route";
 import { ToeicReadingModeTabs } from "@/app/features/toeic-reading/components/ToeicReadingModeTabs";
 
 type ToeicGrammarCatalogViewProps = {
@@ -19,6 +22,7 @@ type ToeicGrammarCatalogViewProps = {
 
 export function ToeicGrammarCatalogView({ tab }: ToeicGrammarCatalogViewProps) {
   const t = useTranslations("toeicGrammar");
+  const locale = useLocale();
   const catalogQuery = useToeicGrammarCatalog();
 
   if (catalogQuery.isLoading) return <ToeicGrammarCatalogSkeleton />;
@@ -88,45 +92,29 @@ export function ToeicGrammarCatalogView({ tab }: ToeicGrammarCatalogViewProps) {
         {!empty && tab === "topics" ? (
           <section
             aria-label={t("catalog.sections.topics")}
-            className="mt-6 space-y-4"
+            className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3"
           >
-            {catalog.topics.map((topic) => (
-              <details
-                key={topic.target}
-                className="bg-card group rounded-2xl border p-5 shadow-sm"
-                open
-              >
-                <summary className="cursor-pointer list-none font-semibold marker:hidden">
-                  <div className="flex items-center justify-between gap-4">
-                    <span>{topic.titleVi}</span>
-                    <span className="text-muted-foreground text-xs font-medium">
-                      {t("catalog.card.questions", {
-                        count: topic.questionCount,
-                      })}
-                    </span>
-                  </div>
-                </summary>
-                <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  <ToeicGrammarProgressCard
-                    {...topic}
-                    mode="topic"
-                    title={t("catalog.allTopic", { title: topic.titleVi })}
-                    description={topic.descriptionVi}
-                  />
-                  {topic.subtopics.map((subtopic) => (
-                    <ToeicGrammarProgressCard
-                      key={subtopic.target}
-                      {...subtopic}
-                      mode="subtopic"
-                      title={subtopic.titleVi}
-                      description={subtopic.descriptionVi}
-                      eyebrow={t("catalog.subtopic")}
-                      detailHref={`/learn/cert/toeic/reading/grammar/${encodeURIComponent(subtopic.target)}`}
-                    />
-                  ))}
-                </div>
-              </details>
-            ))}
+            {catalog.topics.map((topic) => {
+              const firstSubtopic = firstToeicGrammarSubtopicTarget(topic);
+              const title =
+                locale === "vi"
+                  ? topic.titleVi
+                  : (topic.titleEn ?? topic.titleVi);
+              return (
+                <ToeicGrammarProgressCard
+                  key={topic.target}
+                  {...topic}
+                  mode="topic"
+                  title={title}
+                  description={topic.descriptionVi}
+                  detailHref={
+                    firstSubtopic
+                      ? `/learn/cert/toeic/reading/grammar/${encodeURIComponent(firstSubtopic)}`
+                      : undefined
+                  }
+                />
+              );
+            })}
           </section>
         ) : null}
 
