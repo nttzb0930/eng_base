@@ -479,7 +479,7 @@ export function ToeicDictationSessionView({
                       ))}
                     </div>
                     <div
-                      className="flex flex-wrap items-center gap-1 text-base leading-10"
+                      className="flex flex-wrap items-center gap-1 font-mono text-base leading-10"
                       aria-label={t("placeholder")}
                     >
                       {(result
