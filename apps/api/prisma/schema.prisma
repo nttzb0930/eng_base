@@ -30,6 +30,8 @@ model users {
   toeic_reading_drafts     toeic_reading_drafts[]
   grammar_question_attempts grammar_question_attempts[]
   grammar_question_progress grammar_question_progress[]
+  toeic_dictation_progress  toeic_dictation_progress[]
+  toeic_dictation_attempts  toeic_dictation_attempts[]
 
   @@index([role])
   @@index([email])
@@ -356,6 +358,98 @@ model toeic_reading_drafts {
   @@index([user_id, updated_at], map: "toeic_reading_drafts_user_updated_idx")
   @@index([expires_at], map: "toeic_reading_drafts_expires_idx")
   @@index([test_id], map: "toeic_reading_drafts_test_idx")
+}
+
+model toeic_dictation_sets {
+  id                 Int                                @id @default(autoincrement())
+  source             String
+  source_set_id      String
+  source_version     String                             @db.VarChar(64)
+  collection_name    String
+  display_name       String
+  test_number        Int
+  part               Int
+  status             toeic_dictation_publication_status @default(DRAFT)
+  published_at       DateTime?                          @db.Timestamp(6)
+  item_count         Int                                @default(0)
+  created_at         DateTime                           @default(now()) @db.Timestamp(6)
+  updated_at         DateTime                           @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_dictation_items toeic_dictation_items[]
+
+  @@unique([source, source_set_id], map: "toeic_dictation_sets_source_set_key")
+  @@index([collection_name, test_number, part, status], map: "toeic_dictation_sets_catalog_idx")
+}
+
+model toeic_dictation_items {
+  id                 Int                      @id @default(autoincrement())
+  set_id             Int
+  source_item_id     String
+  source_version     String                   @db.VarChar(64)
+  order_index        Int
+  source_group       String?
+  transcript         String
+  translation_vi     String?
+  audio_asset_id     String
+  audio_storage_path String
+  audio_sha256       String                   @db.VarChar(64)
+  audio_bytes        Int
+  audio_content_type String
+  audio_duration_ms  Int?
+  validation_status  String                   @default("VALID")
+  is_active          Boolean                  @default(true)
+  created_at         DateTime                 @default(now()) @db.Timestamp(6)
+  updated_at         DateTime                 @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_dictation_sets toeic_dictation_sets   @relation(fields: [set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_items_set_id_fkey")
+  toeic_dictation_progress toeic_dictation_progress[]
+  toeic_dictation_attempts toeic_dictation_attempts[]
+
+  @@unique([set_id, source_item_id], map: "toeic_dictation_items_set_source_item_key")
+  @@unique([set_id, order_index], map: "toeic_dictation_items_set_order_key")
+  @@index([set_id, is_active, order_index], map: "toeic_dictation_items_set_active_order_idx")
+}
+
+model toeic_dictation_progress {
+  id               Int                    @id @default(autoincrement())
+  user_id          String
+  item_id          Int
+  latest_accuracy  Int                    @default(0)
+  words_correct    Int                    @default(0)
+  total_words      Int                    @default(0)
+  attempts_count   Int                    @default(0)
+  mastered         Boolean                @default(false)
+  last_typed_text  String?
+  last_attempted_at DateTime?             @db.Timestamp(6)
+  completed_at     DateTime?              @db.Timestamp(6)
+  created_at       DateTime               @default(now()) @db.Timestamp(6)
+  updated_at       DateTime               @default(now()) @updatedAt @db.Timestamp(6)
+  users            users                  @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_progress_user_id_fkey")
+  toeic_dictation_items toeic_dictation_items @relation(fields: [item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_progress_item_id_fkey")
+
+  @@unique([user_id, item_id], map: "toeic_dictation_progress_user_item_key")
+  @@index([user_id, updated_at], map: "toeic_dictation_progress_user_updated_idx")
+  @@index([item_id], map: "toeic_dictation_progress_item_idx")
+}
+
+model toeic_dictation_attempts {
+  id                       Int                    @id @default(autoincrement())
+  user_id                  String
+  item_id                  Int
+  source_version_snapshot  String                 @db.VarChar(64)
+  submission_key           String                 @db.Uuid
+  typed_text               String
+  normalized_text          String
+  words_correct            Int
+  total_words              Int
+  accuracy                 Int
+  word_results             Json
+  submitted_at             DateTime               @default(now()) @db.Timestamp(6)
+  users                    users                  @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_attempts_user_id_fkey")
+  toeic_dictation_items    toeic_dictation_items  @relation(fields: [item_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_dictation_attempts_item_id_fkey")
+
+  @@unique([user_id, submission_key], map: "toeic_dictation_attempts_user_submission_key")
+  @@index([user_id, submitted_at], map: "toeic_dictation_attempts_user_submitted_idx")
+  @@index([user_id, item_id, submitted_at], map: "toeic_dictation_attempts_user_item_submitted_idx")
+  @@index([item_id], map: "toeic_dictation_attempts_item_idx")
 }
 
 model lessons {
@@ -868,6 +962,11 @@ enum reading_source_candidate_status {
 }
 
 enum toeic_publication_status {
+  DRAFT
+  PUBLISHED
+}
+
+enum toeic_dictation_publication_status {
   DRAFT
   PUBLISHED
 }
