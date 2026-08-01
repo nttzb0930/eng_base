@@ -143,7 +143,7 @@ Use `p-5 sm:p-8` for the recommendation panel. Change the queue grid to `grid mi
 Run:
 
 ```powershell
-pnpm --filter @repo/web exec tsx --test test/dashboard-responsive-presentation.test.ts test/dashboard-presentation.test.ts test/loading-presentation.test.ts
+pnpm --filter @repo/web exec tsx --test test/dashboard-responsive-presentation.test.ts app/features/dashboard/tests/dashboard-presentation.test.ts test/dashboard-loading-shell.test.ts
 ```
 
 Expected: all selected tests pass.
@@ -220,7 +220,7 @@ After `HeroSkeleton`, render exactly:
 - [ ] **Step 4: Run automated verification**
 
 ```powershell
-pnpm --filter @repo/web exec tsx --test test/dashboard-responsive-presentation.test.ts test/dashboard-presentation.test.ts test/loading-presentation.test.ts
+pnpm --filter @repo/web exec tsx --test test/dashboard-responsive-presentation.test.ts app/features/dashboard/tests/dashboard-presentation.test.ts test/dashboard-loading-shell.test.ts
 pnpm --filter @repo/web check-types
 pnpm --filter @repo/web lint
 pnpm --filter @repo/web build

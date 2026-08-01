@@ -16,3 +16,15 @@ test("main learner headers occupy document flow without manual content offsets",
   assert.doesNotMatch(shell, /pt-16/);
   assert.doesNotMatch(shell, /lg:pt-\[68px\]/);
 });
+
+test("Dashboard keeps variable content contained and delays dense grids", () => {
+  const dashboard = read("app/views/dashboard/DashboardView.tsx");
+
+  assert.match(
+    dashboard,
+    /className="(?=[^"]*\bw-full\b)(?=[^"]*\bmin-w-0\b)[^"]*"/
+  );
+  assert.match(dashboard, /grid min-w-0 gap-4 md:grid-cols-3/);
+  assert.doesNotMatch(dashboard, /sm:grid-cols-3/);
+  assert.match(dashboard, /overflow-hidden rounded-lg bg-gradient-to-br p-5/);
+});
