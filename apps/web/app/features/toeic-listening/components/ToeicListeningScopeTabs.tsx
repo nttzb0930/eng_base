@@ -33,7 +33,7 @@ export function ToeicListeningScopeTabs({
           return (
             <Link
               key={item.value}
-              href={`/learn/cert/toeic/listening?scope=${item.value}`}
+              href={`/learn/cert/toeic/listening?mode=level&scope=${item.value}`}
               aria-current={selected ? "page" : undefined}
               className={cn(
                 "inline-flex min-h-10 items-center justify-center rounded-full border px-5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500",

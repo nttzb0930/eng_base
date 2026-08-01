@@ -1157,6 +1157,11 @@
   },
   "toeicListening": {
     "part": "Part {part}",
+    "mode": {
+      "label": "Chế độ nghe",
+      "level": "Nghe theo level",
+      "dictation": "Nghe chép"
+    },
     "error": {
       "title": "Không thể tải TOEIC Listening",
       "description": "Hãy kiểm tra kết nối và thử lại.",
@@ -1263,6 +1268,52 @@
       "imageAlt": "Hình ảnh cho câu {number}",
       "backToTests": "Chọn đề Listening khác",
       "notAvailable": "Kết quả này không tồn tại hoặc thuộc về học viên khác."
+    }
+  },
+  "toeicDictation": {
+    "back": "Quay lại TOEIC",
+    "eyebrow": "TOEIC Listening · Nghe chép",
+    "title": "Nghe và nhập lại",
+    "description": "Nghe từng câu và nhập chính xác nội dung bạn nghe được. Tiến độ và mức mastery được lưu theo tài khoản.",
+    "partFilterLabel": "Lọc theo Part",
+    "testFilterLabel": "Lọc theo đề",
+    "allParts": "Tất cả Part",
+    "allTests": "Tất cả đề",
+    "part": "Part {part}",
+    "test": "Đề {test}",
+    "questionCount": "{count} câu",
+    "availableSets": "Các bộ nghe chép hiện có",
+    "progress": "Tiến độ",
+    "start": "Bắt đầu nghe chép",
+    "continue": "Tiếp tục nghe chép",
+    "empty": {
+      "title": "Chưa có bộ nghe chép",
+      "description": "Các bộ nghe chép 2026 đã xuất bản sẽ hiển thị ở đây."
+    },
+    "error": {
+      "title": "Không thể tải nội dung nghe chép",
+      "description": "Hãy kiểm tra kết nối rồi thử lại.",
+      "retry": "Thử lại"
+    },
+    "session": {
+      "back": "Quay lại danh sách nghe chép",
+      "question": "Câu {current}/{total}",
+      "play": "Phát audio",
+      "audioUnavailable": "Không có audio cho câu này.",
+      "placeholder": "Nhập chính xác điều bạn nghe được...",
+      "submit": "Kiểm tra đáp án",
+      "checking": "Đang kiểm tra...",
+      "previous": "Câu trước",
+      "next": "Câu tiếp theo",
+      "mastered": "Đạt mastery từ 90%",
+      "accuracy": "Độ chính xác {accuracy}%",
+      "correctWords": "Đúng {correct}/{total} từ",
+      "transcript": "Transcript",
+      "translation": "Bản dịch tiếng Việt",
+      "empty": "Bộ này không có câu đang hoạt động.",
+      "error": "Không thể tải bộ nghe chép này.",
+      "submitError": "Không thể gửi đáp án. Hãy thử lại.",
+      "saved": "Đã lưu tiến độ"
     }
   },
   "reading": {

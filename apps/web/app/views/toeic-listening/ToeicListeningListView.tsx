@@ -13,6 +13,7 @@ import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { ToeicListeningListSkeleton } from "@/app/features/toeic-listening/components/ToeicListeningListSkeleton";
+import { ToeicListeningModeTabs } from "@/app/features/toeic-listening/components/ToeicListeningModeTabs";
 import { ToeicListeningScopeTabs } from "@/app/features/toeic-listening/components/ToeicListeningScopeTabs";
 import { useToeicListeningTests } from "@/app/features/toeic-listening/hooks/use-toeic-listening";
 import {
@@ -72,6 +73,7 @@ export function ToeicListeningListView({ scope }: ToeicListeningListViewProps) {
           </p>
         </header>
 
+        <ToeicListeningModeTabs mode="level" />
         <ToeicListeningScopeTabs scope={scope} />
 
         {testsQuery.data.length === 0 ? (

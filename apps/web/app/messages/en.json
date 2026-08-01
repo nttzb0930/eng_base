@@ -1157,6 +1157,11 @@
   },
   "toeicListening": {
     "part": "Part {part}",
+    "mode": {
+      "label": "Listening mode",
+      "level": "Listen by level",
+      "dictation": "Dictation"
+    },
     "error": {
       "title": "TOEIC Listening could not be loaded",
       "description": "Check your connection and try again.",
@@ -1263,6 +1268,52 @@
       "imageAlt": "Image for question {number}",
       "backToTests": "Choose another Listening test",
       "notAvailable": "This result does not exist or belongs to another learner."
+    }
+  },
+  "toeicDictation": {
+    "back": "Back to TOEIC",
+    "eyebrow": "TOEIC Listening · Dictation",
+    "title": "Listen and type",
+    "description": "Listen to each sentence and type what you hear. Your progress and mastery are saved to your account.",
+    "partFilterLabel": "Filter by part",
+    "testFilterLabel": "Filter by test",
+    "allParts": "All Parts",
+    "allTests": "All Tests",
+    "part": "Part {part}",
+    "test": "Test {test}",
+    "questionCount": "{count} questions",
+    "availableSets": "Available dictation sets",
+    "progress": "Progress",
+    "start": "Start dictation",
+    "continue": "Continue dictation",
+    "empty": {
+      "title": "No dictation sets yet",
+      "description": "Published 2026 dictation sets will appear here."
+    },
+    "error": {
+      "title": "Dictation could not be loaded",
+      "description": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "session": {
+      "back": "Back to dictation sets",
+      "question": "Question {current}/{total}",
+      "play": "Play audio",
+      "audioUnavailable": "Audio is unavailable for this item.",
+      "placeholder": "Type exactly what you hear...",
+      "submit": "Check answer",
+      "checking": "Checking...",
+      "previous": "Previous",
+      "next": "Next",
+      "mastered": "Mastered at 90% accuracy",
+      "accuracy": "{accuracy}% accuracy",
+      "correctWords": "{correct}/{total} words correct",
+      "transcript": "Transcript",
+      "translation": "Vietnamese translation",
+      "empty": "This set has no active items.",
+      "error": "This dictation set could not be loaded.",
+      "submitError": "Your answer could not be submitted. Try again.",
+      "saved": "Progress saved"
     }
   },
   "reading": {
