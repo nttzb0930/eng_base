@@ -167,7 +167,7 @@ export function DashboardView() {
 
             <div className="grid min-w-0 gap-4 md:grid-cols-3">
               {/* Due Card */}
-              <div className="bg-card hover:shadow-lift group relative flex min-w-0 flex-col rounded-2xl border border-rose-100 p-5 transition duration-200 hover:-translate-y-0.5">
+              <div className="bg-card hover:shadow-lift group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-rose-100 p-5 transition duration-200 hover:-translate-y-0.5">
                 <div className="pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full bg-rose-500/10 opacity-50 blur-2xl transition-opacity group-hover:opacity-75" />
                 <div className="relative z-10 mb-4 flex items-center justify-between">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-500">
@@ -207,7 +207,7 @@ export function DashboardView() {
               </div>
 
               {/* Saved Card */}
-              <div className="bg-card hover:shadow-lift group relative flex min-w-0 flex-col rounded-2xl border border-blue-100 p-5 transition duration-200 hover:-translate-y-0.5">
+              <div className="bg-card hover:shadow-lift group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-blue-100 p-5 transition duration-200 hover:-translate-y-0.5">
                 <div className="pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full bg-blue-500/10 opacity-50 blur-2xl transition-opacity group-hover:opacity-75" />
                 <div className="relative z-10 mb-4 flex items-center justify-between">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-500">
@@ -247,7 +247,7 @@ export function DashboardView() {
               </div>
 
               {/* Weak Card */}
-              <div className="bg-card hover:shadow-lift group relative flex min-w-0 flex-col rounded-2xl border-2 border-orange-200 p-5 shadow-[0_0_0_3px_rgba(249,115,22,0.04)] transition duration-200 hover:-translate-y-0.5">
+              <div className="bg-card hover:shadow-lift group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border-2 border-orange-200 p-5 shadow-[0_0_0_3px_rgba(249,115,22,0.04)] transition duration-200 hover:-translate-y-0.5">
                 <div className="bg-orange-500/12 pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full opacity-60 blur-2xl transition-opacity group-hover:opacity-85" />
                 <div className="relative z-10 mb-4 flex items-center justify-between">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-50 text-orange-500">
