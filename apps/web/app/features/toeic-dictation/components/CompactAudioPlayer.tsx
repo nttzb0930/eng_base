@@ -1,6 +1,6 @@
 "use client";
 
-import { Pause, Play, RotateCcw, Volume2 } from "lucide-react";
+import { Pause, Play, RotateCcw, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/app/components/ui/button";
@@ -39,7 +39,7 @@ export function CompactAudioPlayer({
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(1);
+  const [muted, setMuted] = useState(false);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -70,11 +70,12 @@ export function CompactAudioPlayer({
     setPlaying(false);
     setCurrentTime(0);
     setDuration(0);
+    setMuted(false);
   }, [src]);
 
   useEffect(() => {
-    if (audioRef.current) audioRef.current.volume = volume;
-  }, [volume]);
+    if (audioRef.current) audioRef.current.muted = muted;
+  }, [muted]);
 
   const togglePlayback = () => {
     const audio = audioRef.current;
@@ -145,11 +146,20 @@ export function CompactAudioPlayer({
               type="button"
               variant="ghost"
               size="icon"
-              onClick={() => setVolume((value) => (value > 0 ? 0 : 1))}
+              onClick={() => {
+                const audio = audioRef.current;
+                const nextMuted = !muted;
+                if (audio) audio.muted = nextMuted;
+                setMuted(nextMuted);
+              }}
               aria-label={volumeLabel}
               className="h-9 w-9 shrink-0 rounded-full"
             >
-              <Volume2 className="h-4 w-4" aria-hidden="true" />
+              {muted ? (
+                <VolumeX className="h-4 w-4" aria-hidden="true" />
+              ) : (
+                <Volume2 className="h-4 w-4" aria-hidden="true" />
+              )}
             </Button>
           </TooltipTrigger>
           <TooltipContent>{volumeLabel}</TooltipContent>
