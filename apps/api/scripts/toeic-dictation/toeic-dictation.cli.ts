@@ -28,16 +28,31 @@ function argument(argv: string[], name: string) {
   return values[0] || undefined;
 }
 
-export function loadToeicDictationRuntime(argv: string[]) {
+export function parseToeicDictationOptions(argv: string[]) {
   const collection = argument(argv, "collection") ?? "2026";
   if (collection !== "2026") {
     throw new Error("--collection must be 2026 during Phase 1");
   }
-  const repositoryRoot = resolve(__dirname, "../../../..");
   const approvedSha = argument(argv, "approved-sha");
   if (approvedSha !== undefined && !/^[a-f0-9]{64}$/u.test(approvedSha)) {
     throw new Error("--approved-sha must be a lowercase SHA-256");
   }
+  const workersValue = argument(argv, "workers");
+  const workers = workersValue === undefined ? undefined : Number(workersValue);
+  if (workers !== undefined && (!Number.isInteger(workers) || workers <= 0 || workers > 64)) {
+    throw new Error("--workers must be a positive integer no greater than 64");
+  }
+  return {
+    collection,
+    approvedSha,
+    workers,
+    authorization: argument(argv, "authorization"),
+  };
+}
+
+export function loadToeicDictationRuntime(argv: string[]) {
+  const options = parseToeicDictationOptions(argv);
+  const repositoryRoot = resolve(__dirname, "../../../..");
   const profile = profileSchema.parse(
     JSON.parse(
       readFileSync(
@@ -54,7 +69,7 @@ export function loadToeicDictationRuntime(argv: string[]) {
     "source-authorization.txt"
   );
   const authorization =
-    argument(argv, "authorization") ??
+    options.authorization ??
     (existsSync(authorizationPath)
       ? readFileSync(authorizationPath, "utf8").trim()
       : undefined);
@@ -67,7 +82,8 @@ export function loadToeicDictationRuntime(argv: string[]) {
     repositoryRoot,
     profile,
     collectionName: "Đề 2026",
-    approvedSha,
+    approvedSha: options.approvedSha,
+    workers: options.workers,
     storage: createFileToeicDictationStorage(repositoryRoot),
     inventoryConcurrency: profile.inventoryConcurrency,
     source: createDautoeicToeicDictationSource({

@@ -16,14 +16,30 @@ async function main() {
     source: runtime.source,
     storage: runtime.storage,
     inventory,
-    concurrency: runtime.profile.downloadConcurrency,
+    concurrency: runtime.workers ?? runtime.profile.downloadConcurrency,
+    onProgress: (event) => {
+      const path = new URL(event.url).pathname;
+      const error = event.errorCode ? ` error=${event.errorCode}` : "";
+      console.log(
+        `[dictation-download] ${event.completed}/${event.total} ${event.status} ${path} ${event.bytes}B ${event.elapsedMs}ms${error}`
+      );
+    },
   });
   await runtime.storage.writePackageFile(
     inventory.inventorySha256,
     "validation.json",
     validation
   );
-  console.log(JSON.stringify(summary, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        ...summary,
+        workers: runtime.workers ?? runtime.profile.downloadConcurrency,
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error: unknown) => {

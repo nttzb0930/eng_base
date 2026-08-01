@@ -50,13 +50,23 @@ export async function downloadToeicDictationPackage(input: {
   storage: ToeicDictationStorage;
   inventory: ToeicDictationInventory;
   concurrency?: number;
-  onProgress?: (value: { completed: number; total: number; url: string; status: "DOWNLOADED" | "REUSED" | "FAILED" }) => void;
+  onProgress?: (value: {
+    completed: number;
+    total: number;
+    url: string;
+    status: "DOWNLOADED" | "REUSED" | "FAILED";
+    bytes: number;
+    elapsedMs: number;
+    errorCode?: string;
+  }) => void;
 }): Promise<ToeicDictationDownloadSummary> {
   const packageVersion = input.inventory.inventorySha256;
+  let completed = 0;
   const mediaResults = await mapToeicDictationMediaWithConcurrency(
     input.inventory.media,
     input.concurrency ?? 2,
     async (media) => {
+      const startedAt = Date.now();
       try {
         const result = await input.storage.downloadMedia({
           packageVersion,
@@ -65,24 +75,53 @@ export async function downloadToeicDictationPackage(input: {
           expectedBytes: media.bytes,
           request: (offset) => input.source.downloadMedia(media.url, offset),
         });
-        input.onProgress?.({ completed: 1, total: input.inventory.media.length, url: media.url, status: result.reused ? "REUSED" : "DOWNLOADED" });
-        return { media, result };
+        input.onProgress?.({
+          completed: ++completed,
+          total: input.inventory.media.length,
+          url: media.url,
+          status: result.reused ? "REUSED" : "DOWNLOADED",
+          bytes: result.bytes,
+          elapsedMs: Date.now() - startedAt,
+        });
+        return { media, result, error: null };
       } catch (error) {
-        input.onProgress?.({ completed: 1, total: input.inventory.media.length, url: media.url, status: "FAILED" });
-        throw Object.assign(new Error(classify(error)), { mediaUrl: media.url });
+        const errorCode = classify(error);
+        input.onProgress?.({
+          completed: ++completed,
+          total: input.inventory.media.length,
+          url: media.url,
+          status: "FAILED",
+          bytes: 0,
+          elapsedMs: Date.now() - startedAt,
+          errorCode,
+        });
+        return { media, result: null, error: errorCode };
       }
     }
-  ).catch((error) => {
-    throw error;
-  });
-  const downloadedMediaCount = mediaResults.length;
+  );
+  const successful = mediaResults.filter(
+    (value): value is { media: (typeof input.inventory.media)[number]; result: NonNullable<typeof value.result>; error: null } =>
+      value.result !== null
+  );
+  const failed = mediaResults
+    .filter((value) => value.error !== null)
+    .map(({ media, error }) => ({ mediaUrl: media.url, category: error! }));
+  const downloadedMediaCount = successful.length;
+  if (failed.length > 0) {
+    return {
+      completed: [],
+      resumed: successful.filter(({ result }) => result.reused).map(({ media }) => media.url),
+      failed,
+      downloadedMediaCount,
+    };
+  }
   await input.storage.writePackageFile(packageVersion, "content.json", input.inventory);
   await input.storage.writePackageFile(packageVersion, "manifest.json", {
     schemaVersion: 1,
     source: "dautoeic",
     collectionName: input.inventory.collectionName,
     inventorySha256: input.inventory.inventorySha256,
-    media: mediaResults.map(({ media, result }) => ({
+    media: successful.map(({ media, result }) => ({
       url: media.url,
       storagePath: result.storagePath,
       sha256: result.sha256,
@@ -92,8 +131,8 @@ export async function downloadToeicDictationPackage(input: {
   });
   return {
     completed: [packageVersion],
-    resumed: mediaResults.filter(({ result }) => result.reused).map(({ media }) => media.url),
-    failed: [],
+    resumed: successful.filter(({ result }) => result.reused).map(({ media }) => media.url),
+    failed,
     downloadedMediaCount,
   };
 }
