@@ -66,6 +66,7 @@
     "data:inventory-toeic-dictation": "tsx ./scripts/toeic-dictation/inventory-toeic-dictation.ts",
     "data:download-toeic-dictation": "tsx ./scripts/toeic-dictation/download-toeic-dictation.ts",
     "data:validate-toeic-dictation": "tsx ./scripts/toeic-dictation/validate-toeic-dictation.ts",
+    "data:import-toeic-dictation": "dotenv -e ../../.env -- tsx ./scripts/toeic-dictation/import-toeic-dictation.ts",
     "data:inventory-toeic-vocabulary-cache": "tsx ./scripts/toeic-vocabulary-cache/inventory-toeic-vocabulary-cache.ts",
     "data:import-toeic-vocabulary-cache": "dotenv -e ../../.env -- tsx ./scripts/toeic-vocabulary-cache/import-toeic-vocabulary-cache.ts",
     "data:inventory-toeic-grammar": "tsx ./scripts/toeic-grammar/inventory-toeic-grammar.ts",

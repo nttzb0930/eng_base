@@ -96,3 +96,22 @@ export function loadToeicDictationRuntime(argv: string[]) {
     }),
   };
 }
+
+export function loadToeicDictationStorageRuntime(argv: string[]) {
+  const options = parseToeicDictationOptions(argv);
+  const repositoryRoot = resolve(__dirname, "../../../..");
+  const profile = profileSchema.parse(
+    JSON.parse(
+      readFileSync(
+        resolve(__dirname, "toeic-dictation.profile.json"),
+        "utf8",
+      ),
+    ),
+  );
+  return {
+    repositoryRoot,
+    profile,
+    approvedSha: options.approvedSha,
+    storage: createFileToeicDictationStorage(repositoryRoot),
+  };
+}

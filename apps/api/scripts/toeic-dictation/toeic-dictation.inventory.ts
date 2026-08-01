@@ -1,7 +1,6 @@
 import { createHash } from "node:crypto";
 
 import type {
-  ToeicDictationCanonicalItem,
   ToeicDictationCanonicalSet,
   ToeicDictationInventory,
   ToeicDictationInventorySource,
