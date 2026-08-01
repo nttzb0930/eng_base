@@ -12,6 +12,8 @@ import { GetToeicDictationSetUseCase } from "./use-cases/get-toeic-dictation-set
 import { ListToeicDictationSetsUseCase } from "./use-cases/list-toeic-dictation-sets.use-case";
 import { SubmitToeicDictationUseCase } from "./use-cases/submit-toeic-dictation.use-case";
 import { GetToeicDictationMediaUseCase } from "./use-cases/get-toeic-dictation-media.use-case";
+import { GetToeicDictationCheckItemUseCase } from "./use-cases/get-toeic-dictation-check-item.use-case";
+import { GetToeicDictationFullItemUseCase } from "./use-cases/get-toeic-dictation-full-item.use-case";
 
 @Module({
   controllers: [ToeicDictationController, ToeicDictationMediaController],
@@ -21,6 +23,8 @@ import { GetToeicDictationMediaUseCase } from "./use-cases/get-toeic-dictation-m
     GetToeicDictationSetUseCase,
     GetToeicDictationProgressUseCase,
     SubmitToeicDictationUseCase,
+    GetToeicDictationCheckItemUseCase,
+    GetToeicDictationFullItemUseCase,
     {
       provide: GetToeicDictationMediaUseCase,
       inject: [PrismaService, applicationConfig.KEY],

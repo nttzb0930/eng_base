@@ -32,6 +32,14 @@ export class ToeicDictationQueryDto {
   part?: ToeicDictationPart;
 }
 
+export class ToeicDictationCheckQueryDto {
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @IsIn([30, 50, 100])
+  hide = 50;
+}
+
 export class ToeicDictationSubmitDto implements ToeicDictationSubmitPayload {
   @IsInt()
   itemId!: number;
@@ -47,4 +55,14 @@ export class ToeicDictationSubmitDto implements ToeicDictationSubmitPayload {
 
   @IsUUID()
   submissionKey!: string;
+
+  @IsOptional()
+  @IsIn(["check", "dictation", "full"])
+  mode?: "check" | "dictation" | "full";
+
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @IsIn([30, 50, 100])
+  hidePercent?: 30 | 50 | 100;
 }

@@ -98,3 +98,79 @@ export function gradeToeicDictation(
     words,
   };
 }
+
+type TranscriptToken = {
+  text: string;
+  wordIndex: number | null;
+};
+
+export type ToeicDictationCheckSegment = {
+  segmentIndex: number;
+  wordIndex: number | null;
+  text: string | null;
+  hidden: boolean;
+};
+
+function tokenizeTranscript(value: string): TranscriptToken[] {
+  const tokens = value.match(/[\p{L}\p{N}]+(?:['’\u2011-][\p{L}\p{N}]+)*|[^\p{L}\p{N}\s]+|\s+/gu) ?? [];
+  let wordIndex = 0;
+  return tokens.map((text) => {
+    const isWord = /[\p{L}\p{N}]/u.test(text);
+    const token = { text, wordIndex: isWord ? wordIndex : null };
+    if (isWord) wordIndex += 1;
+    return token;
+  });
+}
+
+export function buildToeicDictationCheckSegments(
+  transcript: string,
+  itemId: number,
+  hidePercent: 30 | 50 | 100,
+): ToeicDictationCheckSegment[] {
+  const tokens = tokenizeTranscript(transcript);
+  const wordCount = tokens.filter((token) => token.wordIndex !== null).length;
+  const hiddenCount = Math.max(1, Math.ceil((wordCount * hidePercent) / 100));
+  const hiddenWords = new Set(
+    Array.from({ length: wordCount }, (_, index) => ({
+      index,
+      rank: (index * 31 + itemId) % Math.max(wordCount, 1),
+    }))
+      .sort((left, right) => left.rank - right.rank)
+      .slice(0, hiddenCount)
+      .map((entry) => entry.index),
+  );
+  return tokens.map((token, segmentIndex) => {
+    const hidden = token.wordIndex !== null && hiddenWords.has(token.wordIndex);
+    return {
+      segmentIndex,
+      wordIndex: token.wordIndex,
+      text: hidden ? null : token.text,
+      hidden,
+    };
+  });
+}
+
+export function gradeToeicDictationCheck(
+  transcript: string,
+  typedText: string,
+  itemId: number,
+  hidePercent: 30 | 50 | 100,
+): ToeicDictationGrade {
+  const segments = buildToeicDictationCheckSegments(transcript, itemId, hidePercent);
+  const expected = segments
+    .filter((segment) => segment.hidden)
+    .map((segment) => normalizeDictationText(tokenizeTranscript(transcript)[segment.segmentIndex]?.text ?? ""))
+    .flat();
+  const actual = normalizeDictationText(typedText);
+  const words = alignWords(expected, actual);
+  const wordsCorrect = words.filter((word) => word.status === "CORRECT").length;
+  const totalWords = expected.length;
+  const accuracy = totalWords === 0 ? 0 : Math.round((wordsCorrect / totalWords) * 100);
+  return {
+    wordsCorrect,
+    totalWords,
+    accuracy,
+    mastered: accuracy >= 90 && totalWords > 0,
+    words,
+  };
+}

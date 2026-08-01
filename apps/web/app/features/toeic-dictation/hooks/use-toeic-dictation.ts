@@ -41,6 +41,22 @@ export function useToeicDictationProgress(setId: number) {
   });
 }
 
+export function useToeicDictationCheckItem(itemId: number, hidePercent: 30 | 50 | 100) {
+  return useQuery({
+    queryKey: [...toeicDictationKeys.all, "check", itemId, hidePercent],
+    queryFn: () => toeicDictationApi.checkItem(itemId, hidePercent),
+    enabled: Number.isInteger(itemId) && itemId > 0,
+  });
+}
+
+export function useToeicDictationFullItem(itemId: number, enabled = true) {
+  return useQuery({
+    queryKey: [...toeicDictationKeys.all, "full", itemId],
+    queryFn: () => toeicDictationApi.fullItem(itemId),
+    enabled: enabled && Number.isInteger(itemId) && itemId > 0,
+  });
+}
+
 export function useSubmitToeicDictation() {
   const queryClient = useQueryClient();
   return useMutation({

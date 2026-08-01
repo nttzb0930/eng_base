@@ -1,6 +1,8 @@
 import type {
   ToeicDictationOverview,
   ToeicDictationPart,
+  ToeicDictationCheckItem,
+  ToeicDictationFullItem,
   ToeicDictationProgress,
   ToeicDictationSetDetail,
   ToeicDictationSetSummary,
@@ -40,8 +42,18 @@ export function createToeicDictationApi(http: ToeicDictationHttp) {
     async set(setId: number) {
       return (await http.get<ToeicDictationSetDetail>(`/toeic/dictation/sets/${setId}/items`)).data;
     },
-    async progress(setId: number) {
+  async progress(setId: number) {
       return (await http.get<ToeicDictationProgress>(`/toeic/dictation/sets/${setId}/progress`)).data;
+    },
+    async checkItem(itemId: number, hidePercent: 30 | 50 | 100 = 50) {
+      return (
+        await http.get<ToeicDictationCheckItem>(
+          `/toeic/dictation/items/${itemId}/check?hide=${hidePercent}`,
+        )
+      ).data;
+    },
+    async fullItem(itemId: number) {
+      return (await http.get<ToeicDictationFullItem>(`/toeic/dictation/items/${itemId}/full`)).data;
     },
     async submit(itemId: number, body: ToeicDictationSubmitPayload) {
       return (await http.post<ToeicDictationSubmitResult>(`/toeic/dictation/items/${itemId}/submit`, body)).data;

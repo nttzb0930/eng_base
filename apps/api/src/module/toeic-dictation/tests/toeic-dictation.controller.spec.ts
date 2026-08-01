@@ -42,6 +42,8 @@ test("TOEIC Dictation controller exposes authenticated learner routes", () => {
     .sort();
 
   assert.deepEqual(routes, [
+    "GET items/:itemId/check",
+    "GET items/:itemId/full",
     "GET overview",
     "GET sets",
     "GET sets/:setId/items",

@@ -1306,6 +1306,8 @@
       "modeDictation": "Dictation",
       "modeFull": "Full Listening",
       "modeUnavailable": "This mode is coming soon.",
+      "hideWords": "Hide words",
+      "checkWord": "Missing word {number}",
       "question": "Question {current}/{total}",
       "play": "Play audio",
       "audioUnavailable": "Audio is unavailable for this item.",

@@ -1,4 +1,5 @@
 export type ToeicDictationPart = 1 | 2 | 3 | 4;
+export type ToeicDictationMode = "check" | "dictation" | "full";
 
 export type ToeicDictationProgressSummary = {
   answeredCount: number;
@@ -64,6 +65,28 @@ export type ToeicDictationSubmitPayload = {
   sourceVersion: string;
   typedText: string;
   submissionKey: string;
+  mode?: ToeicDictationMode;
+  hidePercent?: 30 | 50 | 100;
+};
+
+export type ToeicDictationCheckSegment = {
+  segmentIndex: number;
+  wordIndex: number | null;
+  text: string | null;
+  hidden: boolean;
+};
+
+export type ToeicDictationCheckItem = {
+  itemId: number;
+  order: number;
+  hidePercent: 30 | 50 | 100;
+  segments: ToeicDictationCheckSegment[];
+};
+
+export type ToeicDictationFullItem = {
+  itemId: number;
+  transcript: string;
+  translationVi: string | null;
 };
 
 export type ToeicDictationWordResult = {

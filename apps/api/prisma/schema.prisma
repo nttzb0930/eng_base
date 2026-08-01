@@ -442,6 +442,8 @@ model toeic_dictation_attempts {
   total_words              Int
   accuracy                 Int
   word_results             Json
+  practice_mode            toeic_dictation_practice_mode @default(DICTATION)
+  hide_percent             Int?
   submitted_at             DateTime               @default(now()) @db.Timestamp(6)
   users                    users                  @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_attempts_user_id_fkey")
   toeic_dictation_items    toeic_dictation_items  @relation(fields: [item_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_dictation_attempts_item_id_fkey")
@@ -450,6 +452,7 @@ model toeic_dictation_attempts {
   @@index([user_id, submitted_at], map: "toeic_dictation_attempts_user_submitted_idx")
   @@index([user_id, item_id, submitted_at], map: "toeic_dictation_attempts_user_item_submitted_idx")
   @@index([item_id], map: "toeic_dictation_attempts_item_idx")
+  @@index([user_id, practice_mode, submitted_at], map: "toeic_dictation_attempts_user_mode_submitted_idx")
 }
 
 model lessons {
@@ -969,6 +972,12 @@ enum toeic_publication_status {
 enum toeic_dictation_publication_status {
   DRAFT
   PUBLISHED
+}
+
+enum toeic_dictation_practice_mode {
+  CHECK
+  DICTATION
+  FULL
 }
 
 model system_settings {

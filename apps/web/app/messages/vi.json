@@ -1306,6 +1306,8 @@
       "modeDictation": "Nghe Chép",
       "modeFull": "Nghe Full",
       "modeUnavailable": "Chế độ này sẽ được bổ sung sau.",
+      "hideWords": "Ẩn từ",
+      "checkWord": "Từ còn thiếu {number}",
       "question": "Câu {current}/{total}",
       "play": "Phát audio",
       "audioUnavailable": "Không có audio cho câu này.",

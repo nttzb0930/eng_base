@@ -9,7 +9,7 @@ import type {
 } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { gradeToeicDictation } from "../toeic-dictation-grading.policy";
+import { gradeToeicDictation, gradeToeicDictationCheck } from "../toeic-dictation-grading.policy";
 
 @Injectable()
 export class SubmitToeicDictationUseCase {
@@ -82,7 +82,11 @@ export class SubmitToeicDictationUseCase {
       };
     }
 
-    const grade = gradeToeicDictation(item.transcript, payload.typedText);
+    const mode = payload.mode ?? "dictation";
+    const hidePercent = payload.hidePercent ?? 50;
+    const grade = mode === "check"
+      ? gradeToeicDictationCheck(item.transcript, payload.typedText, item.id, hidePercent)
+      : gradeToeicDictation(item.transcript, payload.typedText);
     const normalizedText = payload.typedText.trim();
     const attempt = await this.prisma.$transaction(async (transaction) => {
       const created = await transaction.toeic_dictation_attempts.create({
@@ -97,6 +101,8 @@ export class SubmitToeicDictationUseCase {
           total_words: grade.totalWords,
           accuracy: grade.accuracy,
           word_results: grade.words,
+          practice_mode: mode.toUpperCase() as "CHECK" | "DICTATION" | "FULL",
+          hide_percent: mode === "check" ? hidePercent : null,
         },
         select: { id: true, submitted_at: true },
       });

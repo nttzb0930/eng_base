@@ -2,7 +2,9 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  buildToeicDictationCheckSegments,
   gradeToeicDictation,
+  gradeToeicDictationCheck,
   normalizeDictationText,
 } from "../toeic-dictation-grading.policy.js";
 
@@ -43,4 +45,17 @@ test("empty dictation input is never mastered", () => {
   assert.equal(result.wordsCorrect, 0);
   assert.equal(result.accuracy, 0);
   assert.equal(result.mastered, false);
+});
+
+test("dictation check masks the requested percentage without exposing answers", () => {
+  const segments = buildToeicDictationCheckSegments("The quick brown fox jumps.", 10, 50);
+  assert.equal(segments.filter((segment) => segment.hidden).length, 3);
+  assert.equal(segments.filter((segment) => segment.hidden).every((segment) => segment.text === null), true);
+  assert.equal(segments.some((segment) => !segment.hidden && segment.text !== null), true);
+});
+
+test("dictation check grades the hidden words only", () => {
+  const result = gradeToeicDictationCheck("The quick brown fox jumps.", "The quick brown fox jumps", 10, 100);
+  assert.equal(result.accuracy, 100);
+  assert.equal(result.mastered, true);
 });

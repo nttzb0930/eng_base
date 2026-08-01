@@ -4,6 +4,8 @@ import test from "node:test";
 import { ConflictException } from "@nestjs/common";
 
 import { GetToeicDictationSetUseCase } from "../use-cases/get-toeic-dictation-set.use-case";
+import { GetToeicDictationCheckItemUseCase } from "../use-cases/get-toeic-dictation-check-item.use-case";
+import { GetToeicDictationFullItemUseCase } from "../use-cases/get-toeic-dictation-full-item.use-case";
 import { ListToeicDictationSetsUseCase } from "../use-cases/list-toeic-dictation-sets.use-case";
 import { SubmitToeicDictationUseCase } from "../use-cases/submit-toeic-dictation.use-case";
 
@@ -93,6 +95,40 @@ test("dictation set detail exposes opaque media ids but no transcript", async ()
     { id: 20, order: 1, groupId: null, durationSeconds: 2.5, mediaId: 20 },
   ]);
   assert.equal("transcript" in detail.items[0]!, false);
+});
+
+test("dictation check returns masked segments without hidden text", async () => {
+  const useCase = new GetToeicDictationCheckItemUseCase({
+    toeic_dictation_items: {
+      findFirst: async () => ({
+        id: 20,
+        order_index: 1,
+        transcript: "The quick brown fox jumps.",
+      }),
+    },
+  } as never);
+
+  const result = await useCase.execute(20, 50);
+  assert.equal(result.hidePercent, 50);
+  assert.equal(result.segments.some((segment) => segment.hidden && segment.text === null), true);
+});
+
+test("dictation full returns transcript and translation on demand", async () => {
+  const useCase = new GetToeicDictationFullItemUseCase({
+    toeic_dictation_items: {
+      findFirst: async () => ({
+        id: 20,
+        transcript: "A sentence",
+        translation_vi: "Một câu",
+      }),
+    },
+  } as never);
+
+  assert.deepEqual(await useCase.execute(20), {
+    itemId: 20,
+    transcript: "A sentence",
+    translationVi: "Một câu",
+  });
 });
 
 test("dictation submit rejects stale content versions", async () => {

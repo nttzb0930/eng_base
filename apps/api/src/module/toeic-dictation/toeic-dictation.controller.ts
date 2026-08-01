@@ -11,7 +11,9 @@ import {
 
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
-import { ToeicDictationQueryDto, ToeicDictationSubmitDto } from "./dto/toeic-dictation.dto";
+import { ToeicDictationCheckQueryDto, ToeicDictationQueryDto, ToeicDictationSubmitDto } from "./dto/toeic-dictation.dto";
+import { GetToeicDictationCheckItemUseCase } from "./use-cases/get-toeic-dictation-check-item.use-case";
+import { GetToeicDictationFullItemUseCase } from "./use-cases/get-toeic-dictation-full-item.use-case";
 import { GetToeicDictationOverviewUseCase } from "./use-cases/get-toeic-dictation-overview.use-case";
 import { GetToeicDictationProgressUseCase } from "./use-cases/get-toeic-dictation-progress.use-case";
 import { GetToeicDictationSetUseCase } from "./use-cases/get-toeic-dictation-set.use-case";
@@ -27,6 +29,8 @@ export class ToeicDictationController {
     private readonly getSetUseCase: GetToeicDictationSetUseCase,
     private readonly progressUseCase: GetToeicDictationProgressUseCase,
     private readonly submitUseCase: SubmitToeicDictationUseCase,
+    private readonly checkItemUseCase: GetToeicDictationCheckItemUseCase,
+    private readonly fullItemUseCase: GetToeicDictationFullItemUseCase,
   ) {}
 
   @Get("overview")
@@ -56,6 +60,19 @@ export class ToeicDictationController {
     @Param("setId", ParseIntPipe) setId: number,
   ) {
     return this.progressUseCase.execute(userId, setId);
+  }
+
+  @Get("items/:itemId/check")
+  checkItem(
+    @Param("itemId", ParseIntPipe) itemId: number,
+    @Query() query: ToeicDictationCheckQueryDto,
+  ) {
+    return this.checkItemUseCase.execute(itemId, query.hide as 30 | 50 | 100);
+  }
+
+  @Get("items/:itemId/full")
+  fullItem(@Param("itemId", ParseIntPipe) itemId: number) {
+    return this.fullItemUseCase.execute(itemId);
   }
 
   @Post("items/:itemId/submit")
