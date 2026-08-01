@@ -21,11 +21,13 @@
 ### Task 1: Public profile and CLI argument boundary
 
 **Files:**
+
 - Create: `apps/api/scripts/reading/source/reading-source.profile.json`
 - Create: `apps/api/scripts/reading/source/reading-source.cli.test.ts`
 - Modify: `apps/api/scripts/reading/source/reading-source.cli.ts`
 
 **Interfaces:**
+
 - Produces `loadReadingSourceRuntime({ argv, repositoryRoot })`.
 - Resolves authorization from `--authorization=<value>` first, otherwise from `var/licensed-content/dautoeic/source-authorization.txt`.
 - Resolves `--approved-sha=<64 lowercase hex>` only for download.
@@ -38,6 +40,7 @@
 ### Task 2: Convert operator commands and package scripts
 
 **Files:**
+
 - Modify: `apps/api/scripts/reading/source/inventory-reading-source.ts`
 - Modify: `apps/api/scripts/reading/source/download-reading-source.ts`
 - Modify: `apps/api/scripts/reading/source/validate-reading-source.ts`
@@ -45,6 +48,7 @@
 - Modify: `apps/api/package.json`
 
 **Interfaces:**
+
 - Inventory: `pnpm --filter @repo/api data:inventory-reading-source --authorization=<value>`
 - Download: `pnpm --filter @repo/api data:download-reading-source --authorization=<value> --approved-sha=<sha>`
 - Validate: `pnpm --filter @repo/api data:validate-reading-source`
@@ -59,6 +63,7 @@
 ### Task 3: Verification and handoff
 
 **Files:**
+
 - Modify only if verification exposes a defect in Task 1 or Task 2.
 
 - [ ] Run all Reading source tests.

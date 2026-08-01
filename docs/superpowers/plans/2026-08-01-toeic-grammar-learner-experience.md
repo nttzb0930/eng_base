@@ -22,11 +22,13 @@
 ### Task 1: Shared learner-safe Grammar interface
 
 **Files:**
+
 - Create: `packages/shared/src/types/toeic-grammar.ts`
 - Modify: `packages/shared/src/types/index.ts`
 - Test: `packages/shared/test/toeic-grammar-interface.test.ts`
 
 **Interfaces:**
+
 - Produces: `ToeicGrammarPracticeMode`, `ToeicGrammarCatalog`, `ToeicGrammarPractice`, `ToeicGrammarAnswerPayload`, and `ToeicGrammarAnswerResult` from root `@repo/shared`.
 
 - [ ] **Step 1: Write the failing root-interface test**
@@ -34,12 +36,7 @@
 Assert the shared index exports the Grammar file, the file has no Prisma/Nest/React imports, and all four modes type-check.
 
 ```ts
-const modes: ToeicGrammarPracticeMode[] = [
-  "topic",
-  "subtopic",
-  "set",
-  "level",
-];
+const modes: ToeicGrammarPracticeMode[] = ["topic", "subtopic", "set", "level"];
 assert.equal(modes.length, 4);
 ```
 
@@ -54,11 +51,7 @@ Expected: FAIL because the interface does not exist.
 Catalog summaries contain `questionCount`, `correctCount`, `incorrectCount`, and `unansweredCount`. Learner questions expose option `id`, `label`, and `text` only. Grading result owns correct option, translations, explanations, vocabulary, and updated progress.
 
 ```ts
-export type ToeicGrammarPracticeMode =
-  | "topic"
-  | "subtopic"
-  | "set"
-  | "level";
+export type ToeicGrammarPracticeMode = "topic" | "subtopic" | "set" | "level";
 
 export type ToeicGrammarAnswerPayload = {
   submissionKey: string;
@@ -86,11 +79,13 @@ git commit -m "feat(shared): define TOEIC grammar learner interface"
 ### Task 2: Grammar progress persistence
 
 **Files:**
+
 - Modify: `apps/api/prisma/schema.prisma`
 - Create: `apps/api/prisma/migrations/20260801080000_add_toeic_grammar_progress/migration.sql`
 - Test: `apps/api/src/module/toeic-grammar/tests/toeic-grammar-persistence.test.ts`
 
 **Interfaces:**
+
 - Consumes: imported source question identity.
 - Produces: immutable `grammar_question_attempts` and current `grammar_question_progress`.
 
@@ -129,6 +124,7 @@ git commit -m "feat(api): persist TOEIC grammar progress"
 ### Task 3: Learner-safe catalog and practice reads
 
 **Files:**
+
 - Create: `apps/api/src/module/toeic-grammar/toeic-grammar.collection.ts`
 - Create: `apps/api/src/module/toeic-grammar/toeic-grammar.mapper.ts`
 - Create: `apps/api/src/module/toeic-grammar/use-cases/get-toeic-grammar-catalog.use-case.ts`
@@ -137,6 +133,7 @@ git commit -m "feat(api): persist TOEIC grammar progress"
 - Test: `apps/api/src/module/toeic-grammar/tests/get-toeic-grammar-practice.use-case.spec.ts`
 
 **Interfaces:**
+
 - Produces: `execute(userId)` catalog and `execute(userId, mode, target)` safe practice collection.
 
 - [ ] **Step 1: Write failing catalog tests**
@@ -162,7 +159,7 @@ options: row.grammar_question_options.map(({ id, label, text }) => ({
   id,
   label,
   text,
-}))
+}));
 ```
 
 - [ ] **Step 5: Run GREEN and type check**
@@ -181,6 +178,7 @@ git commit -m "feat(api): expose TOEIC grammar learner reads"
 ### Task 4: Transactional grading and HTTP delivery
 
 **Files:**
+
 - Create: `apps/api/src/module/toeic-grammar/dto/toeic-grammar.dto.ts`
 - Create: `apps/api/src/module/toeic-grammar/use-cases/submit-toeic-grammar-answer.use-case.ts`
 - Create: `apps/api/src/module/toeic-grammar/toeic-grammar.controller.ts`
@@ -192,6 +190,7 @@ git commit -m "feat(api): expose TOEIC grammar learner reads"
 - Test: `apps/api/src/module/toeic-grammar/tests/toeic-grammar.controller.spec.ts`
 
 **Interfaces:**
+
 - Produces: authenticated `GET /toeic/grammar/catalog`, `GET /toeic/grammar/practice`, and `POST /toeic/grammar/answers`.
 
 - [ ] **Step 1: Write failing grading tests**
@@ -226,6 +225,7 @@ git commit -m "feat(api): grade TOEIC grammar practice"
 ### Task 5: Web Grammar data layer and URL state
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-grammar/api/toeic-grammar.api.ts`
 - Create: `apps/web/app/features/toeic-grammar/hooks/use-toeic-grammar.ts`
 - Create: `apps/web/app/features/toeic-grammar/toeic-grammar-route.ts`
@@ -235,6 +235,7 @@ git commit -m "feat(api): grade TOEIC grammar practice"
 - Test: `apps/web/app/features/toeic-grammar/tests/toeic-grammar-session-state.test.ts`
 
 **Interfaces:**
+
 - Produces: resource keys/API, React Query hooks, URL parser, and single-question state helpers.
 
 - [ ] **Step 1: Write failing API tests**
@@ -269,6 +270,7 @@ git commit -m "feat(web): add TOEIC grammar data flow"
 ### Task 6: Catalog UI and Reading mode switch
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarCatalogTabs.tsx`
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarProgressCard.tsx`
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarCatalogSkeleton.tsx`
@@ -308,6 +310,7 @@ git commit -m "feat(web): browse TOEIC grammar practice"
 ### Task 7: Single-question practice UI
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarQuestion.tsx`
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarFeedback.tsx`
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarNavigator.tsx`
@@ -369,4 +372,3 @@ pnpm dev
 ```
 
 Smoke Catalog → collection → answer → feedback → reload → account progress. Do not deploy the migration during automated verification.
-

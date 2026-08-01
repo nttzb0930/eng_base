@@ -110,12 +110,12 @@ export function buildToeicReadingPracticeTest(input: {
 
 export function validateToeicReadingPracticeTest(
   value: unknown,
-  options?: { requireDownloadedMedia?: boolean },
+  options?: { requireDownloadedMedia?: boolean }
 ): { valid: boolean; errors: string[] };
 
 export function sha256Canonical(value: unknown): string;
 export function withSourceVersion(
-  value: Omit<ToeicReadingPracticeTest, "sourceVersion">,
+  value: Omit<ToeicReadingPracticeTest, "sourceVersion">
 ): ToeicReadingPracticeTest;
 ```
 
@@ -127,10 +127,17 @@ four choices, one correct answer, and Part 6/7 passage relations. Assert:
 ```ts
 assert.deepEqual(
   canonical.parts.map(({ part, questions }) => [part, questions.length]),
-  [[5, 30], [6, 16], [7, 54]],
+  [
+    [5, 30],
+    [6, 16],
+    [7, 54],
+  ]
 );
 assert.equal(validateToeicReadingPracticeTest(canonical).valid, true);
-assert.equal(withSourceVersion(input).sourceVersion, withSourceVersion(input).sourceVersion);
+assert.equal(
+  withSourceVersion(input).sourceVersion,
+  withSourceVersion(input).sourceVersion
+);
 ```
 
 Also assert rejection of Part 4, missing question 119, duplicate IDs/numbers,
@@ -153,9 +160,21 @@ Use strict Zod schemas for the known source columns:
 
 ```ts
 const questionColumns = [
-  "id", "test_id", "part", "section", "question_number", "passage_id",
-  "image_url", "question_text", "option_a", "option_b", "option_c",
-  "option_d", "correct_answer", "order_index", "dich_nghia",
+  "id",
+  "test_id",
+  "part",
+  "section",
+  "question_number",
+  "passage_id",
+  "image_url",
+  "question_text",
+  "option_a",
+  "option_b",
+  "option_c",
+  "option_d",
+  "correct_answer",
+  "order_index",
+  "dich_nghia",
   "explanation_vi",
 ] as const;
 ```
@@ -211,7 +230,10 @@ export function createDautoeicToeicReadingSource(config: {
 }): ToeicReadingSource;
 
 export async function inventoryToeicReadingPractice(input: {
-  source: Pick<ToeicReadingSource, "listSets" | "listTests" | "listQuestionIndex">;
+  source: Pick<
+    ToeicReadingSource,
+    "listSets" | "listTests" | "listQuestionIndex"
+  >;
   sourceSet: string;
   limitTests: number;
   observedAt: string;
@@ -303,11 +325,21 @@ export type ToeicReadingStorage = {
   writePackageFile(
     sourceTestId: string,
     sourceVersion: string,
-    name: "content.json" | "practice-stats.json" | "validation.json" | "manifest.json",
-    value: unknown,
+    name:
+      | "content.json"
+      | "practice-stats.json"
+      | "validation.json"
+      | "manifest.json",
+    value: unknown
   ): Promise<void>;
-  listCompletePackages(): Promise<Array<{ sourceTestId: string; sourceVersion: string }>>;
-  readPackageFile(sourceTestId: string, sourceVersion: string, name: string): Promise<unknown>;
+  listCompletePackages(): Promise<
+    Array<{ sourceTestId: string; sourceVersion: string }>
+  >;
+  readPackageFile(
+    sourceTestId: string,
+    sourceVersion: string,
+    name: string
+  ): Promise<unknown>;
 };
 
 export async function downloadToeicReadingPractice(input: {

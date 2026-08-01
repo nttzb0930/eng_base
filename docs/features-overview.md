@@ -579,7 +579,81 @@ câu Part 5-7. Repository đã có migration và importer idempotent để liên
 dung với Course `toeic-600`, import trực tiếp ở trạng thái `PUBLISHED`,
 bỏ qua cùng phiên bản và thay thế transactionally khi có phiên bản mới.
 
-Migration và importer không được tự động chạy trên database. Sau khi operator
-áp dụng schema và import dữ liệu, các phase tiếp theo là learner API không làm
-lộ đáp án, attempt/chấm điểm, rồi UI từ thẻ **Theo chứng chỉ** đến TOEIC Reading
-Part 5-7.
+Migration và importer không được tự động chạy trên database. Learner API hiện
+đã có overview, danh sách/detail đề không lộ đáp án, submit/chấm điểm theo
+`sourceVersion`, idempotency key, và lịch sử kết quả dựa trên snapshot bất biến.
+Learner UI hiện đi từ thẻ **Theo chứng chỉ** đến tổng quan TOEIC, danh sách đề,
+phiên làm bài Part 5-7 và kết quả. Phiên làm bài nhóm đúng stimulus của Part 6/7,
+hỗ trợ đánh dấu xem lại, xác nhận nộp bài và xử lý xung đột phiên bản. Toàn bộ
+copy được đồng bộ Anh - Việt và mỗi route có skeleton riêng theo layout.
+
+Trang danh sách TOEIC Reading có bốn phạm vi **Full Test**, **Part 5**,
+**Part 6** và **Part 7**, mặc định mở Part 5. Mỗi phạm vi hiển thị các đề thuộc
+bộ năm 2026 để học viên tự chọn. Full Test yêu cầu đủ 100 câu; luyện theo Part
+chỉ tải, chấm và lưu lịch sử của Part đã chọn. Hệ thống không tự suy diễn
+Level 1-5 từ thống kê nguồn.
+
+Tiến độ làm dở được lưu ở backend theo đúng tài khoản, đề và phạm vi; Full Test
+và từng Part có draft độc lập. Phiên làm bài restore đáp án, câu đang xem và
+đánh dấu xem lại, autosave tuần tự sau mỗi thay đổi, hết hạn sau 30 ngày và
+không dùng `localStorage`. Card đề hiển thị tiến độ thật từ server và nút
+**Tiếp tục làm bài**. Khi nộp thành công, draft tương ứng được xóa cùng luồng
+ghi attempt để không xuất hiện lại sau khi đã hoàn thành.
+
+### TOEIC Listening — đang triển khai
+
+Pipeline Listening đã có inventory liên kết chính xác với cùng 10 đề Reading,
+download media local có resume/Range, canonical validation cho 100 câu Parts
+1–4, migration và importer idempotent. Listening có version và trạng thái xuất
+bản riêng; import chỉ thay Parts 1–4 và không làm mất Reading Parts 5–7.
+
+Luồng vận hành là `data:inventory-toeic-listening-practice` →
+`data:download-toeic-listening-practice` →
+`data:validate-toeic-listening-practice` → apply migration có chủ đích →
+`data:import-toeic-listening-practice`. Learner API hiện đã có overview,
+danh sách/detail theo Full hoặc Part 1–4 và không lộ đáp án, transcript, bản
+dịch, giải thích hay đường dẫn nguồn trước khi nộp. Media audio/image được stream
+qua API có JWT guard, kiểm tra path containment và hỗ trợ HEAD/single HTTP Range.
+
+Backend Listening hiện đã hỗ trợ nộp từng Part 1–4 hoặc Full 100 câu, chấm điểm
+phía server, idempotency key, lịch sử theo tài khoản và kết quả snapshot bất
+biến gồm transcript, bản dịch, giải thích và media identity. Draft/resume đã
+được lưu theo tài khoản và phạm vi Full/Part, gồm đáp án, câu đánh dấu, câu đang
+xem và trạng thái phát audio; draft hết hạn sau 30 ngày và được xóa khi nộp
+thành công.
+
+Learner Web đã có trang chọn đề Listening theo **Full Test** hoặc từng **Part
+1–4**, mặc định mở Part 1. Card đề hiển thị số câu đúng phạm vi, tiến độ draft
+theo tài khoản, kết quả gần nhất và hành động Bắt đầu/Tiếp tục/Làm lại. Card
+Listening trong tổng quan TOEIC chỉ mở khi backend báo có nội dung đã xuất bản.
+Phiên làm bài hỗ trợ hình Part 1, audio được bảo vệ bởi Bearer auth, nhóm ba câu
+cho Part 3/4, điều hướng câu hỏi, đánh dấu xem lại và autosave backend. Full Test
+yêu cầu thao tác Bắt đầu, không cho tua hoặc phát lại audio đã kết thúc; luyện
+từng Part cho phép nghe lại và tua. Sau khi nộp, trang kết quả hiển thị tổng điểm,
+điểm từng Part, đáp án, transcript, bản dịch, giải thích, hình ảnh và audio review
+từ snapshot bất biến.
+
+Phiên Listening hiện dùng bố cục hai cột trên desktop: audio/hình ảnh ở bên
+trái và câu hỏi/điều hướng ở bên phải; màn hình nhỏ xếp dọc. Khi luyện riêng
+Part 1–4, mỗi lựa chọn được backend chấm ngay và có thể mở bản dịch, giải thích
+cùng các từ khớp với catalog Vocabulary. Full Test không gọi API chấm từng câu
+và chỉ hiển thị các dữ liệu học tập này sau khi nộp.
+
+Dữ liệu đã tải của Part 1–2 còn được tách theo nhãn A–D để hiển thị bản dịch
+từng đáp án; Part 2 tách thêm phần dịch câu hỏi. Việc tách diễn ra khi kiểm tra
+đáp án nên không cần migration. Part 3–4 chỉ hiển thị bản dịch hội thoại/bài nói
+do nguồn chưa có trường dịch riêng cho câu hỏi và từng lựa chọn.
+
+### TOEIC Grammar — learner end-to-end
+
+TOEIC Reading hiện có hai mode **Luyện đề** và **Luyện ngữ pháp**. Catalog ngữ
+pháp đọc dữ liệu đã import theo ba hướng: chủ điểm/chủ điểm con, bộ tổng hợp và
+độ khó nội bộ Level 1–5. Mỗi card hiển thị số đúng, sai, chưa làm và tiến độ thật
+theo tài khoản; lựa chọn catalog được lưu trên URL thay vì local storage.
+
+Phiên luyện chỉ hiển thị một câu. Khi học viên chọn đáp án, backend kiểm tra
+snapshot, collection và quyền sở hữu option rồi chấm ngay trong transaction.
+Payload ban đầu không chứa answer key; đáp án đúng, giải thích, bản dịch và từ
+vựng đã chuẩn bị chỉ được trả sau khi chấm. Nếu lỗi mạng, UI giữ nguyên
+`submissionKey` để retry idempotent. Thanh điều hướng sticky hỗ trợ Câu trước,
+Câu tiếp theo và mở danh sách câu với trạng thái đúng/sai/chưa làm rõ ràng.

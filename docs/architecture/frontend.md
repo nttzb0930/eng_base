@@ -137,6 +137,47 @@ preferences contain only font scale and line height and are stored defensively
 under `reading-display-preferences`; they are not learner progress or a server
 contract.
 
+TOEIC Reading uses the Web feature/view profile under
+`app/features/toeic-reading` and `app/views/toeic-reading`. The localized main
+shell owns `/learn/cert/toeic` and `/learn/cert/toeic/reading`; the focused
+session shell owns `/toeic/reading/tests/:testId` and
+`/toeic/reading/results/:attemptId`. Each route imports a distinct
+layout-matching skeleton rather than a generic page placeholder.
+
+The session keeps answer selections, review markers, and its idempotency key in
+client state. It submits the exact `sourceVersion` received with the test and
+does not infer correctness before submission. Result presentation consumes
+immutable attempt snapshots and communicates correctness with icons, text, and
+border treatment in addition to color.
+
+TOEIC Reading sessions fetch the selected test once and render one active
+question at a time. Previous, Next, and direct question-number controls update
+client state without requiring an answer or fetching another page. Part 6 and
+Part 7 render only the stimulus referenced by the active question. Submission
+remains available only after every question in the selected scope has an
+answer.
+
+The session also fetches the authenticated backend draft before initializing
+interactive state. Answer, review-marker, and active-question changes enqueue
+complete snapshots through a feature-owned serialized queue; only one save is
+in flight and rapid pending changes collapse to the newest snapshot. The UI
+keeps local state after a save error, reports saving/saved/error status, and
+flushes queued work before submission so a late request cannot recreate a
+deleted draft. No learner progress is stored in `localStorage`. Test cards use
+server-projected draft progress for the progress bar, answered/remaining counts,
+and Continue action.
+
+The Reading browser exposes four URL-backed scopes: Full Test, Part 5, Part 6,
+and Part 7. Part 5 is the default. Every scope lists the published tests so the
+Learner chooses the exact test before entering a session. Full Test omits the
+API Part query and requires all 100 questions; Part scopes pass the selected
+Part through cache keys, detail delivery, submission, result labeling, and back
+navigation.
+
+Cards render the backend-owned source-set label and test title. Web does not
+derive a year from `updatedAt` and does not invent Level 1-5 classifications.
+Part 6 and Part 7 retain their stimulus grouping in focused sessions.
+
 ## Browser data flow
 
 Web and Admin each own an Auth transport:
@@ -264,6 +305,57 @@ created only for a real public Interface.
 - Add `api`, `hooks`, `store`, `types`, or `components` only below a known owner.
 - Add semantic child folders only for real workflows or presentation modes, not
   to hide repeated filename prefixes.
+
+## TOEIC Listening learner browser
+
+`app/features/toeic-listening` owns the authenticated resource adapter, React
+Query cache keys, Full/Part scope parsing and Listening-specific presentation
+components. Cache identities include the selected Part so Full Test and Parts
+1–4 never share draft, test or attempt state. The localized route remains a thin
+adapter to `ToeicListeningListView`; learner progress comes from the backend and
+is never reconstructed from `localStorage`.
+
+Listening session routes use the focused learner shell. Protected audio and
+images are fetched through the authenticated resource adapter and rendered from
+short-lived Blob URLs, so access tokens never appear in media URLs. Full Test
+requires an explicit Start gesture, prevents seeking and replay after an asset
+ends, and checkpoints playback through the backend draft queue. Part practice
+allows replay and seeking. Transcript, translation, explanations and answer
+keys are rendered only from immutable result snapshots after submission.
+
+The session uses a two-pane desktop workspace and a stacked mobile layout. The
+left pane owns instructions, protected audio, and images; the right pane owns
+questions, navigation, and actions. In Part practice, selecting an option calls
+the one-question check endpoint and renders accessible correct/incorrect
+feedback plus expandable source-provided Listening translation and
+catalog-backed vocabulary guidance. Current imported Parts 3–4 provide a
+conversation/talk translation rather than a separately translated question.
+Part 1–2 additionally render a dedicated answer-translation disclosure from
+the labels returned by the check-answer API. This support remains absent from
+Full Test before submission.
+The Full Test path does not call that endpoint and keeps learning aids hidden
+until the result screen.
+
+## TOEIC Grammar learner practice
+
+`app/features/toeic-grammar` owns the authenticated catalog/practice resource,
+React Query cache identities, URL parsing, retry-safe answer state, and Grammar
+presentation components. `app/views/toeic-grammar` composes the catalog and
+single-question session. Localized `page.tsx` files remain thin adapters, and
+the catalog and session routes each provide a layout-specific skeleton.
+
+TOEIC Reading exposes test practice and Grammar practice as sibling modes. The
+Grammar catalog keeps its topic, mixed-set, and difficulty selections in the
+URL. Progress is projected by the backend for the authenticated learner and is
+never reconstructed from browser storage.
+
+The focused Grammar session renders one active question and submits an option
+immediately. It does not receive or infer the answer key before grading. A
+failed request retains the same submission key for an explicit safe retry;
+translation, explanation, correctness, and prepared vocabulary render only
+from the grading response. Previous, Next, and direct question-number controls
+live in a sticky footer and communicate correct, incorrect, current, and
+unanswered states with icons and text in addition to color.
 
 ## Verification
 

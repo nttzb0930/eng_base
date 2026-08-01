@@ -38,11 +38,13 @@
 ### Task 1: Canonical contract and fail-closed validation
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.types.ts`
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.canonical.ts`
 - Test: `apps/api/scripts/toeic-grammar/toeic-grammar.canonical.test.ts`
 
 **Interfaces:**
+
 - Produces `normalizeGrammarSnapshot(value: unknown): ToeicGrammarSnapshot`.
 - Produces `validateGrammarSnapshot(value: unknown): GrammarValidationResult`.
 - Produces `grammarContentSha256(value: GrammarSnapshotContent): string`.
@@ -86,10 +88,12 @@ Run the focused test again; expect PASS. Commit only the three Task 1 files with
 ### Task 2: Allowlisted source adapter
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-grammar/dautoeic-grammar-source.ts`
 - Test: `apps/api/scripts/toeic-grammar/dautoeic-grammar-source.test.ts`
 
 **Interfaces:**
+
 - Produces `createDautoeicGrammarSource(config): ToeicGrammarSource`.
 - `ToeicGrammarSource` exposes `readCatalog`, `readSets`, `readTopicQuestions`, `readSetQuestions`, and `readDifficultyQuestions`.
 
@@ -122,12 +126,14 @@ Run the source test; expect PASS. Commit Task 2 files with `feat(api): read auth
 ### Task 3: Deterministic inventory and private storage
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.storage.ts`
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.inventory.ts`
 - Test: `apps/api/scripts/toeic-grammar/toeic-grammar.storage.test.ts`
 - Test: `apps/api/scripts/toeic-grammar/toeic-grammar.inventory.test.ts`
 
 **Interfaces:**
+
 - Produces `createFileToeicGrammarStorage({ repositoryRoot, configuredRoot? })`.
 - Produces `inventoryToeicGrammar({ source, storage }): Promise<ToeicGrammarInventoryResult>`.
 
@@ -156,12 +162,14 @@ Run both Task 3 tests; expect PASS. Commit Task 3 files with `feat(api): invento
 ### Task 4: Resumable download and offline validation
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.download.ts`
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.validation.ts`
 - Test: `apps/api/scripts/toeic-grammar/toeic-grammar.download.test.ts`
 - Test: `apps/api/scripts/toeic-grammar/toeic-grammar.validation.test.ts`
 
 **Interfaces:**
+
 - Produces `downloadToeicGrammar({ approvedSha256, source, storage, workers }): Promise<DownloadSummary>`.
 - Produces `validateStoredToeicGrammar({ storage }): Promise<ValidationSummary>`.
 
@@ -190,6 +198,7 @@ Run both Task 4 tests; expect PASS. Commit Task 4 files with `feat(api): downloa
 ### Task 5: Prisma persistence and atomic import
 
 **Files:**
+
 - Modify: `apps/api/prisma/schema.prisma`
 - Create: `apps/api/prisma/migrations/20260801070000_add_toeic_grammar_content/migration.sql`
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.import.ts`
@@ -198,6 +207,7 @@ Run both Task 4 tests; expect PASS. Commit Task 4 files with `feat(api): downloa
 - Test: `apps/api/scripts/toeic-grammar/toeic-grammar.prisma-store.test.ts`
 
 **Interfaces:**
+
 - Produces `importToeicGrammar({ approvedSha256, storage, store }): Promise<"UPDATED" | "SKIPPED">`.
 - Produces `createPrismaToeicGrammarImportStore(prisma): ToeicGrammarImportStore`.
 
@@ -230,6 +240,7 @@ Run `pnpm --filter @repo/api exec prisma generate`, then both Task 5 tests. Expe
 ### Task 6: Secure commands, documentation, and verification
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-grammar/toeic-grammar.cli.ts`
 - Create: `apps/api/scripts/toeic-grammar/inventory-toeic-grammar.ts`
 - Create: `apps/api/scripts/toeic-grammar/download-toeic-grammar.ts`
@@ -242,6 +253,7 @@ Run `pnpm --filter @repo/api exec prisma generate`, then both Task 5 tests. Expe
 - Create: `docs/guides/licensed-toeic-grammar-operations.md`
 
 **Interfaces:**
+
 - Produces four `data:*toeic-grammar` pnpm commands with bounded JSON output.
 
 - [ ] **Step 1: Write failing command-boundary tests**
