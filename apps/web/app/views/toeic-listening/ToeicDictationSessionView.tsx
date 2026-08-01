@@ -5,6 +5,7 @@ import {
   ArrowRight,
   CheckCircle2,
   ChevronDown,
+  Eye,
   Flag,
   Headphones,
   RotateCcw,
@@ -398,6 +399,7 @@ export function ToeicDictationSessionView({
                       restartLabel={t("restart")}
                       progressLabel={t("audioProgress")}
                       volumeLabel={t("volume")}
+                      volumeProgressLabel={t("volumeProgress")}
                     />
                   </div>
                 ) : (
@@ -452,7 +454,7 @@ export function ToeicDictationSessionView({
                             setHintCount(0);
                             setRevealedCount(0);
                           }}
-                          className={`rounded-lg px-3 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
+                          className={`rounded-md px-3 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
                         >
                           {value}%
                         </button>
@@ -504,7 +506,7 @@ export function ToeicDictationSessionView({
                                   [segment.wordIndex ?? -1]: event.target.value,
                                 }))
                               }
-                              className="border-input bg-background mx-1 inline-block h-9 w-24 rounded-md border border-b-2 border-b-sky-400 px-2 text-center text-sm outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+                              className="mx-1 inline-block h-9 w-20 rounded-md border-0 border-b-2 border-b-sky-400 bg-slate-200/80 px-2 text-center text-sm outline-none transition-colors placeholder:text-transparent focus-visible:bg-sky-50 focus-visible:ring-2 focus-visible:ring-sky-500 dark:bg-slate-800 dark:focus-visible:bg-sky-950"
                             />
                           );
                         }
@@ -546,8 +548,12 @@ export function ToeicDictationSessionView({
                             if (result) setRevealedCount(count);
                             else setHintCount(count as 1 | 2 | 3);
                           }}
-                          className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                          className={`rounded-md border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
                         >
+                          <Eye
+                            className="mr-1 h-3.5 w-3.5"
+                            aria-hidden="true"
+                          />
                           {t("revealWords", { count })}
                         </button>
                       ))}
@@ -557,8 +563,9 @@ export function ToeicDictationSessionView({
                           if (result) setRevealedCount(result.words.length);
                           else setHintCount("all");
                         }}
-                        className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === "all" ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                        className={`rounded-md border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === "all" ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
                       >
+                        <Eye className="mr-1 h-3.5 w-3.5" aria-hidden="true" />
                         {t("revealAll")}
                       </button>
                       <button
@@ -569,7 +576,7 @@ export function ToeicDictationSessionView({
                           setHintCount(0);
                           setRevealedCount(0);
                         }}
-                        className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+                        className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-xs font-semibold"
                       >
                         <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
                         {t("reset")}

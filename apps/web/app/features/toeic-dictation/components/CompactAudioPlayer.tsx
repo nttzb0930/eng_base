@@ -19,6 +19,7 @@ type Props = {
   restartLabel: string;
   progressLabel: string;
   volumeLabel: string;
+  volumeProgressLabel: string;
 };
 
 function formatTime(value: number) {
@@ -34,11 +35,13 @@ export function CompactAudioPlayer({
   restartLabel,
   progressLabel,
   volumeLabel,
+  volumeProgressLabel,
 }: Props) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
 
   useEffect(() => {
@@ -70,12 +73,16 @@ export function CompactAudioPlayer({
     setPlaying(false);
     setCurrentTime(0);
     setDuration(0);
+    setVolume(1);
     setMuted(false);
   }, [src]);
 
   useEffect(() => {
-    if (audioRef.current) audioRef.current.muted = muted;
-  }, [muted]);
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.volume = volume;
+    audio.muted = muted;
+  }, [muted, volume]);
 
   const togglePlayback = () => {
     const audio = audioRef.current;
@@ -97,7 +104,7 @@ export function CompactAudioPlayer({
 
   return (
     <TooltipProvider delayDuration={300}>
-      <div className="bg-muted/50 flex w-full max-w-[460px] items-center gap-2 rounded-full border px-2.5 py-2 shadow-sm">
+      <div className="bg-muted/50 flex w-full max-w-[460px] items-center gap-2 rounded-md border px-2.5 py-2 shadow-sm">
         <audio
           ref={audioRef}
           src={src}
@@ -112,7 +119,7 @@ export function CompactAudioPlayer({
               size="icon"
               onClick={togglePlayback}
               aria-label={playing ? pauseLabel : playLabel}
-              className="h-9 w-9 shrink-0 rounded-full"
+              className="h-9 w-9 shrink-0 rounded-md"
             >
               {playing ? (
                 <Pause className="h-4 w-4" aria-hidden="true" />
@@ -149,11 +156,15 @@ export function CompactAudioPlayer({
               onClick={() => {
                 const audio = audioRef.current;
                 const nextMuted = !muted;
-                if (audio) audio.muted = nextMuted;
+                if (audio) {
+                  audio.muted = nextMuted;
+                  if (!nextMuted && volume === 0) audio.volume = 1;
+                }
+                if (!nextMuted && volume === 0) setVolume(1);
                 setMuted(nextMuted);
               }}
               aria-label={volumeLabel}
-              className="h-9 w-9 shrink-0 rounded-full"
+              className="h-9 w-9 shrink-0 rounded-md"
             >
               {muted ? (
                 <VolumeX className="h-4 w-4" aria-hidden="true" />
@@ -166,13 +177,31 @@ export function CompactAudioPlayer({
         </Tooltip>
         <Tooltip>
           <TooltipTrigger asChild>
+            <div className="w-16 shrink-0 px-1">
+              <Slider
+                value={[muted ? 0 : volume]}
+                max={1}
+                step={0.05}
+                onValueChange={([value]) => {
+                  if (value === undefined) return;
+                  setVolume(value);
+                  setMuted(value === 0);
+                }}
+                aria-label={volumeProgressLabel}
+              />
+            </div>
+          </TooltipTrigger>
+          <TooltipContent>{volumeProgressLabel}</TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger asChild>
             <Button
               type="button"
               variant="ghost"
               size="icon"
               onClick={restart}
               aria-label={restartLabel}
-              className="h-9 w-9 shrink-0 rounded-full"
+              className="h-9 w-9 shrink-0 rounded-md"
             >
               <RotateCcw className="h-4 w-4" aria-hidden="true" />
             </Button>
