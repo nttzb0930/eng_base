@@ -513,7 +513,7 @@ export function ToeicDictationSessionView({
                                   [segment.wordIndex ?? -1]: event.target.value,
                                 }))
                               }
-                              className="mx-1 inline-block h-9 w-20 rounded-md border-0 border-b-2 border-b-sky-400 bg-slate-200/80 px-2 text-center text-sm outline-none transition-colors placeholder:text-transparent focus-visible:bg-sky-50 focus-visible:ring-2 focus-visible:ring-sky-500 dark:bg-slate-800 dark:focus-visible:bg-sky-950"
+                              className="mx-1 inline-block h-9 w-16 rounded-md border-0 bg-slate-200 px-2 text-center text-sm shadow-none placeholder:text-transparent focus-visible:bg-slate-200 focus-visible:ring-2 focus-visible:ring-sky-500 dark:bg-slate-800 dark:focus-visible:bg-slate-800"
                             />
                           );
                         }
