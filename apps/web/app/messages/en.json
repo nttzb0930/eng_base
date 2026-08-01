@@ -1001,6 +1001,8 @@
     },
     "lesson": {
       "back": "Back to Grammar practice",
+      "subtopics": "Grammar subtopics",
+      "questions": "{count} questions",
       "tabsLabel": "Grammar lesson sections",
       "tabs": {
         "lesson": "Lesson",

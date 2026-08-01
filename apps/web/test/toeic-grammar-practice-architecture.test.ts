@@ -63,3 +63,19 @@ test("Grammar lesson route stays thin and renders source content safely", () => 
   assert.match(content, /theoryContentVi/);
   assert.match(content, /whitespace-pre-line/);
 });
+
+test("Grammar detail exposes sibling subtopics and hides unavailable lessons", () => {
+  const view = read("app/views/toeic-grammar/ToeicGrammarLessonView.tsx");
+  const navigation = read(
+    "app/features/toeic-grammar/components/ToeicGrammarSubtopicNavigation.tsx"
+  );
+
+  assert.match(view, /useToeicGrammarCatalog/);
+  assert.match(view, /resolveToeicGrammarDetailTab/);
+  assert.match(view, /detail\.lessons\.length > 0/);
+  assert.match(view, /ToeicGrammarSubtopicNavigation/);
+  assert.match(navigation, /aria-current/);
+  assert.match(navigation, /subtopic\.questionCount/);
+  assert.match(navigation, /lg:hidden/);
+  assert.match(navigation, /hidden lg:block/);
+});
