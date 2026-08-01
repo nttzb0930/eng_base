@@ -12,6 +12,10 @@ test("Grammar controller forwards authenticated learner goals", async () => {
     execute: (userId: string, mode: string, target: string) =>
       calls.push(["practice", userId, mode, target]),
   };
+  const subtopic = {
+    execute: (userId: string, target: string) =>
+      calls.push(["subtopic", userId, target]),
+  };
   const answer = {
     execute: (userId: string, body: unknown) =>
       calls.push(["answer", userId, body]),
@@ -19,6 +23,7 @@ test("Grammar controller forwards authenticated learner goals", async () => {
   const controller = new ToeicGrammarController(
     catalog as never,
     practice as never,
+    subtopic as never,
     answer as never
   );
   const body = {
@@ -32,11 +37,13 @@ test("Grammar controller forwards authenticated learner goals", async () => {
 
   await controller.catalog("user-1");
   await controller.practice("user-1", { mode: "level", target: "1" });
+  await controller.subtopic("user-1", "subtopic-1");
   await controller.submit("user-1", body);
 
   assert.deepEqual(calls, [
     ["catalog", "user-1"],
     ["practice", "user-1", "level", "1"],
+    ["subtopic", "user-1", "subtopic-1"],
     ["answer", "user-1", body],
   ]);
   assert.equal(

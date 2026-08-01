@@ -313,12 +313,15 @@ uses `scripts/support/script-prisma.ts` to replace one source-owned snapshot in
 a transaction.
 
 The authenticated `module/toeic-grammar` capability exposes the active catalog,
-learner-safe practice collections, and immediate server-side grading under
-`/toeic/grammar`. Initial question reads omit answer correctness and review-only
-enrichment. Answer submission validates snapshot, collection membership, and
-option ownership before persisting immutable attempt snapshots and account-owned
-source-question progress in one transaction. Grammar progress never uses
-browser local storage and survives replacement of database question row IDs.
+learner-safe subtopic lessons, practice collections, and immediate server-side
+grading under `/toeic/grammar`. `GET /toeic/grammar/subtopics/:target` returns
+ordered safe text/structured lesson content and account progress but omits raw
+source HTML and every answer-key field. Initial question reads likewise omit
+answer correctness and review-only enrichment. Answer submission validates
+snapshot, collection membership, and option ownership before persisting
+immutable attempt snapshots and account-owned source-question progress in one
+transaction. Grammar progress never uses browser local storage and survives
+replacement of database question row IDs.
 
 Source-specific TOEIC vocabulary acquisition remains in the sibling
 `scripts/toeic-vocabulary-cache` workflow. It prepares the TOEIC question cache

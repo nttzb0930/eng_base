@@ -59,7 +59,7 @@
 **Files:**
 
 - Modify: `apps/api/prisma/schema.prisma`
-- Create: `apps/api/prisma/migrations/20260801030000_add_toeic_grammar_lessons/migration.sql`
+- Create: `apps/api/prisma/migrations/20260801090000_add_toeic_grammar_lessons/migration.sql`
 - Modify: `apps/api/scripts/toeic-grammar/toeic-grammar.prisma-store.ts`
 - Modify: `apps/api/scripts/toeic-grammar/toeic-grammar.prisma-store.test.ts`
 - Modify: `docs/guides/licensed-toeic-grammar-operations.md`

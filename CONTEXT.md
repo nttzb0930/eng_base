@@ -38,6 +38,13 @@ follow the ownership and dependency rules in
 - **Reading attempt**: an idempotently submitted, backend-graded result owned by
   Reading. Its answer rows keep immutable question, selected-option, and
   correct-option text snapshots so later content edits do not rewrite history.
+- **TOEIC Reading attempt**: an authenticated Learner submission for one
+  published TOEIC test version. The API grades it from server-owned answer keys
+  and stores immutable per-question, per-Part, and explanation snapshots.
+- **TOEIC Grammar snapshot**: one checksum-approved, source-owned catalog of
+  Grammar topics, subtopics, lessons, shared questions, mixed sets, and
+  difficulty memberships. Grammar supports TOEIC Reading but is not owned by a
+  mock test.
 - **Learning session**: the Web lifecycle shared by Lesson, Practice, and Review
   presentation: answer feedback, attempt counts, reviewed items, and one-time
   completion recording. Each owning capability keeps its scoring, persistence
@@ -85,6 +92,16 @@ follow the ownership and dependency rules in
 - Reading owns passage publication, learner discovery, comprehension grading,
   and Reading attempt history. It may reference the Topic taxonomy, but it does
   not update Practice sessions or Vocabulary progress.
+- TOEIC Reading owns safe published-test delivery, version-aware grading, and
+  Learner-scoped attempt history. Test detail never exposes correctness or
+  grading explanations before submission.
+- TOEIC Listening keeps Full Test exam-safe in the normal learner UI. Part
+  practice may grade one explicit selection at a time and return only that
+  question's translation, explanation, and vocabulary-catalog matches; test
+  detail still never exposes answer keys or private review fields.
+- TOEIC Grammar acquisition is private and fail-closed. Inventory, download,
+  and validation remain database-free; only an approved snapshot import may
+  replace source-owned Grammar data in PostgreSQL.
 - Add seams only when there are at least two real adapters, such as Prisma in production and an in-memory repository in tests.
 - A use case represents one goal. Plural CRUD/management use-case aggregates
   and compatibility facades that only forward to goal use cases are forbidden.

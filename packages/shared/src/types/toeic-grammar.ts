@@ -1,8 +1,4 @@
-export type ToeicGrammarPracticeMode =
-  | "topic"
-  | "subtopic"
-  | "set"
-  | "level";
+export type ToeicGrammarPracticeMode = "topic" | "subtopic" | "set" | "level";
 
 export type ToeicGrammarProgressSummary = {
   questionCount: number;
@@ -45,6 +41,29 @@ export type ToeicGrammarCatalog = {
   levels: ToeicGrammarLevelSummary[];
 };
 
+export type ToeicGrammarLessonBlock = {
+  target: string;
+  titleEn: string | null;
+  titleVi: string;
+  contentType: string;
+  theoryContentEn: string | null;
+  theoryContentVi: string | null;
+  structuredContent: unknown | null;
+};
+
+export type ToeicGrammarSubtopicDetail = {
+  snapshotVersion: string;
+  topicTarget: string;
+  topicTitleEn: string | null;
+  topicTitleVi: string;
+  target: string;
+  titleEn: string | null;
+  titleVi: string;
+  descriptionVi: string | null;
+  lessons: ToeicGrammarLessonBlock[];
+  progress: ToeicGrammarProgressSummary;
+};
+
 export type ToeicGrammarLearnerOption = {
   id: number;
   label: string;
@@ -85,9 +104,7 @@ export type ToeicGrammarAnswerPayload = {
   selectedOptionId: number;
 };
 
-export type ToeicGrammarVocabularyEntry =
-  | string
-  | Record<string, unknown>;
+export type ToeicGrammarVocabularyEntry = string | Record<string, unknown>;
 
 export type ToeicGrammarAnswerResult = {
   questionId: number;

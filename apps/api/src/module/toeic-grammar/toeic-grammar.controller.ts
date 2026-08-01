@@ -1,4 +1,12 @@
-import { Body, Controller, Get, Post, Query, UseGuards } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  Post,
+  Query,
+  UseGuards,
+} from "@nestjs/common";
 
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
@@ -8,6 +16,7 @@ import {
 } from "./dto/toeic-grammar.dto";
 import { GetToeicGrammarCatalogUseCase } from "./use-cases/get-toeic-grammar-catalog.use-case";
 import { GetToeicGrammarPracticeUseCase } from "./use-cases/get-toeic-grammar-practice.use-case";
+import { GetToeicGrammarSubtopicUseCase } from "./use-cases/get-toeic-grammar-subtopic.use-case";
 import { SubmitToeicGrammarAnswerUseCase } from "./use-cases/submit-toeic-grammar-answer.use-case";
 
 @Controller("toeic/grammar")
@@ -16,8 +25,14 @@ export class ToeicGrammarController {
   constructor(
     private readonly getCatalog: GetToeicGrammarCatalogUseCase,
     private readonly getPractice: GetToeicGrammarPracticeUseCase,
+    private readonly getSubtopic: GetToeicGrammarSubtopicUseCase,
     private readonly submitAnswer: SubmitToeicGrammarAnswerUseCase
   ) {}
+
+  @Get("subtopics/:target")
+  subtopic(@CurrentUserId() userId: string, @Param("target") target: string) {
+    return this.getSubtopic.execute(userId, target);
+  }
 
   @Get("catalog")
   catalog(@CurrentUserId() userId: string) {
