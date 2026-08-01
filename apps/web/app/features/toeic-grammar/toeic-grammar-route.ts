@@ -1,4 +1,7 @@
-import type { ToeicGrammarPracticeMode } from "@repo/shared";
+import type {
+  ToeicGrammarPracticeMode,
+  ToeicGrammarTopicSummary,
+} from "@repo/shared";
 
 export type ToeicGrammarCatalogTab = "topics" | "sets" | "levels";
 
@@ -26,4 +29,17 @@ export function parseToeicGrammarPracticeRoute(
     return null;
   }
   return { mode: modeValue, target };
+}
+
+export function firstToeicGrammarSubtopicTarget(
+  topic: Pick<ToeicGrammarTopicSummary, "subtopics">
+) {
+  return topic.subtopics[0]?.target ?? null;
+}
+
+export function resolveToeicGrammarDetailTab(
+  requested: "lesson" | "practice",
+  hasLesson: boolean
+) {
+  return requested === "lesson" && hasLesson ? "lesson" : "practice";
 }
