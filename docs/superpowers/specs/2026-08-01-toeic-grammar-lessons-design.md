@@ -29,10 +29,13 @@ body in `theory_content_vi`. Other visible rows may use `theory_content_en`,
 `lesson_content_json`, or `html_content`, so the source adapter preserves all
 four forms while validation remains fail-closed.
 
-The Grammar inventory includes lesson identifiers and a count per visible
-subtopic. Download reads those approved lesson identities and produces a
-schema-version-2 snapshot with a canonical `lessons` array. Every lesson must
-reference an imported subtopic; source lesson and subtopic identities must be
+The Grammar inventory includes only lesson identifiers with supported content
+and a count per visible subtopic. Source rows containing titles and ordering but
+no theory text, structured JSON, HTML, or video are unpublished placeholders;
+they do not enter an approved snapshot. Download reads the approved lesson
+identities and produces a schema-version-2 snapshot with a canonical `lessons`
+array. Every lesson must reference an imported subtopic; source lesson and
+subtopic identities must be
 unique. A lesson is valid when at least one supported content field is non-empty.
 
 `plain_text` renders only theory text. Structured JSON remains data and is not
@@ -77,16 +80,28 @@ The localized main-shell route is
 `/learn/cert/toeic/reading/grammar/<subtopicId>`. Its page remains a thin server
 component and renders a client view under `app/views/toeic-grammar`.
 
-The view contains an ordered subtopic rail on wide screens and a compact
-selector on small screens. The main panel has URL-backed `lesson` and
-`practice` tabs. Lesson mode renders title, paragraphs, and structured sections
-without `dangerouslySetInnerHTML`. Practice mode links into or embeds the
-existing focused single-question session; grading and navigation state are not
-reimplemented.
+The Topics catalog shows the 14 aggregate topics only. It does not expand all
+49 subtopics inline. Selecting a topic opens its first ordered subtopic. Sets
+and difficulty tabs keep their current card behavior.
 
-Catalog subtopic actions open the detail route. An aggregate topic action still
-opens topic practice. Loading, empty, missing-lesson, and retry states receive a
-Grammar-specific skeleton and English/Vietnamese messages with key parity.
+The detail view resolves the selected subtopic against the catalog and contains
+an ordered sibling-subtopic rail on wide screens and a compact selector on
+small screens. Each item shows its order, localized title, question count, and
+active state. Subtopic selection is URL-backed so direct navigation and reload
+preserve the same item.
+
+When the selected subtopic has lesson content, the main panel exposes
+URL-backed `lesson` and `practice` tabs. Lesson mode renders title, paragraphs,
+and structured sections without `dangerouslySetInnerHTML`. When no lesson is
+available, the lesson tab is absent and the view resolves to practice even if
+the URL requests `tab=lesson`. Practice remains a clear start/continue action
+into the existing focused single-question session; grading and question
+navigation are not duplicated inside the catalog/detail screen.
+
+Loading, empty, missing-subtopic, and retry states receive Grammar-specific
+skeletons and English/Vietnamese messages with key parity. The current catalog
+and subtopic endpoints already provide the required hierarchy and progress, so
+this UI refinement introduces no new endpoint or migration.
 
 ## Error handling and safety
 
@@ -102,8 +117,9 @@ Grammar-specific skeleton and English/Vietnamese messages with key parity.
 ## Testing
 
 Implementation follows red-green-refactor. Pipeline tests cover source parsing,
-token normalization, deterministic lesson hashing, reference validation, and
-import replacement. API tests cover active-snapshot lookup, 404 behavior,
-ordered safe lesson mapping, progress, and answer-key absence. Web tests cover
-resource paths/query keys, route parsing, catalog navigation, localized tab
-copy, safe block rendering, route thinness, and the reuse of subtopic practice.
+placeholder exclusion, token normalization, deterministic lesson hashing,
+reference validation, and import replacement. API tests cover active-snapshot
+lookup, 404 behavior, ordered safe lesson mapping, progress, and answer-key
+absence. Web tests cover topic-only catalog navigation, sibling ordering,
+localized tab visibility and fallback, safe block rendering, route thinness,
+responsive selection, and reuse of subtopic practice.
