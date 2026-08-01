@@ -36,7 +36,9 @@ export async function importToeicGrammar(input: {
     manifest.inventorySha256 !== content.inventorySha256 ||
     manifest.contentSha256 !== content.contentSha256
   ) {
-    throw new Error("Grammar snapshot manifest identity does not match content");
+    throw new Error(
+      "Grammar snapshot manifest identity does not match content"
+    );
   }
   return input.store.replace(content);
 }

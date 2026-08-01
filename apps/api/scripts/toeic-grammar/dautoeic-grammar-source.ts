@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import type {
+  ToeicGrammarLesson,
   ToeicGrammarQuestion,
   ToeicGrammarSource,
 } from "./toeic-grammar.types.js";
@@ -42,6 +43,18 @@ const subtopicRowSchema = z.object({
   access_level: z.string().nullable().optional(),
   order_index: z.number().int(),
 });
+const lessonRowSchema = z.object({
+  id: text,
+  subtopic_id: text,
+  title_en: z.string().nullable().optional(),
+  title_vi: text,
+  content_type: text,
+  theory_content_en: z.string().nullable().optional(),
+  theory_content_vi: z.string().nullable().optional(),
+  lesson_content_json: z.unknown().nullable().optional(),
+  html_content: z.string().nullable().optional(),
+  order_index: z.number().int(),
+});
 const setRowSchema = z
   .object({
     set_id: text.optional(),
@@ -70,10 +83,16 @@ const questionRowSchema = z
     explanation_en: z.string().nullable().optional(),
     dich_nghia: z.string().nullable().optional(),
     dich_nghia_dap_an: z.string().nullable().optional(),
-    tu_vung: z.array(z.unknown()).nullable().optional(),
+    tu_vung: z
+      .union([z.array(z.unknown()), z.string()])
+      .nullable()
+      .optional(),
     prefer_ai_explanation: z.boolean().nullable().optional(),
   })
-  .refine((row) => Boolean(row.question_id ?? row.id), "Question ID is required");
+  .refine(
+    (row) => Boolean(row.question_id ?? row.id),
+    "Question ID is required"
+  );
 
 function token(value: string) {
   const normalized = value.trim().replace(/^Bearer\s+/iu, "");
@@ -114,8 +133,30 @@ function mapQuestion(value: unknown): ToeicGrammarQuestion {
     explanationEn: row.explanation_en?.trim() || null,
     questionTranslation: row.dich_nghia?.trim() || null,
     answerTranslation: row.dich_nghia_dap_an?.trim() || null,
-    vocabulary: row.tu_vung ?? [],
+    vocabulary:
+      typeof row.tu_vung === "string"
+        ? row.tu_vung
+            .split(/\r?\n\s*\r?\n/u)
+            .map((entry) => entry.trim())
+            .filter(Boolean)
+        : (row.tu_vung ?? []),
     preferAiExplanation: row.prefer_ai_explanation ?? false,
+  };
+}
+
+function mapLesson(value: unknown): ToeicGrammarLesson {
+  const row = lessonRowSchema.parse(value);
+  return {
+    sourceLessonId: row.id,
+    sourceSubtopicId: row.subtopic_id,
+    titleEn: row.title_en?.trim() || null,
+    titleVi: row.title_vi,
+    contentType: row.content_type,
+    theoryContentEn: row.theory_content_en?.trim() || null,
+    theoryContentVi: row.theory_content_vi?.trim() || null,
+    lessonContentJson: row.lesson_content_json ?? null,
+    htmlContent: row.html_content?.trim() || null,
+    orderIndex: row.order_index,
   };
 }
 
@@ -202,21 +243,26 @@ export function createDautoeicGrammarSource(
           query: { select: "*", is_hidden: "eq.false", order: "order_index" },
         }),
       ]);
+      const topics = topicRows.map((value) => {
+        const row = topicRowSchema.parse(value);
+        return {
+          sourceTopicId: row.id,
+          titleEn: row.title_en?.trim() || null,
+          titleVi: row.title_vi,
+          descriptionVi: row.description_vi?.trim() || null,
+          icon: row.icon?.trim() || null,
+          orderIndex: row.order_index,
+        };
+      });
+      const visibleTopicIds = new Set(
+        topics.map((topic) => topic.sourceTopicId)
+      );
       return {
-        topics: topicRows.map((value) => {
-          const row = topicRowSchema.parse(value);
-          return {
-            sourceTopicId: row.id,
-            titleEn: row.title_en?.trim() || null,
-            titleVi: row.title_vi,
-            descriptionVi: row.description_vi?.trim() || null,
-            icon: row.icon?.trim() || null,
-            orderIndex: row.order_index,
-          };
-        }),
-        subtopics: subtopicRows.map((value) => {
-          const row = subtopicRowSchema.parse(value);
-          return {
+        topics,
+        subtopics: subtopicRows
+          .map((value) => subtopicRowSchema.parse(value))
+          .filter((row) => visibleTopicIds.has(row.topic_id))
+          .map((row) => ({
             sourceSubtopicId: row.id,
             sourceTopicId: row.topic_id,
             titleEn: row.title_en?.trim() || null,
@@ -224,9 +270,27 @@ export function createDautoeicGrammarSource(
             descriptionVi: row.description_vi?.trim() || null,
             accessLevel: row.access_level?.trim() || null,
             orderIndex: row.order_index,
-          };
-        }),
+          })),
       };
+    },
+
+    async readLessons(sourceSubtopicIds) {
+      const lessons: ToeicGrammarLesson[] = [];
+      for (let index = 0; index < sourceSubtopicIds.length; index += 40) {
+        const batch = sourceSubtopicIds.slice(index, index + 40);
+        if (batch.length === 0) continue;
+        const rows = await requestJson({
+          path: "/rest/v1/lessons",
+          authenticated: true,
+          query: {
+            select: "*",
+            subtopic_id: `in.(${batch.join(",")})`,
+            order: "order_index",
+          },
+        });
+        lessons.push(...rows.map(mapLesson));
+      }
+      return lessons;
     },
 
     async readSets() {

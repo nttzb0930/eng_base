@@ -648,6 +648,7 @@ model grammar_content_snapshots {
   imported_at                   DateTime                        @default(now()) @db.Timestamp(6)
   grammar_topics                grammar_topics[]
   grammar_subtopics             grammar_subtopics[]
+  grammar_lessons               grammar_lessons[]
   grammar_questions             grammar_questions[]
   grammar_sets                  grammar_sets[]
   grammar_question_difficulties grammar_question_difficulties[]
@@ -674,6 +675,27 @@ model grammar_topics {
   @@index([snapshot_id, order_index], map: "grammar_topics_snapshot_order_idx")
 }
 
+model grammar_lessons {
+  id                        Int                       @id @default(autoincrement())
+  snapshot_id               Int
+  subtopic_id               Int
+  source                    String
+  source_lesson_id          String
+  title_en                  String?
+  title_vi                  String
+  content_type              String
+  theory_content_en         String?
+  theory_content_vi         String?
+  lesson_content_json       Json?
+  html_content              String?
+  order_index               Int
+  grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_lessons_snapshot_id_fkey")
+  grammar_subtopics         grammar_subtopics         @relation(fields: [subtopic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_lessons_subtopic_id_fkey")
+
+  @@unique([source, source_lesson_id], map: "grammar_lessons_source_lesson_key")
+  @@index([subtopic_id, order_index], map: "grammar_lessons_subtopic_order_idx")
+}
+
 model grammar_subtopics {
   id                        Int                       @id @default(autoincrement())
   snapshot_id               Int
@@ -687,6 +709,7 @@ model grammar_subtopics {
   order_index               Int
   grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_subtopics_snapshot_id_fkey")
   grammar_topics            grammar_topics           @relation(fields: [topic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_subtopics_topic_id_fkey")
+  grammar_lessons           grammar_lessons[]
   grammar_questions         grammar_questions[]
 
   @@unique([source, source_subtopic_id], map: "grammar_subtopics_source_subtopic_key")

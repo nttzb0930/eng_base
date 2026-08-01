@@ -82,10 +82,97 @@ test("separates anonymous catalog authorization from protected requests", async 
   assert.equal(calls[0]?.headers.get("apikey"), apiKey);
   assert.equal(calls[0]?.headers.get("authorization"), `Bearer ${apiKey}`);
   assert.equal(calls[2]?.headers.get("apikey"), apiKey);
-  assert.equal(
-    calls[2]?.headers.get("authorization"),
-    `Bearer ${accessToken}`
-  );
+  assert.equal(calls[2]?.headers.get("authorization"), `Bearer ${accessToken}`);
+});
+
+test("maps authenticated lesson rows without exposing source html", async () => {
+  const calls: string[] = [];
+  const request: typeof fetch = async (input) => {
+    calls.push(String(input));
+    return response([
+      {
+        id: "lesson-1",
+        subtopic_id: "subtopic-1",
+        title_en: "Word-form suffixes",
+        title_vi: "Hậu tố từ loại",
+        content_type: "plain_text",
+        theory_content_en: null,
+        theory_content_vi: "Lesson body",
+        lesson_content_json: null,
+        html_content: "<script>unsafe()</script>",
+        order_index: 1,
+      },
+    ]);
+  };
+  const source = createDautoeicGrammarSource({
+    baseUrl: "https://project.supabase.co",
+    apiKey,
+    accessToken: `Bearer ${accessToken}`,
+    allowedHosts: ["project.supabase.co"],
+    request,
+    timeoutMs: 1_000,
+    maxRetries: 0,
+  });
+
+  const lessons = await source.readLessons(["subtopic-1"]);
+
+  assert.match(calls[0]!, /\/rest\/v1\/lessons/u);
+  assert.deepEqual(lessons, [
+    {
+      sourceLessonId: "lesson-1",
+      sourceSubtopicId: "subtopic-1",
+      titleEn: "Word-form suffixes",
+      titleVi: "Hậu tố từ loại",
+      contentType: "plain_text",
+      theoryContentEn: null,
+      theoryContentVi: "Lesson body",
+      lessonContentJson: null,
+      htmlContent: "<script>unsafe()</script>",
+      orderIndex: 1,
+    },
+  ]);
+});
+
+test("excludes visible subtopics whose parent topic is hidden", async () => {
+  const request: typeof fetch = async (input) => {
+    const url = String(input);
+    if (url.includes("grammar_topics")) {
+      return response([
+        {
+          id: "topic-visible",
+          title_en: "Prepositions",
+          title_vi: "Gioi tu",
+          description_vi: null,
+          order_index: 1,
+          icon: null,
+        },
+      ]);
+    }
+    return response([
+      {
+        id: "subtopic-orphan",
+        topic_id: "topic-hidden",
+        title_en: "Conditional Type 1",
+        title_vi: "Cau dieu kien loai 1",
+        description_vi: null,
+        access_level: "free",
+        order_index: 1,
+      },
+    ]);
+  };
+  const source = createDautoeicGrammarSource({
+    baseUrl: "https://project.supabase.co",
+    apiKey,
+    accessToken,
+    allowedHosts: ["project.supabase.co"],
+    request,
+    timeoutMs: 1_000,
+    maxRetries: 0,
+  });
+
+  const catalog = await source.readCatalog();
+
+  assert.deepEqual(catalog.subtopics, []);
 });
 
 test("maps mixed sets and rich question fields", async () => {
@@ -128,6 +215,32 @@ test("maps mixed sets and rich question fields", async () => {
     questions[0]?.questionTranslation,
     "Nhiệt độ lý tưởng nằm từ 10 đến 30 độ."
   );
+});
+
+test("normalizes newline-separated source vocabulary into entries", async () => {
+  const request: typeof fetch = async () =>
+    response([
+      {
+        ...questionRow(),
+        tu_vung: "ideal (adj): ly tuong\n\nbetween (prep): o giua",
+      },
+    ]);
+  const source = createDautoeicGrammarSource({
+    baseUrl: "https://project.supabase.co",
+    apiKey,
+    accessToken,
+    allowedHosts: ["project.supabase.co"],
+    request,
+    timeoutMs: 1_000,
+    maxRetries: 0,
+  });
+
+  const questions = await source.readDifficultyQuestions(1);
+
+  assert.deepEqual(questions[0]?.vocabulary, [
+    "ideal (adj): ly tuong",
+    "between (prep): o giua",
+  ]);
 });
 
 test("rejects disallowed URLs and malformed responses", async () => {

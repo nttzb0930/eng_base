@@ -27,7 +27,8 @@ function question(id: string) {
 }
 
 function source(reverse = false): ToeicGrammarSource {
-  const ordered = <T>(values: T[]) => (reverse ? [...values].reverse() : values);
+  const ordered = <T>(values: T[]) =>
+    reverse ? [...values].reverse() : values;
   return {
     async readCatalog() {
       return {
@@ -64,6 +65,22 @@ function source(reverse = false): ToeicGrammarSource {
         },
       ]);
     },
+    async readLessons() {
+      return ordered([
+        {
+          sourceLessonId: "lesson-1",
+          sourceSubtopicId: "subtopic-1",
+          titleEn: null,
+          titleVi: "Hậu tố từ loại",
+          contentType: "plain_text",
+          theoryContentEn: null,
+          theoryContentVi: "Lesson body",
+          lessonContentJson: null,
+          htmlContent: null,
+          orderIndex: 1,
+        },
+      ]);
+    },
     async readTopicQuestions() {
       return ordered([question("q-2"), question("q-1")]);
     },
@@ -91,6 +108,10 @@ test("creates the same inventory checksum regardless of source order", async () 
   assert.equal(left.counts.topicQuestions, 2);
   assert.equal(left.counts.setQuestions, 1);
   assert.equal(left.counts.difficultyQuestions, 1);
+  assert.equal(left.counts.lessons, 1);
+  assert.deepEqual(left.lessonIdsBySubtopic, {
+    "subtopic-1": ["lesson-1"],
+  });
   assert.equal(writes.length, 2);
 });
 
@@ -102,7 +123,11 @@ test("fails inventory when an authenticated difficulty request fails", async () 
   await assert.rejects(
     inventoryToeicGrammar({
       source: failing,
-      storage: { async writeInventory() { return "never"; } },
+      storage: {
+        async writeInventory() {
+          return "never";
+        },
+      },
     }),
     /Not authenticated/iu
   );

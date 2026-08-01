@@ -47,6 +47,27 @@ const subtopicSchema = z.object({
   accessLevel: nullableText,
   orderIndex: z.number().int(),
 });
+const lessonSchema = z
+  .object({
+    sourceLessonId: requiredText,
+    sourceSubtopicId: requiredText,
+    titleEn: nullableText,
+    titleVi: requiredText,
+    contentType: requiredText,
+    theoryContentEn: nullableText,
+    theoryContentVi: nullableText,
+    lessonContentJson: z.unknown().nullable(),
+    htmlContent: nullableText.default(null),
+    orderIndex: z.number().int(),
+  })
+  .refine(
+    (lesson) =>
+      lesson.theoryContentEn !== null ||
+      lesson.theoryContentVi !== null ||
+      lesson.lessonContentJson !== null ||
+      lesson.htmlContent !== null,
+    "Lesson must contain supported content"
+  );
 const setSchema = z.object({
   sourceSetId: requiredText,
   name: requiredText,
@@ -59,13 +80,17 @@ const difficultySchema = z.object({
   questionIds: z.array(requiredText),
 });
 const snapshotSchema = z.object({
-  schemaVersion: z.literal(1),
+  schemaVersion: z.literal(2),
   source: z.literal("dautoeic"),
   snapshotVersion: requiredText,
   inventorySha256: z.string().regex(/^[a-f0-9]{64}$/u),
-  contentSha256: z.string().regex(/^[a-f0-9]{64}$/u).optional(),
+  contentSha256: z
+    .string()
+    .regex(/^[a-f0-9]{64}$/u)
+    .optional(),
   topics: z.array(topicSchema),
   subtopics: z.array(subtopicSchema),
+  lessons: z.array(lessonSchema),
   questions: z.array(questionSchema),
   sets: z.array(setSchema),
   difficultyLevels: z.array(difficultySchema),
@@ -103,7 +128,10 @@ function mergeQuestion(
       current.questionTranslation,
       next.questionTranslation
     ),
-    answerTranslation: richer(current.answerTranslation, next.answerTranslation),
+    answerTranslation: richer(
+      current.answerTranslation,
+      next.answerTranslation
+    ),
     vocabulary:
       current.vocabulary.length > 0 ? current.vocabulary : next.vocabulary,
     preferAiExplanation:
@@ -132,6 +160,11 @@ function normalizedContent(value: unknown): GrammarSnapshotContent {
       a.orderIndex - b.orderIndex ||
       a.sourceSubtopicId.localeCompare(b.sourceSubtopicId)
   );
+  const lessons = [...parsed.lessons].sort(
+    (a, b) =>
+      a.orderIndex - b.orderIndex ||
+      a.sourceLessonId.localeCompare(b.sourceLessonId)
+  );
   const canonicalQuestions = [...questions.values()]
     .map((question) => ({
       ...question,
@@ -153,12 +186,13 @@ function normalizedContent(value: unknown): GrammarSnapshotContent {
     .sort((a, b) => a.level - b.level);
 
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     source: "dautoeic",
     snapshotVersion: parsed.snapshotVersion,
     inventorySha256: parsed.inventorySha256,
     topics,
     subtopics,
+    lessons,
     questions: canonicalQuestions,
     sets,
     difficultyLevels,
@@ -170,19 +204,33 @@ function assertInvariants(value: GrammarSnapshotContent) {
   const subtopics = new Map(
     value.subtopics.map((subtopic) => [subtopic.sourceSubtopicId, subtopic])
   );
+  const lessonIds = new Set<string>();
+  for (const lesson of value.lessons) {
+    if (lessonIds.has(lesson.sourceLessonId)) {
+      throw new Error(`Duplicate lesson ${lesson.sourceLessonId}`);
+    }
+    lessonIds.add(lesson.sourceLessonId);
+    if (!subtopics.has(lesson.sourceSubtopicId)) {
+      throw new Error(`Lesson ${lesson.sourceLessonId} has unknown subtopic`);
+    }
+  }
   const questionIds = new Set(
     value.questions.map((question) => question.sourceQuestionId)
   );
 
   for (const subtopic of value.subtopics) {
     if (!topicIds.has(subtopic.sourceTopicId)) {
-      throw new Error(`Subtopic ${subtopic.sourceSubtopicId} has unknown topic`);
+      throw new Error(
+        `Subtopic ${subtopic.sourceSubtopicId} has unknown topic`
+      );
     }
   }
   for (const question of value.questions) {
     const labels = new Set(question.options.map((option) => option.label));
     if (labels.size !== 4) {
-      throw new Error(`Question ${question.sourceQuestionId} has duplicate labels`);
+      throw new Error(
+        `Question ${question.sourceQuestionId} has duplicate labels`
+      );
     }
     if (question.options.filter((option) => option.correct).length !== 1) {
       throw new Error(
@@ -190,7 +238,9 @@ function assertInvariants(value: GrammarSnapshotContent) {
       );
     }
     if (question.sourceTopicId && !topicIds.has(question.sourceTopicId)) {
-      throw new Error(`Question ${question.sourceQuestionId} has unknown topic`);
+      throw new Error(
+        `Question ${question.sourceQuestionId} has unknown topic`
+      );
     }
     if (question.sourceSubtopicId) {
       const subtopic = subtopics.get(question.sourceSubtopicId);
@@ -237,9 +287,15 @@ export function normalizeGrammarSnapshot(value: unknown): ToeicGrammarSnapshot {
   return { ...content, contentSha256: grammarContentSha256(content) };
 }
 
-export function validateGrammarSnapshot(value: unknown): GrammarValidationResult {
+export function validateGrammarSnapshot(
+  value: unknown
+): GrammarValidationResult {
   try {
-    return { valid: true, errors: [], snapshot: normalizeGrammarSnapshot(value) };
+    return {
+      valid: true,
+      errors: [],
+      snapshot: normalizeGrammarSnapshot(value),
+    };
   } catch (error) {
     if (error instanceof z.ZodError) {
       return {

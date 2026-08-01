@@ -31,6 +31,20 @@ export async function inventoryToeicGrammar(input: {
       a.orderIndex - b.orderIndex ||
       a.sourceSubtopicId.localeCompare(b.sourceSubtopicId)
   );
+  const lessons = await input.source.readLessons(
+    subtopics.map((subtopic) => subtopic.sourceSubtopicId)
+  );
+  const lessonIdsBySubtopic = Object.fromEntries(
+    subtopics.map((subtopic) => [
+      subtopic.sourceSubtopicId,
+      lessons
+        .filter(
+          (lesson) => lesson.sourceSubtopicId === subtopic.sourceSubtopicId
+        )
+        .map((lesson) => lesson.sourceLessonId)
+        .sort(),
+    ])
+  );
   const topicRows = await Promise.all(
     topics.map(async (topic) => ({
       id: topic.sourceTopicId,
@@ -57,16 +71,18 @@ export async function inventoryToeicGrammar(input: {
     }))
   );
   const content = {
-    schemaVersion: 1 as const,
+    schemaVersion: 2 as const,
     source: "dautoeic" as const,
     topics,
     subtopics,
+    lessonIdsBySubtopic,
     topicQuestionIds,
     sets,
     difficultyLevels,
     counts: {
       topics: topics.length,
       subtopics: subtopics.length,
+      lessons: lessons.length,
       sets: sets.length,
       topicQuestions: new Set(Object.values(topicQuestionIds).flat()).size,
       setQuestions: new Set(sets.flatMap((set) => set.questionIds)).size,

@@ -32,7 +32,7 @@ function question(overrides: Record<string, unknown> = {}) {
 
 function validFixture() {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     source: "dautoeic",
     snapshotVersion: "snapshot-1",
     inventorySha256: "a".repeat(64),
@@ -57,6 +57,30 @@ function validFixture() {
         orderIndex: 1,
       },
     ],
+    lessons: [
+      {
+        sourceLessonId: "lesson-2",
+        sourceSubtopicId: "subtopic-1",
+        titleEn: null,
+        titleVi: "Bài học 2",
+        contentType: "plain_text",
+        theoryContentEn: null,
+        theoryContentVi: "Nội dung thứ hai.",
+        lessonContentJson: null,
+        orderIndex: 2,
+      },
+      {
+        sourceLessonId: "lesson-1",
+        sourceSubtopicId: "subtopic-1",
+        titleEn: "Word-form suffixes",
+        titleVi: "Hậu tố từ loại",
+        contentType: "plain_text",
+        theoryContentEn: null,
+        theoryContentVi: "Nội dung thứ nhất.",
+        lessonContentJson: null,
+        orderIndex: 1,
+      },
+    ],
     questions: [question(), question()],
     sets: [
       {
@@ -70,6 +94,37 @@ function validFixture() {
     difficultyLevels: [{ level: 1, questionIds: ["q-1"] }],
   };
 }
+
+test("normalizes ordered lessons linked to a subtopic", () => {
+  const snapshot = normalizeGrammarSnapshot(validFixture());
+
+  assert.equal(snapshot.schemaVersion, 2);
+  assert.deepEqual(
+    snapshot.lessons.map((lesson) => lesson.sourceLessonId),
+    ["lesson-1", "lesson-2"]
+  );
+});
+
+test("rejects duplicate, orphaned, and empty lessons", () => {
+  const lesson = validFixture().lessons[0]!;
+  const invalidLessons = [
+    [lesson, { ...lesson }],
+    [{ ...lesson, sourceSubtopicId: "missing" }],
+    [
+      {
+        ...lesson,
+        theoryContentEn: null,
+        theoryContentVi: null,
+        lessonContentJson: null,
+      },
+    ],
+  ];
+
+  for (const lessons of invalidLessons) {
+    const result = validateGrammarSnapshot({ ...validFixture(), lessons });
+    assert.equal(result.valid, false);
+  }
+});
 
 test("deduplicates a question shared across grammar views", () => {
   const snapshot = normalizeGrammarSnapshot(validFixture());

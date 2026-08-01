@@ -25,8 +25,9 @@ expired user token before inventory or download.
 pnpm --filter @repo/api data:inventory-toeic-grammar
 ```
 
-The command reads visible topics/subtopics, mixed sets, and authenticated
-difficulty levels 1–5. It writes a content-addressed inventory under:
+The command reads visible topics/subtopics and their lessons, mixed sets, and
+authenticated difficulty levels 1–5. It writes a content-addressed inventory
+under:
 
 ```text
 var/licensed-content/dautoeic/inventories/toeic-grammar/
@@ -40,8 +41,9 @@ Review the counts and copy the exact `inventorySha256`.
 pnpm --filter @repo/api data:download-toeic-grammar -- --approved-sha=REVIEWED_64_CHARACTER_SHA256
 ```
 
-The command resumes checkpoints, deduplicates questions shared by several
-views, and writes `content.json`, `validation.json`, then `manifest.json` under
+The command resumes checkpoints, downloads only lesson identities approved by
+the inventory, deduplicates questions shared by several views, and writes
+`content.json`, `validation.json`, then `manifest.json` under
 `var/licensed-content/dautoeic/toeic-grammar/<inventorySha256>/`.
 
 ## 3. Validate offline
@@ -50,8 +52,9 @@ views, and writes `content.json`, `validation.json`, then `manifest.json` under
 pnpm --filter @repo/api data:validate-toeic-grammar
 ```
 
-Validation does not access the source or database. It checks answer keys,
-references, memberships, levels, identities, and checksums.
+Validation does not access the source or database. It checks lesson/subtopic
+references, supported non-empty lesson content, answer keys, memberships,
+levels, identities, and checksums.
 
 ## 4. Apply schema and import
 
@@ -63,6 +66,10 @@ pnpm --filter @repo/api data:import-toeic-grammar -- --approved-sha=REVIEWED_64_
 ```
 
 Importing the active checksum returns `SKIPPED`. A new approved checksum
-replaces all Dautoeic-owned Grammar rows atomically and activates the new
-snapshot last. A failure rolls back the transaction. The importer does not
-create learner progress, call AI, or publish a learner UI.
+replaces all Dautoeic-owned Grammar rows, including lessons, atomically and
+activates the new snapshot last. A failure rolls back the transaction. The
+importer does not create learner progress or call AI.
+
+Schema version 2 adds lessons. An older Grammar inventory SHA cannot populate
+them. After deploying the lesson migration, run inventory again, review the new
+SHA, download it, validate it, and import that exact SHA.

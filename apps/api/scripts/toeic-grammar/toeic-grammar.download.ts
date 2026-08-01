@@ -8,10 +8,7 @@ import type {
 type DownloadStorage = {
   readInventory(sha256: string): Promise<unknown>;
   readCheckpoint?(snapshotVersion: string): Promise<unknown>;
-  writeCheckpoint?(
-    snapshotVersion: string,
-    value: unknown
-  ): Promise<void>;
+  writeCheckpoint?(snapshotVersion: string, value: unknown): Promise<void>;
   writeSnapshotFile?(
     snapshotVersion: string,
     name: string,
@@ -46,14 +43,20 @@ export async function downloadToeicGrammar(input: {
   workers: number;
 }) {
   approvedSha(input.approvedSha256);
-  if (!Number.isInteger(input.workers) || input.workers < 1 || input.workers > 8) {
+  if (
+    !Number.isInteger(input.workers) ||
+    input.workers < 1 ||
+    input.workers > 8
+  ) {
     throw new Error("workers must be between 1 and 8");
   }
   const inventory = parseInventory(
     await input.storage.readInventory(input.approvedSha256)
   );
   if (inventory.inventorySha256 !== input.approvedSha256) {
-    throw new Error("Approved inventory identity does not match stored inventory");
+    throw new Error(
+      "Approved inventory identity does not match stored inventory"
+    );
   }
   if (!input.storage.writeSnapshotFile) {
     throw new Error("Grammar snapshot storage is incomplete");
@@ -62,6 +65,22 @@ export async function downloadToeicGrammar(input: {
   const checkpoint = parseCheckpoint(
     await input.storage.readCheckpoint?.(snapshotVersion)
   );
+  const lessons = await input.source.readLessons(
+    inventory.subtopics.map((subtopic) => subtopic.sourceSubtopicId)
+  );
+  const expectedLessonIds = Object.values(inventory.lessonIdsBySubtopic)
+    .flat()
+    .sort();
+  const downloadedLessonIds = lessons
+    .map((lesson) => lesson.sourceLessonId)
+    .sort();
+  if (
+    JSON.stringify(expectedLessonIds) !== JSON.stringify(downloadedLessonIds)
+  ) {
+    throw new Error(
+      "Downloaded lesson identities differ from approved inventory"
+    );
+  }
   const units = [
     ...inventory.topics.map((topic) => ({
       key: `topic:${topic.sourceTopicId}`,
@@ -93,19 +112,21 @@ export async function downloadToeicGrammar(input: {
     }
   };
   await Promise.all(
-    Array.from({ length: Math.min(input.workers, Math.max(1, units.length)) }, () =>
-      runWorker()
+    Array.from(
+      { length: Math.min(input.workers, Math.max(1, units.length)) },
+      () => runWorker()
     )
   );
 
   const questions = Object.values(checkpoint.units).flat();
   const snapshot = normalizeGrammarSnapshot({
-    schemaVersion: 1,
+    schemaVersion: 2,
     source: "dautoeic",
     snapshotVersion,
     inventorySha256: inventory.inventorySha256,
     topics: inventory.topics,
     subtopics: inventory.subtopics,
+    lessons,
     questions,
     sets: inventory.sets.map((set) => ({
       ...set,
@@ -133,7 +154,11 @@ export async function downloadToeicGrammar(input: {
     inventorySha256: inventory.inventorySha256,
     contentSha256: snapshot.contentSha256,
   };
-  await input.storage.writeSnapshotFile(snapshotVersion, "content.json", snapshot);
+  await input.storage.writeSnapshotFile(
+    snapshotVersion,
+    "content.json",
+    snapshot
+  );
   await input.storage.writeSnapshotFile(
     snapshotVersion,
     "validation.json",
@@ -149,6 +174,7 @@ export async function downloadToeicGrammar(input: {
     contentSha256: snapshot.contentSha256,
     questionCount: snapshot.questions.length,
     topicCount: snapshot.topics.length,
+    lessonCount: snapshot.lessons.length,
     setCount: snapshot.sets.length,
   };
 }

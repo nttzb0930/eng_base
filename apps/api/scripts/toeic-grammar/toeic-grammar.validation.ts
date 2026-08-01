@@ -38,16 +38,12 @@ export async function validateStoredToeicGrammar(input: {
     } catch (error) {
       errors.push(error instanceof Error ? error.message : "Invalid snapshot");
     }
-    await input.storage.writeSnapshotFile(
-      snapshotVersion,
-      "validation.json",
-      {
-        schemaVersion: 1,
-        valid: errors.length === 0,
-        errors,
-        validatedAt: new Date().toISOString(),
-      }
-    );
+    await input.storage.writeSnapshotFile(snapshotVersion, "validation.json", {
+      schemaVersion: 1,
+      valid: errors.length === 0,
+      errors,
+      validatedAt: new Date().toISOString(),
+    });
     if (errors.length === 0) validCount += 1;
     else invalid.push({ snapshotVersion, errors });
   }

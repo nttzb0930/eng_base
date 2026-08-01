@@ -1,4 +1,4 @@
-import type { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma, type PrismaClient } from "@prisma/client";
 
 import type { ToeicGrammarImportStore } from "./toeic-grammar.import.js";
 
@@ -52,7 +52,8 @@ export function createPrismaToeicGrammarImportStore(
         const subtopicIds = new Map<string, number>();
         for (const subtopic of snapshot.subtopics) {
           const topicId = topicIds.get(subtopic.sourceTopicId);
-          if (!topicId) throw new Error("Grammar subtopic topic was not imported");
+          if (!topicId)
+            throw new Error("Grammar subtopic topic was not imported");
           const created = await transaction.grammar_subtopics.create({
             data: {
               snapshot_id: createdSnapshot.id,
@@ -68,6 +69,30 @@ export function createPrismaToeicGrammarImportStore(
             select: { id: true },
           });
           subtopicIds.set(subtopic.sourceSubtopicId, created.id);
+        }
+        for (const lesson of snapshot.lessons) {
+          const subtopicId = subtopicIds.get(lesson.sourceSubtopicId);
+          if (!subtopicId)
+            throw new Error("Grammar lesson subtopic was not imported");
+          await transaction.grammar_lessons.create({
+            data: {
+              snapshot_id: createdSnapshot.id,
+              subtopic_id: subtopicId,
+              source: snapshot.source,
+              source_lesson_id: lesson.sourceLessonId,
+              title_en: lesson.titleEn,
+              title_vi: lesson.titleVi,
+              content_type: lesson.contentType,
+              theory_content_en: lesson.theoryContentEn,
+              theory_content_vi: lesson.theoryContentVi,
+              lesson_content_json:
+                lesson.lessonContentJson === null
+                  ? Prisma.DbNull
+                  : (lesson.lessonContentJson as Prisma.InputJsonValue),
+              html_content: lesson.htmlContent,
+              order_index: lesson.orderIndex,
+            },
+          });
         }
         const questionIds = new Map<string, number>();
         for (const question of snapshot.questions) {

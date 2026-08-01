@@ -14,7 +14,9 @@ test("uses the private licensed-content root and writes inventories atomically",
 
   assert.equal(key, `inventories/toeic-grammar/${sha}.json`);
   assert.deepEqual(await storage.readInventory(sha), { inventorySha256: sha });
-  const names = await readdir(join(storage.root, "inventories", "toeic-grammar"));
+  const names = await readdir(
+    join(storage.root, "inventories", "toeic-grammar")
+  );
   assert.deepEqual(names, [`${sha}.json`]);
 });
 

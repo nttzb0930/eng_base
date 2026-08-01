@@ -40,6 +40,19 @@ export type ToeicGrammarSubtopic = {
   orderIndex: number;
 };
 
+export type ToeicGrammarLesson = {
+  sourceLessonId: string;
+  sourceSubtopicId: string;
+  titleEn: string | null;
+  titleVi: string;
+  contentType: string;
+  theoryContentEn: string | null;
+  theoryContentVi: string | null;
+  lessonContentJson: unknown | null;
+  htmlContent: string | null;
+  orderIndex: number;
+};
+
 export type ToeicGrammarSet = {
   sourceSetId: string;
   name: string;
@@ -54,13 +67,14 @@ export type ToeicGrammarDifficultyLevel = {
 };
 
 export type ToeicGrammarSnapshot = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   source: "dautoeic";
   snapshotVersion: string;
   inventorySha256: string;
   contentSha256: string;
   topics: ToeicGrammarTopic[];
   subtopics: ToeicGrammarSubtopic[];
+  lessons: ToeicGrammarLesson[];
   questions: ToeicGrammarQuestion[];
   sets: ToeicGrammarSet[];
   difficultyLevels: ToeicGrammarDifficultyLevel[];
@@ -82,6 +96,7 @@ export type ToeicGrammarCatalog = {
 
 export type ToeicGrammarSource = {
   readCatalog(): Promise<ToeicGrammarCatalog>;
+  readLessons(sourceSubtopicIds: string[]): Promise<ToeicGrammarLesson[]>;
   readSets(): Promise<Array<Omit<ToeicGrammarSet, "questionIds">>>;
   readTopicQuestions(sourceTopicId: string): Promise<ToeicGrammarQuestion[]>;
   readSetQuestions(sourceSetId: string): Promise<ToeicGrammarQuestion[]>;
@@ -89,17 +104,19 @@ export type ToeicGrammarSource = {
 };
 
 export type ToeicGrammarInventory = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   source: "dautoeic";
   inventorySha256: string;
   topics: ToeicGrammarTopic[];
   subtopics: ToeicGrammarSubtopic[];
+  lessonIdsBySubtopic: Record<string, string[]>;
   topicQuestionIds: Record<string, string[]>;
   sets: ToeicGrammarSet[];
   difficultyLevels: ToeicGrammarDifficultyLevel[];
   counts: {
     topics: number;
     subtopics: number;
+    lessons: number;
     sets: number;
     topicQuestions: number;
     setQuestions: number;
