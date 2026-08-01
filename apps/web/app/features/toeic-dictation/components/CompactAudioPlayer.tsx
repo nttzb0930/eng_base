@@ -1,6 +1,13 @@
 "use client";
 
-import { Pause, Play, RotateCcw, Volume2, VolumeX } from "lucide-react";
+import {
+  ChevronDown,
+  Pause,
+  Play,
+  Repeat2,
+  Volume2,
+  VolumeX,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/app/components/ui/button";
@@ -20,6 +27,12 @@ type Props = {
   progressLabel: string;
   volumeLabel: string;
   volumeProgressLabel: string;
+  replayLabel: string;
+  replayCountLabel: string;
+  replayDelayLabel: string;
+  replayApplyLabel: string;
+  replayTimesSuffix: string;
+  replaySecondsSuffix: string;
 };
 
 function formatTime(value: number) {
@@ -36,13 +49,33 @@ export function CompactAudioPlayer({
   progressLabel,
   volumeLabel,
   volumeProgressLabel,
+  replayLabel,
+  replayCountLabel,
+  replayDelayLabel,
+  replayApplyLabel,
+  replayTimesSuffix,
+  replaySecondsSuffix,
 }: Props) {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const replayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const replayRemainingRef = useRef(0);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
+  const [replayOpen, setReplayOpen] = useState(false);
+  const [replayCount, setReplayCount] = useState(3);
+  const [replayDelay, setReplayDelay] = useState(1);
+  const [draftReplayCount, setDraftReplayCount] = useState(3);
+  const [draftReplayDelay, setDraftReplayDelay] = useState(1);
+
+  const clearReplayTimer = () => {
+    if (replayTimerRef.current) {
+      clearTimeout(replayTimerRef.current);
+      replayTimerRef.current = null;
+    }
+  };
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -50,25 +83,43 @@ export function CompactAudioPlayer({
     const syncTime = () => setCurrentTime(audio.currentTime);
     const syncDuration = () => setDuration(audio.duration);
     const syncPlaying = () => setPlaying(!audio.paused);
+    const handleEnded = () => {
+      if (replayRemainingRef.current <= 0) {
+        setPlaying(false);
+        return;
+      }
+
+      replayRemainingRef.current -= 1;
+      replayTimerRef.current = setTimeout(() => {
+        replayTimerRef.current = null;
+        audio.currentTime = 0;
+        setCurrentTime(0);
+        void audio.play().catch(() => setPlaying(false));
+      }, replayDelay * 1000);
+    };
 
     audio.addEventListener("timeupdate", syncTime);
     audio.addEventListener("loadedmetadata", syncDuration);
     audio.addEventListener("play", syncPlaying);
     audio.addEventListener("pause", syncPlaying);
-    audio.addEventListener("ended", syncPlaying);
+    audio.addEventListener("ended", handleEnded);
     return () => {
+      clearReplayTimer();
+      replayRemainingRef.current = 0;
       audio.removeEventListener("timeupdate", syncTime);
       audio.removeEventListener("loadedmetadata", syncDuration);
       audio.removeEventListener("play", syncPlaying);
       audio.removeEventListener("pause", syncPlaying);
-      audio.removeEventListener("ended", syncPlaying);
+      audio.removeEventListener("ended", handleEnded);
     };
-  }, [src]);
+  }, [replayDelay, src]);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
     audio.pause();
+    clearReplayTimer();
+    replayRemainingRef.current = 0;
     audio.currentTime = 0;
     setPlaying(false);
     setCurrentTime(0);
@@ -90,6 +141,8 @@ export function CompactAudioPlayer({
     if (audio.paused) {
       void audio.play().catch(() => setPlaying(false));
     } else {
+      clearReplayTimer();
+      replayRemainingRef.current = 0;
       audio.pause();
     }
   };
@@ -97,9 +150,17 @@ export function CompactAudioPlayer({
   const restart = () => {
     const audio = audioRef.current;
     if (!audio) return;
+    clearReplayTimer();
+    replayRemainingRef.current = replayCount;
     audio.currentTime = 0;
     setCurrentTime(0);
     void audio.play().catch(() => setPlaying(false));
+  };
+
+  const applyReplaySettings = () => {
+    setReplayCount(draftReplayCount);
+    setReplayDelay(draftReplayDelay);
+    setReplayOpen(false);
   };
 
   const volumePercent = Math.round((muted ? 0 : volume) * 100);
@@ -210,21 +271,88 @@ export function CompactAudioPlayer({
             </div>
           </div>
         </div>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button
-              type="button"
-              variant="ghost"
-              size="icon"
-              onClick={restart}
-              aria-label={restartLabel}
-              className="h-9 w-9 shrink-0 rounded-md"
-            >
-              <RotateCcw className="h-4 w-4" aria-hidden="true" />
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>{restartLabel}</TooltipContent>
-        </Tooltip>
+        <div className="group/replay relative shrink-0">
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={() => setReplayOpen((open) => !open)}
+            aria-label={replayLabel}
+            aria-expanded={replayOpen}
+            title={replayLabel}
+            className="h-9 w-9 rounded-md"
+          >
+            <Repeat2 className="h-4 w-4" aria-hidden="true" />
+          </Button>
+          {replayOpen && (
+            <div className="bg-card absolute bottom-full right-0 z-30 mb-2 w-64 rounded-md border p-3 shadow-lg">
+              <div className="space-y-3">
+                <label className="text-muted-foreground block text-xs font-medium">
+                  {replayCountLabel}
+                  <span className="relative mt-1 block">
+                    <select
+                      value={draftReplayCount}
+                      onChange={(event) =>
+                        setDraftReplayCount(Number(event.target.value))
+                      }
+                      className="bg-background focus-visible:ring-ring h-9 w-full appearance-none rounded-md border px-3 pr-8 text-sm text-foreground outline-none focus-visible:ring-2"
+                    >
+                      {[1, 3, 5].map((value) => (
+                        <option key={value} value={value}>
+                          {value} {replayTimesSuffix}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown
+                      className="text-muted-foreground pointer-events-none absolute right-2 top-1/2 h-4 w-4 -translate-y-1/2"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </label>
+                <label className="text-muted-foreground block text-xs font-medium">
+                  {replayDelayLabel}
+                  <span className="relative mt-1 block">
+                    <select
+                      value={draftReplayDelay}
+                      onChange={(event) =>
+                        setDraftReplayDelay(Number(event.target.value))
+                      }
+                      className="bg-background focus-visible:ring-ring h-9 w-full appearance-none rounded-md border px-3 pr-8 text-sm text-foreground outline-none focus-visible:ring-2"
+                    >
+                      {[0, 1, 2].map((value) => (
+                        <option key={value} value={value}>
+                          {value} {replaySecondsSuffix}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown
+                      className="text-muted-foreground pointer-events-none absolute right-2 top-1/2 h-4 w-4 -translate-y-1/2"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </label>
+                <Button
+                  type="button"
+                  className="h-9 w-full rounded-md"
+                  onClick={applyReplaySettings}
+                >
+                  {replayApplyLabel}
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="h-9 w-full rounded-md"
+                  onClick={() => {
+                    setReplayOpen(false);
+                    restart();
+                  }}
+                >
+                  {restartLabel}
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </TooltipProvider>
   );

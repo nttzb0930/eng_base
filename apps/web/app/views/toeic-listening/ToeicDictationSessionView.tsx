@@ -400,6 +400,12 @@ export function ToeicDictationSessionView({
                       progressLabel={t("audioProgress")}
                       volumeLabel={t("volume")}
                       volumeProgressLabel={t("volumeProgress")}
+                      replayLabel={t("replay")}
+                      replayCountLabel={t("replayCount")}
+                      replayDelayLabel={t("replayDelay")}
+                      replayApplyLabel={t("replayApply")}
+                      replayTimesSuffix={t("replayTimesSuffix")}
+                      replaySecondsSuffix={t("replaySecondsSuffix")}
                     />
                   </div>
                 ) : (
