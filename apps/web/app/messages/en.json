@@ -998,8 +998,34 @@
         "practiceAgain": "Practice again"
       }
     },
-    "practice": {},
-    "feedback": {}
+    "practice": {
+      "back": "Back to Grammar practice",
+      "eyebrow": "TOEIC Grammar practice",
+      "notAvailable": "This practice collection does not exist or is not published.",
+      "position": "{current}/{total}",
+      "question": "Question {number}",
+      "chooseAnswer": "Choose the best answer",
+      "checking": "Checking answer",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "answerError": "Your answer could not be checked. Your selection is preserved for a safe retry.",
+      "retryAnswer": "Retry grading",
+      "previous": "Previous question",
+      "next": "Next question",
+      "navigator": "Question list",
+      "goToQuestion": "Go to question {number}",
+      "legendCorrect": "Correct",
+      "legendIncorrect": "Incorrect",
+      "legendUnanswered": "Unanswered"
+    },
+    "feedback": {
+      "correct": "Correct",
+      "incorrect": "Not quite",
+      "correctAnswer": "Correct answer: ({label}) {answer}",
+      "explanation": "Explanation",
+      "translation": "Translation",
+      "vocabulary": "Vocabulary to learn"
+    }
   },
   "toeicReading": {
     "part": "Part {part}",

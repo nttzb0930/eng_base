@@ -998,8 +998,34 @@
         "practiceAgain": "Luyện lại"
       }
     },
-    "practice": {},
-    "feedback": {}
+    "practice": {
+      "back": "Quay lại luyện ngữ pháp",
+      "eyebrow": "Luyện ngữ pháp TOEIC",
+      "notAvailable": "Bộ luyện này không tồn tại hoặc chưa được xuất bản.",
+      "position": "{current}/{total}",
+      "question": "Câu {number}",
+      "chooseAnswer": "Chọn đáp án phù hợp nhất",
+      "checking": "Đang chấm đáp án",
+      "correct": "Đúng",
+      "incorrect": "Sai",
+      "answerError": "Chưa thể chấm đáp án. Lựa chọn của bạn đã được giữ để thử lại an toàn.",
+      "retryAnswer": "Thử chấm lại",
+      "previous": "Câu trước",
+      "next": "Câu tiếp theo",
+      "navigator": "Danh sách câu hỏi",
+      "goToQuestion": "Đi tới câu {number}",
+      "legendCorrect": "Đúng",
+      "legendIncorrect": "Sai",
+      "legendUnanswered": "Chưa làm"
+    },
+    "feedback": {
+      "correct": "Chính xác",
+      "incorrect": "Chưa chính xác",
+      "correctAnswer": "Đáp án đúng: ({label}) {answer}",
+      "explanation": "Giải thích",
+      "translation": "Dịch nghĩa",
+      "vocabulary": "Từ vựng nên học"
+    }
   },
   "toeicReading": {
     "part": "Part {part}",
