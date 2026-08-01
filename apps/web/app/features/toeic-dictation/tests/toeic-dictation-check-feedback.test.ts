@@ -10,10 +10,10 @@ import { mergeToeicDictationCheckFeedback } from "../toeic-dictation-check-feedb
 
 test("check feedback keeps visible segments and pairs results with hidden words", () => {
   const segments: ToeicDictationCheckSegment[] = [
-    { segmentIndex: 0, wordIndex: 0, text: "The", hidden: false },
-    { segmentIndex: 1, wordIndex: 1, text: null, hidden: true },
-    { segmentIndex: 2, wordIndex: null, text: " is ", hidden: false },
-    { segmentIndex: 3, wordIndex: 2, text: null, hidden: true },
+    { segmentIndex: 0, wordIndex: 0, length: 3, text: "The", hidden: false },
+    { segmentIndex: 1, wordIndex: 1, length: 5, text: null, hidden: true },
+    { segmentIndex: 2, wordIndex: null, length: null, text: " is ", hidden: false },
+    { segmentIndex: 3, wordIndex: 2, length: 5, text: null, hidden: true },
   ];
   const words: ToeicDictationWordResult[] = [
     { status: "CORRECT", expected: "woman", actual: "woman" },

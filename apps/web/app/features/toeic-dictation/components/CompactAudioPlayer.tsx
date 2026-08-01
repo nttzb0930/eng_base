@@ -1,9 +1,11 @@
 "use client";
 
 import { Pause, Play, Repeat2, Volume2, VolumeX } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
 
 import { Button } from "@/app/components/ui/button";
+import { PlaybackSpeedSelect } from "@/app/features/toeic-dictation/components/PlaybackSpeedSelect";
+import type { ToeicDictationPlaybackSpeed } from "@/app/features/toeic-dictation/playback-speed";
 import {
   Select,
   SelectContent,
@@ -32,6 +34,11 @@ type Props = {
   replayApplyLabel: string;
   replayTimesSuffix: string;
   replaySecondsSuffix: string;
+  autoPlay?: boolean;
+};
+
+export type CompactAudioPlayerHandle = {
+  replay: () => void;
 };
 
 function formatTime(value: number) {
@@ -40,7 +47,7 @@ function formatTime(value: number) {
   return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 }
 
-export function CompactAudioPlayer({
+export const CompactAudioPlayer = forwardRef<CompactAudioPlayerHandle, Props>(function CompactAudioPlayer({
   src,
   playLabel,
   pauseLabel,
@@ -53,7 +60,8 @@ export function CompactAudioPlayer({
   replayApplyLabel,
   replayTimesSuffix,
   replaySecondsSuffix,
-}: Props) {
+  autoPlay = false,
+}, ref) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const replayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const replayRemainingRef = useRef(0);
@@ -63,6 +71,7 @@ export function CompactAudioPlayer({
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
+  const [playbackSpeed, setPlaybackSpeed] = useState<ToeicDictationPlaybackSpeed>(1);
   const [replayOpen, setReplayOpen] = useState(false);
   const [draftReplayCount, setDraftReplayCount] = useState(3);
   const [draftReplayDelay, setDraftReplayDelay] = useState(1);
@@ -123,7 +132,13 @@ export function CompactAudioPlayer({
     setDuration(0);
     setVolume(1);
     setMuted(false);
-  }, [src]);
+    if (autoPlay) {
+      const frame = window.requestAnimationFrame(() => {
+        void audio.play().catch(() => setPlaying(false));
+      });
+      return () => window.cancelAnimationFrame(frame);
+    }
+  }, [autoPlay, src]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -131,6 +146,12 @@ export function CompactAudioPlayer({
     audio.volume = volume;
     audio.muted = muted;
   }, [muted, volume]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.playbackRate = playbackSpeed;
+  }, [playbackSpeed]);
 
   const togglePlayback = () => {
     const audio = audioRef.current;
@@ -159,6 +180,8 @@ export function CompactAudioPlayer({
     setReplayOpen(false);
     startReplay(draftReplayCount);
   };
+
+  useImperativeHandle(ref, () => ({ replay: () => startReplay(1) }), []);
 
   const volumePercent = Math.round((muted ? 0 : volume) * 100);
 
@@ -206,6 +229,10 @@ export function CompactAudioPlayer({
           }}
           aria-label={progressLabel}
           className="min-w-0 flex-1"
+        />
+        <PlaybackSpeedSelect
+          value={playbackSpeed}
+          onValueChange={setPlaybackSpeed}
         />
         <div className="group/volume relative shrink-0">
           <Button
@@ -342,4 +369,4 @@ export function CompactAudioPlayer({
       </div>
     </TooltipProvider>
   );
-}
+});

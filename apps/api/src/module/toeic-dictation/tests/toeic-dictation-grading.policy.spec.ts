@@ -52,6 +52,7 @@ test("dictation check masks the requested percentage without exposing answers", 
   const segments = buildToeicDictationCheckSegments("The quick brown fox jumps.", 10, 50);
   assert.equal(segments.filter((segment) => segment.hidden).length, 3);
   assert.equal(segments.filter((segment) => segment.hidden).every((segment) => segment.text === null), true);
+  assert.equal(segments.filter((segment) => segment.hidden).every((segment) => segment.length !== null), true);
   assert.equal(segments.some((segment) => !segment.hidden && segment.text !== null), true);
 });
 

@@ -73,6 +73,7 @@ export type ToeicDictationSubmitPayload = {
 export type ToeicDictationCheckSegment = {
   segmentIndex: number;
   wordIndex: number | null;
+  length: number | null;
   text: string | null;
   hidden: boolean;
 };

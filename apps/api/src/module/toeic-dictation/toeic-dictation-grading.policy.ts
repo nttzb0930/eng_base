@@ -103,6 +103,7 @@ type TranscriptToken = {
 export type ToeicDictationCheckSegment = {
   segmentIndex: number;
   wordIndex: number | null;
+  length: number | null;
   text: string | null;
   hidden: boolean;
 };
@@ -143,6 +144,7 @@ export function buildToeicDictationCheckSegments(
     return {
       segmentIndex,
       wordIndex: token.wordIndex,
+      length: token.wordIndex === null ? null : [...token.text].length,
       text: hidden ? null : token.text,
       hidden,
     };
