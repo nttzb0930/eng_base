@@ -102,6 +102,8 @@ export function CompactAudioPlayer({
     void audio.play().catch(() => setPlaying(false));
   };
 
+  const volumePercent = Math.round((muted ? 0 : volume) * 100);
+
   return (
     <TooltipProvider delayDuration={300}>
       <div className="bg-muted/50 flex w-full max-w-[460px] items-center gap-2 rounded-md border px-2.5 py-2 shadow-sm">
@@ -174,6 +176,12 @@ export function CompactAudioPlayer({
           </Button>
           <div className="bg-card absolute bottom-full right-0 z-20 hidden w-14 rounded-md border p-3 shadow-lg group-focus-within/volume:block group-hover/volume:block">
             <div className="flex flex-col items-center gap-2">
+              <span
+                className="text-muted-foreground text-[11px] font-medium tabular-nums"
+                aria-live="polite"
+              >
+                {volumePercent}%
+              </span>
               {muted ? (
                 <VolumeX
                   className="text-muted-foreground h-4 w-4 shrink-0"
@@ -196,6 +204,7 @@ export function CompactAudioPlayer({
                   setMuted(value === 0);
                 }}
                 aria-label={volumeProgressLabel}
+                aria-valuetext={`${volumePercent}%`}
                 className="h-24 w-5"
               />
             </div>
