@@ -24,6 +24,10 @@ import {
   useToeicDictationProgress,
   useToeicDictationSet,
 } from "@/app/features/toeic-dictation/hooks/use-toeic-dictation";
+import {
+  mergeToeicDictationCheckFeedback,
+  type ToeicDictationCheckFeedbackSegment,
+} from "@/app/features/toeic-dictation/toeic-dictation-check-feedback";
 import type {
   ToeicDictationItem,
   ToeicDictationSubmitResult,
@@ -55,6 +59,7 @@ export function ToeicDictationSessionView({
   const [result, setResult] = useState<ToeicDictationSubmitResult | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [hidePercent, setHidePercent] = useState<30 | 50 | 100>(50);
+  const [revealedCount, setRevealedCount] = useState(0);
   const submit = useSubmitToeicDictation();
   const item = setQuery.data?.items[index];
   const mediaQuery = useToeicDictationMedia(item?.mediaId ?? 0);
@@ -91,6 +96,8 @@ export function ToeicDictationSessionView({
     setCheckAnswers({});
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResult(null);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setRevealedCount(0);
   }, [item?.id]);
 
   useEffect(() => {
@@ -170,7 +177,12 @@ export function ToeicDictationSessionView({
           hidePercent: mode === "check" ? hidePercent : undefined,
         },
       },
-      { onSuccess: setResult }
+      {
+        onSuccess: (nextResult) => {
+          setResult(nextResult);
+          if (mode === "check") setRevealedCount(nextResult.words.length);
+        },
+      }
     );
   };
   const selectItem = (nextItem: ToeicDictationItem) => {
@@ -179,6 +191,12 @@ export function ToeicDictationSessionView({
     );
     if (nextIndex >= 0) setIndex(nextIndex);
   };
+  const checkFeedback = result
+    ? mergeToeicDictationCheckFeedback(
+        checkQuery.data?.segments ?? [],
+        result.words
+      )
+    : [];
 
   return (
     <FeedWrapper>
@@ -194,7 +212,7 @@ export function ToeicDictationSessionView({
             </Link>
             <div
               className="bg-muted/60 inline-flex rounded-xl p-1"
-              aria-label="Listening mode"
+              aria-label={t("modeLabel")}
             >
               {modes.map((modeOption) => (
                 <Link
@@ -378,55 +396,195 @@ export function ToeicDictationSessionView({
                 {mode === "full" ? (
                   <div className="bg-muted/50 mt-5 rounded-xl p-5">
                     {fullQuery.isLoading ? (
-                      <p className="text-muted-foreground text-sm">{t("checking")}</p>
+                      <p className="text-muted-foreground text-sm">
+                        {t("checking")}
+                      </p>
                     ) : fullQuery.data ? (
                       <>
-                        <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">{t("transcript")}</p>
-                        <p className="mt-2 text-base leading-7">{fullQuery.data.transcript}</p>
+                        <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">
+                          {t("transcript")}
+                        </p>
+                        <p className="mt-2 text-base leading-7">
+                          {fullQuery.data.transcript}
+                        </p>
                         {fullQuery.data.translationVi && (
                           <>
-                            <p className="mt-5 text-xs font-semibold uppercase tracking-wide text-sky-700">{t("translation")}</p>
-                            <p className="text-muted-foreground mt-2 text-sm leading-6">{fullQuery.data.translationVi}</p>
+                            <p className="mt-5 text-xs font-semibold uppercase tracking-wide text-sky-700">
+                              {t("translation")}
+                            </p>
+                            <p className="text-muted-foreground mt-2 text-sm leading-6">
+                              {fullQuery.data.translationVi}
+                            </p>
                           </>
                         )}
                       </>
                     ) : (
-                      <p className="text-muted-foreground text-sm">{t("audioUnavailable")}</p>
+                      <p className="text-muted-foreground text-sm">
+                        {t("audioUnavailable")}
+                      </p>
                     )}
                   </div>
                 ) : mode === "check" ? (
                   <div className="bg-muted/50 mt-5 rounded-xl p-4">
-                    <div className="flex flex-wrap gap-1 text-base leading-10" aria-label={t("placeholder")}>
-                      {(checkQuery.data?.segments ?? []).map((segment) =>
-                        segment.hidden ? (
-                          <input
-                            key={segment.segmentIndex}
-                            aria-label={t("checkWord", { number: (segment.wordIndex ?? 0) + 1 })}
-                            value={checkAnswers[segment.wordIndex ?? -1] ?? ""}
-                            onChange={(event) => setCheckAnswers((current) => ({ ...current, [segment.wordIndex ?? -1]: event.target.value }))}
-                            className="border-input bg-background mx-1 inline-block h-9 w-24 rounded-md border border-b-2 border-b-sky-400 px-2 text-center text-sm outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
-                          />
-                        ) : (
-                          <span key={segment.segmentIndex} className="whitespace-pre-wrap">{segment.text}</span>
-                        ),
-                      )}
-                    </div>
-                    <div className="mt-4 flex items-center gap-2">
-                      <span className="text-muted-foreground text-xs">{t("hideWords")}</span>
+                    <div className="bg-background mb-4 flex items-center gap-1 rounded-xl p-1 text-xs font-semibold">
                       {[30, 50, 100].map((value) => (
-                        <button key={value} type="button" onClick={() => setHidePercent(value as 30 | 50 | 100)} className={`rounded-md px-3 py-1.5 text-xs font-semibold ${hidePercent === value ? "bg-slate-800 text-white" : "bg-background text-muted-foreground"}`}>{value}%</button>
+                        <button
+                          key={value}
+                          type="button"
+                          onClick={() => {
+                            setHidePercent(value as 30 | 50 | 100);
+                            setCheckAnswers({});
+                            setResult(null);
+                            setRevealedCount(0);
+                          }}
+                          className={`rounded-lg px-3 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
+                        >
+                          {value}%
+                        </button>
                       ))}
                     </div>
-                    <Button type="button" disabled={!submissionText.trim() || submit.isPending} onClick={onSubmit} className="mt-4 min-h-11 w-full gap-2">
-                      {submit.isPending ? t("checking") : t("submit")}
-                      <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
-                    </Button>
+                    <div
+                      className="flex flex-wrap items-center gap-1 text-base leading-10"
+                      aria-label={t("placeholder")}
+                    >
+                      {(result
+                        ? checkFeedback
+                        : (checkQuery.data?.segments ?? [])
+                      ).map((segment) => {
+                        if (!segment.hidden) {
+                          return (
+                            <span
+                              key={segment.segmentIndex}
+                              className="whitespace-pre-wrap"
+                            >
+                              {segment.text}
+                            </span>
+                          );
+                        }
+
+                        if (!result) {
+                          return (
+                            <input
+                              key={segment.segmentIndex}
+                              aria-label={t("checkWord", {
+                                number: (segment.wordIndex ?? 0) + 1,
+                              })}
+                              value={
+                                checkAnswers[segment.wordIndex ?? -1] ?? ""
+                              }
+                              onChange={(event) =>
+                                setCheckAnswers((current) => ({
+                                  ...current,
+                                  [segment.wordIndex ?? -1]: event.target.value,
+                                }))
+                              }
+                              className="border-input bg-background mx-1 inline-block h-9 w-24 rounded-md border border-b-2 border-b-sky-400 px-2 text-center text-sm outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+                            />
+                          );
+                        }
+
+                        const feedback =
+                          "result" in segment
+                            ? (segment as ToeicDictationCheckFeedbackSegment)
+                                .result
+                            : null;
+                        const revealIndex =
+                          "hiddenIndex" in segment
+                            ? ((segment as ToeicDictationCheckFeedbackSegment)
+                                .hiddenIndex ?? 0)
+                            : 0;
+                        const isRevealed =
+                          feedback && revealIndex < revealedCount;
+                        return (
+                          <span
+                            key={segment.segmentIndex}
+                            className={`mx-1 inline-flex min-h-9 items-center rounded-md px-2 text-sm font-medium ${isRevealed ? (feedback?.status === "CORRECT" ? "bg-emerald-100 text-emerald-700" : "bg-rose-100 text-rose-700") : "bg-muted text-muted-foreground"}`}
+                          >
+                            {isRevealed ? (feedback?.expected ?? "—") : "•••"}
+                          </span>
+                        );
+                      })}
+                    </div>
+                    {result?.translationVi && (
+                      <div className="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm text-sky-700">
+                        <p className="font-semibold">{t("meaning")}</p>
+                        <p className="mt-1 leading-6">{result.translationVi}</p>
+                      </div>
+                    )}
+                    {result && (
+                      <div className="mt-4 flex flex-wrap items-center gap-2">
+                        {[1, 2, 3].map((count) => (
+                          <button
+                            key={count}
+                            type="button"
+                            onClick={() => setRevealedCount(count)}
+                            className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                          >
+                            {t("revealWords", { count })}
+                          </button>
+                        ))}
+                        <button
+                          type="button"
+                          onClick={() => setRevealedCount(result.words.length)}
+                          className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                        >
+                          {t("revealAll")}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setCheckAnswers({});
+                            setResult(null);
+                            setRevealedCount(0);
+                          }}
+                          className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+                        >
+                          <RotateCcw
+                            className="h-3.5 w-3.5"
+                            aria-hidden="true"
+                          />
+                          {t("reset")}
+                        </button>
+                      </div>
+                    )}
+                    {!result && (
+                      <Button
+                        type="button"
+                        disabled={!submissionText.trim() || submit.isPending}
+                        onClick={onSubmit}
+                        className="mt-4 min-h-11 w-full gap-2"
+                      >
+                        {submit.isPending ? t("checking") : t("submit")}
+                        <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+                      </Button>
+                    )}
+                    <p className="text-muted-foreground mt-4 text-center text-xs">
+                      {t("keyboardHint")}
+                    </p>
                   </div>
                 ) : (
                   <div className="bg-muted/50 mt-5 rounded-xl p-4">
-                    <label className="block text-sm font-semibold" htmlFor="dictation-answer">{t("placeholder")}</label>
-                    <textarea id="dictation-answer" value={typedText} onChange={(event) => setTypedText(event.target.value)} rows={4} maxLength={5000} className="border-input bg-background mt-3 w-full resize-y rounded-xl border p-4 text-base outline-none focus-visible:ring-2 focus-visible:ring-emerald-500" placeholder={t("placeholder")} />
-                    <Button type="button" disabled={!submissionText.trim() || submit.isPending} onClick={onSubmit} className="mt-3 min-h-11 w-full gap-2">
+                    <label
+                      className="block text-sm font-semibold"
+                      htmlFor="dictation-answer"
+                    >
+                      {t("placeholder")}
+                    </label>
+                    <textarea
+                      id="dictation-answer"
+                      value={typedText}
+                      onChange={(event) => setTypedText(event.target.value)}
+                      rows={4}
+                      maxLength={5000}
+                      className="border-input bg-background mt-3 w-full resize-y rounded-xl border p-4 text-base outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                      placeholder={t("placeholder")}
+                    />
+                    <Button
+                      type="button"
+                      disabled={!submissionText.trim() || submit.isPending}
+                      onClick={onSubmit}
+                      className="mt-3 min-h-11 w-full gap-2"
+                    >
                       {submit.isPending ? t("checking") : t("submit")}
                       <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
                     </Button>
@@ -437,7 +595,7 @@ export function ToeicDictationSessionView({
                     {t("submitError")}
                   </p>
                 )}
-                {result && (
+                {result && mode !== "check" && (
                   <div
                     className={`mt-5 rounded-xl border p-5 ${result.mastered ? "border-emerald-200 bg-emerald-50/60" : "border-amber-200 bg-amber-50/60"}`}
                   >
