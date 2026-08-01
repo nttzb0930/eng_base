@@ -148,35 +148,31 @@ export function CompactAudioPlayer({
           className="min-w-0 flex-1"
         />
         <div className="group/volume relative shrink-0">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                type="button"
-                variant="ghost"
-                size="icon"
-                onClick={() => {
-                  const audio = audioRef.current;
-                  const nextMuted = !muted;
-                  if (audio) {
-                    audio.muted = nextMuted;
-                    if (!nextMuted && volume === 0) audio.volume = 1;
-                  }
-                  if (!nextMuted && volume === 0) setVolume(1);
-                  setMuted(nextMuted);
-                }}
-                aria-label={volumeLabel}
-                className="h-9 w-9 rounded-md"
-              >
-                {muted ? (
-                  <VolumeX className="h-4 w-4" aria-hidden="true" />
-                ) : (
-                  <Volume2 className="h-4 w-4" aria-hidden="true" />
-                )}
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>{volumeLabel}</TooltipContent>
-          </Tooltip>
-          <div className="bg-card absolute bottom-full right-0 z-20 hidden w-12 rounded-md border p-3 shadow-lg group-focus-within/volume:block group-hover/volume:block">
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={() => {
+              const audio = audioRef.current;
+              const nextMuted = !muted;
+              if (audio) {
+                audio.muted = nextMuted;
+                if (!nextMuted && volume === 0) audio.volume = 1;
+              }
+              if (!nextMuted && volume === 0) setVolume(1);
+              setMuted(nextMuted);
+            }}
+            aria-label={volumeLabel}
+            title={volumeLabel}
+            className="h-9 w-9 rounded-md"
+          >
+            {muted ? (
+              <VolumeX className="h-4 w-4" aria-hidden="true" />
+            ) : (
+              <Volume2 className="h-4 w-4" aria-hidden="true" />
+            )}
+          </Button>
+          <div className="bg-card absolute bottom-full right-0 z-20 hidden w-14 rounded-md border p-3 shadow-lg group-focus-within/volume:block group-hover/volume:block">
             <div className="flex flex-col items-center gap-2">
               {muted ? (
                 <VolumeX
@@ -200,7 +196,7 @@ export function CompactAudioPlayer({
                   setMuted(value === 0);
                 }}
                 aria-label={volumeProgressLabel}
-                className="h-24"
+                className="h-24 w-5"
               />
             </div>
           </div>
