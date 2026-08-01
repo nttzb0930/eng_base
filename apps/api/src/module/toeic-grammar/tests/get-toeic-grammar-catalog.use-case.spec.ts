@@ -38,6 +38,20 @@ test("catalog returns ordered collections with account progress", async () => {
           ],
           grammar_sets: [
             {
+              source_set_id: "set-no-year",
+              name: "Mixed",
+              year: null,
+              access_level: "free",
+              grammar_set_questions: [],
+            },
+            {
+              source_set_id: "set-2024",
+              name: "2024",
+              year: null,
+              access_level: "free",
+              grammar_set_questions: [],
+            },
+            {
               source_set_id: "set-1",
               name: "Set 1",
               year: 2026,
@@ -45,6 +59,13 @@ test("catalog returns ordered collections with account progress", async () => {
               grammar_set_questions: [
                 { grammar_questions: { source_question_id: "q-1" } },
               ],
+            },
+            {
+              source_set_id: "set-2025",
+              name: "2025",
+              year: null,
+              access_level: "free",
+              grammar_set_questions: [],
             },
           ],
           grammar_question_difficulties: [
@@ -70,7 +91,14 @@ test("catalog returns ordered collections with account progress", async () => {
   assert.equal(result.topics[0]?.correctCount, 1);
   assert.equal(result.topics[0]?.incorrectCount, 1);
   assert.equal(result.topics[0]?.subtopics[0]?.correctCount, 1);
-  assert.equal(result.sets[0]?.correctCount, 1);
+  assert.equal(
+    result.sets.find((set) => set.target === "set-1")?.correctCount,
+    1
+  );
+  assert.deepEqual(
+    result.sets.map((set) => set.year),
+    [2026, 2025, 2024, null]
+  );
   assert.equal(result.levels[0]?.incorrectCount, 1);
 });
 

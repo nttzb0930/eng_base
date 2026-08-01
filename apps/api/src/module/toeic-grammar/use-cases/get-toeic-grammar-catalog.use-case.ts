@@ -10,6 +10,12 @@ import {
   summarizeGrammarProgress,
 } from "../toeic-grammar.mapper";
 
+function resolveGrammarSetYear(year: number | null, name: string) {
+  if (year !== null) return year;
+  const match = name.match(/\b(?:19|20)\d{2}\b/u);
+  return match ? Number(match[0]) : null;
+}
+
 @Injectable()
 export class GetToeicGrammarCatalogUseCase {
   constructor(private readonly prisma: PrismaService) {}
@@ -110,20 +116,31 @@ export class GetToeicGrammarCatalogUseCase {
         })),
       };
     });
-    const sets = snapshot.grammar_sets.map((set) => ({
-      target: set.source_set_id,
-      titleEn: set.name,
-      titleVi: set.name,
-      descriptionVi: null,
-      year: set.year,
-      accessLevel: set.access_level,
-      ...summarizeGrammarProgress(
-        set.grammar_set_questions.map(
-          (membership) => membership.grammar_questions.source_question_id
+    const sets = snapshot.grammar_sets
+      .map((set) => ({
+        target: set.source_set_id,
+        titleEn: set.name,
+        titleVi: set.name,
+        descriptionVi: null,
+        year: resolveGrammarSetYear(set.year, set.name),
+        accessLevel: set.access_level,
+        ...summarizeGrammarProgress(
+          set.grammar_set_questions.map(
+            (membership) => membership.grammar_questions.source_question_id
+          ),
+          progress
         ),
-        progress
-      ),
-    }));
+      }))
+      .sort((left, right) => {
+        if (left.year === null && right.year === null) {
+          return left.titleVi.localeCompare(right.titleVi);
+        }
+        if (left.year === null) return 1;
+        if (right.year === null) return -1;
+        return (
+          right.year - left.year || left.titleVi.localeCompare(right.titleVi)
+        );
+      });
     const byLevel = new Map<number, string[]>();
     for (const membership of snapshot.grammar_question_difficulties) {
       const ids = byLevel.get(membership.level) ?? [];
