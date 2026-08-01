@@ -339,11 +339,15 @@ export function LearnView() {
               <div className="mt-6 grid grid-cols-2 gap-3" aria-hidden="true">
                 <div className="bg-muted/60 rounded-lg p-3">
                   <Headphones className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
-                  <p className="mt-2 text-xs font-semibold">Part 1–4</p>
+                  <p className="mt-2 text-xs font-semibold">
+                    {t("toeicListeningSummary")}
+                  </p>
                 </div>
                 <div className="bg-muted/60 rounded-lg p-3">
                   <BookOpen className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
-                  <p className="mt-2 text-xs font-semibold">Part 5–7</p>
+                  <p className="mt-2 text-xs font-semibold">
+                    {t("toeicReadingSummary")}
+                  </p>
                 </div>
               </div>
               <Link
