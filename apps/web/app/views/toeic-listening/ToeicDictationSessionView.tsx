@@ -17,6 +17,7 @@ import { useEffect, useMemo, useState } from "react";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
 import { CompactAudioPlayer } from "@/app/features/toeic-dictation/components/CompactAudioPlayer";
 import {
   useSubmitToeicDictation,
@@ -498,7 +499,7 @@ export function ToeicDictationSessionView({
 
                         if (!result) {
                           return (
-                            <input
+                            <Input
                               key={segment.segmentIndex}
                               aria-label={t("checkWord", {
                                 number: (segment.wordIndex ?? 0) + 1,
