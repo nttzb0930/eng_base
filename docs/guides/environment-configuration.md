@@ -34,6 +34,7 @@ Copy-Item .env.example .env
 | `JWT_*`                                        | API Auth config              | Secret            | API startup                    |
 | `RATE_LIMIT_*`, `AUTH_*_LIMIT`, `AUTH_*_TTL`   | API rate-limit config        | Server-only       | API startup                    |
 | `DATABASE_URL`, `DB_*`                         | Database URL resolver        | Secret            | Prisma CLI/runtime/scripts     |
+| `LICENSED_CONTENT_ROOT`                        | API application config       | Server-only path  | API startup/media delivery     |
 | provider and vocabulary variables              | Offline vocabulary workflows | Secret/local path | Explicit data command only     |
 
 Frontend code reads only explicit `NEXT_PUBLIC_*` values. English Base has no
@@ -45,6 +46,12 @@ visible to every browser user and must never contain `SECRET`, `PASSWORD`,
 API capability code does not read `process.env`. Reads are restricted to
 `src/config`, process bootstrap, and the Prisma adapter boundary; capability
 behavior consumes validated or injected configuration.
+
+`LICENSED_CONTENT_ROOT` points to the private provider-owned directory that
+contains canonical TOEIC media paths. Local workspace scripts default it to
+`../../var/licensed-content/dautoeic` from `apps/api`. A hosted API must mount
+the private media volume and set an explicit absolute root; media is never
+copied into Web assets or committed to Git.
 
 ## Database URL resolution
 

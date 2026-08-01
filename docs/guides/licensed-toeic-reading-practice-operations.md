@@ -119,3 +119,58 @@ content atomically while leaving the test in `PUBLISHED` state.
 
 The command does not migrate, seed, fetch from the source, or accept source
 authorization. Learner API and UI are delivered separately.
+
+## Inventory authenticated vocabulary cache
+
+This optional, read-only workflow inventories vocabulary that the source has
+already cached for the same 10 local tests across Parts 1â€“7. It does not call
+the source AI function, create missing vocabulary, connect to PostgreSQL, or
+change source data.
+
+Keep the authenticated user access token as one line in the ignored file:
+
+```text
+var/licensed-content/dautoeic/source-user-access-token.txt
+```
+
+The file may contain either the raw JWT or `Bearer <JWT>`. Never pass this token
+on the command line, print it, commit it, or reuse an expired browser token.
+The public anonymous key remains in `source-authorization.txt` and is sent only
+as the Supabase `apikey` header.
+
+Run from the repository root:
+
+```powershell
+pnpm --filter @repo/api data:inventory-toeic-vocabulary-cache
+```
+
+The command automatically uses the newest local TOEIC Reading inventory, 4
+workers, and batches of 50 question IDs. Pin or tune a run when required:
+
+```powershell
+pnpm --filter @repo/api data:inventory-toeic-vocabulary-cache -- --reading-inventory-sha=<SHA256> --workers=4 --batch-size=50
+```
+
+Interrupted runs resume from a private checkpoint. Completed content-addressed
+inventories are stored below:
+
+```text
+var/licensed-content/dautoeic/inventories/toeic-vocabulary-cache/
+```
+
+`readyCount` is the number of questions with existing cache;
+`vocabularyItemCount` counts their vocabulary items; `missingCount` remains
+untouched and is never sent to an AI generation endpoint.
+
+After reviewing the exact inventory checksum, apply the schema migration and
+import only that approved inventory into English Base:
+
+```powershell
+pnpm --filter @repo/api db:migrate:deploy
+pnpm --filter @repo/api data:import-toeic-vocabulary-cache -- --approved-sha=<SHA256>
+```
+
+The importer validates every rich vocabulary item, resolves it through the 10
+selected source tests and `sourceQuestionId`, then atomically replaces the
+question-owned JSON caches. Re-running the same checksum returns `SKIPPED`.
+It does not publish TOEIC tests, alter answer keys, or generate missing cache.
