@@ -2,17 +2,12 @@ import type { ToeicGrammarLessonBlock } from "@repo/shared";
 import { BookOpen } from "lucide-react";
 import { useLocale } from "next-intl";
 
+import { ToeicGrammarMarkdown } from "./ToeicGrammarMarkdown";
+
 type ToeicGrammarLessonContentProps = {
   lessons: ToeicGrammarLessonBlock[];
   emptyLabel: string;
 };
-
-function paragraphs(value: string) {
-  return value
-    .split(/\r?\n\s*\r?\n/u)
-    .map((paragraph) => paragraph.trim())
-    .filter(Boolean);
-}
 
 export function ToeicGrammarLessonContent({
   lessons,
@@ -50,10 +45,8 @@ export function ToeicGrammarLessonContent({
               </h2>
             </header>
             {body ? (
-              <div className="text-foreground/90 mt-5 space-y-4 whitespace-pre-line text-[15px] leading-7">
-                {paragraphs(body).map((paragraph, index) => (
-                  <p key={`${lesson.target}-${index}`}>{paragraph}</p>
-                ))}
+              <div className="mt-5">
+                <ToeicGrammarMarkdown value={body} />
               </div>
             ) : null}
             {!body && lesson.structuredContent ? (
