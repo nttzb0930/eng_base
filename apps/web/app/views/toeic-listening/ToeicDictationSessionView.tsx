@@ -442,7 +442,7 @@ export function ToeicDictationSessionView({
                   </div>
                 ) : mode === "check" ? (
                   <div className="bg-muted/50 mt-5 rounded-xl p-4">
-                    <div className="bg-background mb-4 flex items-center gap-1 rounded-xl p-1 text-xs font-semibold">
+                    <div className="bg-background mb-4 inline-flex w-fit items-center gap-1 rounded-md p-1 text-xs font-semibold">
                       {[30, 50, 100].map((value) => (
                         <button
                           key={value}
@@ -454,7 +454,7 @@ export function ToeicDictationSessionView({
                             setHintCount(0);
                             setRevealedCount(0);
                           }}
-                          className={`rounded-md px-3 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
+                          className={`rounded-md px-2.5 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
                         >
                           {value}%
                         </button>
