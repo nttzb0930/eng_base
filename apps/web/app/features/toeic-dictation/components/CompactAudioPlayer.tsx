@@ -147,52 +147,64 @@ export function CompactAudioPlayer({
           aria-label={progressLabel}
           className="min-w-0 flex-1"
         />
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button
-              type="button"
-              variant="ghost"
-              size="icon"
-              onClick={() => {
-                const audio = audioRef.current;
-                const nextMuted = !muted;
-                if (audio) {
-                  audio.muted = nextMuted;
-                  if (!nextMuted && volume === 0) audio.volume = 1;
-                }
-                if (!nextMuted && volume === 0) setVolume(1);
-                setMuted(nextMuted);
-              }}
-              aria-label={volumeLabel}
-              className="h-9 w-9 shrink-0 rounded-md"
-            >
+        <div className="group/volume relative shrink-0">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => {
+                  const audio = audioRef.current;
+                  const nextMuted = !muted;
+                  if (audio) {
+                    audio.muted = nextMuted;
+                    if (!nextMuted && volume === 0) audio.volume = 1;
+                  }
+                  if (!nextMuted && volume === 0) setVolume(1);
+                  setMuted(nextMuted);
+                }}
+                aria-label={volumeLabel}
+                className="h-9 w-9 rounded-md"
+              >
+                {muted ? (
+                  <VolumeX className="h-4 w-4" aria-hidden="true" />
+                ) : (
+                  <Volume2 className="h-4 w-4" aria-hidden="true" />
+                )}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{volumeLabel}</TooltipContent>
+          </Tooltip>
+          <div className="bg-card absolute bottom-full right-0 z-20 hidden w-12 rounded-md border p-3 shadow-lg group-focus-within/volume:block group-hover/volume:block">
+            <div className="flex flex-col items-center gap-2">
               {muted ? (
-                <VolumeX className="h-4 w-4" aria-hidden="true" />
+                <VolumeX
+                  className="text-muted-foreground h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                />
               ) : (
-                <Volume2 className="h-4 w-4" aria-hidden="true" />
+                <Volume2
+                  className="text-muted-foreground h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                />
               )}
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>{volumeLabel}</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <div className="w-16 shrink-0 px-1">
               <Slider
                 value={[muted ? 0 : volume]}
                 max={1}
                 step={0.05}
+                orientation="vertical"
                 onValueChange={([value]) => {
                   if (value === undefined) return;
                   setVolume(value);
                   setMuted(value === 0);
                 }}
                 aria-label={volumeProgressLabel}
+                className="h-24"
               />
             </div>
-          </TooltipTrigger>
-          <TooltipContent>{volumeProgressLabel}</TooltipContent>
-        </Tooltip>
+          </div>
+        </div>
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
