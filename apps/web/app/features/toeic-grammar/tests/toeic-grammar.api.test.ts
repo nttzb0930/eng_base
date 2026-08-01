@@ -28,11 +28,13 @@ test("Grammar resource uses exact authenticated paths and cache identities", asy
   };
 
   await api.catalog();
+  await api.subtopic("subtopic-1");
   await api.practice("subtopic", "subtopic-1");
   await api.answer(answer);
 
   assert.deepEqual(requests, [
     { method: "GET", path: "/toeic/grammar/catalog" },
+    { method: "GET", path: "/toeic/grammar/subtopics/subtopic-1" },
     {
       method: "GET",
       path: "/toeic/grammar/practice?mode=subtopic&target=subtopic-1",
@@ -40,6 +42,11 @@ test("Grammar resource uses exact authenticated paths and cache identities", asy
     { method: "POST", path: "/toeic/grammar/answers", body: answer },
   ]);
   assert.deepEqual(toeicGrammarKeys.catalog(), ["toeic-grammar", "catalog"]);
+  assert.deepEqual(toeicGrammarKeys.subtopic("subtopic-1"), [
+    "toeic-grammar",
+    "subtopic",
+    "subtopic-1",
+  ]);
   assert.deepEqual(toeicGrammarKeys.practice("level", "1"), [
     "toeic-grammar",
     "practice",

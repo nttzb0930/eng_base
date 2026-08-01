@@ -13,6 +13,7 @@ type ToeicGrammarProgressCardProps = ToeicGrammarProgressSummary & {
   title: string;
   description?: string | null;
   eyebrow?: string;
+  detailHref?: string;
 };
 
 export function ToeicGrammarProgressCard({
@@ -25,6 +26,7 @@ export function ToeicGrammarProgressCard({
   correctCount,
   incorrectCount,
   unansweredCount,
+  detailHref,
 }: ToeicGrammarProgressCardProps) {
   const t = useTranslations("toeicGrammar.catalog.card");
   const answeredCount = correctCount + incorrectCount;
@@ -94,14 +96,19 @@ export function ToeicGrammarProgressCard({
         </div>
 
         <Link
-          href={`/toeic/grammar/practice?mode=${mode}&target=${encodeURIComponent(target)}`}
+          href={
+            detailHref ??
+            `/toeic/grammar/practice?mode=${mode}&target=${encodeURIComponent(target)}`
+          }
           className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
         >
-          {answeredCount === 0
-            ? t("start")
-            : unansweredCount > 0
-              ? t("continue")
-              : t("practiceAgain")}
+          {detailHref
+            ? t("viewLesson")
+            : answeredCount === 0
+              ? t("start")
+              : unansweredCount > 0
+                ? t("continue")
+                : t("practiceAgain")}
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </Link>
       </div>

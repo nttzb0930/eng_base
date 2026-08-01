@@ -44,3 +44,21 @@ test("Grammar session renders one question and sticky explicit-status navigation
   assert.match(navigator, /X/);
   assert.match(navigator, /aria-current/);
 });
+
+test("Grammar lesson route stays thin and renders source content safely", () => {
+  const page = read(
+    "app/[locale]/(main)/learn/cert/toeic/reading/grammar/[subtopicId]/page.tsx"
+  );
+  const loading = read(
+    "app/[locale]/(main)/learn/cert/toeic/reading/grammar/[subtopicId]/loading.tsx"
+  );
+  const content = read(
+    "app/features/toeic-grammar/components/ToeicGrammarLessonContent.tsx"
+  );
+
+  assert.match(page, /ToeicGrammarLessonView/);
+  assert.doesNotMatch(page, /use client|fetch\(|webHttpClient|useQuery/);
+  assert.match(loading, /ToeicGrammarLessonSkeleton/);
+  assert.doesNotMatch(content, /dangerouslySetInnerHTML/);
+  assert.match(content, /theoryContentVi/);
+});

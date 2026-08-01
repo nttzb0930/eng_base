@@ -11,11 +11,11 @@ const messages = (locale: "en" | "vi") =>
 test("TOEIC Grammar learner copy exists in both supported locales", () => {
   for (const locale of ["en", "vi"] as const) {
     const namespace = messages(locale).toeicGrammar as
-      | Record<string, unknown>
-      | undefined;
+      Record<string, unknown> | undefined;
     assert.ok(namespace, `${locale} must define toeicGrammar`);
     assert.ok(namespace.catalog, `${locale} must define catalog copy`);
     assert.ok(namespace.practice, `${locale} must define practice copy`);
+    assert.ok(namespace.lesson, `${locale} must define lesson copy`);
     assert.ok(namespace.feedback, `${locale} must define feedback copy`);
   }
 });

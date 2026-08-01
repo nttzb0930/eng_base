@@ -995,8 +995,25 @@
         "unanswered": "○ {count}",
         "start": "Bắt đầu luyện",
         "continue": "Tiếp tục luyện",
-        "practiceAgain": "Luyện lại"
+        "practiceAgain": "Luyện lại",
+        "viewLesson": "Mở bài học"
       }
+    },
+    "lesson": {
+      "back": "Quay lại luyện ngữ pháp",
+      "tabsLabel": "Các phần của bài học ngữ pháp",
+      "tabs": {
+        "lesson": "Bài học",
+        "practice": "Luyện tập"
+      },
+      "progress": "Tiến độ",
+      "empty": "Chủ điểm này chưa có bài học được xuất bản.",
+      "practiceTitle": "Luyện tập chủ điểm này",
+      "practiceDescription": "Làm toàn bộ {count} câu hỏi và nhận kết quả chấm ngay từ hệ thống.",
+      "startPractice": "Bắt đầu luyện",
+      "continuePractice": "Tiếp tục luyện",
+      "error": "Không thể tải bài học ngữ pháp này.",
+      "retry": "Thử lại"
     },
     "practice": {
       "back": "Quay lại luyện ngữ pháp",

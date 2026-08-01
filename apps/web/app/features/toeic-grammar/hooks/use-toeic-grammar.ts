@@ -15,6 +15,14 @@ export function useToeicGrammarCatalog() {
   });
 }
 
+export function useToeicGrammarSubtopic(target: string) {
+  return useQuery({
+    queryKey: toeicGrammarKeys.subtopic(target),
+    queryFn: () => toeicGrammarApi.subtopic(target),
+    enabled: target.length > 0,
+  });
+}
+
 export function useToeicGrammarPractice(
   mode: ToeicGrammarPracticeMode,
   target: string

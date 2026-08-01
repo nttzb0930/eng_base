@@ -338,16 +338,23 @@ until the result screen.
 
 ## TOEIC Grammar learner practice
 
-`app/features/toeic-grammar` owns the authenticated catalog/practice resource,
-React Query cache identities, URL parsing, retry-safe answer state, and Grammar
-presentation components. `app/views/toeic-grammar` composes the catalog and
-single-question session. Localized `page.tsx` files remain thin adapters, and
-the catalog and session routes each provide a layout-specific skeleton.
+`app/features/toeic-grammar` owns the authenticated catalog, subtopic lesson,
+and practice resources, React Query cache identities, URL parsing, retry-safe
+answer state, and Grammar presentation components. `app/views/toeic-grammar`
+composes the catalog, lesson detail, and single-question session. Localized
+`page.tsx` files remain thin adapters, and every route provides a
+layout-specific skeleton.
 
 TOEIC Reading exposes test practice and Grammar practice as sibling modes. The
 Grammar catalog keeps its topic, mixed-set, and difficulty selections in the
 URL. Progress is projected by the backend for the authenticated learner and is
 never reconstructed from browser storage.
+
+Each catalog subtopic opens a localized detail route with URL-backed Lesson and
+Practice tabs. Lesson blocks render safe text or structured content without
+injecting source HTML. The Practice tab hands off to the existing focused
+subtopic session, so option grading, retry idempotency, and progress remain
+single-owned rather than duplicated in the lesson view.
 
 The focused Grammar session renders one active question and submits an option
 immediately. It does not receive or infer the answer key before grading. A

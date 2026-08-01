@@ -121,6 +121,7 @@ export function ToeicGrammarCatalogView({ tab }: ToeicGrammarCatalogViewProps) {
                       title={subtopic.titleVi}
                       description={subtopic.descriptionVi}
                       eyebrow={t("catalog.subtopic")}
+                      detailHref={`/learn/cert/toeic/reading/grammar/${encodeURIComponent(subtopic.target)}`}
                     />
                   ))}
                 </div>

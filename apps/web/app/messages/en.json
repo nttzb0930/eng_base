@@ -995,8 +995,25 @@
         "unanswered": "○ {count}",
         "start": "Start practice",
         "continue": "Continue practice",
-        "practiceAgain": "Practice again"
+        "practiceAgain": "Practice again",
+        "viewLesson": "Open lesson"
       }
+    },
+    "lesson": {
+      "back": "Back to Grammar practice",
+      "tabsLabel": "Grammar lesson sections",
+      "tabs": {
+        "lesson": "Lesson",
+        "practice": "Practice"
+      },
+      "progress": "Progress",
+      "empty": "This subtopic does not have a published lesson yet.",
+      "practiceTitle": "Practice this subtopic",
+      "practiceDescription": "Work through all {count} questions with immediate server-graded feedback.",
+      "startPractice": "Start practice",
+      "continuePractice": "Continue practice",
+      "error": "This Grammar lesson could not be loaded.",
+      "retry": "Try again"
     },
     "practice": {
       "back": "Back to Grammar practice",
