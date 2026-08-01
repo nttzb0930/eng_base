@@ -42,6 +42,10 @@ test("Reading learner UI keeps questions and display controls accessible", () =>
 test("Reading is discoverable, localized, and has route-shaped loading states", () => {
   const header = read("app/components/navigation/Header.tsx");
   const sidebar = read("app/components/navigation/Sidebar.tsx");
+  const generalEnglishNavigation = read(
+    "app/features/general-english/components/GeneralEnglishSectionNav.tsx"
+  );
+  const learnOverview = read("app/views/learn/LearnView.tsx");
   const shell = read("app/components/layout/LearnerShell.tsx");
   const skeletons = read("app/components/feedback/RouteSkeletons.tsx");
   const listLoading = read("app/[locale]/(main)/reading/loading.tsx");
@@ -60,8 +64,18 @@ test("Reading is discoverable, localized, and has route-shaped loading states", 
     unknown
   >;
 
-  assert.match(header, /href: "\/reading"/);
-  assert.match(sidebar, /withLocale\("\/reading"\)/);
+  assert.doesNotMatch(header, /href: "\/reading"/);
+  assert.doesNotMatch(sidebar, /withLocale\("\/reading"\)/);
+  assert.match(
+    header,
+    /activePrefixes: \["\/learn", "\/practice", "\/reading"\]/
+  );
+  assert.match(
+    sidebar,
+    /activeHrefs=\{\["\/learn", "\/practice", "\/reading"\]\}/
+  );
+  assert.match(generalEnglishNavigation, /href: "\/reading"/);
+  assert.match(learnOverview, /withLocale\("\/reading"\)/);
   assert.match(shell, /ReadingListPageSkeleton/);
   assert.match(shell, /reading/);
   assert.match(skeletons, /ReadingListPageSkeleton/);
