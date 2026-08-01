@@ -727,6 +727,13 @@
     "chooseModeTitle": "Choose the goal that fits you best",
     "generalEnglishTitle": "General English",
     "generalEnglishDescription": "Build everyday English through CEFR levels and practical topics.",
+    "generalNavigation": {
+      "label": "General English sections",
+      "cefr": "CEFR",
+      "topics": "Topics",
+      "practice": "CEFR Practice",
+      "reading": "CEFR Reading"
+    },
     "cefrPathTitle": "Learn by CEFR",
     "topicPathTitle": "Learn by topic",
     "toeicPathTitle": "TOEIC Preparation",

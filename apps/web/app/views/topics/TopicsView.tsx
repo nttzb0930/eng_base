@@ -35,8 +35,8 @@ import { useTranslations } from "next-intl";
 import { TopicsPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { GeneralEnglishSectionNav } from "@/app/features/general-english/components/GeneralEnglishSectionNav";
 import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
-import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
 import { useTopics } from "@/app/features/topics/hooks/use-topics";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
@@ -222,7 +222,10 @@ export function TopicsView() {
           </p>
         </header>
 
-        <DiscoveryTabs active="topics" topicCount={topics.length} />
+        <GeneralEnglishSectionNav
+          active="topics"
+          topicCount={topics.length}
+        />
 
         {/* Filter chips & Search bar */}
         <div className="mb-7 mt-6 flex flex-wrap items-center gap-3">

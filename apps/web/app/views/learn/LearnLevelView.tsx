@@ -12,13 +12,13 @@ import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink
 import { Unit } from "@/app/features/courses/components/Unit";
 import { useLearn } from "@/app/features/courses/hooks/use-learn";
 import { useUnits } from "@/app/features/courses/hooks/use-units";
+import { GeneralEnglishSectionNav } from "@/app/features/general-english/components/GeneralEnglishSectionNav";
 import {
   useCefrLevelProgress,
   useCourseProgress,
   useLessonPercentage,
   useUserProgress,
 } from "@/app/features/progress/hooks/use-user-progress";
-import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
@@ -185,7 +185,10 @@ export function LearnLevelView() {
           </p>
         </header>
 
-        <DiscoveryTabs active="learn" levelCount={cefrSummary.levels.length} />
+        <GeneralEnglishSectionNav
+          active="cefr"
+          levelCount={cefrSummary.levels.length}
+        />
 
         <section className="mt-6">
           <div className="mb-4 flex items-end justify-between">

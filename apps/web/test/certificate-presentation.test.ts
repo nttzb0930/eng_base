@@ -25,8 +25,8 @@ test("learner views do not invent Certificate decks, counts, or memberships", ()
   );
   const topicDetailSource = readWebFile("app/views/topics/TopicDetailView.tsx");
   const learnSource = readWebFile("app/views/learn/LearnView.tsx");
-  const discoveryTabsSource = readWebFile(
-    "app/features/topics/components/DiscoveryTabs.tsx"
+  const generalEnglishNavigationSource = readWebFile(
+    "app/features/general-english/components/GeneralEnglishSectionNav.tsx"
   );
 
   assert.doesNotMatch(flashcardsSource, /CERT_DECKS|percent:\s*(42|18)/);
@@ -34,7 +34,7 @@ test("learner views do not invent Certificate decks, counts, or memberships", ()
   assert.doesNotMatch(topicDetailSource, /certDistributionTitle/);
   assert.doesNotMatch(topicDetailSource, />\s*(IELTS|TOEIC)\s*</);
   assert.doesNotMatch(learnSource, />\s*IELTS\s*</);
-  assert.doesNotMatch(discoveryTabsSource, /\/learn\/cert/);
+  assert.doesNotMatch(generalEnglishNavigationSource, /\/learn\/cert/);
 });
 
 test("English and Vietnamese explain the truthful unavailable state", () => {

@@ -101,15 +101,19 @@ test("English and Vietnamese expose truthful learning-path labels", () => {
   }
 });
 
-test("Discovery navigation localizes its accessible label", () => {
-  const source = read("app/features/topics/components/DiscoveryTabs.tsx");
+test("General English navigation localizes its accessible label", () => {
+  const source = read(
+    "app/features/general-english/components/GeneralEnglishSectionNav.tsx"
+  );
 
-  assert.match(source, /aria-label=\{t\("modeLabel"\)\}/);
+  assert.match(source, /aria-label=\{t\("label"\)\}/);
   assert.doesNotMatch(source, /aria-label="Ch/);
 });
 
 test("General English discovery excludes the separate TOEIC learning path", () => {
-  const discovery = read("app/features/topics/components/DiscoveryTabs.tsx");
+  const discovery = read(
+    "app/features/general-english/components/GeneralEnglishSectionNav.tsx"
+  );
   const courses = read("app/views/courses/CoursesView.tsx");
 
   assert.match(discovery, /href:\s*"\/learn\/level"/);

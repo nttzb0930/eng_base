@@ -21,6 +21,7 @@ import {
 import { PracticePageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { GeneralEnglishSectionNav } from "@/app/features/general-english/components/GeneralEnglishSectionNav";
 import {
   useDictationPracticeSummary,
   useFillBlankPracticeSummary,
@@ -159,6 +160,8 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
             {t("description")}
           </p>
         </header>
+
+        <GeneralEnglishSectionNav active="practice" />
 
         <section className="relative overflow-hidden rounded-lg bg-[radial-gradient(120%_150%_at_0%_0%,#10b981_0%,#047857_58%,#064e3b_100%)] p-6 text-white shadow-brand sm:p-8">
           <div className="relative z-10 flex flex-col gap-6 md:flex-row md:items-center">

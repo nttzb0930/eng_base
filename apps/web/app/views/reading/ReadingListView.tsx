@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { GeneralEnglishSectionNav } from "@/app/features/general-english/components/GeneralEnglishSectionNav";
 import { useReadingPassages } from "@/app/features/reading/hooks/use-reading";
 
 export function ReadingListView() {
@@ -14,6 +15,8 @@ export function ReadingListView() {
 
   return (
     <div className="mx-auto w-full max-w-6xl">
+      <GeneralEnglishSectionNav active="reading" />
+
       <header className="max-w-3xl border-b border-slate-200 pb-7">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">
           {t("list.eyebrow")}
