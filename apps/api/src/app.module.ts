@@ -33,6 +33,7 @@ import { ReadingModule } from "./module/reading";
 import { ToeicReadingModule } from "./module/toeic-reading/toeic-reading.module";
 import { ToeicListeningModule } from "./module/toeic-listening/toeic-listening.module";
 import { ToeicGrammarModule } from "./module/toeic-grammar";
+import { ToeicDictationModule } from "./module/toeic-dictation/toeic-dictation.module";
 
 @Module({
   imports: [
@@ -65,6 +66,7 @@ import { ToeicGrammarModule } from "./module/toeic-grammar";
     ToeicReadingModule,
     ToeicListeningModule,
     ToeicGrammarModule,
+    ToeicDictationModule,
     HealthModule,
   ],
   providers: [
