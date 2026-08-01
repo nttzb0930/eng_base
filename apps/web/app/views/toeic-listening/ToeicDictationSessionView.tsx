@@ -16,6 +16,7 @@ import { useEffect, useMemo, useState } from "react";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { CompactAudioPlayer } from "@/app/features/toeic-dictation/components/CompactAudioPlayer";
 import {
   useSubmitToeicDictation,
   useToeicDictationCheckItem,
@@ -389,13 +390,16 @@ export function ToeicDictationSessionView({
                   </div>
                 </div>
                 {audioUrl ? (
-                  <audio
-                    className="mt-5 w-full"
-                    controls
-                    preload="metadata"
-                    src={audioUrl}
-                    aria-label={t("play")}
-                  />
+                  <div className="mt-5">
+                    <CompactAudioPlayer
+                      src={audioUrl}
+                      playLabel={t("play")}
+                      pauseLabel={t("pause")}
+                      restartLabel={t("restart")}
+                      progressLabel={t("audioProgress")}
+                      volumeLabel={t("volume")}
+                    />
+                  </div>
                 ) : (
                   <p className="text-muted-foreground mt-5 rounded-xl border border-dashed p-4 text-sm">
                     {mediaQuery.isLoading

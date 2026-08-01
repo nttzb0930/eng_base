@@ -1,0 +1,175 @@
+"use client";
+
+import { Pause, Play, RotateCcw, Volume2 } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+
+import { Button } from "@/app/components/ui/button";
+import { Slider } from "@/app/components/ui/slider";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/app/components/ui/tooltip";
+
+type Props = {
+  src: string;
+  playLabel: string;
+  pauseLabel: string;
+  restartLabel: string;
+  progressLabel: string;
+  volumeLabel: string;
+};
+
+function formatTime(value: number) {
+  if (!Number.isFinite(value) || value < 0) return "0:00";
+  const seconds = Math.floor(value);
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+}
+
+export function CompactAudioPlayer({
+  src,
+  playLabel,
+  pauseLabel,
+  restartLabel,
+  progressLabel,
+  volumeLabel,
+}: Props) {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [playing, setPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [volume, setVolume] = useState(1);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    const syncTime = () => setCurrentTime(audio.currentTime);
+    const syncDuration = () => setDuration(audio.duration);
+    const syncPlaying = () => setPlaying(!audio.paused);
+
+    audio.addEventListener("timeupdate", syncTime);
+    audio.addEventListener("loadedmetadata", syncDuration);
+    audio.addEventListener("play", syncPlaying);
+    audio.addEventListener("pause", syncPlaying);
+    audio.addEventListener("ended", syncPlaying);
+    return () => {
+      audio.removeEventListener("timeupdate", syncTime);
+      audio.removeEventListener("loadedmetadata", syncDuration);
+      audio.removeEventListener("play", syncPlaying);
+      audio.removeEventListener("pause", syncPlaying);
+      audio.removeEventListener("ended", syncPlaying);
+    };
+  }, [src]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.pause();
+    audio.currentTime = 0;
+    setPlaying(false);
+    setCurrentTime(0);
+    setDuration(0);
+  }, [src]);
+
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.volume = volume;
+  }, [volume]);
+
+  const togglePlayback = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (audio.paused) {
+      void audio.play().catch(() => setPlaying(false));
+    } else {
+      audio.pause();
+    }
+  };
+
+  const restart = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.currentTime = 0;
+    setCurrentTime(0);
+    void audio.play().catch(() => setPlaying(false));
+  };
+
+  return (
+    <TooltipProvider delayDuration={300}>
+      <div className="bg-muted/50 flex w-full max-w-[460px] items-center gap-2 rounded-full border px-2.5 py-2 shadow-sm">
+        <audio
+          ref={audioRef}
+          src={src}
+          preload="metadata"
+          className="sr-only"
+        />
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={togglePlayback}
+              aria-label={playing ? pauseLabel : playLabel}
+              className="h-9 w-9 shrink-0 rounded-full"
+            >
+              {playing ? (
+                <Pause className="h-4 w-4" aria-hidden="true" />
+              ) : (
+                <Play className="ml-0.5 h-4 w-4" aria-hidden="true" />
+              )}
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>{playing ? pauseLabel : playLabel}</TooltipContent>
+        </Tooltip>
+        <span className="text-muted-foreground w-[72px] shrink-0 text-center text-xs tabular-nums">
+          {formatTime(currentTime)} / {formatTime(duration)}
+        </span>
+        <Slider
+          value={[currentTime]}
+          max={Math.max(duration, 0.1)}
+          step={0.01}
+          onValueChange={([value]) => {
+            const audio = audioRef.current;
+            if (audio && value !== undefined) {
+              audio.currentTime = value;
+              setCurrentTime(value);
+            }
+          }}
+          aria-label={progressLabel}
+          className="min-w-0 flex-1"
+        />
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={() => setVolume((value) => (value > 0 ? 0 : 1))}
+              aria-label={volumeLabel}
+              className="h-9 w-9 shrink-0 rounded-full"
+            >
+              <Volume2 className="h-4 w-4" aria-hidden="true" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>{volumeLabel}</TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={restart}
+              aria-label={restartLabel}
+              className="h-9 w-9 shrink-0 rounded-full"
+            >
+              <RotateCcw className="h-4 w-4" aria-hidden="true" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>{restartLabel}</TooltipContent>
+        </Tooltip>
+      </div>
+    </TooltipProvider>
+  );
+}
