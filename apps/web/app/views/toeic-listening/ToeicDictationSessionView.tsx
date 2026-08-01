@@ -30,6 +30,7 @@ import {
 } from "@/app/features/toeic-dictation/toeic-dictation-check-feedback";
 import type {
   ToeicDictationItem,
+  ToeicDictationRevealCount,
   ToeicDictationSubmitResult,
 } from "@repo/shared";
 
@@ -59,11 +60,16 @@ export function ToeicDictationSessionView({
   const [result, setResult] = useState<ToeicDictationSubmitResult | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [hidePercent, setHidePercent] = useState<30 | 50 | 100>(50);
+  const [hintCount, setHintCount] = useState<ToeicDictationRevealCount>(0);
   const [revealedCount, setRevealedCount] = useState(0);
   const submit = useSubmitToeicDictation();
   const item = setQuery.data?.items[index];
   const mediaQuery = useToeicDictationMedia(item?.mediaId ?? 0);
-  const checkQuery = useToeicDictationCheckItem(item?.id ?? 0, hidePercent);
+  const checkQuery = useToeicDictationCheckItem(
+    item?.id ?? 0,
+    hidePercent,
+    hintCount
+  );
   const fullQuery = useToeicDictationFullItem(item?.id ?? 0, mode === "full");
   const progressByItem = useMemo(
     () =>
@@ -96,6 +102,8 @@ export function ToeicDictationSessionView({
     setCheckAnswers({});
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResult(null);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setHintCount(0);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setRevealedCount(0);
   }, [item?.id]);
@@ -160,7 +168,9 @@ export function ToeicDictationSessionView({
   const saved = progressByItem.get(item.id);
   const checkText = (checkQuery.data?.segments ?? [])
     .filter((segment) => segment.hidden)
-    .map((segment) => checkAnswers[segment.wordIndex ?? -1] ?? "")
+    .map(
+      (segment) => segment.text ?? checkAnswers[segment.wordIndex ?? -1] ?? ""
+    )
     .join(" ");
   const submissionText = mode === "check" ? checkText : typedText;
   const onSubmit = () => {
@@ -435,6 +445,7 @@ export function ToeicDictationSessionView({
                             setHidePercent(value as 30 | 50 | 100);
                             setCheckAnswers({});
                             setResult(null);
+                            setHintCount(0);
                             setRevealedCount(0);
                           }}
                           className={`rounded-lg px-3 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
@@ -456,6 +467,17 @@ export function ToeicDictationSessionView({
                             <span
                               key={segment.segmentIndex}
                               className="whitespace-pre-wrap"
+                            >
+                              {segment.text}
+                            </span>
+                          );
+                        }
+
+                        if (!result && segment.text !== null) {
+                          return (
+                            <span
+                              key={segment.segmentIndex}
+                              className="mx-1 inline-flex min-h-9 items-center rounded-md bg-emerald-100 px-2 text-sm font-medium text-emerald-700"
                             >
                               {segment.text}
                             </span>
@@ -516,32 +538,34 @@ export function ToeicDictationSessionView({
                         <button
                           key={count}
                           type="button"
-                          disabled={!result}
-                          onClick={() => setRevealedCount(count)}
-                          className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${revealedCount === count && result ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background disabled:cursor-not-allowed disabled:opacity-60"}`}
+                          onClick={() => {
+                            if (result) setRevealedCount(count);
+                            else setHintCount(count as 1 | 2 | 3);
+                          }}
+                          className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
                         >
                           {t("revealWords", { count })}
                         </button>
                       ))}
                       <button
                         type="button"
-                        disabled={!result}
                         onClick={() => {
                           if (result) setRevealedCount(result.words.length);
+                          else setHintCount("all");
                         }}
-                        className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${result && revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background disabled:cursor-not-allowed disabled:opacity-60"}`}
+                        className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === "all" ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
                       >
                         {t("revealAll")}
                       </button>
                       <button
                         type="button"
-                        disabled={!result}
                         onClick={() => {
                           setCheckAnswers({});
                           setResult(null);
+                          setHintCount(0);
                           setRevealedCount(0);
                         }}
-                        className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold disabled:cursor-not-allowed disabled:opacity-60"
+                        className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
                       >
                         <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
                         {t("reset")}

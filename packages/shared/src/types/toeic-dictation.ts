@@ -1,5 +1,6 @@
 export type ToeicDictationPart = 1 | 2 | 3 | 4;
 export type ToeicDictationMode = "check" | "dictation" | "full";
+export type ToeicDictationRevealCount = 0 | 1 | 2 | 3 | "all";
 
 export type ToeicDictationProgressSummary = {
   answeredCount: number;

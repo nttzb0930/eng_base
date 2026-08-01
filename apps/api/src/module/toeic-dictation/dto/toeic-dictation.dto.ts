@@ -38,6 +38,10 @@ export class ToeicDictationCheckQueryDto {
   @IsInt()
   @IsIn([30, 50, 100])
   hide = 50;
+
+  @IsOptional()
+  @IsIn(["0", "1", "2", "3", "all"])
+  reveal?: "0" | "1" | "2" | "3" | "all";
 }
 
 export class ToeicDictationSubmitDto implements ToeicDictationSubmitPayload {

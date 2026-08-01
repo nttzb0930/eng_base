@@ -6,6 +6,7 @@ import {
   gradeToeicDictation,
   gradeToeicDictationCheck,
   normalizeDictationText,
+  revealToeicDictationCheckSegments,
 } from "../toeic-dictation-grading.policy.js";
 
 test("dictation normalization ignores case, punctuation, and repeated whitespace", () => {
@@ -52,6 +53,24 @@ test("dictation check masks the requested percentage without exposing answers", 
   assert.equal(segments.filter((segment) => segment.hidden).length, 3);
   assert.equal(segments.filter((segment) => segment.hidden).every((segment) => segment.text === null), true);
   assert.equal(segments.some((segment) => !segment.hidden && segment.text !== null), true);
+});
+
+test("dictation check reveals only the requested number of hidden words", () => {
+  const segments = buildToeicDictationCheckSegments("The quick brown fox jumps.", 10, 100);
+  const revealed = revealToeicDictationCheckSegments(
+    "The quick brown fox jumps.",
+    segments,
+    2,
+  );
+
+  assert.equal(
+    revealed.filter((segment) => segment.hidden && segment.text !== null).length,
+    2,
+  );
+  assert.equal(
+    revealed.filter((segment) => segment.hidden && segment.text === null).length,
+    3,
+  );
 });
 
 test("dictation check grades the hidden words only", () => {

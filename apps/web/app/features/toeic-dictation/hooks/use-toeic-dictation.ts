@@ -2,6 +2,7 @@
 
 import type {
   ToeicDictationPart,
+  ToeicDictationRevealCount,
   ToeicDictationSubmitPayload,
 } from "@repo/shared";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
@@ -18,7 +19,9 @@ export function useToeicDictationOverview() {
   });
 }
 
-export function useToeicDictationSets(options: { test?: number; part?: ToeicDictationPart } = {}) {
+export function useToeicDictationSets(
+  options: { test?: number; part?: ToeicDictationPart } = {}
+) {
   return useQuery({
     queryKey: toeicDictationKeys.sets("2026", options.test, options.part),
     queryFn: () => toeicDictationApi.sets({ collection: "2026", ...options }),
@@ -41,10 +44,14 @@ export function useToeicDictationProgress(setId: number) {
   });
 }
 
-export function useToeicDictationCheckItem(itemId: number, hidePercent: 30 | 50 | 100) {
+export function useToeicDictationCheckItem(
+  itemId: number,
+  hidePercent: 30 | 50 | 100,
+  reveal: ToeicDictationRevealCount = 0
+) {
   return useQuery({
-    queryKey: [...toeicDictationKeys.all, "check", itemId, hidePercent],
-    queryFn: () => toeicDictationApi.checkItem(itemId, hidePercent),
+    queryKey: [...toeicDictationKeys.all, "check", itemId, hidePercent, reveal],
+    queryFn: () => toeicDictationApi.checkItem(itemId, hidePercent, reveal),
     enabled: Number.isInteger(itemId) && itemId > 0,
   });
 }
@@ -60,8 +67,13 @@ export function useToeicDictationFullItem(itemId: number, enabled = true) {
 export function useSubmitToeicDictation() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: ({ itemId, payload }: { itemId: number; payload: ToeicDictationSubmitPayload }) =>
-      toeicDictationApi.submit(itemId, payload),
+    mutationFn: ({
+      itemId,
+      payload,
+    }: {
+      itemId: number;
+      payload: ToeicDictationSubmitPayload;
+    }) => toeicDictationApi.submit(itemId, payload),
     onSuccess: (_result, variables) =>
       queryClient.invalidateQueries({ queryKey: toeicDictationKeys.all }),
   });

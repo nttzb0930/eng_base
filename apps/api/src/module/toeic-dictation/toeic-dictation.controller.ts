@@ -11,7 +11,11 @@ import {
 
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
-import { ToeicDictationCheckQueryDto, ToeicDictationQueryDto, ToeicDictationSubmitDto } from "./dto/toeic-dictation.dto";
+import {
+  ToeicDictationCheckQueryDto,
+  ToeicDictationQueryDto,
+  ToeicDictationSubmitDto,
+} from "./dto/toeic-dictation.dto";
 import { GetToeicDictationCheckItemUseCase } from "./use-cases/get-toeic-dictation-check-item.use-case";
 import { GetToeicDictationFullItemUseCase } from "./use-cases/get-toeic-dictation-full-item.use-case";
 import { GetToeicDictationOverviewUseCase } from "./use-cases/get-toeic-dictation-overview.use-case";
@@ -30,7 +34,7 @@ export class ToeicDictationController {
     private readonly progressUseCase: GetToeicDictationProgressUseCase,
     private readonly submitUseCase: SubmitToeicDictationUseCase,
     private readonly checkItemUseCase: GetToeicDictationCheckItemUseCase,
-    private readonly fullItemUseCase: GetToeicDictationFullItemUseCase,
+    private readonly fullItemUseCase: GetToeicDictationFullItemUseCase
   ) {}
 
   @Get("overview")
@@ -41,7 +45,7 @@ export class ToeicDictationController {
   @Get("sets")
   sets(
     @CurrentUserId() userId: string,
-    @Query() query: ToeicDictationQueryDto,
+    @Query() query: ToeicDictationQueryDto
   ) {
     return this.listSetsUseCase.execute(userId, query);
   }
@@ -49,7 +53,7 @@ export class ToeicDictationController {
   @Get("sets/:setId/items")
   setItems(
     @CurrentUserId() userId: string,
-    @Param("setId", ParseIntPipe) setId: number,
+    @Param("setId", ParseIntPipe) setId: number
   ) {
     return this.getSetUseCase.execute(userId, setId);
   }
@@ -57,7 +61,7 @@ export class ToeicDictationController {
   @Get("sets/:setId/progress")
   progress(
     @CurrentUserId() userId: string,
-    @Param("setId", ParseIntPipe) setId: number,
+    @Param("setId", ParseIntPipe) setId: number
   ) {
     return this.progressUseCase.execute(userId, setId);
   }
@@ -65,9 +69,17 @@ export class ToeicDictationController {
   @Get("items/:itemId/check")
   checkItem(
     @Param("itemId", ParseIntPipe) itemId: number,
-    @Query() query: ToeicDictationCheckQueryDto,
+    @Query() query: ToeicDictationCheckQueryDto
   ) {
-    return this.checkItemUseCase.execute(itemId, query.hide as 30 | 50 | 100);
+    const revealCount =
+      query.reveal === "all"
+        ? Number.MAX_SAFE_INTEGER
+        : Number(query.reveal ?? 0);
+    return this.checkItemUseCase.execute(
+      itemId,
+      query.hide as 30 | 50 | 100,
+      revealCount
+    );
   }
 
   @Get("items/:itemId/full")
@@ -79,7 +91,7 @@ export class ToeicDictationController {
   submit(
     @CurrentUserId() userId: string,
     @Param("itemId", ParseIntPipe) itemId: number,
-    @Body() body: ToeicDictationSubmitDto,
+    @Body() body: ToeicDictationSubmitDto
   ) {
     return this.submitUseCase.execute(userId, { ...body, itemId });
   }

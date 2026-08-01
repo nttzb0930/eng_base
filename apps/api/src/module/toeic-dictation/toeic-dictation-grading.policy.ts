@@ -29,14 +29,15 @@ function alignWords(expected: string[], actual: string[]) {
   const rows = expected.length + 1;
   const columns = actual.length + 1;
   const matrix = Array.from({ length: rows }, () =>
-    Array<number>(columns).fill(0),
+    Array<number>(columns).fill(0)
   );
 
   for (let row = 1; row < rows; row += 1) {
     for (let column = 1; column < columns; column += 1) {
-      matrix[row]![column] = expected[row - 1] === actual[column - 1]
-        ? matrix[row - 1]![column - 1]! + 1
-        : Math.max(matrix[row - 1]![column]!, matrix[row]![column - 1]!);
+      matrix[row]![column] =
+        expected[row - 1] === actual[column - 1]
+          ? matrix[row - 1]![column - 1]! + 1
+          : Math.max(matrix[row - 1]![column]!, matrix[row]![column - 1]!);
     }
   }
 
@@ -44,11 +45,7 @@ function alignWords(expected: string[], actual: string[]) {
   let row = expected.length;
   let column = actual.length;
   while (row > 0 || column > 0) {
-    if (
-      row > 0 &&
-      column > 0 &&
-      expected[row - 1] === actual[column - 1]
-    ) {
+    if (row > 0 && column > 0 && expected[row - 1] === actual[column - 1]) {
       result.push({
         status: "CORRECT",
         expected: expected[row - 1]!,
@@ -80,16 +77,15 @@ function alignWords(expected: string[], actual: string[]) {
 
 export function gradeToeicDictation(
   expectedText: string,
-  actualText: string,
+  actualText: string
 ): ToeicDictationGrade {
   const expected = normalizeDictationText(expectedText);
   const actual = normalizeDictationText(actualText);
   const words = alignWords(expected, actual);
   const wordsCorrect = words.filter((word) => word.status === "CORRECT").length;
   const totalWords = expected.length;
-  const accuracy = totalWords === 0
-    ? 0
-    : Math.round((wordsCorrect / totalWords) * 100);
+  const accuracy =
+    totalWords === 0 ? 0 : Math.round((wordsCorrect / totalWords) * 100);
   return {
     wordsCorrect,
     totalWords,
@@ -112,7 +108,10 @@ export type ToeicDictationCheckSegment = {
 };
 
 function tokenizeTranscript(value: string): TranscriptToken[] {
-  const tokens = value.match(/[\p{L}\p{N}]+(?:['’\u2011-][\p{L}\p{N}]+)*|[^\p{L}\p{N}\s]+|\s+/gu) ?? [];
+  const tokens =
+    value.match(
+      /[\p{L}\p{N}]+(?:['’\u2011-][\p{L}\p{N}]+)*|[^\p{L}\p{N}\s]+|\s+/gu
+    ) ?? [];
   let wordIndex = 0;
   return tokens.map((text) => {
     const isWord = /[\p{L}\p{N}]/u.test(text);
@@ -125,7 +124,7 @@ function tokenizeTranscript(value: string): TranscriptToken[] {
 export function buildToeicDictationCheckSegments(
   transcript: string,
   itemId: number,
-  hidePercent: 30 | 50 | 100,
+  hidePercent: 30 | 50 | 100
 ): ToeicDictationCheckSegment[] {
   const tokens = tokenizeTranscript(transcript);
   const wordCount = tokens.filter((token) => token.wordIndex !== null).length;
@@ -137,7 +136,7 @@ export function buildToeicDictationCheckSegments(
     }))
       .sort((left, right) => left.rank - right.rank)
       .slice(0, hiddenCount)
-      .map((entry) => entry.index),
+      .map((entry) => entry.index)
   );
   return tokens.map((token, segmentIndex) => {
     const hidden = token.wordIndex !== null && hiddenWords.has(token.wordIndex);
@@ -150,22 +149,49 @@ export function buildToeicDictationCheckSegments(
   });
 }
 
+export function revealToeicDictationCheckSegments(
+  transcript: string,
+  segments: ToeicDictationCheckSegment[],
+  revealCount: number
+): ToeicDictationCheckSegment[] {
+  if (revealCount <= 0) return segments;
+  const tokens = tokenizeTranscript(transcript);
+  let hiddenIndex = 0;
+  return segments.map((segment) => {
+    if (!segment.hidden) return segment;
+    const shouldReveal = hiddenIndex < revealCount;
+    hiddenIndex += 1;
+    return shouldReveal
+      ? { ...segment, text: tokens[segment.segmentIndex]?.text ?? null }
+      : segment;
+  });
+}
+
 export function gradeToeicDictationCheck(
   transcript: string,
   typedText: string,
   itemId: number,
-  hidePercent: 30 | 50 | 100,
+  hidePercent: 30 | 50 | 100
 ): ToeicDictationGrade {
-  const segments = buildToeicDictationCheckSegments(transcript, itemId, hidePercent);
+  const segments = buildToeicDictationCheckSegments(
+    transcript,
+    itemId,
+    hidePercent
+  );
   const expected = segments
     .filter((segment) => segment.hidden)
-    .map((segment) => normalizeDictationText(tokenizeTranscript(transcript)[segment.segmentIndex]?.text ?? ""))
+    .map((segment) =>
+      normalizeDictationText(
+        tokenizeTranscript(transcript)[segment.segmentIndex]?.text ?? ""
+      )
+    )
     .flat();
   const actual = normalizeDictationText(typedText);
   const words = alignWords(expected, actual);
   const wordsCorrect = words.filter((word) => word.status === "CORRECT").length;
   const totalWords = expected.length;
-  const accuracy = totalWords === 0 ? 0 : Math.round((wordsCorrect / totalWords) * 100);
+  const accuracy =
+    totalWords === 0 ? 0 : Math.round((wordsCorrect / totalWords) * 100);
   return {
     wordsCorrect,
     totalWords,

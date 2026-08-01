@@ -110,7 +110,17 @@ test("dictation check returns masked segments without hidden text", async () => 
 
   const result = await useCase.execute(20, 50);
   assert.equal(result.hidePercent, 50);
-  assert.equal(result.segments.some((segment) => segment.hidden && segment.text === null), true);
+  assert.equal(
+    result.segments.some((segment) => segment.hidden && segment.text === null),
+    true
+  );
+
+  const hinted = await useCase.execute(20, 50, 1);
+  assert.equal(
+    hinted.segments.filter((segment) => segment.hidden && segment.text !== null)
+      .length,
+    1
+  );
 });
 
 test("dictation full returns transcript and translation on demand", async () => {
@@ -151,7 +161,7 @@ test("dictation submit rejects stale content versions", async () => {
         typedText: "A sentence",
         submissionKey: "f47ac10b-58cc-4372-a567-0e02b2c3d479",
       }),
-    (error: unknown) => error instanceof ConflictException,
+    (error: unknown) => error instanceof ConflictException
   );
 });
 

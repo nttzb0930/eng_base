@@ -2,7 +2,10 @@ import { Injectable, NotFoundException } from "@nestjs/common";
 import type { ToeicDictationCheckItem } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { buildToeicDictationCheckSegments } from "../toeic-dictation-grading.policy";
+import {
+  buildToeicDictationCheckSegments,
+  revealToeicDictationCheckSegments,
+} from "../toeic-dictation-grading.policy";
 
 @Injectable()
 export class GetToeicDictationCheckItemUseCase {
@@ -11,6 +14,7 @@ export class GetToeicDictationCheckItemUseCase {
   async execute(
     itemId: number,
     hidePercent: 30 | 50 | 100,
+    revealCount = 0
   ): Promise<ToeicDictationCheckItem> {
     const item = await this.prisma.toeic_dictation_items.findFirst({
       where: {
@@ -24,11 +28,20 @@ export class GetToeicDictationCheckItemUseCase {
       select: { id: true, order_index: true, transcript: true },
     });
     if (!item) throw new NotFoundException("TOEIC Dictation item not found");
+    const segments = buildToeicDictationCheckSegments(
+      item.transcript,
+      item.id,
+      hidePercent
+    );
     return {
       itemId: item.id,
       order: item.order_index,
       hidePercent,
-      segments: buildToeicDictationCheckSegments(item.transcript, item.id, hidePercent),
+      segments: revealToeicDictationCheckSegments(
+        item.transcript,
+        segments,
+        revealCount
+      ),
     };
   }
 }

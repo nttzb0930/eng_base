@@ -10,7 +10,9 @@ test("dictation API keeps catalog filters and submit/media routes explicit", asy
   const paths: string[] = [];
   const http = {
     get: (path: string, config?: { responseType?: string }) => {
-      paths.push(`GET ${path}${config?.responseType ? ` [${config.responseType}]` : ""}`);
+      paths.push(
+        `GET ${path}${config?.responseType ? ` [${config.responseType}]` : ""}`
+      );
       return Promise.resolve({ data: [] });
     },
     post: (path: string) => {
@@ -24,6 +26,7 @@ test("dictation API keeps catalog filters and submit/media routes explicit", asy
   await api.set(10);
   await api.progress(10);
   await api.checkItem(20, 50);
+  await api.checkItem(20, 50, 2);
   await api.fullItem(20);
   await api.submit(20, {} as never);
   await api.media(20);
@@ -34,9 +37,13 @@ test("dictation API keeps catalog filters and submit/media routes explicit", asy
     "GET /toeic/dictation/sets/10/items",
     "GET /toeic/dictation/sets/10/progress",
     "GET /toeic/dictation/items/20/check?hide=50",
+    "GET /toeic/dictation/items/20/check?hide=50&reveal=2",
     "GET /toeic/dictation/items/20/full",
     "POST /toeic/dictation/items/20/submit",
     "GET /toeic/dictation/media/20 [blob]",
   ]);
-  assert.notDeepEqual(toeicDictationKeys.sets(undefined, 1), toeicDictationKeys.sets(undefined, 2));
+  assert.notDeepEqual(
+    toeicDictationKeys.sets(undefined, 1),
+    toeicDictationKeys.sets(undefined, 2)
+  );
 });
