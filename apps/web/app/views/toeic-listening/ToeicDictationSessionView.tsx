@@ -511,42 +511,42 @@ export function ToeicDictationSessionView({
                         <p className="mt-1 leading-6">{result.translationVi}</p>
                       </div>
                     )}
-                    {result && (
-                      <div className="mt-4 flex flex-wrap items-center gap-2">
-                        {[1, 2, 3].map((count) => (
-                          <button
-                            key={count}
-                            type="button"
-                            onClick={() => setRevealedCount(count)}
-                            className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
-                          >
-                            {t("revealWords", { count })}
-                          </button>
-                        ))}
+                    <div className="mt-4 flex flex-wrap items-center gap-2">
+                      {[1, 2, 3].map((count) => (
                         <button
+                          key={count}
                           type="button"
-                          onClick={() => setRevealedCount(result.words.length)}
-                          className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                          disabled={!result}
+                          onClick={() => setRevealedCount(count)}
+                          className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${revealedCount === count && result ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background disabled:cursor-not-allowed disabled:opacity-60"}`}
                         >
-                          {t("revealAll")}
+                          {t("revealWords", { count })}
                         </button>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setCheckAnswers({});
-                            setResult(null);
-                            setRevealedCount(0);
-                          }}
-                          className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
-                        >
-                          <RotateCcw
-                            className="h-3.5 w-3.5"
-                            aria-hidden="true"
-                          />
-                          {t("reset")}
-                        </button>
-                      </div>
-                    )}
+                      ))}
+                      <button
+                        type="button"
+                        disabled={!result}
+                        onClick={() => {
+                          if (result) setRevealedCount(result.words.length);
+                        }}
+                        className={`rounded-lg border px-3 py-1.5 text-xs font-semibold ${result && revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background disabled:cursor-not-allowed disabled:opacity-60"}`}
+                      >
+                        {t("revealAll")}
+                      </button>
+                      <button
+                        type="button"
+                        disabled={!result}
+                        onClick={() => {
+                          setCheckAnswers({});
+                          setResult(null);
+                          setRevealedCount(0);
+                        }}
+                        className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                        {t("reset")}
+                      </button>
+                    </div>
                     {!result && (
                       <Button
                         type="button"
