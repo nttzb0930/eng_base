@@ -222,10 +222,7 @@ export function TopicsView() {
           </p>
         </header>
 
-        <GeneralEnglishSectionNav
-          active="topics"
-          topicCount={topics.length}
-        />
+        <GeneralEnglishSectionNav active="topics" topicCount={topics.length} />
 
         {/* Filter chips & Search bar */}
         <div className="mb-7 mt-6 flex flex-wrap items-center gap-3">

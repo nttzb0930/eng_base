@@ -1,14 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import {
-  LogOut,
-  Home,
-  BookOpen,
-  Trophy,
-  Heart,
-  Layers,
-} from "lucide-react";
+import { LogOut, Home, BookOpen, Trophy, Heart, Layers } from "lucide-react";
 import Image from "next/image";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";

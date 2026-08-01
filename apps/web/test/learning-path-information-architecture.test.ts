@@ -172,8 +172,7 @@ test("General English local navigation copy is synchronized", () => {
   for (const locale of ["en", "vi"] as const) {
     const catalog = messages(locale);
     const navigation = catalog.learn.generalNavigation as
-      | Record<string, unknown>
-      | undefined;
+      Record<string, unknown> | undefined;
 
     for (const key of ["label", "cefr", "topics", "practice", "reading"]) {
       assert.equal(

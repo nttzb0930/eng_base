@@ -39,7 +39,7 @@ export const SidebarItem = ({
       variant="sidebar"
       className={cn(
         "relative h-12 justify-start overflow-hidden px-3",
-        isActive ? "font-semibold text-primary" : "text-muted-foreground"
+        isActive ? "text-primary font-semibold" : "text-muted-foreground"
       )}
       asChild
     >
@@ -47,11 +47,11 @@ export const SidebarItem = ({
         {isActive && (
           <motion.div
             layoutId="activeSidebarIndicator"
-            className="absolute inset-0 rounded-xl bg-primary/10"
+            className="bg-primary/10 absolute inset-0 rounded-xl"
             transition={{
               type: "spring",
               stiffness: 150,
-              damping: 20
+              damping: 20,
             }}
           />
         )}

@@ -52,9 +52,7 @@ const practiceModes: Record<
   {
     titleKey: "fillBlankTitle" | "listeningTitle" | "dictationTitle";
     descriptionKey:
-      | "fillBlankDescription"
-      | "listeningDescription"
-      | "dictationDescription";
+      "fillBlankDescription" | "listeningDescription" | "dictationDescription";
     Icon: typeof BookOpenText;
     iconClassName: string;
   }
@@ -134,7 +132,10 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
   } satisfies Record<PracticeMode, PracticeLevelSummary>;
   const selectedSummary = summaries[selectedMode];
   const selectedModeConfig = practiceModes[selectedMode];
-  const selectedWordCount = getPracticeWordCount(selectedSummary, selectedLevel);
+  const selectedWordCount = getPracticeWordCount(
+    selectedSummary,
+    selectedLevel
+  );
   const selectionAvailable = isPracticeSelectionAvailable(
     selectedSummary,
     selectedLevel
@@ -149,21 +150,21 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
     <FeedWrapper>
       <div className="pb-12">
         <header className="mb-8 max-w-3xl">
-          <p className="eyebrow text-emerald-600 dark:text-emerald-400 font-semibold tracking-wider text-xs uppercase inline-flex items-center gap-2">
+          <p className="eyebrow inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
             <Dumbbell className="h-4 w-4" />
             <span>{t("eyebrow")}</span>
           </p>
-          <h1 className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">
+          <h1 className="text-foreground mt-2 text-3xl font-bold sm:text-4xl">
             {t("title")}
           </h1>
-          <p className="mt-3 max-w-[65ch] text-base leading-relaxed text-muted-foreground">
+          <p className="text-muted-foreground mt-3 max-w-[65ch] text-base leading-relaxed">
             {t("description")}
           </p>
         </header>
 
         <GeneralEnglishSectionNav active="practice" />
 
-        <section className="relative overflow-hidden rounded-lg bg-[radial-gradient(120%_150%_at_0%_0%,#10b981_0%,#047857_58%,#064e3b_100%)] p-6 text-white shadow-brand sm:p-8">
+        <section className="shadow-brand relative overflow-hidden rounded-lg bg-[radial-gradient(120%_150%_at_0%_0%,#10b981_0%,#047857_58%,#064e3b_100%)] p-6 text-white sm:p-8">
           <div className="relative z-10 flex flex-col gap-6 md:flex-row md:items-center">
             <div className="min-w-0 flex-1">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 backdrop-blur">
@@ -182,14 +183,16 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
                   : t("weakWordsEmpty")}
               </p>
               <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-white/75">
-                <span>• {t("weakCount", { count: weakWordsSummary.total })}</span>
+                <span>
+                  • {t("weakCount", { count: weakWordsSummary.total })}
+                </span>
                 <span>• {t("dueCount", { count: weakWordsSummary.due })}</span>
               </div>
             </div>
             {weakWordsSummary.total > 0 ? (
               <Link
                 href={withLocale("/practice/weak-words")}
-                className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-brand-deep shadow-lg transition hover:-translate-y-0.5 hover:bg-white/90"
+                className="text-brand-deep inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold shadow-lg transition hover:-translate-y-0.5 hover:bg-white/90"
               >
                 <RefreshCw className="h-4 w-4" aria-hidden="true" />
                 {t("startReview")}
@@ -206,63 +209,82 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
         <section className="mt-9">
           <div className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.1em] text-muted-foreground">
+              <p className="text-muted-foreground text-xs font-semibold uppercase tracking-[0.1em]">
                 {t("step", { number: 1 })}
               </p>
-              <h2 className="mt-1 text-2xl font-bold text-foreground">{t("chooseMode")}</h2>
+              <h2 className="text-foreground mt-1 text-2xl font-bold">
+                {t("chooseMode")}
+              </h2>
             </div>
-            <p className="text-sm text-muted-foreground">{t("modeHint")}</p>
+            <p className="text-muted-foreground text-sm">{t("modeHint")}</p>
           </div>
 
           <div className="grid gap-4 lg:grid-cols-3">
-            {(Object.entries(practiceModes) as [PracticeMode, (typeof practiceModes)[PracticeMode]][]).map(
-              ([modeKey, config]) => {
-                const active = selectedMode === modeKey;
-                const Icon = config.Icon;
-                const wordCount = getPracticeModeWordCount(summaries[modeKey]);
+            {(
+              Object.entries(practiceModes) as [
+                PracticeMode,
+                (typeof practiceModes)[PracticeMode],
+              ][]
+            ).map(([modeKey, config]) => {
+              const active = selectedMode === modeKey;
+              const Icon = config.Icon;
+              const wordCount = getPracticeModeWordCount(summaries[modeKey]);
 
-                return (
-                  <Link
-                    key={modeKey}
-                    href={withLocale(
-                      `/practice?mode=${modeKey}&level=${selectedLevel}`
-                    )}
-                    aria-current={active ? "true" : undefined}
-                    className={cn(
-                      "relative flex min-h-56 flex-col rounded-2xl border bg-card p-5 transition duration-200 hover:-translate-y-0.5 hover:shadow-lift",
-                      active && "border-primary bg-secondary/70 ring-2 ring-primary/15"
-                    )}
-                  >
-                    <div className="flex items-start justify-between">
-                      <span className={cn("grid h-11 w-11 place-items-center rounded-xl", config.iconClassName)}>
-                        <Icon className="h-5 w-5" aria-hidden="true" />
-                      </span>
-                      {active && (
-                        <span className="grid h-6 w-6 place-items-center rounded-full bg-primary text-primary-foreground">
-                          <Check className="h-4 w-4" aria-hidden="true" />
-                        </span>
+              return (
+                <Link
+                  key={modeKey}
+                  href={withLocale(
+                    `/practice?mode=${modeKey}&level=${selectedLevel}`
+                  )}
+                  aria-current={active ? "true" : undefined}
+                  className={cn(
+                    "bg-card hover:shadow-lift relative flex min-h-56 flex-col rounded-2xl border p-5 transition duration-200 hover:-translate-y-0.5",
+                    active &&
+                      "border-primary bg-secondary/70 ring-primary/15 ring-2"
+                  )}
+                >
+                  <div className="flex items-start justify-between">
+                    <span
+                      className={cn(
+                        "grid h-11 w-11 place-items-center rounded-xl",
+                        config.iconClassName
                       )}
-                    </div>
-                    <h3 className="mt-5 text-lg font-bold text-foreground">{t(config.titleKey)}</h3>
-                    <p className="mt-1 text-sm leading-5 text-muted-foreground">{t(config.descriptionKey)}</p>
-                    <div className="mt-auto flex items-center justify-between border-t pt-4 text-xs text-muted-foreground">
-                      <span>{t("availableWords")}</span>
-                      <span className="tabular font-semibold text-foreground">{wordCount}</span>
-                    </div>
-                  </Link>
-                );
-              }
-            )}
+                    >
+                      <Icon className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    {active && (
+                      <span className="bg-primary text-primary-foreground grid h-6 w-6 place-items-center rounded-full">
+                        <Check className="h-4 w-4" aria-hidden="true" />
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="text-foreground mt-5 text-lg font-bold">
+                    {t(config.titleKey)}
+                  </h3>
+                  <p className="text-muted-foreground mt-1 text-sm leading-5">
+                    {t(config.descriptionKey)}
+                  </p>
+                  <div className="text-muted-foreground mt-auto flex items-center justify-between border-t pt-4 text-xs">
+                    <span>{t("availableWords")}</span>
+                    <span className="tabular text-foreground font-semibold">
+                      {wordCount}
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
 
         <section className="mt-9">
           <div className="mb-4 flex items-end justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.1em] text-muted-foreground">
+              <p className="text-muted-foreground text-xs font-semibold uppercase tracking-[0.1em]">
                 {t("step", { number: 2 })}
               </p>
-              <h2 className="mt-1 text-2xl font-bold text-foreground">{t("chooseLevel")}</h2>
+              <h2 className="text-foreground mt-1 text-2xl font-bold">
+                {t("chooseLevel")}
+              </h2>
             </div>
           </div>
 
@@ -270,7 +292,8 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
             {PRACTICE_CEFR_LEVELS.map((levelOption) => {
               const levelSummary = selectedSummary[levelOption];
               const active = selectedLevel === levelOption;
-              const locked = levelSummary.unlockedLessons === 0 || levelSummary.words === 0;
+              const locked =
+                levelSummary.unlockedLessons === 0 || levelSummary.words === 0;
 
               return (
                 <Link
@@ -278,27 +301,37 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
                   href={
                     locked
                       ? "#"
-                      : withLocale(`/practice?mode=${selectedMode}&level=${levelOption}`)
+                      : withLocale(
+                          `/practice?mode=${selectedMode}&level=${levelOption}`
+                        )
                   }
                   aria-disabled={locked}
                   aria-current={active ? "true" : undefined}
                   className={cn(
-                    "relative min-h-28 rounded-2xl border bg-card p-4 transition duration-200",
-                    active && "border-primary bg-secondary/70 ring-2 ring-primary/15",
+                    "bg-card relative min-h-28 rounded-2xl border p-4 transition duration-200",
+                    active &&
+                      "border-primary bg-secondary/70 ring-primary/15 ring-2",
                     locked
                       ? "pointer-events-none opacity-45"
-                      : "hover:-translate-y-0.5 hover:shadow-lift"
+                      : "hover:shadow-lift hover:-translate-y-0.5"
                   )}
                 >
-                  <span className={cn("absolute right-4 top-4 h-2 w-2 rounded-full", levelDots[levelOption])} />
-                  <span className="text-xl font-bold text-foreground">{levelOption}</span>
-                  <span className="mt-1 block text-xs text-muted-foreground">
+                  <span
+                    className={cn(
+                      "absolute right-4 top-4 h-2 w-2 rounded-full",
+                      levelDots[levelOption]
+                    )}
+                  />
+                  <span className="text-foreground text-xl font-bold">
+                    {levelOption}
+                  </span>
+                  <span className="text-muted-foreground mt-1 block text-xs">
                     {t("openLessons", {
                       open: levelSummary.unlockedLessons,
                       total: levelSummary.lessons,
                     })}
                   </span>
-                  <span className="tabular mt-4 block text-xs font-semibold text-foreground/75">
+                  <span className="tabular text-foreground/75 mt-4 block text-xs font-semibold">
                     {t("wordCount", { count: levelSummary.words })}
                   </span>
                 </Link>
@@ -309,15 +342,25 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
               href={withLocale(`/practice?mode=${selectedMode}&level=mix`)}
               aria-current={selectedLevel === "mix" ? "true" : undefined}
               className={cn(
-                "relative min-h-28 rounded-2xl border bg-card p-4 transition duration-200 hover:-translate-y-0.5 hover:shadow-lift",
-                selectedLevel === "mix" && "border-primary bg-secondary/70 ring-2 ring-primary/15"
+                "bg-card hover:shadow-lift relative min-h-28 rounded-2xl border p-4 transition duration-200 hover:-translate-y-0.5",
+                selectedLevel === "mix" &&
+                  "border-primary bg-secondary/70 ring-primary/15 ring-2"
               )}
             >
-              <Shuffle className="absolute right-4 top-4 h-4 w-4 text-muted-foreground" aria-hidden="true" />
-              <span className="text-base font-bold text-foreground">{t("mixAll")}</span>
-              <span className="mt-1 block text-xs text-muted-foreground">{t("allLevels")}</span>
-              <span className="tabular mt-4 block text-xs font-semibold text-foreground/75">
-                {t("wordCount", { count: getPracticeWordCount(selectedSummary, "mix") })}
+              <Shuffle
+                className="text-muted-foreground absolute right-4 top-4 h-4 w-4"
+                aria-hidden="true"
+              />
+              <span className="text-foreground text-base font-bold">
+                {t("mixAll")}
+              </span>
+              <span className="text-muted-foreground mt-1 block text-xs">
+                {t("allLevels")}
+              </span>
+              <span className="tabular text-foreground/75 mt-4 block text-xs font-semibold">
+                {t("wordCount", {
+                  count: getPracticeWordCount(selectedSummary, "mix"),
+                })}
               </span>
             </Link>
           </div>
@@ -325,27 +368,29 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
 
         <section className="mt-9">
           <div className="mb-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-muted-foreground">
+            <p className="text-muted-foreground text-xs font-semibold uppercase tracking-[0.1em]">
               {t("step", { number: 3 })}
             </p>
-            <h2 className="mt-1 text-2xl font-bold text-foreground">{t("readyToStart")}</h2>
+            <h2 className="text-foreground mt-1 text-2xl font-bold">
+              {t("readyToStart")}
+            </h2>
           </div>
 
           <div className="surface-panel flex flex-col gap-5 p-5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex min-w-0 items-center gap-4">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-secondary text-secondary-foreground">
+              <span className="bg-secondary text-secondary-foreground grid h-11 w-11 shrink-0 place-items-center rounded-xl">
                 <Play className="h-5 w-5 fill-current" aria-hidden="true" />
               </span>
               <div className="min-w-0">
-                <p className="text-xs font-semibold uppercase tracking-[0.08em] text-primary">
+                <p className="text-primary text-xs font-semibold uppercase tracking-[0.08em]">
                   {t("yourSelection")}
                 </p>
-                <p className="mt-1 font-semibold text-foreground">
+                <p className="text-foreground mt-1 font-semibold">
                   {t(selectedModeConfig.titleKey)}
-                  <span className="mx-2 text-border">•</span>
+                  <span className="text-border mx-2">•</span>
                   {selectedLevel === "mix" ? t("allLevels") : selectedLevel}
-                  <span className="mx-2 text-border">•</span>
-                  <span className="tabular font-medium text-muted-foreground">
+                  <span className="text-border mx-2">•</span>
+                  <span className="tabular text-muted-foreground font-medium">
                     {t("wordCount", { count: selectedWordCount })}
                   </span>
                 </p>
@@ -355,21 +400,21 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
             {selectionAvailable ? (
               <Link
                 href={withLocale(startHref)}
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:-translate-y-0.5 hover:bg-brand-dark"
+                className="bg-primary text-primary-foreground hover:bg-brand-dark inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold shadow-sm transition hover:-translate-y-0.5"
               >
                 {t("startPractice")}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             ) : (
-              <span className="inline-flex min-h-11 cursor-not-allowed items-center justify-center rounded-xl bg-muted px-5 py-3 text-sm font-semibold text-muted-foreground">
+              <span className="bg-muted text-muted-foreground inline-flex min-h-11 cursor-not-allowed items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold">
                 {t("selectionUnavailable")}
               </span>
             )}
           </div>
         </section>
 
-        <div className="mt-10 flex items-center gap-2 border-t pt-6 text-xs text-muted-foreground">
-          <Sparkles className="h-4 w-4 text-primary" aria-hidden="true" />
+        <div className="text-muted-foreground mt-10 flex items-center gap-2 border-t pt-6 text-xs">
+          <Sparkles className="text-primary h-4 w-4" aria-hidden="true" />
           {t("progressSaved")}
         </div>
       </div>

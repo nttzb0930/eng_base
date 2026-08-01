@@ -7,11 +7,7 @@ import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink
 import { withLocale } from "@/app/i18n/paths";
 import { cn } from "@/app/utils/cn";
 
-export type GeneralEnglishSection =
-  | "cefr"
-  | "topics"
-  | "practice"
-  | "reading";
+export type GeneralEnglishSection = "cefr" | "topics" | "practice" | "reading";
 
 type GeneralEnglishSectionNavProps = {
   active: GeneralEnglishSection;
