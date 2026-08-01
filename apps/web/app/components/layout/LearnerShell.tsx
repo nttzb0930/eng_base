@@ -90,7 +90,7 @@ export function LearnerShell({ children, mode = "main" }: LearnerShellProps) {
 
   if (mode === "session") {
     return (
-      <div className="flex h-dvh min-h-0 w-full flex-col overflow-hidden">
+      <div className="flex h-dvh min-h-0 w-full flex-col overflow-y-auto overflow-x-hidden">
         {children}
       </div>
     );

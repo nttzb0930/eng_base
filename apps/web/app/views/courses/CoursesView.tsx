@@ -135,15 +135,25 @@ export function CoursesView({ onSelectMode }: CoursesViewProps) {
                       </p>
                     </div>
 
-                    <button
-                      type="button"
-                      disabled={pending}
-                      onClick={() => onClick(course.id)}
-                      className="mt-5 inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-4 text-xs font-semibold text-white transition-colors hover:bg-emerald-700 disabled:cursor-wait disabled:opacity-60"
-                    >
-                      {active ? t("continue") : t("startCertificate")}
-                      <ArrowRight className="h-3.5 w-3.5" />
-                    </button>
+                    {course.code === "toeic-600" ? (
+                      <Link
+                        href={withLocale("/learn/cert/toeic")}
+                        className="mt-5 inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-4 text-xs font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 active:translate-y-px"
+                      >
+                        {t("continue")}
+                        <ArrowRight className="h-3.5 w-3.5" />
+                      </Link>
+                    ) : (
+                      <button
+                        type="button"
+                        disabled={pending}
+                        onClick={() => onClick(course.id)}
+                        className="mt-5 inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-4 text-xs font-semibold text-white transition-colors hover:bg-emerald-700 disabled:cursor-wait disabled:opacity-60"
+                      >
+                        {active ? t("continue") : t("startCertificate")}
+                        <ArrowRight className="h-3.5 w-3.5" />
+                      </button>
+                    )}
                   </article>
                 );
               })}

@@ -7,9 +7,17 @@ test("browser API transport preserves the previous ISO date revival behavior", (
   const value = reviveApiDates({
     nextReviewAt: "2026-07-17T01:02:03.000Z",
     nested: [{ createdAt: "2026-07-16T01:02:03Z", label: "A1" }],
-  }) as { nextReviewAt: Date; nested: Array<{ createdAt: Date; label: string }> };
+  }) as {
+    nextReviewAt: Date;
+    nested: Array<{ createdAt: Date; label: string }>;
+  };
 
   assert.equal(value.nextReviewAt instanceof Date, true);
   assert.equal(value.nested[0]?.createdAt instanceof Date, true);
   assert.equal(value.nested[0]?.label, "A1");
+});
+
+test("browser API transport preserves authenticated media Blobs", () => {
+  const blob = new Blob(["audio"], { type: "audio/mpeg" });
+  assert.equal(reviveApiDates(blob), blob);
 });

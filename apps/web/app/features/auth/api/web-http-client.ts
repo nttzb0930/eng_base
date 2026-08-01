@@ -27,6 +27,7 @@ export function setOnUnauthenticated(callback: () => void) {
 
 export function reviveApiDates(value: unknown): unknown {
   if (typeof value === "string" && ISO_DATE.test(value)) return new Date(value);
+  if (typeof Blob !== "undefined" && value instanceof Blob) return value;
   if (Array.isArray(value)) return value.map(reviveApiDates);
   if (value && typeof value === "object") {
     return Object.fromEntries(
