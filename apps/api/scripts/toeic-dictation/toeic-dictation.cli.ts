@@ -4,6 +4,7 @@ import { join, resolve } from "node:path";
 import { z } from "zod";
 
 import { createDautoeicToeicDictationSource } from "./dautoeic-toeic-dictation-source.js";
+import { createFileToeicDictationStorage } from "./toeic-dictation.storage.js";
 
 const profileSchema = z
   .object({
@@ -33,6 +34,10 @@ export function loadToeicDictationRuntime(argv: string[]) {
     throw new Error("--collection must be 2026 during Phase 1");
   }
   const repositoryRoot = resolve(__dirname, "../../../..");
+  const approvedSha = argument(argv, "approved-sha");
+  if (approvedSha !== undefined && !/^[a-f0-9]{64}$/u.test(approvedSha)) {
+    throw new Error("--approved-sha must be a lowercase SHA-256");
+  }
   const profile = profileSchema.parse(
     JSON.parse(
       readFileSync(
@@ -62,6 +67,8 @@ export function loadToeicDictationRuntime(argv: string[]) {
     repositoryRoot,
     profile,
     collectionName: "Đề 2026",
+    approvedSha,
+    storage: createFileToeicDictationStorage(repositoryRoot),
     inventoryConcurrency: profile.inventoryConcurrency,
     source: createDautoeicToeicDictationSource({
       baseUrl: profile.apiBaseUrl,

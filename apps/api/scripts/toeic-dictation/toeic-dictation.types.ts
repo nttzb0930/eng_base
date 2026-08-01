@@ -35,6 +35,14 @@ export type ToeicDictationSource = {
   listSets(collectionName: string): Promise<ToeicDictationSetRow[]>;
   listItems(sourceSetId: string): Promise<ToeicDictationItemRow[]>;
   inspectMedia(url: string): Promise<ToeicDictationMediaInspection>;
+  downloadMedia(
+    url: string,
+    offset: number
+  ): Promise<{
+    status: number;
+    bytes: Uint8Array;
+    contentType: string | null;
+  }>;
 };
 
 export type ToeicDictationInventorySource = Pick<
@@ -72,4 +80,47 @@ export type ToeicDictationInventory = {
   }>;
   inventorySha256: string;
   storageKey: string;
+};
+
+export type ToeicDictationStorage = {
+  readInventory(sha256: string): Promise<ToeicDictationInventory>;
+  writeInventory(value: ToeicDictationInventory): Promise<string>;
+  resolveMediaPath(
+    packageVersion: string,
+    mediaId: string,
+    contentType: string
+  ): string;
+  ensureMediaDirectory(path: string): Promise<void>;
+  downloadMedia(input: {
+    packageVersion: string;
+    mediaId: string;
+    contentType: string;
+    expectedBytes: number | null;
+    expectedSha256?: string;
+    request(offset: number): Promise<{
+      status: number;
+      bytes: Uint8Array;
+      contentType: string | null;
+    }>;
+  }): Promise<{
+    absolutePath: string;
+    storagePath: string;
+    sha256: string;
+    bytes: number;
+    contentType: string;
+    reused: boolean;
+  }>;
+  writePackageFile(
+    packageVersion: string,
+    name: string,
+    value: unknown
+  ): Promise<void>;
+  readPackageFile(packageVersion: string, name: string): Promise<unknown>;
+};
+
+export type ToeicDictationDownloadSummary = {
+  completed: string[];
+  resumed: string[];
+  failed: Array<{ mediaUrl: string; category: string }>;
+  downloadedMediaCount: number;
 };

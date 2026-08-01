@@ -211,5 +211,24 @@ export function createDautoeicToeicDictationSource(
           response.headers.get("content-type")?.split(";")[0]?.trim() || null,
       };
     },
+
+    async downloadMedia(value, offset) {
+      const url = assertAllowedUrl(value, hosts, baseUrl);
+      const response = await config.request(url, {
+        redirect: "follow",
+        signal: AbortSignal.timeout(config.timeoutMs),
+        headers: offset > 0 ? { Range: `bytes=${offset}-` } : undefined,
+      });
+      if (response.url) assertAllowedUrl(response.url, hosts);
+      if (!response.ok) {
+        throw new Error(`TOEIC Dictation media request failed (${response.status})`);
+      }
+      return {
+        status: response.status,
+        bytes: new Uint8Array(await response.arrayBuffer()),
+        contentType:
+          response.headers.get("content-type")?.split(";")[0]?.trim() || null,
+      };
+    },
   };
 }

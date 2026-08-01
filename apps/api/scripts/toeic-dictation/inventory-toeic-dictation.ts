@@ -1,6 +1,3 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { join } from "node:path";
-
 import { buildToeicDictationInventory } from "./toeic-dictation.inventory.js";
 import { loadToeicDictationRuntime } from "./toeic-dictation.cli.js";
 
@@ -12,22 +9,11 @@ async function main() {
     observedAt: new Date().toISOString(),
     mediaConcurrency: runtime.inventoryConcurrency,
   });
-  const directory = join(
-    runtime.repositoryRoot,
-    "var",
-    "licensed-content",
-    "dautoeic",
-    "toeic-dictation",
-    "2026",
-    "inventories"
-  );
-  await mkdir(directory, { recursive: true });
-  const filePath = join(directory, `${inventory.inventorySha256}.json`);
-  await writeFile(filePath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
+  const storageKey = await runtime.storage.writeInventory(inventory);
   console.log(
     JSON.stringify(
       {
-        storageKey: inventory.storageKey,
+        storageKey,
         inventorySha256: inventory.inventorySha256,
         selectedSetCount: inventory.selectedSetCount,
         itemCount: inventory.itemCount,

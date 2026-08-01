@@ -109,3 +109,29 @@ test("dictation source rejects non-allowlisted media and source auth failures", 
     /not allowed/u
   );
 });
+
+test("dictation source downloads media with a byte range", async () => {
+  let range = "";
+  const source = createDautoeicToeicDictationSource({
+    baseUrl: "https://api.example",
+    authorization: "private",
+    allowedHosts: ["api.example", "media.example"],
+    timeoutMs: 1_000,
+    maxRetries: 0,
+    request: async (_input, init) => {
+      range = String(init?.headers && new Headers(init.headers).get("Range"));
+      return new Response(new Uint8Array([1, 2, 3]), {
+        status: 206,
+        headers: { "content-type": "audio/mpeg" },
+      });
+    },
+  });
+
+  const result = await source.downloadMedia(
+    "https://media.example/audio.mp3",
+    8
+  );
+  assert.equal(result.status, 206);
+  assert.equal(range, "bytes=8-");
+  assert.deepEqual([...result.bytes], [1, 2, 3]);
+});
