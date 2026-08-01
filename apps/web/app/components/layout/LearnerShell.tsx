@@ -34,7 +34,7 @@ function MainShellFallback() {
     <>
       <MobileHeader />
       <Header className="hidden lg:flex" />
-      <main id="main-content" className="min-h-dvh pt-16 lg:pt-[68px]">
+      <main id="main-content" className="min-h-dvh min-w-0">
         <div className="app-container py-6 sm:py-8 lg:py-10">
           {getMainPageSkeleton(pathname)}
         </div>
@@ -100,7 +100,7 @@ export function LearnerShell({ children, mode = "main" }: LearnerShellProps) {
     <>
       <MobileHeader />
       <Header className="hidden lg:flex" />
-      <main id="main-content" className="min-h-dvh pt-16 lg:pt-[68px]">
+      <main id="main-content" className="min-h-dvh min-w-0">
         <div className="app-container py-6 sm:py-8 lg:py-10">{children}</div>
       </main>
       <ScrollToTopButton />
