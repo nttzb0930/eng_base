@@ -1,43 +1,35 @@
 "use client";
 
-import { Award, GraduationCap, Tag } from "lucide-react";
+import { Award, Tag } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { withLocale } from "@/app/i18n/paths";
 import { cn } from "@/app/utils/cn";
 
 type DiscoveryTabsProps = {
-  active: "learn" | "topics" | "certs";
-  onSelectMode?: (mode: "learn" | "certs" | "topics") => void;
+  active: "learn" | "topics";
   learnLabel?: string;
   topicsLabel?: string;
-  certsLabel?: string;
   levelCount?: number;
   topicCount?: number;
-  certCount?: number;
 };
 
 const tabs = [
   { key: "learn", href: "/learn/level", Icon: Award },
-  { key: "certs", href: "/learn/cert", Icon: GraduationCap },
   { key: "topics", href: "/learn/topic", Icon: Tag },
 ] as const;
 
 export function DiscoveryTabs({
   active,
-  onSelectMode,
   learnLabel,
   topicsLabel,
-  certsLabel,
   levelCount,
   topicCount,
-  certCount = 0,
 }: DiscoveryTabsProps) {
   const t = useTranslations("topics");
 
   const fallbackLabels = {
     learn: t("byLevel"),
-    certs: t("byCert"),
     topics: t("byTopic"),
   };
 
@@ -51,47 +43,32 @@ export function DiscoveryTabs({
         const displayLabel =
           key === "learn"
             ? (learnLabel ?? fallbackLabels.learn)
-            : key === "topics"
-              ? (topicsLabel ?? fallbackLabels.topics)
-              : (certsLabel ?? fallbackLabels.certs);
+            : (topicsLabel ?? fallbackLabels.topics);
 
-        const count =
-          key === "learn"
-            ? levelCount
-            : key === "topics"
-              ? topicCount
-              : certCount;
+        const count = key === "learn" ? levelCount : topicCount;
 
         const getTabStyles = (
-          tabKey: "learn" | "certs" | "topics",
+          tabKey: "learn" | "topics",
           isSelected: boolean
         ) => {
           if (isSelected) {
             if (tabKey === "learn")
               return "bg-blue-600 text-white shadow-sm hover:bg-blue-700";
-            if (tabKey === "certs")
-              return "bg-emerald-600 text-white shadow-sm hover:bg-emerald-700";
             return "bg-orange-500 text-white shadow-sm hover:bg-orange-600";
           }
           if (tabKey === "learn") {
             return "text-muted-foreground hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-600 dark:hover:text-blue-400";
           }
-          if (tabKey === "certs") {
-            return "text-muted-foreground hover:bg-emerald-50 dark:hover:bg-emerald-950/50 hover:text-emerald-600 dark:hover:text-emerald-400";
-          }
           return "text-muted-foreground hover:bg-orange-50 dark:hover:bg-orange-950/50 hover:text-orange-600 dark:hover:text-orange-400";
         };
 
         const getBadgeStyles = (
-          tabKey: "learn" | "certs" | "topics",
+          tabKey: "learn" | "topics",
           isSelected: boolean
         ) => {
           if (isSelected) return "bg-white/20 text-white";
           if (tabKey === "learn") {
             return "bg-muted-foreground/10 text-muted-foreground group-hover:bg-blue-100 dark:group-hover:bg-blue-900/40 group-hover:text-blue-600 dark:group-hover:text-blue-400";
-          }
-          if (tabKey === "certs") {
-            return "bg-muted-foreground/10 text-muted-foreground group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/40 group-hover:text-emerald-600 dark:group-hover:text-emerald-400";
           }
           return "bg-muted-foreground/10 text-muted-foreground group-hover:bg-orange-100 dark:group-hover:bg-orange-900/40 group-hover:text-orange-600 dark:group-hover:text-orange-400";
         };
@@ -102,12 +79,6 @@ export function DiscoveryTabs({
             href={withLocale(href)}
             aria-current={selected ? "page" : undefined}
             prefetch={true}
-            onClick={(e) => {
-              if (onSelectMode) {
-                e.preventDefault();
-                onSelectMode(key);
-              }
-            }}
             className={cn(
               "group inline-flex min-h-10 cursor-pointer items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200",
               getTabStyles(key, selected)

@@ -34,7 +34,7 @@ test("learner views do not invent Certificate decks, counts, or memberships", ()
   assert.doesNotMatch(topicDetailSource, /certDistributionTitle/);
   assert.doesNotMatch(topicDetailSource, />\s*(IELTS|TOEIC)\s*</);
   assert.doesNotMatch(learnSource, />\s*IELTS\s*</);
-  assert.match(discoveryTabsSource, /certCount\s*=\s*0/);
+  assert.doesNotMatch(discoveryTabsSource, /\/learn\/cert/);
 });
 
 test("English and Vietnamese explain the truthful unavailable state", () => {

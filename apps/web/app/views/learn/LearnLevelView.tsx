@@ -23,10 +23,6 @@ import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
 
-type LearnLevelViewProps = {
-  onSelectMode?: (mode: "learn" | "certs" | "topics") => void;
-};
-
 function LearnLevelFeedback({
   title,
   description,
@@ -46,7 +42,7 @@ function LearnLevelFeedback({
   );
 }
 
-export function LearnLevelView({ onSelectMode }: LearnLevelViewProps) {
+export function LearnLevelView() {
   const t = useTranslations("learn");
   const nav = useTranslations("navigation");
   const topicsT = useTranslations("topics");
@@ -189,11 +185,7 @@ export function LearnLevelView({ onSelectMode }: LearnLevelViewProps) {
           </p>
         </header>
 
-        <DiscoveryTabs
-          active="learn"
-          levelCount={cefrSummary.levels.length}
-          onSelectMode={onSelectMode}
-        />
+        <DiscoveryTabs active="learn" levelCount={cefrSummary.levels.length} />
 
         <section className="mt-6">
           <div className="mb-4 flex items-end justify-between">
@@ -215,7 +207,9 @@ export function LearnLevelView({ onSelectMode }: LearnLevelViewProps) {
               const levelUnits = units.filter(
                 (unit) => unit.cefrLevel === levelProgress.level
               );
-              const active = levelUnits.some((unit) => unit.id === activeUnitId);
+              const active = levelUnits.some(
+                (unit) => unit.id === activeUnitId
+              );
               const targetUnit =
                 levelUnits.find((unit) => unit.id === activeUnitId) ??
                 levelUnits[0];

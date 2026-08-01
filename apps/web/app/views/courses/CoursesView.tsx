@@ -10,14 +10,9 @@ import { isCertificateCourse } from "@/app/features/courses/certificate-course";
 import { useCourseSelection } from "@/app/features/courses/hooks/use-course-selection";
 import { useCourses } from "@/app/features/courses/hooks/use-courses";
 import { useUserProgress } from "@/app/features/progress/hooks/use-user-progress";
-import { DiscoveryTabs } from "@/app/features/topics/components/DiscoveryTabs";
 import { withLocale } from "@/app/i18n/paths";
 
-type CoursesViewProps = {
-  onSelectMode?: (mode: "learn" | "certs" | "topics") => void;
-};
-
-export function CoursesView({ onSelectMode }: CoursesViewProps) {
+export function CoursesView() {
   const t = useTranslations("topics");
   const nav = useTranslations("navigation");
   const coursesQuery = useCourses();
@@ -62,12 +57,6 @@ export function CoursesView({ onSelectMode }: CoursesViewProps) {
             {t("certDescription")}
           </p>
         </header>
-
-        <DiscoveryTabs
-          active="certs"
-          certCount={certificateCourses.length}
-          onSelectMode={onSelectMode}
-        />
 
         <section aria-labelledby="certificate-courses-title" className="mt-4">
           <div className="mb-4">

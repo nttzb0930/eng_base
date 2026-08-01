@@ -27,9 +27,7 @@ test("Learning presents General English and TOEIC as primary paths", () => {
 });
 
 test("TOEIC browsing views compose a shared local navigation", () => {
-  const navigation = read(
-    "app/features/toeic/components/ToeicSectionNav.tsx"
-  );
+  const navigation = read("app/features/toeic/components/ToeicSectionNav.tsx");
 
   assert.match(navigation, /aria-current/);
   assert.match(navigation, /\/learn\/cert\/toeic\/listening/);
@@ -110,3 +108,13 @@ test("Discovery navigation localizes its accessible label", () => {
   assert.doesNotMatch(source, /aria-label="Ch/);
 });
 
+test("General English discovery excludes the separate TOEIC learning path", () => {
+  const discovery = read("app/features/topics/components/DiscoveryTabs.tsx");
+  const courses = read("app/views/courses/CoursesView.tsx");
+
+  assert.match(discovery, /href:\s*"\/learn\/level"/);
+  assert.match(discovery, /href:\s*"\/learn\/topic"/);
+  assert.doesNotMatch(discovery, /href:\s*"\/learn\/cert"/);
+  assert.doesNotMatch(discovery, /key:\s*"certs"/);
+  assert.doesNotMatch(courses, /<DiscoveryTabs/);
+});

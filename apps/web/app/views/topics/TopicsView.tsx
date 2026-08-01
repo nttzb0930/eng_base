@@ -101,11 +101,7 @@ function getTopicIcon(slug: string, title: string, index: number) {
 
 type FilterStatus = "all" | "learning" | "mastered" | "weak";
 
-type TopicsViewProps = {
-  onSelectMode?: (mode: "learn" | "certs" | "topics") => void;
-};
-
-export function TopicsView({ onSelectMode }: TopicsViewProps) {
+export function TopicsView() {
   const t = useTranslations("topics");
   const nav = useTranslations("navigation");
   const router = useRouter();
@@ -226,11 +222,7 @@ export function TopicsView({ onSelectMode }: TopicsViewProps) {
           </p>
         </header>
 
-        <DiscoveryTabs
-          active="topics"
-          topicCount={topics.length}
-          onSelectMode={onSelectMode}
-        />
+        <DiscoveryTabs active="topics" topicCount={topics.length} />
 
         {/* Filter chips & Search bar */}
         <div className="mb-7 mt-6 flex flex-wrap items-center gap-3">
