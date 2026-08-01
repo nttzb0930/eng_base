@@ -118,3 +118,65 @@ test("General English discovery excludes the separate TOEIC learning path", () =
   assert.doesNotMatch(discovery, /key:\s*"certs"/);
   assert.doesNotMatch(courses, /<DiscoveryTabs/);
 });
+
+test("General English browsing views compose one shared local navigation", () => {
+  const navigation = read(
+    "app/features/general-english/components/GeneralEnglishSectionNav.tsx"
+  );
+
+  for (const href of [
+    "/learn/level",
+    "/learn/topic",
+    "/practice",
+    "/reading",
+  ]) {
+    assert.match(navigation, new RegExp(`href: "${href}"`));
+  }
+  assert.match(navigation, /aria-current/);
+
+  for (const [view, active] of [
+    ["app/views/learn/LearnLevelView.tsx", "cefr"],
+    ["app/views/topics/TopicsView.tsx", "topics"],
+    ["app/views/practice/PracticeView.tsx", "practice"],
+    ["app/views/reading/ReadingListView.tsx", "reading"],
+  ] as const) {
+    const source = read(view);
+    assert.match(source, /GeneralEnglishSectionNav/, `${view} imports nav`);
+    assert.match(
+      source,
+      new RegExp(`active="${active}"`),
+      `${view} selects ${active}`
+    );
+  }
+});
+
+test("global navigation delegates Practice and Reading to General English", () => {
+  const header = read("app/components/navigation/Header.tsx");
+  const sidebar = read("app/components/navigation/Sidebar.tsx");
+  const learn = read("app/views/learn/LearnView.tsx");
+
+  assert.doesNotMatch(header, /label: t\("practice"\), href: "\/practice"/);
+  assert.doesNotMatch(header, /label: t\("reading"\), href: "\/reading"/);
+  assert.doesNotMatch(sidebar, /href=\{withLocale\("\/practice"\)\}/);
+  assert.doesNotMatch(sidebar, /href=\{withLocale\("\/reading"\)\}/);
+  assert.match(header, /activePrefixes/);
+  assert.match(learn, /href=\{withLocale\("\/practice"\)\}/);
+  assert.match(learn, /href=\{withLocale\("\/reading"\)\}/);
+});
+
+test("General English local navigation copy is synchronized", () => {
+  for (const locale of ["en", "vi"] as const) {
+    const catalog = messages(locale);
+    const navigation = catalog.learn.generalNavigation as
+      | Record<string, unknown>
+      | undefined;
+
+    for (const key of ["label", "cefr", "topics", "practice", "reading"]) {
+      assert.equal(
+        typeof navigation?.[key],
+        "string",
+        `${locale}.learn.generalNavigation.${key}`
+      );
+    }
+  }
+});
