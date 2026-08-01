@@ -513,7 +513,7 @@ export function ToeicDictationSessionView({
                                   [segment.wordIndex ?? -1]: event.target.value,
                                 }))
                               }
-                              className="mx-1 inline-block h-9 w-16 rounded-md border-0 bg-slate-200 px-2 text-center text-sm shadow-none placeholder:text-transparent focus-visible:bg-slate-200 focus-visible:ring-2 focus-visible:ring-sky-500 dark:bg-slate-800 dark:focus-visible:bg-slate-800"
+                              className="mx-1 inline-block h-9 w-16 rounded border-0 bg-slate-200 px-2 text-center text-sm shadow-none placeholder:text-transparent focus-visible:bg-slate-200 focus-visible:ring-2 focus-visible:ring-sky-500 dark:bg-slate-800 dark:focus-visible:bg-slate-800"
                             />
                           );
                         }
@@ -555,10 +555,10 @@ export function ToeicDictationSessionView({
                             if (result) setRevealedCount(count);
                             else setHintCount(count as 1 | 2 | 3);
                           }}
-                          className={`rounded-md border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                          className={`inline-flex items-center justify-center gap-1 rounded-md border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-slate-200 bg-white text-muted-foreground hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700 dark:border-slate-700 dark:bg-transparent") : hintCount === count ? "border-sky-300 bg-sky-50 text-sky-700" : "border-slate-200 bg-white text-muted-foreground hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700 dark:border-slate-700 dark:bg-transparent"}`}
                         >
                           <Eye
-                            className="mr-1 h-3.5 w-3.5"
+                            className="h-3.5 w-3.5"
                             aria-hidden="true"
                           />
                           {t("revealWords", { count })}
@@ -570,9 +570,9 @@ export function ToeicDictationSessionView({
                           if (result) setRevealedCount(result.words.length);
                           else setHintCount("all");
                         }}
-                        className={`rounded-md border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background") : hintCount === "all" ? "border-sky-300 bg-sky-50 text-sky-700" : "border-input text-muted-foreground hover:bg-background"}`}
+                        className={`inline-flex items-center justify-center gap-1 rounded-md border px-3 py-1.5 text-xs font-semibold ${result ? (revealedCount >= result.words.length ? "border-sky-300 bg-sky-50 text-sky-700" : "border-slate-200 bg-white text-muted-foreground hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700 dark:border-slate-700 dark:bg-transparent") : hintCount === "all" ? "border-sky-300 bg-sky-50 text-sky-700" : "border-slate-200 bg-white text-muted-foreground hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700 dark:border-slate-700 dark:bg-transparent"}`}
                       >
-                        <Eye className="mr-1 h-3.5 w-3.5" aria-hidden="true" />
+                        <Eye className="h-3.5 w-3.5" aria-hidden="true" />
                         {t("revealAll")}
                       </button>
                       <button
@@ -583,7 +583,7 @@ export function ToeicDictationSessionView({
                           setHintCount(0);
                           setRevealedCount(0);
                         }}
-                        className="text-muted-foreground hover:bg-background inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-xs font-semibold"
+                        className="text-muted-foreground hover:bg-sky-50 hover:text-sky-700 inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-xs font-semibold"
                       >
                         <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
                         {t("reset")}
