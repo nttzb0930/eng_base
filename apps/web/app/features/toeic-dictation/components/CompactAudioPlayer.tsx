@@ -23,7 +23,6 @@ type Props = {
   src: string;
   playLabel: string;
   pauseLabel: string;
-  restartLabel: string;
   progressLabel: string;
   volumeLabel: string;
   volumeProgressLabel: string;
@@ -45,7 +44,6 @@ export function CompactAudioPlayer({
   src,
   playLabel,
   pauseLabel,
-  restartLabel,
   progressLabel,
   volumeLabel,
   volumeProgressLabel,
@@ -59,14 +57,13 @@ export function CompactAudioPlayer({
   const audioRef = useRef<HTMLAudioElement>(null);
   const replayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const replayRemainingRef = useRef(0);
+  const replayDelayRef = useRef(1);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
   const [replayOpen, setReplayOpen] = useState(false);
-  const [replayCount, setReplayCount] = useState(3);
-  const [replayDelay, setReplayDelay] = useState(1);
   const [draftReplayCount, setDraftReplayCount] = useState(3);
   const [draftReplayDelay, setDraftReplayDelay] = useState(1);
 
@@ -95,7 +92,7 @@ export function CompactAudioPlayer({
         audio.currentTime = 0;
         setCurrentTime(0);
         void audio.play().catch(() => setPlaying(false));
-      }, replayDelay * 1000);
+      }, replayDelayRef.current * 1000);
     };
 
     audio.addEventListener("timeupdate", syncTime);
@@ -112,7 +109,7 @@ export function CompactAudioPlayer({
       audio.removeEventListener("pause", syncPlaying);
       audio.removeEventListener("ended", handleEnded);
     };
-  }, [replayDelay, src]);
+  }, [src]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -147,20 +144,20 @@ export function CompactAudioPlayer({
     }
   };
 
-  const restart = () => {
+  const startReplay = (count: number) => {
     const audio = audioRef.current;
     if (!audio) return;
     clearReplayTimer();
-    replayRemainingRef.current = replayCount;
+    replayRemainingRef.current = Math.max(0, count - 1);
     audio.currentTime = 0;
     setCurrentTime(0);
     void audio.play().catch(() => setPlaying(false));
   };
 
   const applyReplaySettings = () => {
-    setReplayCount(draftReplayCount);
-    setReplayDelay(draftReplayDelay);
+    replayDelayRef.current = draftReplayDelay;
     setReplayOpen(false);
+    startReplay(draftReplayCount);
   };
 
   const volumePercent = Math.round((muted ? 0 : volume) * 100);
@@ -337,17 +334,6 @@ export function CompactAudioPlayer({
                   onClick={applyReplaySettings}
                 >
                   {replayApplyLabel}
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="h-9 w-full rounded-md"
-                  onClick={() => {
-                    setReplayOpen(false);
-                    restart();
-                  }}
-                >
-                  {restartLabel}
                 </Button>
               </div>
             </div>

@@ -408,7 +408,6 @@ export function ToeicDictationSessionView({
                       src={audioUrl}
                       playLabel={t("play")}
                       pauseLabel={t("pause")}
-                      restartLabel={t("restart")}
                       progressLabel={t("audioProgress")}
                       volumeLabel={t("volume")}
                       volumeProgressLabel={t("volumeProgress")}
