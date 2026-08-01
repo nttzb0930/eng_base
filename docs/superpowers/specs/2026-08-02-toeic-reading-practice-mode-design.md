@@ -208,7 +208,7 @@ Store answer and feedback snapshots so a later content replacement cannot rewrit
 
 ## Delivery slices
 
-1. Shared contracts, migration, repository boundary, and practice-session use cases.
+1. Shared contracts, migration, persistence mappers, and practice-session use cases.
 2. Practice APIs with ownership, version, grading, and idempotency tests.
 3. Part 5 practice UI end to end.
 4. Safe stimulus rendering and Part 6/7 workspace reuse.
