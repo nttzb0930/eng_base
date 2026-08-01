@@ -102,6 +102,18 @@ test("maps authenticated lesson rows without exposing source html", async () => 
         html_content: "<script>unsafe()</script>",
         order_index: 1,
       },
+      {
+        id: "lesson-placeholder",
+        subtopic_id: "subtopic-1",
+        title_en: "Future lesson",
+        title_vi: "Bài học chưa có nội dung",
+        content_type: "structured_json",
+        theory_content_en: null,
+        theory_content_vi: null,
+        lesson_content_json: null,
+        html_content: null,
+        order_index: 2,
+      },
     ]);
   };
   const source = createDautoeicGrammarSource({

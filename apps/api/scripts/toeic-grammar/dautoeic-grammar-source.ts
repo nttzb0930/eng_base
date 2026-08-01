@@ -160,6 +160,15 @@ function mapLesson(value: unknown): ToeicGrammarLesson {
   };
 }
 
+function hasSupportedLessonContent(lesson: ToeicGrammarLesson) {
+  return (
+    lesson.theoryContentEn !== null ||
+    lesson.theoryContentVi !== null ||
+    lesson.lessonContentJson !== null ||
+    lesson.htmlContent !== null
+  );
+}
+
 export function createDautoeicGrammarSource(
   config: SourceConfig
 ): ToeicGrammarSource {
@@ -288,7 +297,7 @@ export function createDautoeicGrammarSource(
             order: "order_index",
           },
         });
-        lessons.push(...rows.map(mapLesson));
+        lessons.push(...rows.map(mapLesson).filter(hasSupportedLessonContent));
       }
       return lessons;
     },

@@ -61,4 +61,5 @@ test("Grammar lesson route stays thin and renders source content safely", () => 
   assert.match(loading, /ToeicGrammarLessonSkeleton/);
   assert.doesNotMatch(content, /dangerouslySetInnerHTML/);
   assert.match(content, /theoryContentVi/);
+  assert.match(content, /whitespace-pre-line/);
 });

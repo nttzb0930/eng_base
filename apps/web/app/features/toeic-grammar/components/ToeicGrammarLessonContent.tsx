@@ -50,7 +50,7 @@ export function ToeicGrammarLessonContent({
               </h2>
             </header>
             {body ? (
-              <div className="text-foreground/90 mt-5 space-y-4 text-[15px] leading-7">
+              <div className="text-foreground/90 mt-5 space-y-4 whitespace-pre-line text-[15px] leading-7">
                 {paragraphs(body).map((paragraph, index) => (
                   <p key={`${lesson.target}-${index}`}>{paragraph}</p>
                 ))}
