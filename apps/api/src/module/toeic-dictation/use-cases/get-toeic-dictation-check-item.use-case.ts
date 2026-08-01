@@ -14,7 +14,8 @@ export class GetToeicDictationCheckItemUseCase {
   async execute(
     itemId: number,
     hidePercent: 30 | 50 | 100,
-    revealCount = 0
+    revealCount = 0,
+    revealWordIndexes: readonly number[] = []
   ): Promise<ToeicDictationCheckItem> {
     const item = await this.prisma.toeic_dictation_items.findFirst({
       where: {
@@ -40,7 +41,8 @@ export class GetToeicDictationCheckItemUseCase {
       segments: revealToeicDictationCheckSegments(
         item.transcript,
         segments,
-        revealCount
+        revealCount,
+        revealWordIndexes
       ),
     };
   }

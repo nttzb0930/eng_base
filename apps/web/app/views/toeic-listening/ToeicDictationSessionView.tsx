@@ -17,7 +17,6 @@ import { useEffect, useMemo, useState } from "react";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
-import { Input } from "@/app/components/ui/input";
 import { CompactAudioPlayer } from "@/app/features/toeic-dictation/components/CompactAudioPlayer";
 import {
   useSubmitToeicDictation,
@@ -59,11 +58,11 @@ export function ToeicDictationSessionView({
   const progressQuery = useToeicDictationProgress(setId);
   const [index, setIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
-  const [checkAnswers, setCheckAnswers] = useState<Record<number, string>>({});
   const [result, setResult] = useState<ToeicDictationSubmitResult | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [hidePercent, setHidePercent] = useState<30 | 50 | 100>(50);
   const [hintCount, setHintCount] = useState<ToeicDictationRevealCount>(0);
+  const [revealedWordIndexes, setRevealedWordIndexes] = useState<number[]>([]);
   const [revealedCount, setRevealedCount] = useState(0);
   const submit = useSubmitToeicDictation();
   const item = setQuery.data?.items[index];
@@ -71,7 +70,8 @@ export function ToeicDictationSessionView({
   const checkQuery = useToeicDictationCheckItem(
     item?.id ?? 0,
     hidePercent,
-    hintCount
+    hintCount,
+    revealedWordIndexes
   );
   const fullQuery = useToeicDictationFullItem(item?.id ?? 0, mode === "full");
   const progressByItem = useMemo(
@@ -102,11 +102,12 @@ export function ToeicDictationSessionView({
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setTypedText("");
-    setCheckAnswers({});
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResult(null);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setHintCount(0);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setRevealedWordIndexes([]);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setRevealedCount(0);
   }, [item?.id]);
@@ -169,13 +170,7 @@ export function ToeicDictationSessionView({
   }
 
   const saved = progressByItem.get(item.id);
-  const checkText = (checkQuery.data?.segments ?? [])
-    .filter((segment) => segment.hidden)
-    .map(
-      (segment) => segment.text ?? checkAnswers[segment.wordIndex ?? -1] ?? ""
-    )
-    .join(" ");
-  const submissionText = mode === "check" ? checkText : typedText;
+  const submissionText = typedText;
   const onSubmit = () => {
     if (!submissionText.trim() || submit.isPending) return;
     submit.mutate(
@@ -187,13 +182,12 @@ export function ToeicDictationSessionView({
           typedText: submissionText,
           submissionKey: crypto.randomUUID(),
           mode,
-          hidePercent: mode === "check" ? hidePercent : undefined,
+          hidePercent: undefined,
         },
       },
       {
         onSuccess: (nextResult) => {
           setResult(nextResult);
-          if (mode === "check") setRevealedCount(nextResult.words.length);
         },
       }
     );
@@ -456,9 +450,9 @@ export function ToeicDictationSessionView({
                           type="button"
                           onClick={() => {
                             setHidePercent(value as 30 | 50 | 100);
-                            setCheckAnswers({});
                             setResult(null);
                             setHintCount(0);
+                            setRevealedWordIndexes([]);
                             setRevealedCount(0);
                           }}
                           className={`rounded-md px-2.5 py-1.5 transition-colors ${hidePercent === value ? "bg-slate-800 text-white" : "text-muted-foreground hover:bg-muted"}`}
@@ -490,7 +484,7 @@ export function ToeicDictationSessionView({
                           return (
                             <span
                               key={segment.segmentIndex}
-                              className="mx-1 inline-flex min-h-9 items-center rounded-md bg-emerald-100 px-2 text-sm font-medium text-emerald-700"
+                              className="mx-1 inline-flex min-h-9 items-center rounded bg-emerald-100 px-2 text-sm font-medium text-emerald-700"
                             >
                               {segment.text}
                             </span>
@@ -499,21 +493,22 @@ export function ToeicDictationSessionView({
 
                         if (!result) {
                           return (
-                            <Input
+                            <button
                               key={segment.segmentIndex}
+                              type="button"
                               aria-label={t("checkWord", {
                                 number: (segment.wordIndex ?? 0) + 1,
                               })}
-                              value={
-                                checkAnswers[segment.wordIndex ?? -1] ?? ""
-                              }
-                              onChange={(event) =>
-                                setCheckAnswers((current) => ({
-                                  ...current,
-                                  [segment.wordIndex ?? -1]: event.target.value,
-                                }))
-                              }
-                              className="mx-1 inline-block h-9 w-16 rounded border-0 bg-slate-200 px-2 text-center text-sm shadow-none placeholder:text-transparent focus-visible:bg-slate-200 focus-visible:ring-2 focus-visible:ring-sky-500 dark:bg-slate-800 dark:focus-visible:bg-slate-800"
+                              disabled={segment.wordIndex === null}
+                              onClick={() => {
+                                if (segment.wordIndex === null) return;
+                                setRevealedWordIndexes((current) =>
+                                  current.includes(segment.wordIndex!)
+                                    ? current
+                                    : [...current, segment.wordIndex!]
+                                );
+                              }}
+                              className="mx-1 inline-flex h-9 w-16 items-center justify-center rounded border-0 bg-slate-200 text-sm shadow-none transition-colors hover:bg-slate-300 focus-visible:ring-2 focus-visible:ring-sky-500 disabled:cursor-not-allowed dark:bg-slate-800 dark:hover:bg-slate-700"
                             />
                           );
                         }
@@ -533,7 +528,7 @@ export function ToeicDictationSessionView({
                         return (
                           <span
                             key={segment.segmentIndex}
-                            className={`mx-1 inline-flex min-h-9 items-center rounded-md px-2 text-sm font-medium ${isRevealed ? (feedback?.status === "CORRECT" ? "bg-emerald-100 text-emerald-700" : "bg-rose-100 text-rose-700") : "bg-muted text-muted-foreground"}`}
+                            className={`mx-1 inline-flex min-h-9 items-center rounded px-2 text-sm font-medium ${isRevealed ? (feedback?.status === "CORRECT" ? "bg-emerald-100 text-emerald-700" : "bg-rose-100 text-rose-700") : "bg-muted text-muted-foreground"}`}
                           >
                             {isRevealed ? (feedback?.expected ?? "—") : "•••"}
                           </span>
@@ -578,9 +573,9 @@ export function ToeicDictationSessionView({
                       <button
                         type="button"
                         onClick={() => {
-                          setCheckAnswers({});
                           setResult(null);
                           setHintCount(0);
+                          setRevealedWordIndexes([]);
                           setRevealedCount(0);
                         }}
                         className="text-muted-foreground hover:bg-sky-50 hover:text-sky-700 inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-xs font-semibold"
@@ -589,17 +584,6 @@ export function ToeicDictationSessionView({
                         {t("reset")}
                       </button>
                     </div>
-                    {!result && (
-                      <Button
-                        type="button"
-                        disabled={!submissionText.trim() || submit.isPending}
-                        onClick={onSubmit}
-                        className="mt-4 min-h-11 w-full gap-2"
-                      >
-                        {submit.isPending ? t("checking") : t("submit")}
-                        <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
-                      </Button>
-                    )}
                     <p className="text-muted-foreground mt-4 text-center text-xs">
                       {t("keyboardHint")}
                     </p>

@@ -73,6 +73,18 @@ test("dictation check reveals only the requested number of hidden words", () => 
   );
 });
 
+test("dictation check reveals a selected hidden word without exposing the others", () => {
+  const transcript = "The quick brown fox jumps.";
+  const segments = buildToeicDictationCheckSegments(transcript, 10, 100);
+  const revealed = revealToeicDictationCheckSegments(transcript, segments, 0, [3]);
+
+  assert.equal(revealed[6]?.text, "fox");
+  assert.equal(
+    revealed.filter((segment) => segment.hidden && segment.text !== null).length,
+    1
+  );
+});
+
 test("dictation check grades the hidden words only", () => {
   const result = gradeToeicDictationCheck("The quick brown fox jumps.", "The quick brown fox jumps", 10, 100);
   assert.equal(result.accuracy, 100);

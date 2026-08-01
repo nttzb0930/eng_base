@@ -47,11 +47,25 @@ export function useToeicDictationProgress(setId: number) {
 export function useToeicDictationCheckItem(
   itemId: number,
   hidePercent: 30 | 50 | 100,
-  reveal: ToeicDictationRevealCount = 0
+  reveal: ToeicDictationRevealCount = 0,
+  revealWordIndexes: readonly number[] = []
 ) {
   return useQuery({
-    queryKey: [...toeicDictationKeys.all, "check", itemId, hidePercent, reveal],
-    queryFn: () => toeicDictationApi.checkItem(itemId, hidePercent, reveal),
+    queryKey: [
+      ...toeicDictationKeys.all,
+      "check",
+      itemId,
+      hidePercent,
+      reveal,
+      revealWordIndexes.join(","),
+    ],
+    queryFn: () =>
+      toeicDictationApi.checkItem(
+        itemId,
+        hidePercent,
+        reveal,
+        revealWordIndexes
+      ),
     enabled: Number.isInteger(itemId) && itemId > 0,
   });
 }

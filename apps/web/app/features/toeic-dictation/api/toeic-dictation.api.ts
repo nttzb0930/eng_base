@@ -74,12 +74,17 @@ export function createToeicDictationApi(http: ToeicDictationHttp) {
     async checkItem(
       itemId: number,
       hidePercent: 30 | 50 | 100 = 50,
-      reveal: ToeicDictationRevealCount = 0
+      reveal: ToeicDictationRevealCount = 0,
+      revealWordIndexes: readonly number[] = []
     ) {
       const revealQuery = reveal === 0 ? "" : `&reveal=${reveal}`;
+      const wordIndexesQuery =
+        revealWordIndexes.length > 0
+          ? `&revealWordIndexes=${revealWordIndexes.join(",")}`
+          : "";
       return (
         await http.get<ToeicDictationCheckItem>(
-          `/toeic/dictation/items/${itemId}/check?hide=${hidePercent}${revealQuery}`
+          `/toeic/dictation/items/${itemId}/check?hide=${hidePercent}${revealQuery}${wordIndexesQuery}`
         )
       ).data;
     },

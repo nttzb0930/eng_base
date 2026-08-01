@@ -152,14 +152,18 @@ export function buildToeicDictationCheckSegments(
 export function revealToeicDictationCheckSegments(
   transcript: string,
   segments: ToeicDictationCheckSegment[],
-  revealCount: number
+  revealCount: number,
+  revealWordIndexes: readonly number[] = []
 ): ToeicDictationCheckSegment[] {
-  if (revealCount <= 0) return segments;
+  if (revealCount <= 0 && revealWordIndexes.length === 0) return segments;
   const tokens = tokenizeTranscript(transcript);
+  const selectedWordIndexes = new Set(revealWordIndexes);
   let hiddenIndex = 0;
   return segments.map((segment) => {
     if (!segment.hidden) return segment;
-    const shouldReveal = hiddenIndex < revealCount;
+    const shouldReveal =
+      hiddenIndex < revealCount ||
+      (segment.wordIndex !== null && selectedWordIndexes.has(segment.wordIndex));
     hiddenIndex += 1;
     return shouldReveal
       ? { ...segment, text: tokens[segment.segmentIndex]?.text ?? null }

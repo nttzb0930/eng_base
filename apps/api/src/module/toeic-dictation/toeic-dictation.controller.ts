@@ -75,10 +75,15 @@ export class ToeicDictationController {
       query.reveal === "all"
         ? Number.MAX_SAFE_INTEGER
         : Number(query.reveal ?? 0);
+    const revealWordIndexes = (query.revealWordIndexes ?? "")
+      .split(",")
+      .filter(Boolean)
+      .map(Number);
     return this.checkItemUseCase.execute(
       itemId,
       query.hide as 30 | 50 | 100,
-      revealCount
+      revealCount,
+      revealWordIndexes
     );
   }
 

@@ -42,6 +42,11 @@ export class ToeicDictationCheckQueryDto {
   @IsOptional()
   @IsIn(["0", "1", "2", "3", "all"])
   reveal?: "0" | "1" | "2" | "3" | "all";
+
+  @IsOptional()
+  @IsString()
+  @Matches(/^\d+(,\d+)*$/u)
+  revealWordIndexes?: string;
 }
 
 export class ToeicDictationSubmitDto implements ToeicDictationSubmitPayload {

@@ -121,6 +121,14 @@ test("dictation check returns masked segments without hidden text", async () => 
       .length,
     1
   );
+
+  const clicked = await useCase.execute(20, 100, 0, [2]);
+  assert.equal(
+    clicked.segments.some(
+      (segment) => segment.wordIndex === 2 && segment.text === "brown"
+    ),
+    true
+  );
 });
 
 test("dictation full returns transcript and translation on demand", async () => {
