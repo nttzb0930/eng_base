@@ -70,9 +70,26 @@ export function ToeicDictationSessionView({
   const checkQuery = useToeicDictationCheckItem(
     item?.id ?? 0,
     hidePercent,
-    hintCount,
-    revealedWordIndexes
+    mode === "check" ? "all" : 0
   );
+  const checkSegments = useMemo(() => {
+    const segments = checkQuery.data?.segments ?? [];
+    return segments.map((segment, segmentIndex) => {
+      if (!segment.hidden) return segment;
+      const hiddenIndex = segments
+        .slice(0, segmentIndex)
+        .filter((previous) => previous.hidden).length;
+      const shouldRevealFromHint =
+        hintCount === "all" ||
+        (typeof hintCount === "number" && hiddenIndex < hintCount);
+      const shouldRevealFromClick =
+        segment.wordIndex !== null &&
+        revealedWordIndexes.includes(segment.wordIndex);
+      return shouldRevealFromHint || shouldRevealFromClick
+        ? segment
+        : { ...segment, text: null };
+    });
+  }, [checkQuery.data?.segments, hintCount, revealedWordIndexes]);
   const fullQuery = useToeicDictationFullItem(item?.id ?? 0, mode === "full");
   const progressByItem = useMemo(
     () =>
@@ -467,7 +484,7 @@ export function ToeicDictationSessionView({
                     >
                       {(result
                         ? checkFeedback
-                        : (checkQuery.data?.segments ?? [])
+                        : checkSegments
                       ).map((segment) => {
                         if (!segment.hidden) {
                           return (
