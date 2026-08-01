@@ -8,6 +8,7 @@ import {
   Compass,
   Flame,
   GraduationCap,
+  Headphones,
   Play,
   PlusCircle,
   RotateCw,
@@ -232,116 +233,127 @@ export function LearnView() {
         <section className="mt-9">
           <div className="mb-4">
             <p className="eyebrow text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-              {t("learningModes")}
+              {t("learningPaths")}
             </p>
             <h3 className="text-foreground mt-1 text-xl font-semibold">
               {t("chooseModeTitle")}
             </h3>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            <div className="bg-card shadow-xs group relative flex flex-col justify-between rounded-2xl border-2 border-blue-500/80 p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
-              <div>
-                <div className="flex items-start justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-base font-bold text-blue-600 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-400">
-                    {currentLevel.level}
+          <div className="grid items-stretch gap-5 lg:grid-cols-[1.35fr_0.85fr]">
+            <article
+              aria-labelledby="general-english-path-title"
+              className="border-border/80 bg-card shadow-xs rounded-2xl border p-5 sm:p-6"
+            >
+              <div className="flex items-start gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-400">
+                  <BookOpen className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <div>
+                  <h4
+                    id="general-english-path-title"
+                    className="text-foreground text-xl font-semibold"
+                  >
+                    {t("generalEnglishTitle")}
+                  </h4>
+                  <p className="text-muted-foreground mt-1 max-w-[60ch] text-sm leading-6">
+                    {t("generalEnglishDescription")}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="group flex flex-col rounded-xl border border-blue-200/80 bg-blue-50/40 p-5 dark:border-blue-900 dark:bg-blue-950/20">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-sm font-bold text-white">
+                      {currentLevel.level}
+                    </span>
+                    <span className="rounded-md bg-white px-2.5 py-1 text-xs font-semibold text-blue-700 shadow-sm dark:bg-blue-950 dark:text-blue-300">
+                      {currentLevelPercent}%
+                    </span>
                   </div>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600 dark:bg-blue-950/60 dark:text-blue-400">
-                    {currentLevelPercent}%
-                  </span>
-                </div>
-
-                <h4 className="text-foreground mt-4 text-xl font-semibold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                  {topicsT("byLevel")}
-                </h4>
-                <p className="text-muted-foreground mt-1 text-xs leading-relaxed">
-                  {t("byLevelDesc")}
-                </p>
-
-                <div className="mt-5 text-xs font-semibold text-blue-600 dark:text-blue-400">
-                  {t("masteredProgress", {
-                    mastered: currentLevel.masteredWords,
-                    total: currentLevel.totalWords,
-                  })}
-                </div>
-                <div className="bg-muted mt-2 h-2 overflow-hidden rounded-full">
-                  <div
-                    className="h-full rounded-full bg-blue-500 transition-all duration-500"
-                    style={{ width: `${currentLevelPercent}%` }}
-                  />
-                </div>
-                <div className="text-muted-foreground mt-4 text-xs">
-                  {t("unlockedLevels", {
-                    unlocked: unlockedLevels.length,
-                    total: cefrSummary.levels.length,
-                  })}
-                </div>
-              </div>
-
-              <div className="mt-6">
-                <Link
-                  href={withLocale("/learn/level")}
-                  className="shadow-xs inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-blue-600 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
-                >
-                  <span>
+                  <h5 className="text-foreground mt-4 text-base font-semibold">
+                    {t("cefrPathTitle")}
+                  </h5>
+                  <p className="text-muted-foreground mt-1 text-xs leading-5">
+                    {t("byLevelDesc")}
+                  </p>
+                  <div className="mt-4 text-xs font-semibold text-blue-700 dark:text-blue-300">
+                    {t("masteredProgress", {
+                      mastered: currentLevel.masteredWords,
+                      total: currentLevel.totalWords,
+                    })}
+                  </div>
+                  <div className="bg-muted mt-2 h-2 overflow-hidden rounded-full">
+                    <div
+                      className="h-full rounded-full bg-blue-500 transition-[width] duration-500"
+                      style={{ width: `${currentLevelPercent}%` }}
+                    />
+                  </div>
+                  <Link
+                    href={withLocale("/learn/level")}
+                    className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                  >
                     {t("continueLevelBtn", { code: currentLevel.level })}
-                  </span>
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-card shadow-xs group relative flex flex-col justify-between rounded-2xl border-2 border-emerald-500/80 p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
-              <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-600 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400">
-                  <GraduationCap className="h-6 w-6" />
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
                 </div>
-                <h4 className="text-foreground mt-4 text-xl font-semibold transition-colors group-hover:text-emerald-600 dark:group-hover:text-emerald-400">
-                  {topicsT("byCert")}
-                </h4>
-                <p className="text-muted-foreground mt-1 text-xs leading-relaxed">
-                  {t("byCertDesc")}
-                </p>
-                <p className="text-muted-foreground mt-5 text-xs font-medium">
-                  {t("progressUnavailable")}
-                </p>
-              </div>
-              <div className="mt-6">
-                <Link
-                  href={withLocale("/learn/cert")}
-                  className="shadow-xs inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
-                >
-                  <span>{t("explorePath")}</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
-            </div>
 
-            <div className="bg-card shadow-xs group relative flex flex-col justify-between rounded-2xl border-2 border-orange-500/80 p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
-              <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffeedd] text-[#ea580c] dark:bg-orange-950/60 dark:text-orange-400">
-                  <Compass className="h-6 w-6" />
+                <div className="group flex flex-col rounded-xl border border-orange-200/80 bg-orange-50/40 p-5 dark:border-orange-900 dark:bg-orange-950/20">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500 text-white">
+                    <Compass className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <h5 className="text-foreground mt-4 text-base font-semibold">
+                    {t("topicPathTitle")}
+                  </h5>
+                  <p className="text-muted-foreground mt-1 text-xs leading-5">
+                    {t("byTopicDesc")}
+                  </p>
+                  <Link
+                    href={withLocale("/learn/topic")}
+                    className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-orange-500 px-4 text-sm font-semibold text-white transition-colors hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
+                  >
+                    {t("explorePath")}
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
                 </div>
-                <h4 className="text-foreground mt-4 text-xl font-semibold transition-colors group-hover:text-orange-600 dark:group-hover:text-orange-400">
-                  {topicsT("byTopic")}
-                </h4>
-                <p className="text-muted-foreground mt-1 text-xs leading-relaxed">
-                  {t("byTopicDesc")}
-                </p>
-                <p className="text-muted-foreground mt-5 text-xs font-medium">
-                  {t("progressUnavailable")}
-                </p>
               </div>
-              <div className="mt-6">
-                <Link
-                  href={withLocale("/learn/topic")}
-                  className="shadow-xs inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-orange-500 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
-                >
-                  <span>{t("explorePath")}</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
+            </article>
+
+            <article
+              aria-labelledby="toeic-path-title"
+              className="border-border/80 bg-card shadow-xs flex flex-col rounded-2xl border-2 border-emerald-500/70 p-5 sm:p-6"
+            >
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300">
+                <GraduationCap className="h-5 w-5" aria-hidden="true" />
               </div>
-            </div>
+              <h4
+                id="toeic-path-title"
+                className="text-foreground mt-5 text-xl font-semibold"
+              >
+                {t("toeicPathTitle")}
+              </h4>
+              <p className="text-muted-foreground mt-2 text-sm leading-6">
+                {t("toeicPathDescription")}
+              </p>
+              <div className="mt-6 grid grid-cols-2 gap-3" aria-hidden="true">
+                <div className="bg-muted/60 rounded-lg p-3">
+                  <Headphones className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
+                  <p className="mt-2 text-xs font-semibold">Part 1–4</p>
+                </div>
+                <div className="bg-muted/60 rounded-lg p-3">
+                  <BookOpen className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
+                  <p className="mt-2 text-xs font-semibold">Part 5–7</p>
+                </div>
+              </div>
+              <Link
+                href={withLocale("/learn/cert/toeic")}
+                className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+              >
+                {t("openToeic")}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </article>
           </div>
         </section>
 
