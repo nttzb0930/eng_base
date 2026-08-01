@@ -110,10 +110,16 @@ test("vocabulary scripts are owned by explicit workflow folders", () => {
     assert.equal(existsSync(join(vocabularyScriptsRoot, flow)), true, flow);
   }
 
-  const rootVocabularyScripts = readdirSync(scriptsRoot).filter((name) =>
+  const rootVocabularyOwners = readdirSync(scriptsRoot).filter((name) =>
     /vocab|topic/u.test(name),
   );
-  assert.deepEqual(rootVocabularyScripts, ["vocabulary"]);
+  assert.equal(rootVocabularyOwners.includes("vocabulary"), true);
+  assert.deepEqual(
+    rootVocabularyOwners.filter(
+      (name) => !["toeic-vocabulary-cache", "vocabulary"].includes(name),
+    ),
+    [],
+  );
   assert.equal(existsSync(join(scriptsRoot, "lib")), false);
 });
 

@@ -320,6 +320,11 @@ option ownership before persisting immutable attempt snapshots and account-owned
 source-question progress in one transaction. Grammar progress never uses
 browser local storage and survives replacement of database question row IDs.
 
+Source-specific TOEIC vocabulary acquisition remains in the sibling
+`scripts/toeic-vocabulary-cache` workflow. It prepares the TOEIC question cache
+and does not own or mutate the canonical Vocabulary catalog under
+`scripts/vocabulary`.
+
 `@prisma/client` is the only generated Prisma Interface. Generated source does
 not live below `src/` and is never edited by hand.
 
