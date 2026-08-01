@@ -14,14 +14,25 @@ type SidebarItemProps = {
   label: string;
   iconSrc: string;
   href: string;
+  activeHrefs?: string[];
 };
 
-export const SidebarItem = ({ label, iconSrc, href }: SidebarItemProps) => {
+export const SidebarItem = ({
+  label,
+  iconSrc,
+  href,
+  activeHrefs = [href],
+}: SidebarItemProps) => {
   const pathname = usePathname();
   const locale = useCurrentLocale();
   const localizedHref = withLocale(href, locale);
-  const isActive =
-    pathname === localizedHref || pathname.startsWith(localizedHref + "/");
+  const isActive = activeHrefs.some((activeHref) => {
+    const localizedActiveHref = withLocale(activeHref, locale);
+    return (
+      pathname === localizedActiveHref ||
+      pathname.startsWith(localizedActiveHref + "/")
+    );
+  });
 
   return (
     <Button

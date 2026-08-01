@@ -5,11 +5,9 @@ import {
   LogOut,
   Home,
   BookOpen,
-  Target,
   Trophy,
   Heart,
   Layers,
-  BookOpenText,
 } from "lucide-react";
 import Image from "next/image";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
@@ -57,13 +55,36 @@ export const Header = ({ className }: HeaderProps) => {
   }, []);
 
   const navItems = [
-    { label: t("dashboard"), href: "/dashboard", icon: Home },
-    { label: t("learn"), href: "/learn", icon: BookOpen },
-    { label: t("practice"), href: "/practice", icon: Target },
-    { label: t("reading"), href: "/reading", icon: BookOpenText },
-    { label: t("savedWords"), href: "/saved-words", icon: Heart },
-    { label: t("flashcards"), href: "/flashcards", icon: Layers },
-    { label: t("leaderboard"), href: "/leaderboard", icon: Trophy },
+    {
+      label: t("dashboard"),
+      href: "/dashboard",
+      icon: Home,
+      activePrefixes: ["/dashboard"],
+    },
+    {
+      label: t("learn"),
+      href: "/learn",
+      icon: BookOpen,
+      activePrefixes: ["/learn", "/practice", "/reading"],
+    },
+    {
+      label: t("savedWords"),
+      href: "/saved-words",
+      icon: Heart,
+      activePrefixes: ["/saved-words"],
+    },
+    {
+      label: t("flashcards"),
+      href: "/flashcards",
+      icon: Layers,
+      activePrefixes: ["/flashcards"],
+    },
+    {
+      label: t("leaderboard"),
+      href: "/leaderboard",
+      icon: Trophy,
+      activePrefixes: ["/leaderboard"],
+    },
   ];
 
   return (
@@ -104,9 +125,13 @@ export const Header = ({ className }: HeaderProps) => {
           {navItems.map((item) => {
             const Icon = item.icon;
             const localizedHref = withLocale(item.href, locale);
-            const isActive =
-              pathname === localizedHref ||
-              pathname.startsWith(localizedHref + "/");
+            const isActive = item.activePrefixes.some((prefix) => {
+              const localizedPrefix = withLocale(prefix, locale);
+              return (
+                pathname === localizedPrefix ||
+                pathname.startsWith(localizedPrefix + "/")
+              );
+            });
 
             return (
               <Link

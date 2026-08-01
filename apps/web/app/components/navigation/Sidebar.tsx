@@ -56,21 +56,12 @@ export const Sidebar = ({ className }: SidebarProps) => {
           label={t("learn")}
           href={withLocale("/learn")}
           iconSrc="/learn.svg"
+          activeHrefs={["/learn", "/practice", "/reading"]}
         />
         <SidebarItem
           label={t("savedWords")}
           href={withLocale("/saved-words")}
           iconSrc="/heart.svg"
-        />
-        <SidebarItem
-          label={t("practice")}
-          href={withLocale("/practice")}
-          iconSrc="/learn.svg"
-        />
-        <SidebarItem
-          label={t("reading")}
-          href={withLocale("/reading")}
-          iconSrc="/learn.svg"
         />
         <SidebarItem
           label={t("flashcards")}

@@ -4,8 +4,10 @@ import { useEffect } from "react";
 import {
   ArrowRight,
   BookOpen,
+  BookOpenText,
   Calendar,
   Compass,
+  Dumbbell,
   Flame,
   GraduationCap,
   Headphones,
@@ -314,6 +316,44 @@ export function LearnView() {
                     className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-orange-500 px-4 text-sm font-semibold text-white transition-colors hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
                   >
                     {t("explorePath")}
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                </div>
+
+                <div className="group flex flex-col rounded-xl border border-blue-200/80 bg-blue-50/40 p-5 dark:border-blue-900 dark:bg-blue-950/20">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-white">
+                    <Dumbbell className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <h5 className="text-foreground mt-4 text-base font-semibold">
+                    {t("practicePathTitle")}
+                  </h5>
+                  <p className="text-muted-foreground mt-1 text-xs leading-5">
+                    {t("practicePathDescription")}
+                  </p>
+                  <Link
+                    href={withLocale("/practice")}
+                    className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                  >
+                    {t("openPractice")}
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                </div>
+
+                <div className="group flex flex-col rounded-xl border border-blue-200/80 bg-blue-50/40 p-5 dark:border-blue-900 dark:bg-blue-950/20">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-white">
+                    <BookOpenText className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <h5 className="text-foreground mt-4 text-base font-semibold">
+                    {t("readingPathTitle")}
+                  </h5>
+                  <p className="text-muted-foreground mt-1 text-xs leading-5">
+                    {t("readingPathDescription")}
+                  </p>
+                  <Link
+                    href={withLocale("/reading")}
+                    className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                  >
+                    {t("openReading")}
                     <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
                 </div>
