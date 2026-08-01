@@ -285,7 +285,7 @@ export function CompactAudioPlayer({
             <Repeat2 className="h-4 w-4" aria-hidden="true" />
           </Button>
           {replayOpen && (
-            <div className="bg-card absolute bottom-full right-0 z-30 mb-2 w-64 rounded-md border p-3 shadow-lg">
+            <div className="bg-card absolute right-0 top-full z-30 mt-2 w-64 rounded-md border p-3 shadow-lg">
               <div className="space-y-3">
                 <label className="text-muted-foreground block text-xs font-medium">
                   {replayCountLabel}
