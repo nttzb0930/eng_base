@@ -1,16 +1,16 @@
 "use client";
 
-import {
-  ChevronDown,
-  Pause,
-  Play,
-  Repeat2,
-  Volume2,
-  VolumeX,
-} from "lucide-react";
+import { Pause, Play, Repeat2, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/app/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/app/components/ui/select";
 import { Slider } from "@/app/components/ui/slider";
 import {
   Tooltip,
@@ -290,45 +290,45 @@ export function CompactAudioPlayer({
                 <label className="text-muted-foreground block text-xs font-medium">
                   {replayCountLabel}
                   <span className="relative mt-1 block">
-                    <select
-                      value={draftReplayCount}
-                      onChange={(event) =>
-                        setDraftReplayCount(Number(event.target.value))
+                    <Select
+                      value={String(draftReplayCount)}
+                      onValueChange={(value) =>
+                        setDraftReplayCount(Number(value))
                       }
-                      className="bg-background focus-visible:ring-ring h-9 w-full appearance-none rounded-md border px-3 pr-8 text-sm text-foreground outline-none focus-visible:ring-2"
                     >
-                      {[1, 3, 5].map((value) => (
-                        <option key={value} value={value}>
-                          {value} {replayTimesSuffix}
-                        </option>
-                      ))}
-                    </select>
-                    <ChevronDown
-                      className="text-muted-foreground pointer-events-none absolute right-2 top-1/2 h-4 w-4 -translate-y-1/2"
-                      aria-hidden="true"
-                    />
+                      <SelectTrigger>
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {[1, 3, 5].map((value) => (
+                          <SelectItem key={value} value={String(value)}>
+                            {value} {replayTimesSuffix}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </span>
                 </label>
                 <label className="text-muted-foreground block text-xs font-medium">
                   {replayDelayLabel}
                   <span className="relative mt-1 block">
-                    <select
-                      value={draftReplayDelay}
-                      onChange={(event) =>
-                        setDraftReplayDelay(Number(event.target.value))
+                    <Select
+                      value={String(draftReplayDelay)}
+                      onValueChange={(value) =>
+                        setDraftReplayDelay(Number(value))
                       }
-                      className="bg-background focus-visible:ring-ring h-9 w-full appearance-none rounded-md border px-3 pr-8 text-sm text-foreground outline-none focus-visible:ring-2"
                     >
-                      {[0, 1, 2].map((value) => (
-                        <option key={value} value={value}>
-                          {value} {replaySecondsSuffix}
-                        </option>
-                      ))}
-                    </select>
-                    <ChevronDown
-                      className="text-muted-foreground pointer-events-none absolute right-2 top-1/2 h-4 w-4 -translate-y-1/2"
-                      aria-hidden="true"
-                    />
+                      <SelectTrigger>
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {[0, 1, 2].map((value) => (
+                          <SelectItem key={value} value={String(value)}>
+                            {value} {replaySecondsSuffix}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </span>
                 </label>
                 <Button
