@@ -6,6 +6,12 @@ import { mapSetSummary } from "../toeic-dictation.mapper";
 
 const COLLECTION_NAME = "Đề 2026";
 
+function resolveCollectionName(collection?: string) {
+  return collection === undefined || collection === "2026"
+    ? COLLECTION_NAME
+    : collection;
+}
+
 @Injectable()
 export class ListToeicDictationSetsUseCase {
   constructor(private readonly prisma: PrismaService) {}
@@ -16,7 +22,7 @@ export class ListToeicDictationSetsUseCase {
   ): Promise<ToeicDictationSetSummary[]> {
     const sets = await this.prisma.toeic_dictation_sets.findMany({
       where: {
-        collection_name: query.collection ?? COLLECTION_NAME,
+        collection_name: resolveCollectionName(query.collection),
         status: "PUBLISHED",
         test_number: query.test,
         part: query.part,

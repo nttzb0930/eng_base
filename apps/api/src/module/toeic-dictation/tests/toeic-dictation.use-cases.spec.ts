@@ -49,6 +49,22 @@ test("dictation list returns progress summary without answer content", async () 
   assert.equal("transcript" in (summary ?? {}), false);
 });
 
+test("dictation list maps the public collection key to the stored collection name", async () => {
+  let where: Record<string, unknown> | undefined;
+  const useCase = new ListToeicDictationSetsUseCase({
+    toeic_dictation_sets: {
+      findMany: async (args: { where: Record<string, unknown> }) => {
+        where = args.where;
+        return [];
+      },
+    },
+  } as never);
+
+  await useCase.execute("user-1", { collection: "2026" });
+
+  assert.equal(where?.collection_name, "Đề 2026");
+});
+
 test("dictation set detail exposes opaque media ids but no transcript", async () => {
   const useCase = new GetToeicDictationSetUseCase({
     toeic_dictation_sets: {
