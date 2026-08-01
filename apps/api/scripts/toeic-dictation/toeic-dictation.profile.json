@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "source": "dautoeic",
+  "apiBaseUrl": "https://qfhmnlvgweznzcsoijyr.supabase.co",
+  "allowedHosts": ["qfhmnlvgweznzcsoijyr.supabase.co"],
+  "timeoutMs": 20000,
+  "maxRetries": 3,
+  "downloadConcurrency": 2,
+  "inventoryConcurrency": 32
+}

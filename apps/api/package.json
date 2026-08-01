@@ -63,6 +63,7 @@
     "data:download-toeic-listening-practice": "tsx ./scripts/toeic-listening-practice/download-toeic-listening-practice.ts",
     "data:validate-toeic-listening-practice": "tsx ./scripts/toeic-listening-practice/validate-toeic-listening-practice.ts",
     "data:import-toeic-listening-practice": "dotenv -e ../../.env -- tsx ./scripts/toeic-listening-practice/import-toeic-listening-practice.ts",
+    "data:inventory-toeic-dictation": "tsx ./scripts/toeic-dictation/inventory-toeic-dictation.ts",
     "data:inventory-toeic-vocabulary-cache": "tsx ./scripts/toeic-vocabulary-cache/inventory-toeic-vocabulary-cache.ts",
     "data:import-toeic-vocabulary-cache": "dotenv -e ../../.env -- tsx ./scripts/toeic-vocabulary-cache/import-toeic-vocabulary-cache.ts",
     "data:inventory-toeic-grammar": "tsx ./scripts/toeic-grammar/inventory-toeic-grammar.ts",
