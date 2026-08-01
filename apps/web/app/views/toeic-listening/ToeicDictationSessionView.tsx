@@ -33,6 +33,7 @@ import {
   mergeToeicDictationCheckFeedback,
   type ToeicDictationCheckFeedbackSegment,
 } from "@/app/features/toeic-dictation/toeic-dictation-check-feedback";
+import { getToeicDictationAutoPlayKey } from "@/app/features/toeic-dictation/toeic-dictation-auto-play";
 import type {
   ToeicDictationItem,
   ToeicDictationRevealCount,
@@ -565,6 +566,7 @@ export function ToeicDictationSessionView({
                 {audioUrl ? (
                   <div className="mt-5">
                     <CompactAudioPlayer
+                      key={getToeicDictationAutoPlayKey(item.id, mode)}
                       ref={audioPlayerRef}
                       src={audioUrl}
                       playLabel={t("play")}
@@ -579,6 +581,7 @@ export function ToeicDictationSessionView({
                       replayTimesSuffix={t("replayTimesSuffix")}
                       replaySecondsSuffix={t("replaySecondsSuffix")}
                       autoPlay
+                      autoPlayKey={getToeicDictationAutoPlayKey(item.id, mode)}
                     />
                   </div>
                 ) : (

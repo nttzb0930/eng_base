@@ -35,6 +35,7 @@ type Props = {
   replayTimesSuffix: string;
   replaySecondsSuffix: string;
   autoPlay?: boolean;
+  autoPlayKey?: string;
 };
 
 export type CompactAudioPlayerHandle = {
@@ -61,6 +62,7 @@ export const CompactAudioPlayer = forwardRef<CompactAudioPlayerHandle, Props>(fu
   replayTimesSuffix,
   replaySecondsSuffix,
   autoPlay = false,
+  autoPlayKey,
 }, ref) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const replayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -132,13 +134,16 @@ export const CompactAudioPlayer = forwardRef<CompactAudioPlayerHandle, Props>(fu
     setDuration(0);
     setVolume(1);
     setMuted(false);
-    if (autoPlay) {
-      const frame = window.requestAnimationFrame(() => {
-        void audio.play().catch(() => setPlaying(false));
-      });
-      return () => window.cancelAnimationFrame(frame);
-    }
-  }, [autoPlay, src]);
+  }, [src]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || !autoPlay) return;
+    const frame = window.requestAnimationFrame(() => {
+      void audio.play().catch(() => setPlaying(false));
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [autoPlay, autoPlayKey, src]);
 
   useEffect(() => {
     const audio = audioRef.current;
