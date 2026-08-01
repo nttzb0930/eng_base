@@ -174,6 +174,13 @@ source-version-mismatched drafts are discarded. Test summaries expose only the
 matching learner's answered count, total count, active question, and update time.
 A successful new submission deletes its matching draft in the attempt
 transaction; an identical idempotent retry also performs cleanup.
+
+Guided Part practice uses a separate authenticated persistence aggregate rather
+than overloading draft JSON or immutable test attempts. One active session is
+identified by Learner, test, Part, and source version. Each question can produce
+one immutable graded answer snapshot per session, and request keys make answer
+retries idempotent. Correct answers and explanations remain server-owned and
+become learner-visible only for questions already graded in that session.
 `Test 10` regardless of import timestamps or database IDs.
 
 The approved inventory's source-set label is canonical provenance, not a value

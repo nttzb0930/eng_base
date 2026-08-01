@@ -136,3 +136,60 @@ export type ToeicReadingAttemptResult = ToeicReadingAttemptSummary & {
   parts: ToeicReadingPartResult[];
   answers: ToeicReadingAttemptAnswerResult[];
 };
+
+export type ToeicReadingPracticeStartPayload = {
+  testId: number;
+  part: ToeicReadingPart;
+  sourceVersion: string;
+};
+
+export type ToeicReadingPracticeAnswerPayload = {
+  questionId: number;
+  optionId: number;
+  requestKey: string;
+};
+
+export type ToeicReadingPracticeUpdatePayload = {
+  activeQuestionId: number;
+  reviewQuestionIds: number[];
+};
+
+export type ToeicReadingPracticeProgress = {
+  correct: number;
+  incorrect: number;
+  answered: number;
+  total: number;
+};
+
+export type ToeicReadingPracticeAnswerResult = {
+  questionId: number;
+  selectedOptionId: number;
+  correct: boolean;
+  correctOption: ToeicReadingLearnerOption;
+  explanation: string | null;
+  questionTranslation: string | null;
+  progress: ToeicReadingPracticeProgress;
+  nextQuestionId: number | null;
+};
+
+export type ToeicReadingPracticeSession = {
+  id: number;
+  testId: number;
+  part: ToeicReadingPart;
+  sourceVersion: string;
+  status: "ACTIVE" | "COMPLETED";
+  activeQuestionId: number;
+  reviewQuestionIds: number[];
+  content: ToeicReadingTestDetail;
+  answers: ToeicReadingPracticeAnswerResult[];
+  progress: ToeicReadingPracticeProgress;
+  updatedAt: string;
+  completedAt: string | null;
+};
+
+export type ToeicReadingPracticeSummary = {
+  sessionId: number;
+  progress: ToeicReadingPracticeProgress;
+  incorrectQuestionIds: number[];
+  completedAt: string;
+};

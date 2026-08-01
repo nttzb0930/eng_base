@@ -36,7 +36,7 @@
 - Produces: `ToeicReadingPracticeSession`, `ToeicReadingPracticeAnswerResult`, `ToeicReadingPracticeStartPayload`, `ToeicReadingPracticeAnswerPayload`, `ToeicReadingPracticeUpdatePayload`, and `ToeicReadingPracticeSummary` from `@repo/shared`.
 - Produces Prisma models `toeic_reading_practice_sessions` and `toeic_reading_practice_answers`.
 
-- [ ] **Step 1: Write the failing migration and contract characterization tests**
+- [x] **Step 1: Write the failing migration and contract characterization tests**
 
 ```ts
 test("TOEIC Reading practice persistence owns sessions and immutable answers", () => {
@@ -48,12 +48,12 @@ test("TOEIC Reading practice persistence owns sessions and immutable answers", (
 });
 ```
 
-- [ ] **Step 2: Run the migration test and verify RED**
+- [x] **Step 2: Run the migration test and verify RED**
 
 Run: `pnpm --filter @repo/api exec tsx --test src/module/toeic-reading/tests/toeic-reading-practice-migration.spec.ts`  
 Expected: FAIL because the migration and Prisma models do not exist.
 
-- [ ] **Step 3: Add the Prisma models and SQL migration**
+- [x] **Step 3: Add the Prisma models and SQL migration**
 
 ```prisma
 model toeic_reading_practice_sessions {
@@ -105,7 +105,7 @@ model toeic_reading_practice_answers {
 
 Also add both relation arrays to `users` and `toeic_tests`. Use explicit migration constraint/index names consistent with existing TOEIC tables.
 
-- [ ] **Step 4: Add Shared wire types**
+- [x] **Step 4: Add Shared wire types**
 
 ```ts
 export type ToeicReadingPracticeStartPayload = {
@@ -168,7 +168,7 @@ export type ToeicReadingPracticeSummary = {
 
 `correctOption` is required only inside `ToeicReadingPracticeAnswerResult`, never on `ToeicReadingLearnerQuestion`.
 
-- [ ] **Step 5: Verify Task 1**
+- [x] **Step 5: Verify Task 1**
 
 Run:
 
@@ -181,7 +181,7 @@ pnpm --filter @repo/api check-types
 
 Expected: all commands exit 0.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```powershell
 git add apps/api/prisma packages/shared/src/types/toeic-reading.ts apps/api/src/module/toeic-reading/tests/toeic-reading-practice-migration.spec.ts docs/architecture/api.md
