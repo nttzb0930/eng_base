@@ -954,8 +954,8 @@
   "toeicGrammar": {
     "mode": {
       "label": "TOEIC Reading practice mode",
-      "tests": "Test practice",
-      "grammar": "Grammar practice"
+      "tests": "Reading tests",
+      "grammar": "TOEIC Grammar"
     },
     "error": {
       "title": "Grammar content could not be loaded",
@@ -1164,12 +1164,20 @@
       "notAvailable": "This result does not exist or belongs to another learner."
     }
   },
+  "toeic": {
+    "navigation": {
+      "label": "TOEIC sections",
+      "overview": "Overview",
+      "listening": "Listening",
+      "reading": "Reading"
+    }
+  },
   "toeicListening": {
     "part": "Part {part}",
     "mode": {
       "label": "Listening mode",
-      "level": "Listen by level",
-      "dictation": "Dictation"
+      "level": "Listening tests",
+      "dictation": "Intensive listening"
     },
     "error": {
       "title": "TOEIC Listening could not be loaded",

@@ -43,7 +43,7 @@ export function DiscoveryTabs({
 
   return (
     <nav
-      aria-label="Chế độ học tập"
+      aria-label={t("modeLabel")}
       className="border-border/80 bg-background mb-7 inline-flex flex-wrap items-center gap-1.5 rounded-xl border p-1.5 shadow-sm"
     >
       {tabs.map(({ key, href, Icon }) => {

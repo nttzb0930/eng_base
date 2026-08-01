@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { ToeicSectionNav } from "@/app/features/toeic/components/ToeicSectionNav";
 import { ToeicGrammarCatalogSkeleton } from "@/app/features/toeic-grammar/components/ToeicGrammarCatalogSkeleton";
 import { ToeicGrammarCatalogTabs } from "@/app/features/toeic-grammar/components/ToeicGrammarCatalogTabs";
 import { ToeicGrammarProgressCard } from "@/app/features/toeic-grammar/components/ToeicGrammarProgressCard";
@@ -64,6 +65,7 @@ export function ToeicGrammarCatalogView({ tab }: ToeicGrammarCatalogViewProps) {
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {t("catalog.back")}
         </Link>
+        <ToeicSectionNav active="reading" />
         <header className="mt-7 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700 dark:text-emerald-300">
             {t("catalog.eyebrow")}

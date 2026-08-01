@@ -954,8 +954,8 @@
   "toeicGrammar": {
     "mode": {
       "label": "Chế độ luyện TOEIC Reading",
-      "tests": "Luyện đề",
-      "grammar": "Luyện ngữ pháp"
+      "tests": "Luyện đề Reading",
+      "grammar": "Ngữ pháp TOEIC"
     },
     "error": {
       "title": "Không thể tải nội dung ngữ pháp",
@@ -1164,12 +1164,20 @@
       "notAvailable": "Kết quả này không tồn tại hoặc thuộc về học viên khác."
     }
   },
+  "toeic": {
+    "navigation": {
+      "label": "Khu vực TOEIC",
+      "overview": "Tổng quan",
+      "listening": "Nghe hiểu",
+      "reading": "Đọc hiểu"
+    }
+  },
   "toeicListening": {
     "part": "Part {part}",
     "mode": {
       "label": "Chế độ nghe",
-      "level": "Nghe theo level",
-      "dictation": "Nghe chép"
+      "level": "Luyện đề Listening",
+      "dictation": "Nghe chuyên sâu"
     },
     "error": {
       "title": "Không thể tải TOEIC Listening",

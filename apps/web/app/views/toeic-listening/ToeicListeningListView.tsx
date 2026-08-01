@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { ToeicSectionNav } from "@/app/features/toeic/components/ToeicSectionNav";
 import { ToeicListeningListSkeleton } from "@/app/features/toeic-listening/components/ToeicListeningListSkeleton";
 import { ToeicListeningModeTabs } from "@/app/features/toeic-listening/components/ToeicListeningModeTabs";
 import { ToeicListeningScopeTabs } from "@/app/features/toeic-listening/components/ToeicListeningScopeTabs";
@@ -63,6 +64,8 @@ export function ToeicListeningListView({ scope }: ToeicListeningListViewProps) {
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {t("list.back")}
         </Link>
+
+        <ToeicSectionNav active="listening" />
 
         <header className="mt-7 max-w-2xl">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
