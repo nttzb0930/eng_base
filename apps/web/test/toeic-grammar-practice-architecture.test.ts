@@ -55,6 +55,9 @@ test("Grammar lesson route stays thin and renders source content safely", () => 
   const content = read(
     "app/features/toeic-grammar/components/ToeicGrammarLessonContent.tsx"
   );
+  const markdown = read(
+    "app/features/toeic-grammar/components/ToeicGrammarMarkdown.tsx"
+  );
 
   assert.match(page, /ToeicGrammarLessonView/);
   assert.doesNotMatch(page, /use client|fetch\(|webHttpClient|useQuery/);
@@ -62,6 +65,13 @@ test("Grammar lesson route stays thin and renders source content safely", () => 
   assert.doesNotMatch(content, /dangerouslySetInnerHTML/);
   assert.match(content, /theoryContentVi/);
   assert.match(content, /whitespace-pre-line/);
+  assert.match(markdown, /ReactMarkdown/);
+  assert.match(markdown, /remarkGfm/);
+  assert.match(markdown, /parseToeicGrammarMarkdown/);
+  assert.match(markdown, /block\.kind === "example"/);
+  assert.match(markdown, /block\.kind === "note"/);
+  assert.match(markdown, /skipHtml/);
+  assert.doesNotMatch(markdown, /dangerouslySetInnerHTML|rehypeRaw/);
 });
 
 test("Grammar detail exposes sibling subtopics and hides unavailable lessons", () => {
