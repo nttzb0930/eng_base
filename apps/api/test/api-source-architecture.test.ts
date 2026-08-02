@@ -34,9 +34,7 @@ test("API infrastructure follows the capability-owned source profile", () => {
   assert.ok(existsSync(join(sourceRoot, "common/logging/logging.module.ts")));
   assert.ok(existsSync(join(sourceRoot, "config/rate-limit.config.ts")));
   assert.ok(
-    existsSync(
-      join(sourceRoot, "common/guards/application-throttler.guard.ts")
-    )
+    existsSync(join(sourceRoot, "common/guards/application-throttler.guard.ts"))
   );
   assert.ok(
     existsSync(join(sourceRoot, "common/rate-limit/rate-limit.options.ts"))
@@ -77,5 +75,25 @@ test("API root only composes Modules", () => {
   assert.equal(
     existsSync(join(sourceRoot, "health.controller.test.ts")),
     false
+  );
+});
+
+test("destructive seed is exposed only as an explicit development command", () => {
+  const workspacePackage = JSON.parse(
+    readFileSync(join(apiRoot, "../..", "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+  const apiPackage = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+
+  assert.equal(workspacePackage.scripts?.["db:seed"], undefined);
+  assert.equal(apiPackage.scripts?.["db:seed"], undefined);
+  assert.equal(
+    workspacePackage.scripts?.["db:seed:dev"],
+    "pnpm --filter @repo/api db:seed:dev"
+  );
+  assert.match(
+    apiPackage.scripts?.["db:seed:dev"] ?? "",
+    /scripts\/seed-dev\.ts/u
   );
 });

@@ -11,6 +11,7 @@ import {
   loadVocabularySeedData,
   mapVocabularyTopicPersistenceData,
 } from "./vocabulary/database/vocabulary-seed-data.js";
+import { assertDevelopmentSeedAllowed } from "./vocabulary/database/development-seed-guard.js";
 
 type CefrLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 type CurriculumCefrLevel = "A1" | "A2" | "B1" | "B2";
@@ -57,6 +58,8 @@ const VOCABULARY_DATA_DIRECTORY = path.join(
   "data",
   "vocabulary"
 );
+
+assertDevelopmentSeedAllowed(process.env);
 
 const prisma = new PrismaClient({
   adapter: createPrismaAdapter(),
