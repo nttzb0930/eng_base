@@ -236,7 +236,7 @@ const desiredExamples = (
           : example.exampleVi;
       const order = index + 1;
       return {
-        key: `${vocabularyKey}|${order}`,
+        key: `${vocabularyKey}|${exampleEn}`,
         value: {
           vocabularyKey,
           exampleEn,

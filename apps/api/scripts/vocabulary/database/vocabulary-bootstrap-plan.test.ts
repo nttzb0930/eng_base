@@ -177,6 +177,50 @@ test("planner is unchanged when live state already matches desired state", () =>
   assert.equal(second.summary.totals.update, 0);
 });
 
+test("example reordering keeps each database row attached to its text", () => {
+  const firstExample = {
+    exampleEn: "The airport is busy.",
+    exampleVi: "SÃ¢n bay Ä‘Ã´ng Ä‘Ãºc.",
+  };
+  const secondExample = {
+    exampleEn: "We arrived at the airport early.",
+    exampleVi: "ChÃºng tÃ´i Ä‘áº¿n sÃ¢n bay sá»›m.",
+  };
+  const sourceWithTwoExamples: VocabularySeedData = {
+    ...sourceFixture,
+    catalog: sourceFixture.catalog.map((item, index) =>
+      index === 0
+        ? { ...item, examples: [firstExample, secondExample] }
+        : item
+    ),
+  };
+  const initial = buildVocabularyBootstrapPlan(
+    sourceWithTwoExamples,
+    emptyLiveState
+  );
+  const live = materializePlan(initial);
+  const reordered = buildVocabularyBootstrapPlan(
+    {
+      ...sourceWithTwoExamples,
+      catalog: sourceWithTwoExamples.catalog.map((item, index) =>
+        index === 0
+          ? { ...item, examples: [secondExample, firstExample] }
+          : item
+      ),
+    },
+    live
+  );
+
+  assert.equal(reordered.summary.examples.create, 0);
+  assert.equal(reordered.summary.examples.update, 2);
+  for (const action of reordered.actions.examples) {
+    const original = live.examples.find(
+      (example) => example.exampleEn === action.value.exampleEn
+    );
+    assert.equal(action.existingId, original?.id);
+  }
+});
+
 test("planner retains records outside canonical ownership", () => {
   const plan = buildVocabularyBootstrapPlan(sourceFixture, {
     ...emptyLiveState,

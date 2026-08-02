@@ -165,7 +165,7 @@ Topic classification, and Topic expansion tests documented in
 
 The only versioned vocabulary sources are the canonical catalog, Topic
 taxonomy, prompts, and deliberate human review decisions. `working/` and
-`backups/` are local generated artifacts. Do not run `db:seed`, `db:push`,
-`db:migrate:reset`, enrichment, AI-provider, normalization sync, or POS sync
-during architecture refactors. Database and provider writes require explicit
-user confirmation.
+`backups/` are local generated artifacts. Do not run `db:seed:dev`, `db:push`,
+`db:migrate:reset`, Vocabulary bootstrap `dry-run`/`apply`, enrichment,
+AI-provider, normalization sync, or POS sync during architecture refactors.
+Database and provider writes require explicit user confirmation.

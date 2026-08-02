@@ -161,10 +161,11 @@ replace a repeatable migration, seed, or reviewed data workflow.
 | `db:migrate:deploy` | Apply committed migrations                   | setup/deployment                        |
 | `db:push`           | Force schema state without migration history | exceptional disposable prototyping only |
 | `db:migrate:reset`  | Drop/recreate schema and rerun migrations    | destructive disposable environment only |
-| `db:seed`           | Write canonical learning data                | explicit data task only                 |
+| `db:seed:dev`       | Rebuild destructive local development data   | explicit disposable environment only    |
 
 Do not use `db:push` to repair migration history or prepare a release. Do not run
-reset or seed as a compile/test prerequisite.
+reset or development seed as a compile/test prerequisite. Production Vocabulary
+bootstrap follows the reviewed runbook in `docs/guides/ci-cd.md`.
 
 ## Troubleshooting
 

@@ -218,7 +218,7 @@ export async function loadVocabularyBootstrapState(
     for (const example of row.vocabulary_examples) {
       examples.push({
         id: example.id,
-        key: `${key}|${example.order}`,
+        key: `${key}|${example.example_en}`,
         vocabularyKey: key,
         exampleEn: example.example_en,
         exampleVi: example.example_vi,

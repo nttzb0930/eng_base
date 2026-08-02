@@ -139,7 +139,10 @@ test("canonical docs define the reviewed production Vocabulary bootstrap runbook
   assert.match(vocabularyGuide, /7,429 records/u);
   assert.doesNotMatch(vocabularyGuide, /currently contains 3,000 records/u);
   assert.match(deploymentGuide, /backup/iu);
-  assert.match(deploymentGuide, /data:bootstrap-vocabulary:compiled/u);
+  assert.match(
+    deploymentGuide,
+    /npm run data:bootstrap-vocabulary:compiled/u
+  );
   assert.match(deploymentGuide, /not.*automatic/iu);
   assert.match(verificationGuide, /vocabulary-bootstrap-plan\.test\.ts/u);
   assert.match(verificationGuide, /vocabulary-bootstrap-store\.test\.ts/u);

@@ -141,7 +141,8 @@ Secrets, quyền package, tag, pull/run image và deploy.
 
 Các lệnh sau có thể thay đổi schema, database, dữ liệu nguồn hoặc gọi provider:
 
-- `db:push`, `db:migrate`, `db:migrate:deploy`, `db:migrate:reset`, `db:seed`;
+- `db:push`, `db:migrate`, `db:migrate:deploy`, `db:migrate:reset`, `db:seed:dev`
+  và các lần ghi Vocabulary bootstrap đã được xác nhận;
 - vocabulary enrichment, normalization, POS correction và database sync;
 - Topic classification/expansion qua AI provider.
 

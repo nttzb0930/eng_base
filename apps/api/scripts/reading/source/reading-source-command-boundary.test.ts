@@ -56,7 +56,7 @@ test("keeps inventory, download, validation, and Prisma boundaries separate", ()
 test("does not invoke Reading source operations from runtime, build, seed, or CI", () => {
   const forbidden = [
     readFileSync(resolve(apiRoot, "src/app.module.ts"), "utf8"),
-    readFileSync(resolve(apiRoot, "scripts/seed.ts"), "utf8"),
+    readFileSync(resolve(apiRoot, "scripts/seed-dev.ts"), "utf8"),
     readFileSync(resolve(repositoryRoot, "package.json"), "utf8"),
     readFileSync(
       resolve(repositoryRoot, ".github/workflows/ci.yml"),

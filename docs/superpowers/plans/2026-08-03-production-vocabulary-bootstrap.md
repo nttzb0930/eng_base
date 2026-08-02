@@ -277,7 +277,7 @@ challenge: <lesson-key>|<vocabulary-identity>|<type>|<direction>|<order>
 option slot: <challenge-key>|<slot 1..4>
 topic: <slug>
 relation: <vocabulary-identity>|<topic-slug>
-example: <vocabulary-identity>|<order>|<example-en>
+example: <vocabulary-identity>|<example-en> (`order` is a managed field)
 ```
 
 Fail if more than one live row maps to any key. Emit create/update/reuse only;
