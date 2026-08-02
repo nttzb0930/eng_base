@@ -22,7 +22,7 @@ data/vocabulary/
 claim that audio or examples exist. Topic arrays in the catalog are the only
 source used to create vocabulary-topic relations.
 
-The catalog currently contains 3,000 records. The taxonomy contains exactly 103
+The catalog currently contains 7,429 records. The taxonomy contains exactly 103
 Topics. Record identity is `normalizedWord + pos + cefrLevel`; duplicate
 identities are rejected before merge or seed.
 
@@ -391,20 +391,42 @@ against a different environment.
 
 ## Seed and confirmed database writes
 
-Both `db:seed` and `data:seed-topics` load and validate
-`vocabulary-catalog.json` and `topics.json`. Seed scripts must not declare a
-second taxonomy or infer relations from keyword matching.
+`db:seed:dev` is a destructive local-development reset. It refuses to run with
+`NODE_ENV=production` and must never be used to initialize or repair a deployed
+database. The production-safe bootstrap is a separate, additive and idempotent
+workflow based only on `vocabulary-catalog.json` and `topics.json`.
 
-Classification and expansion never update PostgreSQL. Commands that can write
-the database remain explicit (`db:seed`, enrichment commands, or a confirmed
-normalization/POS apply). Review dry-run output before an apply. Never run a
+Run its source command from the repository root during local review:
+
+```powershell
+pnpm --filter @repo/api data:bootstrap-vocabulary -- plan
+pnpm --filter @repo/api data:bootstrap-vocabulary -- dry-run
+pnpm --filter @repo/api data:bootstrap-vocabulary -- apply --confirm $env:VOCABULARY_BOOTSTRAP_CONFIRMATION
+```
+
+`plan` is read-only and prints the sanitized database target, source/live/plan
+hashes, counts, and a confirmation token derived from that exact plan. Back up
+the target database and review this output before continuing. `dry-run` executes
+the same transactional writer as apply, verifies the result, and deliberately
+rolls the transaction back. `apply` commits only when `--confirm` exactly
+matches the current plan token; any source or database drift invalidates the
+reviewed plan.
+
+The safe bootstrap owns canonical vocabulary items, examples, Topics, Topic
+relations, and the English Vocabulary A1-B2 course hierarchy. It does not delete
+records and does not own TOEIC, Reading, Grammar, users, progress, or custom
+content. Existing records outside that boundary are retained. Running the same
+canonical source again is a no-op.
+
+Classification and expansion never update PostgreSQL. Other commands that can
+write the database remain explicit (`data:seed-topics`, enrichment commands, or
+a confirmed normalization/POS apply). `data:seed-topics` synchronizes canonical
+Topic records and catalog relations and is not a classifier. Never run a
 database-writing command merely to validate source files.
 
-`data:seed-topics` synchronizes canonical Topic records and catalog relations; it
-also synchronizes English/Vietnamese Topic presentation fields and is not a
-classifier. `db:seed` may write broad learning content and progress
-dependencies. Confirm the target environment, backup policy, expected record
-counts, and relationship behavior before either command.
+Normal deployment does not run a seed or bootstrap automatically. The compiled
+production operator sequence and backup requirements are owned by
+`docs/guides/ci-cd.md`.
 
 ## Failure, rollback, and recovery
 

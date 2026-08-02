@@ -151,6 +151,41 @@ Optional health-check secrets:
 The workflow runs database migrations, but it does not seed application data.
 Production seed/import tasks require an explicit runbook and backup policy.
 
+### Production Vocabulary bootstrap
+
+Vocabulary bootstrap is not an automatic deployment step. Use it only when a
+new database needs the canonical Vocabulary dataset or an approved canonical
+source change must be synchronized. Normal releases continue to migrate the
+schema, start the services, and run health checks without importing data.
+
+On the deployment host, first run the packaged read-only plan:
+
+```sh
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api pnpm data:bootstrap-vocabulary:compiled -- plan
+```
+
+Verify the sanitized target, hashes, create/update/reuse counts, zero destructive
+operations, retained external-record count, and generated confirmation token.
+Create and verify a restorable database backup before either remaining step.
+Then run the transactional rollback rehearsal:
+
+```sh
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api pnpm data:bootstrap-vocabulary:compiled -- dry-run
+```
+
+If the dry-run report matches the reviewed plan, copy the fresh token from that
+report and apply it exactly once:
+
+```sh
+confirmation='APPLY_VOCABULARY_BOOTSTRAP_<CURRENT_TOKEN>'
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api pnpm data:bootstrap-vocabulary:compiled -- apply --confirm "$confirmation"
+```
+
+Stop if the target, hashes, counts, or confirmation token changes. Investigate
+the drift and repeat plan, backup, and dry-run rather than forcing a stale plan.
+The command is additive/idempotent and must report zero destructive operations;
+it must not replace a general production restore procedure.
+
 ## Package visibility and access
 
 New GHCR packages may be private depending on account or organization policy.
@@ -232,6 +267,6 @@ was pushed; a local tag alone does not trigger GitHub Actions.
 ## Deployment is not data import
 
 The deployment workflow rolls out images and applies schema migrations. It does
-not run `db:seed`, vocabulary enrichment, topic classification, topic expansion,
-or audio enrichment. Those data workflows can be destructive or provider-backed
-and require an explicit backup/review step.
+not run `db:seed:dev`, Vocabulary bootstrap, vocabulary enrichment, topic
+classification, topic expansion, or audio enrichment. Those data workflows can
+be destructive or provider-backed and require an explicit backup/review step.

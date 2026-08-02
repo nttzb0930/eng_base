@@ -113,3 +113,35 @@ test("safe Vocabulary bootstrap source cannot contain destructive database opera
   assert.doesNotMatch(source, /\bTRUNCATE\b/iu);
   assert.doesNotMatch(source, /db:migrate:reset/u);
 });
+
+test("canonical docs define the reviewed production Vocabulary bootstrap runbook", () => {
+  const workspaceRoot = join(apiRoot, "../..");
+  const vocabularyGuide = readFileSync(
+    join(workspaceRoot, "docs/data/vocabulary-pipeline.md"),
+    "utf8"
+  );
+  const deploymentGuide = readFileSync(
+    join(workspaceRoot, "docs/guides/ci-cd.md"),
+    "utf8"
+  );
+  const verificationGuide = readFileSync(
+    join(workspaceRoot, "docs/guides/verification.md"),
+    "utf8"
+  );
+
+  assert.match(vocabularyGuide, /db:seed:dev/u);
+  assert.match(vocabularyGuide, /data:bootstrap-vocabulary -- plan/u);
+  assert.match(vocabularyGuide, /data:bootstrap-vocabulary -- dry-run/u);
+  assert.match(
+    vocabularyGuide,
+    /data:bootstrap-vocabulary -- apply --confirm/u
+  );
+  assert.match(vocabularyGuide, /7,429 records/u);
+  assert.doesNotMatch(vocabularyGuide, /currently contains 3,000 records/u);
+  assert.match(deploymentGuide, /backup/iu);
+  assert.match(deploymentGuide, /data:bootstrap-vocabulary:compiled/u);
+  assert.match(deploymentGuide, /not.*automatic/iu);
+  assert.match(verificationGuide, /vocabulary-bootstrap-plan\.test\.ts/u);
+  assert.match(verificationGuide, /vocabulary-bootstrap-store\.test\.ts/u);
+  assert.match(verificationGuide, /bootstrap-vocabulary\.test\.ts/u);
+});

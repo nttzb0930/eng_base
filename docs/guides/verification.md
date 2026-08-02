@@ -45,13 +45,14 @@ The normal API test command covers vocabulary source-layout rules. Pure workflow
 tests below the offline script tree are a separate gate:
 
 ```powershell
-pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/development-seed-guard.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/database/vocabulary-bootstrap-plan.test.ts scripts/vocabulary/database/vocabulary-bootstrap-store.test.ts scripts/vocabulary/database/bootstrap-vocabulary.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
 ```
 
 These tests validate canonical catalog/taxonomy structure, duplicate identity,
 Topic references, deterministic classification IDs, fail-closed provider
-responses, expansion deficits, provenance, and exact example requirements. They
-do not call a provider or write PostgreSQL.
+responses, expansion deficits, provenance, exact example requirements, the
+production seed guard, and safe bootstrap planning/transaction/CLI behavior.
+They do not call a provider or write PostgreSQL.
 
 ## Full pre-handoff gate
 
@@ -60,7 +61,7 @@ Run sequentially from the repository root:
 ```powershell
 pnpm architecture:check
 pnpm test
-pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/development-seed-guard.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/database/vocabulary-bootstrap-plan.test.ts scripts/vocabulary/database/vocabulary-bootstrap-store.test.ts scripts/vocabulary/database/bootstrap-vocabulary.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
 pnpm check-types
 pnpm lint
 pnpm build

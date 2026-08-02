@@ -125,7 +125,17 @@ test("vocabulary scripts are owned by explicit workflow folders", () => {
 
 test("database seed adapters consume canonical sources without topic declarations", () => {
   const seedSource = [
-    readFileSync(join(apiRoot, "scripts", "seed.ts"), "utf8"),
+    readFileSync(join(apiRoot, "scripts", "seed-dev.ts"), "utf8"),
+    readFileSync(
+      join(
+        apiRoot,
+        "scripts",
+        "vocabulary",
+        "database",
+        "bootstrap-vocabulary.ts",
+      ),
+      "utf8",
+    ),
     readFileSync(
       join(
         apiRoot,
