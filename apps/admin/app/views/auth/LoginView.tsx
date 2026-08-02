@@ -70,9 +70,7 @@ export function LoginView() {
             <GraduationCap aria-hidden="true" className="size-6" />
           </div>
           <div className="space-y-2">
-            <CardTitle className="text-2xl tracking-tight">
-              {appName} Admin
-            </CardTitle>
+            <CardTitle className="text-2xl">{appName} Admin</CardTitle>
             <CardDescription className="font-normal">
               Đăng nhập để quản lý nội dung và cấu hình hệ thống.
             </CardDescription>

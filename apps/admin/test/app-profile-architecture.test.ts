@@ -151,6 +151,22 @@ test("shared Admin presentation imports use app-owned paths", () => {
   }
 });
 
+test("Admin screens avoid legacy heavy presentation overrides", () => {
+  const productionSources = filesUnder(join(root, "app"))
+    .filter((file) => /\.tsx?$/u.test(file))
+    .filter((file) => !file.includes(join("components", "ui")));
+  const forbidden =
+    /font-(?:bold|black|extrabold)|tracking-(?:tight|tighter)|(?:bg|text|border)-zinc-|bg-white|shadow-(?:xl|2xl)|rounded-(?:2xl|3xl)|<(?:select|textarea)\b|type="radio"|window\.confirm|dangerouslySetInnerHTML/u;
+
+  for (const file of productionSources) {
+    assert.doesNotMatch(
+      readFileSync(file, "utf8"),
+      forbidden,
+      `${file} contains a legacy heavy presentation override`,
+    );
+  }
+});
+
 test("Admin architecture check includes every architecture test", () => {
   const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
     scripts?: Record<string, string>;
