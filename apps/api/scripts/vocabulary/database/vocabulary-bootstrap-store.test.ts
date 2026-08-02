@@ -8,6 +8,7 @@ import {
 } from "./vocabulary-bootstrap-plan.js";
 import {
   executeVocabularyBootstrap,
+  prismaVocabularyBootstrapDependencies,
   type VocabularyBootstrapStoreDependencies,
 } from "./vocabulary-bootstrap-store.js";
 
@@ -89,6 +90,23 @@ function createTransactionClient() {
   };
   return { calls, client };
 }
+
+test("advisory lock query projects a Prisma-supported scalar", async () => {
+  let sql = "";
+  const transaction = {
+    async $queryRaw(query: { sql: string }) {
+      sql = query.sql;
+      return [{ acquired: true }];
+    },
+  };
+
+  await prismaVocabularyBootstrapDependencies.acquireLock(
+    transaction as never
+  );
+
+  assert.match(sql, /pg_advisory_xact_lock/iu);
+  assert.match(sql, /IS NULL/iu);
+});
 
 test("dry-run executes the writer and returns a rolled-back report", async () => {
   const plan = buildVocabularyBootstrapPlan(source, emptyLiveState);

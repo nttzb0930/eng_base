@@ -676,7 +676,7 @@ export const prismaVocabularyBootstrapDependencies: VocabularyBootstrapStoreDepe
   {
     async acquireLock(transaction) {
       await transaction.$queryRaw(
-        Prisma.sql`SELECT pg_advisory_xact_lock(${ADVISORY_LOCK_ID})`
+        Prisma.sql`SELECT pg_advisory_xact_lock(${ADVISORY_LOCK_ID}) IS NULL AS acquired`
       );
     },
     loadLiveState: loadVocabularyBootstrapState,
