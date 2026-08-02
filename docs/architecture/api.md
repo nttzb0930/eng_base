@@ -163,7 +163,8 @@ preserves Full Test behavior across all 100 Reading questions. Legacy Full Test
 attempts keep `practice_part = null`.
 
 Test discovery orders newer source-set labels first and applies natural numeric
-ordering within each set, so titles are delivered as `Test 1`, `Test 2`, ...
+ordering within each set, so `Test 1` through `Test 10` remain in numeric order
+regardless of import timestamps or database IDs.
 
 TOEIC Reading draft progress is backend-owned and authenticated. One snapshot is
 stored per `(user_id, test_id, scope)`, where scope is Full Test, Part 5, Part 6,
@@ -181,7 +182,9 @@ identified by Learner, test, Part, and source version. Each question can produce
 one immutable graded answer snapshot per session, and request keys make answer
 retries idempotent. Correct answers and explanations remain server-owned and
 become learner-visible only for questions already graded in that session.
-`Test 10` regardless of import timestamps or database IDs.
+The start, get, grade-answer, update-navigation, and complete routes delegate to
+separate goal use cases. Completion requires every Part question to have one
+graded answer; Full Test submission never calls these practice routes.
 
 The approved inventory's source-set label is canonical provenance, not a value
 derived from a source update timestamp. It flows through private canonical

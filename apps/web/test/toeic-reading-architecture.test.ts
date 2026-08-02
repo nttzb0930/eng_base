@@ -121,9 +121,7 @@ test("TOEIC session renders one active question with Previous and Next controls"
 test("TOEIC drafts use authenticated API autosave and server-projected card progress", () => {
   const session = read("app/views/toeic-reading/ToeicReadingSessionView.tsx");
   const list = read("app/views/toeic-reading/ToeicReadingListView.tsx");
-  const resource = read(
-    "app/features/toeic-reading/api/toeic-reading.api.ts"
-  );
+  const resource = read("app/features/toeic-reading/api/toeic-reading.api.ts");
 
   assert.match(session, /useToeicReadingDraft/);
   assert.match(session, /createToeicReadingDraftQueue/);
@@ -132,4 +130,27 @@ test("TOEIC drafts use authenticated API autosave and server-projected card prog
   assert.match(list, /testItem\.draftProgress/);
   assert.match(list, /role="progressbar"/);
   assert.match(resource, /tests\/\$\{testId\}\/draft/);
+});
+
+test("TOEIC Reading Full Test remains deferred-grading and separate from Part practice", () => {
+  const route = read(
+    "app/[locale]/(session)/toeic/reading/tests/[testId]/page.tsx"
+  );
+  const fullTest = read("app/views/toeic-reading/ToeicReadingSessionView.tsx");
+  const partPractice = read(
+    "app/views/toeic-reading/ToeicReadingPracticeView.tsx"
+  );
+
+  assert.match(route, /scope === "full"/);
+  assert.match(
+    route,
+    /<ToeicReadingSessionView testId=\{Number\(testId\)\} scope=\{scope\}/
+  );
+  assert.match(fullTest, /useToeicReadingDraft/);
+  assert.match(fullTest, /useSaveToeicReadingDraft/);
+  assert.match(fullTest, /useSubmitToeicReadingAttempt/);
+  assert.match(fullTest, /const complete = submissionAnswers !== null/);
+  assert.doesNotMatch(fullTest, /useGradeToeicReadingPracticeAnswer/);
+  assert.match(partPractice, /useGradeToeicReadingPracticeAnswer/);
+  assert.doesNotMatch(partPractice, /useSubmitToeicReadingAttempt/);
 });

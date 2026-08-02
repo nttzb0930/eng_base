@@ -510,11 +510,11 @@ git commit -m "feat(web): add TOEIC Reading passage practice"
 
 - Confirms Full Test remains deferred-grading and documents the released Part Practice behavior.
 
-- [ ] **Step 1: Add explicit Full Test regression assertions**
+- [x] **Step 1: Add explicit Full Test regression assertions**
 
 Assert that `scope=full` still renders `ToeicReadingSessionView`, fetches/saves drafts, requires all answers before submission, and never calls practice-session grading.
 
-- [ ] **Step 2: Run focused API and Web suites**
+- [x] **Step 2: Run focused API and Web suites**
 
 ```powershell
 pnpm --filter @repo/api test -- toeic-reading
@@ -523,11 +523,11 @@ pnpm --filter @repo/web exec tsx --test app/features/toeic-reading/tests/*.test.
 
 Expected: all TOEIC Reading tests pass.
 
-- [ ] **Step 3: Update canonical architecture documents**
+- [x] **Step 3: Update canonical architecture documents**
 
 Document the route split, server-owned immediate grading, practice persistence, safe stimulus rendering, and the continued separation from Full Test drafts/attempts. Do not duplicate the detailed design spec.
 
-- [ ] **Step 4: Run full verification gates sequentially**
+- [x] **Step 4: Run full verification gates sequentially**
 
 ```powershell
 pnpm architecture:check
@@ -540,7 +540,7 @@ git diff --check
 
 Expected: every command exits 0. Existing lint warnings may be reported only if they remain warnings and are unrelated to this change.
 
-- [ ] **Step 5: Mark this plan complete and commit**
+- [x] **Step 5: Mark this plan complete and commit**
 
 Update every completed checkbox in this plan, then run:
 

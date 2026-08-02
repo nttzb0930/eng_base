@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { ConflictException, NotFoundException } from "@nestjs/common";
+import {
+  BadRequestException,
+  ConflictException,
+  NotFoundException,
+} from "@nestjs/common";
 
 import type { PrismaService } from "../../../database/prisma/prisma.service";
 import { SubmitToeicReadingAttemptUseCase } from "../use-cases/submit-toeic-reading-attempt.use-case";
@@ -165,6 +169,45 @@ test("persists the selected Part for a Part-only attempt", async () => {
 
   assert.equal(result.practicePart, 5);
   assert.equal(creates[0]?.data.practice_part, 5);
+});
+
+test("rejects an incomplete Full Test before creating an attempt", async () => {
+  let transactions = 0;
+  const prisma = {
+    toeic_reading_attempts: { findUnique: () => Promise.resolve(null) },
+    toeic_tests: {
+      findFirst: () =>
+        Promise.resolve({
+          ...storedTest,
+          toeic_questions: [
+            ...storedTest.toeic_questions,
+            {
+              ...storedTest.toeic_questions[0],
+              id: 102,
+              number: 102,
+              toeic_question_options: [
+                { id: 2001, label: "A", text: "is", correct: true },
+                { id: 2002, label: "B", text: "are", correct: false },
+              ],
+            },
+          ],
+        }),
+    },
+    $transaction: () => {
+      transactions += 1;
+      return Promise.reject(new Error("transaction must not run"));
+    },
+  } as unknown as PrismaService;
+
+  await assert.rejects(
+    () =>
+      new SubmitToeicReadingAttemptUseCase(prisma).execute(
+        "learner-1",
+        submission
+      ),
+    BadRequestException
+  );
+  assert.equal(transactions, 0);
 });
 
 test("returns the original attempt for an identical idempotent retry", async () => {
