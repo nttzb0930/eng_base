@@ -1,4 +1,9 @@
+import type { ToeicListeningVocabularySuggestion } from "./toeic-listening.js";
+
 export type ToeicReadingPart = 5 | 6 | 7;
+
+export type ToeicReadingVocabularySuggestion =
+  ToeicListeningVocabularySuggestion;
 
 export type ToeicReadingPartSummary = {
   part: ToeicReadingPart;
@@ -168,6 +173,8 @@ export type ToeicReadingPracticeAnswerResult = {
   correctOption: ToeicReadingLearnerOption;
   explanation: string | null;
   questionTranslation: string | null;
+  answerTranslations: Array<{ label: string; text: string }>;
+  vocabulary: ToeicReadingVocabularySuggestion[];
   progress: ToeicReadingPracticeProgress;
   nextQuestionId: number | null;
 };

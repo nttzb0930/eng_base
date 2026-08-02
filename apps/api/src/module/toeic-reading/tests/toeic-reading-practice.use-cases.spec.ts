@@ -64,7 +64,32 @@ const storedSession = {
   created_at: new Date("2026-08-02T00:00:00.000Z"),
   updated_at: new Date("2026-08-02T00:00:00.000Z"),
   completed_at: null,
-  toeic_tests: testContent,
+  toeic_tests: {
+    ...testContent,
+    toeic_questions: testContent.toeic_questions.map((question) =>
+      question.id === 101
+        ? {
+            ...question,
+            toeic_question_vocabulary_cache: {
+              vocabulary: [
+                {
+                  word: "arrive",
+                  pos: "v",
+                  cefr: "A2",
+                  meaning_vi: "đến",
+                  ipa_us: null,
+                  ipa_uk: null,
+                  example_en: null,
+                  example_vi: null,
+                  collocations: [],
+                  synonym: null,
+                },
+              ],
+            },
+          }
+        : { ...question, toeic_question_vocabulary_cache: null }
+    ),
+  },
   toeic_reading_practice_answers: [],
 };
 
@@ -161,6 +186,7 @@ test("get exposes feedback only for already graded questions", async () => {
   assert.equal(result.answers[0]?.correctOption.id, 1002);
   assert.equal("correct" in result.content.parts[0]!.questions[0]!, false);
   assert.equal("explanation" in result.content.parts[0]!.questions[1]!, false);
+  assert.equal("vocabulary" in result.content.parts[0]!.questions[0]!, false);
 });
 
 test("get hides foreign practice sessions", async () => {
@@ -294,6 +320,9 @@ test("grade stores one immutable answer and increments one counter atomically", 
   assert.equal(createdData?.selected_option_id_snapshot, 1001);
   assert.deepEqual(updatedData, { incorrect_count: { increment: 1 } });
   assert.equal(result.correct, false);
+  assert.deepEqual(result.answerTranslations, []);
+  assert.equal(result.vocabulary.length, 1);
+  assert.equal(result.vocabulary[0]?.word, "arrive");
   assert.equal(result.progress.incorrect, 1);
   assert.equal(result.nextQuestionId, 102);
 });

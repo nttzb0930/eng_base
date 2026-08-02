@@ -171,6 +171,9 @@ export class GradeToeicReadingPracticeAnswerUseCase {
                   part: true,
                   explanation: true,
                   translation: true,
+                  toeic_question_vocabulary_cache: {
+                    select: { vocabulary: true },
+                  },
                   toeic_question_options: {
                     orderBy: { label: "asc" },
                     select: {

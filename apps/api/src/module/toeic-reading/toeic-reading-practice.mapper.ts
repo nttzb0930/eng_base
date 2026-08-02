@@ -7,6 +7,7 @@ import type {
 } from "@repo/shared";
 import type { Prisma } from "@prisma/client";
 
+import { mapToeicListeningVocabulary } from "../toeic-listening/toeic-listening-vocabulary.mapper";
 import { asToeicReadingPart } from "./toeic-reading.mapper";
 
 export const toeicReadingPracticeSessionSelect = {
@@ -48,6 +49,9 @@ export const toeicReadingPracticeSessionSelect = {
           prompt: true,
           translation: true,
           explanation: true,
+          toeic_question_vocabulary_cache: {
+            select: { vocabulary: true },
+          },
           toeic_question_options: {
             orderBy: { label: "asc" as const },
             select: {
@@ -89,7 +93,11 @@ type PracticeAnswerContext = {
   correct_count: number;
   incorrect_count: number;
   toeic_tests: {
-    toeic_questions: Array<{ id: number; part: number }>;
+    toeic_questions: Array<{
+      id: number;
+      part: number;
+      toeic_question_vocabulary_cache?: { vocabulary: unknown } | null;
+    }>;
   };
 };
 
@@ -129,12 +137,23 @@ export function mapToeicReadingPracticeAnswer(
     },
     explanation: answer.explanation_snapshot,
     questionTranslation: answer.question_translation_snapshot,
+    answerTranslations: [],
+    vocabulary: mapToeicReadingVocabulary(
+      session.toeic_tests.toeic_questions.find(
+        (question) => question.id === answer.question_id_snapshot
+      )?.toeic_question_vocabulary_cache?.vocabulary
+    ),
     progress: practiceProgress(session),
     nextQuestionId:
       index >= 0 && index < questions.length - 1
         ? (questions[index + 1]?.id ?? null)
         : null,
   };
+}
+
+function mapToeicReadingVocabulary(value: unknown) {
+  if (value === undefined || value === null) return [];
+  return mapToeicListeningVocabulary(value);
 }
 
 export function mapToeicReadingPracticeSession(

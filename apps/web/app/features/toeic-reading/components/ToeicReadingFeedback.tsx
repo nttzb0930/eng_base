@@ -1,5 +1,11 @@
 import type { ToeicReadingPracticeAnswerResult } from "@repo/shared";
-import { CheckCircle2, Languages, Lightbulb, XCircle } from "lucide-react";
+import {
+  BookOpenText,
+  CheckCircle2,
+  Languages,
+  Lightbulb,
+  XCircle,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export function ToeicReadingFeedback({
@@ -54,6 +60,59 @@ export function ToeicReadingFeedback({
             {t("practice.translation")}
           </h3>
           <p className="mt-2 text-sm leading-6">{answer.questionTranslation}</p>
+        </div>
+      ) : null}
+
+      {answer.answerTranslations.length > 0 ? (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50/70 p-4 dark:border-emerald-900 dark:bg-emerald-950/50">
+          <h3 className="flex items-center gap-2 text-sm font-semibold text-emerald-800 dark:text-emerald-200">
+            <Languages className="h-4 w-4" aria-hidden="true" />
+            {t("practice.answerTranslations")}
+          </h3>
+          <div className="mt-2 space-y-1 text-sm leading-6">
+            {answer.answerTranslations.map((item) => (
+              <p key={item.label}>
+                <span className="font-semibold">({item.label})</span>{" "}
+                {item.text}
+              </p>
+            ))}
+          </div>
+        </div>
+      ) : null}
+
+      {answer.vocabulary.length > 0 ? (
+        <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-4 dark:border-amber-900 dark:bg-amber-950/50">
+          <h3 className="flex items-center gap-2 text-sm font-semibold text-amber-800 dark:text-amber-200">
+            <BookOpenText className="h-4 w-4" aria-hidden="true" />
+            {t("practice.vocabulary")}
+          </h3>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            {answer.vocabulary.map((item) => (
+              <article
+                key={`${item.word}-${item.pos}`}
+                className="bg-background/70 rounded-lg border border-amber-200/80 p-3 text-sm dark:border-amber-800"
+              >
+                <div className="flex items-baseline gap-2">
+                  <strong>{item.word}</strong>
+                  <span className="text-muted-foreground">{item.pos}</span>
+                  <span className="rounded bg-amber-200/70 px-1.5 py-0.5 text-xs font-semibold text-amber-900 dark:bg-amber-900 dark:text-amber-100">
+                    {item.cefrLevel}
+                  </span>
+                </div>
+                <p className="mt-1 leading-6">{item.meaningVi}</p>
+                {item.exampleEn ? (
+                  <p className="text-muted-foreground mt-2 italic leading-5">
+                    {item.exampleEn}
+                  </p>
+                ) : null}
+                {item.exampleVi ? (
+                  <p className="text-muted-foreground mt-1 leading-5">
+                    {item.exampleVi}
+                  </p>
+                ) : null}
+              </article>
+            ))}
+          </div>
         </div>
       ) : null}
     </section>
