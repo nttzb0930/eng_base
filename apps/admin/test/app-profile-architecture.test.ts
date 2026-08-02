@@ -198,6 +198,21 @@ test("Admin Users follows the frontend feature/view profile", () => {
   assert.equal(routeSource.includes("@/src/views/users"), false);
 });
 
+test("Admin Users keeps management presentation in its feature", () => {
+  for (const path of [
+    "app/features/users/components/UsersManagementScreen.tsx",
+    "app/features/users/components/user-columns.tsx",
+    "app/features/users/components/UserEditorForm.tsx",
+    "app/features/users/components/user-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+  const view = readFileSync(join(root, "app/views/users/UsersView.tsx"), "utf8");
+  assert.equal(view.includes("UsersManagementScreen"), true);
+  assert.equal(view.includes("useState"), false);
+  assert.equal(view.split("\n").length <= 8, true);
+});
+
 test("Admin Practice Sessions follows the Practice owner profile", () => {
   assert.equal(existsSync(join(root, "app/features/practice/api/practice-session.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/practice/hooks/use-practice-sessions.ts")), true);
