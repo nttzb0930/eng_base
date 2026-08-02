@@ -147,6 +147,26 @@ test("Lessons screen composes focused Shadcn management components", () => {
   }
 });
 
+test("Challenges screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/challenges/challenge-columns.tsx",
+    "app/features/courses/components/challenges/ChallengeEditorForm.tsx",
+    "app/features/courses/components/challenges/challenge-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/ChallengesManagementScreen.tsx"),
+    "utf8",
+  );
+  for (const expected of ["PageHeader", "DestructiveActionDialog", "ChallengeEditorForm"]) {
+    assert.equal(source.includes(expected), true, `${expected} must be composed`);
+  }
+  for (const forbidden of ["confirm(", "text-zinc", "bg-white", "font-bold"]) {
+    assert.equal(source.includes(forbidden), false, `${forbidden} is forbidden`);
+  }
+});
+
 test("course resources use TypeScript-only shared types", () => {
   const apiRoot = join(appRoot, "app/features/courses/api");
   for (const file of resourceFiles) {
