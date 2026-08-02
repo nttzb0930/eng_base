@@ -44,10 +44,15 @@ test("TOEIC Reading controller exposes guarded learner routes", () => {
     "GET attempts",
     "GET attempts/:attemptId",
     "GET overview",
+    "GET practice-sessions/:sessionId",
     "GET tests",
     "GET tests/:testId",
     "GET tests/:testId/draft",
+    "PATCH practice-sessions/:sessionId",
     "POST attempts",
+    "POST practice-sessions",
+    "POST practice-sessions/:sessionId/answers",
+    "POST practice-sessions/:sessionId/complete",
     "PUT tests/:testId/draft",
   ]);
 });
@@ -63,7 +68,12 @@ test("TOEIC Reading controller forwards the selected Part to learner reads", asy
     {} as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
-    { execute: (...args: unknown[]) => calls.push(args) } as never
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    {} as never,
+    {} as never,
+    {} as never,
+    {} as never,
+    {} as never
   );
   const scoped = controller as unknown as {
     tests(userId: string, query: { part?: 5 | 6 | 7 }): Promise<unknown>;

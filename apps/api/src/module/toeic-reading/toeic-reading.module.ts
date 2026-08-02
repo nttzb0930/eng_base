@@ -11,6 +11,11 @@ import { SubmitToeicReadingAttemptUseCase } from "./use-cases/submit-toeic-readi
 import { DeleteToeicReadingDraftUseCase } from "./use-cases/delete-toeic-reading-draft.use-case";
 import { GetToeicReadingDraftUseCase } from "./use-cases/get-toeic-reading-draft.use-case";
 import { SaveToeicReadingDraftUseCase } from "./use-cases/save-toeic-reading-draft.use-case";
+import { CompleteToeicReadingPracticeUseCase } from "./use-cases/complete-toeic-reading-practice.use-case";
+import { GetToeicReadingPracticeUseCase } from "./use-cases/get-toeic-reading-practice.use-case";
+import { GradeToeicReadingPracticeAnswerUseCase } from "./use-cases/grade-toeic-reading-practice-answer.use-case";
+import { StartToeicReadingPracticeUseCase } from "./use-cases/start-toeic-reading-practice.use-case";
+import { UpdateToeicReadingPracticeUseCase } from "./use-cases/update-toeic-reading-practice.use-case";
 
 @Module({
   controllers: [ToeicReadingController],
@@ -24,6 +29,11 @@ import { SaveToeicReadingDraftUseCase } from "./use-cases/save-toeic-reading-dra
     GetToeicReadingDraftUseCase,
     SaveToeicReadingDraftUseCase,
     DeleteToeicReadingDraftUseCase,
+    GetToeicReadingPracticeUseCase,
+    StartToeicReadingPracticeUseCase,
+    GradeToeicReadingPracticeAnswerUseCase,
+    UpdateToeicReadingPracticeUseCase,
+    CompleteToeicReadingPracticeUseCase,
     UserJwtGuard,
   ],
 })

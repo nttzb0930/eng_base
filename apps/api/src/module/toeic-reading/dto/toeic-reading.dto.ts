@@ -15,6 +15,9 @@ import {
 } from "class-validator";
 import type {
   ToeicReadingDraftPayload,
+  ToeicReadingPracticeAnswerPayload,
+  ToeicReadingPracticeStartPayload,
+  ToeicReadingPracticeUpdatePayload,
   ToeicReadingSubmissionPayload,
 } from "@repo/shared";
 import type { ToeicReadingPart } from "@repo/shared";
@@ -84,4 +87,40 @@ export class ToeicReadingSubmissionDto implements ToeicReadingSubmissionPayload 
   @ValidateNested({ each: true })
   @Type(() => ToeicReadingAnswerDto)
   answers!: ToeicReadingAnswerDto[];
+}
+
+export class ToeicReadingPracticeStartDto implements ToeicReadingPracticeStartPayload {
+  @IsInt()
+  testId!: number;
+
+  @IsInt()
+  @IsIn([5, 6, 7])
+  part!: ToeicReadingPart;
+
+  @IsString()
+  @Length(64, 64)
+  @Matches(/^[a-f0-9]{64}$/)
+  sourceVersion!: string;
+}
+
+export class ToeicReadingPracticeAnswerDto implements ToeicReadingPracticeAnswerPayload {
+  @IsInt()
+  questionId!: number;
+
+  @IsInt()
+  optionId!: number;
+
+  @IsUUID()
+  requestKey!: string;
+}
+
+export class ToeicReadingPracticeUpdateDto implements ToeicReadingPracticeUpdatePayload {
+  @IsInt()
+  activeQuestionId!: number;
+
+  @IsArray()
+  @ArrayMaxSize(100)
+  @ArrayUnique()
+  @IsInt({ each: true })
+  reviewQuestionIds!: number[];
 }

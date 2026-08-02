@@ -210,7 +210,7 @@ git commit -m "feat(api): add TOEIC Reading practice persistence"
 - Consumes: Shared Task 1 payload/result types and Prisma practice models.
 - Produces: authenticated routes under `/toeic/reading/practice-sessions`.
 
-- [ ] **Step 1: Write failing use-case tests**
+- [x] **Step 1: Write failing use-case tests**
 
 Cover these named cases with mocked `PrismaService` methods:
 
@@ -229,12 +229,12 @@ test("complete clears active_key and returns retryable incorrect question ids");
 test("foreign user session ids are not readable or mutable");
 ```
 
-- [ ] **Step 2: Run the use-case tests and verify RED**
+- [x] **Step 2: Run the use-case tests and verify RED**
 
 Run: `pnpm --filter @repo/api exec tsx --test src/module/toeic-reading/tests/toeic-reading-practice.use-cases.spec.ts`  
 Expected: FAIL because the use cases do not exist.
 
-- [ ] **Step 3: Add validated request DTOs**
+- [x] **Step 3: Add validated request DTOs**
 
 ```ts
 export class ToeicReadingPracticeStartDto implements ToeicReadingPracticeStartPayload {
@@ -262,11 +262,11 @@ export class ToeicReadingPracticeUpdateDto implements ToeicReadingPracticeUpdate
 }
 ```
 
-- [ ] **Step 4: Implement the learner-safe mapper and start/get use cases**
+- [x] **Step 4: Implement the learner-safe mapper and start/get use cases**
 
 `mapToeicReadingPracticeSession` must build questions through the same safe mapping rules as `GetToeicReadingTestUseCase` and merge answer feedback only for stored answer rows. Generate `active_key` as a SHA-256 digest of `userId:testId:part:sourceVersion`, and clear it on completion.
 
-- [ ] **Step 5: Implement idempotent grading in a Prisma transaction**
+- [x] **Step 5: Implement idempotent grading in a Prisma transaction**
 
 The use case order is exact:
 
@@ -278,7 +278,7 @@ The use case order is exact:
 6. Create the immutable answer snapshot and increment one session counter in the same transaction.
 7. Return feedback and progress.
 
-- [ ] **Step 6: Expose controller routes**
+- [x] **Step 6: Expose controller routes**
 
 ```ts
 @Post("practice-sessions")
@@ -299,7 +299,7 @@ completePractice(@CurrentUserId() userId: string, @Param("sessionId", ParseIntPi
 
 Add `Patch` to Nest imports and register all use cases in `ToeicReadingModule`.
 
-- [ ] **Step 7: Verify Task 2**
+- [x] **Step 7: Verify Task 2**
 
 Run:
 
@@ -310,7 +310,7 @@ pnpm --filter @repo/api check-types
 
 Expected: all tests and type-check pass.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```powershell
 git add apps/api/src/module/toeic-reading
