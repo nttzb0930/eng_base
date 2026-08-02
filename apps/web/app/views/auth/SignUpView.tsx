@@ -11,6 +11,7 @@ import { withLocale } from "@/app/i18n/paths";
 import { toast } from "sonner";
 import { Eye, EyeOff, Loader2, Mail, Lock, User } from "lucide-react";
 import Image from "next/image";
+import { AuthBrandPanel } from "./components/AuthBrandPanel";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
 
@@ -63,49 +64,7 @@ export function SignUpView() {
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-white lg:flex-row lg:items-start">
-      {/* Left side: Branding & Hero - Hidden on Mobile */}
-      <div className="relative hidden h-screen shrink-0 flex-col justify-between overflow-hidden bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 p-12 text-white lg:flex lg:w-1/2">
-        {/* Subtle grid pattern overlay */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent" />
-
-        {/* Top Logo */}
-        <Link href="/" className="z-10 flex items-center gap-x-3">
-          <Image
-            src="/mascot.svg"
-            alt={t("mascotAlt")}
-            height={44}
-            width={44}
-            className="drop-shadow-md"
-          />
-          <h1 className="text-3xl font-extrabold tracking-wide text-white drop-shadow-sm">
-            {appName}
-          </h1>
-        </Link>
-
-        {/* Mascot Center Illustration */}
-        <div className="z-10 flex flex-grow flex-col items-center justify-center py-12">
-          <div className="relative h-[320px] w-[320px] transition-transform duration-500 ease-out hover:scale-105">
-            <Image
-              src="/hero.svg"
-              alt={t("heroAlt")}
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <h2 className="mt-8 max-w-md text-center text-3xl font-bold leading-tight">
-            {t("signUpSlogan")}
-          </h2>
-          <p className="mt-3 max-w-sm text-center text-sm font-medium text-green-100">
-            {t("signUpSloganDesc")}
-          </p>
-        </div>
-
-        {/* Footer info */}
-        <div className="z-10 text-xs text-green-200">
-          © {new Date().getFullYear()} {appName}.
-        </div>
-      </div>
+      <AuthBrandPanel />
 
       {/* Right side: Register Form */}
       <div className="flex min-h-screen w-full flex-col justify-center overflow-y-auto bg-slate-50 px-6 py-12 sm:px-12 lg:w-1/2 lg:bg-white lg:px-20">
@@ -125,19 +84,15 @@ export function SignUpView() {
             </Link>
           </div>
 
-          <section className="rounded-md border border-slate-200 bg-white p-6 text-center shadow-sm sm:p-8">
-            <h2 className="text-3xl font-extrabold tracking-tight text-neutral-800">
-              {t("signUpTitle")}
-            </h2>
-            <p className="mt-3 text-sm text-neutral-600">
-              {t("hasAccount")}{" "}
-              <Link
-                href="/sign-in"
-                className="font-semibold text-green-600 transition-colors hover:text-green-500"
-              >
-                {t("signInHere")}
-              </Link>
-            </p>
+          <section className="animate-page-enter rounded-md border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-extrabold tracking-tight text-neutral-800">
+                {t("signUpTitle")}
+              </h2>
+              <p className="mt-3 text-sm text-neutral-600">
+                {t("signUpDescription")}
+              </p>
+            </div>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label
@@ -307,6 +262,16 @@ export function SignUpView() {
                   )}
                 </Button>
               </div>
+
+              <p className="pt-2 text-center text-sm text-neutral-600">
+                {t("hasAccount")}{" "}
+                <Link
+                  href="/sign-in"
+                  className="font-semibold text-green-600 transition-colors hover:text-green-500"
+                >
+                  {t("signInHere")}
+                </Link>
+              </p>
             </form>
           </section>
         </div>

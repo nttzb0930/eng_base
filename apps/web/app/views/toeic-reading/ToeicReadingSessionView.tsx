@@ -106,8 +106,8 @@ export function ToeicReadingSessionView({
               question.stimulusId === null
                 ? null
                 : (part.stimuli.find(
-                    (stimulus) => stimulus.id === question.stimulusId
-                  ) ?? null),
+                  (stimulus) => stimulus.id === question.stimulusId
+                ) ?? null),
           }))
         )
         .sort((left, right) => left.question.number - right.question.number),
@@ -269,11 +269,10 @@ export function ToeicReadingSessionView({
             <div
               className="h-full rounded-full bg-emerald-600 transition-[width]"
               style={{
-                width: `${
-                  questionIds.length
+                width: `${questionIds.length
                     ? (answeredCount / questionIds.length) * 100
                     : 0
-                }%`,
+                  }%`,
               }}
             />
           </div>
@@ -318,9 +317,9 @@ export function ToeicReadingSessionView({
               {practicePart === undefined
                 ? t("session.description", { count: testData.questionCount })
                 : t("session.partDescription", {
-                    count: testData.questionCount,
-                    part: practicePart,
-                  })}
+                  count: testData.questionCount,
+                  part: practicePart,
+                })}
             </p>
           </header>
 

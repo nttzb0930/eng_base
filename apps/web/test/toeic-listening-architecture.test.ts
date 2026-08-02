@@ -82,6 +82,8 @@ test("Listening session owns split practice feedback, authenticated media, autos
     /practicePart[\s\S]*checkAnswer|checkAnswer[\s\S]*practicePart/
   );
   assert.match(player, /<audio/);
+  assert.match(player, /<Slider/);
+  assert.doesNotMatch(player, /\bcontrols=/);
   assert.match(player, /canSeekToeicListeningMedia/);
   assert.match(player, /canReplayToeicListeningMedia/);
   assert.match(

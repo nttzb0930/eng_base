@@ -1,10 +1,20 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Loader2, Pause, Play, RotateCcw, Volume2 } from "lucide-react";
+import {
+  Loader2,
+  Pause,
+  Play,
+  RotateCcw,
+  Volume2,
+  VolumeX,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
+import { Slider } from "@/app/components/ui/slider";
+import { PlaybackSpeedSelect } from "@/app/features/toeic-dictation/components/PlaybackSpeedSelect";
+import type { ToeicDictationPlaybackSpeed } from "@/app/features/toeic-dictation/playback-speed";
 
 import { toeicListeningApi } from "../api/toeic-listening.api";
 import {
@@ -26,6 +36,12 @@ type ToeicListeningPlayerProps = {
   onEnded?: () => void;
 };
 
+function formatTime(value: number) {
+  if (!Number.isFinite(value) || value < 0) return "0:00";
+  const seconds = Math.floor(value);
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+}
+
 export function ToeicListeningPlayer({
   mediaId,
   mode,
@@ -41,6 +57,12 @@ export function ToeicListeningPlayer({
   const autoStartedRef = useRef(false);
   const lastCheckpointRef = useRef(0);
   const [practiceLoadAttempt, setPracticeLoadAttempt] = useState(0);
+  const [currentTime, setCurrentTime] = useState(initialPositionMs / 1000);
+  const [duration, setDuration] = useState(0);
+  const [volume, setVolume] = useState(1);
+  const [muted, setMuted] = useState(false);
+  const [playbackSpeed, setPlaybackSpeed] =
+    useState<ToeicDictationPlaybackSpeed>(1);
   const [state, setState] = useState(() =>
     createToeicListeningPlaybackState({
       activeMediaId: initialPositionMs > 0 ? mediaId : null,
@@ -97,6 +119,19 @@ export function ToeicListeningPlayer({
     };
   }, [autoStart, mediaId, mode, practiceLoadAttempt]);
 
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.volume = volume;
+    audio.muted = muted;
+  }, [muted, volume]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.playbackRate = playbackSpeed;
+  }, [playbackSpeed]);
+
   function update(next: ListeningPlaybackState, checkpoint = false) {
     setState(next);
     if (checkpoint) onCheckpoint?.(next);
@@ -147,14 +182,29 @@ export function ToeicListeningPlayer({
     );
   }
 
+  function seek(positionSeconds: number) {
+    const audio = audioRef.current;
+    if (!audio || !canSeekToeicListeningMedia(mode)) return;
+    audio.currentTime = positionSeconds;
+    setCurrentTime(positionSeconds);
+    update(
+      reduceToeicListeningPlayback(
+        state,
+        { type: "SEEK", mediaId, positionMs: positionSeconds * 1000 },
+        mode
+      ),
+      true
+    );
+  }
+
   const replayable = canReplayToeicListeningMedia(state, mediaId, mode);
   return (
-    <div className="bg-muted/60 rounded-xl p-4">
+    <div className="bg-muted/50 rounded-md border p-3 shadow-sm">
       <audio
         ref={audioRef}
-        controls={canSeekToeicListeningMedia(mode)}
         aria-label={t("audioLabel")}
-        className={mode === "PRACTICE" ? "w-full" : "sr-only"}
+        className="sr-only"
+        onLoadedMetadata={(event) => setDuration(event.currentTarget.duration)}
         onPlay={() => {
           setState((current) =>
             reduceToeicListeningPlayback(
@@ -165,23 +215,11 @@ export function ToeicListeningPlayer({
           );
         }}
         onTimeUpdate={(event) => {
+          setCurrentTime(event.currentTarget.currentTime);
           const positionMs = event.currentTarget.currentTime * 1000;
           if (positionMs - lastCheckpointRef.current < 5000) return;
           lastCheckpointRef.current = positionMs;
           onCheckpoint?.({ ...state, positionMs });
-        }}
-        onSeeked={(event) => {
-          if (!canSeekToeicListeningMedia(mode)) return;
-          const next = reduceToeicListeningPlayback(
-            state,
-            {
-              type: "SEEK",
-              mediaId,
-              positionMs: event.currentTarget.currentTime * 1000,
-            },
-            mode
-          );
-          update(next, true);
         }}
         onPause={() => {
           if (!audioRef.current?.ended && state.status === "PLAYING") pause();
@@ -197,7 +235,7 @@ export function ToeicListeningPlayer({
         }}
       />
 
-      {mode === "PRACTICE" && state.status === "ERROR" ? (
+      {state.status === "ERROR" ? (
         <Button
           type="button"
           onClick={() => {
@@ -207,53 +245,89 @@ export function ToeicListeningPlayer({
             }
             setPracticeLoadAttempt((attempt) => attempt + 1);
           }}
-          className="mt-3 gap-2"
+          className="w-full gap-2 rounded-md"
         >
           <RotateCcw className="h-4 w-4" aria-hidden="true" />
           {t("retry")}
         </Button>
       ) : null}
 
-      {mode === "FULL" ? (
-        <div className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-            <Volume2 className="h-5 w-5" aria-hidden="true" />
-          </span>
-          {state.status === "PLAYING" ? (
-            <Button type="button" onClick={pause} className="gap-2">
+      {state.status !== "ERROR" ? (
+        <div className="flex min-w-0 items-center gap-2">
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            disabled={!replayable || state.status === "LOADING"}
+            onClick={() =>
+              state.status === "PLAYING"
+                ? pause()
+                : void loadAndPlay(
+                    state.status === "PAUSED" ? "RESUME" : "START"
+                  )
+            }
+            aria-label={state.status === "PLAYING" ? t("pause") : t("play")}
+            className="h-9 w-9 shrink-0 rounded-md"
+          >
+            {state.status === "LOADING" ? (
+              <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+            ) : state.status === "PLAYING" ? (
               <Pause className="h-4 w-4" aria-hidden="true" />
-              {t("pause")}
-            </Button>
-          ) : state.status === "ERROR" ? (
+            ) : (
+              <Play className="ml-0.5 h-4 w-4" aria-hidden="true" />
+            )}
+          </Button>
+          <span className="text-muted-foreground w-[72px] shrink-0 text-center text-xs tabular-nums">
+            {formatTime(currentTime)} / {formatTime(duration)}
+          </span>
+          {canSeekToeicListeningMedia(mode) ? (
+            <Slider
+              value={[currentTime]}
+              max={Math.max(duration, 0.1)}
+              step={0.01}
+              onValueChange={([value]) => value !== undefined && seek(value)}
+              aria-label={t("audioLabel")}
+              className="min-w-0 flex-1"
+            />
+          ) : (
+            <span className="min-w-0 flex-1" />
+          )}
+          {mode === "PRACTICE" ? (
             <Button
               type="button"
-              onClick={() => void loadAndPlay("RETRY")}
-              className="gap-2"
+              variant="ghost"
+              size="icon"
+              onClick={() => seek(0)}
+              aria-label={t("retry")}
+              className="h-9 w-9 shrink-0 rounded-md"
             >
               <RotateCcw className="h-4 w-4" aria-hidden="true" />
-              {t("retry")}
             </Button>
-          ) : (
-            <Button
-              type="button"
-              disabled={!replayable || state.status === "LOADING"}
-              onClick={() =>
-                void loadAndPlay(state.status === "PAUSED" ? "RESUME" : "START")
-              }
-              className="gap-2"
-            >
-              {state.status === "LOADING" ? (
-                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-              ) : (
-                <Play className="h-4 w-4" aria-hidden="true" />
-              )}
-              {state.status === "PAUSED" ? t("resume") : t("play")}
-            </Button>
-          )}
-          <span className="text-muted-foreground text-xs font-semibold">
-            {state.status === "ENDED" ? t("completed") : t("fullPolicy")}
-          </span>
+          ) : null}
+          <PlaybackSpeedSelect
+            value={playbackSpeed}
+            onValueChange={setPlaybackSpeed}
+          />
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={() => setMuted((current) => !current)}
+            aria-label={t("audioLabel")}
+            className="h-9 w-9 shrink-0 rounded-md"
+          >
+            {muted ? (
+              <VolumeX className="h-4 w-4" aria-hidden="true" />
+            ) : (
+              <Volume2 className="h-4 w-4" aria-hidden="true" />
+            )}
+          </Button>
         </div>
+      ) : null}
+      {mode === "FULL" ? (
+        <p className="text-muted-foreground mt-2 text-center text-xs font-semibold">
+          {state.status === "ENDED" ? t("completed") : t("fullPolicy")}
+        </p>
       ) : null}
     </div>
   );

@@ -50,9 +50,10 @@ export function ToeicReadingWorkspace({
           disabled={firstQuestion || busy}
           onClick={onPrevious}
           className="gap-2 rounded-md"
+          aria-label={t("practice.previous")}
         >
           <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden="true" />
-          <span>{t("practice.previous")}</span>
+          <span className="hidden sm:inline">{t("practice.previous")}</span>
         </Button>
 
         {questionDrawer}
@@ -74,8 +75,9 @@ export function ToeicReadingWorkspace({
             disabled={busy}
             onClick={onNext}
             className="gap-2 rounded-md"
+            aria-label={t("practice.next")}
           >
-            <span>{t("practice.next")}</span>
+            <span className="hidden sm:inline">{t("practice.next")}</span>
             <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
           </Button>
         )}

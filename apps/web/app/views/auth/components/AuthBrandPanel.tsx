@@ -20,7 +20,7 @@ export function AuthBrandPanel() {
         </span>
       </Link>
       <div className="z-10 flex flex-grow flex-col items-center justify-center py-12">
-        <div className="relative h-[320px] w-[320px]">
+        <div className="relative h-[320px] w-[320px] transition-transform duration-500 ease-out hover:scale-105">
           <Image
             src="/hero.svg"
             alt={t("heroAlt")}

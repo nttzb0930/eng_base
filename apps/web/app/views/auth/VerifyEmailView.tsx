@@ -21,6 +21,8 @@ import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { withLocale } from "@/app/i18n/paths";
 import Image from "next/image";
 
+import { AuthBrandPanel } from "./components/AuthBrandPanel";
+
 const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
 
 export function VerifyEmailView() {
@@ -135,41 +137,7 @@ export function VerifyEmailView() {
 
   return (
     <main className="flex min-h-screen w-full flex-col bg-white lg:flex-row lg:items-start">
-      <div className="relative hidden h-screen shrink-0 flex-col justify-between overflow-hidden bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 p-12 text-white lg:flex lg:w-1/2">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent" />
-        <Link href="/" className="z-10 flex items-center gap-x-3">
-          <Image
-            src="/mascot.svg"
-            alt={t("mascotAlt")}
-            height={44}
-            width={44}
-            className="drop-shadow-md"
-          />
-          <span className="text-3xl font-extrabold tracking-wide text-white drop-shadow-sm">
-            {appName}
-          </span>
-        </Link>
-        <div className="z-10 flex flex-grow flex-col items-center justify-center py-12 text-center">
-          <div className="relative h-[260px] w-[260px]">
-            <Image
-              src="/hero.svg"
-              alt={t("heroAlt")}
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <h2 className="mt-8 max-w-md text-3xl font-bold leading-tight">
-            {t("verificationTitle")}
-          </h2>
-          <p className="mt-3 max-w-sm text-sm font-medium text-green-100">
-            {t("verificationDescription")}
-          </p>
-        </div>
-        <div className="z-10 text-xs text-green-200">
-          © {new Date().getFullYear()} {appName}.
-        </div>
-      </div>
+      <AuthBrandPanel />
 
       <div className="flex min-h-screen w-full flex-col justify-center overflow-y-auto bg-slate-50 px-4 py-8 sm:px-6 sm:py-12 lg:w-1/2 lg:bg-white lg:px-20">
         <div className="mx-auto w-full max-w-[440px]">
@@ -188,7 +156,14 @@ export function VerifyEmailView() {
           </div>
 
           <section className="animate-page-enter rounded-md border border-slate-200 bg-white p-6 text-center shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] sm:p-8">
-            <div className="flex justify-end">
+            <div className="flex items-center justify-between">
+              <Link
+                href="/sign-in"
+                className="flex w-fit items-center gap-2 text-sm text-slate-500 transition hover:text-slate-800"
+              >
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                {t("backToSignIn")}
+              </Link>
               <span className="rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
                 1 / 1
               </span>
@@ -266,13 +241,6 @@ export function VerifyEmailView() {
                   ? `${t("resendVerification")} (${resendCooldown}s)`
                   : t("resendVerification")}
             </Button>
-            <Link
-              href="/sign-in"
-              className="mt-5 flex w-fit items-center gap-2 text-sm text-slate-500 transition hover:text-slate-800"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              {t("backToSignIn")}
-            </Link>
           </section>
         </div>
       </div>

@@ -13,6 +13,8 @@ import { authApi } from "@/app/features/auth/api/auth.api";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { withLocale } from "@/app/i18n/paths";
 
+import { AuthBrandPanel } from "./components/AuthBrandPanel";
+
 const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
 
 export function ForgotPasswordView() {
@@ -45,40 +47,7 @@ export function ForgotPasswordView() {
 
   return (
     <main className="flex min-h-screen w-full flex-col bg-white lg:flex-row lg:items-start">
-      <div className="relative hidden h-screen shrink-0 flex-col justify-between overflow-hidden bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 p-12 text-white lg:flex lg:w-1/2">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent" />
-        <Link href="/" className="z-10 flex items-center gap-x-3">
-          <Image
-            src="/mascot.svg"
-            alt={t("mascotAlt")}
-            height={44}
-            width={44}
-          />
-          <span className="text-3xl font-extrabold tracking-wide">
-            {appName}
-          </span>
-        </Link>
-        <div className="z-10 flex flex-grow flex-col items-center justify-center py-12 text-center">
-          <div className="relative h-[260px] w-[260px]">
-            <Image
-              src="/hero.svg"
-              alt={t("heroAlt")}
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <h2 className="mt-8 max-w-md text-3xl font-bold leading-tight">
-            {t("signInSlogan")}
-          </h2>
-          <p className="mt-3 max-w-sm text-sm font-medium text-green-100">
-            {t("signInSloganDesc")}
-          </p>
-        </div>
-        <div className="z-10 text-xs text-green-200">
-          © {new Date().getFullYear()} {appName}.
-        </div>
-      </div>
+      <AuthBrandPanel />
 
       <div className="flex min-h-screen w-full flex-col justify-center overflow-y-auto bg-slate-50 px-4 py-8 sm:px-6 sm:py-12 lg:w-1/2 lg:bg-white lg:px-20">
         <div className="mx-auto w-full max-w-md">
