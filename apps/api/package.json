@@ -25,6 +25,7 @@
     "data:export-vocab": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/export-vocab.ts",
     "data:export-vocab-snapshot": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/export-vocab-db-snapshot.ts",
     "data:export-vocab-risk": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/export-vocab-risk-audit.ts",
+    "data:bootstrap-vocabulary": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/bootstrap-vocabulary.ts",
     "data:prepare-vocab-normalization": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/prepare-vocab-normalization.ts",
     "data:normalize-vocab-gemini": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/run-vocab-normalization-gemini.ts",
     "data:apply-vocab-normalization-override": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/normalization/apply-vocab-normalization-override.ts",
