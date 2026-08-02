@@ -5,6 +5,12 @@ import type {
   ToeicReadingDraftPayload,
   ToeicReadingOverview,
   ToeicReadingPart,
+  ToeicReadingPracticeAnswerPayload,
+  ToeicReadingPracticeAnswerResult,
+  ToeicReadingPracticeSession,
+  ToeicReadingPracticeStartPayload,
+  ToeicReadingPracticeSummary,
+  ToeicReadingPracticeUpdatePayload,
   ToeicReadingSubmissionPayload,
   ToeicReadingTestDetail,
   ToeicReadingTestSummary,
@@ -16,6 +22,7 @@ export type ToeicReadingHttp = {
   get<T>(path: string): Promise<{ data: T }>;
   post<T>(path: string, body?: unknown): Promise<{ data: T }>;
   put<T>(path: string, body?: unknown): Promise<{ data: T }>;
+  patch<T>(path: string, body?: unknown): Promise<{ data: T }>;
   delete<T>(path: string): Promise<{ data: T }>;
 };
 
@@ -34,6 +41,9 @@ export const toeicReadingKeys = {
     [...toeicReadingKeys.attemptsRoot(), part ?? "full"] as const,
   attempt: (attemptId: number) =>
     [...toeicReadingKeys.all, "attempt", attemptId] as const,
+  practiceRoot: () => [...toeicReadingKeys.all, "practice"] as const,
+  practice: (sessionId: number) =>
+    [...toeicReadingKeys.practiceRoot(), sessionId] as const,
 };
 
 export function createToeicReadingApi(http: ToeicReadingHttp) {
@@ -97,6 +107,51 @@ export function createToeicReadingApi(http: ToeicReadingHttp) {
       return (
         await http.get<ToeicReadingAttemptResult>(
           `/toeic/reading/attempts/${attemptId}`
+        )
+      ).data;
+    },
+    async startPractice(body: ToeicReadingPracticeStartPayload) {
+      return (
+        await http.post<ToeicReadingPracticeSession>(
+          "/toeic/reading/practice-sessions",
+          body
+        )
+      ).data;
+    },
+    async practice(sessionId: number) {
+      return (
+        await http.get<ToeicReadingPracticeSession>(
+          `/toeic/reading/practice-sessions/${sessionId}`
+        )
+      ).data;
+    },
+    async gradePracticeAnswer(
+      sessionId: number,
+      body: ToeicReadingPracticeAnswerPayload
+    ) {
+      return (
+        await http.post<ToeicReadingPracticeAnswerResult>(
+          `/toeic/reading/practice-sessions/${sessionId}/answers`,
+          body
+        )
+      ).data;
+    },
+    async updatePractice(
+      sessionId: number,
+      body: ToeicReadingPracticeUpdatePayload
+    ) {
+      return (
+        await http.patch<{
+          activeQuestionId: number;
+          reviewQuestionIds: number[];
+          updatedAt: string;
+        }>(`/toeic/reading/practice-sessions/${sessionId}`, body)
+      ).data;
+    },
+    async completePractice(sessionId: number) {
+      return (
+        await http.post<ToeicReadingPracticeSummary>(
+          `/toeic/reading/practice-sessions/${sessionId}/complete`
         )
       ).data;
     },

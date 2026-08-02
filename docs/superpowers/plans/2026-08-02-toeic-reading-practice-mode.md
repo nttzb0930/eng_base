@@ -334,7 +334,7 @@ git commit -m "feat(api): grade TOEIC Reading practice answers"
 - Consumes: practice contracts and authenticated HTTP routes from Tasks 1–2.
 - Produces: `useStartToeicReadingPractice`, `useToeicReadingPractice`, `useGradeToeicReadingPracticeAnswer`, `useUpdateToeicReadingPractice`, and `useCompleteToeicReadingPractice`.
 
-- [ ] **Step 1: Write failing adapter and state tests**
+- [x] **Step 1: Write failing adapter and state tests**
 
 ```ts
 test("practice API uses the authenticated practice-session endpoints");
@@ -344,12 +344,12 @@ test("graded feedback replaces the pending selection after success");
 test("moving between questions preserves restored graded state");
 ```
 
-- [ ] **Step 2: Run tests and verify RED**
+- [x] **Step 2: Run tests and verify RED**
 
 Run: `pnpm --filter @repo/web exec tsx --test app/features/toeic-reading/tests/toeic-reading.api.test.ts app/features/toeic-reading/tests/toeic-reading-practice-state.test.ts`  
 Expected: FAIL because practice methods and state helpers do not exist.
 
-- [ ] **Step 3: Add API methods and query keys**
+- [x] **Step 3: Add API methods and query keys**
 
 ```ts
 practiceRoot: () => [...toeicReadingKeys.all, "practice"] as const,
@@ -364,11 +364,11 @@ gradePracticeAnswer: (sessionId: number, body: ToeicReadingPracticeAnswerPayload
 
 Add corresponding `get`, `patch`, and `complete` methods; extend `ToeicReadingHttp` with `patch`.
 
-- [ ] **Step 4: Add hooks with authoritative cache updates**
+- [x] **Step 4: Add hooks with authoritative cache updates**
 
 On grading success, update the session cache by replacing/adding only the returned graded answer and returned progress. On failure, do not clear pending UI state. On completion, set the returned completed session summary and invalidate test-list progress.
 
-- [ ] **Step 5: Verify and commit**
+- [x] **Step 5: Verify and commit**
 
 Run:
 

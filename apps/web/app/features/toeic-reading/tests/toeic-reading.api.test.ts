@@ -21,6 +21,10 @@ test("TOEIC Reading resource preserves all learner routes and query identities",
       requests.push({ method: "PUT", path, body });
       return { data: {} as T };
     },
+    async patch<T>(path: string, body?: unknown) {
+      requests.push({ method: "PATCH", path, body });
+      return { data: {} as T };
+    },
     async delete<T>(path: string) {
       requests.push({ method: "DELETE", path });
       return { data: {} as T };
@@ -39,6 +43,20 @@ test("TOEIC Reading resource preserves all learner routes and query identities",
     answers: [{ questionId: 101, optionId: 1001 }],
     reviewQuestionIds: [102],
   };
+  const practiceStart = {
+    testId: 11,
+    part: 5 as const,
+    sourceVersion: "a".repeat(64),
+  };
+  const practiceAnswer = {
+    questionId: 101,
+    optionId: 1001,
+    requestKey: "00000000-0000-4000-8000-000000000002",
+  };
+  const practiceUpdate = {
+    activeQuestionId: 102,
+    reviewQuestionIds: [101],
+  };
 
   await api.overview();
   await api.tests(5);
@@ -49,6 +67,11 @@ test("TOEIC Reading resource preserves all learner routes and query identities",
   await api.draft(11, 5);
   await api.saveDraft(11, draft);
   await api.deleteDraft(11, 5);
+  await api.startPractice(practiceStart);
+  await api.practice(31);
+  await api.gradePracticeAnswer(31, practiceAnswer);
+  await api.updatePractice(31, practiceUpdate);
+  await api.completePractice(31);
 
   assert.deepEqual(requests, [
     { method: "GET", path: "/toeic/reading/overview" },
@@ -64,6 +87,27 @@ test("TOEIC Reading resource preserves all learner routes and query identities",
       body: draft,
     },
     { method: "DELETE", path: "/toeic/reading/tests/11/draft?part=5" },
+    {
+      method: "POST",
+      path: "/toeic/reading/practice-sessions",
+      body: practiceStart,
+    },
+    { method: "GET", path: "/toeic/reading/practice-sessions/31" },
+    {
+      method: "POST",
+      path: "/toeic/reading/practice-sessions/31/answers",
+      body: practiceAnswer,
+    },
+    {
+      method: "PATCH",
+      path: "/toeic/reading/practice-sessions/31",
+      body: practiceUpdate,
+    },
+    {
+      method: "POST",
+      path: "/toeic/reading/practice-sessions/31/complete",
+      body: undefined,
+    },
   ]);
   assert.deepEqual(toeicReadingKeys.overview(), ["toeic-reading", "overview"]);
   assert.deepEqual(toeicReadingKeys.tests(5), ["toeic-reading", "tests", 5]);
@@ -93,5 +137,10 @@ test("TOEIC Reading resource preserves all learner routes and query identities",
     "draft",
     11,
     5,
+  ]);
+  assert.deepEqual(toeicReadingKeys.practice(31), [
+    "toeic-reading",
+    "practice",
+    31,
   ]);
 });

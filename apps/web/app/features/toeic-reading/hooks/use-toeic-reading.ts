@@ -4,6 +4,10 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type {
   ToeicReadingDraftPayload,
   ToeicReadingPart,
+  ToeicReadingPracticeAnswerPayload,
+  ToeicReadingPracticeSession,
+  ToeicReadingPracticeStartPayload,
+  ToeicReadingPracticeUpdatePayload,
   ToeicReadingSubmissionPayload,
 } from "@repo/shared";
 
@@ -123,6 +127,108 @@ export function useSubmitToeicReadingAttempt() {
           queryKey: toeicReadingKeys.attempt(result.id),
         }),
       ]);
+    },
+  });
+}
+
+export function useStartToeicReadingPractice() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (body: ToeicReadingPracticeStartPayload) =>
+      toeicReadingApi.startPractice(body),
+    onSuccess: (session) => {
+      queryClient.setQueryData(toeicReadingKeys.practice(session.id), session);
+    },
+  });
+}
+
+export function useToeicReadingPractice(sessionId: number | null) {
+  return useQuery({
+    queryKey: toeicReadingKeys.practice(sessionId ?? 0),
+    queryFn: () => toeicReadingApi.practice(sessionId!),
+    enabled: sessionId !== null && sessionId > 0,
+  });
+}
+
+export function useGradeToeicReadingPracticeAnswer() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({
+      sessionId,
+      payload,
+    }: {
+      sessionId: number;
+      payload: ToeicReadingPracticeAnswerPayload;
+    }) => toeicReadingApi.gradePracticeAnswer(sessionId, payload),
+    onSuccess: (answer, variables) => {
+      queryClient.setQueryData<ToeicReadingPracticeSession>(
+        toeicReadingKeys.practice(variables.sessionId),
+        (session) => {
+          if (!session) return session;
+          return {
+            ...session,
+            answers: [
+              ...session.answers.filter(
+                (item) => item.questionId !== answer.questionId
+              ),
+              answer,
+            ],
+            progress: answer.progress,
+          };
+        }
+      );
+    },
+  });
+}
+
+export function useUpdateToeicReadingPractice() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({
+      sessionId,
+      payload,
+    }: {
+      sessionId: number;
+      payload: ToeicReadingPracticeUpdatePayload;
+    }) => toeicReadingApi.updatePractice(sessionId, payload),
+    onSuccess: (navigation, variables) => {
+      queryClient.setQueryData<ToeicReadingPracticeSession>(
+        toeicReadingKeys.practice(variables.sessionId),
+        (session) =>
+          session
+            ? {
+                ...session,
+                activeQuestionId: navigation.activeQuestionId,
+                reviewQuestionIds: navigation.reviewQuestionIds,
+                updatedAt: navigation.updatedAt,
+              }
+            : session
+      );
+    },
+  });
+}
+
+export function useCompleteToeicReadingPractice() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (sessionId: number) =>
+      toeicReadingApi.completePractice(sessionId),
+    onSuccess: (summary, sessionId) => {
+      queryClient.setQueryData<ToeicReadingPracticeSession>(
+        toeicReadingKeys.practice(sessionId),
+        (session) =>
+          session
+            ? {
+                ...session,
+                status: "COMPLETED",
+                progress: summary.progress,
+                completedAt: summary.completedAt,
+              }
+            : session
+      );
+      return queryClient.invalidateQueries({
+        queryKey: toeicReadingKeys.testsRoot(),
+      });
     },
   });
 }
