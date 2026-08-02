@@ -135,6 +135,13 @@ export function LearnView() {
     0
   );
 
+  const [toeicListeningLabel, toeicListeningParts] = t("toeicListeningSummary")
+    .split("·")
+    .map((s) => s.trim());
+  const [toeicReadingLabel, toeicReadingParts] = t("toeicReadingSummary")
+    .split("·")
+    .map((s) => s.trim());
+
   return (
     <FeedWrapper>
       <div className="pb-12">
@@ -146,7 +153,7 @@ export function LearnView() {
           <h1 className="text-foreground mt-2.5 text-3xl font-semibold tracking-tight sm:text-4xl">
             {t("title")}
           </h1>
-          <p className="text-muted-foreground mt-2.5 line-clamp-1 text-sm">
+          <p className="text-muted-foreground mt-2.5 max-w-2xl text-sm leading-relaxed">
             {t("description")}
           </p>
         </header>
@@ -157,16 +164,16 @@ export function LearnView() {
 
           <div className="relative z-10 flex flex-col justify-between gap-6 md:flex-row md:items-center">
             <div className="min-w-0 flex-1">
-              <div className="mb-3 flex items-center gap-2">
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3.5 py-1 text-sm font-medium text-white backdrop-blur-md">
-                  <Calendar className="h-4 w-4" />
+              <div className="mb-3 flex flex-wrap items-center gap-2">
+                <span className="inline-flex whitespace-nowrap items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-md sm:px-3.5 sm:text-sm">
+                  <Calendar className="h-4 w-4 shrink-0" />
                   <span>{t("today")}</span>
                 </span>
                 <span
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3.5 py-1 text-sm font-medium text-white backdrop-blur-md"
+                  className="inline-flex whitespace-nowrap items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-md sm:px-3.5 sm:text-sm"
                   title={dashboardT("streakTimeZone")}
                 >
-                  <Flame className="h-4 w-4" aria-hidden="true" />
+                  <Flame className="h-4 w-4 shrink-0" aria-hidden="true" />
                   <span>
                     {dashboardT("currentStreak", {
                       count: dashboard.streak.currentStreak,
@@ -184,38 +191,38 @@ export function LearnView() {
                 {t("reviewSubtitle")}
               </p>
 
-              <div className="grid max-w-md grid-cols-3 gap-4">
-                <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur-md">
-                  <div className="text-2xl font-bold text-white">
+              <div className="grid max-w-md grid-cols-3 gap-2 sm:gap-4">
+                <div className="rounded-xl bg-white/10 px-2 py-2.5 text-center backdrop-blur-md sm:p-3">
+                  <div className="text-xl font-bold text-white sm:text-2xl">
                     {dashboard.overview.masteredWords}
                   </div>
-                  <div className="mt-1 text-xs font-medium uppercase tracking-wider text-emerald-100">
+                  <div className="mt-1 text-[11px] font-medium leading-tight text-emerald-100 sm:text-xs sm:uppercase sm:tracking-wider">
                     {topicsT("mastered")}
                   </div>
                 </div>
-                <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur-md">
-                  <div className="text-2xl font-bold text-white">
+                <div className="rounded-xl bg-white/10 px-2 py-2.5 text-center backdrop-blur-md sm:p-3">
+                  <div className="text-xl font-bold text-white sm:text-2xl">
                     {dashboard.overview.dueWords}
                   </div>
-                  <div className="mt-1 text-xs font-medium uppercase tracking-wider text-emerald-100">
+                  <div className="mt-1 text-[11px] font-medium leading-tight text-emerald-100 sm:text-xs sm:uppercase sm:tracking-wider">
                     {t("dueWords")}
                   </div>
                 </div>
-                <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur-md">
-                  <div className="text-2xl font-bold text-white">
+                <div className="rounded-xl bg-white/10 px-2 py-2.5 text-center backdrop-blur-md sm:p-3">
+                  <div className="text-xl font-bold text-white sm:text-2xl">
                     {dashboard.overview.accuracy}%
                   </div>
-                  <div className="mt-1 text-xs font-medium uppercase tracking-wider text-emerald-100">
+                  <div className="mt-1 text-[11px] font-medium leading-tight text-emerald-100 sm:text-xs sm:uppercase sm:tracking-wider">
                     {t("accuracy")}
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="flex shrink-0 flex-col items-start justify-center md:items-end md:text-right">
+            <div className="flex shrink-0 flex-col items-stretch justify-center sm:items-start md:items-end md:text-right">
               <Link
                 href={withLocale("/review")}
-                className="inline-flex items-center gap-2.5 rounded-xl bg-white px-8 py-4 text-base font-semibold text-emerald-600 shadow-lg transition-all duration-200 hover:scale-105 hover:bg-emerald-50 hover:shadow-xl active:scale-95"
+                className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-emerald-600 shadow-lg transition-all duration-200 hover:scale-105 hover:bg-emerald-50 hover:shadow-xl active:scale-95 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
                 <Play
                   className="h-4 w-4 fill-emerald-600 text-emerald-600"
@@ -223,7 +230,7 @@ export function LearnView() {
                 />
                 <span>{t("reviewWeakWordsBtn")}</span>
               </Link>
-              <p className="mt-3 text-sm font-medium text-emerald-100">
+              <p className="mt-2.5 text-center text-xs font-medium text-emerald-100 sm:text-sm md:text-right">
                 {t("reviewEstTime", {
                   count: dashboard.overview.dueWords,
                 })}
@@ -247,22 +254,20 @@ export function LearnView() {
               aria-labelledby="general-english-path-title"
               className="border-border/80 bg-card shadow-xs rounded-2xl border p-5 sm:p-6"
             >
-              <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-400">
+              <div className="flex items-center gap-3 sm:gap-3.5">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-400 sm:h-11 sm:w-11">
                   <BookOpen className="h-5 w-5" aria-hidden="true" />
                 </div>
-                <div>
-                  <h4
-                    id="general-english-path-title"
-                    className="text-foreground text-xl font-semibold"
-                  >
-                    {t("generalEnglishTitle")}
-                  </h4>
-                  <p className="text-muted-foreground mt-1 max-w-[60ch] text-sm leading-6">
-                    {t("generalEnglishDescription")}
-                  </p>
-                </div>
+                <h4
+                  id="general-english-path-title"
+                  className="text-foreground min-w-0 flex-1 text-lg font-semibold sm:text-xl"
+                >
+                  {t("generalEnglishTitle")}
+                </h4>
               </div>
+              <p className="text-muted-foreground mt-2.5 max-w-[60ch] text-xs leading-relaxed sm:mt-3 sm:text-sm sm:leading-6">
+                {t("generalEnglishDescription")}
+              </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 <div className="group flex flex-col rounded-xl border border-blue-200/80 bg-blue-50/40 p-5 dark:border-blue-900 dark:bg-blue-950/20">
@@ -294,10 +299,9 @@ export function LearnView() {
                   </div>
                   <Link
                     href={withLocale("/learn/level")}
-                    className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                    className="mt-5 inline-flex min-h-11 whitespace-nowrap items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:px-4 sm:text-sm"
                   >
-                    {t("continueLevelBtn", { code: currentLevel.level })}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    <span>{t("continueLevelBtn", { code: currentLevel.level })}</span>
                   </Link>
                 </div>
 
@@ -313,10 +317,10 @@ export function LearnView() {
                   </p>
                   <Link
                     href={withLocale("/learn/topic")}
-                    className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-orange-500 px-4 text-sm font-semibold text-white transition-colors hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
+                    className="mt-5 inline-flex min-h-11 whitespace-nowrap items-center justify-center gap-2 rounded-lg bg-orange-500 px-3 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 sm:px-4 sm:text-sm"
                   >
-                    {t("explorePath")}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    <span>{t("explorePath")}</span>
+                    <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
                   </Link>
                 </div>
 
@@ -332,10 +336,10 @@ export function LearnView() {
                   </p>
                   <Link
                     href={withLocale("/practice")}
-                    className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                    className="mt-5 inline-flex min-h-11 whitespace-nowrap items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:px-4 sm:text-sm"
                   >
-                    {t("openPractice")}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    <span>{t("openPractice")}</span>
+                    <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
                   </Link>
                 </div>
 
@@ -351,10 +355,10 @@ export function LearnView() {
                   </p>
                   <Link
                     href={withLocale("/reading")}
-                    className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                    className="mt-5 inline-flex min-h-11 whitespace-nowrap items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:px-4 sm:text-sm"
                   >
-                    {t("openReading")}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    <span>{t("openReading")}</span>
+                    <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
                   </Link>
                 </div>
               </div>
@@ -364,38 +368,50 @@ export function LearnView() {
               aria-labelledby="toeic-path-title"
               className="border-border/80 bg-card shadow-xs flex flex-col rounded-2xl border-2 border-emerald-500/70 p-5 sm:p-6"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300">
-                <GraduationCap className="h-5 w-5" aria-hidden="true" />
+              <div className="flex items-center gap-3 sm:gap-3.5">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300 sm:h-11 sm:w-11">
+                  <GraduationCap className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <h4
+                  id="toeic-path-title"
+                  className="text-foreground min-w-0 flex-1 text-lg font-semibold sm:text-xl"
+                >
+                  {t("toeicPathTitle")}
+                </h4>
               </div>
-              <h4
-                id="toeic-path-title"
-                className="text-foreground mt-5 text-xl font-semibold"
-              >
-                {t("toeicPathTitle")}
-              </h4>
-              <p className="text-muted-foreground mt-2 text-sm leading-6">
+              <p className="text-muted-foreground mt-2.5 max-w-[60ch] text-xs leading-relaxed sm:mt-3 sm:text-sm sm:leading-6">
                 {t("toeicPathDescription")}
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-3" aria-hidden="true">
-                <div className="bg-muted/60 rounded-lg p-3">
-                  <Headphones className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
-                  <p className="mt-2 text-xs font-semibold">
-                    {t("toeicListeningSummary")}
+              <div className="mt-5 grid grid-cols-2 gap-2.5 sm:mt-6 sm:gap-3" aria-hidden="true">
+                <div className="bg-muted/60 rounded-lg p-2.5 sm:p-3">
+                  <div className="flex items-center gap-1.5">
+                    <Headphones className="h-4 w-4 shrink-0 text-emerald-700 dark:text-emerald-300" />
+                    <span className="text-xs font-semibold text-foreground">
+                      {toeicListeningLabel}
+                    </span>
+                  </div>
+                  <p className="mt-1 text-xs font-medium text-muted-foreground">
+                    {toeicListeningParts}
                   </p>
                 </div>
-                <div className="bg-muted/60 rounded-lg p-3">
-                  <BookOpen className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
-                  <p className="mt-2 text-xs font-semibold">
-                    {t("toeicReadingSummary")}
+                <div className="bg-muted/60 rounded-lg p-2.5 sm:p-3">
+                  <div className="flex items-center gap-1.5">
+                    <BookOpen className="h-4 w-4 shrink-0 text-emerald-700 dark:text-emerald-300" />
+                    <span className="text-xs font-semibold text-foreground">
+                      {toeicReadingLabel}
+                    </span>
+                  </div>
+                  <p className="mt-1 text-xs font-medium text-muted-foreground">
+                    {toeicReadingParts}
                   </p>
                 </div>
               </div>
               <Link
                 href={withLocale("/learn/cert/toeic")}
-                className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+                className="mt-5 inline-flex min-h-11 whitespace-nowrap items-center justify-center gap-2 rounded-lg bg-emerald-600 px-3 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:px-4 sm:text-sm"
               >
-                {t("openToeic")}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                <span>{t("openToeic")}</span>
+                <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
               </Link>
             </article>
           </div>
@@ -408,61 +424,61 @@ export function LearnView() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <div className="border-border/80 bg-card shadow-xs group rounded-2xl border p-5 transition-all duration-200 hover:shadow-md">
-              <div className="mb-2 flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-orange-200 bg-orange-50 text-orange-600 dark:border-orange-800 dark:bg-orange-950/50 dark:text-orange-400">
-                  <RotateCw className="h-5 w-5" />
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+            <div className="border-border/80 bg-card shadow-xs group flex flex-col justify-between rounded-2xl border p-4 transition-all duration-200 hover:shadow-md sm:p-5">
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-orange-200 bg-orange-50 text-orange-600 dark:border-orange-800 dark:bg-orange-950/50 dark:text-orange-400 sm:h-9 sm:w-9">
+                  <RotateCw className="h-4 w-4" />
                 </div>
-                <span className="text-muted-foreground text-xs font-medium">
+                <span className="text-muted-foreground min-w-0 flex-1 text-xs font-medium leading-tight">
                   {t("dueWords")}
                 </span>
               </div>
-              <div className="text-foreground text-2xl font-bold">
+              <div className="text-foreground mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-2xl">
                 {topicsT("wordCount", {
                   count: dashboard.overview.dueWords,
                 })}
               </div>
             </div>
 
-            <div className="border-border/80 bg-card shadow-xs group rounded-2xl border p-5 transition-all duration-200 hover:shadow-md">
-              <div className="mb-2 flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-400">
-                  <PlusCircle className="h-5 w-5" />
+            <div className="border-border/80 bg-card shadow-xs group flex flex-col justify-between rounded-2xl border p-4 transition-all duration-200 hover:shadow-md sm:p-5">
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-blue-200 bg-blue-50 text-blue-600 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-400 sm:h-9 sm:w-9">
+                  <PlusCircle className="h-4 w-4" />
                 </div>
-                <span className="text-muted-foreground text-xs font-medium">
+                <span className="text-muted-foreground min-w-0 flex-1 text-xs font-medium leading-tight">
                   {t("remainingLessons")}
                 </span>
               </div>
-              <div className="text-foreground text-2xl font-bold">
+              <div className="text-foreground mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-2xl">
                 {t("lessonsCount", { count: remainingLessons })}
               </div>
             </div>
 
-            <div className="border-border/80 bg-card shadow-xs group rounded-2xl border p-5 transition-all duration-200 hover:shadow-md">
-              <div className="mb-2 flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-600 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400">
-                  <Compass className="h-5 w-5" />
+            <div className="border-border/80 bg-card shadow-xs group flex flex-col justify-between rounded-2xl border p-4 transition-all duration-200 hover:shadow-md sm:p-5">
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-600 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400 sm:h-9 sm:w-9">
+                  <Compass className="h-4 w-4" />
                 </div>
-                <span className="text-muted-foreground text-xs font-medium">
+                <span className="text-muted-foreground min-w-0 flex-1 text-xs font-medium leading-tight">
                   {t("unlockedLevelsLabel")}
                 </span>
               </div>
-              <div className="text-foreground text-2xl font-bold">
+              <div className="text-foreground mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-2xl">
                 {unlockedLevels.length}/{cefrSummary.levels.length}
               </div>
             </div>
 
-            <div className="border-border/80 bg-card shadow-xs group rounded-2xl border p-5 transition-all duration-200 hover:shadow-md">
-              <div className="mb-2 flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-rose-200 bg-rose-50 text-rose-500 dark:border-rose-800 dark:bg-rose-950/50">
-                  <Target className="h-5 w-5" />
+            <div className="border-border/80 bg-card shadow-xs group flex flex-col justify-between rounded-2xl border p-4 transition-all duration-200 hover:shadow-md sm:p-5">
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-rose-200 bg-rose-50 text-rose-500 dark:border-rose-800 dark:bg-rose-950/50 sm:h-9 sm:w-9">
+                  <Target className="h-4 w-4" />
                 </div>
-                <span className="text-muted-foreground text-xs font-medium">
+                <span className="text-muted-foreground min-w-0 flex-1 text-xs font-medium leading-tight">
                   {t("learnedWords")}
                 </span>
               </div>
-              <div className="text-foreground text-2xl font-bold">
+              <div className="text-foreground mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-2xl">
                 {topicsT("wordCount", { count: learnedWords })}
               </div>
             </div>

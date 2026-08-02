@@ -124,8 +124,8 @@ export function FlashcardsView() {
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
           <div className="relative z-10 flex flex-col justify-between gap-6 md:flex-row md:items-center">
             <div className="flex-1">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3.5 py-1 text-xs font-medium text-white backdrop-blur-md">
-                <Calendar className="h-3.5 w-3.5" />
+              <span className="inline-flex whitespace-nowrap items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3.5 py-1 text-xs font-medium text-white backdrop-blur-md">
+                <Calendar className="h-3.5 w-3.5 shrink-0" />
                 {t("today")}
               </span>
               <h2 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">

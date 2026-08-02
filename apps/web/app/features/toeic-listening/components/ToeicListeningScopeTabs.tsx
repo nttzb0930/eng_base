@@ -1,7 +1,15 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
-import { cn } from "@/app/utils/cn";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/app/components/ui/select";
 
 import type { ToeicListeningScope } from "../toeic-listening-scope";
 
@@ -24,29 +32,27 @@ export function ToeicListeningScopeTabs({
   scope,
 }: ToeicListeningScopeTabsProps) {
   const t = useTranslations("toeicListening.list");
+  const router = useRouter();
 
   return (
-    <nav aria-label={t("scopeLabel")} className="mt-7">
-      <div className="flex flex-wrap gap-2">
-        {scopes.map((item) => {
-          const selected = item.value === scope;
-          return (
-            <Link
-              key={item.value}
-              href={`/learn/cert/toeic/listening?mode=level&scope=${item.value}`}
-              aria-current={selected ? "page" : undefined}
-              className={cn(
-                "inline-flex min-h-10 items-center justify-center rounded-full border px-5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500",
-                selected
-                  ? "border-emerald-600 bg-emerald-600 text-white"
-                  : "bg-card border-emerald-200 text-emerald-700 hover:border-emerald-500 dark:border-emerald-900 dark:text-emerald-300"
-              )}
-            >
+    <div className="w-full sm:w-auto">
+      <Select
+        value={String(scope)}
+        onValueChange={(val) => {
+          router.push(`/learn/cert/toeic/listening?mode=level&scope=${val}`);
+        }}
+      >
+        <SelectTrigger className="w-full rounded-xl border-emerald-200/80 bg-card font-semibold text-emerald-800 sm:w-[220px] dark:border-emerald-900 dark:text-emerald-300">
+          <SelectValue placeholder={t("scopeLabel")} />
+        </SelectTrigger>
+        <SelectContent>
+          {scopes.map((item) => (
+            <SelectItem key={String(item.value)} value={String(item.value)}>
               {t(item.message)}
-            </Link>
-          );
-        })}
-      </div>
-    </nav>
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </div>
   );
 }

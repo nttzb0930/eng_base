@@ -1,6 +1,7 @@
 "use client";
 
-import { LogOut, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { LogOut } from "lucide-react";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
 
@@ -32,9 +33,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
     >
       <Link href={withLocale("/dashboard")}>
         <div className="flex items-center gap-3 px-2 pb-8 pt-7">
-          <span className="from-brand to-brand-dark shadow-brand grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br text-white">
-            <Sparkles className="h-5 w-5" aria-hidden="true" />
-          </span>
+          <Image
+            src="/mascot.svg"
+            alt={appName}
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0 object-contain"
+          />
           <div>
             <h1 className="text-foreground text-xl font-semibold tracking-tight">
               {appName}

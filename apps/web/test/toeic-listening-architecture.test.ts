@@ -30,7 +30,7 @@ test("Listening browser exposes Full and Parts 1-4 with backend progress", () =>
   assert.match(view, /draftProgress/);
   assert.match(view, /role="progressbar"/);
   assert.doesNotMatch(view, /localStorage/);
-  assert.match(dictationView, /<div className="pb-12">/);
+  assert.match(dictationView, /<ToeicBrowseContainer>/);
   assert.doesNotMatch(dictationView, /max-w-\[1000px\]/);
 });
 
@@ -44,6 +44,24 @@ test("TOEIC overview opens the available Listening browser", () => {
   );
   assert.match(source, /lg:grid-cols-2/);
   assert.doesNotMatch(source, /lg:grid-cols-\[1\.2fr_0\.8fr\]/);
+});
+
+test("Dictation changes audio source without remounting the compact player", () => {
+  const session = read(
+    "app/views/toeic-listening/ToeicDictationSessionView.tsx"
+  );
+  const player = read(
+    "app/features/toeic-dictation/components/CompactAudioPlayer.tsx"
+  );
+
+  assert.match(
+    session,
+    /const nextItem = setQuery\.data\?\.items\[index \+ 1\]/
+  );
+  assert.match(session, /useToeicDictationMedia\(nextItem\?\.mediaId \?\? 0\)/);
+  assert.match(session, /<CompactAudioPlayer[\s\S]*src=\{audioUrl\}/);
+  assert.doesNotMatch(session, /<CompactAudioPlayer[\s\S]{0,200}\bkey=/);
+  assert.doesNotMatch(player, /setVolume\(1\);[\s\S]{0,80}setMuted\(false\);/);
 });
 
 test("Listening session and result routes stay thin with dedicated skeletons", () => {

@@ -1,20 +1,11 @@
 "use client";
 
-import {
-  ChevronLeft,
-  ChevronRight,
-  Eye,
-  EyeOff,
-  Pause,
-  Play,
-  RotateCcw,
-} from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 import { Button } from "@/app/components/ui/button";
-import { PlaybackSpeedSelect } from "@/app/features/toeic-dictation/components/PlaybackSpeedSelect";
-import type { ToeicDictationPlaybackSpeed } from "@/app/features/toeic-dictation/playback-speed";
+import { CompactAudioPlayer } from "@/app/features/toeic-dictation/components/CompactAudioPlayer";
 
 export type ToeicDictationFullQuestion = {
   id: number;
@@ -30,10 +21,6 @@ type Props = {
   transcript?: string;
   translationVi?: string | null;
   isContentLoading: boolean;
-  hasPrevious: boolean;
-  hasNext: boolean;
-  onPrevious: () => void;
-  onNext: () => void;
   onSelectQuestion: (questionId: number) => void;
 };
 
@@ -46,162 +33,71 @@ export function ToeicDictationFullPlayer({
   transcript,
   translationVi,
   isContentLoading,
-  hasPrevious,
-  hasNext,
-  onPrevious,
-  onNext,
   onSelectQuestion,
 }: Props) {
   const t = useTranslations("toeicDictation.session");
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const autoplayRef = useRef(true);
-  const [playing, setPlaying] = useState(false);
   const [autoplay, setAutoplay] = useState(true);
   const [showScript, setShowScript] = useState(true);
-  const [playbackSpeed, setPlaybackSpeed] = useState<ToeicDictationPlaybackSpeed>(1);
-
-  useEffect(() => {
-    autoplayRef.current = autoplay;
-  }, [autoplay]);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    const syncPlayback = () => setPlaying(!audio.paused);
-    audio.addEventListener("play", syncPlayback);
-    audio.addEventListener("pause", syncPlayback);
-    audio.addEventListener("ended", syncPlayback);
-    return () => {
-      audio.removeEventListener("play", syncPlayback);
-      audio.removeEventListener("pause", syncPlayback);
-      audio.removeEventListener("ended", syncPlayback);
-    };
-  }, []);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.playbackRate = playbackSpeed;
-  }, [playbackSpeed]);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    audio.pause();
-    audio.currentTime = 0;
-    setPlaying(false);
-    if (!src || !autoplayRef.current) return;
-
-    const frame = window.requestAnimationFrame(() => {
-      void audio.play().catch(() => setPlaying(false));
-    });
-    return () => window.cancelAnimationFrame(frame);
-  }, [src]);
-
-  const togglePlayback = () => {
-    const audio = audioRef.current;
-    if (!audio || !src) return;
-    if (audio.paused) {
-      void audio.play().catch(() => setPlaying(false));
-      return;
-    }
-    audio.pause();
-  };
-
-  const restart = () => {
-    const audio = audioRef.current;
-    if (!audio || !src) return;
-    audio.currentTime = 0;
-    void audio.play().catch(() => setPlaying(false));
-  };
 
   return (
     <div className="space-y-6">
-      <section className="bg-card rounded-md border p-6 shadow-sm sm:p-8">
-        <audio ref={audioRef} src={src ?? undefined} preload="metadata" className="sr-only" />
-        <div className="flex items-center justify-center gap-3">
-          <Button
-            type="button"
-            variant="outline"
-            size="icon"
-            className="h-10 w-10 rounded-md"
-            disabled={!hasPrevious}
-            onClick={onPrevious}
-            aria-label={t("previous")}
-          >
-            <ChevronLeft className="h-4 w-4" aria-hidden="true" />
-          </Button>
-          <Button
-            type="button"
-            size="icon"
-            className="h-14 w-14 rounded-full"
-            disabled={!src}
-            onClick={togglePlayback}
-            aria-label={playing ? t("pause") : t("play")}
-          >
-            {playing ? (
-              <Pause className="h-5 w-5" aria-hidden="true" />
-            ) : (
-              <Play className="ml-0.5 h-5 w-5" aria-hidden="true" />
-            )}
-          </Button>
-          <Button
-            type="button"
-            variant="outline"
-            size="icon"
-            className="h-10 w-10 rounded-md"
-            disabled={!hasNext}
-            onClick={onNext}
-            aria-label={t("next")}
-          >
-            <ChevronRight className="h-4 w-4" aria-hidden="true" />
-          </Button>
-        </div>
-
-        <p className="text-muted-foreground mt-5 text-center text-sm font-medium tabular-nums">
+      <section className="bg-card rounded-2xl border p-4 shadow-sm sm:p-6">
+        <p className="text-muted-foreground mb-3 text-center text-sm font-semibold tabular-nums">
           {t("question", { current, total })}
         </p>
 
-        <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-sm">
+        {src ? (
+          <CompactAudioPlayer
+            src={src}
+            playLabel={t("play")}
+            pauseLabel={t("pause")}
+            replayLabel={t("replay")}
+            replayCountLabel={t("replayCount")}
+            replayDelayLabel={t("replayDelay")}
+            replayApplyLabel={t("replayApply")}
+            replayTimesSuffix={t("replayTimesSuffix")}
+            replaySecondsSuffix={t("replaySecondsSuffix")}
+            progressLabel={t("audioProgress")}
+            volumeLabel={t("volume")}
+            volumeProgressLabel={t("volumeProgress")}
+          />
+        ) : (
+          <p className="text-muted-foreground rounded-xl border border-dashed p-4 text-center text-sm">
+            {t("audioUnavailable")}
+          </p>
+        )}
+
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t pt-3">
           <Button
             type="button"
-            variant="ghost"
-            className="rounded-md px-3"
-            disabled={!src}
-            onClick={restart}
-          >
-            <RotateCcw className="mr-2 h-4 w-4" aria-hidden="true" />
-            {t("restartFromStart")}
-          </Button>
-          <Button
-            type="button"
-            variant={autoplay ? "secondary" : "ghost"}
-            className="rounded-md px-3"
+            variant={autoplay ? "secondary" : "outline"}
+            size="sm"
+            className={`h-8 rounded-xl px-2.5 text-xs ${
+              autoplay
+                ? "bg-emerald-500/15 text-emerald-700 hover:bg-emerald-500/25 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800"
+                : ""
+            }`}
             onClick={() => setAutoplay((value) => !value)}
             aria-pressed={autoplay}
           >
             {t("autoplay", { state: autoplay ? t("enabled") : t("disabled") })}
           </Button>
+
           <Button
             type="button"
-            variant="ghost"
-            className="rounded-md px-3"
+            variant="outline"
+            size="sm"
+            className="h-8 rounded-xl px-2.5 text-xs"
             onClick={() => setShowScript((value) => !value)}
             aria-pressed={showScript}
           >
             {showScript ? (
-              <EyeOff className="mr-2 h-4 w-4" aria-hidden="true" />
+              <EyeOff className="mr-1.5 h-3.5 w-3.5" aria-hidden="true" />
             ) : (
-              <Eye className="mr-2 h-4 w-4" aria-hidden="true" />
+              <Eye className="mr-1.5 h-3.5 w-3.5" aria-hidden="true" />
             )}
             {showScript ? t("hideScript") : t("showScript")}
           </Button>
-          <PlaybackSpeedSelect
-            value={playbackSpeed}
-            onValueChange={setPlaybackSpeed}
-          />
         </div>
       </section>
 

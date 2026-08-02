@@ -74,8 +74,10 @@ export function ToeicListeningListView({ scope }: ToeicListeningListViewProps) {
           </p>
         </header>
 
-        <ToeicListeningModeTabs mode="level" />
-        <ToeicListeningScopeTabs scope={scope} />
+        <div className="mt-6 space-y-4">
+          <ToeicListeningModeTabs mode="level" />
+          <ToeicListeningScopeTabs scope={scope} />
+        </div>
 
         {testsQuery.data.length === 0 ? (
           <section className="mt-8 rounded-2xl border border-dashed px-6 py-12 text-center">

@@ -7,6 +7,13 @@ import { useMemo, useState } from "react";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/app/components/ui/select";
 import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicListeningModeTabs } from "@/app/features/toeic-listening/components/ToeicListeningModeTabs";
 import { ToeicDictationListSkeleton } from "@/app/features/toeic-dictation/components/ToeicDictationListSkeleton";
@@ -19,27 +26,29 @@ export function ToeicDictationListView() {
   const t = useTranslations("toeicDictation");
   const [test, setTest] = useState<number | undefined>();
   const [part, setPart] = useState<ToeicDictationPart | undefined>();
-  const query = useToeicDictationSets({ test, part });
-  const items = useMemo(
-    () =>
-      [...(query.data ?? [])].sort(
-        (a, b) => a.testNumber - b.testNumber || a.part - b.part
-      ),
-    [query.data]
-  );
+  const dictationQuery = useToeicDictationSets();
 
-  if (query.isLoading) return <ToeicDictationListSkeleton />;
-  if (query.isError || !query.data) {
+  const items = useMemo(() => {
+    if (!dictationQuery.data) return [];
+    return dictationQuery.data.filter((item) => {
+      const matchPart = part === undefined || item.part === part;
+      const matchTest = test === undefined || item.testNumber === test;
+      return matchPart && matchTest;
+    });
+  }, [dictationQuery.data, part, test]);
+
+  if (dictationQuery.isLoading) return <ToeicDictationListSkeleton />;
+  if (dictationQuery.isError || !dictationQuery.data) {
     return (
       <FeedWrapper>
-        <section className="bg-card mx-auto mt-12 max-w-lg rounded-2xl border border-rose-200 p-7 text-center">
+        <section className="bg-card mx-auto max-w-lg rounded-2xl border border-rose-200 p-7 text-center dark:border-rose-900">
           <h1 className="text-lg font-semibold">{t("error.title")}</h1>
           <p className="text-muted-foreground mt-2 text-sm">
             {t("error.description")}
           </p>
           <Button
             type="button"
-            onClick={() => query.refetch()}
+            onClick={() => dictationQuery.refetch()}
             className="mt-5 gap-2"
           >
             <RotateCcw className="h-4 w-4" aria-hidden="true" />
@@ -54,8 +63,8 @@ export function ToeicDictationListView() {
     <FeedWrapper>
       <ToeicBrowseContainer>
         <Link
-          href="/learn/cert/toeic"
-          className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          href="/learn/cert/toeic/listening"
+          className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold transition-colors hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {t("back")}
@@ -71,50 +80,47 @@ export function ToeicDictationListView() {
             {t("description")}
           </p>
         </header>
-        <ToeicListeningModeTabs mode="dictation" />
-        <div
-          className="mt-7 flex flex-wrap gap-2"
-          aria-label={t("partFilterLabel")}
-        >
-          {parts.map((value) => {
-            const selected =
-              value === "all" ? part === undefined : part === value;
-            return (
-              <button
-                key={value}
-                type="button"
-                onClick={() => setPart(value === "all" ? undefined : value)}
-                aria-pressed={selected}
-                className={`inline-flex min-h-10 items-center justify-center rounded-full border px-5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${selected ? "border-emerald-600 bg-emerald-600 text-white" : "bg-card border-emerald-200 text-emerald-700 hover:border-emerald-500 dark:border-emerald-900 dark:text-emerald-300"}`}
-              >
-                {value === "all" ? t("allParts") : t("part", { part: value })}
-              </button>
-            );
-          })}
-        </div>
-        <div
-          className="mt-4 flex flex-wrap gap-2"
-          aria-label={t("testFilterLabel")}
-        >
-          <button
-            type="button"
-            onClick={() => setTest(undefined)}
-            aria-pressed={test === undefined}
-            className={`rounded-lg border px-4 py-2 text-sm font-semibold ${test === undefined ? "border-emerald-600 bg-emerald-50 text-emerald-700" : "bg-card text-muted-foreground"}`}
-          >
-            {t("allTests")}
-          </button>
-          {Array.from({ length: 10 }, (_, i) => i + 1).map((value) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => setTest(value)}
-              aria-pressed={test === value}
-              className={`rounded-lg border px-4 py-2 text-sm font-semibold ${test === value ? "border-emerald-600 bg-emerald-50 text-emerald-700" : "bg-card text-muted-foreground"}`}
+        <div className="mt-6 space-y-4">
+          <ToeicListeningModeTabs mode="dictation" />
+
+          <div className="grid w-full grid-cols-2 gap-2.5 sm:flex sm:w-auto">
+            <Select
+              value={part ? String(part) : "all"}
+              onValueChange={(val) =>
+                setPart(val === "all" ? undefined : (Number(val) as ToeicDictationPart))
+              }
             >
-              {t("test", { test: value })}
-            </button>
-          ))}
+              <SelectTrigger className="w-full rounded-xl border-emerald-200/80 bg-card font-semibold text-emerald-800 sm:w-[180px] dark:border-emerald-900 dark:text-emerald-300">
+                <SelectValue placeholder={t("allParts")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">{t("allParts")}</SelectItem>
+                <SelectItem value="1">{t("part", { part: 1 })}</SelectItem>
+                <SelectItem value="2">{t("part", { part: 2 })}</SelectItem>
+                <SelectItem value="3">{t("part", { part: 3 })}</SelectItem>
+                <SelectItem value="4">{t("part", { part: 4 })}</SelectItem>
+              </SelectContent>
+            </Select>
+
+            <Select
+              value={test ? String(test) : "all"}
+              onValueChange={(val) =>
+                setTest(val === "all" ? undefined : Number(val))
+              }
+            >
+              <SelectTrigger className="w-full rounded-xl border-border bg-card font-semibold text-foreground sm:w-[160px]">
+                <SelectValue placeholder={t("allTests")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">{t("allTests")}</SelectItem>
+                {Array.from({ length: 10 }, (_, i) => i + 1).map((val) => (
+                  <SelectItem key={val} value={String(val)}>
+                    {t("test", { test: val })}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </div>
         {items.length === 0 ? (
           <section className="mt-8 rounded-2xl border border-dashed px-6 py-12 text-center">

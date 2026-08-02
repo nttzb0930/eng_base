@@ -167,8 +167,8 @@ export function PracticeView({ level, mode }: PracticeViewProps) {
         <section className="shadow-brand relative overflow-hidden rounded-lg bg-[radial-gradient(120%_150%_at_0%_0%,#10b981_0%,#047857_58%,#064e3b_100%)] p-6 text-white sm:p-8">
           <div className="relative z-10 flex flex-col gap-6 md:flex-row md:items-center">
             <div className="min-w-0 flex-1">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 backdrop-blur">
-                <Target className="h-3.5 w-3.5" aria-hidden="true" />
+              <span className="inline-flex whitespace-nowrap items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 backdrop-blur">
+                <Target className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                 {t("priorityToday")}
               </span>
               <h2 className="mt-4 text-2xl font-bold sm:text-3xl">

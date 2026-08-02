@@ -74,8 +74,10 @@ export function ToeicReadingListView({ scope }: ToeicReadingListViewProps) {
             {t("list.description")}
           </p>
         </header>
-        <ToeicReadingModeTabs mode="tests" />
-        <ToeicReadingScopeTabs scope={scope} />
+        <div className="mt-6 space-y-4">
+          <ToeicReadingModeTabs mode="tests" />
+          <ToeicReadingScopeTabs scope={scope} />
+        </div>
 
         {testsQuery.data.length === 0 ? (
           <section className="mt-8 rounded-2xl border border-dashed px-6 py-12 text-center">
