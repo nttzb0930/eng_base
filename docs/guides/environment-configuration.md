@@ -47,6 +47,12 @@ API capability code does not read `process.env`. Reads are restricted to
 `src/config`, process bootstrap, and the Prisma adapter boundary; capability
 behavior consumes validated or injected configuration.
 
+Admin-editable runtime Settings are operational product values stored through
+the Settings capability; they are not environment variables. That store must
+never contain credentials, tokens, provider keys, database URLs, private paths,
+or deployment-only configuration. Secrets and infrastructure values remain at
+the validated environment boundaries described in this guide.
+
 `LICENSED_CONTENT_ROOT` points to the private provider-owned directory that
 contains canonical TOEIC media paths. Local workspace scripts default it to
 `../../var/licensed-content/dautoeic` from `apps/api`. A hosted API must mount

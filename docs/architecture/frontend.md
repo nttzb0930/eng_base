@@ -159,6 +159,12 @@ settings and persists only its collapsed presentation preference. Mobile
 navigation uses the shared Sheet primitive; authentication and session data do
 not enter the sidebar store.
 
+The Admin Settings route keeps `SettingsView` as a thin composition boundary.
+Its typed form, schema, category navigation, loading/error handling, and partial
+update behavior belong to `app/features/settings`. Desktop uses vertical tabs,
+mobile uses a Select for the same categories, and neither surface exposes
+persistence storage keys to operators.
+
 Reading uses the same feature/view profile in both frontends. Admin exposes
 `/reading-passages` for nested question authoring and publication. Web exposes a
 localized `/reading` list plus focused session/result routes. Display
