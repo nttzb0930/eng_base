@@ -144,35 +144,38 @@ session shell owns `/toeic/reading/tests/:testId` and
 `/toeic/reading/results/:attemptId`. Each route imports a distinct
 layout-matching skeleton rather than a generic page placeholder.
 
-The session keeps answer selections, review markers, and its idempotency key in
-client state. It submits the exact `sourceVersion` received with the test and
-does not infer correctness before submission. Result presentation consumes
-immutable attempt snapshots and communicates correctness with icons, text, and
-border treatment in addition to color.
+The Full Test session keeps answer selections, review markers, and its
+idempotency key in client state. It submits the exact `sourceVersion` received
+with the test and does not infer correctness before submission. Result
+presentation consumes immutable attempt snapshots and communicates correctness
+with icons, text, and border treatment in addition to color.
 
-TOEIC Reading sessions fetch the selected test once and render one active
-question at a time. Previous, Next, and direct question-number controls update
-client state without requiring an answer or fetching another page. Part 6 and
-Part 7 render only the stimulus referenced by the active question. Submission
-remains available only after every question in the selected scope has an
-answer.
+TOEIC Reading sessions render one active question at a time. Full Test keeps
+correctness private until final submission. Part 5, 6, and 7 instead start an
+authenticated backend practice session: selecting an option grades that one
+question immediately, locks its first graded answer, and reveals only the
+returned correctness, correct option, explanation, and available translation.
+Previous, Next, and direct question-number controls do not fetch another test.
+Part 6 and Part 7 render only the stimulus referenced by the active question.
+Part completion remains unavailable until every question has been graded.
 
-The session also fetches the authenticated backend draft before initializing
+Full Test also fetches the authenticated backend draft before initializing
 interactive state. Answer, review-marker, and active-question changes enqueue
 complete snapshots through a feature-owned serialized queue; only one save is
 in flight and rapid pending changes collapse to the newest snapshot. The UI
 keeps local state after a save error, reports saving/saved/error status, and
 flushes queued work before submission so a late request cannot recreate a
-deleted draft. No learner progress is stored in `localStorage`. Test cards use
-server-projected draft progress for the progress bar, answered/remaining counts,
-and Continue action.
+deleted draft. Part practice stores graded answers and navigation state in its
+backend session instead. No learner progress is stored in `localStorage`. Test
+cards use server-projected progress for answered/remaining counts and their
+Continue action.
 
 The Reading browser exposes four URL-backed scopes: Full Test, Part 5, Part 6,
 and Part 7. Part 5 is the default. Every scope lists the published tests so the
 Learner chooses the exact test before entering a session. Full Test omits the
 API Part query and requires all 100 questions; Part scopes pass the selected
-Part through cache keys, detail delivery, submission, result labeling, and back
-navigation.
+Part through cache keys, detail delivery, practice-session persistence, and
+back navigation.
 
 Cards render the backend-owned source-set label and test title. Web does not
 derive a year from `updatedAt` and does not invent Level 1-5 classifications.

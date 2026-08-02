@@ -95,6 +95,32 @@ test("TOEIC Reading copy covers backend draft progress and save states", () => {
   }
 });
 
+test("TOEIC Reading copy covers immediate Part practice feedback", () => {
+  const english = readJson("app/messages/en.json").toeicReading as Record<
+    string,
+    unknown
+  >;
+  const practice = english.practice as Record<string, unknown>;
+
+  for (const key of [
+    "loading",
+    "grading",
+    "retryGrade",
+    "correct",
+    "incorrect",
+    "explanation",
+    "translation",
+    "previous",
+    "next",
+    "complete",
+    "retryIncorrect",
+    "restartPart",
+    "returnToTests",
+  ]) {
+    assert.equal(typeof practice[key], "string", `missing practice.${key}`);
+  }
+});
+
 function collectKeys(value: unknown, prefix = ""): string[] {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return [prefix];

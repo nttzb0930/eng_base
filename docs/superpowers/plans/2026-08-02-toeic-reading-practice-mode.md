@@ -407,28 +407,28 @@ git commit -m "feat(web): add TOEIC Reading practice client"
 - Consumes: practice hooks and session types from Tasks 1–3.
 - Produces: a Part Practice view selected whenever `scope` is 5, 6, or 7; Full Test still selects `ToeicReadingSessionView`.
 
-- [ ] **Step 1: Write failing route and presentation tests**
+- [x] **Step 1: Write failing route and presentation tests**
 
 Assert that the route selects practice for Part scopes and exam for Full Test, feedback renders only for a graded answer, the sticky footer contains Previous/drawer/Next, and the practice root has `min-w-0` with no mobile fixed widths.
 
-- [ ] **Step 2: Run tests and verify RED**
+- [x] **Step 2: Run tests and verify RED**
 
 Run: `pnpm --filter @repo/web exec tsx --test app/features/toeic-reading/tests/toeic-reading-practice-presentation.test.ts`  
 Expected: FAIL because practice components do not exist.
 
-- [ ] **Step 3: Implement Part 5 shell and question feedback**
+- [x] **Step 3: Implement Part 5 shell and question feedback**
 
 Use `lg:grid-cols-[minmax(0,38fr)_minmax(0,62fr)]`. Selecting an option calls the grade mutation immediately. While pending, options are disabled; on failure the pending option stays selected with Retry; on success all options become read-only and the correct/incorrect border, icon, answer, explanation, and available translation appear.
 
-- [ ] **Step 4: Implement navigation and completion**
+- [x] **Step 4: Implement navigation and completion**
 
 Persist active question and review markers through the PATCH hook. Bottom navigation is `sticky bottom-0`, includes content-safe padding, and opens an accessible drawer with correct/incorrect/unanswered/active/marked states. Complete becomes available when all Part questions are graded.
 
-- [ ] **Step 5: Add synchronized English and Vietnamese copy**
+- [x] **Step 5: Add synchronized English and Vietnamese copy**
 
 Add the same keys to both message files for loading, grading, retry, correct, incorrect, explanation, translation, Previous, Next, Complete, retry incorrect, restart Part, and return to tests.
 
-- [ ] **Step 6: Verify and commit**
+- [x] **Step 6: Verify and commit**
 
 Run:
 
