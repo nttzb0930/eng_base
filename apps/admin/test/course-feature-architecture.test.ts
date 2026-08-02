@@ -104,6 +104,28 @@ test("Courses screen composes focused Shadcn management components", () => {
   assert.equal(source.includes("font-bold"), false);
 });
 
+test("Units screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/units/unit-columns.tsx",
+    "app/features/courses/components/units/UnitEditorForm.tsx",
+    "app/features/courses/components/units/unit-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/UnitsManagementScreen.tsx"),
+    "utf8",
+  );
+  assert.equal(source.includes("PageHeader"), true);
+  assert.equal(source.includes("DestructiveActionDialog"), true);
+  assert.equal(source.includes("UnitEditorForm"), true);
+  assert.equal(source.includes("confirm("), false);
+  assert.equal(source.includes("text-zinc"), false);
+  assert.equal(source.includes("bg-white"), false);
+  assert.equal(source.includes("font-bold"), false);
+});
+
 test("course resources use TypeScript-only shared types", () => {
   const apiRoot = join(appRoot, "app/features/courses/api");
   for (const file of resourceFiles) {
