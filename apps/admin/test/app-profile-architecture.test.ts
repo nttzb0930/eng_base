@@ -29,6 +29,9 @@ test("shared Admin presentation primitives live under app", () => {
     "app/components/ui/textarea.tsx",
     "app/components/ui/tooltip.tsx",
     "app/components/data-table/data-table-card.tsx",
+    "app/components/data-table/data-table-pagination.tsx",
+    "app/components/data-table/data-table-toolbar.tsx",
+    "app/components/data-table/data-table.types.ts",
     "app/components/layout/PageHeader.tsx",
     "app/components/theme/AdminThemeProvider.tsx",
     "app/components/theme/ThemeMenu.tsx",
@@ -112,6 +115,23 @@ test("Admin owns a CSS-first Shadcn profile", () => {
   assert.match(globals, /@source "\.\.\/\.\.\/\.\.\/packages\/ui\/src/u);
   assert.match(globals, /@custom-variant dark/u);
   assert.equal(existsSync(join(root, "tailwind.config.ts")), false);
+});
+
+test("Admin Data Table uses TanStack with server-controlled state", () => {
+  const table = readFileSync(
+    join(root, "app/components/data-table/data-table.tsx"),
+    "utf8",
+  );
+  const types = readFileSync(
+    join(root, "app/components/data-table/data-table.types.ts"),
+    "utf8",
+  );
+
+  assert.match(table, /useReactTable/u);
+  assert.match(table, /getCoreRowModel/u);
+  assert.match(table, /manualPagination:\s*true/u);
+  assert.match(table, /manualSorting:\s*true/u);
+  assert.match(types, /getRowId\?:\s*\(item:\s*T\)\s*=>\s*string/u);
 });
 
 test("shared Admin presentation imports use app-owned paths", () => {
