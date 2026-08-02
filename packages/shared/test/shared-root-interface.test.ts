@@ -23,7 +23,9 @@ import {
   type ReadingAttemptResult,
   type ReadingPassageSummary,
   type ReadingSubmissionPayload,
+  type SystemSettings,
   type TargetLanguageId,
+  type UpdateSystemSettingsPayload,
   type VocabularyLearnerState,
   type VocabularyTopicDetails,
   type VocabularyTopicProgressStats,
@@ -105,6 +107,20 @@ test("Shared exposes the TypeScript-only root Interface", () => {
     lastLearningAt: new Date("2026-07-24T10:00:00.000Z"),
     timeZone: "UTC",
   };
+  const settings: SystemSettings = {
+    maxHearts: 5,
+    practiceWordsPerLesson: 15,
+    weakWordsLimit: 20,
+    dailyReviewRelaxedLimit: 5,
+    dailyReviewStandardLimit: 15,
+    dailyReviewAcceleratedLimit: 30,
+    dailyReviewIntensiveLimit: 50,
+    registrationEnabled: true,
+  };
+  const settingsUpdate: UpdateSystemSettingsPayload = {
+    maxHearts: 7,
+    registrationEnabled: false,
+  };
 
   assert.equal(course.title, payload.title);
   assert.equal(course.code, payload.code);
@@ -135,6 +151,11 @@ test("Shared exposes the TypeScript-only root Interface", () => {
   assert.equal(learningIntensity, "standard");
   assert.equal(streak.currentStreak, 3);
   assert.equal(MAX_HEARTS, 5);
+  assert.equal(settings.practiceWordsPerLesson, 15);
+  assert.deepEqual(settingsUpdate, {
+    maxHearts: 7,
+    registrationEnabled: false,
+  });
 });
 
 test("Shared publishes the Reading A1 root Interface", async () => {
@@ -231,4 +252,18 @@ test("Shared publishes Flashcard deck summary contracts", async () => {
   assert.match(declarations, /export type FlashcardDeckSummary =/);
   assert.match(declarations, /overview:/);
   assert.match(declarations, /topicDecks: FlashcardDeckSummary\[\]/);
+});
+
+test("Shared publishes the typed Settings contract", async () => {
+  const declarations = await readFile(
+    new URL("../dist/types/setting.d.ts", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(declarations, /export type SystemSettings =/);
+  assert.match(declarations, /registrationEnabled: boolean/);
+  assert.match(
+    declarations,
+    /export type UpdateSystemSettingsPayload = Partial<SystemSettings>/,
+  );
 });
