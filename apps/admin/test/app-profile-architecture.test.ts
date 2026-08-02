@@ -19,8 +19,25 @@ test("shared Admin presentation primitives live under app", () => {
     "app/components/ui/avatar.tsx",
     "app/components/ui/dialog.tsx",
     "app/components/ui/separator.tsx",
+    "app/components/ui/alert-dialog.tsx",
+    "app/components/ui/badge.tsx",
+    "app/components/ui/collapsible.tsx",
+    "app/components/ui/sheet.tsx",
+    "app/components/ui/skeleton.tsx",
+    "app/components/ui/switch.tsx",
+    "app/components/ui/tabs.tsx",
+    "app/components/ui/textarea.tsx",
+    "app/components/ui/tooltip.tsx",
     "app/components/data-table/data-table-card.tsx",
+    "app/components/layout/PageHeader.tsx",
+    "app/components/theme/AdminThemeProvider.tsx",
+    "app/components/theme/ThemeMenu.tsx",
+    "app/components/feedback/EmptyState.tsx",
+    "app/components/feedback/ErrorState.tsx",
+    "app/components/feedback/LoadingState.tsx",
     "app/components/feedback/TableSkeleton.tsx",
+    "app/components/forms/FormField.tsx",
+    "app/components/forms/FormActions.tsx",
     "app/hooks/use-debounce.ts",
     "app/hooks/use-table-controls.ts",
     "app/utils/cn.ts",
@@ -73,14 +90,28 @@ test("Admin reusable Radix primitives are imported from the shared UI package", 
   }
 });
 
-test("Admin Tailwind scans shared UI primitive sources", () => {
-  const source = readFileSync(join(root, "tailwind.config.ts"), "utf8");
+test("Admin owns a CSS-first Shadcn profile", () => {
+  const components = JSON.parse(
+    readFileSync(join(root, "components.json"), "utf8"),
+  ) as {
+    style: string;
+    tailwind: { config: string; css: string; cssVariables: boolean };
+    aliases: { components: string; ui: string; utils: string };
+  };
+  const globals = readFileSync(join(root, "app/globals.css"), "utf8");
 
-  assert.equal(
-    source.includes("../../packages/ui/src/**/*.{ts,tsx}"),
-    true,
-    "shared dialog classes must be present in the Admin CSS build",
-  );
+  assert.equal(components.style, "new-york");
+  assert.equal(components.tailwind.config, "");
+  assert.equal(components.tailwind.css, "app/globals.css");
+  assert.equal(components.tailwind.cssVariables, true);
+  assert.equal(components.aliases.components, "@/app/components");
+  assert.equal(components.aliases.ui, "@/app/components/ui");
+  assert.equal(components.aliases.utils, "@/app/utils/cn");
+  assert.match(globals, /@import "tailwindcss"/u);
+  assert.match(globals, /@import "tw-animate-css"/u);
+  assert.match(globals, /@source "\.\.\/\.\.\/\.\.\/packages\/ui\/src/u);
+  assert.match(globals, /@custom-variant dark/u);
+  assert.equal(existsSync(join(root, "tailwind.config.ts")), false);
 });
 
 test("shared Admin presentation imports use app-owned paths", () => {
