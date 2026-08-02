@@ -16,8 +16,10 @@ import { GetWeakWordsPracticeChallengesUseCase } from "./use-cases/get-weak-word
 import { GetWeakWordsPracticeSummaryUseCase } from "./use-cases/get-weak-words-practice-summary.use-case";
 import { ListAdminPracticeSessionsUseCase } from "./use-cases/list-admin-practice-sessions.use-case";
 import { RemoveAdminPracticeSessionUseCase } from "./use-cases/remove-admin-practice-session.use-case";
+import { SettingsModule } from "../settings";
 
 @Module({
+  imports: [SettingsModule],
   controllers: [PracticeController, AdminPracticeSessionsController],
   providers: [
     GetFillBlankPracticeSummaryUseCase,

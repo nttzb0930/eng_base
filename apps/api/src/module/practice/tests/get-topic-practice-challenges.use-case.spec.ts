@@ -5,6 +5,7 @@ import { NotFoundException } from "@nestjs/common";
 import { GetTopicPracticeChallengesUseCase } from "../use-cases/get-topic-practice-challenges.use-case";
 
 const createdAt = new Date("2026-07-24T00:00:00.000Z");
+const settings = { get: async () => 20 };
 
 const createProgress = (
   vocabularyItemId: number,
@@ -87,7 +88,10 @@ function createPrismaFake(items = topicItems) {
 
 test("weak mode selects only reviewed items with wrong answers", async () => {
   const prisma = createPrismaFake();
-  const useCase = new GetTopicPracticeChallengesUseCase(prisma as never);
+  const useCase = new GetTopicPracticeChallengesUseCase(
+    prisma as never,
+    settings as never,
+  );
 
   const challenges = await useCase.execute(
     "user-1",
@@ -124,6 +128,7 @@ test("weak mode selects only reviewed items with wrong answers", async () => {
 test("new mode selects only items without reviewed progress", async () => {
   const useCase = new GetTopicPracticeChallengesUseCase(
     createPrismaFake() as never,
+    settings as never,
   );
 
   const challenges = await useCase.execute(
@@ -145,6 +150,7 @@ test("all mode selects every eligible Topic item up to 20", async () => {
   );
   const useCase = new GetTopicPracticeChallengesUseCase(
     createPrismaFake(items) as never,
+    settings as never,
   );
 
   const challenges = await useCase.execute(
@@ -166,7 +172,7 @@ test("unknown Topic throws NotFoundException", async () => {
     vocabulary_topics: {
       findUnique: async () => null,
     },
-  } as never);
+  } as never, settings as never);
 
   await assert.rejects(
     useCase.execute("user-1", "missing", "all", () => 0),
@@ -177,6 +183,7 @@ test("unknown Topic throws NotFoundException", async () => {
 test("each challenge has one correct option and no duplicate text", async () => {
   const useCase = new GetTopicPracticeChallengesUseCase(
     createPrismaFake() as never,
+    settings as never,
   );
 
   const challenges = await useCase.execute(
@@ -199,6 +206,7 @@ test("each challenge has one correct option and no duplicate text", async () => 
 test("same random source produces the same challenge order", async () => {
   const useCase = new GetTopicPracticeChallengesUseCase(
     createPrismaFake() as never,
+    settings as never,
   );
 
   const first = await useCase.execute("user-1", "travel", "all", () => 0);

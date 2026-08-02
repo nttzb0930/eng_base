@@ -18,6 +18,7 @@ const tokens = new AuthTokenService({
   refreshExpiresIn: "7d",
 });
 const passwords = new PasswordService();
+const enabledSettings = { get: async () => true };
 
 function createPrismaFake(initialUser?: users) {
   let user = initialUser;
@@ -147,7 +148,8 @@ test("register, refresh and logout use cases preserve session persistence", asyn
         verificationEmails.push(input);
       },
     },
-    new VerificationCodeService(passwords)
+    new VerificationCodeService(passwords),
+    enabledSettings as never,
   );
   assert.deepEqual(
     await register.execute({
@@ -194,7 +196,8 @@ test("registration succeeds when the welcome email provider fails", async () => 
         throw new Error("smtp unavailable");
       },
     },
-    new VerificationCodeService(passwords)
+    new VerificationCodeService(passwords),
+    enabledSettings as never,
   );
 
   assert.deepEqual(
@@ -211,6 +214,29 @@ test("registration succeeds when the welcome email provider fails", async () => 
     }
   );
   assert.equal(fake.currentUser()?.email, "fallback@example.com");
+});
+
+test("registration is unavailable when the runtime policy is disabled", async () => {
+  const fake = createPrismaFake();
+  const register = new RegisterUserUseCase(
+    fake.prisma,
+    passwords,
+    { sendVerificationEmail: async () => undefined },
+    new VerificationCodeService(passwords),
+    { get: async () => false } as never,
+  );
+
+  await assert.rejects(
+    () => register.execute({
+      username: "closed-user",
+      email: "closed@example.com",
+      password: "secret",
+      fullName: "Closed User",
+    }),
+    (error: unknown) =>
+      error instanceof Error && error.message === "REGISTRATION_DISABLED",
+  );
+  assert.equal(fake.currentUser(), undefined);
 });
 
 test("Auth failures keep public codes while carrying safe internal reasons", async () => {

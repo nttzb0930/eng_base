@@ -3,6 +3,7 @@ import type { TopicPracticeMode } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import type { ChallengeOption } from "../../courses";
+import { SystemSettingsReader } from "../../settings";
 import {
   getDistractors,
   getVocabularyLearnerState,
@@ -12,14 +13,13 @@ import {
 import {
   PracticeSource,
   type RandomSource,
-  WEAK_WORDS_LIMIT,
   type WeakWordsPracticeChallenge,
 } from "./practice-source";
 
 @Injectable()
 export class GetTopicPracticeChallengesUseCase extends PracticeSource {
-  constructor(prisma: PrismaService) {
-    super(prisma);
+  constructor(prisma: PrismaService, settings: SystemSettingsReader) {
+    super(prisma, settings);
   }
 
   async execute(
@@ -28,6 +28,7 @@ export class GetTopicPracticeChallengesUseCase extends PracticeSource {
     mode: TopicPracticeMode,
     random: RandomSource = this.random,
   ): Promise<WeakWordsPracticeChallenge[]> {
+    const weakWordsLimit = await this.getWeakWordsLimit();
     const topic = await this.prisma.vocabulary_topics.findUnique({
       where: { slug: slug.trim().toLowerCase() },
       include: {
@@ -64,7 +65,7 @@ export class GetTopicPracticeChallengesUseCase extends PracticeSource {
     });
     const selectedItems = this.shuffle(eligibleItems, random).slice(
       0,
-      WEAK_WORDS_LIMIT,
+      weakWordsLimit,
     );
     const distractorPool = topicItems.map(toReviewSourceItem);
 

@@ -1,13 +1,15 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import { GetSavedVocabularyWordsUseCase } from "../../vocabulary";
+import { SystemSettingsReader } from "../../settings";
 import { ReviewSource } from "./review-source";
 
 @Injectable()
 export class DailyReviewSource extends ReviewSource {
   constructor(
     prisma: PrismaService,
-    savedWords: GetSavedVocabularyWordsUseCase
+    savedWords: GetSavedVocabularyWordsUseCase,
+    private readonly settings: SystemSettingsReader,
   ) {
     super(prisma, savedWords);
   }
@@ -48,16 +50,17 @@ export class DailyReviewSource extends ReviewSource {
       select: { intensity: true },
     });
     const intensity = progress?.intensity || "standard";
+    const settings = await this.settings.getAll();
     const limit =
       intensity === "relaxed"
-        ? 5
+        ? settings.dailyReviewRelaxedLimit
         : intensity === "standard"
-          ? 15
+          ? settings.dailyReviewStandardLimit
           : intensity === "accelerated"
-            ? 30
+            ? settings.dailyReviewAcceleratedLimit
             : intensity === "intensive"
-              ? 50
-              : 15;
+              ? settings.dailyReviewIntensiveLimit
+              : settings.dailyReviewStandardLimit;
 
     const [dueRows, weakRows, savedRows, learnedRows] = await Promise.all([
       this.prisma.user_vocabulary_progress.findMany({
