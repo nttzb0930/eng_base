@@ -97,3 +97,19 @@ test("destructive seed is exposed only as an explicit development command", () =
     /scripts\/seed-dev\.ts/u
   );
 });
+
+test("safe Vocabulary bootstrap source cannot contain destructive database operations", () => {
+  const databaseScripts = join(apiRoot, "scripts/vocabulary/database");
+  const safeFiles = filesUnder(databaseScripts)
+    .filter((file) => /vocabulary-bootstrap|bootstrap-vocabulary/u.test(file))
+    .filter((file) => file.endsWith(".ts"));
+
+  assert.ok(safeFiles.length > 0);
+  const source = safeFiles
+    .map((file) => readFileSync(join(apiRoot, file), "utf8"))
+    .join("\n");
+  assert.doesNotMatch(source, /\.deleteMany\s*\(/u);
+  assert.doesNotMatch(source, /\bDELETE\s+FROM\b/iu);
+  assert.doesNotMatch(source, /\bTRUNCATE\b/iu);
+  assert.doesNotMatch(source, /db:migrate:reset/u);
+});

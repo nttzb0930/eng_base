@@ -514,6 +514,10 @@ const sortedLiveState = (live: VocabularyBootstrapLiveState) =>
     ])
   );
 
+export const fingerprintVocabularyBootstrapLiveState = (
+  live: VocabularyBootstrapLiveState
+) => sha256(sortedLiveState(live));
+
 export function buildVocabularyBootstrapPlan(
   source: VocabularySeedData,
   live: VocabularyBootstrapLiveState
@@ -560,7 +564,7 @@ export function buildVocabularyBootstrapPlan(
     retainedExternalRecords: live.protectedExternalRecords,
   };
   const sourceSha256 = sha256(source);
-  const liveSha256 = sha256(sortedLiveState(live));
+  const liveSha256 = fingerprintVocabularyBootstrapLiveState(live);
   const core = {
     version: 1 as const,
     databaseTarget: live.databaseTarget,
