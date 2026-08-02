@@ -214,6 +214,18 @@ test("Admin Practice Sessions follows the Practice owner profile", () => {
 test("Admin Settings follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/settings/api/setting.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/settings/hooks/use-setting.ts")), true);
+  assert.equal(
+    existsSync(
+      join(root, "app/features/settings/components/SystemSettingsScreen.tsx"),
+    ),
+    true,
+  );
+  assert.equal(
+    existsSync(
+      join(root, "app/features/settings/components/system-settings.schema.ts"),
+    ),
+    true,
+  );
   assert.equal(existsSync(join(root, "app/views/settings/SettingsView.tsx")), true);
   assert.equal(existsSync(join(root, "src/services/settings")), false);
   assert.equal(existsSync(join(root, "src/views/settings")), false);
@@ -221,6 +233,20 @@ test("Admin Settings follows the frontend feature/view profile", () => {
   const routeSource = readFileSync(join(root, "app/(dashboard)/settings/page.tsx"), "utf8");
   assert.equal(routeSource.includes("@/app/views/settings/SettingsView"), true);
   assert.equal(routeSource.includes("@/src/views/settings"), false);
+
+  const viewSource = readFileSync(
+    join(root, "app/views/settings/SettingsView.tsx"),
+    "utf8",
+  );
+  assert.equal(
+    viewSource.includes(
+      "@/app/features/settings/components/SystemSettingsScreen",
+    ),
+    true,
+  );
+  assert.equal(viewSource.includes("useSystemSettings"), false);
+  assert.equal(viewSource.includes("useForm"), false);
+  assert.equal(viewSource.split("\n").length <= 12, true);
 });
 
 test("Admin has no legacy capability implementation or imports", () => {

@@ -4,6 +4,8 @@ import { Button } from "@/app/components/ui/button";
 
 type FormActionsProps = {
   cancelLabel?: string;
+  isCancelDisabled?: boolean;
+  isSubmitDisabled?: boolean;
   isSubmitting?: boolean;
   onCancel(): void;
   submitLabel: string;
@@ -11,16 +13,23 @@ type FormActionsProps = {
 
 export function FormActions({
   cancelLabel = "Hủy",
+  isCancelDisabled = false,
+  isSubmitDisabled = false,
   isSubmitting = false,
   onCancel,
   submitLabel,
 }: FormActionsProps) {
   return (
     <div className="flex flex-col-reverse gap-2 border-t pt-4 sm:flex-row sm:justify-end">
-      <Button onClick={onCancel} type="button" variant="outline">
+      <Button
+        disabled={isCancelDisabled || isSubmitting}
+        onClick={onCancel}
+        type="button"
+        variant="outline"
+      >
         {cancelLabel}
       </Button>
-      <Button disabled={isSubmitting} type="submit">
+      <Button disabled={isSubmitDisabled || isSubmitting} type="submit">
         {isSubmitting ? (
           <LoaderCircle aria-hidden="true" className="animate-spin" />
         ) : null}
