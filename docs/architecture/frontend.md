@@ -130,6 +130,35 @@ Admin has no domain `src/` tree. Admin is a caller and authorization mode in the
 API, not a backend domain owner. Frontend features are named after the capability
 whose data and workflows they present.
 
+### Admin styling and presentation
+
+Admin uses a CSS-first Tailwind 4 and Shadcn source profile. The registry at
+`apps/admin/components.json` points `components`, `ui`, and `utils` to
+`@/app/components`, `@/app/components/ui`, and `@/app/utils/cn`. Global CSS owns
+the Tailwind import, shared `packages/ui` source scan, semantic color tokens,
+browser scrollbar behavior, and the class-based dark variant; there is no
+Admin `tailwind.config.ts`.
+
+Shadcn source used only by Admin stays under `app/components/ui`. Avatar,
+Dialog, and Separator remain thin re-exports from `@repo/ui` because Web and
+Admin use those exact implementations. Similar primitives are not promoted to
+`packages/ui` until their behavior is genuinely identical across runtimes.
+
+The root layout loads Inter explicitly. Normal body and table copy uses weight
+400, controls and navigation use 500, and headings use 600. Broad bold or black
+weights are not part of the normal management hierarchy. `AdminThemeProvider`
+offers light, dark, and system modes through `next-themes`; components consume
+semantic classes such as `bg-background`, `bg-card`, `text-foreground`, and
+`text-muted-foreground` instead of hard-coded light surfaces.
+
+Admin-wide shell, grouped navigation, page headers, table composition, feedback,
+and form composition belong under `app/components`. Capability-specific columns,
+editors, dialogs, and workflow presentation stay below their owning feature.
+Desktop navigation groups course content, Reading, operations, and system
+settings and persists only its collapsed presentation preference. Mobile
+navigation uses the shared Sheet primitive; authentication and session data do
+not enter the sidebar store.
+
 Reading uses the same feature/view profile in both frontends. Admin exposes
 `/reading-passages` for nested question authoring and publication. Web exposes a
 localized `/reading` list plus focused session/result routes. Display
