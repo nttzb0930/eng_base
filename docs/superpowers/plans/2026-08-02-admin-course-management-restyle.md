@@ -23,12 +23,12 @@
 ### Task 1: Guard the target presentation architecture
 
 **Files:**
-- Modify: `apps/admin/test/course-management-architecture.test.ts`
+- Modify: `apps/admin/test/course-feature-architecture.test.ts`
 
 1. Add failing assertions for feature-local columns, schema/editor form, and delete-dialog composition for all five resources.
 2. Assert each management screen consumes `PageHeader`, `DataTable`, semantic feedback, and no browser `confirm()` or native `<select>`.
 3. Assert course View adapters remain thin and API modules remain split by resource.
-4. Run `pnpm --filter @repo/admin exec tsx --test test/course-management-architecture.test.ts` and confirm RED.
+4. Run `pnpm --filter @repo/admin exec tsx --test test/course-feature-architecture.test.ts` and confirm RED.
 5. Commit the characterization guard.
 
 ### Task 2: Add the shared destructive-action pattern
@@ -108,4 +108,3 @@ Repeat the RED/GREEN extraction. Preserve Challenge lookup, correctness, text/au
 5. Run `pnpm --filter @repo/admin lint`.
 6. Run `pnpm --filter @repo/admin build`.
 7. Update canonical frontend documentation only if the implemented ownership differs from its current description.
-

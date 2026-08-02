@@ -41,6 +41,7 @@ test("shared Admin presentation primitives live under app", () => {
     "app/components/feedback/TableSkeleton.tsx",
     "app/components/forms/FormField.tsx",
     "app/components/forms/FormActions.tsx",
+    "app/components/forms/DestructiveActionDialog.tsx",
     "app/hooks/use-debounce.ts",
     "app/hooks/use-table-controls.ts",
     "app/utils/cn.ts",
