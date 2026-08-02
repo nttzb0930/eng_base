@@ -2,7 +2,13 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { usePathname, useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useSyncExternalStore,
+} from "react";
 
 import { authApi } from "@/app/features/auth/api/auth.api";
 import {
@@ -17,7 +23,10 @@ import {
   subscribeAuthSession,
 } from "@/app/features/auth/store/auth-session.store";
 import { createAuthSessionBootstrap } from "@/app/features/auth/session/auth-session-bootstrap";
-import type { LoginBody, RegisterBody } from "@/app/features/auth/types/auth.types";
+import type {
+  LoginBody,
+  RegisterBody,
+} from "@/app/features/auth/types/auth.types";
 import { defaultLocale, isLocale } from "@/app/i18n/config";
 import { withLocale } from "@/app/i18n/paths";
 import { setOnUnauthenticated } from "@/app/features/auth/api/web-http-client";
@@ -47,12 +56,12 @@ export function Providers({ children }: { children: React.ReactNode }) {
             refetchOnWindowFocus: false,
           },
         },
-      }),
+      })
   );
   const [status, setStatus] = useState<AuthStatus>(() =>
     typeof document === "undefined" || hasRefreshSession()
       ? "loading"
-      : "unauthenticated",
+      : "unauthenticated"
   );
   const [authSessionBootstrap] = useState(() =>
     createAuthSessionBootstrap({
@@ -64,7 +73,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       },
       clearSession: clearAuthSession,
       setUnauthenticated: () => setStatus("unauthenticated"),
-    }),
+    })
   );
   useSyncExternalStore(subscribeAuthSession, getAuthSession, getAuthSession);
 
@@ -91,7 +100,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   }, []);
 
   const register = useCallback(async (body: RegisterBody) => {
-    await authApi.register(body);
+    return authApi.register(body);
   }, []);
 
   const logout = useCallback(async () => {
@@ -108,7 +117,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   const value = useMemo<AuthContextValue>(
     () => ({ status, login, register, logout }),
-    [status, login, register, logout],
+    [status, login, register, logout]
   );
 
   return (

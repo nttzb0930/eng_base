@@ -68,6 +68,11 @@ webHttpClient.interceptors.response.use(
     return response;
   },
   async (error: AxiosError) => {
+    const responseMessage = (error.response?.data as { message?: unknown } | undefined)
+      ?.message;
+    if (typeof responseMessage === "string") {
+      error.message = responseMessage;
+    }
     const config = error.config as RetryableConfig | undefined;
     const authRoute =
       config?.url?.includes("/auth/login") ||
