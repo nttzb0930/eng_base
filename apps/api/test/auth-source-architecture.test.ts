@@ -91,4 +91,9 @@ test("Auth root exposes a small public Interface", () => {
     publicInterface,
     /Guard|Interceptor|signJwt|verifyJwt|hashPassword|request-auth|currentUser/
   );
+  assert.ok(
+    publicInterface.indexOf("export { AuthTokenService") <
+      publicInterface.indexOf("export { AuthModule"),
+    "runtime Auth services must initialize before AuthModule imports guarded capabilities"
+  );
 });
