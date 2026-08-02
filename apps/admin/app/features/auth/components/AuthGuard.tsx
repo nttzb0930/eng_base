@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
+import { LoadingState } from "@/app/components/feedback/LoadingState";
+
 export function AuthGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -34,12 +36,11 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
 
   if (!authorized) {
     return (
-      <div className="flex h-screen w-screen items-center justify-center bg-zinc-50">
-        <div className="flex flex-col items-center gap-2">
-          <div className="h-6 w-6 animate-spin rounded-full border-2 border-zinc-950 border-t-transparent" />
-          <span className="text-xs font-semibold text-zinc-500">Checking credentials...</span>
+      <main className="min-h-screen bg-background px-6 py-10">
+        <div className="mx-auto w-full max-w-6xl">
+          <LoadingState label="Đang xác thực phiên quản trị" rows={3} />
         </div>
-      </div>
+      </main>
     );
   }
 

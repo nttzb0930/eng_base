@@ -185,6 +185,31 @@ test("Admin Auth follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "components/auth/AuthGuard.tsx")), false);
 });
 
+test("Admin Auth uses the shared form and feedback foundation", () => {
+  const schemaPath = join(
+    root,
+    "app/features/auth/components/login.schema.ts",
+  );
+  assert.equal(existsSync(schemaPath), true, "login schema must exist");
+
+  const loginView = readFileSync(
+    join(root, "app/views/auth/LoginView.tsx"),
+    "utf8",
+  );
+  assert.match(loginView, /useForm/u);
+  assert.match(loginView, /zodResolver/u);
+  assert.match(loginView, /FormField/u);
+  assert.doesNotMatch(loginView, /font-(?:bold|black|extrabold)/u);
+  assert.doesNotMatch(loginView, /(?:bg|text|border)-zinc-/u);
+
+  const authGuard = readFileSync(
+    join(root, "app/features/auth/components/AuthGuard.tsx"),
+    "utf8",
+  );
+  assert.match(authGuard, /LoadingState/u);
+  assert.doesNotMatch(authGuard, /(?:bg|text|border)-zinc-/u);
+});
+
 test("Admin Users follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/users/api/user.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/users/hooks/use-users.ts")), true);
