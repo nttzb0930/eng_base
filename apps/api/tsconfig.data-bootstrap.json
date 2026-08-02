@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "rootDir": ".",
+    "outDir": "dist-data",
+    "sourceMap": true
+  },
+  "include": [
+    "scripts/vocabulary/database/bootstrap-vocabulary.ts",
+    "scripts/vocabulary/database/vocabulary-bootstrap-plan.ts",
+    "scripts/vocabulary/database/vocabulary-bootstrap-store.ts",
+    "scripts/vocabulary/database/vocabulary-seed-data.ts",
+    "scripts/vocabulary/catalog/vocabulary-catalog.ts",
+    "scripts/support/script-prisma.ts",
+    "src/config/database-url.ts",
+    "src/database/prisma/prisma.config.ts"
+  ]
+}

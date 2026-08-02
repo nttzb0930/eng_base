@@ -13,6 +13,7 @@ node_modules/
 **/.next/
 /out/
 dist/
+apps/api/dist-data/
 .turbo/
 
 # production

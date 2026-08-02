@@ -16,6 +16,11 @@ test("API Dockerfile defines a production-safe monorepo build", () => {
   assert.match(source, /pnpm install --frozen-lockfile/u);
   assert.match(source, /pnpm --filter @repo\/api db:generate/u);
   assert.match(source, /pnpm --filter @repo\/api build/u);
+  assert.match(source, /pnpm --filter @repo\/api build:data-bootstrap/u);
+  assert.match(source, /apps\/api\/dist-data/u);
+  assert.match(source, /data\/vocabulary\/vocabulary-catalog\.json/u);
+  assert.match(source, /data\/vocabulary\/topics\.json/u);
+  assert.doesNotMatch(source, /data\/vocabulary\/(?:working|backups)/u);
   assert.match(source, /USER (?:node|[1-9][0-9]*)/u);
   assert.match(source, /EXPOSE 4000/u);
   assert.match(source, /CMD \["node", "dist\/main\.js"\]/u);
@@ -26,6 +31,21 @@ test("API Dockerfile defines a production-safe monorepo build", () => {
   assert.doesNotMatch(
     source,
     /(?:migrate|db:seed|db:push).*?(?:CMD|ENTRYPOINT)|(?:CMD|ENTRYPOINT).*?(?:migrate|db:seed|db:push)/iu
+  );
+});
+
+test("API package exposes a compiled production bootstrap command", () => {
+  const packageJson = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+
+  assert.equal(
+    packageJson.scripts?.["build:data-bootstrap"],
+    "tsc -p tsconfig.data-bootstrap.json"
+  );
+  assert.equal(
+    packageJson.scripts?.["data:bootstrap-vocabulary:compiled"],
+    "node dist-data/scripts/vocabulary/database/bootstrap-vocabulary.js --data-dir ./data/vocabulary"
   );
 });
 
@@ -43,6 +63,11 @@ test("Docker context excludes secrets and generated output but keeps canonical d
   assert.match(source, /data\/vocabulary\/backups/u);
   assert.doesNotMatch(source, /data\/vocabulary\/vocabulary-catalog\.json/u);
   assert.doesNotMatch(source, /data\/vocabulary\/prompts/u);
+});
+
+test("compiled data tooling remains an ignored build artifact", () => {
+  const gitIgnore = readFileSync(join(workspaceRoot, ".gitignore"), "utf8");
+  assert.match(gitIgnore, /apps\/api\/dist-data\//u);
 });
 
 for (const frontend of [

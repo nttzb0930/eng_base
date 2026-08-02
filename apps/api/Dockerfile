@@ -16,8 +16,13 @@ RUN pnpm install --frozen-lockfile
 RUN pnpm --filter @repo/shared build
 RUN pnpm --filter @repo/api db:generate
 RUN pnpm --filter @repo/api build
+RUN pnpm --filter @repo/api build:data-bootstrap
 RUN pnpm --filter @repo/api deploy --prod --legacy /production/api
 RUN cp -R apps/api/dist /production/api/dist
+RUN cp -R apps/api/dist-data /production/api/dist-data
+RUN mkdir -p /production/api/data/vocabulary \
+  && cp data/vocabulary/vocabulary-catalog.json /production/api/data/vocabulary/vocabulary-catalog.json \
+  && cp data/vocabulary/topics.json /production/api/data/vocabulary/topics.json
 
 FROM node:22-alpine AS runner
 
