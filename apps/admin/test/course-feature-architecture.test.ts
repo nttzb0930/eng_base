@@ -82,6 +82,28 @@ test("course management presentation stays behind the Courses owner", () => {
   }
 });
 
+test("Courses screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/courses/course-columns.tsx",
+    "app/features/courses/components/courses/CourseEditorForm.tsx",
+    "app/features/courses/components/courses/course-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/CoursesManagementScreen.tsx"),
+    "utf8",
+  );
+  assert.equal(source.includes("PageHeader"), true);
+  assert.equal(source.includes("DestructiveActionDialog"), true);
+  assert.equal(source.includes("CourseEditorForm"), true);
+  assert.equal(source.includes("confirm("), false);
+  assert.equal(source.includes("text-zinc"), false);
+  assert.equal(source.includes("bg-white"), false);
+  assert.equal(source.includes("font-bold"), false);
+});
+
 test("course resources use TypeScript-only shared types", () => {
   const apiRoot = join(appRoot, "app/features/courses/api");
   for (const file of resourceFiles) {
