@@ -89,4 +89,3 @@ Use a focused semantic Card, RHF/Zod fields, visible inline errors, correct auto
 5. Run all Admin gates, then root `pnpm test`, `pnpm check-types`, `pnpm lint`, and `pnpm build`.
 6. Run root `pnpm architecture:check`; report any verified pre-existing failure separately and do not broaden scope into Learner Web.
 7. Update the canonical frontend document if implementation changed a durable ownership or presentation rule.
-
