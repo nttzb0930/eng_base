@@ -58,6 +58,27 @@ Admin is a caller and authorization mode, not a default business owner. An
 `/admin/*` controller stays with Users, Practice, Settings, Courses, or the
 capability whose behavior it exposes.
 
+### Runtime Settings ownership
+
+`src/module/settings` owns the typed runtime Settings registry, effective-value
+reader, Admin delivery, and persistence updates. The registry is the canonical
+owner of storage keys, defaults, ranges, parsing, and serialization for maximum
+hearts, practice words per lesson, weak-word selection, the four daily-review
+intensities, and learner registration availability.
+
+Authenticated Admin callers read all effective values with `GET
+/admin/settings` and send partial updates with `PUT /admin/settings`. A bulk
+update validates the complete request before transactionally upserting the
+changed values. The legacy `GET` and `POST /admin/settings/MAX_HEARTS` routes
+remain compatibility Interfaces and use the same typed registry; arbitrary
+legacy keys are rejected.
+
+Progress, Practice, Review, and Auth consume the Settings public reader instead
+of querying `system_settings` directly. A value missing from persistence, or an
+invalid stored value, resolves to its registry default. Changes affect new
+requests and newly started learning sessions; they do not rewrite an active
+session's already-created state.
+
 ### Reading ownership
 
 `src/module/reading` owns both Admin authoring/publication and Learner

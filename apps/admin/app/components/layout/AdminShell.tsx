@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 import { toast } from "sonner";
 
 import { AuthGuard } from "@/app/features/auth/components/AuthGuard";
 import { useSidebarState } from "@/app/store/sidebar.store";
+import { cn } from "@/app/utils/cn";
 
 import { AdminNavbar } from "./AdminNavbar";
 import { getAdminPageTitle } from "./admin-navigation";
@@ -18,7 +19,9 @@ function readAdminUsername() {
 
   try {
     const user = JSON.parse(savedUser) as { username?: unknown };
-    return typeof user.username === "string" && user.username ? user.username : "Admin";
+    return typeof user.username === "string" && user.username
+      ? user.username
+      : "Admin";
   } catch {
     return "Admin";
   }
@@ -29,46 +32,46 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const [username] = useState(readAdminUsername);
   const {
+    closeMobile,
     isCollapsed,
     isMobileOpen,
     toggleCollapsed,
     toggleMobile,
-    closeMobile,
   } = useSidebarState();
 
   const handleLogout = () => {
     localStorage.removeItem("admin_token");
     localStorage.removeItem("admin_user");
-    toast.success("Successfully logged out");
+    toast.success("Đã đăng xuất");
     router.push("/login");
   };
 
   return (
     <AuthGuard>
-      <div className="flex h-screen w-screen overflow-hidden bg-zinc-50 text-zinc-900">
-        {isMobileOpen && (
-          <div
-            className="fixed inset-0 z-40 bg-zinc-950/40 backdrop-blur-sm md:hidden"
-            onClick={closeMobile}
-          />
-        )}
-
+      <div className="min-h-dvh bg-background text-foreground">
         <AdminSidebar
-          pathname={pathname}
           isCollapsed={isCollapsed}
           isMobileOpen={isMobileOpen}
           onCloseMobile={closeMobile}
-          onToggleCollapsed={toggleCollapsed}
+          pathname={pathname}
         />
-
-        <div className="flex h-full min-w-0 flex-1 flex-col overflow-hidden">
+        <div
+          className={cn(
+            "min-h-dvh transition-[padding] duration-200",
+            isCollapsed ? "lg:pl-16" : "lg:pl-72",
+          )}
+        >
           <AdminNavbar
+            isCollapsed={isCollapsed}
+            onLogout={handleLogout}
+            onToggleDesktop={toggleCollapsed}
+            onToggleMobile={toggleMobile}
             title={getAdminPageTitle(pathname)}
             username={username}
-            onLogout={handleLogout}
-            onToggleMobile={toggleMobile}
           />
-          <main className="min-h-0 flex-1 overflow-y-auto bg-zinc-50/50">{children}</main>
+          <main className="mx-auto w-full max-w-[88rem] px-4 py-6 lg:px-8 lg:py-8">
+            {children}
+          </main>
         </div>
       </div>
     </AuthGuard>

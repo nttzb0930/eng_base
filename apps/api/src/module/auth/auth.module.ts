@@ -16,10 +16,16 @@ import { ResetPasswordUseCase } from "./use-cases/reset-password.usecase";
 import { VerificationCodeService } from "./service/verification-code.service";
 import { AdminAuthController } from "./admin-auth.controller";
 import { MailModule } from "../mail/mail.module";
+import { SettingsModule } from "../settings";
 
 @Global()
 @Module({
-  imports: [ConfigModule.forFeature(jwtConfig), PrismaModule, MailModule],
+  imports: [
+    ConfigModule.forFeature(jwtConfig),
+    PrismaModule,
+    MailModule,
+    SettingsModule,
+  ],
   controllers: [AuthController, AdminAuthController],
   providers: [
     LoginUserUseCase,

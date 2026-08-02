@@ -1,15 +1,15 @@
-import { Injectable } from "@nestjs/common";
+import { BadRequestException, Injectable } from "@nestjs/common";
 
-import { PrismaService } from "../../../database/prisma/prisma.service";
+import { SystemSettingsReader } from "../system-settings.reader";
 
 @Injectable()
 export class GetSettingUseCase {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(private readonly settings: SystemSettingsReader) {}
 
-  async execute(key: string, defaultValue = "") {
-    const setting = await this.prisma.system_settings.findUnique({
-      where: { key },
-    });
-    return setting?.value ?? defaultValue;
+  async execute(key: string) {
+    if (key !== "MAX_HEARTS") {
+      throw new BadRequestException("INVALID_SETTING_KEY");
+    }
+    return String(await this.settings.get("maxHearts"));
   }
 }

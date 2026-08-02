@@ -1,11 +1,12 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { SystemSettingsReader } from "../../settings";
 import { PracticeSource } from "./practice-source";
 
 @Injectable()
 export class GetWeakWordsPracticeSummaryUseCase extends PracticeSource {
-  constructor(prisma: PrismaService) {
-    super(prisma);
+  constructor(prisma: PrismaService, settings: SystemSettingsReader) {
+    super(prisma, settings);
   }
 
   async getWeakVocabularyProgressRows(userId: string) {

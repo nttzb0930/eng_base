@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import type { ChallengeOption } from "../../courses";
+import { SystemSettingsReader } from "../../settings";
 import {
   getBlankedExample,
   getDistractors,
@@ -12,13 +13,12 @@ import {
   PracticeSource,
   WeakWordsPracticeChallenge,
   FALLBACK_POOL_COUNT,
-  WEAK_WORDS_LIMIT,
 } from "./practice-source";
 
 @Injectable()
 export class GetWeakWordsPracticeChallengesUseCase extends PracticeSource {
-  constructor(prisma: PrismaService) {
-    super(prisma);
+  constructor(prisma: PrismaService, settings: SystemSettingsReader) {
+    super(prisma, settings);
   }
 
   async getWeakVocabularyProgressRows(userId: string) {
@@ -52,6 +52,7 @@ export class GetWeakWordsPracticeChallengesUseCase extends PracticeSource {
 
   async execute(userId: string) {
     if (!userId) return [];
+    const weakWordsLimit = await this.getWeakWordsLimit();
 
     const progressRows = await this.getWeakVocabularyProgressRows(userId);
 
@@ -67,7 +68,7 @@ export class GetWeakWordsPracticeChallengesUseCase extends PracticeSource {
           this.getWeakPriority(bProgress) - this.getWeakPriority(aProgress)
         );
       })
-      .slice(0, WEAK_WORDS_LIMIT);
+      .slice(0, weakWordsLimit);
 
     if (vocabularyItems.length === 0) return [];
 

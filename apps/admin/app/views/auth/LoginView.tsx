@@ -1,10 +1,14 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { GraduationCap, LoaderCircle, LockKeyhole, UserRound } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { GraduationCap, Lock, User, Loader2 } from "lucide-react";
+import { useEffect } from "react";
+import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
+import { FormField } from "@/app/components/forms/FormField";
+import { Button } from "@/app/components/ui/button";
 import {
   Card,
   CardContent,
@@ -13,116 +17,140 @@ import {
   CardHeader,
   CardTitle,
 } from "@/app/components/ui/card";
-import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
-import { Label } from "@/app/components/ui/label";
-import { useAdminLogin } from "@/app/features/auth/hooks/use-admin-login";
 import { HttpClientError } from "@/app/features/auth/api/http-client";
+import {
+  loginSchema,
+  type LoginFormValues,
+} from "@/app/features/auth/components/login.schema";
+import { useAdminLogin } from "@/app/features/auth/hooks/use-admin-login";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
 
 export function LoginView() {
   const router = useRouter();
-  const [formUsername, setFormUsername] = useState("");
-  const [formPassword, setFormPassword] = useState("");
   const loginMutation = useAdminLogin();
+  const form = useForm<LoginFormValues>({
+    defaultValues: { password: "", username: "" },
+    resolver: zodResolver(loginSchema),
+  });
 
   useEffect(() => {
-    // If already logged in, redirect to courses
     const token = localStorage.getItem("admin_token");
     if (token) {
-      router.push("/courses");
+      router.replace("/courses");
     }
   }, [router]);
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleLogin = async (values: LoginFormValues) => {
     try {
       const data = await loginMutation.mutateAsync({
-        username: formUsername.trim(),
-        password: formPassword,
+        password: values.password,
+        username: values.username.trim(),
       });
       localStorage.setItem("admin_token", data.token);
       localStorage.setItem("admin_user", JSON.stringify(data.user));
 
-      toast.success("Successfully logged in!");
-      router.push("/courses");
+      toast.success("Đăng nhập thành công.");
+      router.replace("/courses");
     } catch (error) {
       toast.error(
         error instanceof HttpClientError && error.status === 401
           ? "Tên đăng nhập hoặc mật khẩu không đúng."
-          : "Không thể kết nối đến máy chủ."
+          : "Không thể kết nối đến máy chủ.",
       );
     }
   };
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-zinc-50 p-4">
-      <Card className="relative z-10 w-full max-w-md border-zinc-200 bg-white text-zinc-900 shadow-lg">
-        <CardHeader className="flex flex-col items-center space-y-3 text-center">
-          <div className="rounded-2xl border border-zinc-200 bg-zinc-100 p-3 text-zinc-900">
-            <GraduationCap className="h-10 w-10" />
+    <main className="flex min-h-screen items-center justify-center bg-muted/30 px-4 py-10">
+      <Card className="w-full max-w-md shadow-md">
+        <CardHeader className="items-center gap-3 text-center">
+          <div className="flex size-12 items-center justify-center rounded-xl border bg-background text-primary shadow-xs">
+            <GraduationCap aria-hidden="true" className="size-6" />
           </div>
-          <div>
-            <CardTitle className="text-3xl font-black tracking-tight text-zinc-900">
-              {appName} Admin
-            </CardTitle>
-            <CardDescription className="mt-1.5 font-medium text-zinc-500">
-              English learning content administration
+          <div className="space-y-2">
+            <CardTitle className="text-2xl">{appName} Admin</CardTitle>
+            <CardDescription className="font-normal">
+              Đăng nhập để quản lý nội dung và cấu hình hệ thống.
             </CardDescription>
           </div>
         </CardHeader>
-        <form onSubmit={handleLogin}>
-          <CardContent className="space-y-4 pt-2">
-            <div className="space-y-2">
-              <Label className="font-semibold text-zinc-700">
-                Tên đăng nhập
-              </Label>
+
+        <form noValidate onSubmit={form.handleSubmit(handleLogin)}>
+          <CardContent className="space-y-5">
+            <FormField
+              error={form.formState.errors.username?.message}
+              htmlFor="username"
+              label="Tên đăng nhập"
+              required
+            >
               <div className="relative">
-                <User className="absolute left-3 top-3 h-4 w-4 text-zinc-400" />
+                <UserRound
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+                />
                 <Input
-                  required
+                  aria-describedby={
+                    form.formState.errors.username ? "username-error" : undefined
+                  }
+                  aria-invalid={Boolean(form.formState.errors.username)}
+                  autoComplete="username"
+                  className="pl-9"
                   disabled={loginMutation.isPending}
-                  value={formUsername}
-                  onChange={(e) => setFormUsername(e.target.value)}
-                  placeholder="Nhập tên đăng nhập admin"
-                  className="border-zinc-200 bg-white pl-10 text-zinc-900 placeholder:text-zinc-400 focus-visible:ring-zinc-400"
+                  id="username"
+                  placeholder="Nhập tên đăng nhập"
+                  {...form.register("username")}
                 />
               </div>
-            </div>
-            <div className="space-y-2">
-              <Label className="font-semibold text-zinc-700">Mật khẩu</Label>
+            </FormField>
+
+            <FormField
+              error={form.formState.errors.password?.message}
+              htmlFor="password"
+              label="Mật khẩu"
+              required
+            >
               <div className="relative">
-                <Lock className="absolute left-3 top-3 h-4 w-4 text-zinc-400" />
+                <LockKeyhole
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+                />
                 <Input
-                  required
-                  type="password"
+                  aria-describedby={
+                    form.formState.errors.password ? "password-error" : undefined
+                  }
+                  aria-invalid={Boolean(form.formState.errors.password)}
+                  autoComplete="current-password"
+                  className="pl-9"
                   disabled={loginMutation.isPending}
-                  value={formPassword}
-                  onChange={(e) => setFormPassword(e.target.value)}
+                  id="password"
                   placeholder="Nhập mật khẩu"
-                  className="border-zinc-200 bg-white pl-10 text-zinc-900 placeholder:text-zinc-400 focus-visible:ring-zinc-400"
+                  type="password"
+                  {...form.register("password")}
                 />
               </div>
-            </div>
+            </FormField>
           </CardContent>
-          <CardFooter className="pb-6 pt-2">
+
+          <CardFooter className="pt-6">
             <Button
-              type="submit"
+              className="h-10 w-full"
               disabled={loginMutation.isPending}
-              className="text-zinc-55 h-11 w-full cursor-pointer border-0 bg-zinc-900 font-semibold shadow-sm hover:bg-zinc-800 hover:text-zinc-50"
+              type="submit"
             >
               {loginMutation.isPending ? (
-                <span className="flex items-center gap-2">
-                  <Loader2 className="h-4 w-4 animate-spin" /> Đang đăng nhập...
-                </span>
+                <>
+                  <LoaderCircle aria-hidden="true" className="animate-spin" />
+                  Đang đăng nhập
+                </>
               ) : (
-                "Đăng nhập hệ thống"
+                "Đăng nhập"
               )}
             </Button>
           </CardFooter>
         </form>
       </Card>
-    </div>
+    </main>
   );
 }

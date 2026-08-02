@@ -1,16 +1,16 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { SystemSettingsReader } from "../../settings";
 import {
   PracticeSource,
   PracticeCefrLevel,
-  PRACTICE_WORDS_PER_LESSON,
   PRACTICE_CEFR_LEVELS,
 } from "./practice-source";
 
 @Injectable()
 export class GetListeningPracticeSummaryUseCase extends PracticeSource {
-  constructor(prisma: PrismaService) {
-    super(prisma);
+  constructor(prisma: PrismaService, settings: SystemSettingsReader) {
+    super(prisma, settings);
   }
 
   private async getEligibleListeningItems(level: PracticeCefrLevel) {
@@ -31,6 +31,7 @@ export class GetListeningPracticeSummaryUseCase extends PracticeSource {
   }
 
   async execute(userId: string) {
+    const wordsPerLesson = await this.getPracticeWordsPerLesson();
     // Lấy trình độ đã xác nhận của người dùng (mặc định là A1)
     const session = userId
       ? await this.prisma.placement_test_sessions.findUnique({
@@ -68,7 +69,7 @@ export class GetListeningPracticeSummaryUseCase extends PracticeSource {
         completedProgress.map((progress) => progress.vocabulary_item_id)
       );
       const lessons = Math.ceil(
-        eligibleItems.length / PRACTICE_WORDS_PER_LESSON
+        eligibleItems.length / wordsPerLesson
       );
 
       const levelIndex = PRACTICE_CEFR_LEVELS.indexOf(level);
@@ -86,8 +87,8 @@ export class GetListeningPracticeSummaryUseCase extends PracticeSource {
         lessonIndex += 1
       ) {
         const lessonItems = eligibleItems.slice(
-          lessonIndex * PRACTICE_WORDS_PER_LESSON,
-          (lessonIndex + 1) * PRACTICE_WORDS_PER_LESSON
+          lessonIndex * wordsPerLesson,
+          (lessonIndex + 1) * wordsPerLesson
         );
         const completed = lessonItems.every((item) =>
           completedVocabularyIds.has(item.id)

@@ -1,12 +1,13 @@
 import { Inject, Injectable, Logger } from "@nestjs/common";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { authBadRequest } from "../auth-failure";
+import { authBadRequest, authUnavailable } from "../auth-failure";
 import type { RegisterDto } from "../dto/register.dto";
 import { PasswordService } from "../service/password.service";
 import { MailService } from "../../mail/mail.service";
 import type { VerificationMailer } from "../../mail/mail.service";
 import { VerificationCodeService } from "../service/verification-code.service";
+import { SystemSettingsReader } from "../../settings";
 
 @Injectable()
 export class RegisterUserUseCase {
@@ -17,10 +18,14 @@ export class RegisterUserUseCase {
     private readonly passwords: PasswordService,
     @Inject(MailService)
     private readonly mailer: VerificationMailer,
-    private readonly codes: VerificationCodeService
+    private readonly codes: VerificationCodeService,
+    private readonly settings: SystemSettingsReader,
   ) {}
 
   async execute(input: RegisterDto) {
+    if (!(await this.settings.get("registrationEnabled"))) {
+      throw authUnavailable("REGISTRATION_DISABLED", "registration_disabled");
+    }
     const username = input.username?.trim();
     const email = input.email?.trim().toLowerCase();
     const fullName = input.fullName?.trim();

@@ -18,16 +18,27 @@ test("Reading authoring route stays thin and is reachable from Admin navigation"
 });
 
 test("Reading authoring UI preserves A1 scope and nested question contract", () => {
-  const screen = read(
-    "app/features/reading/components/ReadingPassagesScreen.tsx"
+  const screen = read("app/features/reading/components/ReadingPassagesScreen.tsx");
+  const editor = read(
+    "app/features/reading/components/passage/ReadingPassageEditorDialog.tsx",
   );
+  const fields = read(
+    "app/features/reading/components/passage/ReadingPassageFields.tsx",
+  );
+  const question = read(
+    "app/features/reading/components/passage/ReadingQuestionEditor.tsx",
+  );
+  const option = read(
+    "app/features/reading/components/passage/ReadingOptionEditor.tsx",
+  );
+  const authoring = [editor, fields, question, option].join("\n");
 
-  assert.match(screen, /READING_CEFR_LEVELS/);
-  assert.match(screen, /disabled=\{isEditing\}/);
+  assert.match(fields, /READING_CEFR_LEVELS/);
+  assert.match(fields, /disabled=\{Boolean\(passage\)\}/);
   assert.match(screen, /useReadingTopicOptions/);
-  assert.match(screen, /type="radio"/);
-  assert.match(screen, /questions:\s*normalizeQuestions/);
+  assert.match(option, /RadioGroupItem/);
+  assert.match(editor, /questions:\s*normalizeQuestions/);
   assert.match(screen, /useSetReadingPublication/);
-  assert.match(screen, /Thêm câu hỏi/);
-  assert.match(screen, /Thêm đáp án/);
+  assert.match(authoring, /Thêm câu hỏi/);
+  assert.match(authoring, /Thêm đáp án/);
 });

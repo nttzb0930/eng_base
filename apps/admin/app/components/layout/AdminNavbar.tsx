@@ -1,7 +1,8 @@
 "use client";
 
-import { LogOut, Menu } from "lucide-react";
+import { LogOut, Menu, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
+import { ThemeMenu } from "@/app/components/theme/ThemeMenu";
 import { Button } from "@/app/components/ui/button";
 import {
   DropdownMenu,
@@ -12,75 +13,74 @@ import {
   DropdownMenuTrigger,
 } from "@/app/components/ui/dropdown-menu";
 
-const appName = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "English Base";
-
 type AdminNavbarProps = {
+  isCollapsed: boolean;
+  onLogout(): void;
+  onToggleDesktop(): void;
+  onToggleMobile(): void;
   title: string;
   username: string;
-  onLogout(): void;
-  onToggleMobile(): void;
 };
 
 export function AdminNavbar({
+  isCollapsed,
+  onLogout,
+  onToggleDesktop,
+  onToggleMobile,
   title,
   username,
-  onLogout,
-  onToggleMobile,
 }: AdminNavbarProps) {
+  const initials = username.trim().slice(0, 2).toUpperCase() || "AD";
+
   return (
-    <header className="sticky top-0 z-20 flex h-16 w-full shrink-0 items-center justify-between border-b border-zinc-200 bg-white/95 px-4 backdrop-blur-sm md:px-6">
-      <div className="flex min-w-0 flex-1 items-center gap-4">
-        <Button
-          variant="ghost"
-          size="icon"
-          className="text-zinc-650 shrink-0 hover:text-zinc-900 md:hidden"
-          onClick={onToggleMobile}
-        >
-          <Menu className="h-5 w-5" />
-        </Button>
+    <header className="sticky top-0 z-20 flex h-16 items-center gap-3 border-b bg-background/90 px-4 backdrop-blur lg:px-6">
+      <Button
+        aria-label="Mở điều hướng"
+        className="lg:hidden"
+        onClick={onToggleMobile}
+        size="icon"
+        variant="ghost"
+      >
+        <Menu />
+      </Button>
+      <Button
+        aria-label={isCollapsed ? "Mở rộng điều hướng" : "Thu gọn điều hướng"}
+        className="hidden lg:inline-flex"
+        onClick={onToggleDesktop}
+        size="icon"
+        variant="ghost"
+      >
+        {isCollapsed ? <PanelLeftOpen /> : <PanelLeftClose />}
+      </Button>
 
-        <div className="min-w-0">
-          <h2 className="truncate text-sm font-bold capitalize leading-none text-zinc-900">
-            {title}
-          </h2>
-          <span className="mt-1 block text-[10px] font-semibold uppercase tracking-wider text-zinc-400">
-            {appName} Admin panel
-          </span>
-        </div>
-      </div>
+      <h1 className="min-w-0 flex-1 truncate text-sm font-medium">{title}</h1>
 
-      <div className="flex items-center gap-4">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="flex h-9 cursor-pointer items-center gap-2 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-700 shadow-sm transition duration-200 hover:bg-zinc-50 hover:text-zinc-900"
-            >
-              <div className="flex h-5 w-5 items-center justify-center rounded-md bg-zinc-900 text-[10px] font-bold uppercase tracking-tight text-zinc-50 shadow-inner">
-                {username.substring(0, 2)}
-              </div>
-              <span>{username}</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent
-            align="end"
-            className="w-52 rounded-xl border border-zinc-200 bg-white p-1.5 text-zinc-900 shadow-lg"
-          >
-            <DropdownMenuLabel className="px-2.5 py-2 text-xs font-semibold text-zinc-400">
-              Tài khoản Admin
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator className="my-1 bg-zinc-100" />
-            <DropdownMenuItem
-              onClick={onLogout}
-              className="text-zinc-650 flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 text-xs font-bold transition duration-200 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
-            >
-              <LogOut className="h-3.5 w-3.5" />
-              <span>Đăng xuất</span>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </div>
+      <ThemeMenu />
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button className="gap-2 px-2" variant="ghost">
+            <span className="flex size-7 items-center justify-center rounded-md bg-primary text-xs font-medium text-primary-foreground">
+              {initials}
+            </span>
+            <span className="hidden max-w-36 truncate text-sm font-medium sm:block">
+              {username}
+            </span>
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-52">
+          <DropdownMenuLabel>
+            <span className="block text-xs font-normal text-muted-foreground">
+              Tài khoản quản trị
+            </span>
+            <span className="block truncate font-medium">{username}</span>
+          </DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem variant="destructive" onSelect={onLogout}>
+            <LogOut />
+            Đăng xuất
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </header>
   );
 }

@@ -1,17 +1,17 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import { mapVocabularyItem } from "../../vocabulary";
+import { SystemSettingsReader } from "../../settings";
 import {
   PracticeSource,
   PracticeCefrLevel,
   DictationPracticeChallenge,
-  PRACTICE_WORDS_PER_LESSON,
 } from "./practice-source";
 
 @Injectable()
 export class GetDictationPracticeChallengesUseCase extends PracticeSource {
-  constructor(prisma: PrismaService) {
-    super(prisma);
+  constructor(prisma: PrismaService, settings: SystemSettingsReader) {
+    super(prisma, settings);
   }
 
   private async getDictationVocabularyItems(
@@ -19,6 +19,7 @@ export class GetDictationPracticeChallengesUseCase extends PracticeSource {
     level?: PracticeCefrLevel,
     lessonNumber = 1
   ) {
+    const wordsPerLesson = await this.getPracticeWordsPerLesson();
     return this.prisma.vocabulary_items.findMany({
       where: {
         ...(level ? { cefr_level: level } : {}),
@@ -40,8 +41,8 @@ export class GetDictationPracticeChallengesUseCase extends PracticeSource {
           orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
-      skip: (lessonNumber - 1) * PRACTICE_WORDS_PER_LESSON,
-      take: PRACTICE_WORDS_PER_LESSON,
+      skip: (lessonNumber - 1) * wordsPerLesson,
+      take: wordsPerLesson,
     });
   }
 

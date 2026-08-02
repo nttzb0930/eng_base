@@ -82,6 +82,111 @@ test("course management presentation stays behind the Courses owner", () => {
   }
 });
 
+test("Courses screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/courses/course-columns.tsx",
+    "app/features/courses/components/courses/CourseEditorForm.tsx",
+    "app/features/courses/components/courses/course-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/CoursesManagementScreen.tsx"),
+    "utf8",
+  );
+  assert.equal(source.includes("PageHeader"), true);
+  assert.equal(source.includes("DestructiveActionDialog"), true);
+  assert.equal(source.includes("CourseEditorForm"), true);
+  assert.equal(source.includes("confirm("), false);
+  assert.equal(source.includes("text-zinc"), false);
+  assert.equal(source.includes("bg-white"), false);
+  assert.equal(source.includes("font-bold"), false);
+});
+
+test("Units screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/units/unit-columns.tsx",
+    "app/features/courses/components/units/UnitEditorForm.tsx",
+    "app/features/courses/components/units/unit-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/UnitsManagementScreen.tsx"),
+    "utf8",
+  );
+  assert.equal(source.includes("PageHeader"), true);
+  assert.equal(source.includes("DestructiveActionDialog"), true);
+  assert.equal(source.includes("UnitEditorForm"), true);
+  assert.equal(source.includes("confirm("), false);
+  assert.equal(source.includes("text-zinc"), false);
+  assert.equal(source.includes("bg-white"), false);
+  assert.equal(source.includes("font-bold"), false);
+});
+
+test("Lessons screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/lessons/lesson-columns.tsx",
+    "app/features/courses/components/lessons/LessonEditorForm.tsx",
+    "app/features/courses/components/lessons/lesson-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/LessonsManagementScreen.tsx"),
+    "utf8",
+  );
+  for (const expected of ["PageHeader", "DestructiveActionDialog", "LessonEditorForm"]) {
+    assert.equal(source.includes(expected), true, `${expected} must be composed`);
+  }
+  for (const forbidden of ["confirm(", "text-zinc", "bg-white", "font-bold"]) {
+    assert.equal(source.includes(forbidden), false, `${forbidden} is forbidden`);
+  }
+});
+
+test("Challenges screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/challenges/challenge-columns.tsx",
+    "app/features/courses/components/challenges/ChallengeEditorForm.tsx",
+    "app/features/courses/components/challenges/challenge-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/ChallengesManagementScreen.tsx"),
+    "utf8",
+  );
+  for (const expected of ["PageHeader", "DestructiveActionDialog", "ChallengeEditorForm"]) {
+    assert.equal(source.includes(expected), true, `${expected} must be composed`);
+  }
+  for (const forbidden of ["confirm(", "text-zinc", "bg-white", "font-bold"]) {
+    assert.equal(source.includes(forbidden), false, `${forbidden} is forbidden`);
+  }
+});
+
+test("Challenge Options screen composes focused Shadcn management components", () => {
+  for (const path of [
+    "app/features/courses/components/challenge-options/challenge-option-columns.tsx",
+    "app/features/courses/components/challenge-options/ChallengeOptionEditorForm.tsx",
+    "app/features/courses/components/challenge-options/challenge-option-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(appRoot, path)), true, `${path} must exist`);
+  }
+  const source = readFileSync(
+    join(appRoot, "app/features/courses/components/ChallengeOptionsManagementScreen.tsx"),
+    "utf8",
+  );
+  for (const expected of ["PageHeader", "DestructiveActionDialog", "ChallengeOptionEditorForm"]) {
+    assert.equal(source.includes(expected), true, `${expected} must be composed`);
+  }
+  for (const forbidden of ["confirm(", "text-zinc", "bg-white", "font-bold"]) {
+    assert.equal(source.includes(forbidden), false, `${forbidden} is forbidden`);
+  }
+});
+
 test("course resources use TypeScript-only shared types", () => {
   const apiRoot = join(appRoot, "app/features/courses/api");
   for (const file of resourceFiles) {

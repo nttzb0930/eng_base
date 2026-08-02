@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import type { ChallengeOption } from "../../courses";
+import { SystemSettingsReader } from "../../settings";
 import {
   getBlankedExample,
   getDistractors,
@@ -12,8 +13,8 @@ import { PracticeSource, FALLBACK_POOL_COUNT } from "./practice-source";
 
 @Injectable()
 export class GetFillBlankPracticeChallengesUseCase extends PracticeSource {
-  constructor(prisma: PrismaService) {
-    super(prisma);
+  constructor(prisma: PrismaService, settings: SystemSettingsReader) {
+    super(prisma, settings);
   }
 
   async execute(userId: string, level?: string, lesson?: string) {

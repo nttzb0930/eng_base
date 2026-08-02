@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import type { ChallengeOption } from "../../courses";
+import { SystemSettingsReader } from "../../settings";
 import {
   type UserVocabularyProgress,
   type VocabularyItem,
@@ -43,8 +44,6 @@ export type WeakWordsPracticeChallenge = {
   challengeOptions: ChallengeOption[];
 };
 
-export const PRACTICE_WORDS_PER_LESSON = 15;
-
 export const FALLBACK_POOL_COUNT = 400;
 
 export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
@@ -54,16 +53,23 @@ export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
   "B2",
 ];
 
-export const WEAK_WORDS_LIMIT = 20;
-
 export type RandomSource = () => number;
 
 @Injectable()
 export class PracticeSource {
   constructor(
     protected readonly prisma: PrismaService,
+    protected readonly settings: SystemSettingsReader,
     protected readonly random: RandomSource = Math.random,
   ) {}
+
+  protected getPracticeWordsPerLesson() {
+    return this.settings.get("practiceWordsPerLesson");
+  }
+
+  protected getWeakWordsLimit() {
+    return this.settings.get("weakWordsLimit");
+  }
 
   protected shuffle<T>(
     items: readonly T[],
@@ -117,6 +123,7 @@ export class PracticeSource {
     level?: PracticeCefrLevel,
     lessonNumber = 1,
   ) {
+    const wordsPerLesson = await this.getPracticeWordsPerLesson();
     const eligibleItems = await this.prisma.vocabulary_items.findMany({
       where: {
         ...(level ? { cefr_level: level } : {}),
@@ -147,8 +154,8 @@ export class PracticeSource {
           orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
-      skip: (lessonNumber - 1) * PRACTICE_WORDS_PER_LESSON,
-      take: PRACTICE_WORDS_PER_LESSON,
+      skip: (lessonNumber - 1) * wordsPerLesson,
+      take: wordsPerLesson,
     });
 
     return this.shuffle(eligibleItems);

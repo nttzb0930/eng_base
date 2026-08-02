@@ -1,12 +1,17 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import { GetSavedVocabularyWordsUseCase } from "../../vocabulary";
+import { SystemSettingsReader } from "../../settings";
 import { DailyReviewSource } from "./daily-review-source";
 
 @Injectable()
 export class GetDailyReviewSummaryUseCase extends DailyReviewSource {
-  constructor(prisma: PrismaService, savedWords: GetSavedVocabularyWordsUseCase) {
-    super(prisma, savedWords);
+  constructor(
+    prisma: PrismaService,
+    savedWords: GetSavedVocabularyWordsUseCase,
+    settings: SystemSettingsReader,
+  ) {
+    super(prisma, savedWords, settings);
   }
 
   async execute(userId: string) {
