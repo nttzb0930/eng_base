@@ -227,6 +227,23 @@ test("Admin Practice Sessions follows the Practice owner profile", () => {
   assert.equal(routeSource.includes("@/src/views/practice-sessions"), false);
 });
 
+test("Admin Practice keeps session presentation in its feature", () => {
+  for (const path of [
+    "app/features/practice/components/PracticeSessionsScreen.tsx",
+    "app/features/practice/components/practice-session-columns.tsx",
+    "app/features/practice/components/PracticeSessionDetailDialog.tsx",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+  const view = readFileSync(
+    join(root, "app/views/practice-sessions/PracticeSessionsView.tsx"),
+    "utf8",
+  );
+  assert.equal(view.includes("PracticeSessionsScreen"), true);
+  assert.equal(view.includes("useState"), false);
+  assert.equal(view.split("\n").length <= 8, true);
+});
+
 test("Admin Settings follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/settings/api/setting.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/settings/hooks/use-setting.ts")), true);
