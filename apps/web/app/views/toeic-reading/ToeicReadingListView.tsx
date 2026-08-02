@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicSectionNav } from "@/app/features/toeic/components/ToeicSectionNav";
 import { ToeicReadingListSkeleton } from "@/app/features/toeic-reading/components/ToeicReadingListSkeleton";
 import { ToeicReadingModeTabs } from "@/app/features/toeic-reading/components/ToeicReadingModeTabs";
@@ -56,7 +57,7 @@ export function ToeicReadingListView({ scope }: ToeicReadingListViewProps) {
 
   return (
     <FeedWrapper>
-      <div className="pb-12">
+      <ToeicBrowseContainer>
         <Link
           href="/learn/cert/toeic"
           className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold transition-colors hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
@@ -220,7 +221,7 @@ export function ToeicReadingListView({ scope }: ToeicReadingListViewProps) {
             ))}
           </section>
         )}
-      </div>
+      </ToeicBrowseContainer>
     </FeedWrapper>
   );
 }

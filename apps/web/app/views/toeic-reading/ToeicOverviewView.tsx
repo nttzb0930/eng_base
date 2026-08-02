@@ -13,7 +13,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
-import { ToeicSectionNav } from "@/app/features/toeic/components/ToeicSectionNav";
+import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicOverviewSkeleton } from "@/app/features/toeic-reading/components/ToeicOverviewSkeleton";
 import { useToeicListeningOverview } from "@/app/features/toeic-listening/hooks/use-toeic-listening";
 import { useToeicReadingOverview } from "@/app/features/toeic-reading/hooks/use-toeic-reading";
@@ -62,16 +62,14 @@ export function ToeicOverviewView() {
   const listening = listeningQuery.data;
   return (
     <FeedWrapper>
-      <div className="pb-12">
+      <ToeicBrowseContainer>
         <Link
-          href="/learn/cert"
+          href="/learn"
           className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold transition-colors hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {t("overview.back")}
         </Link>
-
-        <ToeicSectionNav active="overview" />
 
         <header className="mt-7 max-w-2xl">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -222,7 +220,7 @@ export function ToeicOverviewView() {
             </div>
           )}
         </section>
-      </div>
+      </ToeicBrowseContainer>
     </FeedWrapper>
   );
 }

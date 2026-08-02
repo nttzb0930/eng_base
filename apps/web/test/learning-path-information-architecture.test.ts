@@ -26,7 +26,14 @@ test("Learning presents General English and TOEIC as primary paths", () => {
   assert.doesNotMatch(source, /t\("byCertDesc"\)/);
 });
 
-test("TOEIC browsing views compose a shared local navigation", () => {
+test("TOEIC overview returns to the primary Learning path", () => {
+  const overview = read("app/views/toeic-reading/ToeicOverviewView.tsx");
+
+  assert.match(overview, /href="\/learn"/);
+  assert.doesNotMatch(overview, /href="\/learn\/cert"/);
+});
+
+test("TOEIC navigation stays available for Reading routes while overview and Listening stay uncluttered", () => {
   const navigation = read("app/features/toeic/components/ToeicSectionNav.tsx");
 
   assert.match(navigation, /aria-current/);
@@ -34,9 +41,6 @@ test("TOEIC browsing views compose a shared local navigation", () => {
   assert.match(navigation, /\/learn\/cert\/toeic\/reading/);
 
   for (const [view, active] of [
-    ["app/views/toeic-reading/ToeicOverviewView.tsx", "overview"],
-    ["app/views/toeic-listening/ToeicListeningListView.tsx", "listening"],
-    ["app/views/toeic-listening/ToeicDictationListView.tsx", "listening"],
     ["app/views/toeic-reading/ToeicReadingListView.tsx", "reading"],
     ["app/views/toeic-grammar/ToeicGrammarCatalogView.tsx", "reading"],
   ] as const) {
@@ -46,6 +50,41 @@ test("TOEIC browsing views compose a shared local navigation", () => {
       source,
       new RegExp(`active="${active}"`),
       `${view} selects ${active}`
+    );
+  }
+
+  assert.doesNotMatch(
+    read("app/views/toeic-reading/ToeicOverviewView.tsx"),
+    /ToeicSectionNav/
+  );
+  assert.doesNotMatch(
+    read("app/views/toeic-listening/ToeicListeningListView.tsx"),
+    /ToeicSectionNav/
+  );
+  assert.doesNotMatch(
+    read("app/views/toeic-listening/ToeicDictationListView.tsx"),
+    /ToeicSectionNav/
+  );
+});
+
+test("TOEIC browse views share one content container", () => {
+  const container = read(
+    "app/features/toeic/components/ToeicBrowseContainer.tsx"
+  );
+  assert.match(container, /w-full pb-12/);
+
+  for (const view of [
+    "app/views/toeic-reading/ToeicOverviewView.tsx",
+    "app/views/toeic-listening/ToeicListeningListView.tsx",
+    "app/views/toeic-listening/ToeicDictationListView.tsx",
+    "app/views/toeic-reading/ToeicReadingListView.tsx",
+    "app/views/toeic-grammar/ToeicGrammarCatalogView.tsx",
+    "app/views/toeic-grammar/ToeicGrammarLessonView.tsx",
+  ]) {
+    assert.match(
+      read(view),
+      /ToeicBrowseContainer/,
+      `${view} uses the shared container`
     );
   }
 });

@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
-import { ToeicSectionNav } from "@/app/features/toeic/components/ToeicSectionNav";
+import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicListeningModeTabs } from "@/app/features/toeic-listening/components/ToeicListeningModeTabs";
 import { ToeicDictationListSkeleton } from "@/app/features/toeic-dictation/components/ToeicDictationListSkeleton";
 import { useToeicDictationSets } from "@/app/features/toeic-dictation/hooks/use-toeic-dictation";
@@ -52,7 +52,7 @@ export function ToeicDictationListView() {
 
   return (
     <FeedWrapper>
-      <div className="mx-auto max-w-[1000px] px-4 pb-12 sm:px-6">
+      <ToeicBrowseContainer>
         <Link
           href="/learn/cert/toeic"
           className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
@@ -60,7 +60,6 @@ export function ToeicDictationListView() {
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {t("back")}
         </Link>
-        <ToeicSectionNav active="listening" />
         <header className="mt-7 max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700 dark:text-emerald-300">
             {t("eyebrow")}
@@ -190,7 +189,7 @@ export function ToeicDictationListView() {
             })}
           </section>
         )}
-      </div>
+      </ToeicBrowseContainer>
     </FeedWrapper>
   );
 }

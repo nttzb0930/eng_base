@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicSectionNav } from "@/app/features/toeic/components/ToeicSectionNav";
 import { ToeicGrammarCatalogSkeleton } from "@/app/features/toeic-grammar/components/ToeicGrammarCatalogSkeleton";
 import { ToeicGrammarCatalogTabs } from "@/app/features/toeic-grammar/components/ToeicGrammarCatalogTabs";
@@ -57,7 +58,7 @@ export function ToeicGrammarCatalogView({ tab }: ToeicGrammarCatalogViewProps) {
 
   return (
     <FeedWrapper>
-      <div className="mx-auto w-full max-w-[1100px] pb-12">
+      <ToeicBrowseContainer className="mx-auto max-w-[1100px]">
         <Link
           href="/learn/cert/toeic"
           className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
@@ -159,7 +160,7 @@ export function ToeicGrammarCatalogView({ tab }: ToeicGrammarCatalogViewProps) {
             ))}
           </section>
         ) : null}
-      </div>
+      </ToeicBrowseContainer>
     </FeedWrapper>
   );
 }

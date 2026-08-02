@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicGrammarLessonContent } from "@/app/features/toeic-grammar/components/ToeicGrammarLessonContent";
 import { ToeicGrammarLessonSkeleton } from "@/app/features/toeic-grammar/components/ToeicGrammarLessonSkeleton";
 import { ToeicGrammarSubtopicNavigation } from "@/app/features/toeic-grammar/components/ToeicGrammarSubtopicNavigation";
@@ -73,7 +74,7 @@ export function ToeicGrammarLessonView({
 
   return (
     <FeedWrapper>
-      <div className="mx-auto w-full max-w-[1180px] pb-12">
+      <ToeicBrowseContainer className="mx-auto max-w-[1180px]">
         <Link
           href="/learn/cert/toeic/reading/grammar"
           className="text-muted-foreground inline-flex items-center gap-2 text-sm font-semibold hover:text-emerald-600"
@@ -116,9 +117,7 @@ export function ToeicGrammarLessonView({
               >
                 <Link
                   href={`/learn/cert/toeic/reading/grammar/${encodeURIComponent(subtopicId)}?tab=lesson`}
-                  aria-current={
-                    effectiveTab === "lesson" ? "page" : undefined
-                  }
+                  aria-current={effectiveTab === "lesson" ? "page" : undefined}
                   className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-lg text-sm font-semibold ${effectiveTab === "lesson" ? "bg-card shadow-sm" : "text-muted-foreground"}`}
                 >
                   <BookOpen className="h-4 w-4" />
@@ -169,7 +168,7 @@ export function ToeicGrammarLessonView({
             </div>
           </main>
         </div>
-      </div>
+      </ToeicBrowseContainer>
     </FeedWrapper>
   );
 }

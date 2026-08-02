@@ -17,6 +17,9 @@ test("Listening browser has thin localized route and route-shaped skeleton", () 
 
 test("Listening browser exposes Full and Parts 1-4 with backend progress", () => {
   const view = read("app/views/toeic-listening/ToeicListeningListView.tsx");
+  const dictationView = read(
+    "app/views/toeic-listening/ToeicDictationListView.tsx"
+  );
   const tabs = read(
     "app/features/toeic-listening/components/ToeicListeningScopeTabs.tsx"
   );
@@ -27,6 +30,8 @@ test("Listening browser exposes Full and Parts 1-4 with backend progress", () =>
   assert.match(view, /draftProgress/);
   assert.match(view, /role="progressbar"/);
   assert.doesNotMatch(view, /localStorage/);
+  assert.match(dictationView, /<div className="pb-12">/);
+  assert.doesNotMatch(dictationView, /max-w-\[1000px\]/);
 });
 
 test("TOEIC overview opens the available Listening browser", () => {
