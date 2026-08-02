@@ -158,6 +158,9 @@ returned correctness, correct option, explanation, and available translation.
 Previous, Next, and direct question-number controls do not fetch another test.
 Part 6 and Part 7 render only the stimulus referenced by the active question.
 Part completion remains unavailable until every question has been graded.
+Imported stimulus markup is parsed into a strict React-rendered allowlist;
+inline styles, event handlers, executable elements, and unsafe image URLs are
+discarded. Web never injects TOEIC source HTML with `dangerouslySetInnerHTML`.
 
 Full Test also fetches the authenticated backend draft before initializing
 interactive state. Answer, review-marker, and active-question changes enqueue

@@ -28,6 +28,8 @@ test("guided practice has responsive split layout and a sticky navigation footer
   assert.match(shell, /min-w-0/);
   assert.match(shell, /overflow-x-hidden/);
   assert.match(workspace, /lg:grid-cols-\[minmax\(0,38fr\)_minmax\(0,62fr\)\]/);
+  assert.match(workspace, /lg:grid-cols-2/);
+  assert.match(workspace, /lg:overflow-y-auto/);
   assert.match(workspace, /sticky bottom-0/);
   assert.doesNotMatch(workspace, /w-\[(?:3|4|5|6|7|8|9)\d\dpx\]/);
 });

@@ -1,11 +1,15 @@
 import type { ReactNode } from "react";
+import type { ToeicReadingPart } from "@repo/shared";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
 
 type ToeicReadingWorkspaceProps = {
+  part: ToeicReadingPart;
   instruction: string;
+  passage?: ReactNode;
   question: ReactNode;
   feedback: ReactNode;
   questionDrawer: ReactNode;
@@ -19,7 +23,9 @@ type ToeicReadingWorkspaceProps = {
 };
 
 export function ToeicReadingWorkspace({
+  part,
   instruction,
+  passage,
   question,
   feedback,
   questionDrawer,
@@ -34,14 +40,23 @@ export function ToeicReadingWorkspace({
   const t = useTranslations("toeicReading");
 
   return (
-    <div className="mx-auto grid min-w-0 max-w-[1440px] lg:min-h-[calc(100dvh-65px)] lg:grid-cols-[minmax(0,38fr)_minmax(0,62fr)]">
-      <section className="min-w-0 border-b bg-white px-5 py-7 sm:px-8 lg:border-b-0 lg:border-r lg:px-10 dark:bg-slate-950">
-        <p className="max-w-[65ch] text-base font-medium leading-7">
-          {instruction}
-        </p>
+    <div
+      className={cn(
+        "mx-auto grid min-w-0 max-w-[1440px] lg:min-h-[calc(100dvh-65px)]",
+        part === 5
+          ? "lg:grid-cols-[minmax(0,38fr)_minmax(0,62fr)]"
+          : "lg:grid-cols-2"
+      )}
+    >
+      <section className="min-w-0 border-b bg-white px-5 py-7 sm:px-8 lg:sticky lg:top-[65px] lg:max-h-[calc(100dvh-65px)] lg:overflow-y-auto lg:border-b-0 lg:border-r lg:px-8 dark:bg-slate-950">
+        {passage ?? (
+          <p className="max-w-[65ch] text-base font-medium leading-7">
+            {instruction}
+          </p>
+        )}
       </section>
 
-      <section className="min-w-0 bg-slate-50/70 dark:bg-slate-950/40">
+      <section className="min-w-0 bg-slate-50/70 lg:max-h-[calc(100dvh-65px)] lg:overflow-y-auto dark:bg-slate-950/40">
         <div className="mx-auto min-w-0 max-w-3xl space-y-4 px-4 py-6 sm:px-6 lg:py-8">
           {question}
           {feedback}

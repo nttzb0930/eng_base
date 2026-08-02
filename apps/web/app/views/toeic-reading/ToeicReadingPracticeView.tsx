@@ -11,6 +11,7 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
 import { ToeicReadingFeedback } from "@/app/features/toeic-reading/components/ToeicReadingFeedback";
+import { ToeicReadingPassagePane } from "@/app/features/toeic-reading/components/ToeicReadingPassagePane";
 import { ToeicReadingPracticeShell } from "@/app/features/toeic-reading/components/ToeicReadingPracticeShell";
 import { ToeicReadingPracticeSummary as PracticeSummary } from "@/app/features/toeic-reading/components/ToeicReadingPracticeSummary";
 import { ToeicReadingQuestionDrawer } from "@/app/features/toeic-reading/components/ToeicReadingQuestionDrawer";
@@ -168,6 +169,15 @@ export function ToeicReadingPracticeView({
   const readyQuestion = activeQuestion;
   const readyUiState = uiState;
   const activeAnswer = answersByQuestion.get(readyQuestion.id);
+  const activePart = readySession.content.parts.find(
+    (item) => item.part === readyQuestion.part
+  );
+  const activeStimulus =
+    readyQuestion.stimulusId === null
+      ? null
+      : (activePart?.stimuli.find(
+          (stimulus) => stimulus.id === readyQuestion.stimulusId
+        ) ?? null);
   const pendingOptionId =
     readyUiState.pendingOptionByQuestion[readyQuestion.id];
   const gradeFailed = readyUiState.failedQuestionId === readyQuestion.id;
@@ -269,7 +279,13 @@ export function ToeicReadingPracticeView({
       progress={readySession.progress}
     >
       <ToeicReadingWorkspace
+        part={part}
         instruction={t(`session.part${part}Description`)}
+        passage={
+          part === 5 ? undefined : (
+            <ToeicReadingPassagePane stimulus={activeStimulus} />
+          )
+        }
         question={
           <ToeicReadingQuestionPane
             question={readyQuestion}

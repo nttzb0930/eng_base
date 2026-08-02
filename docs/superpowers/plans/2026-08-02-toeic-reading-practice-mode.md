@@ -461,24 +461,24 @@ git commit -m "feat(web): add TOEIC Reading Part practice"
 
 - Produces: `parseToeicStimulusContent(source: string): ToeicStimulusBlock[]` with a strict, React-rendered allowlist and no `dangerouslySetInnerHTML`.
 
-- [ ] **Step 1: Write failing safe-content tests**
+- [x] **Step 1: Write failing safe-content tests**
 
 Fixtures must cover literal `<div>`/`<p>` source, line breaks, emphasis, simple tables, safe images, scripts, inline handlers, `javascript:` URLs, and plain text. Assert scripts/handlers/unsafe URLs never appear in parsed blocks.
 
-- [ ] **Step 2: Run tests and verify RED**
+- [x] **Step 2: Run tests and verify RED**
 
 Run: `pnpm --filter @repo/web exec tsx --test app/features/toeic-reading/tests/toeic-stimulus-content.test.ts`  
 Expected: FAIL because the parser does not exist.
 
-- [ ] **Step 3: Implement strict structured parsing**
+- [x] **Step 3: Implement strict structured parsing**
 
 Tokenize only the imported source subset and map `p`, `br`, `strong`, `em`, `ul`, `ol`, `li`, `table`, `thead`, `tbody`, `tr`, `th`, `td`, and safe `img` attributes into typed blocks. Unknown tags contribute text content only. Never evaluate inline styles or event attributes.
 
-- [ ] **Step 4: Add Part 6/7 passage pane**
+- [x] **Step 4: Add Part 6/7 passage pane**
 
 Use `lg:grid-cols-2`; make both desktop panes independently scrollable and keep the passage pane sticky within its column. Below `lg`, render one flow with an accessible expand/collapse button and no horizontal overflow. Reuse the question, feedback, drawer, and summary components from Part 5.
 
-- [ ] **Step 5: Verify and commit**
+- [x] **Step 5: Verify and commit**
 
 Run:
 
