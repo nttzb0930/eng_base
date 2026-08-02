@@ -14,7 +14,10 @@ import { ToeicReadingFeedback } from "@/app/features/toeic-reading/components/To
 import { ToeicReadingPassagePane } from "@/app/features/toeic-reading/components/ToeicReadingPassagePane";
 import { ToeicReadingPracticeShell } from "@/app/features/toeic-reading/components/ToeicReadingPracticeShell";
 import { ToeicReadingPracticeSummary as PracticeSummary } from "@/app/features/toeic-reading/components/ToeicReadingPracticeSummary";
-import { ToeicReadingQuestionDrawer } from "@/app/features/toeic-reading/components/ToeicReadingQuestionDrawer";
+import {
+  ToeicReadingQuestionDrawer,
+  ToeicReadingQuestionSidebar,
+} from "@/app/features/toeic-reading/components/ToeicReadingQuestionDrawer";
 import { ToeicReadingQuestionPane } from "@/app/features/toeic-reading/components/ToeicReadingQuestionPane";
 import { ToeicReadingSessionSkeleton } from "@/app/features/toeic-reading/components/ToeicReadingSessionSkeleton";
 import { ToeicReadingWorkspace } from "@/app/features/toeic-reading/components/ToeicReadingWorkspace";
@@ -302,6 +305,17 @@ export function ToeicReadingPracticeView({
         feedback={<ToeicReadingFeedback answer={activeAnswer} />}
         questionDrawer={
           <ToeicReadingQuestionDrawer
+            questions={questions}
+            answers={readySession.answers}
+            reviewQuestionIds={reviewQuestionIds}
+            activeQuestionId={readyQuestion.id}
+            current={activeIndex + 1}
+            total={questions.length}
+            onSelect={selectQuestion}
+          />
+        }
+        questionSidebar={
+          <ToeicReadingQuestionSidebar
             questions={questions}
             answers={readySession.answers}
             reviewQuestionIds={reviewQuestionIds}

@@ -13,6 +13,7 @@ type ToeicReadingWorkspaceProps = {
   question: ReactNode;
   feedback: ReactNode;
   questionDrawer: ReactNode;
+  questionSidebar?: ReactNode;
   firstQuestion: boolean;
   lastQuestion: boolean;
   completeAvailable: boolean;
@@ -29,6 +30,7 @@ export function ToeicReadingWorkspace({
   question,
   feedback,
   questionDrawer,
+  questionSidebar,
   firstQuestion,
   lastQuestion,
   completeAvailable,
@@ -39,69 +41,89 @@ export function ToeicReadingWorkspace({
 }: ToeicReadingWorkspaceProps) {
   const t = useTranslations("toeicReading");
 
-  return (
-    <div
-      className={cn(
-        "mx-auto grid min-w-0 max-w-[1440px] lg:min-h-[calc(100dvh-65px)]",
-        part === 5
-          ? "lg:grid-cols-[minmax(0,38fr)_minmax(0,62fr)]"
-          : "lg:grid-cols-2"
-      )}
-    >
-      <section className="min-w-0 border-b bg-white px-5 py-7 sm:px-8 lg:sticky lg:top-[65px] lg:max-h-[calc(100dvh-65px)] lg:overflow-y-auto lg:border-b-0 lg:border-r lg:px-8 dark:bg-slate-950">
-        {passage ?? (
-          <p className="max-w-[65ch] text-base font-medium leading-7">
-            {instruction}
-          </p>
+  const footer = (
+    <footer className="bg-background/95 fixed bottom-0 left-0 right-0 z-40 w-full border-t px-3 py-2.5 backdrop-blur shadow-[0_-4px_16px_rgba(15,23,42,0.06)] sm:px-6">
+      <div className="mx-auto flex w-full min-w-0 max-w-[1440px] items-center justify-between gap-2 sm:gap-3">
+        <Button
+          type="button"
+          variant="outline"
+          disabled={firstQuestion || busy}
+          onClick={onPrevious}
+          className="gap-2 rounded-md"
+        >
+          <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden="true" />
+          <span>{t("practice.previous")}</span>
+        </Button>
+
+        {questionDrawer}
+
+        {lastQuestion ? (
+          <Button
+            type="button"
+            variant="secondary"
+            disabled={!completeAvailable || busy}
+            onClick={onComplete}
+            className="rounded-md"
+          >
+            {busy ? t("practice.completing") : t("practice.complete")}
+          </Button>
+        ) : (
+          <Button
+            type="button"
+            variant="secondary"
+            disabled={busy}
+            onClick={onNext}
+            className="gap-2 rounded-md"
+          >
+            <span>{t("practice.next")}</span>
+            <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+          </Button>
         )}
-      </section>
+      </div>
+    </footer>
+  );
 
-      <section className="min-w-0 bg-slate-50/70 lg:max-h-[calc(100dvh-65px)] lg:overflow-y-auto dark:bg-slate-950/40">
-        <div className="mx-auto min-w-0 max-w-3xl space-y-4 px-4 py-6 sm:px-6 lg:py-8">
-          {question}
-          {feedback}
-        </div>
+  return (
+    <div className="relative flex flex-col h-[calc(100dvh-61px)] overflow-hidden pb-14">
+      <div
+        className={cn(
+          "mx-auto grid w-full flex-1 min-w-0 max-w-[1440px] h-full overflow-hidden",
+          passage
+            ? "lg:grid-cols-[minmax(0,38fr)_minmax(0,62fr)]"
+            : "md:grid-cols-[minmax(0,70fr)_minmax(0,30fr)] lg:grid-cols-[minmax(0,70fr)_minmax(0,30fr)]"
+        )}
+      >
+        <section className="flex min-w-0 flex-col border-b bg-white h-full overflow-y-auto md:border-b-0 md:border-r dark:bg-slate-950">
+          {passage ? (
+            <div className="px-5 py-7 sm:px-8 pb-16">
+              {passage}
+            </div>
+          ) : (
+            <div className="w-full space-y-4 px-5 py-6 sm:px-8 lg:px-10 lg:py-8 pb-16">
+              <p className="text-muted-foreground max-w-[65ch] text-xs font-semibold uppercase tracking-wider">
+                {instruction}
+              </p>
+              {question}
+              {feedback}
+            </div>
+          )}
+        </section>
 
-        <footer className="bg-background/95 sticky bottom-0 z-20 border-t px-4 py-3 backdrop-blur sm:px-6">
-          <div className="mx-auto flex min-w-0 max-w-3xl items-center justify-between gap-3">
-            <Button
-              type="button"
-              variant="outline"
-              disabled={firstQuestion || busy}
-              onClick={onPrevious}
-              className="gap-2 rounded-md"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              <span className="hidden sm:inline">{t("practice.previous")}</span>
-            </Button>
+        <section className="hidden min-w-0 bg-slate-50/70 p-6 h-full overflow-y-auto md:block dark:bg-slate-950/40 pb-16">
+          {passage ? (
+            <div className="mx-auto min-w-0 max-w-3xl space-y-4 px-4 py-6 sm:px-6 lg:py-8 pb-16">
+              {question}
+              {feedback}
+            </div>
+          ) : (
+            <div className="mx-auto max-w-sm hidden md:block lg:block">
+              {questionSidebar}
+            </div>
+          )}
+        </section>
+      </div>
 
-            {questionDrawer}
-
-            {lastQuestion ? (
-              <Button
-                type="button"
-                variant="secondary"
-                disabled={!completeAvailable || busy}
-                onClick={onComplete}
-                className="rounded-md"
-              >
-                {busy ? t("practice.completing") : t("practice.complete")}
-              </Button>
-            ) : (
-              <Button
-                type="button"
-                variant="secondary"
-                disabled={busy}
-                onClick={onNext}
-                className="gap-2 rounded-md"
-              >
-                <span className="hidden sm:inline">{t("practice.next")}</span>
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Button>
-            )}
-          </div>
-        </footer>
-      </section>
+      {footer}
     </div>
   );
 }
