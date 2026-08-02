@@ -1,0 +1,6 @@
+{{appName}} - Xác thực email đăng ký
+
+Mã xác thực của bạn là: {{code}}
+Mã có hiệu lực trong {{expiresInMinutes}} phút.
+
+Nếu bạn không thực hiện đăng ký, hãy bỏ qua email này. Không chia sẻ mã với bất kỳ ai.

@@ -31,10 +31,14 @@ function routesOf(controller: new (...arguments_: never[]) => unknown) {
 
 test("Auth delivery preserves learner and admin route Interfaces", () => {
   assert.deepEqual(routesOf(AuthController), [
+    "POST /auth/forgot-password",
     "POST /auth/login",
     "POST /auth/logout",
     "POST /auth/refresh",
     "POST /auth/register",
+    "POST /auth/resend-verification",
+    "POST /auth/reset-password",
+    "POST /auth/verify-email",
   ]);
   assert.deepEqual(routesOf(AdminAuthController), ["POST /admin/auth/login"]);
 });

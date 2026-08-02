@@ -19,6 +19,17 @@ model users {
   full_name                       String
   /// Vai trò: ADMIN, USER
   role                            user_role                         @default(USER)
+  /// Thời điểm email được xác thực; null với tài khoản mới chưa xác thực
+  email_verified_at               DateTime?
+  /// Mã xác thực đã hash, chỉ tồn tại trong thời gian chờ xác thực
+  verification_code_hash         String?
+  verification_code_expires_at   DateTime?
+  verification_attempts          Int                               @default(0)
+  verification_sent_at            DateTime?
+  password_reset_code_hash        String?
+  password_reset_code_expires_at  DateTime?
+  password_reset_attempts         Int                               @default(0)
+  password_reset_sent_at          DateTime?
   /// JWT refresh token (lưu để invalidate khi logout)
   refresh_token                   String?
   created_at                      DateTime                          @default(now()) @db.Timestamp(6)

@@ -12,6 +12,7 @@ import { createRateLimitOptions } from "./common/rate-limit/rate-limit.options";
 import {
   applicationConfig,
   jwtConfig,
+  mailConfig,
   rateLimitConfig,
   validateEnvironment,
 } from "./config";
@@ -41,7 +42,7 @@ import { ToeicDictationModule } from "./module/toeic-dictation/toeic-dictation.m
       isGlobal: true,
       envFilePath: ["../../.env", ".env"],
       validate: validateEnvironment,
-      load: [applicationConfig, jwtConfig, rateLimitConfig],
+      load: [applicationConfig, jwtConfig, rateLimitConfig, mailConfig],
     }),
     ThrottlerModule.forRootAsync({
       imports: [ConfigModule],
