@@ -119,6 +119,21 @@ the idempotent identity: an identical version is skipped, while a new version
 replaces one aggregate transactionally and publishes it immediately. Startup,
 build, CI, seed, and migration never invoke this importer.
 
+TOEIC Writing AI is composed inside `module/toeic-writing` as controller -> use
+case -> repository/provider adapters. Part 1 first applies deterministic
+capitalization, terminal-punctuation, word-count, sentence-count, and required
+word validation. A grade then resolves either an approved image-context record
+or the owned local image, reserves daily quota, calls the injected provider,
+validates its strict structured result, and atomically persists the grade while
+completing the reservation. Provider failure releases the reservation.
+
+Grade cache identity includes learner, task, content version, normalized
+response hash, and prompt version. Cached retries return the owned record
+without charging quota. Grade detail/history enforce learner ownership, while
+assistance events are recorded independently. HTTP delivery has separate
+per-user and per-IP limits; provider keys, response text, picture context, and
+raw provider output are excluded from observability events.
+
 TOEIC Listening acquisition is a separate, local-first pipeline linked to the
 exact approved Reading inventory SHA. Inventory and download do not require a
 database; media is resumable and remains under ignored licensed-content

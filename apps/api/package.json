@@ -82,7 +82,8 @@
     "data:validate-toeic-writing": "tsx ./scripts/toeic-writing/validate-toeic-writing.ts",
     "data:import-toeic-writing": "dotenv -e ../../.env -- tsx ./scripts/toeic-writing/import-toeic-writing.ts",
     "data:enrich-toeic-writing-part1": "dotenv -e ../../.env -- tsx ./scripts/toeic-writing-ai/enrich-part-one-images.ts",
-    "data:import-toeic-writing-part1-contexts": "dotenv -e ../../.env -- tsx ./scripts/toeic-writing-ai/import-part-one-contexts.ts"
+    "data:import-toeic-writing-part1-contexts": "dotenv -e ../../.env -- tsx ./scripts/toeic-writing-ai/import-part-one-contexts.ts",
+    "ai:smoke-toeic-writing-part1": "dotenv -e ../../.env -- tsx ./scripts/toeic-writing-ai/smoke-part-one-grading.ts"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",

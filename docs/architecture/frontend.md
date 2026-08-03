@@ -248,6 +248,15 @@ Reference responses are snapshotted by the API at submission time, appear only
 on that result, and are explicitly presented as comparison material, not a
 score or AI feedback.
 
+Part 1 adds a separate inline coaching flow. Web runs the shared deterministic
+response checks before requesting a grade, sends a stable idempotency key, and
+renders only the typed grade contract returned by API. Quota, score, checks,
+correction, alternative sentence, and owned history are backend projections;
+Web does not call Gemini, inspect answer keys, or reconstruct usage locally.
+Viewing the reference sample is recorded as assistance and remains separate
+from provider grading. Part 2 keeps the existing draft/submission behavior
+until its own coaching contract is implemented.
+
 ## Browser data flow
 
 Web and Admin each own an Auth transport:

@@ -35,6 +35,7 @@ Copy-Item .env.example .env
 | `RATE_LIMIT_*`, `AUTH_*_LIMIT`, `AUTH_*_TTL`   | API rate-limit config        | Server-only       | API startup                    |
 | `DATABASE_URL`, `DB_*`                         | Database URL resolver        | Secret            | Prisma CLI/runtime/scripts     |
 | `LICENSED_CONTENT_ROOT`                        | API application config       | Server-only path  | API startup/media delivery     |
+| `GEMINI_*`, `WRITING_AI_*`                    | API TOEIC Writing            | Secret/server-only| API startup/explicit scripts   |
 | provider and vocabulary variables              | Offline vocabulary workflows | Secret/local path | Explicit data command only     |
 
 Frontend code reads only explicit `NEXT_PUBLIC_*` values. English Base has no
@@ -58,6 +59,25 @@ contains canonical TOEIC media paths. Local workspace scripts default it to
 `../../var/licensed-content/dautoeic` from `apps/api`. A hosted API must mount
 the private media volume and set an explicit absolute root; media is never
 copied into Web assets or committed to Git.
+
+## TOEIC Writing AI
+
+TOEIC Writing AI is fail-closed. `GEMINI_ENABLED=false` is the default and the
+API refuses provider-backed work unless both the enable flag and a non-empty
+`GEMINI_API_KEY` are present. Model names, timeout, daily quota, reservation
+TTL, and delivery limits are server-owned values; none may use a
+`NEXT_PUBLIC_*` prefix.
+
+`WRITING_AI_DAILY_LIMIT` counts successful, non-cached grades per learner and
+resets at UTC midnight. `WRITING_AI_RESERVATION_TTL_MS` releases abandoned
+in-flight quota reservations. `WRITING_AI_USER_LIMIT`, `WRITING_AI_IP_LIMIT`,
+and `WRITING_AI_RATE_LIMIT_TTL` protect HTTP delivery; their current store is
+process-local, so a multi-replica deployment must replace it with shared
+storage before relying on it as a global limit.
+
+See `docs/runbooks/toeic-writing-ai.md` for migration, enrichment, smoke,
+rollback, and observability procedures. The normal smoke command is a dry run:
+provider traffic occurs only when the operator also passes `--call-provider`.
 
 ## Database URL resolution
 
