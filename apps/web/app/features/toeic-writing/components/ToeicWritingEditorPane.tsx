@@ -17,6 +17,7 @@ type ToeicWritingEditorPaneProps = {
   limitReached?: boolean;
   saveStatus: ToeicWritingSaveStatus;
   disabled?: boolean;
+  quotaBadge?: React.ReactNode;
   onChange(value: string): void;
   onRetry(): void;
   onViewSample?(): void;
@@ -29,6 +30,7 @@ export function ToeicWritingEditorPane({
   limitReached,
   saveStatus,
   disabled,
+  quotaBadge,
   onChange,
   onRetry,
   onViewSample,
@@ -49,7 +51,10 @@ export function ToeicWritingEditorPane({
             {t("editorDescription")}
           </p>
         </div>
-        <Badge variant={badgeVariant}>{t(`saveStatus.${saveStatus}`)}</Badge>
+        <div className="flex flex-wrap items-center gap-2">
+          {quotaBadge}
+          <Badge variant={badgeVariant}>{t(`saveStatus.${saveStatus}`)}</Badge>
+        </div>
       </div>
 
       <label htmlFor="toeic-writing-response" className="sr-only">

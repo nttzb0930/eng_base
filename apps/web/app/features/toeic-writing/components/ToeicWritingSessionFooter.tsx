@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, LoaderCircle, Save, Send } from "lucide-react";
+import { LoaderCircle, Save, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
@@ -10,7 +10,7 @@ type ToeicWritingSessionFooterProps = {
   canSubmit: boolean;
   saving: boolean;
   actionPending: boolean;
-  onBack(): void;
+  onBack?(): void;
   onSave(): void;
   onSubmit(): void;
   primaryLabel?: string;
@@ -21,7 +21,6 @@ export function ToeicWritingSessionFooter({
   canSubmit,
   saving,
   actionPending,
-  onBack,
   onSave,
   onSubmit,
   primaryLabel,
@@ -36,17 +35,7 @@ export function ToeicWritingSessionFooter({
 
   return (
     <footer className="bg-background/95 supports-[backdrop-filter]:bg-background/85 fixed inset-x-0 bottom-0 z-30 border-t py-3 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-wrap items-center justify-between gap-3 px-4 sm:px-6">
-        <button
-          type="button"
-          onClick={onBack}
-          disabled={availability.backDisabled}
-          className="text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 items-center gap-2 rounded-md px-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-        >
-          <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-          {t("backToTasks")}
-        </button>
-        <div className="ml-auto flex items-center gap-2">
+      <div className="mx-auto flex w-full max-w-[1200px] items-center justify-end gap-2 px-4 sm:px-6">
           <Button
             type="button"
             variant="outline"
@@ -83,7 +72,6 @@ export function ToeicWritingSessionFooter({
               ? (primaryPendingLabel ?? t("submitting"))
               : (primaryLabel ?? t("submit"))}
           </Button>
-        </div>
       </div>
     </footer>
   );

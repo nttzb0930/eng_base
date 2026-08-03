@@ -5,6 +5,10 @@ import test from "node:test";
 const schema = readFileSync("prisma/schema.prisma", "utf8");
 const migrationPath =
   "prisma/migrations/20260803140000_add_toeic_writing_ai/migration.sql";
+const repositorySource = readFileSync(
+  "src/module/toeic-writing/repository/prisma-writing-ai.repository.ts",
+  "utf8"
+);
 
 test("Prisma owns Writing AI context, grade, assistance, and quota models", () => {
   for (const model of [
@@ -41,4 +45,8 @@ test("migration enforces atomic quota and ownership constraints", () => {
   assert.match(sql, /"toeic_writing_ai_grades_user_created_idx"/u);
   assert.match(sql, /ON DELETE CASCADE/u);
   assert.match(sql, /ON DELETE RESTRICT/u);
+});
+
+test("quota SQL compares user ids using the database text type", () => {
+  assert.doesNotMatch(repositorySource, /\$\{input\.userId\}::uuid/u);
 });

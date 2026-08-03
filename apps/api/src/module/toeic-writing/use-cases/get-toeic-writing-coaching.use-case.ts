@@ -78,7 +78,7 @@ export class GetToeicWritingCoachingUseCase {
       WritingAiRepository,
       "recordAssistance" | "getAssistanceSnapshot"
     >
-  ) {}
+  ) { }
 
   async execute(
     userId: string,

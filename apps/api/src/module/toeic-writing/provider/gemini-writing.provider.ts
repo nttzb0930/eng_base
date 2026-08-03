@@ -21,7 +21,7 @@ import type {
 export interface GeminiWritingClient {
   generateContent(
     request: GenerateContentParameters
-  ): Promise<{ text?: string }>;
+  ): Promise<{ text?: string; structured?: unknown }>;
 }
 
 export class WritingAiInvalidResponseError extends Error {
@@ -49,7 +49,12 @@ export function createGeminiWritingClient(
   return {
     async generateContent(request) {
       const response = await client.models.generateContent(request);
-      return { text: response.text };
+      const functionCalls = response.functionCalls;
+      const text = functionCalls?.length ? undefined : response.text;
+      const structured = functionCalls?.[0]?.args;
+      return structured === undefined
+        ? { text }
+        : { structured };
     },
   };
 }
@@ -67,11 +72,15 @@ function inlineImagePart(
 }
 
 function parseStructuredResponse<T>(
-  text: string | undefined,
+  response: { text?: string; structured?: unknown },
   schema: z.ZodType<T>
 ): T {
   try {
-    return schema.parse(JSON.parse(text ?? ""));
+    const value =
+      response.structured === undefined
+        ? JSON.parse(response.text ?? "")
+        : response.structured;
+    return schema.parse(value);
   } catch {
     throw new WritingAiInvalidResponseError();
   }
@@ -192,32 +201,44 @@ export class GeminiWritingProvider implements WritingAiProvider {
     request: GenerateContentParameters,
     schema: z.ZodType<T>
   ): Promise<T> {
-    const first = await this.generateWithTimeout(request);
+    const schemaInstruction = [
+      "Return only one JSON object that exactly matches this JSON schema.",
+      "Do not use Markdown fences and do not rename, omit, or add fields.",
+      JSON.stringify(z.toJSONSchema(schema)),
+    ].join("\n");
+    const currentSystemInstruction = request.config?.systemInstruction;
+    const requestWithSchema: GenerateContentParameters = {
+      ...request,
+      config: {
+        ...request.config,
+        systemInstruction:
+          typeof currentSystemInstruction === "string"
+            ? `${currentSystemInstruction}\n\n${schemaInstruction}`
+            : schemaInstruction,
+      },
+    };
+    const first = await this.generateWithTimeout(requestWithSchema);
     try {
-      return parseStructuredResponse(first.text, schema);
+      return parseStructuredResponse(first, schema);
     } catch (error) {
       if (!(error instanceof WritingAiInvalidResponseError)) throw error;
     }
 
     const repairInstruction =
       "The previous output failed validation. Return only valid JSON matching the response schema.";
-    const currentSystemInstruction = request.config?.systemInstruction;
     const repaired = await this.generateWithTimeout({
-      ...request,
+      ...requestWithSchema,
       config: {
-        ...request.config,
-        systemInstruction:
-          typeof currentSystemInstruction === "string"
-            ? `${currentSystemInstruction}\n\n${repairInstruction}`
-            : repairInstruction,
+        ...requestWithSchema.config,
+        systemInstruction: `${requestWithSchema.config?.systemInstruction ?? ""}\n\n${repairInstruction}`,
       },
     });
-    return parseStructuredResponse(repaired.text, schema);
+    return parseStructuredResponse(repaired, schema);
   }
 
   private async generateWithTimeout(
     request: GenerateContentParameters
-  ): Promise<{ text?: string }> {
+  ): Promise<{ text?: string; structured?: unknown }> {
     const controller = new AbortController();
     const timeout = setTimeout(
       () => controller.abort(),

@@ -90,7 +90,7 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
         WITH released AS (
           UPDATE "ai_usage_reservations"
           SET "status" = 'RELEASED', "released_at" = ${now}
-          WHERE "user_id" = ${input.userId}::uuid
+          WHERE "user_id" = ${input.userId}
             AND "feature" = ${input.feature}
             AND "status" = 'RESERVED'
             AND "expires_at" <= ${now}
@@ -104,7 +104,7 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
         SET "reserved" = GREATEST(0, daily."reserved" - released_counts."count"),
             "updated_at" = ${now}
         FROM released_counts
-        WHERE daily."user_id" = ${input.userId}::uuid
+        WHERE daily."user_id" = ${input.userId}
           AND daily."feature" = ${input.feature}
           AND daily."usage_date" = released_counts."usage_date"
       `);
@@ -157,7 +157,7 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
         Prisma.sql`
           UPDATE "ai_usage_daily"
           SET "reserved" = "reserved" + 1, "updated_at" = ${now}
-          WHERE "user_id" = ${input.userId}::uuid
+          WHERE "user_id" = ${input.userId}
             AND "feature" = ${input.feature}
             AND "usage_date" = ${usageDate}::date
             AND "reserved" + "used" < ${input.dailyLimit}

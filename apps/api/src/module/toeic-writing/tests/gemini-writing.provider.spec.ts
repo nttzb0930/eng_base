@@ -183,6 +183,57 @@ test("Part 1 grading passes locale and parses the provider result", async () => 
   assert.equal(result.score, 3);
   assert.match(JSON.stringify(calls[0]), /vi/u);
   assert.equal((calls[0] as { model: string }).model, "grading-model");
+  const request = calls[0] as {
+    config: { systemInstruction?: string };
+  };
+  assert.match(request.config.systemInstruction ?? "", /scoreLabel/u);
+  assert.match(request.config.systemInstruction ?? "", /correctedSentence/u);
+});
+
+test("Part 1 grading accepts structured arguments returned as a function call", async () => {
+  const client: GeminiWritingClient = {
+    generateContent: () =>
+      Promise.resolve({
+        structured: {
+          score: 3,
+          scoreLabel: "Excellent",
+          checks: {
+            grammar: { status: "PASS", label: "Grammar", feedback: "Good." },
+            keywords: { status: "PASS", label: "Keywords", feedback: "Both used." },
+            relevance: { status: "PASS", label: "Relevance", feedback: "Relevant." },
+          },
+          overallFeedback: "Complete sentence.",
+          suggestion: {
+            correctedSentence: "The woman is preparing food.",
+            annotated: [
+              { text: "The woman is preparing food.", status: "KEPT" },
+            ],
+            alternativeSentence: "A woman prepares a meal.",
+            explanation: "The original sentence is correct.",
+          },
+        },
+      }),
+  };
+  const provider = new GeminiWritingProvider(client, configuration);
+
+  const result = await provider.gradePartOne({
+    locale: "en",
+    responseText: "The woman is preparing food.",
+    requiredWords: ["prepare", "food"],
+    picture: {
+      source: "ENRICHED",
+      context: {
+        schemaVersion: 1,
+        sceneSummary: "A woman prepares food.",
+        visibleEntities: ["woman", "food"],
+        visibleActions: ["preparing"],
+        relationships: [],
+        requiredWordGrounding: [],
+      },
+    },
+  });
+
+  assert.equal(result.score, 3);
 });
 
 test("invalid provider JSON is repaired once then rejected without exposing content", async () => {

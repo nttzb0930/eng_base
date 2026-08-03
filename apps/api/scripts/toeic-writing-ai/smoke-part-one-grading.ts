@@ -106,7 +106,13 @@ export async function runPartOneGradingSmoke(
         picture,
       })
     );
-  } catch {
+  } catch (error) {
+    dependencies.log({
+      providerError: {
+        name: error instanceof Error ? error.name : "UnknownError",
+        message: error instanceof Error ? error.message : String(error),
+      },
+    });
     throw new Error("Writing AI returned an invalid structured result");
   }
 
@@ -163,7 +169,15 @@ if (require.main === module) {
         : message.includes("invalid structured")
           ? "INVALID_STRUCTURED_RESULT"
           : "SMOKE_FAILED";
-    console.error(JSON.stringify({ error: category }));
+    console.error(
+      JSON.stringify({
+        error: category,
+        cause: {
+          name: error instanceof Error ? error.name : "UnknownError",
+          message: error instanceof Error ? error.message : String(error),
+        },
+      })
+    );
     process.exitCode = 1;
   });
 }

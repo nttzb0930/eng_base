@@ -401,22 +401,22 @@ function ToeicWritingWorkspace({
         ) : (
           <div className="grid items-start gap-5 lg:grid-cols-2">
             <ToeicWritingPromptPane task={task} />
-            <div className="min-w-0">
-              {task.part === 1 && quota.data ? (
-                <div className="mb-3 flex justify-end">
-                  <Badge variant="outline">
-                    {gradeT("quota", {
-                      remaining: quota.data.remaining,
-                      limit: quota.data.dailyLimit,
-                    })}
-                  </Badge>
-                </div>
-              ) : null}
+            <div className="min-w-0 space-y-4">
               <ToeicWritingEditorPane
                 responseText={state.responseText}
                 maxLength={maxLength}
                 saveStatus={state.saveStatus}
                 disabled={gradingPending}
+                quotaBadge={
+                  task.part === 1 && quota.data ? (
+                    <Badge variant="outline">
+                      {gradeT("quota", {
+                        remaining: quota.data.remaining,
+                        limit: quota.data.dailyLimit,
+                      })}
+                    </Badge>
+                  ) : null
+                }
                 onChange={editResponse}
                 onRetry={() => void saveNow()}
                 onViewSample={
