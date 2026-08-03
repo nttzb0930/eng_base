@@ -1,6 +1,8 @@
 import type {
   ToeicWritingDraft,
   ToeicWritingDraftPayload,
+  ToeicWritingCoachingKind,
+  ToeicWritingCommunityPage,
   ToeicWritingOverview,
   ToeicWritingAiQuota,
   ToeicWritingGradeHistoryPage,
@@ -8,6 +10,7 @@ import type {
   ToeicWritingPartOneGradeRequest,
   ToeicWritingPartOneGradeResult,
   ToeicWritingPart,
+  ToeicWritingPartTwoCoaching,
   ToeicWritingSubmissionPayload,
   ToeicWritingSubmissionResult,
   ToeicWritingTaskDetail,
@@ -41,6 +44,14 @@ export const toeicWritingKeys = {
     [...toeicWritingKeys.gradesRoot(), taskId] as const,
   grade: (gradeId: number) =>
     [...toeicWritingKeys.all, "grade", gradeId] as const,
+  coaching: (
+    taskId: number,
+    version: string,
+    kind: ToeicWritingCoachingKind
+  ) =>
+    [...toeicWritingKeys.all, "coaching", taskId, version, kind] as const,
+  community: (taskId: number) =>
+    [...toeicWritingKeys.all, "community", taskId] as const,
 };
 
 export function createToeicWritingApi(http: ToeicWritingHttp) {
@@ -134,13 +145,58 @@ export function createToeicWritingApi(http: ToeicWritingHttp) {
     },
     async recordAssistance(
       taskId: number,
-      kind: "SAMPLE" | "COMMUNITY_RESTORE",
+      kind: ToeicWritingCoachingKind | "COMMUNITY_RESTORE",
       body: { contentVersion: string }
     ) {
       return (
         await http.post<{ recorded: true }>(
           `/toeic/writing/tasks/${taskId}/assistance/${kind}`,
           body
+        )
+      ).data;
+    },
+    async coaching(
+      taskId: number,
+      version: string,
+      kind: ToeicWritingCoachingKind
+    ) {
+      return (
+        await http.get<ToeicWritingPartTwoCoaching>(
+          `/toeic/writing/tasks/${taskId}/coaching/${kind}?contentVersion=${encodeURIComponent(version)}`
+        )
+      ).data;
+    },
+    async community(taskId: number, cursor?: number) {
+      const cursorQuery = cursor === undefined ? "" : `&cursor=${cursor}`;
+      return (
+        await http.get<ToeicWritingCommunityPage>(
+          `/toeic/writing/tasks/${taskId}/community?limit=20${cursorQuery}`
+        )
+      ).data;
+    },
+    async share(submissionId: number) {
+      return (
+        await http.put<{ shared: true; sharedAt: string }>(
+          `/toeic/writing/submissions/${submissionId}/share`
+        )
+      ).data;
+    },
+    async unshare(submissionId: number) {
+      return (
+        await http.delete<{ shared: false }>(
+          `/toeic/writing/submissions/${submissionId}/share`
+        )
+      ).data;
+    },
+    async restoreCommunity(
+      taskId: number,
+      submissionId: number,
+      version: string
+    ) {
+      return (
+        await http.post<{ responseText: string }>(
+          `/toeic/writing/tasks/${taskId}/community/${submissionId}/restore`,
+          { contentVersion: version }
         )
       ).data;
     },

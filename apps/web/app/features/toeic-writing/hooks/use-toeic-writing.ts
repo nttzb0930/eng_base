@@ -7,6 +7,7 @@ import {
   useQueryClient,
 } from "@tanstack/react-query";
 import type {
+  ToeicWritingCoachingKind,
   ToeicWritingDraftPayload,
   ToeicWritingPart,
   ToeicWritingPartOneGradeRequest,
@@ -14,6 +15,7 @@ import type {
 } from "@repo/shared";
 
 import { toeicWritingApi, toeicWritingKeys } from "../api/toeic-writing.api";
+import { canLoadToeicWritingCoaching } from "../toeic-writing-coaching-state";
 
 export function useToeicWritingOverview() {
   return useQuery({
@@ -167,8 +169,70 @@ export function useRecordToeicWritingAssistance() {
       contentVersion,
     }: {
       taskId: number;
-      kind: "SAMPLE" | "COMMUNITY_RESTORE";
+      kind: ToeicWritingCoachingKind | "COMMUNITY_RESTORE";
       contentVersion: string;
     }) => toeicWritingApi.recordAssistance(taskId, kind, { contentVersion }),
+  });
+}
+
+export function useToeicWritingCoaching(
+  taskId: number,
+  contentVersion: string,
+  kind: ToeicWritingCoachingKind,
+  open: boolean
+) {
+  return useQuery({
+    queryKey: toeicWritingKeys.coaching(taskId, contentVersion, kind),
+    queryFn: () => toeicWritingApi.coaching(taskId, contentVersion, kind),
+    enabled: canLoadToeicWritingCoaching(taskId, contentVersion, open),
+  });
+}
+
+export function useToeicWritingCommunity(taskId: number, open: boolean) {
+  return useInfiniteQuery({
+    queryKey: toeicWritingKeys.community(taskId),
+    queryFn: ({ pageParam }) => toeicWritingApi.community(taskId, pageParam),
+    initialPageParam: undefined as number | undefined,
+    getNextPageParam: (lastPage) => lastPage.nextCursor ?? undefined,
+    enabled: open && Number.isInteger(taskId) && taskId > 0,
+  });
+}
+
+export function useShareToeicWritingSubmission() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ submissionId }: { submissionId: number; taskId: number }) =>
+      toeicWritingApi.share(submissionId),
+    onSuccess: (_result, variables) =>
+      queryClient.invalidateQueries({
+        queryKey: toeicWritingKeys.community(variables.taskId),
+      }),
+  });
+}
+
+export function useUnshareToeicWritingSubmission() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ submissionId }: { submissionId: number; taskId: number }) =>
+      toeicWritingApi.unshare(submissionId),
+    onSuccess: (_result, variables) =>
+      queryClient.invalidateQueries({
+        queryKey: toeicWritingKeys.community(variables.taskId),
+      }),
+  });
+}
+
+export function useRestoreToeicWritingCommunityResponse() {
+  return useMutation({
+    mutationFn: ({
+      taskId,
+      submissionId,
+      contentVersion,
+    }: {
+      taskId: number;
+      submissionId: number;
+      contentVersion: string;
+    }) =>
+      toeicWritingApi.restoreCommunity(taskId, submissionId, contentVersion),
   });
 }
