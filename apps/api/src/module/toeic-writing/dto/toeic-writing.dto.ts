@@ -11,6 +11,7 @@ import {
   Min,
 } from "class-validator";
 import type {
+  ToeicWritingCoachingKind,
   ToeicWritingDraftPayload,
   ToeicWritingPartOneGradeRequest,
   ToeicWritingPart,
@@ -47,6 +48,23 @@ export class ToeicWritingAssistanceDto {
   contentVersion!: string;
 }
 
+export class ToeicWritingCoachingParamsDto {
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  taskId!: number;
+
+  @IsIn(["OUTLINE", "VOCABULARY", "SAMPLE"])
+  kind!: ToeicWritingCoachingKind;
+}
+
+export class ToeicWritingCoachingQueryDto {
+  @IsString()
+  @Length(64, 64)
+  @Matches(/^[a-f0-9]{64}$/)
+  contentVersion!: string;
+}
+
 export class ToeicWritingGradeHistoryQueryDto {
   @Type(() => Number)
   @IsOptional()
@@ -63,6 +81,8 @@ export class ToeicWritingGradeHistoryQueryDto {
 }
 
 export enum ToeicWritingAssistanceKind {
+  OUTLINE = "OUTLINE",
+  VOCABULARY = "VOCABULARY",
   SAMPLE = "SAMPLE",
   COMMUNITY_RESTORE = "COMMUNITY_RESTORE",
 }

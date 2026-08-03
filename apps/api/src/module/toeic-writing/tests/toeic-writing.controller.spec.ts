@@ -3,6 +3,8 @@ import "reflect-metadata";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { RequestMethod } from "@nestjs/common";
+import { plainToInstance } from "class-transformer";
+import { validateSync } from "class-validator";
 import {
   GUARDS_METADATA,
   METHOD_METADATA,
@@ -10,10 +12,36 @@ import {
 } from "@nestjs/common/constants";
 
 import { UserJwtGuard } from "../../../common/guards/user-jwt.guard";
-import { ToeicWritingAssistanceKind } from "../dto/toeic-writing.dto";
+import {
+  ToeicWritingAssistanceKind,
+  ToeicWritingCoachingParamsDto,
+  ToeicWritingCoachingQueryDto,
+} from "../dto/toeic-writing.dto";
 import { ToeicWritingController } from "../toeic-writing.controller";
 
 const version = "a".repeat(64);
+
+test("coaching route accepts only Part 2 panel kinds and SHA-256 versions", () => {
+  const params = plainToInstance(ToeicWritingCoachingParamsDto, {
+    taskId: "22",
+    kind: "OUTLINE",
+  });
+  const query = plainToInstance(ToeicWritingCoachingQueryDto, {
+    contentVersion: version,
+  });
+  assert.equal(validateSync(params).length, 0);
+  assert.equal(validateSync(query).length, 0);
+
+  const restore = plainToInstance(ToeicWritingCoachingParamsDto, {
+    taskId: "22",
+    kind: "COMMUNITY_RESTORE",
+  });
+  const staleShape = plainToInstance(ToeicWritingCoachingQueryDto, {
+    contentVersion: "not-a-sha",
+  });
+  assert.ok(validateSync(restore).length > 0);
+  assert.ok(validateSync(staleShape).length > 0);
+});
 
 test("TOEIC Writing controller exposes authenticated read routes", () => {
   assert.equal(
@@ -50,6 +78,7 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
     "GET submissions/:submissionId",
     "GET tasks",
     "GET tasks/:taskId",
+    "GET tasks/:taskId/coaching/:kind",
     "GET tasks/:taskId/draft",
     "GET tasks/:taskId/grades",
     "POST tasks/:taskId/assistance/:kind",
@@ -62,6 +91,7 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
 test("controller forwards current learner, selected part, and task id", async () => {
   const calls: unknown[][] = [];
   const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
@@ -101,12 +131,17 @@ test("controller forwards current learner, selected part, and task id", async ()
   await controller.writingQuota("learner-1");
   await controller.grade("learner-1", 41);
   await controller.grades("learner-1", 21, { cursor: 40, limit: 10 });
+  await controller.coaching(
+    "learner-1",
+    { taskId: 21, kind: "OUTLINE" },
+    { contentVersion: version }
+  );
   await controller.recordAssistance(
     "learner-1",
     21,
     ToeicWritingAssistanceKind.SAMPLE,
     {
-    contentVersion: version,
+      contentVersion: version,
     }
   );
 
@@ -140,6 +175,7 @@ test("controller forwards current learner, selected part, and task id", async ()
     ["learner-1"],
     ["learner-1", 41],
     ["learner-1", 21, 40, 10],
+    ["learner-1", 21, "OUTLINE", version],
     ["learner-1", 21, version, "SAMPLE"],
   ]);
 });

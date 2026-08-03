@@ -74,6 +74,14 @@ export function writingGradeNotFound(): never {
   });
 }
 
+export function writingCoachingUnavailable(): never {
+  throw new BadRequestException({
+    statusCode: 400,
+    code: "WRITING_COACHING_UNAVAILABLE",
+    message: "TOEIC Writing coaching is unavailable for this task",
+  });
+}
+
 export function mapWritingAiError(error: unknown): never {
   if (error instanceof WritingAiDailyQuotaExceededError) {
     throw new HttpException(

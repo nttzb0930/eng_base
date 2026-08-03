@@ -19,6 +19,8 @@ import {
   ToeicWritingDraftDto,
   ToeicWritingAssistanceDto,
   ToeicWritingAssistanceKind,
+  ToeicWritingCoachingParamsDto,
+  ToeicWritingCoachingQueryDto,
   ToeicWritingGradeHistoryQueryDto,
   ToeicWritingPartOneGradeDto,
   ToeicWritingPartQueryDto,
@@ -26,6 +28,7 @@ import {
 } from "./dto/toeic-writing.dto";
 import { DeleteToeicWritingDraftUseCase } from "./use-cases/delete-toeic-writing-draft.use-case";
 import { GetToeicWritingDraftUseCase } from "./use-cases/get-toeic-writing-draft.use-case";
+import { GetToeicWritingCoachingUseCase } from "./use-cases/get-toeic-writing-coaching.use-case";
 import { GetToeicWritingOverviewUseCase } from "./use-cases/get-toeic-writing-overview.use-case";
 import { GetToeicWritingSubmissionUseCase } from "./use-cases/get-toeic-writing-submission.use-case";
 import { GetToeicWritingTaskUseCase } from "./use-cases/get-toeic-writing-task.use-case";
@@ -54,6 +57,7 @@ export class ToeicWritingController {
     private readonly getWritingQuota: GetToeicWritingQuotaUseCase,
     private readonly getWritingGrade: GetToeicWritingGradeUseCase,
     private readonly listWritingGrades: ListToeicWritingGradesUseCase,
+    private readonly getWritingCoaching: GetToeicWritingCoachingUseCase,
     private readonly recordWritingAssistance: RecordToeicWritingAssistanceUseCase
   ) {}
 
@@ -162,6 +166,20 @@ export class ToeicWritingController {
       taskId,
       body.contentVersion,
       kind
+    );
+  }
+
+  @Get("tasks/:taskId/coaching/:kind")
+  coaching(
+    @CurrentUserId() userId: string,
+    @Param() params: ToeicWritingCoachingParamsDto,
+    @Query() query: ToeicWritingCoachingQueryDto
+  ) {
+    return this.getWritingCoaching.execute(
+      userId,
+      params.taskId,
+      params.kind,
+      query.contentVersion
     );
   }
 

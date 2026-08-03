@@ -129,6 +129,55 @@ export type ToeicWritingAssistanceSnapshot = {
   communityAnswerRestored: boolean;
 };
 
+export type ToeicWritingCoachingKind = "OUTLINE" | "VOCABULARY" | "SAMPLE";
+export type ToeicWritingCoachingSectionKind = "OPENING" | "BODY" | "ENDING";
+
+export type ToeicWritingOutlineSection = {
+  kind: ToeicWritingCoachingSectionKind;
+  items: string[];
+};
+
+export type ToeicWritingVocabularyPattern = {
+  patternEn: string;
+  meaningVi: string | null;
+  exampleEn: string | null;
+  exampleVi: string | null;
+};
+
+export type ToeicWritingSampleSection = {
+  kind: ToeicWritingCoachingSectionKind;
+  textEn: string;
+  textVi: string | null;
+};
+
+type ToeicWritingPartTwoCoachingBase = {
+  taskId: number;
+  contentVersion: string;
+  assistance: ToeicWritingAssistanceSnapshot;
+};
+
+export type ToeicWritingPartTwoCoaching =
+  | (ToeicWritingPartTwoCoachingBase & {
+      kind: "OUTLINE";
+      variants: Array<{
+        level: 1 | 2;
+        sections: ToeicWritingOutlineSection[];
+      }>;
+    })
+  | (ToeicWritingPartTwoCoachingBase & {
+      kind: "VOCABULARY";
+      variants: Array<{
+        level: 1 | 2;
+        items: ToeicWritingVocabularyPattern[];
+      }>;
+    })
+  | (ToeicWritingPartTwoCoachingBase & {
+      kind: "SAMPLE";
+      sampleEn: string;
+      sampleVi: string | null;
+      structure: ToeicWritingSampleSection[];
+    });
+
 export type ToeicWritingAiQuota = {
   dailyLimit: number;
   used: number;

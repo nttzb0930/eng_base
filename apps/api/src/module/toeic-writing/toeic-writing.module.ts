@@ -13,11 +13,13 @@ import {
   GeminiWritingProvider,
 } from "./provider/gemini-writing.provider";
 import { PrismaWritingAiRepository } from "./repository/prisma-writing-ai.repository";
+import { PrismaWritingCoachingTaskSource } from "./repository/prisma-writing-coaching.repository";
 import { PrismaWritingPartOneTaskSource } from "./repository/prisma-writing-task.repository";
 import { OwnedWritingPictureResolver } from "./services/writing-picture-resolver";
 import { WritingAiObservabilityService } from "./observability/writing-ai-observability.service";
 import { DeleteToeicWritingDraftUseCase } from "./use-cases/delete-toeic-writing-draft.use-case";
 import { GetToeicWritingDraftUseCase } from "./use-cases/get-toeic-writing-draft.use-case";
+import { GetToeicWritingCoachingUseCase } from "./use-cases/get-toeic-writing-coaching.use-case";
 import { GetToeicWritingImageUseCase } from "./use-cases/get-toeic-writing-image.use-case";
 import { GetToeicWritingOverviewUseCase } from "./use-cases/get-toeic-writing-overview.use-case";
 import { GetToeicWritingSubmissionUseCase } from "./use-cases/get-toeic-writing-submission.use-case";
@@ -108,11 +110,20 @@ import { SubmitToeicWritingTaskUseCase } from "./use-cases/submit-toeic-writing-
         ),
     },
     {
+      provide: GetToeicWritingCoachingUseCase,
+      inject: [PrismaService],
+      useFactory: (prisma: PrismaService) =>
+        new GetToeicWritingCoachingUseCase(
+          new PrismaWritingCoachingTaskSource(prisma),
+          new PrismaWritingAiRepository(prisma)
+        ),
+    },
+    {
       provide: RecordToeicWritingAssistanceUseCase,
       inject: [PrismaService],
       useFactory: (prisma: PrismaService) =>
         new RecordToeicWritingAssistanceUseCase(
-          new PrismaWritingPartOneTaskSource(prisma),
+          new PrismaWritingCoachingTaskSource(prisma),
           new PrismaWritingAiRepository(prisma)
         ),
     },

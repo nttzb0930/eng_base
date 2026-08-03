@@ -50,7 +50,7 @@ type PartOnePayload = {
   samplesVi: string[];
 };
 
-type PartTwoPayload = {
+export type PartTwoPayload = {
   titleVi: string | null;
   promptEn: string;
   promptVi: string | null;
@@ -118,7 +118,7 @@ function parsePartOnePayload(value: unknown): PartOnePayload {
   };
 }
 
-function parsePartTwoPayload(value: unknown): PartTwoPayload {
+export function parsePartTwoPayload(value: unknown): PartTwoPayload {
   if (
     !isObject(value) ||
     !nullableOptionalString(value.titleVi) ||

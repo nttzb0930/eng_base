@@ -1,9 +1,9 @@
 import type { WritingAiRepository } from "../repository/writing-ai.repository";
-import type { WritingPartOneTaskSource } from "./grade-toeic-writing-part-one.use-case";
+import type { WritingCoachingTaskSource } from "./get-toeic-writing-coaching.use-case";
 
 export class RecordToeicWritingAssistanceUseCase {
   constructor(
-    private readonly tasks: WritingPartOneTaskSource,
+    private readonly tasks: WritingCoachingTaskSource,
     private readonly repository: WritingAiRepository
   ) {}
 
@@ -13,7 +13,7 @@ export class RecordToeicWritingAssistanceUseCase {
     contentVersion: string,
     kind: "OUTLINE" | "VOCABULARY" | "SAMPLE" | "COMMUNITY_RESTORE"
   ) {
-    const task = await this.tasks.getPublishedPartOne(taskId);
+    const task = await this.tasks.getPublishedCoachingTask(taskId);
     if (task.contentVersion !== contentVersion) return { recorded: false };
     await this.repository.recordAssistance({
       userId,
