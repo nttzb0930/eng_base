@@ -1,5 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { ENGLISH_VOCABULARY_COURSE_CODE } from "../course.constants";
 import { CourseLearningMapper } from "./course-learning.mapper";
 
 @Injectable()
@@ -22,17 +23,38 @@ export class GetUserProgressUseCase extends CourseLearningMapper {
     });
     const isConfirmed = session?.status === "CONFIRMED";
 
-    if (data) return this.mapUserProgress(data, isConfirmed);
+    if (data) {
+      if (isConfirmed && !data.active_course_id) {
+        const defaultCourse = await this.prisma.courses.findFirst({
+          where: { code: ENGLISH_VOCABULARY_COURSE_CODE },
+        });
+        if (defaultCourse) {
+          const repairedProgress = await this.prisma.user_progress.update({
+            where: { user_id: userId },
+            data: { active_course_id: defaultCourse.id },
+            include: { courses: true },
+          });
+          return this.mapUserProgress(repairedProgress, isConfirmed);
+        }
+      }
+
+      return this.mapUserProgress(data, isConfirmed);
+    }
 
     const dbUser = await this.prisma.users.findUnique({
       where: { id: userId },
     });
+    const defaultCourse = isConfirmed
+      ? await this.prisma.courses.findFirst({
+          where: { code: ENGLISH_VOCABULARY_COURSE_CODE },
+        })
+      : null;
     const userName = dbUser?.full_name || dbUser?.username || "User";
     const syncedProgress = await this.prisma.user_progress.upsert({
       where: { user_id: userId },
       create: {
         user_id: userId,
-        active_course_id: null,
+        active_course_id: defaultCourse?.id ?? null,
         user_name: userName,
         user_image_src: "/mascot.svg",
       },
