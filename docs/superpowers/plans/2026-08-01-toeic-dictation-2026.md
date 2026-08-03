@@ -25,6 +25,7 @@
 ### Task 1: Add source adapter, canonical contract, and 2026 inventory
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-dictation/toeic-dictation.types.ts`
 - Create: `apps/api/scripts/toeic-dictation/dautoeic-toeic-dictation-source.ts`
 - Create: `apps/api/scripts/toeic-dictation/toeic-dictation.profile.json`
@@ -35,6 +36,7 @@
 - Modify: `apps/api/package.json`
 
 **Interfaces:**
+
 - `createDautoeicToeicDictationSource(config): ToeicDictationSource` reads only `listening_sets` and `listening_items` through the existing approved source authorization file.
 - `buildToeicDictationInventory(source, filter): Promise<ToeicDictationInventory>` returns source sets, normalized items, media inspections, and SHA-256 metadata.
 - CLI `data:inventory-toeic-dictation -- --collection=2026` prints JSON containing `storageKey`, `inventorySha256`, `selectedSetCount`, `itemCount`, `audioCount`, `knownMediaBytes`, and `unknownMediaSizeCount`.
@@ -52,6 +54,7 @@
 ### Task 2: Add resumable download, canonical package, and validation
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-dictation/toeic-dictation.storage.ts`
 - Create: `apps/api/scripts/toeic-dictation/toeic-dictation.download.ts`
 - Create: `apps/api/scripts/toeic-dictation/download-toeic-dictation.ts`
@@ -62,6 +65,7 @@
 - Modify: `apps/api/package.json`
 
 **Interfaces:**
+
 - `createFileToeicDictationStorage(repositoryRoot): ToeicDictationStorage` stores packages under `var/licensed-content/dautoeic/toeic-dictation/2026/` with one child directory per content SHA-256.
 - `downloadToeicDictationPackage(input): Promise<DownloadSummary>` supports bounded concurrency, checksum reuse, retry, and resume.
 - `validateToeicDictationPackage(package): ToeicDictationValidation` returns `valid`, categorized errors, and normalized counts.
@@ -80,11 +84,13 @@
 ### Task 3: Add Prisma schema and migration for dictation content/progress
 
 **Files:**
+
 - Modify: `apps/api/prisma/schema.prisma`
 - Create: `apps/api/prisma/migrations/20260801100000_add_toeic_dictation_content/migration.sql`
 - Create: `apps/api/src/module/toeic-dictation/tests/toeic-dictation-migration.spec.ts`
 
 **Interfaces:**
+
 - Prisma models `toeic_dictation_sets`, `toeic_dictation_items`, `toeic_dictation_progress`, and `toeic_dictation_attempts` expose the names used by the API use cases in later tasks.
 - `toeic_dictation_sets` has unique `(source, source_set_id)` and a published source version.
 - `toeic_dictation_progress` has unique `(user_id, item_id)`.
@@ -102,12 +108,14 @@
 ### Task 4: Import the validated 2026 package idempotently
 
 **Files:**
+
 - Create: `apps/api/scripts/toeic-dictation/toeic-dictation.import.ts`
 - Create: `apps/api/scripts/toeic-dictation/import-toeic-dictation.ts`
 - Create: `apps/api/scripts/toeic-dictation/toeic-dictation.import.test.ts`
 - Modify: `apps/api/package.json`
 
 **Interfaces:**
+
 - `importToeicDictationPackage(prisma, storage, approvedSha): Promise<ImportSummary>` returns `updated`, `skipped`, `rejected`, and `failed` source set IDs.
 - Import reads only a complete validated package whose SHA equals `--approved-sha` and whose set rows still satisfy 2026/free/non-hidden constraints.
 
@@ -124,6 +132,7 @@
 ### Task 5: Add shared contracts, grading policy, and API module
 
 **Files:**
+
 - Create: `packages/shared/src/types/toeic-dictation.ts`
 - Modify: `packages/shared/src/index.ts`
 - Create: `apps/api/src/module/toeic-dictation/toeic-dictation.module.ts`
@@ -142,6 +151,7 @@
 - Modify: `apps/api/src/app.module.ts`
 
 **Interfaces:**
+
 - `normalizeDictationText(value: string): string[]` returns canonical tokens.
 - `gradeToeicDictation(expected: string, actual: string): ToeicDictationGrade` returns `accuracy`, `wordsCorrect`, `totalWords`, token feedback, and `mastered`.
 - Shared DTOs include `ToeicDictationSetSummary`, `ToeicDictationItem`, `ToeicDictationProgress`, `ToeicDictationSubmitPayload`, and `ToeicDictationSubmitResult`.
@@ -161,6 +171,7 @@
 ### Task 6: Add Listening mode tabs and dictation catalog UI
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-dictation/api/toeic-dictation.api.ts`
 - Create: `apps/web/app/features/toeic-dictation/hooks/use-toeic-dictation.ts`
 - Create: `apps/web/app/features/toeic-dictation/components/ToeicDictationModeTabs.tsx`
@@ -175,6 +186,7 @@
 - Create: `apps/web/app/features/toeic-dictation/tests/toeic-dictation.api.test.ts`
 
 **Interfaces:**
+
 - `createToeicDictationApi(http)` mirrors the existing `createToeicListeningApi` factory and exposes `overview`, `sets`, `set`, `progress`, `submit`, and `media`.
 - `ToeicDictationListView` receives no server-only state; it reads `mode` from the page and React Query handles authenticated data.
 
@@ -193,6 +205,7 @@
 ### Task 7: Add one-item dictation session and backend progress restore
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-dictation/components/ToeicDictationPlayer.tsx`
 - Create: `apps/web/app/features/toeic-dictation/components/ToeicDictationAnswerForm.tsx`
 - Create: `apps/web/app/features/toeic-dictation/components/ToeicDictationFeedback.tsx`
@@ -206,6 +219,7 @@
 - Create: `apps/web/app/features/toeic-dictation/tests/toeic-dictation-session-state.test.ts`
 
 **Interfaces:**
+
 - `createToeicDictationSessionState(items, progress)` restores the first unanswered item or the saved active item.
 - `submit(itemId, typedText, submissionKey)` calls the backend and returns word-level feedback without placing the canonical transcript in browser state before submission.
 - `saveProgress(setId, activeItemId)` debounces a backend `PUT`; it is flushed before route changes and from a `visibilitychange` handler when the document becomes hidden.
@@ -225,6 +239,7 @@
 ### Task 8: Verify, document operations, and enable the 2026 rollout
 
 **Files:**
+
 - Create: `docs/guides/toeic-dictation-2026-operations.md`
 - Create: `apps/api/src/module/toeic-dictation/tests/toeic-dictation.module.spec.ts`
 - Modify: `docs/features-overview.md`

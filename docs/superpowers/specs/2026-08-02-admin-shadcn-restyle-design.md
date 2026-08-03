@@ -143,14 +143,14 @@ unloaded local `Inter` font.
 
 The approved hierarchy is:
 
-| Role | Size and weight |
-| --- | --- |
-| Page title | `24px / 600`, normal tracking |
-| Card/dialog title | `15-18px / 600`, normal tracking |
-| Navigation, labels, buttons | `13-14px / 500` |
-| Body and table data | `13-14px / 400` |
-| Helper and metadata | `11-12px / 400` |
-| Exceptional warning emphasis | `600-700`, used locally |
+| Role                         | Size and weight                  |
+| ---------------------------- | -------------------------------- |
+| Page title                   | `24px / 600`, normal tracking    |
+| Card/dialog title            | `15-18px / 600`, normal tracking |
+| Navigation, labels, buttons  | `13-14px / 500`                  |
+| Body and table data          | `13-14px / 400`                  |
+| Helper and metadata          | `11-12px / 400`                  |
+| Exceptional warning emphasis | `600-700`, used locally          |
 
 `font-black`, broad `font-bold`, and decorative negative letter spacing are
 removed from normal management presentation. Uppercase is restricted to short
@@ -352,16 +352,16 @@ apply only to newly started sessions.
 
 Only policies that have a real runtime consumer are exposed:
 
-| Wire field | Storage key | Default | Valid range | Runtime owner |
-| --- | --- | ---: | --- | --- |
-| `maxHearts` | `MAX_HEARTS` | 5 | integer 1-99 | Progress |
-| `practiceWordsPerLesson` | `PRACTICE_WORDS_PER_LESSON` | 15 | integer 5-50 | Practice |
-| `weakWordsLimit` | `WEAK_WORDS_LIMIT` | 20 | integer 5-100 | Practice |
-| `dailyReviewRelaxedLimit` | `DAILY_REVIEW_RELAXED_LIMIT` | 5 | integer 1-50 | Review |
-| `dailyReviewStandardLimit` | `DAILY_REVIEW_STANDARD_LIMIT` | 15 | integer 1-100 | Review |
-| `dailyReviewAcceleratedLimit` | `DAILY_REVIEW_ACCELERATED_LIMIT` | 30 | integer 1-150 | Review |
-| `dailyReviewIntensiveLimit` | `DAILY_REVIEW_INTENSIVE_LIMIT` | 50 | integer 1-200 | Review |
-| `registrationEnabled` | `REGISTRATION_ENABLED` | true | boolean | Auth |
+| Wire field                    | Storage key                      | Default | Valid range   | Runtime owner |
+| ----------------------------- | -------------------------------- | ------: | ------------- | ------------- |
+| `maxHearts`                   | `MAX_HEARTS`                     |       5 | integer 1-99  | Progress      |
+| `practiceWordsPerLesson`      | `PRACTICE_WORDS_PER_LESSON`      |      15 | integer 5-50  | Practice      |
+| `weakWordsLimit`              | `WEAK_WORDS_LIMIT`               |      20 | integer 5-100 | Practice      |
+| `dailyReviewRelaxedLimit`     | `DAILY_REVIEW_RELAXED_LIMIT`     |       5 | integer 1-50  | Review        |
+| `dailyReviewStandardLimit`    | `DAILY_REVIEW_STANDARD_LIMIT`    |      15 | integer 1-100 | Review        |
+| `dailyReviewAcceleratedLimit` | `DAILY_REVIEW_ACCELERATED_LIMIT` |      30 | integer 1-150 | Review        |
+| `dailyReviewIntensiveLimit`   | `DAILY_REVIEW_INTENSIVE_LIMIT`   |      50 | integer 1-200 | Review        |
+| `registrationEnabled`         | `REGISTRATION_ENABLED`           |    true | boolean       | Auth          |
 
 Shared exports compile-time `SystemSettings` and
 `UpdateSystemSettingsPayload` declarations from the root `@repo/shared`

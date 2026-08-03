@@ -22,6 +22,7 @@
 ### Task 1: Collect beginner-guide facts
 
 **Files:**
+
 - Create: `tools/documentation/beginner_guide/source_facts.py`
 - Create: `tools/documentation/beginner_guide/tests/test_source_facts.py`
 - Create: `artifacts/beginner-run-guide/source-facts.json`
@@ -33,6 +34,7 @@
 ### Task 2: Build the Word guide
 
 **Files:**
+
 - Create: `tools/documentation/beginner_guide/build_beginner_run_guide.py`
 - Create: `tools/documentation/beginner_guide/tests/test_guide_content.py`
 - Create: `C:\Users\nttzb\Downloads\English_Base_Huong_Dan_Chay_Du_An_Cho_Nguoi_Moi.docx`
@@ -45,6 +47,7 @@
 ### Task 3: Finalize and export
 
 **Files:**
+
 - Create: `tools/documentation/beginner_guide/finalize_word.ps1`
 - Create: `C:\Users\nttzb\Downloads\English_Base_Huong_Dan_Chay_Du_An_Cho_Nguoi_Moi.pdf`
 
@@ -56,6 +59,7 @@
 ### Task 4: Validate visually and structurally
 
 **Files:**
+
 - Create: `tools/documentation/beginner_guide/validate_guide.py`
 - Create: `artifacts/beginner-run-guide/validation.json`
 - Create: `artifacts/beginner-run-guide/rendered-pages/*.png`

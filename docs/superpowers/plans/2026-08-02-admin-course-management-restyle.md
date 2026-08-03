@@ -23,6 +23,7 @@
 ### Task 1: Guard the target presentation architecture
 
 **Files:**
+
 - Modify: `apps/admin/test/course-feature-architecture.test.ts`
 
 1. Add failing assertions for feature-local columns, schema/editor form, and delete-dialog composition for all five resources.
@@ -34,6 +35,7 @@
 ### Task 2: Add the shared destructive-action pattern
 
 **Files:**
+
 - Create: `apps/admin/app/components/forms/DestructiveActionDialog.tsx`
 - Modify: `apps/admin/test/app-profile-architecture.test.ts`
 
@@ -46,6 +48,7 @@
 ### Task 3: Restyle Courses
 
 **Files:**
+
 - Modify: `apps/admin/app/features/courses/components/CoursesManagementScreen.tsx`
 - Create: `apps/admin/app/features/courses/components/courses/course-columns.tsx`
 - Create: `apps/admin/app/features/courses/components/courses/CourseEditorForm.tsx`
@@ -62,6 +65,7 @@
 ### Task 4: Restyle Units
 
 **Files:**
+
 - Modify: `apps/admin/app/features/courses/components/UnitsManagementScreen.tsx`
 - Create: `apps/admin/app/features/courses/components/units/unit-columns.tsx`
 - Create: `apps/admin/app/features/courses/components/units/UnitEditorForm.tsx`
@@ -72,6 +76,7 @@ Repeat the RED/GREEN extraction used for Courses. Preserve course lookup/filter 
 ### Task 5: Restyle Lessons
 
 **Files:**
+
 - Modify: `apps/admin/app/features/courses/components/LessonsManagementScreen.tsx`
 - Create: `apps/admin/app/features/courses/components/lessons/lesson-columns.tsx`
 - Create: `apps/admin/app/features/courses/components/lessons/LessonEditorForm.tsx`
@@ -82,6 +87,7 @@ Repeat the RED/GREEN extraction. Preserve Unit lookup/filter behavior, ordering,
 ### Task 6: Restyle Challenges
 
 **Files:**
+
 - Modify: `apps/admin/app/features/courses/components/ChallengesManagementScreen.tsx`
 - Create: `apps/admin/app/features/courses/components/challenges/challenge-columns.tsx`
 - Create: `apps/admin/app/features/courses/components/challenges/ChallengeEditorForm.tsx`
@@ -92,6 +98,7 @@ Repeat the RED/GREEN extraction. Preserve Lesson lookup, challenge type, questio
 ### Task 7: Restyle Challenge Options
 
 **Files:**
+
 - Modify: `apps/admin/app/features/courses/components/ChallengeOptionsManagementScreen.tsx`
 - Create: `apps/admin/app/features/courses/components/challenge-options/challenge-option-columns.tsx`
 - Create: `apps/admin/app/features/courses/components/challenge-options/ChallengeOptionEditorForm.tsx`

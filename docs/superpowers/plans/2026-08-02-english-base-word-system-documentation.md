@@ -31,6 +31,7 @@
 ### Task 1: Kiểm kê chức năng và source hiện tại
 
 **Files:**
+
 - Read: `CONTEXT.md`
 - Read: `docs/README.md`
 - Read: `docs/architecture/*.md`
@@ -43,6 +44,7 @@
 - Read: `.github/workflows/*.yml`
 
 **Interfaces:**
+
 - Consumes: repository hiện tại và tài liệu canonical.
 - Produces: danh sách capability, use case, route, API, model, test, script và trạng thái thực tế dùng cho Task 2–5.
 
@@ -91,11 +93,13 @@ Expected: xác định rõ artifact production hiện có và artifact chỉ đ�
 ## Task 2: Tạo khung Word và kiểm tra cấu trúc
 
 **Files:**
+
 - Create: `tools/documentation/build_english_base_word_document.py`
 - Create: `tools/documentation/check_english_base_word_document.py`
 - Create: `artifacts/English-Base-Tai-lieu-he-thong-va-huong-dan-trien-khai.docx`
 
 **Interfaces:**
+
 - Consumes: dữ liệu kiểm kê Task 1.
 - Produces: `build_document(output_path: Path) -> None` và checker nhận đúng output path.
 
@@ -180,10 +184,12 @@ Expected: file DOCX mở được; checker xác nhận khung hợp lệ.
 ## Task 3: Biên soạn tổng quan, yêu cầu và kiến trúc
 
 **Files:**
+
 - Modify: `tools/documentation/build_english_base_word_document.py`
 - Regenerate: `artifacts/English-Base-Tai-lieu-he-thong-va-huong-dan-trien-khai.docx`
 
 **Interfaces:**
+
 - Consumes: domain language và architecture canonical.
 - Produces: phần đầu, Phần I và các chương nền tảng cho use case.
 
@@ -221,10 +227,12 @@ Expected: checker tìm thấy phần tổng quan, kiến trúc, actor và thuậ
 ## Task 4: Biên soạn tính năng, use case và code
 
 **Files:**
+
 - Modify: `tools/documentation/build_english_base_word_document.py`
 - Regenerate: `artifacts/English-Base-Tai-lieu-he-thong-va-huong-dan-trien-khai.docx`
 
 **Interfaces:**
+
 - Consumes: inventory Task 1 và nền tảng Task 3.
 - Produces: Phần II với các chương capability và ma trận use case.
 
@@ -259,10 +267,12 @@ Run builder/checker và xác nhận tất cả capability chính xuất hiện t
 ## Task 5: Biên soạn setup, deployment và vận hành
 
 **Files:**
+
 - Modify: `tools/documentation/build_english_base_word_document.py`
 - Regenerate: `artifacts/English-Base-Tai-lieu-he-thong-va-huong-dan-trien-khai.docx`
 
 **Interfaces:**
+
 - Consumes: package scripts, environment guide, Dockerfiles, workflows và data guides.
 - Produces: Phần IV–VI và phụ lục thao tác.
 
@@ -293,11 +303,13 @@ Thêm API inventory, environment variables, command reference, data model, quy�
 ## Task 6: Kiểm định 200 trang và chất lượng nội dung
 
 **Files:**
+
 - Modify: `tools/documentation/check_english_base_word_document.py`
 - Modify: `tools/documentation/build_english_base_word_document.py` khi phát hiện thiếu nội dung.
 - Regenerate: `artifacts/English-Base-Tai-lieu-he-thong-va-huong-dan-trien-khai.docx`
 
 **Interfaces:**
+
 - Consumes: DOCX hoàn chỉnh.
 - Produces: bằng chứng cấu trúc, độ dài và khả năng mở/render.
 
@@ -337,9 +349,11 @@ Expected: DOCX hợp lệ, không placeholder/secret, đầy đủ section và p
 ## Task 7: Bàn giao
 
 **Files:**
+
 - Final: `artifacts/English-Base-Tai-lieu-he-thong-va-huong-dan-trien-khai.docx`
 
 **Interfaces:**
+
 - Consumes: kết quả kiểm định Task 6.
 - Produces: file Word duy nhất cho người dùng.
 

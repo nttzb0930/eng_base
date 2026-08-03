@@ -26,12 +26,14 @@
 ### Task 1: Establish the evidence workspace and baseline report inventory
 
 **Files:**
+
 - Create: `tools/documentation/revision/report_inventory.py`
 - Create: `artifacts/academic-report-revision/baseline/report-inventory.json`
 - Create: `artifacts/academic-report-revision/baseline/report-headings.txt`
 - Test: `tools/documentation/revision/tests/test_report_inventory.py`
 
 **Interfaces:**
+
 - Consumes: existing DOCX and comparison PDF paths.
 - Produces: `inventory_report(docx_path: Path, pdf_path: Path) -> ReportInventory` and JSON containing pages, sections, headings, tables, captions, media, fields, placeholders, repeated paragraphs, and chapter boundaries.
 
@@ -66,6 +68,7 @@
 ### Task 2: Collect a source-backed implementation manifest
 
 **Files:**
+
 - Create: `tools/documentation/revision/source_evidence.py`
 - Create: `tools/documentation/revision/source-evidence-map.json`
 - Create: `artifacts/academic-report-revision/source/source-evidence.json`
@@ -73,6 +76,7 @@
 - Test: `tools/documentation/revision/tests/test_source_evidence.py`
 
 **Interfaces:**
+
 - Consumes: repository root and a curated evidence-map configuration.
 - Produces: `collect_source_evidence(root: Path, evidence_map: dict) -> SourceEvidence` with routes, frontend features/hooks/APIs, controllers, use cases/services, Prisma models/relations, workflows, Docker configuration, environment names, and sanitized 10–35 line excerpts.
 
@@ -101,12 +105,14 @@
 ### Task 3: Prepare an isolated local runtime and record environment facts
 
 **Files:**
+
 - Create: `tools/documentation/revision/runtime_evidence.ps1`
 - Create: `artifacts/academic-report-revision/runtime/environment.json`
 - Create: `artifacts/academic-report-revision/runtime/database-safety.json`
 - Create: `artifacts/academic-report-revision/runtime/commands.jsonl`
 
 **Interfaces:**
+
 - Consumes: repository `.env` without printing secret values.
 - Produces: sanitized environment metadata and `Invoke-RecordedCommand` records with command label, start/end time, duration, exit code, status, and redacted log path.
 
@@ -135,11 +141,13 @@
 ### Task 4: Run verification gates and build an honest test ledger
 
 **Files:**
+
 - Create: `artifacts/academic-report-revision/verification/verification-results.json`
 - Create: `artifacts/academic-report-revision/verification/logs/*.log`
 - Create: `artifacts/academic-report-revision/verification/functional-cases.json`
 
 **Interfaces:**
+
 - Consumes: `Invoke-RecordedCommand` from Task 3.
 - Produces: structured results used verbatim by Chapter 6; only exit code zero becomes `Pass`.
 
@@ -159,6 +167,7 @@
 ### Task 5: Start Web, Admin, and API and capture runtime/API evidence
 
 **Files:**
+
 - Create: `tools/documentation/revision/start_local_stack.ps1`
 - Create: `tools/documentation/revision/capture_runtime_evidence.mjs`
 - Create: `artifacts/academic-report-revision/runtime/services.json`
@@ -167,6 +176,7 @@
 - Create: `artifacts/academic-report-revision/screenshots/manifest.json`
 
 **Interfaces:**
+
 - Consumes: isolated local database and repository dev scripts.
 - Produces: service health records, sanitized API request/response pairs, screenshots with route, viewport, timestamp, caption, and verification status.
 
@@ -199,11 +209,13 @@
 ### Task 6: Compose concise replacement content for Chapters 1–4
 
 **Files:**
+
 - Create: `tools/documentation/revision/content/front_chapters.py`
 - Create: `artifacts/academic-report-revision/content/chapters-1-4.json`
 - Test: `tools/documentation/revision/tests/test_front_chapters.py`
 
 **Interfaces:**
+
 - Consumes: baseline inventory and source-evidence manifest.
 - Produces: ordered document blocks (`heading`, `paragraph`, `table`, `figure`, `caption`, `code`) with citations to evidence records.
 
@@ -220,11 +232,13 @@
 ### Task 7: Compose implementation-focused Chapter 5
 
 **Files:**
+
 - Create: `tools/documentation/revision/content/chapter5.py`
 - Create: `artifacts/academic-report-revision/content/chapter-5.json`
 - Test: `tools/documentation/revision/tests/test_chapter5.py`
 
 **Interfaces:**
+
 - Consumes: source excerpts, screenshot manifest, API evidence, Prisma relationships, and route manifest.
 - Produces: Chapter 5 blocks with evidence classifications and no fake UI figures.
 
@@ -241,11 +255,13 @@
 ### Task 8: Compose Chapters 6–7, conclusion, and final checklist
 
 **Files:**
+
 - Create: `tools/documentation/revision/content/back_chapters.py`
 - Create: `artifacts/academic-report-revision/content/chapters-6-7-conclusion.json`
 - Test: `tools/documentation/revision/tests/test_back_chapters.py`
 
 **Interfaces:**
+
 - Consumes: runtime/verification results and source deployment configuration.
 - Produces: actual-result tables, installation runbook, conclusion, and consolidated missing-data checklist.
 
@@ -262,6 +278,7 @@
 ### Task 9: Transform the existing DOCX and preserve approved sections
 
 **Files:**
+
 - Create: `tools/documentation/revision/revise_existing_docx.py`
 - Create: `tools/documentation/revision/docx_styles.py`
 - Create: `tools/documentation/revision/docx_blocks.py`
@@ -269,6 +286,7 @@
 - Create: `C:\Users\nttzb\Downloads\English_Base_Bao_Cao_Do_An_Thuc_Te.docx`
 
 **Interfaces:**
+
 - Consumes: canonical DOCX and all content JSON bundles.
 - Produces: revised DOCX preserving front matter and appendices while replacing Chapter 1–7 and conclusion ranges.
 
@@ -283,11 +301,13 @@
 ### Task 10: Finalize in Microsoft Word and export PDF
 
 **Files:**
+
 - Create: `tools/documentation/revision/finalize_word.ps1`
 - Create: `C:\Users\nttzb\Downloads\English_Base_Bao_Cao_Do_An_Thuc_Te.pdf`
 - Create: `artifacts/academic-report-revision/finalization/word-metrics.json`
 
 **Interfaces:**
+
 - Consumes: candidate DOCX.
 - Produces: updated TOC/list fields, stable pagination, PDF, and Word-reported page/word/table/figure metrics.
 
@@ -302,6 +322,7 @@
 ### Task 11: Render and validate the complete report
 
 **Files:**
+
 - Create: `tools/documentation/revision/validate_final_report.py`
 - Create: `artifacts/academic-report-revision/validation/final-validation.json`
 - Create: `artifacts/academic-report-revision/validation/rendered-pages/*.png`
@@ -309,6 +330,7 @@
 - Test: `tools/documentation/revision/tests/test_final_validation.py`
 
 **Interfaces:**
+
 - Consumes: final DOCX, PDF, baseline inventory, screenshot manifest, and content evidence.
 - Produces: machine-readable validation against all twenty final checks and page renderings for visual inspection.
 
@@ -325,10 +347,12 @@
 ### Task 12: Generate the change log and run final verification
 
 **Files:**
+
 - Create: `tools/documentation/revision/generate_change_log.py`
 - Create: `C:\Users\nttzb\Downloads\English_Base_Change_Log.txt`
 
 **Interfaces:**
+
 - Consumes: baseline/final inventories, evidence manifests, verification ledger, screenshot manifest, and validation output.
 - Produces: required Vietnamese change log with removed/merged/rewritten content, inserted real images, executed/unexecuted tests, remaining placeholders/data, and before/after page counts.
 

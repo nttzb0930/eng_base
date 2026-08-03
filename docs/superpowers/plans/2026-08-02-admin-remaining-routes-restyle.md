@@ -22,6 +22,7 @@
 ### Task 1: Guard remaining-route composition
 
 **Files:**
+
 - Modify: `apps/admin/test/app-profile-architecture.test.ts`
 - Modify: `apps/admin/test/reading-architecture.test.ts`
 
@@ -30,6 +31,7 @@ Add failing assertions for capability-owned User and Practice screens, thin View
 ### Task 2: Restyle Reading Passages
 
 **Files:**
+
 - Modify: `apps/admin/app/features/reading/components/ReadingPassagesScreen.tsx`
 - Create: `apps/admin/app/features/reading/components/passage/reading-passage-columns.tsx`
 - Create: `apps/admin/app/features/reading/components/passage/ReadingPassageEditorDialog.tsx`
@@ -43,6 +45,7 @@ Use PageHeader/DataTable/shared feedback, React Hook Form/Zod, Shadcn Select/Tex
 ### Task 3: Restyle Reading Source Candidates
 
 **Files:**
+
 - Modify: `apps/admin/app/features/reading-source-candidates/components/ReadingSourceCandidatesScreen.tsx`
 - Modify: `apps/admin/app/features/reading-source-candidates/components/ReadingSourceCandidateReviewDialog.tsx`
 - Create: `apps/admin/app/features/reading-source-candidates/components/reading-source-candidate-columns.tsx`
@@ -53,6 +56,7 @@ Adopt PageHeader, DataTable, Shadcn filters, feedback states, scroll-safe Dialog
 ### Task 4: Move and restyle Users
 
 **Files:**
+
 - Create: `apps/admin/app/features/users/components/UsersManagementScreen.tsx`
 - Create: `apps/admin/app/features/users/components/user-columns.tsx`
 - Create: `apps/admin/app/features/users/components/UserEditorForm.tsx`
@@ -64,6 +68,7 @@ Make the View a thin adapter. Use DataTable, shared feedback, RHF/Zod editor, Sh
 ### Task 5: Move and restyle Practice Sessions
 
 **Files:**
+
 - Create: `apps/admin/app/features/practice/components/PracticeSessionsScreen.tsx`
 - Create: `apps/admin/app/features/practice/components/practice-session-columns.tsx`
 - Create: `apps/admin/app/features/practice/components/PracticeSessionDetailDialog.tsx`
@@ -74,6 +79,7 @@ Make the View a thin adapter. Preserve list/detail/delete queries, filters, pagi
 ### Task 6: Restyle Login and Auth loading
 
 **Files:**
+
 - Modify: `apps/admin/app/views/auth/LoginView.tsx`
 - Modify: `apps/admin/app/features/auth/components/AuthGuard.tsx`
 - Create: `apps/admin/app/features/auth/components/login.schema.ts`

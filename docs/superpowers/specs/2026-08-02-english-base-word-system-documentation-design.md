@@ -174,15 +174,15 @@ Code trong tài liệu được chia theo mục đích:
 Để đạt tối thiểu 200 trang bằng nội dung thực, dung lượng dự kiến được kiểm soát
 theo nhóm:
 
-| Nhóm nội dung | Số trang dự kiến |
-| --- | ---: |
-| Phần đầu và tổng quan | 15–25 |
-| Chức năng và use case | 95–130 |
-| Thiết kế và hiện thực kỹ thuật | 35–50 |
-| Cài đặt local và kiểm thử | 20–30 |
-| Triển khai và vận hành | 30–45 |
-| Phụ lục | 20–35 |
-| **Tổng dự kiến** | **215–315** |
+| Nhóm nội dung                  | Số trang dự kiến |
+| ------------------------------ | ---------------: |
+| Phần đầu và tổng quan          |            15–25 |
+| Chức năng và use case          |           95–130 |
+| Thiết kế và hiện thực kỹ thuật |            35–50 |
+| Cài đặt local và kiểm thử      |            20–30 |
+| Triển khai và vận hành         |            30–45 |
+| Phụ lục                        |            20–35 |
+| **Tổng dự kiến**               |      **215–315** |
 
 Số trang cuối cùng được đo sau khi render Word/PDF với đúng khổ giấy và style;
 không chỉ ước lượng từ số từ.

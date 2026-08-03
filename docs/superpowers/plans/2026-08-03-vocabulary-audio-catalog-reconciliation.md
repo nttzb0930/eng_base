@@ -24,10 +24,12 @@
 ### Task 1: Pure audio reconciliation planner
 
 **Files:**
+
 - Create: `apps/api/scripts/vocabulary/dictionary-enrichment/vocabulary-audio-reconciliation.ts`
 - Create: `apps/api/scripts/vocabulary/dictionary-enrichment/vocabulary-audio-reconciliation.test.ts`
 
 **Interfaces:**
+
 - Consumes: `VocabularyCatalogItem`, `vocabularyIdentity`, sanitized `databaseTarget`, and bounded database audio rows.
 - Produces: `buildVocabularyAudioReconciliationPlan`, `applyVocabularyAudioImports`, `VocabularyAudioDatabaseRow`, and `VocabularyAudioReconciliationPlan`.
 
@@ -48,7 +50,7 @@ import {
 
 const item = (
   normalizedWord: string,
-  overrides: Partial<VocabularyCatalogItem> = {},
+  overrides: Partial<VocabularyCatalogItem> = {}
 ): VocabularyCatalogItem => ({
   word: normalizedWord,
   normalizedWord,
@@ -65,7 +67,7 @@ const item = (
 const row = (
   id: number,
   normalizedWord: string,
-  overrides: Partial<VocabularyAudioDatabaseRow> = {},
+  overrides: Partial<VocabularyAudioDatabaseRow> = {}
 ): VocabularyAudioDatabaseRow => ({
   id,
   normalizedWord,
@@ -135,7 +137,9 @@ test("reports conflicts, partial pairs, invalid URLs, unsupported sources, missi
       audioUrl: "https://api.dictionaryapi.dev/media/catalog.mp3",
       audioSource: "free-dictionary-api",
     }),
-    item("partial", { audioUrl: "https://api.dictionaryapi.dev/media/partial.mp3" }),
+    item("partial", {
+      audioUrl: "https://api.dictionaryapi.dev/media/partial.mp3",
+    }),
     item("invalid-url"),
     item("unsupported"),
     item("missing"),
@@ -265,7 +269,7 @@ export function buildVocabularyAudioReconciliationPlan(input: {
 
 export function applyVocabularyAudioImports(
   catalog: VocabularyCatalogItem[],
-  plan: VocabularyAudioReconciliationPlan,
+  plan: VocabularyAudioReconciliationPlan
 ): VocabularyCatalogItem[];
 ```
 
@@ -298,10 +302,12 @@ git commit -m "feat(data): plan vocabulary audio reconciliation"
 ### Task 2: Confirmation-gated CLI and atomic catalog writer
 
 **Files:**
+
 - Create: `apps/api/scripts/vocabulary/dictionary-enrichment/reconcile-vocabulary-audio.ts`
 - Create: `apps/api/scripts/vocabulary/dictionary-enrichment/reconcile-vocabulary-audio.test.ts`
 
 **Interfaces:**
+
 - Consumes: planner exports from Task 1, `assertVocabularySourcesValid`, `resolveDatabaseUrl`, and Prisma `vocabulary_items` read projection.
 - Produces: `parseVocabularyAudioReconciliationArguments`, `runVocabularyAudioReconciliation`, `writeReconciledVocabularyCatalog`, and the executable CLI.
 
@@ -323,11 +329,17 @@ test("plan writes a report but never invokes the catalog writer", async () => {
   let catalogWrites = 0;
   let reportWrites = 0;
   const runtime = createRuntime({
-    writeReport: async () => { reportWrites += 1; },
-    writeCatalog: async () => { catalogWrites += 1; },
+    writeReport: async () => {
+      reportWrites += 1;
+    },
+    writeCatalog: async () => {
+      catalogWrites += 1;
+    },
   });
 
-  const result = await runVocabularyAudioReconciliation(runtime, { mode: "plan" });
+  const result = await runVocabularyAudioReconciliation(runtime, {
+    mode: "plan",
+  });
 
   assert.equal(result.committed, false);
   assert.equal(reportWrites, 1);
@@ -337,14 +349,16 @@ test("plan writes a report but never invokes the catalog writer", async () => {
 test("apply rejects stale confirmation before catalog write", async () => {
   let catalogWrites = 0;
   const runtime = createRuntime({
-    writeCatalog: async () => { catalogWrites += 1; },
+    writeCatalog: async () => {
+      catalogWrites += 1;
+    },
   });
   await assert.rejects(
     runVocabularyAudioReconciliation(runtime, {
       mode: "apply",
       confirmation: "STALE",
     }),
-    /confirmation/iu,
+    /confirmation/iu
   );
   assert.equal(catalogWrites, 0);
 });
@@ -354,8 +368,12 @@ test("CLI accepts exactly plan or confirmed apply", () => {
     mode: "plan",
   });
   assert.deepEqual(
-    parseVocabularyAudioReconciliationArguments(["apply", "--confirm", "TOKEN"]),
-    { mode: "apply", confirmation: "TOKEN" },
+    parseVocabularyAudioReconciliationArguments([
+      "apply",
+      "--confirm",
+      "TOKEN",
+    ]),
+    { mode: "apply", confirmation: "TOKEN" }
   );
   assert.throws(() => parseVocabularyAudioReconciliationArguments(["dry-run"]));
 });
@@ -400,14 +418,16 @@ export type VocabularyAudioReconciliationRuntime = {
 };
 
 export function parseVocabularyAudioReconciliationArguments(
-  values: string[],
+  values: string[]
 ): VocabularyAudioReconciliationArguments;
 
 export async function runVocabularyAudioReconciliation(
   runtime: VocabularyAudioReconciliationRuntime,
-  arguments_: VocabularyAudioReconciliationArguments,
+  arguments_: VocabularyAudioReconciliationArguments
 ): Promise<{
-  action: "vocabulary-audio-reconciliation-plan" | "vocabulary-audio-reconciliation-apply";
+  action:
+    | "vocabulary-audio-reconciliation-plan"
+    | "vocabulary-audio-reconciliation-apply";
   committed: boolean;
   databaseTarget: string;
   sourceSha256: string;
@@ -445,7 +465,7 @@ test("catalog writer creates a backup and atomically changes only audio fields",
   await writeFile(
     path.join(directory, "vocabulary-catalog.json"),
     `${JSON.stringify(catalog, null, 2)}\n`,
-    "utf8",
+    "utf8"
   );
 
   const result = await writeReconciledVocabularyCatalog({
@@ -456,12 +476,20 @@ test("catalog writer creates a backup and atomically changes only audio fields",
     now: new Date("2026-08-03T04:05:06.000Z"),
   });
 
-  assert.match(result.backupPath, /vocabulary-catalog\.before-audio-reconciliation/iu);
-  assert.deepEqual(
-    JSON.parse(await readFile(path.join(directory, "vocabulary-catalog.json"), "utf8")),
-    merged,
+  assert.match(
+    result.backupPath,
+    /vocabulary-catalog\.before-audio-reconciliation/iu
   );
-  assert.deepEqual(JSON.parse(await readFile(result.backupPath, "utf8")), catalog);
+  assert.deepEqual(
+    JSON.parse(
+      await readFile(path.join(directory, "vocabulary-catalog.json"), "utf8")
+    ),
+    merged
+  );
+  assert.deepEqual(
+    JSON.parse(await readFile(result.backupPath, "utf8")),
+    catalog
+  );
 });
 ```
 
@@ -521,11 +549,13 @@ git commit -m "feat(data): add confirmed audio catalog reconciliation"
 ### Task 3: Command wiring, architecture characterization, and canonical docs
 
 **Files:**
+
 - Modify: `apps/api/package.json`
 - Modify: `apps/api/test/vocabulary-data-architecture.test.ts`
 - Modify: `docs/data/vocabulary-pipeline.md`
 
 **Interfaces:**
+
 - Consumes: executable CLI from Task 2.
 - Produces: supported operator command and documented non-destructive workflow.
 
@@ -536,11 +566,11 @@ Add a test that reads the two new source files and API package JSON, then assert
 ```ts
 assert.match(
   packageJson.scripts?.["data:reconcile-vocabulary-audio"] ?? "",
-  /reconcile-vocabulary-audio\.ts/u,
+  /reconcile-vocabulary-audio\.ts/u
 );
 assert.doesNotMatch(
   `${plannerSource}\n${cliSource}`,
-  /GoogleGenAI|generateContent|OPENAI_API_KEY|GEMINI_API_KEY|\.update\(|\.create\(|\.delete/u,
+  /GoogleGenAI|generateContent|OPENAI_API_KEY|GEMINI_API_KEY|\.update\(|\.create\(|\.delete/u
 );
 assert.match(cliSource, /vocabulary_items\.findMany/u);
 assert.match(cliSource, /vocabulary-catalog\.before-audio-reconciliation/u);
@@ -584,10 +614,12 @@ git commit -m "docs(data): document audio catalog reconciliation"
 ### Task 4: Verify code and generate the current read-only reconciliation plan
 
 **Files:**
+
 - Generated ignored report: `data/vocabulary/working/dictionary-enrichment/audio-reconciliation-plan.json`
 - No committed source data change.
 
 **Interfaces:**
+
 - Consumes: command from Task 3 and the current local PostgreSQL/database catalog state.
 - Produces: evidence for a later, explicitly approved catalog apply.
 
@@ -634,9 +666,11 @@ Report the exact summary and confirmation token to the user. Do not run `apply` 
 ### Task 5: Final source verification before handoff
 
 **Files:**
+
 - No new files unless verification exposes a defect.
 
 **Interfaces:**
+
 - Consumes: all committed implementation tasks.
 - Produces: verified branch ready for reviewed catalog reconciliation.
 

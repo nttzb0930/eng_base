@@ -20,6 +20,7 @@
 ### Task 1: Add Full player presentation component
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-dictation/components/ToeicDictationFullPlayer.tsx`
 
 **Consumes:** Blob media URL, current item position, transcript, translation, callbacks for changing items.
@@ -33,6 +34,7 @@
 ### Task 2: Compose the Full player from the listening session
 
 **Files:**
+
 - Modify: `apps/web/app/views/toeic-listening/ToeicDictationSessionView.tsx`
 - Modify: `apps/web/app/messages/en.json`
 - Modify: `apps/web/app/messages/vi.json`
@@ -50,6 +52,7 @@
 ### Task 3: Verify regression safety
 
 **Files:**
+
 - Verify only.
 
 - [ ] **Step 1: Run focused Web tests** with `pnpm test:web`.

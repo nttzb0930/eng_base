@@ -22,10 +22,12 @@
 ### Task 1: Pure Grammar directive parser
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-grammar/toeic-grammar-markdown.ts`
 - Test: `apps/web/app/features/toeic-grammar/tests/toeic-grammar-markdown.test.ts`
 
 **Interfaces:**
+
 - Produces: `ToeicGrammarMarkdownBlock = { kind: "markdown" | "example" | "note"; content: string }`.
 - Produces: `parseToeicGrammarMarkdown(value: string): ToeicGrammarMarkdownBlock[]`.
 - The parser recognizes a directive only when an opening line is exactly `:::example` or `:::note` and a later line is exactly `:::`.
@@ -119,7 +121,10 @@ export function parseToeicGrammarMarkdown(
     }
 
     flushMarkdown();
-    const content = lines.slice(index + 1, closingIndex).join("\n").trim();
+    const content = lines
+      .slice(index + 1, closingIndex)
+      .join("\n")
+      .trim();
     if (content) {
       blocks.push({
         kind: match[1] as "example" | "note",
@@ -150,12 +155,14 @@ git commit -m "feat(web): parse Grammar lesson directives"
 ### Task 2: Safe Markdown renderer and directive panels
 
 **Files:**
+
 - Modify: `apps/web/package.json`
 - Modify: `pnpm-lock.yaml`
 - Create: `apps/web/app/features/toeic-grammar/components/ToeicGrammarMarkdown.tsx`
 - Modify: `apps/web/test/toeic-grammar-practice-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: `parseToeicGrammarMarkdown(value: string)` from Task 1.
 - Produces: `ToeicGrammarMarkdown({ value }: { value: string })`.
 - The component maps Markdown elements to project-owned Tailwind presentation and maps directive blocks to distinct example/note panels.
@@ -229,7 +236,9 @@ function MarkdownBody({ value }: Props) {
           </h2>
         ),
         h3: ({ children }) => (
-          <h3 className="mt-6 text-lg font-semibold tracking-tight">{children}</h3>
+          <h3 className="mt-6 text-lg font-semibold tracking-tight">
+            {children}
+          </h3>
         ),
         p: ({ children }) => <p className="my-3 leading-7">{children}</p>,
         ul: ({ children }) => (
@@ -248,7 +257,7 @@ function MarkdownBody({ value }: Props) {
             {children}
           </pre>
         ),
-        hr: () => <hr className="my-7 border-border" />,
+        hr: () => <hr className="border-border my-7" />,
         a: ({ href, children }) => {
           const external = Boolean(href && /^https?:\/\//u.test(href));
           return (
@@ -280,11 +289,15 @@ export function ToeicGrammarMarkdown({ value }: Props) {
             key={`${block.kind}-${index}`}
             className={cn(
               directive && "my-5 rounded-xl border px-5 py-4",
-              block.kind === "example" && "border-violet-200 bg-violet-50/60 dark:border-violet-900 dark:bg-violet-950/30",
-              block.kind === "note" && "border-sky-200 bg-sky-50/60 dark:border-sky-900 dark:bg-sky-950/30"
+              block.kind === "example" &&
+                "border-violet-200 bg-violet-50/60 dark:border-violet-900 dark:bg-violet-950/30",
+              block.kind === "note" &&
+                "border-sky-200 bg-sky-50/60 dark:border-sky-900 dark:bg-sky-950/30"
             )}
           >
-            {directive ? <Icon className="mb-2 h-5 w-5" aria-hidden="true" /> : null}
+            {directive ? (
+              <Icon className="mb-2 h-5 w-5" aria-hidden="true" />
+            ) : null}
             <MarkdownBody value={block.content} />
           </section>
         );
@@ -316,10 +329,12 @@ git commit -m "feat(web): render Grammar lesson Markdown"
 ### Task 3: Integrate Markdown into lesson cards
 
 **Files:**
+
 - Modify: `apps/web/app/features/toeic-grammar/components/ToeicGrammarLessonContent.tsx`
 - Modify: `apps/web/test/toeic-grammar-practice-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: `ToeicGrammarMarkdown({ value })` from Task 2.
 - Preserves: locale-first body selection and JSON fallback already owned by `ToeicGrammarLessonContent`.
 
@@ -353,11 +368,13 @@ Expected: FAIL because the lesson component still uses `paragraphs()` and `white
 Remove `paragraphs()`, import `ToeicGrammarMarkdown`, and replace the body block with:
 
 ```tsx
-{body ? (
-  <div className="mt-5">
-    <ToeicGrammarMarkdown value={body} />
-  </div>
-) : null}
+{
+  body ? (
+    <div className="mt-5">
+      <ToeicGrammarMarkdown value={body} />
+    </div>
+  ) : null;
+}
 ```
 
 Do not change locale fallback selection or the `structuredContent` `<pre>` fallback.
@@ -383,9 +400,11 @@ git commit -m "fix(web): format Grammar lesson content"
 ### Task 4: Workspace regression and handoff
 
 **Files:**
+
 - Verify only; no planned production edits.
 
 **Interfaces:**
+
 - Verifies the complete feature against repository-wide gates.
 
 - [ ] **Step 1: Run workspace gates sequentially**

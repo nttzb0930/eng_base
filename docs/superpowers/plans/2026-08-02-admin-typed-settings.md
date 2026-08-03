@@ -23,6 +23,7 @@
 ### Task 1: Add the Shared Settings wire contract
 
 **Files:**
+
 - Create: `packages/shared/src/types/setting.ts`
 - Modify: `packages/shared/src/types/index.ts`
 - Modify: `packages/shared/src/index.ts`
@@ -38,6 +39,7 @@
 ### Task 2: Build the Settings registry and effective reader
 
 **Files:**
+
 - Create: `apps/api/src/module/settings/system-setting.registry.ts`
 - Create: `apps/api/src/module/settings/system-settings.reader.ts`
 - Create: `apps/api/src/module/settings/tests/system-setting.registry.spec.ts`
@@ -56,6 +58,7 @@
 ### Task 3: Add bulk Admin HTTP delivery and safe legacy compatibility
 
 **Files:**
+
 - Create: `apps/api/src/module/settings/dto/update-system-settings.dto.ts`
 - Create: `apps/api/src/module/settings/use-cases/get-system-settings.use-case.ts`
 - Create: `apps/api/src/module/settings/use-cases/update-system-settings.use-case.ts`
@@ -78,6 +81,7 @@
 ### Task 4: Connect runtime owners to effective Settings
 
 **Files:**
+
 - Modify: `apps/api/src/module/progress/progress.module.ts`
 - Modify: `apps/api/src/module/progress/use-cases/refill-hearts.use-case.ts`
 - Delete: `apps/api/src/module/progress/use-cases/get-max-hearts.ts`
@@ -104,6 +108,7 @@
 ### Task 5: Migrate the Admin Settings resource and cache contract
 
 **Files:**
+
 - Modify: `apps/admin/app/features/settings/api/setting.api.ts`
 - Modify: `apps/admin/app/features/settings/hooks/use-setting.ts`
 - Modify: `apps/admin/app/features/settings/tests/setting.api.test.ts`
@@ -119,6 +124,7 @@
 ### Task 6: Rebuild the Settings screen on the Shadcn foundation
 
 **Files:**
+
 - Create: `apps/admin/app/features/settings/components/SystemSettingsScreen.tsx`
 - Create: `apps/admin/app/features/settings/components/system-settings.schema.ts`
 - Modify: `apps/admin/app/views/settings/SettingsView.tsx`
@@ -137,6 +143,7 @@
 ### Task 7: Document and verify typed Settings
 
 **Files:**
+
 - Modify: `docs/architecture/api.md`
 - Modify: `docs/guides/environment-configuration.md`
 - Modify: `docs/architecture/frontend.md` only for the Settings screen ownership detail

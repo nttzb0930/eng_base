@@ -23,10 +23,12 @@
 ### Task 1: Characterize the CSS-first Admin profile
 
 **Files:**
+
 - Modify: `apps/admin/test/app-profile-architecture.test.ts`
 - Test: `apps/admin/test/app-profile-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: current Admin file profile and `@repo/ui` re-export rule.
 - Produces: structural requirements for `components.json`, CSS-first Tailwind source scanning, theme provider, and the approved primitive set.
 
@@ -37,7 +39,7 @@ Add assertions that require:
 ```ts
 test("Admin owns a CSS-first Shadcn profile", () => {
   const components = JSON.parse(
-    readFileSync(join(root, "components.json"), "utf8"),
+    readFileSync(join(root, "components.json"), "utf8")
   ) as {
     style: string;
     tailwind: { config: string; css: string; cssVariables: boolean };
@@ -102,6 +104,7 @@ git commit -m "test(admin): characterize shadcn ui foundation"
 ### Task 2: Migrate Admin styling dependencies and configuration
 
 **Files:**
+
 - Create: `apps/admin/components.json`
 - Modify: `apps/admin/package.json`
 - Modify: `apps/admin/postcss.config.js`
@@ -109,6 +112,7 @@ git commit -m "test(admin): characterize shadcn ui foundation"
 - Delete: `apps/admin/tailwind.config.ts`
 
 **Interfaces:**
+
 - Consumes: pnpm 10 workspace and the CSS-first assertions from Task 1.
 - Produces: a Shadcn registry rooted at `app/components/ui` and a Tailwind 4 PostCSS build.
 
@@ -210,6 +214,7 @@ git commit -m "build(admin): establish tailwind shadcn profile"
 ### Task 3: Add semantic global styling and theme ownership
 
 **Files:**
+
 - Modify: `apps/admin/app/globals.css`
 - Modify: `apps/admin/app/layout.tsx`
 - Modify: `apps/admin/app/providers.tsx`
@@ -217,6 +222,7 @@ git commit -m "build(admin): establish tailwind shadcn profile"
 - Create: `apps/admin/app/components/theme/ThemeMenu.tsx`
 
 **Interfaces:**
+
 - Consumes: `ThemeProvider` from `next-themes`, Shadcn Dropdown Menu, Inter from `next/font/google`.
 - Produces: `AdminThemeProvider`, `ThemeMenu`, semantic light/dark tokens, and `--font-inter`.
 
@@ -377,7 +383,10 @@ Use:
 ```tsx
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin", "vietnamese"], variable: "--font-inter" });
+const inter = Inter({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-inter",
+});
 ```
 
 Set `<html lang="vi" suppressHydrationWarning>` and apply `className={inter.variable}` to `<body>`.
@@ -391,9 +400,18 @@ Create a client wrapper around `next-themes`:
 
 import { ThemeProvider } from "next-themes";
 
-export function AdminThemeProvider({ children }: { children: React.ReactNode }) {
+export function AdminThemeProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
       {children}
     </ThemeProvider>
   );
@@ -419,6 +437,7 @@ git commit -m "feat(admin): add semantic theme foundation"
 ### Task 4: Rebuild the responsive Admin shell and grouped navigation
 
 **Files:**
+
 - Modify: `apps/admin/app/components/layout/AdminShell.tsx`
 - Modify: `apps/admin/app/components/layout/AdminSidebar.tsx`
 - Modify: `apps/admin/app/components/layout/AdminNavbar.tsx`
@@ -429,6 +448,7 @@ git commit -m "feat(admin): add semantic theme foundation"
 - Test: `apps/admin/test/app-profile-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: Sheet, Collapsible, Dropdown Menu, Tooltip, ThemeMenu, AuthGuard, current routes.
 - Produces: `AdminShell`, grouped `adminNavigation`, `PageHeader`, and persisted sidebar presentation state.
 
@@ -446,12 +466,15 @@ export type AdminNavigationItem = {
 export type AdminNavigationGroup = {
   id: "content" | "operations" | "system";
   label: string;
-  items: Array<AdminNavigationItem | {
-    id: "courses" | "reading";
-    label: string;
-    icon: LucideIcon;
-    children: AdminNavigationItem[];
-  }>;
+  items: Array<
+    | AdminNavigationItem
+    | {
+        id: "courses" | "reading";
+        label: string;
+        icon: LucideIcon;
+        children: AdminNavigationItem[];
+      }
+  >;
 };
 ```
 
@@ -474,14 +497,19 @@ Keep `isCollapsed` and `isMobileOpen`. Read and write the key `admin-sidebar-col
 Navbar contains the mobile/desktop sidebar controls, contextual title, ThemeMenu, and account Dropdown. Shell uses semantic colors:
 
 ```tsx
-<div className="min-h-dvh bg-background text-foreground">
+<div className="bg-background text-foreground min-h-dvh">
   <AdminSidebar
     isCollapsed={isCollapsed}
     isMobileOpen={isMobileOpen}
     onCloseMobile={closeMobile}
     pathname={pathname}
   />
-  <div className={cn("min-h-dvh transition-[padding] duration-200", isCollapsed ? "lg:pl-16" : "lg:pl-72")}>
+  <div
+    className={cn(
+      "min-h-dvh transition-[padding] duration-200",
+      isCollapsed ? "lg:pl-16" : "lg:pl-72"
+    )}
+  >
     <AdminNavbar
       onLogout={handleLogout}
       onToggleDesktop={toggleCollapsed}
@@ -489,7 +517,9 @@ Navbar contains the mobile/desktop sidebar controls, contextual title, ThemeMenu
       title={getAdminPageTitle(pathname)}
       username={username}
     />
-    <main className="mx-auto w-full max-w-[88rem] px-4 py-6 lg:px-8 lg:py-8">{children}</main>
+    <main className="mx-auto w-full max-w-[88rem] px-4 py-6 lg:px-8 lg:py-8">
+      {children}
+    </main>
   </div>
 </div>
 ```
@@ -523,6 +553,7 @@ git commit -m "feat(admin): rebuild responsive management shell"
 ### Task 5: Add reusable feedback and form composition
 
 **Files:**
+
 - Create: `apps/admin/app/components/feedback/EmptyState.tsx`
 - Create: `apps/admin/app/components/feedback/ErrorState.tsx`
 - Create: `apps/admin/app/components/feedback/LoadingState.tsx`
@@ -531,6 +562,7 @@ git commit -m "feat(admin): rebuild responsive management shell"
 - Modify: `apps/admin/app/components/feedback/TableSkeleton.tsx`
 
 **Interfaces:**
+
 - Produces: `EmptyState`, `ErrorState`, `LoadingState`, `FormField`, `FormActions`.
 
 - [ ] **Step 1: Implement feedback contracts**
@@ -538,9 +570,22 @@ git commit -m "feat(admin): rebuild responsive management shell"
 Use these exact prop contracts:
 
 ```ts
-type EmptyStateProps = { action?: React.ReactNode; description: string; icon?: LucideIcon; title: string };
-type ErrorStateProps = { description?: string; onRetry?: () => void; title?: string };
-type LoadingStateProps = { label?: string; rows?: number; variant?: "page" | "table" };
+type EmptyStateProps = {
+  action?: React.ReactNode;
+  description: string;
+  icon?: LucideIcon;
+  title: string;
+};
+type ErrorStateProps = {
+  description?: string;
+  onRetry?: () => void;
+  title?: string;
+};
+type LoadingStateProps = {
+  label?: string;
+  rows?: number;
+  variant?: "page" | "table";
+};
 ```
 
 All variants use semantic tokens, normal body weight, and accessible live text. Retry uses Button; loading uses Skeleton and an `sr-only` label.
@@ -585,6 +630,7 @@ git commit -m "feat(admin): add feedback and form patterns"
 ### Task 6: Rebuild the shared Data Table on TanStack Table
 
 **Files:**
+
 - Modify: `apps/admin/app/components/data-table/data-table.tsx`
 - Modify: `apps/admin/app/components/data-table/data-table-card.tsx`
 - Create: `apps/admin/app/components/data-table/data-table-pagination.tsx`
@@ -594,6 +640,7 @@ git commit -m "feat(admin): add feedback and form patterns"
 - Test: `apps/admin/test/app-profile-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: existing `Column<T>` definitions and external server-pagination callbacks.
 - Produces: the same consumer props plus optional `getRowId(item): string` and accessible internal TanStack row/header models.
 
@@ -633,11 +680,13 @@ git commit -m "refactor(admin): standardize data table foundation"
 ### Task 7: Foundation regression gate and documentation
 
 **Files:**
+
 - Modify: `docs/architecture/frontend.md`
 - Modify: `docs/guides/verification.md` only if focused commands differ
 - Test: all Admin and repository architecture gates
 
 **Interfaces:**
+
 - Produces: canonical documentation for CSS-first Shadcn ownership and theme behavior.
 
 - [ ] **Step 1: Update frontend architecture**
