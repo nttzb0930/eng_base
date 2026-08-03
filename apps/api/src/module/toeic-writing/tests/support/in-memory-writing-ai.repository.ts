@@ -76,7 +76,14 @@ export class InMemoryWritingAiRepository implements WritingAiRepository {
           "Writing AI idempotency key conflicts with another response"
         );
       }
-      return this.toReservation(existing);
+      if (existing.status === "COMPLETED") {
+        return this.toReservation(existing);
+      }
+      if (existing.status === "RESERVED") {
+        throw new WritingAiInFlightError(
+          "Writing AI request is already in flight"
+        );
+      }
     }
 
     const active = [...this.reservations.values()].find(
@@ -101,15 +108,16 @@ export class InMemoryWritingAiRepository implements WritingAiRepository {
       );
     }
 
+    const released = existingId ? this.reservations.get(existingId) : undefined;
     const state: ReservationState = {
-      id: randomUUID(),
+      id: released?.id ?? randomUUID(),
       userId: input.userId,
       usageDate,
       feature: input.feature,
       idempotencyKey: input.idempotencyKey,
       responseHash: input.responseHash,
       status: "RESERVED",
-      createdAt: now,
+      createdAt: released?.createdAt ?? now,
       expiresAt: new Date(now.getTime() + input.reservationTtlMs),
     };
     daily.reserved += 1;

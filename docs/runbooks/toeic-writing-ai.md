@@ -1,8 +1,9 @@
 # TOEIC Writing AI Runbook
 
-This runbook operates Part 1 picture-description coaching. Provider access is
-disabled by default, secrets stay in the ignored root `.env`, and no startup,
-build, test, seed, or migration command calls Gemini.
+This runbook operates Part 1 picture-description and Part 2 email-response
+coaching. Provider access is disabled by default, secrets stay in the ignored
+root `.env`, and no startup, build, test, seed, or migration command calls
+Gemini.
 
 ## Preconditions
 
@@ -60,6 +61,35 @@ logs only task ID, context source, provider-call state, schema state, and score.
 It never prints the API key, image context, learner response, or raw provider
 response. The smoke does not consume learner quota or persist a learner grade.
 
+### Part 2 email grading
+
+Part 2 reuses the same server-only Gemini configuration. Runtime grading uses
+`POST /api/toeic/writing/tasks/:taskId/grades/part-two`, the official 0-4
+scale, and rejects responses outside 50-300 words or 2,200 characters before
+quota or provider use. Results disclose whether outline, vocabulary, sample, or
+community assistance was used; opening assistance does not reduce the score.
+
+Choose one owned, published Part 2 task. The default command validates task
+ownership, prompt construction, schema, requirement IDs, and evidence rules
+without calling Gemini or charging quota:
+
+```powershell
+pnpm --filter @repo/api ai:smoke-toeic-writing-part2 -- --task-id=<task-id>
+```
+
+Only after review, enable Gemini and opt into one real provider call:
+
+```powershell
+$env:GEMINI_ENABLED="true"
+pnpm --filter @repo/api ai:smoke-toeic-writing-part2 -- --task-id=<task-id> --call-provider
+```
+
+The summary contains only task ID, model, latency, score, schema status,
+provider-call status, and `quotaCharged=false`. It never logs task content,
+learner response, prompt, API key, or raw provider response. Review the five
+deterministic rubric fixtures (scores 0-4) whenever the prompt, schema, rubric,
+or evidence validation changes.
+
 ## Runtime checks
 
 - Confirm unauthenticated grading is rejected.
@@ -68,6 +98,8 @@ response. The smoke does not consume learner quota or persist a learner grade.
 - Retry the same response and confirm `cached=true` with no extra quota charge.
 - Confirm another learner cannot read grade detail or history.
 - Confirm Sample/assistance use is represented separately in the result.
+- Confirm Part 2 result contains every server-owned requirement exactly once.
+- Confirm Unicode evidence offsets reproduce the displayed learner excerpts.
 
 Daily quota resets at UTC midnight. Expired reservations are released after
 `WRITING_AI_RESERVATION_TTL_MS`. HTTP delivery limits are process-local; use a
@@ -84,3 +116,7 @@ Immediate rollback is `GEMINI_ENABLED=false` followed by an API restart. This
 stops new provider calls while preserving tasks, contexts, grades, submissions,
 and history. Do not delete migration history or persisted grades during a
 provider incident.
+
+Monitor invalid-response, evidence-mismatch, quota-exhausted, provider-timeout,
+and provider-disabled outcomes. A Part 2 incident uses the same rollback and
+must not delete drafts, submissions, assistance events, or existing grades.

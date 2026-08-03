@@ -2,7 +2,10 @@ import { GoogleGenAI, type GenerateContentParameters } from "@google/genai";
 import { z } from "zod";
 
 import type { GeminiConfiguration } from "../../../config";
-import { buildPartTwoGradingPrompt } from "./part-two-grading.prompt";
+import {
+  buildPartTwoGradingPrompt,
+  PART_TWO_GRADING_SYSTEM_INSTRUCTION,
+} from "./part-two-grading.prompt";
 import {
   writingPartOneProviderResultSchema,
   writingPartTwoProviderResultSchema,
@@ -147,6 +150,7 @@ export class GeminiWritingProvider implements WritingAiProvider {
           },
         ],
         config: {
+          systemInstruction: PART_TWO_GRADING_SYSTEM_INSTRUCTION,
           temperature: 0.1,
           responseMimeType: "application/json",
           responseJsonSchema: z.toJSONSchema(
@@ -185,12 +189,17 @@ export class GeminiWritingProvider implements WritingAiProvider {
       if (!(error instanceof WritingAiInvalidResponseError)) throw error;
     }
 
+    const repairInstruction =
+      "The previous output failed validation. Return only valid JSON matching the response schema.";
+    const currentSystemInstruction = request.config?.systemInstruction;
     const repaired = await this.generateWithTimeout({
       ...request,
       config: {
         ...request.config,
         systemInstruction:
-          "The previous output failed validation. Return only valid JSON matching the response schema.",
+          typeof currentSystemInstruction === "string"
+            ? `${currentSystemInstruction}\n\n${repairInstruction}`
+            : repairInstruction,
       },
     });
     return parseStructuredResponse(repaired.text, schema);

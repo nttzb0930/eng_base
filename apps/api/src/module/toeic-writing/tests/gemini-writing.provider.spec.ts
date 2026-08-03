@@ -214,10 +214,11 @@ test("Part 2 grading uses the grading model, locale, and strict schema", async (
   const request = calls[0] as {
     model: string;
     contents: unknown;
-    config: { responseJsonSchema?: unknown };
+    config: { responseJsonSchema?: unknown; systemInstruction?: string };
   };
   assert.equal(request.model, "grading-model");
-  assert.match(JSON.stringify(request.contents), /Vietnamese/u);
+  assert.match(request.config.systemInstruction ?? "", /Vietnamese/u);
+  assert.doesNotMatch(JSON.stringify(request.contents), /Dear Mr\. Brown/u);
   assert.ok(request.config.responseJsonSchema);
 });
 
@@ -230,6 +231,17 @@ test("Part 2 grading repairs one invalid schema response", async () => {
 
   assert.equal((await provider.gradePartTwo(partTwoInput)).score, 4);
   assert.equal(calls.length, 2);
+  const repaired = calls[1] as {
+    config: { systemInstruction?: string };
+  };
+  assert.match(
+    repaired.config.systemInstruction ?? "",
+    /official TOEIC Writing Part 2 0-4 rubric/iu
+  );
+  assert.match(
+    repaired.config.systemInstruction ?? "",
+    /previous output failed validation/iu
+  );
 });
 
 test("Part 2 grading rejects unknown requirements", async () => {

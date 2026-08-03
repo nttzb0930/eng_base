@@ -45,13 +45,12 @@ function gradeInput(
   };
 }
 
-test("quota reservation, completion, daily limit, and idempotent retry", async () => {
+test("quota reservation, completion, daily limit, and completed retry", async () => {
   const repository = new InMemoryWritingAiRepository();
   const first = await repository.reserveQuota(reservationInput());
-  const retry = await repository.reserveQuota(reservationInput());
-
-  assert.equal(retry.id, first.id);
   await repository.saveGradeAndCompleteQuota(gradeInput(first.id));
+  const retry = await repository.reserveQuota(reservationInput());
+  assert.equal(retry.id, first.id);
 
   for (let index = 2; index <= 5; index += 1) {
     const reservation = await repository.reserveQuota(
@@ -85,6 +84,11 @@ test("single in-flight, release, stale cleanup, and idempotency conflict", async
   const first = await repository.reserveQuota(reservationInput());
 
   await assert.rejects(
+    () => repository.reserveQuota(reservationInput()),
+    /in flight/i
+  );
+
+  await assert.rejects(
     () =>
       repository.reserveQuota(
         reservationInput({
@@ -103,6 +107,9 @@ test("single in-flight, release, stale cleanup, and idempotency conflict", async
   );
 
   await repository.releaseQuota(first.id);
+  const retried = await repository.reserveQuota(reservationInput());
+  assert.equal(retried.id, first.id);
+  await repository.releaseQuota(retried.id);
   const second = await repository.reserveQuota(
     reservationInput({
       idempotencyKey: "00000000-0000-4000-8000-000000000002",

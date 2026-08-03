@@ -123,11 +123,18 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
             "Writing AI idempotency key conflicts with another response"
           );
         }
-        return {
-          id: existing.id,
-          userId: existing.user_id,
-          usageDate: dateKey(existing.usage_date),
-        };
+        if (existing.status === "COMPLETED") {
+          return {
+            id: existing.id,
+            userId: existing.user_id,
+            usageDate: dateKey(existing.usage_date),
+          };
+        }
+        if (existing.status === "RESERVED") {
+          throw new WritingAiInFlightError(
+            "Writing AI request is already in flight"
+          );
+        }
       }
 
       await transaction.ai_usage_daily.upsert({
@@ -164,6 +171,30 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
       }
 
       try {
+        if (existing) {
+          const reactivated =
+            await transaction.ai_usage_reservations.updateMany({
+              where: { id: existing.id, status: "RELEASED" },
+              data: {
+                usage_date: usageDate,
+                status: "RESERVED",
+                expires_at: expiresAt,
+                released_at: null,
+                completed_at: null,
+              },
+            });
+          if (reactivated.count !== 1) {
+            throw new WritingAiInFlightError(
+              "Writing AI request is already in flight"
+            );
+          }
+          return {
+            id: existing.id,
+            userId: existing.user_id,
+            usageDate: dateKey(usageDate),
+          };
+        }
+
         const reservation = await transaction.ai_usage_reservations.create({
           data: {
             user_id: input.userId,

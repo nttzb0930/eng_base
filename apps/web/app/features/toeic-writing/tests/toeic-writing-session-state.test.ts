@@ -2,9 +2,25 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  getWritingFooterAvailability,
   initialToeicWritingSessionState,
   reduceWritingSession,
 } from "../toeic-writing-session-state";
+
+test("grading locks only the primary action, not draft controls", () => {
+  assert.deepEqual(
+    getWritingFooterAvailability({
+      canSubmit: true,
+      saving: false,
+      actionPending: true,
+    }),
+    {
+      backDisabled: false,
+      saveDisabled: false,
+      primaryDisabled: true,
+    }
+  );
+});
 
 test("editing keeps learner text and marks the draft dirty", () => {
   const state = reduceWritingSession(initialToeicWritingSessionState, {

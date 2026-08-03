@@ -9,7 +9,7 @@ import type {
 } from "@repo/shared";
 import { BookOpen, FileText, Languages, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { Button } from "@/app/components/ui/button";
 import {
@@ -45,7 +45,6 @@ type ToeicWritingPartTwoWorkspaceProps = {
   task: Extract<ToeicWritingTaskDetail, { part: 2 }>;
   responseText: string;
   saveStatus: ToeicWritingSaveStatus;
-  disabled: boolean;
   grade: ToeicWritingPartTwoGradeResult | null;
   validationIssues: ToeicWritingPartTwoValidationIssue[];
   onResponseChange(value: string): void;
@@ -65,7 +64,6 @@ export function ToeicWritingPartTwoWorkspace({
   task,
   responseText,
   saveStatus,
-  disabled,
   grade,
   validationIssues,
   onResponseChange,
@@ -82,6 +80,16 @@ export function ToeicWritingPartTwoWorkspace({
   const [pendingImprovedEmail, setPendingImprovedEmail] = useState<
     string | null
   >(null);
+  const gradeResultRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!grade) return;
+    gradeResultRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    gradeResultRef.current?.focus({ preventScroll: true });
+  }, [grade]);
   const outline = useToeicWritingCoaching(
     task.id,
     task.contentVersion,
@@ -150,7 +158,7 @@ export function ToeicWritingPartTwoWorkspace({
           wordRange={{ min: 50, max: 300 }}
           limitReached={limitReached}
           saveStatus={saveStatus}
-          disabled={disabled}
+          disabled={false}
           onChange={changeResponse}
           onRetry={onRetrySave}
         />
@@ -230,13 +238,19 @@ export function ToeicWritingPartTwoWorkspace({
         </section>
 
         {grade ? (
-          <ToeicWritingPartTwoResult
-            grade={grade}
-            onRewrite={onRewrite}
-            onReplaceImprovedEmail={() =>
-              setPendingImprovedEmail(grade.improvedEmail.text)
-            }
-          />
+          <div
+            ref={gradeResultRef}
+            tabIndex={-1}
+            className="scroll-mt-24 outline-none"
+          >
+            <ToeicWritingPartTwoResult
+              grade={grade}
+              onRewrite={onRewrite}
+              onReplaceImprovedEmail={() =>
+                setPendingImprovedEmail(grade.improvedEmail.text)
+              }
+            />
+          </div>
         ) : null}
         <ToeicWritingGradeHistoryPanel taskId={task.id} maxScore={4} />
       </div>

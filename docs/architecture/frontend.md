@@ -266,6 +266,14 @@ community response requires confirmation when the editor already contains text.
 On smaller viewports the two-column workspace stacks while the shared session
 footer remains available for primary navigation.
 
+Part 2 grading is a separate action from immutable submission. Web mirrors the
+deterministic limits for immediate feedback, while API remains authoritative.
+The typed 0-4 result renders owned task-completion, sentence-variety, tone,
+grammar, paraphrase, overall, and improved-email sections plus learner-scoped
+history. Rewriting preserves the current draft. An improved email replaces the
+editor only after confirmation and records sample-equivalent assistance before
+the next grade; provider text is rendered as React text, never raw HTML.
+
 ## Browser data flow
 
 Web and Admin each own an Auth transport:

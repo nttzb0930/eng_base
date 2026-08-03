@@ -191,6 +191,42 @@ test("provider and result-verification failures release quota", async () => {
   }
 });
 
+test("same-key concurrent request is rejected and provider-failure retry succeeds", async () => {
+  const repository = new InMemoryWritingAiRepository();
+  let calls = 0;
+  let releaseProvider!: (result: WritingPartTwoProviderResult) => void;
+  const pending = new Promise<WritingPartTwoProviderResult>((resolve) => {
+    releaseProvider = resolve;
+  });
+  const concurrentUseCase = createUseCase(repository, () => {
+    calls += 1;
+    return pending;
+  });
+  const first = concurrentUseCase.execute("learner-1", 22, request());
+  await new Promise((resolve) => setImmediate(resolve));
+
+  await assert.rejects(
+    () => concurrentUseCase.execute("learner-1", 22, request()),
+    /progress/iu
+  );
+  assert.equal(calls, 1);
+  releaseProvider(providerResult());
+  await first;
+
+  const retryRepository = new InMemoryWritingAiRepository();
+  let attempts = 0;
+  const retryUseCase = createUseCase(retryRepository, (input) => {
+    attempts += 1;
+    if (attempts === 1) return Promise.reject(new Error("temporary failure"));
+    return Promise.resolve(providerResult(input.responseText));
+  });
+  await assert.rejects(() => retryUseCase.execute("learner-1", 22, request()));
+  const retried = await retryUseCase.execute("learner-1", 22, request());
+  assert.equal(retried.score, 4);
+  assert.equal(retried.quota.remaining, 4);
+  assert.equal(attempts, 2);
+});
+
 test("conflicting idempotency reuse and concurrent requests are rejected", async () => {
   const repository = new InMemoryWritingAiRepository();
   let releaseProvider!: (result: WritingPartTwoProviderResult) => void;

@@ -143,6 +143,16 @@ enforce ownership, community projections mask learner identity and exclude
 grades and private drafts, and restoring a shared response records assistance
 before returning text to the learner's editor.
 
+Part 2 grading first enforces 50-300 words, 2,200 characters, and obvious-spam
+checks. Its use case resolves the published task and server-owned requirements,
+reserves quota, snapshots assistance, and sends only untrusted task/learner data
+through the provider adapter. The structured 0-4 result is accepted only when
+every requirement appears exactly once and every Unicode evidence range matches
+the learner response or improved email. Saving the grade and completing quota
+are atomic; provider or evidence-validation failures release the reservation.
+The authenticated route is
+`POST /toeic/writing/tasks/:taskId/grades/part-two`.
+
 TOEIC Listening acquisition is a separate, local-first pipeline linked to the
 exact approved Reading inventory SHA. Inventory and download do not require a
 database; media is resumable and remains under ignored licensed-content

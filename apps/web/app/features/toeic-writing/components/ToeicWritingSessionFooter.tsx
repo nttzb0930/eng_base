@@ -4,11 +4,12 @@ import { ArrowLeft, LoaderCircle, Save, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
+import { getWritingFooterAvailability } from "../toeic-writing-session-state";
 
 type ToeicWritingSessionFooterProps = {
   canSubmit: boolean;
   saving: boolean;
-  submitting: boolean;
+  actionPending: boolean;
   onBack(): void;
   onSave(): void;
   onSubmit(): void;
@@ -19,7 +20,7 @@ type ToeicWritingSessionFooterProps = {
 export function ToeicWritingSessionFooter({
   canSubmit,
   saving,
-  submitting,
+  actionPending,
   onBack,
   onSave,
   onSubmit,
@@ -27,6 +28,11 @@ export function ToeicWritingSessionFooter({
   primaryPendingLabel,
 }: ToeicWritingSessionFooterProps) {
   const t = useTranslations("toeicWriting.session");
+  const availability = getWritingFooterAvailability({
+    canSubmit,
+    saving,
+    actionPending,
+  });
 
   return (
     <footer className="bg-background/95 supports-[backdrop-filter]:bg-background/85 fixed inset-x-0 bottom-0 z-30 border-t py-3 backdrop-blur">
@@ -34,7 +40,7 @@ export function ToeicWritingSessionFooter({
         <button
           type="button"
           onClick={onBack}
-          disabled={submitting}
+          disabled={availability.backDisabled}
           className="text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 items-center gap-2 rounded-md px-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -45,7 +51,7 @@ export function ToeicWritingSessionFooter({
             type="button"
             variant="outline"
             onClick={onSave}
-            disabled={saving || submitting}
+            disabled={availability.saveDisabled}
             className="gap-2 rounded-md"
           >
             {saving ? (
@@ -62,10 +68,10 @@ export function ToeicWritingSessionFooter({
             type="button"
             variant="secondary"
             onClick={onSubmit}
-            disabled={!canSubmit || saving || submitting}
+            disabled={availability.primaryDisabled}
             className="gap-2 rounded-md"
           >
-            {submitting ? (
+            {actionPending ? (
               <LoaderCircle
                 className="h-4 w-4 animate-spin"
                 aria-hidden="true"
@@ -73,7 +79,7 @@ export function ToeicWritingSessionFooter({
             ) : (
               <Send className="h-4 w-4" aria-hidden="true" />
             )}
-            {submitting
+            {actionPending
               ? (primaryPendingLabel ?? t("submitting"))
               : (primaryLabel ?? t("submit"))}
           </Button>

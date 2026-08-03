@@ -16,6 +16,18 @@ export const initialToeicWritingSessionState: ToeicWritingSessionState = {
   dirty: false,
 };
 
+export function getWritingFooterAvailability(input: {
+  canSubmit: boolean;
+  saving: boolean;
+  actionPending: boolean;
+}) {
+  return {
+    backDisabled: false,
+    saveDisabled: input.saving,
+    primaryDisabled: !input.canSubmit || input.saving || input.actionPending,
+  };
+}
+
 export type ToeicWritingSessionAction =
   | { type: "hydrate"; value: string }
   | { type: "edit"; value: string }

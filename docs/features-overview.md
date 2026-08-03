@@ -309,7 +309,18 @@ Các goal interface hiện có:
 
 ## 6.7. AI sửa Writing
 
-**Trạng thái: Đã triển khai nền tảng TOEIC Writing Part 1-2; chưa triển khai AI grading.**
+**Trạng thái: Đã triển khai TOEIC Writing Part 1-2 và AI grading có quota.**
+
+### AI grading đã triển khai
+
+- Part 1 chấm câu mô tả tranh theo thang 0-3 sau deterministic validation và
+  đối chiếu ngữ cảnh ảnh do backend sở hữu.
+- Part 2 chấm email theo thang 0-4, kiểm tra hoàn thành nhiệm vụ, đa dạng câu,
+  giọng văn, ngữ pháp, paraphrase và trả email cải thiện có xác nhận trước khi
+  thay bản nháp.
+- Provider Gemini chỉ chạy phía API, tắt mặc định, có timeout, structured-output
+  validation, quota theo ngày, idempotency, cache theo learner và lịch sử riêng.
+- Provider lỗi không làm mất draft; test và build mặc định không gọi Gemini.
 
 ### Nền tảng non-AI đã triển khai
 

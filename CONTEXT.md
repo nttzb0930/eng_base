@@ -51,9 +51,10 @@ follow the ownership and dependency rules in
   with an idempotency key. It snapshots the task title, Part, and
   source-provided reference material at submission time for stable historical
   comparison but does not imply a score or AI feedback.
-- **TOEIC Writing AI grade**: an authenticated, Learner-owned Part 1 coaching
-  result produced only after deterministic validation. It is versioned by task,
-  response, prompt, rubric, and model; cached retries do not consume quota.
+- **TOEIC Writing AI grade**: an authenticated, Learner-owned Part 1 or Part 2
+  coaching result produced only after deterministic validation. It is separate
+  from an immutable submission and versioned by task, response, prompt, rubric,
+  and model; cached retries do not consume quota.
 - **TOEIC Grammar snapshot**: one checksum-approved, source-owned catalog of
   Grammar topics, subtopics, lessons, shared questions, mixed sets, and
   difficulty memberships. Grammar supports TOEIC Reading but is not owned by a
@@ -109,7 +110,7 @@ follow the ownership and dependency rules in
   Learner-scoped attempt history. Test detail never exposes correctness or
   grading explanations before submission.
 - TOEIC Writing owns published Part 1-2 prompts, version-aware drafts,
-  idempotent submissions, post-submission reference comparison, and Part 1 AI
+  idempotent submissions, post-submission reference comparison, and Part 1-2 AI
   coaching. Reference content remains distinct from AI feedback. Provider calls
   are server-only, quota-reserved, schema-validated, and disabled by default.
 - TOEIC Listening keeps Full Test exam-safe in the normal learner UI. Part

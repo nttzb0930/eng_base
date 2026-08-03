@@ -48,6 +48,7 @@ import {
 import { validatePartOneEditorResponse } from "@/app/features/toeic-writing/toeic-writing-part-one-grading";
 import {
   getPartTwoEditorMetrics,
+  shouldApplyPartTwoGradeResult,
   validatePartTwoEditorResponse,
 } from "@/app/features/toeic-writing/toeic-writing-coaching-state";
 import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
@@ -137,6 +138,7 @@ function ToeicWritingWorkspace({
   const quota = useToeicWritingAiQuota(true);
   const recordAssistance = useRecordToeicWritingAssistance();
   const submissionKeyRef = useRef<string | null>(null);
+  const responseTextRef = useRef(initialResponse);
   const navigatingRef = useRef(false);
   const [state, dispatch] = useReducer(reduceWritingSession, {
     ...initialToeicWritingSessionState,
@@ -155,7 +157,7 @@ function ToeicWritingWorkspace({
   const [partTwoValidationIssues, setPartTwoValidationIssues] = useState<
     ToeicWritingPartTwoValidationIssue[]
   >([]);
-  const busy =
+  const gradingPending =
     task.part === 1 ? gradePartOne.isPending : gradePartTwo.isPending;
 
   const persistSnapshot = useCallback(
@@ -192,9 +194,9 @@ function ToeicWritingWorkspace({
   );
 
   useEffect(() => {
-    if (!state.dirty || busy) return;
+    if (!state.dirty) return;
     autosave.schedule(snapshot());
-  }, [autosave, busy, snapshot, state.dirty]);
+  }, [autosave, snapshot, state.dirty]);
 
   useEffect(() => () => autosave.dispose(), [autosave]);
 
@@ -207,7 +209,7 @@ function ToeicWritingWorkspace({
   }, [autosave, snapshot]);
 
   const backToTasks = useCallback(async () => {
-    if (navigatingRef.current || busy) return;
+    if (navigatingRef.current) return;
     navigatingRef.current = true;
     try {
       await autosave.flush(snapshot(), { lock: true });
@@ -216,7 +218,7 @@ function ToeicWritingWorkspace({
       autosave.unlock();
       navigatingRef.current = false;
     }
-  }, [autosave, busy, locale, router, snapshot]);
+  }, [autosave, locale, router, snapshot]);
 
   const submit = useCallback(async () => {
     if (!state.responseText.trim()) return;
@@ -280,25 +282,35 @@ function ToeicWritingWorkspace({
     setPartTwoValidationIssues(validation.issues);
     if (!validation.valid) return;
 
+    const submittedSnapshot = snapshot();
+    const idempotencyKey =
+      submissionKeyRef.current ?? globalThis.crypto.randomUUID();
+    submissionKeyRef.current = idempotencyKey;
     try {
-      await autosave.flush(snapshot());
-      submissionKeyRef.current ??= globalThis.crypto.randomUUID();
+      await autosave.flush(submittedSnapshot);
       const result = await gradePartTwo.mutateAsync({
         taskId: task.id,
         payload: {
-          ...snapshot(),
-          idempotencyKey: submissionKeyRef.current,
+          ...submittedSnapshot,
+          idempotencyKey,
           locale,
         },
       });
-      setPartTwoGrade(result);
+      if (
+        shouldApplyPartTwoGradeResult(
+          submittedSnapshot.responseText,
+          responseTextRef.current
+        )
+      ) {
+        setPartTwoGrade(result);
+      }
     } catch {
       // The mutation exposes its error state while preserving the draft.
     }
   }, [autosave, gradePartTwo, locale, snapshot, state.responseText, task]);
 
   const viewSample = useCallback(async () => {
-    if (task.part !== 1 || busy) return;
+    if (task.part !== 1 || gradingPending) return;
     try {
       await recordAssistance.mutateAsync({
         taskId: task.id,
@@ -309,7 +321,7 @@ function ToeicWritingWorkspace({
     } catch {
       // Submission error remains visible and the response stays editable.
     }
-  }, [busy, recordAssistance, submit, task]);
+  }, [gradingPending, recordAssistance, submit, task]);
 
   const maxLength = TOEIC_WRITING_RESPONSE_LIMITS[task.part];
   const responseLength = getToeicWritingResponseLength(state.responseText);
@@ -319,6 +331,7 @@ function ToeicWritingWorkspace({
       ? responseLength > 0 && responseLength <= maxLength
       : partTwoMetrics.ready;
   const editResponse = (value: string) => {
+    responseTextRef.current = value;
     submissionKeyRef.current = null;
     setGrade(null);
     setValidationIssues([]);
@@ -373,7 +386,6 @@ function ToeicWritingWorkspace({
             task={task}
             responseText={state.responseText}
             saveStatus={state.saveStatus}
-            disabled={busy}
             grade={partTwoGrade}
             validationIssues={partTwoValidationIssues}
             onResponseChange={editResponse}
@@ -404,7 +416,7 @@ function ToeicWritingWorkspace({
                 responseText={state.responseText}
                 maxLength={maxLength}
                 saveStatus={state.saveStatus}
-                disabled={busy}
+                disabled={gradingPending}
                 onChange={editResponse}
                 onRetry={() => void saveNow()}
                 onViewSample={
@@ -449,7 +461,7 @@ function ToeicWritingWorkspace({
       <ToeicWritingSessionFooter
         canSubmit={canSubmit}
         saving={state.saveStatus === "SAVING"}
-        submitting={busy}
+        actionPending={gradingPending}
         onBack={() => void backToTasks()}
         onSave={() => void saveNow()}
         onSubmit={() =>

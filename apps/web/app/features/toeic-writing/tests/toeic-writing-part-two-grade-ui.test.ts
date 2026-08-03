@@ -3,7 +3,10 @@ import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
 
-import { validatePartTwoEditorResponse } from "../toeic-writing-coaching-state";
+import {
+  shouldApplyPartTwoGradeResult,
+  validatePartTwoEditorResponse,
+} from "../toeic-writing-coaching-state";
 
 const read = (path: string) =>
   readFileSync(resolve(process.cwd(), path), "utf8");
@@ -78,4 +81,23 @@ test("Part 2 grading keeps rewrite and improved-email replacement separate", () 
   assert.match(workspace, /onRewrite/u);
   assert.match(workspace, /pendingImprovedEmail/u);
   assert.match(workspace, /confirmImprovedEmail/u);
+});
+
+test("Part 2 editor stays writable while grading and ignores stale results", () => {
+  assert.equal(shouldApplyPartTwoGradeResult("draft", "draft"), true);
+  assert.equal(shouldApplyPartTwoGradeResult("draft", "edited"), false);
+
+  const session = read("app/views/toeic-writing/ToeicWritingSessionView.tsx");
+  const workspace = read(
+    "app/features/toeic-writing/components/ToeicWritingPartTwoWorkspace.tsx"
+  );
+  const invocationStart = session.indexOf("<ToeicWritingPartTwoWorkspace");
+  const invocation = session.slice(
+    invocationStart,
+    session.indexOf("/>", invocationStart)
+  );
+  assert.doesNotMatch(invocation, /disabled=/u);
+  assert.match(workspace, /disabled=\{false\}/u);
+  assert.doesNotMatch(session, /!state\.dirty \|\| gradingPending/u);
+  assert.doesNotMatch(session, /navigatingRef\.current \|\| gradingPending/u);
 });

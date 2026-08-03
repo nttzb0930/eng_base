@@ -100,4 +100,11 @@ export function resolvePartTwoEditorChange(
     metrics,
   };
 }
+
+export function shouldApplyPartTwoGradeResult(
+  submittedResponse: string,
+  currentResponse: string
+): boolean {
+  return submittedResponse === currentResponse;
+}
 import type { ToeicWritingValidationResult } from "@repo/shared";
