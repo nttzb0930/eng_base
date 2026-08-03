@@ -19,6 +19,7 @@
     "db:migrate:reset": "dotenv -e ../../.env -- prisma migrate reset",
     "db:studio": "dotenv -e ../../.env -- prisma studio",
     "db:seed:dev": "dotenv -e ../../.env -- tsx ./scripts/seed-dev.ts",
+    "db:seed:catalog": "dotenv -e ../../.env -- tsx ./scripts/seed-catalog.ts",
     "data:build-vocab": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/catalog/build-vocab-dataset.ts",
     "data:enrich-audio": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/enrich-vocab-audio.ts",
     "data:enrich-examples": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/enrich-vocab-examples.ts",

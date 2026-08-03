@@ -152,6 +152,25 @@ const getDistractors = (
 };
 
 const resetDevData = async () => {
+  // TOEIC Writing submissions use RESTRICT on task deletion, so remove the
+  // dependent records before resetting the shared course catalog.
+  await prisma.toeic_writing_assistance_events.deleteMany();
+  await prisma.toeic_writing_ai_grades.deleteMany();
+  await prisma.toeic_writing_image_contexts.deleteMany();
+  await prisma.toeic_writing_submissions.deleteMany();
+  await prisma.toeic_writing_drafts.deleteMany();
+  await prisma.toeic_writing_tasks.deleteMany();
+  await prisma.toeic_writing_sets.deleteMany();
+  // TOEIC practice records also keep RESTRICT references to TOEIC tests,
+  // which in turn belong to the course catalog being reset below.
+  await prisma.toeic_reading_practice_answers.deleteMany();
+  await prisma.toeic_reading_practice_sessions.deleteMany();
+  await prisma.toeic_reading_attempt_answers.deleteMany();
+  await prisma.toeic_reading_attempts.deleteMany();
+  await prisma.toeic_reading_drafts.deleteMany();
+  await prisma.toeic_listening_attempt_answers.deleteMany();
+  await prisma.toeic_listening_attempts.deleteMany();
+  await prisma.toeic_listening_drafts.deleteMany();
   await prisma.challenge_progress.deleteMany();
   await prisma.user_progress.deleteMany();
   await prisma.user_saved_words.deleteMany();
