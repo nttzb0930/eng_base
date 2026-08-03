@@ -5,6 +5,7 @@ import {
   ArrowRight,
   BookOpen,
   Clock3,
+  FilePenLine,
   Headphones,
   RotateCcw,
 } from "lucide-react";
@@ -17,21 +18,30 @@ import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrows
 import { ToeicOverviewSkeleton } from "@/app/features/toeic-reading/components/ToeicOverviewSkeleton";
 import { useToeicListeningOverview } from "@/app/features/toeic-listening/hooks/use-toeic-listening";
 import { useToeicReadingOverview } from "@/app/features/toeic-reading/hooks/use-toeic-reading";
+import { useToeicWritingOverview } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
 
 export function ToeicOverviewView() {
   const t = useTranslations("toeicReading");
+  const writingT = useTranslations("toeicWriting");
   const locale = useLocale();
   const overviewQuery = useToeicReadingOverview();
   const listeningQuery = useToeicListeningOverview();
+  const writingQuery = useToeicWritingOverview();
 
-  if (overviewQuery.isLoading || listeningQuery.isLoading)
+  if (
+    overviewQuery.isLoading ||
+    listeningQuery.isLoading ||
+    writingQuery.isLoading
+  )
     return <ToeicOverviewSkeleton />;
 
   if (
     overviewQuery.isError ||
     !overviewQuery.data ||
     listeningQuery.isError ||
-    !listeningQuery.data
+    !listeningQuery.data ||
+    writingQuery.isError ||
+    !writingQuery.data
   ) {
     return (
       <FeedWrapper>
@@ -46,6 +56,7 @@ export function ToeicOverviewView() {
               void Promise.all([
                 overviewQuery.refetch(),
                 listeningQuery.refetch(),
+                writingQuery.refetch(),
               ]);
             }}
             className="mt-5 gap-2"
@@ -60,6 +71,7 @@ export function ToeicOverviewView() {
 
   const overview = overviewQuery.data;
   const listening = listeningQuery.data;
+  const writing = writingQuery.data;
   return (
     <FeedWrapper>
       <ToeicBrowseContainer>
@@ -82,7 +94,7 @@ export function ToeicOverviewView() {
 
         <section
           aria-label={t("overview.skills")}
-          className="mt-8 grid items-stretch gap-5 lg:grid-cols-2"
+          className="mt-8 grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3"
         >
           <article className="bg-card flex min-h-[21rem] flex-col rounded-2xl border-2 border-emerald-500/70 p-6 shadow-sm">
             <div className="flex items-start justify-between gap-4">
@@ -180,6 +192,56 @@ export function ToeicOverviewView() {
             ) : (
               <p className="text-muted-foreground mt-auto text-sm font-medium">
                 {t("overview.noContent")}
+              </p>
+            )}
+          </article>
+
+          <article className="bg-card flex min-h-[21rem] flex-col rounded-2xl border-2 border-emerald-500/70 p-6 shadow-sm">
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                <FilePenLine className="h-6 w-6" aria-hidden="true" />
+              </div>
+              <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                {writing.publishedTaskCount > 0
+                  ? t("overview.available")
+                  : t("overview.unavailable")}
+              </span>
+            </div>
+            <h2 className="mt-5 text-2xl font-semibold">
+              {writingT("overview.writing")}
+            </h2>
+            <p className="text-muted-foreground mt-2 text-sm leading-6">
+              {writingT("overview.description")}
+            </p>
+            <dl className="mt-6 grid grid-cols-2 gap-3">
+              <div className="bg-muted/60 rounded-xl p-4">
+                <dt className="text-muted-foreground text-xs">
+                  {writingT("overview.tasks")}
+                </dt>
+                <dd className="mt-1 text-2xl font-semibold">
+                  {writing.publishedTaskCount}
+                </dd>
+              </div>
+              <div className="bg-muted/60 rounded-xl p-4">
+                <dt className="text-muted-foreground text-xs">
+                  {writingT("overview.submitted")}
+                </dt>
+                <dd className="mt-1 text-2xl font-semibold">
+                  {writing.submittedTaskCount}
+                </dd>
+              </div>
+            </dl>
+            {writing.publishedTaskCount > 0 ? (
+              <Link
+                href="/learn/cert/toeic/writing"
+                className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 active:translate-y-px"
+              >
+                {writingT("overview.openWriting")}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            ) : (
+              <p className="text-muted-foreground mt-auto text-sm font-medium">
+                {writingT("overview.noContent")}
               </p>
             )}
           </article>

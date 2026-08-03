@@ -1070,6 +1070,47 @@
       "vocabulary": "Vocabulary to learn"
     }
   },
+  "toeicWriting": {
+    "overview": {
+      "writing": "Writing",
+      "description": "Practice picture-based sentences and email responses for TOEIC Writing.",
+      "tasks": "Published tasks",
+      "submitted": "Submitted",
+      "openWriting": "Open Writing",
+      "noContent": "Writing tasks will appear after they are published."
+    },
+    "catalog": {
+      "back": "Back to TOEIC",
+      "eyebrow": "TOEIC Writing",
+      "title": "Practice TOEIC Writing",
+      "description": "Choose Part 1 or Part 2, save your work, and compare it with reference responses after submitting.",
+      "partLabel": "Writing part",
+      "part1": "Part 1: Write a sentence",
+      "part2": "Part 2: Respond to an email",
+      "part1Description": "Write one sentence about a picture using the required words.",
+      "part2Description": "Write an email response that covers every requirement.",
+      "published": "Published tasks",
+      "submitted": "Submitted",
+      "available": "Available tasks",
+      "emptyTitle": "No Writing tasks yet",
+      "emptyDescription": "Published TOEIC Writing tasks will appear here.",
+      "errorTitle": "TOEIC Writing could not be loaded",
+      "errorDescription": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "card": {
+      "taskNumber": "Task {number}",
+      "submitted": "Submitted",
+      "draft": "Draft saved",
+      "notStarted": "Not started",
+      "start": "Start writing",
+      "continue": "Continue writing",
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium"
+      }
+    }
+  },
   "toeicReading": {
     "part": "Part {part}",
     "error": {

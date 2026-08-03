@@ -1070,6 +1070,47 @@
       "vocabulary": "Từ vựng nên học"
     }
   },
+  "toeicWriting": {
+    "overview": {
+      "writing": "Viết",
+      "description": "Luyện viết câu theo tranh và phản hồi email trong bài thi TOEIC Writing.",
+      "tasks": "Bài đã xuất bản",
+      "submitted": "Đã nộp",
+      "openWriting": "Mở phần Viết",
+      "noContent": "Bài luyện viết sẽ hiển thị sau khi được xuất bản."
+    },
+    "catalog": {
+      "back": "Quay lại TOEIC",
+      "eyebrow": "TOEIC Writing",
+      "title": "Luyện viết TOEIC",
+      "description": "Chọn Part 1 hoặc Part 2, lưu bài đang viết và đối chiếu với bài tham khảo sau khi nộp.",
+      "partLabel": "Phần thi viết",
+      "part1": "Part 1: Viết một câu",
+      "part2": "Part 2: Phản hồi email",
+      "part1Description": "Viết một câu mô tả tranh bằng các từ bắt buộc.",
+      "part2Description": "Viết email phản hồi đầy đủ các yêu cầu được đưa ra.",
+      "published": "Bài đã xuất bản",
+      "submitted": "Đã nộp",
+      "available": "Bài có thể luyện",
+      "emptyTitle": "Chưa có bài luyện viết",
+      "emptyDescription": "Các bài TOEIC Writing đã xuất bản sẽ hiển thị tại đây.",
+      "errorTitle": "Không thể tải TOEIC Writing",
+      "errorDescription": "Hãy kiểm tra kết nối và thử lại.",
+      "retry": "Thử lại"
+    },
+    "card": {
+      "taskNumber": "Bài {number}",
+      "submitted": "Đã nộp",
+      "draft": "Đã lưu nháp",
+      "notStarted": "Chưa làm",
+      "start": "Bắt đầu viết",
+      "continue": "Tiếp tục viết",
+      "difficulty": {
+        "easy": "Dễ",
+        "medium": "Trung bình"
+      }
+    }
+  },
   "toeicReading": {
     "part": "Part {part}",
     "error": {
