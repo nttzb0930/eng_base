@@ -254,8 +254,17 @@ renders only the typed grade contract returned by API. Quota, score, checks,
 correction, alternative sentence, and owned history are backend projections;
 Web does not call Gemini, inspect answer keys, or reconstruct usage locally.
 Viewing the reference sample is recorded as assistance and remains separate
-from provider grading. Part 2 keeps the existing draft/submission behavior
-until its own coaching contract is implemented.
+from provider grading.
+
+Part 2 uses a responsive prompt-and-editor workspace. The prompt always shows
+English first and Vietnamese second regardless of interface locale. The editor
+autosaves incomplete work, becomes submission-ready from 50 through 300 words,
+and rejects changes beyond 300 words or 2,200 characters without discarding the
+last accepted snapshot. Outline, vocabulary, sample, and community panels load
+only when opened and own their loading, failure, and empty states. Restoring a
+community response requires confirmation when the editor already contains text.
+On smaller viewports the two-column workspace stacks while the shared session
+footer remains available for primary navigation.
 
 ## Browser data flow
 

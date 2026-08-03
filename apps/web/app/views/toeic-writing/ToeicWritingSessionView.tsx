@@ -31,6 +31,7 @@ import { ToeicWritingSessionSkeleton } from "@/app/features/toeic-writing/compon
 import { ToeicWritingGradeHistoryPanel } from "@/app/features/toeic-writing/components/ToeicWritingGradeHistoryPanel";
 import { ToeicWritingPartOneGradePanel } from "@/app/features/toeic-writing/components/ToeicWritingPartOneGradePanel";
 import { ToeicWritingPartOneValidationAlert } from "@/app/features/toeic-writing/components/ToeicWritingPartOneValidationAlert";
+import { ToeicWritingPartTwoWorkspace } from "@/app/features/toeic-writing/components/ToeicWritingPartTwoWorkspace";
 import {
   useDeleteToeicWritingDraft,
   useGradeToeicWritingPartOne,
@@ -42,6 +43,7 @@ import {
   useToeicWritingTask,
 } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
 import { validatePartOneEditorResponse } from "@/app/features/toeic-writing/toeic-writing-part-one-grading";
+import { getPartTwoEditorMetrics } from "@/app/features/toeic-writing/toeic-writing-coaching-state";
 import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
 import { createToeicWritingAutosaveScheduler } from "@/app/features/toeic-writing/toeic-writing-autosave-scheduler";
 import {
@@ -274,7 +276,17 @@ function ToeicWritingWorkspace({
 
   const maxLength = TOEIC_WRITING_RESPONSE_LIMITS[task.part];
   const responseLength = getToeicWritingResponseLength(state.responseText);
-  const canSubmit = responseLength > 0 && responseLength <= maxLength;
+  const partTwoMetrics = getPartTwoEditorMetrics(state.responseText);
+  const canSubmit =
+    task.part === 1
+      ? responseLength > 0 && responseLength <= maxLength
+      : partTwoMetrics.ready;
+  const editResponse = (value: string) => {
+    submissionKeyRef.current = null;
+    setGrade(null);
+    setValidationIssues([]);
+    dispatch({ type: "edit", value });
+  };
 
   return (
     <main className="min-h-dvh bg-slate-50/70 pb-20 dark:bg-slate-950/30">
@@ -300,52 +312,54 @@ function ToeicWritingWorkspace({
       </header>
 
       <div className="mx-auto w-full max-w-[1200px] px-4 py-6 sm:px-6">
-        <div className="grid items-start gap-5 lg:grid-cols-2">
-          <ToeicWritingPromptPane task={task} />
-          <div className="min-w-0">
-            {task.part === 1 && quota.data ? (
-              <div className="mb-3 flex justify-end">
-                <Badge variant="outline">
-                  {gradeT("quota", {
-                    remaining: quota.data.remaining,
-                    limit: quota.data.dailyLimit,
-                  })}
-                </Badge>
-              </div>
-            ) : null}
-            <ToeicWritingEditorPane
-              responseText={state.responseText}
-              maxLength={maxLength}
-              saveStatus={state.saveStatus}
-              disabled={busy}
-              onChange={(value) => {
-                submissionKeyRef.current = null;
-                setGrade(null);
-                setValidationIssues([]);
-                dispatch({ type: "edit", value });
-              }}
-              onRetry={() => void saveNow()}
-              onViewSample={
-                task.part === 1 ? () => void viewSample() : undefined
-              }
-            />
-            {task.part === 1 ? (
-              <>
-                <ToeicWritingPartOneValidationAlert issues={validationIssues} />
-                {grade ? (
-                  <ToeicWritingPartOneGradePanel
-                    grade={grade}
-                    onRewrite={() => {
-                      setGrade(null);
-                      submissionKeyRef.current = null;
-                    }}
-                  />
-                ) : null}
-                <ToeicWritingGradeHistoryPanel taskId={task.id} />
-              </>
-            ) : null}
+        {task.part === 2 ? (
+          <ToeicWritingPartTwoWorkspace
+            task={task}
+            responseText={state.responseText}
+            saveStatus={state.saveStatus}
+            disabled={busy}
+            onResponseChange={editResponse}
+            onRetrySave={() => void saveNow()}
+          />
+        ) : (
+          <div className="grid items-start gap-5 lg:grid-cols-2">
+            <ToeicWritingPromptPane task={task} />
+            <div className="min-w-0">
+              {task.part === 1 && quota.data ? (
+                <div className="mb-3 flex justify-end">
+                  <Badge variant="outline">
+                    {gradeT("quota", {
+                      remaining: quota.data.remaining,
+                      limit: quota.data.dailyLimit,
+                    })}
+                  </Badge>
+                </div>
+              ) : null}
+              <ToeicWritingEditorPane
+                responseText={state.responseText}
+                maxLength={maxLength}
+                saveStatus={state.saveStatus}
+                disabled={busy}
+                onChange={editResponse}
+                onRetry={() => void saveNow()}
+                onViewSample={
+                  task.part === 1 ? () => void viewSample() : undefined
+                }
+              />
+              <ToeicWritingPartOneValidationAlert issues={validationIssues} />
+              {grade ? (
+                <ToeicWritingPartOneGradePanel
+                  grade={grade}
+                  onRewrite={() => {
+                    setGrade(null);
+                    submissionKeyRef.current = null;
+                  }}
+                />
+              ) : null}
+              <ToeicWritingGradeHistoryPanel taskId={task.id} />
+            </div>
           </div>
-        </div>
+        )}
 
         {submitIsError || gradePartOne.isError ? (
           <Alert className="mt-5 border-rose-200 bg-rose-50/70 dark:border-rose-900 dark:bg-rose-950/40">

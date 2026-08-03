@@ -13,6 +13,8 @@ import { Textarea } from "@/app/components/ui/textarea";
 type ToeicWritingEditorPaneProps = {
   responseText: string;
   maxLength: number;
+  wordRange?: { min: number; max: number };
+  limitReached?: boolean;
   saveStatus: ToeicWritingSaveStatus;
   disabled?: boolean;
   onChange(value: string): void;
@@ -23,6 +25,8 @@ type ToeicWritingEditorPaneProps = {
 export function ToeicWritingEditorPane({
   responseText,
   maxLength,
+  wordRange,
+  limitReached,
   saveStatus,
   disabled,
   onChange,
@@ -62,7 +66,15 @@ export function ToeicWritingEditorPane({
       />
 
       <div className="text-muted-foreground mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
-        <span>{t("wordCount", { count: wordCount })}</span>
+        <span>
+          {wordRange
+            ? t("wordRange", {
+                count: wordCount,
+                min: wordRange.min,
+                max: wordRange.max,
+              })
+            : t("wordCount", { count: wordCount })}
+        </span>
         <span>
           {t("characterCount", {
             count: characterCount,
@@ -70,6 +82,15 @@ export function ToeicWritingEditorPane({
           })}
         </span>
       </div>
+
+      {limitReached ? (
+        <p
+          className="mt-2 text-sm font-medium text-amber-700 dark:text-amber-300"
+          role="alert"
+        >
+          {t("limitReached")}
+        </p>
+      ) : null}
 
       {onViewSample ? (
         <Button

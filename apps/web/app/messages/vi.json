@@ -1131,7 +1131,9 @@
       "editorDescription": "Bản nháp được lưu an toàn theo tài khoản trong khi bạn viết.",
       "placeholder": "Nhập bài viết của bạn tại đây...",
       "wordCount": "{count} từ",
+      "wordRange": "{count}/{max} từ. Cần ít nhất {min} từ",
       "characterCount": "{count}/{max} ký tự",
+      "limitReached": "Bài viết không được vượt quá 300 từ hoặc 2.200 ký tự.",
       "saveStatus": {
         "IDLE": "Chưa lưu",
         "SAVING": "Đang lưu...",
@@ -1150,6 +1152,36 @@
       "loadErrorDescription": "Bài có thể chưa sẵn sàng hoặc đường dẫn không đúng với Part của bài.",
       "viewSample": "Xem câu trả lời mẫu",
       "retry": "Thử lại"
+    },
+    "partTwoCoaching": {
+      "panelLabel": "Hỗ trợ viết bài",
+      "panel": {
+        "OUTLINE": "Dàn ý",
+        "VOCABULARY": "Từ vựng",
+        "SAMPLE": "Bài mẫu",
+        "COMMUNITY": "Cộng đồng"
+      },
+      "variantLabel": "Chọn cách triển khai",
+      "variant": "Bài {number}",
+      "section": {
+        "OPENING": "Mở bài",
+        "BODY": "Nội dung",
+        "ENDING": "Kết bài"
+      },
+      "empty": "Bài này chưa có nội dung hỗ trợ được biên soạn.",
+      "showVietnamese": "Hiện tiếng Việt",
+      "hideVietnamese": "Ẩn tiếng Việt",
+      "communityEmpty": "Chưa có người học nào chia sẻ bài viết cho bài này.",
+      "restore": "Dùng bài viết này",
+      "restoring": "Đang khôi phục...",
+      "loadMore": "Xem thêm",
+      "loadingMore": "Đang tải...",
+      "loadError": "Không thể tải nội dung hỗ trợ này.",
+      "retry": "Thử lại",
+      "confirmRestoreTitle": "Thay thế bản nháp hiện tại?",
+      "confirmRestoreDescription": "Nội dung hiện tại sẽ được thay bằng bài viết cộng đồng đã chọn. Bạn vẫn có thể chỉnh sửa sau khi khôi phục.",
+      "cancel": "Giữ bản nháp",
+      "confirmRestore": "Thay bản nháp"
     },
     "partOneGrading": {
       "grade": "Chấm bằng AI",

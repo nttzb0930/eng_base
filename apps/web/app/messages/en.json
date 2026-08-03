@@ -1131,7 +1131,9 @@
       "editorDescription": "Your draft is saved securely to your account while you write.",
       "placeholder": "Write your response here...",
       "wordCount": "{count, plural, =1 {# word} other {# words}}",
+      "wordRange": "{count}/{max} words. At least {min} words required",
       "characterCount": "{count}/{max} characters",
+      "limitReached": "The response cannot exceed 300 words or 2,200 characters.",
       "saveStatus": {
         "IDLE": "Not saved yet",
         "SAVING": "Saving...",
@@ -1150,6 +1152,36 @@
       "loadErrorDescription": "The task may be unavailable or the route may not match its Part.",
       "viewSample": "View sample response",
       "retry": "Try again"
+    },
+    "partTwoCoaching": {
+      "panelLabel": "Writing support",
+      "panel": {
+        "OUTLINE": "Outline",
+        "VOCABULARY": "Vocabulary",
+        "SAMPLE": "Sample",
+        "COMMUNITY": "Community"
+      },
+      "variantLabel": "Choose an approach",
+      "variant": "Approach {number}",
+      "section": {
+        "OPENING": "Opening",
+        "BODY": "Body",
+        "ENDING": "Ending"
+      },
+      "empty": "No authored support is available for this task yet.",
+      "showVietnamese": "Show Vietnamese",
+      "hideVietnamese": "Hide Vietnamese",
+      "communityEmpty": "No learner has shared a response for this task yet.",
+      "restore": "Use this response",
+      "restoring": "Restoring...",
+      "loadMore": "Load more",
+      "loadingMore": "Loading...",
+      "loadError": "This support panel could not be loaded.",
+      "retry": "Try again",
+      "confirmRestoreTitle": "Replace your current draft?",
+      "confirmRestoreDescription": "Your current text will be replaced by the selected community response. You can edit it after restoring.",
+      "cancel": "Keep my draft",
+      "confirmRestore": "Replace draft"
     },
     "partOneGrading": {
       "grade": "Grade with AI",

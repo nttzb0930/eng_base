@@ -134,6 +134,15 @@ assistance events are recorded independently. HTTP delivery has separate
 per-user and per-IP limits; provider keys, response text, picture context, and
 raw provider output are excluded from observability events.
 
+Part 2 authored coaching is exposed through authenticated, lazy endpoints for
+outline, vocabulary, and sample content. Opening one of these panels records an
+assistance event on the server; the client does not infer or persist assistance
+usage. Community responses are private by default and become visible only after
+their owner explicitly shares a completed Part 2 submission. Share and unshare
+enforce ownership, community projections mask learner identity and exclude
+grades and private drafts, and restoring a shared response records assistance
+before returning text to the learner's editor.
+
 TOEIC Listening acquisition is a separate, local-first pipeline linked to the
 exact approved Reading inventory SHA. Inventory and download do not require a
 database; media is resumable and remains under ignored licensed-content
