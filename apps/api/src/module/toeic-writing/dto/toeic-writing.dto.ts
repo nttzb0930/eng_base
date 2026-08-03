@@ -1,6 +1,18 @@
 import { Type } from "class-transformer";
-import { IsIn, IsInt, IsString, Length, Matches, MaxLength } from "class-validator";
-import type { ToeicWritingDraftPayload, ToeicWritingPart } from "@repo/shared";
+import {
+  IsIn,
+  IsInt,
+  IsString,
+  IsUUID,
+  Length,
+  Matches,
+  MaxLength,
+} from "class-validator";
+import type {
+  ToeicWritingDraftPayload,
+  ToeicWritingPart,
+  ToeicWritingSubmissionPayload,
+} from "@repo/shared";
 
 export class ToeicWritingPartQueryDto {
   @Type(() => Number)
@@ -18,4 +30,12 @@ export class ToeicWritingDraftDto implements ToeicWritingDraftPayload {
   @IsString()
   @MaxLength(10_000)
   responseText!: string;
+}
+
+export class ToeicWritingSubmissionDto
+  extends ToeicWritingDraftDto
+  implements ToeicWritingSubmissionPayload
+{
+  @IsUUID()
+  submissionKey!: string;
 }

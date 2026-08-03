@@ -46,9 +46,11 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
   assert.deepEqual(routes, [
     "DELETE tasks/:taskId/draft",
     "GET overview",
+    "GET submissions/:submissionId",
     "GET tasks",
     "GET tasks/:taskId",
     "GET tasks/:taskId/draft",
+    "POST tasks/:taskId/submissions",
     "PUT tasks/:taskId/draft",
   ]);
 });
@@ -56,6 +58,8 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
 test("controller forwards current learner, selected part, and task id", async () => {
   const calls: unknown[][] = [];
   const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
@@ -73,6 +77,12 @@ test("controller forwards current learner, selected part, and task id", async ()
     responseText: "answer",
   });
   await controller.deleteDraft("learner-1", 21);
+  await controller.submit("learner-1", 21, {
+    submissionKey: "00000000-0000-4000-8000-000000000001",
+    contentVersion: version,
+    responseText: "answer",
+  });
+  await controller.submission("learner-1", 31);
 
   assert.deepEqual(calls, [
     ["learner-1"],
@@ -85,5 +95,15 @@ test("controller forwards current learner, selected part, and task id", async ()
       { contentVersion: version, responseText: "answer" },
     ],
     ["learner-1", 21],
+    [
+      "learner-1",
+      21,
+      {
+        submissionKey: "00000000-0000-4000-8000-000000000001",
+        contentVersion: version,
+        responseText: "answer",
+      },
+    ],
+    ["learner-1", 31],
   ]);
 });

@@ -1,6 +1,7 @@
 import type {
   ToeicWritingPartOneReference,
   ToeicWritingPartTwoReference,
+  ToeicWritingSubmissionResult,
   ToeicWritingTaskDetail,
   ToeicWritingTaskSummary,
 } from "@repo/shared";
@@ -25,6 +26,19 @@ export type ToeicWritingDetailRecord = ToeicWritingSummaryRecord & {
   instructions_en: string;
   instructions_vi: string | null;
   payload: unknown;
+};
+
+export type ToeicWritingSubmissionRecord = {
+  id: number;
+  task_id: number;
+  content_version: string;
+  response_text: string;
+  submitted_at: Date;
+  task: {
+    part: number;
+    title: string;
+    payload: unknown;
+  };
 };
 
 type PartOnePayload = {
@@ -190,5 +204,37 @@ export function mapToeicWritingReference(
     outlineLevel2: payload.outlineLevel2,
     chunksLevel1: payload.chunksLevel1,
     chunksLevel2: payload.chunksLevel2,
+  };
+}
+
+export function mapToeicWritingSubmissionResult(
+  submission: ToeicWritingSubmissionRecord
+): ToeicWritingSubmissionResult {
+  const base = {
+    id: submission.id,
+    taskId: submission.task_id,
+    taskTitle: submission.task.title,
+    contentVersion: submission.content_version,
+    responseText: submission.response_text,
+    submittedAt: submission.submitted_at.toISOString(),
+  };
+  if (submission.task.part === 1) {
+    return {
+      ...base,
+      part: 1,
+      reference: mapToeicWritingReference({
+        part: 1,
+        payload: submission.task.payload,
+      }) as ToeicWritingPartOneReference,
+    };
+  }
+  if (submission.task.part !== 2) return writingTaskNotFound();
+  return {
+    ...base,
+    part: 2,
+    reference: mapToeicWritingReference({
+      part: 2,
+      payload: submission.task.payload,
+    }) as ToeicWritingPartTwoReference,
   };
 }

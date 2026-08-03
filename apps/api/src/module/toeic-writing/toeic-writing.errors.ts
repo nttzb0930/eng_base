@@ -35,3 +35,19 @@ export function writingContentVersionConflict(): never {
     message: "TOEIC Writing content version has changed",
   });
 }
+
+export function writingSubmissionKeyConflict(): never {
+  throw new ConflictException({
+    statusCode: 409,
+    code: "WRITING_SUBMISSION_KEY_CONFLICT",
+    message: "TOEIC Writing submission key was already used",
+  });
+}
+
+export function writingSubmissionNotFound(): never {
+  throw new NotFoundException({
+    statusCode: 404,
+    code: "WRITING_SUBMISSION_NOT_FOUND",
+    message: "TOEIC Writing submission not found",
+  });
+}
