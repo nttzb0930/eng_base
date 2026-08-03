@@ -12,7 +12,7 @@ import type {
 import { webHttpClient } from "@/app/features/auth/api/web-http-client";
 
 export type ToeicWritingHttp = {
-  get<T>(path: string): Promise<{ data: T }>;
+  get<T>(path: string, config?: { responseType: "blob" }): Promise<{ data: T }>;
   post<T>(path: string, body?: unknown): Promise<{ data: T }>;
   put<T>(path: string, body?: unknown): Promise<{ data: T }>;
   delete<T>(path: string): Promise<{ data: T }>;
@@ -48,6 +48,13 @@ export function createToeicWritingApi(http: ToeicWritingHttp) {
     async task(taskId: number) {
       return (
         await http.get<ToeicWritingTaskDetail>(`/toeic/writing/tasks/${taskId}`)
+      ).data;
+    },
+    async image(taskId: number) {
+      return (
+        await http.get<Blob>(`/toeic/writing/tasks/${taskId}/image`, {
+          responseType: "blob",
+        })
       ).data;
     },
     async draft(taskId: number) {

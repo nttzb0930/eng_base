@@ -17,6 +17,22 @@ test("Writing catalog route is thin and has a layout-matching skeleton", () => {
   assert.match(loading, /ToeicWritingCatalogSkeleton/);
 });
 
+test("Writing Part routes are thin and share the focused session workspace", () => {
+  for (const part of [1, 2]) {
+    const page = read(
+      `app/[locale]/(session)/toeic/writing/part-${part}/[taskId]/page.tsx`
+    );
+    const loading = read(
+      `app/[locale]/(session)/toeic/writing/part-${part}/[taskId]/loading.tsx`
+    );
+
+    assert.match(page, /ToeicWritingSessionView/);
+    assert.match(page, new RegExp(`expectedPart=\\{${part}\\}`));
+    assert.doesNotMatch(page, /use client|webHttpClient|useQuery/u);
+    assert.match(loading, /ToeicWritingSessionSkeleton/);
+  }
+});
+
 test("Writing is discoverable from the TOEIC overview", () => {
   const overview = read("app/views/toeic-reading/ToeicOverviewView.tsx");
   const skeleton = read(

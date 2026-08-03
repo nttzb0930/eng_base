@@ -38,6 +38,7 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
   await api.overview();
   await api.tasks(1);
   await api.task(11);
+  await api.image(11);
   await api.draft(11);
   await api.saveDraft(11, draft);
   await api.deleteDraft(11);
@@ -48,6 +49,7 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
     { method: "GET", path: "/toeic/writing/overview" },
     { method: "GET", path: "/toeic/writing/tasks?part=1" },
     { method: "GET", path: "/toeic/writing/tasks/11" },
+    { method: "GET", path: "/toeic/writing/tasks/11/image" },
     { method: "GET", path: "/toeic/writing/tasks/11/draft" },
     {
       method: "PUT",

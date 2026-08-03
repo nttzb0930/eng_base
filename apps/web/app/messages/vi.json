@@ -1109,6 +1109,39 @@
         "easy": "Dễ",
         "medium": "Trung bình"
       }
+    },
+    "session": {
+      "part": "Part {part}",
+      "taskNumber": "Bài {number}",
+      "backToTasks": "Quay lại danh sách bài viết",
+      "prompt": "Hình ảnh và yêu cầu",
+      "emailPrompt": "Nội dung email",
+      "requiredWords": "Từ bắt buộc",
+      "requirements": "Yêu cầu cần trả lời",
+      "imageLoading": "Đang tải hình ảnh",
+      "imageError": "Không thể tải hình ảnh của bài này.",
+      "yourResponse": "Bài viết của bạn",
+      "editorDescription": "Bản nháp được lưu an toàn theo tài khoản trong khi bạn viết.",
+      "placeholder": "Nhập bài viết của bạn tại đây...",
+      "wordCount": "{count} từ",
+      "characterCount": "{count}/{max} ký tự",
+      "saveStatus": {
+        "IDLE": "Chưa lưu",
+        "SAVING": "Đang lưu...",
+        "SAVED": "Đã lưu",
+        "ERROR": "Chưa lưu được"
+      },
+      "saveNow": "Lưu ngay",
+      "saveErrorTitle": "Thay đổi mới nhất chưa được lưu",
+      "saveErrorDescription": "Bài viết vẫn còn trong trình soạn thảo. Hãy kiểm tra kết nối và thử lại.",
+      "retrySave": "Thử lưu lại",
+      "submit": "Nộp bài",
+      "submitting": "Đang nộp...",
+      "submitErrorTitle": "Không thể nộp bài",
+      "submitErrorDescription": "Bài viết chưa bị xóa. Hãy kiểm tra trạng thái bản nháp và thử lại.",
+      "loadErrorTitle": "Không thể tải bài luyện viết này",
+      "loadErrorDescription": "Bài có thể chưa sẵn sàng hoặc đường dẫn không đúng với Part của bài.",
+      "retry": "Thử lại"
     }
   },
   "toeicReading": {

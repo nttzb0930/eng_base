@@ -1,0 +1,255 @@
+"use client";
+
+import type {
+  ToeicWritingDraftPayload,
+  ToeicWritingPart,
+  ToeicWritingTaskDetail,
+} from "@repo/shared";
+import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useCallback, useEffect, useMemo, useReducer, useRef } from "react";
+
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
+import { Alert, AlertDescription, AlertTitle } from "@/app/components/ui/alert";
+import { Badge } from "@/app/components/ui/badge";
+import { Button } from "@/app/components/ui/button";
+import { ToeicWritingEditorPane } from "@/app/features/toeic-writing/components/ToeicWritingEditorPane";
+import { ToeicWritingPromptPane } from "@/app/features/toeic-writing/components/ToeicWritingPromptPane";
+import { ToeicWritingSessionFooter } from "@/app/features/toeic-writing/components/ToeicWritingSessionFooter";
+import { ToeicWritingSessionSkeleton } from "@/app/features/toeic-writing/components/ToeicWritingSessionSkeleton";
+import {
+  useDeleteToeicWritingDraft,
+  useSaveToeicWritingDraft,
+  useSubmitToeicWriting,
+  useToeicWritingDraft,
+  useToeicWritingTask,
+} from "@/app/features/toeic-writing/hooks/use-toeic-writing";
+import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
+import {
+  initialToeicWritingSessionState,
+  reduceWritingSession,
+} from "@/app/features/toeic-writing/toeic-writing-session-state";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
+
+type ToeicWritingSessionViewProps = {
+  taskId: number;
+  expectedPart: ToeicWritingPart;
+};
+
+export function ToeicWritingSessionView({
+  taskId,
+  expectedPart,
+}: ToeicWritingSessionViewProps) {
+  const t = useTranslations("toeicWriting.session");
+  const taskQuery = useToeicWritingTask(taskId);
+  const draftQuery = useToeicWritingDraft(taskId);
+
+  if (taskQuery.isLoading || draftQuery.isLoading) {
+    return <ToeicWritingSessionSkeleton />;
+  }
+
+  if (
+    taskQuery.isError ||
+    !taskQuery.data ||
+    draftQuery.isError ||
+    taskQuery.data.part !== expectedPart
+  ) {
+    return (
+      <main className="mx-auto w-full max-w-lg px-4 py-16 sm:px-6">
+        <section className="bg-card rounded-md border border-rose-200 p-7 text-center dark:border-rose-900">
+          <h1 className="text-lg font-semibold">{t("loadErrorTitle")}</h1>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {t("loadErrorDescription")}
+          </p>
+          <Button
+            type="button"
+            onClick={() => {
+              void Promise.all([taskQuery.refetch(), draftQuery.refetch()]);
+            }}
+            className="mt-5 gap-2 rounded-md"
+          >
+            <RotateCcw className="h-4 w-4" aria-hidden="true" />
+            {t("retry")}
+          </Button>
+        </section>
+      </main>
+    );
+  }
+
+  return (
+    <ToeicWritingWorkspace
+      key={taskId}
+      task={taskQuery.data}
+      initialResponse={draftQuery.data?.responseText ?? ""}
+    />
+  );
+}
+
+type ToeicWritingWorkspaceProps = {
+  task: ToeicWritingTaskDetail;
+  initialResponse: string;
+};
+
+function ToeicWritingWorkspace({
+  task,
+  initialResponse,
+}: ToeicWritingWorkspaceProps) {
+  const t = useTranslations("toeicWriting.session");
+  const currentLocale = useLocale();
+  const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
+  const router = useRouter();
+  const { mutateAsync: saveDraft } = useSaveToeicWritingDraft();
+  const { mutateAsync: deleteDraft } = useDeleteToeicWritingDraft();
+  const { mutateAsync: submitResponse, isError: submitIsError } =
+    useSubmitToeicWriting();
+  const submissionKeyRef = useRef<string | null>(null);
+  const [state, dispatch] = useReducer(reduceWritingSession, {
+    ...initialToeicWritingSessionState,
+    responseText: initialResponse,
+    hydrated: true,
+    saveStatus: initialResponse ? "SAVED" : "IDLE",
+  });
+
+  const persistSnapshot = useCallback(
+    async (snapshot: ToeicWritingDraftPayload) => {
+      dispatch({ type: "saving" });
+      try {
+        if (snapshot.responseText.trim()) {
+          await saveDraft({ taskId: task.id, payload: snapshot });
+        } else {
+          await deleteDraft(task.id);
+        }
+        dispatch({ type: "saved" });
+      } catch (error) {
+        dispatch({ type: "save-failed" });
+        throw error;
+      }
+    },
+    [deleteDraft, saveDraft, task.id]
+  );
+  const draftQueue = useMemo(
+    () => createToeicWritingDraftQueue(persistSnapshot),
+    [persistSnapshot]
+  );
+  const snapshot = useCallback(
+    (): ToeicWritingDraftPayload => ({
+      contentVersion: task.contentVersion,
+      responseText: state.responseText,
+    }),
+    [state.responseText, task.contentVersion]
+  );
+
+  useEffect(() => {
+    if (!state.dirty) return;
+    const timeout = window.setTimeout(() => {
+      draftQueue.push(snapshot());
+    }, 600);
+    return () => window.clearTimeout(timeout);
+  }, [draftQueue, snapshot, state.dirty]);
+
+  const saveNow = useCallback(async () => {
+    draftQueue.push(snapshot());
+    try {
+      await draftQueue.flush();
+    } catch {
+      // The queue dispatches the visible save error without clearing editor text.
+    }
+  }, [draftQueue, snapshot]);
+
+  const submit = useCallback(async () => {
+    if (!state.responseText.trim()) return;
+    dispatch({ type: "submitting" });
+    draftQueue.push(snapshot());
+    try {
+      await draftQueue.flush();
+      submissionKeyRef.current ??= globalThis.crypto.randomUUID();
+      const result = await submitResponse({
+        taskId: task.id,
+        payload: {
+          ...snapshot(),
+          submissionKey: submissionKeyRef.current,
+        },
+      });
+      router.push(
+        withLocale(`/toeic/writing/submissions/${result.id}`, locale)
+      );
+    } catch {
+      dispatch({ type: "submit-failed" });
+    }
+  }, [
+    draftQueue,
+    locale,
+    router,
+    snapshot,
+    state.responseText,
+    submitResponse,
+    task.id,
+  ]);
+
+  const maxLength = task.part === 1 ? 1000 : 10_000;
+  const canSubmit =
+    state.responseText.trim().length > 0 &&
+    state.responseText.length <= maxLength;
+
+  return (
+    <main className="min-h-dvh bg-slate-50/70 pb-20 dark:bg-slate-950/30">
+      <header className="bg-background/95 supports-[backdrop-filter]:bg-background/85 sticky top-0 z-20 border-b backdrop-blur">
+        <div className="mx-auto flex min-h-16 w-full max-w-[1200px] items-center justify-between gap-4 px-4 sm:px-6">
+          <Link
+            href="/learn/cert/toeic/writing"
+            className="text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 items-center gap-2 rounded-md px-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          >
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+            <span className="hidden sm:inline">{t("backToTasks")}</span>
+          </Link>
+          <div className="min-w-0 text-center">
+            <p className="truncate text-sm font-semibold">{task.title}</p>
+            <p className="text-muted-foreground text-xs">
+              {t("taskNumber", { number: task.order })}
+            </p>
+          </div>
+          <Badge variant="outline">{t("part", { part: task.part })}</Badge>
+        </div>
+      </header>
+
+      <div className="mx-auto w-full max-w-[1200px] px-4 py-6 sm:px-6">
+        <div className="grid items-start gap-5 lg:grid-cols-2">
+          <ToeicWritingPromptPane task={task} />
+          <ToeicWritingEditorPane
+            responseText={state.responseText}
+            maxLength={maxLength}
+            saveStatus={state.saveStatus}
+            disabled={state.submitting}
+            onChange={(value) => dispatch({ type: "edit", value })}
+            onRetry={() => void saveNow()}
+          />
+        </div>
+
+        {submitIsError ? (
+          <Alert className="mt-5 border-rose-200 bg-rose-50/70 dark:border-rose-900 dark:bg-rose-950/40">
+            <AlertCircle
+              className="mr-2 inline h-4 w-4 text-rose-600"
+              aria-hidden="true"
+            />
+            <AlertTitle className="inline text-rose-800 dark:text-rose-200">
+              {t("submitErrorTitle")}
+            </AlertTitle>
+            <AlertDescription className="text-rose-700 dark:text-rose-300">
+              {t("submitErrorDescription")}
+            </AlertDescription>
+          </Alert>
+        ) : null}
+      </div>
+
+      <ToeicWritingSessionFooter
+        canSubmit={canSubmit}
+        saving={state.saveStatus === "SAVING"}
+        submitting={state.submitting}
+        onSave={() => void saveNow()}
+        onSubmit={() => void submit()}
+      />
+    </main>
+  );
+}

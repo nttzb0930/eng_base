@@ -42,7 +42,7 @@ export function ToeicWritingTaskCard({ task }: ToeicWritingTaskCardProps) {
       </p>
 
       <Link
-        href={`/toeic/writing/tasks/${task.id}`}
+        href={`/toeic/writing/part-${task.part}/${task.id}`}
         className="mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 active:translate-y-px"
       >
         {task.hasDraft ? t("continue") : t("start")}
