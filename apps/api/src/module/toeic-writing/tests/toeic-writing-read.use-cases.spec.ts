@@ -7,6 +7,7 @@ import { GetToeicWritingTaskUseCase } from "../use-cases/get-toeic-writing-task.
 import { ListToeicWritingTasksUseCase } from "../use-cases/list-toeic-writing-tasks.use-case";
 
 const version = "a".repeat(64);
+const contentChecksum = "c".repeat(64);
 
 function partOneTask(overrides: Record<string, unknown> = {}) {
   return {
@@ -15,7 +16,8 @@ function partOneTask(overrides: Record<string, unknown> = {}) {
     order_index: 1,
     title: "Write a sentence about the picture",
     difficulty: "EASY",
-    content_sha256: version,
+    source_version: version,
+    content_sha256: contentChecksum,
     instructions_en: "Use both required words.",
     instructions_vi: "Sử dụng cả hai từ bắt buộc.",
     payload: {
@@ -130,6 +132,22 @@ test("task list is scoped to one part and maps learner draft/submission state", 
     ).select.drafts.where,
     { user_id: "learner-1" }
   );
+});
+
+test("task detail exposes the source version used by draft conflict checks", async () => {
+  const prisma = {
+    toeic_writing_tasks: {
+      findFirst: () => Promise.resolve(partOneTask()),
+    },
+  } as unknown as PrismaService;
+
+  const result = await new GetToeicWritingTaskUseCase(prisma).execute(
+    "learner-1",
+    11
+  );
+
+  assert.equal(result.contentVersion, version);
+  assert.notEqual(result.contentVersion, contentChecksum);
 });
 
 test("task detail omits Part 1 reference fields before submission", async () => {

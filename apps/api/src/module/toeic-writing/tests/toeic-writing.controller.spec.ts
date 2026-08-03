@@ -12,6 +12,8 @@ import {
 import { UserJwtGuard } from "../../../common/guards/user-jwt.guard";
 import { ToeicWritingController } from "../toeic-writing.controller";
 
+const version = "a".repeat(64);
+
 test("TOEIC Writing controller exposes authenticated read routes", () => {
   assert.equal(
     Reflect.getMetadata(PATH_METADATA, ToeicWritingController),
@@ -41,12 +43,22 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
     })
     .sort();
 
-  assert.deepEqual(routes, ["GET overview", "GET tasks", "GET tasks/:taskId"]);
+  assert.deepEqual(routes, [
+    "DELETE tasks/:taskId/draft",
+    "GET overview",
+    "GET tasks",
+    "GET tasks/:taskId",
+    "GET tasks/:taskId/draft",
+    "PUT tasks/:taskId/draft",
+  ]);
 });
 
 test("controller forwards current learner, selected part, and task id", async () => {
   const calls: unknown[][] = [];
   const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never
@@ -55,10 +67,23 @@ test("controller forwards current learner, selected part, and task id", async ()
   await controller.overview("learner-1");
   await controller.tasks("learner-1", { part: 2 });
   await controller.task("learner-1", 21);
+  await controller.draft("learner-1", 21);
+  await controller.saveDraft("learner-1", 21, {
+    contentVersion: version,
+    responseText: "answer",
+  });
+  await controller.deleteDraft("learner-1", 21);
 
   assert.deepEqual(calls, [
     ["learner-1"],
     ["learner-1", 2],
+    ["learner-1", 21],
+    ["learner-1", 21],
+    [
+      "learner-1",
+      21,
+      { contentVersion: version, responseText: "answer" },
+    ],
     ["learner-1", 21],
   ]);
 });

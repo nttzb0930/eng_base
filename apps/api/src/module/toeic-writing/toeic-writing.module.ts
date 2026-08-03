@@ -7,10 +7,13 @@ import { applicationConfig } from "../../config";
 import { PrismaService } from "../../database/prisma/prisma.service";
 import { ToeicWritingController } from "./toeic-writing.controller";
 import { ToeicWritingMediaController } from "./toeic-writing-media.controller";
+import { DeleteToeicWritingDraftUseCase } from "./use-cases/delete-toeic-writing-draft.use-case";
+import { GetToeicWritingDraftUseCase } from "./use-cases/get-toeic-writing-draft.use-case";
 import { GetToeicWritingImageUseCase } from "./use-cases/get-toeic-writing-image.use-case";
 import { GetToeicWritingOverviewUseCase } from "./use-cases/get-toeic-writing-overview.use-case";
 import { GetToeicWritingTaskUseCase } from "./use-cases/get-toeic-writing-task.use-case";
 import { ListToeicWritingTasksUseCase } from "./use-cases/list-toeic-writing-tasks.use-case";
+import { SaveToeicWritingDraftUseCase } from "./use-cases/save-toeic-writing-draft.use-case";
 
 @Module({
   controllers: [ToeicWritingController, ToeicWritingMediaController],
@@ -18,6 +21,9 @@ import { ListToeicWritingTasksUseCase } from "./use-cases/list-toeic-writing-tas
     GetToeicWritingOverviewUseCase,
     ListToeicWritingTasksUseCase,
     GetToeicWritingTaskUseCase,
+    GetToeicWritingDraftUseCase,
+    SaveToeicWritingDraftUseCase,
+    DeleteToeicWritingDraftUseCase,
     {
       provide: GetToeicWritingImageUseCase,
       inject: [PrismaService, applicationConfig.KEY],

@@ -21,7 +21,7 @@ export class ListToeicWritingTasksUseCase {
         order_index: true,
         title: true,
         difficulty: true,
-        content_sha256: true,
+        source_version: true,
         drafts: {
           where: { user_id: userId },
           take: 1,

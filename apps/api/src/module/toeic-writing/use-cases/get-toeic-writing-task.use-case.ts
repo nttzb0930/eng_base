@@ -18,7 +18,7 @@ export class GetToeicWritingTaskUseCase {
         order_index: true,
         title: true,
         difficulty: true,
-        content_sha256: true,
+        source_version: true,
         instructions_en: true,
         instructions_vi: true,
         payload: true,

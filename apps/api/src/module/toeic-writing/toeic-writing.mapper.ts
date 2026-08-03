@@ -18,7 +18,7 @@ export type ToeicWritingSummaryRecord = LearnerState & {
   order_index: number;
   title: string;
   difficulty: string;
-  content_sha256: string;
+  source_version: string;
 };
 
 export type ToeicWritingDetailRecord = ToeicWritingSummaryRecord & {
@@ -134,7 +134,7 @@ export function mapToeicWritingTaskSummary(
     order: task.order_index,
     title: task.title,
     difficulty: task.difficulty,
-    contentVersion: task.content_sha256,
+    contentVersion: task.source_version,
     submitted: task.submissions.length > 0,
     hasDraft: task.drafts.length > 0,
   };
