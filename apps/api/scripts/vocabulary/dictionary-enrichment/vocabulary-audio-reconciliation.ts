@@ -72,6 +72,11 @@ type AudioPair = {
   audioSource: string | null | undefined;
 };
 
+type CompleteAudioPair = {
+  audioUrl: string;
+  audioSource: string;
+};
+
 const sha256 = (value: unknown) =>
   createHash("sha256").update(JSON.stringify(value)).digest("hex");
 
@@ -88,7 +93,7 @@ const hasValue = (value: string | null | undefined): value is string =>
 const pairIsAbsent = (pair: AudioPair) =>
   !hasValue(pair.audioUrl) && !hasValue(pair.audioSource);
 
-const pairIsComplete = (pair: AudioPair): pair is Required<AudioPair> =>
+const pairIsComplete = (pair: AudioPair): pair is CompleteAudioPair =>
   hasValue(pair.audioUrl) &&
   hasValue(pair.audioSource) &&
   pair.audioUrl.trim().length > 0 &&
