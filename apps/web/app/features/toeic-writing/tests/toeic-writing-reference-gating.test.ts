@@ -20,7 +20,8 @@ test("pre-submission task code cannot render reference fields", () => {
   const preSubmissionSources = [
     "app/views/toeic-writing/ToeicWritingCatalogView.tsx",
     "app/views/toeic-writing/ToeicWritingSessionView.tsx",
-    "app/features/toeic-writing/components/ToeicWritingTaskCard.tsx",
+    "app/features/toeic-writing/components/ToeicWritingPartOneCard.tsx",
+    "app/features/toeic-writing/components/ToeicWritingPartTwoCard.tsx",
     "app/features/toeic-writing/components/ToeicWritingPromptPane.tsx",
     "app/features/toeic-writing/components/ToeicWritingEditorPane.tsx",
     "app/features/toeic-writing/components/ToeicWritingSessionFooter.tsx",

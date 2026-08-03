@@ -1,20 +1,27 @@
 "use client";
 
-import type { ToeicWritingPart } from "@repo/shared";
+import type {
+  ToeicWritingPart,
+  ToeicWritingPartOneTaskSummary,
+  ToeicWritingPartTwoTaskSummary,
+} from "@repo/shared";
 import { ArrowLeft, FilePenLine, RotateCcw } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useMemo, useState } from "react";
 
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicWritingCatalogSkeleton } from "@/app/features/toeic-writing/components/ToeicWritingCatalogSkeleton";
-import { ToeicWritingTaskCard } from "@/app/features/toeic-writing/components/ToeicWritingTaskCard";
+import { ToeicWritingPartOneCard } from "@/app/features/toeic-writing/components/ToeicWritingPartOneCard";
+import { ToeicWritingPartTwoCard } from "@/app/features/toeic-writing/components/ToeicWritingPartTwoCard";
+import { useToeicWritingTasks } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
 import {
-  useToeicWritingOverview,
-  useToeicWritingTasks,
-} from "@/app/features/toeic-writing/hooks/use-toeic-writing";
+  buildToeicWritingPatternFilters,
+  filterToeicWritingPartOneTasks,
+} from "@/app/features/toeic-writing/toeic-writing-catalog.utils";
 import { defaultLocale, isLocale } from "@/app/i18n/config";
 import { withLocale } from "@/app/i18n/paths";
 
@@ -27,31 +34,49 @@ export function ToeicWritingCatalogView() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const part: ToeicWritingPart = searchParams.get("part") === "2" ? 2 : 1;
-  const overviewQuery = useToeicWritingOverview();
   const tasksQuery = useToeicWritingTasks(part);
+  const [selectedPattern, setSelectedPattern] = useState<string | null>(null);
+  const partOneTasks = useMemo(
+    () =>
+      (tasksQuery.data ?? []).filter(
+        (task): task is ToeicWritingPartOneTaskSummary => task.part === 1
+      ),
+    [tasksQuery.data]
+  );
+  const partTwoTasks = useMemo(
+    () =>
+      (tasksQuery.data ?? []).filter(
+        (task): task is ToeicWritingPartTwoTaskSummary => task.part === 2
+      ),
+    [tasksQuery.data]
+  );
+  const patternFilters = useMemo(
+    () => buildToeicWritingPatternFilters(partOneTasks),
+    [partOneTasks]
+  );
+  const activePattern = patternFilters.some(
+    (filter) => filter.value === selectedPattern
+  )
+    ? selectedPattern
+    : null;
+  const visiblePartOneTasks = useMemo(
+    () => filterToeicWritingPartOneTasks(partOneTasks, activePattern),
+    [activePattern, partOneTasks]
+  );
 
-  if (overviewQuery.isLoading || tasksQuery.isLoading) {
-    return <ToeicWritingCatalogSkeleton />;
-  }
+  if (tasksQuery.isLoading) return <ToeicWritingCatalogSkeleton />;
 
-  if (
-    overviewQuery.isError ||
-    !overviewQuery.data ||
-    tasksQuery.isError ||
-    !tasksQuery.data
-  ) {
+  if (tasksQuery.isError || !tasksQuery.data) {
     return (
       <FeedWrapper>
-        <section className="bg-card mx-auto max-w-lg rounded-2xl border border-rose-200 p-7 text-center dark:border-rose-900">
+        <section className="bg-card mx-auto max-w-lg rounded-md border border-rose-200 p-7 text-center dark:border-rose-900">
           <h1 className="text-lg font-semibold">{t("catalog.errorTitle")}</h1>
           <p className="text-muted-foreground mt-2 text-sm">
             {t("catalog.errorDescription")}
           </p>
           <Button
             type="button"
-            onClick={() => {
-              void Promise.all([overviewQuery.refetch(), tasksQuery.refetch()]);
-            }}
+            onClick={() => void tasksQuery.refetch()}
             className="mt-5 gap-2"
           >
             <RotateCcw className="h-4 w-4" aria-hidden="true" />
@@ -62,15 +87,14 @@ export function ToeicWritingCatalogView() {
     );
   }
 
-  const overview = overviewQuery.data;
-  const selectedPart = overview.parts.find((item) => item.part === part);
+  const visibleTasks = part === 1 ? visiblePartOneTasks : partTwoTasks;
 
   return (
     <FeedWrapper>
       <ToeicBrowseContainer>
         <Link
           href="/learn/cert/toeic"
-          className="text-muted-foreground inline-flex items-center gap-2 rounded-lg text-sm font-semibold transition-colors hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          className="text-muted-foreground inline-flex items-center gap-2 rounded-md text-sm font-semibold transition-colors hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {t("catalog.back")}
@@ -89,7 +113,7 @@ export function ToeicWritingCatalogView() {
         </header>
 
         <div
-          className="mt-7 grid max-w-2xl gap-3 sm:grid-cols-2"
+          className="bg-muted mt-7 inline-flex rounded-md border p-1"
           role="tablist"
           aria-label={t("catalog.partLabel")}
         >
@@ -111,10 +135,10 @@ export function ToeicWritingCatalogView() {
                     { scroll: false }
                   );
                 }}
-                className={`min-h-12 rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
+                className={`min-h-10 rounded-md px-4 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
                   active
-                    ? "border-emerald-600 bg-emerald-600 text-white"
-                    : "bg-card hover:border-emerald-500/60 hover:text-emerald-700 dark:hover:text-emerald-300"
+                    ? "bg-emerald-600 text-white shadow-sm"
+                    : "text-muted-foreground hover:bg-card hover:text-foreground"
                 }`}
               >
                 {t(`catalog.part${item}`)}
@@ -127,35 +151,39 @@ export function ToeicWritingCatalogView() {
           {t(`catalog.part${part}Description`)}
         </p>
 
-        <dl className="mt-7 grid gap-3 sm:grid-cols-3">
-          <div className="bg-card rounded-xl border p-4">
-            <dt className="text-muted-foreground text-xs">
-              {t("catalog.published")}
-            </dt>
-            <dd className="mt-1 text-2xl font-semibold">
-              {overview.publishedTaskCount}
-            </dd>
+        {part === 1 && partOneTasks.length > 0 ? (
+          <div
+            className="mt-6 flex flex-wrap gap-2"
+            aria-label={t("catalog.patternFilterLabel")}
+          >
+            {patternFilters.map((filter) => {
+              const active = filter.value === activePattern;
+              return (
+                <button
+                  key={filter.value ?? "all"}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => setSelectedPattern(filter.value)}
+                  className={`min-h-9 rounded-md border px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
+                    active
+                      ? "border-emerald-600 bg-emerald-600 text-white"
+                      : "bg-card hover:border-emerald-500 hover:text-emerald-700 dark:hover:text-emerald-300"
+                  }`}
+                >
+                  {filter.value
+                    ? t("catalog.pattern", {
+                        pattern: filter.value,
+                        count: filter.count,
+                      })
+                    : t("catalog.allPatterns", { count: filter.count })}
+                </button>
+              );
+            })}
           </div>
-          <div className="bg-card rounded-xl border p-4">
-            <dt className="text-muted-foreground text-xs">
-              {t("catalog.submitted")}
-            </dt>
-            <dd className="mt-1 text-2xl font-semibold">
-              {overview.submittedTaskCount}
-            </dd>
-          </div>
-          <div className="bg-card rounded-xl border p-4">
-            <dt className="text-muted-foreground text-xs">
-              {t("catalog.available")}
-            </dt>
-            <dd className="mt-1 text-2xl font-semibold">
-              {selectedPart?.publishedTaskCount ?? tasksQuery.data.length}
-            </dd>
-          </div>
-        </dl>
+        ) : null}
 
-        {tasksQuery.data.length === 0 ? (
-          <section className="mt-8 rounded-2xl border border-dashed px-6 py-12 text-center">
+        {visibleTasks.length === 0 ? (
+          <section className="mt-8 rounded-md border border-dashed px-6 py-12 text-center">
             <FilePenLine className="text-muted-foreground mx-auto h-8 w-8" />
             <h2 className="mt-4 text-lg font-semibold">
               {t("catalog.emptyTitle")}
@@ -167,11 +195,19 @@ export function ToeicWritingCatalogView() {
         ) : (
           <section
             aria-label={t("catalog.available")}
-            className="mt-8 grid gap-5 md:grid-cols-2"
+            className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4"
           >
-            {tasksQuery.data.map((task) => (
-              <ToeicWritingTaskCard key={task.id} task={task} />
-            ))}
+            {part === 1
+              ? visiblePartOneTasks.map((task) => (
+                  <ToeicWritingPartOneCard key={task.id} task={task} />
+                ))
+              : partTwoTasks.map((task) => (
+                  <ToeicWritingPartTwoCard
+                    key={task.id}
+                    task={task}
+                    locale={locale}
+                  />
+                ))}
           </section>
         )}
       </ToeicBrowseContainer>

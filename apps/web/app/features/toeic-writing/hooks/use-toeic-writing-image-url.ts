@@ -15,7 +15,9 @@ export function useToeicWritingImageUrl(taskId: number, enabled = true) {
     if (!enabled) return;
     let disposed = false;
     let objectUrl: string | null = null;
-    setState({ taskId, url: null, error: false });
+    queueMicrotask(() => {
+      if (!disposed) setState({ taskId, url: null, error: false });
+    });
     void toeicWritingApi
       .image(taskId)
       .then((blob) => {

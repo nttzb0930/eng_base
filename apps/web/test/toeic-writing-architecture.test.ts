@@ -49,6 +49,34 @@ test("Writing catalog gates protected image loading by viewport visibility", () 
   assert.match(imageHook, /URL\.revokeObjectURL/u);
 });
 
+test("Writing catalog renders dedicated Part-specific responsive cards", () => {
+  const partOnePath = resolve(
+    process.cwd(),
+    "app/features/toeic-writing/components/ToeicWritingPartOneCard.tsx"
+  );
+  const partTwoPath = resolve(
+    process.cwd(),
+    "app/features/toeic-writing/components/ToeicWritingPartTwoCard.tsx"
+  );
+  assert.equal(existsSync(partOnePath), true, "Part 1 card must exist");
+  assert.equal(existsSync(partTwoPath), true, "Part 2 card must exist");
+  if (!existsSync(partOnePath) || !existsSync(partTwoPath)) return;
+
+  const catalog = read("app/views/toeic-writing/ToeicWritingCatalogView.tsx");
+  const partOne = readFileSync(partOnePath, "utf8");
+  const partTwo = readFileSync(partTwoPath, "utf8");
+
+  assert.match(catalog, /ToeicWritingPartOneCard/u);
+  assert.match(catalog, /ToeicWritingPartTwoCard/u);
+  assert.match(catalog, /buildToeicWritingPatternFilters/u);
+  assert.match(catalog, /role="tablist"/u);
+  assert.match(catalog, /xl:grid-cols-4/u);
+  assert.match(partOne, /useNearViewport/u);
+  assert.doesNotMatch(partOne, /task\.title|task\.order|difficulty/u);
+  assert.match(partTwo, /locale\s*===\s*"vi"/u);
+  assert.match(partTwo, /task\.titleVi/u);
+});
+
 test("Writing Part routes are thin and share the focused session workspace", () => {
   for (const part of [1, 2]) {
     const page = read(

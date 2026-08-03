@@ -1089,6 +1089,9 @@
       "part2": "Part 2: Respond to an email",
       "part1Description": "Write one sentence about a picture using the required words.",
       "part2Description": "Write an email response that covers every requirement.",
+      "patternFilterLabel": "Picture sentence patterns",
+      "allPatterns": "All ({count})",
+      "pattern": "{pattern} ({count})",
       "published": "Published tasks",
       "submitted": "Submitted",
       "available": "Available tasks",
@@ -1105,6 +1108,10 @@
       "notStarted": "Not started",
       "start": "Start writing",
       "continue": "Continue writing",
+      "review": "Review",
+      "imageAlt": "TOEIC Writing practice picture",
+      "imageLoading": "Loading task picture",
+      "imageError": "Picture unavailable",
       "difficulty": {
         "easy": "Easy",
         "medium": "Medium"

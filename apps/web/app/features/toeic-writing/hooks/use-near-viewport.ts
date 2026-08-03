@@ -10,8 +10,13 @@ export function useNearViewport<T extends Element = HTMLElement>() {
   useEffect(() => {
     if (isNearViewport || !element) return;
     if (typeof IntersectionObserver === "undefined") {
-      setIsNearViewport(true);
-      return;
+      let disposed = false;
+      queueMicrotask(() => {
+        if (!disposed) setIsNearViewport(true);
+      });
+      return () => {
+        disposed = true;
+      };
     }
 
     const observer = new IntersectionObserver(

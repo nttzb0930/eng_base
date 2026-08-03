@@ -1089,6 +1089,9 @@
       "part2": "Part 2: Phản hồi email",
       "part1Description": "Viết một câu mô tả tranh bằng các từ bắt buộc.",
       "part2Description": "Viết email phản hồi đầy đủ các yêu cầu được đưa ra.",
+      "patternFilterLabel": "Mẫu câu mô tả tranh",
+      "allPatterns": "Tất cả ({count})",
+      "pattern": "{pattern} ({count})",
       "published": "Bài đã xuất bản",
       "submitted": "Đã nộp",
       "available": "Bài có thể luyện",
@@ -1105,6 +1108,10 @@
       "notStarted": "Chưa làm",
       "start": "Bắt đầu viết",
       "continue": "Tiếp tục viết",
+      "review": "Xem lại",
+      "imageAlt": "Hình ảnh luyện viết TOEIC",
+      "imageLoading": "Đang tải hình ảnh bài tập",
+      "imageError": "Không thể tải hình ảnh",
       "difficulty": {
         "easy": "Dễ",
         "medium": "Trung bình"
