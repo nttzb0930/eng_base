@@ -40,6 +40,7 @@ function sourceTask(part: 1 | 2, order: number): ToeicWritingSourceTask {
     part,
     imageUrl: null,
     payload: {
+      titleVi: null,
       promptEn: "Reply to this email.",
       promptVi: null,
       requirements: [{ order: 1, textEn: "Confirm attendance", textVi: null }],

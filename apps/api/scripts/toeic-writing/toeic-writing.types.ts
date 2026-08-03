@@ -28,6 +28,7 @@ export type ToeicWritingPartTwoRequirement = {
 };
 
 export type ToeicWritingPartTwoCanonicalPayload = {
+  titleVi: string | null;
   promptEn: string;
   promptVi: string | null;
   requirements: ToeicWritingPartTwoRequirement[];

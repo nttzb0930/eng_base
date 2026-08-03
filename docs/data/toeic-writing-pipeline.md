@@ -32,6 +32,18 @@ var/licensed-content/dautoeic/writing/
 
 Do not move this directory into a tracked path or commit its content.
 
+## Catalog preview mapping
+
+- Part 1 learner cards use `payload.requiredWords` and `payload.pattern`.
+  Source `image_name` values are internal acquisition metadata and must never
+  be rendered as learner-facing titles.
+- Part 2 source `title_vi` is stored as `payload.titleVi`; the English `title`
+  remains the primary learner-facing title.
+- Existing imported rows can return `titleVi: null` until an operator reviews,
+  approves, downloads, validates, and imports a newer Writing snapshot.
+- Catalog UI and API deployments do not run acquisition commands or mutate
+  Writing content automatically.
+
 ## PowerShell operator flow
 
 Inventory reads source metadata and image headers. It does not download image

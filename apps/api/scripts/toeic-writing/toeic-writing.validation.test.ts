@@ -73,6 +73,7 @@ function partTwoFixture(): ToeicWritingPartTwoCanonicalTask {
     instructionsVi: "Đọc email và viết thư trả lời.",
     media: null,
     payload: {
+      titleVi: "Xác nhận tham dự hội thảo",
       promptEn: "Please confirm whether you can attend the workshop.",
       promptVi: "Vui lòng xác nhận bạn có thể tham dự hội thảo hay không.",
       requirements: [

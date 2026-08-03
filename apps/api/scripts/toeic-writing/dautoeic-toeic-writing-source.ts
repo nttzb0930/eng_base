@@ -342,6 +342,7 @@ export function createDautoeicToeicWritingSource(
           instructionsVi: null,
           imageUrl: null,
           payload: {
+            titleVi: row.title_vi?.trim() || null,
             promptEn: row.email,
             promptVi: row.email_vi?.trim() || null,
             requirements: requirements(row.requirements, row.directions),

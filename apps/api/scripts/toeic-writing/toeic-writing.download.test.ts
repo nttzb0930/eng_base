@@ -41,6 +41,7 @@ function fixturePartTwoInventory(): ToeicWritingInventory {
     imageBytes: null,
     imageContentType: null,
     payload: {
+      titleVi: null,
       promptEn: "Can you attend?",
       promptVi: null,
       requirements: [{ order: 1, textEn: "Confirm attendance", textVi: null }],
