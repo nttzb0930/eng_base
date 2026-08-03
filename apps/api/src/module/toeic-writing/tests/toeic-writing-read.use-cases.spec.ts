@@ -41,6 +41,41 @@ function partOneTask(overrides: Record<string, unknown> = {}) {
   };
 }
 
+function partTwoTask(overrides: Record<string, unknown> = {}) {
+  return {
+    id: 21,
+    part: 2,
+    order_index: 1,
+    title: "Printer paper jam complaint",
+    difficulty: "MEDIUM",
+    source_version: version,
+    content_sha256: contentChecksum,
+    instructions_en: "Read the email and write a response.",
+    instructions_vi: null,
+    payload: {
+      titleVi: "Khiếu nại máy in bị kẹt giấy",
+      promptEn: "The printer is not working.",
+      promptVi: "Máy in không hoạt động.",
+      requirements: [
+        { order: 1, textEn: "Explain the problem.", textVi: null },
+      ],
+      outlineLevel1: [],
+      outlineLevel2: [],
+      chunksLevel1: [],
+      chunksLevel2: [],
+      sampleEn: "I am writing about the printer.",
+      sampleVi: null,
+    },
+    image_storage_path: null,
+    image_sha256: null,
+    image_bytes: null,
+    image_content_type: null,
+    drafts: [],
+    submissions: [],
+    ...overrides,
+  };
+}
+
 test("overview counts only published tasks and current learner submissions", async () => {
   let taskQuery: unknown;
   let submissionQuery: unknown;
@@ -84,7 +119,7 @@ test("overview counts only published tasks and current learner submissions", asy
   });
 });
 
-test("task list is scoped to one part and maps learner draft/submission state", async () => {
+test("Part 1 task list exposes preview words and pattern without a display title", async () => {
   let query: unknown;
   const prisma = {
     toeic_writing_tasks: {
@@ -110,11 +145,15 @@ test("task list is scoped to one part and maps learner draft/submission state", 
       id: 11,
       part: 1,
       order: 1,
-      title: "Write a sentence about the picture",
       difficulty: "EASY",
       contentVersion: version,
       submitted: true,
       hasDraft: true,
+      requiredWords: [
+        { en: "woman", vi: "người phụ nữ" },
+        { en: "phone", vi: "điện thoại" },
+      ],
+      pattern: "The woman is holding a phone.",
     },
   ]);
   assert.deepEqual((query as { where: unknown }).where, {
@@ -132,6 +171,41 @@ test("task list is scoped to one part and maps learner draft/submission state", 
     ).select.drafts.where,
     { user_id: "learner-1" }
   );
+  assert.equal(
+    (query as { select: { payload?: boolean } }).select.payload,
+    true
+  );
+  assert.equal(
+    "image_storage_path" in (query as { select: object }).select,
+    false
+  );
+});
+
+test("Part 2 task list exposes English and Vietnamese email titles", async () => {
+  const prisma = {
+    toeic_writing_tasks: {
+      findMany: () => Promise.resolve([partTwoTask()]),
+    },
+  } as unknown as PrismaService;
+
+  const result = await new ListToeicWritingTasksUseCase(prisma).execute(
+    "learner-1",
+    2
+  );
+
+  assert.deepEqual(result, [
+    {
+      id: 21,
+      part: 2,
+      order: 1,
+      title: "Printer paper jam complaint",
+      titleVi: "Khiếu nại máy in bị kẹt giấy",
+      difficulty: "MEDIUM",
+      contentVersion: version,
+      submitted: false,
+      hasDraft: false,
+    },
+  ]);
 });
 
 test("task detail exposes the source version used by draft conflict checks", async () => {

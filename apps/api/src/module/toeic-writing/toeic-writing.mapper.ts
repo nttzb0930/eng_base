@@ -1,4 +1,5 @@
 import type {
+  ToeicWritingDifficulty,
   ToeicWritingPartOneReference,
   ToeicWritingPartTwoReference,
   ToeicWritingSubmissionResult,
@@ -20,6 +21,7 @@ export type ToeicWritingSummaryRecord = LearnerState & {
   title: string;
   difficulty: string;
   source_version: string;
+  payload: unknown;
 };
 
 export type ToeicWritingDetailRecord = ToeicWritingSummaryRecord & {
@@ -41,6 +43,7 @@ export type ToeicWritingSubmissionRecord = {
 
 type PartOnePayload = {
   requiredWords: Array<{ en: string; vi: string | null }>;
+  pattern: string | null;
   structureSuggestions: string[];
   ideas: string[];
   samplesEn: string[];
@@ -48,6 +51,7 @@ type PartOnePayload = {
 };
 
 type PartTwoPayload = {
+  titleVi: string | null;
   promptEn: string;
   promptVi: string | null;
   requirements: Array<{
@@ -75,6 +79,12 @@ function nullableString(value: unknown): value is string | null {
   return value === null || typeof value === "string";
 }
 
+function nullableOptionalString(
+  value: unknown
+): value is string | null | undefined {
+  return value === undefined || nullableString(value);
+}
+
 function parsePartOnePayload(value: unknown): PartOnePayload {
   if (!isObject(value) || !Array.isArray(value.requiredWords)) {
     return writingTaskNotFound();
@@ -90,7 +100,8 @@ function parsePartOnePayload(value: unknown): PartOnePayload {
     !stringArray(value.structureSuggestions) ||
     !stringArray(value.ideas) ||
     !stringArray(value.samplesEn) ||
-    !stringArray(value.samplesVi)
+    !stringArray(value.samplesVi) ||
+    !nullableOptionalString(value.pattern)
   ) {
     return writingTaskNotFound();
   }
@@ -99,6 +110,7 @@ function parsePartOnePayload(value: unknown): PartOnePayload {
       en: word.en as string,
       vi: word.vi as string | null,
     })),
+    pattern: value.pattern?.trim() || null,
     structureSuggestions: value.structureSuggestions,
     ideas: value.ideas,
     samplesEn: value.samplesEn,
@@ -109,6 +121,7 @@ function parsePartOnePayload(value: unknown): PartOnePayload {
 function parsePartTwoPayload(value: unknown): PartTwoPayload {
   if (
     !isObject(value) ||
+    !nullableOptionalString(value.titleVi) ||
     typeof value.promptEn !== "string" ||
     !nullableString(value.promptVi) ||
     !Array.isArray(value.requirements) ||
@@ -128,12 +141,20 @@ function parsePartTwoPayload(value: unknown): PartTwoPayload {
   ) {
     return writingTaskNotFound();
   }
-  return value as PartTwoPayload;
+  return {
+    ...(value as Omit<PartTwoPayload, "titleVi">),
+    titleVi: value.titleVi?.trim() || null,
+  };
 }
 
-export function mapToeicWritingTaskSummary(
-  task: ToeicWritingSummaryRecord
-): ToeicWritingTaskSummary {
+function mapToeicWritingTaskBase(task: ToeicWritingSummaryRecord): {
+  id: number;
+  order: number;
+  difficulty: ToeicWritingDifficulty;
+  contentVersion: string;
+  submitted: boolean;
+  hasDraft: boolean;
+} {
   if (
     (task.part !== 1 && task.part !== 2) ||
     (task.difficulty !== "EASY" && task.difficulty !== "MEDIUM")
@@ -142,9 +163,7 @@ export function mapToeicWritingTaskSummary(
   }
   return {
     id: task.id,
-    part: task.part,
     order: task.order_index,
-    title: task.title,
     difficulty: task.difficulty,
     contentVersion: task.source_version,
     submitted: task.submissions.length > 0,
@@ -152,14 +171,39 @@ export function mapToeicWritingTaskSummary(
   };
 }
 
-export function mapToeicWritingExercise(
-  task: ToeicWritingDetailRecord
-): ToeicWritingTaskDetail {
-  const summary = mapToeicWritingTaskSummary(task);
+export function mapToeicWritingTaskSummary(
+  task: ToeicWritingSummaryRecord
+): ToeicWritingTaskSummary {
+  const base = mapToeicWritingTaskBase(task);
   if (task.part === 1) {
     const payload = parsePartOnePayload(task.payload);
     return {
-      ...summary,
+      ...base,
+      part: 1,
+      requiredWords: payload.requiredWords,
+      pattern: payload.pattern,
+    };
+  }
+  const payload = parsePartTwoPayload(task.payload);
+  return {
+    ...base,
+    part: 2,
+    title: task.title,
+    titleVi: payload.titleVi,
+  };
+}
+
+export function mapToeicWritingExercise(
+  task: ToeicWritingDetailRecord
+): ToeicWritingTaskDetail {
+  const detailBase = {
+    ...mapToeicWritingTaskBase(task),
+    title: task.title,
+  };
+  if (task.part === 1) {
+    const payload = parsePartOnePayload(task.payload);
+    return {
+      ...detailBase,
       part: 1,
       exercise: {
         imageUrl: `/api/toeic/writing/tasks/${task.id}/image`,
@@ -171,7 +215,7 @@ export function mapToeicWritingExercise(
   }
   const payload = parsePartTwoPayload(task.payload);
   return {
-    ...summary,
+    ...detailBase,
     part: 2,
     exercise: {
       promptEn: payload.promptEn,

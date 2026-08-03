@@ -20,15 +20,35 @@ export type ToeicWritingOverview = {
   }>;
 };
 
-export type ToeicWritingTaskSummary = {
+type ToeicWritingTaskSummaryBase = {
   id: number;
-  part: ToeicWritingPart;
   order: number;
-  title: string;
   difficulty: ToeicWritingDifficulty;
   contentVersion: string;
   submitted: boolean;
   hasDraft: boolean;
+};
+
+export type ToeicWritingPartOneTaskSummary =
+  ToeicWritingTaskSummaryBase & {
+    part: 1;
+    requiredWords: Array<{ en: string; vi: string | null }>;
+    pattern: string | null;
+  };
+
+export type ToeicWritingPartTwoTaskSummary =
+  ToeicWritingTaskSummaryBase & {
+    part: 2;
+    title: string;
+    titleVi: string | null;
+  };
+
+export type ToeicWritingTaskSummary =
+  | ToeicWritingPartOneTaskSummary
+  | ToeicWritingPartTwoTaskSummary;
+
+type ToeicWritingTaskDetailBase = ToeicWritingTaskSummaryBase & {
+  title: string;
 };
 
 export type ToeicWritingPartOneExercise = {
@@ -49,11 +69,11 @@ export type ToeicWritingPartTwoExercise = {
 };
 
 export type ToeicWritingTaskDetail =
-  | (ToeicWritingTaskSummary & {
+  | (ToeicWritingTaskDetailBase & {
       part: 1;
       exercise: ToeicWritingPartOneExercise;
     })
-  | (ToeicWritingTaskSummary & {
+  | (ToeicWritingTaskDetailBase & {
       part: 2;
       exercise: ToeicWritingPartTwoExercise;
     });

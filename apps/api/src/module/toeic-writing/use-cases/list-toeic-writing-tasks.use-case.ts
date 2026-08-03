@@ -22,6 +22,7 @@ export class ListToeicWritingTasksUseCase {
         title: true,
         difficulty: true,
         source_version: true,
+        payload: true,
         drafts: {
           where: { user_id: userId },
           take: 1,
