@@ -40,3 +40,17 @@ test("Writing submission migration snapshots historical comparison material", ()
   assert.match(sql, /"reference_snapshot" SET NOT NULL/u);
   assert.match(sql, /CHECK \("task_part" IN \(1, 2\)\)/u);
 });
+
+test("Writing community migration keeps submissions private by default", () => {
+  const sql = readMigration(
+    "20260803150000_add_toeic_writing_community"
+  );
+
+  assert.match(sql, /ADD COLUMN "shared_at" TIMESTAMP\(6\)/u);
+  assert.match(sql, /ADD COLUMN "share_revoked_at" TIMESTAMP\(6\)/u);
+  assert.doesNotMatch(sql, /DEFAULT/u);
+  assert.match(
+    sql,
+    /CREATE INDEX "toeic_writing_submissions_task_shared_idx"/u
+  );
+});

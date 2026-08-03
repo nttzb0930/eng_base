@@ -178,6 +178,22 @@ export type ToeicWritingPartTwoCoaching =
       structure: ToeicWritingSampleSection[];
     });
 
+export type ToeicWritingCommunityItem = {
+  submissionId: number;
+  responseText: string;
+  authorLabel: string;
+  sharedAt: string;
+};
+
+export type ToeicWritingCommunityPage = {
+  items: ToeicWritingCommunityItem[];
+  nextCursor: number | null;
+};
+
+export type ToeicWritingSubmissionShareResult =
+  | { shared: true; sharedAt: string }
+  | { shared: false };
+
 export type ToeicWritingAiQuota = {
   dailyLimit: number;
   used: number;

@@ -28,10 +28,14 @@ import { GradeToeicWritingPartOneUseCase } from "./use-cases/grade-toeic-writing
 import { GetToeicWritingQuotaUseCase } from "./use-cases/get-toeic-writing-quota.use-case";
 import { GetToeicWritingGradeUseCase } from "./use-cases/get-toeic-writing-grade.use-case";
 import { ListToeicWritingGradesUseCase } from "./use-cases/list-toeic-writing-grades.use-case";
+import { ListToeicWritingCommunityUseCase } from "./use-cases/list-toeic-writing-community.use-case";
 import { RecordToeicWritingAssistanceUseCase } from "./use-cases/record-toeic-writing-assistance.use-case";
+import { RestoreToeicWritingCommunityResponseUseCase } from "./use-cases/restore-toeic-writing-community-response.use-case";
 import { ListToeicWritingTasksUseCase } from "./use-cases/list-toeic-writing-tasks.use-case";
 import { SaveToeicWritingDraftUseCase } from "./use-cases/save-toeic-writing-draft.use-case";
+import { ShareToeicWritingSubmissionUseCase } from "./use-cases/share-toeic-writing-submission.use-case";
 import { SubmitToeicWritingTaskUseCase } from "./use-cases/submit-toeic-writing-task.use-case";
+import { UnshareToeicWritingSubmissionUseCase } from "./use-cases/unshare-toeic-writing-submission.use-case";
 
 @Module({
   controllers: [ToeicWritingController, ToeicWritingMediaController],
@@ -44,6 +48,9 @@ import { SubmitToeicWritingTaskUseCase } from "./use-cases/submit-toeic-writing-
     DeleteToeicWritingDraftUseCase,
     SubmitToeicWritingTaskUseCase,
     GetToeicWritingSubmissionUseCase,
+    ShareToeicWritingSubmissionUseCase,
+    UnshareToeicWritingSubmissionUseCase,
+    ListToeicWritingCommunityUseCase,
     {
       provide: GradeToeicWritingPartOneUseCase,
       inject: [
@@ -124,6 +131,15 @@ import { SubmitToeicWritingTaskUseCase } from "./use-cases/submit-toeic-writing-
       useFactory: (prisma: PrismaService) =>
         new RecordToeicWritingAssistanceUseCase(
           new PrismaWritingCoachingTaskSource(prisma),
+          new PrismaWritingAiRepository(prisma)
+        ),
+    },
+    {
+      provide: RestoreToeicWritingCommunityResponseUseCase,
+      inject: [PrismaService],
+      useFactory: (prisma: PrismaService) =>
+        new RestoreToeicWritingCommunityResponseUseCase(
+          prisma,
           new PrismaWritingAiRepository(prisma)
         ),
     },

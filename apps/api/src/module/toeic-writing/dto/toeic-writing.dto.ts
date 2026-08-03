@@ -80,6 +80,21 @@ export class ToeicWritingGradeHistoryQueryDto {
   limit: number = 20;
 }
 
+export class ToeicWritingCommunityQueryDto {
+  @Type(() => Number)
+  @IsOptional()
+  @IsInt()
+  @Min(1)
+  cursor?: number;
+
+  @Type(() => Number)
+  @IsOptional()
+  @IsInt()
+  @Min(1)
+  @Max(20)
+  limit: number = 20;
+}
+
 export enum ToeicWritingAssistanceKind {
   OUTLINE = "OUTLINE",
   VOCABULARY = "VOCABULARY",

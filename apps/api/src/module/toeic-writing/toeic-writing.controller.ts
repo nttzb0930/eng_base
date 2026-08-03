@@ -21,6 +21,7 @@ import {
   ToeicWritingAssistanceKind,
   ToeicWritingCoachingParamsDto,
   ToeicWritingCoachingQueryDto,
+  ToeicWritingCommunityQueryDto,
   ToeicWritingGradeHistoryQueryDto,
   ToeicWritingPartOneGradeDto,
   ToeicWritingPartQueryDto,
@@ -38,8 +39,12 @@ import { GetToeicWritingGradeUseCase } from "./use-cases/get-toeic-writing-grade
 import { ListToeicWritingGradesUseCase } from "./use-cases/list-toeic-writing-grades.use-case";
 import { RecordToeicWritingAssistanceUseCase } from "./use-cases/record-toeic-writing-assistance.use-case";
 import { ListToeicWritingTasksUseCase } from "./use-cases/list-toeic-writing-tasks.use-case";
+import { ListToeicWritingCommunityUseCase } from "./use-cases/list-toeic-writing-community.use-case";
+import { RestoreToeicWritingCommunityResponseUseCase } from "./use-cases/restore-toeic-writing-community-response.use-case";
 import { SaveToeicWritingDraftUseCase } from "./use-cases/save-toeic-writing-draft.use-case";
+import { ShareToeicWritingSubmissionUseCase } from "./use-cases/share-toeic-writing-submission.use-case";
 import { SubmitToeicWritingTaskUseCase } from "./use-cases/submit-toeic-writing-task.use-case";
+import { UnshareToeicWritingSubmissionUseCase } from "./use-cases/unshare-toeic-writing-submission.use-case";
 
 @Controller("toeic/writing")
 @UseGuards(UserJwtGuard)
@@ -58,7 +63,11 @@ export class ToeicWritingController {
     private readonly getWritingGrade: GetToeicWritingGradeUseCase,
     private readonly listWritingGrades: ListToeicWritingGradesUseCase,
     private readonly getWritingCoaching: GetToeicWritingCoachingUseCase,
-    private readonly recordWritingAssistance: RecordToeicWritingAssistanceUseCase
+    private readonly recordWritingAssistance: RecordToeicWritingAssistanceUseCase,
+    private readonly shareWritingSubmission: ShareToeicWritingSubmissionUseCase,
+    private readonly unshareWritingSubmission: UnshareToeicWritingSubmissionUseCase,
+    private readonly listWritingCommunity: ListToeicWritingCommunityUseCase,
+    private readonly restoreWritingCommunity: RestoreToeicWritingCommunityResponseUseCase
   ) {}
 
   @Get("overview")
@@ -180,6 +189,46 @@ export class ToeicWritingController {
       params.taskId,
       params.kind,
       query.contentVersion
+    );
+  }
+
+  @Put("submissions/:submissionId/share")
+  shareSubmission(
+    @CurrentUserId() userId: string,
+    @Param("submissionId", ParseIntPipe) submissionId: number
+  ) {
+    return this.shareWritingSubmission.execute(userId, submissionId);
+  }
+
+  @Delete("submissions/:submissionId/share")
+  unshareSubmission(
+    @CurrentUserId() userId: string,
+    @Param("submissionId", ParseIntPipe) submissionId: number
+  ) {
+    return this.unshareWritingSubmission.execute(userId, submissionId);
+  }
+
+  @Get("tasks/:taskId/community")
+  community(
+    @CurrentUserId() _userId: string,
+    @Param("taskId", ParseIntPipe) taskId: number,
+    @Query() query: ToeicWritingCommunityQueryDto
+  ) {
+    return this.listWritingCommunity.execute(taskId, query.cursor, query.limit);
+  }
+
+  @Post("tasks/:taskId/community/:submissionId/restore")
+  restoreCommunityResponse(
+    @CurrentUserId() userId: string,
+    @Param("taskId", ParseIntPipe) taskId: number,
+    @Param("submissionId", ParseIntPipe) submissionId: number,
+    @Body() body: ToeicWritingAssistanceDto
+  ) {
+    return this.restoreWritingCommunity.execute(
+      userId,
+      taskId,
+      submissionId,
+      body.contentVersion
     );
   }
 

@@ -16,6 +16,7 @@ import {
   ToeicWritingAssistanceKind,
   ToeicWritingCoachingParamsDto,
   ToeicWritingCoachingQueryDto,
+  ToeicWritingCommunityQueryDto,
 } from "../dto/toeic-writing.dto";
 import { ToeicWritingController } from "../toeic-writing.controller";
 
@@ -41,6 +42,20 @@ test("coaching route accepts only Part 2 panel kinds and SHA-256 versions", () =
   });
   assert.ok(validateSync(restore).length > 0);
   assert.ok(validateSync(staleShape).length > 0);
+});
+
+test("community pagination accepts positive cursors and caps pages at 20", () => {
+  const valid = plainToInstance(ToeicWritingCommunityQueryDto, {
+    cursor: "31",
+    limit: "20",
+  });
+  const invalid = plainToInstance(ToeicWritingCommunityQueryDto, {
+    cursor: "0",
+    limit: "21",
+  });
+
+  assert.equal(validateSync(valid).length, 0);
+  assert.ok(validateSync(invalid).length > 0);
 });
 
 test("TOEIC Writing controller exposes authenticated read routes", () => {
@@ -71,6 +86,7 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
     .sort();
 
   assert.deepEqual(routes, [
+    "DELETE submissions/:submissionId/share",
     "DELETE tasks/:taskId/draft",
     "GET ai-quota",
     "GET grades/:gradeId",
@@ -79,11 +95,14 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
     "GET tasks",
     "GET tasks/:taskId",
     "GET tasks/:taskId/coaching/:kind",
+    "GET tasks/:taskId/community",
     "GET tasks/:taskId/draft",
     "GET tasks/:taskId/grades",
     "POST tasks/:taskId/assistance/:kind",
+    "POST tasks/:taskId/community/:submissionId/restore",
     "POST tasks/:taskId/grades/part-one",
     "POST tasks/:taskId/submissions",
+    "PUT submissions/:submissionId/share",
     "PUT tasks/:taskId/draft",
   ]);
 });
@@ -91,6 +110,10 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
 test("controller forwards current learner, selected part, and task id", async () => {
   const calls: unknown[][] = [];
   const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
@@ -144,6 +167,12 @@ test("controller forwards current learner, selected part, and task id", async ()
       contentVersion: version,
     }
   );
+  await controller.shareSubmission("learner-1", 31);
+  await controller.unshareSubmission("learner-1", 31);
+  await controller.community("learner-1", 21, { cursor: 30, limit: 10 });
+  await controller.restoreCommunityResponse("learner-1", 21, 31, {
+    contentVersion: version,
+  });
 
   assert.deepEqual(calls, [
     ["learner-1"],
@@ -177,5 +206,9 @@ test("controller forwards current learner, selected part, and task id", async ()
     ["learner-1", 21, 40, 10],
     ["learner-1", 21, "OUTLINE", version],
     ["learner-1", 21, version, "SAMPLE"],
+    ["learner-1", 31],
+    ["learner-1", 31],
+    [21, 30, 10],
+    ["learner-1", 21, 31, version],
   ]);
 });
