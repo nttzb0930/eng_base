@@ -24,6 +24,7 @@
     "data:enrich-examples": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/enrich-vocab-examples.ts",
     "data:enrich-json": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/enrich-json.ts",
     "data:export-vocab": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/export-vocab.ts",
+    "data:reconcile-vocabulary-audio": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/dictionary-enrichment/reconcile-vocabulary-audio.ts",
     "data:export-vocab-snapshot": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/export-vocab-db-snapshot.ts",
     "data:export-vocab-risk": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/export-vocab-risk-audit.ts",
     "data:bootstrap-vocabulary": "dotenv -e ../../.env -- tsx ./scripts/vocabulary/database/bootstrap-vocabulary.ts",

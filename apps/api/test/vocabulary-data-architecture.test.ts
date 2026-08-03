@@ -170,3 +170,41 @@ test("AI prompts define stable runtime contracts without duplicated taxonomy", (
   assert.match(classificationPrompt, /schemaVersion/u);
   assert.match(expansionPrompt, /exactly 10 bilingual example pairs/iu);
 });
+
+test("audio reconciliation is catalog-only and provider independent", () => {
+  const enrichmentRoot = join(
+    apiRoot,
+    "scripts",
+    "vocabulary",
+    "dictionary-enrichment",
+  );
+  const plannerSource = readFileSync(
+    join(enrichmentRoot, "vocabulary-audio-reconciliation.ts"),
+    "utf8",
+  );
+  const cliSource = readFileSync(
+    join(enrichmentRoot, "reconcile-vocabulary-audio.ts"),
+    "utf8",
+  );
+  const packageJson = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8"),
+  ) as { scripts?: Record<string, string> };
+
+  assert.match(
+    packageJson.scripts?.["data:reconcile-vocabulary-audio"] ?? "",
+    /reconcile-vocabulary-audio\.ts/u,
+  );
+  assert.match(cliSource, /vocabulary_items\.findMany/u);
+  assert.match(
+    cliSource,
+    /vocabulary-catalog\.before-audio-reconciliation/u,
+  );
+  assert.doesNotMatch(
+    `${plannerSource}\n${cliSource}`,
+    /GoogleGenAI|generateContent|OPENAI_API_KEY|GEMINI_API_KEY/u,
+  );
+  assert.doesNotMatch(
+    cliSource,
+    /vocabulary_items\.(?:create|update|delete|upsert|createMany|updateMany|deleteMany)/u,
+  );
+});

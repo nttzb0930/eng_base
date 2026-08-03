@@ -114,6 +114,35 @@ audio or an example was found.
 Dictionary enrichment is not the AI Topic expansion flow. It enriches known
 records and must not silently create a new catalog identity or Topic relation.
 
+The legacy audio enrichment command writes provider results directly to
+PostgreSQL. Before treating the versioned catalog as desired state, reconcile
+valid database-only audio back into the canonical catalog through the narrow
+audio workflow:
+
+```powershell
+pnpm --filter @repo/api data:reconcile-vocabulary-audio -- plan
+pnpm --filter @repo/api data:reconcile-vocabulary-audio -- apply --confirm <token>
+```
+
+`plan` reads the validated catalog and the database audio projection, writes an
+ignored report below `working/dictionary-enrichment/`, and does not change the
+catalog or PostgreSQL. It matches `normalizedWord + pos + cefrLevel`, imports
+only complete `free-dictionary-api` pairs from the exact
+`api.dictionaryapi.dev` HTTPS host, and reports conflicts, partial pairs,
+unsupported sources, invalid URLs, duplicate identities, and drift. Database
+identities outside the catalog are retained and reported.
+
+Confirmed `apply` repeats the current plan, creates an ignored catalog backup,
+and atomically changes only `audioUrl` and `audioSource` in
+`vocabulary-catalog.json`. It never writes PostgreSQL or calls a provider.
+`data:export-vocab` is not a substitute for this repair because that command
+also merges example fields and example collections.
+
+After reviewing the catalog diff, run the production bootstrap through `plan`
+and `dry-run` again. Database bootstrap `apply` remains a separate confirmed
+operation with a fresh database backup; catalog reconciliation never authorizes
+that write.
+
 ## Normalization
 
 Normalization starts from an exported database snapshot and produces reviewable
