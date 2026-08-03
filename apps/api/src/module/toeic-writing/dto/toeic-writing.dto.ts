@@ -14,6 +14,7 @@ import type {
   ToeicWritingCoachingKind,
   ToeicWritingDraftPayload,
   ToeicWritingPartOneGradeRequest,
+  ToeicWritingPartTwoGradeRequest,
   ToeicWritingPart,
   ToeicWritingSubmissionPayload,
 } from "@repo/shared";
@@ -26,6 +27,22 @@ export class ToeicWritingPartQueryDto {
 }
 
 export class ToeicWritingPartOneGradeDto implements ToeicWritingPartOneGradeRequest {
+  @IsString()
+  @Length(64, 64)
+  @Matches(/^[a-f0-9]{64}$/)
+  contentVersion!: string;
+
+  @IsString()
+  responseText!: string;
+
+  @IsUUID()
+  idempotencyKey!: string;
+
+  @IsIn(["en", "vi"])
+  locale!: "en" | "vi";
+}
+
+export class ToeicWritingPartTwoGradeDto implements ToeicWritingPartTwoGradeRequest {
   @IsString()
   @Length(64, 64)
   @Matches(/^[a-f0-9]{64}$/)

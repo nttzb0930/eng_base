@@ -17,6 +17,7 @@ import {
   ToeicWritingCoachingParamsDto,
   ToeicWritingCoachingQueryDto,
   ToeicWritingCommunityQueryDto,
+  ToeicWritingPartTwoGradeDto,
 } from "../dto/toeic-writing.dto";
 import { ToeicWritingController } from "../toeic-writing.controller";
 
@@ -56,6 +57,28 @@ test("community pagination accepts positive cursors and caps pages at 20", () =>
 
   assert.equal(validateSync(valid).length, 0);
   assert.ok(validateSync(invalid).length > 0);
+});
+
+test("Part 2 grade DTO accepts only the browser-owned request fields", () => {
+  const valid = plainToInstance(ToeicWritingPartTwoGradeDto, {
+    contentVersion: version,
+    responseText: "Dear Customer, thank you for contacting us.",
+    idempotencyKey: "00000000-0000-4000-8000-000000000003",
+    locale: "vi",
+  });
+  const injected = plainToInstance(ToeicWritingPartTwoGradeDto, {
+    ...valid,
+    score: 4,
+    sourceEmail: "forged",
+  });
+
+  assert.equal(validateSync(valid).length, 0);
+  assert.ok(
+    validateSync(injected, {
+      whitelist: true,
+      forbidNonWhitelisted: true,
+    }).length > 0
+  );
 });
 
 test("TOEIC Writing controller exposes authenticated read routes", () => {
@@ -101,6 +124,7 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
     "POST tasks/:taskId/assistance/:kind",
     "POST tasks/:taskId/community/:submissionId/restore",
     "POST tasks/:taskId/grades/part-one",
+    "POST tasks/:taskId/grades/part-two",
     "POST tasks/:taskId/submissions",
     "PUT submissions/:submissionId/share",
     "PUT tasks/:taskId/draft",
@@ -110,6 +134,7 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
 test("controller forwards current learner, selected part, and task id", async () => {
   const calls: unknown[][] = [];
   const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
@@ -150,6 +175,12 @@ test("controller forwards current learner, selected part, and task id", async ()
     contentVersion: version,
     responseText: "The woman is preparing food.",
     locale: "en",
+  });
+  await controller.gradeWritingPartTwo("learner-1", 21, {
+    idempotencyKey: "00000000-0000-4000-8000-000000000003",
+    contentVersion: version,
+    responseText: "Dear Customer, thank you for contacting us.",
+    locale: "vi",
   });
   await controller.writingQuota("learner-1");
   await controller.grade("learner-1", 41);
@@ -199,6 +230,16 @@ test("controller forwards current learner, selected part, and task id", async ()
         contentVersion: version,
         responseText: "The woman is preparing food.",
         locale: "en",
+      },
+    ],
+    [
+      "learner-1",
+      21,
+      {
+        idempotencyKey: "00000000-0000-4000-8000-000000000003",
+        contentVersion: version,
+        responseText: "Dear Customer, thank you for contacting us.",
+        locale: "vi",
       },
     ],
     ["learner-1"],

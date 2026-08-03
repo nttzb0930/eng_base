@@ -24,6 +24,7 @@ import {
   ToeicWritingCommunityQueryDto,
   ToeicWritingGradeHistoryQueryDto,
   ToeicWritingPartOneGradeDto,
+  ToeicWritingPartTwoGradeDto,
   ToeicWritingPartQueryDto,
   ToeicWritingSubmissionDto,
 } from "./dto/toeic-writing.dto";
@@ -34,6 +35,7 @@ import { GetToeicWritingOverviewUseCase } from "./use-cases/get-toeic-writing-ov
 import { GetToeicWritingSubmissionUseCase } from "./use-cases/get-toeic-writing-submission.use-case";
 import { GetToeicWritingTaskUseCase } from "./use-cases/get-toeic-writing-task.use-case";
 import { GradeToeicWritingPartOneUseCase } from "./use-cases/grade-toeic-writing-part-one.use-case";
+import { GradeToeicWritingPartTwoUseCase } from "./use-cases/grade-toeic-writing-part-two.use-case";
 import { GetToeicWritingQuotaUseCase } from "./use-cases/get-toeic-writing-quota.use-case";
 import { GetToeicWritingGradeUseCase } from "./use-cases/get-toeic-writing-grade.use-case";
 import { ListToeicWritingGradesUseCase } from "./use-cases/list-toeic-writing-grades.use-case";
@@ -59,6 +61,7 @@ export class ToeicWritingController {
     private readonly submitWritingTask: SubmitToeicWritingTaskUseCase,
     private readonly getSubmission: GetToeicWritingSubmissionUseCase,
     private readonly gradePartOne: GradeToeicWritingPartOneUseCase,
+    private readonly gradePartTwo: GradeToeicWritingPartTwoUseCase,
     private readonly getWritingQuota: GetToeicWritingQuotaUseCase,
     private readonly getWritingGrade: GetToeicWritingGradeUseCase,
     private readonly listWritingGrades: ListToeicWritingGradesUseCase,
@@ -133,6 +136,16 @@ export class ToeicWritingController {
     @Body() body: ToeicWritingPartOneGradeDto
   ) {
     return this.gradePartOne.execute(userId, taskId, body);
+  }
+
+  @Post("tasks/:taskId/grades/part-two")
+  @WritingAiRateLimit()
+  gradeWritingPartTwo(
+    @CurrentUserId() userId: string,
+    @Param("taskId", ParseIntPipe) taskId: number,
+    @Body() body: ToeicWritingPartTwoGradeDto
+  ) {
+    return this.gradePartTwo.execute(userId, taskId, body);
   }
 
   @Get("ai-quota")

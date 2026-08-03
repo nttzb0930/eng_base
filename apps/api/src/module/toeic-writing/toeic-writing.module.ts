@@ -14,7 +14,10 @@ import {
 } from "./provider/gemini-writing.provider";
 import { PrismaWritingAiRepository } from "./repository/prisma-writing-ai.repository";
 import { PrismaWritingCoachingTaskSource } from "./repository/prisma-writing-coaching.repository";
-import { PrismaWritingPartOneTaskSource } from "./repository/prisma-writing-task.repository";
+import {
+  PrismaWritingPartOneTaskSource,
+  PrismaWritingPartTwoTaskSource,
+} from "./repository/prisma-writing-task.repository";
 import { OwnedWritingPictureResolver } from "./services/writing-picture-resolver";
 import { WritingAiObservabilityService } from "./observability/writing-ai-observability.service";
 import { DeleteToeicWritingDraftUseCase } from "./use-cases/delete-toeic-writing-draft.use-case";
@@ -25,6 +28,7 @@ import { GetToeicWritingOverviewUseCase } from "./use-cases/get-toeic-writing-ov
 import { GetToeicWritingSubmissionUseCase } from "./use-cases/get-toeic-writing-submission.use-case";
 import { GetToeicWritingTaskUseCase } from "./use-cases/get-toeic-writing-task.use-case";
 import { GradeToeicWritingPartOneUseCase } from "./use-cases/grade-toeic-writing-part-one.use-case";
+import { GradeToeicWritingPartTwoUseCase } from "./use-cases/grade-toeic-writing-part-two.use-case";
 import { GetToeicWritingQuotaUseCase } from "./use-cases/get-toeic-writing-quota.use-case";
 import { GetToeicWritingGradeUseCase } from "./use-cases/get-toeic-writing-grade.use-case";
 import { ListToeicWritingGradesUseCase } from "./use-cases/list-toeic-writing-grades.use-case";
@@ -101,12 +105,34 @@ import { UnshareToeicWritingSubmissionUseCase } from "./use-cases/unshare-toeic-
         ),
     },
     {
+      provide: GradeToeicWritingPartTwoUseCase,
+      inject: [PrismaService, geminiConfig.KEY],
+      useFactory: (
+        prisma: PrismaService,
+        gemini: ConfigType<typeof geminiConfig>
+      ) => {
+        const provider = gemini.enabled
+          ? new GeminiWritingProvider(
+              createGeminiWritingClient(gemini.apiKey),
+              gemini
+            )
+          : {
+              gradePartTwo: () =>
+                Promise.reject(new Error("Writing AI is disabled")),
+            };
+        return new GradeToeicWritingPartTwoUseCase(
+          new PrismaWritingPartTwoTaskSource(prisma),
+          new PrismaWritingAiRepository(prisma),
+          provider,
+          gemini
+        );
+      },
+    },
+    {
       provide: GetToeicWritingGradeUseCase,
       inject: [PrismaService],
       useFactory: (prisma: PrismaService) =>
-        new GetToeicWritingGradeUseCase(
-          new PrismaWritingAiRepository(prisma)
-        ),
+        new GetToeicWritingGradeUseCase(new PrismaWritingAiRepository(prisma)),
     },
     {
       provide: ListToeicWritingGradesUseCase,
