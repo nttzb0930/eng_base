@@ -41,7 +41,7 @@ function savePrisma(input: { part?: 1 | 2; sourceVersion?: string } = {}) {
   return { prisma, calls };
 }
 
-test("Part 1 draft rejects more than 1000 trimmed characters", async () => {
+test("Part 1 draft rejects more than 300 trimmed characters", async () => {
   const { prisma, calls } = savePrisma();
   const save = new SaveToeicWritingDraftUseCase(prisma);
 
@@ -49,35 +49,39 @@ test("Part 1 draft rejects more than 1000 trimmed characters", async () => {
     () =>
       save.execute("learner-1", 11, {
         contentVersion: version,
-        responseText: `  ${"x".repeat(1001)}  `,
+        responseText: `  ${"x".repeat(301)}  `,
       }),
     (error: unknown) => {
       const response = responseCode(error);
-      return response.statusCode === 400 && response.code === "WRITING_RESPONSE_INVALID";
+      return (
+        response.statusCode === 400 &&
+        response.code === "WRITING_RESPONSE_INVALID"
+      );
     }
   );
   assert.equal(calls.length, 0);
 });
 
-test("Part 2 draft accepts 10000 trimmed characters and preserves original whitespace", async () => {
+test("Part 2 draft accepts 2200 trimmed characters and preserves original whitespace", async () => {
   const { prisma, calls } = savePrisma({ part: 2 });
-  const responseText = `  ${"x".repeat(10_000)}  `;
+  const responseText = `  ${"x".repeat(2_200)}  `;
 
   await new SaveToeicWritingDraftUseCase(prisma).execute("learner-1", 11, {
     contentVersion: version,
     responseText,
   });
 
-  const create = (
-    calls[0] as { create: { response_text: string }; update: { response_text: string } }
-  );
+  const create = calls[0] as {
+    create: { response_text: string };
+    update: { response_text: string };
+  };
   assert.equal(create.create.response_text, responseText);
   assert.equal(create.update.response_text, responseText);
 });
 
 test("Part 1 draft counts astral Unicode characters as one code point", async () => {
   const { prisma, calls } = savePrisma();
-  const responseText = `  ${"😀".repeat(1_000)}  `;
+  const responseText = `  ${"😀".repeat(300)}  `;
 
   await new SaveToeicWritingDraftUseCase(prisma).execute("learner-1", 11, {
     contentVersion: version,
@@ -133,10 +137,9 @@ test("draft reads are scoped to the current learner and task", async () => {
     11
   );
 
-  assert.deepEqual(
-    (calls[0] as { where: unknown }).where,
-    { user_id_task_id: { user_id: "learner-2", task_id: 11 } }
-  );
+  assert.deepEqual((calls[0] as { where: unknown }).where, {
+    user_id_task_id: { user_id: "learner-2", task_id: 11 },
+  });
   assert.deepEqual(result, {
     id: 31,
     taskId: 11,
