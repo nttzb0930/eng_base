@@ -41,6 +41,16 @@ follow the ownership and dependency rules in
 - **TOEIC Reading attempt**: an authenticated Learner submission for one
   published TOEIC test version. The API grades it from server-owned answer keys
   and stores immutable per-question, per-Part, and explanation snapshots.
+- **TOEIC Writing task**: one published, versioned Part 1 or Part 2 prompt owned
+  by the TOEIC Writing catalog. Safe task delivery contains only exercise
+  material; reference responses remain private until submission.
+- **TOEIC Writing draft**: the single mutable response for one Learner and one
+  TOEIC Writing task. It is stored in PostgreSQL with the task content version
+  and is never learner progress in `localStorage`.
+- **TOEIC Writing submission**: an immutable, Learner-owned response created
+  with an idempotency key. It snapshots the task title, Part, and
+  source-provided reference material at submission time for stable historical
+  comparison but does not imply a score or AI feedback.
 - **TOEIC Grammar snapshot**: one checksum-approved, source-owned catalog of
   Grammar topics, subtopics, lessons, shared questions, mixed sets, and
   difficulty memberships. Grammar supports TOEIC Reading but is not owned by a
@@ -95,6 +105,10 @@ follow the ownership and dependency rules in
 - TOEIC Reading owns safe published-test delivery, version-aware grading, and
   Learner-scoped attempt history. Test detail never exposes correctness or
   grading explanations before submission.
+- TOEIC Writing owns published Part 1-2 prompts, version-aware drafts,
+  idempotent submissions, and post-submission reference comparison. AI grading
+  is a separate future capability and must not be inferred from reference
+  content.
 - TOEIC Listening keeps Full Test exam-safe in the normal learner UI. Part
   practice may grade one explicit selection at a time and return only that
   question's translation, explanation, and vocabulary-catalog matches; test

@@ -1070,6 +1070,102 @@
       "vocabulary": "Từ vựng nên học"
     }
   },
+  "toeicWriting": {
+    "overview": {
+      "writing": "Viết",
+      "description": "Luyện viết câu theo tranh và phản hồi email trong bài thi TOEIC Writing.",
+      "tasks": "Bài đã xuất bản",
+      "submitted": "Đã nộp",
+      "openWriting": "Mở phần Viết",
+      "noContent": "Bài luyện viết sẽ hiển thị sau khi được xuất bản."
+    },
+    "catalog": {
+      "back": "Quay lại TOEIC",
+      "eyebrow": "TOEIC Writing",
+      "title": "Luyện viết TOEIC",
+      "description": "Chọn Part 1 hoặc Part 2, lưu bài đang viết và đối chiếu với bài tham khảo sau khi nộp.",
+      "partLabel": "Phần thi viết",
+      "part1": "Part 1: Viết một câu",
+      "part2": "Part 2: Phản hồi email",
+      "part1Description": "Viết một câu mô tả tranh bằng các từ bắt buộc.",
+      "part2Description": "Viết email phản hồi đầy đủ các yêu cầu được đưa ra.",
+      "published": "Bài đã xuất bản",
+      "submitted": "Đã nộp",
+      "available": "Bài có thể luyện",
+      "emptyTitle": "Chưa có bài luyện viết",
+      "emptyDescription": "Các bài TOEIC Writing đã xuất bản sẽ hiển thị tại đây.",
+      "errorTitle": "Không thể tải TOEIC Writing",
+      "errorDescription": "Hãy kiểm tra kết nối và thử lại.",
+      "retry": "Thử lại"
+    },
+    "card": {
+      "taskNumber": "Bài {number}",
+      "submitted": "Đã nộp",
+      "draft": "Đã lưu nháp",
+      "notStarted": "Chưa làm",
+      "start": "Bắt đầu viết",
+      "continue": "Tiếp tục viết",
+      "difficulty": {
+        "easy": "Dễ",
+        "medium": "Trung bình"
+      }
+    },
+    "session": {
+      "part": "Part {part}",
+      "taskNumber": "Bài {number}",
+      "backToTasks": "Quay lại danh sách bài viết",
+      "prompt": "Hình ảnh và yêu cầu",
+      "emailPrompt": "Nội dung email",
+      "requiredWords": "Từ bắt buộc",
+      "requirements": "Yêu cầu cần trả lời",
+      "imageLoading": "Đang tải hình ảnh",
+      "imageError": "Không thể tải hình ảnh của bài này.",
+      "yourResponse": "Bài viết của bạn",
+      "editorDescription": "Bản nháp được lưu an toàn theo tài khoản trong khi bạn viết.",
+      "placeholder": "Nhập bài viết của bạn tại đây...",
+      "wordCount": "{count} từ",
+      "characterCount": "{count}/{max} ký tự",
+      "saveStatus": {
+        "IDLE": "Chưa lưu",
+        "SAVING": "Đang lưu...",
+        "SAVED": "Đã lưu",
+        "ERROR": "Chưa lưu được"
+      },
+      "saveNow": "Lưu ngay",
+      "saveErrorTitle": "Thay đổi mới nhất chưa được lưu",
+      "saveErrorDescription": "Bài viết vẫn còn trong trình soạn thảo. Hãy kiểm tra kết nối và thử lại.",
+      "retrySave": "Thử lưu lại",
+      "submit": "Nộp bài",
+      "submitting": "Đang nộp...",
+      "submitErrorTitle": "Không thể nộp bài",
+      "submitErrorDescription": "Bài viết chưa bị xóa. Hãy kiểm tra trạng thái bản nháp và thử lại.",
+      "loadErrorTitle": "Không thể tải bài luyện viết này",
+      "loadErrorDescription": "Bài có thể chưa sẵn sàng hoặc đường dẫn không đúng với Part của bài.",
+      "retry": "Thử lại"
+    },
+    "result": {
+      "part": "Part {part}",
+      "submitted": "Đã nộp",
+      "submittedAt": "Đã nộp {date}",
+      "learnerResponse": "Bài viết của bạn",
+      "referenceTitle": "Nội dung tham khảo",
+      "notScored": "Đối chiếu tham khảo, không phải điểm số",
+      "referenceDescription": "Dùng các ví dụ và gợi ý này để tự xem lại bài viết. Đây không phải điểm số hoặc phản hồi tự động.",
+      "sampleResponses": "Câu trả lời mẫu",
+      "sampleResponse": "Bài trả lời mẫu",
+      "structureSuggestions": "Gợi ý cấu trúc",
+      "ideas": "Ý tưởng có thể triển khai",
+      "outlineLevel1": "Dàn ý cơ bản",
+      "outlineLevel2": "Dàn ý mở rộng",
+      "chunksLevel1": "Cụm từ cốt lõi",
+      "chunksLevel2": "Cụm từ mở rộng",
+      "startAgain": "Làm lại bài này",
+      "backToWriting": "Quay lại phần Viết",
+      "loadErrorTitle": "Không thể tải bài đã nộp",
+      "loadErrorDescription": "Bài nộp có thể không tồn tại hoặc thuộc một tài khoản khác.",
+      "retry": "Thử lại"
+    }
+  },
   "toeicReading": {
     "part": "Part {part}",
     "error": {

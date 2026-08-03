@@ -1,0 +1,109 @@
+import "reflect-metadata";
+
+import assert from "node:assert/strict";
+import test from "node:test";
+import { RequestMethod } from "@nestjs/common";
+import {
+  GUARDS_METADATA,
+  METHOD_METADATA,
+  PATH_METADATA,
+} from "@nestjs/common/constants";
+
+import { UserJwtGuard } from "../../../common/guards/user-jwt.guard";
+import { ToeicWritingController } from "../toeic-writing.controller";
+
+const version = "a".repeat(64);
+
+test("TOEIC Writing controller exposes authenticated read routes", () => {
+  assert.equal(
+    Reflect.getMetadata(PATH_METADATA, ToeicWritingController),
+    "toeic/writing"
+  );
+  const guards = Reflect.getMetadata(
+    GUARDS_METADATA,
+    ToeicWritingController
+  ) as unknown[];
+  assert.ok(guards.includes(UserJwtGuard));
+
+  const routes = Object.getOwnPropertyNames(ToeicWritingController.prototype)
+    .flatMap((property) => {
+      const handler = Object.getOwnPropertyDescriptor(
+        ToeicWritingController.prototype,
+        property
+      )?.value as unknown;
+      if (typeof handler !== "function") return [];
+      const path = Reflect.getMetadata(PATH_METADATA, handler) as
+        | string
+        | undefined;
+      const method = Reflect.getMetadata(METHOD_METADATA, handler) as
+        | RequestMethod
+        | undefined;
+      if (path === undefined || method === undefined) return [];
+      return [`${RequestMethod[method]} ${path}`];
+    })
+    .sort();
+
+  assert.deepEqual(routes, [
+    "DELETE tasks/:taskId/draft",
+    "GET overview",
+    "GET submissions/:submissionId",
+    "GET tasks",
+    "GET tasks/:taskId",
+    "GET tasks/:taskId/draft",
+    "POST tasks/:taskId/submissions",
+    "PUT tasks/:taskId/draft",
+  ]);
+});
+
+test("controller forwards current learner, selected part, and task id", async () => {
+  const calls: unknown[][] = [];
+  const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never
+  );
+
+  await controller.overview("learner-1");
+  await controller.tasks("learner-1", { part: 2 });
+  await controller.task("learner-1", 21);
+  await controller.draft("learner-1", 21);
+  await controller.saveDraft("learner-1", 21, {
+    contentVersion: version,
+    responseText: "answer",
+  });
+  await controller.deleteDraft("learner-1", 21);
+  await controller.submit("learner-1", 21, {
+    submissionKey: "00000000-0000-4000-8000-000000000001",
+    contentVersion: version,
+    responseText: "answer",
+  });
+  await controller.submission("learner-1", 31);
+
+  assert.deepEqual(calls, [
+    ["learner-1"],
+    ["learner-1", 2],
+    ["learner-1", 21],
+    ["learner-1", 21],
+    [
+      "learner-1",
+      21,
+      { contentVersion: version, responseText: "answer" },
+    ],
+    ["learner-1", 21],
+    [
+      "learner-1",
+      21,
+      {
+        submissionKey: "00000000-0000-4000-8000-000000000001",
+        contentVersion: version,
+        responseText: "answer",
+      },
+    ],
+    ["learner-1", 31],
+  ]);
+});

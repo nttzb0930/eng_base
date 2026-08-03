@@ -1070,6 +1070,102 @@
       "vocabulary": "Vocabulary to learn"
     }
   },
+  "toeicWriting": {
+    "overview": {
+      "writing": "Writing",
+      "description": "Practice picture-based sentences and email responses for TOEIC Writing.",
+      "tasks": "Published tasks",
+      "submitted": "Submitted",
+      "openWriting": "Open Writing",
+      "noContent": "Writing tasks will appear after they are published."
+    },
+    "catalog": {
+      "back": "Back to TOEIC",
+      "eyebrow": "TOEIC Writing",
+      "title": "Practice TOEIC Writing",
+      "description": "Choose Part 1 or Part 2, save your work, and compare it with reference responses after submitting.",
+      "partLabel": "Writing part",
+      "part1": "Part 1: Write a sentence",
+      "part2": "Part 2: Respond to an email",
+      "part1Description": "Write one sentence about a picture using the required words.",
+      "part2Description": "Write an email response that covers every requirement.",
+      "published": "Published tasks",
+      "submitted": "Submitted",
+      "available": "Available tasks",
+      "emptyTitle": "No Writing tasks yet",
+      "emptyDescription": "Published TOEIC Writing tasks will appear here.",
+      "errorTitle": "TOEIC Writing could not be loaded",
+      "errorDescription": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "card": {
+      "taskNumber": "Task {number}",
+      "submitted": "Submitted",
+      "draft": "Draft saved",
+      "notStarted": "Not started",
+      "start": "Start writing",
+      "continue": "Continue writing",
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium"
+      }
+    },
+    "session": {
+      "part": "Part {part}",
+      "taskNumber": "Task {number}",
+      "backToTasks": "Back to Writing tasks",
+      "prompt": "Picture and instructions",
+      "emailPrompt": "Email prompt",
+      "requiredWords": "Required words",
+      "requirements": "Response requirements",
+      "imageLoading": "Loading task image",
+      "imageError": "The task image could not be loaded.",
+      "yourResponse": "Your response",
+      "editorDescription": "Your draft is saved securely to your account while you write.",
+      "placeholder": "Write your response here...",
+      "wordCount": "{count, plural, =1 {# word} other {# words}}",
+      "characterCount": "{count}/{max} characters",
+      "saveStatus": {
+        "IDLE": "Not saved yet",
+        "SAVING": "Saving...",
+        "SAVED": "Saved",
+        "ERROR": "Not saved"
+      },
+      "saveNow": "Save now",
+      "saveErrorTitle": "Your latest changes were not saved",
+      "saveErrorDescription": "Your response is still in the editor. Check your connection and try again.",
+      "retrySave": "Retry save",
+      "submit": "Submit response",
+      "submitting": "Submitting...",
+      "submitErrorTitle": "The response could not be submitted",
+      "submitErrorDescription": "Your writing has not been cleared. Check the draft status and try again.",
+      "loadErrorTitle": "This Writing task could not be loaded",
+      "loadErrorDescription": "The task may be unavailable or the route may not match its Part.",
+      "retry": "Try again"
+    },
+    "result": {
+      "part": "Part {part}",
+      "submitted": "Submitted",
+      "submittedAt": "Submitted {date}",
+      "learnerResponse": "Your response",
+      "referenceTitle": "Reference material",
+      "notScored": "Reference comparison, not a score",
+      "referenceDescription": "Use these examples and suggestions to review your response. They do not represent a grade or automated feedback.",
+      "sampleResponses": "Sample responses",
+      "sampleResponse": "Sample response",
+      "structureSuggestions": "Structure suggestions",
+      "ideas": "Ideas to explore",
+      "outlineLevel1": "Essential outline",
+      "outlineLevel2": "Expanded outline",
+      "chunksLevel1": "Useful core phrases",
+      "chunksLevel2": "Useful extended phrases",
+      "startAgain": "Start again",
+      "backToWriting": "Back to Writing",
+      "loadErrorTitle": "This submission could not be loaded",
+      "loadErrorDescription": "The submission may not exist or may belong to another account.",
+      "retry": "Try again"
+    }
+  },
   "toeicReading": {
     "part": "Part {part}",
     "error": {

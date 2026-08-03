@@ -14,3 +14,4 @@ export * from "./toeic-reading.js";
 export * from "./toeic-listening.js";
 export * from "./toeic-grammar.js";
 export * from "./toeic-dictation.js";
+export * from "./toeic-writing.js";
