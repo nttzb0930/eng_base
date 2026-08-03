@@ -75,7 +75,8 @@
     "data:import-toeic-grammar": "dotenv -e ../../.env -- tsx ./scripts/toeic-grammar/import-toeic-grammar.ts",
     "data:inventory-toeic-writing": "tsx ./scripts/toeic-writing/inventory-toeic-writing.ts",
     "data:download-toeic-writing": "tsx ./scripts/toeic-writing/download-toeic-writing.ts",
-    "data:validate-toeic-writing": "tsx ./scripts/toeic-writing/validate-toeic-writing.ts"
+    "data:validate-toeic-writing": "tsx ./scripts/toeic-writing/validate-toeic-writing.ts",
+    "data:import-toeic-writing": "dotenv -e ../../.env -- tsx ./scripts/toeic-writing/import-toeic-writing.ts"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",

@@ -22,9 +22,9 @@ model users {
   /// Thời điểm email được xác thực; null với tài khoản mới chưa xác thực
   email_verified_at               DateTime?
   /// Mã xác thực đã hash, chỉ tồn tại trong thời gian chờ xác thực
-  verification_code_hash         String?
-  verification_code_expires_at   DateTime?
-  verification_attempts          Int                               @default(0)
+  verification_code_hash          String?
+  verification_code_expires_at    DateTime?
+  verification_attempts           Int                               @default(0)
   verification_sent_at            DateTime?
   password_reset_code_hash        String?
   password_reset_code_expires_at  DateTime?
@@ -44,6 +44,8 @@ model users {
   grammar_question_progress       grammar_question_progress[]
   toeic_dictation_progress        toeic_dictation_progress[]
   toeic_dictation_attempts        toeic_dictation_attempts[]
+  toeic_writing_drafts            toeic_writing_drafts[]
+  toeic_writing_submissions       toeic_writing_submissions[]
 
   @@index([role])
   @@index([email])
@@ -85,13 +87,14 @@ model challenges {
 }
 
 model courses {
-  id              Int               @id @default(autoincrement())
-  code            String            @unique
-  title           String
-  image_src       String
-  units           units[]
-  user_progress   user_progress[]
-  toeic_test_sets toeic_test_sets[]
+  id                 Int                  @id @default(autoincrement())
+  code               String               @unique
+  title              String
+  image_src          String
+  units              units[]
+  user_progress      user_progress[]
+  toeic_test_sets    toeic_test_sets[]
+  toeic_writing_sets toeic_writing_sets[]
 }
 
 model toeic_test_sets {
@@ -997,6 +1000,85 @@ model grammar_question_progress {
   @@index([user_id, updated_at], map: "grammar_progress_user_updated_idx")
 }
 
+model toeic_writing_sets {
+  id            Int                   @id @default(autoincrement())
+  course_id     Int
+  source        String
+  source_set_id String
+  title         String
+  order_index   Int
+  created_at    DateTime              @default(now()) @db.Timestamp(6)
+  updated_at    DateTime              @default(now()) @updatedAt @db.Timestamp(6)
+  courses       courses               @relation(fields: [course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_sets_course_id_fkey")
+  tasks         toeic_writing_tasks[]
+
+  @@unique([course_id, source, source_set_id], map: "toeic_writing_sets_course_source_key")
+  @@index([course_id, order_index], map: "toeic_writing_sets_course_order_idx")
+}
+
+model toeic_writing_tasks {
+  id                 Int                              @id @default(autoincrement())
+  set_id             Int
+  source             String
+  source_task_id     String
+  part               Int
+  order_index        Int
+  title              String
+  difficulty         String
+  instructions_en    String                           @db.Text
+  instructions_vi    String?                          @db.Text
+  payload            Json
+  image_storage_path String?
+  image_sha256       String?                          @db.VarChar(64)
+  image_bytes        Int?
+  image_content_type String?
+  source_version     String                           @db.VarChar(64)
+  content_sha256     String                           @db.VarChar(64)
+  provenance         Json
+  license_reference  String
+  status             toeic_writing_publication_status @default(DRAFT)
+  published_at       DateTime?                        @db.Timestamp(6)
+  created_at         DateTime                         @default(now()) @db.Timestamp(6)
+  updated_at         DateTime                         @default(now()) @updatedAt @db.Timestamp(6)
+  set                toeic_writing_sets               @relation(fields: [set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_tasks_set_id_fkey")
+  drafts             toeic_writing_drafts[]
+  submissions        toeic_writing_submissions[]
+
+  @@unique([source, source_task_id], map: "toeic_writing_tasks_source_task_key")
+  @@unique([set_id, part, order_index], map: "toeic_writing_tasks_set_part_order_key")
+  @@index([status, part, order_index], map: "toeic_writing_tasks_catalog_idx")
+}
+
+model toeic_writing_drafts {
+  id              Int                 @id @default(autoincrement())
+  user_id         String
+  task_id         Int
+  response_text   String              @db.Text
+  content_version String              @db.VarChar(64)
+  created_at      DateTime            @default(now()) @db.Timestamp(6)
+  updated_at      DateTime            @default(now()) @updatedAt @db.Timestamp(6)
+  users           users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_drafts_user_id_fkey")
+  task            toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_drafts_task_id_fkey")
+
+  @@unique([user_id, task_id], map: "toeic_writing_drafts_user_task_key")
+}
+
+model toeic_writing_submissions {
+  id              Int                 @id @default(autoincrement())
+  user_id         String
+  task_id         Int
+  submission_key  String              @db.Uuid
+  response_text   String              @db.Text
+  content_version String              @db.VarChar(64)
+  submitted_at    DateTime            @default(now()) @db.Timestamp(6)
+  users           users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_submissions_user_id_fkey")
+  task            toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_writing_submissions_task_id_fkey")
+
+  @@unique([user_id, submission_key], map: "toeic_writing_submissions_user_key")
+  @@index([user_id, submitted_at], map: "toeic_writing_submissions_user_submitted_idx")
+  @@index([user_id, task_id], map: "toeic_writing_submissions_user_task_idx")
+}
+
 enum challenge_direction {
   EN_TO_VI
   VI_TO_EN
@@ -1037,6 +1119,11 @@ enum toeic_dictation_practice_mode {
   CHECK
   DICTATION
   FULL
+}
+
+enum toeic_writing_publication_status {
+  DRAFT
+  PUBLISHED
 }
 
 model system_settings {
