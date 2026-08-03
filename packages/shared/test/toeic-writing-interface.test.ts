@@ -9,6 +9,8 @@ import {
   TOEIC_WRITING_WORD_LIMITS,
   type ToeicWritingPartOneGradeRequest,
   type ToeicWritingPartOneGradeResult,
+  type ToeicWritingPartTwoGradeRequest,
+  type ToeicWritingPartTwoGradeResult,
   type ToeicWritingDraftPayload,
   type ToeicWritingSubmissionPayload,
   type ToeicWritingTaskDetail,
@@ -125,4 +127,62 @@ test("Writing publishes official Part response limits and AI grading contracts",
   assert.equal(request.locale, "vi");
   assert.equal(result.score, 3);
   assert.equal(result.quota.remaining, 4);
+
+  const partTwoRequest: ToeicWritingPartTwoGradeRequest = {
+    contentVersion: "b".repeat(64),
+    responseText: "Dear Mr. Brown, thank you for contacting us.",
+    idempotencyKey: "00000000-0000-4000-8000-000000000002",
+    locale: "en",
+  };
+  const evidence = { start: 0, end: 14, text: "Dear Mr. Brown" };
+  const partTwoResult: ToeicWritingPartTwoGradeResult = {
+    id: 2,
+    taskId: 13,
+    score: 4,
+    scoreLabel: "Excellent",
+    taskCompletion: {
+      status: "PASS",
+      completedCount: 1,
+      totalCount: 1,
+      requirements: [
+        {
+          requirementId: "requirement-1",
+          status: "MET",
+          comment: "Complete.",
+          evidence: [evidence],
+          suggestedFix: null,
+        },
+      ],
+    },
+    sentenceVariety: {
+      status: "PASS",
+      detected: [{ kind: "COMPLEX", evidence }],
+      feedback: "Varied.",
+    },
+    tone: {
+      status: "PASS",
+      feedback: "Professional.",
+      suggestedOpening: null,
+    },
+    grammar: { status: "PASS", errors: [], feedback: "Accurate." },
+    paraphrase: { status: "PASS", copiedRanges: [], feedback: "Original." },
+    overallFeedback: "A complete response.",
+    strengths: ["Clear tone"],
+    improvements: [],
+    improvedEmail: {
+      text: partTwoRequest.responseText,
+      wordCount: 8,
+      differences: [],
+      requirementCoverage: [
+        { requirementId: "requirement-1", evidence: [evidence] },
+      ],
+    },
+    quota: result.quota,
+    cached: false,
+    assistance: result.assistance,
+  };
+
+  assert.equal(partTwoRequest.locale, "en");
+  assert.equal(partTwoResult.score, 4);
+  assert.equal(partTwoResult.taskCompletion.requirements[0]?.status, "MET");
 });

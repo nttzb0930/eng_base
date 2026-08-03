@@ -122,6 +122,26 @@ export type ToeicWritingPartOneGradeRequest = {
   locale: ToeicWritingLocale;
 };
 
+export type ToeicWritingPartTwoValidationIssueCode =
+  "MIN_WORDS" | "MAX_WORDS" | "MAX_CHARACTERS" | "OBVIOUS_SPAM";
+
+export type ToeicWritingPartTwoValidationIssue = {
+  code: ToeicWritingPartTwoValidationIssueCode;
+};
+
+export type ToeicWritingValidationResult = {
+  valid: boolean;
+  issues: ToeicWritingPartTwoValidationIssue[];
+  wordCount: number;
+};
+
+export type ToeicWritingPartTwoGradeRequest = {
+  contentVersion: string;
+  responseText: string;
+  idempotencyKey: string;
+  locale: ToeicWritingLocale;
+};
+
 export type ToeicWritingAssistanceSnapshot = {
   outlineViewed: boolean;
   vocabularyViewed: boolean;
@@ -191,8 +211,7 @@ export type ToeicWritingCommunityPage = {
 };
 
 export type ToeicWritingSubmissionShareResult =
-  | { shared: true; sharedAt: string }
-  | { shared: false };
+  { shared: true; sharedAt: string } | { shared: false };
 
 export type ToeicWritingAiQuota = {
   dailyLimit: number;
@@ -240,6 +259,94 @@ export type ToeicWritingPartOneGradeDetail = Omit<
 > & {
   responseText: string;
   createdAt: string;
+};
+
+export type ToeicWritingEvidenceRange = {
+  start: number;
+  end: number;
+  text: string;
+};
+
+export type ToeicWritingRequirementStatus = "MET" | "PARTIAL" | "MISSING";
+export type ToeicWritingFeedbackStatus = "PASS" | "WARN" | "FAIL";
+export type ToeicWritingGrammarSeverity = "SERIOUS" | "MINOR";
+
+export type ToeicWritingRequirementFeedback = {
+  requirementId: string;
+  status: ToeicWritingRequirementStatus;
+  comment: string;
+  evidence: ToeicWritingEvidenceRange[];
+  suggestedFix: string | null;
+};
+
+export type ToeicWritingTaskCompletionFeedback = {
+  status: ToeicWritingFeedbackStatus;
+  completedCount: number;
+  totalCount: number;
+  requirements: ToeicWritingRequirementFeedback[];
+};
+
+export type ToeicWritingSentenceVarietyFeedback = {
+  status: ToeicWritingFeedbackStatus;
+  detected: Array<{
+    kind: "SIMPLE" | "COMPOUND" | "COMPLEX";
+    evidence: ToeicWritingEvidenceRange;
+  }>;
+  feedback: string;
+};
+
+export type ToeicWritingToneFeedback = {
+  status: ToeicWritingFeedbackStatus;
+  feedback: string;
+  suggestedOpening: string | null;
+};
+
+export type ToeicWritingGrammarError = {
+  severity: ToeicWritingGrammarSeverity;
+  evidence: ToeicWritingEvidenceRange;
+  correction: string;
+  explanation: string;
+};
+
+export type ToeicWritingGrammarFeedback = {
+  status: ToeicWritingFeedbackStatus;
+  errors: ToeicWritingGrammarError[];
+  feedback: string;
+};
+
+export type ToeicWritingParaphraseFeedback = {
+  status: ToeicWritingFeedbackStatus;
+  copiedRanges: ToeicWritingEvidenceRange[];
+  feedback: string;
+};
+
+export type ToeicWritingImprovedEmail = {
+  text: string;
+  wordCount: number;
+  differences: string[];
+  requirementCoverage: Array<{
+    requirementId: string;
+    evidence: ToeicWritingEvidenceRange[];
+  }>;
+};
+
+export type ToeicWritingPartTwoGradeResult = {
+  id: number;
+  taskId: number;
+  score: 0 | 1 | 2 | 3 | 4;
+  scoreLabel: string;
+  taskCompletion: ToeicWritingTaskCompletionFeedback;
+  sentenceVariety: ToeicWritingSentenceVarietyFeedback;
+  tone: ToeicWritingToneFeedback;
+  grammar: ToeicWritingGrammarFeedback;
+  paraphrase: ToeicWritingParaphraseFeedback;
+  overallFeedback: string;
+  strengths: string[];
+  improvements: string[];
+  improvedEmail: ToeicWritingImprovedEmail;
+  quota: ToeicWritingAiQuota;
+  cached: boolean;
+  assistance: ToeicWritingAssistanceSnapshot;
 };
 
 export type ToeicWritingGradeHistoryItem = {
