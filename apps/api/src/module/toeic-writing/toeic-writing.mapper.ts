@@ -34,11 +34,9 @@ export type ToeicWritingSubmissionRecord = {
   content_version: string;
   response_text: string;
   submitted_at: Date;
-  task: {
-    part: number;
-    title: string;
-    payload: unknown;
-  };
+  task_title: string;
+  task_part: number;
+  reference_snapshot: unknown;
 };
 
 type PartOnePayload = {
@@ -207,34 +205,76 @@ export function mapToeicWritingReference(
   };
 }
 
+function parseToeicWritingReferenceSnapshot(
+  part: number,
+  value: unknown
+): ToeicWritingPartOneReference | ToeicWritingPartTwoReference {
+  if (!isObject(value)) return writingTaskNotFound();
+  if (part === 1) {
+    if (
+      !stringArray(value.samplesEn) ||
+      !stringArray(value.samplesVi) ||
+      !stringArray(value.structureSuggestions) ||
+      !stringArray(value.ideas)
+    ) {
+      return writingTaskNotFound();
+    }
+    return {
+      samplesEn: value.samplesEn,
+      samplesVi: value.samplesVi,
+      structureSuggestions: value.structureSuggestions,
+      ideas: value.ideas,
+    };
+  }
+  if (
+    part !== 2 ||
+    typeof value.sampleEn !== "string" ||
+    !nullableString(value.sampleVi) ||
+    !stringArray(value.outlineLevel1) ||
+    !stringArray(value.outlineLevel2) ||
+    !stringArray(value.chunksLevel1) ||
+    !stringArray(value.chunksLevel2)
+  ) {
+    return writingTaskNotFound();
+  }
+  return {
+    sampleEn: value.sampleEn,
+    sampleVi: value.sampleVi,
+    outlineLevel1: value.outlineLevel1,
+    outlineLevel2: value.outlineLevel2,
+    chunksLevel1: value.chunksLevel1,
+    chunksLevel2: value.chunksLevel2,
+  };
+}
+
 export function mapToeicWritingSubmissionResult(
   submission: ToeicWritingSubmissionRecord
 ): ToeicWritingSubmissionResult {
   const base = {
     id: submission.id,
     taskId: submission.task_id,
-    taskTitle: submission.task.title,
+    taskTitle: submission.task_title,
     contentVersion: submission.content_version,
     responseText: submission.response_text,
     submittedAt: submission.submitted_at.toISOString(),
   };
-  if (submission.task.part === 1) {
+  if (submission.task_part === 1) {
     return {
       ...base,
       part: 1,
-      reference: mapToeicWritingReference({
-        part: 1,
-        payload: submission.task.payload,
-      }) as ToeicWritingPartOneReference,
+      reference: parseToeicWritingReferenceSnapshot(
+        1,
+        submission.reference_snapshot
+      ) as ToeicWritingPartOneReference,
     };
   }
-  if (submission.task.part !== 2) return writingTaskNotFound();
+  if (submission.task_part !== 2) return writingTaskNotFound();
   return {
     ...base,
     part: 2,
-    reference: mapToeicWritingReference({
-      part: 2,
-      payload: submission.task.payload,
-    }) as ToeicWritingPartTwoReference,
+    reference: parseToeicWritingReferenceSnapshot(
+      2,
+      submission.reference_snapshot
+    ) as ToeicWritingPartTwoReference,
   };
 }

@@ -1,6 +1,15 @@
 export type ToeicWritingPart = 1 | 2;
 export type ToeicWritingDifficulty = "EASY" | "MEDIUM";
 
+export const TOEIC_WRITING_RESPONSE_LIMITS = {
+  1: 1_000,
+  2: 10_000,
+} as const satisfies Record<ToeicWritingPart, number>;
+
+export function getToeicWritingResponseLength(responseText: string): number {
+  return Array.from(responseText.trim()).length;
+}
+
 export type ToeicWritingOverview = {
   publishedTaskCount: number;
   submittedTaskCount: number;

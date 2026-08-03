@@ -1064,15 +1064,18 @@ model toeic_writing_drafts {
 }
 
 model toeic_writing_submissions {
-  id              Int                 @id @default(autoincrement())
-  user_id         String
-  task_id         Int
-  submission_key  String              @db.Uuid
-  response_text   String              @db.Text
-  content_version String              @db.VarChar(64)
-  submitted_at    DateTime            @default(now()) @db.Timestamp(6)
-  users           users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_submissions_user_id_fkey")
-  task            toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_writing_submissions_task_id_fkey")
+  id                 Int                 @id @default(autoincrement())
+  user_id            String
+  task_id            Int
+  submission_key     String              @db.Uuid
+  response_text      String              @db.Text
+  content_version    String              @db.VarChar(64)
+  task_title         String              @db.Text
+  task_part          Int
+  reference_snapshot Json
+  submitted_at       DateTime            @default(now()) @db.Timestamp(6)
+  users              users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_submissions_user_id_fkey")
+  task               toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_writing_submissions_task_id_fkey")
 
   @@unique([user_id, submission_key], map: "toeic_writing_submissions_user_key")
   @@index([user_id, submitted_at], map: "toeic_writing_submissions_user_submitted_idx")

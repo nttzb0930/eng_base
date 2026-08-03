@@ -94,7 +94,7 @@ export function ToeicOverviewView() {
 
         <section
           aria-label={t("overview.skills")}
-          className="mt-8 grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3"
+          className="mt-8 grid items-stretch gap-5 lg:grid-cols-2 xl:grid-cols-3"
         >
           <article className="bg-card flex min-h-[21rem] flex-col rounded-2xl border-2 border-emerald-500/70 p-6 shadow-sm">
             <div className="flex items-start justify-between gap-4">

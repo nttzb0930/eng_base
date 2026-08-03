@@ -27,7 +27,7 @@ Learner, nghiệp vụ API và dữ liệu cần thiết đã kết nối end-to
 | 6.3  | Quiz hai chiều        | **Đã triển khai**          | Mở rộng coverage và analytics theo từng hướng.                                  |
 | 6.5  | Đáp án nhiễu          | **Đã triển khai một phần** | Đưa Topic practice về backend và nâng chất lượng distractor.                    |
 | 6.6  | Reading theo level    | **Đã triển khai một phần** | Mở rộng A2–B2; thêm highlight/dictionary và triển khai migration vận hành.      |
-| 6.7  | AI sửa Writing        | **Chưa triển khai**        | Xây Writing workflow và AI feedback có cấu trúc.                                |
+| 6.7  | AI sửa Writing        | **Đã có nền tảng non-AI**  | Thêm AI grading có cấu trúc trên workflow Writing đã lưu bền vững.              |
 | 6.8  | Audio phát âm         | **Đã triển khai**          | Kiểm soát coverage, fallback và chất lượng audio.                               |
 | 6.9  | Ôn tập cá nhân hóa    | **Đã triển khai một phần** | Phát triển từ scheduler theo luật sang kế hoạch thích ứng theo mục tiêu.        |
 | 6.10 | AI Learning Assistant | **Chưa triển khai**        | Xây assistant có grounding từ course, vocabulary và learner progress.           |
@@ -309,7 +309,22 @@ Các goal interface hiện có:
 
 ## 6.7. AI sửa Writing
 
-**Trạng thái: Chưa triển khai.**
+**Trạng thái: Đã triển khai nền tảng TOEIC Writing Part 1-2; chưa triển khai AI grading.**
+
+### Nền tảng non-AI đã triển khai
+
+- Pipeline nội dung TOEIC Writing Part 1-2 có inventory, download, validation,
+  migration và importer idempotent; chỉ nội dung đã xuất bản xuất hiện với
+  Learner.
+- Catalog Web tách Part 1 viết câu theo tranh và Part 2 phản hồi email. Ảnh Part
+  1 được tải qua endpoint có xác thực thay vì dùng URL nguồn trực tiếp.
+- Mỗi Learner có một draft cho mỗi task. Editor autosave qua backend bằng queue
+  tuần tự, giữ nguyên text khi request lỗi và flush trước khi nộp.
+- Submission dùng idempotency key, giữ immutable response và snapshot nội dung
+  tham khảo theo đúng version tại thời điểm nộp. Nội dung tham khảo chỉ mở sau
+  khi nộp và được ghi rõ không phải điểm số hoặc phản hồi AI.
+- UI có route catalog được localize, route làm bài tập trung theo từng Part,
+  route kết quả sở hữu theo tài khoản và skeleton riêng theo layout.
 
 ### Phân biệt với AI hiện có
 
@@ -347,7 +362,8 @@ Gemini hay OpenAI-compatible đang được dùng.
 ### Thứ tự thực hiện
 
 1. Xác định rubric cho từng CEFR level và giới hạn độ dài bài viết.
-2. Xây non-AI Writing draft/attempt persistence trước.
+2. Dùng draft/submission persistence hiện có làm ranh giới đầu vào ổn định cho
+   AI feedback.
 3. Thêm provider adapter, timeout, retry có giới hạn và structured-output
    validation.
 4. Lưu prompt version, model identifier, feedback đã chuẩn hóa và usage metadata;

@@ -21,7 +21,9 @@ export class GetToeicWritingSubmissionUseCase {
         content_version: true,
         response_text: true,
         submitted_at: true,
-        task: { select: { part: true, title: true, payload: true } },
+        task_title: true,
+        task_part: true,
+        reference_snapshot: true,
       },
     });
     if (!submission) return writingSubmissionNotFound();

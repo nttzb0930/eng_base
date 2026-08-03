@@ -2,8 +2,8 @@
 
 import type { ToeicWritingPart } from "@repo/shared";
 import { ArrowLeft, FilePenLine, RotateCcw } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter, useSearchParams } from "next/navigation";
 
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
@@ -15,12 +15,18 @@ import {
   useToeicWritingOverview,
   useToeicWritingTasks,
 } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
 
 const parts: ToeicWritingPart[] = [1, 2];
 
 export function ToeicWritingCatalogView() {
   const t = useTranslations("toeicWriting");
-  const [part, setPart] = useState<ToeicWritingPart>(1);
+  const currentLocale = useLocale();
+  const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const part: ToeicWritingPart = searchParams.get("part") === "2" ? 2 : 1;
   const overviewQuery = useToeicWritingOverview();
   const tasksQuery = useToeicWritingTasks(part);
 
@@ -95,7 +101,16 @@ export function ToeicWritingCatalogView() {
                 type="button"
                 role="tab"
                 aria-selected={active}
-                onClick={() => setPart(item)}
+                onClick={() => {
+                  const nextSearchParams = new URLSearchParams(
+                    searchParams.toString()
+                  );
+                  nextSearchParams.set("part", String(item));
+                  router.replace(
+                    `${withLocale("/learn/cert/toeic/writing", locale)}?${nextSearchParams.toString()}`,
+                    { scroll: false }
+                  );
+                }}
                 className={`min-h-12 rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
                   active
                     ? "border-emerald-600 bg-emerald-600 text-white"

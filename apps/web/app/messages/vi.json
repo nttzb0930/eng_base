@@ -1142,6 +1142,28 @@
       "loadErrorTitle": "Không thể tải bài luyện viết này",
       "loadErrorDescription": "Bài có thể chưa sẵn sàng hoặc đường dẫn không đúng với Part của bài.",
       "retry": "Thử lại"
+    },
+    "result": {
+      "part": "Part {part}",
+      "submitted": "Đã nộp",
+      "submittedAt": "Đã nộp {date}",
+      "learnerResponse": "Bài viết của bạn",
+      "referenceTitle": "Nội dung tham khảo",
+      "notScored": "Đối chiếu tham khảo, không phải điểm số",
+      "referenceDescription": "Dùng các ví dụ và gợi ý này để tự xem lại bài viết. Đây không phải điểm số hoặc phản hồi tự động.",
+      "sampleResponses": "Câu trả lời mẫu",
+      "sampleResponse": "Bài trả lời mẫu",
+      "structureSuggestions": "Gợi ý cấu trúc",
+      "ideas": "Ý tưởng có thể triển khai",
+      "outlineLevel1": "Dàn ý cơ bản",
+      "outlineLevel2": "Dàn ý mở rộng",
+      "chunksLevel1": "Cụm từ cốt lõi",
+      "chunksLevel2": "Cụm từ mở rộng",
+      "startAgain": "Làm lại bài này",
+      "backToWriting": "Quay lại phần Viết",
+      "loadErrorTitle": "Không thể tải bài đã nộp",
+      "loadErrorDescription": "Bài nộp có thể không tồn tại hoặc thuộc một tài khoản khác.",
+      "retry": "Thử lại"
     }
   },
   "toeicReading": {

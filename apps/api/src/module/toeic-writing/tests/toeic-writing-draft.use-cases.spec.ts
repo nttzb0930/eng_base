@@ -75,6 +75,18 @@ test("Part 2 draft accepts 10000 trimmed characters and preserves original white
   assert.equal(create.update.response_text, responseText);
 });
 
+test("Part 1 draft counts astral Unicode characters as one code point", async () => {
+  const { prisma, calls } = savePrisma();
+  const responseText = `  ${"😀".repeat(1_000)}  `;
+
+  await new SaveToeicWritingDraftUseCase(prisma).execute("learner-1", 11, {
+    contentVersion: version,
+    responseText,
+  });
+
+  assert.equal(calls.length, 1);
+});
+
 test("stale content version keeps the existing draft", async () => {
   const { prisma, calls } = savePrisma();
   const save = new SaveToeicWritingDraftUseCase(prisma);

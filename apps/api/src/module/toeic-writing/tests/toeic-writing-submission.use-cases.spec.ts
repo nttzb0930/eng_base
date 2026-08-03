@@ -39,7 +39,14 @@ function submissionRecord(responseText = payload.responseText) {
     content_version: version,
     response_text: responseText,
     submitted_at: new Date("2026-08-03T03:04:05.000Z"),
-    task,
+    task_title: task.title,
+    task_part: task.part,
+    reference_snapshot: {
+      samplesEn: ["A synthetic reference."],
+      samplesVi: ["Má»™t cÃ¢u tham kháº£o tá»•ng há»£p."],
+      structureSuggestions: ["Subject + be + verb-ing"],
+      ideas: ["Describe the action"],
+    },
   };
 }
 
@@ -49,9 +56,25 @@ function submissionPrisma() {
   const draftDeletes: unknown[] = [];
   const submissions = {
     findUnique: () => Promise.resolve(stored),
-    create: ({ data }: { data: { response_text: string } }) => {
+    create: ({
+      data,
+    }: {
+      data: {
+        response_text: string;
+        task_title: string;
+        task_part: number;
+        reference_snapshot: unknown;
+      };
+    }) => {
       createCount += 1;
-      stored = submissionRecord(data.response_text);
+      stored = {
+        ...submissionRecord(data.response_text),
+        task_title: data.task_title,
+        task_part: data.task_part,
+        reference_snapshot: data.reference_snapshot as ReturnType<
+          typeof submissionRecord
+        >["reference_snapshot"],
+      };
       return Promise.resolve(stored);
     },
   };
@@ -146,4 +169,25 @@ test("submission result maps reference only after owned lookup", async () => {
     (queries[1] as { where: unknown }).where,
     { id: 31, user_id: "learner-2" }
   );
+});
+
+test("submission result remains unchanged after the source task changes", async () => {
+  const stored = submissionRecord();
+  task.title = "Changed task title";
+  task.payload.samplesEn = ["A changed reference."];
+  const prisma = {
+    toeic_writing_submissions: {
+      findFirst: () => Promise.resolve(stored),
+    },
+  } as unknown as PrismaService;
+
+  const result = await new GetToeicWritingSubmissionUseCase(prisma).execute(
+    "learner-1",
+    31
+  );
+
+  assert.equal(result.taskTitle, "Write a sentence");
+  assert.equal(result.part, 1);
+  if (result.part !== 1) throw new Error("Expected Part 1 result");
+  assert.deepEqual(result.reference.samplesEn, ["A synthetic reference."]);
 });

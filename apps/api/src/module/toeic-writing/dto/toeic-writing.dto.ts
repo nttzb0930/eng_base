@@ -6,7 +6,6 @@ import {
   IsUUID,
   Length,
   Matches,
-  MaxLength,
 } from "class-validator";
 import type {
   ToeicWritingDraftPayload,
@@ -28,7 +27,6 @@ export class ToeicWritingDraftDto implements ToeicWritingDraftPayload {
   contentVersion!: string;
 
   @IsString()
-  @MaxLength(10_000)
   responseText!: string;
 }
 

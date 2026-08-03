@@ -4,6 +4,7 @@ import { join } from "node:path";
 import test from "node:test";
 
 import {
+  getToeicWritingResponseLength,
   type ToeicWritingDraftPayload,
   type ToeicWritingSubmissionPayload,
   type ToeicWritingTaskDetail,
@@ -65,4 +66,9 @@ test("Shared publishes the TOEIC Writing learner interface from its root", () =>
   assert.match(writingTypes, /export type ToeicWritingDraftPayload =/u);
   assert.match(writingTypes, /export type ToeicWritingSubmissionResult =/u);
   assert.doesNotMatch(writingTypes, /@prisma|@nestjs|react/iu);
+});
+
+test("Writing response length trims whitespace and counts Unicode code points", () => {
+  assert.equal(getToeicWritingResponseLength("  A😀B  "), 3);
+  assert.equal(getToeicWritingResponseLength(" \n\t "), 0);
 });

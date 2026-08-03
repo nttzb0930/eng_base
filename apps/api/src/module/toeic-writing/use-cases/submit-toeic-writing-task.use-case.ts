@@ -1,7 +1,9 @@
 import { Injectable } from "@nestjs/common";
-import type {
-  ToeicWritingSubmissionPayload,
-  ToeicWritingSubmissionResult,
+import {
+  getToeicWritingResponseLength,
+  TOEIC_WRITING_RESPONSE_LIMITS,
+  type ToeicWritingSubmissionPayload,
+  type ToeicWritingSubmissionResult,
 } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
@@ -12,18 +14,20 @@ import {
   writingTaskNotFound,
 } from "../toeic-writing.errors";
 import {
+  mapToeicWritingReference,
   mapToeicWritingSubmissionResult,
   type ToeicWritingSubmissionRecord,
 } from "../toeic-writing.mapper";
 
-const RESPONSE_LIMITS = { 1: 1_000, 2: 10_000 } as const;
 const writingSubmissionSelect = {
   id: true,
   task_id: true,
   content_version: true,
   response_text: true,
   submitted_at: true,
-  task: { select: { part: true, title: true, payload: true } },
+  task_title: true,
+  task_part: true,
+  reference_snapshot: true,
 } as const;
 
 function isUniqueConflict(error: unknown): boolean {
@@ -79,21 +83,33 @@ export class SubmitToeicWritingTaskUseCase {
 
     const task = await this.prisma.toeic_writing_tasks.findFirst({
       where: { id: taskId, status: "PUBLISHED" },
-      select: { id: true, part: true, source_version: true },
+      select: {
+        id: true,
+        part: true,
+        title: true,
+        payload: true,
+        source_version: true,
+      },
     });
     if (!task || (task.part !== 1 && task.part !== 2)) {
       return writingTaskNotFound();
     }
-    const normalized = payload.responseText.trim();
+    const responseLength = getToeicWritingResponseLength(
+      payload.responseText
+    );
     if (
-      normalized.length === 0 ||
-      normalized.length > RESPONSE_LIMITS[task.part]
+      responseLength === 0 ||
+      responseLength > TOEIC_WRITING_RESPONSE_LIMITS[task.part]
     ) {
       return writingResponseInvalid();
     }
     if (task.source_version !== payload.contentVersion) {
       return writingContentVersionConflict();
     }
+    const referenceSnapshot = mapToeicWritingReference({
+      part: task.part,
+      payload: task.payload,
+    });
 
     try {
       const created = await this.prisma.$transaction(async (transaction) => {
@@ -104,6 +120,9 @@ export class SubmitToeicWritingTaskUseCase {
             submission_key: payload.submissionKey,
             response_text: payload.responseText,
             content_version: payload.contentVersion,
+            task_title: task.title,
+            task_part: task.part,
+            reference_snapshot: referenceSnapshot,
           },
           select: writingSubmissionSelect,
         });

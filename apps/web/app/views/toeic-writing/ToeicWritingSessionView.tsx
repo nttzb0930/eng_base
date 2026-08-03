@@ -1,16 +1,17 @@
 "use client";
 
-import type {
-  ToeicWritingDraftPayload,
-  ToeicWritingPart,
-  ToeicWritingTaskDetail,
+import {
+  getToeicWritingResponseLength,
+  TOEIC_WRITING_RESPONSE_LIMITS,
+  type ToeicWritingDraftPayload,
+  type ToeicWritingPart,
+  type ToeicWritingTaskDetail,
 } from "@repo/shared";
 import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useReducer, useRef } from "react";
 
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Alert, AlertDescription, AlertTitle } from "@/app/components/ui/alert";
 import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
@@ -26,6 +27,7 @@ import {
   useToeicWritingTask,
 } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
 import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
+import { createToeicWritingAutosaveScheduler } from "@/app/features/toeic-writing/toeic-writing-autosave-scheduler";
 import {
   initialToeicWritingSessionState,
   reduceWritingSession,
@@ -105,6 +107,7 @@ function ToeicWritingWorkspace({
   const { mutateAsync: submitResponse, isError: submitIsError } =
     useSubmitToeicWriting();
   const submissionKeyRef = useRef<string | null>(null);
+  const navigatingRef = useRef(false);
   const [state, dispatch] = useReducer(reduceWritingSession, {
     ...initialToeicWritingSessionState,
     responseText: initialResponse,
@@ -140,30 +143,43 @@ function ToeicWritingWorkspace({
     }),
     [state.responseText, task.contentVersion]
   );
+  const autosave = useMemo(
+    () => createToeicWritingAutosaveScheduler(draftQueue),
+    [draftQueue]
+  );
 
   useEffect(() => {
-    if (!state.dirty) return;
-    const timeout = window.setTimeout(() => {
-      draftQueue.push(snapshot());
-    }, 600);
-    return () => window.clearTimeout(timeout);
-  }, [draftQueue, snapshot, state.dirty]);
+    if (!state.dirty || state.submitting) return;
+    autosave.schedule(snapshot());
+  }, [autosave, snapshot, state.dirty, state.submitting]);
+
+  useEffect(() => () => autosave.dispose(), [autosave]);
 
   const saveNow = useCallback(async () => {
-    draftQueue.push(snapshot());
     try {
-      await draftQueue.flush();
+      await autosave.flush(snapshot());
     } catch {
       // The queue dispatches the visible save error without clearing editor text.
     }
-  }, [draftQueue, snapshot]);
+  }, [autosave, snapshot]);
+
+  const backToTasks = useCallback(async () => {
+    if (navigatingRef.current || state.submitting) return;
+    navigatingRef.current = true;
+    try {
+      await autosave.flush(snapshot(), { lock: true });
+      router.push(withLocale("/learn/cert/toeic/writing", locale));
+    } catch {
+      autosave.unlock();
+      navigatingRef.current = false;
+    }
+  }, [autosave, locale, router, snapshot, state.submitting]);
 
   const submit = useCallback(async () => {
     if (!state.responseText.trim()) return;
     dispatch({ type: "submitting" });
-    draftQueue.push(snapshot());
     try {
-      await draftQueue.flush();
+      await autosave.flush(snapshot(), { lock: true });
       submissionKeyRef.current ??= globalThis.crypto.randomUUID();
       const result = await submitResponse({
         taskId: task.id,
@@ -172,14 +188,15 @@ function ToeicWritingWorkspace({
           submissionKey: submissionKeyRef.current,
         },
       });
-      router.push(
+      router.replace(
         withLocale(`/toeic/writing/submissions/${result.id}`, locale)
       );
     } catch {
+      autosave.unlock();
       dispatch({ type: "submit-failed" });
     }
   }, [
-    draftQueue,
+    autosave,
     locale,
     router,
     snapshot,
@@ -188,22 +205,24 @@ function ToeicWritingWorkspace({
     task.id,
   ]);
 
-  const maxLength = task.part === 1 ? 1000 : 10_000;
+  const maxLength = TOEIC_WRITING_RESPONSE_LIMITS[task.part];
+  const responseLength = getToeicWritingResponseLength(state.responseText);
   const canSubmit =
-    state.responseText.trim().length > 0 &&
-    state.responseText.length <= maxLength;
+    responseLength > 0 && responseLength <= maxLength;
 
   return (
     <main className="min-h-dvh bg-slate-50/70 pb-20 dark:bg-slate-950/30">
       <header className="bg-background/95 supports-[backdrop-filter]:bg-background/85 sticky top-0 z-20 border-b backdrop-blur">
         <div className="mx-auto flex min-h-16 w-full max-w-[1200px] items-center justify-between gap-4 px-4 sm:px-6">
-          <Link
-            href="/learn/cert/toeic/writing"
+          <button
+            type="button"
+            onClick={() => void backToTasks()}
+            disabled={state.submitting}
             className="text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 items-center gap-2 rounded-md px-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">{t("backToTasks")}</span>
-          </Link>
+          </button>
           <div className="min-w-0 text-center">
             <p className="truncate text-sm font-semibold">{task.title}</p>
             <p className="text-muted-foreground text-xs">
@@ -247,6 +266,7 @@ function ToeicWritingWorkspace({
         canSubmit={canSubmit}
         saving={state.saveStatus === "SAVING"}
         submitting={state.submitting}
+        onBack={() => void backToTasks()}
         onSave={() => void saveNow()}
         onSubmit={() => void submit()}
       />

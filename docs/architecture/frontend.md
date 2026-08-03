@@ -219,6 +219,35 @@ Cards render the backend-owned source-set label and test title. Web does not
 derive a year from `updatedAt` and does not invent Level 1-5 classifications.
 Part 6 and Part 7 retain their stimulus grouping in focused sessions.
 
+## TOEIC Writing learner workflow
+
+TOEIC Writing follows the same feature/view dependency profile under
+`app/features/toeic-writing` and `app/views/toeic-writing`. The localized main
+shell owns `/learn/cert/toeic/writing`. The focused learner shell owns
+`/toeic/writing/part-1/:taskId`, `/toeic/writing/part-2/:taskId`, and the
+immutable `/toeic/writing/submissions/:submissionId` result route. Every route
+is a thin parameter adapter and imports a layout-matching skeleton.
+
+The catalog shows only published tasks and backend-projected draft/submission
+state. Part 1 renders an authenticated image plus required words; Part 2 renders
+the source email and ordered response requirements. Protected images are
+fetched through the Auth-owned HTTP client as blobs so bearer-token and refresh
+behavior remain centralized.
+
+Editor changes are debounced for 600 milliseconds and sent through a
+feature-owned serialized queue. Only one backend save is in flight, rapid
+pending edits collapse to the newest complete snapshot, and a failure never
+clears learner text. Manual save and submission flush the queue first. Drafts
+are scoped to the authenticated account and are not stored in `localStorage`.
+
+Submission uses one stable idempotency key for retries, clears the draft through
+the API transaction, and replaces the editor route with an owned immutable
+result. Navigation flushes the current snapshot before leaving, and submission
+locks the debounce scheduler so a late save cannot recreate the deleted draft.
+Reference responses are snapshotted by the API at submission time, appear only
+on that result, and are explicitly presented as comparison material, not a
+score or AI feedback.
+
 ## Browser data flow
 
 Web and Admin each own an Auth transport:

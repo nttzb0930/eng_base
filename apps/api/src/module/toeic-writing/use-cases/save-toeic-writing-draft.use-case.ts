@@ -1,5 +1,10 @@
 import { Injectable } from "@nestjs/common";
-import type { ToeicWritingDraft, ToeicWritingDraftPayload } from "@repo/shared";
+import {
+  getToeicWritingResponseLength,
+  TOEIC_WRITING_RESPONSE_LIMITS,
+  type ToeicWritingDraft,
+  type ToeicWritingDraftPayload,
+} from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import {
@@ -8,8 +13,6 @@ import {
   writingTaskNotFound,
 } from "../toeic-writing.errors";
 import { mapToeicWritingDraft } from "./get-toeic-writing-draft.use-case";
-
-const RESPONSE_LIMITS = { 1: 1_000, 2: 10_000 } as const;
 
 @Injectable()
 export class SaveToeicWritingDraftUseCase {
@@ -28,10 +31,12 @@ export class SaveToeicWritingDraftUseCase {
       return writingTaskNotFound();
     }
 
-    const normalized = payload.responseText.trim();
+    const responseLength = getToeicWritingResponseLength(
+      payload.responseText
+    );
     if (
-      normalized.length === 0 ||
-      normalized.length > RESPONSE_LIMITS[task.part]
+      responseLength === 0 ||
+      responseLength > TOEIC_WRITING_RESPONSE_LIMITS[task.part]
     ) {
       return writingResponseInvalid();
     }

@@ -1,5 +1,6 @@
 "use client";
 
+import { getToeicWritingResponseLength } from "@repo/shared";
 import type { ToeicWritingSaveStatus } from "../toeic-writing-session-state";
 import { AlertCircle, RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -30,6 +31,7 @@ export function ToeicWritingEditorPane({
   const wordCount = responseText.trim()
     ? responseText.trim().split(/\s+/u).length
     : 0;
+  const characterCount = getToeicWritingResponseLength(responseText);
   const badgeVariant = saveStatus === "ERROR" ? "destructive" : "secondary";
 
   return (
@@ -51,7 +53,6 @@ export function ToeicWritingEditorPane({
         id="toeic-writing-response"
         autoFocus
         value={responseText}
-        maxLength={maxLength}
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
         placeholder={t("placeholder")}
@@ -62,7 +63,7 @@ export function ToeicWritingEditorPane({
         <span>{t("wordCount", { count: wordCount })}</span>
         <span>
           {t("characterCount", {
-            count: responseText.length,
+            count: characterCount,
             max: maxLength,
           })}
         </span>
