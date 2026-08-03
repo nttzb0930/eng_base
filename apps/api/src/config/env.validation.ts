@@ -58,6 +58,25 @@ const ApiEnvironmentSchema = z
       .trim()
       .min(1)
       .default("src/module/mail/templates"),
+    GEMINI_ENABLED: booleanFromEnvironment,
+    GEMINI_API_KEY: z.string().trim().optional().default(""),
+    GEMINI_VISION_MODEL: z
+      .string()
+      .trim()
+      .min(1)
+      .default("gemini-3.5-flash-lite"),
+    GEMINI_GRADING_MODEL: z
+      .string()
+      .trim()
+      .min(1)
+      .default("gemini-3.5-flash-lite"),
+    GEMINI_TIMEOUT_MS: z.coerce.number().int().positive().default(20_000),
+    WRITING_AI_DAILY_LIMIT: z.coerce.number().int().positive().default(5),
+    WRITING_AI_RESERVATION_TTL_MS: z.coerce
+      .number()
+      .int()
+      .positive()
+      .default(120_000),
   })
   .refine(
     (configuration) =>
@@ -83,6 +102,14 @@ const ApiEnvironmentSchema = z
           message: "SMTP_PASS is required when SMTP_ENABLED=true",
         });
       }
+    }
+
+    if (configuration.GEMINI_ENABLED && !configuration.GEMINI_API_KEY) {
+      context.addIssue({
+        code: "custom",
+        path: ["GEMINI_API_KEY"],
+        message: "GEMINI_API_KEY is required when GEMINI_ENABLED=true",
+      });
     }
 
     try {

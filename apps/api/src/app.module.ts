@@ -11,6 +11,7 @@ import { ApplicationThrottlerGuard } from "./common/guards/application-throttler
 import { createRateLimitOptions } from "./common/rate-limit/rate-limit.options";
 import {
   applicationConfig,
+  geminiConfig,
   jwtConfig,
   mailConfig,
   rateLimitConfig,
@@ -43,7 +44,13 @@ import { ToeicWritingModule } from "./module/toeic-writing/toeic-writing.module"
       isGlobal: true,
       envFilePath: ["../../.env", ".env"],
       validate: validateEnvironment,
-      load: [applicationConfig, jwtConfig, rateLimitConfig, mailConfig],
+      load: [
+        applicationConfig,
+        jwtConfig,
+        rateLimitConfig,
+        mailConfig,
+        geminiConfig,
+      ],
     }),
     ThrottlerModule.forRootAsync({
       imports: [ConfigModule],
