@@ -56,6 +56,14 @@ async function mapWorkers<T>(
   );
 }
 
+function safeErrorMessage(error: unknown): string {
+  const message = error instanceof Error ? error.message : String(error);
+  return message
+    .replace(/Bearer\s+[^\s}]+/giu, "Bearer [redacted]")
+    .replace(/(?:api[-_ ]?key|key)\s*[:=]\s*[^\s,}]+/giu, "[redacted]")
+    .slice(0, 500);
+}
+
 export async function enrichPartOneCandidates(input: {
   tasks: PartOneEnrichmentTask[];
   storage: ToeicWritingAiStorage;
@@ -64,6 +72,7 @@ export async function enrichPartOneCandidates(input: {
   promptVersion: string;
   workers: number;
   dryRun: boolean;
+  verbose?: boolean;
   onProgress?: (message: string) => void;
 }): Promise<EnrichmentSummary> {
   const summary: EnrichmentSummary = {
@@ -86,6 +95,9 @@ export async function enrichPartOneCandidates(input: {
       summary.skipped.push(task.sourceTaskId);
       input.onProgress?.(`[skip] ${task.sourceTaskId}`);
       return;
+    }
+    if (input.verbose) {
+      input.onProgress?.(`[start] ${task.sourceTaskId}`);
     }
     try {
       const context = await input.provider.enrichPicture({
@@ -113,11 +125,20 @@ export async function enrichPartOneCandidates(input: {
           sourceTaskId: task.sourceTaskId,
           reason: "INVALID_CONTEXT",
         });
+        if (input.verbose) {
+          input.onProgress?.(`[reject] ${task.sourceTaskId} INVALID_CONTEXT`);
+        }
       } else {
+        const category = error instanceof Error ? error.name : "Error";
         summary.failed.push({
           sourceTaskId: task.sourceTaskId,
-          category: error instanceof Error ? error.name : "Error",
+          category,
         });
+        if (input.verbose) {
+          input.onProgress?.(
+            `[fail] ${task.sourceTaskId} ${category}: ${safeErrorMessage(error)}`
+          );
+        }
       }
     }
   });
@@ -143,7 +164,7 @@ function parseOptions(argv: string[]) {
   if (!/^[A-Za-z0-9._-]{1,64}$/u.test(promptVersion)) {
     throw new Error("--prompt-version is invalid");
   }
-  const known = new Set(["--", "--dry-run"]);
+  const known = new Set(["--", "--dry-run", "--verbose"]);
   const unknown = argv.find(
     (value) =>
       !known.has(value) &&
@@ -151,7 +172,12 @@ function parseOptions(argv: string[]) {
       !value.startsWith("--prompt-version=")
   );
   if (unknown) throw new Error(`Unknown enrichment option: ${unknown}`);
-  return { workers, promptVersion, dryRun: argv.includes("--dry-run") };
+  return {
+    workers,
+    promptVersion,
+    dryRun: argv.includes("--dry-run"),
+    verbose: argv.includes("--verbose"),
+  };
 }
 
 async function discoverTasks(writingRoot: string) {
@@ -227,6 +253,7 @@ async function main() {
     promptVersion: options.promptVersion,
     workers: options.workers,
     dryRun: options.dryRun,
+    verbose: options.verbose,
     onProgress: console.log,
   });
   console.log(JSON.stringify(summary, null, 2));
