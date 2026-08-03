@@ -129,12 +129,41 @@ test("download resumes a package whose validation is already valid", async () =>
   const inventory = fixturePartTwoInventory();
   let sourceCalled = false;
   const storage = fakeStorage();
+  const writes: Array<{ name: string; value: unknown }> = [];
   storage.listPackages = async () => [
     {
       sourceTaskId: "part-2-task-1",
       sourceVersion: "a".repeat(64),
     },
   ];
+  storage.readPackageFile = async (_sourceTaskId, _sourceVersion, name) => {
+    if (name === "validation.json") {
+      return { valid: true, reportSha256: "c".repeat(64) };
+    }
+    if (name === "manifest.json") {
+      return {
+        schemaVersion: 1,
+        source: "dautoeic",
+        sourceTaskId: "part-2-task-1",
+        sourceVersion: "a".repeat(64),
+        contentSha256: "d".repeat(64),
+        inventorySha256: "e".repeat(64),
+        retrievedAt: "2026-08-02T00:00:00.000Z",
+        licenseReference: "authorized-source-2026-08",
+        media: null,
+        validationReportSha256: "c".repeat(64),
+      };
+    }
+    throw new Error(`unexpected package file: ${name}`);
+  };
+  storage.writePackageFile = async (
+    _sourceTaskId,
+    _sourceVersion,
+    name,
+    value
+  ) => {
+    writes.push({ name, value });
+  };
 
   const result = await downloadToeicWriting({
     source: {
@@ -149,6 +178,12 @@ test("download resumes a package whose validation is already valid", async () =>
   });
 
   assert.equal(sourceCalled, false);
+  assert.equal(writes.length, 1);
+  assert.equal(writes[0]?.name, "manifest.json");
+  assert.equal(
+    (writes[0]?.value as { inventorySha256?: unknown }).inventorySha256,
+    inventory.inventorySha256
+  );
   assert.deepEqual(result, {
     completed: [],
     resumed: ["part-2-task-1"],

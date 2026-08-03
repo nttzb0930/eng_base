@@ -35,6 +35,24 @@ function failureCategory(error: unknown): string {
   return "ERROR";
 }
 
+function reusableManifest(
+  value: unknown,
+  task: ToeicWritingInventoryTask
+): value is Record<string, unknown> & { inventorySha256: string } {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) {
+    return false;
+  }
+  const manifest = value as Record<string, unknown>;
+  return (
+    manifest.schemaVersion === 1 &&
+    manifest.sourceTaskId === task.sourceTaskId &&
+    manifest.sourceVersion === task.sourceVersion &&
+    typeof manifest.contentSha256 === "string" &&
+    typeof manifest.inventorySha256 === "string" &&
+    typeof manifest.validationReportSha256 === "string"
+  );
+}
+
 async function canonicalTask(input: {
   source: {
     downloadImage(url: string): Promise<ReadableStream<Uint8Array>>;
@@ -144,12 +162,30 @@ export async function downloadToeicWriting(input: {
 
       if (existing.has(packageKey)) {
         try {
-          const validation = (await input.storage.readPackageFile(
-            task.sourceTaskId,
-            task.sourceVersion,
-            "validation.json"
-          )) as { valid?: unknown };
-          if (validation.valid === true) {
+          const [validation, manifest] = await Promise.all([
+            input.storage.readPackageFile(
+              task.sourceTaskId,
+              task.sourceVersion,
+              "validation.json"
+            ) as Promise<{ valid?: unknown }>,
+            input.storage.readPackageFile(
+              task.sourceTaskId,
+              task.sourceVersion,
+              "manifest.json"
+            ),
+          ]);
+          if (validation.valid === true && reusableManifest(manifest, task)) {
+            if (manifest.inventorySha256 !== input.inventory.inventorySha256) {
+              await input.storage.writePackageFile(
+                task.sourceTaskId,
+                task.sourceVersion,
+                "manifest.json",
+                {
+                  ...manifest,
+                  inventorySha256: input.inventory.inventorySha256,
+                }
+              );
+            }
             summary.resumed.push(task.sourceTaskId);
             input.onProgress?.({
               completed: ++progress,
