@@ -8,13 +8,9 @@ import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink
 
 type ToeicWritingPartTwoCardProps = {
   task: ToeicWritingPartTwoTaskSummary;
-  locale: string;
 };
 
-export function ToeicWritingPartTwoCard({
-  task,
-  locale,
-}: ToeicWritingPartTwoCardProps) {
+export function ToeicWritingPartTwoCard({ task }: ToeicWritingPartTwoCardProps) {
   const t = useTranslations("toeicWriting.card");
   const action = task.submitted
     ? t("review")
@@ -29,7 +25,7 @@ export function ToeicWritingPartTwoCard({
         <h2 className="mt-4 break-words text-base font-semibold leading-6">
           {task.title}
         </h2>
-        {locale === "vi" && task.titleVi ? (
+        {task.titleVi ? (
           <p className="mt-2 break-words text-sm italic leading-6 text-sky-600 dark:text-sky-400">
             {task.titleVi}
           </p>

@@ -202,11 +202,7 @@ export function ToeicWritingCatalogView() {
                   <ToeicWritingPartOneCard key={task.id} task={task} />
                 ))
               : partTwoTasks.map((task) => (
-                  <ToeicWritingPartTwoCard
-                    key={task.id}
-                    task={task}
-                    locale={locale}
-                  />
+                  <ToeicWritingPartTwoCard key={task.id} task={task} />
                 ))}
           </section>
         )}

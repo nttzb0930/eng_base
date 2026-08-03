@@ -73,7 +73,9 @@ test("Writing catalog renders dedicated Part-specific responsive cards", () => {
   assert.match(catalog, /xl:grid-cols-4/u);
   assert.match(partOne, /useNearViewport/u);
   assert.doesNotMatch(partOne, /task\.title|task\.order|difficulty/u);
-  assert.match(partTwo, /locale\s*===\s*"vi"/u);
+  assert.doesNotMatch(partTwo, /locale\s*===\s*"vi"/u);
+  assert.doesNotMatch(partTwo, /locale:\s*string/u);
+  assert.doesNotMatch(catalog, /locale=\{locale\}/u);
   assert.match(partTwo, /task\.titleVi/u);
 });
 
