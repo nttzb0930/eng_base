@@ -9,6 +9,7 @@ import {
   type ToeicWritingPartOneValidationIssue,
   type ToeicWritingPartTwoGradeResult,
   type ToeicWritingPartTwoValidationIssue,
+  type ToeicWritingSubmissionResult,
   type ToeicWritingTaskDetail,
 } from "@repo/shared";
 import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
@@ -26,6 +27,7 @@ import {
 import { Alert, AlertDescription, AlertTitle } from "@/app/components/ui/alert";
 import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
 import { ToeicWritingEditorPane } from "@/app/features/toeic-writing/components/ToeicWritingEditorPane";
 import { ToeicWritingPromptPane } from "@/app/features/toeic-writing/components/ToeicWritingPromptPane";
 import { ToeicWritingSessionFooter } from "@/app/features/toeic-writing/components/ToeicWritingSessionFooter";
@@ -33,6 +35,7 @@ import { ToeicWritingSessionSkeleton } from "@/app/features/toeic-writing/compon
 import { ToeicWritingGradeHistoryPanel } from "@/app/features/toeic-writing/components/ToeicWritingGradeHistoryPanel";
 import { ToeicWritingPartOneGradePanel } from "@/app/features/toeic-writing/components/ToeicWritingPartOneGradePanel";
 import { ToeicWritingPartOneValidationAlert } from "@/app/features/toeic-writing/components/ToeicWritingPartOneValidationAlert";
+import { ToeicWritingReferencePanel } from "@/app/features/toeic-writing/components/ToeicWritingReferencePanel";
 import { ToeicWritingPartTwoWorkspace } from "@/app/features/toeic-writing/components/ToeicWritingPartTwoWorkspace";
 import {
   useDeleteToeicWritingDraft,
@@ -157,6 +160,9 @@ function ToeicWritingWorkspace({
   const [partTwoValidationIssues, setPartTwoValidationIssues] = useState<
     ToeicWritingPartTwoValidationIssue[]
   >([]);
+  const [sampleSubmission, setSampleSubmission] =
+    useState<ToeicWritingSubmissionResult | null>(null);
+  const [sampleOpen, setSampleOpen] = useState(false);
   const gradingPending =
     task.part === 1 ? gradePartOne.isPending : gradePartTwo.isPending;
 
@@ -233,17 +239,15 @@ function ToeicWritingWorkspace({
           submissionKey: submissionKeyRef.current,
         },
       });
-      router.replace(
-        withLocale(`/toeic/writing/submissions/${result.id}`, locale)
-      );
+      autosave.unlock();
+      dispatch({ type: "submit-succeeded" });
+      return result;
     } catch {
       autosave.unlock();
       dispatch({ type: "submit-failed" });
     }
   }, [
     autosave,
-    locale,
-    router,
     snapshot,
     state.responseText,
     submitResponse,
@@ -309,19 +313,46 @@ function ToeicWritingWorkspace({
     }
   }, [autosave, gradePartTwo, locale, snapshot, state.responseText, task]);
 
+  const toggleSampleView = useCallback(() => {
+    setSampleOpen((open) => {
+      const next = !open;
+      if (!next) {
+        requestAnimationFrame(() => {
+          const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+          if (window.scrollY > maxScroll) {
+            window.scrollTo({
+              top: Math.max(0, maxScroll),
+              behavior: "smooth",
+            });
+          }
+        });
+      }
+      return next;
+    });
+  }, []);
+
   const viewSample = useCallback(async () => {
     if (task.part !== 1 || gradingPending) return;
+    if (sampleSubmission) {
+      toggleSampleView();
+      return;
+    }
     try {
       await recordAssistance.mutateAsync({
         taskId: task.id,
         kind: "SAMPLE",
         contentVersion: task.contentVersion,
       });
-      await submit();
+      const result = await submit();
+      if (result) {
+        setSampleSubmission(result);
+        setSampleOpen(true);
+      }
     } catch {
       // Submission error remains visible and the response stays editable.
     }
-  }, [gradingPending, recordAssistance, submit, task]);
+  }, [gradingPending, recordAssistance, sampleSubmission, submit, task, toggleSampleView]);
 
   const maxLength = TOEIC_WRITING_RESPONSE_LIMITS[task.part];
   const responseLength = getToeicWritingResponseLength(state.responseText);
@@ -357,8 +388,16 @@ function ToeicWritingWorkspace({
     [recordAssistance, task]
   );
 
+  const isFilenameTitle = /\.(?:png|jpg|jpeg|webp)$/i.test(task.title.trim());
+  const headerTitle = isFilenameTitle
+    ? `${t("part", { part: task.part })} - ${t("taskNumber", { number: task.order })}`
+    : task.title;
+  const headerSubtitle = isFilenameTitle
+    ? null
+    : `${t("part", { part: task.part })} - ${t("taskNumber", { number: task.order })}`;
+
   return (
-    <main className="min-h-dvh bg-slate-50/70 pb-20 dark:bg-slate-950/30">
+    <main className="flex min-h-dvh flex-col bg-slate-50/70 dark:bg-slate-950/30">
       <header className="bg-background/95 supports-[backdrop-filter]:bg-background/85 sticky top-0 z-20 border-b backdrop-blur">
         <div className="mx-auto flex min-h-16 w-full max-w-[1200px] items-center justify-between gap-4 px-4 sm:px-6">
           <button
@@ -368,19 +407,19 @@ function ToeicWritingWorkspace({
             className="text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 items-center gap-2 rounded-md px-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            <span className="hidden sm:inline">{t("backToTasks")}</span>
+            <span>{t("backToTasks")}</span>
           </button>
           <div className="min-w-0 text-center">
-            <p className="truncate text-sm font-semibold">{task.title}</p>
-            <p className="text-muted-foreground text-xs">
-              {t("taskNumber", { number: task.order })}
-            </p>
+            <p className="truncate text-sm font-semibold">{headerTitle}</p>
+            {headerSubtitle ? (
+              <p className="text-muted-foreground text-xs">{headerSubtitle}</p>
+            ) : null}
           </div>
           <Badge variant="outline">{t("part", { part: task.part })}</Badge>
         </div>
       </header>
 
-      <div className="mx-auto w-full max-w-[1200px] px-4 py-6 sm:px-6">
+      <div className="mx-auto w-full max-w-[1200px] flex-1 px-4 py-6 sm:px-6">
         {task.part === 2 ? (
           <ToeicWritingPartTwoWorkspace
             task={task}
@@ -400,7 +439,9 @@ function ToeicWritingWorkspace({
           />
         ) : (
           <div className="grid items-start gap-5 lg:grid-cols-2">
-            <ToeicWritingPromptPane task={task} />
+            <div className="lg:sticky lg:top-20 self-start">
+              <ToeicWritingPromptPane task={task} />
+            </div>
             <div className="min-w-0 space-y-4">
               <ToeicWritingEditorPane
                 responseText={state.responseText}
@@ -422,11 +463,28 @@ function ToeicWritingWorkspace({
                 onViewSample={
                   task.part === 1 ? () => void viewSample() : undefined
                 }
+                sampleOpen={sampleOpen}
+                sampleLoading={state.submitting}
               />
+              <div
+                className={cn(
+                  "grid transition-[grid-template-rows,opacity] duration-300 ease-in-out",
+                  sampleOpen && sampleSubmission?.part === 1
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
+                )}
+              >
+                <div className="overflow-hidden">
+                  {sampleSubmission?.part === 1 ? (
+                    <ToeicWritingReferencePanel submission={sampleSubmission} />
+                  ) : null}
+                </div>
+              </div>
               <ToeicWritingPartOneValidationAlert issues={validationIssues} />
               {grade ? (
                 <ToeicWritingPartOneGradePanel
                   grade={grade}
+                  responseText={state.responseText}
                   onRewrite={() => {
                     setGrade(null);
                     submissionKeyRef.current = null;

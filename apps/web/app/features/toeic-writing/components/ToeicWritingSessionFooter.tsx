@@ -34,7 +34,7 @@ export function ToeicWritingSessionFooter({
   });
 
   return (
-    <footer className="bg-background/95 supports-[backdrop-filter]:bg-background/85 fixed inset-x-0 bottom-0 z-30 border-t py-3 backdrop-blur">
+    <footer className="bg-background/95 supports-[backdrop-filter]:bg-background/85 sticky bottom-0 z-30 border-t py-3 backdrop-blur">
       <div className="mx-auto flex w-full max-w-[1200px] items-center justify-end gap-2 px-4 sm:px-6">
           <Button
             type="button"

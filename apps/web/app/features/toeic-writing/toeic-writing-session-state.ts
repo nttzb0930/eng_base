@@ -35,6 +35,7 @@ export type ToeicWritingSessionAction =
   | { type: "saved" }
   | { type: "save-failed" }
   | { type: "submitting" }
+  | { type: "submit-succeeded" }
   | { type: "submit-failed" };
 
 export function reduceWritingSession(
@@ -66,6 +67,8 @@ export function reduceWritingSession(
       return { ...state, saveStatus: "ERROR" };
     case "submitting":
       return { ...state, submitting: true };
+    case "submit-succeeded":
+      return { ...state, submitting: false, saveStatus: "SAVED" };
     case "submit-failed":
       return { ...state, submitting: false };
   }

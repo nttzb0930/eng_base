@@ -1120,7 +1120,7 @@
     "session": {
       "part": "Part {part}",
       "taskNumber": "Bài {number}",
-      "backToTasks": "Quay lại danh sách bài viết",
+      "backToTasks": "Quay lại",
       "prompt": "Hình ảnh và yêu cầu",
       "emailPrompt": "Nội dung email",
       "requiredWords": "Từ bắt buộc",
@@ -1151,6 +1151,8 @@
       "loadErrorTitle": "Không thể tải bài luyện viết này",
       "loadErrorDescription": "Bài có thể chưa sẵn sàng hoặc đường dẫn không đúng với Part của bài.",
       "viewSample": "Xem câu trả lời mẫu",
+      "hideSample": "Ẩn câu trả lời mẫu",
+      "loadingSample": "Đang tải câu trả lời mẫu...",
       "retry": "Thử lại"
     },
     "partTwoCoaching": {
@@ -1244,6 +1246,7 @@
       "quota": "Còn {remaining}/{limit} lượt chấm AI hôm nay",
       "correctionTitle": "Câu sửa gợi ý",
       "improvementTitle": "AI gợi ý thêm",
+      "yourSentence": "Câu của bạn:",
       "savedToHistory": "Kết quả này đã được lưu vào lịch sử tài khoản.",
       "validation": {
         "title": "Cần chỉnh lại trước khi chấm điểm",

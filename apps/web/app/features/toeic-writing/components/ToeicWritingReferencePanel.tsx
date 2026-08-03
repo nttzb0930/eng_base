@@ -17,7 +17,7 @@ export function ToeicWritingReferencePanel({
   const notScored = t("notScored");
 
   return (
-    <section className="bg-card rounded-md border p-4 sm:p-6">
+    <section className="bg-card max-h-[500px] overflow-y-auto rounded-md border p-4 sm:p-6 pr-3 animate-in fade-in-0 slide-in-from-top-3 duration-300 ease-out [scrollbar-gutter:stable]">
       <div className="flex items-center gap-2">
         <BookOpenCheck
           className="h-5 w-5 text-emerald-600"
@@ -73,21 +73,41 @@ function PartOneReference({
             />
             {section.title}
           </h3>
-          <ol className="mt-3 space-y-3">
-            {section.values.map((value, index) => (
-              <li
-                key={`${section.title}-${index}`}
-                className="text-sm leading-7"
-              >
-                <span>{value}</span>
-                {section.translations?.[index] ? (
-                  <span className="text-muted-foreground mt-1 block">
-                    {section.translations[index]}
-                  </span>
-                ) : null}
-              </li>
-            ))}
-          </ol>
+          <div className="mt-3 space-y-3">
+            {section.values.map((value, index) => {
+              const bullets = value
+                .split(/\s*•\s*/u)
+                .map((item) => item.trim())
+                .filter(Boolean);
+
+              if (bullets.length > 1) {
+                return (
+                  <ul
+                    key={`${section.title}-${index}`}
+                    className="list-disc space-y-2 pl-5 text-sm leading-7 text-foreground"
+                  >
+                    {bullets.map((bullet, bIdx) => (
+                      <li key={bIdx}>{bullet}</li>
+                    ))}
+                  </ul>
+                );
+              }
+
+              return (
+                <div
+                  key={`${section.title}-${index}`}
+                  className="text-sm leading-7 text-foreground"
+                >
+                  <p>{value}</p>
+                  {section.translations?.[index] ? (
+                    <p className="text-muted-foreground mt-1">
+                      {section.translations[index]}
+                    </p>
+                  ) : null}
+                </div>
+              );
+            })}
+          </div>
         </section>
       ))}
     </div>

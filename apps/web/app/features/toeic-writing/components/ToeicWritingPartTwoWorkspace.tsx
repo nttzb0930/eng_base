@@ -150,7 +150,9 @@ export function ToeicWritingPartTwoWorkspace({
 
   return (
     <div className="grid items-start gap-5 lg:grid-cols-2">
-      <ToeicWritingPromptPane task={task} />
+      <div className="lg:sticky lg:top-20">
+        <ToeicWritingPromptPane task={task} />
+      </div>
       <div className="min-w-0 space-y-4">
         <ToeicWritingEditorPane
           responseText={responseText}

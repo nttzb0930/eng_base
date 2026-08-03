@@ -21,6 +21,8 @@ type ToeicWritingEditorPaneProps = {
   onChange(value: string): void;
   onRetry(): void;
   onViewSample?(): void;
+  sampleOpen?: boolean;
+  sampleLoading?: boolean;
 };
 
 export function ToeicWritingEditorPane({
@@ -34,6 +36,8 @@ export function ToeicWritingEditorPane({
   onChange,
   onRetry,
   onViewSample,
+  sampleOpen = false,
+  sampleLoading = false,
 }: ToeicWritingEditorPaneProps) {
   const t = useTranslations("toeicWriting.session");
   const wordCount = responseText.trim()
@@ -104,9 +108,13 @@ export function ToeicWritingEditorPane({
           size="sm"
           onClick={onViewSample}
           disabled={disabled || !responseText.trim()}
-          className="mt-4 rounded-md"
+          className="mt-4 w-full rounded-md"
         >
-          {t("viewSample")}
+          {sampleLoading
+            ? t("loadingSample")
+            : sampleOpen
+              ? t("hideSample")
+              : t("viewSample")}
         </Button>
       ) : null}
 

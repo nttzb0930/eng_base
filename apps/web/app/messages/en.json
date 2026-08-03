@@ -1120,7 +1120,7 @@
     "session": {
       "part": "Part {part}",
       "taskNumber": "Task {number}",
-      "backToTasks": "Back to Writing tasks",
+      "backToTasks": "Back",
       "prompt": "Picture and instructions",
       "emailPrompt": "Email prompt",
       "requiredWords": "Required words",
@@ -1151,6 +1151,8 @@
       "loadErrorTitle": "This Writing task could not be loaded",
       "loadErrorDescription": "The task may be unavailable or the route may not match its Part.",
       "viewSample": "View sample response",
+      "hideSample": "Hide sample response",
+      "loadingSample": "Loading sample response...",
       "retry": "Try again"
     },
     "partTwoCoaching": {
@@ -1240,6 +1242,7 @@
       "quota": "{remaining}/{limit} AI grades remaining today",
       "correctionTitle": "Suggested correction",
       "improvementTitle": "AI improvement",
+      "yourSentence": "Your sentence:",
       "savedToHistory": "This result is saved to your account history.",
       "validation": {
         "title": "Revise this response before grading",
