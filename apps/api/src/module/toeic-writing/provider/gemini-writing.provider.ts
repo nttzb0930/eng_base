@@ -6,6 +6,7 @@ import {
   buildPartTwoGradingPrompt,
   PART_TWO_GRADING_SYSTEM_INSTRUCTION,
 } from "./part-two-grading.prompt";
+import { buildPictureEnrichmentPrompt } from "./picture-enrichment.prompt";
 import {
   writingPartOneProviderResultSchema,
   writingPartTwoProviderResultSchema,
@@ -83,11 +84,7 @@ export class GeminiWritingProvider implements WritingAiProvider {
   ) {}
 
   enrichPicture(input: Parameters<WritingAiProvider["enrichPicture"]>[0]) {
-    const prompt = [
-      "Describe only what is visibly supported by this TOEIC Writing picture.",
-      `Required words: ${input.requiredWords.join(", ")}.`,
-      "Return the requested JSON schema. Do not infer hidden facts.",
-    ].join("\n");
+    const prompt = buildPictureEnrichmentPrompt(input.requiredWords);
 
     return this.generateStructured(
       {
