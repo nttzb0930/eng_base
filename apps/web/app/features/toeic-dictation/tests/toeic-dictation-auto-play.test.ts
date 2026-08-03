@@ -13,7 +13,7 @@ test("auto-play key changes when the learner switches practice mode", () => {
   );
 });
 
-test("Compact player remounts when the learner switches dictation practice mode", () => {
+test("Compact player restarts without remounting when the learner switches dictation practice mode", () => {
   const viewSource = readFileSync(
     new URL(
       "../../../views/toeic-listening/ToeicDictationSessionView.tsx",
@@ -22,8 +22,13 @@ test("Compact player remounts when the learner switches dictation practice mode"
     "utf8"
   );
 
+  assert.match(viewSource, /autoPlayKey=\{getToeicDictationAutoPlayKey\(/);
   assert.match(
     viewSource,
-    /<CompactAudioPlayer\s+key=\{getToeicDictationAutoPlayKey\(item\.id, mode\)\}/
+    /getToeicDictationAutoPlayKey\(\s*item\.id,\s*mode\s*\)/
+  );
+  assert.doesNotMatch(
+    viewSource,
+    /<CompactAudioPlayer(?:(?!\/>)[\s\S])*\bkey=/
   );
 });

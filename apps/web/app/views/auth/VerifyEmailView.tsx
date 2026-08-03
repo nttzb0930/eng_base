@@ -34,19 +34,15 @@ export function VerifyEmailView() {
     () => searchParams.get("email") ?? "",
     [searchParams]
   );
-  const [email, setEmail] = useState(initialEmail);
-  const [code, setCode] = useState("");
+  const email = initialEmail;
   const [digits, setDigits] = useState<string[]>(() =>
     Array.from({ length: 6 }, () => "")
   );
+  const code = digits.join("");
   const [loading, setLoading] = useState(false);
   const [resending, setResending] = useState(false);
   const [resendCooldown, setResendCooldown] = useState(0);
   const inputRefs = useRef<Array<HTMLInputElement | null>>([]);
-
-  useEffect(() => {
-    setCode(digits.join(""));
-  }, [digits]);
 
   useEffect(() => {
     if (resendCooldown <= 0) return;

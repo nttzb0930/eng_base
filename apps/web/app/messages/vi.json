@@ -1238,7 +1238,7 @@
     "mode": {
       "label": "Chế độ nghe",
       "level": "Luyện đề Listening",
-      "dictation": "Nghe chép"
+      "dictation": "Nghe chuyên sâu"
     },
     "error": {
       "title": "Không thể tải TOEIC Listening",
@@ -1378,8 +1378,10 @@
       "testTitle": "TEST {test} 2026",
       "lessonCount": "{lessons} bài · {questions} câu",
       "lesson": "Bài {lesson}",
+      "lessonRange": "Bài {lesson} (Câu {start}–{end})",
       "item": "Câu {item}",
       "sidebarLabel": "Danh sách bài nghe chép",
+      "setProgress": "Tiến độ bộ đề",
       "modeCheck": "Nghe Check",
       "modeDictation": "Nghe Chép",
       "modeFull": "Nghe Full",

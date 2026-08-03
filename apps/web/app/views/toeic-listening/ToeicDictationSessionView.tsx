@@ -173,12 +173,14 @@ export function ToeicDictationSessionView({
         lessonIndex: lessonIdx,
         start,
         end,
-        title: `Bài ${lessonIdx + 1}`,
-        rangeLabel: `Câu ${start}–${end}`,
-        fullTitle: `Bài ${lessonIdx + 1} (Câu ${start}–${end})`,
+        fullTitle: t("lessonRange", {
+          lesson: lessonIdx + 1,
+          start,
+          end,
+        }),
       };
     });
-  }, [lessons]);
+  }, [lessons, t]);
 
   useEffect(() => {
     if (!setQuery.data || !progressQuery.data) return;
@@ -393,9 +395,9 @@ export function ToeicDictationSessionView({
 
   const checkFeedback = result
     ? mergeToeicDictationCheckFeedback(
-      checkQuery.data?.segments ?? [],
-      result.words
-    )
+        checkQuery.data?.segments ?? [],
+        result.words
+      )
     : [];
   const activeLesson =
     lessons.find((lesson) =>
@@ -442,7 +444,7 @@ export function ToeicDictationSessionView({
               onClick={() => setMobileNavOpen(true)}
               className="flex shrink-0 items-center gap-1.5 rounded-xl border border-emerald-200/80 bg-emerald-50/80 px-3 py-1.5 text-xs font-semibold text-emerald-800 hover:bg-emerald-100 hover:text-emerald-900 lg:hidden dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900"
             >
-              <span>Danh sách bài</span>
+              <span>{t("sidebarLabel")}</span>
               <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
             </button>
           </div>
@@ -513,7 +515,7 @@ export function ToeicDictationSessionView({
                             <span className="flex h-5 w-5 items-center justify-center rounded-full text-[11px]">
                               {itemProgress?.mastered ? "✓" : globalNum}
                             </span>
-                            <span>Câu {globalNum}</span>
+                            <span>{t("item", { item: globalNum })}</span>
                             {itemProgress?.mastered && (
                               <CheckCircle2
                                 className="ml-auto h-3.5 w-3.5 text-emerald-600"
@@ -598,7 +600,7 @@ export function ToeicDictationSessionView({
                               <span className="flex h-5 w-5 items-center justify-center rounded-full text-[11px]">
                                 {itemProgress?.mastered ? "✓" : globalNum}
                               </span>
-                              <span>Câu {globalNum}</span>
+                              <span>{t("item", { item: globalNum })}</span>
                               {itemProgress?.mastered && (
                                 <CheckCircle2
                                   className="ml-auto h-3.5 w-3.5 text-emerald-600"
@@ -639,7 +641,7 @@ export function ToeicDictationSessionView({
                 <>
                   <div className="flex items-center justify-between gap-4 text-sm">
                     <span className="text-muted-foreground text-xs font-semibold uppercase tracking-wide">
-                      Tiến độ bộ đề
+                      {t("setProgress")}
                     </span>
                     <span className="text-muted-foreground text-xs font-medium sm:text-sm">
                       {saved?.mastered
@@ -686,7 +688,7 @@ export function ToeicDictationSessionView({
                 </div>
               ) : (
                 <div className="bg-card mt-4 rounded-2xl border p-4 shadow-sm sm:p-7">
-                  <div className="flex items-center justify-between border-b pb-3.5 mb-4">
+                  <div className="mb-4 flex items-center justify-between border-b pb-3.5">
                     <button
                       type="button"
                       disabled={index === 0}
@@ -826,14 +828,14 @@ export function ToeicDictationSessionView({
                             const feedback =
                               "result" in segment
                                 ? (
-                                  segment as ToeicDictationCheckFeedbackSegment
-                                ).result
+                                    segment as ToeicDictationCheckFeedbackSegment
+                                  ).result
                                 : null;
                             const revealIndex =
                               "hiddenIndex" in segment
                                 ? ((
-                                  segment as ToeicDictationCheckFeedbackSegment
-                                ).hiddenIndex ?? 0)
+                                    segment as ToeicDictationCheckFeedbackSegment
+                                  ).hiddenIndex ?? 0)
                                 : 0;
                             const isRevealed =
                               feedback && revealIndex < revealedCount;
@@ -874,9 +876,7 @@ export function ToeicDictationSessionView({
                                 className="h-3.5 w-3.5 shrink-0"
                                 aria-hidden="true"
                               />
-                              <span>
-                                {t("revealWords", { count })}
-                              </span>
+                              <span>{t("revealWords", { count })}</span>
                             </button>
                           ))}
                           <button
@@ -992,7 +992,7 @@ export function ToeicDictationSessionView({
                                       dictationHiddenWordIndexes.length,
                                       1
                                     )) *
-                                  100
+                                    100
                                 )}
                               %
                             </span>
@@ -1006,7 +1006,7 @@ export function ToeicDictationSessionView({
                                 {segment.wordIndex === null
                                   ? segment.text
                                   : (result?.words[segment.wordIndex]
-                                    ?.expected ??
+                                      ?.expected ??
                                     segment.text ??
                                     "·".repeat(segment.length ?? 5))}
                               </span>
@@ -1080,7 +1080,7 @@ export function ToeicDictationSessionView({
                                 autoFocus={
                                   !result &&
                                   segment.wordIndex ===
-                                  dictationHiddenWordIndexes[0]
+                                    dictationHiddenWordIndexes[0]
                                 }
                                 value={
                                   typedWords[segment.wordIndex] ??

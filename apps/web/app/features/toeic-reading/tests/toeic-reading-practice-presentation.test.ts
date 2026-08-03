@@ -17,7 +17,7 @@ test("Part scopes use guided practice while Full Test keeps the exam session", (
   assert.match(route, /<ToeicReadingPracticeView/);
 });
 
-test("guided practice has responsive split layout and a sticky navigation footer", () => {
+test("guided practice has responsive split layouts and a fixed navigation footer", () => {
   const shell = readSource(
     "app/features/toeic-reading/components/ToeicReadingPracticeShell.tsx"
   );
@@ -28,9 +28,9 @@ test("guided practice has responsive split layout and a sticky navigation footer
   assert.match(shell, /min-w-0/);
   assert.match(shell, /overflow-x-hidden/);
   assert.match(workspace, /lg:grid-cols-\[minmax\(0,38fr\)_minmax\(0,62fr\)\]/);
-  assert.match(workspace, /lg:grid-cols-2/);
-  assert.match(workspace, /lg:overflow-y-auto/);
-  assert.match(workspace, /sticky bottom-0/);
+  assert.match(workspace, /lg:grid-cols-\[minmax\(0,70fr\)_minmax\(0,30fr\)\]/);
+  assert.match(workspace, /h-full overflow-y-auto/);
+  assert.match(workspace, /fixed bottom-0/);
   assert.doesNotMatch(workspace, /w-\[(?:3|4|5|6|7|8|9)\d\dpx\]/);
 });
 
