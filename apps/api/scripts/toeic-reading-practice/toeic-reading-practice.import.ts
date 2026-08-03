@@ -109,12 +109,21 @@ export async function importToeicReadingPractice(input: {
         "content.json"
       )) as ToeicReadingPracticeTest;
       const canonicalValidation = validateToeicReadingPracticeTest(content);
-      if (!canonicalValidation.valid) {
+      const legacyMissingSetName = canonicalValidation.errors.every(
+        (error) => error === "Source set name is required"
+      );
+      if (!canonicalValidation.valid && !legacyMissingSetName) {
         summary.rejected.push({
           sourceTestId: item.sourceTestId,
           errors: canonicalValidation.errors,
         });
         continue;
+      }
+      // Older approved packages were produced before sourceSetName became
+      // mandatory. Preserve their original sourceVersion while supplying a
+      // display title for the database import.
+      if (!content.sourceSetName?.trim()) {
+        content = { ...content, sourceSetName: "TOEIC Reading" };
       }
 
       const manifest = (await input.storage.readPackageFile(
