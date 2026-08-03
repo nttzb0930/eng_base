@@ -44,17 +44,17 @@ export function sha256Canonical(value: unknown): string {
 }
 
 export function toeicWritingContentHashInput(
-  task: ToeicWritingCanonicalTask,
+  task: ToeicWritingCanonicalTask
 ): Omit<ToeicWritingCanonicalTask, "contentSha256" | "retrievedAt"> {
   return Object.fromEntries(
     Object.entries(task).filter(
-      ([key]) => key !== "contentSha256" && key !== "retrievedAt",
-    ),
+      ([key]) => key !== "contentSha256" && key !== "retrievedAt"
+    )
   ) as Omit<ToeicWritingCanonicalTask, "contentSha256" | "retrievedAt">;
 }
 
 export function calculateToeicWritingContentSha256(
-  task: ToeicWritingCanonicalTask,
+  task: ToeicWritingCanonicalTask
 ): string {
   return sha256Canonical(toeicWritingContentHashInput(task));
 }

@@ -121,18 +121,18 @@ test("rejects Part 2 with orphaned gap references", () => {
 
   assert.match(
     validateToeicWritingTask(task).errors.join("\n"),
-    /gap reference/iu,
+    /gap reference/iu
   );
 });
 
 test("canonical hashing sorts object keys but retains array order", () => {
   assert.equal(
     sha256Canonical({ second: 2, first: 1 }),
-    sha256Canonical({ first: 1, second: 2 }),
+    sha256Canonical({ first: 1, second: 2 })
   );
   assert.notEqual(
     sha256Canonical({ items: ["first", "second"] }),
-    sha256Canonical({ items: ["second", "first"] }),
+    sha256Canonical({ items: ["second", "first"] })
   );
 });
 
@@ -146,6 +146,6 @@ test("content hashing excludes retrieval time and the checksum field", () => {
 
   assert.equal(
     calculateToeicWritingContentSha256(first),
-    calculateToeicWritingContentSha256(second),
+    calculateToeicWritingContentSha256(second)
   );
 });

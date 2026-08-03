@@ -72,7 +72,10 @@
     "data:inventory-toeic-grammar": "tsx ./scripts/toeic-grammar/inventory-toeic-grammar.ts",
     "data:download-toeic-grammar": "tsx ./scripts/toeic-grammar/download-toeic-grammar.ts",
     "data:validate-toeic-grammar": "tsx ./scripts/toeic-grammar/validate-toeic-grammar.ts",
-    "data:import-toeic-grammar": "dotenv -e ../../.env -- tsx ./scripts/toeic-grammar/import-toeic-grammar.ts"
+    "data:import-toeic-grammar": "dotenv -e ../../.env -- tsx ./scripts/toeic-grammar/import-toeic-grammar.ts",
+    "data:inventory-toeic-writing": "tsx ./scripts/toeic-writing/inventory-toeic-writing.ts",
+    "data:download-toeic-writing": "tsx ./scripts/toeic-writing/download-toeic-writing.ts",
+    "data:validate-toeic-writing": "tsx ./scripts/toeic-writing/validate-toeic-writing.ts"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",

@@ -21,7 +21,7 @@ function isBlank(value: string): boolean {
 function validateNonBlankArray(
   values: string[],
   path: string,
-  errors: string[],
+  errors: string[]
 ): void {
   if (values.length === 0) {
     errors.push(`${path} must contain at least one value`);
@@ -82,13 +82,13 @@ function isSafeStorageKey(storageKey: string): boolean {
 
 function validatePartOne(
   task: ToeicWritingPartOneCanonicalTask,
-  errors: string[],
+  errors: string[]
 ): void {
   if (task.payload.requiredWords.length === 0) {
     errors.push("payload.requiredWords must contain at least one word");
   } else {
     const normalizedWords = task.payload.requiredWords.map(({ en }) =>
-      en.trim().toLocaleLowerCase("en-US"),
+      en.trim().toLocaleLowerCase("en-US")
     );
 
     if (normalizedWords.some((word) => word.length === 0)) {
@@ -121,7 +121,7 @@ function validatePartOne(
 
 function validateRequirements(
   task: ToeicWritingPartTwoCanonicalTask,
-  errors: string[],
+  errors: string[]
 ): void {
   const { requirements } = task.payload;
   if (requirements.length === 0) {
@@ -141,7 +141,7 @@ function validateRequirements(
 
 function validatePartTwo(
   task: ToeicWritingPartTwoCanonicalTask,
-  errors: string[],
+  errors: string[]
 ): void {
   if (task.media !== null) {
     errors.push("media must be null for Part 2");
@@ -154,12 +154,12 @@ function validatePartTwo(
   validateNonBlankArray(
     task.payload.chunksLevel1,
     "payload.chunksLevel1",
-    errors,
+    errors
   );
   validateNonBlankArray(
     task.payload.chunksLevel2,
     "payload.chunksLevel2",
-    errors,
+    errors
   );
 
   if (isBlank(task.payload.sampleEn)) {
@@ -181,7 +181,7 @@ function validatePartTwo(
 }
 
 export function validateToeicWritingTask(
-  task: ToeicWritingCanonicalTask,
+  task: ToeicWritingCanonicalTask
 ): ToeicWritingValidationResult {
   const errors: string[] = [];
 
