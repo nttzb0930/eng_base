@@ -23,6 +23,7 @@ import { LearnPageSkeleton } from "@/app/components/feedback/RouteSkeletons";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useDashboard } from "@/app/features/dashboard/hooks/use-dashboard";
+import { resolvePostAuthRedirect } from "@/app/features/auth/routing/resolve-post-auth-redirect";
 import {
   useCefrLevelProgress,
   useCourseProgress,
@@ -77,7 +78,12 @@ export function LearnView() {
       !userProgressQuery.isLoading &&
       (!courseProgress || !userProgress || !userProgress.activeCourse)
     ) {
-      router.replace(withLocale("/placement-test", locale));
+      const postAuthTarget = resolvePostAuthRedirect(userProgress);
+      const target =
+        postAuthTarget === "/learn" && !courseProgress
+          ? "/courses"
+          : postAuthTarget;
+      router.replace(withLocale(target, locale));
     }
   }, [
     courseProgress,
