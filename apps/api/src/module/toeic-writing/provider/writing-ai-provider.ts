@@ -1,6 +1,8 @@
 import type {
+  ToeicWritingAssistanceSnapshot,
   ToeicWritingGradeCheck,
   ToeicWritingLocale,
+  ToeicWritingPartTwoGradeResult,
   ToeicWritingPartOneSuggestion,
 } from "@repo/shared";
 
@@ -33,6 +35,11 @@ export type WritingPartOneProviderResult = {
   suggestion: ToeicWritingPartOneSuggestion;
 };
 
+export type WritingPartTwoProviderResult = Omit<
+  ToeicWritingPartTwoGradeResult,
+  "id" | "taskId" | "quota" | "cached" | "assistance"
+>;
+
 export interface WritingAiProvider {
   enrichPicture(input: {
     imageBytes: Uint8Array;
@@ -52,4 +59,16 @@ export interface WritingAiProvider {
           mimeType: WritingImageMimeType;
         };
   }): Promise<WritingPartOneProviderResult>;
+
+  gradePartTwo(input: {
+    locale: ToeicWritingLocale;
+    sourceEmail: string;
+    requirements: Array<{
+      id: string;
+      textEn: string;
+      textVi: string | null;
+    }>;
+    responseText: string;
+    assistance: ToeicWritingAssistanceSnapshot;
+  }): Promise<WritingPartTwoProviderResult>;
 }

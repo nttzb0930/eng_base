@@ -2,13 +2,16 @@ import { GoogleGenAI, type GenerateContentParameters } from "@google/genai";
 import { z } from "zod";
 
 import type { GeminiConfiguration } from "../../../config";
+import { buildPartTwoGradingPrompt } from "./part-two-grading.prompt";
 import {
   writingPartOneProviderResultSchema,
+  writingPartTwoProviderResultSchema,
   writingPictureContextSchema,
 } from "./writing-ai.schemas";
 import type {
   WritingAiProvider,
   WritingPartOneProviderResult,
+  WritingPartTwoProviderResult,
 } from "./writing-ai-provider";
 
 export interface GeminiWritingClient {
@@ -129,6 +132,46 @@ export class GeminiWritingProvider implements WritingAiProvider {
       },
       writingPartOneProviderResultSchema
     );
+  }
+
+  async gradePartTwo(
+    input: Parameters<WritingAiProvider["gradePartTwo"]>[0]
+  ): Promise<WritingPartTwoProviderResult> {
+    const result = await this.generateStructured(
+      {
+        model: this.configuration.gradingModel,
+        contents: [
+          {
+            role: "user",
+            parts: [{ text: buildPartTwoGradingPrompt(input) }],
+          },
+        ],
+        config: {
+          temperature: 0.1,
+          responseMimeType: "application/json",
+          responseJsonSchema: z.toJSONSchema(
+            writingPartTwoProviderResultSchema
+          ),
+        },
+      },
+      writingPartTwoProviderResultSchema
+    );
+    const requirementIds = new Set(
+      input.requirements.map((requirement) => requirement.id)
+    );
+    const returnedIds = [
+      ...result.taskCompletion.requirements.map(
+        (requirement) => requirement.requirementId
+      ),
+      ...result.improvedEmail.requirementCoverage.map(
+        (requirement) => requirement.requirementId
+      ),
+    ];
+    if (returnedIds.some((id) => !requirementIds.has(id))) {
+      throw new WritingAiInvalidResponseError();
+    }
+
+    return result;
   }
 
   private async generateStructured<T>(

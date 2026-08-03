@@ -60,3 +60,117 @@ export const writingPartOneProviderResultSchema = z
       .strict(),
   })
   .strict();
+
+const evidenceRangeSchema = z
+  .object({
+    start: z.number().int().nonnegative(),
+    end: z.number().int().positive(),
+    text: z.string().min(1).max(2_200),
+  })
+  .strict()
+  .refine(({ start, end }) => end > start, {
+    message: "Evidence end must be greater than start",
+  });
+
+const feedbackStatusSchema = z.enum(["PASS", "WARN", "FAIL"]);
+
+export const writingPartTwoProviderResultSchema = z
+  .object({
+    score: z.union([
+      z.literal(0),
+      z.literal(1),
+      z.literal(2),
+      z.literal(3),
+      z.literal(4),
+    ]),
+    scoreLabel: z.string().trim().min(1).max(100),
+    taskCompletion: z
+      .object({
+        status: feedbackStatusSchema,
+        completedCount: z.number().int().nonnegative().max(20),
+        totalCount: z.number().int().nonnegative().max(20),
+        requirements: z
+          .array(
+            z
+              .object({
+                requirementId: z.string().trim().min(1).max(100),
+                status: z.enum(["MET", "PARTIAL", "MISSING"]),
+                comment: z.string().trim().min(1).max(1_000),
+                evidence: z.array(evidenceRangeSchema).max(10),
+                suggestedFix: z.string().trim().min(1).max(1_000).nullable(),
+              })
+              .strict()
+          )
+          .max(20),
+      })
+      .strict(),
+    sentenceVariety: z
+      .object({
+        status: feedbackStatusSchema,
+        detected: z
+          .array(
+            z
+              .object({
+                kind: z.enum(["SIMPLE", "COMPOUND", "COMPLEX"]),
+                evidence: evidenceRangeSchema,
+              })
+              .strict()
+          )
+          .max(20),
+        feedback: z.string().trim().min(1).max(1_500),
+      })
+      .strict(),
+    tone: z
+      .object({
+        status: feedbackStatusSchema,
+        feedback: z.string().trim().min(1).max(1_500),
+        suggestedOpening: z.string().trim().min(1).max(500).nullable(),
+      })
+      .strict(),
+    grammar: z
+      .object({
+        status: feedbackStatusSchema,
+        errors: z
+          .array(
+            z
+              .object({
+                severity: z.enum(["SERIOUS", "MINOR"]),
+                evidence: evidenceRangeSchema,
+                correction: z.string().trim().min(1).max(500),
+                explanation: z.string().trim().min(1).max(1_000),
+              })
+              .strict()
+          )
+          .max(50),
+        feedback: z.string().trim().min(1).max(1_500),
+      })
+      .strict(),
+    paraphrase: z
+      .object({
+        status: feedbackStatusSchema,
+        copiedRanges: z.array(evidenceRangeSchema).max(30),
+        feedback: z.string().trim().min(1).max(1_500),
+      })
+      .strict(),
+    overallFeedback: z.string().trim().min(1).max(2_000),
+    strengths: z.array(z.string().trim().min(1).max(500)).max(20),
+    improvements: z.array(z.string().trim().min(1).max(500)).max(20),
+    improvedEmail: z
+      .object({
+        text: z.string().trim().min(1).max(2_200),
+        wordCount: z.number().int().nonnegative().max(300),
+        differences: z.array(z.string().trim().min(1).max(500)).max(30),
+        requirementCoverage: z
+          .array(
+            z
+              .object({
+                requirementId: z.string().trim().min(1).max(100),
+                evidence: z.array(evidenceRangeSchema).max(10),
+              })
+              .strict()
+          )
+          .max(20),
+      })
+      .strict(),
+  })
+  .strict();

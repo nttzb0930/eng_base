@@ -28,6 +28,73 @@ function fakeClient(responses: string[]) {
   return { client, calls };
 }
 
+function partTwoResult(
+  overrides: Record<string, unknown> = {}
+): Record<string, unknown> {
+  const evidence = { start: 0, end: 14, text: "Dear Mr. Brown" };
+  return {
+    score: 4,
+    scoreLabel: "Excellent",
+    taskCompletion: {
+      status: "PASS",
+      completedCount: 1,
+      totalCount: 1,
+      requirements: [
+        {
+          requirementId: "requirement-1",
+          status: "MET",
+          comment: "Complete.",
+          evidence: [evidence],
+          suggestedFix: null,
+        },
+      ],
+    },
+    sentenceVariety: {
+      status: "PASS",
+      detected: [{ kind: "COMPLEX", evidence }],
+      feedback: "Varied sentences.",
+    },
+    tone: {
+      status: "PASS",
+      feedback: "Professional tone.",
+      suggestedOpening: null,
+    },
+    grammar: { status: "PASS", errors: [], feedback: "Accurate." },
+    paraphrase: { status: "PASS", copiedRanges: [], feedback: "Original." },
+    overallFeedback: "Complete and clear.",
+    strengths: ["Professional tone"],
+    improvements: [],
+    improvedEmail: {
+      text: "Dear Mr. Brown, thank you for contacting us.",
+      wordCount: 8,
+      differences: ["Added a clear greeting."],
+      requirementCoverage: [
+        { requirementId: "requirement-1", evidence: [evidence] },
+      ],
+    },
+    ...overrides,
+  };
+}
+
+const partTwoInput = {
+  locale: "vi" as const,
+  sourceEmail: "From: Michael Brown\nSubject: Printer issue",
+  requirements: [
+    {
+      id: "requirement-1",
+      textEn: "Ask one question",
+      textVi: "Đặt một câu hỏi",
+    },
+  ],
+  responseText: "Dear Mr. Brown, thank you for contacting us.",
+  assistance: {
+    outlineViewed: true,
+    vocabularyViewed: false,
+    sampleViewed: false,
+    communityAnswerRestored: false,
+  },
+};
+
 test("picture enrichment sends owned inline bytes and parses structured JSON", async () => {
   const { client, calls } = fakeClient([
     JSON.stringify({
@@ -135,4 +202,83 @@ test("invalid provider JSON is repaired once then rejected without exposing cont
     }
   );
   assert.equal(calls.length, 2);
+});
+
+test("Part 2 grading uses the grading model, locale, and strict schema", async () => {
+  const { client, calls } = fakeClient([JSON.stringify(partTwoResult())]);
+  const provider = new GeminiWritingProvider(client, configuration);
+
+  const result = await provider.gradePartTwo(partTwoInput);
+
+  assert.equal(result.score, 4);
+  const request = calls[0] as {
+    model: string;
+    contents: unknown;
+    config: { responseJsonSchema?: unknown };
+  };
+  assert.equal(request.model, "grading-model");
+  assert.match(JSON.stringify(request.contents), /Vietnamese/u);
+  assert.ok(request.config.responseJsonSchema);
+});
+
+test("Part 2 grading repairs one invalid schema response", async () => {
+  const { client, calls } = fakeClient([
+    JSON.stringify(partTwoResult({ score: 5 })),
+    JSON.stringify(partTwoResult()),
+  ]);
+  const provider = new GeminiWritingProvider(client, configuration);
+
+  assert.equal((await provider.gradePartTwo(partTwoInput)).score, 4);
+  assert.equal(calls.length, 2);
+});
+
+test("Part 2 grading rejects unknown requirements", async () => {
+  const invalid = partTwoResult();
+  const taskCompletion = invalid.taskCompletion as {
+    requirements: Array<{ requirementId: string }>;
+  };
+  taskCompletion.requirements[0]!.requirementId = "requirement-unknown";
+  const { client } = fakeClient([JSON.stringify(invalid)]);
+  const provider = new GeminiWritingProvider(client, configuration);
+
+  await assert.rejects(
+    () => provider.gradePartTwo(partTwoInput),
+    WritingAiInvalidResponseError
+  );
+});
+
+test("Part 2 grading rejects malformed evidence after one repair", async () => {
+  const invalid = partTwoResult();
+  const taskCompletion = invalid.taskCompletion as {
+    requirements: Array<{ evidence: Array<{ start: number; end: number }> }>;
+  };
+  taskCompletion.requirements[0]!.evidence[0] = { start: 10, end: 2 };
+  const { client, calls } = fakeClient([
+    JSON.stringify(invalid),
+    JSON.stringify(invalid),
+  ]);
+  const provider = new GeminiWritingProvider(client, configuration);
+
+  await assert.rejects(
+    () => provider.gradePartTwo(partTwoInput),
+    WritingAiInvalidResponseError
+  );
+  assert.equal(calls.length, 2);
+});
+
+test("Part 2 grading propagates the provider timeout without repair", async () => {
+  const client: GeminiWritingClient = {
+    generateContent: (request) =>
+      new Promise((_resolve, reject) => {
+        request.config?.abortSignal?.addEventListener("abort", () => {
+          reject(new Error("aborted"));
+        });
+      }),
+  };
+  const provider = new GeminiWritingProvider(client, {
+    ...configuration,
+    timeoutMs: 5,
+  });
+
+  await assert.rejects(() => provider.gradePartTwo(partTwoInput), /aborted/u);
 });
