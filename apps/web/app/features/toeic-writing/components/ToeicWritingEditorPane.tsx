@@ -17,6 +17,7 @@ type ToeicWritingEditorPaneProps = {
   disabled?: boolean;
   onChange(value: string): void;
   onRetry(): void;
+  onViewSample?(): void;
 };
 
 export function ToeicWritingEditorPane({
@@ -26,6 +27,7 @@ export function ToeicWritingEditorPane({
   disabled,
   onChange,
   onRetry,
+  onViewSample,
 }: ToeicWritingEditorPaneProps) {
   const t = useTranslations("toeicWriting.session");
   const wordCount = responseText.trim()
@@ -68,6 +70,19 @@ export function ToeicWritingEditorPane({
           })}
         </span>
       </div>
+
+      {onViewSample ? (
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          onClick={onViewSample}
+          disabled={disabled || !responseText.trim()}
+          className="mt-4 rounded-md"
+        >
+          {t("viewSample")}
+        </Button>
+      ) : null}
 
       {saveStatus === "ERROR" ? (
         <Alert className="mt-5 border-rose-200 bg-rose-50/70 dark:border-rose-900 dark:bg-rose-950/40">

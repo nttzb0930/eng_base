@@ -12,6 +12,8 @@ type ToeicWritingSessionFooterProps = {
   onBack(): void;
   onSave(): void;
   onSubmit(): void;
+  primaryLabel?: string;
+  primaryPendingLabel?: string;
 };
 
 export function ToeicWritingSessionFooter({
@@ -21,6 +23,8 @@ export function ToeicWritingSessionFooter({
   onBack,
   onSave,
   onSubmit,
+  primaryLabel,
+  primaryPendingLabel,
 }: ToeicWritingSessionFooterProps) {
   const t = useTranslations("toeicWriting.session");
 
@@ -69,7 +73,9 @@ export function ToeicWritingSessionFooter({
             ) : (
               <Send className="h-4 w-4" aria-hidden="true" />
             )}
-            {submitting ? t("submitting") : t("submit")}
+            {submitting
+              ? (primaryPendingLabel ?? t("submitting"))
+              : (primaryLabel ?? t("submit"))}
           </Button>
         </div>
       </div>

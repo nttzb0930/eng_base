@@ -5,12 +5,21 @@ import {
   TOEIC_WRITING_RESPONSE_LIMITS,
   type ToeicWritingDraftPayload,
   type ToeicWritingPart,
+  type ToeicWritingPartOneGradeResult,
+  type ToeicWritingPartOneValidationIssue,
   type ToeicWritingTaskDetail,
 } from "@repo/shared";
 import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useReducer, useRef } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState,
+} from "react";
 
 import { Alert, AlertDescription, AlertTitle } from "@/app/components/ui/alert";
 import { Badge } from "@/app/components/ui/badge";
@@ -19,13 +28,20 @@ import { ToeicWritingEditorPane } from "@/app/features/toeic-writing/components/
 import { ToeicWritingPromptPane } from "@/app/features/toeic-writing/components/ToeicWritingPromptPane";
 import { ToeicWritingSessionFooter } from "@/app/features/toeic-writing/components/ToeicWritingSessionFooter";
 import { ToeicWritingSessionSkeleton } from "@/app/features/toeic-writing/components/ToeicWritingSessionSkeleton";
+import { ToeicWritingGradeHistoryPanel } from "@/app/features/toeic-writing/components/ToeicWritingGradeHistoryPanel";
+import { ToeicWritingPartOneGradePanel } from "@/app/features/toeic-writing/components/ToeicWritingPartOneGradePanel";
+import { ToeicWritingPartOneValidationAlert } from "@/app/features/toeic-writing/components/ToeicWritingPartOneValidationAlert";
 import {
   useDeleteToeicWritingDraft,
+  useGradeToeicWritingPartOne,
+  useRecordToeicWritingAssistance,
   useSaveToeicWritingDraft,
   useSubmitToeicWriting,
   useToeicWritingDraft,
+  useToeicWritingAiQuota,
   useToeicWritingTask,
 } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
+import { validatePartOneEditorResponse } from "@/app/features/toeic-writing/toeic-writing-part-one-grading";
 import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
 import { createToeicWritingAutosaveScheduler } from "@/app/features/toeic-writing/toeic-writing-autosave-scheduler";
 import {
@@ -99,6 +115,7 @@ function ToeicWritingWorkspace({
   initialResponse,
 }: ToeicWritingWorkspaceProps) {
   const t = useTranslations("toeicWriting.session");
+  const gradeT = useTranslations("toeicWriting.partOneGrading");
   const currentLocale = useLocale();
   const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
   const router = useRouter();
@@ -106,6 +123,9 @@ function ToeicWritingWorkspace({
   const { mutateAsync: deleteDraft } = useDeleteToeicWritingDraft();
   const { mutateAsync: submitResponse, isError: submitIsError } =
     useSubmitToeicWriting();
+  const gradePartOne = useGradeToeicWritingPartOne();
+  const quota = useToeicWritingAiQuota(task.part === 1);
+  const recordAssistance = useRecordToeicWritingAssistance();
   const submissionKeyRef = useRef<string | null>(null);
   const navigatingRef = useRef(false);
   const [state, dispatch] = useReducer(reduceWritingSession, {
@@ -114,6 +134,13 @@ function ToeicWritingWorkspace({
     hydrated: true,
     saveStatus: initialResponse ? "SAVED" : "IDLE",
   });
+  const [grade, setGrade] = useState<ToeicWritingPartOneGradeResult | null>(
+    null
+  );
+  const [validationIssues, setValidationIssues] = useState<
+    ToeicWritingPartOneValidationIssue[]
+  >([]);
+  const busy = task.part === 1 ? gradePartOne.isPending : state.submitting;
 
   const persistSnapshot = useCallback(
     async (snapshot: ToeicWritingDraftPayload) => {
@@ -149,9 +176,9 @@ function ToeicWritingWorkspace({
   );
 
   useEffect(() => {
-    if (!state.dirty || state.submitting) return;
+    if (!state.dirty || busy) return;
     autosave.schedule(snapshot());
-  }, [autosave, snapshot, state.dirty, state.submitting]);
+  }, [autosave, busy, snapshot, state.dirty]);
 
   useEffect(() => () => autosave.dispose(), [autosave]);
 
@@ -164,7 +191,7 @@ function ToeicWritingWorkspace({
   }, [autosave, snapshot]);
 
   const backToTasks = useCallback(async () => {
-    if (navigatingRef.current || state.submitting) return;
+    if (navigatingRef.current || busy) return;
     navigatingRef.current = true;
     try {
       await autosave.flush(snapshot(), { lock: true });
@@ -173,7 +200,7 @@ function ToeicWritingWorkspace({
       autosave.unlock();
       navigatingRef.current = false;
     }
-  }, [autosave, locale, router, snapshot, state.submitting]);
+  }, [autosave, busy, locale, router, snapshot]);
 
   const submit = useCallback(async () => {
     if (!state.responseText.trim()) return;
@@ -205,10 +232,49 @@ function ToeicWritingWorkspace({
     task.id,
   ]);
 
+  const gradeResponse = useCallback(async () => {
+    if (task.part !== 1 || gradePartOne.isPending) return;
+    const validation = validatePartOneEditorResponse(
+      state.responseText,
+      task.exercise.requiredWords.map((word) => word.en)
+    );
+    setValidationIssues(validation.issues);
+    if (!validation.valid) return;
+
+    try {
+      await autosave.flush(snapshot());
+      submissionKeyRef.current ??= globalThis.crypto.randomUUID();
+      const result = await gradePartOne.mutateAsync({
+        taskId: task.id,
+        payload: {
+          ...snapshot(),
+          idempotencyKey: submissionKeyRef.current,
+          locale,
+        },
+      });
+      setGrade(result);
+    } catch {
+      // The mutation exposes its error state while preserving the draft.
+    }
+  }, [autosave, gradePartOne, locale, snapshot, state.responseText, task]);
+
+  const viewSample = useCallback(async () => {
+    if (task.part !== 1 || busy) return;
+    try {
+      await recordAssistance.mutateAsync({
+        taskId: task.id,
+        kind: "SAMPLE",
+        contentVersion: task.contentVersion,
+      });
+      await submit();
+    } catch {
+      // Submission error remains visible and the response stays editable.
+    }
+  }, [busy, recordAssistance, submit, task]);
+
   const maxLength = TOEIC_WRITING_RESPONSE_LIMITS[task.part];
   const responseLength = getToeicWritingResponseLength(state.responseText);
-  const canSubmit =
-    responseLength > 0 && responseLength <= maxLength;
+  const canSubmit = responseLength > 0 && responseLength <= maxLength;
 
   return (
     <main className="min-h-dvh bg-slate-50/70 pb-20 dark:bg-slate-950/30">
@@ -236,27 +302,64 @@ function ToeicWritingWorkspace({
       <div className="mx-auto w-full max-w-[1200px] px-4 py-6 sm:px-6">
         <div className="grid items-start gap-5 lg:grid-cols-2">
           <ToeicWritingPromptPane task={task} />
-          <ToeicWritingEditorPane
-            responseText={state.responseText}
-            maxLength={maxLength}
-            saveStatus={state.saveStatus}
-            disabled={state.submitting}
-            onChange={(value) => dispatch({ type: "edit", value })}
-            onRetry={() => void saveNow()}
-          />
+          <div className="min-w-0">
+            {task.part === 1 && quota.data ? (
+              <div className="mb-3 flex justify-end">
+                <Badge variant="outline">
+                  {gradeT("quota", {
+                    remaining: quota.data.remaining,
+                    limit: quota.data.dailyLimit,
+                  })}
+                </Badge>
+              </div>
+            ) : null}
+            <ToeicWritingEditorPane
+              responseText={state.responseText}
+              maxLength={maxLength}
+              saveStatus={state.saveStatus}
+              disabled={busy}
+              onChange={(value) => {
+                submissionKeyRef.current = null;
+                setGrade(null);
+                setValidationIssues([]);
+                dispatch({ type: "edit", value });
+              }}
+              onRetry={() => void saveNow()}
+              onViewSample={
+                task.part === 1 ? () => void viewSample() : undefined
+              }
+            />
+            {task.part === 1 ? (
+              <>
+                <ToeicWritingPartOneValidationAlert issues={validationIssues} />
+                {grade ? (
+                  <ToeicWritingPartOneGradePanel
+                    grade={grade}
+                    onRewrite={() => {
+                      setGrade(null);
+                      submissionKeyRef.current = null;
+                    }}
+                  />
+                ) : null}
+                <ToeicWritingGradeHistoryPanel taskId={task.id} />
+              </>
+            ) : null}
+          </div>
         </div>
 
-        {submitIsError ? (
+        {submitIsError || gradePartOne.isError ? (
           <Alert className="mt-5 border-rose-200 bg-rose-50/70 dark:border-rose-900 dark:bg-rose-950/40">
             <AlertCircle
               className="mr-2 inline h-4 w-4 text-rose-600"
               aria-hidden="true"
             />
             <AlertTitle className="inline text-rose-800 dark:text-rose-200">
-              {t("submitErrorTitle")}
+              {task.part === 1 ? gradeT("error.title") : t("submitErrorTitle")}
             </AlertTitle>
             <AlertDescription className="text-rose-700 dark:text-rose-300">
-              {t("submitErrorDescription")}
+              {task.part === 1
+                ? gradeT("error.description")
+                : t("submitErrorDescription")}
             </AlertDescription>
           </Alert>
         ) : null}
@@ -265,10 +368,12 @@ function ToeicWritingWorkspace({
       <ToeicWritingSessionFooter
         canSubmit={canSubmit}
         saving={state.saveStatus === "SAVING"}
-        submitting={state.submitting}
+        submitting={busy}
         onBack={() => void backToTasks()}
         onSave={() => void saveNow()}
-        onSubmit={() => void submit()}
+        onSubmit={() => void (task.part === 1 ? gradeResponse() : submit())}
+        primaryLabel={task.part === 1 ? gradeT("grade") : undefined}
+        primaryPendingLabel={task.part === 1 ? gradeT("grading") : undefined}
       />
     </main>
   );

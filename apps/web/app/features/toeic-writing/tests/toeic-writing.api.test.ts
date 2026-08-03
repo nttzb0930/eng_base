@@ -34,6 +34,12 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
     ...draft,
     submissionKey: "00000000-0000-4000-8000-000000000001",
   };
+  const grade = {
+    contentVersion: "a".repeat(64),
+    responseText: "The worker is checking a report.",
+    idempotencyKey: "00000000-0000-4000-8000-000000000002",
+    locale: "en" as const,
+  };
 
   await api.overview();
   await api.tasks(1);
@@ -44,6 +50,13 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
   await api.deleteDraft(11);
   await api.submit(11, submission);
   await api.submission(31);
+  await api.gradePartOne(11, grade);
+  await api.quota();
+  await api.grade(41);
+  await api.gradeHistory(11, 40);
+  await api.recordAssistance(11, "SAMPLE", {
+    contentVersion: "a".repeat(64),
+  });
 
   assert.deepEqual(requests, [
     { method: "GET", path: "/toeic/writing/overview" },
@@ -63,6 +76,22 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
       body: submission,
     },
     { method: "GET", path: "/toeic/writing/submissions/31" },
+    {
+      method: "POST",
+      path: "/toeic/writing/tasks/11/grades/part-one",
+      body: grade,
+    },
+    { method: "GET", path: "/toeic/writing/ai-quota" },
+    { method: "GET", path: "/toeic/writing/grades/41" },
+    {
+      method: "GET",
+      path: "/toeic/writing/tasks/11/grades?limit=20&cursor=40",
+    },
+    {
+      method: "POST",
+      path: "/toeic/writing/tasks/11/assistance/SAMPLE",
+      body: { contentVersion: "a".repeat(64) },
+    },
   ]);
   assert.deepEqual(toeicWritingKeys.overview(), ["toeic-writing", "overview"]);
   assert.deepEqual(toeicWritingKeys.tasks(1), ["toeic-writing", "tasks", 1]);
@@ -73,4 +102,11 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
     "submission",
     31,
   ]);
+  assert.deepEqual(toeicWritingKeys.quota(), ["toeic-writing", "ai-quota"]);
+  assert.deepEqual(toeicWritingKeys.grades(11), [
+    "toeic-writing",
+    "grades",
+    11,
+  ]);
+  assert.deepEqual(toeicWritingKeys.grade(41), ["toeic-writing", "grade", 41]);
 });

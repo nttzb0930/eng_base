@@ -1,9 +1,15 @@
 "use client";
 
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import {
+  useInfiniteQuery,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from "@tanstack/react-query";
 import type {
   ToeicWritingDraftPayload,
   ToeicWritingPart,
+  ToeicWritingPartOneGradeRequest,
   ToeicWritingSubmissionPayload,
 } from "@repo/shared";
 
@@ -110,5 +116,59 @@ export function useToeicWritingSubmission(submissionId: number) {
     queryKey: toeicWritingKeys.submission(submissionId),
     queryFn: () => toeicWritingApi.submission(submissionId),
     enabled: Number.isInteger(submissionId) && submissionId > 0,
+  });
+}
+
+export function useToeicWritingAiQuota(enabled = true) {
+  return useQuery({
+    queryKey: toeicWritingKeys.quota(),
+    queryFn: () => toeicWritingApi.quota(),
+    enabled,
+  });
+}
+
+export function useGradeToeicWritingPartOne() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({
+      taskId,
+      payload,
+    }: {
+      taskId: number;
+      payload: ToeicWritingPartOneGradeRequest;
+    }) => toeicWritingApi.gradePartOne(taskId, payload),
+    onSuccess: (grade) => {
+      queryClient.setQueryData(toeicWritingKeys.grade(grade.id), grade);
+      return Promise.all([
+        queryClient.invalidateQueries({
+          queryKey: toeicWritingKeys.grades(grade.taskId),
+        }),
+        queryClient.invalidateQueries({ queryKey: toeicWritingKeys.quota() }),
+      ]);
+    },
+  });
+}
+
+export function useToeicWritingGradeHistory(taskId: number, enabled: boolean) {
+  return useInfiniteQuery({
+    queryKey: toeicWritingKeys.grades(taskId),
+    queryFn: ({ pageParam }) => toeicWritingApi.gradeHistory(taskId, pageParam),
+    initialPageParam: undefined as number | undefined,
+    getNextPageParam: (lastPage) => lastPage.nextCursor ?? undefined,
+    enabled,
+  });
+}
+
+export function useRecordToeicWritingAssistance() {
+  return useMutation({
+    mutationFn: ({
+      taskId,
+      kind,
+      contentVersion,
+    }: {
+      taskId: number;
+      kind: "SAMPLE" | "COMMUNITY_RESTORE";
+      contentVersion: string;
+    }) => toeicWritingApi.recordAssistance(taskId, kind, { contentVersion }),
   });
 }

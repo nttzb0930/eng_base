@@ -1148,7 +1148,40 @@
       "submitErrorDescription": "Bài viết chưa bị xóa. Hãy kiểm tra trạng thái bản nháp và thử lại.",
       "loadErrorTitle": "Không thể tải bài luyện viết này",
       "loadErrorDescription": "Bài có thể chưa sẵn sàng hoặc đường dẫn không đúng với Part của bài.",
+      "viewSample": "Xem câu trả lời mẫu",
       "retry": "Thử lại"
+    },
+    "partOneGrading": {
+      "grade": "Chấm bằng AI",
+      "grading": "Đang chấm...",
+      "rewrite": "Viết lại",
+      "cached": "Kết quả đã lưu",
+      "assisted": "Đã dùng trợ giúp",
+      "quota": "Còn {remaining}/{limit} lượt chấm AI hôm nay",
+      "correctionTitle": "Câu sửa gợi ý",
+      "improvementTitle": "AI gợi ý thêm",
+      "savedToHistory": "Kết quả này đã được lưu vào lịch sử tài khoản.",
+      "validation": {
+        "title": "Cần chỉnh lại trước khi chấm điểm",
+        "MIN_WORDS": "Hãy viết ít nhất 3 từ.",
+        "MAX_WORDS": "Chỉ được viết tối đa 40 từ.",
+        "MAX_CHARACTERS": "Chỉ được viết tối đa 300 ký tự.",
+        "UPPERCASE_START_REQUIRED": "Chữ cái đầu câu cần viết hoa.",
+        "TERMINAL_PUNCTUATION_REQUIRED": "Câu cần kết thúc bằng dấu chấm, chấm than hoặc chấm hỏi.",
+        "ONE_SENTENCE_REQUIRED": "Chỉ viết đúng một câu.",
+        "REQUIRED_WORD_MISSING": "Câu phải chứa từ bắt buộc: {keyword}.",
+        "OBVIOUS_SPAM": "Hãy thay nội dung lặp hoặc vô nghĩa bằng một câu hoàn chỉnh."
+      },
+      "error": {
+        "title": "Không thể chấm bài",
+        "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
+      },
+      "history": {
+        "title": "Lịch sử chấm bằng AI",
+        "loading": "Đang tải lịch sử chấm",
+        "empty": "Chưa có lần chấm AI nào cho bài này.",
+        "loadMore": "Tải thêm"
+      }
     },
     "result": {
       "part": "Part {part}",

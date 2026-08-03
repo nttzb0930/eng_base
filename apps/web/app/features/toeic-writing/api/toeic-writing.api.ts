@@ -2,6 +2,11 @@ import type {
   ToeicWritingDraft,
   ToeicWritingDraftPayload,
   ToeicWritingOverview,
+  ToeicWritingAiQuota,
+  ToeicWritingGradeHistoryPage,
+  ToeicWritingPartOneGradeDetail,
+  ToeicWritingPartOneGradeRequest,
+  ToeicWritingPartOneGradeResult,
   ToeicWritingPart,
   ToeicWritingSubmissionPayload,
   ToeicWritingSubmissionResult,
@@ -30,6 +35,12 @@ export const toeicWritingKeys = {
   submissionsRoot: () => [...toeicWritingKeys.all, "submission"] as const,
   submission: (submissionId: number) =>
     [...toeicWritingKeys.submissionsRoot(), submissionId] as const,
+  quota: () => [...toeicWritingKeys.all, "ai-quota"] as const,
+  gradesRoot: () => [...toeicWritingKeys.all, "grades"] as const,
+  grades: (taskId: number) =>
+    [...toeicWritingKeys.gradesRoot(), taskId] as const,
+  grade: (gradeId: number) =>
+    [...toeicWritingKeys.all, "grade", gradeId] as const,
 };
 
 export function createToeicWritingApi(http: ToeicWritingHttp) {
@@ -91,6 +102,45 @@ export function createToeicWritingApi(http: ToeicWritingHttp) {
       return (
         await http.get<ToeicWritingSubmissionResult>(
           `/toeic/writing/submissions/${submissionId}`
+        )
+      ).data;
+    },
+    async gradePartOne(taskId: number, body: ToeicWritingPartOneGradeRequest) {
+      return (
+        await http.post<ToeicWritingPartOneGradeResult>(
+          `/toeic/writing/tasks/${taskId}/grades/part-one`,
+          body
+        )
+      ).data;
+    },
+    async quota() {
+      return (await http.get<ToeicWritingAiQuota>("/toeic/writing/ai-quota"))
+        .data;
+    },
+    async grade(gradeId: number) {
+      return (
+        await http.get<ToeicWritingPartOneGradeDetail>(
+          `/toeic/writing/grades/${gradeId}`
+        )
+      ).data;
+    },
+    async gradeHistory(taskId: number, cursor?: number) {
+      const cursorQuery = cursor === undefined ? "" : `&cursor=${cursor}`;
+      return (
+        await http.get<ToeicWritingGradeHistoryPage>(
+          `/toeic/writing/tasks/${taskId}/grades?limit=20${cursorQuery}`
+        )
+      ).data;
+    },
+    async recordAssistance(
+      taskId: number,
+      kind: "SAMPLE" | "COMMUNITY_RESTORE",
+      body: { contentVersion: string }
+    ) {
+      return (
+        await http.post<{ recorded: true }>(
+          `/toeic/writing/tasks/${taskId}/assistance/${kind}`,
+          body
         )
       ).data;
     },

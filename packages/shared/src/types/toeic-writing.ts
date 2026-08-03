@@ -100,6 +100,21 @@ export type ToeicWritingSubmissionPayload = ToeicWritingDraftPayload & {
 
 export type ToeicWritingLocale = "en" | "vi";
 
+export type ToeicWritingPartOneValidationIssueCode =
+  | "MIN_WORDS"
+  | "MAX_WORDS"
+  | "MAX_CHARACTERS"
+  | "UPPERCASE_START_REQUIRED"
+  | "TERMINAL_PUNCTUATION_REQUIRED"
+  | "ONE_SENTENCE_REQUIRED"
+  | "REQUIRED_WORD_MISSING"
+  | "OBVIOUS_SPAM";
+
+export type ToeicWritingPartOneValidationIssue = {
+  code: ToeicWritingPartOneValidationIssueCode;
+  keyword?: string;
+};
+
 export type ToeicWritingPartOneGradeRequest = {
   contentVersion: string;
   responseText: string;
