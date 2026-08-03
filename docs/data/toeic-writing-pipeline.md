@@ -71,6 +71,11 @@ Validate all private packages without contacting the source:
 pnpm --filter @repo/api data:validate-toeic-writing
 ```
 
+Validation covers every immutable package version retained in private storage,
+so `packageCount` can exceed the current inventory size of 98 after a source
+refresh. The command fails only when a retained package is invalid. Import is
+still scoped to the explicitly approved inventory SHA.
+
 Inventory, download, and validation do not load `.env` and do not require
 `DATABASE_URL`. The later import command is the only Writing pipeline step that
 connects to PostgreSQL.

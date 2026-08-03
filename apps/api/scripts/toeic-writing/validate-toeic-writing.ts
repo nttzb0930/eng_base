@@ -44,7 +44,7 @@ async function main() {
       2
     )
   );
-  if (invalid.length > 0 || packages.length !== 98) process.exitCode = 1;
+  if (invalid.length > 0) process.exitCode = 1;
 }
 
 main().catch((error: unknown) => {

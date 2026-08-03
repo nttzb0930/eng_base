@@ -32,3 +32,13 @@ test("learner task reads call only the exercise mapper", () => {
     assert.doesNotMatch(source, /mapToeicWritingReference/);
   }
 });
+
+test("Writing package validation permits immutable version history", () => {
+  const source = readFileSync(
+    join(root, "scripts", "toeic-writing", "validate-toeic-writing.ts"),
+    "utf8"
+  );
+
+  assert.doesNotMatch(source, /packages\.length\s*!==\s*98/u);
+  assert.match(source, /if \(invalid\.length > 0\) process\.exitCode = 1/u);
+});
