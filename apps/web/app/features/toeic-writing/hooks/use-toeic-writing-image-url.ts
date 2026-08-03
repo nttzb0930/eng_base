@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { toeicWritingApi } from "../api/toeic-writing.api";
 
-export function useToeicWritingImageUrl(taskId: number) {
+export function useToeicWritingImageUrl(taskId: number, enabled = true) {
   const [state, setState] = useState<{
     taskId: number | null;
     url: string | null;
@@ -12,8 +12,10 @@ export function useToeicWritingImageUrl(taskId: number) {
   }>({ taskId: null, url: null, error: false });
 
   useEffect(() => {
+    if (!enabled) return;
     let disposed = false;
     let objectUrl: string | null = null;
+    setState({ taskId, url: null, error: false });
     void toeicWritingApi
       .image(taskId)
       .then((blob) => {
@@ -28,11 +30,13 @@ export function useToeicWritingImageUrl(taskId: number) {
       disposed = true;
       if (objectUrl) URL.revokeObjectURL(objectUrl);
     };
-  }, [taskId]);
+  }, [enabled, taskId]);
 
   return {
-    url: state.taskId === taskId ? state.url : null,
-    error: state.taskId === taskId && state.error,
-    loading: state.taskId !== taskId,
+    url: enabled && state.taskId === taskId ? state.url : null,
+    error: enabled && state.taskId === taskId && state.error,
+    loading:
+      enabled &&
+      (state.taskId !== taskId || (state.url === null && !state.error)),
   };
 }

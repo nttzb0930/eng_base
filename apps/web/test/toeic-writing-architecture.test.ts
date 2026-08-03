@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
 
@@ -23,6 +23,30 @@ test("Writing catalog keeps the selected Part in the URL", () => {
   assert.match(catalog, /useSearchParams/u);
   assert.match(catalog, /searchParams\.get\("part"\)/u);
   assert.doesNotMatch(catalog, /useState<ToeicWritingPart>/u);
+});
+
+test("Writing catalog gates protected image loading by viewport visibility", () => {
+  const nearViewportPath = resolve(
+    process.cwd(),
+    "app/features/toeic-writing/hooks/use-near-viewport.ts"
+  );
+  assert.equal(
+    existsSync(nearViewportPath),
+    true,
+    "near-viewport hook must exist"
+  );
+  if (!existsSync(nearViewportPath)) return;
+
+  const nearViewport = readFileSync(nearViewportPath, "utf8");
+  const imageHook = read(
+    "app/features/toeic-writing/hooks/use-toeic-writing-image-url.ts"
+  );
+
+  assert.match(nearViewport, /IntersectionObserver/u);
+  assert.match(nearViewport, /rootMargin:\s*"240px"/u);
+  assert.match(imageHook, /enabled\s*=\s*true/u);
+  assert.match(imageHook, /if\s*\(!enabled\)/u);
+  assert.match(imageHook, /URL\.revokeObjectURL/u);
 });
 
 test("Writing Part routes are thin and share the focused session workspace", () => {

@@ -36,7 +36,11 @@ export function ToeicWritingTaskCard({ task }: ToeicWritingTaskCardProps) {
       <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
         {t("taskNumber", { number: task.order })}
       </p>
-      <h2 className="mt-2 break-words text-xl font-semibold">{task.title}</h2>
+      <h2 className="mt-2 break-words text-xl font-semibold">
+        {task.part === 2
+          ? task.title
+          : task.requiredWords.map((word) => word.en).join(" · ")}
+      </h2>
       <p className="text-muted-foreground mt-2 text-sm">
         {t(`difficulty.${task.difficulty.toLowerCase()}`)}
       </p>
