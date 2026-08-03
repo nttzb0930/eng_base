@@ -106,7 +106,7 @@ export function ToeicWritingPartTwoWorkspace({
     task.id,
     task.contentVersion,
     "SAMPLE",
-    activePanel === "SAMPLE"
+    true
   );
   const community = useToeicWritingCommunity(
     task.id,
