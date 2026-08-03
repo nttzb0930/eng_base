@@ -1108,6 +1108,7 @@ model toeic_writing_ai_grades {
   user_id         String
   task_id         Int
   content_version String              @db.VarChar(64)
+  response_text   String              @db.Text
   response_hash   String              @db.VarChar(64)
   prompt_version  String              @db.VarChar(64)
   part            Int

@@ -2,6 +2,13 @@ import { Prisma } from "@prisma/client";
 
 import type { ToeicWritingAssistanceSnapshot } from "@repo/shared";
 
+import {
+  WritingAiDailyQuotaExceededError,
+  WritingAiIdempotencyConflictError,
+  WritingAiInFlightError,
+  WritingAiReservationInvalidError,
+} from "./writing-ai.repository";
+
 import type { PrismaService } from "../../../database/prisma/prisma.service";
 import { writingPictureContextSchema } from "../provider/writing-ai.schemas";
 import type {
@@ -15,11 +22,6 @@ import type {
   WritingPictureContextRecord,
   WritingQuotaReservationInput,
 } from "./writing-ai.repository";
-
-export class WritingAiDailyQuotaExceededError extends Error {}
-export class WritingAiInFlightError extends Error {}
-export class WritingAiIdempotencyConflictError extends Error {}
-export class WritingAiReservationInvalidError extends Error {}
 
 function usageDateFor(date: Date): Date {
   return new Date(
@@ -40,6 +42,7 @@ function toGradeRecord(row: {
   user_id: string;
   task_id: number;
   content_version: string;
+  response_text: string;
   response_hash: string;
   prompt_version: string;
   part: number;
@@ -56,6 +59,7 @@ function toGradeRecord(row: {
     userId: row.user_id,
     taskId: row.task_id,
     contentVersion: row.content_version,
+    responseText: row.response_text,
     responseHash: row.response_hash,
     promptVersion: row.prompt_version,
     reservationId: "",
@@ -213,6 +217,32 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
     });
   }
 
+  async getQuota(userId: string, feature: "TOEIC_WRITING", dailyLimit: number) {
+    const now = this.now();
+    const usageDate = usageDateFor(now);
+    const state = await this.prisma.ai_usage_daily.findUnique({
+      where: {
+        user_id_feature_usage_date: {
+          user_id: userId,
+          feature,
+          usage_date: usageDate,
+        },
+      },
+      select: { reserved: true, used: true },
+    });
+    return {
+      dailyLimit,
+      used: state?.used ?? 0,
+      remaining: Math.max(
+        0,
+        dailyLimit - (state?.used ?? 0) - (state?.reserved ?? 0)
+      ),
+      resetAt: new Date(
+        Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1)
+      ).toISOString(),
+    };
+  }
+
   async findOwnedCachedGrade(input: WritingGradeCacheKey) {
     const row = await this.prisma.toeic_writing_ai_grades.findUnique({
       where: {
@@ -226,6 +256,31 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
       },
     });
     return row ? toGradeRecord(row) : null;
+  }
+
+  async findOwnedGradeById(userId: string, gradeId: number) {
+    const row = await this.prisma.toeic_writing_ai_grades.findFirst({
+      where: { id: gradeId, user_id: userId },
+    });
+    return row ? toGradeRecord(row) : null;
+  }
+
+  async listOwnedGrades(
+    userId: string,
+    taskId: number,
+    cursor: number | undefined,
+    limit: number
+  ) {
+    const rows = await this.prisma.toeic_writing_ai_grades.findMany({
+      where: {
+        user_id: userId,
+        task_id: taskId,
+        ...(cursor === undefined ? {} : { id: { lt: cursor } }),
+      },
+      orderBy: { id: "desc" },
+      take: limit + 1,
+    });
+    return rows.map(toGradeRecord);
   }
 
   async saveGradeAndCompleteQuota(input: SaveWritingAiGradeInput) {
@@ -262,6 +317,7 @@ export class PrismaWritingAiRepository implements WritingAiRepository {
           user_id: input.userId,
           task_id: input.taskId,
           content_version: input.contentVersion,
+          response_text: input.responseText,
           response_hash: input.responseHash,
           prompt_version: input.promptVersion,
           part: input.part,

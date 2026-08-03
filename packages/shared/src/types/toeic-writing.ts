@@ -154,6 +154,14 @@ export type ToeicWritingPartOneGradeResult = {
   assistance: ToeicWritingAssistanceSnapshot;
 };
 
+export type ToeicWritingPartOneGradeDetail = Omit<
+  ToeicWritingPartOneGradeResult,
+  "quota" | "cached"
+> & {
+  responseText: string;
+  createdAt: string;
+};
+
 export type ToeicWritingGradeHistoryItem = {
   id: number;
   taskId: number;
@@ -165,9 +173,7 @@ export type ToeicWritingGradeHistoryItem = {
 
 export type ToeicWritingGradeHistoryPage = {
   items: ToeicWritingGradeHistoryItem[];
-  total: number;
-  page: number;
-  limit: number;
+  nextCursor: number | null;
 };
 
 export type ToeicWritingPartOneReference = {

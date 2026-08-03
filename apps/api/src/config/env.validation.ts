@@ -77,6 +77,9 @@ const ApiEnvironmentSchema = z
       .int()
       .positive()
       .default(120_000),
+    WRITING_AI_USER_LIMIT: z.coerce.number().int().positive().default(2),
+    WRITING_AI_IP_LIMIT: z.coerce.number().int().positive().default(10),
+    WRITING_AI_RATE_LIMIT_TTL: z.coerce.number().int().positive().default(60),
   })
   .refine(
     (configuration) =>

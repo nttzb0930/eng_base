@@ -265,13 +265,15 @@ test("unpublished task returns WRITING_TASK_NOT_FOUND", async () => {
   } as unknown as PrismaService;
 
   await assert.rejects(
-    () =>
-      new GetToeicWritingTaskUseCase(prisma).execute("learner-1", 99),
+    () => new GetToeicWritingTaskUseCase(prisma).execute("learner-1", 99),
     (error: unknown) => {
       const response = (
         error as { getResponse(): { statusCode: number; code: string } }
       ).getResponse();
-      return response.statusCode === 404 && response.code === "WRITING_TASK_NOT_FOUND";
+      return (
+        response.statusCode === 404 &&
+        response.code === "WRITING_TASK_NOT_FOUND"
+      );
     }
   );
   assert.deepEqual((query as { where: unknown }).where, {

@@ -35,9 +35,8 @@ export class GetToeicWritingOverviewUseCase {
 
     return {
       publishedTaskCount: tasks.length,
-      submittedTaskCount: tasks.filter((task) =>
-        submittedTaskIds.has(task.id)
-      ).length,
+      submittedTaskCount: tasks.filter((task) => submittedTaskIds.has(task.id))
+        .length,
       parts,
     };
   }

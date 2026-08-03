@@ -16,6 +16,7 @@ CREATE TABLE "toeic_writing_ai_grades" (
   "user_id" UUID NOT NULL,
   "task_id" INTEGER NOT NULL,
   "content_version" VARCHAR(64) NOT NULL,
+  "response_text" TEXT NOT NULL,
   "response_hash" VARCHAR(64) NOT NULL,
   "prompt_version" VARCHAR(64) NOT NULL,
   "part" INTEGER NOT NULL,

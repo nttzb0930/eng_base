@@ -83,7 +83,9 @@ function submissionPrisma() {
       findFirst: () => Promise.resolve(task),
     },
     toeic_writing_submissions: submissions,
-    $transaction: async (callback: (transaction: unknown) => Promise<unknown>) =>
+    $transaction: async (
+      callback: (transaction: unknown) => Promise<unknown>
+    ) =>
       callback({
         toeic_writing_submissions: submissions,
         toeic_writing_drafts: {
@@ -163,12 +165,13 @@ test("submission result maps reference only after owned lookup", async () => {
   assert.deepEqual(result.reference.samplesEn, ["A synthetic reference."]);
   await assert.rejects(
     () => get.execute("learner-2", 31),
-    (error: unknown) => responseCode(error).code === "WRITING_SUBMISSION_NOT_FOUND"
+    (error: unknown) =>
+      responseCode(error).code === "WRITING_SUBMISSION_NOT_FOUND"
   );
-  assert.deepEqual(
-    (queries[1] as { where: unknown }).where,
-    { id: 31, user_id: "learner-2" }
-  );
+  assert.deepEqual((queries[1] as { where: unknown }).where, {
+    id: 31,
+    user_id: "learner-2",
+  });
 });
 
 test("submission result remains unchanged after the source task changes", async () => {

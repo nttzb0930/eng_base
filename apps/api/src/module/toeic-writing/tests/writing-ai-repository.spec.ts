@@ -30,6 +30,7 @@ function gradeInput(
     userId: "learner-1",
     taskId: 12,
     contentVersion: "b".repeat(64),
+    responseText: "The woman is preparing food.",
     responseHash: "a".repeat(64),
     promptVersion: "writing-part1-v1",
     reservationId,

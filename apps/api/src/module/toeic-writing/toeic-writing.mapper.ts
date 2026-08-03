@@ -72,7 +72,9 @@ function isObject(value: unknown): value is Record<string, unknown> {
 }
 
 function stringArray(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every((item) => typeof item === "string");
+  return (
+    Array.isArray(value) && value.every((item) => typeof item === "string")
+  );
 }
 
 function nullableString(value: unknown): value is string | null {
@@ -93,9 +95,7 @@ function parsePartOnePayload(value: unknown): PartOnePayload {
   if (
     !requiredWords.every(
       (word) =>
-        isObject(word) &&
-        typeof word.en === "string" &&
-        nullableString(word.vi)
+        isObject(word) && typeof word.en === "string" && nullableString(word.vi)
     ) ||
     !stringArray(value.structureSuggestions) ||
     !stringArray(value.ideas) ||

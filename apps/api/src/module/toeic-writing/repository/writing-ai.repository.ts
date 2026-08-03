@@ -1,6 +1,14 @@
-import type { ToeicWritingAssistanceSnapshot } from "@repo/shared";
+import type {
+  ToeicWritingAiQuota,
+  ToeicWritingAssistanceSnapshot,
+} from "@repo/shared";
 
 import type { WritingPictureContext } from "../provider/writing-ai-provider";
+
+export class WritingAiDailyQuotaExceededError extends Error {}
+export class WritingAiInFlightError extends Error {}
+export class WritingAiIdempotencyConflictError extends Error {}
+export class WritingAiReservationInvalidError extends Error {}
 
 export type WritingGradeCacheKey = {
   userId: string;
@@ -27,6 +35,7 @@ export type WritingQuotaReservation = {
 
 export type SaveWritingAiGradeInput = WritingGradeCacheKey & {
   reservationId: string;
+  responseText: string;
   part: 1 | 2;
   locale: "en" | "vi";
   model: string;
@@ -67,9 +76,24 @@ export interface WritingAiRepository {
     input: WritingQuotaReservationInput
   ): Promise<WritingQuotaReservation>;
   releaseQuota(reservationId: string): Promise<void>;
+  getQuota(
+    userId: string,
+    feature: "TOEIC_WRITING",
+    dailyLimit: number
+  ): Promise<ToeicWritingAiQuota>;
   findOwnedCachedGrade(
     input: WritingGradeCacheKey
   ): Promise<WritingAiGradeRecord | null>;
+  findOwnedGradeById(
+    userId: string,
+    gradeId: number
+  ): Promise<WritingAiGradeRecord | null>;
+  listOwnedGrades(
+    userId: string,
+    taskId: number,
+    cursor: number | undefined,
+    limit: number
+  ): Promise<WritingAiGradeRecord[]>;
   saveGradeAndCompleteQuota(
     input: SaveWritingAiGradeInput
   ): Promise<WritingAiGradeRecord>;

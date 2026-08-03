@@ -75,10 +75,7 @@ export class SubmitToeicWritingTaskUseCase {
     taskId: number,
     payload: ToeicWritingSubmissionPayload
   ): Promise<ToeicWritingSubmissionResult> {
-    const existing = await this.findByUserAndKey(
-      userId,
-      payload.submissionKey
-    );
+    const existing = await this.findByUserAndKey(userId, payload.submissionKey);
     if (existing) return resolveExisting(existing, taskId, payload);
 
     const task = await this.prisma.toeic_writing_tasks.findFirst({
@@ -94,9 +91,7 @@ export class SubmitToeicWritingTaskUseCase {
     if (!task || (task.part !== 1 && task.part !== 2)) {
       return writingTaskNotFound();
     }
-    const responseLength = getToeicWritingResponseLength(
-      payload.responseText
-    );
+    const responseLength = getToeicWritingResponseLength(payload.responseText);
     if (
       responseLength === 0 ||
       responseLength > TOEIC_WRITING_RESPONSE_LIMITS[task.part]
@@ -134,10 +129,7 @@ export class SubmitToeicWritingTaskUseCase {
       return mapToeicWritingSubmissionResult(created);
     } catch (error) {
       if (!isUniqueConflict(error)) throw error;
-      const raced = await this.findByUserAndKey(
-        userId,
-        payload.submissionKey
-      );
+      const raced = await this.findByUserAndKey(userId, payload.submissionKey);
       if (!raced) throw error;
       return resolveExisting(raced, taskId, payload);
     }

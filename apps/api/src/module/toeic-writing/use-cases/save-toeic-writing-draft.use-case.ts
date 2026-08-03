@@ -31,9 +31,7 @@ export class SaveToeicWritingDraftUseCase {
       return writingTaskNotFound();
     }
 
-    const responseLength = getToeicWritingResponseLength(
-      payload.responseText
-    );
+    const responseLength = getToeicWritingResponseLength(payload.responseText);
     if (
       responseLength === 0 ||
       responseLength > TOEIC_WRITING_RESPONSE_LIMITS[task.part]

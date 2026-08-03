@@ -10,6 +10,7 @@ import {
 } from "@nestjs/common/constants";
 
 import { UserJwtGuard } from "../../../common/guards/user-jwt.guard";
+import { ToeicWritingAssistanceKind } from "../dto/toeic-writing.dto";
 import { ToeicWritingController } from "../toeic-writing.controller";
 
 const version = "a".repeat(64);
@@ -33,11 +34,9 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
       )?.value as unknown;
       if (typeof handler !== "function") return [];
       const path = Reflect.getMetadata(PATH_METADATA, handler) as
-        | string
-        | undefined;
+        string | undefined;
       const method = Reflect.getMetadata(METHOD_METADATA, handler) as
-        | RequestMethod
-        | undefined;
+        RequestMethod | undefined;
       if (path === undefined || method === undefined) return [];
       return [`${RequestMethod[method]} ${path}`];
     })
@@ -45,11 +44,16 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
 
   assert.deepEqual(routes, [
     "DELETE tasks/:taskId/draft",
+    "GET ai-quota",
+    "GET grades/:gradeId",
     "GET overview",
     "GET submissions/:submissionId",
     "GET tasks",
     "GET tasks/:taskId",
     "GET tasks/:taskId/draft",
+    "GET tasks/:taskId/grades",
+    "POST tasks/:taskId/assistance/:kind",
+    "POST tasks/:taskId/grades/part-one",
     "POST tasks/:taskId/submissions",
     "PUT tasks/:taskId/draft",
   ]);
@@ -58,6 +62,11 @@ test("TOEIC Writing controller exposes authenticated read routes", () => {
 test("controller forwards current learner, selected part, and task id", async () => {
   const calls: unknown[][] = [];
   const controller = new ToeicWritingController(
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
+    { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
     { execute: (...args: unknown[]) => calls.push(args) } as never,
@@ -83,17 +92,30 @@ test("controller forwards current learner, selected part, and task id", async ()
     responseText: "answer",
   });
   await controller.submission("learner-1", 31);
+  await controller.gradeWritingPartOne("learner-1", 21, {
+    idempotencyKey: "00000000-0000-4000-8000-000000000002",
+    contentVersion: version,
+    responseText: "The woman is preparing food.",
+    locale: "en",
+  });
+  await controller.writingQuota("learner-1");
+  await controller.grade("learner-1", 41);
+  await controller.grades("learner-1", 21, { cursor: 40, limit: 10 });
+  await controller.recordAssistance(
+    "learner-1",
+    21,
+    ToeicWritingAssistanceKind.SAMPLE,
+    {
+    contentVersion: version,
+    }
+  );
 
   assert.deepEqual(calls, [
     ["learner-1"],
     ["learner-1", 2],
     ["learner-1", 21],
     ["learner-1", 21],
-    [
-      "learner-1",
-      21,
-      { contentVersion: version, responseText: "answer" },
-    ],
+    ["learner-1", 21, { contentVersion: version, responseText: "answer" }],
     ["learner-1", 21],
     [
       "learner-1",
@@ -105,5 +127,19 @@ test("controller forwards current learner, selected part, and task id", async ()
       },
     ],
     ["learner-1", 31],
+    [
+      "learner-1",
+      21,
+      {
+        idempotencyKey: "00000000-0000-4000-8000-000000000002",
+        contentVersion: version,
+        responseText: "The woman is preparing food.",
+        locale: "en",
+      },
+    ],
+    ["learner-1"],
+    ["learner-1", 41],
+    ["learner-1", 21, 40, 10],
+    ["learner-1", 21, version, "SAMPLE"],
   ]);
 });

@@ -2,6 +2,13 @@ import { randomUUID } from "node:crypto";
 
 import type { ToeicWritingAssistanceSnapshot } from "@repo/shared";
 
+import {
+  WritingAiDailyQuotaExceededError,
+  WritingAiIdempotencyConflictError,
+  WritingAiInFlightError,
+  WritingAiReservationInvalidError,
+} from "../../repository/writing-ai.repository";
+
 import type {
   PictureContextKey,
   RecordWritingAssistanceInput,
@@ -65,7 +72,7 @@ export class InMemoryWritingAiRepository implements WritingAiRepository {
     if (existingId) {
       const existing = this.reservations.get(existingId)!;
       if (existing.responseHash !== input.responseHash) {
-        throw new Error(
+        throw new WritingAiIdempotencyConflictError(
           "Writing AI idempotency key conflicts with another response"
         );
       }
@@ -78,14 +85,20 @@ export class InMemoryWritingAiRepository implements WritingAiRepository {
         reservation.feature === input.feature &&
         reservation.status === "RESERVED"
     );
-    if (active) throw new Error("Writing AI request is already in flight");
+    if (active) {
+      throw new WritingAiInFlightError(
+        "Writing AI request is already in flight"
+      );
+    }
 
     const now = this.now();
     const usageDate = now.toISOString().slice(0, 10);
     const dailyKey = `${input.userId}:${input.feature}:${usageDate}`;
     const daily = this.daily.get(dailyKey) ?? { reserved: 0, used: 0 };
     if (daily.reserved + daily.used >= input.dailyLimit) {
-      throw new Error("Writing AI daily quota exceeded");
+      throw new WritingAiDailyQuotaExceededError(
+        "Writing AI daily quota exceeded"
+      );
     }
 
     const state: ReservationState = {
@@ -113,8 +126,51 @@ export class InMemoryWritingAiRepository implements WritingAiRepository {
     this.decrementReserved(reservation);
   }
 
+  async getQuota(userId: string, feature: "TOEIC_WRITING", dailyLimit: number) {
+    const now = this.now();
+    const usageDate = now.toISOString().slice(0, 10);
+    const state = this.daily.get(`${userId}:${feature}:${usageDate}`) ?? {
+      reserved: 0,
+      used: 0,
+    };
+    const resetAt = new Date(
+      Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1)
+    ).toISOString();
+    return {
+      dailyLimit,
+      used: state.used,
+      remaining: Math.max(0, dailyLimit - state.used - state.reserved),
+      resetAt,
+    };
+  }
+
   async findOwnedCachedGrade(input: WritingGradeCacheKey) {
     return this.grades.get(gradeKey(input)) ?? null;
+  }
+
+  async findOwnedGradeById(userId: string, gradeId: number) {
+    return (
+      [...this.grades.values()].find(
+        (grade) => grade.userId === userId && grade.id === gradeId
+      ) ?? null
+    );
+  }
+
+  async listOwnedGrades(
+    userId: string,
+    taskId: number,
+    cursor: number | undefined,
+    limit: number
+  ) {
+    return [...this.grades.values()]
+      .filter(
+        (grade) =>
+          grade.userId === userId &&
+          grade.taskId === taskId &&
+          (cursor === undefined || grade.id < cursor)
+      )
+      .sort((left, right) => right.id - left.id)
+      .slice(0, limit + 1);
   }
 
   async saveGradeAndCompleteQuota(input: SaveWritingAiGradeInput) {
@@ -128,7 +184,9 @@ export class InMemoryWritingAiRepository implements WritingAiRepository {
       reservation.userId !== input.userId ||
       reservation.responseHash !== input.responseHash
     ) {
-      throw new Error("Writing AI reservation is invalid");
+      throw new WritingAiReservationInvalidError(
+        "Writing AI reservation is invalid"
+      );
     }
 
     const record: WritingAiGradeRecord = {

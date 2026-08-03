@@ -9,7 +9,10 @@ import { mapToeicWritingExercise } from "../toeic-writing.mapper";
 export class GetToeicWritingTaskUseCase {
   constructor(private readonly prisma: PrismaService) {}
 
-  async execute(userId: string, taskId: number): Promise<ToeicWritingTaskDetail> {
+  async execute(
+    userId: string,
+    taskId: number
+  ): Promise<ToeicWritingTaskDetail> {
     const task = await this.prisma.toeic_writing_tasks.findFirst({
       where: { id: taskId, status: "PUBLISHED" },
       select: {

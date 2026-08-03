@@ -5,6 +5,7 @@ import {
   Get,
   Param,
   ParseIntPipe,
+  ParseEnumPipe,
   Post,
   Query,
   Put,
@@ -12,9 +13,14 @@ import {
 } from "@nestjs/common";
 
 import { CurrentUserId } from "../../common/decorators/current-user-id.decorator";
+import { WritingAiRateLimit } from "../../common/decorators/writing-ai-rate-limit.decorator";
 import { UserJwtGuard } from "../../common/guards/user-jwt.guard";
 import {
   ToeicWritingDraftDto,
+  ToeicWritingAssistanceDto,
+  ToeicWritingAssistanceKind,
+  ToeicWritingGradeHistoryQueryDto,
+  ToeicWritingPartOneGradeDto,
   ToeicWritingPartQueryDto,
   ToeicWritingSubmissionDto,
 } from "./dto/toeic-writing.dto";
@@ -23,6 +29,11 @@ import { GetToeicWritingDraftUseCase } from "./use-cases/get-toeic-writing-draft
 import { GetToeicWritingOverviewUseCase } from "./use-cases/get-toeic-writing-overview.use-case";
 import { GetToeicWritingSubmissionUseCase } from "./use-cases/get-toeic-writing-submission.use-case";
 import { GetToeicWritingTaskUseCase } from "./use-cases/get-toeic-writing-task.use-case";
+import { GradeToeicWritingPartOneUseCase } from "./use-cases/grade-toeic-writing-part-one.use-case";
+import { GetToeicWritingQuotaUseCase } from "./use-cases/get-toeic-writing-quota.use-case";
+import { GetToeicWritingGradeUseCase } from "./use-cases/get-toeic-writing-grade.use-case";
+import { ListToeicWritingGradesUseCase } from "./use-cases/list-toeic-writing-grades.use-case";
+import { RecordToeicWritingAssistanceUseCase } from "./use-cases/record-toeic-writing-assistance.use-case";
 import { ListToeicWritingTasksUseCase } from "./use-cases/list-toeic-writing-tasks.use-case";
 import { SaveToeicWritingDraftUseCase } from "./use-cases/save-toeic-writing-draft.use-case";
 import { SubmitToeicWritingTaskUseCase } from "./use-cases/submit-toeic-writing-task.use-case";
@@ -38,7 +49,12 @@ export class ToeicWritingController {
     private readonly saveWritingDraft: SaveToeicWritingDraftUseCase,
     private readonly deleteWritingDraft: DeleteToeicWritingDraftUseCase,
     private readonly submitWritingTask: SubmitToeicWritingTaskUseCase,
-    private readonly getSubmission: GetToeicWritingSubmissionUseCase
+    private readonly getSubmission: GetToeicWritingSubmissionUseCase,
+    private readonly gradePartOne: GradeToeicWritingPartOneUseCase,
+    private readonly getWritingQuota: GetToeicWritingQuotaUseCase,
+    private readonly getWritingGrade: GetToeicWritingGradeUseCase,
+    private readonly listWritingGrades: ListToeicWritingGradesUseCase,
+    private readonly recordWritingAssistance: RecordToeicWritingAssistanceUseCase
   ) {}
 
   @Get("overview")
@@ -94,6 +110,59 @@ export class ToeicWritingController {
     @Body() body: ToeicWritingSubmissionDto
   ) {
     return this.submitWritingTask.execute(userId, taskId, body);
+  }
+
+  @Post("tasks/:taskId/grades/part-one")
+  @WritingAiRateLimit()
+  gradeWritingPartOne(
+    @CurrentUserId() userId: string,
+    @Param("taskId", ParseIntPipe) taskId: number,
+    @Body() body: ToeicWritingPartOneGradeDto
+  ) {
+    return this.gradePartOne.execute(userId, taskId, body);
+  }
+
+  @Get("ai-quota")
+  writingQuota(@CurrentUserId() userId: string) {
+    return this.getWritingQuota.execute(userId);
+  }
+
+  @Get("grades/:gradeId")
+  grade(
+    @CurrentUserId() userId: string,
+    @Param("gradeId", ParseIntPipe) gradeId: number
+  ) {
+    return this.getWritingGrade.execute(userId, gradeId);
+  }
+
+  @Get("tasks/:taskId/grades")
+  grades(
+    @CurrentUserId() userId: string,
+    @Param("taskId", ParseIntPipe) taskId: number,
+    @Query() query: ToeicWritingGradeHistoryQueryDto
+  ) {
+    return this.listWritingGrades.execute(
+      userId,
+      taskId,
+      query.cursor,
+      query.limit
+    );
+  }
+
+  @Post("tasks/:taskId/assistance/:kind")
+  recordAssistance(
+    @CurrentUserId() userId: string,
+    @Param("taskId", ParseIntPipe) taskId: number,
+    @Param("kind", new ParseEnumPipe(ToeicWritingAssistanceKind))
+    kind: ToeicWritingAssistanceKind,
+    @Body() body: ToeicWritingAssistanceDto
+  ) {
+    return this.recordWritingAssistance.execute(
+      userId,
+      taskId,
+      body.contentVersion,
+      kind
+    );
   }
 
   @Get("submissions/:submissionId")

@@ -26,7 +26,10 @@ export function mapToeicWritingDraft(record: DraftRecord): ToeicWritingDraft {
 export class GetToeicWritingDraftUseCase {
   constructor(private readonly prisma: PrismaService) {}
 
-  async execute(userId: string, taskId: number): Promise<ToeicWritingDraft | null> {
+  async execute(
+    userId: string,
+    taskId: number
+  ): Promise<ToeicWritingDraft | null> {
     const task = await this.prisma.toeic_writing_tasks.findFirst({
       where: { id: taskId, status: "PUBLISHED" },
       select: { id: true },

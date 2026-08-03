@@ -94,6 +94,7 @@ test(
           userId,
           taskId: task.id,
           contentVersion: "a".repeat(64),
+          responseText: `Response ${index}.`,
           responseHash,
           promptVersion: `test-${index}`,
           reservationId: reservation.id,
