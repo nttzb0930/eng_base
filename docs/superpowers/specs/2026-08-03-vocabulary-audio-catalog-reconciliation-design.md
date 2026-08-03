@@ -91,7 +91,8 @@ diagnostic metadata only and never control catalog matching.
 Each catalog identity is classified exactly once:
 
 - `import`: catalog has neither audio field and DB has a valid URL/source pair;
-- `unchanged`: both sides have the same URL/source pair;
+- `unchanged`: both sides have the same complete URL/source pair, or both sides
+  have neither audio field;
 - `catalog-only`: catalog has a complete pair and DB has neither field;
 - `conflict`: both sides have complete but different pairs;
 - `invalid-partial`: either side contains only URL or only source;
