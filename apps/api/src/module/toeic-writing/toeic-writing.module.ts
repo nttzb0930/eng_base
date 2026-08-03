@@ -52,8 +52,18 @@ import { UnshareToeicWritingSubmissionUseCase } from "./use-cases/unshare-toeic-
     DeleteToeicWritingDraftUseCase,
     SubmitToeicWritingTaskUseCase,
     GetToeicWritingSubmissionUseCase,
-    ShareToeicWritingSubmissionUseCase,
-    UnshareToeicWritingSubmissionUseCase,
+    {
+      provide: ShareToeicWritingSubmissionUseCase,
+      inject: [PrismaService],
+      useFactory: (prisma: PrismaService) =>
+        new ShareToeicWritingSubmissionUseCase(prisma),
+    },
+    {
+      provide: UnshareToeicWritingSubmissionUseCase,
+      inject: [PrismaService],
+      useFactory: (prisma: PrismaService) =>
+        new UnshareToeicWritingSubmissionUseCase(prisma),
+    },
     ListToeicWritingCommunityUseCase,
     {
       provide: GradeToeicWritingPartOneUseCase,
