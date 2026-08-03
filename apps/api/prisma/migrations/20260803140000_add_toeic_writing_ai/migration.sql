@@ -13,7 +13,7 @@ CREATE TABLE "toeic_writing_image_contexts" (
 
 CREATE TABLE "toeic_writing_ai_grades" (
   "id" SERIAL PRIMARY KEY,
-  "user_id" UUID NOT NULL,
+  "user_id" TEXT NOT NULL,
   "task_id" INTEGER NOT NULL,
   "content_version" VARCHAR(64) NOT NULL,
   "response_text" TEXT NOT NULL,
@@ -37,7 +37,7 @@ CREATE INDEX "toeic_writing_ai_grades_user_task_idx" ON "toeic_writing_ai_grades
 
 CREATE TABLE "toeic_writing_assistance_events" (
   "id" SERIAL PRIMARY KEY,
-  "user_id" UUID NOT NULL,
+  "user_id" TEXT NOT NULL,
   "task_id" INTEGER NOT NULL,
   "content_version" VARCHAR(64) NOT NULL,
   "kind" VARCHAR(32) NOT NULL,
@@ -51,7 +51,7 @@ CREATE INDEX "toeic_writing_assistance_events_user_created_idx" ON "toeic_writin
 
 CREATE TABLE "ai_usage_daily" (
   "id" SERIAL PRIMARY KEY,
-  "user_id" UUID NOT NULL,
+  "user_id" TEXT NOT NULL,
   "feature" VARCHAR(40) NOT NULL,
   "usage_date" DATE NOT NULL,
   "reserved" INTEGER NOT NULL DEFAULT 0,
@@ -66,7 +66,7 @@ CREATE TABLE "ai_usage_daily" (
 
 CREATE TABLE "ai_usage_reservations" (
   "id" UUID PRIMARY KEY,
-  "user_id" UUID NOT NULL,
+  "user_id" TEXT NOT NULL,
   "feature" VARCHAR(40) NOT NULL,
   "idempotency_key" UUID NOT NULL,
   "response_hash" VARCHAR(64) NOT NULL,
