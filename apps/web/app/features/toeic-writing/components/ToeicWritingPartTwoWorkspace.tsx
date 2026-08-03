@@ -3,6 +3,8 @@
 import type {
   ToeicWritingCoachingKind,
   ToeicWritingCommunityItem,
+  ToeicWritingPartTwoGradeResult,
+  ToeicWritingPartTwoValidationIssue,
   ToeicWritingTaskDetail,
 } from "@repo/shared";
 import { BookOpen, FileText, Languages, Users } from "lucide-react";
@@ -20,8 +22,10 @@ import {
 } from "@/app/components/ui/dialog";
 import { ToeicWritingCommunityPanel } from "./ToeicWritingCommunityPanel";
 import { ToeicWritingEditorPane } from "./ToeicWritingEditorPane";
+import { ToeicWritingGradeHistoryPanel } from "./ToeicWritingGradeHistoryPanel";
 import { ToeicWritingOutlinePanel } from "./ToeicWritingOutlinePanel";
 import { ToeicWritingPromptPane } from "./ToeicWritingPromptPane";
+import { ToeicWritingPartTwoResult } from "./ToeicWritingPartTwoResult";
 import { ToeicWritingSamplePanel } from "./ToeicWritingSamplePanel";
 import { ToeicWritingVocabularyPanel } from "./ToeicWritingVocabularyPanel";
 import {
@@ -42,8 +46,12 @@ type ToeicWritingPartTwoWorkspaceProps = {
   responseText: string;
   saveStatus: ToeicWritingSaveStatus;
   disabled: boolean;
+  grade: ToeicWritingPartTwoGradeResult | null;
+  validationIssues: ToeicWritingPartTwoValidationIssue[];
   onResponseChange(value: string): void;
   onRetrySave(): void;
+  onRewrite(): void;
+  onReplaceImprovedEmail(value: string): void;
 };
 
 const panelIcons = {
@@ -58,14 +66,22 @@ export function ToeicWritingPartTwoWorkspace({
   responseText,
   saveStatus,
   disabled,
+  grade,
+  validationIssues,
   onResponseChange,
   onRetrySave,
+  onRewrite,
+  onReplaceImprovedEmail,
 }: ToeicWritingPartTwoWorkspaceProps) {
   const t = useTranslations("toeicWriting.partTwoCoaching");
+  const gradeT = useTranslations("toeicWriting.partTwoGrading");
   const [activePanel, setActivePanel] = useState<Panel | null>(null);
   const [limitReached, setLimitReached] = useState(false);
   const [pendingRestore, setPendingRestore] =
     useState<ToeicWritingCommunityItem | null>(null);
+  const [pendingImprovedEmail, setPendingImprovedEmail] = useState<
+    string | null
+  >(null);
   const outline = useToeicWritingCoaching(
     task.id,
     task.contentVersion,
@@ -139,6 +155,17 @@ export function ToeicWritingPartTwoWorkspace({
           onRetry={onRetrySave}
         />
 
+        {validationIssues.length ? (
+          <div className="rounded-md border border-amber-300 bg-amber-50 p-4 dark:border-amber-900 dark:bg-amber-950/30">
+            <p className="font-semibold">{gradeT("validation.title")}</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+              {validationIssues.map((issue) => (
+                <li key={issue.code}>{gradeT(`validation.${issue.code}`)}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
         <section className="bg-card rounded-md border p-3 sm:p-4">
           <div
             className="grid grid-cols-2 gap-2 sm:grid-cols-4"
@@ -201,6 +228,17 @@ export function ToeicWritingPartTwoWorkspace({
             </div>
           ) : null}
         </section>
+
+        {grade ? (
+          <ToeicWritingPartTwoResult
+            grade={grade}
+            onRewrite={onRewrite}
+            onReplaceImprovedEmail={() =>
+              setPendingImprovedEmail(grade.improvedEmail.text)
+            }
+          />
+        ) : null}
+        <ToeicWritingGradeHistoryPanel taskId={task.id} maxScore={4} />
       </div>
 
       <Dialog
@@ -235,6 +273,46 @@ export function ToeicWritingPartTwoWorkspace({
               }}
             >
               {restore.isPending ? t("restoring") : t("confirmRestore")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={pendingImprovedEmail !== null}
+        onOpenChange={(open) => {
+          if (!open) setPendingImprovedEmail(null);
+        }}
+      >
+        <DialogContent className="rounded-md">
+          <DialogHeader>
+            <DialogTitle>{gradeT("confirmImprovedEmailTitle")}</DialogTitle>
+            <DialogDescription>
+              {gradeT("confirmImprovedEmailDescription")}
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              className="rounded-md"
+              onClick={() => setPendingImprovedEmail(null)}
+            >
+              {gradeT("cancel")}
+            </Button>
+            <Button
+              type="button"
+              variant="secondary"
+              className="rounded-md"
+              disabled={!pendingImprovedEmail}
+              onClick={() => {
+                if (pendingImprovedEmail) {
+                  onReplaceImprovedEmail(pendingImprovedEmail);
+                  setPendingImprovedEmail(null);
+                }
+              }}
+            >
+              {gradeT("confirmImprovedEmail")}
             </Button>
           </DialogFooter>
         </DialogContent>

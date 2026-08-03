@@ -51,6 +51,7 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
   await api.submit(11, submission);
   await api.submission(31);
   await api.gradePartOne(11, grade);
+  await api.gradePartTwo(11, grade);
   await api.quota();
   await api.grade(41);
   await api.gradeHistory(11, 40);
@@ -84,6 +85,11 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
     {
       method: "POST",
       path: "/toeic/writing/tasks/11/grades/part-one",
+      body: grade,
+    },
+    {
+      method: "POST",
+      path: "/toeic/writing/tasks/11/grades/part-two",
       body: grade,
     },
     { method: "GET", path: "/toeic/writing/ai-quota" },
@@ -136,10 +142,13 @@ test("Writing resource preserves catalog, task, draft, and submission routes", a
     11,
   ]);
   assert.deepEqual(toeicWritingKeys.grade(41), ["toeic-writing", "grade", 41]);
-  assert.deepEqual(
-    toeicWritingKeys.coaching(11, "a".repeat(64), "OUTLINE"),
-    ["toeic-writing", "coaching", 11, "a".repeat(64), "OUTLINE"]
-  );
+  assert.deepEqual(toeicWritingKeys.coaching(11, "a".repeat(64), "OUTLINE"), [
+    "toeic-writing",
+    "coaching",
+    11,
+    "a".repeat(64),
+    "OUTLINE",
+  ]);
   assert.deepEqual(toeicWritingKeys.community(11), [
     "toeic-writing",
     "community",

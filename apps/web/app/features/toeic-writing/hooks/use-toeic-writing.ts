@@ -11,6 +11,7 @@ import type {
   ToeicWritingDraftPayload,
   ToeicWritingPart,
   ToeicWritingPartOneGradeRequest,
+  ToeicWritingPartTwoGradeRequest,
   ToeicWritingSubmissionPayload,
 } from "@repo/shared";
 
@@ -139,6 +140,28 @@ export function useGradeToeicWritingPartOne() {
       taskId: number;
       payload: ToeicWritingPartOneGradeRequest;
     }) => toeicWritingApi.gradePartOne(taskId, payload),
+    onSuccess: (grade) => {
+      queryClient.setQueryData(toeicWritingKeys.grade(grade.id), grade);
+      return Promise.all([
+        queryClient.invalidateQueries({
+          queryKey: toeicWritingKeys.grades(grade.taskId),
+        }),
+        queryClient.invalidateQueries({ queryKey: toeicWritingKeys.quota() }),
+      ]);
+    },
+  });
+}
+
+export function useGradeToeicWritingPartTwo() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({
+      taskId,
+      payload,
+    }: {
+      taskId: number;
+      payload: ToeicWritingPartTwoGradeRequest;
+    }) => toeicWritingApi.gradePartTwo(taskId, payload),
     onSuccess: (grade) => {
       queryClient.setQueryData(toeicWritingKeys.grade(grade.id), grade);
       return Promise.all([

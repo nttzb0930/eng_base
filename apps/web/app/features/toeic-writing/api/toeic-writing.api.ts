@@ -9,6 +9,8 @@ import type {
   ToeicWritingPartOneGradeDetail,
   ToeicWritingPartOneGradeRequest,
   ToeicWritingPartOneGradeResult,
+  ToeicWritingPartTwoGradeRequest,
+  ToeicWritingPartTwoGradeResult,
   ToeicWritingPart,
   ToeicWritingPartTwoCoaching,
   ToeicWritingSubmissionPayload,
@@ -44,11 +46,7 @@ export const toeicWritingKeys = {
     [...toeicWritingKeys.gradesRoot(), taskId] as const,
   grade: (gradeId: number) =>
     [...toeicWritingKeys.all, "grade", gradeId] as const,
-  coaching: (
-    taskId: number,
-    version: string,
-    kind: ToeicWritingCoachingKind
-  ) =>
+  coaching: (taskId: number, version: string, kind: ToeicWritingCoachingKind) =>
     [...toeicWritingKeys.all, "coaching", taskId, version, kind] as const,
   community: (taskId: number) =>
     [...toeicWritingKeys.all, "community", taskId] as const,
@@ -120,6 +118,14 @@ export function createToeicWritingApi(http: ToeicWritingHttp) {
       return (
         await http.post<ToeicWritingPartOneGradeResult>(
           `/toeic/writing/tasks/${taskId}/grades/part-one`,
+          body
+        )
+      ).data;
+    },
+    async gradePartTwo(taskId: number, body: ToeicWritingPartTwoGradeRequest) {
+      return (
+        await http.post<ToeicWritingPartTwoGradeResult>(
+          `/toeic/writing/tasks/${taskId}/grades/part-two`,
           body
         )
       ).data;

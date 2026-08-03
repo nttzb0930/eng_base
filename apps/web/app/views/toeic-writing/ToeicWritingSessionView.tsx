@@ -7,6 +7,8 @@ import {
   type ToeicWritingPart,
   type ToeicWritingPartOneGradeResult,
   type ToeicWritingPartOneValidationIssue,
+  type ToeicWritingPartTwoGradeResult,
+  type ToeicWritingPartTwoValidationIssue,
   type ToeicWritingTaskDetail,
 } from "@repo/shared";
 import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
@@ -35,6 +37,7 @@ import { ToeicWritingPartTwoWorkspace } from "@/app/features/toeic-writing/compo
 import {
   useDeleteToeicWritingDraft,
   useGradeToeicWritingPartOne,
+  useGradeToeicWritingPartTwo,
   useRecordToeicWritingAssistance,
   useSaveToeicWritingDraft,
   useSubmitToeicWriting,
@@ -43,7 +46,10 @@ import {
   useToeicWritingTask,
 } from "@/app/features/toeic-writing/hooks/use-toeic-writing";
 import { validatePartOneEditorResponse } from "@/app/features/toeic-writing/toeic-writing-part-one-grading";
-import { getPartTwoEditorMetrics } from "@/app/features/toeic-writing/toeic-writing-coaching-state";
+import {
+  getPartTwoEditorMetrics,
+  validatePartTwoEditorResponse,
+} from "@/app/features/toeic-writing/toeic-writing-coaching-state";
 import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
 import { createToeicWritingAutosaveScheduler } from "@/app/features/toeic-writing/toeic-writing-autosave-scheduler";
 import {
@@ -118,6 +124,7 @@ function ToeicWritingWorkspace({
 }: ToeicWritingWorkspaceProps) {
   const t = useTranslations("toeicWriting.session");
   const gradeT = useTranslations("toeicWriting.partOneGrading");
+  const partTwoGradeT = useTranslations("toeicWriting.partTwoGrading");
   const currentLocale = useLocale();
   const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
   const router = useRouter();
@@ -126,7 +133,8 @@ function ToeicWritingWorkspace({
   const { mutateAsync: submitResponse, isError: submitIsError } =
     useSubmitToeicWriting();
   const gradePartOne = useGradeToeicWritingPartOne();
-  const quota = useToeicWritingAiQuota(task.part === 1);
+  const gradePartTwo = useGradeToeicWritingPartTwo();
+  const quota = useToeicWritingAiQuota(true);
   const recordAssistance = useRecordToeicWritingAssistance();
   const submissionKeyRef = useRef<string | null>(null);
   const navigatingRef = useRef(false);
@@ -142,7 +150,13 @@ function ToeicWritingWorkspace({
   const [validationIssues, setValidationIssues] = useState<
     ToeicWritingPartOneValidationIssue[]
   >([]);
-  const busy = task.part === 1 ? gradePartOne.isPending : state.submitting;
+  const [partTwoGrade, setPartTwoGrade] =
+    useState<ToeicWritingPartTwoGradeResult | null>(null);
+  const [partTwoValidationIssues, setPartTwoValidationIssues] = useState<
+    ToeicWritingPartTwoValidationIssue[]
+  >([]);
+  const busy =
+    task.part === 1 ? gradePartOne.isPending : gradePartTwo.isPending;
 
   const persistSnapshot = useCallback(
     async (snapshot: ToeicWritingDraftPayload) => {
@@ -260,6 +274,29 @@ function ToeicWritingWorkspace({
     }
   }, [autosave, gradePartOne, locale, snapshot, state.responseText, task]);
 
+  const gradePartTwoResponse = useCallback(async () => {
+    if (task.part !== 2 || gradePartTwo.isPending) return;
+    const validation = validatePartTwoEditorResponse(state.responseText);
+    setPartTwoValidationIssues(validation.issues);
+    if (!validation.valid) return;
+
+    try {
+      await autosave.flush(snapshot());
+      submissionKeyRef.current ??= globalThis.crypto.randomUUID();
+      const result = await gradePartTwo.mutateAsync({
+        taskId: task.id,
+        payload: {
+          ...snapshot(),
+          idempotencyKey: submissionKeyRef.current,
+          locale,
+        },
+      });
+      setPartTwoGrade(result);
+    } catch {
+      // The mutation exposes its error state while preserving the draft.
+    }
+  }, [autosave, gradePartTwo, locale, snapshot, state.responseText, task]);
+
   const viewSample = useCallback(async () => {
     if (task.part !== 1 || busy) return;
     try {
@@ -285,8 +322,27 @@ function ToeicWritingWorkspace({
     submissionKeyRef.current = null;
     setGrade(null);
     setValidationIssues([]);
+    setPartTwoGrade(null);
+    setPartTwoValidationIssues([]);
     dispatch({ type: "edit", value });
   };
+
+  const replaceWithImprovedEmail = useCallback(
+    async (value: string) => {
+      if (task.part !== 2) return;
+      try {
+        await recordAssistance.mutateAsync({
+          taskId: task.id,
+          kind: "SAMPLE",
+          contentVersion: task.contentVersion,
+        });
+        editResponse(value);
+      } catch {
+        // Keep the current response when assistance cannot be recorded.
+      }
+    },
+    [recordAssistance, task]
+  );
 
   return (
     <main className="min-h-dvh bg-slate-50/70 pb-20 dark:bg-slate-950/30">
@@ -318,8 +374,17 @@ function ToeicWritingWorkspace({
             responseText={state.responseText}
             saveStatus={state.saveStatus}
             disabled={busy}
+            grade={partTwoGrade}
+            validationIssues={partTwoValidationIssues}
             onResponseChange={editResponse}
             onRetrySave={() => void saveNow()}
+            onRewrite={() => {
+              setPartTwoGrade(null);
+              submissionKeyRef.current = null;
+            }}
+            onReplaceImprovedEmail={(value) =>
+              void replaceWithImprovedEmail(value)
+            }
           />
         ) : (
           <div className="grid items-start gap-5 lg:grid-cols-2">
@@ -361,19 +426,21 @@ function ToeicWritingWorkspace({
           </div>
         )}
 
-        {submitIsError || gradePartOne.isError ? (
+        {submitIsError || gradePartOne.isError || gradePartTwo.isError ? (
           <Alert className="mt-5 border-rose-200 bg-rose-50/70 dark:border-rose-900 dark:bg-rose-950/40">
             <AlertCircle
               className="mr-2 inline h-4 w-4 text-rose-600"
               aria-hidden="true"
             />
             <AlertTitle className="inline text-rose-800 dark:text-rose-200">
-              {task.part === 1 ? gradeT("error.title") : t("submitErrorTitle")}
+              {task.part === 1
+                ? gradeT("error.title")
+                : partTwoGradeT("error.title")}
             </AlertTitle>
             <AlertDescription className="text-rose-700 dark:text-rose-300">
               {task.part === 1
                 ? gradeT("error.description")
-                : t("submitErrorDescription")}
+                : partTwoGradeT("error.description")}
             </AlertDescription>
           </Alert>
         ) : null}
@@ -385,9 +452,15 @@ function ToeicWritingWorkspace({
         submitting={busy}
         onBack={() => void backToTasks()}
         onSave={() => void saveNow()}
-        onSubmit={() => void (task.part === 1 ? gradeResponse() : submit())}
-        primaryLabel={task.part === 1 ? gradeT("grade") : undefined}
-        primaryPendingLabel={task.part === 1 ? gradeT("grading") : undefined}
+        onSubmit={() =>
+          void (task.part === 1 ? gradeResponse() : gradePartTwoResponse())
+        }
+        primaryLabel={
+          task.part === 1 ? gradeT("grade") : partTwoGradeT("grade")
+        }
+        primaryPendingLabel={
+          task.part === 1 ? gradeT("grading") : partTwoGradeT("grading")
+        }
       />
     </main>
   );

@@ -6,7 +6,13 @@ import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
 import { useToeicWritingGradeHistory } from "../hooks/use-toeic-writing";
 
-export function ToeicWritingGradeHistoryPanel({ taskId }: { taskId: number }) {
+export function ToeicWritingGradeHistoryPanel({
+  taskId,
+  maxScore = 3,
+}: {
+  taskId: number;
+  maxScore?: 3 | 4;
+}) {
   const t = useTranslations("toeicWriting.partOneGrading");
   const [open, setOpen] = useState(false);
   const history = useToeicWritingGradeHistory(taskId, open);
@@ -33,7 +39,9 @@ export function ToeicWritingGradeHistoryPanel({ taskId }: { taskId: number }) {
           items.map((item) => (
             <article key={item.id} className="rounded-md border p-3">
               <div className="flex items-center justify-between gap-3">
-                <Badge variant="secondary">{item.score}/3</Badge>
+                <Badge variant="secondary">
+                  {item.score}/{maxScore}
+                </Badge>
                 <time className="text-muted-foreground text-xs">
                   {new Intl.DateTimeFormat(undefined, {
                     dateStyle: "medium",

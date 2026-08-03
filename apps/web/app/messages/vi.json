@@ -1183,6 +1183,58 @@
       "cancel": "Giữ bản nháp",
       "confirmRestore": "Thay bản nháp"
     },
+    "partTwoGrading": {
+      "grade": "Chấm bằng AI",
+      "grading": "Đang chấm...",
+      "rewrite": "Viết lại",
+      "cached": "Kết quả đã lưu",
+      "assisted": "Đã dùng trợ giúp",
+      "quota": "Còn {remaining}/{limit} lượt chấm AI hôm nay",
+      "suggestedFix": "Gợi ý sửa",
+      "suggestedOpening": "Gợi ý mở đầu",
+      "differences": "Nội dung đã cải thiện",
+      "replace": "Dùng email gợi ý",
+      "confirmImprovedEmailTitle": "Thay bản nháp bằng email gợi ý?",
+      "confirmImprovedEmailDescription": "Bản nháp hiện tại sẽ được thay thế. Bạn vẫn có thể chỉnh sửa trước khi chấm lại.",
+      "confirmImprovedEmail": "Thay bản nháp",
+      "cancel": "Giữ bản nháp",
+      "status": {
+        "PASS": "Đạt",
+        "WARN": "Cần xem lại",
+        "FAIL": "Cần cải thiện"
+      },
+      "requirementStatus": {
+        "MET": "Đủ",
+        "PARTIAL": "Một phần",
+        "MISSING": "Thiếu"
+      },
+      "sentenceKind": {
+        "SIMPLE": "Câu đơn",
+        "COMPOUND": "Câu ghép",
+        "COMPLEX": "Câu phức"
+      },
+      "grammarSeverity": { "SERIOUS": "Nghiêm trọng", "MINOR": "Nhẹ" },
+      "section": {
+        "taskCompletion": "Hoàn thành nhiệm vụ",
+        "sentenceVariety": "Đa dạng câu",
+        "tone": "Giọng văn",
+        "grammar": "Ngữ pháp",
+        "paraphrase": "Diễn đạt lại",
+        "overall": "Nhận xét chung",
+        "improvedEmail": "Bài viết gợi ý"
+      },
+      "validation": {
+        "title": "Cần chỉnh lại email trước khi chấm",
+        "MIN_WORDS": "Hãy viết ít nhất 50 từ.",
+        "MAX_WORDS": "Chỉ được viết tối đa 300 từ.",
+        "MAX_CHARACTERS": "Chỉ được viết tối đa 2.200 ký tự.",
+        "OBVIOUS_SPAM": "Hãy thay nội dung lặp hoặc vô nghĩa bằng một email hoàn chỉnh."
+      },
+      "error": {
+        "title": "Không thể chấm email",
+        "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
+      }
+    },
     "partOneGrading": {
       "grade": "Chấm bằng AI",
       "grading": "Đang chấm...",

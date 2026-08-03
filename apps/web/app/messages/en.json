@@ -1183,6 +1183,54 @@
       "cancel": "Keep my draft",
       "confirmRestore": "Replace draft"
     },
+    "partTwoGrading": {
+      "grade": "Grade with AI",
+      "grading": "Grading...",
+      "rewrite": "Rewrite",
+      "cached": "Cached result",
+      "assisted": "Used assistance",
+      "quota": "{remaining}/{limit} AI grades remaining today",
+      "suggestedFix": "Suggested fix",
+      "suggestedOpening": "Suggested opening",
+      "differences": "What changed",
+      "replace": "Use improved email",
+      "confirmImprovedEmailTitle": "Replace your draft with the improved email?",
+      "confirmImprovedEmailDescription": "Your current draft will be replaced. You can continue editing before grading again.",
+      "confirmImprovedEmail": "Replace draft",
+      "cancel": "Keep my draft",
+      "status": { "PASS": "Pass", "WARN": "Review", "FAIL": "Needs work" },
+      "requirementStatus": {
+        "MET": "Met",
+        "PARTIAL": "Partial",
+        "MISSING": "Missing"
+      },
+      "sentenceKind": {
+        "SIMPLE": "Simple",
+        "COMPOUND": "Compound",
+        "COMPLEX": "Complex"
+      },
+      "grammarSeverity": { "SERIOUS": "Serious", "MINOR": "Minor" },
+      "section": {
+        "taskCompletion": "Task completion",
+        "sentenceVariety": "Sentence variety",
+        "tone": "Tone",
+        "grammar": "Grammar",
+        "paraphrase": "Paraphrase",
+        "overall": "Overall feedback",
+        "improvedEmail": "Improved email"
+      },
+      "validation": {
+        "title": "Revise this email before grading",
+        "MIN_WORDS": "Write at least 50 words.",
+        "MAX_WORDS": "Use no more than 300 words.",
+        "MAX_CHARACTERS": "Use no more than 2,200 characters.",
+        "OBVIOUS_SPAM": "Replace repeated or meaningless text with a complete email."
+      },
+      "error": {
+        "title": "The email could not be graded",
+        "description": "Your draft is safe. Check your connection or daily quota and try again."
+      }
+    },
     "partOneGrading": {
       "grade": "Grade with AI",
       "grading": "Grading...",
