@@ -3,6 +3,7 @@ import { registerAs } from "@nestjs/config";
 export type GeminiConfiguration = {
   enabled: boolean;
   apiKey: string;
+  apiEndpoint: string;
   visionModel: string;
   gradingModel: string;
   timeoutMs: number;
@@ -30,6 +31,7 @@ export function resolveGeminiConfiguration(
   return {
     enabled: environmentBoolean(environment.GEMINI_ENABLED),
     apiKey: environmentString(environment.GEMINI_API_KEY),
+    apiEndpoint: environmentString(environment.GEMINI_API_ENDPOINT),
     visionModel: environmentString(
       environment.GEMINI_VISION_MODEL,
       "gemini-3.5-flash-lite"

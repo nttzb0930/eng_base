@@ -72,7 +72,7 @@ import { UnshareToeicWritingSubmissionUseCase } from "./use-cases/unshare-toeic-
         const repository = new PrismaWritingAiRepository(prisma);
         const provider = gemini.enabled
           ? new GeminiWritingProvider(
-              createGeminiWritingClient(gemini.apiKey),
+              createGeminiWritingClient(gemini.apiKey, gemini.apiEndpoint),
               gemini
             )
           : {
@@ -113,7 +113,7 @@ import { UnshareToeicWritingSubmissionUseCase } from "./use-cases/unshare-toeic-
       ) => {
         const provider = gemini.enabled
           ? new GeminiWritingProvider(
-              createGeminiWritingClient(gemini.apiKey),
+              createGeminiWritingClient(gemini.apiKey, gemini.apiEndpoint),
               gemini
             )
           : {

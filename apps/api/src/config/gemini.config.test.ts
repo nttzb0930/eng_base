@@ -14,6 +14,7 @@ test("Gemini configuration is disabled safely with production defaults", () => {
   assert.deepEqual(resolveGeminiConfiguration({}), {
     enabled: false,
     apiKey: "",
+    apiEndpoint: "",
     visionModel: "gemini-3.5-flash-lite",
     gradingModel: "gemini-3.5-flash-lite",
     timeoutMs: 20_000,
@@ -38,6 +39,7 @@ test("Gemini environment accepts explicit provider configuration", () => {
     ...requiredEnvironment,
     GEMINI_ENABLED: "true",
     GEMINI_API_KEY: "test-key",
+    GEMINI_API_ENDPOINT: " http://127.0.0.1:8045 ",
     GEMINI_VISION_MODEL: "vision-model",
     GEMINI_GRADING_MODEL: "grading-model",
     GEMINI_TIMEOUT_MS: "25000",
@@ -48,6 +50,7 @@ test("Gemini environment accepts explicit provider configuration", () => {
   assert.deepEqual(resolveGeminiConfiguration(environment), {
     enabled: true,
     apiKey: "test-key",
+    apiEndpoint: "http://127.0.0.1:8045",
     visionModel: "vision-model",
     gradingModel: "grading-model",
     timeoutMs: 25_000,

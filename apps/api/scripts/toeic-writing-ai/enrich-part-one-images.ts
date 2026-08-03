@@ -216,7 +216,7 @@ async function main() {
   const provider = options.dryRun
     ? { enrichPicture: () => Promise.reject(new Error("dry-run")) }
     : new GeminiWritingProvider(
-        createGeminiWritingClient(configuration.apiKey),
+        createGeminiWritingClient(configuration.apiKey, configuration.apiEndpoint),
         configuration
       );
   const summary = await enrichPartOneCandidates({

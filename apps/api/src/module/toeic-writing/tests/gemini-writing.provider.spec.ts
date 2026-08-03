@@ -2,14 +2,29 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  buildGeminiClientOptions,
   GeminiWritingProvider,
   type GeminiWritingClient,
   WritingAiInvalidResponseError,
 } from "../provider/gemini-writing.provider";
 
+test("Gemini client options use the official endpoint by default", () => {
+  assert.deepEqual(buildGeminiClientOptions("test-key"), {
+    apiKey: "test-key",
+  });
+});
+
+test("Gemini client options support an explicit proxy endpoint", () => {
+  assert.deepEqual(
+    buildGeminiClientOptions("test-key", " http://127.0.0.1:8045 "),
+    { apiKey: "test-key", httpOptions: { baseUrl: "http://127.0.0.1:8045" } }
+  );
+});
+
 const configuration = {
   enabled: true,
   apiKey: "test-key",
+  apiEndpoint: "",
   visionModel: "vision-model",
   gradingModel: "grading-model",
   timeoutMs: 20_000,

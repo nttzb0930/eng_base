@@ -30,8 +30,21 @@ export class WritingAiInvalidResponseError extends Error {
   }
 }
 
-export function createGeminiWritingClient(apiKey: string): GeminiWritingClient {
-  const client = new GoogleGenAI({ apiKey });
+export function buildGeminiClientOptions(
+  apiKey: string,
+  apiEndpoint = ""
+): ConstructorParameters<typeof GoogleGenAI>[0] {
+  const endpoint = apiEndpoint.trim();
+  return endpoint
+    ? { apiKey, httpOptions: { baseUrl: endpoint } }
+    : { apiKey };
+}
+
+export function createGeminiWritingClient(
+  apiKey: string,
+  apiEndpoint = ""
+): GeminiWritingClient {
+  const client = new GoogleGenAI(buildGeminiClientOptions(apiKey, apiEndpoint));
   return {
     async generateContent(request) {
       const response = await client.models.generateContent(request);

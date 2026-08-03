@@ -190,7 +190,7 @@ async function main() {
       loadTask: (taskId) => tasks.getPublishedPartTwo(taskId),
       grade: (input) => {
         const provider = new GeminiWritingProvider(
-          createGeminiWritingClient(configuration.apiKey),
+          createGeminiWritingClient(configuration.apiKey, configuration.apiEndpoint),
           configuration
         );
         return provider.gradePartTwo(input);

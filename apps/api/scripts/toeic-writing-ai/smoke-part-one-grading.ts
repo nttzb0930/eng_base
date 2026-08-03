@@ -136,7 +136,7 @@ async function main() {
     join(licensedRoot, "writing")
   );
   const provider = new GeminiWritingProvider(
-    createGeminiWritingClient(configuration.apiKey),
+    createGeminiWritingClient(configuration.apiKey, configuration.apiEndpoint),
     configuration
   );
 

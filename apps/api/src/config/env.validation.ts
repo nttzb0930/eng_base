@@ -60,6 +60,12 @@ const ApiEnvironmentSchema = z
       .default("src/module/mail/templates"),
     GEMINI_ENABLED: booleanFromEnvironment,
     GEMINI_API_KEY: z.string().trim().optional().default(""),
+    GEMINI_API_ENDPOINT: z
+      .string()
+      .trim()
+      .url()
+      .optional()
+      .default(""),
     GEMINI_VISION_MODEL: z
       .string()
       .trim()
