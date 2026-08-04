@@ -167,7 +167,7 @@ schema, start the services, and run health checks without importing data.
 On the deployment host, first run the packaged read-only plan:
 
 ```sh
-docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run data:bootstrap-vocabulary:compiled -- plan
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run db:seed:production -- plan
 ```
 
 Verify the sanitized target, hashes, create/update/reuse counts, zero destructive
@@ -176,7 +176,7 @@ Create and verify a restorable database backup before either remaining step.
 Then run the transactional rollback rehearsal:
 
 ```sh
-docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run data:bootstrap-vocabulary:compiled -- dry-run
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run db:seed:production -- dry-run
 ```
 
 If the dry-run report matches the reviewed plan, copy the fresh token from that
@@ -184,7 +184,7 @@ report and apply it exactly once:
 
 ```sh
 confirmation='APPLY_VOCABULARY_BOOTSTRAP_<CURRENT_TOKEN>'
-docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run data:bootstrap-vocabulary:compiled -- apply --confirm "$confirmation"
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run db:seed:production -- apply --confirm "$confirmation"
 ```
 
 Stop if the target, hashes, counts, or confirmation token changes. Investigate
