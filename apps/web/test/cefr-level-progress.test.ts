@@ -103,15 +103,10 @@ test("Learn Level cards do not collapse a CEFR level to the first matching Unit"
   assert.equal(source.includes("unitItem.id === activeUnitId"), false);
 });
 
-test("Learn Level continue action scrolls to the selected Unit lessons", () => {
+test("Learn Level continue action opens the lesson route", () => {
   const source = read("app/views/learn/LearnLevelView.tsx");
 
-  assert.equal(
-    source.includes(
-      '`/learn/level?unit=${targetUnit.id}#level-lessons`'
-    ),
-    true
-  );
+  assert.equal(source.includes('href={withLocale("/lesson")}'), true);
   assert.equal(source.includes('id="level-lessons"'), true);
   assert.equal(source.includes("scroll-mt-24"), true);
 });
