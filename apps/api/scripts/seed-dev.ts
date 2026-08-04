@@ -348,6 +348,7 @@ const main = async () => {
         title: `${level} Vocabulary`,
         description: `Practice core ${level} English vocabulary`,
         order: levelIndex + 1,
+        cefr_level: level,
       },
     });
 

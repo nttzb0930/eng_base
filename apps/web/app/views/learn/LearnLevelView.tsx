@@ -317,9 +317,7 @@ export function LearnLevelView() {
                   <div className="mt-5">
                     {!locked && targetUnit ? (
                       <Link
-                        href={withLocale(
-                          `/learn/level?unit=${targetUnit.id}#level-lessons`
-                        )}
+                        href={withLocale("/lesson")}
                         className={cn(
                           "shadow-xs inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl text-xs font-bold transition",
                           active

@@ -7,6 +7,7 @@ import {
 } from "@repo/shared";
 
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { resolveLearningCourseId } from "../../courses/use-cases/resolve-learning-course-id";
 import { applyCefrUnlockPolicy } from "./cefr-level-progress.policy";
 
 type MutableLevelProgress = Omit<CefrLevelProgress, "unlocked">;
@@ -27,6 +28,11 @@ export class GetCefrLevelProgressUseCase {
       }),
     ]);
 
+    const learningCourseId = await resolveLearningCourseId(
+      this.prisma,
+      userProgress?.active_course_id
+    );
+
     const [vocabularyTotals, vocabularyProgress, units] = await Promise.all([
       this.prisma.vocabulary_items.groupBy({
         by: ["cefr_level"],
@@ -40,10 +46,10 @@ export class GetCefrLevelProgressUseCase {
           vocabulary_items: { select: { cefr_level: true } },
         },
       }),
-      userProgress?.active_course_id
+      learningCourseId
         ? this.prisma.units.findMany({
             where: {
-              course_id: userProgress.active_course_id,
+              course_id: learningCourseId,
               cefr_level: { not: null },
             },
             select: {

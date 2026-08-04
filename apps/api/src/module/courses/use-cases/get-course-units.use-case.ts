@@ -2,6 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import { CourseLearningMapper } from "./course-learning.mapper";
 import { GetUserProgressUseCase } from "./get-user-progress.use-case";
+import { resolveLearningCourseId } from "./resolve-learning-course-id";
 
 @Injectable()
 export class GetCourseUnitsUseCase extends CourseLearningMapper {
@@ -15,10 +16,15 @@ export class GetCourseUnitsUseCase extends CourseLearningMapper {
   async execute(userId: string) {
     const userProgress = await this.getUserProgress.execute(userId);
 
-    if (!userProgress?.activeCourseId) return [];
+    const courseId = await resolveLearningCourseId(
+      this.prisma,
+      userProgress?.activeCourseId
+    );
+
+    if (!courseId) return [];
 
     const data = await this.prisma.units.findMany({
-      where: { course_id: userProgress.activeCourseId },
+      where: { course_id: courseId },
       orderBy: [{ order: "asc" }, { id: "asc" }],
       include: {
         lessons: {

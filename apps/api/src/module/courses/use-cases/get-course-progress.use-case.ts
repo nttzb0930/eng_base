@@ -3,6 +3,7 @@ import { PrismaService } from "../../../database/prisma/prisma.service";
 import { CourseLearningMapper } from "./course-learning.mapper";
 import type { CourseUnit, LessonWithChallenges } from "@repo/shared";
 import { GetUserProgressUseCase } from "./get-user-progress.use-case";
+import { resolveLearningCourseId } from "./resolve-learning-course-id";
 
 @Injectable()
 export class GetCourseProgressUseCase extends CourseLearningMapper {
@@ -16,10 +17,15 @@ export class GetCourseProgressUseCase extends CourseLearningMapper {
   async execute(userId: string) {
     const userProgress = await this.getUserProgress.execute(userId);
 
-    if (!userProgress?.activeCourseId) return null;
+    const courseId = await resolveLearningCourseId(
+      this.prisma,
+      userProgress?.activeCourseId
+    );
 
-    const unitsInActiveCourse = await this.prisma.units.findMany({
-      where: { course_id: userProgress.activeCourseId },
+    if (!courseId) return null;
+
+    const unitsInLearningCourse = await this.prisma.units.findMany({
+      where: { course_id: courseId },
       orderBy: [{ order: "asc" }, { id: "asc" }],
       include: {
         lessons: {
@@ -40,7 +46,7 @@ export class GetCourseProgressUseCase extends CourseLearningMapper {
       },
     });
 
-    const firstUncompletedLesson = unitsInActiveCourse
+    const firstUncompletedLesson = unitsInLearningCourse
       .flatMap((unit) => unit.lessons)
       .map((lesson): LessonWithChallenges & { unit: CourseUnit } => ({
         ...this.mapLessonWithChallenges(lesson),

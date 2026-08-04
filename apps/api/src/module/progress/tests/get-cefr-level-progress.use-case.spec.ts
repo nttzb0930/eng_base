@@ -51,6 +51,9 @@ test("CEFR progress summary aggregates user vocabulary and completed lessons", a
   let progressQuery: unknown;
   let unitQuery: unknown;
   const prisma = {
+    courses: {
+      findUnique: async () => ({ id: 11 }),
+    },
     user_progress: {
       findUnique: async () => ({ active_course_id: 7 }),
     },
@@ -162,7 +165,7 @@ test("CEFR progress summary aggregates user vocabulary and completed lessons", a
     },
   });
   assert.deepEqual(unitQuery, {
-    where: { course_id: 7, cefr_level: { not: null } },
+    where: { course_id: 11, cefr_level: { not: null } },
     select: {
       cefr_level: true,
       lessons: {
@@ -184,6 +187,9 @@ test("CEFR progress summary aggregates user vocabulary and completed lessons", a
 test("CEFR progress summary keeps lesson totals at zero without an active course", async () => {
   let unitsQueried = false;
   const prisma = {
+    courses: {
+      findUnique: async () => null,
+    },
     user_progress: {
       findUnique: async () => ({ active_course_id: null }),
     },
