@@ -41,6 +41,7 @@ import {
   type ToeicDictationCheckFeedbackSegment,
 } from "@/app/features/toeic-dictation/toeic-dictation-check-feedback";
 import { getToeicDictationAutoPlayKey } from "@/app/features/toeic-dictation/toeic-dictation-auto-play";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import type {
   ToeicDictationItem,
   ToeicDictationRevealCount,
@@ -65,6 +66,7 @@ export function ToeicDictationSessionView({
   mode = "dictation",
 }: Props) {
   const t = useTranslations("toeicDictation.session");
+  const { open: openExitModal } = useExitModal();
   const setQuery = useToeicDictationSet(setId);
   const progressQuery = useToeicDictationProgress(setId);
   const [index, setIndex] = useState(0);
@@ -418,13 +420,15 @@ export function ToeicDictationSessionView({
       <div className="bg-background fixed inset-0 z-30 flex flex-col overflow-hidden">
         <header className="bg-background z-30 shrink-0 border-b">
           <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
-            <Link
-              href="/learn/cert/toeic/listening?mode=dictation"
+            <Button
+              type="button"
+              variant="ghost"
+              onClick={() => openExitModal("/learn/cert/toeic/listening?mode=dictation")}
               className="text-muted-foreground hover:bg-muted inline-flex shrink-0 items-center justify-center rounded-lg p-1.5 transition-colors hover:text-emerald-600"
               aria-label={t("back")}
             >
               <ArrowLeft className="h-5 w-5 shrink-0" aria-hidden="true" />
-            </Link>
+            </Button>
 
             <div className="min-w-0 flex-1 text-center sm:text-left">
               <div className="flex flex-wrap items-center justify-center gap-x-2 sm:justify-start">

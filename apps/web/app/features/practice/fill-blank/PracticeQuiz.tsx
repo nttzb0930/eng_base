@@ -12,12 +12,14 @@ import { toast } from "sonner";
 
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { practiceApi } from "@/app/features/practice/api/practice.api";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { useLearningSession } from "@/app/features/learning-session/use-learning-session";
 import { withLocale } from "@/app/i18n/paths";
 import type { FillBlankPracticeChallenge } from "@repo/shared";
 import type { PracticeCefrLevel } from "@/app/features/practice/practice-level";
+import { shouldAdvanceAfterFeedback } from "../practice-answer-flow";
 
 import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
 import { Footer } from "@/app/features/lessons/components/LessonFooter";
@@ -38,6 +40,7 @@ export const FillBlankPracticeQuiz = ({
   totalLessons,
 }: FillBlankPracticeQuizProps) => {
   const t = useTranslations("practice");
+  const { open: openExitModal } = useExitModal();
   const lessonT = useTranslations("lesson");
   const vocabularyT = useTranslations("vocabulary");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -159,13 +162,7 @@ export const FillBlankPracticeQuiz = ({
   const onContinue = () => {
     if (!challenge) return;
 
-    if (status === "wrong") {
-      clearFeedback();
-      setSelectedOption(undefined);
-      return;
-    }
-
-    if (status === "correct") {
+    if (shouldAdvanceAfterFeedback(status)) {
       setActiveIndex((current) => current + 1);
       clearFeedback();
       setSelectedOption(undefined);
@@ -262,7 +259,7 @@ export const FillBlankPracticeQuiz = ({
 
       <PracticeSessionShell
         exitLabel={t("exit")}
-        onExit={() => router.push(mapHref)}
+        onExit={() => openExitModal(mapHref)}
         percentage={percentage}
         current={activeIndex + 1}
         total={initialChallenges.length}
@@ -270,6 +267,7 @@ export const FillBlankPracticeQuiz = ({
           <Footer
             disabled={pending || !selectedOption}
             status={status}
+            wrongAction="next"
             onCheck={onContinue}
           />
         }

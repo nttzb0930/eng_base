@@ -14,12 +14,12 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import { ToeicGrammarFeedback } from "@/app/features/toeic-grammar/components/ToeicGrammarFeedback";
 import { ToeicGrammarPracticeSkeleton } from "@/app/features/toeic-grammar/components/ToeicGrammarPracticeSkeleton";
 import { ToeicGrammarQuestion } from "@/app/features/toeic-grammar/components/ToeicGrammarQuestion";
 import { ToeicGrammarQuestionNavigator } from "@/app/features/toeic-grammar/components/ToeicGrammarQuestionNavigator";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import {
   useSubmitToeicGrammarAnswer,
   useToeicGrammarPractice,
@@ -45,6 +45,7 @@ export function ToeicGrammarPracticeView({
   target,
 }: ToeicGrammarPracticeViewProps) {
   const t = useTranslations("toeicGrammar");
+  const { open: openExitModal } = useExitModal();
   const practiceQuery = useToeicGrammarPractice(mode, target);
   const answerMutation = useSubmitToeicGrammarAnswer();
   const [state, setState] = useState(() =>
@@ -158,13 +159,15 @@ export function ToeicGrammarPracticeView({
     <main className="bg-background min-h-dvh pb-28">
       <header className="bg-background/95 sticky top-0 z-30 border-b backdrop-blur">
         <div className="mx-auto flex max-w-[1000px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <Link
-            href="/learn/cert/toeic/reading/grammar"
+          <Button
+            type="button"
+            variant="ghost"
+            onClick={() => openExitModal("/learn/cert/toeic/reading/grammar")}
             className="text-muted-foreground inline-flex items-center gap-2 text-sm font-semibold hover:text-emerald-600"
           >
             <ArrowLeft className="h-4 w-4" />
             {t("practice.back")}
-          </Link>
+          </Button>
           <span className="text-sm font-semibold">
             {t("practice.position", {
               current: activeIndex + 1,

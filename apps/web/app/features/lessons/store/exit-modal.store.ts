@@ -2,12 +2,14 @@ import { create } from "zustand";
 
 type ExitModalState = {
   isOpen: boolean;
-  open: () => void;
+  destination: string;
+  open: (destination?: string) => void;
   close: () => void;
 };
 
 export const useExitModal = create<ExitModalState>((set) => ({
   isOpen: false,
-  open: () => set({ isOpen: true }),
+  destination: "/learn",
+  open: (destination = "/learn") => set({ isOpen: true, destination }),
   close: () => set({ isOpen: false }),
 }));

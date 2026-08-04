@@ -24,8 +24,8 @@ import { practiceApi } from "@/app/features/practice/api/practice.api";
 import { Button } from "@/app/components/ui/button";
 import type { PracticeResultItem } from "@/app/features/practice/components/PracticeResult";
 import { withLocale } from "@/app/i18n/paths";
-import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import type { VocabularyItem } from "@repo/shared";
 import { vocabularyApi, type FlashcardRating } from "@/app/features/vocabulary/api/vocabulary.api";
 
@@ -81,9 +81,9 @@ export const FlashcardSession = ({
   deckTitle,
 }: FlashcardSessionProps) => {
   const t = useTranslations("flashcards");
-  const locale = useCurrentLocale();
   const router = useRouter();
   const { width, height } = useWindowSize();
+  const { open: openExitModal } = useExitModal();
   const [finishAudio, , finishControls] = useAudio({
     src: "/finish.mp3",
   });
@@ -363,7 +363,7 @@ export const FlashcardSession = ({
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => router.push(withLocale("/flashcards", locale))}
+          onClick={() => openExitModal("/flashcards")}
         >
           {t("exit")}
         </Button>

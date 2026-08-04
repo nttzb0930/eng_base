@@ -21,7 +21,7 @@ export const ExitModal = () => {
   const t = useTranslations("modals");
   const locale = useCurrentLocale();
   const router = useRouter();
-  const { isOpen, close } = useExitModal();
+  const { isOpen, destination, close } = useExitModal();
 
   return (
     <Dialog open={isOpen} onOpenChange={close}>
@@ -62,7 +62,7 @@ export const ExitModal = () => {
               size="lg"
               onClick={() => {
                 close();
-                router.push(withLocale("/learn", locale));
+                router.push(withLocale(destination, locale));
               }}
             >
               {t("endSession")}

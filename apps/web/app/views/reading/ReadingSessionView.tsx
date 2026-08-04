@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/app/components/ui/button";
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import {
   ReadingPreferences,
   useReadingPreferences,
@@ -19,6 +18,7 @@ import {
 import { withLocale } from "@/app/i18n/paths";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { cn } from "@/app/utils/cn";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 
 type ReadingSessionViewProps = {
   slug: string;
@@ -28,6 +28,7 @@ export function ReadingSessionView({ slug }: ReadingSessionViewProps) {
   const t = useTranslations("reading");
   const router = useRouter();
   const locale = useCurrentLocale();
+  const { open: openExitModal } = useExitModal();
   const passageQuery = useReadingPassage(slug);
   const passageId = passageQuery.data?.id ?? 0;
   const submitMutation = useSubmitReadingAttempt(passageId);
@@ -90,13 +91,15 @@ export function ReadingSessionView({ slug }: ReadingSessionViewProps) {
     <main className="min-h-dvh bg-slate-50">
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <Link
-            href="/reading"
+          <Button
+            type="button"
+            variant="ghost"
+            onClick={() => openExitModal("/reading")}
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             {t("session.back")}
-          </Link>
+          </Button>
           <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500">
             <Clock3 className="h-4 w-4" aria-hidden="true" />
             {t("list.minutes", { count: passage.estimatedMinutes })}

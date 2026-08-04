@@ -13,7 +13,6 @@ import {
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import {
   Dialog,
@@ -26,6 +25,7 @@ import {
 import { ToeicPartNavigation } from "@/app/features/toeic-reading/components/ToeicPartNavigation";
 import { ToeicQuestion } from "@/app/features/toeic-reading/components/ToeicQuestion";
 import { ToeicReadingSessionSkeleton } from "@/app/features/toeic-reading/components/ToeicReadingSessionSkeleton";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import { ToeicStimulus } from "@/app/features/toeic-reading/components/ToeicStimulus";
 import {
   useSubmitToeicReadingAttempt,
@@ -65,6 +65,7 @@ export function ToeicReadingSessionView({
   const t = useTranslations("toeicReading");
   const router = useRouter();
   const locale = useCurrentLocale();
+  const { open: openExitModal } = useExitModal();
   const practicePart = scopeToPart(scope);
   const testQuery = useToeicReadingTest(testId, practicePart);
   const draftQuery = useToeicReadingDraft(testId, practicePart);
@@ -251,13 +252,15 @@ export function ToeicReadingSessionView({
     <main className="bg-background min-h-dvh">
       <header className="bg-background/95 sticky top-0 z-20 border-b backdrop-blur">
         <div className="mx-auto flex max-w-[1280px] items-center gap-4 px-4 py-4 sm:px-6">
-          <Link
-            href={`/learn/cert/toeic/reading?scope=${scope}`}
+          <Button
+            type="button"
+            variant="ghost"
+            onClick={() => openExitModal(`/learn/cert/toeic/reading?scope=${scope}`)}
             className="text-muted-foreground inline-flex shrink-0 items-center gap-2 text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">{t("session.back")}</span>
-          </Link>
+          </Button>
           <div
             className="bg-muted h-2 flex-1 overflow-hidden rounded-full"
             role="progressbar"

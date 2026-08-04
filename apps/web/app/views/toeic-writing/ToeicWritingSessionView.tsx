@@ -12,9 +12,8 @@ import {
   type ToeicWritingSubmissionResult,
   type ToeicWritingTaskDetail,
 } from "@repo/shared";
-import { AlertCircle, ArrowLeft, FilePenLine, RotateCcw, Sparkles } from "lucide-react";
+import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 import {
   useCallback,
   useEffect,
@@ -34,6 +33,7 @@ import { ToeicWritingSessionFooter } from "@/app/features/toeic-writing/componen
 import { ToeicWritingSessionSkeleton } from "@/app/features/toeic-writing/components/ToeicWritingSessionSkeleton";
 import { ToeicWritingGradeHistoryPanel } from "@/app/features/toeic-writing/components/ToeicWritingGradeHistoryPanel";
 import { ToeicWritingPartOneGradePanel } from "@/app/features/toeic-writing/components/ToeicWritingPartOneGradePanel";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import { ToeicWritingPartOneValidationAlert } from "@/app/features/toeic-writing/components/ToeicWritingPartOneValidationAlert";
 import { ToeicWritingReferencePanel } from "@/app/features/toeic-writing/components/ToeicWritingReferencePanel";
 import { ToeicWritingPartTwoWorkspace } from "@/app/features/toeic-writing/components/ToeicWritingPartTwoWorkspace";
@@ -61,7 +61,6 @@ import {
   reduceWritingSession,
 } from "@/app/features/toeic-writing/toeic-writing-session-state";
 import { defaultLocale, isLocale } from "@/app/i18n/config";
-import { withLocale } from "@/app/i18n/paths";
 
 type ToeicWritingSessionViewProps = {
   taskId: number;
@@ -131,7 +130,7 @@ function ToeicWritingWorkspace({
   const partTwoGradeT = useTranslations("toeicWriting.partTwoGrading");
   const currentLocale = useLocale();
   const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
-  const router = useRouter();
+  const { open: openExitModal } = useExitModal();
   const { mutateAsync: saveDraft } = useSaveToeicWritingDraft();
   const { mutateAsync: deleteDraft } = useDeleteToeicWritingDraft();
   const { mutateAsync: submitResponse, isError: submitIsError } =
@@ -219,12 +218,14 @@ function ToeicWritingWorkspace({
     navigatingRef.current = true;
     try {
       await autosave.flush(snapshot(), { lock: true });
-      router.push(withLocale("/learn/cert/toeic/writing", locale));
+      autosave.unlock();
+      navigatingRef.current = false;
+      openExitModal("/learn/cert/toeic/writing");
     } catch {
       autosave.unlock();
       navigatingRef.current = false;
     }
-  }, [autosave, locale, router, snapshot]);
+  }, [autosave, openExitModal, snapshot]);
 
   const submit = useCallback(async () => {
     if (!state.responseText.trim()) return;

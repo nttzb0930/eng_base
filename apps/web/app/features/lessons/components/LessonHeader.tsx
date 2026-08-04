@@ -17,7 +17,7 @@ export const Header = ({ hearts, percentage }: HeaderProps) => {
   return (
     <header className="mx-auto flex w-full max-w-[1140px] shrink-0 items-center justify-between gap-x-4 px-4 py-4 sm:px-6 lg:gap-x-7 lg:px-10 lg:py-6">
       <X
-        onClick={open}
+        onClick={() => open()}
         aria-label={t("closeLesson")}
         className="cursor-pointer text-slate-500 transition hover:opacity-75"
       />

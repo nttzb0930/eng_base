@@ -15,13 +15,13 @@ import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { useLearningSession } from "@/app/features/learning-session/use-learning-session";
 import { withLocale } from "@/app/i18n/paths";
-import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 import type { SavedWordReviewChallenge } from "@repo/shared";
 
 import { Challenge } from "@/app/features/lessons/components/LessonChallenge";
 import { Footer } from "@/app/features/lessons/components/LessonFooter";
 import { QuestionBubble } from "@/app/features/lessons/components/QuestionBubble";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import {
   PracticeResult,
   type PracticeResultItem,
@@ -37,7 +37,6 @@ export const SavedWordsReviewQuiz = ({
   reviewMode,
 }: SavedWordsReviewQuizProps) => {
   const t = useTranslations("savedWords");
-  const locale = useCurrentLocale();
   const practiceT = useTranslations("practice");
   const lessonT = useTranslations("lesson");
   const localizeChallengeQuestion = useLocalizedChallengeQuestion();
@@ -55,6 +54,7 @@ export const SavedWordsReviewQuiz = ({
   });
 
   const router = useRouter();
+  const { open: openExitModal } = useExitModal();
   const { width, height } = useWindowSize();
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -222,7 +222,7 @@ export const SavedWordsReviewQuiz = ({
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => router.push(withLocale("/saved-words", locale))}
+          onClick={() => openExitModal("/saved-words")}
         >
           {practiceT("exit")}
         </Button>

@@ -18,7 +18,6 @@ import {
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import {
   Dialog,
@@ -39,6 +38,7 @@ import { ToeicListeningMediaImage } from "@/app/features/toeic-listening/compone
 import { ToeicListeningPlayer } from "@/app/features/toeic-listening/components/ToeicListeningPlayer";
 import { ToeicListeningQuestionGroup } from "@/app/features/toeic-listening/components/ToeicListeningQuestionGroup";
 import { ToeicListeningSessionSkeleton } from "@/app/features/toeic-listening/components/ToeicListeningSessionSkeleton";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import {
   useSaveToeicListeningDraft,
   useCheckToeicListeningAnswer,
@@ -78,6 +78,7 @@ export function ToeicListeningSessionView({
   const t = useTranslations("toeicListening");
   const router = useRouter();
   const locale = useCurrentLocale();
+  const { open: openExitModal } = useExitModal();
   const practicePart = scopeToPart(scope);
   const mode = practicePart === undefined ? "FULL" : "PRACTICE";
   const testQuery = useToeicListeningTest(testId, practicePart);
@@ -377,13 +378,15 @@ export function ToeicListeningSessionView({
     <main className="bg-background min-h-dvh">
       <header className="bg-background/95 sticky top-0 z-20 border-b backdrop-blur">
         <div className="flex w-full items-center gap-4 px-4 py-4 sm:px-6">
-          <Link
-            href={`/learn/cert/toeic/listening?scope=${scope}`}
+          <Button
+            type="button"
+            variant="ghost"
+            onClick={() => openExitModal(`/learn/cert/toeic/listening?scope=${scope}`)}
             className="text-muted-foreground inline-flex shrink-0 items-center gap-2 text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">{t("session.back")}</span>
-          </Link>
+          </Button>
           <div
             className="bg-muted h-2 flex-1 overflow-hidden rounded-full"
             role="progressbar"

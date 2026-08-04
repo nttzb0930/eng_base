@@ -13,11 +13,11 @@ import { toast } from "sonner";
 
 import { vocabularyApi } from "@/app/features/vocabulary/api/vocabulary.api";
 import { practiceApi } from "@/app/features/practice/api/practice.api";
+import { useExitModal } from "@/app/features/lessons/store/exit-modal.store";
 import { Button } from "@/app/components/ui/button";
 import { VocabularyCard } from "@/app/features/vocabulary/components/VocabularyCard";
 import { useLearningSession } from "@/app/features/learning-session/use-learning-session";
 import { withLocale } from "@/app/i18n/paths";
-import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { useLocalizedChallengeQuestion } from "@/app/i18n/use-localized-challenge-question";
 import type { WeakWordsPracticeChallenge } from "@repo/shared";
 
@@ -35,7 +35,7 @@ export const WeakWordsPracticeQuiz = ({
   initialChallenges,
 }: WeakWordsPracticeQuizProps) => {
   const t = useTranslations("practice");
-  const locale = useCurrentLocale();
+  const { open: openExitModal } = useExitModal();
   const lessonT = useTranslations("lesson");
   const localizeChallengeQuestion = useLocalizedChallengeQuestion();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -235,7 +235,7 @@ export const WeakWordsPracticeQuiz = ({
 
       <PracticeSessionShell
         exitLabel={t("exit")}
-        onExit={() => router.push(withLocale("/practice", locale))}
+        onExit={() => openExitModal("/practice")}
         percentage={percentage}
         current={activeIndex + 1}
         total={initialChallenges.length}
