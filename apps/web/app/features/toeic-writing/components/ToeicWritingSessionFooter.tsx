@@ -34,44 +34,45 @@ export function ToeicWritingSessionFooter({
   });
 
   return (
-    <footer className="bg-background/95 supports-[backdrop-filter]:bg-background/85 sticky bottom-0 z-30 border-t py-3 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-[1200px] items-center justify-end gap-2 px-4 sm:px-6">
-          <Button
-            type="button"
-            variant="outline"
-            onClick={onSave}
-            disabled={availability.saveDisabled}
-            className="gap-2 rounded-md"
-          >
-            {saving ? (
-              <LoaderCircle
-                className="h-4 w-4 animate-spin"
-                aria-hidden="true"
-              />
-            ) : (
-              <Save className="h-4 w-4" aria-hidden="true" />
-            )}
-            <span className="hidden sm:inline">{t("saveNow")}</span>
-          </Button>
-          <Button
-            type="button"
-            variant="secondary"
-            onClick={onSubmit}
-            disabled={availability.primaryDisabled}
-            className="gap-2 rounded-md"
-          >
-            {actionPending ? (
-              <LoaderCircle
-                className="h-4 w-4 animate-spin"
-                aria-hidden="true"
-              />
-            ) : (
-              <Send className="h-4 w-4" aria-hidden="true" />
-            )}
+    <footer className="z-40 shrink-0 border-t border-border/80 bg-background py-3 shadow-lg">
+      <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between sm:justify-end gap-2.5 px-4 sm:px-6">
+        <Button
+          type="button"
+          variant="outline"
+          onClick={onSave}
+          disabled={availability.saveDisabled}
+          className="h-10 flex-1 sm:flex-initial gap-2 rounded-xl border-border/80 px-4 text-xs font-medium sm:text-sm"
+        >
+          {saving ? (
+            <LoaderCircle
+              className="h-4 w-4 animate-spin"
+              aria-hidden="true"
+            />
+          ) : (
+            <Save className="h-4 w-4" aria-hidden="true" />
+          )}
+          <span>{t("saveNow")}</span>
+        </Button>
+        <Button
+          type="button"
+          onClick={onSubmit}
+          disabled={availability.primaryDisabled}
+          className="h-10 flex-1 sm:flex-initial gap-2 rounded-xl bg-emerald-600 px-5 text-xs font-semibold text-white shadow-xs hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 disabled:bg-emerald-600/50 sm:text-sm"
+        >
+          {actionPending ? (
+            <LoaderCircle
+              className="h-4 w-4 animate-spin"
+              aria-hidden="true"
+            />
+          ) : (
+            <Send className="h-4 w-4" aria-hidden="true" />
+          )}
+          <span>
             {actionPending
               ? (primaryPendingLabel ?? t("submitting"))
               : (primaryLabel ?? t("submit"))}
-          </Button>
+          </span>
+        </Button>
       </div>
     </footer>
   );

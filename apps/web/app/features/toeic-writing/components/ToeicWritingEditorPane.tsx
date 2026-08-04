@@ -78,10 +78,10 @@ export function ToeicWritingEditorPane({
         <span>
           {wordRange
             ? t("wordRange", {
-                count: wordCount,
-                min: wordRange.min,
-                max: wordRange.max,
-              })
+              count: wordCount,
+              min: wordRange.min,
+              max: wordRange.max,
+            })
             : t("wordCount", { count: wordCount })}
         </span>
         <span>

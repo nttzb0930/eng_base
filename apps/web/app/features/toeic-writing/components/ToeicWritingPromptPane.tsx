@@ -1,11 +1,10 @@
 "use client";
 
 import type { ToeicWritingTaskDetail } from "@repo/shared";
-import { ImageIcon, Mail, ScanText } from "lucide-react";
+import { ImageIcon, Mail } from "lucide-react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
-import { Alert, AlertDescription } from "@/app/components/ui/alert";
 import { Badge } from "@/app/components/ui/badge";
 import { useToeicWritingImageUrl } from "@/app/features/toeic-writing/hooks/use-toeic-writing-image-url";
 
@@ -99,6 +98,8 @@ function PartTwoPrompt({
 }) {
   const t = useTranslations("toeicWriting.session");
 
+  const promptEnText = task.exercise.promptEn.replace(/\\n/gu, "\n");
+
   return (
     <section className="bg-card min-w-0 rounded-md border p-4 sm:p-6">
       <div className="flex items-center justify-between gap-3">
@@ -110,19 +111,8 @@ function PartTwoPrompt({
       </div>
 
       <div className="bg-muted/50 mt-5 whitespace-pre-wrap rounded-md border p-4 text-sm leading-7">
-        {task.exercise.promptEn}
+        {promptEnText}
       </div>
-      {task.exercise.promptVi ? (
-        <Alert className="mt-4 border-sky-200 bg-sky-50/70 dark:border-sky-900 dark:bg-sky-950/40">
-          <ScanText
-            className="mr-2 inline h-4 w-4 text-sky-600"
-            aria-hidden="true"
-          />
-          <AlertDescription className="mt-0 inline text-sky-900 dark:text-sky-100">
-            {task.exercise.promptVi}
-          </AlertDescription>
-        </Alert>
-      ) : null}
 
       <div className="mt-6">
         <h2 className="text-sm font-semibold">{t("requirements")}</h2>

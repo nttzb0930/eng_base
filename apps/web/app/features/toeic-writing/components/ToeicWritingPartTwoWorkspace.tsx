@@ -11,6 +11,7 @@ import { BookOpen, FileText, Languages, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState } from "react";
 
+import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
 import {
   Dialog,
@@ -30,6 +31,7 @@ import { ToeicWritingSamplePanel } from "./ToeicWritingSamplePanel";
 import { ToeicWritingVocabularyPanel } from "./ToeicWritingVocabularyPanel";
 import {
   useRestoreToeicWritingCommunityResponse,
+  useToeicWritingAiQuota,
   useToeicWritingCoaching,
   useToeicWritingCommunity,
 } from "../hooks/use-toeic-writing";
@@ -73,6 +75,8 @@ export function ToeicWritingPartTwoWorkspace({
 }: ToeicWritingPartTwoWorkspaceProps) {
   const t = useTranslations("toeicWriting.partTwoCoaching");
   const gradeT = useTranslations("toeicWriting.partTwoGrading");
+  const quotaQuery = useToeicWritingAiQuota();
+  const quotaData = quotaQuery.data;
   const [activePanel, setActivePanel] = useState<Panel | null>(null);
   const [limitReached, setLimitReached] = useState(false);
   const [pendingRestore, setPendingRestore] =
@@ -150,7 +154,7 @@ export function ToeicWritingPartTwoWorkspace({
 
   return (
     <div className="grid items-start gap-5 lg:grid-cols-2">
-      <div className="lg:sticky lg:top-20">
+      <div className="self-start lg:sticky lg:top-20">
         <ToeicWritingPromptPane task={task} />
       </div>
       <div className="min-w-0 space-y-4">
@@ -161,6 +165,19 @@ export function ToeicWritingPartTwoWorkspace({
           limitReached={limitReached}
           saveStatus={saveStatus}
           disabled={false}
+          quotaBadge={
+            quotaData ? (
+              <Badge
+                variant="outline"
+                className="rounded-full border-slate-200/80 bg-slate-100/80 px-3 py-1 text-xs font-medium text-slate-800 dark:border-slate-800 dark:bg-slate-800/80 dark:text-slate-200"
+              >
+                {gradeT("quota", {
+                  remaining: quotaData.remaining,
+                  limit: quotaData.dailyLimit,
+                })}
+              </Badge>
+            ) : null
+          }
           onChange={changeResponse}
           onRetry={onRetrySave}
         />
@@ -300,26 +317,27 @@ export function ToeicWritingPartTwoWorkspace({
           if (!open) setPendingImprovedEmail(null);
         }}
       >
-        <DialogContent className="rounded-md">
-          <DialogHeader>
-            <DialogTitle>{gradeT("confirmImprovedEmailTitle")}</DialogTitle>
-            <DialogDescription>
+        <DialogContent className="max-w-md rounded-2xl border border-slate-200 p-6 shadow-xl dark:border-slate-800">
+          <DialogHeader className="space-y-2">
+            <DialogTitle className="text-lg font-bold text-foreground">
+              {gradeT("confirmImprovedEmailTitle")}
+            </DialogTitle>
+            <DialogDescription className="text-sm text-muted-foreground leading-relaxed">
               {gradeT("confirmImprovedEmailDescription")}
             </DialogDescription>
           </DialogHeader>
-          <DialogFooter>
+          <DialogFooter className="mt-4 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
             <Button
               type="button"
               variant="outline"
-              className="rounded-md"
+              className="rounded-xl font-medium"
               onClick={() => setPendingImprovedEmail(null)}
             >
               {gradeT("cancel")}
             </Button>
             <Button
               type="button"
-              variant="secondary"
-              className="rounded-md"
+              className="rounded-xl bg-emerald-600 font-semibold text-white hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
               disabled={!pendingImprovedEmail}
               onClick={() => {
                 if (pendingImprovedEmail) {

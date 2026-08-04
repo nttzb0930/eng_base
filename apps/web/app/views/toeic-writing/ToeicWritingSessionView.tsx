@@ -12,7 +12,7 @@ import {
   type ToeicWritingSubmissionResult,
   type ToeicWritingTaskDetail,
 } from "@repo/shared";
-import { AlertCircle, ArrowLeft, RotateCcw } from "lucide-react";
+import { AlertCircle, ArrowLeft, FilePenLine, RotateCcw, Sparkles } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
@@ -397,51 +397,69 @@ function ToeicWritingWorkspace({
     : `${t("part", { part: task.part })} - ${t("taskNumber", { number: task.order })}`;
 
   return (
-    <main className="flex min-h-dvh flex-col bg-slate-50/70 dark:bg-slate-950/30">
-      <header className="bg-background/95 supports-[backdrop-filter]:bg-background/85 sticky top-0 z-20 border-b backdrop-blur">
-        <div className="mx-auto flex min-h-16 w-full max-w-[1200px] items-center justify-between gap-4 px-4 sm:px-6">
-          <button
+    <main className="flex h-dvh min-h-0 flex-col overflow-hidden bg-slate-50/70 dark:bg-slate-950/30">
+      <header className="z-40 shrink-0 border-b border-border/60 bg-background py-2.5 shadow-2xs">
+        <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-3 px-4 sm:px-6">
+          <Button
             type="button"
+            variant="outline"
+            size="sm"
             onClick={() => void backToTasks()}
             disabled={state.submitting}
-            className="text-muted-foreground hover:bg-muted hover:text-foreground inline-flex min-h-10 items-center gap-2 rounded-md px-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            className="h-9 shrink-0 whitespace-nowrap gap-2 rounded-full border-border/80 bg-background/80 px-3 text-xs font-medium text-foreground transition-all hover:bg-muted sm:px-4 sm:text-sm"
           >
-            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            <span>{t("backToTasks")}</span>
-          </button>
-          <div className="min-w-0 text-center">
-            <p className="truncate text-sm font-semibold">{headerTitle}</p>
+            <ArrowLeft className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+            <span className="hidden sm:inline">{t("backToTasks")}</span>
+          </Button>
+
+          <div className="flex min-w-0 flex-1 flex-col items-center px-2 text-center">
+            <h1 className="w-full truncate text-sm font-medium text-foreground sm:text-base">
+              {headerTitle}
+            </h1>
             {headerSubtitle ? (
-              <p className="text-muted-foreground text-xs">{headerSubtitle}</p>
+              <div className="mt-0.5 flex max-w-full items-center">
+                <span className="inline-flex max-w-full items-center truncate rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-normal text-emerald-700 dark:text-emerald-300">
+                  <span className="truncate">{headerSubtitle}</span>
+                </span>
+              </div>
             ) : null}
           </div>
-          <Badge variant="outline">{t("part", { part: task.part })}</Badge>
+
+          <div className="flex shrink-0 items-center gap-2">
+            <Badge
+              variant="outline"
+              className="h-8 shrink-0 whitespace-nowrap rounded-full border-emerald-500/30 bg-emerald-50/50 px-3 text-xs font-normal text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-200"
+            >
+              <span>{t("part", { part: task.part })}</span>
+            </Badge>
+          </div>
         </div>
       </header>
 
-      <div className="mx-auto w-full max-w-[1200px] flex-1 px-4 py-6 sm:px-6">
-        {task.part === 2 ? (
-          <ToeicWritingPartTwoWorkspace
-            task={task}
-            responseText={state.responseText}
-            saveStatus={state.saveStatus}
-            grade={partTwoGrade}
-            validationIssues={partTwoValidationIssues}
-            onResponseChange={editResponse}
-            onRetrySave={() => void saveNow()}
-            onRewrite={() => {
-              setPartTwoGrade(null);
-              submissionKeyRef.current = null;
-            }}
-            onReplaceImprovedEmail={(value) =>
-              void replaceWithImprovedEmail(value)
-            }
-          />
-        ) : (
-          <div className="grid items-start gap-5 lg:grid-cols-2">
-            <div className="lg:sticky lg:top-20 self-start">
-              <ToeicWritingPromptPane task={task} />
-            </div>
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+        <div className="mx-auto min-h-0 w-full max-w-[1200px] px-4 py-6 pb-6 sm:px-6">
+          {task.part === 2 ? (
+            <ToeicWritingPartTwoWorkspace
+              task={task}
+              responseText={state.responseText}
+              saveStatus={state.saveStatus}
+              grade={partTwoGrade}
+              validationIssues={partTwoValidationIssues}
+              onResponseChange={editResponse}
+              onRetrySave={() => void saveNow()}
+              onRewrite={() => {
+                setPartTwoGrade(null);
+                submissionKeyRef.current = null;
+              }}
+              onReplaceImprovedEmail={(value) =>
+                void replaceWithImprovedEmail(value)
+              }
+            />
+          ) : (
+            <div className="grid items-start gap-5 lg:grid-cols-2">
+              <div className="lg:sticky lg:top-20 self-start">
+                <ToeicWritingPromptPane task={task} />
+              </div>
             <div className="min-w-0 space-y-4">
               <ToeicWritingEditorPane
                 responseText={state.responseText}
@@ -449,8 +467,11 @@ function ToeicWritingWorkspace({
                 saveStatus={state.saveStatus}
                 disabled={gradingPending}
                 quotaBadge={
-                  task.part === 1 && quota.data ? (
-                    <Badge variant="outline">
+                  quota.data ? (
+                    <Badge
+                      variant="outline"
+                      className="rounded-full border-slate-200/80 bg-slate-100/80 px-3 py-1 text-xs font-medium text-slate-800 dark:border-slate-800 dark:bg-slate-800/80 dark:text-slate-200"
+                    >
                       {gradeT("quota", {
                         remaining: quota.data.remaining,
                         limit: quota.data.dailyLimit,
@@ -514,6 +535,7 @@ function ToeicWritingWorkspace({
             </AlertDescription>
           </Alert>
         ) : null}
+        </div>
       </div>
 
       <ToeicWritingSessionFooter

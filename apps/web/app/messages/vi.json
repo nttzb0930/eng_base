@@ -743,9 +743,17 @@
     "readingPathDescription": "Đọc đoạn văn đúng trình độ và trả lời câu hỏi kiểm tra mức độ hiểu bài.",
     "openReading": "Mở phần đọc hiểu CEFR",
     "toeicPathTitle": "Luyện thi TOEIC",
-    "toeicPathDescription": "Luyện TOEIC Listening và Reading theo từng Part, đề đầy đủ và ngữ pháp trọng tâm.",
+    "toeicPathDescription": "Luyện TOEIC Listening, Reading và Writing theo từng Part, đề đầy đủ và ngữ pháp trọng tâm.",
     "toeicListeningSummary": "Nghe hiểu · Part 1–4",
     "toeicReadingSummary": "Đọc hiểu · Part 5–7",
+    "toeicWritingSummary": "Viết · Part 1–2",
+    "toeicFullSkills": "Đủ 3 kỹ năng",
+    "toeicListeningDetails": "Trắc nghiệm & nghe chép",
+    "toeicReadingDetails": "Đọc hiểu & ngữ pháp",
+    "toeicWritingDetails": "Viết câu, viết thư & luận",
+    "toeicStructureBadge": "Chuẩn cấu trúc đề ETS 2026",
+    "toeicFullTestDetails": "Đề đầy đủ & giải thích",
+    "toeicFeatureDetails": "Nghe chép chính tả & chấm viết chi tiết",
     "openToeic": "Mở phần luyện thi TOEIC",
     "byLevelDesc": "A1 → A2 → B1 → B2. Mở level mới khi hoàn thành level trước.",
     "byCertDesc": "Luyện TOEIC Listening và Reading theo mục tiêu kỳ thi.",
@@ -1235,7 +1243,8 @@
       "error": {
         "title": "Không thể chấm email",
         "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
-      }
+      },
+      "yourSentence": "Câu đã viết:"
     },
     "partOneGrading": {
       "grade": "Chấm bằng AI",

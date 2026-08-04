@@ -32,42 +32,63 @@ export function ToeicWritingPartOneGradePanel({
 
   return (
     <section className="mt-5 space-y-4 animate-in fade-in-0 slide-in-from-top-3 duration-300 ease-out" aria-live="polite">
-      <div className="rounded-md border border-emerald-200 bg-emerald-50/70 p-4 sm:p-5 dark:border-emerald-900 dark:bg-emerald-950/30">
-        <div className="space-y-3">
-          {assisted || grade.cached ? (
-            <div className="flex flex-wrap items-center gap-2">
-              {assisted ? (
-                <Badge
-                  variant="outline"
-                  className="border-amber-300 bg-amber-50/80 text-amber-800 dark:border-amber-800 dark:bg-amber-950/50 dark:text-amber-200 text-xs font-normal"
-                >
-                  {t("assisted")}
-                </Badge>
-              ) : null}
-              {grade.cached ? (
-                <Badge variant="secondary" className="text-xs">
-                  {t("cached")}
-                </Badge>
-              ) : null}
+      <div className="rounded-2xl border border-emerald-200 bg-emerald-50/70 p-4 sm:p-5 dark:border-emerald-900 dark:bg-emerald-950/30">
+        <div className="flex flex-col gap-3.5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4 flex-1 min-w-0">
+            <div className="flex items-center gap-3.5 min-w-0">
+              <div className="flex h-12 w-12 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-full border-2 border-emerald-500 text-base sm:text-2xl font-bold text-emerald-700 dark:text-emerald-300">
+                {grade.score}/3
+              </div>
+              <div className="min-w-0 flex-1 sm:hidden">
+                <h2 className="text-base font-bold leading-tight">{displayScoreLabel}</h2>
+                <div className="mt-1 flex flex-wrap items-center gap-1.5">
+                  {grade.cached ? (
+                    <Badge variant="secondary" className="text-[11px] px-2 py-0">{t("cached")}</Badge>
+                  ) : null}
+                  {assisted ? (
+                    <Badge
+                      variant="outline"
+                      className="border-amber-300 bg-amber-50/80 text-amber-800 dark:border-amber-800 dark:bg-amber-950/50 dark:text-amber-200 text-[11px] font-normal px-2 py-0"
+                    >
+                      {t("assisted")}
+                    </Badge>
+                  ) : null}
+                </div>
+              </div>
             </div>
-          ) : null}
 
-          <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-full border-2 border-emerald-500 text-lg sm:text-xl font-bold text-emerald-700 dark:text-emerald-300">
-              {grade.score}/3
+            <div className="min-w-0 flex-1 space-y-1.5">
+              <div className="hidden sm:flex flex-wrap items-center gap-2">
+                <h2 className="text-lg font-semibold leading-snug">{displayScoreLabel}</h2>
+                {grade.cached ? (
+                  <Badge variant="secondary" className="text-xs">{t("cached")}</Badge>
+                ) : null}
+                {assisted ? (
+                  <Badge
+                    variant="outline"
+                    className="border-amber-300 bg-amber-50/80 text-amber-800 dark:border-amber-800 dark:bg-amber-950/50 dark:text-amber-200 text-xs font-normal"
+                  >
+                    {t("assisted")}
+                  </Badge>
+                ) : null}
+              </div>
+              <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                {grade.overallFeedback}
+              </p>
+              <p className="text-xs font-medium text-emerald-700 dark:text-emerald-300">
+                {t("quota", {
+                  remaining: grade.quota.remaining,
+                  limit: grade.quota.dailyLimit,
+                })}
+              </p>
             </div>
-            <h2 className="text-base sm:text-lg font-semibold leading-snug">{displayScoreLabel}</h2>
           </div>
-
-          <p className="text-muted-foreground text-sm leading-6">
-            {grade.overallFeedback}
-          </p>
 
           <Button
             type="button"
             variant="outline"
+            className="w-full sm:w-auto gap-2 rounded-xl shrink-0"
             onClick={onRewrite}
-            className="w-full sm:w-auto gap-2 rounded-md shrink-0"
           >
             <RotateCcw className="h-4 w-4" aria-hidden="true" />
             {t("rewrite")}
