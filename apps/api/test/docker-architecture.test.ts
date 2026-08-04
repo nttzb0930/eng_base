@@ -49,6 +49,26 @@ test("API package exposes a compiled production bootstrap command", () => {
   );
 });
 
+test("API production package carries the pinned Prisma migration CLI", () => {
+  const packageJson = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8")
+  ) as {
+    scripts?: Record<string, string>;
+    dependencies?: Record<string, string>;
+    devDependencies?: Record<string, string>;
+  };
+
+  assert.equal(
+    packageJson.scripts?.["db:migrate:deploy:production"],
+    "prisma migrate deploy"
+  );
+  assert.equal(
+    packageJson.dependencies?.prisma,
+    packageJson.dependencies?.["@prisma/client"]
+  );
+  assert.equal(packageJson.devDependencies?.prisma, undefined);
+});
+
 test("Docker context excludes secrets and generated output but keeps canonical data", () => {
   const dockerIgnorePath = join(workspaceRoot, ".dockerignore");
   assert.equal(existsSync(dockerIgnorePath), true);

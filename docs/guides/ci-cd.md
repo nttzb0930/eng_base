@@ -132,7 +132,7 @@ The deployment job connects over SSH, updates `.env.production` with
 
 ```text
 docker compose -f docker-compose.prod.yml --env-file .env.production pull api web admin
-docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npx prisma migrate deploy
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npm run db:migrate:deploy:production
 docker compose -f docker-compose.prod.yml --env-file .env.production up -d
 ```
 

@@ -170,7 +170,8 @@ test("Deploy workflow follows successful main image publication, keeps manual ro
     source,
     /docker compose -f docker-compose\.prod\.yml --env-file \.env\.production pull api web admin/u
   );
-  assert.match(source, /npx prisma migrate deploy/u);
+  assert.match(source, /npm run db:migrate:deploy:production/u);
+  assert.doesNotMatch(source, /npx prisma/u);
   assert.match(
     source,
     /docker compose -f docker-compose\.prod\.yml --env-file \.env\.production up -d/u
