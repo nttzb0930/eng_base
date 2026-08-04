@@ -57,6 +57,28 @@ test("API package exposes a compiled production bootstrap command", () => {
   );
 });
 
+test("API production seed is a packaged alias of the reviewed bootstrap", () => {
+  const packageJson = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+  const buildConfig = readFileSync(
+    join(apiRoot, "tsconfig.data-bootstrap.json"),
+    "utf8"
+  );
+  const entrypoint = readFileSync(
+    join(apiRoot, "scripts/seed-production.ts"),
+    "utf8"
+  );
+
+  assert.equal(
+    packageJson.scripts?.["db:seed:production"],
+    "node dist-data/scripts/seed-production.js --data-dir ./data/vocabulary"
+  );
+  assert.match(buildConfig, /scripts\/seed-production\.ts/u);
+  assert.match(entrypoint, /runVocabularyBootstrapCommand/u);
+  assert.doesNotMatch(entrypoint, /PrismaClient|deleteMany|upsert/u);
+});
+
 test("API production package carries the pinned Prisma migration CLI", () => {
   const packageJson = JSON.parse(
     readFileSync(join(apiRoot, "package.json"), "utf8")

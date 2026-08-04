@@ -161,7 +161,9 @@ const unwrapPrismaClient = (moduleValue: unknown): PrismaClient => {
   return candidate as PrismaClient;
 };
 
-async function main() {
+export async function runVocabularyBootstrapCommand(
+  values = process.argv.slice(2)
+) {
   const clientModule = await import("../../support/script-prisma.js");
   const prisma = unwrapPrismaClient(clientModule);
   const databaseTarget = sanitizeDatabaseTarget(
@@ -182,10 +184,7 @@ async function main() {
   };
 
   try {
-    await runVocabularyBootstrap(
-      runtime,
-      parseBootstrapArguments(process.argv.slice(2))
-    );
+    await runVocabularyBootstrap(runtime, parseBootstrapArguments(values));
   } finally {
     await prisma.$disconnect();
   }
@@ -193,7 +192,7 @@ async function main() {
 
 const entrypoint = path.basename(process.argv[1] ?? "");
 if (/^bootstrap-vocabulary\.(?:ts|js)$/u.test(entrypoint)) {
-  void main().catch((error: unknown) => {
+  void runVocabularyBootstrapCommand().catch((error: unknown) => {
     console.error(error instanceof Error ? error.message : String(error));
     process.exitCode = 1;
   });
