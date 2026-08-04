@@ -14,5 +14,5 @@ export default async function LocalePage({ params }: LocalePageProps) {
 
   if (!isLocale(locale)) notFound();
 
-  redirect(withLocale("/learn", locale));
+  redirect(withLocale("/dashboard", locale));
 }
