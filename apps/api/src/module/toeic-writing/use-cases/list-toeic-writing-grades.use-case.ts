@@ -5,6 +5,7 @@ import type {
 
 import type { WritingAiRepository } from "../repository/writing-ai.repository";
 import { writingPartOneProviderResultSchema } from "../provider/writing-ai.schemas";
+import { writingPartTwoProviderResultSchema } from "../provider/writing-ai.schemas";
 
 export class ListToeicWritingGradesUseCase {
   constructor(private readonly repository: WritingAiRepository) {}
@@ -27,7 +28,9 @@ export class ListToeicWritingGradesUseCase {
       id: row.id,
       taskId: row.taskId,
       part: row.part,
-      score: writingPartOneProviderResultSchema.parse(row.result).score,
+      score: (row.part === 2
+        ? writingPartTwoProviderResultSchema.parse(row.result)
+        : writingPartOneProviderResultSchema.parse(row.result)).score,
       responseText: row.responseText,
       createdAt: row.createdAt.toISOString(),
     }));
