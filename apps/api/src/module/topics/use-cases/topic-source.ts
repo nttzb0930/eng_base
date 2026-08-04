@@ -1,7 +1,12 @@
 import { Injectable } from "@nestjs/common";
 import { Prisma } from "@prisma/client";
 import { PrismaService } from "../../../database/prisma/prisma.service";
-import { mapVocabularyItem, type VocabularyItem } from "../../vocabulary";
+import {
+  getVocabularyLearnerState,
+  mapVocabularyItem,
+  summarizeVocabularyLearnerStates,
+  type VocabularyItem,
+} from "../../vocabulary";
 
 export type PracticeCefrLevel = "A1" | "A2" | "B1" | "B2";
 export const PRACTICE_CEFR_LEVELS: PracticeCefrLevel[] = [
@@ -15,7 +20,11 @@ export type RawVocabularyTopic = {
   id: number;
   slug: string;
   title: string;
+  title_vi: string | null;
   description: string;
+  description_vi: string | null;
+  group_name: string | null;
+  group_name_vi: string | null;
   order: number;
   created_at: Date;
 };
@@ -60,7 +69,7 @@ export class TopicSource {
           where: userId ? { user_id: userId } : { user_id: "__none__" },
         },
         vocabulary_examples: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
         },
       },
     });
@@ -68,21 +77,48 @@ export class TopicSource {
 
   protected async getRawTopics() {
     return this.prisma.$queryRaw<RawVocabularyTopic[]>`
-      SELECT id, slug, title, description, "order", created_at
+      SELECT id, slug, title, title_vi, description, description_vi,
+             group_name, group_name_vi, "order", created_at
       FROM vocabulary_topics
       ORDER BY "order" ASC
     `;
   }
 
   protected async getRawTopicBySlug(slug: string) {
+    const cleanSlug = slug.toLowerCase().trim();
     const topics = await this.prisma.$queryRaw<RawVocabularyTopic[]>`
-      SELECT id, slug, title, description, "order", created_at
+      SELECT id, slug, title, title_vi, description, description_vi,
+             group_name, group_name_vi, "order", created_at
       FROM vocabulary_topics
-      WHERE slug = ${slug}
+      WHERE LOWER(slug) = ${cleanSlug}
+         OR LOWER(REPLACE(title, ' ', '-')) = ${cleanSlug}
+         OR LOWER(REPLACE(title_vi, ' ', '-')) = ${cleanSlug}
       LIMIT 1
     `;
 
-    return topics[0] ?? null;
+    if (topics[0]) return topics[0];
+
+    const allTopics = await this.getRawTopics();
+    const normalizedQuery = cleanSlug.replace(/[^a-z0-9]/g, "");
+
+    const match = allTopics.find((t) => {
+      const tSlugNorm = t.slug.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const tTitleNorm = t.title.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const tTitleViNorm = (t.title_vi ?? "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+
+      return (
+        tSlugNorm === normalizedQuery ||
+        tTitleNorm.includes(normalizedQuery) ||
+        normalizedQuery.includes(tTitleNorm) ||
+        (tTitleViNorm &&
+          (tTitleViNorm.includes(normalizedQuery) ||
+            normalizedQuery.includes(tTitleViNorm)))
+      );
+    });
+
+    return match ?? allTopics[0] ?? null;
   }
 
   protected async getRawTopicVocabularyRelations(topicIds: number[]) {
@@ -95,18 +131,14 @@ export class TopicSource {
     `;
   }
 
-  protected getTopicStats(items: VocabularyItem[]) {
-    const learned = items.filter(
-      (item) => item.userVocabularyProgress[0]?.reviewCount > 0
-    ).length;
-    const mastered = items.filter(
-      (item) => item.userVocabularyProgress[0]?.masteryLevel === "mastered"
-    ).length;
+  protected getTopicStats(items: VocabularyItem[], now: Date) {
+    return summarizeVocabularyLearnerStates(items, now);
+  }
 
+  protected withLearnerState(item: VocabularyItem, now: Date) {
     return {
-      total: items.length,
-      learned,
-      mastered,
+      ...item,
+      learnerState: getVocabularyLearnerState(item, now),
     };
   }
 

@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Sprout, Zap, Rocket, Trophy, Check, BookOpen, Clock } from "lucide-react";
+import { Sprout, Zap, Rocket, Trophy, Check, BookOpen, Clock, type LucideIcon } from "lucide-react";
+import { LEARNING_INTENSITY_IDS, type LearningIntensityId } from "@repo/shared";
 import { cn } from "@/app/utils/cn";
 
 type IntensityOption = {
-  id: string;
   nameKey: string;
   descKey: string;
   wordsVal: number;
@@ -13,21 +13,26 @@ type IntensityOption = {
   isRecommended?: boolean;
 };
 
-const INTENSITIES: IntensityOption[] = [
-  { id: "relaxed", nameKey: "step4.relaxedTitle", descKey: "step4.relaxedDesc", wordsVal: 5, timeVal: 10 },
-  { id: "standard", nameKey: "step4.standardTitle", descKey: "step4.standardDesc", wordsVal: 15, timeVal: 25, isRecommended: true },
-  { id: "accelerated", nameKey: "step4.acceleratedTitle", descKey: "step4.acceleratedDesc", wordsVal: 30, timeVal: 50 },
-  { id: "intensive", nameKey: "step4.intensiveTitle", descKey: "step4.intensiveDesc", wordsVal: 50, timeVal: 80 },
-];
+const INTENSITY_METADATA: Record<LearningIntensityId, IntensityOption> = {
+  relaxed: { nameKey: "step4.relaxedTitle", descKey: "step4.relaxedDesc", wordsVal: 5, timeVal: 10 },
+  standard: { nameKey: "step4.standardTitle", descKey: "step4.standardDesc", wordsVal: 15, timeVal: 25, isRecommended: true },
+  accelerated: { nameKey: "step4.acceleratedTitle", descKey: "step4.acceleratedDesc", wordsVal: 30, timeVal: 50 },
+  intensive: { nameKey: "step4.intensiveTitle", descKey: "step4.intensiveDesc", wordsVal: 50, timeVal: 80 },
+};
 
-const ICON_MAP = {
+const INTENSITIES = LEARNING_INTENSITY_IDS.map((id) => ({
+  id,
+  ...INTENSITY_METADATA[id],
+}));
+
+const ICON_MAP: Record<LearningIntensityId, LucideIcon> = {
   relaxed: Sprout,
   standard: Zap,
   accelerated: Rocket,
   intensive: Trophy,
 };
 
-const ICON_COLOR_MAP = {
+const ICON_COLOR_MAP: Record<LearningIntensityId, string> = {
   relaxed: "text-emerald-500 fill-emerald-50/50",
   standard: "text-amber-500 fill-amber-50/50",
   accelerated: "text-rose-500 fill-rose-50/50",
@@ -35,8 +40,8 @@ const ICON_COLOR_MAP = {
 };
 
 type IntensityStepProps = {
-  selectedIntensity: string;
-  onSelectIntensity: (id: string) => void;
+  selectedIntensity: LearningIntensityId;
+  onSelectIntensity: (id: LearningIntensityId) => void;
 };
 
 export default function IntensityStep({ selectedIntensity, onSelectIntensity }: IntensityStepProps) {
@@ -47,8 +52,8 @@ export default function IntensityStep({ selectedIntensity, onSelectIntensity }: 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 w-full">
         {INTENSITIES.map((intensity) => {
           const isSelected = selectedIntensity === intensity.id;
-          const IconComponent = ICON_MAP[intensity.id as keyof typeof ICON_MAP];
-          const iconColorClass = ICON_COLOR_MAP[intensity.id as keyof typeof ICON_COLOR_MAP];
+          const IconComponent = ICON_MAP[intensity.id];
+          const iconColorClass = ICON_COLOR_MAP[intensity.id];
 
           return (
             <div

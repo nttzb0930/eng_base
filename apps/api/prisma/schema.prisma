@@ -8,21 +8,48 @@ datasource db {
 
 /// Người dùng hệ thống (admin, staff)
 model users {
-  id            String    @id @default(uuid())
+  id                              String                            @id @default(uuid())
   /// Email đăng nhập, duy nhất trong hệ thống
-  email         String    @unique
+  email                           String                            @unique
   /// Mật khẩu đã được hash (PBKDF2)
-  password      String
+  password                        String
   /// Tên đăng nhập duy nhất
-  username      String    @unique
+  username                        String                            @unique
   /// Họ và tên đầy đủ
-  full_name     String
+  full_name                       String
   /// Vai trò: ADMIN, USER
-  role          user_role @default(USER)
+  role                            user_role                         @default(USER)
+  /// Thời điểm email được xác thực; null với tài khoản mới chưa xác thực
+  email_verified_at               DateTime?
+  /// Mã xác thực đã hash, chỉ tồn tại trong thời gian chờ xác thực
+  verification_code_hash          String?
+  verification_code_expires_at    DateTime?
+  verification_attempts           Int                               @default(0)
+  verification_sent_at            DateTime?
+  password_reset_code_hash        String?
+  password_reset_code_expires_at  DateTime?
+  password_reset_attempts         Int                               @default(0)
+  password_reset_sent_at          DateTime?
   /// JWT refresh token (lưu để invalidate khi logout)
-  refresh_token String?
-  created_at    DateTime  @default(now()) @db.Timestamp(6)
-  updated_at    DateTime  @default(now()) @updatedAt @db.Timestamp(6)
+  refresh_token                   String?
+  created_at                      DateTime                          @default(now()) @db.Timestamp(6)
+  updated_at                      DateTime                          @default(now()) @updatedAt @db.Timestamp(6)
+  reading_attempts                reading_attempts[]
+  toeic_reading_attempts          toeic_reading_attempts[]
+  toeic_listening_attempts        toeic_listening_attempts[]
+  toeic_listening_drafts          toeic_listening_drafts[]
+  toeic_reading_drafts            toeic_reading_drafts[]
+  toeic_reading_practice_sessions toeic_reading_practice_sessions[]
+  grammar_question_attempts       grammar_question_attempts[]
+  grammar_question_progress       grammar_question_progress[]
+  toeic_dictation_progress        toeic_dictation_progress[]
+  toeic_dictation_attempts        toeic_dictation_attempts[]
+  toeic_writing_drafts            toeic_writing_drafts[]
+  toeic_writing_submissions       toeic_writing_submissions[]
+  toeic_writing_ai_grades         toeic_writing_ai_grades[]
+  toeic_writing_assistance_events toeic_writing_assistance_events[]
+  ai_usage_daily                  ai_usage_daily[]
+  ai_usage_reservations           ai_usage_reservations[]
 
   @@index([role])
   @@index([email])
@@ -64,12 +91,434 @@ model challenges {
 }
 
 model courses {
-  id            Int             @id @default(autoincrement())
-  code          String          @unique
+  id                 Int                  @id @default(autoincrement())
+  code               String               @unique
+  title              String
+  image_src          String
+  units              units[]
+  user_progress      user_progress[]
+  toeic_test_sets    toeic_test_sets[]
+  toeic_writing_sets toeic_writing_sets[]
+}
+
+model toeic_test_sets {
+  id            Int           @id @default(autoincrement())
+  course_id     Int
+  source        String
+  source_set_id String
   title         String
-  image_src     String
-  units         units[]
-  user_progress user_progress[]
+  created_at    DateTime      @default(now()) @db.Timestamp(6)
+  updated_at    DateTime      @default(now()) @updatedAt @db.Timestamp(6)
+  courses       courses       @relation(fields: [course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_test_sets_course_id_fkey")
+  toeic_tests   toeic_tests[]
+
+  @@unique([course_id, source, source_set_id], map: "toeic_test_sets_course_source_set_key")
+}
+
+model toeic_tests {
+  id                              Int                               @id @default(autoincrement())
+  test_set_id                     Int
+  source                          String
+  source_test_id                  String
+  source_version                  String                            @db.VarChar(64)
+  listening_source_version        String?                           @db.VarChar(64)
+  title                           String
+  status                          toeic_publication_status          @default(PUBLISHED)
+  published_at                    DateTime?                         @db.Timestamp(6)
+  listening_status                toeic_publication_status          @default(DRAFT)
+  listening_published_at          DateTime?                         @db.Timestamp(6)
+  created_at                      DateTime                          @default(now()) @db.Timestamp(6)
+  updated_at                      DateTime                          @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_test_sets                 toeic_test_sets                   @relation(fields: [test_set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_tests_test_set_id_fkey")
+  toeic_stimuli                   toeic_stimuli[]
+  toeic_questions                 toeic_questions[]
+  toeic_media_assets              toeic_media_assets[]
+  toeic_reading_attempts          toeic_reading_attempts[]
+  toeic_listening_attempts        toeic_listening_attempts[]
+  toeic_listening_drafts          toeic_listening_drafts[]
+  toeic_reading_drafts            toeic_reading_drafts[]
+  toeic_reading_practice_sessions toeic_reading_practice_sessions[]
+
+  @@unique([source, source_test_id], map: "toeic_tests_source_test_id_key")
+  @@index([status, published_at], map: "toeic_tests_status_published_idx")
+  @@index([listening_status, listening_published_at], map: "toeic_tests_listening_status_published_idx")
+}
+
+model toeic_stimuli {
+  id                     Int                    @id @default(autoincrement())
+  test_id                Int
+  source_stimulus_id     String
+  part                   Int
+  kind                   String
+  body                   String?
+  translation            String?
+  transcript             String?
+  transcript_translation String?
+  toeic_tests            toeic_tests            @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_stimuli_test_id_fkey")
+  toeic_questions        toeic_questions[]
+  toeic_media_bindings   toeic_media_bindings[]
+
+  @@unique([test_id, source_stimulus_id], map: "toeic_stimuli_test_source_id_key")
+  @@index([test_id, part], map: "toeic_stimuli_test_part_idx")
+}
+
+model toeic_questions {
+  id                              Int                              @id @default(autoincrement())
+  test_id                         Int
+  stimulus_id                     Int?
+  source_question_id              String
+  number                          Int
+  part                            Int
+  prompt                          String
+  translation                     String?
+  explanation                     String?
+  transcript                      String?
+  transcript_translation          String?
+  difficulty_level                Int?
+  error_rate                      Float?
+  total_attempts                  Int?
+  toeic_tests                     toeic_tests                      @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_questions_test_id_fkey")
+  toeic_stimuli                   toeic_stimuli?                   @relation(fields: [stimulus_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "toeic_questions_stimulus_id_fkey")
+  toeic_question_options          toeic_question_options[]
+  toeic_media_bindings            toeic_media_bindings[]
+  toeic_question_vocabulary_cache toeic_question_vocabulary_cache?
+
+  @@unique([test_id, source_question_id], map: "toeic_questions_test_source_id_key")
+  @@unique([test_id, number], map: "toeic_questions_test_number_key")
+  @@index([test_id, part], map: "toeic_questions_test_part_idx")
+  @@index([stimulus_id], map: "toeic_questions_stimulus_idx")
+}
+
+model toeic_question_vocabulary_cache {
+  question_id             Int             @id
+  vocabulary              Json
+  source_inventory_sha256 String          @db.VarChar(64)
+  created_at              DateTime        @default(now()) @db.Timestamp(6)
+  updated_at              DateTime        @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_questions         toeic_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_question_vocabulary_cache_question_id_fkey")
+
+  @@index([source_inventory_sha256], map: "toeic_question_vocabulary_cache_inventory_idx")
+}
+
+model toeic_question_options {
+  id              Int             @id @default(autoincrement())
+  question_id     Int
+  label           String          @db.VarChar(1)
+  text            String
+  correct         Boolean         @default(false)
+  toeic_questions toeic_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_question_options_question_id_fkey")
+
+  @@unique([question_id, label], map: "toeic_question_options_question_label_key")
+}
+
+model toeic_media_assets {
+  id                   Int                    @id @default(autoincrement())
+  test_id              Int
+  source_media_id      String
+  source_url           String
+  storage_path         String?
+  sha256               String?                @db.VarChar(64)
+  bytes                Int?
+  content_type         String?
+  status               String
+  toeic_tests          toeic_tests            @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_media_assets_test_id_fkey")
+  toeic_media_bindings toeic_media_bindings[]
+
+  @@unique([test_id, source_media_id], map: "toeic_media_assets_test_source_id_key")
+}
+
+model toeic_media_bindings {
+  id                 Int                @id @default(autoincrement())
+  media_asset_id     Int
+  question_id        Int?
+  stimulus_id        Int?
+  role               String
+  order              Int                @default(0)
+  toeic_media_assets toeic_media_assets @relation(fields: [media_asset_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_media_bindings_media_asset_id_fkey")
+  toeic_questions    toeic_questions?   @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_media_bindings_question_id_fkey")
+  toeic_stimuli      toeic_stimuli?     @relation(fields: [stimulus_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_media_bindings_stimulus_id_fkey")
+
+  @@unique([question_id, media_asset_id, role], map: "toeic_media_bindings_question_asset_role_key")
+  @@unique([stimulus_id, media_asset_id, role], map: "toeic_media_bindings_stimulus_asset_role_key")
+  @@index([question_id, order], map: "toeic_media_bindings_question_idx")
+  @@index([stimulus_id, order], map: "toeic_media_bindings_stimulus_idx")
+  @@index([media_asset_id], map: "toeic_media_bindings_asset_idx")
+}
+
+model toeic_reading_attempts {
+  id                            Int                             @id @default(autoincrement())
+  user_id                       String
+  test_id                       Int
+  practice_part                 Int?
+  submission_key                String                          @db.Uuid
+  submission_fingerprint        String
+  source_version_snapshot       String                          @db.VarChar(64)
+  test_title_snapshot           String
+  correct_count                 Int
+  total_count                   Int
+  accuracy                      Int
+  submitted_at                  DateTime                        @default(now()) @db.Timestamp(6)
+  users                         users                           @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_reading_attempts_user_id_fkey")
+  toeic_tests                   toeic_tests                     @relation(fields: [test_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_reading_attempts_test_id_fkey")
+  toeic_reading_attempt_answers toeic_reading_attempt_answers[]
+
+  @@unique([user_id, submission_key], map: "toeic_reading_attempts_user_submission_key_key")
+  @@index([user_id, submitted_at], map: "toeic_reading_attempts_user_submitted_idx")
+  @@index([user_id, practice_part, submitted_at], map: "toeic_reading_attempts_user_practice_part_submitted_idx")
+  @@index([test_id], map: "toeic_reading_attempts_test_idx")
+}
+
+model toeic_reading_attempt_answers {
+  id                             Int                    @id @default(autoincrement())
+  attempt_id                     Int
+  question_id_snapshot           Int
+  question_number_snapshot       Int
+  part_snapshot                  Int
+  selected_option_id_snapshot    Int
+  question_prompt_snapshot       String
+  selected_option_label_snapshot String                 @db.VarChar(1)
+  selected_option_text_snapshot  String
+  correct_option_label_snapshot  String                 @db.VarChar(1)
+  correct_option_text_snapshot   String
+  explanation_snapshot           String?
+  correct                        Boolean
+  toeic_reading_attempts         toeic_reading_attempts @relation(fields: [attempt_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_reading_attempt_answers_attempt_id_fkey")
+
+  @@unique([attempt_id, question_id_snapshot], map: "toeic_reading_attempt_answers_attempt_question_key")
+  @@index([attempt_id, part_snapshot], map: "toeic_reading_attempt_answers_attempt_part_idx")
+}
+
+model toeic_listening_attempts {
+  id                                Int                               @id @default(autoincrement())
+  user_id                           String
+  test_id                           Int
+  practice_part                     Int?
+  submission_key                    String                            @db.Uuid
+  submission_fingerprint            String
+  listening_source_version_snapshot String                            @db.VarChar(64)
+  test_title_snapshot               String
+  correct_count                     Int
+  total_count                       Int
+  accuracy                          Int
+  submitted_at                      DateTime                          @default(now()) @db.Timestamp(6)
+  users                             users                             @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_listening_attempts_user_id_fkey")
+  toeic_tests                       toeic_tests                       @relation(fields: [test_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_listening_attempts_test_id_fkey")
+  toeic_listening_attempt_answers   toeic_listening_attempt_answers[]
+
+  @@unique([user_id, submission_key], map: "toeic_listening_attempts_user_submission_key_key")
+  @@index([user_id, submitted_at], map: "toeic_listening_attempts_user_submitted_idx")
+  @@index([user_id, practice_part, submitted_at], map: "toeic_listening_attempts_user_practice_part_submitted_idx")
+  @@index([test_id], map: "toeic_listening_attempts_test_idx")
+}
+
+model toeic_listening_attempt_answers {
+  id                              Int                      @id @default(autoincrement())
+  attempt_id                      Int
+  question_id_snapshot            Int
+  question_number_snapshot        Int
+  part_snapshot                   Int
+  selected_option_id_snapshot     Int
+  question_prompt_snapshot        String
+  transcript_snapshot             String?
+  transcript_translation_snapshot String?
+  question_media_snapshot         Json
+  stimulus_snapshot               Json?
+  selected_option_label_snapshot  String                   @db.VarChar(1)
+  selected_option_text_snapshot   String
+  correct_option_label_snapshot   String                   @db.VarChar(1)
+  correct_option_text_snapshot    String
+  explanation_snapshot            String?
+  correct                         Boolean
+  toeic_listening_attempts        toeic_listening_attempts @relation(fields: [attempt_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_listening_attempt_answers_attempt_id_fkey")
+
+  @@unique([attempt_id, question_id_snapshot], map: "toeic_listening_attempt_answers_attempt_question_key")
+  @@index([attempt_id, part_snapshot], map: "toeic_listening_attempt_answers_attempt_part_idx")
+}
+
+model toeic_listening_drafts {
+  id                       Int         @id @default(autoincrement())
+  user_id                  String
+  test_id                  Int
+  scope                    String      @db.VarChar(6)
+  listening_source_version String      @db.VarChar(64)
+  active_question_id       Int
+  answers                  Json
+  review_question_ids      Int[]
+  completed_media_ids      Int[]
+  active_media_id          Int?
+  playback_position_ms     Int
+  created_at               DateTime    @default(now()) @db.Timestamp(6)
+  updated_at               DateTime    @default(now()) @updatedAt @db.Timestamp(6)
+  expires_at               DateTime    @db.Timestamp(6)
+  users                    users       @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_listening_drafts_user_id_fkey")
+  toeic_tests              toeic_tests @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_listening_drafts_test_id_fkey")
+
+  @@unique([user_id, test_id, scope], map: "toeic_listening_drafts_user_test_scope_key")
+  @@index([user_id, updated_at], map: "toeic_listening_drafts_user_updated_idx")
+  @@index([expires_at], map: "toeic_listening_drafts_expires_idx")
+  @@index([test_id], map: "toeic_listening_drafts_test_idx")
+}
+
+model toeic_reading_drafts {
+  id                  Int         @id @default(autoincrement())
+  user_id             String
+  test_id             Int
+  scope               String      @db.VarChar(6)
+  source_version      String      @db.VarChar(64)
+  active_question_id  Int
+  answers             Json
+  review_question_ids Int[]
+  created_at          DateTime    @default(now()) @db.Timestamp(6)
+  updated_at          DateTime    @default(now()) @updatedAt @db.Timestamp(6)
+  expires_at          DateTime    @db.Timestamp(6)
+  users               users       @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_reading_drafts_user_id_fkey")
+  toeic_tests         toeic_tests @relation(fields: [test_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_reading_drafts_test_id_fkey")
+
+  @@unique([user_id, test_id, scope], map: "toeic_reading_drafts_user_test_scope_key")
+  @@index([user_id, updated_at], map: "toeic_reading_drafts_user_updated_idx")
+  @@index([expires_at], map: "toeic_reading_drafts_expires_idx")
+  @@index([test_id], map: "toeic_reading_drafts_test_idx")
+}
+
+model toeic_reading_practice_sessions {
+  id                             Int                              @id @default(autoincrement())
+  user_id                        String
+  test_id                        Int
+  part                           Int
+  source_version                 String                           @db.VarChar(64)
+  status                         String                           @db.VarChar(12)
+  active_key                     String?                          @unique(map: "toeic_reading_practice_sessions_active_key_key")
+  active_question_id             Int
+  review_question_ids            Int[]
+  correct_count                  Int                              @default(0)
+  incorrect_count                Int                              @default(0)
+  created_at                     DateTime                         @default(now()) @db.Timestamp(6)
+  updated_at                     DateTime                         @default(now()) @updatedAt @db.Timestamp(6)
+  completed_at                   DateTime?                        @db.Timestamp(6)
+  users                          users                            @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_reading_practice_sessions_user_id_fkey")
+  toeic_tests                    toeic_tests                      @relation(fields: [test_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_reading_practice_sessions_test_id_fkey")
+  toeic_reading_practice_answers toeic_reading_practice_answers[]
+
+  @@index([user_id, updated_at], map: "toeic_reading_practice_sessions_user_updated_idx")
+  @@index([test_id, part], map: "toeic_reading_practice_sessions_test_part_idx")
+}
+
+model toeic_reading_practice_answers {
+  id                              Int                             @id @default(autoincrement())
+  session_id                      Int
+  request_key                     String                          @db.Uuid
+  question_id_snapshot            Int
+  question_number_snapshot        Int
+  selected_option_id_snapshot     Int
+  selected_option_label_snapshot  String                          @db.VarChar(1)
+  selected_option_text_snapshot   String
+  correct_option_id_snapshot      Int
+  correct_option_label_snapshot   String                          @db.VarChar(1)
+  correct_option_text_snapshot    String
+  explanation_snapshot            String?
+  question_translation_snapshot   String?
+  correct                         Boolean
+  answered_at                     DateTime                        @default(now()) @db.Timestamp(6)
+  toeic_reading_practice_sessions toeic_reading_practice_sessions @relation(fields: [session_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_reading_practice_answers_session_id_fkey")
+
+  @@unique([session_id, question_id_snapshot], map: "toeic_reading_practice_answers_session_question_key")
+  @@unique([session_id, request_key], map: "toeic_reading_practice_answers_session_request_key_key")
+  @@index([session_id, answered_at], map: "toeic_reading_practice_answers_session_answered_idx")
+}
+
+model toeic_dictation_sets {
+  id                    Int                                @id @default(autoincrement())
+  source                String
+  source_set_id         String
+  source_version        String                             @db.VarChar(64)
+  collection_name       String
+  display_name          String
+  test_number           Int
+  part                  Int
+  status                toeic_dictation_publication_status @default(DRAFT)
+  published_at          DateTime?                          @db.Timestamp(6)
+  item_count            Int                                @default(0)
+  created_at            DateTime                           @default(now()) @db.Timestamp(6)
+  updated_at            DateTime                           @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_dictation_items toeic_dictation_items[]
+
+  @@unique([source, source_set_id], map: "toeic_dictation_sets_source_set_key")
+  @@index([collection_name, test_number, part, status], map: "toeic_dictation_sets_catalog_idx")
+}
+
+model toeic_dictation_items {
+  id                       Int                        @id @default(autoincrement())
+  set_id                   Int
+  source_item_id           String
+  source_version           String                     @db.VarChar(64)
+  order_index              Int
+  source_group             String?
+  transcript               String
+  translation_vi           String?
+  audio_asset_id           String
+  audio_storage_path       String
+  audio_sha256             String                     @db.VarChar(64)
+  audio_bytes              Int
+  audio_content_type       String
+  audio_duration_ms        Int?
+  validation_status        String                     @default("VALID")
+  is_active                Boolean                    @default(true)
+  created_at               DateTime                   @default(now()) @db.Timestamp(6)
+  updated_at               DateTime                   @default(now()) @updatedAt @db.Timestamp(6)
+  toeic_dictation_sets     toeic_dictation_sets       @relation(fields: [set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_items_set_id_fkey")
+  toeic_dictation_progress toeic_dictation_progress[]
+  toeic_dictation_attempts toeic_dictation_attempts[]
+
+  @@unique([set_id, source_item_id], map: "toeic_dictation_items_set_source_item_key")
+  @@unique([set_id, order_index], map: "toeic_dictation_items_set_order_key")
+  @@index([set_id, is_active, order_index], map: "toeic_dictation_items_set_active_order_idx")
+}
+
+model toeic_dictation_progress {
+  id                    Int                   @id @default(autoincrement())
+  user_id               String
+  item_id               Int
+  latest_accuracy       Int                   @default(0)
+  words_correct         Int                   @default(0)
+  total_words           Int                   @default(0)
+  attempts_count        Int                   @default(0)
+  mastered              Boolean               @default(false)
+  last_typed_text       String?
+  last_attempted_at     DateTime?             @db.Timestamp(6)
+  completed_at          DateTime?             @db.Timestamp(6)
+  created_at            DateTime              @default(now()) @db.Timestamp(6)
+  updated_at            DateTime              @default(now()) @updatedAt @db.Timestamp(6)
+  users                 users                 @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_progress_user_id_fkey")
+  toeic_dictation_items toeic_dictation_items @relation(fields: [item_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_progress_item_id_fkey")
+
+  @@unique([user_id, item_id], map: "toeic_dictation_progress_user_item_key")
+  @@index([user_id, updated_at], map: "toeic_dictation_progress_user_updated_idx")
+  @@index([item_id], map: "toeic_dictation_progress_item_idx")
+}
+
+model toeic_dictation_attempts {
+  id                      Int                           @id @default(autoincrement())
+  user_id                 String
+  item_id                 Int
+  source_version_snapshot String                        @db.VarChar(64)
+  submission_key          String                        @db.Uuid
+  typed_text              String
+  normalized_text         String
+  words_correct           Int
+  total_words             Int
+  accuracy                Int
+  word_results            Json
+  practice_mode           toeic_dictation_practice_mode @default(DICTATION)
+  hide_percent            Int?
+  submitted_at            DateTime                      @default(now()) @db.Timestamp(6)
+  users                   users                         @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_dictation_attempts_user_id_fkey")
+  toeic_dictation_items   toeic_dictation_items         @relation(fields: [item_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_dictation_attempts_item_id_fkey")
+
+  @@unique([user_id, submission_key], map: "toeic_dictation_attempts_user_submission_key")
+  @@index([user_id, submitted_at], map: "toeic_dictation_attempts_user_submitted_idx")
+  @@index([user_id, item_id, submitted_at], map: "toeic_dictation_attempts_user_item_submitted_idx")
+  @@index([item_id], map: "toeic_dictation_attempts_item_idx")
+  @@index([user_id, practice_mode, submitted_at], map: "toeic_dictation_attempts_user_mode_submitted_idx")
 }
 
 model lessons {
@@ -87,6 +536,7 @@ model units {
   description String
   course_id   Int
   order       Int
+  cefr_level  String?   @db.VarChar(2)
   lessons     lessons[]
   courses     courses   @relation(fields: [course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "units_course_id_courses_id_fk")
 }
@@ -225,10 +675,15 @@ model vocabulary_topics {
   id                     Int                      @id @default(autoincrement())
   slug                   String                   @unique
   title                  String
+  title_vi               String?
   description            String
+  description_vi         String?
+  group_name             String?
+  group_name_vi          String?
   order                  Int
   created_at             DateTime                 @default(now()) @db.Timestamp(6)
   vocabulary_item_topics vocabulary_item_topics[]
+  reading_passages       reading_passages[]
 }
 
 model vocabulary_item_topics {
@@ -240,6 +695,486 @@ model vocabulary_item_topics {
   vocabulary_topics  vocabulary_topics @relation(fields: [topic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "vocab_item_topics_topic_id_fk")
 
   @@unique([vocabulary_item_id, topic_id], map: "vocab_item_topics_item_topic_idx")
+}
+
+model reading_passages {
+  id                        Int                         @id @default(autoincrement())
+  slug                      String                      @unique
+  title                     String
+  body                      String
+  cefr_level                String                      @db.VarChar(2)
+  topic_id                  Int?
+  estimated_minutes         Int
+  status                    reading_publication_status  @default(DRAFT)
+  published_at              DateTime?                   @db.Timestamp(6)
+  created_at                DateTime                    @default(now()) @db.Timestamp(6)
+  updated_at                DateTime                    @default(now()) @updatedAt @db.Timestamp(6)
+  vocabulary_topics         vocabulary_topics?          @relation(fields: [topic_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "reading_passages_topic_id_fkey")
+  reading_questions         reading_questions[]
+  reading_attempts          reading_attempts[]
+  reading_source_candidates reading_source_candidates[]
+
+  @@index([cefr_level, status], map: "reading_passages_level_status_idx")
+}
+
+model reading_source_candidates {
+  id                        Int                             @id @default(autoincrement())
+  source                    String
+  source_id                 String
+  source_version            String
+  content_sha256            String                          @db.VarChar(64)
+  access_classification     String
+  license_name              String
+  license_reference         String
+  license_intended_use      String
+  approved_inventory_sha256 String                          @db.VarChar(64)
+  source_level              String                          @db.VarChar(2)
+  source_title              String
+  source_topic              String?
+  source_html               String
+  plain_text_draft          String
+  canonical_json            Json
+  status                    reading_source_candidate_status @default(PENDING)
+  rejection_reason          String?
+  converted_passage_id      Int?
+  created_at                DateTime                        @default(now()) @db.Timestamp(6)
+  updated_at                DateTime                        @default(now()) @updatedAt @db.Timestamp(6)
+  reading_passages          reading_passages?               @relation(fields: [converted_passage_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "reading_source_candidates_converted_passage_id_fkey")
+
+  @@unique([source, source_id, source_version], map: "reading_source_candidates_source_identity_key")
+  @@index([status, created_at], map: "reading_source_candidates_status_created_idx")
+  @@index([converted_passage_id], map: "reading_source_candidates_converted_passage_idx")
+}
+
+model reading_questions {
+  id               Int               @id @default(autoincrement())
+  passage_id       Int
+  prompt           String
+  order            Int
+  reading_passages reading_passages  @relation(fields: [passage_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_questions_passage_id_fkey")
+  reading_options  reading_options[]
+
+  @@unique([passage_id, order], map: "reading_questions_passage_order_key")
+}
+
+model reading_options {
+  id                Int               @id @default(autoincrement())
+  question_id       Int
+  text              String
+  order             Int
+  correct           Boolean           @default(false)
+  reading_questions reading_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_options_question_id_fkey")
+
+  @@unique([question_id, order], map: "reading_options_question_order_key")
+}
+
+model reading_attempts {
+  id                      Int                       @id @default(autoincrement())
+  user_id                 String
+  passage_id              Int
+  submission_key          String                    @db.Uuid
+  submission_fingerprint  String
+  passage_title_snapshot  String
+  correct_count           Int
+  total_count             Int
+  accuracy                Int
+  submitted_at            DateTime                  @default(now()) @db.Timestamp(6)
+  users                   users                     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_attempts_user_id_fkey")
+  reading_passages        reading_passages          @relation(fields: [passage_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "reading_attempts_passage_id_fkey")
+  reading_attempt_answers reading_attempt_answers[]
+
+  @@unique([user_id, submission_key], map: "reading_attempts_user_submission_key_key")
+  @@index([user_id, submitted_at], map: "reading_attempts_user_submitted_idx")
+}
+
+model reading_attempt_answers {
+  id                            Int              @id @default(autoincrement())
+  attempt_id                    Int
+  question_id_snapshot          Int
+  selected_option_id_snapshot   Int
+  question_prompt_snapshot      String
+  selected_option_text_snapshot String
+  correct_option_text_snapshot  String
+  correct                       Boolean
+  reading_attempts              reading_attempts @relation(fields: [attempt_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reading_attempt_answers_attempt_id_fkey")
+
+  @@unique([attempt_id, question_id_snapshot], map: "reading_attempt_answers_attempt_question_key")
+}
+
+model grammar_content_snapshots {
+  id                            Int                             @id @default(autoincrement())
+  source                        String
+  snapshot_version              String
+  inventory_sha256              String                          @db.VarChar(64)
+  content_sha256                String                          @db.VarChar(64)
+  active                        Boolean                         @default(false)
+  imported_at                   DateTime                        @default(now()) @db.Timestamp(6)
+  grammar_topics                grammar_topics[]
+  grammar_subtopics             grammar_subtopics[]
+  grammar_lessons               grammar_lessons[]
+  grammar_questions             grammar_questions[]
+  grammar_sets                  grammar_sets[]
+  grammar_question_difficulties grammar_question_difficulties[]
+
+  @@unique([source, inventory_sha256], map: "grammar_snapshots_source_inventory_key")
+  @@index([source, active], map: "grammar_snapshots_source_active_idx")
+}
+
+model grammar_topics {
+  id                        Int                       @id @default(autoincrement())
+  snapshot_id               Int
+  source                    String
+  source_topic_id           String
+  title_en                  String?
+  title_vi                  String
+  description_vi            String?
+  icon                      String?
+  order_index               Int
+  grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_topics_snapshot_id_fkey")
+  grammar_subtopics         grammar_subtopics[]
+  grammar_questions         grammar_questions[]
+
+  @@unique([source, source_topic_id], map: "grammar_topics_source_topic_key")
+  @@index([snapshot_id, order_index], map: "grammar_topics_snapshot_order_idx")
+}
+
+model grammar_lessons {
+  id                        Int                       @id @default(autoincrement())
+  snapshot_id               Int
+  subtopic_id               Int
+  source                    String
+  source_lesson_id          String
+  title_en                  String?
+  title_vi                  String
+  content_type              String
+  theory_content_en         String?
+  theory_content_vi         String?
+  lesson_content_json       Json?
+  html_content              String?
+  order_index               Int
+  grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_lessons_snapshot_id_fkey")
+  grammar_subtopics         grammar_subtopics         @relation(fields: [subtopic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_lessons_subtopic_id_fkey")
+
+  @@unique([source, source_lesson_id], map: "grammar_lessons_source_lesson_key")
+  @@index([subtopic_id, order_index], map: "grammar_lessons_subtopic_order_idx")
+}
+
+model grammar_subtopics {
+  id                        Int                       @id @default(autoincrement())
+  snapshot_id               Int
+  topic_id                  Int
+  source                    String
+  source_subtopic_id        String
+  title_en                  String?
+  title_vi                  String
+  description_vi            String?
+  access_level              String?
+  order_index               Int
+  grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_subtopics_snapshot_id_fkey")
+  grammar_topics            grammar_topics            @relation(fields: [topic_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_subtopics_topic_id_fkey")
+  grammar_lessons           grammar_lessons[]
+  grammar_questions         grammar_questions[]
+
+  @@unique([source, source_subtopic_id], map: "grammar_subtopics_source_subtopic_key")
+  @@index([topic_id, order_index], map: "grammar_subtopics_topic_order_idx")
+}
+
+model grammar_questions {
+  id                            Int                            @id @default(autoincrement())
+  snapshot_id                   Int
+  topic_id                      Int?
+  subtopic_id                   Int?
+  source                        String
+  source_question_id            String
+  question_number               Int?
+  question_text                 String
+  explanation_vi                String?
+  explanation_en                String?
+  question_translation          String?
+  answer_translation            String?
+  vocabulary                    Json
+  prefer_ai_explanation         Boolean                        @default(false)
+  grammar_content_snapshots     grammar_content_snapshots      @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_questions_snapshot_id_fkey")
+  grammar_topics                grammar_topics?                @relation(fields: [topic_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "grammar_questions_topic_id_fkey")
+  grammar_subtopics             grammar_subtopics?             @relation(fields: [subtopic_id], references: [id], onDelete: SetNull, onUpdate: NoAction, map: "grammar_questions_subtopic_id_fkey")
+  grammar_question_options      grammar_question_options[]
+  grammar_set_questions         grammar_set_questions[]
+  grammar_question_difficulties grammar_question_difficulties?
+
+  @@unique([source, source_question_id], map: "grammar_questions_source_question_key")
+  @@index([subtopic_id, question_number], map: "grammar_questions_subtopic_number_idx")
+}
+
+model grammar_question_options {
+  id                Int               @id @default(autoincrement())
+  question_id       Int
+  label             String            @db.VarChar(1)
+  text              String
+  correct           Boolean           @default(false)
+  grammar_questions grammar_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_question_options_question_id_fkey")
+
+  @@unique([question_id, label], map: "grammar_question_options_question_label_key")
+}
+
+model grammar_sets {
+  id                        Int                       @id @default(autoincrement())
+  snapshot_id               Int
+  source                    String
+  source_set_id             String
+  name                      String
+  year                      Int?
+  access_level              String?
+  grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_sets_snapshot_id_fkey")
+  grammar_set_questions     grammar_set_questions[]
+
+  @@unique([source, source_set_id], map: "grammar_sets_source_set_key")
+}
+
+model grammar_set_questions {
+  id                Int               @id @default(autoincrement())
+  set_id            Int
+  question_id       Int
+  order_index       Int
+  grammar_sets      grammar_sets      @relation(fields: [set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_set_questions_set_id_fkey")
+  grammar_questions grammar_questions @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_set_questions_question_id_fkey")
+
+  @@unique([set_id, question_id], map: "grammar_set_questions_set_question_key")
+  @@index([set_id, order_index], map: "grammar_set_questions_set_order_idx")
+}
+
+model grammar_question_difficulties {
+  id                        Int                       @id @default(autoincrement())
+  snapshot_id               Int
+  question_id               Int                       @unique
+  level                     Int
+  grammar_content_snapshots grammar_content_snapshots @relation(fields: [snapshot_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_difficulties_snapshot_id_fkey")
+  grammar_questions         grammar_questions         @relation(fields: [question_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_difficulties_question_id_fkey")
+
+  @@index([level, question_id], map: "grammar_difficulties_level_question_idx")
+}
+
+model grammar_question_attempts {
+  id                             Int      @id @default(autoincrement())
+  user_id                        String
+  source                         String
+  source_question_id             String
+  submission_key                 String   @db.Uuid
+  submission_fingerprint         String
+  snapshot_version               String   @db.VarChar(64)
+  practice_mode                  String   @db.VarChar(8)
+  practice_target                String
+  question_id_snapshot           Int
+  question_number_snapshot       Int?
+  question_text_snapshot         String
+  selected_option_id_snapshot    Int
+  selected_option_label_snapshot String   @db.VarChar(1)
+  selected_option_text_snapshot  String
+  correct_option_id_snapshot     Int
+  correct_option_label_snapshot  String   @db.VarChar(1)
+  correct_option_text_snapshot   String
+  explanation_vi_snapshot        String?
+  explanation_en_snapshot        String?
+  question_translation_snapshot  String?
+  answer_translation_snapshot    String?
+  vocabulary_snapshot            Json
+  collection_progress_snapshot   Json
+  correct                        Boolean
+  attempted_at                   DateTime @default(now()) @db.Timestamp(6)
+  users                          users    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_question_attempts_user_id_fkey")
+
+  @@unique([user_id, submission_key], map: "grammar_attempts_user_submission_key")
+  @@index([user_id, attempted_at], map: "grammar_attempts_user_attempted_idx")
+  @@index([user_id, source, source_question_id, attempted_at], map: "grammar_attempts_user_question_attempted_idx")
+}
+
+model grammar_question_progress {
+  id                         Int      @id @default(autoincrement())
+  user_id                    String
+  source                     String
+  source_question_id         String
+  attempts_count             Int      @default(0)
+  correct_count              Int      @default(0)
+  last_selected_option_label String   @db.VarChar(1)
+  last_correct               Boolean
+  first_answered_at          DateTime @db.Timestamp(6)
+  updated_at                 DateTime @default(now()) @updatedAt @db.Timestamp(6)
+  users                      users    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "grammar_question_progress_user_id_fkey")
+
+  @@unique([user_id, source, source_question_id], map: "grammar_progress_user_source_question_key")
+  @@index([user_id, updated_at], map: "grammar_progress_user_updated_idx")
+}
+
+model toeic_writing_sets {
+  id            Int                   @id @default(autoincrement())
+  course_id     Int
+  source        String
+  source_set_id String
+  title         String
+  order_index   Int
+  created_at    DateTime              @default(now()) @db.Timestamp(6)
+  updated_at    DateTime              @default(now()) @updatedAt @db.Timestamp(6)
+  courses       courses               @relation(fields: [course_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_sets_course_id_fkey")
+  tasks         toeic_writing_tasks[]
+
+  @@unique([course_id, source, source_set_id], map: "toeic_writing_sets_course_source_key")
+  @@index([course_id, order_index], map: "toeic_writing_sets_course_order_idx")
+}
+
+model toeic_writing_tasks {
+  id                 Int                               @id @default(autoincrement())
+  set_id             Int
+  source             String
+  source_task_id     String
+  part               Int
+  order_index        Int
+  title              String
+  difficulty         String
+  instructions_en    String                            @db.Text
+  instructions_vi    String?                           @db.Text
+  payload            Json
+  image_storage_path String?
+  image_sha256       String?                           @db.VarChar(64)
+  image_bytes        Int?
+  image_content_type String?
+  source_version     String                            @db.VarChar(64)
+  content_sha256     String                            @db.VarChar(64)
+  provenance         Json
+  license_reference  String
+  status             toeic_writing_publication_status  @default(DRAFT)
+  published_at       DateTime?                         @db.Timestamp(6)
+  created_at         DateTime                          @default(now()) @db.Timestamp(6)
+  updated_at         DateTime                          @default(now()) @updatedAt @db.Timestamp(6)
+  set                toeic_writing_sets                @relation(fields: [set_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_tasks_set_id_fkey")
+  drafts             toeic_writing_drafts[]
+  submissions        toeic_writing_submissions[]
+  image_contexts     toeic_writing_image_contexts[]
+  ai_grades          toeic_writing_ai_grades[]
+  assistance_events  toeic_writing_assistance_events[]
+
+  @@unique([source, source_task_id], map: "toeic_writing_tasks_source_task_key")
+  @@unique([set_id, part, order_index], map: "toeic_writing_tasks_set_part_order_key")
+  @@index([status, part, order_index], map: "toeic_writing_tasks_catalog_idx")
+}
+
+model toeic_writing_drafts {
+  id              Int                 @id @default(autoincrement())
+  user_id         String
+  task_id         Int
+  response_text   String              @db.Text
+  content_version String              @db.VarChar(64)
+  created_at      DateTime            @default(now()) @db.Timestamp(6)
+  updated_at      DateTime            @default(now()) @updatedAt @db.Timestamp(6)
+  users           users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_drafts_user_id_fkey")
+  task            toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_drafts_task_id_fkey")
+
+  @@unique([user_id, task_id], map: "toeic_writing_drafts_user_task_key")
+}
+
+model toeic_writing_submissions {
+  id                 Int                 @id @default(autoincrement())
+  user_id            String
+  task_id            Int
+  submission_key     String              @db.Uuid
+  response_text      String              @db.Text
+  content_version    String              @db.VarChar(64)
+  task_title         String              @db.Text
+  task_part          Int
+  reference_snapshot Json
+  shared_at         DateTime?            @db.Timestamp(6)
+  share_revoked_at  DateTime?            @db.Timestamp(6)
+  submitted_at      DateTime             @default(now()) @db.Timestamp(6)
+  users              users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_submissions_user_id_fkey")
+  task               toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_writing_submissions_task_id_fkey")
+
+  @@unique([user_id, submission_key], map: "toeic_writing_submissions_user_key")
+  @@index([user_id, submitted_at], map: "toeic_writing_submissions_user_submitted_idx")
+  @@index([user_id, task_id], map: "toeic_writing_submissions_user_task_idx")
+  @@index([task_id, shared_at], map: "toeic_writing_submissions_task_shared_idx")
+}
+
+model toeic_writing_image_contexts {
+  id             Int                 @id @default(autoincrement())
+  task_id        Int
+  image_sha256   String              @db.VarChar(64)
+  prompt_version String              @db.VarChar(64)
+  model          String              @db.VarChar(100)
+  context        Json
+  created_at     DateTime            @default(now()) @db.Timestamp(6)
+  updated_at     DateTime            @default(now()) @updatedAt @db.Timestamp(6)
+  task           toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_image_contexts_task_id_fkey")
+
+  @@unique([task_id, image_sha256, prompt_version], map: "toeic_writing_image_contexts_identity_key")
+}
+
+model toeic_writing_ai_grades {
+  id              Int                 @id @default(autoincrement())
+  user_id         String
+  task_id         Int
+  content_version String              @db.VarChar(64)
+  response_text   String              @db.Text
+  response_hash   String              @db.VarChar(64)
+  prompt_version  String              @db.VarChar(64)
+  part            Int
+  locale          String              @db.VarChar(5)
+  model           String              @db.VarChar(100)
+  rubric_version  String              @db.VarChar(64)
+  assistance      Json
+  result          Json
+  context_source  String?             @db.VarChar(20)
+  created_at      DateTime            @default(now()) @db.Timestamp(6)
+  users           users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_ai_grades_user_id_fkey")
+  task            toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Restrict, onUpdate: NoAction, map: "toeic_writing_ai_grades_task_id_fkey")
+
+  @@unique([user_id, task_id, content_version, response_hash, prompt_version], map: "toeic_writing_ai_grades_cache_key")
+  @@index([user_id, created_at], map: "toeic_writing_ai_grades_user_created_idx")
+  @@index([user_id, task_id, created_at], map: "toeic_writing_ai_grades_user_task_idx")
+}
+
+model toeic_writing_assistance_events {
+  id              Int                 @id @default(autoincrement())
+  user_id         String
+  task_id         Int
+  content_version String              @db.VarChar(64)
+  kind            String              @db.VarChar(32)
+  created_at      DateTime            @default(now()) @db.Timestamp(6)
+  users           users               @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_assistance_events_user_id_fkey")
+  task            toeic_writing_tasks @relation(fields: [task_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "toeic_writing_assistance_events_task_id_fkey")
+
+  @@unique([user_id, task_id, content_version, kind], map: "toeic_writing_assistance_events_identity_key")
+  @@index([user_id, created_at], map: "toeic_writing_assistance_events_user_created_idx")
+}
+
+model ai_usage_daily {
+  id         Int      @id @default(autoincrement())
+  user_id    String
+  feature    String   @db.VarChar(40)
+  usage_date DateTime @db.Date
+  reserved   Int      @default(0)
+  used       Int      @default(0)
+  created_at DateTime @default(now()) @db.Timestamp(6)
+  updated_at DateTime @default(now()) @updatedAt @db.Timestamp(6)
+  users      users    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "ai_usage_daily_user_id_fkey")
+
+  @@unique([user_id, feature, usage_date], map: "ai_usage_daily_identity_key")
+}
+
+model ai_usage_reservations {
+  id              String    @id @default(uuid()) @db.Uuid
+  user_id         String
+  feature         String    @db.VarChar(40)
+  idempotency_key String    @db.Uuid
+  response_hash   String    @db.VarChar(64)
+  usage_date      DateTime  @db.Date
+  status          String    @db.VarChar(20)
+  created_at      DateTime  @default(now()) @db.Timestamp(6)
+  expires_at      DateTime  @db.Timestamp(6)
+  completed_at    DateTime? @db.Timestamp(6)
+  released_at     DateTime? @db.Timestamp(6)
+  users           users     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "ai_usage_reservations_user_id_fkey")
+
+  @@unique([user_id, idempotency_key], map: "ai_usage_reservations_user_key")
+  @@index([user_id, feature, created_at], map: "ai_usage_reservations_user_feature_created_idx")
+  @@index([status, expires_at], map: "ai_usage_reservations_status_expiry_idx")
 }
 
 enum challenge_direction {
@@ -255,6 +1190,38 @@ enum type {
 enum user_role {
   ADMIN
   USER
+}
+
+enum reading_publication_status {
+  DRAFT
+  PUBLISHED
+}
+
+enum reading_source_candidate_status {
+  PENDING
+  CONVERTED
+  REJECTED
+}
+
+enum toeic_publication_status {
+  DRAFT
+  PUBLISHED
+}
+
+enum toeic_dictation_publication_status {
+  DRAFT
+  PUBLISHED
+}
+
+enum toeic_dictation_practice_mode {
+  CHECK
+  DICTATION
+  FULL
+}
+
+enum toeic_writing_publication_status {
+  DRAFT
+  PUBLISHED
 }
 
 model system_settings {

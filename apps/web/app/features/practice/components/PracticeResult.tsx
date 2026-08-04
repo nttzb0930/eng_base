@@ -115,14 +115,14 @@ export const PracticeResult = ({
             {perfect ? "100%" : `${accuracy}%`}
           </span>
           <span className="absolute -right-5 top-14 rounded-full border bg-card px-3 py-1.5 text-xs font-bold shadow-sm">
-            +{earnedXp} XP
+            +{earnedXp} {t("xpUnit")}
           </span>
           <span className="absolute -left-2 bottom-7 rounded-full border bg-card px-3 py-1.5 text-xs font-bold shadow-sm">
             {correctCount}/{totalCount}
           </span>
         </div>
 
-        <h1 className="mt-2 text-balance text-3xl font-black tracking-tight text-foreground sm:text-4xl">
+        <h1 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {title}
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-muted-foreground sm:text-base">
@@ -140,7 +140,9 @@ export const PracticeResult = ({
           </p>
           <p className="mt-1 text-3xl font-black tabular-nums">
             {earnedXp}{" "}
-            <span className="text-sm font-semibold text-muted-foreground">XP</span>
+            <span className="text-sm font-semibold text-muted-foreground">
+              {t("xpUnit")}
+            </span>
           </p>
         </div>
       </section>
@@ -165,11 +167,10 @@ export const PracticeResult = ({
         <article className="rounded-2xl border bg-card p-5">
           <div className="flex items-start gap-4">
             <span
-              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${
-                perfect
+              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${perfect
                   ? "bg-amber-100 text-amber-600"
                   : "bg-rose-50 text-rose-600"
-              }`}
+                }`}
             >
               {perfect ? (
                 <Award className="h-7 w-7" />
@@ -179,9 +180,8 @@ export const PracticeResult = ({
             </span>
             <div className="min-w-0">
               <p
-                className={`text-xs font-bold uppercase tracking-[0.12em] ${
-                  perfect ? "text-amber-700" : "text-rose-600"
-                }`}
+                className={`text-xs font-bold uppercase tracking-[0.12em] ${perfect ? "text-amber-700" : "text-rose-600"
+                  }`}
               >
                 {perfect ? t("wordsRemembered") : t("wordsToReview")}
               </p>

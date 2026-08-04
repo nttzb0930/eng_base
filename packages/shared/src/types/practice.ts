@@ -1,9 +1,12 @@
 import type { CefrLevel } from "../constants/cefr.js";
+import { TOPIC_PRACTICE_MODES } from "../constants/practice.js";
 import type { LessonChallengeOption } from "./course.js";
 import type { ReviewChallenge } from "./review.js";
 import type { VocabularyItem } from "./vocabulary.js";
 
 export type PracticeCefrLevel = CefrLevel;
+
+export type TopicPracticeMode = (typeof TOPIC_PRACTICE_MODES)[number];
 
 export type PracticeLevelSummary = Record<
   PracticeCefrLevel,

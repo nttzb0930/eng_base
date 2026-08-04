@@ -1,8 +1,10 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable, NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import type { FlashcardSessionQueryDto } from "../dto/flashcard-session-query.dto";
 import {
   FLASHCARD_SESSION_LIMIT,
   FlashcardQuerySource,
+  type RandomSource,
 } from "./flashcard-source";
 
 @Injectable()
@@ -11,12 +13,36 @@ export class GetFlashcardSessionItemsUseCase extends FlashcardQuerySource {
     super(prisma);
   }
 
-  async execute(userId: string, deckValue?: string) {
+  async execute(
+    userId: string,
+    query: FlashcardSessionQueryDto = {},
+    random: RandomSource = Math.random,
+  ) {
     if (!userId) return [];
 
-    const deck = this.normalizeFlashcardDeck(deckValue);
+    const target = this.parseFlashcardSessionQuery(query);
+
+    if (target.source === "topic") {
+      const topic = await this.getTopicFlashcardVocabularyItems(
+        userId,
+        target.slug,
+      );
+
+      if (!topic) {
+        throw new NotFoundException("FLASHCARD_TOPIC_NOT_FOUND");
+      }
+
+      return this.shuffle(
+        topic.vocabulary_item_topics.map(({ vocabulary_items }) =>
+          this.mapVocabularyItem(vocabulary_items),
+        ),
+        random,
+      ).slice(0, FLASHCARD_SESSION_LIMIT);
+    }
+
+    const deck = target.deck;
     const items = (await this.getFlashcardVocabularyItems(userId, deck)).map(
-      (x) => this.mapVocabularyItem(x)
+      (item) => this.mapVocabularyItem(item),
     );
 
     if (deck === "due") {
@@ -43,6 +69,6 @@ export class GetFlashcardSessionItemsUseCase extends FlashcardQuerySource {
         .slice(0, FLASHCARD_SESSION_LIMIT);
     }
 
-    return this.shuffle(items).slice(0, FLASHCARD_SESSION_LIMIT);
+    return this.shuffle(items, random).slice(0, FLASHCARD_SESSION_LIMIT);
   }
 }

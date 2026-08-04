@@ -19,8 +19,29 @@ test("shared Admin presentation primitives live under app", () => {
     "app/components/ui/avatar.tsx",
     "app/components/ui/dialog.tsx",
     "app/components/ui/separator.tsx",
+    "app/components/ui/alert-dialog.tsx",
+    "app/components/ui/badge.tsx",
+    "app/components/ui/collapsible.tsx",
+    "app/components/ui/sheet.tsx",
+    "app/components/ui/skeleton.tsx",
+    "app/components/ui/switch.tsx",
+    "app/components/ui/tabs.tsx",
+    "app/components/ui/textarea.tsx",
+    "app/components/ui/tooltip.tsx",
     "app/components/data-table/data-table-card.tsx",
+    "app/components/data-table/data-table-pagination.tsx",
+    "app/components/data-table/data-table-toolbar.tsx",
+    "app/components/data-table/data-table.types.ts",
+    "app/components/layout/PageHeader.tsx",
+    "app/components/theme/AdminThemeProvider.tsx",
+    "app/components/theme/ThemeMenu.tsx",
+    "app/components/feedback/EmptyState.tsx",
+    "app/components/feedback/ErrorState.tsx",
+    "app/components/feedback/LoadingState.tsx",
     "app/components/feedback/TableSkeleton.tsx",
+    "app/components/forms/FormField.tsx",
+    "app/components/forms/FormActions.tsx",
+    "app/components/forms/DestructiveActionDialog.tsx",
     "app/hooks/use-debounce.ts",
     "app/hooks/use-table-controls.ts",
     "app/utils/cn.ts",
@@ -73,6 +94,47 @@ test("Admin reusable Radix primitives are imported from the shared UI package", 
   }
 });
 
+test("Admin owns a CSS-first Shadcn profile", () => {
+  const components = JSON.parse(
+    readFileSync(join(root, "components.json"), "utf8"),
+  ) as {
+    style: string;
+    tailwind: { config: string; css: string; cssVariables: boolean };
+    aliases: { components: string; ui: string; utils: string };
+  };
+  const globals = readFileSync(join(root, "app/globals.css"), "utf8");
+
+  assert.equal(components.style, "new-york");
+  assert.equal(components.tailwind.config, "");
+  assert.equal(components.tailwind.css, "app/globals.css");
+  assert.equal(components.tailwind.cssVariables, true);
+  assert.equal(components.aliases.components, "@/app/components");
+  assert.equal(components.aliases.ui, "@/app/components/ui");
+  assert.equal(components.aliases.utils, "@/app/utils/cn");
+  assert.match(globals, /@import "tailwindcss"/u);
+  assert.match(globals, /@import "tw-animate-css"/u);
+  assert.match(globals, /@source "\.\.\/\.\.\/\.\.\/packages\/ui\/src/u);
+  assert.match(globals, /@custom-variant dark/u);
+  assert.equal(existsSync(join(root, "tailwind.config.ts")), false);
+});
+
+test("Admin Data Table uses TanStack with server-controlled state", () => {
+  const table = readFileSync(
+    join(root, "app/components/data-table/data-table.tsx"),
+    "utf8",
+  );
+  const types = readFileSync(
+    join(root, "app/components/data-table/data-table.types.ts"),
+    "utf8",
+  );
+
+  assert.match(table, /useReactTable/u);
+  assert.match(table, /getCoreRowModel/u);
+  assert.match(table, /manualPagination:\s*true/u);
+  assert.match(table, /manualSorting:\s*true/u);
+  assert.match(types, /getRowId\?:\s*\(item:\s*T\)\s*=>\s*string/u);
+});
+
 test("shared Admin presentation imports use app-owned paths", () => {
   const sourceFiles = [
     ...filesUnder(join(root, "app")),
@@ -89,12 +151,39 @@ test("shared Admin presentation imports use app-owned paths", () => {
   }
 });
 
+test("Admin screens avoid legacy heavy presentation overrides", () => {
+  const productionSources = filesUnder(join(root, "app"))
+    .filter((file) => /\.tsx?$/u.test(file))
+    .filter((file) => !file.includes(join("components", "ui")));
+  const forbidden =
+    /font-(?:bold|black|extrabold)|tracking-(?:tight|tighter)|(?:bg|text|border)-zinc-|bg-white|shadow-(?:xl|2xl)|rounded-(?:2xl|3xl)|<(?:select|textarea)\b|type="radio"|window\.confirm|dangerouslySetInnerHTML/u;
+
+  for (const file of productionSources) {
+    assert.doesNotMatch(
+      readFileSync(file, "utf8"),
+      forbidden,
+      `${file} contains a legacy heavy presentation override`,
+    );
+  }
+});
+
 test("Admin architecture check includes every architecture test", () => {
   const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
     scripts?: Record<string, string>;
   };
 
   assert.equal(packageJson.scripts?.["architecture:check"], 'tsx --test "test/*architecture.test.ts"');
+});
+
+test("Admin production build pins the production Node environment", () => {
+  const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.equal(
+    packageJson.scripts?.build,
+    "dotenv -e ../../.env -v NODE_ENV=production -- next build --turbopack",
+  );
 });
 
 test("Admin Auth follows the frontend feature/view profile", () => {
@@ -112,6 +201,31 @@ test("Admin Auth follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "components/auth/AuthGuard.tsx")), false);
 });
 
+test("Admin Auth uses the shared form and feedback foundation", () => {
+  const schemaPath = join(
+    root,
+    "app/features/auth/components/login.schema.ts",
+  );
+  assert.equal(existsSync(schemaPath), true, "login schema must exist");
+
+  const loginView = readFileSync(
+    join(root, "app/views/auth/LoginView.tsx"),
+    "utf8",
+  );
+  assert.match(loginView, /useForm/u);
+  assert.match(loginView, /zodResolver/u);
+  assert.match(loginView, /FormField/u);
+  assert.doesNotMatch(loginView, /font-(?:bold|black|extrabold)/u);
+  assert.doesNotMatch(loginView, /(?:bg|text|border)-zinc-/u);
+
+  const authGuard = readFileSync(
+    join(root, "app/features/auth/components/AuthGuard.tsx"),
+    "utf8",
+  );
+  assert.match(authGuard, /LoadingState/u);
+  assert.doesNotMatch(authGuard, /(?:bg|text|border)-zinc-/u);
+});
+
 test("Admin Users follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/users/api/user.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/users/hooks/use-users.ts")), true);
@@ -123,6 +237,21 @@ test("Admin Users follows the frontend feature/view profile", () => {
   const routeSource = readFileSync(join(root, "app/(dashboard)/users/page.tsx"), "utf8");
   assert.equal(routeSource.includes("@/app/views/users/UsersView"), true);
   assert.equal(routeSource.includes("@/src/views/users"), false);
+});
+
+test("Admin Users keeps management presentation in its feature", () => {
+  for (const path of [
+    "app/features/users/components/UsersManagementScreen.tsx",
+    "app/features/users/components/user-columns.tsx",
+    "app/features/users/components/UserEditorForm.tsx",
+    "app/features/users/components/user-editor.schema.ts",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+  const view = readFileSync(join(root, "app/views/users/UsersView.tsx"), "utf8");
+  assert.equal(view.includes("UsersManagementScreen"), true);
+  assert.equal(view.includes("useState"), false);
+  assert.equal(view.split("\n").length <= 8, true);
 });
 
 test("Admin Practice Sessions follows the Practice owner profile", () => {
@@ -139,9 +268,38 @@ test("Admin Practice Sessions follows the Practice owner profile", () => {
   assert.equal(routeSource.includes("@/src/views/practice-sessions"), false);
 });
 
+test("Admin Practice keeps session presentation in its feature", () => {
+  for (const path of [
+    "app/features/practice/components/PracticeSessionsScreen.tsx",
+    "app/features/practice/components/practice-session-columns.tsx",
+    "app/features/practice/components/PracticeSessionDetailDialog.tsx",
+  ]) {
+    assert.equal(existsSync(join(root, path)), true, `${path} must exist`);
+  }
+  const view = readFileSync(
+    join(root, "app/views/practice-sessions/PracticeSessionsView.tsx"),
+    "utf8",
+  );
+  assert.equal(view.includes("PracticeSessionsScreen"), true);
+  assert.equal(view.includes("useState"), false);
+  assert.equal(view.split("\n").length <= 8, true);
+});
+
 test("Admin Settings follows the frontend feature/view profile", () => {
   assert.equal(existsSync(join(root, "app/features/settings/api/setting.api.ts")), true);
   assert.equal(existsSync(join(root, "app/features/settings/hooks/use-setting.ts")), true);
+  assert.equal(
+    existsSync(
+      join(root, "app/features/settings/components/SystemSettingsScreen.tsx"),
+    ),
+    true,
+  );
+  assert.equal(
+    existsSync(
+      join(root, "app/features/settings/components/system-settings.schema.ts"),
+    ),
+    true,
+  );
   assert.equal(existsSync(join(root, "app/views/settings/SettingsView.tsx")), true);
   assert.equal(existsSync(join(root, "src/services/settings")), false);
   assert.equal(existsSync(join(root, "src/views/settings")), false);
@@ -149,6 +307,20 @@ test("Admin Settings follows the frontend feature/view profile", () => {
   const routeSource = readFileSync(join(root, "app/(dashboard)/settings/page.tsx"), "utf8");
   assert.equal(routeSource.includes("@/app/views/settings/SettingsView"), true);
   assert.equal(routeSource.includes("@/src/views/settings"), false);
+
+  const viewSource = readFileSync(
+    join(root, "app/views/settings/SettingsView.tsx"),
+    "utf8",
+  );
+  assert.equal(
+    viewSource.includes(
+      "@/app/features/settings/components/SystemSettingsScreen",
+    ),
+    true,
+  );
+  assert.equal(viewSource.includes("useSystemSettings"), false);
+  assert.equal(viewSource.includes("useForm"), false);
+  assert.equal(viewSource.split("\n").length <= 12, true);
 });
 
 test("Admin has no legacy capability implementation or imports", () => {

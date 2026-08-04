@@ -1,75 +1,130 @@
 name: CI
 
 on:
-  push:
-    branches: ["**"]
   pull_request:
-    branches: [main]
+    branches:
+      - main
+  push:
+    branches:
+      - "**"
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  NODE_ENV: test
+  NEXT_TELEMETRY_DISABLED: 1
+  APP_NAME: English Base API
+  APP_SERVICE_NAME: eng-base-api
+  API_PORT: 4000
+  CORS_ORIGINS: http://localhost:3000,http://localhost:3001
+  TRUST_PROXY_HOPS: 0
+  NEXT_PUBLIC_APP_NAME: English Base
+  NEXT_PUBLIC_APP_URL: http://localhost:3000
+  NEXT_PUBLIC_API_URL: http://localhost:4000/api
+  DATABASE_URL: postgresql://ci:ci@localhost:5432/eng_base?schema=public
+  JWT_ACCESS_SECRET: ci-access-secret-0123456789-abcdefgh
+  JWT_REFRESH_SECRET: ci-refresh-secret-9876543210-hgfedcba
+  JWT_ACCESS_EXPIRES_IN: 15m
+  JWT_REFRESH_EXPIRES_IN: 7d
+
 jobs:
-  verify:
+  packages:
+    name: Packages
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    env:
-      NODE_ENV: test
-      NEXT_TELEMETRY_DISABLED: 1
-      APP_NAME: English Base API
-      APP_SERVICE_NAME: eng-base-api
-      API_PORT: 4000
-      CORS_ORIGINS: http://localhost:3000,http://localhost:3001
-      TRUST_PROXY_HOPS: 0
-      NEXT_PUBLIC_APP_NAME: English Base
-      NEXT_PUBLIC_APP_URL: http://localhost:3000
-      NEXT_PUBLIC_API_URL: http://localhost:4000/api
-      DATABASE_URL: postgresql://ci:ci@localhost:5432/eng_base?schema=public
-      JWT_ACCESS_SECRET: ci-access-secret-0123456789-abcdefgh
-      JWT_REFRESH_SECRET: ci-refresh-secret-9876543210-hgfedcba
-      JWT_ACCESS_EXPIRES_IN: 15m
-      JWT_REFRESH_EXPIRES_IN: 7d
+    timeout-minutes: 20
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared check-types
+      - run: pnpm --filter @repo/ui check-types
+      - run: pnpm --filter @repo/shared test
+      - run: pnpm --filter @repo/ui test
+      - run: pnpm --filter @repo/shared build
+      - run: pnpm --filter @repo/ui build
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+  api:
+    name: API
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared build
+      - run: pnpm db:generate
+      - run: pnpm --filter @repo/api architecture:check
+      - run: pnpm --filter @repo/api test
+      - run: pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/development-seed-guard.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/database/vocabulary-bootstrap-plan.test.ts scripts/vocabulary/database/vocabulary-bootstrap-store.test.ts scripts/vocabulary/database/bootstrap-vocabulary.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+      - run: pnpm --filter @repo/api check-types
+      - run: pnpm --filter @repo/api lint
+      - run: pnpm --filter @repo/api build
+      - run: pnpm --filter @repo/api build:data-bootstrap
 
-      - name: Generate Prisma client
-        run: pnpm db:generate
+  web:
+    name: Web
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared build
+      - run: pnpm --filter @repo/ui build
+      - run: pnpm --filter @repo/web test
+      - run: pnpm --filter @repo/web check-types
+      - run: pnpm --filter @repo/web lint
+      - run: pnpm --filter @repo/web build
 
-      - name: Check architecture
-        run: pnpm architecture:check
+  admin:
+    name: Admin
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @repo/shared build
+      - run: pnpm --filter @repo/ui build
+      - run: pnpm --filter @repo/admin test
+      - run: pnpm --filter @repo/admin check-types
+      - run: pnpm --filter @repo/admin lint
+      - run: pnpm --filter @repo/admin build
 
-      - name: Run tests
-        run: pnpm test
-
-      - name: Run standalone vocabulary workflow tests
-        run: pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
-
-      - name: Check types
-        run: pnpm check-types
-
-      - name: Lint
-        run: pnpm lint
-
-      - name: Build applications
-        run: pnpm build
-
-      - name: Check formatting
-        run: pnpm exec prettier --check README.md AGENTS.md CONTEXT.md "docs/**/*.md" ".github/workflows/*.yml"
+  repository:
+    name: Repository checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm architecture:check
+      - run: pnpm exec prettier --check README.md AGENTS.md CONTEXT.md "docs/**/*.md" ".github/workflows/*.yml"

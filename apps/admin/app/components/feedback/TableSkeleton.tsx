@@ -1,24 +1,40 @@
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/app/components/ui/table";
+import { Skeleton } from "@/app/components/ui/skeleton";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/app/components/ui/table";
 
-export function TableSkeleton({ columnsCount = 5, rowsCount = 5 }: { columnsCount?: number; rowsCount?: number }) {
+type TableSkeletonProps = {
+  columnsCount?: number;
+  rowsCount?: number;
+};
+
+export function TableSkeleton({
+  columnsCount = 5,
+  rowsCount = 5,
+}: TableSkeletonProps) {
   return (
-    <div className="w-full rounded-xl border border-zinc-200 bg-white overflow-hidden shadow-sm">
+    <div className="w-full overflow-hidden rounded-lg border bg-card">
       <Table>
         <TableHeader>
-          <TableRow className="bg-zinc-50 hover:bg-zinc-50/50">
-            {Array.from({ length: columnsCount }).map((_, idx) => (
-              <TableHead key={idx}>
-                <div className="h-4 w-20 rounded bg-zinc-200 animate-pulse" />
+          <TableRow className="bg-muted/40 hover:bg-muted/40">
+            {Array.from({ length: columnsCount }, (_, index) => (
+              <TableHead key={`skeleton-heading-${index}`}>
+                <Skeleton className="h-4 w-20" />
               </TableHead>
             ))}
           </TableRow>
         </TableHeader>
         <TableBody>
-          {Array.from({ length: rowsCount }).map((_, rowIdx) => (
-            <TableRow key={rowIdx}>
-              {Array.from({ length: columnsCount }).map((_, colIdx) => (
-                <TableCell key={colIdx}>
-                  <div className="h-4 w-full rounded bg-zinc-100 animate-pulse" />
+          {Array.from({ length: rowsCount }, (_, rowIndex) => (
+            <TableRow key={`skeleton-row-${rowIndex}`}>
+              {Array.from({ length: columnsCount }, (_, columnIndex) => (
+                <TableCell key={`skeleton-cell-${rowIndex}-${columnIndex}`}>
+                  <Skeleton className="h-4 w-full" />
                 </TableCell>
               ))}
             </TableRow>

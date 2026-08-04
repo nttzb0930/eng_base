@@ -1,6 +1,7 @@
 "use client";
 
-import { LogOut, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { LogOut } from "lucide-react";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
 
@@ -32,11 +33,15 @@ export const Sidebar = ({ className }: SidebarProps) => {
     >
       <Link href={withLocale("/dashboard")}>
         <div className="flex items-center gap-3 px-2 pb-8 pt-7">
-          <span className="from-brand to-brand-dark shadow-brand grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br text-white">
-            <Sparkles className="h-5 w-5" aria-hidden="true" />
-          </span>
+          <Image
+            src="/mascot.svg"
+            alt={appName}
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0 object-contain"
+          />
           <div>
-            <h1 className="text-foreground text-xl font-bold tracking-tight">
+            <h1 className="text-foreground text-xl font-semibold tracking-tight">
               {appName}
             </h1>
             <p className="text-muted-foreground text-[11px] font-medium">
@@ -56,21 +61,12 @@ export const Sidebar = ({ className }: SidebarProps) => {
           label={t("learn")}
           href={withLocale("/learn")}
           iconSrc="/learn.svg"
-        />
-        <SidebarItem
-          label={t("topics")}
-          href={withLocale("/topics")}
-          iconSrc="/learn.svg"
+          activeHrefs={["/learn", "/practice", "/reading"]}
         />
         <SidebarItem
           label={t("savedWords")}
           href={withLocale("/saved-words")}
           iconSrc="/heart.svg"
-        />
-        <SidebarItem
-          label={t("practice")}
-          href={withLocale("/practice")}
-          iconSrc="/learn.svg"
         />
         <SidebarItem
           label={t("flashcards")}

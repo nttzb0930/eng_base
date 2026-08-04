@@ -11,15 +11,18 @@ export type TopicHttp = {
 
 export function createTopicApi(http: TopicHttp) {
   return {
-    async list() {
-      return (await http.get<VocabularyTopic[]>("/topics")).data;
+    async list(locale: string) {
+      const query = new URLSearchParams({ locale });
+      return (await http.get<VocabularyTopic[]>(`/topics?${query.toString()}`))
+        .data;
     },
 
-    async detail(slug: string, level?: string) {
-      const query = level ? `?level=${encodeURIComponent(level)}` : "";
+    async detail(slug: string, locale: string, level?: string) {
+      const query = new URLSearchParams({ locale });
+      if (level) query.set("level", level);
       return (
         await http.get<VocabularyTopicDetails | null>(
-          `/topics/${encodeURIComponent(slug)}${query}`,
+          `/topics/${encodeURIComponent(slug)}?${query.toString()}`,
         )
       ).data;
     },

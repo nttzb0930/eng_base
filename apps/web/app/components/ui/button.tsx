@@ -12,6 +12,8 @@ const buttonVariants = cva(
       variant: {
         default:
           "border bg-card text-foreground shadow-sm hover:border-primary/25 hover:bg-muted",
+        outline:
+          "border bg-card text-foreground shadow-sm hover:border-primary/25 hover:bg-muted",
 
         // custom
         locked:

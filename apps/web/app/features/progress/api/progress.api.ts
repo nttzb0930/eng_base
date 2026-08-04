@@ -1,6 +1,18 @@
-import type { CourseProgress, UserProgress } from "@repo/shared";
+import type {
+  CefrProgressSummary,
+  CourseProgress,
+  UserProgress,
+} from "@repo/shared";
 
 import { webHttpClient } from "@/app/features/auth/api/web-http-client";
+
+export const progressKeys = {
+  all: ["progress"] as const,
+  user: ["progress", "user"] as const,
+  course: ["progress", "course"] as const,
+  lessonPercentage: ["progress", "lesson-percentage"] as const,
+  cefrLevels: ["progress", "cefr-levels"] as const,
+};
 
 export type ProgressHttp = {
   get<T>(path: string): Promise<{ data: T }>;
@@ -10,15 +22,23 @@ export type ProgressHttp = {
 export function createProgressApi(http: ProgressHttp) {
   return {
     async getUserProgress() {
-      return (await http.get<UserProgress | null>("/progress/user-progress")).data;
+      return (await http.get<UserProgress | null>("/progress/user-progress"))
+        .data;
     },
 
     async getCourseProgress() {
-      return (await http.get<CourseProgress | null>("/progress/course-progress")).data;
+      return (
+        await http.get<CourseProgress | null>("/progress/course-progress")
+      ).data;
     },
 
     async getLessonPercentage() {
       return (await http.get<number>("/progress/lesson-percentage")).data;
+    },
+
+    async getCefrLevels() {
+      return (await http.get<CefrProgressSummary>("/progress/cefr-levels"))
+        .data;
     },
 
     async selectCourse(courseId: number) {
@@ -26,11 +46,19 @@ export function createProgressApi(http: ProgressHttp) {
     },
 
     async completeChallenge(challengeId: number) {
-      return (await http.post<void | { error: "hearts" }>(`/progress/challenges/${challengeId}`)).data;
+      return (
+        await http.post<void | { error: "hearts" }>(
+          `/progress/challenges/${challengeId}`
+        )
+      ).data;
     },
 
     async reduceHearts(challengeId: number) {
-      return (await http.post<void | { error: "practice" | "hearts" }>(`/progress/hearts/${challengeId}/reduce`)).data;
+      return (
+        await http.post<void | { error: "practice" | "hearts" }>(
+          `/progress/hearts/${challengeId}/reduce`
+        )
+      ).data;
     },
 
     async refillHearts() {
@@ -38,7 +66,8 @@ export function createProgressApi(http: ProgressHttp) {
     },
 
     async resetLesson(lessonId: number) {
-      return (await http.post<void>(`/progress/lessons/${lessonId}/reset`)).data;
+      return (await http.post<void>(`/progress/lessons/${lessonId}/reset`))
+        .data;
     },
   };
 }

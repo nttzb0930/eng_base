@@ -46,9 +46,35 @@ export type LessonDetails = LessonWithChallenges & {
   challenges: Array<Challenge & { completed: boolean }>;
 };
 
+export type LeaderboardPeriod = "weekly" | "monthly" | "alltime";
+
 export type LeaderboardUser = {
   userId: string;
   userName: string;
   userImageSrc: string;
   points: number;
+  rank: number;
+  level?: number;
+  streak?: number;
+  weeklyGain?: number;
+  trend?: "up" | "down" | "neutral";
+  trendValue?: number;
 };
+
+export type LeaderboardResponse = {
+  seasonInfo: {
+    seasonNumber: number;
+    daysRemaining: number;
+  };
+  currentUserRank: {
+    rank: number;
+    totalLearners: number;
+    points: number;
+    nextRankPointsNeeded: number;
+    nextRankNumber: number;
+    percentileText: string;
+  };
+  topUsers: LeaderboardUser[];
+  totalLearners: number;
+};
+

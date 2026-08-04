@@ -19,6 +19,7 @@ test("Progress resource preserves learner progress routes", async () => {
   await api.getUserProgress();
   await api.getCourseProgress();
   await api.getLessonPercentage();
+  await api.getCefrLevels();
   await api.selectCourse(2);
   await api.completeChallenge(3);
   await api.reduceHearts(3);
@@ -29,6 +30,7 @@ test("Progress resource preserves learner progress routes", async () => {
     { method: "GET", path: "/progress/user-progress" },
     { method: "GET", path: "/progress/course-progress" },
     { method: "GET", path: "/progress/lesson-percentage" },
+    { method: "GET", path: "/progress/cefr-levels" },
     { method: "POST", path: "/progress/courses/2" },
     { method: "POST", path: "/progress/challenges/3" },
     { method: "POST", path: "/progress/hearts/3/reduce" },

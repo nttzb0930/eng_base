@@ -62,21 +62,43 @@ export type SavedVocabularyWord = UserSavedWord & {
   vocabularyItem: VocabularyItem;
 };
 
-export type VocabularyTopic = {
+export type VocabularyLearnerState = {
+  learned: boolean;
+  learning: boolean;
+  unlearned: boolean;
+  mastered: boolean;
+  weak: boolean;
+  due: boolean;
+  masteryLevel: string | null;
+};
+
+export type VocabularyTopicProgressStats = {
+  total: number;
+  learned: number;
+  learning: number;
+  unlearned: number;
+  mastered: number;
+  weak: number;
+  due: number;
+};
+
+export type VocabularyTopicItem = VocabularyItem & {
+  learnerState: VocabularyLearnerState;
+};
+
+export type VocabularyTopic = VocabularyTopicProgressStats & {
   id: number;
   slug: string;
   title: string;
   description: string;
+  group: string;
   order: number;
-  total: number;
-  learned: number;
-  mastered: number;
 };
 
 export type VocabularyTopicDetails = VocabularyTopic & {
   selectedLevel?: CefrLevel;
   countsByLevel: Record<CefrLevel, number>;
-  stats: Pick<VocabularyTopic, "total" | "learned" | "mastered">;
-  filteredStats: Pick<VocabularyTopic, "total" | "learned" | "mastered">;
-  items: VocabularyItem[];
+  stats: VocabularyTopicProgressStats;
+  filteredStats: VocabularyTopicProgressStats;
+  items: VocabularyTopicItem[];
 };

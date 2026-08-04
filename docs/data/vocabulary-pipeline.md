@@ -22,9 +22,24 @@ data/vocabulary/
 claim that audio or examples exist. Topic arrays in the catalog are the only
 source used to create vocabulary-topic relations.
 
-The catalog currently contains 3,000 records. The taxonomy contains exactly 103
+The catalog currently contains 7,429 records. The taxonomy contains exactly 103
 Topics. Record identity is `normalizedWord + pos + cefrLevel`; duplicate
 identities are rejected before merge or seed.
+
+Each canonical Topic has stable `slug` and `order` fields plus manually authored
+English/Vietnamese presentation fields:
+
+```text
+title, description, group
+titleVi, descriptionVi, groupVi
+```
+
+`vocabulary-catalog.json[*].topics` remains an array of canonical slug strings.
+Never embed localized Topic objects into catalog records. Seed synchronization
+copies the taxonomy presentation fields into PostgreSQL. The Topic API accepts
+`locale=en|vi`, defaults to English, and returns one localized
+`title`/`description`/`group` shape with field-level English fallback. Web cache
+keys include locale and group the learn-by-topic catalog by the returned group.
 
 ## Version-control policy
 
@@ -99,6 +114,35 @@ audio or an example was found.
 Dictionary enrichment is not the AI Topic expansion flow. It enriches known
 records and must not silently create a new catalog identity or Topic relation.
 
+The legacy audio enrichment command writes provider results directly to
+PostgreSQL. Before treating the versioned catalog as desired state, reconcile
+valid database-only audio back into the canonical catalog through the narrow
+audio workflow:
+
+```powershell
+pnpm --filter @repo/api data:reconcile-vocabulary-audio -- plan
+pnpm --filter @repo/api data:reconcile-vocabulary-audio -- apply --confirm <token>
+```
+
+`plan` reads the validated catalog and the database audio projection, writes an
+ignored report below `working/dictionary-enrichment/`, and does not change the
+catalog or PostgreSQL. It matches `normalizedWord + pos + cefrLevel`, imports
+only complete `free-dictionary-api` pairs from the exact
+`api.dictionaryapi.dev` HTTPS host, and reports conflicts, partial pairs,
+unsupported sources, invalid URLs, duplicate identities, and drift. Database
+identities outside the catalog are retained and reported.
+
+Confirmed `apply` repeats the current plan, creates an ignored catalog backup,
+and atomically changes only `audioUrl` and `audioSource` in
+`vocabulary-catalog.json`. It never writes PostgreSQL or calls a provider.
+`data:export-vocab` is not a substitute for this repair because that command
+also merges example fields and example collections.
+
+After reviewing the catalog diff, run the production bootstrap through `plan`
+and `dry-run` again. Database bootstrap `apply` remains a separate confirmed
+operation with a fresh database backup; catalog reconciliation never authorizes
+that write.
+
 ## Normalization
 
 Normalization starts from an exported database snapshot and produces reviewable
@@ -162,11 +206,48 @@ pnpm --filter @repo/api data:merge-topics -- --check
 pnpm --filter @repo/api data:merge-topics
 ```
 
-Prepare creates deterministic one-based IDs and a catalog SHA-256 manifest.
+Prepare creates deterministic one-based IDs and a version-2 manifest. The
+manifest fingerprints the catalog, bilingual taxonomy, prompt, and every batch
+input. Run prepare again after any of those canonical inputs changes.
+
+Every output stores an execution identity containing the input/catalog/
+taxonomy/prompt fingerprints plus provider and model. An existing output is
+reused only when the complete identity and its records validate exactly. A
+legacy or stale output is reported as `batch-stale` and regenerated; file
+existence alone never causes a skip.
+
+Basic `run-start`, per-batch, and `run-finished` JSON events are always printed.
+Set `VOCAB_AI_DEBUG=true` for bounded mismatch reasons and fingerprint prefixes;
+keys, prompts, batches, and raw responses are never logged. Concurrency remains
+bounded by `VOCAB_AI_CONCURRENCY`.
+
+Run one deterministic batch when resuming or diagnosing:
+
+```powershell
+pnpm --filter @repo/api data:classify-topics-ai -- batch-001
+```
+
 Provider responses must return exactly one result for every requested ID, zero
-or one canonical topic, and no extra IDs. Invalid responses go to `rejected`;
-the runner never silently drops unknown topics. Merge writes an ignored backup
-and atomically replaces only the catalog after full validation.
+or one canonical topic, and no extra IDs. Invalid responses write sanitized
+metadata under `working/topic-classification/rejected/`. A requested rejected or
+missing batch makes the command exit nonzero.
+
+`data:merge-topics -- --check` and the real merge both reject missing,
+rejected, mixed-provider/model, legacy, or stale artifacts before writing. A
+successful real merge creates an ignored backup and atomically replaces only
+the catalog. Classification and merge never update PostgreSQL.
+
+Audit the merged catalog before Topic expansion:
+
+```powershell
+pnpm --filter @repo/api data:audit-unclassified-topics
+```
+
+The audit is deterministic and local. It separates unclassified function words,
+content recovery candidates, and manual or normalization review records below
+the ignored `working/topic-classification/audit/` directory. It does not call a
+provider, mutate the canonical catalog, or write PostgreSQL. Audit output does
+not authorize recovery classification or Topic expansion.
 
 ## Topic expansion flow
 
@@ -177,11 +258,126 @@ provider:
 pnpm --filter @repo/api data:generate-topic-expansion
 ```
 
+The no-slug command prints a bilingual grouped table and atomically writes the
+full deterministic report to ignored
+`working/topic-expansion/deficits.json`. Automation can request compact JSON:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-expansion -- --json
+```
+
 Generate one review artifact for a selected deficient topic:
 
 ```powershell
 pnpm --filter @repo/api data:generate-topic-expansion -- airport
 ```
+
+Passing a Topic slug prints bounded generation progress in human mode. Add
+`--json` to receive JSONL start/completion events. Neither completion mode
+writes PostgreSQL; the generated artifact remains in `review`.
+
+Topic expansion is chunked. `VOCAB_TOPIC_EXPANSION_CHUNK_SIZE` defaults to `30`,
+so a Topic missing 300 words creates a 30-word review artifact per run. Review
+and merge that artifact, then run the same Topic again to create the next chunk.
+This keeps the provider response small enough to validate reliably while
+preserving the exact 10-example requirement per generated word.
+
+For faster review batching, request multiple small chunks in one command:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-expansion -- artificial-intelligence --chunks 10 --chunk-size 5
+```
+
+Batch mode writes queue artifacts under the ignored Topic folder:
+
+```text
+working/topic-expansion/artificial-intelligence/chunk-001.json
+working/topic-expansion/artificial-intelligence/chunk-002.json
+```
+
+Each provider request excludes canonical catalog words, existing pending queue
+artifacts, and words generated earlier in the same command. This gives the AI
+request memory without relying on provider session state. Review the chunk files,
+change only good chunks to `status: "accepted"`, then merge all accepted chunks:
+
+```powershell
+pnpm --filter @repo/api data:merge-topic-expansion -- artificial-intelligence --all-accepted
+```
+
+For many deficient topics, use the queue runner. It parallelizes across topics
+only; chunks inside one topic remain sequential so the next request can exclude
+words produced by earlier chunks for the same topic:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-expansion-queue -- --workers 3 --chunk-size 5 --chunks-per-topic 10
+```
+
+This example runs up to three topics at the same time and creates at most 10
+chunks per topic, 5 words per chunk, per queue run. Re-run the queue after
+review and merge. Do not raise worker count aggressively; provider rate limits
+and JSON quality usually fail before local CPU becomes the bottleneck.
+
+For larger scale expansion, prefer the candidate-first flow. It asks the
+provider for word identities only, deduplicates them against the catalog and
+pending candidate artifacts, and writes a review artifact without failing the
+whole run on duplicates:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-candidates -- friends --count 50 --chunk-size 50
+```
+
+Candidate artifacts are ignored working files:
+
+```text
+working/topic-candidates/friends/chunk-001.json
+```
+
+The artifact contains `candidates` for review and `rejected` entries with stable
+reasons such as `catalog-duplicate` and `artifact-duplicate`. Candidate
+generation does not write the canonical catalog or PostgreSQL. Accepted
+candidates are the input for a later enrichment step that creates full
+vocabulary records with meanings and exactly 10 bilingual examples.
+
+Before human review, run the candidate reviewer to filter weak topic matches:
+
+```powershell
+pnpm --filter @repo/api data:review-topic-candidates -- friends --chunk chunk-002.json
+```
+
+or review every chunk for the topic:
+
+```powershell
+pnpm --filter @repo/api data:review-topic-candidates -- friends --all
+```
+
+The reviewer keeps both `core` and `supporting` candidates. It writes a `tier`
+field on kept candidates so learning flows can prioritize core words first and
+supporting words later. Only `reject` decisions move into `rejected` with
+reasons such as `review:romantic-relationship`. This step updates only ignored
+candidate artifacts; it does not write the catalog or PostgreSQL.
+
+For all topics, keep generation and review as two separate queues:
+
+```powershell
+pnpm --filter @repo/api data:generate-topic-candidates-queue -- --workers 3 --count 20
+```
+
+Then review every topic folder that has generated candidate chunks:
+
+```powershell
+pnpm --filter @repo/api data:review-topic-candidates-queue -- --workers 3
+```
+
+Use this order for large runs: generate all topic candidates, review all topic
+candidates, spot-check several artifacts manually, then enrich accepted
+candidates in a later step.
+
+Set `VOCAB_AI_DEBUG=true` while diagnosing a provider run. Debug mode prints
+bounded events for `run-start`, `provider-request-start`,
+`provider-response-received`, `validation-start`, `validation-success`,
+`validation-failed`, and `artifact-written`, each with `durationMs` where
+available. Debug output never logs provider keys, prompts, raw responses,
+cookies, or database credentials.
 
 Every generated word must have exactly 10 bilingual example pairs. AI output
 uses a versioned JSON contract and provider JSON Schema. The artifact starts in
@@ -224,19 +420,42 @@ against a different environment.
 
 ## Seed and confirmed database writes
 
-Both `db:seed` and `data:seed-topics` load and validate
-`vocabulary-catalog.json` and `topics.json`. Seed scripts must not declare a
-second taxonomy or infer relations from keyword matching.
+`db:seed:dev` is a destructive local-development reset. It refuses to run with
+`NODE_ENV=production` and must never be used to initialize or repair a deployed
+database. The production-safe bootstrap is a separate, additive and idempotent
+workflow based only on `vocabulary-catalog.json` and `topics.json`.
 
-Classification and expansion never update PostgreSQL. Commands that can write
-the database remain explicit (`db:seed`, enrichment commands, or a confirmed
-normalization/POS apply). Review dry-run output before an apply. Never run a
+Run its source command from the repository root during local review:
+
+```powershell
+pnpm --filter @repo/api data:bootstrap-vocabulary -- plan
+pnpm --filter @repo/api data:bootstrap-vocabulary -- dry-run
+pnpm --filter @repo/api data:bootstrap-vocabulary -- apply --confirm $env:VOCABULARY_BOOTSTRAP_CONFIRMATION
+```
+
+`plan` is read-only and prints the sanitized database target, source/live/plan
+hashes, counts, and a confirmation token derived from that exact plan. Back up
+the target database and review this output before continuing. `dry-run` executes
+the same transactional writer as apply, verifies the result, and deliberately
+rolls the transaction back. `apply` commits only when `--confirm` exactly
+matches the current plan token; any source or database drift invalidates the
+reviewed plan.
+
+The safe bootstrap owns canonical vocabulary items, examples, Topics, Topic
+relations, and the English Vocabulary A1-B2 course hierarchy. It does not delete
+records and does not own TOEIC, Reading, Grammar, users, progress, or custom
+content. Existing records outside that boundary are retained. Running the same
+canonical source again is a no-op.
+
+Classification and expansion never update PostgreSQL. Other commands that can
+write the database remain explicit (`data:seed-topics`, enrichment commands, or
+a confirmed normalization/POS apply). `data:seed-topics` synchronizes canonical
+Topic records and catalog relations and is not a classifier. Never run a
 database-writing command merely to validate source files.
 
-`data:seed-topics` synchronizes canonical Topic records and catalog relations; it
-is not a classifier. `db:seed` may write broad learning content and progress
-dependencies. Confirm the target environment, backup policy, expected record
-counts, and relationship behavior before either command.
+Normal deployment does not run a seed or bootstrap automatically. The compiled
+production operator sequence and backup requirements are owned by
+`docs/guides/ci-cd.md`.
 
 ## Failure, rollback, and recovery
 
@@ -259,7 +478,7 @@ Run the API source-layout tests plus the pure workflow suite:
 
 ```powershell
 pnpm --filter @repo/api test
-pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
+pnpm --filter @repo/api exec tsx --test scripts/vocabulary/catalog/vocabulary-catalog.test.ts scripts/vocabulary/database/vocabulary-seed-data.test.ts scripts/vocabulary/topic-classification/topic-classification.test.ts scripts/vocabulary/topic-classification/unclassified-vocabulary-audit.test.ts scripts/vocabulary/topic-expansion/topic-expansion.test.ts
 ```
 
 These commands do not call providers or write PostgreSQL. Also run formatting,

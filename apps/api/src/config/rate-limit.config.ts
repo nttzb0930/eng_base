@@ -12,10 +12,7 @@ export default registerAs("rateLimit", () => ({
   },
   login: {
     ipLimit: positiveInteger(process.env.AUTH_LOGIN_IP_LIMIT, 10),
-    identityLimit: positiveInteger(
-      process.env.AUTH_LOGIN_IDENTITY_LIMIT,
-      5
-    ),
+    identityLimit: positiveInteger(process.env.AUTH_LOGIN_IDENTITY_LIMIT, 5),
     ttlMs: positiveInteger(process.env.AUTH_LOGIN_TTL, 60) * 1000,
   },
   register: {
@@ -27,5 +24,9 @@ export default registerAs("rateLimit", () => ({
     sessionLimit: positiveInteger(process.env.AUTH_REFRESH_SESSION_LIMIT, 10),
     ttlMs: positiveInteger(process.env.AUTH_REFRESH_TTL, 60) * 1000,
   },
+  writingAi: {
+    userLimit: positiveInteger(process.env.WRITING_AI_USER_LIMIT, 2),
+    ipLimit: positiveInteger(process.env.WRITING_AI_IP_LIMIT, 10),
+    ttlMs: positiveInteger(process.env.WRITING_AI_RATE_LIMIT_TTL, 60) * 1000,
+  },
 }));
-

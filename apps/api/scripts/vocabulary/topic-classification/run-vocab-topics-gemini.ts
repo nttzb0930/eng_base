@@ -1,16 +1,37 @@
 import "dotenv/config";
 
 import { GoogleGenAI } from "@google/genai";
-import { access, mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import {
+  access,
+  mkdir,
+  readFile,
+  rename,
+  rm,
+  writeFile,
+} from "node:fs/promises";
 import path from "node:path";
+import { isDeepStrictEqual } from "node:util";
 
 import {
+  createClassificationPlan,
   validateClassificationBatchResponse,
   type ClassificationRecord,
   type ClassificationOutput,
   type ClassificationPlan,
 } from "./topic-classification.js";
-import type { VocabularyTopicDefinition } from "../catalog/vocabulary-catalog.js";
+import {
+  createClassificationExecutionIdentity,
+  createClassificationProgressReporter,
+  getClassificationRunExitCode,
+  sanitizeProviderError,
+  validateReusableClassificationOutput,
+  type ClassificationProvider,
+  type ClassificationRunSummary,
+} from "./topic-classification-run.js";
+import type {
+  VocabularyCatalogItem,
+  VocabularyTopicDefinition,
+} from "../catalog/vocabulary-catalog.js";
 
 type ProviderResponse = {
   schemaVersion: 1;
@@ -21,6 +42,7 @@ type AiClient = { generate(prompt: string): Promise<ProviderResponse> };
 
 const repositoryRoot = path.resolve(process.cwd(), "../..");
 const vocabularyRoot = path.join(repositoryRoot, "data/vocabulary");
+const catalogPath = path.join(vocabularyRoot, "vocabulary-catalog.json");
 const topicsPath = path.join(vocabularyRoot, "topics.json");
 const promptPath = path.join(
   vocabularyRoot,
@@ -30,11 +52,17 @@ const workingRoot = path.join(vocabularyRoot, "working/topic-classification");
 const manifestPath = path.join(workingRoot, "manifest.json");
 const outputRoot = path.join(workingRoot, "output");
 const rejectedRoot = path.join(workingRoot, "rejected");
-const provider = (process.env.VOCAB_AI_PROVIDER ?? "gemini").trim();
+const providerValue = (process.env.VOCAB_AI_PROVIDER ?? "gemini").trim();
+if (providerValue !== "gemini" && providerValue !== "openai-compatible") {
+  throw new Error(`Unsupported vocabulary AI provider "${providerValue}"`);
+}
+const provider: ClassificationProvider = providerValue;
 const model =
   process.env.VOCAB_TOPIC_MODEL?.trim() ||
   process.env.GEMINI_VOCAB_POS_CORRECTION_MODEL?.trim() ||
   "gemini-2.5-flash";
+const debug =
+  process.env.VOCAB_AI_DEBUG?.trim().toLowerCase() === "true";
 
 const responseSchema = {
   type: "object",
@@ -150,11 +178,21 @@ const createClient = (systemInstruction: string): AiClient => {
 };
 
 async function main() {
-  const [plan, topics, systemInstruction] = await Promise.all([
+  const [plan, catalog, topics, systemInstruction] = await Promise.all([
     readJson<ClassificationPlan>(manifestPath),
+    readJson<VocabularyCatalogItem[]>(catalogPath),
     readJson<VocabularyTopicDefinition[]>(topicsPath),
     readFile(promptPath, "utf8"),
   ]);
+  const currentPlan = createClassificationPlan(catalog, plan.batchSize, {
+    topics,
+    prompt: systemInstruction,
+  });
+  if (!isDeepStrictEqual(currentPlan, plan)) {
+    throw new Error(
+      "Classification manifest is stale; run data:prepare-topics again",
+    );
+  }
   const targetBatch = process.argv
     .slice(2)
     .find((argument) => /^batch-\d{3}$/u.test(argument));
@@ -173,16 +211,104 @@ async function main() {
     mkdir(outputRoot, { recursive: true }),
     mkdir(rejectedRoot, { recursive: true }),
   ]);
+  const reporter = createClassificationProgressReporter({
+    debug,
+    write: (line) => console.log(line),
+  });
+  reporter.emit({
+    event: "run-start",
+    requested: batches.length,
+    totalBatches: batches.length,
+    concurrency: Math.min(concurrency, batches.length),
+    provider,
+    model,
+  });
   const client = createClient(systemInstruction);
   const topicSlugs = new Set(topics.map((topic) => topic.slug));
   const queue = [...batches];
+  const batchIndexById = new Map(
+    batches.map((batch, index) => [batch.batchId, index + 1]),
+  );
+  const summary: ClassificationRunSummary & { stale: number } = {
+    requested: batches.length,
+    succeeded: 0,
+    reused: 0,
+    rejected: 0,
+    stale: 0,
+  };
 
   const worker = async () => {
     while (queue.length > 0) {
       const batch = queue.shift();
       if (!batch) return;
+      const batchIndex = batchIndexById.get(batch.batchId);
+      const startedAt = Date.now();
       const outputPath = path.join(outputRoot, batch.outputFile);
-      if (await exists(outputPath)) continue;
+      const rejectedPath = path.join(rejectedRoot, batch.outputFile);
+      const identity = createClassificationExecutionIdentity({
+        plan,
+        batch,
+        provider,
+        model,
+      });
+      reporter.emit({
+        event: "batch-start",
+        batchId: batch.batchId,
+        batchIndex,
+        totalBatches: batches.length,
+        provider,
+        model,
+        inputSha256: identity.inputSha256,
+        executionSha256: identity.executionSha256,
+        recordCount: batch.records.length,
+      });
+
+      if (await exists(outputPath)) {
+        let reuse = { reusable: false, reason: "invalid-output" };
+        try {
+          reuse = validateReusableClassificationOutput(
+            await readJson<unknown>(outputPath),
+            identity,
+            batch,
+            topicSlugs,
+          );
+        } catch {
+          reuse = { reusable: false, reason: "invalid-output" };
+        }
+
+        if (reuse.reusable) {
+          summary.reused += 1;
+          await rm(rejectedPath, { force: true });
+          reporter.emit({
+            event: "batch-reused",
+            batchId: batch.batchId,
+            batchIndex,
+            totalBatches: batches.length,
+            durationMs: Date.now() - startedAt,
+            reason: reuse.reason,
+            provider,
+            model,
+            inputSha256: identity.inputSha256,
+            executionSha256: identity.executionSha256,
+            recordCount: batch.records.length,
+          });
+          continue;
+        }
+
+        summary.stale += 1;
+        reporter.emit({
+          event: "batch-stale",
+          batchId: batch.batchId,
+          batchIndex,
+          totalBatches: batches.length,
+          reason: reuse.reason,
+          provider,
+          model,
+          inputSha256: identity.inputSha256,
+          executionSha256: identity.executionSha256,
+          recordCount: batch.records.length,
+        });
+      }
 
       try {
         const response = await client.generate(
@@ -199,11 +325,43 @@ async function main() {
         if (validation.errors.length > 0) {
           throw new Error(validation.errors.join("\n"));
         }
-        await writeJsonAtomically(outputPath, { records });
-      } catch (error) {
-        await writeJsonAtomically(path.join(rejectedRoot, batch.outputFile), {
+        await writeJsonAtomically(outputPath, { ...identity, records });
+        await rm(rejectedPath, { force: true });
+        summary.succeeded += 1;
+        reporter.emit({
+          event: "batch-success",
           batchId: batch.batchId,
-          error: error instanceof Error ? error.message : String(error),
+          batchIndex,
+          totalBatches: batches.length,
+          durationMs: Date.now() - startedAt,
+          provider,
+          model,
+          inputSha256: identity.inputSha256,
+          executionSha256: identity.executionSha256,
+          recordCount: records.length,
+        });
+      } catch (error) {
+        const sanitized = sanitizeProviderError(error);
+        summary.rejected += 1;
+        await writeJsonAtomically(rejectedPath, {
+          schemaVersion: 2,
+          batchId: batch.batchId,
+          executionSha256: identity.executionSha256,
+          errorCode: sanitized.code,
+          errorMessage: sanitized.message,
+        });
+        reporter.emit({
+          event: "batch-rejected",
+          batchId: batch.batchId,
+          batchIndex,
+          totalBatches: batches.length,
+          durationMs: Date.now() - startedAt,
+          reason: sanitized.code,
+          provider,
+          model,
+          inputSha256: identity.inputSha256,
+          executionSha256: identity.executionSha256,
+          recordCount: batch.records.length,
         });
       }
     }
@@ -212,13 +370,21 @@ async function main() {
   await Promise.all(
     Array.from({ length: Math.min(concurrency, batches.length) }, worker),
   );
-  console.log(
-    JSON.stringify({
-      action: "vocabulary-topic-classification-provider-run-finished",
-      requestedBatches: batches.length,
-      databaseUpdated: false,
-    }),
-  );
+  reporter.emit({
+    event: "run-finished",
+    requested: summary.requested,
+    succeeded: summary.succeeded,
+    reused: summary.reused,
+    stale: summary.stale,
+    rejected: summary.rejected,
+    provider,
+    model,
+  });
+  if (getClassificationRunExitCode(summary) !== 0) {
+    throw new Error(
+      `Topic classification incomplete: ${summary.succeeded + summary.reused}/${summary.requested} batches completed`,
+    );
+  }
 }
 
 void main().catch((error: unknown) => {

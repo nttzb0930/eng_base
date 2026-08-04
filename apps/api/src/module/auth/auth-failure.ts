@@ -1,4 +1,8 @@
-import { BadRequestException, UnauthorizedException } from "@nestjs/common";
+import {
+  BadRequestException,
+  ServiceUnavailableException,
+  UnauthorizedException,
+} from "@nestjs/common";
 
 export function authBadRequest(publicCode: string, internalReason: string) {
   return withInternalReason(
@@ -11,6 +15,13 @@ export function authUnauthorized(publicCode: string, internalReason: string) {
   return withInternalReason(
     new UnauthorizedException(publicCode),
     internalReason
+  );
+}
+
+export function authUnavailable(publicCode: string, internalReason: string) {
+  return withInternalReason(
+    new ServiceUnavailableException(publicCode),
+    internalReason,
   );
 }
 

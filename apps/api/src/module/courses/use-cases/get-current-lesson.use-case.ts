@@ -22,7 +22,7 @@ export class GetCurrentLessonUseCase extends CourseLearningMapper {
       where: { id: lessonId },
       include: {
         challenges: {
-          orderBy: { order: "asc" },
+          orderBy: [{ order: "asc" }, { id: "asc" }],
           include: {
             vocabulary_items: {
               include: {
@@ -33,7 +33,7 @@ export class GetCurrentLessonUseCase extends CourseLearningMapper {
                   where: { user_id: userId },
                 },
                 vocabulary_examples: {
-                  orderBy: { order: "asc" },
+                  orderBy: [{ order: "asc" }, { id: "asc" }],
                 },
               },
             },

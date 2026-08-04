@@ -9,7 +9,18 @@ test("Dashboard and Leaderboard resources preserve read routes", async () => {
   const http = {
     async get<T>(path: string) {
       requests.push({ method: "GET", path });
-      const data = path === "/leaderboard" ? [{ userId: "u1" }] : { overview: {} };
+      const data =
+        path === "/leaderboard"
+          ? [{ userId: "u1" }]
+          : {
+              overview: {},
+              streak: {
+                currentStreak: 3,
+                longestStreak: 5,
+                lastLearningAt: new Date("2026-07-24T10:00:00.000Z"),
+                timeZone: "UTC",
+              },
+            };
       return { data: data as T };
     },
   };
@@ -23,6 +34,14 @@ test("Dashboard and Leaderboard resources preserve read routes", async () => {
     { method: "GET", path: "/dashboard" },
     { method: "GET", path: "/leaderboard" },
   ]);
-  assert.deepEqual(dashboard, { overview: {} });
+  assert.deepEqual(dashboard, {
+    overview: {},
+    streak: {
+      currentStreak: 3,
+      longestStreak: 5,
+      lastLearningAt: new Date("2026-07-24T10:00:00.000Z"),
+      timeZone: "UTC",
+    },
+  });
   assert.deepEqual(leaderboard, [{ userId: "u1" }]);
 });

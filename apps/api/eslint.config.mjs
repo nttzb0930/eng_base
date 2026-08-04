@@ -77,7 +77,6 @@ export default tseslint.config(
     // Remove individual entries as these call sites gain typed interfaces.
     files: [
       "scripts/export-vocab.ts",
-      "scripts/seed.ts",
       "src/module/placement-test/placement-test.controller.ts",
       "src/module/placement-test/placement-test.service.ts",
       "src/common/decorators/filter-parse.decorator.ts",

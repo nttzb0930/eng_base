@@ -4,6 +4,7 @@ import { join } from "node:path";
 import test from "node:test";
 
 const sourceRoot = join(import.meta.dirname, "..", "src");
+const repositoryRoot = join(import.meta.dirname, "..", "..", "..");
 
 test("Admin delivery belongs to its business owner", () => {
   const adminRoot = join(sourceRoot, "module/admin");
@@ -88,4 +89,28 @@ test("Course producers use the Shared root Interface", () => {
     assert.equal(source.includes("@repo/shared/courses"), false, file);
     assert.equal(source.includes("CourseDto"), false, file);
   }
+});
+
+test("Certificate domain ownership has one accepted decision", () => {
+  const adrPath = join(
+    repositoryRoot,
+    "docs/adr/0022-certificate-domain-ownership.md"
+  );
+
+  assert.ok(existsSync(adrPath), "ADR 0022 must exist");
+
+  const adr = readFileSync(adrPath, "utf8");
+  assert.match(adr, /Status: Accepted/);
+  assert.match(
+    adr,
+    /Decision: Certificate is (a Course|a vocabulary taxonomy)/
+  );
+  assert.doesNotMatch(adr, /TBD|undecided|decide later/i);
+
+  const courseArchitecture = readFileSync(
+    join(repositoryRoot, "docs/architecture/course-content.md"),
+    "utf8"
+  );
+  assert.match(courseArchitecture, /Certificate learning is owned by Courses/);
+  assert.match(courseArchitecture, /ADR 0022/);
 });

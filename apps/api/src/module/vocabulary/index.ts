@@ -1,5 +1,11 @@
 export { VocabularyModule } from "./vocabulary.module";
 export { GetSavedVocabularyWordsUseCase } from "./use-cases/get-saved-vocabulary-words.use-case";
+export { FindVocabularyInTextUseCase } from "./use-cases/find-vocabulary-in-text.use-case";
+export type { VocabularyTextMatch } from "./use-cases/find-vocabulary-in-text.use-case";
+export {
+  getVocabularyLearnerState,
+  summarizeVocabularyLearnerStates,
+} from "./use-cases/vocabulary-learner-state.policy";
 export {
   getBlankedExample,
   getDistractors,

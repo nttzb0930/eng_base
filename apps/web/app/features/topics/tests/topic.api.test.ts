@@ -12,11 +12,11 @@ test("Topic resource preserves list and detail routes", async () => {
     },
   });
 
-  await api.list();
-  await api.detail("travel", "A1");
+  await api.list("vi");
+  await api.detail("travel", "vi", "A1");
 
   assert.deepEqual(requests, [
-    { method: "GET", path: "/topics" },
-    { method: "GET", path: "/topics/travel?level=A1" },
+    { method: "GET", path: "/topics?locale=vi" },
+    { method: "GET", path: "/topics/travel?locale=vi&level=A1" },
   ]);
 });

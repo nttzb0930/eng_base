@@ -14,6 +14,7 @@ import {
   GetUserProgressUseCase,
 } from "../courses";
 import { CompleteChallengeUseCase } from "./use-cases/complete-challenge.use-case";
+import { GetCefrLevelProgressUseCase } from "./use-cases/get-cefr-level-progress.use-case";
 import { ReduceHeartsUseCase } from "./use-cases/reduce-hearts.use-case";
 import { RefillHeartsUseCase } from "./use-cases/refill-hearts.use-case";
 import { ResetLessonProgressUseCase } from "./use-cases/reset-lesson-progress.use-case";
@@ -26,6 +27,7 @@ export class ProgressController {
     private readonly getUserProgressGoal: GetUserProgressUseCase,
     private readonly getCourseProgressGoal: GetCourseProgressUseCase,
     private readonly getLessonPercentageGoal: GetLessonPercentageUseCase,
+    private readonly getCefrLevelProgressGoal: GetCefrLevelProgressUseCase,
     private readonly selectActiveCourse: SelectActiveCourseUseCase,
     private readonly reduceHeartsGoal: ReduceHeartsUseCase,
     private readonly refillHeartsGoal: RefillHeartsUseCase,
@@ -46,6 +48,11 @@ export class ProgressController {
   @Get("lesson-percentage")
   getLessonPercentage(@CurrentUserId() userId: string) {
     return this.getLessonPercentageGoal.execute(userId);
+  }
+
+  @Get("cefr-levels")
+  getCefrLevels(@CurrentUserId() userId: string) {
+    return this.getCefrLevelProgressGoal.execute(userId);
   }
 
   @Post("courses/:id")

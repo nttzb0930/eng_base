@@ -1,16 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import {
-  LogOut,
-  Home,
-  BookOpen,
-  Target,
-  Trophy,
-  Bookmark,
-  Heart,
-  Layers,
-} from "lucide-react";
+import { LogOut, Home, BookOpen, Trophy, Heart, Layers } from "lucide-react";
 import Image from "next/image";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { useTranslations } from "next-intl";
@@ -57,13 +48,36 @@ export const Header = ({ className }: HeaderProps) => {
   }, []);
 
   const navItems = [
-    { label: t("dashboard"), href: "/dashboard", icon: Home },
-    { label: t("learn"), href: "/learn", icon: BookOpen },
-    { label: t("practice"), href: "/practice", icon: Target },
-    { label: t("topics"), href: "/topics", icon: Bookmark },
-    { label: t("savedWords"), href: "/saved-words", icon: Heart },
-    { label: t("flashcards"), href: "/flashcards", icon: Layers },
-    { label: t("leaderboard"), href: "/leaderboard", icon: Trophy },
+    {
+      label: t("dashboard"),
+      href: "/dashboard",
+      icon: Home,
+      activePrefixes: ["/dashboard"],
+    },
+    {
+      label: t("learn"),
+      href: "/learn",
+      icon: BookOpen,
+      activePrefixes: ["/learn", "/practice", "/reading"],
+    },
+    {
+      label: t("savedWords"),
+      href: "/saved-words",
+      icon: Heart,
+      activePrefixes: ["/saved-words"],
+    },
+    {
+      label: t("flashcards"),
+      href: "/flashcards",
+      icon: Layers,
+      activePrefixes: ["/flashcards"],
+    },
+    {
+      label: t("leaderboard"),
+      href: "/leaderboard",
+      icon: Trophy,
+      activePrefixes: ["/leaderboard"],
+    },
   ];
 
   return (
@@ -87,10 +101,10 @@ export const Header = ({ className }: HeaderProps) => {
             className="h-[38px] w-[38px]"
           />
           <div>
-            <h1 className="text-base font-black leading-none tracking-tight text-slate-800">
+            <h1 className="text-base font-semibold leading-none tracking-tight text-slate-800">
               {appName}
             </h1>
-            <p className="mt-0.5 text-[10px] font-semibold leading-none text-slate-400">
+            <p className="mt-0.5 text-[10px] font-normal leading-none text-slate-400">
               English, every day
             </p>
           </div>
@@ -104,16 +118,22 @@ export const Header = ({ className }: HeaderProps) => {
           {navItems.map((item) => {
             const Icon = item.icon;
             const localizedHref = withLocale(item.href, locale);
-            const isActive = pathname === localizedHref;
+            const isActive = item.activePrefixes.some((prefix) => {
+              const localizedPrefix = withLocale(prefix, locale);
+              return (
+                pathname === localizedPrefix ||
+                pathname.startsWith(localizedPrefix + "/")
+              );
+            });
 
             return (
               <Link
                 key={item.href}
                 href={localizedHref}
                 className={cn(
-                  "relative flex flex-shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-1.5 text-[13px] font-semibold transition-all duration-200",
+                  "relative flex flex-shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-1.5 text-[13px] font-medium transition-all duration-200",
                   isActive
-                    ? "font-extrabold text-sky-600"
+                    ? "text-sky-600"
                     : "text-slate-500 hover:text-slate-900"
                 )}
               >

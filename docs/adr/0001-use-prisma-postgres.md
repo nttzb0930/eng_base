@@ -27,8 +27,9 @@ Drizzle files and config are removed from the active code path.
   migrations.
 - `pnpm --filter @repo/api db:migrate:deploy` applies committed migrations.
 - `pnpm --filter @repo/api db:studio` opens Prisma Studio.
-- `pnpm --filter @repo/api db:seed` loads the canonical English vocabulary
-  catalog; it is an explicit data operation, not an application startup step.
+- `pnpm --filter @repo/api db:seed:dev` is an explicit destructive
+  local-development operation and refuses production. Production canonical
+  Vocabulary synchronization uses the separately reviewed bootstrap runbook.
 - NestJS capability modules hide Prisma details from Web and Admin.
 - `db:push` remains available for disposable local exploration but does not
   replace committed migrations.

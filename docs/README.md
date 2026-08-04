@@ -57,6 +57,16 @@ requires a database write.
 
 - [Vocabulary data pipeline](data/vocabulary-pipeline.md): canonical inputs,
   generated artifacts, classification, expansion, seed safety, and review gates.
+- [TOEIC Writing licensed-content pipeline](data/toeic-writing-pipeline.md):
+  checksum-approved Part 1/2 inventory, private image download, validation, and
+  database-write boundary.
+
+## Product features
+
+- [Feature overview](features-overview.md): trạng thái triển khai và lộ trình
+  tiếp theo cho CEFR vocabulary, Anh - Việt, quiz hai chiều, distractor,
+  Reading, AI Writing, pronunciation audio, personalized review và AI Learning
+  Assistant.
 
 ## Architecture decision records
 

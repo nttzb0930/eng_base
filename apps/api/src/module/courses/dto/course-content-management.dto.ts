@@ -1,13 +1,16 @@
 import {
   IsBoolean,
   IsEnum,
+  IsIn,
   IsNotEmpty,
   IsNumber,
   IsOptional,
   IsString,
   Matches,
+  ValidateIf,
 } from "class-validator";
 import {
+  CEFR_LEVELS,
   LESSON_CHALLENGE_DIRECTIONS,
   LESSON_CHALLENGE_TYPES,
   type CreateCourseLessonPayload,
@@ -15,6 +18,7 @@ import {
   type CreateCourseUnitPayload,
   type CreateLessonChallengeOptionPayload,
   type CreateLessonChallengePayload,
+  type CefrLevel,
   type LessonChallengeDirection,
   type LessonChallengeType,
   type UpdateCourseLessonPayload,
@@ -74,6 +78,11 @@ export class UnitCreateDto implements CreateCourseUnitPayload {
   @IsNumber()
   @IsNotEmpty()
   order!: number;
+
+  @ValidateIf((_object, value) => value !== null)
+  @IsString()
+  @IsIn(CEFR_LEVELS)
+  cefrLevel!: CefrLevel | null;
 }
 
 export class UnitUpdateDto implements UpdateCourseUnitPayload {
@@ -92,6 +101,12 @@ export class UnitUpdateDto implements UpdateCourseUnitPayload {
   @IsNumber()
   @IsOptional()
   order?: number;
+
+  @ValidateIf((_object, value) => value !== null)
+  @IsString()
+  @IsIn(CEFR_LEVELS)
+  @IsOptional()
+  cefrLevel?: CefrLevel | null;
 }
 
 export class LessonCreateDto implements CreateCourseLessonPayload {

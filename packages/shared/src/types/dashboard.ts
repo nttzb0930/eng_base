@@ -1,5 +1,12 @@
 import type { PracticeCefrLevel } from "./practice.js";
 
+export type DashboardStreak = {
+  currentStreak: number;
+  longestStreak: number;
+  lastLearningAt: Date | null;
+  timeZone: "UTC";
+};
+
 export type DashboardStats = {
   overview: {
     totalVocabulary: number;
@@ -13,12 +20,14 @@ export type DashboardStats = {
     wrongCount: number;
     accuracy: number;
   };
+  streak: DashboardStreak;
   levelProgress: Array<{
     level: PracticeCefrLevel;
     total: number;
     learned: number;
     mastered: number;
     accuracy: number;
+    due: number;
   }>;
   topWeakWords: Array<{
     id: number;

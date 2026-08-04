@@ -7,7 +7,7 @@ const globalForPrisma = globalThis as unknown as {
   prismaSchemaVersion?: string;
 };
 
-const PRISMA_SCHEMA_VERSION = "2026-07-11-practice-session-results";
+const PRISMA_SCHEMA_VERSION = "2026-08-01-toeic-vocabulary-cache";
 
 const prisma =
   globalForPrisma.scriptPrisma &&

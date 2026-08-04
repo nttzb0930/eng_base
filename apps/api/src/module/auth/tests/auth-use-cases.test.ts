@@ -5,6 +5,7 @@ import type { users } from "@prisma/client";
 import type { PrismaService } from "../../../database/prisma/prisma.service";
 import { AuthTokenService } from "../service/auth-token.service";
 import { PasswordService } from "../service/password.service";
+import { VerificationCodeService } from "../service/verification-code.service";
 import { LoginUserUseCase } from "../use-cases/login-user.usecase";
 import { LogoutUserUseCase } from "../use-cases/logout-user.usecase";
 import { RefreshTokenUseCase } from "../use-cases/refresh-token.usecase";
@@ -17,6 +18,7 @@ const tokens = new AuthTokenService({
   refreshExpiresIn: "7d",
 });
 const passwords = new PasswordService();
+const enabledSettings = { get: async () => true };
 
 function createPrismaFake(initialUser?: users) {
   let user = initialUser;
@@ -27,12 +29,36 @@ function createPrismaFake(initialUser?: users) {
       create: async ({
         data,
       }: {
-        data: Omit<users, "id" | "created_at" | "updated_at" | "refresh_token">;
+        data: Omit<
+          users,
+          | "id"
+          | "created_at"
+          | "updated_at"
+          | "refresh_token"
+          | "email_verified_at"
+          | "verification_code_hash"
+          | "verification_code_expires_at"
+          | "verification_attempts"
+          | "verification_sent_at"
+          | "password_reset_code_hash"
+          | "password_reset_code_expires_at"
+          | "password_reset_attempts"
+          | "password_reset_sent_at"
+        >;
       }) => {
         user = {
           ...data,
           id: "created-user",
           refresh_token: null,
+          email_verified_at: null,
+          verification_code_hash: null,
+          verification_code_expires_at: null,
+          verification_attempts: 0,
+          verification_sent_at: null,
+          password_reset_code_hash: null,
+          password_reset_code_expires_at: null,
+          password_reset_attempts: 0,
+          password_reset_sent_at: null,
           created_at: new Date(0),
           updated_at: new Date(0),
         };
@@ -63,6 +89,15 @@ async function existingUser(role: "USER" | "ADMIN" = "USER"): Promise<users> {
     password: await passwords.hash("secret"),
     role,
     refresh_token: null,
+    email_verified_at: new Date(0),
+    verification_code_hash: null,
+    verification_code_expires_at: null,
+    verification_attempts: 0,
+    verification_sent_at: null,
+    password_reset_code_hash: null,
+    password_reset_code_expires_at: null,
+    password_reset_attempts: 0,
+    password_reset_sent_at: null,
     created_at: new Date(0),
     updated_at: new Date(0),
   };
@@ -96,7 +131,26 @@ test("login use case preserves learner and admin result Interfaces", async () =>
 
 test("register, refresh and logout use cases preserve session persistence", async () => {
   const fake = createPrismaFake();
-  const register = new RegisterUserUseCase(fake.prisma, passwords);
+  const verificationEmails: Array<{
+    to: string;
+    code: string;
+    expiresInMinutes: number;
+  }> = [];
+  const register = new RegisterUserUseCase(
+    fake.prisma,
+    passwords,
+    {
+      sendVerificationEmail: async (input: {
+        to: string;
+        code: string;
+        expiresInMinutes: number;
+      }) => {
+        verificationEmails.push(input);
+      },
+    },
+    new VerificationCodeService(passwords),
+    enabledSettings as never,
+  );
   assert.deepEqual(
     await register.execute({
       username: "new-user",
@@ -104,9 +158,16 @@ test("register, refresh and logout use cases preserve session persistence", asyn
       password: "secret",
       fullName: "New User",
     }),
-    { success: true }
+    {
+      success: true,
+      verificationRequired: true,
+      email: "new@example.com",
+    }
   );
   assert.equal(fake.currentUser()?.email, "new@example.com");
+  assert.equal(verificationEmails.length, 1);
+  assert.equal(verificationEmails[0].to, "new@example.com");
+  assert.equal(verificationEmails[0].code.length, 6);
 
   const refreshToken = tokens.createRefreshToken("created-user", "USER");
   await fake.prisma.users.update({
@@ -123,6 +184,59 @@ test("register, refresh and logout use cases preserve session persistence", asyn
     refreshToken
   );
   assert.equal(fake.currentUser()?.refresh_token, null);
+});
+
+test("registration succeeds when the welcome email provider fails", async () => {
+  const fake = createPrismaFake();
+  const register = new RegisterUserUseCase(
+    fake.prisma,
+    passwords,
+    {
+      sendVerificationEmail: async () => {
+        throw new Error("smtp unavailable");
+      },
+    },
+    new VerificationCodeService(passwords),
+    enabledSettings as never,
+  );
+
+  assert.deepEqual(
+    await register.execute({
+      username: "email-fallback",
+      email: "fallback@example.com",
+      password: "secret",
+      fullName: "Email Fallback",
+    }),
+    {
+      success: true,
+      verificationRequired: true,
+      email: "fallback@example.com",
+    }
+  );
+  assert.equal(fake.currentUser()?.email, "fallback@example.com");
+});
+
+test("registration is unavailable when the runtime policy is disabled", async () => {
+  const fake = createPrismaFake();
+  const register = new RegisterUserUseCase(
+    fake.prisma,
+    passwords,
+    { sendVerificationEmail: async () => undefined },
+    new VerificationCodeService(passwords),
+    { get: async () => false } as never,
+  );
+
+  await assert.rejects(
+    () => register.execute({
+      username: "closed-user",
+      email: "closed@example.com",
+      password: "secret",
+      fullName: "Closed User",
+    }),
+    (error: unknown) =>
+      error instanceof Error && error.message === "REGISTRATION_DISABLED",
+  );
+  assert.equal(fake.currentUser(), undefined);
 });
 
 test("Auth failures keep public codes while carrying safe internal reasons", async () => {
@@ -150,5 +264,26 @@ test("Auth failures keep public codes while carrying safe internal reasons", asy
       error.message === "REFRESH_TOKEN_INVALID" &&
       error.cause instanceof Error &&
       error.cause.message === "refresh_token_missing"
+  );
+});
+
+test("learner login is blocked until email verification", async () => {
+  const user = await existingUser();
+  user.email_verified_at = null;
+  await assert.rejects(
+    () =>
+      new LoginUserUseCase(
+        createPrismaFake(user).prisma,
+        tokens,
+        passwords
+      ).execute({
+        username: user.username,
+        password: "secret",
+      }),
+    (error: unknown) =>
+      error instanceof Error &&
+      error.message === "EMAIL_NOT_VERIFIED" &&
+      error.cause instanceof Error &&
+      error.cause.message === "email_not_verified"
   );
 });

@@ -12,5 +12,6 @@ export function useUnits() {
   return useQuery({
     queryKey: unitKeys.all,
     queryFn: unitApi.list,
+    staleTime: 5 * 60 * 1000,
   });
 }

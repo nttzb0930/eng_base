@@ -2,30 +2,35 @@
 
 import { useTranslations } from "next-intl";
 import { Sparkles } from "lucide-react";
+import { TARGET_LANGUAGE_IDS, type TargetLanguageId } from "@repo/shared";
 import { cn } from "@/app/utils/cn";
 import { motion, AnimatePresence } from "framer-motion";
 
 type LanguageOption = {
-  id: string;
   nameKey: string;
   nativeName: string;
   flagCode: string;
   isBeta?: boolean;
 };
 
-const LANGUAGES: LanguageOption[] = [
-  { id: "en", nameKey: "step1.langEnglish", nativeName: "English", flagCode: "gb" },
-  { id: "ja", nameKey: "step1.langJapanese", nativeName: "日本語", flagCode: "jp", isBeta: true },
-  { id: "de", nameKey: "step1.langGerman", nativeName: "Deutsch", flagCode: "de" },
-  { id: "zh", nameKey: "step1.langChinese", nativeName: "中文", flagCode: "cn" },
-  { id: "ko", nameKey: "step1.langKorean", nativeName: "한국어", flagCode: "kr" },
-];
+const LANGUAGE_METADATA: Record<TargetLanguageId, LanguageOption> = {
+  en: { nameKey: "step1.langEnglish", nativeName: "English", flagCode: "gb" },
+  ja: { nameKey: "step1.langJapanese", nativeName: "日本語", flagCode: "jp", isBeta: true },
+  de: { nameKey: "step1.langGerman", nativeName: "Deutsch", flagCode: "de" },
+  zh: { nameKey: "step1.langChinese", nativeName: "中文", flagCode: "cn" },
+  ko: { nameKey: "step1.langKorean", nativeName: "한국어", flagCode: "kr" },
+};
+
+const LANGUAGES = TARGET_LANGUAGE_IDS.map((id) => ({
+  id,
+  ...LANGUAGE_METADATA[id],
+}));
 
 type LanguageStepProps = {
-  selectedLangs: string[];
-  onToggleLang: (id: string) => void;
-  primaryLang: string | null;
-  onSetPrimary: (id: string) => void;
+  selectedLangs: TargetLanguageId[];
+  onToggleLang: (id: TargetLanguageId) => void;
+  primaryLang: TargetLanguageId | null;
+  onSetPrimary: (id: TargetLanguageId) => void;
 };
 
 export default function LanguageStep({

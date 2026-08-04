@@ -34,9 +34,7 @@ test("API infrastructure follows the capability-owned source profile", () => {
   assert.ok(existsSync(join(sourceRoot, "common/logging/logging.module.ts")));
   assert.ok(existsSync(join(sourceRoot, "config/rate-limit.config.ts")));
   assert.ok(
-    existsSync(
-      join(sourceRoot, "common/guards/application-throttler.guard.ts")
-    )
+    existsSync(join(sourceRoot, "common/guards/application-throttler.guard.ts"))
   );
   assert.ok(
     existsSync(join(sourceRoot, "common/rate-limit/rate-limit.options.ts"))
@@ -78,4 +76,75 @@ test("API root only composes Modules", () => {
     existsSync(join(sourceRoot, "health.controller.test.ts")),
     false
   );
+});
+
+test("destructive seed is exposed only as an explicit development command", () => {
+  const workspacePackage = JSON.parse(
+    readFileSync(join(apiRoot, "../..", "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+  const apiPackage = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8")
+  ) as { scripts?: Record<string, string> };
+
+  assert.equal(workspacePackage.scripts?.["db:seed"], undefined);
+  assert.equal(apiPackage.scripts?.["db:seed"], undefined);
+  assert.equal(
+    workspacePackage.scripts?.["db:seed:dev"],
+    "pnpm --filter @repo/api db:seed:dev"
+  );
+  assert.match(
+    apiPackage.scripts?.["db:seed:dev"] ?? "",
+    /scripts\/seed-dev\.ts/u
+  );
+});
+
+test("safe Vocabulary bootstrap source cannot contain destructive database operations", () => {
+  const databaseScripts = join(apiRoot, "scripts/vocabulary/database");
+  const safeFiles = filesUnder(databaseScripts)
+    .filter((file) => /vocabulary-bootstrap|bootstrap-vocabulary/u.test(file))
+    .filter((file) => file.endsWith(".ts"));
+
+  assert.ok(safeFiles.length > 0);
+  const source = safeFiles
+    .map((file) => readFileSync(join(apiRoot, file), "utf8"))
+    .join("\n");
+  assert.doesNotMatch(source, /\.deleteMany\s*\(/u);
+  assert.doesNotMatch(source, /\bDELETE\s+FROM\b/iu);
+  assert.doesNotMatch(source, /\bTRUNCATE\b/iu);
+  assert.doesNotMatch(source, /db:migrate:reset/u);
+});
+
+test("canonical docs define the reviewed production Vocabulary bootstrap runbook", () => {
+  const workspaceRoot = join(apiRoot, "../..");
+  const vocabularyGuide = readFileSync(
+    join(workspaceRoot, "docs/data/vocabulary-pipeline.md"),
+    "utf8"
+  );
+  const deploymentGuide = readFileSync(
+    join(workspaceRoot, "docs/guides/ci-cd.md"),
+    "utf8"
+  );
+  const verificationGuide = readFileSync(
+    join(workspaceRoot, "docs/guides/verification.md"),
+    "utf8"
+  );
+
+  assert.match(vocabularyGuide, /db:seed:dev/u);
+  assert.match(vocabularyGuide, /data:bootstrap-vocabulary -- plan/u);
+  assert.match(vocabularyGuide, /data:bootstrap-vocabulary -- dry-run/u);
+  assert.match(
+    vocabularyGuide,
+    /data:bootstrap-vocabulary -- apply --confirm/u
+  );
+  assert.match(vocabularyGuide, /7,429 records/u);
+  assert.doesNotMatch(vocabularyGuide, /currently contains 3,000 records/u);
+  assert.match(deploymentGuide, /backup/iu);
+  assert.match(
+    deploymentGuide,
+    /npm run data:bootstrap-vocabulary:compiled/u
+  );
+  assert.match(deploymentGuide, /not.*automatic/iu);
+  assert.match(verificationGuide, /vocabulary-bootstrap-plan\.test\.ts/u);
+  assert.match(verificationGuide, /vocabulary-bootstrap-store\.test\.ts/u);
+  assert.match(verificationGuide, /bootstrap-vocabulary\.test\.ts/u);
 });

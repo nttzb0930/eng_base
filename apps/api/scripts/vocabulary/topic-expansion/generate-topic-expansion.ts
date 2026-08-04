@@ -1,9 +1,28 @@
 import "dotenv/config";
 
 import { GoogleGenAI } from "@google/genai";
-import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import {
+  mkdir,
+  readFile,
+  readdir,
+  rename,
+  rm,
+  writeFile,
+} from "node:fs/promises";
 import path from "node:path";
 
+import {
+  createTopicExpansionExclusionWords,
+  createTopicDeficitReport,
+  formatTopicExpansionChunkFileName,
+  formatGenerationCreated,
+  formatGenerationStart,
+  formatTopicDeficitReport,
+  formatTopicExpansionEvent,
+  getNextTopicExpansionChunkNumber,
+  parseTopicExpansionArguments,
+  resolveTopicExpansionRequest,
+} from "./topic-expansion-cli.js";
 import {
   calculateTopicDeficits,
   validateExpansionArtifact,
@@ -46,9 +65,52 @@ const model =
   process.env.VOCAB_TOPIC_MODEL?.trim() ||
   process.env.GEMINI_VOCAB_POS_CORRECTION_MODEL?.trim() ||
   "gemini-2.5-flash";
+const debugEnabled = process.env.VOCAB_AI_DEBUG === "true";
+const chunkSize = Number.parseInt(
+  process.env.VOCAB_TOPIC_EXPANSION_CHUNK_SIZE ?? "30",
+  10
+);
+const startedAt = Date.now();
 
 const readJson = async <T>(filePath: string) =>
   JSON.parse(await readFile(filePath, "utf8")) as T;
+
+const readJsonIfExists = async <T>(filePath: string): Promise<T | null> => {
+  try {
+    return await readJson<T>(filePath);
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return null;
+    }
+    throw error;
+  }
+};
+
+const readDirIfExists = async (directoryPath: string): Promise<string[]> => {
+  try {
+    return await readdir(directoryPath);
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return [];
+    }
+    throw error;
+  }
+};
+
+const writeJsonAtomically = async (targetPath: string, value: unknown) => {
+  const temporaryPath = `${targetPath}.${process.pid}.tmp`;
+  try {
+    await writeFile(
+      temporaryPath,
+      `${JSON.stringify(value, null, 2)}\n`,
+      "utf8"
+    );
+    await rename(temporaryPath, targetPath);
+  } catch (error) {
+    await rm(temporaryPath, { force: true });
+    throw error;
+  }
+};
 
 const parseJson = (text: string): ProviderResponse => {
   const parsed = JSON.parse(
@@ -56,10 +118,12 @@ const parseJson = (text: string): ProviderResponse => {
       .trim()
       .replace(/^```(?:json)?/iu, "")
       .replace(/```$/u, "")
-      .trim(),
+      .trim()
   ) as Partial<ProviderResponse>;
   if (parsed.schemaVersion !== 1 || !Array.isArray(parsed.words)) {
-    throw new Error("AI response must contain schemaVersion 1 and a words array");
+    throw new Error(
+      "AI response must contain schemaVersion 1 and a words array"
+    );
   }
   return parsed as ProviderResponse;
 };
@@ -79,7 +143,10 @@ const responseSchema = {
           normalizedWord: { type: "string" },
           pos: { type: "string" },
           posVi: { type: "string" },
-          cefrLevel: { type: "string", enum: ["A1", "A2", "B1", "B2", "C1", "C2"] },
+          cefrLevel: {
+            type: "string",
+            enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
+          },
           phonetic: { type: "string" },
           primaryMeaningVi: { type: "string" },
           meaningVi: { type: "string" },
@@ -101,8 +168,17 @@ const responseSchema = {
           },
         },
         required: [
-          "word", "normalizedWord", "pos", "posVi", "cefrLevel", "phonetic",
-          "primaryMeaningVi", "meaningVi", "exampleEn", "exampleVi", "examples",
+          "word",
+          "normalizedWord",
+          "pos",
+          "posVi",
+          "cefrLevel",
+          "phonetic",
+          "primaryMeaningVi",
+          "meaningVi",
+          "exampleEn",
+          "exampleVi",
+          "examples",
         ],
       },
     },
@@ -128,12 +204,16 @@ const generate = async (systemInstruction: string, prompt: string) => {
         temperature: 0.2,
         response_format: { type: "json_object" },
         messages: [
-          { role: "system", content: `${systemInstruction}\n\nJSON schema:\n${JSON.stringify(responseSchema)}` },
+          {
+            role: "system",
+            content: `${systemInstruction}\n\nJSON schema:\n${JSON.stringify(responseSchema)}`,
+          },
           { role: "user", content: prompt },
         ],
       }),
     });
-    if (!response.ok) throw new Error(`AI provider returned HTTP ${response.status}`);
+    if (!response.ok)
+      throw new Error(`AI provider returned HTTP ${response.status}`);
     const body = (await response.json()) as {
       choices?: Array<{ message?: { content?: string } }>;
     };
@@ -159,6 +239,7 @@ const generate = async (systemInstruction: string, prompt: string) => {
 };
 
 async function main() {
+  const arguments_ = parseTopicExpansionArguments(process.argv.slice(2));
   const [catalog, topics, systemInstruction] = await Promise.all([
     readJson<VocabularyCatalogItem[]>(catalogPath),
     readJson<VocabularyTopicDefinition[]>(topicsPath),
@@ -167,75 +248,221 @@ async function main() {
   assertVocabularySourcesValid(topics, catalog);
   const minimumWords = Number.parseInt(
     process.env.VOCAB_TOPIC_MINIMUM_WORDS ?? "30",
-    10,
+    10
   );
   const deficits = calculateTopicDeficits(topics, catalog, minimumWords);
-  const topicArgument = process.argv
-    .slice(2)
-    .find((argument) => !argument.startsWith("--"));
 
-  if (!topicArgument) {
-    console.log(
-      JSON.stringify({
-        action: "vocabulary-topic-expansion-deficits",
-        minimumWords,
-        deficits,
-        providerCalled: false,
-        databaseUpdated: false,
-      }),
-    );
+  await mkdir(outputRoot, { recursive: true });
+
+  if (arguments_.topicSlug === null) {
+    const reportPath = path.join(outputRoot, "deficits.json");
+    const report = createTopicDeficitReport({
+      topics,
+      deficits,
+      minimumWords,
+      catalogItems: catalog.length,
+    });
+    await writeJsonAtomically(reportPath, report);
+
+    if (arguments_.json) {
+      console.log(JSON.stringify(report));
+    } else {
+      console.log(formatTopicDeficitReport(report, reportPath));
+    }
     return;
   }
 
-  const deficit = deficits.find((entry) => entry.slug === topicArgument);
+  const deficit = deficits.find((entry) => entry.slug === arguments_.topicSlug);
   if (!deficit) {
-    throw new Error(`Topic "${topicArgument}" has no expansion deficit`);
+    throw new Error(`Topic "${arguments_.topicSlug}" has no expansion deficit`);
   }
-  const topic = topics.find((entry) => entry.slug === topicArgument)!;
-  const existingWords = catalog
-    .filter((item) => (item.topics ?? []).includes(topic.slug))
-    .map((item) => ({ word: item.word, pos: item.pos }));
-  const generatedWords = await generate(
-    systemInstruction,
-    `Generate exactly ${deficit.requestedCount} new words for this topic:\n${JSON.stringify(
-      topic,
-    )}\n\nDo not duplicate these existing words:\n${JSON.stringify(existingWords)}`,
+  const topic = topics.find((entry) => entry.slug === arguments_.topicSlug)!;
+  const effectiveChunkSize = arguments_.chunkSize ?? chunkSize;
+  const queueMode = arguments_.chunks > 1 || arguments_.chunkSize !== null;
+  const topicOutputRoot = path.join(outputRoot, topic.slug);
+  const queueFileNames = await readDirIfExists(topicOutputRoot);
+  const pendingQueueArtifacts = (
+    await Promise.all(
+      queueFileNames
+        .filter((fileName) => /^chunk-\d{3}\.json$/u.test(fileName))
+        .sort()
+        .map((fileName) =>
+          readJson<TopicExpansionArtifact>(path.join(topicOutputRoot, fileName))
+        )
+    )
+  ).filter((artifact) => artifact.targetTopicSlug === topic.slug);
+  const legacyArtifact = await readJsonIfExists<TopicExpansionArtifact>(
+    path.join(outputRoot, `${topic.slug}.json`)
   );
-  const words: VocabularyCatalogItem[] = generatedWords.map((word) => ({
-    ...word,
-    source: "ai-topic-expansion",
-    exampleSource: "ai-topic-expansion",
-    dictionaryLookupCompleted: false,
-    topics: [topic.slug],
-  }));
-  const artifact: TopicExpansionArtifact = {
-    schemaVersion: 1,
-    status: "review",
-    targetTopicSlug: topic.slug,
-    requestedCount: deficit.requestedCount,
-    examplesPerWord: 10,
-    generatedAt: new Date().toISOString(),
-    words,
+  const pendingArtifacts =
+    legacyArtifact?.targetTopicSlug === topic.slug
+      ? [legacyArtifact, ...pendingQueueArtifacts]
+      : pendingQueueArtifacts;
+  const pendingWordCount = pendingArtifacts.reduce(
+    (total, artifact) => total + artifact.words.length,
+    0
+  );
+  const generatedInThisRun: VocabularyCatalogItem[] = [];
+  const generatedChunkFileNames: string[] = [];
+  const emitDebug = (
+    event: Parameters<typeof formatTopicExpansionEvent>[0]
+  ) => {
+    if (!debugEnabled) return;
+    console.log(formatTopicExpansionEvent(event, arguments_.json));
   };
-  const validation = validateExpansionArtifact(catalog, artifact, topics);
-  if (validation.errors.length > 0) {
-    throw new Error(validation.errors.join("\n"));
-  }
 
-  await mkdir(outputRoot, { recursive: true });
-  const outputPath = path.join(outputRoot, `${topic.slug}.json`);
-  const temporaryPath = `${outputPath}.${process.pid}.tmp`;
-  await writeFile(temporaryPath, `${JSON.stringify(artifact, null, 2)}\n`, "utf8");
-  await rename(temporaryPath, outputPath);
-  console.log(
-    JSON.stringify({
-      action: "vocabulary-topic-expansion-created-for-review",
+  for (let chunkIndex = 0; chunkIndex < arguments_.chunks; chunkIndex += 1) {
+    const remainingDeficit = {
+      ...deficit,
+      requestedCount: Math.max(
+        0,
+        deficit.requestedCount - pendingWordCount - generatedInThisRun.length
+      ),
+    };
+    if (remainingDeficit.requestedCount < 1) break;
+    const expansionRequest = resolveTopicExpansionRequest(
+      remainingDeficit,
+      effectiveChunkSize
+    );
+    const existingWords = createTopicExpansionExclusionWords({
+      topicSlug: topic.slug,
+      catalog,
+      pendingArtifacts,
+      generatedInThisRun,
+    });
+
+    emitDebug({
+      event: "run-start",
       topic: topic.slug,
+      durationMs: Date.now() - startedAt,
+      requestedWords: expansionRequest.requestedWords,
+      totalMissingWords: expansionRequest.totalMissingWords,
+      chunkSize: expansionRequest.chunkSize,
+      chunked: expansionRequest.chunked,
+    });
+
+    if (arguments_.json) {
+      console.log(
+        JSON.stringify({
+          event: "generation-start",
+          topic: topic.slug,
+          requestedWords: expansionRequest.requestedWords,
+          totalMissingWords: expansionRequest.totalMissingWords,
+          chunkSize: expansionRequest.chunkSize,
+          chunked: expansionRequest.chunked,
+        })
+      );
+    } else {
+      console.log(
+        formatGenerationStart(topic, expansionRequest.requestedWords)
+      );
+    }
+
+    const providerStartedAt = Date.now();
+    emitDebug({
+      event: "provider-request-start",
+      topic: topic.slug,
+      durationMs: providerStartedAt - startedAt,
+      requestedWords: expansionRequest.requestedWords,
+    });
+    const generatedWords = await generate(
+      systemInstruction,
+      `Generate exactly ${expansionRequest.requestedWords} new words for this topic:\n${JSON.stringify(
+        topic
+      )}\n\nDo not duplicate these existing words:\n${JSON.stringify(existingWords)}`
+    );
+    emitDebug({
+      event: "provider-response-received",
+      topic: topic.slug,
+      durationMs: Date.now() - providerStartedAt,
+      generatedWords: generatedWords.length,
+    });
+    const words: VocabularyCatalogItem[] = generatedWords.map((word) => ({
+      ...word,
+      source: "ai-topic-expansion",
+      exampleSource: "ai-topic-expansion",
+      dictionaryLookupCompleted: false,
+      topics: [topic.slug],
+    }));
+    const artifact: TopicExpansionArtifact = {
+      schemaVersion: 1,
+      status: "review",
+      targetTopicSlug: topic.slug,
+      requestedCount: expansionRequest.requestedWords,
+      examplesPerWord: 10,
+      generatedAt: new Date().toISOString(),
+      words,
+    };
+    const validationStartedAt = Date.now();
+    emitDebug({
+      event: "validation-start",
+      topic: topic.slug,
+      durationMs: validationStartedAt - startedAt,
+      generatedWords: words.length,
+    });
+    const duplicateGuardCatalog = [
+      ...catalog,
+      ...pendingArtifacts.flatMap((pendingArtifact) => pendingArtifact.words),
+      ...generatedInThisRun,
+    ];
+    const validation = validateExpansionArtifact(
+      duplicateGuardCatalog,
+      artifact,
+      topics
+    );
+    if (validation.errors.length > 0) {
+      emitDebug({
+        event: "validation-failed",
+        topic: topic.slug,
+        durationMs: Date.now() - validationStartedAt,
+        errorCount: validation.errors.length,
+      });
+      throw new Error(validation.errors.join("\n"));
+    }
+    emitDebug({
+      event: "validation-success",
+      topic: topic.slug,
+      durationMs: Date.now() - validationStartedAt,
+      generatedWords: words.length,
+    });
+
+    const outputPath = queueMode
+      ? path.join(
+          topicOutputRoot,
+          formatTopicExpansionChunkFileName(
+            getNextTopicExpansionChunkNumber([
+              ...queueFileNames,
+              ...generatedChunkFileNames,
+            ])
+          )
+        )
+      : path.join(outputRoot, `${topic.slug}.json`);
+    if (queueMode) await mkdir(topicOutputRoot, { recursive: true });
+    await writeJsonAtomically(outputPath, artifact);
+    generatedChunkFileNames.push(path.basename(outputPath));
+    generatedInThisRun.push(...words);
+    emitDebug({
+      event: "artifact-written",
+      topic: topic.slug,
+      durationMs: Date.now() - startedAt,
       generatedWords: words.length,
       outputPath,
-      databaseUpdated: false,
-    }),
-  );
+    });
+
+    if (arguments_.json) {
+      console.log(
+        JSON.stringify({
+          event: "generation-created-for-review",
+          topic: topic.slug,
+          generatedWords: words.length,
+          outputPath,
+          databaseUpdated: false,
+        })
+      );
+    } else {
+      console.log(formatGenerationCreated(topic, words.length, outputPath));
+    }
+  }
 }
 
 void main().catch((error: unknown) => {

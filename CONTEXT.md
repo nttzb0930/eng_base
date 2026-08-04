@@ -33,6 +33,32 @@ follow the ownership and dependency rules in
 - **Vocabulary progress**: the learner's persistent correctness, mastery, and scheduling state for one vocabulary item.
 - **Review session**: a set of challenges composed from saved, due, or weak vocabulary items.
 - **Practice session**: a standalone activity such as fill-blank, listening, dictation, or weak-word practice.
+- **Reading passage**: a publishable CEFR-scoped text with an optional Topic,
+  estimated reading time, and ordered comprehension questions/options.
+- **Reading attempt**: an idempotently submitted, backend-graded result owned by
+  Reading. Its answer rows keep immutable question, selected-option, and
+  correct-option text snapshots so later content edits do not rewrite history.
+- **TOEIC Reading attempt**: an authenticated Learner submission for one
+  published TOEIC test version. The API grades it from server-owned answer keys
+  and stores immutable per-question, per-Part, and explanation snapshots.
+- **TOEIC Writing task**: one published, versioned Part 1 or Part 2 prompt owned
+  by the TOEIC Writing catalog. Safe task delivery contains only exercise
+  material; reference responses remain private until submission.
+- **TOEIC Writing draft**: the single mutable response for one Learner and one
+  TOEIC Writing task. It is stored in PostgreSQL with the task content version
+  and is never learner progress in `localStorage`.
+- **TOEIC Writing submission**: an immutable, Learner-owned response created
+  with an idempotency key. It snapshots the task title, Part, and
+  source-provided reference material at submission time for stable historical
+  comparison but does not imply a score or AI feedback.
+- **TOEIC Writing AI grade**: an authenticated, Learner-owned Part 1 or Part 2
+  coaching result produced only after deterministic validation. It is separate
+  from an immutable submission and versioned by task, response, prompt, rubric,
+  and model; cached retries do not consume quota.
+- **TOEIC Grammar snapshot**: one checksum-approved, source-owned catalog of
+  Grammar topics, subtopics, lessons, shared questions, mixed sets, and
+  difficulty memberships. Grammar supports TOEIC Reading but is not owned by a
+  mock test.
 - **Learning session**: the Web lifecycle shared by Lesson, Practice, and Review
   presentation: answer feedback, attempt counts, reviewed items, and one-time
   completion recording. Each owning capability keeps its scoring, persistence
@@ -77,6 +103,23 @@ follow the ownership and dependency rules in
   delivery remains in the capability whose behavior it exposes.
 - Vocabulary owns vocabulary item/progress/example types and the mapping and
   challenge-building implementation used by learning flows.
+- Reading owns passage publication, learner discovery, comprehension grading,
+  and Reading attempt history. It may reference the Topic taxonomy, but it does
+  not update Practice sessions or Vocabulary progress.
+- TOEIC Reading owns safe published-test delivery, version-aware grading, and
+  Learner-scoped attempt history. Test detail never exposes correctness or
+  grading explanations before submission.
+- TOEIC Writing owns published Part 1-2 prompts, version-aware drafts,
+  idempotent submissions, post-submission reference comparison, and Part 1-2 AI
+  coaching. Reference content remains distinct from AI feedback. Provider calls
+  are server-only, quota-reserved, schema-validated, and disabled by default.
+- TOEIC Listening keeps Full Test exam-safe in the normal learner UI. Part
+  practice may grade one explicit selection at a time and return only that
+  question's translation, explanation, and vocabulary-catalog matches; test
+  detail still never exposes answer keys or private review fields.
+- TOEIC Grammar acquisition is private and fail-closed. Inventory, download,
+  and validation remain database-free; only an approved snapshot import may
+  replace source-owned Grammar data in PostgreSQL.
 - Add seams only when there are at least two real adapters, such as Prisma in production and an in-memory repository in tests.
 - A use case represents one goal. Plural CRUD/management use-case aggregates
   and compatibility facades that only forward to goal use cases are forbidden.

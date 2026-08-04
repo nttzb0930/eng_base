@@ -13,6 +13,7 @@ apps/api/
     schema.prisma              persistence model
     migrations/                ordered schema changes
   scripts/
+    reading/                   validated Reading content and explicit importer
     support/                   offline script adapters
     vocabulary/                data workflows grouped by goal
   src/
@@ -56,6 +57,203 @@ reads and Admin Course Management behavior.
 Admin is a caller and authorization mode, not a default business owner. An
 `/admin/*` controller stays with Users, Practice, Settings, Courses, or the
 capability whose behavior it exposes.
+
+### Runtime Settings ownership
+
+`src/module/settings` owns the typed runtime Settings registry, effective-value
+reader, Admin delivery, and persistence updates. The registry is the canonical
+owner of storage keys, defaults, ranges, parsing, and serialization for maximum
+hearts, practice words per lesson, weak-word selection, the four daily-review
+intensities, and learner registration availability.
+
+Authenticated Admin callers read all effective values with `GET
+/admin/settings` and send partial updates with `PUT /admin/settings`. A bulk
+update validates the complete request before transactionally upserting the
+changed values. The legacy `GET` and `POST /admin/settings/MAX_HEARTS` routes
+remain compatibility Interfaces and use the same typed registry; arbitrary
+legacy keys are rejected.
+
+Progress, Practice, Review, and Auth consume the Settings public reader instead
+of querying `system_settings` directly. A value missing from persistence, or an
+invalid stored value, resolves to its registry default. Changes affect new
+requests and newly started learning sessions; they do not rewrite an active
+session's already-created state.
+
+### Reading ownership
+
+`src/module/reading` owns both Admin authoring/publication and Learner
+discovery, submission, history, and result delivery. Passage content is
+validated before persistence and again before publication. Learner detail
+queries never select option correctness; grading uses server-owned content only.
+
+Reading submissions are idempotent per `(user_id, submission_key)`. A retry with
+the same normalized answer fingerprint returns the persisted attempt, while a
+different payload using the same key is rejected. Attempt answers persist
+immutable text snapshots so editing a passage cannot alter prior results.
+
+Reading may use `vocabulary_topics` as an optional taxonomy reference. It does
+not write `practice_sessions`, `practice_session_items`, or
+`user_vocabulary_progress`; Reading accuracy is an independent learning signal.
+
+`data/reading/a1/passages.json` is the canonical, versioned Reading A1 content
+source. Pure modules under `scripts/reading/content` validate its structure,
+semantic invariants, Topic references, answer keys, and vocabulary warnings
+without environment or database access. `scripts/reading/import` owns
+persistence-neutral draft synchronization; the Prisma adapter is composed only
+by the explicit `data:import-reading-a1` operator command. New and existing
+drafts are synchronized transactionally, while published passages are left
+unchanged. Startup, build, CI, seed, and migration do not invoke the importer.
+
+### TOEIC content ownership
+
+TOEIC exam content is a dedicated Course-owned aggregate associated with the
+immutable Course code `toeic-600`. It does not reuse CEFR
+`reading_passages`: TOEIC tests own source identity, Parts 5-7, grouped
+stimuli, numbered questions, answer options, media metadata, and source practice
+statistics.
+
+Private canonical packages remain under ignored `var/licensed-content`
+storage. The explicit `data:import-toeic-reading-practice` command
+revalidates each package before persistence. `(source, source_test_id)` is
+the idempotent identity: an identical version is skipped, while a new version
+replaces one aggregate transactionally and publishes it immediately. Startup,
+build, CI, seed, and migration never invoke this importer.
+
+TOEIC Writing AI is composed inside `module/toeic-writing` as controller -> use
+case -> repository/provider adapters. Part 1 first applies deterministic
+capitalization, terminal-punctuation, word-count, sentence-count, and required
+word validation. A grade then resolves either an approved image-context record
+or the owned local image, reserves daily quota, calls the injected provider,
+validates its strict structured result, and atomically persists the grade while
+completing the reservation. Provider failure releases the reservation.
+
+Grade cache identity includes learner, task, content version, normalized
+response hash, and prompt version. Cached retries return the owned record
+without charging quota. Grade detail/history enforce learner ownership, while
+assistance events are recorded independently. HTTP delivery has separate
+per-user and per-IP limits; provider keys, response text, picture context, and
+raw provider output are excluded from observability events.
+
+Part 2 authored coaching is exposed through authenticated, lazy endpoints for
+outline, vocabulary, and sample content. Opening one of these panels records an
+assistance event on the server; the client does not infer or persist assistance
+usage. Community responses are private by default and become visible only after
+their owner explicitly shares a completed Part 2 submission. Share and unshare
+enforce ownership, community projections mask learner identity and exclude
+grades and private drafts, and restoring a shared response records assistance
+before returning text to the learner's editor.
+
+Part 2 grading first enforces 50-300 words, 2,200 characters, and obvious-spam
+checks. Its use case resolves the published task and server-owned requirements,
+reserves quota, snapshots assistance, and sends only untrusted task/learner data
+through the provider adapter. The structured 0-4 result is accepted only when
+every requirement appears exactly once and every Unicode evidence range matches
+the learner response or improved email. Saving the grade and completing quota
+are atomic; provider or evidence-validation failures release the reservation.
+The authenticated route is
+`POST /toeic/writing/tasks/:taskId/grades/part-two`.
+
+TOEIC Listening acquisition is a separate, local-first pipeline linked to the
+exact approved Reading inventory SHA. Inventory and download do not require a
+database; media is resumable and remains under ignored licensed-content
+storage. `data:import-toeic-listening-practice` is the only database-writing
+step. It requires the matching Reading test to exist, replaces only Parts 1–4
+inside one transaction, preserves Parts 5–7 and the Reading source version,
+then publishes the independent Listening version.
+
+The authenticated `module/toeic-listening` capability exposes overview, test
+list/detail, and local media routes under `/toeic/listening`. Reads accept an
+optional Part 1, 2, 3, or 4 and use projections that exclude correctness,
+transcripts, translations, explanations, provider URLs, and storage paths.
+Parts 1–2 return option labels without printable text; Parts 3–4 return their
+printable prompts and options.
+
+Part practice exposes `POST /toeic/listening/tests/:testId/check-answer`. It
+requires the exact Listening source version, an explicit Part 1–4, and option
+ownership for one question. Only after that selection is validated does it
+return correctness, the correct option, translation, transcript, explanation,
+and the prepared vocabulary cache owned by that exact question. A question
+without prepared cache returns an empty vocabulary array and never triggers a
+provider or AI request. Full Test has no
+equivalent request shape; its Web flow continues to reveal review data only
+after submission. Vocabulary matching reuses Vocabulary-owned behavior and
+does not persist inferred TOEIC-to-vocabulary relationships.
+
+The imported Part 1–2 source translation is a labeled block. The check-answer
+use case parses its `(A)`–`(D)` markers at read time and returns a question
+translation where Part 2 provides one plus per-choice translations. This adds
+no persistence column or migration. Parts 3–4 are not parsed as choices because
+their source field represents the conversation or talk translation.
+
+Media delivery resolves opaque asset IDs only when they belong to published
+Listening content with `DOWNLOADED` status. The resolved real path must remain
+inside the injected licensed-content root. GET and HEAD support complete and
+single byte-range responses; malformed, multiple, or unsatisfiable ranges fail
+with HTTP 416 without exposing filesystem errors.
+
+Listening submissions use a client UUID idempotency key and the published
+Listening source version. The server validates complete Full or Part 1–4 scope,
+owns the answer key, and stores immutable question, option, transcript,
+explanation, stimulus, and media-identity snapshots. Account-scoped attempt
+list/detail routes return those snapshots, so later content replacement cannot
+rewrite historical results.
+
+Listening draft progress is authenticated and backend-owned per learner, test,
+and `FULL`/`PART_1`–`PART_4` scope. A 30-day snapshot stores answers, review
+markers, active question, completed/active media, and playback position. Reads
+discard expired or source-version-stale drafts; successful submissions remove
+the matching draft transactionally.
+
+The authenticated `module/toeic-reading` capability exposes overview, test
+list/detail, submission, and attempt history/result routes under
+`/toeic/reading`. Learner test detail uses explicit persistence projections that
+exclude option correctness and grading explanations. Submission includes the
+published `source_version`, validates complete option ownership, grades on the
+server, and persists one immutable attempt aggregate transactionally.
+
+Test list, detail, and history reads accept an optional Part 5, 6, or 7. A
+selected Part projects only that Part's stimuli and questions, grading requires
+exactly that Part, and the attempt stores `practice_part`. Omitting the Part
+preserves Full Test behavior across all 100 Reading questions. Legacy Full Test
+attempts keep `practice_part = null`.
+
+Test discovery orders newer source-set labels first and applies natural numeric
+ordering within each set, so `Test 1` through `Test 10` remain in numeric order
+regardless of import timestamps or database IDs.
+
+TOEIC Reading draft progress is backend-owned and authenticated. One snapshot is
+stored per `(user_id, test_id, scope)`, where scope is Full Test, Part 5, Part 6,
+or Part 7. The API derives `user_id` only from the JWT context and validates
+every question and option against the published test before an atomic upsert.
+Drafts expire 30 days after their latest save; expired, unpublished, or
+source-version-mismatched drafts are discarded. Test summaries expose only the
+matching learner's answered count, total count, active question, and update time.
+A successful new submission deletes its matching draft in the attempt
+transaction; an identical idempotent retry also performs cleanup.
+
+Guided Part practice uses a separate authenticated persistence aggregate rather
+than overloading draft JSON or immutable test attempts. One active session is
+identified by Learner, test, Part, and source version. Each question can produce
+one immutable graded answer snapshot per session, and request keys make answer
+retries idempotent. Correct answers and explanations remain server-owned and
+become learner-visible only for questions already graded in that session.
+The start, get, grade-answer, update-navigation, and complete routes delegate to
+separate goal use cases. Completion requires every Part question to have one
+graded answer; Full Test submission never calls these practice routes.
+
+The approved inventory's source-set label is canonical provenance, not a value
+derived from a source update timestamp. It flows through private canonical
+packages into `toeic_test_sets.title`, allowing Learner delivery to identify the
+set as `2026` without inventing difficulty levels.
+
+`(user_id, submission_key)` is the attempt idempotency identity. Identical
+retries return the original result, conflicting key reuse is rejected, and a
+source-version mismatch requires the Learner to reload. Result delivery reads
+only attempt snapshots, remains scoped to the authenticated Learner, and does
+not depend on current mutable question content. Applying the attempt migration
+remains an explicit operator action; startup, build, and tests do not apply it.
+The fingerprint includes Part scope for Part practice while retaining the
+previous fingerprint shape for Full Test compatibility.
 
 ## Goal use cases
 
@@ -170,6 +368,30 @@ shared storage Adapter such as Redis; controller policies and Auth use cases do
 not change.
 
 ## Prisma and offline scripts
+
+TOEIC Grammar source acquisition uses the checksum-approved private workflow
+documented in
+[`licensed-toeic-grammar-operations.md`](../guides/licensed-toeic-grammar-operations.md).
+The inventory, download, and validation commands remain outside the Nest
+runtime and do not create a Prisma client. Only the explicit import command
+uses `scripts/support/script-prisma.ts` to replace one source-owned snapshot in
+a transaction.
+
+The authenticated `module/toeic-grammar` capability exposes the active catalog,
+learner-safe subtopic lessons, practice collections, and immediate server-side
+grading under `/toeic/grammar`. `GET /toeic/grammar/subtopics/:target` returns
+ordered safe text/structured lesson content and account progress but omits raw
+source HTML and every answer-key field. Initial question reads likewise omit
+answer correctness and review-only enrichment. Answer submission validates
+snapshot, collection membership, and option ownership before persisting
+immutable attempt snapshots and account-owned source-question progress in one
+transaction. Grammar progress never uses browser local storage and survives
+replacement of database question row IDs.
+
+Source-specific TOEIC vocabulary acquisition remains in the sibling
+`scripts/toeic-vocabulary-cache` workflow. It prepares the TOEIC question cache
+and does not own or mutate the canonical Vocabulary catalog under
+`scripts/vocabulary`.
 
 `@prisma/client` is the only generated Prisma Interface. Generated source does
 not live below `src/` and is never edited by hand.

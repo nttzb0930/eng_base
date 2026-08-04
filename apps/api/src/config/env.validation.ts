@@ -2,6 +2,11 @@ import { z } from "zod";
 
 import { resolveDatabaseUrl } from "./database-url";
 
+const booleanFromEnvironment = z
+  .union([z.boolean(), z.enum(["true", "false"])])
+  .default("false")
+  .transform((value) => value === true || value === "true");
+
 const ApiEnvironmentSchema = z
   .object({
     DATABASE_URL: z.string().trim().min(1).optional(),
@@ -40,6 +45,48 @@ const ApiEnvironmentSchema = z
     AUTH_REFRESH_SESSION_LIMIT: z.coerce.number().int().positive().default(10),
     AUTH_REFRESH_TTL: z.coerce.number().int().positive().default(60),
     TRUST_PROXY_HOPS: z.coerce.number().int().min(0).max(10).default(0),
+    LICENSED_CONTENT_ROOT: z.string().trim().min(1).optional(),
+    SMTP_ENABLED: booleanFromEnvironment,
+    SMTP_HOST: z.string().trim().min(1).default("smtp.gmail.com"),
+    SMTP_PORT: z.coerce.number().int().min(1).max(65535).default(587),
+    SMTP_SECURE: booleanFromEnvironment,
+    SMTP_USER: z.string().trim().optional().default(""),
+    SMTP_PASS: z.string().optional().default(""),
+    SMTP_FROM: z.string().trim().optional(),
+    EMAIL_TEMPLATES_PATH: z
+      .string()
+      .trim()
+      .min(1)
+      .default("src/module/mail/templates"),
+    GEMINI_ENABLED: booleanFromEnvironment,
+    GEMINI_API_KEY: z.string().trim().optional().default(""),
+    GEMINI_API_ENDPOINT: z.preprocess(
+      (value) =>
+        typeof value === "string" && value.trim().length === 0
+          ? undefined
+          : value,
+      z.string().trim().url().optional()
+    ),
+    GEMINI_VISION_MODEL: z
+      .string()
+      .trim()
+      .min(1)
+      .default("gemini-3.5-flash-lite"),
+    GEMINI_GRADING_MODEL: z
+      .string()
+      .trim()
+      .min(1)
+      .default("gemini-3.5-flash-lite"),
+    GEMINI_TIMEOUT_MS: z.coerce.number().int().positive().default(20_000),
+    WRITING_AI_DAILY_LIMIT: z.coerce.number().int().positive().default(5),
+    WRITING_AI_RESERVATION_TTL_MS: z.coerce
+      .number()
+      .int()
+      .positive()
+      .default(120_000),
+    WRITING_AI_USER_LIMIT: z.coerce.number().int().positive().default(2),
+    WRITING_AI_IP_LIMIT: z.coerce.number().int().positive().default(10),
+    WRITING_AI_RATE_LIMIT_TTL: z.coerce.number().int().positive().default(60),
   })
   .refine(
     (configuration) =>
@@ -50,6 +97,31 @@ const ApiEnvironmentSchema = z
     }
   )
   .superRefine((configuration, context) => {
+    if (configuration.SMTP_ENABLED) {
+      if (!configuration.SMTP_USER) {
+        context.addIssue({
+          code: "custom",
+          path: ["SMTP_USER"],
+          message: "SMTP_USER is required when SMTP_ENABLED=true",
+        });
+      }
+      if (!configuration.SMTP_PASS) {
+        context.addIssue({
+          code: "custom",
+          path: ["SMTP_PASS"],
+          message: "SMTP_PASS is required when SMTP_ENABLED=true",
+        });
+      }
+    }
+
+    if (configuration.GEMINI_ENABLED && !configuration.GEMINI_API_KEY) {
+      context.addIssue({
+        code: "custom",
+        path: ["GEMINI_API_KEY"],
+        message: "GEMINI_API_KEY is required when GEMINI_ENABLED=true",
+      });
+    }
+
     try {
       resolveDatabaseUrl(configuration);
     } catch (error) {

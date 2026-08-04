@@ -23,6 +23,27 @@ export type RegisterBody = {
   fullName: string;
 };
 
+export type RegisterResponse = {
+  success: true;
+  verificationRequired: true;
+  email: string;
+};
+
+export type VerifyEmailBody = {
+  email: string;
+  code: string;
+};
+
+export type RequestPasswordResetBody = {
+  email: string;
+};
+
+export type ResetPasswordBody = {
+  email: string;
+  code: string;
+  newPassword: string;
+};
+
 export type LoginResponse = {
   access_token: string;
   user: AuthUser;

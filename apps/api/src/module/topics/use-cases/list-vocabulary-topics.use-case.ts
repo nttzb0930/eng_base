@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
 import { type VocabularyItem } from "../../vocabulary";
+import { localizeVocabularyTopic, type TopicLocale } from "../topic-locale";
 import { TopicSource } from "./topic-source";
 
 @Injectable()
@@ -9,7 +10,8 @@ export class ListVocabularyTopicsUseCase extends TopicSource {
     super(prisma);
   }
 
-  async execute(userId: string) {
+  async execute(userId: string, locale: TopicLocale = "en") {
+    const now = new Date();
     const topics = await this.getRawTopics();
     const relations = await this.getRawTopicVocabularyRelations(
       topics.map((topic) => topic.id)
@@ -26,7 +28,10 @@ export class ListVocabularyTopicsUseCase extends TopicSource {
         .filter((row) => row.topic_id === topic.id)
         .map((row) => itemsById.get(row.vocabulary_item_id))
         .filter((item): item is VocabularyItem => Boolean(item));
-      return { ...topic, ...this.getTopicStats(items) };
+      return {
+        ...localizeVocabularyTopic(topic, locale),
+        ...this.getTopicStats(items, now),
+      };
     });
 
     return cards.filter((topic) => topic.total > 0);

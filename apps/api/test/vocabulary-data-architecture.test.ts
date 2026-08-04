@@ -17,6 +17,13 @@ test("vocabulary data has one canonical catalog and taxonomy", () => {
 
   const topics = JSON.parse(readFileSync(topicsPath, "utf8")) as Array<{
     slug: string;
+    title: string;
+    titleVi?: string;
+    description: string;
+    descriptionVi?: string;
+    order: number;
+    group: string;
+    groupVi?: string;
   }>;
   const catalog = JSON.parse(readFileSync(catalogPath, "utf8")) as Array<
     Record<string, unknown>
@@ -24,7 +31,37 @@ test("vocabulary data has one canonical catalog and taxonomy", () => {
 
   assert.equal(topics.length, 103);
   assert.equal(new Set(topics.map((topic) => topic.slug)).size, 103);
-  assert.equal(catalog.length, 3000);
+  assert.equal(new Set(topics.map((topic) => topic.order)).size, 103);
+  for (const topic of topics) {
+    assert.notEqual(topic.title.trim(), "", `${topic.slug}.title`);
+    assert.equal(typeof topic.titleVi, "string", `${topic.slug}.titleVi`);
+    assert.notEqual(topic.titleVi?.trim(), "", `${topic.slug}.titleVi`);
+    assert.notEqual(topic.description.trim(), "", `${topic.slug}.description`);
+    assert.equal(
+      typeof topic.descriptionVi,
+      "string",
+      `${topic.slug}.descriptionVi`,
+    );
+    assert.notEqual(
+      topic.descriptionVi?.trim(),
+      "",
+      `${topic.slug}.descriptionVi`,
+    );
+    assert.notEqual(topic.group.trim(), "", `${topic.slug}.group`);
+    assert.equal(typeof topic.groupVi, "string", `${topic.slug}.groupVi`);
+    assert.notEqual(topic.groupVi?.trim(), "", `${topic.slug}.groupVi`);
+  }
+
+  const topicSlugs = new Set(topics.map((topic) => topic.slug));
+  for (const item of catalog) {
+    const assignedTopics = item.topics ?? [];
+    assert.equal(Array.isArray(assignedTopics), true);
+    for (const slug of assignedTopics as unknown[]) {
+      assert.equal(typeof slug, "string");
+      assert.equal(topicSlugs.has(slug as string), true, String(slug));
+    }
+  }
+  assert.equal(catalog.length, 7429);
   assert.equal(catalog.some((item) => "enriched" in item), false);
   assert.equal(
     catalog.filter((item) => item.dictionaryLookupCompleted === true).length,
@@ -73,16 +110,32 @@ test("vocabulary scripts are owned by explicit workflow folders", () => {
     assert.equal(existsSync(join(vocabularyScriptsRoot, flow)), true, flow);
   }
 
-  const rootVocabularyScripts = readdirSync(scriptsRoot).filter((name) =>
+  const rootVocabularyOwners = readdirSync(scriptsRoot).filter((name) =>
     /vocab|topic/u.test(name),
   );
-  assert.deepEqual(rootVocabularyScripts, ["vocabulary"]);
+  assert.equal(rootVocabularyOwners.includes("vocabulary"), true);
+  assert.deepEqual(
+    rootVocabularyOwners.filter(
+      (name) => !["toeic-vocabulary-cache", "vocabulary"].includes(name),
+    ),
+    [],
+  );
   assert.equal(existsSync(join(scriptsRoot, "lib")), false);
 });
 
 test("database seed adapters consume canonical sources without topic declarations", () => {
   const seedSource = [
-    readFileSync(join(apiRoot, "scripts", "seed.ts"), "utf8"),
+    readFileSync(join(apiRoot, "scripts", "seed-dev.ts"), "utf8"),
+    readFileSync(
+      join(
+        apiRoot,
+        "scripts",
+        "vocabulary",
+        "database",
+        "bootstrap-vocabulary.ts",
+      ),
+      "utf8",
+    ),
     readFileSync(
       join(
         apiRoot,
@@ -116,4 +169,42 @@ test("AI prompts define stable runtime contracts without duplicated taxonomy", (
   assert.doesNotMatch(classificationPrompt, /- personal-information:/u);
   assert.match(classificationPrompt, /schemaVersion/u);
   assert.match(expansionPrompt, /exactly 10 bilingual example pairs/iu);
+});
+
+test("audio reconciliation is catalog-only and provider independent", () => {
+  const enrichmentRoot = join(
+    apiRoot,
+    "scripts",
+    "vocabulary",
+    "dictionary-enrichment",
+  );
+  const plannerSource = readFileSync(
+    join(enrichmentRoot, "vocabulary-audio-reconciliation.ts"),
+    "utf8",
+  );
+  const cliSource = readFileSync(
+    join(enrichmentRoot, "reconcile-vocabulary-audio.ts"),
+    "utf8",
+  );
+  const packageJson = JSON.parse(
+    readFileSync(join(apiRoot, "package.json"), "utf8"),
+  ) as { scripts?: Record<string, string> };
+
+  assert.match(
+    packageJson.scripts?.["data:reconcile-vocabulary-audio"] ?? "",
+    /reconcile-vocabulary-audio\.ts/u,
+  );
+  assert.match(cliSource, /vocabulary_items\.findMany/u);
+  assert.match(
+    cliSource,
+    /vocabulary-catalog\.before-audio-reconciliation/u,
+  );
+  assert.doesNotMatch(
+    `${plannerSource}\n${cliSource}`,
+    /GoogleGenAI|generateContent|OPENAI_API_KEY|GEMINI_API_KEY/u,
+  );
+  assert.doesNotMatch(
+    cliSource,
+    /vocabulary_items\.(?:create|update|delete|upsert|createMany|updateMany|deleteMany)/u,
+  );
 });

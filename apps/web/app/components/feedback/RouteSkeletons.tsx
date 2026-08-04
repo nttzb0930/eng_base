@@ -5,7 +5,7 @@ type SkeletonProps = React.HTMLAttributes<HTMLDivElement>;
 function Skeleton({ className, ...props }: SkeletonProps) {
   return (
     <div
-      className={cn("animate-pulse rounded-lg bg-muted", className)}
+      className={cn("bg-muted animate-pulse rounded-lg", className)}
       aria-hidden="true"
       {...props}
     />
@@ -34,13 +34,13 @@ function HeaderSkeleton() {
 
 function HeroSkeleton({ className }: { className?: string }) {
   return (
-    <div className={cn("rounded-lg bg-primary/12 p-6 sm:p-8", className)}>
-      <Skeleton className="h-7 w-32 bg-primary/15" />
-      <Skeleton className="mt-5 h-8 w-1/2 bg-primary/15" />
-      <Skeleton className="mt-3 h-4 w-3/4 bg-primary/15" />
+    <div className={cn("bg-primary/12 rounded-lg p-6 sm:p-8", className)}>
+      <Skeleton className="bg-primary/15 h-7 w-32" />
+      <Skeleton className="bg-primary/15 mt-5 h-8 w-1/2" />
+      <Skeleton className="bg-primary/15 mt-3 h-4 w-3/4" />
       <div className="mt-6 flex items-center gap-3">
-        <Skeleton className="h-11 w-32 bg-primary/15" />
-        <Skeleton className="h-4 w-28 bg-primary/15" />
+        <Skeleton className="bg-primary/15 h-11 w-32" />
+        <Skeleton className="bg-primary/15 h-4 w-28" />
       </div>
     </div>
   );
@@ -48,7 +48,7 @@ function HeroSkeleton({ className }: { className?: string }) {
 
 function CardSkeleton({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="rounded-2xl border bg-card p-5">
+    <div className="bg-card rounded-2xl border p-5">
       <div className="flex items-start justify-between">
         <Skeleton className="h-10 w-10" />
         <Skeleton className="h-5 w-12" />
@@ -77,6 +77,65 @@ export function DiscoveryPageSkeleton() {
   );
 }
 
+export function LearnPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <HeroSkeleton className="rounded-2xl" />
+      <Skeleton className="mb-4 mt-9 h-4 w-36" />
+      <div className="grid gap-5 md:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Skeleton key={index} className="bg-card h-80 rounded-2xl border" />
+        ))}
+      </div>
+      <Skeleton className="mb-4 mt-10 h-4 w-40" />
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton key={index} className="bg-card h-32 rounded-2xl border" />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function LearnLevelPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <Skeleton className="mb-7 h-12 w-64" />
+      <Skeleton className="mb-4 mt-6 h-4 w-48" />
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton
+            key={index}
+            className="bg-card h-[185px] rounded-2xl border"
+          />
+        ))}
+      </div>
+      <Skeleton className="mb-4 mt-10 h-4 w-44" />
+      <Skeleton className="bg-card h-28 rounded-2xl border" />
+    </LoadingFrame>
+  );
+}
+
+export function CoursesPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <Skeleton className="mb-7 h-12 w-64" />
+      <Skeleton className="mb-4 mt-4 h-4 w-32" />
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Skeleton
+            key={index}
+            className="bg-card h-[175px] rounded-2xl border"
+          />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
 export function TopicsPageSkeleton() {
   return (
     <LoadingFrame>
@@ -89,6 +148,29 @@ export function TopicsPageSkeleton() {
           <CardSkeleton key={index} compact />
         ))}
       </div>
+    </LoadingFrame>
+  );
+}
+
+export function TopicDetailPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <Skeleton className="mb-6 h-5 w-72" />
+      <Skeleton className="bg-card h-48 rounded-2xl border" />
+      <div className="mt-7 grid gap-4 md:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Skeleton key={index} className="bg-card h-20 rounded-xl border" />
+        ))}
+      </div>
+      <div className="mt-6 flex flex-wrap gap-2">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton
+            key={index}
+            className="bg-card h-9 w-28 rounded-xl border"
+          />
+        ))}
+      </div>
+      <Skeleton className="bg-card mt-6 h-96 rounded-2xl border" />
     </LoadingFrame>
   );
 }
@@ -115,17 +197,51 @@ export function PracticePageSkeleton() {
   );
 }
 
+export function FlashcardsPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <div className="mb-9 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton key={index} className="bg-card h-44 rounded-2xl border" />
+        ))}
+      </div>
+      <HeroSkeleton className="rounded-2xl" />
+      <Skeleton className="mb-4 mt-10 h-6 w-40" />
+      <div className="grid gap-4 sm:grid-cols-2">
+        {Array.from({ length: 2 }).map((_, index) => (
+          <Skeleton key={index} className="bg-card h-80 rounded-2xl border" />
+        ))}
+      </div>
+      <Skeleton className="mb-4 mt-10 h-6 w-40" />
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Skeleton
+            key={index}
+            className="bg-card h-[165px] rounded-2xl border"
+          />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
 export function DashboardPageSkeleton() {
   return (
     <LoadingFrame>
       <HeaderSkeleton />
       <HeroSkeleton />
-      <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        {Array.from({ length: 4 }).map((_, index) => (
+      <div className="mt-5 grid gap-4 md:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, index) => (
           <CardSkeleton key={index} compact />
         ))}
       </div>
-      <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <CardSkeleton key={index} />
+        ))}
+      </div>
+      <div className="mt-6 grid gap-4 lg:grid-cols-[1.35fr_1fr]">
         <Skeleton className="h-72 rounded-2xl border" />
         <Skeleton className="h-72 rounded-2xl border" />
       </div>
@@ -159,7 +275,10 @@ export function SavedWordsPageSkeleton() {
       <Skeleton className="mt-6 h-20 w-full rounded-2xl border" />
       <div className="mt-4 space-y-3">
         {Array.from({ length: 6 }).map((_, index) => (
-          <div key={index} className="flex items-center gap-4 rounded-2xl border bg-card p-4">
+          <div
+            key={index}
+            className="bg-card flex items-center gap-4 rounded-2xl border p-4"
+          >
             <Skeleton className="h-10 w-10 shrink-0 rounded-xl" />
             <div className="flex-1 space-y-2">
               <Skeleton className="h-4 w-40" />
@@ -195,7 +314,74 @@ export function LeaderboardPageSkeleton() {
   );
 }
 
-export function SessionPageSkeleton({ embedded = false }: { embedded?: boolean }) {
+export function ReadingListPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <HeaderSkeleton />
+      <div className="mt-8 grid gap-4 md:grid-cols-2">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <div key={index} className="bg-card rounded-2xl border p-6">
+            <div className="flex justify-between">
+              <Skeleton className="h-6 w-12 rounded-full" />
+              <Skeleton className="h-4 w-24" />
+            </div>
+            <Skeleton className="mt-6 h-7 w-2/3" />
+            <Skeleton className="mt-3 h-4 w-4/5" />
+            <Skeleton className="mt-8 h-5 w-28" />
+          </div>
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function ReadingSessionPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <div className="mx-auto grid max-w-6xl gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_250px]">
+        <div>
+          <div className="bg-card rounded-2xl border p-8">
+            <Skeleton className="h-4 w-20" />
+            <Skeleton className="mt-4 h-10 w-2/3" />
+            <div className="mt-8 space-y-4">
+              {Array.from({ length: 7 }).map((_, index) => (
+                <Skeleton
+                  key={index}
+                  className={cn("h-4", index % 3 === 2 ? "w-4/5" : "w-full")}
+                />
+              ))}
+            </div>
+          </div>
+          <Skeleton className="mt-8 h-64 rounded-2xl border" />
+        </div>
+        <Skeleton className="order-first h-56 rounded-2xl border lg:order-last" />
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function ReadingResultPageSkeleton() {
+  return (
+    <LoadingFrame>
+      <div className="mx-auto max-w-3xl space-y-6 px-4 py-8">
+        <div className="bg-card rounded-2xl border p-8">
+          <Skeleton className="h-4 w-24" />
+          <Skeleton className="mt-4 h-9 w-3/4" />
+          <Skeleton className="mt-8 h-16 w-28" />
+        </div>
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Skeleton key={index} className="h-52 rounded-2xl border" />
+        ))}
+      </div>
+    </LoadingFrame>
+  );
+}
+
+export function SessionPageSkeleton({
+  embedded = false,
+}: {
+  embedded?: boolean;
+}) {
   return (
     <div
       role="status"

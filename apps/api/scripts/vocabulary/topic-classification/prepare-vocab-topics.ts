@@ -12,6 +12,10 @@ const repositoryRoot = path.resolve(process.cwd(), "../..");
 const vocabularyRoot = path.join(repositoryRoot, "data/vocabulary");
 const catalogPath = path.join(vocabularyRoot, "vocabulary-catalog.json");
 const topicsPath = path.join(vocabularyRoot, "topics.json");
+const promptPath = path.join(
+  vocabularyRoot,
+  "prompts/topic-classification.md",
+);
 const workingRoot = path.join(vocabularyRoot, "working/topic-classification");
 const inputRoot = path.join(workingRoot, "input");
 const manifestPath = path.join(workingRoot, "manifest.json");
@@ -21,12 +25,13 @@ const readJson = async <T>(filePath: string) =>
   JSON.parse(await readFile(filePath, "utf8")) as T;
 
 async function main() {
-  const [catalog, topics] = await Promise.all([
+  const [catalog, topics, prompt] = await Promise.all([
     readJson<VocabularyCatalogItem[]>(catalogPath),
     readJson<VocabularyTopicDefinition[]>(topicsPath),
+    readFile(promptPath, "utf8"),
   ]);
   assertVocabularySourcesValid(topics, catalog);
-  const plan = createClassificationPlan(catalog, batchSize);
+  const plan = createClassificationPlan(catalog, batchSize, { topics, prompt });
 
   await rm(inputRoot, { recursive: true, force: true });
   await Promise.all([
@@ -40,7 +45,7 @@ async function main() {
     await writeFile(
       path.join(inputRoot, batch.inputFile),
       `${JSON.stringify(
-        { schemaVersion: 1, batchId: batch.batchId, records: batch.records },
+        { schemaVersion: 2, batchId: batch.batchId, records: batch.records },
         null,
         2,
       )}\n`,

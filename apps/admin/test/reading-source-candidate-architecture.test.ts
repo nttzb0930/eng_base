@@ -1,0 +1,56 @@
+import assert from "node:assert/strict";
+import { existsSync, readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import test from "node:test";
+
+const root = process.cwd();
+const read = (path: string) => readFileSync(resolve(root, path), "utf8");
+
+test("candidate route stays thin and source HTML is never rendered as markup", () => {
+  const page = read("app/(dashboard)/reading-source-candidates/page.tsx");
+  const view = read("app/views/reading-source-candidates/ReadingSourceCandidatesView.tsx");
+  const review = read(
+    "app/features/reading-source-candidates/components/ReadingSourceCandidateReviewDialog.tsx",
+  );
+  const editor = read(
+    "app/features/reading-source-candidates/components/ReadingSourceCandidateEditor.tsx",
+  );
+  const navigation = read("app/components/layout/admin-navigation.ts");
+
+  assert.match(page, /ReadingSourceCandidatesView/u);
+  assert.doesNotMatch(page, /use client|useState|fetch\(/u);
+  assert.match(view, /ReadingSourceCandidatesScreen/u);
+  assert.doesNotMatch(`${review}\n${editor}`, /dangerouslySetInnerHTML/u);
+  assert.match(navigation, /\/reading-source-candidates/u);
+});
+
+test("candidate management uses semantic Shadcn presentation", () => {
+  for (const path of [
+    "app/features/reading-source-candidates/components/reading-source-candidate-columns.tsx",
+    "app/features/reading-source-candidates/components/reading-source-candidate.schema.ts",
+    "app/features/reading-source-candidates/components/ReadingSourceCandidateEditor.tsx",
+  ]) {
+    assert.equal(existsSync(resolve(root, path)), true, `${path} must exist`);
+  }
+  const screen = read(
+    "app/features/reading-source-candidates/components/ReadingSourceCandidatesScreen.tsx",
+  );
+  const review = read(
+    "app/features/reading-source-candidates/components/ReadingSourceCandidateReviewDialog.tsx",
+  );
+  const editor = read(
+    "app/features/reading-source-candidates/components/ReadingSourceCandidateEditor.tsx",
+  );
+  assert.match(screen, /PageHeader/u);
+  assert.match(screen, /DataTableCard/u);
+  assert.match(editor, /RadioGroup/u);
+  assert.match(editor, /useForm/u);
+  assert.match(editor, /zodResolver/u);
+  assert.match(editor, /FormField/u);
+  for (const source of [screen, review, editor]) {
+    assert.doesNotMatch(
+      source,
+      /<select|<textarea|type="radio"|window\.confirm|text-zinc|bg-white|font-bold/u,
+    );
+  }
+});

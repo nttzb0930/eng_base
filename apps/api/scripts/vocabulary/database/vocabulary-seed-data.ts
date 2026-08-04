@@ -19,6 +19,18 @@ export type VocabularySeedData = {
   relations: VocabularyTopicRelationSeed[];
 };
 
+export const mapVocabularyTopicPersistenceData = (
+  topic: VocabularyTopicDefinition,
+) => ({
+  title: topic.title,
+  title_vi: topic.titleVi,
+  description: topic.description,
+  description_vi: topic.descriptionVi,
+  group_name: topic.group,
+  group_name_vi: topic.groupVi,
+  order: topic.order,
+});
+
 const readJson = async <T>(filePath: string) =>
   JSON.parse(await readFile(filePath, "utf8")) as T;
 

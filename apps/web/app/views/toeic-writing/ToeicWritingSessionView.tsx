@@ -1,0 +1,559 @@
+"use client";
+
+import {
+  getToeicWritingResponseLength,
+  TOEIC_WRITING_RESPONSE_LIMITS,
+  type ToeicWritingDraftPayload,
+  type ToeicWritingPart,
+  type ToeicWritingPartOneGradeResult,
+  type ToeicWritingPartOneValidationIssue,
+  type ToeicWritingPartTwoGradeResult,
+  type ToeicWritingPartTwoValidationIssue,
+  type ToeicWritingSubmissionResult,
+  type ToeicWritingTaskDetail,
+} from "@repo/shared";
+import { AlertCircle, ArrowLeft, FilePenLine, RotateCcw, Sparkles } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState,
+} from "react";
+
+import { Alert, AlertDescription, AlertTitle } from "@/app/components/ui/alert";
+import { Badge } from "@/app/components/ui/badge";
+import { Button } from "@/app/components/ui/button";
+import { cn } from "@/app/utils/cn";
+import { ToeicWritingEditorPane } from "@/app/features/toeic-writing/components/ToeicWritingEditorPane";
+import { ToeicWritingPromptPane } from "@/app/features/toeic-writing/components/ToeicWritingPromptPane";
+import { ToeicWritingSessionFooter } from "@/app/features/toeic-writing/components/ToeicWritingSessionFooter";
+import { ToeicWritingSessionSkeleton } from "@/app/features/toeic-writing/components/ToeicWritingSessionSkeleton";
+import { ToeicWritingGradeHistoryPanel } from "@/app/features/toeic-writing/components/ToeicWritingGradeHistoryPanel";
+import { ToeicWritingPartOneGradePanel } from "@/app/features/toeic-writing/components/ToeicWritingPartOneGradePanel";
+import { ToeicWritingPartOneValidationAlert } from "@/app/features/toeic-writing/components/ToeicWritingPartOneValidationAlert";
+import { ToeicWritingReferencePanel } from "@/app/features/toeic-writing/components/ToeicWritingReferencePanel";
+import { ToeicWritingPartTwoWorkspace } from "@/app/features/toeic-writing/components/ToeicWritingPartTwoWorkspace";
+import {
+  useDeleteToeicWritingDraft,
+  useGradeToeicWritingPartOne,
+  useGradeToeicWritingPartTwo,
+  useRecordToeicWritingAssistance,
+  useSaveToeicWritingDraft,
+  useSubmitToeicWriting,
+  useToeicWritingDraft,
+  useToeicWritingAiQuota,
+  useToeicWritingTask,
+} from "@/app/features/toeic-writing/hooks/use-toeic-writing";
+import { validatePartOneEditorResponse } from "@/app/features/toeic-writing/toeic-writing-part-one-grading";
+import {
+  getPartTwoEditorMetrics,
+  shouldApplyPartTwoGradeResult,
+  validatePartTwoEditorResponse,
+} from "@/app/features/toeic-writing/toeic-writing-coaching-state";
+import { createToeicWritingDraftQueue } from "@/app/features/toeic-writing/toeic-writing-draft-queue";
+import { createToeicWritingAutosaveScheduler } from "@/app/features/toeic-writing/toeic-writing-autosave-scheduler";
+import {
+  initialToeicWritingSessionState,
+  reduceWritingSession,
+} from "@/app/features/toeic-writing/toeic-writing-session-state";
+import { defaultLocale, isLocale } from "@/app/i18n/config";
+import { withLocale } from "@/app/i18n/paths";
+
+type ToeicWritingSessionViewProps = {
+  taskId: number;
+  expectedPart: ToeicWritingPart;
+};
+
+export function ToeicWritingSessionView({
+  taskId,
+  expectedPart,
+}: ToeicWritingSessionViewProps) {
+  const t = useTranslations("toeicWriting.session");
+  const taskQuery = useToeicWritingTask(taskId);
+  const draftQuery = useToeicWritingDraft(taskId);
+
+  if (taskQuery.isLoading || draftQuery.isLoading) {
+    return <ToeicWritingSessionSkeleton />;
+  }
+
+  if (
+    taskQuery.isError ||
+    !taskQuery.data ||
+    draftQuery.isError ||
+    taskQuery.data.part !== expectedPart
+  ) {
+    return (
+      <main className="mx-auto w-full max-w-lg px-4 py-16 sm:px-6">
+        <section className="bg-card rounded-md border border-rose-200 p-7 text-center dark:border-rose-900">
+          <h1 className="text-lg font-semibold">{t("loadErrorTitle")}</h1>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {t("loadErrorDescription")}
+          </p>
+          <Button
+            type="button"
+            onClick={() => {
+              void Promise.all([taskQuery.refetch(), draftQuery.refetch()]);
+            }}
+            className="mt-5 gap-2 rounded-md"
+          >
+            <RotateCcw className="h-4 w-4" aria-hidden="true" />
+            {t("retry")}
+          </Button>
+        </section>
+      </main>
+    );
+  }
+
+  return (
+    <ToeicWritingWorkspace
+      key={taskId}
+      task={taskQuery.data}
+      initialResponse={draftQuery.data?.responseText ?? ""}
+    />
+  );
+}
+
+type ToeicWritingWorkspaceProps = {
+  task: ToeicWritingTaskDetail;
+  initialResponse: string;
+};
+
+function ToeicWritingWorkspace({
+  task,
+  initialResponse,
+}: ToeicWritingWorkspaceProps) {
+  const t = useTranslations("toeicWriting.session");
+  const gradeT = useTranslations("toeicWriting.partOneGrading");
+  const partTwoGradeT = useTranslations("toeicWriting.partTwoGrading");
+  const currentLocale = useLocale();
+  const locale = isLocale(currentLocale) ? currentLocale : defaultLocale;
+  const router = useRouter();
+  const { mutateAsync: saveDraft } = useSaveToeicWritingDraft();
+  const { mutateAsync: deleteDraft } = useDeleteToeicWritingDraft();
+  const { mutateAsync: submitResponse, isError: submitIsError } =
+    useSubmitToeicWriting();
+  const gradePartOne = useGradeToeicWritingPartOne();
+  const gradePartTwo = useGradeToeicWritingPartTwo();
+  const quota = useToeicWritingAiQuota(true);
+  const recordAssistance = useRecordToeicWritingAssistance();
+  const submissionKeyRef = useRef<string | null>(null);
+  const responseTextRef = useRef(initialResponse);
+  const navigatingRef = useRef(false);
+  const [state, dispatch] = useReducer(reduceWritingSession, {
+    ...initialToeicWritingSessionState,
+    responseText: initialResponse,
+    hydrated: true,
+    saveStatus: initialResponse ? "SAVED" : "IDLE",
+  });
+  const [grade, setGrade] = useState<ToeicWritingPartOneGradeResult | null>(
+    null
+  );
+  const [validationIssues, setValidationIssues] = useState<
+    ToeicWritingPartOneValidationIssue[]
+  >([]);
+  const [partTwoGrade, setPartTwoGrade] =
+    useState<ToeicWritingPartTwoGradeResult | null>(null);
+  const [partTwoValidationIssues, setPartTwoValidationIssues] = useState<
+    ToeicWritingPartTwoValidationIssue[]
+  >([]);
+  const [sampleSubmission, setSampleSubmission] =
+    useState<ToeicWritingSubmissionResult | null>(null);
+  const [sampleOpen, setSampleOpen] = useState(false);
+  const gradingPending =
+    task.part === 1 ? gradePartOne.isPending : gradePartTwo.isPending;
+
+  const persistSnapshot = useCallback(
+    async (snapshot: ToeicWritingDraftPayload) => {
+      dispatch({ type: "saving" });
+      try {
+        if (snapshot.responseText.trim()) {
+          await saveDraft({ taskId: task.id, payload: snapshot });
+        } else {
+          await deleteDraft(task.id);
+        }
+        dispatch({ type: "saved" });
+      } catch (error) {
+        dispatch({ type: "save-failed" });
+        throw error;
+      }
+    },
+    [deleteDraft, saveDraft, task.id]
+  );
+  const draftQueue = useMemo(
+    () => createToeicWritingDraftQueue(persistSnapshot),
+    [persistSnapshot]
+  );
+  const snapshot = useCallback(
+    (): ToeicWritingDraftPayload => ({
+      contentVersion: task.contentVersion,
+      responseText: state.responseText,
+    }),
+    [state.responseText, task.contentVersion]
+  );
+  const autosave = useMemo(
+    () => createToeicWritingAutosaveScheduler(draftQueue),
+    [draftQueue]
+  );
+
+  useEffect(() => {
+    if (!state.dirty) return;
+    autosave.schedule(snapshot());
+  }, [autosave, snapshot, state.dirty]);
+
+  useEffect(() => () => autosave.dispose(), [autosave]);
+
+  const saveNow = useCallback(async () => {
+    try {
+      await autosave.flush(snapshot());
+    } catch {
+      // The queue dispatches the visible save error without clearing editor text.
+    }
+  }, [autosave, snapshot]);
+
+  const backToTasks = useCallback(async () => {
+    if (navigatingRef.current) return;
+    navigatingRef.current = true;
+    try {
+      await autosave.flush(snapshot(), { lock: true });
+      router.push(withLocale("/learn/cert/toeic/writing", locale));
+    } catch {
+      autosave.unlock();
+      navigatingRef.current = false;
+    }
+  }, [autosave, locale, router, snapshot]);
+
+  const submit = useCallback(async () => {
+    if (!state.responseText.trim()) return;
+    dispatch({ type: "submitting" });
+    try {
+      await autosave.flush(snapshot(), { lock: true });
+      submissionKeyRef.current ??= globalThis.crypto.randomUUID();
+      const result = await submitResponse({
+        taskId: task.id,
+        payload: {
+          ...snapshot(),
+          submissionKey: submissionKeyRef.current,
+        },
+      });
+      autosave.unlock();
+      dispatch({ type: "submit-succeeded" });
+      return result;
+    } catch {
+      autosave.unlock();
+      dispatch({ type: "submit-failed" });
+    }
+  }, [
+    autosave,
+    snapshot,
+    state.responseText,
+    submitResponse,
+    task.id,
+  ]);
+
+  const gradeResponse = useCallback(async () => {
+    if (task.part !== 1 || gradePartOne.isPending) return;
+    const validation = validatePartOneEditorResponse(
+      state.responseText,
+      task.exercise.requiredWords.map((word) => word.en)
+    );
+    setValidationIssues(validation.issues);
+    if (!validation.valid) return;
+
+    try {
+      await autosave.flush(snapshot());
+      submissionKeyRef.current ??= globalThis.crypto.randomUUID();
+      const result = await gradePartOne.mutateAsync({
+        taskId: task.id,
+        payload: {
+          ...snapshot(),
+          idempotencyKey: submissionKeyRef.current,
+          locale,
+        },
+      });
+      setGrade(result);
+    } catch {
+      // The mutation exposes its error state while preserving the draft.
+    }
+  }, [autosave, gradePartOne, locale, snapshot, state.responseText, task]);
+
+  const gradePartTwoResponse = useCallback(async () => {
+    if (task.part !== 2 || gradePartTwo.isPending) return;
+    const validation = validatePartTwoEditorResponse(state.responseText);
+    setPartTwoValidationIssues(validation.issues);
+    if (!validation.valid) return;
+
+    const submittedSnapshot = snapshot();
+    const idempotencyKey =
+      submissionKeyRef.current ?? globalThis.crypto.randomUUID();
+    submissionKeyRef.current = idempotencyKey;
+    try {
+      await autosave.flush(submittedSnapshot);
+      const result = await gradePartTwo.mutateAsync({
+        taskId: task.id,
+        payload: {
+          ...submittedSnapshot,
+          idempotencyKey,
+          locale,
+        },
+      });
+      if (
+        shouldApplyPartTwoGradeResult(
+          submittedSnapshot.responseText,
+          responseTextRef.current
+        )
+      ) {
+        setPartTwoGrade(result);
+      }
+    } catch {
+      // The mutation exposes its error state while preserving the draft.
+    }
+  }, [autosave, gradePartTwo, locale, snapshot, state.responseText, task]);
+
+  const toggleSampleView = useCallback(() => {
+    setSampleOpen((open) => {
+      const next = !open;
+      if (!next) {
+        requestAnimationFrame(() => {
+          const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+          if (window.scrollY > maxScroll) {
+            window.scrollTo({
+              top: Math.max(0, maxScroll),
+              behavior: "smooth",
+            });
+          }
+        });
+      }
+      return next;
+    });
+  }, []);
+
+  const viewSample = useCallback(async () => {
+    if (task.part !== 1 || gradingPending) return;
+    if (sampleSubmission) {
+      toggleSampleView();
+      return;
+    }
+    try {
+      await recordAssistance.mutateAsync({
+        taskId: task.id,
+        kind: "SAMPLE",
+        contentVersion: task.contentVersion,
+      });
+      const result = await submit();
+      if (result) {
+        setSampleSubmission(result);
+        setSampleOpen(true);
+      }
+    } catch {
+      // Submission error remains visible and the response stays editable.
+    }
+  }, [gradingPending, recordAssistance, sampleSubmission, submit, task, toggleSampleView]);
+
+  const maxLength = TOEIC_WRITING_RESPONSE_LIMITS[task.part];
+  const responseLength = getToeicWritingResponseLength(state.responseText);
+  const partTwoMetrics = getPartTwoEditorMetrics(state.responseText);
+  const canSubmit =
+    task.part === 1
+      ? responseLength > 0 && responseLength <= maxLength
+      : partTwoMetrics.ready;
+  const editResponse = (value: string) => {
+    responseTextRef.current = value;
+    submissionKeyRef.current = null;
+    setGrade(null);
+    setValidationIssues([]);
+    setPartTwoGrade(null);
+    setPartTwoValidationIssues([]);
+    dispatch({ type: "edit", value });
+  };
+
+  const replaceWithImprovedEmail = useCallback(
+    async (value: string) => {
+      if (task.part !== 2) return;
+      try {
+        await recordAssistance.mutateAsync({
+          taskId: task.id,
+          kind: "SAMPLE",
+          contentVersion: task.contentVersion,
+        });
+        editResponse(value);
+      } catch {
+        // Keep the current response when assistance cannot be recorded.
+      }
+    },
+    [recordAssistance, task]
+  );
+
+  const isFilenameTitle = /\.(?:png|jpg|jpeg|webp)$/i.test(task.title.trim());
+  const headerTitle = isFilenameTitle
+    ? `${t("part", { part: task.part })} - ${t("taskNumber", { number: task.order })}`
+    : task.title;
+  const headerSubtitle = isFilenameTitle
+    ? null
+    : `${t("part", { part: task.part })} - ${t("taskNumber", { number: task.order })}`;
+
+  return (
+    <main className="flex h-dvh min-h-0 flex-col overflow-hidden bg-slate-50/70 dark:bg-slate-950/30">
+      <header className="z-40 shrink-0 border-b border-border/60 bg-background py-2.5 shadow-2xs">
+        <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-3 px-4 sm:px-6">
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={() => void backToTasks()}
+            disabled={state.submitting}
+            className="h-9 shrink-0 whitespace-nowrap gap-2 rounded-full border-border/80 bg-background/80 px-3 text-xs font-medium text-foreground transition-all hover:bg-muted sm:px-4 sm:text-sm"
+          >
+            <ArrowLeft className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+            <span className="hidden sm:inline">{t("backToTasks")}</span>
+          </Button>
+
+          <div className="flex min-w-0 flex-1 flex-col items-center px-2 text-center">
+            <h1 className="w-full truncate text-sm font-medium text-foreground sm:text-base">
+              {headerTitle}
+            </h1>
+            {headerSubtitle ? (
+              <div className="mt-0.5 flex max-w-full items-center">
+                <span className="inline-flex max-w-full items-center truncate rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-normal text-emerald-700 dark:text-emerald-300">
+                  <span className="truncate">{headerSubtitle}</span>
+                </span>
+              </div>
+            ) : null}
+          </div>
+
+          <div className="flex shrink-0 items-center gap-2">
+            <Badge
+              variant="outline"
+              className="h-8 shrink-0 whitespace-nowrap rounded-full border-emerald-500/30 bg-emerald-50/50 px-3 text-xs font-normal text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-200"
+            >
+              <span>{t("part", { part: task.part })}</span>
+            </Badge>
+          </div>
+        </div>
+      </header>
+
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+        <div className="mx-auto min-h-0 w-full max-w-[1200px] px-4 py-6 pb-6 sm:px-6">
+          {task.part === 2 ? (
+            <ToeicWritingPartTwoWorkspace
+              task={task}
+              responseText={state.responseText}
+              saveStatus={state.saveStatus}
+              grade={partTwoGrade}
+              validationIssues={partTwoValidationIssues}
+              onResponseChange={editResponse}
+              onRetrySave={() => void saveNow()}
+              onRewrite={() => {
+                setPartTwoGrade(null);
+                submissionKeyRef.current = null;
+              }}
+              onReplaceImprovedEmail={(value) =>
+                void replaceWithImprovedEmail(value)
+              }
+            />
+          ) : (
+            <div className="grid items-start gap-5 lg:grid-cols-2">
+              <div className="lg:sticky lg:top-20 self-start">
+                <ToeicWritingPromptPane task={task} />
+              </div>
+            <div className="min-w-0 space-y-4">
+              <ToeicWritingEditorPane
+                responseText={state.responseText}
+                maxLength={maxLength}
+                saveStatus={state.saveStatus}
+                disabled={gradingPending}
+                quotaBadge={
+                  quota.data ? (
+                    <Badge
+                      variant="outline"
+                      className="rounded-full border-slate-200/80 bg-slate-100/80 px-3 py-1 text-xs font-medium text-slate-800 dark:border-slate-800 dark:bg-slate-800/80 dark:text-slate-200"
+                    >
+                      {gradeT("quota", {
+                        remaining: quota.data.remaining,
+                        limit: quota.data.dailyLimit,
+                      })}
+                    </Badge>
+                  ) : null
+                }
+                onChange={editResponse}
+                onRetry={() => void saveNow()}
+                onViewSample={
+                  task.part === 1 ? () => void viewSample() : undefined
+                }
+                sampleOpen={sampleOpen}
+                sampleLoading={state.submitting}
+              />
+              <div
+                className={cn(
+                  "grid transition-[grid-template-rows,opacity] duration-300 ease-in-out",
+                  sampleOpen && sampleSubmission?.part === 1
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
+                )}
+              >
+                <div className="overflow-hidden">
+                  {sampleSubmission?.part === 1 ? (
+                    <ToeicWritingReferencePanel submission={sampleSubmission} />
+                  ) : null}
+                </div>
+              </div>
+              <ToeicWritingPartOneValidationAlert issues={validationIssues} />
+              {grade ? (
+                <ToeicWritingPartOneGradePanel
+                  grade={grade}
+                  responseText={state.responseText}
+                  onRewrite={() => {
+                    setGrade(null);
+                    submissionKeyRef.current = null;
+                  }}
+                />
+              ) : null}
+              <ToeicWritingGradeHistoryPanel taskId={task.id} />
+            </div>
+          </div>
+        )}
+
+        {submitIsError || gradePartOne.isError || gradePartTwo.isError ? (
+          <Alert className="mt-5 border-rose-200 bg-rose-50/70 dark:border-rose-900 dark:bg-rose-950/40">
+            <AlertCircle
+              className="mr-2 inline h-4 w-4 text-rose-600"
+              aria-hidden="true"
+            />
+            <AlertTitle className="inline text-rose-800 dark:text-rose-200">
+              {task.part === 1
+                ? gradeT("error.title")
+                : partTwoGradeT("error.title")}
+            </AlertTitle>
+            <AlertDescription className="text-rose-700 dark:text-rose-300">
+              {task.part === 1
+                ? gradeT("error.description")
+                : partTwoGradeT("error.description")}
+            </AlertDescription>
+          </Alert>
+        ) : null}
+        </div>
+      </div>
+
+      <ToeicWritingSessionFooter
+        canSubmit={canSubmit}
+        saving={state.saveStatus === "SAVING"}
+        actionPending={gradingPending}
+        onBack={() => void backToTasks()}
+        onSave={() => void saveNow()}
+        onSubmit={() =>
+          void (task.part === 1 ? gradeResponse() : gradePartTwoResponse())
+        }
+        primaryLabel={
+          task.part === 1 ? gradeT("grade") : partTwoGradeT("grade")
+        }
+        primaryPendingLabel={
+          task.part === 1 ? gradeT("grading") : partTwoGradeT("grading")
+        }
+      />
+    </main>
+  );
+}

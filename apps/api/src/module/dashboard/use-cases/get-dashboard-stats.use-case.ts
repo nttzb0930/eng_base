@@ -1,5 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../../../database/prisma/prisma.service";
+import { calculateDashboardStreak } from "./dashboard-streak.policy";
 
 const DAY_IN_MS = 86_400_000;
 const PRACTICE_CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
@@ -11,6 +12,7 @@ export type DashboardLevelProgress = {
   learned: number;
   mastered: number;
   accuracy: number;
+  due: number;
 };
 
 export type DashboardWeakWord = {
@@ -47,6 +49,11 @@ export type DashboardModeAccuracy = {
   accuracy: number;
 };
 
+type RawLearningDay = {
+  date: string;
+  last_learning_at: Date;
+};
+
 @Injectable()
 export class GetDashboardStatsUseCase {
   constructor(private readonly prisma: PrismaService) {}
@@ -63,6 +70,7 @@ export class GetDashboardStatsUseCase {
       learned: 0,
       mastered: 0,
       accuracy: 0,
+      due: 0,
     }));
   }
 
@@ -79,6 +87,7 @@ export class GetDashboardStatsUseCase {
   }
 
   async execute(userId: string) {
+    const now = new Date();
     if (!userId) {
       return {
         overview: {
@@ -93,6 +102,7 @@ export class GetDashboardStatsUseCase {
           wrongCount: 0,
           accuracy: 0,
         },
+        streak: calculateDashboardStreak([], now),
         levelProgress: this.emptyLevelProgress(),
         topWeakWords: [] as DashboardWeakWord[],
         recentSessions: [] as DashboardRecentSession[],
@@ -111,6 +121,7 @@ export class GetDashboardStatsUseCase {
       recentSessions,
       recentActivitySessions,
       modeRows,
+      learningDays,
     ] = await Promise.all([
       this.prisma.vocabulary_items.count(),
       this.prisma.user_saved_words.count({
@@ -213,6 +224,16 @@ export class GetDashboardStatsUseCase {
           },
         },
       }),
+      this.prisma.$queryRaw<RawLearningDay[]>`
+        SELECT
+          TO_CHAR((created_at AT TIME ZONE 'UTC')::date, 'YYYY-MM-DD') AS date,
+          MAX(created_at) AS last_learning_at
+        FROM practice_sessions
+        WHERE user_id = ${userId}
+          AND correct_count + wrong_count > 0
+        GROUP BY (created_at AT TIME ZONE 'UTC')::date
+        ORDER BY (created_at AT TIME ZONE 'UTC')::date ASC
+      `,
     ]);
 
     const correctCount = progressRows.reduce(
@@ -249,6 +270,12 @@ export class GetDashboardStatsUseCase {
         (sum, progress) => sum + progress.wrong_count,
         0
       );
+      const levelDueCount = levelRows.filter(
+        (progress) =>
+          progress.review_count > 0 &&
+          (progress.next_review_at === null ||
+            progress.next_review_at <= new Date())
+      ).length;
 
       return {
         level,
@@ -258,6 +285,7 @@ export class GetDashboardStatsUseCase {
           (progress) => progress.mastery_level === "mastered"
         ).length,
         accuracy: this.getAccuracy(levelCorrectCount, levelWrongCount),
+        due: levelDueCount,
       };
     });
 
@@ -327,6 +355,13 @@ export class GetDashboardStatsUseCase {
         wrongCount,
         accuracy: this.getAccuracy(correctCount, wrongCount),
       },
+      streak: calculateDashboardStreak(
+        learningDays.map((day) => ({
+          date: day.date,
+          lastLearningAt: day.last_learning_at,
+        })),
+        now
+      ),
       levelProgress,
       topWeakWords,
       recentSessions: recentSessions.map((session): DashboardRecentSession => ({

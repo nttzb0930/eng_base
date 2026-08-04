@@ -11,6 +11,12 @@ const publicRoutes = [
   /^\/[a-z]{2}\/sign-in/,
   /^\/sign-up/,
   /^\/[a-z]{2}\/sign-up/,
+  /^\/verify-email/,
+  /^\/[a-z]{2}\/verify-email/,
+  /^\/forgot-password/,
+  /^\/[a-z]{2}\/forgot-password/,
+  /^\/reset-password/,
+  /^\/[a-z]{2}\/reset-password/,
 ];
 
 function isPublicRoute(pathname: string) {

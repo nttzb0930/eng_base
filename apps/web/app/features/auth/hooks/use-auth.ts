@@ -3,14 +3,18 @@
 import { createContext, useContext } from "react";
 
 import { getAuthSession } from "../store/auth-session.store";
-import type { LoginBody, RegisterBody } from "../types/auth.types";
+import type {
+  LoginBody,
+  RegisterBody,
+  RegisterResponse,
+} from "../types/auth.types";
 
 export type AuthStatus = "loading" | "authenticated" | "unauthenticated";
 
 export type AuthContextValue = {
   status: AuthStatus;
   login: (body: LoginBody) => Promise<void>;
-  register: (body: RegisterBody) => Promise<void>;
+  register: (body: RegisterBody) => Promise<RegisterResponse>;
   logout: () => Promise<void>;
 };
 

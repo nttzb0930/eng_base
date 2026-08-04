@@ -116,3 +116,49 @@ test("API environment Interface rejects missing, weak, or reused JWT secrets", (
     /must be different/
   );
 });
+
+test("API environment Interface rejects an empty licensed content root", () => {
+  assert.throws(
+    () =>
+      validateEnvironment({
+        DATABASE_URL: "postgresql://localhost/eng_base",
+        JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
+        JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
+        LICENSED_CONTENT_ROOT: "   ",
+      }),
+    /LICENSED_CONTENT_ROOT/
+  );
+});
+
+test("API environment defaults SMTP to disabled", () => {
+  const configuration = validateEnvironment({
+    DATABASE_URL: "postgresql://localhost/eng_base",
+    JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
+    JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
+  });
+
+  assert.equal(configuration.SMTP_ENABLED, false);
+  assert.equal(configuration.SMTP_PORT, 587);
+  assert.equal(
+    validateEnvironment({
+      DATABASE_URL: "postgresql://localhost/eng_base",
+      JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
+      JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
+      SMTP_ENABLED: "false",
+    }).SMTP_ENABLED,
+    false
+  );
+});
+
+test("API environment requires SMTP credentials when email is enabled", () => {
+  assert.throws(
+    () =>
+      validateEnvironment({
+        DATABASE_URL: "postgresql://localhost/eng_base",
+        JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
+        JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
+        SMTP_ENABLED: true,
+      }),
+    /SMTP_USER.*required|SMTP_PASS.*required/
+  );
+});

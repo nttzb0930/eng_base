@@ -12,9 +12,12 @@ const topics: VocabularyTopicDefinition[] = [
   {
     slug: "airport",
     title: "Airport",
+    titleVi: "Sân bay",
     description: "Airport vocabulary.",
+    descriptionVi: "Từ vựng dùng tại sân bay.",
     order: 1,
     group: "Travel",
+    groupVi: "Du lịch",
   },
 ];
 
@@ -65,6 +68,76 @@ test("catalog validation rejects duplicate taxonomy slugs", () => {
   ]);
 
   assert.match(report.errors.join("\n"), /Duplicate topic slug "airport"/u);
+});
+
+test("catalog validation requires complete Vietnamese topic metadata", () => {
+  const report = validateVocabularySources(
+    [
+      {
+        ...topics[0]!,
+        titleVi: "",
+        descriptionVi: "",
+        groupVi: "",
+      },
+    ],
+    [item()],
+  );
+
+  assert.match(
+    report.errors.join("\n"),
+    /Topic "airport" has empty required field "titleVi"/u,
+  );
+  assert.match(
+    report.errors.join("\n"),
+    /Topic "airport" has empty required field "descriptionVi"/u,
+  );
+  assert.match(
+    report.errors.join("\n"),
+    /Topic "airport" has empty required field "groupVi"/u,
+  );
+});
+
+test("catalog validation rejects duplicate taxonomy order", () => {
+  const report = validateVocabularySources(
+    [
+      ...topics,
+      {
+        ...topics[0]!,
+        slug: "hotel",
+        title: "Hotel",
+      },
+    ],
+    [item()],
+  );
+
+  assert.match(report.errors.join("\n"), /Duplicate topic order 1/u);
+});
+
+test("catalog validation rejects conflicting Vietnamese group names", () => {
+  const localizedTopics = [
+    {
+      ...topics[0]!,
+      titleVi: "Sân bay",
+      descriptionVi: "Từ vựng dùng tại sân bay.",
+      groupVi: "Du lịch",
+    },
+    {
+      ...topics[0]!,
+      slug: "hotel",
+      title: "Hotel",
+      titleVi: "Khách sạn",
+      descriptionVi: "Từ vựng dùng tại khách sạn.",
+      order: 2,
+      groupVi: "Đi lại",
+    },
+  ] as VocabularyTopicDefinition[];
+
+  const report = validateVocabularySources(localizedTopics, [item()]);
+
+  assert.match(
+    report.errors.join("\n"),
+    /Topic group "Travel" has conflicting Vietnamese names/u,
+  );
 });
 
 test("catalog assertion throws all structural errors", () => {

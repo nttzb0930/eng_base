@@ -66,6 +66,10 @@ export class LoginUserUseCase {
       throw authUnauthorized("INVALID_CREDENTIALS", "password_mismatch");
     }
 
+    if (requiredRole !== "ADMIN" && !user.email_verified_at) {
+      throw authBadRequest("EMAIL_NOT_VERIFIED", "email_not_verified");
+    }
+
     if (requiredRole === "ADMIN") {
       return {
         token: this.tokens.createAdminCompatibilityToken(user.id, user.role),

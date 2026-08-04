@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
@@ -6,6 +7,12 @@ import { Toaster } from "@/app/components/ui/sonner";
 import { Providers } from "@/app/providers";
 
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+});
 
 export const viewport: Viewport = {
   themeColor: "#22C55E",
@@ -46,7 +53,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${inter.variable} ${inter.className}`}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>

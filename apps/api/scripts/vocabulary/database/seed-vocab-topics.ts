@@ -3,7 +3,10 @@ import "dotenv/config";
 import path from "node:path";
 
 import prisma from "../../support/script-prisma.js";
-import { loadVocabularySeedData } from "./vocabulary-seed-data.js";
+import {
+  loadVocabularySeedData,
+  mapVocabularyTopicPersistenceData,
+} from "./vocabulary-seed-data.js";
 
 const repositoryRoot = path.resolve(process.cwd(), "../..");
 const vocabularyDataDirectory = path.join(
@@ -23,18 +26,13 @@ async function main() {
   const seedData = await loadVocabularySeedData(vocabularyDataDirectory);
 
   for (const topic of seedData.topics) {
+    const persistenceData = mapVocabularyTopicPersistenceData(topic);
     await prisma.vocabulary_topics.upsert({
       where: { slug: topic.slug },
-      update: {
-        title: topic.title,
-        description: topic.description,
-        order: topic.order,
-      },
+      update: persistenceData,
       create: {
         slug: topic.slug,
-        title: topic.title,
-        description: topic.description,
-        order: topic.order,
+        ...persistenceData,
       },
     });
   }

@@ -1,0 +1,159 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Deployment environment.
+        required: true
+        type: choice
+        default: staging
+        options:
+          - staging
+          - production
+      image_tag:
+        description: Image tag to deploy, usually a commit SHA already published to GHCR.
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  deploy:
+    name: Deploy with Docker Compose
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: ${{ inputs.environment }}
+    outputs:
+      image-tag: ${{ steps.metadata.outputs.image_tag }}
+    steps:
+      - name: Resolve image metadata
+        id: metadata
+        env:
+          IMAGE_TAG: ${{ inputs.image_tag }}
+        run: |
+          set -eu
+
+          image_prefix="${REGISTRY}/${GITHUB_REPOSITORY}"
+          image_prefix="$(printf '%s' "$image_prefix" | tr '[:upper:]' '[:lower:]')"
+
+          echo "image_tag=$IMAGE_TAG" >> "$GITHUB_OUTPUT"
+          echo "api_image=$image_prefix-api" >> "$GITHUB_OUTPUT"
+          echo "web_image=$image_prefix-web" >> "$GITHUB_OUTPUT"
+          echo "admin_image=$image_prefix-admin" >> "$GITHUB_OUTPUT"
+
+      - name: Validate deployment secrets
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          set -eu
+
+          missing=""
+          for name in DEPLOY_HOST DEPLOY_USER DEPLOY_SSH_KEY DEPLOY_PATH; do
+            if [ -z "$(eval "printf '%s' \"\${$name:-}\"")" ]; then
+              missing="$missing $name"
+            fi
+          done
+
+          if [ -n "$missing" ]; then
+            echo "Missing deployment secrets:$missing"
+            exit 1
+          fi
+
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        env:
+          API_IMAGE: ${{ steps.metadata.outputs.api_image }}
+          WEB_IMAGE: ${{ steps.metadata.outputs.web_image }}
+          ADMIN_IMAGE: ${{ steps.metadata.outputs.admin_image }}
+          IMAGE_TAG: ${{ steps.metadata.outputs.image_tag }}
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || '22' }}
+          envs: API_IMAGE,WEB_IMAGE,ADMIN_IMAGE,IMAGE_TAG
+          script: |
+            set -eu
+            cd "${{ secrets.DEPLOY_PATH }}"
+
+            mkdir -p .deploy
+            if [ -f .env.production ]; then
+              current_tag="$(grep -E '^IMAGE_TAG=' .env.production | tail -1 | cut -d '=' -f 2- || true)"
+              if [ -n "$current_tag" ]; then
+                printf '%s\n' "$current_tag" > .deploy/previous-image-tag
+              fi
+            fi
+
+            touch .env.production
+
+            if grep -qE '^API_IMAGE=' .env.production; then
+              sed -i "s#^API_IMAGE=.*#API_IMAGE=$API_IMAGE#" .env.production
+            else
+              printf '\nAPI_IMAGE=%s\n' "$API_IMAGE" >> .env.production
+            fi
+
+            if grep -qE '^WEB_IMAGE=' .env.production; then
+              sed -i "s#^WEB_IMAGE=.*#WEB_IMAGE=$WEB_IMAGE#" .env.production
+            else
+              printf 'WEB_IMAGE=%s\n' "$WEB_IMAGE" >> .env.production
+            fi
+
+            if grep -qE '^ADMIN_IMAGE=' .env.production; then
+              sed -i "s#^ADMIN_IMAGE=.*#ADMIN_IMAGE=$ADMIN_IMAGE#" .env.production
+            else
+              printf 'ADMIN_IMAGE=%s\n' "$ADMIN_IMAGE" >> .env.production
+            fi
+
+            if grep -qE '^IMAGE_TAG=' .env.production; then
+              sed -i "s#^IMAGE_TAG=.*#IMAGE_TAG=$IMAGE_TAG#" .env.production
+            else
+              printf 'IMAGE_TAG=%s\n' "$IMAGE_TAG" >> .env.production
+            fi
+
+            docker compose -f docker-compose.prod.yml --env-file .env.production pull api web admin
+            docker compose -f docker-compose.prod.yml --env-file .env.production run --rm api npx prisma migrate deploy
+            docker compose -f docker-compose.prod.yml --env-file .env.production up -d
+            docker compose -f docker-compose.prod.yml --env-file .env.production ps
+
+  health-check:
+    name: Health Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: deploy
+    steps:
+      - name: Check deployment endpoints
+        env:
+          DEPLOY_API_HEALTH_URL: ${{ secrets.DEPLOY_API_HEALTH_URL }}
+          DEPLOY_WEB_URL: ${{ secrets.DEPLOY_WEB_URL }}
+          DEPLOY_ADMIN_URL: ${{ secrets.DEPLOY_ADMIN_URL }}
+        run: |
+          set -eu
+
+          checked=0
+
+          if [ -n "$DEPLOY_API_HEALTH_URL" ]; then
+            curl --fail --show-error --silent --location "$DEPLOY_API_HEALTH_URL" > /dev/null
+            checked=$((checked + 1))
+          fi
+
+          if [ -n "$DEPLOY_WEB_URL" ]; then
+            curl --fail --show-error --silent --location "$DEPLOY_WEB_URL" > /dev/null
+            checked=$((checked + 1))
+          fi
+
+          if [ -n "$DEPLOY_ADMIN_URL" ]; then
+            curl --fail --show-error --silent --location "$DEPLOY_ADMIN_URL" > /dev/null
+            checked=$((checked + 1))
+          fi
+
+          if [ "$checked" -eq 0 ]; then
+            echo "No deployment endpoint secrets configured. Skipping health check."
+          fi

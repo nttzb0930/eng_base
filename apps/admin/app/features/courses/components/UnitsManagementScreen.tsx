@@ -1,30 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
-import { Plus, Edit2, Trash2, Loader2 } from "lucide-react";
+import type { CefrLevel } from "@repo/shared";
+import { Plus } from "lucide-react";
+import { useState } from "react";
 import { toast } from "sonner";
 
-import type { CourseUnitViewModel as Unit } from "@/app/features/courses/types/course-management.types";
-import { useTableControls } from "@/app/hooks/use-table-controls";
-import { useDebounce } from "@/app/hooks/use-debounce";
+import { DataTableCard } from "@/app/components/data-table";
+import { ErrorState } from "@/app/components/feedback/ErrorState";
+import { DestructiveActionDialog } from "@/app/components/forms/DestructiveActionDialog";
+import { PageHeader } from "@/app/components/layout/PageHeader";
 import { Button } from "@/app/components/ui/button";
-import { Input } from "@/app/components/ui/input";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/app/components/ui/dialog";
-import { Label } from "@/app/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/app/components/ui/select";
-import { DataTableCard, type Column } from "@/app/components/data-table";
 import { useAllCourses } from "@/app/features/courses/hooks/use-courses";
 import {
   useCreateUnit,
@@ -32,267 +17,139 @@ import {
   useUnits,
   useUpdateUnit,
 } from "@/app/features/courses/hooks/use-units";
+import type { CourseUnitViewModel } from "@/app/features/courses/types/course-management.types";
+import { useDebounce } from "@/app/hooks/use-debounce";
+import { useTableControls } from "@/app/hooks/use-table-controls";
+
+import { getUnitColumns } from "./units/unit-columns";
+import { UnitEditorForm } from "./units/UnitEditorForm";
+import type { UnitEditorValues } from "./units/unit-editor.schema";
 
 export function UnitsManagementScreen() {
-  const {
-    currentPage,
-    setCurrentPage,
-    pageSize,
-    setPageSize,
-    searchQuery,
-    setSearchQuery,
-  } = useTableControls();
-  const debouncedSearch = useDebounce(searchQuery, 450);
+  const controls = useTableControls();
+  const debouncedSearch = useDebounce(controls.searchQuery, 450);
   const unitsQuery = useUnits({
-    page: currentPage,
-    limit: pageSize,
+    limit: controls.pageSize,
+    page: controls.currentPage,
     search: debouncedSearch,
   });
   const coursesQuery = useAllCourses();
-  const units = unitsQuery.data?.data ?? [];
-  const courses = coursesQuery.data ?? [];
-  const pagination = unitsQuery.data?.pagination;
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [isEdit, setIsEdit] = useState(false);
-  const [activeId, setActiveId] = useState<number | null>(null);
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [courseId, setCourseId] = useState("");
-  const [order, setOrder] = useState(1);
+  const [editorOpen, setEditorOpen] = useState(false);
+  const [editingUnit, setEditingUnit] = useState<CourseUnitViewModel | null>(null);
+  const [deletingUnit, setDeletingUnit] = useState<CourseUnitViewModel | null>(null);
+  const [submissionError, setSubmissionError] = useState<string>();
   const createMutation = useCreateUnit();
-  const updateMutation = useUpdateUnit(activeId);
+  const updateMutation = useUpdateUnit(editingUnit?.id ?? null);
   const deleteMutation = useDeleteUnit();
-  const formSubmitting = createMutation.isPending || updateMutation.isPending;
 
-  const handleOpenCreate = () => {
-    setIsEdit(false);
-    setActiveId(null);
-    setTitle("");
-    setDescription("");
-    setCourseId(courses[0]?.id?.toString() || "");
-    setOrder(1);
-    setIsOpen(true);
+  const openCreate = () => {
+    setEditingUnit(null);
+    setSubmissionError(undefined);
+    setEditorOpen(true);
   };
-  const handleOpenEdit = (u: Unit) => {
-    setIsEdit(true);
-    setActiveId(u.id);
-    setTitle(u.title);
-    setDescription(u.description);
-    setCourseId(u.courseId.toString());
-    setOrder(u.order);
-    setIsOpen(true);
+
+  const openEdit = (unit: CourseUnitViewModel) => {
+    setEditingUnit(unit);
+    setSubmissionError(undefined);
+    setEditorOpen(true);
   };
-  const handleDelete = async (id: number) => {
-    if (!confirm("Xóa chương học này?")) return;
+
+  const submitUnit = async (values: UnitEditorValues) => {
+    setSubmissionError(undefined);
+    const payload = {
+      ...values,
+      cefrLevel: values.cefrLevel === "none" ? null : (values.cefrLevel as CefrLevel),
+    };
     try {
-      await deleteMutation.mutateAsync(id);
-      toast.success("Xóa thành công");
-    } catch (e) {
-      toast.error(e instanceof Error ? e.message : "Lỗi");
-    }
-  };
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const body = { title, description, courseId: parseInt(courseId), order };
-      if (isEdit && activeId !== null) await updateMutation.mutateAsync(body);
-      else await createMutation.mutateAsync(body);
-      toast.success(isEdit ? "Cập nhật thành công" : "Tạo thành công");
-      setIsOpen(false);
-    } catch (e) {
-      toast.error(e instanceof Error ? e.message : "Lỗi");
+      if (editingUnit) {
+        await updateMutation.mutateAsync(payload);
+        toast.success("Đã cập nhật chương học.");
+      } else {
+        await createMutation.mutateAsync(payload);
+        toast.success("Đã tạo chương học.");
+      }
+      setEditorOpen(false);
+    } catch (error) {
+      setSubmissionError(
+        error instanceof Error ? error.message : "Không thể lưu chương học.",
+      );
     }
   };
 
-  const columns: Column<Unit>[] = [
-    {
-      header: "ID",
-      className: "w-16",
-      cell: (i) => (
-        <span className="text-xs font-semibold text-zinc-400">#{i.id}</span>
-      ),
-    },
-    {
-      header: "Tiêu đề chương",
-      accessorKey: "title",
-      cell: (i) => <span className="font-bold text-zinc-900">{i.title}</span>,
-    },
-    {
-      header: "Mô tả",
-      cell: (i) => (
-        <span className="block max-w-xs truncate text-xs text-zinc-500">
-          {i.description}
-        </span>
-      ),
-    },
-    {
-      header: "Khóa học",
-      cell: (i) => (
-        <span className="text-sm text-zinc-700">
-          {i.courses?.title || `ID: ${i.courseId}`}
-        </span>
-      ),
-    },
-    {
-      header: "Thứ tự",
-      className: "w-20 text-center",
-      cell: (i) => <span className="font-bold text-zinc-900">{i.order}</span>,
-    },
-    {
-      header: "Hành động",
-      className: "text-right",
-      cell: (i) => (
-        <div className="flex items-center justify-end gap-1">
-          <Button
-            size="icon"
-            variant="ghost"
-            onClick={() => handleOpenEdit(i)}
-            className="h-8 w-8 cursor-pointer rounded-lg text-zinc-400 hover:bg-zinc-100 hover:text-zinc-900"
-          >
-            <Edit2 className="h-3.5 w-3.5" />
-          </Button>
-          <Button
-            size="icon"
-            variant="ghost"
-            onClick={() => handleDelete(i.id)}
-            className="h-8 w-8 cursor-pointer rounded-lg text-zinc-400 hover:bg-red-50 hover:text-red-600"
-          >
-            <Trash2 className="h-3.5 w-3.5" />
-          </Button>
-        </div>
-      ),
-    },
-  ];
+  const deleteUnit = async () => {
+    if (!deletingUnit) return;
+    try {
+      await deleteMutation.mutateAsync(deletingUnit.id);
+      toast.success("Đã xóa chương học.");
+      setDeletingUnit(null);
+    } catch (error) {
+      toast.error(
+        error instanceof Error ? error.message : "Không thể xóa chương học.",
+      );
+    }
+  };
+
+  const units = unitsQuery.data?.data ?? [];
+  const pagination = unitsQuery.data?.pagination;
+  const columns = getUnitColumns({ onDelete: setDeletingUnit, onEdit: openEdit });
 
   return (
-    <div className="mx-auto w-full max-w-7xl space-y-6 p-4 md:p-6">
-      <div className="flex items-center justify-between border-b border-zinc-200 pb-4">
-        <div>
-          <h3 className="text-lg font-bold tracking-tight text-zinc-900">
-            Danh sách chương học (Units)
-          </h3>
-          <p className="mt-0.5 text-xs font-medium text-zinc-500">
-            Cấu hình thứ tự và mô tả của các chương học
-          </p>
-        </div>
-        <Button
-          onClick={handleOpenCreate}
-          className="h-9 cursor-pointer gap-2 rounded-lg bg-zinc-900 px-4 font-medium text-zinc-50 hover:bg-zinc-800"
-        >
-          <Plus className="h-4 w-4" /> Thêm bản ghi mới
-        </Button>
-      </div>
-
-      <DataTableCard<Unit>
-        data={units}
-        columns={columns}
-        isLoading={unitsQuery.isLoading}
-        isFetching={unitsQuery.isFetching}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        searchPlaceholder="Tìm kiếm chương học..."
-        emptyMessage="Không tìm thấy bản ghi nào."
-        currentPage={currentPage}
-        pageSize={pageSize}
-        totalItems={pagination?.total ?? 0}
-        totalPages={pagination?.totalPages ?? 1}
-        onPageChange={setCurrentPage}
-        onPageSizeChange={setPageSize}
+    <div className="space-y-6">
+      <PageHeader
+        actions={
+          <Button disabled={coursesQuery.isLoading} onClick={openCreate}>
+            <Plus aria-hidden="true" />
+            Thêm chương
+          </Button>
+        }
+        description="Sắp xếp chương, gán khóa học và trình độ CEFR."
+        eyebrow="Nội dung khóa học"
+        title="Chương học"
       />
 
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-lg rounded-xl border-zinc-200 bg-white p-6 text-zinc-900 shadow-lg">
-          <DialogHeader>
-            <DialogTitle className="text-xl font-bold tracking-tight">
-              {isEdit ? "Chỉnh sửa chương học" : "Tạo chương học mới"}
-            </DialogTitle>
-            <DialogDescription className="text-xs text-zinc-500">
-              Nhập chi tiết chương học bên dưới
-            </DialogDescription>
-          </DialogHeader>
-          <form onSubmit={handleSubmit} className="space-y-4 pt-2">
-            <div className="space-y-2">
-              <Label className="text-sm font-semibold text-zinc-700">
-                Tiêu đề
-              </Label>
-              <Input
-                required
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                placeholder="Unit 1: Cơ bản"
-                className="border-zinc-200 bg-white"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label className="text-sm font-semibold text-zinc-700">
-                Mô tả
-              </Label>
-              <Input
-                required
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                placeholder="Mô tả chương học"
-                className="border-zinc-200 bg-white"
-              />
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label className="text-sm font-semibold text-zinc-700">
-                  Khóa học
-                </Label>
-                <Select value={courseId} onValueChange={setCourseId}>
-                  <SelectTrigger className="border-zinc-200 bg-white">
-                    <SelectValue placeholder="Chọn khóa học" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {courses.map((c) => (
-                      <SelectItem key={c.id} value={c.id.toString()}>
-                        {c.title}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label className="text-sm font-semibold text-zinc-700">
-                  Thứ tự
-                </Label>
-                <Input
-                  type="number"
-                  min={1}
-                  value={order}
-                  onChange={(e) => setOrder(parseInt(e.target.value) || 1)}
-                  className="border-zinc-200 bg-white"
-                />
-              </div>
-            </div>
-            <div className="flex items-center justify-end gap-3 border-t border-zinc-100 pt-4">
-              <Button
-                type="button"
-                variant="outline"
-                onClick={() => setIsOpen(false)}
-                className="cursor-pointer"
-              >
-                Hủy
-              </Button>
-              <Button
-                type="submit"
-                disabled={formSubmitting}
-                className="cursor-pointer bg-zinc-900 text-zinc-50 hover:bg-zinc-800"
-              >
-                {formSubmitting ? (
-                  <span className="flex items-center gap-1.5">
-                    <Loader2 className="h-4 w-4 animate-spin" /> Đang lưu...
-                  </span>
-                ) : (
-                  "Lưu thay đổi"
-                )}
-              </Button>
-            </div>
-          </form>
-        </DialogContent>
-      </Dialog>
+      {unitsQuery.isError ? (
+        <ErrorState
+          description="Không thể tải danh sách chương học."
+          onRetry={() => void unitsQuery.refetch()}
+        />
+      ) : (
+        <DataTableCard<CourseUnitViewModel>
+          columns={columns}
+          currentPage={controls.currentPage}
+          data={units}
+          emptyMessage="Không có chương học phù hợp."
+          getRowId={(unit) => String(unit.id)}
+          isFetching={unitsQuery.isFetching}
+          isLoading={unitsQuery.isLoading}
+          onPageChange={controls.setCurrentPage}
+          onPageSizeChange={controls.setPageSize}
+          onSearchChange={controls.setSearchQuery}
+          pageSize={controls.pageSize}
+          searchPlaceholder="Tìm kiếm chương học..."
+          searchQuery={controls.searchQuery}
+          totalItems={pagination?.total ?? 0}
+          totalPages={pagination?.totalPages ?? 1}
+        />
+      )}
+
+      <UnitEditorForm
+        courses={coursesQuery.data ?? []}
+        error={submissionError}
+        isOpen={editorOpen}
+        isSubmitting={createMutation.isPending || updateMutation.isPending}
+        onOpenChange={setEditorOpen}
+        onSubmit={submitUnit}
+        unit={editingUnit}
+      />
+      <DestructiveActionDialog
+        isPending={deleteMutation.isPending}
+        onConfirm={deleteUnit}
+        onOpenChange={(open) => {
+          if (!open) setDeletingUnit(null);
+        }}
+        open={Boolean(deletingUnit)}
+        resourceName={deletingUnit?.title ?? "chương học này"}
+      />
     </div>
   );
 }

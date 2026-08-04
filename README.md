@@ -115,10 +115,13 @@ rate limit phải được inject lúc container chạy.
 
 ## CI/CD và GHCR
 
-Repository có đúng hai workflow:
+Repository có ba workflow:
 
 - `.github/workflows/ci.yml`: kiểm tra mọi branch, pull request vào `main`, hoặc chạy thủ công.
-- `.github/workflows/docker-build.yml`: publish ba image lên GHCR khi push `main`, tag semantic `v*.*.*`, hoặc chạy thủ công.
+- `.github/workflows/publish-images.yml`: publish ba image lên GHCR sau khi `CI` trên
+  `main` thành công, hoặc chạy thủ công với `image_tag`.
+- `.github/workflows/deploy.yml`: deploy thủ công qua SSH bằng image tag đã publish,
+  chạy Prisma migration và health check.
 
 GHCR sử dụng `GITHUB_TOKEN`, không cần Docker Hub registry hay secret Docker Hub.
 Tên image sau khi push có dạng:
@@ -129,15 +132,17 @@ ghcr.io/<owner-lowercase>/eng-base-web
 ghcr.io/<owner-lowercase>/eng-base-admin
 ```
 
-Workflow chỉ publish image; nó không tự deploy, migrate hoặc seed database. Xem
-[CI/CD guide](docs/guides/ci-cd.md) để cấu hình GitHub Variables, quyền package,
-tag và cách pull/run image.
+Publish workflow chỉ đưa image lên GHCR. Deploy workflow chỉ roll out image và
+chạy schema migration; nó không seed dữ liệu, enrich vocabulary hoặc thay đổi
+catalog. Xem [CI/CD guide](docs/guides/ci-cd.md) để cấu hình GitHub Variables,
+Secrets, quyền package, tag, pull/run image và deploy.
 
 ## An toàn dữ liệu
 
 Các lệnh sau có thể thay đổi schema, database, dữ liệu nguồn hoặc gọi provider:
 
-- `db:push`, `db:migrate`, `db:migrate:deploy`, `db:migrate:reset`, `db:seed`;
+- `db:push`, `db:migrate`, `db:migrate:deploy`, `db:migrate:reset`, `db:seed:dev`
+  và các lần ghi Vocabulary bootstrap đã được xác nhận;
 - vocabulary enrichment, normalization, POS correction và database sync;
 - Topic classification/expansion qua AI provider.
 
@@ -160,8 +165,8 @@ git push origin --tags
 ```
 
 Sau khi push và bật GitHub Actions, CI bắt đầu theo trigger; GHCR chỉ có image
-sau khi workflow Docker chạy thành công. Luôn kiểm tra `git status`, remote và
-tag trước khi push.
+sau khi `publish-images.yml` chạy thành công. Luôn kiểm tra `git status`, remote
+và tag trước khi push.
 
 ## Tài liệu
 

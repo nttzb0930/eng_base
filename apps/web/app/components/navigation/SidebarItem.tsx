@@ -14,20 +14,32 @@ type SidebarItemProps = {
   label: string;
   iconSrc: string;
   href: string;
+  activeHrefs?: string[];
 };
 
-export const SidebarItem = ({ label, iconSrc, href }: SidebarItemProps) => {
+export const SidebarItem = ({
+  label,
+  iconSrc,
+  href,
+  activeHrefs = [href],
+}: SidebarItemProps) => {
   const pathname = usePathname();
   const locale = useCurrentLocale();
   const localizedHref = withLocale(href, locale);
-  const isActive = pathname === localizedHref;
+  const isActive = activeHrefs.some((activeHref) => {
+    const localizedActiveHref = withLocale(activeHref, locale);
+    return (
+      pathname === localizedActiveHref ||
+      pathname.startsWith(localizedActiveHref + "/")
+    );
+  });
 
   return (
     <Button
       variant="sidebar"
       className={cn(
         "relative h-12 justify-start overflow-hidden px-3",
-        isActive ? "font-semibold text-primary" : "text-muted-foreground"
+        isActive ? "text-primary font-semibold" : "text-muted-foreground"
       )}
       asChild
     >
@@ -35,11 +47,11 @@ export const SidebarItem = ({ label, iconSrc, href }: SidebarItemProps) => {
         {isActive && (
           <motion.div
             layoutId="activeSidebarIndicator"
-            className="absolute inset-0 rounded-xl bg-primary/10"
+            className="bg-primary/10 absolute inset-0 rounded-xl"
             transition={{
               type: "spring",
               stiffness: 150,
-              damping: 20
+              damping: 20,
             }}
           />
         )}

@@ -66,6 +66,7 @@ apps/web/app/
     placement-test/
     practice/
     progress/
+    reading/
     review/
     topics/
     vocabulary/
@@ -82,6 +83,27 @@ Components through feature hooks. `next/headers` and request configuration are
 reserved for Next.js/next-intl infrastructure; they are not a second domain HTTP
 runtime.
 
+Localized Learner routes separate browsing screens from focused learning
+sessions without changing their public URLs:
+
+```text
+apps/web/app/[locale]/
+  (main)/                 navigation-enabled Learner browsing routes
+    practice/page.tsx     Practice mode selection
+    reading/page.tsx      published A1 passage discovery
+  (session)/              focused full-viewport learning routes
+    practice/*            active Practice quizzes
+    reading/[slug]        passage and comprehension questions
+    reading/results/*     persisted Reading attempt result
+  lesson/                 focused Lesson routes using the same session frame
+```
+
+Route groups such as `(main)` and `(session)` do not appear in the URL. Session
+routes do not render global navigation or the main page container; their owning
+feature supplies focused exit, progress, and completion controls. Authentication
+and placement confirmation remain centralized in `LearnerShell` for both route
+profiles.
+
 ## Admin layout
 
 ```text
@@ -93,6 +115,7 @@ apps/admin/app/
     auth/
     courses/
     practice/
+    reading/
     settings/
     users/
   hooks/                       demonstrated cross-capability Admin hooks
@@ -106,6 +129,150 @@ apps/admin/app/
 Admin has no domain `src/` tree. Admin is a caller and authorization mode in the
 API, not a backend domain owner. Frontend features are named after the capability
 whose data and workflows they present.
+
+### Admin styling and presentation
+
+Admin uses a CSS-first Tailwind 4 and Shadcn source profile. The registry at
+`apps/admin/components.json` points `components`, `ui`, and `utils` to
+`@/app/components`, `@/app/components/ui`, and `@/app/utils/cn`. Global CSS owns
+the Tailwind import, shared `packages/ui` source scan, semantic color tokens,
+browser scrollbar behavior, and the class-based dark variant; there is no
+Admin `tailwind.config.ts`.
+
+Shadcn source used only by Admin stays under `app/components/ui`. Avatar,
+Dialog, and Separator remain thin re-exports from `@repo/ui` because Web and
+Admin use those exact implementations. Similar primitives are not promoted to
+`packages/ui` until their behavior is genuinely identical across runtimes.
+
+The root layout loads Inter explicitly. Normal body and table copy uses weight
+400, controls and navigation use 500, and headings use 600. Broad bold or black
+weights are not part of the normal management hierarchy. `AdminThemeProvider`
+offers light, dark, and system modes through `next-themes`; components consume
+semantic classes such as `bg-background`, `bg-card`, `text-foreground`, and
+`text-muted-foreground` instead of hard-coded light surfaces.
+
+Admin-wide shell, grouped navigation, page headers, table composition, feedback,
+and form composition belong under `app/components`. Capability-specific columns,
+editors, dialogs, and workflow presentation stay below their owning feature.
+Desktop navigation groups course content, Reading, operations, and system
+settings and persists only its collapsed presentation preference. Mobile
+navigation uses the shared Sheet primitive; authentication and session data do
+not enter the sidebar store.
+
+The Admin Settings route keeps `SettingsView` as a thin composition boundary.
+Its typed form, schema, category navigation, loading/error handling, and partial
+update behavior belong to `app/features/settings`. Desktop uses vertical tabs,
+mobile uses a Select for the same categories, and neither surface exposes
+persistence storage keys to operators.
+
+Reading uses the same feature/view profile in both frontends. Admin exposes
+`/reading-passages` for nested question authoring and publication. Web exposes a
+localized `/reading` list plus focused session/result routes. Display
+preferences contain only font scale and line height and are stored defensively
+under `reading-display-preferences`; they are not learner progress or a server
+contract.
+
+TOEIC Reading uses the Web feature/view profile under
+`app/features/toeic-reading` and `app/views/toeic-reading`. The localized main
+shell owns `/learn/cert/toeic` and `/learn/cert/toeic/reading`; the focused
+session shell owns `/toeic/reading/tests/:testId` and
+`/toeic/reading/results/:attemptId`. Each route imports a distinct
+layout-matching skeleton rather than a generic page placeholder.
+
+The Full Test session keeps answer selections, review markers, and its
+idempotency key in client state. It submits the exact `sourceVersion` received
+with the test and does not infer correctness before submission. Result
+presentation consumes immutable attempt snapshots and communicates correctness
+with icons, text, and border treatment in addition to color.
+
+TOEIC Reading sessions render one active question at a time. Full Test keeps
+correctness private until final submission. Part 5, 6, and 7 instead start an
+authenticated backend practice session: selecting an option grades that one
+question immediately, locks its first graded answer, and reveals only the
+returned correctness, correct option, explanation, and available translation.
+Previous, Next, and direct question-number controls do not fetch another test.
+Part 6 and Part 7 render only the stimulus referenced by the active question.
+Part completion remains unavailable until every question has been graded.
+Imported stimulus markup is parsed into a strict React-rendered allowlist;
+inline styles, event handlers, executable elements, and unsafe image URLs are
+discarded. Web never injects TOEIC source HTML with `dangerouslySetInnerHTML`.
+
+Full Test also fetches the authenticated backend draft before initializing
+interactive state. Answer, review-marker, and active-question changes enqueue
+complete snapshots through a feature-owned serialized queue; only one save is
+in flight and rapid pending changes collapse to the newest snapshot. The UI
+keeps local state after a save error, reports saving/saved/error status, and
+flushes queued work before submission so a late request cannot recreate a
+deleted draft. Part practice stores graded answers and navigation state in its
+backend session instead. No learner progress is stored in `localStorage`. Test
+cards use server-projected progress for answered/remaining counts and their
+Continue action.
+
+The Reading browser exposes four URL-backed scopes: Full Test, Part 5, Part 6,
+and Part 7. Part 5 is the default. Every scope lists the published tests so the
+Learner chooses the exact test before entering a session. Full Test omits the
+API Part query and requires all 100 questions; Part scopes pass the selected
+Part through cache keys, detail delivery, practice-session persistence, and
+back navigation.
+
+Cards render the backend-owned source-set label and test title. Web does not
+derive a year from `updatedAt` and does not invent Level 1-5 classifications.
+Part 6 and Part 7 retain their stimulus grouping in focused sessions.
+
+## TOEIC Writing learner workflow
+
+TOEIC Writing follows the same feature/view dependency profile under
+`app/features/toeic-writing` and `app/views/toeic-writing`. The localized main
+shell owns `/learn/cert/toeic/writing`. The focused learner shell owns
+`/toeic/writing/part-1/:taskId`, `/toeic/writing/part-2/:taskId`, and the
+immutable `/toeic/writing/submissions/:submissionId` result route. Every route
+is a thin parameter adapter and imports a layout-matching skeleton.
+
+The catalog shows only published tasks and backend-projected draft/submission
+state. Part 1 renders an authenticated image plus required words; Part 2 renders
+the source email and ordered response requirements. Protected images are
+fetched through the Auth-owned HTTP client as blobs so bearer-token and refresh
+behavior remain centralized.
+
+Editor changes are debounced for 600 milliseconds and sent through a
+feature-owned serialized queue. Only one backend save is in flight, rapid
+pending edits collapse to the newest complete snapshot, and a failure never
+clears learner text. Manual save and submission flush the queue first. Drafts
+are scoped to the authenticated account and are not stored in `localStorage`.
+
+Submission uses one stable idempotency key for retries, clears the draft through
+the API transaction, and replaces the editor route with an owned immutable
+result. Navigation flushes the current snapshot before leaving, and submission
+locks the debounce scheduler so a late save cannot recreate the deleted draft.
+Reference responses are snapshotted by the API at submission time, appear only
+on that result, and are explicitly presented as comparison material, not a
+score or AI feedback.
+
+Part 1 adds a separate inline coaching flow. Web runs the shared deterministic
+response checks before requesting a grade, sends a stable idempotency key, and
+renders only the typed grade contract returned by API. Quota, score, checks,
+correction, alternative sentence, and owned history are backend projections;
+Web does not call Gemini, inspect answer keys, or reconstruct usage locally.
+Viewing the reference sample is recorded as assistance and remains separate
+from provider grading.
+
+Part 2 uses a responsive prompt-and-editor workspace. The prompt always shows
+English first and Vietnamese second regardless of interface locale. The editor
+autosaves incomplete work, becomes submission-ready from 50 through 300 words,
+and rejects changes beyond 300 words or 2,200 characters without discarding the
+last accepted snapshot. Outline, vocabulary, sample, and community panels load
+only when opened and own their loading, failure, and empty states. Restoring a
+community response requires confirmation when the editor already contains text.
+On smaller viewports the two-column workspace stacks while the shared session
+footer remains available for primary navigation.
+
+Part 2 grading is a separate action from immutable submission. Web mirrors the
+deterministic limits for immediate feedback, while API remains authoritative.
+The typed 0-4 result renders owned task-completion, sentence-variety, tone,
+grammar, paraphrase, overall, and improved-email sections plus learner-scoped
+history. Rewriting preserves the current draft. An improved email replaces the
+editor only after confirmation and records sample-equivalent assistance before
+the next grade; provider text is rendered as React text, never raw HTML.
 
 ## Browser data flow
 
@@ -234,6 +401,64 @@ created only for a real public Interface.
 - Add `api`, `hooks`, `store`, `types`, or `components` only below a known owner.
 - Add semantic child folders only for real workflows or presentation modes, not
   to hide repeated filename prefixes.
+
+## TOEIC Listening learner browser
+
+`app/features/toeic-listening` owns the authenticated resource adapter, React
+Query cache keys, Full/Part scope parsing and Listening-specific presentation
+components. Cache identities include the selected Part so Full Test and Parts
+1–4 never share draft, test or attempt state. The localized route remains a thin
+adapter to `ToeicListeningListView`; learner progress comes from the backend and
+is never reconstructed from `localStorage`.
+
+Listening session routes use the focused learner shell. Protected audio and
+images are fetched through the authenticated resource adapter and rendered from
+short-lived Blob URLs, so access tokens never appear in media URLs. Full Test
+requires an explicit Start gesture, prevents seeking and replay after an asset
+ends, and checkpoints playback through the backend draft queue. Part practice
+allows replay and seeking. Transcript, translation, explanations and answer
+keys are rendered only from immutable result snapshots after submission.
+
+The session uses a two-pane desktop workspace and a stacked mobile layout. The
+left pane owns instructions, protected audio, and images; the right pane owns
+questions, navigation, and actions. In Part practice, selecting an option calls
+the one-question check endpoint and renders accessible correct/incorrect
+feedback plus expandable source-provided Listening translation and
+catalog-backed vocabulary guidance. Current imported Parts 3–4 provide a
+conversation/talk translation rather than a separately translated question.
+Part 1–2 additionally render a dedicated answer-translation disclosure from
+the labels returned by the check-answer API. This support remains absent from
+Full Test before submission.
+The Full Test path does not call that endpoint and keeps learning aids hidden
+until the result screen.
+
+## TOEIC Grammar learner practice
+
+`app/features/toeic-grammar` owns the authenticated catalog, subtopic lesson,
+and practice resources, React Query cache identities, URL parsing, retry-safe
+answer state, and Grammar presentation components. `app/views/toeic-grammar`
+composes the catalog, lesson detail, and single-question session. Localized
+`page.tsx` files remain thin adapters, and every route provides a
+layout-specific skeleton.
+
+TOEIC Reading exposes test practice and Grammar practice as sibling modes. The
+Grammar catalog keeps its topic, mixed-set, and difficulty selections in the
+URL. Progress is projected by the backend for the authenticated learner and is
+never reconstructed from browser storage.
+
+Each catalog subtopic opens a localized detail route with URL-backed Lesson and
+Practice tabs. Lesson blocks render safe text or structured content without
+injecting source HTML. The Practice tab hands off to the existing focused
+subtopic session, so option grading, retry idempotency, and progress remain
+single-owned rather than duplicated in the lesson view.
+
+The focused Grammar session renders one active question and submits an option
+immediately. It does not receive or infer the answer key before grading. A
+failed request retains the same submission key for an explicit safe retry;
+translation, explanation, correctness, and prepared vocabulary render only
+from the grading response. Previous, Next, and direct question-number controls
+live in a sticky footer and communicate correct, incorrect, current, and
+unanswered states with icons and text in addition to color.
 
 ## Verification
 

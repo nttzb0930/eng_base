@@ -11,7 +11,9 @@ import { ApplicationThrottlerGuard } from "./common/guards/application-throttler
 import { createRateLimitOptions } from "./common/rate-limit/rate-limit.options";
 import {
   applicationConfig,
+  geminiConfig,
   jwtConfig,
+  mailConfig,
   rateLimitConfig,
   validateEnvironment,
 } from "./config";
@@ -29,6 +31,12 @@ import { ProgressModule } from "./module/progress";
 import { PlacementTestModule } from "./module/placement-test";
 import { PrismaModule } from "./database/prisma/prisma.module";
 import { HealthModule } from "./module/health";
+import { ReadingModule } from "./module/reading";
+import { ToeicReadingModule } from "./module/toeic-reading/toeic-reading.module";
+import { ToeicListeningModule } from "./module/toeic-listening/toeic-listening.module";
+import { ToeicGrammarModule } from "./module/toeic-grammar";
+import { ToeicDictationModule } from "./module/toeic-dictation/toeic-dictation.module";
+import { ToeicWritingModule } from "./module/toeic-writing/toeic-writing.module";
 
 @Module({
   imports: [
@@ -36,7 +44,13 @@ import { HealthModule } from "./module/health";
       isGlobal: true,
       envFilePath: ["../../.env", ".env"],
       validate: validateEnvironment,
-      load: [applicationConfig, jwtConfig, rateLimitConfig],
+      load: [
+        applicationConfig,
+        jwtConfig,
+        rateLimitConfig,
+        mailConfig,
+        geminiConfig,
+      ],
     }),
     ThrottlerModule.forRootAsync({
       imports: [ConfigModule],
@@ -57,6 +71,12 @@ import { HealthModule } from "./module/health";
     VocabularyModule,
     ProgressModule,
     PlacementTestModule,
+    ReadingModule,
+    ToeicReadingModule,
+    ToeicListeningModule,
+    ToeicGrammarModule,
+    ToeicDictationModule,
+    ToeicWritingModule,
     HealthModule,
   ],
   providers: [

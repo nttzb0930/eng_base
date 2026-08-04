@@ -3,6 +3,7 @@ import type {
   FillBlankPracticeChallenge,
   ListeningPracticeChallenge,
   PracticeLevelSummary,
+  TopicPracticeMode,
   WeakWordsPracticeChallenge,
   WeakWordsSummary,
 } from "@repo/shared";
@@ -85,6 +86,16 @@ export function createPracticeApi(http: PracticeHttp) {
       return (
         await http.get<WeakWordsPracticeChallenge[]>(
           "/practice/weak-words/challenges",
+        )
+      ).data;
+    },
+
+    async listTopicChallenges(slug: string, mode: TopicPracticeMode) {
+      const query = new URLSearchParams({ mode });
+
+      return (
+        await http.get<WeakWordsPracticeChallenge[]>(
+          `/practice/topics/${encodeURIComponent(slug)}/challenges?${query.toString()}`,
         )
       ).data;
     },

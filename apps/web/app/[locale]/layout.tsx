@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 
+import { LocalePreferenceSync } from "@/app/components/LocalePreferenceSync";
 import { ExitModal } from "@/app/features/lessons/components/ExitModal";
 import { HeartsModal } from "@/app/features/progress/components/HeartsModal";
 import { PracticeModal } from "@/app/features/practice/components/PracticeModal";
@@ -30,6 +31,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      <LocalePreferenceSync />
       <ExitModal />
       <HeartsModal />
       <PracticeModal />

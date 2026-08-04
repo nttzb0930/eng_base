@@ -4,20 +4,14 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 import { courseKeys } from "@/app/features/courses/hooks/use-courses";
 
-import { progressApi } from "../api/progress.api";
-
-export const progressKeys = {
-  all: ["progress"] as const,
-  user: ["progress", "user"] as const,
-  course: ["progress", "course"] as const,
-  lessonPercentage: ["progress", "lesson-percentage"] as const,
-};
+import { progressApi, progressKeys } from "../api/progress.api";
 
 export function useUserProgress(enabled = true) {
   return useQuery({
     queryKey: progressKeys.user,
     queryFn: progressApi.getUserProgress,
     enabled,
+    staleTime: 5 * 60 * 1000,
   });
 }
 
@@ -26,6 +20,7 @@ export function useCourseProgress(enabled = true) {
     queryKey: progressKeys.course,
     queryFn: progressApi.getCourseProgress,
     enabled,
+    staleTime: 5 * 60 * 1000,
   });
 }
 
@@ -34,6 +29,16 @@ export function useLessonPercentage(enabled = true) {
     queryKey: progressKeys.lessonPercentage,
     queryFn: progressApi.getLessonPercentage,
     enabled,
+    staleTime: 5 * 60 * 1000,
+  });
+}
+
+export function useCefrLevelProgress(enabled = true) {
+  return useQuery({
+    queryKey: progressKeys.cefrLevels,
+    queryFn: progressApi.getCefrLevels,
+    enabled,
+    staleTime: 5 * 60 * 1000,
   });
 }
 

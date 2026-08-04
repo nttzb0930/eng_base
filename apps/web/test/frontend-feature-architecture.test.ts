@@ -267,3 +267,47 @@ test("Web domain code no longer uses legacy technical buckets or authenticated s
     );
   }
 });
+
+test("Web React Query defaults follow the shared client cache policy", () => {
+  const providerSource = readFileSync(join(root, "app/providers.tsx"), "utf8");
+
+  assert.equal(providerSource.includes("staleTime: 60 * 1000"), true);
+  assert.equal(providerSource.includes("retry: 1"), true);
+  assert.equal(providerSource.includes("refetchOnWindowFocus: false"), true);
+});
+
+test("focused learning routes use the generic Learner session frame", () => {
+  const learnerShellPath = "app/components/layout/LearnerShell.tsx";
+  const lessonLayoutPath = "app/[locale]/lesson/layout.tsx";
+  const sessionLayoutPath = "app/[locale]/(session)/layout.tsx";
+
+  assert.equal(existsSync(join(root, sessionLayoutPath)), true);
+
+  const learnerShellSource = readFileSync(join(root, learnerShellPath), "utf8");
+  const lessonLayoutSource = readFileSync(join(root, lessonLayoutPath), "utf8");
+  const sessionLayoutSource = readFileSync(join(root, sessionLayoutPath), "utf8");
+
+  assert.equal(learnerShellSource.includes('mode?: "main" | "session"'), true);
+  assert.equal(learnerShellSource.includes('mode === "lesson"'), false);
+  assert.equal(lessonLayoutSource.includes('mode="session"'), true);
+  assert.equal(sessionLayoutSource.includes('mode="session"'), true);
+});
+
+test("Practice session shell consumes the focused frame without header offsets", () => {
+  const path = "app/features/practice/components/PracticeSessionShell.tsx";
+  const source = readFileSync(join(root, path), "utf8");
+
+  assert.equal(source.includes('className="flex h-full min-h-0 flex-col overflow-hidden"'), true);
+  assert.equal(source.includes("calc(100dvh"), false);
+});
+
+test("Web production build overrides the shared development environment", () => {
+  const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as {
+    scripts?: Record<string, string>;
+  };
+
+  assert.equal(
+    packageJson.scripts?.build,
+    "dotenv -e ../../.env -v NODE_ENV=production -- next build --turbopack",
+  );
+});

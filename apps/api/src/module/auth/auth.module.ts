@@ -9,19 +9,36 @@ import { LoginUserUseCase } from "./use-cases/login-user.usecase";
 import { LogoutUserUseCase } from "./use-cases/logout-user.usecase";
 import { RefreshTokenUseCase } from "./use-cases/refresh-token.usecase";
 import { RegisterUserUseCase } from "./use-cases/register-user.usecase";
+import { VerifyEmailUseCase } from "./use-cases/verify-email.usecase";
+import { ResendVerificationUseCase } from "./use-cases/resend-verification.usecase";
+import { RequestPasswordResetUseCase } from "./use-cases/request-password-reset.usecase";
+import { ResetPasswordUseCase } from "./use-cases/reset-password.usecase";
+import { VerificationCodeService } from "./service/verification-code.service";
 import { AdminAuthController } from "./admin-auth.controller";
+import { MailModule } from "../mail/mail.module";
+import { SettingsModule } from "../settings";
 
 @Global()
 @Module({
-  imports: [ConfigModule.forFeature(jwtConfig), PrismaModule],
+  imports: [
+    ConfigModule.forFeature(jwtConfig),
+    PrismaModule,
+    MailModule,
+    SettingsModule,
+  ],
   controllers: [AuthController, AdminAuthController],
   providers: [
     LoginUserUseCase,
     RegisterUserUseCase,
+    VerifyEmailUseCase,
+    ResendVerificationUseCase,
+    RequestPasswordResetUseCase,
+    ResetPasswordUseCase,
     RefreshTokenUseCase,
     LogoutUserUseCase,
     AuthTokenService,
     PasswordService,
+    VerificationCodeService,
   ],
   exports: [AuthTokenService, PasswordService],
 })

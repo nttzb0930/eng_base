@@ -24,17 +24,19 @@ Copy-Item .env.example .env
 
 ## Ownership table
 
-| Variables                                      | Owner                        | Visibility        | When read                      |
-| ---------------------------------------------- | ---------------------------- | ----------------- | ------------------------------ |
-| `NEXT_PUBLIC_APP_NAME`                         | Web/Admin                    | Browser-public    | Next build and browser runtime |
-| `NEXT_PUBLIC_APP_URL`                          | Web/Admin                    | Browser-public    | Next build and browser runtime |
-| `NEXT_PUBLIC_API_URL`                          | Web/Admin                    | Browser-public    | Next build and browser runtime |
-| `APP_NAME`, `APP_SERVICE_NAME`                 | API application config       | Server-only       | API startup                    |
-| `API_PORT`, `CORS_ORIGINS`, `TRUST_PROXY_HOPS` | API application config       | Server-only       | API startup                    |
-| `JWT_*`                                        | API Auth config              | Secret            | API startup                    |
-| `RATE_LIMIT_*`, `AUTH_*_LIMIT`, `AUTH_*_TTL`   | API rate-limit config        | Server-only       | API startup                    |
-| `DATABASE_URL`, `DB_*`                         | Database URL resolver        | Secret            | Prisma CLI/runtime/scripts     |
-| provider and vocabulary variables              | Offline vocabulary workflows | Secret/local path | Explicit data command only     |
+| Variables                                      | Owner                        | Visibility         | When read                      |
+| ---------------------------------------------- | ---------------------------- | ------------------ | ------------------------------ |
+| `NEXT_PUBLIC_APP_NAME`                         | Web/Admin                    | Browser-public     | Next build and browser runtime |
+| `NEXT_PUBLIC_APP_URL`                          | Web/Admin                    | Browser-public     | Next build and browser runtime |
+| `NEXT_PUBLIC_API_URL`                          | Web/Admin                    | Browser-public     | Next build and browser runtime |
+| `APP_NAME`, `APP_SERVICE_NAME`                 | API application config       | Server-only        | API startup                    |
+| `API_PORT`, `CORS_ORIGINS`, `TRUST_PROXY_HOPS` | API application config       | Server-only        | API startup                    |
+| `JWT_*`                                        | API Auth config              | Secret             | API startup                    |
+| `RATE_LIMIT_*`, `AUTH_*_LIMIT`, `AUTH_*_TTL`   | API rate-limit config        | Server-only        | API startup                    |
+| `DATABASE_URL`, `DB_*`                         | Database URL resolver        | Secret             | Prisma CLI/runtime/scripts     |
+| `LICENSED_CONTENT_ROOT`                        | API application config       | Server-only path   | API startup/media delivery     |
+| `GEMINI_*`, `WRITING_AI_*`                     | API TOEIC Writing            | Secret/server-only | API startup/explicit scripts   |
+| provider and vocabulary variables              | Offline vocabulary workflows | Secret/local path  | Explicit data command only     |
 
 Frontend code reads only explicit `NEXT_PUBLIC_*` values. English Base has no
 generic frontend environment module: each framework boundary reads the public
@@ -45,6 +47,37 @@ visible to every browser user and must never contain `SECRET`, `PASSWORD`,
 API capability code does not read `process.env`. Reads are restricted to
 `src/config`, process bootstrap, and the Prisma adapter boundary; capability
 behavior consumes validated or injected configuration.
+
+Admin-editable runtime Settings are operational product values stored through
+the Settings capability; they are not environment variables. That store must
+never contain credentials, tokens, provider keys, database URLs, private paths,
+or deployment-only configuration. Secrets and infrastructure values remain at
+the validated environment boundaries described in this guide.
+
+`LICENSED_CONTENT_ROOT` points to the private provider-owned directory that
+contains canonical TOEIC media paths. Local workspace scripts default it to
+`../../var/licensed-content/dautoeic` from `apps/api`. A hosted API must mount
+the private media volume and set an explicit absolute root; media is never
+copied into Web assets or committed to Git.
+
+## TOEIC Writing AI
+
+TOEIC Writing AI is fail-closed. `GEMINI_ENABLED=false` is the default and the
+API refuses provider-backed work unless both the enable flag and a non-empty
+`GEMINI_API_KEY` are present. Model names, timeout, daily quota, reservation
+TTL, and delivery limits are server-owned values; none may use a
+`NEXT_PUBLIC_*` prefix.
+
+`WRITING_AI_DAILY_LIMIT` counts successful, non-cached grades per learner and
+resets at UTC midnight. `WRITING_AI_RESERVATION_TTL_MS` releases abandoned
+in-flight quota reservations. `WRITING_AI_USER_LIMIT`, `WRITING_AI_IP_LIMIT`,
+and `WRITING_AI_RATE_LIMIT_TTL` protect HTTP delivery; their current store is
+process-local, so a multi-replica deployment must replace it with shared
+storage before relying on it as a global limit.
+
+See `docs/runbooks/toeic-writing-ai.md` for migration, enrichment, smoke,
+rollback, and observability procedures. The normal smoke command is a dry run:
+provider traffic occurs only when the operator also passes `--call-provider`.
 
 ## Database URL resolution
 
@@ -89,6 +122,40 @@ The PostgreSQL Compose service reads `DB_USER`, `DB_PASSWORD`, and `DB_NAME`
 from `.env`, publishes `${DB_PORT:-5432}`, and is addressed as service `db` in
 Compose networks. Do not put container-only hostnames into the shared local URL
 unless the API also runs in that network.
+
+## Offline vocabulary providers
+
+Vocabulary provider variables are read only by explicit data commands. They are
+not required to boot Web, Admin, or API. Keep real keys in the ignored root
+`.env`; committed examples must leave key values empty.
+
+For an OpenAI-compatible local proxy whose API root is
+`http://127.0.0.1:8045/v1`, use:
+
+```dotenv
+VOCAB_AI_PROVIDER=openai-compatible
+VOCAB_TOPIC_MODEL=gemini-3-flash
+VOCAB_TOPIC_BATCH_SIZE=50
+VOCAB_TOPIC_MINIMUM_WORDS=30
+VOCAB_AI_CONCURRENCY=3
+VOCAB_AI_DEBUG=false
+OPENAI_API_KEY=replace-in-local-env-only
+OPENAI_BASE_URL=http://127.0.0.1:8045/v1
+```
+
+`OPENAI_BASE_URL` is the API root, not the complete endpoint. The Topic runner
+appends `/chat/completions`; setting the complete endpoint would duplicate that
+path. Use `GEMINI_API_KEY` only when `VOCAB_AI_PROVIDER=gemini`.
+
+Basic run and per-batch progress is always printed. Set `VOCAB_AI_DEBUG=true`
+only for bounded provider/model, record-count, mismatch-code, and fingerprint
+prefix metadata. Debug mode still excludes keys, authorization headers, full
+prompts, full batches, and raw provider responses.
+
+Any key pasted into chat, terminal history, logs, or a Git commit must be
+rotated. Removing it from the current `.env.example` does not remove it from Git
+history; history rewriting is a separate destructive operation that requires a
+reviewed backup and explicit approval before any remote push.
 
 ## CI configuration
 

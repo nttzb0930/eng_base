@@ -1,4 +1,5 @@
 import type {
+  CefrLevel,
   Course,
   CourseLesson,
   CourseUnit,
@@ -39,6 +40,7 @@ export const mapUnit = (unit: unitsModel): CourseUnit => ({
   description: unit.description,
   courseId: unit.course_id,
   order: unit.order,
+  cefrLevel: unit.cefr_level as CefrLevel | null,
 });
 
 export const mapLesson = (lesson: lessonsModel): CourseLesson => ({
@@ -85,6 +87,7 @@ export const toUnitCreateData = (body: UnitCreateDto) => ({
   description: body.description,
   course_id: body.courseId,
   order: body.order,
+  cefr_level: body.cefrLevel,
 });
 
 export const toUnitData = (body: UnitUpdateDto) => ({
@@ -92,6 +95,7 @@ export const toUnitData = (body: UnitUpdateDto) => ({
   ...(body.description !== undefined ? { description: body.description } : {}),
   ...(body.courseId !== undefined ? { course_id: body.courseId } : {}),
   ...(body.order !== undefined ? { order: body.order } : {}),
+  ...(body.cefrLevel !== undefined ? { cefr_level: body.cefrLevel } : {}),
 });
 
 export const toLessonCreateData = (body: LessonCreateDto) => ({

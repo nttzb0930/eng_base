@@ -6,10 +6,15 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
 import { useAudio, useKey } from "react-use";
 import { toast } from "sonner";
+import type {
+  LearningIntensityId,
+  OnboardingGoalId,
+  TargetLanguageId,
+} from "@repo/shared";
 
 import { useAuth } from "@/app/features/auth/hooks/use-auth";
 import { courseKeys } from "@/app/features/courses/hooks/use-courses";
-import { progressKeys } from "@/app/features/progress/hooks/use-user-progress";
+import { progressKeys } from "@/app/features/progress/api/progress.api";
 import { useCurrentLocale } from "@/app/i18n/use-current-locale";
 import { withLocale } from "@/app/i18n/paths";
 
@@ -176,10 +181,10 @@ export function usePlacementTest() {
 
   const handleConfirmLevel = (
     level: string,
-    languages?: string[],
-    goals?: string[],
-    intensity?: string,
-    primaryLanguage?: string,
+    languages?: TargetLanguageId[],
+    goals?: OnboardingGoalId[],
+    intensity?: LearningIntensityId,
+    primaryLanguage?: TargetLanguageId,
     customGoal?: string,
   ) => {
     const input: ConfirmPlacementLevelInput = {
@@ -200,7 +205,7 @@ export function usePlacementTest() {
           queryClient.invalidateQueries({ queryKey: courseKeys.all }),
         ]);
         toast.success(t("toast.confirmSuccess", { level }));
-        router.push(withLocale("/learn", locale));
+        router.push(withLocale("/dashboard", locale));
       } catch (err) {
         toast.error(getErrorMessage(err, "toast.confirmError"));
       }

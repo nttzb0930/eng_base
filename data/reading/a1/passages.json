@@ -1,0 +1,509 @@
+[
+  {
+    "slug": "meeting-a-new-neighbor",
+    "title": "Meeting a New Neighbor",
+    "cefrLevel": "A1",
+    "topicSlug": "personal-information",
+    "estimatedMinutes": 3,
+    "body": "Emma lives in a small apartment in Bristol. On Monday evening, she meets her new neighbor, Leo, in the hall. Leo is twenty-three years old and comes from Spain. He works at a hotel near the train station. Emma tells him about a supermarket and a bus stop nearby. Leo likes football and cooking. Emma likes football too. They plan to watch a game at a cafe on Saturday. Before they go home, Emma gives Leo her phone number because he does not know many people in the city.",
+    "questions": [
+      {
+        "prompt": "Where do Emma and Leo meet?",
+        "options": [
+          { "text": "In the hall", "correct": true },
+          { "text": "At the supermarket", "correct": false },
+          { "text": "At the train station", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where does Leo work?",
+        "options": [
+          { "text": "At a school", "correct": false },
+          { "text": "At a hotel", "correct": true },
+          { "text": "At a cafe", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What do Emma and Leo both like?",
+        "options": [
+          { "text": "Cooking", "correct": false },
+          { "text": "Football", "correct": true },
+          { "text": "Shopping", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Why does Emma give Leo her phone number?",
+        "options": [
+          {
+            "text": "He does not know many people in the city",
+            "correct": true
+          },
+          { "text": "He needs a new job", "correct": false },
+          { "text": "He wants to visit Spain", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sunday-with-my-family",
+    "title": "Sunday with My Family",
+    "cefrLevel": "A1",
+    "topicSlug": "family",
+    "estimatedMinutes": 3,
+    "body": "On Sunday, Maya's family gets up at eight o'clock. Maya and her brother Sam help their parents make breakfast. They eat bread and fruit, and the adults drink coffee. At ten, the family walks to a park near their home. Their uncle Daniel meets them there. The children ride their bikes while the adults talk. Later, everyone sits under a large tree for lunch. After lunch, they play a ball game together. In the evening, the family goes home, makes pasta, and tells funny stories about the day.",
+    "questions": [
+      {
+        "prompt": "What time does the family get up?",
+        "options": [
+          { "text": "At seven o'clock", "correct": false },
+          { "text": "At eight o'clock", "correct": true },
+          { "text": "At ten o'clock", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What do they eat for breakfast?",
+        "options": [
+          { "text": "Bread and fruit", "correct": true },
+          { "text": "Pasta and salad", "correct": false },
+          { "text": "Rice and fish", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What does the family do after lunch?",
+        "options": [
+          { "text": "They ride a train", "correct": false },
+          { "text": "They watch a film", "correct": false },
+          { "text": "They play a ball game", "correct": true }
+        ]
+      },
+      {
+        "prompt": "Who is Daniel?",
+        "options": [
+          { "text": "The children's teacher", "correct": false },
+          { "text": "The children's uncle", "correct": true },
+          { "text": "The children's neighbor", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "marias-busy-morning",
+    "title": "Maria's Busy Morning",
+    "cefrLevel": "A1",
+    "topicSlug": "daily-routine",
+    "estimatedMinutes": 3,
+    "body": "Maria gets up at half past six every weekday. She opens the window, makes her bed, and takes a quick shower. At seven o'clock, she eats an egg and some bread in the kitchen. She drinks tea, not coffee. Then Maria puts her books in her bag and checks the weather. At half past seven, she walks to the bus stop with her friend Ana. The bus takes them to school. Their first class starts at eight fifteen. Maria studies until three, but her favorite class, music, begins at nine o'clock.",
+    "questions": [
+      {
+        "prompt": "What time does Maria get up?",
+        "options": [
+          { "text": "At half past six", "correct": true },
+          { "text": "At seven o'clock", "correct": false },
+          { "text": "At eight fifteen", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What does Maria drink?",
+        "options": [
+          { "text": "She drinks coffee", "correct": false },
+          { "text": "She drinks juice", "correct": false },
+          { "text": "She drinks tea", "correct": true }
+        ]
+      },
+      {
+        "prompt": "How does Maria go to school?",
+        "options": [
+          { "text": "By bus", "correct": true },
+          { "text": "By train", "correct": false },
+          { "text": "By bike", "correct": false }
+        ]
+      },
+      {
+        "prompt": "When does Maria's music class begin?",
+        "options": [
+          { "text": "At eight fifteen", "correct": false },
+          { "text": "At nine o'clock", "correct": true },
+          { "text": "At three o'clock", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "our-small-apartment",
+    "title": "Our Small Apartment",
+    "cefrLevel": "A1",
+    "topicSlug": "home",
+    "estimatedMinutes": 3,
+    "body": "Ben and his sister live with their mother in a small apartment on the third floor. The apartment has two bedrooms, a living room, a kitchen, and one bathroom. Ben's room is blue, and his sister's room is yellow. A small table stands near the kitchen, where they eat every evening. The living room has a sofa, two chairs, and many family photos. There is no yard, but there is a small garden behind the building. On warm days, the family reads or drinks tea there. Ben likes their home because it feels quiet and friendly.",
+    "questions": [
+      {
+        "prompt": "Where is the apartment?",
+        "options": [
+          { "text": "On the first floor", "correct": false },
+          { "text": "On the third floor", "correct": true },
+          { "text": "Behind the building", "correct": false }
+        ]
+      },
+      {
+        "prompt": "How many bedrooms are there?",
+        "options": [
+          { "text": "One", "correct": false },
+          { "text": "Two", "correct": true },
+          { "text": "Three", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where does the family eat?",
+        "options": [
+          { "text": "Near the kitchen", "correct": true },
+          { "text": "In Ben's room", "correct": false },
+          { "text": "On the sofa", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where does the family sit on warm days?",
+        "options": [
+          { "text": "In a large yard", "correct": false },
+          { "text": "On the third floor", "correct": false },
+          { "text": "In a small garden", "correct": true }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "lunch-at-the-cafe",
+    "title": "Lunch at the Cafe",
+    "cefrLevel": "A1",
+    "topicSlug": "restaurant",
+    "estimatedMinutes": 3,
+    "body": "Lina meets her friend Omar at a cafe at twelve thirty. A server gives them a menu and asks what they want. Lina orders tomato soup and a cheese sandwich. Omar chooses rice with chicken. They both ask for water because the day is hot. The food comes after ten minutes. Lina's soup is warm, and Omar likes the chicken very much. They talk about work while they eat. At the end, Lina has an apple and Omar has tea. Lina's lunch costs nine euros. Omar pays for his own meal, and they leave the cafe at two o'clock.",
+    "questions": [
+      {
+        "prompt": "What time do Lina and Omar meet?",
+        "options": [
+          { "text": "At eleven thirty", "correct": false },
+          { "text": "At twelve thirty", "correct": true },
+          { "text": "At two o'clock", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What soup does Lina order?",
+        "options": [
+          { "text": "Chicken soup", "correct": false },
+          { "text": "Tomato soup", "correct": true },
+          { "text": "Vegetable soup", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What do both friends drink with lunch?",
+        "options": [
+          { "text": "Tea", "correct": false },
+          { "text": "Coffee", "correct": false },
+          { "text": "Water", "correct": true }
+        ]
+      },
+      {
+        "prompt": "How much does Lina's lunch cost?",
+        "options": [
+          { "text": "Seven euros", "correct": false },
+          { "text": "Nine euros", "correct": true },
+          { "text": "Ten euros", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "shopping-for-a-birthday",
+    "title": "Shopping for a Birthday",
+    "cefrLevel": "A1",
+    "topicSlug": "shopping",
+    "estimatedMinutes": 3,
+    "body": "Kai needs a present for his cousin Mia, who is twelve on Saturday. He goes to a shopping center after school. First, he looks at books, but Mia has many books at home. Then he sees a blue backpack in a small shop. Blue is Mia's favorite color, and she needs a bag for school. The backpack costs fifteen euros, so Kai buys it. He also chooses a birthday card with a yellow star on it. The shops close at six. Kai leaves at half past five and takes the bus home with the present in a large paper bag.",
+    "questions": [
+      {
+        "prompt": "What present does Kai buy?",
+        "options": [
+          { "text": "A blue backpack", "correct": true },
+          { "text": "A yellow book", "correct": false },
+          { "text": "A school shirt", "correct": false }
+        ]
+      },
+      {
+        "prompt": "How much does the present cost?",
+        "options": [
+          { "text": "Twelve euros", "correct": false },
+          { "text": "Fifteen euros", "correct": true },
+          { "text": "Six euros", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What else does Kai choose?",
+        "options": [
+          { "text": "A birthday card", "correct": true },
+          { "text": "A paper star", "correct": false },
+          { "text": "A new book", "correct": false }
+        ]
+      },
+      {
+        "prompt": "How does Kai go home?",
+        "options": [
+          { "text": "By train", "correct": false },
+          { "text": "By bus", "correct": true },
+          { "text": "By car", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "the-first-day-at-school",
+    "title": "The First Day at School",
+    "cefrLevel": "A1",
+    "topicSlug": "school",
+    "estimatedMinutes": 3,
+    "body": "Nina starts at a new school on Monday. She arrives early and goes to Room 12 for her first class. Her teacher, Ms. Lee, welcomes her and shows her a desk near the window. A student named Rosa sits next to Nina and shares a pencil with her. In the morning, the class studies English and math. After lunch, they have art. Nina paints a picture of her old home. At three o'clock, Ms. Lee asks everyone to say one good thing about the day. Nina says she is happy because she has a new friend.",
+    "questions": [
+      {
+        "prompt": "Where is Nina's first class?",
+        "options": [
+          { "text": "Room 10", "correct": false },
+          { "text": "Room 12", "correct": true },
+          { "text": "The art room", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Who is Nina's teacher?",
+        "options": [
+          { "text": "Ms. Lee", "correct": true },
+          { "text": "Rosa", "correct": false },
+          { "text": "Ms. Nina", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Which class do the students have after lunch?",
+        "options": [
+          { "text": "Math", "correct": false },
+          { "text": "English", "correct": false },
+          { "text": "Art", "correct": true }
+        ]
+      },
+      {
+        "prompt": "Who has a new friend?",
+        "options": [
+          { "text": "Ms. Lee", "correct": false },
+          { "text": "Nina", "correct": true },
+          { "text": "The teacher", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "a-new-part-time-job",
+    "title": "A New Part-Time Job",
+    "cefrLevel": "A1",
+    "topicSlug": "job",
+    "estimatedMinutes": 3,
+    "body": "Jon has a new part-time job in a bookshop near his college. He works on Tuesday and Thursday from four until seven. When he arrives, he puts his bag in a small room and speaks to his manager. His first job is to put books on shelves. Later, he helps people find books and takes money at the desk. Jon wears a black shirt and comfortable shoes at work. He likes talking to people, but standing for three hours makes him tired. After work on Thursday, his manager thanks him, and Jon walks home feeling proud of his first week.",
+    "questions": [
+      {
+        "prompt": "Where does Jon work?",
+        "options": [
+          { "text": "In a bookshop", "correct": true },
+          { "text": "In a college", "correct": false },
+          { "text": "In a shoe shop", "correct": false }
+        ]
+      },
+      {
+        "prompt": "When does Jon work?",
+        "options": [
+          { "text": "On Monday and Friday", "correct": false },
+          { "text": "On Tuesday and Thursday", "correct": true },
+          { "text": "Every morning", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What is Jon's first job at work?",
+        "options": [
+          { "text": "Talk to his manager", "correct": false },
+          { "text": "Take money at the desk", "correct": false },
+          { "text": "Put books on shelves", "correct": true }
+        ]
+      },
+      {
+        "prompt": "What does Jon wear at work?",
+        "options": [
+          { "text": "A blue jacket", "correct": false },
+          { "text": "A black shirt", "correct": true },
+          { "text": "A white hat", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "plans-for-a-rainy-day",
+    "title": "Plans for a Rainy Day",
+    "cefrLevel": "A1",
+    "topicSlug": "weather",
+    "estimatedMinutes": 3,
+    "body": "Ava and Luis want to ride their bikes on Saturday, but it rains all morning. Dark clouds cover the sky, and the wind is cold. They decide to stay at Ava's home. First, they make vegetable soup for lunch. Then they play cards and listen to music in the living room. At two o'clock, the rain stops, but the streets are still wet. They watch a short film instead of going outside. At four, the sun comes out. Ava and Luis put on their coats and walk to a nearby shop for hot chocolate before it gets dark.",
+    "questions": [
+      {
+        "prompt": "What happens on Saturday morning?",
+        "options": [
+          { "text": "It snows", "correct": false },
+          { "text": "It rains", "correct": true },
+          { "text": "The sun shines", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where do Ava and Luis spend most of the day?",
+        "options": [
+          { "text": "At home", "correct": true },
+          { "text": "At school", "correct": false },
+          { "text": "At the park", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What do they make for lunch?",
+        "options": [
+          { "text": "They make sandwiches", "correct": false },
+          { "text": "They make soup", "correct": true },
+          { "text": "They make cake", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Why do they go for a walk at four?",
+        "options": [
+          { "text": "The sun comes out", "correct": true },
+          { "text": "The streets get dry", "correct": false },
+          { "text": "The wind gets strong", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "taking-the-bus-downtown",
+    "title": "Taking the Bus Downtown",
+    "cefrLevel": "A1",
+    "topicSlug": "transportation",
+    "estimatedMinutes": 3,
+    "body": "Noah wants to meet his friend at the library in the city center. He leaves home at nine and walks to the bus stop. A woman there tells him to take bus number 6. The bus arrives five minutes later. Noah pays the driver and sits near the front. He watches the streets and shops through the window. After six stops, he gets off in front of the bank. The library is across the road, next to a cafe. Noah arrives at half past nine. His friend is waiting outside with a map because they plan to visit a museum later.",
+    "questions": [
+      {
+        "prompt": "Where does Noah meet his friend?",
+        "options": [
+          { "text": "At the library", "correct": true },
+          { "text": "At the bank", "correct": false },
+          { "text": "At the bus stop", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Which bus does Noah take?",
+        "options": [
+          { "text": "Number 5", "correct": false },
+          { "text": "Number 6", "correct": true },
+          { "text": "Number 9", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where does Noah get off the bus?",
+        "options": [
+          { "text": "In front of the bank", "correct": true },
+          { "text": "Next to the museum", "correct": false },
+          { "text": "Across from his home", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What does Noah's friend have?",
+        "options": [
+          { "text": "A bus ticket", "correct": false },
+          { "text": "A book", "correct": false },
+          { "text": "A map", "correct": true }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "a-visit-to-the-doctor",
+    "title": "A Visit to the Doctor",
+    "cefrLevel": "A1",
+    "topicSlug": "health",
+    "estimatedMinutes": 3,
+    "body": "Sara does not feel well on Wednesday morning. Her throat hurts, and she feels tired. She calls the health center and gets a visit at ten fifteen. At the center, a nurse asks her name and checks her temperature. Then the doctor listens to Sara and looks at her throat. He tells her to rest, drink warm water, and eat some soup. Sara does not need to go to the hospital. Before going home, she buys some medicine at the pharmacy next to the health center. Her brother makes lunch for her, and she sleeps for two hours.",
+    "questions": [
+      {
+        "prompt": "What is wrong with Sara?",
+        "options": [
+          { "text": "Her back hurts", "correct": false },
+          { "text": "Her throat hurts", "correct": true },
+          { "text": "Her foot hurts", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What time does Sara visit the health center?",
+        "options": [
+          { "text": "At nine fifteen", "correct": false },
+          { "text": "At ten fifteen", "correct": true },
+          { "text": "At two o'clock", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What does the doctor tell Sara to do?",
+        "options": [
+          { "text": "Drink warm water", "correct": true },
+          { "text": "Go to work", "correct": false },
+          { "text": "Walk to the hospital", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where does Sara buy medicine?",
+        "options": [
+          { "text": "At the hospital", "correct": false },
+          { "text": "At the pharmacy", "correct": true },
+          { "text": "At the health center desk", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "a-weekend-by-the-sea",
+    "title": "A Weekend by the Sea",
+    "cefrLevel": "A1",
+    "topicSlug": "travel",
+    "estimatedMinutes": 3,
+    "body": "Eli and his parents take a train to a town by the sea on Saturday morning. The trip takes two hours. Their small hotel is near the beach, so they walk there after lunch. Eli and his father swim while his mother reads under a large blue umbrella. In the evening, they eat fish and rice at a restaurant near the water. On Sunday, the family visits a market and buys fruit for the train ride. They take photos from a hill before leaving. The train home is on Sunday afternoon, and Eli sleeps for most of the journey.",
+    "questions": [
+      {
+        "prompt": "How does the family travel to the town?",
+        "options": [
+          { "text": "By bus", "correct": false },
+          { "text": "By train", "correct": true },
+          { "text": "By car", "correct": false }
+        ]
+      },
+      {
+        "prompt": "Where is the hotel?",
+        "options": [
+          { "text": "Near the beach", "correct": true },
+          { "text": "Next to the market", "correct": false },
+          { "text": "On a hill", "correct": false }
+        ]
+      },
+      {
+        "prompt": "What do Eli and his father do on Saturday?",
+        "options": [
+          { "text": "They read", "correct": false },
+          { "text": "They swim", "correct": true },
+          { "text": "They take photos", "correct": false }
+        ]
+      },
+      {
+        "prompt": "When does the family travel home?",
+        "options": [
+          { "text": "Saturday evening", "correct": false },
+          { "text": "Sunday morning", "correct": false },
+          { "text": "Sunday afternoon", "correct": true }
+        ]
+      }
+    ]
+  }
+]
