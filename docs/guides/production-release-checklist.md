@@ -47,6 +47,7 @@ APP_NAME=English Base
 APP_SERVICE_NAME=eng-base-api
 API_PORT=4000
 CORS_ORIGINS=https://example.com,https://www.example.com,https://admin.example.com
+AUTH_COOKIE_DOMAIN=example.com
 
 # Đặt bằng số reverse proxy tin cậy nằm trước API.
 # Một Caddy/Nginx container duy nhất: 1. Không có proxy: 0.

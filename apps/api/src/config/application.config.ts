@@ -24,6 +24,7 @@ export default registerAs("application", () => ({
     .map((origin) => origin.trim())
     .filter(Boolean),
   trustProxyHops: integer(process.env.TRUST_PROXY_HOPS, 0),
+  authCookieDomain: process.env.AUTH_COOKIE_DOMAIN?.trim() || undefined,
   licensedContentRoot: resolveLicensedContentRoot(
     process.env.LICENSED_CONTENT_ROOT
   ),

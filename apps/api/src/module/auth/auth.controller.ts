@@ -129,6 +129,7 @@ export class AuthController {
       httpOnly: false,
       secure,
       sameSite: "lax",
+      domain: this.application.authCookieDomain,
       path: "/",
       maxAge: this.tokens.refreshMaxAgeMs,
     });
@@ -157,6 +158,7 @@ export class AuthController {
     response.clearCookie(AUTH_COOKIE_NAMES.refreshMarker, {
       ...options,
       httpOnly: false,
+      domain: this.application.authCookieDomain,
     });
     response.clearCookie(AUTH_COOKIE_NAMES.access, {
       ...options,

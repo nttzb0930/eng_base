@@ -36,6 +36,32 @@ test("API environment Interface validates trusted proxy hop count", () => {
   );
 });
 
+test("production requires a valid shared Auth cookie domain", () => {
+  const base = {
+    NODE_ENV: "production",
+    DATABASE_URL: "postgresql://localhost/eng_base",
+    JWT_ACCESS_SECRET: "access-secret-that-is-long-enough-123",
+    JWT_REFRESH_SECRET: "refresh-secret-that-is-long-enough-456",
+  };
+
+  assert.throws(() => validateEnvironment(base), /AUTH_COOKIE_DOMAIN/);
+  assert.throws(
+    () =>
+      validateEnvironment({
+        ...base,
+        AUTH_COOKIE_DOMAIN: "https://example.com",
+      }),
+    /AUTH_COOKIE_DOMAIN/
+  );
+  assert.equal(
+    validateEnvironment({
+      ...base,
+      AUTH_COOKIE_DOMAIN: "nttzb0930.io.vn",
+    }).AUTH_COOKIE_DOMAIN,
+    "nttzb0930.io.vn"
+  );
+});
+
 test("API environment Interface rejects a missing database URL", () => {
   assert.throws(
     () =>

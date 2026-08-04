@@ -9,6 +9,9 @@ const booleanFromEnvironment = z
 
 const ApiEnvironmentSchema = z
   .object({
+    NODE_ENV: z
+      .enum(["development", "test", "production"])
+      .default("development"),
     DATABASE_URL: z.string().trim().min(1).optional(),
     DB_HOST: z.string().trim().min(1).optional(),
     DB_PORT: z.string().trim().min(1).optional(),
@@ -34,6 +37,14 @@ const ApiEnvironmentSchema = z
       .trim()
       .min(1)
       .default("http://localhost:3000,http://localhost:3001"),
+    AUTH_COOKIE_DOMAIN: z
+      .string()
+      .trim()
+      .regex(
+        /^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/iu,
+        "AUTH_COOKIE_DOMAIN must be a hostname without a scheme or port"
+      )
+      .optional(),
     RATE_LIMIT_TTL: z.coerce.number().int().positive().default(60),
     RATE_LIMIT_MAX: z.coerce.number().int().positive().default(100),
     AUTH_LOGIN_IP_LIMIT: z.coerce.number().int().positive().default(10),
@@ -97,6 +108,17 @@ const ApiEnvironmentSchema = z
     }
   )
   .superRefine((configuration, context) => {
+    if (
+      configuration.NODE_ENV === "production" &&
+      !configuration.AUTH_COOKIE_DOMAIN
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["AUTH_COOKIE_DOMAIN"],
+        message: "AUTH_COOKIE_DOMAIN is required in production",
+      });
+    }
+
     if (configuration.SMTP_ENABLED) {
       if (!configuration.SMTP_USER) {
         context.addIssue({
