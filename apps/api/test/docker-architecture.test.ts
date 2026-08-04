@@ -17,6 +17,14 @@ test("API Dockerfile defines a production-safe monorepo build", () => {
   assert.match(source, /pnpm --filter @repo\/api db:generate/u);
   assert.match(source, /pnpm --filter @repo\/api build/u);
   assert.match(source, /pnpm --filter @repo\/api build:data-bootstrap/u);
+  const productionDeploy = source.indexOf(
+    "pnpm --filter @repo/api deploy --prod --legacy /production/api"
+  );
+  const productionGenerate = source.indexOf(
+    "cd /production/api && ./node_modules/.bin/prisma generate"
+  );
+  assert.ok(productionDeploy >= 0);
+  assert.ok(productionGenerate > productionDeploy);
   assert.match(source, /apps\/api\/dist-data/u);
   assert.match(source, /data\/vocabulary\/vocabulary-catalog\.json/u);
   assert.match(source, /data\/vocabulary\/topics\.json/u);

@@ -18,6 +18,7 @@ RUN pnpm --filter @repo/api db:generate
 RUN pnpm --filter @repo/api build
 RUN pnpm --filter @repo/api build:data-bootstrap
 RUN pnpm --filter @repo/api deploy --prod --legacy /production/api
+RUN cd /production/api && ./node_modules/.bin/prisma generate
 RUN cp -R apps/api/dist /production/api/dist
 RUN cp -R apps/api/dist-data /production/api/dist-data
 RUN mkdir -p /production/api/data/vocabulary \
