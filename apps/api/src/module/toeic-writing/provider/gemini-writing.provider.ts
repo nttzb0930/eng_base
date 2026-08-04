@@ -303,7 +303,8 @@ export class GeminiWritingProvider implements WritingAiProvider {
           request.config?.responseJsonSchema !== undefined &&
           /\b400\b|invalid argument|response.?schema|json.?schema/iu.test(message);
         if (!schemaRejected) throw error;
-        const { responseJsonSchema: _ignored, ...fallbackConfig } = request.config ?? {};
+        const fallbackConfig = { ...(request.config ?? {}) };
+        delete fallbackConfig.responseJsonSchema;
         return await this.client.generateContent({
           ...request,
           config: { ...fallbackConfig, abortSignal: controller.signal },
