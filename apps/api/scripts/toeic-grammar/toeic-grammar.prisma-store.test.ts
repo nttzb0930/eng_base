@@ -46,7 +46,27 @@ const snapshot = normalizeGrammarSnapshot({
       orderIndex: 1,
     },
   ],
-  questions: [],
+  questions: [
+    {
+      sourceQuestionId: "q-1",
+      sourceTopicId: "t-1",
+      sourceSubtopicId: "s-1",
+      questionNumber: 1,
+      questionText: "The answer is -------.",
+      options: [
+        { label: "A", text: "correct", correct: true },
+        { label: "B", text: "incorrect", correct: false },
+        { label: "C", text: "wrong", correct: false },
+        { label: "D", text: "unlikely", correct: false },
+      ],
+      explanationVi: null,
+      explanationEn: null,
+      questionTranslation: null,
+      answerTranslation: null,
+      vocabulary: [],
+      preferAiExplanation: false,
+    },
+  ],
   sets: [],
   difficultyLevels: [],
 });
@@ -68,6 +88,7 @@ test("skips the already active grammar snapshot without a transaction", async ()
 
 test("replaces source-owned content in one transaction and activates last", async () => {
   const events: string[] = [];
+  let transactionOptions: unknown;
   const transaction = {
     grammar_content_snapshots: {
       deleteMany: async () => {
@@ -99,11 +120,37 @@ test("replaces source-owned content in one transaction and activates last", asyn
         return { id: 13 };
       },
     },
+    grammar_questions: {
+      createManyAndReturn: async ({
+        data,
+      }: {
+        data: Array<Record<string, unknown>>;
+      }) => {
+        assert.equal(data.length, 1);
+        assert.equal("grammar_question_options" in data[0]!, false);
+        events.push("question");
+        return [{ id: 14, source_question_id: "q-1" }];
+      },
+    },
+    grammar_question_options: {
+      createMany: async ({ data }: { data: Array<Record<string, unknown>> }) => {
+        assert.deepEqual(
+          data.map((option) => option.question_id),
+          [14, 14, 14, 14]
+        );
+        events.push("options");
+      },
+    },
   };
   const prisma = {
     grammar_content_snapshots: { findFirst: async () => null },
-    $transaction: async (run: (tx: typeof transaction) => Promise<void>) =>
-      run(transaction),
+    $transaction: async (
+      run: (tx: typeof transaction) => Promise<void>,
+      options?: unknown
+    ) => {
+      transactionOptions = options;
+      return run(transaction);
+    },
   } as unknown as PrismaClient;
   assert.equal(
     await createPrismaToeicGrammarImportStore(prisma).replace(snapshot),
@@ -115,6 +162,12 @@ test("replaces source-owned content in one transaction and activates last", asyn
     "topic",
     "subtopic",
     "lesson",
+    "question",
+    "options",
     "activate",
   ]);
+  assert.deepEqual(transactionOptions, {
+    maxWait: 10_000,
+    timeout: 120_000,
+  });
 });

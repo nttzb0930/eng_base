@@ -2,6 +2,9 @@ import { Prisma, type PrismaClient } from "@prisma/client";
 
 import type { ToeicGrammarImportStore } from "./toeic-grammar.import.js";
 
+const QUESTION_BATCH_SIZE = 500;
+const OPTION_BATCH_SIZE = 2_000;
+
 export function createPrismaToeicGrammarImportStore(
   prisma: PrismaClient
 ): ToeicGrammarImportStore {
@@ -95,9 +98,17 @@ export function createPrismaToeicGrammarImportStore(
           });
         }
         const questionIds = new Map<string, number>();
-        for (const question of snapshot.questions) {
-          const created = await transaction.grammar_questions.create({
-            data: {
+        for (
+          let offset = 0;
+          offset < snapshot.questions.length;
+          offset += QUESTION_BATCH_SIZE
+        ) {
+          const questions = snapshot.questions.slice(
+            offset,
+            offset + QUESTION_BATCH_SIZE
+          );
+          const created = await transaction.grammar_questions.createManyAndReturn({
+            data: questions.map((question) => ({
               snapshot_id: createdSnapshot.id,
               topic_id: question.sourceTopicId
                 ? topicIds.get(question.sourceTopicId)
@@ -115,17 +126,33 @@ export function createPrismaToeicGrammarImportStore(
               answer_translation: question.answerTranslation,
               vocabulary: question.vocabulary as Prisma.InputJsonValue,
               prefer_ai_explanation: question.preferAiExplanation,
-              grammar_question_options: {
-                create: question.options.map((option) => ({
-                  label: option.label,
-                  text: option.text,
-                  correct: option.correct,
-                })),
-              },
-            },
-            select: { id: true },
+            })),
+            select: { id: true, source_question_id: true },
           });
-          questionIds.set(question.sourceQuestionId, created.id);
+          for (const question of created) {
+            questionIds.set(question.source_question_id, question.id);
+          }
+        }
+        const options = snapshot.questions.flatMap((question) => {
+          const questionId = questionIds.get(question.sourceQuestionId);
+          if (!questionId) {
+            throw new Error("Grammar question was not imported");
+          }
+          return question.options.map((option) => ({
+              question_id: questionId,
+              label: option.label,
+              text: option.text,
+              correct: option.correct,
+          }));
+        });
+        for (
+          let offset = 0;
+          offset < options.length;
+          offset += OPTION_BATCH_SIZE
+        ) {
+          await transaction.grammar_question_options.createMany({
+            data: options.slice(offset, offset + OPTION_BATCH_SIZE),
+          });
         }
         for (const set of snapshot.sets) {
           const created = await transaction.grammar_sets.create({
@@ -165,6 +192,9 @@ export function createPrismaToeicGrammarImportStore(
           where: { id: createdSnapshot.id },
           data: { active: true },
         });
+      }, {
+        maxWait: 10_000,
+        timeout: 120_000,
       });
       return "UPDATED";
     },

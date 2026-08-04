@@ -64,6 +64,7 @@ test("skips the same source version without opening a transaction", async () => 
 
 test("replaces a changed test in one transaction and republishes it", async () => {
   let transactions = 0;
+  let transactionOptions: Record<string, unknown> | undefined;
   const testSetUpserts: Array<Record<string, unknown>> = [];
   const updates: Array<Record<string, unknown>> = [];
   const questionCreates: Array<Record<string, unknown>> = [];
@@ -102,9 +103,11 @@ test("replaces a changed test in one transaction and republishes it", async () =
       findUnique: async () => ({ id: 11, source_version: "a".repeat(64) }),
     },
     $transaction: async (
-      callback: (client: typeof transaction) => Promise<unknown>
+      callback: (client: typeof transaction) => Promise<unknown>,
+      options?: Record<string, unknown>
     ) => {
       transactions += 1;
+      transactionOptions = options;
       return callback(transaction);
     },
   } as unknown as PrismaClient;
@@ -127,6 +130,10 @@ test("replaces a changed test in one transaction and republishes it", async () =
 
   assert.equal(result, "UPDATED");
   assert.equal(transactions, 1);
+  assert.deepEqual(transactionOptions, {
+    maxWait: 10_000,
+    timeout: 120_000,
+  });
   assert.deepEqual(testSetUpserts[0]?.create, {
     course_id: 7,
     source: "dautoeic",

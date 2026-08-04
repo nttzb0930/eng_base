@@ -119,57 +119,60 @@ export function createPrismaToeicReadingImportStore(
       if (existing?.source_version === content.sourceVersion) return "SKIPPED";
 
       const publishedAt = now();
-      await prisma.$transaction(async (transaction) => {
-        const testSet = await transaction.toeic_test_sets.upsert({
-          where: {
-            course_id_source_source_set_id: {
+      await prisma.$transaction(
+        async (transaction) => {
+          const testSet = await transaction.toeic_test_sets.upsert({
+            where: {
+              course_id_source_source_set_id: {
+                course_id: courseId,
+                source: content.source,
+                source_set_id: content.sourceSetId,
+              },
+            },
+            create: {
               course_id: courseId,
               source: content.source,
               source_set_id: content.sourceSetId,
+              title: content.sourceSetName,
             },
-          },
-          create: {
-            course_id: courseId,
-            source: content.source,
-            source_set_id: content.sourceSetId,
-            title: content.sourceSetName,
-          },
-          update: { title: content.sourceSetName },
-          select: { id: true },
-        });
+            update: { title: content.sourceSetName },
+            select: { id: true },
+          });
 
-        const test = existing
-          ? await transaction.toeic_tests.update({
-              where: { id: existing.id },
-              data: {
-                test_set_id: testSet.id,
-                source_version: content.sourceVersion,
-                title: content.title,
-                status: "PUBLISHED",
-                published_at: publishedAt,
-              },
-              select: { id: true },
-            })
-          : await transaction.toeic_tests.create({
-              data: {
-                test_set_id: testSet.id,
-                source: content.source,
-                source_test_id: content.sourceTestId,
-                source_version: content.sourceVersion,
-                title: content.title,
-                status: "PUBLISHED",
-                published_at: publishedAt,
-              },
-              select: { id: true },
-            });
+          const test = existing
+            ? await transaction.toeic_tests.update({
+                where: { id: existing.id },
+                data: {
+                  test_set_id: testSet.id,
+                  source_version: content.sourceVersion,
+                  title: content.title,
+                  status: "PUBLISHED",
+                  published_at: publishedAt,
+                },
+                select: { id: true },
+              })
+            : await transaction.toeic_tests.create({
+                data: {
+                  test_set_id: testSet.id,
+                  source: content.source,
+                  source_test_id: content.sourceTestId,
+                  source_version: content.sourceVersion,
+                  title: content.title,
+                  status: "PUBLISHED",
+                  published_at: publishedAt,
+                },
+                select: { id: true },
+              });
 
-        await replaceOwnedContent({
-          transaction,
-          testId: test.id,
-          content,
-          practiceStats,
-        });
-      });
+          await replaceOwnedContent({
+            transaction,
+            testId: test.id,
+            content,
+            practiceStats,
+          });
+        },
+        { maxWait: 10_000, timeout: 120_000 }
+      );
       return existing ? "UPDATED" : "CREATED";
     },
   };

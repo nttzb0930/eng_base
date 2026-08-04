@@ -198,21 +198,24 @@ export function createPrismaToeicListeningImportStore(
       ) {
         return "SKIPPED";
       }
-      await prisma.$transaction(async (transaction) => {
-        await replaceListeningContent({
-          transaction,
-          testId: existing.id,
-          content,
-        });
-        await transaction.toeic_tests.update({
-          where: { id: existing.id },
-          data: {
-            listening_source_version: content.listeningSourceVersion,
-            listening_status: "PUBLISHED",
-            listening_published_at: now(),
-          },
-        });
-      });
+      await prisma.$transaction(
+        async (transaction) => {
+          await replaceListeningContent({
+            transaction,
+            testId: existing.id,
+            content,
+          });
+          await transaction.toeic_tests.update({
+            where: { id: existing.id },
+            data: {
+              listening_source_version: content.listeningSourceVersion,
+              listening_status: "PUBLISHED",
+              listening_published_at: now(),
+            },
+          });
+        },
+        { maxWait: 10_000, timeout: 120_000 }
+      );
       return "UPDATED";
     },
   };
