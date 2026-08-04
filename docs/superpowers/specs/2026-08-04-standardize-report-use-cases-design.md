@@ -16,28 +16,28 @@ Không bổ sung tính năng chưa tồn tại trong source. Không xem module n
 
 Giữ bộ mã UC01–UC20 hiện có để tránh làm hỏng tham chiếu chéo:
 
-| ID | Tên Use Case | Actor chính |
-|---|---|---|
-| UC01 | Đăng ký tài khoản | Khách |
-| UC02 | Xác thực email | Khách/Người học |
-| UC03 | Đăng nhập | Khách |
-| UC04 | Khôi phục mật khẩu | Khách |
-| UC05 | Thực hiện bài kiểm tra đầu vào | Người học |
-| UC06 | Khám phá và truy cập khóa học | Người học |
-| UC07 | Thực hiện bài học và thử thách | Người học |
-| UC08 | Lưu và quản lý từ vựng | Người học |
-| UC09 | Luyện từ bằng flashcard và ôn tập | Người học |
-| UC10 | Thực hiện bài luyện tập | Người học |
-| UC11 | Làm bài đọc hiểu | Người học |
-| UC12 | Luyện TOEIC Listening | Người học |
-| UC13 | Luyện TOEIC Reading | Người học |
-| UC14 | Luyện TOEIC Grammar | Người học |
-| UC15 | Luyện TOEIC Dictation | Người học |
-| UC16 | Xem bảng điều khiển và tiến độ | Người học |
-| UC17 | Xem bảng xếp hạng | Người học |
-| UC18 | Quản lý khóa học | Quản trị viên |
-| UC19 | Quản lý bài đọc và nội dung | Quản trị viên |
-| UC20 | Quản lý người dùng và thiết lập | Quản trị viên |
+| ID   | Tên Use Case                      | Actor chính     |
+| ---- | --------------------------------- | --------------- |
+| UC01 | Đăng ký tài khoản                 | Khách           |
+| UC02 | Xác thực email                    | Khách/Người học |
+| UC03 | Đăng nhập                         | Khách           |
+| UC04 | Khôi phục mật khẩu                | Khách           |
+| UC05 | Thực hiện bài kiểm tra đầu vào    | Người học       |
+| UC06 | Khám phá và truy cập khóa học     | Người học       |
+| UC07 | Thực hiện bài học và thử thách    | Người học       |
+| UC08 | Lưu và quản lý từ vựng            | Người học       |
+| UC09 | Luyện từ bằng flashcard và ôn tập | Người học       |
+| UC10 | Thực hiện bài luyện tập           | Người học       |
+| UC11 | Làm bài đọc hiểu                  | Người học       |
+| UC12 | Luyện TOEIC Listening             | Người học       |
+| UC13 | Luyện TOEIC Reading               | Người học       |
+| UC14 | Luyện TOEIC Grammar               | Người học       |
+| UC15 | Luyện TOEIC Dictation             | Người học       |
+| UC16 | Xem bảng điều khiển và tiến độ    | Người học       |
+| UC17 | Xem bảng xếp hạng                 | Người học       |
+| UC18 | Quản lý khóa học                  | Quản trị viên   |
+| UC19 | Quản lý bài đọc và nội dung       | Quản trị viên   |
+| UC20 | Quản lý người dùng và thiết lập   | Quản trị viên   |
 
 Tên tiếng Việt được ưu tiên trong nội dung báo cáo; thuật ngữ tiếng Anh chỉ giữ khi đó là tên sản phẩm, chuẩn kỹ thuật hoặc nhãn giao diện thực tế.
 
@@ -45,16 +45,16 @@ Tên tiếng Việt được ưu tiên trong nội dung báo cáo; thuật ngữ
 
 Mỗi Use Case bắt đầu bằng một bảng thông tin có đủ các trường sau:
 
-| Trường | Yêu cầu nội dung |
-|---|---|
-| Use Case Name | Tên mục tiêu nghiệp vụ, dùng động từ và đối tượng |
-| Use Case ID | Mã ổn định UC01–UC20 |
-| Use Case Description | Tóm tắt tương tác và giá trị actor nhận được |
-| Actor | Actor chính; actor phụ chỉ xuất hiện nếu là hệ thống bên ngoài |
-| Priority | Cao, Trung bình hoặc Thấp, có căn cứ theo giá trị và phụ thuộc nghiệp vụ |
-| Trigger | Sự kiện quan sát được khởi phát Use Case |
-| Pre-Condition | Trạng thái phải đúng trước khi bắt đầu |
-| Post-Condition | Trạng thái hệ thống có thể kiểm chứng sau khi thành công |
+| Trường               | Yêu cầu nội dung                                                         |
+| -------------------- | ------------------------------------------------------------------------ |
+| Use Case Name        | Tên mục tiêu nghiệp vụ, dùng động từ và đối tượng                        |
+| Use Case ID          | Mã ổn định UC01–UC20                                                     |
+| Use Case Description | Tóm tắt tương tác và giá trị actor nhận được                             |
+| Actor                | Actor chính; actor phụ chỉ xuất hiện nếu là hệ thống bên ngoài           |
+| Priority             | Cao, Trung bình hoặc Thấp, có căn cứ theo giá trị và phụ thuộc nghiệp vụ |
+| Trigger              | Sự kiện quan sát được khởi phát Use Case                                 |
+| Pre-Condition        | Trạng thái phải đúng trước khi bắt đầu                                   |
+| Post-Condition       | Trạng thái hệ thống có thể kiểm chứng sau khi thành công                 |
 
 Sau bảng thông tin là các tiểu mục theo đúng thứ tự:
 

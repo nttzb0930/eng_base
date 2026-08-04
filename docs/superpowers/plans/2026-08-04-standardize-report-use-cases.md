@@ -39,11 +39,13 @@
 ### Task 1: Define the strict Use Case catalog
 
 **Files:**
+
 - Create: `tools/reporting/use_case_standardizer/__init__.py`
 - Create: `tools/reporting/use_case_standardizer/use_case_catalog.py`
 - Test: `tools/reporting/use_case_standardizer/tests/test_catalog.py`
 
 **Interfaces:**
+
 - Produces: `UseCaseSpec`, `FlowStep`, `Traceability`, `build_use_case_catalog() -> tuple[UseCaseSpec, ...]`, `validate_catalog(catalog) -> list[str]`.
 
 - [ ] **Step 1: Write the failing catalog test**
@@ -150,11 +152,13 @@ git commit -m "docs: define standardized use case catalog"
 ### Task 2: Collect and validate source traceability
 
 **Files:**
+
 - Create: `tools/reporting/use_case_standardizer/source_evidence.py`
 - Create: `tools/reporting/use_case_standardizer/tests/test_source_evidence.py`
 - Create: `artifacts/use-case-standardization/source-evidence.json`
 
 **Interfaces:**
+
 - Consumes: `build_use_case_catalog()`.
 - Produces: `collect_source_evidence(root: Path, catalog: tuple[UseCaseSpec, ...]) -> dict`, `validate_source_paths(root: Path, catalog) -> list[str]`.
 
@@ -207,11 +211,13 @@ git commit -m "docs: trace report use cases to source"
 ### Task 3: Rewrite only section 3.14 in a copied report
 
 **Files:**
+
 - Create: `tools/reporting/use_case_standardizer/rewrite_report.py`
 - Create: `tools/reporting/use_case_standardizer/tests/test_rewrite_report.py`
 - Produce: `artifacts/use-case-standardization/English_Base_Bao_Cao_Do_An_UseCase_ChuanHoa.draft.docx`
 
 **Interfaces:**
+
 - Consumes: `UseCaseSpec`, source DOCX path.
 - Produces: `rewrite_use_case_section(source: Path, output: Path, catalog) -> None`.
 
@@ -263,11 +269,13 @@ git commit -m "docs: generate standardized use case section"
 ### Task 4: Finalize Word fields and create a PDF proof
 
 **Files:**
+
 - Create: `tools/reporting/use_case_standardizer/finalize_word.ps1`
 - Consume: draft DOCX.
 - Produce: final DOCX and proof PDF.
 
 **Interfaces:**
+
 - Produces CLI: `finalize_word.ps1 -InputDocx <path> -OutputDocx <path> -OutputPdf <path>`.
 
 - [ ] **Step 1: Add argument and input-safety checks**
@@ -311,12 +319,14 @@ git commit -m "docs: finalize standardized Word report"
 ### Task 5: Validate structure, source accuracy and rendered layout
 
 **Files:**
+
 - Create: `tools/reporting/use_case_standardizer/validate_report.py`
 - Create: `tools/reporting/use_case_standardizer/tests/test_validate_report.py`
 - Create: `artifacts/use-case-standardization/validation.json`
 - Produce: `artifacts/use-case-standardization/rendered-pages/page-*.png`
 
 **Interfaces:**
+
 - Produces: `validate_report(docx: Path, pdf: Path, root: Path) -> dict`, CLI with `--docx`, `--pdf`, `--root`, `--output` and `--render-dir`.
 
 - [ ] **Step 1: Write failing validator tests**
@@ -370,11 +380,13 @@ git commit -m "test: validate standardized use case report"
 ### Task 6: Deliver the new report without modifying the original
 
 **Files:**
+
 - Copy from: `artifacts/use-case-standardization/English_Base_Bao_Cao_Do_An_UseCase_ChuanHoa.docx`
 - Copy to: `C:\Users\nttzb\Downloads\English_Base_Bao_Cao_Do_An_UseCase_ChuanHoa.docx`
 - Optionally copy proof PDF to: `C:\Users\nttzb\Downloads\English_Base_Bao_Cao_Do_An_UseCase_ChuanHoa.pdf`
 
 **Interfaces:**
+
 - Consumes: validated final artifacts.
 - Produces: user-facing Word report and optional PDF proof.
 
