@@ -317,7 +317,9 @@ export function LearnLevelView() {
                   <div className="mt-5">
                     {!locked && targetUnit ? (
                       <Link
-                        href={withLocale(`/learn/level?unit=${targetUnit.id}`)}
+                        href={withLocale(
+                          `/learn/level?unit=${targetUnit.id}#level-lessons`
+                        )}
                         className={cn(
                           "shadow-xs inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl text-xs font-bold transition",
                           active
@@ -347,7 +349,7 @@ export function LearnLevelView() {
         </section>
 
         {selectedUnit && (
-          <section className="mt-10">
+          <section id="level-lessons" className="mt-10 scroll-mt-24">
             <div className="mb-4 flex items-end justify-between gap-4">
               <div>
                 <p className="eyebrow text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">

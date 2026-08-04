@@ -103,6 +103,19 @@ test("Learn Level cards do not collapse a CEFR level to the first matching Unit"
   assert.equal(source.includes("unitItem.id === activeUnitId"), false);
 });
 
+test("Learn Level continue action scrolls to the selected Unit lessons", () => {
+  const source = read("app/views/learn/LearnLevelView.tsx");
+
+  assert.equal(
+    source.includes(
+      '`/learn/level?unit=${targetUnit.id}#level-lessons`'
+    ),
+    true
+  );
+  assert.equal(source.includes('id="level-lessons"'), true);
+  assert.equal(source.includes("scroll-mt-24"), true);
+});
+
 test("Learn CEFR feedback is localized consistently in English and Vietnamese", () => {
   const en = JSON.parse(read("app/messages/en.json")) as Record<
     string,
