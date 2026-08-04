@@ -7,11 +7,11 @@ and production deployment orchestration.
 
 `.github/workflows` contains exactly three files:
 
-| Workflow             | Triggers                                  | Permission                          | Responsibility                                 |
-| -------------------- | ----------------------------------------- | ----------------------------------- | ---------------------------------------------- |
-| `ci.yml`             | every push, pull request, manual          | `contents: read`                    | generate, verify, test, lint, build, format    |
-| `publish-images.yml` | successful `CI` on `main`, manual         | `contents: read`, `packages: write` | build and publish three GHCR images            |
-| `deploy.yml`         | manual with environment and published tag | `contents: read`                    | deploy published images over SSH, health check |
+| Workflow             | Triggers                                       | Permission                          | Responsibility                                 |
+| -------------------- | ---------------------------------------------- | ----------------------------------- | ---------------------------------------------- |
+| `ci.yml`             | every push, pull request, manual               | `contents: read`                    | generate, verify, test, lint, build, format    |
+| `publish-images.yml` | successful `CI` on `main`, manual              | `contents: read`, `packages: write` | build and publish three GHCR images            |
+| `deploy.yml`         | successful automatic image publication, manual | `contents: read`                    | deploy published images over SSH, health check |
 
 Do not combine publication with CI. A failing application gate should be clear
 without registry noise. Do not deploy directly from source; deploy a previously
@@ -112,8 +112,14 @@ not migrate, seed, or start an application during image construction.
 
 ## Deployment flow
 
-`deploy.yml` is manual. It requires an `environment` and an `image_tag` that
-already exists in GHCR. It resolves these images:
+`deploy.yml` starts automatically after `Publish Images` succeeds for a `main`
+push that passed CI. The automatic path deploys the publication commit SHA to
+the `production` GitHub Environment. A manually dispatched image publication
+does not automatically deploy production.
+
+Manual deployment remains available for staging, rollback, or redeploying an
+existing immutable tag. It requires an `environment` and an `image_tag` that
+already exists in GHCR. Both paths resolve these images:
 
 ```text
 ghcr.io/<owner>/<repo>-api:<image_tag>

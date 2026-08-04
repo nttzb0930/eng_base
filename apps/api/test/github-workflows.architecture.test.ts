@@ -22,15 +22,15 @@ test("CI workflow runs the complete safe verification contract", () => {
 
   const apiJob = source.slice(
     source.indexOf("  api:"),
-    source.indexOf("  web:"),
+    source.indexOf("  web:")
   );
   const webJob = source.slice(
     source.indexOf("  web:"),
-    source.indexOf("  admin:"),
+    source.indexOf("  admin:")
   );
   const adminJob = source.slice(
     source.indexOf("  admin:"),
-    source.indexOf("  repository:"),
+    source.indexOf("  repository:")
   );
 
   assert.match(apiJob, /pnpm --filter @repo\/shared build/u);
@@ -146,10 +146,19 @@ test("GHCR workflow publishes exactly three application images after CI succeeds
   assert.doesNotMatch(source, /(?:DATABASE_URL|JWT_|SECRET)=/u);
 });
 
-test("Deploy workflow is manual, SSH based, and runs migrations before compose up", () => {
+test("Deploy workflow follows successful main image publication, keeps manual rollback, and migrates before compose up", () => {
   const source = readFileSync(join(workflowsRoot, "deploy.yml"), "utf8");
 
+  assert.match(
+    source,
+    /workflow_run:\s*\n\s+workflows:\s*\n\s+- Publish Images/u
+  );
+  assert.match(source, /branches:\s*\n\s+- main/u);
+  assert.match(source, /github\.event\.workflow_run\.conclusion == 'success'/u);
+  assert.match(source, /github\.event\.workflow_run\.event == 'workflow_run'/u);
+  assert.match(source, /github\.event\.workflow_run\.head_sha/u);
   assert.match(source, /workflow_dispatch:/u);
+  assert.match(source, /\|\| 'production'/u);
   assert.match(source, /environment:/u);
   assert.match(source, /image_tag:/u);
   assert.match(source, /appleboy\/ssh-action@v1\.2\.0/u);

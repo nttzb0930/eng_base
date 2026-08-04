@@ -263,13 +263,13 @@ lệnh này lên issue/chat vì output có thể chứa secret đã resolve.
 ## 7. Publish và deploy
 
 1. Merge commit cần release vào `main` và đợi workflow `CI` xanh.
-2. Workflow `Publish Images` tự chạy sau CI hoặc chạy thủ công. Ghi lại immutable
-   image tag là commit SHA.
-3. Vào `Actions > Deploy > Run workflow`.
-4. Chọn `environment=production`.
-5. Nhập `image_tag` đúng bằng tag đã publish.
-6. Workflow SSH vào VPS, cập nhật bốn image variables, pull image, chạy
+2. Workflow `Publish Images` tự chạy sau CI và publish ba image bằng commit SHA.
+3. Khi publication thành công, workflow `Deploy` tự dùng cùng commit SHA để
+   deploy vào GitHub Environment `production`.
+4. Workflow SSH vào VPS, cập nhật bốn image variables, pull image, chạy
    `prisma migrate deploy`, khởi động Compose và health check.
+5. Chỉ dùng `Actions > Deploy > Run workflow` khi cần deploy staging, rollback,
+   hoặc deploy lại một image tag đã tồn tại.
 
 Deployment không seed dữ liệu và không tự import Vocabulary/licensed content.
 Không chạy `db:push`, `db:migrate:reset` hoặc `db:seed:dev` trên production.

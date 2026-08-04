@@ -1,6 +1,13 @@
 name: Deploy
 
 on:
+  workflow_run:
+    workflows:
+      - Publish Images
+    branches:
+      - main
+    types:
+      - completed
   workflow_dispatch:
     inputs:
       environment:
@@ -22,19 +29,24 @@ permissions:
 env:
   REGISTRY: ghcr.io
 
+concurrency:
+  group: deploy-${{ github.event_name == 'workflow_dispatch' && inputs.environment || 'production' }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: Deploy with Docker Compose
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'workflow_run') }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    environment: ${{ inputs.environment }}
+    environment: ${{ github.event_name == 'workflow_dispatch' && inputs.environment || 'production' }}
     outputs:
       image-tag: ${{ steps.metadata.outputs.image_tag }}
     steps:
       - name: Resolve image metadata
         id: metadata
         env:
-          IMAGE_TAG: ${{ inputs.image_tag }}
+          IMAGE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.image_tag || github.event.workflow_run.head_sha }}
         run: |
           set -eu
 
@@ -128,6 +140,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: deploy
+    environment: ${{ github.event_name == 'workflow_dispatch' && inputs.environment || 'production' }}
     steps:
       - name: Check deployment endpoints
         env:
