@@ -484,7 +484,7 @@ export function LearnView() {
                 <ul className="mt-2.5 space-y-1.5 text-xs text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-                    <span>Đề luyện tập đủ 4 Part Nghe, 3 Part Đọc & 2 Part Viết</span>
+                    <span>{t("toeicPracticePartsDetails")}</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />

@@ -98,7 +98,8 @@ function PartTwoPrompt({
 }) {
   const t = useTranslations("toeicWriting.session");
 
-  const promptEnText = task.exercise.promptEn.replace(/\\n/gu, "\n");
+  const promptEn = task.exercise.promptEn.replace(/\\n/gu, "\n");
+  const promptVi = task.exercise.promptVi?.replace(/\\n/gu, "\n") ?? "";
 
   return (
     <section className="bg-card min-w-0 rounded-md border p-4 sm:p-6">
@@ -111,8 +112,9 @@ function PartTwoPrompt({
       </div>
 
       <div className="bg-muted/50 mt-5 whitespace-pre-wrap rounded-md border p-4 text-sm leading-7">
-        {promptEnText}
+        {promptEn}
       </div>
+      {promptVi ? <div className="text-muted-foreground mt-2 text-sm">{promptVi}</div> : null}
 
       <div className="mt-6">
         <h2 className="text-sm font-semibold">{t("requirements")}</h2>

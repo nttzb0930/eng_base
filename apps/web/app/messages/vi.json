@@ -754,6 +754,7 @@
     "toeicStructureBadge": "Chuẩn cấu trúc đề ETS 2026",
     "toeicFullTestDetails": "Đề đầy đủ & giải thích",
     "toeicFeatureDetails": "Nghe chép chính tả & chấm viết chi tiết",
+    "toeicPracticePartsDetails": "Bộ luyện tập Listening 1–4, Reading 5–7 và Writing 1–2",
     "openToeic": "Mở phần luyện thi TOEIC",
     "byLevelDesc": "A1 → A2 → B1 → B2. Mở level mới khi hoàn thành level trước.",
     "byCertDesc": "Luyện TOEIC Listening và Reading theo mục tiêu kỳ thi.",
@@ -1242,7 +1243,7 @@
       },
       "error": {
         "title": "Không thể chấm email",
-        "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
+      "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
       },
       "yourSentence": "Câu đã viết:"
     },

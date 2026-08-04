@@ -27,7 +27,7 @@ export function ToeicWritingPartTwoResult({
   const assisted = Object.values(grade.assistance).some(Boolean);
 
   return (
-    <section className="mt-5 space-y-3" aria-live="polite" tabIndex={-1}>
+    <section className="mt-5 space-y-3 rounded-md" aria-live="polite" tabIndex={-1}>
       <div className="rounded-2xl border border-emerald-200 bg-emerald-50/70 p-4 sm:p-5 dark:border-emerald-900 dark:bg-emerald-950/30">
         <div className="flex flex-col gap-3.5 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4 flex-1 min-w-0">
