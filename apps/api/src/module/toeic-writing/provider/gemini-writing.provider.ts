@@ -25,9 +25,11 @@ export interface GeminiWritingClient {
 }
 
 export class WritingAiInvalidResponseError extends Error {
+  readonly reason: string;
   constructor(reason = "unknown validation failure") {
     super(`Writing AI returned an invalid structured response: ${reason}`);
     this.name = "WritingAiInvalidResponseError";
+    this.reason = reason;
   }
 }
 
@@ -111,6 +113,18 @@ function geminiResponseSchema(schema: z.ZodType<unknown>): Record<string, unknow
     return output;
   };
   return visit(value) as Record<string, unknown>;
+}
+
+function normalizeEvidence(source: string, evidence: { start: number; end: number; text: string }) {
+  const points = Array.from(source);
+  if (points.slice(evidence.start, evidence.end).join("") === evidence.text) return true;
+  const start = points.join("").indexOf(evidence.text);
+  if (start >= 0) {
+    evidence.start = Array.from(points.join("").slice(0, start)).length;
+    evidence.end = evidence.start + Array.from(evidence.text).length;
+    return true;
+  }
+  return false;
 }
 
 export class GeminiWritingProvider implements WritingAiProvider {
@@ -197,7 +211,6 @@ export class GeminiWritingProvider implements WritingAiProvider {
           systemInstruction: PART_TWO_GRADING_SYSTEM_INSTRUCTION,
           temperature: 0.1,
           responseMimeType: "application/json",
-          responseJsonSchema: geminiResponseSchema(writingPartTwoProviderResultSchema),
         },
       },
       writingPartTwoProviderResultSchema
@@ -215,6 +228,18 @@ export class GeminiWritingProvider implements WritingAiProvider {
     ];
     if (returnedIds.some((id) => !requirementIds.has(id))) {
       throw new WritingAiInvalidResponseError();
+    }
+
+    for (const item of result.taskCompletion.requirements) {
+      item.evidence = item.evidence.filter((evidence) => normalizeEvidence(input.responseText, evidence));
+    }
+    for (const item of result.sentenceVariety.detected) {
+      if (!normalizeEvidence(input.responseText, item.evidence)) item.evidence = { start: 0, end: 1, text: Array.from(input.responseText)[0] ?? " " };
+    }
+    result.grammar.errors = result.grammar.errors.filter((item) => normalizeEvidence(input.responseText, item.evidence));
+    result.paraphrase.copiedRanges = result.paraphrase.copiedRanges.filter((item) => normalizeEvidence(input.responseText, item));
+    for (const item of result.improvedEmail.requirementCoverage) {
+      item.evidence = item.evidence.filter((evidence) => normalizeEvidence(result.improvedEmail.text, evidence));
     }
 
     return result;

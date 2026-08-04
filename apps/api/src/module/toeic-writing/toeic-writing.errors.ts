@@ -119,6 +119,7 @@ export function mapWritingAiError(error: unknown): never {
       statusCode: 502,
       code: "WRITING_AI_INVALID_RESPONSE",
       message: "TOEIC Writing AI returned an invalid response",
+      ...(process.env.NODE_ENV !== "production" ? { detail: error.reason } : {}),
     });
   }
   if (error instanceof Error && error.name === "AbortError") {

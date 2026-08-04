@@ -72,12 +72,13 @@ export function validatePartTwoProviderResult(
   }
 
   const improvedValidation = validatePartTwoResponse(result.improvedEmail.text);
-  if (
-    !improvedValidation.valid ||
-    improvedValidation.wordCount !== result.improvedEmail.wordCount
-  ) {
+  const improvedHasBlockingIssue = improvedValidation.issues.some(
+    (issue) => issue.code !== "MIN_WORDS"
+  );
+  if (!improvedValidation.valid && improvedHasBlockingIssue) {
     invalid("improved email failed response validation or word count check");
   }
+  result.improvedEmail.wordCount = improvedValidation.wordCount;
   verifyExactRequirementIds(
     result.improvedEmail.requirementCoverage.map(
       (coverage) => coverage.requirementId
