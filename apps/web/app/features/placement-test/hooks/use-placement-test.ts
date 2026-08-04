@@ -205,7 +205,7 @@ export function usePlacementTest() {
           queryClient.invalidateQueries({ queryKey: courseKeys.all }),
         ]);
         toast.success(t("toast.confirmSuccess", { level }));
-        router.push(withLocale("/learn", locale));
+        router.push(withLocale("/dashboard", locale));
       } catch (err) {
         toast.error(getErrorMessage(err, "toast.confirmError"));
       }

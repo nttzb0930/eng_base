@@ -22,8 +22,8 @@ const confirmedProgress = {
   primaryLanguage: "en",
 } satisfies UserProgress;
 
-test("post-auth redirect sends confirmed learners to learn", () => {
-  assert.equal(resolvePostAuthRedirect(confirmedProgress), "/learn");
+test("post-auth redirect sends confirmed learners to dashboard", () => {
+  assert.equal(resolvePostAuthRedirect(confirmedProgress), "/dashboard");
 });
 
 test("post-auth redirect sends new learners to placement test", () => {

@@ -83,7 +83,7 @@ export function PlacementTestView() {
   useEffect(() => {
     if (session?.status !== "CONFIRMED") return;
     bypassWarning.current = true;
-    router.replace(withLocale("/learn", locale));
+    router.replace(withLocale("/dashboard", locale));
   }, [locale, router, session?.status]);
 
   const handleConfirmLevelWithBypass = (

@@ -6,5 +6,5 @@ export function resolvePostAuthRedirect(
   if (!progress?.isPlacementTestConfirmed) return "/placement-test";
   if (!progress.activeCourse) return "/courses";
 
-  return "/learn";
+  return "/dashboard";
 }
