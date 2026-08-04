@@ -13,6 +13,13 @@ import { useMemo, useState } from "react";
 import { FeedWrapper } from "@/app/components/layout/FeedWrapper";
 import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/app/components/ui/select";
 import { ToeicBrowseContainer } from "@/app/features/toeic/components/ToeicBrowseContainer";
 import { ToeicWritingCatalogSkeleton } from "@/app/features/toeic-writing/components/ToeicWritingCatalogSkeleton";
 import { ToeicWritingPartOneCard } from "@/app/features/toeic-writing/components/ToeicWritingPartOneCard";
@@ -152,33 +159,35 @@ export function ToeicWritingCatalogView() {
         </p>
 
         {part === 1 && partOneTasks.length > 0 ? (
-          <div
-            className="mt-6 flex flex-wrap gap-2"
-            aria-label={t("catalog.patternFilterLabel")}
-          >
-            {patternFilters.map((filter) => {
-              const active = filter.value === activePattern;
-              return (
-                <button
-                  key={filter.value ?? "all"}
-                  type="button"
-                  aria-pressed={active}
-                  onClick={() => setSelectedPattern(filter.value)}
-                  className={`min-h-9 rounded-md border px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
-                    active
-                      ? "border-emerald-600 bg-emerald-600 text-white"
-                      : "bg-card hover:border-emerald-500 hover:text-emerald-700 dark:hover:text-emerald-300"
-                  }`}
-                >
-                  {filter.value
-                    ? t("catalog.pattern", {
-                        pattern: filter.value,
-                        count: filter.count,
-                      })
-                    : t("catalog.allPatterns", { count: filter.count })}
-                </button>
-              );
-            })}
+          <div className="mt-6">
+            <Select
+              value={activePattern ?? "all"}
+              onValueChange={(val) =>
+                setSelectedPattern(val === "all" ? null : val)
+              }
+            >
+              <SelectTrigger
+                aria-label={t("catalog.patternFilterLabel")}
+                className="w-full rounded-xl border-emerald-200/80 bg-card font-semibold text-emerald-800 sm:w-[220px] dark:border-emerald-900 dark:text-emerald-300"
+              >
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {patternFilters.map((filter) => (
+                  <SelectItem
+                    key={filter.value ?? "all"}
+                    value={filter.value ?? "all"}
+                  >
+                    {filter.value
+                      ? t("catalog.pattern", {
+                          pattern: filter.value,
+                          count: filter.count,
+                        })
+                      : t("catalog.allPatterns", { count: filter.count })}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
         ) : null}
 
