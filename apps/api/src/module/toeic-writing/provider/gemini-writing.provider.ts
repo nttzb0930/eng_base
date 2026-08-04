@@ -95,6 +95,24 @@ function stripJsonFences(value: string): string {
   return (fenced?.[1] ?? trimmed).trim();
 }
 
+// Gemini's response schema accepts a restricted JSON-Schema subset. Zod's
+// generated schema includes draft metadata and validation keywords that the
+// official endpoint rejects with INVALID_ARGUMENT.
+function geminiResponseSchema(schema: z.ZodType<unknown>): Record<string, unknown> {
+  const value = z.toJSONSchema(schema) as Record<string, unknown>;
+  const visit = (node: unknown): unknown => {
+    if (Array.isArray(node)) return node.map(visit);
+    if (!node || typeof node !== "object") return node;
+    const output: Record<string, unknown> = {};
+    for (const [key, child] of Object.entries(node)) {
+      if (["$schema", "additionalProperties", "minLength", "maxLength", "pattern", "minimum", "maximum"].includes(key)) continue;
+      output[key] = visit(child);
+    }
+    return output;
+  };
+  return visit(value) as Record<string, unknown>;
+}
+
 export class GeminiWritingProvider implements WritingAiProvider {
   constructor(
     private readonly client: GeminiWritingClient,
@@ -119,7 +137,7 @@ export class GeminiWritingProvider implements WritingAiProvider {
         config: {
           temperature: 0.1,
           responseMimeType: "application/json",
-          responseJsonSchema: z.toJSONSchema(writingPictureContextSchema),
+          responseJsonSchema: geminiResponseSchema(writingPictureContextSchema),
         },
       },
       writingPictureContextSchema
@@ -156,9 +174,7 @@ export class GeminiWritingProvider implements WritingAiProvider {
         config: {
           temperature: 0.1,
           responseMimeType: "application/json",
-          responseJsonSchema: z.toJSONSchema(
-            writingPartOneProviderResultSchema
-          ),
+          responseJsonSchema: geminiResponseSchema(writingPartOneProviderResultSchema),
         },
       },
       writingPartOneProviderResultSchema
@@ -181,9 +197,7 @@ export class GeminiWritingProvider implements WritingAiProvider {
           systemInstruction: PART_TWO_GRADING_SYSTEM_INSTRUCTION,
           temperature: 0.1,
           responseMimeType: "application/json",
-          responseJsonSchema: z.toJSONSchema(
-            writingPartTwoProviderResultSchema
-          ),
+          responseJsonSchema: geminiResponseSchema(writingPartTwoProviderResultSchema),
         },
       },
       writingPartTwoProviderResultSchema
@@ -213,7 +227,7 @@ export class GeminiWritingProvider implements WritingAiProvider {
     const schemaInstruction = [
       "Return only one JSON object that exactly matches this JSON schema.",
       "Do not use Markdown fences and do not rename, omit, or add fields.",
-      JSON.stringify(z.toJSONSchema(schema)),
+      JSON.stringify(geminiResponseSchema(schema)),
     ].join("\n");
     const currentSystemInstruction = request.config?.systemInstruction;
     const requestWithSchema: GenerateContentParameters = {
@@ -255,10 +269,23 @@ export class GeminiWritingProvider implements WritingAiProvider {
     );
 
     try {
-      return await this.client.generateContent({
-        ...request,
-        config: { ...request.config, abortSignal: controller.signal },
-      });
+      try {
+        return await this.client.generateContent({
+          ...request,
+          config: { ...request.config, abortSignal: controller.signal },
+        });
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        const schemaRejected =
+          request.config?.responseJsonSchema !== undefined &&
+          /\b400\b|invalid argument|response.?schema|json.?schema/iu.test(message);
+        if (!schemaRejected) throw error;
+        const { responseJsonSchema: _ignored, ...fallbackConfig } = request.config ?? {};
+        return await this.client.generateContent({
+          ...request,
+          config: { ...fallbackConfig, abortSignal: controller.signal },
+        });
+      }
     } finally {
       clearTimeout(timeout);
     }
