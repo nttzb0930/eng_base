@@ -27,6 +27,13 @@ export type ToeicWritingPartTwoRequirement = {
   textVi: string | null;
 };
 
+export type ToeicWritingVocabularyChunk = {
+  patternEn: string;
+  meaningVi: string | null;
+  exampleEn: string | null;
+  exampleVi: string | null;
+};
+
 export type ToeicWritingPartTwoCanonicalPayload = {
   titleVi: string | null;
   promptEn: string;
@@ -36,6 +43,8 @@ export type ToeicWritingPartTwoCanonicalPayload = {
   outlineLevel2: string[];
   chunksLevel1: string[];
   chunksLevel2: string[];
+  chunkDetailsLevel1?: ToeicWritingVocabularyChunk[];
+  chunkDetailsLevel2?: ToeicWritingVocabularyChunk[];
   gapReferences: string[];
   sampleEn: string;
   sampleVi: string | null;

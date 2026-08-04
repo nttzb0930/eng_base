@@ -63,6 +63,8 @@ export type PartTwoPayload = {
   outlineLevel2: string[];
   chunksLevel1: string[];
   chunksLevel2: string[];
+  chunkDetailsLevel1?: Array<{ patternEn: string; meaningVi: string | null; exampleEn: string | null; exampleVi: string | null }>;
+  chunkDetailsLevel2?: Array<{ patternEn: string; meaningVi: string | null; exampleEn: string | null; exampleVi: string | null }>;
   sampleEn: string;
   sampleVi: string | null;
 };
@@ -144,6 +146,8 @@ export function parsePartTwoPayload(value: unknown): PartTwoPayload {
   return {
     ...(value as Omit<PartTwoPayload, "titleVi">),
     titleVi: value.titleVi?.trim() || null,
+    chunkDetailsLevel1: Array.isArray(value.chunkDetailsLevel1) ? value.chunkDetailsLevel1 as PartTwoPayload["chunkDetailsLevel1"] : undefined,
+    chunkDetailsLevel2: Array.isArray(value.chunkDetailsLevel2) ? value.chunkDetailsLevel2 as PartTwoPayload["chunkDetailsLevel2"] : undefined,
   };
 }
 

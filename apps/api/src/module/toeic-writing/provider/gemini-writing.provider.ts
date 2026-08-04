@@ -25,8 +25,8 @@ export interface GeminiWritingClient {
 }
 
 export class WritingAiInvalidResponseError extends Error {
-  constructor() {
-    super("Writing AI returned an invalid structured response");
+  constructor(reason = "unknown validation failure") {
+    super(`Writing AI returned an invalid structured response: ${reason}`);
     this.name = "WritingAiInvalidResponseError";
   }
 }
@@ -78,12 +78,21 @@ function parseStructuredResponse<T>(
   try {
     const value =
       response.structured === undefined
-        ? JSON.parse(response.text ?? "")
+        ? JSON.parse(stripJsonFences(response.text ?? ""))
         : response.structured;
     return schema.parse(value);
-  } catch {
-    throw new WritingAiInvalidResponseError();
+  } catch (error) {
+    const reason = error instanceof z.ZodError
+      ? error.issues.slice(0, 3).map((issue) => `${issue.path.join(".") || "root"}: ${issue.message}`).join("; ")
+      : "response was not valid JSON";
+    throw new WritingAiInvalidResponseError(reason);
   }
+}
+
+function stripJsonFences(value: string): string {
+  const trimmed = value.trim();
+  const fenced = trimmed.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/iu);
+  return (fenced?.[1] ?? trimmed).trim();
 }
 
 export class GeminiWritingProvider implements WritingAiProvider {

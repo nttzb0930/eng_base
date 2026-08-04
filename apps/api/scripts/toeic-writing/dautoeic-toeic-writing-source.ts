@@ -116,13 +116,13 @@ function strings(value: unknown): string[] {
 
 function bilingualChunks(
   value: unknown
-): Array<{ en: string; vi: string | null }> {
+): Array<{ en: string; vi: string | null; exampleEn: string | null; exampleVi: string | null }> {
   const parsed = decoded(value);
   if (!Array.isArray(parsed)) return [];
   return parsed
     .map((item) => {
-      if (typeof item === "string") return { en: item.trim(), vi: null };
-      if (!item || typeof item !== "object") return { en: "", vi: null };
+      if (typeof item === "string") return { en: item.trim(), vi: null, exampleEn: null, exampleVi: null };
+      if (!item || typeof item !== "object") return { en: "", vi: null, exampleEn: null, exampleVi: null };
       const record = item as Record<string, unknown>;
       return {
         en: String(record.en ?? "").trim(),
@@ -130,6 +130,10 @@ function bilingualChunks(
           record.vi === null || record.vi === undefined
             ? null
             : String(record.vi).trim() || null,
+        exampleEn:
+          String(record.exampleEn ?? record.example_en ?? record.example ?? "").trim() || null,
+        exampleVi:
+          String(record.exampleVi ?? record.example_vi ?? "").trim() || null,
       };
     })
     .filter((item) => item.en.length > 0);
@@ -163,7 +167,21 @@ function requirements(
         };
       })
       .filter((item): item is ToeicWritingPartTwoRequirement => item !== null);
-    if (mapped.length > 0) return mapped;
+    if (mapped.length > 0) {
+      const instruction = mapped[0]?.textEn.toLocaleLowerCase("en-US") ?? "";
+      if (
+        mapped.length === 1 &&
+        /two\s+(?:pieces?\s+of\s+)?information/iu.test(instruction) &&
+        /one\s+question/iu.test(instruction)
+      ) {
+        return [
+          { order: 1, textEn: "Provide information 1.", textVi: null },
+          { order: 2, textEn: "Provide information 2.", textVi: null },
+          { order: 3, textEn: "Ask one question.", textVi: null },
+        ];
+      }
+      return mapped;
+    }
   }
 
   return fallback?.trim()
@@ -350,6 +368,18 @@ export function createDautoeicToeicWritingSource(
             outlineLevel2: strings(row.outline_2),
             chunksLevel1: chunksLevel1.map((chunk) => chunk.en),
             chunksLevel2: levelTwoEnglish,
+            chunkDetailsLevel1: chunksLevel1.map((chunk) => ({
+              patternEn: chunk.en,
+              meaningVi: chunk.vi,
+              exampleEn: chunk.exampleEn,
+              exampleVi: chunk.exampleVi,
+            })),
+            chunkDetailsLevel2: chunksLevel2.map((chunk) => ({
+              patternEn: chunk.en,
+              meaningVi: chunk.vi,
+              exampleEn: chunk.exampleEn,
+              exampleVi: chunk.exampleVi,
+            })),
             gapReferences: referencedGaps(levelTwoEnglish, row.gap_references),
             sampleEn: row.sample_en?.trim() || levelTwoEnglish.join(" ").trim(),
             sampleVi:

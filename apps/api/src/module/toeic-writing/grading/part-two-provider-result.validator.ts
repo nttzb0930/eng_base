@@ -10,8 +10,8 @@ type ValidationContext = {
   requirementIds: string[];
 };
 
-function invalid(): never {
-  throw new WritingAiInvalidResponseError();
+function invalid(reason: string): never {
+  throw new WritingAiInvalidResponseError(reason);
 }
 
 function verifyEvidence(
@@ -25,7 +25,7 @@ function verifyEvidence(
     evidence.end > points.length ||
     points.slice(evidence.start, evidence.end).join("") !== evidence.text
   ) {
-    invalid();
+    invalid(`evidence mismatch at [${evidence.start},${evidence.end})`);
   }
 }
 
@@ -38,7 +38,7 @@ function verifyExactRequirementIds(
     new Set(actualIds).size !== actualIds.length ||
     expectedIds.some((id) => !actualIds.includes(id))
   ) {
-    invalid();
+    invalid("requirement IDs do not match the task");
   }
 }
 
@@ -47,7 +47,7 @@ export function validatePartTwoProviderResult(
   context: ValidationContext
 ): WritingPartTwoProviderResult {
   const parsed = writingPartTwoProviderResultSchema.safeParse(providerResult);
-  if (!parsed.success) invalid();
+  if (!parsed.success) invalid("schema validation failed");
   const result = parsed.data;
   verifyExactRequirementIds(
     result.taskCompletion.requirements.map(
@@ -76,7 +76,7 @@ export function validatePartTwoProviderResult(
     !improvedValidation.valid ||
     improvedValidation.wordCount !== result.improvedEmail.wordCount
   ) {
-    invalid();
+    invalid("improved email failed response validation or word count check");
   }
   verifyExactRequirementIds(
     result.improvedEmail.requirementCoverage.map(

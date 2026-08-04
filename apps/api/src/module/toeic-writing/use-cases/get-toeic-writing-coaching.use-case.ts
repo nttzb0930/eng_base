@@ -117,9 +117,9 @@ export class GetToeicWritingCoachingUseCase {
       };
     }
     if (kind === "VOCABULARY") {
-      const variant = (level: 1 | 2, values: string[]) => ({
+      const variant = (level: 1 | 2, values: string[], details?: NonNullable<typeof payload.chunkDetailsLevel1>) => ({
         level,
-        items: values.map((patternEn) => ({
+        items: values.map((patternEn, index) => details?.[index] ?? ({
           patternEn,
           meaningVi: null,
           exampleEn: null,
@@ -130,8 +130,8 @@ export class GetToeicWritingCoachingUseCase {
         ...base,
         kind,
         variants: [
-          variant(1, payload.chunksLevel1),
-          variant(2, payload.chunksLevel2),
+          variant(1, payload.chunksLevel1, payload.chunkDetailsLevel1),
+          variant(2, payload.chunksLevel2, payload.chunkDetailsLevel2),
         ],
       };
     }
