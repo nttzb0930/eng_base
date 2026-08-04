@@ -270,7 +270,7 @@ test("invalid provider JSON is repaired once then rejected without exposing cont
   assert.equal(calls.length, 2);
 });
 
-test("Part 2 grading uses the grading model, locale, and strict schema", async () => {
+test("Part 2 grading uses the grading model and locale while validating the result locally", async () => {
   const { client, calls } = fakeClient([JSON.stringify(partTwoResult())]);
   const provider = new GeminiWritingProvider(client, configuration);
 
@@ -285,7 +285,7 @@ test("Part 2 grading uses the grading model, locale, and strict schema", async (
   assert.equal(request.model, "grading-model");
   assert.match(request.config.systemInstruction ?? "", /Vietnamese/u);
   assert.doesNotMatch(JSON.stringify(request.contents), /Dear Mr\. Brown/u);
-  assert.ok(request.config.responseJsonSchema);
+  assert.equal(request.config.responseJsonSchema, undefined);
 });
 
 test("Part 2 grading repairs one invalid schema response", async () => {

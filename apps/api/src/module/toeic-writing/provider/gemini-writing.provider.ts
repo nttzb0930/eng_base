@@ -151,7 +151,6 @@ export class GeminiWritingProvider implements WritingAiProvider {
         config: {
           temperature: 0.1,
           responseMimeType: "application/json",
-          responseJsonSchema: geminiResponseSchema(writingPictureContextSchema),
         },
       },
       writingPictureContextSchema

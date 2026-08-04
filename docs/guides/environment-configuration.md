@@ -24,19 +24,19 @@ Copy-Item .env.example .env
 
 ## Ownership table
 
-| Variables                                      | Owner                        | Visibility        | When read                      |
-| ---------------------------------------------- | ---------------------------- | ----------------- | ------------------------------ |
-| `NEXT_PUBLIC_APP_NAME`                         | Web/Admin                    | Browser-public    | Next build and browser runtime |
-| `NEXT_PUBLIC_APP_URL`                          | Web/Admin                    | Browser-public    | Next build and browser runtime |
-| `NEXT_PUBLIC_API_URL`                          | Web/Admin                    | Browser-public    | Next build and browser runtime |
-| `APP_NAME`, `APP_SERVICE_NAME`                 | API application config       | Server-only       | API startup                    |
-| `API_PORT`, `CORS_ORIGINS`, `TRUST_PROXY_HOPS` | API application config       | Server-only       | API startup                    |
-| `JWT_*`                                        | API Auth config              | Secret            | API startup                    |
-| `RATE_LIMIT_*`, `AUTH_*_LIMIT`, `AUTH_*_TTL`   | API rate-limit config        | Server-only       | API startup                    |
-| `DATABASE_URL`, `DB_*`                         | Database URL resolver        | Secret            | Prisma CLI/runtime/scripts     |
-| `LICENSED_CONTENT_ROOT`                        | API application config       | Server-only path  | API startup/media delivery     |
-| `GEMINI_*`, `WRITING_AI_*`                    | API TOEIC Writing            | Secret/server-only| API startup/explicit scripts   |
-| provider and vocabulary variables              | Offline vocabulary workflows | Secret/local path | Explicit data command only     |
+| Variables                                      | Owner                        | Visibility         | When read                      |
+| ---------------------------------------------- | ---------------------------- | ------------------ | ------------------------------ |
+| `NEXT_PUBLIC_APP_NAME`                         | Web/Admin                    | Browser-public     | Next build and browser runtime |
+| `NEXT_PUBLIC_APP_URL`                          | Web/Admin                    | Browser-public     | Next build and browser runtime |
+| `NEXT_PUBLIC_API_URL`                          | Web/Admin                    | Browser-public     | Next build and browser runtime |
+| `APP_NAME`, `APP_SERVICE_NAME`                 | API application config       | Server-only        | API startup                    |
+| `API_PORT`, `CORS_ORIGINS`, `TRUST_PROXY_HOPS` | API application config       | Server-only        | API startup                    |
+| `JWT_*`                                        | API Auth config              | Secret             | API startup                    |
+| `RATE_LIMIT_*`, `AUTH_*_LIMIT`, `AUTH_*_TTL`   | API rate-limit config        | Server-only        | API startup                    |
+| `DATABASE_URL`, `DB_*`                         | Database URL resolver        | Secret             | Prisma CLI/runtime/scripts     |
+| `LICENSED_CONTENT_ROOT`                        | API application config       | Server-only path   | API startup/media delivery     |
+| `GEMINI_*`, `WRITING_AI_*`                     | API TOEIC Writing            | Secret/server-only | API startup/explicit scripts   |
+| provider and vocabulary variables              | Offline vocabulary workflows | Secret/local path  | Explicit data command only     |
 
 Frontend code reads only explicit `NEXT_PUBLIC_*` values. English Base has no
 generic frontend environment module: each framework boundary reads the public

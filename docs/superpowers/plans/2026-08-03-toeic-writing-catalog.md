@@ -25,12 +25,14 @@
 ### Task 1: Part-specific shared and API catalog contract
 
 **Files:**
+
 - Modify: `packages/shared/src/types/toeic-writing.ts`
 - Modify: `apps/api/src/module/toeic-writing/toeic-writing.mapper.ts`
 - Modify: `apps/api/src/module/toeic-writing/use-cases/list-toeic-writing-tasks.use-case.ts`
 - Test: `apps/api/src/module/toeic-writing/tests/toeic-writing-read.use-cases.spec.ts`
 
 **Interfaces:**
+
 - Consumes: Prisma task rows with `payload: JsonValue`, learner draft IDs, and learner submission IDs.
 - Produces: `ToeicWritingTaskSummary` as `ToeicWritingPartOneTaskSummary | ToeicWritingPartTwoTaskSummary`; `mapToeicWritingTaskSummary(task)` parses preview-safe payload data; existing `ToeicWritingTaskDetail` retains its `title` field and exercise contract.
 
@@ -109,8 +111,7 @@ export type ToeicWritingPartTwoTaskSummary = ToeicWritingTaskSummaryBase & {
 };
 
 export type ToeicWritingTaskSummary =
-  | ToeicWritingPartOneTaskSummary
-  | ToeicWritingPartTwoTaskSummary;
+  ToeicWritingPartOneTaskSummary | ToeicWritingPartTwoTaskSummary;
 
 type ToeicWritingTaskDetailBase = ToeicWritingTaskSummaryBase & {
   title: string;
@@ -145,12 +146,14 @@ git commit -m "feat(api): expose TOEIC Writing catalog previews"
 ### Task 2: Preserve Vietnamese Part 2 source titles
 
 **Files:**
+
 - Modify: `apps/api/scripts/toeic-writing/toeic-writing.types.ts`
 - Modify: `apps/api/scripts/toeic-writing/dautoeic-toeic-writing-source.ts`
 - Modify: `apps/api/scripts/toeic-writing/toeic-writing.source.test.ts`
 - Modify: `docs/data/toeic-writing-pipeline.md`
 
 **Interfaces:**
+
 - Consumes: licensed source field `writing_part2_questions.title_vi`.
 - Produces: `ToeicWritingPartTwoCanonicalPayload.titleVi: string | null`, persisted in the existing JSON payload on a future explicitly approved import.
 
@@ -159,10 +162,7 @@ git commit -m "feat(api): expose TOEIC Writing catalog previews"
 Create a source response with one valid Part 2 row whose `title_vi` is `"Khiếu nại máy in bị kẹt giấy"`, call `listPartTwoTasks()`, and assert:
 
 ```ts
-assert.equal(
-  result[0]?.payload.titleVi,
-  "Khiếu nại máy in bị kẹt giấy"
-);
+assert.equal(result[0]?.payload.titleVi, "Khiếu nại máy in bị kẹt giấy");
 ```
 
 Add a second assertion proving blank or null `title_vi` becomes `null`.
@@ -228,6 +228,7 @@ git commit -m "feat(data): preserve TOEIC Writing email translations"
 ### Task 3: Catalog derivation and viewport-gated protected images
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-writing/toeic-writing-catalog.utils.ts`
 - Create: `apps/web/app/features/toeic-writing/tests/toeic-writing-catalog.utils.test.ts`
 - Create: `apps/web/app/features/toeic-writing/hooks/use-near-viewport.ts`
@@ -235,6 +236,7 @@ git commit -m "feat(data): preserve TOEIC Writing email translations"
 - Modify: `apps/web/test/toeic-writing-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: `ToeicWritingPartOneTaskSummary[]`, a card DOM element, and `taskId`.
 - Produces: `buildToeicWritingPatternFilters(tasks)`, `filterToeicWritingPartOneTasks(tasks, pattern)`, `useNearViewport(options)`, and `useToeicWritingImageUrl(taskId, enabled)`.
 
@@ -279,7 +281,7 @@ Normalize patterns with `trim()`, preserve first-appearance order, and use `null
 `useNearViewport` returns `{ ref, isNearViewport }`, observes once with `rootMargin: "240px"`, disconnects after intersection, and treats missing `IntersectionObserver` as visible. Change the image hook signature to:
 
 ```ts
-export function useToeicWritingImageUrl(taskId: number, enabled = true)
+export function useToeicWritingImageUrl(taskId: number, enabled = true);
 ```
 
 When disabled, do not call the API and return `loading: false`; when enabled, fetch once for that task, create the Blob URL, and revoke it on cleanup. Keep the default `true` so the existing prompt pane remains compatible.
@@ -305,6 +307,7 @@ git commit -m "feat(web): prepare lazy TOEIC Writing catalog media"
 ### Task 4: Part-specific responsive catalog UI and localization
 
 **Files:**
+
 - Create: `apps/web/app/features/toeic-writing/components/ToeicWritingPartOneCard.tsx`
 - Create: `apps/web/app/features/toeic-writing/components/ToeicWritingPartTwoCard.tsx`
 - Modify: `apps/web/app/views/toeic-writing/ToeicWritingCatalogView.tsx`
@@ -315,6 +318,7 @@ git commit -m "feat(web): prepare lazy TOEIC Writing catalog media"
 - Modify: `apps/web/test/toeic-writing-architecture.test.ts`
 
 **Interfaces:**
+
 - Consumes: Part-discriminated summaries, filter utilities, protected-image hooks, active locale, and existing localized session routes.
 - Produces: compact Part tabs, Part 1 image/word catalog, Part 2 email-title catalog, per-card fallback states, and matching loading skeleton.
 
@@ -370,9 +374,11 @@ git commit -m "feat(web): redesign TOEIC Writing catalog"
 ### Task 5: Cross-layer regression verification
 
 **Files:**
+
 - Modify only files required to fix failures directly caused by Tasks 1–4.
 
 **Interfaces:**
+
 - Consumes: completed shared, API, adapter, and Web changes.
 - Produces: evidence that catalog, task session, submission, media protection, localization, and repository architecture remain valid.
 
@@ -413,4 +419,3 @@ git diff --stat
 ```
 
 Confirm `artifacts/` and `tools/` remain untracked and unstaged. If a regression fix was necessary, stage only its explicit paths and commit with `fix: preserve TOEIC Writing compatibility`. If no fix was necessary, do not create an empty commit.
-
