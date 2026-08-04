@@ -36,6 +36,7 @@ bun.lock
 # local env files
 .env*.local
 .env
+/.env.production
 
 # vercel
 .vercel

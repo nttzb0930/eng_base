@@ -451,6 +451,7 @@
     "rankSummary": "Hạng #{rank} / {total} người học",
     "yourXp": "XP của bạn",
     "nextRank": "Còn {points} XP để lên hạng #{rank}",
+    "atTopRank": "Bạn đang dẫn đầu bảng xếp hạng!",
     "detailsTitle": "Bảng xếp hạng chi tiết",
     "participants": "{count} người tham gia",
     "you": "Bạn",
@@ -1243,7 +1244,7 @@
       },
       "error": {
         "title": "Không thể chấm email",
-      "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
+        "description": "Bản nháp vẫn an toàn. Hãy kiểm tra kết nối hoặc lượt chấm trong ngày rồi thử lại."
       },
       "yourSentence": "Câu đã viết:"
     },

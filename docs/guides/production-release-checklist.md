@@ -1,166 +1,302 @@
-# Production Release Checklist
+# Cấu hình Production: VPS, GitHub Actions và DNS
 
-Checklist này dùng trước và sau khi phát hành English Base lên staging hoặc production.
+Tài liệu này là checklist cấu hình production cho English Base. Các giá trị
+`example.com`, `<VPS_IPV4>`, `<owner>` và `<repo>` là placeholder, phải thay
+bằng domain, IP và tên repository thực tế trước khi deploy.
 
-## 1. Branch và CI
+Tài liệu chuẩn về quyền sở hữu biến môi trường nằm tại
+[`environment-configuration.md`](environment-configuration.md). Luồng publish
+image và deploy nằm tại [`ci-cd.md`](ci-cd.md).
 
-- [ ] Đã merge commit cần phát hành vào `main`.
-- [ ] CI trên commit phát hành xanh: architecture, test, typecheck, lint và build.
-- [ ] Đã xác định image tag bằng commit SHA, không dùng tag không rõ nguồn.
-- [ ] Đã kiểm tra image API, Web và Admin được publish thành công lên GHCR.
+## 1. Mô hình domain được dùng trong tài liệu
 
-Các lệnh kiểm tra local:
+| Dịch vụ     | URL production              | Container port |
+| ----------- | --------------------------- | -------------: |
+| Learner Web | `https://example.com`       |         `3000` |
+| Admin       | `https://admin.example.com` |         `3001` |
+| API         | `https://api.example.com`   |         `4000` |
 
-```powershell
-pnpm architecture:check
-pnpm test
-pnpm check-types
-pnpm lint
-pnpm build
+Reverse proxy trên VPS (Caddy, Nginx hoặc Traefik) nhận traffic tại cổng `80`
+và `443`, cấp TLS certificate, sau đó proxy đến ba container. Không public trực
+tiếp các cổng `3000`, `3001`, `4000` hoặc `5432` ra Internet.
+
+Nếu muốn dùng `app.example.com` hoặc `learn.example.com` cho Learner Web, thay
+`https://example.com` bằng hostname đó ở tất cả các mục bên dưới.
+
+## 2. File `.env.production` trên VPS
+
+Đặt file tại:
+
+```text
+<DEPLOY_PATH>/.env.production
 ```
 
-## 2. Secrets và environment
-
-Tạo bộ biến riêng cho từng môi trường. Không commit `.env`, token, API key hoặc database password.
-
-API tối thiểu:
+Ví dụ đầy đủ:
 
 ```dotenv
+# Docker images. deploy.yml sẽ tự cập nhật bốn giá trị này khi deploy.
+API_IMAGE=ghcr.io/<owner>/<repo>-api
+WEB_IMAGE=ghcr.io/<owner>/<repo>-web
+ADMIN_IMAGE=ghcr.io/<owner>/<repo>-admin
+IMAGE_TAG=<commit-sha-da-publish>
+
+# API runtime
 NODE_ENV=production
+TZ=Asia/Ho_Chi_Minh
 APP_NAME=English Base
 APP_SERVICE_NAME=eng-base-api
 API_PORT=4000
-TRUST_PROXY_HOPS=1
-CORS_ORIGINS=https://app.example.com,https://admin.example.com
+CORS_ORIGINS=https://example.com,https://www.example.com,https://admin.example.com
 
-DATABASE_URL=postgresql://...
-JWT_ACCESS_SECRET=<secret-ít-nhất-32-ký-tự>
-JWT_REFRESH_SECRET=<secret-khác-ít-nhất-32-ký-tự>
+# Đặt bằng số reverse proxy tin cậy nằm trước API.
+# Một Caddy/Nginx container duy nhất: 1. Không có proxy: 0.
+TRUST_PROXY_HOPS=1
+
+# PostgreSQL trong cùng Docker Compose network.
+# Nếu dùng managed PostgreSQL, thay DB_HOST bằng hostname của nhà cung cấp.
+DB_HOST=db
+DB_PORT=5432
+DB_USER=eng_base
+DB_PASSWORD=<mat-khau-database-manh>
+DB_NAME=eng_base
+DB_SCHEMA=public
+
+# Không cần DATABASE_URL khi đã có đầy đủ sáu biến DB_* ở trên.
+# Nếu nhà cung cấp chỉ cấp một URL, bỏ DB_* và dùng một URL đã resolve hoàn toàn:
+# DATABASE_URL=postgresql://user:password@host:5432/eng_base?schema=public
+
+# JWT: hai secret khác nhau, mỗi secret tối thiểu 32 ký tự.
+JWT_ACCESS_SECRET=<random-secret-1-it-nhat-32-ky-tu>
+JWT_REFRESH_SECRET=<random-secret-2-khac-secret-1>
 JWT_ACCESS_EXPIRES_IN=15m
 JWT_REFRESH_EXPIRES_IN=7d
-```
 
-Web/Admin build values:
+# Global rate limit
+RATE_LIMIT_TTL=60
+RATE_LIMIT_MAX=100
 
-```dotenv
-NEXT_PUBLIC_APP_NAME=English Base
-NEXT_PUBLIC_APP_URL=https://app.example.com
-NEXT_PUBLIC_API_URL=https://api.example.com/api
-```
+# Auth rate limit
+AUTH_LOGIN_IP_LIMIT=10
+AUTH_LOGIN_IDENTITY_LIMIT=5
+AUTH_LOGIN_TTL=60
+AUTH_REGISTER_IP_LIMIT=5
+AUTH_REGISTER_TTL=3600
+AUTH_REFRESH_IP_LIMIT=30
+AUTH_REFRESH_SESSION_LIMIT=10
+AUTH_REFRESH_TTL=60
 
-Email verification và reset password:
-
-```dotenv
+# Email. Bật SMTP nếu production cần verify email và reset password.
 SMTP_ENABLED=true
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
 SMTP_USER=<smtp-user>
-SMTP_PASS=<gmail-app-password-hoặc-provider-password>
-SMTP_FROM=English Base <no-reply@example.com>
-```
+SMTP_PASS=<smtp-app-password-hoac-provider-password>
+SMTP_FROM="English Base <no-reply@example.com>"
 
-TOEIC Writing AI:
+# Private licensed TOEIC media. Compose phải mount volume vào đúng đường dẫn này.
+LICENSED_CONTENT_ROOT=/var/lib/eng-base/licensed-content
 
-```dotenv
-GEMINI_ENABLED=true
-GEMINI_API_KEY=<production-key>
+# TOEIC Writing AI. Giữ false nếu chưa sử dụng Gemini trên production.
+GEMINI_ENABLED=false
+GEMINI_API_KEY=
 GEMINI_API_ENDPOINT=
-GEMINI_VISION_MODEL=<approved-model>
-GEMINI_GRADING_MODEL=<approved-model>
+GEMINI_VISION_MODEL=gemini-3.5-flash-lite
+GEMINI_GRADING_MODEL=gemini-3.5-flash-lite
 GEMINI_TIMEOUT_MS=20000
 WRITING_AI_DAILY_LIMIT=5
 WRITING_AI_RESERVATION_TTL_MS=120000
+WRITING_AI_USER_LIMIT=2
+WRITING_AI_IP_LIMIT=10
+WRITING_AI_RATE_LIMIT_TTL=60
 ```
 
-`GEMINI_API_ENDPOINT=http://127.0.0.1:8045` chỉ hợp lệ cho proxy local. Production phải để trống để dùng endpoint chính thức hoặc dùng một proxy reachable từ container.
-
-Rotate mọi key đã từng xuất hiện trong chat, terminal history hoặc log.
-
-## 3. Database
-
-- [ ] Đã backup database production và biết cách restore.
-- [ ] `DATABASE_URL` đã được kiểm tra trỏ đúng database.
-- [ ] Đã generate Prisma Client.
-- [ ] Chỉ áp dụng migration đã commit:
+Tạo hai JWT secret trên máy tin cậy, không đưa kết quả vào Git hoặc chat:
 
 ```bash
-pnpm --filter @repo/api db:generate
-pnpm --filter @repo/api db:migrate:deploy
+openssl rand -base64 48
+openssl rand -base64 48
 ```
 
-- [ ] Không chạy `db:push`, `db:migrate:reset` hoặc `db:seed:dev` trên production.
-- [ ] Migration state đã được kiểm tra sau khi deploy.
+### Biến bắt buộc để API khởi động
 
-## 4. Licensed content và dataset
+- `JWT_ACCESS_SECRET` và `JWT_REFRESH_SECRET`: khác nhau, mỗi giá trị tối thiểu
+  32 ký tự.
+- Một `DATABASE_URL` hoàn chỉnh, hoặc đủ cả sáu biến `DB_HOST`, `DB_PORT`,
+  `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `DB_SCHEMA`.
+- Nên set rõ `CORS_ORIGINS` và `TRUST_PROXY_HOPS` theo hạ tầng production thay
+  vì dùng fallback localhost.
 
-Media licensed không nằm trong Git hoặc frontend image. API production phải mount volume riêng:
+### Biến bắt buộc theo tính năng
 
-```dotenv
-LICENSED_CONTENT_ROOT=/var/lib/eng-base/licensed-content
+- Khi `SMTP_ENABLED=true`, bắt buộc có `SMTP_USER` và `SMTP_PASS`.
+- Khi `GEMINI_ENABLED=true`, bắt buộc có `GEMINI_API_KEY`.
+- Nếu phục vụ licensed TOEIC media, `LICENSED_CONTENT_ROOT` phải là volume private
+  đã mount vào API container.
+
+### Biến không đặt trong `.env.production`
+
+Không cần đặt `NEXT_PUBLIC_APP_NAME`, `NEXT_PUBLIC_APP_URL` hoặc
+`NEXT_PUBLIC_API_URL` trên VPS. Chúng được compile vào Web/Admin image từ GitHub
+Actions Variables lúc publish image. Sau khi sửa các biến này, phải publish lại
+frontend image.
+
+Bảo vệ file trên VPS:
+
+```bash
+chmod 600 .env.production
 ```
 
-Đảm bảo volume có các package đã validate và import:
+Không commit `.env.production`. Không đặt provider key, JWT secret hoặc database
+password vào Docker build args.
 
-- [ ] TOEIC Reading.
-- [ ] TOEIC Listening.
-- [ ] TOEIC Dictation.
-- [ ] TOEIC Grammar.
-- [ ] TOEIC Writing Part 1/2.
-- [ ] Writing Part 1 image contexts.
+## 3. GitHub Actions Variables
 
-Chỉ import snapshot có checksum đã inventory/download/validate. Không tự động crawl hoặc publish dữ liệu mới trong lúc deploy.
+Vào `Repository > Settings > Secrets and variables > Actions > Variables`, tạo:
 
-## 5. Deploy
+| Variable                | Giá trị production            | Dùng bởi           |
+| ----------------------- | ----------------------------- | ------------------ |
+| `NEXT_PUBLIC_APP_NAME`  | `English Base`                | Web và Admin       |
+| `NEXT_PUBLIC_WEB_URL`   | `https://example.com`         | Build Web          |
+| `NEXT_PUBLIC_ADMIN_URL` | `https://admin.example.com`   | Build Admin        |
+| `NEXT_PUBLIC_API_URL`   | `https://api.example.com/api` | Build Web và Admin |
 
-Workflow deploy yêu cầu các GitHub Environment secrets:
+Đây là giá trị public, người dùng có thể đọc được trong browser bundle. Không
+đặt password, token, key hoặc `DATABASE_URL` vào GitHub Actions Variables.
 
-- [ ] `DEPLOY_HOST`
-- [ ] `DEPLOY_USER`
-- [ ] `DEPLOY_SSH_KEY`
-- [ ] `DEPLOY_PATH`
-- [ ] `DEPLOY_PORT` nếu khác 22
-- [ ] `DEPLOY_API_HEALTH_URL`
-- [ ] `DEPLOY_WEB_URL`
-- [ ] `DEPLOY_ADMIN_URL`
+## 4. GitHub Actions Secrets
 
-Workflow sẽ pull image, chạy `prisma migrate deploy`, rồi khởi động Docker Compose. Kiểm tra `docker compose ps` sau deploy và giữ image tag trước đó để rollback.
+Workflow `deploy.yml` dùng GitHub Environment. Vào:
 
-## 6. Smoke test sau deploy
-
-- [ ] `GET /api/health` trả 200.
-- [ ] Web và Admin mở bằng HTTPS.
-- [ ] Đăng ký tài khoản tạo trạng thái chờ verification.
-- [ ] Email verification nhận được code/link.
-- [ ] Đăng nhập, refresh session và logout hoạt động.
-- [ ] Quên mật khẩu gửi được email và reset thành công.
-- [ ] Reading/Listening/Dictation tải được dữ liệu.
-- [ ] TOEIC Writing Part 1 hiển thị context và chấm AI thành công.
-- [ ] TOEIC Writing Part 2 chấm đúng giới hạn 50–300 từ.
-- [ ] Invalid response bị chặn trước khi gọi AI.
-- [ ] Retry cùng idempotency key không trừ quota lần hai.
-- [ ] User khác không đọc được grade/history của user hiện tại.
-- [ ] Lỗi Gemini không lộ API key, prompt hoặc raw provider response.
-
-## 7. Rate limit và scale
-
-Rate limit Writing AI hiện dùng process-local storage. Không chạy nhiều API replica nếu chưa thay bằng shared storage như Redis; nếu không, mỗi replica sẽ có quota/rate limit riêng.
-
-## 8. Rollback
-
-Khi AI gặp sự cố:
-
-```dotenv
-GEMINI_ENABLED=false
+```text
+Repository > Settings > Environments > production > Environment secrets
 ```
 
-Restart API để dừng provider calls mới. Dữ liệu task, draft, submission, context và grade đã lưu không bị xóa.
+Tạo các secret sau:
 
-Khi image lỗi:
+| Secret                  | Bắt buộc    | Ví dụ / ý nghĩa                                                       |
+| ----------------------- | ----------- | --------------------------------------------------------------------- |
+| `DEPLOY_HOST`           | Có          | IP public hoặc hostname SSH của VPS                                   |
+| `DEPLOY_USER`           | Có          | User được phép chạy Docker Compose                                    |
+| `DEPLOY_SSH_KEY`        | Có          | Toàn bộ private SSH key của deploy user                               |
+| `DEPLOY_PATH`           | Có          | Thư mục tuyệt đối chứa `docker-compose.prod.yml` và `.env.production` |
+| `DEPLOY_PORT`           | Không       | Cổng SSH; bỏ trống để dùng `22`                                       |
+| `DEPLOY_API_HEALTH_URL` | Khuyên dùng | `https://api.example.com/api/health`                                  |
+| `DEPLOY_WEB_URL`        | Khuyên dùng | `https://example.com`                                                 |
+| `DEPLOY_ADMIN_URL`      | Khuyên dùng | `https://admin.example.com`                                           |
 
-1. Dừng rollout mới.
-2. Khôi phục `IMAGE_TAG` về image tag trước đó.
-3. Chạy lại `docker compose pull` và `docker compose up -d`.
-4. Kiểm tra `/api/health` và các smoke test chính.
+Nếu có environment `staging`, tạo bộ secrets riêng trong environment
+`staging`; không dùng chung database/JWT của production.
 
-Không xóa migration history hoặc dữ liệu learner để rollback ứng dụng.
+Không cần tạo `GITHUB_TOKEN`: GitHub tự cấp token này cho workflow publish GHCR.
+Workflow hiện tại cũng không đọc database, JWT, SMTP hoặc Gemini secret từ GitHub;
+các secret runtime này phải tồn tại trong `.env.production` trên VPS.
+
+Nếu GHCR package là private, đăng nhập `ghcr.io` trên VPS một lần bằng token chỉ
+có quyền `read:packages`. Workflow deploy hiện tại không nhận `GHCR_TOKEN`, nên
+chỉ tạo secret tên này trong GitHub sẽ không có tác dụng.
+
+## 5. DNS records
+
+Tạo các record sau tại nhà cung cấp DNS. `@` đại diện cho root domain
+`example.com`.
+
+| Type    | Name/Host | Value/Target  | TTL               | Mục đích              |
+| ------- | --------- | ------------- | ----------------- | --------------------- |
+| `A`     | `@`       | `<VPS_IPV4>`  | `Auto` hoặc `300` | Learner Web           |
+| `A`     | `admin`   | `<VPS_IPV4>`  | `Auto` hoặc `300` | Admin                 |
+| `A`     | `api`     | `<VPS_IPV4>`  | `Auto` hoặc `300` | API                   |
+| `CNAME` | `www`     | `example.com` | `Auto` hoặc `300` | Redirect/alias về Web |
+
+Chỉ tạo record `AAAA` nếu VPS đã có IPv6 hoạt động và firewall/reverse proxy
+lắng nghe IPv6:
+
+| Type   | Name/Host | Value/Target |
+| ------ | --------- | ------------ |
+| `AAAA` | `@`       | `<VPS_IPV6>` |
+| `AAAA` | `admin`   | `<VPS_IPV6>` |
+| `AAAA` | `api`     | `<VPS_IPV6>` |
+
+Không tạo `AAAA` với IPv6 không sử dụng, vì browser có thể ưu tiên IPv6 và làm
+website lúc vào được lúc không. DNS không chứa port; việc route hostname đến
+container port do reverse proxy trên VPS xử lý.
+
+Nếu dùng Cloudflare, nên để record ở chế độ `DNS only` trong lần cấp TLS và smoke
+test đầu tiên. Chỉ bật proxy sau khi origin HTTPS đã hoạt động; dùng SSL mode
+`Full (strict)`, không dùng `Flexible`.
+
+Kiểm tra sau khi DNS propagate:
+
+```bash
+dig +short example.com A
+dig +short admin.example.com A
+dig +short api.example.com A
+```
+
+## 6. Điều kiện trên VPS trước khi chạy workflow
+
+- Docker Engine và Docker Compose plugin đã cài.
+- Public key tương ứng với `DEPLOY_SSH_KEY` nằm trong
+  `~/.ssh/authorized_keys` của `DEPLOY_USER`.
+- `DEPLOY_USER` có quyền chạy `docker compose`.
+- Firewall chỉ mở cổng cần thiết: `22` (hoặc SSH port riêng), `80`, `443`.
+- Reverse proxy đã route ba hostname theo bảng ở mục 1 và cấp HTTPS certificate.
+- `.env.production` đã tạo và có permission `600`.
+- Database production đã backup và có quy trình restore.
+
+`docker-compose.prod.yml` đã được version ở root repository và phải được copy
+đến `DEPLOY_PATH` trên VPS cùng với `.env.production`. File Compose sử dụng
+`API_IMAGE`, `WEB_IMAGE`, `ADMIN_IMAGE`, `IMAGE_TAG`, truyền các biến runtime vào
+API, và mount volume database/licensed content phù hợp. `.env.production` vẫn là
+file riêng trên VPS, không commit vào repository.
+
+Kiểm tra cấu hình Compose trên VPS trước deploy:
+
+```bash
+cd <DEPLOY_PATH>
+docker compose -f docker-compose.prod.yml --env-file .env.production config
+```
+
+Lệnh trên phải resolve đủ ba image và không báo thiếu biến. Không đăng output của
+lệnh này lên issue/chat vì output có thể chứa secret đã resolve.
+
+## 7. Publish và deploy
+
+1. Merge commit cần release vào `main` và đợi workflow `CI` xanh.
+2. Workflow `Publish Images` tự chạy sau CI hoặc chạy thủ công. Ghi lại immutable
+   image tag là commit SHA.
+3. Vào `Actions > Deploy > Run workflow`.
+4. Chọn `environment=production`.
+5. Nhập `image_tag` đúng bằng tag đã publish.
+6. Workflow SSH vào VPS, cập nhật bốn image variables, pull image, chạy
+   `prisma migrate deploy`, khởi động Compose và health check.
+
+Deployment không seed dữ liệu và không tự import Vocabulary/licensed content.
+Không chạy `db:push`, `db:migrate:reset` hoặc `db:seed:dev` trên production.
+
+## 8. Smoke test sau deploy
+
+- [ ] `https://api.example.com/api/health` trả HTTP `200`.
+- [ ] `https://example.com` và `https://admin.example.com` mở bằng HTTPS.
+- [ ] Chứng chỉ TLS hợp lệ cho cả root, `www`, `admin` và `api` nếu các hostname
+      đó được public.
+- [ ] Đăng ký, verify email, đăng nhập, refresh session và logout hoạt động.
+- [ ] Forgot/reset password gửi email thành công nếu SMTP được bật.
+- [ ] Browser không bị lỗi CORS khi gọi API.
+- [ ] Reading/Listening/Dictation tải được licensed content nếu tính năng được bật.
+- [ ] TOEIC Writing AI chấm thành công nếu Gemini được bật.
+- [ ] `docker compose ps` cho thấy các service cần thiết đang healthy/running.
+
+## 9. Rollback nhanh
+
+Nếu Gemini gặp sự cố, đặt `GEMINI_ENABLED=false` trong `.env.production` và
+restart API.
+
+Nếu image lỗi, đưa `IMAGE_TAG` về immutable tag trước đó, rồi chạy:
+
+```bash
+docker compose -f docker-compose.prod.yml --env-file .env.production pull api web admin
+docker compose -f docker-compose.prod.yml --env-file .env.production up -d
+```
+
+Không xóa migration history hoặc dữ liệu Learner để rollback ứng dụng.

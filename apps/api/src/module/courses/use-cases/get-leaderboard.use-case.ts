@@ -11,18 +11,30 @@ export class GetLeaderboardUseCase extends CourseLearningMapper {
 
   async execute(
     userId?: string,
-    period: string = "weekly",
+    period: string = "weekly"
   ): Promise<LeaderboardResponse> {
     const selectedPeriod = period || "weekly";
     const limit = selectedPeriod === "alltime" ? 50 : 20;
 
-    const data = await this.prisma.user_progress.findMany({
-      orderBy: { points: "desc" },
-      take: limit,
-    });
+    const [data, totalLearnersCount] = await Promise.all([
+      this.prisma.user_progress.findMany({
+        orderBy: { points: "desc" },
+        take: limit,
+      }),
+      this.prisma.user_progress.count(),
+    ]);
 
-    const totalLearnersCount = await this.prisma.user_progress.count();
-    const totalLearners = Math.max(totalLearnersCount, 2847);
+    const totalLearners = totalLearnersCount;
+
+    // Real calendar-driven season calculation
+    const now = new Date();
+    const seasonNumber = (now.getFullYear() - 2026) * 12 + (now.getMonth() + 1);
+    const lastDayOfMonth = new Date(
+      now.getFullYear(),
+      now.getMonth() + 1,
+      0
+    ).getDate();
+    const daysRemaining = Math.max(1, lastDayOfMonth - now.getDate());
 
     let currentUserProgress = userId
       ? data.find((p) => p.user_id === userId)
@@ -35,55 +47,82 @@ export class GetLeaderboardUseCase extends CourseLearningMapper {
         })) ?? undefined;
     }
 
-    const foundRankIndex = currentUserProgress
-      ? data.findIndex((p) => p.user_id === currentUserProgress?.user_id)
-      : -1;
+    let rank = totalLearners > 0 ? totalLearners : 1;
+    let currentPoints = 0;
+    let nextRankNumber = 1;
+    let nextRankPointsNeeded = 0;
+    let percentileText = "Top 100%";
 
-    const rank = foundRankIndex !== -1 ? foundRankIndex + 1 : 15;
-    const currentPoints = currentUserProgress?.points ?? 185;
-    const nextRankNumber = Math.max(1, rank - 3);
-    const nextRankTargetPoints = currentPoints + 35;
+    if (currentUserProgress) {
+      currentPoints = currentUserProgress.points;
+      const foundRankIndex = data.findIndex(
+        (p) => p.user_id === currentUserProgress?.user_id
+      );
+
+      if (foundRankIndex !== -1) {
+        rank = foundRankIndex + 1;
+      } else {
+        const higherUsersCount = await this.prisma.user_progress.count({
+          where: { points: { gt: currentPoints } },
+        });
+        rank = higherUsersCount + 1;
+      }
+
+      if (rank > 1) {
+        nextRankNumber = rank - 1;
+        let pointsAhead = 0;
+        if (foundRankIndex > 0) {
+          pointsAhead = data[foundRankIndex - 1].points;
+        } else {
+          const userAbove = await this.prisma.user_progress.findFirst({
+            where: { points: { gt: currentPoints } },
+            orderBy: { points: "asc" },
+            select: { points: true },
+          });
+          pointsAhead = userAbove ? userAbove.points : currentPoints + 10;
+        }
+        nextRankPointsNeeded = Math.max(0, pointsAhead - currentPoints + 1);
+      } else {
+        nextRankNumber = 1;
+        nextRankPointsNeeded = 0;
+      }
+
+      const percentileValue = Math.max(
+        1,
+        Math.ceil((rank / Math.max(totalLearners, 1)) * 100)
+      );
+      percentileText = `Top ${percentileValue}%`;
+    }
 
     const topUsers = data.map((progress, index) => {
       const userRank = index + 1;
       const level = Math.max(1, Math.floor(progress.points / 50) + 1);
-      const streak = ((index * 3 + 2) % 7) + 1;
-      const weeklyGain = Math.floor(progress.points * 0.15) + (index % 5) * 4;
-      const trendTypes: Array<"up" | "down" | "neutral"> = ["up", "neutral", "down"];
-      const trend = trendTypes[index % 3];
-      const trendValue =
-        trend === "up" ? (index + 1) * 3 : trend === "down" ? (index % 3) + 1 : 0;
 
       return {
         userId: progress.user_id,
-        userName: progress.user_name || "Học viên",
+        userName: progress.user_name || "Learner",
         userImageSrc: progress.user_image_src || "/mascot.svg",
         points: progress.points,
         rank: userRank,
         level,
-        streak,
-        weeklyGain,
-        trend,
-        trendValue,
       };
     });
 
     return {
       seasonInfo: {
-        seasonNumber: 12,
-        daysRemaining: 5,
+        seasonNumber,
+        daysRemaining,
       },
       currentUserRank: {
         rank,
         totalLearners,
         points: currentPoints,
-        nextRankPointsNeeded: Math.max(0, nextRankTargetPoints - currentPoints),
+        nextRankPointsNeeded,
         nextRankNumber,
-        percentileText: "Top 1%",
+        percentileText,
       },
       topUsers,
       totalLearners,
     };
   }
 }
-
