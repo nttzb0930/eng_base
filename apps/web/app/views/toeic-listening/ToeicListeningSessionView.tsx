@@ -18,6 +18,7 @@ import {
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
+import { LocalizedLink as Link } from "@/app/components/navigation/LocalizedLink";
 import { Button } from "@/app/components/ui/button";
 import {
   Dialog,
@@ -159,13 +160,13 @@ export function ToeicListeningSessionView({
   const activeMediaId = activeGroup ? getGroupAudioMediaId(activeGroup) : null;
   const activeImageMediaIds = activeGroup
     ? [
-        ...new Set([
-          ...(activeGroup.stimulus?.imageMediaIds ?? []),
-          ...activeGroup.questions.flatMap(
-            (question) => question.imageMediaIds
-          ),
-        ]),
-      ]
+      ...new Set([
+        ...(activeGroup.stimulus?.imageMediaIds ?? []),
+        ...activeGroup.questions.flatMap(
+          (question) => question.imageMediaIds
+        ),
+      ]),
+    ]
     : [];
 
   useEffect(() => {
@@ -349,26 +350,42 @@ export function ToeicListeningSessionView({
   }
 
   if (mode === "FULL" && !fullSessionStarted) {
+    const listPath = `/learn/cert/toeic/listening?scope=${scope}`;
+
     return (
-      <main className="bg-background flex min-h-dvh items-center justify-center p-6">
-        <section className="bg-card max-w-lg rounded-2xl border p-8 text-center shadow-sm">
-          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-            <Headphones className="h-7 w-7" aria-hidden="true" />
+      <main className="bg-background flex min-h-dvh items-center justify-center p-4 sm:p-6">
+        <section className="bg-card shadow-xs border-border/80 w-full max-w-sm rounded-3xl border p-6 text-center sm:p-8">
+          <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+            <Headphones className="h-8 w-8 stroke-[1.75]" aria-hidden="true" />
           </span>
-          <h1 className="mt-5 text-2xl font-semibold">
+          <h1 className="mt-5 text-2xl font-bold tracking-tight text-foreground">
             {t("session.readyTitle")}
           </h1>
-          <p className="text-muted-foreground mt-3 text-sm leading-6">
+          <p className="text-muted-foreground mt-3 text-xs leading-relaxed sm:text-sm">
             {t("session.fullStartDescription")}
           </p>
-          <Button
-            type="button"
-            variant="secondary"
-            onClick={startFullSession}
-            className="mt-6 min-w-44"
-          >
-            {t("session.startFull")}
-          </Button>
+
+          <div className="mt-7 flex flex-col gap-3">
+            <Button
+              type="button"
+              variant="primary"
+              onClick={startFullSession}
+              className="h-12 w-full items-center justify-center rounded-xl bg-emerald-600 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-700 active:translate-y-px"
+            >
+              {t("session.startFull")}
+            </Button>
+
+            <Button
+              asChild
+              variant="outline"
+              className="border-border/80 bg-card text-foreground hover:bg-muted h-12 w-full rounded-xl text-sm font-semibold transition"
+            >
+              <Link href={listPath} className="inline-flex items-center justify-center gap-2">
+                <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <span>{t("list.back")}</span>
+              </Link>
+            </Button>
+          </div>
         </section>
       </main>
     );
@@ -382,10 +399,10 @@ export function ToeicListeningSessionView({
             type="button"
             variant="ghost"
             onClick={() => openExitModal(`/learn/cert/toeic/listening?scope=${scope}`)}
-            className="text-muted-foreground inline-flex shrink-0 items-center gap-2 text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            className="text-muted-foreground group inline-flex shrink-0 items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 sm:text-sm"
           >
-            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            <span className="hidden sm:inline">{t("session.back")}</span>
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" aria-hidden="true" />
+            <span>{t("session.back")}</span>
           </Button>
           <div
             className="bg-muted h-2 flex-1 overflow-hidden rounded-full"
@@ -398,11 +415,10 @@ export function ToeicListeningSessionView({
             <div
               className="h-full rounded-full bg-emerald-600 transition-[width]"
               style={{
-                width: `${
-                  questionIds.length
-                    ? (answeredCount / questionIds.length) * 100
-                    : 0
-                }%`,
+                width: `${questionIds.length
+                  ? (answeredCount / questionIds.length) * 100
+                  : 0
+                  }%`,
               }}
             />
           </div>
@@ -437,9 +453,9 @@ export function ToeicListeningSessionView({
               {practicePart === undefined
                 ? t("session.description", { count: testData.questionCount })
                 : t("session.partDescription", {
-                    count: testData.questionCount,
-                    part: practicePart,
-                  })}
+                  count: testData.questionCount,
+                  part: practicePart,
+                })}
             </p>
           </header>
 

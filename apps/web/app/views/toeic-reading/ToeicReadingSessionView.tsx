@@ -256,10 +256,10 @@ export function ToeicReadingSessionView({
             type="button"
             variant="ghost"
             onClick={() => openExitModal(`/learn/cert/toeic/reading?scope=${scope}`)}
-            className="text-muted-foreground inline-flex shrink-0 items-center gap-2 text-sm font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            className="text-muted-foreground group inline-flex shrink-0 items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 sm:text-sm"
           >
-            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            <span className="hidden sm:inline">{t("session.back")}</span>
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" aria-hidden="true" />
+            <span>{t("session.back")}</span>
           </Button>
           <div
             className="bg-muted h-2 flex-1 overflow-hidden rounded-full"

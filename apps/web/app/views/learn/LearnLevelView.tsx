@@ -221,9 +221,9 @@ export function LearnLevelView() {
                 (targetUnit ? !unlockedUnitIds.has(targetUnit.id) : false);
               const percent = levelProgress.totalWords
                 ? Math.round(
-                    (levelProgress.masteredWords / levelProgress.totalWords) *
-                      100
-                  )
+                  (levelProgress.masteredWords / levelProgress.totalWords) *
+                  100
+                )
                 : 0;
               const previousLevel = cefrSummary.levels[index - 1]?.level;
 
@@ -280,8 +280,8 @@ export function LearnLevelView() {
                       {locked && previousLevel
                         ? t("unlockRequirement", { level: previousLevel })
                         : t("levelWordSummary", {
-                            count: levelProgress.totalWords,
-                          })}
+                          count: levelProgress.totalWords,
+                        })}
                     </p>
 
                     <div className="mt-4 space-y-1 text-xs font-semibold">
@@ -327,11 +327,11 @@ export function LearnLevelView() {
                       >
                         {active
                           ? t("continueLevelBtn", {
-                              code: levelProgress.level,
-                            })
+                            code: levelProgress.level,
+                          })
                           : t("startLevelBtn", {
-                              code: levelProgress.level,
-                            })}
+                            code: levelProgress.level,
+                          })}
                       </Link>
                     ) : (
                       <div className="border-border/60 bg-muted text-muted-foreground inline-flex min-h-10 w-full items-center justify-center gap-1.5 rounded-xl border text-xs font-bold">

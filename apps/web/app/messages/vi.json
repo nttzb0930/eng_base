@@ -1355,7 +1355,8 @@
       "remaining": "Còn {count} câu",
       "continue": "Tiếp tục làm bài",
       "start": "Bắt đầu làm bài",
-      "retry": "Làm lại"
+      "retry": "Làm lại",
+      "estimatedTime": "~{minutes} phút"
     },
     "session": {
       "back": "Quay lại danh sách đề",
@@ -1503,7 +1504,8 @@
       "remaining": "Còn {count} câu",
       "continue": "Tiếp tục làm bài",
       "start": "Bắt đầu làm bài",
-      "retry": "Làm lại"
+      "retry": "Làm lại",
+      "estimatedTime": "~{minutes} phút"
     },
     "player": {
       "audioLabel": "Audio TOEIC Listening",

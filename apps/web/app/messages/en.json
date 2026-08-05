@@ -1351,7 +1351,8 @@
       "remaining": "{count} remaining",
       "continue": "Continue test",
       "start": "Start test",
-      "retry": "Try again"
+      "retry": "Try again",
+      "estimatedTime": "~{minutes} min"
     },
     "session": {
       "back": "Back to tests",
@@ -1499,7 +1500,8 @@
       "remaining": "{count} remaining",
       "continue": "Continue test",
       "start": "Start test",
-      "retry": "Try again"
+      "retry": "Try again",
+      "estimatedTime": "~{minutes} min"
     },
     "player": {
       "audioLabel": "TOEIC Listening audio",

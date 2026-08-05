@@ -168,8 +168,8 @@ export const PracticeResult = ({
           <div className="flex items-start gap-4">
             <span
               className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${perfect
-                  ? "bg-amber-100 text-amber-600"
-                  : "bg-rose-50 text-rose-600"
+                ? "bg-amber-100 text-amber-600"
+                : "bg-rose-50 text-rose-600"
                 }`}
             >
               {perfect ? (
