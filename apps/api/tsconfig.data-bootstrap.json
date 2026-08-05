@@ -8,6 +8,8 @@
   },
   "include": [
     "scripts/seed-production.ts",
+    "scripts/production-admin-bootstrap-config.ts",
+    "scripts/bootstrap-production-admin.ts",
     "scripts/vocabulary/database/bootstrap-vocabulary.ts",
     "scripts/vocabulary/database/vocabulary-bootstrap-plan.ts",
     "scripts/vocabulary/database/vocabulary-bootstrap-store.ts",
